@@ -136,9 +136,8 @@
     font-family:var(--sans); font-size:.85rem; color:var(--ink);
     background:var(--paper-deep); border:1px solid var(--rule);
     padding:.45rem .75rem; border-radius:2px; cursor:pointer;
+    text-decoration:none; display:inline-block;
   }
-  .btn:hover{border-color:var(--field)}
-
   @media (min-width:40rem){
     .masthead{padding-top:2.4rem}
     h1{font-size:2.2rem}
@@ -160,12 +159,11 @@
     <h1>Ohio Cannabis Ecosystem Directory</h1>
     <p class="standfirst">Who serves what in Ohio cannabis. 465 organizations, each traced to a named source.</p>
 
-    <div class="searchbox">
-      <input id="q" type="search" autocomplete="off" spellcheck="false"
-             placeholder="Search packaging, mold, payments, staffing&hellip;"
-             aria-label="Search the directory">
-      <button id="clear" type="button" aria-label="Clear search">&times;</button>
-    </div>
+  <div class="actions">
+    <button class="btn" id="dl">Download these results as CSV</button>
+    <button class="btn" id="scope" aria-pressed="false">Show 46 out-of-scope records</button>
+    <a class="btn" href="https://github.com/travisvought-byte/ohio-cannabis-directory/issues/new/choose" target="_blank" rel="noopener">Add or correct a listing</a>
+  </div>
 
     <div class="controls">
       <select id="cat" aria-label="Filter by category">
