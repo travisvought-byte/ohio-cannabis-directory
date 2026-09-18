@@ -197,15 +197,14 @@
   <div class="actions">
     <button class="btn" id="dl">Download these results as CSV</button>
     <button class="btn" id="scope" aria-pressed="false">Show 46 out-of-scope records</button>
+    <a class="btn" href="https://github.com/travisvought-byte/ohio-cannabis-directory/issues/new/choose" target="_blank" rel="noopener">Add or correct a listing</a>
   </div>
   <p>Compiled and maintained by Travis Vought. Built September 12, 2026 from master v67. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
   <p>Out-of-scope records are kept rather than deleted so that renamed, acquired and superseded organizations stay findable. They are hidden by default.</p>
   <p>Released under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a>. Copy it, build on it, keep the attribution. Corrections and additions are welcome and get verified before they go in.</p>
-<div class="actions">
-  <button class="btn" id="dl">Download these results as CSV</button>
-  <button class="btn" id="scope" aria-pressed="false">Show 46 out-of-scope records</button>
-  <a class="btn" href="https://github.com/travisvought-byte/ohio-cannabis-directory/issues/new/choose" target="_blank" rel="noopener">Add or correct a listing</a>
-</div>
+</footer>
+
+<script>
 const $ = id => document.getElementById(id);
 const qEl = $('q'), catEl = $('cat'), typeEl = $('type');
 const results = $('results'), tally = $('tally'), lanes = $('lanes');
