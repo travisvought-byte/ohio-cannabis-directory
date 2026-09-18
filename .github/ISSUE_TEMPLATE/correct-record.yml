@@ -1,0 +1,64 @@
+name: Correct an existing record
+description: Report a factual correction to an organization already in the directory.
+title: "[Correction] "
+body:
+  - type: input
+    id: organization
+    attributes:
+      label: Organization name
+    validations:
+      required: true
+  - type: dropdown
+    id: correction_type
+    attributes:
+      label: What needs to change?
+      options:
+        - Contact information
+        - Website
+        - Category
+        - Capabilities / keywords
+        - Service area
+        - Ownership or organization identity
+        - Source / provenance
+        - Notes
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: What is currently wrong or incomplete?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: What should it say instead?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source URL
+      description: Provide a source supporting the correction.
+      placeholder: https://example.com/source
+    validations:
+      required: true
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to the organization
+      options:
+        - I represent this organization
+        - Customer or client
+        - Vendor or partner
+        - Industry participant
+        - Researcher / public-source submission
+        - Other
+        - Prefer not to say
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else we should know?
