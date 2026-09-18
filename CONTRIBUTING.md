@@ -1,42 +1,55 @@
-# Contributing
+Contributing
 
-Three ways in, depending on who you are.
+The preferred public intake route is the repository issue chooser:
 
-**Open an issue.** Pick a template: add an organization, correct a record, or
-report a closure, acquisition or rename. Each asks for a source, because each
-row in this directory carries one.
+https://github.com/travisvought-byte/ohio-cannabis-directory/issues/new/choose
 
-**Submit without a GitHub account.** A short form is linked from the issue page
-and from the directory footer. It reaches the same place.
+Choose the form that best matches the change:
 
-**Open a pull request.** If you are comfortable with CSV, edit
-`data/ohio-cannabis-directory.csv` directly and open a PR. Populate `Source(s)`
-in the same row. PRs without a source will be held rather than merged.
+• Add an organization — a missing organization operating in or serving the Ohio cannabis market.
+• Correct a record — contact information, category, capabilities, source, service area, or another factual correction.
+• Report a status change — closure, rename, acquisition, merger, sale, or successor organization.
+• Add a B2B relationship — a documented organization-to-organization relationship that belongs in the relationship layer.
 
-## What gets accepted
+Each form asks for evidence because every published row and relationship in this directory is intended to remain traceable to a named source.
 
-An entry belongs here if it is an organization operating in or serving the Ohio
-cannabis market, and its existence and relevance can be confirmed against a
-named source.
+GitHub issue forms require a GitHub account.
 
-First-party submissions are welcome and are held to the same standard as any
-other. If you are submitting your own organization, say so. That is treated as
-evidence, not as a conflict, and it is recorded in the row's provenance.
+Field and conference intake
 
-## What does not get accepted
+intake.html is a separate field/offline capture tool. It stores captured records in the browser on that device until they are exported as CSV. It does not automatically submit records to GitHub or change the published directory.
 
-- Entries with no verifiable source
-- Personal contact detail for individuals: home addresses, personal mobile
- numbers, anything a person would not expect published
-- Paid placement. There is no mechanism to pay for inclusion, position or
- emphasis, and adding one would destroy the reason the data is worth anything
+That separation is intentional: a submission is a research lead, not an automatic publication.
 
-## How verification works
+Pull requests
 
-`Verification Tier` separates source-verified rows from rows carrying a named
-open issue. Where something is unresolved, `Needs Research` names the specific
-unresolved fact rather than expressing general doubt. Submissions enter as
-unverified and are promoted once a source is confirmed.
+If you are comfortable working with CSV, you may also open a pull request.
 
-Records are never silently deleted. Organizations that close, merge or rename
-move out of scope and remain searchable.
+• Organization records live at ohio-cannabis-directory.csv in the repository root.
+• Relationship records live at b2b-relationships.csv in the repository root.
+• Include the supporting source in the same proposed change.
+• Do not hand-edit the embedded directory data inside index.html.
+
+The current build scripts still regenerate the HTML from the maintainer’s master workbook. Accepted CSV changes therefore need to be reconciled into that source and the HTML regenerated before a release is complete.
+
+What gets accepted
+
+An entry belongs here if it is an organization operating in or serving the Ohio cannabis market, and its existence and relevance can be confirmed against a named source.
+
+First-party submissions are welcome and are held to the same standard as any other. If you are submitting your own organization, say so. That is treated as evidence and recorded as part of the provenance.
+
+What does not get accepted
+
+• Entries with no verifiable source
+• Personal contact detail that a person would not reasonably expect to be published
+• Paid placement or paid ranking
+
+There is no mechanism to pay for inclusion, position, verification, or emphasis. Keeping the public dataset independent is part of what makes it useful.
+
+How verification works
+
+Verification Tier separates source-verified rows from rows carrying a named open issue. Where something is unresolved, Needs Research identifies the specific unresolved fact rather than expressing general doubt.
+
+Submissions enter as unverified research leads and are promoted only after the evidence is reviewed.
+
+Records are not silently deleted. Organizations that close, merge, rename, or are superseded may move out of scope while remaining searchable for provenance and historical resolution.
