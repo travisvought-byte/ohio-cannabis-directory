@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: Ohio Cannabis Ecosystem Directory
+message: >-
+  If you use this directory, please cite it using the metadata in this file.
+type: dataset
+authors:
+  - given-names: Travis
+    family-names: Vought
+    website: 'https://github.com/travisvought-byte'
+repository-code: 'https://github.com/travisvought-byte/ohio-cannabis-directory'
+url: 'https://travisvought-byte.github.io/ohio-cannabis-directory/'
+abstract: >-
+  A source-verified map of organizations operating in or serving Ohio's
+  cannabis market, including operators, service providers, nonprofits, and
+  cannabis-adjacent organizations, each traced to a named source. Contains
+  511 rows: 465 publishable organizations across 16 categories and 46
+  deliberately retained out-of-scope records preserving renamed, acquired,
+  and superseded organizations. Includes 60 documented
+  business-to-business relationships.
+keywords:
+  - Ohio
+  - cannabis
+  - business directory
+  - market map
+  - data provenance
+license: CC-BY-4.0
+version: '4.0'
+date-released: '2026-09-18'
