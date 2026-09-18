@@ -1,0 +1,61 @@
+name: Report a status change
+description: Report a closure, rename, acquisition, merger, sale, or successor organization.
+title: "[Status] "
+body:
+  - type: input
+    id: organization
+    attributes:
+      label: Organization name
+    validations:
+      required: true
+  - type: dropdown
+    id: change
+    attributes:
+      label: Status change
+      options:
+        - Closed
+        - Renamed / rebranded
+        - Acquired
+        - Merged
+        - Sold / transferred
+        - Successor organization identified
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: effective_date
+    attributes:
+      label: Effective date, if known
+      placeholder: YYYY-MM-DD or approximate date
+  - type: input
+    id: successor
+    attributes:
+      label: New name, acquirer, or successor, if applicable
+  - type: input
+    id: source
+    attributes:
+      label: Source URL
+      placeholder: https://example.com/source
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Explain what changed and how the old and new entities are related.
+    validations:
+      required: true
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to the organization
+      options:
+        - I represent this organization
+        - Customer or client
+        - Vendor or partner
+        - Industry participant
+        - Researcher / public-source submission
+        - Other
+        - Prefer not to say
+    validations:
+      required: true
