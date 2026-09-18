@@ -1,0 +1,97 @@
+name: Add an organization
+description: Suggest an organization that is missing from the Ohio Cannabis Ecosystem Directory.
+title: "[Add] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the directory. Submissions are research leads until verified and are not automatically published.
+  - type: input
+    id: organization
+    attributes:
+      label: Organization name
+      placeholder: Example Company LLC
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Organization type
+      options:
+        - Business
+        - Nonprofit
+        - Individual
+        - Unsure
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Best-fit category
+      options:
+        - Accounting & Tax
+        - Banking & Financial Services
+        - Consulting
+        - Cultivator / Processor / Dispensary
+        - Events & Expos
+        - Hemp / CBD Products & Ancillary
+        - Insurance
+        - Legal & Licensing
+        - Marketing & Media
+        - Nonprofit & Advocacy
+        - Packaging & Labeling
+        - Real Estate / Build-Out
+        - Security & Cash Logistics
+        - Staffing & HR
+        - Technology
+        - Testing Labs
+        - Unsure
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Organization website
+      placeholder: https://example.com
+  - type: input
+    id: source
+    attributes:
+      label: Source URL
+      description: Provide the best source showing that the organization exists and operates in or serves Ohio cannabis.
+      placeholder: https://example.com/ohio
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Ohio cannabis relevance
+      description: What does the organization do, and what evidence connects it to the Ohio cannabis market?
+    validations:
+      required: true
+  - type: textarea
+    id: contact
+    attributes:
+      label: Public contact information
+      description: Optional. Include only contact details the organization publicly provides.
+      placeholder: Contact person, public email, phone, service area
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to the organization
+      options:
+        - I represent this organization
+        - Customer or client
+        - Vendor or partner
+        - Industry participant
+        - Researcher / public-source submission
+        - Other
+        - Prefer not to say
+    validations:
+      required: true
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Verification
+      options:
+        - label: I understand this submission will be reviewed and independently verified before publication.
+          required: true
