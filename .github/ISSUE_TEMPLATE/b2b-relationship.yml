@@ -1,0 +1,56 @@
+name: Add or correct a B2B relationship
+description: Submit evidence of a relationship between two organizations in the Ohio cannabis ecosystem.
+title: "[B2B] "
+body:
+  - type: input
+    id: organization_a
+    attributes:
+      label: Organization A
+    validations:
+      required: true
+  - type: input
+    id: organization_b
+    attributes:
+      label: Organization B
+    validations:
+      required: true
+  - type: input
+    id: relationship_type
+    attributes:
+      label: Relationship type
+      placeholder: Banking provider, client, technology integration, distributor, acquisition, design partner...
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Relationship status
+      options:
+        - Current
+        - Historical
+        - Unknown
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source URL
+      description: Provide the source that documents the relationship.
+      placeholder: https://example.com/source
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: What does the source establish?
+      description: Describe the relationship without adding claims the source does not support.
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date or time period, if known
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
