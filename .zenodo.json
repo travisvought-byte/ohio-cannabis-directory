@@ -1,0 +1,9 @@
+{
+  "title": "Ohio Cannabis Ecosystem Directory",
+  "upload_type": "dataset",
+  "license": "cc-by-4.0",
+  "creators": [{ "name": "Vought, Travis" }],
+  "description": "A source-verified directory of organizations operating in or serving the Ohio cannabis market: operators, service providers and nonprofits, categorized with capability keywords for problem-oriented search. Each record carries the source used to verify it and the seed source recording how it entered the dataset. Organizations that close, merge or rename are retained out of scope rather than deleted, so historical references remain resolvable.",
+  "keywords": ["Ohio", "cannabis", "directory", "open data", "market map", "provenance"],
+  "access_right": "open"
+}
