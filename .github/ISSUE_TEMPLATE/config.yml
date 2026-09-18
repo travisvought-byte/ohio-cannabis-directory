@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: View the live directory
+    url: https://travisvought-byte.github.io/ohio-cannabis-directory/
+    about: Search the current directory before submitting an addition or correction.
+  - name: Read contribution rules
+    url: https://github.com/travisvought-byte/ohio-cannabis-directory/blob/main/CONTRIBUTING.md
+    about: Review verification, sourcing, privacy, and inclusion standards.
