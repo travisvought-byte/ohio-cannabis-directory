@@ -1,4 +1,4 @@
-# Changelog
+# CHANGELOG
 
 Versions track the master workbook. Each release states what changed and what
 evidence supported the change.
