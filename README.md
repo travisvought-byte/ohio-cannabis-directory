@@ -25,7 +25,7 @@ If you need mold remediation, cash logistics, packaging, MRB banking, staffing, 
 | `b2b-relationships.csv` | 60 documented organization-to-organization relationships with supporting evidence. |
 | `build_directory.py` | Regenerates the searchable directory HTML from the master workbook. |
 | `build_intake.py` | Regenerates the intake page from the master workbook. |
-| `Changelog.md` | Release and version history. |
+| `CHANGELOG.md` | Release and version history. |
 | `.zenodo.json` | Metadata for future Zenodo archiving and DOI publication. |
 
 The public HTML pages contain the directory data they need, so the searchable site does not depend on a live database or external API at runtime.
