@@ -2,7 +2,7 @@
 
 Versions track the master workbook\. Each release states what changed and what evidence supported the change\.
 
-## v4\.0 — in preparation
+## v4.0 — 2026-09-18
 
 - Prepared the first GitHub Pages release of the searchable directory\.
 - Current release dataset: 511 total records, 465 publishable organizations across 16 categories, and 46 deliberately retained out\-of\-scope records\.
