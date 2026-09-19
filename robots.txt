@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://travisvought-byte.github.io/ohio-cannabis-directory/sitemap.xml

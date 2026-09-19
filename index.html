@@ -5,6 +5,71 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ohio Cannabis Ecosystem Directory</title>
 <meta name="description" content="A searchable, source-verified directory of Ohio cannabis and cannabis-adjacent organizations: operators, service providers and nonprofits.">
+<link rel="canonical" href="https://travisvought-byte.github.io/ohio-cannabis-directory/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ohio Cannabis Ecosystem Directory">
+<meta property="og:title" content="Ohio Cannabis Ecosystem Directory">
+<meta property="og:description" content="Who serves what in Ohio cannabis. 465 organizations, each traced to a named source. Free and open under CC BY 4.0.">
+<meta property="og:url" content="https://travisvought-byte.github.io/ohio-cannabis-directory/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ohio Cannabis Ecosystem Directory">
+<meta name="twitter:description" content="Who serves what in Ohio cannabis. 465 organizations, each traced to a named source. Free and open under CC BY 4.0.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Ohio Cannabis Ecosystem Directory",
+  "description": "A source-verified directory of 465 organizations operating in or serving Ohio's cannabis market: cultivators, processors, dispensaries, testing labs, and the service providers and nonprofits around them. Each record traced to a named source. Released under CC BY 4.0.",
+  "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "keywords": [
+    "Ohio",
+    "cannabis",
+    "business directory",
+    "market map",
+    "open data",
+    "data provenance"
+  ],
+  "version": "4.0",
+  "dateModified": "2026-09-19",
+  "creator": {
+    "@type": "Person",
+    "name": "Travis Vought"
+  },
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Ohio, United States"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "name": "Directory records (CSV)",
+      "contentUrl": "https://raw.githubusercontent.com/travisvought-byte/ohio-cannabis-directory/main/ohio-cannabis-directory.csv"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "name": "Business-to-business relationships (CSV)",
+      "contentUrl": "https://raw.githubusercontent.com/travisvought-byte/ohio-cannabis-directory/main/b2b-relationships.csv"
+    }
+  ],
+  "codeRepository": "https://github.com/travisvought-byte/ohio-cannabis-directory"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Ohio Cannabis Ecosystem Directory",
+  "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/",
+  "publisher": {
+    "@type": "Person",
+    "name": "Travis Vought"
+  }
+}
+</script>
 <style>
   :root{
     --paper:#EDEFE8;
@@ -132,6 +197,7 @@
   footer p{margin:0 0 .6rem; max-width:60ch}
   footer a{color:var(--field-deep)}
   .actions{display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:1.1rem}
+  .masthead .actions{margin:.1rem 0 1.15rem}
   .btn{
     font-family:var(--sans); font-size:.85rem; color:var(--ink);
     background:var(--paper-deep); border:1px solid var(--rule);
@@ -198,17 +264,537 @@
     </div>
 
     <div class="lanes" id="lanes"></div>
+
+    <div class="actions">
+      <button class="btn" id="dl">Download these results as CSV</button>
+      <button class="btn" id="scope" aria-pressed="false">Show 46 out-of-scope records</button>
+      <a class="btn" href="https://github.com/travisvought-byte/ohio-cannabis-directory/issues/new/choose" target="_blank" rel="noopener">Add or correct a listing</a>
+    </div>
   </div>
 </header>
 
 <main class="wrap" id="results"></main>
+<noscript>
+<div class="wrap" style="padding:1.5rem 1.1rem">
+<h2>Full directory index</h2>
+<p>All 465 publishable organizations, listed for browsers and crawlers without JavaScript. Use the search above for capability, contact and provenance detail.</p>
+<h3>Accounting &amp; Tax (27)</h3>
+<ul>
+<li><a href="https://www.aprio.com/cannabis-accounting/" rel="nofollow noopener">Aprio</a> — Nationwide, including Ohio — Accounting; Tax</li>
+<li><a href="https://www.armanino.com/contact/" rel="nofollow noopener">Armanino</a> — United States; no Ohio client or engagement publicly identified — Accounting; Tax</li>
+<li><a href="https://www.bakertilly.com/industries/cannabis" rel="nofollow noopener">Baker Tilly</a> — Ohio offices in the Cleveland area and Columbus; U.S. cannabis practice — Accounting; Tax</li>
+<li><a href="https://www.indivaadvisors.com/" rel="nofollow noopener">BeachFleischman — Cannabis Practice (formerly Indiva Advisors)</a> — National cannabis practice (20+ states); Las Vegas, NV office; firm HQ Tucson, AZ — Accounting; Tax</li>
+<li><a href="https://budsgrp.com/" rel="nofollow noopener">BudsGroup</a> — Multiple U.S. states; no Ohio client operation publicly identified — Accounting; Tax</li>
+<li><a href="https://calyxcpa.com/" rel="nofollow noopener">Calyx CPA</a> — 30+ states — Accounting; Tax</li>
+<li><a href="https://www.cannadrust.com/" rel="nofollow noopener">Canna Drust</a> — Ohio | Nationwide — Accounting; Tax</li>
+<li><a href="https://cacgroupllc.com/" rel="nofollow noopener">Cannabis Accounting &amp; Consulting Group d/b/a The Blunt Accountant™</a> — Nationwide virtual; Ohio availability to confirm — Accounting; Tax</li>
+<li><a href="https://cannabiscpa.tax/" rel="nofollow noopener">Cannabis CPA Tax</a> — 19 states plus Washington, D.C. — Accounting; Tax</li>
+<li><a href="https://www.cbiz.com/locations/cleveland-downtown-ohio" rel="nofollow noopener">CBIZ</a> — Statewide / Multi-Market — Accounting; Tax</li>
+<li><a href="https://www.citrincooperman.com/" rel="nofollow noopener">Citrin Cooperman</a> — Ohio offices and national cannabis advisory practice; no named Ohio cannabis client identified — Accounting; Tax</li>
+<li><a href="https://www.cohnreznick.com/people/michael-harlow" rel="nofollow noopener">CohnReznick</a> — United States and global reach — Accounting; Tax</li>
+<li><a href="https://www.crowe.com/industries/cannabis" rel="nofollow noopener">Crowe</a> — Statewide / Multi-Market — Accounting; Tax</li>
+<li><a href="https://www.gacadvisoryllc.com/" rel="nofollow noopener">GAC Advisory</a> — Nationwide virtual — Accounting; Tax</li>
+<li><a href="https://greengrowthcpas.com/industries/cannabis/" rel="nofollow noopener">GreenGrowth CPAs</a> — Ohio statewide | 13+ cannabis markets — Accounting; Tax</li>
+<li><a href="https://www.growisecpas.com/cannabis-tax-accounting-state-guide" rel="nofollow noopener">Growise CPAs</a> — Ohio and nationwide — Accounting; Tax</li>
+<li><a href="https://hbkcpa.com/industries/cannabis/" rel="nofollow noopener">HBK Cannabis Solutions</a> — Ohio and multistate — Accounting; Tax</li>
+<li><a href="https://leafyag.com/" rel="nofollow noopener">Leafy Accounting Group</a> — Nationwide — Accounting; Tax</li>
+<li><a href="https://www.loudcpa.com/" rel="nofollow noopener">LOUD CPA</a> — United States; no Ohio client or engagement publicly identified — Accounting; Tax</li>
+<li><a href="https://www.mgocpa.com/people/sarah-mcguire/" rel="nofollow noopener">MGO</a> — United States | Midwest and national — Accounting; Tax</li>
+<li><a href="https://mindfulcpas.com/" rel="nofollow noopener">MindfulCPAs</a> — Nationwide — Accounting; Tax</li>
+<li><a href="https://mydopecpa.com/" rel="nofollow noopener">MY DOPE CPA</a> — Canton, Ohio; cannabis accounting — Accounting; Tax</li>
+<li><a href="https://www.peasebell.com/industry/cannabis" rel="nofollow noopener">Pease Bell CPAs</a> — Ohio and nationwide — Accounting; Tax</li>
+<li><a href="https://pipe-dream-financials.com/" rel="nofollow noopener">Pipe Dream Financials</a> — Nationwide remote — Accounting; Tax</li>
+<li><a href="https://thecannacpas.com/" rel="nofollow noopener">The Canna CPAs</a> — Statewide / Multi-Market — Accounting; Tax</li>
+<li><a href="https://verdantstrategies.com/" rel="nofollow noopener">Verdant Strategies (formerly 420CPA)</a> — Ohio market expertise | United States and international — Accounting; Tax</li>
+<li><a href="https://www.withum.com/our-people/steven-monacelli/" rel="nofollow noopener">Withum</a> — Nationwide — Accounting; Tax</li>
+</ul>
+<h3>Banking &amp; Financial Services (26)</h3>
+<ul>
+<li><a href="https://www.afcbdc.com/" rel="nofollow noopener">Advanced Flower Capital</a> — Ohio transaction history | United States — Banking / Financial Services; Lending / Financing</li>
+<li><a href="https://www.goaeropay.com/" rel="nofollow noopener">Aeropay</a> — Ohio | United States — Banking / Financial Services</li>
+<li><a href="https://www.alta-fund.com/" rel="nofollow noopener">Alta Real Estate Fund</a> — United States — nationwide — Banking / Financial Services; Lending / Financing</li>
+<li><a href="https://bankcardinternationalgroup.com/industries-served/cannabis-payment-processing/" rel="nofollow noopener">Bankcard International Group</a> — United States — Banking / Financial Services; Payments / Merchant Services</li>
+<li><a href="https://canna-atm.com/" rel="nofollow noopener">CANNA-ATM</a> — All 50 states — Banking / Financial Services</li>
+<li><a href="https://www.canpaydebit.com/" rel="nofollow noopener">CanPay</a> — Ohio | United States — Banking / Financial Services</li>
+<li><a href="https://www.refi.reit/about-us/" rel="nofollow noopener">Chicago Atlantic</a> — United States — Banking / Financial Services; Lending / Financing</li>
+<li><a href="https://www.communitychoicecu.com/ohio-cannabis-business-services/" rel="nofollow noopener">Community Choice Credit Union</a> — Ohio — statewide — Banking / Financial Services; Credit Union</li>
+<li><a href="https://www.leaflink.com/banking" rel="nofollow noopener">Dama Financial (LeafLink Financial Services)</a> — United States — Banking / Financial Services; Lending / Financing</li>
+<li><a href="https://www.dispoatm.com/" rel="nofollow noopener">Dispo ATM</a> — All 50 states — Banking / Financial Services</li>
+<li><a href="https://www.elementfcu.org/almostcannawv/" rel="nofollow noopener">Element Federal Credit Union</a> — Ohio | West Virginia | Maryland | District of Columbia and additional markets — Banking / Financial Services; Credit Union</li>
+<li><a href="https://fincann.com/" rel="nofollow noopener">Fincann</a> — Ohio | United States — Banking / Financial Services</li>
+<li><a href="https://fortyumaatm.com/dispensary-atm/" rel="nofollow noopener">Fort Yuma ATM</a> — All 50 states — Banking / Financial Services</li>
+<li><a href="https://fundcanna.com/" rel="nofollow noopener">FundCanna</a> — Ohio | United States — Banking / Financial Services; Lending / Financing</li>
+<li><a href="https://www.fundnowcap.com/funding/cannabis" rel="nofollow noopener">FundNow Capital</a> — United States — Banking / Financial Services; Lending / Financing</li>
+<li><a href="https://www.lazearcapital.com/" rel="nofollow noopener">Lazear Capital Partners</a> — Ohio-based | United States — Banking / Financial Services; Lending / Financing</li>
+<li><a href="https://www.needhambank.com/business/cannabis-banking" rel="nofollow noopener">Needham Bank</a> — United States — nationwide — Banking / Financial Services; Bank</li>
+<li><a href="https://payboticfinancial.com/" rel="nofollow noopener">Paybotic Financial</a> — Ohio | United States — Banking / Financial Services; Lending / Financing</li>
+<li><a href="https://www.reefi.com/" rel="nofollow noopener">ReeFi Capital</a> — United States — nationwide — Banking / Financial Services; Lending / Financing</li>
+<li><a href="https://shfinancial.org/" rel="nofollow noopener">Safe Harbor Financial</a> — Ohio — statewide / Columbus — Banking / Financial Services; Lending / Financing</li>
+<li><a href="https://www.saltmoney.com/" rel="nofollow noopener">SALT</a> — Ohio | United States — Banking / Financial Services</li>
+<li><a href="https://www.shieldbanking.com/company-news/shield-compliance-named-preferred-partner-by-the-community-bankers-association-of-ohio" rel="nofollow noopener">Shield Compliance</a> — Ohio — Banking / Financial Services; Regulatory Compliance</li>
+<li><a href="https://www.solvent.io/cannabis-banking/ohio" rel="nofollow noopener">Solvent</a> — Ohio | United States — Banking / Financial Services; Payments / Merchant Services</li>
+<li><a href="https://www.spendr.com/faq" rel="nofollow noopener">Spendr</a> — Ohio | United States — Banking / Financial Services</li>
+<li><a href="https://upwisecapital.com/cannabis-loans/ohio-cannabis-loan/" rel="nofollow noopener">Upwise Capital</a> — Ohio | United States — Banking / Financial Services; Lending / Financing</li>
+<li><a href="https://www.wpcu.coop/business/mrb-banking" rel="nofollow noopener">Wright-Patt Credit Union</a> — Ohio — statewide — Banking / Financial Services; Credit Union</li>
+</ul>
+<h3>Consulting (33)</h3>
+<ul>
+<li><a href="https://airmd.com/areas-served/ohio/" rel="nofollow noopener">AirMD</a> — Ohio — Columbus, Cleveland and Cincinnati metros; national network — Indoor Air Quality; Mold / Microbial Assessment; Industrial Hygiene; Environmental Monitoring</li>
+<li><a href="https://allayconsulting.com/contact/" rel="nofollow noopener">Allay Consulting</a> — All 50 states, Canada and Mexico — Consulting; Regulatory Compliance; EHS / OSHA / EPA</li>
+<li><a href="https://www.anandastrategy.com/" rel="nofollow noopener">Ananda Strategy</a> — Ohio and multi-market — Consulting</li>
+<li><a href="https://arcviewconsulting.com/" rel="nofollow noopener">Arcview Consulting</a> — U.S. and international multi-market; Ohio-specific engagement not identified — Consulting; Regulatory Compliance</li>
+<li><a href="https://www.bioservusa.com/" rel="nofollow noopener">BioServ</a> — Ohio — Brooklyn Heights &amp; Columbus / statewide — Consulting; Regulatory Compliance; Waste Disposal; Hazardous Waste</li>
+<li><a href="https://www.buddingoperations.com/" rel="nofollow noopener">Budding Operations</a> — U.S. multi-market via virtual or on-site services; Ohio client not identified — Consulting; Regulatory Compliance; Employee Training</li>
+<li><a href="https://www.cannstrategy.com/contact-cannabis-consultants" rel="nofollow noopener">Cann Strategy</a> — Ohio and nationwide — Consulting; Regulatory Compliance</li>
+<li><a href="https://thinkcanna.com/" rel="nofollow noopener">Canna Advisors</a> — Ohio / nationwide — Consulting; Regulatory Compliance; Staffing / Recruiting</li>
+<li><a href="https://cannabusinessservices.com/contact-us/" rel="nofollow noopener">Canna Business Services</a> — United States nationwide / global; current Ohio-market coverage — Consulting; Regulatory Compliance</li>
+<li><a href="https://cannaconsultants.com/contact-us/" rel="nofollow noopener">Canna Consultants</a> — Nationwide and worldwide — Consulting; Regulatory Compliance; Permitting; Staffing / Recruiting; Employee Training</li>
+<li><a href="https://cannabiscashconsultants.com/" rel="nofollow noopener">Cannabis Cash Consultants</a> — Statewide / Multi-Market — Consulting</li>
+<li><a href="https://www.cannabisglobalconsultants.com/" rel="nofollow noopener">Cannabis Global Consultants</a> — United States and international — Consulting; Regulatory Compliance; Staffing / Recruiting; Employee Training</li>
+<li><a href="https://cannapathconsulting.com/" rel="nofollow noopener">CannaPath Consulting</a> — United States and Canada; project experience across 15 states — Consulting; Employee Training</li>
+<li><a href="https://canndelta.com/us/ohio/" rel="nofollow noopener">CannDelta</a> — Ohio statewide — Consulting; Regulatory Compliance; Employee Training</li>
+<li><a href="https://certifiedenvironmental.net/" rel="nofollow noopener">Certified Environmental, Inc.</a> — Mansfield, Ohio — Indoor Air Quality; Mold / Microbial Assessment; Industrial Hygiene; EHS / OSHA / EPA; Employee Training</li>
+<li><a href="https://collateralbase.com/" rel="nofollow noopener">Collateral Base</a> — Nationwide; direct Ohio licensing experience — Consulting; Regulatory Compliance</li>
+<li><a href="https://www.dmdenv.com/industrial_hygiene" rel="nofollow noopener">DMD Environmental Consultants</a> — Toledo, Ohio and Northwest Ohio — Indoor Air Quality; Mold / Microbial Assessment; Industrial Hygiene; Environmental Monitoring</li>
+<li><a href="https://forteops.com/" rel="nofollow noopener">Forte Ops</a> — U.S. multi-market; remote and in-person delivery; Ohio engagement not identified — Consulting; Employee Training</li>
+<li><a href="https://www.galleonconsultinggroup.com/" rel="nofollow noopener">Galleon Consulting Group</a> — Nationwide; direct Ohio regulatory experience — Consulting; Regulatory Compliance; Construction / Build-Out</li>
+<li><a href="https://greenleafbizsolutions.com/contact/" rel="nofollow noopener">Green Leaf Business Solutions</a> — Statewide / Multi-Market — Consulting</li>
+<li><a href="https://www.hazardouswasteexperts.com/" rel="nofollow noopener">Hazardous Waste Experts</a> — Ohio / nationwide — Consulting; Waste Disposal; Hazardous Waste; Recycling</li>
+<li><a href="https://higheryieldsconsulting.com/" rel="nofollow noopener">Higher Yields Cannabis Consulting</a> — United States and international — Consulting; Regulatory Compliance; Construction / Build-Out; Real Estate; Employee Training</li>
+<li><a href="https://www.asifood.com/" rel="nofollow noopener">Kiwa ASI</a> — Ohio / United States — Consulting; Regulatory Compliance; Employee Training</li>
+<li><a href="https://www.kushdesignstudio.com/contact" rel="nofollow noopener">Kush Design Studio</a> — U.S. multi-market; Ohio-specific project not identified — Consulting; Regulatory Compliance</li>
+<li><a href="https://lkpimpact.com/contact-us/" rel="nofollow noopener">LKP Impact Consulting</a> — Statewide / Multi-Market — Consulting</li>
+<li><a href="https://pointsevengroup.com/cannabis-operators/" rel="nofollow noopener">Point Seven Group (Point7)</a> — Ohio / United States / international — Consulting</li>
+<li><a href="https://psycannadvisors.com/contact/" rel="nofollow noopener">PsyCann Advisors</a> — Nationwide — Consulting; Regulatory Compliance; Employee Training</li>
+<li><a href="https://quantum9.net/contact/" rel="nofollow noopener">Quantum 9</a> — Ohio statewide / nationwide — Consulting</li>
+<li><a href="https://www.safex.us/our-services/indoor-air-quality/" rel="nofollow noopener">Safex, Inc.</a> — Westerville, Ohio (Columbus area); statewide Ohio — Indoor Air Quality; Mold / Microbial Assessment; Industrial Hygiene; EHS / OSHA / EPA; Environmental Monitoring; Employee Training</li>
+<li><a href="https://thecannabisbusinessadvisors.com/ohio-cannabis-policy-update/" rel="nofollow noopener">The Cannabis Business Advisors</a> — Ohio and nationwide — Consulting; Regulatory Compliance</li>
+<li><a href="https://www.linkedin.com/in/travisvought" rel="nofollow noopener">Travis Vought — Cannabis Ecosystem Mapping &amp; Strategy</a> — Statewide (Ohio); remote strategic work — Consulting; Regulatory Compliance</li>
+<li><a href="https://www.triumvirate.com/" rel="nofollow noopener">Triumvirate Environmental</a> — Ohio / Midwest / United States — Consulting; Permitting; Waste Disposal; Hazardous Waste; EHS / OSHA / EPA; Respiratory Safety; Recycling; Employee Training; Environmental Monitoring</li>
+<li><a href="https://www.wecannca.com/services/general-consulting/" rel="nofollow noopener">WeCann</a> — Nationwide — Consulting; Regulatory Compliance; Real Estate; Staffing / Recruiting</li>
+</ul>
+<h3>Cultivator / Processor / Dispensary (82)</h3>
+<ul>
+<li><a href="https://adoseofhopebrand.com/where-to-buy/" rel="nofollow noopener">A Dose of Hope</a> — Ohio — Cannabis Operator; Processing; Edibles / Infused Products</li>
+<li><a href="https://acadispensary.com/ohio/" rel="nofollow noopener">ACA Dispensary</a> — Hubbard, Ohio — Dispensary / Retail</li>
+<li><a href="https://amplifydispensary.com/contact-us/" rel="nofollow noopener">Amplify</a> — Central Ohio — Cannabis Operator; Processing; Dispensary / Retail</li>
+<li><a href="https://www.ancientrootsohio.com/contact/" rel="nofollow noopener">Ancient Roots</a> — Southwest Ohio / Cincinnati — Cannabis Operator</li>
+<li><a href="https://letsascend.com/locations/ohio/" rel="nofollow noopener">Ascend Cannabis</a> — Six Ohio dispensaries: Carroll, Cincinnati, Coshocton, Englewood, Piqua and Sandusky — Cannabis Operator; Dispensary / Retail</li>
+<li><a href="https://ascensioncann.com/" rel="nofollow noopener">Ascension BioMedical LLC</a> — Oberlin, Ohio — Cannabis Operator; Cultivation</li>
+<li><a href="https://ayrwellness.com/" rel="nofollow noopener">Ayr Wellness Ohio</a> — 8 Ohio dispensaries: Akron, Dayton, Goshen, Lewis Center, Niles, Parma Heights, Streetsboro, Woodmere — Cannabis Operator</li>
+<li><a href="https://www.backroadwellness.com/FAQs/" rel="nofollow noopener">Backroad Wellness</a> — New Boston, Cambridge and Lima, Ohio (Southern and Eastern Ohio) — Cannabis Operator</li>
+<li><a href="https://www.beneleaves.com/ourteam" rel="nofollow noopener">Beneleaves</a> — Central Ohio — Cannabis Operator</li>
+<li><a href="https://jushico.com/retail/" rel="nofollow noopener">Beyond Hello</a> — 7 Ohio dispensaries: Cincinnati (x2), Mansfield, Parma, Oxford, Toledo and Warren — Dispensary / Retail</li>
+<li><a href="https://blackbuddhacannabis.co/contact" rel="nofollow noopener">Black Buddha Cannabis</a> — Cannabis Operator</li>
+<li><a href="https://blissohio.com/" rel="nofollow noopener">Bliss Ohio</a> — Kent, Ohio — Dispensary / Retail</li>
+<li><a href="https://bloommarijuana.com/oh/contact" rel="nofollow noopener">Bloom Cannabis (formerly Bloom Medicinals)</a> — 8 Ohio dispensaries (7 active, 1 provisional): Akron, Athens, Columbus (x2), Massillon, Painesville, Seven Mile — Cannabis Operator; Dispensary / Retail</li>
+<li><a href="https://buckeyerelief.com/" rel="nofollow noopener">Buckeye Relief</a> — Northeast Ohio / Cleveland-Akron — Cannabis Operator; Cultivation; Processing</li>
+<li><a href="https://www.cannabistcompany.com/contact-us" rel="nofollow noopener">CannAscend Ohio Processing</a> — Ohio — active dual-use processor; 100 Davids Drive, Wilmington (CCP000060-00) — Cannabis Operator; Processing</li>
+<li><a href="https://www.acreageholdings.com/contact-us/" rel="nofollow noopener">Canopy Growth / Acreage</a> — Statewide / Multi-Market — Cannabis Operator</li>
+<li><a href="https://www.certifiedcultivators.com/contact" rel="nofollow noopener">Certified Cultivators</a> — Central Ohio; Dayton / Miami Valley — Cannabis Operator; Cultivation</li>
+<li><a href="https://www.heylocannabis.com/contact" rel="nofollow noopener">Cielo Jardin / Treehaus / CJ&#x27;s (Heylo)</a> — Euclid, Ohio cultivation; Parma, Ohio CJ&#x27;s dispensary pre-opening; Heylo/Treehaus roots in Washington — Cannabis Operator; Cultivation; Dispensary / Retail</li>
+<li><a href="https://consumecannabis.com/" rel="nofollow noopener">Consume Cannabis (PTS Grows)</a> — Alliance, Ashtabula, Cincinnati and Oxford, Ohio; also Illinois and Arizona — Cannabis Operator; Dispensary / Retail</li>
+<li><a href="https://investors.crescolabs.com/news/news-details/2026/Cresco-Labs-Reports-First-Quarter-2026-Financial-Results-Advances-Multiple-Growth-Initiatives/default.aspx" rel="nofollow noopener">Cresco Labs / Sunnyside</a> — Statewide Ohio (8 dispensaries as of May 2026) — Cannabis Operator; Dispensary / Retail</li>
+<li><a href="https://culturecannabisclub.com/location/akron-oh/" rel="nofollow noopener">Culture Cannabis Club</a> — Akron, Ohio — current first-party Culture storefront — Dispensary / Retail</li>
+<li>Curaleaf Ohio — Statewide / Multi-Market — Cannabis Operator</li>
+<li><a href="https://dialedingummies.com/contact/" rel="nofollow noopener">Dialed In Gummies</a> — Statewide Ohio distribution / multi-market brand — Cannabis Operator; Edibles / Infused Products</li>
+<li><a href="https://www.elevated-growth.com/" rel="nofollow noopener">Elevated Growth</a> — Columbus, Ohio — Cannabis Operator; Dispensary / Retail</li>
+<li><a href="https://ethoscannabis.com/contact/" rel="nofollow noopener">Ethos Cannabis / Meigs County Grown</a> — Lebanon and New Lexington retail; Langsville cultivation, Ohio — Cannabis Operator; Cultivation; Dispensary / Retail</li>
+<li>Farkas Farms — Grafton / Lorain County, Northeast Ohio — Cannabis Operator</li>
+<li><a href="https://farmaceuticalrx.com/contact/" rel="nofollow noopener">FarmaceuticalRx</a> — East Liverpool, Cuyahoga Falls and Elyria, Ohio, plus additional announced locations — Cannabis Operator</li>
+<li><a href="https://feelstate.com/" rel="nofollow noopener">Feel State</a> — Urbana and Lewis Center, Ohio; also operates in Missouri — Cannabis Operator; Dispensary / Retail</li>
+<li><a href="https://www.firelandsscientific.com/contact" rel="nofollow noopener">Firelands Scientific</a> — Huron, Ohio; statewide Ohio retail footprint via The Landing, including Cincinnati, Columbus and Cleveland — Cannabis Operator; Dispensary / Retail</li>
+<li><a href="https://galenas.com/" rel="nofollow noopener">Galenas LLC</a> — Akron, Ohio — Cannabis Operator</li>
+<li><a href="https://greenleaftherapy.org/pages/contact" rel="nofollow noopener">Green Leaf Therapy</a> — Struthers/Youngstown-area, Ohio (93 S. Bridge St.) — Cannabis Operator; Dispensary / Retail</li>
+<li><a href="https://greenreleafdispensary.com/contact-us/" rel="nofollow noopener">Green Releaf Dispensary</a> — Dayton and Cincinnati, Ohio — Dispensary / Retail</li>
+<li><a href="https://risecannabis.com/dispensaries/ohio/" rel="nofollow noopener">Green Thumb Industries (RISE / RYTHM)</a> — Ohio: six current first-party RISE storefronts (Cleveland x2, Lakewood, Lorain, Toledo and Whitehall), plus active Middletown legal license; Toledo cultivation and processing — Cannabis Operator; Cultivation; Processing; Dispensary / Retail</li>
+<li><a href="https://ohio.greenlightdispensary.com/locations/" rel="nofollow noopener">Greenlight Dispensary</a> — Columbus, Ironton, Marengo, Marietta, South Point and Wintersville, Ohio — Cannabis Operator; Dispensary / Retail</li>
+<li><a href="https://growoh.com/" rel="nofollow noopener">Grow Ohio / Butterfly Effect</a> — Southeast Ohio — Cannabis Operator; Cultivation</li>
+<li><a href="https://guaranteeddispensary.com/" rel="nofollow noopener">Guaranteed Dispensary</a> — Dayton / Miami Valley — Cannabis Operator; Dispensary / Retail</li>
+<li><a href="https://www.hundredpercentlabs.com/contact-us/" rel="nofollow noopener">Hundred Percent Labs</a> — Statewide / Mount Orab / Southern Ohio — Cannabis Operator; Processing</li>
+<li><a href="https://insa.com/oh/contact-insa/" rel="nofollow noopener">INSA</a> — Willoughby Hills operating; Dayton provisional license — Dispensary / Retail</li>
+<li><a href="https://italianherbsdispensary.com/" rel="nofollow noopener">Italian Herbs</a> — Ashtabula and Geneva-on-the-Lake, Ohio — Dispensary / Retail</li>
+<li><a href="https://kingcitygardens.com/" rel="nofollow noopener">King City Gardens</a> — Cincinnati, Ohio (cultivation, processing and 3 dispensaries) — Cannabis Operator; Cultivation; Dispensary / Retail</li>
+<li><a href="https://www.klutchcannabis.com/" rel="nofollow noopener">Klutch Cannabis</a> — Columbus, Canton and Lorain, Ohio, plus Akron-area roots; Grandview / 1305 Holly Ave, Columbus — grand opening scheduled September 11, 2026 — Cannabis Operator</li>
+<li><a href="https://leafreliefohio.com/contact-us" rel="nofollow noopener">Leaf Relief</a> — Youngstown and Reynoldsburg, Ohio; Austintown pre-opening — Dispensary / Retail</li>
+<li><a href="https://lighthousesci.com/" rel="nofollow noopener">Lighthouse Sciences</a> — Eastlake, Ohio — Cannabis Operator; Processing; Extraction</li>
+<li><a href="https://localscannabis.com/contact/" rel="nofollow noopener">Locals Cannabis Dispensary</a> — Columbus and Cincinnati, Ohio — Cannabis Operator; Dispensary / Retail</li>
+<li><a href="https://mainstreetcannabis.co/" rel="nofollow noopener">Main Street Cannabis Co.</a> — Columbus, Ohio — Dispensary / Retail</li>
+<li><a href="https://mavunoofoh.com/contact-us/" rel="nofollow noopener">Mavuno of Ohio</a> — Cleveland and Athens, Ohio; South Euclid coming soon — Cannabis Operator; Dispensary / Retail</li>
+<li><a href="https://shopmotherearths.com/" rel="nofollow noopener">Mother’s Earth Fine Cannabis</a> — Columbus, Ohio — Cannabis Operator</li>
+<li><a href="https://www.narreserve.com/contact-us/" rel="nofollow noopener">Nar Cannabis</a> — Delaware and Columbus, Ohio — Dispensary / Retail</li>
+<li><a href="https://nectarohio.com/" rel="nofollow noopener">Nectar Ohio</a> — Bowling Green, Cincinnati (x3), Euclid and Harrison, Ohio — Dispensary / Retail</li>
+<li><a href="https://ohio.nirvanacannabis.com/contact/" rel="nofollow noopener">Nirvana Center Dispensaries</a> — Elyria, Ohio (Northeast Ohio) — Cannabis Operator; Dispensary / Retail</li>
+<li><a href="https://northwoodscultivation.com/contact" rel="nofollow noopener">Northwoods Cannabis</a> — Clyde, Ohio cultivation and processing; statewide wholesale — Cannabis Operator; Cultivation; Processing; Wholesale</li>
+<li><a href="https://otcdispo.com/" rel="nofollow noopener">Off The Charts Dayton</a> — Dayton, Ohio — Dispensary / Retail</li>
+<li><a href="https://occdispensary.com/locations/" rel="nofollow noopener">Ohio Cannabis Company</a> — Canton, Columbus, Dublin, Piqua and Upper Sandusky/Harpster; Canal Winchester coming soon — Cannabis Operator</li>
+<li><a href="https://ohiocleanleaf.com/" rel="nofollow noopener">Ohio Clean Leaf</a> — Dayton, Ohio — Cannabis Operator; Cultivation</li>
+<li><a href="https://ohiogreensystems.com/about/" rel="nofollow noopener">Ohio Green Systems</a> — Garfield Heights, Ohio — Cannabis Operator; Processing</li>
+<li><a href="https://ohio.greenlightdispensary.com/locations/wintersville/" rel="nofollow noopener">Ohio Valley Natural Relief LLC (dba Greenlight Dispensary — see Greenlight Dispensary entry)</a> — Wintersville and Ironton, Ohio — legal-entity cross-reference; see Greenlight Dispensary — Cannabis Operator; Dispensary / Retail</li>
+<li><a href="https://www.verilife.com/oh/locations/cincinnati" rel="nofollow noopener">PharmaCann / Verilife</a> — Statewide / Multi-Market — Cannabis Operator; Cultivation; Processing</li>
+<li><a href="https://www.pureohiowellness.com/" rel="nofollow noopener">Pure Ohio Wellness</a> — Central Ohio; Dayton / Miami Valley — Cannabis Operator</li>
+<li><a href="https://www.honcannabis.com/contact/" rel="nofollow noopener">Purpose Leaf / hōn Cannabis</a> — Enon, Ohio / Dayton–Miami Valley — Cannabis Operator; Processing</li>
+<li><a href="https://queenccanna.com/" rel="nofollow noopener">Queen City Cannabis</a> — Norwood and Harrison, Ohio (Cincinnati metro) — Cannabis Operator; Dispensary / Retail</li>
+<li><a href="https://www.ratio-cannabis.com/" rel="nofollow noopener">Ratio Cannabis</a> — New Philadelphia, Ohio — current first-party storefront; Columbus legal license not first-party storefront-confirmed — Dispensary / Retail</li>
+<li><a href="https://rivieracreek.com/contact/" rel="nofollow noopener">Riviera Creek</a> — Youngstown, Ohio — Cannabis Operator; Cultivation; Processing</li>
+<li><a href="https://roamdispo.com/contact/" rel="nofollow noopener">ROAM Dispensary</a> — Seven Hills, Ohio — Dispensary / Retail</li>
+<li><a href="https://rovebrand.com/" rel="nofollow noopener">Rove</a> — Multi-state; active Ohio market participation — Cannabis Operator</li>
+<li><a href="https://shangriladispensaries.com/contact-us/" rel="nofollow noopener">Shangri-La Dispensaries</a> — Monroe, Cleveland, Cincinnati, Delphos and Amelia, Ohio — Dispensary / Retail</li>
+<li><a href="https://southernohiobotanicals.com/about/" rel="nofollow noopener">Southern Ohio Botanicals</a> — Portsmouth / Southern Ohio — Cannabis Operator</li>
+<li><a href="https://www.standardwellness.com/contact/" rel="nofollow noopener">Standard Wellness / The Forest</a> — Vertically integrated, statewide Ohio distribution (multiple dispensaries) — Cannabis Operator</li>
+<li><a href="https://storycannabis.com/contact-us/" rel="nofollow noopener">Story Cannabis</a> — 8 Ohio dispensaries: Cincinnati (x2), Cleveland (x2), Columbus, Coshocton, Dublin, Massillon — Cannabis Operator</li>
+<li><a href="https://supergoodstore.com/store/ravenna/" rel="nofollow noopener">Supergood</a> — Ravenna, Ohio — Dispensary / Retail</li>
+<li><a href="https://terrasanacannabisco.com/about/" rel="nofollow noopener">Terrasana Cannabis Co.</a> — 7 current Ohio dispensaries; Columbus cultivation and processing; planned Akron, Canton and Zanesville dispensaries — Cannabis Operator; Cultivation; Processing; Dispensary / Retail</li>
+<li><a href="https://shopbotanist.com/locations/columbus-dispensary/" rel="nofollow noopener">The Botanist (Acreage Holdings)</a> — Akron, Canton, Cleveland (x2), Columbus, Solon and Wickliffe, Ohio (7 locations) — Cannabis Operator</li>
+<li><a href="https://www.cannabistcompany.com/contact-us" rel="nofollow noopener">The Cannabist Company / Columbia Care Ohio</a> — Ohio — statewide cultivation, manufacturing/wholesale and retail footprint — Cannabis Operator; Processing</li>
+<li><a href="https://gardenclubdispensaries.com/ohio/dispensary-near-pleasant-run-farm/" rel="nofollow noopener">The Garden Club Dispensary</a> — Springdale dispensary; Columbus cultivation and processing — Cannabis Operator; Cultivation; Processing; Dispensary / Retail</li>
+<li><a href="https://mothershipdispensary.com/contact/" rel="nofollow noopener">The Mothership Cannabis Dispensary</a> — Streetsboro, Ohio — Dispensary / Retail</li>
+<li><a href="https://theorywellness.org/ohio-dispensary/" rel="nofollow noopener">Theory Wellness</a> — Sherwood and Columbus, Ohio — Dispensary / Retail</li>
+<li><a href="https://www.therapycannabis.com/contact/" rel="nofollow noopener">Therapy Cannabis</a> — Cleveland and Cincinnati, Ohio — Dispensary / Retail</li>
+<li><a href="https://ir.marimedinc.com/" rel="nofollow noopener">Thrive Wellness</a> — Tiffin, Ohio — Dispensary / Retail</li>
+<li><a href="https://www.trulieveoh.com/shop/" rel="nofollow noopener">Trulieve Ohio</a> — Statewide Ohio (8 locations) — Cannabis Operator</li>
+<li><a href="https://www.upliftohio.com/" rel="nofollow noopener">UpLift</a> — Milford and Mt. Orab, Ohio — Cannabis Operator</li>
+<li><a href="https://investors.verano.com/news-releases/news-release-details/verano-announces-fourth-quarter-and-full-year-2025-financial" rel="nofollow noopener">Verano / Zen Leaf</a> — 6 Ohio dispensaries: Antwerp, Bowling Green, Canton, Cincinnati, Riverside/Dayton, Newark — Cannabis Operator; Dispensary / Retail</li>
+<li><a href="https://vextscience.com/" rel="nofollow noopener">Vext Science / Appalachian Pharm / Herbal Wellness Center / The Hive</a> — Ohio statewide; Jackson cultivation and manufacturing; Herbal Wellness Center retail footprint including Columbus — Cannabis Operator; Cultivation; Processing; Dispensary / Retail</li>
+<li><a href="https://woodwardcannabis.com/locations/woodward-delaware/" rel="nofollow noopener">Woodward Fine Cannabis (formerly Pollen)</a> — Delaware, Ohio — Dispensary / Retail</li>
+</ul>
+<h3>Events &amp; Expos (11)</h3>
+<ul>
+<li><a href="https://www.meetup.com/cincinnati-medical-marijuana-meetup/" rel="nofollow noopener">Cincinnati, Columbus and Cleveland Medical Marijuana Meetups</a> — Cincinnati / Columbus / Cleveland — Events / Expos</li>
+<li><a href="https://linktr.ee/clevelandcannabisandmusic" rel="nofollow noopener">Cleveland Cannabis and Music Expo</a> — Cleveland / Northeast Ohio — Events / Expos</li>
+<li><a href="https://www.eventbrite.com/o/the-session-216-44623008733" rel="nofollow noopener">Highly Satisfied Stoners Food Expo</a> — Cleveland / Northeast Ohio — Events / Expos</li>
+<li><a href="https://www.igniteit.com/contact/" rel="nofollow noopener">IgniteIt</a> — Cincinnati / Ohio Valley; multi-market — Events / Expos</li>
+<li><a href="https://ochbs.com/" rel="nofollow noopener">Ohio Cannabis Health &amp; Business Summit</a> — Columbus / Central Ohio — Events / Expos; Cannabis Business Conference; Education; Exhibitors; Sponsorships; Industry Networking; Policy</li>
+<li><a href="https://www.ohiocannabisexpo.com/" rel="nofollow noopener">Ohio Cannabis Live / Ohio Cannabis Expo</a> — Portsmouth / Southern Ohio — Events / Expos; Cannabis Education; Industry Networking; Home Grow; Legislative Updates; Veterans; Recovery</li>
+<li><a href="https://www.facebook.com/groups/1177728024082676/" rel="nofollow noopener">Ohio Valley 4/20 Cannabis Festival and Ohio Valley Cannabis Cup</a> — Cadiz / Jacobsburg / Eastern Ohio — Events / Expos</li>
+<li><a href="https://www.stargazerfest.com/" rel="nofollow noopener">Stargazer Cannabis Festival</a> — Waverly / Southern Ohio — Events / Expos</li>
+<li><a href="https://www.eventbrite.com/e/the-3rd-annual-420-olympics-tickets-1983394873458" rel="nofollow noopener">The 420 Olympics</a> — Cleveland / Northeast Ohio — Events / Expos</li>
+<li><a href="https://theclassicevents.com/" rel="nofollow noopener">The Ohio Classic / The Classic Events</a> — Kettering / Dayton region; multi-market Classic series — Events / Expos; Cannabis Networking; Golf Event; Sponsorships; Brand Activations; Fundraising; Brain Tumor Research</li>
+<li><a href="https://medicateoh.com/womens-cannabis-expo-2/" rel="nofollow noopener">Women&#x27;s Cannabis &amp; Wellness Expo</a> — West Chester / Greater Cincinnati — Events / Expos; Women&#x27;s Health; Cannabis Wellness; Patient Education; Licensed Vendors; Speakers; Sponsorships</li>
+</ul>
+<h3>Hemp / CBD Products &amp; Ancillary (12)</h3>
+<ul>
+<li><a href="https://cleanremedies.com/" rel="nofollow noopener">Clean Remedies</a> — Northeast Ohio / Cleveland-Akron — Hemp / CBD; Hemp-derived THC; CBD</li>
+<li><a href="https://www.cornbreadhemp.com/" rel="nofollow noopener">Cornbread Hemp</a> — Kentucky-based / Ohio retail availability documented — Hemp / CBD; Hemp-derived THC; CBD; Dispensary / Retail</li>
+<li><a href="https://cyclingfrog.com/" rel="nofollow noopener">Cycling Frog / North Fork Distribution</a> — National / Ohio — statewide sales currently protected by company-specific injunction — Hemp / CBD; Hemp-derived THC; THC Beverages; Gummies; Wholesale; Direct-to-Consumer; Ohio Sales</li>
+<li><a href="https://drinksunflower.com/" rel="nofollow noopener">Fifty West Brewing Company / Sunflower Seltzers</a> — Cincinnati / Ohio statewide — Hemp / CBD; Hemp-derived THC; THC Beverages; Manufacturing; Retail Distribution; Lab Results</li>
+<li><a href="https://laurelcrest.com/" rel="nofollow noopener">Laurelcrest</a> — Oregon-based — Hemp / CBD</li>
+<li><a href="https://mojossmokeshop.com/" rel="nofollow noopener">Mojo&#x27;s Smoke Shop (formerly The Hemp House / Wholesale Hemp LLC)</a> — Portsmouth and Wheelersburg, Ohio — Hemp / CBD; Dispensary / Retail</li>
+<li><a href="https://trymotivewellness.com/pages/contact-us" rel="nofollow noopener">Motive CBD</a> — Columbus, Ohio (hemp grown in Centerburg, OH) — Hemp / CBD; CBD</li>
+<li><a href="https://puregenesis.us/" rel="nofollow noopener">Pure Genesis</a> — New Jersey (not an Ohio licensee) — Hemp / CBD</li>
+<li><a href="https://www.sarenecraft.com/" rel="nofollow noopener">Sarene Craft Beer Distributors — Ohio</a> — Ohio statewide / multi-state — Hemp / CBD; Hemp-derived THC; Beverage Distribution; Wholesale; Ohio Statewide Service</li>
+<li><a href="https://vibesbysaucy.com/" rel="nofollow noopener">Saucy Seltzer / Saucy Brew Works</a> — Cleveland / Columbus / Ohio — Hemp / CBD; Hemp-derived THC; THC Beverages; CBD; CBG; CBN; Wholesale; Retail Partnerships</li>
+<li><a href="https://www.tlgdistro.com/" rel="nofollow noopener">Titan Logistics Group LLC / TLGDistro / 420 Craft Beverages</a> — Cleveland / Ohio / multi-state — Hemp / CBD; Hemp-derived THC; Beverage Distribution; Wholesale; Retail Logistics; Compliance; Brand Portfolio</li>
+<li><a href="https://www.coastalo.com/" rel="nofollow noopener">Urban Artifact / Coastalo (Grayscale Brewing LLC)</a> — Cincinnati / Ohio — sales currently protected by federal preliminary injunction — Hemp / CBD; Hemp-derived THC; THC Soda; Beverage Manufacturing; Ohio Hemp Litigation</li>
+</ul>
+<h3>Insurance (24)</h3>
+<ul>
+<li><a href="https://alpharoot.com/cannabis-insurance/ohio/" rel="nofollow noopener">AlphaRoot</a> — Ohio — Insurance</li>
+<li><a href="https://www.amwins.com/products/cannabis" rel="nofollow noopener">Amwins Program Underwriters</a> — All legal-cannabis U.S. states, including Ohio — Insurance</li>
+<li><a href="https://www.berkley.com/business-insurance/cannabis" rel="nofollow noopener">Berkley</a> — Ohio | United States — Insurance</li>
+<li><a href="https://cannabisinsurance.com/" rel="nofollow noopener">CannabisInsurance.com / 420Insurance.com — Kulchin Ross Insurance Services</a> — United States / nationwide — Insurance</li>
+<li><a href="https://cannaspaceinsurancegroup.com/pages/contact-us" rel="nofollow noopener">Cannaspace Insurance Group</a> — All U.S. states — Insurance</li>
+<li><a href="https://www.one80.com/programs/cannabis/cannasure/" rel="nofollow noopener">Cannasure Insurance Services (One80 Intermediaries)</a> — Ohio and nationwide — Insurance</li>
+<li><a href="https://www.canngenins.com/" rel="nofollow noopener">CannGen Insurance Services</a> — All U.S. states — Insurance</li>
+<li><a href="https://www.thecannabisinsurancecompany.com/" rel="nofollow noopener">CIS Insurance Services, LLC (The Cannabis Insurance Company)</a> — Fort Collins, Colorado-based; nationwide — Insurance</li>
+<li><a href="https://eandsinsurance.com/services/cannabis-business-insurance" rel="nofollow noopener">Contractors Choice Agency — Cannabis Insurance</a> — All 50 states — Insurance</li>
+<li><a href="https://covercannabis.com/" rel="nofollow noopener">Cover Cannabis (brand of Inszone Insurance Services, Inc.)</a> — United States — intake/referral; Ohio subject to licensed producer — Insurance</li>
+<li><a href="https://www.hubinternational.com/en-CA/industries/cannabis-insurance/" rel="nofollow noopener">HUB International</a> — Ohio and North America — Insurance</li>
+<li><a href="https://www.icanninsure.com/" rel="nofollow noopener">iCann Insure</a> — Ohio and other legal-cannabis states — Insurance</li>
+<li><a href="https://www.insureon.com/cannabis-business-insurance/ohio" rel="nofollow noopener">Insureon</a> — Ohio — Insurance</li>
+<li><a href="https://www.mcgowanprograms.com/products/cannabis-insurance/" rel="nofollow noopener">McGowan Program Administrators</a> — Nationwide — Insurance</li>
+<li><a href="https://paynebrown.com/business-insurance/specialized-business-insurance/marijuana-insurance/" rel="nofollow noopener">Payne &amp; Brown Insurance Agency</a> — Ohio (Sunbury-based, statewide) — Insurance</li>
+<li><a href="https://www.prosuregroup.com/ohio-marijuana-surety-bonds" rel="nofollow noopener">ProSure Group</a> — Ohio — Insurance; Surety Bonds</li>
+<li><a href="https://quadscore.com/" rel="nofollow noopener">QuadScore</a> — Ohio | United States — Insurance</li>
+<li><a href="https://safeherb.com/" rel="nofollow noopener">SafeHerb</a> — Ohio via appointed-agency network | United States — Insurance</li>
+<li><a href="https://www.spireamerica.com/cannabis-insurance/" rel="nofollow noopener">Spire Insurance Solutions</a> — Ohio (nationwide agency, HQ Traverse City MI) — Insurance</li>
+<li><a href="https://www.starwindins.com/cannabis" rel="nofollow noopener">Starwind Specialty Insurance Services</a> — Nationwide — Insurance</li>
+<li><a href="https://striveins.com/blog/cannabis-general-liability-insurance-ohio/" rel="nofollow noopener">Strive Insurance Group</a> — Ohio — Insurance; General Liability; Surety Bonds</li>
+<li><a href="https://www.trytruepath.com/" rel="nofollow noopener">Truepath Insurance</a> — Nationwide, including an explicit Ohio cannabis insurance offering — Insurance</li>
+<li><a href="https://verdeins.com/" rel="nofollow noopener">Verde Insurance</a> — All 50 states — Insurance</li>
+<li><a href="https://www.worldinsurance.com/product/cannabis-insurance" rel="nofollow noopener">World Insurance Associates</a> — United States (all continental states); Ohio offices including Boardman/Youngstown — Insurance</li>
+</ul>
+<h3>Legal &amp; Licensing (23)</h3>
+<ul>
+<li><a href="https://68partners.com/" rel="nofollow noopener">&#x27;68 Partners LLC</a> — National; current Ohio industry engagement; no Ohio client disclosed — Legal; Licensing; Regulatory Compliance</li>
+<li><a href="https://www.ainslie.us/services" rel="nofollow noopener">Ainslie Consulting</a> — Chicago, Illinois; U.S. cannabis licensing and regulatory consulting; no Ohio engagement identified — Legal; Licensing; Regulatory Compliance</li>
+<li><a href="https://www.beneschlaw.com/resources/issue-2-passes-and-recreational-marijuana-is-on-the-horizon-for-ohio-what-is-next-for-the-buckeye-state.html" rel="nofollow noopener">Benesch, Friedlander, Coplan &amp; Aronoff LLP</a> — Ohio and national — Legal; Licensing; Regulatory Compliance</li>
+<li><a href="https://www.brickergraydon.com/team/j-stephen-smith" rel="nofollow noopener">Bricker Graydon — cannabis practice</a> — Central Ohio — Legal; Licensing</li>
+<li><a href="https://cannaspire.com/" rel="nofollow noopener">Cannaspire</a> — United States and international — Legal; Licensing; Regulatory Compliance</li>
+<li><a href="https://catalyst-bc.com/ohio-cannabis-consulting/" rel="nofollow noopener">Catalyst BC</a> — Ohio statewide — Legal; Licensing; Regulatory Compliance; HVAC / Climate Control; Dehumidification</li>
+<li><a href="https://www.dentons.com/en/malina-dumas" rel="nofollow noopener">Dentons</a> — National cannabis licensing and regulatory practice; current Ohio industry programming; no Ohio client disclosed — Legal; Licensing</li>
+<li><a href="https://www.dickinson-wright.com/our-people/lloyd-pierre-louis" rel="nofollow noopener">Dickinson Wright PLLC</a> — Ohio and national — Legal; Licensing</li>
+<li><a href="https://foleyhoag.com/people/mcqueeny-michael/" rel="nofollow noopener">Foley Hoag LLP</a> — National cannabis and hemp practice; current 2026 Ohio Valley industry engagement; no Ohio client disclosed — Legal; Licensing</li>
+<li><a href="https://www.frantzward.com/practices/cannabis/" rel="nofollow noopener">Frantz Ward LLP</a> — Ohio and national — Legal; Licensing; Regulatory Compliance</li>
+<li><a href="https://www.icemiller.com/cannabis" rel="nofollow noopener">Ice Miller LLP</a> — Ohio and national — Legal; Licensing</li>
+<li><a href="https://www.icsconsultingservice.com/ohio-cannabis-compliance-audits-facility-launch-services-ics-consulting" rel="nofollow noopener">ICS Consulting Service</a> — Ohio statewide — Legal; Licensing; Regulatory Compliance</li>
+<li><a href="https://www.keglerbrown.com/cannabis" rel="nofollow noopener">Kegler Brown Hill + Ritter</a> — Ohio statewide — Legal; Licensing</li>
+<li><a href="https://mansourgavin.com/practice-area/corporate-and-business-services/marijuana-law-and-policy/" rel="nofollow noopener">Mansour Gavin LPA</a> — Ohio statewide — Legal; Licensing</li>
+<li><a href="https://omnuslaw.com/attorneys/" rel="nofollow noopener">Omnus Law</a> — Statewide / Multi-Market — Legal; Licensing</li>
+<li><a href="https://www.porterwright.com/cannabis/" rel="nofollow noopener">Porter Wright Morris &amp; Arthur LLP</a> — Ohio and national — Legal; Licensing</li>
+<li><a href="https://www.reminger.com/report-5293" rel="nofollow noopener">Reminger Co., LPA</a> — Ohio and regional — Legal; Licensing</li>
+<li><a href="https://sseg-law.com/practice-groups/regulated-products/" rel="nofollow noopener">Seeley, Savidge, Ebert &amp; Gourash Co., LPA (SSEG)</a> — Westlake, Ohio (Cleveland area); regional and national practice — Legal; Licensing</li>
+<li><a href="https://sickandco.com/" rel="nofollow noopener">Sick &amp; Co.</a> — Ohio and multiple U.S. markets — Legal; Licensing</li>
+<li><a href="https://streamlinecannabisconsulting.godaddysites.com/" rel="nofollow noopener">StreamLine Cannabis Consulting</a> — Ohio-based; Ohio, Pennsylvania, Maryland and additional markets — Legal; Licensing</li>
+<li><a href="https://www.tuckerellis.com/services/cannabis/" rel="nofollow noopener">Tucker Ellis LLP</a> — Ohio and additional regulated markets — Legal; Licensing</li>
+<li><a href="https://www.vorys.com/industry-cannabis" rel="nofollow noopener">Vorys, Sater, Seymour and Pease LLP</a> — Ohio statewide — Legal; Licensing</li>
+<li><a href="https://www.walterhav.com/service/cannabis-law/" rel="nofollow noopener">WH Burkley (formerly Walter Haverfield LLP)</a> — Ohio (Cleveland, Mayfield, Columbus); also Pittsburgh PA and Wheeling WV — Legal; Licensing</li>
+</ul>
+<h3>Marketing &amp; Media (38)</h3>
+<ul>
+<li><a href="https://www.5wpr.com/contactus/" rel="nofollow noopener">5W Public Relations</a> — United States nationwide — Marketing / Media; PR / Communications</li>
+<li><a href="https://www.advance-ohio.com/contact/" rel="nofollow noopener">Advance Ohio</a> — Ohio statewide; Cleveland-based — Marketing / Media</li>
+<li><a href="https://agensea.co/cannabis-branding-marketing-creative-agency/" rel="nofollow noopener">Agensea</a> — Nationwide; United States — Marketing / Media</li>
+<li><a href="https://budauthority.com/contact-us" rel="nofollow noopener">Bud Authority</a> — Ohio statewide — Marketing / Media</li>
+<li><a href="https://www.cannabisbusinesstimes.com/home/document/15704343/cannabis-business-times-2026-cannabis-business-times-media-kit" rel="nofollow noopener">Cannabis Business Times</a> — National; Ohio-serving industry media — Marketing / Media; Advertising; Content / Social Media; Media / Publication</li>
+<li><a href="https://cannabiscreative.com/services/" rel="nofollow noopener">Cannabis Creative Group</a> — United States; Ohio client work confirmed — Marketing / Media</li>
+<li><a href="https://cannabis-websites.com/cannabis-seo-strategy-ohio/" rel="nofollow noopener">Cannabis Websites &amp; SEO</a> — Ohio statewide / North America — Marketing / Media; SEO / Search</li>
+<li><a href="https://dopeseo.com/contact/" rel="nofollow noopener">Cannabiz Marketing Solutions / DopeSEO</a> — United States nationwide — Marketing / Media; SEO / Search</li>
+<li><a href="https://cannacontent.co/services/" rel="nofollow noopener">CannaContent</a> — Ohio-serving; remote services — Marketing / Media</li>
+<li><a href="https://cannaplanners.com/get-started" rel="nofollow noopener">CannaPlanners</a> — United States; Ohio client work confirmed (Klutch Cannabis) — Marketing / Media; SEO / Search; Branding / Design</li>
+<li><a href="https://coffmanmedia.com/" rel="nofollow noopener">Coffman Media</a> — Cincinnati and Ohio / nationwide — Marketing / Media; Content / Social Media; Signage / Graphics; Media / Publication; POS; Digital Signage / Kiosks</li>
+<li><a href="https://deeproots.io/" rel="nofollow noopener">DEEPROOTS</a> — United States nationwide; Ohio client work via The Botanist — Marketing / Media</li>
+<li><a href="https://www.digitalthirdcoast.com/digital-pr-for-cannabis-companies" rel="nofollow noopener">Digital Third Coast</a> — United States nationwide — Marketing / Media</li>
+<li><a href="https://cannabismarketingpr.com/contact/" rel="nofollow noopener">Durée &amp; Company — Cannabis &amp; CBD PR</a> — United States nationwide — Marketing / Media; PR / Communications; Media / Publication</li>
+<li><a href="https://www.mygrasslands.com/contact-us" rel="nofollow noopener">Grasslands</a> — United States market — Marketing / Media</li>
+<li><a href="https://www.greenstate.com/business/igniteit-ohio-recap/" rel="nofollow noopener">GreenState</a> — National; covers Ohio — Marketing / Media; Media / Publication</li>
+<li><a href="https://hybridmarketingco.com/contact/" rel="nofollow noopener">Hybrid Marketing Co.</a> — Nationwide; Ohio project evidence — Marketing / Media</li>
+<li><a href="https://leafmarketing.com/" rel="nofollow noopener">Leaf Marketing</a> — United States — local and national cannabis clients — Marketing / Media; Advertising</li>
+<li><a href="https://golevelplus.com/dispensaries/oh/toledo/" rel="nofollow noopener">Level Plus</a> — Toledo and surrounding Ohio communities — Marketing / Media; SEO / Search</li>
+<li><a href="https://www.mattio.com/cannabis-pr" rel="nofollow noopener">MATTIO Communications</a> — United States nationwide — Marketing / Media; PR / Communications</li>
+<li><a href="https://www.mediajel.com/contact-us" rel="nofollow noopener">MediaJel</a> — Ohio | United States — Marketing / Media; Advertising</li>
+<li><a href="https://nisonco.com/" rel="nofollow noopener">NisonCo</a> — United States nationwide — Marketing / Media</li>
+<li><a href="https://ohiocannabis.com/contact/" rel="nofollow noopener">OhioCannabis.com</a> — Ohio statewide; Cleveland-based — Marketing / Media; Media / Publication; Events / Networking; Community</li>
+<li><a href="https://www.pntbrand.com/" rel="nofollow noopener">POINT BRAND Marketing Agency</a> — United States; Ohio client work via The Botanist — Marketing / Media; Branding / Design; Digital Marketing</li>
+<li><a href="https://pufcreativ.com/contact/" rel="nofollow noopener">PufCreativ</a> — United States nationwide; Ohio client work via The Botanist — Marketing / Media</li>
+<li><a href="https://rangemarketing.com/cannabis-dispensary-marketing/" rel="nofollow noopener">Range Marketing</a> — Ohio-serving; Buffalo-based; United States and Canada — Marketing / Media; Digital Marketing; SEO / Search; Branding / Design; Website Development</li>
+<li><a href="https://rivalresponse.com/" rel="nofollow noopener">Rival Response</a> — United States nationwide; campaigns target by city, state or ZIP — Marketing / Media; Advertising</li>
+<li><a href="https://seedless.media/cannabis-marketing-agency-cleveland-seedless-media/" rel="nofollow noopener">Seedless Media</a> — Ohio-serving (Cleveland/Akron focus); headquartered outside Ohio — Marketing / Media; Media / Publication</li>
+<li><a href="https://www.signsbytomorrow.com/cincinnatinorth/" rel="nofollow noopener">Signs By Tomorrow Cincinnati North</a> — Cincinnati / Southwest Ohio — Marketing / Media; Branding / Design; Signage / Graphics</li>
+<li><a href="https://spokesdigital.us/consultation-form/" rel="nofollow noopener">Spokes Digital</a> — Ohio-serving; United States — Marketing / Media</li>
+<li><a href="https://springbig.com/" rel="nofollow noopener">Springbig</a> — Statewide / Multi-Market — Marketing / Media</li>
+<li><a href="https://surfside.io/commerce-media" rel="nofollow noopener">Surfside</a> — United States and Canada — Marketing / Media</li>
+<li><a href="https://www.terrayn.com/contact/" rel="nofollow noopener">Terrayn</a> — North America / United States — Marketing / Media</li>
+<li><a href="https://www.thecannabismarketingagency.com/contact-us" rel="nofollow noopener">The Cannabis Marketing Agency</a> — Ohio statewide — Marketing / Media; Advertising</li>
+<li><a href="https://www.hoodcollective.com/contact" rel="nofollow noopener">The Hood Collective</a> — Throughout Ohio — Columbus, Cleveland, Cincinnati, Dayton and Akron — Marketing / Media</li>
+<li><a href="https://thrivepop.com/contact-us/" rel="nofollow noopener">ThrivePOP</a> — United States; Ohio market guidance — Marketing / Media</li>
+<li><a href="https://tripstudio.co/contact/" rel="nofollow noopener">Trip</a> — United States nationwide — 33+ states — Marketing / Media</li>
+<li><a href="https://dispensaries.veooz.com/healthcare-marketing/state/ohio" rel="nofollow noopener">VEOOZ</a> — Ohio statewide — Marketing / Media</li>
+</ul>
+<h3>Nonprofit &amp; Advocacy (34)</h3>
+<ul>
+<li><a href="https://www.safeaccessnow.org/ohio_judiciary" rel="nofollow noopener">Americans for Safe Access</a> — Ohio / United States — Nonprofit / Advocacy; Veteran Services / Advocacy; Policy Advocacy</li>
+<li><a href="https://civicscannabis.org/" rel="nofollow noopener">Civics Cannabis</a> — Columbus / Ohio statewide — Nonprofit / Advocacy; Consumer Advocacy; Policy Advocacy; Education / Research; Social Equity</li>
+<li><a href="https://www.facebook.com/JustLikeAlcohol/" rel="nofollow noopener">Coalition to Regulate Marijuana Like Alcohol (Ohio)</a> — Ohio statewide — Nonprofit / Advocacy; Policy Advocacy; Ballot Campaign; Adult-Use Legalization; Issue 2</li>
+<li><a href="https://compassionatealternatives.org/" rel="nofollow noopener">Compassionate Alternatives</a> — Ohio / United States — Nonprofit / Advocacy; Patient Education; Medical Cannabis; Community Events; Public Outreach</li>
+<li><a href="https://moritzlaw.osu.edu/faculty-and-research/drug-enforcement-and-policy-center/depc-history-and-mission" rel="nofollow noopener">Drug Enforcement and Policy Center (Ohio State Moritz)</a> — Ohio statewide / United States — Nonprofit / Advocacy; Education / Research; Cannabis Policy; Record Sealing; Expungement; Social Equity; Academic Center</li>
+<li><a href="https://drugpolicy.org/about/" rel="nofollow noopener">Drug Policy Alliance</a> — Ohio engagement / United States; no Ohio office — Nonprofit / Advocacy</li>
+<li><a href="https://www.geononprofit.org/contact" rel="nofollow noopener">Green Environmental Outreach (GEO Nonprofit)</a> — Springfield, Columbus and Central Ohio — Nonprofit / Advocacy; Social Equity; Community Outreach; Policy Advocacy; Environmental Justice</li>
+<li><a href="https://www.theicecgroup.org/" rel="nofollow noopener">International Cannabis Education Coalition (ICEC)</a> — Fairborn, Ohio / national and international — Nonprofit / Advocacy; Education / Research; Patient Advocacy; Cannabis Safety; Community Outreach</li>
+<li><a href="https://www.kycanna.org/" rel="nofollow noopener">Kentucky Cannabis Industry Alliance</a> — Out of State — Nonprofit / Advocacy</li>
+<li><a href="https://www.lastprisonerproject.org/" rel="nofollow noopener">Last Prisoner Project</a> — Ohio / United States — Nonprofit / Advocacy; Policy Advocacy</li>
+<li><a href="https://leaf411.org/services/" rel="nofollow noopener">LEAF411</a> — Ohio-accessible remote informational support / United States — Nonprofit / Advocacy</li>
+<li><a href="https://www.mpp.org/states/ohio/" rel="nofollow noopener">Marijuana Policy Project</a> — Ohio / United States — Nonprofit / Advocacy; Policy Advocacy</li>
+<li><a href="https://medicateoh.com/contact-us/" rel="nofollow noopener">MedicateOH</a> — Ohio — Nonprofit / Advocacy; Patient Advocacy; Education / Research; Policy Advocacy</li>
+<li><a href="https://midwestcannawomen.crd.co/" rel="nofollow noopener">Midwest CannaWomen</a> — Cleveland / Ohio; also provides patient-access routing for Pennsylvania and West Virginia — Nonprofit / Advocacy; Patient Advocacy</li>
+<li><a href="https://thecannabisindustry.org/category/ohio/" rel="nofollow noopener">National Cannabis Industry Association</a> — Ohio / United States — Nonprofit / Advocacy</li>
+<li><a href="https://norml.org/contact-us/" rel="nofollow noopener">NORML</a> — Ohio / United States — Nonprofit / Advocacy</li>
+<li><a href="https://ohcann.com/contact/" rel="nofollow noopener">OHCANN (Ohio Cannabis Coalition)</a> — Statewide / Multi-Market — Nonprofit / Advocacy; Patient Advocacy</li>
+<li><a href="https://ohiocannabisassociation.com/" rel="nofollow noopener">Ohio Cannabis Association</a> — Ohio — Nonprofit / Advocacy; Patient Advocacy; Policy Advocacy</li>
+<li><a href="https://www.ohhaa.org/" rel="nofollow noopener">Ohio Healthy Alternatives Association</a> — Ohio — Nonprofit / Advocacy; Policy Advocacy</li>
+<li><a href="https://ohiojpc.org/" rel="nofollow noopener">Ohio Justice &amp; Policy Center</a> — Ohio statewide — Cincinnati, Columbus and Cleveland offices — Nonprofit / Advocacy; Criminal Justice Reform; Expungement / Record Sealing; Legal Services; Policy Advocacy</li>
+<li><a href="https://ommpa.com/" rel="nofollow noopener">Ohio Medical Marijuana Physicians Association</a> — Ohio — Nonprofit / Advocacy; Education / Research; Policy Advocacy</li>
+<li><a href="https://www.facebook.com/OVAC.4.Change/" rel="nofollow noopener">Ohio Veteran&#x27;s Alliance for Medical Cannabis (OVAMC)</a> — Ohio statewide — Nonprofit / Advocacy; Veteran Services / Advocacy; Patient Advocacy; Policy Advocacy</li>
+<li><a href="https://www.oneohiofoundation.com/contact-us" rel="nofollow noopener">OneOhio Recovery Foundation</a> — Ohio statewide — Nonprofit / Advocacy; Grantmaking; Public Health; Cannabis Education; Substance Use Prevention</li>
+<li><a href="https://www.prevention-first.org/centers/center-for-prevention-action/cannabis/" rel="nofollow noopener">PreventionFIRST!</a> — Southwest Ohio / Ohio statewide resources — Nonprofit / Advocacy; Public Health; Cannabis Prevention; Education / Research; Youth Education</li>
+<li><a href="https://realmofcaring.org/" rel="nofollow noopener">Realm of Caring Foundation</a> — Ohio-accessible remote support / worldwide; no Ohio office — Nonprofit / Advocacy</li>
+<li><a href="https://www.sensiblemovement.org/" rel="nofollow noopener">Sensible Movement Coalition</a> — Ohio statewide / local ballot campaigns — Nonprofit / Advocacy; Policy Advocacy; Decriminalization; Local Ballot Initiatives; Grassroots Organizing</li>
+<li><a href="https://www.thecannabischamber.com/" rel="nofollow noopener">The Cannabis Chamber of Commerce</a> — Statewide / Multi-Market — Nonprofit / Advocacy</li>
+<li><a href="https://cannabismuseum.com/" rel="nofollow noopener">The Cannabis Museum</a> — Athens / Statewide — Nonprofit / Advocacy; Education / Research</li>
+<li><a href="https://themif.org/action/contact/" rel="nofollow noopener">The Mobility Independence Foundation (MIF)</a> — Region to confirm — Nonprofit / Advocacy; Policy Advocacy</li>
+<li><a href="https://truthinitiative.org/" rel="nofollow noopener">Truth Initiative</a> — Ohio statewide campaign / United States — Nonprofit / Advocacy; Public Health; Cannabis Prevention; Education / Research; Campaign Evaluation</li>
+<li>U.S. Hemp Roundtable — National — active Ohio policy advocacy — Nonprofit / Advocacy; Policy Advocacy</li>
+<li><a href="https://uscr.org/contact/" rel="nofollow noopener">US Cannabis Roundtable</a> — United States, including Ohio through members operating in all legal states — Nonprofit / Advocacy</li>
+<li><a href="https://www.vethomeguard.org" rel="nofollow noopener">Veteran Home Guardians</a> — Marengo, Ohio; Central Ohio — Morrow, Knox, Delaware and Licking counties — Nonprofit / Advocacy; Veteran Services / Advocacy; Policy Advocacy</li>
+<li><a href="https://www.veteransinitiative22.com/contact" rel="nofollow noopener">Veterans Initiative 22</a> — National / documented Ohio advocacy activity — Nonprofit / Advocacy; Veteran Services / Advocacy; Policy Advocacy</li>
+</ul>
+<h3>Packaging &amp; Labeling (30)</h3>
+<ul>
+<li><a href="https://www.a-roo.com/our-story" rel="nofollow noopener">A-ROO Company</a> — Northeast Ohio / Cleveland-Akron — Packaging / Labeling</li>
+<li><a href="https://www.berlinpackaging.com/cannabis-cbd-packaging/" rel="nofollow noopener">Berlin Packaging</a> — Ohio and nationwide — Packaging / Labeling</li>
+<li><a href="https://cannazipbags.com/contact/" rel="nofollow noopener">CannaZip</a> — Statewide / Multi-Market — Packaging / Labeling</li>
+<li><a href="https://www.contempocard.com/" rel="nofollow noopener">Contempo Packaging</a> — North America and global manufacturing — Packaging / Labeling</li>
+<li><a href="https://crativpackaging.com/" rel="nofollow noopener">CRATIV Packaging</a> — Ohio-certified | North America — Packaging / Labeling; Child-Resistant Packaging</li>
+<li><a href="https://customconesusa.com/" rel="nofollow noopener">Custom Cones USA</a> — United States, Canada, and international — Packaging / Labeling</li>
+<li><a href="https://directtargetproducts.com/contact/" rel="nofollow noopener">Direct Target Products</a> — Spencer, Ohio | Ohio-serving — Packaging / Labeling</li>
+<li><a href="https://www.dispensarysupply.com/" rel="nofollow noopener">Dispensary Supply</a> — United States — Packaging / Labeling</li>
+<li><a href="https://dragonchewer.com/" rel="nofollow noopener">Dragon Chewer</a> — All 50 states — Packaging / Labeling</li>
+<li><a href="https://dymapak.com/contact-us/" rel="nofollow noopener">Dymapak</a> — Worldwide shipping | Ohio-serving — Packaging / Labeling</li>
+<li><a href="https://www.ebottles.com/" rel="nofollow noopener">eBottles</a> — United States and Canada | Ohio resale support — Packaging / Labeling</li>
+<li><a href="https://fortissolutionsgroup.com/contact/" rel="nofollow noopener">Fortis Solutions Group</a> — West Chester, Ohio facility; North America — Packaging / Labeling; Printing / Labels</li>
+<li><a href="https://greenrushpackaging.com/" rel="nofollow noopener">Green Rush Packaging</a> — Nationwide | Coast-to-coast warehouses — Packaging / Labeling</li>
+<li><a href="https://grovebags.com/pages/about" rel="nofollow noopener">Grove Bags</a> — Bedford Heights, Ohio, with additional Columbus operations — Packaging / Labeling</li>
+<li><a href="https://www.kaufmancontainer.com/service/contact/" rel="nofollow noopener">Kaufman Container</a> — Ohio (Cleveland operations); nationwide — Packaging / Labeling</li>
+<li><a href="https://mammothpackaging.com/markets/cannabis-labels/" rel="nofollow noopener">Mammoth Labels &amp; Packaging</a> — Columbus, Ohio and nationwide — Packaging / Labeling; Printing / Labels</li>
+<li><a href="https://mvpsohio.com/contact/" rel="nofollow noopener">Miami Valley Packaging Solutions</a> — Dayton / Miami Valley — Packaging / Labeling</li>
+<li><a href="https://www.moondustusa.com/contact-us/" rel="nofollow noopener">Moondust USA</a> — Houston, TX-based; multi-state — Packaging / Labeling; Pre-Roll Packaging</li>
+<li><a href="https://n2pack.com/" rel="nofollow noopener">N2 Packaging Systems</a> — United States; U.S.-based service team, no Ohio customer identified — Packaging / Labeling</li>
+<li><a href="https://www.niagaralabel.com/contact-us" rel="nofollow noopener">Niagara Label</a> — Ohio market | United States — Packaging / Labeling; Printing / Labels</li>
+<li><a href="https://www.packthc.com/" rel="nofollow noopener">PackTHC</a> — Nationwide (United States) — Packaging / Labeling</li>
+<li><a href="https://packtrack.net/" rel="nofollow noopener">PackTrack</a> — Statewide / Multi-Market — Packaging / Labeling; Printing / Labels</li>
+<li><a href="https://pollengear.com/" rel="nofollow noopener">Pollen Gear</a> — United States; national brand, no Ohio customer identified — Packaging / Labeling</li>
+<li><a href="https://royalblunts.com/" rel="nofollow noopener">Royal Blunts</a> — Nationwide distribution; California-based — Packaging / Labeling; Pre-Roll Packaging</li>
+<li><a href="https://rxdco.com/" rel="nofollow noopener">RXDco</a> — Ohio | All U.S. legal markets — Packaging / Labeling</li>
+<li><a href="https://safecarepackaging.com/" rel="nofollow noopener">SafeCare Packaging</a> — Nationwide | Multi-state warehousing — Packaging / Labeling</li>
+<li><a href="https://sanapackaging.com/" rel="nofollow noopener">Sana Packaging</a> — United States and Canada — Packaging / Labeling</li>
+<li><a href="https://www.smithcorona.com/cannabis-labels.html" rel="nofollow noopener">Smith Corona</a> — Cleveland, Ohio manufacturing; nationwide — Packaging / Labeling; Printing / Labels</li>
+<li><a href="https://treestreetpackaging.com/" rel="nofollow noopener">Tree Street Packaging</a> — United States; free U.S. shipping stated — Packaging / Labeling</li>
+<li><a href="https://www.vertpack.com/" rel="nofollow noopener">Vert Packaging</a> — Statewide / Multi-Market — Packaging / Labeling</li>
+</ul>
+<h3>Real Estate / Build-Out (30)</h3>
+<ul>
+<li><a href="https://www.420property.com/ohio/" rel="nofollow noopener">420 Property</a> — Ohio and nationwide — Real Estate / Build-Out; Real Estate</li>
+<li><a href="https://goallspace.com/" rel="nofollow noopener">Allspace</a> — Nationwide fabrication and installation — Real Estate / Build-Out</li>
+<li><a href="https://www.andersonporter.com/contact" rel="nofollow noopener">Anderson Porter Design</a> — Licensed in Ohio | Nationwide reach — Real Estate / Build-Out; HVAC / Climate Control; Architecture / Engineering</li>
+<li><a href="https://www.arconational.com/contact/" rel="nofollow noopener">ARCO National Construction</a> — Ohio offices | Nationwide — Real Estate / Build-Out; Construction / Build-Out</li>
+<li><a href="https://atirestoration.com/regional-offices/cleveland-oh/" rel="nofollow noopener">ATI Restoration — Cleveland</a> — Cleveland, Ohio; national restoration network — Mold / Microbial Remediation; Sanitation / Disinfection; Water Damage / Restoration; Construction / Build-Out</li>
+<li><a href="https://www.budbardisplays.com/" rel="nofollow noopener">Bud Bar Displays</a> — Nationwide / International shipping — Real Estate / Build-Out</li>
+<li><a href="https://cannabisfacility.net/" rel="nofollow noopener">Cannabis Facility Construction (CFC)</a> — National; 14 states documented — Real Estate / Build-Out; Construction / Build-Out</li>
+<li><a href="https://claypoolelectric.com/" rel="nofollow noopener">Claypool Electric</a> — Central Ohio; Lancaster, Columbus, Newark and Athens offices — Real Estate / Build-Out; Electrical; Construction / Build-Out; Cultivation</li>
+<li><a href="https://clcdesignstudio.com/" rel="nofollow noopener">CLC Design Studio</a> — Ohio and multiple U.S. cannabis markets — Real Estate / Build-Out</li>
+<li><a href="https://www.dagfacilities.com/contact/" rel="nofollow noopener">Dominion AG (DAG)</a> — Ohio project experience | National — Real Estate / Build-Out</li>
+<li><a href="https://www.doctorgreenhouse.com/" rel="nofollow noopener">Dr. Greenhouse, Inc.</a> — Ohio project experience | International — Real Estate / Build-Out; HVAC / Climate Control; Dehumidification; Ventilation / Air Filtration; Architecture / Engineering</li>
+<li><a href="https://www.ohio-ets.com/service-areas/lancaster-ohio-hvac" rel="nofollow noopener">Engineered Temperature Solutions (ETS)</a> — Lancaster and Central Ohio — HVAC / Climate Control; Dehumidification; Ventilation / Air Filtration; Indoor Air Quality; Cultivation</li>
+<li><a href="https://www.epsteinglobal.com/contact" rel="nofollow noopener">Epstein</a> — Ohio project experience | United States — Real Estate / Build-Out</li>
+<li><a href="https://www.greenzones.us/" rel="nofollow noopener">GreenZones</a> — Nationwide marketplace; current Ohio listings include Parma Heights and Norwalk — Real Estate / Build-Out</li>
+<li><a href="https://growamericabuilders.com/" rel="nofollow noopener">Grow America Builders</a> — Nationwide — Real Estate / Build-Out</li>
+<li><a href="https://www.kiesland.com/" rel="nofollow noopener">Kiesland Development Services</a> — Southwest Ohio, Dayton, Northern Kentucky and Indiana; Ohio cannabis project experience — Real Estate / Build-Out; Construction / Build-Out; Design / Build; Cultivation</li>
+<li><a href="https://www.next-architecture.net/office.html" rel="nofollow noopener">NEXT architecture</a> — Ohio project experience | Pittsburgh-based — Real Estate / Build-Out; Architecture / Engineering</li>
+<li><a href="https://www.ohiocannabisdesignsolutions.com/" rel="nofollow noopener">Ohio Cannabis Design Solutions</a> — Ohio — Real Estate / Build-Out; HVAC / Climate Control; Cultivation</li>
+<li><a href="https://oliverarchitect.com/about" rel="nofollow noopener">Oliver Architecture</a> — Statewide / Multi-Market — Real Estate / Build-Out; Architecture / Engineering</li>
+<li><a href="https://www.opcpest.com/" rel="nofollow noopener">OPC Pest Services</a> — Cincinnati / Southwest Ohio — Real Estate / Build-Out; Sanitation / Disinfection; Pest Management / IPM</li>
+<li><a href="https://pathcc.com/contact-us/" rel="nofollow noopener">Path Construction</a> — Ohio project experience | National — Real Estate / Build-Out; Construction / Build-Out</li>
+<li><a href="https://pioww.com/" rel="nofollow noopener">Pio Custom Cabinetry</a> — Chicagoland manufacturing | Projects nationwide — Real Estate / Build-Out</li>
+<li><a href="https://www.prospiant.com/" rel="nofollow noopener">Prospiant</a> — Cincinnati, Ohio-based; nationwide — Real Estate / Build-Out</li>
+<li><a href="https://rbicms.com/" rel="nofollow noopener">RBI CMS</a> — Central Ohio — Real Estate / Build-Out; Construction / Build-Out</li>
+<li><a href="https://stockmeister.com/cannabis/" rel="nofollow noopener">Stockmeister Services</a> — Ohio | Regional cannabis projects — Real Estate / Build-Out; Construction / Build-Out</li>
+<li><a href="https://studioblissla.com/contact-2/" rel="nofollow noopener">Studio Bliss</a> — 27+ U.S. states; explicit Ohio cannabis facility-design offering — Real Estate / Build-Out</li>
+<li><a href="https://www.summitconstruction.com/" rel="nofollow noopener">Summit Construction Company</a> — Northeast and Central Ohio — Real Estate / Build-Out; Construction / Build-Out</li>
+<li><a href="https://terrapincg.com/cannabis-facility-construction" rel="nofollow noopener">Terrapin Construction Group</a> — Nationwide (HQ Denver, CO); active Ohio presence including Columbus — Real Estate / Build-Out; Construction / Build-Out</li>
+<li><a href="https://www.valerearchitects.com/ohio-cannabis-architects" rel="nofollow noopener">VALERE Architects</a> — Ohio — Real Estate / Build-Out</li>
+<li><a href="https://zonedproperties.com/" rel="nofollow noopener">Zoned Properties</a> — Ohio advisory coverage | Nationwide — Real Estate / Build-Out; Commercial Real Estate; Site Selection; Zoning / Land Use; Brokerage</li>
+</ul>
+<h3>Security &amp; Cash Logistics (27)</h3>
+<ul>
+<li><a href="https://applewatermanagement.com/" rel="nofollow noopener">Apple Water Management</a> — United States; Ohio availability not published — Security / Cash Logistics; Cash Management</li>
+<li><a href="https://www.arcadian.ai/pages/cannabis-security" rel="nofollow noopener">ArcadianAI</a> — United States and Canada; remote cloud service with Ohio-hosted infrastructure available — Security / Cash Logistics</li>
+<li><a href="https://us.brinks.com/contact" rel="nofollow noopener">Brink&#x27;s</a> — United States; Ohio onboarding requires direct confirmation — Security / Cash Logistics</li>
+<li><a href="https://bsdoneright.com/" rel="nofollow noopener">BS Done Right</a> — Nationwide; provider states all 50 states and beyond — Security / Cash Logistics</li>
+<li><a href="https://calvis.com/locations/cincinnati/cannabis-security" rel="nofollow noopener">Calvis Security</a> — Ohio — Cincinnati, Cleveland and Columbus; national multi-agency network — Security / Cash Logistics</li>
+<li><a href="https://www.cannabissafetyfirst.com/" rel="nofollow noopener">Cannabis Safety First LLC</a> — Central Ohio — Security / Cash Logistics</li>
+<li><a href="https://www.dem360.com/our-services/cannabis-security" rel="nofollow noopener">DEM360</a> — Ohio and multistate — Security / Cash Logistics</li>
+<li><a href="https://www.elitepreparedness.com/about-us" rel="nofollow noopener">Elite Preparedness Asset Protection</a> — Ohio; statewide availability not independently confirmed — Security / Cash Logistics</li>
+<li><a href="https://www.adt.com/commercial" rel="nofollow noopener">Everon (formerly ADT Commercial)</a> — United States — nationwide network of 100+ local and regional offices — Security / Cash Logistics; Video Surveillance; Access Control; Alarm / Panic Systems; Fire Detection / Protection; Monitoring</li>
+<li><a href="https://cash.garda.com/locations/united-states/ohio" rel="nofollow noopener">GardaWorld Cash</a> — Ohio branches in Akron, Cincinnati, Cleveland, Columbus, Dayton, Toledo and Youngstown — Security / Cash Logistics</li>
+<li><a href="https://greencrossatm.com/" rel="nofollow noopener">Green Cross ATM</a> — All cannabis-legal U.S. states, including Ohio — Security / Cash Logistics</li>
+<li><a href="https://guardianalarm.com/locations/" rel="nofollow noopener">Guardian Alarm</a> — Ohio — Cincinnati, Cleveland, Columbus, Toledo and surrounding markets — Security / Cash Logistics</li>
+<li><a href="https://guardianprotection.com/cannabis" rel="nofollow noopener">Guardian Protection</a> — Ohio — Cincinnati, Cleveland, Columbus, Youngstown and surrounding markets — Security / Cash Logistics</li>
+<li><a href="https://www.4-hitech.com/services/cctv-security-cameras/" rel="nofollow noopener">Hi-Tech Security Solutions</a> — Cleveland and Northeast Ohio — Security / Cash Logistics</li>
+<li><a href="https://innovatexit.com/industries/cannabis" rel="nofollow noopener">Innovatex IT Solutions</a> — Ohio and nationwide — Security / Cash Logistics</li>
+<li><a href="https://www.livereach.ai/cannabis" rel="nofollow noopener">LiveReach AI</a> — United States; remote platform — Security / Cash Logistics; Access Control</li>
+<li><a href="https://www.loomis.us/contact-us" rel="nofollow noopener">Loomis US</a> — Ohio; Cincinnati and Columbus facilities confirmed — Security / Cash Logistics; Armored / Secure Transport</li>
+<li><a href="https://mvpatm.com/mvp-easy-deposit-overview/" rel="nofollow noopener">MVP Financial Equipment (MVP ATM)</a> — Nationwide — Security / Cash Logistics; Armored / Secure Transport</li>
+<li><a href="https://ohzsecurity.com/industries/industrial-critical-infrastructure/cannabis-facilities/" rel="nofollow noopener">OHZ Security</a> — United States; national remote-guarding platform — Security / Cash Logistics</li>
+<li>Porcupine Defense Solutions — Ohio opportunity; operating and service area not yet independently verified — Security; Cannabis-Willing Vendor; Cannabis Business Services</li>
+<li><a href="https://protechsecurity.com/" rel="nofollow noopener">ProTech Security</a> — Cleveland / Akron / Canton / Columbus / Ohio — Security / Cash Logistics; Access Control; Video Surveillance; Alarm / Panic Systems; Fire Detection / Protection; Environmental Monitoring</li>
+<li><a href="https://www.sapphirerisk.com/adult-use-cannabis-in-ohio/" rel="nofollow noopener">Sapphire Risk Advisory Group</a> — Ohio and nationwide — Security / Cash Logistics</li>
+<li><a href="https://www.security101.com/columbus" rel="nofollow noopener">Security 101 — Columbus</a> — Greater Columbus — Security / Cash Logistics</li>
+<li><a href="https://solink.com/solutions/cannabis-security/" rel="nofollow noopener">Solink</a> — United States and Canada; cloud platform compatible with most existing business cameras — Security / Cash Logistics</li>
+<li><a href="https://talaria.com/ohio/" rel="nofollow noopener">Talaria</a> — Ohio and 18 other states plus Washington, D.C. — Security / Cash Logistics</li>
+<li><a href="https://www.vectorsecurity.com/business-security/industries/cannabis/" rel="nofollow noopener">Vector Security</a> — Ohio — Geneva, Westerville, Mansfield and Canfield — Security / Cash Logistics</li>
+<li><a href="https://www.verkada.com/" rel="nofollow noopener">Verkada</a> — Ohio project experience — Eastlake cultivation facility and Amplify dispensaries; United States and Canada — Security / Cash Logistics; Video Surveillance; Access Control; Alarm / Panic Systems; Environmental Monitoring; Cloud Security</li>
+</ul>
+<h3>Staffing &amp; HR (31)</h3>
+<ul>
+<li><a href="https://cannabizteam.com/" rel="nofollow noopener">CannabizTeam</a> — Nationwide — Staffing / HR; Staffing / Recruiting</li>
+<li><a href="https://canopyhrsolutions.com/" rel="nofollow noopener">CanopyHR</a> — United States; multi-state cannabis operations; Ohio client not publicly identified — Staffing / HR; Human Resources; Payroll</li>
+<li><a href="https://cscschools.edu/" rel="nofollow noopener">CSC Schools (Cleveland School of Cannabis)</a> — Ohio / online — Staffing / HR; Employee Training</li>
+<li><a href="https://directrecruiters.com/practice-areas/cannabis-executive-search-and-recruiters/" rel="nofollow noopener">Direct Recruiters, Inc.</a> — Ohio / United States; Northeast Ohio based — Staffing / HR; Staffing / Recruiting</li>
+<li><a href="https://emeraldlanerecruitment.com/" rel="nofollow noopener">Emerald Lane Recruitment</a> — Global | U.S. office in Chicago — Staffing / HR; Staffing / Recruiting</li>
+<li><a href="https://www.evolvehcm.com/" rel="nofollow noopener">Evolve HCM</a> — United States; single- and multi-state operators; Ohio client not publicly identified — Staffing / HR</li>
+<li><a href="https://www.fastfingerprints.com/" rel="nofollow noopener">FastFingerprints (National Background Check, Inc.)</a> — Ohio / nationwide — Staffing / HR; Background Checks; Fingerprinting</li>
+<li><a href="https://flowerhire.com/cannabis-recruiting-and-staffing/" rel="nofollow noopener">FlowerHire</a> — United States — Staffing / HR; Staffing / Recruiting</li>
+<li><a href="https://grassrootsstaffinggroup.com/" rel="nofollow noopener">Grassroots Staffing Group</a> — Nationwide — Staffing / HR; Staffing / Recruiting</li>
+<li><a href="https://www.greencollarnetwork.com/" rel="nofollow noopener">Green Collar Network</a> — Ohio — Staffing / HR; Staffing / Recruiting</li>
+<li><a href="https://green-flower.com/meet-with-us/" rel="nofollow noopener">Green Flower</a> — Ohio / United States — Staffing / HR; Employee Training</li>
+<li><a href="https://www.highbluffgroup.com/" rel="nofollow noopener">High Bluff Group</a> — United States; San Diego-based; Ohio client not publicly identified — Staffing / HR; Staffing / Recruiting; Human Resources</li>
+<li><a href="https://www.highendsearch.com/" rel="nofollow noopener">High End Search</a> — United States; Cleveland-area contact number — Staffing / HR; Staffing / Recruiting</li>
+<li><a href="https://www.hunteresquire.com/" rel="nofollow noopener">Hunter + Esquire</a> — National and global — Staffing / HR</li>
+<li><a href="https://www.kayapush.com/" rel="nofollow noopener">KayaPush</a> — United States and Canada; Ohio client not publicly identified — Staffing / HR; Human Resources; Payroll</li>
+<li><a href="https://cannabiseducation.kent.edu/" rel="nofollow noopener">Kent State University — Cannabis Education</a> — Ohio / 100% online — Staffing / HR; Employee Training; Workforce Development; Cannabis Career Education</li>
+<li><a href="https://kindbenefits.co/" rel="nofollow noopener">Kind Benefits</a> — Nationwide — Staffing / HR</li>
+<li><a href="https://kushhr.com/about/" rel="nofollow noopener">KushHR</a> — Ohio | Select U.S. markets — Staffing / HR; Human Resources</li>
+<li><a href="https://oroleafhr.com/" rel="nofollow noopener">OROleafhr</a> — United States; Arizona-based; Ohio client not publicly identified — Staffing / HR; Human Resources; Payroll</li>
+<li><a href="https://www.paragonpayroll.com/cannabis" rel="nofollow noopener">Paragon Payroll</a> — National — Staffing / HR; Payroll</li>
+<li><a href="https://www.paylient.com/" rel="nofollow noopener">Paylient</a> — Ohio / United States; Ohio-specific services confirmed — Staffing / HR; Human Resources; Payroll</li>
+<li><a href="https://tesseon.com/contact-us/" rel="nofollow noopener">Tesseon</a> — United States; Missouri-based; Ohio client not publicly identified — Staffing / HR; Human Resources; Payroll</li>
+<li><a href="https://www.theunitedgreen.com/" rel="nofollow noopener">The United Green</a> — Michigan-headquartered; nationwide — Staffing / HR; Staffing / Recruiting</li>
+<li><a href="https://www.trim-force.com/" rel="nofollow noopener">TrimForce</a> — Ohio | National — Staffing / HR</li>
+<li><a href="https://gotrovaro.com/" rel="nofollow noopener">Trovaro</a> — United States, Canada and Mexico; Chicago-based; Ohio work not publicly identified — Staffing / HR; Staffing / Recruiting</li>
+<li><a href="https://www.daap.uc.edu/academic-programs/school-of-planning/cannabis-studies-certificate.html" rel="nofollow noopener">University of Cincinnati — Cannabis Studies Certificate</a> — Cincinnati / Ohio — Staffing / HR; Employee Training; Workforce Development; Higher Education</li>
+<li><a href="https://vangst.com/employer/" rel="nofollow noopener">Vangst</a> — Ohio — Staffing / HR; Staffing / Recruiting</li>
+<li><a href="https://www.viridianstaffing.com/" rel="nofollow noopener">Viridian Staffing</a> — North America, including Ohio — Staffing / HR; Staffing / Recruiting</li>
+<li><a href="https://www.whiteashgroup.com/" rel="nofollow noopener">White Ash Group</a> — United States, Canada and Europe — Staffing / HR</li>
+<li><a href="https://enjoywurk.com/" rel="nofollow noopener">Würk</a> — United States | Multi-state operators — Staffing / HR; Payroll</li>
+<li><a href="https://cannabis.zanestate.edu/" rel="nofollow noopener">Zane State College — Cannabis Certificate Programs</a> — Ohio / 100% online — Staffing / HR; Employee Training; Workforce Development; Cannabis Career Education</li>
+</ul>
+<h3>Technology (31)</h3>
+<ul>
+<li><a href="https://www.365cannabis.com/contact/" rel="nofollow noopener">365 Cannabis (acquired by Innovia Consulting, Feb 2026 — see Innovia entry)</a> — Statewide / Multi-Market — Technology</li>
+<li><a href="https://aiq.com/" rel="nofollow noopener">Alpine IQ (AIQ; incl. AIQ Ecommerce, formerly Dispense)</a> — Ohio deployment documented at Elevated Growth, Columbus | National — Technology; Ecommerce / Online Ordering</li>
+<li><a href="https://www.blaze.me/dispensary-pos-software/ohio" rel="nofollow noopener">BLAZE</a> — Ohio — Technology; Metrc / Track-and-Trace; Regulatory Compliance</li>
+<li><a href="https://brandrai.com/" rel="nofollow noopener">Brandr AI</a> — Statewide / Multi-Market — Technology</li>
+<li><a href="https://www.canix.com/" rel="nofollow noopener">Canix (including acquired Trym)</a> — Ohio-serving; United States — Technology; Cultivation Software; Metrc / Track-and-Trace; Inventory; Data / Analytics</li>
+<li><a href="https://cannahub.io/" rel="nofollow noopener">CannaHub</a> — Mentor, Ohio; serves cannabis operators — Technology; Metrc / Track-and-Trace; Data / Analytics; Regulatory Compliance</li>
+<li><a href="https://www.cannalnx.com/" rel="nofollow noopener">CannaLnx (EM2P2)</a> — Cleveland, Ohio; nationwide medical-cannabis platform — Technology; Digital Health; Medical Cannabis; Data / Analytics</li>
+<li><a href="https://www.detroitdispensingsolutions.com/contactus" rel="nofollow noopener">Detroit Dispensing Solutions</a> — Michigan-based / multi-market; Ohio-market engagement documented — Consulting</li>
+<li><a href="https://dutchie.com/business/state-laws/ohio" rel="nofollow noopener">Dutchie</a> — Ohio — Technology; POS; Ecommerce / Online Ordering; Inventory; Metrc / Track-and-Trace; Regulatory Compliance</li>
+<li><a href="https://www.flowhub.com/contact" rel="nofollow noopener">Flowhub</a> — Ohio — Technology; POS; Metrc / Track-and-Trace; Payments / Merchant Services</li>
+<li><a href="https://greencheckverified.com/" rel="nofollow noopener">Green Check Verified</a> — Statewide / Multi-Market — Technology; Regulatory Compliance</li>
+<li><a href="https://www.growgeneration.com/ihort" rel="nofollow noopener">GrowGeneration</a> — Statewide / Multi-Market — Technology</li>
+<li><a href="https://www.headset.io/" rel="nofollow noopener">Headset</a> — All U.S. medical and adult-use states, including Ohio — Technology; Data / Analytics</li>
+<li><a href="https://www.hoodieanalytics.com" rel="nofollow noopener">Hoodie Analytics</a> — Statewide / Multi-Market — Technology; Data / Analytics</li>
+<li><a href="https://indicaonline.com/markets/ohio/" rel="nofollow noopener">IndicaOnline</a> — Ohio — Technology; POS; Metrc / Track-and-Trace; Regulatory Compliance</li>
+<li><a href="https://www.innovia.com/contact" rel="nofollow noopener">Innovia</a> — Statewide / Multi-Market — Technology</li>
+<li><a href="https://www.iheartjane.com/business/ecommerce" rel="nofollow noopener">Jane Technologies</a> — Ohio; United States — Technology; POS</li>
+<li><a href="https://www.jointcommerce.com/contact-us" rel="nofollow noopener">JointCommerce</a> — Statewide / Multi-Market — Technology; Advertising</li>
+<li><a href="https://leafbridge.io/" rel="nofollow noopener">LeafBridge</a> — United States; Ohio-serving via The Botanist — Technology; Ecommerce / Online Ordering; Website / Ecommerce Integration</li>
+<li><a href="https://www.lucidgreen.io/" rel="nofollow noopener">Lucid Green</a> — Ohio and nationwide — Technology; Metrc / Track-and-Trace</li>
+<li><a href="https://ohio.marijuanasoftwarellc.com/" rel="nofollow noopener">Marijuana Software LLC — Ohio Metrc</a> — Ohio — Technology; Metrc / Track-and-Trace; Media / Publication</li>
+<li><a href="https://melt-to-make.com/pages/melt-to-make%E2%84%A2-contact-gummy-manufacturing" rel="nofollow noopener">Melt To Make</a> — Statewide / Multi-Market — Technology</li>
+<li><a href="https://www.metrc.com/partner/ohio/" rel="nofollow noopener">Metrc</a> — Ohio — Technology; Metrc / Track-and-Trace</li>
+<li><a href="https://www.ohio420.ai/" rel="nofollow noopener">Ohio420.ai</a> — Ohio statewide — Technology; Regulatory Compliance; AI / Workflow Tools</li>
+<li><a href="https://www.posabit.com/contact-us" rel="nofollow noopener">POSaBIT</a> — Statewide / Multi-Market — Technology; POS; Payments / Merchant Services</li>
+<li><a href="https://www.sweedpos.com/ohio-cannabis-dispensary" rel="nofollow noopener">Sweed</a> — Ohio — Technology; Regulatory Compliance</li>
+<li><a href="https://www.webjoint.com/cannabis-resources/regulations/ohio" rel="nofollow noopener">WebJoint</a> — Ohio — Technology; Metrc / Track-and-Trace</li>
+<li><a href="https://weedmaps.com/business/" rel="nofollow noopener">Weedmaps for Business</a> — Ohio; United States state-legal markets — Technology; Ecommerce / Online Ordering; Advertising</li>
+<li><a href="https://willowindustries.com/" rel="nofollow noopener">Willow Industries</a> — Ohio; United States — Decontamination / Remediation; Mold / Microbial; Post-Harvest Processing; Processing</li>
+<li><a href="https://xrpure.com/xr16/" rel="nofollow noopener">XRpure</a> — National; based in Las Vegas, Nevada — Technology; Decontamination / Remediation; Mold / Microbial; Post-Harvest Processing</li>
+<li><a href="https://www.ziel.com/" rel="nofollow noopener">Ziel</a> — Ohio; United States and international markets — Decontamination / Remediation; Mold / Microbial; Post-Harvest Processing; Processing</li>
+</ul>
+<h3>Testing Labs (6)</h3>
+<ul>
+<li><a href="https://actlab.com/ohio/" rel="nofollow noopener">ACT LAB (ACT Laboratories, Inc.)</a> — Statewide / Columbus — Cannabis Testing; Compliance Testing; Potency Testing; Microbial Testing; Mold / Microbial</li>
+<li><a href="https://cplabsoh.wordpress.com/2024/04/17/cannabinoids/" rel="nofollow noopener">CP Labs Ohio Operating Company, LLC</a> — Statewide / Columbus — Cannabis Testing; Compliance Testing; Potency Testing; Microbial Testing; Mold / Microbial; Terpene Testing; Pesticide Testing; Heavy Metals Testing; Residual Solvents Testing</li>
+<li><a href="https://greenanalyticslabs.com/locations/" rel="nofollow noopener">Green Analytics OH</a> — Statewide / Toledo — Cannabis Testing; Compliance Testing; Potency Testing; Microbial Testing; Mold / Microbial</li>
+<li><a href="https://www.northcoasttestinglabs.com/" rel="nofollow noopener">North Coast Testing Laboratories, LLC</a> — Statewide / Streetsboro / Northeast Ohio — Cannabis Testing; Compliance Testing; Potency Testing; Microbial Testing; Mold / Microbial</li>
+<li><a href="https://pinnacletestinglabs.com/" rel="nofollow noopener">Pinnacle Testing and Specialty Lab</a> — Statewide / Akron — Cannabis Testing; Compliance Testing; Potency Testing; Microbial Testing; Mold / Microbial; Sample Transport</li>
+<li><a href="https://www.smithers.com/industries/cannabis-testing/contact-us" rel="nofollow noopener">Smithers CTS Ohio, LLC</a> — Statewide / Columbus — Cannabis Testing; Compliance Testing; Potency Testing; Microbial Testing; Mold / Microbial</li>
+</ul>
+</div>
+</noscript>
 
 <footer class="wrap">
-  <div class="actions">
-    <button class="btn" id="dl">Download these results as CSV</button>
-    <button class="btn" id="scope" aria-pressed="false">Show 46 out-of-scope records</button>
-    <a class="btn" href="https://github.com/travisvought-byte/ohio-cannabis-directory/issues/new/choose" target="_blank" rel="noopener">Add or correct a listing</a>
-  </div>
   <p>Compiled and maintained by Travis Vought. Built September 12, 2026 from master v67. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
   <p>Out-of-scope records are kept rather than deleted so that renamed, acquired and superseded organizations stay findable. They are hidden by default.</p>
   <p>Released under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a>. Copy it, build on it, keep the attribution. Corrections and additions are welcome and get verified before they go in.</p>
