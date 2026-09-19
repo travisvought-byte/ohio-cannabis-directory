@@ -372,7 +372,15 @@ let showScope = false, shown = [];
 const esc = s => String(s).replace(/[&<>"]/g, c =>
   ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-const telHref = p => 'tel:' + (p.split('|')[0].match(/[\d+]/g) || []).join('');
+const splitField = value => String(value || '')
+  .split('|').map(part => part.trim()).filter(Boolean);
+
+const telHref = value => {
+  const ext = value.match(/\b(?:ext\.?|extension|x)\s*(\d+)\b/i);
+  const base = ext ? value.slice(0, ext.index) : value;
+  const number = (base.match(/[\d+]/g) || []).join('');
+  return 'tel:' + number + (ext ? ';ext=' + ext[1] : '');
+};
 
 function filtered(){
   const terms = qEl.value.toLowerCase().split(/\s+/).filter(Boolean);
@@ -387,8 +395,10 @@ function filtered(){
 
 function record(r){
   const bits = [];
-  if (r.email) bits.push(`<a href="mailto:${esc(r.email)}">${esc(r.email)}</a>`);
-  if (r.phone) bits.push(`<a href="${esc(telHref(r.phone))}">${esc(r.phone)}</a>`);
+  splitField(r.email).forEach(email =>
+    bits.push(`<a href="mailto:${esc(email)}">${esc(email)}</a>`));
+  splitField(r.phone).forEach(phone =>
+    bits.push(`<a href="${esc(telHref(phone))}">${esc(phone)}</a>`));
   if (r.web)   bits.push(`<a href="${esc(r.web)}" target="_blank" rel="noopener">Website</a>`);
   if (!bits.length) bits.push('<span>No contact detail on file</span>');
 
@@ -487,4 +497,3 @@ render();
 
 if __name__ == "__main__":
     main()
-
