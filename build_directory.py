@@ -58,7 +58,9 @@ def main():
     types = sorted({r["type"] for r in records if r["scope"]})
     n_pub = sum(r["scope"] for r in records)
     n_scope = len(records) - n_pub
-    built = datetime.date.today().strftime("%B %-d, %Y")
+    today = datetime.date.today()
+    built = today.strftime("%B %-d, %Y")
+    built_iso = today.isoformat()
 
     payload = json.dumps(records, ensure_ascii=False, separators=(",", ":"))
 
@@ -69,12 +71,44 @@ def main():
         f'<option value="{html.escape(t)}">{html.escape(t)}</option>' for t in types
     )
 
+    # A complete text index keeps the directory useful to search engines,
+    # archival tools, and visitors browsing without JavaScript.
+    noscript = [
+        '<div class="wrap" style="padding:1.5rem 1.1rem">',
+        "<h2>Full directory index</h2>",
+        (
+            f"<p>All {n_pub} publishable organizations, listed for browsers "
+            "and crawlers without JavaScript. Use the search above for "
+            "capability, contact and provenance detail.</p>"
+        ),
+    ]
+    for cat in cats:
+        cat_records = [r for r in records if r["scope"] and r["cat"] == cat]
+        noscript.append(f"<h3>{html.escape(cat)} ({len(cat_records)})</h3>")
+        noscript.append("<ul>")
+        for rec in cat_records:
+            org = html.escape(rec["org"])
+            if rec["web"]:
+                web = html.escape(rec["web"], quote=True)
+                name = f'<a href="{web}" rel="nofollow noopener">{org}</a>'
+            else:
+                name = org
+            detail = " — ".join(
+                x for x in [html.escape(rec["area"]), html.escape(rec["keys"])] if x
+            )
+            noscript.append(f"<li>{name}{' — ' + detail if detail else ''}</li>")
+        noscript.append("</ul>")
+    noscript.append("</div>")
+    noscript_index = "\n".join(noscript)
+
     page = TEMPLATE.replace("__PAYLOAD__", payload)
     page = page.replace("__CAT_OPTS__", cat_opts)
     page = page.replace("__TYPE_OPTS__", type_opts)
     page = page.replace("__N_PUB__", str(n_pub))
     page = page.replace("__N_SCOPE__", str(n_scope))
     page = page.replace("__BUILT__", built)
+    page = page.replace("__BUILT_ISO__", built_iso)
+    page = page.replace("__NOSCRIPT_INDEX__", noscript_index)
 
     with open(OUT, "w", encoding="utf-8") as f:
         f.write(page)
@@ -90,6 +124,46 @@ TEMPLATE = r"""<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ohio Cannabis Ecosystem Directory</title>
 <meta name="description" content="A searchable, source-verified directory of Ohio cannabis and cannabis-adjacent organizations: operators, service providers and nonprofits.">
+<link rel="canonical" href="https://travisvought-byte.github.io/ohio-cannabis-directory/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ohio Cannabis Ecosystem Directory">
+<meta property="og:title" content="Ohio Cannabis Ecosystem Directory">
+<meta property="og:description" content="Who serves what in Ohio cannabis. __N_PUB__ organizations, each traced to a named source. Free and open under CC BY 4.0.">
+<meta property="og:url" content="https://travisvought-byte.github.io/ohio-cannabis-directory/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ohio Cannabis Ecosystem Directory">
+<meta name="twitter:description" content="Who serves what in Ohio cannabis. __N_PUB__ organizations, each traced to a named source. Free and open under CC BY 4.0.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Ohio Cannabis Ecosystem Directory",
+  "description": "A source-verified directory of __N_PUB__ organizations operating in or serving Ohio's cannabis market. Each record is traced to a named source and released under CC BY 4.0.",
+  "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "keywords": ["Ohio", "cannabis", "business directory", "market map", "open data", "data provenance"],
+  "version": "4.0",
+  "dateModified": "__BUILT_ISO__",
+  "creator": {"@type": "Person", "name": "Travis Vought"},
+  "spatialCoverage": {"@type": "Place", "name": "Ohio, United States"},
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "name": "Directory records (CSV)",
+      "contentUrl": "https://raw.githubusercontent.com/travisvought-byte/ohio-cannabis-directory/main/ohio-cannabis-directory.csv"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "name": "Business-to-business relationships (CSV)",
+      "contentUrl": "https://raw.githubusercontent.com/travisvought-byte/ohio-cannabis-directory/main/b2b-relationships.csv"
+    }
+  ],
+  "codeRepository": "https://github.com/travisvought-byte/ohio-cannabis-directory"
+}
+</script>
 <style>
   :root{
     --paper:#EDEFE8;
@@ -217,10 +291,12 @@ TEMPLATE = r"""<!DOCTYPE html>
   footer p{margin:0 0 .6rem; max-width:60ch}
   footer a{color:var(--field-deep)}
   .actions{display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:1.1rem}
+  .masthead .actions{margin:.1rem 0 1.15rem}
   .btn{
     font-family:var(--sans); font-size:.85rem; color:var(--ink);
     background:var(--paper-deep); border:1px solid var(--rule);
     padding:.45rem .75rem; border-radius:2px; cursor:pointer;
+    text-decoration:none; display:inline-block;
   }
   .btn:hover{border-color:var(--field)}
 
@@ -265,16 +341,21 @@ TEMPLATE = r"""<!DOCTYPE html>
     </div>
 
     <div class="lanes" id="lanes"></div>
+
+    <div class="actions">
+      <button class="btn" id="dl">Download these results as CSV</button>
+      <button class="btn" id="scope" aria-pressed="false">Show __N_SCOPE__ out-of-scope records</button>
+      <a class="btn" href="https://github.com/travisvought-byte/ohio-cannabis-directory/issues/new/choose" target="_blank" rel="noopener">Add or correct a listing</a>
+    </div>
   </div>
 </header>
 
 <main class="wrap" id="results"></main>
+<noscript>
+__NOSCRIPT_INDEX__
+</noscript>
 
 <footer class="wrap">
-  <div class="actions">
-    <button class="btn" id="dl">Download these results as CSV</button>
-    <button class="btn" id="scope" aria-pressed="false">Show __N_SCOPE__ out-of-scope records</button>
-  </div>
   <p>Compiled and maintained by Travis Vought. Built __BUILT__ from master v67. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
   <p>Out-of-scope records are kept rather than deleted so that renamed, acquired and superseded organizations stay findable. They are hidden by default.</p>
   <p>Released under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a>. Copy it, build on it, keep the attribution. Corrections and additions are welcome and get verified before they go in.</p>
@@ -406,3 +487,4 @@ render();
 
 if __name__ == "__main__":
     main()
+
