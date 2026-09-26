@@ -2,6 +2,16 @@
 
 Versions track the master workbook\. Each release states what changed and what evidence supported the change\.
 
+## v4.1 — 2026-09-26
+
+- Reconciled OCHBS 2026 direct-contact and exhibitor evidence against the public directory.
+- Added 41 approved organizations, increasing the dataset to 552 total records: 506 publishable organizations across 16 categories and 46 retained out-of-scope records.
+- Updated 20 existing organization records with event provenance, current operating status or verified organizational contact information.
+- Corrected the ACT LAB point of contact, recorded the Klutch Grandview opening, the Herbal Wellness Center Jackson reopening, and the Thrive Columbus/Reynoldsburg opening.
+- Kept nine unresolved additions out of publication pending research or scope decisions.
+- Preserved private CRM-only contact information outside the public dataset.
+- Updated `build_directory.py` to rebuild the site directly from the repository CSV.
+
 ## v4.0 — 2026-09-18
 
 - Prepared the first GitHub Pages release of the searchable directory\.

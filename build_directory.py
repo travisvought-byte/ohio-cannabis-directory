@@ -8,10 +8,12 @@ all inlined so the page works on bad conference wifi or fully offline.
 import json
 import html
 import datetime
+from pathlib import Path
 import pandas as pd
 
-SRC = "/mnt/user-data/uploads/Ohio_Cannabis_Ecosystem_Directory_v67_Master.xlsx"
-OUT = "/mnt/user-data/outputs/ohio-cannabis-directory.html"
+ROOT = Path(__file__).resolve().parent
+SRC = ROOT / "ohio-cannabis-directory.csv"
+OUT = ROOT / "index.html"
 
 OUT_OF_SCOPE = "Out of scope — flagged for removal or separate list"
 
@@ -39,7 +41,7 @@ def clean(v):
 
 
 def main():
-    df = pd.read_excel(SRC, sheet_name="Directory", header=3).dropna(how="all")
+    df = pd.read_csv(SRC).dropna(how="all")
 
     records = []
     for _, row in df.iterrows():
@@ -143,7 +145,7 @@ TEMPLATE = r"""<!DOCTYPE html>
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "isAccessibleForFree": true,
   "keywords": ["Ohio", "cannabis", "business directory", "market map", "open data", "data provenance"],
-  "version": "4.0",
+  "version": "4.1",
   "dateModified": "__BUILT_ISO__",
   "creator": {"@type": "Person", "name": "Travis Vought"},
   "spatialCoverage": {"@type": "Place", "name": "Ohio, United States"},
@@ -356,7 +358,7 @@ __NOSCRIPT_INDEX__
 </noscript>
 
 <footer class="wrap">
-  <p>Compiled and maintained by Travis Vought. Built __BUILT__ from master v67. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
+  <p>Compiled and maintained by Travis Vought. Built __BUILT__ from release v4.1. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
   <p>Out-of-scope records are kept rather than deleted so that renamed, acquired and superseded organizations stay findable. They are hidden by default.</p>
   <p>Released under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a>. Copy it, build on it, keep the attribution. Corrections and additions are welcome and get verified before they go in.</p>
 </footer>

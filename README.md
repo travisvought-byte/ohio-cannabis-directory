@@ -4,7 +4,7 @@ A source-verified map of who serves what in Ohio cannabis: operators, service pr
 
 Live searchable directory: https://travisvought-byte.github.io/ohio-cannabis-directory/
 
-The current dataset contains 511 organizations, including 465 publishable organizations across 16 categories and 46 deliberately retained out-of-scope records so renamed, acquired, superseded, or otherwise relevant organizations remain findable. It also includes 60 documented business-to-business relationships.
+The current dataset contains 552 organizations, including 506 publishable organizations across 16 categories and 46 deliberately retained out-of-scope records so renamed, acquired, superseded, or otherwise relevant organizations remain findable. It also includes 60 documented business-to-business relationships.
 
 Maintained by Travis Vought.
 
@@ -20,7 +20,7 @@ Repository contents
 |-----------------------------|-------------------------------------------------------------------------------------------------|
 |`index.html`                 |Main searchable directory. Self-contained and usable offline.                                    |
 |`intake.html`                |Field/offline intake page for capturing and exporting candidate organizations.                   |
-|`ohio-cannabis-directory.csv`|All 511 directory rows with contact, provenance, notes, verification, and capability fields.     |
+|`ohio-cannabis-directory.csv`|All 552 directory rows with contact, provenance, notes, verification, and capability fields.     |
 |`b2b-relationships.csv`      |60 documented organization-to-organization relationships with supporting evidence.               |
 |`build_directory.py`         |Regenerates the searchable directory HTML from the master workbook.                              |
 |`build_intake.py`            |Regenerates the field intake page from the master workbook.                                      |
@@ -39,7 +39,7 @@ The directory was seeded from the Ohio Cannabis Expo CRM, then expanded category
 
 Contact information is separated into Email, Phone, and Website fields. Verification evidence is stored separately in Source(s), and each entry retains a Seed Source showing how it first entered the dataset.
 
-Verification Tier distinguishes source-verified rows from records carrying a specific open issue. When something is unresolved, the Needs Research field identifies the unresolved fact rather than expressing general uncertainty.
+Verification Tier distinguishes source-verified rows from records carrying a specific open issue. When something is unresolved, the Notes field identifies the unresolved fact rather than expressing general uncertainty.
 
 The headline count is a count of publishable rows, not a claim that every retained row is a distinct currently operating company. Aliases, acquired brands, superseded names, and provenance-preserving out-of-scope records may remain searchable by design.
 
@@ -62,10 +62,10 @@ GitHub issue forms require a GitHub account. intake.html is a separate field/off
 
 Rebuilding
 
-The build scripts currently expect the local master workbook used to generate this release. If you are rebuilding from another copy, update the source and output paths near the top of each script before running it.
+The directory build script reads the repository CSV and writes `index.html` in place.
 
 ```bash
-pip install pandas openpyxl
+pip install pandas
 python build_directory.py
 python build_intake.py
 ```
