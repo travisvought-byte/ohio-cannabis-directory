@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v4.5 — 2026-09-29
+
+- Rebuilt from the corrected category data: Hefestus USA Inc. remains under Packaging & Labeling, and Expo records remain under Events & Expos; neither Automation Technology nor Events & Conferences is a standalone directory category.
+- Made the Women’s Cannabis & Wellness Expo appear as a visible, pre-rendered home-screen event item, while keeping the three-month date filter current when the page opens.
+- Updated the Expo’s directory link to MedicateOH’s current event page.
+- Retained the Ohio State scarlet-and-gray palette and Midwest CannaWomen home-screen link.
+- Dataset remains 556 total records: 510 publishable organizations across 16 categories and 46 retained out-of-scope records.
+
 ## v4.4 — 2026-09-29
 
 - Added a home-screen panel for confirmed events taking place within the next three months; dated events age out automatically.

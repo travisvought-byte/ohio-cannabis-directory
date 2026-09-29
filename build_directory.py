@@ -8,6 +8,7 @@ all inlined so the page works on bad conference wifi or fully offline.
 import json
 import html
 import datetime
+import calendar
 from pathlib import Path
 import pandas as pd
 
@@ -32,6 +33,15 @@ COLS = {
     "Verification Tier": "tier",
     "Capabilities / Keywords": "keys",
 }
+
+UPCOMING_EVENTS = [
+    {
+        "name": "Women’s Cannabis & Wellness Expo",
+        "date": "2026-11-07",
+        "place": "Marriott Cincinnati North · West Chester, Ohio",
+        "url": "https://medicateoh.com/events/",
+    }
+]
 
 
 def clean(v):
@@ -63,6 +73,31 @@ def main():
     today = datetime.date.today()
     built = today.strftime("%B %-d, %Y")
     built_iso = today.isoformat()
+
+    month_index = today.month - 1 + 3
+    limit_year = today.year + month_index // 12
+    limit_month = month_index % 12 + 1
+    limit_day = min(today.day, calendar.monthrange(limit_year, limit_month)[1])
+    event_limit = datetime.date(limit_year, limit_month, limit_day)
+    visible_events = [
+        event for event in UPCOMING_EVENTS
+        if today <= datetime.date.fromisoformat(event["date"]) <= event_limit
+    ]
+    home_events = ['<h2>Upcoming events · next 3 months</h2>']
+    if visible_events:
+        for event in sorted(visible_events, key=lambda e: e["date"]):
+            event_date = datetime.date.fromisoformat(event["date"])
+            date_label = event_date.strftime("%a, %b %-d, %Y")
+            home_events.append(
+                '<div class="home-event">'
+                f'<h3>{html.escape(event["name"])}</h3>'
+                f'<p>{html.escape(date_label)} · {html.escape(event["place"])}</p>'
+                f'<p><a href="{html.escape(event["url"], quote=True)}" target="_blank" rel="noopener">Event details</a></p>'
+                '</div>'
+            )
+    else:
+        home_events.append('<p class="home-empty">No confirmed event dates in this window.</p>')
+    home_event_markup = "\n".join(home_events)
 
     payload = json.dumps(records, ensure_ascii=False, separators=(",", ":"))
 
@@ -104,6 +139,8 @@ def main():
     noscript_index = "\n".join(noscript)
 
     page = TEMPLATE.replace("__PAYLOAD__", payload)
+    page = page.replace("__UPCOMING_EVENTS__", json.dumps(UPCOMING_EVENTS, ensure_ascii=False, separators=(",", ":")))
+    page = page.replace("__HOME_EVENT_MARKUP__", home_event_markup)
     page = page.replace("__CAT_OPTS__", cat_opts)
     page = page.replace("__TYPE_OPTS__", type_opts)
     page = page.replace("__N_PUB__", str(n_pub))
@@ -145,7 +182,7 @@ TEMPLATE = r"""<!DOCTYPE html>
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "isAccessibleForFree": true,
   "keywords": ["Ohio", "cannabis", "business directory", "market map", "open data", "data provenance"],
-  "version": "4.4",
+  "version": "4.5",
   "dateModified": "__BUILT_ISO__",
   "creator": {"@type": "Person", "name": "Travis Vought"},
   "spatialCoverage": {"@type": "Place", "name": "Ohio, United States"},
@@ -339,7 +376,7 @@ TEMPLATE = r"""<!DOCTYPE html>
     <p class="standfirst">Who serves what in Ohio cannabis. __N_PUB__ organizations, each traced to a named source.</p>
 
     <section class="home-highlights" aria-label="Upcoming event and featured community">
-      <div class="highlight-card" id="upcoming-card" aria-live="polite"></div>
+      <div class="highlight-card" id="upcoming-card" aria-live="polite">__HOME_EVENT_MARKUP__</div>
       <div class="highlight-card">
         <h2>Women’s cannabis group</h2>
         <h3><a href="https://midwestcannawomen.crd.co/" target="_blank" rel="noopener">Midwest CannaWomen</a></h3>
@@ -382,7 +419,7 @@ __NOSCRIPT_INDEX__
 </noscript>
 
 <footer class="wrap">
-  <p>Compiled and maintained by Travis Vought. Built __BUILT__ from release v4.4. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
+  <p>Compiled and maintained by Travis Vought. Built __BUILT__ from release v4.5. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
   <p>Out-of-scope records are kept rather than deleted so that renamed, acquired and superseded organizations stay findable. They are hidden by default.</p>
   <p>Released under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a>. Copy it, build on it, keep the attribution. Corrections and additions are welcome and get verified before they go in.</p>
 </footer>
@@ -398,9 +435,7 @@ let showScope = false, shown = [];
 const esc = s => String(s).replace(/[&<>"]/g, c =>
   ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-const UPCOMING_EVENTS = [
-  {name: "Women’s Cannabis & Wellness Expo", date: "2026-11-07", place: "Marriott Cincinnati North · West Chester, Ohio", url: "https://medicateoh.com/events/"}
-];
+const UPCOMING_EVENTS = __UPCOMING_EVENTS__;
 function renderHomeHighlights(){
   const today = new Date();
   today.setHours(0,0,0,0);
