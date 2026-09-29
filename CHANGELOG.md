@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v4.2 — 2026-09-28
+
+- Reconciled listing details against direct email replies received after OCHBS.
+- Added Ohio Cannabis Live and Ohio Cannabis Expo after Anthony D. Riley identified both in email; verified their current official sites and contact routes.
+- Corrected Hefestus USA Inc. name, Automation Technology category, product description, and contact details.
+- Corrected Package My Bud to Packaging & Labeling, added its confirmed contact and primary site, and added PMB PROMOS as the separate promotional-goods listing.
+- Added Atomic Credit Union’s confirmed business-development contact and direct line.
+- Added RobMejia.com to the Our Community Harvest record and clarified the two sites’ distinct roles.
+- Added a source-verified Libertarian Party of Ohio listing as the directory maintainer’s clearly labeled personal, unpaid endorsement of Don Kissick for Governor; it sorts first by default.
+- Updated the dataset to 556 total records: 510 publishable organizations across 18 categories and 46 retained out-of-scope records.
+- Updated the searchable page, repository summary, citation, and Zenodo metadata for v4.2.
+
 Versions track the master workbook\. Each release states what changed and what evidence supported the change\.
 
 ## v4.1 — 2026-09-26
