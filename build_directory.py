@@ -54,7 +54,7 @@ def main():
         ]).lower()
         records.append(rec)
 
-    records.sort(key=lambda r: r["org"].lower())
+    records.sort(key=lambda r: (0 if r["org"].startswith("! ") else 1, r["org"].lstrip("! ").lower()))
 
     cats = sorted({r["cat"] for r in records if r["scope"]})
     types = sorted({r["type"] for r in records if r["scope"]})
@@ -145,7 +145,7 @@ TEMPLATE = r"""<!DOCTYPE html>
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "isAccessibleForFree": true,
   "keywords": ["Ohio", "cannabis", "business directory", "market map", "open data", "data provenance"],
-  "version": "4.1",
+  "version": "4.2",
   "dateModified": "__BUILT_ISO__",
   "creator": {"@type": "Person", "name": "Travis Vought"},
   "spatialCoverage": {"@type": "Place", "name": "Ohio, United States"},
@@ -251,6 +251,9 @@ TEMPLATE = r"""<!DOCTYPE html>
   /* ---- records ------------------------------------------------------ */
   main{padding-top:.35rem}
   article{padding:1.05rem 0; border-bottom:1px solid var(--rule)}
+  article.featured{border-top:2px solid #B08A2E; border-bottom-color:#B08A2E; background:linear-gradient(90deg,rgba(176,138,46,.10),transparent); padding:.9rem .65rem}
+  article.featured h2{color:#70530E}
+  .endorsement{display:inline-block; margin:.3rem 0 .05rem; padding:.12rem .4rem; border:1px solid #B08A2E; color:#60470C; background:#F6F0DE; font-size:.72rem; font-weight:700; letter-spacing:.035em; text-transform:uppercase}
   article h2{
     font-family:var(--sans); font-size:1.03rem; font-weight:600;
     margin:0 0 .18rem; line-height:1.3;
@@ -358,7 +361,7 @@ __NOSCRIPT_INDEX__
 </noscript>
 
 <footer class="wrap">
-  <p>Compiled and maintained by Travis Vought. Built __BUILT__ from release v4.1. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
+  <p>Compiled and maintained by Travis Vought. Built __BUILT__ from release v4.2. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
   <p>Out-of-scope records are kept rather than deleted so that renamed, acquired and superseded organizations stay findable. They are hidden by default.</p>
   <p>Released under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a>. Copy it, build on it, keep the attribution. Corrections and additions are welcome and get verified before they go in.</p>
 </footer>
@@ -401,7 +404,8 @@ function record(r){
     bits.push(`<a href="mailto:${esc(email)}">${esc(email)}</a>`));
   splitField(r.phone).forEach(phone =>
     bits.push(`<a href="${esc(telHref(phone))}">${esc(phone)}</a>`));
-  if (r.web)   bits.push(`<a href="${esc(r.web)}" target="_blank" rel="noopener">Website</a>`);
+  splitField(r.web).forEach((web, i, all) =>
+    bits.push(`<a href="${esc(web)}" target="_blank" rel="noopener">${all.length > 1 ? `Website ${i + 1}` : 'Website'}</a>`));
   if (!bits.length) bits.push('<span>No contact detail on file</span>');
 
   const sources = r.src.split('|').map(s => s.trim()).filter(Boolean)
@@ -409,8 +413,11 @@ function record(r){
       ? `<a href="${esc(s)}" target="_blank" rel="noopener">${esc(s)}</a>`
       : esc(s)).join('<br>');
 
-  return `<article>
-    <h2>${esc(r.org)}</h2>
+  const featured = r.org.startsWith('! ');
+  const displayOrg = featured ? r.org.slice(2) : r.org;
+  return `<article${featured ? ' class="featured"' : ''}>
+    <h2>${esc(displayOrg)}</h2>
+    ${featured ? '<p class="endorsement">My personal, unpaid endorsement</p>' : ''}
     <p class="line"><span class="cat">${esc(r.cat)}</span>${r.area ? ' &nbsp;/&nbsp; ' + esc(r.area) : ''}</p>
     ${r.person ? `<p class="line">${esc(r.person)}</p>` : ''}
     ${r.keys ? `<p class="keys">${esc(r.keys)}</p>` : ''}
