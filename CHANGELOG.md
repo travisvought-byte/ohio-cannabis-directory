@@ -1,15 +1,33 @@
 # CHANGELOG
 
+## v4.4 — 2026-09-29
+
+- Added a home-screen panel for confirmed events taking place within the next three months; dated events age out automatically.
+- Featured Midwest CannaWomen as the women’s cannabis group, linking to its official resource hub.
+- Added the source-confirmed Women’s Cannabis & Wellness Expo on November 7, 2026, with its organizer’s current event-details page.
+- Recolored the directory in Ohio State scarlet and gray with light gray surfaces and dark, readable text; no university logo or mark was added.
+- Kept the directory dataset unchanged at 556 total records: 510 publishable organizations across 16 categories and 46 retained out-of-scope records.
+- Updated the site builder, README, citation, and archive metadata for v4.4.
+
+## v4.3 — 2026-09-29
+
+- Consolidated the Ohio Cannabis Expo entry into the existing Events & Expos category.
+- Classified Hefestus USA Inc. under Packaging & Labeling, retaining pre-roll equipment and packaging automation as searchable capabilities.
+- Moved Quality Extractions Group from Technology to Hemp / CBD Products & Ancillary; extraction solvents and processing supplies remain searchable capabilities.
+- Restored the source-verified Ohio Cannabis Expo and Ohio Cannabis Live listings in the transfer bundle; the Expo addition no longer creates a one-off Events & Conferences category.
+- Kept extraction discoverable through capability keywords rather than adding a one-record top-level category.
+- Updated the dataset to 556 total records: 510 publishable organizations across 16 categories and 46 retained out-of-scope records.
+- Updated the searchable page, repository summary, citation, and Zenodo metadata for v4.3.
+
 ## v4.2 — 2026-09-28
 
 - Reconciled listing details against direct email replies received after OCHBS.
-- Added Ohio Cannabis Live and Ohio Cannabis Expo after Anthony D. Riley identified both in email; verified their current official sites and contact routes.
 - Corrected Hefestus USA Inc. name, Automation Technology category, product description, and contact details.
 - Corrected Package My Bud to Packaging & Labeling, added its confirmed contact and primary site, and added PMB PROMOS as the separate promotional-goods listing.
 - Added Atomic Credit Union’s confirmed business-development contact and direct line.
 - Added RobMejia.com to the Our Community Harvest record and clarified the two sites’ distinct roles.
 - Added a source-verified Libertarian Party of Ohio listing as the directory maintainer’s clearly labeled personal, unpaid endorsement of Don Kissick for Governor; it sorts first by default.
-- Updated the dataset to 556 total records: 510 publishable organizations across 18 categories and 46 retained out-of-scope records.
+- Updated the dataset to 554 total records: 508 publishable organizations across 17 categories and 46 retained out-of-scope records.
 - Updated the searchable page, repository summary, citation, and Zenodo metadata for v4.2.
 
 Versions track the master workbook\. Each release states what changed and what evidence supported the change\.

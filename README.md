@@ -4,7 +4,11 @@ A source-verified map of who serves what in Ohio cannabis: operators, service pr
 
 **Live searchable directory:** https://travisvought-byte.github.io/ohio-cannabis-directory/
 
-The current dataset contains **556 organizations**, including **510 publishable organizations across 18 categories** and 46 deliberately retained out-of-scope records. Those retained records keep renamed, acquired, superseded, or otherwise relevant organizations findable. The repository also includes 60 documented business-to-business relationships.
+The current dataset contains **556 organizations**, including **510 publishable organizations across 16 categories** and 46 deliberately retained out-of-scope records. Those retained records keep renamed, acquired, superseded, or otherwise relevant organizations findable. The repository also includes 60 documented business-to-business relationships.
+
+The home screen highlights confirmed events within the next three months and features the Midwest CannaWomen community. Event dates are maintained in the build script and age out of the home screen automatically.
+
+The site uses an Ohio State scarlet-and-gray color palette with accessible contrast and no university logos or marks.
 
 Maintained by Travis Vought.
 
@@ -33,7 +37,7 @@ If you need mold remediation, cash logistics, packaging, MRB banking, staffing, 
 | `LICENSE` | CC BY 4.0 terms for data and MIT terms for code. |
 | `.zenodo.json` | Metadata used by Zenodo when archiving a GitHub release. |
 
-The public HTML pages contain the directory data they need, so the searchable site does not depend on a live database or external API at runtime.
+The public HTML pages contain the directory data they need, so the searchable site does not depend on a live database or external API at runtime. The upcoming-events card checks its date window in the visitor’s browser.
 
 ## How entries are verified
 
