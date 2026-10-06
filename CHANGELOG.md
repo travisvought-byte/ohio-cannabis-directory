@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## v4.20 — 2026-10-06 (prepared for publication)
+
+- Reconciled all 72 recorded OCHBS contact records across 63 organizations against the current dataset.
+- Added eight omitted organizations: SCM Promotions, Tom & Berry Premium Reserve, GLEAF / Gleaf Group, Mood Leaf, SIPE Promotional Products, Precise TB Solutions, Courier Pro Logistics, and Ohio Women’s Cannabis Chamber of Commerce.
+- Verified SCM against its official business site and OCHBS exhibitor profile, Tom & Berry against its official brand site and exhibitor profile, and Gleaf Group against its official exhibitor profile. Five other additions retain explicit Open issue notes and firsthand event provenance.
+- Kept unverified individual card emails and phones in the private tracker. Public SCM and Tom & Berry contact routes are independently published by those businesses.
+- Preserved every existing dataset row and the GoatCounter tracker; added GoatCounter to the build template so future rebuilds preserve it.
+- Prepared dataset: 564 total records, 518 publishable, 46 retained out-of-scope records, 16 categories. Publication is pending the maintainer’s desktop release.
+
 ## v4.5 — 2026-09-29
 
 - Rebuilt from the corrected category data: Hefestus USA Inc. remains under Packaging & Labeling, and Expo records remain under Events & Expos; neither Automation Technology nor Events & Conferences is a standalone directory category.

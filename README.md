@@ -4,7 +4,7 @@ A source-verified map of who serves what in Ohio cannabis: operators, service pr
 
 **Live searchable directory:** https://travisvought-byte.github.io/ohio-cannabis-directory/
 
-The current dataset contains **556 organizations**, including **510 publishable organizations across 16 categories** and 46 deliberately retained out-of-scope records. Those retained records keep renamed, acquired, superseded, or otherwise relevant organizations findable. The repository also includes 60 documented business-to-business relationships.
+The current dataset contains **564 organizations**, including **518 publishable organizations across 16 categories** and 46 deliberately retained out-of-scope records. Those retained records keep renamed, acquired, superseded, or otherwise relevant organizations findable. The repository also includes 60 documented business-to-business relationships.
 
 The home screen lists confirmed events within the next three months directly in the generated HTML and refreshes that date window when opened. It also features the Midwest CannaWomen community.
 
@@ -26,7 +26,7 @@ If you need mold remediation, cash logistics, packaging, MRB banking, staffing, 
 | --- | --- |
 | `index.html` | Main searchable directory. Self-contained and usable offline. |
 | `intake.html` | Field/offline intake page for capturing and exporting candidate organizations. |
-| `ohio-cannabis-directory.csv` | All 556 directory rows with contact, provenance, notes, verification, and capability fields. |
+| `ohio-cannabis-directory.csv` | All 564 directory rows with contact, provenance, notes, verification, and capability fields. |
 | `b2b-relationships.csv` | 60 documented organization-to-organization relationships with supporting evidence. |
 | `build_directory.py` | Regenerates `index.html` from the repository CSV. |
 | `build_intake.py` | Regenerates the field intake page. |

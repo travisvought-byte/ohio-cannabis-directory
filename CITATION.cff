@@ -13,7 +13,7 @@ abstract: >-
   A source-verified map of organizations operating in or serving Ohio's
   cannabis market, including operators, service providers, nonprofits, and
   cannabis-adjacent organizations, each traced to a named source. Contains
-  556 rows: 510 publishable organizations across 16 categories and 46
+  564 rows: 518 publishable organizations across 16 categories and 46
   deliberately retained out-of-scope records preserving renamed, acquired,
   and superseded organizations. Includes 60 documented
   business-to-business relationships.
@@ -24,5 +24,5 @@ keywords:
   - market map
   - data provenance
 license: CC-BY-4.0
-version: '4.5'
-date-released: '2026-09-29'
+version: '4.20'
+date-released: '2026-10-06'

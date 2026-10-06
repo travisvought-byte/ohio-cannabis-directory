@@ -584,6 +584,11 @@ $('dl').addEventListener('click', () => {
 
 render();
 </script>
+<script
+  data-goatcounter="https://travisvought.goatcounter.com/count"
+  async
+  src="//gc.zgo.at/count.js">
+</script>
 </body>
 </html>
 """
