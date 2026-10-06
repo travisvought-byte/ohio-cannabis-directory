@@ -1,5 +1,52 @@
 # CHANGELOG
 
+## v4.20 — 2026-10-06 (prepared for publication)
+
+- Reconciled all 72 recorded OCHBS contact records across 63 organizations against the current dataset.
+- Added eight omitted organizations: SCM Promotions, Tom & Berry Premium Reserve, GLEAF / Gleaf Group, Mood Leaf, SIPE Promotional Products, Precise TB Solutions, Courier Pro Logistics, and Ohio Women’s Cannabis Chamber of Commerce.
+- Verified SCM against its official business site and OCHBS exhibitor profile, Tom & Berry against its official brand site and exhibitor profile, and Gleaf Group against its official exhibitor profile. Five other additions retain explicit Open issue notes and firsthand event provenance.
+- Kept unverified individual card emails and phones in the private tracker. Public SCM and Tom & Berry contact routes are independently published by those businesses.
+- Preserved every existing dataset row and the GoatCounter tracker; added GoatCounter to the build template so future rebuilds preserve it.
+- Prepared dataset: 564 total records, 518 publishable, 46 retained out-of-scope records, 16 categories. Publication is pending the maintainer’s desktop release.
+
+## v4.5 — 2026-09-29
+
+- Rebuilt from the corrected category data: Hefestus USA Inc. remains under Packaging & Labeling, and Expo records remain under Events & Expos; neither Automation Technology nor Events & Conferences is a standalone directory category.
+- Made the Women’s Cannabis & Wellness Expo appear as a visible, pre-rendered home-screen event item, while keeping the three-month date filter current when the page opens.
+- Updated the Expo’s directory link to MedicateOH’s current event page.
+- Retained the Ohio State scarlet-and-gray palette and Midwest CannaWomen home-screen link.
+- Dataset remains 556 total records: 510 publishable organizations across 16 categories and 46 retained out-of-scope records.
+
+## v4.4 — 2026-09-29
+
+- Added a home-screen panel for confirmed events taking place within the next three months; dated events age out automatically.
+- Featured Midwest CannaWomen as the women’s cannabis group, linking to its official resource hub.
+- Added the source-confirmed Women’s Cannabis & Wellness Expo on November 7, 2026, with its organizer’s current event-details page.
+- Recolored the directory in Ohio State scarlet and gray with light gray surfaces and dark, readable text; no university logo or mark was added.
+- Kept the directory dataset unchanged at 556 total records: 510 publishable organizations across 16 categories and 46 retained out-of-scope records.
+- Updated the site builder, README, citation, and archive metadata for v4.4.
+
+## v4.3 — 2026-09-29
+
+- Consolidated the Ohio Cannabis Expo entry into the existing Events & Expos category.
+- Classified Hefestus USA Inc. under Packaging & Labeling, retaining pre-roll equipment and packaging automation as searchable capabilities.
+- Moved Quality Extractions Group from Technology to Hemp / CBD Products & Ancillary; extraction solvents and processing supplies remain searchable capabilities.
+- Restored the source-verified Ohio Cannabis Expo and Ohio Cannabis Live listings in the transfer bundle; the Expo addition no longer creates a one-off Events & Conferences category.
+- Kept extraction discoverable through capability keywords rather than adding a one-record top-level category.
+- Updated the dataset to 556 total records: 510 publishable organizations across 16 categories and 46 retained out-of-scope records.
+- Updated the searchable page, repository summary, citation, and Zenodo metadata for v4.3.
+
+## v4.2 — 2026-09-28
+
+- Reconciled listing details against direct email replies received after OCHBS.
+- Corrected Hefestus USA Inc. name, Automation Technology category, product description, and contact details.
+- Corrected Package My Bud to Packaging & Labeling, added its confirmed contact and primary site, and added PMB PROMOS as the separate promotional-goods listing.
+- Added Atomic Credit Union’s confirmed business-development contact and direct line.
+- Added RobMejia.com to the Our Community Harvest record and clarified the two sites’ distinct roles.
+- Added a source-verified Libertarian Party of Ohio listing as the directory maintainer’s clearly labeled personal, unpaid endorsement of Don Kissick for Governor; it sorts first by default.
+- Updated the dataset to 554 total records: 508 publishable organizations across 17 categories and 46 retained out-of-scope records.
+- Updated the searchable page, repository summary, citation, and Zenodo metadata for v4.2.
+
 Versions track the master workbook\. Each release states what changed and what evidence supported the change\.
 
 ## v4.1 — 2026-09-26

@@ -8,6 +8,7 @@ all inlined so the page works on bad conference wifi or fully offline.
 import json
 import html
 import datetime
+import calendar
 from pathlib import Path
 import pandas as pd
 
@@ -33,6 +34,15 @@ COLS = {
     "Capabilities / Keywords": "keys",
 }
 
+UPCOMING_EVENTS = [
+    {
+        "name": "Women’s Cannabis & Wellness Expo",
+        "date": "2026-11-07",
+        "place": "Marriott Cincinnati North · West Chester, Ohio",
+        "url": "https://medicateoh.com/events/",
+    }
+]
+
 
 def clean(v):
     if pd.isna(v):
@@ -54,7 +64,7 @@ def main():
         ]).lower()
         records.append(rec)
 
-    records.sort(key=lambda r: r["org"].lower())
+    records.sort(key=lambda r: (0 if r["org"].startswith("! ") else 1, r["org"].lstrip("! ").lower()))
 
     cats = sorted({r["cat"] for r in records if r["scope"]})
     types = sorted({r["type"] for r in records if r["scope"]})
@@ -63,6 +73,31 @@ def main():
     today = datetime.date.today()
     built = today.strftime("%B %-d, %Y")
     built_iso = today.isoformat()
+
+    month_index = today.month - 1 + 3
+    limit_year = today.year + month_index // 12
+    limit_month = month_index % 12 + 1
+    limit_day = min(today.day, calendar.monthrange(limit_year, limit_month)[1])
+    event_limit = datetime.date(limit_year, limit_month, limit_day)
+    visible_events = [
+        event for event in UPCOMING_EVENTS
+        if today <= datetime.date.fromisoformat(event["date"]) <= event_limit
+    ]
+    home_events = ['<h2>Upcoming events · next 3 months</h2>']
+    if visible_events:
+        for event in sorted(visible_events, key=lambda e: e["date"]):
+            event_date = datetime.date.fromisoformat(event["date"])
+            date_label = event_date.strftime("%a, %b %-d, %Y")
+            home_events.append(
+                '<div class="home-event">'
+                f'<h3>{html.escape(event["name"])}</h3>'
+                f'<p>{html.escape(date_label)} · {html.escape(event["place"])}</p>'
+                f'<p><a href="{html.escape(event["url"], quote=True)}" target="_blank" rel="noopener">Event details</a></p>'
+                '</div>'
+            )
+    else:
+        home_events.append('<p class="home-empty">No confirmed event dates in this window.</p>')
+    home_event_markup = "\n".join(home_events)
 
     payload = json.dumps(records, ensure_ascii=False, separators=(",", ":"))
 
@@ -104,6 +139,8 @@ def main():
     noscript_index = "\n".join(noscript)
 
     page = TEMPLATE.replace("__PAYLOAD__", payload)
+    page = page.replace("__UPCOMING_EVENTS__", json.dumps(UPCOMING_EVENTS, ensure_ascii=False, separators=(",", ":")))
+    page = page.replace("__HOME_EVENT_MARKUP__", home_event_markup)
     page = page.replace("__CAT_OPTS__", cat_opts)
     page = page.replace("__TYPE_OPTS__", type_opts)
     page = page.replace("__N_PUB__", str(n_pub))
@@ -145,7 +182,7 @@ TEMPLATE = r"""<!DOCTYPE html>
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "isAccessibleForFree": true,
   "keywords": ["Ohio", "cannabis", "business directory", "market map", "open data", "data provenance"],
-  "version": "4.1",
+  "version": "4.5",
   "dateModified": "__BUILT_ISO__",
   "creator": {"@type": "Person", "name": "Travis Vought"},
   "spatialCoverage": {"@type": "Place", "name": "Ohio, United States"},
@@ -168,14 +205,14 @@ TEMPLATE = r"""<!DOCTYPE html>
 </script>
 <style>
   :root{
-    --paper:#EDEFE8;
-    --paper-deep:#E3E6DC;
-    --ink:#16231B;
-    --ink-soft:#4A5A50;
-    --rule:#C2CAB9;
-    --field:#5F7434;
-    --field-deep:#43521F;
-    --flag:#8A4B2A;
+    --paper:#F6F7F8;
+    --paper-deep:#EFF1F2;
+    --ink:#212325;
+    --ink-soft:#3F4443;
+    --rule:#BFC6CB;
+    --field:#BA0C2F;
+    --field-deep:#70071C;
+    --flag:#70071C;
     --serif: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
     --sans: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
@@ -199,6 +236,16 @@ TEMPLATE = r"""<!DOCTYPE html>
     max-width:44ch;
   }
 
+  /* ---- home screen highlights ------------------------------------- */
+  .home-highlights{display:grid;grid-template-columns:1fr;gap:.55rem;margin:0 0 1.15rem}
+  .highlight-card{padding:.75rem .85rem;background:var(--paper-deep);border-left:3px solid var(--field)}
+  .highlight-card h2{font-family:var(--sans);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);margin:0 0 .25rem}
+  .highlight-card h3{font-family:var(--serif);font-size:1.12rem;font-weight:400;line-height:1.25;margin:0 0 .12rem}
+  .highlight-card p{font-size:.85rem;color:var(--ink-soft);margin:.15rem 0}
+  .highlight-card a{color:var(--field-deep);text-decoration:none;border-bottom:1px solid rgba(186,12,47,.4)}
+  .highlight-card a:hover{border-bottom-color:var(--field-deep)}
+  .home-empty{font-size:.87rem;color:var(--ink-soft);margin:.2rem 0 0}
+
   /* ---- the search is the hero -------------------------------------- */
   .searchbox{position:relative; margin-bottom:.85rem}
   #q{
@@ -207,10 +254,10 @@ TEMPLATE = r"""<!DOCTYPE html>
     background:transparent; border:0; border-bottom:3px solid var(--field);
     border-radius:0; appearance:none;
   }
-  #q::placeholder{color:#93A08C}
+  #q::placeholder{color:#868E92}
   #q:focus{outline:0; border-bottom-color:var(--field-deep)}
   #q:focus-visible{outline:0}
-  .searchbox:focus-within{box-shadow:0 3px 0 -1px rgba(95,116,52,.22)}
+  .searchbox:focus-within{box-shadow:0 3px 0 -1px rgba(186,12,47,.22)}
   #clear{
     position:absolute; right:0; top:50%; transform:translateY(-50%);
     background:none; border:0; font-size:1.35rem; line-height:1;
@@ -244,13 +291,16 @@ TEMPLATE = r"""<!DOCTYPE html>
     padding:.25rem .5rem; cursor:pointer;
   }
   .lane:hover{border-color:var(--field); color:var(--ink)}
-  .lane[aria-pressed="true"]{background:var(--field); border-color:var(--field); color:#F3F5EE}
-  .lane .n{color:#8B9884; margin-left:.3rem}
-  .lane[aria-pressed="true"] .n{color:#D3DCC4}
+  .lane[aria-pressed="true"]{background:var(--field); border-color:var(--field); color:#FFFFFF}
+  .lane .n{color:#868E92; margin-left:.3rem}
+  .lane[aria-pressed="true"] .n{color:#EFF1F2}
 
   /* ---- records ------------------------------------------------------ */
   main{padding-top:.35rem}
   article{padding:1.05rem 0; border-bottom:1px solid var(--rule)}
+  article.featured{border-top:2px solid #B08A2E; border-bottom-color:#B08A2E; background:linear-gradient(90deg,rgba(176,138,46,.10),transparent); padding:.9rem .65rem}
+  article.featured h2{color:#70530E}
+  .endorsement{display:inline-block; margin:.3rem 0 .05rem; padding:.12rem .4rem; border:1px solid #B08A2E; color:#60470C; background:#F6F0DE; font-size:.72rem; font-weight:700; letter-spacing:.035em; text-transform:uppercase}
   article h2{
     font-family:var(--sans); font-size:1.03rem; font-weight:600;
     margin:0 0 .18rem; line-height:1.3;
@@ -263,9 +313,9 @@ TEMPLATE = r"""<!DOCTYPE html>
     border-left:2px solid var(--flag); padding-left:.4rem; margin-top:.35rem;
   }
   .contact{display:flex; flex-wrap:wrap; gap:.15rem .9rem; margin-top:.5rem; font-size:.88rem}
-  .contact a{color:var(--field-deep); text-decoration:none; border-bottom:1px solid rgba(95,116,52,.35)}
+  .contact a{color:var(--field-deep); text-decoration:none; border-bottom:1px solid rgba(186,12,47,.35)}
   .contact a:hover{border-bottom-color:var(--field-deep)}
-  .contact span{color:#8B9884}
+  .contact span{color:#868E92}
 
   details{margin-top:.55rem}
   summary{
@@ -280,7 +330,7 @@ TEMPLATE = r"""<!DOCTYPE html>
   }
   .prov p{margin:0 0 .4rem}
   .prov a{color:var(--field-deep); word-break:break-all}
-  .prov .label{color:#8B9884}
+  .prov .label{color:#646A6E}
 
   .empty{padding:3rem 0; text-align:left; color:var(--ink-soft); font-family:var(--serif)}
   .empty p{margin:0 0 .5rem}
@@ -307,6 +357,8 @@ TEMPLATE = r"""<!DOCTYPE html>
     h1{font-size:2.2rem}
     #q{font-size:1.6rem}
     article{padding:1.25rem 0}
+    .home-highlights{grid-template-columns:1fr 1fr;gap:.75rem}
+    .highlight-card{padding:.85rem 1rem}
   }
   @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
   @media print{
@@ -322,6 +374,15 @@ TEMPLATE = r"""<!DOCTYPE html>
   <div class="wrap masthead">
     <h1>Ohio Cannabis Ecosystem Directory</h1>
     <p class="standfirst">Who serves what in Ohio cannabis. __N_PUB__ organizations, each traced to a named source.</p>
+
+    <section class="home-highlights" aria-label="Upcoming event and featured community">
+      <div class="highlight-card" id="upcoming-card" aria-live="polite">__HOME_EVENT_MARKUP__</div>
+      <div class="highlight-card">
+        <h2>Women’s cannabis group</h2>
+        <h3><a href="https://midwestcannawomen.crd.co/" target="_blank" rel="noopener">Midwest CannaWomen</a></h3>
+        <p>Ohio-focused cannabis patient, caregiver, employment, and networking resources.</p>
+      </div>
+    </section>
 
     <div class="searchbox">
       <input id="q" type="search" autocomplete="off" spellcheck="false"
@@ -358,7 +419,7 @@ __NOSCRIPT_INDEX__
 </noscript>
 
 <footer class="wrap">
-  <p>Compiled and maintained by Travis Vought. Built __BUILT__ from release v4.1. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
+  <p>Compiled and maintained by Travis Vought. Built __BUILT__ from release v4.5. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
   <p>Out-of-scope records are kept rather than deleted so that renamed, acquired and superseded organizations stay findable. They are hidden by default.</p>
   <p>Released under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a>. Copy it, build on it, keep the attribution. Corrections and additions are welcome and get verified before they go in.</p>
 </footer>
@@ -373,6 +434,32 @@ let showScope = false, shown = [];
 
 const esc = s => String(s).replace(/[&<>"]/g, c =>
   ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+const UPCOMING_EVENTS = __UPCOMING_EVENTS__;
+function renderHomeHighlights(){
+  const today = new Date();
+  today.setHours(0,0,0,0);
+  const limit = new Date(today);
+  limit.setMonth(limit.getMonth() + 3);
+  const upcoming = UPCOMING_EVENTS.filter(event => {
+    const [year, month, day] = event.date.split("-").map(Number);
+    const date = new Date(year, month - 1, day);
+    return date >= today && date <= limit;
+  }).sort((a,b) => a.date.localeCompare(b.date));
+  const panel = $('upcoming-card');
+  if (!upcoming.length){
+    panel.innerHTML = '<h2>Upcoming events · next 3 months</h2><p class="home-empty">No confirmed event dates in this window.</p>';
+    return;
+  }
+  const dateLabel = event => {
+    const [year, month, day] = event.date.split("-").map(Number);
+    return new Intl.DateTimeFormat(undefined, {weekday:"short", month:"short", day:"numeric", year:"numeric"}).format(new Date(year, month - 1, day));
+  };
+  panel.innerHTML = '<h2>Upcoming events · next 3 months</h2>' + upcoming.map(event =>
+    `<div><h3>${esc(event.name)}</h3><p>${esc(dateLabel(event))} · ${esc(event.place)}</p><p><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a></p></div>`
+  ).join('');
+}
+renderHomeHighlights();
 
 const splitField = value => String(value || '')
   .split('|').map(part => part.trim()).filter(Boolean);
@@ -401,7 +488,8 @@ function record(r){
     bits.push(`<a href="mailto:${esc(email)}">${esc(email)}</a>`));
   splitField(r.phone).forEach(phone =>
     bits.push(`<a href="${esc(telHref(phone))}">${esc(phone)}</a>`));
-  if (r.web)   bits.push(`<a href="${esc(r.web)}" target="_blank" rel="noopener">Website</a>`);
+  splitField(r.web).forEach((web, i, all) =>
+    bits.push(`<a href="${esc(web)}" target="_blank" rel="noopener">${all.length > 1 ? `Website ${i + 1}` : 'Website'}</a>`));
   if (!bits.length) bits.push('<span>No contact detail on file</span>');
 
   const sources = r.src.split('|').map(s => s.trim()).filter(Boolean)
@@ -409,8 +497,11 @@ function record(r){
       ? `<a href="${esc(s)}" target="_blank" rel="noopener">${esc(s)}</a>`
       : esc(s)).join('<br>');
 
-  return `<article>
-    <h2>${esc(r.org)}</h2>
+  const featured = r.org.startsWith('! ');
+  const displayOrg = featured ? r.org.slice(2) : r.org;
+  return `<article${featured ? ' class="featured"' : ''}>
+    <h2>${esc(displayOrg)}</h2>
+    ${featured ? '<p class="endorsement">My personal, unpaid endorsement</p>' : ''}
     <p class="line"><span class="cat">${esc(r.cat)}</span>${r.area ? ' &nbsp;/&nbsp; ' + esc(r.area) : ''}</p>
     ${r.person ? `<p class="line">${esc(r.person)}</p>` : ''}
     ${r.keys ? `<p class="keys">${esc(r.keys)}</p>` : ''}
@@ -492,6 +583,11 @@ $('dl').addEventListener('click', () => {
 });
 
 render();
+</script>
+<script
+  data-goatcounter="https://travisvought.goatcounter.com/count"
+  async
+  src="//gc.zgo.at/count.js">
 </script>
 </body>
 </html>

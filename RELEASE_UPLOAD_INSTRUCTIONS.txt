@@ -1,0 +1,9 @@
+Ohio Cannabis Directory — version 4.20 — October 6, 2026
+
+The public directory contains 564 records: 518 in scope and 46 retained out of scope. Eight OCHBS omissions were added. All 72 recorded contacts / 63 organizations map to the prepared directory. Publication is pending.
+
+Extract this ZIP and upload its repository files to the root of the existing GitHub repository, replacing their matching files. Include the hidden .zenodo.json file. Do not upload the ZIP as the site contents or upload this instructions file into the repository. Commit the changes, then publish a new release from that commit using tag v4.20 and title 4.20. That tag was available when checked on October 6. Merely attaching this ZIP to a release does not update GitHub Pages.
+
+Changed files: ohio-cannabis-directory.csv, index.html, README.md, CHANGELOG.md, build_directory.py, CITATION.cff, .zenodo.json, zenodo.json, and sitemap.xml. Other repository files are included unchanged for a complete upload bundle. GoatCounter is retained and the build script now preserves it.
+
+The private business-card tracker and CRM contact data are separate and are not in this public ZIP. Five additions retain named Open issue notes; SCM, Tom & Berry and Gleaf Group have independently verified public sources. No existing dataset rows were removed or changed.
