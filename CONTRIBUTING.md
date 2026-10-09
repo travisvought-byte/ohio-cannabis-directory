@@ -34,7 +34,14 @@ After accepted CSV changes are reconciled, run the repository build scripts to r
 pip install pandas
 python build_directory.py
 python build_intake.py
+python build_relationships.py
+python tests/check_data.py
+npm ci
+npm test
+npm run test:browser
 ```
+
+Keep an existing Record ID when correcting or renaming a row. Set Last Reviewed only after an evidence review and preserve its supporting source/provenance. Candidate captures export blank IDs and review dates; assign an ID and review evidence before publication.
 
 ## What gets accepted
 

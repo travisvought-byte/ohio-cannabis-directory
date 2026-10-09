@@ -6,6 +6,10 @@ A source-verified map of who serves what in Ohio cannabis: operators, service pr
 
 The current dataset contains **564 organizations**, including **518 publishable organizations across 16 categories** and 46 deliberately retained out-of-scope records. Those retained records keep renamed, acquired, superseded, or otherwise relevant organizations findable. The repository also includes 60 documented business-to-business relationships.
 
+**Current site release:** 4.21 · October 9, 2026.
+
+Searches and filters persist in shareable URLs. Every organization has a permanent record link. [Who works with whom?](https://travisvought-byte.github.io/ohio-cannabis-directory/relationships.html) makes all 60 documented relationships searchable, with organization links and source evidence.
+
 The home screen lists confirmed events within the next three months directly in the generated HTML and refreshes that date window when opened. It also features the Midwest CannaWomen community.
 
 The site uses an Ohio State scarlet-and-gray color palette with accessible contrast and no university logos or marks.
@@ -25,8 +29,10 @@ If you need mold remediation, cash logistics, packaging, MRB banking, staffing, 
 | File | Contents |
 | --- | --- |
 | `index.html` | Main searchable directory. Self-contained and usable offline. |
-| `intake.html` | Field/offline intake page for capturing and exporting candidate organizations. |
-| `ohio-cannabis-directory.csv` | All 564 directory rows with contact, provenance, notes, verification, and capability fields. |
+| `intake.html` | Field/offline intake page for capturing and exporting candidate organizations; duplicate checks use all 564 current records. |
+| `relationships.html` | Searchable relationships, organization links and supporting evidence. |
+| `release.json` | Shared version and publication date; changing this does not imply re-verifying every record. |
+| `ohio-cannabis-directory.csv` | All 564 directory rows with contact, provenance, notes, verification, capability, permanent Record ID and Last Reviewed fields. |
 | `b2b-relationships.csv` | 60 documented organization-to-organization relationships with supporting evidence. |
 | `build_directory.py` | Regenerates `index.html` from the repository CSV. |
 | `build_intake.py` | Regenerates the field intake page. |
@@ -72,7 +78,16 @@ The directory build script reads the repository CSV and writes `index.html` in p
 pip install pandas
 python build_directory.py
 python build_intake.py
+python build_relationships.py
+python tests/check_data.py
+npm ci
+npm test
+npm run test:browser
 ```
+
+`Last Reviewed` records an established evidence-review date, not a promise of present availability. Eight October 6 additions have dates supported by their audit; undated legacy records keep their original provenance until a review date is established. Preserve Record ID when correcting or renaming an existing organization.
+
+The public build uses the date in `release.json` and is reproducible. GitHub Actions verifies CSV/page synchronization, release metadata, phone normalization, URL filters, relationship navigation, offline intake/export, mobile width and print behavior.
 
 ## Licensing
 

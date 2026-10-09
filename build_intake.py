@@ -1,33 +1,27 @@
 #!/usr/bin/env python3
-"""Build the OCHBS 2026 intake page.
-
-Captures new organizations and first-party verifications at the conference,
-offline, and exports CSV in the master workbook's exact column order so rows
-drop straight into the Directory tab.
-
-Embeds a name index of the existing 511 records so the page can warn when an
-organization is already in the directory. In that case the right action is to
-verify the existing row, not create a duplicate.
-"""
+"""Build offline candidate capture using the current public CSV and name index."""
 import json
 import pandas as pd
+import html
+from pathlib import Path
+from directory_data import script_json
 
-SRC = "/mnt/user-data/uploads/Ohio_Cannabis_Ecosystem_Directory_v67_Master.xlsx"
-OUT = "/mnt/user-data/outputs/ochbs-2026-intake.html"
+ROOT = Path(__file__).resolve().parent
+SRC = ROOT / "ohio-cannabis-directory.csv"
+OUT = ROOT / "intake.html"
 OUT_OF_SCOPE = "Out of scope — flagged for removal or separate list"
 
 
 def norm(s):
     """Loose key for duplicate matching: lowercase, alphanumeric only,
     with common company suffixes stripped."""
-    s = str(s).lower()
-    for junk in (" llc", " inc", " ltd", " co", " corp", " lp", " llp", " plc"):
-        s = s.replace(junk, " ")
-    return "".join(ch for ch in s if ch.isalnum())
+    import re
+    s = re.sub(r' (llc|inc|ltd|co|corp|lp|llp|plc)\b', ' ', str(s).lower())
+    return re.sub(r'[^a-z0-9]', '', s)
 
 
 def main():
-    df = pd.read_excel(SRC, sheet_name="Directory", header=3).dropna(how="all")
+    df = pd.read_csv(SRC).dropna(how="all")
 
     index = []
     for _, r in df.iterrows():
@@ -40,12 +34,13 @@ def main():
         })
 
     cats = sorted({i["c"] for i in index if i["s"]})
-    cat_opts = "\n".join(f'<option>{c}</option>' for c in cats)
+    cat_opts = "\n".join(f'<option>{html.escape(c)}</option>' for c in cats)
 
     page = (TEMPLATE
-            .replace("__INDEX__", json.dumps(index, ensure_ascii=False, separators=(",", ":")))
+            .replace("__INDEX__", script_json(index))
             .replace("__CAT_OPTS__", cat_opts)
-            .replace("__N__", str(len(index))))
+            .replace("__N__", str(len(index)))
+            .replace("__CSV_COLUMNS__", script_json(list(df.columns))))
 
     with open(OUT, "w", encoding="utf-8") as f:
         f.write(page)
@@ -57,7 +52,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OCHBS 2026 Intake</title>
+<title>Directory intake</title>
 <style>
   :root{
     --paper:#EDEFE8; --paper-deep:#E3E6DC; --ink:#16231B; --ink-soft:#4A5A50;
@@ -126,7 +121,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <body>
 
 <header class="wrap">
-  <h1>OCHBS 2026 intake</h1>
+  <p><a href="index.html">← Cannabis directory</a></p><h1>Directory intake</h1>
   <p class="sub">Capture it standing up. Everything stays on this device until you export.</p>
 </header>
 
@@ -134,6 +129,7 @@ TEMPLATE = r"""<!DOCTYPE html>
   <div class="warn" id="nostore">This browser is blocking local storage, so entries will be lost if the page reloads. Export after every few records.</div>
 
   <form id="f" autocomplete="off">
+    <p class="note">Checks against __N__ existing records. Captures are reviewed before publication.</p>
     <label for="org">Organization <span class="req">*</span></label>
     <input id="org" required>
     <div class="dupe" id="dupe"></div>
@@ -182,11 +178,14 @@ TEMPLATE = r"""<!DOCTYPE html>
     <label for="notes">Notes and what they told you</label>
     <textarea id="notes" placeholder="Said in person that they now serve Ohio dispensaries directly&hellip;"></textarea>
 
+    <label for="source">Source or event</label>
+    <input id="source" placeholder="Website, business card or conversation">
+
     <label for="gap">Unresolved fact to check later</label>
     <input id="gap" placeholder="Whether the Columbus location is still open">
 
     <button class="save" id="save" type="submit">Save record</button>
-    <p class="note">Saved as first-party evidence, stamped with today's date. Verify before promoting into the master.</p>
+    <p class="note">Saved as first-party evidence, stamped with today's date. Verify before promoting into the directory CSV.</p>
   </form>
 </div>
 
@@ -195,7 +194,7 @@ TEMPLATE = r"""<!DOCTYPE html>
   <p class="count" id="count">Nothing yet.</p>
   <div id="list"></div>
   <div class="actions">
-    <button class="btn" id="csv">Export CSV for the master</button>
+    <button class="btn" id="csv">Export candidate CSV</button>
     <button class="btn" id="wipe">Clear all</button>
   </div>
 </section>
@@ -204,7 +203,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 const INDEX = __INDEX__;
 const KEY = 'ochbs2026-intake';
 const $ = id => document.getElementById(id);
-const F = ['org','cat','type','person','email','phone','web','keys','area','notes','gap'];
+const F = ['org','cat','type','person','email','phone','web','keys','area','notes','gap','source'];
 
 let rows = [];
 let storeOK = true;
@@ -256,7 +255,7 @@ $('f').addEventListener('submit', e => {
   F.forEach(f => r[f] = $(f).value.trim());
   if (!r.org) return;
   r.dupe = matched ? matched.n : '';
-  r.when = new Date().toISOString().slice(0,10);
+  const now=new Date();r.when=now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0')+'-'+String(now.getDate()).padStart(2,'0');
   rows.unshift(r);
   persist();
   $('f').reset();
@@ -298,25 +297,22 @@ $('wipe').addEventListener('click', () => {
 
 $('csv').addEventListener('click', () => {
   if (!rows.length) return;
-  // master column order, so rows paste straight into the Directory tab
-  const head = ['Category','Organization / Business Name','Type','Contact Person','Email',
-    'Phone','Website','Source(s)','Service Area','Notes','Needs Research','Seed Source',
-    'Verification Tier','Capabilities / Keywords'];
+  const head = __CSV_COLUMNS__;
   const q = v => '"' + String(v == null ? '' : v).replace(/"/g,'""') + '"';
-  const body = rows.map(r => [
-    r.cat, r.org, r.type, r.person, r.email, r.phone, r.web,
-    'First-party, OCHBS 2026',
-    r.area, r.notes, r.gap,
-    'OCHBS 2026 intake, ' + r.when + (r.dupe ? ' — verification of existing row: ' + r.dupe : ''),
-    r.dupe ? 'First-party verification — review against existing row'
-           : 'First-party — unverified against second source',
-    r.keys
-  ].map(q).join(','));
+  const body = rows.map(r => {
+    const record = {'Category':r.cat,'Organization / Business Name':r.org,'Type':r.type,
+      'Contact Person':r.person,'Email':r.email,'Phone':r.phone,'Website':r.web,
+      'Source(s)':r.source || ('source' in r ? 'First-party conversation' : 'Legacy OCHBS 2026 capture'),
+      'Service Area':r.area,'Notes':[r.notes,r.gap?'Open issue: '+r.gap:''].filter(Boolean).join(' '),
+      'Seed Source':'Directory intake, '+r.when+(r.dupe?' — correction candidate for: '+r.dupe:''),
+      'Verification Tier':'Open issue','Capabilities / Keywords':r.keys,'Record ID':'','Last Reviewed':''};
+    return head.map(c=>q(record[c])).join(',');
+  });
   const csv = [head.map(q).join(',')].concat(body).join('\r\n');
   const url = URL.createObjectURL(new Blob(['\ufeff'+csv], {type:'text/csv;charset=utf-8'}));
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'ochbs-2026-intake.csv';
+  a.download = 'directory-intake.csv';
   a.click();
   URL.revokeObjectURL(url);
 });

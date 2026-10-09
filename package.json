@@ -1,0 +1,12 @@
+{
+  "name": "ohio-cannabis-directory",
+  "private": true,
+  "scripts": {
+    "test": "node tests/directory.cjs",
+    "test:browser": "node tests/browser.cjs"
+  },
+  "devDependencies": {
+    "jsdom": "30.1.2",
+    "playwright": "1.51.1"
+  }
+}

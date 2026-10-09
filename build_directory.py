@@ -11,6 +11,7 @@ import datetime
 import calendar
 from pathlib import Path
 import pandas as pd
+from directory_data import RELEASE, RELEASE_DATE, script_json
 
 ROOT = Path(__file__).resolve().parent
 SRC = ROOT / "ohio-cannabis-directory.csv"
@@ -19,6 +20,8 @@ OUT = ROOT / "index.html"
 OUT_OF_SCOPE = "Out of scope — flagged for removal or separate list"
 
 COLS = {
+    "Record ID": "id",
+    "Last Reviewed": "reviewed",
     "Category": "cat",
     "Organization / Business Name": "org",
     "Type": "type",
@@ -70,7 +73,7 @@ def main():
     types = sorted({r["type"] for r in records if r["scope"]})
     n_pub = sum(r["scope"] for r in records)
     n_scope = len(records) - n_pub
-    today = datetime.date.today()
+    today = RELEASE_DATE
     built = today.strftime("%B %-d, %Y")
     built_iso = today.isoformat()
 
@@ -99,7 +102,7 @@ def main():
         home_events.append('<p class="home-empty">No confirmed event dates in this window.</p>')
     home_event_markup = "\n".join(home_events)
 
-    payload = json.dumps(records, ensure_ascii=False, separators=(",", ":"))
+    payload = script_json(records)
 
     cat_opts = "\n".join(
         f'<option value="{html.escape(c)}">{html.escape(c)}</option>' for c in cats
@@ -126,7 +129,7 @@ def main():
         for rec in cat_records:
             org = html.escape(rec["org"])
             if rec["web"]:
-                web = html.escape(rec["web"], quote=True)
+                web = html.escape(rec["web"].split("|")[0].strip(), quote=True)
                 name = f'<a href="{web}" rel="nofollow noopener">{org}</a>'
             else:
                 name = org
@@ -139,12 +142,14 @@ def main():
     noscript_index = "\n".join(noscript)
 
     page = TEMPLATE.replace("__PAYLOAD__", payload)
-    page = page.replace("__UPCOMING_EVENTS__", json.dumps(UPCOMING_EVENTS, ensure_ascii=False, separators=(",", ":")))
+    page = page.replace("__UPCOMING_EVENTS__", script_json(UPCOMING_EVENTS))
     page = page.replace("__HOME_EVENT_MARKUP__", home_event_markup)
     page = page.replace("__CAT_OPTS__", cat_opts)
     page = page.replace("__TYPE_OPTS__", type_opts)
     page = page.replace("__N_PUB__", str(n_pub))
     page = page.replace("__N_SCOPE__", str(n_scope))
+    page = page.replace("__EXPORT_COLUMNS__", script_json([[COLS[c], c] for c in df.columns]))
+    page = page.replace("__VERSION__", RELEASE["version"])
     page = page.replace("__BUILT__", built)
     page = page.replace("__BUILT_ISO__", built_iso)
     page = page.replace("__NOSCRIPT_INDEX__", noscript_index)
@@ -182,7 +187,7 @@ TEMPLATE = r"""<!DOCTYPE html>
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "isAccessibleForFree": true,
   "keywords": ["Ohio", "cannabis", "business directory", "market map", "open data", "data provenance"],
-  "version": "4.5",
+  "version": "__VERSION__",
   "dateModified": "__BUILT_ISO__",
   "creator": {"@type": "Person", "name": "Travis Vought"},
   "spatialCoverage": {"@type": "Place", "name": "Ohio, United States"},
@@ -297,7 +302,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 
   /* ---- records ------------------------------------------------------ */
   main{padding-top:.35rem}
-  article{padding:1.05rem 0; border-bottom:1px solid var(--rule)}
+  article{overflow-wrap:anywhere;padding:1.05rem 0; border-bottom:1px solid var(--rule)}
   article.featured{border-top:2px solid #B08A2E; border-bottom-color:#B08A2E; background:linear-gradient(90deg,rgba(176,138,46,.10),transparent); padding:.9rem .65rem}
   article.featured h2{color:#70530E}
   .endorsement{display:inline-block; margin:.3rem 0 .05rem; padding:.12rem .4rem; border:1px solid #B08A2E; color:#60470C; background:#F6F0DE; font-size:.72rem; font-weight:700; letter-spacing:.035em; text-transform:uppercase}
@@ -406,6 +411,8 @@ TEMPLATE = r"""<!DOCTYPE html>
     <div class="lanes" id="lanes"></div>
 
     <div class="actions">
+      <button class="btn" id="share">Copy search link</button><span id="share-status" role="status" aria-live="polite"></span>
+      <a class="btn" href="relationships.html">Who works with whom?</a>
       <button class="btn" id="dl">Download these results as CSV</button>
       <button class="btn" id="scope" aria-pressed="false">Show __N_SCOPE__ out-of-scope records</button>
       <a class="btn" href="https://github.com/travisvought-byte/ohio-cannabis-directory/issues/new/choose" target="_blank" rel="noopener">Add or correct a listing</a>
@@ -413,13 +420,15 @@ TEMPLATE = r"""<!DOCTYPE html>
   </div>
 </header>
 
+<p class="wrap" id="single-record" hidden><button class="btn" id="all-records">Back to all organizations</button></p>
 <main class="wrap" id="results"></main>
 <noscript>
 __NOSCRIPT_INDEX__
 </noscript>
 
 <footer class="wrap">
-  <p>Compiled and maintained by Travis Vought. Built __BUILT__ from release v4.5. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
+  <p>Compiled and maintained by Travis Vought. Built __BUILT__ from release v__VERSION__. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
+  <p><a href="intake.html">Capture organizations offline</a> · <a href="relationships.html">Browse 60 documented relationships</a> · <a href="b2b-relationships.csv">Download relationship data</a></p>
   <p>Out-of-scope records are kept rather than deleted so that renamed, acquired and superseded organizations stay findable. They are hidden by default.</p>
   <p>Released under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a>. Copy it, build on it, keep the attribution. Corrections and additions are welcome and get verified before they go in.</p>
 </footer>
@@ -464,17 +473,31 @@ renderHomeHighlights();
 const splitField = value => String(value || '')
   .split('|').map(part => part.trim()).filter(Boolean);
 
+const safeURL = value => {try{const u=new URL(value);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}};
+const splitPhones = value => String(value || '').split(/[|;]/).map(s=>s.trim()).filter(Boolean);
 const telHref = value => {
   const ext = value.match(/\b(?:ext\.?|extension|x)\s*(\d+)\b/i);
-  const base = ext ? value.slice(0, ext.index) : value;
-  const number = (base.match(/[\d+]/g) || []).join('');
+  // Prefer a published numeric equivalent when a vanity number includes one.
+  const numeric = value.match(/(?<!\d)(?:\+?1[ .-]?)?(?:\(\d{3}\)|\d{3})[ .-]*\d{3}[ .-]*\d{4}(?!\d)/);
+  let number = numeric ? numeric[0].replace(/[^\d+]/g,'') : '';
+  if (!number){
+    const vanity = value.match(/(?:\+?1[ .-]?)?\d{3}[ .-][A-Za-z0-9][A-Za-z0-9-]{6,}/);
+    if(vanity){const keypad={ABC:'2',DEF:'3',GHI:'4',JKL:'5',MNO:'6',PQRS:'7',TUV:'8',WXYZ:'9'};
+      number=vanity[0].toUpperCase().replace(/[A-Z]/g,c=>Object.entries(keypad).find(([letters])=>letters.includes(c))[1]).replace(/[^\d+]/g,'');}
+  }
+  if(!/^\+?\d{10,15}$/.test(number))return '';
   return 'tel:' + number + (ext ? ';ext=' + ext[1] : '');
 };
+let recordID = '';
+function searchURL(){const u=new URL(location.href);u.search='';u.hash='';if(qEl.value.trim())u.searchParams.set('q',qEl.value.trim());if(catEl.value)u.searchParams.set('category',catEl.value);if(typeEl.value)u.searchParams.set('type',typeEl.value);if(showScope)u.searchParams.set('scope','all');if(recordID)u.searchParams.set('org',recordID);return u}
+function loadSearch(){const p=new URLSearchParams(location.search);qEl.value=p.get('q')||'';catEl.value=[...catEl.options].some(o=>o.value===p.get('category'))?p.get('category'):'';typeEl.value=[...typeEl.options].some(o=>o.value===p.get('type'))?p.get('type'):'';recordID=DATA.some(r=>r.id===p.get('org'))?p.get('org'):'';showScope=p.get('scope')==='all'||!!DATA.find(r=>r.id===recordID&&!r.scope);}
+function clearRecord(){recordID=''}
 
 function filtered(){
   const terms = qEl.value.toLowerCase().split(/\s+/).filter(Boolean);
   const cat = catEl.value, type = typeEl.value;
   return DATA.filter(r => {
+    if (recordID && r.id !== recordID) return false;
     if (!showScope && !r.scope) return false;
     if (cat && r.cat !== cat) return false;
     if (type && r.type !== type) return false;
@@ -486,20 +509,19 @@ function record(r){
   const bits = [];
   splitField(r.email).forEach(email =>
     bits.push(`<a href="mailto:${esc(email)}">${esc(email)}</a>`));
-  splitField(r.phone).forEach(phone =>
-    bits.push(`<a href="${esc(telHref(phone))}">${esc(phone)}</a>`));
-  splitField(r.web).forEach((web, i, all) =>
+  splitPhones(r.phone).forEach(phone => {const href=telHref(phone);bits.push(href?`<a href="${esc(href)}">${esc(phone)}</a>`:`<span>${esc(phone)}</span>`)});
+  splitField(r.web).filter(safeURL).forEach((web, i, all) =>
     bits.push(`<a href="${esc(web)}" target="_blank" rel="noopener">${all.length > 1 ? `Website ${i + 1}` : 'Website'}</a>`));
   if (!bits.length) bits.push('<span>No contact detail on file</span>');
 
   const sources = r.src.split('|').map(s => s.trim()).filter(Boolean)
-    .map(s => s.startsWith('http')
+    .map(s => safeURL(s)
       ? `<a href="${esc(s)}" target="_blank" rel="noopener">${esc(s)}</a>`
       : esc(s)).join('<br>');
 
   const featured = r.org.startsWith('! ');
   const displayOrg = featured ? r.org.slice(2) : r.org;
-  return `<article${featured ? ' class="featured"' : ''}>
+  return `<article id="${esc(r.id)}"${featured ? ' class="featured"' : ''}>
     <h2>${esc(displayOrg)}</h2>
     ${featured ? '<p class="endorsement">My personal, unpaid endorsement</p>' : ''}
     <p class="line"><span class="cat">${esc(r.cat)}</span>${r.area ? ' &nbsp;/&nbsp; ' + esc(r.area) : ''}</p>
@@ -507,6 +529,7 @@ function record(r){
     ${r.keys ? `<p class="keys">${esc(r.keys)}</p>` : ''}
     ${r.tier !== 'Source-verified' ? `<p class="flagged">${esc(r.tier)}</p>` : ''}
     <p class="contact">${bits.join('')}</p>
+    <p class="line"><a href="?org=${encodeURIComponent(r.id)}">Link to this organization</a> · <a href="relationships.html?q=${encodeURIComponent(displayOrg)}">Relationships</a>${r.reviewed?' · Evidence reviewed '+esc(r.reviewed):''}</p>
     <details>
       <summary>Provenance and notes</summary>
       <div class="prov">
@@ -520,6 +543,10 @@ function record(r){
 
 function render(){
   shown = filtered();
+  history.replaceState(null,'',searchURL());
+  $('single-record').hidden=!recordID;
+  $('scope').setAttribute('aria-pressed',String(showScope));
+  $('scope').textContent=showScope?'Hide out-of-scope records':'Show __N_SCOPE__ out-of-scope records';
   tally.innerHTML = `<b>${shown.length}</b> of ${DATA.filter(r => showScope || r.scope).length}`;
   $('clear').style.display = qEl.value ? 'block' : 'none';
 
@@ -543,7 +570,7 @@ lanes.innerHTML = Object.keys(counts).sort((a,b) => counts[b] - counts[a])
 lanes.addEventListener('click', e => {
   const b = e.target.closest('.lane');
   if (!b) return;
-  catEl.value = (catEl.value === b.dataset.cat) ? '' : b.dataset.cat;
+  clearRecord();catEl.value = (catEl.value === b.dataset.cat) ? '' : b.dataset.cat;
   syncLanes(); render();
 });
 
@@ -552,13 +579,13 @@ function syncLanes(){
     b.setAttribute('aria-pressed', String(b.dataset.cat === catEl.value)));
 }
 
-qEl.addEventListener('input', render);
-catEl.addEventListener('change', () => { syncLanes(); render(); });
-typeEl.addEventListener('change', render);
-$('clear').addEventListener('click', () => { qEl.value = ''; qEl.focus(); render(); });
+qEl.addEventListener('input',()=>{clearRecord();render()});
+catEl.addEventListener('change', () => {clearRecord();syncLanes();render();});
+typeEl.addEventListener('change',()=>{clearRecord();render()});
+$('clear').addEventListener('click', () => { qEl.value = '';clearRecord();qEl.focus();render(); });
 
 $('scope').addEventListener('click', e => {
-  showScope = !showScope;
+  clearRecord();showScope = !showScope;
   e.target.setAttribute('aria-pressed', String(showScope));
   e.target.textContent = showScope
     ? 'Hide out-of-scope records'
@@ -567,10 +594,7 @@ $('scope').addEventListener('click', e => {
 });
 
 $('dl').addEventListener('click', () => {
-  const cols = [['org','Organization'],['cat','Category'],['type','Type'],
-    ['person','Contact Person'],['email','Email'],['phone','Phone'],['web','Website'],
-    ['area','Service Area'],['keys','Capabilities / Keywords'],['tier','Verification Tier'],
-    ['notes','Notes'],['src','Source(s)'],['seed','Seed Source']];
+  const cols = __EXPORT_COLUMNS__;
   const q = v => '"' + String(v).replace(/"/g,'""') + '"';
   const csv = [cols.map(c => q(c[1])).join(',')]
     .concat(shown.map(r => cols.map(c => q(r[c[0]])).join(','))).join('\r\n');
@@ -582,7 +606,10 @@ $('dl').addEventListener('click', () => {
   URL.revokeObjectURL(url);
 });
 
-render();
+$('share').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(searchURL().href);$('share-status').textContent='Link copied.'}catch{$('share-status').textContent='Copy the page address to share this search.'}});
+$('all-records').addEventListener('click',()=>{clearRecord();qEl.value='';catEl.value='';typeEl.value='';showScope=false;syncLanes();render()});
+window.addEventListener('popstate',()=>{loadSearch();syncLanes();render()});
+loadSearch();syncLanes();render();
 </script>
 <script
   data-goatcounter="https://travisvought.goatcounter.com/count"

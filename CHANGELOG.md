@@ -1,13 +1,22 @@
 # CHANGELOG
 
-## v4.20 — 2026-10-06 (prepared for publication)
+## v4.21 — 2026-10-09
+
+- Fixed multi-number and vanity-number dialing links without changing published contact evidence.
+- Added shareable search/filter URLs and permanent organization links.
+- Published a searchable, cross-linked view of all 60 documented B2B relationships, preserving their evidence, geography and recorded status.
+- Rebuilt offline intake from the current 564-record CSV and aligned candidate exports with its columns. Existing device captures are retained.
+- Added permanent record IDs and an explicit Last Reviewed field; October 6 dates are populated for the eight additions documented by that audit. Other dates are left blank until established.
+- Synchronized release metadata and added build/data, DOM and browser checks. Organization counts and verification tiers are unchanged.
+
+## v4.20 — 2026-10-06
 
 - Reconciled all 72 recorded OCHBS contact records across 63 organizations against the current dataset.
 - Added eight omitted organizations: SCM Promotions, Tom & Berry Premium Reserve, GLEAF / Gleaf Group, Mood Leaf, SIPE Promotional Products, Precise TB Solutions, Courier Pro Logistics, and Ohio Women’s Cannabis Chamber of Commerce.
 - Verified SCM against its official business site and OCHBS exhibitor profile, Tom & Berry against its official brand site and exhibitor profile, and Gleaf Group against its official exhibitor profile. Five other additions retain explicit Open issue notes and firsthand event provenance.
 - Kept unverified individual card emails and phones in the private tracker. Public SCM and Tom & Berry contact routes are independently published by those businesses.
 - Preserved every existing dataset row and the GoatCounter tracker; added GoatCounter to the build template so future rebuilds preserve it.
-- Prepared dataset: 564 total records, 518 publishable, 46 retained out-of-scope records, 16 categories. Publication is pending the maintainer’s desktop release.
+- Prepared dataset: 564 total records, 518 publishable, 46 retained out-of-scope records, 16 categories. These records are published in the live directory.
 
 ## v4.5 — 2026-09-29
 

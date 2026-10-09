@@ -1,0 +1,33 @@
+process.env.TZ='America/New_York';
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const {JSDOM,VirtualConsole}=require('jsdom');
+const root=path.resolve(__dirname,'..');
+function page(file,query='',stored=null,date='2026-10-09T16:00:00Z'){
+ const errors=[],downloads=[],virtualConsole=new VirtualConsole();virtualConsole.on('jsdomError',e=>errors.push(e.message));
+ const dom=new JSDOM(fs.readFileSync(path.join(root,file),'utf8'),{url:'https://example.org/'+file+query,runScripts:'dangerously',virtualConsole,beforeParse(w){
+  w.Date=class extends Date{constructor(...args){super(...(args.length?args:[date]))}};
+  w.Blob=Blob;w.URL.createObjectURL=blob=>{downloads.push(blob);return 'blob:https://example.org/test'};w.URL.revokeObjectURL=()=>{};
+  w.HTMLAnchorElement.prototype.click=function(){};w.scrollTo=()=>{};
+  if(stored)w.localStorage.setItem('ochbs2026-intake',JSON.stringify(stored));
+ }});return {dom,w:dom.window,d:dom.window.document,errors,downloads};
+}
+function input(p,id,value){p.d.getElementById(id).value=value;p.d.getElementById(id).dispatchEvent(new p.w.Event(id==='q'||id==='org'?'input':'change'))}
+function count(p){return p.d.querySelectorAll('#results article').length}
+(async()=>{
+let p=page('index.html');assert.equal(count(p),518);assert.equal(p.d.querySelectorAll('#cat option').length,17);
+for(const [term,n] of [['banking',32],['mold',15],['packaging',42],['Scott Mougey',1]]){input(p,'q',term);assert.equal(count(p),n);assert.equal(new URL(p.w.location.href).searchParams.get('q'),term)}
+input(p,'q','');input(p,'cat','Testing Labs');assert.equal(count(p),6);const shared=p.w.location.search;p.dom.window.close();p=page('index.html',shared);assert.equal(count(p),6);
+input(p,'cat','');p.d.getElementById('scope').click();assert.equal(count(p),564);assert.equal(new URL(p.w.location.href).searchParams.get('scope'),'all');
+const evalJS=s=>p.w.eval(s);
+for(const [display,href] of [['844-44-CRIME','tel:8444427463'],['833-4MYATMS','tel:8334692867'],['888-VEOOZ88','tel:8888366988'],['844-LEAF411 (844-532-3411)','tel:8445323411'],['440-238-8850 ext. 109','tel:4402388850;ext=109'],['Realm: (719) 347-5400 option 1','tel:7193475400'],['not a number','']])assert.equal(evalJS(`telHref(${JSON.stringify(display)})`),href);
+for(const a of p.d.querySelectorAll('#results a[href^="tel:"]'))assert.match(a.getAttribute('href'),/^tel:\+?\d{10,15}(;ext=\d+)?$/);
+const benesch=[...p.d.querySelectorAll('#results article')].find(a=>a.querySelector('h2').textContent.startsWith('Benesch'));assert.equal(benesch.querySelectorAll('a[href^="tel:"]').length,2);
+const scm=[...p.d.querySelectorAll('#results article')].find(a=>a.querySelector('h2').textContent==='SCM Promotions');const recordLink=scm.querySelector('a[href^="?org="]').getAttribute('href');assert(scm.textContent.includes('Evidence reviewed 2026-10-06'));
+p.dom.window.close();p=page('index.html',recordLink);assert.equal(count(p),1);assert.equal(p.d.querySelector('#results h2').textContent,'SCM Promotions');p.d.getElementById('all-records').click();assert.equal(count(p),518);
+p.d.getElementById('dl').click();assert.equal(p.downloads.length,1);const csv=await p.downloads[0].text();assert(csv.includes('"Record ID"'));assert(csv.includes('"Last Reviewed"'));assert(csv.includes('SCM Promotions'));assert.deepEqual(p.errors,[]);p.dom.window.close();
+p=page('index.html','?category=bad&type=bad&org=bad');assert.equal(count(p),518);assert.equal(p.w.location.search,'');p.dom.window.close();
+p=page('index.html','',null,'2026-11-08T16:00:00Z');assert(p.d.getElementById('upcoming-card').textContent.includes('No confirmed event dates'));p.dom.window.close();
+p=page('relationships.html');assert.equal(count(p),60);input(p,'q','Wright-Patt');assert.equal(count(p),1);assert(p.d.querySelector('#results').textContent.includes('Green Check Verified'));assert(p.d.querySelector('#results a[href^="index.html?org="]'));const relLink=p.d.querySelector('a[href^="?relationship="]').getAttribute('href');p.dom.window.close();p=page('relationships.html',relLink);assert.equal(count(p),1);p.d.getElementById('clear').click();assert.equal(count(p),60);assert.deepEqual(p.errors,[]);p.dom.window.close();
+p=page('intake.html');assert.equal(p.w.eval('INDEX.length'),564);input(p,'org','SCM Promotions');assert(p.d.getElementById('dupe').textContent.includes('Already in the directory'));assert.equal(p.d.getElementById('save').textContent,'Save as verification');input(p,'source','Published website');input(p,'notes','Updated contact');input(p,'gap','Check service area');p.d.getElementById('f').dispatchEvent(new p.w.Event('submit',{cancelable:true}));assert.equal(JSON.parse(p.w.localStorage.getItem('ochbs2026-intake')).length,1);p.d.getElementById('csv').click();const intakeCSV=await p.downloads[0].text();assert.equal(intakeCSV.split('\r\n')[0].split(',').length,15);assert(intakeCSV.includes('Open issue: Check service area'));assert(intakeCSV.includes('Published website'));assert(!intakeCSV.includes('Source-verified'));assert(intakeCSV.includes('2026-10-09'));const saved=JSON.parse(p.w.localStorage.getItem('ochbs2026-intake'));p.dom.window.close();p=page('intake.html','',saved);assert(p.d.getElementById('count').textContent.includes('1 record'));assert.deepEqual(p.errors,[]);p.dom.window.close();
+console.log('PASS: URL restoration, search/category/scope boundaries, phone parsing, permanent links, date window, exports, relationships and persistent intake.');
+})().catch(e=>{console.error(e);process.exit(1)});
