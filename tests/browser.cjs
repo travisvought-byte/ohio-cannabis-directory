@@ -1,0 +1,33 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),http=require('node:http'),os=require('node:os');
+const {chromium}=require('playwright');
+(async()=>{
+ const root=path.resolve(__dirname,'..');const server=http.createServer((req,res)=>{
+  const name=new URL(req.url,'http://localhost').pathname;const file=path.resolve(root,'.'+(name==='/'?'/index.html':decodeURIComponent(name)));
+  if(!file.startsWith(root+path.sep)){res.statusCode=404;return res.end()}
+  try{res.setHeader('Content-Type',file.endsWith('.html')?'text/html':file.endsWith('.csv')?'text/csv':'text/plain');res.end(fs.readFileSync(file))}catch{res.statusCode=404;res.end()}
+ });await new Promise(r=>server.listen(0,'127.0.0.1',r));
+ const base='http://127.0.0.1:'+server.address().port+'/';let browser;
+ try{
+  browser=await chromium.launch({headless:true});const context=await browser.newContext({timezoneId:'America/New_York'});const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.route('**/gc.zgo.at/**',route=>route.abort());await page.clock.install({time:new Date('2026-10-09T16:00:00Z')});
+  await page.goto(base);assert.equal(await page.locator('#results article').count(),518);
+  await page.getByRole('searchbox',{name:'Search the directory'}).fill('Scott Mougey');assert.equal(await page.locator('#results article').count(),1);assert.equal(new URL(page.url()).searchParams.get('q'),'Scott Mougey');
+  await page.reload();assert.equal(await page.getByRole('searchbox').inputValue(),'Scott Mougey');
+  await page.getByRole('link',{name:'Link to this organization',exact:true}).click();assert(new URL(page.url()).searchParams.get('org'));assert.equal(await page.locator('#results h2').textContent(),'SCM Promotions');
+  await page.getByRole('button',{name:'Back to all organizations'}).click();assert.equal(await page.locator('#results article').count(),518);
+  await page.getByRole('searchbox').fill('Benesch');assert.equal(await page.locator('#results a[href^="tel:"]').count(),2);assert.equal(await page.locator('#results a[href^="tel:"]').first().getAttribute('href'),'tel:6142239377');
+  await page.getByRole('searchbox').fill('LEAF411');assert.equal(await page.locator('#results a[href^="tel:"]').getAttribute('href'),'tel:8445323411');
+  await page.getByRole('searchbox').fill('');await page.selectOption('#cat','Testing Labs');assert.equal(await page.locator('#results article').count(),6);await page.reload();assert.equal(await page.locator('#cat').inputValue(),'Testing Labs');assert.equal(await page.locator('#results article').count(),6);
+  await page.setViewportSize({width:390,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  let downloadPromise=page.waitForEvent('download');await page.getByRole('button',{name:'Download these results as CSV'}).click();let downloaded=await downloadPromise;const exportText=fs.readFileSync(await downloaded.path(),'utf8');assert(exportText.includes('Record ID'));assert(exportText.includes('Last Reviewed'));assert(exportText.includes('ACT LAB'));
+  await page.emulateMedia({media:'print'});assert(!(await page.locator('#q').isVisible()));assert(await page.locator('#results article').first().isVisible());await page.emulateMedia({media:'screen'});
+  await page.goto(base+'relationships.html?q=Wright-Patt');assert.equal(await page.locator('#results article').count(),1);assert((await page.locator('#results').textContent()).includes('Green Check Verified'));assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  await page.getByRole('link',{name:'Link to this relationship',exact:true}).click();assert(new URL(page.url()).searchParams.get('relationship'));await page.reload();assert.equal(await page.locator('#results article').count(),1);
+  await page.getByRole('link',{name:'Green Check Verified',exact:true}).click();assert(new URL(page.url()).searchParams.get('org'));assert.equal(await page.locator('#results article').count(),1);
+  await page.goto(base+'intake.html');await page.getByLabel('Organization',{exact:true}).fill('SCM Promotions');assert((await page.locator('#dupe').textContent()).includes('Already in the directory'));
+  await page.getByLabel('Source or event').fill('Public business website');await page.getByLabel('Notes and what they told you').fill('Contact correction');await page.getByRole('button',{name:'Save as verification'}).click();assert((await page.locator('#count').textContent()).includes('1 record'));await page.reload();assert((await page.locator('#count').textContent()).includes('1 record'));assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  downloadPromise=page.waitForEvent('download');await page.getByRole('button',{name:'Export candidate CSV'}).click();downloaded=await downloadPromise;const candidate=fs.readFileSync(await downloaded.path(),'utf8');assert(candidate.includes('Public business website'));assert(candidate.includes('Open issue'));assert.equal(candidate.split('\r\n')[0].split(',').length,15);
+  await page.goto(base+'relationships.html?q=banking');await page.screenshot({path:path.join(os.tmpdir(),'cannabis-relationships-mobile.png')});await page.setViewportSize({width:1280,height:900});await page.screenshot({path:path.join(os.tmpdir(),'cannabis-relationships-desktop.png')});
+  assert.deepEqual(errors,[]);console.log('PASS: live browser searches, restored URLs, organization/relationship links, dialing, downloads, saved intake, mobile width and print.');
+ }finally{if(browser)await browser.close();await new Promise(r=>server.close(r))}
+})().catch(e=>{console.error(e);process.exit(1)});

@@ -1,0 +1,30 @@
+name: Validate directory
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install build dependencies
+        run: pip install -r requirements.txt
+      - name: Check data, release metadata and generated pages
+        run: python tests/check_data.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install UI test dependencies
+        run: npm ci
+      - name: Check searches, phone links, exports and intake
+        run: npm test
+      - name: Install test browser
+        run: npx playwright install --with-deps chromium
+      - name: Check browser, mobile and print behavior
+        run: npm run test:browser
