@@ -2,6 +2,8 @@
 
 ## v4.21 — 2026-10-09
 
+- Added Veteran Home Guardians branding to the directory, relationships and intake pages. Public update requests now open a prefilled email to VeteranHomeGuardians@gmail.com; GitHub issue forms remain available in the repository.
+
 - Fixed multi-number and vanity-number dialing links without changing published contact evidence.
 - Added shareable search/filter URLs and permanent organization links.
 - Published a searchable, cross-linked view of all 60 documented B2B relationships, preserving their evidence, geography and recorded status.

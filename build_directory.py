@@ -12,6 +12,7 @@ import calendar
 from pathlib import Path
 import pandas as pd
 from directory_data import RELEASE, RELEASE_DATE, script_json
+from directory_brand import brand_page
 
 ROOT = Path(__file__).resolve().parent
 SRC = ROOT / "ohio-cannabis-directory.csv"
@@ -141,7 +142,7 @@ def main():
     noscript.append("</div>")
     noscript_index = "\n".join(noscript)
 
-    page = TEMPLATE.replace("__PAYLOAD__", payload)
+    page = brand_page(TEMPLATE).replace("__PAYLOAD__", payload)
     page = page.replace("__UPCOMING_EVENTS__", script_json(UPCOMING_EVENTS))
     page = page.replace("__HOME_EVENT_MARKUP__", home_event_markup)
     page = page.replace("__CAT_OPTS__", cat_opts)
@@ -209,6 +210,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 }
 </script>
 <style>
+__VHG_CSS__
   :root{
     --paper:#F6F7F8;
     --paper-deep:#EFF1F2;
@@ -377,6 +379,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 
 <header>
   <div class="wrap masthead">
+    __VHG_BRAND__
     <h1>Ohio Cannabis Ecosystem Directory</h1>
     <p class="standfirst">Who serves what in Ohio cannabis. __N_PUB__ organizations, each traced to a named source.</p>
 
@@ -415,7 +418,7 @@ TEMPLATE = r"""<!DOCTYPE html>
       <a class="btn" href="relationships.html">Who works with whom?</a>
       <button class="btn" id="dl">Download these results as CSV</button>
       <button class="btn" id="scope" aria-pressed="false">Show __N_SCOPE__ out-of-scope records</button>
-      <a class="btn" href="https://github.com/travisvought-byte/ohio-cannabis-directory/issues/new/choose" target="_blank" rel="noopener">Add or correct a listing</a>
+      <a class="btn" href="__UPDATE_URL__">Email a listing update</a>
     </div>
   </div>
 </header>
@@ -427,7 +430,8 @@ __NOSCRIPT_INDEX__
 </noscript>
 
 <footer class="wrap">
-  <p>Compiled and maintained by Travis Vought. Built __BUILT__ from release v__VERSION__. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
+  <p>A Veteran Home Guardians resource, compiled and maintained by Travis Vought. Built __BUILT__ from release v__VERSION__. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
+  <p class="update-contact">Additions and corrections: <a href="__UPDATE_URL__">__VHG_EMAIL__</a>.</p>
   <p><a href="intake.html">Capture organizations offline</a> · <a href="relationships.html">Browse 60 documented relationships</a> · <a href="b2b-relationships.csv">Download relationship data</a></p>
   <p>Out-of-scope records are kept rather than deleted so that renamed, acquired and superseded organizations stay findable. They are hidden by default.</p>
   <p>Released under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a>. Copy it, build on it, keep the attribution. Corrections and additions are welcome and get verified before they go in.</p>
@@ -523,7 +527,7 @@ function record(r){
   const displayOrg = featured ? r.org.slice(2) : r.org;
   return `<article id="${esc(r.id)}"${featured ? ' class="featured"' : ''}>
     <h2>${esc(displayOrg)}</h2>
-    ${featured ? '<p class="endorsement">My personal, unpaid endorsement</p>' : ''}
+    ${featured ? '<p class="endorsement">Travis Vought’s personal, unpaid endorsement</p>' : ''}
     <p class="line"><span class="cat">${esc(r.cat)}</span>${r.area ? ' &nbsp;/&nbsp; ' + esc(r.area) : ''}</p>
     ${r.person ? `<p class="line">${esc(r.person)}</p>` : ''}
     ${r.keys ? `<p class="keys">${esc(r.keys)}</p>` : ''}

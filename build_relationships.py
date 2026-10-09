@@ -5,6 +5,7 @@ import html
 from pathlib import Path
 from build_directory import TEMPLATE as DIRECTORY_TEMPLATE
 from directory_data import ROOT, RELEASE, load_records, relationship_id, script_json
+from directory_brand import brand_page
 
 OUT = ROOT / 'relationships.html'
 
@@ -35,7 +36,7 @@ def main():
         records.append(item)
     records.sort(key=lambda r:(r['a'].casefold(),r['b'].casefold(),r['kind'].casefold()))
     style = DIRECTORY_TEMPLATE.split('<style>')[1].split('</style>')[0]
-    page = TEMPLATE.replace('__STYLE__', style).replace('__DATA__', script_json(records))
+    page = brand_page(TEMPLATE.replace('__STYLE__', style)).replace('__DATA__', script_json(records))
     page = page.replace('__VERSION__', RELEASE['version']).replace('__DATE__', RELEASE['released_on']).replace('__COUNT__', str(len(records)))
     OUT.write_text(page)
     print(f'wrote {OUT} — {len(records)} relationships')
@@ -46,14 +47,14 @@ TEMPLATE = r'''<!doctype html>
 <meta name="description" content="Explore 60 documented cannabis business relationships, including banking, technology, construction and brand partnerships.">
 <link rel="canonical" href="https://travisvought-byte.github.io/ohio-cannabis-directory/relationships.html">
 <style>__STYLE__</style></head><body>
-<header><div class="wrap masthead"><p><a href="index.html">← Ohio Cannabis Ecosystem Directory</a></p>
+<header><div class="wrap masthead">__VHG_BRAND__<p><a href="index.html">← Ohio Cannabis Ecosystem Directory</a></p>
 <h1>Who works with whom?</h1><p class="standfirst">__COUNT__ documented relationships. Explore partners, projects and the evidence behind them. Status is shown as recorded in the source research.</p>
 <div class="searchbox"><input id="q" type="search" aria-label="Search relationships" placeholder="Company, partner or service…"><button id="clear" aria-label="Clear search" type="button">×</button></div>
-<div class="actions"><button class="btn" id="share">Copy search link</button><a class="btn" href="b2b-relationships.csv" download>Download relationships CSV</a><a class="btn" href="https://github.com/travisvought-byte/ohio-cannabis-directory/issues/new/choose">Suggest a relationship</a><span id="share-status" role="status" aria-live="polite"></span></div>
+<div class="actions"><button class="btn" id="share">Copy search link</button><a class="btn" href="b2b-relationships.csv" download>Download relationships CSV</a><a class="btn" href="__RELATIONSHIP_UPDATE_URL__">Email a relationship update</a><span id="share-status" role="status" aria-live="polite"></span></div>
 <p id="tally" role="status" aria-live="polite"></p></div></header>
 <main class="wrap" id="results"></main>
 <noscript><p class="wrap">Read the <a href="b2b-relationships.csv">relationship CSV</a> for all documented relationships and evidence.</p></noscript>
-<footer class="wrap"><p>Compiled and maintained by Travis Vought. Release v__VERSION__ · __DATE__. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p></footer>
+<footer class="wrap"><p>A Veteran Home Guardians resource, compiled and maintained by Travis Vought. Release v__VERSION__ · __DATE__. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p><p class="update-contact">Additions and corrections: <a href="__RELATIONSHIP_UPDATE_URL__">__VHG_EMAIL__</a>.</p></footer>
 <script>
 const RELATIONSHIPS=__DATA__;
 const $=id=>document.getElementById(id),esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));

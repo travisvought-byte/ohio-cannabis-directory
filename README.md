@@ -14,7 +14,9 @@ The home screen lists confirmed events within the next three months directly in 
 
 The site uses an Ohio State scarlet-and-gray color palette with accessible contrast and no university logos or marks.
 
-Maintained by Travis Vought.
+![Veteran Home Guardians](assets/vhg-logo.png)
+
+A [Veteran Home Guardians](https://vethomeguard.org/) resource, maintained by Travis Vought.
 
 The election-season Libertarian Party of Ohio entry is a clearly labeled personal, unpaid endorsement by the directory maintainer, not a paid placement or party sponsorship.
 
@@ -57,7 +59,9 @@ The headline count is a count of publishable rows, not a claim that every retain
 
 ## Corrections and additions
 
-Use the repository's [Add or correct a listing intake](https://github.com/travisvought-byte/ohio-cannabis-directory/issues/new/choose).
+Email listing additions, corrections or relationship updates to [VeteranHomeGuardians@gmail.com](mailto:VeteranHomeGuardians@gmail.com). Include the organization name or listing link, the requested change and a website or source. For several updates, attach the exported intake CSV.
+
+You can also use the repository's [GitHub issue forms](https://github.com/travisvought-byte/ohio-cannabis-directory/issues/new/choose).
 
 Choose the form that matches what you found:
 

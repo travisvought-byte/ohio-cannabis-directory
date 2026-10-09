@@ -5,6 +5,7 @@ import pandas as pd
 import html
 from pathlib import Path
 from directory_data import script_json
+from directory_brand import brand_page
 
 ROOT = Path(__file__).resolve().parent
 SRC = ROOT / "ohio-cannabis-directory.csv"
@@ -36,7 +37,7 @@ def main():
     cats = sorted({i["c"] for i in index if i["s"]})
     cat_opts = "\n".join(f'<option>{html.escape(c)}</option>' for c in cats)
 
-    page = (TEMPLATE
+    page = (brand_page(TEMPLATE)
             .replace("__INDEX__", script_json(index))
             .replace("__CAT_OPTS__", cat_opts)
             .replace("__N__", str(len(index)))
@@ -54,6 +55,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Directory intake</title>
 <style>
+__VHG_CSS__
   :root{
     --paper:#EDEFE8; --paper-deep:#E3E6DC; --ink:#16231B; --ink-soft:#4A5A50;
     --rule:#C2CAB9; --field:#5F7434; --field-deep:#43521F; --flag:#8A4B2A;
@@ -121,8 +123,10 @@ TEMPLATE = r"""<!DOCTYPE html>
 <body>
 
 <header class="wrap">
+  __VHG_BRAND__
   <p><a href="index.html">← Cannabis directory</a></p><h1>Directory intake</h1>
   <p class="sub">Capture it standing up. Everything stays on this device until you export.</p>
+  <p class="sub update-contact">For a listing update, <a href="__UPDATE_URL__">email VHG</a>. Attach your CSV if you have several updates.</p>
 </header>
 
 <div class="wrap">
