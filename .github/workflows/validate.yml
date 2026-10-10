@@ -23,6 +23,8 @@ jobs:
           python validate_foundation.py data/directory.json
           python tests/migration.py
           python tests/locations.py
+          python tests/ancestry.py
+          python strain_ancestry.py
       - uses: actions/setup-node@v4
         with:
           node-version: '24'

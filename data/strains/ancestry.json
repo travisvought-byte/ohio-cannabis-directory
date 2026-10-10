@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-10-10",
+  "scope": "Pilot ancestry catalog. Breeder claims, not DNA verification or Ohio inventory.",
+  "sources": [
+    {
+      "id": "barneys-blue-dream",
+      "publisher": "Barney’s Farm",
+      "url": "https://www.barneysfarm.com/blue-dream-687",
+      "reviewed_on": "2026-10-10"
+    },
+    {
+      "id": "hso-blue-dream",
+      "publisher": "Humboldt Seed Organization",
+      "url": "https://www.humboldtseeds.net/en/blue-dream/",
+      "reviewed_on": "2026-10-10"
+    }
+  ],
+  "strains": [
+    {
+      "id": "blue-dream-barneys",
+      "name": "Blue Dream",
+      "breeder": "Barney’s Farm",
+      "kind": "seed-line",
+      "aliases": []
+    },
+    {
+      "id": "blue-dream-hso",
+      "name": "Blue Dream",
+      "breeder": "Humboldt Seed Organization",
+      "kind": "seed-line",
+      "aliases": []
+    },
+    {
+      "id": "blueberry-unspecified",
+      "name": "Blueberry",
+      "breeder": null,
+      "kind": "unresolved-parent",
+      "aliases": []
+    },
+    {
+      "id": "super-silver-haze-unspecified",
+      "name": "Super Silver Haze",
+      "breeder": null,
+      "kind": "unresolved-parent",
+      "aliases": []
+    },
+    {
+      "id": "haze-selected-hso",
+      "name": "Selected Haze",
+      "breeder": "Humboldt Seed Organization",
+      "kind": "unresolved-parent",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "id": "lineage-barneys",
+      "child_id": "blue-dream-barneys",
+      "parent_ids": [
+        "blueberry-unspecified",
+        "super-silver-haze-unspecified"
+      ],
+      "relationship": "cross",
+      "parent_roles": "unspecified",
+      "status": "breeder-reported",
+      "source_ids": [
+        "barneys-blue-dream"
+      ],
+      "notes": "Parent identities are labels only; exact breeder/cut is unresolved. Cross notation does not establish maternal or paternal direction."
+    },
+    {
+      "id": "lineage-hso",
+      "child_id": "blue-dream-hso",
+      "parent_ids": [
+        "blueberry-unspecified",
+        "haze-selected-hso"
+      ],
+      "relationship": "cross",
+      "parent_roles": "unspecified",
+      "status": "breeder-reported",
+      "source_ids": [
+        "hso-blue-dream"
+      ],
+      "notes": "Parent identities are labels only; exact breeder/cut is unresolved. Cross notation does not establish maternal or paternal direction."
+    },
+    {
+      "id": "lineage-hso-specifications",
+      "child_id": "blue-dream-hso",
+      "parent_ids": [
+        "blueberry-unspecified",
+        "super-silver-haze-unspecified"
+      ],
+      "relationship": "cross",
+      "parent_roles": "unspecified",
+      "status": "breeder-reported",
+      "source_ids": [
+        "hso-blue-dream"
+      ],
+      "notes": "Product specification names Super Silver Haze; prose says selected Haze. Retained as a specificity review, not proof of contradictory genetics."
+    }
+  ],
+  "resolutions": [
+    {
+      "id": "blue-dream-name-collision",
+      "strain_ids": [
+        "blue-dream-barneys",
+        "blue-dream-hso"
+      ],
+      "decision": "keep-separate",
+      "reason": "Same marketed name and separate breeder lines. Shared named parents do not establish genetic identity; keep separate unless identity is documented."
+    }
+  ]
+}
