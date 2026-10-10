@@ -1,6 +1,18 @@
-# Cannabis ancestry repository
+# 100 popular cannabis strains and ancestry
 
-This is a source-attributed pilot, not a complete genealogy or DNA certification. Open `ancestry.html` for search and expandable ancestry; the CSV opens in Excel. Two marketed Blue Dream breeder lines and three unresolved parent labels demonstrate the model.
+Open `ancestry.html` for the searchable guide. `strains.csv` exports exactly 100 market-name profiles for Excel. `ancestry.csv` exports separate attributed parentage claims, including supporting breeder-line examples. `ancestry.json` is the canonical source. Supporting unresolved parent records are excluded from the 100-profile count.
+
+## Selection and details
+
+Reviewed October 10, 2026. This is an editorial, unranked collection of widely recognized classics, contemporary favorites and historically influential CBD-associated cultivars. Selection was informed by Leafly's best-selling-strains coverage, its all-time selection and Weedmaps' popular-strain coverage. It is not a claim that these are precisely the 100 biggest sellers, most searched strains, or available strains in Ohio. A complete independently verifiable national ranking was not available.
+
+- https://www.leafly.com/news/strains-products/best-selling-weed-strains
+- https://www.leafly.com/news/strains-products/top-100-marijuana-strains
+- https://weedmaps.com/news/2020/05/12-of-the-most-popular-strains-on-weedmaps/
+
+Each profile links to the individually reviewed Leafly strain page. Reader-report counts are a dated engagement snapshot, not sales, independent customers or a popularity rank across all strains. The optional review-count sort compares only this collection. Effects and flavors are reader-reported descriptors, not clinical claims. Profile terpene reports do not certify current batch chemistry; check product labels for cannabinoids and terpenes. No fixed THC/CBD numbers, therapeutic indications, product prices or live-stock promises are inferred.
+
+Genetics and history use concise original summaries. Secondary ancestry claims are labeled as such. Where checked breeder or producer sources differ, the page displays attribution and review notes. No source descriptions, reviews or images are republished wholesale.
 
 ## Deconfliction rules
 
@@ -24,6 +36,14 @@ This is a source-attributed pilot, not a complete genealogy or DNA certification
 
 Only concise factual claims and original notes are stored. Source descriptions and images are not copied. Public menus can later supply a separate last-seen availability table; they are not ancestry evidence.
 
-## Current review
+## Current review examples
 
-Barney's Farm lists Blueberry × Super Silver Haze. Humboldt Seed Organization gives the same cross in its specification table and a less specific selected-Haze parent in prose. Both HSO formulations remain visible for a specificity review. The breeder lines remain separate; neither is mapped to the historic clone or Ohio products.
+- Blue Dream: the general market-name profile stays separate from Barney's Farm and Humboldt Seed Organization lines. Shared labels do not establish clone identity.
+- Biscotti: two incompatible published parent sets remain separate disputed claims.
+- Cannatonic: Resin Seeds identifies Reina Madre × NYC Diesel. This breeder account takes priority over the different secondary profile; the earlier claim is retained as superseded and excluded from the current tree.
+- Blueberry: Dutch Passion's broader ancestry account is displayed with the secondary source difference noted.
+- Blueberry Muffin: Native Sun names Razzleberry while Leafly names Blueberry. Both attributed accounts remain visible for breeder review.
+
+## Verification
+
+Run `python tests/ancestry.py`, `node tests/ancestry.cjs` and `node tests/ancestry-browser.cjs`. Python checks profile completeness, source references, identity collisions, competing claims, graph cycles and deterministic HTML/CSV exports. UI checks cover aliases, filters, sorting, exact record links, pagination, competing trees and mobile layout. Run `python build_ancestry.py` after changing the canonical data or page builder.

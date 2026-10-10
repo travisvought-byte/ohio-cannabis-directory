@@ -121,6 +121,6 @@ The [shared directory contract](architecture/STATE_DIRECTORY_CONTRACT.md) define
 
 `data/sources/ohio-dispensaries.json` preserves the original response. Run `python import_locations.py`, `python validate_foundation.py data/directory.json`, then `python build_locations.py` after reviewing a replacement snapshot. Stable location IDs derive from state and license number; legal entities match only by exact unique name. No store hours or inventory claims are imported.
 
-## Strain ancestry pilot
+## 100-strain guide and ancestry repository
 
-`ancestry.html` provides search and source-attributed family trees, backed by `data/strains/ancestry.json` and an Excel-compatible CSV. See `data/strains/README.md` for identity and conflict review rules. This small pilot keeps breeder lines separate and flags parentage alternatives; it does not certify genetics or Ohio availability.
+`ancestry.html` contains 100 curated popular strain profiles, with genetics, history, reader-reported effects and flavors, filters, source links and review notes. It is an unranked educational selection, not a definitive national top-100 sales ranking or an Ohio inventory feed. `data/strains/strains.csv` exports all 100 profiles for Excel; `data/strains/ancestry.json` retains source-attributed ancestry and separate breeder-line examples. See `data/strains/README.md` for selection and conflict-review rules.

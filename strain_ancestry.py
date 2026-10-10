@@ -22,10 +22,24 @@ def analyze(data):
     strains, sources = maps['strains'], maps['sources']
     names, parents, adjacency = defaultdict(set), defaultdict(set), defaultdict(set)
     for s in strains.values():
-        if s['kind'] not in ('seed-line', 'clone', 'landrace', 'unresolved-parent'):
+        if s['kind'] not in ('seed-line', 'clone', 'landrace', 'unresolved-parent', 'market-name'):
             errors.append(f"Invalid kind: {s['id']}")
         for name in [s['name'], *s['aliases']]:
             names[normalize(name)].add(s['id'])
+    popular = [s for s in strains.values() if s.get('popular')]
+    if data.get('version', 1) >= 2:
+        if len(popular) != 100 or len({normalize(s['name']) for s in popular}) != 100:
+            errors.append('Popular catalog must contain 100 distinct display names')
+        for s in popular:
+            for field in ('category', 'lineage_text', 'history', 'review_note', 'profile_source_ids', 'reported_effects', 'reported_flavors', 'reviewed_on'):
+                if not s.get(field):
+                    errors.append(f"Missing profile field {field}: {s['id']}")
+            if s.get('category') not in ('indica', 'sativa', 'hybrid'):
+                errors.append(f"Invalid category: {s['id']}")
+            if any(ref not in sources for ref in s.get('profile_source_ids', [])):
+                errors.append(f"Missing profile source: {s['id']}")
+            if not isinstance(s.get('review_count'), int) or s.get('review_count', 0) <= 0:
+                errors.append(f"Invalid review count: {s['id']}")
     for source in sources.values():
         if not source['url'].startswith('https://'):
             errors.append(f"Invalid source URL: {source['id']}")
