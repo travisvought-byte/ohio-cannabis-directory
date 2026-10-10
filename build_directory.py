@@ -336,7 +336,8 @@ __VHG_CSS__
   .empty{padding:3rem 0; text-align:left; color:var(--ink-soft); font-family:var(--serif)}
   .empty p{margin:0 0 .5rem}
 
-  .event-line{display:flex;gap:1rem;overflow-x:auto;list-style:none;margin:.6rem 0 0;padding:.8rem 0;scroll-snap-type:x proximity}
+  .highlight-card{min-width:0}
+  .event-line{max-width:100%;display:flex;gap:1rem;overflow-x:auto;list-style:none;margin:.6rem 0 0;padding:.8rem 0;scroll-snap-type:x proximity}
   .home-event{flex:0 0 min(22rem,85vw);border-top:3px solid var(--field-deep);padding:.7rem .7rem 0;scroll-snap-align:start}
   .home-event time{font-weight:700}.home-event a{display:inline-block;padding:.4rem 0;min-height:44px}
   @media print{.event-line{display:block;overflow:visible}.home-event{break-inside:avoid}}

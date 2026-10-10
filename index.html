@@ -184,7 +184,8 @@
   .empty{padding:3rem 0; text-align:left; color:var(--ink-soft); font-family:var(--serif)}
   .empty p{margin:0 0 .5rem}
 
-  .event-line{display:flex;gap:1rem;overflow-x:auto;list-style:none;margin:.6rem 0 0;padding:.8rem 0;scroll-snap-type:x proximity}
+  .highlight-card{min-width:0}
+  .event-line{max-width:100%;display:flex;gap:1rem;overflow-x:auto;list-style:none;margin:.6rem 0 0;padding:.8rem 0;scroll-snap-type:x proximity}
   .home-event{flex:0 0 min(22rem,85vw);border-top:3px solid var(--field-deep);padding:.7rem .7rem 0;scroll-snap-align:start}
   .home-event time{font-weight:700}.home-event a{display:inline-block;padding:.4rem 0;min-height:44px}
   @media print{.event-line{display:block;overflow:visible}.home-event{break-inside:avoid}}
@@ -245,6 +246,8 @@
 
     <section class="home-highlights" aria-label="Upcoming event and featured community">
       <div class="highlight-card" id="upcoming-card" aria-live="polite"><h2>Upcoming events · next 3 months</h2><ol class="event-line" aria-label="Upcoming events in date order">
+<li class="home-event"><h3>Buds &amp; Balance</h3><p><time datetime="2026-10-18">Sun, Oct 18, 2026</time> · 1109 W Rich St · Columbus, Ohio · 10–11:45 AM · 21+</p><p><a href="https://www.eventbrite.com/e/buds-and-balance-tickets-1999696340585" target="_blank" rel="noopener">Event details</a></p></li>
+<li class="home-event"><h3>“Gardening” Industry Night</h3><p><time datetime="2026-10-27">Tue, Oct 27, 2026</time> · Stanley’s Pub · 323 Stanley Ave · Cincinnati, Ohio · 8–11 PM · 21+</p><p><a href="https://www.eventbrite.com/e/gardening-industry-night-tickets-2002953936141" target="_blank" rel="noopener">Event details</a></p></li>
 <li class="home-event"><h3>Women’s Cannabis &amp; Wellness Expo</h3><p><time datetime="2026-11-07">Sat, Nov 7, 2026</time> · Marriott Cincinnati North · West Chester, Ohio</p><p><a href="https://medicateoh.com/events/" target="_blank" rel="noopener">Event details</a></p></li>
 </ol></div>
       <div class="highlight-card">
@@ -899,7 +902,7 @@ let showScope = false, shown = [];
 const esc = s => String(s).replace(/[&<>"]/g, c =>
   ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-const UPCOMING_EVENTS = [{"name":"Women’s Cannabis & Wellness Expo","date":"2026-11-07","place":"Marriott Cincinnati North · West Chester, Ohio","url":"https://medicateoh.com/events/"}];
+const UPCOMING_EVENTS = [{"name":"Women’s Cannabis & Wellness Expo","date":"2026-11-07","place":"Marriott Cincinnati North · West Chester, Ohio","url":"https://medicateoh.com/events/"},{"name":"Buds & Balance","date":"2026-10-18","place":"1109 W Rich St · Columbus, Ohio · 10–11:45 AM · 21+","url":"https://www.eventbrite.com/e/buds-and-balance-tickets-1999696340585"},{"name":"“Gardening” Industry Night","date":"2026-10-27","place":"Stanley’s Pub · 323 Stanley Ave · Cincinnati, Ohio · 8–11 PM · 21+","url":"https://www.eventbrite.com/e/gardening-industry-night-tickets-2002953936141"}];
 function renderHomeHighlights(){
   const today = new Date();
   today.setHours(0,0,0,0);

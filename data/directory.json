@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "scope": "directory",
-  "as_of": "2026-10-09",
+  "as_of": "2026-10-10",
   "organizations": [
     {
       "id": "org-6f5375e74696",
@@ -60226,11 +60226,12 @@
       "claim": "event-listing",
       "value": "Women’s Cannabis & Wellness Expo | Marriott Cincinnati North · West Chester, Ohio | 2026-11-07",
       "source_url": "https://medicateoh.com/events/",
-      "source_kind": "secondary",
-      "status": "source-listed",
-      "recorded_on": "2026-10-09",
-      "recheck_on": "2026-11-08",
-      "limitations": "Imported historical source reference; migration is not a fresh source review."
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-10",
+      "recheck_on": "2026-10-24",
+      "limitations": "Date rechecked against MedicateOH organizer events page; confirm latest venue and registration details before travel.",
+      "reviewed_on": "2026-10-10"
     },
     {
       "id": "ev-fulfillment-seed-cellar-shop",
@@ -63051,6 +63052,32 @@
       "recorded_on": "2026-10-10",
       "recheck_on": "2026-11-09",
       "limitations": "Source update date and completeness are unknown. Source Active labels do not establish current license status. Hours and inventory are not imported."
+    },
+    {
+      "id": "ev-c4d7f03fc457",
+      "subject_id": "event-oh-bb720f19b911",
+      "claim": "event-listing",
+      "value": "Buds & Balance | 1109 W Rich St · Columbus, Ohio · 10–11:45 AM · 21+ | 2026-10-18",
+      "source_url": "https://www.eventbrite.com/e/buds-and-balance-tickets-1999696340585",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-10",
+      "reviewed_on": "2026-10-10",
+      "recheck_on": "2026-10-17",
+      "limitations": "Organizer-published ticket listing reviewed via search retrieval. Confirm changes and admission directly; listing does not verify licensing or consumption permissions."
+    },
+    {
+      "id": "ev-2444640333f6",
+      "subject_id": "event-oh-e084983eb1be",
+      "claim": "event-listing",
+      "value": "“Gardening” Industry Night | Stanley’s Pub · 323 Stanley Ave · Cincinnati, Ohio · 8–11 PM · 21+ | 2026-10-27",
+      "source_url": "https://www.eventbrite.com/e/gardening-industry-night-tickets-2002953936141",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-10",
+      "reviewed_on": "2026-10-10",
+      "recheck_on": "2026-10-17",
+      "limitations": "Organizer-published ticket listing reviewed via search retrieval. Confirm changes and admission directly; listing does not verify licensing or consumption permissions."
     }
   ],
   "rules": [
@@ -64436,6 +64463,30 @@
       "evidence_ids": [
         "ev-7af298fcdb2b"
       ]
+    },
+    {
+      "id": "event-oh-bb720f19b911",
+      "name": "Buds & Balance",
+      "state": "OH",
+      "starts_on": "2026-10-18",
+      "ends_on": "2026-10-18",
+      "organization_ids": [],
+      "next_step_url": "https://www.eventbrite.com/e/buds-and-balance-tickets-1999696340585",
+      "evidence_ids": [
+        "ev-c4d7f03fc457"
+      ]
+    },
+    {
+      "id": "event-oh-e084983eb1be",
+      "name": "“Gardening” Industry Night",
+      "state": "OH",
+      "starts_on": "2026-10-27",
+      "ends_on": "2026-10-27",
+      "organization_ids": [],
+      "next_step_url": "https://www.eventbrite.com/e/gardening-industry-night-tickets-2002953936141",
+      "evidence_ids": [
+        "ev-2444640333f6"
+      ]
     }
   ],
   "pathways": [
@@ -64782,6 +64833,18 @@
       "date": "2026-11-07",
       "place": "Marriott Cincinnati North · West Chester, Ohio",
       "url": "https://medicateoh.com/events/"
+    },
+    {
+      "name": "Buds & Balance",
+      "date": "2026-10-18",
+      "place": "1109 W Rich St · Columbus, Ohio · 10–11:45 AM · 21+",
+      "url": "https://www.eventbrite.com/e/buds-and-balance-tickets-1999696340585"
+    },
+    {
+      "name": "“Gardening” Industry Night",
+      "date": "2026-10-27",
+      "place": "Stanley’s Pub · 323 Stanley Ave · Cincinnati, Ohio · 8–11 PM · 21+",
+      "url": "https://www.eventbrite.com/e/gardening-industry-night-tickets-2002953936141"
     }
   ]
 }

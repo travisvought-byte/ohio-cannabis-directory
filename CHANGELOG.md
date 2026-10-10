@@ -136,3 +136,8 @@ Defined the shared data contract and seven visitor pathways; added a JSON schema
 
 - Replaced the compact event card with a full-width horizontal chronological event line, swipeable on small screens. Dates and links remain readable without moving text.
 - The rolling three-month window now refreshes every minute and when the tab becomes visible, automatically removing past events while the page stays open. Event additions remain source-reviewed publication updates.
+
+## Event research — 2026-10-10
+
+- Added organizer-listed Buds & Balance (Columbus, October 18) and Gardening Industry Night (Cincinnati, October 27); rechecked MedicateOH’s November 7 expo date. The homepage line and shared community view use the same reviewed event records.
+- Excluded past events and Dayton 2027 from the rolling window; organizer pages conflict on the Dayton date.
