@@ -396,13 +396,8 @@ __VHG_CSS__
       </nav>
     </section>
 
-    <section class="home-highlights" aria-label="Upcoming event and featured community">
+    <section class="home-highlights" aria-label="Upcoming events">
       <div class="highlight-card" id="upcoming-card" aria-live="polite">__HOME_EVENT_MARKUP__</div>
-      <div class="highlight-card">
-        <h2>Women’s cannabis group</h2>
-        <h3><a href="https://midwestcannawomen.crd.co/" target="_blank" rel="noopener">Midwest CannaWomen</a></h3>
-        <p>Ohio-focused cannabis patient, caregiver, employment, and networking resources.</p>
-      </div>
     </section>
 
     <div class="searchbox">

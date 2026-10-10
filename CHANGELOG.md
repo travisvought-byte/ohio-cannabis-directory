@@ -141,3 +141,8 @@ Defined the shared data contract and seven visitor pathways; added a JSON schema
 
 - Added organizer-listed Buds & Balance (Columbus, October 18) and Gardening Industry Night (Cincinnati, October 27); rechecked MedicateOH’s November 7 expo date. The homepage line and shared community view use the same reviewed event records.
 - Excluded past events and Dayton 2027 from the rolling window; organizer pages conflict on the Dayton date.
+
+## 2026-10-10 event review
+
+- Removed Buds & Balance from upcoming listings because its ticket link could not be reliably verified; cancellation is not confirmed.
+- Removed the standalone Midwest CannaWomen homepage promotion; its directory record remains available.

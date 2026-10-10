@@ -244,17 +244,11 @@
       </nav>
     </section>
 
-    <section class="home-highlights" aria-label="Upcoming event and featured community">
+    <section class="home-highlights" aria-label="Upcoming events">
       <div class="highlight-card" id="upcoming-card" aria-live="polite"><h2>Upcoming events · next 3 months</h2><ol class="event-line" aria-label="Upcoming events in date order">
-<li class="home-event"><h3>Buds &amp; Balance</h3><p><time datetime="2026-10-18">Sun, Oct 18, 2026</time> · 1109 W Rich St · Columbus, Ohio · 10–11:45 AM · 21+</p><p><a href="https://www.eventbrite.com/e/buds-and-balance-tickets-1999696340585" target="_blank" rel="noopener">Event details</a></p></li>
 <li class="home-event"><h3>“Gardening” Industry Night</h3><p><time datetime="2026-10-27">Tue, Oct 27, 2026</time> · Stanley’s Pub · 323 Stanley Ave · Cincinnati, Ohio · 8–11 PM · 21+</p><p><a href="https://www.eventbrite.com/e/gardening-industry-night-tickets-2002953936141" target="_blank" rel="noopener">Event details</a></p></li>
 <li class="home-event"><h3>Women’s Cannabis &amp; Wellness Expo</h3><p><time datetime="2026-11-07">Sat, Nov 7, 2026</time> · Marriott Cincinnati North · West Chester, Ohio</p><p><a href="https://medicateoh.com/events/" target="_blank" rel="noopener">Event details</a></p></li>
 </ol></div>
-      <div class="highlight-card">
-        <h2>Women’s cannabis group</h2>
-        <h3><a href="https://midwestcannawomen.crd.co/" target="_blank" rel="noopener">Midwest CannaWomen</a></h3>
-        <p>Ohio-focused cannabis patient, caregiver, employment, and networking resources.</p>
-      </div>
     </section>
 
     <div class="searchbox">
@@ -902,7 +896,7 @@ let showScope = false, shown = [];
 const esc = s => String(s).replace(/[&<>"]/g, c =>
   ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-const UPCOMING_EVENTS = [{"name":"Women’s Cannabis & Wellness Expo","date":"2026-11-07","place":"Marriott Cincinnati North · West Chester, Ohio","url":"https://medicateoh.com/events/"},{"name":"Buds & Balance","date":"2026-10-18","place":"1109 W Rich St · Columbus, Ohio · 10–11:45 AM · 21+","url":"https://www.eventbrite.com/e/buds-and-balance-tickets-1999696340585"},{"name":"“Gardening” Industry Night","date":"2026-10-27","place":"Stanley’s Pub · 323 Stanley Ave · Cincinnati, Ohio · 8–11 PM · 21+","url":"https://www.eventbrite.com/e/gardening-industry-night-tickets-2002953936141"}];
+const UPCOMING_EVENTS = [{"name":"Women’s Cannabis & Wellness Expo","date":"2026-11-07","place":"Marriott Cincinnati North · West Chester, Ohio","url":"https://medicateoh.com/events/"},{"name":"“Gardening” Industry Night","date":"2026-10-27","place":"Stanley’s Pub · 323 Stanley Ave · Cincinnati, Ohio · 8–11 PM · 21+","url":"https://www.eventbrite.com/e/gardening-industry-night-tickets-2002953936141"}];
 function renderHomeHighlights(){
   const today = new Date();
   today.setHours(0,0,0,0);

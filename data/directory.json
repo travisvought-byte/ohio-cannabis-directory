@@ -63054,19 +63054,6 @@
       "limitations": "Source update date and completeness are unknown. Source Active labels do not establish current license status. Hours and inventory are not imported."
     },
     {
-      "id": "ev-c4d7f03fc457",
-      "subject_id": "event-oh-bb720f19b911",
-      "claim": "event-listing",
-      "value": "Buds & Balance | 1109 W Rich St · Columbus, Ohio · 10–11:45 AM · 21+ | 2026-10-18",
-      "source_url": "https://www.eventbrite.com/e/buds-and-balance-tickets-1999696340585",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "recorded_on": "2026-10-10",
-      "reviewed_on": "2026-10-10",
-      "recheck_on": "2026-10-17",
-      "limitations": "Organizer-published ticket listing reviewed via search retrieval. Confirm changes and admission directly; listing does not verify licensing or consumption permissions."
-    },
-    {
       "id": "ev-2444640333f6",
       "subject_id": "event-oh-e084983eb1be",
       "claim": "event-listing",
@@ -64465,18 +64452,6 @@
       ]
     },
     {
-      "id": "event-oh-bb720f19b911",
-      "name": "Buds & Balance",
-      "state": "OH",
-      "starts_on": "2026-10-18",
-      "ends_on": "2026-10-18",
-      "organization_ids": [],
-      "next_step_url": "https://www.eventbrite.com/e/buds-and-balance-tickets-1999696340585",
-      "evidence_ids": [
-        "ev-c4d7f03fc457"
-      ]
-    },
-    {
       "id": "event-oh-e084983eb1be",
       "name": "“Gardening” Industry Night",
       "state": "OH",
@@ -64833,12 +64808,6 @@
       "date": "2026-11-07",
       "place": "Marriott Cincinnati North · West Chester, Ohio",
       "url": "https://medicateoh.com/events/"
-    },
-    {
-      "name": "Buds & Balance",
-      "date": "2026-10-18",
-      "place": "1109 W Rich St · Columbus, Ohio · 10–11:45 AM · 21+",
-      "url": "https://www.eventbrite.com/e/buds-and-balance-tickets-1999696340585"
     },
     {
       "name": "“Gardening” Industry Night",
