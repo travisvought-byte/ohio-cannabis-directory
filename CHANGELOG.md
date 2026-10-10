@@ -131,3 +131,8 @@ Defined the shared data contract and seven visitor pathways; added a JSON schema
 - Corrected four source records: city/county swaps for Painesville Township and Lewis Center, Nectar name/city swap and operator-confirmed ZIP, and Middletown spelling. Original government snapshot remains unchanged; license-keyed corrections record original values and supporting sources.
 - Normalized all three source dual-use labels; corrected 17 locations previously displayed as other.
 - Added canonical/import checks for Ohio counties, missing fields, malformed ZIPs and business names in city fields; changed source values require correction re-review. All 230 license identities remain preserved.
+
+## Upcoming event line — 2026-10-10
+
+- Replaced the compact event card with a full-width horizontal chronological event line, swipeable on small screens. Dates and links remain readable without moving text.
+- The rolling three-month window now refreshes every minute and when the tab becomes visible, automatically removing past events while the page stays open. Event additions remain source-reviewed publication updates.

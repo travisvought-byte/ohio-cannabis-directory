@@ -80,20 +80,21 @@ def main():
         event for event in UPCOMING_EVENTS
         if today <= datetime.date.fromisoformat(event["date"]) <= event_limit
     ]
-    home_events = ['<h2>Upcoming events · next 3 months</h2>']
+    home_events = ['<h2>Upcoming events · next 3 months</h2><ol class="event-line" aria-label="Upcoming events in date order">']
     if visible_events:
         for event in sorted(visible_events, key=lambda e: e["date"]):
             event_date = datetime.date.fromisoformat(event["date"])
             date_label = event_date.strftime("%a, %b %-d, %Y")
             home_events.append(
-                '<div class="home-event">'
+                '<li class="home-event">'
                 f'<h3>{html.escape(event["name"])}</h3>'
-                f'<p>{html.escape(date_label)} · {html.escape(event["place"])}</p>'
+                f'<p><time datetime="{event["date"]}">{html.escape(date_label)}</time> · {html.escape(event["place"])}</p>'
                 f'<p><a href="{html.escape(event["url"], quote=True)}" target="_blank" rel="noopener">Event details</a></p>'
-                '</div>'
+                '</li>'
             )
     else:
-        home_events.append('<p class="home-empty">No confirmed event dates in this window.</p>')
+        home_events.append('<li class="home-empty">No confirmed event dates in this window.</li>')
+    home_events.append('</ol>')
     home_event_markup = "\n".join(home_events)
 
     payload = script_json(records)
@@ -335,6 +336,10 @@ __VHG_CSS__
   .empty{padding:3rem 0; text-align:left; color:var(--ink-soft); font-family:var(--serif)}
   .empty p{margin:0 0 .5rem}
 
+  .event-line{display:flex;gap:1rem;overflow-x:auto;list-style:none;margin:.6rem 0 0;padding:.8rem 0;scroll-snap-type:x proximity}
+  .home-event{flex:0 0 min(22rem,85vw);border-top:3px solid var(--field-deep);padding:.7rem .7rem 0;scroll-snap-align:start}
+  .home-event time{font-weight:700}.home-event a{display:inline-block;padding:.4rem 0;min-height:44px}
+  @media print{.event-line{display:block;overflow:visible}.home-event{break-inside:avoid}}
   /* ---- footer ------------------------------------------------------- */
   footer{
     border-top:1px solid var(--rule); margin-top:2rem; padding:1.5rem 0 3rem;
@@ -357,7 +362,7 @@ __VHG_CSS__
     h1{font-size:2.2rem}
     #q{font-size:1.6rem}
     article{padding:1.25rem 0}
-    .home-highlights{grid-template-columns:1fr 1fr;gap:.75rem}
+    .home-highlights{grid-template-columns:1fr;gap:.75rem}
     .highlight-card{padding:.85rem 1rem}
   }
   @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
@@ -475,11 +480,13 @@ function renderHomeHighlights(){
     const [year, month, day] = event.date.split("-").map(Number);
     return new Intl.DateTimeFormat(undefined, {weekday:"short", month:"short", day:"numeric", year:"numeric"}).format(new Date(year, month - 1, day));
   };
-  panel.innerHTML = '<h2>Upcoming events · next 3 months</h2>' + upcoming.map(event =>
-    `<div><h3>${esc(event.name)}</h3><p>${esc(dateLabel(event))} · ${esc(event.place)}</p><p><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a></p></div>`
-  ).join('');
+  panel.innerHTML = '<h2>Upcoming events · next 3 months</h2><ol class="event-line" aria-label="Upcoming events in date order">' + upcoming.map(event =>
+    `<li class="home-event"><h3>${esc(event.name)}</h3><p><time datetime="${esc(event.date)}">${esc(dateLabel(event))}</time> · ${esc(event.place)}</p><p><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a></p></li>`
+  ).join('') + '</ol>';
 }
 renderHomeHighlights();
+setInterval(renderHomeHighlights, 60000);
+document.addEventListener('visibilitychange', () => {if (!document.hidden) renderHomeHighlights();});
 
 const splitField = value => String(value || '')
   .split('|').map(part => part.trim()).filter(Boolean);

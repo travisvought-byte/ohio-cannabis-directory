@@ -184,6 +184,10 @@
   .empty{padding:3rem 0; text-align:left; color:var(--ink-soft); font-family:var(--serif)}
   .empty p{margin:0 0 .5rem}
 
+  .event-line{display:flex;gap:1rem;overflow-x:auto;list-style:none;margin:.6rem 0 0;padding:.8rem 0;scroll-snap-type:x proximity}
+  .home-event{flex:0 0 min(22rem,85vw);border-top:3px solid var(--field-deep);padding:.7rem .7rem 0;scroll-snap-align:start}
+  .home-event time{font-weight:700}.home-event a{display:inline-block;padding:.4rem 0;min-height:44px}
+  @media print{.event-line{display:block;overflow:visible}.home-event{break-inside:avoid}}
   /* ---- footer ------------------------------------------------------- */
   footer{
     border-top:1px solid var(--rule); margin-top:2rem; padding:1.5rem 0 3rem;
@@ -206,7 +210,7 @@
     h1{font-size:2.2rem}
     #q{font-size:1.6rem}
     article{padding:1.25rem 0}
-    .home-highlights{grid-template-columns:1fr 1fr;gap:.75rem}
+    .home-highlights{grid-template-columns:1fr;gap:.75rem}
     .highlight-card{padding:.85rem 1rem}
   }
   @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
@@ -240,8 +244,9 @@
     </section>
 
     <section class="home-highlights" aria-label="Upcoming event and featured community">
-      <div class="highlight-card" id="upcoming-card" aria-live="polite"><h2>Upcoming events · next 3 months</h2>
-<div class="home-event"><h3>Women’s Cannabis &amp; Wellness Expo</h3><p>Sat, Nov 7, 2026 · Marriott Cincinnati North · West Chester, Ohio</p><p><a href="https://medicateoh.com/events/" target="_blank" rel="noopener">Event details</a></p></div></div>
+      <div class="highlight-card" id="upcoming-card" aria-live="polite"><h2>Upcoming events · next 3 months</h2><ol class="event-line" aria-label="Upcoming events in date order">
+<li class="home-event"><h3>Women’s Cannabis &amp; Wellness Expo</h3><p><time datetime="2026-11-07">Sat, Nov 7, 2026</time> · Marriott Cincinnati North · West Chester, Ohio</p><p><a href="https://medicateoh.com/events/" target="_blank" rel="noopener">Event details</a></p></li>
+</ol></div>
       <div class="highlight-card">
         <h2>Women’s cannabis group</h2>
         <h3><a href="https://midwestcannawomen.crd.co/" target="_blank" rel="noopener">Midwest CannaWomen</a></h3>
@@ -914,11 +919,13 @@ function renderHomeHighlights(){
     const [year, month, day] = event.date.split("-").map(Number);
     return new Intl.DateTimeFormat(undefined, {weekday:"short", month:"short", day:"numeric", year:"numeric"}).format(new Date(year, month - 1, day));
   };
-  panel.innerHTML = '<h2>Upcoming events · next 3 months</h2>' + upcoming.map(event =>
-    `<div><h3>${esc(event.name)}</h3><p>${esc(dateLabel(event))} · ${esc(event.place)}</p><p><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a></p></div>`
-  ).join('');
+  panel.innerHTML = '<h2>Upcoming events · next 3 months</h2><ol class="event-line" aria-label="Upcoming events in date order">' + upcoming.map(event =>
+    `<li class="home-event"><h3>${esc(event.name)}</h3><p><time datetime="${esc(event.date)}">${esc(dateLabel(event))}</time> · ${esc(event.place)}</p><p><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a></p></li>`
+  ).join('') + '</ol>';
 }
 renderHomeHighlights();
+setInterval(renderHomeHighlights, 60000);
+document.addEventListener('visibilitychange', () => {if (!document.hidden) renderHomeHighlights();});
 
 const splitField = value => String(value || '')
   .split('|').map(part => part.trim()).filter(Boolean);
