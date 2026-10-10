@@ -103,3 +103,7 @@ Versions track the master workbook\. Each release states what changed and what e
 - Added statewide record-sealing guidance, Franklin County-only Opportunity Port, and the current marijuana-specific expungement statute.
 - Added medical registration steps, current home-grow summary and official law links.
 - Retained organization counts; no historical dispensary feed imported as a current complete list.
+
+## Seed supplier expansion — 2026-10-09
+
+Expanded from two seed catalogs to ten seed providers plus one Ohio grow-supply / retailer lead. Added dedicated search, location/type filters, shareable searches, downloadable source data and provider-specific shipping/pickup evidence. Ohio walk-in seed stock remains unconfirmed.

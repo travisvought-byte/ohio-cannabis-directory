@@ -11,6 +11,7 @@ RESOURCES = [
   ('Ohio Division of Cannabis Control',DCC,'Ohio’s official starting point for licensed dispensary locations. Choose “Dispensary Map” or “Dispensaries” on the state page. Check the license type, hours and current menu before traveling.'),
   ('Medical patient dispensary lookup',DCC+'/patients-caregivers/find-dispensary','State guidance and location lookup for patients and caregivers. Confirm that the location serves medical patients.')]),
  ('seeds','Find seeds and growing supplies',[
+  ('Search the expanded seed supplier directory','seeds.html','Compare 11 supplier entries by Ohio connection, Michigan location, reviewed seed types and published shipping evidence. Includes 10 seed providers and one Ohio grow-supply / retailer lead.'),
   ('Dutch Wilson Genetics','https://dutchwilsonseeds.com/','Ohio-based seed company with regular and feminized seed catalogs. Published contact: (740) 272-2349; dutchwilsonseeds@yahoo.com. Catalog reviewed; current stock and delivery eligibility must be confirmed with the seller.'),
   ('Humboldt Seed Company U.S. catalog','https://californiahempseeds.com/shop/','Seed catalog identifying Humboldt Seed Company, including feminized options. National supplier; an Ohio storefront or Ohio delivery guarantee has not been verified.'),
   ('Find cultivation suppliers in the directory','index.html?q=cultivation','Search existing organizations for cultivation services and equipment. Use your city or county as an additional search term; service areas are descriptive, not measured distances.')]),
