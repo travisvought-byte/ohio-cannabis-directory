@@ -95,3 +95,11 @@ Versions track the master workbook\. Each release states what changed and what e
 ## v1\.0
 
 - First public release, 422 organizations, CC BY 4\.0\.
+
+## Consumer resource update — 2026-10-09
+
+- Added six homepage routes and a source-reviewed consumer resource page.
+- Added Ohio and national seed catalogs with availability/delivery qualifications.
+- Added statewide record-sealing guidance, Franklin County-only Opportunity Port, and the current marijuana-specific expungement statute.
+- Added medical registration steps, current home-grow summary and official law links.
+- Retained organization counts; no historical dispensary feed imported as a current complete list.

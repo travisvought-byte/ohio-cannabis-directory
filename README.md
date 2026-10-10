@@ -100,3 +100,7 @@ Directory data is released under [CC BY 4.0](https://creativecommons.org/license
 The site code and build scripts are released under the MIT License.
 
 **Attribution:** Ohio Cannabis Ecosystem Directory, compiled by Travis Vought.
+
+## Consumer resources
+
+The homepage now offers six need-based routes through [consumer resources](https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html): dispensaries, seeds and growing supplies, record clearing, medical patients, Ohio rules, and community connections. Sources reviewed October 9, 2026. Opportunity Port is labeled Franklin County only; seed catalogs do not imply verified Ohio delivery. These referral resources are separate from organization counts. Regenerate with `python build_resources.py`. Nearby distance search and a current statewide location import remain future work.

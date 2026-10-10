@@ -173,11 +173,11 @@ TEMPLATE = r"""<!DOCTYPE html>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Ohio Cannabis Ecosystem Directory">
 <meta property="og:title" content="Ohio Cannabis Ecosystem Directory">
-<meta property="og:description" content="Who serves what in Ohio cannabis. __N_PUB__ organizations, each traced to a named source. Free and open under CC BY 4.0.">
+<meta property="og:description" content="Find resources for yourself or your business in Ohio cannabis. __N_PUB__ organizations, each traced to a named source. Free and open under CC BY 4.0.">
 <meta property="og:url" content="https://travisvought-byte.github.io/ohio-cannabis-directory/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ohio Cannabis Ecosystem Directory">
-<meta name="twitter:description" content="Who serves what in Ohio cannabis. __N_PUB__ organizations, each traced to a named source. Free and open under CC BY 4.0.">
+<meta name="twitter:description" content="Find resources for yourself or your business in Ohio cannabis. __N_PUB__ organizations, each traced to a named source. Free and open under CC BY 4.0.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -381,7 +381,20 @@ __VHG_CSS__
   <div class="wrap masthead">
     __VHG_BRAND__
     <h1>Ohio Cannabis Ecosystem Directory</h1>
-    <p class="standfirst">Who serves what in Ohio cannabis. __N_PUB__ organizations, each traced to a named source.</p>
+    <p class="standfirst">Find resources for yourself or your business in Ohio cannabis. __N_PUB__ organizations, each traced to a named source.</p>
+
+    <section class="highlight-card" aria-label="Consumer resource starting points">
+      <h2>What do you need?</h2>
+      <p>Start with a practical resource, or search the organizations below.</p>
+      <nav class="actions" aria-label="Consumer resources">
+        <a class="btn" href="resources.html#dispensaries">Find a dispensary</a>
+        <a class="btn" href="resources.html#seeds">Seeds and growing supplies</a>
+        <a class="btn" href="resources.html#records">Clear a record</a>
+        <a class="btn" href="resources.html#medical">Medical patients</a>
+        <a class="btn" href="resources.html#rules">Ohio rules</a>
+        <a class="btn" href="resources.html#community">Community connections</a>
+      </nav>
+    </section>
 
     <section class="home-highlights" aria-label="Upcoming event and featured community">
       <div class="highlight-card" id="upcoming-card" aria-live="polite">__HOME_EVENT_MARKUP__</div>
@@ -394,7 +407,7 @@ __VHG_CSS__
 
     <div class="searchbox">
       <input id="q" type="search" autocomplete="off" spellcheck="false"
-             placeholder="Search packaging, mold, payments, staffing&hellip;"
+             placeholder="Search a need, organization, city or county&hellip;"
              aria-label="Search the directory">
       <button id="clear" type="button" aria-label="Clear search">&times;</button>
     </div>
