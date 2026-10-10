@@ -2,7 +2,7 @@
   "name": "ohio-cannabis-directory",
   "private": true,
   "scripts": {
-    "test": "node tests/directory.cjs",
+    "test": "node tests/directory.cjs && node tests/locations.cjs",
     "test:browser": "node tests/browser.cjs"
   },
   "devDependencies": {

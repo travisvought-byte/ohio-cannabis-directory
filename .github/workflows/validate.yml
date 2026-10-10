@@ -22,6 +22,7 @@ jobs:
           python tests/foundation.py
           python validate_foundation.py data/directory.json
           python tests/migration.py
+          python tests/locations.py
       - uses: actions/setup-node@v4
         with:
           node-version: '24'

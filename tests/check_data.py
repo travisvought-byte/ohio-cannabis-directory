@@ -28,7 +28,7 @@ with (ROOT / 'b2b-relationships.csv').open(encoding='utf-8-sig') as f:
 assert len(relationships) == 60
 assert len({relationship_id(r) for r in relationships}) == 60
 with tempfile.TemporaryDirectory() as temp:
-    for module_name, filename in [('build_directory','index.html'),('build_intake','intake.html'),('build_relationships','relationships.html'),('build_resources','resources.html'),('build_seeds','seeds.html'),('build_state','state.html')]:
+    for module_name, filename in [('build_directory','index.html'),('build_intake','intake.html'),('build_relationships','relationships.html'),('build_resources','resources.html'),('build_seeds','seeds.html'),('build_state','state.html'),('build_locations','locations.html')]:
         module = importlib.import_module(module_name)
         module.OUT = Path(temp) / filename
         module.main()

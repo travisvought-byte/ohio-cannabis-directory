@@ -114,3 +114,9 @@ The [shared directory contract](architecture/STATE_DIRECTORY_CONTRACT.md) define
 ## Shared state view (stage two)
 
 [Explore by state and need](https://travisvought-byte.github.io/ohio-cannabis-directory/state.html?state=OH). One shared template serves reviewed state packs. Ohio is currently the only public state. `data/directory.json` is authoritative; the CSVs and seed JSON are generated compatibility downloads. All 564 original organization records and 60 relationship IDs are preserved. See [migration and maintenance instructions](architecture/STAGE_TWO_MIGRATION.md).
+
+### Location search
+
+[Find dispensary locations](https://travisvought-byte.github.io/ohio-cannabis-directory/locations.html?state=OH) supports city, county, address/ZIP search, shareable filters, directions and optional straight-line distance sorting. The 230 records are a government map snapshot retrieved 2026-10-10, not a claim of complete or currently operational coverage. Source update date is unknown; license status remains unknown. Three invalid source coordinate pairs are omitted from distance sorting.
+
+`data/sources/ohio-dispensaries.json` preserves the original response. Run `python import_locations.py`, `python validate_foundation.py data/directory.json`, then `python build_locations.py` after reviewing a replacement snapshot. Stable location IDs derive from state and license number; legal entities match only by exact unique name. No store hours or inventory claims are imported.

@@ -119,3 +119,9 @@ Defined the shared data contract and seven visitor pathways; added a JSON schema
 - Added reusable state/need presentation, seven pathways, public-state gates, permanent service links and independent seed sex/flowering filters.
 - Added claim-specific shipping/storefront evidence, historical-source labels, active filters and expired-event handling.
 - Added compatibility export generation, migration checks and shared-state browser/mobile regressions. No complete physical location import or additional state launch is claimed.
+
+## Location search — 2026-10-10
+
+- Added 230 source-listed Ohio dispensary locations, reusable state-aware city/county search, directions and optional approximate distance sorting.
+- Preserved government source snapshot, unknown freshness and unknown current license status; rejected three invalid coordinate pairs.
+- Added idempotent importer and snapshot, UI and mobile-browser checks. Original 564 organization records and 60 relationships remain preserved.
