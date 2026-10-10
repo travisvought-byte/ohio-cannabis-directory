@@ -1,0 +1,58 @@
+[
+  {
+    "license": "CCD000174-00",
+    "original": {
+      "user_city": "Lake",
+      "user_count": "Painesville Township"
+    },
+    "corrected": {
+      "user_city": "Painesville Township",
+      "user_count": "Lake"
+    },
+    "reason": "City/county transposition; operator confirms locality.",
+    "source_url": "https://amplifydispensary.com/location/painesville-township/",
+    "reviewed_on": "2026-10-10"
+  },
+  {
+    "license": "CCD000271-00",
+    "original": {
+      "user_city": "Delaware",
+      "user_count": "Lewis Center"
+    },
+    "corrected": {
+      "user_city": "Lewis Center",
+      "user_count": "Delaware"
+    },
+    "reason": "City/county transposition in government snapshot.",
+    "source_url": "https://maps.ohio.gov/arcgis/rest/services/Hosted/Geocoded_Dispensaries_/FeatureServer/0",
+    "reviewed_on": "2026-10-10"
+  },
+  {
+    "license": "CCD000176-00",
+    "original": {
+      "user_dispe": "Cincinnati",
+      "user_city": "Nectar Medical Cannabis Dispensary",
+      "user_zip": 45202
+    },
+    "corrected": {
+      "user_dispe": "Nectar Medical Cannabis Dispensary",
+      "user_city": "Cincinnati",
+      "user_zip": 45219
+    },
+    "reason": "Name/city transposition; operator confirms Cincinnati and ZIP 45219.",
+    "source_url": "https://nectarohio.com/shops/",
+    "reviewed_on": "2026-10-10"
+  },
+  {
+    "license": "CCD000241-00",
+    "original": {
+      "user_city": "Middleton"
+    },
+    "corrected": {
+      "user_city": "Middletown"
+    },
+    "reason": "City spelling corrected against operator location page.",
+    "source_url": "https://terrasanacannabisco.com/locations/middletown-cannabis-near-me-terrasana-ohio-dispensary/",
+    "reviewed_on": "2026-10-10"
+  }
+]

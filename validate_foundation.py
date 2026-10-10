@@ -31,6 +31,9 @@ def validate(data):
    if key in groups['evidence'] and groups['evidence'][key]['subject_id']!=item['id']:errors.append(f'{item["id"]}: evidence {key} belongs to another subject')
   return refs
  for item in data['locations']:
+  from location_validation import validate_location_fields
+  try:validate_location_fields(item)
+  except ValueError as exc:errors.append(f'{item["id"]}: {exc}')
   require(item['organization_id'],'organizations',item['id'])
   if item['state'] not in STATE_CODES:errors.append(f'{item["id"]}: invalid state')
   if ('latitude' in item)!=('longitude' in item):errors.append(f'{item["id"]}: coordinates require both latitude and longitude')

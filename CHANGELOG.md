@@ -125,3 +125,9 @@ Defined the shared data contract and seven visitor pathways; added a JSON schema
 - Added 230 source-listed Ohio dispensary locations, reusable state-aware city/county search, directions and optional approximate distance sorting.
 - Preserved government source snapshot, unknown freshness and unknown current license status; rejected three invalid coordinate pairs.
 - Added idempotent importer and snapshot, UI and mobile-browser checks. Original 564 organization records and 60 relationships remain preserved.
+
+## Location field cleanup — 2026-10-10
+
+- Corrected four source records: city/county swaps for Painesville Township and Lewis Center, Nectar name/city swap and operator-confirmed ZIP, and Middletown spelling. Original government snapshot remains unchanged; license-keyed corrections record original values and supporting sources.
+- Normalized all three source dual-use labels; corrected 17 locations previously displayed as other.
+- Added canonical/import checks for Ohio counties, missing fields, malformed ZIPs and business names in city fields; changed source values require correction re-review. All 230 license identities remain preserved.

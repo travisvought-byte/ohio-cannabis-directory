@@ -21733,7 +21733,7 @@
     {
       "id": "loc-a44c557aadb0",
       "organization_id": "org-69908d4927f6",
-      "name": "AYR  Dispensary - Woodmere",
+      "name": "AYR Dispensary - Woodmere",
       "state": "OH",
       "county": "Cuyahoga",
       "city": "Woodmere",
@@ -23686,8 +23686,8 @@
       "organization_id": "org-6399c0689ab3",
       "name": "Buckeye Relief",
       "state": "OH",
-      "county": "Painesville Township",
-      "city": "Lake",
+      "county": "Lake",
+      "city": "Painesville Township",
       "address": "2150 Mentor Ave.",
       "postal_code": "44077",
       "latitude": 41.65835687,
@@ -24147,7 +24147,7 @@
       "name": "Terrasana",
       "state": "OH",
       "county": "Warren",
-      "city": "Middleton",
+      "city": "Middletown",
       "address": "3616 S Dixie Hwy",
       "postal_code": "45005",
       "latitude": 39.5,
@@ -24379,7 +24379,7 @@
       "state": "OH",
       "county": "Delaware",
       "city": "Delaware",
-      "address": "60 Coughlin Lane Delaware",
+      "address": "60 Coughlin Lane Delaware",
       "postal_code": "43015",
       "latitude": 40.26285796,
       "longitude": -83.06707185,
@@ -24568,7 +24568,7 @@
       "state": "OH",
       "county": "Hamilton",
       "city": "Cincinnati",
-      "address": "3528 Columbia Parkway  Cincinnati",
+      "address": "3528 Columbia Parkway Cincinnati",
       "postal_code": "45266",
       "latitude": 39.11713649,
       "longitude": -84.43785008,
@@ -24963,7 +24963,7 @@
     {
       "id": "loc-53420e787c20",
       "organization_id": "org-1f47e7dbc792",
-      "name": "AYR  Wellness",
+      "name": "AYR Wellness",
       "state": "OH",
       "county": "Clermont",
       "city": "Goshen",
@@ -25616,8 +25616,8 @@
       "organization_id": "org-c292a0852a87",
       "name": "Healing Through Cannabis LLC",
       "state": "OH",
-      "county": "Lewis Center",
-      "city": "Delaware",
+      "county": "Delaware",
+      "city": "Lewis Center",
       "address": "8020 Orange Center Dr.",
       "postal_code": "43035",
       "latitude": 40.17492086,
@@ -25635,18 +25635,18 @@
     {
       "id": "loc-533162e73403",
       "organization_id": "org-72c9550b69d1",
-      "name": "Cincinnati",
+      "name": "Nectar Medical Cannabis Dispensary",
       "state": "OH",
       "county": "Hamilton",
-      "city": "Nectar Medical Cannabis Dispensary",
+      "city": "Cincinnati",
       "address": "2633 Short Vine",
-      "postal_code": "45202",
+      "postal_code": "45219",
       "latitude": 39.13043393,
       "longitude": -84.50967714,
       "license": {
         "number": "CCD000176-00",
         "regulator": "Ohio Division of Cannabis Control",
-        "kind": "other",
+        "kind": "dual-use",
         "status": "unknown"
       },
       "evidence_ids": [
@@ -25667,7 +25667,7 @@
       "license": {
         "number": "CCD000256-00",
         "regulator": "Ohio Division of Cannabis Control",
-        "kind": "other",
+        "kind": "dual-use",
         "status": "unknown"
       },
       "evidence_ids": [
@@ -25688,7 +25688,7 @@
       "license": {
         "number": "CCD000302-00",
         "regulator": "Ohio Division of Cannabis Control",
-        "kind": "other",
+        "kind": "dual-use",
         "status": "unknown"
       },
       "evidence_ids": [
@@ -25709,7 +25709,7 @@
       "license": {
         "number": "CCD000243-00",
         "regulator": "Ohio Division of Cannabis Control",
-        "kind": "other",
+        "kind": "dual-use",
         "status": "unknown"
       },
       "evidence_ids": [
@@ -25730,7 +25730,7 @@
       "license": {
         "number": "CCD000278-00",
         "regulator": "Ohio Division of Cannabis Control",
-        "kind": "other",
+        "kind": "dual-use",
         "status": "unknown"
       },
       "evidence_ids": [
@@ -25751,7 +25751,7 @@
       "license": {
         "number": "CCD000267-00",
         "regulator": "Ohio Division of Cannabis Control",
-        "kind": "other",
+        "kind": "dual-use",
         "status": "unknown"
       },
       "evidence_ids": [
@@ -25772,7 +25772,7 @@
       "license": {
         "number": "CCD000178-00",
         "regulator": "Ohio Division of Cannabis Control",
-        "kind": "other",
+        "kind": "dual-use",
         "status": "unknown"
       },
       "evidence_ids": [
@@ -25793,7 +25793,7 @@
       "license": {
         "number": "CCD000272-00",
         "regulator": "Ohio Division of Cannabis Control",
-        "kind": "other",
+        "kind": "dual-use",
         "status": "unknown"
       },
       "evidence_ids": [
@@ -25814,7 +25814,7 @@
       "license": {
         "number": "CCD000245-00",
         "regulator": "Ohio Division of Cannabis Control",
-        "kind": "other",
+        "kind": "dual-use",
         "status": "unknown"
       },
       "evidence_ids": [
@@ -25835,7 +25835,7 @@
       "license": {
         "number": "CCD000214-00",
         "regulator": "Ohio Division of Cannabis Control",
-        "kind": "other",
+        "kind": "dual-use",
         "status": "unknown"
       },
       "evidence_ids": [
@@ -25856,7 +25856,7 @@
       "license": {
         "number": "CCD000307-00",
         "regulator": "Ohio Division of Cannabis Control",
-        "kind": "other",
+        "kind": "dual-use",
         "status": "unknown"
       },
       "evidence_ids": [
@@ -25877,7 +25877,7 @@
       "license": {
         "number": "CCD000298-00",
         "regulator": "Ohio Division of Cannabis Control",
-        "kind": "other",
+        "kind": "dual-use",
         "status": "unknown"
       },
       "evidence_ids": [
@@ -25898,7 +25898,7 @@
       "license": {
         "number": "CCD000275-00",
         "regulator": "Ohio Division of Cannabis Control",
-        "kind": "other",
+        "kind": "dual-use",
         "status": "unknown"
       },
       "evidence_ids": [
@@ -25919,7 +25919,7 @@
       "license": {
         "number": "CCD000201-00",
         "regulator": "Ohio Division of Cannabis Control",
-        "kind": "other",
+        "kind": "dual-use",
         "status": "unknown"
       },
       "evidence_ids": [
@@ -25940,7 +25940,7 @@
       "license": {
         "number": "CCD000205-00",
         "regulator": "Ohio Division of Cannabis Control",
-        "kind": "other",
+        "kind": "dual-use",
         "status": "unknown"
       },
       "evidence_ids": [
@@ -25961,7 +25961,7 @@
       "license": {
         "number": "CCD000306-00",
         "regulator": "Ohio Division of Cannabis Control",
-        "kind": "other",
+        "kind": "dual-use",
         "status": "unknown"
       },
       "evidence_ids": [
@@ -25982,7 +25982,7 @@
       "license": {
         "number": "CCD000222-00",
         "regulator": "Ohio Division of Cannabis Control",
-        "kind": "other",
+        "kind": "dual-use",
         "status": "unknown"
       },
       "evidence_ids": [
@@ -60620,7 +60620,7 @@
       "id": "ev-e4ca90d3718e",
       "subject_id": "loc-a44c557aadb0",
       "claim": "government-location-snapshot",
-      "value": "AYR  Dispensary - Woodmere; 27900 Chagrin Blvd.; source license label Active",
+      "value": "AYR Dispensary - Woodmere; 27900 Chagrin Blvd.; source license label Active",
       "source_url": "https://maps.ohio.gov/arcgis/rest/services/Hosted/Geocoded_Dispensaries_/FeatureServer/0",
       "source_kind": "government",
       "status": "source-listed",
@@ -61742,7 +61742,7 @@
       "status": "source-listed",
       "recorded_on": "2026-10-10",
       "recheck_on": "2026-11-09",
-      "limitations": "Source update date and completeness are unknown. Source Active labels do not establish current license status. Hours and inventory are not imported."
+      "limitations": "Source update date and completeness are unknown. Source Active labels do not establish current license status. Hours and inventory are not imported. Field correction reviewed 2026-10-10: City/county transposition; operator confirms locality. Supporting source: https://amplifydispensary.com/location/painesville-township/"
     },
     {
       "id": "ev-520e3e60b304",
@@ -62006,7 +62006,7 @@
       "status": "source-listed",
       "recorded_on": "2026-10-10",
       "recheck_on": "2026-11-09",
-      "limitations": "Source update date and completeness are unknown. Source Active labels do not establish current license status. Hours and inventory are not imported."
+      "limitations": "Source update date and completeness are unknown. Source Active labels do not establish current license status. Hours and inventory are not imported. Field correction reviewed 2026-10-10: City spelling corrected against operator location page. Supporting source: https://terrasanacannabisco.com/locations/middletown-cannabis-near-me-terrasana-ohio-dispensary/"
     },
     {
       "id": "ev-5ea17f65eeb7",
@@ -62132,7 +62132,7 @@
       "id": "ev-36da4d439b63",
       "subject_id": "loc-6c48b2e4ea26",
       "claim": "government-location-snapshot",
-      "value": "Nar Cannabis; 60 Coughlin Lane Delaware; source license label Active",
+      "value": "Nar Cannabis; 60 Coughlin Lane Delaware; source license label Active",
       "source_url": "https://maps.ohio.gov/arcgis/rest/services/Hosted/Geocoded_Dispensaries_/FeatureServer/0",
       "source_kind": "government",
       "status": "source-listed",
@@ -62240,7 +62240,7 @@
       "id": "ev-7b28a5f54bc0",
       "subject_id": "loc-78e50ee45a80",
       "claim": "government-location-snapshot",
-      "value": "Trulieve Cannabis Dispensary (Cincinnati); 3528 Columbia Parkway  Cincinnati; source license label Active",
+      "value": "Trulieve Cannabis Dispensary (Cincinnati); 3528 Columbia Parkway Cincinnati; source license label Active",
       "source_url": "https://maps.ohio.gov/arcgis/rest/services/Hosted/Geocoded_Dispensaries_/FeatureServer/0",
       "source_kind": "government",
       "status": "source-listed",
@@ -62468,7 +62468,7 @@
       "id": "ev-90420d88fdc3",
       "subject_id": "loc-53420e787c20",
       "claim": "government-location-snapshot",
-      "value": "AYR  Wellness; 6722 OH-132; source license label Active",
+      "value": "AYR Wellness; 6722 OH-132; source license label Active",
       "source_url": "https://maps.ohio.gov/arcgis/rest/services/Hosted/Geocoded_Dispensaries_/FeatureServer/0",
       "source_kind": "government",
       "status": "source-listed",
@@ -62846,19 +62846,19 @@
       "status": "source-listed",
       "recorded_on": "2026-10-10",
       "recheck_on": "2026-11-09",
-      "limitations": "Source update date and completeness are unknown. Source Active labels do not establish current license status. Hours and inventory are not imported."
+      "limitations": "Source update date and completeness are unknown. Source Active labels do not establish current license status. Hours and inventory are not imported. Field correction reviewed 2026-10-10: City/county transposition in government snapshot. Supporting source: https://maps.ohio.gov/arcgis/rest/services/Hosted/Geocoded_Dispensaries_/FeatureServer/0"
     },
     {
       "id": "ev-bab43bd8ee01",
       "subject_id": "loc-533162e73403",
       "claim": "government-location-snapshot",
-      "value": "Cincinnati; 2633 Short Vine; source license label Active",
+      "value": "Nectar Medical Cannabis Dispensary; 2633 Short Vine; source license label Active",
       "source_url": "https://maps.ohio.gov/arcgis/rest/services/Hosted/Geocoded_Dispensaries_/FeatureServer/0",
       "source_kind": "government",
       "status": "source-listed",
       "recorded_on": "2026-10-10",
       "recheck_on": "2026-11-09",
-      "limitations": "Source update date and completeness are unknown. Source Active labels do not establish current license status. Hours and inventory are not imported."
+      "limitations": "Source update date and completeness are unknown. Source Active labels do not establish current license status. Hours and inventory are not imported. Field correction reviewed 2026-10-10: Name/city transposition; operator confirms Cincinnati and ZIP 45219. Supporting source: https://nectarohio.com/shops/"
     },
     {
       "id": "ev-3c8b43c21eb4",
