@@ -37,8 +37,10 @@ def import_snapshot(data,snapshot):
   evidence={'id':eid,'subject_id':lid,'claim':'government-location-snapshot','value':r['user_dispe']+'; '+r['user_stree']+'; source license label '+r['user_lic_1'],'source_url':snapshot['source_url'],'source_kind':'government','status':'source-listed','recorded_on':snapshot['retrieved_on'],'recheck_on':'2026-11-09','limitations':snapshot['limitations']}
   correction=next((c for c in json.loads((ROOT/'data/sources/location-corrections.json').read_text()) if c['license']==r['user_licen']),None)
   if correction:evidence['limitations']+=' Field correction reviewed '+correction['reviewed_on']+': '+correction['reason']+' Supporting source: '+correction['source_url']
-  data['locations']=[x for x in data['locations'] if x['id']!=lid]+[location]
-  data['evidence']=[x for x in data['evidence'] if x['id']!=eid]+[evidence]
+  for key,item in [('locations',location),('evidence',evidence)]:
+   existing=next((i for i,x in enumerate(data[key]) if x['id']==item['id']),None)
+   if existing is None:data[key].append(item)
+   else:data[key][existing]=item
  return len(rows)
 def main():
  data=json.loads((ROOT/'data/directory.json').read_text());count=import_snapshot(data,json.loads(SOURCE.read_text()))
