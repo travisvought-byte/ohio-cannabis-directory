@@ -1,0 +1,812 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://travisvought-byte.github.io/ohio-cannabis-directory/schemas/directory.schema.json",
+  "title": "Replicable cannabis directory foundation",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "scope": {
+      "const": "foundation-pilot"
+    },
+    "as_of": {
+      "type": "string",
+      "format": "date"
+    },
+    "organizations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/organization"
+      },
+      "uniqueItems": true
+    },
+    "locations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/location"
+      },
+      "uniqueItems": true
+    },
+    "services": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/service"
+      },
+      "uniqueItems": true
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidence"
+      },
+      "uniqueItems": true
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/rule"
+      },
+      "uniqueItems": true
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/relationship"
+      },
+      "uniqueItems": true
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/event"
+      },
+      "uniqueItems": true
+    },
+    "pathways": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/pathway"
+      },
+      "uniqueItems": true
+    },
+    "states": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/state"
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "scope",
+    "as_of",
+    "organizations",
+    "locations",
+    "services",
+    "evidence",
+    "rules",
+    "relationships",
+    "events",
+    "pathways",
+    "states"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "organization": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^org-[a-z0-9][a-z0-9-]*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "website": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "kind": {
+          "enum": [
+            "breeder",
+            "seed-bank",
+            "retailer",
+            "operator",
+            "nonprofit",
+            "government",
+            "service-provider",
+            "community",
+            "other"
+          ]
+        },
+        "legacy_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "contacts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "enum": [
+                  "phone",
+                  "email",
+                  "contact-page"
+                ]
+              },
+              "value": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "kind",
+              "value"
+            ],
+            "additionalProperties": false
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "kind",
+        "legacy_ids",
+        "contacts"
+      ],
+      "additionalProperties": false
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^loc-[a-z0-9][a-z0-9-]*$"
+        },
+        "organization_id": {
+          "type": "string",
+          "pattern": "^org-[a-z0-9][a-z0-9-]*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "state": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "county": {
+          "type": "string",
+          "minLength": 1
+        },
+        "city": {
+          "type": "string",
+          "minLength": 1
+        },
+        "address": {
+          "type": "string",
+          "minLength": 1
+        },
+        "postal_code": {
+          "type": "string",
+          "minLength": 1
+        },
+        "latitude": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "license": {
+          "type": "object",
+          "properties": {
+            "number": {
+              "type": "string",
+              "minLength": 1
+            },
+            "regulator": {
+              "type": "string",
+              "minLength": 1
+            },
+            "kind": {
+              "enum": [
+                "medical",
+                "adult-use",
+                "dual-use",
+                "other"
+              ]
+            },
+            "status": {
+              "enum": [
+                "active",
+                "provisional",
+                "closed",
+                "unknown"
+              ]
+            }
+          },
+          "required": [
+            "number",
+            "regulator",
+            "kind",
+            "status"
+          ],
+          "additionalProperties": false
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^ev-[a-z0-9][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "organization_id",
+        "name",
+        "state",
+        "city",
+        "address",
+        "evidence_ids"
+      ],
+      "additionalProperties": false
+    },
+    "service": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^svc-[a-z0-9][a-z0-9-]*$"
+        },
+        "organization_id": {
+          "type": "string",
+          "pattern": "^org-[a-z0-9][a-z0-9-]*$"
+        },
+        "location_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^loc-[a-z0-9][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "pathway_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "coverage": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "enum": [
+                  "state",
+                  "county",
+                  "national",
+                  "online"
+                ]
+              },
+              "state": {
+                "type": "string",
+                "pattern": "^[A-Z]{2}$"
+              },
+              "county": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^ev-[a-z0-9][a-z0-9-]*$"
+                },
+                "uniqueItems": true,
+                "minItems": 1
+              }
+            },
+            "required": [
+              "kind",
+              "evidence_ids"
+            ],
+            "additionalProperties": false
+          },
+          "uniqueItems": true
+        },
+        "audiences": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "eligibility": {
+          "type": "string",
+          "minLength": 1
+        },
+        "next_step": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1
+            },
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https?://"
+            }
+          },
+          "required": [
+            "label",
+            "url"
+          ],
+          "additionalProperties": false
+        },
+        "availability": {
+          "enum": [
+            "catalog-listed",
+            "confirmed",
+            "paused",
+            "closed",
+            "unknown"
+          ]
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "seed_types": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "regular",
+                  "feminized",
+                  "autoflower",
+                  "photoperiod",
+                  "triploid"
+                ]
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        "fulfillment": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "enum": [
+                  "shipping",
+                  "pickup",
+                  "in-person",
+                  "online"
+                ]
+              },
+              "status": {
+                "enum": [
+                  "confirmed",
+                  "seller-stated",
+                  "manufacturer-listed",
+                  "unverified",
+                  "unavailable"
+                ]
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^ev-[a-z0-9][a-z0-9-]*$"
+                },
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "kind",
+              "status",
+              "description",
+              "evidence_ids"
+            ],
+            "additionalProperties": false
+          },
+          "uniqueItems": true
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^ev-[a-z0-9][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "organization_id",
+        "location_ids",
+        "pathway_ids",
+        "name",
+        "coverage",
+        "audiences",
+        "eligibility",
+        "next_step",
+        "availability",
+        "attributes",
+        "fulfillment",
+        "evidence_ids"
+      ],
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^ev-[a-z0-9][a-z0-9-]*$"
+        },
+        "subject_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "claim": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "source_kind": {
+          "enum": [
+            "government",
+            "provider",
+            "manufacturer",
+            "firsthand",
+            "secondary"
+          ]
+        },
+        "status": {
+          "enum": [
+            "source-reviewed",
+            "firsthand-confirmed",
+            "source-listed",
+            "unverified",
+            "disputed"
+          ]
+        },
+        "reviewed_on": {
+          "type": "string",
+          "format": "date"
+        },
+        "effective_on": {
+          "type": "string",
+          "format": "date"
+        },
+        "recheck_on": {
+          "type": "string",
+          "format": "date"
+        },
+        "limitations": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "subject_id",
+        "claim",
+        "value",
+        "source_url",
+        "source_kind",
+        "status",
+        "reviewed_on",
+        "recheck_on",
+        "limitations"
+      ],
+      "additionalProperties": false
+    },
+    "rule": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^rule-[a-z0-9][a-z0-9-]*$"
+        },
+        "state": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "topic": {
+          "type": "string",
+          "minLength": 1
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "effective_on": {
+          "type": "string",
+          "format": "date"
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^ev-[a-z0-9][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "next_step_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        }
+      },
+      "required": [
+        "id",
+        "state",
+        "topic",
+        "summary",
+        "effective_on",
+        "evidence_ids",
+        "next_step_url"
+      ],
+      "additionalProperties": false
+    },
+    "relationship": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^rel-[a-z0-9][a-z0-9-]*$"
+        },
+        "organization_a_id": {
+          "type": "string",
+          "pattern": "^org-[a-z0-9][a-z0-9-]*$"
+        },
+        "organization_b_id": {
+          "type": "string",
+          "pattern": "^org-[a-z0-9][a-z0-9-]*$"
+        },
+        "kind": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^ev-[a-z0-9][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "organization_a_id",
+        "organization_b_id",
+        "kind",
+        "evidence_ids"
+      ],
+      "additionalProperties": false
+    },
+    "event": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^event-[a-z0-9][a-z0-9-]*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "state": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "starts_on": {
+          "type": "string",
+          "format": "date"
+        },
+        "ends_on": {
+          "type": "string",
+          "format": "date"
+        },
+        "organization_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^org-[a-z0-9][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        },
+        "next_step_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^ev-[a-z0-9][a-z0-9-]*$"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "state",
+        "starts_on",
+        "ends_on",
+        "organization_ids",
+        "next_step_url",
+        "evidence_ids"
+      ],
+      "additionalProperties": false
+    },
+    "pathway": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z-]*$"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "task": {
+          "type": "string",
+          "minLength": 1
+        },
+        "audiences": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "suggested_facets": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "success": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "task",
+        "audiences",
+        "suggested_facets",
+        "success"
+      ],
+      "additionalProperties": false
+    },
+    "state": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "publication_status": {
+          "enum": [
+            "live",
+            "pilot",
+            "research-only",
+            "not-started"
+          ]
+        },
+        "official_regulator_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        },
+        "pathways": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "pathway_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "coverage_status": {
+                "enum": [
+                  "starter",
+                  "partial",
+                  "broad",
+                  "not-reviewed"
+                ]
+              },
+              "next_step": {
+                "type": "string",
+                "minLength": 1
+              },
+              "public_url": {
+                "type": "string",
+                "format": "uri",
+                "pattern": "^https?://"
+              },
+              "limitations": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "pathway_id",
+              "coverage_status",
+              "next_step",
+              "limitations"
+            ],
+            "additionalProperties": false
+          },
+          "uniqueItems": true
+        },
+        "reviewed_on": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "required": [
+        "code",
+        "name",
+        "publication_status",
+        "pathways",
+        "reviewed_on"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

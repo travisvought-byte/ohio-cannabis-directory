@@ -16,6 +16,10 @@ jobs:
         run: pip install -r requirements.txt
       - name: Check data, release metadata and generated pages
         run: python tests/check_data.py
+      - name: Validate replicable directory foundation
+        run: |
+          python validate_foundation.py
+          python tests/foundation.py
       - uses: actions/setup-node@v4
         with:
           node-version: '24'

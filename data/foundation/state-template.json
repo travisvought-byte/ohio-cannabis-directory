@@ -1,0 +1,50 @@
+{
+  "code": "XX",
+  "name": "Replace with state name",
+  "publication_status": "not-started",
+  "reviewed_on": "2026-10-09",
+  "pathways": [
+    {
+      "pathway_id": "dispensaries",
+      "coverage_status": "not-reviewed",
+      "next_step": "Research a relevant official or provider route.",
+      "limitations": "Not researched; no public state option should be generated."
+    },
+    {
+      "pathway_id": "seeds",
+      "coverage_status": "not-reviewed",
+      "next_step": "Research a relevant official or provider route.",
+      "limitations": "Not researched; no public state option should be generated."
+    },
+    {
+      "pathway_id": "records",
+      "coverage_status": "not-reviewed",
+      "next_step": "Research a relevant official or provider route.",
+      "limitations": "Not researched; no public state option should be generated."
+    },
+    {
+      "pathway_id": "rules",
+      "coverage_status": "not-reviewed",
+      "next_step": "Research a relevant official or provider route.",
+      "limitations": "Not researched; no public state option should be generated."
+    },
+    {
+      "pathway_id": "medical",
+      "coverage_status": "not-reviewed",
+      "next_step": "Research a relevant official or provider route.",
+      "limitations": "Not researched; no public state option should be generated."
+    },
+    {
+      "pathway_id": "business",
+      "coverage_status": "not-reviewed",
+      "next_step": "Research a relevant official or provider route.",
+      "limitations": "Not researched; no public state option should be generated."
+    },
+    {
+      "pathway_id": "community",
+      "coverage_status": "not-reviewed",
+      "next_step": "Research a relevant official or provider route.",
+      "limitations": "Not researched; no public state option should be generated."
+    }
+  ]
+}

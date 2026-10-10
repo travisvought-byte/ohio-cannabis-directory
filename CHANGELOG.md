@@ -107,3 +107,7 @@ Versions track the master workbook\. Each release states what changed and what e
 ## Seed supplier expansion — 2026-10-09
 
 Expanded from two seed catalogs to ten seed providers plus one Ohio grow-supply / retailer lead. Added dedicated search, location/type filters, shareable searches, downloadable source data and provider-specific shipping/pickup evidence. Ohio walk-in seed stock remains unconfirmed.
+
+## Multi-state foundation — 2026-10-09
+
+Defined the shared data contract and seven visitor pathways; added a JSON schema, cross-record validator, negative regression tests, state research template and conservative seed/supply pilot. CI validates the foundation alongside the current public builders. Full dataset migration and shared state renderers remain stage two.

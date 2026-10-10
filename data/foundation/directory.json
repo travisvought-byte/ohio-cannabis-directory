@@ -1,0 +1,987 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "foundation-pilot",
+  "as_of": "2026-10-09",
+  "organizations": [
+    {
+      "id": "org-seed-9ebb9071247f",
+      "name": "Dutch Wilson Genetics",
+      "website": "https://dutchwilsonseeds.com/",
+      "kind": "breeder",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "7402722349"
+        },
+        {
+          "kind": "email",
+          "value": "dutchwilsonseeds@yahoo.com"
+        }
+      ]
+    },
+    {
+      "id": "org-seed-f1e2d70ed17b",
+      "name": "Ohio’s Best Seed Bank",
+      "website": "https://ohiosbestseedbank.com/",
+      "kind": "seed-bank",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "5678009603"
+        },
+        {
+          "kind": "email",
+          "value": "ohiosbestseedbank@gmail.com"
+        }
+      ]
+    },
+    {
+      "id": "org-seed-857a059dd9c1",
+      "name": "Indoor Gardens",
+      "website": "https://indoorgardens.com/",
+      "kind": "retailer",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "6142621600"
+        },
+        {
+          "kind": "email",
+          "value": "sales@indoorgardens.com"
+        }
+      ]
+    },
+    {
+      "id": "org-seed-0ff340b3a975",
+      "name": "Twisted Tree Autoflowers",
+      "website": "https://twistedtreeautoflowers.com/",
+      "kind": "breeder",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "info@twistedtreeautoflowers.com"
+        }
+      ]
+    },
+    {
+      "id": "org-seed-3531ba3c14b5",
+      "name": "The Seed Cellar",
+      "website": "https://seedcellar.com/",
+      "kind": "seed-bank",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "5178792801"
+        },
+        {
+          "kind": "email",
+          "value": "info@seedcellar.com"
+        }
+      ]
+    },
+    {
+      "id": "org-seed-48c44cb25841",
+      "name": "Great Lakes Genetics",
+      "website": "https://www.greatlakesgenetics.com/",
+      "kind": "seed-bank",
+      "legacy_ids": [],
+      "contacts": []
+    },
+    {
+      "id": "org-seed-bb0e8214b3f4",
+      "name": "Multiverse Beans",
+      "website": "https://multiversebeans.com/shop/",
+      "kind": "seed-bank",
+      "legacy_ids": [],
+      "contacts": []
+    },
+    {
+      "id": "org-seed-4e535e08714e",
+      "name": "Humboldt Seed Company",
+      "website": "https://californiahempseeds.com/shop/",
+      "kind": "breeder",
+      "legacy_ids": [],
+      "contacts": []
+    },
+    {
+      "id": "org-seed-6fd22ae0de38",
+      "name": "Mephisto Genetics",
+      "website": "https://mephistogenetics.com/collections/seeds",
+      "kind": "breeder",
+      "legacy_ids": [],
+      "contacts": []
+    },
+    {
+      "id": "org-seed-45b22d1ee5fc",
+      "name": "Seeds Here Now",
+      "website": "https://seedsherenow.com/",
+      "kind": "seed-bank",
+      "legacy_ids": [],
+      "contacts": []
+    },
+    {
+      "id": "org-seed-36336de7b93b",
+      "name": "North Atlantic Seed Co.",
+      "website": "https://northatlanticseed.com/",
+      "kind": "seed-bank",
+      "legacy_ids": [],
+      "contacts": []
+    }
+  ],
+  "locations": [],
+  "services": [
+    {
+      "id": "svc-seed-9ebb9071247f",
+      "organization_id": "org-seed-9ebb9071247f",
+      "location_ids": [],
+      "pathway_ids": [
+        "seeds"
+      ],
+      "name": "Dutch Wilson Genetics seed/supply route",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "grower"
+      ],
+      "eligibility": "Confirm seller requirements and state eligibility directly.",
+      "next_step": {
+        "label": "Open catalog or supplier contact",
+        "url": "https://dutchwilsonseeds.com/"
+      },
+      "availability": "catalog-listed",
+      "attributes": {
+        "seed_types": [
+          "regular",
+          "feminized"
+        ]
+      },
+      "fulfillment": [
+        {
+          "kind": "shipping",
+          "status": "unverified",
+          "description": "Confirm Ohio delivery and pickup directly.",
+          "evidence_ids": [
+            "ev-seed-9ebb9071247f-1"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "ev-seed-9ebb9071247f-1"
+      ]
+    },
+    {
+      "id": "svc-seed-f1e2d70ed17b",
+      "organization_id": "org-seed-f1e2d70ed17b",
+      "location_ids": [],
+      "pathway_ids": [
+        "seeds"
+      ],
+      "name": "Ohio’s Best Seed Bank seed/supply route",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "grower"
+      ],
+      "eligibility": "Confirm seller requirements and state eligibility directly.",
+      "next_step": {
+        "label": "Open catalog or supplier contact",
+        "url": "https://ohiosbestseedbank.com/"
+      },
+      "availability": "catalog-listed",
+      "attributes": {
+        "seed_types": [
+          "regular",
+          "feminized",
+          "autoflower",
+          "photoperiod"
+        ]
+      },
+      "fulfillment": [
+        {
+          "kind": "shipping",
+          "status": "unverified",
+          "description": "Site says it does not directly distribute seeds within Ohio; confirm order eligibility before paying.",
+          "evidence_ids": [
+            "ev-seed-f1e2d70ed17b-1"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "ev-seed-f1e2d70ed17b-1"
+      ]
+    },
+    {
+      "id": "svc-seed-857a059dd9c1",
+      "organization_id": "org-seed-857a059dd9c1",
+      "location_ids": [],
+      "pathway_ids": [
+        "seeds"
+      ],
+      "name": "Indoor Gardens seed/supply route",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "grower"
+      ],
+      "eligibility": "Confirm seller requirements and state eligibility directly.",
+      "next_step": {
+        "label": "Open catalog or supplier contact",
+        "url": "https://indoorgardens.com/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "seed_types": []
+      },
+      "fulfillment": [
+        {
+          "kind": "shipping",
+          "status": "unverified",
+          "description": "In-store grow supplies verified; seed pickup requires confirmation.",
+          "evidence_ids": [
+            "ev-seed-857a059dd9c1-1",
+            "ev-seed-857a059dd9c1-2"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "ev-seed-857a059dd9c1-1",
+        "ev-seed-857a059dd9c1-2"
+      ]
+    },
+    {
+      "id": "svc-seed-0ff340b3a975",
+      "organization_id": "org-seed-0ff340b3a975",
+      "location_ids": [],
+      "pathway_ids": [
+        "seeds"
+      ],
+      "name": "Twisted Tree Autoflowers seed/supply route",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "grower"
+      ],
+      "eligibility": "Confirm seller requirements and state eligibility directly.",
+      "next_step": {
+        "label": "Open catalog or supplier contact",
+        "url": "https://twistedtreeautoflowers.com/"
+      },
+      "availability": "catalog-listed",
+      "attributes": {
+        "seed_types": [
+          "feminized",
+          "autoflower"
+        ]
+      },
+      "fulfillment": [
+        {
+          "kind": "shipping",
+          "status": "unverified",
+          "description": "Shipping is advertised; Ohio-specific delivery and pickup not verified.",
+          "evidence_ids": [
+            "ev-seed-0ff340b3a975-1"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "ev-seed-0ff340b3a975-1"
+      ]
+    },
+    {
+      "id": "svc-seed-3531ba3c14b5",
+      "organization_id": "org-seed-3531ba3c14b5",
+      "location_ids": [],
+      "pathway_ids": [
+        "seeds"
+      ],
+      "name": "The Seed Cellar seed/supply route",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "grower"
+      ],
+      "eligibility": "Confirm seller requirements and state eligibility directly.",
+      "next_step": {
+        "label": "Open catalog or supplier contact",
+        "url": "https://seedcellar.com/"
+      },
+      "availability": "catalog-listed",
+      "attributes": {
+        "seed_types": [
+          "regular",
+          "feminized",
+          "autoflower",
+          "photoperiod"
+        ]
+      },
+      "fulfillment": [
+        {
+          "kind": "shipping",
+          "status": "unverified",
+          "description": "Physical shop verified; Ohio shipping not verified. A store listing does not establish interstate transport permission.",
+          "evidence_ids": [
+            "ev-seed-3531ba3c14b5-1",
+            "ev-seed-3531ba3c14b5-2"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "ev-seed-3531ba3c14b5-1",
+        "ev-seed-3531ba3c14b5-2"
+      ]
+    },
+    {
+      "id": "svc-seed-48c44cb25841",
+      "organization_id": "org-seed-48c44cb25841",
+      "location_ids": [],
+      "pathway_ids": [
+        "seeds"
+      ],
+      "name": "Great Lakes Genetics seed/supply route",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "grower"
+      ],
+      "eligibility": "Confirm seller requirements and state eligibility directly.",
+      "next_step": {
+        "label": "Open catalog or supplier contact",
+        "url": "https://www.greatlakesgenetics.com/"
+      },
+      "availability": "catalog-listed",
+      "attributes": {
+        "seed_types": [
+          "regular",
+          "feminized",
+          "autoflower"
+        ]
+      },
+      "fulfillment": [
+        {
+          "kind": "shipping",
+          "status": "unverified",
+          "description": "Published policy says shipping to all U.S. states; seller claim, not a legal determination or test order.",
+          "evidence_ids": [
+            "ev-seed-48c44cb25841-1",
+            "ev-seed-48c44cb25841-2",
+            "ev-seed-48c44cb25841-3"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "ev-seed-48c44cb25841-1",
+        "ev-seed-48c44cb25841-2",
+        "ev-seed-48c44cb25841-3"
+      ]
+    },
+    {
+      "id": "svc-seed-bb0e8214b3f4",
+      "organization_id": "org-seed-bb0e8214b3f4",
+      "location_ids": [],
+      "pathway_ids": [
+        "seeds"
+      ],
+      "name": "Multiverse Beans seed/supply route",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "grower"
+      ],
+      "eligibility": "Confirm seller requirements and state eligibility directly.",
+      "next_step": {
+        "label": "Open catalog or supplier contact",
+        "url": "https://multiversebeans.com/shop/"
+      },
+      "availability": "catalog-listed",
+      "attributes": {
+        "seed_types": [
+          "feminized",
+          "autoflower",
+          "photoperiod"
+        ]
+      },
+      "fulfillment": [
+        {
+          "kind": "shipping",
+          "status": "unverified",
+          "description": "Published FAQ says USA-only shipping; confirm Ohio checkout eligibility.",
+          "evidence_ids": [
+            "ev-seed-bb0e8214b3f4-1",
+            "ev-seed-bb0e8214b3f4-2"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "ev-seed-bb0e8214b3f4-1",
+        "ev-seed-bb0e8214b3f4-2"
+      ]
+    },
+    {
+      "id": "svc-seed-4e535e08714e",
+      "organization_id": "org-seed-4e535e08714e",
+      "location_ids": [],
+      "pathway_ids": [
+        "seeds"
+      ],
+      "name": "Humboldt Seed Company seed/supply route",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "grower"
+      ],
+      "eligibility": "Confirm seller requirements and state eligibility directly.",
+      "next_step": {
+        "label": "Open catalog or supplier contact",
+        "url": "https://californiahempseeds.com/shop/"
+      },
+      "availability": "catalog-listed",
+      "attributes": {
+        "seed_types": [
+          "regular",
+          "feminized",
+          "autoflower",
+          "triploid"
+        ]
+      },
+      "fulfillment": [
+        {
+          "kind": "shipping",
+          "status": "unverified",
+          "description": "Ohio-specific shipping and local pickup not verified.",
+          "evidence_ids": [
+            "ev-seed-4e535e08714e-1"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "ev-seed-4e535e08714e-1"
+      ]
+    },
+    {
+      "id": "svc-seed-6fd22ae0de38",
+      "organization_id": "org-seed-6fd22ae0de38",
+      "location_ids": [],
+      "pathway_ids": [
+        "seeds"
+      ],
+      "name": "Mephisto Genetics seed/supply route",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "grower"
+      ],
+      "eligibility": "Confirm seller requirements and state eligibility directly.",
+      "next_step": {
+        "label": "Open catalog or supplier contact",
+        "url": "https://mephistogenetics.com/collections/seeds"
+      },
+      "availability": "catalog-listed",
+      "attributes": {
+        "seed_types": [
+          "autoflower"
+        ]
+      },
+      "fulfillment": [
+        {
+          "kind": "shipping",
+          "status": "unverified",
+          "description": "Choose the U.S. storefront; Ohio-specific shipping not verified.",
+          "evidence_ids": [
+            "ev-seed-6fd22ae0de38-1",
+            "ev-seed-6fd22ae0de38-2"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "ev-seed-6fd22ae0de38-1",
+        "ev-seed-6fd22ae0de38-2"
+      ]
+    },
+    {
+      "id": "svc-seed-45b22d1ee5fc",
+      "organization_id": "org-seed-45b22d1ee5fc",
+      "location_ids": [],
+      "pathway_ids": [
+        "seeds"
+      ],
+      "name": "Seeds Here Now seed/supply route",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "grower"
+      ],
+      "eligibility": "Confirm seller requirements and state eligibility directly.",
+      "next_step": {
+        "label": "Open catalog or supplier contact",
+        "url": "https://seedsherenow.com/"
+      },
+      "availability": "catalog-listed",
+      "attributes": {
+        "seed_types": []
+      },
+      "fulfillment": [
+        {
+          "kind": "shipping",
+          "status": "unverified",
+          "description": "Ohio-targeted sales page and U.S. shipping statement verified; confirm current checkout restrictions.",
+          "evidence_ids": [
+            "ev-seed-45b22d1ee5fc-1",
+            "ev-seed-45b22d1ee5fc-2"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "ev-seed-45b22d1ee5fc-1",
+        "ev-seed-45b22d1ee5fc-2"
+      ]
+    },
+    {
+      "id": "svc-seed-36336de7b93b",
+      "organization_id": "org-seed-36336de7b93b",
+      "location_ids": [],
+      "pathway_ids": [
+        "seeds"
+      ],
+      "name": "North Atlantic Seed Co. seed/supply route",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "grower"
+      ],
+      "eligibility": "Confirm seller requirements and state eligibility directly.",
+      "next_step": {
+        "label": "Open catalog or supplier contact",
+        "url": "https://northatlanticseed.com/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "seed_types": []
+      },
+      "fulfillment": [
+        {
+          "kind": "shipping",
+          "status": "unverified",
+          "description": "Manufacturer-listed domestic shipping; Ohio-specific terms unverified.",
+          "evidence_ids": [
+            "ev-seed-36336de7b93b-1",
+            "ev-seed-36336de7b93b-2"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "ev-seed-36336de7b93b-1",
+        "ev-seed-36336de7b93b-2"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-seed-9ebb9071247f-1",
+      "subject_id": "svc-seed-9ebb9071247f",
+      "claim": "supplier-profile",
+      "value": "Ohio-based small-batch breeder. Regular and feminized catalogs verified. Confirm Ohio delivery and pickup directly.",
+      "source_url": "https://dutchwilsonseeds.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported source reference supports the existing profile review. Individual catalog, shipping, address and stock claims need separate evidence during full migration; no order or pickup test performed."
+    },
+    {
+      "id": "ev-seed-f1e2d70ed17b-1",
+      "subject_id": "svc-seed-f1e2d70ed17b",
+      "claim": "supplier-profile",
+      "value": "Bluffton mailing address only; no physical store or onsite sales. Orders are fulfilled by partners outside Ohio. Site says it does not directly distribute seeds within Ohio; confirm order eligibility before paying.",
+      "source_url": "https://ohiosbestseedbank.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported source reference supports the existing profile review. Individual catalog, shipping, address and stock claims need separate evidence during full migration; no order or pickup test performed."
+    },
+    {
+      "id": "ev-seed-857a059dd9c1-1",
+      "subject_id": "svc-seed-857a059dd9c1",
+      "claim": "supplier-profile",
+      "value": "Ohio stores in Columbus, Akron and Cleveland. ETHOS lists this retailer. Current seed stock and seed sales at each location are unconfirmed; call first. Columbus: 4720 Indianola Ave. Akron: 2076 Romig Rd. Cleveland: 5304 Fleet Ave. In-store grow supplies verified; seed pickup requires confirmation.",
+      "source_url": "https://indoorgardens.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported source reference supports the existing profile review. Individual catalog, shipping, address and stock claims need separate evidence during full migration; no order or pickup test performed."
+    },
+    {
+      "id": "ev-seed-857a059dd9c1-2",
+      "subject_id": "svc-seed-857a059dd9c1",
+      "claim": "supplier-profile",
+      "value": "Ohio stores in Columbus, Akron and Cleveland. ETHOS lists this retailer. Current seed stock and seed sales at each location are unconfirmed; call first. Columbus: 4720 Indianola Ave. Akron: 2076 Romig Rd. Cleveland: 5304 Fleet Ave. In-store grow supplies verified; seed pickup requires confirmation.",
+      "source_url": "https://www.ethosgenetics.com/findseeds",
+      "source_kind": "manufacturer",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported source reference supports the existing profile review. Individual catalog, shipping, address and stock claims need separate evidence during full migration; no order or pickup test performed."
+    },
+    {
+      "id": "ev-seed-0ff340b3a975-1",
+      "subject_id": "svc-seed-0ff340b3a975",
+      "claim": "supplier-profile",
+      "value": "Michigan breeder specializing in feminized autoflowers. Shipping is advertised; Ohio-specific delivery and pickup not verified.",
+      "source_url": "https://twistedtreeautoflowers.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported source reference supports the existing profile review. Individual catalog, shipping, address and stock claims need separate evidence during full migration; no order or pickup test performed."
+    },
+    {
+      "id": "ev-seed-3531ba3c14b5-1",
+      "subject_id": "svc-seed-3531ba3c14b5",
+      "claim": "supplier-profile",
+      "value": "Published storefront: 1620 E. Michigan Ave, Jackson, Michigan. Regular, feminized and autoflower catalogs verified. Call before traveling for exact stock. Physical shop verified; Ohio shipping not verified. A store listing does not establish interstate transport permission.",
+      "source_url": "https://seedcellar.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported source reference supports the existing profile review. Individual catalog, shipping, address and stock claims need separate evidence during full migration; no order or pickup test performed."
+    },
+    {
+      "id": "ev-seed-3531ba3c14b5-2",
+      "subject_id": "svc-seed-3531ba3c14b5",
+      "claim": "supplier-profile",
+      "value": "Published storefront: 1620 E. Michigan Ave, Jackson, Michigan. Regular, feminized and autoflower catalogs verified. Call before traveling for exact stock. Physical shop verified; Ohio shipping not verified. A store listing does not establish interstate transport permission.",
+      "source_url": "https://seedcellar.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported source reference supports the existing profile review. Individual catalog, shipping, address and stock claims need separate evidence during full migration; no order or pickup test performed."
+    },
+    {
+      "id": "ev-seed-48c44cb25841-1",
+      "subject_id": "svc-seed-48c44cb25841",
+      "claim": "supplier-profile",
+      "value": "Multi-breeder catalog with regular and feminized categories; feminized page also describes autoflowers. Published policy says shipping to all U.S. states; seller claim, not a legal determination or test order.",
+      "source_url": "https://www.greatlakesgenetics.com/shipping-info/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported source reference supports the existing profile review. Individual catalog, shipping, address and stock claims need separate evidence during full migration; no order or pickup test performed."
+    },
+    {
+      "id": "ev-seed-48c44cb25841-2",
+      "subject_id": "svc-seed-48c44cb25841",
+      "claim": "supplier-profile",
+      "value": "Multi-breeder catalog with regular and feminized categories; feminized page also describes autoflowers. Published policy says shipping to all U.S. states; seller claim, not a legal determination or test order.",
+      "source_url": "https://www.greatlakesgenetics.com/feminized/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported source reference supports the existing profile review. Individual catalog, shipping, address and stock claims need separate evidence during full migration; no order or pickup test performed."
+    },
+    {
+      "id": "ev-seed-48c44cb25841-3",
+      "subject_id": "svc-seed-48c44cb25841",
+      "claim": "supplier-profile",
+      "value": "Multi-breeder catalog with regular and feminized categories; feminized page also describes autoflowers. Published policy says shipping to all U.S. states; seller claim, not a legal determination or test order.",
+      "source_url": "https://www.greatlakesgenetics.com/product-category/regular-seeds/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported source reference supports the existing profile review. Individual catalog, shipping, address and stock claims need separate evidence during full migration; no order or pickup test performed."
+    },
+    {
+      "id": "ev-seed-bb0e8214b3f4-1",
+      "subject_id": "svc-seed-bb0e8214b3f4",
+      "claim": "supplier-profile",
+      "value": "Multi-breeder catalog with autoflower and photoperiod filters; feminized products verified. Published FAQ says USA-only shipping; confirm Ohio checkout eligibility.",
+      "source_url": "https://multiversebeans.com/shop/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported source reference supports the existing profile review. Individual catalog, shipping, address and stock claims need separate evidence during full migration; no order or pickup test performed."
+    },
+    {
+      "id": "ev-seed-bb0e8214b3f4-2",
+      "subject_id": "svc-seed-bb0e8214b3f4",
+      "claim": "supplier-profile",
+      "value": "Multi-breeder catalog with autoflower and photoperiod filters; feminized products verified. Published FAQ says USA-only shipping; confirm Ohio checkout eligibility.",
+      "source_url": "https://multiversebeans.com/faq/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported source reference supports the existing profile review. Individual catalog, shipping, address and stock claims need separate evidence during full migration; no order or pickup test performed."
+    },
+    {
+      "id": "ev-seed-4e535e08714e-1",
+      "subject_id": "svc-seed-4e535e08714e",
+      "claim": "supplier-profile",
+      "value": "U.S. catalog identifies Humboldt Seed Company and lists regular, feminized, autoflower and triploid categories. Ohio-specific shipping and local pickup not verified.",
+      "source_url": "https://californiahempseeds.com/shop/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported source reference supports the existing profile review. Individual catalog, shipping, address and stock claims need separate evidence during full migration; no order or pickup test performed."
+    },
+    {
+      "id": "ev-seed-6fd22ae0de38-1",
+      "subject_id": "svc-seed-6fd22ae0de38",
+      "claim": "supplier-profile",
+      "value": "Direct breeder U.S. storefront focused on autoflower seeds. Choose the U.S. storefront; Ohio-specific shipping not verified.",
+      "source_url": "https://mephistogenetics.com/collections/seeds",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported source reference supports the existing profile review. Individual catalog, shipping, address and stock claims need separate evidence during full migration; no order or pickup test performed."
+    },
+    {
+      "id": "ev-seed-6fd22ae0de38-2",
+      "subject_id": "svc-seed-6fd22ae0de38",
+      "claim": "supplier-profile",
+      "value": "Direct breeder U.S. storefront focused on autoflower seeds. Choose the U.S. storefront; Ohio-specific shipping not verified.",
+      "source_url": "https://mephistogenetics.com/pages/home",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported source reference supports the existing profile review. Individual catalog, shipping, address and stock claims need separate evidence during full migration; no order or pickup test performed."
+    },
+    {
+      "id": "ev-seed-45b22d1ee5fc-1",
+      "subject_id": "svc-seed-45b22d1ee5fc",
+      "claim": "supplier-profile",
+      "value": "Multi-breeder supplier publishes an Ohio seed-buying page. Use official Ohio sources for law rather than the seller’s legal summary. Ohio-targeted sales page and U.S. shipping statement verified; confirm current checkout restrictions.",
+      "source_url": "https://seedsherenow.com/buy-cannabis-seeds-in-the-usa/ohio/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported source reference supports the existing profile review. Individual catalog, shipping, address and stock claims need separate evidence during full migration; no order or pickup test performed."
+    },
+    {
+      "id": "ev-seed-45b22d1ee5fc-2",
+      "subject_id": "svc-seed-45b22d1ee5fc",
+      "claim": "supplier-profile",
+      "value": "Multi-breeder supplier publishes an Ohio seed-buying page. Use official Ohio sources for law rather than the seller’s legal summary. Ohio-targeted sales page and U.S. shipping statement verified; confirm current checkout restrictions.",
+      "source_url": "https://seedsherenow.com/sitemap/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported source reference supports the existing profile review. Individual catalog, shipping, address and stock claims need separate evidence during full migration; no order or pickup test performed."
+    },
+    {
+      "id": "ev-seed-36336de7b93b-1",
+      "subject_id": "svc-seed-36336de7b93b",
+      "claim": "supplier-profile",
+      "value": "Listed by ETHOS as a domestic-shipping distributor and by Mephisto as a Maine retailer. Direct catalog and shipping policy were not accessible in this review. Manufacturer-listed domestic shipping; Ohio-specific terms unverified.",
+      "source_url": "https://www.ethosgenetics.com/findseeds",
+      "source_kind": "manufacturer",
+      "status": "source-listed",
+      "reviewed_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported source reference supports the existing profile review. Individual catalog, shipping, address and stock claims need separate evidence during full migration; no order or pickup test performed."
+    },
+    {
+      "id": "ev-seed-36336de7b93b-2",
+      "subject_id": "svc-seed-36336de7b93b",
+      "claim": "supplier-profile",
+      "value": "Listed by ETHOS as a domestic-shipping distributor and by Mephisto as a Maine retailer. Direct catalog and shipping policy were not accessible in this review. Manufacturer-listed domestic shipping; Ohio-specific terms unverified.",
+      "source_url": "https://mephistogenetics.com/pages/retailers",
+      "source_kind": "manufacturer",
+      "status": "source-listed",
+      "reviewed_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported source reference supports the existing profile review. Individual catalog, shipping, address and stock claims need separate evidence during full migration; no order or pickup test performed."
+    }
+  ],
+  "rules": [],
+  "relationships": [],
+  "events": [],
+  "pathways": [
+    {
+      "id": "dispensaries",
+      "label": "Find a dispensary",
+      "task": "Locate a licensed location that serves your medical or adult-use needs.",
+      "audiences": [
+        "consumer",
+        "patient"
+      ],
+      "suggested_facets": [
+        "state",
+        "county",
+        "city",
+        "license-kind"
+      ],
+      "success": "Reach an official location lookup or suitable location contact."
+    },
+    {
+      "id": "seeds",
+      "label": "Find seeds and growing supplies",
+      "task": "Identify a supplier with the seed options and fulfillment you need.",
+      "audiences": [
+        "consumer",
+        "grower"
+      ],
+      "suggested_facets": [
+        "coverage",
+        "seed-sex",
+        "flowering-type",
+        "fulfillment",
+        "evidence-status"
+      ],
+      "success": "Reach a suitable catalog or contact with fulfillment limitations visible."
+    },
+    {
+      "id": "records",
+      "label": "Get legal or record-clearing help",
+      "task": "Identify assistance serving your county and learn how to apply.",
+      "audiences": [
+        "consumer"
+      ],
+      "suggested_facets": [
+        "state",
+        "county",
+        "eligibility",
+        "service-status"
+      ],
+      "success": "Reach a relevant application or legal-aid contact."
+    },
+    {
+      "id": "rules",
+      "label": "Understand state rules",
+      "task": "Find current state-specific requirements and official sources.",
+      "audiences": [
+        "consumer",
+        "patient",
+        "business"
+      ],
+      "suggested_facets": [
+        "state",
+        "topic",
+        "effective-date"
+      ],
+      "success": "Read a dated summary and its official source."
+    },
+    {
+      "id": "medical",
+      "label": "Find patient and caregiver support",
+      "task": "Find registration, caregiver and support steps.",
+      "audiences": [
+        "patient",
+        "caregiver"
+      ],
+      "suggested_facets": [
+        "state",
+        "eligibility",
+        "service-kind"
+      ],
+      "success": "Reach the correct official registration or support route."
+    },
+    {
+      "id": "business",
+      "label": "Find business services",
+      "task": "Identify providers with the capabilities and geographic reach needed.",
+      "audiences": [
+        "business"
+      ],
+      "suggested_facets": [
+        "capability",
+        "coverage",
+        "organization-kind"
+      ],
+      "success": "Reach a relevant service provider and its supporting evidence."
+    },
+    {
+      "id": "community",
+      "label": "Find community and events",
+      "task": "Locate relevant groups or events with actionable contact and dates.",
+      "audiences": [
+        "consumer",
+        "patient",
+        "business"
+      ],
+      "suggested_facets": [
+        "state",
+        "county",
+        "date",
+        "audience"
+      ],
+      "success": "Reach a group contact or event participation page."
+    }
+  ],
+  "states": [
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "publication_status": "live",
+      "official_regulator_url": "https://com.ohio.gov/divisions-and-programs/cannabis-control",
+      "reviewed_on": "2026-10-09",
+      "pathways": [
+        {
+          "pathway_id": "dispensaries",
+          "coverage_status": "starter",
+          "next_step": "Reach an official location lookup or suitable location contact.",
+          "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html#dispensaries",
+          "limitations": "Existing Ohio public route. Foundation pilot has not migrated the full organization, location, legal or event datasets; not a completeness claim."
+        },
+        {
+          "pathway_id": "seeds",
+          "coverage_status": "starter",
+          "next_step": "Reach a suitable catalog or contact with fulfillment limitations visible.",
+          "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/seeds.html",
+          "limitations": "Existing Ohio public route. Foundation pilot has not migrated the full organization, location, legal or event datasets; not a completeness claim."
+        },
+        {
+          "pathway_id": "records",
+          "coverage_status": "starter",
+          "next_step": "Reach a relevant application or legal-aid contact.",
+          "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html#records",
+          "limitations": "Existing Ohio public route. Foundation pilot has not migrated the full organization, location, legal or event datasets; not a completeness claim."
+        },
+        {
+          "pathway_id": "rules",
+          "coverage_status": "starter",
+          "next_step": "Read a dated summary and its official source.",
+          "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html#rules",
+          "limitations": "Existing Ohio public route. Foundation pilot has not migrated the full organization, location, legal or event datasets; not a completeness claim."
+        },
+        {
+          "pathway_id": "medical",
+          "coverage_status": "starter",
+          "next_step": "Reach the correct official registration or support route.",
+          "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html#medical",
+          "limitations": "Existing Ohio public route. Foundation pilot has not migrated the full organization, location, legal or event datasets; not a completeness claim."
+        },
+        {
+          "pathway_id": "business",
+          "coverage_status": "partial",
+          "next_step": "Reach a relevant service provider and its supporting evidence.",
+          "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/index.html",
+          "limitations": "Existing Ohio public route. Foundation pilot has not migrated the full organization, location, legal or event datasets; not a completeness claim."
+        },
+        {
+          "pathway_id": "community",
+          "coverage_status": "starter",
+          "next_step": "Reach a group contact or event participation page.",
+          "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html#community",
+          "limitations": "Existing Ohio public route. Foundation pilot has not migrated the full organization, location, legal or event datasets; not a completeness claim."
+        }
+      ]
+    }
+  ]
+}
