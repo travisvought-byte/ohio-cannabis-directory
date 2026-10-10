@@ -11,7 +11,7 @@ import datetime
 import calendar
 from pathlib import Path
 import pandas as pd
-from directory_data import RELEASE, RELEASE_DATE, script_json
+from directory_data import RELEASE, RELEASE_DATE, script_json, load_records, load_event_routes
 from directory_brand import brand_page
 
 ROOT = Path(__file__).resolve().parent
@@ -38,14 +38,7 @@ COLS = {
     "Capabilities / Keywords": "keys",
 }
 
-UPCOMING_EVENTS = [
-    {
-        "name": "Women’s Cannabis & Wellness Expo",
-        "date": "2026-11-07",
-        "place": "Marriott Cincinnati North · West Chester, Ohio",
-        "url": "https://medicateoh.com/events/",
-    }
-]
+UPCOMING_EVENTS = load_event_routes()
 
 
 def clean(v):
@@ -55,7 +48,7 @@ def clean(v):
 
 
 def main():
-    df = pd.read_csv(SRC).dropna(how="all")
+    df = pd.DataFrame(load_records()).dropna(how="all")
 
     records = []
     for _, row in df.iterrows():
@@ -381,6 +374,7 @@ __VHG_CSS__
   <div class="wrap masthead">
     __VHG_BRAND__
     <h1>Ohio Cannabis Ecosystem Directory</h1>
+    <p><a href="state.html?state=OH">Explore by state and what you need</a></p>
     <p class="standfirst">Find resources for yourself or your business in Ohio cannabis. __N_PUB__ organizations, each traced to a named source.</p>
 
     <section class="highlight-card" aria-label="Consumer resource starting points">

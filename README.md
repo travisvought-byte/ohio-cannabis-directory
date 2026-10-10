@@ -22,7 +22,7 @@ The election-season Libertarian Party of Ohio entry is a clearly labeled persona
 
 ## What this is
 
-This is a flat, categorized market map, not a CRM. One row represents one organization. Each entry records what the organization does, how to reach it, where the information came from, and capability keywords for problem-oriented searching.
+The public organization view retains one row per original organization. Its canonical source is now `data/directory.json`, separating organizations, service routes, evidence, relationships, rules and state configuration. Compatibility CSVs preserve the original fields, IDs and provenance.
 
 If you need mold remediation, cash logistics, packaging, MRB banking, staffing, compliance support, or another specific service, search the capability rather than guessing the category.
 
@@ -109,4 +109,8 @@ Seed supplier expansion: `seeds.html` offers 11 entries (10 seed providers and o
 
 ## Multi-state foundation (stage one)
 
-The [shared directory contract](architecture/STATE_DIRECTORY_CONTRACT.md) defines seven visitor pathways, organization/location/service boundaries, claim-level evidence and state publication gates. The schema and validated seed/supply pilot live in `schemas/` and `data/foundation/`. This is preparation for stage-two migration, not a replacement for the current Ohio dataset or an announcement of additional state coverage. Run `python validate_foundation.py` and `python tests/foundation.py`.
+The [shared directory contract](architecture/STATE_DIRECTORY_CONTRACT.md) defines seven visitor pathways, organization/location/service boundaries, claim-level evidence and state publication gates. The schema and validated seed/supply pilot live in `schemas/` and `data/foundation/`. The stage-one pilot remains available as a contract fixture. The full Ohio migration now uses the same contract; no additional state coverage is announced. Run `python validate_foundation.py` and `python tests/foundation.py`.
+
+## Shared state view (stage two)
+
+[Explore by state and need](https://travisvought-byte.github.io/ohio-cannabis-directory/state.html?state=OH). One shared template serves reviewed state packs. Ohio is currently the only public state. `data/directory.json` is authoritative; the CSVs and seed JSON are generated compatibility downloads. All 564 original organization records and 60 relationship IDs are preserved. See [migration and maintenance instructions](architecture/STAGE_TWO_MIGRATION.md).

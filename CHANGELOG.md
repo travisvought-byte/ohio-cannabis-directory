@@ -111,3 +111,11 @@ Expanded from two seed catalogs to ten seed providers plus one Ohio grow-supply 
 ## Multi-state foundation — 2026-10-09
 
 Defined the shared data contract and seven visitor pathways; added a JSON schema, cross-record validator, negative regression tests, state research template and conservative seed/supply pilot. CI validates the foundation alongside the current public builders. Full dataset migration and shared state renderers remain stage two.
+
+## Canonical migration and shared state pages — 2026-10-09
+
+- Migrated the full 564-record Ohio dataset and 60 relationships into canonical structured data, preserving original IDs, fields and exports.
+- Unified seed and referral identities, preserving an alias for Indoor Gardens and separating reference-only counterparties.
+- Added reusable state/need presentation, seven pathways, public-state gates, permanent service links and independent seed sex/flowering filters.
+- Added claim-specific shipping/storefront evidence, historical-source labels, active filters and expired-event handling.
+- Added compatibility export generation, migration checks and shared-state browser/mobile regressions. No complete physical location import or additional state launch is claimed.

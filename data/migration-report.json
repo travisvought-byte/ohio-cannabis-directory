@@ -1,0 +1,68 @@
+{
+  "migration_date": "2026-10-09",
+  "source_commit": "1eb7212c750e1c7cc6f13c53d24e6ad9efba205c",
+  "canonical_file": "data/directory.json",
+  "original_organizations": 564,
+  "original_publishable": 518,
+  "original_retained": 46,
+  "preserved_relationships": 60,
+  "seed_supplier_entries": 11,
+  "seed_identity_merges": [
+    {
+      "old_id": "org-seed-857a059dd9c1",
+      "new_id": "org-6d0ae4c0f229"
+    }
+  ],
+  "structured_organizations": 588,
+  "reference_only_counterparties": 11,
+  "structured_services": 589,
+  "physical_locations": 0,
+  "limitations": [
+    "No geocoding or statewide location import performed.",
+    "Historical organization-profile evidence is not a fresh review.",
+    "The original CSVs and seed download remain compatibility exports."
+  ],
+  "original_sha256": {
+    "ohio-cannabis-directory.csv": "d288562b1c056b98e7c38781959c82f1a0ef88d03760b8f844f685024ce8d163",
+    "b2b-relationships.csv": "3075a530cdbdfa99646f3560ba1d4a58abd7c9cc19853122b54a5cd883770d17",
+    "seed-suppliers.json": "752f8204f1a86d849fc36c4cf000f0ceb19fc79d94efad1a656112069944e6ce"
+  },
+  "identity_aliases": [
+    {
+      "old_id": "org-seed-857a059dd9c1",
+      "new_id": "org-6d0ae4c0f229"
+    },
+    {
+      "old_id": "org-resource-5236bc41447c",
+      "new_id": "org-85a0834c514c"
+    },
+    {
+      "old_id": "org-resource-3fe478128455",
+      "new_id": "org-85a0834c514c"
+    },
+    {
+      "old_id": "org-resource-3165b5247090",
+      "new_id": "org-85a0834c514c"
+    },
+    {
+      "old_id": "org-resource-6b75f3a3a999",
+      "new_id": "org-85a0834c514c"
+    },
+    {
+      "old_id": "org-resource-4381c84741cb",
+      "new_id": "org-resource-85dd7013e5c3"
+    },
+    {
+      "old_id": "org-resource-e6244a10f36c",
+      "new_id": "org-resource-85dd7013e5c3"
+    },
+    {
+      "old_id": "org-resource-d05280b4d8fd",
+      "new_id": "org-resource-6689c43ec5d4"
+    },
+    {
+      "old_id": "org-resource-15e2802480be",
+      "new_id": "org-seed-4e535e08714e"
+    }
+  ]
+}

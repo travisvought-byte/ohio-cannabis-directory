@@ -8,7 +8,10 @@
       "const": "1.0.0"
     },
     "scope": {
-      "const": "foundation-pilot"
+      "enum": [
+        "foundation-pilot",
+        "directory"
+      ]
     },
     "as_of": {
       "type": "string",
@@ -76,6 +79,98 @@
         "$ref": "#/$defs/state"
       },
       "uniqueItems": true
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "old_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "new_id": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "old_id",
+          "new_id"
+        ],
+        "additionalProperties": false
+      },
+      "uniqueItems": true
+    },
+    "resource_routes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "pathway_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "url",
+                "description"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "pathway_id",
+          "title",
+          "items"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "event_routes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "place": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "date",
+          "place",
+          "url"
+        ],
+        "additionalProperties": false
+      }
     }
   },
   "required": [
@@ -155,6 +250,19 @@
             "additionalProperties": false
           },
           "uniqueItems": true
+        },
+        "scope": {
+          "enum": [
+            "public",
+            "retained",
+            "reference-only"
+          ]
+        },
+        "legacy_record": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         }
       },
       "required": [
@@ -449,6 +557,27 @@
             "pattern": "^ev-[a-z0-9][a-z0-9-]*$"
           },
           "uniqueItems": true
+        },
+        "origin": {
+          "enum": [
+            "organization-profile",
+            "seed-profile",
+            "consumer-resource"
+          ]
+        },
+        "listed_in": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+          },
+          "uniqueItems": true
+        },
+        "description": {
+          "type": "string"
+        },
+        "legacy_seed_record": {
+          "type": "object"
         }
       },
       "required": [
@@ -525,6 +654,10 @@
         "limitations": {
           "type": "string",
           "minLength": 1
+        },
+        "recorded_on": {
+          "type": "string",
+          "format": "date"
         }
       },
       "required": [
@@ -535,11 +668,29 @@
         "source_url",
         "source_kind",
         "status",
-        "reviewed_on",
         "recheck_on",
         "limitations"
       ],
-      "additionalProperties": false
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "source-reviewed",
+                  "firsthand-confirmed"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "reviewed_on"
+            ]
+          }
+        }
+      ]
     },
     "rule": {
       "type": "object",
@@ -615,6 +766,12 @@
             "pattern": "^ev-[a-z0-9][a-z0-9-]*$"
           },
           "uniqueItems": true
+        },
+        "legacy_record": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         }
       },
       "required": [

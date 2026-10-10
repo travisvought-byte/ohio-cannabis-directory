@@ -38,6 +38,7 @@ def validate(data):
   if not refs:errors.append(f'{item["id"]}: a published location requires evidence')
   if item.get('license',{}).get('status')=='active' and not any(groups['evidence'].get(k,{}).get('source_kind')=='government' for k in refs):errors.append(f'{item["id"]}: active license requires government evidence')
  for item in data['services']:
+  if any(code not in STATE_CODES for code in item.get('listed_in',[])):errors.append(f'{item["id"]}: invalid editorial state membership')
   require(item['organization_id'],'organizations',item['id'])
   if not item['pathway_ids']:errors.append(f'{item["id"]}: service needs a visitor pathway')
   for p in item['pathway_ids']:
@@ -64,8 +65,8 @@ def validate(data):
      if ev.get('subject_id')!=item['id'] or ev.get('claim')!='fulfillment-'+f['kind'] or ev.get('status') not in ('source-reviewed','firsthand-confirmed','source-listed'):errors.append(f'{item["id"]}: fulfillment requires matching claim-level evidence')
  for ev in data['evidence']:
   if ev['subject_id'] not in lookup or ev['subject_id'] in groups['evidence']:errors.append(f'{ev["id"]}: missing evidence subject')
-  if date.fromisoformat(ev['reviewed_on'])>as_of:errors.append(f'{ev["id"]}: future review date')
-  if date.fromisoformat(ev['recheck_on'])<date.fromisoformat(ev['reviewed_on']):errors.append(f'{ev["id"]}: recheck precedes review')
+  if ev.get('reviewed_on') and date.fromisoformat(ev['reviewed_on'])>as_of:errors.append(f'{ev["id"]}: future review date')
+  if ev.get('reviewed_on') and date.fromisoformat(ev['recheck_on'])<date.fromisoformat(ev['reviewed_on']):errors.append(f'{ev["id"]}: recheck precedes review')
  for item in data['rules']:
   refs=evidence_refs(item)
   if item['state'] not in STATE_CODES:errors.append(f'{item["id"]}: invalid rule state')
@@ -86,11 +87,16 @@ def validate(data):
   if len(ids)!=len(set(ids)):errors.append(f'{item["code"]}: duplicate pathway coverage')
   if set(ids)!=pathways:errors.append(f'{item["code"]}: state must report coverage for every shared pathway')
   if item['publication_status'] in ('live','pilot') and not item.get('official_regulator_url'):errors.append(f'{item["code"]}: public state needs official regulator')
+  if item['publication_status'] in ('live','pilot') and not any(p['coverage_status']!='not-reviewed' and p.get('public_url') for p in item['pathways']):errors.append(f'{item["code"]}: public state needs at least one reviewed actionable route')
   for p in item['pathways']:
    if p.get('public_url') and (item['publication_status'] not in ('live','pilot') or p['coverage_status']=='not-reviewed'):errors.append(f'{item["code"]}: unreviewed route cannot be public')
+ for alias in data.get('aliases',[]):
+  require(alias['new_id'],'organizations','alias')
+  if alias['old_id'] in lookup:errors.append('Alias old identity must not duplicate an active record')
+ if len({a['old_id'] for a in data.get('aliases',[])})!=len(data.get('aliases',[])):errors.append('Duplicate alias')
  return errors
 if __name__=='__main__':
  parser=argparse.ArgumentParser();parser.add_argument('file',nargs='?',default=str(ROOT/'data/foundation/directory.json'));args=parser.parse_args()
  data=json.loads(Path(args.file).read_text());errors=validate(data)
  if errors:raise SystemExit('\n'.join(errors))
- print(f'PASS foundation: {len(data["organizations"])} organizations, {len(data["services"])} services, {len(data["evidence"])} evidence references, {len(data["pathways"])} pathways. Pilot scope; not full directory coverage.')
+ print(f'PASS shared contract: {len(data["organizations"])} organizations, {len(data["services"])} services, {len(data["evidence"])} evidence references, {len(data["pathways"])} pathways. Scope: {data["scope"]}; physical locations: {len(data["locations"])}.')

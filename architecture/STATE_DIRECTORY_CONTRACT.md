@@ -1,6 +1,6 @@
 # Replicable cannabis directory: stage-one contract
 
-Contract version: 1.0.0. Stage one defines the data model and visitor pathways. Ohio's existing public builders, CSV, counts and permanent links remain authoritative. This contract is a foundation pilot, not a claim that the full dataset has been migrated.
+Contract version: 1.0.0. Stage one defines the data model and visitor pathways. Stage two is now implemented: `data/directory.json` is canonical, with adapters preserving Ohio counts and permanent links. See `STAGE_TWO_MIGRATION.md` for current maintenance instructions. The separate foundation pilot below remains a contract fixture.
 
 ## Visitor pathways
 
@@ -16,7 +16,7 @@ Every state reports coverage for the same seven tasks. Do not make people choose
 | business | Find business services | Provider contact and documented capabilities | Capability, coverage, organization type |
 | community | Find groups or events | Contact, registration or participation page | Location, date, audience |
 
-Pathway definitions and task-success criteria are machine-readable in `data/foundation/directory.json`. They describe a reusable interface contract; shared UI templates are stage two.
+Pathway definitions and task-success criteria are machine-readable in `data/foundation/directory.json`. They describe a reusable interface contract; shared UI templates are implemented in stage two.
 
 ## Data boundaries
 
@@ -64,13 +64,13 @@ Adding a new state:
 
 The foundation pilot contains the existing 11 seed/supply organizations, 11 service routes and their source references. It intentionally has no location, rule, relationship or event rows yet. Existing Ohio pages still provide those resources. No existing source records, organization counts or links were removed.
 
-The imported seed evidence is explicitly labeled `supplier-profile`; individual shipping, address, inventory and catalog claims have not been decomposed into separate evidence rows. Fulfillment remains `unverified` and coverage empty in this pilot, even when the existing page quotes a seller policy. Stage two must split these claims before using them for fulfillment or coverage filters. Existing seed JSON remains the public seed builder's input until a reviewed adapter replaces it.
+The imported seed evidence is explicitly labeled `supplier-profile`; individual shipping, address, inventory and catalog claims have not been decomposed into separate evidence rows. Fulfillment remains `unverified` and coverage empty in this pilot, even when the existing page quotes a seller policy. Stage two must split these claims before using them for fulfillment or coverage filters. In stage two, the seed JSON becomes a generated compatibility download; the public seed builder reads a lossless canonical adapter.
 
 Pilot IDs use a deterministic initial import key because the seed list had no IDs. Once created, these IDs persist through name/website changes. Before merging pilot organizations into the master CSV, match existing identities and create aliases; do not create duplicate companies. The foundation validator does not perform fuzzy deduplication.
 
 Recheck date is a queue trigger, not a claim that a source is valid until that date. Pilot entries use a 30-day review queue. During migration, prioritize rules and licensing changes, service closures, fulfillment restrictions, and dated events; monitor official changes as well as scheduled reviews.
 
-## Stage two acceptance criteria
+## Stage two acceptance criteria and ongoing data work
 
 - Shared renderers and per-state configuration; no copy-and-edit state code.
 - Reviewed adapter preserving existing CSV IDs, source text, scope flags and relationship links.

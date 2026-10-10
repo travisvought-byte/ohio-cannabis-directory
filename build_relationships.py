@@ -4,7 +4,7 @@ import csv
 import html
 from pathlib import Path
 from build_directory import TEMPLATE as DIRECTORY_TEMPLATE
-from directory_data import ROOT, RELEASE, load_records, relationship_id, script_json
+from directory_data import ROOT, RELEASE, load_records, load_relationship_records, relationship_id, script_json
 from directory_brand import brand_page
 
 OUT = ROOT / 'relationships.html'
@@ -22,8 +22,7 @@ def main():
     def match(name):
         candidates = {r['Record ID']: r for r in lookup.get(name_key(name), [])}
         return next(iter(candidates.values())) if len(candidates) == 1 else None
-    with (ROOT / 'b2b-relationships.csv').open(encoding='utf-8-sig', newline='') as f:
-        source = list(csv.DictReader(f))
+    source = load_relationship_records()
     records = []
     for r in source:
         a, b = match(r['Organization A']), match(r['Organization B / Counterparty'])

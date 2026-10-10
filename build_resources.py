@@ -2,35 +2,12 @@
 import html
 from pathlib import Path
 from directory_brand import brand_page
+from directory_data import load_resource_routes
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'resources.html'
 REVIEWED = '2026-10-09'
 DCC = 'https://com.ohio.gov/divisions-and-programs/cannabis-control'
-RESOURCES = [
- ('dispensaries','Find a dispensary',[
-  ('Ohio Division of Cannabis Control',DCC,'Ohio’s official starting point for licensed dispensary locations. Choose “Dispensary Map” or “Dispensaries” on the state page. Check the license type, hours and current menu before traveling.'),
-  ('Medical patient dispensary lookup',DCC+'/patients-caregivers/find-dispensary','State guidance and location lookup for patients and caregivers. Confirm that the location serves medical patients.')]),
- ('seeds','Find seeds and growing supplies',[
-  ('Search the expanded seed supplier directory','seeds.html','Compare 11 supplier entries by Ohio connection, Michigan location, reviewed seed types and published shipping evidence. Includes 10 seed providers and one Ohio grow-supply / retailer lead.'),
-  ('Dutch Wilson Genetics','https://dutchwilsonseeds.com/','Ohio-based seed company with regular and feminized seed catalogs. Published contact: (740) 272-2349; dutchwilsonseeds@yahoo.com. Catalog reviewed; current stock and delivery eligibility must be confirmed with the seller.'),
-  ('Humboldt Seed Company U.S. catalog','https://californiahempseeds.com/shop/','Seed catalog identifying Humboldt Seed Company, including feminized options. National supplier; an Ohio storefront or Ohio delivery guarantee has not been verified.'),
-  ('Find cultivation suppliers in the directory','index.html?q=cultivation','Search existing organizations for cultivation services and equipment. Use your city or county as an additional search term; service areas are descriptive, not measured distances.')]),
- ('records','Get help clearing a record',[
-  ('Ohio Legal Help: record sealing','https://www.ohiolegalhelp.org/topic/seal-criminal-record','Statewide explanation of sealing, expungement and legal-aid options. Start here to identify the right assistance for your county.'),
-  ('Eligibility interview and action plan','https://www.ohiolegalhelp.org/letters-forms/criminal-sealing-eligibility','A guided record-sealing interview that produces next steps. Have your court names, case numbers and charge details ready. This general tool is separate from the marijuana-specific statute below.'),
-  ('Opportunity Port','https://opportunityport.org/faqs/','Currently serves Franklin County residents seeking help with Ohio records. Legal assistance is free; filing fees may apply. Services outside Franklin County are paused.'),
-  ('Marijuana-specific expungement: ORC 2953.321','https://codes.ohio.gov/ohio-revised-code/section-2953.321','Effective March 20, 2026. Covers specified marijuana/hashish possession cases from before that date, including certain dismissed cases. Apply to the sentencing court with case information and evidence of the covered offense. Relief requires a court process; it is not automatic. The statute sets a $50 application fee unless indigent.')]),
- ('medical','Start as a medical patient or caregiver',[
-  ('Ohio patient and caregiver steps',DCC+'/patients-caregivers/obtain-medical-marijuana','Official steps for obtaining a recommendation, registering and purchasing medical cannabis. Bring an active registry card, active recommendation and government-issued ID when purchasing.'),
-  ('Patient registry help',DCC,'For registry questions, the state publishes 1-833-464-6627 and MMCPRegistry@com.ohio.gov. Choose patient and caregiver resources on the DCC page.')]),
- ('rules','Understand the Ohio rules',[
-  ('Home growing: ORC 3796.04','https://codes.ohio.gov/ohio-revised-code/section-3796.04','Adults 21+ may grow up to six plants per person, with no more than twelve at one residence. Grow at your primary residence in a secured enclosed area, inaccessible to people under 21 and not visible from public space. Rental prohibitions and other residence restrictions apply. The section prohibits selling homegrown marijuana, hydrocarbon extraction and public consumption.'),
-  ('Ohio cannabis law: current chapter','https://codes.ohio.gov/ohio-revised-code/chapter-3796','Read the current law for possession, transport, purchase, patient and other requirements. Home-growing permission does not answer every possession or transport question.'),
-  ('State cannabis guidance',DCC,'The official hub links the Ohio Cannabis FAQ, current rules and patient guidance. Use current state sources when an older online summary conflicts.')]),
- ('community','Find community and business connections',[
-  ('Midwest CannaWomen','https://midwestcannawomen.crd.co/','Ohio-focused community resource for cannabis patients, caregivers and industry connections.'),
-  ('Search Ohio organizations','index.html','Search the full business and nonprofit directory by need, organization, city or service area.'),
-  ('Browse documented relationships','relationships.html','Explore the existing source-documented relationships between organizations.')])]
+RESOURCES = load_resource_routes()
 
 def main():
  sections = []
