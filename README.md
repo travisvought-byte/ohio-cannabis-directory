@@ -16,9 +16,7 @@ The site uses an Ohio State scarlet-and-gray color palette with accessible contr
 
 ![Veteran Home Guardians](assets/vhg-logo.png)
 
-**Created, compiled, and maintained by Travis Vought.** Shared as a free public resource in support of [Veteran Home Guardians](https://vethomeguard.org/). This distinguishes Travis's project-development work from VHG's charitable use and outreach; see [Project stewardship, attribution, and reuse](PROJECT_STEWARDSHIP.md).
-
-**Commission custom work:** [Research, market maps, custom directories, and data maintenance by Travis Vought](https://travisvought-byte.github.io/ohio-cannabis-directory/work-with-travis.html) are offered separately from VHG donations and sponsorships. The free public directory and its licenses are unchanged.
+Created and maintained by [Travis Vought](https://travisvought-byte.github.io/ohio-cannabis-directory/work-with-travis.html), and shared in support of [Veteran Home Guardians](https://vethomeguard.org/). [Project stewardship and reuse](PROJECT_STEWARDSHIP.md).
 
 The election-season Libertarian Party of Ohio entry is a clearly labeled personal, unpaid endorsement by the directory maintainer, not a paid placement or party sponsorship.
 
