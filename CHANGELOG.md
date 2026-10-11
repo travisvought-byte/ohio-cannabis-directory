@@ -1,3 +1,9 @@
+# October 11, 2026 additions
+
+- Added public business assessment adapted from the August 27 v2 workbook.
+- Added printable dispensary shopping plan and private browser supply calculator.
+- Added aggregate GoatCounter action events without collecting worksheet answers or search text.
+
 # v4.22 — October 10, 2026
 
 Corrected VHG counties and current program description, MIF online-resource scope and Detroit equipment tags. Excluded two duplicate cross-references from distinct public organization counts while preserving their IDs and evidence. Clarified documented Ohio expo contacts and CannAscend’s dated parent-company route. Existing curator choices and inclusion decisions preserved. 564 retained rows: 516 public organizations and 48 reference records.

@@ -18,7 +18,7 @@ def brand_header():
     return ('<a class="vhg-brand" href="https://vethomeguard.org/">'
             '<img src="assets/vhg-logo.png" alt="" width="80" height="80">'
             '<span><strong>Veteran Home Guardians</strong><span>A voice for all veterans</span></span></a>'
-            '<nav class="knowledge-links" aria-label="Cannabis learning"><a href="knowledge.html">Cannabis knowledge</a><a href="ancestry.html">Strain library</a><a href="https://travisvought-byte.github.io/vhg-veteran-resident-guide/">Veteran Resident Guide</a></nav>')
+            '<nav class="knowledge-links" aria-label="Cannabis learning"><a href="buyer-guide.html">Dispensary shopping guide</a><a href="assessment.html">Business self-assessment</a><a href="knowledge.html">Cannabis knowledge</a><a href="ancestry.html">Strain library</a><a href="https://travisvought-byte.github.io/vhg-veteran-resident-guide/">Veteran Resident Guide</a></nav>')
 
 def update_url(kind='listing'):
     subjects = {'listing': 'Ohio Cannabis Directory: listing update',
@@ -29,6 +29,7 @@ def update_url(kind='listing'):
     return 'mailto:' + EMAIL + '?' + urlencode({'subject': subjects[kind], 'body': body}, quote_via=quote)
 
 def brand_page(page):
+    page = page.replace('</head>', '<script src="assets/analytics.js"></script></head>')
     return (page.replace('__VHG_BRAND__', brand_header())
             .replace('__VHG_CSS__', BRAND_CSS)
             .replace('__UPDATE_URL__', update_url())

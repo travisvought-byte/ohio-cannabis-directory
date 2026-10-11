@@ -103,7 +103,7 @@ The site code and build scripts are released under the MIT License.
 
 ## Consumer resources
 
-The homepage now offers six need-based routes through [consumer resources](https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html): dispensaries, seeds and growing supplies, record clearing, medical patients, Ohio rules, and community connections. Sources reviewed October 10, 2026. Opportunity Port is labeled Franklin County only; seed catalogs do not imply verified Ohio delivery. These referral resources are separate from organization counts. Regenerate with `python build_resources.py`. Nearby distance search and a current statewide location import remain future work.
+The homepage now offers six need-based routes through [consumer resources](https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html): dispensaries, seeds and growing supplies, record clearing, medical patients, Ohio rules, and community connections. Sources reviewed October 10, 2026. Opportunity Port is labeled Franklin County only; seed catalogs do not imply verified Ohio delivery. These referral resources are separate from organization counts. Regenerate with `python build_resources.py`. The location finder now offers optional distance sorting over a dated government-map snapshot; operating status and completeness still need confirmation.
 
 Seed supplier expansion: `seeds.html` offers 11 entries (10 seed providers and one Ohio grow-supply / retailer lead), location and seed-type filters, text search and downloadable source data in `seed-suppliers.json`. Regenerate with `python build_seeds.py`. Shipping evidence is labeled without inferring legal eligibility.
 
@@ -132,3 +132,11 @@ The [shared directory contract](architecture/STATE_DIRECTORY_CONTRACT.md) define
 ## Veteran and family resources
 
 Visit the [VHG Veteran Resident Guide](https://travisvought-byte.github.io/vhg-veteran-resident-guide/) for veteran, senior and disability support resources.
+
+## Shopping guide, business assessment and click analytics
+
+`buyer-guide.html` offers a printable first-visit worksheet and a supply calculator using the buyer's own amount and frequency. `assets/dispensary-shopping-guide.pdf` is its three-page companion. Rebuild with `python build_tools.py` and `python build_buyer_pdf.py` (ReportLab required for the PDF).
+
+`assessment.html` adapts Travis Vought's 33-question **Cannabis Financial Access & Compliance Readiness Assessment v2** from Google Drive, dated August 27, 2026. Only blank questions, evidence prompts and weights are imported into `data/business-assessment.json`; regulatory references remain explicitly dated. Scores and notes live in browser memory, with export and print controls. Unanswered questions do not count as zero and incomplete assessments receive a partial score without an overall rating. This does not certify compliance or bank eligibility.
+
+`assets/analytics.js` sends aggregate GoatCounter events for navigation, downloads, external domains, contact actions, filters and search use. It does not transmit search text, form answers, evidence notes, coordinates or destination query strings. Pageview paths exclude query strings. Events appear as `action:<page>:<action>` in the existing GoatCounter dashboard. Counts begin after deployment and may be reduced by blockers or a failed analytics script. See `architecture/ANALYTICS.md`.

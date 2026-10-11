@@ -1,6 +1,7 @@
 """Build the growing strain guide and source-attributed ancestry exports."""
 import csv
 import json
+from directory_brand import brand_page
 from strain_ancestry import DATA, ROOT, analyze
 OUT = ROOT / 'ancestry.html'
 
@@ -35,7 +36,7 @@ $('producer').innerHTML+=[...new Set(data.strains.filter(catalog).map(s=>s.produ
 $('decisions').innerHTML=data.resolutions.map(r=>'<div class="identity"><strong>'+escape(r.decision)+'</strong><p>'+r.strain_ids.map(id=>label(byId[id])).join('<br>')+'</p><p>'+escape(r.reason)+'</p></div>').join('');for(const id of ['q','mode','producer','type','effect','flavor','sort'])$(id).addEventListener(id==='q'?'input':'change',()=>{selectedId=null;history.replaceState(null,'',location.pathname);page=1;render();});for(const [id,delta] of [['prev',-1],['next',1]])$(id).addEventListener('click',()=>{page+=delta;render();$('count').scrollIntoView({block:'start'});});
 const selected=byId[new URLSearchParams(location.search).get('strain')];if(selected){$('q').value=selected.name;if(!catalog(selected))$('mode').value='lines';}render();
 </script></body></html>'''.replace('__DATA__',payload).replace('__COUNT__',str(len(catalog))).replace('__NAMES__',str(data['selection']['distinct_name_count']))
-    OUT.write_text(page)
+    OUT.write_text(brand_page(page))
     strains={s['id']:s for s in data['strains']};sources={s['id']:s for s in data['sources']}
     with (ROOT/'data/strains/ancestry.csv').open('w',newline='') as f:
         writer=csv.writer(f,lineterminator='\n');writer.writerow(['claim_id','child_id','strain','breeder','parent_1_id','parent_1_name','parent_2_id','parent_2_name','status','source_urls','reviewed_on','notes'])
