@@ -121,10 +121,14 @@ The [shared directory contract](architecture/STATE_DIRECTORY_CONTRACT.md) define
 
 `data/sources/ohio-dispensaries.json` preserves the original response. Run `python import_locations.py`, `python validate_foundation.py data/directory.json`, then `python build_locations.py` after reviewing a replacement snapshot. Stable location IDs derive from state and license number; legal entities match only by exact unique name. No store hours or inventory claims are imported.
 
-## 100-strain guide and ancestry repository
+## Growing strain guide and ancestry repository
 
-`ancestry.html` contains 100 curated popular strain profiles, with genetics, history, reader-reported effects and flavors, filters, source links and review notes. It is an unranked educational selection, not a definitive national top-100 sales ranking or an Ohio inventory feed. `data/strains/strains.csv` exports all 100 profiles for Excel; `data/strains/ancestry.json` retains source-attributed ancestry and separate breeder-line examples. See `data/strains/README.md` for selection and conflict-review rules.
+`ancestry.html` contains 336 source-linked profiles covering 318 distinct names, starting with 100 classics and adding producer-specific flower catalogs and dated Ohio menu observations. Filters cover producer, menu evidence, type, sensory reports and review status. This is an unranked educational selection, with no fixed count cap or live-stock claim. `data/strains/strains.csv` exports the profiles; `ohio-flower.csv` exports 27 dated observations. The canonical JSON retains attributed ancestry, separate identities and conflict-review notes. See `data/strains/README.md` for research and maintenance rules.
 
 ### Cannabis knowledge
 
 `knowledge.html` provides 30 searchable explanations and buying tips covering definitions, product forms, processing, label units, batch reports and storage. General concepts cite public-health agencies and testing laboratories; Ohio labeling guidance cites the September 11, 2026 rule. Shared learning links connect every directory page with the strain library and knowledge hub. Rebuild with `python build_knowledge.py`; content and sources live in `data/knowledge.json`.
+
+## Veteran and family resources
+
+Visit the [VHG Veteran Resident Guide](https://travisvought-byte.github.io/vhg-veteran-resident-guide/) for veteran, senior and disability support resources.

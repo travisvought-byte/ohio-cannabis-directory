@@ -1,6 +1,6 @@
-# 100 popular cannabis strains and ancestry
+# Growing cannabis strain library and ancestry
 
-Open `ancestry.html` for the searchable guide. `strains.csv` exports exactly 100 market-name profiles for Excel. `ancestry.csv` exports separate attributed parentage claims, including supporting breeder-line examples. `ancestry.json` is the canonical source. Supporting unresolved parent records are excluded from the 100-profile count.
+Open `ancestry.html` for 336 searchable profiles covering 318 distinct names. There is no fixed catalog cap. `strains.csv` exports every public profile for Excel; `ohio-flower.csv` exports dated flower menu observations. `ancestry.csv` exports attributed claims; `ancestry.json` is canonical. Supporting parent references and breeder examples are excluded from the public catalog count.
 
 ## Selection and details
 
@@ -10,7 +10,7 @@ Reviewed October 10, 2026. This is an editorial, unranked collection of widely r
 - https://www.leafly.com/news/strains-products/top-100-marijuana-strains
 - https://weedmaps.com/news/2020/05/12-of-the-most-popular-strains-on-weedmaps/
 
-Each profile links to the individually reviewed Leafly strain page. Reader-report counts are a dated engagement snapshot, not sales, independent customers or a popularity rank across all strains. The optional review-count sort compares only this collection. Effects and flavors are reader-reported descriptors, not clinical claims. Profile terpene reports do not certify current batch chemistry; check product labels for cannabinoids and terpenes. No fixed THC/CBD numbers, therapeutic indications, product prices or live-stock promises are inferred.
+The original classics link to individually reviewed Leafly pages. Additions link to the reviewed producer profile or dated menu source. Producer sensory descriptors are attributed reports; missing effects and reader counts remain empty. Reader-report counts are a dated engagement snapshot, not sales, independent customers or a popularity rank across all strains. The optional review-count sort compares only this collection. Effects and flavors are reader-reported descriptors, not clinical claims. Profile terpene reports do not certify current batch chemistry; check product labels for cannabinoids and terpenes. No fixed THC/CBD numbers, therapeutic indications, product prices or live-stock promises are inferred.
 
 Genetics and history use concise original summaries. Secondary ancestry claims are labeled as such. Where checked breeder or producer sources differ, the page displays attribution and review notes. No source descriptions, reviews or images are republished wholesale.
 
@@ -34,7 +34,7 @@ Genetics and history use concise original summaries. Secondary ancestry claims a
 5. Run `python strain_ancestry.py` and inspect name collisions and parentage review. Record identity decisions without deleting evidence.
 6. Run `python tests/ancestry.py` and `python build_ancestry.py`.
 
-Only concise factual claims and original notes are stored. Source descriptions and images are not copied. Public menus can later supply a separate last-seen availability table; they are not ancestry evidence.
+Only concise factual claims and original notes are stored. Source descriptions and images are not copied. Public menus supply separate dated observations; they are not ancestry evidence or proof of current inventory.
 
 ## Current review examples
 
@@ -47,3 +47,19 @@ Only concise factual claims and original notes are stored. Source descriptions a
 ## Verification
 
 Run `python tests/ancestry.py`, `node tests/ancestry.cjs` and `node tests/ancestry-browser.cjs`. Python checks profile completeness, source references, identity collisions, competing claims, graph cycles and deterministic HTML/CSV exports. UI checks cover aliases, filters, sorting, exact record links, pagination, competing trees and mobile layout. Run `python build_ancestry.py` after changing the canonical data or page builder.
+
+## Ohio expansion: October 10, 2026
+
+- 112 individually reviewed Klutch profiles, including its Cookies and Josh D collaborations. A verification wall blocked the Josh D OG detail page; it was not padded into the catalog.
+- 36 individually reviewed Certified profiles, with producer-credited breeders and sensory notes. Sour Tangie is retained as a distinct producer context: Certified describes an RPO #3 phenotype, which must not inherit other same-name parentage.
+- 45 individually reviewed Standard Wellness profiles. This is a multi-state producer catalog; it does not establish availability in Ohio. Gusher Mintz, Jungle Pie and Citrus Cookie Kush have internally inconsistent lineage descriptions. Sour Snow has inconsistent type labels. Review notes retain these differences; ambiguous expressions are not modeled as settled crosses.
+- 20 Buckeye profiles from its consolidated current genetics page. Preserve its abbreviations; do not guess what every shorthand means. Only short names, type and factual crosses are retained from the consolidated page.
+- 23 additional producer-specific menu profiles with unknown genetics, plus observations attached to existing exact producer/name contexts. There are 27 observations across Warren, Cincinnati and Columbus, with package-size duplicates collapsed. No prices, potency, demand, clinical effects or live-stock promises are inferred.
+
+The Garden source explicitly shows an October 10, 6:02 PM update. Warren's public menu was reviewed on October 10 without a published update timestamp. Columbus product pages may reflect older cached listings. `checked_on` means source review, not inventory confirmation. Catalog inclusion and listing frequency are not statewide sales popularity. An older Firelands genetics sheet was located but not used to pad the current catalog.
+
+### Maintaining the growing catalog
+
+Add profiles with stable IDs, explicit producer context, sources and a review date. Set `catalog: true`; retain `popular` only as the original editorial-classics flag. Update selection profile/name counts as an audit snapshot, never as a catalog limit. Empty arrays mean unestablished effects, flavors or terpenes; `review_count: null` means no checked reader-report count.
+
+For menu observations, record the profile, store, city, source, checked date and source update time when available. Keep `inventory_status: not-confirmed`. Evidence remains separate from lineage claims. Run the Python validator and ancestry tests, rebuild, then run UI/browser checks before publishing. Complex pedigrees remain text unless intermediate identities are explicitly sourced. Same-name producer profiles remain separate; only a documented identity decision can merge them.

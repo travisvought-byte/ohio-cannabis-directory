@@ -22,13 +22,52 @@ def analyze(data):
     strains, sources = maps['strains'], maps['sources']
     names, parents, adjacency = defaultdict(set), defaultdict(set), defaultdict(set)
     for s in strains.values():
-        if s['kind'] not in ('seed-line', 'clone', 'landrace', 'unresolved-parent', 'market-name'):
+        if s['kind'] not in ('seed-line', 'clone', 'landrace', 'unresolved-parent', 'market-name', 'producer-profile'):
             errors.append(f"Invalid kind: {s['id']}")
         for name in [s['name'], *s['aliases']]:
             names[normalize(name)].add(s['id'])
     popular = [s for s in strains.values() if s.get('popular')]
+    catalog = [s for s in strains.values() if s.get('catalog') or s.get('popular')]
+    if data.get('version', 1) >= 3:
+        if len(catalog) != data.get('selection', {}).get('expected_profile_count'):
+            errors.append('Catalog count differs from reviewed selection metadata')
+        distinct = len({normalize(s['name']) for s in catalog})
+        if distinct != data.get('selection', {}).get('distinct_name_count'):
+            errors.append('Distinct name count differs from reviewed selection metadata')
+        for s in catalog:
+            for field in ('category', 'lineage_text', 'history', 'review_note', 'profile_source_ids', 'reviewed_on'):
+                if not s.get(field):
+                    errors.append(f"Missing profile field {field}: {s['id']}")
+            for field in ('reported_effects', 'reported_flavors', 'reported_terpenes', 'ohio_evidence'):
+                if not isinstance(s.get(field), list):
+                    errors.append(f"Invalid profile list {field}: {s['id']}")
+            if s.get('category') not in ('indica', 'sativa', 'hybrid'):
+                errors.append(f"Invalid category: {s['id']}")
+            if any(ref not in sources for ref in s.get('profile_source_ids', [])):
+                errors.append(f"Missing profile source: {s['id']}")
+            if s.get('kind') == 'producer-profile' and not s.get('producer'):
+                errors.append(f"Missing producer identity: {s['id']}")
+            if s.get('review_count') is not None and (not isinstance(s['review_count'], int) or s['review_count'] <= 0):
+                errors.append(f"Invalid review count: {s['id']}")
+            for evidence in s.get('ohio_evidence', []):
+                if evidence.get('source_id') not in sources or evidence.get('kind') not in ('producer-catalog', 'ohio-menu'):
+                    errors.append(f"Invalid Ohio evidence: {s['id']}")
+        observation_ids = set()
+        for observation in data.get('observations', []):
+            if observation['id'] in observation_ids:
+                errors.append('Duplicate menu observation ID')
+            observation_ids.add(observation['id'])
+            if observation.get('strain_id') not in strains or observation.get('source_id') not in sources:
+                errors.append(f"Invalid menu reference: {observation['id']}")
+            if observation.get('state') != 'OH' or observation.get('form') != 'flower' or observation.get('inventory_status') != 'not-confirmed':
+                errors.append(f"Unsupported inventory claim: {observation['id']}")
+            try:
+                if date.fromisoformat(observation['checked_on']) > date.today():
+                    errors.append(f"Future menu date: {observation['id']}")
+            except (ValueError, KeyError):
+                errors.append(f"Invalid menu date: {observation['id']}")
     if data.get('version', 1) >= 2:
-        if len(popular) != 100 or len({normalize(s['name']) for s in popular}) != 100:
+        if data.get('version') == 2 and (len(popular) != 100 or len({normalize(s['name']) for s in popular}) != 100):
             errors.append('Popular catalog must contain 100 distinct display names')
         for s in popular:
             for field in ('category', 'lineage_text', 'history', 'review_note', 'profile_source_ids', 'reported_effects', 'reported_flavors', 'reviewed_on'):
@@ -54,7 +93,7 @@ def analyze(data):
             errors.append(f"Unknown strain reference: {c['id']}")
         if not c['source_ids'] or any(s not in sources for s in c['source_ids']):
             errors.append(f"Missing source: {c['id']}")
-        if c['status'] not in ('breeder-reported', 'secondary-reported', 'disputed', 'superseded'):
+        if c['status'] not in ('breeder-reported', 'producer-reported', 'secondary-reported', 'disputed', 'superseded'):
             errors.append(f"Invalid claim status: {c['id']}")
         if c['relationship'] != 'cross' or c['parent_roles'] != 'unspecified':
             errors.append(f"Unsupported relationship or parent roles: {c['id']}")

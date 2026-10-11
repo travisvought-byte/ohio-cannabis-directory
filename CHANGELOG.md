@@ -159,3 +159,9 @@ Defined the shared data contract and seven visitor pathways; added a JSON schema
 - Added a source-linked knowledge hub with 30 searchable topics and a practical label-reading checklist.
 - Linked learning resources throughout the directory and strain guide.
 - Published the curated 100-strain guide with attributed ancestry and downloadable data.
+
+## October 10, 2026 — Growing Ohio-relevant strain library
+
+- Removed the fixed 100-profile limit; expanded to 336 profiles and 318 distinct names.
+- Added sourced producer catalogs, 27 dated Ohio flower observations, producer/menu filters and a separate observation CSV.
+- Preserved producer identities, unknown fields and conflicting lineage notes; no popularity ranking or live inventory inferred.
