@@ -251,8 +251,6 @@ __VHG_CSS__
   .highlight-card a:hover{border-bottom-color:var(--field-deep)}
   .home-empty{font-size:.87rem;color:var(--ink-soft);margin:.2rem 0 0}
 
-  .directory-intro{font-size:.95rem;color:var(--ink-soft);margin:.1rem 0 1rem;max-width:62ch}
-
   /* ---- the search is the hero -------------------------------------- */
   .searchbox{position:relative; margin-bottom:.85rem}
   #q{
