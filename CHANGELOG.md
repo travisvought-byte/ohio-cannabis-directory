@@ -5,6 +5,7 @@
 - Improve mobile tap targets and reading width; remove repeated calculator caveats.
 - Document four analytics questions, privacy exclusions and Travis’s separate dashboard check.
 - Mobile Lighthouse: 100 performance and 100 accessibility on homepage, buyer guide and assessment (local production HTML).
+- Keep fixture rendering read-only so migration tests cannot overwrite public state data.
 - Update browser tests for fetched data and add the historical review migration check to CI.
 
 # v4.25 - October 11, 2026

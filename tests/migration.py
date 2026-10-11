@@ -21,6 +21,7 @@ assert sum(a['old_id'].startswith('org-seed') for a in data['aliases'])==1
 assert all(not s['coverage'] for s in data['services'] if s['origin']=='organization-profile')
 assert all(e['status']=='source-listed' for e in data['evidence'] if e['claim']=='organization-profile')
 # The same renderer accepts another state pack without copied code. Fixtures never publish.
+public_state_before=(ROOT/'data/public-state.json').read_bytes()
 fixture=copy.deepcopy(data);pa=copy.deepcopy(fixture['states'][0]);pa.update(code='PA',name='Pennsylvania',publication_status='research-only');
 for p in pa['pathways']:p.pop('public_url',None);p['coverage_status']='not-reviewed'
 fixture['states'].append(pa);assert not validate(fixture)
@@ -28,6 +29,7 @@ page=build_page(fixture);assert '<option value="PA">' not in page
 pa.update(publication_status='pilot',official_regulator_url='https://example.org/test-regulator');pa['pathways'][0].update(coverage_status='starter',public_url='https://example.org/test-route');assert not validate(fixture)
 assert '<option value="PA">Pennsylvania (pilot)</option>' in build_page(fixture)
 assert all('PA' not in s.get('listed_in',[]) for s in fixture['services'])
+assert (ROOT/'data/public-state.json').read_bytes()==public_state_before, 'Fixture render must not overwrite public state data'
 # A profile source cannot support a shipping badge.
 bad=copy.deepcopy(data);seed=next(s for s in bad['services'] if s.get('origin')=='seed-profile');seed['fulfillment'][0]['status']='confirmed';assert any('matching claim-level evidence' in e for e in validate(bad))
 print('PASS migration: exact legacy exports, stable IDs, 60 relationship IDs, seed aliases, conservative coverage and state-template isolation.')

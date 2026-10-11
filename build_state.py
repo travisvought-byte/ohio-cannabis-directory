@@ -6,7 +6,7 @@ from directory_brand import brand_page
 from public_data import externalize
 OUT=ROOT/'state.html'
 
-def build_page(data):
+def build_page(data,persist=False):
  public_states=[s for s in data['states'] if s['publication_status'] in ('live','pilot')]
  orgs={o['id']:o for o in data['organizations']};evidence={e['id']:e for e in data['evidence']};cards=[]
  for s in data['services']:
@@ -19,7 +19,7 @@ def build_page(data):
  payload=dict(states=public_states,pathways=data['pathways'],cards=cards,aliases=data.get('aliases',[]),rules=data['rules'],events=data['events'])
  options=''.join(f'<option value="{s["code"]}">{html.escape(s["name"])}'+(' (pilot)' if s['publication_status']=='pilot' else '')+'</option>' for s in public_states)
  page=(ROOT/'templates/state.html').read_text().replace('__STATE_OPTIONS__',options).replace('__DATA__',script_json(payload))
- return brand_page(externalize(page,script_json(payload),payload,"data/public-state.json"))
+ return brand_page(externalize(page,script_json(payload),payload,"data/public-state.json",persist=persist))
 def main():
- OUT.write_text(build_page(load_directory()));print('Built shared state.html from state packs and canonical service records')
+ OUT.write_text(build_page(load_directory(),persist=True));print('Built shared state.html from state packs and canonical service records')
 if __name__=='__main__':main()
