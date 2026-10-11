@@ -13,6 +13,10 @@ TEMPLATE = r'''<!doctype html>
 <title>Ohio Cannabis Industry Directory | Ohio Cannabis Directory</title>
 <meta name="description" content="Find Ohio cannabis businesses, industry contacts, suppliers and service providers in a free source-linked directory.">
 <link rel="canonical" href="https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ohio Cannabis Industry Directory">
+<meta property="og:description" content="Browse Ohio cannabis businesses, industry contacts, suppliers and service providers in a free source-linked directory.">
+<meta property="og:image" content="https://travisvought-byte.github.io/ohio-cannabis-directory/assets/vhg-logo.png">
 <script>location.replace('directory.html'+location.search+location.hash);</script>
 <meta http-equiv="refresh" content="0;url=directory.html">
 <style>
