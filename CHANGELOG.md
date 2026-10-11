@@ -1,3 +1,8 @@
+# v4.27 - October 11, 2026
+
+- Removed plant-material possession-limit copy and calculator alerts at Travis’s request, including the harvest-limit discussion in the unpublished home-growing draft.
+- Supply-duration and shopping calculations remain available.
+
 # v4.26 - October 11, 2026
 
 - Load directory, locations, strain and state data after first paint; keep crawlable directory fallback and initial HTML below 200 KB on every page.

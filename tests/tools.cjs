@@ -7,7 +7,7 @@ const adom=new JSDOM('<a href="https://provider.example/private?q=secret">Provid
  const p=load('buyer-guide.html'),doc=p.window.document;
  const set=(id,v)=>{const e=doc.getElementById(id);e.value=v;e.dispatchEvent(new p.window.Event(e.tagName==='SELECT'?'change':'input'));};
  for(const [id,v] of Object.entries({quantity:100,amount:10,frequency:2,weeks:4,unit:'grams'}))set(id,v);
- assert.match(doc.getElementById('possession-notice').textContent,/2.5-ounce/);
+ assert.equal(doc.getElementById('possession-notice').textContent,'');assert.match(doc.getElementById('estimate').textContent,/80.00 grams/);
  set('weeks','3');assert.equal(doc.getElementById('possession-notice').textContent,'');
  set('product','Concentrates / cartridges');assert.match(doc.getElementById('possession-notice').textContent,/15-gram extract/);
  set('weeks','.5');assert.equal(doc.getElementById('possession-notice').textContent,'');
