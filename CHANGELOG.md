@@ -1,3 +1,10 @@
+# October 11, 2026 follow-up
+
+- Critical zero-score gaps now force a RED assessment rating, even when the weighted percentage is high.
+- Added private, opt-in device save/resume, clear controls, section percentages and a prioritized action plan.
+- Deferred GoatCounter initialization until the page is parsed to avoid duplicate trackers; seed search now recognizes hidden empty results.
+- Verified private saved answers stay out of analytics.
+
 # October 11, 2026 additions
 
 - Added public business assessment adapted from the August 27 v2 workbook.

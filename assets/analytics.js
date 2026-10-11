@@ -30,12 +30,16 @@
   document.addEventListener('input', function (e) {
     if (!['q','search'].includes(e.target.id)) return;
     clearTimeout(timer); timer = setTimeout(function () { track('search-used');
-      var results=document.getElementById('results');
-      if(results && (results.children.length===0 || /Nothing matches|No matches|No results/i.test(results.textContent))) track('search-no-results');
+      var results=document.getElementById('seed-results') || document.getElementById('results');
+      if(results && (results.children.length===0 || [...results.children].every(function(child){return child.hidden || child.style.display==='none';}) || /Nothing matches|No matches|No results/i.test(results.textContent))) track('search-no-results');
     },1500);
   });
   document.addEventListener('change',function(e){if(e.target.tagName==='SELECT' && !e.target.closest('#assessment-form'))track('filter-changed');});
+  function initialize() {
   if (!document.querySelector('script[data-goatcounter]')) {
     var script=document.createElement('script');script.async=true;script.src='https://gc.zgo.at/count.js';script.dataset.goatcounter='https://travisvought.goatcounter.com/count';document.head.appendChild(script);
   }
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initialize, {once:true});
+  else initialize();
 })();
