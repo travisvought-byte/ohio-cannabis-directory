@@ -1,3 +1,9 @@
+# October 11 consumer tools completion
+
+- Added THC/CBD label-content arithmetic for pieces, mL, whole-package fractions and weight percentages, with unit-specific validation.
+- Published the existing two-page visit companion: one-page shopping handoff plus personal experience journal.
+- Linked the companion from the shopping guide; calculator inputs remain private and are not saved or sent to analytics.
+
 # October 11, 2026 follow-up
 
 - Critical zero-score gaps now force a RED assessment rating, even when the weighted percentage is high.
