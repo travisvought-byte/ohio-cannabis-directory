@@ -20,8 +20,8 @@ def brand_header():
     return ('<a class="vhg-brand" href="index.html"><img src="assets/vhg-logo.png" alt="" width="48" height="48">'
             '<span><strong>Ohio Cannabis Directory</strong></span></a>'
             '<nav class="knowledge-links" aria-label="Primary">'
-            '<a href="locations.html">Find a dispensary</a><a href="buyer-guide.html">Shop smart</a>'
-            '<a href="knowledge.html">Learn</a><a href="directory.html">Business directory</a>'
+            '<a href="directory.html">Business directory</a><a href="locations.html">Find a dispensary</a>'
+            '<a href="buyer-guide.html">Shop smart</a><a href="knowledge.html">Learn</a>'
             '<a href="assessment.html">Business self-check</a>'
             '<a href="https://travisvought-byte.github.io/vhg-veteran-resident-guide/">Veteran Resident Guide</a></nav>')
 
