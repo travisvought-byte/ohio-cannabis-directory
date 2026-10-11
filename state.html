@@ -30,4 +30,4 @@ const today=new Date();today.setHours(0,0,0,0);const limit=new Date(today);limit
 history.replaceState(null,'',link(current()));
 }
 stateEl.onchange=()=>{requestedState=stateEl.value;selectedService='';render()};pathEl.onchange=()=>{selectedService='';render()};qEl.oninput=()=>{selectedService='';render()};for(const el of [sexEl,flowerEl,fulfillEl])el.onchange=()=>{selectedService='';render()};$('state-reset').onclick=()=>{qEl.value='';sexEl.value='';flowerEl.value='';fulfillEl.value='';selectedService='';render()};$('state-share').onclick=async()=>{try{await navigator.clipboard.writeText(link(current()).href);$('share-status').textContent='Link copied.'}catch{$('share-status').textContent='Copy the page address to share these filters.'}};window.addEventListener('popstate',load);load();
-</script><script data-goatcounter="https://travisvought.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></body></html>
+</script></body></html>

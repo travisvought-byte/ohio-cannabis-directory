@@ -15,3 +15,5 @@ Review weekly: which pages receive visitors, which routes get clicks, where sear
 Buyer and assessment inputs are excluded. Query strings are stripped from pageview paths. Outbound links report domains only; email and phone values are excluded. No coordinates are sent. GoatCounter itself handles ordinary request metadata under its existing privacy policy.
 
 Local verification uses a mock count function; production delivery depends on GoatCounter availability and visitor blockers. The site remains usable when analytics is unavailable.
+
+The counter loads once through assets/analytics.js. Search actions debounce for 1.5 seconds and ignore empty searches. Query strings and referrer query strings are excluded. Draft saves and answer imports are counted as actions; their contents are never included.

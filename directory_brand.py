@@ -1,5 +1,6 @@
 """Shared VHG identity and public update-request links."""
 import base64
+import re
 from pathlib import Path
 from urllib.parse import urlencode, quote
 
@@ -29,6 +30,7 @@ def update_url(kind='listing'):
     return 'mailto:' + EMAIL + '?' + urlencode({'subject': subjects[kind], 'body': body}, quote_via=quote)
 
 def brand_page(page):
+    page = re.sub(r'<script\b[^>]*data-goatcounter=[^>]*>\s*</script>', '', page, flags=re.S)
     page = page.replace('</head>', '<script src="assets/analytics.js"></script></head>')
     return (page.replace('__VHG_BRAND__', brand_header())
             .replace('__VHG_CSS__', BRAND_CSS)

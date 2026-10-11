@@ -201,4 +201,4 @@ function render(){const rows=filteredRelationships($('q').value,selected);$('tal
 $('q').addEventListener('input',()=>{selected='';render()});$('clear').onclick=()=>{selected='';$('q').value='';render();$('q').focus()};
 $('share').onclick=async()=>{try{await navigator.clipboard.writeText(searchURL().href);$('share-status').textContent='Link copied.'}catch{$('share-status').textContent='Copy the page address to share this search.'}};
 window.addEventListener('popstate',()=>{loadSearch();render()});loadSearch();render();
-</script><script data-goatcounter="https://travisvought.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></body></html>
+</script></body></html>

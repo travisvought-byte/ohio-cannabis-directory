@@ -1,3 +1,9 @@
+## October 11, 2026 - Practical tool improvements
+
+- Assessment: critical-gap rating override, domain scores, evidence action plan, local draft save and JSON import.
+- Buyer guide: THC/CBD label calculations and a two-page visit handoff and experience journal.
+- Analytics: one counter loader, sanitized referrers and debounced searches without query text.
+
 # October 11 consumer tools completion
 
 - Added THC/CBD label-content arithmetic for pieces, mL, whole-package fractions and weight percentages, with unit-specific validation.
