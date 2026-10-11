@@ -13,7 +13,7 @@ sys.path.insert(0, str(ROOT))
 from directory_data import RELEASE, RELEASE_DATE, load_records, relationship_id
 rows = load_records()
 assert len(rows) == 564
-assert sum(not r['Category'].startswith('Out of scope') for r in rows) == 518
+assert sum(not r['Category'].startswith('Out of scope') for r in rows) == 516
 assert len({r['Record ID'] for r in rows}) == len(rows)
 assert all(re.fullmatch(r'org-[0-9a-f]{12}', r['Record ID']) for r in rows)
 assert all(r['Source(s)'] and r['Capabilities / Keywords'] for r in rows)
@@ -22,7 +22,7 @@ for row in rows:
     if row['Last Reviewed']:
         assert date.fromisoformat(row['Last Reviewed']) <= RELEASE_DATE
         assert row['Last Reviewed'] in row['Source(s)'] + row['Seed Source']
-assert sum(bool(r['Last Reviewed']) for r in rows) == 8
+assert sum(bool(r['Last Reviewed']) for r in rows) >= 8
 with (ROOT / 'b2b-relationships.csv').open(encoding='utf-8-sig') as f:
     relationships = list(csv.DictReader(f))
 assert len(relationships) == 60

@@ -3743,11 +3743,11 @@
         "Service Area": "Ohio — active dual-use processor; 100 Davids Drive, Wilmington (CCP000060-00)",
         "Capabilities / Keywords": "Cannabis Operator; Processing",
         "Verification Tier": "Source-verified",
-        "Notes": "Ownership reconciled. The current Ohio DCC roster lists CannAscend Ohio Processing, LLC as an active dual-use processor at 100 Davids Drive, Wilmington under CCP000060-00. A February 5, 2026 Ohio Attorney General filing explicitly identifies The Cannabist Company as owning and operating this processor; Gould/Green Light Acquisitions is therefore historical and no longer used as the current outreach route. Cannabist agreed on March 23, 2026 to sell its Ohio operating subsidiaries to Holistic Industries for $47 million, but the transaction remained subject to court approval and customary closing conditions, no closing announcement was found as of 2026-08-23, and the announced entity list did not separately name this processor. Current parent remains Cannabist; Holistic is a pending acquirer only.",
+        "Notes": "Contact link is the recorded parent-company route, not a CannAscend-specific website. Ownership and pending-sale information below is dated August 23, 2026 and requires a current transaction check. Ownership reconciled. The current Ohio DCC roster lists CannAscend Ohio Processing, LLC as an active dual-use processor at 100 Davids Drive, Wilmington under CCP000060-00. A February 5, 2026 Ohio Attorney General filing explicitly identifies The Cannabist Company as owning and operating this processor; Gould/Green Light Acquisitions is therefore historical and no longer used as the current outreach route. Cannabist agreed on March 23, 2026 to sell its Ohio operating subsidiaries to Holistic Industries for $47 million, but the transaction remained subject to court approval and customary closing conditions, no closing announcement was found as of 2026-08-23, and the announced entity list did not separately name this processor. Current parent remains Cannabist; Holistic is a pending acquirer only.",
         "Source(s)": "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/processor-licenses | https://www.ohioattorneygeneral.gov/Files/Briefing-Room/News-Releases/State-of-Ohio-v-Ascend-Wellness-et-al.aspx | https://investors.cannabistcompany.com/news-releases/news-release-details/cannabist-company-expands-ohio-footprint-opening-cannabist-saint | https://investors.cannabistcompany.com/news-releases/news-release-details/cannabist-company-announces-strategic-transactions-and-initiates | https://www.cannabistcompany.com/contact-us",
-        "Seed Source": "Split from combined record — Batch 2 audit, 2026-08-14; source pages retrieved and reviewed | Batch 11 audit — 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 12, final), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 2), 2026-08-16; source pages retrieved and reviewed | Operator outreach-enrichment pass, 2026-08-22; source pages retrieved and reviewed; ownership conflict flagged | CannAscend ownership reconciliation pass, 2026-08-23; DCC, state and first-party source pages retrieved and reviewed",
+        "Seed Source": "Split from combined record — Batch 2 audit, 2026-08-14; source pages retrieved and reviewed | Batch 11 audit — 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 12, final), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 2), 2026-08-16; source pages retrieved and reviewed | Operator outreach-enrichment pass, 2026-08-22; source pages retrieved and reviewed; ownership conflict flagged | CannAscend ownership reconciliation pass, 2026-08-23; DCC, state and first-party source pages retrieved and reviewed | v4.22 editorial correction, 2026-10-10; retained evidence and scope reviewed",
         "Record ID": "org-0f796f94c7f1",
-        "Last Reviewed": ""
+        "Last Reviewed": "2026-10-10"
       },
       "website": "https://www.cannabistcompany.com/contact-us"
     },
@@ -5234,9 +5234,9 @@
           "value": "Ironton: 740-547-0015"
         }
       ],
-      "scope": "public",
+      "scope": "reference-only",
       "legacy_record": {
-        "Category": "Cultivator / Processor / Dispensary",
+        "Category": "Out of scope — flagged for removal or separate list",
         "Organization / Business Name": "Ohio Valley Natural Relief LLC (dba Greenlight Dispensary — see Greenlight Dispensary entry)",
         "Type": "Business",
         "Contact Person": "",
@@ -5246,11 +5246,11 @@
         "Service Area": "Wintersville and Ironton, Ohio — legal-entity cross-reference; see Greenlight Dispensary",
         "Capabilities / Keywords": "Cannabis Operator; Dispensary / Retail",
         "Verification Tier": "Source-verified",
-        "Notes": "Current DCC roster confirms OHIO VALLEY NATURAL RELIEF LLC holds active Wintersville and Ironton dispensary licenses; Greenlight's current first-party location pages confirm both addresses under the Greenlight brand. This is not a separate current operator and remains only as a legal-name/alias cross-reference. OUTREACH RESULT: mike@ovnrllc.com permanently failed on 2026-08-18 because ovnrllc.com had no DNS/MX route; the address remains removed. Use the current Greenlight phone or contact route.",
+        "Notes": "Legal-name cross-reference to Greenlight Dispensary; excluded from the distinct public organization count. Current DCC roster confirms OHIO VALLEY NATURAL RELIEF LLC holds active Wintersville and Ironton dispensary licenses; Greenlight's current first-party location pages confirm both addresses under the Greenlight brand. This is not a separate current operator and remains only as a legal-name/alias cross-reference. OUTREACH RESULT: mike@ovnrllc.com permanently failed on 2026-08-18 because ovnrllc.com had no DNS/MX route; the address remains removed. Use the current Greenlight phone or contact route.",
         "Source(s)": "https://ohio.greenlightdispensary.com/locations/wintersville/ | https://greenlightdispensary.com/locations/ | Ohio DCC Current Roster, OHIO VALLEY NATURAL RELIEF LLC / CCD000110-00 and CCD000267-00",
-        "Seed Source": "Organizations | Batch 3 audit, 2026-08-14; source pages retrieved and reviewed | Gmail outreach bounce reconciliation, 2026-08-22; delivery diagnostics reviewed | Cultivator / Processor / Dispensary issue-resolution pass, 2026-08-22; source pages retrieved and reviewed; DCC roster checked",
+        "Seed Source": "Organizations | Batch 3 audit, 2026-08-14; source pages retrieved and reviewed | Gmail outreach bounce reconciliation, 2026-08-22; delivery diagnostics reviewed | Cultivator / Processor / Dispensary issue-resolution pass, 2026-08-22; source pages retrieved and reviewed; DCC roster checked | v4.22 editorial correction, 2026-10-10; retained evidence and scope reviewed",
         "Record ID": "org-e47fa09fe7b8",
-        "Last Reviewed": ""
+        "Last Reviewed": "2026-10-10"
       },
       "website": "https://ohio.greenlightdispensary.com/locations/wintersville/"
     },
@@ -6416,14 +6416,14 @@
         "Email": "",
         "Phone": "",
         "Website": "https://mjunpacked.com",
-        "Service Area": "Kansas City, Missouri",
+        "Service Area": "Kansas City, Missouri; Ohio industry engagement: OCHBS 2026 direct-contact evidence",
         "Capabilities / Keywords": "Cannabis Events and Business Networking",
         "Verification Tier": "Source-verified",
         "Notes": "National cannabis business event for licensed operators, investors and service providers. Official site verified Booth 810.",
         "Source(s)": "https://mjunpacked.com | OCHBS direct in-person evidence, 2026-09-23",
-        "Seed Source": "OCHBS 2026 direct contact, collected 2026-09-23",
+        "Seed Source": "OCHBS 2026 direct contact, collected 2026-09-23 | v4.22 editorial correction, 2026-10-10; retained evidence and scope reviewed",
         "Record ID": "org-35f5d72740cc",
-        "Last Reviewed": ""
+        "Last Reviewed": "2026-10-10"
       },
       "website": "https://mjunpacked.com"
     },
@@ -6518,9 +6518,9 @@
           "value": "info@ohiocannabisexpo.com"
         }
       ],
-      "scope": "public",
+      "scope": "reference-only",
       "legacy_record": {
-        "Category": "Events & Expos",
+        "Category": "Out of scope — flagged for removal or separate list",
         "Organization / Business Name": "Ohio Cannabis Live / Ohio Cannabis Expo",
         "Type": "Business",
         "Contact Person": "Anthony D. Riley — CEO / Founder",
@@ -6530,11 +6530,11 @@
         "Service Area": "Portsmouth / Southern Ohio",
         "Capabilities / Keywords": "Events / Expos; Cannabis Education; Industry Networking; Home Grow; Legislative Updates; Veterans; Recovery",
         "Verification Tier": "Source-verified",
-        "Notes": "The 2026 Ohio Cannabis Expo was held July 24, 2026 at the Scioto County Welcome Center in Portsmouth. Ohio Cannabis Live is founded by Anthony D. Riley and operated by Another Mastamynd Hit LLC. The free 21+ program covered legislation, home grow, recovery and veteran outreach; no cannabis sales or consumption were permitted. No 2027 edition was announced as of 2026-08-22; use the official site for the next-edition contact route.",
+        "Notes": "Duplicate expo cross-reference; use Ohio Cannabis Expo for the event and Ohio Cannabis Live for media. The 2026 Ohio Cannabis Expo was held July 24, 2026 at the Scioto County Welcome Center in Portsmouth. Ohio Cannabis Live is founded by Anthony D. Riley and operated by Another Mastamynd Hit LLC. The free 21+ program covered legislation, home grow, recovery and veteran outreach; no cannabis sales or consumption were permitted. No 2027 edition was announced as of 2026-08-22; use the official site for the next-edition contact route.",
         "Source(s)": "https://www.ohiocannabisexpo.com/ | https://www.ohiocannabisexpo.com/faq",
-        "Seed Source": "IgniteIt Network | Organizations | Speakers | Warm Contacts | Batch 1 audit, 2026-08-15; source pages retrieved and reviewed | Events & Expos research pass — 2026-08-22; source pages retrieved and reviewed | Events currency QA — 2026-08-22; source pages retrieved and reviewed",
+        "Seed Source": "IgniteIt Network | Organizations | Speakers | Warm Contacts | Batch 1 audit, 2026-08-15; source pages retrieved and reviewed | Events & Expos research pass — 2026-08-22; source pages retrieved and reviewed | Events currency QA — 2026-08-22; source pages retrieved and reviewed | v4.22 editorial correction, 2026-10-10; retained evidence and scope reviewed",
         "Record ID": "org-b6db3c77f825",
-        "Last Reviewed": ""
+        "Last Reviewed": "2026-10-10"
       },
       "website": "https://www.ohiocannabisexpo.com/"
     },
@@ -6934,39 +6934,6 @@
       "website": "https://gpen.com"
     },
     {
-      "id": "org-6a466599534c",
-      "name": "Laurelcrest",
-      "kind": "other",
-      "legacy_ids": [
-        "org-6a466599534c"
-      ],
-      "contacts": [
-        {
-          "kind": "email",
-          "value": "orders@laurelcrest.com"
-        }
-      ],
-      "scope": "public",
-      "legacy_record": {
-        "Category": "Hemp / CBD Products & Ancillary",
-        "Organization / Business Name": "Laurelcrest",
-        "Type": "Business",
-        "Contact Person": "Danielle Bernstein",
-        "Email": "orders@laurelcrest.com",
-        "Phone": "",
-        "Website": "https://laurelcrest.com/",
-        "Service Area": "Oregon-based",
-        "Capabilities / Keywords": "Hemp / CBD",
-        "Verification Tier": "Source-verified",
-        "Notes": "Reclassified: hemp cannabinoid ingredient/manufacturing supplier based in Oregon, not an Ohio regulated marijuana cultivator/processor/dispensary.",
-        "Source(s)": "https://laurelcrest.com/about/",
-        "Seed Source": "Original expo CRM | Research cleanup — 2026-08-14; QA'd 2026-08-14 | Batch 3 audit, 2026-08-14; source pages retrieved and reviewed",
-        "Record ID": "org-6a466599534c",
-        "Last Reviewed": ""
-      },
-      "website": "https://laurelcrest.com/"
-    },
-    {
       "id": "org-20250325b35f",
       "name": "Mojo's Smoke Shop (formerly The Hemp House / Wholesale Hemp LLC)",
       "kind": "other",
@@ -7094,14 +7061,14 @@
         "Email": "fayecoleman@puregenesis.us | info@puregenesis.us",
         "Phone": "",
         "Website": "https://puregenesis.us/",
-        "Service Area": "New Jersey (not an Ohio licensee)",
+        "Service Area": "New Jersey (not an Ohio licensee); Ohio event connection: retained OCHBS speaker-source record",
         "Capabilities / Keywords": "Hemp / CBD",
         "Verification Tier": "Source-verified",
-        "Notes": "The corrected Pure Genesis identity is now confirmed by its current first-party site. Its official contact page publishes founder and CEO Faye Coleman’s direct email plus a general organizational inbox. The company remains New Jersey-based and is not represented as an Ohio licensee.",
+        "Notes": "The corrected Pure Genesis identity is now confirmed by its current first-party site. Its official contact page publishes founder and CEO Faye Coleman’s direct email plus a general organizational inbox. The company remains New Jersey-based and is not represented as an Ohio licensee. Inclusion is based on the retained OCHBS speaker source, not an Ohio cannabis license.",
         "Source(s)": "https://ochbs.com/speakers/ | https://puregenesis.us/ | https://puregenesis.us/contact/",
-        "Seed Source": "Original expo CRM | Research cleanup — 2026-08-14; QA'd 2026-08-14 | Batch 3 audit, 2026-08-14; source pages retrieved and reviewed | Real Estate / Security / Hemp residual outreach pass, 2026-08-23; source pages retrieved and reviewed",
+        "Seed Source": "Original expo CRM | Research cleanup — 2026-08-14; QA'd 2026-08-14 | Batch 3 audit, 2026-08-14; source pages retrieved and reviewed | Real Estate / Security / Hemp residual outreach pass, 2026-08-23; source pages retrieved and reviewed | v4.22 editorial correction, 2026-10-10; retained evidence and scope reviewed",
         "Record ID": "org-f3b97807ae41",
-        "Last Reviewed": ""
+        "Last Reviewed": "2026-10-10"
       },
       "website": "https://puregenesis.us/"
     },
@@ -10422,34 +10389,6 @@
       "website": "https://dispensaries.veooz.com/healthcare-marketing/state/ohio"
     },
     {
-      "id": "org-d97a25fb6f85",
-      "name": "! Libertarian Party of Ohio",
-      "kind": "other",
-      "legacy_ids": [
-        "org-d97a25fb6f85"
-      ],
-      "contacts": [],
-      "scope": "public",
-      "legacy_record": {
-        "Category": "Nonprofit & Advocacy",
-        "Organization / Business Name": "! Libertarian Party of Ohio",
-        "Type": "Political Party",
-        "Contact Person": "",
-        "Email": "",
-        "Phone": "",
-        "Website": "https://lpo.org/",
-        "Service Area": "Statewide, Ohio",
-        "Capabilities / Keywords": "Vote Don Kissick for Governor in November",
-        "Verification Tier": "Source-verified",
-        "Notes": "My personal, unpaid endorsement as directory maintainer: Vote Don Kissick for Governor in November. This is not a paid placement or party sponsorship. The Libertarian Party of Ohio lists Don Kissick as its 2026 gubernatorial candidate.",
-        "Source(s)": "https://lpo.org/candidates/ | Personal endorsement by directory maintainer, 2026-09-28",
-        "Seed Source": "Curator-added election-season feature; official LPO candidates page checked 2026-09-28",
-        "Record ID": "org-d97a25fb6f85",
-        "Last Reviewed": ""
-      },
-      "website": "https://lpo.org/"
-    },
-    {
       "id": "org-a41077656b77",
       "name": "Americans for Safe Access",
       "kind": "nonprofit",
@@ -10740,43 +10679,6 @@
         "Last Reviewed": ""
       },
       "website": "https://www.theicecgroup.org/"
-    },
-    {
-      "id": "org-9b0acb0eee5e",
-      "name": "Kentucky Cannabis Industry Alliance",
-      "kind": "nonprofit",
-      "legacy_ids": [
-        "org-9b0acb0eee5e"
-      ],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "502-875-1176"
-        },
-        {
-          "kind": "email",
-          "value": "rachel@kycanna.org"
-        }
-      ],
-      "scope": "public",
-      "legacy_record": {
-        "Category": "Nonprofit & Advocacy",
-        "Organization / Business Name": "Kentucky Cannabis Industry Alliance",
-        "Type": "Nonprofit",
-        "Contact Person": "Rachel Roberts — Executive Director",
-        "Email": "rachel@kycanna.org",
-        "Phone": "502-875-1176",
-        "Website": "https://www.kycanna.org/",
-        "Service Area": "Out of State",
-        "Capabilities / Keywords": "Nonprofit / Advocacy",
-        "Verification Tier": "Source-verified",
-        "Notes": "Current Kentucky medical-cannabis trade association. Rachel Roberts remains Executive Director; KCIA's first-party team page publishes her direct email and the organization phone. Included as out-of-state Ohio Valley ecosystem adjacency, not as an Ohio-based association.",
-        "Source(s)": "https://www.kycanna.org/ | https://www.kycanna.org/about | https://www.cannabismarketspotlight.com/ohiovalley",
-        "Seed Source": "Organizations | Speakers | Batch 1 audit, 2026-08-15; source pages retrieved and reviewed | Nonprofit & Advocacy outreach-enrichment pass, 2026-08-23; source pages retrieved and reviewed",
-        "Record ID": "org-9b0acb0eee5e",
-        "Last Reviewed": ""
-      },
-      "website": "https://www.kycanna.org/"
     },
     {
       "id": "org-18cfa139168e",
@@ -11547,14 +11449,14 @@
         "Email": "thomas@themif.org",
         "Phone": "607-373-7277",
         "Website": "https://themif.org/action/contact/",
-        "Service Area": "Region to confirm",
+        "Service Area": "Open-source mobility designs and educational resources available online worldwide; local equipment availability varies",
         "Capabilities / Keywords": "Nonprofit / Advocacy; Policy Advocacy",
         "Verification Tier": "Source-verified",
         "Notes": "Title corrected: Quiter's own site, X/social bios and multiple independent event bios list him as President and Founder, not CEO. His own bio also self-identifies as a Disabilities & Cannabis Advocate, so MIF's relevance here may extend beyond ecosystem/event adjacency, though it remains a nonprofit rather than a plant-touching business. Current official outreach materials publish Thomas Quiter's direct MIF email; the 2026 Abilities Expo exhibitor listing publishes the organization phone.",
-        "Source(s)": "https://themif.org/ | https://themif.org/action/contact/ | https://www.linkedin.com/posts/the-mobility-independence-foundation_communityconcepts-mobilityindependence-activity-7369838331570003968-NLSU | https://www.abilities.com/chicago/exhibitors-for-screenreaders | https://thepowertomovefilm.com/ | named by Travis Vought, 12 Aug 2026",
-        "Seed Source": "Organizations | Speakers | Batch 1 audit, 2026-08-14; source pages retrieved and reviewed | Nonprofit & Advocacy outreach-enrichment pass, 2026-08-23; source pages retrieved and reviewed",
+        "Source(s)": "https://themif.org/ | https://themif.org/action/contact/ | https://www.linkedin.com/posts/the-mobility-independence-foundation_communityconcepts-mobilityindependence-activity-7369838331570003968-NLSU | https://www.abilities.com/chicago/exhibitors-for-screenreaders | https://thepowertomovefilm.com/ | named by Travis Vought, 12 Aug 2026 | https://themif.org/about/our-mission/",
+        "Seed Source": "Organizations | Speakers | Batch 1 audit, 2026-08-14; source pages retrieved and reviewed | Nonprofit & Advocacy outreach-enrichment pass, 2026-08-23; source pages retrieved and reviewed | v4.22 editorial correction, 2026-10-10; retained evidence and scope reviewed",
         "Record ID": "org-321e96d37e7d",
-        "Last Reviewed": ""
+        "Last Reviewed": "2026-10-10"
       },
       "website": "https://themif.org/action/contact/"
     },
@@ -11682,14 +11584,14 @@
         "Email": "VeteranHomeGuardians@gmail.com",
         "Phone": "614-623-6330",
         "Website": "https://www.vethomeguard.org",
-        "Service Area": "Marengo, Ohio; Central Ohio — Morrow, Knox, Delaware and Licking counties",
+        "Service Area": "Marengo, Ohio; Central Ohio — Morrow, Knox, Delaware and Marion counties",
         "Capabilities / Keywords": "Nonprofit / Advocacy; Veteran Services / Advocacy; Policy Advocacy",
         "Verification Tier": "Source-verified",
-        "Notes": "501(c)(3) nonprofit (EIN 33-4637180) placing veteran-and-spouse pairs in nursing facilities for weekly paid visits, alongside free home maintenance, repairs, transportation and companionship for disabled, isolated and homebound veterans. Weekly visits run at Bennington Glen, Centerburg Pointe and Woodside Village in Mount Gilead. Travis Vought participated on the Ohio Cannabis Expo legislative panel, 3–4 PM.",
+        "Notes": "501(c)(3) nonprofit (EIN 33-4637180) organizing regular visits and community support for isolated veterans in nursing homes. Weekly visitation facilities include Bennington Glen, Centerburg Pointe, Morrow Manor and Woodside Village. Earlier in-home assistance work is paused while sustainable funding is sought. Travis Vought participated on the Ohio Cannabis Expo legislative panel.",
         "Source(s)": "https://www.vethomeguard.org/contact-3 | https://www.ohiocannabisexpo.com/ | Event Roster RST-001; confirmed by Travis Vought, 12 Aug 2026",
-        "Seed Source": "Organizations | Warm Contacts; official website retrieved and reviewed — 2026-08-15",
+        "Seed Source": "Organizations | Warm Contacts; official website retrieved and reviewed — 2026-08-15 | v4.22 editorial correction, 2026-10-10; retained evidence and scope reviewed",
         "Record ID": "org-c180ef8dc4f9",
-        "Last Reviewed": ""
+        "Last Reviewed": "2026-10-10"
       },
       "website": "https://www.vethomeguard.org"
     },
@@ -13840,14 +13742,14 @@
         "Email": "",
         "Phone": "",
         "Website": "https://harasupply.com",
-        "Service Area": "4031 N. Pecos Rd., Suite 100, Las Vegas, NV 89115",
+        "Service Area": "4031 N. Pecos Rd., Suite 100, Las Vegas, NV 89115; Ohio industry engagement: OCHBS 2026 direct-contact evidence",
         "Capabilities / Keywords": "Pre-Roll Supplies and Packaging",
         "Verification Tier": "Source-verified",
         "Notes": "Pre-rolled cones, compliant tubes, custom packaging and manufacturing support for cannabis brands. Official site verified Booth 326.",
         "Source(s)": "https://harasupply.com | OCHBS direct in-person evidence, 2026-09-23",
-        "Seed Source": "OCHBS 2026 direct contact, collected 2026-09-23",
+        "Seed Source": "OCHBS 2026 direct contact, collected 2026-09-23 | v4.22 editorial correction, 2026-10-10; retained evidence and scope reviewed",
         "Record ID": "org-cd0bcb770201",
-        "Last Reviewed": ""
+        "Last Reviewed": "2026-10-10"
       },
       "website": "https://harasupply.com"
     },
@@ -16182,14 +16084,14 @@
         "Email": "insidesales@hanwha.com",
         "Phone": "",
         "Website": "https://hanwhavisionamerica.com",
-        "Service Area": "500 Frank W. Burr Blvd., Suite 43, Teaneck, NJ 07666",
+        "Service Area": "500 Frank W. Burr Blvd., Suite 43, Teaneck, NJ 07666; Ohio industry engagement: OCHBS 2026 direct-contact evidence",
         "Capabilities / Keywords": "Security and Video Surveillance",
         "Verification Tier": "Source-verified",
         "Notes": "Cannabis-specific video surveillance and analytics for cultivation, manufacturing, distribution and dispensaries. Official site verified",
         "Source(s)": "https://hanwhavisionamerica.com | OCHBS direct in-person evidence, 2026-09-23",
-        "Seed Source": "OCHBS 2026 direct contact, collected 2026-09-23",
+        "Seed Source": "OCHBS 2026 direct contact, collected 2026-09-23 | v4.22 editorial correction, 2026-10-10; retained evidence and scope reviewed",
         "Record ID": "org-05fa6cc45648",
-        "Last Reviewed": ""
+        "Last Reviewed": "2026-10-10"
       },
       "website": "https://hanwhavisionamerica.com"
     },
@@ -18043,13 +17945,13 @@
         "Phone": "313-450-9889",
         "Website": "https://www.detroitdispensingsolutions.com/contactus",
         "Service Area": "Michigan-based / multi-market; Ohio-market engagement documented",
-        "Capabilities / Keywords": "Consulting",
+        "Capabilities / Keywords": "Technology; Cannabis Equipment; Filling and Dispensing; Infusion; Vacuum and Decarboxylation Systems",
         "Verification Tier": "Source-verified",
         "Notes": "Reclassified from Consulting to Technology. Current first-party materials show an equipment manufacturer selling cannabis filling, dispensing, infusion and vacuum/decarb systems, not a management consultancy. Direct sales email and phone added; Chris Joseph remains the current founder and CEO. OCHBS 2026 exhibitor/direct-contact evidence added 2026-09-26.",
         "Source(s)": "https://www.detroitdispensingsolutions.com/contactus | https://www.detroitdispensingsolutions.com/ | https://ochbs.com/speakers/ | OCHBS 2026 direct-contact evidence, 2026-09-23–24",
-        "Seed Source": "Organizations | Speakers | Batch 2 audit, 2026-08-14; source pages retrieved and reviewed | Consulting outreach-enrichment pass, 2026-08-23; source pages retrieved and reviewed; category corrected | OCHBS 2026 reconciliation, approved 2026-09-26",
+        "Seed Source": "Organizations | Speakers | Batch 2 audit, 2026-08-14; source pages retrieved and reviewed | Consulting outreach-enrichment pass, 2026-08-23; source pages retrieved and reviewed; category corrected | OCHBS 2026 reconciliation, approved 2026-09-26 | v4.22 editorial correction, 2026-10-10; retained evidence and scope reviewed",
         "Record ID": "org-88975f378bd8",
-        "Last Reviewed": ""
+        "Last Reviewed": "2026-10-10"
       },
       "website": "https://www.detroitdispensingsolutions.com/contactus"
     },
@@ -21162,6 +21064,104 @@
       "scope": "public",
       "legacy_ids": [],
       "contacts": []
+    },
+    {
+      "id": "org-6a466599534c",
+      "name": "Laurelcrest",
+      "kind": "other",
+      "legacy_ids": [
+        "org-6a466599534c"
+      ],
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "orders@laurelcrest.com"
+        }
+      ],
+      "scope": "public",
+      "legacy_record": {
+        "Category": "Hemp / CBD Products & Ancillary",
+        "Organization / Business Name": "Laurelcrest",
+        "Type": "Business",
+        "Contact Person": "Danielle Bernstein",
+        "Email": "orders@laurelcrest.com",
+        "Phone": "",
+        "Website": "https://laurelcrest.com/",
+        "Service Area": "Oregon-based",
+        "Capabilities / Keywords": "Hemp / CBD",
+        "Verification Tier": "Source-verified",
+        "Notes": "Reclassified: hemp cannabinoid ingredient/manufacturing supplier based in Oregon, not an Ohio regulated marijuana cultivator/processor/dispensary.",
+        "Source(s)": "https://laurelcrest.com/about/",
+        "Seed Source": "Original expo CRM | Research cleanup — 2026-08-14; QA'd 2026-08-14 | Batch 3 audit, 2026-08-14; source pages retrieved and reviewed",
+        "Record ID": "org-6a466599534c",
+        "Last Reviewed": ""
+      },
+      "website": "https://laurelcrest.com/"
+    },
+    {
+      "id": "org-d97a25fb6f85",
+      "name": "! Libertarian Party of Ohio",
+      "kind": "other",
+      "legacy_ids": [
+        "org-d97a25fb6f85"
+      ],
+      "contacts": [],
+      "scope": "public",
+      "legacy_record": {
+        "Category": "Nonprofit & Advocacy",
+        "Organization / Business Name": "! Libertarian Party of Ohio",
+        "Type": "Political Party",
+        "Contact Person": "",
+        "Email": "",
+        "Phone": "",
+        "Website": "https://lpo.org/",
+        "Service Area": "Statewide, Ohio",
+        "Capabilities / Keywords": "Vote Don Kissick for Governor in November",
+        "Verification Tier": "Source-verified",
+        "Notes": "My personal, unpaid endorsement as directory maintainer: Vote Don Kissick for Governor in November. This is not a paid placement or party sponsorship. The Libertarian Party of Ohio lists Don Kissick as its 2026 gubernatorial candidate.",
+        "Source(s)": "https://lpo.org/candidates/ | Personal endorsement by directory maintainer, 2026-09-28",
+        "Seed Source": "Curator-added election-season feature; official LPO candidates page checked 2026-09-28",
+        "Record ID": "org-d97a25fb6f85",
+        "Last Reviewed": ""
+      },
+      "website": "https://lpo.org/"
+    },
+    {
+      "id": "org-9b0acb0eee5e",
+      "name": "Kentucky Cannabis Industry Alliance",
+      "kind": "nonprofit",
+      "legacy_ids": [
+        "org-9b0acb0eee5e"
+      ],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "502-875-1176"
+        },
+        {
+          "kind": "email",
+          "value": "rachel@kycanna.org"
+        }
+      ],
+      "scope": "public",
+      "legacy_record": {
+        "Category": "Nonprofit & Advocacy",
+        "Organization / Business Name": "Kentucky Cannabis Industry Alliance",
+        "Type": "Nonprofit",
+        "Contact Person": "Rachel Roberts — Executive Director",
+        "Email": "rachel@kycanna.org",
+        "Phone": "502-875-1176",
+        "Website": "https://www.kycanna.org/",
+        "Service Area": "Out of State",
+        "Capabilities / Keywords": "Nonprofit / Advocacy",
+        "Verification Tier": "Source-verified",
+        "Notes": "Current Kentucky medical-cannabis trade association. Rachel Roberts remains Executive Director; KCIA's first-party team page publishes her direct email and the organization phone. Included as out-of-state Ohio Valley ecosystem adjacency, not as an Ohio-based association.",
+        "Source(s)": "https://www.kycanna.org/ | https://www.kycanna.org/about | https://www.cannabismarketspotlight.com/ohiovalley",
+        "Seed Source": "Organizations | Speakers | Batch 1 audit, 2026-08-15; source pages retrieved and reviewed | Nonprofit & Advocacy outreach-enrichment pass, 2026-08-23; source pages retrieved and reviewed",
+        "Record ID": "org-9b0acb0eee5e",
+        "Last Reviewed": ""
+      },
+      "website": "https://www.kycanna.org/"
     }
   ],
   "locations": [
@@ -29225,7 +29225,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Cannabis Operator; Processing\nOwnership reconciled. The current Ohio DCC roster lists CannAscend Ohio Processing, LLC as an active dual-use processor at 100 Davids Drive, Wilmington under CCP000060-00. A February 5, 2026 Ohio Attorney General filing explicitly identifies The Cannabist Company as owning and operating this processor; Gould/Green Light Acquisitions is therefore historical and no longer used as the current outreach route. Cannabist agreed on March 23, 2026 to sell its Ohio operating subsidiaries to Holistic Industries for $47 million, but the transaction remained subject to court approval and customary closing conditions, no closing announcement was found as of 2026-08-23, and the announced entity list did not separately name this processor. Current parent remains Cannabist; Holistic is a pending acquirer only."
+      "description": "Cannabis Operator; Processing\nContact link is the recorded parent-company route, not a CannAscend-specific website. Ownership and pending-sale information below is dated August 23, 2026 and requires a current transaction check. Ownership reconciled. The current Ohio DCC roster lists CannAscend Ohio Processing, LLC as an active dual-use processor at 100 Davids Drive, Wilmington under CCP000060-00. A February 5, 2026 Ohio Attorney General filing explicitly identifies The Cannabist Company as owning and operating this processor; Gould/Green Light Acquisitions is therefore historical and no longer used as the current outreach route. Cannabist agreed on March 23, 2026 to sell its Ohio operating subsidiaries to Holistic Industries for $47 million, but the transaction remained subject to court approval and customary closing conditions, no closing announcement was found as of 2026-08-23, and the announced entity list did not separately name this processor. Current parent remains Cannabist; Holistic is a pending acquirer only."
     },
     {
       "id": "svc-profile-64ee2d0eff77",
@@ -30504,7 +30504,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Cannabis Operator; Dispensary / Retail\nCurrent DCC roster confirms OHIO VALLEY NATURAL RELIEF LLC holds active Wintersville and Ironton dispensary licenses; Greenlight's current first-party location pages confirm both addresses under the Greenlight brand. This is not a separate current operator and remains only as a legal-name/alias cross-reference. OUTREACH RESULT: mike@ovnrllc.com permanently failed on 2026-08-18 because ovnrllc.com had no DNS/MX route; the address remains removed. Use the current Greenlight phone or contact route."
+      "description": "Cannabis Operator; Dispensary / Retail\nLegal-name cross-reference to Greenlight Dispensary; excluded from the distinct public organization count. Current DCC roster confirms OHIO VALLEY NATURAL RELIEF LLC holds active Wintersville and Ironton dispensary licenses; Greenlight's current first-party location pages confirm both addresses under the Greenlight brand. This is not a separate current operator and remains only as a legal-name/alias cross-reference. OUTREACH RESULT: mike@ovnrllc.com permanently failed on 2026-08-18 because ovnrllc.com had no DNS/MX route; the address remains removed. Use the current Greenlight phone or contact route."
     },
     {
       "id": "svc-profile-aefe1b952bc0",
@@ -31591,7 +31591,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Events / Expos; Cannabis Education; Industry Networking; Home Grow; Legislative Updates; Veterans; Recovery\nThe 2026 Ohio Cannabis Expo was held July 24, 2026 at the Scioto County Welcome Center in Portsmouth. Ohio Cannabis Live is founded by Anthony D. Riley and operated by Another Mastamynd Hit LLC. The free 21+ program covered legislation, home grow, recovery and veteran outreach; no cannabis sales or consumption were permitted. No 2027 edition was announced as of 2026-08-22; use the official site for the next-edition contact route."
+      "description": "Events / Expos; Cannabis Education; Industry Networking; Home Grow; Legislative Updates; Veterans; Recovery\nDuplicate expo cross-reference; use Ohio Cannabis Expo for the event and Ohio Cannabis Live for media. The 2026 Ohio Cannabis Expo was held July 24, 2026 at the Scioto County Welcome Center in Portsmouth. Ohio Cannabis Live is founded by Anthony D. Riley and operated by Another Mastamynd Hit LLC. The free 21+ program covered legislation, home grow, recovery and veteran outreach; no cannabis sales or consumption were permitted. No 2027 edition was announced as of 2026-08-22; use the official site for the next-edition contact route."
     },
     {
       "id": "svc-profile-23b94eafc801",
@@ -31965,35 +31965,6 @@
       "description": "Vape Hardware and Consumer Accessories\nCannabis vaporizers, vape pens and related consumer hardware. Official site verified"
     },
     {
-      "id": "svc-profile-6a466599534c",
-      "organization_id": "org-6a466599534c",
-      "location_ids": [],
-      "pathway_ids": [
-        "business"
-      ],
-      "name": "Laurelcrest",
-      "coverage": [],
-      "audiences": [
-        "business"
-      ],
-      "eligibility": "Confirm current eligibility and service requirements with the provider.",
-      "next_step": {
-        "label": "Open next step",
-        "url": "https://laurelcrest.com/"
-      },
-      "availability": "unknown",
-      "attributes": {},
-      "fulfillment": [],
-      "evidence_ids": [
-        "ev-bfb031b1dc02"
-      ],
-      "origin": "organization-profile",
-      "listed_in": [
-        "OH"
-      ],
-      "description": "Hemp / CBD\nReclassified: hemp cannabinoid ingredient/manufacturing supplier based in Oregon, not an Ohio regulated marijuana cultivator/processor/dispensary."
-    },
-    {
       "id": "svc-profile-20250325b35f",
       "organization_id": "org-20250325b35f",
       "location_ids": [],
@@ -32110,7 +32081,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Hemp / CBD\nThe corrected Pure Genesis identity is now confirmed by its current first-party site. Its official contact page publishes founder and CEO Faye Coleman’s direct email plus a general organizational inbox. The company remains New Jersey-based and is not represented as an Ohio licensee."
+      "description": "Hemp / CBD\nThe corrected Pure Genesis identity is now confirmed by its current first-party site. Its official contact page publishes founder and CEO Faye Coleman’s direct email plus a general organizational inbox. The company remains New Jersey-based and is not represented as an Ohio licensee. Inclusion is based on the retained OCHBS speaker source, not an Ohio cannabis license."
     },
     {
       "id": "svc-profile-c6c7ab956ad5",
@@ -34914,35 +34885,6 @@
       "description": "Marketing / Media\nFlag cleared: dedicated current statewide Ohio dispensary-marketing page establishes Ohio availability."
     },
     {
-      "id": "svc-profile-d97a25fb6f85",
-      "organization_id": "org-d97a25fb6f85",
-      "location_ids": [],
-      "pathway_ids": [
-        "business"
-      ],
-      "name": "! Libertarian Party of Ohio",
-      "coverage": [],
-      "audiences": [
-        "business"
-      ],
-      "eligibility": "Confirm current eligibility and service requirements with the provider.",
-      "next_step": {
-        "label": "Open next step",
-        "url": "https://lpo.org/"
-      },
-      "availability": "unknown",
-      "attributes": {},
-      "fulfillment": [],
-      "evidence_ids": [
-        "ev-79a8e1ccf59a"
-      ],
-      "origin": "organization-profile",
-      "listed_in": [
-        "OH"
-      ],
-      "description": "Vote Don Kissick for Governor in November\nMy personal, unpaid endorsement as directory maintainer: Vote Don Kissick for Governor in November. This is not a paid placement or party sponsorship. The Libertarian Party of Ohio lists Don Kissick as its 2026 gubernatorial candidate."
-    },
-    {
       "id": "svc-profile-a41077656b77",
       "organization_id": "org-a41077656b77",
       "location_ids": [],
@@ -35188,37 +35130,6 @@
         "OH"
       ],
       "description": "Nonprofit / Advocacy; Education / Research; Patient Advocacy; Cannabis Safety; Community Outreach\nFairborn-based 501(c)(3), EIN 84-2478078, focused on cannabis/hemp education, patient and caregiver communication, medical-cannabis research advocacy and consumer safety. Formerly known as Cannabis For Children International. Current organizational activity and Ohio headquarters are corroborated by the official site and active LinkedIn presence."
-    },
-    {
-      "id": "svc-profile-9b0acb0eee5e",
-      "organization_id": "org-9b0acb0eee5e",
-      "location_ids": [],
-      "pathway_ids": [
-        "business"
-      ],
-      "name": "Kentucky Cannabis Industry Alliance",
-      "coverage": [],
-      "audiences": [
-        "business"
-      ],
-      "eligibility": "Confirm current eligibility and service requirements with the provider.",
-      "next_step": {
-        "label": "Open next step",
-        "url": "https://www.kycanna.org/"
-      },
-      "availability": "unknown",
-      "attributes": {},
-      "fulfillment": [],
-      "evidence_ids": [
-        "ev-404c470c4cb8",
-        "ev-d253ff6ed600",
-        "ev-4822e1ff8c33"
-      ],
-      "origin": "organization-profile",
-      "listed_in": [
-        "OH"
-      ],
-      "description": "Nonprofit / Advocacy\nCurrent Kentucky medical-cannabis trade association. Rachel Roberts remains Executive Director; KCIA's first-party team page publishes her direct email and the organization phone. Included as out-of-state Ohio Valley ecosystem adjacency, not as an Ohio-based association."
     },
     {
       "id": "svc-profile-18cfa139168e",
@@ -36010,7 +35921,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Nonprofit / Advocacy; Veteran Services / Advocacy; Policy Advocacy\n501(c)(3) nonprofit (EIN 33-4637180) placing veteran-and-spouse pairs in nursing facilities for weekly paid visits, alongside free home maintenance, repairs, transportation and companionship for disabled, isolated and homebound veterans. Weekly visits run at Bennington Glen, Centerburg Pointe and Woodside Village in Mount Gilead. Travis Vought participated on the Ohio Cannabis Expo legislative panel, 3–4 PM."
+      "description": "Nonprofit / Advocacy; Veteran Services / Advocacy; Policy Advocacy\n501(c)(3) nonprofit (EIN 33-4637180) organizing regular visits and community support for isolated veterans in nursing homes. Weekly visitation facilities include Bennington Glen, Centerburg Pointe, Morrow Manor and Woodside Village. Earlier in-home assistance work is paused while sustainable funding is sought. Travis Vought participated on the Ohio Cannabis Expo legislative panel."
     },
     {
       "id": "svc-profile-b4d008cdf3ab",
@@ -41510,7 +41421,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Consulting\nReclassified from Consulting to Technology. Current first-party materials show an equipment manufacturer selling cannabis filling, dispensing, infusion and vacuum/decarb systems, not a management consultancy. Direct sales email and phone added; Chris Joseph remains the current founder and CEO. OCHBS 2026 exhibitor/direct-contact evidence added 2026-09-26."
+      "description": "Technology; Cannabis Equipment; Filling and Dispensing; Infusion; Vacuum and Decarboxylation Systems\nReclassified from Consulting to Technology. Current first-party materials show an equipment manufacturer selling cannabis filling, dispensing, infusion and vacuum/decarb systems, not a management consultancy. Direct sales email and phone added; Chris Joseph remains the current founder and CEO. OCHBS 2026 exhibitor/direct-contact evidence added 2026-09-26."
     },
     {
       "id": "svc-profile-a06c1362a303",
@@ -44079,6 +43990,95 @@
         "OH"
       ],
       "description": "Ohio-focused community resource for cannabis patients, caregivers and industry connections."
+    },
+    {
+      "id": "svc-profile-6a466599534c",
+      "organization_id": "org-6a466599534c",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Laurelcrest",
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://laurelcrest.com/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-bfb031b1dc02"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Hemp / CBD\nReclassified: hemp cannabinoid ingredient/manufacturing supplier based in Oregon, not an Ohio regulated marijuana cultivator/processor/dispensary."
+    },
+    {
+      "id": "svc-profile-d97a25fb6f85",
+      "organization_id": "org-d97a25fb6f85",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "! Libertarian Party of Ohio",
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://lpo.org/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-79a8e1ccf59a"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Vote Don Kissick for Governor in November\nMy personal, unpaid endorsement as directory maintainer: Vote Don Kissick for Governor in November. This is not a paid placement or party sponsorship. The Libertarian Party of Ohio lists Don Kissick as its 2026 gubernatorial candidate."
+    },
+    {
+      "id": "svc-profile-9b0acb0eee5e",
+      "organization_id": "org-9b0acb0eee5e",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Kentucky Cannabis Industry Alliance",
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://www.kycanna.org/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-404c470c4cb8",
+        "ev-d253ff6ed600",
+        "ev-4822e1ff8c33"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Nonprofit / Advocacy\nCurrent Kentucky medical-cannabis trade association. Rachel Roberts remains Executive Director; KCIA's first-party team page publishes her direct email and the organization phone. Included as out-of-state Ohio Valley ecosystem adjacency, not as an Ohio-based association."
     }
   ],
   "evidence": [
@@ -51372,18 +51372,6 @@
       "claim": "organization-profile",
       "value": "Flag cleared: dedicated current statewide Ohio dispensary-marketing page establishes Ohio availability.",
       "source_url": "https://dispensaries.veooz.com/healthcare-marketing/state/ohio",
-      "source_kind": "secondary",
-      "status": "source-listed",
-      "recorded_on": "2026-10-09",
-      "recheck_on": "2026-11-08",
-      "limitations": "Imported historical source reference; migration is not a fresh source review."
-    },
-    {
-      "id": "ev-79a8e1ccf59a",
-      "subject_id": "svc-profile-d97a25fb6f85",
-      "claim": "organization-profile",
-      "value": "My personal, unpaid endorsement as directory maintainer: Vote Don Kissick for Governor in November. This is not a paid placement or party sponsorship. The Libertarian Party of Ohio lists Don Kissick as its 2026 gubernatorial candidate.",
-      "source_url": "https://lpo.org/candidates/",
       "source_kind": "secondary",
       "status": "source-listed",
       "recorded_on": "2026-10-09",
@@ -63065,6 +63053,18 @@
       "reviewed_on": "2026-10-10",
       "recheck_on": "2026-10-17",
       "limitations": "Organizer-published ticket listing reviewed via search retrieval. Confirm changes and admission directly; listing does not verify licensing or consumption permissions."
+    },
+    {
+      "id": "ev-79a8e1ccf59a",
+      "subject_id": "svc-profile-d97a25fb6f85",
+      "claim": "organization-profile",
+      "value": "My personal, unpaid endorsement as directory maintainer: Vote Don Kissick for Governor in November. This is not a paid placement or party sponsorship. The Libertarian Party of Ohio lists Don Kissick as its 2026 gubernatorial candidate.",
+      "source_url": "https://lpo.org/candidates/",
+      "source_kind": "secondary",
+      "status": "source-listed",
+      "recorded_on": "2026-10-09",
+      "recheck_on": "2026-11-08",
+      "limitations": "Imported historical source reference; migration is not a fresh source review."
     }
   ],
   "rules": [

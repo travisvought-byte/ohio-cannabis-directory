@@ -10,11 +10,11 @@ const {chromium}=require('playwright');
  try{
   browser=await chromium.launch({headless:true});const context=await browser.newContext({timezoneId:'America/New_York'});const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.route('**/gc.zgo.at/**',route=>route.abort());await page.clock.install({time:new Date('2026-10-09T16:00:00Z')});
-  await page.goto(base);assert.equal(await page.locator('#results article').count(),518);
+  await page.goto(base);assert.equal(await page.locator('#results article').count(),516);
   await page.getByRole('searchbox',{name:'Search the directory'}).fill('Scott Mougey');assert.equal(await page.locator('#results article').count(),1);assert.equal(new URL(page.url()).searchParams.get('q'),'Scott Mougey');
   await page.reload();assert.equal(await page.getByRole('searchbox').inputValue(),'Scott Mougey');
   await page.getByRole('link',{name:'Link to this organization',exact:true}).click();assert(new URL(page.url()).searchParams.get('org'));assert.equal(await page.locator('#results h2').textContent(),'SCM Promotions');
-  await page.getByRole('button',{name:'Back to all organizations'}).click();assert.equal(await page.locator('#results article').count(),518);
+  await page.getByRole('button',{name:'Back to all organizations'}).click();assert.equal(await page.locator('#results article').count(),516);
   await page.getByRole('searchbox').fill('Benesch');assert.equal(await page.locator('#results a[href^="tel:"]').count(),2);assert.equal(await page.locator('#results a[href^="tel:"]').first().getAttribute('href'),'tel:6142239377');
   await page.getByRole('searchbox').fill('LEAF411');assert.equal(await page.locator('#results a[href^="tel:"]').getAttribute('href'),'tel:8445323411');
   await page.getByRole('searchbox').fill('');await page.selectOption('#cat','Testing Labs');assert.equal(await page.locator('#results article').count(),6);await page.reload();assert.equal(await page.locator('#cat').inputValue(),'Testing Labs');assert.equal(await page.locator('#results article').count(),6);

@@ -4,9 +4,9 @@ A source-verified map of who serves what in Ohio cannabis: operators, service pr
 
 **Live searchable directory:** https://travisvought-byte.github.io/ohio-cannabis-directory/
 
-The current dataset contains **564 organizations**, including **518 publishable organizations across 16 categories** and 46 deliberately retained out-of-scope records. Those retained records keep renamed, acquired, superseded, or otherwise relevant organizations findable. The repository also includes 60 documented business-to-business relationships.
+The current dataset contains **564 organizations**, including **516 publishable organizations across 16 categories** and 48 deliberately retained out-of-scope records. Those retained records keep renamed, acquired, superseded, or otherwise relevant organizations findable. The repository also includes 60 documented business-to-business relationships.
 
-**Current site release:** 4.21 · October 9, 2026.
+**Current site release:** 4.22 · October 10, 2026.
 
 Searches and filters persist in shareable URLs. Every organization has a permanent record link. [Who works with whom?](https://travisvought-byte.github.io/ohio-cannabis-directory/relationships.html) makes all 60 documented relationships searchable, with organization links and source evidence.
 
@@ -103,7 +103,7 @@ The site code and build scripts are released under the MIT License.
 
 ## Consumer resources
 
-The homepage now offers six need-based routes through [consumer resources](https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html): dispensaries, seeds and growing supplies, record clearing, medical patients, Ohio rules, and community connections. Sources reviewed October 9, 2026. Opportunity Port is labeled Franklin County only; seed catalogs do not imply verified Ohio delivery. These referral resources are separate from organization counts. Regenerate with `python build_resources.py`. Nearby distance search and a current statewide location import remain future work.
+The homepage now offers six need-based routes through [consumer resources](https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html): dispensaries, seeds and growing supplies, record clearing, medical patients, Ohio rules, and community connections. Sources reviewed October 10, 2026. Opportunity Port is labeled Franklin County only; seed catalogs do not imply verified Ohio delivery. These referral resources are separate from organization counts. Regenerate with `python build_resources.py`. Nearby distance search and a current statewide location import remain future work.
 
 Seed supplier expansion: `seeds.html` offers 11 entries (10 seed providers and one Ohio grow-supply / retailer lead), location and seed-type filters, text search and downloadable source data in `seed-suppliers.json`. Regenerate with `python build_seeds.py`. Shipping evidence is labeled without inferring legal eligibility.
 
