@@ -1,6 +1,7 @@
 """Shared VHG identity and public update-request links."""
 import base64
 import re
+import html
 from pathlib import Path
 from urllib.parse import urlencode, quote
 
@@ -11,7 +12,7 @@ BRAND_CSS = '''
   .vhg-brand strong{display:block;font-size:1rem;line-height:1.3}
   .vhg-brand span span{display:block;font-size:.82rem;color:var(--ink-soft);margin-top:.2rem}
   .knowledge-links{display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;margin:0 0 1.5rem;font-size:.95rem}
-  [hidden]{display:none!important}.site-footer{max-width:1120px;margin:24px auto;padding:20px;border-top:1px solid #ccc}.site-footer nav{display:flex;flex-wrap:wrap;gap:4px 18px}.site-footer a,.knowledge-links a{display:inline-flex;align-items:center;min-height:44px}p{max-width:70ch}button,input,select,summary{min-height:44px}button,input,select,textarea{font-size:16px}body{font-size:16px}.vhg-brand img{width:48px;height:48px}.knowledge-links{gap:0 18px}.site-footer p{font-size:14px;color:#555}@media(max-width:650px){.knowledge-links{font-size:14px;gap:0 12px}.site-footer a{font-size:14px}button,a.btn{min-height:44px}}@media print{.site-footer,.knowledge-links,.vhg-brand{display:none!important}}
+  [hidden]{display:none!important}.site-footer{max-width:1120px;margin:24px auto;padding:20px;border-top:1px solid #ccc}.site-footer nav{display:flex;flex-wrap:wrap;gap:4px 18px}.site-footer a,.knowledge-links a{display:inline-flex;align-items:center;min-height:44px}p{max-width:70ch}button,input,select,summary{min-height:44px}button,input,select,textarea{font-size:16px}body{font-size:16px}.vhg-brand img{width:48px;height:48px}.knowledge-links{gap:0 18px}.site-footer p{font-size:14px;color:#555}@media(max-width:650px){.knowledge-links{font-size:14px;gap:0 12px}.site-footer a{font-size:14px}body a{min-height:44px;display:inline-flex;align-items:center}button,a.btn{min-height:44px}}@media print{.site-footer,.knowledge-links,.vhg-brand{display:none!important}}
   .update-contact{overflow-wrap:anywhere}
 '''
 
@@ -48,6 +49,13 @@ def brand_page(page):
         page=page.replace('<main>', '<main>__VHG_BRAND__',1)
     page=re.sub(r'<title>(.*?)</title>',lambda m:'<title>'+re.sub(r' \|.*$','',m.group(1)).replace('Ohio Cannabis Ecosystem Directory','Ohio Cannabis Directory')+' | Ohio Cannabis Directory</title>',page,count=1)
     page=page.replace('</body>',brand_footer()+'</body>')
+    title=re.search(r'<title>(.*?)</title>',page).group(1)
+    description='Find Ohio cannabis businesses, dispensaries and plain-language guides, each traced to a source.'
+    if 'name="description"' not in page:page=page.replace('</head>','<meta name="description" content="'+description+'"></head>')
+    page=re.sub(r'<meta\s+property="og:[^"]+"[^>]*>','',page)
+    meta='<meta property="og:type" content="website"><meta property="og:site_name" content="Ohio Cannabis Directory"><meta property="og:title" content="'+html.escape(title,quote=True)+'"><meta property="og:description" content="'+description+'"><meta property="og:image" content="https://travisvought-byte.github.io/ohio-cannabis-directory/assets/vhg-logo.png"><meta property="og:image:alt" content="Veteran Home Guardians logo">'
+    page=page.replace('</head>',meta+'</head>')
+
     page = page.replace('</head>', '<script src="assets/analytics.js"></script></head>')
     return (page.replace('__VHG_BRAND__', brand_header())
             .replace('__VHG_CSS__', BRAND_CSS)

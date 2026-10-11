@@ -4,7 +4,7 @@ const {JSDOM,VirtualConsole}=require('jsdom');
 const root=path.resolve(__dirname,'..');
 function page(file,query='',stored=null,date='2026-10-09T16:00:00Z'){
  const errors=[],downloads=[],virtualConsole=new VirtualConsole();virtualConsole.on('jsdomError',e=>errors.push(e.message));
- const dom=new JSDOM(fs.readFileSync(path.join(root,file),'utf8'),{url:'https://example.org/'+file+query,runScripts:'dangerously',virtualConsole,beforeParse(w){
+ const dom=new JSDOM(require('./read-page.cjs')(path.join(root,file)),{url:'https://example.org/'+file+query,runScripts:'dangerously',virtualConsole,beforeParse(w){
   w.Date=class extends Date{constructor(...args){super(...(args.length?args:[date]))}};
   w.Blob=Blob;w.URL.createObjectURL=blob=>{downloads.push(blob);return 'blob:https://example.org/test'};w.URL.revokeObjectURL=()=>{};
   w.HTMLAnchorElement.prototype.click=function(){};w.scrollTo=()=>{};

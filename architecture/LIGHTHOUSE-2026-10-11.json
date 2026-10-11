@@ -1,0 +1,20 @@
+[
+  {
+    "page": "index",
+    "performance": 100,
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "page": "buyer-guide",
+    "performance": 100,
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "page": "assessment",
+    "performance": 100,
+    "accessibility": 100,
+    "failures": []
+  }
+]

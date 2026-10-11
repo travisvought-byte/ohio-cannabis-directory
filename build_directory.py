@@ -13,6 +13,7 @@ from pathlib import Path
 import pandas as pd
 from directory_data import RELEASE, RELEASE_DATE, script_json, load_records, load_event_routes
 from directory_brand import brand_page
+from public_data import externalize
 
 ROOT = Path(__file__).resolve().parent
 SRC = ROOT / "ohio-cannabis-directory.csv"
@@ -151,6 +152,7 @@ def main():
     page = page.replace("__BUILT_ISO__", built_iso)
     page = page.replace("__NOSCRIPT_INDEX__", noscript_index)
 
+    page=externalize(page,payload,records,"data/public-organizations.json")
     with open(OUT, "w", encoding="utf-8") as f:
         f.write(page)
 
@@ -484,6 +486,7 @@ const telHref = value => {
   if(!/^\+?\d{10,15}$/.test(number))return '';
   return 'tel:' + number + (ext ? ';ext=' + ext[1] : '');
 };
+window.telHref=telHref;
 let recordID = '';
 function searchURL(){const u=new URL(location.href);u.search='';u.hash='';if(qEl.value.trim())u.searchParams.set('q',qEl.value.trim());if(catEl.value)u.searchParams.set('category',catEl.value);if(typeEl.value)u.searchParams.set('type',typeEl.value);if($('area').value)u.searchParams.set('area',$('area').value);if(showScope)u.searchParams.set('scope','all');if(recordID)u.searchParams.set('org',recordID);return u}
 function loadSearch(){const p=new URLSearchParams(location.search);if(!p.has('org')&&location.hash.startsWith('#org-'))p.set('org',location.hash.slice(1));qEl.value=p.get('q')||'';$('area').value=[...$('area').options].some(o=>o.value===p.get('area'))?p.get('area'):'';catEl.value=[...catEl.options].some(o=>o.value===p.get('category'))?p.get('category'):'';typeEl.value=[...typeEl.options].some(o=>o.value===p.get('type'))?p.get('type'):'';recordID=DATA.some(r=>r.id===p.get('org'))?p.get('org'):'';showScope=p.get('scope')==='all'||!!DATA.find(r=>r.id===recordID&&!r.scope);}

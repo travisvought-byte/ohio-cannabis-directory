@@ -1,5 +1,5 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),{JSDOM}=require('jsdom');
-function setup(url='https://example.test/ancestry.html'){return new JSDOM(fs.readFileSync('ancestry.html','utf8'),{runScripts:'dangerously',url});}
+function setup(url='https://example.test/ancestry.html'){return new JSDOM(require('./read-page.cjs')('ancestry.html'),{runScripts:'dangerously',url});}
 const model=JSON.parse(fs.readFileSync('data/strains/ancestry.json','utf8')),total=model.selection.expected_profile_count;
 const dom=setup(),d=dom.window.document,change=(id,v)=>{d.getElementById(id).value=v;d.getElementById(id).dispatchEvent(new dom.window.Event(id==='q'?'input':'change'));};
 assert.match(d.getElementById('count').textContent,new RegExp(total+' matching'));assert.equal(d.querySelectorAll('#results article').length,20);

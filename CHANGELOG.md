@@ -1,3 +1,12 @@
+# v4.26 - October 11, 2026
+
+- Load directory, locations, strain and state data after first paint; keep crawlable directory fallback and initial HTML below 200 KB on every page.
+- Add shared page descriptions and Open Graph metadata using the existing VHG logo.
+- Improve mobile tap targets and reading width; remove repeated calculator caveats.
+- Document four analytics questions, privacy exclusions and Travis’s separate dashboard check.
+- Mobile Lighthouse: 100 performance and 100 accessibility on homepage, buyer guide and assessment (local production HTML).
+- Update browser tests for fetched data and add the historical review migration check to CI.
+
 # v4.25 - October 11, 2026
 
 - Restored 485 missing historical review dates; listed 61 records without dated evidence in data/review-migration-report.json. Preserved original service-area wording and added controlled labels plus a filter.
