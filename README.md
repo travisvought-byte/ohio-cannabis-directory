@@ -6,7 +6,7 @@ A source-verified map of who serves what in Ohio cannabis: operators, service pr
 
 The current dataset contains **564 organizations**, including **516 publishable organizations across 16 categories** and 48 deliberately retained out-of-scope records. Those retained records keep renamed, acquired, superseded, or otherwise relevant organizations findable. The repository also includes 60 documented business-to-business relationships.
 
-**Current site release:** 4.27 · October 10, 2026.
+**Current site release:** 4.28 · October 10, 2026.
 
 Searches and filters persist in shareable URLs. Every organization has a permanent record link. [Who works with whom?](https://travisvought-byte.github.io/ohio-cannabis-directory/relationships.html) makes all 60 documented relationships searchable, with organization links and source evidence.
 
@@ -135,7 +135,7 @@ Visit the [VHG Veteran Resident Guide](https://travisvought-byte.github.io/vhg-v
 
 ## Shopping guide, business assessment and click analytics
 
-`buyer-guide.html` offers a printable first-visit worksheet and a supply calculator using the buyer's own amount and frequency. `assets/dispensary-shopping-guide.pdf` is its three-page companion. Rebuild with `python build_tools.py` and `python build_buyer_pdf.py` (ReportLab required for the PDF).
+`buyer-guide.html` builds a personalized first-visit plan for printing or PDF download, with questions to ask the dispensary and an optional three-number supply calculator: packages × items per package ÷ items used per day. PDF libraries and the embedded font load locally only when downloading; answers stay on the device. Rebuild with `python build_tools.py`. The longer educational reference remains at `assets/dispensary-shopping-guide.pdf` (rebuild that reference with `python build_buyer_pdf.py`, requiring ReportLab).
 
 `assessment.html` adapts Travis Vought's 33-question **Cannabis Financial Access & Compliance Readiness Assessment v2** from Google Drive, dated August 27, 2026. Only blank questions, evidence prompts and weights are imported into `data/business-assessment.json`; regulatory references remain explicitly dated. Scores and notes live in browser memory, with export and print controls. Unanswered questions do not count as zero and incomplete assessments receive a partial score without an overall rating. This does not certify compliance or bank eligibility.
 

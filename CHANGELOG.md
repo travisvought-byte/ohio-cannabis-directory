@@ -1,3 +1,11 @@
+# v4.28 - October 11, 2026
+
+- Rebuilt the buyer guide around a first-time visitor’s shopping plan, simple questions to ask and large readable controls.
+- Personalized PDF download and printing now include the visitor’s goal, experience, product interest, budget, question and optional supply estimate. Everything stays on the device.
+- Replaced label arithmetic and weekly-use planning with one optional calculator: packages × items per package ÷ items used per day. Removed possession alerts from this tool.
+- Mobile Lighthouse remains 100 performance / 100 accessibility for the homepage, buyer guide and assessment.
+- PDF dependencies and font load only when downloading. Kept the longer education guide as an optional reference; corrected analytics action names.
+
 # v4.27 - October 11, 2026
 
 - Removed plant-material possession-limit copy and calculator alerts at Travis’s request, including the harvest-limit discussion in the unpublished home-growing draft.

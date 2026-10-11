@@ -8,6 +8,8 @@ Open https://travisvought.goatcounter.com/ and look for paths beginning `action:
 - `email-contact`, `phone-contact`: contact link clicks; not proof of a message or call.
 - `search-used`, `search-no-results`: debounced search activity; no search terms are recorded.
 - `filter-changed`, `category-filter`, `distance-sort`: navigation actions where supported.
+- `download-visit-plan`: personalized shopping-plan PDF button; no plan contents are recorded.
+- `supply-calculator-used`: first valid package-duration calculation per page session.
 - `assessment-export`, `assessment-print`, `buyer-guide-print`: worksheet actions.
 
 Review weekly: which pages receive visitors, which routes get clicks, where searches fail, and whether visitors open or print resources. Compare like periods; events are not a conversion funnel or exact unique-person counts. No historical click data can be reconstructed.

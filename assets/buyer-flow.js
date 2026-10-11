@@ -1,7 +1,4 @@
-const buyerSteps=[...document.querySelectorAll('[data-tool-step]')],tabs=[...document.querySelectorAll('[data-buyer-step]')];
-tabs.forEach(button=>button.onclick=()=>{const n=Number(button.dataset.buyerStep);buyerSteps.forEach((s,i)=>s.hidden=i!==n);tabs.forEach((b,i)=>b.setAttribute('aria-pressed',i===n?'true':'false'));});
-let labelTracked=false,supplyTracked=false;
-['label-thc','label-cbd','label-amount','label-basis'].forEach(id=>document.getElementById(id).addEventListener('input',()=>{if(!labelTracked&&document.getElementById('label-result').textContent.startsWith('Labeled content')){labelTracked=true;if(window.directoryTrack)window.directoryTrack('label-calculator-used');}}));
-['quantity','amount','frequency','weeks','unit'].forEach(id=>document.getElementById(id).addEventListener('input',()=>{if(!supplyTracked&&document.getElementById('estimate').textContent.startsWith('One package')){supplyTracked=true;if(window.directoryTrack)window.directoryTrack('supply-calculator-used');}}));
-
-if(location.hash==="#ohio-basics"){tabs[2].click();document.getElementById("ohio-basics").open=true;}
+let supplyTracked=false;
+['packages','per-package','per-day'].forEach(id=>document.getElementById(id).addEventListener('input',()=>{if(!supplyTracked&&calc()){supplyTracked=true;if(window.directoryTrack)window.directoryTrack('supply-calculator-used');}}));
+document.getElementById('download-plan').onclick=async()=>{const button=document.getElementById('download-plan'),status=document.getElementById('plan-status');button.disabled=true;status.textContent='Preparing your plan...';try{const plan=updatePlan(),blob=await window.visitPlanPdf(plan),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='my-dispensary-plan.pdf';a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);status.textContent='Your plan is ready. Your answers stay on your device.';}catch(_){status.textContent='The PDF could not load. Use Print my plan to print or save it as a PDF.';}finally{button.disabled=false;}};
+if(location.hash==='#ohio-basics'){document.querySelector('.buyer-before').open=true;document.getElementById('ohio-basics').open=true;}
