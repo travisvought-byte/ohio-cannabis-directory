@@ -18,6 +18,6 @@ async function search(){const query=input.value.trim().toLowerCase();results.rep
 input.addEventListener('input',search);
 </script></body></html>'''.replace('__EVENTS__',event_html)
  # The footer carries the current release without adding another front-page box.
- body=brand_page(body).replace('A Veteran Home Guardians resource</p>','A Veteran Home Guardians resource · release v'+RELEASE['version']+'</p>')
+ body=brand_page(body).replace('Project roles</a></p>', 'Project roles</a> · release v'+RELEASE['version']+'</p>')
  OUT.write_text(body)
 if __name__=='__main__':main()
