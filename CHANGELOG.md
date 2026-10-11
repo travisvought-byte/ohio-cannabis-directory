@@ -1,3 +1,10 @@
+# v4.24 - October 11, 2026
+
+- New task-focused homepage with cross-catalog search, four task cards and two upcoming events. Full directory moved to directory.html; old index query/hash links redirect intact.
+- Shared primary navigation and footer, including the Veteran Resident Guide in the primary navigation per Travis. Consistent Ohio Cannabis Directory name.
+- Buyer guide uses three steps; self-check uses eight sections and a results screen. Weights and rating thresholds unchanged.
+- Ohio basics use verified statutory wording; home-grow explanation held for review.
+
 # v4.23 - October 11, 2026
 
 - Corrected public assessment intro, ownership approval wording and medical/adult-use tax question, with per-question verification dates.

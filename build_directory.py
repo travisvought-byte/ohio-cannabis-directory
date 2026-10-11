@@ -16,7 +16,7 @@ from directory_brand import brand_page
 
 ROOT = Path(__file__).resolve().parent
 SRC = ROOT / "ohio-cannabis-directory.csv"
-OUT = ROOT / "index.html"
+OUT = ROOT / "directory.html"
 
 OUT_OF_SCOPE = "Out of scope — flagged for removal or separate list"
 
@@ -161,22 +161,22 @@ TEMPLATE = r"""<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ohio Cannabis Ecosystem Directory</title>
+<title>Business directory</title>
 <meta name="description" content="A searchable, source-verified directory of Ohio cannabis and cannabis-adjacent organizations: operators, service providers and nonprofits.">
-<link rel="canonical" href="https://travisvought-byte.github.io/ohio-cannabis-directory/">
+<link rel="canonical" href="https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Ohio Cannabis Ecosystem Directory">
-<meta property="og:title" content="Ohio Cannabis Ecosystem Directory">
+<meta property="og:site_name" content="Business directory">
+<meta property="og:title" content="Business directory">
 <meta property="og:description" content="Find resources for yourself or your business in Ohio cannabis. __N_PUB__ organizations, each traced to a named source. Free and open under CC BY 4.0.">
 <meta property="og:url" content="https://travisvought-byte.github.io/ohio-cannabis-directory/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ohio Cannabis Ecosystem Directory">
+<meta name="twitter:title" content="Business directory">
 <meta name="twitter:description" content="Find resources for yourself or your business in Ohio cannabis. __N_PUB__ organizations, each traced to a named source. Free and open under CC BY 4.0.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Dataset",
-  "name": "Ohio Cannabis Ecosystem Directory",
+  "name": "Business directory",
   "description": "A source-verified directory of __N_PUB__ organizations operating in or serving Ohio's cannabis market. Each record is traced to a named source and released under CC BY 4.0.",
   "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/",
   "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -379,27 +379,7 @@ __VHG_CSS__
 <header>
   <div class="wrap masthead">
     __VHG_BRAND__
-    <h1>Ohio Cannabis Ecosystem Directory</h1>
-    <p><a href="state.html?state=OH">Explore by state and what you need</a></p>
-    <p class="standfirst">Find resources for yourself or your business in Ohio cannabis. __N_PUB__ organizations, each traced to a named source.</p>
-
-    <section class="highlight-card" aria-label="Consumer resource starting points">
-      <h2>What do you need?</h2>
-      <p>Start with a practical resource, or search the organizations below.</p>
-      <nav class="actions" aria-label="Consumer resources">
-        <a class="btn" href="resources.html#dispensaries">Find a dispensary</a>
-        <a class="btn" href="seeds.html">Seeds and growing supplies</a>
-        <a class="btn" href="resources.html#records">Clear a record</a>
-        <a class="btn" href="resources.html#medical">Medical patients</a>
-        <a class="btn" href="resources.html#rules">Ohio rules</a>
-        <a class="btn" href="resources.html#community">Community connections</a>
-      </nav>
-    </section>
-
-    <section class="home-highlights" aria-label="Upcoming events">
-      <div class="highlight-card" id="upcoming-card" aria-live="polite">__HOME_EVENT_MARKUP__</div>
-    </section>
-
+    <h1>Business directory</h1>
     <div class="searchbox">
       <input id="q" type="search" autocomplete="off" spellcheck="false"
              placeholder="Search a need, organization, city or county&hellip;"
@@ -433,9 +413,7 @@ __VHG_CSS__
 
 <p class="wrap" id="single-record" hidden><button class="btn" id="all-records">Back to all organizations</button></p>
 <main class="wrap" id="results"></main>
-<noscript>
-__NOSCRIPT_INDEX__
-</noscript>
+<details class="wrap"><summary>Browse the full text index without JavaScript</summary>__NOSCRIPT_INDEX__</details>
 
 <footer class="wrap">
   <p>A Veteran Home Guardians resource, compiled and maintained by Travis Vought. Built __BUILT__ from release v__VERSION__. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
@@ -467,7 +445,7 @@ function renderHomeHighlights(){
     const date = new Date(year, month - 1, day);
     return date >= today && date <= limit;
   }).sort((a,b) => a.date.localeCompare(b.date));
-  const panel = $('upcoming-card');
+  const panel = $('upcoming-card');if(!panel)return;
   if (!upcoming.length){
     panel.innerHTML = '<h2>Upcoming events · next 3 months</h2><p class="home-empty">No confirmed event dates in this window.</p>';
     return;
@@ -504,7 +482,7 @@ const telHref = value => {
 };
 let recordID = '';
 function searchURL(){const u=new URL(location.href);u.search='';u.hash='';if(qEl.value.trim())u.searchParams.set('q',qEl.value.trim());if(catEl.value)u.searchParams.set('category',catEl.value);if(typeEl.value)u.searchParams.set('type',typeEl.value);if(showScope)u.searchParams.set('scope','all');if(recordID)u.searchParams.set('org',recordID);return u}
-function loadSearch(){const p=new URLSearchParams(location.search);qEl.value=p.get('q')||'';catEl.value=[...catEl.options].some(o=>o.value===p.get('category'))?p.get('category'):'';typeEl.value=[...typeEl.options].some(o=>o.value===p.get('type'))?p.get('type'):'';recordID=DATA.some(r=>r.id===p.get('org'))?p.get('org'):'';showScope=p.get('scope')==='all'||!!DATA.find(r=>r.id===recordID&&!r.scope);}
+function loadSearch(){const p=new URLSearchParams(location.search);if(!p.has('org')&&location.hash.startsWith('#org-'))p.set('org',location.hash.slice(1));qEl.value=p.get('q')||'';catEl.value=[...catEl.options].some(o=>o.value===p.get('category'))?p.get('category'):'';typeEl.value=[...typeEl.options].some(o=>o.value===p.get('type'))?p.get('type'):'';recordID=DATA.some(r=>r.id===p.get('org'))?p.get('org'):'';showScope=p.get('scope')==='all'||!!DATA.find(r=>r.id===recordID&&!r.scope);}
 function clearRecord(){recordID=''}
 
 function filtered(){
