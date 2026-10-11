@@ -1,0 +1,3315 @@
+{
+  "checked_on": "2026-10-11",
+  "method": "Most recent dated source-pages-retrieved-and-reviewed audit in Seed Source, or a more recent existing review. Not a new review. Service-area labels are conservative normalizations of historical text, not verified fulfillment.",
+  "restored_review_dates": [
+    {
+      "id": "org-6f5375e74696",
+      "name": "Aprio",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-8bc2e46472e9",
+      "name": "Armanino",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-73962806aa32",
+      "name": "Baker Tilly",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-d36b365de9d2",
+      "name": "BeachFleischman — Cannabis Practice (formerly Indiva Advisors)",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-ab696a79f76f",
+      "name": "BudsGroup",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-5650468e3bca",
+      "name": "Calyx CPA",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-ccd462913cc9",
+      "name": "Canna Drust",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-a0f16e94f344",
+      "name": "Cannabis Accounting & Consulting Group d/b/a The Blunt Accountant™",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-18739a0f8994",
+      "name": "Cannabis CPA Tax",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-1d42dd421c92",
+      "name": "CBIZ",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-ea825d478df5",
+      "name": "Citrin Cooperman",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-68285b679e46",
+      "name": "CohnReznick",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-efa4a8df2421",
+      "name": "Crowe",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-c030dbdd0981",
+      "name": "GAC Advisory",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-9ed4875dc1d5",
+      "name": "GreenGrowth CPAs",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-da2a80d7f09d",
+      "name": "Growise CPAs",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-cc96c3d190d4",
+      "name": "HBK Cannabis Solutions",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-7086d1fee932",
+      "name": "Leafy Accounting Group",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-ce8459b144c7",
+      "name": "LOUD CPA",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-a750e32a1a1f",
+      "name": "MGO",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-6c0ad9215737",
+      "name": "MindfulCPAs",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-16a604f63be9",
+      "name": "MY DOPE CPA",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-d8451edd6fb3",
+      "name": "Pease Bell CPAs",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-e8660c8fdabb",
+      "name": "Pipe Dream Financials",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-4a9f91858514",
+      "name": "The Canna CPAs",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-ac4919b61068",
+      "name": "Verdant Strategies (formerly 420CPA)",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-3a06b64e031f",
+      "name": "Withum",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-c50b4831f060",
+      "name": "Advanced Flower Capital",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-dc2a86e5ef89",
+      "name": "Aeropay",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-c13fe6d752cb",
+      "name": "Alta Real Estate Fund",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-6ad7a467953f",
+      "name": "Bankcard International Group",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-82830b7eeca7",
+      "name": "CANNA-ATM",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-def97ffbd151",
+      "name": "CanPay",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-766e9c078cff",
+      "name": "Chicago Atlantic",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-664350edc53d",
+      "name": "Community Choice Credit Union",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-59b372097b38",
+      "name": "Dama Financial (LeafLink Financial Services)",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-7eeb5665decf",
+      "name": "Dispo ATM",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-24d0e2bda395",
+      "name": "Element Federal Credit Union",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-786e79f39a46",
+      "name": "Fincann",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-42e1996cbd8f",
+      "name": "Fort Yuma ATM",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-e53c053a5970",
+      "name": "FundCanna",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-9e3d7601ef7a",
+      "name": "FundNow Capital",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-20924604b09b",
+      "name": "Lazear Capital Partners",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-ed0c0107656d",
+      "name": "Needham Bank",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-a9589fb802ab",
+      "name": "Paybotic Financial",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-e3c3a5e8a05d",
+      "name": "ReeFi Capital",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-b1c9597ee969",
+      "name": "Safe Harbor Financial",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-dcad275fd858",
+      "name": "SALT",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-0f09d67b057c",
+      "name": "Shield Compliance",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-b1fa2893922c",
+      "name": "Solvent",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-6fa17f19ae5f",
+      "name": "Spendr",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-65199f65fc19",
+      "name": "Upwise Capital",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-a5f1518ea942",
+      "name": "Wright-Patt Credit Union",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-2ee67e89bfc3",
+      "name": "AirMD",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-0f2a3316e1ca",
+      "name": "Allay Consulting",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-4e0a234d5a17",
+      "name": "Ananda Strategy",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-fb4281f33792",
+      "name": "Arcview Consulting",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-3ca802b13f07",
+      "name": "BioServ",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-26e2764e69db",
+      "name": "Budding Operations",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-aa319ba23b37",
+      "name": "Cann Strategy",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-8dc6b52f8303",
+      "name": "Canna Advisors",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-5889059a5b21",
+      "name": "Canna Business Services",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-f92f65234640",
+      "name": "Canna Consultants",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-ce2294a18546",
+      "name": "Cannabis Cash Consultants",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-7279edf8e5a9",
+      "name": "Cannabis Global Consultants",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-84931b1ed90c",
+      "name": "CannaPath Consulting",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-17c50e57cc1b",
+      "name": "CannDelta",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-51b563354dfe",
+      "name": "Certified Environmental, Inc.",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-0f7867fc9599",
+      "name": "Collateral Base",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-e8d5c45ceb00",
+      "name": "DMD Environmental Consultants",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-f2f67bcff4d0",
+      "name": "Forte Ops",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-b0cff79c9c3c",
+      "name": "Galleon Consulting Group",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-33dfdc741930",
+      "name": "Green Leaf Business Solutions",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-15471c25990f",
+      "name": "Hazardous Waste Experts",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-206d8dacd4ff",
+      "name": "Higher Yields Cannabis Consulting",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-d3b216df4713",
+      "name": "Kiwa ASI",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-db4eb290f5aa",
+      "name": "Kush Design Studio",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-12a85c92b445",
+      "name": "LKP Impact Consulting",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-57054a89bfa5",
+      "name": "Point Seven Group (Point7)",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-40ef03775c60",
+      "name": "PsyCann Advisors",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-65e1ff906dc7",
+      "name": "Quantum 9",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-3a0ae70ab2e0",
+      "name": "Safex, Inc.",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-fff80f344301",
+      "name": "The Cannabis Business Advisors",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-c74bad85ccf3",
+      "name": "Travis Vought — Cannabis Ecosystem Mapping & Strategy",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-ac54496dd570",
+      "name": "Triumvirate Environmental",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-6d479bcfb2d1",
+      "name": "WeCann",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-51ddc559a90e",
+      "name": "A Dose of Hope",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-9e14a3bfda99",
+      "name": "ACA Dispensary",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-68ca5164ba06",
+      "name": "Amplify",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-cadae1a17de3",
+      "name": "Ancient Roots",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-9878f97747e7",
+      "name": "Ascend Cannabis",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-31d30a079044",
+      "name": "Ascension BioMedical LLC",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-7b1ec7846617",
+      "name": "Ayr Wellness Ohio",
+      "old": "",
+      "restored_date": "2026-08-17"
+    },
+    {
+      "id": "org-cd73b383c43b",
+      "name": "Backroad Wellness",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-7831babce707",
+      "name": "Beneleaves",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-c081c812feb2",
+      "name": "Beyond Hello",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-405c00e28938",
+      "name": "Black Buddha Cannabis",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-f84af119e259",
+      "name": "Bliss Ohio",
+      "old": "",
+      "restored_date": "2026-08-17"
+    },
+    {
+      "id": "org-922caf289dc8",
+      "name": "Bloom Cannabis (formerly Bloom Medicinals)",
+      "old": "",
+      "restored_date": "2026-08-17"
+    },
+    {
+      "id": "org-24ac5cb3557c",
+      "name": "Buckeye Relief",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-64ee2d0eff77",
+      "name": "Canopy Growth / Acreage",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-1d44aa49bf35",
+      "name": "Certified Cultivators",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-471d2f40325e",
+      "name": "Cielo Jardin / Treehaus / CJ's (Heylo)",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-2adb331ca783",
+      "name": "Consume Cannabis (PTS Grows)",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-667af67557f3",
+      "name": "Cresco Labs / Sunnyside",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-550cc193e4d0",
+      "name": "Culture Cannabis Club",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-6bb8b2a3ca4e",
+      "name": "Curaleaf Ohio",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-0dba2c8a737d",
+      "name": "Dialed In Gummies",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-27e668beecb1",
+      "name": "Elevated Growth",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-3a4a21b3faf4",
+      "name": "Ethos Cannabis / Meigs County Grown",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-9ee4b284a472",
+      "name": "Farkas Farms",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-90725b1d60a7",
+      "name": "FarmaceuticalRx",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-02393016e488",
+      "name": "Feel State",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-403a8f6287f1",
+      "name": "Firelands Scientific",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-bd430c7e91b0",
+      "name": "Galenas LLC",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-783986a56f1d",
+      "name": "Green Leaf Therapy",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-0fe664576c8d",
+      "name": "Green Releaf Dispensary",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-364a9eed8729",
+      "name": "Green Thumb Industries (RISE / RYTHM)",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-40726ffc20a0",
+      "name": "Greenlight Dispensary",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-cfc630983d08",
+      "name": "Grow Ohio / Butterfly Effect",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-73fe6ae295b7",
+      "name": "Guaranteed Dispensary",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-86d0f1c54920",
+      "name": "Hundred Percent Labs",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-afa309caf39c",
+      "name": "INSA",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-55ddf9f58f12",
+      "name": "Italian Herbs",
+      "old": "",
+      "restored_date": "2026-08-17"
+    },
+    {
+      "id": "org-34013988f2ee",
+      "name": "King City Gardens",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-d1d519732a19",
+      "name": "Klutch Cannabis",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-2eb414488b5a",
+      "name": "Leaf Relief",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-fee14b6a9c90",
+      "name": "Lighthouse Sciences",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-63bd45e3d30d",
+      "name": "Locals Cannabis Dispensary",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-cbec823aceb6",
+      "name": "Main Street Cannabis Co.",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-9ee377e930fd",
+      "name": "Mavuno of Ohio",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-1347773f0174",
+      "name": "Mother’s Earth Fine Cannabis",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-f3d5255d5bc7",
+      "name": "Nar Cannabis",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-5557bb333b04",
+      "name": "Nectar Ohio",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-a821a61acb08",
+      "name": "Nirvana Center Dispensaries",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-6cae66a61594",
+      "name": "Northwoods Cannabis",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-17949ca7057c",
+      "name": "Off The Charts Dayton",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-d480f46274ac",
+      "name": "Ohio Cannabis Company",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-aefe1b952bc0",
+      "name": "PharmaCann / Verilife",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-73dbb4d51092",
+      "name": "Pure Ohio Wellness",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-2b099217b822",
+      "name": "Purpose Leaf / hōn Cannabis",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-ae7e208afc98",
+      "name": "Queen City Cannabis",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-9bdb83da8d0c",
+      "name": "Ratio Cannabis",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-b434c8bd9f4c",
+      "name": "Riviera Creek",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-31a9d040cd43",
+      "name": "ROAM Dispensary",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-9770d5914483",
+      "name": "Rove",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-807016fdf315",
+      "name": "Shangri-La Dispensaries",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-a05f9afca5ef",
+      "name": "Southern Ohio Botanicals",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-fa59d5f74ed0",
+      "name": "Standard Wellness / The Forest",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-2f4e4abf2576",
+      "name": "Story Cannabis",
+      "old": "",
+      "restored_date": "2026-08-17"
+    },
+    {
+      "id": "org-acbcf491323e",
+      "name": "Supergood",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-4d7897d29e7e",
+      "name": "Terrasana Cannabis Co.",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-7022b334ede8",
+      "name": "The Botanist (Acreage Holdings)",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-342301c01b6b",
+      "name": "The Cannabist Company / Columbia Care Ohio",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-a4be8fc0719f",
+      "name": "The Garden Club Dispensary",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-4c8da4a965ec",
+      "name": "The Mothership Cannabis Dispensary",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-1587d77e43a5",
+      "name": "Theory Wellness",
+      "old": "",
+      "restored_date": "2026-08-17"
+    },
+    {
+      "id": "org-541abb14f3bc",
+      "name": "Therapy Cannabis",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-c50a78614d86",
+      "name": "Thrive Wellness",
+      "old": "",
+      "restored_date": "2026-08-17"
+    },
+    {
+      "id": "org-171927b374cf",
+      "name": "Trulieve Ohio",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-e0b1fa95a12d",
+      "name": "UpLift",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-2412bd73869d",
+      "name": "Verano / Zen Leaf",
+      "old": "",
+      "restored_date": "2026-08-17"
+    },
+    {
+      "id": "org-c987375d90fe",
+      "name": "Vext Science / Appalachian Pharm / Herbal Wellness Center / The Hive",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-79984c5926e3",
+      "name": "Woodward Fine Cannabis (formerly Pollen)",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-1b5fd89992f5",
+      "name": "Cincinnati, Columbus and Cleveland Medical Marijuana Meetups",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-091b191caaaa",
+      "name": "Cleveland Cannabis and Music Expo",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-be3a86788b46",
+      "name": "Highly Satisfied Stoners Food Expo",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-f9dece454b02",
+      "name": "IgniteIt",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-84327294cf18",
+      "name": "Ohio Cannabis Health & Business Summit",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-23b94eafc801",
+      "name": "Ohio Valley 4/20 Cannabis Festival and Ohio Valley Cannabis Cup",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-0479f2850035",
+      "name": "Stargazer Cannabis Festival",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-d96da8ebac94",
+      "name": "The 420 Olympics",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-9f0eac39576f",
+      "name": "The Ohio Classic / The Classic Events",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-36b5cb011fb3",
+      "name": "Women's Cannabis & Wellness Expo",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-28107c7fe3a4",
+      "name": "Clean Remedies",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-9a763fe48014",
+      "name": "Cornbread Hemp",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-a8e21c973f96",
+      "name": "Cycling Frog / North Fork Distribution",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-fef0a7bb2f40",
+      "name": "Fifty West Brewing Company / Sunflower Seltzers",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-b48e16de9fcf",
+      "name": "Motive CBD",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-c6c7ab956ad5",
+      "name": "Sarene Craft Beer Distributors — Ohio",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-7e1c31ddf363",
+      "name": "Saucy Seltzer / Saucy Brew Works",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-1f499dcfc56c",
+      "name": "Titan Logistics Group LLC / TLGDistro / 420 Craft Beverages",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-8863e9b8ffe1",
+      "name": "Urban Artifact / Coastalo (Grayscale Brewing LLC)",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-5174fb5f4865",
+      "name": "AlphaRoot",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-f1126161a4ac",
+      "name": "Amwins Program Underwriters",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-c61e7b6f6d19",
+      "name": "Berkley",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-5589cd092de8",
+      "name": "CannabisInsurance.com / 420Insurance.com — Kulchin Ross Insurance Services",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-f9fbd6240a18",
+      "name": "Cannaspace Insurance Group",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-ed855a2c302a",
+      "name": "Cannasure Insurance Services (One80 Intermediaries)",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-b28150502634",
+      "name": "CannGen Insurance Services",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-27266ffaa5f7",
+      "name": "CIS Insurance Services, LLC (The Cannabis Insurance Company)",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-48bc962a2145",
+      "name": "Contractors Choice Agency — Cannabis Insurance",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-1384f3688cb8",
+      "name": "Cover Cannabis (brand of Inszone Insurance Services, Inc.)",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-d86de7bab0cc",
+      "name": "HUB International",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-1cbd067de90c",
+      "name": "iCann Insure",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-6f378d0b5792",
+      "name": "Insureon",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-14a064b915f3",
+      "name": "McGowan Program Administrators",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-4c67457feb96",
+      "name": "Payne & Brown Insurance Agency",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-516e00934b80",
+      "name": "ProSure Group",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-ce090dd6efa5",
+      "name": "QuadScore",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-4d61d91d6bff",
+      "name": "SafeHerb",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-0b73ca0a2058",
+      "name": "Spire Insurance Solutions",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-adfa95ff2c1f",
+      "name": "Starwind Specialty Insurance Services",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-bb0314e21158",
+      "name": "Strive Insurance Group",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-f339dbd4fde7",
+      "name": "Truepath Insurance",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-f28a4972c6a5",
+      "name": "Verde Insurance",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-976f3a0347b4",
+      "name": "World Insurance Associates",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-9df4306f4be4",
+      "name": "'68 Partners LLC",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-20c268171121",
+      "name": "Ainslie Consulting",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-209ab06e5fe7",
+      "name": "Benesch, Friedlander, Coplan & Aronoff LLP",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-dea403955b20",
+      "name": "Bricker Graydon — cannabis practice",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-ce7e40ed878d",
+      "name": "Cannaspire",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-bc5cee9459df",
+      "name": "Catalyst BC",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-1531d6b2c339",
+      "name": "Dentons",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-b4b02a5e6161",
+      "name": "Dickinson Wright PLLC",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-4adb7d744c55",
+      "name": "Foley Hoag LLP",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-a165a0f11715",
+      "name": "Frantz Ward LLP",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-91ee171bdaeb",
+      "name": "Ice Miller LLP",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-7ca4a132ada7",
+      "name": "ICS Consulting Service",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-9b673ee01ed9",
+      "name": "Kegler Brown Hill + Ritter",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-f01dfabbc20d",
+      "name": "Mansour Gavin LPA",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-ff8ae7820be0",
+      "name": "Omnus Law",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-06824bd6c74e",
+      "name": "Porter Wright Morris & Arthur LLP",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-03e26cc03f84",
+      "name": "Reminger Co., LPA",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-c07b717074e3",
+      "name": "Seeley, Savidge, Ebert & Gourash Co., LPA (SSEG)",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-109a93176b6c",
+      "name": "Sick & Co.",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-875f0233c47d",
+      "name": "StreamLine Cannabis Consulting",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-baace2c570b4",
+      "name": "Tucker Ellis LLP",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-bae125036d67",
+      "name": "Vorys, Sater, Seymour and Pease LLP",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-69fd86123b43",
+      "name": "WH Burkley (formerly Walter Haverfield LLP)",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-ad0cac1b9e7a",
+      "name": "5W Public Relations",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-b819d31c47d6",
+      "name": "Advance Ohio",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-0fc313d6c680",
+      "name": "Agensea",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-66aea0e7b5a4",
+      "name": "Bud Authority",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-7987f7d7552c",
+      "name": "Cannabis Business Times",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-67ba18bcf3f7",
+      "name": "Cannabis Creative Group",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-b3c9c0bc44a0",
+      "name": "Cannabis Websites & SEO",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-91c77257c699",
+      "name": "Cannabiz Marketing Solutions / DopeSEO",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-e7ec54328c78",
+      "name": "CannaContent",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-3b5c3869332f",
+      "name": "CannaPlanners",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-fded5093999b",
+      "name": "Coffman Media",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-3208e395d79a",
+      "name": "DEEPROOTS",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-3c2ffdae042b",
+      "name": "Digital Third Coast",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-e54ac43e5180",
+      "name": "Durée & Company — Cannabis & CBD PR",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-38fba23c1d5e",
+      "name": "Grasslands",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-84fe8b355440",
+      "name": "GreenState",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-2fc7c8996cd5",
+      "name": "Hybrid Marketing Co.",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-27432b04ff0d",
+      "name": "Leaf Marketing",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-0ed58be2d2e7",
+      "name": "Level Plus",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-b282cd3094ea",
+      "name": "MATTIO Communications",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-5796802ffeb6",
+      "name": "MediaJel",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-df41816014cc",
+      "name": "NisonCo",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-0039680585f9",
+      "name": "OhioCannabis.com",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-ea58ef0c710b",
+      "name": "POINT BRAND Marketing Agency",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-4ee259b8e58f",
+      "name": "PufCreativ",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-a107d913ecd8",
+      "name": "Range Marketing",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-f9233e32a729",
+      "name": "Rival Response",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-2b438fb26214",
+      "name": "Seedless Media",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-4575c56db1e0",
+      "name": "Signs By Tomorrow Cincinnati North",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-8e54183208a4",
+      "name": "Spokes Digital",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-9070ef5f2adb",
+      "name": "Springbig",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-207c57d3828a",
+      "name": "Surfside",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-dac350091391",
+      "name": "Terrayn",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-5ab8516f2235",
+      "name": "The Cannabis Marketing Agency",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-be69aa019900",
+      "name": "The Hood Collective",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-6d9a4c9578ba",
+      "name": "ThrivePOP",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-bd13d5a0906b",
+      "name": "Trip",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-914195f2354b",
+      "name": "VEOOZ",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-a41077656b77",
+      "name": "Americans for Safe Access",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-a7b45513e9cf",
+      "name": "Civics Cannabis",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-7e749b6967b8",
+      "name": "Coalition to Regulate Marijuana Like Alcohol (Ohio)",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-ed0906c8b550",
+      "name": "Compassionate Alternatives",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-c6f6f261e714",
+      "name": "Drug Enforcement and Policy Center (Ohio State Moritz)",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-8427ef8e5bb7",
+      "name": "Drug Policy Alliance",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-12edc986a5a5",
+      "name": "Green Environmental Outreach (GEO Nonprofit)",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-05e4ab7218d1",
+      "name": "International Cannabis Education Coalition (ICEC)",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-18cfa139168e",
+      "name": "Last Prisoner Project",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-9c01f7e0ab4e",
+      "name": "LEAF411",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-4adb57400fe1",
+      "name": "Marijuana Policy Project",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-b870a8a62a9e",
+      "name": "MedicateOH",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-cb9a881abcf1",
+      "name": "Midwest CannaWomen",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-1d6604295a95",
+      "name": "National Cannabis Industry Association",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-73029716e566",
+      "name": "NORML",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-28996af4250a",
+      "name": "OHCANN (Ohio Cannabis Coalition)",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-8aa562b99642",
+      "name": "Ohio Cannabis Association",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-f58fbbd656cf",
+      "name": "Ohio Healthy Alternatives Association",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-6f45f7c60883",
+      "name": "Ohio Justice & Policy Center",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-fbc9f2e06984",
+      "name": "Ohio Medical Marijuana Physicians Association",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-fd7388e9d2ee",
+      "name": "Ohio Veteran's Alliance for Medical Cannabis (OVAMC)",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-bf86a088bea5",
+      "name": "OneOhio Recovery Foundation",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-ab854d60bdb3",
+      "name": "PreventionFIRST!",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-a8433675c717",
+      "name": "Realm of Caring Foundation",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-36630e5c633e",
+      "name": "Sensible Movement Coalition",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-6d96aab778c7",
+      "name": "The Cannabis Chamber of Commerce",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-8238a66c6c67",
+      "name": "The Cannabis Museum",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-82220f4b38b3",
+      "name": "Truth Initiative",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-4d4b4fa99409",
+      "name": "U.S. Hemp Roundtable",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-b2c3ac4255a5",
+      "name": "US Cannabis Roundtable",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-b4d008cdf3ab",
+      "name": "Veterans Initiative 22",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-ed68ac6c605f",
+      "name": "Alleaves",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-6780de0cf3ee",
+      "name": "Altaqua",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-dbc1ce44da4b",
+      "name": "Canna Business Resources",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-2a8e3eb20314",
+      "name": "Cannabis Engineering + Compliance (CE+C)",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-042bb6ebbdd1",
+      "name": "CannabisComplianceOhio",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-a1cec0bdea80",
+      "name": "CannaCard",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-a298f55d805e",
+      "name": "Carbtrol",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-bc4556c2a11a",
+      "name": "Cloudbox",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-38190c14ce04",
+      "name": "ColaDigital",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-6c41e1530268",
+      "name": "Cova Software",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-9be1a0af8005",
+      "name": "Gold Standard Cannabis Marketing",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-083ee6798f75",
+      "name": "Heady",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-994fa27ac7da",
+      "name": "Howard M. Cohn & Associates (THC Legal Group legacy)",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-445c487eef5d",
+      "name": "InSpire Transpiration Solutions",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-a841c3cfc075",
+      "name": "LeafSuite",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-9961eab1c65d",
+      "name": "MFE Insurance Brokerage",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-6528ed621523",
+      "name": "Minorities for Medical Marijuana",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-c403c04240c5",
+      "name": "Minority Cannabis Business Association",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-344b79678f29",
+      "name": "National Hemp Association",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-12c2e0c4f6ba",
+      "name": "Ohio Cannabis Company (The Green Goat Dispensary, LLC)",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-85a0834c514c",
+      "name": "Ohio Division of Cannabis Control",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-d95af44364ff",
+      "name": "Ohio Hemp Growers Association",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-bda41eddcfdb",
+      "name": "OhioCannabis.com Festival & Farmers Cup",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-996bb6b559bf",
+      "name": "OMI Industries (Ecosorb)",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-3e265df87388",
+      "name": "Pelorus Capital Group",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-4f49cd874c21",
+      "name": "PREM PR & Social",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-5199e3f4fc64",
+      "name": "Project CBD",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-644b72739a62",
+      "name": "PROTEUS420",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-1f2aa5485c3d",
+      "name": "PureAir Filtration",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-6fe3f03e72cb",
+      "name": "Rad Source Technologies",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-1dda264b7dbb",
+      "name": "Reefferr",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-66aa2a6e5de9",
+      "name": "RISE Dispensaries Ohio (duplicate of Green Thumb Industries (RISE / RYTHM))",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-cf92f33b658d",
+      "name": "Stockton University",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-ef9d4f318d8b",
+      "name": "Students for Sensible Drug Policy",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-493cee0ee3e0",
+      "name": "TechPOS",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-f9c0cfc30245",
+      "name": "The Source Marketing Group",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-93dc921a568f",
+      "name": "Treez / TreezPay (formerly Swifter; acquired)",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-d1b714cd9a3e",
+      "name": "Verdant Creations (historical brand / DCC legal-name cross-reference)",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-399f2ac6a041",
+      "name": "Vote Hemp",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-534166b2ed75",
+      "name": "Wick & Mortar",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-0b2cf7c42999",
+      "name": "Yerbalist",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-213edd99cf5c",
+      "name": "A-ROO Company",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-d66804546580",
+      "name": "Berlin Packaging",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-76eced7adf7a",
+      "name": "CannaZip",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-2f442746d1f6",
+      "name": "Contempo Packaging",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-65617e337fe7",
+      "name": "CRATIV Packaging",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-ac6c235d84b2",
+      "name": "Custom Cones USA",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-bff25117eadb",
+      "name": "Direct Target Products",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-daa9079c0b61",
+      "name": "Dispensary Supply",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-5bf53f1772f4",
+      "name": "Dragon Chewer",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-89414e56dfbb",
+      "name": "Dymapak",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-c846e3e71849",
+      "name": "eBottles",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-978898ebbc07",
+      "name": "Fortis Solutions Group",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-ba023ba76349",
+      "name": "Green Rush Packaging",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-3d665d449ae6",
+      "name": "Grove Bags",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-973cf0245c6e",
+      "name": "Kaufman Container",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-079c9905b709",
+      "name": "Mammoth Labels & Packaging",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-cc73334fa814",
+      "name": "Miami Valley Packaging Solutions",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-c760c3a83472",
+      "name": "Moondust USA",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-89dcba7ce077",
+      "name": "N2 Packaging Systems",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-8b4a1a9db98a",
+      "name": "Niagara Label",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-2fd3506b7eb2",
+      "name": "PackTHC",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-2586c0cc00fd",
+      "name": "Pollen Gear",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-877dbd3c9ccf",
+      "name": "RXDco",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-48c5b9278769",
+      "name": "SafeCare Packaging",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-0ddc72c17eb9",
+      "name": "Sana Packaging",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-92bb88e0422d",
+      "name": "Smith Corona",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-9714eff1008a",
+      "name": "Tree Street Packaging",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-54769487fe4f",
+      "name": "420 Property",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-f2c6f4b780f6",
+      "name": "Allspace",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-9763272c7061",
+      "name": "Anderson Porter Design",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-547f01a174ca",
+      "name": "ARCO National Construction",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-f167bed71a80",
+      "name": "ATI Restoration — Cleveland",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-8954644facc1",
+      "name": "Bud Bar Displays",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-271525f0bb6f",
+      "name": "Cannabis Facility Construction (CFC)",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-2309318d71ec",
+      "name": "Claypool Electric",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-e89aabc7db2f",
+      "name": "CLC Design Studio",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-55347a6ba03b",
+      "name": "Dominion AG (DAG)",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-7eadbf4f4945",
+      "name": "Dr. Greenhouse, Inc.",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-9b7047555d2a",
+      "name": "Engineered Temperature Solutions (ETS)",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-f73d6f8cdebe",
+      "name": "Epstein",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-2bf9228b0518",
+      "name": "GreenZones",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-04fce3c5a9e7",
+      "name": "Grow America Builders",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-4b829397bf1a",
+      "name": "Kiesland Development Services",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-83129fa77642",
+      "name": "NEXT architecture",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-43d1a747f0ae",
+      "name": "Ohio Cannabis Design Solutions",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-ad28d10d93f6",
+      "name": "Oliver Architecture",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-b17390f489a7",
+      "name": "OPC Pest Services",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-e2134138e765",
+      "name": "Path Construction",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-217eebef8361",
+      "name": "Pio Custom Cabinetry",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-01fd01796a5c",
+      "name": "Prospiant",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-213dd6d61c3e",
+      "name": "RBI CMS",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-e84bd9b38215",
+      "name": "Stockmeister Services",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-19bab7f0dc74",
+      "name": "Studio Bliss",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-1fe8ab476108",
+      "name": "Summit Construction Company",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-70fa704deee5",
+      "name": "Terrapin Construction Group",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-97f6d0768a39",
+      "name": "VALERE Architects",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-7bf06cb96659",
+      "name": "Zoned Properties",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-9a8f8e220473",
+      "name": "Apple Water Management",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-172a3dc6fdad",
+      "name": "ArcadianAI",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-71102633651f",
+      "name": "Brink's",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-c2c3b280033c",
+      "name": "BS Done Right",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-159b873d06f3",
+      "name": "Calvis Security",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-322ee82642f3",
+      "name": "Cannabis Safety First LLC",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-b378d74b9ade",
+      "name": "DEM360",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-5c99e5f5c9c9",
+      "name": "Everon (formerly ADT Commercial)",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-9365716997b1",
+      "name": "GardaWorld Cash",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-e82d60b88784",
+      "name": "Green Cross ATM",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-e18361195eef",
+      "name": "Guardian Alarm",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-54a596954b3c",
+      "name": "Guardian Protection",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-885c2a224166",
+      "name": "Hi-Tech Security Solutions",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-acdedba12f3c",
+      "name": "Innovatex IT Solutions",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-8adc90efe4e0",
+      "name": "LiveReach AI",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-932a48a31a6f",
+      "name": "Loomis US",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-39b71ed63460",
+      "name": "MVP Financial Equipment (MVP ATM)",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-17e21b6c3009",
+      "name": "OHZ Security",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-3d37c9e81ab0",
+      "name": "ProTech Security",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-16d4da55ae5f",
+      "name": "Sapphire Risk Advisory Group",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-9fed675327c4",
+      "name": "Solink",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-2b1d7f43aa6e",
+      "name": "Talaria",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-88f48543e97d",
+      "name": "Vector Security",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-175f350d2985",
+      "name": "Verkada",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-2c9b864bffb1",
+      "name": "CannabizTeam",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-53cb78fdf20c",
+      "name": "CanopyHR",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-842f90458ef2",
+      "name": "CSC Schools (Cleveland School of Cannabis)",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-265cb53bc283",
+      "name": "Direct Recruiters, Inc.",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-4eecce726b2e",
+      "name": "Emerald Lane Recruitment",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-c75f5115acff",
+      "name": "Evolve HCM",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-7f30a2faf075",
+      "name": "FastFingerprints (National Background Check, Inc.)",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-4706d228695d",
+      "name": "FlowerHire",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-5987e1037522",
+      "name": "Grassroots Staffing Group",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-e9278d97b9fa",
+      "name": "Green Collar Network",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-038a2ba4c6a3",
+      "name": "Green Flower",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-4a6d0e9f4a07",
+      "name": "High Bluff Group",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-91d667ae5d92",
+      "name": "High End Search",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-5b35bc213905",
+      "name": "Hunter + Esquire",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-817af2844fdc",
+      "name": "KayaPush",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-a83be9552b63",
+      "name": "Kent State University — Cannabis Education",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-388238cf0313",
+      "name": "Kind Benefits",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-23cbf7524a65",
+      "name": "KushHR",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-fc88c0cbff15",
+      "name": "Paragon Payroll",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-5a38fa4c7aad",
+      "name": "Paylient",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-d268d75a101c",
+      "name": "Tesseon",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-ae7e83263b95",
+      "name": "The United Green",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-d0977478cf53",
+      "name": "TrimForce",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-9a3195afc097",
+      "name": "Trovaro",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-ae271f545ee6",
+      "name": "University of Cincinnati — Cannabis Studies Certificate",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-c921c1c273cf",
+      "name": "Vangst",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-92074d3577bc",
+      "name": "Viridian Staffing",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-2f2f38627940",
+      "name": "White Ash Group",
+      "old": "",
+      "restored_date": "2026-08-15"
+    },
+    {
+      "id": "org-10fcfaed139c",
+      "name": "Würk",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-d11f62d98d3a",
+      "name": "Zane State College — Cannabis Certificate Programs",
+      "old": "",
+      "restored_date": "2026-08-23"
+    },
+    {
+      "id": "org-3d3c5f565927",
+      "name": "365 Cannabis (acquired by Innovia Consulting, Feb 2026 — see Innovia entry)",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-53423d4fe08f",
+      "name": "Alpine IQ (AIQ; incl. AIQ Ecommerce, formerly Dispense)",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-037f0479b847",
+      "name": "BLAZE",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-87b32cb5cf50",
+      "name": "Brandr AI",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-8150454287d6",
+      "name": "Canix (including acquired Trym)",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-93ded3612fd5",
+      "name": "CannaHub",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-fb73e6da4d0f",
+      "name": "CannaLnx (EM2P2)",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-a06c1362a303",
+      "name": "Dutchie",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-cfc768cc486e",
+      "name": "Flowhub",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-2a92a4f3c70c",
+      "name": "Green Check Verified",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-0e18d6a3e0ca",
+      "name": "GrowGeneration",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-79c6188047ac",
+      "name": "Headset",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-4e563ff69d7a",
+      "name": "Hoodie Analytics",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-57f411325bdc",
+      "name": "IndicaOnline",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-0f1a2f519e40",
+      "name": "Innovia",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-3c57a53ad51a",
+      "name": "Jane Technologies",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-cc9e43442ed0",
+      "name": "JointCommerce",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-3d0d1f662279",
+      "name": "LeafBridge",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-6ed3327990cd",
+      "name": "Lucid Green",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-d04d2460a818",
+      "name": "Marijuana Software LLC — Ohio Metrc",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-54dcc0ba312a",
+      "name": "Melt To Make",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-ce5f89f3d3b3",
+      "name": "Metrc",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-a06683a78c5f",
+      "name": "Ohio420.ai",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-dcff1d5fca84",
+      "name": "POSaBIT",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-40bdc9eb2854",
+      "name": "Sweed",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-688c71d09ae7",
+      "name": "WebJoint",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-e47fbe7eb5d2",
+      "name": "Weedmaps for Business",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-b55e227695b5",
+      "name": "Willow Industries",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-d28afba8d1dd",
+      "name": "XRpure",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-f487ce396018",
+      "name": "Ziel",
+      "old": "",
+      "restored_date": "2026-08-22"
+    },
+    {
+      "id": "org-8fd15920db44",
+      "name": "North Coast Testing Laboratories, LLC",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-74e57cabf73f",
+      "name": "Pinnacle Testing and Specialty Lab",
+      "old": "",
+      "restored_date": "2026-08-16"
+    },
+    {
+      "id": "org-6a466599534c",
+      "name": "Laurelcrest",
+      "old": "",
+      "restored_date": "2026-08-14"
+    },
+    {
+      "id": "org-9b0acb0eee5e",
+      "name": "Kentucky Cannabis Industry Alliance",
+      "old": "",
+      "restored_date": "2026-08-23"
+    }
+  ],
+  "rows_without_dated_review": [
+    {
+      "id": "org-337f14b85abe",
+      "name": "InTrack CFO"
+    },
+    {
+      "id": "org-5e9b5a2704a6",
+      "name": "Mindtrix"
+    },
+    {
+      "id": "org-8652a50fb7c6",
+      "name": "Argent Institutional Trust Company"
+    },
+    {
+      "id": "org-60c467ab6634",
+      "name": "Atomic Credit Union"
+    },
+    {
+      "id": "org-8ef8dba29f38",
+      "name": "HSLC Banking & Financial Services"
+    },
+    {
+      "id": "org-7db1a956303e",
+      "name": "Our Community Harvest"
+    },
+    {
+      "id": "org-cde7d825c692",
+      "name": "Pisgah Peaks Ventures"
+    },
+    {
+      "id": "org-0a9c87eb5a40",
+      "name": "MissGrass"
+    },
+    {
+      "id": "org-7e1ab15e4a71",
+      "name": "Ohio Clean Leaf"
+    },
+    {
+      "id": "org-e49263f057bc",
+      "name": "Ohio Green Systems"
+    },
+    {
+      "id": "org-80f8c07ddd91",
+      "name": "Randy's"
+    },
+    {
+      "id": "org-139c66e61558",
+      "name": "Subsidio"
+    },
+    {
+      "id": "org-ea14a4ededa6",
+      "name": "Ohio Cannabis Expo"
+    },
+    {
+      "id": "org-5ad9d905fae3",
+      "name": "420 SwitchBlade"
+    },
+    {
+      "id": "org-c57033abadbe",
+      "name": "Dyspensr"
+    },
+    {
+      "id": "org-5cbe778a5271",
+      "name": "G Pen / Grenco Science"
+    },
+    {
+      "id": "org-20250325b35f",
+      "name": "Mojo's Smoke Shop (formerly The Hemp House / Wholesale Hemp LLC)"
+    },
+    {
+      "id": "org-4272e7927699",
+      "name": "Nexus Agriscience"
+    },
+    {
+      "id": "org-7155fdc4e396",
+      "name": "Millers Insurance Group"
+    },
+    {
+      "id": "org-6c62f0f9c74b",
+      "name": "CashColorCannabis"
+    },
+    {
+      "id": "org-a32d429b1d8a",
+      "name": "Ohio Cannabis Live"
+    },
+    {
+      "id": "org-7172eadd96a4",
+      "name": "PMB PROMOS"
+    },
+    {
+      "id": "org-6734e1942cc7",
+      "name": "RBO"
+    },
+    {
+      "id": "org-f46072cb3cfa",
+      "name": "Natural Therapies Education Foundation"
+    },
+    {
+      "id": "org-7d813189790c",
+      "name": "North Linden Area Commission"
+    },
+    {
+      "id": "org-1b9500af4822",
+      "name": "Katherine Cochran — Scioto County Commissioner write-in candidate"
+    },
+    {
+      "id": "org-9f251af516f2",
+      "name": "Ohio House of Representatives"
+    },
+    {
+      "id": "org-48089a65e9d7",
+      "name": "Ohio Senate"
+    },
+    {
+      "id": "org-feedcad3b5ae",
+      "name": "One Bond Laboratories, Inc."
+    },
+    {
+      "id": "org-6592c48fbe9a",
+      "name": "Scioto County Welcome Center"
+    },
+    {
+      "id": "org-36f49023be41",
+      "name": "Finished Goods"
+    },
+    {
+      "id": "org-8cfae8fa9c89",
+      "name": "Hefestus USA Inc."
+    },
+    {
+      "id": "org-e0d93f21d61b",
+      "name": "Label Aid, Inc."
+    },
+    {
+      "id": "org-d9b1b2d2d217",
+      "name": "Package My Bud"
+    },
+    {
+      "id": "org-e7e43adc3511",
+      "name": "PackTrack"
+    },
+    {
+      "id": "org-b10fae35df91",
+      "name": "PreRoll Distro"
+    },
+    {
+      "id": "org-b3d069b72662",
+      "name": "PreRoll-Er"
+    },
+    {
+      "id": "org-ae47f740e012",
+      "name": "Royal Blunts"
+    },
+    {
+      "id": "org-7063acd850da",
+      "name": "Vert Packaging"
+    },
+    {
+      "id": "org-517bb8b79eb5",
+      "name": "ABS Money Systems"
+    },
+    {
+      "id": "org-604ede518b05",
+      "name": "Elite Preparedness Asset Protection"
+    },
+    {
+      "id": "org-7a67d8f3a6f9",
+      "name": "Koorsen Fire & Security"
+    },
+    {
+      "id": "org-0557619757dc",
+      "name": "Porcupine Defense Solutions"
+    },
+    {
+      "id": "org-bb22c8902ddd",
+      "name": "Security 101 — Columbus"
+    },
+    {
+      "id": "org-098f74cadecb",
+      "name": "OROleafhr"
+    },
+    {
+      "id": "org-7354c5fa79e6",
+      "name": "GreenTank"
+    },
+    {
+      "id": "org-dd29cf4b93ea",
+      "name": "GrowerIQ"
+    },
+    {
+      "id": "org-22363ee3ca56",
+      "name": "Happy Cabbage"
+    },
+    {
+      "id": "org-0feff903c70c",
+      "name": "Horticulture Lighting Group"
+    },
+    {
+      "id": "org-ff5c505e8d2b",
+      "name": "Hytiva Technologies"
+    },
+    {
+      "id": "org-6d0ae4c0f229",
+      "name": "Indoor Gardens"
+    },
+    {
+      "id": "org-9aaf751c8541",
+      "name": "Outlaw Technology"
+    },
+    {
+      "id": "org-dc474ca20d13",
+      "name": "Quality Extractions Group"
+    },
+    {
+      "id": "org-5685e7174422",
+      "name": "RX Green Technologies"
+    },
+    {
+      "id": "org-a7e9b3f90d8b",
+      "name": "StashStock"
+    },
+    {
+      "id": "org-f3c5879951d3",
+      "name": "Vecmar"
+    },
+    {
+      "id": "org-439251489828",
+      "name": "ACT LAB (ACT Laboratories, Inc.)"
+    },
+    {
+      "id": "org-326247e5b9d0",
+      "name": "CP Labs Ohio Operating Company, LLC"
+    },
+    {
+      "id": "org-923f274679fc",
+      "name": "Green Analytics OH"
+    },
+    {
+      "id": "org-a3ab86b73858",
+      "name": "Smithers CTS Ohio, LLC"
+    },
+    {
+      "id": "org-d97a25fb6f85",
+      "name": "! Libertarian Party of Ohio"
+    }
+  ],
+  "coverage_counts": {
+    "Nationwide incl. Ohio": 170,
+    "Multistate, Ohio unconfirmed": 99,
+    "Ohio regional: Ohio offices in the Cleveland area and Columbus; U.S. cannabis practice": 1,
+    "Ohio statewide": 78,
+    "Ohio regional: Ohio and multistate": 2,
+    "Ohio regional: Ohio market / OCHBS exhibitor": 25,
+    "Ohio regional: Canton, Ohio; cannabis accounting": 1,
+    "Ohio regional: 4343 Easton Commons, Suite 120, Columbus, OH 43219": 1,
+    "Ohio regional: Ohio | West Virginia | Maryland | District of Columbia and additional markets": 1,
+    "Ohio regional: Ohio (extent unspecified)": 26,
+    "Ohio regional: Ohio and multi-market": 1,
+    "Ohio regional: Mansfield, Ohio": 1,
+    "Ohio regional: Toledo, Ohio and Northwest Ohio": 1,
+    "Ohio regional: Hubbard, Ohio": 1,
+    "Ohio regional: Central Ohio": 5,
+    "Ohio regional: Southwest Ohio / Cincinnati": 1,
+    "Ohio regional: Six Ohio dispensaries: Carroll, Cincinnati, Coshocton, Englewood, Piqua and Sandusky": 1,
+    "Ohio regional: Oberlin, Ohio": 1,
+    "Ohio regional: 8 Ohio dispensaries: Akron, Dayton, Goshen, Lewis Center, Niles, Parma Heights, Streetsboro, Woodmere": 1,
+    "Ohio regional: New Boston, Cambridge and Lima, Ohio (Southern and Eastern Ohio)": 1,
+    "Ohio regional: 7 Ohio dispensaries: Cincinnati (x2), Mansfield, Parma, Oxford, Toledo and Warren": 1,
+    "Ohio regional: Kent, Ohio": 1,
+    "Ohio regional: 8 Ohio dispensaries (7 active, 1 provisional): Akron, Athens, Columbus (x2), Massillon, Painesville, Seven Mile": 1,
+    "Ohio regional: Northeast Ohio / Cleveland-Akron": 3,
+    "Ohio regional: Ohio — active dual-use processor; 100 Davids Drive, Wilmington (CCP000060-00)": 1,
+    "Ohio regional: Central Ohio; Dayton / Miami Valley": 2,
+    "Ohio regional: Euclid, Ohio cultivation; Parma, Ohio CJ's dispensary pre-opening; Heylo/Treehaus roots in Washington": 1,
+    "Ohio regional: Alliance, Ashtabula, Cincinnati and Oxford, Ohio; also Illinois and Arizona": 1,
+    "Ohio regional: Akron, Ohio — current first-party Culture storefront": 1,
+    "Ohio regional: Columbus, Ohio": 3,
+    "Ohio regional: Lebanon and New Lexington retail; Langsville cultivation, Ohio": 1,
+    "Ohio regional: Grafton / Lorain County, Northeast Ohio": 1,
+    "Ohio regional: East Liverpool, Cuyahoga Falls and Elyria, Ohio, plus additional announced locations": 1,
+    "Ohio regional: Urbana and Lewis Center, Ohio; also operates in Missouri": 1,
+    "Ohio regional: Akron, Ohio": 1,
+    "Ohio regional: Struthers/Youngstown-area, Ohio (93 S. Bridge St.)": 1,
+    "Ohio regional: Dayton and Cincinnati, Ohio": 1,
+    "Ohio regional: Ohio: six current first-party RISE storefronts (Cleveland x2, Lakewood, Lorain, Toledo and Whitehall), plus active Middletown legal license; Toledo cultivation and processing": 1,
+    "Ohio regional: Columbus, Ironton, Marengo, Marietta, South Point and Wintersville, Ohio": 1,
+    "Ohio regional: Southeast Ohio": 1,
+    "Ohio regional: Dayton / Miami Valley": 2,
+    "Ohio regional: Willoughby Hills operating; Dayton provisional license": 1,
+    "Ohio regional: Ashtabula and Geneva-on-the-Lake, Ohio": 1,
+    "Ohio regional: Cincinnati, Ohio (cultivation, processing and 3 dispensaries)": 1,
+    "Ohio regional: Columbus, Canton and Lorain, Ohio, plus Akron-area roots; Grandview / 1305 Holly Ave, Columbus — opened September 11, 2026": 1,
+    "Ohio regional: Youngstown and Reynoldsburg, Ohio; Austintown pre-opening": 1,
+    "Ohio regional: Eastlake, Ohio": 1,
+    "Ohio regional: Columbus and Cincinnati, Ohio": 1,
+    "Ohio regional: Cleveland and Athens, Ohio; South Euclid coming soon": 1,
+    "Ohio regional: Delaware and Columbus, Ohio": 1,
+    "Ohio regional: Bowling Green, Cincinnati (x3), Euclid and Harrison, Ohio": 1,
+    "Ohio regional: Elyria, Ohio (Northeast Ohio)": 1,
+    "Ohio regional: Dayton, Ohio": 2,
+    "Ohio regional: Canton, Columbus, Dublin, Piqua and Upper Sandusky/Harpster; Canal Winchester coming soon": 1,
+    "Ohio regional: Garfield Heights, Ohio": 1,
+    "Ohio regional: Wintersville and Ironton, Ohio — legal-entity cross-reference; see Greenlight Dispensary": 1,
+    "Ohio regional: Enon, Ohio / Dayton–Miami Valley": 1,
+    "Ohio regional: Norwood and Harrison, Ohio (Cincinnati metro)": 1,
+    "Ohio regional: New Philadelphia, Ohio — current first-party storefront; Columbus legal license not first-party storefront-confirmed": 1,
+    "Ohio regional: Youngstown, Ohio": 1,
+    "Ohio regional: Seven Hills, Ohio": 1,
+    "Ohio regional: Multi-state; active Ohio market participation": 1,
+    "Ohio regional: Monroe, Cleveland, Cincinnati, Delphos and Amelia, Ohio": 1,
+    "Ohio regional: Portsmouth / Southern Ohio": 2,
+    "Ohio regional: 8 Ohio dispensaries: Cincinnati (x2), Cleveland (x2), Columbus, Coshocton, Dublin, Massillon": 1,
+    "Ohio regional: Ravenna, Ohio": 1,
+    "Ohio regional: 7 current Ohio dispensaries; Columbus cultivation and processing; planned Akron, Canton and Zanesville dispensaries": 1,
+    "Ohio regional: Akron, Canton, Cleveland (x2), Columbus, Solon and Wickliffe, Ohio (7 locations)": 1,
+    "Ohio regional: Springdale dispensary; Columbus cultivation and processing": 1,
+    "Ohio regional: Streetsboro, Ohio": 1,
+    "Ohio regional: Sherwood and Columbus, Ohio": 1,
+    "Ohio regional: Cleveland and Cincinnati, Ohio": 1,
+    "Ohio regional: Tiffin, Ohio; Columbus/Reynoldsburg at 2025 Brice Rd, Reynoldsburg, OH 43068": 1,
+    "Ohio regional: Milford and Mt. Orab, Ohio": 1,
+    "Ohio regional: 6 Ohio dispensaries: Antwerp, Bowling Green, Canton, Cincinnati, Riverside/Dayton, Newark": 1,
+    "Ohio regional: Delaware, Ohio": 1,
+    "Ohio regional: Cincinnati / Columbus / Cleveland": 1,
+    "Ohio regional: Cleveland / Northeast Ohio": 3,
+    "Ohio regional: Cincinnati / Ohio Valley; multi-market": 1,
+    "Ohio regional: Kansas City, Missouri; Ohio industry engagement: OCHBS 2026 direct-contact evidence": 1,
+    "Ohio regional: Columbus / Central Ohio": 1,
+    "Ohio regional: Cadiz / Jacobsburg / Eastern Ohio": 1,
+    "Ohio regional: Waverly / Southern Ohio": 1,
+    "Ohio regional: Kettering / Dayton region; multi-market Classic series": 1,
+    "Ohio regional: West Chester / Greater Cincinnati": 1,
+    "Ohio regional: Kentucky-based / Ohio retail availability documented": 1,
+    "Ohio regional: Portsmouth and Wheelersburg, Ohio": 1,
+    "Ohio regional: Columbus, Ohio (hemp grown in Centerburg, OH)": 1,
+    "Ohio regional: New Jersey (not an Ohio licensee); Ohio event connection: retained OCHBS speaker-source record": 1,
+    "Ohio regional: Cleveland / Columbus / Ohio": 1,
+    "Ohio regional: Cleveland / Ohio / multi-state": 1,
+    "Ohio regional: Cincinnati / Ohio — sales currently protected by federal preliminary injunction": 1,
+    "Ohio regional: Ohio and other legal-cannabis states": 1,
+    "Ohio regional: Chicago, Illinois; U.S. cannabis licensing and regulatory consulting; no Ohio engagement identified": 1,
+    "Ohio regional: Ohio and regional": 1,
+    "Ohio regional: Ohio and multiple U.S. markets": 1,
+    "Ohio regional: Ohio-based; Ohio, Pennsylvania, Maryland and additional markets": 1,
+    "Ohio regional: Ohio and additional regulated markets": 1,
+    "Ohio regional: Ohio (Cleveland, Mayfield, Columbus); also Pittsburgh PA and Wheeling WV": 1,
+    "Ohio regional: Ohio-serving; remote services": 1,
+    "Ohio regional: Toledo and surrounding Ohio communities": 1,
+    "Outside Ohio": 4,
+    "Ohio regional: Cincinnati / Southwest Ohio": 2,
+    "Ohio regional: Throughout Ohio — Columbus, Cleveland, Cincinnati, Dayton and Akron": 1,
+    "Ohio regional: Ohio engagement / United States; no Ohio office": 1,
+    "Ohio regional: Springfield, Columbus and Central Ohio": 1,
+    "Ohio regional: Cleveland / Ohio; also provides patient-access routing for Pennsylvania and West Virginia": 1,
+    "Ohio regional: Columbus, OH": 1,
+    "Ohio regional: Ohio-accessible remote support / worldwide; no Ohio office": 1,
+    "Ohio regional: Marengo, Ohio; Central Ohio — Morrow, Knox, Delaware and Marion counties": 1,
+    "Ohio regional: Cleveland, Ohio (parent IP firm); cannabis practice not independently current": 1,
+    "Ohio regional: Scioto County / Portsmouth, Ohio": 1,
+    "Ohio regional: Duplicate cross-reference only; current Ohio details consolidated into Green Thumb Industries (RISE / RYTHM)": 1,
+    "Ohio regional: Portsmouth / Southern Ohio; venue provenance only": 1,
+    "Ohio regional: Spencer, Ohio | Ohio-serving": 1,
+    "Ohio regional: Worldwide shipping | Ohio-serving": 1,
+    "Ohio regional: Bedford Heights, Ohio, with additional Columbus operations": 1,
+    "Ohio regional: 4031 N. Pecos Rd., Suite 100, Las Vegas, NV 89115; Ohio industry engagement: OCHBS 2026 direct-contact evidence": 1,
+    "Ohio regional: United States; U.S.-based service team, no Ohio customer identified": 1,
+    "Ohio regional: United States; national brand, no Ohio customer identified": 1,
+    "Ohio regional: Ohio | All U.S. legal markets": 1,
+    "Ohio regional: Central Ohio; Lancaster, Columbus, Newark and Athens offices": 1,
+    "Ohio regional: Ohio and multiple U.S. cannabis markets": 1,
+    "Ohio regional: Lancaster and Central Ohio": 1,
+    "Ohio regional: Southwest Ohio, Dayton, Northern Kentucky and Indiana; Ohio cannabis project experience": 1,
+    "Ohio regional: Ohio project experience | Pittsburgh-based": 1,
+    "Ohio regional: Ohio | Regional cannabis projects": 1,
+    "Ohio regional: 27+ U.S. states; explicit Ohio cannabis facility-design offering": 1,
+    "Ohio regional: Northeast and Central Ohio": 1,
+    "Ohio regional: 1781 Westbelt Drive, Columbus, OH 43228": 1,
+    "Ohio regional: Ohio branches in Akron, Cincinnati, Cleveland, Columbus, Dayton, Toledo and Youngstown": 1,
+    "Ohio regional: Ohio — Cincinnati, Cleveland, Columbus, Toledo and surrounding markets": 1,
+    "Ohio regional: Ohio — Cincinnati, Cleveland, Columbus, Youngstown and surrounding markets": 1,
+    "Ohio regional: 500 Frank W. Burr Blvd., Suite 43, Teaneck, NJ 07666; Ohio industry engagement: OCHBS 2026 direct-contact evidence": 1,
+    "Ohio regional: Cleveland and Northeast Ohio": 1,
+    "Ohio regional: Ohio; Cincinnati and Columbus facilities confirmed": 1,
+    "Ohio regional: Ohio opportunity; operating and service area not yet independently verified": 1,
+    "Ohio regional: Cleveland / Akron / Canton / Columbus / Ohio": 1,
+    "Ohio regional: Greater Columbus": 1,
+    "Ohio regional: Ohio and 18 other states plus Washington, D.C.": 1,
+    "Ohio regional: Ohio — Geneva, Westerville, Mansfield and Canfield": 1,
+    "Ohio regional: Ohio / online": 1,
+    "Ohio regional: Ohio / 100% online": 2,
+    "Ohio regional: Ohio | Select U.S. markets": 1,
+    "Ohio regional: Cincinnati / Ohio": 1,
+    "Ohio regional: Mentor, Ohio; serves cannabis operators": 1,
+    "Ohio regional: Michigan-based / multi-market; Ohio-market engagement documented": 1,
+    "Ohio regional: 5304 Fleet Ave, Cleveland, OH 44105; 2076 Romig Rd, Akron, OH 44320; 4720 Indianola Ave, Columbus, OH 43214": 1,
+    "Ohio regional: 2533 Tracy Rd., Northwood, Ohio 43619": 1,
+    "Ohio regional: Ohio market / multi-state; Michigan-based": 1,
+    "Ohio regional: Streetsboro, Ohio; Ohio cannabis market": 1
+  }
+}

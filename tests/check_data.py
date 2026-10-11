@@ -22,7 +22,8 @@ for row in rows:
     if row['Last Reviewed']:
         assert date.fromisoformat(row['Last Reviewed']) <= RELEASE_DATE
         assert row['Last Reviewed'] in row['Source(s)'] + row['Seed Source']
-assert sum(bool(r['Last Reviewed']) for r in rows) >= 8
+assert sum(bool(r['Last Reviewed']) for r in rows) == 503
+assert all(r['Service Area (as published)'] is not None for r in rows)
 with (ROOT / 'b2b-relationships.csv').open(encoding='utf-8-sig') as f:
     relationships = list(csv.DictReader(f))
 assert len(relationships) == 60

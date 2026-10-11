@@ -274,7 +274,7 @@ $('wipe').addEventListener('click', () => {
 
 $('csv').addEventListener('click', () => {
   if (!rows.length) return;
-  const head = ["Category","Organization / Business Name","Type","Contact Person","Email","Phone","Website","Service Area","Capabilities / Keywords","Verification Tier","Notes","Source(s)","Seed Source","Record ID","Last Reviewed"];
+  const head = ["Category","Organization / Business Name","Type","Contact Person","Email","Phone","Website","Service Area","Capabilities / Keywords","Verification Tier","Notes","Source(s)","Seed Source","Record ID","Last Reviewed","Service Area (as published)"];
   const q = v => '"' + String(v == null ? '' : v).replace(/"/g,'""') + '"';
   const body = rows.map(r => {
     const record = {'Category':r.cat,'Organization / Business Name':r.org,'Type':r.type,

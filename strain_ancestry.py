@@ -36,12 +36,12 @@ def analyze(data):
             errors.append('Distinct name count differs from reviewed selection metadata')
         for s in catalog:
             for field in ('category', 'lineage_text', 'history', 'review_note', 'profile_source_ids', 'reviewed_on'):
-                if not s.get(field):
+                if not s.get(field) and not (s.get('source_link_only') and field in ('lineage_text','history','reported_effects','reported_flavors')):
                     errors.append(f"Missing profile field {field}: {s['id']}")
             for field in ('reported_effects', 'reported_flavors', 'reported_terpenes', 'ohio_evidence'):
                 if not isinstance(s.get(field), list):
                     errors.append(f"Invalid profile list {field}: {s['id']}")
-            if s.get('category') not in ('indica', 'sativa', 'hybrid'):
+            if s.get('category') not in ('indica', 'sativa', 'hybrid') and not (s.get('source_link_only') and s.get('category')=='unknown'):
                 errors.append(f"Invalid category: {s['id']}")
             if any(ref not in sources for ref in s.get('profile_source_ids', [])):
                 errors.append(f"Missing profile source: {s['id']}")
@@ -71,13 +71,13 @@ def analyze(data):
             errors.append('Popular catalog must contain 100 distinct display names')
         for s in popular:
             for field in ('category', 'lineage_text', 'history', 'review_note', 'profile_source_ids', 'reported_effects', 'reported_flavors', 'reviewed_on'):
-                if not s.get(field):
+                if not s.get(field) and not (s.get('source_link_only') and field in ('lineage_text','history','reported_effects','reported_flavors')):
                     errors.append(f"Missing profile field {field}: {s['id']}")
-            if s.get('category') not in ('indica', 'sativa', 'hybrid'):
+            if s.get('category') not in ('indica', 'sativa', 'hybrid') and not (s.get('source_link_only') and s.get('category')=='unknown'):
                 errors.append(f"Invalid category: {s['id']}")
             if any(ref not in sources for ref in s.get('profile_source_ids', [])):
                 errors.append(f"Missing profile source: {s['id']}")
-            if not isinstance(s.get('review_count'), int) or s.get('review_count', 0) <= 0:
+            if not s.get('source_link_only') and (not isinstance(s.get('review_count'), int) or s.get('review_count', 0) <= 0):
                 errors.append(f"Invalid review count: {s['id']}")
     for source in sources.values():
         if not source['url'].startswith('https://'):

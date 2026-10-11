@@ -1,3 +1,10 @@
+# v4.25 - October 11, 2026
+
+- Restored 485 missing historical review dates; listed 61 records without dated evidence in data/review-migration-report.json. Preserved original service-area wording and added controlled labels plus a filter.
+- Strain coverage and menu snapshot labels added. Leafly terms checked: 97 reference profiles retain links without republishing attributes or reader counts. Independently sourced ancestry and producer profiles remain.
+- Added unpaid-listing disclosure policy; Travis reports no relationships needing disclosure.
+- Displayed DCC October 5 state counts alongside the 230-record map snapshot; one-record gap is explicitly unreconciled.
+
 # v4.24 - October 11, 2026
 
 - New task-focused homepage with cross-catalog search, four task cards and two upcoming events. Full directory moved to directory.html; old index query/hash links redirect intact.

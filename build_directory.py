@@ -32,6 +32,7 @@ COLS = {
     "Website": "web",
     "Source(s)": "src",
     "Service Area": "area",
+    "Service Area (as published)": "area_original",
     "Notes": "notes",
     "Seed Source": "seed",
     "Verification Tier": "tier",
@@ -57,7 +58,7 @@ def main():
         # precomputed lowercase haystack keeps filtering fast on phones
         rec["_s"] = " ".join([
             rec["org"], rec["cat"], rec["keys"], rec["area"],
-            rec["person"], rec["notes"], rec["type"],
+            rec["person"], rec["notes"], rec["type"], rec["area_original"],
         ]).lower()
         records.append(rec)
 
@@ -141,6 +142,7 @@ def main():
     page = page.replace("__HOME_EVENT_MARKUP__", home_event_markup)
     page = page.replace("__CAT_OPTS__", cat_opts)
     page = page.replace("__TYPE_OPTS__", type_opts)
+    page = page.replace("__AREA_OPTS__", "".join('<option>'+html.escape(a)+'</option>' for a in ["Ohio statewide","Ohio regional","Nationwide incl. Ohio","Multistate, Ohio unconfirmed","Outside Ohio"]))
     page = page.replace("__N_PUB__", str(n_pub))
     page = page.replace("__N_SCOPE__", str(n_scope))
     page = page.replace("__EXPORT_COLUMNS__", script_json([[COLS[c], c] for c in df.columns]))
@@ -396,6 +398,7 @@ __VHG_CSS__
         <option value="">Businesses and nonprofits</option>
         __TYPE_OPTS__
       </select>
+      <select id="area" aria-label="Filter by service area"><option value="">All service areas</option>__AREA_OPTS__</select>
       <p class="tally" id="tally" role="status" aria-live="polite"></p>
     </div>
 
@@ -416,7 +419,7 @@ __VHG_CSS__
 <details class="wrap"><summary>Browse the full text index without JavaScript</summary>__NOSCRIPT_INDEX__</details>
 
 <footer class="wrap">
-  <p>A Veteran Home Guardians resource, compiled and maintained by Travis Vought. Built __BUILT__ from release v__VERSION__. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
+  <p>Listings are not paid placements. Any sponsorship or business relationship with a listed organization is disclosed on its record.</p><p>A Veteran Home Guardians resource, compiled and maintained by Travis Vought. Built __BUILT__ from release v__VERSION__. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
   <p class="update-contact">Additions and corrections: <a href="__UPDATE_URL__">__VHG_EMAIL__</a>.</p>
   <p><a href="intake.html">Capture organizations offline</a> · <a href="relationships.html">Browse 60 documented relationships</a> · <a href="b2b-relationships.csv">Download relationship data</a></p>
   <p>Out-of-scope records are kept rather than deleted so that renamed, acquired and superseded organizations stay findable. They are hidden by default.</p>
@@ -462,6 +465,7 @@ renderHomeHighlights();
 setInterval(renderHomeHighlights, 60000);
 document.addEventListener('visibilitychange', () => {if (!document.hidden) renderHomeHighlights();});
 
+$('area').addEventListener('change',()=>{clearRecord();render()});
 const splitField = value => String(value || '')
   .split('|').map(part => part.trim()).filter(Boolean);
 
@@ -481,8 +485,8 @@ const telHref = value => {
   return 'tel:' + number + (ext ? ';ext=' + ext[1] : '');
 };
 let recordID = '';
-function searchURL(){const u=new URL(location.href);u.search='';u.hash='';if(qEl.value.trim())u.searchParams.set('q',qEl.value.trim());if(catEl.value)u.searchParams.set('category',catEl.value);if(typeEl.value)u.searchParams.set('type',typeEl.value);if(showScope)u.searchParams.set('scope','all');if(recordID)u.searchParams.set('org',recordID);return u}
-function loadSearch(){const p=new URLSearchParams(location.search);if(!p.has('org')&&location.hash.startsWith('#org-'))p.set('org',location.hash.slice(1));qEl.value=p.get('q')||'';catEl.value=[...catEl.options].some(o=>o.value===p.get('category'))?p.get('category'):'';typeEl.value=[...typeEl.options].some(o=>o.value===p.get('type'))?p.get('type'):'';recordID=DATA.some(r=>r.id===p.get('org'))?p.get('org'):'';showScope=p.get('scope')==='all'||!!DATA.find(r=>r.id===recordID&&!r.scope);}
+function searchURL(){const u=new URL(location.href);u.search='';u.hash='';if(qEl.value.trim())u.searchParams.set('q',qEl.value.trim());if(catEl.value)u.searchParams.set('category',catEl.value);if(typeEl.value)u.searchParams.set('type',typeEl.value);if($('area').value)u.searchParams.set('area',$('area').value);if(showScope)u.searchParams.set('scope','all');if(recordID)u.searchParams.set('org',recordID);return u}
+function loadSearch(){const p=new URLSearchParams(location.search);if(!p.has('org')&&location.hash.startsWith('#org-'))p.set('org',location.hash.slice(1));qEl.value=p.get('q')||'';$('area').value=[...$('area').options].some(o=>o.value===p.get('area'))?p.get('area'):'';catEl.value=[...catEl.options].some(o=>o.value===p.get('category'))?p.get('category'):'';typeEl.value=[...typeEl.options].some(o=>o.value===p.get('type'))?p.get('type'):'';recordID=DATA.some(r=>r.id===p.get('org'))?p.get('org'):'';showScope=p.get('scope')==='all'||!!DATA.find(r=>r.id===recordID&&!r.scope);}
 function clearRecord(){recordID=''}
 
 function filtered(){
@@ -493,6 +497,7 @@ function filtered(){
     if (!showScope && !r.scope) return false;
     if (cat && r.cat !== cat) return false;
     if (type && r.type !== type) return false;
+    if ($('area').value && ($('area').value==='Ohio regional'?!r.area.startsWith('Ohio regional:'):r.area!==$('area').value)) return false;
     return terms.every(t => r._s.includes(t));
   });
 }
@@ -521,7 +526,7 @@ function record(r){
     ${r.keys ? `<p class="keys">${esc(r.keys)}</p>` : ''}
     ${r.tier !== 'Source-verified' ? `<p class="flagged">${esc(r.tier)}</p>` : ''}
     <p class="contact">${bits.join('')}</p>
-    <p class="line"><a href="?org=${encodeURIComponent(r.id)}">Link to this organization</a> · <a href="relationships.html?q=${encodeURIComponent(displayOrg)}">Relationships</a>${r.reviewed?' · Evidence reviewed '+esc(r.reviewed):''}</p>
+    <p class="line"><a href="?org=${encodeURIComponent(r.id)}">Link to this organization</a> · <a href="relationships.html?q=${encodeURIComponent(displayOrg)}">Relationships</a>${r.reviewed?' · Checked '+new Intl.DateTimeFormat('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'}).format(new Date(r.reviewed+'T00:00:00Z')):''}</p>
     <details>
       <summary>Provenance and notes</summary>
       <div class="prov">
@@ -599,7 +604,7 @@ $('dl').addEventListener('click', () => {
 });
 
 $('share').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(searchURL().href);$('share-status').textContent='Link copied.'}catch{$('share-status').textContent='Copy the page address to share this search.'}});
-$('all-records').addEventListener('click',()=>{clearRecord();qEl.value='';catEl.value='';typeEl.value='';showScope=false;syncLanes();render()});
+$('all-records').addEventListener('click',()=>{clearRecord();qEl.value='';catEl.value='';typeEl.value='';$('area').value='';showScope=false;syncLanes();render()});
 window.addEventListener('popstate',()=>{loadSearch();syncLanes();render()});
 loadSearch();syncLanes();render();
 </script>
