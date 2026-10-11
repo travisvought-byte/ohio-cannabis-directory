@@ -33,7 +33,14 @@ with tempfile.TemporaryDirectory() as temp:
         module = importlib.import_module(module_name)
         module.OUT = Path(temp) / filename
         module.main()
-        assert module.OUT.read_text() == (ROOT / filename).read_text(), f'{filename} requires rebuild'
+        generated = module.OUT.read_text()
+        committed = (ROOT / filename).read_text()
+        if generated != committed:
+            first = next((i for i, (a, b) in enumerate(zip(generated, committed)) if a != b), min(len(generated), len(committed)))
+            print(f'{filename} mismatch at character {first}', flush=True)
+            print('expected:', repr(generated[max(0, first-100):first+250]), flush=True)
+            print('committed:', repr(committed[max(0, first-100):first+250]), flush=True)
+            raise AssertionError(f'{filename} requires rebuild')
 for name in ['.zenodo.json','zenodo.json']:
     archive = json.loads((ROOT / name).read_text())
     assert archive['version'] == RELEASE['version']
