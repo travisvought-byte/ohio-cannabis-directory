@@ -1,6 +1,6 @@
 """Publish a directory-first entry point; preserve existing search and record URLs."""
 from pathlib import Path
-from directory_data import RELEASE
+from directory_data import RELEASE, load_records
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'index.html'
@@ -31,9 +31,9 @@ nav a{min-height:44px;display:inline-flex;align-items:center}
 <p>Find Ohio cannabis businesses, people, suppliers and service providers. Search 516 publishable organizations, with contact details and source evidence.</p>
 <p><strong><a href="directory.html">Open the searchable industry directory →</a></strong></p>
 <nav aria-label="Primary">
-<a href="directory.html">Industry directory</a>
+<a href="directory.html">Business directory</a>
 <a href="relationships.html">Business connections</a>
-<a href="locations.html">Dispensaries</a>
+<a href="locations.html">Find a dispensary</a>
 <a href="buyer-guide.html">Shop smart</a>
 <a href="knowledge.html">Learn</a>
 <a href="resources.html">More resources</a>
@@ -47,7 +47,8 @@ nav a{min-height:44px;display:inline-flex;align-items:center}
 '''
 
 def main():
-    OUT.write_text(TEMPLATE.replace('__VERSION__', RELEASE['version']), encoding='utf-8')
+    count = sum(not row['Category'].startswith('Out of scope') for row in load_records())
+    OUT.write_text(TEMPLATE.replace('__VERSION__', RELEASE['version']).replace('516 publishable organizations', f'{count} publishable organizations'), encoding='utf-8')
 
 if __name__ == '__main__':
     main()
