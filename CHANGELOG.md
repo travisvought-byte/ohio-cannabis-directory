@@ -1,3 +1,10 @@
+# v4.29 - October 11, 2026
+
+- Supply calculator now accepts the amount bought in ounces, grams, items or mL and personal daily use; results show days and weeks.
+- Replaced the gummy example with an ounce of flower at one gram per day, without setting any default daily amount.
+- Added an optional method and per-use × uses-per-day helper. Methods carry through to the shopping plan and PDF without automatic dose or consumption conversions.
+- Added tests for ounce conversion, daily-total calculation, unit changes and method-independent arithmetic.
+
 # v4.28 - October 11, 2026
 
 - Rebuilt the buyer guide around a first-time visitor’s shopping plan, simple questions to ask and large readable controls.

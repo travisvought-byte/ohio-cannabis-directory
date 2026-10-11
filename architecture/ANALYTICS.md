@@ -9,7 +9,8 @@ Open https://travisvought.goatcounter.com/ and look for paths beginning `action:
 - `search-used`, `search-no-results`: debounced search activity; no search terms are recorded.
 - `filter-changed`, `category-filter`, `distance-sort`: navigation actions where supported.
 - `download-visit-plan`: personalized shopping-plan PDF button; no plan contents are recorded.
-- `supply-calculator-used`: first valid package-duration calculation per page session.
+- `supply-calculator-used`: first valid supply-duration calculation per page session.
+- `supply-daily-total-used`: use of the optional daily-total helper; amounts and method are excluded.
 - `assessment-export`, `assessment-print`, `buyer-guide-print`: worksheet actions.
 
 Review weekly: which pages receive visitors, which routes get clicks, where searches fail, and whether visitors open or print resources. Compare like periods; events are not a conversion funnel or exact unique-person counts. No historical click data can be reconstructed.
