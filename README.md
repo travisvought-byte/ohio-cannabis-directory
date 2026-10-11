@@ -16,7 +16,7 @@ The site uses an Ohio State scarlet-and-gray color palette with accessible contr
 
 ![Veteran Home Guardians](assets/vhg-logo.png)
 
-A [Veteran Home Guardians](https://vethomeguard.org/) resource, maintained by Travis Vought.
+**Created, compiled, and maintained by Travis Vought.** Shared as a free public resource in support of [Veteran Home Guardians](https://vethomeguard.org/). This distinguishes Travis's project-development work from VHG's charitable use and outreach; see [Project stewardship, attribution, and reuse](PROJECT_STEWARDSHIP.md).
 
 The election-season Libertarian Party of Ohio entry is a clearly labeled personal, unpaid endorsement by the directory maintainer, not a paid placement or party sponsorship.
 
@@ -100,6 +100,8 @@ Directory data is released under [CC BY 4.0](https://creativecommons.org/license
 The site code and build scripts are released under the MIT License.
 
 **Attribution:** Ohio Cannabis Ecosystem Directory, compiled by Travis Vought.
+
+**Independent work:** The free directory and existing open licenses remain unchanged. Customized implementations, new research, training, and other separately commissioned professional services are distinct from VHG donations or sponsorships. See [project stewardship](PROJECT_STEWARDSHIP.md).
 
 ## Consumer resources
 
