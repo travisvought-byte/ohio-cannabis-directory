@@ -146,3 +146,16 @@ Defined the shared data contract and seven visitor pathways; added a JSON schema
 
 - Removed Buds & Balance from upcoming listings because its ticket link could not be reliably verified; cancellation is not confirmed.
 - Removed the standalone Midwest CannaWomen homepage promotion; its directory record remains available.
+
+## 2026-10-10 strain guide
+
+- Expanded the ancestry pilot to 100 unranked popular strain profiles with original genetics/history summaries, reader-reported sensory/effect tags, individual sources and review dates.
+- Added type, effect, flavor and ancestry-review filters, review-count sorting, pagination and exact profile links.
+- Kept breeder versions and unresolved ancestry references separate from the 100 market-name profiles; retained conflicting and superseded parentage claims.
+- Added a 100-row Excel-compatible profile export and deterministic build, UI and mobile-browser checks.
+
+## October 10, 2026 — Cannabis knowledge
+
+- Added a source-linked knowledge hub with 30 searchable topics and a practical label-reading checklist.
+- Linked learning resources throughout the directory and strain guide.
+- Published the curated 100-strain guide with attributed ancestry and downloadable data.

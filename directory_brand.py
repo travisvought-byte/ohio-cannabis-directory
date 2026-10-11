@@ -9,6 +9,7 @@ BRAND_CSS = '''
   .vhg-brand img{width:80px;height:auto;flex:none}
   .vhg-brand strong{display:block;font-size:1rem;line-height:1.3}
   .vhg-brand span span{display:block;font-size:.82rem;color:var(--ink-soft);margin-top:.2rem}
+  .knowledge-links{display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;margin:0 0 1.5rem;font-size:.95rem}
   .update-contact{overflow-wrap:anywhere}
 '''
 
@@ -16,7 +17,8 @@ def brand_header():
     logo = base64.b64encode((Path(__file__).parent / 'assets/vhg-logo.png').read_bytes()).decode()
     return ('<a class="vhg-brand" href="https://vethomeguard.org/">'
             f'<img src="data:image/png;base64,{logo}" alt="" width="80" height="80">'
-            '<span><strong>Veteran Home Guardians</strong><span>A voice for all veterans</span></span></a>')
+            '<span><strong>Veteran Home Guardians</strong><span>A voice for all veterans</span></span></a>'
+            '<nav class="knowledge-links" aria-label="Cannabis learning"><a href="knowledge.html">Cannabis knowledge</a><a href="ancestry.html">100-strain library</a></nav>')
 
 def update_url(kind='listing'):
     subjects = {'listing': 'Ohio Cannabis Directory: listing update',

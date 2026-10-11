@@ -10,7 +10,7 @@ The current dataset contains **564 organizations**, including **518 publishable 
 
 Searches and filters persist in shareable URLs. Every organization has a permanent record link. [Who works with whom?](https://travisvought-byte.github.io/ohio-cannabis-directory/relationships.html) makes all 60 documented relationships searchable, with organization links and source evidence.
 
-The home screen lists confirmed events within the next three months directly in the generated HTML and refreshes that date window when opened. It also features the Midwest CannaWomen community.
+The home screen lists confirmed events within the next three months directly in the generated HTML and refreshes that date window when opened. Events with unverified links are withheld.
 
 The site uses an Ohio State scarlet-and-gray color palette with accessible contrast and no university logos or marks.
 
@@ -120,3 +120,11 @@ The [shared directory contract](architecture/STATE_DIRECTORY_CONTRACT.md) define
 [Find dispensary locations](https://travisvought-byte.github.io/ohio-cannabis-directory/locations.html?state=OH) supports city, county, address/ZIP search, shareable filters, directions and optional straight-line distance sorting. The 230 records are a government map snapshot retrieved 2026-10-10, not a claim of complete or currently operational coverage. Source update date is unknown; license status remains unknown. Three invalid source coordinate pairs are omitted from distance sorting.
 
 `data/sources/ohio-dispensaries.json` preserves the original response. Run `python import_locations.py`, `python validate_foundation.py data/directory.json`, then `python build_locations.py` after reviewing a replacement snapshot. Stable location IDs derive from state and license number; legal entities match only by exact unique name. No store hours or inventory claims are imported.
+
+## 100-strain guide and ancestry repository
+
+`ancestry.html` contains 100 curated popular strain profiles, with genetics, history, reader-reported effects and flavors, filters, source links and review notes. It is an unranked educational selection, not a definitive national top-100 sales ranking or an Ohio inventory feed. `data/strains/strains.csv` exports all 100 profiles for Excel; `data/strains/ancestry.json` retains source-attributed ancestry and separate breeder-line examples. See `data/strains/README.md` for selection and conflict-review rules.
+
+### Cannabis knowledge
+
+`knowledge.html` provides 30 searchable explanations and buying tips covering definitions, product forms, processing, label units, batch reports and storage. General concepts cite public-health agencies and testing laboratories; Ohio labeling guidance cites the September 11, 2026 rule. Shared learning links connect every directory page with the strain library and knowledge hub. Rebuild with `python build_knowledge.py`; content and sources live in `data/knowledge.json`.

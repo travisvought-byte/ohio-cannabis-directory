@@ -1,0 +1,16 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const {JSDOM} = require('jsdom');
+const dom = new JSDOM(fs.readFileSync('knowledge.html','utf8'),{runScripts:'dangerously'});
+const d=dom.window.document, q=d.getElementById('search');
+assert.equal(d.querySelectorAll('.topic').length,30);
+q.value='rosin';q.dispatchEvent(new dom.window.Event('input'));
+assert.ok(!d.getElementById('rosin').hidden);
+assert.ok(d.getElementById('thc').hidden);
+q.value='unfindable-word';q.dispatchEvent(new dom.window.Event('input'));
+assert.match(d.getElementById('count').textContent,/No matching/);
+d.querySelector('a[href="#labels"]').click();
+assert.equal(q.value,'');assert.ok(!d.getElementById('labels').hidden);
+for(const link of d.querySelectorAll('a[href^="#"]')) assert.ok(d.getElementById(link.hash.slice(1)));
+for(const page of ['index','resources','locations','state','seeds','intake','relationships','ancestry']) assert.match(fs.readFileSync(page+'.html','utf8'),/href="knowledge.html/);
+console.log('PASS: knowledge search, empty state, anchors and site learning links.');
