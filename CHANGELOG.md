@@ -1,3 +1,9 @@
+# v4.23 - October 11, 2026
+
+- Corrected public assessment intro, ownership approval wording and medical/adult-use tax question, with per-question verification dates.
+- Added gram-based cumulative possession alerts for plant material and extract, with boundary tests.
+- Verified cited rules and tax changes against Ohio Laws, DOJ, Treasury and DEA; no rescheduling outcome predicted.
+
 ## October 11, 2026 - Practical tool improvements
 
 - Assessment: critical-gap rating override, domain scores, evidence action plan, local draft save and JSON import.

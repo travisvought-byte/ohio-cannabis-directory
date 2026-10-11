@@ -6,7 +6,7 @@ A source-verified map of who serves what in Ohio cannabis: operators, service pr
 
 The current dataset contains **564 organizations**, including **516 publishable organizations across 16 categories** and 48 deliberately retained out-of-scope records. Those retained records keep renamed, acquired, superseded, or otherwise relevant organizations findable. The repository also includes 60 documented business-to-business relationships.
 
-**Current site release:** 4.22 · October 10, 2026.
+**Current site release:** 4.23 · October 10, 2026.
 
 Searches and filters persist in shareable URLs. Every organization has a permanent record link. [Who works with whom?](https://travisvought-byte.github.io/ohio-cannabis-directory/relationships.html) makes all 60 documented relationships searchable, with organization links and source evidence.
 
