@@ -10,7 +10,7 @@ The current dataset contains **564 organizations**, including **516 publishable 
 
 Searches and filters persist in shareable URLs. Every organization has a permanent record link. [Who works with whom?](https://travisvought-byte.github.io/ohio-cannabis-directory/relationships.html) makes all 60 documented relationships searchable, with organization links and source evidence.
 
-The home screen lists confirmed events within the next three months directly in the generated HTML and refreshes that date window when opened. Events with unverified links are withheld.
+**Directory-first navigation:** the root URL takes visitors directly to the searchable Ohio industry directory. Its search covers organizations, named contacts, services and locations; filters, permanent record URLs, and the full source-linked directory remain available. Consumer resources, educational tools and events are secondary navigation.
 
 The site uses an Ohio State scarlet-and-gray color palette with accessible contrast and no university logos or marks.
 
@@ -30,13 +30,13 @@ If you need mold remediation, cash logistics, packaging, MRB banking, staffing, 
 
 | File | Contents |
 | --- | --- |
-| `index.html` | Main searchable directory. Self-contained and usable offline. |
+| `index.html` | Directory-first entry point that forwards visitors to `directory.html` while preserving query parameters and record links. |
 | `intake.html` | Field/offline intake page for capturing and exporting candidate organizations; duplicate checks use all 564 current records. |
 | `relationships.html` | Searchable relationships, organization links and supporting evidence. |
 | `release.json` | Shared version and publication date; changing this does not imply re-verifying every record. |
 | `ohio-cannabis-directory.csv` | All 564 directory rows with contact, provenance, notes, verification, capability, permanent Record ID and Last Reviewed fields. |
 | `b2b-relationships.csv` | 60 documented organization-to-organization relationships with supporting evidence. |
-| `build_directory.py` | Regenerates `index.html` from the repository CSV. |
+| `build_directory.py` | Regenerates the searchable `directory.html` from the repository data. |
 | `build_intake.py` | Regenerates the field intake page. |
 | `.github/ISSUE_TEMPLATE/` | Structured public intake forms for additions, corrections, status changes, and B2B relationships. |
 | `CONTRIBUTING.md` | Contribution, sourcing, and verification standards. |
@@ -45,7 +45,7 @@ If you need mold remediation, cash logistics, packaging, MRB banking, staffing, 
 | `LICENSE` | CC BY 4.0 terms for data and MIT terms for code. |
 | `.zenodo.json` | Metadata used by Zenodo when archiving a GitHub release. |
 
-The public HTML pages contain the directory data they need, so the searchable site does not depend on a live database or external API at runtime. The upcoming-events card checks its date window in the visitor’s browser.
+The public site works without an external directory API. The primary industry directory loads its published organization data from a static JSON file; its query and filters run locally in the browser.
 
 ## How entries are verified
 
@@ -76,7 +76,7 @@ GitHub issue forms require a GitHub account. `intake.html` is a separate field/o
 
 ## Rebuilding
 
-The directory build script reads the repository CSV and writes `index.html` in place.
+The directory builder generates `directory.html`; `build_home.py` generates the root `index.html` entry point, which forwards readers to the industry directory.
 
 ```bash
 pip install pandas
@@ -105,7 +105,7 @@ The site code and build scripts are released under the MIT License.
 
 ## Consumer resources
 
-The homepage now offers six need-based routes through [consumer resources](https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html): dispensaries, seeds and growing supplies, record clearing, medical patients, Ohio rules, and community connections. Sources reviewed October 10, 2026. Opportunity Port is labeled Franklin County only; seed catalogs do not imply verified Ohio delivery. These referral resources are separate from organization counts. Regenerate with `python build_resources.py`. The location finder now offers optional distance sorting over a dated government-map snapshot; operating status and completeness still need confirmation.
+The secondary [consumer resources](https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html) page offers six need-based routes: dispensaries, seeds and growing supplies, record clearing, medical patients, Ohio rules, and community connections. Sources reviewed October 10, 2026. Opportunity Port is labeled Franklin County only; seed catalogs do not imply verified Ohio delivery. These referral resources are separate from organization counts. Regenerate with `python build_resources.py`. The location finder now offers optional distance sorting over a dated government-map snapshot; operating status and completeness still need confirmation.
 
 Seed supplier expansion: `seeds.html` offers 11 entries (10 seed providers and one Ohio grow-supply / retailer lead), location and seed-type filters, text search and downloadable source data in `seed-suppliers.json`. Regenerate with `python build_seeds.py`. Shipping evidence is labeled without inferring legal eligibility.
 
