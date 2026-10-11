@@ -251,6 +251,8 @@ __VHG_CSS__
   .highlight-card a:hover{border-bottom-color:var(--field-deep)}
   .home-empty{font-size:.87rem;color:var(--ink-soft);margin:.2rem 0 0}
 
+  .directory-intro{font-size:.95rem;color:var(--ink-soft);margin:.1rem 0 1rem;max-width:62ch}
+
   /* ---- the search is the hero -------------------------------------- */
   .searchbox{position:relative; margin-bottom:.85rem}
   #q{
@@ -383,7 +385,8 @@ __VHG_CSS__
 <header>
   <div class="wrap masthead">
     __VHG_BRAND__
-    <h1>Business directory</h1>
+    <h1>Ohio cannabis industry directory</h1>
+    <p class="directory-intro">Browse __N_PUB__ organizations and their published contacts. Search by business, person, specialty, city, or county.</p>
     <div class="searchbox">
       <input id="q" type="search" autocomplete="off" spellcheck="false"
              placeholder="Search a need, organization, city or county&hellip;"
