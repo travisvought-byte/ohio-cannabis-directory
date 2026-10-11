@@ -33,7 +33,8 @@ def brand_footer():
             '<a href="https://github.com/travisvought-byte/ohio-cannabis-directory#readme">Methods &amp; sources</a>'
             '<a href="ohio-cannabis-directory.csv" download>CSV download</a>'
             '<a href="https://travisvought-byte.github.io/vhg-veteran-resident-guide/">Veteran Resident Guide</a>'
-            '</nav><p>A Veteran Home Guardians resource</p></footer>')
+            '</nav><p>Created and maintained by Travis Vought · Shared in support of Veteran Home Guardians · '
+            '<a href="https://github.com/travisvought-byte/ohio-cannabis-directory/blob/main/PROJECT_STEWARDSHIP.md">Project roles</a></p></footer>')
 
 def update_url(kind='listing'):
     subjects = {'listing': 'Ohio Cannabis Directory: listing update',
