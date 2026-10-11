@@ -25,6 +25,8 @@ Travis may offer separately scoped services, including:
 - Software features, integrations, ongoing maintenance, and training
 - Custom business assessments and organizational support
 
+See [independent research and implementation services](work-with-travis.html) for the public project-inquiry path.
+
 Such work is distinct from VHG's charitable programs. Fees, deliverables, support levels, and applicable rights for a commissioned engagement should be identified in that engagement; public access to this directory does not promise free custom work or ongoing support. Nothing here represents that a customer must pay to use already open-licensed materials.
 
 **VHG donations and sponsorships** support the nonprofit's mission. They are not payments for Travis's separate professional services. VHG's charitable activities, listings, and nonprofit branding should not be presented as endorsements of unrelated commercial engagements.
