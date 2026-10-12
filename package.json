@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "test": "node tests/directory.cjs && node tests/locations.cjs && node tests/ancestry.cjs && node tests/knowledge.cjs && node tests/tools.cjs && node tests/navigation.cjs",
-    "test:browser": "node tests/browser.cjs && node tests/ancestry-browser.cjs && node tests/knowledge-browser.cjs && node tests/tools-browser.cjs"
+    "test:browser": "node tests/browser.cjs && node tests/ancestry-browser.cjs && node tests/knowledge-browser.cjs && node tests/tools-browser.cjs && node tests/advocacy-browser.cjs"
   },
   "devDependencies": {
     "jsdom": "30.1.2",

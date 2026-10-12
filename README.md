@@ -131,6 +131,12 @@ The [shared directory contract](architecture/STATE_DIRECTORY_CONTRACT.md) define
 
 `knowledge.html` provides 30 searchable explanations and buying tips covering definitions, product forms, processing, label units, batch reports and storage. General concepts cite public-health agencies and testing laboratories; Ohio labeling guidance cites the September 11, 2026 rule. Shared learning links connect every directory page with the strain library and knowledge hub. Rebuild with `python build_knowledge.py`; content and sources live in `data/knowledge.json`.
 
+## Ohio cannabis advocacy
+
+[Have a say in Ohio cannabis policy](https://travisvought-byte.github.io/ohio-cannabis-directory/advocacy.html) connects readers to the official state lawmaker lookup, explains legislative, DCC, JCARR and local decision-making, and offers source-linked reform requests for consumption lounges, out-of-state product restrictions, ordinary accessories and clearer SB 56 rules. Sources checked October 12, 2026. Reform requests are distinguished from current law.
+
+The constituent-letter builder runs locally and supports an editable draft, clipboard fallback, text download and letter-only printing. It does not send messages, store entries or send personal text to analytics. The rule-comment guide directs readers to official notices for current submission details. Regenerate with `python build_advocacy.py` and verify with `node tests/advocacy-browser.cjs`.
+
 ## Veteran and family resources
 
 Visit the [VHG Veteran Resident Guide](https://travisvought-byte.github.io/vhg-veteran-resident-guide/) for veteran, senior and disability support resources.

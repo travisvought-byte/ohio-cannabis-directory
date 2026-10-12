@@ -1,3 +1,9 @@
+# Advocacy addition - October 12, 2026
+
+- Added an Ohio advocacy page with the official lawmaker lookup, source-linked decision-maker guide and reform requests for consumption lounges, out-of-state product restrictions, ordinary accessories and clearer SB 56 rules.
+- Added a private editable constituent-letter builder with copy fallback, text download and letter-only printing, plus instructions for commenting on proposed rules.
+- Linked Advocacy in shared navigation and consumer resources. Added mobile, export, editing, clipboard fallback and privacy checks.
+
 # v4.29 - October 11, 2026
 
 - Supply calculator now accepts the amount bought in ounces, grams, items or mL and personal daily use; results show days and weeks.

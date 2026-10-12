@@ -22,7 +22,7 @@ def brand_header():
             '<nav class="knowledge-links" aria-label="Primary">'
             '<a href="directory.html">Business directory</a><a href="locations.html">Find a dispensary</a>'
             '<a href="buyer-guide.html">Shop smart</a><a href="knowledge.html">Learn</a>'
-            '<a href="assessment.html">Business self-check</a>'
+            '<a href="assessment.html">Business self-check</a><a href="advocacy.html">Advocacy</a>'
             '<a href="https://travisvought-byte.github.io/vhg-veteran-resident-guide/">Veteran Resident Guide</a></nav>')
 
 def brand_footer():
