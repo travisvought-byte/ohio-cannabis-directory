@@ -39,7 +39,7 @@
     if(action)track(action);
   });
   function noResults(){
-    var selectors={'index.html':'#home-results li','directory.html':'#results article','relationships.html':'#results article','ancestry.html':'#results article','locations.html':'#cards article','state.html':'#state-results article','seeds.html':'#seed-results article','knowledge.html':'article.topic'};
+    var selectors={'index.html':'#home-results li','directory.html':'#results article','relationships.html':'#results article','ancestry.html':'#results article','locations.html':'#cards article','state.html':'#state-results article','seeds.html':'#seed-results article','knowledge.html':'article.topic','lawmakers.html':'#member-results article'};
     var selector=selectors[page];if(!selector)return false;
     return !Array.from(document.querySelectorAll(selector)).some(function(e){return !e.closest('[hidden]')&&getComputedStyle(e).display!=='none';});
   }

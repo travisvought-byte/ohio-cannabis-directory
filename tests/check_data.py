@@ -11,6 +11,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from directory_data import RELEASE, RELEASE_DATE, load_records, relationship_id
+from validate_legislators import validate as validate_legislators
+validate_legislators()
 rows = load_records()
 assert len(rows) == 564
 assert sum(not r['Category'].startswith('Out of scope') for r in rows) == 516
@@ -29,7 +31,7 @@ with (ROOT / 'b2b-relationships.csv').open(encoding='utf-8-sig') as f:
 assert len(relationships) == 60
 assert len({relationship_id(r) for r in relationships}) == 60
 with tempfile.TemporaryDirectory() as temp:
-    for module_name, filename in [('build_advocacy','advocacy.html'),('build_directory','directory.html'),('build_home','index.html'),('build_intake','intake.html'),('build_relationships','relationships.html'),('build_resources','resources.html'),('build_seeds','seeds.html'),('build_state','state.html'),('build_locations','locations.html'),('build_knowledge','knowledge.html')]:
+    for module_name, filename in [('build_lawmakers','lawmakers.html'),('build_advocacy','advocacy.html'),('build_directory','directory.html'),('build_home','index.html'),('build_intake','intake.html'),('build_relationships','relationships.html'),('build_resources','resources.html'),('build_seeds','seeds.html'),('build_state','state.html'),('build_locations','locations.html'),('build_knowledge','knowledge.html')]:
         module = importlib.import_module(module_name)
         module.OUT = Path(temp) / filename
         module.main()

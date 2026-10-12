@@ -1,5 +1,10 @@
 # Advocacy addition - October 12, 2026
 
+- Added a searchable full Ohio legislative roster: 132 districts, 130 current lawmakers, two vacancies and 129 officially published office phones; source-linked contacts, leadership, selected committee roles and SB 56 sponsorship.
+- Added all nine verified SB 56 roll calls, with final conference votes separated from earlier floor and committee actions and former-member identities preserved.
+- Connected lawmaker cards to named letters, changed the builder to one initial issue and a resident/confirmed-constituent choice, and added call scripts, follow-up messages, suggested follow-up dates and private notes download.
+- Added a manual official-source refresh script, data validation, complete non-JavaScript names/contact fallback and browser coverage for roster filters, member links and follow-up behavior.
+
 - Added an Ohio advocacy page with the official lawmaker lookup, source-linked decision-maker guide and reform requests for consumption lounges, out-of-state product restrictions, ordinary accessories and clearer SB 56 rules.
 - Added a private editable constituent-letter builder with copy fallback, text download and letter-only printing, plus instructions for commenting on proposed rules.
 - Linked Advocacy in shared navigation and consumer resources. Added mobile, export, editing, clipboard fallback and privacy checks.
