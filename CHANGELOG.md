@@ -1,3 +1,10 @@
+# v4.30 - October 12, 2026
+
+- Prioritized evidence reviews over expansion; added a reproducible P1/P2 backlog and field-scoped audit records.
+- Reviewed 10 previously undated providers against first-party pages; public undated records fell from 56 to 46. Added Indoor Gardens website, public store phones and sales email; updated Brent Evans’ role and Our Community Harvest’s public contact.
+- Logged Ohio Clean Leaf roster retrieval and Ohio Women’s Cannabis Chamber domain blockers without claiming new verification. Retained historical contacts, licenses and editorial inclusion with explicit review limits.
+- Reconciled release metadata to October 12 and retained the published advocacy/lawmaker additions below.
+
 # Advocacy addition - October 12, 2026
 
 - Added a searchable full Ohio legislative roster: 132 districts, 130 current lawmakers, two vacancies and 129 officially published office phones; source-linked contacts, leadership, selected committee roles and SB 56 sponsorship.

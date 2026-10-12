@@ -21,14 +21,14 @@ That separation is intentional: a submission is a research lead, not an automati
 
 ## Pull requests
 
-If you are comfortable working with CSV, you may also open a pull request.
+You may also open a pull request against the canonical data.
 
-- Organization records live in `ohio-cannabis-directory.csv` in the repository root.
-- Relationship records live in `b2b-relationships.csv` in the repository root.
+- Organization, service and evidence records live in `data/directory.json`. `ohio-cannabis-directory.csv` is a generated compatibility download.
+- Relationship records also live in `data/directory.json`; `b2b-relationships.csv` is generated.
 - Include the supporting source in the same proposed change.
 - Do not hand-edit the embedded directory data inside `index.html`.
 
-After accepted CSV changes are reconciled, run the repository build scripts to regenerate the HTML before a release is complete.
+After canonical changes are accepted, run `python export_directory.py`, `python build_review_queue.py`, and the repository build scripts to regenerate the HTML before a release is complete.
 
 ```bash
 pip install pandas

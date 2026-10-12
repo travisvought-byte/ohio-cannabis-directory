@@ -24,7 +24,16 @@ for row in rows:
     if row['Last Reviewed']:
         assert date.fromisoformat(row['Last Reviewed']) <= RELEASE_DATE
         assert row['Last Reviewed'] in row['Source(s)'] + row['Seed Source']
-assert sum(bool(r['Last Reviewed']) for r in rows) == 503
+audits = [json.loads(p.read_text()) for p in (ROOT / 'data/reviews').glob('*.json')]
+newly_dated = {r['organization_id'] for a in audits for r in a['completed'] if not r['prior_last_reviewed']}
+assert sum(bool(r['Last Reviewed']) for r in rows) == 503 + len(newly_dated)
+by_id = {r['Record ID']: r for r in rows}
+for audit in audits:
+    for reviewed in audit['completed']:
+        record = by_id[reviewed['organization_id']]
+        assert record['Last Reviewed'] >= reviewed['reviewed_on']
+        assert reviewed['sources'] and reviewed['finding'] and reviewed['limitations']
+        assert all(url in record['Source(s)'] for url in reviewed['sources'])
 assert all(r['Service Area (as published)'] is not None for r in rows)
 with (ROOT / 'b2b-relationships.csv').open(encoding='utf-8-sig') as f:
     relationships = list(csv.DictReader(f))

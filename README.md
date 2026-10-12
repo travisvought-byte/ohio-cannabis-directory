@@ -6,7 +6,7 @@ A source-verified map of who serves what in Ohio cannabis: operators, service pr
 
 The current dataset contains **564 organizations**, including **516 publishable organizations across 16 categories** and 48 deliberately retained out-of-scope records. Those retained records keep renamed, acquired, superseded, or otherwise relevant organizations findable. The repository also includes 60 documented business-to-business relationships.
 
-**Current site release:** 4.29 · October 10, 2026.
+**Current site release:** 4.30 · October 12, 2026.
 
 Searches and filters persist in shareable URLs. Every organization has a permanent record link. [Who works with whom?](https://travisvought-byte.github.io/ohio-cannabis-directory/relationships.html) makes all 60 documented relationships searchable, with organization links and source evidence.
 
@@ -46,6 +46,10 @@ If you need mold remediation, cash logistics, packaging, MRB banking, staffing, 
 | `.zenodo.json` | Metadata used by Zenodo when archiving a GitHub release. |
 
 The public site works without an external directory API. The primary industry directory loads its published organization data from a static JSON file; its query and filters run locally in the browser.
+
+## Evidence-review priorities
+
+Review work is prioritized ahead of catalog expansion. The [review queue](architecture/REVIEW_QUEUE.md) ranks named open issues, undated Ohio operators/labs/community resources, missing websites, and remaining business providers. The first October 12 batch reviewed 10 previously undated listings, leaving 46 published listings without a recorded review date. Field-level sources, changes and unresolved limits are preserved in `data/reviews/2026-10-12.json`; a review date does not imply that every contact, license, inventory or shipping claim was reverified. Blocked retrievals remain in the queue without a new review date. Regenerate with `python build_review_queue.py`.
 
 ## How entries are verified
 

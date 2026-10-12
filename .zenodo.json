@@ -2,7 +2,7 @@
   "title": "Ohio Cannabis Ecosystem Directory",
   "upload_type": "dataset",
   "license": "cc-by-4.0",
-  "version": "4.29",
+  "version": "4.30",
   "creators": [
     {
       "name": "Vought, Travis"
@@ -18,5 +18,5 @@
     "provenance"
   ],
   "access_right": "open",
-  "publication_date": "2026-10-11"
+  "publication_date": "2026-10-12"
 }

@@ -1,0 +1,185 @@
+{
+  "reviewed_on": "2026-10-12",
+  "baseline_commit": "5cfd0c252d2923e4f1453e02a636517350075417",
+  "baseline_public_undated": 56,
+  "baseline_total_dated": 503,
+  "method": "Read first-party pages; record exact reviewed facts and unresolved fields. No license or shipping inference. Keep historical evidence and curator decisions.",
+  "completed": [
+    {
+      "organization_id": "org-6d0ae4c0f229",
+      "name": "Indoor Gardens",
+      "reviewed_on": "2026-10-12",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://indoorgardens.com/"
+      ],
+      "finding": "Official retailer site confirms hydroponic/grow supplies and the three Ohio stores, their addresses, public store phones and sales inbox.",
+      "limitations": "Seed stock and seed pickup remain unconfirmed. No shipping or statewide service guarantee inferred.",
+      "field_changes": {
+        "Website": {
+          "before": "",
+          "after": "https://indoorgardens.com/"
+        },
+        "Email": {
+          "before": "",
+          "after": "sales@indoorgardens.com"
+        },
+        "Phone": {
+          "before": "",
+          "after": "614-262-1600 | 234-678-5820 | 216-415-5344"
+        }
+      }
+    },
+    {
+      "organization_id": "org-e49263f057bc",
+      "name": "Ohio Green Systems",
+      "reviewed_on": "2026-10-12",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://ohiogreensystems.com/about/",
+        "https://ohiogreensystems.com/contact/"
+      ],
+      "finding": "Company identifies itself as an Ohio dual-use processor offering cannabis extracts and names Brent Evans as Director of Sales, with Brent@OhioGreenSystems.com and a public contact form.",
+      "limitations": "Provider statements reviewed; current DCC license status was not independently rechecked.",
+      "field_changes": {
+        "Contact Person": {
+          "before": "Brent Evans — associated with the processor operation",
+          "after": "Brent Evans — Director of Sales"
+        }
+      }
+    },
+    {
+      "organization_id": "org-0a9c87eb5a40",
+      "name": "MissGrass",
+      "reviewed_on": "2026-10-12",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://missgrass.com/",
+        "https://missgrass.com/pages/contact"
+      ],
+      "finding": "Brand site explicitly includes Ohio in its flower markets and provides product information, a stockist route and contact form.",
+      "limitations": "Individual Ohio store stock, direct shipping eligibility and Ohio availability of gummies were not verified.",
+      "field_changes": {}
+    },
+    {
+      "organization_id": "org-439251489828",
+      "name": "ACT LAB (ACT Laboratories, Inc.)",
+      "reviewed_on": "2026-10-12",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://actlab.com/ohio/"
+      ],
+      "finding": "Ohio page lists 4261 Diplomacy Drive, Columbus, license CCL000016-00, OhioSales@actlab.com, 844-822-8522, 517-278-9333 and Michael Botchev as Account Executive. Its published test menu includes potency, microbial, mycotoxin and contaminant testing.",
+      "limitations": "License number and service menu are company-published; live DCC credential status and older individual contacts were not independently rechecked.",
+      "field_changes": {}
+    },
+    {
+      "organization_id": "org-923f274679fc",
+      "name": "Green Analytics OH",
+      "reviewed_on": "2026-10-12",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://greenanalyticslabs.com/locations/",
+        "https://greenanalyticslabs.com/testing-services/"
+      ],
+      "finding": "Company locations page confirms Green Analytics OH at 5245 Secor Road #2, Toledo, Jamie Rosenstein as testing contact and a general testing inbox. Service pages describe potency, microbial, pesticide, metal, solvent and mycotoxin testing.",
+      "limitations": "The Ohio contact text contains concatenated email addresses; use the general inbox as a fallback. DCC legal-entity continuity and live credential status were not independently rechecked.",
+      "field_changes": {}
+    },
+    {
+      "organization_id": "org-a3ab86b73858",
+      "name": "Smithers CTS Ohio, LLC",
+      "reviewed_on": "2026-10-12",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.smithers.com/industries/cannabis-testing/contact-us"
+      ],
+      "finding": "Company location index describes its Columbus cannabis laboratory, Ohio DCC registration and ISO/IEC 17025 testing. The corporate contact route still publishes 330-762-7441.",
+      "limitations": "The detailed Ohio page is age-gated. The named laboratory director, direct lab contact and live DCC credential status remain to be rechecked.",
+      "field_changes": {}
+    },
+    {
+      "organization_id": "org-ea14a4ededa6",
+      "name": "Ohio Cannabis Expo",
+      "reviewed_on": "2026-10-12",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.ohiocannabisexpo.com/"
+      ],
+      "finding": "Organizer site confirms Another Mastamynd Hit LLC d/b/a Ohio Cannabis Expo, Anthony D. Riley as founder/host, info@ohiocannabisexpo.com and 614-622-7859. It currently announces Dayton on June 11, 2027.",
+      "limitations": "Previously supplied direct email-signature phone is retained as historical firsthand evidence; event details should be reconfirmed before attendance.",
+      "field_changes": {}
+    },
+    {
+      "organization_id": "org-7db1a956303e",
+      "name": "Our Community Harvest",
+      "reviewed_on": "2026-10-12",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.ourcommunityharvest.com/",
+        "https://www.ourcommunityharvest.com/contact",
+        "https://www.ourcommunityharvest.com/our-team"
+      ],
+      "finding": "Company site confirms Rob Mejia as founder, cannabis education and consulting services, and rob@ourcommunityharvest.com.",
+      "limitations": "RobMejia.com could not be retrieved in this pass. Both websites remain listed in the same record as requested by Rob; the second domain needs follow-up.",
+      "field_changes": {
+        "Contact Person": {
+          "before": "",
+          "after": "Rob Mejia — Founder"
+        },
+        "Email": {
+          "before": "",
+          "after": "rob@ourcommunityharvest.com"
+        }
+      }
+    },
+    {
+      "organization_id": "org-f46072cb3cfa",
+      "name": "Natural Therapies Education Foundation",
+      "reviewed_on": "2026-10-12",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://naturaltherapiesfoundation.org/",
+        "https://naturaltherapiesfoundation.org/about-us"
+      ],
+      "finding": "Official pages describe natural-therapy education, research, outreach and philanthropy, including Ohio regulatory research and board leadership.",
+      "limitations": "The older direct email was not rechecked on the pages reviewed. Website statements do not independently establish current IRS status.",
+      "field_changes": {}
+    },
+    {
+      "organization_id": "org-80f8c07ddd91",
+      "name": "Randy's",
+      "reviewed_on": "2026-10-12",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://randys.com/"
+      ],
+      "finding": "Official catalog confirms rolling papers, vaporizers, glass, cleaning products and related accessories, plus a wholesale route.",
+      "limitations": "Ohio shipping eligibility and DCC operator licensing were not verified. Existing editorial category and expo provenance are retained.",
+      "field_changes": {}
+    }
+  ],
+  "blocked": [
+    {
+      "organization_id": "org-7e1ab15e4a71",
+      "name": "Ohio Clean Leaf",
+      "attempted_on": "2026-10-12",
+      "sources": [
+        "https://ohiocleanleaf.com/",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses"
+      ],
+      "result": "Company landing page only shows craft-cannabis identity. DCC search excerpt lists CCC000020-00 but full roster could not be read (HTTP 404 through direct retrieval). No fresh license verification or review date assigned.",
+      "next_action": "Retrieve current DCC cultivator roster or license detail and verify the listed contact."
+    },
+    {
+      "organization_id": "org-d124f071dca0",
+      "name": "Ohio Women’s Cannabis Chamber of Commerce",
+      "attempted_on": "2026-10-12",
+      "sources": [
+        "https://www.OhioWomensCannaChamber.org"
+      ],
+      "result": "Listed domain could not be retrieved; exact-name searches did not identify a reliable replacement. Existing open issue retained. Do not substitute the unrelated Ohio Women’s Chamber of Commerce.",
+      "next_action": "Confirm the exact organization and current website against original contact evidence."
+    }
+  ]
+}
