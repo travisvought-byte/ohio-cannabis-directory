@@ -1,3 +1,7 @@
+# v4.34 - October 13, 2026
+
+- Removed the Libertarian Party of Ohio listing’s special sorting priority. It now appears alphabetically with other organizations, including filtered results and the full text index; the endorsement text, label and stable organization ID are preserved.
+
 # v4.33 - October 13, 2026
 
 - Added eight business-help shortcuts and moved the full category shortcut list into an expandable section; shareable category filters and directory-first entry remain intact.
