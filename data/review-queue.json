@@ -1,14 +1,63 @@
 {
-  "as_of": "2026-10-12",
+  "as_of": "2026-10-13",
   "policy": "P1: open issues, undated operators/labs/community resources or missing websites. P2: remaining undated business providers. Reviews at least 90 days old also enter the backlog. Blocked retrieval is an attempt, not a verified review.",
   "public_organizations": 516,
-  "public_without_review_date": 46,
+  "public_without_review_date": 44,
   "public_open_issues": 6,
   "priority_counts": {
-    "P1": 12,
+    "P1": 11,
     "P2": 39
   },
   "queue": [
+    {
+      "organization_id": "org-baee0f174df2",
+      "name": "Precise TB Solutions",
+      "priority": "P1",
+      "category": "Accounting & Tax",
+      "reasons": [
+        "Resolve the named open issue",
+        "No published website or contact-page route"
+      ],
+      "last_reviewed": "2026-10-06",
+      "website": "",
+      "sources": "OCHBS 2026 firsthand card/flyer: IMG_CF95CE18-2D11-4013-A2C5-94EF39540A47.jpeg; private intake OCHBS-2026-040. Reviewed 2026-10-06.",
+      "notes": "Firsthand OCHBS 2026 card/flyer evidence retained. Open issue: Confirm public company website, roster-name alias (Precise Tax & Bookkeeping Solutions) and cannabis-specific service scope.",
+      "last_attempt": {
+        "organization_id": "org-baee0f174df2",
+        "name": "Precise TB Solutions",
+        "attempted_on": "2026-10-13",
+        "sources": [
+          "https://www.baltimoreohiobusiness.org/business-listing.html"
+        ],
+        "result": "Local business association lists Precise Tax & Bookkeeping Solutions LLC, but a company-controlled website and the exact alias were not established in this pass.",
+        "next_action": "Use the original expo evidence to verify the business alias and direct public contact before resolving the existing issue."
+      },
+      "next_action": "Use the original expo evidence to verify the business alias and direct public contact before resolving the existing issue."
+    },
+    {
+      "organization_id": "org-9ee4b284a472",
+      "name": "Farkas Farms",
+      "priority": "P1",
+      "category": "Cultivator / Processor / Dispensary",
+      "reasons": [
+        "No published website or contact-page route"
+      ],
+      "last_reviewed": "2026-08-16",
+      "website": "",
+      "sources": "https://business.loraincountychamber.com/list/member/farkas-farms-llc-8409 | https://thcellar.com/shop/ | https://www.cannabismarketspotlight.com/ohio/home",
+      "notes": "Documented M&A/license-transfer relationship with Klutch Cannabis (also in this Directory): DCC approved a June 2026 swap in which Klutch acquired Farkas Farms' Columbus dispensary license (5429 Bethel Sawmill Center) while Farkas Farms acquired Klutch's Loudonville dispensary/license. Confirmed via eight independent sources including Crain's Cleveland Business.",
+      "last_attempt": {
+        "organization_id": "org-9ee4b284a472",
+        "name": "Farkas Farms",
+        "attempted_on": "2026-10-13",
+        "sources": [
+          "https://farkasfarms.com/"
+        ],
+        "result": "The bare domain returned only a redirect to a generic lander; no usable company-controlled website was established.",
+        "next_action": "Confirm a current company website from the original public business contact; keep the dated record in the missing-website queue."
+      },
+      "next_action": "Confirm a current company website from the original public business contact; keep the dated record in the missing-website queue."
+    },
     {
       "organization_id": "org-7e1ab15e4a71",
       "name": "Ohio Clean Leaf",
@@ -35,6 +84,29 @@
       "next_action": "Retrieve current DCC cultivator roster or license detail and verify the listed contact."
     },
     {
+      "organization_id": "org-3af4221fa5d1",
+      "name": "SIPE Promotional Products",
+      "priority": "P1",
+      "category": "Marketing & Media",
+      "reasons": [
+        "Resolve the named open issue",
+        "No published website or contact-page route"
+      ],
+      "last_reviewed": "2026-10-06",
+      "website": "",
+      "sources": "OCHBS 2026 firsthand card/flyer: IMG_CF95CE18-2D11-4013-A2C5-94EF39540A47.jpeg; private intake OCHBS-2026-039. Reviewed 2026-10-06.",
+      "notes": "Firsthand OCHBS 2026 card/flyer evidence retained. Open issue: Confirm active company website and current cannabis-client service scope; card confirms promotional merchandise and OCHBS presence.",
+      "last_attempt": {
+        "organization_id": "org-3af4221fa5d1",
+        "name": "SIPE Promotional Products",
+        "attempted_on": "2026-10-13",
+        "sources": [],
+        "result": "Exact-name searches did not establish a company-controlled website. Similarly named steel-rule-die businesses are not a verified match.",
+        "next_action": "Reconcile the original expo card and exhibitor evidence with a public company route."
+      },
+      "next_action": "Reconcile the original expo card and exhibitor evidence with a public company route."
+    },
+    {
       "organization_id": "org-d124f071dca0",
       "name": "Ohio Women’s Cannabis Chamber of Commerce",
       "priority": "P1",
@@ -59,36 +131,6 @@
       "next_action": "Confirm the exact organization and current website against original contact evidence."
     },
     {
-      "organization_id": "org-baee0f174df2",
-      "name": "Precise TB Solutions",
-      "priority": "P1",
-      "category": "Accounting & Tax",
-      "reasons": [
-        "Resolve the named open issue"
-      ],
-      "last_reviewed": "2026-10-06",
-      "website": "",
-      "sources": "OCHBS 2026 firsthand card/flyer: IMG_CF95CE18-2D11-4013-A2C5-94EF39540A47.jpeg; private intake OCHBS-2026-040. Reviewed 2026-10-06.",
-      "notes": "Firsthand OCHBS 2026 card/flyer evidence retained. Open issue: Confirm public company website, roster-name alias (Precise Tax & Bookkeeping Solutions) and cannabis-specific service scope.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-cde7d825c692",
-      "name": "Pisgah Peaks Ventures",
-      "priority": "P1",
-      "category": "Consulting",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "",
-      "sources": "OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Potential cannabis investment and operating-resource connection; exact services need confirmation. Card transcribed; independently confirmed as a cannabis-focused marketing/CMO agency founded by Brandon Bobart 09/25/26. Booth 711.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
       "organization_id": "org-105e0713e773",
       "name": "Mood Leaf",
       "priority": "P1",
@@ -100,36 +142,6 @@
       "website": "https://moodleaf.com",
       "sources": "OCHBS 2026 firsthand card/flyer: IMG_645D94FD-CC76-432C-A656-F6B08904A916.jpeg; exhibitor booth 811; private intake OCHBS-2026-004; OCHBS-2026-005. Reviewed 2026-10-06.",
       "notes": "Firsthand OCHBS 2026 card/flyer evidence retained. Open issue: Confirm current brand/operator identity, licensing entity and organizational website; no independent licensing verification is claimed.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-139c66e61558",
-      "name": "Subsidio",
-      "priority": "P1",
-      "category": "Cultivator / Processor / Dispensary",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "",
-      "sources": "OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Patient-oriented cannabis brand and potential consumer or patient-resource connection. Card transcribed; no independent corroboration found via web search 09/25/26. Cleared for the directory on card content (tagline: Made for Patients by Patients) plus OCHBS attendance.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-3af4221fa5d1",
-      "name": "SIPE Promotional Products",
-      "priority": "P1",
-      "category": "Marketing & Media",
-      "reasons": [
-        "Resolve the named open issue"
-      ],
-      "last_reviewed": "2026-10-06",
-      "website": "",
-      "sources": "OCHBS 2026 firsthand card/flyer: IMG_CF95CE18-2D11-4013-A2C5-94EF39540A47.jpeg; private intake OCHBS-2026-039. Reviewed 2026-10-06.",
-      "notes": "Firsthand OCHBS 2026 card/flyer evidence retained. Open issue: Confirm active company website and current cannabis-client service scope; card confirms promotional merchandise and OCHBS presence.",
       "last_attempt": null,
       "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
     },
@@ -185,6 +197,7 @@
       "category": "Security & Cash Logistics",
       "reasons": [
         "Resolve the named open issue",
+        "No published website or contact-page route",
         "No recorded evidence-review date"
       ],
       "last_reviewed": null,

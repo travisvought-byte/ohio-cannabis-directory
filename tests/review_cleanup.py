@@ -11,6 +11,9 @@ for r in rows:
 assert normalize('Nationwide; no Ohio client identified')=='Multistate, Ohio unconfirmed'
 assert normalize('Ohio statewide')=='Ohio statewide'
 assert normalize('Central Ohio').startswith('Ohio regional:')
+for text in ['Chicago, Illinois; U.S. cannabis licensing and regulatory consulting; no Ohio engagement identified','United States; U.S.-based service team, no Ohio customer identified','Ohio opportunity; operating and service area not yet independently verified']:
+ assert normalize(text)=='Multistate, Ohio unconfirmed'
+assert normalize('Ohio-accessible remote support / worldwide; no Ohio office').startswith('Ohio regional:')
 x=json.loads((ROOT/'data/strains/ancestry.json').read_text())
 for s in x['strains']:
  if s.get('source_link_only'):assert not s['reported_effects'] and not s['history'] and s['review_count'] is None

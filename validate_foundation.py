@@ -39,6 +39,14 @@ def validate(data):
   if ('latitude' in item)!=('longitude' in item):errors.append(f'{item["id"]}: coordinates require both latitude and longitude')
   refs=evidence_refs(item)
   if not refs:errors.append(f'{item["id"]}: a published location requires evidence')
+  contact=item.get('contact')
+  if contact:
+   require(contact['directory_organization_id'],'organizations',item['id'])
+   linked=groups['organizations'].get(contact['directory_organization_id'],{})
+   if linked.get('scope')!='public' or 'legacy_record' not in linked:errors.append(f'{item["id"]}: contact link needs a public directory record')
+   if date.fromisoformat(contact['reviewed_on'])>as_of:errors.append(f'{item["id"]}: future contact review')
+   supported=any(groups['evidence'].get(k,{}).get('claim')=='location-contact' and groups['evidence'][k].get('status')=='source-reviewed' and groups['evidence'][k].get('reviewed_on')==contact['reviewed_on'] and contact['website'] in groups['evidence'][k]['value'] and contact['phone'] in groups['evidence'][k]['value'] and contact['directory_organization_id'] in groups['evidence'][k]['value'] for k in refs)
+   if not supported:errors.append(f'{item["id"]}: reviewed contacts need matching location-contact evidence')
   if item.get('license',{}).get('status')=='active' and not any(groups['evidence'].get(k,{}).get('source_kind')=='government' for k in refs):errors.append(f'{item["id"]}: active license requires government evidence')
  for item in data['services']:
   if any(code not in STATE_CODES for code in item.get('listed_in',[])):errors.append(f'{item["id"]}: invalid editorial state membership')

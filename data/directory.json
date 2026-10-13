@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "scope": "directory",
-  "as_of": "2026-10-12",
+  "as_of": "2026-10-13",
   "organizations": [
     {
       "id": "org-6f5375e74696",
@@ -3006,26 +3006,32 @@
       "legacy_ids": [
         "org-cde7d825c692"
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "contact-page",
+          "value": "https://pisgahpeaksventures.com/contact/"
+        }
+      ],
       "scope": "public",
       "legacy_record": {
         "Category": "Consulting",
         "Organization / Business Name": "Pisgah Peaks Ventures",
         "Type": "Business",
-        "Contact Person": "",
+        "Contact Person": "Brandon Bobart — Founder",
         "Email": "",
         "Phone": "",
-        "Website": "",
+        "Website": "https://pisgahpeaksventures.com/contact/",
         "Service Area": "Ohio regional: Ohio market / OCHBS exhibitor",
-        "Capabilities / Keywords": "Advisory; Investment or Operations",
+        "Capabilities / Keywords": "Advisory; Cannabis Marketing; Website and Messaging; Outbound and Lead Generation; CRM and Sales Systems; Content and Campaigns; Fractional Marketing Execution",
         "Verification Tier": "Source-verified",
-        "Notes": "Potential cannabis investment and operating-resource connection; exact services need confirmation. Card transcribed; independently confirmed as a cannabis-focused marketing/CMO agency founded by Brandon Bobart 09/25/26. Booth 711.",
-        "Source(s)": "OCHBS direct in-person evidence, 2026-09-23",
-        "Seed Source": "OCHBS 2026 direct contact, collected 2026-09-23",
+        "Notes": "Potential cannabis investment and operating-resource connection; exact services need confirmation. Card transcribed; independently confirmed as a cannabis-focused marketing/CMO agency founded by Brandon Bobart 09/25/26. Booth 711. 2026-10-13 scoped review: Company identifies Brandon Bobart as founder and describes cannabis marketing, lead generation, CRM, campaigns and fractional execution; current inquiry form is available. No direct phone or email was published on the currently reviewed contact page; older search excerpts were not promoted. Ohio expo provenance retained; no new Ohio client claim.",
+        "Source(s)": "OCHBS direct in-person evidence, 2026-09-23 | https://pisgahpeaksventures.com/ | https://pisgahpeaksventures.com/contact/",
+        "Seed Source": "OCHBS 2026 direct contact, collected 2026-09-23 | Scoped website/contact review, 2026-10-13",
         "Record ID": "org-cde7d825c692",
-        "Last Reviewed": "",
+        "Last Reviewed": "2026-10-13",
         "Service Area (as published)": "Ohio market / OCHBS exhibitor"
-      }
+      },
+      "website": "https://pisgahpeaksventures.com/contact/"
     },
     {
       "id": "org-57054a89bfa5",
@@ -4105,17 +4111,18 @@
         "Contact Person": "Camilo Lyon — Chief Investment Officer / published corporate contact",
         "Email": "IR@curaleaf.com",
         "Phone": "781-451-0150",
-        "Website": "",
+        "Website": "https://oh.curaleaf.com/dispensary/ohio/curaleaf-newark",
         "Service Area": "Ohio statewide",
         "Capabilities / Keywords": "Cannabis Operator",
         "Verification Tier": "Source-verified",
-        "Notes": "Ohio presence confirmed; note some expansion is through branded/support-service partnerships with future ownership rights subject to approval, rather than simple direct ownership.",
-        "Source(s)": "https://edgar.secdatabase.com/1071/110465923029644/filing-main.htm | https://www.sec.gov/Archives/edgar/data/1756770/000175677026000058/a2026-06x22xcuraleafxann.htm",
-        "Seed Source": "Organizations | Batch 2 audit, 2026-08-14; source pages retrieved and reviewed",
+        "Notes": "Ohio presence confirmed; note some expansion is through branded/support-service partnerships with future ownership rights subject to approval, rather than simple direct ownership. 2026-10-13 scoped review: Restored an official Curaleaf Ohio website route; direct retrieval reaches the company age-verification page. Age verification prevents review of the store details in this pass. Corporate contacts and historical ownership/license statements were not refreshed; no new operating-status or store-phone claim.",
+        "Source(s)": "https://edgar.secdatabase.com/1071/110465923029644/filing-main.htm | https://www.sec.gov/Archives/edgar/data/1756770/000175677026000058/a2026-06x22xcuraleafxann.htm | https://oh.curaleaf.com/dispensary/ohio/curaleaf-newark",
+        "Seed Source": "Organizations | Batch 2 audit, 2026-08-14; source pages retrieved and reviewed | Scoped website/contact review, 2026-10-13",
         "Record ID": "org-6bb8b2a3ca4e",
-        "Last Reviewed": "2026-08-14",
+        "Last Reviewed": "2026-10-13",
         "Service Area (as published)": "Statewide / Multi-Market"
-      }
+      },
+      "website": "https://oh.curaleaf.com/dispensary/ohio/curaleaf-newark"
     },
     {
       "id": "org-0dba2c8a737d",
@@ -5903,8 +5910,16 @@
       ],
       "contacts": [
         {
+          "kind": "phone",
+          "value": "440-731-0650"
+        },
+        {
           "kind": "email",
-          "value": "Info@SubsidioCannabis.com"
+          "value": "info@subsidiocannabis.com"
+        },
+        {
+          "kind": "contact-page",
+          "value": "https://www.subsidiocannabis.com/contact"
         }
       ],
       "scope": "public",
@@ -5913,19 +5928,20 @@
         "Organization / Business Name": "Subsidio",
         "Type": "Business",
         "Contact Person": "",
-        "Email": "Info@SubsidioCannabis.com",
-        "Phone": "",
-        "Website": "",
+        "Email": "info@subsidiocannabis.com",
+        "Phone": "440-731-0650",
+        "Website": "https://www.subsidiocannabis.com/",
         "Service Area": "Ohio regional: Ohio market / OCHBS exhibitor",
-        "Capabilities / Keywords": "Patient-focused Cannabis Brand",
+        "Capabilities / Keywords": "Patient-focused Cannabis Brand; Edibles / Infused Products; Cannabis Chocolate",
         "Verification Tier": "Source-verified",
-        "Notes": "Patient-oriented cannabis brand and potential consumer or patient-resource connection. Card transcribed; no independent corroboration found via web search 09/25/26. Cleared for the directory on card content (tagline: Made for Patients by Patients) plus OCHBS attendance.",
-        "Source(s)": "OCHBS direct in-person evidence, 2026-09-23",
-        "Seed Source": "OCHBS 2026 direct contact, collected 2026-09-23",
+        "Notes": "Patient-oriented cannabis brand and potential consumer or patient-resource connection. Card transcribed; no independent corroboration found via web search 09/25/26. Cleared for the directory on card content (tagline: Made for Patients by Patients) plus OCHBS attendance. 2026-10-13 scoped review: First-party pages identify the Ohio family-run chocolate brand and publish its email, phone and contact form. Current DCC license status, individual store stock, product onset and therapeutic claims were not verified.",
+        "Source(s)": "OCHBS direct in-person evidence, 2026-09-23 | https://www.subsidiocannabis.com/ | https://www.subsidiocannabis.com/about | https://www.subsidiocannabis.com/contact",
+        "Seed Source": "OCHBS 2026 direct contact, collected 2026-09-23 | Scoped website/contact review, 2026-10-13",
         "Record ID": "org-139c66e61558",
-        "Last Reviewed": "",
+        "Last Reviewed": "2026-10-13",
         "Service Area (as published)": "Ohio market / OCHBS exhibitor"
-      }
+      },
+      "website": "https://www.subsidiocannabis.com/"
     },
     {
       "id": "org-acbcf491323e",
@@ -8411,7 +8427,7 @@
         "Email": "admin@ainslie.us",
         "Phone": "",
         "Website": "https://www.ainslie.us/services",
-        "Service Area": "Ohio regional: Chicago, Illinois; U.S. cannabis licensing and regulatory consulting; no Ohio engagement identified",
+        "Service Area": "Multistate, Ohio unconfirmed",
         "Capabilities / Keywords": "Legal; Licensing; Regulatory Compliance",
         "Verification Tier": "Source-verified",
         "Notes": "Retained as a national cannabis-specialist consultancy. The official site confirms licensing, regulatory-affairs and compliance services and now provides the organizational outreach route admin@ainslie.us plus a contact form. Current public profiles identify owner Joseph Wright and Chicago headquarters. No Ohio or DCC engagement is publicly identified.",
@@ -11836,6 +11852,10 @@
         {
           "kind": "email",
           "value": "info@hempsupporter.com"
+        },
+        {
+          "kind": "contact-page",
+          "value": "https://hempsupporter.com/contact/"
         }
       ],
       "scope": "public",
@@ -11846,17 +11866,18 @@
         "Contact Person": "Jonathan Miller — General Counsel",
         "Email": "info@hempsupporter.com",
         "Phone": "",
-        "Website": "",
+        "Website": "https://hempsupporter.com/contact/",
         "Service Area": "Nationwide incl. Ohio",
         "Capabilities / Keywords": "Nonprofit / Advocacy; Policy Advocacy",
         "Verification Tier": "Source-verified",
-        "Notes": "National hemp-industry advocacy coalition. Split from a combined row that also carried the Cornbread Hemp product brand; the two are separate organizations and are now listed separately. Jim Higdon is associated with Cornbread Hemp rather than being Roundtable staff, so the contact was moved with that entry. No Ohio chapter, affiliate or Ohio-based contact identified. National organizational contact; does not establish an Ohio-specific chapter or contact.",
-        "Source(s)": "https://www.cannabismarketspotlight.com/ohio/home",
-        "Seed Source": "IgniteIt Network | Batch 2 audit, 2026-08-14; source pages retrieved and reviewed | Pass 1 research, 2026-08-16; source pages retrieved and reviewed | Reconciliation pass against a duplicate/older-snapshot research round, 2026-08-16; source pages retrieved and reviewed",
+        "Notes": "National hemp-industry advocacy coalition. Split from a combined row that also carried the Cornbread Hemp product brand; the two are separate organizations and are now listed separately. Jim Higdon is associated with Cornbread Hemp rather than being Roundtable staff, so the contact was moved with that entry. No Ohio chapter, affiliate or Ohio-based contact identified. National organizational contact; does not establish an Ohio-specific chapter or contact. 2026-10-13 scoped review: Official U.S. Hemp Roundtable contact page publishes the general inbox info@hempsupporter.com and an inquiry form; corrected the older hempsupporter domain spelling. No Ohio-specific chapter or contact established; existing national advocacy inclusion preserved.",
+        "Source(s)": "https://www.cannabismarketspotlight.com/ohio/home | https://hempsupporter.com/contact/",
+        "Seed Source": "IgniteIt Network | Batch 2 audit, 2026-08-14; source pages retrieved and reviewed | Pass 1 research, 2026-08-16; source pages retrieved and reviewed | Reconciliation pass against a duplicate/older-snapshot research round, 2026-08-16; source pages retrieved and reviewed | Scoped website/contact review, 2026-10-13",
         "Record ID": "org-4d4b4fa99409",
-        "Last Reviewed": "2026-08-16",
+        "Last Reviewed": "2026-10-13",
         "Service Area (as published)": "National — active Ohio policy advocacy"
-      }
+      },
+      "website": "https://hempsupporter.com/contact/"
     },
     {
       "id": "org-b2c3ac4255a5",
@@ -14393,7 +14414,7 @@
         "Email": "",
         "Phone": "866-513-0774",
         "Website": "https://n2pack.com/",
-        "Service Area": "Ohio regional: United States; U.S.-based service team, no Ohio customer identified",
+        "Service Area": "Multistate, Ohio unconfirmed",
         "Capabilities / Keywords": "Packaging / Labeling",
         "Verification Tier": "Source-verified",
         "Notes": "Current first-party pages confirm an active cannabis-packaging operation, domestically produced products, a U.S.-based service team and a current inquiry route. Retained as a current national cannabis-packaging specialist; no Ohio customer, deployment or Ohio-specific compliance guarantee is claimed. The lack of a currently verified executive name does not impair the published company contact route.",
@@ -14583,7 +14604,7 @@
         "Email": "wholesale@greenlane.com",
         "Phone": "877-292-7660",
         "Website": "https://pollengear.com/",
-        "Service Area": "Ohio regional: United States; national brand, no Ohio customer identified",
+        "Service Area": "Multistate, Ohio unconfirmed",
         "Capabilities / Keywords": "Packaging / Labeling",
         "Verification Tier": "Source-verified",
         "Notes": "Greenlane's current 2026 Form 10-K continues to identify Pollen Gear among its owned trademarks, while the Pollen Gear site publishes the wholesale email, phone and sample/contact routes. The 2023 eBottles transaction covered Greenlane's concentrate-packaging product line, including specific Pollen Gear LoPro products, not the entire Pollen Gear brand. Retained as a current national cannabis-packaging brand; no Ohio customer or state-specific compliance guarantee is claimed.",
@@ -16820,7 +16841,7 @@
         "Email": "",
         "Phone": "",
         "Website": "",
-        "Service Area": "Ohio regional: Ohio opportunity; operating and service area not yet independently verified",
+        "Service Area": "Multistate, Ohio unconfirmed",
         "Capabilities / Keywords": "Security; Cannabis-Willing Vendor; Cannabis Business Services",
         "Verification Tier": "Open issue",
         "Notes": "Security company met firsthand by Travis Vought at a Libertarian convention. Company representatives stated they are open to working with cannabis businesses. Booth branding and the user-supplied photograph confirm the operating name Porcupine Defense Solutions. A reliable company-controlled website, direct contact route, service area, licensing and specific service scope were not independently verified in this pass. A company affiliation was confirmed firsthand in September 2026. The private contact and phone remain excluded from this public dataset; website, licensing, service area and specific scope still require verification.",
@@ -21771,7 +21792,8 @@
       },
       "evidence_ids": [
         "ev-bf62e9acc4f3"
-      ]
+      ],
+      "snapshot_phone": "(330) 765-2508"
     },
     {
       "id": "loc-e2e86641e4c9",
@@ -21792,7 +21814,8 @@
       },
       "evidence_ids": [
         "ev-fc423beb5a98"
-      ]
+      ],
+      "snapshot_phone": "(440) 299-1019"
     },
     {
       "id": "loc-3701faa60dd1",
@@ -21812,8 +21835,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-003592deb507"
-      ]
+        "ev-003592deb507",
+        "ev-688e1b2fea3a"
+      ],
+      "snapshot_phone": "(614) 656-7222",
+      "contact": {
+        "public_name": "Amplify Columbus",
+        "website": "https://amplifydispensary.com/location/columbus/",
+        "phone": "614-656-7222",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-68ca5164ba06"
+      }
     },
     {
       "id": "loc-237bc48aece7",
@@ -21834,7 +21866,8 @@
       },
       "evidence_ids": [
         "ev-54c585455734"
-      ]
+      ],
+      "snapshot_phone": "(513) 447-6459"
     },
     {
       "id": "loc-888ea6df375d",
@@ -21855,7 +21888,8 @@
       },
       "evidence_ids": [
         "ev-ee7d6c79cff2"
-      ]
+      ],
+      "snapshot_phone": "(567) 213-5101"
     },
     {
       "id": "loc-d7b27aaae79d",
@@ -21876,7 +21910,8 @@
       },
       "evidence_ids": [
         "ev-cb79c7bc787c"
-      ]
+      ],
+      "snapshot_phone": "(614) 407-1616"
     },
     {
       "id": "loc-4afe0512d09d",
@@ -21897,7 +21932,8 @@
       },
       "evidence_ids": [
         "ev-b7ac8fe3ee88"
-      ]
+      ],
+      "snapshot_phone": "(740) 255-5592"
     },
     {
       "id": "loc-e80a50b69525",
@@ -21918,7 +21954,8 @@
       },
       "evidence_ids": [
         "ev-3fb43f43352f"
-      ]
+      ],
+      "snapshot_phone": "(567) 289-6031"
     },
     {
       "id": "loc-cc78a024e7ec",
@@ -21939,7 +21976,8 @@
       },
       "evidence_ids": [
         "ev-ddcc2d1624ff"
-      ]
+      ],
+      "snapshot_phone": "(419) 775-4208"
     },
     {
       "id": "loc-187a59f67d7f",
@@ -21958,7 +21996,8 @@
       },
       "evidence_ids": [
         "ev-aee55da157b2"
-      ]
+      ],
+      "snapshot_phone": "(234) 382-1393"
     },
     {
       "id": "loc-68bcf10a19d9",
@@ -21979,7 +22018,8 @@
       },
       "evidence_ids": [
         "ev-b36055da81d1"
-      ]
+      ],
+      "snapshot_phone": "(440) 252-4046"
     },
     {
       "id": "loc-c609eeda9414",
@@ -22000,7 +22040,8 @@
       },
       "evidence_ids": [
         "ev-22c021a151e6"
-      ]
+      ],
+      "snapshot_phone": "(937) 281-7696"
     },
     {
       "id": "loc-c5aff407acb0",
@@ -22021,7 +22062,8 @@
       },
       "evidence_ids": [
         "ev-24d9078d8096"
-      ]
+      ],
+      "snapshot_phone": "(614) 647-2465"
     },
     {
       "id": "loc-04f4a428ab6c",
@@ -22042,7 +22084,8 @@
       },
       "evidence_ids": [
         "ev-2210c2f4ae81"
-      ]
+      ],
+      "snapshot_phone": "(740) 249-4143"
     },
     {
       "id": "loc-b1c9c847bf0f",
@@ -22063,7 +22106,8 @@
       },
       "evidence_ids": [
         "ev-3bfbc7569899"
-      ]
+      ],
+      "snapshot_phone": "(330) 469-9499"
     },
     {
       "id": "loc-a8b3b246f390",
@@ -22084,7 +22128,8 @@
       },
       "evidence_ids": [
         "ev-83c8ae2c58f8"
-      ]
+      ],
+      "snapshot_phone": "(216) 930-6550"
     },
     {
       "id": "loc-83772ec70fa1",
@@ -22105,7 +22150,8 @@
       },
       "evidence_ids": [
         "ev-b22cc29e8708"
-      ]
+      ],
+      "snapshot_phone": "(216) 777-4420"
     },
     {
       "id": "loc-726dee9427ea",
@@ -22126,7 +22172,8 @@
       },
       "evidence_ids": [
         "ev-00bf9f40aaaf"
-      ]
+      ],
+      "snapshot_phone": "(614) 347-9452"
     },
     {
       "id": "loc-be2110326910",
@@ -22147,7 +22194,8 @@
       },
       "evidence_ids": [
         "ev-563eefcf6173"
-      ]
+      ],
+      "snapshot_phone": "(614) 505-0015"
     },
     {
       "id": "loc-906e7f7bbb3b",
@@ -22168,7 +22216,8 @@
       },
       "evidence_ids": [
         "ev-08e1ed02e603"
-      ]
+      ],
+      "snapshot_phone": "(937) 938-1128"
     },
     {
       "id": "loc-d42ea1104f0d",
@@ -22189,7 +22238,8 @@
       },
       "evidence_ids": [
         "ev-b46017873bae"
-      ]
+      ],
+      "snapshot_phone": "(330) 476-5019"
     },
     {
       "id": "loc-297ae7cf3b30",
@@ -22210,7 +22260,8 @@
       },
       "evidence_ids": [
         "ev-c791c4df7cfd"
-      ]
+      ],
+      "snapshot_phone": "(740) 899-8003"
     },
     {
       "id": "loc-f18881f5b573",
@@ -22231,7 +22282,8 @@
       },
       "evidence_ids": [
         "ev-f7e95c24a619"
-      ]
+      ],
+      "snapshot_phone": "(937) 401-2550"
     },
     {
       "id": "loc-0f912441c8d1",
@@ -22252,7 +22304,8 @@
       },
       "evidence_ids": [
         "ev-2becd6c75c6c"
-      ]
+      ],
+      "snapshot_phone": "(937) 952-5039"
     },
     {
       "id": "loc-6d3a1451a245",
@@ -22273,7 +22326,8 @@
       },
       "evidence_ids": [
         "ev-e004702c0694"
-      ]
+      ],
+      "snapshot_phone": "(513) 970-2080"
     },
     {
       "id": "loc-3fc58f0f1504",
@@ -22294,7 +22348,8 @@
       },
       "evidence_ids": [
         "ev-a01f5d2d9522"
-      ]
+      ],
+      "snapshot_phone": "(740) 616-8066"
     },
     {
       "id": "loc-022fad6be0a3",
@@ -22315,7 +22370,8 @@
       },
       "evidence_ids": [
         "ev-ecf985f96a14"
-      ]
+      ],
+      "snapshot_phone": "(419) 616-5112"
     },
     {
       "id": "loc-a44c557aadb0",
@@ -22336,7 +22392,8 @@
       },
       "evidence_ids": [
         "ev-e4ca90d3718e"
-      ]
+      ],
+      "snapshot_phone": "(216) 230-8328"
     },
     {
       "id": "loc-8c2037469eb1",
@@ -22357,7 +22414,8 @@
       },
       "evidence_ids": [
         "ev-aec18b0c5801"
-      ]
+      ],
+      "snapshot_phone": "(216) 331-5726"
     },
     {
       "id": "loc-c0dd91691518",
@@ -22378,7 +22436,8 @@
       },
       "evidence_ids": [
         "ev-a98dbce5c4b2"
-      ]
+      ],
+      "snapshot_phone": "(740) 310-5310"
     },
     {
       "id": "loc-fc65c3fdb9a7",
@@ -22399,7 +22458,8 @@
       },
       "evidence_ids": [
         "ev-89074fa3ac91"
-      ]
+      ],
+      "snapshot_phone": "(234) 720-8420"
     },
     {
       "id": "loc-8a78cad0e7ad",
@@ -22420,7 +22480,8 @@
       },
       "evidence_ids": [
         "ev-a13d4c6a4b2c"
-      ]
+      ],
+      "snapshot_phone": "(614) 670-4384"
     },
     {
       "id": "loc-fee78f300051",
@@ -22441,7 +22502,8 @@
       },
       "evidence_ids": [
         "ev-a2b23bd8314e"
-      ]
+      ],
+      "snapshot_phone": "(724) 655-3335"
     },
     {
       "id": "loc-31a120a89c68",
@@ -22462,7 +22524,8 @@
       },
       "evidence_ids": [
         "ev-6a02dc44b557"
-      ]
+      ],
+      "snapshot_phone": "(440) 990-1600"
     },
     {
       "id": "loc-e110acfd9d40",
@@ -22483,7 +22546,8 @@
       },
       "evidence_ids": [
         "ev-1b2b9333dcc6"
-      ]
+      ],
+      "snapshot_phone": "(440) 373-5005"
     },
     {
       "id": "loc-762f9b259e58",
@@ -22504,7 +22568,8 @@
       },
       "evidence_ids": [
         "ev-9023801a5d1f"
-      ]
+      ],
+      "snapshot_phone": "(740) 496-8420"
     },
     {
       "id": "loc-063a272883dc",
@@ -22525,7 +22590,8 @@
       },
       "evidence_ids": [
         "ev-f59b91c43d48"
-      ]
+      ],
+      "snapshot_phone": "(937) 519-1420"
     },
     {
       "id": "loc-c531aec8bc61",
@@ -22546,7 +22612,8 @@
       },
       "evidence_ids": [
         "ev-e39e134de058"
-      ]
+      ],
+      "snapshot_phone": "(216) 400-6889"
     },
     {
       "id": "loc-d031479ac515",
@@ -22567,7 +22634,8 @@
       },
       "evidence_ids": [
         "ev-dfd0297bf0fb"
-      ]
+      ],
+      "snapshot_phone": "(513) 386-8586"
     },
     {
       "id": "loc-4ef2c79aa20b",
@@ -22588,7 +22656,8 @@
       },
       "evidence_ids": [
         "ev-2b37766ec3b2"
-      ]
+      ],
+      "snapshot_phone": "(419) 819-4222"
     },
     {
       "id": "loc-579f27b8f7db",
@@ -22609,7 +22678,8 @@
       },
       "evidence_ids": [
         "ev-cf4458838076"
-      ]
+      ],
+      "snapshot_phone": "(380) 241-6151"
     },
     {
       "id": "loc-31e741c76281",
@@ -22630,7 +22700,8 @@
       },
       "evidence_ids": [
         "ev-970e35d879d4"
-      ]
+      ],
+      "snapshot_phone": "(513) 273-1460"
     },
     {
       "id": "loc-1ee6c8717a17",
@@ -22651,7 +22722,8 @@
       },
       "evidence_ids": [
         "ev-072813514e3f"
-      ]
+      ],
+      "snapshot_phone": "(740) 993-0444"
     },
     {
       "id": "loc-28698f84978b",
@@ -22672,7 +22744,8 @@
       },
       "evidence_ids": [
         "ev-de0ab0357d70"
-      ]
+      ],
+      "snapshot_phone": "(234) 259-5223"
     },
     {
       "id": "loc-e6fd93db3119",
@@ -22693,7 +22766,8 @@
       },
       "evidence_ids": [
         "ev-6bfc4624c35b"
-      ]
+      ],
+      "snapshot_phone": "(216) 471-0426"
     },
     {
       "id": "loc-9611fc4ef712",
@@ -22714,7 +22788,8 @@
       },
       "evidence_ids": [
         "ev-44c19e7bbfed"
-      ]
+      ],
+      "snapshot_phone": "(740) 496-4186"
     },
     {
       "id": "loc-dc606d174ff1",
@@ -22735,7 +22810,8 @@
       },
       "evidence_ids": [
         "ev-ae3edfcb4120"
-      ]
+      ],
+      "snapshot_phone": "(614) 626-5770"
     },
     {
       "id": "loc-0f810d7a2691",
@@ -22756,7 +22832,8 @@
       },
       "evidence_ids": [
         "ev-f72bc5a940db"
-      ]
+      ],
+      "snapshot_phone": "(937) 696-0029"
     },
     {
       "id": "loc-4719385b3856",
@@ -22777,7 +22854,8 @@
       },
       "evidence_ids": [
         "ev-75328a2b4d94"
-      ]
+      ],
+      "snapshot_phone": "(513) 506-1857"
     },
     {
       "id": "loc-75a995c1da0d",
@@ -22798,7 +22876,8 @@
       },
       "evidence_ids": [
         "ev-f6bd28ad5afb"
-      ]
+      ],
+      "snapshot_phone": "(216) 273-0088"
     },
     {
       "id": "loc-aea4edac0d11",
@@ -22819,7 +22898,8 @@
       },
       "evidence_ids": [
         "ev-1c5e1acaee87"
-      ]
+      ],
+      "snapshot_phone": "(440) 363-0237"
     },
     {
       "id": "loc-22727c72d012",
@@ -22840,7 +22920,8 @@
       },
       "evidence_ids": [
         "ev-ca3132b5527e"
-      ]
+      ],
+      "snapshot_phone": "(330) 333-3170"
     },
     {
       "id": "loc-087fd7debafd",
@@ -22861,7 +22942,8 @@
       },
       "evidence_ids": [
         "ev-1e701c9ccadd"
-      ]
+      ],
+      "snapshot_phone": "(440) 929 0420"
     },
     {
       "id": "loc-8835e2f4175b",
@@ -22882,7 +22964,8 @@
       },
       "evidence_ids": [
         "ev-151fbe7d50ec"
-      ]
+      ],
+      "snapshot_phone": "(220) 666-0432"
     },
     {
       "id": "loc-7b7eac31c3e7",
@@ -22903,7 +22986,8 @@
       },
       "evidence_ids": [
         "ev-ec1ad220446d"
-      ]
+      ],
+      "snapshot_phone": "(513) 818-0108"
     },
     {
       "id": "loc-2bc72e5e180d",
@@ -22924,7 +23008,8 @@
       },
       "evidence_ids": [
         "ev-a07b6ba2f83b"
-      ]
+      ],
+      "snapshot_phone": "(513)-402-7040"
     },
     {
       "id": "loc-7bcc6bd9183c",
@@ -22945,7 +23030,8 @@
       },
       "evidence_ids": [
         "ev-5252320bfb82"
-      ]
+      ],
+      "snapshot_phone": "(513) 360-7085"
     },
     {
       "id": "loc-906ae3899097",
@@ -22954,10 +23040,8 @@
       "state": "OH",
       "county": "Cuyahoga",
       "city": "Garfield Heights",
-      "address": "10500 Antenucci Blvd Ste 200",
+      "address": "9601 Vista Way",
       "postal_code": "44125",
-      "latitude": 41.411106,
-      "longitude": -81.610981,
       "license": {
         "number": "CCD000139-00",
         "regulator": "Ohio Division of Cannabis Control",
@@ -22965,8 +23049,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-0dea3dcf6e7e"
-      ]
+        "ev-0dea3dcf6e7e",
+        "ev-35a72b65fefb"
+      ],
+      "snapshot_phone": "(216) 232-2527",
+      "contact": {
+        "public_name": "Terrasana Garfield Heights",
+        "website": "https://terrasanacannabisco.com/locations/cleveland-medical-marijuana-dispensary/",
+        "phone": "216-232-2527",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-4d7897d29e7e"
+      }
     },
     {
       "id": "loc-c914c6047c42",
@@ -22987,7 +23080,8 @@
       },
       "evidence_ids": [
         "ev-bccd044f3617"
-      ]
+      ],
+      "snapshot_phone": "(740) 617-8913"
     },
     {
       "id": "loc-afd5867690e4",
@@ -23008,7 +23102,8 @@
       },
       "evidence_ids": [
         "ev-f21ff4edf426"
-      ]
+      ],
+      "snapshot_phone": "(216) 471-8278"
     },
     {
       "id": "loc-a60a6a56781d",
@@ -23028,8 +23123,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-02e4a309029b"
-      ]
+        "ev-02e4a309029b",
+        "ev-dd48ea720a74"
+      ],
+      "snapshot_phone": "(419) 463-2703",
+      "contact": {
+        "public_name": "Terrasana Fremont",
+        "website": "https://terrasanacannabisco.com/locations/fremont-medical-marijuana-dispensary/",
+        "phone": "419-463-2703",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-4d7897d29e7e"
+      }
     },
     {
       "id": "loc-9e526afcfdbd",
@@ -23049,8 +23153,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-ff24f1ac5b77"
-      ]
+        "ev-ff24f1ac5b77",
+        "ev-8d61ebe56abe"
+      ],
+      "snapshot_phone": "(937) 230-6505",
+      "contact": {
+        "public_name": "Terrasana Springfield",
+        "website": "https://terrasanacannabisco.com/locations/springfield-medical-marijuana-dispensary/",
+        "phone": "937-230-6505",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-4d7897d29e7e"
+      }
     },
     {
       "id": "loc-9ad6142364be",
@@ -23071,7 +23184,8 @@
       },
       "evidence_ids": [
         "ev-d899f0ba8398"
-      ]
+      ],
+      "snapshot_phone": "(440) 985-0983"
     },
     {
       "id": "loc-4f3efbdfea7c",
@@ -23090,7 +23204,8 @@
       },
       "evidence_ids": [
         "ev-db38d09d10ac"
-      ]
+      ],
+      "snapshot_phone": "(656) 239-7471"
     },
     {
       "id": "loc-9a26090048cc",
@@ -23111,7 +23226,8 @@
       },
       "evidence_ids": [
         "ev-168b5f75da9c"
-      ]
+      ],
+      "snapshot_phone": "(419) 741-7020"
     },
     {
       "id": "loc-fcc426817253",
@@ -23132,7 +23248,8 @@
       },
       "evidence_ids": [
         "ev-42502fa46f73"
-      ]
+      ],
+      "snapshot_phone": "(740) 300-1821"
     },
     {
       "id": "loc-5926333784a0",
@@ -23153,7 +23270,8 @@
       },
       "evidence_ids": [
         "ev-e0ad5c866f7f"
-      ]
+      ],
+      "snapshot_phone": "(937) 233-0642"
     },
     {
       "id": "loc-5a6b748e09e9",
@@ -23174,7 +23292,8 @@
       },
       "evidence_ids": [
         "ev-21e8ca0204d5"
-      ]
+      ],
+      "snapshot_phone": "(419) 365-2558"
     },
     {
       "id": "loc-b4ec0759e9aa",
@@ -23195,7 +23314,8 @@
       },
       "evidence_ids": [
         "ev-ff466207229f"
-      ]
+      ],
+      "snapshot_phone": "(330) 443-2831"
     },
     {
       "id": "loc-9c51f0ad9043",
@@ -23216,7 +23336,8 @@
       },
       "evidence_ids": [
         "ev-c81f8bd5d64e"
-      ]
+      ],
+      "snapshot_phone": "(656) 239-7451"
     },
     {
       "id": "loc-06f9c7cf07d8",
@@ -23237,7 +23358,8 @@
       },
       "evidence_ids": [
         "ev-f76db65707b3"
-      ]
+      ],
+      "snapshot_phone": "(740) 617-8910"
     },
     {
       "id": "loc-3f0dbf9a2f1d",
@@ -23257,8 +23379,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-55109d883be3"
-      ]
+        "ev-55109d883be3",
+        "ev-64ef68ec421f"
+      ],
+      "snapshot_phone": "(614) 434-6929",
+      "contact": {
+        "public_name": "Terrasana Columbus – Grandview",
+        "website": "https://terrasanacannabisco.com/locations/columbus-grandview/",
+        "phone": "614-434-6929",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-4d7897d29e7e"
+      }
     },
     {
       "id": "loc-8809e0a131aa",
@@ -23279,7 +23410,8 @@
       },
       "evidence_ids": [
         "ev-89abec9ba2bd"
-      ]
+      ],
+      "snapshot_phone": "(740) 617-8649"
     },
     {
       "id": "loc-d6152507df6d",
@@ -23300,7 +23432,8 @@
       },
       "evidence_ids": [
         "ev-63aebf8ad34e"
-      ]
+      ],
+      "snapshot_phone": "(234) 703-0150"
     },
     {
       "id": "loc-946ac10dde59",
@@ -23321,7 +23454,8 @@
       },
       "evidence_ids": [
         "ev-324fcf65c5a0"
-      ]
+      ],
+      "snapshot_phone": "(740) 616-8097"
     },
     {
       "id": "loc-8b7c156cc84d",
@@ -23342,7 +23476,8 @@
       },
       "evidence_ids": [
         "ev-938f95e69134"
-      ]
+      ],
+      "snapshot_phone": "(216) 770-4089"
     },
     {
       "id": "loc-769cf5b7d862",
@@ -23363,7 +23498,8 @@
       },
       "evidence_ids": [
         "ev-d17100ff72a4"
-      ]
+      ],
+      "snapshot_phone": "(937) 402-4016"
     },
     {
       "id": "loc-612f7bdb2eba",
@@ -23384,7 +23520,8 @@
       },
       "evidence_ids": [
         "ev-ba5aaeb521b1"
-      ]
+      ],
+      "snapshot_phone": "(419) 455-6925"
     },
     {
       "id": "loc-3178ed172de5",
@@ -23405,7 +23542,8 @@
       },
       "evidence_ids": [
         "ev-40bfaebaa0e4"
-      ]
+      ],
+      "snapshot_phone": "(567) 757-5671"
     },
     {
       "id": "loc-b538ca0c6de3",
@@ -23426,7 +23564,8 @@
       },
       "evidence_ids": [
         "ev-009aad67c42f"
-      ]
+      ],
+      "snapshot_phone": "(440) 766-1040"
     },
     {
       "id": "loc-4ccea35e0d84",
@@ -23447,7 +23586,8 @@
       },
       "evidence_ids": [
         "ev-a3f753a769a3"
-      ]
+      ],
+      "snapshot_phone": "(330) 409-9577"
     },
     {
       "id": "loc-52d71ee00d70",
@@ -23468,7 +23608,8 @@
       },
       "evidence_ids": [
         "ev-f0d24c5cb9dd"
-      ]
+      ],
+      "snapshot_phone": "(513) 587-8787"
     },
     {
       "id": "loc-ba6366d966e0",
@@ -23489,7 +23630,8 @@
       },
       "evidence_ids": [
         "ev-10b0a26c5852"
-      ]
+      ],
+      "snapshot_phone": "(513) 512-4808"
     },
     {
       "id": "loc-8da406744c14",
@@ -23510,7 +23652,8 @@
       },
       "evidence_ids": [
         "ev-3f88bf51b861"
-      ]
+      ],
+      "snapshot_phone": "(440) 309-2102"
     },
     {
       "id": "loc-fc10069f4bd2",
@@ -23531,7 +23674,8 @@
       },
       "evidence_ids": [
         "ev-061103ba0617"
-      ]
+      ],
+      "snapshot_phone": "(330) 623-7430"
     },
     {
       "id": "loc-554237921ba1",
@@ -23552,7 +23696,8 @@
       },
       "evidence_ids": [
         "ev-ce620ead6c7a"
-      ]
+      ],
+      "snapshot_phone": "(614) 924-2155"
     },
     {
       "id": "loc-0eb1cf0ad4d1",
@@ -23573,7 +23718,8 @@
       },
       "evidence_ids": [
         "ev-5958c6070df7"
-      ]
+      ],
+      "snapshot_phone": "(440) 671-0420"
     },
     {
       "id": "loc-b32151ad4dbb",
@@ -23594,7 +23740,8 @@
       },
       "evidence_ids": [
         "ev-329670e653bf"
-      ]
+      ],
+      "snapshot_phone": "(513) 676-0775"
     },
     {
       "id": "loc-e793b9dfff7f",
@@ -23615,7 +23762,8 @@
       },
       "evidence_ids": [
         "ev-cfdc461d1a71"
-      ]
+      ],
+      "snapshot_phone": "(513) 399-8377"
     },
     {
       "id": "loc-b196a1e9e176",
@@ -23636,7 +23784,8 @@
       },
       "evidence_ids": [
         "ev-3ec589377246"
-      ]
+      ],
+      "snapshot_phone": "(614) 547-3750"
     },
     {
       "id": "loc-cd6ac85f74f7",
@@ -23657,7 +23806,8 @@
       },
       "evidence_ids": [
         "ev-a2b1b010daa6"
-      ]
+      ],
+      "snapshot_phone": "(234) 901-5900"
     },
     {
       "id": "loc-3450d7d764e2",
@@ -23678,7 +23828,8 @@
       },
       "evidence_ids": [
         "ev-edc9e1a11fee"
-      ]
+      ],
+      "snapshot_phone": "(734) 646-6990"
     },
     {
       "id": "loc-03da9f9ae24e",
@@ -23699,7 +23850,8 @@
       },
       "evidence_ids": [
         "ev-596f80529923"
-      ]
+      ],
+      "snapshot_phone": "(330) 568-4328"
     },
     {
       "id": "loc-1c51ed83c11d",
@@ -23720,7 +23872,8 @@
       },
       "evidence_ids": [
         "ev-53f2ef39deb3"
-      ]
+      ],
+      "snapshot_phone": "(740) 577-9367"
     },
     {
       "id": "loc-1459e522da8d",
@@ -23741,7 +23894,8 @@
       },
       "evidence_ids": [
         "ev-6d48a38e5780"
-      ]
+      ],
+      "snapshot_phone": "(440) 726-3051"
     },
     {
       "id": "loc-a54ed6bb65bc",
@@ -23761,8 +23915,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-3adfcc65b7e0"
-      ]
+        "ev-3adfcc65b7e0",
+        "ev-4fd170f2e296"
+      ],
+      "snapshot_phone": "(740) 200-0760",
+      "contact": {
+        "public_name": "Greenlight Marengo",
+        "website": "https://ohio.greenlightdispensary.com/locations/marengo/",
+        "phone": "740-200-0760",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-40726ffc20a0"
+      }
     },
     {
       "id": "loc-8759814e7bee",
@@ -23783,7 +23946,8 @@
       },
       "evidence_ids": [
         "ev-039d3c734e1d"
-      ]
+      ],
+      "snapshot_phone": "(937) 910-5832"
     },
     {
       "id": "loc-27b60fe3d7e8",
@@ -23804,7 +23968,8 @@
       },
       "evidence_ids": [
         "ev-c76a3f2c8619"
-      ]
+      ],
+      "snapshot_phone": "(513) 440-6340"
     },
     {
       "id": "loc-f6293a563287",
@@ -23825,7 +23990,8 @@
       },
       "evidence_ids": [
         "ev-0ee739956d5d"
-      ]
+      ],
+      "snapshot_phone": "(419) 216-9901"
     },
     {
       "id": "loc-80ccb0eca2d8",
@@ -23846,7 +24012,8 @@
       },
       "evidence_ids": [
         "ev-8ea89515fd18"
-      ]
+      ],
+      "snapshot_phone": "(614) 634-9420"
     },
     {
       "id": "loc-b24510fe7cf6",
@@ -23867,7 +24034,8 @@
       },
       "evidence_ids": [
         "ev-18ca1bf18189"
-      ]
+      ],
+      "snapshot_phone": "(513) 470-2305"
     },
     {
       "id": "loc-a749f8849cd8",
@@ -23888,7 +24056,8 @@
       },
       "evidence_ids": [
         "ev-c2b7475832f4"
-      ]
+      ],
+      "snapshot_phone": "(513) 823-9787"
     },
     {
       "id": "loc-adffd0082d51",
@@ -23909,7 +24078,8 @@
       },
       "evidence_ids": [
         "ev-adc55061fc26"
-      ]
+      ],
+      "snapshot_phone": "(440) 553-7051"
     },
     {
       "id": "loc-1cafd30fee0a",
@@ -23930,7 +24100,8 @@
       },
       "evidence_ids": [
         "ev-e46b11a16cec"
-      ]
+      ],
+      "snapshot_phone": "(740) 479-3013"
     },
     {
       "id": "loc-a2def0bcba2a",
@@ -23951,7 +24122,8 @@
       },
       "evidence_ids": [
         "ev-60220f5b7305"
-      ]
+      ],
+      "snapshot_phone": "(330) 752-1171"
     },
     {
       "id": "loc-5c35373a3c64",
@@ -23972,7 +24144,8 @@
       },
       "evidence_ids": [
         "ev-5eb686af0b0b"
-      ]
+      ],
+      "snapshot_phone": "(614) 403-6252"
     },
     {
       "id": "loc-182f6fe84ef0",
@@ -23993,7 +24166,8 @@
       },
       "evidence_ids": [
         "ev-859897ba186c"
-      ]
+      ],
+      "snapshot_phone": "(419) 500-9455"
     },
     {
       "id": "loc-320f744731c4",
@@ -24014,7 +24188,8 @@
       },
       "evidence_ids": [
         "ev-9790b2c40ed0"
-      ]
+      ],
+      "snapshot_phone": "(513) 599-1550"
     },
     {
       "id": "loc-68259825e9f6",
@@ -24034,8 +24209,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-865f3a7abf89"
-      ]
+        "ev-865f3a7abf89",
+        "ev-cf8daa529df4"
+      ],
+      "snapshot_phone": "(440) 797-5696",
+      "contact": {
+        "public_name": "Amplify Bedford",
+        "website": "https://amplifydispensary.com/location/bedford/",
+        "phone": "440-797-5696",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-68ca5164ba06"
+      }
     },
     {
       "id": "loc-89ea2b91d828",
@@ -24056,7 +24240,8 @@
       },
       "evidence_ids": [
         "ev-15d7e10b84bb"
-      ]
+      ],
+      "snapshot_phone": "(740) 443-3193"
     },
     {
       "id": "loc-4a0e2beefc2f",
@@ -24076,8 +24261,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-c6513f7612c1"
-      ]
+        "ev-c6513f7612c1",
+        "ev-11974c54f144"
+      ],
+      "snapshot_phone": "(216) 465-3920",
+      "contact": {
+        "public_name": "Amplify Cleveland Heights",
+        "website": "https://amplifydispensary.com/location/cleveland-heights/",
+        "phone": "216-465-3920",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-68ca5164ba06"
+      }
     },
     {
       "id": "loc-35b5df074641",
@@ -24098,7 +24292,8 @@
       },
       "evidence_ids": [
         "ev-a862c92dacc6"
-      ]
+      ],
+      "snapshot_phone": "(740) 876-4127"
     },
     {
       "id": "loc-d92e20550ebb",
@@ -24119,7 +24314,8 @@
       },
       "evidence_ids": [
         "ev-cb693965a5ff"
-      ]
+      ],
+      "snapshot_phone": "(513) 280-7376"
     },
     {
       "id": "loc-51fb190ee4ca",
@@ -24140,7 +24336,8 @@
       },
       "evidence_ids": [
         "ev-ed97deef5c66"
-      ]
+      ],
+      "snapshot_phone": "(513) 572-5696"
     },
     {
       "id": "loc-e28ecca697da",
@@ -24161,7 +24358,8 @@
       },
       "evidence_ids": [
         "ev-9373fdba1103"
-      ]
+      ],
+      "snapshot_phone": "(330) 617-1300"
     },
     {
       "id": "loc-186e32d7673d",
@@ -24182,7 +24380,8 @@
       },
       "evidence_ids": [
         "ev-c2b5ee5e50ec"
-      ]
+      ],
+      "snapshot_phone": "(513) 964-1106"
     },
     {
       "id": "loc-1b76074a0987",
@@ -24203,7 +24402,8 @@
       },
       "evidence_ids": [
         "ev-d376d60c5345"
-      ]
+      ],
+      "snapshot_phone": "(937) 684-4621"
     },
     {
       "id": "loc-373dcc19938d",
@@ -24224,7 +24424,8 @@
       },
       "evidence_ids": [
         "ev-8f96ee5fe85e"
-      ]
+      ],
+      "snapshot_phone": "(330) 333-3925"
     },
     {
       "id": "loc-677d6505812d",
@@ -24245,7 +24446,8 @@
       },
       "evidence_ids": [
         "ev-f1793caf85d9"
-      ]
+      ],
+      "snapshot_phone": "(234) 801-4282"
     },
     {
       "id": "loc-b3080a768a12",
@@ -24266,7 +24468,8 @@
       },
       "evidence_ids": [
         "ev-b3f0cae3129b"
-      ]
+      ],
+      "snapshot_phone": "(740) 910-5420"
     },
     {
       "id": "loc-43e9c6f7a07e",
@@ -24286,8 +24489,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-41813c038dd8"
-      ]
+        "ev-41813c038dd8",
+        "ev-fcf43cff303b"
+      ],
+      "snapshot_phone": "(440) 754-8686",
+      "contact": {
+        "public_name": "Amplify Painesville Township",
+        "website": "https://amplifydispensary.com/location/painesville-township/",
+        "phone": "440-754-8686",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-68ca5164ba06"
+      }
     },
     {
       "id": "loc-58bafa7a7c55",
@@ -24308,7 +24520,8 @@
       },
       "evidence_ids": [
         "ev-520e3e60b304"
-      ]
+      ],
+      "snapshot_phone": "(740) 238-7603"
     },
     {
       "id": "loc-09279bac0dde",
@@ -24328,8 +24541,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-957be08b9c0e"
-      ]
+        "ev-957be08b9c0e",
+        "ev-4d647647ab77"
+      ],
+      "snapshot_phone": "(740) 792-4267",
+      "contact": {
+        "public_name": "Greenlight Wintersville",
+        "website": "https://ohio.greenlightdispensary.com/locations/wintersville/",
+        "phone": "740-792-4267",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-40726ffc20a0"
+      }
     },
     {
       "id": "loc-0fc0fbf79176",
@@ -24350,7 +24572,8 @@
       },
       "evidence_ids": [
         "ev-01b8dd8b0de2"
-      ]
+      ],
+      "snapshot_phone": "(283) 209-8284"
     },
     {
       "id": "loc-7a3179c1421b",
@@ -24371,7 +24594,8 @@
       },
       "evidence_ids": [
         "ev-f654bdf8e9a6"
-      ]
+      ],
+      "snapshot_phone": "(283) 208-9206"
     },
     {
       "id": "loc-b9e17a9eea20",
@@ -24392,7 +24616,8 @@
       },
       "evidence_ids": [
         "ev-c5f8f4776894"
-      ]
+      ],
+      "snapshot_phone": "(567) 288-2286"
     },
     {
       "id": "loc-23c11b42eaf3",
@@ -24413,7 +24638,8 @@
       },
       "evidence_ids": [
         "ev-6bd8cfb48905"
-      ]
+      ],
+      "snapshot_phone": "(234) 430-0850"
     },
     {
       "id": "loc-cab7e2970ece",
@@ -24432,7 +24658,8 @@
       },
       "evidence_ids": [
         "ev-d4802b520999"
-      ]
+      ],
+      "snapshot_phone": "(614) 914-5007"
     },
     {
       "id": "loc-750785cd9f22",
@@ -24453,7 +24680,8 @@
       },
       "evidence_ids": [
         "ev-d07acb2470fc"
-      ]
+      ],
+      "snapshot_phone": "(614) 333-0456"
     },
     {
       "id": "loc-0dcfa4121ece",
@@ -24474,7 +24702,8 @@
       },
       "evidence_ids": [
         "ev-5542cc569486"
-      ]
+      ],
+      "snapshot_phone": "(513) 993-3993"
     },
     {
       "id": "loc-dc770aa76d46",
@@ -24495,7 +24724,8 @@
       },
       "evidence_ids": [
         "ev-a3370084195f"
-      ]
+      ],
+      "snapshot_phone": "(937) 637-5420"
     },
     {
       "id": "loc-79050e6b19bc",
@@ -24516,7 +24746,8 @@
       },
       "evidence_ids": [
         "ev-b22bc2aa8d44"
-      ]
+      ],
+      "snapshot_phone": "(330) 300-8420"
     },
     {
       "id": "loc-40599eb3e327",
@@ -24537,7 +24768,8 @@
       },
       "evidence_ids": [
         "ev-aec821f731f2"
-      ]
+      ],
+      "snapshot_phone": "(347) 673-9384"
     },
     {
       "id": "loc-c6a66503d13b",
@@ -24558,7 +24790,8 @@
       },
       "evidence_ids": [
         "ev-59f70f0d8166"
-      ]
+      ],
+      "snapshot_phone": "(216) 373-9238"
     },
     {
       "id": "loc-a7c7b8ac3d0b",
@@ -24579,7 +24812,8 @@
       },
       "evidence_ids": [
         "ev-c82eda35df89"
-      ]
+      ],
+      "snapshot_phone": "(614) 541-3399"
     },
     {
       "id": "loc-b145c910a31a",
@@ -24600,7 +24834,8 @@
       },
       "evidence_ids": [
         "ev-a139f1f46b27"
-      ]
+      ],
+      "snapshot_phone": "(614) 516-1181"
     },
     {
       "id": "loc-390debb27147",
@@ -24621,7 +24856,8 @@
       },
       "evidence_ids": [
         "ev-7e93f094660d"
-      ]
+      ],
+      "snapshot_phone": "(216) 243-0165"
     },
     {
       "id": "loc-3446a3fa8c93",
@@ -24641,8 +24877,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-2b5852521a24"
-      ]
+        "ev-2b5852521a24",
+        "ev-15cdde22cae6"
+      ],
+      "snapshot_phone": "(419) 405-6863",
+      "contact": {
+        "public_name": "Greenlight Sandusky",
+        "website": "https://ohio.greenlightdispensary.com/locations/sandusky/",
+        "phone": "419-405-6863",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-40726ffc20a0"
+      }
     },
     {
       "id": "loc-239c187bc74f",
@@ -24663,7 +24908,8 @@
       },
       "evidence_ids": [
         "ev-7d052b774173"
-      ]
+      ],
+      "snapshot_phone": "(937) 471-4440"
     },
     {
       "id": "loc-b042208582cb",
@@ -24684,7 +24930,8 @@
       },
       "evidence_ids": [
         "ev-9ddd47faaa04"
-      ]
+      ],
+      "snapshot_phone": "(513) 905 0420"
     },
     {
       "id": "loc-11ffbc22d639",
@@ -24705,7 +24952,8 @@
       },
       "evidence_ids": [
         "ev-483066dc4fb6"
-      ]
+      ],
+      "snapshot_phone": "(513) 757-0936"
     },
     {
       "id": "loc-fa0039112f06",
@@ -24726,7 +24974,8 @@
       },
       "evidence_ids": [
         "ev-49bad3a94b85"
-      ]
+      ],
+      "snapshot_phone": "(567) 825-0755"
     },
     {
       "id": "loc-2435375ea236",
@@ -24746,8 +24995,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-3e3c8324c591"
-      ]
+        "ev-3e3c8324c591",
+        "ev-c34964b5bf4a"
+      ],
+      "snapshot_phone": "(513) 788-4662",
+      "contact": {
+        "public_name": "Terrasana Middletown",
+        "website": "https://terrasanacannabisco.com/locations/middletown-cannabis-near-me-terrasana-ohio-dispensary/",
+        "phone": "513-788-4662",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-4d7897d29e7e"
+      }
     },
     {
       "id": "loc-955f8c4b90b9",
@@ -24768,7 +25026,8 @@
       },
       "evidence_ids": [
         "ev-5ea17f65eeb7"
-      ]
+      ],
+      "snapshot_phone": "(330) 839-8338"
     },
     {
       "id": "loc-47dd626297a5",
@@ -24789,7 +25048,8 @@
       },
       "evidence_ids": [
         "ev-a873aace6943"
-      ]
+      ],
+      "snapshot_phone": "(419) 920-9023"
     },
     {
       "id": "loc-29b29c54b7a4",
@@ -24810,7 +25070,8 @@
       },
       "evidence_ids": [
         "ev-dd24b2236191"
-      ]
+      ],
+      "snapshot_phone": "(614) 918 - 8581"
     },
     {
       "id": "loc-2f613d97b2e9",
@@ -24830,8 +25091,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-c827b753fd94"
-      ]
+        "ev-c827b753fd94",
+        "ev-88271f4bddda"
+      ],
+      "snapshot_phone": "(614) 407-3111",
+      "contact": {
+        "public_name": "Greenlight Columbus",
+        "website": "https://ohio.greenlightdispensary.com/locations/columbus/",
+        "phone": "614-407-3111",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-40726ffc20a0"
+      }
     },
     {
       "id": "loc-0bd14119b611",
@@ -24852,7 +25122,8 @@
       },
       "evidence_ids": [
         "ev-076b9eb7b228"
-      ]
+      ],
+      "snapshot_phone": "(267) 857-3720"
     },
     {
       "id": "loc-abf3ff266fd0",
@@ -24873,7 +25144,8 @@
       },
       "evidence_ids": [
         "ev-9d1332bca1c8"
-      ]
+      ],
+      "snapshot_phone": "(513) 376-8707"
     },
     {
       "id": "loc-1a09097fa8ee",
@@ -24894,7 +25166,8 @@
       },
       "evidence_ids": [
         "ev-9a433d5d95c9"
-      ]
+      ],
+      "snapshot_phone": "(330) 777-1691"
     },
     {
       "id": "loc-5be67a08bccc",
@@ -24915,7 +25188,8 @@
       },
       "evidence_ids": [
         "ev-efa2e48b4935"
-      ]
+      ],
+      "snapshot_phone": "(234) 390-0670"
     },
     {
       "id": "loc-590923915b01",
@@ -24936,7 +25210,8 @@
       },
       "evidence_ids": [
         "ev-e4ad240b2620"
-      ]
+      ],
+      "snapshot_phone": "(440) 345-7230"
     },
     {
       "id": "loc-d91c090839b6",
@@ -24956,8 +25231,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-72b63474abc1"
-      ]
+        "ev-72b63474abc1",
+        "ev-c3be21d73fd9"
+      ],
+      "snapshot_phone": "(440) 540-0420",
+      "contact": {
+        "public_name": "Terrasana Parma",
+        "website": "https://terrasanacannabisco.com/locations/parma-ohio-cannabis-dispensary/",
+        "phone": "440-540-0420",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-4d7897d29e7e"
+      }
     },
     {
       "id": "loc-6c48b2e4ea26",
@@ -24977,8 +25261,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-36da4d439b63"
-      ]
+        "ev-36da4d439b63",
+        "ev-6be5e0a55b66"
+      ],
+      "snapshot_phone": "(740) 204-2939",
+      "contact": {
+        "public_name": "Nar Cannabis Delaware",
+        "website": "https://www.narreserve.com/delaware/",
+        "phone": "740-204-2939",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-f3d5255d5bc7"
+      }
     },
     {
       "id": "loc-9b82c79f0905",
@@ -24999,7 +25292,8 @@
       },
       "evidence_ids": [
         "ev-5ef721213b13"
-      ]
+      ],
+      "snapshot_phone": "(740) 354-2004"
     },
     {
       "id": "loc-f1619183b618",
@@ -25020,7 +25314,8 @@
       },
       "evidence_ids": [
         "ev-cb489484d506"
-      ]
+      ],
+      "snapshot_phone": "(440) 589-4680"
     },
     {
       "id": "loc-e1a97cc6a72b",
@@ -25041,7 +25336,8 @@
       },
       "evidence_ids": [
         "ev-f5bda524e171"
-      ]
+      ],
+      "snapshot_phone": "(513) 570-5800"
     },
     {
       "id": "loc-56028f40440c",
@@ -25062,7 +25358,8 @@
       },
       "evidence_ids": [
         "ev-7613b744bfb0"
-      ]
+      ],
+      "snapshot_phone": "(330) 356-8200"
     },
     {
       "id": "loc-b571945fbdba",
@@ -25083,7 +25380,8 @@
       },
       "evidence_ids": [
         "ev-bd7fc329911f"
-      ]
+      ],
+      "snapshot_phone": "(216) 298-0451"
     },
     {
       "id": "loc-2cc22f453388",
@@ -25104,7 +25402,8 @@
       },
       "evidence_ids": [
         "ev-ed90ecdd8096"
-      ]
+      ],
+      "snapshot_phone": "(380) 248-8013"
     },
     {
       "id": "loc-9caa1cc2c1d0",
@@ -25125,7 +25424,8 @@
       },
       "evidence_ids": [
         "ev-b6a7afd27faa"
-      ]
+      ],
+      "snapshot_phone": "(513) 549-2715"
     },
     {
       "id": "loc-f4b81c46c914",
@@ -25146,7 +25446,8 @@
       },
       "evidence_ids": [
         "ev-b9e95e05f590"
-      ]
+      ],
+      "snapshot_phone": "(220) 241-3259"
     },
     {
       "id": "loc-78e50ee45a80",
@@ -25167,7 +25468,8 @@
       },
       "evidence_ids": [
         "ev-7b28a5f54bc0"
-      ]
+      ],
+      "snapshot_phone": "(513) 967-2486"
     },
     {
       "id": "loc-db4399eafb17",
@@ -25188,7 +25490,8 @@
       },
       "evidence_ids": [
         "ev-5e0ec6397867"
-      ]
+      ],
+      "snapshot_phone": "(740) 313 - 4743"
     },
     {
       "id": "loc-aaf8d04b834f",
@@ -25209,7 +25512,8 @@
       },
       "evidence_ids": [
         "ev-059cdf1e4d89"
-      ]
+      ],
+      "snapshot_phone": "(513) 386-8027"
     },
     {
       "id": "loc-1802ba25b679",
@@ -25230,7 +25534,8 @@
       },
       "evidence_ids": [
         "ev-d008f4f2722d"
-      ]
+      ],
+      "snapshot_phone": "(740) 259-4062"
     },
     {
       "id": "loc-f37e1b62a4b4",
@@ -25251,7 +25556,8 @@
       },
       "evidence_ids": [
         "ev-bab1c483f9fa"
-      ]
+      ],
+      "snapshot_phone": "(937) 595-4420"
     },
     {
       "id": "loc-1aa27cde2d9b",
@@ -25272,7 +25578,8 @@
       },
       "evidence_ids": [
         "ev-f9b0243b70a0"
-      ]
+      ],
+      "snapshot_phone": "(513) 386-7205"
     },
     {
       "id": "loc-3b4803462800",
@@ -25293,7 +25600,8 @@
       },
       "evidence_ids": [
         "ev-e4f8e7375226"
-      ]
+      ],
+      "snapshot_phone": "(614) 317-9359"
     },
     {
       "id": "loc-72ac95f2e88e",
@@ -25314,7 +25622,8 @@
       },
       "evidence_ids": [
         "ev-1df223da6756"
-      ]
+      ],
+      "snapshot_phone": "(326) 212-2664"
     },
     {
       "id": "loc-cdd03a0271cc",
@@ -25335,7 +25644,8 @@
       },
       "evidence_ids": [
         "ev-65425155bad9"
-      ]
+      ],
+      "snapshot_phone": "(937) 504-2002"
     },
     {
       "id": "loc-644070df7f8c",
@@ -25356,7 +25666,8 @@
       },
       "evidence_ids": [
         "ev-3fb6d3e34014"
-      ]
+      ],
+      "snapshot_phone": "(937) 641-0620"
     },
     {
       "id": "loc-5b83d3b378d7",
@@ -25377,7 +25688,8 @@
       },
       "evidence_ids": [
         "ev-19e10ce1254d"
-      ]
+      ],
+      "snapshot_phone": "(513) 549-2713"
     },
     {
       "id": "loc-ce03df16a47a",
@@ -25398,7 +25710,8 @@
       },
       "evidence_ids": [
         "ev-7c436892c0ae"
-      ]
+      ],
+      "snapshot_phone": "(419) 314-1921"
     },
     {
       "id": "loc-494d767eea2b",
@@ -25419,7 +25732,8 @@
       },
       "evidence_ids": [
         "ev-fd0ace19d9fe"
-      ]
+      ],
+      "snapshot_phone": "(804) 806-5240"
     },
     {
       "id": "loc-6afa165b780e",
@@ -25440,7 +25754,8 @@
       },
       "evidence_ids": [
         "ev-4ca2a0d70a86"
-      ]
+      ],
+      "snapshot_phone": "(614) 665-7420"
     },
     {
       "id": "loc-ee958f8ea555",
@@ -25461,7 +25776,8 @@
       },
       "evidence_ids": [
         "ev-363b0ef21be8"
-      ]
+      ],
+      "snapshot_phone": "(330) 800-0420"
     },
     {
       "id": "loc-445d18dfad62",
@@ -25481,8 +25797,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-e42b327901de"
-      ]
+        "ev-e42b327901de",
+        "ev-06a617729873"
+      ],
+      "snapshot_phone": "(740) 647-4900",
+      "contact": {
+        "public_name": "Greenlight Marietta",
+        "website": "https://ohio.greenlightdispensary.com/locations/marietta/",
+        "phone": "740-647-4900",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-40726ffc20a0"
+      }
     },
     {
       "id": "loc-bb18984206ce",
@@ -25503,7 +25828,8 @@
       },
       "evidence_ids": [
         "ev-83d486a802a2"
-      ]
+      ],
+      "snapshot_phone": "(614) 502-3015"
     },
     {
       "id": "loc-6660054c8cc8",
@@ -25524,7 +25850,8 @@
       },
       "evidence_ids": [
         "ev-24e8c3e21863"
-      ]
+      ],
+      "snapshot_phone": "(937) 569-8319"
     },
     {
       "id": "loc-5ee48602a70f",
@@ -25545,7 +25872,8 @@
       },
       "evidence_ids": [
         "ev-726faf34526e"
-      ]
+      ],
+      "snapshot_phone": "(330) 406-1650"
     },
     {
       "id": "loc-53420e787c20",
@@ -25566,7 +25894,8 @@
       },
       "evidence_ids": [
         "ev-90420d88fdc3"
-      ]
+      ],
+      "snapshot_phone": "(513) 937-1420"
     },
     {
       "id": "loc-8fcfc771a0f9",
@@ -25587,7 +25916,8 @@
       },
       "evidence_ids": [
         "ev-22bacf5fc92e"
-      ]
+      ],
+      "snapshot_phone": "(513) 417-8170"
     },
     {
       "id": "loc-4f3aa95ad239",
@@ -25608,7 +25938,8 @@
       },
       "evidence_ids": [
         "ev-4ab5cd166916"
-      ]
+      ],
+      "snapshot_phone": "(513) 538-3975"
     },
     {
       "id": "loc-dff3f12c5a5f",
@@ -25629,7 +25960,8 @@
       },
       "evidence_ids": [
         "ev-bb643089ee12"
-      ]
+      ],
+      "snapshot_phone": "(513) 833-6613"
     },
     {
       "id": "loc-8a24fa932a91",
@@ -25650,7 +25982,8 @@
       },
       "evidence_ids": [
         "ev-f832de82e5a5"
-      ]
+      ],
+      "snapshot_phone": "(740) 295-9182"
     },
     {
       "id": "loc-d0224f0f390c",
@@ -25671,7 +26004,8 @@
       },
       "evidence_ids": [
         "ev-65bf3d12290f"
-      ]
+      ],
+      "snapshot_phone": "(440) 540-2356"
     },
     {
       "id": "loc-c7dab0e9f0ef",
@@ -25692,7 +26026,8 @@
       },
       "evidence_ids": [
         "ev-3ee2f8207387"
-      ]
+      ],
+      "snapshot_phone": "(216) 273-0062"
     },
     {
       "id": "loc-106b9ef69d55",
@@ -25713,7 +26048,8 @@
       },
       "evidence_ids": [
         "ev-6503e616dfaf"
-      ]
+      ],
+      "snapshot_phone": "(740) 488-0150"
     },
     {
       "id": "loc-c40d354f2efd",
@@ -25734,7 +26070,8 @@
       },
       "evidence_ids": [
         "ev-ff04bbaf261c"
-      ]
+      ],
+      "snapshot_phone": "(614) 916-6645"
     },
     {
       "id": "loc-349f8be38a25",
@@ -25755,7 +26092,8 @@
       },
       "evidence_ids": [
         "ev-7a91c503cf8a"
-      ]
+      ],
+      "snapshot_phone": "(330) 368-2144"
     },
     {
       "id": "loc-285b4a8793e5",
@@ -25775,8 +26113,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-fe826264fbec"
-      ]
+        "ev-fe826264fbec",
+        "ev-490e625dfe92"
+      ],
+      "snapshot_phone": "(614) 665-0170",
+      "contact": {
+        "public_name": "Terrasana Columbus – Livingston",
+        "website": "https://terrasanacannabisco.com/locations/cbus-livingston/",
+        "phone": "614-665-0170",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-4d7897d29e7e"
+      }
     },
     {
       "id": "loc-1fefb9a342fa",
@@ -25797,7 +26144,8 @@
       },
       "evidence_ids": [
         "ev-c0132fbfef0b"
-      ]
+      ],
+      "snapshot_phone": "(234) 280-2558"
     },
     {
       "id": "loc-2ab3779f87e2",
@@ -25818,7 +26166,8 @@
       },
       "evidence_ids": [
         "ev-db21f97f9729"
-      ]
+      ],
+      "snapshot_phone": "(614) 957-8420"
     },
     {
       "id": "loc-506a8262c7f7",
@@ -25838,8 +26187,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-d5a8f31e6f95"
-      ]
+        "ev-d5a8f31e6f95",
+        "ev-8d3f5403fe0d"
+      ],
+      "snapshot_phone": "(440) 306-8583",
+      "contact": {
+        "public_name": "Amplify Eastlake",
+        "website": "https://amplifydispensary.com/location/eastlake/",
+        "phone": "440-306-8583",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-68ca5164ba06"
+      }
     },
     {
       "id": "loc-fb8f7967f7bd",
@@ -25860,7 +26218,8 @@
       },
       "evidence_ids": [
         "ev-b1bbbd596bf5"
-      ]
+      ],
+      "snapshot_phone": "(740) 204-2939"
     },
     {
       "id": "loc-8b29646c1ed1",
@@ -25881,7 +26240,8 @@
       },
       "evidence_ids": [
         "ev-43dbd88cf308"
-      ]
+      ],
+      "snapshot_phone": "(513) 549-2713"
     },
     {
       "id": "loc-71aae65bbe8b",
@@ -25902,7 +26262,8 @@
       },
       "evidence_ids": [
         "ev-bedf9bc1f0f8"
-      ]
+      ],
+      "snapshot_phone": "(380) 244-2705"
     },
     {
       "id": "loc-c11b9db3c16c",
@@ -25923,7 +26284,8 @@
       },
       "evidence_ids": [
         "ev-655873e9fd48"
-      ]
+      ],
+      "snapshot_phone": "(513) 407-3093"
     },
     {
       "id": "loc-da2ee7ca347f",
@@ -25944,7 +26306,8 @@
       },
       "evidence_ids": [
         "ev-879444c99c72"
-      ]
+      ],
+      "snapshot_phone": "(567) 271-2205"
     },
     {
       "id": "loc-78b74148e6a0",
@@ -25965,7 +26328,8 @@
       },
       "evidence_ids": [
         "ev-aafecd9734bf"
-      ]
+      ],
+      "snapshot_phone": "(440) 828-0288"
     },
     {
       "id": "loc-ee480551e852",
@@ -25986,7 +26350,8 @@
       },
       "evidence_ids": [
         "ev-3d07e3046af9"
-      ]
+      ],
+      "snapshot_phone": "(937) 972-0657"
     },
     {
       "id": "loc-8ed1cda30df3",
@@ -26007,7 +26372,8 @@
       },
       "evidence_ids": [
         "ev-8a3bd3ce0134"
-      ]
+      ],
+      "snapshot_phone": "(440) 433-1255"
     },
     {
       "id": "loc-6c67eec395c4",
@@ -26028,7 +26394,8 @@
       },
       "evidence_ids": [
         "ev-804f4ae3a6e8"
-      ]
+      ],
+      "snapshot_phone": "(937) 910-7744"
     },
     {
       "id": "loc-e7b4a65abef7",
@@ -26049,7 +26416,8 @@
       },
       "evidence_ids": [
         "ev-50fad7f7d9ea"
-      ]
+      ],
+      "snapshot_phone": "(614) 526-2233"
     },
     {
       "id": "loc-be2f14a686b7",
@@ -26069,8 +26437,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-329157f0894d"
-      ]
+        "ev-329157f0894d",
+        "ev-df03c21991bf"
+      ],
+      "snapshot_phone": "(740) 377-8940",
+      "contact": {
+        "public_name": "Greenlight South Point",
+        "website": "https://ohio.greenlightdispensary.com/locations/south-point/",
+        "phone": "740-377-8940",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-40726ffc20a0"
+      }
     },
     {
       "id": "loc-a6fcb0df093f",
@@ -26091,7 +26468,8 @@
       },
       "evidence_ids": [
         "ev-cbbb4d032152"
-      ]
+      ],
+      "snapshot_phone": "(740) 730-0420"
     },
     {
       "id": "loc-bd94356c2160",
@@ -26112,7 +26490,8 @@
       },
       "evidence_ids": [
         "ev-11c524ed04a0"
-      ]
+      ],
+      "snapshot_phone": "(513) 855-5420"
     },
     {
       "id": "loc-e53e5c64c358",
@@ -26133,7 +26512,8 @@
       },
       "evidence_ids": [
         "ev-9cbe2ba8f836"
-      ]
+      ],
+      "snapshot_phone": "(216) 249-6132"
     },
     {
       "id": "loc-8cb5fda16cb1",
@@ -26154,7 +26534,8 @@
       },
       "evidence_ids": [
         "ev-a09c03881ad2"
-      ]
+      ],
+      "snapshot_phone": "(740) 764-4740"
     },
     {
       "id": "loc-3c642586596f",
@@ -26175,7 +26556,8 @@
       },
       "evidence_ids": [
         "ev-e83436a60818"
-      ]
+      ],
+      "snapshot_phone": "(740) 262-8198"
     },
     {
       "id": "loc-c369e8b01ce5",
@@ -26196,7 +26578,8 @@
       },
       "evidence_ids": [
         "ev-bf1e64083776"
-      ]
+      ],
+      "snapshot_phone": "(513) 342-5200"
     },
     {
       "id": "loc-7db9bc6a4b61",
@@ -26217,7 +26600,8 @@
       },
       "evidence_ids": [
         "ev-2803d800e372"
-      ]
+      ],
+      "snapshot_phone": "(380) 222-2359"
     },
     {
       "id": "loc-533162e73403",
@@ -26238,7 +26622,8 @@
       },
       "evidence_ids": [
         "ev-bab43bd8ee01"
-      ]
+      ],
+      "snapshot_phone": "(283) 201-5886"
     },
     {
       "id": "loc-7594589026c2",
@@ -26259,7 +26644,8 @@
       },
       "evidence_ids": [
         "ev-3c8b43c21eb4"
-      ]
+      ],
+      "snapshot_phone": "(216) 483-7902​"
     },
     {
       "id": "loc-788931fead45",
@@ -26280,7 +26666,8 @@
       },
       "evidence_ids": [
         "ev-d9f34461cb64"
-      ]
+      ],
+      "snapshot_phone": "(440) 261-7000"
     },
     {
       "id": "loc-abada427d987",
@@ -26301,7 +26688,8 @@
       },
       "evidence_ids": [
         "ev-bcdf4fe065c7"
-      ]
+      ],
+      "snapshot_phone": "(614) 502-3014"
     },
     {
       "id": "loc-bd523fe7339d",
@@ -26322,7 +26710,8 @@
       },
       "evidence_ids": [
         "ev-52fe086c36bf"
-      ]
+      ],
+      "snapshot_phone": "(513) 718-0028"
     },
     {
       "id": "loc-ca0199acca4c",
@@ -26342,8 +26731,17 @@
         "status": "unknown"
       },
       "evidence_ids": [
-        "ev-c51cd1617ecd"
-      ]
+        "ev-c51cd1617ecd",
+        "ev-3d1ac7fa96f6"
+      ],
+      "snapshot_phone": "(740) 547-0015",
+      "contact": {
+        "public_name": "Greenlight Ironton",
+        "website": "https://ohio.greenlightdispensary.com/locations/ironton/",
+        "phone": "740-547-0015",
+        "reviewed_on": "2026-10-13",
+        "directory_organization_id": "org-40726ffc20a0"
+      }
     },
     {
       "id": "loc-f1ba8e35ffff",
@@ -26364,7 +26762,8 @@
       },
       "evidence_ids": [
         "ev-f0bf8a3ee728"
-      ]
+      ],
+      "snapshot_phone": "(216) 547-8440"
     },
     {
       "id": "loc-e161d7b8350a",
@@ -26385,7 +26784,8 @@
       },
       "evidence_ids": [
         "ev-bdd0814b31b8"
-      ]
+      ],
+      "snapshot_phone": "(330) 448-5420"
     },
     {
       "id": "loc-f78b1e415a79",
@@ -26406,7 +26806,8 @@
       },
       "evidence_ids": [
         "ev-f9fc7f0f6f79"
-      ]
+      ],
+      "snapshot_phone": "(440) 990-1600"
     },
     {
       "id": "loc-0ca92a508fd1",
@@ -26427,7 +26828,8 @@
       },
       "evidence_ids": [
         "ev-d9b37a1689dd"
-      ]
+      ],
+      "snapshot_phone": "(380) 800-4420"
     },
     {
       "id": "loc-46f05f635fcd",
@@ -26448,7 +26850,8 @@
       },
       "evidence_ids": [
         "ev-bd6e3a1ed93a"
-      ]
+      ],
+      "snapshot_phone": "(513) 949-5340"
     },
     {
       "id": "loc-3d3cc86e68b3",
@@ -26469,7 +26872,8 @@
       },
       "evidence_ids": [
         "ev-0145b5b7ff3a"
-      ]
+      ],
+      "snapshot_phone": "‍(937) 560-3320"
     },
     {
       "id": "loc-c75a65bd287d",
@@ -26490,7 +26894,8 @@
       },
       "evidence_ids": [
         "ev-e9b082b9e0b6"
-      ]
+      ],
+      "snapshot_phone": "(330) 333-3925"
     },
     {
       "id": "loc-5aa6a43dee14",
@@ -26511,7 +26916,8 @@
       },
       "evidence_ids": [
         "ev-3f0d4559c5d6"
-      ]
+      ],
+      "snapshot_phone": "(216) 326-3813"
     },
     {
       "id": "loc-46c75b8f5051",
@@ -26532,7 +26938,8 @@
       },
       "evidence_ids": [
         "ev-96c3e548f235"
-      ]
+      ],
+      "snapshot_phone": "(614) 655-8050"
     },
     {
       "id": "loc-7fe95ef2899a",
@@ -29106,7 +29513,7 @@
       "eligibility": "Confirm current eligibility and service requirements with the provider.",
       "next_step": {
         "label": "Open next step",
-        "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/index.html?org=org-cde7d825c692"
+        "url": "https://pisgahpeaksventures.com/contact/"
       },
       "availability": "unknown",
       "attributes": {},
@@ -30016,7 +30423,7 @@
       "eligibility": "Confirm current eligibility and service requirements with the provider.",
       "next_step": {
         "label": "Open next step",
-        "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/index.html?org=org-6bb8b2a3ca4e"
+        "url": "https://oh.curaleaf.com/dispensary/ohio/curaleaf-newark"
       },
       "availability": "unknown",
       "attributes": {},
@@ -31511,7 +31918,7 @@
       "eligibility": "Confirm current eligibility and service requirements with the provider.",
       "next_step": {
         "label": "Open next step",
-        "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/index.html?org=org-139c66e61558"
+        "url": "https://www.subsidiocannabis.com/"
       },
       "availability": "unknown",
       "attributes": {},
@@ -36445,7 +36852,7 @@
       "eligibility": "Confirm current eligibility and service requirements with the provider.",
       "next_step": {
         "label": "Open next step",
-        "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/index.html?org=org-4d4b4fa99409"
+        "url": "https://hempsupporter.com/contact/"
       },
       "availability": "unknown",
       "attributes": {},
@@ -61573,13 +61980,13 @@
       "id": "ev-0dea3dcf6e7e",
       "subject_id": "loc-906ae3899097",
       "claim": "government-location-snapshot",
-      "value": "Terrasana; 10500 Antenucci Blvd Ste 200; source license label Active",
+      "value": "Terrasana; 9601 Vista Way; source license label Active",
       "source_url": "https://maps.ohio.gov/arcgis/rest/services/Hosted/Geocoded_Dispensaries_/FeatureServer/0",
       "source_kind": "government",
       "status": "source-listed",
       "recorded_on": "2026-10-10",
       "recheck_on": "2026-11-09",
-      "limitations": "Source update date and completeness are unknown. Source Active labels do not establish current license status. Hours and inventory are not imported."
+      "limitations": "Source update date and completeness are unknown. Source Active labels do not establish current license status. Hours and inventory are not imported. Field correction reviewed 2026-10-13: Operator now publishes 9601 Vista Way, Garfield Heights, OH 44125. Old map coordinates omitted until replacement coordinates are verified. License status remains unknown. Supporting source: https://terrasanacannabisco.com/locations/cleveland-medical-marijuana-dispensary/"
     },
     {
       "id": "ev-bccd044f3617",
@@ -63877,6 +64284,266 @@
       "recorded_on": "2026-10-12",
       "recheck_on": "2026-11-11",
       "limitations": "Ohio shipping eligibility and DCC operator licensing were not verified. Existing editorial category and expo provenance are retained."
+    },
+    {
+      "id": "ev-88271f4bddda",
+      "subject_id": "loc-2f613d97b2e9",
+      "claim": "location-contact",
+      "value": "Greenlight Columbus; https://ohio.greenlightdispensary.com/locations/columbus/; 614-407-3111; directory listing org-40726ffc20a0",
+      "source_url": "https://ohio.greenlightdispensary.com/locations/columbus/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+    },
+    {
+      "id": "ev-3d1ac7fa96f6",
+      "subject_id": "loc-ca0199acca4c",
+      "claim": "location-contact",
+      "value": "Greenlight Ironton; https://ohio.greenlightdispensary.com/locations/ironton/; 740-547-0015; directory listing org-40726ffc20a0",
+      "source_url": "https://ohio.greenlightdispensary.com/locations/ironton/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+    },
+    {
+      "id": "ev-4fd170f2e296",
+      "subject_id": "loc-a54ed6bb65bc",
+      "claim": "location-contact",
+      "value": "Greenlight Marengo; https://ohio.greenlightdispensary.com/locations/marengo/; 740-200-0760; directory listing org-40726ffc20a0",
+      "source_url": "https://ohio.greenlightdispensary.com/locations/marengo/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+    },
+    {
+      "id": "ev-06a617729873",
+      "subject_id": "loc-445d18dfad62",
+      "claim": "location-contact",
+      "value": "Greenlight Marietta; https://ohio.greenlightdispensary.com/locations/marietta/; 740-647-4900; directory listing org-40726ffc20a0",
+      "source_url": "https://ohio.greenlightdispensary.com/locations/marietta/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+    },
+    {
+      "id": "ev-15cdde22cae6",
+      "subject_id": "loc-3446a3fa8c93",
+      "claim": "location-contact",
+      "value": "Greenlight Sandusky; https://ohio.greenlightdispensary.com/locations/sandusky/; 419-405-6863; directory listing org-40726ffc20a0",
+      "source_url": "https://ohio.greenlightdispensary.com/locations/sandusky/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+    },
+    {
+      "id": "ev-df03c21991bf",
+      "subject_id": "loc-be2f14a686b7",
+      "claim": "location-contact",
+      "value": "Greenlight South Point; https://ohio.greenlightdispensary.com/locations/south-point/; 740-377-8940; directory listing org-40726ffc20a0",
+      "source_url": "https://ohio.greenlightdispensary.com/locations/south-point/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+    },
+    {
+      "id": "ev-4d647647ab77",
+      "subject_id": "loc-09279bac0dde",
+      "claim": "location-contact",
+      "value": "Greenlight Wintersville; https://ohio.greenlightdispensary.com/locations/wintersville/; 740-792-4267; directory listing org-40726ffc20a0",
+      "source_url": "https://ohio.greenlightdispensary.com/locations/wintersville/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+    },
+    {
+      "id": "ev-688e1b2fea3a",
+      "subject_id": "loc-3701faa60dd1",
+      "claim": "location-contact",
+      "value": "Amplify Columbus; https://amplifydispensary.com/location/columbus/; 614-656-7222; directory listing org-68ca5164ba06",
+      "source_url": "https://amplifydispensary.com/location/columbus/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+    },
+    {
+      "id": "ev-cf8daa529df4",
+      "subject_id": "loc-68259825e9f6",
+      "claim": "location-contact",
+      "value": "Amplify Bedford; https://amplifydispensary.com/location/bedford/; 440-797-5696; directory listing org-68ca5164ba06",
+      "source_url": "https://amplifydispensary.com/location/bedford/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+    },
+    {
+      "id": "ev-11974c54f144",
+      "subject_id": "loc-4a0e2beefc2f",
+      "claim": "location-contact",
+      "value": "Amplify Cleveland Heights; https://amplifydispensary.com/location/cleveland-heights/; 216-465-3920; directory listing org-68ca5164ba06",
+      "source_url": "https://amplifydispensary.com/location/cleveland-heights/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+    },
+    {
+      "id": "ev-8d3f5403fe0d",
+      "subject_id": "loc-506a8262c7f7",
+      "claim": "location-contact",
+      "value": "Amplify Eastlake; https://amplifydispensary.com/location/eastlake/; 440-306-8583; directory listing org-68ca5164ba06",
+      "source_url": "https://amplifydispensary.com/location/eastlake/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+    },
+    {
+      "id": "ev-fcf43cff303b",
+      "subject_id": "loc-43e9c6f7a07e",
+      "claim": "location-contact",
+      "value": "Amplify Painesville Township; https://amplifydispensary.com/location/painesville-township/; 440-754-8686; directory listing org-68ca5164ba06",
+      "source_url": "https://amplifydispensary.com/location/painesville-township/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+    },
+    {
+      "id": "ev-64ef68ec421f",
+      "subject_id": "loc-3f0dbf9a2f1d",
+      "claim": "location-contact",
+      "value": "Terrasana Columbus – Grandview; https://terrasanacannabisco.com/locations/columbus-grandview/; 614-434-6929; directory listing org-4d7897d29e7e",
+      "source_url": "https://terrasanacannabisco.com/locations/columbus-grandview/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+    },
+    {
+      "id": "ev-490e625dfe92",
+      "subject_id": "loc-285b4a8793e5",
+      "claim": "location-contact",
+      "value": "Terrasana Columbus – Livingston; https://terrasanacannabisco.com/locations/cbus-livingston/; 614-665-0170; directory listing org-4d7897d29e7e",
+      "source_url": "https://terrasanacannabisco.com/locations/cbus-livingston/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+    },
+    {
+      "id": "ev-35a72b65fefb",
+      "subject_id": "loc-906ae3899097",
+      "claim": "location-contact",
+      "value": "Terrasana Garfield Heights; https://terrasanacannabisco.com/locations/cleveland-medical-marijuana-dispensary/; 216-232-2527; directory listing org-4d7897d29e7e",
+      "source_url": "https://terrasanacannabisco.com/locations/cleveland-medical-marijuana-dispensary/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+    },
+    {
+      "id": "ev-dd48ea720a74",
+      "subject_id": "loc-a60a6a56781d",
+      "claim": "location-contact",
+      "value": "Terrasana Fremont; https://terrasanacannabisco.com/locations/fremont-medical-marijuana-dispensary/; 419-463-2703; directory listing org-4d7897d29e7e",
+      "source_url": "https://terrasanacannabisco.com/locations/fremont-medical-marijuana-dispensary/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+    },
+    {
+      "id": "ev-8d61ebe56abe",
+      "subject_id": "loc-9e526afcfdbd",
+      "claim": "location-contact",
+      "value": "Terrasana Springfield; https://terrasanacannabisco.com/locations/springfield-medical-marijuana-dispensary/; 937-230-6505; directory listing org-4d7897d29e7e",
+      "source_url": "https://terrasanacannabisco.com/locations/springfield-medical-marijuana-dispensary/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+    },
+    {
+      "id": "ev-c34964b5bf4a",
+      "subject_id": "loc-2435375ea236",
+      "claim": "location-contact",
+      "value": "Terrasana Middletown; https://terrasanacannabisco.com/locations/middletown-cannabis-near-me-terrasana-ohio-dispensary/; 513-788-4662; directory listing org-4d7897d29e7e",
+      "source_url": "https://terrasanacannabisco.com/locations/middletown-cannabis-near-me-terrasana-ohio-dispensary/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+    },
+    {
+      "id": "ev-c3be21d73fd9",
+      "subject_id": "loc-d91c090839b6",
+      "claim": "location-contact",
+      "value": "Terrasana Parma; https://terrasanacannabisco.com/locations/parma-ohio-cannabis-dispensary/; 440-540-0420; directory listing org-4d7897d29e7e",
+      "source_url": "https://terrasanacannabisco.com/locations/parma-ohio-cannabis-dispensary/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+    },
+    {
+      "id": "ev-6be5e0a55b66",
+      "subject_id": "loc-6c48b2e4ea26",
+      "claim": "location-contact",
+      "value": "Nar Cannabis Delaware; https://www.narreserve.com/delaware/; 740-204-2939; directory listing org-f3d5255d5bc7",
+      "source_url": "https://www.narreserve.com/delaware/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-13",
+      "reviewed_on": "2026-10-13",
+      "recheck_on": "2026-11-12",
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
     }
   ],
   "rules": [

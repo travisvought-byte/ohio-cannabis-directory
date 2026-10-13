@@ -35,6 +35,13 @@ for audit in audits:
         assert reviewed['sources'] and reviewed['finding'] and reviewed['limitations']
         assert all(url in record['Source(s)'] for url in reviewed['sources'])
 assert all(r['Service Area (as published)'] is not None for r in rows)
+queue=json.loads((ROOT/'data/review-queue.json').read_text())
+queued={r['organization_id']:r for r in queue['queue']}
+assert queue['as_of']==RELEASE['released_on']
+for row in rows:
+    if not row['Category'].startswith('Out of scope') and not row['Website'].strip():
+        assert row['Record ID'] in queued, 'Missing website must trigger review independently of its existing review date'
+        assert queued[row['Record ID']]['priority']=='P1'
 with (ROOT / 'b2b-relationships.csv').open(encoding='utf-8-sig') as f:
     relationships = list(csv.DictReader(f))
 assert len(relationships) == 60
