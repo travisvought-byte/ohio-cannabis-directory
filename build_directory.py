@@ -66,7 +66,7 @@ def main():
         ]).lower()
         records.append(rec)
 
-    records.sort(key=lambda r: (0 if r["org"].startswith("! ") else 1, r["org"].lstrip("! ").lower()))
+    records.sort(key=lambda r: r["org"].removeprefix("! ").casefold())
 
     cats = sorted({r["cat"] for r in records if r["scope"]})
     types = sorted({r["type"] for r in records if r["scope"]})
