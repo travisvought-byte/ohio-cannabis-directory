@@ -1,3 +1,9 @@
+# v4.32 - October 13, 2026
+
+- Restored a prominent upcoming-events section directly below the main directory search, with readable dates, venues and organizer detail links.
+- Featured the Women’s Cannabis & Wellness Expo first, followed by other upcoming events; retained the next-three-month window and automatic expired-event removal.
+- Rechecked MedicateOH’s November 7 expo and October 27 industry-night pages and linked directly to each organizer page.
+
 # v4.31 - October 13, 2026
 
 - Fixed missing-website review prioritization: a dated listing without a website now enters P1 independently of its other review flags.

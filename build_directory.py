@@ -82,15 +82,17 @@ def main():
         event for event in UPCOMING_EVENTS
         if today <= datetime.date.fromisoformat(event["date"]) <= event_limit
     ]
-    home_events = ['<h2>Upcoming events · next 3 months</h2><ol class="event-line" aria-label="Upcoming events in date order">']
+    home_events = ['<h2>Upcoming events <span>· next 3 months</span></h2><ol class="event-line" aria-label="Upcoming Ohio cannabis events">']
     if visible_events:
-        for event in sorted(visible_events, key=lambda e: e["date"]):
+        for event in sorted(visible_events, key=lambda e: (not e.get("featured", False), e["date"])):
             event_date = datetime.date.fromisoformat(event["date"])
             date_label = event_date.strftime("%a, %b %-d, %Y")
             home_events.append(
                 '<li class="home-event">'
+                + ('<span class="event-featured">Featured event</span>' if event.get('featured') else '') +
                 f'<h3>{html.escape(event["name"])}</h3>'
-                f'<p><time datetime="{event["date"]}">{html.escape(date_label)}</time> · {html.escape(event["place"])}</p>'
+                f'<p><time datetime="{event["date"]}">{html.escape(date_label)}</time></p>'
+                f'<p class="event-place">{html.escape(event["place"])}</p>'
                 f'<p><a href="{html.escape(event["url"], quote=True)}" target="_blank" rel="noopener">Event details</a></p>'
                 '</li>'
             )
@@ -341,8 +343,14 @@ __VHG_CSS__
   .empty p{margin:0 0 .5rem}
 
   .highlight-card{min-width:0}
-  .event-line{max-width:100%;display:flex;gap:1rem;overflow-x:auto;list-style:none;margin:.6rem 0 0;padding:.8rem 0;scroll-snap-type:x proximity}
-  .home-event{flex:0 0 min(22rem,85vw);border-top:3px solid var(--field-deep);padding:.7rem .7rem 0;scroll-snap-align:start}
+  .upcoming-events{margin:.9rem 0 1.2rem;padding:.8rem 1rem;background:#fff;border:1px solid var(--rule);border-top:4px solid var(--field)}
+  .upcoming-events h2{margin:0;font-size:1.1rem;color:var(--field-deep)}
+  .upcoming-events h2 span{font-size:.78rem;font-weight:400;color:var(--ink-soft)}
+  .event-line{max-width:100%;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr));gap:.8rem;list-style:none;margin:.7rem 0 0;padding:0}
+  .home-event{min-width:0;border-left:3px solid var(--rule);padding:.25rem 0 .1rem .8rem}
+  .home-event h3{font-family:var(--serif);font-size:1.08rem;line-height:1.25;margin:.15rem 0 .3rem;font-weight:600}
+  .home-event p{font-size:.82rem;margin:.2rem 0;color:var(--ink-soft)}
+  .event-featured{display:block;color:var(--field-deep);font-size:.66rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
   .home-event time{font-weight:700}.home-event a{display:inline-block;padding:.4rem 0;min-height:44px}
   @media print{.event-line{display:block;overflow:visible}.home-event{break-inside:avoid}}
   /* ---- footer ------------------------------------------------------- */
@@ -391,6 +399,8 @@ __VHG_CSS__
              aria-label="Search the directory">
       <button id="clear" type="button" aria-label="Clear search">&times;</button>
     </div>
+
+    <section class="upcoming-events" id="upcoming-card" aria-label="Upcoming Ohio cannabis events">__HOME_EVENT_MARKUP__</section>
 
     <div class="controls">
       <select id="cat" aria-label="Filter by category">
@@ -450,7 +460,7 @@ function renderHomeHighlights(){
     const [year, month, day] = event.date.split("-").map(Number);
     const date = new Date(year, month - 1, day);
     return date >= today && date <= limit;
-  }).sort((a,b) => a.date.localeCompare(b.date));
+  }).sort((a,b) => Number(Boolean(b.featured))-Number(Boolean(a.featured)) || a.date.localeCompare(b.date));
   const panel = $('upcoming-card');if(!panel)return;
   if (!upcoming.length){
     panel.innerHTML = '<h2>Upcoming events · next 3 months</h2><p class="home-empty">No confirmed event dates in this window.</p>';
@@ -460,8 +470,8 @@ function renderHomeHighlights(){
     const [year, month, day] = event.date.split("-").map(Number);
     return new Intl.DateTimeFormat(undefined, {weekday:"short", month:"short", day:"numeric", year:"numeric"}).format(new Date(year, month - 1, day));
   };
-  panel.innerHTML = '<h2>Upcoming events · next 3 months</h2><ol class="event-line" aria-label="Upcoming events in date order">' + upcoming.map(event =>
-    `<li class="home-event"><h3>${esc(event.name)}</h3><p><time datetime="${esc(event.date)}">${esc(dateLabel(event))}</time> · ${esc(event.place)}</p><p><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a></p></li>`
+  panel.innerHTML = '<h2>Upcoming events <span>· next 3 months</span></h2><ol class="event-line" aria-label="Upcoming Ohio cannabis events">' + upcoming.map(event =>
+    `<li class="home-event">${event.featured?'<span class="event-featured">Featured event</span>':''}<h3>${esc(event.name)}</h3><p><time datetime="${esc(event.date)}">${esc(dateLabel(event))}</time></p><p class="event-place">${esc(event.place)}</p><p><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a></p></li>`
   ).join('') + '</ol>';
 }
 renderHomeHighlights();

@@ -61224,13 +61224,13 @@
       "subject_id": "event-oh-fc6b7e308aa7",
       "claim": "event-listing",
       "value": "Women’s Cannabis & Wellness Expo | Marriott Cincinnati North · West Chester, Ohio | 2026-11-07",
-      "source_url": "https://medicateoh.com/events/",
+      "source_url": "https://medicateoh.com/womens-cannabis-expo-2/",
       "source_kind": "provider",
       "status": "source-reviewed",
       "recorded_on": "2026-10-10",
       "recheck_on": "2026-10-24",
       "limitations": "Date rechecked against MedicateOH organizer events page; confirm latest venue and registration details before travel.",
-      "reviewed_on": "2026-10-10"
+      "reviewed_on": "2026-10-13"
     },
     {
       "id": "ev-fulfillment-seed-cellar-shop",
@@ -64057,11 +64057,11 @@
       "subject_id": "event-oh-e084983eb1be",
       "claim": "event-listing",
       "value": "“Gardening” Industry Night | Stanley’s Pub · 323 Stanley Ave · Cincinnati, Ohio · 8–11 PM · 21+ | 2026-10-27",
-      "source_url": "https://www.eventbrite.com/e/gardening-industry-night-tickets-2002953936141",
+      "source_url": "https://medicateoh.com/industry-night-cincinnati-1027/",
       "source_kind": "provider",
       "status": "source-reviewed",
       "recorded_on": "2026-10-10",
-      "reviewed_on": "2026-10-10",
+      "reviewed_on": "2026-10-13",
       "recheck_on": "2026-10-17",
       "limitations": "Organizer-published ticket listing reviewed via search retrieval. Confirm changes and admission directly; listing does not verify licensing or consumption permissions."
     },
@@ -65925,7 +65925,7 @@
       "starts_on": "2026-11-07",
       "ends_on": "2026-11-07",
       "organization_ids": [],
-      "next_step_url": "https://medicateoh.com/events/",
+      "next_step_url": "https://medicateoh.com/womens-cannabis-expo-2/",
       "evidence_ids": [
         "ev-7af298fcdb2b"
       ]
@@ -65937,7 +65937,7 @@
       "starts_on": "2026-10-27",
       "ends_on": "2026-10-27",
       "organization_ids": [],
-      "next_step_url": "https://www.eventbrite.com/e/gardening-industry-night-tickets-2002953936141",
+      "next_step_url": "https://medicateoh.com/industry-night-cincinnati-1027/",
       "evidence_ids": [
         "ev-2444640333f6"
       ]
@@ -66286,13 +66286,14 @@
       "name": "Women’s Cannabis & Wellness Expo",
       "date": "2026-11-07",
       "place": "Marriott Cincinnati North · West Chester, Ohio",
-      "url": "https://medicateoh.com/events/"
+      "url": "https://medicateoh.com/womens-cannabis-expo-2/",
+      "featured": true
     },
     {
       "name": "“Gardening” Industry Night",
       "date": "2026-10-27",
       "place": "Stanley’s Pub · 323 Stanley Ave · Cincinnati, Ohio · 8–11 PM · 21+",
-      "url": "https://www.eventbrite.com/e/gardening-industry-night-tickets-2002953936141"
+      "url": "https://medicateoh.com/industry-night-cincinnati-1027/"
     }
   ]
 }
