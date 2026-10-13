@@ -61,6 +61,14 @@ def apply_contact_reviews(data):
   if not linked or linked.get('scope')!='public' or 'legacy_record' not in linked:
    raise ValueError('Store contact needs a public directory listing: '+review['license'])
   location['contact']={k:review[k] for k in ['public_name','website','phone','reviewed_on','directory_organization_id']}
+  if review.get('menu_links'):
+   location['contact'].update({k:review[k] for k in ['menu_links','menu_source_url','menu_reviewed_on']})
+   menu_id=stable('ev-',location['id']+':store-menu')
+   menu_evidence={'id':menu_id,'subject_id':location['id'],'claim':'location-menu','value':' | '.join(link['url'] for link in review['menu_links']),'source_url':review['menu_source_url'],'source_kind':'provider','status':'source-reviewed','recorded_on':review['menu_reviewed_on'],'reviewed_on':review['menu_reviewed_on'],'recheck_on':review['recheck_on'],'limitations':'Menu links are published by the operator for this store. Destination prices, stock, ordering availability and customer eligibility are not verified by this directory.'}
+   if menu_id not in location['evidence_ids']:location['evidence_ids'].append(menu_id)
+   previous=next((i for i,x in enumerate(data['evidence']) if x['id']==menu_id),None)
+   if previous is None:data['evidence'].append(menu_evidence)
+   else:data['evidence'][previous]=menu_evidence
   eid=stable('ev-',location['id']+':store-contact')
   evidence={'id':eid,'subject_id':location['id'],'claim':'location-contact','value':review['public_name']+'; '+review['website']+'; '+review['phone']+'; directory listing '+review['directory_organization_id'],
             'source_url':review['source_url'],'source_kind':'provider','status':'source-reviewed','recorded_on':review['reviewed_on'],'reviewed_on':review['reviewed_on'],'recheck_on':review['recheck_on'],'limitations':review['limitations']}

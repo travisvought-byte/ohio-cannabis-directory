@@ -47,6 +47,10 @@ def validate(data):
    if date.fromisoformat(contact['reviewed_on'])>as_of:errors.append(f'{item["id"]}: future contact review')
    supported=any(groups['evidence'].get(k,{}).get('claim')=='location-contact' and groups['evidence'][k].get('status')=='source-reviewed' and groups['evidence'][k].get('reviewed_on')==contact['reviewed_on'] and contact['website'] in groups['evidence'][k]['value'] and contact['phone'] in groups['evidence'][k]['value'] and contact['directory_organization_id'] in groups['evidence'][k]['value'] for k in refs)
    if not supported:errors.append(f'{item["id"]}: reviewed contacts need matching location-contact evidence')
+   if contact.get('menu_links'):
+    supported=any(groups['evidence'].get(k,{}).get('claim')=='location-menu' and groups['evidence'][k].get('status')=='source-reviewed' and groups['evidence'][k].get('reviewed_on')==contact.get('menu_reviewed_on') and groups['evidence'][k].get('source_url')==contact.get('menu_source_url') and all(link['url'] in groups['evidence'][k]['value'] for link in contact['menu_links']) for k in refs)
+    if not supported:errors.append(f'{item["id"]}: menu links need matching location-menu evidence')
+    if date.fromisoformat(contact['menu_reviewed_on'])>as_of:errors.append(f'{item["id"]}: future menu review')
   if item.get('license',{}).get('status')=='active' and not any(groups['evidence'].get(k,{}).get('source_kind')=='government' for k in refs):errors.append(f'{item["id"]}: active license requires government evidence')
  for item in data['services']:
   if any(code not in STATE_CODES for code in item.get('listed_in',[])):errors.append(f'{item["id"]}: invalid editorial state membership')
@@ -66,6 +70,8 @@ def validate(data):
    if geo['kind']=='county' and not geo.get('county'):errors.append(f'{item["id"]}: county coverage requires a county')
    if geo['kind'] in ('national','online') and ('state' in geo or 'county' in geo):errors.append(f'{item["id"]}: national/online coverage cannot carry local fields')
   refs=evidence_refs(item)
+  details=item['attributes'].get('provider_details')
+  if details and not any(groups['evidence'].get(k,{}).get('claim')=='provider-contact' and groups['evidence'][k].get('status')=='source-reviewed' and groups['evidence'][k].get('reviewed_on')==details['reviewed_on'] and groups['evidence'][k].get('source_url')==details['source_url'] for k in refs):errors.append(f'{item["id"]}: provider details need matching contact evidence')
   if item['availability']=='confirmed' and not refs:errors.append(f'{item["id"]}: confirmed service requires evidence')
   for f in item['fulfillment']:
    for key in f['evidence_ids']:require(key,'evidence',item['id'])

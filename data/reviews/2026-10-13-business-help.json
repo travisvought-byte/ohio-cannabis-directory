@@ -1,0 +1,860 @@
+{
+  "reviewed_on": "2026-10-13",
+  "baseline_commit": "662425a",
+  "method": "Scoped first-party contact and service-page reviews. No calls, test messages, form submissions, new license verification or live-inventory checks. Original editorial inclusion and historical evidence preserved, except the owner-confirmed listing withdrawal recorded separately.",
+  "completed": [
+    {
+      "organization_id": "org-337f14b85abe",
+      "name": "InTrack CFO",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://intrackcfo.com",
+        "https://intrackcfo.com/cannabis"
+      ],
+      "finding": "Businesses needing bookkeeping, tax planning and CFO reporting. Published inquiry route: https://intrackcfo.com",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Email": {
+          "before": "",
+          "after": "hello@intrackcfo.com"
+        },
+        "Phone": {
+          "before": "",
+          "after": "406-451-6552"
+        }
+      }
+    },
+    {
+      "organization_id": "org-5e9b5a2704a6",
+      "name": "Mindtrix",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://mindtrixaccounting.com/",
+        "https://mindtrixaccounting.com/contact",
+        "https://mindtrixaccounting.com/cannabis-tax-audit-defense",
+        "https://mindtrixaccounting.com/about-us"
+      ],
+      "finding": "Cannabis cultivators, processors, manufacturers and dispensaries needing accounting and CFO support. Published inquiry route: https://mindtrixaccounting.com/contact",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Email": {
+          "before": "",
+          "after": "kevin@mindtrixaccounting.com"
+        },
+        "Contact Person": {
+          "before": "",
+          "after": "Kevin Jednachowski — CVO"
+        }
+      }
+    },
+    {
+      "organization_id": "org-8652a50fb7c6",
+      "name": "Argent Institutional Trust Company",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://aitc.argentfinancial.com"
+      ],
+      "finding": "Organizations needing corporate trust, agency, wealth or retirement services. Published inquiry route: https://aitc.argentfinancial.com",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Phone": {
+          "before": "",
+          "after": "800-241-5568"
+        }
+      }
+    },
+    {
+      "organization_id": "org-60c467ab6634",
+      "name": "Atomic Credit Union",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.atomiccu.com",
+        "https://www.atomiccu.com/resource-center/member-support/contact-us",
+        "https://online.flippingbook.com/view/669633876/18/"
+      ],
+      "finding": "Ohio-licensed cannabis companies, employees and vendors, subject to the credit union’s due diligence. Published inquiry route: https://www.atomiccu.com/resource-center/member-support/contact-us",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Phone": {
+          "before": "800-652-2328 x1264",
+          "after": "800-652-2328"
+        }
+      }
+    },
+    {
+      "organization_id": "org-8ef8dba29f38",
+      "name": "HSLC Banking & Financial Services",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.hslc.bank",
+        "https://www.hslc.bank/connect/contact-us"
+      ],
+      "finding": "Businesses seeking banking, cash management or merchant-service inquiries. Published inquiry route: https://www.hslc.bank/connect/contact-us",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Email": {
+          "before": "",
+          "after": "info@hslc.bank"
+        },
+        "Phone": {
+          "before": "",
+          "after": "419-673-1117"
+        }
+      }
+    },
+    {
+      "organization_id": "org-5ad9d905fae3",
+      "name": "420 SwitchBlade",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.420switchblade.com",
+        "https://www.420switchblade.com/contact-us/"
+      ],
+      "finding": "Businesses seeking branded products and sales inquiries. Published inquiry route: https://www.420switchblade.com/contact-us/",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Email": {
+          "before": "",
+          "after": "sales@420switchblade.com"
+        },
+        "Phone": {
+          "before": "",
+          "after": "828-334-3430"
+        }
+      }
+    },
+    {
+      "organization_id": "org-c57033abadbe",
+      "name": "Dyspensr",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://dyspensr.com"
+      ],
+      "finding": "Retailers and brands seeking wholesale accessories and custom branded products. Published inquiry route: https://dyspensr.com",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Email": {
+          "before": "",
+          "after": "wholesale@dyspensr.com"
+        }
+      }
+    },
+    {
+      "organization_id": "org-5cbe778a5271",
+      "name": "G Pen / Grenco Science",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://gpen.com",
+        "https://gpen.com/pages/contact"
+      ],
+      "finding": "Customers needing vaporizer support, order help or device troubleshooting. Published inquiry route: https://gpen.com/pages/contact",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Email": {
+          "before": "",
+          "after": "help@gpen.com"
+        },
+        "Phone": {
+          "before": "",
+          "after": "833-691-3224"
+        }
+      }
+    },
+    {
+      "organization_id": "org-7155fdc4e396",
+      "name": "Millers Insurance Group",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://millersinsurancegroup.com",
+        "https://millersinsurancegroup.com/industries/cannabis-lab-insurance/"
+      ],
+      "finding": "Cannabis and hemp cultivators, dispensaries, manufacturers, labs and ancillary businesses seeking insurance. Published inquiry route: https://millersinsurancegroup.com",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Email": {
+          "before": "",
+          "after": "support@millersinsurancegroup.com"
+        },
+        "Phone": {
+          "before": "",
+          "after": "800-518-1278"
+        }
+      }
+    },
+    {
+      "organization_id": "org-7172eadd96a4",
+      "name": "PMB PROMOS",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.pmbpromos.com",
+        "https://www.pmbpromos.com/ContactUs/?referrerPage=Home&refPgId=527677133&PCUrl=1"
+      ],
+      "finding": "Businesses seeking promotional merchandise, apparel and branded giveaways. Published inquiry route: https://www.pmbpromos.com/ContactUs/?referrerPage=Home&refPgId=527677133&PCUrl=1",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Phone": {
+          "before": "231-670-5940",
+          "after": "517-993-5480"
+        }
+      }
+    },
+    {
+      "organization_id": "org-6734e1942cc7",
+      "name": "RBO",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.rboinc.com",
+        "https://www.rboinc.com/reach-out"
+      ],
+      "finding": "Businesses seeking brand, print, fulfillment and operational support. Published inquiry route: https://www.rboinc.com/reach-out",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Phone": {
+          "before": "",
+          "after": "800-315-1636"
+        }
+      }
+    },
+    {
+      "organization_id": "org-7d813189790c",
+      "name": "North Linden Area Commission",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.cbusareacommissions.org/northlinden"
+      ],
+      "finding": "Residents and organizations seeking North Linden neighborhood and commission connections. Published inquiry route: https://www.cbusareacommissions.org/northlinden",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Email": {
+          "before": "",
+          "after": "dpscales@columbus.gov"
+        },
+        "Phone": {
+          "before": "",
+          "after": "614-645-0699"
+        }
+      }
+    },
+    {
+      "organization_id": "org-36f49023be41",
+      "name": "Finished Goods",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.finishedgoods.com/",
+        "https://www.finishedgoods.com/contact",
+        "https://www.finishedgoods.com/cannabis-packaging"
+      ],
+      "finding": "Licensed brands seeking custom vape hardware and cannabis packaging. Published inquiry route: https://www.finishedgoods.com/contact",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Phone": {
+          "before": "(818) 233-0059",
+          "after": "818-233-0059"
+        }
+      }
+    },
+    {
+      "organization_id": "org-8cfae8fa9c89",
+      "name": "Hefestus USA Inc.",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.hefestus-tech.com",
+        "https://www.hefestus-tech.com/category/cannabis-automation/"
+      ],
+      "finding": "Food and cannabis producers seeking production and packaging automation. Published inquiry route: https://www.hefestus-tech.com",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Phone": {
+          "before": "916-824-5489",
+          "after": "702-881-1970"
+        }
+      }
+    },
+    {
+      "organization_id": "org-e0d93f21d61b",
+      "name": "Label Aid, Inc.",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.labelaidinc.com/",
+        "https://www.labelaidinc.com/company/information/contact-us",
+        "https://www.labelaidinc.com/markets/cannabis-hemp"
+      ],
+      "finding": "Cannabis and hemp brands needing custom labels for jars, boxes and pre-rolls. Published inquiry route: https://www.labelaidinc.com/company/information/contact-us",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {}
+    },
+    {
+      "organization_id": "org-d9b1b2d2d217",
+      "name": "Package My Bud",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.packagemybud.com"
+      ],
+      "finding": "Businesses seeking custom packaging, prototypes and design assistance. Published inquiry route: https://www.packagemybud.com",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {}
+    },
+    {
+      "organization_id": "org-e7e43adc3511",
+      "name": "PackTrack",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://packtrack.net/"
+      ],
+      "finding": "Cannabis manufacturers managing packaging purchasing, production and inventory. Published inquiry route: https://packtrack.net/",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {}
+    },
+    {
+      "organization_id": "org-b3d069b72662",
+      "name": "PreRoll-Er",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://preroll-er.com",
+        "https://preroll-er.com/contact-us",
+        "https://preroll-er.com/cannabis-labeling-equipment"
+      ],
+      "finding": "Cannabis producers seeking pre-roll, packaging or labeling automation. Published inquiry route: https://preroll-er.com/contact-us",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Email": {
+          "before": "",
+          "after": "info@preroll-er.com"
+        },
+        "Phone": {
+          "before": "",
+          "after": "855-817-5696"
+        }
+      }
+    },
+    {
+      "organization_id": "org-ae47f740e012",
+      "name": "Royal Blunts",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://royalblunts.com/",
+        "https://royalblunts.com/contact/"
+      ],
+      "finding": "Customers and wholesale buyers seeking wraps, cones and product support. Published inquiry route: https://royalblunts.com/contact/",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {}
+    },
+    {
+      "organization_id": "org-7063acd850da",
+      "name": "Vert Packaging",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.vertpack.com/",
+        "https://www.vertpack.com/pages/contact",
+        "https://www.vertpack.com/pages/cannabis-products"
+      ],
+      "finding": "Cannabis and CBD brands seeking pouches, labels, boxes and containers. Published inquiry route: https://www.vertpack.com/pages/contact",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {}
+    },
+    {
+      "organization_id": "org-517bb8b79eb5",
+      "name": "ABS Money Systems",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://absmoney.com",
+        "https://absmoney.com/contact/",
+        "https://absmoney.com/cannabis-solutions/"
+      ],
+      "finding": "Dispensaries and other businesses needing cash counters, recyclers and ATMs. Published inquiry route: https://absmoney.com/contact/",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Phone": {
+          "before": "",
+          "after": "800-227-5700"
+        }
+      }
+    },
+    {
+      "organization_id": "org-7a67d8f3a6f9",
+      "name": "Koorsen Fire & Security",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.koorsen.com",
+        "https://www.koorsen.com/contact-us/"
+      ],
+      "finding": "Businesses needing fire protection and security systems. Published inquiry route: https://www.koorsen.com/contact-us/",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Email": {
+          "before": "",
+          "after": "info@koorsen.com"
+        },
+        "Phone": {
+          "before": "",
+          "after": "866-311-7753"
+        }
+      }
+    },
+    {
+      "organization_id": "org-bb22c8902ddd",
+      "name": "Security 101 — Columbus",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.security101.com/columbus",
+        "https://www.security101.com/contact-us"
+      ],
+      "finding": "Commercial organizations seeking integrated security systems and local service. Published inquiry route: https://www.security101.com/contact-us",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {}
+    },
+    {
+      "organization_id": "org-098f74cadecb",
+      "name": "OROleafhr",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://oroleafhr.com/",
+        "https://oroleafhr.com/contact-us/"
+      ],
+      "finding": "Cannabis employers needing HR, payroll and employee-benefit support. Published inquiry route: https://oroleafhr.com/contact-us/",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Phone": {
+          "before": "480-690-5655 | 833-676-5323",
+          "after": "833-676-5323"
+        }
+      }
+    },
+    {
+      "organization_id": "org-7354c5fa79e6",
+      "name": "GreenTank",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.greentanktech.com/",
+        "https://www.greentanktech.com/contact-us/",
+        "https://www.greentanktech.com/tag/cannabis-brands/"
+      ],
+      "finding": "Cannabis brands seeking vape hardware and related technical or logistics inquiries. Published inquiry route: https://www.greentanktech.com/contact-us/",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Email": {
+          "before": "",
+          "after": "info@greentanktech.com"
+        },
+        "Phone": {
+          "before": "",
+          "after": "800-935-1399"
+        }
+      }
+    },
+    {
+      "organization_id": "org-dd29cf4b93ea",
+      "name": "GrowerIQ",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://groweriq.com",
+        "https://groweriq.com/contact/",
+        "https://groweriq.com/cannabis-consulting/"
+      ],
+      "finding": "Cultivators and manufacturers seeking production software, quality management and consulting. Published inquiry route: https://groweriq.com/contact/",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Phone": {
+          "before": "",
+          "after": "855-892-7500"
+        }
+      }
+    },
+    {
+      "organization_id": "org-22363ee3ca56",
+      "name": "Happy Cabbage",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.happycabbage.io",
+        "https://www.happycabbage.io/contact",
+        "https://www.happycabbage.io/post/accurate-cannabis-ai-ordering-menu-planning"
+      ],
+      "finding": "Cannabis retail dispensaries seeking inventory and purchasing tools. Published inquiry route: https://www.happycabbage.io/contact",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Email": {
+          "before": "",
+          "after": "success@happycabbage.io"
+        }
+      }
+    },
+    {
+      "organization_id": "org-ff5c505e8d2b",
+      "name": "Hytiva Technologies",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.hytiva.com/business-services",
+        "https://www.hytiva.com/about/contact"
+      ],
+      "finding": "Single-store dispensaries and multistate operators seeking point-of-sale and business technology. Published inquiry route: https://www.hytiva.com/about/contact",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {}
+    },
+    {
+      "organization_id": "org-9aaf751c8541",
+      "name": "Outlaw Technology",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://outlawtechnology.net",
+        "https://outlawtechnology.net/cannabis-harvesting-system/"
+      ],
+      "finding": "Cannabis businesses seeking RFID, barcode and inventory workflows. Published inquiry route: https://outlawtechnology.net",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Email": {
+          "before": "",
+          "after": "info@outlawtechnology.net"
+        },
+        "Phone": {
+          "before": "",
+          "after": "410-777-9534"
+        }
+      }
+    },
+    {
+      "organization_id": "org-dc474ca20d13",
+      "name": "Quality Extractions Group",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://qualityextractions.com",
+        "https://qualityextractions.com/contact-us/"
+      ],
+      "finding": "Extractors and businesses seeking extraction solvents, filtration media and custom solutions. Published inquiry route: https://qualityextractions.com/contact-us/",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Email": {
+          "before": "",
+          "after": "info@qualityextractions.com"
+        },
+        "Phone": {
+          "before": "",
+          "after": "567-698-9802"
+        }
+      }
+    },
+    {
+      "organization_id": "org-5685e7174422",
+      "name": "RX Green Technologies",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.rxgreentechnologies.com",
+        "https://www.rxgreentechnologies.com/contact-us/"
+      ],
+      "finding": "Commercial cannabis cultivators seeking substrates, nutrients and cultivation supplies. Published inquiry route: https://www.rxgreentechnologies.com/contact-us/",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Email": {
+          "before": "",
+          "after": "info@rxgreentechnologies.com | orders@rxgreentechnologies.com"
+        },
+        "Phone": {
+          "before": "",
+          "after": "603-769-3450"
+        }
+      }
+    },
+    {
+      "organization_id": "org-a7e9b3f90d8b",
+      "name": "StashStock",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.stashstock.com/",
+        "https://www.stashstock.com/contact"
+      ],
+      "finding": "Cannabis facilities seeking METRC-integrated cultivation, harvest, sales and labeling software. Published inquiry route: https://www.stashstock.com/contact",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Phone": {
+          "before": "(248) 238-8271",
+          "after": "248-238-8271"
+        }
+      }
+    },
+    {
+      "organization_id": "org-f3c5879951d3",
+      "name": "Vecmar",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.vecmar.com/",
+        "https://www.vecmar.com/submissions/contact_us.asp?mode=NewWS&type=1"
+      ],
+      "finding": "Businesses needing scanners, specialized hardware, maintenance and repair. Published inquiry route: https://www.vecmar.com/submissions/contact_us.asp?mode=NewWS&type=1",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {}
+    },
+    {
+      "organization_id": "org-326247e5b9d0",
+      "name": "CP Labs Ohio Operating Company, LLC",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://cplabsoh.wordpress.com/2024/04/17/cannabinoids/"
+      ],
+      "finding": "Cannabis businesses seeking testing information and laboratory inquiries. Published inquiry route: https://cplabsoh.wordpress.com/2024/04/17/cannabinoids/",
+      "limitations": "Contact emails remain published in the lab’s April 2024 article, retrieved October 13, 2026. This is a review of historical contact evidence, not a current license or operating-status check. The previously listed phone and statewide capability claims were not refreshed.",
+      "field_changes": {}
+    },
+    {
+      "organization_id": "org-d97a25fb6f85",
+      "name": "! Libertarian Party of Ohio",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://lpo.org/",
+        "https://lpo.org/contact/",
+        "https://lpo.org/2025/12/10/legal-cannabis-red-tape/"
+      ],
+      "finding": "People seeking the party’s public contact and volunteer information. Published inquiry route: https://lpo.org/contact/",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Email": {
+          "before": "",
+          "after": "info@lpo.org"
+        }
+      }
+    },
+    {
+      "organization_id": "org-105e0713e773",
+      "name": "Mood Leaf",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "2026-10-06",
+      "sources": [
+        "https://www.moodleaf.com/",
+        "https://www.moodleaf.com/contact"
+      ],
+      "finding": "Businesses seeking the brand’s wholesale or sales contacts. Published inquiry route: https://www.moodleaf.com/contact",
+      "limitations": "Wholesale and sales emails are published on the existing brand domain; no delivery test. Footer address and 614-555-0123 are apparent template content and were excluded. Legal/licensing entity remains an open issue. Earlier Nicole email failed delivery and is not used as a public contact.",
+      "field_changes": {
+        "Email": {
+          "before": "",
+          "after": "Wholesale@MoodLeaf.com | Dakota@moodleaf.com"
+        },
+        "Website": {
+          "before": "https://moodleaf.com",
+          "after": "https://www.moodleaf.com/contact"
+        }
+      }
+    },
+    {
+      "organization_id": "org-fb49bcaddd77",
+      "name": "Courier Pro Logistics",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "2026-10-06",
+      "sources": [
+        "https://www.courierprologistics.com/"
+      ],
+      "finding": "Ohio businesses seeking controlled-industry and cannabis logistics inquiries. Published inquiry route: https://www.courierprologistics.com/",
+      "limitations": "Provider publishes the phone and advertises Ohio cannabis/controlled-industry logistics. Legal entity, transport authorization and operational compliance were not independently verified; open issue retained.",
+      "field_changes": {
+        "Phone": {
+          "before": "",
+          "after": "419-366-3218"
+        },
+        "Website": {
+          "before": "https://courierprologistics.com",
+          "after": "https://www.courierprologistics.com/"
+        }
+      }
+    },
+    {
+      "organization_id": "org-0feff903c70c",
+      "name": "Horticulture Lighting Group",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://horticulturelightinggroup.com/pages/contact-page"
+      ],
+      "finding": "Growers, commercial cultivation businesses and hydroponic retailers seeking lighting support. Published inquiry route: https://horticulturelightinggroup.com/pages/contact-page",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Website": {
+          "before": "https://horticulturelightinggroup.com/",
+          "after": "https://horticulturelightinggroup.com/pages/contact-page"
+        }
+      }
+    },
+    {
+      "organization_id": "org-b10fae35df91",
+      "name": "PreRoll Distro",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://prerolldistro.com/contact/"
+      ],
+      "finding": "Brands seeking custom products, bulk inquiries and order support. Published inquiry route: https://prerolldistro.com/contact/",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Website": {
+          "before": "https://prerolldistro.com",
+          "after": "https://prerolldistro.com/contact/"
+        }
+      }
+    },
+    {
+      "organization_id": "org-6c62f0f9c74b",
+      "name": "CashColorCannabis",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://cashcolorcannabis.com/contact/"
+      ],
+      "finding": "People and businesses seeking media, interview or advertising inquiries. Published inquiry route: https://cashcolorcannabis.com/contact/",
+      "limitations": "Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+      "field_changes": {
+        "Website": {
+          "before": "https://cashcolorcannabis.com/",
+          "after": "https://cashcolorcannabis.com/contact/"
+        }
+      }
+    },
+    {
+      "organization_id": "org-a32d429b1d8a",
+      "name": "Ohio Cannabis Live",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.ohiocannabislive.com/patients"
+      ],
+      "finding": "Ohio patients and community members seeking cannabis education, news and support resources. Public contact: info@ohiocannabislive.com; 614-622-7859",
+      "limitations": "First-party public contact and described services reviewed. No email delivery or response test; current client capacity, fees, eligibility and licensing were not verified.",
+      "field_changes": {
+        "Phone": {
+          "before": "614-622-7859 | 614-817-5805",
+          "after": "614-622-7859"
+        },
+        "Website": {
+          "before": "https://www.ohiocannabislive.com/",
+          "after": "https://www.ohiocannabislive.com/patients"
+        }
+      }
+    },
+    {
+      "organization_id": "org-604ede518b05",
+      "name": "Elite Preparedness Asset Protection",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.elitepreparedness.com/copy-of-american-patriot-organizati"
+      ],
+      "finding": "Organizations, individuals and families seeking executive protection, event security or threat assessments. Public contact: brian@elitepreparedness.com; 740-263-1234",
+      "limitations": "First-party public contact and described services reviewed. No email delivery or response test; current client capacity, fees, eligibility and licensing were not verified.",
+      "field_changes": {
+        "Email": {
+          "before": "elitepreparedness@gmail.com",
+          "after": "brian@elitepreparedness.com"
+        },
+        "Website": {
+          "before": "https://www.elitepreparedness.com/about-us",
+          "after": "https://www.elitepreparedness.com/copy-of-american-patriot-organizati"
+        }
+      }
+    }
+  ],
+  "blocked": [
+    {
+      "organization_id": "org-7e1ab15e4a71",
+      "name": "Ohio Clean Leaf",
+      "attempted_on": "2026-10-13",
+      "sources": [
+        "https://ohiocleanleaf.com/"
+      ],
+      "result": "Craft-cannabis landing page lacks a current contact route; present license and historical phone remain unverified.",
+      "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
+    },
+    {
+      "organization_id": "org-20250325b35f",
+      "name": "Mojo's Smoke Shop (formerly The Hemp House / Wholesale Hemp LLC)",
+      "attempted_on": "2026-10-13",
+      "sources": [
+        "https://mojossmokeshop.com/"
+      ],
+      "result": "Domain shows a launching-soon page; current storefront operation and the historical phone/email were not corroborated.",
+      "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
+    },
+    {
+      "organization_id": "org-4272e7927699",
+      "name": "Nexus Agriscience",
+      "attempted_on": "2026-10-13",
+      "sources": [
+        "https://nexusagriscience.com"
+      ],
+      "result": "Hemp molecular-farming identity is published, but no usable direct public contact was established in this retrieval.",
+      "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
+    },
+    {
+      "organization_id": "org-0557619757dc",
+      "name": "Porcupine Defense Solutions",
+      "attempted_on": "2026-10-13",
+      "sources": [],
+      "result": "No readable company-controlled contact source established in this pass. No website on record.",
+      "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
+    },
+    {
+      "organization_id": "org-9ee4b284a472",
+      "name": "Farkas Farms",
+      "attempted_on": "2026-10-13",
+      "sources": [],
+      "result": "No readable company-controlled contact source established in this pass. No website on record.",
+      "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
+    },
+    {
+      "organization_id": "org-3af4221fa5d1",
+      "name": "SIPE Promotional Products",
+      "attempted_on": "2026-10-13",
+      "sources": [],
+      "result": "No readable company-controlled contact source established in this pass. No website on record.",
+      "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
+    },
+    {
+      "organization_id": "org-baee0f174df2",
+      "name": "Precise TB Solutions",
+      "attempted_on": "2026-10-13",
+      "sources": [],
+      "result": "No readable company-controlled contact source established in this pass. No website on record.",
+      "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
+    },
+    {
+      "organization_id": "org-d124f071dca0",
+      "name": "Ohio Women’s Cannabis Chamber of Commerce",
+      "attempted_on": "2026-10-13",
+      "sources": [
+        "https://www.OhioWomensCannaChamber.org"
+      ],
+      "result": "No readable company-controlled contact source established in this pass. HTTP Error 502: Bad Gateway",
+      "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
+    }
+  ]
+}
