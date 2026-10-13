@@ -4,13 +4,13 @@ A source-verified map of who serves what in Ohio cannabis: operators, service pr
 
 **Live searchable directory:** https://travisvought-byte.github.io/ohio-cannabis-directory/
 
-The current dataset contains **564 organizations**, including **516 publishable organizations across 16 categories** and 48 deliberately retained out-of-scope records. Those retained records keep renamed, acquired, superseded, or otherwise relevant organizations findable. The repository also includes 60 documented business-to-business relationships.
+The current dataset contains **564 organizations**, including **515 publishable organizations across 16 categories**, 48 deliberately retained out-of-scope records, and one withdrawn public listing. Those retained records keep renamed, acquired, superseded, or otherwise relevant organizations findable. The repository also includes 60 documented business-to-business relationships.
 
-**Current site release:** 4.32 · October 13, 2026.
+**Current site release:** 4.33 · October 13, 2026.
 
 Searches and filters persist in shareable URLs. Every organization has a permanent record link. [Who works with whom?](https://travisvought-byte.github.io/ohio-cannabis-directory/relationships.html) makes all 60 documented relationships searchable, with organization links and source evidence.
 
-**Directory-first navigation:** the root URL takes visitors directly to the searchable Ohio industry directory. Its search covers organizations, named contacts, services and locations; filters, permanent record URLs, and the full source-linked directory remain available. Upcoming events appear prominently beneath the directory search, with the Women’s Cannabis & Wellness Expo featured first and expired events removed automatically. Consumer resources and educational tools remain available through shared navigation.
+**Directory-first navigation:** the root URL takes visitors directly to the searchable Ohio industry directory. Its search covers organizations, named contacts, services and locations; filters, permanent record URLs, and the full source-linked directory remain available. Upcoming events appear prominently beneath the directory search, with the Women’s Cannabis & Wellness Expo featured first and expired events removed automatically. Eight business-help shortcuts offer banking, accounting, legal/licensing, testing, packaging, staffing, insurance and security routes. Reviewed provider cards show whom they serve and what coverage still needs confirmation. Consumer resources and educational tools remain available through shared navigation.
 
 The site uses an Ohio State scarlet-and-gray color palette with accessible contrast and no university logos or marks.
 
@@ -22,7 +22,7 @@ The election-season Libertarian Party of Ohio entry is a clearly labeled persona
 
 ## What this is
 
-The public organization view retains one row per original organization. Its canonical source is now `data/directory.json`, separating organizations, service routes, evidence, relationships, rules and state configuration. Compatibility CSVs preserve the original fields, IDs and provenance.
+The canonical dataset retains every original organization ID. Owner-confirmed withdrawals are excluded from public listing views, intake indexes and compatibility CSVs; the original record remains in repository history. Its canonical source is now `data/directory.json`, separating organizations, service routes, evidence, relationships, rules and state configuration. Compatibility CSVs preserve the original fields, IDs and provenance.
 
 If you need mold remediation, cash logistics, packaging, MRB banking, staffing, compliance support, or another specific service, search the capability rather than guessing the category.
 
@@ -31,10 +31,10 @@ If you need mold remediation, cash logistics, packaging, MRB banking, staffing, 
 | File | Contents |
 | --- | --- |
 | `index.html` | Directory-first entry point that forwards visitors to `directory.html` while preserving query parameters and record links. |
-| `intake.html` | Field/offline intake page for capturing and exporting candidate organizations; duplicate checks use all 564 current records. |
+| `intake.html` | Field/offline intake page for capturing and exporting candidate organizations; duplicate checks use the 563 non-withdrawn records. |
 | `relationships.html` | Searchable relationships, organization links and supporting evidence. |
 | `release.json` | Shared version and publication date; changing this does not imply re-verifying every record. |
-| `ohio-cannabis-directory.csv` | All 564 directory rows with contact, provenance, notes, verification, capability, permanent Record ID and Last Reviewed fields. |
+| `ohio-cannabis-directory.csv` | 563 non-withdrawn directory rows with contact, provenance, notes, verification, capability, permanent Record ID and Last Reviewed fields. |
 | `b2b-relationships.csv` | 60 documented organization-to-organization relationships with supporting evidence. |
 | `build_directory.py` | Regenerates the searchable `directory.html` from the repository data. |
 | `build_intake.py` | Regenerates the field intake page. |
@@ -49,7 +49,7 @@ The public site works without an external directory API. The primary industry di
 
 ## Evidence-review priorities
 
-Review work is prioritized ahead of catalog expansion. The [review queue](architecture/REVIEW_QUEUE.md) ranks named open issues, undated Ohio operators/labs/community resources, missing websites, and remaining business providers. The October 12 batch reviewed 10 previously undated listings. The October 13 contact batch added four missing website routes and dated two more previously undated listings, leaving 44 public listings without a recorded review date and four without a website. Missing websites now enter P1 independently of an existing review date. Field-level sources, changes and unresolved limits are preserved in `data/reviews/`; a review date does not imply that every contact, license, inventory or shipping claim was reverified. Blocked retrievals remain in the queue without a new review date. Regenerate with `python build_review_queue.py`.
+Review work is prioritized ahead of catalog expansion. The [review queue](architecture/REVIEW_QUEUE.md) ranks named open issues, undated Ohio operators/labs/community resources, missing websites, and remaining business providers. The October 12 batch reviewed 10 previously undated listings. The October 13 contact batch added four missing website routes and dated two more previously undated listings, A further 42 scoped contact/service reviews established dates for 40 previously undated listings, leaving four public listings without a recorded review date and four without a website. Eight attempted reviews remain blocked or incomplete; blocked attempts receive no fresh date. Missing websites now enter P1 independently of an existing review date. Field-level sources, changes and unresolved limits are preserved in `data/reviews/`; a review date does not imply that every contact, license, inventory or shipping claim was reverified. Blocked retrievals remain in the queue without a new review date. Regenerate with `python build_review_queue.py`.
 
 ## How entries are verified
 
@@ -64,6 +64,8 @@ The headline count is a count of publishable rows, not a claim that every retain
 ## Corrections and additions
 
 Email listing additions, corrections or relationship updates to [VeteranHomeGuardians@gmail.com](mailto:VeteranHomeGuardians@gmail.com). Include the organization name or listing link, the requested change and a website or source. For several updates, attach the exported intake CSV.
+
+Submit Ohio events using the directory’s event email link or the event issue form. Dates, venues and organizer links are reviewed before publication; see [event maintenance](architecture/EVENT_MAINTENANCE.md).
 
 You can also use the repository's [GitHub issue forms](https://github.com/travisvought-byte/ohio-cannabis-directory/issues/new/choose).
 
@@ -123,7 +125,7 @@ The [shared directory contract](architecture/STATE_DIRECTORY_CONTRACT.md) define
 
 ### Location search
 
-[Find dispensary locations](https://travisvought-byte.github.io/ohio-cannabis-directory/locations.html?state=OH) supports city, county, address/ZIP search, shareable filters, directions and optional straight-line distance sorting. The 230 records are a government map snapshot retrieved 2026-10-10, not a claim of complete or currently operational coverage. Source update date is unknown; license status remains unknown. Cards now expose 228 government-snapshot phones, explicitly labeled when not freshly reviewed. Twenty stores have first-party-reviewed phones, store websites and brand links to the business directory, checked October 13, 2026. The Garfield Heights Terrasana address is corrected to the operator-published 9601 Vista Way. Three invalid source coordinate pairs and the superseded Garfield Heights coordinate pair are omitted from distance sorting.
+[Find dispensary locations](https://travisvought-byte.github.io/ohio-cannabis-directory/locations.html?state=OH) supports city, county, address/ZIP search, shareable filters, directions and optional straight-line distance sorting. The 230 records are a government map snapshot retrieved 2026-10-10, not a claim of complete or currently operational coverage. Source update date is unknown; license status remains unknown. Cards now expose 228 government-snapshot phones, explicitly labeled when not freshly reviewed. Fifteen stores also have operator-published menu links, with medical and adult-use routes distinguished where supplied. Prices and stock remain on the operator’s site. Twenty stores have first-party-reviewed phones, store websites and brand links to the business directory, checked October 13, 2026. The Garfield Heights Terrasana address is corrected to the operator-published 9601 Vista Way. Three invalid source coordinate pairs and the superseded Garfield Heights coordinate pair are omitted from distance sorting.
 
 `data/sources/ohio-dispensaries.json` preserves the original response. Run `python import_locations.py`, `python validate_foundation.py data/directory.json`, then `python build_locations.py` after reviewing a replacement snapshot. Stable location IDs derive from state and license number; legal entities match only by exact unique name. No store hours or inventory claims are imported. `data/sources/location-contacts.json` preserves reviewed store contacts separately; importing a replacement map rejects changed address/city matches until the contact overlay is re-reviewed. The original map legal entity remains separate from the public brand link.
 

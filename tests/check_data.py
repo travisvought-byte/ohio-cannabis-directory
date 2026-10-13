@@ -10,12 +10,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from directory_data import RELEASE, RELEASE_DATE, load_records, relationship_id
+from directory_data import RELEASE, RELEASE_DATE, load_records, relationship_id, load_directory
 from validate_legislators import validate as validate_legislators
 validate_legislators()
 rows = load_records()
 assert len(rows) == 564
-assert sum(not r['Category'].startswith('Out of scope') for r in rows) == 516
+assert sum(not r['Category'].startswith('Out of scope') for r in load_records(include_withdrawn=False)) == 515
 assert len({r['Record ID'] for r in rows}) == len(rows)
 assert all(re.fullmatch(r'org-[0-9a-f]{12}', r['Record ID']) for r in rows)
 assert all(r['Source(s)'] and r['Capabilities / Keywords'] for r in rows)
@@ -70,3 +70,10 @@ assert f'release v{RELEASE["version"]}' in (ROOT / 'index.html').read_text()
 assert f'Current site release:** {RELEASE["version"]}' in (ROOT / 'README.md').read_text()
 assert 'relationships.html' in (ROOT / 'sitemap.xml').read_text()
 print('PASS: record counts, IDs, review-date evidence, verification tiers, relationship coverage, generated pages and release metadata.')
+
+withdrawn={o["id"] for o in load_directory()["organizations"] if o.get("scope")=="withdrawn"}
+assert withdrawn=={"org-ab854d60bdb3"}
+assert not any(r["Record ID"] in withdrawn for r in load_records(include_withdrawn=False))
+assert "PreventionFIRST!" not in (ROOT/"directory.html").read_text()
+assert "PreventionFIRST!" not in (ROOT/"data/public-organizations.json").read_text()
+assert "PreventionFIRST!" not in (ROOT/"data/public-state.json").read_text()

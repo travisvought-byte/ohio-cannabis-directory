@@ -11,7 +11,7 @@ import datetime
 import calendar
 from pathlib import Path
 import pandas as pd
-from directory_data import RELEASE, RELEASE_DATE, script_json, load_records, load_event_routes
+from directory_data import RELEASE, RELEASE_DATE, script_json, load_records, load_event_routes, load_directory
 from directory_brand import brand_page
 from public_data import externalize
 
@@ -50,12 +50,15 @@ def clean(v):
 
 
 def main():
-    df = pd.DataFrame(load_records()).dropna(how="all")
+    data = load_directory()
+    details = {s['organization_id']: s['attributes'].get('provider_details') for s in data['services'] if s.get('origin') == 'organization-profile'}
+    df = pd.DataFrame(load_records(include_withdrawn=False)).dropna(how="all")
 
     records = []
     for _, row in df.iterrows():
         rec = {short: clean(row.get(col)) for col, short in COLS.items()}
         rec["scope"] = 0 if rec["cat"] == OUT_OF_SCOPE else 1
+        rec["provider"] = details.get(rec["id"])
         # precomputed lowercase haystack keeps filtering fast on phones
         rec["_s"] = " ".join([
             rec["org"], rec["cat"], rec["keys"], rec["area"],
@@ -94,6 +97,7 @@ def main():
                 f'<p><time datetime="{event["date"]}">{html.escape(date_label)}</time></p>'
                 f'<p class="event-place">{html.escape(event["place"])}</p>'
                 f'<p><a href="{html.escape(event["url"], quote=True)}" target="_blank" rel="noopener">Event details</a></p>'
+                + (f'<p><a href="{html.escape(event["registration_url"], quote=True)}" target="_blank" rel="noopener">Register / RSVP</a> · Checked {html.escape(event["reviewed_on"])}</p>' if event.get("registration_url") else "") +
                 '</li>'
             )
     else:
@@ -144,6 +148,12 @@ def main():
     page = page.replace("__UPCOMING_EVENTS__", script_json(UPCOMING_EVENTS))
     page = page.replace("__HOME_EVENT_MARKUP__", home_event_markup)
     page = page.replace("__CAT_OPTS__", cat_opts)
+    help_routes = [('Banking & Financial Services', 'Banking'), ('Accounting & Tax', 'Accounting & tax'), ('Legal & Licensing', 'Legal & licensing'), ('Testing Labs', 'Testing labs'), ('Packaging & Labeling', 'Packaging & labels'), ('Staffing & HR', 'Staffing & HR'), ('Insurance', 'Insurance'), ('Security & Cash Logistics', 'Security & cash logistics')]
+    from urllib.parse import urlencode, quote
+    page = page.replace('__HELP_ROUTES__', ''.join(f'<a class="btn help-route" href="directory.html?{html.escape(urlencode({"category": category}), quote=True)}" data-help="{html.escape(category, quote=True)}">{html.escape(label)}</a>' for category, label in help_routes))
+    event_subject = quote('Ohio cannabis event submission')
+    event_body = quote('Event name:\nDate and time:\nVenue, city and county:\nOrganizer and public contact:\nOfficial event or registration link:\nAudience and age requirements:\nCost, if any:\n')
+    page = page.replace('__EVENT_SUBMISSION__', f'mailto:veteranhomeguardians@gmail.com?subject={event_subject}&amp;body={event_body}')
     page = page.replace("__TYPE_OPTS__", type_opts)
     page = page.replace("__AREA_OPTS__", "".join('<option>'+html.escape(a)+'</option>' for a in ["Ohio statewide","Ohio regional","Nationwide incl. Ohio","Multistate, Ohio unconfirmed","Outside Ohio"]))
     page = page.replace("__N_PUB__", str(n_pub))
@@ -323,6 +333,8 @@ __VHG_CSS__
   .contact a{color:var(--field-deep); text-decoration:none; border-bottom:1px solid rgba(186,12,47,.35)}
   .contact a:hover{border-bottom-color:var(--field-deep)}
   .contact span{color:#868E92}
+  .business-help{margin:1rem 0}.business-help h2{font-size:1rem;margin:0 0 .5rem}.help-links{display:flex;flex-wrap:wrap;gap:.45rem}.help-route{min-height:44px;display:inline-flex;align-items:center}.help-route[aria-current="true"]{background:var(--field);color:white;border-color:var(--field)}
+  .provider-details{margin:.55rem 0;padding:.6rem .75rem;background:var(--paper-deep);font-size:.84rem}.provider-details p{margin:.15rem 0}.provider-details a{color:var(--field-deep)}
 
   details{margin-top:.55rem}
   summary{
@@ -401,6 +413,9 @@ __VHG_CSS__
     </div>
 
     <section class="upcoming-events" id="upcoming-card" aria-label="Upcoming Ohio cannabis events">__HOME_EVENT_MARKUP__</section>
+    <p class="event-submit"><a href="__EVENT_SUBMISSION__">Submit an Ohio cannabis event</a> · Include an official event link and organizer contact.</p>
+
+    <section class="business-help" aria-labelledby="business-help-title"><h2 id="business-help-title">Find business help</h2><nav class="help-links" aria-label="Business help">__HELP_ROUTES__</nav></section>
 
     <div class="controls">
       <select id="cat" aria-label="Filter by category">
@@ -415,7 +430,7 @@ __VHG_CSS__
       <p class="tally" id="tally" role="status" aria-live="polite"></p>
     </div>
 
-    <div class="lanes" id="lanes"></div>
+    <details><summary>Browse all industry categories</summary><div class="lanes" id="lanes"></div></details>
 
     <div class="actions">
       <button class="btn" id="share">Copy search link</button><span id="share-status" role="status" aria-live="polite"></span>
@@ -471,7 +486,7 @@ function renderHomeHighlights(){
     return new Intl.DateTimeFormat(undefined, {weekday:"short", month:"short", day:"numeric", year:"numeric"}).format(new Date(year, month - 1, day));
   };
   panel.innerHTML = '<h2>Upcoming events <span>· next 3 months</span></h2><ol class="event-line" aria-label="Upcoming Ohio cannabis events">' + upcoming.map(event =>
-    `<li class="home-event">${event.featured?'<span class="event-featured">Featured event</span>':''}<h3>${esc(event.name)}</h3><p><time datetime="${esc(event.date)}">${esc(dateLabel(event))}</time></p><p class="event-place">${esc(event.place)}</p><p><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a></p></li>`
+    `<li class="home-event">${event.featured?'<span class="event-featured">Featured event</span>':''}<h3>${esc(event.name)}</h3><p><time datetime="${esc(event.date)}">${esc(dateLabel(event))}</time></p><p class="event-place">${esc(event.place)}</p><p><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a></p>${event.registration_url?`<p><a href="${esc(event.registration_url)}" target="_blank" rel="noopener">Register / RSVP</a> · Checked ${esc(event.reviewed_on)}</p>`:''}</li>`
   ).join('') + '</ol>';
 }
 renderHomeHighlights();
@@ -538,6 +553,7 @@ function record(r){
     <p class="line"><span class="cat">${esc(r.cat)}</span>${r.area ? ' &nbsp;/&nbsp; ' + esc(r.area) : ''}</p>
     ${r.person ? `<p class="line">${esc(r.person)}</p>` : ''}
     ${r.keys ? `<p class="keys">${esc(r.keys)}</p>` : ''}
+    ${r.provider ? `<div class="provider-details"><p><strong>Who it serves:</strong> ${esc(r.provider.serves)}</p><p><strong>Service area:</strong> ${esc(r.provider.coverage_note)}</p><p>${esc(r.provider.contact_note)}</p><p><a href="${esc(r.provider.source_url)}" target="_blank" rel="noopener">Contact provider</a> · Details checked ${esc(r.provider.reviewed_on)}</p></div>` : ''}
     ${r.tier !== 'Source-verified' ? `<p class="flagged">${esc(r.tier)}</p>` : ''}
     <p class="contact">${bits.join('')}</p>
     <p class="line"><a href="?org=${encodeURIComponent(r.id)}">Link to this organization</a> · <a href="relationships.html?q=${encodeURIComponent(displayOrg)}">Relationships</a>${r.reviewed?' · Checked '+new Intl.DateTimeFormat('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'}).format(new Date(r.reviewed+'T00:00:00Z')):''}</p>
@@ -586,9 +602,11 @@ lanes.addEventListener('click', e => {
 });
 
 function syncLanes(){
+  document.querySelectorAll('[data-help]').forEach(a=>a.setAttribute('aria-current',String(a.dataset.help===catEl.value)));
   lanes.querySelectorAll('.lane').forEach(b =>
     b.setAttribute('aria-pressed', String(b.dataset.cat === catEl.value)));
 }
+document.querySelector('.help-links').addEventListener('click',e=>{const a=e.target.closest('[data-help]');if(!a || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey)return;e.preventDefault();qEl.value='';typeEl.value='';$('area').value='';showScope=false;clearRecord();catEl.value=a.dataset.help;syncLanes();render();$('results').scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});
 
 qEl.addEventListener('input',()=>{clearRecord();render()});
 catEl.addEventListener('change', () => {clearRecord();syncLanes();render();});

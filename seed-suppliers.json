@@ -86,11 +86,17 @@
     "shipping": "Physical shop verified; Ohio shipping not verified. A store listing does not establish interstate transport permission.",
     "sources": [
       "https://seedcellar.com/",
-      "https://seedcellar.com/contact/"
+      "https://seedcellar.com/contact/",
+      "https://seedcellar.com/shipping-returns/"
     ],
     "phone": "5178792801",
     "email": "info@seedcellar.com",
-    "reviewed": "2026-10-09"
+    "reviewed": "2026-10-09",
+    "customer_info": {
+      "policy_url": "https://seedcellar.com/shipping-returns/",
+      "policy_summary": "Seller states U.S.-only USPS shipping, $10 shipping with a stated free-shipping threshold, and final sales. Michigan shop contact is available; Ohio order eligibility requires confirmation.",
+      "reviewed_on": "2026-10-13"
+    }
   },
   {
     "name": "Great Lakes Genetics",
@@ -107,11 +113,17 @@
     "sources": [
       "https://www.greatlakesgenetics.com/shipping-info/",
       "https://www.greatlakesgenetics.com/feminized/",
-      "https://www.greatlakesgenetics.com/product-category/regular-seeds/"
+      "https://www.greatlakesgenetics.com/product-category/regular-seeds/",
+      "https://www.greatlakesgenetics.com/contact/"
     ],
     "phone": "",
-    "email": "",
-    "reviewed": "2026-10-09"
+    "email": "sales@greatlakesgenetics.com",
+    "reviewed": "2026-10-09",
+    "customer_info": {
+      "policy_url": "https://www.greatlakesgenetics.com/shipping-info/",
+      "policy_summary": "Seller states shipping to all U.S. states in tracked Priority boxes for $10; most orders ship within three business days after processing. All sales are final. Confirm current checkout terms.",
+      "reviewed_on": "2026-10-13"
+    }
   },
   {
     "name": "Multiverse Beans",
@@ -130,8 +142,13 @@
       "https://multiversebeans.com/faq/"
     ],
     "phone": "",
-    "email": "",
-    "reviewed": "2026-10-09"
+    "email": "support@multiversebeans.com",
+    "reviewed": "2026-10-09",
+    "customer_info": {
+      "policy_url": "https://multiversebeans.com/faq/",
+      "policy_summary": "Seller states USA-only shipping with USPS or UPS, accepts P.O. boxes and does not take returns. Confirm Ohio checkout eligibility and current stock with support.",
+      "reviewed_on": "2026-10-13"
+    }
   },
   {
     "name": "Humboldt Seed Company",

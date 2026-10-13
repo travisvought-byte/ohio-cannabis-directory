@@ -9,7 +9,7 @@ import re
 
 def csvrows(name):return list(csv.DictReader((ROOT/name).open(encoding='utf-8-sig')))
 data=load_directory();assert not validate(data)
-assert load_records()==csvrows('ohio-cannabis-directory.csv')
+assert load_records(include_withdrawn=False)==csvrows('ohio-cannabis-directory.csv')
 assert load_relationship_records()==csvrows('b2b-relationships.csv')
 assert load_seed_records()==json.loads((ROOT/'seed-suppliers.json').read_text())
 assert len(load_records())==564 and len(load_relationship_records())==60

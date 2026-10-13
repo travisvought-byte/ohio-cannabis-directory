@@ -39,3 +39,7 @@ from validate_foundation import validate
 bad=copy.deepcopy(data);next(l for l in bad['locations'] if l.get('contact'))['contact']['phone']='999-999-9999'
 assert any('matching location-contact evidence' in e for e in validate(bad))
 print('PASS location snapshot: stable import, 230 unique licenses, 228 snapshot phones, 20 reviewed contacts, corrected address and incomplete-feed rejection')
+
+assert sum(bool(l.get("contact",{}).get("menu_links")) for l in data["locations"])==15
+bad=copy.deepcopy(data);next(l for l in bad["locations"] if l.get("contact",{}).get("menu_links"))["contact"]["menu_links"][0]["url"]="https://example.org/wrong-store"
+assert any("matching location-menu evidence" in e for e in validate(bad))

@@ -1,3 +1,13 @@
+# v4.33 - October 13, 2026
+
+- Added eight business-help shortcuts and moved the full category shortcut list into an expandable section; shareable category filters and directory-first entry remain intact.
+- Completed 42 scoped first-party contact/service reviews, including 40 previously undated providers. Four public listings still lack a date; blocked sources remain documented without new dates. Reviewed cards now show audiences, inquiry routes and coverage limits.
+- Added 15 operator-published store menu routes, distinguishing medical and adult-use menus where the operator supplies both. Imported menus carry evidence and review dates; stock, prices and live license status remain unverified.
+- Added event submission email and issue-form routes, organizer-published registration links, dated reviews and a maintenance process; Women’s Expo remains featured first beneath search.
+- Added three dated seed-supplier shipping/return summaries and public support routes, plus stock/delivery inquiry templates and a pre-order checklist. No Ohio delivery or stock guarantee implied.
+- Withdrew PreventionFIRST! from public listings, state cards, intake and CSV exports at its request and the directory owner’s confirmation. All 564 original identities remain in canonical history: 515 public, 48 retained, one withdrawn.
+- Updated validation for provider/menu evidence and listing withdrawal. Browser checks wait for assessment file-import completion before reading its status, preventing the earlier intermittent CI failure.
+
 # v4.32 - October 13, 2026
 
 - Restored a prominent upcoming-events section directly below the main directory search, with readable dates, venues and organizer detail links.

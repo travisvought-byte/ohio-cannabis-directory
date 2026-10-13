@@ -1,0 +1,34 @@
+name: Submit or correct an Ohio event
+description: Suggest a cannabis industry, education or community event with an official source.
+title: "Event: "
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Event name
+    validations:
+      required: true
+  - type: textarea
+    id: when-where
+    attributes:
+      label: Date, time and venue
+      description: Include the Ohio city, county and any age restrictions.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official event or registration URL
+    validations:
+      required: true
+  - type: textarea
+    id: organizer
+    attributes:
+      label: Organizer and public contact
+      description: Include ticket cost, audience and a public organizer contact. Do not post private contact details.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Cancellation, change or additional context

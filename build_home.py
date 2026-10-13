@@ -53,7 +53,7 @@ nav a{min-height:44px;display:inline-flex;align-items:center}
 '''
 
 def main():
-    count = sum(not row['Category'].startswith('Out of scope') for row in load_records())
+    count = sum(not row['Category'].startswith('Out of scope') for row in load_records(include_withdrawn=False))
     OUT.write_text(TEMPLATE.replace('__VERSION__', RELEASE['version']).replace('516 publishable organizations', f'{count} publishable organizations'), encoding='utf-8')
 
 if __name__ == '__main__':

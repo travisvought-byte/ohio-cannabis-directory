@@ -15,7 +15,15 @@
       "source_url": "https://ohio.greenlightdispensary.com/locations/columbus/",
       "reviewed_on": "2026-10-13",
       "recheck_on": "2026-11-12",
-      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified.",
+      "menu_links": [
+        {
+          "label": "Store menu",
+          "url": "https://ohio.greenlightdispensary.com/columbus-menu/"
+        }
+      ],
+      "menu_source_url": "https://ohio.greenlightdispensary.com/locations/columbus/",
+      "menu_reviewed_on": "2026-10-13"
     },
     {
       "license": "CCD000267-00",
@@ -30,7 +38,15 @@
       "source_url": "https://ohio.greenlightdispensary.com/locations/ironton/",
       "reviewed_on": "2026-10-13",
       "recheck_on": "2026-11-12",
-      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified.",
+      "menu_links": [
+        {
+          "label": "Store menu",
+          "url": "https://ohio.greenlightdispensary.com/ironton-menu"
+        }
+      ],
+      "menu_source_url": "https://ohio.greenlightdispensary.com/locations/ironton/",
+      "menu_reviewed_on": "2026-10-13"
     },
     {
       "license": "CCD000075-00",
@@ -45,7 +61,15 @@
       "source_url": "https://ohio.greenlightdispensary.com/locations/marengo/",
       "reviewed_on": "2026-10-13",
       "recheck_on": "2026-11-12",
-      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified.",
+      "menu_links": [
+        {
+          "label": "Store menu",
+          "url": "https://ohio.greenlightdispensary.com/marengo-menu/"
+        }
+      ],
+      "menu_source_url": "https://ohio.greenlightdispensary.com/locations/marengo/",
+      "menu_reviewed_on": "2026-10-13"
     },
     {
       "license": "CCD000158-00",
@@ -60,7 +84,15 @@
       "source_url": "https://ohio.greenlightdispensary.com/locations/marietta/",
       "reviewed_on": "2026-10-13",
       "recheck_on": "2026-11-12",
-      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified.",
+      "menu_links": [
+        {
+          "label": "Store menu",
+          "url": "https://ohio.greenlightdispensary.com/marietta-menu"
+        }
+      ],
+      "menu_source_url": "https://ohio.greenlightdispensary.com/locations/marietta/",
+      "menu_reviewed_on": "2026-10-13"
     },
     {
       "license": "CCD000016-00",
@@ -75,7 +107,15 @@
       "source_url": "https://ohio.greenlightdispensary.com/locations/sandusky/",
       "reviewed_on": "2026-10-13",
       "recheck_on": "2026-11-12",
-      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified.",
+      "menu_links": [
+        {
+          "label": "Store menu",
+          "url": "https://ohio.greenlightdispensary.com/sandusky-menu"
+        }
+      ],
+      "menu_source_url": "https://ohio.greenlightdispensary.com/locations/sandusky/",
+      "menu_reviewed_on": "2026-10-13"
     },
     {
       "license": "CCD000209-00",
@@ -90,7 +130,15 @@
       "source_url": "https://ohio.greenlightdispensary.com/locations/south-point/",
       "reviewed_on": "2026-10-13",
       "recheck_on": "2026-11-12",
-      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified.",
+      "menu_links": [
+        {
+          "label": "Store menu",
+          "url": "https://ohio.greenlightdispensary.com/south-point-menu"
+        }
+      ],
+      "menu_source_url": "https://ohio.greenlightdispensary.com/locations/south-point/",
+      "menu_reviewed_on": "2026-10-13"
     },
     {
       "license": "CCD000110-00",
@@ -105,7 +153,15 @@
       "source_url": "https://ohio.greenlightdispensary.com/locations/wintersville/",
       "reviewed_on": "2026-10-13",
       "recheck_on": "2026-11-12",
-      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified.",
+      "menu_links": [
+        {
+          "label": "Store menu",
+          "url": "https://ohio.greenlightdispensary.com/wintersville-menu/"
+        }
+      ],
+      "menu_source_url": "https://ohio.greenlightdispensary.com/locations/wintersville/",
+      "menu_reviewed_on": "2026-10-13"
     },
     {
       "license": "CCD000053-00",
@@ -195,7 +251,19 @@
       "source_url": "https://terrasanacannabisco.com/locations/columbus-grandview/",
       "reviewed_on": "2026-10-13",
       "recheck_on": "2026-11-12",
-      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified.",
+      "menu_links": [
+        {
+          "label": "Adult-use menu",
+          "url": "https://terrasanacannabisco.com/columbus-menu/"
+        },
+        {
+          "label": "Medical menu",
+          "url": "https://terrasanacannabisco.com/columbus-medical-menu/"
+        }
+      ],
+      "menu_source_url": "https://terrasanacannabisco.com/locations/columbus-grandview/",
+      "menu_reviewed_on": "2026-10-13"
     },
     {
       "license": "CCD000242-00",
@@ -210,7 +278,19 @@
       "source_url": "https://terrasanacannabisco.com/locations/cbus-livingston/",
       "reviewed_on": "2026-10-13",
       "recheck_on": "2026-11-12",
-      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified.",
+      "menu_links": [
+        {
+          "label": "Adult-use menu",
+          "url": "https://terrasanacannabisco.com/cbus-livingston-non-medical-menu/"
+        },
+        {
+          "label": "Medical menu",
+          "url": "https://terrasanacannabisco.com/cbus-livingston-medical-menu/"
+        }
+      ],
+      "menu_source_url": "https://terrasanacannabisco.com/locations/cbus-livingston/",
+      "menu_reviewed_on": "2026-10-13"
     },
     {
       "license": "CCD000139-00",
@@ -225,7 +305,19 @@
       "source_url": "https://terrasanacannabisco.com/locations/cleveland-medical-marijuana-dispensary/",
       "reviewed_on": "2026-10-13",
       "recheck_on": "2026-11-12",
-      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified.",
+      "menu_links": [
+        {
+          "label": "Adult-use menu",
+          "url": "https://terrasanacannabisco.com/cleveland-menu/"
+        },
+        {
+          "label": "Medical menu",
+          "url": "https://terrasanacannabisco.com/cleveland-medical-menu/"
+        }
+      ],
+      "menu_source_url": "https://terrasanacannabisco.com/locations/cleveland-medical-marijuana-dispensary/",
+      "menu_reviewed_on": "2026-10-13"
     },
     {
       "license": "CCD000138-00",
@@ -240,7 +332,19 @@
       "source_url": "https://terrasanacannabisco.com/locations/fremont-medical-marijuana-dispensary/",
       "reviewed_on": "2026-10-13",
       "recheck_on": "2026-11-12",
-      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified.",
+      "menu_links": [
+        {
+          "label": "Adult-use menu",
+          "url": "https://terrasanacannabisco.com/menus/fremont-menu/"
+        },
+        {
+          "label": "Medical menu",
+          "url": "https://terrasanacannabisco.com/menus/fremont-medical-menu/"
+        }
+      ],
+      "menu_source_url": "https://terrasanacannabisco.com/locations/fremont-medical-marijuana-dispensary/",
+      "menu_reviewed_on": "2026-10-13"
     },
     {
       "license": "CCD000069-00",
@@ -255,7 +359,19 @@
       "source_url": "https://terrasanacannabisco.com/locations/springfield-medical-marijuana-dispensary/",
       "reviewed_on": "2026-10-13",
       "recheck_on": "2026-11-12",
-      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified.",
+      "menu_links": [
+        {
+          "label": "Adult-use menu",
+          "url": "https://terrasanacannabisco.com/springfield-menu/"
+        },
+        {
+          "label": "Medical menu",
+          "url": "https://terrasanacannabisco.com/springfield-medical-menu/"
+        }
+      ],
+      "menu_source_url": "https://terrasanacannabisco.com/locations/springfield-medical-marijuana-dispensary/",
+      "menu_reviewed_on": "2026-10-13"
     },
     {
       "license": "CCD000241-00",
@@ -270,7 +386,19 @@
       "source_url": "https://terrasanacannabisco.com/locations/middletown-cannabis-near-me-terrasana-ohio-dispensary/",
       "reviewed_on": "2026-10-13",
       "recheck_on": "2026-11-12",
-      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified.",
+      "menu_links": [
+        {
+          "label": "Adult-use menu",
+          "url": "https://terrasanacannabisco.com/middletown-menu/"
+        },
+        {
+          "label": "Medical menu",
+          "url": "https://terrasanacannabisco.com/middletown-medical-menu/"
+        }
+      ],
+      "menu_source_url": "https://terrasanacannabisco.com/locations/middletown-cannabis-near-me-terrasana-ohio-dispensary/",
+      "menu_reviewed_on": "2026-10-13"
     },
     {
       "license": "CCD000239-00",
@@ -285,7 +413,19 @@
       "source_url": "https://terrasanacannabisco.com/locations/parma-ohio-cannabis-dispensary/",
       "reviewed_on": "2026-10-13",
       "recheck_on": "2026-11-12",
-      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified.",
+      "menu_links": [
+        {
+          "label": "Adult-use menu",
+          "url": "https://terrasanacannabisco.com/parma-menu/"
+        },
+        {
+          "label": "Medical menu",
+          "url": "https://terrasanacannabisco.com/parma-medical-menu/"
+        }
+      ],
+      "menu_source_url": "https://terrasanacannabisco.com/locations/parma-ohio-cannabis-dispensary/",
+      "menu_reviewed_on": "2026-10-13"
     },
     {
       "license": "CCD000230-00",
@@ -300,7 +440,19 @@
       "source_url": "https://www.narreserve.com/delaware/",
       "reviewed_on": "2026-10-13",
       "recheck_on": "2026-11-12",
-      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified."
+      "limitations": "Operator page identifies the named store, address and public phone. Directory link identifies the consumer-facing brand, not a new legal-entity ownership determination. Hours, stock and live DCC license status remain unverified.",
+      "menu_links": [
+        {
+          "label": "Adult-use menu",
+          "url": "https://shopnarcannabis.com/pages/delaware-dispensary-menu"
+        },
+        {
+          "label": "Medical menu",
+          "url": "https://shopnarcannabis.com/pages/delaware-medical-menu"
+        }
+      ],
+      "menu_source_url": "https://www.narreserve.com/delaware/",
+      "menu_reviewed_on": "2026-10-13"
     }
   ]
 }

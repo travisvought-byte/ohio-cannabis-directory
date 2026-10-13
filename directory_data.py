@@ -13,8 +13,8 @@ RELEASE_DATE = date.fromisoformat(RELEASE['released_on'])
 def load_directory():
     return json.loads((ROOT / 'data/directory.json').read_text())
 
-def load_records():
-    return [r['legacy_record'] for r in load_directory()['organizations'] if 'legacy_record' in r]
+def load_records(include_withdrawn=True):
+    return [r['legacy_record'] for r in load_directory()['organizations'] if 'legacy_record' in r and (include_withdrawn or r.get('scope') != 'withdrawn')]
 
 def load_relationship_records():
     return [r['legacy_record'] for r in load_directory()['relationships']]

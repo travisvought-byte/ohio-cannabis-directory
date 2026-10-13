@@ -11,7 +11,7 @@ def build_page(data,persist=False):
  orgs={o['id']:o for o in data['organizations']};evidence={e['id']:e for e in data['evidence']};cards=[]
  for s in data['services']:
   org=orgs[s['organization_id']]
-  if org.get('scope')=='reference-only':continue
+  if org.get('scope') in ('reference-only','withdrawn'):continue
   # Seed catalog entries have a dedicated origin; avoid repeated generic referral cards.
   if s.get('origin')=='consumer-resource' and 'seeds' in s['pathway_ids']:continue
   legacy=org.get('legacy_record',{})

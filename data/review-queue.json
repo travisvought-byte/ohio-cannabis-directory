@@ -1,12 +1,12 @@
 {
   "as_of": "2026-10-13",
   "policy": "P1: open issues, undated operators/labs/community resources or missing websites. P2: remaining undated business providers. Reviews at least 90 days old also enter the backlog. Blocked retrieval is an attempt, not a verified review.",
-  "public_organizations": 516,
-  "public_without_review_date": 44,
+  "public_organizations": 515,
+  "public_without_review_date": 4,
   "public_open_issues": 6,
   "priority_counts": {
-    "P1": 11,
-    "P2": 39
+    "P1": 8,
+    "P2": 2
   },
   "queue": [
     {
@@ -73,15 +73,14 @@
       "last_attempt": {
         "organization_id": "org-7e1ab15e4a71",
         "name": "Ohio Clean Leaf",
-        "attempted_on": "2026-10-12",
+        "attempted_on": "2026-10-13",
         "sources": [
-          "https://ohiocleanleaf.com/",
-          "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses"
+          "https://ohiocleanleaf.com/"
         ],
-        "result": "Company landing page only shows craft-cannabis identity. DCC search excerpt lists CCC000020-00 but full roster could not be read (HTTP 404 through direct retrieval). No fresh license verification or review date assigned.",
-        "next_action": "Retrieve current DCC cultivator roster or license detail and verify the listed contact."
+        "result": "Craft-cannabis landing page lacks a current contact route; present license and historical phone remain unverified.",
+        "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
       },
-      "next_action": "Retrieve current DCC cultivator roster or license detail and verify the listed contact."
+      "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
     },
     {
       "organization_id": "org-3af4221fa5d1",
@@ -121,74 +120,14 @@
       "last_attempt": {
         "organization_id": "org-d124f071dca0",
         "name": "Ohio Women’s Cannabis Chamber of Commerce",
-        "attempted_on": "2026-10-12",
+        "attempted_on": "2026-10-13",
         "sources": [
           "https://www.OhioWomensCannaChamber.org"
         ],
-        "result": "Listed domain could not be retrieved; exact-name searches did not identify a reliable replacement. Existing open issue retained. Do not substitute the unrelated Ohio Women’s Chamber of Commerce.",
-        "next_action": "Confirm the exact organization and current website against original contact evidence."
+        "result": "No readable company-controlled contact source established in this pass. HTTP Error 502: Bad Gateway",
+        "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
       },
-      "next_action": "Confirm the exact organization and current website against original contact evidence."
-    },
-    {
-      "organization_id": "org-105e0713e773",
-      "name": "Mood Leaf",
-      "priority": "P1",
-      "category": "Cultivator / Processor / Dispensary",
-      "reasons": [
-        "Resolve the named open issue"
-      ],
-      "last_reviewed": "2026-10-06",
-      "website": "https://moodleaf.com",
-      "sources": "OCHBS 2026 firsthand card/flyer: IMG_645D94FD-CC76-432C-A656-F6B08904A916.jpeg; exhibitor booth 811; private intake OCHBS-2026-004; OCHBS-2026-005. Reviewed 2026-10-06.",
-      "notes": "Firsthand OCHBS 2026 card/flyer evidence retained. Open issue: Confirm current brand/operator identity, licensing entity and organizational website; no independent licensing verification is claimed.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-d97a25fb6f85",
-      "name": "! Libertarian Party of Ohio",
-      "priority": "P1",
-      "category": "Nonprofit & Advocacy",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://lpo.org/",
-      "sources": "https://lpo.org/candidates/ | Personal endorsement by directory maintainer, 2026-09-28",
-      "notes": "My personal, unpaid endorsement as directory maintainer: Vote Don Kissick for Governor in November. This is not a paid placement or party sponsorship. The Libertarian Party of Ohio lists Don Kissick as its 2026 gubernatorial candidate.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-7d813189790c",
-      "name": "North Linden Area Commission",
-      "priority": "P1",
-      "category": "Nonprofit & Advocacy",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.cbusareacommissions.org/northlinden",
-      "sources": "https://www.cbusareacommissions.org/northlinden | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Columbus neighborhood advisory commission; a cannabis-specific program or service requires confirmation. Card transcribed; official commission page verified 09/25/26. Cannabis-specific programming is not stated on the public site; cleared for the directory on OCHBS exhibitor attendance.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-fb49bcaddd77",
-      "name": "Courier Pro Logistics",
-      "priority": "P1",
-      "category": "Security & Cash Logistics",
-      "reasons": [
-        "Resolve the named open issue"
-      ],
-      "last_reviewed": "2026-10-06",
-      "website": "https://courierprologistics.com",
-      "sources": "OCHBS 2026 firsthand card/flyer: IMG_5123F92A-1AA8-4924-9C8C-632F4C9B254F.jpeg; private intake OCHBS-2026-056. Reviewed 2026-10-06.",
-      "notes": "Firsthand OCHBS 2026 card/flyer evidence retained. Open issue: Confirm accessible company website, legal entity/transport authorization and current cannabis service scope; card and OCHBS roster establish the event connection.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
+      "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
     },
     {
       "organization_id": "org-0557619757dc",
@@ -204,141 +143,43 @@
       "website": "",
       "sources": "Firsthand convention contact and user-supplied booth photograph, 2026-08-27 | OCHBS 2026 direct-contact evidence, 2026-09-23–24",
       "notes": "Security company met firsthand by Travis Vought at a Libertarian convention. Company representatives stated they are open to working with cannabis businesses. Booth branding and the user-supplied photograph confirm the operating name Porcupine Defense Solutions. A reliable company-controlled website, direct contact route, service area, licensing and specific service scope were not independently verified in this pass. A company affiliation was confirmed firsthand in September 2026. The private contact and phone remain excluded from this public dataset; website, licensing, service area and specific scope still require verification.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
+      "last_attempt": {
+        "organization_id": "org-0557619757dc",
+        "name": "Porcupine Defense Solutions",
+        "attempted_on": "2026-10-13",
+        "sources": [],
+        "result": "No readable company-controlled contact source established in this pass. No website on record.",
+        "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
+      },
+      "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
     },
     {
-      "organization_id": "org-326247e5b9d0",
-      "name": "CP Labs Ohio Operating Company, LLC",
+      "organization_id": "org-105e0713e773",
+      "name": "Mood Leaf",
       "priority": "P1",
-      "category": "Testing Labs",
+      "category": "Cultivator / Processor / Dispensary",
       "reasons": [
-        "No recorded evidence-review date"
+        "Resolve the named open issue"
       ],
-      "last_reviewed": null,
-      "website": "https://cplabsoh.wordpress.com/2024/04/17/cannabinoids/",
-      "sources": "https://elicense.com.ohio.gov/s/licensesearch | https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/testing-labs",
-      "notes": "Licensed Ohio cannabis compliance laboratory offering potency, terpene, microbial, pesticide, heavy-metal, residual-solvent and related testing. Ohio dual-use certificate listing and operating claims rechecked 2026-08-14; use the Ohio license search for live credential status. Verified against the current Ohio DCC testing-laboratory roster: dual-use laboratory holding a Certificate of Operation under licence CCL000017-00. Capability note: microbial and potency testing are tagged for every DCC-licensed laboratory because they form part of the state-mandated compliance panel every licensed lab must run — this is inferred from licensure, not from the lab's own marketing. Confirm the full test menu and any specialist capability directly.",
+      "last_reviewed": "2026-10-13",
+      "website": "https://www.moodleaf.com/contact",
+      "sources": "OCHBS 2026 firsthand card/flyer: IMG_645D94FD-CC76-432C-A656-F6B08904A916.jpeg; exhibitor booth 811; private intake OCHBS-2026-004; OCHBS-2026-005. Reviewed 2026-10-06. | Scoped contact/service review 2026-10-13: https://www.moodleaf.com/ | https://www.moodleaf.com/contact",
+      "notes": "Firsthand OCHBS 2026 card/flyer evidence retained. Open issue: Confirm current brand/operator identity, licensing entity and organizational website; no independent licensing verification is claimed. Contact/service review 2026-10-13: Wholesale and sales emails are published on the existing brand domain; no delivery test. Footer address and 614-555-0123 are apparent template content and were excluded. Legal/licensing entity remains an open issue. Earlier Nicole email failed delivery and is not used as a public contact.",
       "last_attempt": null,
       "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
     },
     {
-      "organization_id": "org-337f14b85abe",
-      "name": "InTrack CFO",
-      "priority": "P2",
-      "category": "Accounting & Tax",
+      "organization_id": "org-fb49bcaddd77",
+      "name": "Courier Pro Logistics",
+      "priority": "P1",
+      "category": "Security & Cash Logistics",
       "reasons": [
-        "No recorded evidence-review date"
+        "Resolve the named open issue"
       ],
-      "last_reviewed": null,
-      "website": "https://intrackcfo.com",
-      "sources": "https://intrackcfo.com | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Bookkeeping, tax planning, compliance and CFO reporting with documented cannabis-industry clients. Official site verified Booth 123.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-5e9b5a2704a6",
-      "name": "Mindtrix",
-      "priority": "P2",
-      "category": "Accounting & Tax",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.mindtrixaccounting.com",
-      "sources": "https://www.mindtrixaccounting.com | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Chief Visionary Officer contact for an accounting and advisory firm built exclusively for the cannabis industry. Official site verified Booth 525.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-8652a50fb7c6",
-      "name": "Argent Institutional Trust Company",
-      "priority": "P2",
-      "category": "Banking & Financial Services",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://aitc.argentfinancial.com",
-      "sources": "https://aitc.argentfinancial.com | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Institutional trust, custody and agency-services lead met at OCHBS; cannabis-specific services require confirmation. Card transcribed; official identity and services verified 09/25/26. Cannabis-specific relevance is not stated on the public site; cleared for the directory on OCHBS exhibitor attendance. Booth 424.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-60c467ab6634",
-      "name": "Atomic Credit Union",
-      "priority": "P2",
-      "category": "Banking & Financial Services",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.atomiccu.com",
-      "sources": "https://www.atomiccu.com | OCHBS direct in-person evidence, 2026-09-23 | Direct email confirmation from Matt Jenkins, 2026-09-28",
-      "notes": "Ohio credit union offering accounts to licensed marijuana companies, their employees and vendors. Direct contact details confirmed by Matt Jenkins on 2026-09-28; official site verified at OCHBS 2026.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-8ef8dba29f38",
-      "name": "HSLC Banking & Financial Services",
-      "priority": "P2",
-      "category": "Banking & Financial Services",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.hslc.bank",
-      "sources": "https://www.hslc.bank | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Ohio banking contact met at a cannabis-industry event; cannabis-specific services require confirmation. Card transcribed; official bank site verified 09/25/26. Cannabis-specific services are not stated on the public site; cleared for the directory on OCHBS exhibitor attendance.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-5ad9d905fae3",
-      "name": "420 SwitchBlade",
-      "priority": "P2",
-      "category": "Hemp / CBD Products & Ancillary",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.420switchblade.com",
-      "sources": "https://www.420switchblade.com | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Smoking accessory maker offering American-made glass components and related products. Official site verified Booth 524.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-c57033abadbe",
-      "name": "Dyspensr",
-      "priority": "P2",
-      "category": "Hemp / CBD Products & Ancillary",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://dyspensr.com",
-      "sources": "https://dyspensr.com | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Wholesale marketplace for dispensaries and smoke shops offering accessories, vapes and rolling supplies. Official site verified Booth 529.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-5cbe778a5271",
-      "name": "G Pen / Grenco Science",
-      "priority": "P2",
-      "category": "Hemp / CBD Products & Ancillary",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://gpen.com",
-      "sources": "https://gpen.com | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Cannabis vaporizers, vape pens and related consumer hardware. Official site verified",
+      "last_reviewed": "2026-10-13",
+      "website": "https://www.courierprologistics.com/",
+      "sources": "OCHBS 2026 firsthand card/flyer: IMG_5123F92A-1AA8-4924-9C8C-632F4C9B254F.jpeg; private intake OCHBS-2026-056. Reviewed 2026-10-06. | Scoped contact/service review 2026-10-13: https://www.courierprologistics.com/",
+      "notes": "Firsthand OCHBS 2026 card/flyer evidence retained. Open issue: Confirm accessible company website, legal entity/transport authorization and current cannabis service scope; card and OCHBS roster establish the event connection. Contact/service review 2026-10-13: Provider publishes the phone and advertises Ohio cannabis/controlled-industry logistics. Legal entity, transport authorization and operational compliance were not independently verified; open issue retained.",
       "last_attempt": null,
       "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
     },
@@ -354,8 +195,17 @@
       "website": "https://mojossmokeshop.com/",
       "sources": "https://mojossmokeshop.com/ | https://www.facebook.com/p/Mojos-Smoke-Shop-61578455440002/",
       "notes": "The former Hemp House domain now redirects to Mojo's Smoke Shop, resolving the earlier brand-transition ambiguity. Current business-controlled pages retain the Portsmouth phone/email and identify CBD among the shop's products; current pages also show a Wheelersburg location. Retained as Ohio hemp/CBD ancillary retail, not as an Ohio DCC-licensed marijuana operator.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
+      "last_attempt": {
+        "organization_id": "org-20250325b35f",
+        "name": "Mojo's Smoke Shop (formerly The Hemp House / Wholesale Hemp LLC)",
+        "attempted_on": "2026-10-13",
+        "sources": [
+          "https://mojossmokeshop.com/"
+        ],
+        "result": "Domain shows a launching-soon page; current storefront operation and the historical phone/email were not corroborated.",
+        "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
+      },
+      "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
     },
     {
       "organization_id": "org-4272e7927699",
@@ -369,443 +219,17 @@
       "website": "https://nexusagriscience.com",
       "sources": "https://nexusagriscience.com | OCHBS direct in-person evidence, 2026-09-23",
       "notes": "Molecular-farming company developing cannabis and hemp genetics, ingredients and research applications. Official site verified",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-dc474ca20d13",
-      "name": "Quality Extractions Group",
-      "priority": "P2",
-      "category": "Hemp / CBD Products & Ancillary",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://qualityextractions.com",
-      "sources": "https://qualityextractions.com | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "High-purity hydrocarbon, alcohol and cleaning solvents for cannabis extraction and processing. Official site verified Booth 118.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-7155fdc4e396",
-      "name": "Millers Insurance Group",
-      "priority": "P2",
-      "category": "Insurance",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://millersinsurancegroup.com",
-      "sources": "https://millersinsurancegroup.com | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Specialized insurance for cannabis and hemp cultivators, dispensaries, manufacturers and ancillary providers. Official site verified Booth 410.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-6c62f0f9c74b",
-      "name": "CashColorCannabis",
-      "priority": "P2",
-      "category": "Marketing & Media",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://cashcolorcannabis.com/",
-      "sources": "https://ochbs.com/exhibitors/cashcolorcannabis/ | https://cashcolorcannabis.com/",
-      "notes": "OCHBS 2026 exhibitor, booth 442. Multimedia platform focused on the Black cannabis experience. Public direct email and phone not located.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-a32d429b1d8a",
-      "name": "Ohio Cannabis Live",
-      "priority": "P2",
-      "category": "Marketing & Media",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.ohiocannabislive.com/",
-      "sources": "https://www.ohiocannabislive.com/ | Direct email from Anthony D. Riley, 2026-09-21",
-      "notes": "Ohio-focused cannabis media and education platform; its current site identifies Another Mastamynd Hit LLC as doing business as Ohio Cannabis Live and publishes the listed email and main phone. Anthony D. Riley identified himself with Ohio Cannabis Live in a direct email on 2026-09-21; that email signature supplied an additional phone number, 614-817-5805.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-7172eadd96a4",
-      "name": "PMB PROMOS",
-      "priority": "P2",
-      "category": "Marketing & Media",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.pmbpromos.com",
-      "sources": "https://www.pmbpromos.com | Direct email confirmation from Becky Bush, 2026-09-28",
-      "notes": "Separate promotional-goods business associated with Package My Bud. The distinct role of pmbpromos.com and PMB PROMOS was confirmed directly by Becky Bush on 2026-09-28; she said both businesses serve Ohio and nationwide.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-6734e1942cc7",
-      "name": "RBO",
-      "priority": "P2",
-      "category": "Marketing & Media",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.rboinc.com",
-      "sources": "https://www.rboinc.com | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Brand deployment, promotional products, printing, packaging, warehousing and fulfillment; cannabis-specific work requires confirmation. Card transcribed; official company services verified 09/25/26. Cannabis-specific work is not stated on the public site; cleared for the directory on OCHBS exhibitor attendance.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-36f49023be41",
-      "name": "Finished Goods",
-      "priority": "P2",
-      "category": "Packaging & Labeling",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.finishedgoods.com/",
-      "sources": "https://ochbs.com/exhibitors/finished-goods/ | https://www.finishedgoods.com/",
-      "notes": "OCHBS 2026 exhibitor, booth 321. Custom cannabis vape hardware and child-resistant packaging manufacturer. Custom cannabis vape hardware and branded packaging for licensed operators. Direct OCHBS evidence collected 2026-09-23.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-8cfae8fa9c89",
-      "name": "Hefestus USA Inc.",
-      "priority": "P2",
-      "category": "Packaging & Labeling",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.hefestus-tech.com",
-      "sources": "https://www.hefestus-tech.com | OCHBS direct in-person evidence, 2026-09-23 | Direct email confirmation from Ben Arreguy, 2026-09-27 and 2026-09-28",
-      "notes": "Company name, category, product description, contact, email, and phone confirmed directly by Ben Arreguy on 2026-09-27; phone link reconfirmed 2026-09-28.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-e0d93f21d61b",
-      "name": "Label Aid, Inc.",
-      "priority": "P2",
-      "category": "Packaging & Labeling",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.labelaidinc.com/",
-      "sources": "https://ochbs.com/exhibitors/label-aid-inc/ | https://www.labelaidinc.com/company/information/contact-us",
-      "notes": "OCHBS 2026 exhibitor, booth 523. Family-founded, woman-owned custom label printer; official site expressly includes cannabis among served industries. Label production can support packaging, traceability and regulatory presentation. Direct OCHBS evidence collected 2026-09-23.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-d9b1b2d2d217",
-      "name": "Package My Bud",
-      "priority": "P2",
-      "category": "Packaging & Labeling",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.packagemybud.com",
-      "sources": "https://www.pmbpromos.com | OCHBS direct in-person evidence, 2026-09-23 | https://www.packagemybud.com | Direct email confirmation from Becky Bush, 2026-09-28",
-      "notes": "Package My Bud is the cannabis packaging and labeling business. Website, category, contact, phone, and Ohio/nationwide service area confirmed directly by Becky Bush on 2026-09-28.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-e7e43adc3511",
-      "name": "PackTrack",
-      "priority": "P2",
-      "category": "Packaging & Labeling",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://packtrack.net/",
-      "sources": "https://ochbs.com/speakers/; https://ochbs.com/speakers/pj-guerrieri/; https://packtrack.net/ | OCHBS 2026 direct-contact evidence, 2026-09-23–24",
-      "notes": "PJ Guerrieri and PackTrack confirmed. Official site publishes PJ’s direct email and phone plus a booking path and describes a cannabis packaging supply-chain platform. Technology was defensible, but Packaging & Labeling remains the cleaner primary category. OCHBS 2026 exhibitor/direct-contact evidence added 2026-09-26.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-b10fae35df91",
-      "name": "PreRoll Distro",
-      "priority": "P2",
-      "category": "Packaging & Labeling",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://prerolldistro.com",
-      "sources": "https://prerolldistro.com | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Supplier of filter tips and related pre-roll products for cannabis businesses. Official site verified Booth 125.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-b3d069b72662",
-      "name": "PreRoll-Er",
-      "priority": "P2",
-      "category": "Packaging & Labeling",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://preroll-er.com",
-      "sources": "https://preroll-er.com | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Automated pre-roll manufacturing and cannabis packaging equipment. Official site verified Booth 716.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-ae47f740e012",
-      "name": "Royal Blunts",
-      "priority": "P2",
-      "category": "Packaging & Labeling",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://royalblunts.com/",
-      "sources": "https://www.cannabismarketspotlight.com/ohio/home; https://www.cannabismarketspotlight.com/ohiovalley/speaker/2064649/keith-scott-ii; https://royalblunts.com/; https://royalblunts.com/contact/",
-      "notes": "Ancillary pre-roll/wrap products business, not a plant-touching operator. Company-owned contact page publishes the parent-company customer-service email and toll-free number; these are corporate routes, not Keith Scott II’s direct contact. His current business-development role is supported by the Ohio Valley speaker profile.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-7063acd850da",
-      "name": "Vert Packaging",
-      "priority": "P2",
-      "category": "Packaging & Labeling",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.vertpack.com/",
-      "sources": "https://ochbs.com/speakers/; https://www.vertpack.com/pages/contact; https://www.vertpack.com/pages/cannabis-products; https://www.nosh.com/pr/2026/08/11/vert-opens-colorado-packaging-facility-built-for-the-next-generation-of-cpg-brands",
-      "notes": "Current official site publishes a sales inbox, phone and contact form and presents active cannabis/CPG packaging capabilities. A 2026 facility announcement confirms Dustin Steerman as Founder & CEO. Nationwide capability is supported; no Ohio client relationship is inferred.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-517bb8b79eb5",
-      "name": "ABS Money Systems",
-      "priority": "P2",
-      "category": "Security & Cash Logistics",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://absmoney.com",
-      "sources": "https://absmoney.com | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "ATMs, currency counters and cash recyclers for secure, auditable dispensary cash handling. Official site verified Booth 411.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-604ede518b05",
-      "name": "Elite Preparedness Asset Protection",
-      "priority": "P2",
-      "category": "Security & Cash Logistics",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.elitepreparedness.com/about-us",
-      "sources": "https://www.elitepreparedness.com/ | https://www.elitepreparedness.com/church-safety",
-      "notes": "Current first-party pages confirm Brian Hess and the listed direct email and phone. Retained as an Ohio security provider; no current public cannabis client or Ohio DCC project was found, so the row does not imply cannabis specialization. The obsolete ep-secure.com route was removed from Source(s).",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-7a67d8f3a6f9",
-      "name": "Koorsen Fire & Security",
-      "priority": "P2",
-      "category": "Security & Cash Logistics",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.koorsen.com",
-      "sources": "https://www.koorsen.com | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Commercial fire protection, alarms, suppression, monitoring, access control and surveillance. Official site verified",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-bb22c8902ddd",
-      "name": "Security 101 — Columbus",
-      "priority": "P2",
-      "category": "Security & Cash Logistics",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.security101.com/columbus",
-      "sources": "https://www.security101.com/columbus | https://www.security101.com/blog/cannabis-industry-3-risks-of-choosing-the-wrong-security-system",
-      "notes": "Current Columbus office, phone and service email verified. Security 101 publishes cannabis-sector security capabilities, but the available examples do not establish an Ohio cannabis/DCC project. Retained as an Ohio commercial integrator with national cannabis capability; no Ohio cannabis engagement is claimed. No current named Columbus contact was published, so the unverified person was removed.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-098f74cadecb",
-      "name": "OROleafhr",
-      "priority": "P2",
-      "category": "Staffing & HR",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://oroleafhr.com/",
-      "sources": "https://oroleafhr.com/ | https://oroleafhr.com/about-us/ | https://oroleafhr.com/gold-standard-service/",
-      "notes": "Current cannabis-focused HR and payroll consultancy providing HR management, benefits, payroll and tax, retirement, safety, workers' compensation and risk-management services tailored to state regulatory environments. Jim Valenzuela and the direct company routes remain current; no Ohio client or engagement is asserted.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-7354c5fa79e6",
-      "name": "GreenTank",
-      "priority": "P2",
-      "category": "Technology",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://greentanktech.com",
-      "sources": "https://greentanktech.com | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Cannabis vaporization hardware and technology provider serving brands and manufacturers. Official site verified",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-dd29cf4b93ea",
-      "name": "GrowerIQ",
-      "priority": "P2",
-      "category": "Technology",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://groweriq.com",
-      "sources": "https://groweriq.com | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Cannabis production platform covering cultivation, manufacturing, quality management, reporting and CRM. Official site verified",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-22363ee3ca56",
-      "name": "Happy Cabbage",
-      "priority": "P2",
-      "category": "Technology",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.happycabbage.io",
-      "sources": "https://www.happycabbage.io | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Inventory intelligence and purchasing software built for cannabis retailers. Official site verified Booth 331.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-0feff903c70c",
-      "name": "Horticulture Lighting Group",
-      "priority": "P2",
-      "category": "Technology",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://horticulturelightinggroup.com/",
-      "sources": "https://ochbs.com/exhibitors/horticulture-lighting-group/ | https://horticulturelightinggroup.com/",
-      "notes": "OCHBS 2026 exhibitor. Manufacturer of high-efficiency LED grow lighting for indoor horticulture. High-efficiency LED grow lighting for commercial and home cultivation, including cannabis facilities. Direct OCHBS evidence collected 2026-09-23.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-ff5c505e8d2b",
-      "name": "Hytiva Technologies",
-      "priority": "P2",
-      "category": "Technology",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.hytiva.com/business-services",
-      "sources": "https://www.hytiva.com/business-services | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Cannabis retail, delivery, logistics and business technology services. Official site verified Booth 824.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-9aaf751c8541",
-      "name": "Outlaw Technology",
-      "priority": "P2",
-      "category": "Technology",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://outlawtechnology.net",
-      "sources": "https://outlawtechnology.net | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "RFID, barcode and seed-to-sale inventory automation for cannabis compliance. Official site verified Booth 413.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-5685e7174422",
-      "name": "RX Green Technologies",
-      "priority": "P2",
-      "category": "Technology",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.rxgreentechnologies.com",
-      "sources": "https://www.rxgreentechnologies.com | OCHBS direct in-person evidence, 2026-09-23",
-      "notes": "Science-backed commercial cultivation substrates, nutrients and growing solutions. Official site verified Booth 425.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-a7e9b3f90d8b",
-      "name": "StashStock",
-      "priority": "P2",
-      "category": "Technology",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.stashstock.com/",
-      "sources": "https://ochbs.com/exhibitors/stash-stock/ | https://www.stashstock.com/contact",
-      "notes": "OCHBS 2026 exhibitor, booth 622. METRC-validated seed-to-sale tools for licensed cultivators and processors.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
-    },
-    {
-      "organization_id": "org-f3c5879951d3",
-      "name": "Vecmar",
-      "priority": "P2",
-      "category": "Technology",
-      "reasons": [
-        "No recorded evidence-review date"
-      ],
-      "last_reviewed": null,
-      "website": "https://www.vecmar.com/",
-      "sources": "https://ochbs.com/exhibitors/vecmar/ | https://www.vecmar.com/corp_info/about_us.htm",
-      "notes": "OCHBS 2026 exhibitor, booth 527. Ohio hardware supplier for scanners, printers, check scanners, thin clients, remanufacturing and maintenance. Cannabis industry vendor met at OCHBS via business card; specific product or service line requires confirmation. Direct OCHBS evidence collected 2026-09-23.",
-      "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
+      "last_attempt": {
+        "organization_id": "org-4272e7927699",
+        "name": "Nexus Agriscience",
+        "attempted_on": "2026-10-13",
+        "sources": [
+          "https://nexusagriscience.com"
+        ],
+        "result": "Hemp molecular-farming identity is published, but no usable direct public contact was established in this retrieval.",
+        "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
+      },
+      "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
     }
   ]
 }
