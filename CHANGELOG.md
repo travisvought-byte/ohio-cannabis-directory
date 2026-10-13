@@ -1,3 +1,10 @@
+# v4.35 - October 13, 2026
+
+- Removed the personal candidate endorsement, featured styling and name prefix; retained the Libertarian Party of Ohio as a neutral, alphabetically sorted policy listing.
+- Corrected Seedless Media and Happy Cabbage geography; documented Laurelcrest sponsor/speaker and KCIA speaker/partner connections to Ohio events without implying Ohio service coverage. Preserved the existing Pure Genesis speaker-source limitation.
+- Labeled CannAscend’s recorded website route as a parent-company contact, preserving the dated ownership limitation. No separate processor website or new ownership conclusion was established.
+- Rechecked missing-site leads; reliable company-site matches remain unresolved and queued.
+
 # v4.34 - October 13, 2026
 
 - Removed the Libertarian Party of Ohio listing’s special sorting priority. It now appears alphabetically with other organizations, including filtered results and the full text index; the endorsement text, label and stable organization ID are preserved.

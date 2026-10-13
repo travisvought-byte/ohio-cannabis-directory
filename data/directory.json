@@ -10431,15 +10431,15 @@
         "Email": "hello@seedless.media",
         "Phone": "",
         "Website": "https://seedless.media/cannabis-marketing-agency-cleveland-seedless-media/",
-        "Service Area": "Outside Ohio",
+        "Service Area": "Ohio regional: Ohio-serving (Cleveland/Akron focus); headquartered in Tempe, Arizona",
         "Capabilities / Keywords": "Marketing / Media; Media / Publication",
         "Verification Tier": "Source-verified",
         "Notes": "Current dedicated Cleveland/Ohio cannabis-marketing presence that explicitly discusses Ohio/DCC compliance. Geography stated precisely: Ohio-serving, not Ohio-headquartered. TITLE CORRECTED: an older first-party profile called Knapp founder and CEO; a newer 2026 first-party article describes current leadership as \"CEO Tom and President Steve.\" Same founder, now President rather than CEO — old CEO title not retained.",
-        "Source(s)": "https://seedless.media/cannabis-marketing-agency-cleveland-seedless-media/",
+        "Source(s)": "https://seedless.media/cannabis-marketing-agency-cleveland-seedless-media/ | Scoped editorial/evidence review 2026-10-13: https://seedless.media/cannabis-marketing-agency-cleveland-seedless-media/",
         "Seed Source": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 6 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 4), 2026-08-16; source pages retrieved and reviewed | Reconciliation pass against a duplicate/older-snapshot research round, 2026-08-16; source pages retrieved and reviewed | Marketing & Media audit, 2026-08-22; source pages retrieved and reviewed",
         "Record ID": "org-2b438fb26214",
-        "Last Reviewed": "2026-08-22",
-        "Service Area (as published)": "Ohio-serving (Cleveland/Akron focus); headquartered outside Ohio"
+        "Last Reviewed": "2026-10-13",
+        "Service Area (as published)": "Ohio-serving (Cleveland/Akron focus); headquartered in Tempe, Arizona"
       },
       "website": "https://seedless.media/cannabis-marketing-agency-cleveland-seedless-media/"
     },
@@ -18959,15 +18959,15 @@
         "Email": "success@happycabbage.io",
         "Phone": "",
         "Website": "https://www.happycabbage.io",
-        "Service Area": "Outside Ohio",
+        "Service Area": "Multistate, Ohio unconfirmed",
         "Capabilities / Keywords": "Cannabis Retail Software and Analytics",
         "Verification Tier": "Source-verified",
         "Notes": "Inventory intelligence and purchasing software built for cannabis retailers. Official site verified Booth 331. Contact/service review 2026-10-13: Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
-        "Source(s)": "https://www.happycabbage.io | OCHBS direct in-person evidence, 2026-09-23 | Scoped contact/service review 2026-10-13: https://www.happycabbage.io | https://www.happycabbage.io/contact | https://www.happycabbage.io/post/accurate-cannabis-ai-ordering-menu-planning",
+        "Source(s)": "https://www.happycabbage.io | OCHBS direct in-person evidence, 2026-09-23 | Scoped contact/service review 2026-10-13: https://www.happycabbage.io | https://www.happycabbage.io/contact | https://www.happycabbage.io/post/accurate-cannabis-ai-ordering-menu-planning | Scoped editorial/evidence review 2026-10-13: https://www.happycabbage.io/contact",
         "Seed Source": "OCHBS 2026 direct contact, collected 2026-09-23",
         "Record ID": "org-22363ee3ca56",
         "Last Reviewed": "2026-10-13",
-        "Service Area (as published)": "Los Angeles, CA"
+        "Service Area (as published)": "Los Angeles, CA; Ohio event connection: OCHBS 2026 direct exhibitor contact; Ohio service coverage unconfirmed"
       },
       "website": "https://www.happycabbage.io"
     },
@@ -22021,21 +22021,21 @@
         "Email": "orders@laurelcrest.com",
         "Phone": "",
         "Website": "https://laurelcrest.com/",
-        "Service Area": "Outside Ohio",
+        "Service Area": "Multistate, Ohio unconfirmed",
         "Capabilities / Keywords": "Hemp / CBD",
         "Verification Tier": "Source-verified",
-        "Notes": "Reclassified: hemp cannabinoid ingredient/manufacturing supplier based in Oregon, not an Ohio regulated marijuana cultivator/processor/dispensary.",
-        "Source(s)": "https://laurelcrest.com/about/",
+        "Notes": "Oregon hemp cannabinoid ingredient/manufacturing supplier. The organizer lists Laurelcrest as a sponsor and Danielle Bernstein as a speaker at Market Spotlight Ohio in Cincinnati on November 3, 2025. Inclusion reflects this documented Ohio ecosystem connection; it does not establish Ohio licensing or current service coverage.",
+        "Source(s)": "https://laurelcrest.com/about/ | Scoped editorial/evidence review 2026-10-13: https://www.cannabismarketspotlight.com/ohio",
         "Seed Source": "Original expo CRM | Research cleanup — 2026-08-14; QA'd 2026-08-14 | Batch 3 audit, 2026-08-14; source pages retrieved and reviewed",
         "Record ID": "org-6a466599534c",
-        "Last Reviewed": "2026-08-14",
-        "Service Area (as published)": "Oregon-based"
+        "Last Reviewed": "2026-10-13",
+        "Service Area (as published)": "Oregon-based; Ohio event connection: Market Spotlight Ohio, Cincinnati, November 3, 2025; service coverage unconfirmed"
       },
       "website": "https://laurelcrest.com/"
     },
     {
       "id": "org-d97a25fb6f85",
-      "name": "! Libertarian Party of Ohio",
+      "name": "Libertarian Party of Ohio",
       "kind": "other",
       "legacy_ids": [
         "org-d97a25fb6f85"
@@ -22053,18 +22053,18 @@
       "scope": "public",
       "legacy_record": {
         "Category": "Nonprofit & Advocacy",
-        "Organization / Business Name": "! Libertarian Party of Ohio",
+        "Organization / Business Name": "Libertarian Party of Ohio",
         "Type": "Political Party",
         "Contact Person": "",
         "Email": "info@lpo.org",
         "Phone": "",
         "Website": "https://lpo.org/",
         "Service Area": "Ohio statewide",
-        "Capabilities / Keywords": "Vote Don Kissick for Governor in November",
+        "Capabilities / Keywords": "Political Party; Cannabis Policy Advocacy",
         "Verification Tier": "Source-verified",
-        "Notes": "My personal, unpaid endorsement as directory maintainer: Vote Don Kissick for Governor in November. This is not a paid placement or party sponsorship. The Libertarian Party of Ohio lists Don Kissick as its 2026 gubernatorial candidate. Contact/service review 2026-10-13: Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
-        "Source(s)": "https://lpo.org/candidates/ | Personal endorsement by directory maintainer, 2026-09-28 | Scoped contact/service review 2026-10-13: https://lpo.org/ | https://lpo.org/contact/ | https://lpo.org/2025/12/10/legal-cannabis-red-tape/",
-        "Seed Source": "Curator-added election-season feature; official LPO candidates page checked 2026-09-28",
+        "Notes": "Ohio political party with published cannabis-policy commentary and public contact and volunteer information. Listed as an Ohio cannabis-policy organization.",
+        "Source(s)": "https://lpo.org/ | https://lpo.org/contact/ | https://lpo.org/2025/12/10/legal-cannabis-red-tape/ | Scoped editorial/evidence review 2026-10-13: https://lpo.org/contact/ | https://lpo.org/2025/12/10/legal-cannabis-red-tape/",
+        "Seed Source": "Curator-added Ohio political-party listing, 2026-09-28; neutral listing revision requested by maintainer, 2026-10-13",
         "Record ID": "org-d97a25fb6f85",
         "Last Reviewed": "2026-10-13",
         "Service Area (as published)": "Statewide, Ohio"
@@ -22097,15 +22097,15 @@
         "Email": "rachel@kycanna.org",
         "Phone": "502-875-1176",
         "Website": "https://www.kycanna.org/",
-        "Service Area": "Outside Ohio",
+        "Service Area": "Multistate, Ohio unconfirmed",
         "Capabilities / Keywords": "Nonprofit / Advocacy",
         "Verification Tier": "Source-verified",
-        "Notes": "Current Kentucky medical-cannabis trade association. Rachel Roberts remains Executive Director; KCIA's first-party team page publishes her direct email and the organization phone. Included as out-of-state Ohio Valley ecosystem adjacency, not as an Ohio-based association.",
-        "Source(s)": "https://www.kycanna.org/ | https://www.kycanna.org/about | https://www.cannabismarketspotlight.com/ohiovalley",
+        "Notes": "Current Kentucky medical-cannabis trade association. Rachel Roberts remains Executive Director; KCIA's first-party team page publishes her direct email and the organization phone. Included as out-of-state Ohio Valley ecosystem adjacency, not as an Ohio-based association. The Ohio Valley event organizer also lists KCIA as a trusted partner and Rachel Roberts as a speaker at its Cincinnati event. Event participation is distinguished from confirmed Ohio services.",
+        "Source(s)": "https://www.kycanna.org/ | https://www.kycanna.org/about | https://www.cannabismarketspotlight.com/ohiovalley | Scoped editorial/evidence review 2026-10-13: https://www.cannabismarketspotlight.com/ohiovalley",
         "Seed Source": "Organizations | Speakers | Batch 1 audit, 2026-08-15; source pages retrieved and reviewed | Nonprofit & Advocacy outreach-enrichment pass, 2026-08-23; source pages retrieved and reviewed",
         "Record ID": "org-9b0acb0eee5e",
-        "Last Reviewed": "2026-08-23",
-        "Service Area (as published)": "Out of State"
+        "Last Reviewed": "2026-10-13",
+        "Service Area (as published)": "Kentucky; Ohio event connection: Ohio Valley Cannabis Conference in Cincinnati; Ohio service coverage unconfirmed"
       },
       "website": "https://www.kycanna.org/"
     }
@@ -43418,7 +43418,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Cannabis Retail Software and Analytics\nInventory intelligence and purchasing software built for cannabis retailers. Official site verified Booth 331."
+      "description": "Cannabis Retail Software and Analytics\nInventory intelligence and purchasing software built for cannabis retailers. Official site verified Booth 331. Contact/service review 2026-10-13: Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation."
     },
     {
       "id": "svc-profile-79c6188047ac",
@@ -45928,7 +45928,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Hemp / CBD\nReclassified: hemp cannabinoid ingredient/manufacturing supplier based in Oregon, not an Ohio regulated marijuana cultivator/processor/dispensary."
+      "description": "Hemp / CBD\nOregon hemp cannabinoid ingredient/manufacturing supplier. The organizer lists Laurelcrest as a sponsor and Danielle Bernstein as a speaker at Market Spotlight Ohio in Cincinnati on November 3, 2025. Inclusion reflects this documented Ohio ecosystem connection; it does not establish Ohio licensing or current service coverage."
     },
     {
       "id": "svc-profile-d97a25fb6f85",
@@ -45937,7 +45937,7 @@
       "pathway_ids": [
         "business"
       ],
-      "name": "! Libertarian Party of Ohio",
+      "name": "Libertarian Party of Ohio",
       "coverage": [],
       "audiences": [
         "business"
@@ -45966,7 +45966,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Vote Don Kissick for Governor in November\nMy personal, unpaid endorsement as directory maintainer: Vote Don Kissick for Governor in November. This is not a paid placement or party sponsorship. The Libertarian Party of Ohio lists Don Kissick as its 2026 gubernatorial candidate."
+      "description": "Political Party; Cannabis Policy Advocacy\nOhio political party with published cannabis-policy commentary and public contact and volunteer information. Listed as an Ohio cannabis-policy organization."
     },
     {
       "id": "svc-profile-9b0acb0eee5e",
@@ -45997,7 +45997,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Nonprofit / Advocacy\nCurrent Kentucky medical-cannabis trade association. Rachel Roberts remains Executive Director; KCIA's first-party team page publishes her direct email and the organization phone. Included as out-of-state Ohio Valley ecosystem adjacency, not as an Ohio-based association."
+      "description": "Nonprofit / Advocacy\nCurrent Kentucky medical-cannabis trade association. Rachel Roberts remains Executive Director; KCIA's first-party team page publishes her direct email and the organization phone. Included as out-of-state Ohio Valley ecosystem adjacency, not as an Ohio-based association. The Ohio Valley event organizer also lists KCIA as a trusted partner and Rachel Roberts as a speaker at its Cincinnati event. Event participation is distinguished from confirmed Ohio services."
     }
   ],
   "evidence": [
@@ -64977,13 +64977,13 @@
       "id": "ev-79a8e1ccf59a",
       "subject_id": "svc-profile-d97a25fb6f85",
       "claim": "organization-profile",
-      "value": "My personal, unpaid endorsement as directory maintainer: Vote Don Kissick for Governor in November. This is not a paid placement or party sponsorship. The Libertarian Party of Ohio lists Don Kissick as its 2026 gubernatorial candidate.",
-      "source_url": "https://lpo.org/candidates/",
-      "source_kind": "secondary",
+      "value": "Ohio political party with published cannabis-policy commentary and public contact and volunteer information. Listed as an Ohio cannabis-policy organization.",
+      "source_url": "https://lpo.org/2025/12/10/legal-cannabis-red-tape/",
+      "source_kind": "provider",
       "status": "source-listed",
       "recorded_on": "2026-10-09",
       "recheck_on": "2026-11-08",
-      "limitations": "Imported historical source reference; migration is not a fresh source review."
+      "limitations": "Neutral policy listing based on retained source; no new legal verification or candidate endorsement."
     },
     {
       "id": "ev-review-20261012-6d0ae4c0f229-1",

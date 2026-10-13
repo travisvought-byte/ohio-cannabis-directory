@@ -1,0 +1,200 @@
+{
+  "reviewed_on": "2026-10-13",
+  "baseline_commit": "c9f633f",
+  "method": "Neutral listing revision and field-scoped source checks; preserve Ohio ecosystem event connections without inferring service coverage.",
+  "completed": [
+    {
+      "organization_id": "org-d97a25fb6f85",
+      "name": "Libertarian Party of Ohio",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "2026-10-13",
+      "sources": [
+        "https://lpo.org/contact/",
+        "https://lpo.org/2025/12/10/legal-cannabis-red-tape/"
+      ],
+      "finding": "Removed candidate appeal, personal endorsement, name prefix and election-season framing; retained party identity and contact routes.",
+      "limitations": "Editorial change authorized by maintainer; no candidate support is presented.",
+      "field_changes": {
+        "Organization / Business Name": {
+          "before": "! Libertarian Party of Ohio",
+          "after": "Libertarian Party of Ohio"
+        },
+        "Capabilities / Keywords": {
+          "before": "Vote Don Kissick for Governor in November",
+          "after": "Political Party; Cannabis Policy Advocacy"
+        },
+        "Notes": {
+          "before": "My personal, unpaid endorsement as directory maintainer: Vote Don Kissick for Governor in November. This is not a paid placement or party sponsorship. The Libertarian Party of Ohio lists Don Kissick as its 2026 gubernatorial candidate. Contact/service review 2026-10-13: Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
+          "after": "Ohio political party with published cannabis-policy commentary and public contact and volunteer information. Listed as an Ohio cannabis-policy organization."
+        },
+        "Source(s)": {
+          "before": "https://lpo.org/candidates/ | Personal endorsement by directory maintainer, 2026-09-28 | Scoped contact/service review 2026-10-13: https://lpo.org/ | https://lpo.org/contact/ | https://lpo.org/2025/12/10/legal-cannabis-red-tape/",
+          "after": "https://lpo.org/ | https://lpo.org/contact/ | https://lpo.org/2025/12/10/legal-cannabis-red-tape/ | Scoped editorial/evidence review 2026-10-13: https://lpo.org/contact/ | https://lpo.org/2025/12/10/legal-cannabis-red-tape/"
+        },
+        "Seed Source": {
+          "before": "Curator-added election-season feature; official LPO candidates page checked 2026-09-28",
+          "after": "Curator-added Ohio political-party listing, 2026-09-28; neutral listing revision requested by maintainer, 2026-10-13"
+        }
+      }
+    },
+    {
+      "organization_id": "org-2b438fb26214",
+      "name": "Seedless Media",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "2026-08-22",
+      "sources": [
+        "https://seedless.media/cannabis-marketing-agency-cleveland-seedless-media/"
+      ],
+      "finding": "First-party page explicitly offers cannabis marketing to Ohio operators; corrected controlled geography.",
+      "limitations": "Service offering reviewed; specific customer relationships and vendor legal claims not verified.",
+      "field_changes": {
+        "Service Area": {
+          "before": "Outside Ohio",
+          "after": "Ohio regional: Ohio-serving (Cleveland/Akron focus); headquartered in Tempe, Arizona"
+        },
+        "Source(s)": {
+          "before": "https://seedless.media/cannabis-marketing-agency-cleveland-seedless-media/",
+          "after": "https://seedless.media/cannabis-marketing-agency-cleveland-seedless-media/ | Scoped editorial/evidence review 2026-10-13: https://seedless.media/cannabis-marketing-agency-cleveland-seedless-media/"
+        },
+        "Last Reviewed": {
+          "before": "2026-08-22",
+          "after": "2026-10-13"
+        },
+        "Service Area (as published)": {
+          "before": "Ohio-serving (Cleveland/Akron focus); headquartered outside Ohio",
+          "after": "Ohio-serving (Cleveland/Akron focus); headquartered in Tempe, Arizona"
+        }
+      }
+    },
+    {
+      "organization_id": "org-22363ee3ca56",
+      "name": "Happy Cabbage",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "2026-10-13",
+      "sources": [
+        "https://www.happycabbage.io/contact"
+      ],
+      "finding": "Retained direct OCHBS 2026 contact/Booth 331 evidence; geography now distinguishes location from unconfirmed service coverage.",
+      "limitations": "No new Ohio customer or service coverage claim.",
+      "field_changes": {
+        "Service Area": {
+          "before": "Outside Ohio",
+          "after": "Multistate, Ohio unconfirmed"
+        },
+        "Source(s)": {
+          "before": "https://www.happycabbage.io | OCHBS direct in-person evidence, 2026-09-23 | Scoped contact/service review 2026-10-13: https://www.happycabbage.io | https://www.happycabbage.io/contact | https://www.happycabbage.io/post/accurate-cannabis-ai-ordering-menu-planning",
+          "after": "https://www.happycabbage.io | OCHBS direct in-person evidence, 2026-09-23 | Scoped contact/service review 2026-10-13: https://www.happycabbage.io | https://www.happycabbage.io/contact | https://www.happycabbage.io/post/accurate-cannabis-ai-ordering-menu-planning | Scoped editorial/evidence review 2026-10-13: https://www.happycabbage.io/contact"
+        },
+        "Service Area (as published)": {
+          "before": "Los Angeles, CA",
+          "after": "Los Angeles, CA; Ohio event connection: OCHBS 2026 direct exhibitor contact; Ohio service coverage unconfirmed"
+        }
+      }
+    },
+    {
+      "organization_id": "org-6a466599534c",
+      "name": "Laurelcrest",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "2026-08-14",
+      "sources": [
+        "https://www.cannabismarketspotlight.com/ohio"
+      ],
+      "finding": "Organizer names Laurelcrest in sponsors and speaker/agenda lists for the Cincinnati Ohio event.",
+      "limitations": "Historical event evidence; no OCHBS exhibitor or current Ohio fulfillment claim.",
+      "field_changes": {
+        "Service Area": {
+          "before": "Outside Ohio",
+          "after": "Multistate, Ohio unconfirmed"
+        },
+        "Notes": {
+          "before": "Reclassified: hemp cannabinoid ingredient/manufacturing supplier based in Oregon, not an Ohio regulated marijuana cultivator/processor/dispensary.",
+          "after": "Oregon hemp cannabinoid ingredient/manufacturing supplier. The organizer lists Laurelcrest as a sponsor and Danielle Bernstein as a speaker at Market Spotlight Ohio in Cincinnati on November 3, 2025. Inclusion reflects this documented Ohio ecosystem connection; it does not establish Ohio licensing or current service coverage."
+        },
+        "Source(s)": {
+          "before": "https://laurelcrest.com/about/",
+          "after": "https://laurelcrest.com/about/ | Scoped editorial/evidence review 2026-10-13: https://www.cannabismarketspotlight.com/ohio"
+        },
+        "Last Reviewed": {
+          "before": "2026-08-14",
+          "after": "2026-10-13"
+        },
+        "Service Area (as published)": {
+          "before": "Oregon-based",
+          "after": "Oregon-based; Ohio event connection: Market Spotlight Ohio, Cincinnati, November 3, 2025; service coverage unconfirmed"
+        }
+      }
+    },
+    {
+      "organization_id": "org-9b0acb0eee5e",
+      "name": "Kentucky Cannabis Industry Alliance",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "2026-08-23",
+      "sources": [
+        "https://www.cannabismarketspotlight.com/ohiovalley"
+      ],
+      "finding": "Organizer lists KCIA as trusted partner and its executive director as speaker; event venue is Cincinnati, Ohio.",
+      "limitations": "Event connection does not establish Ohio membership eligibility or an Ohio service office.",
+      "field_changes": {
+        "Service Area": {
+          "before": "Outside Ohio",
+          "after": "Multistate, Ohio unconfirmed"
+        },
+        "Notes": {
+          "before": "Current Kentucky medical-cannabis trade association. Rachel Roberts remains Executive Director; KCIA's first-party team page publishes her direct email and the organization phone. Included as out-of-state Ohio Valley ecosystem adjacency, not as an Ohio-based association.",
+          "after": "Current Kentucky medical-cannabis trade association. Rachel Roberts remains Executive Director; KCIA's first-party team page publishes her direct email and the organization phone. Included as out-of-state Ohio Valley ecosystem adjacency, not as an Ohio-based association. The Ohio Valley event organizer also lists KCIA as a trusted partner and Rachel Roberts as a speaker at its Cincinnati event. Event participation is distinguished from confirmed Ohio services."
+        },
+        "Source(s)": {
+          "before": "https://www.kycanna.org/ | https://www.kycanna.org/about | https://www.cannabismarketspotlight.com/ohiovalley",
+          "after": "https://www.kycanna.org/ | https://www.kycanna.org/about | https://www.cannabismarketspotlight.com/ohiovalley | Scoped editorial/evidence review 2026-10-13: https://www.cannabismarketspotlight.com/ohiovalley"
+        },
+        "Last Reviewed": {
+          "before": "2026-08-23",
+          "after": "2026-10-13"
+        },
+        "Service Area (as published)": {
+          "before": "Out of State",
+          "after": "Kentucky; Ohio event connection: Ohio Valley Cannabis Conference in Cincinnati; Ohio service coverage unconfirmed"
+        }
+      }
+    }
+  ],
+  "blocked": [
+    {
+      "organization_id": "org-9ee4b284a472",
+      "name": "Farkas Farms",
+      "attempted_on": "2026-10-13",
+      "sources": [
+        "https://farkasfarms.com/"
+      ],
+      "result": "Company site retrieval failed; unrelated dispensary brand profiles do not establish a company website.",
+      "next_action": "Confirm a company-controlled public website or contact from original intake evidence; retain missing-website review priority."
+    },
+    {
+      "organization_id": "org-0557619757dc",
+      "name": "Porcupine Defense Solutions",
+      "attempted_on": "2026-10-13",
+      "sources": [
+        "https://porcupinedefense.net/"
+      ],
+      "result": "Possible domain surfaced, but first-party content was inaccessible; not promoted from a third-party excerpt.",
+      "next_action": "Confirm a company-controlled public website or contact from original intake evidence; retain missing-website review priority."
+    },
+    {
+      "organization_id": "org-baee0f174df2",
+      "name": "Precise TB Solutions",
+      "attempted_on": "2026-10-13",
+      "sources": [],
+      "result": "Search by company name and Baltimore, Ohio address produced no reliable matching company-controlled website.",
+      "next_action": "Confirm a company-controlled public website or contact from original intake evidence; retain missing-website review priority."
+    },
+    {
+      "organization_id": "org-3af4221fa5d1",
+      "name": "SIPE Promotional Products",
+      "attempted_on": "2026-10-13",
+      "sources": [],
+      "result": "Search by name and OCHBS connection produced no reliable matching company-controlled website.",
+      "next_action": "Confirm a company-controlled public website or contact from original intake evidence; retain missing-website review priority."
+    }
+  ],
+  "normalization_changes": []
+}

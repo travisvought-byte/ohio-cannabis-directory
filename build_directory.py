@@ -315,9 +315,6 @@ __VHG_CSS__
   /* ---- records ------------------------------------------------------ */
   main{padding-top:.35rem}
   article{overflow-wrap:anywhere;padding:1.05rem 0; border-bottom:1px solid var(--rule)}
-  article.featured{border-top:2px solid #B08A2E; border-bottom-color:#B08A2E; background:linear-gradient(90deg,rgba(176,138,46,.10),transparent); padding:.9rem .65rem}
-  article.featured h2{color:#70530E}
-  .endorsement{display:inline-block; margin:.3rem 0 .05rem; padding:.12rem .4rem; border:1px solid #B08A2E; color:#60470C; background:#F6F0DE; font-size:.72rem; font-weight:700; letter-spacing:.035em; text-transform:uppercase}
   article h2{
     font-family:var(--sans); font-size:1.03rem; font-weight:600;
     margin:0 0 .18rem; line-height:1.3;
@@ -537,7 +534,7 @@ function record(r){
     bits.push(`<a href="mailto:${esc(email)}">${esc(email)}</a>`));
   splitPhones(r.phone).forEach(phone => {const href=telHref(phone);bits.push(href?`<a href="${esc(href)}">${esc(phone)}</a>`:`<span>${esc(phone)}</span>`)});
   splitField(r.web).filter(safeURL).forEach((web, i, all) =>
-    bits.push(`<a href="${esc(web)}" target="_blank" rel="noopener">${all.length > 1 ? `Website ${i + 1}` : 'Website'}</a>`));
+    bits.push(`<a href="${esc(web)}" target="_blank" rel="noopener">${r.person.includes('parent-company ownership contact') ? 'Parent-company contact' : all.length > 1 ? `Website ${i + 1}` : 'Website'}</a>`));
   if (!bits.length) bits.push('<span>No contact detail on file</span>');
 
   const sources = r.src.split('|').map(s => s.trim()).filter(Boolean)
@@ -545,11 +542,9 @@ function record(r){
       ? `<a href="${esc(s)}" target="_blank" rel="noopener">${esc(s)}</a>`
       : esc(s)).join('<br>');
 
-  const featured = r.org.startsWith('! ');
-  const displayOrg = featured ? r.org.slice(2) : r.org;
-  return `<article id="${esc(r.id)}"${featured ? ' class="featured"' : ''}>
+  const displayOrg = r.org;
+  return `<article id="${esc(r.id)}">
     <h2>${esc(displayOrg)}</h2>
-    ${featured ? '<p class="endorsement">Travis Vought’s personal, unpaid endorsement</p>' : ''}
     <p class="line"><span class="cat">${esc(r.cat)}</span>${r.area ? ' &nbsp;/&nbsp; ' + esc(r.area) : ''}</p>
     ${r.person ? `<p class="line">${esc(r.person)}</p>` : ''}
     ${r.keys ? `<p class="keys">${esc(r.keys)}</p>` : ''}
