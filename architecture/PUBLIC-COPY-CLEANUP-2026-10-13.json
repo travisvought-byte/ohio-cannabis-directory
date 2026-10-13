@@ -1,0 +1,474 @@
+{
+  "changed_on": "2026-10-13",
+  "method": "Editorial cleanup of existing evidence. No new source review, review date, organization inclusion or coverage claim. Original notes preserved below. Ohio street addresses distinguish location from unconfirmed service coverage.",
+  "changes": [
+    {
+      "organization_id": "org-18739a0f8994",
+      "name": "Cannabis CPA Tax",
+      "fields": {
+        "Notes": {
+          "before": "NUMERICAL CORRECTION, downward: this workbook recorded 25+ states; the current first-party site says clients in 19 states plus Washington, D.C. Figure corrected to match the source.",
+          "after": "The first-party site reports clients in 19 states plus Washington, D.C."
+        }
+      }
+    },
+    {
+      "organization_id": "org-c50b4831f060",
+      "name": "Advanced Flower Capital",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Lending / Financing",
+          "after": "Banking & Financial Services; Lending / Financing"
+        }
+      }
+    },
+    {
+      "organization_id": "org-dc2a86e5ef89",
+      "name": "Aeropay",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services",
+          "after": "Banking & Financial Services"
+        }
+      }
+    },
+    {
+      "organization_id": "org-c13fe6d752cb",
+      "name": "Alta Real Estate Fund",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Lending / Financing",
+          "after": "Banking & Financial Services; Lending / Financing"
+        }
+      }
+    },
+    {
+      "organization_id": "org-60c467ab6634",
+      "name": "Atomic Credit Union",
+      "fields": {
+        "Service Area": {
+          "before": "Multistate, Ohio unconfirmed",
+          "after": "Ohio regional: 711 Beaver Creek Rd., Piketon, OH 45661 (address only; service coverage unconfirmed)"
+        },
+        "Capabilities / Keywords": {
+          "before": "Banking and Financial Services",
+          "after": "Banking & Financial Services"
+        }
+      }
+    },
+    {
+      "organization_id": "org-6ad7a467953f",
+      "name": "Bankcard International Group",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Payments / Merchant Services",
+          "after": "Banking & Financial Services; Payments / Merchant Services"
+        }
+      }
+    },
+    {
+      "organization_id": "org-82830b7eeca7",
+      "name": "CANNA-ATM",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services",
+          "after": "Banking & Financial Services"
+        }
+      }
+    },
+    {
+      "organization_id": "org-def97ffbd151",
+      "name": "CanPay",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services",
+          "after": "Banking & Financial Services"
+        }
+      }
+    },
+    {
+      "organization_id": "org-766e9c078cff",
+      "name": "Chicago Atlantic",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Lending / Financing",
+          "after": "Banking & Financial Services; Lending / Financing"
+        }
+      }
+    },
+    {
+      "organization_id": "org-664350edc53d",
+      "name": "Community Choice Credit Union",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Credit Union",
+          "after": "Banking & Financial Services; Credit Union"
+        }
+      }
+    },
+    {
+      "organization_id": "org-59b372097b38",
+      "name": "Dama Financial (LeafLink Financial Services)",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Lending / Financing",
+          "after": "Banking & Financial Services; Lending / Financing"
+        }
+      }
+    },
+    {
+      "organization_id": "org-7eeb5665decf",
+      "name": "Dispo ATM",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services",
+          "after": "Banking & Financial Services"
+        }
+      }
+    },
+    {
+      "organization_id": "org-24d0e2bda395",
+      "name": "Element Federal Credit Union",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Credit Union",
+          "after": "Banking & Financial Services; Credit Union"
+        }
+      }
+    },
+    {
+      "organization_id": "org-786e79f39a46",
+      "name": "Fincann",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services",
+          "after": "Banking & Financial Services"
+        }
+      }
+    },
+    {
+      "organization_id": "org-42e1996cbd8f",
+      "name": "Fort Yuma ATM",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services",
+          "after": "Banking & Financial Services"
+        }
+      }
+    },
+    {
+      "organization_id": "org-e53c053a5970",
+      "name": "FundCanna",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Lending / Financing",
+          "after": "Banking & Financial Services; Lending / Financing"
+        }
+      }
+    },
+    {
+      "organization_id": "org-9e3d7601ef7a",
+      "name": "FundNow Capital",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Lending / Financing",
+          "after": "Banking & Financial Services; Lending / Financing"
+        }
+      }
+    },
+    {
+      "organization_id": "org-8ef8dba29f38",
+      "name": "HSLC Banking & Financial Services",
+      "fields": {
+        "Service Area": {
+          "before": "Multistate, Ohio unconfirmed",
+          "after": "Ohio regional: 116 East Franklin Street, Kenton, OH 43326 (address only; service coverage unconfirmed)"
+        },
+        "Capabilities / Keywords": {
+          "before": "Banking and Financial Services",
+          "after": "Banking & Financial Services"
+        }
+      }
+    },
+    {
+      "organization_id": "org-20924604b09b",
+      "name": "Lazear Capital Partners",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Lending / Financing",
+          "after": "Banking & Financial Services; Lending / Financing"
+        }
+      }
+    },
+    {
+      "organization_id": "org-ed0c0107656d",
+      "name": "Needham Bank",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Bank",
+          "after": "Banking & Financial Services; Bank"
+        }
+      }
+    },
+    {
+      "organization_id": "org-a9589fb802ab",
+      "name": "Paybotic Financial",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Lending / Financing",
+          "after": "Banking & Financial Services; Lending / Financing"
+        }
+      }
+    },
+    {
+      "organization_id": "org-e3c3a5e8a05d",
+      "name": "ReeFi Capital",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Lending / Financing",
+          "after": "Banking & Financial Services; Lending / Financing"
+        }
+      }
+    },
+    {
+      "organization_id": "org-b1c9597ee969",
+      "name": "Safe Harbor Financial",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Lending / Financing",
+          "after": "Banking & Financial Services; Lending / Financing"
+        }
+      }
+    },
+    {
+      "organization_id": "org-dcad275fd858",
+      "name": "SALT",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services",
+          "after": "Banking & Financial Services"
+        }
+      }
+    },
+    {
+      "organization_id": "org-0f09d67b057c",
+      "name": "Shield Compliance",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Regulatory Compliance",
+          "after": "Banking & Financial Services; Regulatory Compliance"
+        }
+      }
+    },
+    {
+      "organization_id": "org-b1fa2893922c",
+      "name": "Solvent",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Payments / Merchant Services",
+          "after": "Banking & Financial Services; Payments / Merchant Services"
+        }
+      }
+    },
+    {
+      "organization_id": "org-6fa17f19ae5f",
+      "name": "Spendr",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services",
+          "after": "Banking & Financial Services"
+        }
+      }
+    },
+    {
+      "organization_id": "org-65199f65fc19",
+      "name": "Upwise Capital",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Lending / Financing",
+          "after": "Banking & Financial Services; Lending / Financing"
+        }
+      }
+    },
+    {
+      "organization_id": "org-a5f1518ea942",
+      "name": "Wright-Patt Credit Union",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Credit Union",
+          "after": "Banking & Financial Services; Credit Union"
+        }
+      }
+    },
+    {
+      "organization_id": "org-64ee2d0eff77",
+      "name": "Canopy Growth / Acreage",
+      "fields": {
+        "Notes": {
+          "before": "Current Acreage organizational media/press routes added. Patrick Corrigan's direct address is not publicly posted; use the company route and name him in the inquiry. Retail location contacts are maintained separately on row 119, The Botanist (Acreage Holdings); leave the corporate phone blank.",
+          "after": "Acreage publishes organizational media/press contact routes. Patrick Corrigan's direct email is not publicly posted; use the company route and name him in the inquiry. Retail location contacts are listed separately under The Botanist (Acreage Holdings)."
+        }
+      }
+    },
+    {
+      "organization_id": "org-40726ffc20a0",
+      "name": "Greenlight Dispensary",
+      "fields": {
+        "Notes": {
+          "before": "Current Ohio location page confirms six Greenlight storefronts. Columbus at 1243 N. Cassady uses the former Verdant location and phone; the historical Verdant cross-reference is preserved out of scope at row 448. Batch 3 resolves 10b VC5 Holdings LLC / CCD000209-00 to Greenlight South Point by the exact 211 Township Rd 1013 address; keep one Greenlight operator row.",
+          "after": "The reviewed Ohio location page lists six Greenlight storefronts. Columbus at 1243 N. Cassady uses the former Verdant location and phone; Verdant remains a historical cross-reference. The South Point storefront at 211 Township Rd 1013 matches DCC legal entity 10b VC5 Holdings LLC / CCD000209-00."
+        }
+      }
+    },
+    {
+      "organization_id": "org-d480f46274ac",
+      "name": "Ohio Cannabis Company",
+      "fields": {
+        "Notes": {
+          "before": "Consolidated the duplicate legal-name record from row 471. Ohio Cannabis Company is the consumer brand of The Green Goat Dispensary, LLC. The current official site shows five open locations and Canal Winchester coming soon; the DCC roster lists five certificates of operation plus the Canal Winchester provisional license. The former Coshocton store is historical and is not counted as current.",
+          "after": "Ohio Cannabis Company is the consumer brand of The Green Goat Dispensary, LLC. The reviewed official site lists five open locations and Canal Winchester coming soon; the dated DCC roster lists five certificates of operation plus the Canal Winchester provisional license. The former Coshocton store is historical."
+        }
+      }
+    },
+    {
+      "organization_id": "org-27266ffaa5f7",
+      "name": "CIS Insurance Services, LLC (The Cannabis Insurance Company)",
+      "fields": {
+        "Notes": {
+          "before": "CORRECTION OF A PRIOR ERROR IN THIS WORKBOOK. This row previously conflated two separate companies: it carried thecannabisinsurancecompany.com (which is CIS Insurance Services, LLC, a Colorado MGA/wholesale broker led by Lisa Chaumont) alongside phone numbers 877-420-0042 / 818-996-0900 that actually belong to CannabisInsurance.com / 420Insurance.com, an unrelated operation. Independently confirmed via NCIA member news and CIS's own About page. This row is now CIS only; the other company was split out to its own record. Note a minor source discrepancy: NCIA lists Lisa Chaumont's direct line as 303-495-3375 while the audit gives the company line as 303-495-3362.",
+          "after": "CIS Insurance Services, LLC is a Colorado MGA/wholesale broker led by Lisa Chaumont, operating as The Cannabis Insurance Company. CannabisInsurance.com / 420Insurance.com is a separate organization with a separate listing. Source discrepancy: NCIA lists Chaumont's direct line as 303-495-3375, while the earlier company-source audit recorded 303-495-3362 as the company line; confirm the appropriate number directly."
+        }
+      }
+    },
+    {
+      "organization_id": "org-d86de7bab0cc",
+      "name": "HUB International",
+      "fields": {
+        "Notes": {
+          "before": "Flag cleared: 614-453-4400 is a current first-party Columbus office number, and HUB currently lists cannabis-dispensary insurance among its Columbus services. This resolves an earlier \"unconfirmed phone\" caveat in this workbook. No named individual contact published/found — organizational contact route above is the best current public route.",
+          "after": "HUB publishes 614-453-4400 for its Columbus office and lists cannabis-dispensary insurance among the office's services. No named individual contact was established; use the organizational contact route."
+        }
+      }
+    },
+    {
+      "organization_id": "org-0b73ca0a2058",
+      "name": "Spire Insurance Solutions",
+      "fields": {
+        "Notes": {
+          "before": "Flag cleared: the thespireteam.com email domain is NOT a mismatch — Spire's own current website publishes service@thespireteam.com alongside 800-686-8664. This reverses an earlier caveat in this workbook that treated the domain difference as suspicious. Current Ohio cannabis coverage confirmed. Spire's cannabis page identifies Bartosh as a primary person on cannabis accounts specifically, not merely a corporate executive.",
+          "after": "Spire's official website publishes service@thespireteam.com and 800-686-8664. Its cannabis page confirms Ohio cannabis coverage and identifies Bartosh as a primary cannabis-account contact."
+        }
+      }
+    },
+    {
+      "organization_id": "org-dbc1ce44da4b",
+      "name": "Canna Business Resources",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Lending / Financing",
+          "after": "Banking & Financial Services; Lending / Financing"
+        }
+      }
+    },
+    {
+      "organization_id": "org-a1cec0bdea80",
+      "name": "CannaCard",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Payments / Merchant Services",
+          "after": "Banking & Financial Services; Payments / Merchant Services"
+        }
+      }
+    },
+    {
+      "organization_id": "org-12c2e0c4f6ba",
+      "name": "Ohio Cannabis Company (The Green Goat Dispensary, LLC)",
+      "fields": {
+        "Notes": {
+          "before": "Moved out of the publishable operator category as an exact duplicate of Ohio Cannabis Company at row 24. Founders, DCC legal-entity lineage, license coverage and current location status were merged into row 24. The former Coshocton store remains historical and is not counted as current. This row is retained only for audit provenance.",
+          "after": "Duplicate legal-entity cross-reference for Ohio Cannabis Company. Founders, DCC legal-entity lineage, license coverage and location status are consolidated in that listing. The former Coshocton store is historical. This reference is not a separate current referral target."
+        }
+      }
+    },
+    {
+      "organization_id": "org-3e265df87388",
+      "name": "Pelorus Capital Group",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services; Lending / Financing",
+          "after": "Banking & Financial Services; Lending / Financing"
+        }
+      }
+    },
+    {
+      "organization_id": "org-66aa2a6e5de9",
+      "name": "RISE Dispensaries Ohio (duplicate of Green Thumb Industries (RISE / RYTHM))",
+      "fields": {
+        "Notes": {
+          "before": "Duplicate identified in the operator pass. Green Thumb Industries (RISE / RYTHM) already existed at Directory row 81 before this row was added, so the claim that this was a genuine gap was refuted. Verified DCC cultivation, processing and retail detail has been consolidated into the original row. The current RISE site presents six Ohio storefronts; the additional active GTI Ohio Middletown license is retained as a legal-footprint fact with its consumer DBA unconfirmed. This row is not a separate publishable organization.",
+          "after": "Duplicate cross-reference for Green Thumb Industries (RISE / RYTHM), which holds the consolidated cultivation, processing and retail details. The reviewed RISE site lists six Ohio storefronts. An additional GTI Ohio Middletown license is retained as a legal-footprint fact; its consumer DBA is unconfirmed. This is not a separate public organization."
+        }
+      }
+    },
+    {
+      "organization_id": "org-93dc921a568f",
+      "name": "Treez / TreezPay (formerly Swifter; acquired)",
+      "fields": {
+        "Capabilities / Keywords": {
+          "before": "Banking / Financial Services",
+          "after": "Banking & Financial Services"
+        }
+      }
+    },
+    {
+      "organization_id": "org-d1b714cd9a3e",
+      "name": "Verdant Creations (historical brand / DCC legal-name cross-reference)",
+      "fields": {
+        "Notes": {
+          "before": "Moved out of the publishable operator category as a historical-brand/legal-name cross-reference. Current Greenlight records show the former Verdant Columbus address and phone under Greenlight, and the current outreach route is consolidated at row 18. This row is retained for DCC and acquisition provenance only; it is not a standalone current referral target.",
+          "after": "Historical brand and DCC legal-name cross-reference. Greenlight uses the former Verdant Columbus address and phone; current outreach routes are listed under Greenlight Dispensary. This reference is not a standalone current referral target."
+        }
+      }
+    },
+    {
+      "organization_id": "org-19bab7f0dc74",
+      "name": "Studio Bliss",
+      "fields": {
+        "Notes": {
+          "before": "NUMERICAL CORRECTION: this workbook recorded \"30+ states documented\"; the current site says 27+ U.S. states. Figure corrected downward to match the source. Ohio availability is separately settled — Studio Bliss now has an explicit Ohio cannabis facility-design offering. Documented current provider relationships: a January 2026 strategic partnership with PufCreativ (brand/digital strategy paired with architectural design) and a marketing engagement with TRIP, whose current case study describes effectively serving as Studio Bliss's marketing department (website rebuild, national SEO, content, social, email, executive branding; TRIP reports an estimated 14x return over 12 months). Both PufCreativ and TRIP are entries in this Directory. Neither relationship is Ohio-specific based on available evidence.",
+          "after": "The reviewed site reports work in 27+ U.S. states. Ohio availability is separately settled — Studio Bliss now has an explicit Ohio cannabis facility-design offering. Documented current provider relationships: a January 2026 strategic partnership with PufCreativ (brand/digital strategy paired with architectural design) and a marketing engagement with TRIP, whose current case study describes effectively serving as Studio Bliss's marketing department (website rebuild, national SEO, content, social, email, executive branding; TRIP reports an estimated 14x return over 12 months). Both PufCreativ and TRIP are entries in this Directory. Neither relationship is Ohio-specific based on available evidence."
+        }
+      }
+    },
+    {
+      "organization_id": "org-70fa704deee5",
+      "name": "Terrapin Construction Group",
+      "fields": {
+        "Notes": {
+          "before": "Correction to an earlier note in this workbook, which had swung too far the other way. An earlier pass corrected a wrong \"Columbus-based\" claim by stating Terrapin is Denver-HQ with only general Ohio project experience; that understated it. Terrapin currently has a Columbus-specific cannabis construction presence and documents an AYR Wellness project in Cleveland. Nationwide geography retained, Ohio/Columbus activity restored explicitly. Chosen deliberately over a generic senior executive: Goodin leads early-stage project strategy and client engagement through contract execution. Documented client relationship: AYR Wellness, a 60,000 SF Cleveland, OH cannabis facility — construction administration through occupancy, per Terrapin's own current project portfolio.",
+          "after": "Terrapin has a Columbus-specific cannabis construction presence and documents an AYR Wellness project in Cleveland. Nationwide coverage is retained alongside the documented Ohio activity. Goodin leads early-stage project strategy and client engagement through contract execution. Documented client relationship: AYR Wellness, a 60,000 SF Cleveland, OH cannabis facility, covering construction administration through occupancy per Terrapin's project portfolio."
+        }
+      }
+    },
+    {
+      "organization_id": "org-fc88c0cbff15",
+      "name": "Paragon Payroll",
+      "fields": {
+        "Notes": {
+          "before": "Cannabis payroll specialization current; the 650+ cannabis clients figure carried in this workbook is still published by Paragon itself.",
+          "after": "Paragon publishes cannabis payroll services and reports serving 650+ cannabis clients; the client count is a provider claim."
+        }
+      }
+    },
+    {
+      "organization_id": "org-baee0f174df2",
+      "name": "Precise TB Solutions",
+      "fields": {
+        "Service Area": {
+          "before": "Multistate, Ohio unconfirmed",
+          "after": "Ohio regional: 600 W. Market St., Suite B, Baltimore, OH 43105 (address only; service coverage unconfirmed)"
+        }
+      }
+    }
+  ]
+}

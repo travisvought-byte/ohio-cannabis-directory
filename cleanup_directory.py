@@ -11,6 +11,7 @@ def normalize(area):
  if any(x in s for x in ['nationwide','all 50 states','all u.s. states','including ohio','national','united states','north america']) and not any(x in s for x in ['no ohio','unconfirmed']):return 'Nationwide incl. Ohio' if any(x in s for x in ['nationwide','all 50','all u.s.','including ohio']) or ('ohio' in s and any(x in s for x in ['national','united states'])) else 'Multistate, Ohio unconfirmed'
  if 'statewide' in s:return 'Ohio statewide'
  if 'ohio' in s or any(x in s for x in ['columbus','cleveland','cincinnati','dayton','toledo','akron','portsmouth','mount orab','morrow','knox','willoughby','springdale','wilmington']):return 'Ohio regional: '+(area if s!='ohio' else 'Ohio (extent unspecified)')
+ if re.search(r'\bOH\s+\d{5}(?:-\d{4})?\b',area):return 'Ohio regional: '+area+' (address only; service coverage unconfirmed)'
  return 'Multistate, Ohio unconfirmed'
 def main():
  p=ROOT/'data/directory.json';d=json.loads(p.read_text());changed=[];unknown=[]

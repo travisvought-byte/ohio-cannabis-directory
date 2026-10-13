@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""Build a self-contained, searchable HTML page from the Ohio Cannabis
-Ecosystem Directory master workbook.
+"""Build the searchable directory from canonical repository JSON.
 
-No external network dependencies at runtime: data, styles and script are
-all inlined so the page works on bad conference wifi or fully offline.
+The generated HTML includes a crawlable fallback and loads a local static
+JSON payload for interactive search; no external directory API is required.
 """
 import json
 import html

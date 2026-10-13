@@ -6,7 +6,7 @@ A source-verified map of who serves what in Ohio cannabis: operators, service pr
 
 The current dataset contains **564 organizations**, including **515 publishable organizations across 16 categories**, 48 deliberately retained out-of-scope records, and one withdrawn public listing. Those retained records keep renamed, acquired, superseded, or otherwise relevant organizations findable. The repository also includes 60 documented business-to-business relationships.
 
-**Current site release:** 4.34 · October 13, 2026.
+**Current site release:** 4.35 · October 13, 2026.
 
 Searches and filters persist in shareable URLs. Every organization has a permanent record link. [Who works with whom?](https://travisvought-byte.github.io/ohio-cannabis-directory/relationships.html) makes all 60 documented relationships searchable, with organization links and source evidence.
 
@@ -25,6 +25,8 @@ The election-season Libertarian Party of Ohio entry is a clearly labeled persona
 The canonical dataset retains every original organization ID. Owner-confirmed withdrawals are excluded from public listing views, intake indexes and compatibility CSVs; the original record remains in repository history. Its canonical source is now `data/directory.json`, separating organizations, service routes, evidence, relationships, rules and state configuration. Compatibility CSVs preserve the original fields, IDs and provenance.
 
 If you need mold remediation, cash logistics, packaging, MRB banking, staffing, compliance support, or another specific service, search the capability rather than guessing the category.
+
+Historical counts in the changelog describe those releases, not the current dataset. Published GitHub archives are listed on the [Releases page](https://github.com/travisvought-byte/ohio-cannabis-directory/releases); a site version does not automatically create an archived release. Zenodo metadata is prepared in the repository, but no issued DOI is claimed.
 
 ## Repository contents
 
@@ -49,7 +51,7 @@ The public site works without an external directory API. The primary industry di
 
 ## Evidence-review priorities
 
-Review work is prioritized ahead of catalog expansion. The [review queue](architecture/REVIEW_QUEUE.md) ranks named open issues, undated Ohio operators/labs/community resources, missing websites, and remaining business providers. The October 12 batch reviewed 10 previously undated listings. The October 13 contact batch added four missing website routes and dated two more previously undated listings, A further 42 scoped contact/service reviews established dates for 40 previously undated listings, leaving four public listings without a recorded review date and four without a website. Eight attempted reviews remain blocked or incomplete; blocked attempts receive no fresh date. Missing websites now enter P1 independently of an existing review date. Field-level sources, changes and unresolved limits are preserved in `data/reviews/`; a review date does not imply that every contact, license, inventory or shipping claim was reverified. Blocked retrievals remain in the queue without a new review date. Regenerate with `python build_review_queue.py`.
+Review work is prioritized ahead of catalog expansion. The [review queue](architecture/REVIEW_QUEUE.md) ranks named open issues, undated Ohio operators/labs/community resources, missing websites, and remaining business providers. The October 12 batch reviewed 10 previously undated listings. The October 13 contact batch added four missing website routes and dated two more previously undated listings. A further 42 scoped contact/service reviews established dates for 40 previously undated listings, leaving four public listings without a recorded review date and four without a website. Eight attempted reviews remain blocked or incomplete; blocked attempts receive no fresh date. Missing websites now enter P1 independently of an existing review date. Field-level sources, changes and unresolved limits are preserved in `data/reviews/`; a review date does not imply that every contact, license, inventory or shipping claim was reverified. Blocked retrievals remain in the queue without a new review date. Regenerate with `python build_review_queue.py`.
 
 ## How entries are verified
 
@@ -85,10 +87,9 @@ GitHub issue forms require a GitHub account. `intake.html` is a separate field/o
 The directory builder generates `directory.html`; `build_home.py` generates the root `index.html` entry point, which forwards readers to the industry directory.
 
 ```bash
-pip install pandas
-python build_directory.py
-python build_intake.py
-python build_relationships.py
+pip install -r requirements.txt
+python export_directory.py
+python release_tools.py 4.35 2026-10-13
 python tests/check_data.py
 npm ci
 npm test
@@ -96,6 +97,8 @@ npm run test:browser
 ```
 
 `Last Reviewed` records an established evidence-review date, not a promise of present availability. Eight October 6 additions have dates supported by their audit; undated legacy records keep their original provenance until a review date is established. Preserve Record ID when correcting or renaming an existing organization.
+
+The rebuild requires only files in this repository, with `data/directory.json` as the authoritative source; no local workbook is needed. `export_directory.py` regenerates the compatibility downloads. Use the existing version/date from `release.json` when rebuilding without publishing a new version.
 
 The public build uses the date in `release.json` and is reproducible. GitHub Actions verifies CSV/page synchronization, release metadata, phone normalization, URL filters, relationship navigation, offline intake/export, mobile width and print behavior.
 

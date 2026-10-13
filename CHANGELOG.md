@@ -1,3 +1,10 @@
+# v4.35 - October 13, 2026
+
+- Corrected three Ohio street-address geography labels without claiming verified service coverage or a new review.
+- Standardized banking capability labels across 32 records; existing category filters remain unchanged.
+- Replaced internal workbook/row-number notes in 13 records with reader-facing descriptions; preserved originals in the editorial audit.
+- Clarified current versus historical counts and repository-only rebuild instructions. No inclusion or endorsement changes.
+
 # v4.34 - October 13, 2026
 
 - Removed the Libertarian Party of Ohio listing’s special sorting priority. It now appears alphabetically with other organizations, including filtered results and the full text index; the endorsement text, label and stable organization ID are preserved.
@@ -185,7 +192,7 @@ Corrected VHG counties and current program description, MIF online-resource scop
 - Updated the dataset to 554 total records: 508 publishable organizations across 17 categories and 46 retained out-of-scope records.
 - Updated the searchable page, repository summary, citation, and Zenodo metadata for v4.2.
 
-Versions track the master workbook\. Each release states what changed and what evidence supported the change\.
+Older entries below record historical dataset counts and the workbook-based workflow at that time. Current builds use `data/directory.json`; see the README for current counts and rebuild instructions.
 
 ## v4.1 — 2026-09-26
 
@@ -200,7 +207,7 @@ Versions track the master workbook\. Each release states what changed and what e
 ## v4.0 — 2026-09-18
 
 - Prepared the first GitHub Pages release of the searchable directory\.
-- Current release dataset: 511 total records, 465 publishable organizations across 16 categories, and 46 deliberately retained out\-of\-scope records\.
+- Dataset at v4.0: 511 total records, 465 publishable organizations across 16 categories, and 46 deliberately retained out-of-scope records.
 - Includes 60 documented business\-to\-business relationships\.
 - Added `LICENSE` with CC BY 4\.0 terms for directory data and MIT terms for code\.
 - Added `CITATION.cff` and Zenodo release metadata\.
