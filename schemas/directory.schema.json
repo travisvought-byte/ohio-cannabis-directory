@@ -161,6 +161,9 @@
           },
           "url": {
             "type": "string"
+          },
+          "featured": {
+            "type": "boolean"
           }
         },
         "required": [

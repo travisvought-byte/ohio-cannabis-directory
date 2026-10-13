@@ -24,7 +24,7 @@
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "isAccessibleForFree": true,
   "keywords": ["Ohio", "cannabis", "business directory", "market map", "open data", "data provenance"],
-  "version": "4.31",
+  "version": "4.32",
   "dateModified": "2026-10-13",
   "creator": {"@type": "Person", "name": "Travis Vought"},
   "spatialCoverage": {"@type": "Place", "name": "Ohio, United States"},
@@ -187,8 +187,14 @@
   .empty p{margin:0 0 .5rem}
 
   .highlight-card{min-width:0}
-  .event-line{max-width:100%;display:flex;gap:1rem;overflow-x:auto;list-style:none;margin:.6rem 0 0;padding:.8rem 0;scroll-snap-type:x proximity}
-  .home-event{flex:0 0 min(22rem,85vw);border-top:3px solid var(--field-deep);padding:.7rem .7rem 0;scroll-snap-align:start}
+  .upcoming-events{margin:.9rem 0 1.2rem;padding:.8rem 1rem;background:#fff;border:1px solid var(--rule);border-top:4px solid var(--field)}
+  .upcoming-events h2{margin:0;font-size:1.1rem;color:var(--field-deep)}
+  .upcoming-events h2 span{font-size:.78rem;font-weight:400;color:var(--ink-soft)}
+  .event-line{max-width:100%;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr));gap:.8rem;list-style:none;margin:.7rem 0 0;padding:0}
+  .home-event{min-width:0;border-left:3px solid var(--rule);padding:.25rem 0 .1rem .8rem}
+  .home-event h3{font-family:var(--serif);font-size:1.08rem;line-height:1.25;margin:.15rem 0 .3rem;font-weight:600}
+  .home-event p{font-size:.82rem;margin:.2rem 0;color:var(--ink-soft)}
+  .event-featured{display:block;color:var(--field-deep);font-size:.66rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
   .home-event time{font-weight:700}.home-event a{display:inline-block;padding:.4rem 0;min-height:44px}
   @media print{.event-line{display:block;overflow:visible}.home-event{break-inside:avoid}}
   /* ---- footer ------------------------------------------------------- */
@@ -237,6 +243,11 @@
              aria-label="Search the directory">
       <button id="clear" type="button" aria-label="Clear search">&times;</button>
     </div>
+
+    <section class="upcoming-events" id="upcoming-card" aria-label="Upcoming Ohio cannabis events"><h2>Upcoming events <span>· next 3 months</span></h2><ol class="event-line" aria-label="Upcoming Ohio cannabis events">
+<li class="home-event"><span class="event-featured">Featured event</span><h3>Women’s Cannabis &amp; Wellness Expo</h3><p><time datetime="2026-11-07">Sat, Nov 7, 2026</time></p><p class="event-place">Marriott Cincinnati North · West Chester, Ohio</p><p><a href="https://medicateoh.com/womens-cannabis-expo-2/" target="_blank" rel="noopener">Event details</a></p></li>
+<li class="home-event"><h3>“Gardening” Industry Night</h3><p><time datetime="2026-10-27">Tue, Oct 27, 2026</time></p><p class="event-place">Stanley’s Pub · 323 Stanley Ave · Cincinnati, Ohio · 8–11 PM · 21+</p><p><a href="https://medicateoh.com/industry-night-cincinnati-1027/" target="_blank" rel="noopener">Event details</a></p></li>
+</ol></section>
 
     <div class="controls">
       <select id="cat" aria-label="Filter by category">
@@ -855,7 +866,7 @@
 </div></details>
 
 <footer class="wrap">
-  <p>Listings are not paid placements. Any sponsorship or business relationship with a listed organization is disclosed on its record.</p><p>A Veteran Home Guardians resource, compiled and maintained by Travis Vought. Built October 13, 2026 from release v4.31. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
+  <p>Listings are not paid placements. Any sponsorship or business relationship with a listed organization is disclosed on its record.</p><p>A Veteran Home Guardians resource, compiled and maintained by Travis Vought. Built October 13, 2026 from release v4.32. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
   <p class="update-contact">Additions and corrections: <a href="mailto:VeteranHomeGuardians@gmail.com?subject=Ohio%20Cannabis%20Directory%3A%20listing%20update&body=Organization%20or%20listing%20link%3A%0D%0A%0D%0AAddition%20or%20correction%3A%0D%0A%0D%0AWebsite%20or%20source%3A%0D%0A%0D%0A">VeteranHomeGuardians@gmail.com</a>.</p>
   <p><a href="intake.html">Capture organizations offline</a> · <a href="relationships.html">Browse 60 documented relationships</a> · <a href="b2b-relationships.csv">Download relationship data</a></p>
   <p>Out-of-scope records are kept rather than deleted so that renamed, acquired and superseded organizations stay findable. They are hidden by default.</p>
@@ -875,7 +886,7 @@ let showScope = false, shown = [];
 const esc = s => String(s).replace(/[&<>"]/g, c =>
   ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-const UPCOMING_EVENTS = [{"name":"Women’s Cannabis & Wellness Expo","date":"2026-11-07","place":"Marriott Cincinnati North · West Chester, Ohio","url":"https://medicateoh.com/events/"},{"name":"“Gardening” Industry Night","date":"2026-10-27","place":"Stanley’s Pub · 323 Stanley Ave · Cincinnati, Ohio · 8–11 PM · 21+","url":"https://www.eventbrite.com/e/gardening-industry-night-tickets-2002953936141"}];
+const UPCOMING_EVENTS = [{"name":"Women’s Cannabis & Wellness Expo","date":"2026-11-07","place":"Marriott Cincinnati North · West Chester, Ohio","url":"https://medicateoh.com/womens-cannabis-expo-2/","featured":true},{"name":"“Gardening” Industry Night","date":"2026-10-27","place":"Stanley’s Pub · 323 Stanley Ave · Cincinnati, Ohio · 8–11 PM · 21+","url":"https://medicateoh.com/industry-night-cincinnati-1027/"}];
 function renderHomeHighlights(){
   const today = new Date();
   today.setHours(0,0,0,0);
@@ -885,7 +896,7 @@ function renderHomeHighlights(){
     const [year, month, day] = event.date.split("-").map(Number);
     const date = new Date(year, month - 1, day);
     return date >= today && date <= limit;
-  }).sort((a,b) => a.date.localeCompare(b.date));
+  }).sort((a,b) => Number(Boolean(b.featured))-Number(Boolean(a.featured)) || a.date.localeCompare(b.date));
   const panel = $('upcoming-card');if(!panel)return;
   if (!upcoming.length){
     panel.innerHTML = '<h2>Upcoming events · next 3 months</h2><p class="home-empty">No confirmed event dates in this window.</p>';
@@ -895,8 +906,8 @@ function renderHomeHighlights(){
     const [year, month, day] = event.date.split("-").map(Number);
     return new Intl.DateTimeFormat(undefined, {weekday:"short", month:"short", day:"numeric", year:"numeric"}).format(new Date(year, month - 1, day));
   };
-  panel.innerHTML = '<h2>Upcoming events · next 3 months</h2><ol class="event-line" aria-label="Upcoming events in date order">' + upcoming.map(event =>
-    `<li class="home-event"><h3>${esc(event.name)}</h3><p><time datetime="${esc(event.date)}">${esc(dateLabel(event))}</time> · ${esc(event.place)}</p><p><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a></p></li>`
+  panel.innerHTML = '<h2>Upcoming events <span>· next 3 months</span></h2><ol class="event-line" aria-label="Upcoming Ohio cannabis events">' + upcoming.map(event =>
+    `<li class="home-event">${event.featured?'<span class="event-featured">Featured event</span>':''}<h3>${esc(event.name)}</h3><p><time datetime="${esc(event.date)}">${esc(dateLabel(event))}</time></p><p class="event-place">${esc(event.place)}</p><p><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a></p></li>`
   ).join('') + '</ol>';
 }
 renderHomeHighlights();

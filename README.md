@@ -6,11 +6,11 @@ A source-verified map of who serves what in Ohio cannabis: operators, service pr
 
 The current dataset contains **564 organizations**, including **516 publishable organizations across 16 categories** and 48 deliberately retained out-of-scope records. Those retained records keep renamed, acquired, superseded, or otherwise relevant organizations findable. The repository also includes 60 documented business-to-business relationships.
 
-**Current site release:** 4.31 · October 13, 2026.
+**Current site release:** 4.32 · October 13, 2026.
 
 Searches and filters persist in shareable URLs. Every organization has a permanent record link. [Who works with whom?](https://travisvought-byte.github.io/ohio-cannabis-directory/relationships.html) makes all 60 documented relationships searchable, with organization links and source evidence.
 
-**Directory-first navigation:** the root URL takes visitors directly to the searchable Ohio industry directory. Its search covers organizations, named contacts, services and locations; filters, permanent record URLs, and the full source-linked directory remain available. Consumer resources, educational tools and events are secondary navigation.
+**Directory-first navigation:** the root URL takes visitors directly to the searchable Ohio industry directory. Its search covers organizations, named contacts, services and locations; filters, permanent record URLs, and the full source-linked directory remain available. Upcoming events appear prominently beneath the directory search, with the Women’s Cannabis & Wellness Expo featured first and expired events removed automatically. Consumer resources and educational tools remain available through shared navigation.
 
 The site uses an Ohio State scarlet-and-gray color palette with accessible contrast and no university logos or marks.
 
