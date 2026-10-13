@@ -1,26 +1,25 @@
 # Evidence review queue
 
-As of 2026-10-12. Regenerate with `python build_review_queue.py`.
+As of 2026-10-13. Regenerate with `python build_review_queue.py`.
 
 P1: open issues, undated operators/labs/community resources or missing websites. P2: remaining undated business providers. Reviews at least 90 days old also enter the backlog. Blocked retrieval is an attempt, not a verified review.
 
-46 published listings lack a review date; 6 have a named open issue. Overlapping records appear once.
+44 published listings lack a review date; 6 have a named open issue. Overlapping records appear once.
 
 Historical evidence and editorial inclusion remain intact. A review date identifies the latest scoped evidence review; the audit records which fields were checked and which still need work.
 
 | Priority | Listing | Reason | Last review |
 | --- | --- | --- | --- |
+| P1 | [Precise TB Solutions](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-baee0f174df2) | Resolve the named open issue; No published website or contact-page route | 2026-10-06 |
+| P1 | [Farkas Farms](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-9ee4b284a472) | No published website or contact-page route | 2026-08-16 |
 | P1 | [Ohio Clean Leaf](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-7e1ab15e4a71) | No recorded evidence-review date | Not recorded |
+| P1 | [SIPE Promotional Products](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-3af4221fa5d1) | Resolve the named open issue; No published website or contact-page route | 2026-10-06 |
 | P1 | [Ohio Women’s Cannabis Chamber of Commerce](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-d124f071dca0) | Resolve the named open issue | 2026-10-06 |
-| P1 | [Precise TB Solutions](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-baee0f174df2) | Resolve the named open issue | 2026-10-06 |
-| P1 | [Pisgah Peaks Ventures](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-cde7d825c692) | No recorded evidence-review date | Not recorded |
 | P1 | [Mood Leaf](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-105e0713e773) | Resolve the named open issue | 2026-10-06 |
-| P1 | [Subsidio](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-139c66e61558) | No recorded evidence-review date | Not recorded |
-| P1 | [SIPE Promotional Products](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-3af4221fa5d1) | Resolve the named open issue | 2026-10-06 |
 | P1 | [! Libertarian Party of Ohio](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-d97a25fb6f85) | No recorded evidence-review date | Not recorded |
 | P1 | [North Linden Area Commission](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-7d813189790c) | No recorded evidence-review date | Not recorded |
 | P1 | [Courier Pro Logistics](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-fb49bcaddd77) | Resolve the named open issue | 2026-10-06 |
-| P1 | [Porcupine Defense Solutions](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-0557619757dc) | Resolve the named open issue; No recorded evidence-review date | Not recorded |
+| P1 | [Porcupine Defense Solutions](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-0557619757dc) | Resolve the named open issue; No published website or contact-page route; No recorded evidence-review date | Not recorded |
 | P1 | [CP Labs Ohio Operating Company, LLC](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-326247e5b9d0) | No recorded evidence-review date | Not recorded |
 | P2 | [InTrack CFO](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-337f14b85abe) | No recorded evidence-review date | Not recorded |
 | P2 | [Mindtrix](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-5e9b5a2704a6) | No recorded evidence-review date | Not recorded |
@@ -66,6 +65,9 @@ Historical evidence and editorial inclusion remain intact. A review date identif
 
 - **Ohio Clean Leaf** (2026-10-12): Company landing page only shows craft-cannabis identity. DCC search excerpt lists CCC000020-00 but full roster could not be read (HTTP 404 through direct retrieval). No fresh license verification or review date assigned. Next: Retrieve current DCC cultivator roster or license detail and verify the listed contact.
 - **Ohio Women’s Cannabis Chamber of Commerce** (2026-10-12): Listed domain could not be retrieved; exact-name searches did not identify a reliable replacement. Existing open issue retained. Do not substitute the unrelated Ohio Women’s Chamber of Commerce. Next: Confirm the exact organization and current website against original contact evidence.
+- **Farkas Farms** (2026-10-13): The bare domain returned only a redirect to a generic lander; no usable company-controlled website was established. Next: Confirm a current company website from the original public business contact; keep the dated record in the missing-website queue.
+- **SIPE Promotional Products** (2026-10-13): Exact-name searches did not establish a company-controlled website. Similarly named steel-rule-die businesses are not a verified match. Next: Reconcile the original expo card and exhibitor evidence with a public company route.
+- **Precise TB Solutions** (2026-10-13): Local business association lists Precise Tax & Bookkeeping Solutions LLC, but a company-controlled website and the exact alias were not established in this pass. Next: Use the original expo evidence to verify the business alias and direct public contact before resolving the existing issue.
 
 ## Completed reviews
 

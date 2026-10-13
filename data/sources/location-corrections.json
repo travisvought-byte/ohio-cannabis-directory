@@ -54,5 +54,19 @@
     "reason": "City spelling corrected against operator location page.",
     "source_url": "https://terrasanacannabisco.com/locations/middletown-cannabis-near-me-terrasana-ohio-dispensary/",
     "reviewed_on": "2026-10-10"
+  },
+  {
+    "license": "CCD000139-00",
+    "original": {
+      "user_stree": "10500 Antenucci Blvd Ste 200"
+    },
+    "corrected": {
+      "user_stree": "9601 Vista Way",
+      "user_lat": null,
+      "user_lon": null
+    },
+    "reason": "Operator now publishes 9601 Vista Way, Garfield Heights, OH 44125. Old map coordinates omitted until replacement coordinates are verified. License status remains unknown.",
+    "source_url": "https://terrasanacannabisco.com/locations/cleveland-medical-marijuana-dispensary/",
+    "reviewed_on": "2026-10-13"
   }
 ]

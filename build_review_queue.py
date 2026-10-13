@@ -21,6 +21,8 @@ def main():
         reasons = []
         if row['Verification Tier'] == 'Open issue':
             reasons.append('Resolve the named open issue')
+        if not row['Website'].strip():
+            reasons.append('No published website or contact-page route')
         if not row['Last Reviewed']:
             reasons.append('No recorded evidence-review date')
         elif (date.fromisoformat(as_of) - date.fromisoformat(row['Last Reviewed'])).days >= 90:

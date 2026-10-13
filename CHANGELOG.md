@@ -1,3 +1,13 @@
+# v4.31 - October 13, 2026
+
+- Fixed missing-website review prioritization: a dated listing without a website now enters P1 independently of its other review flags.
+- Restored website/contact routes for Pisgah Peaks Ventures, Subsidio, U.S. Hemp Roundtable and Curaleaf Ohio. Corrected the Hemp Roundtable inbox spelling; added Subsidio’s published phone and Pisgah’s founder/services. Undated public records fell from 46 to 44; missing websites fell from eight to four. Blocked or unresolved website research remains documented.
+- Corrected four geographic filter labels from their existing evidence text without changing editorial inclusion or historical review dates.
+- Exposed 228 government-map phone numbers with snapshot labels. Added 20 first-party-reviewed store phone/site routes and public-brand directory links while keeping original legal entities and map evidence intact. Contacts have scoped dates and supporting evidence; replacement-map changes require review before reuse.
+- Corrected Terrasana Garfield Heights to the operator-published 9601 Vista Way and excluded its old coordinates from distance sorting. No live license-status or inventory claim added.
+- Added Strains to shared primary navigation, footer and root fallback. Fixed the release helper to accept a real publication date and rebuild advocacy, lawmakers and the review queue.
+- Added regression checks for dated missing websites, conservative geography, reviewed versus snapshot contacts, changed store identities and mobile store-to-directory navigation.
+
 # v4.30 - October 12, 2026
 
 - Prioritized evidence reviews over expansion; added a reproducible P1/P2 backlog and field-scoped audit records.

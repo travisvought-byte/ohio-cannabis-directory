@@ -1,0 +1,158 @@
+{
+  "reviewed_on": "2026-10-13",
+  "baseline_commit": "cb51675",
+  "method": "Scoped first-party website/contact reviews; preserve historical evidence and editorial inclusion. Store contacts are matched by address/city to stable map license records; no live license or inventory inference.",
+  "completed": [
+    {
+      "organization_id": "org-cde7d825c692",
+      "name": "Pisgah Peaks Ventures",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://pisgahpeaksventures.com/",
+        "https://pisgahpeaksventures.com/contact/"
+      ],
+      "finding": "Company identifies Brandon Bobart as founder and describes cannabis marketing, lead generation, CRM, campaigns and fractional execution; current inquiry form is available.",
+      "limitations": "No direct phone or email was published on the currently reviewed contact page; older search excerpts were not promoted. Ohio expo provenance retained; no new Ohio client claim.",
+      "field_changes": {
+        "Website": {
+          "before": "",
+          "after": "https://pisgahpeaksventures.com/contact/"
+        },
+        "Contact Person": {
+          "before": "",
+          "after": "Brandon Bobart — Founder"
+        },
+        "Capabilities / Keywords": {
+          "before": "Advisory; Investment or Operations",
+          "after": "Advisory; Cannabis Marketing; Website and Messaging; Outbound and Lead Generation; CRM and Sales Systems; Content and Campaigns; Fractional Marketing Execution"
+        }
+      }
+    },
+    {
+      "organization_id": "org-139c66e61558",
+      "name": "Subsidio",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://www.subsidiocannabis.com/",
+        "https://www.subsidiocannabis.com/about",
+        "https://www.subsidiocannabis.com/contact"
+      ],
+      "finding": "First-party pages identify the Ohio family-run chocolate brand and publish its email, phone and contact form.",
+      "limitations": "Current DCC license status, individual store stock, product onset and therapeutic claims were not verified.",
+      "field_changes": {
+        "Website": {
+          "before": "",
+          "after": "https://www.subsidiocannabis.com/"
+        },
+        "Email": {
+          "before": "Info@SubsidioCannabis.com",
+          "after": "info@subsidiocannabis.com"
+        },
+        "Phone": {
+          "before": "",
+          "after": "440-731-0650"
+        },
+        "Capabilities / Keywords": {
+          "before": "Patient-focused Cannabis Brand",
+          "after": "Patient-focused Cannabis Brand; Edibles / Infused Products; Cannabis Chocolate"
+        }
+      }
+    },
+    {
+      "organization_id": "org-4d4b4fa99409",
+      "name": "U.S. Hemp Roundtable",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "2026-08-16",
+      "sources": [
+        "https://hempsupporter.com/contact/"
+      ],
+      "finding": "Official U.S. Hemp Roundtable contact page publishes the general inbox info@hempsupporter.com and an inquiry form; corrected the older hempsupporter domain spelling.",
+      "limitations": "No Ohio-specific chapter or contact established; existing national advocacy inclusion preserved.",
+      "field_changes": {
+        "Website": {
+          "before": "",
+          "after": "https://hempsupporter.com/contact/"
+        }
+      }
+    },
+    {
+      "organization_id": "org-6bb8b2a3ca4e",
+      "name": "Curaleaf Ohio",
+      "reviewed_on": "2026-10-13",
+      "prior_last_reviewed": "2026-08-14",
+      "sources": [
+        "https://oh.curaleaf.com/dispensary/ohio/curaleaf-newark"
+      ],
+      "finding": "Restored an official Curaleaf Ohio website route; direct retrieval reaches the company age-verification page.",
+      "limitations": "Age verification prevents review of the store details in this pass. Corporate contacts and historical ownership/license statements were not refreshed; no new operating-status or store-phone claim.",
+      "field_changes": {
+        "Website": {
+          "before": "",
+          "after": "https://oh.curaleaf.com/dispensary/ohio/curaleaf-newark"
+        }
+      }
+    }
+  ],
+  "blocked": [
+    {
+      "organization_id": "org-9ee4b284a472",
+      "name": "Farkas Farms",
+      "attempted_on": "2026-10-13",
+      "sources": [
+        "https://farkasfarms.com/"
+      ],
+      "result": "The bare domain returned only a redirect to a generic lander; no usable company-controlled website was established.",
+      "next_action": "Confirm a current company website from the original public business contact; keep the dated record in the missing-website queue."
+    },
+    {
+      "organization_id": "org-3af4221fa5d1",
+      "name": "SIPE Promotional Products",
+      "attempted_on": "2026-10-13",
+      "sources": [],
+      "result": "Exact-name searches did not establish a company-controlled website. Similarly named steel-rule-die businesses are not a verified match.",
+      "next_action": "Reconcile the original expo card and exhibitor evidence with a public company route."
+    },
+    {
+      "organization_id": "org-baee0f174df2",
+      "name": "Precise TB Solutions",
+      "attempted_on": "2026-10-13",
+      "sources": [
+        "https://www.baltimoreohiobusiness.org/business-listing.html"
+      ],
+      "result": "Local business association lists Precise Tax & Bookkeeping Solutions LLC, but a company-controlled website and the exact alias were not established in this pass.",
+      "next_action": "Use the original expo evidence to verify the business alias and direct public contact before resolving the existing issue."
+    }
+  ],
+  "normalization_changes": [
+    {
+      "organization_id": "org-20c268171121",
+      "name": "Ainslie Consulting",
+      "before": "Ohio regional: Chicago, Illinois; U.S. cannabis licensing and regulatory consulting; no Ohio engagement identified",
+      "after": "Multistate, Ohio unconfirmed",
+      "reason": "Controlled label corrected from existing evidence text; no new service-coverage verification or review date."
+    },
+    {
+      "organization_id": "org-89dcba7ce077",
+      "name": "N2 Packaging Systems",
+      "before": "Ohio regional: United States; U.S.-based service team, no Ohio customer identified",
+      "after": "Multistate, Ohio unconfirmed",
+      "reason": "Controlled label corrected from existing evidence text; no new service-coverage verification or review date."
+    },
+    {
+      "organization_id": "org-2586c0cc00fd",
+      "name": "Pollen Gear",
+      "before": "Ohio regional: United States; national brand, no Ohio customer identified",
+      "after": "Multistate, Ohio unconfirmed",
+      "reason": "Controlled label corrected from existing evidence text; no new service-coverage verification or review date."
+    },
+    {
+      "organization_id": "org-0557619757dc",
+      "name": "Porcupine Defense Solutions",
+      "before": "Ohio regional: Ohio opportunity; operating and service area not yet independently verified",
+      "after": "Multistate, Ohio unconfirmed",
+      "reason": "Controlled label corrected from existing evidence text; no new service-coverage verification or review date."
+    }
+  ]
+}

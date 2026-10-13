@@ -1,8 +1,9 @@
 """Import a saved government snapshot; no network access or freshness assumptions."""
-import hashlib,json
+import hashlib,json,re
 from location_validation import validate_location_fields
 from directory_data import ROOT
 SOURCE=ROOT/'data/sources/ohio-dispensaries.json'
+CONTACTS=ROOT/'data/sources/location-contacts.json'
 def stable(prefix,value):return prefix+hashlib.sha256(value.encode()).hexdigest()[:12]
 def normalize_row(row):
  r=dict(row)
@@ -31,6 +32,10 @@ def import_snapshot(data,snapshot):
   lat,lon=r['user_lat'],r['user_lon']
   valid_coordinates=isinstance(lat,(int,float)) and isinstance(lon,(int,float)) and 38<=lat<=43 and -85<=lon<=-80
   location={'id':lid,'organization_id':oid,'name':r['user_dispe'],'state':'OH','county':r['user_count'],'city':r['user_city'],'address':r['user_stree'],'postal_code':str(r['user_zip']).zfill(5),'latitude':lat,'longitude':lon,'license':{'number':r['user_licen'],'regulator':'Ohio Division of Cannabis Control','kind':'dual-use' if r['licensetype'] in ('Dual','Dual Use','Dual Use Dispensary') else 'other','status':'unknown'},'evidence_ids':[eid]}
+  phone=str(r.get('user_phone') or '').strip()
+  digits=re.sub(r'\D','',phone)
+  if len(digits)==10 or (len(digits)==11 and digits.startswith('1')):
+   location['snapshot_phone']=phone
   if not valid_coordinates:
    location.pop('latitude');location.pop('longitude')
   # Source-listed is deliberately distinct from a current license verification.
@@ -41,7 +46,28 @@ def import_snapshot(data,snapshot):
    existing=next((i for i,x in enumerate(data[key]) if x['id']==item['id']),None)
    if existing is None:data[key].append(item)
    else:data[key][existing]=item
+ apply_contact_reviews(data)
  return len(rows)
+
+def apply_contact_reviews(data):
+ if not CONTACTS.exists():return
+ locations={l['license']['number']:l for l in data['locations'] if l.get('license')}
+ organizations={o['id']:o for o in data['organizations']}
+ for review in json.loads(CONTACTS.read_text())['reviews']:
+  location=locations.get(review['license'])
+  if not location or any(location.get(k)!=v for k,v in review['expected_location'].items()):
+   raise ValueError('Location changed; re-review store contact '+review['license'])
+  linked=organizations.get(review['directory_organization_id'])
+  if not linked or linked.get('scope')!='public' or 'legacy_record' not in linked:
+   raise ValueError('Store contact needs a public directory listing: '+review['license'])
+  location['contact']={k:review[k] for k in ['public_name','website','phone','reviewed_on','directory_organization_id']}
+  eid=stable('ev-',location['id']+':store-contact')
+  evidence={'id':eid,'subject_id':location['id'],'claim':'location-contact','value':review['public_name']+'; '+review['website']+'; '+review['phone']+'; directory listing '+review['directory_organization_id'],
+            'source_url':review['source_url'],'source_kind':'provider','status':'source-reviewed','recorded_on':review['reviewed_on'],'reviewed_on':review['reviewed_on'],'recheck_on':review['recheck_on'],'limitations':review['limitations']}
+  if eid not in location['evidence_ids']:location['evidence_ids'].append(eid)
+  existing=next((i for i,x in enumerate(data['evidence']) if x['id']==eid),None)
+  if existing is None:data['evidence'].append(evidence)
+  else:data['evidence'][existing]=evidence
 def main():
  data=json.loads((ROOT/'data/directory.json').read_text());count=import_snapshot(data,json.loads(SOURCE.read_text()))
  (ROOT/'data/directory.json').write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n');print(f'Imported {count} source-listed locations; current license status unknown')

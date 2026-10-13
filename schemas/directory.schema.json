@@ -362,6 +362,44 @@
             "pattern": "^ev-[a-z0-9][a-z0-9-]*$"
           },
           "uniqueItems": true
+        },
+        "snapshot_phone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contact": {
+          "type": "object",
+          "properties": {
+            "public_name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "website": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https://"
+            },
+            "phone": {
+              "type": "string",
+              "pattern": "^\\d{3}-\\d{3}-\\d{4}$"
+            },
+            "reviewed_on": {
+              "type": "string",
+              "format": "date"
+            },
+            "directory_organization_id": {
+              "type": "string",
+              "pattern": "^org-[a-z0-9][a-z0-9-]*$"
+            }
+          },
+          "required": [
+            "public_name",
+            "website",
+            "phone",
+            "reviewed_on",
+            "directory_organization_id"
+          ],
+          "additionalProperties": false
         }
       },
       "required": [

@@ -39,6 +39,7 @@ nav a{min-height:44px;display:inline-flex;align-items:center}
 <a href="relationships.html">Business connections</a>
 <a href="locations.html">Find a dispensary</a>
 <a href="buyer-guide.html">Shop smart</a>
+<a href="ancestry.html">Strains</a>
 <a href="knowledge.html">Learn</a>
 <a href="resources.html">More resources</a>
 <a href="assessment.html">Business self-check</a>

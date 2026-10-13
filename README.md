@@ -6,7 +6,7 @@ A source-verified map of who serves what in Ohio cannabis: operators, service pr
 
 The current dataset contains **564 organizations**, including **516 publishable organizations across 16 categories** and 48 deliberately retained out-of-scope records. Those retained records keep renamed, acquired, superseded, or otherwise relevant organizations findable. The repository also includes 60 documented business-to-business relationships.
 
-**Current site release:** 4.30 · October 12, 2026.
+**Current site release:** 4.31 · October 13, 2026.
 
 Searches and filters persist in shareable URLs. Every organization has a permanent record link. [Who works with whom?](https://travisvought-byte.github.io/ohio-cannabis-directory/relationships.html) makes all 60 documented relationships searchable, with organization links and source evidence.
 
@@ -49,7 +49,7 @@ The public site works without an external directory API. The primary industry di
 
 ## Evidence-review priorities
 
-Review work is prioritized ahead of catalog expansion. The [review queue](architecture/REVIEW_QUEUE.md) ranks named open issues, undated Ohio operators/labs/community resources, missing websites, and remaining business providers. The first October 12 batch reviewed 10 previously undated listings, leaving 46 published listings without a recorded review date. Field-level sources, changes and unresolved limits are preserved in `data/reviews/2026-10-12.json`; a review date does not imply that every contact, license, inventory or shipping claim was reverified. Blocked retrievals remain in the queue without a new review date. Regenerate with `python build_review_queue.py`.
+Review work is prioritized ahead of catalog expansion. The [review queue](architecture/REVIEW_QUEUE.md) ranks named open issues, undated Ohio operators/labs/community resources, missing websites, and remaining business providers. The October 12 batch reviewed 10 previously undated listings. The October 13 contact batch added four missing website routes and dated two more previously undated listings, leaving 44 public listings without a recorded review date and four without a website. Missing websites now enter P1 independently of an existing review date. Field-level sources, changes and unresolved limits are preserved in `data/reviews/`; a review date does not imply that every contact, license, inventory or shipping claim was reverified. Blocked retrievals remain in the queue without a new review date. Regenerate with `python build_review_queue.py`.
 
 ## How entries are verified
 
@@ -123,9 +123,9 @@ The [shared directory contract](architecture/STATE_DIRECTORY_CONTRACT.md) define
 
 ### Location search
 
-[Find dispensary locations](https://travisvought-byte.github.io/ohio-cannabis-directory/locations.html?state=OH) supports city, county, address/ZIP search, shareable filters, directions and optional straight-line distance sorting. The 230 records are a government map snapshot retrieved 2026-10-10, not a claim of complete or currently operational coverage. Source update date is unknown; license status remains unknown. Three invalid source coordinate pairs are omitted from distance sorting.
+[Find dispensary locations](https://travisvought-byte.github.io/ohio-cannabis-directory/locations.html?state=OH) supports city, county, address/ZIP search, shareable filters, directions and optional straight-line distance sorting. The 230 records are a government map snapshot retrieved 2026-10-10, not a claim of complete or currently operational coverage. Source update date is unknown; license status remains unknown. Cards now expose 228 government-snapshot phones, explicitly labeled when not freshly reviewed. Twenty stores have first-party-reviewed phones, store websites and brand links to the business directory, checked October 13, 2026. The Garfield Heights Terrasana address is corrected to the operator-published 9601 Vista Way. Three invalid source coordinate pairs and the superseded Garfield Heights coordinate pair are omitted from distance sorting.
 
-`data/sources/ohio-dispensaries.json` preserves the original response. Run `python import_locations.py`, `python validate_foundation.py data/directory.json`, then `python build_locations.py` after reviewing a replacement snapshot. Stable location IDs derive from state and license number; legal entities match only by exact unique name. No store hours or inventory claims are imported.
+`data/sources/ohio-dispensaries.json` preserves the original response. Run `python import_locations.py`, `python validate_foundation.py data/directory.json`, then `python build_locations.py` after reviewing a replacement snapshot. Stable location IDs derive from state and license number; legal entities match only by exact unique name. No store hours or inventory claims are imported. `data/sources/location-contacts.json` preserves reviewed store contacts separately; importing a replacement map rejects changed address/city matches until the contact overlay is re-reviewed. The original map legal entity remains separate from the public brand link.
 
 ## Growing strain guide and ancestry repository
 
@@ -133,7 +133,7 @@ The [shared directory contract](architecture/STATE_DIRECTORY_CONTRACT.md) define
 
 ### Cannabis knowledge
 
-`knowledge.html` provides 30 searchable explanations and buying tips covering definitions, product forms, processing, label units, batch reports and storage. General concepts cite public-health agencies and testing laboratories; Ohio labeling guidance cites the September 11, 2026 rule. Shared learning links connect every directory page with the strain library and knowledge hub. Rebuild with `python build_knowledge.py`; content and sources live in `data/knowledge.json`.
+`knowledge.html` provides 30 searchable explanations and buying tips covering definitions, product forms, processing, label units, batch reports and storage. General concepts cite public-health agencies and testing laboratories; Ohio labeling guidance cites the September 11, 2026 rule. A direct Strains link now appears in shared primary navigation and the footer, connecting every directory page with the strain library and knowledge hub. Rebuild with `python build_knowledge.py`; content and sources live in `data/knowledge.json`.
 
 ## Ohio cannabis advocacy
 

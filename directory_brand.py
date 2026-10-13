@@ -21,13 +21,13 @@ def brand_header():
             '<span><strong>Ohio Cannabis Directory</strong></span></a>'
             '<nav class="knowledge-links" aria-label="Primary">'
             '<a href="directory.html">Business directory</a><a href="locations.html">Find a dispensary</a>'
-            '<a href="buyer-guide.html">Shop smart</a><a href="knowledge.html">Learn</a>'
+            '<a href="buyer-guide.html">Shop smart</a><a href="ancestry.html">Strains</a><a href="knowledge.html">Learn</a>'
             '<a href="assessment.html">Business self-check</a><a href="advocacy.html">Advocacy</a>'
             '<a href="https://travisvought-byte.github.io/vhg-veteran-resident-guide/">Veteran Resident Guide</a></nav>')
 
 def brand_footer():
     return ('<footer class="site-footer"><nav aria-label="More resources">'
-            '<a href="relationships.html">Who works with whom</a><a href="seeds.html">Seeds &amp; growing supplies</a>'
+            '<a href="relationships.html">Who works with whom</a><a href="ancestry.html">Strains</a><a href="seeds.html">Seeds &amp; growing supplies</a>'
             '<a href="resources.html#community">Events</a><a href="resources.html">Resources by need</a>'
             '<a href="'+update_url()+'">Suggest a correction</a>'
             '<a href="https://github.com/travisvought-byte/ohio-cannabis-directory#readme">Methods &amp; sources</a>'

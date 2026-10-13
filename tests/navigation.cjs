@@ -1,5 +1,5 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),{JSDOM}=require('jsdom');
-const links=[['Advocacy','advocacy.html'],['Find a dispensary','locations.html'],['Shop smart','buyer-guide.html'],['Learn','knowledge.html'],['Business directory','directory.html'],['Business self-check','assessment.html']];
+const links=[['Advocacy','advocacy.html'],['Find a dispensary','locations.html'],['Shop smart','buyer-guide.html'],['Strains','ancestry.html'],['Learn','knowledge.html'],['Business directory','directory.html'],['Business self-check','assessment.html']];
 for(const name of fs.readdirSync('.').filter(n=>n.endsWith('.html'))){const d=new JSDOM(fs.readFileSync(name,'utf8')).window.document;
 if(name==='work-with-travis.html'){
   const nav=d.querySelector('nav[aria-label="Site navigation"]');

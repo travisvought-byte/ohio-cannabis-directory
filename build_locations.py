@@ -7,6 +7,11 @@ def build_page(data):
  states=[s for s in data['states'] if s['publication_status'] in ('live','pilot')]
  codes={s['code'] for s in states};evidence={e['id']:e for e in data['evidence']}
  locations=[dict(l,sources=[evidence[e] for e in l['evidence_ids']]) for l in data['locations'] if l['state'] in codes]
+ organizations={o['id']:o for o in data['organizations']}
+ for location in locations:
+  linked=organizations.get(location.get('contact',{}).get('directory_organization_id'))
+  if linked and linked.get('scope')=='public' and 'legacy_record' in linked:
+   location['directory_listing']={'id':linked['id'],'name':linked['name']}
  payload=dict(states=states,locations=locations)
  page=(ROOT/'templates/locations.html').read_text().replace('<script id="location-data" type="application/json">__DATA__</script>','').replace("JSON.parse(document.getElementById('location-data').textContent)",script_json(payload))
  return brand_page(externalize(page,script_json(payload),payload,'data/public-locations.json'))

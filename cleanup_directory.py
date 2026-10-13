@@ -5,6 +5,7 @@ ROOT=Path(__file__).parent
 def normalize(area):
  s=area.casefold().strip()
  if not s:return 'Multistate, Ohio unconfirmed'
+ if re.search(r'no (?:verified |current |currently verified )?ohio (?:client|customer|engagement|deployment|service|coverage)\b',s) or 'not yet independently verified' in s:return 'Multistate, Ohio unconfirmed'
  if any(x in s for x in ['no verified','no current ohio','not identified','not publicly identified','to confirm','no ohio client','unconfirmed']):return 'Multistate, Ohio unconfirmed'
  if s in ['out of state','oregon-based','los angeles, ca'] or (any(x in s for x in ['michigan only','outside ohio','not ohio']) and 'ohio-market' not in s):return 'Outside Ohio'
  if any(x in s for x in ['nationwide','all 50 states','all u.s. states','including ohio','national','united states','north america']) and not any(x in s for x in ['no ohio','unconfirmed']):return 'Nationwide incl. Ohio' if any(x in s for x in ['nationwide','all 50','all u.s.','including ohio']) or ('ohio' in s and any(x in s for x in ['national','united states'])) else 'Multistate, Ohio unconfirmed'
