@@ -62,6 +62,7 @@ def main():
         rec["_s"] = " ".join([
             rec["org"], rec["cat"], rec["keys"], rec["area"],
             rec["person"], rec["notes"], rec["type"], rec["area_original"],
+            *((rec["provider"] or {}).get(field, "") for field in ("serves", "coverage_note", "contact_note")),
         ]).lower()
         records.append(rec)
 
@@ -149,7 +150,8 @@ def main():
     page = page.replace("__CAT_OPTS__", cat_opts)
     help_routes = [('Banking & Financial Services', 'Banking'), ('Accounting & Tax', 'Accounting & tax'), ('Legal & Licensing', 'Legal & licensing'), ('Testing Labs', 'Testing labs'), ('Packaging & Labeling', 'Packaging & labels'), ('Staffing & HR', 'Staffing & HR'), ('Insurance', 'Insurance'), ('Security & Cash Logistics', 'Security & cash logistics')]
     from urllib.parse import urlencode, quote
-    page = page.replace('__HELP_ROUTES__', ''.join(f'<a class="btn help-route" href="directory.html?{html.escape(urlencode({"category": category}), quote=True)}" data-help="{html.escape(category, quote=True)}">{html.escape(label)}</a>' for category, label in help_routes))
+    help_actions = ['banking', 'accounting', 'legal', 'testing', 'packaging', 'staffing', 'insurance', 'security']
+    page = page.replace('__HELP_ROUTES__', ''.join(f'<a class="btn help-route" href="directory.html?{html.escape(urlencode({"category": category}), quote=True)}" data-help="{html.escape(category, quote=True)}" data-track="business-help:{action}">{html.escape(label)}</a>' for (category, label), action in zip(help_routes, help_actions)))
     event_subject = quote('Ohio cannabis event submission')
     event_body = quote('Event name:\nDate and time:\nVenue, city and county:\nOrganizer and public contact:\nOfficial event or registration link:\nAudience and age requirements:\nCost, if any:\n')
     page = page.replace('__EVENT_SUBMISSION__', f'mailto:veteranhomeguardians@gmail.com?subject={event_subject}&amp;body={event_body}')
@@ -280,6 +282,7 @@ __VHG_CSS__
     color:var(--ink-soft); cursor:pointer; padding:.2rem .35rem; display:none;
   }
   #clear:hover{color:var(--ink)}
+  #q::-webkit-search-cancel-button{-webkit-appearance:none}
 
   .controls{display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; padding-bottom:.9rem}
   select{
@@ -314,9 +317,6 @@ __VHG_CSS__
   /* ---- records ------------------------------------------------------ */
   main{padding-top:.35rem}
   article{overflow-wrap:anywhere;padding:1.05rem 0; border-bottom:1px solid var(--rule)}
-  article.featured{border-top:2px solid #B08A2E; border-bottom-color:#B08A2E; background:linear-gradient(90deg,rgba(176,138,46,.10),transparent); padding:.9rem .65rem}
-  article.featured h2{color:#70530E}
-  .endorsement{display:inline-block; margin:.3rem 0 .05rem; padding:.12rem .4rem; border:1px solid #B08A2E; color:#60470C; background:#F6F0DE; font-size:.72rem; font-weight:700; letter-spacing:.035em; text-transform:uppercase}
   article h2{
     font-family:var(--sans); font-size:1.03rem; font-weight:600;
     margin:0 0 .18rem; line-height:1.3;
@@ -334,6 +334,13 @@ __VHG_CSS__
   .contact span{color:#868E92}
   .business-help{margin:1rem 0}.business-help h2{font-size:1rem;margin:0 0 .5rem}.help-links{display:flex;flex-wrap:wrap;gap:.45rem}.help-route{min-height:44px;display:inline-flex;align-items:center}.help-route[aria-current="true"]{background:var(--field);color:white;border-color:var(--field)}
   .provider-details{margin:.55rem 0;padding:.6rem .75rem;background:var(--paper-deep);font-size:.84rem}.provider-details p{margin:.15rem 0}.provider-details a{color:var(--field-deep)}
+  #browse-extras>summary{display:none}
+  .search-active #browse-extras>summary{display:inline-flex;align-items:center}
+  #search-tools{margin-bottom:.7rem}
+  #browse-extras>summary::before,#search-tools>summary::before{content:'+ ';margin-right:.35rem}
+  #browse-extras[open]>summary::before,#search-tools[open]>summary::before{content:'− '}
+  #results{scroll-margin-top:1rem}
+  @media(max-width:40rem){.masthead{padding-left:1.1rem;padding-right:1.1rem}.search-active .controls{gap:.35rem}.search-active .controls select{flex:1 1 45%;min-width:0}.search-active .tally{margin:.2rem 0}}
 
   details{margin-top:.55rem}
   summary{
@@ -411,10 +418,12 @@ __VHG_CSS__
       <button id="clear" type="button" aria-label="Clear search">&times;</button>
     </div>
 
+    <details id="browse-extras" open><summary>Upcoming events and business help</summary>
     <section class="upcoming-events" id="upcoming-card" aria-label="Upcoming Ohio cannabis events">__HOME_EVENT_MARKUP__</section>
     <p class="event-submit"><a href="__EVENT_SUBMISSION__">Submit an Ohio cannabis event</a> · Include an official event link and organizer contact.</p>
 
     <section class="business-help" aria-labelledby="business-help-title"><h2 id="business-help-title">Find business help</h2><nav class="help-links" aria-label="Business help">__HELP_ROUTES__</nav></section>
+    </details>
 
     <div class="controls">
       <select id="cat" aria-label="Filter by category">
@@ -422,14 +431,15 @@ __VHG_CSS__
         __CAT_OPTS__
       </select>
       <select id="type" aria-label="Filter by organization type">
-        <option value="">Businesses and nonprofits</option>
+        <option value="">All types</option>
         __TYPE_OPTS__
       </select>
       <select id="area" aria-label="Filter by service area"><option value="">All service areas</option>__AREA_OPTS__</select>
       <p class="tally" id="tally" role="status" aria-live="polite"></p>
+      <button class="btn" id="reset-search" type="button" hidden>Reset filters</button>
     </div>
 
-    <details><summary>Browse all industry categories</summary><div class="lanes" id="lanes"></div></details>
+    <details id="search-tools"><summary>Search tools and all categories</summary><div class="lanes" id="lanes"></div>
 
     <div class="actions">
       <button class="btn" id="share">Copy search link</button><span id="share-status" role="status" aria-live="polite"></span>
@@ -438,6 +448,7 @@ __VHG_CSS__
       <button class="btn" id="scope" aria-pressed="false">Show __N_SCOPE__ out-of-scope records</button>
       <a class="btn" href="__UPDATE_URL__">Email a listing update</a>
     </div>
+    </details>
   </div>
 </header>
 
@@ -536,19 +547,17 @@ function record(r){
     bits.push(`<a href="mailto:${esc(email)}">${esc(email)}</a>`));
   splitPhones(r.phone).forEach(phone => {const href=telHref(phone);bits.push(href?`<a href="${esc(href)}">${esc(phone)}</a>`:`<span>${esc(phone)}</span>`)});
   splitField(r.web).filter(safeURL).forEach((web, i, all) =>
-    bits.push(`<a href="${esc(web)}" target="_blank" rel="noopener">${all.length > 1 ? `Website ${i + 1}` : 'Website'}</a>`));
-  if (!bits.length) bits.push('<span>No contact detail on file</span>');
+    bits.push(`<a href="${esc(web)}" target="_blank" rel="noopener">${r.person.includes('parent-company ownership contact') ? 'Parent-company contact' : all.length > 1 ? `Website ${i + 1}` : 'Website'}</a>`));
+  if (!bits.length) bits.push(`<span>Public contact pending</span><a data-track="contact-correction" href="mailto:veteranhomeguardians@gmail.com?subject=${encodeURIComponent('Public contact for '+r.org)}&amp;body=${encodeURIComponent('Organization: '+r.org+'\nRecord ID: '+r.id+'\nOfficial website or public contact:\nEvidence link:\n')}">Submit a public contact</a>`);
 
   const sources = r.src.split('|').map(s => s.trim()).filter(Boolean)
     .map(s => safeURL(s)
       ? `<a href="${esc(s)}" target="_blank" rel="noopener">${esc(s)}</a>`
       : esc(s)).join('<br>');
 
-  const featured = r.org.startsWith('! ');
-  const displayOrg = featured ? r.org.slice(2) : r.org;
-  return `<article id="${esc(r.id)}"${featured ? ' class="featured"' : ''}>
+  const displayOrg = r.org;
+  return `<article id="${esc(r.id)}">
     <h2>${esc(displayOrg)}</h2>
-    ${featured ? '<p class="endorsement">Travis Vought’s personal, unpaid endorsement</p>' : ''}
     <p class="line"><span class="cat">${esc(r.cat)}</span>${r.area ? ' &nbsp;/&nbsp; ' + esc(r.area) : ''}</p>
     ${r.person ? `<p class="line">${esc(r.person)}</p>` : ''}
     ${r.keys ? `<p class="keys">${esc(r.keys)}</p>` : ''}
@@ -567,8 +576,13 @@ function record(r){
   </article>`;
 }
 
+let wasActive = false;
 function render(){
   shown = filtered();
+  const active=Boolean(qEl.value.trim()||catEl.value||typeEl.value||$('area').value||recordID||showScope);
+  document.body.classList.toggle('search-active',active);
+  if(active!==wasActive){$('browse-extras').open=!active;wasActive=active;}
+  $('reset-search').hidden=!active;
   history.replaceState(null,'',searchURL());
   $('single-record').hidden=!recordID;
   $('scope').setAttribute('aria-pressed',String(showScope));
@@ -636,6 +650,7 @@ $('dl').addEventListener('click', () => {
 
 $('share').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(searchURL().href);$('share-status').textContent='Link copied.'}catch{$('share-status').textContent='Copy the page address to share this search.'}});
 $('all-records').addEventListener('click',()=>{clearRecord();qEl.value='';catEl.value='';typeEl.value='';$('area').value='';showScope=false;syncLanes();render()});
+$('reset-search').addEventListener('click',()=>{$('all-records').click();qEl.focus();});
 window.addEventListener('popstate',()=>{loadSearch();syncLanes();render()});
 loadSearch();syncLanes();render();
 </script>

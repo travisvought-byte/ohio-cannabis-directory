@@ -24,8 +24,8 @@
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "isAccessibleForFree": true,
   "keywords": ["Ohio", "cannabis", "business directory", "market map", "open data", "data provenance"],
-  "version": "4.35",
-  "dateModified": "2026-10-13",
+  "version": "4.36",
+  "dateModified": "2026-10-14",
   "creator": {"@type": "Person", "name": "Travis Vought"},
   "spatialCoverage": {"@type": "Place", "name": "Ohio, United States"},
   "distribution": [
@@ -115,6 +115,7 @@
     color:var(--ink-soft); cursor:pointer; padding:.2rem .35rem; display:none;
   }
   #clear:hover{color:var(--ink)}
+  #q::-webkit-search-cancel-button{-webkit-appearance:none}
 
   .controls{display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; padding-bottom:.9rem}
   select{
@@ -149,9 +150,6 @@
   /* ---- records ------------------------------------------------------ */
   main{padding-top:.35rem}
   article{overflow-wrap:anywhere;padding:1.05rem 0; border-bottom:1px solid var(--rule)}
-  article.featured{border-top:2px solid #B08A2E; border-bottom-color:#B08A2E; background:linear-gradient(90deg,rgba(176,138,46,.10),transparent); padding:.9rem .65rem}
-  article.featured h2{color:#70530E}
-  .endorsement{display:inline-block; margin:.3rem 0 .05rem; padding:.12rem .4rem; border:1px solid #B08A2E; color:#60470C; background:#F6F0DE; font-size:.72rem; font-weight:700; letter-spacing:.035em; text-transform:uppercase}
   article h2{
     font-family:var(--sans); font-size:1.03rem; font-weight:600;
     margin:0 0 .18rem; line-height:1.3;
@@ -169,6 +167,13 @@
   .contact span{color:#868E92}
   .business-help{margin:1rem 0}.business-help h2{font-size:1rem;margin:0 0 .5rem}.help-links{display:flex;flex-wrap:wrap;gap:.45rem}.help-route{min-height:44px;display:inline-flex;align-items:center}.help-route[aria-current="true"]{background:var(--field);color:white;border-color:var(--field)}
   .provider-details{margin:.55rem 0;padding:.6rem .75rem;background:var(--paper-deep);font-size:.84rem}.provider-details p{margin:.15rem 0}.provider-details a{color:var(--field-deep)}
+  #browse-extras>summary{display:none}
+  .search-active #browse-extras>summary{display:inline-flex;align-items:center}
+  #search-tools{margin-bottom:.7rem}
+  #browse-extras>summary::before,#search-tools>summary::before{content:'+ ';margin-right:.35rem}
+  #browse-extras[open]>summary::before,#search-tools[open]>summary::before{content:'− '}
+  #results{scroll-margin-top:1rem}
+  @media(max-width:40rem){.masthead{padding-left:1.1rem;padding-right:1.1rem}.search-active .controls{gap:.35rem}.search-active .controls select{flex:1 1 45%;min-width:0}.search-active .tally{margin:.2rem 0}}
 
   details{margin-top:.55rem}
   summary{
@@ -246,13 +251,15 @@
       <button id="clear" type="button" aria-label="Clear search">&times;</button>
     </div>
 
+    <details id="browse-extras" open><summary>Upcoming events and business help</summary>
     <section class="upcoming-events" id="upcoming-card" aria-label="Upcoming Ohio cannabis events"><h2>Upcoming events <span>· next 3 months</span></h2><ol class="event-line" aria-label="Upcoming Ohio cannabis events">
 <li class="home-event"><span class="event-featured">Featured event</span><h3>Women’s Cannabis &amp; Wellness Expo</h3><p><time datetime="2026-11-07">Sat, Nov 7, 2026</time></p><p class="event-place">Marriott Cincinnati North · West Chester, Ohio</p><p><a href="https://medicateoh.com/womens-cannabis-expo-2/" target="_blank" rel="noopener">Event details</a></p><p><a href="https://www.eventbrite.com/e/womens-cannabis-wellness-expo-tickets-1993962022084" target="_blank" rel="noopener">Register / RSVP</a> · Checked 2026-10-13</p></li>
 <li class="home-event"><h3>“Gardening” Industry Night</h3><p><time datetime="2026-10-27">Tue, Oct 27, 2026</time></p><p class="event-place">Stanley’s Pub · 323 Stanley Ave · Cincinnati, Ohio · 8–11 PM · 21+</p><p><a href="https://medicateoh.com/industry-night-cincinnati-1027/" target="_blank" rel="noopener">Event details</a></p><p><a href="https://www.eventbrite.com/e/2002953936141/" target="_blank" rel="noopener">Register / RSVP</a> · Checked 2026-10-13</p></li>
 </ol></section>
     <p class="event-submit"><a href="mailto:veteranhomeguardians@gmail.com?subject=Ohio%20cannabis%20event%20submission&amp;body=Event%20name%3A%0ADate%20and%20time%3A%0AVenue%2C%20city%20and%20county%3A%0AOrganizer%20and%20public%20contact%3A%0AOfficial%20event%20or%20registration%20link%3A%0AAudience%20and%20age%20requirements%3A%0ACost%2C%20if%20any%3A%0A">Submit an Ohio cannabis event</a> · Include an official event link and organizer contact.</p>
 
-    <section class="business-help" aria-labelledby="business-help-title"><h2 id="business-help-title">Find business help</h2><nav class="help-links" aria-label="Business help"><a class="btn help-route" href="directory.html?category=Banking+%26+Financial+Services" data-help="Banking &amp; Financial Services">Banking</a><a class="btn help-route" href="directory.html?category=Accounting+%26+Tax" data-help="Accounting &amp; Tax">Accounting &amp; tax</a><a class="btn help-route" href="directory.html?category=Legal+%26+Licensing" data-help="Legal &amp; Licensing">Legal &amp; licensing</a><a class="btn help-route" href="directory.html?category=Testing+Labs" data-help="Testing Labs">Testing labs</a><a class="btn help-route" href="directory.html?category=Packaging+%26+Labeling" data-help="Packaging &amp; Labeling">Packaging &amp; labels</a><a class="btn help-route" href="directory.html?category=Staffing+%26+HR" data-help="Staffing &amp; HR">Staffing &amp; HR</a><a class="btn help-route" href="directory.html?category=Insurance" data-help="Insurance">Insurance</a><a class="btn help-route" href="directory.html?category=Security+%26+Cash+Logistics" data-help="Security &amp; Cash Logistics">Security &amp; cash logistics</a></nav></section>
+    <section class="business-help" aria-labelledby="business-help-title"><h2 id="business-help-title">Find business help</h2><nav class="help-links" aria-label="Business help"><a class="btn help-route" href="directory.html?category=Banking+%26+Financial+Services" data-help="Banking &amp; Financial Services" data-track="business-help:banking">Banking</a><a class="btn help-route" href="directory.html?category=Accounting+%26+Tax" data-help="Accounting &amp; Tax" data-track="business-help:accounting">Accounting &amp; tax</a><a class="btn help-route" href="directory.html?category=Legal+%26+Licensing" data-help="Legal &amp; Licensing" data-track="business-help:legal">Legal &amp; licensing</a><a class="btn help-route" href="directory.html?category=Testing+Labs" data-help="Testing Labs" data-track="business-help:testing">Testing labs</a><a class="btn help-route" href="directory.html?category=Packaging+%26+Labeling" data-help="Packaging &amp; Labeling" data-track="business-help:packaging">Packaging &amp; labels</a><a class="btn help-route" href="directory.html?category=Staffing+%26+HR" data-help="Staffing &amp; HR" data-track="business-help:staffing">Staffing &amp; HR</a><a class="btn help-route" href="directory.html?category=Insurance" data-help="Insurance" data-track="business-help:insurance">Insurance</a><a class="btn help-route" href="directory.html?category=Security+%26+Cash+Logistics" data-help="Security &amp; Cash Logistics" data-track="business-help:security">Security &amp; cash logistics</a></nav></section>
+    </details>
 
     <div class="controls">
       <select id="cat" aria-label="Filter by category">
@@ -275,7 +282,7 @@
 <option value="Testing Labs">Testing Labs</option>
       </select>
       <select id="type" aria-label="Filter by organization type">
-        <option value="">Businesses and nonprofits</option>
+        <option value="">All types</option>
         <option value="Business">Business</option>
 <option value="Cannabis industry events">Cannabis industry events</option>
 <option value="Individual">Individual</option>
@@ -285,9 +292,10 @@
       </select>
       <select id="area" aria-label="Filter by service area"><option value="">All service areas</option><option>Ohio statewide</option><option>Ohio regional</option><option>Nationwide incl. Ohio</option><option>Multistate, Ohio unconfirmed</option><option>Outside Ohio</option></select>
       <p class="tally" id="tally" role="status" aria-live="polite"></p>
+      <button class="btn" id="reset-search" type="button" hidden>Reset filters</button>
     </div>
 
-    <details><summary>Browse all industry categories</summary><div class="lanes" id="lanes"></div></details>
+    <details id="search-tools"><summary>Search tools and all categories</summary><div class="lanes" id="lanes"></div>
 
     <div class="actions">
       <button class="btn" id="share">Copy search link</button><span id="share-status" role="status" aria-live="polite"></span>
@@ -296,6 +304,7 @@
       <button class="btn" id="scope" aria-pressed="false">Show 48 out-of-scope records</button>
       <a class="btn" href="mailto:VeteranHomeGuardians@gmail.com?subject=Ohio%20Cannabis%20Directory%3A%20listing%20update&body=Organization%20or%20listing%20link%3A%0D%0A%0D%0AAddition%20or%20correction%3A%0D%0A%0D%0AWebsite%20or%20source%3A%0D%0A%0D%0A">Email a listing update</a>
     </div>
+    </details>
   </div>
 </header>
 
@@ -520,7 +529,7 @@
 <li><a href="https://dyspensr.com" rel="nofollow noopener">Dyspensr</a> — Ohio regional: Ohio market / OCHBS exhibitor — Wholesale Smoking Accessories and Retail Supply</li>
 <li><a href="https://drinksunflower.com/" rel="nofollow noopener">Fifty West Brewing Company / Sunflower Seltzers</a> — Ohio statewide — Hemp / CBD; Hemp-derived THC; THC Beverages; Manufacturing; Retail Distribution; Lab Results</li>
 <li><a href="https://gpen.com" rel="nofollow noopener">G Pen / Grenco Science</a> — Ohio regional: Ohio market / OCHBS exhibitor — Vape Hardware and Consumer Accessories</li>
-<li><a href="https://laurelcrest.com/" rel="nofollow noopener">Laurelcrest</a> — Outside Ohio — Hemp / CBD</li>
+<li><a href="https://laurelcrest.com/" rel="nofollow noopener">Laurelcrest</a> — Multistate, Ohio unconfirmed — Hemp / CBD</li>
 <li><a href="https://mojossmokeshop.com/" rel="nofollow noopener">Mojo&#x27;s Smoke Shop (formerly The Hemp House / Wholesale Hemp LLC)</a> — Ohio regional: Portsmouth and Wheelersburg, Ohio — Hemp / CBD; Dispensary / Retail</li>
 <li><a href="https://trymotivewellness.com/pages/contact-us" rel="nofollow noopener">Motive CBD</a> — Ohio regional: Columbus, Ohio (hemp grown in Centerburg, OH) — Hemp / CBD; CBD</li>
 <li><a href="https://nexusagriscience.com" rel="nofollow noopener">Nexus Agriscience</a> — Ohio regional: Ohio market / OCHBS exhibitor — Cannabis and Hemp Genetics; Ingredients and Research</li>
@@ -619,7 +628,7 @@
 <li><a href="https://www.rboinc.com" rel="nofollow noopener">RBO</a> — Multistate, Ohio unconfirmed — Brand Deployment; Print; Packaging and Fulfillment</li>
 <li><a href="https://rivalresponse.com/" rel="nofollow noopener">Rival Response</a> — Nationwide incl. Ohio — Marketing / Media; Advertising</li>
 <li><a href="https://www.scmpromotions.com" rel="nofollow noopener">SCM Promotions</a> — Ohio regional: Streetsboro, Ohio; Ohio cannabis market — Promotional products; Custom apparel; Branded merchandise; Cannabis swag; Trade show giveaways</li>
-<li><a href="https://seedless.media/cannabis-marketing-agency-cleveland-seedless-media/" rel="nofollow noopener">Seedless Media</a> — Outside Ohio — Marketing / Media; Media / Publication</li>
+<li><a href="https://seedless.media/cannabis-marketing-agency-cleveland-seedless-media/" rel="nofollow noopener">Seedless Media</a> — Ohio regional: Ohio-serving (Cleveland/Akron focus); headquartered in Tempe, Arizona — Marketing / Media; Media / Publication</li>
 <li><a href="https://www.signsbytomorrow.com/cincinnatinorth/" rel="nofollow noopener">Signs By Tomorrow Cincinnati North</a> — Ohio regional: Cincinnati / Southwest Ohio — Marketing / Media; Branding / Design; Signage / Graphics</li>
 <li>SIPE Promotional Products — Ohio regional: Ohio market / OCHBS exhibitor — Promotional Products and Branded Merchandise</li>
 <li><a href="https://spokesdigital.us/consultation-form/" rel="nofollow noopener">Spokes Digital</a> — Nationwide incl. Ohio — Marketing / Media</li>
@@ -642,10 +651,10 @@
 <li><a href="https://drugpolicy.org/about/" rel="nofollow noopener">Drug Policy Alliance</a> — Ohio regional: Ohio engagement / United States; no Ohio office — Nonprofit / Advocacy</li>
 <li><a href="https://www.geononprofit.org/contact" rel="nofollow noopener">Green Environmental Outreach (GEO Nonprofit)</a> — Ohio regional: Springfield, Columbus and Central Ohio — Nonprofit / Advocacy; Social Equity; Community Outreach; Policy Advocacy; Environmental Justice</li>
 <li><a href="https://www.theicecgroup.org/" rel="nofollow noopener">International Cannabis Education Coalition (ICEC)</a> — Nationwide incl. Ohio — Nonprofit / Advocacy; Education / Research; Patient Advocacy; Cannabis Safety; Community Outreach</li>
-<li><a href="https://www.kycanna.org/" rel="nofollow noopener">Kentucky Cannabis Industry Alliance</a> — Outside Ohio — Nonprofit / Advocacy</li>
+<li><a href="https://www.kycanna.org/" rel="nofollow noopener">Kentucky Cannabis Industry Alliance</a> — Multistate, Ohio unconfirmed — Nonprofit / Advocacy</li>
 <li><a href="https://www.lastprisonerproject.org/" rel="nofollow noopener">Last Prisoner Project</a> — Nationwide incl. Ohio — Nonprofit / Advocacy; Policy Advocacy</li>
 <li><a href="https://leaf411.org/services/" rel="nofollow noopener">LEAF411</a> — Nationwide incl. Ohio — Nonprofit / Advocacy</li>
-<li><a href="https://lpo.org/" rel="nofollow noopener">! Libertarian Party of Ohio</a> — Ohio statewide — Vote Don Kissick for Governor in November</li>
+<li><a href="https://lpo.org/" rel="nofollow noopener">Libertarian Party of Ohio</a> — Ohio statewide — Political Party; Cannabis Policy Advocacy</li>
 <li><a href="https://www.mpp.org/states/ohio/" rel="nofollow noopener">Marijuana Policy Project</a> — Nationwide incl. Ohio — Nonprofit / Advocacy; Policy Advocacy</li>
 <li><a href="https://medicateoh.com/contact-us/" rel="nofollow noopener">MedicateOH</a> — Ohio regional: Ohio (extent unspecified) — Nonprofit / Advocacy; Patient Advocacy; Education / Research; Policy Advocacy</li>
 <li><a href="https://midwestcannawomen.crd.co/" rel="nofollow noopener">Midwest CannaWomen</a> — Ohio regional: Cleveland / Ohio; also provides patient-access routing for Pennsylvania and West Virginia — Nonprofit / Advocacy; Patient Advocacy</li>
@@ -830,7 +839,7 @@
 <li><a href="https://greentanktech.com" rel="nofollow noopener">GreenTank</a> — Ohio regional: Ohio market / OCHBS exhibitor — Cannabis Vape Hardware and Technology</li>
 <li><a href="https://groweriq.com" rel="nofollow noopener">GrowerIQ</a> — Multistate, Ohio unconfirmed — Cannabis Cultivation and Seed-to-Sale Software</li>
 <li><a href="https://www.growgeneration.com/ihort" rel="nofollow noopener">GrowGeneration</a> — Ohio statewide — Technology</li>
-<li><a href="https://www.happycabbage.io" rel="nofollow noopener">Happy Cabbage</a> — Outside Ohio — Cannabis Retail Software and Analytics</li>
+<li><a href="https://www.happycabbage.io" rel="nofollow noopener">Happy Cabbage</a> — Multistate, Ohio unconfirmed — Cannabis Retail Software and Analytics</li>
 <li><a href="https://www.headset.io/" rel="nofollow noopener">Headset</a> — Nationwide incl. Ohio — Technology; Data / Analytics</li>
 <li><a href="https://www.hoodieanalytics.com" rel="nofollow noopener">Hoodie Analytics</a> — Ohio statewide — Technology; Data / Analytics</li>
 <li><a href="https://horticulturelightinggroup.com/pages/contact-page" rel="nofollow noopener">Horticulture Lighting Group</a> — Multistate, Ohio unconfirmed — LED grow lights; cultivation equipment; indoor horticulture; lighting</li>
@@ -870,7 +879,7 @@
 </div></details>
 
 <footer class="wrap">
-  <p>Listings are not paid placements. Any sponsorship or business relationship with a listed organization is disclosed on its record.</p><p>A Veteran Home Guardians resource, compiled and maintained by Travis Vought. Built October 13, 2026 from release v4.35. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
+  <p>Listings are not paid placements. Any sponsorship or business relationship with a listed organization is disclosed on its record.</p><p>A Veteran Home Guardians resource, compiled and maintained by Travis Vought. Built October 14, 2026 from release v4.36. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
   <p class="update-contact">Additions and corrections: <a href="mailto:VeteranHomeGuardians@gmail.com?subject=Ohio%20Cannabis%20Directory%3A%20listing%20update&body=Organization%20or%20listing%20link%3A%0D%0A%0D%0AAddition%20or%20correction%3A%0D%0A%0D%0AWebsite%20or%20source%3A%0D%0A%0D%0A">VeteranHomeGuardians@gmail.com</a>.</p>
   <p><a href="intake.html">Capture organizations offline</a> · <a href="relationships.html">Browse 60 documented relationships</a> · <a href="b2b-relationships.csv">Download relationship data</a></p>
   <p>Out-of-scope records are kept rather than deleted so that renamed, acquired and superseded organizations stay findable. They are hidden by default.</p>
@@ -962,19 +971,17 @@ function record(r){
     bits.push(`<a href="mailto:${esc(email)}">${esc(email)}</a>`));
   splitPhones(r.phone).forEach(phone => {const href=telHref(phone);bits.push(href?`<a href="${esc(href)}">${esc(phone)}</a>`:`<span>${esc(phone)}</span>`)});
   splitField(r.web).filter(safeURL).forEach((web, i, all) =>
-    bits.push(`<a href="${esc(web)}" target="_blank" rel="noopener">${all.length > 1 ? `Website ${i + 1}` : 'Website'}</a>`));
-  if (!bits.length) bits.push('<span>No contact detail on file</span>');
+    bits.push(`<a href="${esc(web)}" target="_blank" rel="noopener">${r.person.includes('parent-company ownership contact') ? 'Parent-company contact' : all.length > 1 ? `Website ${i + 1}` : 'Website'}</a>`));
+  if (!bits.length) bits.push(`<span>Public contact pending</span><a data-track="contact-correction" href="mailto:veteranhomeguardians@gmail.com?subject=${encodeURIComponent('Public contact for '+r.org)}&amp;body=${encodeURIComponent('Organization: '+r.org+'\nRecord ID: '+r.id+'\nOfficial website or public contact:\nEvidence link:\n')}">Submit a public contact</a>`);
 
   const sources = r.src.split('|').map(s => s.trim()).filter(Boolean)
     .map(s => safeURL(s)
       ? `<a href="${esc(s)}" target="_blank" rel="noopener">${esc(s)}</a>`
       : esc(s)).join('<br>');
 
-  const featured = r.org.startsWith('! ');
-  const displayOrg = featured ? r.org.slice(2) : r.org;
-  return `<article id="${esc(r.id)}"${featured ? ' class="featured"' : ''}>
+  const displayOrg = r.org;
+  return `<article id="${esc(r.id)}">
     <h2>${esc(displayOrg)}</h2>
-    ${featured ? '<p class="endorsement">Travis Vought’s personal, unpaid endorsement</p>' : ''}
     <p class="line"><span class="cat">${esc(r.cat)}</span>${r.area ? ' &nbsp;/&nbsp; ' + esc(r.area) : ''}</p>
     ${r.person ? `<p class="line">${esc(r.person)}</p>` : ''}
     ${r.keys ? `<p class="keys">${esc(r.keys)}</p>` : ''}
@@ -993,8 +1000,13 @@ function record(r){
   </article>`;
 }
 
+let wasActive = false;
 function render(){
   shown = filtered();
+  const active=Boolean(qEl.value.trim()||catEl.value||typeEl.value||$('area').value||recordID||showScope);
+  document.body.classList.toggle('search-active',active);
+  if(active!==wasActive){$('browse-extras').open=!active;wasActive=active;}
+  $('reset-search').hidden=!active;
   history.replaceState(null,'',searchURL());
   $('single-record').hidden=!recordID;
   $('scope').setAttribute('aria-pressed',String(showScope));
@@ -1062,6 +1074,7 @@ $('dl').addEventListener('click', () => {
 
 $('share').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(searchURL().href);$('share-status').textContent='Link copied.'}catch{$('share-status').textContent='Copy the page address to share this search.'}});
 $('all-records').addEventListener('click',()=>{clearRecord();qEl.value='';catEl.value='';typeEl.value='';$('area').value='';showScope=false;syncLanes();render()});
+$('reset-search').addEventListener('click',()=>{$('all-records').click();qEl.focus();});
 window.addEventListener('popstate',()=>{loadSearch();syncLanes();render()});
 loadSearch();syncLanes();render();
 

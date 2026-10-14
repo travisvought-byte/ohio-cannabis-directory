@@ -1,9 +1,17 @@
+# v4.36 - October 14, 2026
+
+- Included provider audiences, coverage limitations and inquiry notes in directory and shared business-route search.
+- Brought active-search results closer to the input by collapsing events and business shortcuts; these remain expandable and open again after reset. Events remain prominent on the default page, with Women’s Expo featured first.
+- Added distinct aggregate analytics events for all eight business-help shortcuts, without recording search text.
+- Integrated PR #9’s Ohio-address labels, 32 banking capability labels, 13 public-note corrections and complete repository rebuild instructions, preserving the newer neutral party listing and evidence corrections.
+- Rechecked the three contactless listings. Identity/contact verification remains incomplete; public cards now offer a record-specific contact submission route. Existing review dates and private contacts are preserved.
+
 # v4.35 - October 13, 2026
 
-- Corrected three Ohio street-address geography labels without claiming verified service coverage or a new review.
-- Standardized banking capability labels across 32 records; existing category filters remain unchanged.
-- Replaced internal workbook/row-number notes in 13 records with reader-facing descriptions; preserved originals in the editorial audit.
-- Clarified current versus historical counts and repository-only rebuild instructions. No inclusion or endorsement changes.
+- Removed the personal candidate endorsement, featured styling and name prefix; retained the Libertarian Party of Ohio as a neutral, alphabetically sorted policy listing.
+- Corrected Seedless Media and Happy Cabbage geography; documented Laurelcrest sponsor/speaker and KCIA speaker/partner connections to Ohio events without implying Ohio service coverage. Preserved the existing Pure Genesis speaker-source limitation.
+- Labeled CannAscend’s recorded website route as a parent-company contact, preserving the dated ownership limitation. No separate processor website or new ownership conclusion was established.
+- Rechecked missing-site leads; reliable company-site matches remain unresolved and queued.
 
 # v4.34 - October 13, 2026
 
@@ -192,7 +200,7 @@ Corrected VHG counties and current program description, MIF online-resource scop
 - Updated the dataset to 554 total records: 508 publishable organizations across 17 categories and 46 retained out-of-scope records.
 - Updated the searchable page, repository summary, citation, and Zenodo metadata for v4.2.
 
-Older entries below record historical dataset counts and the workbook-based workflow at that time. Current builds use `data/directory.json`; see the README for current counts and rebuild instructions.
+Versions track the master workbook\. Each release states what changed and what evidence supported the change\.
 
 ## v4.1 — 2026-09-26
 
@@ -207,7 +215,7 @@ Older entries below record historical dataset counts and the workbook-based work
 ## v4.0 — 2026-09-18
 
 - Prepared the first GitHub Pages release of the searchable directory\.
-- Dataset at v4.0: 511 total records, 465 publishable organizations across 16 categories, and 46 deliberately retained out-of-scope records.
+- Current release dataset: 511 total records, 465 publishable organizations across 16 categories, and 46 deliberately retained out\-of\-scope records\.
 - Includes 60 documented business\-to\-business relationships\.
 - Added `LICENSE` with CC BY 4\.0 terms for directory data and MIT terms for code\.
 - Added `CITATION.cff` and Zenodo release metadata\.

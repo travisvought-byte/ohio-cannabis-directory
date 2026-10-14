@@ -6,7 +6,7 @@ A source-verified map of who serves what in Ohio cannabis: operators, service pr
 
 The current dataset contains **564 organizations**, including **515 publishable organizations across 16 categories**, 48 deliberately retained out-of-scope records, and one withdrawn public listing. Those retained records keep renamed, acquired, superseded, or otherwise relevant organizations findable. The repository also includes 60 documented business-to-business relationships.
 
-**Current site release:** 4.35 · October 13, 2026.
+**Current site release:** 4.36 · October 14, 2026.
 
 Searches and filters persist in shareable URLs. Every organization has a permanent record link. [Who works with whom?](https://travisvought-byte.github.io/ohio-cannabis-directory/relationships.html) makes all 60 documented relationships searchable, with organization links and source evidence.
 
@@ -18,7 +18,7 @@ The site uses an Ohio State scarlet-and-gray color palette with accessible contr
 
 Created and maintained by [Travis Vought](https://travisvought-byte.github.io/ohio-cannabis-directory/work-with-travis.html), and shared in support of [Veteran Home Guardians](https://vethomeguard.org/). [Project stewardship and reuse](PROJECT_STEWARDSHIP.md).
 
-The election-season Libertarian Party of Ohio entry is a clearly labeled personal, unpaid endorsement by the directory maintainer, not a paid placement or party sponsorship. It appears in normal alphabetical order without sorting priority.
+The Libertarian Party of Ohio appears as a neutral political-party and cannabis-policy listing in normal alphabetical order. Ohio event speakers, sponsors, partners and direct contacts may be retained as ecosystem connections; that evidence does not by itself establish Ohio service coverage.
 
 ## What this is
 
@@ -89,7 +89,7 @@ The directory builder generates `directory.html`; `build_home.py` generates the 
 ```bash
 pip install -r requirements.txt
 python export_directory.py
-python release_tools.py 4.35 2026-10-13
+python release_tools.py 4.36 2026-10-14
 python tests/check_data.py
 npm ci
 npm test
