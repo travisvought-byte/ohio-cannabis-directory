@@ -14,6 +14,12 @@ assert normalize('Central Ohio').startswith('Ohio regional:')
 for text in ['Chicago, Illinois; U.S. cannabis licensing and regulatory consulting; no Ohio engagement identified','United States; U.S.-based service team, no Ohio customer identified','Ohio opportunity; operating and service area not yet independently verified']:
  assert normalize(text)=='Multistate, Ohio unconfirmed'
 assert normalize('Ohio-accessible remote support / worldwide; no Ohio office').startswith('Ohio regional:')
+for text in ['711 Beaver Creek Rd., Piketon, OH 45661', '116 East Franklin Street, Kenton, OH 43326', '600 W. Market St., Suite B, Baltimore, OH 43105']:
+ assert normalize(text).startswith('Ohio regional:')
+ assert 'address only; service coverage unconfirmed' in normalize(text)
+assert normalize('Michigan address; no Ohio coverage')=='Multistate, Ohio unconfirmed'
+assert not any(re.search(r'Banking (?:/|and) Financial Services',r['Capabilities / Keywords']) for r in rows)
+assert not any(re.search(r'row \d+|this workbook',r['Notes'],re.I) for r in rows)
 x=json.loads((ROOT/'data/strains/ancestry.json').read_text())
 for s in x['strains']:
  if s.get('source_link_only'):assert not s['reported_effects'] and not s['history'] and s['review_count'] is None

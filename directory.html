@@ -24,8 +24,8 @@
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "isAccessibleForFree": true,
   "keywords": ["Ohio", "cannabis", "business directory", "market map", "open data", "data provenance"],
-  "version": "4.35",
-  "dateModified": "2026-10-13",
+  "version": "4.36",
+  "dateModified": "2026-10-14",
   "creator": {"@type": "Person", "name": "Travis Vought"},
   "spatialCoverage": {"@type": "Place", "name": "Ohio, United States"},
   "distribution": [
@@ -115,6 +115,7 @@
     color:var(--ink-soft); cursor:pointer; padding:.2rem .35rem; display:none;
   }
   #clear:hover{color:var(--ink)}
+  #q::-webkit-search-cancel-button{-webkit-appearance:none}
 
   .controls{display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; padding-bottom:.9rem}
   select{
@@ -166,6 +167,13 @@
   .contact span{color:#868E92}
   .business-help{margin:1rem 0}.business-help h2{font-size:1rem;margin:0 0 .5rem}.help-links{display:flex;flex-wrap:wrap;gap:.45rem}.help-route{min-height:44px;display:inline-flex;align-items:center}.help-route[aria-current="true"]{background:var(--field);color:white;border-color:var(--field)}
   .provider-details{margin:.55rem 0;padding:.6rem .75rem;background:var(--paper-deep);font-size:.84rem}.provider-details p{margin:.15rem 0}.provider-details a{color:var(--field-deep)}
+  #browse-extras>summary{display:none}
+  .search-active #browse-extras>summary{display:inline-flex;align-items:center}
+  #search-tools{margin-bottom:.7rem}
+  #browse-extras>summary::before,#search-tools>summary::before{content:'+ ';margin-right:.35rem}
+  #browse-extras[open]>summary::before,#search-tools[open]>summary::before{content:'− '}
+  #results{scroll-margin-top:1rem}
+  @media(max-width:40rem){.masthead{padding-left:1.1rem;padding-right:1.1rem}.search-active .controls{gap:.35rem}.search-active .controls select{flex:1 1 45%;min-width:0}.search-active .tally{margin:.2rem 0}}
 
   details{margin-top:.55rem}
   summary{
@@ -243,13 +251,15 @@
       <button id="clear" type="button" aria-label="Clear search">&times;</button>
     </div>
 
+    <details id="browse-extras" open><summary>Upcoming events and business help</summary>
     <section class="upcoming-events" id="upcoming-card" aria-label="Upcoming Ohio cannabis events"><h2>Upcoming events <span>· next 3 months</span></h2><ol class="event-line" aria-label="Upcoming Ohio cannabis events">
 <li class="home-event"><span class="event-featured">Featured event</span><h3>Women’s Cannabis &amp; Wellness Expo</h3><p><time datetime="2026-11-07">Sat, Nov 7, 2026</time></p><p class="event-place">Marriott Cincinnati North · West Chester, Ohio</p><p><a href="https://medicateoh.com/womens-cannabis-expo-2/" target="_blank" rel="noopener">Event details</a></p><p><a href="https://www.eventbrite.com/e/womens-cannabis-wellness-expo-tickets-1993962022084" target="_blank" rel="noopener">Register / RSVP</a> · Checked 2026-10-13</p></li>
 <li class="home-event"><h3>“Gardening” Industry Night</h3><p><time datetime="2026-10-27">Tue, Oct 27, 2026</time></p><p class="event-place">Stanley’s Pub · 323 Stanley Ave · Cincinnati, Ohio · 8–11 PM · 21+</p><p><a href="https://medicateoh.com/industry-night-cincinnati-1027/" target="_blank" rel="noopener">Event details</a></p><p><a href="https://www.eventbrite.com/e/2002953936141/" target="_blank" rel="noopener">Register / RSVP</a> · Checked 2026-10-13</p></li>
 </ol></section>
     <p class="event-submit"><a href="mailto:veteranhomeguardians@gmail.com?subject=Ohio%20cannabis%20event%20submission&amp;body=Event%20name%3A%0ADate%20and%20time%3A%0AVenue%2C%20city%20and%20county%3A%0AOrganizer%20and%20public%20contact%3A%0AOfficial%20event%20or%20registration%20link%3A%0AAudience%20and%20age%20requirements%3A%0ACost%2C%20if%20any%3A%0A">Submit an Ohio cannabis event</a> · Include an official event link and organizer contact.</p>
 
-    <section class="business-help" aria-labelledby="business-help-title"><h2 id="business-help-title">Find business help</h2><nav class="help-links" aria-label="Business help"><a class="btn help-route" href="directory.html?category=Banking+%26+Financial+Services" data-help="Banking &amp; Financial Services">Banking</a><a class="btn help-route" href="directory.html?category=Accounting+%26+Tax" data-help="Accounting &amp; Tax">Accounting &amp; tax</a><a class="btn help-route" href="directory.html?category=Legal+%26+Licensing" data-help="Legal &amp; Licensing">Legal &amp; licensing</a><a class="btn help-route" href="directory.html?category=Testing+Labs" data-help="Testing Labs">Testing labs</a><a class="btn help-route" href="directory.html?category=Packaging+%26+Labeling" data-help="Packaging &amp; Labeling">Packaging &amp; labels</a><a class="btn help-route" href="directory.html?category=Staffing+%26+HR" data-help="Staffing &amp; HR">Staffing &amp; HR</a><a class="btn help-route" href="directory.html?category=Insurance" data-help="Insurance">Insurance</a><a class="btn help-route" href="directory.html?category=Security+%26+Cash+Logistics" data-help="Security &amp; Cash Logistics">Security &amp; cash logistics</a></nav></section>
+    <section class="business-help" aria-labelledby="business-help-title"><h2 id="business-help-title">Find business help</h2><nav class="help-links" aria-label="Business help"><a class="btn help-route" href="directory.html?category=Banking+%26+Financial+Services" data-help="Banking &amp; Financial Services" data-track="business-help:banking">Banking</a><a class="btn help-route" href="directory.html?category=Accounting+%26+Tax" data-help="Accounting &amp; Tax" data-track="business-help:accounting">Accounting &amp; tax</a><a class="btn help-route" href="directory.html?category=Legal+%26+Licensing" data-help="Legal &amp; Licensing" data-track="business-help:legal">Legal &amp; licensing</a><a class="btn help-route" href="directory.html?category=Testing+Labs" data-help="Testing Labs" data-track="business-help:testing">Testing labs</a><a class="btn help-route" href="directory.html?category=Packaging+%26+Labeling" data-help="Packaging &amp; Labeling" data-track="business-help:packaging">Packaging &amp; labels</a><a class="btn help-route" href="directory.html?category=Staffing+%26+HR" data-help="Staffing &amp; HR" data-track="business-help:staffing">Staffing &amp; HR</a><a class="btn help-route" href="directory.html?category=Insurance" data-help="Insurance" data-track="business-help:insurance">Insurance</a><a class="btn help-route" href="directory.html?category=Security+%26+Cash+Logistics" data-help="Security &amp; Cash Logistics" data-track="business-help:security">Security &amp; cash logistics</a></nav></section>
+    </details>
 
     <div class="controls">
       <select id="cat" aria-label="Filter by category">
@@ -272,7 +282,7 @@
 <option value="Testing Labs">Testing Labs</option>
       </select>
       <select id="type" aria-label="Filter by organization type">
-        <option value="">Businesses and nonprofits</option>
+        <option value="">All types</option>
         <option value="Business">Business</option>
 <option value="Cannabis industry events">Cannabis industry events</option>
 <option value="Individual">Individual</option>
@@ -282,9 +292,10 @@
       </select>
       <select id="area" aria-label="Filter by service area"><option value="">All service areas</option><option>Ohio statewide</option><option>Ohio regional</option><option>Nationwide incl. Ohio</option><option>Multistate, Ohio unconfirmed</option><option>Outside Ohio</option></select>
       <p class="tally" id="tally" role="status" aria-live="polite"></p>
+      <button class="btn" id="reset-search" type="button" hidden>Reset filters</button>
     </div>
 
-    <details><summary>Browse all industry categories</summary><div class="lanes" id="lanes"></div></details>
+    <details id="search-tools"><summary>Search tools and all categories</summary><div class="lanes" id="lanes"></div>
 
     <div class="actions">
       <button class="btn" id="share">Copy search link</button><span id="share-status" role="status" aria-live="polite"></span>
@@ -293,6 +304,7 @@
       <button class="btn" id="scope" aria-pressed="false">Show 48 out-of-scope records</button>
       <a class="btn" href="mailto:VeteranHomeGuardians@gmail.com?subject=Ohio%20Cannabis%20Directory%3A%20listing%20update&body=Organization%20or%20listing%20link%3A%0D%0A%0D%0AAddition%20or%20correction%3A%0D%0A%0D%0AWebsite%20or%20source%3A%0D%0A%0D%0A">Email a listing update</a>
     </div>
+    </details>
   </div>
 </header>
 
@@ -329,42 +341,42 @@
 <li><a href="https://mydopecpa.com/" rel="nofollow noopener">MY DOPE CPA</a> — Ohio regional: Canton, Ohio; cannabis accounting — Accounting; Tax</li>
 <li><a href="https://www.peasebell.com/industry/cannabis" rel="nofollow noopener">Pease Bell CPAs</a> — Nationwide incl. Ohio — Accounting; Tax</li>
 <li><a href="https://pipe-dream-financials.com/" rel="nofollow noopener">Pipe Dream Financials</a> — Nationwide incl. Ohio — Accounting; Tax</li>
-<li>Precise TB Solutions — Multistate, Ohio unconfirmed — Accounting; Bookkeeping and Payroll</li>
+<li>Precise TB Solutions — Ohio regional: 600 W. Market St., Suite B, Baltimore, OH 43105 (address only; service coverage unconfirmed) — Accounting; Bookkeeping and Payroll</li>
 <li><a href="https://thecannacpas.com/" rel="nofollow noopener">The Canna CPAs</a> — Ohio statewide — Accounting; Tax</li>
 <li><a href="https://verdantstrategies.com/" rel="nofollow noopener">Verdant Strategies (formerly 420CPA)</a> — Nationwide incl. Ohio — Accounting; Tax</li>
 <li><a href="https://www.withum.com/our-people/steven-monacelli/" rel="nofollow noopener">Withum</a> — Nationwide incl. Ohio — Accounting; Tax</li>
 </ul>
 <h3>Banking &amp; Financial Services (29)</h3>
 <ul>
-<li><a href="https://www.afcbdc.com/" rel="nofollow noopener">Advanced Flower Capital</a> — Nationwide incl. Ohio — Banking / Financial Services; Lending / Financing</li>
-<li><a href="https://www.goaeropay.com/" rel="nofollow noopener">Aeropay</a> — Nationwide incl. Ohio — Banking / Financial Services</li>
-<li><a href="https://www.alta-fund.com/" rel="nofollow noopener">Alta Real Estate Fund</a> — Nationwide incl. Ohio — Banking / Financial Services; Lending / Financing</li>
+<li><a href="https://www.afcbdc.com/" rel="nofollow noopener">Advanced Flower Capital</a> — Nationwide incl. Ohio — Banking &amp; Financial Services; Lending / Financing</li>
+<li><a href="https://www.goaeropay.com/" rel="nofollow noopener">Aeropay</a> — Nationwide incl. Ohio — Banking &amp; Financial Services</li>
+<li><a href="https://www.alta-fund.com/" rel="nofollow noopener">Alta Real Estate Fund</a> — Nationwide incl. Ohio — Banking &amp; Financial Services; Lending / Financing</li>
 <li><a href="https://aitc.argentfinancial.com" rel="nofollow noopener">Argent Institutional Trust Company</a> — Ohio regional: 4343 Easton Commons, Suite 120, Columbus, OH 43219 — Institutional Trust; Custody and Financial Services</li>
-<li><a href="https://www.atomiccu.com" rel="nofollow noopener">Atomic Credit Union</a> — Multistate, Ohio unconfirmed — Banking and Financial Services</li>
-<li><a href="https://bankcardinternationalgroup.com/industries-served/cannabis-payment-processing/" rel="nofollow noopener">Bankcard International Group</a> — Multistate, Ohio unconfirmed — Banking / Financial Services; Payments / Merchant Services</li>
-<li><a href="https://canna-atm.com/" rel="nofollow noopener">CANNA-ATM</a> — Nationwide incl. Ohio — Banking / Financial Services</li>
-<li><a href="https://www.canpaydebit.com/" rel="nofollow noopener">CanPay</a> — Nationwide incl. Ohio — Banking / Financial Services</li>
-<li><a href="https://www.refi.reit/about-us/" rel="nofollow noopener">Chicago Atlantic</a> — Multistate, Ohio unconfirmed — Banking / Financial Services; Lending / Financing</li>
-<li><a href="https://www.communitychoicecu.com/ohio-cannabis-business-services/" rel="nofollow noopener">Community Choice Credit Union</a> — Ohio statewide — Banking / Financial Services; Credit Union</li>
-<li><a href="https://www.leaflink.com/banking" rel="nofollow noopener">Dama Financial (LeafLink Financial Services)</a> — Multistate, Ohio unconfirmed — Banking / Financial Services; Lending / Financing</li>
-<li><a href="https://www.dispoatm.com/" rel="nofollow noopener">Dispo ATM</a> — Nationwide incl. Ohio — Banking / Financial Services</li>
-<li><a href="https://www.elementfcu.org/almostcannawv/" rel="nofollow noopener">Element Federal Credit Union</a> — Ohio regional: Ohio | West Virginia | Maryland | District of Columbia and additional markets — Banking / Financial Services; Credit Union</li>
-<li><a href="https://fincann.com/" rel="nofollow noopener">Fincann</a> — Nationwide incl. Ohio — Banking / Financial Services</li>
-<li><a href="https://fortyumaatm.com/dispensary-atm/" rel="nofollow noopener">Fort Yuma ATM</a> — Nationwide incl. Ohio — Banking / Financial Services</li>
-<li><a href="https://fundcanna.com/" rel="nofollow noopener">FundCanna</a> — Nationwide incl. Ohio — Banking / Financial Services; Lending / Financing</li>
-<li><a href="https://www.fundnowcap.com/funding/cannabis" rel="nofollow noopener">FundNow Capital</a> — Multistate, Ohio unconfirmed — Banking / Financial Services; Lending / Financing</li>
-<li><a href="https://www.hslc.bank" rel="nofollow noopener">HSLC Banking &amp; Financial Services</a> — Multistate, Ohio unconfirmed — Banking and Financial Services</li>
-<li><a href="https://www.lazearcapital.com/" rel="nofollow noopener">Lazear Capital Partners</a> — Nationwide incl. Ohio — Banking / Financial Services; Lending / Financing</li>
-<li><a href="https://www.needhambank.com/business/cannabis-banking" rel="nofollow noopener">Needham Bank</a> — Nationwide incl. Ohio — Banking / Financial Services; Bank</li>
-<li><a href="https://payboticfinancial.com/" rel="nofollow noopener">Paybotic Financial</a> — Nationwide incl. Ohio — Banking / Financial Services; Lending / Financing</li>
-<li><a href="https://www.reefi.com/" rel="nofollow noopener">ReeFi Capital</a> — Nationwide incl. Ohio — Banking / Financial Services; Lending / Financing</li>
-<li><a href="https://shfinancial.org/" rel="nofollow noopener">Safe Harbor Financial</a> — Ohio statewide — Banking / Financial Services; Lending / Financing</li>
-<li><a href="https://www.saltmoney.com/" rel="nofollow noopener">SALT</a> — Nationwide incl. Ohio — Banking / Financial Services</li>
-<li><a href="https://www.shieldbanking.com/company-news/shield-compliance-named-preferred-partner-by-the-community-bankers-association-of-ohio" rel="nofollow noopener">Shield Compliance</a> — Ohio regional: Ohio (extent unspecified) — Banking / Financial Services; Regulatory Compliance</li>
-<li><a href="https://www.solvent.io/cannabis-banking/ohio" rel="nofollow noopener">Solvent</a> — Nationwide incl. Ohio — Banking / Financial Services; Payments / Merchant Services</li>
-<li><a href="https://www.spendr.com/faq" rel="nofollow noopener">Spendr</a> — Nationwide incl. Ohio — Banking / Financial Services</li>
-<li><a href="https://upwisecapital.com/cannabis-loans/ohio-cannabis-loan/" rel="nofollow noopener">Upwise Capital</a> — Nationwide incl. Ohio — Banking / Financial Services; Lending / Financing</li>
-<li><a href="https://www.wpcu.coop/business/mrb-banking" rel="nofollow noopener">Wright-Patt Credit Union</a> — Ohio statewide — Banking / Financial Services; Credit Union</li>
+<li><a href="https://www.atomiccu.com" rel="nofollow noopener">Atomic Credit Union</a> — Ohio regional: 711 Beaver Creek Rd., Piketon, OH 45661 (address only; service coverage unconfirmed) — Banking &amp; Financial Services</li>
+<li><a href="https://bankcardinternationalgroup.com/industries-served/cannabis-payment-processing/" rel="nofollow noopener">Bankcard International Group</a> — Multistate, Ohio unconfirmed — Banking &amp; Financial Services; Payments / Merchant Services</li>
+<li><a href="https://canna-atm.com/" rel="nofollow noopener">CANNA-ATM</a> — Nationwide incl. Ohio — Banking &amp; Financial Services</li>
+<li><a href="https://www.canpaydebit.com/" rel="nofollow noopener">CanPay</a> — Nationwide incl. Ohio — Banking &amp; Financial Services</li>
+<li><a href="https://www.refi.reit/about-us/" rel="nofollow noopener">Chicago Atlantic</a> — Multistate, Ohio unconfirmed — Banking &amp; Financial Services; Lending / Financing</li>
+<li><a href="https://www.communitychoicecu.com/ohio-cannabis-business-services/" rel="nofollow noopener">Community Choice Credit Union</a> — Ohio statewide — Banking &amp; Financial Services; Credit Union</li>
+<li><a href="https://www.leaflink.com/banking" rel="nofollow noopener">Dama Financial (LeafLink Financial Services)</a> — Multistate, Ohio unconfirmed — Banking &amp; Financial Services; Lending / Financing</li>
+<li><a href="https://www.dispoatm.com/" rel="nofollow noopener">Dispo ATM</a> — Nationwide incl. Ohio — Banking &amp; Financial Services</li>
+<li><a href="https://www.elementfcu.org/almostcannawv/" rel="nofollow noopener">Element Federal Credit Union</a> — Ohio regional: Ohio | West Virginia | Maryland | District of Columbia and additional markets — Banking &amp; Financial Services; Credit Union</li>
+<li><a href="https://fincann.com/" rel="nofollow noopener">Fincann</a> — Nationwide incl. Ohio — Banking &amp; Financial Services</li>
+<li><a href="https://fortyumaatm.com/dispensary-atm/" rel="nofollow noopener">Fort Yuma ATM</a> — Nationwide incl. Ohio — Banking &amp; Financial Services</li>
+<li><a href="https://fundcanna.com/" rel="nofollow noopener">FundCanna</a> — Nationwide incl. Ohio — Banking &amp; Financial Services; Lending / Financing</li>
+<li><a href="https://www.fundnowcap.com/funding/cannabis" rel="nofollow noopener">FundNow Capital</a> — Multistate, Ohio unconfirmed — Banking &amp; Financial Services; Lending / Financing</li>
+<li><a href="https://www.hslc.bank" rel="nofollow noopener">HSLC Banking &amp; Financial Services</a> — Ohio regional: 116 East Franklin Street, Kenton, OH 43326 (address only; service coverage unconfirmed) — Banking &amp; Financial Services</li>
+<li><a href="https://www.lazearcapital.com/" rel="nofollow noopener">Lazear Capital Partners</a> — Nationwide incl. Ohio — Banking &amp; Financial Services; Lending / Financing</li>
+<li><a href="https://www.needhambank.com/business/cannabis-banking" rel="nofollow noopener">Needham Bank</a> — Nationwide incl. Ohio — Banking &amp; Financial Services; Bank</li>
+<li><a href="https://payboticfinancial.com/" rel="nofollow noopener">Paybotic Financial</a> — Nationwide incl. Ohio — Banking &amp; Financial Services; Lending / Financing</li>
+<li><a href="https://www.reefi.com/" rel="nofollow noopener">ReeFi Capital</a> — Nationwide incl. Ohio — Banking &amp; Financial Services; Lending / Financing</li>
+<li><a href="https://shfinancial.org/" rel="nofollow noopener">Safe Harbor Financial</a> — Ohio statewide — Banking &amp; Financial Services; Lending / Financing</li>
+<li><a href="https://www.saltmoney.com/" rel="nofollow noopener">SALT</a> — Nationwide incl. Ohio — Banking &amp; Financial Services</li>
+<li><a href="https://www.shieldbanking.com/company-news/shield-compliance-named-preferred-partner-by-the-community-bankers-association-of-ohio" rel="nofollow noopener">Shield Compliance</a> — Ohio regional: Ohio (extent unspecified) — Banking &amp; Financial Services; Regulatory Compliance</li>
+<li><a href="https://www.solvent.io/cannabis-banking/ohio" rel="nofollow noopener">Solvent</a> — Nationwide incl. Ohio — Banking &amp; Financial Services; Payments / Merchant Services</li>
+<li><a href="https://www.spendr.com/faq" rel="nofollow noopener">Spendr</a> — Nationwide incl. Ohio — Banking &amp; Financial Services</li>
+<li><a href="https://upwisecapital.com/cannabis-loans/ohio-cannabis-loan/" rel="nofollow noopener">Upwise Capital</a> — Nationwide incl. Ohio — Banking &amp; Financial Services; Lending / Financing</li>
+<li><a href="https://www.wpcu.coop/business/mrb-banking" rel="nofollow noopener">Wright-Patt Credit Union</a> — Ohio statewide — Banking &amp; Financial Services; Credit Union</li>
 </ul>
 <h3>Consulting (35)</h3>
 <ul>
@@ -867,7 +879,7 @@
 </div></details>
 
 <footer class="wrap">
-  <p>Listings are not paid placements. Any sponsorship or business relationship with a listed organization is disclosed on its record.</p><p>A Veteran Home Guardians resource, compiled and maintained by Travis Vought. Built October 13, 2026 from release v4.35. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
+  <p>Listings are not paid placements. Any sponsorship or business relationship with a listed organization is disclosed on its record.</p><p>A Veteran Home Guardians resource, compiled and maintained by Travis Vought. Built October 14, 2026 from release v4.36. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
   <p class="update-contact">Additions and corrections: <a href="mailto:VeteranHomeGuardians@gmail.com?subject=Ohio%20Cannabis%20Directory%3A%20listing%20update&body=Organization%20or%20listing%20link%3A%0D%0A%0D%0AAddition%20or%20correction%3A%0D%0A%0D%0AWebsite%20or%20source%3A%0D%0A%0D%0A">VeteranHomeGuardians@gmail.com</a>.</p>
   <p><a href="intake.html">Capture organizations offline</a> · <a href="relationships.html">Browse 60 documented relationships</a> · <a href="b2b-relationships.csv">Download relationship data</a></p>
   <p>Out-of-scope records are kept rather than deleted so that renamed, acquired and superseded organizations stay findable. They are hidden by default.</p>
@@ -960,7 +972,7 @@ function record(r){
   splitPhones(r.phone).forEach(phone => {const href=telHref(phone);bits.push(href?`<a href="${esc(href)}">${esc(phone)}</a>`:`<span>${esc(phone)}</span>`)});
   splitField(r.web).filter(safeURL).forEach((web, i, all) =>
     bits.push(`<a href="${esc(web)}" target="_blank" rel="noopener">${r.person.includes('parent-company ownership contact') ? 'Parent-company contact' : all.length > 1 ? `Website ${i + 1}` : 'Website'}</a>`));
-  if (!bits.length) bits.push('<span>No contact detail on file</span>');
+  if (!bits.length) bits.push(`<span>Public contact pending</span><a data-track="contact-correction" href="mailto:veteranhomeguardians@gmail.com?subject=${encodeURIComponent('Public contact for '+r.org)}&amp;body=${encodeURIComponent('Organization: '+r.org+'\nRecord ID: '+r.id+'\nOfficial website or public contact:\nEvidence link:\n')}">Submit a public contact</a>`);
 
   const sources = r.src.split('|').map(s => s.trim()).filter(Boolean)
     .map(s => safeURL(s)
@@ -988,8 +1000,13 @@ function record(r){
   </article>`;
 }
 
+let wasActive = false;
 function render(){
   shown = filtered();
+  const active=Boolean(qEl.value.trim()||catEl.value||typeEl.value||$('area').value||recordID||showScope);
+  document.body.classList.toggle('search-active',active);
+  if(active!==wasActive){$('browse-extras').open=!active;wasActive=active;}
+  $('reset-search').hidden=!active;
   history.replaceState(null,'',searchURL());
   $('single-record').hidden=!recordID;
   $('scope').setAttribute('aria-pressed',String(showScope));
@@ -1057,6 +1074,7 @@ $('dl').addEventListener('click', () => {
 
 $('share').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(searchURL().href);$('share-status').textContent='Link copied.'}catch{$('share-status').textContent='Copy the page address to share this search.'}});
 $('all-records').addEventListener('click',()=>{clearRecord();qEl.value='';catEl.value='';typeEl.value='';$('area').value='';showScope=false;syncLanes();render()});
+$('reset-search').addEventListener('click',()=>{$('all-records').click();qEl.focus();});
 window.addEventListener('popstate',()=>{loadSearch();syncLanes();render()});
 loadSearch();syncLanes();render();
 

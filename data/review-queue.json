@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-13",
+  "as_of": "2026-10-14",
   "policy": "P1: open issues, undated operators/labs/community resources or missing websites. P2: remaining undated business providers. Reviews at least 90 days old also enter the backlog. Blocked retrieval is an attempt, not a verified review.",
   "public_organizations": 515,
   "public_without_review_date": 4,
@@ -147,11 +147,13 @@
         "organization_id": "org-0557619757dc",
         "name": "Porcupine Defense Solutions",
         "attempted_on": "2026-10-13",
-        "sources": [],
-        "result": "No readable company-controlled contact source established in this pass. No website on record.",
-        "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
+        "sources": [
+          "https://porcupinedefense.net/"
+        ],
+        "result": "Possible domain surfaced, but first-party content was inaccessible; not promoted from a third-party excerpt.",
+        "next_action": "Confirm a company-controlled public website or contact from original intake evidence; retain missing-website review priority."
       },
-      "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
+      "next_action": "Confirm a company-controlled public website or contact from original intake evidence; retain missing-website review priority."
     },
     {
       "organization_id": "org-105e0713e773",

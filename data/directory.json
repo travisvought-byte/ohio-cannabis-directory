@@ -324,7 +324,7 @@
         "Service Area": "Multistate, Ohio unconfirmed",
         "Capabilities / Keywords": "Accounting; Tax",
         "Verification Tier": "Source-verified",
-        "Notes": "NUMERICAL CORRECTION, downward: this workbook recorded 25+ states; the current first-party site says clients in 19 states plus Washington, D.C. Figure corrected to match the source.",
+        "Notes": "The first-party site reports clients in 19 states plus Washington, D.C.",
         "Source(s)": "https://cannabiscpa.tax/ohio-cannabis-tax-guide-2025-edition/ | https://cannabiscpa.tax/contact/",
         "Seed Source": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 8 audit, 2026-08-15; source pages retrieved and reviewed",
         "Record ID": "org-18739a0f8994",
@@ -1084,7 +1084,7 @@
         "Phone": "561-510-2293",
         "Website": "https://www.afcbdc.com/",
         "Service Area": "Nationwide incl. Ohio",
-        "Capabilities / Keywords": "Banking / Financial Services; Lending / Financing",
+        "Capabilities / Keywords": "Banking & Financial Services; Lending / Financing",
         "Verification Tier": "Source-verified",
         "Notes": "Current lender with a documented $15 million senior secured credit facility to Story Ohio; the transaction confirms Ohio relevance.",
         "Source(s)": "https://www.afcbdc.com/ | https://www.globenewswire.com/news-release/2025/02/18/3027781/0/en/advanced-flower-capital-provides-15-million-senior-secured-credit-facility-to-story-ohio.html",
@@ -1118,7 +1118,7 @@
         "Phone": "",
         "Website": "https://www.goaeropay.com/",
         "Service Area": "Nationwide incl. Ohio",
-        "Capabilities / Keywords": "Banking / Financial Services",
+        "Capabilities / Keywords": "Banking & Financial Services",
         "Verification Tier": "Source-verified",
         "Notes": "Current provider plus an Ohio RISE dispensary page corroborate active Ohio use of Aeropay's bank-to-bank payment service.",
         "Source(s)": "https://www.goaeropay.com/ | https://oh.risecannabis.com/dispensaries/ohio/cleveland/",
@@ -1152,7 +1152,7 @@
         "Phone": "",
         "Website": "https://www.alta-fund.com/",
         "Service Area": "Nationwide incl. Ohio",
-        "Capabilities / Keywords": "Banking / Financial Services; Lending / Financing",
+        "Capabilities / Keywords": "Banking & Financial Services; Lending / Financing",
         "Verification Tier": "Source-verified",
         "Notes": "Current first-party pages state that Alta finances regulated cannabis operators across the USA and reports more than $70 million invested as of Q1 2026. Prior Ohio-availability issue resolved.",
         "Source(s)": "https://www.alta-fund.com/ | https://www.alta-fund.com/fund-ii.html",
@@ -1231,8 +1231,8 @@
         "Email": "mjenkins@atomiccu.com",
         "Phone": "800-652-2328",
         "Website": "https://www.atomiccu.com",
-        "Service Area": "Multistate, Ohio unconfirmed",
-        "Capabilities / Keywords": "Banking and Financial Services",
+        "Service Area": "Ohio regional: 711 Beaver Creek Rd., Piketon, OH 45661 (address only; service coverage unconfirmed)",
+        "Capabilities / Keywords": "Banking & Financial Services",
         "Verification Tier": "Source-verified",
         "Notes": "Ohio credit union offering accounts to licensed marijuana companies, their employees and vendors. Direct contact details confirmed by Matt Jenkins on 2026-09-28; official site verified at OCHBS 2026. Contact/service review 2026-10-13: Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
         "Source(s)": "https://www.atomiccu.com | OCHBS direct in-person evidence, 2026-09-23 | Direct email confirmation from Matt Jenkins, 2026-09-28 | Scoped contact/service review 2026-10-13: https://www.atomiccu.com | https://www.atomiccu.com/resource-center/member-support/contact-us | https://online.flippingbook.com/view/669633876/18/",
@@ -1270,7 +1270,7 @@
         "Phone": "800-895-1580",
         "Website": "https://bankcardinternationalgroup.com/industries-served/cannabis-payment-processing/",
         "Service Area": "Multistate, Ohio unconfirmed",
-        "Capabilities / Keywords": "Banking / Financial Services; Payments / Merchant Services",
+        "Capabilities / Keywords": "Banking & Financial Services; Payments / Merchant Services",
         "Verification Tier": "Source-verified",
         "Notes": "Current first-party cannabis page explicitly distinguishes compliant alternative payment methods from prohibited credit-card processing for plant-touching cannabis.",
         "Source(s)": "https://bankcardinternationalgroup.com/industries-served/cannabis-payment-processing/",
@@ -1308,7 +1308,7 @@
         "Phone": "833-4MYATMS",
         "Website": "https://canna-atm.com/",
         "Service Area": "Nationwide incl. Ohio",
-        "Capabilities / Keywords": "Banking / Financial Services",
+        "Capabilities / Keywords": "Banking & Financial Services",
         "Verification Tier": "Source-verified",
         "Notes": "Current first-party pages advertise dispensary ATM placement in all 50 states, including Ohio.",
         "Source(s)": "https://canna-atm.com/ | https://canna-atm.com/faq",
@@ -1346,7 +1346,7 @@
         "Phone": "Merchant Support: 888-395-4992",
         "Website": "https://www.canpaydebit.com/",
         "Service Area": "Nationwide incl. Ohio",
-        "Capabilities / Keywords": "Banking / Financial Services",
+        "Capabilities / Keywords": "Banking & Financial Services",
         "Verification Tier": "Source-verified",
         "Notes": "Current first-party Ohio directory and Citizen by Klutch acceptance page confirm active Ohio availability. CanPay is an account-to-account debit/payment service, not a deposit institution.",
         "Source(s)": "https://www.canpaydebit.com/ohio-canpay-dispensaries/ | https://www.canpaydebit.com/does-citizen-by-klutch-accept-canpay/",
@@ -1380,7 +1380,7 @@
         "Phone": "",
         "Website": "https://www.refi.reit/about-us/",
         "Service Area": "Multistate, Ohio unconfirmed",
-        "Capabilities / Keywords": "Banking / Financial Services; Lending / Financing",
+        "Capabilities / Keywords": "Banking & Financial Services; Lending / Financing",
         "Verification Tier": "Source-verified",
         "Notes": "Current parent-platform pages confirm Chicago Atlantic’s cannabis-focused private-credit strategy and Steven Ernest as Head of Originations. The current contact page accepts capital-raising inquiries and publishes info@chicagoatlantic.com as the organizational route. Retained as a national lender; no operator-specific banking relationship is published.",
         "Source(s)": "https://www.refi.reit/about-us/ | https://www.chicagoatlantic.com/ | https://www.chicagoatlantic.com/our-team/ | https://www.chicagoatlantic.com/contact/",
@@ -1422,7 +1422,7 @@
         "Phone": "877-243-2528 ext. 2708 | 330-412-8693",
         "Website": "https://www.communitychoicecu.com/ohio-cannabis-business-services/",
         "Service Area": "Ohio statewide",
-        "Capabilities / Keywords": "Banking / Financial Services; Credit Union",
+        "Capabilities / Keywords": "Banking & Financial Services; Credit Union",
         "Verification Tier": "Source-verified",
         "Notes": "Current first-party Ohio cannabis-banking page confirms cash handling, treasury services, armored-vehicle services and lending. Community Choice also discloses Tru Treasury as its treasury-management platform partner.",
         "Source(s)": "https://www.communitychoicecu.com/ohio-cannabis-business-services/",
@@ -1456,7 +1456,7 @@
         "Phone": "",
         "Website": "https://www.leaflink.com/banking",
         "Service Area": "Multistate, Ohio unconfirmed",
-        "Capabilities / Keywords": "Banking / Financial Services; Lending / Financing",
+        "Capabilities / Keywords": "Banking & Financial Services; Lending / Financing",
         "Verification Tier": "Source-verified",
         "Notes": "LeafLink Financial Services operates under the Dama Financial brand and is a fintech, not an FDIC-insured bank. Current disclosures identify OMB Bank, First Option Bank and Dart Bank as partner institutions for banking/card services; users should look through to the partner institution for deposit and card terms. Current first-party business-banking sales route: banking@leaflink.com. Dama client-service email/phone routes were not repurposed as prospecting contacts.",
         "Source(s)": "https://www.leaflink.com/banking | https://www.leaflink.com/contact-us/ | https://www.leaflink.com/banking/faqs/ | https://www.leaflink.com/press/leaflink-acquires-leading-cannabis-banking-platform-dama-financial/",
@@ -1494,7 +1494,7 @@
         "Phone": "602-399-2383",
         "Website": "https://www.dispoatm.com/",
         "Service Area": "Nationwide incl. Ohio",
-        "Capabilities / Keywords": "Banking / Financial Services",
+        "Capabilities / Keywords": "Banking & Financial Services",
         "Verification Tier": "Source-verified",
         "Notes": "Identity corrected: the prior row combined dispensaryatm.net with Dispo ATM's email and phone. This record now consistently represents Dispo ATM, whose current first-party site advertises traditional cash ATM service in all 50 states. It is not treated as a cashless-ATM payment rail.",
         "Source(s)": "https://www.dispoatm.com/",
@@ -1532,7 +1532,7 @@
         "Phone": "304-721-4145",
         "Website": "https://www.elementfcu.org/almostcannawv/",
         "Service Area": "Ohio regional: Ohio | West Virginia | Maryland | District of Columbia and additional markets",
-        "Capabilities / Keywords": "Banking / Financial Services; Credit Union",
+        "Capabilities / Keywords": "Banking & Financial Services; Credit Union",
         "Verification Tier": "Source-verified",
         "Notes": "Current first-party page explicitly includes Ohio in Element's cannabis-business banking footprint. Element is a federally insured credit union; confirm product eligibility and deposit terms directly.",
         "Source(s)": "https://www.elementfcu.org/almostcannawv/",
@@ -1566,7 +1566,7 @@
         "Phone": "212-724-7777",
         "Website": "https://fincann.com/",
         "Service Area": "Nationwide incl. Ohio",
-        "Capabilities / Keywords": "Banking / Financial Services",
+        "Capabilities / Keywords": "Banking & Financial Services",
         "Verification Tier": "Source-verified",
         "Notes": "Current first-party THC-licensee page explicitly includes Ohio among the states where Fincann offers business-checking solutions.",
         "Source(s)": "https://fincann.com/industry-client-services/thc-licensees/ | https://fincann.com/contact/",
@@ -1600,7 +1600,7 @@
         "Phone": "623-303-9214",
         "Website": "https://fortyumaatm.com/dispensary-atm/",
         "Service Area": "Nationwide incl. Ohio",
-        "Capabilities / Keywords": "Banking / Financial Services",
+        "Capabilities / Keywords": "Banking & Financial Services",
         "Verification Tier": "Source-verified",
         "Notes": "Current first-party page advertises traditional dispensary ATM placement in all 50 states, including Ohio.",
         "Source(s)": "https://fortyumaatm.com/dispensary-atm/",
@@ -1638,7 +1638,7 @@
         "Phone": "844-420-3536",
         "Website": "https://fundcanna.com/",
         "Service Area": "Nationwide incl. Ohio",
-        "Capabilities / Keywords": "Banking / Financial Services; Lending / Financing",
+        "Capabilities / Keywords": "Banking & Financial Services; Lending / Financing",
         "Verification Tier": "Source-verified",
         "Notes": "Current first-party Ohio page confirms cannabis financing availability. Any regulatory summary on a vendor page is service context only and should not be cited as current Ohio law.",
         "Source(s)": "https://fundcanna.com/cannabis-financing/ohio-cannabis-loans/ | https://fundcanna.com/contact-fundcanna/",
@@ -1676,7 +1676,7 @@
         "Phone": "866-283-0952",
         "Website": "https://www.fundnowcap.com/funding/cannabis",
         "Service Area": "Multistate, Ohio unconfirmed",
-        "Capabilities / Keywords": "Banking / Financial Services; Lending / Financing",
+        "Capabilities / Keywords": "Banking & Financial Services; Lending / Financing",
         "Verification Tier": "Source-verified",
         "Notes": "Current nationwide cannabis-funding page retained. No defensible named public-facing principal was found.",
         "Source(s)": "https://www.fundnowcap.com/funding/cannabis",
@@ -1717,8 +1717,8 @@
         "Email": "info@hslc.bank",
         "Phone": "419-673-1117",
         "Website": "https://www.hslc.bank",
-        "Service Area": "Multistate, Ohio unconfirmed",
-        "Capabilities / Keywords": "Banking and Financial Services",
+        "Service Area": "Ohio regional: 116 East Franklin Street, Kenton, OH 43326 (address only; service coverage unconfirmed)",
+        "Capabilities / Keywords": "Banking & Financial Services",
         "Verification Tier": "Source-verified",
         "Notes": "Ohio banking contact met at a cannabis-industry event; cannabis-specific services require confirmation. Card transcribed; official bank site verified 09/25/26. Cannabis-specific services are not stated on the public site; cleared for the directory on OCHBS exhibitor attendance. Contact/service review 2026-10-13: Published contact routes and service descriptions reviewed; email delivery, response times, prices and acceptance of new clients were not tested. Historical staff contacts and additional capabilities not corroborated by these pages remain historical. Ohio eligibility and exact coverage require direct confirmation.",
         "Source(s)": "https://www.hslc.bank | OCHBS direct in-person evidence, 2026-09-23 | Scoped contact/service review 2026-10-13: https://www.hslc.bank | https://www.hslc.bank/connect/contact-us",
@@ -1756,7 +1756,7 @@
         "Phone": "614-502-1411",
         "Website": "https://www.lazearcapital.com/",
         "Service Area": "Nationwide incl. Ohio",
-        "Capabilities / Keywords": "Banking / Financial Services; Lending / Financing",
+        "Capabilities / Keywords": "Banking & Financial Services; Lending / Financing",
         "Verification Tier": "Source-verified",
         "Notes": "Investment-banking, ESOP and M&A advisor rather than a general-purpose cannabis lender. A July 2026 first-party transaction notice identifies Brad Bennett as leader of Lazear's cannabis industry practice.",
         "Source(s)": "https://www.lazearcapital.com/medical-cannabis-esop-organic-remedies/ | https://www.lazearcapital.com/",
@@ -1790,7 +1790,7 @@
         "Phone": "781-444-2100",
         "Website": "https://www.needhambank.com/business/cannabis-banking",
         "Service Area": "Nationwide incl. Ohio",
-        "Capabilities / Keywords": "Banking / Financial Services; Bank",
+        "Capabilities / Keywords": "Banking & Financial Services; Bank",
         "Verification Tier": "Source-verified",
         "Notes": "Current first-party cannabis-banking page states service across the United States, including treasury/cash management, compliance support, national coin and currency, and expansion capital. Confirm Ohio onboarding and product terms directly.",
         "Source(s)": "https://www.needhambank.com/business/cannabis-banking | https://www.needhambank.com/contact",
@@ -1828,7 +1828,7 @@
         "Phone": "844-420-4729",
         "Website": "https://payboticfinancial.com/",
         "Service Area": "Nationwide incl. Ohio",
-        "Capabilities / Keywords": "Banking / Financial Services; Lending / Financing",
+        "Capabilities / Keywords": "Banking & Financial Services; Lending / Financing",
         "Verification Tier": "Source-verified",
         "Notes": "Current first-party pages confirm Max Miller as Founder & CEO and an Ohio program. Paybotic Financial is a fintech, not a bank; banking services are provided by Regent Bank, Member FDIC. OCHBS 2026 exhibitor/direct-contact evidence added 2026-09-26.",
         "Source(s)": "https://payboticfinancial.com/ | https://paybotic.com/markets/ohio/ | OCHBS 2026 direct-contact evidence, 2026-09-23–24",
@@ -1870,7 +1870,7 @@
         "Phone": "323-406-6892",
         "Website": "https://www.reefi.com/",
         "Service Area": "Nationwide incl. Ohio",
-        "Capabilities / Keywords": "Banking / Financial Services; Lending / Financing",
+        "Capabilities / Keywords": "Banking & Financial Services; Lending / Financing",
         "Verification Tier": "Source-verified",
         "Notes": "Current first-party pages state that ReeFi provides financing to cannabis businesses and real-estate sponsors across the nation. Prior Ohio-availability issue resolved on nationwide availability evidence.",
         "Source(s)": "https://www.reefi.com/ | https://www.reefi.com/what-why",
@@ -1908,7 +1908,7 @@
         "Phone": "888-873-1498",
         "Website": "https://shfinancial.org/",
         "Service Area": "Ohio statewide",
-        "Capabilities / Keywords": "Banking / Financial Services; Lending / Financing",
+        "Capabilities / Keywords": "Banking & Financial Services; Lending / Financing",
         "Verification Tier": "Source-verified",
         "Notes": "Current first-party Columbus page confirms Ohio cannabis-banking availability. Its legal-timeline prose is stale and must not be used as current Ohio regulatory authority.",
         "Source(s)": "https://shfinancial.org/location/columbus-ohio | https://shfinancial.org/about-us/contact-us",
@@ -1937,7 +1937,7 @@
         "Phone": "",
         "Website": "https://www.saltmoney.com/",
         "Service Area": "Nationwide incl. Ohio",
-        "Capabilities / Keywords": "Banking / Financial Services",
+        "Capabilities / Keywords": "Banking & Financial Services",
         "Verification Tier": "Source-verified",
         "Notes": "Current application flow includes Ohio and the live platform offers cannabis-focused payments, finance, POS and loyalty services. Prior Ohio-availability issue resolved. FORM-ONLY TERMINAL: SALT’s current public route is its contact/application intake; no readable first-party email or phone is published, and no support/privacy contact was repurposed.",
         "Source(s)": "https://www.saltmoney.com/home | https://www.saltmoney.com/contact | https://www.saltmoney.com/apply",
@@ -1975,7 +1975,7 @@
         "Phone": "425-276-8235",
         "Website": "https://www.shieldbanking.com/company-news/shield-compliance-named-preferred-partner-by-the-community-bankers-association-of-ohio",
         "Service Area": "Ohio regional: Ohio (extent unspecified)",
-        "Capabilities / Keywords": "Banking / Financial Services; Regulatory Compliance",
+        "Capabilities / Keywords": "Banking & Financial Services; Regulatory Compliance",
         "Verification Tier": "Source-verified",
         "Notes": "Current first-party evidence confirms Shield Compliance as a Community Bankers Association of Ohio preferred partner for cannabis-banking compliance.",
         "Source(s)": "https://www.shieldbanking.com/company-news/shield-compliance-named-preferred-partner-by-the-community-bankers-association-of-ohio",
@@ -2013,7 +2013,7 @@
         "Phone": "970-403-5503",
         "Website": "https://www.solvent.io/cannabis-banking/ohio",
         "Service Area": "Nationwide incl. Ohio",
-        "Capabilities / Keywords": "Banking / Financial Services; Payments / Merchant Services",
+        "Capabilities / Keywords": "Banking & Financial Services; Payments / Merchant Services",
         "Verification Tier": "Source-verified",
         "Notes": "Current Ohio page offers cannabis banking placement and payment-processing support. Solvent is not itself a bank; it matches and onboards businesses to partner institutions. Vendor regulatory and provider-list prose is service guidance, not independent legal authority.",
         "Source(s)": "https://www.solvent.io/cannabis-banking/ohio | https://www.solvent.io/contact-us",
@@ -2055,7 +2055,7 @@
         "Phone": "513-440-1590",
         "Website": "https://www.spendr.com/faq",
         "Service Area": "Nationwide incl. Ohio",
-        "Capabilities / Keywords": "Banking / Financial Services",
+        "Capabilities / Keywords": "Banking & Financial Services",
         "Verification Tier": "Source-verified",
         "Notes": "Current provider and live Ohio store locator confirm Ohio payment-service relevance.",
         "Source(s)": "https://www.spendr.com/business | https://www.spendr.com/store-locator",
@@ -2093,7 +2093,7 @@
         "Phone": "646-837-5522",
         "Website": "https://upwisecapital.com/cannabis-loans/ohio-cannabis-loan/",
         "Service Area": "Nationwide incl. Ohio",
-        "Capabilities / Keywords": "Banking / Financial Services; Lending / Financing",
+        "Capabilities / Keywords": "Banking & Financial Services; Lending / Financing",
         "Verification Tier": "Source-verified",
         "Notes": "Current first-party Ohio page offers working-capital, equipment and real-estate financing. Upwise is a financing marketplace/broker network, not a depository bank. Vendor regulatory prose is not current legal authority.",
         "Source(s)": "https://upwisecapital.com/cannabis-loans/ohio-cannabis-loan/ | https://upwisecapital.com/contact-form/",
@@ -2122,7 +2122,7 @@
         "Phone": "",
         "Website": "https://www.wpcu.coop/business/mrb-banking",
         "Service Area": "Ohio statewide",
-        "Capabilities / Keywords": "Banking / Financial Services; Credit Union",
+        "Capabilities / Keywords": "Banking & Financial Services; Credit Union",
         "Verification Tier": "Source-verified",
         "Notes": "Current first-party MRB page confirms Ohio banking, ACH, wires, online banking, lending and preferred cash-transport services. Documented compliance-platform relationship with Green Check remains mapped separately; the prior unsupported market-share figure was removed. FORM-ONLY TERMINAL: WPCU’s current MRB-specific contact form is the correct public intake and promises follow-up within two business days; consumer/member-service phone routes were not repurposed. OCHBS 2026 exhibitor/direct-contact evidence added 2026-09-26.",
         "Source(s)": "https://www.wpcu.coop/business/mrb-banking | https://www.wpcu.coop/contact-us/mrb-support | OCHBS 2026 direct-contact evidence, 2026-09-23–24",
@@ -3947,7 +3947,7 @@
         "Service Area": "Ohio statewide",
         "Capabilities / Keywords": "Cannabis Operator",
         "Verification Tier": "Source-verified",
-        "Notes": "Current Acreage organizational media/press routes added. Patrick Corrigan's direct address is not publicly posted; use the company route and name him in the inquiry. Retail location contacts are maintained separately on row 119, The Botanist (Acreage Holdings); leave the corporate phone blank.",
+        "Notes": "Acreage publishes organizational media/press contact routes. Patrick Corrigan's direct email is not publicly posted; use the company route and name him in the inquiry. Retail location contacts are listed separately under The Botanist (Acreage Holdings).",
         "Source(s)": "https://www.acreageholdings.com/contact-us/ | https://ochbs.com/speakers/",
         "Seed Source": "Organizations | Speakers | Batch 1 audit, 2026-08-15; source pages retrieved and reviewed | Operator outreach-enrichment pass, 2026-08-22; source pages retrieved and reviewed",
         "Record ID": "org-64ee2d0eff77",
@@ -4618,7 +4618,7 @@
         "Service Area": "Ohio regional: Columbus, Ironton, Marengo, Marietta, South Point and Wintersville, Ohio",
         "Capabilities / Keywords": "Cannabis Operator; Dispensary / Retail",
         "Verification Tier": "Source-verified",
-        "Notes": "Current Ohio location page confirms six Greenlight storefronts. Columbus at 1243 N. Cassady uses the former Verdant location and phone; the historical Verdant cross-reference is preserved out of scope at row 448. Batch 3 resolves 10b VC5 Holdings LLC / CCD000209-00 to Greenlight South Point by the exact 211 Township Rd 1013 address; keep one Greenlight operator row.",
+        "Notes": "The reviewed Ohio location page lists six Greenlight storefronts. Columbus at 1243 N. Cassady uses the former Verdant location and phone; Verdant remains a historical cross-reference. The South Point storefront at 211 Township Rd 1013 matches DCC legal entity 10b VC5 Holdings LLC / CCD000209-00.",
         "Source(s)": "https://ohio.greenlightdispensary.com/locations/ | https://investors.crescolabs.com/news/news-details/2021/Cresco-Labs-Closes-Acquisition-of-Verdant-Creations-Four-Dispensaries-Reaches-Maximum-Retail-Licenses-in-Ohio/default.aspx | https://www.globenewswire.com/news-release/2026/07/15/3328008/0/en/greenlight-expands-ohio-footprint-with-four-new-dispensaries-and-manufacturing-operations-reaching-state-license-maximum.html | Ohio DCC Current Roster, 10b VC5 Holdings LLC / CCD000209-00",
         "Seed Source": "Organizations | Batch 1 audit, 2026-08-15; source pages retrieved and reviewed | Operator outreach-enrichment pass, 2026-08-22; source pages retrieved and reviewed | DCC legal-entity → trade-name mapping Batch 3, 2026-08-23; source pages retrieved and reviewed; roster-verified",
         "Record ID": "org-40726ffc20a0",
@@ -5349,7 +5349,7 @@
         "Service Area": "Ohio regional: Canton, Columbus, Dublin, Piqua and Upper Sandusky/Harpster; Canal Winchester coming soon",
         "Capabilities / Keywords": "Cannabis Operator",
         "Verification Tier": "Source-verified",
-        "Notes": "Consolidated the duplicate legal-name record from row 471. Ohio Cannabis Company is the consumer brand of The Green Goat Dispensary, LLC. The current official site shows five open locations and Canal Winchester coming soon; the DCC roster lists five certificates of operation plus the Canal Winchester provisional license. The former Coshocton store is historical and is not counted as current.",
+        "Notes": "Ohio Cannabis Company is the consumer brand of The Green Goat Dispensary, LLC. The reviewed official site lists five open locations and Canal Winchester coming soon; the dated DCC roster lists five certificates of operation plus the Canal Winchester provisional license. The former Coshocton store is historical.",
         "Source(s)": "https://occdispensary.com/locations/ | https://occdispensary.com/contact/ | Ohio DCC active licensee roster (The Green Goat Dispensary, LLC; CCD000018-00, 026-00, 037-00, 235-00, 243-00, 270-00)",
         "Seed Source": "IgniteIt Network | Organizations | Batch 1 audit, 2026-08-14; source pages retrieved and reviewed | Operator outreach-enrichment pass, 2026-08-22; source pages retrieved and reviewed; duplicate/legal-name consolidation",
         "Record ID": "org-d480f46274ac",
@@ -7837,7 +7837,7 @@
         "Service Area": "Nationwide incl. Ohio",
         "Capabilities / Keywords": "Insurance",
         "Verification Tier": "Source-verified",
-        "Notes": "CORRECTION OF A PRIOR ERROR IN THIS WORKBOOK. This row previously conflated two separate companies: it carried thecannabisinsurancecompany.com (which is CIS Insurance Services, LLC, a Colorado MGA/wholesale broker led by Lisa Chaumont) alongside phone numbers 877-420-0042 / 818-996-0900 that actually belong to CannabisInsurance.com / 420Insurance.com, an unrelated operation. Independently confirmed via NCIA member news and CIS's own About page. This row is now CIS only; the other company was split out to its own record. Note a minor source discrepancy: NCIA lists Lisa Chaumont's direct line as 303-495-3375 while the audit gives the company line as 303-495-3362.",
+        "Notes": "CIS Insurance Services, LLC is a Colorado MGA/wholesale broker led by Lisa Chaumont, operating as The Cannabis Insurance Company. CannabisInsurance.com / 420Insurance.com is a separate organization with a separate listing. Source discrepancy: NCIA lists Chaumont's direct line as 303-495-3375, while the earlier company-source audit recorded 303-495-3362 as the company line; confirm the appropriate number directly.",
         "Source(s)": "https://www.thecannabisinsurancecompany.com/",
         "Seed Source": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 4 audit, 2026-08-15; source pages retrieved and reviewed",
         "Record ID": "org-27266ffaa5f7",
@@ -7943,7 +7943,7 @@
         "Service Area": "Multistate, Ohio unconfirmed",
         "Capabilities / Keywords": "Insurance",
         "Verification Tier": "Source-verified",
-        "Notes": "Flag cleared: 614-453-4400 is a current first-party Columbus office number, and HUB currently lists cannabis-dispensary insurance among its Columbus services. This resolves an earlier \"unconfirmed phone\" caveat in this workbook. No named individual contact published/found — organizational contact route above is the best current public route.",
+        "Notes": "HUB publishes 614-453-4400 for its Columbus office and lists cannabis-dispensary insurance among the office's services. No named individual contact was established; use the organizational contact route.",
         "Source(s)": "https://www.hubinternational.com/en-CA/industries/cannabis-insurance/",
         "Seed Source": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 4 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research, 2026-08-16; source pages retrieved and reviewed | Reconciliation pass against a duplicate/older-snapshot research round, 2026-08-16; source pages retrieved and reviewed",
         "Record ID": "org-d86de7bab0cc",
@@ -8281,7 +8281,7 @@
         "Service Area": "Nationwide incl. Ohio",
         "Capabilities / Keywords": "Insurance",
         "Verification Tier": "Source-verified",
-        "Notes": "Flag cleared: the thespireteam.com email domain is NOT a mismatch — Spire's own current website publishes service@thespireteam.com alongside 800-686-8664. This reverses an earlier caveat in this workbook that treated the domain difference as suspicious. Current Ohio cannabis coverage confirmed. Spire's cannabis page identifies Bartosh as a primary person on cannabis accounts specifically, not merely a corporate executive.",
+        "Notes": "Spire's official website publishes service@thespireteam.com and 800-686-8664. Its cannabis page confirms Ohio cannabis coverage and identifies Bartosh as a primary cannabis-account contact.",
         "Source(s)": "https://www.spireamerica.com/cannabis-insurance/",
         "Seed Source": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 4 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research, 2026-08-16; source pages retrieved and reviewed | Reconciliation pass against a duplicate/older-snapshot research round, 2026-08-16; source pages retrieved and reviewed",
         "Record ID": "org-0b73ca0a2058",
@@ -12211,7 +12211,7 @@
         "Phone": "347-699-3745",
         "Website": "https://cannabusinessresources.com/contact/",
         "Service Area": "Multistate, Ohio unconfirmed",
-        "Capabilities / Keywords": "Banking / Financial Services; Lending / Financing",
+        "Capabilities / Keywords": "Banking & Financial Services; Lending / Financing",
         "Verification Tier": "Source-verified",
         "Notes": "Moved to separate-list/out-of-scope after current referral-safety review. Canna Business Resources describes a privately funded cannabis debt platform operating across 14 markets, but it does not name Ohio, its current state navigation omits Ohio, and no first-party Ohio borrower, transaction, or eligibility statement was found.",
         "Source(s)": "https://cannabusinessresources.com/ | https://cannabusinessresources.com/services/equipment-financing/ | https://cannabusinessresources.com/contact/",
@@ -12321,7 +12321,7 @@
         "Phone": "708-671-8462",
         "Website": "https://www.thecannacard.com/",
         "Service Area": "Multistate, Ohio unconfirmed",
-        "Capabilities / Keywords": "Banking / Financial Services; Payments / Merchant Services",
+        "Capabilities / Keywords": "Banking & Financial Services; Payments / Merchant Services",
         "Verification Tier": "Source-verified",
         "Notes": "Moved to separate-list/out-of-scope after current referral-safety review. The provider self-describes a FinCEN-aligned ACH/reloadable-card model and identifies ValidFi for bank-account verification, but public merchant availability is available only inside its app. No current Ohio merchant/client or full sponsor/acquirer/payment architecture was found; the record is retained only as a national reference.",
         "Source(s)": "https://www.thecannacard.com/ | https://thecannacard.com/consumers | https://www.thecannacard.com/contact-support",
@@ -12845,7 +12845,7 @@
         "Service Area": "Multistate, Ohio unconfirmed",
         "Capabilities / Keywords": "Dispensary / Retail",
         "Verification Tier": "Source-verified",
-        "Notes": "Moved out of the publishable operator category as an exact duplicate of Ohio Cannabis Company at row 24. Founders, DCC legal-entity lineage, license coverage and current location status were merged into row 24. The former Coshocton store remains historical and is not counted as current. This row is retained only for audit provenance.",
+        "Notes": "Duplicate legal-entity cross-reference for Ohio Cannabis Company. Founders, DCC legal-entity lineage, license coverage and location status are consolidated in that listing. The former Coshocton store is historical. This reference is not a separate current referral target.",
         "Source(s)": "Ohio DCC active licensee roster (The Green Goat Dispensary, LLC; CCD000018-00, 026-00, 037-00, 235-00, 243-00, 270-00)",
         "Seed Source": "Full roster coverage gap scan, 2026-08-17; source pages retrieved and reviewed; roster-verified | Operator outreach-enrichment pass, 2026-08-22; source pages retrieved and reviewed; duplicate consolidation",
         "Record ID": "org-12c2e0c4f6ba",
@@ -13091,7 +13091,7 @@
         "Phone": "",
         "Website": "https://peloruscapitalgroup.com/",
         "Service Area": "Multistate, Ohio unconfirmed",
-        "Capabilities / Keywords": "Banking / Financial Services; Lending / Financing",
+        "Capabilities / Keywords": "Banking & Financial Services; Lending / Financing",
         "Verification Tier": "Source-verified",
         "Notes": "Moved to separate-list/out-of-scope after current referral-safety review. Pelorus is a current national cannabis private-credit platform reporting 73 funded loans. Its published 2022 TerrAscend facility named New Jersey and Maryland borrowers; no first-party Ohio transaction, Ohio borrower, or explicit Ohio availability was found.",
         "Source(s)": "https://peloruscapitalgroup.com/ | https://peloruscapitalgroup.com/about/ | https://peloruscapitalgroup.com/our-strategies/ | https://peloruscapitalgroup.com/pelorus-equity-group-closes-us45-5-million-debt-financing-with-terrascend/",
@@ -13349,7 +13349,7 @@
         "Service Area": "Ohio regional: Duplicate cross-reference only; current Ohio details consolidated into Green Thumb Industries (RISE / RYTHM)",
         "Capabilities / Keywords": "Cultivation; Processing; Dispensary / Retail",
         "Verification Tier": "Source-verified",
-        "Notes": "Duplicate identified in the operator pass. Green Thumb Industries (RISE / RYTHM) already existed at Directory row 81 before this row was added, so the claim that this was a genuine gap was refuted. Verified DCC cultivation, processing and retail detail has been consolidated into the original row. The current RISE site presents six Ohio storefronts; the additional active GTI Ohio Middletown license is retained as a legal-footprint fact with its consumer DBA unconfirmed. This row is not a separate publishable organization.",
+        "Notes": "Duplicate cross-reference for Green Thumb Industries (RISE / RYTHM), which holds the consolidated cultivation, processing and retail details. The reviewed RISE site lists six Ohio storefronts. An additional GTI Ohio Middletown license is retained as a legal-footprint fact; its consumer DBA is unconfirmed. This is not a separate public organization.",
         "Source(s)": "https://risecannabis.com/dispensaries/ohio/ | Ohio DCC Current Roster, GTI Ohio LLC / CCC000030-00, CCP000027-00 and seven CCD licenses",
         "Seed Source": "Full roster coverage gap scan, 2026-08-17; source pages retrieved and reviewed; roster-verified | Duplicate consolidation, 2026-08-22; source pages retrieved and reviewed",
         "Record ID": "org-66aa2a6e5de9",
@@ -13567,7 +13567,7 @@
         "Phone": "510-764-3869",
         "Website": "https://www.treez.io/treezpay-creditcards",
         "Service Area": "Multistate, Ohio unconfirmed",
-        "Capabilities / Keywords": "Banking / Financial Services",
+        "Capabilities / Keywords": "Banking & Financial Services",
         "Verification Tier": "Source-verified",
         "Notes": "Moved to separate-list/out-of-scope after current referral-safety review. Treez documents processor-dependent card and ACH flows, store-level bank underwriting, and BarterPay Credit among integrated offerings. Current first-party materials do not establish an Ohio deployment or disclose the sponsor/acquirer/card-network architecture; prior Ohio wording could not be reproduced, and Treez does not appear on Metrc's current validated-integrator list.",
         "Source(s)": "https://www.treez.io/treezpay-creditcards | https://www.treez.io/treezpay | https://support.treez.io/en/articles/10093826-treezpay-application-center | https://support.treez.io/en/articles/11156052-treezpay-ecommerce-widget | https://support.treez.io/en/articles/11534550-june-13th-2025 | https://www.metrc.com/validated-integrators/",
@@ -13598,7 +13598,7 @@
         "Service Area": "Multistate, Ohio unconfirmed",
         "Capabilities / Keywords": "Cannabis Operator; Dispensary / Retail",
         "Verification Tier": "Source-verified",
-        "Notes": "Moved out of the publishable operator category as a historical-brand/legal-name cross-reference. Current Greenlight records show the former Verdant Columbus address and phone under Greenlight, and the current outreach route is consolidated at row 18. This row is retained for DCC and acquisition provenance only; it is not a standalone current referral target.",
+        "Notes": "Historical brand and DCC legal-name cross-reference. Greenlight uses the former Verdant Columbus address and phone; current outreach routes are listed under Greenlight Dispensary. This reference is not a standalone current referral target.",
         "Source(s)": "https://ohio.greenlightdispensary.com/locations/ | https://investors.crescolabs.com/news/news-details/2021/Cresco-Labs-Closes-Acquisition-of-Verdant-Creations-Four-Dispensaries-Reaches-Maximum-Retail-Licenses-in-Ohio/default.aspx | Ohio DCC Current Roster, CCD000012-00 / 013-00 / 014-00 / 129-00 / 158-00",
         "Seed Source": "Added via relationship-resolution finding, 2026-08-16; source pages retrieved and reviewed | Cultivator / Processor / Dispensary issue-resolution pass, 2026-08-22; source pages retrieved and reviewed; DCC roster checked | Operator outreach-enrichment pass, 2026-08-22; source pages retrieved and reviewed; historical-brand consolidation",
         "Record ID": "org-d1b714cd9a3e",
@@ -16059,7 +16059,7 @@
         "Service Area": "Ohio regional: 27+ U.S. states; explicit Ohio cannabis facility-design offering",
         "Capabilities / Keywords": "Real Estate / Build-Out",
         "Verification Tier": "Source-verified",
-        "Notes": "NUMERICAL CORRECTION: this workbook recorded \"30+ states documented\"; the current site says 27+ U.S. states. Figure corrected downward to match the source. Ohio availability is separately settled — Studio Bliss now has an explicit Ohio cannabis facility-design offering. Documented current provider relationships: a January 2026 strategic partnership with PufCreativ (brand/digital strategy paired with architectural design) and a marketing engagement with TRIP, whose current case study describes effectively serving as Studio Bliss's marketing department (website rebuild, national SEO, content, social, email, executive branding; TRIP reports an estimated 14x return over 12 months). Both PufCreativ and TRIP are entries in this Directory. Neither relationship is Ohio-specific based on available evidence.",
+        "Notes": "The reviewed site reports work in 27+ U.S. states. Ohio availability is separately settled — Studio Bliss now has an explicit Ohio cannabis facility-design offering. Documented current provider relationships: a January 2026 strategic partnership with PufCreativ (brand/digital strategy paired with architectural design) and a marketing engagement with TRIP, whose current case study describes effectively serving as Studio Bliss's marketing department (website rebuild, national SEO, content, social, email, executive branding; TRIP reports an estimated 14x return over 12 months). Both PufCreativ and TRIP are entries in this Directory. Neither relationship is Ohio-specific based on available evidence.",
         "Source(s)": "https://studioblissla.com/cannabis-dispensary-design/",
         "Seed Source": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 7 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 6), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 3), 2026-08-16; source pages retrieved and reviewed",
         "Record ID": "org-19bab7f0dc74",
@@ -16131,7 +16131,7 @@
         "Service Area": "Nationwide incl. Ohio",
         "Capabilities / Keywords": "Real Estate / Build-Out; Construction / Build-Out",
         "Verification Tier": "Source-verified",
-        "Notes": "Correction to an earlier note in this workbook, which had swung too far the other way. An earlier pass corrected a wrong \"Columbus-based\" claim by stating Terrapin is Denver-HQ with only general Ohio project experience; that understated it. Terrapin currently has a Columbus-specific cannabis construction presence and documents an AYR Wellness project in Cleveland. Nationwide geography retained, Ohio/Columbus activity restored explicitly. Chosen deliberately over a generic senior executive: Goodin leads early-stage project strategy and client engagement through contract execution. Documented client relationship: AYR Wellness, a 60,000 SF Cleveland, OH cannabis facility — construction administration through occupancy, per Terrapin's own current project portfolio.",
+        "Notes": "Terrapin has a Columbus-specific cannabis construction presence and documents an AYR Wellness project in Cleveland. Nationwide coverage is retained alongside the documented Ohio activity. Goodin leads early-stage project strategy and client engagement through contract execution. Documented client relationship: AYR Wellness, a 60,000 SF Cleveland, OH cannabis facility, covering construction administration through occupancy per Terrapin's project portfolio.",
         "Source(s)": "https://terrapincg.com/cannabis-facility-construction",
         "Seed Source": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 4 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research, 2026-08-16; source pages retrieved and reviewed | Reconciliation pass against a duplicate/older-snapshot research round, 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping, 2026-08-16; source pages retrieved and reviewed",
         "Record ID": "org-70fa704deee5",
@@ -18003,7 +18003,7 @@
         "Service Area": "Multistate, Ohio unconfirmed",
         "Capabilities / Keywords": "Staffing / HR; Payroll",
         "Verification Tier": "Source-verified",
-        "Notes": "Cannabis payroll specialization current; the 650+ cannabis clients figure carried in this workbook is still published by Paragon itself.",
+        "Notes": "Paragon publishes cannabis payroll services and reports serving 650+ cannabis clients; the client count is a provider claim.",
         "Source(s)": "https://www.paragonpayroll.com/services/hr-solutions",
         "Seed Source": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 7 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 5), 2026-08-16; source pages retrieved and reviewed",
         "Record ID": "org-fc88c0cbff15",
@@ -20297,7 +20297,7 @@
         "Email": "",
         "Phone": "",
         "Website": "",
-        "Service Area": "Multistate, Ohio unconfirmed",
+        "Service Area": "Ohio regional: 600 W. Market St., Suite B, Baltimore, OH 43105 (address only; service coverage unconfirmed)",
         "Capabilities / Keywords": "Accounting; Bookkeeping and Payroll",
         "Verification Tier": "Open issue",
         "Notes": "Firsthand OCHBS 2026 card/flyer evidence retained. Open issue: Confirm public company website, roster-name alias (Precise Tax & Bookkeeping Solutions) and cannabis-specific service scope.",
@@ -27756,7 +27756,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Accounting; Tax\nNUMERICAL CORRECTION, downward: this workbook recorded 25+ states; the current first-party site says clients in 19 states plus Washington, D.C. Figure corrected to match the source."
+      "description": "Accounting; Tax\nThe first-party site reports clients in 19 states plus Washington, D.C."
     },
     {
       "id": "svc-profile-1d42dd421c92",
@@ -28397,7 +28397,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Lending / Financing\nCurrent lender with a documented $15 million senior secured credit facility to Story Ohio; the transaction confirms Ohio relevance."
+      "description": "Banking & Financial Services; Lending / Financing\nCurrent lender with a documented $15 million senior secured credit facility to Story Ohio; the transaction confirms Ohio relevance."
     },
     {
       "id": "svc-profile-dc2a86e5ef89",
@@ -28427,7 +28427,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services\nCurrent provider plus an Ohio RISE dispensary page corroborate active Ohio use of Aeropay's bank-to-bank payment service."
+      "description": "Banking & Financial Services\nCurrent provider plus an Ohio RISE dispensary page corroborate active Ohio use of Aeropay's bank-to-bank payment service."
     },
     {
       "id": "svc-profile-c13fe6d752cb",
@@ -28457,7 +28457,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Lending / Financing\nCurrent first-party pages state that Alta finances regulated cannabis operators across the USA and reports more than $70 million invested as of Q1 2026. Prior Ohio-availability issue resolved."
+      "description": "Banking & Financial Services; Lending / Financing\nCurrent first-party pages state that Alta finances regulated cannabis operators across the USA and reports more than $70 million invested as of Q1 2026. Prior Ohio-availability issue resolved."
     },
     {
       "id": "svc-profile-8652a50fb7c6",
@@ -28533,7 +28533,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking and Financial Services\nOhio credit union offering accounts to licensed marijuana companies, their employees and vendors. Direct contact details confirmed by Matt Jenkins on 2026-09-28; official site verified at OCHBS 2026."
+      "description": "Banking & Financial Services\nOhio credit union offering accounts to licensed marijuana companies, their employees and vendors. Direct contact details confirmed by Matt Jenkins on 2026-09-28; official site verified at OCHBS 2026."
     },
     {
       "id": "svc-profile-6ad7a467953f",
@@ -28562,7 +28562,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Payments / Merchant Services\nCurrent first-party cannabis page explicitly distinguishes compliant alternative payment methods from prohibited credit-card processing for plant-touching cannabis."
+      "description": "Banking & Financial Services; Payments / Merchant Services\nCurrent first-party cannabis page explicitly distinguishes compliant alternative payment methods from prohibited credit-card processing for plant-touching cannabis."
     },
     {
       "id": "svc-profile-82830b7eeca7",
@@ -28592,7 +28592,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services\nCurrent first-party pages advertise dispensary ATM placement in all 50 states, including Ohio."
+      "description": "Banking & Financial Services\nCurrent first-party pages advertise dispensary ATM placement in all 50 states, including Ohio."
     },
     {
       "id": "svc-profile-def97ffbd151",
@@ -28622,7 +28622,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services\nCurrent first-party Ohio directory and Citizen by Klutch acceptance page confirm active Ohio availability. CanPay is an account-to-account debit/payment service, not a deposit institution."
+      "description": "Banking & Financial Services\nCurrent first-party Ohio directory and Citizen by Klutch acceptance page confirm active Ohio availability. CanPay is an account-to-account debit/payment service, not a deposit institution."
     },
     {
       "id": "svc-profile-766e9c078cff",
@@ -28654,7 +28654,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Lending / Financing\nCurrent parent-platform pages confirm Chicago Atlantic’s cannabis-focused private-credit strategy and Steven Ernest as Head of Originations. The current contact page accepts capital-raising inquiries and publishes info@chicagoatlantic.com as the organizational route. Retained as a national lender; no operator-specific banking relationship is published."
+      "description": "Banking & Financial Services; Lending / Financing\nCurrent parent-platform pages confirm Chicago Atlantic’s cannabis-focused private-credit strategy and Steven Ernest as Head of Originations. The current contact page accepts capital-raising inquiries and publishes info@chicagoatlantic.com as the organizational route. Retained as a national lender; no operator-specific banking relationship is published."
     },
     {
       "id": "svc-profile-664350edc53d",
@@ -28683,7 +28683,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Credit Union\nCurrent first-party Ohio cannabis-banking page confirms cash handling, treasury services, armored-vehicle services and lending. Community Choice also discloses Tru Treasury as its treasury-management platform partner."
+      "description": "Banking & Financial Services; Credit Union\nCurrent first-party Ohio cannabis-banking page confirms cash handling, treasury services, armored-vehicle services and lending. Community Choice also discloses Tru Treasury as its treasury-management platform partner."
     },
     {
       "id": "svc-profile-59b372097b38",
@@ -28715,7 +28715,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Lending / Financing\nLeafLink Financial Services operates under the Dama Financial brand and is a fintech, not an FDIC-insured bank. Current disclosures identify OMB Bank, First Option Bank and Dart Bank as partner institutions for banking/card services; users should look through to the partner institution for deposit and card terms. Current first-party business-banking sales route: banking@leaflink.com. Dama client-service email/phone routes were not repurposed as prospecting contacts."
+      "description": "Banking & Financial Services; Lending / Financing\nLeafLink Financial Services operates under the Dama Financial brand and is a fintech, not an FDIC-insured bank. Current disclosures identify OMB Bank, First Option Bank and Dart Bank as partner institutions for banking/card services; users should look through to the partner institution for deposit and card terms. Current first-party business-banking sales route: banking@leaflink.com. Dama client-service email/phone routes were not repurposed as prospecting contacts."
     },
     {
       "id": "svc-profile-7eeb5665decf",
@@ -28744,7 +28744,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services\nIdentity corrected: the prior row combined dispensaryatm.net with Dispo ATM's email and phone. This record now consistently represents Dispo ATM, whose current first-party site advertises traditional cash ATM service in all 50 states. It is not treated as a cashless-ATM payment rail."
+      "description": "Banking & Financial Services\nIdentity corrected: the prior row combined dispensaryatm.net with Dispo ATM's email and phone. This record now consistently represents Dispo ATM, whose current first-party site advertises traditional cash ATM service in all 50 states. It is not treated as a cashless-ATM payment rail."
     },
     {
       "id": "svc-profile-24d0e2bda395",
@@ -28773,7 +28773,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Credit Union\nCurrent first-party page explicitly includes Ohio in Element's cannabis-business banking footprint. Element is a federally insured credit union; confirm product eligibility and deposit terms directly."
+      "description": "Banking & Financial Services; Credit Union\nCurrent first-party page explicitly includes Ohio in Element's cannabis-business banking footprint. Element is a federally insured credit union; confirm product eligibility and deposit terms directly."
     },
     {
       "id": "svc-profile-786e79f39a46",
@@ -28803,7 +28803,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services\nCurrent first-party THC-licensee page explicitly includes Ohio among the states where Fincann offers business-checking solutions."
+      "description": "Banking & Financial Services\nCurrent first-party THC-licensee page explicitly includes Ohio among the states where Fincann offers business-checking solutions."
     },
     {
       "id": "svc-profile-42e1996cbd8f",
@@ -28832,7 +28832,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services\nCurrent first-party page advertises traditional dispensary ATM placement in all 50 states, including Ohio."
+      "description": "Banking & Financial Services\nCurrent first-party page advertises traditional dispensary ATM placement in all 50 states, including Ohio."
     },
     {
       "id": "svc-profile-e53c053a5970",
@@ -28862,7 +28862,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Lending / Financing\nCurrent first-party Ohio page confirms cannabis financing availability. Any regulatory summary on a vendor page is service context only and should not be cited as current Ohio law."
+      "description": "Banking & Financial Services; Lending / Financing\nCurrent first-party Ohio page confirms cannabis financing availability. Any regulatory summary on a vendor page is service context only and should not be cited as current Ohio law."
     },
     {
       "id": "svc-profile-9e3d7601ef7a",
@@ -28891,7 +28891,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Lending / Financing\nCurrent nationwide cannabis-funding page retained. No defensible named public-facing principal was found."
+      "description": "Banking & Financial Services; Lending / Financing\nCurrent nationwide cannabis-funding page retained. No defensible named public-facing principal was found."
     },
     {
       "id": "svc-profile-8ef8dba29f38",
@@ -28929,7 +28929,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking and Financial Services\nOhio banking contact met at a cannabis-industry event; cannabis-specific services require confirmation. Card transcribed; official bank site verified 09/25/26. Cannabis-specific services are not stated on the public site; cleared for the directory on OCHBS exhibitor attendance."
+      "description": "Banking & Financial Services\nOhio banking contact met at a cannabis-industry event; cannabis-specific services require confirmation. Card transcribed; official bank site verified 09/25/26. Cannabis-specific services are not stated on the public site; cleared for the directory on OCHBS exhibitor attendance."
     },
     {
       "id": "svc-profile-20924604b09b",
@@ -28959,7 +28959,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Lending / Financing\nInvestment-banking, ESOP and M&A advisor rather than a general-purpose cannabis lender. A July 2026 first-party transaction notice identifies Brad Bennett as leader of Lazear's cannabis industry practice."
+      "description": "Banking & Financial Services; Lending / Financing\nInvestment-banking, ESOP and M&A advisor rather than a general-purpose cannabis lender. A July 2026 first-party transaction notice identifies Brad Bennett as leader of Lazear's cannabis industry practice."
     },
     {
       "id": "svc-profile-ed0c0107656d",
@@ -28989,7 +28989,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Bank\nCurrent first-party cannabis-banking page states service across the United States, including treasury/cash management, compliance support, national coin and currency, and expansion capital. Confirm Ohio onboarding and product terms directly."
+      "description": "Banking & Financial Services; Bank\nCurrent first-party cannabis-banking page states service across the United States, including treasury/cash management, compliance support, national coin and currency, and expansion capital. Confirm Ohio onboarding and product terms directly."
     },
     {
       "id": "svc-profile-a9589fb802ab",
@@ -29019,7 +29019,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Lending / Financing\nCurrent first-party pages confirm Max Miller as Founder & CEO and an Ohio program. Paybotic Financial is a fintech, not a bank; banking services are provided by Regent Bank, Member FDIC. OCHBS 2026 exhibitor/direct-contact evidence added 2026-09-26."
+      "description": "Banking & Financial Services; Lending / Financing\nCurrent first-party pages confirm Max Miller as Founder & CEO and an Ohio program. Paybotic Financial is a fintech, not a bank; banking services are provided by Regent Bank, Member FDIC. OCHBS 2026 exhibitor/direct-contact evidence added 2026-09-26."
     },
     {
       "id": "svc-profile-e3c3a5e8a05d",
@@ -29049,7 +29049,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Lending / Financing\nCurrent first-party pages state that ReeFi provides financing to cannabis businesses and real-estate sponsors across the nation. Prior Ohio-availability issue resolved on nationwide availability evidence."
+      "description": "Banking & Financial Services; Lending / Financing\nCurrent first-party pages state that ReeFi provides financing to cannabis businesses and real-estate sponsors across the nation. Prior Ohio-availability issue resolved on nationwide availability evidence."
     },
     {
       "id": "svc-profile-b1c9597ee969",
@@ -29079,7 +29079,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Lending / Financing\nCurrent first-party Columbus page confirms Ohio cannabis-banking availability. Its legal-timeline prose is stale and must not be used as current Ohio regulatory authority."
+      "description": "Banking & Financial Services; Lending / Financing\nCurrent first-party Columbus page confirms Ohio cannabis-banking availability. Its legal-timeline prose is stale and must not be used as current Ohio regulatory authority."
     },
     {
       "id": "svc-profile-dcad275fd858",
@@ -29110,7 +29110,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services\nCurrent application flow includes Ohio and the live platform offers cannabis-focused payments, finance, POS and loyalty services. Prior Ohio-availability issue resolved. FORM-ONLY TERMINAL: SALT’s current public route is its contact/application intake; no readable first-party email or phone is published, and no support/privacy contact was repurposed."
+      "description": "Banking & Financial Services\nCurrent application flow includes Ohio and the live platform offers cannabis-focused payments, finance, POS and loyalty services. Prior Ohio-availability issue resolved. FORM-ONLY TERMINAL: SALT’s current public route is its contact/application intake; no readable first-party email or phone is published, and no support/privacy contact was repurposed."
     },
     {
       "id": "svc-profile-0f09d67b057c",
@@ -29139,7 +29139,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Regulatory Compliance\nCurrent first-party evidence confirms Shield Compliance as a Community Bankers Association of Ohio preferred partner for cannabis-banking compliance."
+      "description": "Banking & Financial Services; Regulatory Compliance\nCurrent first-party evidence confirms Shield Compliance as a Community Bankers Association of Ohio preferred partner for cannabis-banking compliance."
     },
     {
       "id": "svc-profile-b1fa2893922c",
@@ -29169,7 +29169,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Payments / Merchant Services\nCurrent Ohio page offers cannabis banking placement and payment-processing support. Solvent is not itself a bank; it matches and onboards businesses to partner institutions. Vendor regulatory and provider-list prose is service guidance, not independent legal authority."
+      "description": "Banking & Financial Services; Payments / Merchant Services\nCurrent Ohio page offers cannabis banking placement and payment-processing support. Solvent is not itself a bank; it matches and onboards businesses to partner institutions. Vendor regulatory and provider-list prose is service guidance, not independent legal authority."
     },
     {
       "id": "svc-profile-6fa17f19ae5f",
@@ -29199,7 +29199,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services\nCurrent provider and live Ohio store locator confirm Ohio payment-service relevance."
+      "description": "Banking & Financial Services\nCurrent provider and live Ohio store locator confirm Ohio payment-service relevance."
     },
     {
       "id": "svc-profile-65199f65fc19",
@@ -29229,7 +29229,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Lending / Financing\nCurrent first-party Ohio page offers working-capital, equipment and real-estate financing. Upwise is a financing marketplace/broker network, not a depository bank. Vendor regulatory prose is not current legal authority."
+      "description": "Banking & Financial Services; Lending / Financing\nCurrent first-party Ohio page offers working-capital, equipment and real-estate financing. Upwise is a financing marketplace/broker network, not a depository bank. Vendor regulatory prose is not current legal authority."
     },
     {
       "id": "svc-profile-a5f1518ea942",
@@ -29259,7 +29259,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Credit Union\nCurrent first-party MRB page confirms Ohio banking, ACH, wires, online banking, lending and preferred cash-transport services. Documented compliance-platform relationship with Green Check remains mapped separately; the prior unsupported market-share figure was removed. FORM-ONLY TERMINAL: WPCU’s current MRB-specific contact form is the correct public intake and promises follow-up within two business days; consumer/member-service phone routes were not repurposed. OCHBS 2026 exhibitor/direct-contact evidence added 2026-09-26."
+      "description": "Banking & Financial Services; Credit Union\nCurrent first-party MRB page confirms Ohio banking, ACH, wires, online banking, lending and preferred cash-transport services. Documented compliance-platform relationship with Green Check remains mapped separately; the prior unsupported market-share figure was removed. FORM-ONLY TERMINAL: WPCU’s current MRB-specific contact form is the correct public intake and promises follow-up within two business days; consumer/member-service phone routes were not repurposed. OCHBS 2026 exhibitor/direct-contact evidence added 2026-09-26."
     },
     {
       "id": "svc-profile-2ee67e89bfc3",
@@ -30802,7 +30802,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Cannabis Operator\nCurrent Acreage organizational media/press routes added. Patrick Corrigan's direct address is not publicly posted; use the company route and name him in the inquiry. Retail location contacts are maintained separately on row 119, The Botanist (Acreage Holdings); leave the corporate phone blank."
+      "description": "Cannabis Operator\nAcreage publishes organizational media/press contact routes. Patrick Corrigan's direct email is not publicly posted; use the company route and name him in the inquiry. Retail location contacts are listed separately under The Botanist (Acreage Holdings)."
     },
     {
       "id": "svc-profile-1d44aa49bf35",
@@ -31360,7 +31360,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Cannabis Operator; Dispensary / Retail\nCurrent Ohio location page confirms six Greenlight storefronts. Columbus at 1243 N. Cassady uses the former Verdant location and phone; the historical Verdant cross-reference is preserved out of scope at row 448. Batch 3 resolves 10b VC5 Holdings LLC / CCD000209-00 to Greenlight South Point by the exact 211 Township Rd 1013 address; keep one Greenlight operator row."
+      "description": "Cannabis Operator; Dispensary / Retail\nThe reviewed Ohio location page lists six Greenlight storefronts. Columbus at 1243 N. Cassady uses the former Verdant location and phone; Verdant remains a historical cross-reference. The South Point storefront at 211 Township Rd 1013 matches DCC legal entity 10b VC5 Holdings LLC / CCD000209-00."
     },
     {
       "id": "svc-profile-cfc630983d08",
@@ -31962,7 +31962,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Cannabis Operator\nConsolidated the duplicate legal-name record from row 471. Ohio Cannabis Company is the consumer brand of The Green Goat Dispensary, LLC. The current official site shows five open locations and Canal Winchester coming soon; the DCC roster lists five certificates of operation plus the Canal Winchester provisional license. The former Coshocton store is historical and is not counted as current."
+      "description": "Cannabis Operator\nOhio Cannabis Company is the consumer brand of The Green Goat Dispensary, LLC. The reviewed official site lists five open locations and Canal Winchester coming soon; the dated DCC roster lists five certificates of operation plus the Canal Winchester provisional license. The former Coshocton store is historical."
     },
     {
       "id": "svc-profile-7e1ab15e4a71",
@@ -34022,7 +34022,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Insurance\nCORRECTION OF A PRIOR ERROR IN THIS WORKBOOK. This row previously conflated two separate companies: it carried thecannabisinsurancecompany.com (which is CIS Insurance Services, LLC, a Colorado MGA/wholesale broker led by Lisa Chaumont) alongside phone numbers 877-420-0042 / 818-996-0900 that actually belong to CannabisInsurance.com / 420Insurance.com, an unrelated operation. Independently confirmed via NCIA member news and CIS's own About page. This row is now CIS only; the other company was split out to its own record. Note a minor source discrepancy: NCIA lists Lisa Chaumont's direct line as 303-495-3375 while the audit gives the company line as 303-495-3362."
+      "description": "Insurance\nCIS Insurance Services, LLC is a Colorado MGA/wholesale broker led by Lisa Chaumont, operating as The Cannabis Insurance Company. CannabisInsurance.com / 420Insurance.com is a separate organization with a separate listing. Source discrepancy: NCIA lists Chaumont's direct line as 303-495-3375, while the earlier company-source audit recorded 303-495-3362 as the company line; confirm the appropriate number directly."
     },
     {
       "id": "svc-profile-48bc962a2145",
@@ -34111,7 +34111,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Insurance\nFlag cleared: 614-453-4400 is a current first-party Columbus office number, and HUB currently lists cannabis-dispensary insurance among its Columbus services. This resolves an earlier \"unconfirmed phone\" caveat in this workbook. No named individual contact published/found — organizational contact route above is the best current public route."
+      "description": "Insurance\nHUB publishes 614-453-4400 for its Columbus office and lists cannabis-dispensary insurance among the office's services. No named individual contact was established; use the organizational contact route."
     },
     {
       "id": "svc-profile-1cbd067de90c",
@@ -34385,7 +34385,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Insurance\nFlag cleared: the thespireteam.com email domain is NOT a mismatch — Spire's own current website publishes service@thespireteam.com alongside 800-686-8664. This reverses an earlier caveat in this workbook that treated the domain difference as suspicious. Current Ohio cannabis coverage confirmed. Spire's cannabis page identifies Bartosh as a primary person on cannabis accounts specifically, not merely a corporate executive."
+      "description": "Insurance\nSpire's official website publishes service@thespireteam.com and 800-686-8664. Its cannabis page confirms Ohio cannabis coverage and identifies Bartosh as a primary cannabis-account contact."
     },
     {
       "id": "svc-profile-adfa95ff2c1f",
@@ -37681,7 +37681,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Lending / Financing\nMoved to separate-list/out-of-scope after current referral-safety review. Canna Business Resources describes a privately funded cannabis debt platform operating across 14 markets, but it does not name Ohio, its current state navigation omits Ohio, and no first-party Ohio borrower, transaction, or eligibility statement was found."
+      "description": "Banking & Financial Services; Lending / Financing\nMoved to separate-list/out-of-scope after current referral-safety review. Canna Business Resources describes a privately funded cannabis debt platform operating across 14 markets, but it does not name Ohio, its current state navigation omits Ohio, and no first-party Ohio borrower, transaction, or eligibility statement was found."
     },
     {
       "id": "svc-profile-2a8e3eb20314",
@@ -37773,7 +37773,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Payments / Merchant Services\nMoved to separate-list/out-of-scope after current referral-safety review. The provider self-describes a FinCEN-aligned ACH/reloadable-card model and identifies ValidFi for bank-account verification, but public merchant availability is available only inside its app. No current Ohio merchant/client or full sponsor/acquirer/payment architecture was found; the record is retained only as a national reference."
+      "description": "Banking & Financial Services; Payments / Merchant Services\nMoved to separate-list/out-of-scope after current referral-safety review. The provider self-describes a FinCEN-aligned ACH/reloadable-card model and identifies ValidFi for bank-account verification, but public merchant availability is available only inside its app. No current Ohio merchant/client or full sponsor/acquirer/payment architecture was found; the record is retained only as a national reference."
     },
     {
       "id": "svc-profile-a298f55d805e",
@@ -38224,7 +38224,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Dispensary / Retail\nMoved out of the publishable operator category as an exact duplicate of Ohio Cannabis Company at row 24. Founders, DCC legal-entity lineage, license coverage and current location status were merged into row 24. The former Coshocton store remains historical and is not counted as current. This row is retained only for audit provenance."
+      "description": "Dispensary / Retail\nDuplicate legal-entity cross-reference for Ohio Cannabis Company. Founders, DCC legal-entity lineage, license coverage and location status are consolidated in that listing. The former Coshocton store is historical. This reference is not a separate current referral target."
     },
     {
       "id": "svc-profile-85a0834c514c",
@@ -38471,7 +38471,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services; Lending / Financing\nMoved to separate-list/out-of-scope after current referral-safety review. Pelorus is a current national cannabis private-credit platform reporting 73 funded loans. Its published 2022 TerrAscend facility named New Jersey and Maryland borrowers; no first-party Ohio transaction, Ohio borrower, or explicit Ohio availability was found."
+      "description": "Banking & Financial Services; Lending / Financing\nMoved to separate-list/out-of-scope after current referral-safety review. Pelorus is a current national cannabis private-credit platform reporting 73 funded loans. Its published 2022 TerrAscend facility named New Jersey and Maryland borrowers; no first-party Ohio transaction, Ohio borrower, or explicit Ohio availability was found."
     },
     {
       "id": "svc-profile-4f49cd874c21",
@@ -38685,7 +38685,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Cultivation; Processing; Dispensary / Retail\nDuplicate identified in the operator pass. Green Thumb Industries (RISE / RYTHM) already existed at Directory row 81 before this row was added, so the claim that this was a genuine gap was refuted. Verified DCC cultivation, processing and retail detail has been consolidated into the original row. The current RISE site presents six Ohio storefronts; the additional active GTI Ohio Middletown license is retained as a legal-footprint fact with its consumer DBA unconfirmed. This row is not a separate publishable organization."
+      "description": "Cultivation; Processing; Dispensary / Retail\nDuplicate cross-reference for Green Thumb Industries (RISE / RYTHM), which holds the consolidated cultivation, processing and retail details. The reviewed RISE site lists six Ohio storefronts. An additional GTI Ohio Middletown license is retained as a legal-footprint fact; its consumer DBA is unconfirmed. This is not a separate public organization."
     },
     {
       "id": "svc-profile-6592c48fbe9a",
@@ -38870,7 +38870,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Banking / Financial Services\nMoved to separate-list/out-of-scope after current referral-safety review. Treez documents processor-dependent card and ACH flows, store-level bank underwriting, and BarterPay Credit among integrated offerings. Current first-party materials do not establish an Ohio deployment or disclose the sponsor/acquirer/card-network architecture; prior Ohio wording could not be reproduced, and Treez does not appear on Metrc's current validated-integrator list."
+      "description": "Banking & Financial Services\nMoved to separate-list/out-of-scope after current referral-safety review. Treez documents processor-dependent card and ACH flows, store-level bank underwriting, and BarterPay Credit among integrated offerings. Current first-party materials do not establish an Ohio deployment or disclose the sponsor/acquirer/card-network architecture; prior Ohio wording could not be reproduced, and Treez does not appear on Metrc's current validated-integrator list."
     },
     {
       "id": "svc-profile-d1b714cd9a3e",
@@ -38900,7 +38900,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Cannabis Operator; Dispensary / Retail\nMoved out of the publishable operator category as a historical-brand/legal-name cross-reference. Current Greenlight records show the former Verdant Columbus address and phone under Greenlight, and the current outreach route is consolidated at row 18. This row is retained for DCC and acquisition provenance only; it is not a standalone current referral target."
+      "description": "Cannabis Operator; Dispensary / Retail\nHistorical brand and DCC legal-name cross-reference. Greenlight uses the former Verdant Columbus address and phone; current outreach routes are listed under Greenlight Dispensary. This reference is not a standalone current referral target."
     },
     {
       "id": "svc-profile-399f2ac6a041",
@@ -40948,7 +40948,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Real Estate / Build-Out\nNUMERICAL CORRECTION: this workbook recorded \"30+ states documented\"; the current site says 27+ U.S. states. Figure corrected downward to match the source. Ohio availability is separately settled — Studio Bliss now has an explicit Ohio cannabis facility-design offering. Documented current provider relationships: a January 2026 strategic partnership with PufCreativ (brand/digital strategy paired with architectural design) and a marketing engagement with TRIP, whose current case study describes effectively serving as Studio Bliss's marketing department (website rebuild, national SEO, content, social, email, executive branding; TRIP reports an estimated 14x return over 12 months). Both PufCreativ and TRIP are entries in this Directory. Neither relationship is Ohio-specific based on available evidence."
+      "description": "Real Estate / Build-Out\nThe reviewed site reports work in 27+ U.S. states. Ohio availability is separately settled — Studio Bliss now has an explicit Ohio cannabis facility-design offering. Documented current provider relationships: a January 2026 strategic partnership with PufCreativ (brand/digital strategy paired with architectural design) and a marketing engagement with TRIP, whose current case study describes effectively serving as Studio Bliss's marketing department (website rebuild, national SEO, content, social, email, executive branding; TRIP reports an estimated 14x return over 12 months). Both PufCreativ and TRIP are entries in this Directory. Neither relationship is Ohio-specific based on available evidence."
     },
     {
       "id": "svc-profile-1fe8ab476108",
@@ -41007,7 +41007,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Real Estate / Build-Out; Construction / Build-Out\nCorrection to an earlier note in this workbook, which had swung too far the other way. An earlier pass corrected a wrong \"Columbus-based\" claim by stating Terrapin is Denver-HQ with only general Ohio project experience; that understated it. Terrapin currently has a Columbus-specific cannabis construction presence and documents an AYR Wellness project in Cleveland. Nationwide geography retained, Ohio/Columbus activity restored explicitly. Chosen deliberately over a generic senior executive: Goodin leads early-stage project strategy and client engagement through contract execution. Documented client relationship: AYR Wellness, a 60,000 SF Cleveland, OH cannabis facility — construction administration through occupancy, per Terrapin's own current project portfolio."
+      "description": "Real Estate / Build-Out; Construction / Build-Out\nTerrapin has a Columbus-specific cannabis construction presence and documents an AYR Wellness project in Cleveland. Nationwide coverage is retained alongside the documented Ohio activity. Goodin leads early-stage project strategy and client engagement through contract execution. Documented client relationship: AYR Wellness, a 60,000 SF Cleveland, OH cannabis facility, covering construction administration through occupancy per Terrapin's project portfolio."
     },
     {
       "id": "svc-profile-97f6d0768a39",
@@ -42607,7 +42607,7 @@
       "listed_in": [
         "OH"
       ],
-      "description": "Staffing / HR; Payroll\nCannabis payroll specialization current; the 650+ cannabis clients figure carried in this workbook is still published by Paragon itself."
+      "description": "Staffing / HR; Payroll\nParagon publishes cannabis payroll services and reports serving 650+ cannabis clients; the client count is a provider claim."
     },
     {
       "id": "svc-profile-5a38fa4c7aad",

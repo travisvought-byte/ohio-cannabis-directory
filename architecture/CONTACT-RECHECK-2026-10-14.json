@@ -1,0 +1,24 @@
+{
+  "checked_on": "2026-10-14",
+  "method": "Scoped retrieval and identity checks; no completed company-contact verification and no fresh record review dates.",
+  "attempts": [
+    {
+      "organization_id": "org-0557619757dc",
+      "candidate_url": "https://porcupinedefense.net/",
+      "result": "Direct retrieval returned HTTP 406; indexed coming-soon title alone does not establish identity or public service/contact details."
+    },
+    {
+      "organization_id": "org-3af4221fa5d1",
+      "result": "Exact-name searches did not establish a company-controlled contact. Similar SIPE businesses were not treated as matches."
+    },
+    {
+      "organization_id": "org-baee0f174df2",
+      "sources": [
+        "https://www.baltimoreohiobusiness.org/business-listing.html",
+        "https://www.facebook.com/profile.php?id=61571694407611",
+        "https://theunspokenexperience.beehiiv.com/p/america-250-celebration-guide-self-defense-community-connections"
+      ],
+      "result": "Association lists Precise Tax & Bookkeeping Solutions LLC and links Facebook. Direct Facebook retrieval exposes only that title. A customer newsletter lists the same Ohio address as the legacy record and a phone, but the abbreviated roster identity and company-controlled contact remain unconfirmed. Retain as a candidate, not a verified contact."
+    }
+  ]
+}

@@ -1,3 +1,11 @@
+# v4.36 - October 14, 2026
+
+- Included provider audiences, coverage limitations and inquiry notes in directory and shared business-route search.
+- Brought active-search results closer to the input by collapsing events and business shortcuts; these remain expandable and open again after reset. Events remain prominent on the default page, with Women’s Expo featured first.
+- Added distinct aggregate analytics events for all eight business-help shortcuts, without recording search text.
+- Integrated PR #9’s Ohio-address labels, 32 banking capability labels, 13 public-note corrections and complete repository rebuild instructions, preserving the newer neutral party listing and evidence corrections.
+- Rechecked the three contactless listings. Identity/contact verification remains incomplete; public cards now offer a record-specific contact submission route. Existing review dates and private contacts are preserved.
+
 # v4.35 - October 13, 2026
 
 - Removed the personal candidate endorsement, featured styling and name prefix; retained the Libertarian Party of Ohio as a neutral, alphabetically sorted policy listing.
