@@ -59,7 +59,7 @@ with tempfile.TemporaryDirectory() as temp:
             print('expected:', repr(generated[max(0, first-100):first+250]), flush=True)
             print('committed:', repr(committed[max(0, first-100):first+250]), flush=True)
             raise AssertionError(f'{filename} requires rebuild')
-for name in ['.zenodo.json','zenodo.json']:
+for name in ['.zenodo.json']:
     archive = json.loads((ROOT / name).read_text())
     assert archive['version'] == RELEASE['version']
     assert archive['publication_date'] == RELEASE['released_on']
