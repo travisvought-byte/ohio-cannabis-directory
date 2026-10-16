@@ -1,5 +1,18 @@
-Ohio Cannabis Ecosystem Directory — release 4.21 — October 9, 2026
+Ohio Cannabis Ecosystem Directory — how to publish a release
 
-The live site is built from this GitHub repository. Edit the canonical CSV and release.json, run the three builders and checks documented in README.md, and publish the reviewed commit. Do not upload a ZIP as the site contents. A GitHub release/tag is a separate archival action from publishing GitHub Pages.
+The live site is built from this GitHub repository. Edit the canonical data
+and release.json, run the builders and checks documented in README.md, and
+publish the reviewed commit. Do not upload a ZIP as the site contents.
 
-This update contains 564 organization records (518 in scope, 46 retained out of scope) and 60 documented relationships. All organization evidence and verification tiers are preserved. Private CRM and business-card files are not published.
+The current version and date are in release.json. Current record counts are
+in README.md. This file intentionally repeats neither, so it cannot go stale.
+
+Archiving a release (separate from publishing GitHub Pages):
+1. Confirm release.json, CITATION.cff and .zenodo.json carry the same version.
+2. Confirm the repository is switched on in Zenodo's GitHub settings.
+3. On GitHub, create a release with tag v<version> (for example v4.36)
+   on the commit that carries that version.
+4. Zenodo archives the release and issues a DOI. Add the DOI to README.md
+   and CITATION.cff only after Zenodo shows it.
+
+Private CRM and business-card files are not published.
