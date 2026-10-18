@@ -20,6 +20,10 @@ Created and maintained by [Travis Vought](https://travisvought-byte.github.io/oh
 
 The Libertarian Party of Ohio appears as a neutral political-party and cannabis-policy listing in normal alphabetical order. Ohio event speakers, sponsors, partners and direct contacts may be retained as ecosystem connections; that evidence does not by itself establish Ohio service coverage.
 
+## November 2026 retail fundraiser
+
+Invite retailers to run a voluntary roundup, top-up or donation campaign for Veteran Home Guardians during November, celebrating the **Marine Corps birthday (November 10)** and **Veterans Day (November 11)**. [Campaign options and contact](https://travisvought-byte.github.io/ohio-cannabis-directory/november-campaign.html). Coordinate with **travis@vethomeguard.org** before launching.
+
 ## What this is
 
 The canonical dataset retains every original organization ID. Owner-confirmed withdrawals are excluded from public listing views, intake indexes and compatibility CSVs; the original record remains in repository history. Its canonical source is now `data/directory.json`, separating organizations, service routes, evidence, relationships, rules and state configuration. Compatibility CSVs preserve the original fields, IDs and provenance.
