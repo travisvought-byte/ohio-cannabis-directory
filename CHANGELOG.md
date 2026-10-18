@@ -1,5 +1,12 @@
 # v4.36 - October 14, 2026
 
+## October 18, 2026 — Record-clearing guide
+
+- Expanded the guide with actual court-packet research, step-by-step application help, filing scripts, field explanations, a worked example and a per-case preparation worksheet.
+- Added a dedicated, source-linked Ohio expungement and record-sealing page, route finder, court-process walkthrough and printable checklist.
+- Distinguished R.C. 2953.321 from general conviction and nonconviction relief, with separate timing, fees and limits.
+- Linked the guide in primary navigation and consumer resources; confirmed Franklin County-only Opportunity Port assistance.
+
 - Included provider audiences, coverage limitations and inquiry notes in directory and shared business-route search.
 - Brought active-search results closer to the input by collapsing events and business shortcuts; these remain expandable and open again after reset. Events remain prominent on the default page, with Women’s Expo featured first.
 - Added distinct aggregate analytics events for all eight business-help shortcuts, without recording search text.

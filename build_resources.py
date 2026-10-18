@@ -13,6 +13,8 @@ def main():
  sections = ['<section id="advocacy"><h2>Have a say in Ohio cannabis policy</h2><p>Find your lawmakers, see who controls laws and rules, and build a personal letter about consumption lounges and SB 56 restrictions.</p><p><a href="advocacy.html">Open the advocacy guide and letter builder</a></p></section>']
  for key,title,items in RESOURCES:
   cards = ''.join(f'<article><h3><a href="{html.escape(url,quote=True)}">{html.escape(name)}</a></h3><p>{html.escape(desc)}</p><p class="review">Source reviewed {REVIEWED} · <a href="{html.escape(url,quote=True)}">Open source / take next step</a></p></article>' for name,url,desc in items)
+  if key == 'records':
+   cards = '<p><strong><a href="expungement.html">Start the Ohio expungement &amp; record-sealing guide →</a></strong></p><p>Choose a route, check waiting periods and fees, gather documents, and prepare for the court process. Reviewed October 18, 2026.</p>' + cards
   sections.append(f'<section id="{key}"><h2>{title}</h2>{cards}<p><a href="#start">Back to choices</a></p></section>')
  nav = ''.join(f'<a class="choice" href="#{key}">{html.escape(title)}</a>' for key,title,_ in RESOURCES)
  page = '''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ohio Cannabis Consumer Resources | Veteran Home Guardians</title><meta name="description" content="Source-reviewed Ohio cannabis routes for dispensaries, seeds, record clearing, medical patients, rules and community."><style>

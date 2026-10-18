@@ -2,7 +2,7 @@
   "name": "ohio-cannabis-directory",
   "private": true,
   "scripts": {
-    "test": "node tests/directory.cjs && node tests/locations.cjs && node tests/ancestry.cjs && node tests/knowledge.cjs && node tests/tools.cjs && node tests/navigation.cjs",
+    "test": "node tests/directory.cjs && node tests/locations.cjs && node tests/ancestry.cjs && node tests/knowledge.cjs && node tests/tools.cjs && node tests/navigation.cjs && node tests/expungement.cjs",
     "test:browser": "node tests/browser.cjs && node tests/ancestry-browser.cjs && node tests/knowledge-browser.cjs && node tests/tools-browser.cjs && node tests/advocacy-browser.cjs && node tests/lawmakers-browser.cjs"
   },
   "devDependencies": {

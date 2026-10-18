@@ -1,0 +1,61 @@
+{
+  "reviewed_on": "2026-10-18",
+  "scope": "Ohio record-relief application process; court packets are local examples, not statewide or confirmed marijuana-specific forms",
+  "sources": [
+    {
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-2953.321",
+      "type": "official statute, full text reviewed",
+      "findings": ["Qualifying disposition must predate March 20, 2026; arrest date alone is not the statutory test", "Application contents, evidence, hearing findings, record-holder notification and $50 fee unless indigent are specified", "General final-discharge waiting periods and general pending-case certification are not imported into this route"],
+      "limits": ["Court-specific accepted packet not established by statute", "Municipal ordinance and mixed-charge cases require individual review"]
+    },
+    {
+      "url": "https://www.ohiolegalhelp.org/detail/find-criminal-records",
+      "type": "legal-help provider, full page reviewed",
+      "findings": ["Search every relevant court and distinguish amended final charges from original charges", "Docket, disposition, sentence-completion and payment details may require copies from clerk", "No online result does not establish that a record is cleared"],
+      "limits": ["General record-sealing explanation, not marijuana-specific eligibility determination"]
+    },
+    {
+      "url": "https://www.fcmcclerk.com/documents/criminal-traffic/FCMC-Application-For-Sealing-of-Records.pdf",
+      "type": "official clerk application, full three-page PDF reviewed",
+      "findings": ["Labeled October 2023; cites 2953.32/2953.33", "Case-by-case relief checkboxes, applicant signature and deputy-clerk service certificate", "Requests identifying and contact information"],
+      "limits": ["Not represented as a verified 2953.321 form", "Sensitive identifiers belong in the court-prescribed process, not the directory"]
+    },
+    {
+      "url": "https://www.fcmcclerk.com/documents/criminal-traffic/FCMC-Application-For-Sealing-of-Records-Instructions.pdf",
+      "type": "official clerk instructions, full one-page PDF reviewed",
+      "findings": ["Mail or in-person general applications to Expungements at 375 S High St Floor 2", "General-conviction fee $50; no fee for dismissed cases", "Mandatory hearing; mailed notice; in-person filing ends 3 PM"],
+      "limits": ["Posted self-help floor/hours conflict with other court pages", "Payment wording should be confirmed before mailing", "No new marijuana-route filing instructions verified"]
+    },
+    {
+      "url": "https://www.courtclerk.org/forms/MuniSealExp_wInstructions031825.pdf",
+      "type": "official clerk packet, full two-page PDF reviewed",
+      "findings": ["Municipal application cites 2953.32/2953.33 and requests background-investigation information", "Clerk packet lists Room 112 at 1000 Sycamore St", "General-conviction fee $50; affidavit of indigency route; separate court applications"],
+      "limits": ["Public-defender page says Room 117; current clerk packet used with confirm-before-travel note", "Not a verified 2953.321-specific packet"]
+    },
+    {
+      "url": "https://www.courtclerk.org/forms/CPSealExp_wInstructions.pdf",
+      "type": "official clerk packet, full two-page PDF reviewed",
+      "findings": ["Common Pleas clerk Room 315, 1000 Main St", "Relief choice, case results, applicant history and reasons requested", "Multiple cases may be included from same court; Municipal/Common Pleas applications separate"],
+      "limits": ["Local example only", "General certifications should not be signed inaccurately or assumed to govern marijuana-specific relief"]
+    },
+    {
+      "url": "https://www.hamiltoncountypd.org/fresh-start/sealing-adult-criminal/",
+      "type": "public defender instructions, page reviewed",
+      "findings": ["Need offense, case and completion details", "Fee-waiver affidavit filed with application and decided by judge", "Applicant must appear for hearing"],
+      "limits": ["Municipal room number differs from clerk packet; clerk packet given priority for location"]
+    },
+    {
+      "url": "https://clerkofcourts.co.delaware.oh.us/wp-content/uploads/sites/9/2018/04/Application-to-Seal-or-Expunge-Conviction-RC-2953.32-Delaware.pdf",
+      "type": "official county clerk application, indexed full text reviewed",
+      "findings": ["General conviction application distinguishes sealing from expungement and previously sealed records", "Requires separate confidential personal-identifier form", "Service reserved for clerk"],
+      "limits": ["Not Delaware Municipal", "Full local packet, current fees and marijuana-specific process not verified"]
+    },
+    {
+      "url": "https://www.morrowcountymunict.org/contact.php",
+      "type": "official court page, full text reviewed",
+      "findings": ["48 E High St Room A, Mount Gilead; 419-947-5045", "Service required; ex parte communications prohibited", "Separate prosecutor and mayor court contacts listed"],
+      "limits": ["Usable expungement packet not retrieved", "Accepted form, fee and filing method unverified"]
+    }
+  ],
+  "editorial_aids": ["Record-request and packet-confirmation scripts", "Field explanations and a fictional 2019 qualifying possession example", "Illustrative request paragraph is not an official form or complete application", "Paper worksheet and helper workflow; no personal case data collected"]
+}
