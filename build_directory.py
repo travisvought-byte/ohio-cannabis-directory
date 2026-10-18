@@ -402,7 +402,7 @@ __VHG_CSS__
     body{background:#fff; font-size:11pt}
     article{page-break-inside:avoid}
   }
-.november-campaign{background:#fff8e7;color:#20313a;border-left:4px solid #bb8e36;padding:16px 20px;margin:20px 0;font-size:16px;line-height:1.6}.november-campaign a{color:#215b76;font-weight:700;text-underline-offset:3px}@media print{.november-campaign{display:none}}
+.november-campaign{background:#fff8e7;color:#20313a;border-left:4px solid #bb8e36;padding:10px 14px;margin:14px 0 18px;font-size:15px;line-height:1.5}.november-campaign a{color:#215b76;font-weight:700;text-underline-offset:3px}.search-active .november-campaign{display:none}@media print{.november-campaign{display:none}}
 </style>
 </head>
 <body>
@@ -412,13 +412,13 @@ __VHG_CSS__
     __VHG_BRAND__
     <h1>Ohio cannabis industry directory</h1>
     <p class="directory-intro">Browse __N_PUB__ organizations and their published contacts. Search by business, person, specialty, city, or county.</p>
-    <aside class="november-campaign" aria-label="November retail fundraiser"><strong>Retailers: help veterans this November.</strong> Consider a roundup, top-up or donation campaign for Veteran Home Guardians, celebrating the <strong>Marine Corps birthday (Nov. 10)</strong> and Veterans Day (Nov. 11). <a href="november-campaign.html">Explore the November 2026 campaign →</a></aside>
     <div class="searchbox">
       <input id="q" type="search" autocomplete="off" spellcheck="false"
-             placeholder="Search a need, organization, city or county&hellip;"
+             placeholder="Search businesses, people, cities&hellip;"
              aria-label="Search the directory">
       <button id="clear" type="button" aria-label="Clear search">&times;</button>
     </div>
+    <aside class="november-campaign" aria-label="November retail fundraiser"><strong>Retailers:</strong> run a November roundup for veterans — <strong>Marine Corps birthday (Nov. 10)</strong> and Veterans Day (Nov. 11). <a href="november-campaign.html">Campaign details →</a></aside>
 
 
 

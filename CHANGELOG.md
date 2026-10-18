@@ -1,5 +1,11 @@
 # v4.36 - October 14, 2026
 
+## October 18, 2026 — Mobile navigation and search placement
+
+- Restyled shared primary navigation as consistent pill buttons; on phones it is now one horizontally scrolling row instead of several wrapped lines of default links.
+- Standardized default link color across pages that did not already set one.
+- Moved directory search above the November campaign notice, shortened the search prompt to fit phones, and condensed the campaign notice. The notice hides during an active search so results stay directly below the input.
+
 ## October 18, 2026 — Record-clearing guide
 
 - Audited all six steps; added task-specific help and fallback paths for eligibility, forms, fees, service, hearings, accommodations, record corrections and denials.
