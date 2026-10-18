@@ -2,6 +2,8 @@
 
 ## October 18, 2026 — Record-clearing guide
 
+- Put direct court-record searches and application links inside step one, with a county filter and click instructions for selected courts in five counties.
+
 - Expanded the guide with actual court-packet research, step-by-step application help, filing scripts, field explanations, a worked example and a per-case preparation worksheet.
 - Added a dedicated, source-linked Ohio expungement and record-sealing page, route finder, court-process walkthrough and printable checklist.
 - Distinguished R.C. 2953.321 from general conviction and nonconviction relief, with separate timing, fees and limits.

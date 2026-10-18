@@ -20,6 +20,7 @@
     if (!hash || hash.charAt(0) !== '#') return;
     var target = document.getElementById(hash.slice(1));
     if (!target) return;
+    if (target.tagName === 'DETAILS') target.open = true;
     for (var parent = target.parentElement; parent; parent = parent.parentElement) {
       if (parent.tagName === 'DETAILS') parent.open = true;
     }
@@ -30,6 +31,19 @@
   });
   window.addEventListener('hashchange', function () { reveal(window.location.hash); });
   reveal(window.location.hash);
+  var county = document.getElementById('court-county');
+  var courts = Array.from(document.querySelectorAll('#court-search-results article'));
+  function filterCourts() {
+    var count = 0;
+    courts.forEach(function (court) {
+      court.hidden = !!county.value && court.dataset.county !== county.value;
+      if (!court.hidden) count++;
+    });
+    document.getElementById('court-count').textContent = count + ' court search ' + (count === 1 ? 'entry' : 'entries') + (county.value ? ' for ' + county.value + ' County.' : ' across five counties.');
+  }
+  document.getElementById('court-filter').hidden = false;
+  county.addEventListener('change', filterCourts);
+  filterCourts();
   var print = document.getElementById('print-guide');
   print.hidden = false;
   print.addEventListener('click', function () { window.print(); });

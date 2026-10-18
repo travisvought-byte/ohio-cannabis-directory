@@ -24,6 +24,18 @@ for (const [choice, destination] of [['marijuana','marijuana'],['general','gener
 }
 doc.querySelector('a[href="#hearing"]').click();
 assert(doc.getElementById('hearing').closest('details').open, 'help link opens its detail');
+doc.querySelector('a[href="#online-search"]').click();
+assert(doc.getElementById('online-search').open, 'step-one link opens court searches');
+const county = doc.getElementById('court-county');
+for (const value of ['Morrow','Knox','Delaware','Franklin','Hamilton','']) {
+  county.value = value;
+  county.dispatchEvent(new d.window.Event('change'));
+  const shown = [...doc.querySelectorAll('#court-search-results article')].filter(el => !el.hidden);
+  assert(shown.length > 0);
+  assert(shown.every(el => !value || el.dataset.county === value));
+}
+assert(doc.querySelector('a[href="https://www.fcmcclerk.com/case/search"]'));
+assert(doc.querySelector('a[href="https://www.courtclerk.org/records-search/"]'));
 doc.getElementById('print-guide').click();
 assert.equal(prints, 1);
 assert.equal(d.window.localStorage.length, 0);
