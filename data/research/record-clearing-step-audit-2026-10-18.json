@@ -1,0 +1,89 @@
+{
+  "reviewed_on": "2026-10-18",
+  "scope": "All six applicant steps, existing outbound links, and routes for missing information or setbacks. Selected direct court coverage remains five counties.",
+  "steps": [
+    {
+      "step": 1,
+      "gap": "Online record may omit a needed disposition or discharge document.",
+      "resolution": "Direct searches, record-request script, lookup guide and BCI fallback; require core case facts before step two.",
+      "help_id": "online-search"
+    },
+    {
+      "step": 2,
+      "gap": "Statute references alone did not provide a general eligibility tool or route for an unclear case.",
+      "resolution": "Linked general eligibility interview and action plan with account requirement; distinguished marijuana-specific route; legal-aid review and timing links.",
+      "help_id": "eligibility-help"
+    },
+    {
+      "step": 3,
+      "gap": "Unlisted courts and older general forms could leave an applicant without an accepted packet.",
+      "resolution": "Court-specific applications, field guide, packet-confirmation script, example, worksheet and application-preparation help; no universal-form claim.",
+      "help_id": "application-help"
+    },
+    {
+      "step": 4,
+      "gap": "Needed actionable fee-waiver, accepted-filing, service and rejected-filing support.",
+      "resolution": "Official indigency forms fallback, local-form confirmation, filing questions, service responsibility and acceptance/receipt checklist.",
+      "help_id": "filing-help"
+    },
+    {
+      "step": 5,
+      "gap": "Needed help when notice is missing, an objection arrives, or attendance/access is difficult.",
+      "resolution": "Docket and clerk confirmation, hearing prep, local accommodation requests, interpreter support, remote/continuance request instructions without presuming approval.",
+      "help_id": "hearing-help"
+    },
+    {
+      "step": 6,
+      "gap": "Generic follow-up did not explain correction or dispute channels, and legal aid may decline.",
+      "resolution": "Court order/agency checks, Attorney General correction instructions and BCI contact, separate FTC employment/rental dispute guides, lawyer-referral fallback and prompt denial review.",
+      "help_id": "follow-up-help"
+    }
+  ],
+  "new_primary_or_provider_sources": [
+    "https://www.ohiolegalhelp.org/letters-forms/criminal-sealing-eligibility",
+    "https://www.supremecourt.ohio.gov/forms/all-forms/affidavits-of-indigency/166",
+    "https://www.ohiolegalhelp.org/topic/hearing",
+    "https://www.supremecourt.ohio.gov/courts/services-to-courts/language-services/",
+    "https://www.supremecourt.ohio.gov/courts/judicial-system/supreme-court-of-ohio/admin-offices/office-directory/comprehensive-list-of-offices/ada/",
+    "https://www.ohioattorneygeneral.gov/Individuals-and-Families/Consumers/Requesting-Your-Own-Criminal-Records",
+    "https://consumer.ftc.gov/articles/employer-background-checks-and-your-rights",
+    "https://consumer.ftc.gov/articles/disputing-errors-your-tenant-background-check-report",
+    "https://www.ohiolegalhelp.org/topic/lawyer",
+    "https://www.supremecourt.ohio.gov/attorneys/referral-services/"
+  ],
+  "link_availability": {
+    "method": "GET of each distinct external HTML/PDF link; landing-page response is not proof of eligibility, full functionality, form acceptance or content freshness.",
+    "total": 55,
+    "http_200": 52,
+    "blocked": [
+      {
+        "url": "https://www.delawareohio.net/government/departments/municipal-court",
+        "status": 403,
+        "assessment": "HTTP 403 to automated retrieval; not classified as dead. Existing official-source listing and telephone fallback retained."
+      },
+      {
+        "url": "https://www.delawareohio.net/government/departments/municipal-court/contact",
+        "status": 403,
+        "assessment": "HTTP 403 to automated retrieval; not classified as dead. Existing official-source listing and telephone fallback retained."
+      },
+      {
+        "url": "https://www.delawareohio.net/government/departments/municipal-court/forms/criminal-traffic-forms",
+        "status": 403,
+        "assessment": "HTTP 403 to automated retrieval; not classified as dead. Existing official-source listing and telephone fallback retained."
+      }
+    ],
+    "other_failures": []
+  },
+  "remaining_limits": [
+    "Direct court resources cover selected courts in five counties; all-county directory remains the fallback.",
+    "Local accepted forms, service requirements, filing channels and fees must be confirmed with the filing court.",
+    "General older forms are not certified marijuana-specific applications.",
+    "Remote attendance and continuance requests require court approval.",
+    "No promise of representation, eligibility or approval; legal-aid capacity and court processing vary."
+  ],
+  "validation": [
+    "Deterministic rebuild check",
+    "Six-step support/anchor checks and county filter tests",
+    "Browser regression added for mobile/desktop help, direct anchors, print and no-JavaScript access; executed by GitHub CI"
+  ]
+}

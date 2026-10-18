@@ -38,6 +38,20 @@ assert(doc.querySelector('a[href="https://www.fcmcclerk.com/case/search"]'));
 assert(doc.querySelector('a[href="https://www.courtclerk.org/records-search/"]'));
 doc.getElementById('print-guide').click();
 assert.equal(prints, 1);
+for (let step = 1; step <= 6; step++) {
+  const item = doc.querySelector('.checklist > li[data-step="' + step + '"]');
+  assert(item, 'main step ' + step);
+  const panel = item.querySelector('details.step-help');
+  assert(panel, 'optional help at step ' + step);
+  assert(panel.querySelector('a[href^="https://"]'), 'specific external resource at step ' + step);
+  assert(/Ready|Finished|Track to completion/.test(panel.textContent), 'completion or follow-up at step ' + step);
+}
+for (const id of ['eligibility-help','application-help','filing-help','hearing-help','follow-up-help']) {
+  const link = doc.querySelector('a[href="#' + id + '"]');
+  assert(link, 'step link to ' + id);
+  link.click();
+  assert(doc.getElementById(id).open, 'opens help ' + id);
+}
 assert.equal(d.window.localStorage.length, 0);
 assert.equal(doc.querySelectorAll('input:not([type="checkbox"])').length, 0);
 assert.equal(doc.querySelectorAll('form').length, 0);

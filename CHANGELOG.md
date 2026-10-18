@@ -2,6 +2,8 @@
 
 ## October 18, 2026 — Record-clearing guide
 
+- Audited all six steps; added task-specific help and fallback paths for eligibility, forms, fees, service, hearings, accommodations, record corrections and denials.
+
 - Put direct court-record searches and application links inside step one, with a county filter and click instructions for selected courts in five counties.
 
 - Expanded the guide with actual court-packet research, step-by-step application help, filing scripts, field explanations, a worked example and a per-case preparation worksheet.
