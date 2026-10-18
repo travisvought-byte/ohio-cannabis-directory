@@ -6,9 +6,14 @@
   .vhg-brand img{width:48px;height:auto;flex:none}
   .vhg-brand strong{display:block;font-size:1rem;line-height:1.3}
   .vhg-brand span span{display:block;font-size:.82rem;color:var(--ink-soft);margin-top:.2rem}
+  :where(a){color:#215b76;text-underline-offset:3px}:where(a:visited){color:#215b76}
   .knowledge-links{display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;margin:0 0 1.5rem;font-size:.95rem}
   [hidden]{display:none!important}.site-footer{max-width:1120px;margin:24px auto;padding:20px;border-top:1px solid #ccc}.site-footer nav{display:flex;flex-wrap:wrap;gap:4px 18px}.site-footer a,.knowledge-links a{display:inline-flex;align-items:center;min-height:44px}p{max-width:70ch}button,input,select,summary{min-height:44px}button,input,select,textarea{font-size:16px}body{font-size:16px}.vhg-brand img{width:48px;height:48px}.knowledge-links{gap:0 18px}.site-footer p{font-size:14px;color:#555}@media(max-width:650px){.knowledge-links{font-size:14px;gap:0 12px}.site-footer a{font-size:14px}body a{min-height:44px;display:inline-flex;align-items:center}button,a.btn{min-height:44px}}@media print{.site-footer,.knowledge-links,.vhg-brand{display:none!important}}
   .update-contact{overflow-wrap:anywhere}
+  .knowledge-links{gap:8px!important;margin:0 0 1.25rem}
+  .knowledge-links a{min-height:36px;padding:0 14px;border:1px solid #cfd6d9;border-radius:999px;background:#fff;color:#20313a;text-decoration:none;font-size:14px;line-height:1.2;white-space:nowrap}
+  .knowledge-links a:hover,.knowledge-links a:focus-visible{border-color:#215b76;color:#215b76}
+  @media(max-width:650px){.knowledge-links{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;margin:0 0 1rem;padding:2px 0 6px;max-width:100%;mask-image:linear-gradient(90deg,#000 88%,transparent)}.knowledge-links::-webkit-scrollbar{display:none}.knowledge-links a{min-height:40px;font-size:14px;flex:none}}
 
 @media(max-width:650px){main{padding:16px}.filters,.grid{grid-template-columns:1fr}.search-field{grid-column:auto}article{padding:16px}}
 @media print{.filters,.pager,.actions{display:none}.grid{display:block}article{break-inside:avoid;border-radius:0}}
