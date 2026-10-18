@@ -412,6 +412,7 @@ __VHG_CSS__
     __VHG_BRAND__
     <h1>Ohio cannabis industry directory</h1>
     <p class="directory-intro">Browse __N_PUB__ organizations and their published contacts. Search by business, person, specialty, city, or county.</p>
+    <aside class="november-campaign" aria-label="November retail fundraiser"><strong>Retailers: help veterans this November.</strong> Consider a roundup, top-up or donation campaign for Veteran Home Guardians, celebrating the <strong>Marine Corps birthday (Nov. 10)</strong> and Veterans Day (Nov. 11). <a href="november-campaign.html">Explore the November 2026 campaign →</a></aside>
     <div class="searchbox">
       <input id="q" type="search" autocomplete="off" spellcheck="false"
              placeholder="Search a need, organization, city or county&hellip;"
@@ -419,7 +420,7 @@ __VHG_CSS__
       <button id="clear" type="button" aria-label="Clear search">&times;</button>
     </div>
 
-    <aside class="november-campaign" aria-label="November retail fundraiser"><strong>Retailers: help veterans this November.</strong> Consider a roundup, top-up or donation campaign for Veteran Home Guardians, celebrating the <strong>Marine Corps birthday (Nov. 10)</strong> and Veterans Day (Nov. 11). <a href="november-campaign.html">Explore the November 2026 campaign →</a></aside>
+
 
     <details id="browse-extras" open><summary>Upcoming events and business help</summary>
     <section class="upcoming-events" id="upcoming-card" aria-label="Upcoming Ohio cannabis events">__HOME_EVENT_MARKUP__</section>
