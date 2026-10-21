@@ -1,0 +1,13 @@
+{
+  "description": "Reported events that require an immediate review regardless of schedule. Add one entry per report; set resolved_on (and resolution) once the review is complete. Kinds: closure, license-action, ownership-change, material-correction.",
+  "example": {
+    "organization_id": "org-xxxxxxxxxxxx",
+    "kind": "ownership-change",
+    "reported_on": "YYYY-MM-DD",
+    "source": "GitHub issue URL, email reference or primary-source URL",
+    "summary": "What was reported",
+    "resolved_on": null,
+    "resolution": null
+  },
+  "triggers": []
+}

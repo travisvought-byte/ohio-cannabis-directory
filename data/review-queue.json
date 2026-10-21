@@ -1,27 +1,48 @@
 {
   "as_of": "2026-10-14",
-  "policy": "P1: open issues, undated operators/labs/community resources or missing websites. P2: remaining undated business providers. Reviews at least 90 days old also enter the backlog. Blocked retrieval is an attempt, not a verified review.",
+  "policy": "P0: open review triggers (reported closure, license action, ownership change or material correction), reviewed immediately. P1: open issues, operators/labs/community resources due or undated, or missing websites. P2: remaining due or undated business providers. Ohio operators, testing labs and Ohio-based providers receive a full review every 90 days; national and multistate vendors receive a routine verification every 180 days. Blocked retrieval is an attempt, not a verified review.",
+  "intervals_days": {
+    "full-review": 90,
+    "routine-verification": 180
+  },
   "public_organizations": 515,
+  "public_by_tier": {
+    "routine-verification": 236,
+    "full-review": 279
+  },
   "public_without_review_date": 4,
   "public_open_issues": 6,
+  "open_triggers": 0,
   "priority_counts": {
     "P1": 8,
     "P2": 2
+  },
+  "forecast_window_days": 60,
+  "forecast_by_week": {
+    "2026-11-09": {
+      "full-review": 86
+    },
+    "2026-11-16": {
+      "full-review": 133
+    }
   },
   "queue": [
     {
       "organization_id": "org-baee0f174df2",
       "name": "Precise TB Solutions",
       "priority": "P1",
+      "tier": "full-review",
       "category": "Accounting & Tax",
       "reasons": [
         "Resolve the named open issue",
         "No published website or contact-page route"
       ],
       "last_reviewed": "2026-10-06",
+      "due_on": "2027-01-04",
       "website": "",
       "sources": "OCHBS 2026 firsthand card/flyer: IMG_CF95CE18-2D11-4013-A2C5-94EF39540A47.jpeg; private intake OCHBS-2026-040. Reviewed 2026-10-06.",
       "notes": "Firsthand OCHBS 2026 card/flyer evidence retained. Open issue: Confirm public company website, roster-name alias (Precise Tax & Bookkeeping Solutions) and cannabis-specific service scope.",
+      "triggers": [],
       "last_attempt": {
         "organization_id": "org-baee0f174df2",
         "name": "Precise TB Solutions",
@@ -38,14 +59,17 @@
       "organization_id": "org-9ee4b284a472",
       "name": "Farkas Farms",
       "priority": "P1",
+      "tier": "full-review",
       "category": "Cultivator / Processor / Dispensary",
       "reasons": [
         "No published website or contact-page route"
       ],
       "last_reviewed": "2026-08-16",
+      "due_on": "2026-11-14",
       "website": "",
       "sources": "https://business.loraincountychamber.com/list/member/farkas-farms-llc-8409 | https://thcellar.com/shop/ | https://www.cannabismarketspotlight.com/ohio/home",
       "notes": "Documented M&A/license-transfer relationship with Klutch Cannabis (also in this Directory): DCC approved a June 2026 swap in which Klutch acquired Farkas Farms' Columbus dispensary license (5429 Bethel Sawmill Center) while Farkas Farms acquired Klutch's Loudonville dispensary/license. Confirmed via eight independent sources including Crain's Cleveland Business.",
+      "triggers": [],
       "last_attempt": {
         "organization_id": "org-9ee4b284a472",
         "name": "Farkas Farms",
@@ -62,14 +86,17 @@
       "organization_id": "org-7e1ab15e4a71",
       "name": "Ohio Clean Leaf",
       "priority": "P1",
+      "tier": "full-review",
       "category": "Cultivator / Processor / Dispensary",
       "reasons": [
         "No recorded evidence-review date"
       ],
       "last_reviewed": null,
+      "due_on": null,
       "website": "https://ohiocleanleaf.com/",
       "sources": "https://www.marijuanamoment.net/ohio-regulators-issue-provisional-marijuana-licenses-to-dozens-of-businesses-readying-imminent-launch-of-adult-use-sales/ | https://www.ohiohouse.gov/legislation/134/sb261/committee | https://www2.jlec-olig.state.oh.us/olac/Reports/Agents/6868/Employers",
       "notes": "Ohio DCC lists Ohio Clean Leaf LLC as a Dual Use Cultivator Level II.",
+      "triggers": [],
       "last_attempt": {
         "organization_id": "org-7e1ab15e4a71",
         "name": "Ohio Clean Leaf",
@@ -86,15 +113,18 @@
       "organization_id": "org-3af4221fa5d1",
       "name": "SIPE Promotional Products",
       "priority": "P1",
+      "tier": "full-review",
       "category": "Marketing & Media",
       "reasons": [
         "Resolve the named open issue",
         "No published website or contact-page route"
       ],
       "last_reviewed": "2026-10-06",
+      "due_on": "2027-01-04",
       "website": "",
       "sources": "OCHBS 2026 firsthand card/flyer: IMG_CF95CE18-2D11-4013-A2C5-94EF39540A47.jpeg; private intake OCHBS-2026-039. Reviewed 2026-10-06.",
       "notes": "Firsthand OCHBS 2026 card/flyer evidence retained. Open issue: Confirm active company website and current cannabis-client service scope; card confirms promotional merchandise and OCHBS presence.",
+      "triggers": [],
       "last_attempt": {
         "organization_id": "org-3af4221fa5d1",
         "name": "SIPE Promotional Products",
@@ -109,14 +139,17 @@
       "organization_id": "org-d124f071dca0",
       "name": "Ohio Women’s Cannabis Chamber of Commerce",
       "priority": "P1",
+      "tier": "full-review",
       "category": "Nonprofit & Advocacy",
       "reasons": [
         "Resolve the named open issue"
       ],
       "last_reviewed": "2026-10-06",
+      "due_on": "2027-01-04",
       "website": "https://www.OhioWomensCannaChamber.org",
       "sources": "OCHBS 2026 firsthand card/flyer: photo.jpeg; private intake OCHBS-2026-069. Reviewed 2026-10-06.",
       "notes": "Firsthand OCHBS 2026 card/flyer evidence retained. Open issue: Confirm active organizational website, legal/nonprofit status and current program contacts; the recorded event flyer supports education, advocacy and networking.",
+      "triggers": [],
       "last_attempt": {
         "organization_id": "org-d124f071dca0",
         "name": "Ohio Women’s Cannabis Chamber of Commerce",
@@ -133,6 +166,7 @@
       "organization_id": "org-0557619757dc",
       "name": "Porcupine Defense Solutions",
       "priority": "P1",
+      "tier": "routine-verification",
       "category": "Security & Cash Logistics",
       "reasons": [
         "Resolve the named open issue",
@@ -140,9 +174,11 @@
         "No recorded evidence-review date"
       ],
       "last_reviewed": null,
+      "due_on": null,
       "website": "",
       "sources": "Firsthand convention contact and user-supplied booth photograph, 2026-08-27 | OCHBS 2026 direct-contact evidence, 2026-09-23–24",
       "notes": "Security company met firsthand by Travis Vought at a Libertarian convention. Company representatives stated they are open to working with cannabis businesses. Booth branding and the user-supplied photograph confirm the operating name Porcupine Defense Solutions. A reliable company-controlled website, direct contact route, service area, licensing and specific service scope were not independently verified in this pass. A company affiliation was confirmed firsthand in September 2026. The private contact and phone remain excluded from this public dataset; website, licensing, service area and specific scope still require verification.",
+      "triggers": [],
       "last_attempt": {
         "organization_id": "org-0557619757dc",
         "name": "Porcupine Defense Solutions",
@@ -159,44 +195,53 @@
       "organization_id": "org-105e0713e773",
       "name": "Mood Leaf",
       "priority": "P1",
+      "tier": "full-review",
       "category": "Cultivator / Processor / Dispensary",
       "reasons": [
         "Resolve the named open issue"
       ],
       "last_reviewed": "2026-10-13",
+      "due_on": "2027-01-11",
       "website": "https://www.moodleaf.com/contact",
       "sources": "OCHBS 2026 firsthand card/flyer: IMG_645D94FD-CC76-432C-A656-F6B08904A916.jpeg; exhibitor booth 811; private intake OCHBS-2026-004; OCHBS-2026-005. Reviewed 2026-10-06. | Scoped contact/service review 2026-10-13: https://www.moodleaf.com/ | https://www.moodleaf.com/contact",
       "notes": "Firsthand OCHBS 2026 card/flyer evidence retained. Open issue: Confirm current brand/operator identity, licensing entity and organizational website; no independent licensing verification is claimed. Contact/service review 2026-10-13: Wholesale and sales emails are published on the existing brand domain; no delivery test. Footer address and 614-555-0123 are apparent template content and were excluded. Legal/licensing entity remains an open issue. Earlier Nicole email failed delivery and is not used as a public contact.",
+      "triggers": [],
       "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
+      "next_action": "Full review: confirm operating status, license where applicable, services, contacts and Ohio coverage from primary sources; record source dates and field-level limits."
     },
     {
       "organization_id": "org-fb49bcaddd77",
       "name": "Courier Pro Logistics",
       "priority": "P1",
+      "tier": "full-review",
       "category": "Security & Cash Logistics",
       "reasons": [
         "Resolve the named open issue"
       ],
       "last_reviewed": "2026-10-13",
+      "due_on": "2027-01-11",
       "website": "https://www.courierprologistics.com/",
       "sources": "OCHBS 2026 firsthand card/flyer: IMG_5123F92A-1AA8-4924-9C8C-632F4C9B254F.jpeg; private intake OCHBS-2026-056. Reviewed 2026-10-06. | Scoped contact/service review 2026-10-13: https://www.courierprologistics.com/",
       "notes": "Firsthand OCHBS 2026 card/flyer evidence retained. Open issue: Confirm accessible company website, legal entity/transport authorization and current cannabis service scope; card and OCHBS roster establish the event connection. Contact/service review 2026-10-13: Provider publishes the phone and advertises Ohio cannabis/controlled-industry logistics. Legal entity, transport authorization and operational compliance were not independently verified; open issue retained.",
+      "triggers": [],
       "last_attempt": null,
-      "next_action": "Read primary sources; check identity, actionable contact, service relevance and Ohio coverage. Record field-level limits; do not infer license, shipping or current stock."
+      "next_action": "Full review: confirm operating status, license where applicable, services, contacts and Ohio coverage from primary sources; record source dates and field-level limits."
     },
     {
       "organization_id": "org-20250325b35f",
       "name": "Mojo's Smoke Shop (formerly The Hemp House / Wholesale Hemp LLC)",
       "priority": "P2",
+      "tier": "full-review",
       "category": "Hemp / CBD Products & Ancillary",
       "reasons": [
         "No recorded evidence-review date"
       ],
       "last_reviewed": null,
+      "due_on": null,
       "website": "https://mojossmokeshop.com/",
       "sources": "https://mojossmokeshop.com/ | https://www.facebook.com/p/Mojos-Smoke-Shop-61578455440002/",
       "notes": "The former Hemp House domain now redirects to Mojo's Smoke Shop, resolving the earlier brand-transition ambiguity. Current business-controlled pages retain the Portsmouth phone/email and identify CBD among the shop's products; current pages also show a Wheelersburg location. Retained as Ohio hemp/CBD ancillary retail, not as an Ohio DCC-licensed marijuana operator.",
+      "triggers": [],
       "last_attempt": {
         "organization_id": "org-20250325b35f",
         "name": "Mojo's Smoke Shop (formerly The Hemp House / Wholesale Hemp LLC)",
@@ -213,14 +258,17 @@
       "organization_id": "org-4272e7927699",
       "name": "Nexus Agriscience",
       "priority": "P2",
+      "tier": "full-review",
       "category": "Hemp / CBD Products & Ancillary",
       "reasons": [
         "No recorded evidence-review date"
       ],
       "last_reviewed": null,
+      "due_on": null,
       "website": "https://nexusagriscience.com",
       "sources": "https://nexusagriscience.com | OCHBS direct in-person evidence, 2026-09-23",
       "notes": "Molecular-farming company developing cannabis and hemp genetics, ingredients and research applications. Official site verified",
+      "triggers": [],
       "last_attempt": {
         "organization_id": "org-4272e7927699",
         "name": "Nexus Agriscience",
@@ -232,6 +280,1322 @@
         "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
       },
       "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
+    }
+  ],
+  "upcoming": [
+    {
+      "organization_id": "org-1d42dd421c92",
+      "tier": "full-review",
+      "category": "Accounting & Tax",
+      "due_on": "2026-11-12"
+    },
+    {
+      "organization_id": "org-efa4a8df2421",
+      "tier": "full-review",
+      "category": "Accounting & Tax",
+      "due_on": "2026-11-12"
+    },
+    {
+      "organization_id": "org-33dfdc741930",
+      "tier": "full-review",
+      "category": "Consulting",
+      "due_on": "2026-11-12"
+    },
+    {
+      "organization_id": "org-cadae1a17de3",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-12"
+    },
+    {
+      "organization_id": "org-7831babce707",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-12"
+    },
+    {
+      "organization_id": "org-1d44aa49bf35",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-12"
+    },
+    {
+      "organization_id": "org-bd430c7e91b0",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-12"
+    },
+    {
+      "organization_id": "org-aefe1b952bc0",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-12"
+    },
+    {
+      "organization_id": "org-73dbb4d51092",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-12"
+    },
+    {
+      "organization_id": "org-9770d5914483",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-12"
+    },
+    {
+      "organization_id": "org-342301c01b6b",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-12"
+    },
+    {
+      "organization_id": "org-28107c7fe3a4",
+      "tier": "full-review",
+      "category": "Hemp / CBD Products & Ancillary",
+      "due_on": "2026-11-12"
+    },
+    {
+      "organization_id": "org-dea403955b20",
+      "tier": "full-review",
+      "category": "Legal & Licensing",
+      "due_on": "2026-11-12"
+    },
+    {
+      "organization_id": "org-ff8ae7820be0",
+      "tier": "full-review",
+      "category": "Legal & Licensing",
+      "due_on": "2026-11-12"
+    },
+    {
+      "organization_id": "org-bae125036d67",
+      "tier": "full-review",
+      "category": "Legal & Licensing",
+      "due_on": "2026-11-12"
+    },
+    {
+      "organization_id": "org-322ee82642f3",
+      "tier": "full-review",
+      "category": "Security & Cash Logistics",
+      "due_on": "2026-11-12"
+    },
+    {
+      "organization_id": "org-2b1d7f43aa6e",
+      "tier": "full-review",
+      "category": "Security & Cash Logistics",
+      "due_on": "2026-11-12"
+    },
+    {
+      "organization_id": "org-9ed4875dc1d5",
+      "tier": "full-review",
+      "category": "Accounting & Tax",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-cc96c3d190d4",
+      "tier": "full-review",
+      "category": "Accounting & Tax",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-4a9f91858514",
+      "tier": "full-review",
+      "category": "Accounting & Tax",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-24ac5cb3557c",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-a05f9afca5ef",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-9a763fe48014",
+      "tier": "full-review",
+      "category": "Hemp / CBD Products & Ancillary",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-7ca4a132ada7",
+      "tier": "full-review",
+      "category": "Legal & Licensing",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-9b673ee01ed9",
+      "tier": "full-review",
+      "category": "Legal & Licensing",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-03e26cc03f84",
+      "tier": "full-review",
+      "category": "Legal & Licensing",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-baace2c570b4",
+      "tier": "full-review",
+      "category": "Legal & Licensing",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-69fd86123b43",
+      "tier": "full-review",
+      "category": "Legal & Licensing",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-cb9a881abcf1",
+      "tier": "full-review",
+      "category": "Nonprofit & Advocacy",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-6d96aab778c7",
+      "tier": "full-review",
+      "category": "Nonprofit & Advocacy",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-8238a66c6c67",
+      "tier": "full-review",
+      "category": "Nonprofit & Advocacy",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-213edd99cf5c",
+      "tier": "full-review",
+      "category": "Packaging & Labeling",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-76eced7adf7a",
+      "tier": "full-review",
+      "category": "Packaging & Labeling",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-bff25117eadb",
+      "tier": "full-review",
+      "category": "Packaging & Labeling",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-89414e56dfbb",
+      "tier": "full-review",
+      "category": "Packaging & Labeling",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-cc73334fa814",
+      "tier": "full-review",
+      "category": "Packaging & Labeling",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-ad28d10d93f6",
+      "tier": "full-review",
+      "category": "Real Estate / Build-Out",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-23cbf7524a65",
+      "tier": "full-review",
+      "category": "Staffing & HR",
+      "due_on": "2026-11-13"
+    },
+    {
+      "organization_id": "org-3ca802b13f07",
+      "tier": "full-review",
+      "category": "Consulting",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-17c50e57cc1b",
+      "tier": "full-review",
+      "category": "Consulting",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-51b563354dfe",
+      "tier": "full-review",
+      "category": "Consulting",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-e8d5c45ceb00",
+      "tier": "full-review",
+      "category": "Consulting",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-3a0ae70ab2e0",
+      "tier": "full-review",
+      "category": "Consulting",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-68ca5164ba06",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-31d30a079044",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-cd73b383c43b",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-27e668beecb1",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-02393016e488",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-cfc630983d08",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-73fe6ae295b7",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-7022b334ede8",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-b48e16de9fcf",
+      "tier": "full-review",
+      "category": "Hemp / CBD Products & Ancillary",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-5174fb5f4865",
+      "tier": "full-review",
+      "category": "Insurance",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-1cbd067de90c",
+      "tier": "full-review",
+      "category": "Insurance",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-6f378d0b5792",
+      "tier": "full-review",
+      "category": "Insurance",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-4c67457feb96",
+      "tier": "full-review",
+      "category": "Insurance",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-516e00934b80",
+      "tier": "full-review",
+      "category": "Insurance",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-bb0314e21158",
+      "tier": "full-review",
+      "category": "Insurance",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-bc5cee9459df",
+      "tier": "full-review",
+      "category": "Legal & Licensing",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-f01dfabbc20d",
+      "tier": "full-review",
+      "category": "Legal & Licensing",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-b870a8a62a9e",
+      "tier": "full-review",
+      "category": "Nonprofit & Advocacy",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-3d665d449ae6",
+      "tier": "full-review",
+      "category": "Packaging & Labeling",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-877dbd3c9ccf",
+      "tier": "full-review",
+      "category": "Packaging & Labeling",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-e89aabc7db2f",
+      "tier": "full-review",
+      "category": "Real Estate / Build-Out",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-9b7047555d2a",
+      "tier": "full-review",
+      "category": "Real Estate / Build-Out",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-83129fa77642",
+      "tier": "full-review",
+      "category": "Real Estate / Build-Out",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-43d1a747f0ae",
+      "tier": "full-review",
+      "category": "Real Estate / Build-Out",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-b17390f489a7",
+      "tier": "full-review",
+      "category": "Real Estate / Build-Out",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-213dd6d61c3e",
+      "tier": "full-review",
+      "category": "Real Estate / Build-Out",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-e84bd9b38215",
+      "tier": "full-review",
+      "category": "Real Estate / Build-Out",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-19bab7f0dc74",
+      "tier": "full-review",
+      "category": "Real Estate / Build-Out",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-1fe8ab476108",
+      "tier": "full-review",
+      "category": "Real Estate / Build-Out",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-b378d74b9ade",
+      "tier": "full-review",
+      "category": "Security & Cash Logistics",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-e18361195eef",
+      "tier": "full-review",
+      "category": "Security & Cash Logistics",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-932a48a31a6f",
+      "tier": "full-review",
+      "category": "Security & Cash Logistics",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-3d37c9e81ab0",
+      "tier": "full-review",
+      "category": "Security & Cash Logistics",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-8fd15920db44",
+      "tier": "full-review",
+      "category": "Testing Labs",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-74e57cabf73f",
+      "tier": "full-review",
+      "category": "Testing Labs",
+      "due_on": "2026-11-14"
+    },
+    {
+      "organization_id": "org-7b1ec7846617",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-15"
+    },
+    {
+      "organization_id": "org-f84af119e259",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-15"
+    },
+    {
+      "organization_id": "org-922caf289dc8",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-15"
+    },
+    {
+      "organization_id": "org-55ddf9f58f12",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-15"
+    },
+    {
+      "organization_id": "org-2f4e4abf2576",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-15"
+    },
+    {
+      "organization_id": "org-1587d77e43a5",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-15"
+    },
+    {
+      "organization_id": "org-c50a78614d86",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-15"
+    },
+    {
+      "organization_id": "org-2412bd73869d",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-15"
+    },
+    {
+      "organization_id": "org-16a604f63be9",
+      "tier": "full-review",
+      "category": "Accounting & Tax",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-664350edc53d",
+      "tier": "full-review",
+      "category": "Banking & Financial Services",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-24d0e2bda395",
+      "tier": "full-review",
+      "category": "Banking & Financial Services",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-b1c9597ee969",
+      "tier": "full-review",
+      "category": "Banking & Financial Services",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-0f09d67b057c",
+      "tier": "full-review",
+      "category": "Banking & Financial Services",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-a5f1518ea942",
+      "tier": "full-review",
+      "category": "Banking & Financial Services",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-51ddc559a90e",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-64ee2d0eff77",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-2adb331ca783",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-550cc193e4d0",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-90725b1d60a7",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-783986a56f1d",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-364a9eed8729",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-86d0f1c54920",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-afa309caf39c",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-fee14b6a9c90",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-63bd45e3d30d",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-9ee377e930fd",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-1347773f0174",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-5557bb333b04",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-a821a61acb08",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-d480f46274ac",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-2b099217b822",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-9bdb83da8d0c",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-31a9d040cd43",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-807016fdf315",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-acbcf491323e",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-4c8da4a965ec",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-541abb14f3bc",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-79984c5926e3",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-1b5fd89992f5",
+      "tier": "full-review",
+      "category": "Events & Expos",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-091b191caaaa",
+      "tier": "full-review",
+      "category": "Events & Expos",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-be3a86788b46",
+      "tier": "full-review",
+      "category": "Events & Expos",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-f9dece454b02",
+      "tier": "full-review",
+      "category": "Events & Expos",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-84327294cf18",
+      "tier": "full-review",
+      "category": "Events & Expos",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-23b94eafc801",
+      "tier": "full-review",
+      "category": "Events & Expos",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-0479f2850035",
+      "tier": "full-review",
+      "category": "Events & Expos",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-d96da8ebac94",
+      "tier": "full-review",
+      "category": "Events & Expos",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-9f0eac39576f",
+      "tier": "full-review",
+      "category": "Events & Expos",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-36b5cb011fb3",
+      "tier": "full-review",
+      "category": "Events & Expos",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-fef0a7bb2f40",
+      "tier": "full-review",
+      "category": "Hemp / CBD Products & Ancillary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-c6c7ab956ad5",
+      "tier": "full-review",
+      "category": "Hemp / CBD Products & Ancillary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-7e1c31ddf363",
+      "tier": "full-review",
+      "category": "Hemp / CBD Products & Ancillary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-1f499dcfc56c",
+      "tier": "full-review",
+      "category": "Hemp / CBD Products & Ancillary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-8863e9b8ffe1",
+      "tier": "full-review",
+      "category": "Hemp / CBD Products & Ancillary",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-109a93176b6c",
+      "tier": "full-review",
+      "category": "Legal & Licensing",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-875f0233c47d",
+      "tier": "full-review",
+      "category": "Legal & Licensing",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-b819d31c47d6",
+      "tier": "full-review",
+      "category": "Marketing & Media",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-66aea0e7b5a4",
+      "tier": "full-review",
+      "category": "Marketing & Media",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-e7ec54328c78",
+      "tier": "full-review",
+      "category": "Marketing & Media",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-0ed58be2d2e7",
+      "tier": "full-review",
+      "category": "Marketing & Media",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-4575c56db1e0",
+      "tier": "full-review",
+      "category": "Marketing & Media",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-9070ef5f2adb",
+      "tier": "full-review",
+      "category": "Marketing & Media",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-5ab8516f2235",
+      "tier": "full-review",
+      "category": "Marketing & Media",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-be69aa019900",
+      "tier": "full-review",
+      "category": "Marketing & Media",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-914195f2354b",
+      "tier": "full-review",
+      "category": "Marketing & Media",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-a7b45513e9cf",
+      "tier": "full-review",
+      "category": "Nonprofit & Advocacy",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-7e749b6967b8",
+      "tier": "full-review",
+      "category": "Nonprofit & Advocacy",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-8427ef8e5bb7",
+      "tier": "full-review",
+      "category": "Nonprofit & Advocacy",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-8aa562b99642",
+      "tier": "full-review",
+      "category": "Nonprofit & Advocacy",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-f58fbbd656cf",
+      "tier": "full-review",
+      "category": "Nonprofit & Advocacy",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-6f45f7c60883",
+      "tier": "full-review",
+      "category": "Nonprofit & Advocacy",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-fbc9f2e06984",
+      "tier": "full-review",
+      "category": "Nonprofit & Advocacy",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-fd7388e9d2ee",
+      "tier": "full-review",
+      "category": "Nonprofit & Advocacy",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-a8433675c717",
+      "tier": "full-review",
+      "category": "Nonprofit & Advocacy",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-2309318d71ec",
+      "tier": "full-review",
+      "category": "Real Estate / Build-Out",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-4b829397bf1a",
+      "tier": "full-review",
+      "category": "Real Estate / Build-Out",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-54a596954b3c",
+      "tier": "full-review",
+      "category": "Security & Cash Logistics",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-885c2a224166",
+      "tier": "full-review",
+      "category": "Security & Cash Logistics",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-88f48543e97d",
+      "tier": "full-review",
+      "category": "Security & Cash Logistics",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-ae271f545ee6",
+      "tier": "full-review",
+      "category": "Staffing & HR",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-c921c1c273cf",
+      "tier": "full-review",
+      "category": "Staffing & HR",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-3d3c5f565927",
+      "tier": "full-review",
+      "category": "Technology",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-037f0479b847",
+      "tier": "full-review",
+      "category": "Technology",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-87b32cb5cf50",
+      "tier": "full-review",
+      "category": "Technology",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-93ded3612fd5",
+      "tier": "full-review",
+      "category": "Technology",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-a06c1362a303",
+      "tier": "full-review",
+      "category": "Technology",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-cfc768cc486e",
+      "tier": "full-review",
+      "category": "Technology",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-2a92a4f3c70c",
+      "tier": "full-review",
+      "category": "Technology",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-0e18d6a3e0ca",
+      "tier": "full-review",
+      "category": "Technology",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-4e563ff69d7a",
+      "tier": "full-review",
+      "category": "Technology",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-57f411325bdc",
+      "tier": "full-review",
+      "category": "Technology",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-0f1a2f519e40",
+      "tier": "full-review",
+      "category": "Technology",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-cc9e43442ed0",
+      "tier": "full-review",
+      "category": "Technology",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-d04d2460a818",
+      "tier": "full-review",
+      "category": "Technology",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-54dcc0ba312a",
+      "tier": "full-review",
+      "category": "Technology",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-ce5f89f3d3b3",
+      "tier": "full-review",
+      "category": "Technology",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-a06683a78c5f",
+      "tier": "full-review",
+      "category": "Technology",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-dcff1d5fca84",
+      "tier": "full-review",
+      "category": "Technology",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-40bdc9eb2854",
+      "tier": "full-review",
+      "category": "Technology",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-688c71d09ae7",
+      "tier": "full-review",
+      "category": "Technology",
+      "due_on": "2026-11-20"
+    },
+    {
+      "organization_id": "org-73962806aa32",
+      "tier": "full-review",
+      "category": "Accounting & Tax",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-4e0a234d5a17",
+      "tier": "full-review",
+      "category": "Consulting",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-ce2294a18546",
+      "tier": "full-review",
+      "category": "Consulting",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-12a85c92b445",
+      "tier": "full-review",
+      "category": "Consulting",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-c74bad85ccf3",
+      "tier": "full-review",
+      "category": "Consulting",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-9e14a3bfda99",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-9878f97747e7",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-c081c812feb2",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-405c00e28938",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-471d2f40325e",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-667af67557f3",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-0dba2c8a737d",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-3a4a21b3faf4",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-403a8f6287f1",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-0fe664576c8d",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-40726ffc20a0",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-34013988f2ee",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-d1d519732a19",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-2eb414488b5a",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-cbec823aceb6",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-f3d5255d5bc7",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-6cae66a61594",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-17949ca7057c",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-ae7e208afc98",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-b434c8bd9f4c",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-fa59d5f74ed0",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-4d7897d29e7e",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-a4be8fc0719f",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-171927b374cf",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-e0b1fa95a12d",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-c987375d90fe",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-0039680585f9",
+      "tier": "full-review",
+      "category": "Marketing & Media",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-12edc986a5a5",
+      "tier": "full-review",
+      "category": "Nonprofit & Advocacy",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-28996af4250a",
+      "tier": "full-review",
+      "category": "Nonprofit & Advocacy",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-bf86a088bea5",
+      "tier": "full-review",
+      "category": "Nonprofit & Advocacy",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-36630e5c633e",
+      "tier": "full-review",
+      "category": "Nonprofit & Advocacy",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-97f6d0768a39",
+      "tier": "full-review",
+      "category": "Real Estate / Build-Out",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-9365716997b1",
+      "tier": "full-review",
+      "category": "Security & Cash Logistics",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-842f90458ef2",
+      "tier": "full-review",
+      "category": "Staffing & HR",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-e9278d97b9fa",
+      "tier": "full-review",
+      "category": "Staffing & HR",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-a83be9552b63",
+      "tier": "full-review",
+      "category": "Staffing & HR",
+      "due_on": "2026-11-21"
+    },
+    {
+      "organization_id": "org-d11f62d98d3a",
+      "tier": "full-review",
+      "category": "Staffing & HR",
+      "due_on": "2026-11-21"
     }
   ]
 }
