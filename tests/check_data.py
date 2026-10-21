@@ -5,7 +5,7 @@ import json
 import re
 import sys
 import tempfile
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -42,6 +42,24 @@ for row in rows:
     if not row['Category'].startswith('Out of scope') and not row['Website'].strip():
         assert row['Record ID'] in queued, 'Missing website must trigger review independently of its existing review date'
         assert queued[row['Record ID']]['priority']=='P1'
+import build_review_queue as review_schedule
+assert queue['intervals_days']=={'full-review':90,'routine-verification':180}
+for row in rows:
+    if row['Category'].startswith('Out of scope'):
+        continue
+    tier = review_schedule.review_tier(row)
+    if row['Category'] in review_schedule.ALWAYS_FULL or not row['Service Area'].startswith(review_schedule.NATIONAL_PREFIXES):
+        assert tier=='full-review', f"{row['Record ID']} must be on the 90-day full-review cycle"
+    else:
+        assert tier=='routine-verification', f"{row['Record ID']} must be on the 180-day routine-verification cycle"
+    if row['Record ID'] in queued and row['Last Reviewed']:
+        assert queued[row['Record ID']]['due_on']==(date.fromisoformat(row['Last Reviewed'])+timedelta(days=queue['intervals_days'][tier])).isoformat()
+triggers=json.loads((ROOT/'data/review-triggers.json').read_text())['triggers']
+for trigger in triggers:
+    assert trigger['kind'] in review_schedule.TRIGGER_KINDS and trigger['reported_on'] and trigger['source']
+    if not trigger.get('resolved_on'):
+        assert queued[trigger['organization_id']]['priority']=='P0', 'Open review triggers must be reviewed immediately'
+assert queue['open_triggers']==sum(not t.get('resolved_on') for t in triggers)
 with (ROOT / 'b2b-relationships.csv').open(encoding='utf-8-sig') as f:
     relationships = list(csv.DictReader(f))
 assert len(relationships) == 60
