@@ -45,6 +45,7 @@ nav a{min-height:44px;display:inline-flex;align-items:center}
 <a href="expungement.html">Record clearing</a>
 <a href="assessment.html">Business self-check</a>
 <a href="advocacy.html">Advocacy</a>
+<a href="compare.html">Compare states</a>
 <a href="https://travisvought-byte.github.io/vhg-veteran-resident-guide/">Veteran Resident Guide</a>
 </nav>
 </main>

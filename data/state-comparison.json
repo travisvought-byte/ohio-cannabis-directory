@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "as_of": "2026-10-21",
+  "home_state": "OH",
+  "purpose": "Compare Ohio's cannabis laws with other states and record what other markets experienced as they matured. Facts are sourced and dated. Assessments are the directory's analysis, labeled as such, with stated likelihood, confidence and basis.",
+  "likelihood_scale": ["almost no chance", "very unlikely", "unlikely", "roughly even chance", "likely", "very likely", "almost certain"],
+  "confidence_levels": ["low", "moderate", "high"],
+  "states": {
+    "OH": "Ohio",
+    "MI": "Michigan",
+    "OR": "Oregon"
+  },
+  "sources": [
+    {"id": "oh-orc-3796-05", "kind": "statute", "publisher": "Ohio Legislative Service Commission", "title": "Ohio Revised Code 3796.05, version effective March 20, 2026", "url": "https://codes.ohio.gov/ohio-revised-code/section-3796.05/3-20-2026", "retrieved_on": "2026-10-21"},
+    {"id": "oh-orc-3796-18", "kind": "statute", "publisher": "Ohio Legislative Service Commission", "title": "Ohio Revised Code 3796.18, cultivator license", "url": "https://codes.ohio.gov/ohio-revised-code/section-3796.18", "retrieved_on": "2026-10-21"},
+    {"id": "oh-dcc-by-the-numbers", "kind": "regulator", "publisher": "Ohio Division of Cannabis Control", "title": "DCC Update: By the Numbers (updated October 16, 2026)", "url": "https://dam.assets.ohio.gov/image/upload/com.ohio.gov/DCC/DCC%20Stats/DCC_Update_By_The_Numbers.pdf", "retrieved_on": "2026-10-21"},
+    {"id": "oh-mjbiz-2025-01", "kind": "news", "publisher": "MJBizDaily", "title": "Ohio recreational marijuana market already showing signs of price contraction (January 30, 2025)", "url": "https://mjbizdaily.com/ohio-recreational-market-shows-signs-of-price-contraction/", "retrieved_on": "2026-10-21"},
+    {"id": "mi-mcl-333-27959", "kind": "statute", "publisher": "Michigan Legislature", "title": "MCL 333.27959, Michigan Regulation and Taxation of Marihuana Act, section 9", "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-333-27959", "retrieved_on": "2026-10-21"},
+    {"id": "mi-metrotimes-2022-10", "kind": "news", "publisher": "Detroit Metro Times", "title": "Moratorium proposed on new cannabis grower licenses to address plummeting prices in Michigan (October 4, 2022)", "url": "https://www.metrotimes.com/weed/moratorium-proposed-on-new-cannabis-grower-licenses-to-address-plummeting-prices-in-michigan-31242932", "retrieved_on": "2026-10-21"},
+    {"id": "mi-bridge-2025-07", "kind": "news", "publisher": "Bridge Michigan", "title": "Michigan marijuana market cratering amid oversupply (July 18, 2025)", "url": "https://www.bridgemi.com/business-watch/michigan-marijuana-market-cratering-amid-oversupply-difficult-market", "retrieved_on": "2026-10-21"},
+    {"id": "mi-metrotimes-2026-01", "kind": "news", "publisher": "Detroit Metro Times", "title": "Michigan's cannabis market shrinks as new tax threatens more closures and layoffs (January 16, 2026)", "url": "https://www.metrotimes.com/weed-2/michigans-cannabis-market-shrinks-as-new-tax-threatens-more-closures-layoffs/", "retrieved_on": "2026-10-21"},
+    {"id": "or-cbt-2022-04", "kind": "news", "publisher": "Cannabis Business Times", "title": "Oregon regulators implement cannabis licensing moratorium (April 25, 2022)", "url": "https://www.cannabisbusinesstimes.com/news/oregon-olcc-cannabis-license-moratorium-cease-issue/", "retrieved_on": "2026-10-21"},
+    {"id": "or-olcc-2026-09", "kind": "regulator", "publisher": "Oregon Liquor and Cannabis Commission", "title": "Rules Advisory Committee agenda: 2026 limited lifting of marijuana license moratorium (September 25, 2026)", "url": "https://www.oregon.gov/olcc/Docs/rules/2026-OLC-Wholesale-License-Moratorium-Lift-RAC-Agenda-092526.pdf", "retrieved_on": "2026-10-21"}
+  ],
+  "topics": [
+    {
+      "id": "license-limits",
+      "label": "Limits on how many businesses can be licensed",
+      "question": "Does the state cap the number of cannabis businesses?",
+      "entries": [
+        {"state": "OH", "summary": "No more than 400 dispensaries may operate at one time. The Division of Cannabis Control sets the number of cultivator licenses, considering population and the number of patients and adult consumers. One person may hold no more than one cultivator license, one processor license and eight dispensary licenses. New dispensaries may not be licensed or relocated within one mile of another dispensary.", "citation": "Ohio Revised Code 3796.05", "effective_on": "2026-03-20", "reviewed_on": "2026-10-21", "source_ids": ["oh-orc-3796-05"]},
+        {"state": "MI", "summary": "No statewide limit on the total number of licenses. The state must approve an application that meets the legal requirements; municipalities may limit establishments locally. Ownership limits apply, such as interests in no more than five growers, though the state may allow exceptions by rule.", "citation": "MCL 333.27959 (Initiated Law 1 of 2018)", "effective_on": null, "reviewed_on": "2026-10-21", "source_ids": ["mi-mcl-333-27959"]},
+        {"state": "OR", "summary": "License numbers are capped per capita by license type under House Bill 4121 (2024). New licenses have been on hold since 2022; a license type reopens only when its active licenses fall below the population ratio. Regulators were discussing a limited reopening in September 2026.", "citation": "Oregon House Bill 4121 (2024) and Oregon Liquor and Cannabis Commission rules", "effective_on": null, "reviewed_on": "2026-10-21", "source_ids": ["or-olcc-2026-09", "or-cbt-2022-04"]}
+      ]
+    },
+    {
+      "id": "growing-space",
+      "label": "Limits on growing space",
+      "question": "How much can a licensed grower cultivate?",
+      "entries": [
+        {"state": "OH", "summary": "Level I cultivators may have up to 100,000 square feet of cultivation area and Level II cultivators up to 15,000 square feet, including any expansions the Division of Cannabis Control approves.", "citation": "Ohio Revised Code 3796.18", "effective_on": "2026-03-20", "reviewed_on": "2026-10-21", "source_ids": ["oh-orc-3796-18"]},
+        {"state": "MI", "summary": "Grower licenses are set by plant count: Class A up to 100 plants, Class B up to 500 and Class C up to 2,000. There is no statewide limit on how many grower licenses are issued.", "citation": "MCL 333.27959(2)", "effective_on": null, "reviewed_on": "2026-10-21", "source_ids": ["mi-mcl-333-27959"]}
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "oversupply-price-collapse",
+      "title": "Oversupply and falling prices",
+      "summary": "When licenses and growing capacity expand faster than demand, prices can fall sharply and many businesses close.",
+      "example_state": "MI",
+      "what_happened": [
+        {"text": "The average price of an ounce of adult-use flower fell from more than $512 in January 2020 to $117 in August 2022, according to state data.", "source_ids": ["mi-metrotimes-2022-10"]},
+        {"text": "It kept falling: $95.08 in December 2023, $69.20 in December 2024 and $58.20 in December 2025.", "source_ids": ["mi-metrotimes-2026-01"]},
+        {"text": "Plants under cultivation rose from about 400,000 to nearly 1.5 million in the year before October 2022, and reached 3.2 million by June 2025.", "source_ids": ["mi-metrotimes-2022-10", "mi-bridge-2025-07"]},
+        {"text": "Adult-use sales fell in 2025 for the first time since legalization, to $3.17 billion from $3.27 billion in 2024.", "source_ids": ["mi-metrotimes-2026-01"]},
+        {"text": "More than 550 dispensaries and cultivators have closed since adult-use sales began in December 2019, including about 191 grow operations.", "source_ids": ["mi-metrotimes-2026-01"]},
+        {"text": "TerrAscend announced in June 2025 that it would leave Michigan, closing 20 stores and four cultivation facilities.", "source_ids": ["mi-bridge-2025-07"]}
+      ],
+      "conditions": [
+        {"id": "no-license-limit", "label": "No statewide limit on licenses", "text": "No statewide limit on the number of licenses: the state must approve qualifying applications, and changing the voter-approved law requires a three-quarters vote of the legislature.", "source_ids": ["mi-mcl-333-27959", "mi-metrotimes-2022-10"]},
+        {"id": "capacity-growth", "label": "Rapid growth in growing capacity", "text": "Growing capacity expanded much faster than sales.", "source_ids": ["mi-metrotimes-2022-10", "mi-bridge-2025-07"]}
+      ],
+      "ohio_check": [
+        {"condition_id": "no-license-limit", "status": "absent", "finding": "Ohio has limits Michigan lacks: a 400-dispensary cap, a one-mile spacing rule for new dispensaries, one cultivator license per person, and a cultivator count set by the Division of Cannabis Control. Ohio had 37 cultivators (23 Level I and 14 Level II) as of October 16, 2026.", "source_ids": ["oh-orc-3796-05", "oh-dcc-by-the-numbers"]},
+        {"condition_id": "capacity-growth", "status": "partial", "finding": "Growing space is capped per license, but cultivators may expand up to those caps with Division approval, so total capacity can still grow. The directory has not found a published figure for total growing space in use.", "source_ids": ["oh-orc-3796-18"]}
+      ],
+      "ohio_trend": [
+        {"text": "Ohio's average adult-use price fell from $9.40 a gram when sales began in August 2024 to $6.80 in late January 2025.", "source_ids": ["oh-mjbiz-2025-01"]},
+        {"text": "The Division of Cannabis Control reported an average of $6.55 a gram for plant sales in the week of October 4 to 10, 2026.", "source_ids": ["oh-dcc-by-the-numbers"]},
+        {"text": "These two figures may not be calculated the same way: the 2025 figure is an adult-use analysis of state data, and the 2026 figure is the Division's average for all plant sales.", "source_ids": ["oh-mjbiz-2025-01", "oh-dcc-by-the-numbers"]}
+      ],
+      "assessments": [
+        {"judgment": "Ohio will see a Michigan-scale price collapse within the next two years.", "likelihood": "unlikely", "confidence": "moderate", "basis": "Ohio limits the conditions that drove Michigan's collapse: the number of cultivators is set by the Division, dispensaries and ownership are capped, and growing space has a ceiling. Ohio prices fell quickly after adult-use sales began but have changed little since early 2025. Confidence is moderate because total growing space in use is not published, provisional dispensaries are still opening, and the price figures are not fully comparable."},
+        {"judgment": "Ohio prices will drift meaningfully lower over the next two years rather than hold near current levels.", "likelihood": "roughly even chance", "confidence": "low", "basis": "Prices in maturing markets have generally fallen over time, and Ohio's early drop fits that pattern. But Ohio's average has been nearly flat since early 2025, and only two price points have been reviewed so far. Confidence is low until a longer run of the Division's weekly data is reviewed."}
+      ],
+      "assessed_on": "2026-10-21",
+      "review_by": "2027-01-21",
+      "watch": [
+        "The Division's weekly average price per gram",
+        "The number of cultivators and approved cultivation-area expansions",
+        "How many provisional dispensaries open (47 as of October 16, 2026)",
+        "Any change to the limits in Ohio Revised Code 3796.05 or 3796.18"
+      ],
+      "responses": [
+        {"state": "OR", "text": "Oregon stopped issuing new licenses for applications received after January 1, 2022, under House Bill 4016. In 2024, House Bill 4121 set per-capita caps by license type; a type reopens only when active licenses fall below its population ratio.", "source_ids": ["or-cbt-2022-04", "or-olcc-2026-09"]},
+        {"state": "MI", "text": "Michigan's largest operators asked lawmakers in 2022 for a moratorium on new grower licenses. Because the voter-approved law calls for unlimited licenses, a change needs a three-quarters vote; the sources reviewed do not show that a moratorium passed.", "source_ids": ["mi-metrotimes-2022-10"]}
+      ],
+      "letter": {
+        "subject": "Ohio's cannabis market and Michigan's oversupply",
+        "opening": "I am writing about the stability of Ohio's cannabis market. In Michigan, which has no statewide limit on licenses, the average price of an ounce of adult-use flower fell from more than $512 in January 2020 to $58.20 in December 2025, and more than 550 dispensaries and cultivators have closed. Ohio's law currently limits dispensaries, cultivator licenses and growing space.",
+        "asks": [
+          {"id": "keep-limits", "label": "Keep Ohio's current limits on dispensaries, cultivator licenses and growing space.", "text": "I ask you to keep Ohio's current limits on dispensaries, cultivator licenses and growing space, and to oppose changes that would remove them without evidence of unmet demand."},
+          {"id": "publish-data", "label": "Require yearly public data on growing space, supply and prices.", "text": "I ask you to require the Division of Cannabis Control to publish, each year, the total licensed and in-use growing space, inventory levels and price trends, so lawmakers can see oversupply coming and act early."},
+          {"id": "per-capita", "label": "Consider Oregon-style per-capita license limits if the limits are revisited.", "text": "If Ohio's limits are revisited, I ask you to consider an approach like Oregon's House Bill 4121, which ties the number of licenses of each type to population and reopens licensing only when counts fall below that ratio."},
+          {"id": "room-for-new", "label": "Make sure limits still leave room for new independent businesses.", "text": "I ask you to make sure Ohio's limits still leave room for new independent and locally owned businesses, so that market stability does not lock out new entrants."}
+        ],
+        "closing": "Will you tell me where you stand? I would appreciate a written response."
+      }
+    }
+  ]
+}

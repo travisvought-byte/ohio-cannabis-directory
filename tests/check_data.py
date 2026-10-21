@@ -65,7 +65,7 @@ with (ROOT / 'b2b-relationships.csv').open(encoding='utf-8-sig') as f:
 assert len(relationships) == 60
 assert len({relationship_id(r) for r in relationships}) == 60
 with tempfile.TemporaryDirectory() as temp:
-    for module_name, filename in [('build_expungement','expungement.html'),('build_lawmakers','lawmakers.html'),('build_advocacy','advocacy.html'),('build_directory','directory.html'),('build_home','index.html'),('build_intake','intake.html'),('build_relationships','relationships.html'),('build_resources','resources.html'),('build_seeds','seeds.html'),('build_state','state.html'),('build_locations','locations.html'),('build_knowledge','knowledge.html')]:
+    for module_name, filename in [('build_expungement','expungement.html'),('build_lawmakers','lawmakers.html'),('build_advocacy','advocacy.html'),('build_directory','directory.html'),('build_home','index.html'),('build_intake','intake.html'),('build_relationships','relationships.html'),('build_resources','resources.html'),('build_seeds','seeds.html'),('build_state','state.html'),('build_locations','locations.html'),('build_knowledge','knowledge.html'),('build_compare','compare.html')]:
         module = importlib.import_module(module_name)
         module.OUT = Path(temp) / filename
         module.main()
@@ -87,6 +87,9 @@ assert f"date-released: '{RELEASE['released_on']}'" in citation
 assert f'release v{RELEASE["version"]}' in (ROOT / 'index.html').read_text()
 assert f'Current site release:** {RELEASE["version"]}' in (ROOT / 'README.md').read_text()
 assert 'relationships.html' in (ROOT / 'sitemap.xml').read_text()
+assert 'compare.html' in (ROOT / 'sitemap.xml').read_text()
+from validate_comparison import validate as validate_comparison
+validate_comparison(json.loads((ROOT / 'data/state-comparison.json').read_text(encoding='utf-8')))
 print('PASS: record counts, IDs, review-date evidence, verification tiers, relationship coverage, generated pages and release metadata.')
 
 withdrawn={o["id"] for o in load_directory()["organizations"] if o.get("scope")=="withdrawn"}
