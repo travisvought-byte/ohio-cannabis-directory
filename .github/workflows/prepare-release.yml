@@ -76,5 +76,6 @@ jobs:
             exit 0
           fi
           git commit -m "Prepare v${VERSION} release artifacts"
-          git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push origin "$branch"
+          gh auth setup-git
+          git push origin "$branch"
           gh pr create --base main --head "$branch" --title "Prepare v${VERSION} release" --body "Release date: ${RELEASE_DATE}. Generated using release_tools.py and validated in the release workflow. Owner approval required. Release notes and CHANGELOG must be reviewed before merging."
