@@ -144,6 +144,12 @@ The [shared directory contract](architecture/STATE_DIRECTORY_CONTRACT.md) define
 
 `knowledge.html` provides 30 searchable explanations and buying tips covering definitions, product forms, processing, label units, batch reports and storage. General concepts cite public-health agencies and testing laboratories; Ohio labeling guidance cites the September 11, 2026 rule. A direct Strains link now appears in shared primary navigation and the footer, connecting every directory page with the strain library and knowledge hub. Rebuild with `python build_knowledge.py`; content and sources live in `data/knowledge.json`.
 
+## State comparison
+
+[Compare Ohio with other states](https://travisvought-byte.github.io/ohio-cannabis-directory/compare.html) has two layers. **Laws side by side** shows each state's rule on a topic with its citation, effective date and the date it was checked. **Lessons from other markets** records what happened elsewhere, the conditions that drove it, whether Ohio shares those conditions, and the directory's assessment of whether Ohio is likely to face the same problem. Assessments are labeled as analysis and use a fixed likelihood scale, a stated confidence level and a review date. Each lesson ends with a letter Ohio residents can send their own lawmakers. The first lesson covers oversupply and falling prices in Michigan, compared with Ohio and Oregon.
+
+Canonical data is `data/state-comparison.json`. `python validate_comparison.py` rejects uncited facts, law entries without a statute, regulator or government source, assessments outside the scale, and reviews older than 120 days. Regenerate the page with `python build_compare.py`.
+
 ## Ohio cannabis advocacy
 
 [Have a say in Ohio cannabis policy](https://travisvought-byte.github.io/ohio-cannabis-directory/advocacy.html) connects readers to the official state lawmaker lookup, explains legislative, DCC, JCARR and local decision-making, and offers source-linked reform requests for consumption lounges, out-of-state product restrictions, ordinary accessories and clearer SB 56 rules. Sources checked October 12, 2026. Reform requests are distinguished from current law.
