@@ -1,6 +1,6 @@
 # Evidence review queue
 
-As of 2026-10-14. Regenerate with `python build_review_queue.py`. Policy: [REVIEW_POLICY.md](REVIEW_POLICY.md).
+As of 2026-10-21. Regenerate with `python build_review_queue.py`. Policy: [REVIEW_POLICY.md](REVIEW_POLICY.md).
 
 P0: open review triggers (reported closure, license action, ownership change or material correction), reviewed immediately. P1: open issues, operators/labs/community resources due or undated, or missing websites. P2: remaining due or undated business providers. Ohio operators, testing labs and Ohio-based providers receive a full review every 90 days; national and multistate vendors receive a routine verification every 180 days. Blocked retrieval is an attempt, not a verified review.
 
