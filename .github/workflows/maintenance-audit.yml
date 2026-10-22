@@ -1,0 +1,33 @@
+name: Scheduled maintenance audit
+on:
+  schedule:
+    - cron: '17 9 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+      - name: Rebuild review queue without publishing
+        run: python build_review_queue.py
+      - name: Check canonical data
+        run: |
+          python tests/check_data.py
+          python validate_foundation.py data/directory.json
+      - name: Report queue drift
+        shell: bash
+        run: |
+          if ! git diff --quiet -- data/review-queue.json architecture/REVIEW_QUEUE.md; then
+            echo 'Review queue needs regeneration' >> "$GITHUB_STEP_SUMMARY"
+            git diff --stat -- data/review-queue.json architecture/REVIEW_QUEUE.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo 'Review queue matches committed files' >> "$GITHUB_STEP_SUMMARY"
+          fi
