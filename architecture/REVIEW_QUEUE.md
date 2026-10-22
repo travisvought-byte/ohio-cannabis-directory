@@ -4,7 +4,7 @@ As of 2026-10-21. Regenerate with `python build_review_queue.py`. Policy: [REVIE
 
 P0: open review triggers (reported closure, license action, ownership change or material correction), reviewed immediately. P1: open issues, operators/labs/community resources due or undated, or missing websites. P2: remaining due or undated business providers. Ohio operators, testing labs and Ohio-based providers receive a full review every 90 days; national and multistate vendors receive a routine verification every 180 days. Blocked retrieval is an attempt, not a verified review.
 
-515 published listings: 279 on the 90-day full-review cycle, 236 on the 180-day routine-verification cycle. 4 lack a review date; 6 have a named open issue; 0 open review triggers. Overlapping records appear once.
+516 published listings: 279 on the 90-day full-review cycle, 237 on the 180-day routine-verification cycle. 4 lack a review date; 6 have a named open issue; 0 open review triggers. Overlapping records appear once.
 
 Historical evidence and editorial inclusion remain intact. A review date identifies the latest scoped evidence review; the audit records which fields were checked and which still need work.
 

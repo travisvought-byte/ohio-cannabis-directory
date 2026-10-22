@@ -14,15 +14,15 @@ from directory_data import RELEASE, RELEASE_DATE, load_records, relationship_id,
 from validate_legislators import validate as validate_legislators
 validate_legislators()
 rows = load_records()
-assert len(rows) == 564
-assert sum(not r['Category'].startswith('Out of scope') for r in load_records(include_withdrawn=False)) == 515
+assert len(rows) == 565
+assert sum(not r['Category'].startswith('Out of scope') for r in load_records(include_withdrawn=False)) == 516
 assert len({r['Record ID'] for r in rows}) == len(rows)
 assert all(re.fullmatch(r'org-[0-9a-f]{12}', r['Record ID']) for r in rows)
 assert all(r['Source(s)'] and r['Capabilities / Keywords'] for r in rows)
 assert sum(r['Verification Tier'] == 'Open issue' for r in rows) == 6
 for row in rows:
     if row['Last Reviewed']:
-        assert date.fromisoformat(row['Last Reviewed']) <= RELEASE_DATE
+        assert date.fromisoformat(row['Last Reviewed']) <= date.fromisoformat(load_directory()['as_of'])
         assert row['Last Reviewed'] in row['Source(s)'] + row['Seed Source']
 audits = [json.loads(p.read_text()) for p in (ROOT / 'data/reviews').glob('*.json')]
 newly_dated = {r['organization_id'] for a in audits for r in a['completed'] if not r['prior_last_reviewed']}

@@ -12,14 +12,18 @@ data=load_directory();assert not validate(data)
 assert load_records(include_withdrawn=False)==csvrows('ohio-cannabis-directory.csv')
 assert load_relationship_records()==csvrows('b2b-relationships.csv')
 assert load_seed_records()==json.loads((ROOT/'seed-suppliers.json').read_text())
-assert len(load_records())==564 and len(load_relationship_records())==60
+assert len(load_records())==565 and len(load_relationship_records())==60
 assert [r['id'] for r in data['relationships']]==[relationship_id(r) for r in load_relationship_records()]
 assert len({o['id'] for o in data['organizations']})==len(data['organizations'])
-assert sum(o.get('legacy_record',{}).get('Record ID')==o['id'] for o in data['organizations'] if 'legacy_record' in o)==564
+assert sum(o.get('legacy_record',{}).get('Record ID')==o['id'] for o in data['organizations'] if 'legacy_record' in o)==565
 assert sum(o['name']=='Indoor Gardens' for o in data['organizations'])==1
 assert sum(a['old_id'].startswith('org-seed') for a in data['aliases'])==1
-assert all(not s['coverage'] for s in data['services'] if s['origin']=='organization-profile')
-assert all(e['status']=='source-listed' for e in data['evidence'] if e['claim']=='organization-profile')
+assert all(not s['coverage'] for s in data['services'] if s['origin']=='organization-profile' and s['id']!='svc-profile-36e94688f898')
+# New Ohio coverage is backed by reviewed first-party claim-level evidence.
+dizpot=next(s for s in data['services'] if s['id']=='svc-profile-36e94688f898')
+assert dizpot['coverage']==[{'kind':'state','state':'OH','evidence_ids':['ev-dizpot-ohio-20261022']}]
+assert next(e for e in data['evidence'] if e['id']=='ev-dizpot-ohio-20261022')['status']=='source-reviewed'
+assert all(e['status']=='source-listed' for e in data['evidence'] if e['claim']=='organization-profile' and e['id']!='ev-dizpot-profile-20261022')
 # The same renderer accepts another state pack without copied code. Fixtures never publish.
 public_state_before=(ROOT/'data/public-state.json').read_bytes()
 fixture=copy.deepcopy(data);pa=copy.deepcopy(fixture['states'][0]);pa.update(code='PA',name='Pennsylvania',publication_status='research-only');

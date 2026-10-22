@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "scope": "directory",
-  "as_of": "2026-10-13",
+  "as_of": "2026-10-22",
   "organizations": [
     {
       "id": "org-6f5375e74696",
@@ -22108,6 +22108,44 @@
         "Service Area (as published)": "Kentucky; Ohio event connection: Ohio Valley Cannabis Conference in Cincinnati; Ohio service coverage unconfirmed"
       },
       "website": "https://www.kycanna.org/"
+    },
+    {
+      "id": "org-36e94688f898",
+      "name": "DIZPOT",
+      "kind": "other",
+      "legacy_ids": [
+        "org-36e94688f898"
+      ],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "602-795-4499"
+        },
+        {
+          "kind": "contact-page",
+          "value": "https://dizpot.com/"
+        }
+      ],
+      "scope": "public",
+      "legacy_record": {
+        "Category": "Packaging & Labeling",
+        "Organization / Business Name": "DIZPOT",
+        "Type": "Business",
+        "Contact Person": "",
+        "Email": "",
+        "Phone": "602-795-4499",
+        "Website": "https://dizpot.com/",
+        "Service Area": "Nationwide incl. Ohio",
+        "Capabilities / Keywords": "Cannabis packaging; dispensary exit bags; custom Mylar bags; packaging design; branding; supply chain logistics; Ohio operators",
+        "Verification Tier": "Source-verified",
+        "Notes": "Phoenix-based cannabis packaging, branding and logistics supplier serving Ohio operators, including dispensaries. Its Ohio Exit Bag Guide offers custom exit bags and creative support for Ohio operators. Travis Vought reports DIZPOT attendance at the Ohio Cannabis Conference on 2026-10-22 (firsthand owner report). Specific dispensary customers, pricing and current order availability were not verified; packaging approval claims are supplier statements, not independent DCC certification.",
+        "Source(s)": "Official company website and Ohio Exit Bag Guide, reviewed 2026-10-22: https://dizpot.com/ | https://hub.dizpot.com/ohio-exit-bag-resource-guide | Travis Vought firsthand conference attendance report, 2026-10-22: https://github.com/travisvought-byte/ohio-cannabis-directory/issues/40",
+        "Seed Source": "Travis Vought, Ohio Cannabis Conference attendance observation, 2026-10-22",
+        "Record ID": "org-36e94688f898",
+        "Last Reviewed": "2026-10-22",
+        "Service Area (as published)": "Nationwide; Ohio operators"
+      },
+      "website": "https://dizpot.com/"
     }
   ],
   "locations": [
@@ -45998,6 +46036,45 @@
         "OH"
       ],
       "description": "Nonprofit / Advocacy\nCurrent Kentucky medical-cannabis trade association. Rachel Roberts remains Executive Director; KCIA's first-party team page publishes her direct email and the organization phone. Included as out-of-state Ohio Valley ecosystem adjacency, not as an Ohio-based association. The Ohio Valley event organizer also lists KCIA as a trusted partner and Rachel Roberts as a speaker at its Cincinnati event. Event participation is distinguished from confirmed Ohio services."
+    },
+    {
+      "id": "svc-profile-36e94688f898",
+      "organization_id": "org-36e94688f898",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "DIZPOT",
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "OH",
+          "evidence_ids": [
+            "ev-dizpot-ohio-20261022"
+          ]
+        }
+      ],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Ohio cannabis operators, including dispensaries seeking exit bags; confirm order requirements with the supplier.",
+      "next_step": {
+        "label": "Contact DIZPOT",
+        "url": "https://dizpot.com/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-dizpot-profile-20261022",
+        "ev-dizpot-ohio-20261022",
+        "ev-dizpot-conference-20261022"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Cannabis packaging; dispensary exit bags; custom Mylar bags; packaging design; branding; supply chain logistics; Ohio operators\nPhoenix-based cannabis packaging, branding and logistics supplier serving Ohio operators, including dispensaries. Its Ohio Exit Bag Guide offers custom exit bags and creative support for Ohio operators. Travis Vought reports DIZPOT attendance at the Ohio Cannabis Conference on 2026-10-22 (firsthand owner report). Specific dispensary customers, pricing and current order availability were not verified; packaging approval claims are supplier statements, not independent DCC certification."
     }
   ],
   "evidence": [
@@ -66232,6 +66309,45 @@
       "recorded_on": "2026-10-13",
       "recheck_on": "2026-11-12",
       "limitations": "First-party public contact and described services reviewed. No email delivery or response test; current client capacity, fees, eligibility and licensing were not verified."
+    },
+    {
+      "subject_id": "svc-profile-36e94688f898",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-22",
+      "recorded_on": "2026-10-22",
+      "recheck_on": "2027-04-20",
+      "limitations": "Company-published services and Ohio coverage reviewed; no order, response, pricing or independent DCC approval verification.",
+      "id": "ev-dizpot-profile-20261022",
+      "claim": "organization-profile",
+      "source_url": "https://dizpot.com/",
+      "value": "DIZPOT provides cannabis packaging, branding and supply chain logistics. Published phone: 602-795-4499. Based in Phoenix, Arizona; nationwide service."
+    },
+    {
+      "subject_id": "svc-profile-36e94688f898",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-22",
+      "recorded_on": "2026-10-22",
+      "recheck_on": "2027-04-20",
+      "limitations": "Company-published services and Ohio coverage reviewed; no order, response, pricing or independent DCC approval verification.",
+      "id": "ev-dizpot-ohio-20261022",
+      "claim": "service-coverage",
+      "source_url": "https://hub.dizpot.com/ohio-exit-bag-resource-guide",
+      "value": "DIZPOT explicitly offers exit bags and creative design support to Ohio operators, supporting dispensary packaging needs."
+    },
+    {
+      "subject_id": "svc-profile-36e94688f898",
+      "source_kind": "firsthand",
+      "status": "firsthand-confirmed",
+      "reviewed_on": "2026-10-22",
+      "recorded_on": "2026-10-22",
+      "recheck_on": "2027-04-20",
+      "limitations": "Owner-reported firsthand observation; not an independently retrieved exhibitor roster or proof of individual customer contracts.",
+      "id": "ev-dizpot-conference-20261022",
+      "claim": "conference-attendance",
+      "source_url": "https://github.com/travisvought-byte/ohio-cannabis-directory/issues/40",
+      "value": "Travis Vought reports DIZPOT attendance at the Ohio Cannabis Conference on October 22, 2026."
     }
   ],
   "rules": [
