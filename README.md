@@ -4,7 +4,7 @@ A source-verified map of who serves what in Ohio cannabis: operators, service pr
 
 **Live searchable directory:** https://travisvought-byte.github.io/ohio-cannabis-directory/
 
-The current dataset contains **564 organizations**, including **515 publishable organizations across 16 categories**, 48 deliberately retained out-of-scope records, and one withdrawn public listing. Those retained records keep renamed, acquired, superseded, or otherwise relevant organizations findable. The repository also includes 60 documented business-to-business relationships.
+The current dataset contains **565 organizations**, including **516 publishable organizations across 16 categories**, 48 deliberately retained out-of-scope records, and one withdrawn public listing. Those retained records keep renamed, acquired, superseded, or otherwise relevant organizations findable. The repository also includes 60 documented business-to-business relationships.
 
 **Current site release:** 4.37 · October 21, 2026.
 
@@ -37,10 +37,10 @@ Historical counts in the changelog describe those releases, not the current data
 | File | Contents |
 | --- | --- |
 | `index.html` | Directory-first entry point that forwards visitors to `directory.html` while preserving query parameters and record links. |
-| `intake.html` | Field/offline intake page for capturing and exporting candidate organizations; duplicate checks use the 563 non-withdrawn records. |
+| `intake.html` | Field/offline intake page for capturing and exporting candidate organizations; duplicate checks use the 564 non-withdrawn records. |
 | `relationships.html` | Searchable relationships, organization links and supporting evidence. |
 | `release.json` | Shared version and publication date; changing this does not imply re-verifying every record. |
-| `ohio-cannabis-directory.csv` | 563 non-withdrawn directory rows with contact, provenance, notes, verification, capability, permanent Record ID and Last Reviewed fields. |
+| `ohio-cannabis-directory.csv` | 564 non-withdrawn directory rows with contact, provenance, notes, verification, capability, permanent Record ID and Last Reviewed fields. |
 | `b2b-relationships.csv` | 60 documented organization-to-organization relationships with supporting evidence. |
 | `build_directory.py` | Regenerates the searchable `directory.html` from the repository data. |
 | `build_intake.py` | Regenerates the field intake page. |

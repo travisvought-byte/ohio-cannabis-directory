@@ -1,0 +1,19 @@
+{
+  "reviewed_on": "2026-10-22",
+  "method": "First-party company pages reviewed; conference observation attributed to Travis Vought.",
+  "completed": [
+    {
+      "organization_id": "org-36e94688f898",
+      "name": "DIZPOT",
+      "reviewed_on": "2026-10-22",
+      "prior_last_reviewed": "",
+      "sources": [
+        "https://dizpot.com/",
+        "https://hub.dizpot.com/ohio-exit-bag-resource-guide"
+      ],
+      "finding": "Company provides cannabis packaging and logistics and explicitly offers Ohio operator exit bags and creative support.",
+      "limitations": "No specific dispensary customer contracts, availability, prices or independent DCC certification verified."
+    }
+  ],
+  "blocked": []
+}
