@@ -1,0 +1,41 @@
+name: PR risk assessment (report only)
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+permissions:
+  contents: read
+  pull-requests: read
+jobs:
+  assess:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Inspect complete PR file list
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const {owner, repo} = context.repo;
+            const number = context.issue.number;
+            const pr = (await github.rest.pulls.get({owner,repo,pull_number:number})).data;
+            const files = await github.paginate(github.rest.pulls.listFiles, {owner,repo,pull_number:number,per_page:100});
+            const allowed = new Set(['docs/README.md','docs/CONTRIBUTING.md']);
+            const reasons = [];
+            if (pr.draft) reasons.push('draft PR');
+            if (pr.base.ref !== 'main') reasons.push('unexpected base');
+            if (pr.head.repo.full_name !== context.payload.repository.full_name) reasons.push('external fork');
+            if (files.length === 0 || files.length > 2) reasons.push('file count outside allowlist');
+            for (const f of files) {
+              if (!allowed.has(f.filename)) reasons.push('blocked path: '+f.filename);
+              if (f.status !== 'modified') reasons.push('non-modification: '+f.filename);
+              if (f.previous_filename) reasons.push('rename: '+f.filename);
+              if (f.changes > 50) reasons.push('large change: '+f.filename);
+              if (f.patch === undefined) reasons.push('diff unavailable: '+f.filename);
+            }
+            const eligible = reasons.length === 0;
+            await core.summary.addHeading('PR risk assessment')
+              .addRaw('Classification only: this job never approves or merges PRs.\n\n')
+              .addRaw('Eligible for additional protected checks: **'+eligible+'**\n\n')
+              .addRaw('Files inspected: '+files.length+'\n\n')
+              .addRaw(reasons.length ? reasons.map(r=>'- '+r).join('\n') : 'No path-level blockers found.')
+              .write();
+            core.info(JSON.stringify({eligible, reasons}));
