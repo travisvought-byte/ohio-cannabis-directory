@@ -148,6 +148,8 @@ The [shared directory contract](architecture/STATE_DIRECTORY_CONTRACT.md) define
 
 [Compare Ohio with other states](https://travisvought-byte.github.io/ohio-cannabis-directory/compare.html) has two layers. **Laws side by side** shows each state's rule on a topic with its citation, effective date and the date it was checked. **Lessons from other markets** records what happened elsewhere, the conditions that drove it, whether Ohio shares those conditions, and the directory's assessment of whether Ohio is likely to face the same problem. Assessments are labeled as analysis and use a fixed likelihood scale, a stated confidence level and a review date. Each lesson ends with a letter Ohio residents can send their own lawmakers. The first lesson covers oversupply and falling prices in Michigan, compared with Ohio and Oregon.
 
+The resident proposal portal now supports **Ohio and Michigan** as home states, with a reviewed topic/model picker, linked citations, editable letters and official lawmaker routes. Initial coverage is two business-licensing topics; Oregon is a comparison reference where reviewed. This is a policy comparison, not evidence that one approach caused better outcomes. The existing market forecasts remain explicitly Ohio-specific. See the [multi-state research sequence and evidence requirements](architecture/MULTISTATE_POLICY_PORTAL.md).
+
 Canonical data is `data/state-comparison.json`. `python validate_comparison.py` rejects uncited facts, law entries without a statute, regulator or government source, assessments outside the scale, and reviews older than 120 days. Regenerate the page with `python build_compare.py`.
 
 ## Ohio cannabis advocacy
