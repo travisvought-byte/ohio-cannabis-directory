@@ -1,3 +1,12 @@
+# v4.37 - October 21, 2026
+
+- Pinned validation to Ubuntu 24.04 so Playwright 1.51.1 can install Chromium; this resolves the shared browser-install failure after the runner changed to Ubuntu 26.04 (merged PR #25).
+- Added the AI working agreement covering issue ownership, evidence standards, generated artifacts and owner-reviewed pull requests (merged PR #17).
+- Split the review schedule into 90-day full reviews for Ohio operators, testing labs and Ohio-based providers, and 180-day routine verification for national and multistate vendors; reported closure, license action, ownership change or material correction triggers immediate review (merged PR #26). Regenerated the queue as of the release date without changing evidence-review dates.
+- Added sourced state-law comparisons, market lessons and a visitor-controlled letter builder, with comparison validation and browser checks (merged PR #27). Existing source dates and limitations are retained; preparing this release is not a fresh legal review.
+- Completed the release helper's rebuild coverage for record clearing and state comparison, and included canonical compatibility exports. Synchronized release metadata, citation, archive metadata and generated pages for v4.37.
+- Added a manually dispatched release-PR workflow with the complete validation suite; it proposes changes for owner review and does not merge or publish automatically.
+
 # v4.36 - October 14, 2026
 
 ## October 18, 2026 — Mobile navigation and search placement

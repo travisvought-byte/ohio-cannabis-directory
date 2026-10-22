@@ -12,7 +12,8 @@ def release(version,released_on=None):
   p=ROOT/name;d=json.loads(p.read_text());d['version']=version;d['publication_date']=released_on;p.write_text(json.dumps(d,indent=2,ensure_ascii=False)+'\n')
  p=ROOT/'CITATION.cff';s=p.read_text();s=re.sub(r"version: '[^']+'",f"version: '{version}'",s);s=re.sub(r"date-released: '[^']+'",f"date-released: '{released_on}'",s);p.write_text(s)
  p=ROOT/'README.md';s=p.read_text();s=re.sub(r'\*\*Current site release:\*\* [^\n]+',f'**Current site release:** {version} · {published.strftime("%B %-d, %Y")}.',s);p.write_text(s)
- for name in ['directory','intake','relationships','resources','seeds','state','locations','knowledge','ancestry','tools','advocacy','lawmakers']:
+ importlib.import_module('export_directory').main()
+ for name in ['directory','intake','relationships','resources','seeds','state','locations','knowledge','ancestry','tools','advocacy','lawmakers','expungement','compare']:
   importlib.import_module('build_'+name).main()
  if (ROOT/'build_home.py').exists():importlib.import_module('build_home').main()
  importlib.import_module('build_review_queue').main()

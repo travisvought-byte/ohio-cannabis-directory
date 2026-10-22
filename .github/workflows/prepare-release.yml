@@ -52,11 +52,14 @@ jobs:
       - name: Validate release
         run: |
           python tests/check_data.py
+          python validate_foundation.py
           python validate_foundation.py data/directory.json
           python tests/foundation.py
           python tests/migration.py
           python tests/locations.py
           python tests/review_cleanup.py
+          python tests/ancestry.py
+          python strain_ancestry.py
           npm test
           npx playwright install --with-deps chromium
           npm run test:browser
