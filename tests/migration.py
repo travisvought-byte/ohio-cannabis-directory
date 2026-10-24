@@ -26,14 +26,30 @@ assert next(e for e in data['evidence'] if e['id']=='ev-dizpot-ohio-20261022')['
 assert all(e['status']=='source-listed' for e in data['evidence'] if e['claim']=='organization-profile' and e['id']!='ev-dizpot-profile-20261022')
 # The same renderer accepts another state pack without copied code. Fixtures never publish.
 public_state_before=(ROOT/'data/public-state.json').read_bytes()
-fixture=copy.deepcopy(data);pa=copy.deepcopy(fixture['states'][0]);pa.update(code='PA',name='Pennsylvania',publication_status='research-only');
-for p in pa['pathways']:p.pop('public_url',None);p['coverage_status']='not-reviewed'
-fixture['states'].append(pa);assert not validate(fixture)
-page=build_page(fixture);assert '<option value="PA">' not in page
-pa.update(publication_status='pilot',official_regulator_url='https://example.org/test-regulator');pa['pathways'][0].update(coverage_status='starter',public_url='https://example.org/test-route');assert not validate(fixture)
-assert '<option value="PA">Pennsylvania (pilot)</option>' in build_page(fixture)
-assert all('PA' not in s.get('listed_in',[]) for s in fixture['services'])
+fixture=copy.deepcopy(data);state_fixture=copy.deepcopy(fixture['states'][0]);state_fixture.update(code='WA',name='Washington',publication_status='research-only');
+for p in state_fixture['pathways']:p.pop('public_url',None);p['coverage_status']='not-reviewed'
+fixture['states'].append(state_fixture);assert not validate(fixture)
+page=build_page(fixture);assert '<option value="WA">' not in page
+state_fixture.update(publication_status='pilot',official_regulator_url='https://example.org/test-regulator');state_fixture['pathways'][0].update(coverage_status='starter',public_url='https://example.org/test-route');assert not validate(fixture)
+assert '<option value="WA">Washington (pilot)</option>' in build_page(fixture)
+assert all('WA' not in s.get('listed_in',[]) for s in fixture['services'])
 assert (ROOT/'data/public-state.json').read_bytes()==public_state_before, 'Fixture render must not overwrite public state data'
+# The real Pennsylvania research pack must remain absent from public artifacts.
+pa_pack=next(s for s in data['states'] if s['code']=='PA')
+assert pa_pack['publication_status']=='research-only'
+assert all('public_url' not in p for p in pa_pack['pathways'])
+pa_services=[s for s in data['services'] if 'PA' in s.get('listed_in',[])]
+assert len(pa_services)==5
+orgs={o['id']:o for o in data['organizations']}
+assert all(orgs[s['organization_id']]['scope']=='reference-only' for s in pa_services)
+assert all(s['coverage'] and s['evidence_ids'] for s in pa_services)
+intake=next(s for s in pa_services if s['id']=='svc-pa-npls-record-help')
+assert {(c['state'],c['county']) for c in intake['coverage']}=={('PA','Monroe'),('PA','Pike')}
+public_state=json.loads(public_state_before)
+assert 'PA' not in {s['code'] for s in public_state['states']}
+assert not {s['id'] for s in pa_services} & {s['id'] for s in public_state['cards']}
+public_locations=json.loads((ROOT/'data/public-locations.json').read_text())
+assert not any(l['state']=='PA' for l in public_locations['locations'])
 # A profile source cannot support a shipping badge.
 bad=copy.deepcopy(data);seed=next(s for s in bad['services'] if s.get('origin')=='seed-profile');seed['fulfillment'][0]['status']='confirmed';assert any('matching claim-level evidence' in e for e in validate(bad))
 print('PASS migration: exact legacy exports, stable IDs, 60 relationship IDs, seed aliases, conservative coverage and state-template isolation.')
