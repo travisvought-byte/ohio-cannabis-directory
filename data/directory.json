@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "scope": "directory",
-  "as_of": "2026-10-22",
+  "as_of": "2026-10-24",
   "organizations": [
     {
       "id": "org-6f5375e74696",
@@ -22146,6 +22146,56 @@
         "Service Area (as published)": "Nationwide; Ohio operators"
       },
       "website": "https://dizpot.com/"
+    },
+    {
+      "id": "org-pa-department-health",
+      "name": "Pennsylvania Department of Health",
+      "kind": "government",
+      "website": "https://www.pa.gov/agencies/health/programs/medical-marijuana",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "contact-page",
+          "value": "https://www.pa.gov/agencies/health/programs/medical-marijuana"
+        },
+        {
+          "kind": "phone",
+          "value": "888-733-5595"
+        }
+      ],
+      "scope": "reference-only"
+    },
+    {
+      "id": "org-north-penn-legal-services",
+      "name": "North Penn Legal Services",
+      "kind": "nonprofit",
+      "website": "https://www.nplspa.org/",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "contact-page",
+          "value": "https://www.nplspa.org/"
+        },
+        {
+          "kind": "phone",
+          "value": "877-953-4250"
+        }
+      ],
+      "scope": "reference-only"
+    },
+    {
+      "id": "org-pennsylvania-state-police",
+      "name": "Pennsylvania State Police",
+      "kind": "government",
+      "website": "https://www.pa.gov/services/psp/apply-for-criminal-record-expungement",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "contact-page",
+          "value": "https://www.pa.gov/services/psp/apply-for-criminal-record-expungement"
+        }
+      ],
+      "scope": "reference-only"
     }
   ],
   "locations": [
@@ -27524,6 +27574,18 @@
       },
       "evidence_ids": [
         "ev-dec318b40bfd"
+      ]
+    },
+    {
+      "id": "loc-npls-stroudsburg",
+      "organization_id": "org-north-penn-legal-services",
+      "name": "North Penn Legal Services — Stroudsburg office",
+      "state": "PA",
+      "city": "Stroudsburg",
+      "address": "10 N. Tenth Street",
+      "postal_code": "18360-1704",
+      "evidence_ids": [
+        "ev-pa-npls-location-20261024"
       ]
     }
   ],
@@ -46075,6 +46137,213 @@
         "OH"
       ],
       "description": "Cannabis packaging; dispensary exit bags; custom Mylar bags; packaging design; branding; supply chain logistics; Ohio operators\nPhoenix-based cannabis packaging, branding and logistics supplier serving Ohio operators, including dispensaries. Its Ohio Exit Bag Guide offers custom exit bags and creative support for Ohio operators. Travis Vought reports DIZPOT attendance at the Ohio Cannabis Conference on 2026-10-22 (firsthand owner report). Specific dispensary customers, pricing and current order availability were not verified; packaging approval claims are supplier statements, not independent DCC certification."
+    },
+    {
+      "id": "svc-pa-registration",
+      "organization_id": "org-pa-department-health",
+      "location_ids": [],
+      "pathway_ids": [
+        "medical"
+      ],
+      "name": "Pennsylvania patient and caregiver registration",
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa-registration-coverage-20261024"
+          ]
+        }
+      ],
+      "audiences": [
+        "patients",
+        "caregivers"
+      ],
+      "eligibility": "Pennsylvania patients need an approved condition and practitioner certification; caregivers have separate requirements. Check the official guide.",
+      "next_step": {
+        "label": "Read official registration steps",
+        "url": "https://www.pa.gov/services/health/register-for-the-medical-marijuana-program"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-registration-service-20261024",
+        "ev-pa-registration-coverage-20261024"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "Read the patient and caregiver registration steps and follow the state registry link."
+    },
+    {
+      "id": "svc-pa-mmap",
+      "organization_id": "org-pa-department-health",
+      "location_ids": [],
+      "pathway_ids": [
+        "medical"
+      ],
+      "name": "Pennsylvania medical marijuana assistance information",
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa-mmap-coverage-20261024"
+          ]
+        }
+      ],
+      "audiences": [
+        "patients",
+        "caregivers"
+      ],
+      "eligibility": "Program participation and financial-hardship criteria apply; purchase assistance has narrower eligibility than fee assistance.",
+      "next_step": {
+        "label": "Check assistance eligibility",
+        "url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/mmap"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-mmap-service-20261024",
+        "ev-pa-mmap-coverage-20261024"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "Review MMAP assistance categories. The agency limits the purchase-assistance phase to eligible PACE/PACENET patients."
+    },
+    {
+      "id": "svc-pa-dispensary-list",
+      "organization_id": "org-pa-department-health",
+      "location_ids": [],
+      "pathway_ids": [
+        "dispensaries"
+      ],
+      "name": "Official Pennsylvania medical dispensary list",
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa-dispensary-list-coverage-20261024"
+          ]
+        }
+      ],
+      "audiences": [
+        "patients",
+        "caregivers"
+      ],
+      "eligibility": "Medical program patients and caregivers should confirm access requirements with the program and store.",
+      "next_step": {
+        "label": "Open the official dispensary list",
+        "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/health/documents/topics/documents/programs/medical-marijuana/Medical%20Marijuana%20Dispensaries%20in%20Pennsylvania%20with%20Product.pdf"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-dispensary-list-service-20261024",
+        "ev-pa-dispensary-list-coverage-20261024",
+        "ev-pa-dispensary-route-20261024"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "Use the Department of Health dispensary roster dated September 16, 2026 to find a location, then confirm details with the store."
+    },
+    {
+      "id": "svc-pa-npls-record-help",
+      "organization_id": "org-north-penn-legal-services",
+      "location_ids": [
+        "loc-npls-stroudsburg"
+      ],
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Monroe and Pike County legal-help intake",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Monroe",
+          "evidence_ids": [
+            "ev-pa-npls-record-help-coverage-20261024"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Pike",
+          "evidence_ids": [
+            "ev-pa-npls-record-help-coverage-20261024"
+          ]
+        }
+      ],
+      "audiences": [
+        "individuals"
+      ],
+      "eligibility": "Low-income individuals and families in Monroe and Pike Counties; case type, financial eligibility and capacity are screened by NPLS.",
+      "next_step": {
+        "label": "Contact North Penn Legal Services",
+        "url": "https://www.nplspa.org/who-we-are/locations/stroudsburg-office.html"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-npls-record-help-service-20261024",
+        "ev-pa-npls-record-help-coverage-20261024",
+        "ev-pa-npls-intake-20261024"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "Ask NPLS about record-related employment barriers, including eligible sealing and expungement. Apply by phone at 877-953-4250; services vary by county and acceptance is not guaranteed."
+    },
+    {
+      "id": "svc-pa-record-access",
+      "organization_id": "org-pennsylvania-state-police",
+      "location_ids": [],
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Pennsylvania criminal-record access and court referral",
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa-record-access-coverage-20261024"
+          ]
+        }
+      ],
+      "audiences": [
+        "individuals"
+      ],
+      "eligibility": "Record subject or legal representative; follow current form requirements and ask the appropriate court about relief.",
+      "next_step": {
+        "label": "Read record-access and court steps",
+        "url": "https://www.pa.gov/services/psp/apply-for-criminal-record-expungement"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-record-access-service-20261024",
+        "ev-pa-record-access-coverage-20261024",
+        "ev-pa-record-form-20261024"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "Request the Pennsylvania record using SP 4-170, then contact the county Clerk of Courts about petition procedures. Requesting the record does not itself clear it."
     }
   ],
   "evidence": [
@@ -66348,6 +66617,227 @@
       "claim": "conference-attendance",
       "source_url": "https://github.com/travisvought-byte/ohio-cannabis-directory/issues/40",
       "value": "Travis Vought reports DIZPOT attendance at the Ohio Cannabis Conference on October 22, 2026."
+    },
+    {
+      "id": "ev-pa-doh-identity-20261024",
+      "subject_id": "org-pa-department-health",
+      "claim": "agency-contact",
+      "value": "Pennsylvania Department of Health provides the medical program registration guide and help line 888-733-5595.",
+      "source_url": "https://www.pa.gov/services/health/register-for-the-medical-marijuana-program",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-24",
+      "recorded_on": "2026-10-24",
+      "recheck_on": "2026-11-23",
+      "limitations": "Program help line; not a dispensary or practitioner appointment service."
+    },
+    {
+      "id": "ev-pa-npls-identity-20261024",
+      "subject_id": "org-north-penn-legal-services",
+      "claim": "organization-contact",
+      "value": "North Penn Legal Services provides free civil legal assistance; its Stroudsburg page directs applicants to 877-953-4250.",
+      "source_url": "https://www.nplspa.org/who-we-are/locations/stroudsburg-office.html",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-24",
+      "recorded_on": "2026-10-24",
+      "recheck_on": "2026-11-23",
+      "limitations": "Phone route reviewed on the provider page; no call or intake submission made."
+    },
+    {
+      "id": "ev-pa-psp-identity-20261024",
+      "subject_id": "org-pennsylvania-state-police",
+      "claim": "agency-profile",
+      "value": "Pennsylvania State Police publishes instructions for requesting a Pennsylvania criminal record and following up with the relevant court.",
+      "source_url": "https://www.pa.gov/services/psp/apply-for-criminal-record-expungement",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-24",
+      "recorded_on": "2026-10-24",
+      "recheck_on": "2026-11-23",
+      "limitations": "An information route, not legal representation or an eligibility determination."
+    },
+    {
+      "id": "ev-pa-registration-service-20261024",
+      "subject_id": "svc-pa-registration",
+      "claim": "service-description",
+      "value": "Read the patient and caregiver registration steps and follow the state registry link.",
+      "source_url": "https://www.pa.gov/services/health/register-for-the-medical-marijuana-program",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-24",
+      "recorded_on": "2026-10-24",
+      "recheck_on": "2026-11-23",
+      "limitations": "Registration is not practitioner certification or guaranteed approval; no application submitted."
+    },
+    {
+      "id": "ev-pa-registration-coverage-20261024",
+      "subject_id": "svc-pa-registration",
+      "claim": "service-coverage",
+      "value": "Pennsylvania medical program registration guidance for patients and caregivers.",
+      "source_url": "https://www.pa.gov/services/health/register-for-the-medical-marijuana-program",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-24",
+      "recorded_on": "2026-10-24",
+      "recheck_on": "2026-11-23",
+      "limitations": "Registration is not practitioner certification or guaranteed approval; no application submitted."
+    },
+    {
+      "id": "ev-pa-mmap-service-20261024",
+      "subject_id": "svc-pa-mmap",
+      "claim": "service-description",
+      "value": "Review MMAP assistance categories. The agency limits the purchase-assistance phase to eligible PACE/PACENET patients.",
+      "source_url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/mmap",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-24",
+      "recorded_on": "2026-10-24",
+      "recheck_on": "2026-11-23",
+      "limitations": "Information only; no individual eligibility, funding availability or benefit approval confirmed. Veteran status alone is not listed as qualification."
+    },
+    {
+      "id": "ev-pa-mmap-coverage-20261024",
+      "subject_id": "svc-pa-mmap",
+      "claim": "service-coverage",
+      "value": "MMAP is a Pennsylvania program for eligible medical marijuana participants.",
+      "source_url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/mmap",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-24",
+      "recorded_on": "2026-10-24",
+      "recheck_on": "2026-11-23",
+      "limitations": "Information only; no individual eligibility, funding availability or benefit approval confirmed. Veteran status alone is not listed as qualification."
+    },
+    {
+      "id": "ev-pa-dispensary-list-service-20261024",
+      "subject_id": "svc-pa-dispensary-list",
+      "claim": "service-description",
+      "value": "Use the Department of Health dispensary roster dated September 16, 2026 to find a location, then confirm details with the store.",
+      "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/health/documents/topics/documents/programs/medical-marijuana/Medical%20Marijuana%20Dispensaries%20in%20Pennsylvania%20with%20Product.pdf",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-24",
+      "recorded_on": "2026-10-24",
+      "recheck_on": "2026-11-23",
+      "limitations": "Dated roster, not live inventory, a complete legal-entity reconciliation or proof of operating status on the review date."
+    },
+    {
+      "id": "ev-pa-dispensary-list-coverage-20261024",
+      "subject_id": "svc-pa-dispensary-list",
+      "claim": "service-coverage",
+      "value": "The Department of Health roster lists Pennsylvania medical dispensary locations.",
+      "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/health/documents/topics/documents/programs/medical-marijuana/Medical%20Marijuana%20Dispensaries%20in%20Pennsylvania%20with%20Product.pdf",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-24",
+      "recorded_on": "2026-10-24",
+      "recheck_on": "2026-11-23",
+      "limitations": "Dated roster, not live inventory, a complete legal-entity reconciliation or proof of operating status on the review date."
+    },
+    {
+      "id": "ev-pa-dispensary-route-20261024",
+      "subject_id": "svc-pa-dispensary-list",
+      "claim": "official-referral",
+      "value": "The Department of Health dispensaries page identifies its Pennsylvania dispensary product list.",
+      "source_url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/dispensaries",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-24",
+      "recorded_on": "2026-10-24",
+      "recheck_on": "2026-11-23",
+      "limitations": "Direct PDF reviewed separately; no stock or ownership inference."
+    },
+    {
+      "id": "ev-pa-npls-location-20261024",
+      "subject_id": "loc-npls-stroudsburg",
+      "claim": "location-address",
+      "value": "North Penn Legal Services lists its Stroudsburg office at 10 N. Tenth Street, Stroudsburg, PA 18360-1704.",
+      "source_url": "https://www.nplspa.org/who-we-are/locations/stroudsburg-office.html",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-24",
+      "recorded_on": "2026-10-24",
+      "recheck_on": "2026-11-23",
+      "limitations": "Office address only; appointment availability and walk-in acceptance not confirmed."
+    },
+    {
+      "id": "ev-pa-npls-record-help-service-20261024",
+      "subject_id": "svc-pa-npls-record-help",
+      "claim": "service-description",
+      "value": "Ask NPLS about record-related employment barriers, including eligible sealing and expungement. Apply by phone at 877-953-4250; services vary by county and acceptance is not guaranteed.",
+      "source_url": "https://www.nplspa.org/what-we-do/legal-topics/employment/barriers-to-employment.html",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-24",
+      "recorded_on": "2026-10-24",
+      "recheck_on": "2026-11-23",
+      "limitations": "General intake coverage, not confirmation that every record matter is accepted locally. Do not infer blanket cannabis relief or rely on older FAQ legal summaries."
+    },
+    {
+      "id": "ev-pa-npls-record-help-coverage-20261024",
+      "subject_id": "svc-pa-npls-record-help",
+      "claim": "service-coverage",
+      "value": "The Stroudsburg office serves civil legal needs in Monroe and Pike Counties.",
+      "source_url": "https://www.nplspa.org/who-we-are/locations/stroudsburg-office.html",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-24",
+      "recorded_on": "2026-10-24",
+      "recheck_on": "2026-11-23",
+      "limitations": "General intake coverage, not confirmation that every record matter is accepted locally. Do not infer blanket cannabis relief or rely on older FAQ legal summaries."
+    },
+    {
+      "id": "ev-pa-npls-intake-20261024",
+      "subject_id": "svc-pa-npls-record-help",
+      "claim": "service-contact",
+      "value": "The Stroudsburg page lists phone intake at 877-953-4250, Monday–Thursday, 9–11:30 a.m. and 1:30–4 p.m.; no Friday intake.",
+      "source_url": "https://www.nplspa.org/who-we-are/locations/stroudsburg-office.html",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-24",
+      "recorded_on": "2026-10-24",
+      "recheck_on": "2026-11-23",
+      "limitations": "Published intake hours; not confirmed by calling. Online form retrieval failed; use the reviewed office page and phone route."
+    },
+    {
+      "id": "ev-pa-record-access-service-20261024",
+      "subject_id": "svc-pa-record-access",
+      "claim": "service-description",
+      "value": "Request the Pennsylvania record using SP 4-170, then contact the county Clerk of Courts about petition procedures. Requesting the record does not itself clear it.",
+      "source_url": "https://www.pa.gov/services/psp/apply-for-criminal-record-expungement",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-24",
+      "recorded_on": "2026-10-24",
+      "recheck_on": "2026-11-23",
+      "limitations": "No legal-eligibility conclusion or guarantee of expungement. Court procedures and record access are distinct."
+    },
+    {
+      "id": "ev-pa-record-access-coverage-20261024",
+      "subject_id": "svc-pa-record-access",
+      "claim": "service-coverage",
+      "value": "The agency instructions concern Pennsylvania arrest and conviction records, not federal or other-state records.",
+      "source_url": "https://www.pa.gov/services/psp/apply-for-criminal-record-expungement",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-24",
+      "recorded_on": "2026-10-24",
+      "recheck_on": "2026-11-23",
+      "limitations": "No legal-eligibility conclusion or guarantee of expungement. Court procedures and record access are distinct."
+    },
+    {
+      "id": "ev-pa-record-form-20261024",
+      "subject_id": "svc-pa-record-access",
+      "claim": "service-eligibility",
+      "value": "SP 4-170 is for access and review by the record subject or legal representative, not an employment check; expungement questions go to the court.",
+      "source_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/psp/documents/services/sp4-170.pdf",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-24",
+      "recorded_on": "2026-10-24",
+      "recheck_on": "2026-11-23",
+      "limitations": "Form revision December 2020, still linked by the agency on review. No form submitted or current processing time confirmed."
     }
   ],
   "rules": [
@@ -67915,6 +68405,57 @@
           "next_step": "Reach a group contact or event participation page.",
           "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html#community",
           "limitations": "Starter referral coverage; organization service areas remain historical text unless backed by claim-level coverage evidence. No complete statewide location list has been migrated."
+        }
+      ]
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "publication_status": "research-only",
+      "official_regulator_url": "https://www.pa.gov/agencies/health/programs/medical-marijuana",
+      "reviewed_on": "2026-10-24",
+      "pathways": [
+        {
+          "pathway_id": "dispensaries",
+          "coverage_status": "starter",
+          "next_step": "Open the official Pennsylvania dispensary roster and confirm details with a store.",
+          "limitations": "Official referral only; no reconciled operator locations imported."
+        },
+        {
+          "pathway_id": "seeds",
+          "coverage_status": "not-reviewed",
+          "next_step": "Research Pennsylvania-specific seed and growing-supply routes.",
+          "limitations": "No supplier fulfillment or home-grow claim reviewed."
+        },
+        {
+          "pathway_id": "records",
+          "coverage_status": "starter",
+          "next_step": "Use Pennsylvania record-access guidance or NPLS intake for Monroe and Pike Counties.",
+          "limitations": "Two referral routes; no statewide legal-aid completeness or automatic cannabis relief claim."
+        },
+        {
+          "pathway_id": "rules",
+          "coverage_status": "not-reviewed",
+          "next_step": "Review statutes, regulations and current orders before writing topic summaries.",
+          "limitations": "No legal rules imported; medical service instructions are not a complete legal guide."
+        },
+        {
+          "pathway_id": "medical",
+          "coverage_status": "starter",
+          "next_step": "Read the official patient/caregiver registration and assistance guides.",
+          "limitations": "No practitioner directory, individual eligibility assessment or guaranteed assistance."
+        },
+        {
+          "pathway_id": "business",
+          "coverage_status": "not-reviewed",
+          "next_step": "Review first-batch operator and business-service candidates and reconcile identities.",
+          "limitations": "Candidate research in PR #44 is not imported or published by this pack."
+        },
+        {
+          "pathway_id": "community",
+          "coverage_status": "not-reviewed",
+          "next_step": "Verify participation routes for groups and future events.",
+          "limitations": "No community services or dated events imported."
         }
       ]
     }
