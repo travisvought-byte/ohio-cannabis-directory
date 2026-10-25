@@ -1,0 +1,56 @@
+name: Agent-ready issue queue
+on:
+  schedule:
+    - cron: '37 10 * * 1,4'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: read
+  pull-requests: read
+concurrency:
+  group: agent-queue
+  cancel-in-progress: true
+jobs:
+  queue:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Gather issue and PR metadata
+        run: |
+          gh api --paginate --slurp "repos/${GH_REPO}/issues?state=open&labels=codex&per_page=100" > issues.json
+          gh api --paginate --slurp "repos/${GH_REPO}/pulls?state=open&per_page=100" > prs.json
+      - name: Build bounded task manifest
+        run: |
+          python - <<'PY'
+          import json,re,os
+          from pathlib import Path
+          issues=[i for page in json.loads(Path('issues.json').read_text()) for i in page if 'pull_request' not in i]
+          prs=[p for page in json.loads(Path('prs.json').read_text()) for p in page]
+          repository=re.escape(os.environ['GH_REPO'])
+          def linked(issue_number):
+              pattern=re.compile(r'(?<!\w)#'+str(issue_number)+r'\b')
+              full=re.compile(r'https?://github\.com/'+repository+r'/issues/'+str(issue_number)+r'\b',re.I)
+              qualified=re.compile(r'(?<![\w/-])'+repository+r'#'+str(issue_number)+r'\b',re.I)
+              return any(any(r.search((p.get('body') or '')+' '+(p.get('title') or '')) for r in (pattern,full,qualified)) for p in prs)
+          ready=[{'number':i['number'],'title':i['title'],'url':i['html_url']}
+                 for i in sorted(issues,key=lambda x:x['number']) if not linked(i['number'])]
+          selected=ready[:3]
+          Path('agent-queue.json').write_text(json.dumps({
+              'schema_version':1,'execution_enabled':False,'max_tasks':3,
+              'eligible_count':len(ready),'selected':selected
+          },indent=2)+'\n')
+          with open(__import__('os').environ['GITHUB_STEP_SUMMARY'],'a') as f:
+              f.write('## Agent-ready issues (read-only)\n\n')
+              f.write('No agent was run; no issue was claimed or changed.\n\n')
+              for item in selected:
+                  f.write(f"- [#{item['number']}]({item['url']}) — see the manifest for the issue title.\n")
+              if not selected:f.write('No candidates without an open PR reference.\n')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: agent-queue
+          path: agent-queue.json
+          retention-days: 14

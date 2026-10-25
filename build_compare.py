@@ -10,6 +10,7 @@ from pathlib import Path
 
 from directory_brand import brand_page
 from validate_comparison import validate
+from policy_portal import render as render_policy_portal
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'compare.html'
@@ -22,8 +23,8 @@ STATUS_LABEL = {
     'present': ('Ohio shares this condition', 'risk'),
     'unknown': ('Not yet known for Ohio', 'part'),
 }
-DESCRIPTION = ("Compare Ohio's cannabis laws with other states, see what other markets went through as they matured, "
-               "and write to your Ohio lawmakers. Every fact is sourced and dated.")
+DESCRIPTION = ("Compare cannabis policy across states, learn from other markets, "
+               "and propose changes to your own state lawmakers. Facts are sourced and dated.")
 
 CSS = '''
 *{box-sizing:border-box}body{margin:0;background:#f5f5f3;color:#252525;font:17px/1.6 system-ui}main{max-width:1080px;margin:auto;padding:28px}
@@ -110,15 +111,16 @@ def main():
         return f'<span class="cites">{links}</span>'
 
     out = ['<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">',
-           '<title>Compare Ohio cannabis laws with other states</title>',
+           '<title>Compare cannabis policy and propose changes in your state</title>',
            f'<meta name="description" content="{esc(DESCRIPTION)}">',
            '<style>' + CSS + '</style></head><body><main>__VHG_BRAND__',
            f'<p class="review">State comparison · facts checked {long_date(data["as_of"])}</p>',
-           '<h1>Compare Ohio with other states.</h1>',
-           '<p class="lead">See how Ohio’s cannabis laws compare, what other markets went through as they matured, and whether Ohio is likely to face the same problems.</p>',
+           '<h1>Compare states. Shape your cannabis policy.</h1>',
+           '<p class="lead">Compare legal approaches, examine what happened in other markets, and write to your own lawmakers about the changes you want.</p>',
            '<p class="muted">Every fact links to its source and carries the date it was checked. Assessments are the directory’s analysis, labeled as such, with a stated likelihood, confidence level and reasoning. They are reviewed on a schedule and may change as evidence changes.</p>',
-           '<p class="jump"><a href="#laws">Laws side by side</a> · <a href="#lessons">Lessons from other markets</a> · <a href="#sources">Sources</a></p>']
+           '<p class="jump"><a href="#policy-portal">Propose a change</a> · <a href="#laws">Laws side by side</a> · <a href="#lessons">Lessons from other markets</a> · <a href="#sources">Sources</a></p>']
 
+    out.append(render_policy_portal(data))
     out.append('<section id="laws"><h2>Laws side by side</h2>')
     shown = [home] + [s for s in states if s != home]
     for topic in data['topics']:
@@ -136,7 +138,7 @@ def main():
         out.append('</div></div>')
     out.append('</section>')
 
-    out.append('<section id="lessons"><h2>Lessons from other markets</h2><p>What happened elsewhere, why it happened, and whether Ohio has the same conditions.</p>')
+    out.append('<section id="lessons"><h2>Market lessons: Michigan, with an Ohio assessment</h2><p>What happened elsewhere, why it happened, and whether Ohio has the same conditions.</p>')
     letters = {}
     for lesson in data['lessons']:
         key = lesson['id']

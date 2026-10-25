@@ -1,0 +1,953 @@
+{
+  "batch_id": "pa-2026-10-24-batch-1",
+  "parent_issue": 42,
+  "issue": 43,
+  "state": "PA",
+  "publication_status": "research-only",
+  "reviewed_on": "2026-10-24",
+  "baseline_commit": "08412264d4b883e8435087d268de210c19e569aa",
+  "method": "Primary pages opened and read; search snippets used only for discovery. Candidate IDs are batch-local and are not permanent organization IDs. Sources shared by claims are recorded in the companion source map.",
+  "candidates": [
+    {
+      "candidate_id": "pa-b1-doh",
+      "name": "Pennsylvania Department of Health — Medical Marijuana Program",
+      "category": "Regulator and patient access",
+      "pathway_ids": [
+        "dispensaries",
+        "medical",
+        "rules",
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": "org-pa-department-health",
+      "identity_action": "reuse-existing",
+      "identity_match_note": "Agency identity now exists in the published Pennsylvania referral pilot. Reuse this permanent ID; this match does not expand the scope of any original source claim.",
+      "pennsylvania_relevance": "State program resource hub for patients and businesses.",
+      "next_step_url": "https://www.pa.gov/agencies/health/programs/medical-marijuana",
+      "claims": [
+        {
+          "claim": "State program resource hub for patients and businesses.",
+          "source_ids": [
+            "pa-doh",
+            "pa-dispensaries",
+            "pa-patients",
+            "pa-mmap",
+            "pa-regulations",
+            "pa-growers"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Candidate only. Confirm current contactability and entity details before publication. No completeness or sales-outreach consent implied."
+    },
+    {
+      "candidate_id": "pa-b1-sunnyside",
+      "name": "Cresco Labs / Sunnyside",
+      "category": "Medical operator / dispensary",
+      "pathway_ids": [
+        "dispensaries",
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": "org-667af67557f3",
+      "identity_action": "reuse-existing",
+      "identity_match_note": "Existing brand/provider identity matched by name and context; no new canonical ID assigned.",
+      "pennsylvania_relevance": "Sunnyside appears on the Pennsylvania retail roster.",
+      "next_step_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/health/documents/topics/documents/programs/medical-marijuana/Medical%20Marijuana%20Dispensaries%20in%20Pennsylvania%20with%20Product.pdf",
+      "claims": [
+        {
+          "claim": "Sunnyside appears on the Pennsylvania retail roster.",
+          "source_ids": [
+            "pa-retail-roster"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Confirm current parent mapping and first-party route; JavaScript-only homepage did not expose reviewable store content."
+    },
+    {
+      "candidate_id": "pa-b1-rise",
+      "name": "Green Thumb Industries / RISE",
+      "category": "Medical operator / dispensary",
+      "pathway_ids": [
+        "dispensaries",
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": "org-364a9eed8729",
+      "identity_action": "reuse-existing",
+      "identity_match_note": "Existing brand/provider identity matched by name and context; no new canonical ID assigned.",
+      "pennsylvania_relevance": "RISE lists Pennsylvania medical dispensaries.",
+      "next_step_url": "https://risecannabis.com/dispensaries/pennsylvania/",
+      "claims": [
+        {
+          "claim": "RISE lists Pennsylvania medical dispensaries.",
+          "source_ids": [
+            "pa-rise",
+            "pa-retail-roster"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Candidate only. Confirm current contactability and entity details before publication. No completeness or sales-outreach consent implied."
+    },
+    {
+      "candidate_id": "pa-b1-beyond-hello",
+      "name": "Jushi / Beyond Hello",
+      "category": "Medical operator / dispensary",
+      "pathway_ids": [
+        "dispensaries",
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": "org-c081c812feb2",
+      "identity_action": "reuse-existing",
+      "identity_match_note": "Existing brand/provider identity matched by name and context; no new canonical ID assigned.",
+      "pennsylvania_relevance": "Beyond Hello lists Pennsylvania locations including Mt. Pocono.",
+      "next_step_url": "https://jushico.com/retail/",
+      "claims": [
+        {
+          "claim": "Beyond Hello lists Pennsylvania locations including Mt. Pocono.",
+          "source_ids": [
+            "pa-jushi",
+            "pa-retail-roster"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [
+        {
+          "city": "Mt. Pocono",
+          "address": "3192 Route 940, Suite 101",
+          "state": "PA",
+          "postal_code": "18344",
+          "source_ids": [
+            "pa-jushi"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "limitations": "Candidate only. Confirm current contactability and entity details before publication. No completeness or sales-outreach consent implied."
+    },
+    {
+      "candidate_id": "pa-b1-zen-leaf",
+      "name": "Verano / Zen Leaf",
+      "category": "Medical operator / dispensary",
+      "pathway_ids": [
+        "dispensaries",
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": "org-2412bd73869d",
+      "identity_action": "reuse-existing",
+      "identity_match_note": "Existing brand/provider identity matched by name and context; no new canonical ID assigned.",
+      "pennsylvania_relevance": "Zen Leaf appears on the Pennsylvania retail roster.",
+      "next_step_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/health/documents/topics/documents/programs/medical-marijuana/Medical%20Marijuana%20Dispensaries%20in%20Pennsylvania%20with%20Product.pdf",
+      "claims": [
+        {
+          "claim": "Zen Leaf appears on the Pennsylvania retail roster.",
+          "source_ids": [
+            "pa-retail-roster"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Parent-brand match proposed from existing directory identity; specific legal owner not independently reconciled. First-party PA URL retrieval failed."
+    },
+    {
+      "candidate_id": "pa-b1-verilife",
+      "name": "PharmaCann / Verilife",
+      "category": "Medical operator / dispensary",
+      "pathway_ids": [
+        "dispensaries",
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": "org-aefe1b952bc0",
+      "identity_action": "reuse-existing",
+      "identity_match_note": "Existing brand/provider identity matched by name and context; no new canonical ID assigned.",
+      "pennsylvania_relevance": "Verilife appears on the Pennsylvania retail roster.",
+      "next_step_url": "https://www.pa.gov/content/dam/copapwp-pagov/en/health/documents/topics/documents/programs/medical-marijuana/Medical%20Marijuana%20Dispensaries%20in%20Pennsylvania%20with%20Product.pdf",
+      "claims": [
+        {
+          "claim": "Verilife appears on the Pennsylvania retail roster.",
+          "source_ids": [
+            "pa-retail-roster"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Parent-brand match proposed from existing directory identity; specific legal owner not independently reconciled. First-party PA URL retrieval failed."
+    },
+    {
+      "candidate_id": "pa-b1-ascend",
+      "name": "Ascend Cannabis",
+      "category": "Medical operator / dispensary",
+      "pathway_ids": [
+        "dispensaries",
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": "org-9878f97747e7",
+      "identity_action": "reuse-existing",
+      "identity_match_note": "Existing brand/provider identity matched by name and context; no new canonical ID assigned.",
+      "pennsylvania_relevance": "Ascend has Pennsylvania medical retail destinations.",
+      "next_step_url": "https://letsascend.com/locations/pennsylvania/",
+      "claims": [
+        {
+          "claim": "Ascend has Pennsylvania medical retail destinations.",
+          "source_ids": [
+            "pa-ascend",
+            "pa-retail-roster"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Candidate only. Confirm current contactability and entity details before publication. No completeness or sales-outreach consent implied."
+    },
+    {
+      "candidate_id": "pa-b1-ethos",
+      "name": "Ethos Cannabis",
+      "category": "Medical operator / dispensary",
+      "pathway_ids": [
+        "dispensaries",
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": "org-3a4a21b3faf4",
+      "identity_action": "reuse-existing",
+      "identity_match_note": "Existing brand/provider identity matched by name and context; no new canonical ID assigned.",
+      "pennsylvania_relevance": "Ethos lists Pennsylvania medical dispensaries.",
+      "next_step_url": "https://ethoscannabis.com/dispensary-locations/pennsylvania/",
+      "claims": [
+        {
+          "claim": "Ethos lists Pennsylvania medical dispensaries.",
+          "source_ids": [
+            "pa-ethos",
+            "pa-retail-roster"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Do not use org-counterparty-b863a289726a as a second brand identity."
+    },
+    {
+      "candidate_id": "pa-b1-vytal",
+      "name": "Vytal Options",
+      "category": "Medical operator / dispensary",
+      "pathway_ids": [
+        "dispensaries",
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name found in current organization roster; check legal entities and aliases before assigning a permanent ID.",
+      "pennsylvania_relevance": "Vytal Options lists Pennsylvania dispensary destinations.",
+      "next_step_url": "https://vytaloptions.com/locations/",
+      "claims": [
+        {
+          "claim": "Vytal Options lists Pennsylvania dispensary destinations.",
+          "source_ids": [
+            "pa-vytal",
+            "pa-retail-roster"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Resolve PA Options for Wellness parent/clinical registrant mapping before assigning identity."
+    },
+    {
+      "candidate_id": "pa-b1-organic",
+      "name": "Organic Remedies",
+      "category": "Medical operator / dispensary",
+      "pathway_ids": [
+        "dispensaries",
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name found in current organization roster; check legal entities and aliases before assigning a permanent ID.",
+      "pennsylvania_relevance": "Organic Remedies lists Pennsylvania dispensary locations.",
+      "next_step_url": "https://organicremediespa.com/locations/",
+      "claims": [
+        {
+          "claim": "Organic Remedies lists Pennsylvania dispensary locations.",
+          "source_ids": [
+            "pa-organic",
+            "pa-retail-roster"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [
+        {
+          "city": "Enola",
+          "address": "4425 Valley Rd",
+          "state": "PA",
+          "postal_code": "17025",
+          "source_ids": [
+            "pa-organic"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "limitations": "Candidate only. Confirm current contactability and entity details before publication. No completeness or sales-outreach consent implied."
+    },
+    {
+      "candidate_id": "pa-b1-maitri",
+      "name": "Maitri Medicinals",
+      "category": "Medical operator / dispensary",
+      "pathway_ids": [
+        "dispensaries",
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name found in current organization roster; check legal entities and aliases before assigning a permanent ID.",
+      "pennsylvania_relevance": "Maitri describes Pennsylvania medical cannabis patient services.",
+      "next_step_url": "https://www.maitrimedicinals.com/story-mission-values",
+      "claims": [
+        {
+          "claim": "Maitri describes Pennsylvania medical cannabis patient services.",
+          "source_ids": [
+            "pa-maitri",
+            "pa-retail-roster"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Candidate only. Confirm current contactability and entity details before publication. No completeness or sales-outreach consent implied."
+    },
+    {
+      "candidate_id": "pa-b1-standard-farms",
+      "name": "Standard Farms",
+      "category": "Cultivation / processing",
+      "pathway_ids": [
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name found in current organization roster; check legal entities and aliases before assigning a permanent ID.",
+      "pennsylvania_relevance": "Provider describes Pennsylvania cannabis cultivation.",
+      "next_step_url": "https://standard-farms.com/pennsylvania/",
+      "claims": [
+        {
+          "claim": "Provider describes Pennsylvania cannabis cultivation.",
+          "source_ids": [
+            "pa-standard"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Grower permit and parent ownership must be independently matched before publication; this is not active-license verification."
+    },
+    {
+      "candidate_id": "pa-b1-act",
+      "name": "ACT Laboratories of Pennsylvania LLC",
+      "category": "Laboratory",
+      "pathway_ids": [
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": "org-439251489828",
+      "identity_action": "reuse-existing",
+      "identity_match_note": "Proposed group match to existing ACT LAB identity; preserve Pennsylvania LLC as a distinct legal-entity relationship rather than merging its license into an Ohio entity.",
+      "pennsylvania_relevance": "ACT Laboratories of Pennsylvania LLC is regulator-listed for Pennsylvania medical cannabis testing.",
+      "next_step_url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/laboratories",
+      "claims": [
+        {
+          "claim": "ACT Laboratories of Pennsylvania LLC is regulator-listed for Pennsylvania medical cannabis testing.",
+          "source_ids": [
+            "pa-labs"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [
+        {
+          "city": "Harrisburg",
+          "address": "4949 Queen Avenue",
+          "state": "PA",
+          "postal_code": "17109",
+          "source_ids": [
+            "pa-labs"
+          ],
+          "reviewed_on": "2026-10-24"
+        },
+        {
+          "city": "Trafford",
+          "address": "109 Brinton Avenue",
+          "state": "PA",
+          "postal_code": "15085",
+          "source_ids": [
+            "pa-labs"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "limitations": "Regulator-listed approval as reviewed; trading name, parent ownership, license identifier, current contact, scope and turnaround not independently confirmed."
+    },
+    {
+      "candidate_id": "pa-b1-keystone-testing",
+      "name": "Keystone State Testing LLC",
+      "category": "Laboratory",
+      "pathway_ids": [
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name found in current organization roster; check legal entities and aliases before assigning a permanent ID.",
+      "pennsylvania_relevance": "Keystone State Testing LLC is regulator-listed for Pennsylvania medical cannabis testing.",
+      "next_step_url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/laboratories",
+      "claims": [
+        {
+          "claim": "Keystone State Testing LLC is regulator-listed for Pennsylvania medical cannabis testing.",
+          "source_ids": [
+            "pa-labs"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [
+        {
+          "city": "Swoyersville",
+          "address": "284 Dennison Street",
+          "state": "PA",
+          "postal_code": "18704",
+          "source_ids": [
+            "pa-labs"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "limitations": "Regulator-listed approval as reviewed; trading name, parent ownership, license identifier, current contact, scope and turnaround not independently confirmed."
+    },
+    {
+      "candidate_id": "pa-b1-steep-hill",
+      "name": "Steep Hill Pennsylvania",
+      "category": "Laboratory",
+      "pathway_ids": [
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name found in current organization roster; check legal entities and aliases before assigning a permanent ID.",
+      "pennsylvania_relevance": "Steep Hill Pennsylvania is regulator-listed for Pennsylvania medical cannabis testing.",
+      "next_step_url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/laboratories",
+      "claims": [
+        {
+          "claim": "Steep Hill Pennsylvania is regulator-listed for Pennsylvania medical cannabis testing.",
+          "source_ids": [
+            "pa-labs"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [
+        {
+          "city": "Harrisburg",
+          "address": "6360 Flank Drive, Suite 700",
+          "state": "PA",
+          "postal_code": "17112",
+          "source_ids": [
+            "pa-labs"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "limitations": "Regulator-listed approval as reviewed; trading name, parent ownership, license identifier, current contact, scope and turnaround not independently confirmed."
+    },
+    {
+      "candidate_id": "pa-b1-us-cannalytics",
+      "name": "US Cannalytics, LLC",
+      "category": "Laboratory",
+      "pathway_ids": [
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name found in current organization roster; check legal entities and aliases before assigning a permanent ID.",
+      "pennsylvania_relevance": "US Cannalytics, LLC is regulator-listed for Pennsylvania medical cannabis testing.",
+      "next_step_url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/laboratories",
+      "claims": [
+        {
+          "claim": "US Cannalytics, LLC is regulator-listed for Pennsylvania medical cannabis testing.",
+          "source_ids": [
+            "pa-labs"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [
+        {
+          "city": "Bethlehem",
+          "address": "3535 High Point Blvd. Suite 400",
+          "state": "PA",
+          "postal_code": "18017",
+          "source_ids": [
+            "pa-labs"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "limitations": "Regulator-listed approval as reviewed; trading name, parent ownership, license identifier, current contact, scope and turnaround not independently confirmed."
+    },
+    {
+      "candidate_id": "pa-b1-coral-reef",
+      "name": "Coral Reef Labs",
+      "category": "Laboratory",
+      "pathway_ids": [
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name found in current organization roster; check legal entities and aliases before assigning a permanent ID.",
+      "pennsylvania_relevance": "Coral Reef Labs is regulator-listed for Pennsylvania medical cannabis testing.",
+      "next_step_url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/laboratories",
+      "claims": [
+        {
+          "claim": "Coral Reef Labs is regulator-listed for Pennsylvania medical cannabis testing.",
+          "source_ids": [
+            "pa-labs"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [
+        {
+          "city": "Jonestown",
+          "address": "2632 North State Route 72",
+          "state": "PA",
+          "postal_code": "17038",
+          "source_ids": [
+            "pa-labs"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "limitations": "Regulator-listed approval as reviewed; trading name, parent ownership, license identifier, current contact, scope and turnaround not independently confirmed."
+    },
+    {
+      "candidate_id": "pa-b1-pcc",
+      "name": "Pennsylvania Cannabis Coalition",
+      "category": "Trade association",
+      "pathway_ids": [
+        "business",
+        "community"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name found in current organization roster; check legal entities and aliases before assigning a permanent ID.",
+      "pennsylvania_relevance": "Pennsylvania trade association offers regulatory and member resources.",
+      "next_step_url": "https://www.pcanna.org/",
+      "claims": [
+        {
+          "claim": "Pennsylvania trade association offers regulatory and member resources.",
+          "source_ids": [
+            "pa-pcc"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Candidate only. Confirm current contactability and entity details before publication. No completeness or sales-outreach consent implied."
+    },
+    {
+      "candidate_id": "pa-b1-responsible",
+      "name": "ResponsiblePA",
+      "category": "Advocacy coalition",
+      "pathway_ids": [
+        "community"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name found in current organization roster; check legal entities and aliases before assigning a permanent ID.",
+      "pennsylvania_relevance": "Coalition describes Pennsylvania legalization advocacy.",
+      "next_step_url": "https://responsiblepa.org/coalition-forms-to-support-legalization-of-adult-use-cannabis-in-pennsylvania/",
+      "claims": [
+        {
+          "claim": "Coalition describes Pennsylvania legalization advocacy.",
+          "source_ids": [
+            "pa-responsible"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Historical formation source; verify current organization contact route before promotion. No current event or enacted-law claim."
+    },
+    {
+      "candidate_id": "pa-b1-cannaspire",
+      "name": "Cannaspire",
+      "category": "Compliance / operations consulting",
+      "pathway_ids": [
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": "org-ce7e40ed878d",
+      "identity_action": "reuse-existing",
+      "identity_match_note": "Existing brand/provider identity matched by name and context; no new canonical ID assigned.",
+      "pennsylvania_relevance": "Provider publishes a dedicated Pennsylvania consulting route.",
+      "next_step_url": "https://cannaspire.com/pennsylvania-cannabis-consultants/",
+      "claims": [
+        {
+          "claim": "Provider publishes a dedicated Pennsylvania consulting route.",
+          "source_ids": [
+            "pa-cannaspire",
+            "pa-cannaspire-pcc"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Candidate only. Confirm current contactability and entity details before publication. No completeness or sales-outreach consent implied."
+    },
+    {
+      "candidate_id": "pa-b1-duane",
+      "name": "Duane Morris LLP",
+      "category": "Legal / regulatory",
+      "pathway_ids": [
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name found in current organization roster; check legal entities and aliases before assigning a permanent ID.",
+      "pennsylvania_relevance": "Firm describes Pennsylvania cannabis regulatory and licensing work.",
+      "next_step_url": "https://www.duanemorris.com/site/static/cannabis_regulatory_compliance_at_a_glance.pdf",
+      "claims": [
+        {
+          "claim": "Firm describes Pennsylvania cannabis regulatory and licensing work.",
+          "source_ids": [
+            "pa-duane"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Candidate only. Confirm current contactability and entity details before publication. No completeness or sales-outreach consent implied."
+    },
+    {
+      "candidate_id": "pa-b1-cannabislaw",
+      "name": "Cannabis Law Solutions / HMS Legal",
+      "category": "Legal / regulatory",
+      "pathway_ids": [
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name found in current organization roster; check legal entities and aliases before assigning a permanent ID.",
+      "pennsylvania_relevance": "Harrisburg practice offers cannabis regulatory legal services.",
+      "next_step_url": "https://cannabislawpa.com/",
+      "claims": [
+        {
+          "claim": "Harrisburg practice offers cannabis regulatory legal services.",
+          "source_ids": [
+            "pa-cannabislaw"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Candidate only. Confirm current contactability and entity details before publication. No completeness or sales-outreach consent implied."
+    },
+    {
+      "candidate_id": "pa-b1-firstcom",
+      "name": "First Commonwealth Federal Credit Union",
+      "category": "Banking",
+      "pathway_ids": [
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name found in current organization roster; check legal entities and aliases before assigning a permanent ID.",
+      "pennsylvania_relevance": "Institution explicitly offers Pennsylvania cannabis business banking.",
+      "next_step_url": "https://firstcomcu.org/cannabisbanking.html",
+      "claims": [
+        {
+          "claim": "Institution explicitly offers Pennsylvania cannabis business banking.",
+          "source_ids": [
+            "pa-firstcom"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Candidate only. Confirm current contactability and entity details before publication. No completeness or sales-outreach consent implied."
+    },
+    {
+      "candidate_id": "pa-b1-parke",
+      "name": "Parke Bank",
+      "category": "Banking",
+      "pathway_ids": [
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name found in current organization roster; check legal entities and aliases before assigning a permanent ID.",
+      "pennsylvania_relevance": "Institution lists Pennsylvania as a cannabis banking market.",
+      "next_step_url": "https://www.parkebank.com/business-banking/cannabis-banking/",
+      "claims": [
+        {
+          "claim": "Institution lists Pennsylvania as a cannabis banking market.",
+          "source_ids": [
+            "pa-parke"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Candidate only. Confirm current contactability and entity details before publication. No completeness or sales-outreach consent implied."
+    },
+    {
+      "candidate_id": "pa-b1-bvn",
+      "name": "Balanced Veterans Network — Operation 1620",
+      "category": "Veteran / patient support",
+      "pathway_ids": [
+        "medical",
+        "community"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name found in current organization roster; check legal entities and aliases before assigning a permanent ID.",
+      "pennsylvania_relevance": "Veteran certification support program lists Pennsylvania.",
+      "next_step_url": "https://balancedveterans.org/operation-1620/",
+      "claims": [
+        {
+          "claim": "Veteran certification support program lists Pennsylvania.",
+          "source_ids": [
+            "pa-bvn"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Candidate only. Confirm current contactability and entity details before publication. No completeness or sales-outreach consent implied."
+    },
+    {
+      "candidate_id": "pa-b1-cls",
+      "name": "Community Legal Services of Philadelphia",
+      "category": "Legal aid / record clearing",
+      "pathway_ids": [
+        "records"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name found in current organization roster; check legal entities and aliases before assigning a permanent ID.",
+      "pennsylvania_relevance": "Provider offers Pennsylvania record-clearing information and referral routes.",
+      "next_step_url": "https://clsphila.org/my-clean-slate/faq/",
+      "claims": [
+        {
+          "claim": "Provider offers Pennsylvania record-clearing information and referral routes.",
+          "source_ids": [
+            "pa-cls"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Candidate only. Confirm current contactability and entity details before publication. No completeness or sales-outreach consent implied."
+    },
+    {
+      "candidate_id": "pa-b1-lasp",
+      "name": "Legal Aid of Southeastern Pennsylvania",
+      "category": "Legal aid / record clearing",
+      "pathway_ids": [
+        "records"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name found in current organization roster; check legal entities and aliases before assigning a permanent ID.",
+      "pennsylvania_relevance": "Record-clearing assistance serves four named southeastern Pennsylvania counties.",
+      "next_step_url": "https://www.lasp.org/record-clearing",
+      "claims": [
+        {
+          "claim": "Record-clearing assistance serves four named southeastern Pennsylvania counties.",
+          "source_ids": [
+            "pa-lasp"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Limited to Bucks, Chester, Delaware and Montgomery counties and provider eligibility; no statewide coverage claim or pardon representation."
+    },
+    {
+      "candidate_id": "pa-b1-psp",
+      "name": "Pennsylvania State Police — record access and expungement",
+      "category": "Official record-clearing route",
+      "pathway_ids": [
+        "records"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": "org-pennsylvania-state-police",
+      "identity_action": "reuse-existing",
+      "identity_match_note": "Agency identity now exists in the published Pennsylvania referral pilot. Reuse this permanent ID; this match does not expand the scope of any original source claim.",
+      "pennsylvania_relevance": "Official resource explains record access and court-ordered expungement.",
+      "next_step_url": "https://www.pa.gov/services/psp/apply-for-criminal-record-expungement",
+      "claims": [
+        {
+          "claim": "Official resource explains record access and court-ordered expungement.",
+          "source_ids": [
+            "pa-psp"
+          ],
+          "reviewed_on": "2026-10-24"
+        }
+      ],
+      "locations": [],
+      "limitations": "Candidate only. Confirm current contactability and entity details before publication. No completeness or sales-outreach consent implied."
+    }
+  ],
+  "pathway_summary": [
+    {
+      "pathway_id": "dispensaries",
+      "candidate_count": 11,
+      "research_coverage": "starter",
+      "gap": "Reconcile full official roster to present-day legal owners; verify local contact pages, addresses and county coverage."
+    },
+    {
+      "pathway_id": "seeds",
+      "candidate_count": 0,
+      "research_coverage": "not-reviewed",
+      "gap": "No verified seed or growing-supply service candidates. Review applicable home-grow/hemp rules before listing shipping or cultivation claims."
+    },
+    {
+      "pathway_id": "records",
+      "candidate_count": 3,
+      "research_coverage": "starter",
+      "gap": "Need northeast/Pocono and western Pennsylvania intake routes plus eligibility citations; no blanket cannabis expungement claim."
+    },
+    {
+      "pathway_id": "rules",
+      "candidate_count": 1,
+      "research_coverage": "starter",
+      "gap": "Entry points reviewed, but topic-level statutes, effective dates and current injunctions still need a separate legal review."
+    },
+    {
+      "pathway_id": "medical",
+      "candidate_count": 2,
+      "research_coverage": "starter",
+      "gap": "Official access and assistance plus one veteran support route; provider fees, eligibility and local accessibility need further work."
+    },
+    {
+      "pathway_id": "business",
+      "candidate_count": 23,
+      "research_coverage": "starter",
+      "gap": "Need approved grower/processor roster, accounting, insurance, security, packaging, equipment and technology providers with PA-specific evidence."
+    },
+    {
+      "pathway_id": "community",
+      "candidate_count": 3,
+      "research_coverage": "starter",
+      "gap": "Trade/advocacy/veteran organizations only; no future event verified."
+    }
+  ],
+  "leads": [
+    {
+      "name": "Keystone Cannabis Representative Agency",
+      "url": "https://www.kcrapa.com/",
+      "status": "needs-pa-specific-evidence",
+      "reason": "Homepage currently describes a cannabis marketing agency; PA-specific location or service reach not established in reviewed body text."
+    },
+    {
+      "name": "Curaleaf / AYR / Trulieve / INSA / Holistic Industries",
+      "status": "identity-reconciliation-needed",
+      "reason": "Review current PA operations, ownership and legal entities. Several existing Ohio labels are state-specific and must not be relabeled as a national parent."
+    },
+    {
+      "name": "Pocono AI",
+      "status": "owner-proposed-commercial-track",
+      "reason": "No listing, ownership, service claim, partnership or paid placement created. Directory governance currently prohibits paid placement/ranking/verification."
+    }
+  ],
+  "summary": {
+    "candidate_count": 28,
+    "proposed_existing_identity_matches": 11,
+    "sample_location_count": 8,
+    "counts_overlap": true
+  },
+  "identity_reconciled_against": "64a3ea522fca62651652fad766aa44214d2d19ee",
+  "identity_reconciled_on": "2026-10-24"
+}
