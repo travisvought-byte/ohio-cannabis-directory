@@ -7,7 +7,8 @@ from directory_data import load_directory
 snapshot=json.loads(SOURCE.read_text());data=load_directory();before=copy.deepcopy(data)
 assert import_snapshot(data,snapshot)==230
 assert data==before,'Repeated import must preserve the canonical tree'
-locations=data['locations'];assert len(locations)==230
+# Snapshot assertions concern Ohio dispensaries, not other states' service offices.
+locations=[l for l in data['locations'] if l['state']=='OH'];assert len(locations)==230
 assert all(l['license']['status']=='unknown' for l in locations)
 assert sum('latitude' not in l for l in locations)==4
 assert sum(bool(l.get('snapshot_phone')) for l in locations)==228

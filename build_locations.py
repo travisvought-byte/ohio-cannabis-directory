@@ -4,9 +4,11 @@ from directory_brand import brand_page
 from public_data import externalize
 OUT=ROOT/'locations.html'
 def build_page(data):
- states=[s for s in data['states'] if s['publication_status'] in ('live','pilot')]
+ # Referral offices are not dispensaries. Offer only states with imported licensed-location records.
+ location_states={l['state'] for l in data['locations'] if l.get('license',{}).get('number')}
+ states=[s for s in data['states'] if s['publication_status'] in ('live','pilot') and s['code'] in location_states]
  codes={s['code'] for s in states};evidence={e['id']:e for e in data['evidence']}
- locations=[dict(l,sources=[evidence[e] for e in l['evidence_ids']]) for l in data['locations'] if l['state'] in codes]
+ locations=[dict(l,sources=[evidence[e] for e in l['evidence_ids']]) for l in data['locations'] if l['state'] in codes and l.get('license',{}).get('number')]
  organizations={o['id']:o for o in data['organizations']}
  for location in locations:
   linked=organizations.get(location.get('contact',{}).get('directory_organization_id'))

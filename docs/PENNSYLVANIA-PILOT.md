@@ -1,6 +1,6 @@
 # Pennsylvania cannabis pilot: staging plan
 
-Updated October 24, 2026. The pilot begins with a source-linked advocacy entry point in `pennsylvania-advocacy.html`. It is intentionally a first-stage page: no Pennsylvania business records or statewide referral coverage are claimed yet.
+Updated October 24, 2026. The pilot begins with a source-linked advocacy entry point in `pennsylvania-advocacy.html`. It is intentionally a first-stage page: business/operator coverage remains research work. Issue #52 publishes five reviewed patient and legal-help referral routes in the shared state view, with a labeled pilot and explicit gaps.
 
 ## What is established
 
@@ -19,7 +19,7 @@ These facts are linked to official sources on the page. The HB 1200 outcome is b
 1. **Policy accuracy — pass with correction.** Review found that the first draft emphasized HB 1200 and underrepresented HB 20. A later review identified omitted SB 120; issue #50 corrects that gap. The page covers HB 20, HB 1200 and SB 120 with distinct sponsors, committees and procedural histories.
 2. **Source integrity — pass.** The official bill histories, PA Department of Health program page and General Assembly portal are linked. HB 1200's 2025 Senate committee vote is scoped to that bill; SB 846 is clearly labeled historical.
 3. **Usability and privacy — pass at source review.** The page uses responsive CSS, semantic headings, keyboard-focus styling, plain-language next steps and an editable message starter. It does not collect or send visitor information. This is a code review; no browser/print rendering review is claimed.
-4. **Repository integration — corrected.** The page is generated from `templates/pennsylvania-advocacy.html` by `build_pennsylvania_advocacy.py`, uses shared navigation/footer/analytics, links from the Ohio advocacy page and appears in the sitemap. Reproducibility validation includes the new builder. Full validation and rendering evidence are recorded in PR #48. This supports an advocacy pilot launch; the research-only PA directory pack stays gated under #46.
+4. **Repository integration — corrected.** The page is generated from `templates/pennsylvania-advocacy.html` by `build_pennsylvania_advocacy.py`, uses shared navigation/footer/analytics, links from the Ohio advocacy page and appears in the sitemap. Reproducibility validation includes the new builder. Full validation and rendering evidence are recorded in PR #48. This supports an advocacy pilot launch; the five reviewed PA referral services are promoted under #52; operator candidates remain gated under #44.
 
 ## Expansion after the advocacy pilot
 
