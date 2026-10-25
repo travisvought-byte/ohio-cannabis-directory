@@ -26,4 +26,4 @@ These facts are linked to official sources on the page. The HB 1200 outcome is b
 - **Business and community:** named Pennsylvania operators and independent providers from official permit information and first-party sites; statewide advocacy, patient, labor, research and public-health organizations from their own publications.
 - **Comparison:** market structure, licensing, medical-to-adult-use transition, expungement, social-equity provisions, local authority and tax/reinvestment. Each comparison needs a dated source and a clearly labeled inference where outcomes are not directly comparable.
 
-The first public iteration should not claim a complete market map, current bill momentum, eligibility, service coverage, sales, or political support beyond what the cited sources establish.
+The two current-session bills have distinct sponsors, market structures and committee histories; do not collapse them into one proposal or describe the stalled HB 1200 vote as the outcome of HB 20. The first public iteration should not claim a complete market map, current bill momentum, eligibility, service coverage, sales, or political support beyond what the cited sources establish.
