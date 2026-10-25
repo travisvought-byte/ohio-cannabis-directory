@@ -10,6 +10,10 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
   assert(await page.locator('nav[aria-label="Primary"]').isVisible());
   assert(await page.getByRole('heading',{name:'HB 20: bipartisan private-market proposal'}).isVisible());
   assert(await page.getByRole('heading',{name:'HB 1200: Pennsylvania Cannabis Stores model'}).isVisible());
+  const senate=page.locator('article').filter({has:page.getByRole('heading',{name:'SB 120: Senate Cannabis Control Board proposal'})});
+  assert(await senate.isVisible());
+  assert.match(await senate.innerText(),/dropped from the calendar October 19, 2026/);
+  assert(!await page.locator('section[aria-labelledby="sources"]').innerText().then(t=>t.includes('\\n')));
   for(const width of [390,1280]){
    await page.setViewportSize({width,height:844});
    assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'horizontal overflow at '+width);
