@@ -53,9 +53,9 @@ def load_triggers(public_ids):
     return open_triggers
 
 
-def main():
+def main(as_of=None):
     data = json.loads((ROOT / 'data/directory.json').read_text())
-    as_of = json.loads((ROOT / 'release.json').read_text())['released_on']
+    as_of = as_of or json.loads((ROOT / 'release.json').read_text())['released_on']
     as_of_date = date.fromisoformat(as_of)
     public = [o for o in data['organizations'] if o['scope'] == 'public' and 'legacy_record' in o]
     open_triggers = load_triggers({o['id'] for o in public})
@@ -152,4 +152,7 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--as-of', help='ISO date for a read-only diagnostic; defaults to the reproducible release date')
+    main(parser.parse_args().as_of)
