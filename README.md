@@ -128,7 +128,7 @@ The [shared directory contract](architecture/STATE_DIRECTORY_CONTRACT.md) define
 
 ## Shared state view (stage two)
 
-[Explore by state and need](https://travisvought-byte.github.io/ohio-cannabis-directory/state.html?state=OH). One shared template serves reviewed state packs. Ohio is currently the only public state. `data/directory.json` is authoritative; the CSVs and seed JSON are generated compatibility downloads. All 564 original organization records and 60 relationship IDs are preserved. See [migration and maintenance instructions](architecture/STAGE_TWO_MIGRATION.md).
+[Explore by state and need](https://travisvought-byte.github.io/ohio-cannabis-directory/state.html?state=OH). One shared template serves reviewed state packs. Pennsylvania is now a labeled referral pilot alongside Ohio: five reviewed routes cover patient/caregiver registration, medical assistance, the official dispensary list, Monroe/Pike legal-help intake, and record-access/court guidance. Four other pathways remain explicitly unreviewed. [Open Pennsylvania resources](https://travisvought-byte.github.io/ohio-cannabis-directory/state.html?state=PA) or [Pennsylvania advocacy](https://travisvought-byte.github.io/ohio-cannabis-directory/pennsylvania-advocacy.html). `data/directory.json` is authoritative; the CSVs and seed JSON are generated compatibility downloads. All 564 original organization records and 60 relationship IDs are preserved. See [migration and maintenance instructions](architecture/STAGE_TWO_MIGRATION.md).
 
 ### Location search
 
