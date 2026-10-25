@@ -12,6 +12,13 @@ Updated October 24, 2026. The pilot begins with a source-linked advocacy entry p
 
 These facts are linked to official sources on the page. The HB 1200 outcome is bill-specific; it must not be generalized into a claim that all adult-use bills or future proposals failed.
 
+## Four staging reviews
+
+1. **Policy accuracy — pass with correction.** Review found that the first draft emphasized HB 1200 and underrepresented HB 20. The page now explains the distinct market structures, sponsors, committees and statuses of both current-session bills.
+2. **Source integrity — pass.** The official bill histories, PA Department of Health program page and General Assembly portal are linked. HB 1200's 2025 Senate committee vote is scoped to that bill; SB 846 is clearly labeled historical.
+3. **Usability and privacy — pass at source review.** The page uses responsive CSS, semantic headings, keyboard-focus styling, plain-language next steps and an editable message starter. It does not collect or send visitor information. This is a code review; no browser/print rendering review is claimed.
+4. **Repository and launch readiness — not ready for go-live.** The page remains standalone, is not linked in site navigation, and PA is not yet in the shared state selector or directory dataset. No automated workflow status was returned for the branch. These are launch blockers, not content-review failures.
+
 ## Remaining iterations to a useful PA pilot
 
 1. **Advocacy entry point (in progress):** publish source-linked status, identify decision routes, and offer editable constituent questions without collecting or sending information.
