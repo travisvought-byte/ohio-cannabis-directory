@@ -5,12 +5,17 @@ import os
 from pathlib import Path
 import subprocess
 import tempfile
+import textwrap
+import tomllib
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('guard', ROOT / 'scripts/codex_research_guard.py')
 guard = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(guard)
+config_spec = importlib.util.spec_from_file_location('research_config', ROOT / 'scripts/codex_research_config.py')
+research_config = importlib.util.module_from_spec(config_spec)
+config_spec.loader.exec_module(research_config)
 
 
 class ResearchGuardTests(unittest.TestCase):
@@ -69,8 +74,34 @@ class ResearchGuardTests(unittest.TestCase):
         self.assertIn('cancel-in-progress: false',text)
         self.assertIn("codex-version: '0.164.0'",execute)
         self.assertIn('permission-profile: research',execute)
-        self.assertIn('network_proxy = true',execute)
+        self.assertIn('python scripts/codex_research_config.py',execute)
         self.assertIn('timeout-minutes: 20',execute)
+
+    def test_generated_profile(self):
+        for domains in ([],['example.org','www.example.org']):
+            config=tomllib.loads(research_config.configuration(domains))
+            profile=config['permissions']['research']
+            self.assertEqual(profile['extends'],':read-only')
+            self.assertEqual(profile['filesystem'],{'/opt/codex-runner':'read',':workspace_roots':{'data/research':'write'}})
+            self.assertEqual(profile['network'],{'enabled':True,'domains':dict.fromkeys(domains,'allow')})
+            self.assertTrue(config['features']['network_proxy'])
+            self.assertEqual(config['web_search'],'live')
+
+    def test_preclaim_configuration_and_retry_checks(self):
+        text=(ROOT/'.github/workflows/codex-issue-runner.yml').read_text()
+        before_checkout=text.split('      - uses: actions/checkout@v4',1)[0]
+        script=textwrap.dedent(before_checkout.split('        run: |\n',1)[1])
+        configured=dict(PATH=os.environ['PATH'],APP_ID='123',MODEL='test-model',
+                        HAS_APP_KEY='true',HAS_PROVIDER_KEY='true',RUN_ATTEMPT='1',
+                        TRIGGERING_ACTOR='owner',OWNER='owner')
+        result=subprocess.run(['bash','-e','-c',script],env=configured,capture_output=True,text=True)
+        self.assertEqual(result.returncode,0,result.stdout+result.stderr)
+        for key,value in [('APP_ID',''),('MODEL',''),('HAS_APP_KEY','false'),
+                          ('HAS_PROVIDER_KEY','false'),('RUN_ATTEMPT','2'),
+                          ('TRIGGERING_ACTOR','collaborator')]:
+            with self.subTest(setting=key):
+                result=subprocess.run(['bash','-e','-c',script],env={**configured,key:value},capture_output=True,text=True)
+                self.assertNotEqual(result.returncode,0)
 
 
 if __name__=='__main__': unittest.main()

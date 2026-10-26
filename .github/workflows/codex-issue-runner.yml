@@ -23,6 +23,22 @@ jobs:
       issue: ${{ steps.claim.outputs.issue }}
       claim: ${{ steps.claim.outputs.claim }}
     steps:
+      - name: Check configuration before claiming work
+        env:
+          APP_ID: ${{ vars.CODEX_APP_ID }}
+          MODEL: ${{ vars.CODEX_RUNNER_MODEL }}
+          HAS_APP_KEY: ${{ secrets.CODEX_APP_PRIVATE_KEY != '' }}
+          HAS_PROVIDER_KEY: ${{ secrets.OPENAI_API_KEY != '' }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+          TRIGGERING_ACTOR: ${{ github.triggering_actor }}
+          OWNER: ${{ github.repository_owner }}
+        run: |
+          test "$TRIGGERING_ACTOR" = "$OWNER" || { echo 'Only the owner may start or retry work'; exit 1; }
+          test "$RUN_ATTEMPT" = 1 || { echo 'Use a new dispatch after recovery, not Re-run jobs'; exit 1; }
+          test -n "$APP_ID" && test -n "$MODEL" && test "$HAS_APP_KEY" = true && test "$HAS_PROVIDER_KEY" = true || {
+            echo 'Configure CODEX_APP_ID, CODEX_RUNNER_MODEL, CODEX_APP_PRIVATE_KEY and OPENAI_API_KEY before claiming an issue'
+            exit 1
+          }
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.sha }}
@@ -84,24 +100,9 @@ jobs:
           sudo chown -R root:root /opt/codex-runner
           sudo chmod -R a-w /opt/codex-runner
           sudo chown "$(id -u):$(id -g)" /opt/codex-runner-home
+          python scripts/codex_research_config.py /opt/codex-runner/task.json /opt/codex-runner-home/config.toml
           python - <<'PY'
-          import json, pathlib
-          task=json.loads(pathlib.Path('/opt/codex-runner/task.json').read_text())
-          config='''web_search = "live"
-          [features]
-          network_proxy = true
-          [permissions.research]
-          extends = ":read-only"
-          [permissions.research.filesystem]
-          "/opt/codex-runner" = "read"
-          [permissions.research.filesystem.":workspace_roots"]
-          "data/research" = "write"
-          [permissions.research.network]
-          enabled = true
-          [permissions.research.network.domains]
-          '''
-          config+=''.join(json.dumps(d)+' = "allow"\n' for d in task['auth']['domains'])
-          pathlib.Path('/opt/codex-runner-home/config.toml').write_text(config)
+          import pathlib
           # The action reads this generated prompt; issue text stays in task.json as data.
           prompt=pathlib.Path('/opt/codex-runner/prompt.md').read_text()
           pathlib.Path('/opt/codex-runner-home/prompt.md').write_text(prompt+'\nTask JSON: /opt/codex-runner/task.json\n')
@@ -192,6 +193,8 @@ jobs:
     timeout-minutes: 5
     permissions:
       contents: read
+    outputs:
+      pr: ${{ steps.delivery.outputs.pr }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -219,6 +222,7 @@ jobs:
           permission-issues: write
           permission-pull-requests: write
       - uses: actions/github-script@v7
+        id: delivery
         env:
           TASK_DIR: ${{ runner.temp }}/task
           RESULT_DIR: ${{ runner.temp }}/result
@@ -248,6 +252,7 @@ jobs:
         env:
           ISSUE_NUMBER: ${{ needs.prepare.outputs.issue }}
           RUN_STATUS: execute=${{ needs.execute.result }}, validate=${{ needs.validate.result }}, deliver=${{ needs.deliver.result }}
+          DELIVERED_PR: ${{ needs.deliver.outputs.pr }}
         with:
           github-token: ${{ steps.app.outputs.token }}
           script: await require('./scripts/codex_runner.cjs').finish({github,context});

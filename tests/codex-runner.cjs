@@ -1,5 +1,5 @@
 const assert = require('node:assert/strict');
-const {eligible,linked,fileOK,notes,approval,prepare,deliver} = require('../scripts/codex_runner.cjs');
+const {eligible,linked,fileOK,notes,approval,prepare,deliver,finish} = require('../scripts/codex_runner.cjs');
 const owner='travisvought-byte';
 const bot='directory-runner[bot]';
 const issue={number:21,title:'Research banking',body:'Research only',state:'open',labels:[{name:'codex'},{name:'codex-execute'}],assignees:[]};
@@ -48,14 +48,14 @@ released.comments.push({...authorize,id:103});assert(eligible(released));
   const fs=require('node:fs'),os=require('node:os'),path=require('node:path');
   const dir=fs.mkdtempSync(path.join(os.tmpdir(),'runner-controller-'));
   process.env.TASK_DIR=dir;process.env.RESULT_DIR=dir;process.env.ISSUE_NUMBER='21';
-  const calls=[];let refExists=false;let nextComment=101;const comments=[clone(authorize)];
+  const calls=[];let refExists=false;let nextComment=101;let prError=false;let commentError=false;const comments=[clone(authorize)];
   const context={eventName:'workflow_dispatch',ref:'refs/heads/main',actor:owner,repo:{owner,repo:'ohio-cannabis-directory'},runId:9,sha:'a'.repeat(40)};
   const github={paginate:async(fn,args)=>{calls.push(['paginate',args.per_page]);return fn();},rest:{
     issues:{get:async()=>({data:issue}),listComments:()=>comments,listEvents:()=>initial.events,
-      createComment:async({body})=>{const c={id:nextComment++,body,user:{login:bot}};comments.push(c);return {data:c};}},
-    pulls:{list:()=>[],create:async(args)=>{calls.push(['create-pr',args]);return {data:{html_url:'https://github.com/example/pr/1'}};}},
+      createComment:async({body})=>{if(commentError)throw new Error('Comment unavailable');const c={id:nextComment++,body,user:{login:bot}};comments.push(c);return {data:c};}},
+    pulls:{list:()=>[],create:async(args)=>{calls.push(['create-pr',args]);if(prError)throw new Error('PR response unavailable');return {data:{html_url:'https://github.com/example/pr/1'}};}},
     git:{getRef:async({ref})=>{if(ref!=='heads/main'&&!refExists){const e=new Error();e.status=404;throw e;}return {data:{object:{sha:context.sha}}};},
-      getCommit:async()=>({data:{tree:{sha:'tree'}}}),createBlob:async()=>({data:{sha:'blob'}}),createTree:async()=>({data:{sha:'newtree'}}),createCommit:async()=>({data:{sha:'newcommit'}}),createRef:async()=>{calls.push(['branch']);refExists=true;}}
+      getCommit:async()=>({data:{tree:{sha:'tree'}}}),createBlob:async()=>({data:{sha:'blob'}}),createTree:async()=>({data:{sha:'newtree'}}),createCommit:async()=>({data:{sha:'newcommit'}}),createRef:async()=>{if(refExists)throw new Error('Ref already exists');calls.push(['branch']);refExists=true;}}
   }};
   const core={setOutput:(k,v)=>calls.push([k,v])};
   try {
@@ -64,11 +64,37 @@ released.comments.push({...authorize,id:103});assert(eligible(released));
     assert.equal(task.claim_id,101);assert.equal(task.base_sha,context.sha);
     assert.equal(calls.filter(x=>x[0]==='paginate').length,3);
     fs.writeFileSync(path.join(dir,'bundle.json'),JSON.stringify({base_sha:context.sha,issue:21,run_id:'9',files:[{path:'data/research/banking.json',content:'[]'}],summary:'Reviewed sources',limitations:['Availability unknown']}));
-    await deliver({github,context,core});
+    commentError=true;
+    await deliver({github,context,core}); // A notification outage cannot undo delivery.
+    assert(calls.some(x=>x[0]==='pr'&&x[1]==='https://github.com/example/pr/1'));
+    process.env.DELIVERED_PR='https://github.com/example/pr/1';
+    await assert.rejects(()=>finish({github,context}),/Comment unavailable/);
+    commentError=false;
+    await finish({github,context});
+    assert(comments.at(-1).body.includes('PR delivered: https://github.com/example/pr/1'));
+    assert(!comments.at(-1).body.includes('Before retrying'));
     assert(calls.find(x=>x[0]==='create-pr')[1].body.includes('Closes #21'));
     assert.equal(calls.filter(x=>x[0]==='create-pr').length,1);
     await assert.rejects(()=>prepare({github,context,core}));
     await assert.rejects(()=>prepare({github,context:{...context,actor:'someone'},core}));
-  } finally {fs.rmSync(dir,{recursive:true,force:true});}
+    // Simulate a fresh fixture, then loss of the PR API response after branch creation.
+    comments.splice(1);refExists=false;nextComment=101;prError=true;
+    await prepare({github,context,core});
+    await assert.rejects(()=>deliver({github,context,core}),/PR creation was not confirmed.*inspect open PRs/);
+    assert(refExists);
+    const prCalls=calls.filter(x=>x[0]==='create-pr').length;
+    await assert.rejects(()=>deliver({github,context,core}),/Ref already exists/);
+    assert.equal(calls.filter(x=>x[0]==='create-pr').length,prCalls);
+    delete process.env.DELIVERED_PR;
+    await finish({github,context});
+    assert(comments.at(-1).body.includes('Before retrying'));
+    // Even task-file failure after a successful claim retains reporting metadata.
+    comments.splice(1);refExists=false;nextComment=101;calls.length=0;
+    const notDirectory=path.join(dir,'not-a-directory');fs.writeFileSync(notDirectory,'x');
+    process.env.TASK_DIR=notDirectory;
+    await assert.rejects(()=>prepare({github,context,core}));
+    assert(calls.some(x=>x[0]==='claim'&&x[1]===101));
+    assert(calls.some(x=>x[0]==='base'&&x[1]===context.sha));
+  } finally {delete process.env.DELIVERED_PR;fs.rmSync(dir,{recursive:true,force:true});}
   console.log('Codex controller eligibility, claim, delivery, duplicate and recovery tests passed');
 })().catch(e=>{console.error(e);process.exit(1);});

@@ -8,6 +8,27 @@ concurrency:
   group: classifier-${{ github.ref }}
   cancel-in-progress: true
 jobs:
+  codex-permissions:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install pinned CLI without provider credentials
+        run: npm install --global @openai/codex@0.164.0
+      - name: Enable the hosted Linux sandbox prerequisites
+        run: |
+          sudo sysctl -w kernel.unprivileged_userns_clone=1
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+      - name: Check the real research permission profile without a model call
+        run: bash scripts/test_codex_permissions.sh
   classifier:
     runs-on: ubuntu-24.04
     timeout-minutes: 5

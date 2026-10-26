@@ -76,10 +76,11 @@ async function prepare({github,context,core}) {
   catch(e) { if (e.status !== 404) throw e; }
   const body = `<!-- codex-runner:claim:${context.runId} -->\nCodex is working on this issue. Run: https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
   const claim = (await github.rest.issues.createComment({...context.repo,issue_number:n,body})).data;
+  // Preserve recovery/reporting metadata even if writing or uploading the task fails.
+  core.setOutput('base',base); core.setOutput('issue',n); core.setOutput('claim',claim.id);
   const task = {schema_version:1,issue:n,run_id:String(context.runId),base_sha:base,branch,claim_id:claim.id,bot_login:claim.user.login,fingerprint:s.fingerprint,...s.state};
   fs.mkdirSync(process.env.TASK_DIR,{recursive:true});
   fs.writeFileSync(`${process.env.TASK_DIR}/task.json`,JSON.stringify(task,null,2));
-  core.setOutput('base',base); core.setOutput('issue',n); core.setOutput('claim',claim.id);
 }
 
 async function deliver({github,context,core}) {
@@ -100,15 +101,23 @@ async function deliver({github,context,core}) {
   const newTree = (await github.rest.git.createTree({...context.repo,base_tree:tree,tree:entries})).data.sha;
   const commit = (await github.rest.git.createCommit({...context.repo,message:`Research for #${task.issue}`,tree:newTree,parents:[base]})).data.sha;
   await github.rest.git.createRef({...context.repo,ref:`refs/heads/${task.branch}`,sha:commit});
-  const pr = (await github.rest.pulls.create({...context.repo,base:'main',head:task.branch,title:`Research for #${task.issue}`,body:`Closes #${task.issue}\n\nPrepared by the opt-in research runner. Owner review is required; no merge is performed.\n\nValidation: all repository checks in the independent validation job passed. [Run evidence](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}). Required PR checks must also run and pass.\n\nModel report (untrusted research notes; mentions and closing directives normalized):\n\n${notes(bundle.summary)}\n\nLimitations:\n${bundle.limitations.map(x=>'- '+notes(x)).join('\n') || '- No additional limitations reported by the model; verify the sources during review.'}`.slice(0,60000)})).data;
-  await github.rest.issues.createComment({...context.repo,issue_number:task.issue,body:`Runner completed: ${pr.html_url}. Owner review and PR checks are still required.`});
+  let pr;
+  try {
+    pr = (await github.rest.pulls.create({...context.repo,base:'main',head:task.branch,title:`Research for #${task.issue}`,body:`Closes #${task.issue}\n\nPrepared by the opt-in research runner. Owner review is required; no merge is performed.\n\nValidation: all repository checks in the independent validation job passed. [Run evidence](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}). Required PR checks must also run and pass.\n\nModel report (untrusted research notes; mentions and closing directives normalized):\n\n${notes(bundle.summary)}\n\nLimitations:\n${bundle.limitations.map(x=>'- '+notes(x)).join('\n') || '- No additional limitations reported by the model; verify the sources during review.'}`.slice(0,60000)})).data;
+  } catch (error) {
+    // A timed-out response may still have created a PR. Never retry or delete the branch.
+    throw new Error(`PR creation was not confirmed for ${task.branch}; inspect open PRs and https://github.com/${context.repo.owner}/${context.repo.repo}/tree/${task.branch} before manual recovery. ${error.message}`);
+  }
+  // Notification is a separate job: its failure must not misreport successful delivery.
   core.setOutput('pr',pr.html_url);
 }
 
 async function finish({github,context}) {
   const raw = process.env.ISSUE_NUMBER || '';
   if (!/^[1-9][0-9]*$/.test(raw)) return;
-  await github.rest.issues.createComment({...context.repo,issue_number:Number(raw),body:`<!-- codex-runner:finished:${context.runId} -->\nRunner finished with status: ${process.env.RUN_STATUS}. Inspect https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}. Before retrying, review this run, any branch/PR, and explicitly acknowledge its claim/report comments with /codex-release-comment COMMENT_ID; then post a fresh /codex-run authorization. A failed or blocked run does not establish fresh source verification.`});
+  const delivered = process.env.DELIVERED_PR || '';
+  const outcome = delivered ? `PR delivered: ${delivered}. Owner review and required PR checks are still required. Do not rerun this issue; continue on its PR.` : 'Before retrying, review this run, any branch/PR, and explicitly acknowledge its claim/report comments with /codex-release-comment COMMENT_ID; then post a fresh /codex-run authorization. A failed or blocked run does not establish fresh source verification.';
+  await github.rest.issues.createComment({...context.repo,issue_number:Number(raw),body:`<!-- codex-runner:finished:${context.runId} -->\nRunner finished with status: ${process.env.RUN_STATUS}. Inspect https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}. ${outcome}`});
 }
 
 module.exports = {fileOK,notes,approval,linked,eligible,prepare,deliver,finish};
