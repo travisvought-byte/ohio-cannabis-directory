@@ -1,0 +1,253 @@
+name: Opt-in Codex research runner
+on:
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: 'One owner-authorized research-only issue number'
+        required: true
+        type: string
+# A live manual pilot must succeed before any schedule is added.
+permissions: {}
+concurrency:
+  group: codex-issue-execution
+  cancel-in-progress: false
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/main' && github.actor == github.repository_owner && vars.CODEX_RUNNER_ENABLED == 'true' && vars.CODEX_BUDGET_CONFIRMED == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    outputs:
+      base: ${{ steps.claim.outputs.base }}
+      issue: ${{ steps.claim.outputs.issue }}
+      claim: ${{ steps.claim.outputs.claim }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/create-github-app-token@v2
+        id: app
+        with:
+          app-id: ${{ vars.CODEX_APP_ID }}
+          private-key: ${{ secrets.CODEX_APP_PRIVATE_KEY }}
+          permission-contents: read
+          permission-issues: write
+          permission-pull-requests: read
+      - uses: actions/github-script@v7
+        id: claim
+        env:
+          ISSUE_NUMBER: ${{ inputs.issue_number }}
+          TASK_DIR: ${{ runner.temp }}/task
+        with:
+          github-token: ${{ steps.app.outputs.token }}
+          script: await require('./scripts/codex_runner.cjs').prepare({github,context,core});
+      - uses: actions/upload-artifact@v4
+        with:
+          name: codex-task-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/task/task.json
+          retention-days: 14
+          if-no-files-found: error
+
+  execute:
+    needs: prepare
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.prepare.outputs.base }}
+          persist-credentials: false
+      - uses: actions/download-artifact@v4
+        with:
+          name: codex-task-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/task
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Prepare trusted model configuration
+        env:
+          TASK_DIR: ${{ runner.temp }}/task
+          MODEL: ${{ vars.CODEX_RUNNER_MODEL }}
+        run: |
+          test -n "$MODEL" || { echo 'Set CODEX_RUNNER_MODEL first'; exit 1; }
+          sudo mkdir -p /opt/codex-runner /opt/codex-runner-home
+          sudo cp scripts/codex_research_guard.py /opt/codex-runner/export.py
+          sudo cp "$TASK_DIR/task.json" /opt/codex-runner/task.json
+          sudo cp .github/codex/research-prompt.md /opt/codex-runner/prompt.md
+          sudo chown -R root:root /opt/codex-runner
+          sudo chmod -R a-w /opt/codex-runner
+          sudo chown "$(id -u):$(id -g)" /opt/codex-runner-home
+          python - <<'PY'
+          import json, pathlib
+          task=json.loads(pathlib.Path('/opt/codex-runner/task.json').read_text())
+          config='''web_search = "live"
+          [features]
+          network_proxy = true
+          [permissions.research]
+          extends = ":read-only"
+          [permissions.research.filesystem]
+          "/opt/codex-runner" = "read"
+          [permissions.research.filesystem.":workspace_roots"]
+          "data/research" = "write"
+          [permissions.research.network]
+          enabled = true
+          [permissions.research.network.domains]
+          '''
+          config+=''.join(json.dumps(d)+' = "allow"\n' for d in task['auth']['domains'])
+          pathlib.Path('/opt/codex-runner-home/config.toml').write_text(config)
+          # The action reads this generated prompt; issue text stays in task.json as data.
+          prompt=pathlib.Path('/opt/codex-runner/prompt.md').read_text()
+          pathlib.Path('/opt/codex-runner-home/prompt.md').write_text(prompt+'\nTask JSON: /opt/codex-runner/task.json\n')
+          PY
+      - name: Run bounded Codex research
+        id: codex
+        timeout-minutes: 20
+        uses: openai/codex-action@bdf19a4a223ec2549a3e2274a0cf61556bc07675 # v1, resolved 2026-10-26
+        with:
+          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
+          codex-version: '0.164.0'
+          model: ${{ vars.CODEX_RUNNER_MODEL }}
+          codex-home: /opt/codex-runner-home
+          permission-profile: research
+          safety-strategy: drop-sudo
+          codex-args: '["--ephemeral"]'
+          prompt-file: /opt/codex-runner-home/prompt.md
+          output-file: ${{ runner.temp }}/model-report.json
+          output-schema: |
+            {"type":"object","properties":{"status":{"type":"string","enum":["completed","blocked"]},"summary":{"type":"string"},"limitations":{"type":"array","items":{"type":"string"}}},"required":["status","summary","limitations"],"additionalProperties":false}
+      # Only a root-owned exporter and artifact upload follow Codex; no credentials,
+      # privileged commands, repository code or model-written commands run here.
+      - name: Export bounded text result
+        env:
+          RESULT_DIR: ${{ runner.temp }}/result
+          MODEL_REPORT: ${{ runner.temp }}/model-report.json
+        run: |
+          mkdir -p "$RESULT_DIR"
+          env -i PATH=/usr/bin:/bin /usr/bin/python3 /opt/codex-runner/export.py export /opt/codex-runner/task.json "$MODEL_REPORT" --output "$RESULT_DIR/bundle.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: codex-result-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/result/bundle.json
+          retention-days: 14
+          if-no-files-found: error
+
+  validate:
+    needs: [prepare, execute]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.prepare.outputs.base }}
+          persist-credentials: false
+      - uses: actions/download-artifact@v4
+        with:
+          name: codex-task-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/task
+      - uses: actions/download-artifact@v4
+        with:
+          name: codex-result-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/result
+      - name: Independently enforce scope
+        env:
+          TASK_DIR: ${{ runner.temp }}/task
+          RESULT_DIR: ${{ runner.temp }}/result
+        run: python3 scripts/codex_research_guard.py apply "$TASK_DIR/task.json" "$RESULT_DIR/bundle.json"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install validation dependencies
+        run: |
+          pip install -r requirements.txt
+          npm ci
+          npx playwright install --with-deps chromium
+      - name: Run independent repository validation
+        env:
+          VALIDATION_LOG: ${{ runner.temp }}/validation.txt
+        run: |
+          set -o pipefail
+          bash scripts/validate_codex_research.sh 2>&1 | tee "$VALIDATION_LOG"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: codex-validation-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/validation.txt
+          retention-days: 14
+
+  deliver:
+    needs: [prepare, execute, validate]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.prepare.outputs.base }}
+          persist-credentials: false
+      - uses: actions/download-artifact@v4
+        with:
+          name: codex-task-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/task
+      - uses: actions/download-artifact@v4
+        with:
+          name: codex-result-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/result
+      - name: Recheck delivered artifact
+        env:
+          TASK_DIR: ${{ runner.temp }}/task
+          RESULT_DIR: ${{ runner.temp }}/result
+        run: python3 scripts/codex_research_guard.py apply "$TASK_DIR/task.json" "$RESULT_DIR/bundle.json"
+      - uses: actions/create-github-app-token@v2
+        id: app
+        with:
+          app-id: ${{ vars.CODEX_APP_ID }}
+          private-key: ${{ secrets.CODEX_APP_PRIVATE_KEY }}
+          permission-contents: write
+          permission-issues: write
+          permission-pull-requests: write
+      - uses: actions/github-script@v7
+        env:
+          TASK_DIR: ${{ runner.temp }}/task
+          RESULT_DIR: ${{ runner.temp }}/result
+        with:
+          github-token: ${{ steps.app.outputs.token }}
+          script: await require('./scripts/codex_runner.cjs').deliver({github,context,core});
+
+  report:
+    needs: [prepare, execute, validate, deliver]
+    if: always() && needs.prepare.outputs.claim != ''
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.prepare.outputs.base }}
+          persist-credentials: false
+      - uses: actions/create-github-app-token@v2
+        id: app
+        with:
+          app-id: ${{ vars.CODEX_APP_ID }}
+          private-key: ${{ secrets.CODEX_APP_PRIVATE_KEY }}
+          permission-issues: write
+      - uses: actions/github-script@v7
+        env:
+          ISSUE_NUMBER: ${{ needs.prepare.outputs.issue }}
+          RUN_STATUS: execute=${{ needs.execute.result }}, validate=${{ needs.validate.result }}, deliver=${{ needs.deliver.result }}
+        with:
+          github-token: ${{ steps.app.outputs.token }}
+          script: await require('./scripts/codex_runner.cjs').finish({github,context});

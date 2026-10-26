@@ -20,11 +20,15 @@ jobs:
         run: python -m unittest discover -s tests -p test_pr_classifier.py -v
       - name: Test maintenance dates and issue queue
         run: python -m unittest discover -s tests -p 'test_automation*.py' -v
+      - name: Test opt-in research output boundaries
+        run: python -m unittest discover -s tests -p test_codex_runner.py -v
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
       - name: Test risk report including Git file modes
         run: node tests/pr-risk-report.cjs
+      - name: Test Codex claiming and delivery lifecycle
+        run: node tests/codex-runner.cjs
       - name: Validate staged research references
         run: |
           python scripts/validate_pa_research.py
