@@ -13,13 +13,16 @@ printf '%s\n' 'protected baseline' > "$smoke_dir/work/README.md"
 status=0
 CODEX_HOME="$smoke_dir/home" codex sandbox --permission-profile research --cd "$smoke_dir/work" -- python3 -c '
 from pathlib import Path
+import errno
 Path("data/research/result.json").write_text("[]")
 assert Path("README.md").read_text() == "protected baseline\n"
 for name in ("README.md", ".github/forbidden.yml", ".git/config", "data/forbidden.json"):
     try:
         Path(name).write_text("forbidden")
-    except PermissionError:
-        continue
+    except OSError as error:
+        if error.errno in (errno.EACCES, errno.EPERM, errno.EROFS):
+            continue
+        raise
     raise AssertionError("Sandbox allowed protected write: " + name)
 print("PASS pinned CLI: research writes allowed; source, workflows and Git metadata protected")
 ' > "$smoke_dir/sandbox.log" 2>&1 || status=$?
