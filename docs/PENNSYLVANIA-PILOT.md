@@ -1,4 +1,33 @@
-# Pennsylvania cannabis pilot: staging plan
+# Pennsylvania cannabis pilot: readiness and next steps
+
+## October 26 readiness review — issue #58
+
+The original staging work has reached `main` (`7eee75f`): advocacy #48/#51, referrals #53 (including #46), and queued research/comparison integration #55 (including #44/#39). No Pennsylvania implementation PR remains open as of this review. Issue #47 remains open because the original acceptance criteria included an interactive editable letter; the published page had only a static message starter. Issue #58 supplies that missing workflow without repeating the completed research or changing the comparison design.
+
+The existing advocacy, Ohio advocacy entry and `state.html?state=PA` URLs returned HTTP 200 in the October 26 check. Main's `Validate directory` run 40161325367 and Pages deployment 40161324633 succeeded. These establish that the existing pilot is published, not that #58 is deployed.
+
+The smallest complete advocacy pilot consists of:
+
+- Existing source-linked proposal cards, dated snapshot and official legislator contact route.
+- Existing five published patient/legal-help referrals, visible pilot labels and coverage gaps.
+- Four visitor-selected questions drawn from the page's existing topics, optional town/district and personal reason, explicitly built/rebuilt editable draft, exact-text copy/download and letter-only print.
+- Preserved edits when inputs change, manual copy fallback, clear-details control, no draft storage or sending, and usable static/no-JavaScript instructions.
+- Deterministic build plus regression checks for the actual visitor workflow, privacy, mobile and print behavior.
+
+The #58 implementation preserves all existing legal summaries and their October 24 review dates. The General Assembly portal was opened October 26 to confirm the existing contact entry; this is not a fresh review of every bill or service. No new policy outcomes, market-wide coverage or resident experiences are asserted.
+
+Publication gate: review and merge the #58 PR, allow `Validate directory` and Pages deployment to pass, then check the live topic → build → edit → copy/download/print flow and PA referral link. Under `AGENTS.md`, Travis merges; this review does not merge or publish the new workflow. No release bump is required by this issue.
+
+Validation for #58: deterministic generated-page/data/release checks, both foundation validators, foundation/migration/location/review-cleanup/ancestry regressions, strain ancestry validation (no errors), `npm test` and all ten `npm run test:browser` suites passed locally. New PA tests exercise exact edited copy/download/print output, explicit rebuild, clipboard denial fallback, clearing, no draft storage or personal text in requests/analytics, 320/390/1280px width and no-JavaScript instructions. The 390px composer screenshot was visually inspected. JavaScript syntax and `git diff --check` passed. A temporary workspace disconnect occurred during testing; it recovered and the complete browser suite subsequently passed.
+
+### Work after the pilot, not launch blockers
+
+- Reconcile the 28 research-only operator/provider candidates against permit and persistent organization identities before publication; nine initial proposed matches became eleven in #55, with the two already-published agency identities reused.
+- Build dated topic-by-topic PA comparisons separately; the existing Ohio/Michigan licensing comparison does not constitute PA comparison coverage.
+- Expand local ecosystem, suppliers, events and professional-service coverage only as source-reviewed routes become useful. Keep the seven pathway gaps visible.
+- Refresh bill statuses and contact routes before promoting a later legislative snapshot; never advance the legal review date from a failed fetch.
+
+## Earlier staging record
 
 Updated October 24, 2026. The pilot begins with a source-linked advocacy entry point in `pennsylvania-advocacy.html`. It is intentionally a first-stage page: business/operator coverage remains research work. Issue #52 publishes five reviewed patient and legal-help referral routes in the shared state view, with a labeled pilot and explicit gaps.
 

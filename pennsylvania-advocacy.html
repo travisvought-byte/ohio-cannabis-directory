@@ -17,6 +17,8 @@ h2{line-height:1.2}h3{margin:.2em 0}.button{display:inline-block;background:var(
 ul{padding-left:1.25em}li{margin:.45em 0}small,.small{font-size:.9rem;color:var(--muted)}
 table{width:100%;border-collapse:collapse;background:white}th,td{text-align:left;vertical-align:top;border:1px solid var(--line);padding:12px}
 :focus-visible{outline:3px solid #2865b0;outline-offset:3px}
+.letter-builder label{display:block;margin:14px 0;font-weight:650}.letter-builder select,.letter-builder input,.letter-builder textarea{display:block;width:100%;padding:10px;border:1px solid #777;border-radius:5px;font:inherit;color:var(--ink);background:white}.letter-builder textarea{min-height:110px}.letter-builder #pa-draft{min-height:340px}.letter-builder button{font:inherit;padding:10px 14px;cursor:pointer}.letter-builder button:disabled{cursor:default;opacity:.6}#pa-letter-print{display:none;white-space:pre-wrap;overflow-wrap:anywhere}
+@media print{body.pa-print-letter{background:white}body.pa-print-letter main,body.pa-print-letter .site-footer{display:none!important}body.pa-print-letter #pa-letter-print{display:block;margin:0;font:12pt/1.5 system-ui,sans-serif}}
 @media(max-width:650px){main{padding:20px 14px 40px}.grid{grid-template-columns:1fr}article,.callout{padding:16px}table{font-size:.93rem}}
 
   .vhg-brand{display:flex;align-items:center;gap:1rem;margin:0 0 .5rem;text-decoration:none;color:inherit}
@@ -84,6 +86,26 @@ table{width:100%;border-collapse:collapse;background:white}th,td{text-align:left
 </ol>
 <p><strong>Message starter:</strong> “I live in [town or district]. I’m asking you to explain what specific adult-use cannabis legislation or amendments you would support, including the market structure, patient protections, record clearing, equity, and local revenue safeguards. What action will you take, and how can I follow it?”</p>
 <p class="small">Edit this in your own words. This page does not send messages or collect personal information.</p>
+<div id="pa-letter-builder" class="callout letter-builder" hidden>
+<h3>Write your Pennsylvania message</h3>
+<p>Choose a question, build a draft, then edit it in your own voice. These are questions about proposed changes, not statements of current law or endorsements of a bill.</p>
+<label for="pa-topic">What do you want to ask about?<select id="pa-topic">
+<option value="market">Market structure and independent businesses</option>
+<option value="equity">Equity, record clearing and reinvestment</option>
+<option value="patients">Medical patient access and affordability</option>
+<option value="local">Local revenue and community impact</option>
+</select></label>
+<label for="pa-place">Your Pennsylvania town or district (optional)<input id="pa-place" autocomplete="off" placeholder="Town or district"></label>
+<label for="pa-reason">Why this matters to you (optional)<textarea id="pa-reason" autocomplete="off" placeholder="Add only experiences and views you want to share."></textarea></label>
+<button type="button" id="pa-build">Build draft</button>
+<p class="small">Changing the choices above keeps your existing draft. Rebuilding replaces the draft and any edits you made to it.</p>
+<label for="pa-draft">Your editable message<textarea id="pa-draft" autocomplete="off" spellcheck="true"></textarea></label>
+<div class="actions"><button type="button" id="pa-copy" disabled>Copy message</button><button type="button" id="pa-download" disabled>Download message</button><button type="button" id="pa-print" disabled>Print message only</button><button type="button" id="pa-clear">Clear message and details</button></div>
+<p id="pa-letter-status" role="status" aria-live="polite"></p>
+<p><a href="https://www.palegis.us/" target="_blank" rel="noopener">Find your representative and senator on the official General Assembly portal</a>, then paste your message into their contact form. Check the bill records above before naming a bill or asking for action.</p>
+<p class="small">Your draft stays in this page while it is open; it is not saved by this site or sent to anyone. Copying, downloading or printing creates a copy you control. No message text is included in site analytics.</p>
+</div>
+<noscript><p>To write without JavaScript, copy the message starter above into your own document, edit it, and use the official General Assembly portal to contact your officials.</p></noscript>
 </section>
 
 <section aria-labelledby="sources">
@@ -98,4 +120,4 @@ table{width:100%;border-collapse:collapse;background:white}th,td{text-align:left
 </ul>
 <p class="small">Reviewed October 24, 2026. This first pilot is an advocacy entry point, not legal advice or a complete directory of Pennsylvania operators, providers, events or local organizations. Verify bill status and official contact information before acting.</p>
 </section>
-</main><footer class="site-footer"><nav aria-label="More resources"><a href="relationships.html">Who works with whom</a><a href="ancestry.html">Strains</a><a href="seeds.html">Seeds &amp; growing supplies</a><a href="resources.html#community">Events</a><a href="resources.html">Resources by need</a><a href="mailto:VeteranHomeGuardians@gmail.com?subject=Ohio%20Cannabis%20Directory%3A%20listing%20update&body=Organization%20or%20listing%20link%3A%0D%0A%0D%0AAddition%20or%20correction%3A%0D%0A%0D%0AWebsite%20or%20source%3A%0D%0A%0D%0A">Suggest a correction</a><a href="https://github.com/travisvought-byte/ohio-cannabis-directory#readme">Methods &amp; sources</a><a href="ohio-cannabis-directory.csv" download>CSV download</a><a href="https://travisvought-byte.github.io/vhg-veteran-resident-guide/">Veteran Resident Guide</a></nav><p>Created and maintained by <a href="work-with-travis.html">Travis Vought</a> · Shared in support of Veteran Home Guardians · <a href="https://github.com/travisvought-byte/ohio-cannabis-directory/blob/main/PROJECT_STEWARDSHIP.md">Project roles</a></p></footer></body></html>
+</main><pre id="pa-letter-print" aria-hidden="true"></pre><script src="assets/pennsylvania-advocacy.js"></script><footer class="site-footer"><nav aria-label="More resources"><a href="relationships.html">Who works with whom</a><a href="ancestry.html">Strains</a><a href="seeds.html">Seeds &amp; growing supplies</a><a href="resources.html#community">Events</a><a href="resources.html">Resources by need</a><a href="mailto:VeteranHomeGuardians@gmail.com?subject=Ohio%20Cannabis%20Directory%3A%20listing%20update&body=Organization%20or%20listing%20link%3A%0D%0A%0D%0AAddition%20or%20correction%3A%0D%0A%0D%0AWebsite%20or%20source%3A%0D%0A%0D%0A">Suggest a correction</a><a href="https://github.com/travisvought-byte/ohio-cannabis-directory#readme">Methods &amp; sources</a><a href="ohio-cannabis-directory.csv" download>CSV download</a><a href="https://travisvought-byte.github.io/vhg-veteran-resident-guide/">Veteran Resident Guide</a></nav><p>Created and maintained by <a href="work-with-travis.html">Travis Vought</a> · Shared in support of Veteran Home Guardians · <a href="https://github.com/travisvought-byte/ohio-cannabis-directory/blob/main/PROJECT_STEWARDSHIP.md">Project roles</a></p></footer></body></html>
