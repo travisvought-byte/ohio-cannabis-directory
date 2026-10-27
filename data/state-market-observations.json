@@ -4,7 +4,7 @@
   "observations": [
     {
       "state": "PA",
-      "metric": "licensed_retailers",
+      "metric": "operational_retail_locations",
       "unit": "count",
       "scope": "medical",
       "period": "day",
@@ -18,7 +18,7 @@
     },
     {
       "state": "PA",
-      "metric": "licensed_retailers",
+      "metric": "operational_retail_locations",
       "unit": "count",
       "scope": "medical",
       "period": "day",
