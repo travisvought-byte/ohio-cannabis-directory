@@ -141,6 +141,18 @@ def main():
         out.append('</div></div>')
     out.append('''<script>(function(){const controls=document.querySelectorAll('.compare-state-toggle');function update(){const chosen=new Set(Array.from(controls).filter(c=>c.checked).map(c=>c.value));document.querySelectorAll('#laws .state[data-state]').forEach(card=>{card.hidden=!chosen.has(card.dataset.state)});document.querySelectorAll('#laws .coverage-item[data-state]').forEach(item=>{item.hidden=!chosen.has(item.dataset.state)});document.querySelectorAll('#laws .states').forEach(grid=>{grid.style.gridTemplateColumns='repeat(auto-fit,minmax(min(100%,260px),1fr))'});}controls.forEach(c=>c.addEventListener('change',update));const filter=document.getElementById('compare-topic-filter');filter.addEventListener('input',()=>{const q=filter.value.trim().toLowerCase();document.querySelectorAll('#laws .topic').forEach(item=>{item.hidden=!item.dataset.topicSearch.toLowerCase().includes(q)})});update();})();</script></section>''')
 
+    market = json.loads((DATA.parent / 'state-market-observations.json').read_text(encoding='utf-8'))
+    from market_observations import validate_market
+    validate_market(data, market['observations'])
+    out.append('<section id="market-data"><h2>Official market observations</h2><p>Regulator-reported snapshots, not estimates. Compare figures only when metric, market scope and reporting period match. Missing observations are not zero.</p>')
+    if not market['observations']:
+        out.append('<p>No verified market observations have been published yet.</p>')
+    for row in market['observations']:
+        name = states[row['state']]
+        metric = row['metric'].replace('_', ' ').capitalize()
+        out.append(f'<article class="card" data-state="{esc(row["state"])}"><h3>{esc(name)} · {esc(metric)}</h3><p><strong>{row["value"]:,.0f}</strong> {esc(row["unit"])} · {esc(row["scope"].replace("_", " "))}</p><p class="muted">Period: {esc(row["period_start"])} to {esc(row["period_end"])} · {esc(row["definition"])} {cites(row["source_ids"])}</p></article>')
+    out.append('</section>')
+
     out.append('<section id="lessons"><h2>Market lessons: Michigan, with an Ohio assessment</h2><p>What happened elsewhere, why it happened, and whether Ohio has the same conditions.</p>')
     letters = {}
     for lesson in data['lessons']:
