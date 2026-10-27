@@ -1,0 +1,30 @@
+name: Regenerate comparison page for PR
+on:
+  push:
+    branches:
+      - feature/state-comparison-explorer-60
+    paths:
+      - '.github/workflows/regenerate-compare-pr.yml'
+permissions:
+  contents: write
+jobs:
+  regenerate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild comparison page
+        run: python build_compare.py
+      - name: Commit generated output if changed
+        run: |
+          if ! git diff --quiet -- compare.html; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add compare.html
+            git commit -m "Rebuild generated comparison page"
+            git push
+          fi

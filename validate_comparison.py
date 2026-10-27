@@ -112,6 +112,13 @@ def validate(data):
         for a in letter['asks']:
             _text(a['label'], f"{lid}/ask/{a['id']}"); _text(a['text'], f"{lid}/ask/{a['id']}")
 
+    market_path = ROOT / 'data/state-market-observations.json'
+    if market_path.exists():
+        from market_observations import validate_market
+        market = json.loads(market_path.read_text(encoding='utf-8'))
+        validate_market(data, market['observations'])
+        for row in market['observations']:
+            used.update(row['source_ids'])
     unused = set(sources) - used
     assert not unused, f'sources listed but never cited: {sorted(unused)}'
     return {'topics': len(data['topics']), 'lessons': len(data['lessons']), 'sources': len(sources)}
@@ -124,6 +131,11 @@ def main():
     except AssertionError as error:
         print(f'FAIL: {error}')
         sys.exit(1)
+    from market_observations import validate_market
+    market_path = ROOT / 'data/state-market-observations.json'
+    market = json.loads(market_path.read_text(encoding='utf-8'))
+    n = validate_market(data, market['observations'])
+    print(f'PASS: market observations - {n} verified records')
     print(f"PASS: state comparison - {counts['topics']} law topics, {counts['lessons']} market lessons, {counts['sources']} sources, every claim cited")
 
 

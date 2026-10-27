@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "description": "Regulator-verified market observations. Empty until source-linked figures are researched; missing is not zero.",
+  "observations": [
+    {
+      "state": "PA",
+      "metric": "operational_retail_locations",
+      "unit": "count",
+      "scope": "medical",
+      "period": "day",
+      "period_start": "2024-03-01",
+      "period_end": "2024-03-01",
+      "value": 180,
+      "source_ids": [
+        "pa-doh-biennial-2024"
+      ],
+      "definition": "Operational medical marijuana dispensary sites as of March 1, 2024; not distinct permit holders."
+    },
+    {
+      "state": "PA",
+      "metric": "operational_retail_locations",
+      "unit": "count",
+      "scope": "medical",
+      "period": "day",
+      "period_start": "2026-03-01",
+      "period_end": "2026-03-01",
+      "value": 192,
+      "source_ids": [
+        "pa-doh-mmab-mar-2026"
+      ],
+      "definition": "Operational medical marijuana dispensary locations reported as of March 1, 2026; not the number of distinct permit holders."
+    }
+  ]
+}

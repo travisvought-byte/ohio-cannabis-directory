@@ -11,6 +11,8 @@ from pathlib import Path
 from directory_brand import brand_page
 from validate_comparison import validate
 from policy_portal import render as render_policy_portal
+from state_profiles import render_coverage
+from render_market_trends import render_market_trends
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'compare.html'
@@ -32,7 +34,7 @@ a{color:#a90000;overflow-wrap:anywhere}h1{font-size:clamp(2rem,5vw,3.1rem);line-
 .lead{font-size:1.15rem}.review,.muted,.cites{font-size:.86rem;color:#555}.cites a{text-decoration:none;font-weight:600}
 section{margin:36px 0;scroll-margin-top:20px}.card{background:#fff;border:1px solid #ccc;border-radius:10px;padding:22px;min-width:0}
 .states{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:12px}.state{background:#fff;border:1px solid #ccc;border-radius:10px;padding:16px;min-width:0}
-.state.home{border:2px solid #a90000}.state h4{margin:0 0 .3rem;font-size:1rem}.state p{margin:.3rem 0}.state.missing{background:#fafafa;color:#666}
+.state.home{border:2px solid #a90000}.state[hidden],.topic[hidden],.coverage-item[hidden]{display:none!important}.coverage-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:14px}.coverage-item{display:grid;gap:3px}.coverage-item span{font-size:.85rem;color:#555}.coverage-track{height:9px;background:#e4e4e4;border-radius:99px;overflow:hidden}.coverage-fill{height:100%;background:#a90000}#compare-topic-filter{width:100%;padding:10px;border:1px solid #888;border-radius:6px;font:inherit}.state h4{margin:0 0 .3rem;font-size:1rem}.state p{margin:.3rem 0}.state.missing{background:#fafafa;color:#666}
 .topic{margin:22px 0}.topic>p{margin:.2rem 0}
 .lesson h3{font-size:1.25rem}.lesson h4{font-size:1rem;margin:20px 0 6px}ul.facts{padding-left:1.2rem;margin:.2rem 0}ul.facts li{margin:.35rem 0}
 .check{border-left:4px solid #888;padding:6px 0 6px 14px;margin:10px 0}.check.ok{border-color:#2e7d4f}.check.part{border-color:#b8860b}.check.risk{border-color:#a90000}
@@ -121,21 +123,38 @@ def main():
            '<p class="jump"><a href="#policy-portal">Propose a change</a> · <a href="#laws">Laws side by side</a> · <a href="#lessons">Lessons from other markets</a> · <a href="#sources">Sources</a></p>']
 
     out.append(render_policy_portal(data))
-    out.append('<section id="laws"><h2>Laws side by side</h2>')
+    out.append('<section id="laws"><h2>Laws side by side</h2><p>Choose which reviewed states appear in the comparison. Unreviewed topics are marked explicitly.</p><fieldset class="compare-state-controls"><legend>States to display</legend>' + ''.join(f'<label class="ask" style="display:inline-flex;margin-right:18px"><input type="checkbox" class="compare-state-toggle" value="{esc(code)}" checked> {esc(name)}</label>' for code,name in states.items()) + '</fieldset>')
     shown = [home] + [s for s in states if s != home]
+    out.append(render_coverage(data))
+    out.append('<label for="compare-topic-filter">Find a policy topic</label><input type="search" id="compare-topic-filter" placeholder="e.g. licensing, cultivation" aria-controls="laws">')
     for topic in data['topics']:
         entries = {e['state']: e for e in topic['entries']}
-        out.append(f'<div class="topic" id="topic-{esc(topic["id"])}"><h3>{esc(topic["label"])}</h3><p class="muted">{esc(topic["question"])}</p><div class="states">')
+        out.append(f'<div class="topic" data-topic-search="{esc(topic["label"] + " " + topic["question"])}" id="topic-{esc(topic["id"])}"><h3>{esc(topic["label"])}</h3><p class="muted">{esc(topic["question"])}</p><div class="states">')
         for code in shown:
             e = entries.get(code)
             cls = 'state home' if code == home else 'state'
             if not e:
-                out.append(f'<div class="{cls} missing"><h4>{esc(states[code])}</h4><p>Not yet reviewed.</p></div>')
+                out.append(f'<div data-state="{esc(code)}" class="{cls} missing"><h4>{esc(states[code])}</h4><p>Not yet reviewed.</p></div>')
                 continue
             effective = f' · in effect {long_date(e["effective_on"])}' if e.get('effective_on') else ''
-            out.append(f'<div class="{cls}"><h4>{esc(states[code])}</h4><p>{esc(e["summary"])}</p>'
+            out.append(f'<div data-state="{esc(code)}" class="{cls}"><h4>{esc(states[code])}</h4><p>{esc(e["summary"])}</p>'
                        f'<p class="muted">{esc(e["citation"])}{effective} · checked {long_date(e["reviewed_on"])} {cites(e["source_ids"])}</p></div>')
         out.append('</div></div>')
+    out.append('''<script>(function(){const controls=document.querySelectorAll('.compare-state-toggle');function update(){const chosen=new Set(Array.from(controls).filter(c=>c.checked).map(c=>c.value));document.querySelectorAll('#laws .state[data-state]').forEach(card=>{card.hidden=!chosen.has(card.dataset.state)});document.querySelectorAll('#laws .coverage-item[data-state]').forEach(item=>{item.hidden=!chosen.has(item.dataset.state)});document.querySelectorAll('#laws .states').forEach(grid=>{grid.style.gridTemplateColumns='repeat(auto-fit,minmax(min(100%,260px),1fr))'});}controls.forEach(c=>c.addEventListener('change',update));const filter=document.getElementById('compare-topic-filter');filter.addEventListener('input',()=>{const q=filter.value.trim().toLowerCase();document.querySelectorAll('#laws .topic').forEach(item=>{item.hidden=!item.dataset.topicSearch.toLowerCase().includes(q)})});update();})();</script></section>''')
+
+    market = json.loads((DATA.parent / 'state-market-observations.json').read_text(encoding='utf-8'))
+    from market_observations import validate_market
+    validate_market(data, market['observations'])
+    out.append('<section id="market-data"><h2>Official market observations</h2><p>Regulator-reported snapshots, not estimates. Compare figures only when metric, market scope and reporting period match. Missing observations are not zero.</p>')
+    if not market['observations']:
+        out.append('<p>No verified market observations have been published yet.</p>')
+    for row in market['observations']:
+        name = states[row['state']]
+        metric = row['metric'].replace('_', ' ').capitalize()
+        out.append(f'<article class="card" data-state="{esc(row["state"])}"><h3>{esc(name)} · {esc(metric)}</h3><p><strong>{row["value"]:,.0f}</strong> {esc(row["unit"])} · {esc(row["scope"].replace("_", " "))}</p><p class="muted">Period: {esc(row["period_start"])} to {esc(row["period_end"])} · {esc(row["definition"])} {cites(row["source_ids"])}</p></article>')
+    out.append('<style>.market-trend-row{display:grid;grid-template-columns:100px minmax(0,1fr) 70px;gap:10px;align-items:center;margin-top:12px}.market-trend-track{background:#e5e5e5;height:18px;border-radius:4px;overflow:hidden}.market-trend-fill{height:100%;background:#a90000}.market-trend-row strong{text-align:right}</style>')
+    out.append('<h3>Market trends</h3>')
+    out.append(render_market_trends(market['observations'], states, lambda sid: cites([sid])))
     out.append('</section>')
 
     out.append('<section id="lessons"><h2>Market lessons: Michigan, with an Ohio assessment</h2><p>What happened elsewhere, why it happened, and whether Ohio has the same conditions.</p>')
