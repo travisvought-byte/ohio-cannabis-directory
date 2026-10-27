@@ -6,7 +6,7 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
   page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>requests.push(r.url()));
   await page.route('**/gc.zgo.at/**',r=>r.abort());await page.goto(server.base+'compare.html');
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'no horizontal scroll on a phone');
-  assert.equal(await page.locator('#topic-license-limits .state').count(),3);
+  assert.equal(await page.locator('#topic-license-limits .state').count(),4,'all four configured state columns render');
   assert(await page.locator('#topic-growing-space .state.missing').count()>=1,'unreviewed states are labeled');
   assert.match(await page.locator('.assessment .tag').first().textContent(),/analysis, not fact/);
   for(const href of await page.locator('.cites a').evaluateAll(as=>as.map(a=>a.getAttribute('href'))))assert.equal(await page.locator(href).count(),1,href+' resolves to a listed source');
