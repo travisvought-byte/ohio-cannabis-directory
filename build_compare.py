@@ -32,7 +32,7 @@ a{color:#a90000;overflow-wrap:anywhere}h1{font-size:clamp(2rem,5vw,3.1rem);line-
 .lead{font-size:1.15rem}.review,.muted,.cites{font-size:.86rem;color:#555}.cites a{text-decoration:none;font-weight:600}
 section{margin:36px 0;scroll-margin-top:20px}.card{background:#fff;border:1px solid #ccc;border-radius:10px;padding:22px;min-width:0}
 .states{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:12px}.state{background:#fff;border:1px solid #ccc;border-radius:10px;padding:16px;min-width:0}
-.state.home{border:2px solid #a90000}.state[hidden]{display:none!important}.state h4{margin:0 0 .3rem;font-size:1rem}.state p{margin:.3rem 0}.state.missing{background:#fafafa;color:#666}
+.state.home{border:2px solid #a90000}.state[hidden],.topic[hidden],.coverage-item[hidden]{display:none!important}.coverage-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:14px}.coverage-item{display:grid;gap:3px}.coverage-item span{font-size:.85rem;color:#555}.coverage-track{height:9px;background:#e4e4e4;border-radius:99px;overflow:hidden}.coverage-fill{height:100%;background:#a90000}#compare-topic-filter{width:100%;padding:10px;border:1px solid #888;border-radius:6px;font:inherit}.state h4{margin:0 0 .3rem;font-size:1rem}.state p{margin:.3rem 0}.state.missing{background:#fafafa;color:#666}
 .topic{margin:22px 0}.topic>p{margin:.2rem 0}
 .lesson h3{font-size:1.25rem}.lesson h4{font-size:1rem;margin:20px 0 6px}ul.facts{padding-left:1.2rem;margin:.2rem 0}ul.facts li{margin:.35rem 0}
 .check{border-left:4px solid #888;padding:6px 0 6px 14px;margin:10px 0}.check.ok{border-color:#2e7d4f}.check.part{border-color:#b8860b}.check.risk{border-color:#a90000}
@@ -123,9 +123,17 @@ def main():
     out.append(render_policy_portal(data))
     out.append('<section id="laws"><h2>Laws side by side</h2><p>Choose which reviewed states appear in the comparison. Unreviewed topics are marked explicitly.</p><fieldset class="compare-state-controls"><legend>States to display</legend>' + ''.join(f'<label class="ask" style="display:inline-flex;margin-right:18px"><input type="checkbox" class="compare-state-toggle" value="{esc(code)}" checked> {esc(name)}</label>' for code,name in states.items()) + '</fieldset>')
     shown = [home] + [s for s in states if s != home]
+    total_topics = len(data['topics'])
+    out.append('<div class="card" aria-label="Reviewed coverage by state"><h3>Research coverage</h3><p class="muted">Number of policy topics with source-linked reviews. This measures coverage, not how favorable a state's laws are.</p><div class="coverage-grid">')
+    for code in shown:
+        reviewed = sum(any(e['state'] == code for e in topic['entries']) for topic in data['topics'])
+        pct = round(100 * reviewed / total_topics) if total_topics else 0
+        out.append(f'<div class="coverage-item" data-state="{esc(code)}"><strong>{esc(states[code])}</strong><span>{reviewed} of {total_topics} topics</span><div class="coverage-track" role="progressbar" aria-label="{esc(states[code])} reviewed topics" aria-valuenow="{reviewed}" aria-valuemin="0" aria-valuemax="{total_topics}"><div class="coverage-fill" style="width:{pct}%"></div></div></div>')
+    out.append('</div></div>')
+    out.append('<label for="compare-topic-filter">Find a policy topic</label><input type="search" id="compare-topic-filter" placeholder="e.g. licensing, cultivation" aria-controls="laws">')
     for topic in data['topics']:
         entries = {e['state']: e for e in topic['entries']}
-        out.append(f'<div class="topic" id="topic-{esc(topic["id"])}"><h3>{esc(topic["label"])}</h3><p class="muted">{esc(topic["question"])}</p><div class="states">')
+        out.append(f'<div class="topic" data-topic-search="{esc(topic["label"] + " " + topic["question"])}" id="topic-{esc(topic["id"])}"><h3>{esc(topic["label"])}</h3><p class="muted">{esc(topic["question"])}</p><div class="states">')
         for code in shown:
             e = entries.get(code)
             cls = 'state home' if code == home else 'state'
@@ -136,7 +144,7 @@ def main():
             out.append(f'<div data-state="{esc(code)}" class="{cls}"><h4>{esc(states[code])}</h4><p>{esc(e["summary"])}</p>'
                        f'<p class="muted">{esc(e["citation"])}{effective} · checked {long_date(e["reviewed_on"])} {cites(e["source_ids"])}</p></div>')
         out.append('</div></div>')
-    out.append('''<script>(function(){const controls=document.querySelectorAll('.compare-state-toggle');function update(){const chosen=new Set(Array.from(controls).filter(c=>c.checked).map(c=>c.value));document.querySelectorAll('#laws .state[data-state]').forEach(card=>{card.hidden=!chosen.has(card.dataset.state)});document.querySelectorAll('#laws .states').forEach(grid=>{grid.style.gridTemplateColumns='repeat(auto-fit,minmax(min(100%,260px),1fr))'});}controls.forEach(c=>c.addEventListener('change',update));update();})();</script></section>''')
+    out.append('''<script>(function(){const controls=document.querySelectorAll('.compare-state-toggle');function update(){const chosen=new Set(Array.from(controls).filter(c=>c.checked).map(c=>c.value));document.querySelectorAll('#laws .state[data-state]').forEach(card=>{card.hidden=!chosen.has(card.dataset.state)});document.querySelectorAll('#laws .coverage-item[data-state]').forEach(item=>{item.hidden=!chosen.has(item.dataset.state)});document.querySelectorAll('#laws .states').forEach(grid=>{grid.style.gridTemplateColumns='repeat(auto-fit,minmax(min(100%,260px),1fr))'});}controls.forEach(c=>c.addEventListener('change',update));const filter=document.getElementById('compare-topic-filter');filter.addEventListener('input',()=>{const q=filter.value.trim().toLowerCase();document.querySelectorAll('#laws .topic').forEach(item=>{item.hidden=!item.dataset.topicSearch.toLowerCase().includes(q)})});update();})();</script></section>''')
 
     out.append('<section id="lessons"><h2>Market lessons: Michigan, with an Ohio assessment</h2><p>What happened elsewhere, why it happened, and whether Ohio has the same conditions.</p>')
     letters = {}
