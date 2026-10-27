@@ -12,6 +12,7 @@ from directory_brand import brand_page
 from validate_comparison import validate
 from policy_portal import render as render_policy_portal
 from state_profiles import render_coverage
+from render_market_trends import render_market_trends
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'compare.html'
@@ -151,6 +152,9 @@ def main():
         name = states[row['state']]
         metric = row['metric'].replace('_', ' ').capitalize()
         out.append(f'<article class="card" data-state="{esc(row["state"])}"><h3>{esc(name)} · {esc(metric)}</h3><p><strong>{row["value"]:,.0f}</strong> {esc(row["unit"])} · {esc(row["scope"].replace("_", " "))}</p><p class="muted">Period: {esc(row["period_start"])} to {esc(row["period_end"])} · {esc(row["definition"])} {cites(row["source_ids"])}</p></article>')
+    out.append('<style>.market-trend-row{display:grid;grid-template-columns:100px minmax(0,1fr) 70px;gap:10px;align-items:center;margin-top:12px}.market-trend-track{background:#e5e5e5;height:18px;border-radius:4px;overflow:hidden}.market-trend-fill{height:100%;background:#a90000}.market-trend-row strong{text-align:right}</style>')
+    out.append('<h3>Market trends</h3>')
+    out.append(render_market_trends(market['observations'], states, lambda sid: cites([sid])))
     out.append('</section>')
 
     out.append('<section id="lessons"><h2>Market lessons: Michigan, with an Ohio assessment</h2><p>What happened elsewhere, why it happened, and whether Ohio has the same conditions.</p>')
