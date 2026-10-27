@@ -11,6 +11,7 @@ from pathlib import Path
 from directory_brand import brand_page
 from validate_comparison import validate
 from policy_portal import render as render_policy_portal
+from state_profiles import render_coverage
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'compare.html'
@@ -123,13 +124,7 @@ def main():
     out.append(render_policy_portal(data))
     out.append('<section id="laws"><h2>Laws side by side</h2><p>Choose which reviewed states appear in the comparison. Unreviewed topics are marked explicitly.</p><fieldset class="compare-state-controls"><legend>States to display</legend>' + ''.join(f'<label class="ask" style="display:inline-flex;margin-right:18px"><input type="checkbox" class="compare-state-toggle" value="{esc(code)}" checked> {esc(name)}</label>' for code,name in states.items()) + '</fieldset>')
     shown = [home] + [s for s in states if s != home]
-    total_topics = len(data['topics'])
-    out.append('<div class="card" aria-label="Reviewed coverage by state"><h3>Research coverage</h3><p class="muted">Number of policy topics with source-linked reviews. This measures coverage, not how favorable a state's laws are.</p><div class="coverage-grid">')
-    for code in shown:
-        reviewed = sum(any(e['state'] == code for e in topic['entries']) for topic in data['topics'])
-        pct = round(100 * reviewed / total_topics) if total_topics else 0
-        out.append(f'<div class="coverage-item" data-state="{esc(code)}"><strong>{esc(states[code])}</strong><span>{reviewed} of {total_topics} topics</span><div class="coverage-track" role="progressbar" aria-label="{esc(states[code])} reviewed topics" aria-valuenow="{reviewed}" aria-valuemin="0" aria-valuemax="{total_topics}"><div class="coverage-fill" style="width:{pct}%"></div></div></div>')
-    out.append('</div></div>')
+    out.append(render_coverage(data))
     out.append('<label for="compare-topic-filter">Find a policy topic</label><input type="search" id="compare-topic-filter" placeholder="e.g. licensing, cultivation" aria-controls="laws">')
     for topic in data['topics']:
         entries = {e['state']: e for e in topic['entries']}
