@@ -136,7 +136,7 @@ def main():
             out.append(f'<div data-state="{esc(code)}" class="{cls}"><h4>{esc(states[code])}</h4><p>{esc(e["summary"])}</p>'
                        f'<p class="muted">{esc(e["citation"])}{effective} · checked {long_date(e["reviewed_on"])} {cites(e["source_ids"])}</p></div>')
         out.append('</div></div>')
-    out.append('''<script>(function(){const controls=document.querySelectorAll('.compare-state-toggle');function update(){const chosen=new Set(Array.from(controls).filter(c=>c.checked).map(c=>c.value));document.querySelectorAll('#laws .state[data-state]').forEach(card=>{card.hidden=!chosen.has(card.dataset.state)});document.querySelectorAll('#laws .states').forEach(grid=>{grid.style.gridTemplateColumns='repeat('+Math.max(1,Math.min(3,chosen.size))+',minmax(0,1fr))'});}controls.forEach(c=>c.addEventListener('change',update));update();})();</script></section>''')
+    out.append('''<script>(function(){const controls=document.querySelectorAll('.compare-state-toggle');function update(){const chosen=new Set(Array.from(controls).filter(c=>c.checked).map(c=>c.value));document.querySelectorAll('#laws .state[data-state]').forEach(card=>{card.hidden=!chosen.has(card.dataset.state)});document.querySelectorAll('#laws .states').forEach(grid=>{grid.style.gridTemplateColumns='repeat(auto-fit,minmax(min(100%,260px),1fr))'});}controls.forEach(c=>c.addEventListener('change',update));update();})();</script></section>''')
 
     out.append('<section id="lessons"><h2>Market lessons: Michigan, with an Ohio assessment</h2><p>What happened elsewhere, why it happened, and whether Ohio has the same conditions.</p>')
     letters = {}
