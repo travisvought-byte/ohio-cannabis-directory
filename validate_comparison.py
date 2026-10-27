@@ -124,6 +124,11 @@ def main():
     except AssertionError as error:
         print(f'FAIL: {error}')
         sys.exit(1)
+    from market_observations import validate_market
+    market_path = ROOT / 'data/state-market-observations.json'
+    market = json.loads(market_path.read_text(encoding='utf-8'))
+    n = validate_market(data, market['observations'])
+    print(f'PASS: market observations - {n} verified records')
     print(f"PASS: state comparison - {counts['topics']} law topics, {counts['lessons']} market lessons, {counts['sources']} sources, every claim cited")
 
 
