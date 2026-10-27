@@ -1,5 +1,20 @@
 {
   "schema_version": "1.0.0",
   "description": "Regulator-verified market observations. Empty until source-linked figures are researched; missing is not zero.",
-  "observations": []
+  "observations": [
+    {
+      "state": "PA",
+      "metric": "licensed_retailers",
+      "unit": "count",
+      "scope": "medical",
+      "period": "day",
+      "period_start": "2026-03-01",
+      "period_end": "2026-03-01",
+      "value": 192,
+      "source_ids": [
+        "pa-doh-mmab-mar-2026"
+      ],
+      "definition": "Operational medical marijuana dispensary locations reported as of March 1, 2026; not the number of distinct permit holders."
+    }
+  ]
 }
