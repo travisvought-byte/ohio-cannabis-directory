@@ -1,0 +1,5 @@
+{
+  "schema_version": "1.0.0",
+  "description": "Regulator-verified market observations. Empty until source-linked figures are researched; missing is not zero.",
+  "observations": []
+}
