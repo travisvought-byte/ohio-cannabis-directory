@@ -7,6 +7,7 @@ from datetime import date
 
 METRICS = {
     "retail_sales_usd": "USD",
+    "operational_retail_locations": "count",
     "licensed_retailers": "count",
     "average_flower_price_usd_per_gram": "USD/g",
     "cannabis_tax_receipts_usd": "USD",
