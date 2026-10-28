@@ -18,7 +18,8 @@ assert len({o['id'] for o in data['organizations']})==len(data['organizations'])
 assert sum(o.get('legacy_record',{}).get('Record ID')==o['id'] for o in data['organizations'] if 'legacy_record' in o)==565
 assert sum(o['name']=='Indoor Gardens' for o in data['organizations'])==1
 assert sum(a['old_id'].startswith('org-seed') for a in data['aliases'])==1
-assert all(not s['coverage'] for s in data['services'] if s['origin']=='organization-profile' and s['id']!='svc-profile-36e94688f898')
+# Legacy Ohio profiles keep conservative coverage; Pennsylvania services carry their own claim-level coverage.
+assert all(not s['coverage'] for s in data['services'] if s['origin']=='organization-profile' and 'OH' in s.get('listed_in',[]) and s['id']!='svc-profile-36e94688f898')
 # New Ohio coverage is backed by reviewed first-party claim-level evidence.
 dizpot=next(s for s in data['services'] if s['id']=='svc-profile-36e94688f898')
 assert dizpot['coverage']==[{'kind':'state','state':'OH','evidence_ids':['ev-dizpot-ohio-20261022']}]
@@ -34,19 +35,35 @@ state_fixture.update(publication_status='pilot',official_regulator_url='https://
 assert '<option value="WA">Washington (pilot)</option>' in build_page(fixture)
 assert all('WA' not in s.get('listed_in',[]) for s in fixture['services'])
 assert (ROOT/'data/public-state.json').read_bytes()==public_state_before, 'Fixture render must not overwrite public state data'
-# The real Pennsylvania pilot exposes only the five reviewed referral services.
+# The real Pennsylvania pilot reports every pathway with reviewed routes and states its gaps.
 pa_pack=next(s for s in data['states'] if s['code']=='PA')
 assert pa_pack['publication_status']=='pilot'
-assert {p['pathway_id'] for p in pa_pack['pathways'] if p.get('public_url')}=={'dispensaries','medical','records'}
-assert all('public_url' not in p for p in pa_pack['pathways'] if p['coverage_status']=='not-reviewed')
+assert {p['pathway_id']:p['coverage_status'] for p in pa_pack['pathways']}=={'dispensaries':'broad','seeds':'starter','records':'partial','rules':'starter','medical':'partial','business':'starter','community':'starter'}
+assert {p['pathway_id'] for p in pa_pack['pathways'] if p.get('public_url')}=={'dispensaries','seeds','records','rules','medical','business'}
 pa_services=[s for s in data['services'] if 'PA' in s.get('listed_in',[])]
-assert len(pa_services)==5
+assert len(pa_services)==43
 orgs={o['id']:o for o in data['organizations']}
 assert all(orgs[s['organization_id']]['scope']=='public' for s in pa_services)
 assert all(s['listed_in']==['PA'] for s in pa_services)
-assert all(s['coverage'] and s['evidence_ids'] for s in pa_services)
+assert all(s['evidence_ids'] for s in pa_services)
+evidence={e['id']:e for e in data['evidence']}
+assert all(evidence[k]['claim']=='service-coverage' and evidence[k]['subject_id']==s['id'] for s in pa_services for g in s['coverage'] for k in g['evidence_ids'])
+assert all(all(evidence[k]['status']=='source-reviewed' and evidence[k]['reviewed_on'] in ('2026-10-24','2026-10-28') for k in s['evidence_ids']) for s in pa_services)
+# Pennsylvania services never write Pennsylvania text onto Ohio directory records.
+pa_details={json.dumps(s['attributes']['provider_details'],sort_keys=True) for s in pa_services if s['attributes'].get('provider_details')}
+ohio_cards=json.loads((ROOT/'data/public-organizations.json').read_text())
+assert pa_details and not any(json.dumps(r.get('provider'),sort_keys=True) in pa_details for r in ohio_cards)
+assert not any(s['id']=='svc-pa-lab-act' for s in pa_services if s['organization_id']!='org-439251489828')
+pa_rules=[r for r in data['rules'] if r['state']=='PA']
+assert {r['topic'] for r in pa_rules}=={'medical-use','adult-use-possession','home-grow','employment','driving','record-sealing'}
+assert all(any(evidence[k]['source_kind']=='government' for k in r['evidence_ids']) for r in pa_rules)
 intake=next(s for s in pa_services if s['id']=='svc-pa-npls-record-help')
 assert {(c['state'],c['county']) for c in intake['coverage']}=={('PA','Monroe'),('PA','Pike')}
+lasp=next(s for s in pa_services if s['id']=='svc-pa-lasp-record-clearing')
+assert {c['county'] for c in lasp['coverage']}=={'Bucks','Chester','Delaware','Montgomery'}
+# Repeating the import changes nothing.
+from import_pa_ecosystem import build as import_pa,MANIFEST
+again=import_pa(copy.deepcopy(data),json.loads(MANIFEST.read_text()));assert again==data
 public_state=json.loads(public_state_before)
 assert 'PA' in {s['code'] for s in public_state['states']}
 assert {s['id'] for s in pa_services}=={s['id'] for s in public_state['cards'] if 'PA' in s['listed_in']}

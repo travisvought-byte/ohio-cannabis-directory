@@ -1,0 +1,1825 @@
+{
+  "reviewed_on": "2026-10-28",
+  "recheck_on": "2026-11-27",
+  "method": "Each claim below cites a page that was opened and read. Sources with ids starting 'pa-' and no 'reviewed_on' here come from the October 24, 2026 research batch (data/research/pennsylvania-2026-10-24-sources.json) and keep that review date; they were not reread. Sources listed in this file were read on October 28, 2026. A source supports only the stated claim. No service is described as available, free or guaranteed unless its own page says so, and coverage is recorded only where the page names a state or county.",
+  "sources": {
+    "doh-labs": {
+      "url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/laboratories",
+      "source_kind": "government",
+      "limitations": "Approval list with named contacts. It does not state test scope, fees or turnaround, and shows no page date."
+    },
+    "doh-patients": {
+      "url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/medical-marijuana-patients",
+      "source_kind": "government",
+      "limitations": "Program instructions. Individual eligibility, practitioner availability and approval are decided by the Department of Health and practitioners, not this directory."
+    },
+    "mma": {
+      "url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2016/0/0016..HTM",
+      "source_kind": "government",
+      "limitations": "General Assembly compilation of the Medical Marijuana Act, showing amendments through Act 63 of 2023 and a compiler's note on Act 45 of 2025. Regulations, Department of Health notices and court orders also apply and are not summarized here. Not legal advice."
+    },
+    "csa": {
+      "url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/1972/0/0064..HTM",
+      "source_kind": "government",
+      "limitations": "General Assembly compilation of the Controlled Substance, Drug, Device and Cosmetic Act. Local ordinances, charging practices and diversion programs are not covered. Not legal advice."
+    },
+    "clean-slate": {
+      "url": "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/18/00.091.022.002..HTM",
+      "source_kind": "government",
+      "limitations": "Statute text of 18 Pa.C.S. § 9122.2. Whether a particular record qualifies depends on the full record, restitution and exclusions in the statute. Not legal advice."
+    },
+    "bop-home": {
+      "url": "https://www.pa.gov/agencies/bop",
+      "source_kind": "government",
+      "limitations": "The Board's homepage links the clemency application and expedited review. It does not state fees or processing times."
+    },
+    "bop-expedited": {
+      "url": "https://www.pa.gov/agencies/bop/about-the-clemency-process/expedited-clemency-review",
+      "source_kind": "government",
+      "limitations": "Meeting the criteria does not guarantee expedited review; the page says the Board keeps discretion. Disqualifying offenses are listed on the page."
+    },
+    "cls": {
+      "url": "https://clsphila.org/my-clean-slate/faq/",
+      "source_kind": "provider",
+      "limitations": "General information. The page gives no service boundary or eligibility criteria for representation; both listed offices are in Philadelphia."
+    },
+    "plse": {
+      "url": "https://plsephilly.org/expungements/",
+      "source_kind": "provider",
+      "limitations": "Representation limited to Philadelphia County convictions (expungement) or residents (pardons) and to household income under 200% of federal poverty guidelines. The page says phones are temporarily out of service."
+    },
+    "lasp": {
+      "url": "https://www.lasp.org/record-clearing",
+      "source_kind": "provider",
+      "limitations": "Low-income residents of four counties only. The page says LASP is not currently assisting with pardon applications."
+    },
+    "bvn": {
+      "url": "https://balancedveterans.org/operation-1620/",
+      "source_kind": "provider",
+      "limitations": "Reimbursement is limited by available funding, one per veteran per year, with documentation rules on the page. Certification is not described as free."
+    },
+    "firstcom": {
+      "url": "https://firstcomcu.org/cannabisbanking.html",
+      "source_kind": "provider",
+      "limitations": "Subject to the credit union's eligibility review and approval. No account or credit is promised."
+    },
+    "parke": {
+      "url": "https://www.parkebank.com/business-banking/cannabis-banking/",
+      "source_kind": "provider",
+      "limitations": "Account access and terms require bank approval."
+    },
+    "cannabislaw": {
+      "url": "https://cannabislawpa.com/",
+      "source_kind": "provider",
+      "limitations": "Provider statement. Fees, conflicts and engagement acceptance are not confirmed. The page says it does not handle criminal matters."
+    },
+    "cannaspire": {
+      "url": "https://cannaspire.com/pennsylvania-cannabis-consultants/",
+      "source_kind": "provider",
+      "limitations": "Provider statement; scope, fees and client relationships are not independently verified."
+    },
+    "vytal": {
+      "url": "https://vytaloptions.com/locations/",
+      "source_kind": "provider",
+      "limitations": "First-party store list. Hours, stock and patient requirements change; permit holder and ownership are not reconciled."
+    },
+    "organic": {
+      "url": "https://organicremediespa.com/locations/",
+      "source_kind": "provider",
+      "limitations": "First-party store list. It does not say whether the company also grows or processes."
+    },
+    "standard": {
+      "url": "https://standard-farms.com/pennsylvania/",
+      "source_kind": "provider",
+      "limitations": "Self-description only. The page names no town, permit, products or contact details."
+    },
+    "responsible": {
+      "url": "https://responsiblepa.org/coalition-forms-to-support-legalization-of-adult-use-cannabis-in-pennsylvania/",
+      "source_kind": "provider",
+      "limitations": "March 20, 2024 formation announcement. It lists no formal membership and no contact address; it is not evidence of current activity or of enacted law."
+    },
+    "pda-hemp": {
+      "url": "https://www.pa.gov/agencies/pda/plants-land-water/hemp",
+      "source_kind": "government",
+      "limitations": "Hemp permits only. A hemp permit does not authorize growing marijuana; THC limits and seed rules are in linked documents not summarized here."
+    },
+    "norml-pa": {
+      "url": "https://norml.org/about/pennsylvania-chapters/",
+      "source_kind": "provider",
+      "limitations": "NORML's own chapter list. Chapter activity, meeting schedules and email addresses are not shown on the page."
+    },
+    "mpp": {
+      "url": "https://blog.mpp.org/blog/pennsylvania-elections-are-coming-and-cannabis-is-on-the-ballot/",
+      "source_kind": "secondary",
+      "limitations": "Advocacy organization's October 13, 2026 post. Used only for the current absence of an adult-use law; its election commentary is not used."
+    },
+    "vehicle-code": {
+      "url": "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/75/00.038.002.000..HTM",
+      "source_kind": "government",
+      "limitations": "Statute text of 75 Pa.C.S. § 3802. Court decisions, testing practice and penalties under other sections are not summarized. Not legal advice."
+    },
+    "cls-clean-slate-faq": {
+      "url": "https://clsphila.org/wp-content/uploads/2024/10/Clean-Slate-3.0-FAQ-Updated-10.15.24.pdf",
+      "source_kind": "provider",
+      "limitations": "Legal aid provider's FAQ updated October 15, 2024; used only to confirm effective dates and waiting periods."
+    },
+    "allegheny-pd": {
+      "url": "https://www.alleghenycounty.us/Government/Court-Related/Public-Defender/Project-Reset",
+      "source_kind": "government",
+      "limitations": "The county page does not state fees, income limits or processing times, or give a program phone number."
+    },
+    "extrity": {
+      "url": "https://extrityservices.com/dispensary-security-philadelphia",
+      "source_kind": "provider",
+      "limitations": "Provider statement. No Pennsylvania license number or street address is published; services and pricing are not independently verified."
+    },
+    "insureon": {
+      "url": "https://www.insureon.com/cannabis-business-insurance/pennsylvania",
+      "source_kind": "provider",
+      "limitations": "Online agency quoting partner carriers. The page shows a California license number and no Pennsylvania license; coverage availability depends on carriers."
+    }
+  },
+  "organizations": [
+    {
+      "id": "org-keystone-state-testing",
+      "name": "Keystone State Testing LLC",
+      "kind": "service-provider",
+      "website": "http://www.keystonestatetesting.com/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "717-585-0393"
+        }
+      ]
+    },
+    {
+      "id": "org-steep-hill-pennsylvania",
+      "name": "Steep Hill Pennsylvania",
+      "kind": "service-provider",
+      "website": "https://greenanalyticslabs.com/locations/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "814-419-6347"
+        }
+      ]
+    },
+    {
+      "id": "org-us-cannalytics",
+      "name": "US Cannalytics, LLC",
+      "kind": "service-provider",
+      "website": "https://uscannalytics.com/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "717-701-1373"
+        }
+      ]
+    },
+    {
+      "id": "org-coral-reef-labs",
+      "name": "Coral Reef Labs",
+      "kind": "service-provider",
+      "website": "http://coralreeflabs.com/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "800-287-3729"
+        }
+      ]
+    },
+    {
+      "id": "org-vytal-options",
+      "name": "Vytal Options",
+      "kind": "operator",
+      "website": "https://vytaloptions.com/",
+      "contacts": [
+        {
+          "kind": "contact-page",
+          "value": "https://vytaloptions.com/locations/"
+        }
+      ]
+    },
+    {
+      "id": "org-organic-remedies",
+      "name": "Organic Remedies",
+      "kind": "operator",
+      "website": "https://organicremediespa.com/",
+      "contacts": [
+        {
+          "kind": "contact-page",
+          "value": "https://organicremediespa.com/locations/"
+        }
+      ]
+    },
+    {
+      "id": "org-maitri-medicinals",
+      "name": "Maitri Medicinals",
+      "kind": "operator",
+      "website": "https://www.maitrimedicinals.com/",
+      "contacts": [
+        {
+          "kind": "contact-page",
+          "value": "https://www.maitrimedicinals.com/story-mission-values"
+        }
+      ]
+    },
+    {
+      "id": "org-standard-farms",
+      "name": "Standard Farms",
+      "kind": "operator",
+      "website": "https://standard-farms.com/pennsylvania/",
+      "contacts": []
+    },
+    {
+      "id": "org-first-commonwealth-fcu",
+      "name": "First Commonwealth Federal Credit Union",
+      "kind": "service-provider",
+      "website": "https://firstcomcu.org/cannabisbanking.html",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "888-821-2400"
+        }
+      ]
+    },
+    {
+      "id": "org-parke-bank",
+      "name": "Parke Bank",
+      "kind": "service-provider",
+      "website": "https://www.parkebank.com/business-banking/cannabis-banking/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "856-582-6900"
+        }
+      ]
+    },
+    {
+      "id": "org-duane-morris",
+      "name": "Duane Morris LLP",
+      "kind": "service-provider",
+      "website": "https://www.duanemorris.com/",
+      "contacts": []
+    },
+    {
+      "id": "org-hawke-mckeon-sniscak",
+      "name": "Cannabis Law Solutions (Hawke McKeon & Sniscak LLP)",
+      "kind": "service-provider",
+      "website": "https://cannabislawpa.com/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "717-703-0804"
+        },
+        {
+          "kind": "contact-page",
+          "value": "https://cannabislawpa.com/contact-us/"
+        }
+      ]
+    },
+    {
+      "id": "org-pennsylvania-cannabis-coalition",
+      "name": "Pennsylvania Cannabis Coalition",
+      "kind": "community",
+      "website": "https://www.pcanna.org/",
+      "contacts": []
+    },
+    {
+      "id": "org-responsiblepa",
+      "name": "ResponsiblePA",
+      "kind": "community",
+      "website": "https://responsiblepa.org/",
+      "contacts": []
+    },
+    {
+      "id": "org-balanced-veterans-network",
+      "name": "Balanced Veterans Network",
+      "kind": "community",
+      "website": "https://balancedveterans.org/operation-1620/",
+      "contacts": [
+        {
+          "kind": "contact-page",
+          "value": "https://balancedveterans.org/mmj-card/"
+        }
+      ]
+    },
+    {
+      "id": "org-bucks-county-norml",
+      "name": "Bucks County NORML",
+      "kind": "community",
+      "website": "https://www.buckscountynorml.com",
+      "contacts": []
+    },
+    {
+      "id": "org-lehigh-valley-norml",
+      "name": "Lehigh Valley NORML",
+      "kind": "community",
+      "website": "https://www.facebook.com/lehighvalleynorml/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "610-533-0906"
+        }
+      ]
+    },
+    {
+      "id": "org-montco-norml",
+      "name": "Montco NORML",
+      "kind": "community",
+      "website": "https://www.facebook.com/montconorml",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "484-808-7727"
+        }
+      ]
+    },
+    {
+      "id": "org-community-legal-services-philadelphia",
+      "name": "Community Legal Services of Philadelphia",
+      "kind": "service-provider",
+      "website": "https://clsphila.org/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "215-981-3700"
+        },
+        {
+          "kind": "phone",
+          "value": "215-227-2400"
+        }
+      ]
+    },
+    {
+      "id": "org-philadelphia-lawyers-social-equity",
+      "name": "Philadelphia Lawyers for Social Equity",
+      "kind": "service-provider",
+      "website": "https://plsephilly.org/",
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "info@plsephilly.org"
+        },
+        {
+          "kind": "contact-page",
+          "value": "https://plsephilly.org/intake/"
+        }
+      ]
+    },
+    {
+      "id": "org-legal-aid-southeastern-pa",
+      "name": "Legal Aid of Southeastern Pennsylvania",
+      "kind": "service-provider",
+      "website": "https://www.lasp.org/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "877-429-5994"
+        },
+        {
+          "kind": "contact-page",
+          "value": "https://www.lasp.org/apply"
+        }
+      ]
+    },
+    {
+      "id": "org-pa-board-of-pardons",
+      "name": "Pennsylvania Board of Pardons",
+      "kind": "government",
+      "website": "https://www.pa.gov/agencies/bop",
+      "contacts": [
+        {
+          "kind": "contact-page",
+          "value": "https://www.pa.gov/agencies/bop"
+        }
+      ]
+    },
+    {
+      "id": "org-pa-department-agriculture",
+      "name": "Pennsylvania Department of Agriculture",
+      "kind": "government",
+      "website": "https://www.pa.gov/agencies/pda/plants-land-water/hemp",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "223-666-2561"
+        },
+        {
+          "kind": "email",
+          "value": "RA-AGPLHEMP@pa.gov"
+        }
+      ]
+    },
+    {
+      "id": "org-allegheny-county-public-defender",
+      "name": "Allegheny County Office of the Public Defender",
+      "kind": "government",
+      "website": "https://www.alleghenycounty.us/Government/Court-Related/Public-Defender/Project-Reset",
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "OPDExpungements@alleghenycounty.us"
+        }
+      ]
+    },
+    {
+      "id": "org-extrity-services",
+      "name": "Extrity Security Services",
+      "kind": "service-provider",
+      "website": "https://extrityservices.com/dispensary-security-philadelphia",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "1-800-518-9229"
+        },
+        {
+          "kind": "email",
+          "value": "info@extrityservices.com"
+        }
+      ]
+    },
+    {
+      "id": "org-insureon",
+      "name": "Insureon",
+      "kind": "service-provider",
+      "website": "https://www.insureon.com/cannabis-business-insurance/pennsylvania",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "800-688-1984"
+        },
+        {
+          "kind": "contact-page",
+          "value": "https://www.insureon.com/contact-us"
+        }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "id": "svc-pa-lab-act",
+      "organization_id": "org-439251489828",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "ACT Laboratories of Pennsylvania — approved testing laboratory",
+      "description": "Listed by the Department of Health as approved and accredited for testing at two Pennsylvania locations: 4949 Queen Avenue, Harrisburg, PA 17109 and 109 Brinton Avenue, Trafford, PA 15085.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For permitted grower/processors and other program participants. Confirm test scope, fees and turnaround with the lab.",
+      "next_step": {
+        "label": "Contact the laboratory",
+        "url": "https://actlab.com/"
+      },
+      "provider_details": {
+        "serves": "Pennsylvania medical marijuana program testing",
+        "coverage_note": "Harrisburg and Trafford, PA (Department of Health approved list)",
+        "contact_note": "Contact listed by the Department of Health: Dakota Detwiler, 1-844-822-8522.",
+        "source": "doh-labs"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "source": "doh-labs",
+          "value": "Approved and accredited for testing in the Pennsylvania medical marijuana program."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "doh-labs",
+          "value": "ACT Laboratories of Pennsylvania LLC is listed as approved and accredited for testing at 4949 Queen Avenue, Harrisburg and 109 Brinton Avenue, Trafford.",
+          "limitations": "Listed legal entity is ACT Laboratories of Pennsylvania LLC; it is recorded under the existing ACT LAB identity as the same brand, not as proof of a shared permit or parent structure."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-lab-keystone",
+      "organization_id": "org-keystone-state-testing",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Keystone State Testing — approved testing laboratory",
+      "description": "Listed by the Department of Health as approved and accredited for testing at 284 Dennison Street, Swoyersville, PA 18704.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For permitted grower/processors and other program participants. Confirm test scope, fees and turnaround with the lab.",
+      "next_step": {
+        "label": "Contact the laboratory",
+        "url": "http://www.keystonestatetesting.com/"
+      },
+      "provider_details": {
+        "serves": "Pennsylvania medical marijuana program testing",
+        "coverage_note": "Swoyersville, PA (Department of Health approved list)",
+        "contact_note": "Contact listed by the Department of Health: Dr. Kelly Greenland, 717-585-0393.",
+        "source": "doh-labs"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "source": "doh-labs",
+          "value": "Approved and accredited for testing in the Pennsylvania medical marijuana program."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "doh-labs",
+          "value": "Keystone State Testing LLC is listed as approved and accredited for testing at 284 Dennison Street, Swoyersville."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-lab-steep-hill",
+      "organization_id": "org-steep-hill-pennsylvania",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Steep Hill Pennsylvania — approved testing laboratory",
+      "description": "Listed by the Department of Health as approved and accredited for testing at 6360 Flank Drive, Suite 700, Harrisburg, PA 17112. The Department lists its website as Green Analytics Labs.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For permitted grower/processors and other program participants. Confirm test scope, fees and turnaround with the lab.",
+      "next_step": {
+        "label": "Contact the laboratory",
+        "url": "https://greenanalyticslabs.com/locations/"
+      },
+      "provider_details": {
+        "serves": "Pennsylvania medical marijuana program testing",
+        "coverage_note": "Harrisburg, PA (Department of Health approved list)",
+        "contact_note": "Contact listed by the Department of Health: Dr. Andrew Rosenstein, 814-419-6347.",
+        "source": "doh-labs"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "source": "doh-labs",
+          "value": "Approved and accredited for testing in the Pennsylvania medical marijuana program."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "doh-labs",
+          "value": "Steep Hill Pennsylvania is listed as approved and accredited for testing at 6360 Flank Drive, Suite 700, Harrisburg, with greenanalyticslabs.com as its website.",
+          "limitations": "Not merged with the existing Green Analytics OH identity; no relationship between the two entities was reviewed."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-lab-us-cannalytics",
+      "organization_id": "org-us-cannalytics",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "US Cannalytics — approved testing laboratory",
+      "description": "Listed by the Department of Health as approved and accredited for testing at 3535 High Point Blvd., Suite 400, Bethlehem, PA 18017.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For permitted grower/processors and other program participants. Confirm test scope, fees and turnaround with the lab.",
+      "next_step": {
+        "label": "Contact the laboratory",
+        "url": "https://uscannalytics.com/"
+      },
+      "provider_details": {
+        "serves": "Pennsylvania medical marijuana program testing",
+        "coverage_note": "Bethlehem, PA (Department of Health approved list)",
+        "contact_note": "Contact listed by the Department of Health: Karissa M. Miller, 717-701-1373.",
+        "source": "doh-labs"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "source": "doh-labs",
+          "value": "Approved and accredited for testing in the Pennsylvania medical marijuana program."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "doh-labs",
+          "value": "US Cannalytics, LLC is listed as approved and accredited for testing at 3535 High Point Blvd., Suite 400, Bethlehem."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-lab-coral-reef",
+      "organization_id": "org-coral-reef-labs",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Coral Reef Labs — approved testing laboratory",
+      "description": "Listed by the Department of Health as approved and accredited for testing at 2632 North State Route 72, Jonestown, PA 17038.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For permitted grower/processors and other program participants. Confirm test scope, fees and turnaround with the lab.",
+      "next_step": {
+        "label": "Contact the laboratory",
+        "url": "http://coralreeflabs.com/"
+      },
+      "provider_details": {
+        "serves": "Pennsylvania medical marijuana program testing",
+        "coverage_note": "Jonestown, PA (Department of Health approved list)",
+        "contact_note": "Contact listed by the Department of Health: Andrew Blasco, 800-287-3729.",
+        "source": "doh-labs"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "source": "doh-labs",
+          "value": "Approved and accredited for testing in the Pennsylvania medical marijuana program."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "doh-labs",
+          "value": "Coral Reef Labs is listed as approved and accredited for testing at 2632 North State Route 72, Jonestown."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-operator-sunnyside",
+      "organization_id": "org-667af67557f3",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Sunnyside (Cresco Labs) — Pennsylvania medical dispensaries",
+      "description": "Sunnyside stores appear on the Department of Health dispensary roster. Use the dispensary finder for addresses.",
+      "audiences": [
+        "patients",
+        "business"
+      ],
+      "eligibility": "Retail stores serve registered Pennsylvania medical patients and caregivers. Business inquiries go through the company.",
+      "next_step": {
+        "label": "Find Sunnyside stores in the dispensary finder",
+        "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/locations.html?state=PA&q=Sunnyside"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "pa-retail-roster",
+          "value": "Sunnyside appears on the Pennsylvania retail roster."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-operator-rise",
+      "organization_id": "org-364a9eed8729",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "RISE (Green Thumb Industries) — Pennsylvania medical dispensaries",
+      "description": "RISE publishes a Pennsylvania medical dispensary list, and its stores appear on the Department of Health roster.",
+      "audiences": [
+        "patients",
+        "business"
+      ],
+      "eligibility": "Retail stores serve registered Pennsylvania medical patients and caregivers.",
+      "next_step": {
+        "label": "Open RISE's Pennsylvania locations",
+        "url": "https://risecannabis.com/dispensaries/pennsylvania/"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "pa-rise",
+          "value": "RISE lists Pennsylvania medical dispensaries."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-operator-beyond-hello",
+      "organization_id": "org-c081c812feb2",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Beyond Hello (Jushi) — Pennsylvania medical dispensaries",
+      "description": "Jushi's retail page lists Beyond Hello locations in Pennsylvania, including Mt. Pocono.",
+      "audiences": [
+        "patients",
+        "business"
+      ],
+      "eligibility": "Retail stores serve registered Pennsylvania medical patients and caregivers.",
+      "next_step": {
+        "label": "Open Jushi's retail locations",
+        "url": "https://jushico.com/retail/"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "pa-jushi",
+          "value": "Beyond Hello lists Pennsylvania locations including Mt. Pocono."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-operator-zen-leaf",
+      "organization_id": "org-2412bd73869d",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Zen Leaf (Verano) — Pennsylvania medical dispensaries",
+      "description": "Zen Leaf stores appear on the Department of Health dispensary roster. Use the dispensary finder for addresses.",
+      "audiences": [
+        "patients",
+        "business"
+      ],
+      "eligibility": "Retail stores serve registered Pennsylvania medical patients and caregivers.",
+      "next_step": {
+        "label": "Find Zen Leaf stores in the dispensary finder",
+        "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/locations.html?state=PA&q=Zen%20Leaf"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "pa-retail-roster",
+          "value": "Zen Leaf appears on the Pennsylvania retail roster."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-operator-verilife",
+      "organization_id": "org-aefe1b952bc0",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Verilife (PharmaCann) — Pennsylvania medical dispensaries",
+      "description": "Verilife stores appear on the Department of Health dispensary roster. Use the dispensary finder for addresses.",
+      "audiences": [
+        "patients",
+        "business"
+      ],
+      "eligibility": "Retail stores serve registered Pennsylvania medical patients and caregivers.",
+      "next_step": {
+        "label": "Find Verilife stores in the dispensary finder",
+        "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/locations.html?state=PA&q=Verilife"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "pa-retail-roster",
+          "value": "Verilife appears on the Pennsylvania retail roster."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-operator-ascend",
+      "organization_id": "org-9878f97747e7",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Ascend — Pennsylvania medical dispensaries",
+      "description": "Ascend publishes a Pennsylvania locations page, and its stores appear on the Department of Health roster.",
+      "audiences": [
+        "patients",
+        "business"
+      ],
+      "eligibility": "Retail stores serve registered Pennsylvania medical patients and caregivers.",
+      "next_step": {
+        "label": "Open Ascend's Pennsylvania locations",
+        "url": "https://letsascend.com/locations/pennsylvania/"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "pa-ascend",
+          "value": "Ascend has Pennsylvania medical retail destinations."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-operator-ethos",
+      "organization_id": "org-3a4a21b3faf4",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Ethos Cannabis — Pennsylvania medical dispensaries",
+      "description": "Ethos publishes a Pennsylvania dispensary list, and its stores appear on the Department of Health roster.",
+      "audiences": [
+        "patients",
+        "business"
+      ],
+      "eligibility": "Retail stores serve registered Pennsylvania medical patients and caregivers.",
+      "next_step": {
+        "label": "Open Ethos's Pennsylvania locations",
+        "url": "https://ethoscannabis.com/dispensary-locations/pennsylvania/"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "pa-ethos",
+          "value": "Ethos lists Pennsylvania medical dispensaries."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-operator-vytal",
+      "organization_id": "org-vytal-options",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Vytal Options — Pennsylvania medical dispensaries",
+      "description": "Vytal Options lists six Pennsylvania dispensaries: State College, Harrisburg, Kennett Square, Lancaster, Lansdale and Fogelsville.",
+      "audiences": [
+        "patients",
+        "business"
+      ],
+      "eligibility": "Retail stores serve registered Pennsylvania medical patients and caregivers.",
+      "next_step": {
+        "label": "Open Vytal Options locations",
+        "url": "https://vytaloptions.com/locations/"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "vytal",
+          "value": "Vytal Options describes six dispensary locations across Pennsylvania: State College, Harrisburg, Kennett Square, Lancaster, Lansdale and Fogelsville."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-operator-organic-remedies",
+      "organization_id": "org-organic-remedies",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Organic Remedies — Pennsylvania medical dispensaries",
+      "description": "Organic Remedies lists six Pennsylvania dispensaries: Enola, Chambersburg, York, McKnight (North Pittsburgh), Bethel Park and Paoli.",
+      "audiences": [
+        "patients",
+        "business"
+      ],
+      "eligibility": "Retail stores serve registered Pennsylvania medical patients and caregivers.",
+      "next_step": {
+        "label": "Open Organic Remedies locations",
+        "url": "https://organicremediespa.com/locations/"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "organic",
+          "value": "Organic Remedies lists six Pennsylvania locations: Enola, Chambersburg, York, McKnight Road (Pittsburgh), Bethel Park and Paoli."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-operator-maitri",
+      "organization_id": "org-maitri-medicinals",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Maitri Medicinals — Pennsylvania medical dispensaries",
+      "description": "Maitri describes southwestern Pennsylvania roots and Pennsylvania medical cannabis patient services; its stores appear on the Department of Health roster.",
+      "audiences": [
+        "patients",
+        "business"
+      ],
+      "eligibility": "Retail stores serve registered Pennsylvania medical patients and caregivers.",
+      "next_step": {
+        "label": "Open Maitri Medicinals",
+        "url": "https://www.maitrimedicinals.com/story-mission-values"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "pa-maitri",
+          "value": "Maitri describes Pennsylvania medical cannabis patient services."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-operator-standard-farms",
+      "organization_id": "org-standard-farms",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Standard Farms — Pennsylvania cultivation (self-described)",
+      "description": "Standard Farms describes a Pennsylvania cultivation facility serving the medical market. Its page names no town, permit or contact details.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiries go through the company.",
+      "next_step": {
+        "label": "Open Standard Farms Pennsylvania",
+        "url": "https://standard-farms.com/pennsylvania/"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "standard",
+          "value": "Standard Farms describes a facility 'in the heart of the Keystone State' combining cultivation technology with craftsmanship for the medical market.",
+          "limitations": "Self-description only; grower/processor permit and legal entity not reconciled."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-bank-first-commonwealth",
+      "organization_id": "org-first-commonwealth-fcu",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "First Commonwealth FCU — cannabis business banking",
+      "description": "Offers business checking, savings, cash management, digital banking and lines of credit to cannabis businesses in Pennsylvania and New Jersey, including dispensaries, laboratories, CBD/hemp businesses and wholesalers.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the credit union's eligibility review and approval.",
+      "next_step": {
+        "label": "Open cannabis banking page",
+        "url": "https://firstcomcu.org/cannabisbanking.html"
+      },
+      "provider_details": {
+        "serves": "Cannabis businesses in Pennsylvania and New Jersey",
+        "coverage_note": "Pennsylvania and New Jersey (provider-stated)",
+        "contact_note": "Susan Rodriguez, Market President, 888-821-2400.",
+        "source": "firstcom"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "source": "firstcom",
+          "value": "Business products are offered to cannabis businesses located in Pennsylvania and New Jersey."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "firstcom",
+          "value": "Business checking, savings, cash management, digital and mobile banking and cannabis business lines of credit for Pennsylvania and New Jersey cannabis businesses."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-bank-parke",
+      "organization_id": "org-parke-bank",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Parke Bank — cannabis banking",
+      "description": "Lists Pennsylvania among its primary cannabis banking markets, with checking, savings, ACH and wires, positive pay and commercial lending.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Account access and terms require bank approval.",
+      "next_step": {
+        "label": "Open cannabis banking page",
+        "url": "https://www.parkebank.com/business-banking/cannabis-banking/"
+      },
+      "provider_details": {
+        "serves": "Cannabis-related businesses in its listed markets",
+        "coverage_note": "Pennsylvania, New Jersey, New York, Delaware and other listed states (provider-stated)",
+        "contact_note": "Cannabis inquiries: Kennedy Branch, 856-582-6900.",
+        "source": "parke"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "source": "parke",
+          "value": "Pennsylvania is listed among the bank's primary cannabis service markets."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "parke",
+          "value": "Cannabis banking: business checking and savings, online banking, bill pay, remote deposit, ACH and wires, positive pay and commercial lending."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-legal-duane-morris",
+      "organization_id": "org-duane-morris",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Duane Morris — cannabis regulatory and licensing law",
+      "description": "The firm's July 2025 practice brochure describes Pennsylvania cannabis licensing and regulatory representation.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Engagement, conflicts and fees are set by the firm.",
+      "next_step": {
+        "label": "Read the practice brochure",
+        "url": "https://www.duanemorris.com/site/static/cannabis_regulatory_compliance_at_a_glance.pdf"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "pa-duane",
+          "value": "Firm describes Pennsylvania cannabis regulatory and licensing work."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-legal-cannabis-law-solutions",
+      "organization_id": "org-hawke-mckeon-sniscak",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Cannabis Law Solutions — cannabis regulatory law (Harrisburg)",
+      "description": "A practice area of Hawke McKeon & Sniscak LLP that helps with formation, applications and compliant operation of cannabis companies, plus financing, contracts, zoning and administrative litigation. It does not handle criminal matters.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Engagement, conflicts and fees are set by the firm.",
+      "next_step": {
+        "label": "Contact the practice",
+        "url": "https://cannabislawpa.com/contact-us/"
+      },
+      "provider_details": {
+        "serves": "Cannabis businesses",
+        "coverage_note": "Harrisburg-based; licensed to litigate in Pennsylvania and five other states (provider-stated)",
+        "contact_note": "501 Corporate Circle, Suite 302, Harrisburg, PA 17110 · 717-703-0804.",
+        "source": "cannabislaw"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "source": "cannabislaw",
+          "value": "The firm says it is licensed to litigate in Pennsylvania and is based in Harrisburg."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "cannabislaw",
+          "value": "Assists with formation, application and regulatorily compliant operation of cannabis companies; does not handle criminal matters."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-consulting-cannaspire",
+      "organization_id": "org-ce7e40ed878d",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Cannaspire — Pennsylvania cannabis consulting",
+      "description": "Offers Pennsylvania licensing support, operational readiness, training, fractional compliance officer services and GMP certification support.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Scope and fees are set by the provider.",
+      "next_step": {
+        "label": "Open Pennsylvania consulting page",
+        "url": "https://cannaspire.com/pennsylvania-cannabis-consultants/"
+      },
+      "provider_details": {
+        "serves": "Pennsylvania cannabis entrepreneurs and operators",
+        "coverage_note": "Pennsylvania (dedicated provider page)",
+        "contact_note": "610-933-5181, Monday to Friday 8 am to 5 pm, or the contact form.",
+        "source": "cannaspire"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "source": "cannaspire",
+          "value": "Dedicated Pennsylvania consulting page describing services for Pennsylvania entrepreneurs."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "cannaspire",
+          "value": "Licensing, operations and compliance services designed to support Pennsylvania entrepreneurs, including a fractional compliance officer and GMP certification support."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-trade-pcc",
+      "organization_id": "org-pennsylvania-cannabis-coalition",
+      "pathway_ids": [
+        "business",
+        "community"
+      ],
+      "name": "Pennsylvania Cannabis Coalition — trade association",
+      "description": "A Pennsylvania cannabis trade association offering regulatory affairs, advocacy and member resources.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Membership terms are set by the association.",
+      "next_step": {
+        "label": "Open the coalition's site",
+        "url": "https://www.pcanna.org/"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "pa-pcc",
+          "value": "Pennsylvania trade association offers regulatory and member resources.",
+          "limitations": "Reviewed October 24, 2026. An October 28 recheck was refused by the site's robots rules, so no fresh review date is recorded."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-security-extrity",
+      "organization_id": "org-extrity-services",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Extrity Security Services — dispensary security (Philadelphia)",
+      "description": "Offers dispensary security officers, surveillance and access-control management, guest management, secure handling of courier transfers and a free security evaluation.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Scope and pricing are set by the provider.",
+      "next_step": {
+        "label": "Open dispensary security page",
+        "url": "https://extrityservices.com/dispensary-security-philadelphia"
+      },
+      "provider_details": {
+        "serves": "Cannabis dispensaries",
+        "coverage_note": "Philadelphia, Chicago and Tennessee areas (provider-stated)",
+        "contact_note": "1-800-518-9229 · info@extrityservices.com. No street address or Pennsylvania license number published.",
+        "source": "extrity"
+      },
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Philadelphia",
+          "source": "extrity",
+          "value": "The page says it serves the Philadelphia area."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "extrity",
+          "value": "Dispensary security: surveillance and access control, guest management, secure courier transfers, de-escalation-trained officers and a free security evaluation."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-insurance-insureon",
+      "organization_id": "org-insureon",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Insureon — cannabis business insurance quotes (Pennsylvania page)",
+      "description": "An online insurance agency that quotes partner carriers. Its Pennsylvania cannabis page covers dispensaries and links cultivator, wholesaler and transporter coverage, and lists the commercial property, liability and workers' compensation coverage it says state rules require.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Quotes and coverage depend on partner carriers' underwriting.",
+      "next_step": {
+        "label": "Open Pennsylvania cannabis insurance page",
+        "url": "https://www.insureon.com/cannabis-business-insurance/pennsylvania"
+      },
+      "provider_details": {
+        "serves": "Cannabis dispensaries, cultivators, wholesalers and transporters",
+        "coverage_note": "Pennsylvania-specific page (provider-stated)",
+        "contact_note": "800-688-1984, 8 am to 8 pm CT, Monday to Friday. Footer lists a California license (0L09546); no Pennsylvania license shown.",
+        "source": "insureon"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "source": "insureon",
+          "value": "Dedicated page for cannabis business insurance in Pennsylvania."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "insureon",
+          "value": "Online business insurance agency offering quotes from partner carriers; Pennsylvania cannabis page covering dispensaries with links to cultivator, wholesaler and transporter insurance."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-practitioners",
+      "organization_id": "org-pa-department-health",
+      "pathway_ids": [
+        "medical"
+      ],
+      "origin": "consumer-resource",
+      "name": "Department of Health approved practitioner list",
+      "description": "Patients need a certification from a practitioner approved by the Department of Health. The Department publishes a list of approved practitioners and adds new ones as they finish training.",
+      "audiences": [
+        "patients",
+        "caregivers"
+      ],
+      "eligibility": "The Department notes a practitioner visit may not be covered by insurance.",
+      "next_step": {
+        "label": "Open the approved practitioner list (PDF)",
+        "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/health/documents/topics/documents/programs/medical-marijuana/DOH%20Approved%20Practitioners.pdf"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "source": "doh-patients",
+          "value": "Statewide Department of Health list of approved practitioners."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "doh-patients",
+          "value": "The patient page links an approved practitioner list and says new approved practitioners are added as they complete training.",
+          "limitations": "The list itself was not reviewed for completeness, accessibility, fees or telehealth."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-caregivers",
+      "organization_id": "org-pa-department-health",
+      "pathway_ids": [
+        "medical"
+      ],
+      "origin": "consumer-resource",
+      "name": "Caregiver registration and limits",
+      "description": "Caregivers must be 21 or older unless the Department authorizes otherwise and must pass a background check. A patient may designate up to two caregivers; minors under 18 need a caregiver to register for them. Card fee is $50, with no-cost cards for people enrolled in Medicaid, PACE/PACENET, CHIP, SNAP or WIC.",
+      "audiences": [
+        "patients",
+        "caregivers"
+      ],
+      "eligibility": "A drug sale or possession conviction in the last five years disqualifies a caregiver.",
+      "next_step": {
+        "label": "Read patient and caregiver instructions",
+        "url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/medical-marijuana-patients"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "source": "doh-patients",
+          "value": "Statewide patient and caregiver registry rules."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "doh-patients",
+          "value": "Caregivers 21+ unless authorized; background check; up to two caregivers per patient; minors need a caregiver; $50 card fee; no-cost card for Medicaid, PACE/PACENET, CHIP, SNAP or WIC participants."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-veteran-fee-reimbursement",
+      "organization_id": "org-balanced-veterans-network",
+      "pathway_ids": [
+        "medical",
+        "community"
+      ],
+      "name": "Operation 1620 — veteran certification help and state fee reimbursement",
+      "description": "Balanced Veterans Network's Operation 1620 lists Pennsylvania for medical marijuana certification help and reimburses state application or recertification fees up to $50 per veteran per year while funding lasts.",
+      "audiences": [
+        "veterans"
+      ],
+      "eligibility": "Proof of veteran status and a paid state fee receipt dated within 31 days; one reimbursement per year; service-disabled veterans have priority. Spouses and caretakers are not eligible.",
+      "next_step": {
+        "label": "Open the certification and reimbursement page",
+        "url": "https://balancedveterans.org/mmj-card/"
+      },
+      "provider_details": {
+        "serves": "Veterans",
+        "coverage_note": "Pennsylvania is listed for certification help; fee reimbursement is open to veterans in any state (provider-stated)",
+        "contact_note": "Apply through the program page; no application email is listed.",
+        "source": "bvn"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "source": "bvn",
+          "value": "Pennsylvania appears in the list of states where the certification program is currently available."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "bvn",
+          "value": "Operation 1620 reimburses state application and re-certification fees up to $50 per veteran per year; reimbursements are available only while funding remains."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-pardon-application",
+      "organization_id": "org-pa-board-of-pardons",
+      "pathway_ids": [
+        "records"
+      ],
+      "origin": "consumer-resource",
+      "name": "Board of Pardons clemency application",
+      "description": "A pardon is a separate step from sealing or expungement. The Board of Pardons takes clemency applications in English and Spanish.",
+      "audiences": [
+        "people with records"
+      ],
+      "eligibility": "Anyone with a Pennsylvania conviction may apply; the Board decides each case.",
+      "next_step": {
+        "label": "Apply for clemency",
+        "url": "https://www.pa.gov/services/bop/apply-for-clemency"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "source": "bop-home",
+          "value": "Statewide clemency application for Pennsylvania convictions."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "bop-home",
+          "value": "The Board's homepage says people may apply for clemency and that the application is available in English and Spanish, linking the apply page."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-pardon-expedited",
+      "organization_id": "org-pa-board-of-pardons",
+      "pathway_ids": [
+        "records"
+      ],
+      "origin": "consumer-resource",
+      "name": "Expedited pardon review for one marijuana possession case",
+      "description": "Applicants with only one case involving a marijuana-related misdemeanor possession offense (35 P.S. § 780-113(16), (31) or (32)) or misdemeanor retail theft can qualify for expedited review five years after their last contact with the justice system. Since 2025 the Board checks every application for eligibility automatically.",
+      "audiences": [
+        "people with records"
+      ],
+      "eligibility": "Ten years for one case of any type; fifteen years for more than one case. Some offenses disqualify, and the Board keeps discretion.",
+      "next_step": {
+        "label": "Read expedited review rules",
+        "url": "https://www.pa.gov/agencies/bop/about-the-clemency-process/expedited-clemency-review"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "source": "bop-expedited",
+          "value": "Statewide Board of Pardons process."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "bop-expedited",
+          "value": "Five years since last contact if the applicant has only one case involving misdemeanor retail theft or a marijuana-related misdemeanor possession offense; automatic eligibility review new for 2025."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-cls-clean-slate",
+      "organization_id": "org-community-legal-services-philadelphia",
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "CLS Clean Slate screener and record-clearing help",
+      "description": "Community Legal Services offers a free Clean Slate Screener to get a copy of your record and explains Pennsylvania record clearing. People who qualify may get free legal help.",
+      "audiences": [
+        "people with records"
+      ],
+      "eligibility": "The page gives no eligibility criteria for representation; offices are in Philadelphia.",
+      "next_step": {
+        "label": "Open Clean Slate FAQ and screener",
+        "url": "https://clsphila.org/my-clean-slate/faq/"
+      },
+      "provider_details": {
+        "serves": "People seeking Pennsylvania record clearing",
+        "coverage_note": "Philadelphia offices; screener information applies to Pennsylvania records (provider-stated)",
+        "contact_note": "Center City 215-981-3700 · North Philadelphia 215-227-2400.",
+        "source": "cls"
+      },
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Philadelphia",
+          "source": "cls",
+          "value": "Both listed CLS offices are in Philadelphia."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "cls",
+          "value": "Get a copy of your record for free using the Clean Slate Screener; if you qualify you may be eligible for free legal help."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-plse-record-clearing",
+      "organization_id": "org-philadelphia-lawyers-social-equity",
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "PLSE expungement and pardon help (Philadelphia)",
+      "description": "Free expungement filing for clients with Philadelphia County convictions, and pardon help for Philadelphia County residents, through clinics and online intake.",
+      "audiences": [
+        "people with records"
+      ],
+      "eligibility": "Household income under 200% of federal poverty guidelines. Phones are temporarily out of service; email is the reliable contact.",
+      "next_step": {
+        "label": "Start PLSE intake",
+        "url": "https://plsephilly.org/intake/"
+      },
+      "provider_details": {
+        "serves": "Low-income people with Philadelphia County records",
+        "coverage_note": "Philadelphia County only (provider-stated)",
+        "contact_note": "info@plsephilly.org · walk-in community clinics, no registration needed.",
+        "source": "plse"
+      },
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Philadelphia",
+          "source": "plse",
+          "value": "Represents people with Philadelphia County convictions (expungement) and Philadelphia County residents (pardons)."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "plse",
+          "value": "Expungements and pardons; files for free in Philadelphia County for clients; income under 200% of federal poverty guidelines."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-lasp-record-clearing",
+      "organization_id": "org-legal-aid-southeastern-pa",
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "LASP Clean Slate sealing and expungement help",
+      "description": "Legal Aid of Southeastern Pennsylvania helps low-income residents of Bucks, Chester, Delaware and Montgomery counties with Clean Slate limited access (sealing) and expungements. It is not currently assisting with pardon applications.",
+      "audiences": [
+        "people with records"
+      ],
+      "eligibility": "Low-income residents of the four counties; eligibility screening applies.",
+      "next_step": {
+        "label": "Apply online",
+        "url": "https://www.lasp.org/apply"
+      },
+      "provider_details": {
+        "serves": "Low-income residents of Bucks, Chester, Delaware and Montgomery counties",
+        "coverage_note": "Bucks, Chester, Delaware and Montgomery counties (provider-stated)",
+        "contact_note": "Helpline 877-429-5994, Monday to Friday 9 am to 1 pm, or apply online any time.",
+        "source": "lasp"
+      },
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Bucks",
+          "source": "lasp",
+          "value": "Serves Bucks, Chester, Delaware and Montgomery counties."
+        },
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Chester",
+          "source": "lasp",
+          "value": "Serves Bucks, Chester, Delaware and Montgomery counties."
+        },
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Delaware",
+          "source": "lasp",
+          "value": "Serves Bucks, Chester, Delaware and Montgomery counties."
+        },
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Montgomery",
+          "source": "lasp",
+          "value": "Serves Bucks, Chester, Delaware and Montgomery counties."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "lasp",
+          "value": "Clean Slate (limited access) and expungements for low-income residents of Bucks, Chester, Delaware and Montgomery counties; not currently assisting with pardon applications."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-allegheny-project-reset",
+      "organization_id": "org-allegheny-county-public-defender",
+      "pathway_ids": [
+        "records"
+      ],
+      "origin": "consumer-resource",
+      "name": "Project Reset — Allegheny County Public Defender expungement help",
+      "description": "The Allegheny County Public Defender offers expungement services to people whose charges were filed in Allegheny County. Start with the county's expungement and Clean Slate quiz, which anyone in Pennsylvania can use.",
+      "audiences": [
+        "people with records"
+      ],
+      "eligibility": "Charges filed in Allegheny County. The page does not state fees or income limits.",
+      "next_step": {
+        "label": "Take the expungement quiz",
+        "url": "https://www.alleghenycounty.us/Government/Court-Related/Public-Defender/Expungement-Quiz"
+      },
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Allegheny",
+          "source": "allegheny-pd",
+          "value": "Expungement services for individuals whose charges were filed in Allegheny County."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "allegheny-pd",
+          "value": "The Office of the Public Defender is offering services to individuals who may be eligible for an expungement whose charges were filed in Allegheny County; an online Expungement Quiz is available."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-hemp-permit",
+      "organization_id": "org-pa-department-agriculture",
+      "pathway_ids": [
+        "seeds"
+      ],
+      "origin": "consumer-resource",
+      "name": "Hemp growing and processing permits",
+      "description": "Growing hemp requires a permit under the PA Hemp General Permit. Applications for 2027 permits open October 1 through the PA Plants system; the page links hemp seed labeling rules and a 2026 list of prohibited varieties.",
+      "audiences": [
+        "farmers",
+        "business"
+      ],
+      "eligibility": "Hemp only. A hemp permit does not allow growing marijuana.",
+      "next_step": {
+        "label": "Open the hemp program",
+        "url": "https://www.pa.gov/agencies/pda/plants-land-water/hemp"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "source": "pda-hemp",
+          "value": "Statewide hemp permit program run by the Department of Agriculture."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "pda-hemp",
+          "value": "Issues permits for growing and processing hemp under the PA Hemp General Permit; 2027 applications accepted beginning October 1; contact RA-AGPLHEMP@pa.gov, 223-666-2561."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-responsiblepa",
+      "organization_id": "org-responsiblepa",
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "ResponsiblePA — adult-use legalization coalition",
+      "description": "A coalition formed in March 2024 to support adult-use legalization in Pennsylvania, with patient advocates, doctors, laboratories, labor, local officials and equity groups.",
+      "audiences": [
+        "residents",
+        "business"
+      ],
+      "eligibility": "Advocacy group; the page lists no contact address.",
+      "next_step": {
+        "label": "Open ResponsiblePA",
+        "url": "https://responsiblepa.org/"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "responsible",
+          "value": "Coalition formed to support adult-use cannabis legalization in Pennsylvania (announcement dated March 20, 2024)."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-norml-bucks",
+      "organization_id": "org-bucks-county-norml",
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "Bucks County NORML",
+      "description": "A Pennsylvania chapter listed by NORML.",
+      "audiences": [
+        "residents"
+      ],
+      "eligibility": "Contact the chapter for meetings and membership.",
+      "next_step": {
+        "label": "Open chapter site",
+        "url": "https://www.buckscountynorml.com"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "norml-pa",
+          "value": "NORML lists Bucks County NORML among its Pennsylvania chapters, with website buckscountynorml.com."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-norml-lehigh-valley",
+      "organization_id": "org-lehigh-valley-norml",
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "Lehigh Valley NORML",
+      "description": "A Pennsylvania chapter listed by NORML.",
+      "audiences": [
+        "residents"
+      ],
+      "eligibility": "Contact the chapter for meetings and membership.",
+      "next_step": {
+        "label": "Open chapter page",
+        "url": "https://www.facebook.com/lehighvalleynorml/"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "norml-pa",
+          "value": "NORML lists Lehigh Valley NORML among its Pennsylvania chapters, with phone (610) 533-0906 and a Facebook page."
+        }
+      ]
+    },
+    {
+      "id": "svc-pa-norml-montco",
+      "organization_id": "org-montco-norml",
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "Montco NORML",
+      "description": "A Pennsylvania chapter listed by NORML.",
+      "audiences": [
+        "residents"
+      ],
+      "eligibility": "Contact the chapter for meetings and membership.",
+      "next_step": {
+        "label": "Open chapter page",
+        "url": "https://www.facebook.com/montconorml"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "norml-pa",
+          "value": "NORML lists Montco NORML among its Pennsylvania chapters, with phone (484) 808-7727 and a Facebook page.",
+          "limitations": "NORML's link for the chapter website is malformed; the chapter's Facebook page is used instead."
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "id": "rule-pa-medical-use",
+      "topic": "medical-use",
+      "effective_on": "2016-05-17",
+      "next_step_url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2016/0/0016..HTM",
+      "summary": "Medical use is lawful only under the Medical Marijuana Act: a registered patient or caregiver with a Department of Health ID card and practitioner certification. A dispensary may not dispense more than a 90-day supply. Smoking medical marijuana is unlawful; patients and caregivers may make edibles themselves.",
+      "evidence": [
+        {
+          "claim": "rule-summary",
+          "source": "mma",
+          "value": "Section 304(b)(1) makes it unlawful to smoke medical marijuana; 304(c) allows patients or caregivers to incorporate it into edible form; Sections 405 and 801 limit receipt to a 90-day supply. The act took effect 30 days after April 17, 2016 (Section 2110)."
+        }
+      ]
+    },
+    {
+      "id": "rule-pa-adult-use-possession",
+      "topic": "adult-use-possession",
+      "effective_on": "1972-04-14",
+      "next_step_url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/1972/0/0064..HTM",
+      "summary": "Pennsylvania has no adult-use (recreational) cannabis law. Without a medical card, possessing up to 30 grams of marijuana or 8 grams of hashish for personal use is a misdemeanor punishable by up to 30 days in jail, a fine of up to $500, or both. Some cities have their own ordinances; this summary covers state law only.",
+      "evidence": [
+        {
+          "claim": "rule-summary",
+          "source": "csa",
+          "value": "35 P.S. § 780-113(a)(31) defines a small amount as 30 grams of marihuana or 8 grams of hashish; § 780-113(g) sets imprisonment not exceeding thirty days, a fine not exceeding $500, or both. Section 13 took effect immediately on enactment (Section 44)."
+        },
+        {
+          "claim": "rule-summary",
+          "source": "mpp",
+          "value": "As of October 13, 2026, adult-use cannabis is not legal in Pennsylvania; House Bill 1200 passed the House and died in a Senate committee."
+        }
+      ]
+    },
+    {
+      "id": "rule-pa-home-grow",
+      "topic": "home-grow",
+      "effective_on": "2016-05-17",
+      "next_step_url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2016/0/0016..HTM",
+      "summary": "Home cultivation is not allowed. Only grower/processors permitted by the Department of Health may grow medical marijuana, and Pennsylvania has no adult-use home-grow law. Growing hemp requires a separate Department of Agriculture permit.",
+      "evidence": [
+        {
+          "claim": "rule-summary",
+          "source": "mma",
+          "value": "Section 304(b)(3) makes it unlawful to grow medical marijuana unless the grower/processor has received a permit from the department."
+        }
+      ]
+    },
+    {
+      "id": "rule-pa-employment",
+      "topic": "employment",
+      "effective_on": "2016-05-17",
+      "next_step_url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2016/0/0016..HTM",
+      "summary": "An employer may not fire, refuse to hire or otherwise discriminate against someone solely because they are certified to use medical marijuana. Employers need not allow use at work and may discipline employees for being under the influence at work when their conduct falls below the standard of care for the job.",
+      "evidence": [
+        {
+          "claim": "rule-summary",
+          "source": "mma",
+          "value": "Section 2103(b)(1)-(3): no discharge, refusal to hire or discrimination solely on certification status; no required accommodation of use on employer premises; discipline allowed for working under the influence; no act required that would violate federal law."
+        }
+      ]
+    },
+    {
+      "id": "rule-pa-driving",
+      "topic": "driving",
+      "effective_on": "2006-05-11",
+      "next_step_url": "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/75/00.038.002.000..HTM",
+      "summary": "Driving with any amount of a Schedule I controlled substance or its metabolite in your blood is DUI, whether or not you are impaired. Marijuana is a Schedule I substance under Pennsylvania law, and the DUI statute has no exception for medical marijuana patients.",
+      "evidence": [
+        {
+          "claim": "rule-summary",
+          "source": "vehicle-code",
+          "value": "75 Pa.C.S. § 3802(d)(1)(i) and (iii): any amount of a Schedule I controlled substance, or its metabolite, in the individual's blood. No subsection mentions medical marijuana. Source note lists amendments of May 11, 2006 and December 22, 2025 (Act 58, which changed subsections (g) and (h) only).",
+          "limitations": "The effective date shown is the earliest date in the General Assembly's source note; the subsection may be older."
+        },
+        {
+          "claim": "rule-summary",
+          "source": "csa",
+          "value": "35 P.S. § 780-104(1)(iv) lists marihuana in Schedule I."
+        }
+      ]
+    },
+    {
+      "id": "rule-pa-clean-slate",
+      "topic": "record-sealing",
+      "effective_on": "2024-06-11",
+      "next_step_url": "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/18/00.091.022.002..HTM",
+      "summary": "Clean Slate limits access to (seals) certain records automatically: charges that did not end in a conviction; summary convictions after five years; and second- and third-degree misdemeanors and misdemeanors punishable by up to two years after seven years free of convictions punishable by a year or more. Court-ordered restitution must be paid. A pardon is a separate step.",
+      "evidence": [
+        {
+          "claim": "rule-summary",
+          "source": "clean-slate",
+          "value": "18 Pa.C.S. § 9122.2(a)(1)-(3) as amended by Act 36 of 2023 (Dec. 14, 2023, P.L.334), which took effect in 180 days for these subsections.",
+          "limitations": "Exclusions in the statute apply."
+        },
+        {
+          "claim": "rule-summary",
+          "source": "cls-clean-slate-faq",
+          "value": "Act 36 took effect February 12, 2024, except automated sealing, which took effect June 11, 2024; misdemeanor waiting period 7 years (previously 10) and summary convictions 5 years."
+        }
+      ]
+    }
+  ],
+  "pathways": {
+    "business": {
+      "coverage_status": "starter",
+      "next_step": "Choose a provider type, such as testing labs, operators, banking, insurance, security, legal or consulting, and contact the provider.",
+      "public_url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/laboratories",
+      "limitations": "Selected providers with Pennsylvania-specific sources: all five laboratories (six locations) on the Department of Health approved list, 11 operator brands with Pennsylvania retail or cultivation pages, two banks, two law practices, one consultancy, one trade association, one insurance agency and one security firm. This is not a list of all grower/processor permit holders. No packaging, equipment or technology providers with Pennsylvania evidence yet. A listing is not an endorsement."
+    },
+    "rules": {
+      "coverage_status": "starter",
+      "next_step": "Read each dated summary, then the official statute it cites.",
+      "public_url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2016/0/0016..HTM",
+      "limitations": "Six state-law summaries checked October 28, 2026 against the General Assembly's statute text: medical use limits, adult-use status and small-amount possession, home cultivation, employment protection, driving and Clean Slate sealing. Not legal advice. Local ordinances, hemp-derived products, Department of Health regulations and court orders are not summarized."
+    },
+    "medical": {
+      "coverage_status": "partial",
+      "next_step": "Register, find an approved practitioner, then check caregiver, fee and assistance options.",
+      "public_url": "https://www.pa.gov/services/health/register-for-the-medical-marijuana-program",
+      "limitations": "Official registration, approved practitioner list, caregiver rules, fee relief and purchase assistance, plus one funding-limited veteran fee reimbursement program. The practitioner list was not reviewed for location, fees or telehealth, and no individual eligibility is assessed."
+    },
+    "records": {
+      "coverage_status": "partial",
+      "next_step": "Check what Clean Slate seals automatically, get your record, then use a local legal-help route or the Board of Pardons.",
+      "public_url": "https://www.pa.gov/services/psp/apply-for-criminal-record-expungement",
+      "limitations": "Statewide routes: State Police record access, Board of Pardons application and expedited review. Local free help found for Philadelphia (CLS, PLSE), Bucks, Chester, Delaware and Montgomery (LASP), Monroe and Pike (NPLS) and Allegheny (Public Defender's Project Reset). Neighborhood Legal Services and MidPenn Legal Services were checked: their current intake pages describe civil help only, and MidPenn's only record-clearing material found was an undated brochure and past clinics. Central and most of western Pennsylvania have no listed record-clearing help yet. No automatic cannabis relief beyond Clean Slate is claimed."
+    },
+    "seeds": {
+      "coverage_status": "starter",
+      "next_step": "Read the home-cultivation rule; hemp growers can apply for a Department of Agriculture permit.",
+      "public_url": "https://www.pa.gov/agencies/pda/plants-land-water/hemp",
+      "limitations": "Home cultivation of cannabis is not allowed in Pennsylvania, so no seed sellers are listed. The one route is the Department of Agriculture hemp permit for licensed hemp growing."
+    },
+    "community": {
+      "coverage_status": "starter",
+      "next_step": "Contact a group about meetings, membership or advocacy.",
+      "limitations": "Six groups: a trade association, a legalization coalition, a veteran network and three NORML chapters (Bucks County, Lehigh Valley, Montco). No Pennsylvania cannabis events are verified for the next three months: organizer pages checked October 28, 2026 list the next Pennsylvania Cannabis Convention only as summer 2027 with no date, and NECANN's Philadelphia show as April 2028."
+    }
+  }
+}
