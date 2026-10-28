@@ -38,10 +38,10 @@ assert (ROOT/'data/public-state.json').read_bytes()==public_state_before, 'Fixtu
 # The real Pennsylvania pilot reports every pathway with reviewed routes and states its gaps.
 pa_pack=next(s for s in data['states'] if s['code']=='PA')
 assert pa_pack['publication_status']=='pilot'
-assert {p['pathway_id']:p['coverage_status'] for p in pa_pack['pathways']}=={'dispensaries':'broad','seeds':'starter','records':'partial','rules':'starter','medical':'partial','business':'starter','community':'starter'}
+assert {p['pathway_id']:p['coverage_status'] for p in pa_pack['pathways']}=={'dispensaries':'broad','seeds':'starter','records':'partial','rules':'starter','medical':'partial','business':'partial','community':'partial'}
 assert {p['pathway_id'] for p in pa_pack['pathways'] if p.get('public_url')}=={'dispensaries','seeds','records','rules','medical','business'}
 pa_services=[s for s in data['services'] if 'PA' in s.get('listed_in',[])]
-assert len(pa_services)==43
+assert len(pa_services)==119
 orgs={o['id']:o for o in data['organizations']}
 assert all(orgs[s['organization_id']]['scope']=='public' for s in pa_services)
 assert all(s['listed_in']==['PA'] for s in pa_services)
@@ -63,7 +63,18 @@ lasp=next(s for s in pa_services if s['id']=='svc-pa-lasp-record-clearing')
 assert {c['county'] for c in lasp['coverage']}=={'Bucks','Chester','Delaware','Montgomery'}
 # Repeating the import changes nothing.
 from import_pa_ecosystem import build as import_pa,MANIFEST
-again=import_pa(copy.deepcopy(data),json.loads(MANIFEST.read_text()));assert again==data
+# The baseline importer remains repeatable and preserves separately reviewed additions.
+again=import_pa(copy.deepcopy(data),json.loads(MANIFEST.read_text()))
+assert import_pa(copy.deepcopy(again),json.loads(MANIFEST.read_text()))==again
+base_ids={s['id'] for s in json.loads(MANIFEST.read_text())['services']}
+assert all(next(a for a in again['services'] if a['id']==s['id'])==s for s in pa_services if s['id'] in base_ids)
+new_services=[s for s in pa_services if s['id'].startswith('svc-pa-drive-')]
+assert len(new_services)==76
+assert all(next(a for a in again['services'] if a['id']==s['id'])==s for s in new_services)
+assert all(next(o for o in again['organizations'] if o['id']==s['organization_id'])==orgs[s['organization_id']] for s in new_services)
+assert not next(s for s in new_services if s['id']=='svc-pa-drive-b5-inland')['coverage'], 'A PA facility must not imply statewide coverage'
+assert next(s for s in new_services if s['id']=='svc-pa-drive-b2-dutchie')['organization_id']=='org-a06c1362a303'
+assert next(s for s in new_services if s['id']=='svc-pa-drive-b6-summit')['organization_id']==next(s for s in new_services if s['id']=='svc-pa-drive-b6-washington-pardon')['organization_id']
 public_state=json.loads(public_state_before)
 assert 'PA' in {s['code'] for s in public_state['states']}
 assert {s['id'] for s in pa_services}=={s['id'] for s in public_state['cards'] if 'PA' in s['listed_in']}

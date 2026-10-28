@@ -25,7 +25,7 @@ def brand_header():
     return ('<a class="vhg-brand" href="index.html"><img src="assets/vhg-logo.png" alt="" width="48" height="48">'
             '<span><strong>Ohio Cannabis Directory</strong></span></a>'
             '<nav class="knowledge-links" aria-label="Primary">'
-            '<a href="directory.html">Business directory</a><a href="locations.html">Find a dispensary</a>'
+            '<a href="directory.html">Business directory</a><a href="state.html?state=PA">Pennsylvania portal</a><a href="locations.html">Find a dispensary</a>'
             '<a href="buyer-guide.html">Shop smart</a><a href="ancestry.html">Strains</a><a href="knowledge.html">Learn</a>'
             '<a href="assessment.html">Business self-check</a><a href="advocacy.html">Advocacy</a><a href="compare.html">Compare states</a>'
             '<a href="expungement.html">Record clearing</a>'
@@ -33,6 +33,7 @@ def brand_header():
 
 def brand_footer():
     return ('<footer class="site-footer"><nav aria-label="More resources">'
+            '<a href="state.html?state=PA">Pennsylvania portal</a>'
             '<a href="relationships.html">Who works with whom</a><a href="ancestry.html">Strains</a><a href="seeds.html">Seeds &amp; growing supplies</a>'
             '<a href="resources.html#community">Events</a><a href="resources.html">Resources by need</a>'
             '<a href="'+update_url()+'">Suggest a correction</a>'
