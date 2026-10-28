@@ -6,24 +6,32 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
   page.on('pageerror',e=>errors.push(e.message));await page.route('**/gc.zgo.at/**',r=>r.abort());
   await page.goto(server.base+'pennsylvania-advocacy.html');
   await page.locator('a[href="state.html?state=PA"]').click();
-  await page.waitForFunction(()=>document.querySelector('#state-title').textContent==='Pennsylvania cannabis resources');
+  await page.waitForURL(/state\.html\?state=PA/);await page.waitForFunction(()=>document.querySelector('#state-title')?.textContent==='Pennsylvania cannabis resources');
   assert.match(await page.locator('#state-select option:checked').innerText(),/pilot/);
   assert.match(await page.locator('#state-coverage').innerText(),/Pilot coverage/);
   assert.equal(await page.locator('#pathways a').count(),7);
-  assert.equal(await page.locator('#pathways a').filter({hasText:'Not yet researched'}).count(),4);
-  await page.selectOption('#path-select','medical');assert.equal(await page.locator('#state-results article').count(),2);
+  assert.equal(await page.locator('#pathways a').filter({hasText:'Not yet researched'}).count(),0);
+  await page.selectOption('#path-select','medical');assert.equal(await page.locator('#state-results article').count(),5);
+  assert.match(await page.locator('#svc-pa-veteran-fee-reimbursement').innerText(),/up to \$50 per veteran per year/);assert.match(await page.locator('#svc-pa-caregivers').innerText(),/up to two caregivers/);
   assert.equal(await page.locator('#state-route').getAttribute('href'),'https://www.pa.gov/services/health/register-for-the-medical-marijuana-program');
   await page.locator('#svc-pa-mmap summary').click();assert.match(await page.locator('#svc-pa-mmap').innerText(),/PACE\/PACENET/);assert.match(await page.locator('#svc-pa-mmap details').innerText(),/Veteran status alone/);
-  await page.selectOption('#path-select','records');assert.equal(await page.locator('#state-results article').count(),2);
+  await page.selectOption('#path-select','records');assert.equal(await page.locator('#state-results article').count(),7);
+  assert.match(await page.locator('#svc-pa-lasp-record-clearing').innerText(),/Bucks, PA; Chester, PA; Delaware, PA; Montgomery, PA/);assert.match(await page.locator('#svc-pa-lasp-record-clearing').innerText(),/not currently assisting with pardon/);
   const local=page.locator('#svc-pa-npls-record-help');assert.match(await local.innerText(),/Monroe, PA; Pike, PA/);
   const route=await local.getByRole('link',{name:'Link to this route',exact:true}).getAttribute('href');
   await page.goto(route);await page.waitForSelector('#svc-pa-npls-record-help');assert.equal(await page.locator('#state-results article').count(),1);
   await page.selectOption('#path-select','dispensaries');assert.equal(await page.locator('#state-results article').count(),1);
   assert.equal(await page.locator('#svc-pa-dispensary-list .btn').getAttribute('href'),'https://www.pa.gov/agencies/health/programs/medical-marijuana/dispensaries');
-  for(const need of ['seeds','rules','business','community']){
-   await page.selectOption('#path-select',need);assert.equal(await page.locator('#state-results article').count(),0);
-   assert.match(await page.locator('#state-coverage').innerText(),/Not yet researched/);assert(!await page.locator('#state-route').isVisible());
-  }
+  // Rules render as dated, cited law summaries rather than service cards.
+  await page.selectOption('#path-select','rules');assert.equal(await page.locator('#state-rules article').count(),5);assert.equal(await page.locator('#state-results article').count(),0);
+  assert.match(await page.locator('#state-tally').innerText(),/^5 law summaries$/);
+  assert.match(await page.locator('#rule-pa-adult-use-possession').innerText(),/no adult-use/);assert.match(await page.locator('#rule-pa-home-grow').innerText(),/not allowed/);
+  await page.locator('#rule-pa-employment summary').click();assert.match(await page.locator('#rule-pa-employment details').innerText(),/Official source/);
+  await page.getByRole('searchbox').fill('sealing');assert.equal(await page.locator('#state-rules article').count(),1);await page.getByRole('searchbox').fill('');
+  await page.selectOption('#path-select','business');assert.equal(await page.locator('#state-results article').count(),22);
+  const lab=await page.locator('#svc-pa-lab-act').innerText();assert.match(lab,/Trafford/);assert(!/Ohio statewide/.test(lab),'Ohio service-area text stays off Pennsylvania cards');
+  await page.selectOption('#path-select','seeds');assert.equal(await page.locator('#state-results article').count(),1);assert.match(await page.locator('#state-coverage').innerText(),/no seed sellers are listed/);
+  await page.selectOption('#path-select','community');assert.equal(await page.locator('#state-results article').count(),6);assert.match(await page.locator('#state-coverage').innerText(),/No Pennsylvania cannabis events are verified/);assert(!await page.locator('#state-route').isVisible());
   await page.selectOption('#path-select','medical');
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   await page.screenshot({path:'/tmp/pa-referrals-mobile.png',fullPage:true});
@@ -44,6 +52,6 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
   assert(await fallback.getByRole('heading',{name:'Pennsylvania pilot referral routes'}).isVisible());
   assert(await fallback.getByRole('link',{name:'Monroe and Pike County legal-help intake',exact:true}).isVisible());
   await plain.close();assert.deepEqual(errors,[]);
-  console.log('PASS PA referrals: pilot/gap labels, five routes, county scope, citations, deep links, no-JS access, Ohio/store isolation and mobile width.');
+  console.log('PASS PA pilot: seven reviewed pathways, 40 routes, five cited law summaries, county scope, Ohio text isolation, deep links, no-JS access and mobile width.');
  }finally{await browser.close();await server.close();}
 })().catch(e=>{console.error(e);process.exit(1)});

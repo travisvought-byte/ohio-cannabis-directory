@@ -50,7 +50,7 @@ def clean(v):
 
 def main():
     data = load_directory()
-    details = {s['organization_id']: s['attributes'].get('provider_details') for s in data['services'] if s.get('origin') == 'organization-profile'}
+    details = {s['organization_id']: s['attributes'].get('provider_details') for s in data['services'] if s.get('origin') == 'organization-profile' and 'OH' in s.get('listed_in', [])}
     df = pd.DataFrame(load_records(include_withdrawn=False)).dropna(how="all")
 
     records = []
