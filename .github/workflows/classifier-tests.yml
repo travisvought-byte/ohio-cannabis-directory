@@ -8,6 +8,27 @@ concurrency:
   group: classifier-${{ github.ref }}
   cancel-in-progress: true
 jobs:
+  codex-permissions:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install pinned CLI without provider credentials
+        run: npm install --global @openai/codex@0.164.0
+      - name: Enable the hosted Linux sandbox prerequisites
+        run: |
+          sudo sysctl -w kernel.unprivileged_userns_clone=1
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+      - name: Check the real research permission profile without a model call
+        run: bash scripts/test_codex_permissions.sh
   classifier:
     runs-on: ubuntu-24.04
     timeout-minutes: 5
@@ -20,11 +41,15 @@ jobs:
         run: python -m unittest discover -s tests -p test_pr_classifier.py -v
       - name: Test maintenance dates and issue queue
         run: python -m unittest discover -s tests -p 'test_automation*.py' -v
+      - name: Test opt-in research output boundaries
+        run: python -m unittest discover -s tests -p test_codex_runner.py -v
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
       - name: Test risk report including Git file modes
         run: node tests/pr-risk-report.cjs
+      - name: Test Codex claiming and delivery lifecycle
+        run: node tests/codex-runner.cjs
       - name: Validate staged research references
         run: |
           python scripts/validate_pa_research.py
