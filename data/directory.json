@@ -22649,6 +22649,56 @@
       ],
       "website": "https://www.pa.gov/agencies/pda/plants-land-water/hemp",
       "scope": "public"
+    },
+    {
+      "id": "org-allegheny-county-public-defender",
+      "name": "Allegheny County Office of the Public Defender",
+      "kind": "government",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "OPDExpungements@alleghenycounty.us"
+        }
+      ],
+      "website": "https://www.alleghenycounty.us/Government/Court-Related/Public-Defender/Project-Reset",
+      "scope": "public"
+    },
+    {
+      "id": "org-extrity-services",
+      "name": "Extrity Security Services",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "1-800-518-9229"
+        },
+        {
+          "kind": "email",
+          "value": "info@extrityservices.com"
+        }
+      ],
+      "website": "https://extrityservices.com/dispensary-security-philadelphia",
+      "scope": "public"
+    },
+    {
+      "id": "org-insureon",
+      "name": "Insureon",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "800-688-1984"
+        },
+        {
+          "kind": "contact-page",
+          "value": "https://www.insureon.com/contact-us"
+        }
+      ],
+      "website": "https://www.insureon.com/cannabis-business-insurance/pennsylvania",
+      "scope": "public"
     }
   ],
   "locations": [
@@ -52062,6 +52112,101 @@
       "description": "A Pennsylvania cannabis trade association offering regulatory affairs, advocacy and member resources."
     },
     {
+      "id": "svc-pa-security-extrity",
+      "organization_id": "org-extrity-services",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Extrity Security Services — dispensary security (Philadelphia)",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Philadelphia",
+          "evidence_ids": [
+            "ev-pa26-e6a3262ac9b8"
+          ]
+        }
+      ],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Scope and pricing are set by the provider.",
+      "next_step": {
+        "label": "Open dispensary security page",
+        "url": "https://extrityservices.com/dispensary-security-philadelphia"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Cannabis dispensaries",
+          "coverage_note": "Philadelphia, Chicago and Tennessee areas (provider-stated)",
+          "contact_note": "1-800-518-9229 · info@extrityservices.com. No street address or Pennsylvania license number published.",
+          "source_url": "https://extrityservices.com/dispensary-security-philadelphia",
+          "reviewed_on": "2026-10-28"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa26-dddafe04792e",
+        "ev-pa26-e6a3262ac9b8",
+        "ev-pa26-a1ed3143d40f"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "Offers dispensary security officers, surveillance and access-control management, guest management, secure handling of courier transfers and a free security evaluation."
+    },
+    {
+      "id": "svc-pa-insurance-insureon",
+      "organization_id": "org-insureon",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Insureon — cannabis business insurance quotes (Pennsylvania page)",
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa26-e2ea4e562883"
+          ]
+        }
+      ],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Quotes and coverage depend on partner carriers' underwriting.",
+      "next_step": {
+        "label": "Open Pennsylvania cannabis insurance page",
+        "url": "https://www.insureon.com/cannabis-business-insurance/pennsylvania"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Cannabis dispensaries, cultivators, wholesalers and transporters",
+          "coverage_note": "Pennsylvania-specific page (provider-stated)",
+          "contact_note": "800-688-1984, 8 am to 8 pm CT, Monday to Friday. Footer lists a California license (0L09546); no Pennsylvania license shown.",
+          "source_url": "https://www.insureon.com/cannabis-business-insurance/pennsylvania",
+          "reviewed_on": "2026-10-28"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa26-6d01cffc56f8",
+        "ev-pa26-e2ea4e562883",
+        "ev-pa26-d4715f98a7df"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "An online insurance agency that quotes partner carriers. Its Pennsylvania cannabis page covers dispensaries and links cultivator, wholesaler and transporter coverage, and lists the commercial property, liability and workers' compensation coverage it says state rules require."
+    },
+    {
       "id": "svc-pa-practitioners",
       "organization_id": "org-pa-department-health",
       "location_ids": [],
@@ -52430,6 +52575,45 @@
         "PA"
       ],
       "description": "Legal Aid of Southeastern Pennsylvania helps low-income residents of Bucks, Chester, Delaware and Montgomery counties with Clean Slate limited access (sealing) and expungements. It is not currently assisting with pardon applications."
+    },
+    {
+      "id": "svc-pa-allegheny-project-reset",
+      "organization_id": "org-allegheny-county-public-defender",
+      "location_ids": [],
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Project Reset — Allegheny County Public Defender expungement help",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Allegheny",
+          "evidence_ids": [
+            "ev-pa26-2638104a3cd7"
+          ]
+        }
+      ],
+      "audiences": [
+        "people with records"
+      ],
+      "eligibility": "Charges filed in Allegheny County. The page does not state fees or income limits.",
+      "next_step": {
+        "label": "Take the expungement quiz",
+        "url": "https://www.alleghenycounty.us/Government/Court-Related/Public-Defender/Expungement-Quiz"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa26-10238c400fa7",
+        "ev-pa26-2638104a3cd7"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "The Allegheny County Public Defender offers expungement services to people whose charges were filed in Allegheny County. Start with the county's expungement and Clean Slate quiz, which anyone in Pennsylvania can use."
     },
     {
       "id": "svc-pa-hemp-permit",
@@ -78764,6 +78948,84 @@
       "limitations": "Reviewed October 24, 2026. An October 28 recheck was refused by the site's robots rules, so no fresh review date is recorded. Representation claims do not establish every member or an endorsement of the directory."
     },
     {
+      "id": "ev-pa26-dddafe04792e",
+      "subject_id": "svc-pa-security-extrity",
+      "claim": "service-description",
+      "value": "Dispensary security: surveillance and access control, guest management, secure courier transfers, de-escalation-trained officers and a free security evaluation.",
+      "source_url": "https://extrityservices.com/dispensary-security-philadelphia",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-28",
+      "recorded_on": "2026-10-28",
+      "recheck_on": "2026-11-27",
+      "limitations": "Provider statement. No Pennsylvania license number or street address is published; services and pricing are not independently verified."
+    },
+    {
+      "id": "ev-pa26-e6a3262ac9b8",
+      "subject_id": "svc-pa-security-extrity",
+      "claim": "service-coverage",
+      "value": "The page says it serves the Philadelphia area.",
+      "source_url": "https://extrityservices.com/dispensary-security-philadelphia",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-28",
+      "recorded_on": "2026-10-28",
+      "recheck_on": "2026-11-27",
+      "limitations": "Provider statement. No Pennsylvania license number or street address is published; services and pricing are not independently verified."
+    },
+    {
+      "id": "ev-pa26-a1ed3143d40f",
+      "subject_id": "svc-pa-security-extrity",
+      "claim": "provider-contact",
+      "value": "1-800-518-9229 · info@extrityservices.com. No street address or Pennsylvania license number published.",
+      "source_url": "https://extrityservices.com/dispensary-security-philadelphia",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-28",
+      "recorded_on": "2026-10-28",
+      "recheck_on": "2026-11-27",
+      "limitations": "Provider statement. No Pennsylvania license number or street address is published; services and pricing are not independently verified."
+    },
+    {
+      "id": "ev-pa26-6d01cffc56f8",
+      "subject_id": "svc-pa-insurance-insureon",
+      "claim": "service-description",
+      "value": "Online business insurance agency offering quotes from partner carriers; Pennsylvania cannabis page covering dispensaries with links to cultivator, wholesaler and transporter insurance.",
+      "source_url": "https://www.insureon.com/cannabis-business-insurance/pennsylvania",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-28",
+      "recorded_on": "2026-10-28",
+      "recheck_on": "2026-11-27",
+      "limitations": "Online agency quoting partner carriers. The page shows a California license number and no Pennsylvania license; coverage availability depends on carriers."
+    },
+    {
+      "id": "ev-pa26-e2ea4e562883",
+      "subject_id": "svc-pa-insurance-insureon",
+      "claim": "service-coverage",
+      "value": "Dedicated page for cannabis business insurance in Pennsylvania.",
+      "source_url": "https://www.insureon.com/cannabis-business-insurance/pennsylvania",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-28",
+      "recorded_on": "2026-10-28",
+      "recheck_on": "2026-11-27",
+      "limitations": "Online agency quoting partner carriers. The page shows a California license number and no Pennsylvania license; coverage availability depends on carriers."
+    },
+    {
+      "id": "ev-pa26-d4715f98a7df",
+      "subject_id": "svc-pa-insurance-insureon",
+      "claim": "provider-contact",
+      "value": "800-688-1984, 8 am to 8 pm CT, Monday to Friday. Footer lists a California license (0L09546); no Pennsylvania license shown.",
+      "source_url": "https://www.insureon.com/cannabis-business-insurance/pennsylvania",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-28",
+      "recorded_on": "2026-10-28",
+      "recheck_on": "2026-11-27",
+      "limitations": "Online agency quoting partner carriers. The page shows a California license number and no Pennsylvania license; coverage availability depends on carriers."
+    },
+    {
       "id": "ev-pa26-1569fce604a8",
       "subject_id": "svc-pa-practitioners",
       "claim": "service-description",
@@ -79024,6 +79286,32 @@
       "limitations": "Low-income residents of four counties only. The page says LASP is not currently assisting with pardon applications."
     },
     {
+      "id": "ev-pa26-10238c400fa7",
+      "subject_id": "svc-pa-allegheny-project-reset",
+      "claim": "service-description",
+      "value": "The Office of the Public Defender is offering services to individuals who may be eligible for an expungement whose charges were filed in Allegheny County; an online Expungement Quiz is available.",
+      "source_url": "https://www.alleghenycounty.us/Government/Court-Related/Public-Defender/Project-Reset",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-28",
+      "recorded_on": "2026-10-28",
+      "recheck_on": "2026-11-27",
+      "limitations": "The county page does not state fees, income limits or processing times, or give a program phone number."
+    },
+    {
+      "id": "ev-pa26-2638104a3cd7",
+      "subject_id": "svc-pa-allegheny-project-reset",
+      "claim": "service-coverage",
+      "value": "Expungement services for individuals whose charges were filed in Allegheny County.",
+      "source_url": "https://www.alleghenycounty.us/Government/Court-Related/Public-Defender/Project-Reset",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-28",
+      "recorded_on": "2026-10-28",
+      "recheck_on": "2026-11-27",
+      "limitations": "The county page does not state fees, income limits or processing times, or give a program phone number."
+    },
+    {
       "id": "ev-pa26-5c0e1411128b",
       "subject_id": "svc-pa-hemp-permit",
       "claim": "service-description",
@@ -79167,6 +79455,32 @@
       "limitations": "General Assembly compilation of the Medical Marijuana Act, showing amendments through Act 63 of 2023 and a compiler's note on Act 45 of 2025. Regulations, Department of Health notices and court orders also apply and are not summarized here. Not legal advice."
     },
     {
+      "id": "ev-pa26-c3bc007dd729",
+      "subject_id": "rule-pa-driving",
+      "claim": "rule-summary",
+      "value": "75 Pa.C.S. § 3802(d)(1)(i) and (iii): any amount of a Schedule I controlled substance, or its metabolite, in the individual's blood. No subsection mentions medical marijuana. Source note lists amendments of May 11, 2006 and December 22, 2025 (Act 58, which changed subsections (g) and (h) only).",
+      "source_url": "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/75/00.038.002.000..HTM",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-28",
+      "recorded_on": "2026-10-28",
+      "recheck_on": "2026-11-27",
+      "limitations": "The effective date shown is the earliest date in the General Assembly's source note; the subsection may be older. Statute text of 75 Pa.C.S. § 3802. Court decisions, testing practice and penalties under other sections are not summarized. Not legal advice."
+    },
+    {
+      "id": "ev-pa26-2d32f6268afa",
+      "subject_id": "rule-pa-driving",
+      "claim": "rule-summary",
+      "value": "35 P.S. § 780-104(1)(iv) lists marihuana in Schedule I.",
+      "source_url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/1972/0/0064..HTM",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-28",
+      "recorded_on": "2026-10-28",
+      "recheck_on": "2026-11-27",
+      "limitations": "General Assembly compilation of the Controlled Substance, Drug, Device and Cosmetic Act. Local ordinances, charging practices and diversion programs are not covered. Not legal advice."
+    },
+    {
       "id": "ev-pa26-03bf47e2dae4",
       "subject_id": "rule-pa-clean-slate",
       "claim": "rule-summary",
@@ -79177,7 +79491,20 @@
       "reviewed_on": "2026-10-28",
       "recorded_on": "2026-10-28",
       "recheck_on": "2026-11-27",
-      "limitations": "Effective date computed as 180 days after December 14, 2023 from the amendment note; confirm against the Pennsylvania Bulletin or court guidance. Exclusions in the statute apply. Statute text of 18 Pa.C.S. § 9122.2. Whether a particular record qualifies depends on the full record, restitution and exclusions in the statute. Not legal advice."
+      "limitations": "Exclusions in the statute apply. Statute text of 18 Pa.C.S. § 9122.2. Whether a particular record qualifies depends on the full record, restitution and exclusions in the statute. Not legal advice."
+    },
+    {
+      "id": "ev-pa26-64aacd8edbeb",
+      "subject_id": "rule-pa-clean-slate",
+      "claim": "rule-summary",
+      "value": "Act 36 took effect February 12, 2024, except automated sealing, which took effect June 11, 2024; misdemeanor waiting period 7 years (previously 10) and summary convictions 5 years.",
+      "source_url": "https://clsphila.org/wp-content/uploads/2024/10/Clean-Slate-3.0-FAQ-Updated-10.15.24.pdf",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-28",
+      "recorded_on": "2026-10-28",
+      "recheck_on": "2026-11-27",
+      "limitations": "Legal aid provider's FAQ updated October 15, 2024; used only to confirm effective dates and waiting periods."
     }
   ],
   "rules": [
@@ -79249,13 +79576,26 @@
       "next_step_url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2016/0/0016..HTM"
     },
     {
+      "id": "rule-pa-driving",
+      "state": "PA",
+      "topic": "driving",
+      "summary": "Driving with any amount of a Schedule I controlled substance or its metabolite in your blood is DUI, whether or not you are impaired. Marijuana is a Schedule I substance under Pennsylvania law, and the DUI statute has no exception for medical marijuana patients.",
+      "effective_on": "2006-05-11",
+      "evidence_ids": [
+        "ev-pa26-c3bc007dd729",
+        "ev-pa26-2d32f6268afa"
+      ],
+      "next_step_url": "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/75/00.038.002.000..HTM"
+    },
+    {
       "id": "rule-pa-clean-slate",
       "state": "PA",
       "topic": "record-sealing",
       "summary": "Clean Slate limits access to (seals) certain records automatically: charges that did not end in a conviction; summary convictions after five years; and second- and third-degree misdemeanors and misdemeanors punishable by up to two years after seven years free of convictions punishable by a year or more. Court-ordered restitution must be paid. A pardon is a separate step.",
       "effective_on": "2024-06-11",
       "evidence_ids": [
-        "ev-pa26-03bf47e2dae4"
+        "ev-pa26-03bf47e2dae4",
+        "ev-pa26-64aacd8edbeb"
       ],
       "next_step_url": "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/18/00.091.022.002..HTM"
     }
@@ -80908,14 +81248,14 @@
           "coverage_status": "partial",
           "next_step": "Check what Clean Slate seals automatically, get your record, then use a local legal-help route or the Board of Pardons.",
           "public_url": "https://www.pa.gov/services/psp/apply-for-criminal-record-expungement",
-          "limitations": "Statewide routes: State Police record access, Board of Pardons application and expedited review. Local free help found only for Philadelphia (CLS, PLSE), Bucks, Chester, Delaware and Montgomery (LASP), and Monroe and Pike (NPLS). Neighborhood Legal Services and MidPenn Legal Services were checked and say they handle civil matters only, so western and central Pennsylvania have no listed record-clearing help yet. No automatic cannabis relief beyond Clean Slate is claimed."
+          "limitations": "Statewide routes: State Police record access, Board of Pardons application and expedited review. Local free help found for Philadelphia (CLS, PLSE), Bucks, Chester, Delaware and Montgomery (LASP), Monroe and Pike (NPLS) and Allegheny (Public Defender's Project Reset). Neighborhood Legal Services and MidPenn Legal Services were checked: their current intake pages describe civil help only, and MidPenn's only record-clearing material found was an undated brochure and past clinics. Central and most of western Pennsylvania have no listed record-clearing help yet. No automatic cannabis relief beyond Clean Slate is claimed."
         },
         {
           "pathway_id": "rules",
           "coverage_status": "starter",
           "next_step": "Read each dated summary, then the official statute it cites.",
           "public_url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2016/0/0016..HTM",
-          "limitations": "Five state-law summaries checked October 28, 2026 against the General Assembly's statute text: medical use limits, adult-use status and small-amount possession, home cultivation, employment protection and Clean Slate sealing. Not legal advice. Driving, local ordinances, hemp-derived products, Department of Health regulations and court orders are not summarized."
+          "limitations": "Six state-law summaries checked October 28, 2026 against the General Assembly's statute text: medical use limits, adult-use status and small-amount possession, home cultivation, employment protection, driving and Clean Slate sealing. Not legal advice. Local ordinances, hemp-derived products, Department of Health regulations and court orders are not summarized."
         },
         {
           "pathway_id": "medical",
@@ -80927,9 +81267,9 @@
         {
           "pathway_id": "business",
           "coverage_status": "starter",
-          "next_step": "Choose a provider type, such as testing labs, operators, banking, legal or consulting, and contact the provider.",
+          "next_step": "Choose a provider type, such as testing labs, operators, banking, insurance, security, legal or consulting, and contact the provider.",
           "public_url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/laboratories",
-          "limitations": "Selected providers with Pennsylvania-specific sources: all five laboratories (six locations) on the Department of Health approved list, 11 operator brands with Pennsylvania retail or cultivation pages, two banks, two law practices, one consultancy and one trade association. This is not a list of all grower/processor permit holders. No insurance, security, packaging, equipment or technology providers with Pennsylvania evidence yet. A listing is not an endorsement."
+          "limitations": "Selected providers with Pennsylvania-specific sources: all five laboratories (six locations) on the Department of Health approved list, 11 operator brands with Pennsylvania retail or cultivation pages, two banks, two law practices, one consultancy, one trade association, one insurance agency and one security firm. This is not a list of all grower/processor permit holders. No packaging, equipment or technology providers with Pennsylvania evidence yet. A listing is not an endorsement."
         },
         {
           "pathway_id": "community",

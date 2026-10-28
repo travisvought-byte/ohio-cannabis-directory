@@ -41,7 +41,7 @@ assert pa_pack['publication_status']=='pilot'
 assert {p['pathway_id']:p['coverage_status'] for p in pa_pack['pathways']}=={'dispensaries':'broad','seeds':'starter','records':'partial','rules':'starter','medical':'partial','business':'starter','community':'starter'}
 assert {p['pathway_id'] for p in pa_pack['pathways'] if p.get('public_url')}=={'dispensaries','seeds','records','rules','medical','business'}
 pa_services=[s for s in data['services'] if 'PA' in s.get('listed_in',[])]
-assert len(pa_services)==40
+assert len(pa_services)==43
 orgs={o['id']:o for o in data['organizations']}
 assert all(orgs[s['organization_id']]['scope']=='public' for s in pa_services)
 assert all(s['listed_in']==['PA'] for s in pa_services)
@@ -55,7 +55,7 @@ ohio_cards=json.loads((ROOT/'data/public-organizations.json').read_text())
 assert pa_details and not any(json.dumps(r.get('provider'),sort_keys=True) in pa_details for r in ohio_cards)
 assert not any(s['id']=='svc-pa-lab-act' for s in pa_services if s['organization_id']!='org-439251489828')
 pa_rules=[r for r in data['rules'] if r['state']=='PA']
-assert {r['topic'] for r in pa_rules}=={'medical-use','adult-use-possession','home-grow','employment','record-sealing'}
+assert {r['topic'] for r in pa_rules}=={'medical-use','adult-use-possession','home-grow','employment','driving','record-sealing'}
 assert all(any(evidence[k]['source_kind']=='government' for k in r['evidence_ids']) for r in pa_rules)
 intake=next(s for s in pa_services if s['id']=='svc-pa-npls-record-help')
 assert {(c['state'],c['county']) for c in intake['coverage']}=={('PA','Monroe'),('PA','Pike')}
