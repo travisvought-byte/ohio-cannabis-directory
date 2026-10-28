@@ -368,6 +368,38 @@
           ],
           "additionalProperties": false
         },
+        "regulator_listing": {
+          "type": "object",
+          "description": "A regulator roster entry for a location whose roster publishes no license or permit number.",
+          "properties": {
+            "regulator": {
+              "type": "string",
+              "minLength": 1
+            },
+            "kind": {
+              "enum": [
+                "medical",
+                "adult-use",
+                "dual-use",
+                "other"
+              ]
+            },
+            "roster_dated": {
+              "type": "string",
+              "format": "date"
+            },
+            "listed_open_on": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          "required": [
+            "regulator",
+            "kind",
+            "roster_dated"
+          ],
+          "additionalProperties": false
+        },
         "evidence_ids": {
           "type": "array",
           "items": {
@@ -1047,6 +1079,40 @@
           "type": "string",
           "format": "uri",
           "pattern": "^https?://"
+        },
+        "location_source": {
+          "type": "object",
+          "description": "How the location finder describes this state's location source.",
+          "properties": {
+            "description": {
+              "type": "string",
+              "minLength": 1
+            },
+            "source_label": {
+              "type": "string",
+              "minLength": 1
+            },
+            "source_url": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https?://"
+            },
+            "count_note": {
+              "type": "string",
+              "minLength": 1
+            },
+            "count_source_url": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https?://"
+            }
+          },
+          "required": [
+            "description",
+            "source_label",
+            "source_url"
+          ],
+          "additionalProperties": false
         },
         "pathways": {
           "type": "array",

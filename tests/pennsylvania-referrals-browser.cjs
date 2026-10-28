@@ -32,8 +32,13 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
   assert.match(await page.locator('#svc-pa-registration .print-route').innerText(),/pa.gov\/services\/health\/register/);
   await page.emulateMedia({media:'screen'});
   await page.selectOption('#state-select','OH');assert.equal(await page.locator('[id^="svc-pa-"]').count(),0);
-  await page.goto(server.base+'locations.html?state=PA');assert.equal(await page.locator('#cards article').count(),0);
-  assert.equal(await page.locator('#state option[value="PA"]').count(),0);
+  // Roster dispensaries appear in the finder; the legal-aid office does not.
+  await page.goto(server.base+'locations.html?state=PA');await page.waitForFunction(()=>document.querySelectorAll('#cards article').length===200);
+  assert.equal(await page.locator('#state option[value="PA"]').count(),1);
+  assert.equal(await page.locator('#cards article',{hasText:'North Penn Legal Services'}).count(),0);
+  await page.getByRole('searchbox',{name:'Search',exact:true}).fill('Stroudsburg');
+  assert.equal(await page.locator('#cards article').count(),2);
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   const plain=await browser.newContext({javaScriptEnabled:false}),fallback=await plain.newPage();
   await fallback.goto(server.base+'state.html?state=PA');
   assert(await fallback.getByRole('heading',{name:'Pennsylvania pilot referral routes'}).isVisible());

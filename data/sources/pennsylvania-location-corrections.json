@@ -1,0 +1,37 @@
+{
+  "corrections": [
+    {
+      "row": 1,
+      "field": "city",
+      "original": "Bulter",
+      "corrected": "Butler",
+      "reviewed_on": "2026-10-28",
+      "source_url": "https://geocoding.geo.census.gov/geocoder/geographies/address?street=201+Pillow+Street&city=Bulter&state=PA&zip=16001&benchmark=Public_AR_Current&vintage=Current_Current&layers=Counties&format=json",
+      "reason": "Spelling error in the roster. The U.S. Census Bureau Geocoder matches the same address and ZIP to 201 PILLOW ST, BUTLER, PA, 16001."
+    },
+    {
+      "row": 59,
+      "field": "zip",
+      "original": "19706",
+      "corrected": "19406",
+      "reviewed_on": "2026-10-28",
+      "source_url": "https://risecannabis.com/dispensaries/pennsylvania/king-of-prussia/",
+      "reason": "19706 is not a Pennsylvania ZIP code. The operator's store page gives 445 W Dekalb Pike, King of Prussia, PA 19406."
+    },
+    {
+      "row": 160,
+      "field": "zip",
+      "original": "17103",
+      "corrected": "17013",
+      "reviewed_on": "2026-10-28",
+      "source_url": "https://risecannabis.com/dispensaries/pennsylvania/carlisle/",
+      "reason": "The roster ZIP belongs to Harrisburg. The operator's store page gives 1186 Harrisburg Pike, Carlisle, PA 17013."
+    }
+  ],
+  "unresolved": [
+    {
+      "rows": [82, 180],
+      "note": "RISE - Monroeville appears twice, at 3838 and 3841 William Penn Highway, with the same phone number and different open dates. This may be a relocation that the roster still lists twice. Both rows are kept as printed until a source resolves them."
+    }
+  ]
+}

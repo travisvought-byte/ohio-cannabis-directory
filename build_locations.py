@@ -4,11 +4,14 @@ from directory_brand import brand_page
 from public_data import externalize
 OUT=ROOT/'locations.html'
 def build_page(data):
- # Referral offices are not dispensaries. Offer only states with imported licensed-location records.
- location_states={l['state'] for l in data['locations'] if l.get('license',{}).get('number')}
+ # Referral offices are not dispensaries. Offer only states with licensed or regulator-listed location records.
+ listed=lambda l:bool(l.get('license',{}).get('number') or l.get('regulator_listing'))
+ location_states={l['state'] for l in data['locations'] if listed(l)}
  states=[s for s in data['states'] if s['publication_status'] in ('live','pilot') and s['code'] in location_states]
  codes={s['code'] for s in states};evidence={e['id']:e for e in data['evidence']}
- locations=[dict(l,sources=[evidence[e] for e in l['evidence_ids']]) for l in data['locations'] if l['state'] in codes and l.get('license',{}).get('number')]
+ locations=[dict(l,sources=[evidence[e] for e in l['evidence_ids']]) for l in data['locations'] if l['state'] in codes and listed(l)]
+ for location in locations:
+  if any(s['claim']=='location-geocode' for s in location['sources']):location['approximate_point']=True
  organizations={o['id']:o for o in data['organizations']}
  for location in locations:
   linked=organizations.get(location.get('contact',{}).get('directory_organization_id'))

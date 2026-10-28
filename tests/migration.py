@@ -59,7 +59,8 @@ for o in hidden['organizations']:
 assert not validate(hidden)
 assert '<option value="PA">' not in build_page(hidden)
 public_locations=json.loads((ROOT/'data/public-locations.json').read_text())
-assert not any(l['state']=='PA' for l in public_locations['locations'])
+assert sum(l['state']=='PA' for l in public_locations['locations'])==200
+assert not any(l['state']=='PA' and l.get('organization_id')=='org-north-penn-legal-services' for l in public_locations['locations']),'Referral offices are not dispensaries'
 # A profile source cannot support a shipping badge.
 bad=copy.deepcopy(data);seed=next(s for s in bad['services'] if s.get('origin')=='seed-profile');seed['fulfillment'][0]['status']='confirmed';assert any('matching claim-level evidence' in e for e in validate(bad))
 print('PASS migration: exact legacy exports, stable IDs, 60 relationship IDs, seed aliases, conservative coverage and state-template isolation.')
