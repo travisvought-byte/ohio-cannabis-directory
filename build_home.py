@@ -36,6 +36,7 @@ nav a{min-height:44px;display:inline-flex;align-items:center}
 <p><strong><a href="directory.html">Open the searchable industry directory →</a></strong></p>
 <nav aria-label="Primary">
 <a href="directory.html">Business directory</a>
+<a href="state.html?state=PA">Pennsylvania portal</a>
 <a href="relationships.html">Business connections</a>
 <a href="locations.html">Find a dispensary</a>
 <a href="buyer-guide.html">Shop smart</a>
@@ -49,7 +50,7 @@ nav a{min-height:44px;display:inline-flex;align-items:center}
 <a href="https://travisvought-byte.github.io/vhg-veteran-resident-guide/">Veteran Resident Guide</a>
 </nav>
 </main>
-<footer class="site-footer">Created and maintained by <a href="work-with-travis.html">Travis Vought</a> · Shared in support of Veteran Home Guardians · release v__VERSION__</footer>
+<footer class="site-footer"><a href="state.html?state=PA">Pennsylvania portal</a> · Created and maintained by <a href="work-with-travis.html">Travis Vought</a> · Shared in support of Veteran Home Guardians · release v__VERSION__</footer>
 </body>
 </html>
 '''

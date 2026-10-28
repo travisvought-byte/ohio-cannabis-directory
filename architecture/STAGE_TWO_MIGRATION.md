@@ -14,7 +14,7 @@ The structured organization total includes additional seed providers, consumer r
 
 `templates/state.html` and `build_state.py` render state packs and services using one template. The public `state.html` page offers all seven need-based pathways. It preserves shareable state/pathway/search URLs and permanent service links. Business cards link back to existing `index.html?org=...` IDs. Providers without legacy organization cards expose their stable service link rather than a broken original-directory link.
 
-The renderer includes only live/pilot states. Unknown state requests display an unpublished-state message with no fallback Ohio results. Pilot states are labeled. The Pennsylvania referral pilot now uses the shared renderer for five reviewed patient, dispensary-lookup and legal-help services. Four other pathways are visibly unreviewed. Synthetic Washington fixtures exercise the research-only publication gate; they are not researched Washington data. The physical dispensary finder remains Ohio-only until PA dispensary locations are imported; a legal-aid office must not appear as a dispensary.
+The renderer includes only live/pilot states. Unknown state requests display an unpublished-state message with no fallback Ohio results. Pilot states are labeled. The Pennsylvania pilot uses the shared renderer for 119 source-reviewed resource routes across seven pathways and six cited law summaries, with per-pathway coverage limits. The October 28 publication adds 76 public-source routes in business services, education, record relief and patient/community support. Historical or unresolved research does not establish current service intake. Synthetic Washington fixtures exercise the research-only publication gate; they are not researched Washington data. The physical finder includes 200 entries from the September 16, 2026 PA regulator roster; legal-aid offices and supplier mailing addresses do not become dispensaries.
 
 Seed sex and flowering behavior can be filtered independently in both the seed page and shared state page. Supplier filters describe reviewed catalog categories, not a guarantee that every selected combination is sold. Shared-state shipping filters require claim-specific evidence, distinguish seller statements from manufacturer listings, and do not imply lawful delivery. Physical shop evidence is distinguished from Ohio seed pickup. Active filter chips can be removed individually.
 
@@ -26,7 +26,7 @@ Historical profiles have `source-listed` evidence, preserving any original revie
 
 Structured coverage remains empty where original service-area descriptions lack claim-level proof. The original text is preserved and labeled as historical. Editorial `listed_in: ["OH"]` means an entry belongs to the Ohio directory, not that its service covers all Ohio residents. A national provider's physical address is also separate from shipping/service coverage.
 
-No physical location rows were created from inferred addresses. The official Ohio location lookup remains available through the dispensary pathway. Verified physical location import/geocoding is a later data-acquisition task. Legal summaries link to official sources; effective dates are retained in structured rules and existing consumer summaries.
+No physical location rows were created from inferred addresses. The official Ohio location lookup remains available through the dispensary pathway. Physical finder snapshots and their explicit location/geocoding limits are maintained separately from service inquiries. Legal summaries link to official sources; effective dates are retained in structured rules and existing consumer summaries.
 
 ## Update and build
 
@@ -45,3 +45,9 @@ GitHub CI checks the canonical schema, migration/compatibility exports, referenc
 - Decompose more historical profile claims and re-review high-value providers.
 - Add a second state's official regulator, legal, medical and location routes through the same schema/template. Research-only packs must not advertise public routes; a pilot needs at least one reviewed actionable route and visible coverage limitations.
 - Conduct task tests with visitors: find a relevant dispensary lookup, county-appropriate record assistance, and an applicable supplier. Measure reaching a suitable next step, not just list size.
+
+## Pennsylvania publication maintenance
+
+The October 28 additions are curated public-source service records in `data/directory.json`, with dated claim-level evidence and permanent organization/service IDs. Internal research queues and import work files remain outside the public repository. Provider office presence alone does not create statewide coverage. Clinical routes describe provider advertising; individual licenses and program approval require the official practitioner lookup. No location, rule, stock or appointment availability is inferred from these service inquiries.
+
+The older `import_pa_ecosystem.py` rebuilds the initial 43-route baseline only; it is not a complete rebuild of the expanded canonical PA pack. Preserve the added services and current pathway limits when reviewing replacement data, then validate, export and rebuild the affected pages.
