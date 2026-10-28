@@ -1,0 +1,178 @@
+{
+  "batch": "mjbizcon-2026-10-28-ohio-candidates",
+  "status": "research leads; not published",
+  "prepared_on": "2026-10-28",
+  "basis": "MJBizCon 2026 exhibitors whose official exhibitor profile lists Ohio among their states of operation, and that have no record in this directory.",
+  "inclusion_note": "MJBizCon is held in Las Vegas, so the owner rule that exhibiting at an Ohio cannabis trade show establishes inclusion does not apply. Each lead needs Ohio-service evidence (an Ohio client, location, license or first-party statement) before it is listed.",
+  "candidates": [
+    {
+      "name": "Buddy",
+      "proposed_category": "Technology",
+      "website": "https://hellobuddy.app/",
+      "capabilities": "Dispensary e-commerce; Online ordering; CRM; Loyalty",
+      "ohio_signal": "Self-reported on MJBizCon 2026 profile: Arizona, California, Colorado, Florida, Illinois, Michigan, New York, Ohio, Washington",
+      "notes": "Candidate from the MJBizCon 2026 cross-check. Dispensary e-commerce: owned storefronts with SEO, real-time POS sync and CRM (email, SMS, loyalty); brand showcases and store locators. The official exhibitor profile lists Ohio among its states of operation (9 states listed, including Ohio). A web check on Oct 28, 2026 found no Ohio client, location or license. MJBizCon booth 25728; HQ Troy, MI, US.",
+      "sources": [
+        "https://mjbizcon2026.smallworldlabs.com/co/buddy",
+        "https://hellobuddy.app/"
+      ],
+      "proposed_record_id": "org-dc99616f1a08"
+    },
+    {
+      "name": "Cure8",
+      "proposed_category": "Security & Cash Logistics",
+      "website": "https://www.cure8.tech",
+      "capabilities": "IT; Security systems; Compliance; Facility technology",
+      "ohio_signal": "Self-reported on MJBizCon 2026 profile: all 50 states",
+      "notes": "Candidate from the MJBizCon 2026 cross-check. Cannabis facility IT, security, consulting, compliance, facility design and operational technology. The official exhibitor profile lists Ohio among its states of operation (all 50 states listed, so a weak signal). A web check on Oct 28, 2026 found no Ohio client, location or license. MJBizCon booth 26611; HQ Studio City, CA, US. Cure8 publishes an Ohio dispensary security-requirements article (https://cure8.tech/ohio-dispensary-security-laws-requirements/), which shows Ohio market interest but names no Ohio client.",
+      "sources": [
+        "https://mjbizcon2026.smallworldlabs.com/co/cure8",
+        "https://www.cure8.tech"
+      ],
+      "proposed_record_id": "org-bb530f0c5f0f"
+    },
+    {
+      "name": "Fogco",
+      "proposed_category": "Real Estate / Build-Out",
+      "website": "https://fogco.com/",
+      "capabilities": "Odor control; Humidification; Fog systems; Facility equipment",
+      "ohio_signal": "Self-reported on MJBizCon 2026 profile: all 50 states",
+      "notes": "Candidate from the MJBizCon 2026 cross-check. High-pressure fog systems for odor control, humidification and cooling, plus Snap-Fan air movers. The official exhibitor profile lists Ohio among its states of operation (all 50 states listed, so a weak signal). A web check on Oct 28, 2026 found no Ohio client, location or license. MJBizCon booth 21026; HQ Chandler, AZ, US. No facility-equipment category exists in the Ohio directory; Real Estate / Build-Out is the closest fit.",
+      "sources": [
+        "https://mjbizcon2026.smallworldlabs.com/co/fogco",
+        "https://fogco.com/"
+      ],
+      "proposed_record_id": "org-a6483559054e"
+    },
+    {
+      "name": "Front Row Ag",
+      "proposed_category": "Hemp / CBD Products & Ancillary",
+      "website": "https://www.frontrowag.com/",
+      "capabilities": "Nutrients; Fertilizers; Cultivation inputs",
+      "ohio_signal": "Self-reported on MJBizCon 2026 profile: all 50 states",
+      "notes": "Candidate from the MJBizCon 2026 cross-check. Dry soluble fertilizers and commercial nutrient programs. The official exhibitor profile lists Ohio among its states of operation (all 50 states listed, so a weak signal). A web check on Oct 28, 2026 found no Ohio client, location or license. MJBizCon booth 19724; HQ Arcata, CA, US. The Ohio directory has no cultivation-inputs category; filed under ancillary pending a category decision.",
+      "sources": [
+        "https://mjbizcon2026.smallworldlabs.com/co/front-row-ag",
+        "https://www.frontrowag.com/"
+      ],
+      "proposed_record_id": "org-fa9a4f87812a"
+    },
+    {
+      "name": "Glassentrate",
+      "proposed_category": "Marketing & Media",
+      "website": "https://glassentrate.com/",
+      "capabilities": "Dispensary displays; Product replicas; Merchandising",
+      "ohio_signal": "Self-reported on MJBizCon 2026 profile: all 50 states",
+      "notes": "Candidate from the MJBizCon 2026 cross-check. Fake hash (display replicas) and custom displays for dispensaries. The official exhibitor profile lists Ohio among its states of operation (all 50 states listed, so a weak signal). A web check on Oct 28, 2026 found no Ohio client, location or license. MJBizCon booth 27140; HQ Conifer, CO, US.",
+      "sources": [
+        "https://mjbizcon2026.smallworldlabs.com/co/glassentrate",
+        "https://glassentrate.com/"
+      ],
+      "proposed_record_id": "org-4cdcceadc8e6"
+    },
+    {
+      "name": "Heritage Software Solutions, LLC",
+      "proposed_category": "Staffing & HR",
+      "website": "https://www.heritagesoftwaresolutions.com/",
+      "capabilities": "Payroll; HR software; Timekeeping; Accounting software",
+      "ohio_signal": "Self-reported on MJBizCon 2026 profile: all 50 states",
+      "notes": "Candidate from the MJBizCon 2026 cross-check. HR, payroll, timekeeping and accounting software. The official exhibitor profile lists Ohio among its states of operation (all 50 states listed, so a weak signal). A web check on Oct 28, 2026 found no Ohio client, location or license. MJBizCon booth 25034; HQ Leavenworth, WA, US.",
+      "sources": [
+        "https://mjbizcon2026.smallworldlabs.com/co/heritage-software-solutions-llc",
+        "https://www.heritagesoftwaresolutions.com/"
+      ],
+      "proposed_record_id": "org-8436b0ddfa27"
+    },
+    {
+      "name": "Iron Heart Canning",
+      "proposed_category": "Packaging & Labeling",
+      "website": "https://www.ironheartcanning.com/cannabis-canning/",
+      "capabilities": "Beverage canning; Co-packing; THC beverages",
+      "ohio_signal": "Self-reported on MJBizCon 2026 profile: Alabama, Connecticut, Delaware, Florida, Georgia, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, New Hampshire, New Jersey, New York, North Carolina, Ohio, Oklahoma, Pennsylvania, Rhode Island, South Carolina, Tennessee, Texas, Vermont, Virginia, West Virginia, Wyoming",
+      "notes": "Candidate from the MJBizCon 2026 cross-check. Canning services for THC and CBD beverages with licensed partners. The official exhibitor profile lists Ohio among its states of operation (33 states listed, including Ohio). A web check on Oct 28, 2026 found no Ohio client, location or license. MJBizCon booth 25809; HQ Manchester, NH, US. A Nov. 2024 profile says it operates in 27 states without naming Ohio.",
+      "sources": [
+        "https://mjbizcon2026.smallworldlabs.com/co/iron-heart-canning",
+        "https://www.ironheartcanning.com/cannabis-canning/"
+      ],
+      "proposed_record_id": "org-cc207efd0a0e"
+    },
+    {
+      "name": "JWC Environmental",
+      "proposed_category": "Real Estate / Build-Out",
+      "website": "https://www.jwce.com",
+      "capabilities": "Waste grinders; Product destruction; Facility equipment",
+      "ohio_signal": "Self-reported on MJBizCon 2026 profile: all 50 states",
+      "notes": "Candidate from the MJBizCon 2026 cross-check. Monster grinders and shredders for solids reduction and product destruction. The official exhibitor profile lists Ohio among its states of operation (all 50 states listed, so a weak signal). A web check on Oct 28, 2026 found no Ohio client, location or license. MJBizCon booth 24109; HQ Santa Ana, CA, US. No facility-equipment category exists in the Ohio directory; Real Estate / Build-Out is the closest fit.",
+      "sources": [
+        "https://mjbizcon2026.smallworldlabs.com/co/jwc-environmental",
+        "https://www.jwce.com"
+      ],
+      "proposed_record_id": "org-3ed679705d91"
+    },
+    {
+      "name": "Lamont, Hanley & Assoc. Inc.",
+      "proposed_category": "Banking & Financial Services",
+      "website": "https://lhainc.com/",
+      "capabilities": "Collections; Accounts receivable",
+      "ohio_signal": "Self-reported on MJBizCon 2026 profile: all 50 states",
+      "notes": "Candidate from the MJBizCon 2026 cross-check. Accounts receivable management and collections (HITRUST and SOC 2 certified). The official exhibitor profile lists Ohio among its states of operation (all 50 states listed, so a weak signal). A web check on Oct 28, 2026 found no Ohio client, location or license. MJBizCon booth 25720; HQ Manchester, NH, US.",
+      "sources": [
+        "https://mjbizcon2026.smallworldlabs.com/co/lamont-hanley-assoc-inc",
+        "https://lhainc.com/"
+      ],
+      "proposed_record_id": "org-c41db21ed149"
+    },
+    {
+      "name": "Static Grow",
+      "proposed_category": "Technology",
+      "website": "http://www.staticgrow.com/",
+      "capabilities": "Facility controls; HVAC automation; Cultivation technology",
+      "ohio_signal": "Self-reported on MJBizCon 2026 profile: all 50 states",
+      "notes": "Candidate from the MJBizCon 2026 cross-check. Facility controls for HVAC, dehumidification, lighting, CO2 and irrigation on Tridium Niagara, with no per-room fees. The official exhibitor profile lists Ohio among its states of operation (all 50 states listed, so a weak signal). A web check on Oct 28, 2026 found no Ohio client, location or license. MJBizCon booth 19632; HQ Tampa, FL, US.",
+      "sources": [
+        "https://mjbizcon2026.smallworldlabs.com/co/static-grow",
+        "http://www.staticgrow.com/"
+      ],
+      "proposed_record_id": "org-f1fd68ebc8ad"
+    },
+    {
+      "name": "Thermal-Loc Insulated Panels and Door",
+      "proposed_category": "Real Estate / Build-Out",
+      "website": "https://thermal-loc.com",
+      "capabilities": "Insulated panels; Doors; Facility construction",
+      "ohio_signal": "Self-reported on MJBizCon 2026 profile: all 50 states",
+      "notes": "Candidate from the MJBizCon 2026 cross-check. Insulated metal panels and doors for cultivation facilities. The official exhibitor profile lists Ohio among its states of operation (all 50 states listed, so a weak signal). A web check on Oct 28, 2026 found no Ohio client, location or license. MJBizCon booth 19437; HQ Perris, CA, US.",
+      "sources": [
+        "https://mjbizcon2026.smallworldlabs.com/co/thermal-loc-insulated-panels-and-door",
+        "https://thermal-loc.com"
+      ],
+      "proposed_record_id": "org-8c18b0bdde14"
+    },
+    {
+      "name": "PDS Cultivation Intelligence",
+      "proposed_category": "Technology",
+      "website": "https://www.pdsgrows.com",
+      "capabilities": "Cultivation data; Sensors; Compliance integrations",
+      "ohio_signal": "Self-reported on MJBizCon 2026 profile: Alabama, Alaska, Arizona, California, Colorado, Illinois, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Montana, Nevada, New Jersey, Ohio, Oklahoma, Oregon",
+      "notes": "Candidate from the MJBizCon 2026 cross-check. Cultivation data platform that connects climate, fertigation, sensors, compliance and accounting systems. The official exhibitor profile lists Ohio among its states of operation (20 states listed, including Ohio). A web check on Oct 28, 2026 found no Ohio client, location or license. MJBizCon booth 26922; HQ Wildomar, CA, US.",
+      "sources": [
+        "https://mjbizcon2026.smallworldlabs.com/co/pds-cultivation-intelligence",
+        "https://www.pdsgrows.com"
+      ],
+      "proposed_record_id": "org-a4cf0400fbc6"
+    },
+    {
+      "name": "Shenzhen Novel Technology Co.,Ltd",
+      "proposed_category": "Packaging & Labeling",
+      "website": "https://www.novelecig.com",
+      "capabilities": "Vape hardware; OEM/ODM",
+      "ohio_signal": "Self-reported on MJBizCon 2026 profile: California, Colorado, Florida, Massachusetts, Michigan, Nevada, New Jersey, New York, Ohio, Oklahoma, Oregon, Pennsylvania, Texas, Washington",
+      "notes": "Candidate from the MJBizCon 2026 cross-check. Vape hardware design and OEM/ODM manufacturing. The official exhibitor profile lists Ohio among its states of operation (14 states listed, including Ohio). A web check on Oct 28, 2026 found no Ohio client, location or license. MJBizCon booth 25525; HQ ShenZhen,China.",
+      "sources": [
+        "https://mjbizcon2026.smallworldlabs.com/co/shenzhen-novel-technology-co-ltd",
+        "https://www.novelecig.com"
+      ],
+      "proposed_record_id": "org-98881446b855"
+    }
+  ]
+}
