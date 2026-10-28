@@ -1,0 +1,320 @@
+{
+  "batch_id": "pa-2026-10-28-business-batch-2",
+  "parent_issue": 42,
+  "issue": 65,
+  "state": "PA",
+  "publication_status": "research-only",
+  "reviewed_on": "2026-10-28",
+  "baseline_commit": "c112e97bc51adfdd1ad6ff9d16de8b8bae139c3f",
+  "method": "Primary page bodies opened and read October 28, 2026; search results used only for discovery. Six batch-local candidates; no permanent IDs assigned. Claims and PA connection have individual sources. Office presence and explicit service reach remain distinct.",
+  "candidates": [
+    {
+      "candidate_id": "pa-b2-durapack",
+      "name": "Dura-Pack",
+      "category": "Packaging / packaging automation equipment",
+      "pathway_ids": [
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name or website found in canonical organizations at c112e97bc51adfdd1ad6ff9d16de8b8bae139c3f. Check aliases and legal entity before assigning a permanent ID.",
+      "pennsylvania_relevance": "Dedicated PA cannabis supplier page.",
+      "next_step_url": "https://dura-pack.com/contact-us/",
+      "claims": [
+        {
+          "claim": "Markets pouches and automated weighing/filling equipment to Pennsylvania cannabis businesses.",
+          "source_ids": [
+            "pa-b2-durapack"
+          ],
+          "reviewed_on": "2026-10-28"
+        },
+        {
+          "claim": "Provides a packaging and automation inquiry route.",
+          "source_ids": [
+            "pa-b2-durapack-contact"
+          ],
+          "reviewed_on": "2026-10-28"
+        }
+      ],
+      "locations": [],
+      "limitations": "Supplier-stated Pennsylvania reach. Confirm project, shipping, installation and certification documents before purchase; no regulatory approval inferred."
+    },
+    {
+      "candidate_id": "pa-b2-dutchie",
+      "name": "Dutchie",
+      "category": "Technology / ecommerce inventory integration",
+      "pathway_ids": [
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": "org-a06c1362a303",
+      "identity_action": "reuse-existing",
+      "identity_match_note": "Exact brand match in canonical roster at c112e97bc51adfdd1ad6ff9d16de8b8bae139c3f. Preserve this permanent ID; existing Ohio fields do not establish PA coverage.",
+      "pennsylvania_relevance": "Provider support article explicitly covers PA dispensaries.",
+      "next_step_url": "https://support.dutchie.com/hc/en-us/articles/34041385932179-DOMO-Dutchie-E-Commerce-How-to-set-up-integration",
+      "claims": [
+        {
+          "claim": "Documents a DOMO integration for Pennsylvania dispensary ecommerce menus.",
+          "source_ids": [
+            "pa-b2-dutchie"
+          ],
+          "reviewed_on": "2026-10-28"
+        },
+        {
+          "claim": "Setup requires account permissions and location-specific configuration.",
+          "source_ids": [
+            "pa-b2-dutchie"
+          ],
+          "reviewed_on": "2026-10-28"
+        }
+      ],
+      "locations": [],
+      "limitations": "Scope is this documented menu integration; deployment, uptime and individual feature eligibility were not tested. No PA dispensary identity or customer relationship added."
+    },
+    {
+      "candidate_id": "pa-b2-sd",
+      "name": "SD Associates, P.C.",
+      "category": "Accounting / tax / bookkeeping",
+      "pathway_ids": [
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name or website found in canonical organizations at c112e97bc51adfdd1ad6ff9d16de8b8bae139c3f. Check aliases and legal entity before assigning a permanent ID.",
+      "pennsylvania_relevance": "Names five PA local service areas on its cannabis page.",
+      "next_step_url": "https://www.sdaccounting.com/industries-we-serve/cannabis/",
+      "claims": [
+        {
+          "claim": "Offers cannabis accounting, bookkeeping and advisory work.",
+          "source_ids": [
+            "pa-b2-sd"
+          ],
+          "reviewed_on": "2026-10-28"
+        },
+        {
+          "claim": "Names Philadelphia, Bucks, Montgomery, Chester and Lehigh as service areas.",
+          "source_ids": [
+            "pa-b2-sd"
+          ],
+          "reviewed_on": "2026-10-28"
+        }
+      ],
+      "locations": [],
+      "limitations": "Local provider-stated coverage, not independently confirmed statewide reach. Do not reuse source legal/tax explanations as authority. Engagement terms and capacity unknown."
+    },
+    {
+      "candidate_id": "pa-b2-greengrowth",
+      "name": "GreenGrowth CPAs",
+      "category": "Accounting / tax / financial management",
+      "pathway_ids": [
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": "org-9ed4875dc1d5",
+      "identity_action": "reuse-existing",
+      "identity_match_note": "Exact brand match in canonical roster at c112e97bc51adfdd1ad6ff9d16de8b8bae139c3f. Preserve this permanent ID; existing Ohio fields do not establish PA coverage.",
+      "pennsylvania_relevance": "Dedicated Pennsylvania practice page.",
+      "next_step_url": "https://greengrowthcpas.com/pennsylvania-cannabis-accounting/",
+      "claims": [
+        {
+          "claim": "Markets accounting, tax and financial management to Pennsylvania cannabis businesses.",
+          "source_ids": [
+            "pa-b2-greengrowth"
+          ],
+          "reviewed_on": "2026-10-28"
+        }
+      ],
+      "locations": [],
+      "limitations": "Reuse national identity. PA marketing page does not establish an in-state office, client list or independently verified qualifications. Preserve the existing tax-source caution."
+    },
+    {
+      "candidate_id": "pa-b2-alpine",
+      "name": "Alpine Packaging, Inc.",
+      "category": "Packaging / CBD labels",
+      "pathway_ids": [
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name or website found in canonical organizations at c112e97bc51adfdd1ad6ff9d16de8b8bae139c3f. Check aliases and legal entity before assigning a permanent ID.",
+      "pennsylvania_relevance": "Pennsylvania manufacturer with a CBD label offering.",
+      "next_step_url": "https://www.alpinepackaging.com/products-custom-printed-labels-cbd-labels/",
+      "claims": [
+        {
+          "claim": "Offers custom labels for CBD product containers.",
+          "source_ids": [
+            "pa-b2-alpine"
+          ],
+          "reviewed_on": "2026-10-28"
+        },
+        {
+          "claim": "Lists a North Versailles, Pennsylvania business address.",
+          "source_ids": [
+            "pa-b2-alpine"
+          ],
+          "reviewed_on": "2026-10-28"
+        }
+      ],
+      "locations": [
+        {
+          "address": "4000 Crooked Run Road",
+          "city": "North Versailles",
+          "state": "PA",
+          "postal_code": "15137",
+          "location_kind": "provider-listed-business-address",
+          "source_ids": [
+            "pa-b2-alpine"
+          ],
+          "reviewed_on": "2026-10-28",
+          "limitations": "Not a dispensary or verified public pickup point. County and coordinates not researched."
+        }
+      ],
+      "limitations": "CBD-only reviewed offering; do not broaden to medical-marijuana packaging or statewide fulfillment. Product compliance and medical claims are not adopted."
+    },
+    {
+      "candidate_id": "pa-b2-thar",
+      "name": "Thar Process",
+      "category": "Equipment / extraction systems",
+      "pathway_ids": [
+        "business"
+      ],
+      "state": "PA",
+      "research_status": "source-reviewed-candidate",
+      "publication_status": "research-only",
+      "existing_organization_id": null,
+      "identity_action": "propose-new-after-deduplication",
+      "identity_match_note": "No matching name or website found in canonical organizations at c112e97bc51adfdd1ad6ff9d16de8b8bae139c3f. Check aliases and legal entity before assigning a permanent ID.",
+      "pennsylvania_relevance": "Pittsburgh office and cannabis/hemp equipment catalog.",
+      "next_step_url": "https://www.tharprocess.com/contact",
+      "claims": [
+        {
+          "claim": "Catalog lists extraction systems for cannabis and hemp applications.",
+          "source_ids": [
+            "pa-b2-thar-equipment"
+          ],
+          "reviewed_on": "2026-10-28"
+        },
+        {
+          "claim": "Lists a Pittsburgh office and inquiry contact.",
+          "source_ids": [
+            "pa-b2-thar-contact"
+          ],
+          "reviewed_on": "2026-10-28"
+        }
+      ],
+      "locations": [
+        {
+          "address": "150 Gamma Dr",
+          "city": "Pittsburgh",
+          "state": "PA",
+          "postal_code": "15238",
+          "location_kind": "provider-listed-office",
+          "source_ids": [
+            "pa-b2-thar-contact"
+          ],
+          "reviewed_on": "2026-10-28",
+          "limitations": "Office address only; no retail access or pickup verified. County and coordinates not researched."
+        }
+      ],
+      "limitations": "Equipment supplier candidate. No PA grower/processor license, medical-marijuana toll processing authorization, installation terms or measured performance established."
+    }
+  ],
+  "pathway_summary": [
+    {
+      "pathway_id": "dispensaries",
+      "candidate_count": 0,
+      "research_coverage": "not-reviewed",
+      "gap": "No additions in this batch. Main already imports 200 dated roster rows; permit-holder reconciliation and 37 unmatched geocodes remain."
+    },
+    {
+      "pathway_id": "seeds",
+      "candidate_count": 0,
+      "research_coverage": "not-reviewed",
+      "gap": "No additions. Commercial equipment research does not create consumer seed, shipping or home-grow routes."
+    },
+    {
+      "pathway_id": "records",
+      "candidate_count": 0,
+      "research_coverage": "not-reviewed",
+      "gap": "No additions. Main includes Allegheny help; central and most western PA local record-help gaps remain."
+    },
+    {
+      "pathway_id": "rules",
+      "candidate_count": 0,
+      "research_coverage": "not-reviewed",
+      "gap": "No legal refresh. Main has six dated law summaries; local ordinances, hemp-product rules, regulations and court-order work remain separate."
+    },
+    {
+      "pathway_id": "medical",
+      "candidate_count": 0,
+      "research_coverage": "not-reviewed",
+      "gap": "No additions. Existing official and veteran routes preserved; individual clinician fees and local accessibility not researched."
+    },
+    {
+      "pathway_id": "business",
+      "candidate_count": 6,
+      "research_coverage": "starter",
+      "gap": "Six staged candidates: two packaging (one CBD-only), two equipment, one technology and two accounting category memberships; Dura-Pack overlaps packaging/equipment. No complete provider or permit-holder denominator."
+    },
+    {
+      "pathway_id": "community",
+      "candidate_count": 0,
+      "research_coverage": "not-reviewed",
+      "gap": "No additions. No event newly verified; existing groups and dated event-search limitations preserved."
+    }
+  ],
+  "leads": [
+    {
+      "name": "BPI Packaging Equipment",
+      "status": "needs-pa-specific-evidence",
+      "url": "https://bpiequip.com/industries/cannabis/",
+      "source_ids": [
+        "pa-b2-bpi",
+        "pa-b2-bpi-contact"
+      ],
+      "reason": "Cannabis equipment capability established, but Indiana address and no PA-specific reach. Not counted as a PA candidate."
+    },
+    {
+      "name": "Premier Printing and Packaging",
+      "status": "needs-pa-specific-evidence",
+      "url": "https://premierinc.biz/cbd-cannabis",
+      "source_ids": [
+        "pa-b2-premier"
+      ],
+      "reason": "General US client statement does not establish PA service. Not counted."
+    },
+    {
+      "name": "Green Mill Supercritical",
+      "status": "blocked-primary-source",
+      "url": "https://www.greenmillsupercritical.com/",
+      "reason": "Primary website inaccessible on this attempt; older search leads not promoted. No fresh review date or candidate."
+    }
+  ],
+  "summary": {
+    "candidate_count": 6,
+    "proposed_existing_identity_matches": 2,
+    "sample_location_count": 2,
+    "counts_overlap": true,
+    "source_count": 11
+  },
+  "promotion_requirements": [
+    "Owner review and bounded canonical-addition issue.",
+    "Reconcile the four proposed new identities and retain existing IDs for Dutchie and GreenGrowth.",
+    "Add service-description, service-coverage and contact evidence separately; do not infer statewide reach from an office.",
+    "Keep Alpine limited to CBD labels and Thar limited to equipment. No unreviewed license or regulatory approval claims.",
+    "Use existing schema/import conventions and regenerate/test all affected public outputs in the later promotion PR."
+  ]
+}
