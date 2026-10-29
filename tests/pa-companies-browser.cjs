@@ -5,9 +5,15 @@ try{
  page.on('pageerror',e=>errors.push(e.message));await page.route('**/gc.zgo.at/**',r=>r.abort());
  await page.goto(server.base+'directory.html');
  await page.getByRole('navigation',{name:'Primary',exact:true}).getByRole('link',{name:'Pennsylvania directory',exact:true}).click();
- await page.waitForFunction(()=>document.querySelectorAll('#results article').length===78);
- assert.match(await page.locator('#tally').innerText(),/78 matching organizations/);
+ await page.waitForFunction(()=>document.querySelectorAll('#results article').length===94);
+ assert.match(await page.locator('#tally').innerText(),/94 matching organizations/);
  const searchBox=await page.locator('#company-q').boundingBox();assert(searchBox.y+searchBox.height<844,'Company search should be available on the first mobile screen');
+ await page.locator('#company-category').selectOption('Laboratory equipment');
+ assert(await page.locator('#org-labrepco').isVisible());
+ await page.locator('#company-role').selectOption('Supplier');
+ assert.equal(await page.locator('#results article').count(),1);
+ assert.match(await page.locator('#org-labrepco').innerText(),/casework/);
+ await page.locator('#company-reset').click();
  await page.locator('#company-role').selectOption('Supplier');
  assert(await page.locator('#org-htg-supply').isVisible());assert.equal(await page.locator('#org-holistic-industries').count(),0);
  await page.locator('#company-q').fill('extraction');assert(await page.locator('#org-cannagas-supply').isVisible());

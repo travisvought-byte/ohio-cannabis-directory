@@ -41,7 +41,7 @@ assert pa_pack['publication_status']=='pilot'
 assert {p['pathway_id']:p['coverage_status'] for p in pa_pack['pathways']}=={'dispensaries':'broad','seeds':'starter','records':'partial','rules':'starter','medical':'partial','business':'partial','community':'partial'}
 assert {p['pathway_id'] for p in pa_pack['pathways'] if p.get('public_url')}=={'dispensaries','seeds','records','rules','medical','business'}
 pa_services=[s for s in data['services'] if 'PA' in s.get('listed_in',[])]
-assert len(pa_services)==132
+assert len(pa_services)==148
 orgs={o['id']:o for o in data['organizations']}
 assert all(orgs[s['organization_id']]['scope']=='public' for s in pa_services)
 assert all(s['listed_in']==['PA'] for s in pa_services)
