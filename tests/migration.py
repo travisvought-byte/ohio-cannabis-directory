@@ -66,6 +66,11 @@ from import_pa_ecosystem import build as import_pa,MANIFEST
 # The baseline importer remains repeatable and preserves separately reviewed additions.
 again=import_pa(copy.deepcopy(data),json.loads(MANIFEST.read_text()))
 assert import_pa(copy.deepcopy(again),json.loads(MANIFEST.read_text()))==again
+assert again==data,'Re-importing the baseline manifest must not rewrite pathway text or reorder records'
+# One identity per company: the Pennsylvania insurance route reuses the existing Insureon record.
+assert sum(o['name']=='Insureon' for o in data['organizations'])==1
+assert next(s for s in pa_services if s['id']=='svc-pa-insurance-insureon')['organization_id']=='org-6f378d0b5792'
+assert {'old_id':'org-insureon','new_id':'org-6f378d0b5792'} in data['aliases']
 base_ids={s['id'] for s in json.loads(MANIFEST.read_text())['services']}
 assert all(next(a for a in again['services'] if a['id']==s['id'])==s for s in pa_services if s['id'] in base_ids)
 new_services=[s for s in pa_services if s['id'].startswith('svc-pa-drive-')]

@@ -29,6 +29,14 @@ def make_evidence(subject,spec,sources,recheck):
  src=sources[spec['source']]
  return dict(id=evidence_id(subject,spec['claim'],spec['source'],spec['value']),subject_id=subject,claim=spec['claim'],value=spec['value'],source_url=src['url'],source_kind=src['source_kind'],status='source-reviewed',reviewed_on=src['reviewed_on'],recorded_on=src['reviewed_on'],recheck_on=recheck,limitations=(spec['limitations']+' '+src['limitations']) if 'limitations' in spec else src['limitations'])
 
+def upsert(items,updates):
+ """Replace records in place by ID so re-imports do not reorder the canonical file; append new ones."""
+ by_id={u['id']:u for u in updates};seen=set();out=[]
+ for item in items:
+  if item['id'] in by_id:out.append(by_id[item['id']]);seen.add(item['id'])
+  else:out.append(item)
+ return out+[u for u in updates if u['id'] not in seen]
+
 def build(data,manifest):
  sources=resolve_sources(manifest);recheck=manifest['recheck_on']
  orgs={o['id']:o for o in data['organizations']}
@@ -39,11 +47,7 @@ def build(data,manifest):
   if 'legacy_record' in org:raise ValueError(f'{spec["id"]}: manifest must not overwrite an Ohio directory record')
   org.update(name=spec['name'],kind=spec['kind'],website=spec['website'],contacts=spec['contacts'],scope='public')
   if not org['website']:org.pop('website')
- service_ids={s['id'] for s in manifest['services']};rule_ids={r['id'] for r in manifest['rules']}
- data['services']=[s for s in data['services'] if s['id'] not in service_ids]
- data['rules']=[r for r in data['rules'] if r['id'] not in rule_ids]
- data['evidence']=[e for e in data['evidence'] if not (e['id'].startswith(PREFIX) and (e['subject_id'] in service_ids or e['subject_id'] in rule_ids))]
- new_evidence=[]
+ new_services=[];new_rules=[];new_evidence=[]
  for spec in manifest['services']:
   if spec['organization_id'] not in orgs:raise ValueError(f'{spec["id"]}: unknown organization')
   sid=spec['id'];evidence=[make_evidence(sid,e,sources,recheck) for e in spec['evidence']];coverage=[]
@@ -57,19 +61,17 @@ def build(data,manifest):
    ev=make_evidence(sid,dict(claim='provider-contact',source=d['source'],value=d['contact_note']),sources,recheck);evidence.append(ev)
    attributes['provider_details']=dict(serves=d['serves'],coverage_note=d['coverage_note'],contact_note=d['contact_note'],source_url=src['url'].replace('http://','https://',1),reviewed_on=src['reviewed_on'])
    ev['source_url']=attributes['provider_details']['source_url']
-  data['services'].append(dict(id=sid,organization_id=spec['organization_id'],location_ids=[],pathway_ids=spec['pathway_ids'],name=spec['name'],coverage=coverage,audiences=spec['audiences'],eligibility=spec['eligibility'],next_step=spec['next_step'],availability='unknown',attributes=attributes,fulfillment=[],evidence_ids=[e['id'] for e in evidence],origin=spec.get('origin','organization-profile'),listed_in=['PA'],description=spec['description']))
+  new_services.append(dict(id=sid,organization_id=spec['organization_id'],location_ids=[],pathway_ids=spec['pathway_ids'],name=spec['name'],coverage=coverage,audiences=spec['audiences'],eligibility=spec['eligibility'],next_step=spec['next_step'],availability='unknown',attributes=attributes,fulfillment=[],evidence_ids=[e['id'] for e in evidence],origin=spec.get('origin','organization-profile'),listed_in=['PA'],description=spec['description']))
   new_evidence+=evidence
  for spec in manifest['rules']:
   evidence=[make_evidence(spec['id'],e,sources,recheck) for e in spec['evidence']]
-  data['rules'].append(dict(id=spec['id'],state='PA',topic=spec['topic'],summary=spec['summary'],effective_on=spec['effective_on'],evidence_ids=[e['id'] for e in evidence],next_step_url=spec['next_step_url']))
+  new_rules.append(dict(id=spec['id'],state='PA',topic=spec['topic'],summary=spec['summary'],effective_on=spec['effective_on'],evidence_ids=[e['id'] for e in evidence],next_step_url=spec['next_step_url']))
   new_evidence+=evidence
- data['evidence']+=new_evidence
- pa=next(s for s in data['states'] if s['code']=='PA')
- for p in pa['pathways']:
-  key=p['pathway_id']
-  if key in manifest['pathways']:
-   p.clear();p.update(pathway_id=key,**manifest['pathways'][key])
- pa['reviewed_on']=max(pa['reviewed_on'],manifest['reviewed_on'])
+ subjects={x['id'] for x in new_services+new_rules}
+ data['services']=upsert(data['services'],new_services)
+ data['rules']=upsert(data['rules'],new_rules)
+ kept=[e for e in data['evidence'] if not (e['id'].startswith(PREFIX) and e['subject_id'] in subjects and e['id'] not in {n['id'] for n in new_evidence})]
+ data['evidence']=upsert(kept,new_evidence)
  return data
 
 def main():
