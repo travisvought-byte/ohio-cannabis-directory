@@ -41,14 +41,14 @@ assert pa_pack['publication_status']=='pilot'
 assert {p['pathway_id']:p['coverage_status'] for p in pa_pack['pathways']}=={'dispensaries':'broad','seeds':'starter','records':'partial','rules':'starter','medical':'partial','business':'partial','community':'partial'}
 assert {p['pathway_id'] for p in pa_pack['pathways'] if p.get('public_url')}=={'dispensaries','seeds','records','rules','medical','business'}
 pa_services=[s for s in data['services'] if 'PA' in s.get('listed_in',[])]
-assert len(pa_services)==119
+assert len(pa_services)==132
 orgs={o['id']:o for o in data['organizations']}
 assert all(orgs[s['organization_id']]['scope']=='public' for s in pa_services)
 assert all(s['listed_in']==['PA'] for s in pa_services)
 assert all(s['evidence_ids'] for s in pa_services)
 evidence={e['id']:e for e in data['evidence']}
 assert all(evidence[k]['claim']=='service-coverage' and evidence[k]['subject_id']==s['id'] for s in pa_services for g in s['coverage'] for k in g['evidence_ids'])
-assert all(all(evidence[k]['status']=='source-reviewed' and evidence[k]['reviewed_on'] in ('2026-10-24','2026-10-28') for k in s['evidence_ids']) for s in pa_services)
+assert all(all(evidence[k]['status']=='source-reviewed' and evidence[k]['reviewed_on'] in ('2026-10-24','2026-10-28','2026-10-29') for k in s['evidence_ids']) for s in pa_services)
 # Pennsylvania services never write Pennsylvania text onto Ohio directory records.
 pa_details={json.dumps(s['attributes']['provider_details'],sort_keys=True) for s in pa_services if s['attributes'].get('provider_details')}
 ohio_cards=json.loads((ROOT/'data/public-organizations.json').read_text())

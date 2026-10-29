@@ -412,7 +412,7 @@ __VHG_CSS__
     __VHG_BRAND__
     <h1>Ohio cannabis industry directory</h1>
     <p class="directory-intro">Browse __N_PUB__ organizations and their published contacts. Search by business, person, specialty, city, or county.</p>
-    <p class="pa-portal-entry"><strong>Looking for Pennsylvania resources?</strong> <a href="state.html?state=PA">Open the Pennsylvania portal →</a> for dispensaries, business services, patient support and record-clearing help.</p>
+    <p class="pa-portal-entry"><strong>Looking for Pennsylvania companies?</strong> <a href="pennsylvania-directory.html">Open the Pennsylvania company directory →</a> for operators, suppliers, business contacts and brands. <a href="state.html?state=PA">PA resource portal</a>.</p>
     <div class="searchbox">
       <input id="q" type="search" autocomplete="off" spellcheck="false"
              placeholder="Search businesses, people, cities&hellip;"
