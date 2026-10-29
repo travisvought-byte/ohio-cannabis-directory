@@ -22,6 +22,8 @@ jobs:
           python tests/foundation.py
           python validate_foundation.py data/directory.json
           python tests/migration.py
+          python tests/pa_companies.py
+          python tests/pa_suppliers.py
           python tests/locations.py
           python tests/review_cleanup.py
           python tests/ancestry.py

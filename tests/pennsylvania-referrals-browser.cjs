@@ -32,7 +32,7 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
   assert.match(await page.locator('#rule-pa-adult-use-possession').innerText(),/no adult-use/);assert.match(await page.locator('#rule-pa-home-grow').innerText(),/not allowed/);
   await page.locator('#rule-pa-employment summary').click();assert.match(await page.locator('#rule-pa-employment details').innerText(),/Official source/);
   await page.getByRole('searchbox').fill('sealing');assert.equal(await page.locator('#state-rules article').count(),1);await page.getByRole('searchbox').fill('');
-  await page.selectOption('#path-select','business');assert.equal(await page.locator('#state-results article').count(),66);
+  await page.selectOption('#path-select','business');assert.equal(await page.locator('#state-results article').count(),95);
   assert.match(await page.locator('#svc-pa-drive-b5-inland').innerText(),/No statewide coverage is established/);
   assert.equal(await page.locator('#svc-pa-drive-b2-dutchie .btn').getAttribute('href'),'https://support.dutchie.com/hc/en-us/articles/34041385932179-DOMO-Dutchie-E-Commerce-How-to-set-up-integration');
   const lab=await page.locator('#svc-pa-lab-act').innerText();assert.match(lab,/Trafford/);assert(!/Ohio statewide/.test(lab),'Ohio service-area text stays off Pennsylvania cards');
@@ -58,6 +58,6 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
   assert(await fallback.getByRole('heading',{name:'Pennsylvania pilot referral routes'}).isVisible());
   assert(await fallback.getByRole('link',{name:'Monroe and Pike County legal-help intake',exact:true}).isVisible());
   await plain.close();assert.deepEqual(errors,[]);
-  console.log('PASS PA pilot: seven reviewed pathways, 119 routes, six cited law summaries, county scope, Ohio text isolation, deep links, no-JS access and mobile width.');
+  console.log('PASS PA pilot: seven reviewed pathways, 148 routes, six cited law summaries, county scope, Ohio text isolation, deep links, no-JS access and mobile width.');
  }finally{await browser.close();await server.close();}
 })().catch(e=>{console.error(e);process.exit(1)});
