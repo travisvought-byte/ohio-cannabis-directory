@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "scope": "directory",
-  "as_of": "2026-10-28",
+  "as_of": "2026-10-29",
   "organizations": [
     {
       "id": "org-6f5375e74696",
@@ -23274,6 +23274,105 @@
       "legacy_ids": [],
       "contacts": [],
       "website": "https://thegreenerinstitute.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-penn-health-group",
+      "name": "Penn Health Group",
+      "kind": "operator",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://www.pennhealthgrouppa.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-prime-wellness-pennsylvania",
+      "name": "Prime Wellness of Pennsylvania",
+      "kind": "operator",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://www.primewellnesspa.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-hanging-gardens",
+      "name": "Hanging Gardens",
+      "kind": "operator",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://hanginggardensmmj.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-holistic-industries",
+      "name": "Holistic Industries",
+      "kind": "operator",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://holisticindustries.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-greenzone-engineering",
+      "name": "Greenzone Engineering",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://www.greenzone-eng.com/about",
+      "scope": "public"
+    },
+    {
+      "id": "org-cannagas-supply",
+      "name": "Cannagas Supply",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://canna-gas.com/contact",
+      "scope": "public"
+    },
+    {
+      "id": "org-applied-separations",
+      "name": "Applied Separations",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://appliedseparations.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-htg-supply",
+      "name": "HTG Supply",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://www.htgsupply.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-pa-hydroponics",
+      "name": "PA Hydroponics",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://shop.pahydroponics.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-griffin-greenhouse-supplies",
+      "name": "Griffin Greenhouse Supplies",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://www.griffins.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-labelpack-automation",
+      "name": "LabelPack Automation",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://www.lpautomation.com/",
       "scope": "public"
     }
   ],
@@ -56623,6 +56722,500 @@
         "PA"
       ],
       "description": "Offers veterans and family members an online peer community with educational resources and membership access."
+    },
+    {
+      "id": "svc-pa-company-phg",
+      "organization_id": "org-penn-health-group",
+      "name": "Penn Health Group — Cultivation & processing",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry only. Confirm eligibility, permitted activities, product suitability and engagement terms directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://www.pennhealthgrouppa.com/contact"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking cultivation & processing.",
+          "coverage_note": "Company describes cultivation and production in Lemont Furnace, Pennsylvania. This is Pennsylvania relevance, not confirmation of statewide availability.",
+          "contact_note": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+          "source_url": "https://www.pennhealthgrouppa.com/contact",
+          "reviewed_on": "2026-10-28"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-company-83f374e85be930e8",
+        "ev-pa-company-24ef887d92b76d7c"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "Produces medical-cannabis products in Lemont Furnace; its site lists PHG, Penn Health and The John Daly Collection."
+    },
+    {
+      "id": "svc-pa-company-prime",
+      "organization_id": "org-prime-wellness-pennsylvania",
+      "name": "Prime Wellness of Pennsylvania — Cultivation & processing",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry only. Confirm eligibility, permitted activities, product suitability and engagement terms directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://www.primewellnesspa.com/contact-us/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking cultivation & processing.",
+          "coverage_note": "Company lists its office in Sinking Spring and describes serving Pennsylvania dispensaries. This is Pennsylvania relevance, not confirmation of statewide availability.",
+          "contact_note": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+          "source_url": "https://www.primewellnesspa.com/contact-us/",
+          "reviewed_on": "2026-10-28"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-company-c4fe7203f75f1f0c",
+        "ev-pa-company-05bf1af78a17a702"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "Cultivates and processes the prime product line for Pennsylvania dispensary partners."
+    },
+    {
+      "id": "svc-pa-company-hanging",
+      "organization_id": "org-hanging-gardens",
+      "name": "Hanging Gardens — Cultivation & processing",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry only. Confirm eligibility, permitted activities, product suitability and engagement terms directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://hanginggardensmmj.com/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking cultivation & processing.",
+          "coverage_note": "Company describes production at the former Cambria Iron and Steel Works in Johnstown. This is Pennsylvania relevance, not confirmation of statewide availability.",
+          "contact_note": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+          "source_url": "https://hanginggardensmmj.com/",
+          "reviewed_on": "2026-10-28"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-company-75648e0347722907",
+        "ev-pa-company-8dee4c0bf450d077"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "Describes medical-cannabis cultivation and processing in Johnstown, with Hanging Gardens and USONIA product lines."
+    },
+    {
+      "id": "svc-pa-company-frx",
+      "organization_id": "org-90725b1d60a7",
+      "name": "FarmaceuticalRx — Cultivation & processing",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry only. Confirm eligibility, permitted activities, product suitability and engagement terms directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://farmaceuticalrx.com/contact/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking cultivation & processing.",
+          "coverage_note": "Company lists Pennsylvania cultivation and processing in Farrell. This is Pennsylvania relevance, not confirmation of statewide availability.",
+          "contact_note": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+          "source_url": "https://farmaceuticalrx.com/contact/",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-company-a150c6b6ce078f3a",
+        "ev-pa-company-ab3030927faceae3"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "Markets FRX flower, live and cured resin, and RSO for Pennsylvania; its contact page identifies a Farrell cultivation and processing facility."
+    },
+    {
+      "id": "svc-pa-company-insa",
+      "organization_id": "org-afa309caf39c",
+      "name": "INSA — Cultivation & processing",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry only. Confirm eligibility, permitted activities, product suitability and engagement terms directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://insa.com/pa/contact-insa/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking cultivation & processing.",
+          "coverage_note": "Pennsylvania contact page lists Newtown Square; wholesale capability is described on the company’s separate wholesale page. This is Pennsylvania relevance, not confirmation of statewide availability.",
+          "contact_note": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+          "source_url": "https://insa.com/pa/contact-insa/",
+          "reviewed_on": "2026-10-28"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-company-758e7df361c08dc0",
+        "ev-pa-company-f5a832e9824b69cc"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "Offers an INSA wholesale product inquiry route and a Pennsylvania contact page."
+    },
+    {
+      "id": "svc-pa-company-holistic",
+      "organization_id": "org-holistic-industries",
+      "name": "Holistic Industries — Cultivation & processing",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry only. Confirm eligibility, permitted activities, product suitability and engagement terms directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://holisticindustries.com/contact-us/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking cultivation & processing.",
+          "coverage_note": "Company grow page explicitly names New Castle, Pennsylvania. This is Pennsylvania relevance, not confirmation of statewide availability.",
+          "contact_note": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+          "source_url": "https://holisticindustries.com/contact-us/",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-company-4f198977a7cf8328",
+        "ev-pa-company-fcd69dca9a8bee8f"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "Cultivates cannabis in New Castle and operates the Liberty retail brand; its portfolio includes Strane and Garcia Hand Picked."
+    },
+    {
+      "id": "svc-pa-company-greenzone",
+      "organization_id": "org-greenzone-engineering",
+      "name": "Greenzone Engineering — Facility design & climate",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry only. Confirm eligibility, permitted activities, product suitability and engagement terms directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://www.greenzone-eng.com/about"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking facility design & climate.",
+          "coverage_note": "Brand is used by Ian Atkins in New York and Kenneth Loshelder through Pennsylvania-based KL2E, LLC. This is Pennsylvania relevance, not confirmation of statewide availability.",
+          "contact_note": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+          "source_url": "https://www.greenzone-eng.com/about",
+          "reviewed_on": "2026-10-28"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-company-33cdb47932978a95",
+        "ev-pa-company-1f734a66f165c73f"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "Provides mechanical HVAC design and consulting for cannabis and controlled-environment facilities."
+    },
+    {
+      "id": "svc-pa-company-cannagas",
+      "organization_id": "org-cannagas-supply",
+      "name": "Cannagas Supply — Gases & consumables",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry only. Confirm eligibility, permitted activities, product suitability and engagement terms directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://canna-gas.com/contact"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking gases & consumables.",
+          "coverage_note": "Supplier explicitly includes Pennsylvania in its stated local delivery area; headquarters is in Massachusetts. This is Pennsylvania relevance, not confirmation of statewide availability.",
+          "contact_note": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+          "source_url": "https://canna-gas.com/contact",
+          "reviewed_on": "2026-10-28"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-company-67b57346b5db577d",
+        "ev-pa-company-02d22458ac969aae"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "Supplies extraction solvents, filtration media, nitrogen, carbon dioxide and dry ice to cannabis businesses."
+    },
+    {
+      "id": "svc-pa-company-applied",
+      "organization_id": "org-applied-separations",
+      "name": "Applied Separations — Extraction & processing equipment",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry only. Confirm eligibility, permitted activities, product suitability and engagement terms directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://appliedseparations.com/contact/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking extraction & processing equipment.",
+          "coverage_note": "Company lists its office in Allentown, Pennsylvania. This is Pennsylvania relevance, not confirmation of statewide availability.",
+          "contact_note": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+          "source_url": "https://appliedseparations.com/contact/",
+          "reviewed_on": "2026-10-28"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-company-011513c0153f2537",
+        "ev-pa-company-28384b08ec835491"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "Manufactures supercritical-fluid systems, high-pressure vessels and laboratory or process-scale extraction equipment."
+    },
+    {
+      "id": "svc-pa-company-htg",
+      "organization_id": "org-htg-supply",
+      "name": "HTG Supply — Cultivation supplies",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry only. Confirm eligibility, permitted activities, product suitability and engagement terms directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://www.htgsupply.com/shipping-policy/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking cultivation supplies.",
+          "coverage_note": "Its shipping policy identifies a central Pennsylvania warehouse and a Callery mailing address. This is Pennsylvania relevance, not confirmation of statewide availability.",
+          "contact_note": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+          "source_url": "https://www.htgsupply.com/shipping-policy/",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-company-7ec4bf72448d1696",
+        "ev-pa-company-7951b68463cd9f84"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "Sells grow lights, growing media, nutrients, hydroponic systems, environmental controls and commercial growing supplies."
+    },
+    {
+      "id": "svc-pa-company-pahydro",
+      "organization_id": "org-pa-hydroponics",
+      "name": "PA Hydroponics — Cultivation supplies",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry only. Confirm eligibility, permitted activities, product suitability and engagement terms directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://shop.pahydroponics.com/contact-us/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking cultivation supplies.",
+          "coverage_note": "Manufacturer’s retailer directory identifies PA Hydroponics in York Springs, Pennsylvania. This is Pennsylvania relevance, not confirmation of statewide availability.",
+          "contact_note": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+          "source_url": "https://shop.pahydroponics.com/contact-us/",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-company-c4a24a7421d974f6",
+        "ev-pa-company-e9bcd392ee04a8a7"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "Sells hydroponic systems and components, lighting, nutrients and environmental equipment."
+    },
+    {
+      "id": "svc-pa-company-griffin",
+      "organization_id": "org-griffin-greenhouse-supplies",
+      "name": "Griffin Greenhouse Supplies — Cultivation supplies",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry only. Confirm eligibility, permitted activities, product suitability and engagement terms directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://www.griffins.com/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking cultivation supplies.",
+          "coverage_note": "Company lists Morgantown, Pennsylvania among its branches. This is Pennsylvania relevance, not confirmation of statewide availability.",
+          "contact_note": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+          "source_url": "https://www.griffins.com/",
+          "reviewed_on": "2026-10-28"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-company-86ade5c577d2e3a8",
+        "ev-pa-company-cb1c058d0292e547"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "Supplies professional growers with horticultural supplies, greenhouse construction and related products."
+    },
+    {
+      "id": "svc-pa-company-labelpack",
+      "organization_id": "org-labelpack-automation",
+      "name": "LabelPack Automation — Packaging & labels",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry only. Confirm eligibility, permitted activities, product suitability and engagement terms directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://www.lpautomation.com/contact-labelpack-automation"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking packaging & labels.",
+          "coverage_note": "Company lists its headquarters in Bradford, Pennsylvania. This is Pennsylvania relevance, not confirmation of statewide availability.",
+          "contact_note": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+          "source_url": "https://www.lpautomation.com/contact-labelpack-automation",
+          "reviewed_on": "2026-10-28"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-company-fc32b1100bf30855",
+        "ev-pa-company-60c5792ddd01cb06"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ],
+      "description": "Provides label applicators, printing, integrated packaging systems and related supplies; its 2024 PACK EXPO profile listed cannabis products as a served market."
     }
   ],
   "evidence": [
@@ -85906,6 +86499,1839 @@
       "recorded_on": "2026-10-28",
       "recheck_on": "2027-01-26",
       "limitations": "Peer-support and education route, not clinical treatment, legal representation or a promise of funding. Its separate Operation 1620 page lists PA access, but certification and fee-reimbursement routes already exist in the baseline and are not added again. Confirm current membership terms and availability."
+    },
+    {
+      "id": "ev-pa-company-a626ac4d3c6a274c",
+      "subject_id": "org-penn-health-group",
+      "claim": "company-pa-connection",
+      "value": "Cultivation and medical-cannabis production in Lemont Furnace, Pennsylvania.",
+      "source_url": "https://www.pennhealthgrouppa.com/about",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-4072972cc4e233ae",
+      "subject_id": "org-penn-health-group",
+      "claim": "public-business-email",
+      "value": "contact@pennhgroup.com",
+      "source_url": "https://www.pennhealthgrouppa.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-8ba88d6707de5b02",
+      "subject_id": "org-penn-health-group",
+      "claim": "company-contact-purpose",
+      "value": "Public email accepts partnership, event and vendor inquiries as well as product service requests.",
+      "source_url": "https://www.pennhealthgrouppa.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-635ee72a9d7d3c7f",
+      "subject_id": "org-penn-health-group",
+      "claim": "company-brand",
+      "value": "Site navigation identifies PHG, Penn Health and The John Daly Collection.",
+      "source_url": "https://www.pennhealthgrouppa.com/about",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-83f374e85be930e8",
+      "subject_id": "svc-pa-company-phg",
+      "claim": "provider-capability",
+      "value": "Produces medical-cannabis products in Lemont Furnace; its site lists PHG, Penn Health and The John Daly Collection.",
+      "source_url": "https://www.pennhealthgrouppa.com/about",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted. General horticultural or extraction equipment is not evidence of authorization to handle marijuana."
+    },
+    {
+      "id": "ev-pa-company-24ef887d92b76d7c",
+      "subject_id": "svc-pa-company-phg",
+      "claim": "provider-contact",
+      "value": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+      "source_url": "https://www.pennhealthgrouppa.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-a0eed574d9cae0d3",
+      "subject_id": "org-prime-wellness-pennsylvania",
+      "claim": "company-pa-connection",
+      "value": "Office: 2 Corporate Boulevard, Sinking Spring, PA 19608.",
+      "source_url": "https://www.primewellnesspa.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-d56b002c2d449e86",
+      "subject_id": "org-prime-wellness-pennsylvania",
+      "claim": "company-brand",
+      "value": "prime is the company’s medical-cannabis product line.",
+      "source_url": "https://www.primewellnesspa.com/about/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-bc9ab47e77a7e180",
+      "subject_id": "org-prime-wellness-pennsylvania",
+      "claim": "company-affiliation",
+      "value": "The company’s About page names Acreage Holdings as its parent.",
+      "source_url": "https://www.primewellnesspa.com/about/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Company-stated immediate affiliation. Ultimate ownership, subsequent transactions and a current legal-entity ownership chart were not reconciled."
+    },
+    {
+      "id": "ev-pa-company-c4fe7203f75f1f0c",
+      "subject_id": "svc-pa-company-prime",
+      "claim": "provider-capability",
+      "value": "Cultivates and processes the prime product line for Pennsylvania dispensary partners.",
+      "source_url": "https://www.primewellnesspa.com/about/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted. General horticultural or extraction equipment is not evidence of authorization to handle marijuana."
+    },
+    {
+      "id": "ev-pa-company-05bf1af78a17a702",
+      "subject_id": "svc-pa-company-prime",
+      "claim": "provider-contact",
+      "value": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+      "source_url": "https://www.primewellnesspa.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-dbbe1fa1def206fb",
+      "subject_id": "org-hanging-gardens",
+      "claim": "company-pa-connection",
+      "value": "Company describes medical-cannabis production and jobs in Johnstown, Pennsylvania.",
+      "source_url": "https://hanginggardensmmj.com/about-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-142b2ff2bc7e3b8d",
+      "subject_id": "org-hanging-gardens",
+      "claim": "company-brand",
+      "value": "Homepage groups products under Hanging Gardens and USONIA.",
+      "source_url": "https://hanginggardensmmj.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-75648e0347722907",
+      "subject_id": "svc-pa-company-hanging",
+      "claim": "provider-capability",
+      "value": "Describes medical-cannabis cultivation and processing in Johnstown, with Hanging Gardens and USONIA product lines.",
+      "source_url": "https://hanginggardensmmj.com/about-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted. General horticultural or extraction equipment is not evidence of authorization to handle marijuana."
+    },
+    {
+      "id": "ev-pa-company-8dee4c0bf450d077",
+      "subject_id": "svc-pa-company-hanging",
+      "claim": "provider-contact",
+      "value": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+      "source_url": "https://hanginggardensmmj.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-83024bc0a9ee9316",
+      "subject_id": "org-90725b1d60a7",
+      "claim": "company-pa-connection",
+      "value": "Cultivation and processing: 660 Martin Luther King Jr Blvd, Farrell, PA 16121.",
+      "source_url": "https://farmaceuticalrx.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-b4153883e91a2c57",
+      "subject_id": "org-90725b1d60a7",
+      "claim": "public-business-phone",
+      "value": "724-655-3335",
+      "source_url": "https://farmaceuticalrx.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-3f7d14a975734540",
+      "subject_id": "org-90725b1d60a7",
+      "claim": "company-brand",
+      "value": "Company site lists FRX, Local Edibles, Open Mind Gummies, Tree Pharm, Burst of Wellness and CANNA ROCKS.",
+      "source_url": "https://farmaceuticalrx.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-a150c6b6ce078f3a",
+      "subject_id": "svc-pa-company-frx",
+      "claim": "provider-capability",
+      "value": "Markets FRX flower, live and cured resin, and RSO for Pennsylvania; its contact page identifies a Farrell cultivation and processing facility.",
+      "source_url": "https://farmaceuticalrx.com/brand/frx/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted. General horticultural or extraction equipment is not evidence of authorization to handle marijuana."
+    },
+    {
+      "id": "ev-pa-company-ab3030927faceae3",
+      "subject_id": "svc-pa-company-frx",
+      "claim": "provider-contact",
+      "value": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+      "source_url": "https://farmaceuticalrx.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-c4f5e672dd5082af",
+      "subject_id": "org-afa309caf39c",
+      "claim": "company-pa-connection",
+      "value": "The company’s PA contact page lists a Newtown Square location.",
+      "source_url": "https://insa.com/pa/contact-insa/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-3db338a9b85c6b12",
+      "subject_id": "org-afa309caf39c",
+      "claim": "company-contact-purpose",
+      "value": "Use the Pennsylvania contact form to confirm the appropriate wholesale representative; the listed Newtown Square telephone is a store contact.",
+      "source_url": "https://insa.com/pa/contact-insa/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-758e7df361c08dc0",
+      "subject_id": "svc-pa-company-insa",
+      "claim": "provider-capability",
+      "value": "Offers an INSA wholesale product inquiry route and a Pennsylvania contact page.",
+      "source_url": "https://insa.com/wholesale/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted. General horticultural or extraction equipment is not evidence of authorization to handle marijuana."
+    },
+    {
+      "id": "ev-pa-company-f5a832e9824b69cc",
+      "subject_id": "svc-pa-company-insa",
+      "claim": "provider-contact",
+      "value": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+      "source_url": "https://insa.com/pa/contact-insa/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-8aaf9dd878e07e3e",
+      "subject_id": "org-holistic-industries",
+      "claim": "company-pa-connection",
+      "value": "Company grow page lists cultivation in New Castle, PA.",
+      "source_url": "https://holisticindustries.com/our-grows/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-adccfc8eabfbfb14",
+      "subject_id": "org-holistic-industries",
+      "claim": "company-brand",
+      "value": "Corporate site identifies Liberty Cannabis stores and Strane and Garcia Hand Picked among its brands.",
+      "source_url": "https://holisticindustries.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-2097f01f8f25c08a",
+      "subject_id": "org-holistic-industries",
+      "claim": "public-business-person",
+      "value": "David Leider: President.",
+      "source_url": "https://holisticindustries.com/our-team/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-27322c35541561aa",
+      "subject_id": "org-holistic-industries",
+      "claim": "public-business-person",
+      "value": "Robby Saady: EVP Corporate Development & Partnerships.",
+      "source_url": "https://holisticindustries.com/our-team/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-b7915332889e9633",
+      "subject_id": "org-holistic-industries",
+      "claim": "public-business-person",
+      "value": "David Chiovetti: SVP Sales.",
+      "source_url": "https://holisticindustries.com/our-team/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-4f198977a7cf8328",
+      "subject_id": "svc-pa-company-holistic",
+      "claim": "provider-capability",
+      "value": "Cultivates cannabis in New Castle and operates the Liberty retail brand; its portfolio includes Strane and Garcia Hand Picked.",
+      "source_url": "https://holisticindustries.com/our-grows/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted. General horticultural or extraction equipment is not evidence of authorization to handle marijuana."
+    },
+    {
+      "id": "ev-pa-company-fcd69dca9a8bee8f",
+      "subject_id": "svc-pa-company-holistic",
+      "claim": "provider-contact",
+      "value": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+      "source_url": "https://holisticindustries.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-ba5d61f4c765bf1b",
+      "subject_id": "org-greenzone-engineering",
+      "claim": "company-pa-connection",
+      "value": "Kenneth Loshelder offers services through PA-based KL2E, LLC; Ian Atkins independently offers services from NY under the same Greenzone Engineering brand.",
+      "source_url": "https://www.greenzone-eng.com/about",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Shared service brand, not a claim that the independently offered services form one legal entity. Professional licenses and geographic engagement eligibility were not independently checked."
+    },
+    {
+      "id": "ev-pa-company-679b50314398fac7",
+      "subject_id": "org-greenzone-engineering",
+      "claim": "public-business-person",
+      "value": "Kenneth Loshelder: PA-based engineering provider through KL2E, LLC.",
+      "source_url": "https://www.greenzone-eng.com/about",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-3de57c345c826fe4",
+      "subject_id": "org-greenzone-engineering",
+      "claim": "public-business-person",
+      "value": "Ian Atkins: independently offers engineering services from New York.",
+      "source_url": "https://www.greenzone-eng.com/about",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-9430de1ca8091747",
+      "subject_id": "org-greenzone-engineering",
+      "claim": "public-business-phone",
+      "value": "715-209-4209",
+      "source_url": "https://www.greenzone-eng.com/about",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-33cdb47932978a95",
+      "subject_id": "svc-pa-company-greenzone",
+      "claim": "provider-capability",
+      "value": "Provides mechanical HVAC design and consulting for cannabis and controlled-environment facilities.",
+      "source_url": "https://www.greenzone-eng.com/about",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted. General horticultural or extraction equipment is not evidence of authorization to handle marijuana."
+    },
+    {
+      "id": "ev-pa-company-1f734a66f165c73f",
+      "subject_id": "svc-pa-company-greenzone",
+      "claim": "provider-contact",
+      "value": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+      "source_url": "https://www.greenzone-eng.com/about",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-9e1fcd78e8a2774d",
+      "subject_id": "org-cannagas-supply",
+      "claim": "company-pa-connection",
+      "value": "Pennsylvania is named in the supplier’s local delivery states.",
+      "source_url": "https://canna-gas.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Supplier-stated reach. Product-specific delivery terms, hazardous-material requirements and availability must be confirmed; no delivery was tested."
+    },
+    {
+      "id": "ev-pa-company-8109da5ddae25386",
+      "subject_id": "org-cannagas-supply",
+      "claim": "public-business-email",
+      "value": "sales@canna-gas.com",
+      "source_url": "https://canna-gas.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-1facce02c41e0d56",
+      "subject_id": "org-cannagas-supply",
+      "claim": "public-business-phone",
+      "value": "877-710-1965",
+      "source_url": "https://canna-gas.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-67b57346b5db577d",
+      "subject_id": "svc-pa-company-cannagas",
+      "claim": "provider-capability",
+      "value": "Supplies extraction solvents, filtration media, nitrogen, carbon dioxide and dry ice to cannabis businesses.",
+      "source_url": "https://canna-gas.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted. General horticultural or extraction equipment is not evidence of authorization to handle marijuana."
+    },
+    {
+      "id": "ev-pa-company-02d22458ac969aae",
+      "subject_id": "svc-pa-company-cannagas",
+      "claim": "provider-contact",
+      "value": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+      "source_url": "https://canna-gas.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-e68bb0fb86828f4f",
+      "subject_id": "org-applied-separations",
+      "claim": "company-pa-connection",
+      "value": "Office: 930 Hamilton Street, Allentown, PA 18101.",
+      "source_url": "https://appliedseparations.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-267f318100d737a8",
+      "subject_id": "org-applied-separations",
+      "claim": "public-business-phone",
+      "value": "610-770-0900",
+      "source_url": "https://appliedseparations.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-011513c0153f2537",
+      "subject_id": "svc-pa-company-applied",
+      "claim": "provider-capability",
+      "value": "Manufactures supercritical-fluid systems, high-pressure vessels and laboratory or process-scale extraction equipment.",
+      "source_url": "https://supercritical.appliedseparations.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted. General horticultural or extraction equipment is not evidence of authorization to handle marijuana."
+    },
+    {
+      "id": "ev-pa-company-28384b08ec835491",
+      "subject_id": "svc-pa-company-applied",
+      "claim": "provider-contact",
+      "value": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+      "source_url": "https://appliedseparations.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-ff99feb7663d5b9b",
+      "subject_id": "org-htg-supply",
+      "claim": "company-pa-connection",
+      "value": "Shipping policy says orders ship from a central Pennsylvania warehouse and lists P.O. Box 228, Callery PA 16024.",
+      "source_url": "https://www.htgsupply.com/shipping-policy/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-26aa3326a0a756da",
+      "subject_id": "org-htg-supply",
+      "claim": "public-business-phone",
+      "value": "866-710-4769",
+      "source_url": "https://www.htgsupply.com/shipping-policy/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-ed7a93e97a55bb9e",
+      "subject_id": "org-htg-supply",
+      "claim": "company-contact-purpose",
+      "value": "Homepage offers commercial/B2B accounts with dedicated representatives.",
+      "source_url": "https://www.htgsupply.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-7ec4bf72448d1696",
+      "subject_id": "svc-pa-company-htg",
+      "claim": "provider-capability",
+      "value": "Sells grow lights, growing media, nutrients, hydroponic systems, environmental controls and commercial growing supplies.",
+      "source_url": "https://www.htgsupply.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted. General horticultural or extraction equipment is not evidence of authorization to handle marijuana."
+    },
+    {
+      "id": "ev-pa-company-7951b68463cd9f84",
+      "subject_id": "svc-pa-company-htg",
+      "claim": "provider-contact",
+      "value": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+      "source_url": "https://www.htgsupply.com/shipping-policy/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-799c8cea8768fd07",
+      "subject_id": "org-pa-hydroponics",
+      "claim": "company-pa-connection",
+      "value": "Sin City Seeds retailer directory lists PA Hydroponics at 20 Quaker Church Rd, York Springs, PA 17372.",
+      "source_url": "https://sincityseeds.com/retail-store-locations",
+      "source_kind": "manufacturer",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Manufacturer-listed retailer address, not independent store or hours confirmation. The directory listing supports local identity only; this equipment profile does not establish lawful home cannabis cultivation or seed availability."
+    },
+    {
+      "id": "ev-pa-company-c4a24a7421d974f6",
+      "subject_id": "svc-pa-company-pahydro",
+      "claim": "provider-capability",
+      "value": "Sells hydroponic systems and components, lighting, nutrients and environmental equipment.",
+      "source_url": "https://shop.pahydroponics.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted. General horticultural or extraction equipment is not evidence of authorization to handle marijuana."
+    },
+    {
+      "id": "ev-pa-company-e9bcd392ee04a8a7",
+      "subject_id": "svc-pa-company-pahydro",
+      "claim": "provider-contact",
+      "value": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+      "source_url": "https://shop.pahydroponics.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-db6a390566b9a9da",
+      "subject_id": "org-griffin-greenhouse-supplies",
+      "claim": "company-pa-connection",
+      "value": "Company lists a Morgantown, PA branch.",
+      "source_url": "https://www.griffins.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "General horticultural supplier. Cannabis-specific customers, product approvals and statewide capacity were not established. The page could not be freshly retrieved on October 29; the successful October 28 review date is retained."
+    },
+    {
+      "id": "ev-pa-company-91c1da3fdde1b356",
+      "subject_id": "org-griffin-greenhouse-supplies",
+      "claim": "public-business-email",
+      "value": "orders@griffinmail.com",
+      "source_url": "https://www.griffins.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-e6dd9899a9878f75",
+      "subject_id": "org-griffin-greenhouse-supplies",
+      "claim": "public-business-phone",
+      "value": "800-888-0054",
+      "source_url": "https://www.griffins.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-69ee251a687ff979",
+      "subject_id": "org-griffin-greenhouse-supplies",
+      "claim": "public-business-person",
+      "value": "John Hyslip and Andrew Barry: Managing Directors.",
+      "source_url": "https://www.griffins.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-86ade5c577d2e3a8",
+      "subject_id": "svc-pa-company-griffin",
+      "claim": "provider-capability",
+      "value": "Supplies professional growers with horticultural supplies, greenhouse construction and related products.",
+      "source_url": "https://www.griffins.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted. General horticultural or extraction equipment is not evidence of authorization to handle marijuana."
+    },
+    {
+      "id": "ev-pa-company-cb1c058d0292e547",
+      "subject_id": "svc-pa-company-griffin",
+      "claim": "provider-contact",
+      "value": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+      "source_url": "https://www.griffins.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-2ca880e5f27dd73b",
+      "subject_id": "org-labelpack-automation",
+      "claim": "company-pa-connection",
+      "value": "Headquarters: 20 Russell Boulevard, Building E, Bradford, PA 16701.",
+      "source_url": "https://www.lpautomation.com/contact-labelpack-automation",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-6ec7a2983c5afd10",
+      "subject_id": "org-labelpack-automation",
+      "claim": "public-business-phone",
+      "value": "814-362-1528",
+      "source_url": "https://www.lpautomation.com/contact-labelpack-automation",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-ba6aefc117061069",
+      "subject_id": "org-labelpack-automation",
+      "claim": "public-business-email",
+      "value": "sales@lpautomation.com",
+      "source_url": "https://www.lpautomation.com/contact-labelpack-automation",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-8fa1a6af920063ea",
+      "subject_id": "org-labelpack-automation",
+      "claim": "company-market",
+      "value": "The company’s PACK EXPO International 2024 exhibitor profile includes cannabis products among its vertical markets.",
+      "source_url": "https://packexpo24.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=02014765",
+      "source_kind": "secondary",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Historical exhibitor-supplied market category, not a current customer list or evidence of PA cannabis packaging approval. Confirm current cannabis-project suitability."
+    },
+    {
+      "id": "ev-pa-company-fc32b1100bf30855",
+      "subject_id": "svc-pa-company-labelpack",
+      "claim": "provider-capability",
+      "value": "Provides label applicators, printing, integrated packaging systems and related supplies; its 2024 PACK EXPO profile listed cannabis products as a served market.",
+      "source_url": "https://www.lpautomation.com/contact-labelpack-automation",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted. General horticultural or extraction equipment is not evidence of authorization to handle marijuana."
+    },
+    {
+      "id": "ev-pa-company-60c5792ddd01cb06",
+      "subject_id": "svc-pa-company-labelpack",
+      "claim": "provider-contact",
+      "value": "Use the published business inquiry route to confirm product fit, PA scope and the appropriate representative.",
+      "source_url": "https://www.lpautomation.com/contact-labelpack-automation",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-a1cec68f4fbcc553",
+      "subject_id": "org-dura-pack",
+      "claim": "public-business-phone",
+      "value": "313-299-9600",
+      "source_url": "https://dura-pack.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-22f98f4f1553abab",
+      "subject_id": "org-dura-pack",
+      "claim": "company-contact-purpose",
+      "value": "General packaging, custom pouch, automation and engineering inquiries; company contact address is in Taylor, Michigan.",
+      "source_url": "https://dura-pack.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-3a8d9ceba2dfd559",
+      "subject_id": "org-thar-process",
+      "claim": "public-business-email",
+      "value": "info@tharprocess.com",
+      "source_url": "https://www.tharprocess.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-c8c463f1ed8145df",
+      "subject_id": "org-thar-process",
+      "claim": "public-business-phone",
+      "value": "412-968-0200",
+      "source_url": "https://www.tharprocess.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-35991d55d1d6e1f7",
+      "subject_id": "org-thar-process",
+      "claim": "company-pa-connection",
+      "value": "Office: 150 Gamma Dr, Pittsburgh, PA 15238.",
+      "source_url": "https://www.tharprocess.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-6626d71783d96579",
+      "subject_id": "org-alpine-packaging",
+      "claim": "public-business-email",
+      "value": "info@alpinepackaging.com",
+      "source_url": "https://www.alpinepackaging.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-3019e00c9ffbc932",
+      "subject_id": "org-alpine-packaging",
+      "claim": "public-business-phone",
+      "value": "412-664-4000",
+      "source_url": "https://www.alpinepackaging.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-680aa200e4de4e67",
+      "subject_id": "org-alpine-packaging",
+      "claim": "public-business-person",
+      "value": "Chad Lehigh: Sales Manager for poly-product inquiries on the quote page.",
+      "source_url": "https://www.alpinepackaging.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Role is for poly-product inquiries; this is not confirmation that the named person handles CBD labels or a particular cannabis engagement."
+    },
+    {
+      "id": "ev-pa-company-df8fab7294d32c2a",
+      "subject_id": "org-inland-packaging",
+      "claim": "public-business-phone",
+      "value": "608-788-5800",
+      "source_url": "https://www.inlandpackaging.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Corporate contact number, not a Downingtown facility direct line. No inquiry was made."
+    },
+    {
+      "id": "ev-pa-company-31086b62a1055b65",
+      "subject_id": "org-inland-packaging",
+      "claim": "company-pa-connection",
+      "value": "Company lists a Downingtown facility at 520 Lincoln Avenue, Suite #600, PA 19335.",
+      "source_url": "https://www.inlandpackaging.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-eb03d6e10a7da10e",
+      "subject_id": "org-elmark-packaging",
+      "claim": "public-business-email",
+      "value": "info@elmarkpkg.com",
+      "source_url": "https://www.elmarkpkg.com/cannabis-hemp-cbd-products/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-459236b96a2b2764",
+      "subject_id": "org-elmark-packaging",
+      "claim": "public-business-phone",
+      "value": "610-692-2455",
+      "source_url": "https://www.elmarkpkg.com/cannabis-hemp-cbd-products/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-0d1a39c15b15e0cb",
+      "subject_id": "org-sd-associates",
+      "claim": "public-business-phone",
+      "value": "215-517-5600",
+      "source_url": "https://www.sdaccounting.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-e160f275b8f61844",
+      "subject_id": "org-9ed4875dc1d5",
+      "claim": "public-business-phone",
+      "value": "800-674-9050",
+      "source_url": "https://greengrowthcpas.com/get-started/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "National firm inquiry number; not evidence of a Pennsylvania office or new-client acceptance."
+    },
+    {
+      "id": "ev-pa-company-efefcd791cb829fd",
+      "subject_id": "org-cc96c3d190d4",
+      "claim": "public-business-person",
+      "value": "Gal Hen, CPA: Principal and Practice Leader, HBK Cannabis Solutions; page lists Boca Raton, Florida.",
+      "source_url": "https://hbkcpa.com/industries/cannabis/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-d6c723435ae73e24",
+      "subject_id": "org-cc96c3d190d4",
+      "claim": "public-business-person",
+      "value": "Eric T. Grischow, CPA: Senior Manager and Regional Director, Cannabis Solutions; page lists Youngstown, Ohio.",
+      "source_url": "https://hbkcpa.com/industries/cannabis/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-61d152df4497761c",
+      "subject_id": "org-cozen-oconnor",
+      "claim": "public-business-person",
+      "value": "Joseph C. Bedwick: Vice Chair, Corporate Practice Group; Philadelphia cannabis-practice contact.",
+      "source_url": "https://www.cozen.com/industries/cannabis",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-400cb82d662d39eb",
+      "subject_id": "org-cozen-oconnor",
+      "claim": "public-business-email",
+      "value": "jbedwick@cozen.com",
+      "source_url": "https://www.cozen.com/industries/cannabis",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-cbead4162f970a71",
+      "subject_id": "org-cozen-oconnor",
+      "claim": "public-business-phone",
+      "value": "215-665-4753",
+      "source_url": "https://www.cozen.com/industries/cannabis",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-905333de3df3555b",
+      "subject_id": "org-maitri-medicinals",
+      "claim": "public-business-email",
+      "value": "contact@maitrimeds.com",
+      "source_url": "https://www.maitrimedicinals.com/story-mission-values",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Company-published general team contact. The story page and menu navigation use different local place labels; no store-address or hours correction is inferred."
+    },
+    {
+      "id": "ev-pa-company-b9cb2bcd59525990",
+      "subject_id": "org-vytal-options",
+      "claim": "company-brand",
+      "value": "Company describes Mood by Vytal as its in-house line.",
+      "source_url": "https://vytaloptions.com/locations/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-6ba33c31cb414d02",
+      "subject_id": "org-vytal-options",
+      "claim": "company-affiliation",
+      "value": "Company states that it partners with Penn State College of Medicine for research.",
+      "source_url": "https://vytaloptions.com/locations/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Company-stated research connection. This does not establish open studies, enrollment eligibility or academic-center certification status."
+    },
+    {
+      "id": "ev-pa-company-77592df46fdf08d7",
+      "subject_id": "org-pennsylvania-hemp-industry-council",
+      "claim": "company-supply-chain",
+      "value": "Council describes working with farmers, processors and innovators to map Pennsylvania hemp supply chains.",
+      "source_url": "https://pahempindustry.org/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Public website statement only. Current permit status, product stock, capacity, credentials and engagement terms were not independently verified. No inquiry or purchase was submitted."
+    },
+    {
+      "id": "ev-pa-company-913cad9cbdec8781",
+      "subject_id": "org-pennsylvania-hemp-industry-council",
+      "claim": "company-resources",
+      "value": "Council provides hemp-business financial models and pitch-deck guides.",
+      "source_url": "https://pahempindustry.org/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Business-planning resources, not funding approval, investment advice or a promise of an active grant."
+    },
+    {
+      "claim": "company-brand",
+      "value": "Wholesale page lists flower, edibles and vapes for PA, and lists Alien Labs and Connected in its PA offering.",
+      "source_url": "https://insa.com/wholesale/",
+      "reviewed_on": "2026-10-29",
+      "source_kind": "provider",
+      "limitations": "Supplier-published product offering, not proof of brand ownership, exclusive distribution rights, current inventory or a tested wholesale relationship.",
+      "id": "ev-pa-company-90d8a6d9ea385c01",
+      "subject_id": "org-afa309caf39c",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27"
+    },
+    {
+      "id": "ev-pa-company-cab9a9826803b6d7",
+      "subject_id": "org-penn-health-group",
+      "claim": "company-category",
+      "value": "Operators & brands",
+      "source_url": "https://www.pennhealthgrouppa.com/about",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-01be2868573aa201",
+      "subject_id": "org-penn-health-group",
+      "claim": "company-role",
+      "value": "Operator",
+      "source_url": "https://www.pennhealthgrouppa.com/about",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-800639a2f692eb53",
+      "subject_id": "org-prime-wellness-pennsylvania",
+      "claim": "company-category",
+      "value": "Operators & brands",
+      "source_url": "https://www.primewellnesspa.com/about/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-9dfc8fa9aaaf07c4",
+      "subject_id": "org-prime-wellness-pennsylvania",
+      "claim": "company-role",
+      "value": "Operator",
+      "source_url": "https://www.primewellnesspa.com/about/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-cb77ad45eb24e707",
+      "subject_id": "org-hanging-gardens",
+      "claim": "company-category",
+      "value": "Operators & brands",
+      "source_url": "https://hanginggardensmmj.com/about-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-81cbd03a89be0405",
+      "subject_id": "org-hanging-gardens",
+      "claim": "company-role",
+      "value": "Operator",
+      "source_url": "https://hanginggardensmmj.com/about-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-1171a38c5ff16b29",
+      "subject_id": "org-90725b1d60a7",
+      "claim": "company-category",
+      "value": "Operators & brands",
+      "source_url": "https://farmaceuticalrx.com/brand/frx/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-630e049f6b9f6c6e",
+      "subject_id": "org-90725b1d60a7",
+      "claim": "company-role",
+      "value": "Operator",
+      "source_url": "https://farmaceuticalrx.com/brand/frx/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-b558a81c129b5c5d",
+      "subject_id": "org-afa309caf39c",
+      "claim": "company-category",
+      "value": "Operators & brands",
+      "source_url": "https://insa.com/wholesale/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-287acc85c2fdd61e",
+      "subject_id": "org-afa309caf39c",
+      "claim": "company-role",
+      "value": "Operator",
+      "source_url": "https://insa.com/wholesale/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-9bdef5d554335493",
+      "subject_id": "org-holistic-industries",
+      "claim": "company-category",
+      "value": "Operators & brands",
+      "source_url": "https://holisticindustries.com/our-grows/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-69ffa0a4257ecd5e",
+      "subject_id": "org-holistic-industries",
+      "claim": "company-role",
+      "value": "Operator",
+      "source_url": "https://holisticindustries.com/our-grows/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-e157de18bdb24676",
+      "subject_id": "org-greenzone-engineering",
+      "claim": "company-category",
+      "value": "Facility design & climate",
+      "source_url": "https://www.greenzone-eng.com/about",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-8abc0de12c2e2f1a",
+      "subject_id": "org-greenzone-engineering",
+      "claim": "company-role",
+      "value": "Service provider",
+      "source_url": "https://www.greenzone-eng.com/about",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-4ebcba39ca06d64e",
+      "subject_id": "org-cannagas-supply",
+      "claim": "company-category",
+      "value": "Gases & consumables",
+      "source_url": "https://canna-gas.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-2effd6406b4ff811",
+      "subject_id": "org-cannagas-supply",
+      "claim": "company-role",
+      "value": "Supplier",
+      "source_url": "https://canna-gas.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-110bc5fe82bbb1c1",
+      "subject_id": "org-applied-separations",
+      "claim": "company-category",
+      "value": "Extraction & processing equipment",
+      "source_url": "https://supercritical.appliedseparations.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-53657fc4796c3ccb",
+      "subject_id": "org-applied-separations",
+      "claim": "company-role",
+      "value": "Supplier",
+      "source_url": "https://supercritical.appliedseparations.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-9563974ad26530ee",
+      "subject_id": "org-htg-supply",
+      "claim": "company-category",
+      "value": "Cultivation supplies",
+      "source_url": "https://www.htgsupply.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-0d5f46a873c6cce6",
+      "subject_id": "org-htg-supply",
+      "claim": "company-role",
+      "value": "Supplier",
+      "source_url": "https://www.htgsupply.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-407bc72ff42071a7",
+      "subject_id": "org-pa-hydroponics",
+      "claim": "company-category",
+      "value": "Cultivation supplies",
+      "source_url": "https://shop.pahydroponics.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-50e5990d7b054939",
+      "subject_id": "org-pa-hydroponics",
+      "claim": "company-role",
+      "value": "Supplier",
+      "source_url": "https://shop.pahydroponics.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-58d43500daef3518",
+      "subject_id": "org-griffin-greenhouse-supplies",
+      "claim": "company-category",
+      "value": "Cultivation supplies",
+      "source_url": "https://www.griffins.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-4142de6f4206b2e8",
+      "subject_id": "org-griffin-greenhouse-supplies",
+      "claim": "company-role",
+      "value": "Supplier",
+      "source_url": "https://www.griffins.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-1ac42bc9ed00b595",
+      "subject_id": "org-labelpack-automation",
+      "claim": "company-category",
+      "value": "Packaging & labels",
+      "source_url": "https://www.lpautomation.com/contact-labelpack-automation",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-095633d0f137af53",
+      "subject_id": "org-labelpack-automation",
+      "claim": "company-role",
+      "value": "Supplier",
+      "source_url": "https://www.lpautomation.com/contact-labelpack-automation",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-8bedba37a86d981f",
+      "subject_id": "org-dura-pack",
+      "claim": "company-category",
+      "value": "Packaging & labels",
+      "source_url": "https://dura-pack.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-3d462c79a28483af",
+      "subject_id": "org-dura-pack",
+      "claim": "company-role",
+      "value": "Supplier",
+      "source_url": "https://dura-pack.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-5a7dfbbb0833f9a6",
+      "subject_id": "org-thar-process",
+      "claim": "company-category",
+      "value": "Extraction & processing equipment",
+      "source_url": "https://www.tharprocess.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-953aff9a708dba4b",
+      "subject_id": "org-thar-process",
+      "claim": "company-role",
+      "value": "Supplier",
+      "source_url": "https://www.tharprocess.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-c64b552e18b74993",
+      "subject_id": "org-alpine-packaging",
+      "claim": "company-category",
+      "value": "Packaging & labels",
+      "source_url": "https://www.alpinepackaging.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-50856286d26f670c",
+      "subject_id": "org-alpine-packaging",
+      "claim": "company-role",
+      "value": "Supplier",
+      "source_url": "https://www.alpinepackaging.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-555e3f03ed7719d6",
+      "subject_id": "org-inland-packaging",
+      "claim": "company-category",
+      "value": "Packaging & labels",
+      "source_url": "https://www.inlandpackaging.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-c4ac441601a10c3f",
+      "subject_id": "org-inland-packaging",
+      "claim": "company-role",
+      "value": "Supplier",
+      "source_url": "https://www.inlandpackaging.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-1af17074336fe9b0",
+      "subject_id": "org-elmark-packaging",
+      "claim": "company-category",
+      "value": "Packaging & labels",
+      "source_url": "https://www.elmarkpkg.com/cannabis-hemp-cbd-products/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-6ea8895d65e4a778",
+      "subject_id": "org-elmark-packaging",
+      "claim": "company-role",
+      "value": "Supplier",
+      "source_url": "https://www.elmarkpkg.com/cannabis-hemp-cbd-products/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-db862a4ef1a0d8f8",
+      "subject_id": "org-sd-associates",
+      "claim": "company-category",
+      "value": "Accounting & finance",
+      "source_url": "https://www.sdaccounting.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-1e9a49a403d3c038",
+      "subject_id": "org-sd-associates",
+      "claim": "company-role",
+      "value": "Service provider",
+      "source_url": "https://www.sdaccounting.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-ed783209e1116c7c",
+      "subject_id": "org-9ed4875dc1d5",
+      "claim": "company-category",
+      "value": "Accounting & finance",
+      "source_url": "https://greengrowthcpas.com/get-started/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-6303c97e9913722a",
+      "subject_id": "org-9ed4875dc1d5",
+      "claim": "company-role",
+      "value": "Service provider",
+      "source_url": "https://greengrowthcpas.com/get-started/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-016a53220c8e83f2",
+      "subject_id": "org-cc96c3d190d4",
+      "claim": "company-category",
+      "value": "Accounting & finance",
+      "source_url": "https://hbkcpa.com/industries/cannabis/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-0ec90e01e6c816c5",
+      "subject_id": "org-cc96c3d190d4",
+      "claim": "company-role",
+      "value": "Service provider",
+      "source_url": "https://hbkcpa.com/industries/cannabis/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-372ef7616eaf3e3c",
+      "subject_id": "org-cozen-oconnor",
+      "claim": "company-category",
+      "value": "Legal & licensing",
+      "source_url": "https://www.cozen.com/industries/cannabis",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-23dd81a9e57778ba",
+      "subject_id": "org-cozen-oconnor",
+      "claim": "company-role",
+      "value": "Service provider",
+      "source_url": "https://www.cozen.com/industries/cannabis",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-74c568cb67433699",
+      "subject_id": "org-maitri-medicinals",
+      "claim": "company-category",
+      "value": "Operators & brands",
+      "source_url": "https://www.maitrimedicinals.com/story-mission-values",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-1cedcff7aa26092e",
+      "subject_id": "org-maitri-medicinals",
+      "claim": "company-role",
+      "value": "Operator",
+      "source_url": "https://www.maitrimedicinals.com/story-mission-values",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-87b967fe9567ae17",
+      "subject_id": "org-vytal-options",
+      "claim": "company-category",
+      "value": "Operators & brands",
+      "source_url": "https://vytaloptions.com/locations/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-7136f0f5b1879719",
+      "subject_id": "org-vytal-options",
+      "claim": "company-role",
+      "value": "Operator",
+      "source_url": "https://vytaloptions.com/locations/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-813c26865f91a3a8",
+      "subject_id": "org-pennsylvania-hemp-industry-council",
+      "claim": "company-category",
+      "value": "Industry organizations",
+      "source_url": "https://pahempindustry.org/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-company-0fde179ad1c58819",
+      "subject_id": "org-pennsylvania-hemp-industry-council",
+      "claim": "company-role",
+      "value": "Industry organization",
+      "source_url": "https://pahempindustry.org/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "recorded_on": "2026-10-29",
+      "reviewed_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
     }
   ],
   "rules": [
@@ -87628,7 +90054,7 @@
         "source_label": "Department of Health roster",
         "source_url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/dispensaries"
       },
-      "reviewed_on": "2026-10-28",
+      "reviewed_on": "2026-10-29",
       "pathways": [
         {
           "pathway_id": "dispensaries",
