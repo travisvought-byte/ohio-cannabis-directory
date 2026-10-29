@@ -1,0 +1,153 @@
+{
+  "batch_id": "pa-2026-10-28-business-batch-2",
+  "sources": [
+    {
+      "id": "pa-b2-durapack",
+      "url": "https://dura-pack.com/pennsylvania-marijuana-cannabis-packaging",
+      "publisher": "Dura-Pack",
+      "title": "Pennsylvania Marijuana Cannabis Packaging Equipment Machines & Systems",
+      "source_kind": "first-party",
+      "retrieval_status": "reviewed",
+      "retrieved_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "supported_claim": "Provider markets cannabis pouches and packaging automation to Pennsylvania organizations.",
+      "limitations": "Supplier-stated reach only. Undated page includes a 2022 legal-state list and unrendered shortcodes. Compliance, performance and product-legality assertions are excluded."
+    },
+    {
+      "id": "pa-b2-durapack-contact",
+      "url": "https://dura-pack.com/contact-us/",
+      "publisher": "Dura-Pack",
+      "title": "Contact Us",
+      "source_kind": "first-party",
+      "retrieval_status": "reviewed",
+      "retrieved_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "supported_claim": "Contact page offers packaging and automation inquiries.",
+      "limitations": "Form and phone not submitted or tested; acceptance, shipping and installation scope unknown."
+    },
+    {
+      "id": "pa-b2-dutchie",
+      "url": "https://support.dutchie.com/hc/en-us/articles/34041385932179-DOMO-Dutchie-E-Commerce-How-to-set-up-integration",
+      "publisher": "Dutchie",
+      "title": "DOMO | Dutchie E-Commerce - How to set up integration",
+      "source_kind": "first-party",
+      "retrieval_status": "reviewed",
+      "retrieved_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "supported_claim": "Support documentation describes DOMO inventory-menu synchronization for Pennsylvania dispensaries.",
+      "limitations": "Documentation, not a tested integration or statewide customer roster. Account permissions and per-location configuration apply. Does not establish all POS, payment or delivery features."
+    },
+    {
+      "id": "pa-b2-sd",
+      "url": "https://www.sdaccounting.com/industries-we-serve/cannabis/",
+      "publisher": "SD Associates, P.C.",
+      "title": "Cannabis Accounting Services",
+      "source_kind": "first-party",
+      "retrieval_status": "reviewed",
+      "retrieved_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "supported_claim": "Firm offers cannabis accounting and names Philadelphia, Bucks, Montgomery, Chester and Lehigh in its service area.",
+      "limitations": "Provider statement only. Federal classification, banking and tax assertions are not adopted as current law. Fees, practitioner credentials and new-client availability not independently checked."
+    },
+    {
+      "id": "pa-b2-greengrowth",
+      "url": "https://greengrowthcpas.com/pennsylvania-cannabis-accounting/",
+      "publisher": "GreenGrowth CPAs",
+      "title": "Pennsylvania Cannabis Accounting Services",
+      "source_kind": "first-party",
+      "retrieval_status": "reviewed",
+      "retrieved_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "supported_claim": "Dedicated Pennsylvania page markets cannabis accounting, tax and financial management services.",
+      "limitations": "Page has inconsistent New York/Minnesota template text. Review supports the explicit PA service statement only, not legal conclusions, outcomes, credentials or a PA office."
+    },
+    {
+      "id": "pa-b2-alpine",
+      "url": "https://www.alpinepackaging.com/products-custom-printed-labels-cbd-labels/",
+      "publisher": "Alpine Packaging, Inc.",
+      "title": "CBD Labels",
+      "source_kind": "first-party",
+      "retrieval_status": "reviewed",
+      "retrieved_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "supported_claim": "Offers custom CBD labels; footer gives a North Versailles, Pennsylvania address.",
+      "limitations": "CBD-label capability and local presence only. No statewide delivery, medical-marijuana packaging approval, health benefit or product-lawfulness determination."
+    },
+    {
+      "id": "pa-b2-thar-equipment",
+      "url": "https://www.tharprocess.com/extraction-equipment",
+      "publisher": "Thar Process",
+      "title": "Extraction Equipment",
+      "source_kind": "first-party",
+      "retrieval_status": "reviewed",
+      "retrieved_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "supported_claim": "Catalog identifies industrial cannabis and hemp applications for extraction equipment.",
+      "limitations": "Equipment capability only. No medical-marijuana permit, plant-handling authorization, performance testing or customer acceptance established."
+    },
+    {
+      "id": "pa-b2-thar-contact",
+      "url": "https://www.tharprocess.com/contact",
+      "publisher": "Thar Process",
+      "title": "Contact Us",
+      "source_kind": "first-party",
+      "retrieval_status": "reviewed",
+      "retrieved_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "supported_claim": "Provider lists a Pittsburgh office and public inquiry route.",
+      "limitations": "Office location does not establish service in every PA county. No inquiry sent or phone call made."
+    },
+    {
+      "id": "pa-b2-bpi",
+      "url": "https://bpiequip.com/industries/cannabis/",
+      "publisher": "BPI Packaging Equipment",
+      "title": "Cannabis",
+      "source_kind": "first-party",
+      "retrieval_status": "reviewed",
+      "retrieved_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "supported_claim": "Offers cannabis packaging machinery.",
+      "limitations": "No Pennsylvania-specific reach established; lead only, excluded from candidate counts."
+    },
+    {
+      "id": "pa-b2-bpi-contact",
+      "url": "https://bpiequip.com/contact/",
+      "publisher": "BPI Packaging Equipment",
+      "title": "Contact Us",
+      "source_kind": "first-party",
+      "retrieval_status": "reviewed",
+      "retrieved_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "supported_claim": "Contact page lists Granger, Indiana.",
+      "limitations": "Does not establish Pennsylvania service; lead only."
+    },
+    {
+      "id": "pa-b2-premier",
+      "url": "https://premierinc.biz/cbd-cannabis",
+      "publisher": "Premier Printing and Packaging",
+      "title": "Cannabis, Hemp & CBD",
+      "source_kind": "first-party",
+      "retrieval_status": "reviewed",
+      "retrieved_on": "2026-10-28",
+      "reviewed_on": "2026-10-28",
+      "supported_claim": "Offers cannabis/CBD printing and packaging, describing US clients generally.",
+      "limitations": "No Pennsylvania-specific operation or service scope established; lead only."
+    }
+  ],
+  "retrieval_attempts": [
+    {
+      "url": "https://dura-pack.com/pennsylvania-marijuana-cannabis-packaging/",
+      "attempted_on": "2026-10-28",
+      "retrieval_status": "http-403",
+      "reviewed_on": null,
+      "reason": "Trailing-slash request failed. The non-trailing-slash URL was subsequently opened and read; its separate source record is reviewed."
+    },
+    {
+      "url": "https://www.greenmillsupercritical.com/",
+      "attempted_on": "2026-10-28",
+      "retrieval_status": "inaccessible",
+      "reviewed_on": null,
+      "reason": "Primary site inaccessible through web retrieval. No candidate promoted."
+    }
+  ]
+}
