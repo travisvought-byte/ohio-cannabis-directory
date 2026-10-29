@@ -13,7 +13,7 @@ from directory_data import load_directory
 
 data = load_directory()
 cards = build_model(data)
-assert len(cards) == 78
+assert len(cards) == 94
 assert len({c['id'] for c in cards}) == len(cards)
 by_id = {c['id']: c for c in cards}
 assert by_id['org-afa309caf39c']['name'] == 'INSA'

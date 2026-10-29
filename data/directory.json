@@ -23374,6 +23374,141 @@
       "contacts": [],
       "website": "https://www.lpautomation.com/",
       "scope": "public"
+    },
+    {
+      "id": "org-jr-peters",
+      "name": "JR Peters, Inc.",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://www.jrpeters.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-boyle-construction",
+      "name": "Boyle Construction",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://boyleconstruction.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-titanium-security-surveillance",
+      "name": "Titanium Security & Surveillance",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://titaniumss.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-automated-security-corp",
+      "name": "Automated Security Corporation",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://automatedsecuritycorp.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-mj-freeway",
+      "name": "MJ Freeway / MJ Platform",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://mjplatform.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-mckim-creed",
+      "name": "McKim & Creed",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://www.mckimcreed.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-wooster-associates",
+      "name": "Wooster & Associates",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://www.dewooster.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-palmer-construction",
+      "name": "Palmer Construction",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://palmerconstruction.net/",
+      "scope": "public"
+    },
+    {
+      "id": "org-panacea-payroll",
+      "name": "Panacea Payroll",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://panaceapayroll.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-labrepco",
+      "name": "LabRepCo",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://www.labrepco.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-buglady-consulting",
+      "name": "Buglady Consulting",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://bugladyconsulting.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-corcoran-printing",
+      "name": "Corcoran Printing",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://corcoranprinting.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-jpak-international",
+      "name": "JPAK International LLC",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://jpakinternational.com/",
+      "scope": "public"
+    },
+    {
+      "id": "org-paragon-engineering-services",
+      "name": "Paragon Engineering Services",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://www.peservices.org/",
+      "scope": "public"
+    },
+    {
+      "id": "org-kinsley-energy-systems",
+      "name": "Kinsley Energy Systems",
+      "kind": "service-provider",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://www.kinsley-group.com/",
+      "scope": "public"
     }
   ],
   "locations": [
@@ -57216,6 +57351,630 @@
         "PA"
       ],
       "description": "Provides label applicators, printing, integrated packaging systems and related supplies; its 2024 PACK EXPO profile listed cannabis products as a served market."
+    },
+    {
+      "id": "svc-pa-supplier-b12-jr-peters",
+      "organization_id": "org-jr-peters",
+      "name": "JR Peters, Inc. — Cultivation supplies",
+      "description": "Manufactures fertilizers and nutrient blends for controlled-environment cannabis and hemp.",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry. Confirm current availability, qualifications and product or project suitability directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://www.jrpeters.com/contact-us"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking cultivation supplies.",
+          "coverage_note": "Allentown manufacturer explicitly identifies cannabis and hemp as served markets.",
+          "contact_note": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+          "source_url": "https://www.jrpeters.com/contact-us",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-supplier-1dcf296f9cc62a00",
+        "ev-pa-supplier-fdc89757727ee3f4",
+        "ev-pa-supplier-05a24d6dd4d33236"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ]
+    },
+    {
+      "id": "svc-pa-supplier-b12-boyle",
+      "organization_id": "org-boyle-construction",
+      "name": "Boyle Construction — Facility design & climate",
+      "description": "Commercial construction with a documented medical-marijuana dispensary fit-out.",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry. Confirm current availability, qualifications and product or project suitability directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://boyleconstruction.com/contact-us/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking facility design & climate.",
+          "coverage_note": "Provider documents the Mission PA project in Emmaus and maintains a Center Valley office.",
+          "contact_note": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+          "source_url": "https://boyleconstruction.com/contact-us/",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-supplier-655839e65bd826c8",
+        "ev-pa-supplier-b9737a3816119679",
+        "ev-pa-supplier-5bc227cd60f3327e"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ]
+    },
+    {
+      "id": "svc-pa-supplier-b12-titanium",
+      "organization_id": "org-titanium-security-surveillance",
+      "name": "Titanium Security & Surveillance — Security",
+      "description": "Secured cannabis product transport and currency pickup.",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry. Confirm current availability, qualifications and product or project suitability directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://titaniumss.com/contact/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking security.",
+          "coverage_note": "Provider explicitly markets Pennsylvania medical-marijuana transport and lists a Plymouth Meeting office.",
+          "contact_note": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+          "source_url": "https://titaniumss.com/contact/",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-supplier-24efe4f27179f10b",
+        "ev-pa-supplier-e06e7dea19578209",
+        "ev-pa-supplier-724b1a14399fd8c2"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ]
+    },
+    {
+      "id": "svc-pa-supplier-b12-automated-security",
+      "organization_id": "org-automated-security-corp",
+      "name": "Automated Security Corporation — Security",
+      "description": "Cannabis-facility alarms, monitoring, surveillance and access controls.",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry. Confirm current availability, qualifications and product or project suitability directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://automatedsecuritycorp.com/contact/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking security.",
+          "coverage_note": "East Earl security provider markets cannabis-facility systems and nationwide service.",
+          "contact_note": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+          "source_url": "https://automatedsecuritycorp.com/contact/",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-supplier-f2d0bf40f2ee14b3",
+        "ev-pa-supplier-940ada3af76364a9",
+        "ev-pa-supplier-99e7e240b25d1385"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ]
+    },
+    {
+      "id": "svc-pa-supplier-b12-mj-freeway",
+      "organization_id": "org-mj-freeway",
+      "name": "MJ Freeway / MJ Platform — Software & technology",
+      "description": "Cannabis software sales and a published Leaf PA support route.",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry. Confirm current availability, qualifications and product or project suitability directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://mjplatform.com/contact/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking software & technology.",
+          "coverage_note": "Provider publishes Pennsylvania-specific Leaf PA support; this does not establish a current state contract.",
+          "contact_note": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+          "source_url": "https://mjplatform.com/contact/",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-supplier-6d011ab316063b9b",
+        "ev-pa-supplier-7b4072092380c126",
+        "ev-pa-supplier-4fb1c37ff0ae964d"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ]
+    },
+    {
+      "id": "svc-pa-supplier-b12-mckim-creed",
+      "organization_id": "org-mckim-creed",
+      "name": "McKim & Creed — Facility design & climate",
+      "description": "Mechanical, electrical, plumbing and structural engineering with cannabis project experience.",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry. Confirm current availability, qualifications and product or project suitability directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://www.mckimcreed.com/location/pittsburgh/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking facility design & climate.",
+          "coverage_note": "Provider documents Solevo Wellness's Pittsburgh dispensary renovation and maintains a Pittsburgh office.",
+          "contact_note": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+          "source_url": "https://www.mckimcreed.com/location/pittsburgh/",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-supplier-a1e3487896e8f0f3",
+        "ev-pa-supplier-df200ea50040bfe0",
+        "ev-pa-supplier-8be835ea2563a147"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ]
+    },
+    {
+      "id": "svc-pa-supplier-b12-epstein",
+      "organization_id": "org-f73d6f8cdebe",
+      "name": "Epstein — Facility design & climate",
+      "description": "Design-build, architecture and engineering for cannabis cultivation and manufacturing.",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry. Confirm current availability, qualifications and product or project suitability directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://www.epsteinglobal.com/contact"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking facility design & climate.",
+          "coverage_note": "Provider documents the 2020–2022 PAMS expansion in Scranton; no current contract or PA office is established.",
+          "contact_note": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+          "source_url": "https://www.epsteinglobal.com/contact",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-supplier-bb748b0ea43943b4",
+        "ev-pa-supplier-0eb69b6428aa58bf",
+        "ev-pa-supplier-e9caac28cd38800f"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ]
+    },
+    {
+      "id": "svc-pa-supplier-b12-wooster",
+      "organization_id": "org-wooster-associates",
+      "name": "Wooster & Associates — Facility design & climate",
+      "description": "Traffic studies, permitting, signaling and coordination for dispensary sites.",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry. Confirm current availability, qualifications and product or project suitability directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://www.dewooster.com/contact-us"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking facility design & climate.",
+          "coverage_note": "Provider documents work on a proposed Ascend dispensary in Edgeworth, PA; construction and opening are unconfirmed.",
+          "contact_note": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+          "source_url": "https://www.dewooster.com/contact-us",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-supplier-c1ba88182c33d0e6",
+        "ev-pa-supplier-12344d932a0946e1",
+        "ev-pa-supplier-7bebc7c28df1e14d"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ]
+    },
+    {
+      "id": "svc-pa-supplier-b12-palmer",
+      "organization_id": "org-palmer-construction",
+      "name": "Palmer Construction — Facility design & climate",
+      "description": "Construction and planning for cannabis cultivation, processing and dispensary facilities.",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry. Confirm current availability, qualifications and product or project suitability directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://palmerconstruction.net/contact-us/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking facility design & climate.",
+          "coverage_note": "McConnellsburg contractor markets cannabis construction and identifies PA among its project states.",
+          "contact_note": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+          "source_url": "https://palmerconstruction.net/contact-us/",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-supplier-0bf72f594a0e4ab1",
+        "ev-pa-supplier-ff09a8246b99df32",
+        "ev-pa-supplier-86067d24756e9c90"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ]
+    },
+    {
+      "id": "svc-pa-supplier-b13-panacea-payroll",
+      "organization_id": "org-panacea-payroll",
+      "name": "Panacea Payroll — Payroll & HR",
+      "description": "Payroll, human resources and workforce management for cannabis, hemp and medical-marijuana businesses.",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry. Confirm current availability, qualifications and product or project suitability directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://panaceapayroll.com/resources"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking payroll & hr.",
+          "coverage_note": "Pottstown provider explicitly markets cannabis-industry payroll and HR services.",
+          "contact_note": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+          "source_url": "https://panaceapayroll.com/resources",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-supplier-afca065c112e7ef4",
+        "ev-pa-supplier-8e2030a1ff7fbd93",
+        "ev-pa-supplier-52850902f8474cf7"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ]
+    },
+    {
+      "id": "svc-pa-supplier-b13-labrepco",
+      "organization_id": "org-labrepco",
+      "name": "LabRepCo — Laboratory equipment",
+      "description": "Stainless-steel laboratory casework for cannabis and test-laboratory applications.",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry. Confirm current availability, qualifications and product or project suitability directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://www.labrepco.com/contact"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking laboratory equipment.",
+          "coverage_note": "Horsham laboratory supplier includes cannabis and test labs among its casework applications.",
+          "contact_note": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+          "source_url": "https://www.labrepco.com/contact",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-supplier-9c4de20149dc2a3f",
+        "ev-pa-supplier-d89d09ea8bb55f59",
+        "ev-pa-supplier-f47edae7ffe3799b"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ]
+    },
+    {
+      "id": "svc-pa-supplier-b13-buglady",
+      "organization_id": "org-buglady-consulting",
+      "name": "Buglady Consulting — Pest management / IPM",
+      "description": "Integrated pest management consulting focused on biological control for cannabis and horticulture.",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry. Confirm current availability, qualifications and product or project suitability directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://bugladyconsulting.com/contact-me"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking pest management / ipm.",
+          "coverage_note": "ANBP's member directory lists the consultant in Slatington, PA; the provider identifies cannabis among its customers.",
+          "contact_note": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+          "source_url": "https://bugladyconsulting.com/contact-me",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-supplier-a9d93471f2af744e",
+        "ev-pa-supplier-ce5d3b62449ee07a",
+        "ev-pa-supplier-0373450373a7f8c7"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ]
+    },
+    {
+      "id": "svc-pa-supplier-b13-corcoran-printing",
+      "organization_id": "org-corcoran-printing",
+      "name": "Corcoran Printing — Packaging & labels",
+      "description": "Custom printed CBD and cannabis-oil boxes, labels and packaging design.",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry. Confirm current availability, qualifications and product or project suitability directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://corcoranprinting.com/contact/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking packaging & labels.",
+          "coverage_note": "Taylor printing facility offers CBD and cannabis-oil packaging; regulated medical-marijuana packaging compliance is unverified.",
+          "contact_note": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+          "source_url": "https://corcoranprinting.com/contact/",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-supplier-b1538871d80f4aad",
+        "ev-pa-supplier-47bd25b6948b7ba8",
+        "ev-pa-supplier-a07d5db84230ff12"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ]
+    },
+    {
+      "id": "svc-pa-supplier-b13-jpak",
+      "organization_id": "org-jpak-international",
+      "name": "JPAK International LLC — Packaging & labels",
+      "description": "Packaging and display design and production for industries including cannabis.",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry. Confirm current availability, qualifications and product or project suitability directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://jpakinternational.com/contact/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking packaging & labels.",
+          "coverage_note": "Provider lists a Holland, PA contact address and explicitly includes cannabis among its markets.",
+          "contact_note": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+          "source_url": "https://jpakinternational.com/contact/",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-supplier-8deb7c2824fe5ebc",
+        "ev-pa-supplier-98f8de0873d0fcf8",
+        "ev-pa-supplier-41adb7ab41fdc3b2"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ]
+    },
+    {
+      "id": "svc-pa-supplier-b13-paragon-engineering",
+      "organization_id": "org-paragon-engineering-services",
+      "name": "Paragon Engineering Services — Electrical & MEP engineering",
+      "description": "Electrical, plumbing and mechanical engineering with documented cannabis cultivation projects.",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry. Confirm current availability, qualifications and product or project suitability directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://www.peservices.org/contact/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking electrical & mep engineering.",
+          "coverage_note": "Provider lists cannabis projects in Mt. Joy and Danville and offices in York, Lancaster and Chambersburg.",
+          "contact_note": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+          "source_url": "https://www.peservices.org/contact/",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-supplier-cade2fde59507aa8",
+        "ev-pa-supplier-1d9163d8c38e2540",
+        "ev-pa-supplier-dfe7f096a0612441"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ]
+    },
+    {
+      "id": "svc-pa-supplier-b13-kinsley-energy",
+      "organization_id": "org-kinsley-energy-systems",
+      "name": "Kinsley Energy Systems — Energy & backup power",
+      "description": "Cogeneration, integrated energy plants and chiller systems for controlled agriculture.",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Business inquiry. Confirm current availability, qualifications and product or project suitability directly.",
+      "next_step": {
+        "label": "Business inquiry",
+        "url": "https://www.kinsley-group.com/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Businesses seeking energy & backup power.",
+          "coverage_note": "Provider documents commissioning a 3,500 kW CHP and chiller system at a PA cannabis cultivation facility in February 2022.",
+          "contact_note": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+          "source_url": "https://www.kinsley-group.com/",
+          "reviewed_on": "2026-10-29"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-pa-supplier-f39cf219d6bbb99b",
+        "ev-pa-supplier-f9ac977a4e1d526b",
+        "ev-pa-supplier-b8d34302d517ddc7"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "PA"
+      ]
     }
   ],
   "evidence": [
@@ -88332,6 +89091,1254 @@
       "reviewed_on": "2026-10-29",
       "recheck_on": "2027-01-27",
       "limitations": "Directory classification of the source-described activity; not a regulatory license or independently verified credential."
+    },
+    {
+      "id": "ev-pa-supplier-2c299e7a56f159e6",
+      "subject_id": "org-jr-peters",
+      "claim": "company-category",
+      "value": "Cultivation supplies",
+      "source_url": "https://www.jrpeters.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Confirm commercial account process and cannabis-specific product routing before publication; do not imply endorsement by a PA permittee."
+    },
+    {
+      "id": "ev-pa-supplier-a4bb25891bd610bf",
+      "subject_id": "org-jr-peters",
+      "claim": "company-role",
+      "value": "Supplier",
+      "source_url": "https://www.jrpeters.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Confirm commercial account process and cannabis-specific product routing before publication; do not imply endorsement by a PA permittee."
+    },
+    {
+      "id": "ev-pa-supplier-1dcf296f9cc62a00",
+      "subject_id": "svc-pa-supplier-b12-jr-peters",
+      "claim": "service-description",
+      "value": "Manufactures fertilizers and nutrient blends for controlled-environment cannabis and hemp.",
+      "source_url": "https://www.jrpeters.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Confirm commercial account process and cannabis-specific product routing before publication; do not imply endorsement by a PA permittee."
+    },
+    {
+      "id": "ev-pa-supplier-0545747eda012ece",
+      "subject_id": "org-jr-peters",
+      "claim": "company-pa-connection",
+      "value": "Allentown manufacturer explicitly identifies cannabis and hemp as served markets.",
+      "source_url": "https://www.jrpeters.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Confirm commercial account process and cannabis-specific product routing before publication; do not imply endorsement by a PA permittee."
+    },
+    {
+      "id": "ev-pa-supplier-fdc89757727ee3f4",
+      "subject_id": "svc-pa-supplier-b12-jr-peters",
+      "claim": "company-pa-connection",
+      "value": "Allentown manufacturer explicitly identifies cannabis and hemp as served markets.",
+      "source_url": "https://www.jrpeters.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Confirm commercial account process and cannabis-specific product routing before publication; do not imply endorsement by a PA permittee."
+    },
+    {
+      "id": "ev-pa-supplier-05a24d6dd4d33236",
+      "subject_id": "svc-pa-supplier-b12-jr-peters",
+      "claim": "provider-contact",
+      "value": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+      "source_url": "https://www.jrpeters.com/contact-us",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Confirm commercial account process and cannabis-specific product routing before publication; do not imply endorsement by a PA permittee."
+    },
+    {
+      "id": "ev-pa-supplier-f98d50245f8881ad",
+      "subject_id": "org-boyle-construction",
+      "claim": "company-category",
+      "value": "Facility design & climate",
+      "source_url": "https://boyleconstruction.com/projects/mission-pa-emmaus/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project page documents a completed fit-out but does not establish current cannabis specialization or an active client relationship."
+    },
+    {
+      "id": "ev-pa-supplier-15fbafd41bc82506",
+      "subject_id": "org-boyle-construction",
+      "claim": "company-role",
+      "value": "Service provider",
+      "source_url": "https://boyleconstruction.com/projects/mission-pa-emmaus/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project page documents a completed fit-out but does not establish current cannabis specialization or an active client relationship."
+    },
+    {
+      "id": "ev-pa-supplier-655839e65bd826c8",
+      "subject_id": "svc-pa-supplier-b12-boyle",
+      "claim": "service-description",
+      "value": "Commercial construction with a documented medical-marijuana dispensary fit-out.",
+      "source_url": "https://boyleconstruction.com/projects/mission-pa-emmaus/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project page documents a completed fit-out but does not establish current cannabis specialization or an active client relationship."
+    },
+    {
+      "id": "ev-pa-supplier-122c103ac02d71c1",
+      "subject_id": "org-boyle-construction",
+      "claim": "company-pa-connection",
+      "value": "Provider documents the Mission PA project in Emmaus and maintains a Center Valley office.",
+      "source_url": "https://boyleconstruction.com/projects/mission-pa-emmaus/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project page documents a completed fit-out but does not establish current cannabis specialization or an active client relationship."
+    },
+    {
+      "id": "ev-pa-supplier-b9737a3816119679",
+      "subject_id": "svc-pa-supplier-b12-boyle",
+      "claim": "company-pa-connection",
+      "value": "Provider documents the Mission PA project in Emmaus and maintains a Center Valley office.",
+      "source_url": "https://boyleconstruction.com/projects/mission-pa-emmaus/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project page documents a completed fit-out but does not establish current cannabis specialization or an active client relationship."
+    },
+    {
+      "id": "ev-pa-supplier-5bc227cd60f3327e",
+      "subject_id": "svc-pa-supplier-b12-boyle",
+      "claim": "provider-contact",
+      "value": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+      "source_url": "https://boyleconstruction.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project page documents a completed fit-out but does not establish current cannabis specialization or an active client relationship."
+    },
+    {
+      "id": "ev-pa-supplier-b1e50e9dbd7c9fd3",
+      "subject_id": "org-titanium-security-surveillance",
+      "claim": "company-category",
+      "value": "Security",
+      "source_url": "https://titaniumss.com/secured-transport/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider describes armed/unarmed transport, product delivery and cash pickup. Verify current licensing and insurance independently before relying on service claims."
+    },
+    {
+      "id": "ev-pa-supplier-f78a4cb4394e1a62",
+      "subject_id": "org-titanium-security-surveillance",
+      "claim": "company-role",
+      "value": "Service provider",
+      "source_url": "https://titaniumss.com/secured-transport/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider describes armed/unarmed transport, product delivery and cash pickup. Verify current licensing and insurance independently before relying on service claims."
+    },
+    {
+      "id": "ev-pa-supplier-24efe4f27179f10b",
+      "subject_id": "svc-pa-supplier-b12-titanium",
+      "claim": "service-description",
+      "value": "Secured cannabis product transport and currency pickup.",
+      "source_url": "https://titaniumss.com/secured-transport/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider describes armed/unarmed transport, product delivery and cash pickup. Verify current licensing and insurance independently before relying on service claims."
+    },
+    {
+      "id": "ev-pa-supplier-ee546984ccd1d596",
+      "subject_id": "org-titanium-security-surveillance",
+      "claim": "company-pa-connection",
+      "value": "Provider explicitly markets Pennsylvania medical-marijuana transport and lists a Plymouth Meeting office.",
+      "source_url": "https://titaniumss.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider describes armed/unarmed transport, product delivery and cash pickup. Verify current licensing and insurance independently before relying on service claims."
+    },
+    {
+      "id": "ev-pa-supplier-e06e7dea19578209",
+      "subject_id": "svc-pa-supplier-b12-titanium",
+      "claim": "company-pa-connection",
+      "value": "Provider explicitly markets Pennsylvania medical-marijuana transport and lists a Plymouth Meeting office.",
+      "source_url": "https://titaniumss.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider describes armed/unarmed transport, product delivery and cash pickup. Verify current licensing and insurance independently before relying on service claims."
+    },
+    {
+      "id": "ev-pa-supplier-724b1a14399fd8c2",
+      "subject_id": "svc-pa-supplier-b12-titanium",
+      "claim": "provider-contact",
+      "value": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+      "source_url": "https://titaniumss.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider describes armed/unarmed transport, product delivery and cash pickup. Verify current licensing and insurance independently before relying on service claims."
+    },
+    {
+      "id": "ev-pa-supplier-aebbfb63dcf6ae3e",
+      "subject_id": "org-automated-security-corp",
+      "claim": "company-category",
+      "value": "Security",
+      "source_url": "https://automatedsecuritycorp.com/service/cannabis-security/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider claims nationwide service and state-specific compliance support. Pennsylvania HIC registration is not a cannabis regulator approval."
+    },
+    {
+      "id": "ev-pa-supplier-e8b34de101a39f7f",
+      "subject_id": "org-automated-security-corp",
+      "claim": "company-role",
+      "value": "Service provider",
+      "source_url": "https://automatedsecuritycorp.com/service/cannabis-security/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider claims nationwide service and state-specific compliance support. Pennsylvania HIC registration is not a cannabis regulator approval."
+    },
+    {
+      "id": "ev-pa-supplier-f2d0bf40f2ee14b3",
+      "subject_id": "svc-pa-supplier-b12-automated-security",
+      "claim": "service-description",
+      "value": "Cannabis-facility alarms, monitoring, surveillance and access controls.",
+      "source_url": "https://automatedsecuritycorp.com/service/cannabis-security/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider claims nationwide service and state-specific compliance support. Pennsylvania HIC registration is not a cannabis regulator approval."
+    },
+    {
+      "id": "ev-pa-supplier-8502ca3f89d706ea",
+      "subject_id": "org-automated-security-corp",
+      "claim": "company-pa-connection",
+      "value": "East Earl security provider markets cannabis-facility systems and nationwide service.",
+      "source_url": "https://automatedsecuritycorp.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider claims nationwide service and state-specific compliance support. Pennsylvania HIC registration is not a cannabis regulator approval."
+    },
+    {
+      "id": "ev-pa-supplier-940ada3af76364a9",
+      "subject_id": "svc-pa-supplier-b12-automated-security",
+      "claim": "company-pa-connection",
+      "value": "East Earl security provider markets cannabis-facility systems and nationwide service.",
+      "source_url": "https://automatedsecuritycorp.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider claims nationwide service and state-specific compliance support. Pennsylvania HIC registration is not a cannabis regulator approval."
+    },
+    {
+      "id": "ev-pa-supplier-99e7e240b25d1385",
+      "subject_id": "svc-pa-supplier-b12-automated-security",
+      "claim": "provider-contact",
+      "value": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+      "source_url": "https://automatedsecuritycorp.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider claims nationwide service and state-specific compliance support. Pennsylvania HIC registration is not a cannabis regulator approval."
+    },
+    {
+      "id": "ev-pa-supplier-3b858bc0c98b07c9",
+      "subject_id": "org-mj-freeway",
+      "claim": "company-category",
+      "value": "Software & technology",
+      "source_url": "https://mjplatform.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider lists Pennsylvania-specific Leaf PA support. The current Bureau page refers generically to its seed-to-sale vendor and does not name MJ Freeway, so do not assert an active state contract without contract evidence."
+    },
+    {
+      "id": "ev-pa-supplier-57cc496fa1a59e80",
+      "subject_id": "org-mj-freeway",
+      "claim": "company-role",
+      "value": "Service provider",
+      "source_url": "https://mjplatform.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider lists Pennsylvania-specific Leaf PA support. The current Bureau page refers generically to its seed-to-sale vendor and does not name MJ Freeway, so do not assert an active state contract without contract evidence."
+    },
+    {
+      "id": "ev-pa-supplier-6d011ab316063b9b",
+      "subject_id": "svc-pa-supplier-b12-mj-freeway",
+      "claim": "service-description",
+      "value": "Cannabis software sales and a published Leaf PA support route.",
+      "source_url": "https://mjplatform.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider lists Pennsylvania-specific Leaf PA support. The current Bureau page refers generically to its seed-to-sale vendor and does not name MJ Freeway, so do not assert an active state contract without contract evidence."
+    },
+    {
+      "id": "ev-pa-supplier-4e57f4ea8397de15",
+      "subject_id": "org-mj-freeway",
+      "claim": "company-pa-connection",
+      "value": "Provider publishes Pennsylvania-specific Leaf PA support; this does not establish a current state contract.",
+      "source_url": "https://mjplatform.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider lists Pennsylvania-specific Leaf PA support. The current Bureau page refers generically to its seed-to-sale vendor and does not name MJ Freeway, so do not assert an active state contract without contract evidence."
+    },
+    {
+      "id": "ev-pa-supplier-7b4072092380c126",
+      "subject_id": "svc-pa-supplier-b12-mj-freeway",
+      "claim": "company-pa-connection",
+      "value": "Provider publishes Pennsylvania-specific Leaf PA support; this does not establish a current state contract.",
+      "source_url": "https://mjplatform.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider lists Pennsylvania-specific Leaf PA support. The current Bureau page refers generically to its seed-to-sale vendor and does not name MJ Freeway, so do not assert an active state contract without contract evidence."
+    },
+    {
+      "id": "ev-pa-supplier-4fb1c37ff0ae964d",
+      "subject_id": "svc-pa-supplier-b12-mj-freeway",
+      "claim": "provider-contact",
+      "value": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+      "source_url": "https://mjplatform.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider lists Pennsylvania-specific Leaf PA support. The current Bureau page refers generically to its seed-to-sale vendor and does not name MJ Freeway, so do not assert an active state contract without contract evidence."
+    },
+    {
+      "id": "ev-pa-supplier-4cc688bcb65855b3",
+      "subject_id": "org-mckim-creed",
+      "claim": "company-category",
+      "value": "Facility design & climate",
+      "source_url": "https://www.mckimcreed.com/portfolio-page/solevo-wellness-dispensary/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project source documents MEP and structural work for a 6,000-square-foot dispensary. It does not establish an active cannabis practice or current client relationship."
+    },
+    {
+      "id": "ev-pa-supplier-0b005ca53f0134e2",
+      "subject_id": "org-mckim-creed",
+      "claim": "company-role",
+      "value": "Service provider",
+      "source_url": "https://www.mckimcreed.com/portfolio-page/solevo-wellness-dispensary/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project source documents MEP and structural work for a 6,000-square-foot dispensary. It does not establish an active cannabis practice or current client relationship."
+    },
+    {
+      "id": "ev-pa-supplier-a1e3487896e8f0f3",
+      "subject_id": "svc-pa-supplier-b12-mckim-creed",
+      "claim": "service-description",
+      "value": "Mechanical, electrical, plumbing and structural engineering with cannabis project experience.",
+      "source_url": "https://www.mckimcreed.com/portfolio-page/solevo-wellness-dispensary/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project source documents MEP and structural work for a 6,000-square-foot dispensary. It does not establish an active cannabis practice or current client relationship."
+    },
+    {
+      "id": "ev-pa-supplier-1dd0e33d522c28d8",
+      "subject_id": "org-mckim-creed",
+      "claim": "company-pa-connection",
+      "value": "Provider documents Solevo Wellness's Pittsburgh dispensary renovation and maintains a Pittsburgh office.",
+      "source_url": "https://www.mckimcreed.com/portfolio-page/solevo-wellness-dispensary/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project source documents MEP and structural work for a 6,000-square-foot dispensary. It does not establish an active cannabis practice or current client relationship."
+    },
+    {
+      "id": "ev-pa-supplier-df200ea50040bfe0",
+      "subject_id": "svc-pa-supplier-b12-mckim-creed",
+      "claim": "company-pa-connection",
+      "value": "Provider documents Solevo Wellness's Pittsburgh dispensary renovation and maintains a Pittsburgh office.",
+      "source_url": "https://www.mckimcreed.com/portfolio-page/solevo-wellness-dispensary/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project source documents MEP and structural work for a 6,000-square-foot dispensary. It does not establish an active cannabis practice or current client relationship."
+    },
+    {
+      "id": "ev-pa-supplier-8be835ea2563a147",
+      "subject_id": "svc-pa-supplier-b12-mckim-creed",
+      "claim": "provider-contact",
+      "value": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+      "source_url": "https://www.mckimcreed.com/location/pittsburgh/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project source documents MEP and structural work for a 6,000-square-foot dispensary. It does not establish an active cannabis practice or current client relationship."
+    },
+    {
+      "id": "ev-pa-supplier-0ce2e65c0e274ef4",
+      "subject_id": "org-f73d6f8cdebe",
+      "claim": "company-category",
+      "value": "Facility design & climate",
+      "source_url": "https://www.epsteinglobal.com/projects/jushi-holdings-inc-pams-cultivation-manufacturing-facility-expansion",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "The 2020–2022 Scranton expansion is historical project evidence. Use the named project contact only for project-capability inquiry, not as a current PA account representative."
+    },
+    {
+      "id": "ev-pa-supplier-63556ba672e89b91",
+      "subject_id": "org-f73d6f8cdebe",
+      "claim": "company-role",
+      "value": "Service provider",
+      "source_url": "https://www.epsteinglobal.com/projects/jushi-holdings-inc-pams-cultivation-manufacturing-facility-expansion",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "The 2020–2022 Scranton expansion is historical project evidence. Use the named project contact only for project-capability inquiry, not as a current PA account representative."
+    },
+    {
+      "id": "ev-pa-supplier-bb748b0ea43943b4",
+      "subject_id": "svc-pa-supplier-b12-epstein",
+      "claim": "service-description",
+      "value": "Design-build, architecture and engineering for cannabis cultivation and manufacturing.",
+      "source_url": "https://www.epsteinglobal.com/projects/jushi-holdings-inc-pams-cultivation-manufacturing-facility-expansion",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "The 2020–2022 Scranton expansion is historical project evidence. Use the named project contact only for project-capability inquiry, not as a current PA account representative."
+    },
+    {
+      "id": "ev-pa-supplier-c5df42a33a730b12",
+      "subject_id": "org-f73d6f8cdebe",
+      "claim": "company-pa-connection",
+      "value": "Provider documents the 2020–2022 PAMS expansion in Scranton; no current contract or PA office is established.",
+      "source_url": "https://www.epsteinglobal.com/projects/jushi-holdings-inc-pams-cultivation-manufacturing-facility-expansion",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "The 2020–2022 Scranton expansion is historical project evidence. Use the named project contact only for project-capability inquiry, not as a current PA account representative."
+    },
+    {
+      "id": "ev-pa-supplier-0eb69b6428aa58bf",
+      "subject_id": "svc-pa-supplier-b12-epstein",
+      "claim": "company-pa-connection",
+      "value": "Provider documents the 2020–2022 PAMS expansion in Scranton; no current contract or PA office is established.",
+      "source_url": "https://www.epsteinglobal.com/projects/jushi-holdings-inc-pams-cultivation-manufacturing-facility-expansion",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "The 2020–2022 Scranton expansion is historical project evidence. Use the named project contact only for project-capability inquiry, not as a current PA account representative."
+    },
+    {
+      "id": "ev-pa-supplier-e9caac28cd38800f",
+      "subject_id": "svc-pa-supplier-b12-epstein",
+      "claim": "provider-contact",
+      "value": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+      "source_url": "https://www.epsteinglobal.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "The 2020–2022 Scranton expansion is historical project evidence. Use the named project contact only for project-capability inquiry, not as a current PA account representative."
+    },
+    {
+      "id": "ev-pa-supplier-eb5d016018756038",
+      "subject_id": "org-wooster-associates",
+      "claim": "company-category",
+      "value": "Facility design & climate",
+      "source_url": "https://www.dewooster.com/projects/ascendwellnessdispensary",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project page describes a proposed Edgeworth dispensary and does not confirm construction or opening. Preserve the project status as proposed."
+    },
+    {
+      "id": "ev-pa-supplier-cb7ea4bbf1d8a0ea",
+      "subject_id": "org-wooster-associates",
+      "claim": "company-role",
+      "value": "Service provider",
+      "source_url": "https://www.dewooster.com/projects/ascendwellnessdispensary",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project page describes a proposed Edgeworth dispensary and does not confirm construction or opening. Preserve the project status as proposed."
+    },
+    {
+      "id": "ev-pa-supplier-c1ba88182c33d0e6",
+      "subject_id": "svc-pa-supplier-b12-wooster",
+      "claim": "service-description",
+      "value": "Traffic studies, permitting, signaling and coordination for dispensary sites.",
+      "source_url": "https://www.dewooster.com/projects/ascendwellnessdispensary",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project page describes a proposed Edgeworth dispensary and does not confirm construction or opening. Preserve the project status as proposed."
+    },
+    {
+      "id": "ev-pa-supplier-7e537262a0b8dcc2",
+      "subject_id": "org-wooster-associates",
+      "claim": "company-pa-connection",
+      "value": "Provider documents work on a proposed Ascend dispensary in Edgeworth, PA; construction and opening are unconfirmed.",
+      "source_url": "https://www.dewooster.com/projects/ascendwellnessdispensary",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project page describes a proposed Edgeworth dispensary and does not confirm construction or opening. Preserve the project status as proposed."
+    },
+    {
+      "id": "ev-pa-supplier-12344d932a0946e1",
+      "subject_id": "svc-pa-supplier-b12-wooster",
+      "claim": "company-pa-connection",
+      "value": "Provider documents work on a proposed Ascend dispensary in Edgeworth, PA; construction and opening are unconfirmed.",
+      "source_url": "https://www.dewooster.com/projects/ascendwellnessdispensary",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project page describes a proposed Edgeworth dispensary and does not confirm construction or opening. Preserve the project status as proposed."
+    },
+    {
+      "id": "ev-pa-supplier-7bebc7c28df1e14d",
+      "subject_id": "svc-pa-supplier-b12-wooster",
+      "claim": "provider-contact",
+      "value": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+      "source_url": "https://www.dewooster.com/contact-us",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project page describes a proposed Edgeworth dispensary and does not confirm construction or opening. Preserve the project status as proposed."
+    },
+    {
+      "id": "ev-pa-supplier-44644a6308e300b8",
+      "subject_id": "org-palmer-construction",
+      "claim": "company-category",
+      "value": "Facility design & climate",
+      "source_url": "https://palmerconstruction.net/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider says it has built multiple cannabis facilities but the reviewed page does not name clients, dates or project locations. Verify portfolio details before making project-specific claims."
+    },
+    {
+      "id": "ev-pa-supplier-dd1cb6d88e50b8d0",
+      "subject_id": "org-palmer-construction",
+      "claim": "company-role",
+      "value": "Service provider",
+      "source_url": "https://palmerconstruction.net/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider says it has built multiple cannabis facilities but the reviewed page does not name clients, dates or project locations. Verify portfolio details before making project-specific claims."
+    },
+    {
+      "id": "ev-pa-supplier-0bf72f594a0e4ab1",
+      "subject_id": "svc-pa-supplier-b12-palmer",
+      "claim": "service-description",
+      "value": "Construction and planning for cannabis cultivation, processing and dispensary facilities.",
+      "source_url": "https://palmerconstruction.net/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider says it has built multiple cannabis facilities but the reviewed page does not name clients, dates or project locations. Verify portfolio details before making project-specific claims."
+    },
+    {
+      "id": "ev-pa-supplier-effb03deba320bfa",
+      "subject_id": "org-palmer-construction",
+      "claim": "company-pa-connection",
+      "value": "McConnellsburg contractor markets cannabis construction and identifies PA among its project states.",
+      "source_url": "https://palmerconstruction.net/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider says it has built multiple cannabis facilities but the reviewed page does not name clients, dates or project locations. Verify portfolio details before making project-specific claims."
+    },
+    {
+      "id": "ev-pa-supplier-ff09a8246b99df32",
+      "subject_id": "svc-pa-supplier-b12-palmer",
+      "claim": "company-pa-connection",
+      "value": "McConnellsburg contractor markets cannabis construction and identifies PA among its project states.",
+      "source_url": "https://palmerconstruction.net/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider says it has built multiple cannabis facilities but the reviewed page does not name clients, dates or project locations. Verify portfolio details before making project-specific claims."
+    },
+    {
+      "id": "ev-pa-supplier-86067d24756e9c90",
+      "subject_id": "svc-pa-supplier-b12-palmer",
+      "claim": "provider-contact",
+      "value": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+      "source_url": "https://palmerconstruction.net/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider says it has built multiple cannabis facilities but the reviewed page does not name clients, dates or project locations. Verify portfolio details before making project-specific claims."
+    },
+    {
+      "id": "ev-pa-supplier-937520ab6cff2493",
+      "subject_id": "org-panacea-payroll",
+      "claim": "company-category",
+      "value": "Payroll & HR",
+      "source_url": "https://panaceapayroll.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider markets nationwide cannabis-industry services. Confirm current client onboarding, state tax scope and account eligibility before publication."
+    },
+    {
+      "id": "ev-pa-supplier-2647c5bc55f64122",
+      "subject_id": "org-panacea-payroll",
+      "claim": "company-role",
+      "value": "Service provider",
+      "source_url": "https://panaceapayroll.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider markets nationwide cannabis-industry services. Confirm current client onboarding, state tax scope and account eligibility before publication."
+    },
+    {
+      "id": "ev-pa-supplier-afca065c112e7ef4",
+      "subject_id": "svc-pa-supplier-b13-panacea-payroll",
+      "claim": "service-description",
+      "value": "Payroll, human resources and workforce management for cannabis, hemp and medical-marijuana businesses.",
+      "source_url": "https://panaceapayroll.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider markets nationwide cannabis-industry services. Confirm current client onboarding, state tax scope and account eligibility before publication."
+    },
+    {
+      "id": "ev-pa-supplier-cf0a34b3ecc7f9b3",
+      "subject_id": "org-panacea-payroll",
+      "claim": "company-pa-connection",
+      "value": "Pottstown provider explicitly markets cannabis-industry payroll and HR services.",
+      "source_url": "https://panaceapayroll.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider markets nationwide cannabis-industry services. Confirm current client onboarding, state tax scope and account eligibility before publication."
+    },
+    {
+      "id": "ev-pa-supplier-8e2030a1ff7fbd93",
+      "subject_id": "svc-pa-supplier-b13-panacea-payroll",
+      "claim": "company-pa-connection",
+      "value": "Pottstown provider explicitly markets cannabis-industry payroll and HR services.",
+      "source_url": "https://panaceapayroll.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider markets nationwide cannabis-industry services. Confirm current client onboarding, state tax scope and account eligibility before publication."
+    },
+    {
+      "id": "ev-pa-supplier-52850902f8474cf7",
+      "subject_id": "svc-pa-supplier-b13-panacea-payroll",
+      "claim": "provider-contact",
+      "value": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+      "source_url": "https://panaceapayroll.com/resources",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider markets nationwide cannabis-industry services. Confirm current client onboarding, state tax scope and account eligibility before publication."
+    },
+    {
+      "id": "ev-pa-supplier-4572bba39e3ea7c8",
+      "subject_id": "org-labrepco",
+      "claim": "company-category",
+      "value": "Laboratory equipment",
+      "source_url": "https://www.labrepco.com/product/stainless-steel-laboratory-casework/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Reviewed product page supports stainless-steel casework for cannabis and test labs, not a complete cannabis-testing laboratory package or a PA client relationship."
+    },
+    {
+      "id": "ev-pa-supplier-ce514f67bf3fc0ce",
+      "subject_id": "org-labrepco",
+      "claim": "company-role",
+      "value": "Supplier",
+      "source_url": "https://www.labrepco.com/product/stainless-steel-laboratory-casework/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Reviewed product page supports stainless-steel casework for cannabis and test labs, not a complete cannabis-testing laboratory package or a PA client relationship."
+    },
+    {
+      "id": "ev-pa-supplier-9c4de20149dc2a3f",
+      "subject_id": "svc-pa-supplier-b13-labrepco",
+      "claim": "service-description",
+      "value": "Stainless-steel laboratory casework for cannabis and test-laboratory applications.",
+      "source_url": "https://www.labrepco.com/product/stainless-steel-laboratory-casework/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Reviewed product page supports stainless-steel casework for cannabis and test labs, not a complete cannabis-testing laboratory package or a PA client relationship."
+    },
+    {
+      "id": "ev-pa-supplier-ffc55feb1d97457b",
+      "subject_id": "org-labrepco",
+      "claim": "company-pa-connection",
+      "value": "Horsham laboratory supplier includes cannabis and test labs among its casework applications.",
+      "source_url": "https://www.labrepco.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Reviewed product page supports stainless-steel casework for cannabis and test labs, not a complete cannabis-testing laboratory package or a PA client relationship."
+    },
+    {
+      "id": "ev-pa-supplier-d89d09ea8bb55f59",
+      "subject_id": "svc-pa-supplier-b13-labrepco",
+      "claim": "company-pa-connection",
+      "value": "Horsham laboratory supplier includes cannabis and test labs among its casework applications.",
+      "source_url": "https://www.labrepco.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Reviewed product page supports stainless-steel casework for cannabis and test labs, not a complete cannabis-testing laboratory package or a PA client relationship."
+    },
+    {
+      "id": "ev-pa-supplier-f47edae7ffe3799b",
+      "subject_id": "svc-pa-supplier-b13-labrepco",
+      "claim": "provider-contact",
+      "value": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+      "source_url": "https://www.labrepco.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Reviewed product page supports stainless-steel casework for cannabis and test labs, not a complete cannabis-testing laboratory package or a PA client relationship."
+    },
+    {
+      "id": "ev-pa-supplier-dfc0f00ddcef88e7",
+      "subject_id": "org-buglady-consulting",
+      "claim": "company-category",
+      "value": "Pest management / IPM",
+      "source_url": "https://bugladyconsulting.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Official site supports cannabis IPM consulting and training. Street address is from an industry-association member directory and should be reconfirmed before publication."
+    },
+    {
+      "id": "ev-pa-supplier-c121402bb4d250a7",
+      "subject_id": "org-buglady-consulting",
+      "claim": "company-role",
+      "value": "Service provider",
+      "source_url": "https://bugladyconsulting.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Official site supports cannabis IPM consulting and training. Street address is from an industry-association member directory and should be reconfirmed before publication."
+    },
+    {
+      "id": "ev-pa-supplier-a9d93471f2af744e",
+      "subject_id": "svc-pa-supplier-b13-buglady",
+      "claim": "service-description",
+      "value": "Integrated pest management consulting focused on biological control for cannabis and horticulture.",
+      "source_url": "https://bugladyconsulting.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Official site supports cannabis IPM consulting and training. Street address is from an industry-association member directory and should be reconfirmed before publication."
+    },
+    {
+      "id": "ev-pa-supplier-38a3beecc92eba18",
+      "subject_id": "org-buglady-consulting",
+      "claim": "company-pa-connection",
+      "value": "ANBP's member directory lists the consultant in Slatington, PA; the provider identifies cannabis among its customers.",
+      "source_url": "https://anbp.org/members/",
+      "source_kind": "secondary",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Official site supports cannabis IPM consulting and training. Street address is from an industry-association member directory and should be reconfirmed before publication."
+    },
+    {
+      "id": "ev-pa-supplier-ce5d3b62449ee07a",
+      "subject_id": "svc-pa-supplier-b13-buglady",
+      "claim": "company-pa-connection",
+      "value": "ANBP's member directory lists the consultant in Slatington, PA; the provider identifies cannabis among its customers.",
+      "source_url": "https://anbp.org/members/",
+      "source_kind": "secondary",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Official site supports cannabis IPM consulting and training. Street address is from an industry-association member directory and should be reconfirmed before publication."
+    },
+    {
+      "id": "ev-pa-supplier-0373450373a7f8c7",
+      "subject_id": "svc-pa-supplier-b13-buglady",
+      "claim": "provider-contact",
+      "value": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+      "source_url": "https://bugladyconsulting.com/contact-me",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Official site supports cannabis IPM consulting and training. Street address is from an industry-association member directory and should be reconfirmed before publication."
+    },
+    {
+      "id": "ev-pa-supplier-d4c9df3ff541dbb1",
+      "subject_id": "org-corcoran-printing",
+      "claim": "company-category",
+      "value": "Packaging & labels",
+      "source_url": "https://corcoranprinting.com/cbd-oil-packaging/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "CBD-focused source does not establish Pennsylvania medical-marijuana packaging approval, child resistance or tamper-evident capability. Verify compliance fit before publication."
+    },
+    {
+      "id": "ev-pa-supplier-dc473d944179bf23",
+      "subject_id": "org-corcoran-printing",
+      "claim": "company-role",
+      "value": "Supplier",
+      "source_url": "https://corcoranprinting.com/cbd-oil-packaging/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "CBD-focused source does not establish Pennsylvania medical-marijuana packaging approval, child resistance or tamper-evident capability. Verify compliance fit before publication."
+    },
+    {
+      "id": "ev-pa-supplier-b1538871d80f4aad",
+      "subject_id": "svc-pa-supplier-b13-corcoran-printing",
+      "claim": "service-description",
+      "value": "Custom printed CBD and cannabis-oil boxes, labels and packaging design.",
+      "source_url": "https://corcoranprinting.com/cbd-oil-packaging/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "CBD-focused source does not establish Pennsylvania medical-marijuana packaging approval, child resistance or tamper-evident capability. Verify compliance fit before publication."
+    },
+    {
+      "id": "ev-pa-supplier-5fa3df4756b3645c",
+      "subject_id": "org-corcoran-printing",
+      "claim": "company-pa-connection",
+      "value": "Taylor printing facility offers CBD and cannabis-oil packaging; regulated medical-marijuana packaging compliance is unverified.",
+      "source_url": "https://corcoranprinting.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "CBD-focused source does not establish Pennsylvania medical-marijuana packaging approval, child resistance or tamper-evident capability. Verify compliance fit before publication."
+    },
+    {
+      "id": "ev-pa-supplier-47bd25b6948b7ba8",
+      "subject_id": "svc-pa-supplier-b13-corcoran-printing",
+      "claim": "company-pa-connection",
+      "value": "Taylor printing facility offers CBD and cannabis-oil packaging; regulated medical-marijuana packaging compliance is unverified.",
+      "source_url": "https://corcoranprinting.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "CBD-focused source does not establish Pennsylvania medical-marijuana packaging approval, child resistance or tamper-evident capability. Verify compliance fit before publication."
+    },
+    {
+      "id": "ev-pa-supplier-a07d5db84230ff12",
+      "subject_id": "svc-pa-supplier-b13-corcoran-printing",
+      "claim": "provider-contact",
+      "value": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+      "source_url": "https://corcoranprinting.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "CBD-focused source does not establish Pennsylvania medical-marijuana packaging approval, child resistance or tamper-evident capability. Verify compliance fit before publication."
+    },
+    {
+      "id": "ev-pa-supplier-af180de3d51b5b32",
+      "subject_id": "org-jpak-international",
+      "claim": "company-category",
+      "value": "Packaging & labels",
+      "source_url": "https://jpakinternational.com/about-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Broad cannabis-market claim does not establish child-resistant or tamper-evident products or Pennsylvania medical-marijuana compliance. Verify product specifications."
+    },
+    {
+      "id": "ev-pa-supplier-f1946c142d16bd8c",
+      "subject_id": "org-jpak-international",
+      "claim": "company-role",
+      "value": "Supplier",
+      "source_url": "https://jpakinternational.com/about-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Broad cannabis-market claim does not establish child-resistant or tamper-evident products or Pennsylvania medical-marijuana compliance. Verify product specifications."
+    },
+    {
+      "id": "ev-pa-supplier-8deb7c2824fe5ebc",
+      "subject_id": "svc-pa-supplier-b13-jpak",
+      "claim": "service-description",
+      "value": "Packaging and display design and production for industries including cannabis.",
+      "source_url": "https://jpakinternational.com/about-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Broad cannabis-market claim does not establish child-resistant or tamper-evident products or Pennsylvania medical-marijuana compliance. Verify product specifications."
+    },
+    {
+      "id": "ev-pa-supplier-3b38e5623ba78964",
+      "subject_id": "org-jpak-international",
+      "claim": "company-pa-connection",
+      "value": "Provider lists a Holland, PA contact address and explicitly includes cannabis among its markets.",
+      "source_url": "https://jpakinternational.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Broad cannabis-market claim does not establish child-resistant or tamper-evident products or Pennsylvania medical-marijuana compliance. Verify product specifications."
+    },
+    {
+      "id": "ev-pa-supplier-98f8de0873d0fcf8",
+      "subject_id": "svc-pa-supplier-b13-jpak",
+      "claim": "company-pa-connection",
+      "value": "Provider lists a Holland, PA contact address and explicitly includes cannabis among its markets.",
+      "source_url": "https://jpakinternational.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Broad cannabis-market claim does not establish child-resistant or tamper-evident products or Pennsylvania medical-marijuana compliance. Verify product specifications."
+    },
+    {
+      "id": "ev-pa-supplier-41adb7ab41fdc3b2",
+      "subject_id": "svc-pa-supplier-b13-jpak",
+      "claim": "provider-contact",
+      "value": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+      "source_url": "https://jpakinternational.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Broad cannabis-market claim does not establish child-resistant or tamper-evident products or Pennsylvania medical-marijuana compliance. Verify product specifications."
+    },
+    {
+      "id": "ev-pa-supplier-fafb231ff7c90e68",
+      "subject_id": "org-paragon-engineering-services",
+      "claim": "company-category",
+      "value": "Electrical & MEP engineering",
+      "source_url": "https://www.peservices.org/markets-served/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project is listed under NDA and the operator is unnamed. Treat as prior capability evidence, not a current engagement or endorsement."
+    },
+    {
+      "id": "ev-pa-supplier-00c0191b4807919e",
+      "subject_id": "org-paragon-engineering-services",
+      "claim": "company-role",
+      "value": "Service provider",
+      "source_url": "https://www.peservices.org/markets-served/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project is listed under NDA and the operator is unnamed. Treat as prior capability evidence, not a current engagement or endorsement."
+    },
+    {
+      "id": "ev-pa-supplier-cade2fde59507aa8",
+      "subject_id": "svc-pa-supplier-b13-paragon-engineering",
+      "claim": "service-description",
+      "value": "Electrical, plumbing and mechanical engineering with documented cannabis cultivation projects.",
+      "source_url": "https://www.peservices.org/markets-served/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project is listed under NDA and the operator is unnamed. Treat as prior capability evidence, not a current engagement or endorsement."
+    },
+    {
+      "id": "ev-pa-supplier-3cf7abdf54247d00",
+      "subject_id": "org-paragon-engineering-services",
+      "claim": "company-pa-connection",
+      "value": "Provider lists cannabis projects in Mt. Joy and Danville and offices in York, Lancaster and Chambersburg.",
+      "source_url": "https://www.peservices.org/markets-served/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project is listed under NDA and the operator is unnamed. Treat as prior capability evidence, not a current engagement or endorsement."
+    },
+    {
+      "id": "ev-pa-supplier-1d9163d8c38e2540",
+      "subject_id": "svc-pa-supplier-b13-paragon-engineering",
+      "claim": "company-pa-connection",
+      "value": "Provider lists cannabis projects in Mt. Joy and Danville and offices in York, Lancaster and Chambersburg.",
+      "source_url": "https://www.peservices.org/markets-served/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project is listed under NDA and the operator is unnamed. Treat as prior capability evidence, not a current engagement or endorsement."
+    },
+    {
+      "id": "ev-pa-supplier-dfe7f096a0612441",
+      "subject_id": "svc-pa-supplier-b13-paragon-engineering",
+      "claim": "provider-contact",
+      "value": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+      "source_url": "https://www.peservices.org/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Project is listed under NDA and the operator is unnamed. Treat as prior capability evidence, not a current engagement or endorsement."
+    },
+    {
+      "id": "ev-pa-supplier-0b0dea710832bed1",
+      "subject_id": "org-kinsley-energy-systems",
+      "claim": "company-category",
+      "value": "Energy & backup power",
+      "source_url": "https://www.kinsley-group.com/cogeneration/markets-served/controlled-agriculture/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider headquarters is outside Pennsylvania; project was commissioned in February 2022. Verify current PA coverage, service capacity and references before publication."
+    },
+    {
+      "id": "ev-pa-supplier-a2efde33079e6c28",
+      "subject_id": "org-kinsley-energy-systems",
+      "claim": "company-role",
+      "value": "Service provider",
+      "source_url": "https://www.kinsley-group.com/cogeneration/markets-served/controlled-agriculture/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider headquarters is outside Pennsylvania; project was commissioned in February 2022. Verify current PA coverage, service capacity and references before publication."
+    },
+    {
+      "id": "ev-pa-supplier-f39cf219d6bbb99b",
+      "subject_id": "svc-pa-supplier-b13-kinsley-energy",
+      "claim": "service-description",
+      "value": "Cogeneration, integrated energy plants and chiller systems for controlled agriculture.",
+      "source_url": "https://www.kinsley-group.com/cogeneration/markets-served/controlled-agriculture/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider headquarters is outside Pennsylvania; project was commissioned in February 2022. Verify current PA coverage, service capacity and references before publication."
+    },
+    {
+      "id": "ev-pa-supplier-2b8664ea20a28f84",
+      "subject_id": "org-kinsley-energy-systems",
+      "claim": "company-pa-connection",
+      "value": "Provider documents commissioning a 3,500 kW CHP and chiller system at a PA cannabis cultivation facility in February 2022.",
+      "source_url": "https://www.kinsley-group.com/cogeneration/markets-served/controlled-agriculture/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider headquarters is outside Pennsylvania; project was commissioned in February 2022. Verify current PA coverage, service capacity and references before publication."
+    },
+    {
+      "id": "ev-pa-supplier-f9ac977a4e1d526b",
+      "subject_id": "svc-pa-supplier-b13-kinsley-energy",
+      "claim": "company-pa-connection",
+      "value": "Provider documents commissioning a 3,500 kW CHP and chiller system at a PA cannabis cultivation facility in February 2022.",
+      "source_url": "https://www.kinsley-group.com/cogeneration/markets-served/controlled-agriculture/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider headquarters is outside Pennsylvania; project was commissioned in February 2022. Verify current PA coverage, service capacity and references before publication."
+    },
+    {
+      "id": "ev-pa-supplier-b8d34302d517ddc7",
+      "subject_id": "svc-pa-supplier-b13-kinsley-energy",
+      "claim": "provider-contact",
+      "value": "Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.",
+      "source_url": "https://www.kinsley-group.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-29",
+      "recorded_on": "2026-10-29",
+      "recheck_on": "2027-01-27",
+      "limitations": "Provider headquarters is outside Pennsylvania; project was commissioned in February 2022. Verify current PA coverage, service capacity and references before publication."
     }
   ],
   "rules": [
