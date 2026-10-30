@@ -24,6 +24,7 @@ jobs:
           python tests/migration.py
           python tests/pa_companies.py
           python tests/pa_suppliers.py
+          python tests/pa_suppliers_oct30.py
           python tests/locations.py
           python tests/review_cleanup.py
           python tests/ancestry.py

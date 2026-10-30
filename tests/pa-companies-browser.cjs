@@ -5,8 +5,8 @@ try{
  page.on('pageerror',e=>errors.push(e.message));await page.route('**/gc.zgo.at/**',r=>r.abort());
  await page.goto(server.base+'directory.html');
  await page.getByRole('navigation',{name:'Primary',exact:true}).getByRole('link',{name:'Pennsylvania directory',exact:true}).click();
- await page.waitForFunction(()=>document.querySelectorAll('#results article').length===94);
- assert.match(await page.locator('#tally').innerText(),/94 matching organizations/);
+ await page.waitForFunction(()=>document.querySelectorAll('#results article').length===100);
+ assert.match(await page.locator('#tally').innerText(),/100 matching organizations/);
  await page.goto(server.base+'pennsylvania-directory.html?org=org-insureon&category=Insurance&q=Insureon');
  await page.waitForFunction(()=>document.querySelectorAll('#results article').length===1);
  assert(await page.locator('#org-6f378d0b5792').isVisible());
@@ -14,7 +14,12 @@ try{
  assert.equal(new URL(page.url()).searchParams.get('category'),'Insurance');
  assert.equal(await page.getByRole('link',{name:'Link to this company',exact:true}).count(),1);
  await page.locator('#company-reset').click();
- assert.equal(await page.locator('#results article').count(),94);
+ assert.equal(await page.locator('#results article').count(),100);
+ await page.locator('#company-category').selectOption('Logistics & distribution');
+ assert.equal(await page.locator('#results article').count(),1);
+ assert(await page.locator('#org-2b1d7f43aa6e').isVisible());
+ assert.equal(await page.locator('#org-2b1d7f43aa6e a[href="mailto:info@talaria.com"]').count(),1);
+ await page.locator('#company-reset').click();
  const searchBox=await page.locator('#company-q').boundingBox();assert(searchBox.y+searchBox.height<844,'Company search should be available on the first mobile screen');
  await page.locator('#company-category').selectOption('Laboratory equipment');
  assert(await page.locator('#org-labrepco').isVisible());

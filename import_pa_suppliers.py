@@ -8,6 +8,14 @@ MANIFEST = ROOT / 'data/sources/pa-suppliers-2026-10-29.json'
 PREFIX = 'ev-pa-supplier-'
 
 
+def preserve_order(previous, updated):
+    """Keep stable positions for existing IDs across independent import batches."""
+    by_id = {item['id']: item for item in updated}
+    old_ids = {item['id'] for item in previous}
+    return ([by_id[item['id']] for item in previous if item['id'] in by_id]
+            + [item for item in updated if item['id'] not in old_ids])
+
+
 def build(data, manifest):
     result = copy.deepcopy(data)
     profiles = manifest['profiles']
@@ -60,6 +68,9 @@ def build(data, manifest):
         inquiry = next(s for s in profile['sources'] if s['url'] == profile['inquiry_url'])
         note = 'Use the provider inquiry page to confirm project fit, Pennsylvania availability and current terms.'
         claim(sid, 'provider-contact', note, inquiry)
+        for fact in profile.get('business_facts', []):
+            source = next(s for s in profile['sources'] if s['url'] == fact['source_url'])
+            claim(oid, fact['claim'], fact['value'], source)
         result['services'].append(dict(id=sid, organization_id=oid,
             name=profile['name'] + ' — ' + profile['category'], description=profile['description'],
             location_ids=[], pathway_ids=['business'], coverage=[], audiences=['business'],
@@ -69,6 +80,8 @@ def build(data, manifest):
                 coverage_note=profile['pa_connection'], contact_note=note, source_url=inquiry['url'],
                 reviewed_on=inquiry['reviewed_on'])}, fulfillment=[], evidence_ids=evidence_ids,
             origin='organization-profile', listed_in=['PA']))
+    result['services'] = preserve_order(data['services'], result['services'])
+    result['evidence'] = preserve_order(data['evidence'], result['evidence'])
     return result
 
 

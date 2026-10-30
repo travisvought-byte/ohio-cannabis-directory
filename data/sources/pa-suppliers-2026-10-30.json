@@ -1,0 +1,275 @@
+{
+  "reviewed_on": "2026-10-30",
+  "recheck_on": "2027-01-28",
+  "issue": 74,
+  "profiles": [
+    {
+      "key": "arco",
+      "organization_id": "org-547f01a174ca",
+      "name": "ARCO National Construction",
+      "role": "Service provider",
+      "category": "Facility design & climate",
+      "description": "Design-build construction for cannabis cultivation and controlled-environment agriculture facilities.",
+      "pa_connection": "ARCO reports a completed 90,000-square-foot cannabis cultivation facility in McKeesport, Pennsylvania, for a confidential client.",
+      "primary": "https://www.arconational.com/confidential-cannabis-cultivation-mckeesport-pennsylvania/",
+      "inquiry": "https://www.arconational.com/contact/",
+      "limitations": "Prior project experience does not establish a current contract or endorsement. Client is confidential; project imagery is described as illustrative. No regulatory-compliance or performance claims are adopted.",
+      "staging_id": "pa-oct30-arco",
+      "website": "https://www.arconational.com/",
+      "pa_source": "https://www.arconational.com/confidential-cannabis-cultivation-mckeesport-pennsylvania/",
+      "inquiry_url": "https://www.arconational.com/contact/",
+      "sources": [
+        {
+          "url": "https://www.arconational.com/confidential-cannabis-cultivation-mckeesport-pennsylvania/",
+          "source_kind": "provider",
+          "status": "source-reviewed",
+          "reviewed_on": "2026-10-30",
+          "limitations": "Prior project experience does not establish a current contract or endorsement. Client is confidential; project imagery is described as illustrative. No regulatory-compliance or performance claims are adopted."
+        },
+        {
+          "url": "https://www.arconational.com/contact/",
+          "source_kind": "provider",
+          "status": "source-reviewed",
+          "reviewed_on": "2026-10-30",
+          "limitations": "Prior project experience does not establish a current contract or endorsement. Client is confidential; project imagery is described as illustrative. No regulatory-compliance or performance claims are adopted."
+        }
+      ],
+      "business_facts": [
+        {
+          "claim": "company-office",
+          "value": "Pittsburgh office: 322 North Shore Drive, Building 1B, Suite 200, Pittsburgh, PA 15212.",
+          "source_url": "https://www.arconational.com/contact/"
+        }
+      ]
+    },
+    {
+      "key": "graves",
+      "organization_id": "org-graves-design-group",
+      "name": "Graves Design Group",
+      "role": "Service provider",
+      "category": "Facility design & climate",
+      "description": "Architecture and engineering for prefabricated cultivation-facility buildings, including site and building design.",
+      "pa_connection": "Provider describes architecture and engineering for PurePenn's medicinal-cannabis cultivation facility in McKeesport RIDC Park, Pennsylvania.",
+      "primary": "https://www.gravesdesigngroup.com/purepenn-marijuana-growing-facility",
+      "inquiry": "https://www.gravesdesigngroup.com/contact",
+      "limitations": "Historical project description supports prior capability only. No current client relationship, operating permit, professional license or available capacity is independently confirmed.",
+      "staging_id": "pa-oct30-graves",
+      "website": "https://www.gravesdesigngroup.com/",
+      "pa_source": "https://www.gravesdesigngroup.com/purepenn-marijuana-growing-facility",
+      "inquiry_url": "https://www.gravesdesigngroup.com/contact",
+      "sources": [
+        {
+          "url": "https://www.gravesdesigngroup.com/purepenn-marijuana-growing-facility",
+          "source_kind": "provider",
+          "status": "source-reviewed",
+          "reviewed_on": "2026-10-30",
+          "limitations": "Historical project description supports prior capability only. No current client relationship, operating permit, professional license or available capacity is independently confirmed."
+        },
+        {
+          "url": "https://www.gravesdesigngroup.com/contact",
+          "source_kind": "provider",
+          "status": "source-reviewed",
+          "reviewed_on": "2026-10-30",
+          "limitations": "Historical project description supports prior capability only. No current client relationship, operating permit, professional license or available capacity is independently confirmed."
+        }
+      ],
+      "business_facts": []
+    },
+    {
+      "key": "hitech",
+      "organization_id": "org-hitechtrader",
+      "name": "HiTechTrader",
+      "role": "Supplier",
+      "category": "Extraction & processing equipment",
+      "description": "New surplus, open-box and used laboratory equipment marketed for cannabis and hemp extraction, including evaporators, chillers, pumps and analytical instruments.",
+      "pa_connection": "Provider states that extraction-equipment inventory is located in Pennsylvania. This is an inventory-location claim, not a verified office address.",
+      "primary": "https://hitechtrader.com/industries/cannabis-hemp-extraction/",
+      "inquiry": "https://hitechtrader.com/industries/cannabis-hemp-extraction/",
+      "limitations": "Verify specific inventory, equipment condition, specifications and service terms directly. Price, savings, ROI and immediate-availability marketing claims are not adopted. Equipment sales do not establish approved testing-laboratory status.",
+      "staging_id": "pa-oct30-hitech",
+      "website": "https://hitechtrader.com/",
+      "pa_source": "https://hitechtrader.com/industries/cannabis-hemp-extraction/",
+      "inquiry_url": "https://hitechtrader.com/industries/cannabis-hemp-extraction/",
+      "sources": [
+        {
+          "url": "https://hitechtrader.com/industries/cannabis-hemp-extraction/",
+          "source_kind": "provider",
+          "status": "source-reviewed",
+          "reviewed_on": "2026-10-30",
+          "limitations": "Verify specific inventory, equipment condition, specifications and service terms directly. Price, savings, ROI and immediate-availability marketing claims are not adopted. Equipment sales do not establish approved testing-laboratory status."
+        }
+      ],
+      "business_facts": [
+        {
+          "claim": "public-business-email",
+          "value": "sales@hitechtrader.com",
+          "source_url": "https://hitechtrader.com/industries/cannabis-hemp-extraction/"
+        },
+        {
+          "claim": "public-business-phone",
+          "value": "609-518-9100",
+          "source_url": "https://hitechtrader.com/industries/cannabis-hemp-extraction/"
+        }
+      ]
+    },
+    {
+      "key": "dellinger",
+      "organization_id": "org-dellinger-horticulture",
+      "name": "Dellinger Horticulture, Inc.",
+      "role": "Service provider",
+      "category": "Facility design & climate",
+      "description": "Greenhouse construction and modifications, with irrigation, ventilation, shading, temperature-control and benching services for horticulture and cannabis businesses.",
+      "pa_connection": "Provider names Pennsylvania among states with completed greenhouse projects and separately identifies cannabis among the industries it serves.",
+      "primary": "https://www.dellingerhorticulture.com/",
+      "inquiry": "https://www.dellingerhorticulture.com/contact",
+      "limitations": "The reviewed page does not identify a Pennsylvania cannabis customer. General PA greenhouse project experience and cannabis-market offering are separate facts. No current capacity, credentials or statewide intake is confirmed.",
+      "staging_id": "pa-oct30-dellinger",
+      "website": "https://www.dellingerhorticulture.com/",
+      "pa_source": "https://www.dellingerhorticulture.com/",
+      "inquiry_url": "https://www.dellingerhorticulture.com/contact",
+      "sources": [
+        {
+          "url": "https://www.dellingerhorticulture.com/",
+          "source_kind": "provider",
+          "status": "source-reviewed",
+          "reviewed_on": "2026-10-30",
+          "limitations": "The reviewed page does not identify a Pennsylvania cannabis customer. General PA greenhouse project experience and cannabis-market offering are separate facts. No current capacity, credentials or statewide intake is confirmed."
+        },
+        {
+          "url": "https://www.dellingerhorticulture.com/contact",
+          "source_kind": "provider",
+          "status": "source-reviewed",
+          "reviewed_on": "2026-10-30",
+          "limitations": "The reviewed page does not identify a Pennsylvania cannabis customer. General PA greenhouse project experience and cannabis-market offering are separate facts. No current capacity, credentials or statewide intake is confirmed."
+        }
+      ],
+      "business_facts": []
+    },
+    {
+      "key": "talaria",
+      "organization_id": "org-2b1d7f43aa6e",
+      "name": "Talaria",
+      "role": "Service provider",
+      "category": "Logistics & distribution",
+      "description": "B2B cannabis distribution and ordering technology, with separately marketed cash-management and armored-transport services.",
+      "pa_connection": "Provider identifies Philadelphia as its founding location and explicitly lists Pennsylvania in its cannabis B2B distribution footprint.",
+      "primary": "https://talaria.com/about/",
+      "inquiry": "https://talaria.com/contact/",
+      "limitations": "Provider-reported coverage does not establish state transport authority, current contracts or service availability. It does not authorize interstate cannabis movement. Distribution geography is not interchangeable with the broader cash-services footprint; no banking charter is inferred.",
+      "staging_id": "pa-oct30-talaria",
+      "website": "https://talaria.com/",
+      "pa_source": "https://talaria.com/about/",
+      "inquiry_url": "https://talaria.com/contact/",
+      "sources": [
+        {
+          "url": "https://talaria.com/about/",
+          "source_kind": "provider",
+          "status": "source-reviewed",
+          "reviewed_on": "2026-10-30",
+          "limitations": "Provider-reported coverage does not establish state transport authority, current contracts or service availability. It does not authorize interstate cannabis movement. Distribution geography is not interchangeable with the broader cash-services footprint; no banking charter is inferred."
+        },
+        {
+          "url": "https://talaria.com/contact/",
+          "source_kind": "provider",
+          "status": "source-reviewed",
+          "reviewed_on": "2026-10-30",
+          "limitations": "Provider-reported coverage does not establish state transport authority, current contracts or service availability. It does not authorize interstate cannabis movement. Distribution geography is not interchangeable with the broader cash-services footprint; no banking charter is inferred."
+        }
+      ],
+      "business_facts": [
+        {
+          "claim": "public-business-email",
+          "value": "info@talaria.com",
+          "source_url": "https://talaria.com/contact/"
+        },
+        {
+          "claim": "company-contact-purpose",
+          "value": "General inquiries and a demo request form for distribution or cash services.",
+          "source_url": "https://talaria.com/contact/"
+        }
+      ]
+    },
+    {
+      "key": "iip",
+      "organization_id": "org-innovative-industrial-properties",
+      "name": "Innovative Industrial Properties",
+      "role": "Service provider",
+      "category": "Commercial real estate",
+      "description": "Real-estate acquisitions and sale-leaseback transactions for properties leased to regulated cannabis operators.",
+      "pa_connection": "Provider's public site identifies a Chambersburg, Pennsylvania property within its cannabis real-estate portfolio.",
+      "primary": "https://innovativeindustrialproperties.com/",
+      "inquiry": "https://innovativeindustrialproperties.com/contact/",
+      "limitations": "Provider portfolio description is not independent title, tenant, lease-status or permit verification. Homepage placeholder text and unrendered counters are excluded; no aggregate portfolio totals, financing availability, valuation or investment recommendation is offered.",
+      "staging_id": "pa-oct30-iip",
+      "website": "https://innovativeindustrialproperties.com/",
+      "pa_source": "https://innovativeindustrialproperties.com/",
+      "inquiry_url": "https://innovativeindustrialproperties.com/contact/",
+      "sources": [
+        {
+          "url": "https://innovativeindustrialproperties.com/",
+          "source_kind": "provider",
+          "status": "source-reviewed",
+          "reviewed_on": "2026-10-30",
+          "limitations": "Provider portfolio description is not independent title, tenant, lease-status or permit verification. Homepage placeholder text and unrendered counters are excluded; no aggregate portfolio totals, financing availability, valuation or investment recommendation is offered."
+        },
+        {
+          "url": "https://innovativeindustrialproperties.com/contact/",
+          "source_kind": "provider",
+          "status": "source-reviewed",
+          "reviewed_on": "2026-10-30",
+          "limitations": "Provider portfolio description is not independent title, tenant, lease-status or permit verification. Homepage placeholder text and unrendered counters are excluded; no aggregate portfolio totals, financing availability, valuation or investment recommendation is offered."
+        }
+      ],
+      "business_facts": [
+        {
+          "claim": "public-business-email",
+          "value": "acquisitions@iipreit.com",
+          "source_url": "https://innovativeindustrialproperties.com/contact/"
+        },
+        {
+          "claim": "company-contact-purpose",
+          "value": "Sale-leaseback and property transaction inquiries from regulated cannabis operators.",
+          "source_url": "https://innovativeindustrialproperties.com/contact/"
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "staging_id": "pa-oct30-arco",
+      "decision": "propose-publication",
+      "record_type": "current-provider",
+      "reason": "Provider offering and Pennsylvania relevance checked directly against public pages on October 30, 2026."
+    },
+    {
+      "staging_id": "pa-oct30-graves",
+      "decision": "propose-publication",
+      "record_type": "current-provider",
+      "reason": "Provider offering and Pennsylvania relevance checked directly against public pages on October 30, 2026."
+    },
+    {
+      "staging_id": "pa-oct30-hitech",
+      "decision": "propose-publication",
+      "record_type": "current-provider",
+      "reason": "Provider offering and Pennsylvania relevance checked directly against public pages on October 30, 2026."
+    },
+    {
+      "staging_id": "pa-oct30-dellinger",
+      "decision": "propose-publication",
+      "record_type": "current-provider",
+      "reason": "Provider offering and Pennsylvania relevance checked directly against public pages on October 30, 2026."
+    },
+    {
+      "staging_id": "pa-oct30-talaria",
+      "decision": "propose-publication",
+      "record_type": "current-provider",
+      "reason": "Provider offering and Pennsylvania relevance checked directly against public pages on October 30, 2026."
+    },
+    {
+      "staging_id": "pa-oct30-iip",
+      "decision": "propose-publication",
+      "record_type": "current-provider",
+      "reason": "Provider offering and Pennsylvania relevance checked directly against public pages on October 30, 2026."
+    }
+  ]
+}
