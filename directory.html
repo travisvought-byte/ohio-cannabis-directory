@@ -910,7 +910,7 @@ let showScope = false, shown = [];
 const esc = s => String(s).replace(/[&<>"]/g, c =>
   ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-const UPCOMING_EVENTS = [{"name":"Women’s Cannabis & Wellness Expo","date":"2026-11-07","place":"Marriott Cincinnati North · West Chester, Ohio","url":"https://medicateoh.com/womens-cannabis-expo-2/","featured":true,"reviewed_on":"2026-10-13","registration_url":"https://www.eventbrite.com/e/womens-cannabis-wellness-expo-tickets-1993962022084"},{"name":"“Gardening” Industry Night","date":"2026-10-27","place":"Stanley’s Pub · 323 Stanley Ave · Cincinnati, Ohio · 8–11 PM · 21+","url":"https://medicateoh.com/industry-night-cincinnati-1027/","reviewed_on":"2026-10-13","registration_url":"https://www.eventbrite.com/e/2002953936141/"}];
+const UPCOMING_EVENTS = [{"name":"Women’s Cannabis & Wellness Expo","date":"2026-11-07","place":"Marriott Cincinnati North · West Chester, Ohio","url":"https://medicateoh.com/womens-cannabis-expo-2/","featured":true,"reviewed_on":"2026-10-13","registration_url":"https://www.eventbrite.com/e/womens-cannabis-wellness-expo-tickets-1993962022084"},{"name":"“Gardening” Industry Night","date":"2026-10-27","place":"Stanley’s Pub · 323 Stanley Ave · Cincinnati, Ohio · 8–11 PM · 21+","url":"https://medicateoh.com/industry-night-cincinnati-1027/","reviewed_on":"2026-10-13","registration_url":"https://www.eventbrite.com/e/2002953936141/"},{"name":"Ohio Cannabis Expo — Dayton 2027","date":"2027-06-11","place":"Dayton Convention Center · Dayton, Ohio","url":"https://www.ohiocannabisexpo.com/","reviewed_on":"2026-10-30"}];
 function renderHomeHighlights(){
   const today = new Date();
   today.setHours(0,0,0,0);
