@@ -26,7 +26,8 @@ assert cards['org-panacea-payroll']['categories'] == ['Payroll & HR']
 assert cards['org-buglady-consulting']['categories'] == ['Pest management / IPM']
 assert not {'org-catalyst-bc', 'org-clean-earth', 'org-stulz', 'org-cvault'} & cards.keys()
 assert not any(s['id'].startswith('svc-pa-supplier-b14-') for s in data['services'])
-new = [s for s in data['services'] if s['id'].startswith('svc-pa-supplier-')]
+batch_ids = {'svc-pa-supplier-' + p['staging_id'].removeprefix('pa-') for p in manifest['profiles']}
+new = [s for s in data['services'] if s['id'] in batch_ids]
 assert len(new) == 16
 assert all(s['coverage'] == [] and s['listed_in'] == ['PA'] for s in new)
 # A shared national record keeps its contacts, name, legacy fields and Ohio coverage.
