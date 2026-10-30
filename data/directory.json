@@ -91150,6 +91150,19 @@
       "recorded_on": "2026-10-30",
       "recheck_on": "2027-01-28",
       "limitations": "Provider portfolio description is not independent title, tenant, lease-status or permit verification. Homepage placeholder text and unrendered counters are excluded; no aggregate portfolio totals, financing availability, valuation or investment recommendation is offered."
+    },
+    {
+      "id": "ev-ohio-cannabis-expo-2027",
+      "subject_id": "event-oh-ohio-cannabis-expo-2027",
+      "claim": "event-listing",
+      "value": "Ohio Cannabis Expo — Dayton | Dayton Convention Center, Dayton, Ohio | June 11, 2027",
+      "source_url": "https://www.ohiocannabisexpo.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-30",
+      "recorded_on": "2026-10-30",
+      "recheck_on": "2027-01-30",
+      "limitations": "Organizer homepage announces date and venue. Registration widget says no events at the moment; no registration route verified. Does not establish cancellation or relocation of any separate Columbus event."
     }
   ],
   "rules": [
@@ -92682,6 +92695,20 @@
       "evidence_ids": [
         "ev-mjbizcon26-event"
       ]
+    },
+    {
+      "id": "event-oh-ohio-cannabis-expo-2027",
+      "name": "Ohio Cannabis Expo — Dayton 2027",
+      "state": "OH",
+      "starts_on": "2027-06-11",
+      "ends_on": "2027-06-11",
+      "organization_ids": [
+        "org-ea14a4ededa6"
+      ],
+      "next_step_url": "https://www.ohiocannabisexpo.com/",
+      "evidence_ids": [
+        "ev-ohio-cannabis-expo-2027"
+      ]
     }
   ],
   "pathways": [
@@ -93112,6 +93139,13 @@
       "url": "https://medicateoh.com/industry-night-cincinnati-1027/",
       "reviewed_on": "2026-10-13",
       "registration_url": "https://www.eventbrite.com/e/2002953936141/"
+    },
+    {
+      "name": "Ohio Cannabis Expo — Dayton 2027",
+      "date": "2027-06-11",
+      "place": "Dayton Convention Center · Dayton, Ohio",
+      "url": "https://www.ohiocannabisexpo.com/",
+      "reviewed_on": "2026-10-30"
     }
   ]
 }
