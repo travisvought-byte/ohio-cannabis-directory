@@ -16,6 +16,8 @@ jobs:
         run: pip install -r requirements.txt
       - name: Check data, release metadata and generated pages
         run: python tests/check_data.py
+      - name: Validate consolidated PA Drive research
+        run: python scripts/validate_pa_drive_mining.py
       - name: Validate replicable directory foundation
         run: |
           python validate_foundation.py

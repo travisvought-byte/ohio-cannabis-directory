@@ -1,0 +1,55 @@
+{
+  "batch_id": "pa-drive-mining-2026-10-30",
+  "publication_status": "research-only",
+  "snapshot_on": "2026-10-30",
+  "source_spreadsheet_url": "https://docs.google.com/spreadsheets/d/1yZ-bWfHXEnYZL7UbIIiZl6ai5SnI6z29fHsDTwGqPNY/edit",
+  "github_issue": 76,
+  "candidate_count": 178,
+  "candidate_pa_connection_counts": {
+    "PA event": 18,
+    "PA distribution channel": 127,
+    "PA provider claim": 2,
+    "Needs PA evidence": 16,
+    "PA official registry": 12,
+    "PA professional office": 3
+  },
+  "candidate_review_status_counts": {
+    "Needs verification": 162,
+    "Needs PA evidence": 16
+  },
+  "mining_pass_count": 9,
+  "historical_mention_count": 39,
+  "biocontrol_discovery_lead_count": 24,
+  "indexed_document_count": 387,
+  "source_path_count": 14,
+  "scope_notes": [
+    "The 178 records are candidate trading identities, not 178 verified or distinct ultimate corporate parents.",
+    "A documented PA connection may be an event, distributor channel, official registry, provider claim or professional office.",
+    "Catalog presence is not current stock, cannabis-use authorization, a PA office, or a current PA supplier/customer contract.",
+    "Source checked dates refer to the recorded source context; blocked provider retrieval is not a provider review.",
+    "April 2026 hemp laboratory registry date is preserved; hemp testing does not establish medical-marijuana testing approval.",
+    "Historical 2018 application mentions include plans, quotes, examples and generic checklists, not current contracts.",
+    "Review order is a research work order, not a paid ranking or an assertion of statewide completeness.",
+    "This package is not consumed by public-directory build/export scripts. Promotion requires entity reconciliation and evidence review."
+  ],
+  "files": {
+    "biocontrol-leads.json": {
+      "sha256": "3981bec4082cfe156ad1ce1999bb7db92d44fbb4337837ff783995ddb971d2db"
+    },
+    "candidates.json": {
+      "sha256": "1a77fa7b52b024888e6259ca2bd507021facc4f6ccf225afec61636cb1b73d7f"
+    },
+    "document-index.json": {
+      "sha256": "50247ea7809a22a44784d5c94af51628cef964a1f3e15be4ca43920e590c97e9"
+    },
+    "historical-mentions.json": {
+      "sha256": "e134dc96cdd06507c630a6f469d7a4a3ab0aa3be273af3801c213fae768151da"
+    },
+    "mining-passes.json": {
+      "sha256": "b3958fe7b93e4f14b488f1355674bf56f5cfb5c4ee67c08c68ac567f5a37372e"
+    },
+    "source-paths.json": {
+      "sha256": "22f1f6aab8811e6250fc3bd4d80206a33ea8e63780b2cbb0bd47d4562cca2cc7"
+    }
+  }
+}
