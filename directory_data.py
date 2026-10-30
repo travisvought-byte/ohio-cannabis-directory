@@ -17,7 +17,7 @@ def load_records(include_withdrawn=True):
     return [r['legacy_record'] for r in load_directory()['organizations'] if 'legacy_record' in r and (include_withdrawn or r.get('scope') != 'withdrawn')]
 
 def load_relationship_records():
-    return [r['legacy_record'] for r in load_directory()['relationships']]
+    return [dict(r['legacy_record'], **{'Relationship Group': r['group']}) for r in load_directory()['relationships']]
 
 def load_seed_records():
     return [r['legacy_seed_record'] for r in load_directory()['services'] if r.get('origin') == 'seed-profile']

@@ -16,3 +16,12 @@ rejects(lambda d:d['states'][0].update(publication_status='research-only'),'unre
 rejects(lambda d:d['services'][0].update(pathway_ids=['imaginary']),'unknown pathway')
 rejects(lambda d:d['services'][0]['fulfillment'][0].update(status='confirmed'),'matching claim-level evidence')
 print('PASS foundation regression: identity, references, geography, dates, unsupported fulfillment and publication gates.')
+
+canonical=json.loads((ROOT/'data/directory.json').read_text())
+assert not validate(canonical)
+for invalid in (None, '', 'Other', ['Security', 'Insurance and risk']):
+ d=copy.deepcopy(canonical)
+ if invalid is None: del d['relationships'][0]['group']
+ else: d['relationships'][0]['group']=invalid
+ assert validate(d), 'Invalid relationship group accepted'
+print('PASS: every relationship requires one enumerated group.')
