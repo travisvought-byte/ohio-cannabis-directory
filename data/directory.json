@@ -22683,24 +22683,6 @@
       "scope": "public"
     },
     {
-      "id": "org-insureon",
-      "name": "Insureon",
-      "kind": "service-provider",
-      "legacy_ids": [],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "800-688-1984"
-        },
-        {
-          "kind": "contact-page",
-          "value": "https://www.insureon.com/contact-us"
-        }
-      ],
-      "website": "https://www.insureon.com/cannabis-business-insurance/pennsylvania",
-      "scope": "public"
-    },
-    {
       "id": "org-dura-pack",
       "name": "Dura-Pack",
       "kind": "service-provider",
@@ -52971,7 +52953,7 @@
     },
     {
       "id": "svc-pa-insurance-insureon",
-      "organization_id": "org-insureon",
+      "organization_id": "org-6f378d0b5792",
       "location_ids": [],
       "pathway_ids": [
         "business"
@@ -92150,6 +92132,10 @@
     {
       "old_id": "org-resource-15e2802480be",
       "new_id": "org-seed-4e535e08714e"
+    },
+    {
+      "old_id": "org-insureon",
+      "new_id": "org-6f378d0b5792"
     }
   ],
   "resource_routes": [

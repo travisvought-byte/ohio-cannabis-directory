@@ -7,6 +7,14 @@ try{
  await page.getByRole('navigation',{name:'Primary',exact:true}).getByRole('link',{name:'Pennsylvania directory',exact:true}).click();
  await page.waitForFunction(()=>document.querySelectorAll('#results article').length===94);
  assert.match(await page.locator('#tally').innerText(),/94 matching organizations/);
+ await page.goto(server.base+'pennsylvania-directory.html?org=org-insureon&category=Insurance&q=Insureon');
+ await page.waitForFunction(()=>document.querySelectorAll('#results article').length===1);
+ assert(await page.locator('#org-6f378d0b5792').isVisible());
+ assert.equal(new URL(page.url()).searchParams.get('org'),'org-6f378d0b5792');
+ assert.equal(new URL(page.url()).searchParams.get('category'),'Insurance');
+ assert.equal(await page.getByRole('link',{name:'Link to this company',exact:true}).count(),1);
+ await page.locator('#company-reset').click();
+ assert.equal(await page.locator('#results article').count(),94);
  const searchBox=await page.locator('#company-q').boundingBox();assert(searchBox.y+searchBox.height<844,'Company search should be available on the first mobile screen');
  await page.locator('#company-category').selectOption('Laboratory equipment');
  assert(await page.locator('#org-labrepco').isVisible());

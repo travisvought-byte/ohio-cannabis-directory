@@ -1,7 +1,7 @@
 {
   "reviewed_on": "2026-10-28",
   "recheck_on": "2026-11-27",
-  "method": "Each claim below cites a page that was opened and read. Sources with ids starting 'pa-' and no 'reviewed_on' here come from the October 24, 2026 research batch (data/research/pennsylvania-2026-10-24-sources.json) and keep that review date; they were not reread. Sources listed in this file were read on October 28, 2026. A source supports only the stated claim. No service is described as available, free or guaranteed unless its own page says so, and coverage is recorded only where the page names a state or county.",
+  "method": "Each claim below cites a page that was opened and read. Sources with ids starting 'pa-' and no 'reviewed_on' here come from the October 24, 2026 research batch (data/research/pennsylvania-2026-10-24-sources.json) and keep that review date; they were not reread. Sources listed in this file were read on October 28, 2026. A source supports only the stated claim. No service is described as available, free or guaranteed unless its own page says so, and coverage is recorded only where the page names a state or county. Pathway coverage text is maintained in the canonical Pennsylvania state pack, which later reviewed additions also update, so this importer does not rewrite it.",
   "sources": {
     "doh-labs": {
       "url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/laboratories",
@@ -436,22 +436,6 @@
         {
           "kind": "email",
           "value": "info@extrityservices.com"
-        }
-      ]
-    },
-    {
-      "id": "org-insureon",
-      "name": "Insureon",
-      "kind": "service-provider",
-      "website": "https://www.insureon.com/cannabis-business-insurance/pennsylvania",
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "800-688-1984"
-        },
-        {
-          "kind": "contact-page",
-          "value": "https://www.insureon.com/contact-us"
         }
       ]
     }
@@ -1167,7 +1151,7 @@
     },
     {
       "id": "svc-pa-insurance-insureon",
-      "organization_id": "org-insureon",
+      "organization_id": "org-6f378d0b5792",
       "pathway_ids": [
         "business"
       ],
@@ -1784,42 +1768,5 @@
         }
       ]
     }
-  ],
-  "pathways": {
-    "business": {
-      "coverage_status": "starter",
-      "next_step": "Choose a provider type, such as testing labs, operators, banking, insurance, security, legal or consulting, and contact the provider.",
-      "public_url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/laboratories",
-      "limitations": "Selected providers with Pennsylvania-specific sources: all five laboratories (six locations) on the Department of Health approved list, 11 operator brands with Pennsylvania retail or cultivation pages, two banks, two law practices, one consultancy, one trade association, one insurance agency and one security firm. This is not a list of all grower/processor permit holders. No packaging, equipment or technology providers with Pennsylvania evidence yet. A listing is not an endorsement."
-    },
-    "rules": {
-      "coverage_status": "starter",
-      "next_step": "Read each dated summary, then the official statute it cites.",
-      "public_url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2016/0/0016..HTM",
-      "limitations": "Six state-law summaries checked October 28, 2026 against the General Assembly's statute text: medical use limits, adult-use status and small-amount possession, home cultivation, employment protection, driving and Clean Slate sealing. Not legal advice. Local ordinances, hemp-derived products, Department of Health regulations and court orders are not summarized."
-    },
-    "medical": {
-      "coverage_status": "partial",
-      "next_step": "Register, find an approved practitioner, then check caregiver, fee and assistance options.",
-      "public_url": "https://www.pa.gov/services/health/register-for-the-medical-marijuana-program",
-      "limitations": "Official registration, approved practitioner list, caregiver rules, fee relief and purchase assistance, plus one funding-limited veteran fee reimbursement program. The practitioner list was not reviewed for location, fees or telehealth, and no individual eligibility is assessed."
-    },
-    "records": {
-      "coverage_status": "partial",
-      "next_step": "Check what Clean Slate seals automatically, get your record, then use a local legal-help route or the Board of Pardons.",
-      "public_url": "https://www.pa.gov/services/psp/apply-for-criminal-record-expungement",
-      "limitations": "Statewide routes: State Police record access, Board of Pardons application and expedited review. Local free help found for Philadelphia (CLS, PLSE), Bucks, Chester, Delaware and Montgomery (LASP), Monroe and Pike (NPLS) and Allegheny (Public Defender's Project Reset). Neighborhood Legal Services and MidPenn Legal Services were checked: their current intake pages describe civil help only, and MidPenn's only record-clearing material found was an undated brochure and past clinics. Central and most of western Pennsylvania have no listed record-clearing help yet. No automatic cannabis relief beyond Clean Slate is claimed."
-    },
-    "seeds": {
-      "coverage_status": "starter",
-      "next_step": "Read the home-cultivation rule; hemp growers can apply for a Department of Agriculture permit.",
-      "public_url": "https://www.pa.gov/agencies/pda/plants-land-water/hemp",
-      "limitations": "Home cultivation of cannabis is not allowed in Pennsylvania, so no seed sellers are listed. The one route is the Department of Agriculture hemp permit for licensed hemp growing."
-    },
-    "community": {
-      "coverage_status": "starter",
-      "next_step": "Contact a group about meetings, membership or advocacy.",
-      "limitations": "Six groups: a trade association, a legalization coalition, a veteran network and three NORML chapters (Bucks County, Lehigh Valley, Montco). No Pennsylvania cannabis events are verified for the next three months: organizer pages checked October 28, 2026 list the next Pennsylvania Cannabis Convention only as summer 2027 with no date, and NECANN's Philadelphia show as April 2028."
-    }
-  }
+  ]
 }

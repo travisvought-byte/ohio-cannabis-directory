@@ -40,6 +40,15 @@ def category(service):
 
 def build_model(data):
     organizations = {o['id']: o for o in data['organizations']}
+    aliases = {a['old_id']: a['new_id'] for a in data.get('aliases', [])}
+    resolved_aliases = defaultdict(list)
+    for old_id in aliases:
+        target, seen = old_id, set()
+        while target in aliases and target not in seen:
+            seen.add(target)
+            target = aliases[target]
+        if target not in seen:
+            resolved_aliases[target].append(old_id)
     evidence = {e['id']: e for e in data['evidence']}
     grouped = defaultdict(list)
     facts = defaultdict(list)
@@ -77,7 +86,8 @@ def build_model(data):
             sources[key] = {k:e.get(k, '') for k in ('source_url', 'source_kind', 'reviewed_on', 'status', 'limitations')}
         public_facts = [{k:e[k] for k in ('claim', 'value', 'source_url', 'reviewed_on', 'limitations')}
                         for e in org_facts if e['claim'] not in ('company-role', 'company-category')]
-        cards.append(dict(id=oid, name=org['name'].removeprefix('! '), categories=cats, roles=roles,
+        cards.append(dict(id=oid, aliases=sorted(resolved_aliases[oid]),
+                          name=org['name'].removeprefix('! '), categories=cats, roles=roles,
                           routes=routes, facts=public_facts, sources=list(sources.values())))
     return sorted(cards, key=lambda c:(c['name'].casefold(), c['id']))
 

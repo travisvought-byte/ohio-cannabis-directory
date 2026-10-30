@@ -16,6 +16,8 @@ cards = build_model(data)
 assert len(cards) == 94
 assert len({c['id'] for c in cards}) == len(cards)
 by_id = {c['id']: c for c in cards}
+assert by_id['org-6f378d0b5792']['aliases'] == ['org-insureon']
+assert 'org-insureon' not in by_id
 assert by_id['org-afa309caf39c']['name'] == 'INSA'
 assert by_id['org-90725b1d60a7']['name'] == 'FarmaceuticalRx'
 assert by_id['org-cannagas-supply']['roles'] == ['Supplier']
@@ -27,6 +29,8 @@ assert all(c['sources'] for c in cards)
 assert all(f['source_url'].startswith('https://') and f['reviewed_on'] for c in cards for f in c['facts'])
 # An additional service for one company must not become another company card.
 fixture = copy.deepcopy(data)
+fixture['aliases'].append({'old_id': 'org-test-old-insureon', 'new_id': 'org-insureon'})
+assert next(c for c in build_model(fixture) if c['id'] == 'org-6f378d0b5792')['aliases'] == ['org-insureon', 'org-test-old-insureon']
 extra = copy.deepcopy(next(s for s in fixture['services'] if s['organization_id'] == 'org-htg-supply'))
 extra['id'] = 'svc-test-second-htg-route'
 fixture['services'].append(extra)
