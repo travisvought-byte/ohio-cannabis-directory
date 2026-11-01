@@ -1,0 +1,1946 @@
+{
+  "reviewed_on": "2026-11-01",
+  "recheck_on": "2026-12-01",
+  "method": "Regulator-published lists read in a browser on November 1, 2026: OCM's Cannabis Laboratories page (permitted laboratory table with testing scope), OCM's Sampling Firms page (approved sampling firms) and OCM's SEE Cannabis Banking Directory. Each claim states only what the regulator lists. OCM states the banking directory is not an endorsement. Not legal or financial advice.",
+  "sources": {
+    "ocm-labs": {
+      "url": "https://cannabis.ny.gov/cannabis-laboratories",
+      "source_kind": "government",
+      "limitations": "OCM permitted-laboratory table (permit number, name, city, testing scope). Shows no page date. Turnaround, pricing and current capacity are not stated; footnoted scope marks (**) were not reviewed."
+    },
+    "ocm-sampling": {
+      "url": "https://cannabis.ny.gov/sampling-firms",
+      "source_kind": "government",
+      "limitations": "OCM approved sampling firm table (name, approval number, contact person, email or website). Shows no page date. Service areas and pricing are not stated."
+    },
+    "ocm-banking": {
+      "url": "https://cannabis.ny.gov/node/10411",
+      "source_kind": "government",
+      "limitations": "OCM SEE Cannabis Banking Directory. OCM states listing is for public convenience and is not an endorsement, support or recommendation. Account approval, fees and services are decided by each institution. Regions are New York economic development regions."
+    }
+  },
+  "organizations": [
+    {
+      "id": "org-ny-smithers-cts-new-york",
+      "name": "Smithers CTS New York LLC",
+      "kind": "service-provider",
+      "website": "",
+      "contacts": []
+    },
+    {
+      "id": "org-ny-kaycha-ny",
+      "name": "Kaycha NY LLC",
+      "kind": "service-provider",
+      "website": "",
+      "contacts": []
+    },
+    {
+      "id": "org-ny-mcr-labs-ny",
+      "name": "MCR Labs of New York",
+      "kind": "service-provider",
+      "website": "https://mcrlabs.com/",
+      "contacts": []
+    },
+    {
+      "id": "org-ny-ctnd-ny",
+      "name": "Certified Testing and Data (CTND NY LLC)",
+      "kind": "service-provider",
+      "website": "https://certifiedtnd.com/",
+      "contacts": []
+    },
+    {
+      "id": "org-ny-botannis-labs-ny",
+      "name": "Botannis Labs NY Corp",
+      "kind": "service-provider",
+      "website": "https://botannis.com/",
+      "contacts": []
+    },
+    {
+      "id": "org-ny-drs-testing",
+      "name": "DRS Testing",
+      "kind": "service-provider",
+      "website": "https://drstesting.com/",
+      "contacts": []
+    },
+    {
+      "id": "org-ny-certainty-analytical-labs",
+      "name": "Certainty Analytical Labs",
+      "kind": "service-provider",
+      "website": "",
+      "contacts": []
+    },
+    {
+      "id": "org-ny-green-analytics-ny",
+      "name": "Green Analytics NY LLC",
+      "kind": "service-provider",
+      "website": "",
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "GA.Info@greenanalyticsllc.com"
+        }
+      ]
+    },
+    {
+      "id": "org-ny-steadfast-labs",
+      "name": "Steadfast, LLC",
+      "kind": "service-provider",
+      "website": "",
+      "contacts": []
+    },
+    {
+      "id": "org-ny-dope-diagnostics",
+      "name": "Dope Diagnostics Inc.",
+      "kind": "service-provider",
+      "website": "https://dopediagnostics.com/",
+      "contacts": []
+    },
+    {
+      "id": "org-ny-cannabis-sampling-solutions",
+      "name": "Cannabis Sampling Solutions",
+      "kind": "service-provider",
+      "website": "https://cannabissamplingny.com/",
+      "contacts": []
+    },
+    {
+      "id": "org-ny-western-ny-hemp-handlers",
+      "name": "Western NY Hemp Handlers",
+      "kind": "service-provider",
+      "website": "https://wnyhemp-cannabis-sampling.com/",
+      "contacts": []
+    },
+    {
+      "id": "org-ny-cut-above-collections",
+      "name": "Cut Above Collections, LLC",
+      "kind": "service-provider",
+      "website": "https://cutabovecollections.com/",
+      "contacts": []
+    },
+    {
+      "id": "org-ny-trichrome-transportation",
+      "name": "Trichrome Transportation",
+      "kind": "service-provider",
+      "website": "https://kaychalabs.com/",
+      "contacts": []
+    },
+    {
+      "id": "org-ny-fruition-flowers-firm",
+      "name": "Fruition Flowers Firm",
+      "kind": "service-provider",
+      "website": "https://fruitionfirm.com/",
+      "contacts": []
+    },
+    {
+      "id": "org-ny-a-to-z-sampling",
+      "name": "A to Z Sampling",
+      "kind": "service-provider",
+      "website": "",
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "avi@steadfastlabs.com"
+        }
+      ]
+    },
+    {
+      "id": "org-suffolk-credit-union",
+      "name": "Suffolk Credit Union",
+      "kind": "service-provider",
+      "website": "https://www.suffolkcu.org/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "631-730-3419"
+        },
+        {
+          "kind": "email",
+          "value": "cbb@suffolkcu.org"
+        }
+      ]
+    },
+    {
+      "id": "org-dart-bank",
+      "name": "Dart Bank",
+      "kind": "service-provider",
+      "website": "https://dart.bank/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "517-676-3661"
+        },
+        {
+          "kind": "email",
+          "value": "banking@dartbank.com"
+        }
+      ]
+    },
+    {
+      "id": "org-stearns-bank",
+      "name": "Stearns Bank N.A.",
+      "kind": "service-provider",
+      "website": "https://www.stearnsbank.com/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "800-320-7262"
+        },
+        {
+          "kind": "email",
+          "value": "cannabiscompliance@stearnsbank.com"
+        }
+      ]
+    },
+    {
+      "id": "org-americu-credit-union",
+      "name": "AmeriCU Credit Union",
+      "kind": "service-provider",
+      "website": "https://www.americu.org/cannabis-banking/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "315-281-6507"
+        },
+        {
+          "kind": "email",
+          "value": "specialtyaccounts@americu.org"
+        }
+      ]
+    },
+    {
+      "id": "org-valley-bank",
+      "name": "Valley Bank",
+      "kind": "service-provider",
+      "website": "https://www.valley.com/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "973-872-4567"
+        },
+        {
+          "kind": "email",
+          "value": "crb@valley.com"
+        }
+      ]
+    },
+    {
+      "id": "org-ponce-bank",
+      "name": "Ponce Bank",
+      "kind": "service-provider",
+      "website": "https://www.poncebank.com/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "718-931-9000"
+        },
+        {
+          "kind": "email",
+          "value": "contact.center@poncebank.net"
+        }
+      ]
+    },
+    {
+      "id": "org-bison-state-bank",
+      "name": "Bison State Bank",
+      "kind": "service-provider",
+      "website": "https://www.bisonstatebank.com/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "833-535-2095"
+        },
+        {
+          "kind": "email",
+          "value": "bsa@bisonstatebank.com"
+        }
+      ]
+    },
+    {
+      "id": "org-first-federal-bank",
+      "name": "First Federal Bank",
+      "kind": "service-provider",
+      "website": "https://www.ffbf.com/business/specialty-banking",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "386-243-6371"
+        },
+        {
+          "kind": "email",
+          "value": "specialtysupport@ffbf.com"
+        }
+      ]
+    },
+    {
+      "id": "org-herring-bank",
+      "name": "Herring Bank",
+      "kind": "service-provider",
+      "website": "https://www.herringbank.com/business-banking/cannabis-banking/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "877-873-0079"
+        },
+        {
+          "kind": "email",
+          "value": "mrbbanking@herringbank.com"
+        }
+      ]
+    },
+    {
+      "id": "org-keypoint-credit-union",
+      "name": "KeyPoint Credit Union",
+      "kind": "service-provider",
+      "website": "https://kpcu.com/Business/Cannabis-Banking",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "888-255-3637"
+        },
+        {
+          "kind": "email",
+          "value": "crbbd@kpcu.com"
+        }
+      ]
+    },
+    {
+      "id": "org-counterparty-62636d71a9da",
+      "name": "Regent Bank",
+      "kind": "service-provider",
+      "website": "https://www.regent.bank/divisions/cannabis/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "918-488-0788"
+        },
+        {
+          "kind": "email",
+          "value": "crbclientsuccess@regent.bank"
+        }
+      ]
+    },
+    {
+      "id": "org-seneca-savings",
+      "name": "Seneca Savings",
+      "kind": "service-provider",
+      "website": "https://www.senecasavings.com/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "315-638-0233"
+        }
+      ]
+    },
+    {
+      "id": "org-sunmark-credit-union",
+      "name": "Sunmark Credit Union",
+      "kind": "service-provider",
+      "website": "https://sunmark.org/cannabis-banking",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "518-338-2856"
+        }
+      ]
+    },
+    {
+      "id": "org-tioga-state-bank",
+      "name": "Tioga State Bank, N.A.",
+      "kind": "service-provider",
+      "website": "https://tiogabank.com/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "888-303-4872"
+        },
+        {
+          "kind": "email",
+          "value": "cannabisbanking@tiogabank.com"
+        }
+      ]
+    },
+    {
+      "id": "org-salal-credit-union",
+      "name": "Salal Credit Union",
+      "kind": "service-provider",
+      "website": "https://www.salalcu.org/business/cannabis-industry-banking/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "206-298-9398"
+        },
+        {
+          "kind": "email",
+          "value": "BusinessServices@SalalCU.org"
+        }
+      ]
+    },
+    {
+      "id": "org-trustco-bank",
+      "name": "Trustco Bank",
+      "kind": "service-provider",
+      "website": "https://www.trustcobank.com/bank-your-cannabis-business-with-trustco-bank/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "518-381-3673"
+        },
+        {
+          "kind": "email",
+          "value": "trustcogreen@trustcobank.com"
+        }
+      ]
+    },
+    {
+      "id": "org-first-central-savings-bank",
+      "name": "First Central Savings Bank",
+      "kind": "service-provider",
+      "website": "https://www.firstcentralsavings.com/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "516-888-0681"
+        }
+      ]
+    },
+    {
+      "id": "org-four-leaf-federal-credit-union",
+      "name": "Four Leaf Federal Credit Union",
+      "kind": "service-provider",
+      "website": "https://www.fourleaffcu.com/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "516-760-1891"
+        }
+      ]
+    },
+    {
+      "id": "org-cannafirst-financial",
+      "name": "CannaFirst Financial",
+      "kind": "service-provider",
+      "website": "https://cannafirst.com/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "800-788-1968"
+        }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "id": "svc-ny-lab-00001",
+      "organization_id": "org-439251489828",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "ACT Laboratories of New York, LLC — OCM-permitted cannabis testing laboratory (Halfmoon)",
+      "description": "Listed by OCM as permitted laboratory OCM-CPL-00001 in Halfmoon, NY. Testing scope on OCM's table: Cannabinoids (including d-10 THC); Filth/Foreign Material; Metals (Heavy); Microbiology; Moisture Content; Mycotoxins/Aflatoxins; Pesticides; Residual Solvents; Terpenes; Water Activity.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations that must test cannabis products. Confirm scope, fees and turnaround with the laboratory.",
+      "next_step": {
+        "label": "Open the laboratory site",
+        "url": "https://actlaboratoriesinc.com/"
+      },
+      "provider_details": {
+        "serves": "New York adult-use and medical cannabis testing",
+        "coverage_note": "Halfmoon, NY (OCM permitted laboratory list)",
+        "contact_note": "OCM's laboratory table lists no contact; use the laboratory's own site or OCM's sampling-firm list.",
+        "source": "ocm-labs"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-labs",
+          "value": "OCM permitted laboratory OCM-CPL-00001 for testing adult-use and medical cannabis products."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-labs",
+          "value": "Permit 00001: ACT Laboratories of New York, LLC., Halfmoon; scope: Cannabinoids (including d-10 THC), Filth/Foreign Material, Metals (Heavy), Microbiology, Moisture Content, Mycotoxins/Aflatoxins, Pesticides, Residual Solvents, Terpenes, Water Activity."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-lab-00004",
+      "organization_id": "org-ny-smithers-cts-new-york",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Smithers CTS New York LLC — OCM-permitted cannabis testing laboratory (Warwick)",
+      "description": "Listed by OCM as permitted laboratory OCM-CPL-00004 in Warwick, NY. Testing scope on OCM's table: Cannabinoids (including d-10 THC); Filth/Foreign Material; Metals (Heavy); Microbiology; Moisture Content; Mycotoxins/Aflatoxins; Pesticides; Residual Solvents; Terpenes; Water Activity.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations that must test cannabis products. Confirm scope, fees and turnaround with the laboratory.",
+      "next_step": {
+        "label": "Open OCM's permitted laboratory list",
+        "url": "https://cannabis.ny.gov/cannabis-laboratories"
+      },
+      "provider_details": {
+        "serves": "New York adult-use and medical cannabis testing",
+        "coverage_note": "Warwick, NY (OCM permitted laboratory list)",
+        "contact_note": "OCM's laboratory table lists no contact; use the laboratory's own site or OCM's sampling-firm list.",
+        "source": "ocm-labs"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-labs",
+          "value": "OCM permitted laboratory OCM-CPL-00004 for testing adult-use and medical cannabis products."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-labs",
+          "value": "Permit 00004: Smithers CTS New York LLC, Warwick; scope: Cannabinoids (including d-10 THC), Filth/Foreign Material, Metals (Heavy), Microbiology, Moisture Content, Mycotoxins/Aflatoxins, Pesticides, Residual Solvents, Terpenes, Water Activity."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-lab-00006",
+      "organization_id": "org-ny-kaycha-ny",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Kaycha NY LLC — OCM-permitted cannabis testing laboratory (Albany)",
+      "description": "Listed by OCM as permitted laboratory OCM-CPL-00006 in Albany, NY. Testing scope on OCM's table: Cannabinoids (including d-10 THC); Filth/Foreign Material; Metals (Heavy); Microbiology; Moisture Content; Mycotoxins/Aflatoxins; Pesticides; Residual Solvents; Terpenes; Water Activity.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations that must test cannabis products. Confirm scope, fees and turnaround with the laboratory.",
+      "next_step": {
+        "label": "Open OCM's permitted laboratory list",
+        "url": "https://cannabis.ny.gov/cannabis-laboratories"
+      },
+      "provider_details": {
+        "serves": "New York adult-use and medical cannabis testing",
+        "coverage_note": "Albany, NY (OCM permitted laboratory list)",
+        "contact_note": "OCM's laboratory table lists no contact; use the laboratory's own site or OCM's sampling-firm list.",
+        "source": "ocm-labs"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-labs",
+          "value": "OCM permitted laboratory OCM-CPL-00006 for testing adult-use and medical cannabis products."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-labs",
+          "value": "Permit 00006: Kaycha NY LLC, Albany; scope: Cannabinoids (including d-10 THC), Filth/Foreign Material, Metals (Heavy), Microbiology, Moisture Content, Mycotoxins/Aflatoxins, Pesticides, Residual Solvents, Terpenes, Water Activity."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-lab-00008",
+      "organization_id": "org-ny-mcr-labs-ny",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "MCR Labs of New York — OCM-permitted cannabis testing laboratory (Utica)",
+      "description": "Listed by OCM as permitted laboratory OCM-CPL-00008 in Utica, NY. Testing scope on OCM's table: Cannabinoids (including d-10 THC); Filth/Foreign Material; Metals (Heavy); Microbiology; Moisture Content; Mycotoxins/Aflatoxins; Pesticides; Residual Solvents; Terpenes; Water Activity.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations that must test cannabis products. Confirm scope, fees and turnaround with the laboratory.",
+      "next_step": {
+        "label": "Open the laboratory site",
+        "url": "https://mcrlabs.com/"
+      },
+      "provider_details": {
+        "serves": "New York adult-use and medical cannabis testing",
+        "coverage_note": "Utica, NY (OCM permitted laboratory list)",
+        "contact_note": "OCM's laboratory table lists no contact; use the laboratory's own site or OCM's sampling-firm list.",
+        "source": "ocm-labs"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-labs",
+          "value": "OCM permitted laboratory OCM-CPL-00008 for testing adult-use and medical cannabis products."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-labs",
+          "value": "Permit 00008: MCR, Utica; scope: Cannabinoids (including d-10 THC), Filth/Foreign Material, Metals (Heavy), Microbiology, Moisture Content, Mycotoxins/Aflatoxins, Pesticides, Residual Solvents, Terpenes, Water Activity."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-lab-00009",
+      "organization_id": "org-ny-ctnd-ny",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Certified Testing and Data (CTND NY LLC) — OCM-permitted cannabis testing laboratory (Menands)",
+      "description": "Listed by OCM as permitted laboratory OCM-CPL-00009 in Menands, NY. Testing scope on OCM's table: Cannabinoids (including d-10 THC); Filth/Foreign Material; Metals (Heavy); Microbiology; Moisture Content; Mycotoxins/Aflatoxins; Pesticides; Residual Solvents; Terpenes; Water Activity.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations that must test cannabis products. Confirm scope, fees and turnaround with the laboratory.",
+      "next_step": {
+        "label": "Open the laboratory site",
+        "url": "https://certifiedtnd.com/"
+      },
+      "provider_details": {
+        "serves": "New York adult-use and medical cannabis testing",
+        "coverage_note": "Menands, NY (OCM permitted laboratory list)",
+        "contact_note": "OCM's laboratory table lists no contact; use the laboratory's own site or OCM's sampling-firm list.",
+        "source": "ocm-labs"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-labs",
+          "value": "OCM permitted laboratory OCM-CPL-00009 for testing adult-use and medical cannabis products."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-labs",
+          "value": "Permit 00009: Certified Testing and Data (CTND), Menands; scope: Cannabinoids (including d-10 THC), Filth/Foreign Material, Metals (Heavy), Microbiology, Moisture Content, Mycotoxins/Aflatoxins, Pesticides, Residual Solvents, Terpenes, Water Activity."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-lab-00010",
+      "organization_id": "org-ny-botannis-labs-ny",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Botannis Labs NY Corp — OCM-permitted cannabis testing laboratory (Hauppauge)",
+      "description": "Listed by OCM as permitted laboratory OCM-CPL-00010 in Hauppauge, NY. Testing scope on OCM's table: Cannabinoids (including d-10 THC); Filth/Foreign Material; Metals (Heavy); Microbiology; Moisture Content; Mycotoxins/Aflatoxins; Pesticides; Residual Solvents; Terpenes; Water Activity.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations that must test cannabis products. Confirm scope, fees and turnaround with the laboratory.",
+      "next_step": {
+        "label": "Open the laboratory site",
+        "url": "https://botannis.com/"
+      },
+      "provider_details": {
+        "serves": "New York adult-use and medical cannabis testing",
+        "coverage_note": "Hauppauge, NY (OCM permitted laboratory list)",
+        "contact_note": "OCM's laboratory table lists no contact; use the laboratory's own site or OCM's sampling-firm list.",
+        "source": "ocm-labs"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-labs",
+          "value": "OCM permitted laboratory OCM-CPL-00010 for testing adult-use and medical cannabis products."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-labs",
+          "value": "Permit 00010: Botannis Labs NY Corp, Hauppauge; scope: Cannabinoids (including d-10 THC), Filth/Foreign Material, Metals (Heavy), Microbiology, Moisture Content, Mycotoxins/Aflatoxins, Pesticides, Residual Solvents, Terpenes, Water Activity."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-lab-00011",
+      "organization_id": "org-ny-drs-testing",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "DRS Testing — OCM-permitted cannabis testing laboratory (Buffalo)",
+      "description": "Listed by OCM as permitted laboratory OCM-CPL-00011 in Buffalo, NY. Testing scope on OCM's table: Cannabinoids (including d-10 THC); Filth/Foreign Material; Metals (Heavy); Microbiology; Moisture Content; Mycotoxins/Aflatoxins; Pesticides; Residual Solvents; Terpenes; Water Activity.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations that must test cannabis products. Confirm scope, fees and turnaround with the laboratory.",
+      "next_step": {
+        "label": "Open the laboratory site",
+        "url": "https://drstesting.com/"
+      },
+      "provider_details": {
+        "serves": "New York adult-use and medical cannabis testing",
+        "coverage_note": "Buffalo, NY (OCM permitted laboratory list)",
+        "contact_note": "OCM's laboratory table lists no contact; use the laboratory's own site or OCM's sampling-firm list.",
+        "source": "ocm-labs"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-labs",
+          "value": "OCM permitted laboratory OCM-CPL-00011 for testing adult-use and medical cannabis products."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-labs",
+          "value": "Permit 00011: DRS Testing, Buffalo; scope: Cannabinoids (including d-10 THC), Filth/Foreign Material, Metals (Heavy), Microbiology, Moisture Content, Mycotoxins/Aflatoxins, Pesticides, Residual Solvents, Terpenes, Water Activity."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-lab-00012",
+      "organization_id": "org-ny-certainty-analytical-labs",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Certainty Analytical Labs — OCM-permitted cannabis testing laboratory (Rochester)",
+      "description": "Listed by OCM as permitted laboratory OCM-CPL-00012 in Rochester, NY. Testing scope on OCM's table: Cannabinoids (including d-10 THC); Filth/Foreign Material (footnoted); Metals (Heavy) (footnoted); Microbiology (footnoted); Moisture Content (footnoted); Mycotoxins/Aflatoxins (footnoted); Pesticides (footnoted); Residual Solvents (footnoted); Terpenes (footnoted); Water Activity (footnoted). Not full scope; OCM notes that laboratories without full scope may work with other permitted laboratories for final-product testing.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations that must test cannabis products. Confirm scope, fees and turnaround with the laboratory.",
+      "next_step": {
+        "label": "Open OCM's permitted laboratory list",
+        "url": "https://cannabis.ny.gov/cannabis-laboratories"
+      },
+      "provider_details": {
+        "serves": "New York adult-use and medical cannabis testing",
+        "coverage_note": "Rochester, NY (OCM permitted laboratory list)",
+        "contact_note": "OCM's laboratory table lists no contact; use the laboratory's own site or OCM's sampling-firm list.",
+        "source": "ocm-labs"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-labs",
+          "value": "OCM permitted laboratory OCM-CPL-00012 for testing adult-use and medical cannabis products."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-labs",
+          "value": "Permit 00012: Certainty Analytical Labs, Rochester; scope: Cannabinoids (including d-10 THC), Filth/Foreign Material (footnoted), Metals (Heavy) (footnoted), Microbiology (footnoted), Moisture Content (footnoted), Mycotoxins/Aflatoxins (footnoted), Pesticides (footnoted), Residual Solvents (footnoted), Terpenes (footnoted), Water Activity (footnoted)."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-lab-00013",
+      "organization_id": "org-ny-green-analytics-ny",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Green Analytics NY LLC — OCM-permitted cannabis testing laboratory (Pearl River)",
+      "description": "Listed by OCM as permitted laboratory OCM-CPL-00013 in Pearl River, NY. Testing scope on OCM's table: Cannabinoids (including d-10 THC); Filth/Foreign Material; Metals (Heavy); Microbiology; Moisture Content; Mycotoxins/Aflatoxins; Pesticides; Residual Solvents; Terpenes; Water Activity.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations that must test cannabis products. Confirm scope, fees and turnaround with the laboratory.",
+      "next_step": {
+        "label": "Open OCM's permitted laboratory list",
+        "url": "https://cannabis.ny.gov/cannabis-laboratories"
+      },
+      "provider_details": {
+        "serves": "New York adult-use and medical cannabis testing",
+        "coverage_note": "Pearl River, NY (OCM permitted laboratory list)",
+        "contact_note": "OCM's laboratory table lists no contact; use the laboratory's own site or OCM's sampling-firm list.",
+        "source": "ocm-labs"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-labs",
+          "value": "OCM permitted laboratory OCM-CPL-00013 for testing adult-use and medical cannabis products."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-labs",
+          "value": "Permit 00013: Green Analytics NY, Pearl River; scope: Cannabinoids (including d-10 THC), Filth/Foreign Material, Metals (Heavy), Microbiology, Moisture Content, Mycotoxins/Aflatoxins, Pesticides, Residual Solvents, Terpenes, Water Activity."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-lab-00014",
+      "organization_id": "org-ny-steadfast-labs",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Steadfast, LLC — OCM-permitted cannabis testing laboratory (Newburgh)",
+      "description": "Listed by OCM as permitted laboratory OCM-CPL-00014 in Newburgh, NY. Testing scope on OCM's table: Water Activity. Not full scope; OCM notes that laboratories without full scope may work with other permitted laboratories for final-product testing.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations that must test cannabis products. Confirm scope, fees and turnaround with the laboratory.",
+      "next_step": {
+        "label": "Open OCM's permitted laboratory list",
+        "url": "https://cannabis.ny.gov/cannabis-laboratories"
+      },
+      "provider_details": {
+        "serves": "New York adult-use and medical cannabis testing",
+        "coverage_note": "Newburgh, NY (OCM permitted laboratory list)",
+        "contact_note": "OCM's laboratory table lists no contact; use the laboratory's own site or OCM's sampling-firm list.",
+        "source": "ocm-labs"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-labs",
+          "value": "OCM permitted laboratory OCM-CPL-00014 for testing adult-use and medical cannabis products."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-labs",
+          "value": "Permit 00014: Steadfast, LLC, Newburgh; scope: Water Activity."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-lab-00021",
+      "organization_id": "org-ny-dope-diagnostics",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Dope Diagnostics Inc. — OCM-permitted cannabis testing laboratory (Pearl River)",
+      "description": "Listed by OCM as permitted laboratory OCM-CPL-00021 in Pearl River, NY. Testing scope on OCM's table: Filth/Foreign Material; Water Activity. Not full scope; OCM notes that laboratories without full scope may work with other permitted laboratories for final-product testing.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations that must test cannabis products. Confirm scope, fees and turnaround with the laboratory.",
+      "next_step": {
+        "label": "Open the laboratory site",
+        "url": "https://dopediagnostics.com/"
+      },
+      "provider_details": {
+        "serves": "New York adult-use and medical cannabis testing",
+        "coverage_note": "Pearl River, NY (OCM permitted laboratory list)",
+        "contact_note": "OCM's laboratory table lists no contact; use the laboratory's own site or OCM's sampling-firm list.",
+        "source": "ocm-labs"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-labs",
+          "value": "OCM permitted laboratory OCM-CPL-00021 for testing adult-use and medical cannabis products."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-labs",
+          "value": "Permit 00021: Dope Diagnostics, Pearl River; scope: Filth/Foreign Material, Water Activity."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-sampling-00016",
+      "organization_id": "org-ny-drs-testing",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "DRS Testing — OCM-approved cannabis sampling firm",
+      "description": "Listed by OCM as approved sampling firm OCM-CSF-00016. Sampling firms collect samples of medical and adult-use cannabis products for laboratory testing.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations scheduling required sampling. Confirm service area, scheduling and fees with the firm.",
+      "next_step": {
+        "label": "Open the firm's website",
+        "url": "https://drstesting.com/"
+      },
+      "provider_details": {
+        "serves": "New York cannabis licensees needing sample collection",
+        "coverage_note": "New York (OCM approved sampling firm list; service area not stated)",
+        "contact_note": "Contact listed by OCM: Mr. John Midgley, drstesting.com.",
+        "source": "ocm-sampling"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-sampling",
+          "value": "DRS Testing, approval OCM-CSF-00016, contact Mr. John Midgley, drstesting.com."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-sampling-00001",
+      "organization_id": "org-ny-cannabis-sampling-solutions",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Cannabis Sampling Solutions — OCM-approved cannabis sampling firm",
+      "description": "Listed by OCM as approved sampling firm OCM-CSF-00001. Sampling firms collect samples of medical and adult-use cannabis products for laboratory testing.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations scheduling required sampling. Confirm service area, scheduling and fees with the firm.",
+      "next_step": {
+        "label": "Open the firm's website",
+        "url": "https://cannabissamplingny.com/"
+      },
+      "provider_details": {
+        "serves": "New York cannabis licensees needing sample collection",
+        "coverage_note": "New York (OCM approved sampling firm list; service area not stated)",
+        "contact_note": "Contact listed by OCM: Mrs. Karina Pedone, cannabissamplingny.com.",
+        "source": "ocm-sampling"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-sampling",
+          "value": "Cannabis Sampling Solutions, approval OCM-CSF-00001, contact Mrs. Karina Pedone, cannabissamplingny.com."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-sampling-00003",
+      "organization_id": "org-439251489828",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "ACT Laboratories of New York, LLC. — OCM-approved cannabis sampling firm",
+      "description": "Listed by OCM as approved sampling firm OCM-CSF-00003. Sampling firms collect samples of medical and adult-use cannabis products for laboratory testing.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations scheduling required sampling. Confirm service area, scheduling and fees with the firm.",
+      "next_step": {
+        "label": "Open the firm's website",
+        "url": "https://actlaboratoriesinc.com/"
+      },
+      "provider_details": {
+        "serves": "New York cannabis licensees needing sample collection",
+        "coverage_note": "New York (OCM approved sampling firm list; service area not stated)",
+        "contact_note": "Contact listed by OCM: Mr. Damian Kozuch, ACTLaboratoriesInc.com.",
+        "source": "ocm-sampling"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-sampling",
+          "value": "ACT Laboratories of New York, LLC., approval OCM-CSF-00003, contact Mr. Damian Kozuch, ACTLaboratoriesInc.com."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-sampling-00004",
+      "organization_id": "org-ny-western-ny-hemp-handlers",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Western NY Hemp Handlers — OCM-approved cannabis sampling firm",
+      "description": "Listed by OCM as approved sampling firm OCM-CSF-00004. Sampling firms collect samples of medical and adult-use cannabis products for laboratory testing.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations scheduling required sampling. Confirm service area, scheduling and fees with the firm.",
+      "next_step": {
+        "label": "Open the firm's website",
+        "url": "https://wnyhemp-cannabis-sampling.com/"
+      },
+      "provider_details": {
+        "serves": "New York cannabis licensees needing sample collection",
+        "coverage_note": "New York (OCM approved sampling firm list; service area not stated)",
+        "contact_note": "Contact listed by OCM: Mr. Brian McDonough, wnyhemp-cannabis-sampling.com.",
+        "source": "ocm-sampling"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-sampling",
+          "value": "Western NY Hemp Handlers, approval OCM-CSF-00004, contact Mr. Brian McDonough, wnyhemp-cannabis-sampling.com."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-sampling-00006",
+      "organization_id": "org-ny-botannis-labs-ny",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Botannis Labs NY Corp — OCM-approved cannabis sampling firm",
+      "description": "Listed by OCM as approved sampling firm OCM-CSF-00006. Sampling firms collect samples of medical and adult-use cannabis products for laboratory testing.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations scheduling required sampling. Confirm service area, scheduling and fees with the firm.",
+      "next_step": {
+        "label": "Open the firm's website",
+        "url": "https://botannis.com/"
+      },
+      "provider_details": {
+        "serves": "New York cannabis licensees needing sample collection",
+        "coverage_note": "New York (OCM approved sampling firm list; service area not stated)",
+        "contact_note": "Contact listed by OCM: Dr. Jeff Reingold, Ph.D., botannis.com.",
+        "source": "ocm-sampling"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-sampling",
+          "value": "Botannis Labs NY Corp, approval OCM-CSF-00006, contact Dr. Jeff Reingold, Ph.D., botannis.com."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-sampling-00008",
+      "organization_id": "org-ny-cut-above-collections",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Cut Above Collections, LLC — OCM-approved cannabis sampling firm",
+      "description": "Listed by OCM as approved sampling firm OCM-CSF-00008. Sampling firms collect samples of medical and adult-use cannabis products for laboratory testing.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations scheduling required sampling. Confirm service area, scheduling and fees with the firm.",
+      "next_step": {
+        "label": "Open the firm's website",
+        "url": "https://cutabovecollections.com/"
+      },
+      "provider_details": {
+        "serves": "New York cannabis licensees needing sample collection",
+        "coverage_note": "New York (OCM approved sampling firm list; service area not stated)",
+        "contact_note": "Contact listed by OCM: Mr. James Morrell, cutabovecollections.com.",
+        "source": "ocm-sampling"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-sampling",
+          "value": "Cut Above Collections, LLC, approval OCM-CSF-00008, contact Mr. James Morrell, cutabovecollections.com."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-sampling-00009",
+      "organization_id": "org-ny-trichrome-transportation",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Trichrome Transportation — OCM-approved cannabis sampling firm",
+      "description": "Listed by OCM as approved sampling firm OCM-CSF-00009. Sampling firms collect samples of medical and adult-use cannabis products for laboratory testing. OCM lists the Kaycha Labs website for this firm; no corporate relationship is inferred.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations scheduling required sampling. Confirm service area, scheduling and fees with the firm.",
+      "next_step": {
+        "label": "Open the firm's website",
+        "url": "https://kaychalabs.com/"
+      },
+      "provider_details": {
+        "serves": "New York cannabis licensees needing sample collection",
+        "coverage_note": "New York (OCM approved sampling firm list; service area not stated)",
+        "contact_note": "Contact listed by OCM: Ms. Cynthia Brewer, kaychalabs.com.",
+        "source": "ocm-sampling"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-sampling",
+          "value": "Trichrome Transportation, approval OCM-CSF-00009, contact Ms. Cynthia Brewer, kaychalabs.com."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-sampling-00010",
+      "organization_id": "org-ny-dope-diagnostics",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Dope Diagnostics Inc. — OCM-approved cannabis sampling firm",
+      "description": "Listed by OCM as approved sampling firm OCM-CSF-00010. Sampling firms collect samples of medical and adult-use cannabis products for laboratory testing.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations scheduling required sampling. Confirm service area, scheduling and fees with the firm.",
+      "next_step": {
+        "label": "Open the firm's website",
+        "url": "https://dopediagnostics.com/"
+      },
+      "provider_details": {
+        "serves": "New York cannabis licensees needing sample collection",
+        "coverage_note": "New York (OCM approved sampling firm list; service area not stated)",
+        "contact_note": "Contact listed by OCM: Mr. Craig Besnoy, dopediagnostics.com.",
+        "source": "ocm-sampling"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-sampling",
+          "value": "Dope Diagnostics Inc., approval OCM-CSF-00010, contact Mr. Craig Besnoy, dopediagnostics.com."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-sampling-00011",
+      "organization_id": "org-ny-green-analytics-ny",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Green Analytics-NY, LLC — OCM-approved cannabis sampling firm",
+      "description": "Listed by OCM as approved sampling firm OCM-CSF-00011. Sampling firms collect samples of medical and adult-use cannabis products for laboratory testing.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations scheduling required sampling. Confirm service area, scheduling and fees with the firm.",
+      "next_step": {
+        "label": "Open OCM's sampling firm list",
+        "url": "https://cannabis.ny.gov/sampling-firms"
+      },
+      "provider_details": {
+        "serves": "New York cannabis licensees needing sample collection",
+        "coverage_note": "New York (OCM approved sampling firm list; service area not stated)",
+        "contact_note": "Contact listed by OCM: Mr. Billy Woolf, GA.Info@greenanalyticsllc.com.",
+        "source": "ocm-sampling"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-sampling",
+          "value": "Green Analytics-NY, LLC, approval OCM-CSF-00011, contact Mr. Billy Woolf, GA.Info@greenanalyticsllc.com."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-sampling-00014",
+      "organization_id": "org-ny-ctnd-ny",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "CTND NY LLC — OCM-approved cannabis sampling firm",
+      "description": "Listed by OCM as approved sampling firm OCM-CSF-00014. Sampling firms collect samples of medical and adult-use cannabis products for laboratory testing.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations scheduling required sampling. Confirm service area, scheduling and fees with the firm.",
+      "next_step": {
+        "label": "Open the firm's website",
+        "url": "https://certifiedtnd.com/"
+      },
+      "provider_details": {
+        "serves": "New York cannabis licensees needing sample collection",
+        "coverage_note": "New York (OCM approved sampling firm list; service area not stated)",
+        "contact_note": "Contact listed by OCM: Mr. Aaron Riley, certifiedtnd.com.",
+        "source": "ocm-sampling"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-sampling",
+          "value": "CTND NY LLC, approval OCM-CSF-00014, contact Mr. Aaron Riley, certifiedtnd.com."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-sampling-00013",
+      "organization_id": "org-ny-mcr-labs-ny",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "MCR Labs NY — OCM-approved cannabis sampling firm",
+      "description": "Listed by OCM as approved sampling firm OCM-CSF-00013. Sampling firms collect samples of medical and adult-use cannabis products for laboratory testing.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations scheduling required sampling. Confirm service area, scheduling and fees with the firm.",
+      "next_step": {
+        "label": "Open the firm's website",
+        "url": "https://mcrlabs.com/"
+      },
+      "provider_details": {
+        "serves": "New York cannabis licensees needing sample collection",
+        "coverage_note": "New York (OCM approved sampling firm list; service area not stated)",
+        "contact_note": "Contact listed by OCM: Mr. Andrew Burke, mcrlabs.com.",
+        "source": "ocm-sampling"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-sampling",
+          "value": "MCR Labs NY, approval OCM-CSF-00013, contact Mr. Andrew Burke, mcrlabs.com."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-sampling-00017",
+      "organization_id": "org-ny-fruition-flowers-firm",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Fruition Flowers Firm — OCM-approved cannabis sampling firm",
+      "description": "Listed by OCM as approved sampling firm OCM-CSF-00017. Sampling firms collect samples of medical and adult-use cannabis products for laboratory testing.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations scheduling required sampling. Confirm service area, scheduling and fees with the firm.",
+      "next_step": {
+        "label": "Open the firm's website",
+        "url": "https://fruitionfirm.com/"
+      },
+      "provider_details": {
+        "serves": "New York cannabis licensees needing sample collection",
+        "coverage_note": "New York (OCM approved sampling firm list; service area not stated)",
+        "contact_note": "Contact listed by OCM: Mr. Quintus Hicks, fruitionfirm.com.",
+        "source": "ocm-sampling"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-sampling",
+          "value": "Fruition Flowers Firm, approval OCM-CSF-00017, contact Mr. Quintus Hicks, fruitionfirm.com."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-sampling-00018",
+      "organization_id": "org-ny-a-to-z-sampling",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "A to Z Sampling — OCM-approved cannabis sampling firm",
+      "description": "Listed by OCM as approved sampling firm OCM-CSF-00018. Sampling firms collect samples of medical and adult-use cannabis products for laboratory testing. OCM lists an email at the Steadfast Labs domain; no corporate relationship is inferred.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensees and registered organizations scheduling required sampling. Confirm service area, scheduling and fees with the firm.",
+      "next_step": {
+        "label": "Open OCM's sampling firm list",
+        "url": "https://cannabis.ny.gov/sampling-firms"
+      },
+      "provider_details": {
+        "serves": "New York cannabis licensees needing sample collection",
+        "coverage_note": "New York (OCM approved sampling firm list; service area not stated)",
+        "contact_note": "Contact listed by OCM: Avram Zallen, avi@steadfastlabs.com.",
+        "source": "ocm-sampling"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-sampling",
+          "value": "A to Z Sampling, approval OCM-CSF-00018, contact Avram Zallen, avi@steadfastlabs.com."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-suffolk-credit-union",
+      "organization_id": "org-suffolk-credit-union",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Suffolk Credit Union — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in Long Island. Services listed: Business checking and savings accounts; debit card; basic cash management services.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://www.suffolkcu.org/"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York regions: Long Island (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: Micah Schlendorf, AVP Business Development, (631) 730-3419, cbb@suffolkcu.org.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "Suffolk Credit Union (Medford, NY); regions served: Long Island; services: Business checking and savings accounts; debit card; basic cash management services; contact Micah Schlendorf, AVP Business Development, (631) 730-3419, cbb@suffolkcu.org."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-jonestown-bank-trust",
+      "organization_id": "org-jonestown-bank-trust",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Jonestown Bank & Trust Co. (JBT) — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in all regions. Services listed: Business and business-owner accounts; cash-in-transit contracts; cash management (ACH and wire); fraud protection; debit cards; limited lending using real estate as collateral.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://www.jbt.bank/cannabis-industry/"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York, all regions (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: Ashley Hess, VP, Cannabis Banking Manager, (717) 274-5180, CannabisBanking@jbt.bank.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "Jonestown Bank & Trust Co. (JBT) (Jonestown, PA); regions served: all regions; services: Business and business-owner accounts; cash-in-transit contracts; cash management (ACH and wire); fraud protection; debit cards; limited lending using real estate as collateral; contact Ashley Hess, VP, Cannabis Banking Manager, (717) 274-5180, CannabisBanking@jbt.bank."
+        }
+      ],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-banking",
+          "value": "OCM banking directory lists regions served as all regions."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-dart-bank",
+      "organization_id": "org-dart-bank",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Dart Bank — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in all regions. Services listed: Deposit accounts; cash management (payment processing for non-plant-touching businesses).",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://dart.bank/"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York, all regions (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: Ross Sloan, SVP & Specialty Banking Officer, (517) 676-3661, banking@dartbank.com.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "Dart Bank; regions served: all regions; services: Deposit accounts; cash management (payment processing for non-plant-touching businesses); contact Ross Sloan, SVP & Specialty Banking Officer, (517) 676-3661, banking@dartbank.com."
+        }
+      ],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-banking",
+          "value": "OCM banking directory lists regions served as all regions."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-stearns-bank",
+      "organization_id": "org-stearns-bank",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Stearns Bank N.A. — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in all regions. Services listed: Business accounts; loans; cash management services.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://www.stearnsbank.com/"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York, all regions (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: (800) 320-7262, cannabiscompliance@stearnsbank.com.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "Stearns Bank N.A.; regions served: all regions; services: Business accounts; loans; cash management services; contact (800) 320-7262, cannabiscompliance@stearnsbank.com."
+        }
+      ],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-banking",
+          "value": "OCM banking directory lists regions served as all regions."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-americu-credit-union",
+      "organization_id": "org-americu-credit-union",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "AmeriCU Credit Union — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in all regions. Services listed: Checking; savings; money markets; cash courier; cash management services.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://www.americu.org/cannabis-banking/"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York, all regions (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: Gail Rizzo-Spilka, AVP, Membership Development, (315) 281-6507, specialtyaccounts@americu.org.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "AmeriCU Credit Union; regions served: all regions; services: Checking; savings; money markets; cash courier; cash management services; contact Gail Rizzo-Spilka, AVP, Membership Development, (315) 281-6507, specialtyaccounts@americu.org."
+        }
+      ],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-banking",
+          "value": "OCM banking directory lists regions served as all regions."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-valley-bank",
+      "organization_id": "org-valley-bank",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Valley Bank — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in all regions. Services listed: All commercial services except merchant services.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://www.valley.com/"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York, all regions (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: Caroline Colone, Head of Specialty Banking Services, (973) 872-4567, crb@valley.com.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "Valley Bank (Paramus, NJ); regions served: all regions; services: All commercial services except merchant services; contact Caroline Colone, Head of Specialty Banking Services, (973) 872-4567, crb@valley.com."
+        }
+      ],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-banking",
+          "value": "OCM banking directory lists regions served as all regions."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-ponce-bank",
+      "organization_id": "org-ponce-bank",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Ponce Bank — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in Long Island, Mid-Hudson, New York City, Southern Tier. Services listed: Business checking for pre-licensed and licensed businesses; cash management (ACH credit origination, wires, courier services, positive pay, merchant services).",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://www.poncebank.com/"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York regions: Long Island, Mid-Hudson, New York City, Southern Tier (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: Jason Olmeda, VP BSA Officer, (718) 931-9000, contact.center@poncebank.net.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "Ponce Bank (Bronx, NY); regions served: Long Island, Mid-Hudson, New York City, Southern Tier; services: Business checking for pre-licensed and licensed businesses; cash management (ACH credit origination, wires, courier services, positive pay, merchant services); contact Jason Olmeda, VP BSA Officer, (718) 931-9000, contact.center@poncebank.net."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-bison-state-bank",
+      "organization_id": "org-bison-state-bank",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Bison State Bank — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in all regions. Services listed: Business checking and money market accounts; investor and employee accounts; debit cards; treasury management (ACH, wire, remote deposit); cash-in-transit courier.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://www.bisonstatebank.com/"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York, all regions (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: Katie Honas, BSA Officer, (833) 535-2095, bsa@bisonstatebank.com.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "Bison State Bank (Kansas City, MO); regions served: all regions; services: Business checking and money market accounts; investor and employee accounts; debit cards; treasury management (ACH, wire, remote deposit); cash-in-transit courier; contact Katie Honas, BSA Officer, (833) 535-2095, bsa@bisonstatebank.com."
+        }
+      ],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-banking",
+          "value": "OCM banking directory lists regions served as all regions."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-first-federal-bank",
+      "organization_id": "org-first-federal-bank",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "First Federal Bank — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in all regions. Services listed: Business checking and savings; debit card; cash management; treasury management.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://www.ffbf.com/business/specialty-banking"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York, all regions (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: Specialty Support, (386) 243-6371, specialtysupport@ffbf.com.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "First Federal Bank; regions served: all regions; services: Business checking and savings; debit card; cash management; treasury management; contact Specialty Support, (386) 243-6371, specialtysupport@ffbf.com."
+        }
+      ],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-banking",
+          "value": "OCM banking directory lists regions served as all regions."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-herring-bank",
+      "organization_id": "org-herring-bank",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Herring Bank — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in all regions. Services listed: Debit cards; checks; ACH and wires; online banking; payroll; electronic tax payments; employee accounts; commercial real estate and vehicle fleet lending subject to underwriting.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://www.herringbank.com/business-banking/cannabis-banking/"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York, all regions (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: Sammi Murdoch, Business Development Coordinator, (877) 873-0079, mrbbanking@herringbank.com.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "Herring Bank; regions served: all regions; services: Debit cards; checks; ACH and wires; online banking; payroll; electronic tax payments; employee accounts; commercial real estate and vehicle fleet lending subject to underwriting; contact Sammi Murdoch, Business Development Coordinator, (877) 873-0079, mrbbanking@herringbank.com."
+        }
+      ],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-banking",
+          "value": "OCM banking directory lists regions served as all regions."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-keypoint-credit-union",
+      "organization_id": "org-keypoint-credit-union",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "KeyPoint Credit Union — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in all regions. Services listed: Business accounts; online banking; cash management; mobile remote deposit; cash pick-up and delivery; ACH; electronic tax payments; investment options; employee accounts; consumer loans; direct-deposit payroll; wires.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://kpcu.com/Business/Cannabis-Banking"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York, all regions (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: Charles Phillips, VP Cannabis Banking Development Manager, (888) 255-3637, crbbd@kpcu.com.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "KeyPoint Credit Union (San Jose, CA); regions served: all regions; services: Business accounts; online banking; cash management; mobile remote deposit; cash pick-up and delivery; ACH; electronic tax payments; investment options; employee accounts; consumer loans; direct-deposit payroll; wires; contact Charles Phillips, VP Cannabis Banking Development Manager, (888) 255-3637, crbbd@kpcu.com."
+        }
+      ],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-banking",
+          "value": "OCM banking directory lists regions served as all regions."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-regent-bank",
+      "organization_id": "org-counterparty-62636d71a9da",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Regent Bank — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in all regions. Services listed: Business checking; debit card; treasury services (online banking, ACH, wire, mobile deposit); insurance in select markets.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://www.regent.bank/divisions/cannabis/"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York, all regions (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: Ben Shreffler, VP, Cannabis Banking Manager, (918) 488-0788, crbclientsuccess@regent.bank.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "Regent Bank (Tulsa, OK); regions served: all regions; services: Business checking; debit card; treasury services (online banking, ACH, wire, mobile deposit); insurance in select markets; contact Ben Shreffler, VP, Cannabis Banking Manager, (918) 488-0788, crbclientsuccess@regent.bank."
+        }
+      ],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-banking",
+          "value": "OCM banking directory lists regions served as all regions."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-seneca-savings",
+      "organization_id": "org-seneca-savings",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Seneca Savings — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in Central New York. Services listed: Banking; lending.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://www.senecasavings.com/"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York regions: Central New York (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: Jamie Nastri, SVP Operations, (315) 638-0233, jnastri@senecasavings.com.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "Seneca Savings (Baldwinsville, NY); regions served: Central New York; services: Banking; lending; contact Jamie Nastri, SVP Operations, (315) 638-0233, jnastri@senecasavings.com."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-sunmark-credit-union",
+      "organization_id": "org-sunmark-credit-union",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Sunmark Credit Union — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in Capital District. Services listed: Business checking, savings and money market accounts; online and mobile banking; domestic wires.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://sunmark.org/cannabis-banking"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York regions: Capital District (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: Matthew Goodman, Community Development Consultant, (518) 338-2856, Matthew.goodman@sunmark.org.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "Sunmark Credit Union (Latham, NY); regions served: Capital District; services: Business checking, savings and money market accounts; online and mobile banking; domestic wires; contact Matthew Goodman, Community Development Consultant, (518) 338-2856, Matthew.goodman@sunmark.org."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-tioga-state-bank",
+      "organization_id": "org-tioga-state-bank",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Tioga State Bank, N.A. — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in Central New York, Capital District, Mid-Hudson, Mohawk Valley, North Country, Southern Tier, Western New York. Services listed: Cannabis banking checking and savings; digital banking; cash management services.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://tiogabank.com/"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York regions: Central New York, Capital District, Mid-Hudson, Mohawk Valley, North Country, Southern Tier, Western New York (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: (888) 303-4872, cannabisbanking@tiogabank.com.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "Tioga State Bank, N.A. (Spencer, NY); regions served: Central New York, Capital District, Mid-Hudson, Mohawk Valley, North Country, Southern Tier, Western New York; services: Cannabis banking checking and savings; digital banking; cash management services; contact (888) 303-4872, cannabisbanking@tiogabank.com."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-salal-credit-union",
+      "organization_id": "org-salal-credit-union",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Salal Credit Union — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in all regions. Services listed: Business checking, money markets and CDs; debit cards; treasury management; armored-car cash courier; positive pay; credit cards for non-cannabis-touching businesses; business, vehicle, equipment and commercial real estate loans; operating lines of credit.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://www.salalcu.org/business/cannabis-industry-banking/"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York, all regions (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: Christoffer McCollom, Business Banking Sales Manager, (206) 298-9398, BusinessServices@SalalCU.org.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "Salal Credit Union (Seattle, WA); regions served: all regions; services: Business checking, money markets and CDs; debit cards; treasury management; armored-car cash courier; positive pay; credit cards for non-cannabis-touching businesses; business, vehicle, equipment and commercial real estate loans; operating lines of credit; contact Christoffer McCollom, Business Banking Sales Manager, (206) 298-9398, BusinessServices@SalalCU.org."
+        }
+      ],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-banking",
+          "value": "OCM banking directory lists regions served as all regions."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-trustco-bank",
+      "organization_id": "org-trustco-bank",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Trustco Bank — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in Capital District, Mid-Hudson, Mohawk Valley. Services listed: Business checking, savings and money markets; mobile remote deposit; treasury services; employee accounts; commercial lending; wealth management.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://www.trustcobank.com/bank-your-cannabis-business-with-trustco-bank/"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York regions: Capital District, Mid-Hudson, Mohawk Valley (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: Lauren McCormick, Vice President, (518) 381-3673, trustcogreen@trustcobank.com.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "Trustco Bank; regions served: Capital District, Mid-Hudson, Mohawk Valley; services: Business checking, savings and money markets; mobile remote deposit; treasury services; employee accounts; commercial lending; wealth management; contact Lauren McCormick, Vice President, (518) 381-3673, trustcogreen@trustcobank.com."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-first-central-savings-bank",
+      "organization_id": "org-first-central-savings-bank",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "First Central Savings Bank — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in Capital District, Central New York, Finger Lakes, Long Island, Mid-Hudson, Mohawk Valley, New York City, North Country, Southern Tier, Western New York. Services listed: Full-service business accounts; cash management; lending for qualified applicants.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://www.firstcentralsavings.com/"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York, all regions (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: Peter Su, Director of Specialty Banking, (516) 888-0681, peter.su@myfcsb.com.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "First Central Savings Bank (Glen Cove, NY); regions served: Capital District, Central New York, Finger Lakes, Long Island, Mid-Hudson, Mohawk Valley, New York City, North Country, Southern Tier, Western New York; services: Full-service business accounts; cash management; lending for qualified applicants; contact Peter Su, Director of Specialty Banking, (516) 888-0681, peter.su@myfcsb.com."
+        }
+      ],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-banking",
+          "value": "OCM banking directory lists regions served as Capital District, Central New York, Finger Lakes, Long Island, Mid-Hudson, Mohawk Valley, New York City, North Country, Southern Tier, Western New York."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-four-leaf-federal-credit-union",
+      "organization_id": "org-four-leaf-federal-credit-union",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "Four Leaf Federal Credit Union — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in Capital District, Long Island, Mid-Hudson, New York City. Services listed: Deposit, savings and money market accounts.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://www.fourleaffcu.com/"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York regions: Capital District, Long Island, Mid-Hudson, New York City (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: Rohan Dalal, Sr. Business Banking Relationship Manager - Cannabis Banking, (516) 760-1891, rdalal@fourleaffcu.com.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "Four Leaf Federal Credit Union (Bethpage, NY); regions served: Capital District, Long Island, Mid-Hudson, New York City; services: Deposit, savings and money market accounts; contact Rohan Dalal, Sr. Business Banking Relationship Manager - Cannabis Banking, (516) 760-1891, rdalal@fourleaffcu.com."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bank-cannafirst-financial",
+      "organization_id": "org-cannafirst-financial",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "CannaFirst Financial — cannabis business banking (OCM banking directory)",
+      "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in Capital District, Central New York, Finger Lakes, Long Island, Mid-Hudson, Mohawk Valley, New York City, North Country, Southern Tier, Western New York. Services listed: Business accounts; cash management services.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Subject to the institution's own review and approval. OCM's listing is not an endorsement.",
+      "next_step": {
+        "label": "Open the institution's cannabis banking page",
+        "url": "https://cannafirst.com/"
+      },
+      "provider_details": {
+        "serves": "Licensed New York cannabis businesses",
+        "coverage_note": "New York, all regions (OCM banking directory)",
+        "contact_note": "Contact listed by OCM: Nicole Perry, President, (800) 788-1968, Nicole.perry@cannafirst.com.",
+        "source": "ocm-banking"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-banking",
+          "value": "CannaFirst Financial (Pascagoula, MS); regions served: Capital District, Central New York, Finger Lakes, Long Island, Mid-Hudson, Mohawk Valley, New York City, North Country, Southern Tier, Western New York; services: Business accounts; cash management services; contact Nicole Perry, President, (800) 788-1968, Nicole.perry@cannafirst.com."
+        }
+      ],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-banking",
+          "value": "OCM banking directory lists regions served as Capital District, Central New York, Finger Lakes, Long Island, Mid-Hudson, Mohawk Valley, New York City, North Country, Southern Tier, Western New York."
+        }
+      ]
+    }
+  ],
+  "rules": [],
+  "events": []
+}
