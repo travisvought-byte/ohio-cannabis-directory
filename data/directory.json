@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "scope": "directory",
-  "as_of": "2026-10-30",
+  "as_of": "2026-11-01",
   "organizations": [
     {
       "id": "org-6f5375e74696",
@@ -93008,6 +93008,57 @@
           "coverage_status": "partial",
           "next_step": "Contact a group about meetings, membership or advocacy.",
           "limitations": "Selected groups, peer networks, education programs, research resources and advocacy contacts. No Pennsylvania cannabis events are verified for the next three months. A recurring program or completed demonstration does not establish an upcoming event, open enrollment or current grant. Confirm membership, admissions and participation directly."
+        }
+      ]
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "publication_status": "research-only",
+      "official_regulator_url": "https://cannabis.ny.gov/",
+      "reviewed_on": "2026-11-01",
+      "pathways": [
+        {
+          "pathway_id": "dispensaries",
+          "coverage_status": "not-reviewed",
+          "next_step": "Import retail rows from the OCM Current OCM Licenses dataset (Active, opened to public) into the location finder, with the filter documented as the denominator.",
+          "limitations": "Not imported. OCM's verification page states 757 adult-use dispensaries; the open dataset (3,040 rows, updated October 31, 2026) also contains applicants and non-retail licenses. Medical dispensing facilities (30 listed) must be reconciled to avoid double counting. Staged sources: data/research/new-york-2026-11-01-sources.json (research-only, November 1, 2026)."
+        },
+        {
+          "pathway_id": "seeds",
+          "coverage_status": "not-reviewed",
+          "next_step": "Cite the adult home-cultivation rule, then research suppliers that state New York shipping or licensed retailers that sell seeds or immature plants.",
+          "limitations": "Not reviewed. OCM states adults 21+ may grow 3 mature and 3 immature plants (6 and 6 per household). No supplier or retailer seed/plant route has been reviewed. Staged sources: data/research/new-york-2026-11-01-sources.json (research-only, November 1, 2026)."
+        },
+        {
+          "pathway_id": "records",
+          "coverage_status": "not-reviewed",
+          "next_step": "Explain MRTA automatic expungement and Clean Slate sealing, then link court, DCJS and regional legal-help routes.",
+          "limitations": "Not reviewed for publication. Clean Slate took effect November 16, 2024 with implementation due by November 16, 2027; no record should be described as already sealed. No legal-help route has been reviewed. Staged sources: data/research/new-york-2026-11-01-sources.json (research-only, November 1, 2026)."
+        },
+        {
+          "pathway_id": "rules",
+          "coverage_status": "not-reviewed",
+          "next_step": "Publish dated rule cards cited to the Cannabis Law and Penal Law Article 222.",
+          "limitations": "Not reviewed for publication. OCM consumer summaries were read but cite no statute sections. Staged sources: data/research/new-york-2026-11-01-sources.json (research-only, November 1, 2026)."
+        },
+        {
+          "pathway_id": "medical",
+          "coverage_status": "not-reviewed",
+          "next_step": "Link OCM certification, the practitioner dataset, caregiver registration and medical dispensing facilities.",
+          "limitations": "Not reviewed for publication. S3294A (announced November 25, 2025) changes reciprocity, patient home grow and certification length; implementation status must be confirmed. Staged sources: data/research/new-york-2026-11-01-sources.json (research-only, November 1, 2026)."
+        },
+        {
+          "pathway_id": "business",
+          "coverage_status": "not-reviewed",
+          "next_step": "Reconcile licensed operators from the OCM dataset and research providers that state New York service.",
+          "limitations": "Not reviewed. No organization identities have been reconciled. Staged sources: data/research/new-york-2026-11-01-sources.json (research-only, November 1, 2026)."
+        },
+        {
+          "pathway_id": "community",
+          "coverage_status": "not-reviewed",
+          "next_step": "Confirm trade associations, NORML chapters, veteran groups and upcoming events on their own pages.",
+          "limitations": "Not reviewed. Leads only. Staged sources: data/research/new-york-2026-11-01-sources.json (research-only, November 1, 2026)."
         }
       ]
     }

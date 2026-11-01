@@ -1,0 +1,154 @@
+{
+  "state": "NY",
+  "reviewed_on": "2026-11-01",
+  "recheck_on": "2026-12-01",
+  "status": "research-only",
+  "method": "Scoping batch for the New York state pack. Each source below was opened and read on November 1, 2026 through the web-fetch service (page converted to text and read). The repository workspace could not download data.ny.gov files directly (egress refused), so no dataset rows were imported or counted here; the dataset entries record only the published metadata. Nothing in this file is read by the public build or approved for publication. Each source supports only the stated claim. Not legal advice.",
+  "sources": {
+    "ny-ocm-adult-use-info": {
+      "url": "https://cannabis.ny.gov/adult-use-information",
+      "source_kind": "government",
+      "subject": "Office of Cannabis Management",
+      "claims": [
+        "Adults 21+ may possess 3 ounces of cannabis and 24 grams of concentrate.",
+        "Consumption is allowed in a private home or most places tobacco can be smoked; not in a motor vehicle, on federal property, or where tobacco smoking is banned.",
+        "Driving while impaired is illegal; cannabis in a vehicle must be in a closed container.",
+        "Sharing without compensation between adults 21+ is legal; 'gifting' tied to a sale is illegal.",
+        "Home cultivation: up to 3 mature and 3 immature plants per adult 21+, maximum 6 mature and 6 immature per household; selling homegrown cannabis is illegal."
+      ],
+      "limitations": "Agency consumer summary. It cites no statute sections; the Cannabis Law and Penal Law Article 222 text must be cited before rule cards are published. Local rules and landlord/co-op policies are not covered."
+    },
+    "ny-ocm-dispensary-verification": {
+      "url": "https://cannabis.ny.gov/dispensary-location-verification",
+      "source_kind": "government",
+      "subject": "Office of Cannabis Management",
+      "claims": [
+        "Page states there are currently 757 adult-use dispensaries across New York State.",
+        "List fields: entity name, address, city, ZIP, website. Links the Buy Legal map (https://buylegal.cannabis.ny.gov)."
+      ],
+      "limitations": "No as-of date on the page. The fetched copy was truncated, so rows were not counted. No license number, county, phone, hours or coordinates. Use the Current OCM Licenses dataset as the location denominator instead."
+    },
+    "ny-open-data-current-ocm-licenses": {
+      "url": "https://data.ny.gov/d/jskf-tt3q",
+      "api_metadata_url": "https://data.ny.gov/api/views/jskf-tt3q",
+      "csv_url": "https://data.ny.gov/api/views/jskf-tt3q/rows.csv?accessType=DOWNLOAD",
+      "source_kind": "government-dataset",
+      "subject": "Office of Cannabis Management",
+      "claims": [
+        "Dataset 'Current OCM Licenses' covers all licensees and applicants with proximity protection for proposed adult-use retail and medical dispensaries.",
+        "Metadata on November 1, 2026: 3,040 rows; rows last updated October 31, 2026 (22:31 UTC).",
+        "44 columns including license number/type/status, entity name, DBA, business website, location ID, address, county, REDC region, operational status (Active/Non-Operational), business purpose, retail delivery flags, date opened to public and hours of operation."
+      ],
+      "limitations": "Includes applicants and non-retail license types, so it must be filtered (retail dispensary license types, Operational Status = Active, opened-to-public date present) and the filter documented as the denominator. Rows were not downloaded or counted in this batch. Contains a primary contact name column: do not publish personal names unless the directory owner decides otherwise. No coordinates; geocoding needed."
+    },
+    "ny-open-data-medical-providers": {
+      "url": "https://data.ny.gov/Human-Services/OCM-Medical-Cannabis-Healthcare-Providers/gegk-4ghy/data_preview",
+      "source_kind": "government-dataset",
+      "subject": "Office of Cannabis Management",
+      "claims": ["OCM links this dataset from its medical program page as the certifying-practitioner finder."],
+      "limitations": "Linked, not opened row by row. Link to it; do not copy practitioner rows into the directory."
+    },
+    "ny-ocm-medical": {
+      "url": "https://cannabis.ny.gov/medical",
+      "source_kind": "government",
+      "subject": "Office of Cannabis Management",
+      "claims": [
+        "Program stats as of October 1, 2026: 69,031 registered patients and 4,820 certifying practitioners.",
+        "Patients get certified by a participating provider, then bring the certification and a government photo ID to a licensed medical dispensary.",
+        "Certified patients may designate up to five caregivers.",
+        "OCM Cannabinoids in Clinical Practice & Research Symposium, November 19-20 (2026), Tarrytown: https://cannabis.ny.gov/2026-symposium"
+      ],
+      "limitations": "Program overview. Individual eligibility is decided by the practitioner. Fees and reciprocity are not described on this page."
+    },
+    "ny-ocm-medical-bill-release": {
+      "url": "https://cannabis.ny.gov/medical-cannabis-bill-release",
+      "source_kind": "government",
+      "subject": "Office of Cannabis Management",
+      "claims": [
+        "OCM announced on November 25, 2025 the enactment of S3294A (2025).",
+        "Per OCM: patients certified in other states may purchase at New York medical dispensaries; certified patients 18+ may grow at home for medical use; certifications extended from one to two years; certification process streamlined; more flexible possession limits.",
+        "Amendments take effect 90 days after enactment; some provisions may wait on regulations."
+      ],
+      "limitations": "Agency press release. Confirm chapter number, signing date and current implementation status (especially reciprocity and patient home grow regulations) against the bill text and OCM rules before publishing a rule card."
+    },
+    "ny-ocm-dispensing-facilities": {
+      "url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "subject": "Office of Cannabis Management",
+      "claims": [
+        "Table of 30 medical dispensing facilities operated by 8 registered organizations; six marked temporarily closed.",
+        "Fields: registration number, county, organization/DBA, address, home delivery (Yes/No), phone."
+      ],
+      "limitations": "No page date. Medical dispensing facilities may also hold adult-use authorization; reconcile with the Current OCM Licenses dataset to avoid double-counting locations."
+    },
+    "ny-courts-clean-slate": {
+      "url": "https://nycourts.gov/FORMS/criminal-record-sealing.shtml",
+      "source_kind": "government",
+      "subject": "New York State Unified Court System",
+      "claims": [
+        "Clean Slate Act took effect November 16, 2024.",
+        "The state has until November 16, 2027 to implement it; the manual-review request form will be posted once the system is ready.",
+        "Most Class A felonies (except drug offenses) and sex offenses are not eligible."
+      ],
+      "limitations": "Court-system FAQ. Waiting periods and exclusions should be cited to CPL 160.57 text. Implementation is in progress, so no record should be described as already sealed."
+    },
+    "ny-courts-sealed-records": {
+      "url": "https://www.nycourts.gov/help/criminal/sealed-criminal-records",
+      "source_kind": "government",
+      "subject": "New York State Unified Court System",
+      "claims": [
+        "Except for some marijuana crimes, New York has no expungement; it uses sealing.",
+        "Certain marijuana misdemeanors are expunged and treated as if they never happened (links the court's Marijuana and Expungement page)."
+      ],
+      "limitations": "Overview page. Use the linked Marijuana and Expungement page and Cannabis Law/CPL 160.50 for the list of covered offenses."
+    },
+    "ny-ag-cannabis-expungement": {
+      "url": "https://ht.ag.ny.gov/sites/default/files/cannabis-expungement-english.pdf",
+      "source_kind": "government",
+      "subject": "Office of the New York State Attorney General",
+      "claims": [
+        "Explains MRTA automatic expungement; OCA and DCJS mark eligible records expunged; people do not receive notice; only the eligible marijuana charge is expunged when a case has other charges.",
+        "Lists organizations and agencies that help people review and get copies of their records."
+      ],
+      "limitations": "Undated guide from the search result excerpt; reopen and record its date before use. Statements about the two-year court deadline are historical."
+    },
+    "ny-norml-chapters": {
+      "url": "https://norml.org/about/new-york-chapters",
+      "source_kind": "organization",
+      "subject": "NORML",
+      "claims": ["Lists Empire State NORML, NYC NORML and Roc NORML as New York chapters."],
+      "limitations": "National directory listing from a search excerpt. Confirm each chapter's own page and current activity before listing."
+    },
+    "ny-cany": {
+      "url": "https://www.cany.org/",
+      "source_kind": "organization",
+      "subject": "Cannabis Association of New York",
+      "claims": ["Statewide trade association (formerly NY Cannabis Growers & Processors Association) representing businesses across the supply chain."],
+      "limitations": "Lead from search excerpts of its own site and press. Reopen the home/about page and record a contact route before listing."
+    },
+    "ny-assembly-anycp-testimony-2026": {
+      "url": "https://nyassembly.gov/write/upload/publichearing/001508/006598.pdf",
+      "source_kind": "government",
+      "subject": "Association of New York Cannabis Processors",
+      "claims": ["ANYCP president John Vavalo testified at the February 26, 2026 Economic Development joint budget hearing."],
+      "limitations": "Establishes the association exists and testified; not a contact or membership source."
+    },
+    "ny-zoning-law-2026": {
+      "url": "https://www.marijuanamoment.net/new-york-governor-signs-bills-to-fix-marijuana-business-zoning-issue-that-threatened-closure-of-over-150-dispensaries/",
+      "source_kind": "secondary",
+      "subject": "A10140 / S9155 (2025-2026)",
+      "claims": ["Governor signed A10140/S9155 (Zinerman/Krueger) codifying door-to-door distance measurement from schools and houses of worship and grandfathering existing retailers; article dated February 12, 2026."],
+      "limitations": "Secondary news source. Confirm on nysenate.gov or the Assembly bill page (chapter number and signing date) before citing."
+    }
+  },
+  "leads_not_reviewed": [
+    "Penal Law Article 222 and Cannabis Law text (nysenate.gov/legislation/laws) for rule citations",
+    "nycourts.gov Marijuana and Expungement page; DCJS record review route",
+    "LawHelpNY Clean Slate guide (https://www.lawhelpny.org/resource/new-yorks-clean-slate-act-and-sealing-convictions) and regional legal aid (Legal Aid Society, LawNY, LASNNY, Legal Services of Central NY) record-clearing routes",
+    "OCM home cultivation FAQs and quick guide; seed purchase rules for adult home growers",
+    "Trade groups named at a 2026 industry event: ECMA, NYMCIA, ANYCP, Cannabis Farmers Alliance, CRANY, CAURD Inc., NYCRA, BCIA, NYC Cannabis Industry Association",
+    "Cannabis Means Business (Javits, NYC) and other NY events: confirm next dates on organizer pages",
+    "Veteran-focused NY cannabis groups (e.g., Veterans Ananda) - confirm on their own pages",
+    "2027 legislative session: carried-over or reintroduced cannabis bills once filed (2025-2026 session bills expire at session end)"
+  ]
+}
