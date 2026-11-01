@@ -13,10 +13,12 @@ imported separately with their OCM registration numbers and listed phones. Tempo
 facilities are counted in the source but not published.
 """
 import hashlib,json,re
+from urllib.parse import urlencode
 from directory_data import ROOT
 from location_validation import validate_location_fields
 SOURCE=ROOT/'data/sources/new-york-ocm-retail-2026-11-01.json'
 MEDICAL=ROOT/'data/sources/new-york-medical-dispensing-facilities-2026-11-01.json'
+GEOCODES=ROOT/'data/sources/new-york-location-geocodes-2026-11-01.json'
 # Reviewed brand reuse: the DBA printed by OCM matches an existing national identity, as in the PA roster import.
 MEDICAL_BRANDS={'Rise':'org-364a9eed8729','Verilife':'org-aefe1b952bc0','the Botanist or Acreage NY':'org-7022b334ede8','Remedy-NY or Sunnyside':'org-667af67557f3'}
 REGULATOR='New York State Office of Cannabis Management'
@@ -98,7 +100,55 @@ def import_medical(data,source):
             'status':'source-listed','recorded_on':source['retrieved_on'],'recheck_on':RECHECK,'limitations':source['limitations']}
   upsert(data,'locations',location);upsert(data,'evidence',evidence)
  return len(open_rows)
+def geocode_street(address):
+ """First comma-separated part that begins with a number: drops suite and plaza text."""
+ parts=[p.strip() for p in address.split(',')]
+ return next((p for p in parts if re.match(r'\d',p)),parts[0])
+NY_WORDS={'COURT':'CT','PARKWAY':'PKWY','PKY':'PKWY','TURNPIKE':'TPKE','EXPRESSWAY':'EXPY','TERRACE':'TER','HIGHWAY':'HWY'}
+def ny_normalize(street):
+ """Spelled-out suffixes the Pennsylvania normalizer does not cover, County Road as CO RD, and trailing
+ floor/space/store unit text. Route types are left as written: Route 9 and US Hwy 9 still differ."""
+ s=re.sub(r'\s+(FL|FLOOR|SPC|STORE)\b.*$','',street,flags=re.I)
+ s=re.sub(r'\bCOUNTY\s+ROAD\b','CO RD',s,flags=re.I)
+ return ' '.join(NY_WORDS.get(w.upper().strip('.'),w) for w in s.split())
+def accept_ny_geocode(street,result,county):
+ """Pennsylvania acceptance rule with two New York cases: Queens-style house numbers written without the
+ hyphen (16203 for 162-03) are the same house, and spelled-out suffixes are abbreviated first.
+ The Census county must also match the regulator's county."""
+ from import_pa_locations import accept_geocode,street_parts
+ if result.get('longitude') is None:return False,'no match'
+ matched_street=(result['matched_address'] or '').split(',')[0]
+ source=street_parts(ny_normalize(street));matched=street_parts(ny_normalize(matched_street))
+ if source and matched and '-' in matched[0] and source[0].replace('-','')==matched[0].replace('-',''):
+  if result['candidates']!=1:return False,'multiple candidates'
+  if 'city' not in result['query'] or 'zip' not in result['query']:return False,'matched without city or ZIP'
+  if source[2]!=matched[2]:return False,'street differs'
+  if source[1] and source[1]!=matched[1]:return False,'direction differs'
+  ok,reason=True,'accepted'
+ else:ok,reason=accept_geocode(ny_normalize(street),dict(result,matched_address=ny_normalize(matched_street)+','))
+ if ok and result['county'].removesuffix(' County').replace('.','')!=county:return False,'county differs'
+ return ok,reason
+def apply_geocodes(data,geocodes):
+ results={g['key']:g for g in geocodes['results']}
+ accepted=0
+ order=['id','organization_id','name','state','county','city','address','postal_code','latitude','longitude','license','evidence_ids','snapshot_phone']
+ for location in data['locations']:
+  if location['state']!='NY' or not location.get('license'):continue
+  g=results.get(location['license']['number'])
+  if not g or g['street']!=geocode_street(location['address']) or g['zip']!=location['postal_code'] or g['city']!=location['city']:
+   raise ValueError('Geocode does not match New York location '+location['license']['number']+'; geocode again')
+  ok,_=accept_ny_geocode(g['street'],g,location['county'])
+  if not ok:continue
+  gid=stable('ev-',location['id']+':census-geocode')
+  merged=dict(location,latitude=round(g['latitude'],6),longitude=round(g['longitude'],6))
+  if gid not in merged['evidence_ids']:merged['evidence_ids']=merged['evidence_ids']+[gid]
+  location.clear();location.update({k:merged[k] for k in order if k in merged})
+  upsert(data,'evidence',{'id':gid,'subject_id':location['id'],'claim':'location-geocode','value':f'{g["matched_address"]}; {location["latitude"]}, {location["longitude"]}; {g["county"]}',
+   'source_url':geocodes['endpoint']+'?'+urlencode({'street':g['street'],'city':g['city'],'state':'NY','zip':g['zip'],'benchmark':geocodes['benchmark'],'vintage':geocodes['vintage'],'layers':geocodes['layers'],'format':'json'}),
+   'source_kind':'government','status':'source-listed','recorded_on':geocodes['retrieved_on'],'recheck_on':RECHECK,'limitations':geocodes['limitations']})
+  accepted+=1
+ return accepted
 def main():
- data=json.loads((ROOT/'data/directory.json').read_text());count=import_snapshot(data,json.loads(SOURCE.read_text()));medical=import_medical(data,json.loads(MEDICAL.read_text()))
- (ROOT/'data/directory.json').write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n');print(f'Imported {count} New York OCM retail locations and {medical} open medical dispensing facilities; current license status unknown')
+ data=json.loads((ROOT/'data/directory.json').read_text());count=import_snapshot(data,json.loads(SOURCE.read_text()));medical=import_medical(data,json.loads(MEDICAL.read_text()));points=apply_geocodes(data,json.loads(GEOCODES.read_text()))
+ (ROOT/'data/directory.json').write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n');print(f'Imported {count} New York OCM retail locations and {medical} open medical dispensing facilities ({points} with accepted map points); current license status unknown')
 if __name__=='__main__':main()

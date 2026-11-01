@@ -76,13 +76,14 @@ for change in ['row-text','zip','geocode','brand','duplicate']:
  else:raise AssertionError('pa '+change)
 print('PASS Pennsylvania roster: 200 regulator-listed locations, 163 accepted geocodes, 3 reviewed corrections and change rejection')
 # New York: OCM open-data export with license numbers and county, no coordinates or phones.
-from import_ny_locations import import_snapshot as import_ny,import_medical,SOURCE as NY_SOURCE,MEDICAL as NY_MEDICAL,selected
+from import_ny_locations import import_snapshot as import_ny,import_medical,apply_geocodes,accept_ny_geocode,SOURCE as NY_SOURCE,MEDICAL as NY_MEDICAL,GEOCODES as NY_GEOCODES,selected
 ny_snapshot=json.loads(NY_SOURCE.read_text());ny_data=load_directory();ny_before=copy.deepcopy(ny_data)
 assert ny_snapshot['export_rows']==3040 and len(ny_snapshot['rows'])==751
 assert 'Primary Contact Name' in ny_snapshot['dropped_columns'] and not any('contact' in k for k in ny_snapshot['rows'][0])
 assert len(selected(ny_snapshot))==698
 ny_medical=json.loads(NY_MEDICAL.read_text())
-assert import_ny(ny_data,copy.deepcopy(ny_snapshot))==698 and import_medical(ny_data,copy.deepcopy(ny_medical))==24
+ny_geocodes=json.loads(NY_GEOCODES.read_text())
+assert import_ny(ny_data,copy.deepcopy(ny_snapshot))==698 and import_medical(ny_data,copy.deepcopy(ny_medical))==24 and apply_geocodes(ny_data,copy.deepcopy(ny_geocodes))==644
 assert ny_data==ny_before,'Repeated New York import must preserve the canonical tree'
 ny_all=[l for l in ny_data['locations'] if l['state']=='NY'];assert len(ny_all)==722
 ny=[l for l in ny_all if l['license']['kind']=='adult-use'];assert len(ny)==698
@@ -91,7 +92,16 @@ assert all(l['license']['regulator']=='New York State Office of Cannabis Managem
 assert all(l['snapshot_phone'] and l['license']['number'].startswith('MM') for l in ny_med)
 assert not any(l['license']['number'] in ('MM0905D','MM0604D','MM0802D') for l in ny_med),'Temporarily closed facilities are not published'
 assert next(l for l in ny_med if l['license']['number']=='MM0109D')['organization_id']=='org-aefe1b952bc0'
-assert not any('latitude' in l or 'snapshot_phone' in l for l in ny) and all(l.get('county') for l in ny)
+assert not any('snapshot_phone' in l for l in ny) and all(l.get('county') for l in ny)
+assert sum('latitude' in l for l in ny_all)==644 and len(ny_geocodes['results'])==722
+assert 'latitude' not in next(l for l in ny_all if l['license']['number']=='MM0705D'),'Route 9 and US Hwy 9 are different street names to the acceptance rule'
+assert accept_ny_geocode('16203 Jamaica Ave',{'longitude':-73.8,'latitude':40.7,'candidates':1,'query':'street+city+state+zip','matched_address':'162-03 JAMAICA AVE, JAMAICA, NY, 11432','county':'Queens County'},'Queens')==(True,'accepted')
+assert accept_ny_geocode('622 Lake Flower Ave.',{'longitude':-74.1,'latitude':44.3,'candidates':1,'query':'street+city+state+zip','matched_address':'622 LAKE FLOWER AVE, SARANAC LAKE, NY, 12983','county':'Essex County'},'Franklin')==(False,'county differs')
+assert accept_ny_geocode('1673 Hertle Avenue',{'longitude':-78.8,'latitude':42.9,'candidates':1,'query':'street+city+state+zip','matched_address':'1673 HERTEL AVE, BUFFALO, NY, 14216','county':'Erie County'},'Erie')==(False,'street differs')
+bad=copy.deepcopy(ny_geocodes);bad['results'][0]['street']='Changed address'
+try:apply_geocodes(copy.deepcopy(ny_data),bad)
+except ValueError:pass
+else:raise AssertionError('ny geocode mismatch')
 ny_by_license={l['license']['number']:l for l in ny}
 assert ny_by_license['OCM-CAURD-22-000001']['address']=='750 Broadway' and ny_by_license['OCM-CAURD-22-000001']['county']=='New York'
 ny_orgs={o['id']:o for o in ny_data['organizations']}
@@ -116,4 +126,4 @@ for change in ['registration','duplicate-retail','county']:
  try:import_medical(copy.deepcopy(ny_data),bad)
  except ValueError:pass
  else:raise AssertionError('ny medical '+change)
-print('PASS New York OCM export: 698 active opened stores of 3,040 rows plus 24 open medical facilities of 30, county-only geography, no personal contact names, stable re-import and change rejection')
+print('PASS New York OCM export: 698 active opened stores of 3,040 rows plus 24 open medical facilities of 30, 644 accepted Census map points, no personal contact names, stable re-import and change rejection')
