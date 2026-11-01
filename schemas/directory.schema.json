@@ -942,6 +942,21 @@
           "additionalProperties": {
             "type": "string"
           }
+        },
+        "group": {
+          "type": "string",
+          "enum": [
+            "Banking, payments and compliance",
+            "Construction, design and facilities",
+            "Security",
+            "Marketing, web and media",
+            "Packaging and labeling",
+            "Technology and data integration",
+            "Brands, licensing and distribution",
+            "Ownership, acquisitions and license transfers",
+            "Insurance and risk",
+            "Education and community partnerships"
+          ]
         }
       },
       "required": [
@@ -949,7 +964,8 @@
         "organization_a_id",
         "organization_b_id",
         "kind",
-        "evidence_ids"
+        "evidence_ids",
+        "group"
       ],
       "additionalProperties": false
     },

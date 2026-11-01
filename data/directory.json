@@ -91266,7 +91266,8 @@
         "Directory Row": "78",
         "Pass / Provenance": "Organizations | Speakers | Batch 1 audit, 2026-08-15; source pages retrieved and reviewed | Pass 2 B2B relationship mapping, 2026-08-16; source pages retrieved and reviewed | Banking & Financial Services audit, 2026-08-22; source pages retrieved and reviewed | Banking & Financial Services outreach-enrichment pass, 2026-08-23; form-only intake verified",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Banking, payments and compliance"
     },
     {
       "id": "rel-492604b85a7b",
@@ -91287,7 +91288,8 @@
         "Directory Row": "176",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 5 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 2), 2026-08-16; source pages retrieved and reviewed | Reconciliation pass against a duplicate/older-snapshot research round, 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 2), 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Security"
     },
     {
       "id": "rel-138cafb5671f",
@@ -91309,7 +91311,8 @@
         "Directory Row": "279",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 7 audit, 2026-08-15; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 2), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 4), 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Construction, design and facilities"
     },
     {
       "id": "rel-e72c2348830d",
@@ -91334,7 +91337,8 @@
         "Directory Row": "90",
         "Pass / Provenance": "Organizations | Speakers | Batch 3 audit, 2026-08-14; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 5), 2026-08-16; source pages retrieved and reviewed | DCC legal-entity → trade-name mapping, 2026-08-23; source pages retrieved and reviewed; roster-verified",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Ownership, acquisitions and license transfers"
     },
     {
       "id": "rel-c43870828097",
@@ -91355,7 +91359,8 @@
         "Directory Row": "138",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 4 audit, 2026-08-15; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 3), 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Security"
     },
     {
       "id": "rel-9b95bcdd746d",
@@ -91377,7 +91382,8 @@
         "Directory Row": "223",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 6 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 4), 2026-08-16; source pages retrieved and reviewed | Marketing & Media audit, 2026-08-22; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Marketing, web and media"
     },
     {
       "id": "rel-933c38fb5b0f",
@@ -91398,7 +91404,8 @@
         "Directory Row": "207",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 6 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 4), 2026-08-16; source pages retrieved and reviewed | Reconciliation pass against a duplicate/older-snapshot research round, 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 3), 2026-08-16; source pages retrieved and reviewed | Marketing & Media audit, 2026-08-22; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Marketing, web and media"
     },
     {
       "id": "rel-61db03442cf0",
@@ -91421,7 +91428,8 @@
         "Directory Row": "265",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 7 audit, 2026-08-15 | Pass 2 B2B relationship mapping (round 2), 2026-08-16; source pages retrieved and reviewed | Real Estate / Build-Out pass, 2026-08-22; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Construction, design and facilities"
     },
     {
       "id": "rel-6792daa19a77",
@@ -91443,7 +91451,8 @@
         "Directory Row": "266",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 7 audit, 2026-08-15; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 2), 2026-08-16; source pages retrieved and reviewed | Gmail outreach bounce reconciliation, 2026-08-22; delivery diagnostics reviewed | v67-RE2 Real Estate / Build-Out disposition pass, 2026-08-23; first-party project and contact pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Construction, design and facilities"
     },
     {
       "id": "rel-7c205b552d6d",
@@ -91464,7 +91473,8 @@
         "Directory Row": "71",
         "Pass / Provenance": "IgniteIt Network | Organizations | Batch 2 audit, 2026-08-14; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 4), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 5), 2026-08-16; source pages retrieved and reviewed | Technology audit, 2026-08-22; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Technology and data integration"
     },
     {
       "id": "rel-219426b60807",
@@ -91485,7 +91495,8 @@
         "Directory Row": "71",
         "Pass / Provenance": "IgniteIt Network | Organizations | Batch 2 audit, 2026-08-14; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 4), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 5), 2026-08-16; source pages retrieved and reviewed | Technology audit, 2026-08-22; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Banking, payments and compliance"
     },
     {
       "id": "rel-0bafa9ddc64c",
@@ -91507,7 +91518,8 @@
         "Directory Row": "83",
         "Pass / Provenance": "Organizations | Speakers | Batch 2 audit, 2026-08-14; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 4), 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Packaging and labeling"
     },
     {
       "id": "rel-f398fa37a243",
@@ -91529,7 +91541,8 @@
         "Directory Row": "84",
         "Pass / Provenance": "IgniteIt Network | Organizations | Speakers | Batch 2 audit, 2026-08-14; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 5), 2026-08-16; source pages retrieved and reviewed | Technology audit, 2026-08-22; source pages retrieved and reviewed | Technology outreach enrichment, 2026-08-23; first-party contact routes reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Technology and data integration"
     },
     {
       "id": "rel-80f96916b792",
@@ -91553,7 +91566,8 @@
         "Directory Row": "89",
         "Pass / Provenance": "Original expo CRM | Research cleanup — 2026-08-14; QA'd 2026-08-14 | Batch 3 audit, 2026-08-14; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 4), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 5), 2026-08-16; source pages retrieved and reviewed | DCC address-finding reconciliation pass, 2026-08-17; source pages retrieved and reviewed; roster-verified | DCC legal-entity → trade-name mapping Batch 2, 2026-08-23; source pages retrieved and reviewed; roster-verified",
         "Counterparty Status": "Relationship-only"
-      }
+      },
+      "group": "Brands, licensing and distribution"
     },
     {
       "id": "rel-41bf08307b4b",
@@ -91578,7 +91592,8 @@
         "Directory Row": "90",
         "Pass / Provenance": "Organizations | Speakers | Batch 3 audit, 2026-08-14; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 5), 2026-08-16; source pages retrieved and reviewed | DCC legal-entity → trade-name mapping, 2026-08-23; source pages retrieved and reviewed; roster-verified",
         "Counterparty Status": "Relationship-only"
-      }
+      },
+      "group": "Brands, licensing and distribution"
     },
     {
       "id": "rel-4bf8e089ee3d",
@@ -91603,7 +91618,8 @@
         "Directory Row": "90",
         "Pass / Provenance": "Organizations | Speakers | Batch 3 audit, 2026-08-14; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 5), 2026-08-16; source pages retrieved and reviewed | DCC legal-entity → trade-name mapping, 2026-08-23; source pages retrieved and reviewed; roster-verified",
         "Counterparty Status": "Relationship-only"
-      }
+      },
+      "group": "Brands, licensing and distribution"
     },
     {
       "id": "rel-6f4f3438aec4",
@@ -91628,7 +91644,8 @@
         "Directory Row": "90",
         "Pass / Provenance": "Organizations | Speakers | Batch 3 audit, 2026-08-14; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 5), 2026-08-16; source pages retrieved and reviewed | DCC legal-entity → trade-name mapping, 2026-08-23; source pages retrieved and reviewed; roster-verified",
         "Counterparty Status": "Relationship-only"
-      }
+      },
+      "group": "Brands, licensing and distribution"
     },
     {
       "id": "rel-357cd4716e6f",
@@ -91650,7 +91667,8 @@
         "Directory Row": "356",
         "Pass / Provenance": "Research pass — 2026-08-14 | Batch 9 audit, 2026-08-15 | Pass 1 research (round 9, from v52 queue), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 5), 2026-08-16; source pages retrieved and reviewed | Marketing & Media audit, 2026-08-22; source pages retrieved and reviewed | Marketing & Media outreach-enrichment pass, 2026-08-23; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Marketing, web and media"
     },
     {
       "id": "rel-d8103c4bcdeb",
@@ -91672,7 +91690,8 @@
         "Directory Row": "287",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 8 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 7, from v50 queue), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 5), 2026-08-16; source pages retrieved and reviewed | Banking & Financial Services audit, 2026-08-22; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Banking, payments and compliance"
     },
     {
       "id": "rel-4a8693820469",
@@ -91697,7 +91716,8 @@
         "Directory Row": "90",
         "Pass / Provenance": "Organizations | Speakers | Batch 3 audit, 2026-08-14; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 5), 2026-08-16; source pages retrieved and reviewed | DCC legal-entity → trade-name mapping, 2026-08-23; source pages retrieved and reviewed; roster-verified",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Brands, licensing and distribution"
     },
     {
       "id": "rel-d22aaa0caef4",
@@ -91722,7 +91742,8 @@
         "Directory Row": "90",
         "Pass / Provenance": "Organizations | Speakers | Batch 3 audit, 2026-08-14; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 5), 2026-08-16; source pages retrieved and reviewed | DCC legal-entity → trade-name mapping, 2026-08-23; source pages retrieved and reviewed; roster-verified",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Brands, licensing and distribution"
     },
     {
       "id": "rel-6c269dc9cce6",
@@ -91747,7 +91768,8 @@
         "Directory Row": "90",
         "Pass / Provenance": "Organizations | Speakers | Batch 3 audit, 2026-08-14; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 5), 2026-08-16; source pages retrieved and reviewed | DCC legal-entity → trade-name mapping, 2026-08-23; source pages retrieved and reviewed; roster-verified",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Brands, licensing and distribution"
     },
     {
       "id": "rel-9f6b08f66e4a",
@@ -91768,7 +91790,8 @@
         "Directory Row": "152",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 4 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 2), 2026-08-16; source pages retrieved and reviewed | Reconciliation pass against a duplicate/older-snapshot research round, 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 4), 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Packaging and labeling"
     },
     {
       "id": "rel-85083e653ec4",
@@ -91789,7 +91812,8 @@
         "Directory Row": "176",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 5 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 2), 2026-08-16; source pages retrieved and reviewed | Reconciliation pass against a duplicate/older-snapshot research round, 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 2), 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Security"
     },
     {
       "id": "rel-a263d50c0bd5",
@@ -91810,7 +91834,8 @@
         "Directory Row": "176",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 5 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 2), 2026-08-16; source pages retrieved and reviewed | Reconciliation pass against a duplicate/older-snapshot research round, 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 2), 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Security"
     },
     {
       "id": "rel-dec842c89921",
@@ -91831,7 +91856,8 @@
         "Directory Row": "138",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 4 audit, 2026-08-15; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 3), 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Insurance and risk"
     },
     {
       "id": "rel-fe3008840f34",
@@ -91852,7 +91878,8 @@
         "Directory Row": "138",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 4 audit, 2026-08-15; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 3), 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Security"
     },
     {
       "id": "rel-229e1a45e42a",
@@ -91873,7 +91900,8 @@
         "Directory Row": "144",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 4 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research, 2026-08-16; source pages retrieved and reviewed | Reconciliation pass against a duplicate/older-snapshot research round, 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping, 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Construction, design and facilities"
     },
     {
       "id": "rel-abc9e6ad44cf",
@@ -91894,7 +91922,8 @@
         "Directory Row": "182",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 5 audit, 2026-08-15 | Pass 1 research (round 3), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping, 2026-08-16; source pages retrieved and reviewed | Security & Cash Logistics pass, 2026-08-22; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Technology and data integration"
     },
     {
       "id": "rel-65dfd466f831",
@@ -91915,7 +91944,8 @@
         "Directory Row": "192",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 5 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 3), 2026-08-16; source pages retrieved and reviewed | Reconciliation pass against a duplicate/older-snapshot research round, 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping, 2026-08-16; source pages retrieved and reviewed | Technology audit, 2026-08-22; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Technology and data integration"
     },
     {
       "id": "rel-bfa641c315fd",
@@ -91936,7 +91966,8 @@
         "Directory Row": "192",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 5 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 3), 2026-08-16; source pages retrieved and reviewed | Reconciliation pass against a duplicate/older-snapshot research round, 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping, 2026-08-16; source pages retrieved and reviewed | Technology audit, 2026-08-22; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Technology and data integration"
     },
     {
       "id": "rel-fa727e5430aa",
@@ -91957,7 +91988,8 @@
         "Directory Row": "207",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 6 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 4), 2026-08-16; source pages retrieved and reviewed | Reconciliation pass against a duplicate/older-snapshot research round, 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 3), 2026-08-16; source pages retrieved and reviewed | Marketing & Media audit, 2026-08-22; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Marketing, web and media"
     },
     {
       "id": "rel-86dbfa8e8829",
@@ -91980,7 +92012,8 @@
         "Directory Row": "211",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 6 audit, 2026-08-15 | Pass 1 research (round 4), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 4), 2026-08-16; source pages retrieved and reviewed | Marketing & Media audit, 2026-08-22; source pages retrieved and reviewed | Marketing & Media outreach-enrichment pass, 2026-08-23; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Marketing, web and media"
     },
     {
       "id": "rel-c89e5a5ec641",
@@ -92003,7 +92036,8 @@
         "Directory Row": "212",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 6 audit, 2026-08-15 | Pass 1 research (round 4), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 3), 2026-08-16; source pages retrieved and reviewed | Marketing & Media audit, 2026-08-22; source pages retrieved and reviewed | Marketing & Media outreach-enrichment pass, 2026-08-23; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Marketing, web and media"
     },
     {
       "id": "rel-000c35da3b0f",
@@ -92026,7 +92060,8 @@
         "Directory Row": "222",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 6 audit, 2026-08-15 | Pass 1 research (round 4), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 3), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 4), 2026-08-16; source pages retrieved and reviewed | Marketing & Media audit, 2026-08-22; source pages retrieved and reviewed | Marketing & Media outreach-enrichment pass, 2026-08-23; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Marketing, web and media"
     },
     {
       "id": "rel-a665b91792e5",
@@ -92049,7 +92084,8 @@
         "Directory Row": "222",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 6 audit, 2026-08-15 | Pass 1 research (round 4), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 3), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 4), 2026-08-16; source pages retrieved and reviewed | Marketing & Media audit, 2026-08-22; source pages retrieved and reviewed | Marketing & Media outreach-enrichment pass, 2026-08-23; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Marketing, web and media"
     },
     {
       "id": "rel-a145fe6ebf55",
@@ -92070,7 +92106,8 @@
         "Directory Row": "263",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 7 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 6), 2026-08-16; source pages retrieved and reviewed | Pass 1 research (round 7, from v50 queue), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping, 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Construction, design and facilities"
     },
     {
       "id": "rel-e05284758df1",
@@ -92091,7 +92128,8 @@
         "Directory Row": "263",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 7 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 6), 2026-08-16; source pages retrieved and reviewed | Pass 1 research (round 7, from v50 queue), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping, 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Construction, design and facilities"
     },
     {
       "id": "rel-a3df3503bd3b",
@@ -92112,7 +92150,8 @@
         "Directory Row": "264",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 7 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 6), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping, 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Construction, design and facilities"
     },
     {
       "id": "rel-c6a0fb0507f1",
@@ -92133,7 +92172,8 @@
         "Directory Row": "268",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 7 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 6), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 2), 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Construction, design and facilities"
     },
     {
       "id": "rel-b36df556623d",
@@ -92154,7 +92194,8 @@
         "Directory Row": "268",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 7 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 6), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 2), 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Construction, design and facilities"
     },
     {
       "id": "rel-9da6d08fae26",
@@ -92176,7 +92217,8 @@
         "Directory Row": "270",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 7 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 6), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 2), 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Construction, design and facilities"
     },
     {
       "id": "rel-cc513419580f",
@@ -92198,7 +92240,8 @@
         "Directory Row": "271",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 7 audit, 2026-08-15; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 2), 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Construction, design and facilities"
     },
     {
       "id": "rel-3cee9750be68",
@@ -92219,7 +92262,8 @@
         "Directory Row": "272",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 7 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 6), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping, 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Construction, design and facilities"
     },
     {
       "id": "rel-5b01c4ab005e",
@@ -92241,7 +92285,8 @@
         "Directory Row": "274",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 7 audit, 2026-08-15; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 3), 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Construction, design and facilities"
     },
     {
       "id": "rel-1319368aef72",
@@ -92263,7 +92308,8 @@
         "Directory Row": "277",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 7 audit, 2026-08-15; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 4), 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Relationship-only"
-      }
+      },
+      "group": "Construction, design and facilities"
     },
     {
       "id": "rel-e1e7fc783090",
@@ -92285,7 +92331,8 @@
         "Directory Row": "279",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 7 audit, 2026-08-15; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 2), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 4), 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Relationship-only"
-      }
+      },
+      "group": "Construction, design and facilities"
     },
     {
       "id": "rel-d3ec46d0609e",
@@ -92306,7 +92353,8 @@
         "Directory Row": "278",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 7 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 6), 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Construction, design and facilities"
     },
     {
       "id": "rel-b27bc0ef405a",
@@ -92327,7 +92375,8 @@
         "Directory Row": "278",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 7 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 6), 2026-08-16; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Construction, design and facilities"
     },
     {
       "id": "rel-61f4a7c9e7b4",
@@ -92349,7 +92398,8 @@
         "Directory Row": "451",
         "Pass / Provenance": "Pass 2 B2B relationship mapping (round 4), 2026-08-16; source pages retrieved and reviewed | Marketing & Media audit, 2026-08-22; source pages retrieved and reviewed | Marketing & Media outreach-enrichment pass, 2026-08-23; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Marketing, web and media"
     },
     {
       "id": "rel-ce46ba60a9c2",
@@ -92373,7 +92423,8 @@
         "Directory Row": "452",
         "Pass / Provenance": "Pass 2 B2B relationship mapping (round 4), 2026-08-16; source pages retrieved and reviewed | Technology audit, 2026-08-22; source pages retrieved and reviewed | Technology outreach enrichment, 2026-08-23; form-only intake verified",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Marketing, web and media"
     },
     {
       "id": "rel-1bcc6a67cd95",
@@ -92395,7 +92446,8 @@
         "Directory Row": "499",
         "Pass / Provenance": "Security & Cash Logistics pass, 2026-08-22; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Security"
     },
     {
       "id": "rel-44a6a6c20d48",
@@ -92416,7 +92468,8 @@
         "Directory Row": "6",
         "Pass / Provenance": "IgniteIt Network | Organizations | Batch 1 audit, 2026-08-14; source pages retrieved and reviewed | Banking & Financial Services audit, 2026-08-22; source pages retrieved and reviewed",
         "Counterparty Status": "Relationship-only"
-      }
+      },
+      "group": "Banking, payments and compliance"
     },
     {
       "id": "rel-3947a32f5d7d",
@@ -92440,7 +92493,8 @@
         "Directory Row": "284",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 7 audit, 2026-08-15; source pages retrieved and reviewed | Pass 1 research (round 7, from v50 queue), 2026-08-16; source pages retrieved and reviewed | Banking & Financial Services audit, 2026-08-22; source pages retrieved and reviewed | Banking & Financial Services outreach-enrichment pass, 2026-08-23; direct banking-sales inbox verified",
         "Counterparty Status": "Relationship-only"
-      }
+      },
+      "group": "Banking, payments and compliance"
     },
     {
       "id": "rel-366edb0a2aa5",
@@ -92462,7 +92516,8 @@
         "Directory Row": "289",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 8 audit, 2026-08-15; source pages retrieved and reviewed | Banking & Financial Services audit, 2026-08-22; source pages retrieved and reviewed",
         "Counterparty Status": "Relationship-only"
-      }
+      },
+      "group": "Banking, payments and compliance"
     },
     {
       "id": "rel-6da6bacfc08c",
@@ -92485,7 +92540,8 @@
         "Directory Row": "505",
         "Pass / Provenance": "Marketing & Media audit, 2026-08-22; source pages retrieved and reviewed",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Marketing, web and media"
     },
     {
       "id": "rel-2a9ad39cd8fc",
@@ -92510,7 +92566,8 @@
         "Directory Row": "203",
         "Pass / Provenance": "Research pass — 2026-08-14; QA'd 2026-08-14 | Batch 5 audit, 2026-08-15 | Pass 1 research (round 3), 2026-08-16; source pages retrieved and reviewed | Technology audit, 2026-08-22; source pages retrieved and reviewed | Technology outreach enrichment, 2026-08-23; form-only intake verified",
         "Counterparty Status": "Y"
-      }
+      },
+      "group": "Technology and data integration"
     },
     {
       "id": "rel-a9c688077bbe",
@@ -92537,7 +92594,8 @@
         "Directory Row": "418",
         "Pass / Provenance": "",
         "Counterparty Status": ""
-      }
+      },
+      "group": "Education and community partnerships"
     },
     {
       "id": "rel-8c594d79702a",
@@ -92564,7 +92622,8 @@
         "Directory Row": "418",
         "Pass / Provenance": "",
         "Counterparty Status": ""
-      }
+      },
+      "group": "Education and community partnerships"
     },
     {
       "id": "rel-3b548e66ab32",
@@ -92589,7 +92648,8 @@
         "Directory Row": "90",
         "Pass / Provenance": "",
         "Counterparty Status": ""
-      }
+      },
+      "group": "Ownership, acquisitions and license transfers"
     }
   ],
   "events": [
