@@ -9,6 +9,8 @@ import hashlib,json
 from directory_data import ROOT
 from import_pa_ecosystem import upsert
 MANIFEST=ROOT/'data/sources/new-york-ecosystem-2026-11-01.json'
+# Later reviewed batches; each is imported after the base manifest with its own review date.
+MANIFESTS=[MANIFEST,ROOT/'data/sources/new-york-suppliers-2026-11-01.json']
 DIRECTORY=ROOT/'data/directory.json'
 STATE='NY'
 PREFIX='ev-ny26-'
@@ -27,6 +29,7 @@ def build(data,manifest):
    org=dict(id=spec['id'],name=spec['name'],kind=spec['kind'],legacy_ids=[],contacts=[]);data['organizations'].append(org);orgs[org['id']]=org
   if 'legacy_record' in org:raise ValueError(f'{spec["id"]}: manifest must not overwrite an Ohio directory record')
   org.update(name=spec['name'],kind=spec['kind'],website=spec['website'],contacts=spec['contacts'],scope='public')
+  if not org['website']:org.pop('website')
  new_services=[];new_rules=[];new_events=[];new_evidence=[]
  for spec in manifest['services']:
   if spec['organization_id'] not in orgs:raise ValueError(f'{spec["id"]}: unknown organization')
@@ -60,8 +63,10 @@ def build(data,manifest):
  data['evidence']=upsert(kept,new_evidence)
  return data
 def main():
- data=json.loads(DIRECTORY.read_text());manifest=json.loads(MANIFEST.read_text())
- build(data,manifest)
+ data=json.loads(DIRECTORY.read_text())
+ for path in MANIFESTS:
+  manifest=json.loads(path.read_text())
+  build(data,manifest)
+  print(f'Imported {path.name}: {len(manifest["organizations"])} organizations, {len(manifest["services"])} services, {len(manifest["rules"])} rules, {len(manifest["events"])} events')
  DIRECTORY.write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n')
- print(f'Imported New York ecosystem: {len(manifest["organizations"])} organizations, {len(manifest["services"])} services, {len(manifest["rules"])} rules, {len(manifest["events"])} events')
 if __name__=='__main__':main()

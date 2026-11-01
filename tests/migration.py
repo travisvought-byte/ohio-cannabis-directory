@@ -97,15 +97,23 @@ assert not any(l['state']=='PA' and l.get('organization_id')=='org-north-penn-le
 # A profile source cannot support a shipping badge.
 bad=copy.deepcopy(data);seed=next(s for s in bad['services'] if s.get('origin')=='seed-profile');seed['fulfillment'][0]['status']='confirmed';assert any('matching claim-level evidence' in e for e in validate(bad))
 # New York ecosystem manifest: repeatable, NY-only coverage, Ohio records untouched.
-from import_ny_ecosystem import build as import_ny_eco,MANIFEST as NY_MANIFEST
-ny_again=import_ny_eco(copy.deepcopy(data),json.loads(NY_MANIFEST.read_text()))
+from import_ny_ecosystem import build as import_ny_eco,MANIFEST as NY_MANIFEST,MANIFESTS as NY_MANIFESTS
+ny_again=copy.deepcopy(data)
+for path in NY_MANIFESTS:ny_again=import_ny_eco(ny_again,json.loads(path.read_text()))
 assert ny_again==data,'Re-importing the New York manifest must not change the canonical tree'
-ny_services=[s for s in data['services'] if s.get('listed_in')==['NY']];assert len(ny_services)==20
+ny_services=[s for s in data['services'] if s.get('listed_in')==['NY']];assert len(ny_services)==64
 assert all(c['state']=='NY' for s in ny_services for c in s['coverage'])
 assert {r['id'] for r in data['rules'] if r['state']=='NY'}=={'rule-ny-adult-use-possession','rule-ny-consumption','rule-ny-home-grow','rule-ny-employment','rule-ny-driving','rule-ny-record-expungement','rule-ny-clean-slate','rule-ny-medical-use'}
-assert not any('legacy_record' in o for o in data['organizations'] if o['id'] in {s['organization_id'] for s in ny_services})
+ny_manifest_orgs={o['id'] for path in NY_MANIFESTS for o in json.loads(path.read_text())['organizations']}
+assert not any('legacy_record' in o for o in data['organizations'] if o['id'] in ny_manifest_orgs),'New York manifests never rewrite Ohio directory records'
 assert next(e for e in data['events'] if e['id']=='event-ny-ocm-cannabinoids-symposium-2026')['starts_on']=='2026-11-19'
 las=next(s for s in ny_services if s['id']=='svc-ny-las-case-closed')
 assert {c['county'] for c in las['coverage']}=={'New York','Kings','Queens','Bronx','Richmond'}
 assert not next(s for s in ny_services if s['id']=='svc-ny-cca-reentry-advocacy')['coverage'],'City-level service must not imply county coverage'
+assert sum(s['id'].startswith('svc-ny-lab-') for s in ny_services)==11 and sum(s['id'].startswith('svc-ny-sampling-') for s in ny_services)==13 and sum(s['id'].startswith('svc-ny-bank-') for s in ny_services)==20
+assert next(s for s in ny_services if s['id']=='svc-ny-lab-00001')['organization_id']=='org-439251489828','ACT reuses its existing identity'
+assert not next(s for s in ny_services if s['id']=='svc-ny-bank-suffolk-credit-union')['coverage'],'A regional bank must not imply statewide coverage'
+assert next(s for s in ny_services if s['id']=='svc-ny-bank-stearns-bank')['coverage'][0]['state']=='NY'
+assert sum(o['name']=='Regent Bank' for o in data['organizations'])==1,'One identity per bank'
+assert next(o for o in data['organizations'] if o['id']=='org-439251489828').get('legacy_record'),'Ohio record kept intact'
 print('PASS migration: exact legacy exports, stable IDs, 60 relationship IDs, seed aliases, conservative coverage and state-template isolation.')
