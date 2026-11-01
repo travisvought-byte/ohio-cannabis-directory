@@ -8,7 +8,7 @@ Updated November 1, 2026. New York is a labeled **pilot** with all seven pathway
 | --- | --- | --- | --- |
 | Dispensaries | broad | 698 OCM-licensed adult-use stores and 24 open medical dispensing facilities in the location finder, 644 with Census map points for distance sorting; OCM's own adult-use and medical lists | 78 locations without a map point; 11 registered-organization adult-use sites with no opening date; 6 medical facilities marked temporarily closed |
 | Seeds | starter | Home-grow rule; OCM's statement that licensed retailers, microbusinesses and registered organizations may sell seeds and immature plants; patient home grow | No store-level availability or online supplier reviewed |
-| Records | partial | Court routes for automatic marijuana expungement, CPL 440.46-a motions, CPL 160.59 sealing and Clean Slate status; Legal Action Center phone help | No regional legal-aid office confirmed for record cases |
+| Records | partial | Court routes for automatic marijuana expungement, CPL 440.46-a motions, CPL 160.59 sealing and Clean Slate status; Legal Action Center (statewide); Legal Aid Society Case Closed, CSS Next Door Project, Youth Represent, The Bronx Defenders and Brooklyn Defender Services (NYC); Center for Community Alternatives (Syracuse, Rochester) | No listed route for Long Island, Hudson Valley, Capital Region, North Country or Western NY outside Rochester |
 | Rules | starter | Eight dated summaries tied to statute text or official pages | Local rules, hemp, packaging and business rules; S3294A provision dates |
 | Medical | partial | Certification, provider finder, caregivers, home grow, dispensing facilities | Provider rows, fees and discounts not reviewed; reciprocity not confirmed in effect |
 | Business | starter | OCM licensing hub (renewals, nursery license, showcase permits) | No providers reviewed for New York service; trade associations remain leads |
@@ -37,7 +37,7 @@ To refresh the store list, download the export again, run the snapshot script wi
 ## Next work
 
 1. **Remaining map points:** review the 78 unmatched addresses; the 9 county disagreements (for example, 6850 Main St, Williamsville listed as Onondaga) may be OCM data errors worth reporting.
-2. **Regional record help:** confirm which legal-aid offices take sealing and expungement cases (Legal Aid Society of NYC, LawNY, LASNNY, Legal Services of Central NY, Neighborhood Legal Services).
+2. **Regional record help outside NYC, Syracuse and Rochester:** LawNY, LASNNY and the Legal Aid Bureau of Buffalo were checked November 1 and their pages do not say they handle sealing; Long Island (Breaking Barriers, Suffolk), Hudson Valley and North Country providers still need review.
 3. **Seeds:** review which existing seed suppliers state New York shipping; check OCM's nursery license rollout.
 4. **Business and community:** confirm trade associations (CANY, ANYCP, ECMA, NYMCIA, CRANY, CAURD Inc., NYCRA, BCIA) on their own pages, veteran groups and organizer-confirmed events.
 5. **Comparison and advocacy:** add New York to the state comparison as the adult-use reference for Ohio and Pennsylvania visitors. The advocacy page waits for 2027 session bill filings; 2025–2026 bills expire when the session ends.

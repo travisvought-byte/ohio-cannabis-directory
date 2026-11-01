@@ -3,136 +3,1150 @@
   "recheck_on": "2026-12-01",
   "method": "Each claim below cites a page that was opened and read on November 1, 2026, in a browser (statute text on the Senate's Open Legislation site, court help pages, OCM pages) or, for OCM's adult-use home-cultivation FAQ PDF, through a web-fetch text conversion. A source supports only the stated claim. No service is described as available, free or guaranteed unless its own page says so. Not legal advice.",
   "sources": {
-    "pen-222-05": {"url": "https://www.nysenate.gov/legislation/laws/PEN/222.05", "source_kind": "government", "limitations": "Statute text, current revision from 2021-04-02. Local rules, landlord and workplace policies are not covered. Not legal advice."},
-    "pen-222-10": {"url": "https://www.nysenate.gov/legislation/laws/PEN/222.10", "source_kind": "government", "limitations": "Statute text, current revision from 2021-04-02. Public Health Law article 13-E smoking locations are not summarized here. Not legal advice."},
-    "pen-222-15": {"url": "https://www.nysenate.gov/legislation/laws/PEN/222.15", "source_kind": "government", "limitations": "Statute text, current revision from 2021-04-02. OCM home-cultivation regulations (9 NYCRR Part 115) add safety rules that are summarized only where OCM's own pages state them. Not legal advice."},
-    "lab-201-d": {"url": "https://www.nysenate.gov/legislation/laws/LAB/201-D", "source_kind": "government", "limitations": "Statute text, current revision from 2023-09-08. Federal rules, safety-sensitive jobs and collective bargaining terms can change the outcome. Not legal advice."},
-    "vat-1192": {"url": "https://www.nysenate.gov/legislation/laws/VAT/1192", "source_kind": "government", "limitations": "Statute text, current revision from 2014-09-22. Penalties, testing and licensing consequences are in other sections and are not summarized. Not legal advice."},
-    "ocm-adult-use-info": {"url": "https://cannabis.ny.gov/adult-use-information", "source_kind": "government", "limitations": "Agency consumer summary; it cites no statute sections."},
-    "ocm-home-grow-faq": {"url": "https://cannabis.ny.gov/home-cultivation-faqs", "source_kind": "government", "limitations": "OCM adult-use home cultivation FAQ (PDF, undated; refers to rules adopted June 11, 2024 and home cultivation beginning June 26, 2024). Read through a text conversion. It does not address online, out-of-state or gifted seeds."},
-    "ocm-patients": {"url": "https://cannabis.ny.gov/patients", "source_kind": "government", "limitations": "Program instructions. Individual eligibility is decided by the certifying provider. Product availability and prices are set by registered organizations."},
-    "ocm-medical": {"url": "https://cannabis.ny.gov/medical", "source_kind": "government", "limitations": "Program overview with statistics as of October 1, 2026."},
-    "ocm-dispensing": {"url": "https://cannabis.ny.gov/dispensing-facilities", "source_kind": "government", "limitations": "OCM table of 30 medical dispensing facilities (6 marked temporarily closed); no page date."},
-    "ocm-verification": {"url": "https://cannabis.ny.gov/dispensary-location-verification", "source_kind": "government", "limitations": "OCM list of licensed adult-use dispensaries; no as-of date."},
-    "ocm-licensing": {"url": "https://cannabis.ny.gov/licensing", "source_kind": "government", "limitations": "Agency licensing overview. Application windows, fees and eligibility change; confirm on the linked OCM pages before applying."},
-    "ocm-symposium": {"url": "https://cannabis.ny.gov/2026-symposium", "source_kind": "government", "limitations": "Organizer event page. Agenda times are subject to change; registration terms are set by the organizer."},
-    "s3294a": {"url": "https://www.nysenate.gov/legislation/bills/2025/S3294/amendment/A", "source_kind": "government", "limitations": "Bill page shows S3294A (Sen. Cooney) as signed by the governor and lists the Cannabis Law sections it amends. Chapter number and the effective date of each provision were not confirmed."},
-    "courts-expungement": {"url": "https://www.nycourts.gov/help/criminal/cannabis-marihuana-and-expungement-under-new-york-state-law", "source_kind": "government", "limitations": "Court-system help page. Immigration consequences and non-listed offenses need individual legal advice. Not legal advice."},
-    "courts-sealing": {"url": "https://www.nycourts.gov/help/criminal/sealed-criminal-records", "source_kind": "government", "limitations": "Court-system overview of sealing. Out-of-state and federal records are not affected."},
-    "courts-160-59": {"url": "https://www.nycourts.gov/help/criminal/sealed-records-after-10-years-cpl-16059", "source_kind": "government", "limitations": "Court-system instructions. The court decides each application; listed fees are as stated on the page."},
-    "courts-clean-slate": {"url": "https://www.nycourts.gov/cleanslate", "source_kind": "government", "limitations": "Court-system Clean Slate page. Implementation is due by November 16, 2027; no individual record should be assumed sealed yet."},
-    "lawhelpny-clean-slate": {"url": "https://www.lawhelpny.org/resource/new-yorks-clean-slate-act-and-sealing-convictions", "source_kind": "secondary", "limitations": "Statewide legal-information site; page last reviewed May 7, 2025. Used for the Legal Action Center referral and plain-language waiting periods only."},
-    "lac-home": {"url": "https://www.lac.org/", "source_kind": "provider", "limitations": "Provider home page. Eligibility, capacity and case acceptance are decided by Legal Action Center."},
-    "norml-ny": {"url": "https://norml.org/about/new-york-chapters/", "source_kind": "secondary", "limitations": "NORML's national chapter listing with each chapter's website and contact. Chapter activity, meetings and membership terms were not confirmed on the chapters' own sites."}
+    "pen-222-05": {
+      "url": "https://www.nysenate.gov/legislation/laws/PEN/222.05",
+      "source_kind": "government",
+      "limitations": "Statute text, current revision from 2021-04-02. Local rules, landlord and workplace policies are not covered. Not legal advice."
+    },
+    "pen-222-10": {
+      "url": "https://www.nysenate.gov/legislation/laws/PEN/222.10",
+      "source_kind": "government",
+      "limitations": "Statute text, current revision from 2021-04-02. Public Health Law article 13-E smoking locations are not summarized here. Not legal advice."
+    },
+    "pen-222-15": {
+      "url": "https://www.nysenate.gov/legislation/laws/PEN/222.15",
+      "source_kind": "government",
+      "limitations": "Statute text, current revision from 2021-04-02. OCM home-cultivation regulations (9 NYCRR Part 115) add safety rules that are summarized only where OCM's own pages state them. Not legal advice."
+    },
+    "lab-201-d": {
+      "url": "https://www.nysenate.gov/legislation/laws/LAB/201-D",
+      "source_kind": "government",
+      "limitations": "Statute text, current revision from 2023-09-08. Federal rules, safety-sensitive jobs and collective bargaining terms can change the outcome. Not legal advice."
+    },
+    "vat-1192": {
+      "url": "https://www.nysenate.gov/legislation/laws/VAT/1192",
+      "source_kind": "government",
+      "limitations": "Statute text, current revision from 2014-09-22. Penalties, testing and licensing consequences are in other sections and are not summarized. Not legal advice."
+    },
+    "ocm-adult-use-info": {
+      "url": "https://cannabis.ny.gov/adult-use-information",
+      "source_kind": "government",
+      "limitations": "Agency consumer summary; it cites no statute sections."
+    },
+    "ocm-home-grow-faq": {
+      "url": "https://cannabis.ny.gov/home-cultivation-faqs",
+      "source_kind": "government",
+      "limitations": "OCM adult-use home cultivation FAQ (PDF, undated; refers to rules adopted June 11, 2024 and home cultivation beginning June 26, 2024). Read through a text conversion. It does not address online, out-of-state or gifted seeds."
+    },
+    "ocm-patients": {
+      "url": "https://cannabis.ny.gov/patients",
+      "source_kind": "government",
+      "limitations": "Program instructions. Individual eligibility is decided by the certifying provider. Product availability and prices are set by registered organizations."
+    },
+    "ocm-medical": {
+      "url": "https://cannabis.ny.gov/medical",
+      "source_kind": "government",
+      "limitations": "Program overview with statistics as of October 1, 2026."
+    },
+    "ocm-dispensing": {
+      "url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "limitations": "OCM table of 30 medical dispensing facilities (6 marked temporarily closed); no page date."
+    },
+    "ocm-verification": {
+      "url": "https://cannabis.ny.gov/dispensary-location-verification",
+      "source_kind": "government",
+      "limitations": "OCM list of licensed adult-use dispensaries; no as-of date."
+    },
+    "ocm-licensing": {
+      "url": "https://cannabis.ny.gov/licensing",
+      "source_kind": "government",
+      "limitations": "Agency licensing overview. Application windows, fees and eligibility change; confirm on the linked OCM pages before applying."
+    },
+    "ocm-symposium": {
+      "url": "https://cannabis.ny.gov/2026-symposium",
+      "source_kind": "government",
+      "limitations": "Organizer event page. Agenda times are subject to change; registration terms are set by the organizer."
+    },
+    "s3294a": {
+      "url": "https://www.nysenate.gov/legislation/bills/2025/S3294/amendment/A",
+      "source_kind": "government",
+      "limitations": "Bill page shows S3294A (Sen. Cooney) as signed by the governor and lists the Cannabis Law sections it amends. Chapter number and the effective date of each provision were not confirmed."
+    },
+    "courts-expungement": {
+      "url": "https://www.nycourts.gov/help/criminal/cannabis-marihuana-and-expungement-under-new-york-state-law",
+      "source_kind": "government",
+      "limitations": "Court-system help page. Immigration consequences and non-listed offenses need individual legal advice. Not legal advice."
+    },
+    "courts-sealing": {
+      "url": "https://www.nycourts.gov/help/criminal/sealed-criminal-records",
+      "source_kind": "government",
+      "limitations": "Court-system overview of sealing. Out-of-state and federal records are not affected."
+    },
+    "courts-160-59": {
+      "url": "https://www.nycourts.gov/help/criminal/sealed-records-after-10-years-cpl-16059",
+      "source_kind": "government",
+      "limitations": "Court-system instructions. The court decides each application; listed fees are as stated on the page."
+    },
+    "courts-clean-slate": {
+      "url": "https://www.nycourts.gov/cleanslate",
+      "source_kind": "government",
+      "limitations": "Court-system Clean Slate page. Implementation is due by November 16, 2027; no individual record should be assumed sealed yet."
+    },
+    "lawhelpny-clean-slate": {
+      "url": "https://www.lawhelpny.org/resource/new-yorks-clean-slate-act-and-sealing-convictions",
+      "source_kind": "secondary",
+      "limitations": "Statewide legal-information site; page last reviewed May 7, 2025. Used for the Legal Action Center referral and plain-language waiting periods only."
+    },
+    "lac-home": {
+      "url": "https://www.lac.org/",
+      "source_kind": "provider",
+      "limitations": "Provider home page. Eligibility, capacity and case acceptance are decided by Legal Action Center."
+    },
+    "norml-ny": {
+      "url": "https://norml.org/about/new-york-chapters/",
+      "source_kind": "secondary",
+      "limitations": "NORML's national chapter listing with each chapter's website and contact. Chapter activity, meetings and membership terms were not confirmed on the chapters' own sites."
+    },
+    "las-case-closed": {
+      "url": "https://legalaidnyc.org/programs-projects-units/case-closed-project/",
+      "source_kind": "provider",
+      "limitations": "Provider program page. Eligibility screening, income limits and case acceptance are decided by The Legal Aid Society."
+    },
+    "css-next-door": {
+      "url": "https://www.cssny.org/programs/entry/the-next-door-project",
+      "source_kind": "provider",
+      "limitations": "Provider program page. Appointments are required; free record requests depend on the stated income limit. Intake dates are as listed by the provider."
+    },
+    "youth-represent": {
+      "url": "https://youthrepresent.org/programs/legal-services/",
+      "source_kind": "provider",
+      "limitations": "Provider program page. Services are delivered through partner organizations; age limits and case acceptance are decided by Youth Represent."
+    },
+    "bronx-defenders": {
+      "url": "https://www.bronxdefenders.org/our-work/defending-new-yorkers/civil-action-practice/",
+      "source_kind": "provider",
+      "limitations": "Provider practice page. It does not state eligibility for record work; the Bronx Defenders primarily serves Bronx residents and clients."
+    },
+    "bds-civil": {
+      "url": "https://bds.org/our-work/civil-justice",
+      "source_kind": "provider",
+      "limitations": "Provider practice page. Eligibility is not stated on the page; BDS provides representation to low-income Brooklyn residents."
+    },
+    "bds-get-help": {
+      "url": "https://bds.org/get-help",
+      "source_kind": "provider",
+      "limitations": "Provider contact page."
+    },
+    "cca-reentry": {
+      "url": "https://communityalternatives.org/programs/3c1-reentry-advocacy",
+      "source_kind": "provider",
+      "limitations": "Provider program page. Service is stated for Syracuse and Rochester; county-wide coverage is not claimed."
+    }
   },
   "organizations": [
-    {"id": "org-ny-office-cannabis-management", "name": "New York State Office of Cannabis Management", "kind": "government", "website": "https://cannabis.ny.gov/", "contacts": [{"kind": "phone", "value": "888-626-5151"}, {"kind": "email", "value": "medical@ocm.ny.gov"}]},
-    {"id": "org-ny-unified-court-system", "name": "New York State Unified Court System", "kind": "government", "website": "https://www.nycourts.gov/", "contacts": []},
-    {"id": "org-legal-action-center", "name": "Legal Action Center", "kind": "nonprofit", "website": "https://www.lac.org/", "contacts": [{"kind": "phone", "value": "212-243-1313"}, {"kind": "email", "value": "lacinfo@lac.org"}]},
-    {"id": "org-empire-state-norml", "name": "Empire State NORML", "kind": "community", "website": "https://www.esnorml.org/", "contacts": [{"kind": "phone", "value": "559-426-6765"}, {"kind": "email", "value": "Info@empirestatenorml.com"}]},
-    {"id": "org-nyc-norml", "name": "NYC NORML", "kind": "community", "website": "https://www.nycnorml.org/", "contacts": [{"kind": "email", "value": "Info@nycnorml.org"}]},
-    {"id": "org-roc-norml", "name": "Roc NORML", "kind": "community", "website": "https://www.rocnorml.org/", "contacts": [{"kind": "phone", "value": "585-469-6731"}, {"kind": "email", "value": "rocnorml@rocnorml.org"}]}
+    {
+      "id": "org-ny-office-cannabis-management",
+      "name": "New York State Office of Cannabis Management",
+      "kind": "government",
+      "website": "https://cannabis.ny.gov/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "888-626-5151"
+        },
+        {
+          "kind": "email",
+          "value": "medical@ocm.ny.gov"
+        }
+      ]
+    },
+    {
+      "id": "org-ny-unified-court-system",
+      "name": "New York State Unified Court System",
+      "kind": "government",
+      "website": "https://www.nycourts.gov/",
+      "contacts": []
+    },
+    {
+      "id": "org-legal-action-center",
+      "name": "Legal Action Center",
+      "kind": "nonprofit",
+      "website": "https://www.lac.org/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "212-243-1313"
+        },
+        {
+          "kind": "email",
+          "value": "lacinfo@lac.org"
+        }
+      ]
+    },
+    {
+      "id": "org-empire-state-norml",
+      "name": "Empire State NORML",
+      "kind": "community",
+      "website": "https://www.esnorml.org/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "559-426-6765"
+        },
+        {
+          "kind": "email",
+          "value": "Info@empirestatenorml.com"
+        }
+      ]
+    },
+    {
+      "id": "org-nyc-norml",
+      "name": "NYC NORML",
+      "kind": "community",
+      "website": "https://www.nycnorml.org/",
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "Info@nycnorml.org"
+        }
+      ]
+    },
+    {
+      "id": "org-roc-norml",
+      "name": "Roc NORML",
+      "kind": "community",
+      "website": "https://www.rocnorml.org/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "585-469-6731"
+        },
+        {
+          "kind": "email",
+          "value": "rocnorml@rocnorml.org"
+        }
+      ]
+    },
+    {
+      "id": "org-legal-aid-society-nyc",
+      "name": "The Legal Aid Society (New York City)",
+      "kind": "nonprofit",
+      "website": "https://legalaidnyc.org/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "212-298-3120"
+        },
+        {
+          "kind": "email",
+          "value": "CaseClosed@legal-aid.org"
+        }
+      ]
+    },
+    {
+      "id": "org-community-service-society-ny",
+      "name": "Community Service Society of New York",
+      "kind": "nonprofit",
+      "website": "https://www.cssny.org/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "212-614-5441"
+        }
+      ]
+    },
+    {
+      "id": "org-youth-represent",
+      "name": "Youth Represent",
+      "kind": "nonprofit",
+      "website": "https://youthrepresent.org/",
+      "contacts": []
+    },
+    {
+      "id": "org-bronx-defenders",
+      "name": "The Bronx Defenders",
+      "kind": "nonprofit",
+      "website": "https://www.bronxdefenders.org/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "718-838-7878"
+        }
+      ]
+    },
+    {
+      "id": "org-brooklyn-defender-services",
+      "name": "Brooklyn Defender Services",
+      "kind": "nonprofit",
+      "website": "https://bds.org/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "718-254-0700"
+        },
+        {
+          "kind": "email",
+          "value": "info@bds.org"
+        }
+      ]
+    },
+    {
+      "id": "org-center-community-alternatives",
+      "name": "Center for Community Alternatives",
+      "kind": "nonprofit",
+      "website": "https://communityalternatives.org/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "315-422-5638"
+        },
+        {
+          "kind": "email",
+          "value": "cca@communityalternatives.org"
+        }
+      ]
+    }
   ],
   "services": [
-    {"id": "svc-ny-ocm-verified-dispensaries", "organization_id": "org-ny-office-cannabis-management", "pathway_ids": ["dispensaries"], "name": "OCM list of licensed adult-use dispensaries",
-     "description": "OCM's own list of licensed adult-use dispensaries. Licensed stores display OCM's Dispensary Verification Tool near the entrance; OCM states 757 adult-use dispensaries.",
-     "audiences": ["consumers"], "eligibility": "Adult-use purchases are for adults 21 and older.", "next_step": {"label": "Open OCM's dispensary list", "url": "https://cannabis.ny.gov/dispensary-location-verification"},
-     "coverage": [{"kind": "state", "state": "NY", "source": "ocm-verification", "value": "OCM lists licensed adult-use dispensaries across New York State."}],
-     "evidence": [{"claim": "service-description", "source": "ocm-verification", "value": "Page states there are currently 757 adult-use cannabis dispensaries across New York State and links the Dispensary Verification Tool and the Buy Legal map."}]},
-    {"id": "svc-ny-medical-dispensing-facilities", "organization_id": "org-ny-office-cannabis-management", "pathway_ids": ["dispensaries", "medical"], "name": "OCM list of medical dispensing facilities",
-     "description": "Medical dispensing facilities run by registered organizations, with county, home-delivery flag and phone. The 24 facilities not marked temporarily closed are also in this directory's location finder.",
-     "audiences": ["patients", "caregivers"], "eligibility": "For certified patients and designated caregivers. Bring the certification and a government-issued photo ID.", "next_step": {"label": "Open OCM's medical dispensary list", "url": "https://cannabis.ny.gov/dispensing-facilities"},
-     "coverage": [{"kind": "state", "state": "NY", "source": "ocm-dispensing", "value": "Medical dispensing facilities operated by registered organizations across New York State."}],
-     "evidence": [{"claim": "service-description", "source": "ocm-dispensing", "value": "Table lists 30 dispensing facilities operated by 8 registered organizations, six marked temporarily closed; registered organizations handle delivery and its fees."}]},
-    {"id": "svc-ny-medical-certification", "organization_id": "org-ny-office-cannabis-management", "pathway_ids": ["medical"], "name": "Get certified for the Medical Cannabis Program",
-     "description": "A New York certifying provider (in person or telehealth) can certify a patient for any condition the provider judges suitable. The certification carries a registry ID that works immediately with a photo ID. There is no program fee, and patients may designate up to five caregivers.",
-     "audiences": ["patients", "caregivers"], "eligibility": "The certifying provider decides whether medical cannabis is appropriate.", "next_step": {"label": "Open OCM's patient page", "url": "https://cannabis.ny.gov/patients"},
-     "coverage": [{"kind": "state", "state": "NY", "source": "ocm-patients", "value": "New York State Medical Cannabis Program."}],
-     "evidence": [{"claim": "service-description", "source": "ocm-patients", "value": "Patients are certified after consulting a NYS certifying provider in person or by telehealth for any condition the provider deems suitable; the certification's registry ID can be used immediately with a government photo ID; no fee to become a patient; up to five caregivers."},
-                  {"claim": "service-description", "source": "ocm-medical", "value": "69,031 registered patients and 4,820 certifying practitioners as of October 1, 2026."}]},
-    {"id": "svc-ny-medical-provider-finder", "organization_id": "org-ny-office-cannabis-management", "pathway_ids": ["medical"], "name": "Find a certifying health care provider",
-     "description": "OCM's open-data list of medical cannabis health care providers, which can be filtered for telemedicine.",
-     "audiences": ["patients"], "eligibility": "Providers decide whom they certify; appointment fees are set by the provider.", "next_step": {"label": "Open the provider list", "url": "https://data.ny.gov/Human-Services/OCM-Medical-Cannabis-Healthcare-Providers/gegk-4ghy/data_preview"},
-     "evidence": [{"claim": "service-description", "source": "ocm-medical", "value": "OCM's medical program page links this dataset as its practitioner finder.", "limitations": "Provider rows were not reviewed individually."}]},
-    {"id": "svc-ny-medical-home-grow", "organization_id": "org-ny-office-cannabis-management", "pathway_ids": ["medical", "seeds"], "name": "Medical home cultivation for patients and caregivers",
-     "description": "Certified patients and designated caregivers 18 and older who are registered with the program may grow cannabis at home for a certified patient's personal use. OCM publishes a fact sheet, guide and FAQs.",
-     "audiences": ["patients", "caregivers"], "eligibility": "Registered certified patients and designated caregivers 18 and older.", "next_step": {"label": "Open OCM's patient home-grow section", "url": "https://cannabis.ny.gov/patients"},
-     "evidence": [{"claim": "service-description", "source": "ocm-patients", "value": "Certified patients and designated caregivers 18+ who are registered with the Medical Cannabis Program may cultivate cannabis at home for a certified patient's personal use; plants may not be transported outside New York State."}]},
-    {"id": "svc-ny-home-grow-seed-sources", "organization_id": "org-ny-office-cannabis-management", "pathway_ids": ["seeds"], "name": "Where New York home growers can buy seeds and immature plants",
-     "description": "OCM says adults 21 and older can buy seeds or immature plants from an adult-use retail dispensary, microbusiness or registered organization with dispensing, and should call ahead to confirm availability. Medical home growers may buy from registered organizations.",
-     "audiences": ["consumers", "patients"], "eligibility": "Adult-use home growers must be 21 or older; plant limits apply per person and per residence.", "next_step": {"label": "Open OCM's home cultivation FAQ", "url": "https://cannabis.ny.gov/home-cultivation-faqs"},
-     "evidence": [{"claim": "service-description", "source": "ocm-home-grow-faq", "value": "FAQ 37: adult-use consumers 21+ can purchase seeds or immature plants from an adult-use cannabis retail dispensary, microbusiness or registered organization with dispensing (ROD); contact the licensee before visiting. Certified patients and caregivers may buy from a ROD or ROND."}]},
-    {"id": "svc-ny-courts-marijuana-expungement", "organization_id": "org-ny-unified-court-system", "pathway_ids": ["records"], "name": "Marijuana expungement: automatic list and how to check",
-     "description": "Lists the marijuana convictions expunged automatically with no motion or fee, explains how to confirm expungement with a certificate of disposition, and links the CPL 440.46-a motion form for convictions not covered.",
-     "audiences": ["consumers"], "eligibility": "Only the listed offenses are automatic; other marijuana convictions need a motion in the court where the conviction occurred.", "next_step": {"label": "Open the court's expungement page", "url": "https://www.nycourts.gov/help/criminal/cannabis-marihuana-and-expungement-under-new-york-state-law"},
-     "coverage": [{"kind": "state", "state": "NY", "source": "courts-expungement", "value": "New York State court convictions."}],
-     "evidence": [{"claim": "service-description", "source": "courts-expungement", "value": "Automatic expungement without motions or fees for PL 221.05, 221.10, 221.15, 221.20, 221.35, 221.40, 222.10, 222.15, 222.25 and 222.45; the court sends no notice; a certificate of disposition shows whether a case was expunged; CPL 440.46-a motion for other marijuana convictions."}]},
-    {"id": "svc-ny-courts-sealing-160-59", "organization_id": "org-ny-unified-court-system", "pathway_ids": ["records"], "name": "Apply to seal up to two convictions after 10 years (CPL 160.59)",
-     "description": "Step-by-step court instructions for asking a court to seal up to two convictions (no more than one felony) after 10 crime-free years, including the certificate of disposition, notarized application, service on the District Attorney and seal verification with DCJS.",
-     "audiences": ["consumers"], "eligibility": "Sex offenses, violent felonies and serious felonies are not eligible; the court decides each application. Expunged marijuana convictions do not count toward the limit.", "next_step": {"label": "Open the court's sealing instructions", "url": "https://www.nycourts.gov/help/criminal/sealed-records-after-10-years-cpl-16059"},
-     "coverage": [{"kind": "state", "state": "NY", "source": "courts-160-59", "value": "New York State court convictions."}],
-     "evidence": [{"claim": "service-description", "source": "courts-160-59", "value": "Eligible after 10 crime-free years with no more than two misdemeanors or one felony and one misdemeanor; certificate of disposition fee $5 outside NYC and $10 in NYC; no fee to file; expunged marijuana convictions do not count."}]},
-    {"id": "svc-ny-courts-clean-slate", "organization_id": "org-ny-unified-court-system", "pathway_ids": ["records"], "name": "Clean Slate Act status and review request",
-     "description": "The court system's Clean Slate page: automatic sealing took effect November 16, 2024, with implementation due by November 16, 2027, when a form to request a manual review will be posted.",
-     "audiences": ["consumers"], "eligibility": "Sex crimes and non-drug Class A felonies are not eligible. No individual record should be assumed sealed yet.", "next_step": {"label": "Open the court's Clean Slate page", "url": "https://www.nycourts.gov/cleanslate"},
-     "evidence": [{"claim": "service-description", "source": "courts-clean-slate", "value": "Clean Slate took effect November 16, 2024; courts have until November 16, 2027 to set up automatic sealing; a manual-review request form will be available no later than that date."}]},
-    {"id": "svc-ny-lac-record-help", "organization_id": "org-legal-action-center", "pathway_ids": ["records"], "name": "Legal Action Center — criminal record help for New York residents",
-     "description": "Legal Action Center's legal staff help New York State residents by phone. LawHelpNY refers people to LAC to get a free copy of their RAP sheet and help with their record.",
-     "audiences": ["consumers"], "eligibility": "New York State residents. Case acceptance and capacity are decided by Legal Action Center.", "next_step": {"label": "Call (212) 243-1313 or open LAC's legal help page", "url": "https://www.lac.org/legal-help"},
-     "provider_details": {"serves": "New York State residents with arrest and conviction records", "coverage_note": "New York State (provider-stated)", "contact_note": "Phone (212) 243-1313; lacinfo@lac.org.", "source": "lac-home"},
-     "coverage": [{"kind": "state", "state": "NY", "source": "lac-home", "value": "If you live in New York State and need help from LAC's legal staff, call (212) 243-1313."}],
-     "evidence": [{"claim": "service-description", "source": "lac-home", "value": "LAC protects the rights of people with arrest and conviction records; New York State residents needing help from its legal staff are told to call (212) 243-1313."},
-                  {"claim": "service-description", "source": "lawhelpny-clean-slate", "value": "To check whether a conviction is sealed, get a copy of your RAP sheet; Legal Action Center can help New York residents get one for free at (212) 243-1313."}]},
-    {"id": "svc-ny-ocm-licensing", "organization_id": "org-ny-office-cannabis-management", "pathway_ids": ["business"], "name": "OCM licensing: applications, renewals and permits",
-     "description": "OCM's licensing hub: adult-use renewals, the new nursery license (applications open November 5), Cannabis Showcase Event permits and the market dashboard. OCM aims to award half of all licenses to social and economic equity applicants.",
-     "audiences": ["business"], "eligibility": "Eligibility, fees and windows vary by license type; confirm on OCM's pages.", "next_step": {"label": "Open OCM licensing", "url": "https://cannabis.ny.gov/licensing"},
-     "evidence": [{"claim": "service-description", "source": "ocm-licensing", "value": "Adult-use nursery license applications open November 5; adult-use renewals submitted online 60 to 120 days before expiration; Cannabis Showcase Event permits available; goal of awarding 50% of licenses to SEE applicants; questions to AULicensing@ocm.ny.gov."}]},
-    {"id": "svc-ny-empire-state-norml", "organization_id": "org-empire-state-norml", "pathway_ids": ["community"], "name": "Empire State NORML",
-     "description": "Statewide New York chapter of NORML, listed by the national organization.", "audiences": ["consumers", "patients"], "eligibility": "Contact the chapter about meetings, membership or advocacy.", "next_step": {"label": "Open Empire State NORML", "url": "https://www.esnorml.org/"},
-     "evidence": [{"claim": "service-description", "source": "norml-ny", "value": "NORML lists Empire State NORML as a New York chapter with website esnorml.org, phone (559) 426-6765 and Info@empirestatenorml.com."}]},
-    {"id": "svc-ny-nyc-norml", "organization_id": "org-nyc-norml", "pathway_ids": ["community"], "name": "NYC NORML",
-     "description": "New York City chapter of NORML, listed by the national organization.", "audiences": ["consumers", "patients"], "eligibility": "Contact the chapter about meetings, membership or advocacy.", "next_step": {"label": "Open NYC NORML", "url": "https://www.nycnorml.org/"},
-     "evidence": [{"claim": "service-description", "source": "norml-ny", "value": "NORML lists NYC NORML as a New York chapter with website nycnorml.org and Info@nycnorml.org."}]},
-    {"id": "svc-ny-roc-norml", "organization_id": "org-roc-norml", "pathway_ids": ["community"], "name": "Roc NORML (Rochester)",
-     "description": "Rochester-area chapter of NORML, listed by the national organization.", "audiences": ["consumers", "patients"], "eligibility": "Contact the chapter about meetings, membership or advocacy.", "next_step": {"label": "Open Roc NORML", "url": "https://www.rocnorml.org/"},
-     "evidence": [{"claim": "service-description", "source": "norml-ny", "value": "NORML lists Roc NORML as a New York chapter with website rocnorml.org, phone (585) 469-6731 and rocnorml@rocnorml.org."}]}
+    {
+      "id": "svc-ny-ocm-verified-dispensaries",
+      "organization_id": "org-ny-office-cannabis-management",
+      "pathway_ids": [
+        "dispensaries"
+      ],
+      "name": "OCM list of licensed adult-use dispensaries",
+      "description": "OCM's own list of licensed adult-use dispensaries. Licensed stores display OCM's Dispensary Verification Tool near the entrance; OCM states 757 adult-use dispensaries.",
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "Adult-use purchases are for adults 21 and older.",
+      "next_step": {
+        "label": "Open OCM's dispensary list",
+        "url": "https://cannabis.ny.gov/dispensary-location-verification"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-verification",
+          "value": "OCM lists licensed adult-use dispensaries across New York State."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-verification",
+          "value": "Page states there are currently 757 adult-use cannabis dispensaries across New York State and links the Dispensary Verification Tool and the Buy Legal map."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-medical-dispensing-facilities",
+      "organization_id": "org-ny-office-cannabis-management",
+      "pathway_ids": [
+        "dispensaries",
+        "medical"
+      ],
+      "name": "OCM list of medical dispensing facilities",
+      "description": "Medical dispensing facilities run by registered organizations, with county, home-delivery flag and phone. The 24 facilities not marked temporarily closed are also in this directory's location finder.",
+      "audiences": [
+        "patients",
+        "caregivers"
+      ],
+      "eligibility": "For certified patients and designated caregivers. Bring the certification and a government-issued photo ID.",
+      "next_step": {
+        "label": "Open OCM's medical dispensary list",
+        "url": "https://cannabis.ny.gov/dispensing-facilities"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-dispensing",
+          "value": "Medical dispensing facilities operated by registered organizations across New York State."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-dispensing",
+          "value": "Table lists 30 dispensing facilities operated by 8 registered organizations, six marked temporarily closed; registered organizations handle delivery and its fees."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-medical-certification",
+      "organization_id": "org-ny-office-cannabis-management",
+      "pathway_ids": [
+        "medical"
+      ],
+      "name": "Get certified for the Medical Cannabis Program",
+      "description": "A New York certifying provider (in person or telehealth) can certify a patient for any condition the provider judges suitable. The certification carries a registry ID that works immediately with a photo ID. There is no program fee, and patients may designate up to five caregivers.",
+      "audiences": [
+        "patients",
+        "caregivers"
+      ],
+      "eligibility": "The certifying provider decides whether medical cannabis is appropriate.",
+      "next_step": {
+        "label": "Open OCM's patient page",
+        "url": "https://cannabis.ny.gov/patients"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-patients",
+          "value": "New York State Medical Cannabis Program."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-patients",
+          "value": "Patients are certified after consulting a NYS certifying provider in person or by telehealth for any condition the provider deems suitable; the certification's registry ID can be used immediately with a government photo ID; no fee to become a patient; up to five caregivers."
+        },
+        {
+          "claim": "service-description",
+          "source": "ocm-medical",
+          "value": "69,031 registered patients and 4,820 certifying practitioners as of October 1, 2026."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-medical-provider-finder",
+      "organization_id": "org-ny-office-cannabis-management",
+      "pathway_ids": [
+        "medical"
+      ],
+      "name": "Find a certifying health care provider",
+      "description": "OCM's open-data list of medical cannabis health care providers, which can be filtered for telemedicine.",
+      "audiences": [
+        "patients"
+      ],
+      "eligibility": "Providers decide whom they certify; appointment fees are set by the provider.",
+      "next_step": {
+        "label": "Open the provider list",
+        "url": "https://data.ny.gov/Human-Services/OCM-Medical-Cannabis-Healthcare-Providers/gegk-4ghy/data_preview"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-medical",
+          "value": "OCM's medical program page links this dataset as its practitioner finder.",
+          "limitations": "Provider rows were not reviewed individually."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-medical-home-grow",
+      "organization_id": "org-ny-office-cannabis-management",
+      "pathway_ids": [
+        "medical",
+        "seeds"
+      ],
+      "name": "Medical home cultivation for patients and caregivers",
+      "description": "Certified patients and designated caregivers 18 and older who are registered with the program may grow cannabis at home for a certified patient's personal use. OCM publishes a fact sheet, guide and FAQs.",
+      "audiences": [
+        "patients",
+        "caregivers"
+      ],
+      "eligibility": "Registered certified patients and designated caregivers 18 and older.",
+      "next_step": {
+        "label": "Open OCM's patient home-grow section",
+        "url": "https://cannabis.ny.gov/patients"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-patients",
+          "value": "Certified patients and designated caregivers 18+ who are registered with the Medical Cannabis Program may cultivate cannabis at home for a certified patient's personal use; plants may not be transported outside New York State."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-home-grow-seed-sources",
+      "organization_id": "org-ny-office-cannabis-management",
+      "pathway_ids": [
+        "seeds"
+      ],
+      "name": "Where New York home growers can buy seeds and immature plants",
+      "description": "OCM says adults 21 and older can buy seeds or immature plants from an adult-use retail dispensary, microbusiness or registered organization with dispensing, and should call ahead to confirm availability. Medical home growers may buy from registered organizations.",
+      "audiences": [
+        "consumers",
+        "patients"
+      ],
+      "eligibility": "Adult-use home growers must be 21 or older; plant limits apply per person and per residence.",
+      "next_step": {
+        "label": "Open OCM's home cultivation FAQ",
+        "url": "https://cannabis.ny.gov/home-cultivation-faqs"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-home-grow-faq",
+          "value": "FAQ 37: adult-use consumers 21+ can purchase seeds or immature plants from an adult-use cannabis retail dispensary, microbusiness or registered organization with dispensing (ROD); contact the licensee before visiting. Certified patients and caregivers may buy from a ROD or ROND."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-courts-marijuana-expungement",
+      "organization_id": "org-ny-unified-court-system",
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Marijuana expungement: automatic list and how to check",
+      "description": "Lists the marijuana convictions expunged automatically with no motion or fee, explains how to confirm expungement with a certificate of disposition, and links the CPL 440.46-a motion form for convictions not covered.",
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "Only the listed offenses are automatic; other marijuana convictions need a motion in the court where the conviction occurred.",
+      "next_step": {
+        "label": "Open the court's expungement page",
+        "url": "https://www.nycourts.gov/help/criminal/cannabis-marihuana-and-expungement-under-new-york-state-law"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "courts-expungement",
+          "value": "New York State court convictions."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "courts-expungement",
+          "value": "Automatic expungement without motions or fees for PL 221.05, 221.10, 221.15, 221.20, 221.35, 221.40, 222.10, 222.15, 222.25 and 222.45; the court sends no notice; a certificate of disposition shows whether a case was expunged; CPL 440.46-a motion for other marijuana convictions."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-courts-sealing-160-59",
+      "organization_id": "org-ny-unified-court-system",
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Apply to seal up to two convictions after 10 years (CPL 160.59)",
+      "description": "Step-by-step court instructions for asking a court to seal up to two convictions (no more than one felony) after 10 crime-free years, including the certificate of disposition, notarized application, service on the District Attorney and seal verification with DCJS.",
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "Sex offenses, violent felonies and serious felonies are not eligible; the court decides each application. Expunged marijuana convictions do not count toward the limit.",
+      "next_step": {
+        "label": "Open the court's sealing instructions",
+        "url": "https://www.nycourts.gov/help/criminal/sealed-records-after-10-years-cpl-16059"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "courts-160-59",
+          "value": "New York State court convictions."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "courts-160-59",
+          "value": "Eligible after 10 crime-free years with no more than two misdemeanors or one felony and one misdemeanor; certificate of disposition fee $5 outside NYC and $10 in NYC; no fee to file; expunged marijuana convictions do not count."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-courts-clean-slate",
+      "organization_id": "org-ny-unified-court-system",
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Clean Slate Act status and review request",
+      "description": "The court system's Clean Slate page: automatic sealing took effect November 16, 2024, with implementation due by November 16, 2027, when a form to request a manual review will be posted.",
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "Sex crimes and non-drug Class A felonies are not eligible. No individual record should be assumed sealed yet.",
+      "next_step": {
+        "label": "Open the court's Clean Slate page",
+        "url": "https://www.nycourts.gov/cleanslate"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "courts-clean-slate",
+          "value": "Clean Slate took effect November 16, 2024; courts have until November 16, 2027 to set up automatic sealing; a manual-review request form will be available no later than that date."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-lac-record-help",
+      "organization_id": "org-legal-action-center",
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Legal Action Center — criminal record help for New York residents",
+      "description": "Legal Action Center's legal staff help New York State residents by phone. LawHelpNY refers people to LAC to get a free copy of their RAP sheet and help with their record.",
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "New York State residents. Case acceptance and capacity are decided by Legal Action Center.",
+      "next_step": {
+        "label": "Call (212) 243-1313 or open LAC's legal help page",
+        "url": "https://www.lac.org/legal-help"
+      },
+      "provider_details": {
+        "serves": "New York State residents with arrest and conviction records",
+        "coverage_note": "New York State (provider-stated)",
+        "contact_note": "Phone (212) 243-1313; lacinfo@lac.org.",
+        "source": "lac-home"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "lac-home",
+          "value": "If you live in New York State and need help from LAC's legal staff, call (212) 243-1313."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "lac-home",
+          "value": "LAC protects the rights of people with arrest and conviction records; New York State residents needing help from its legal staff are told to call (212) 243-1313."
+        },
+        {
+          "claim": "service-description",
+          "source": "lawhelpny-clean-slate",
+          "value": "To check whether a conviction is sealed, get a copy of your RAP sheet; Legal Action Center can help New York residents get one for free at (212) 243-1313."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-ocm-licensing",
+      "organization_id": "org-ny-office-cannabis-management",
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "OCM licensing: applications, renewals and permits",
+      "description": "OCM's licensing hub: adult-use renewals, the new nursery license (applications open November 5), Cannabis Showcase Event permits and the market dashboard. OCM aims to award half of all licenses to social and economic equity applicants.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Eligibility, fees and windows vary by license type; confirm on OCM's pages.",
+      "next_step": {
+        "label": "Open OCM licensing",
+        "url": "https://cannabis.ny.gov/licensing"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-licensing",
+          "value": "Adult-use nursery license applications open November 5; adult-use renewals submitted online 60 to 120 days before expiration; Cannabis Showcase Event permits available; goal of awarding 50% of licenses to SEE applicants; questions to AULicensing@ocm.ny.gov."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-empire-state-norml",
+      "organization_id": "org-empire-state-norml",
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "Empire State NORML",
+      "description": "Statewide New York chapter of NORML, listed by the national organization.",
+      "audiences": [
+        "consumers",
+        "patients"
+      ],
+      "eligibility": "Contact the chapter about meetings, membership or advocacy.",
+      "next_step": {
+        "label": "Open Empire State NORML",
+        "url": "https://www.esnorml.org/"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "norml-ny",
+          "value": "NORML lists Empire State NORML as a New York chapter with website esnorml.org, phone (559) 426-6765 and Info@empirestatenorml.com."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-nyc-norml",
+      "organization_id": "org-nyc-norml",
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "NYC NORML",
+      "description": "New York City chapter of NORML, listed by the national organization.",
+      "audiences": [
+        "consumers",
+        "patients"
+      ],
+      "eligibility": "Contact the chapter about meetings, membership or advocacy.",
+      "next_step": {
+        "label": "Open NYC NORML",
+        "url": "https://www.nycnorml.org/"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "norml-ny",
+          "value": "NORML lists NYC NORML as a New York chapter with website nycnorml.org and Info@nycnorml.org."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-roc-norml",
+      "organization_id": "org-roc-norml",
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "Roc NORML (Rochester)",
+      "description": "Rochester-area chapter of NORML, listed by the national organization.",
+      "audiences": [
+        "consumers",
+        "patients"
+      ],
+      "eligibility": "Contact the chapter about meetings, membership or advocacy.",
+      "next_step": {
+        "label": "Open Roc NORML",
+        "url": "https://www.rocnorml.org/"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "norml-ny",
+          "value": "NORML lists Roc NORML as a New York chapter with website rocnorml.org, phone (585) 469-6731 and rocnorml@rocnorml.org."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-las-case-closed",
+      "organization_id": "org-legal-aid-society-nyc",
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Legal Aid Society Case Closed — record sealing and expungement (NYC convictions)",
+      "description": "Case Closed, part of The Legal Aid Society's Criminal Defense Practice, represents low-income people in record sealing and expungement matters and publishes CPL 160.59, Clean Slate and marijuana expungement guides.",
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "Low-income people with criminal convictions that occurred in the five boroughs of New York City only.",
+      "next_step": {
+        "label": "Leave a message at 212-298-3120 or email CaseClosed@legal-aid.org",
+        "url": "https://legalaidnyc.org/programs-projects-units/case-closed-project/"
+      },
+      "provider_details": {
+        "serves": "Low-income people with New York City convictions",
+        "coverage_note": "Convictions in the five boroughs of New York City (provider-stated)",
+        "contact_note": "Message line 212-298-3120; CaseClosed@legal-aid.org.",
+        "source": "las-case-closed"
+      },
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "New York",
+          "source": "las-case-closed",
+          "value": "Assists low-income people with criminal convictions which occurred in the five boroughs of New York City only."
+        },
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Kings",
+          "source": "las-case-closed",
+          "value": "Assists low-income people with criminal convictions which occurred in the five boroughs of New York City only."
+        },
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Queens",
+          "source": "las-case-closed",
+          "value": "Assists low-income people with criminal convictions which occurred in the five boroughs of New York City only."
+        },
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Bronx",
+          "source": "las-case-closed",
+          "value": "Assists low-income people with criminal convictions which occurred in the five boroughs of New York City only."
+        },
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Richmond",
+          "source": "las-case-closed",
+          "value": "Assists low-income people with criminal convictions which occurred in the five boroughs of New York City only."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "las-case-closed",
+          "value": "Case Closed is a record sealing and expungement project in The Legal Aid Society's Criminal Defense Practice providing direct representation; it assists low-income people with convictions in the five boroughs of New York City only; contact 212-298-3120 or CaseClosed@legal-aid.org."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-css-next-door",
+      "organization_id": "org-community-service-society-ny",
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Community Service Society Next Door Project — RAP sheets, sealing and record barriers",
+      "description": "Legal workers and attorneys help low-income New Yorkers request and understand their criminal records, fix mistakes, seal eligible cases, apply for certificates and fight job, license and housing denials. Appointments are made by phone or at monthly group intake sessions.",
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "Low-income New Yorkers; records requested free when income is no higher than 200% of the federal poverty level. Appointment required.",
+      "next_step": {
+        "label": "Call (212) 614-5441 to request an appointment",
+        "url": "https://www.cssny.org/programs/entry/the-next-door-project"
+      },
+      "provider_details": {
+        "serves": "Low-income New Yorkers with criminal records",
+        "coverage_note": "New York City office and on-site at partner agencies in New York City (provider-stated)",
+        "contact_note": "Call (212) 614-5441 and leave contact information; monthly group intake listed for November 19 and December 17, 2026.",
+        "source": "css-next-door"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "css-next-door",
+          "value": "Next Door Project requests criminal records (free at or below 200% FPL), fixes mistakes, seals eligible cases, addresses open warrants, applies for certificates and represents people denied jobs, licenses or housing; appointments at (212) 614-5441; 2026 intake dates include October 29, November 19 and December 17."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-youth-represent",
+      "organization_id": "org-youth-represent",
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Youth Represent — records and sealing help for people 26 and under",
+      "description": "Holistic legal services for young people affected by the criminal legal system: obtaining and correcting RAP sheets, sealing motions, retroactive Youthful Offender motions and certificates of relief, delivered through partner organizations across the five boroughs.",
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "Young people ages 26 and under impacted by the criminal legal system; served through partner community organizations.",
+      "next_step": {
+        "label": "Open Youth Represent's legal services page",
+        "url": "https://youthrepresent.org/programs/legal-services/"
+      },
+      "provider_details": {
+        "serves": "Young people 26 and under with court involvement",
+        "coverage_note": "All five boroughs of New York City through partner organizations (provider-stated)",
+        "contact_note": "Use the Get Legal Help link on the provider's legal services page.",
+        "source": "youth-represent"
+      },
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "New York",
+          "source": "youth-represent",
+          "value": "Partners with community-based organizations across all five boroughs to bring legal support to young people."
+        },
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Kings",
+          "source": "youth-represent",
+          "value": "Partners with community-based organizations across all five boroughs to bring legal support to young people."
+        },
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Queens",
+          "source": "youth-represent",
+          "value": "Partners with community-based organizations across all five boroughs to bring legal support to young people."
+        },
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Bronx",
+          "source": "youth-represent",
+          "value": "Partners with community-based organizations across all five boroughs to bring legal support to young people."
+        },
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Richmond",
+          "source": "youth-represent",
+          "value": "Partners with community-based organizations across all five boroughs to bring legal support to young people."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "youth-represent",
+          "value": "Serves young people ages 26 and under; obtains RAP sheets from DCJS or the FBI and corrects errors; post-conviction relief includes sealing motions, retroactive Youthful Offender motions and certificates of relief and good conduct."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bronx-defenders-sealing",
+      "organization_id": "org-bronx-defenders",
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "The Bronx Defenders — correcting and sealing criminal court records",
+      "description": "The Bronx Defenders' Civil Action Practice works to uphold sealing laws and challenge the use of sealed criminal records in civil courts, alongside reentry information sessions for Bronx residents.",
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "Not stated on the page; the Bronx Defenders primarily serves Bronx residents and clients.",
+      "next_step": {
+        "label": "Call (718) 838-7878",
+        "url": "https://www.bronxdefenders.org/our-work/defending-new-yorkers/civil-action-practice/"
+      },
+      "provider_details": {
+        "serves": "Bronx residents and clients",
+        "coverage_note": "Bronx (provider-stated for reentry information sessions)",
+        "contact_note": "(718) 838-7878 as listed on the practice page.",
+        "source": "bronx-defenders"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "bronx-defenders",
+          "value": "Correcting and Sealing Criminal Court Records: fights to uphold sealing laws and challenge use and dissemination of sealed records in civil courts; reentry information sessions for people living in the Bronx; phone (718) 838-7878."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bds-sealing",
+      "organization_id": "org-brooklyn-defender-services",
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Brooklyn Defender Services — sealing and expungement",
+      "description": "BDS helps people obtain sealing of their arrest record when they are legally entitled to it, and its reentry team supports people after incarceration.",
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "Not stated on the page; BDS represents low-income Brooklyn residents.",
+      "next_step": {
+        "label": "Call (718) 254-0700 or email info@bds.org",
+        "url": "https://bds.org/get-help"
+      },
+      "provider_details": {
+        "serves": "Low-income Brooklyn residents",
+        "coverage_note": "Brooklyn (provider-stated offices)",
+        "contact_note": "(718) 254-0700; info@bds.org; community office at 566 Livonia Ave open Wednesdays 9 am to 5 pm.",
+        "source": "bds-get-help"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "bds-civil",
+          "value": "Sealing and Expungement: BDS helps people obtain sealing of their arrest record when they are legally entitled to that relief."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-cca-reentry-advocacy",
+      "organization_id": "org-center-community-alternatives",
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Center for Community Alternatives — free reentry legal services (Syracuse and Rochester)",
+      "description": "Free legal services to obtain, review and correct criminal records, determine eligibility for certificates of rehabilitation or sealing and help apply, plus employment-rights and licensing advocacy.",
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "People with conviction records in Syracuse and Rochester; case acceptance decided by CCA.",
+      "next_step": {
+        "label": "Call 315-422-5638",
+        "url": "https://communityalternatives.org/programs/3c1-reentry-advocacy"
+      },
+      "provider_details": {
+        "serves": "People with conviction records",
+        "coverage_note": "Syracuse and Rochester (provider-stated)",
+        "contact_note": "315-422-5638; cca@communityalternatives.org.",
+        "source": "cca-reentry"
+      },
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "cca-reentry",
+          "value": "CCA provides free legal services in Syracuse and Rochester: criminal record review, RAP sheet error correction, certificate of rehabilitation and sealing eligibility and assistance, employment-rights advocacy; contact 315-422-5638."
+        }
+      ]
+    }
   ],
   "rules": [
-    {"id": "rule-ny-adult-use-possession", "topic": "adult-use-possession", "effective_on": "2021-03-31", "next_step_url": "https://www.nysenate.gov/legislation/laws/PEN/222.05",
-     "summary": "Adults 21 and older may possess, buy and transport up to 3 ounces of cannabis and 24 grams of concentrated cannabis, and may give the same amounts to another adult 21 or older without compensation. At home, up to 5 pounds may be kept if secured from anyone under 21. 'Gifting' tied to a sale is not lawful sharing.",
-     "evidence": [{"claim": "rule-summary", "source": "pen-222-05", "value": "PL 222.05(1)(a)-(b): possession, purchase and transport of up to 3 oz cannabis and 24 g concentrated cannabis, and transfer without compensation of the same amounts, are lawful for persons 21+."},
-                  {"claim": "rule-summary", "source": "pen-222-15", "value": "PL 222.15(5): up to five pounds of cannabis may be possessed in a private residence, secured from persons under 21."},
-                  {"claim": "rule-summary", "source": "ocm-adult-use-info", "value": "Sharing without compensation is legal; any sale of a service or commodity tied to the sharing, including so-called gifting, is illegal. Effective date per the court system: March 31, 2021."}]},
-    {"id": "rule-ny-consumption", "topic": "public-consumption", "effective_on": "2021-03-31", "next_step_url": "https://cannabis.ny.gov/adult-use-information",
-     "summary": "Adults may consume in a private home and most places where tobacco smoking is allowed, but not in a motor vehicle, where smoking or vaping is banned, on school grounds or school buses, or on federal property. Violations of the state use restrictions carry a civil penalty of up to $25 or up to 20 hours of community service.",
-     "evidence": [{"claim": "rule-summary", "source": "pen-222-10", "value": "PL 222.10: no smoking or vaping where prohibited under Public Health Law article 13-E, and no smoking, vaping or ingesting on school grounds or school buses; civil penalty up to $25 or up to 20 hours of community service."},
-                  {"claim": "rule-summary", "source": "ocm-adult-use-info", "value": "Legal in a private home or most places tobacco can be consumed, except a motor vehicle; illegal where tobacco smoking is prohibited and on federal property."}]},
-    {"id": "rule-ny-home-grow", "topic": "home-grow", "effective_on": "2024-06-26", "next_step_url": "https://www.nysenate.gov/legislation/laws/PEN/222.15",
-     "summary": "Adults 21 and older may grow up to 3 mature and 3 immature plants, with no more than 6 mature and 6 immature plants per residence, only at their private residence and secured from anyone under 21. Selling homegrown cannabis is illegal, and flammable solvents are banned for home processing. Localities may regulate but not effectively ban home growing.",
-     "evidence": [{"claim": "rule-summary", "source": "pen-222-15", "value": "PL 222.15(1)-(3), (6): 3 mature and 3 immature plants per person, 6 and 6 per private residence, cultivation only at a private residence, no one under 21; localities may regulate with penalties of $200 or less but may not completely or essentially prohibit it."},
-                  {"claim": "rule-summary", "source": "ocm-home-grow-faq", "value": "Revised Personal Home Cultivation Regulations adopted June 11, 2024; adult-use home cultivation began June 26, 2024; no person may sell, barter or exchange cannabis without a license."},
-                  {"claim": "rule-summary", "source": "ocm-adult-use-info", "value": "Flammable materials are prohibited for home processing; plants must be secured and odor controlled."}]},
-    {"id": "rule-ny-employment", "topic": "employment", "effective_on": "2021-03-31", "next_step_url": "https://www.nysenate.gov/legislation/laws/LAB/201-D",
-     "summary": "Employers generally may not act against workers for lawful off-duty cannabis use away from the workplace and without employer property. Employers may still act when required by state or federal law, when a worker shows specific articulable signs of impairment on the job, or when allowing it would violate federal law or risk a federal contract or funding.",
-     "evidence": [{"claim": "rule-summary", "source": "lab-201-d", "value": "Labor Law 201-d(2)(b)-(c) protects legal use of consumable products and recreational activities, including cannabis in accordance with state law, outside work hours and off premises; 201-d(4-a) permits action required by law, for articulable on-the-job impairment, or to avoid violating federal law or losing a federal contract or funding."}]},
-    {"id": "rule-ny-driving", "topic": "driving", "effective_on": "2014-09-22", "next_step_url": "https://www.nysenate.gov/legislation/laws/VAT/1192",
-     "summary": "Driving while impaired by a drug, or by drugs combined with alcohol, is a crime and is treated like alcohol-impaired driving. Cannabis in a vehicle must be in a closed container, and smoking cannabis in a vehicle is illegal for drivers and passengers.",
-     "evidence": [{"claim": "rule-summary", "source": "vat-1192", "value": "VTL 1192(4) and (4-a) prohibit operating a motor vehicle while ability is impaired by a drug or by the combined influence of drugs or alcohol and drugs. Open Legislation shows the current revision from 2014-09-22; that date is used as the rule's effective date."},
-                  {"claim": "rule-summary", "source": "ocm-adult-use-info", "value": "Cannabis in a vehicle should be in a closed container; open containers and smoking in a vehicle, moving or parked, are illegal; driving under the influence is treated like alcohol-related DUI."}]},
-    {"id": "rule-ny-record-expungement", "topic": "record-expungement", "effective_on": "2021-03-31", "next_step_url": "https://www.nycourts.gov/help/criminal/cannabis-marihuana-and-expungement-under-new-york-state-law",
-     "summary": "Convictions under the listed marijuana offenses (possession up to 16 ounces or sale up to 25 grams) are expunged automatically, with no motion or fee and no notice sent. Expunged cases do not appear on background checks and need not be disclosed. Other marijuana convictions require a CPL 440.46-a motion.",
-     "evidence": [{"claim": "rule-summary", "source": "courts-expungement", "value": "Effective March 31, 2021; automatic expungement of PL 221.05, 221.10, 221.15, 221.20, 221.35, 221.40, 222.10, 222.15, 222.25 and 222.45 convictions; no notice from the court; expunged charges do not show on background checks and need not be disclosed; CPL 440.46-a motion for others."}]},
-    {"id": "rule-ny-clean-slate", "topic": "record-sealing", "effective_on": "2024-11-16", "next_step_url": "https://www.nycourts.gov/cleanslate",
-     "summary": "The Clean Slate Act provides automatic sealing of eligible convictions for certain civil background checks: misdemeanors after three years and most felonies after eight years without new convictions. Courts have until November 16, 2027 to finish setting it up. Sex crimes and non-drug Class A felonies are not eligible.",
-     "evidence": [{"claim": "rule-summary", "source": "courts-clean-slate", "value": "Took effect November 16, 2024; implementation due by November 16, 2027; sex crimes and non-drug Class A felonies are not eligible."},
-                  {"claim": "rule-summary", "source": "lawhelpny-clean-slate", "value": "Misdemeanors sealed after three years and most felonies after eight years without new convictions; parole or probation must be finished.", "limitations": "Secondary plain-language summary; the statute is CPL 160.57."}]},
-    {"id": "rule-ny-medical-use", "topic": "medical-use", "effective_on": "2021-03-31", "next_step_url": "https://cannabis.ny.gov/patients",
-     "summary": "A New York certifying provider may certify a patient for any condition the provider judges suitable. Patients or caregivers may buy up to a 60-day supply or 3 ounces of cannabis or 24 grams of concentrate, whichever is greater, and certifications may run up to two years. S3294A, signed in 2025, also lets registered patients and caregivers 18 and older grow at home and lets patients certified in other states buy here.",
-     "evidence": [{"claim": "rule-summary", "source": "ocm-patients", "value": "Certification for any condition the provider deems suitable; purchases up to a 60-day supply or 3 oz/24 g, whichever is greater; certification may be issued for less than two years; patients and caregivers 18+ may grow at home."},
-                  {"claim": "rule-summary", "source": "s3294a", "value": "S3294A (2025-2026, Sen. Cooney) is shown as signed by the governor and amends Cannabis Law sections 3, 30, 31, 32, 34, 37, 41 and 42.", "limitations": "Out-of-state patient purchases are described in OCM's November 25, 2025 release; implementation status of each provision was not confirmed. The MRTA date is used as the rule's effective date."}]}
+    {
+      "id": "rule-ny-adult-use-possession",
+      "topic": "adult-use-possession",
+      "effective_on": "2021-03-31",
+      "next_step_url": "https://www.nysenate.gov/legislation/laws/PEN/222.05",
+      "summary": "Adults 21 and older may possess, buy and transport up to 3 ounces of cannabis and 24 grams of concentrated cannabis, and may give the same amounts to another adult 21 or older without compensation. At home, up to 5 pounds may be kept if secured from anyone under 21. 'Gifting' tied to a sale is not lawful sharing.",
+      "evidence": [
+        {
+          "claim": "rule-summary",
+          "source": "pen-222-05",
+          "value": "PL 222.05(1)(a)-(b): possession, purchase and transport of up to 3 oz cannabis and 24 g concentrated cannabis, and transfer without compensation of the same amounts, are lawful for persons 21+."
+        },
+        {
+          "claim": "rule-summary",
+          "source": "pen-222-15",
+          "value": "PL 222.15(5): up to five pounds of cannabis may be possessed in a private residence, secured from persons under 21."
+        },
+        {
+          "claim": "rule-summary",
+          "source": "ocm-adult-use-info",
+          "value": "Sharing without compensation is legal; any sale of a service or commodity tied to the sharing, including so-called gifting, is illegal. Effective date per the court system: March 31, 2021."
+        }
+      ]
+    },
+    {
+      "id": "rule-ny-consumption",
+      "topic": "public-consumption",
+      "effective_on": "2021-03-31",
+      "next_step_url": "https://cannabis.ny.gov/adult-use-information",
+      "summary": "Adults may consume in a private home and most places where tobacco smoking is allowed, but not in a motor vehicle, where smoking or vaping is banned, on school grounds or school buses, or on federal property. Violations of the state use restrictions carry a civil penalty of up to $25 or up to 20 hours of community service.",
+      "evidence": [
+        {
+          "claim": "rule-summary",
+          "source": "pen-222-10",
+          "value": "PL 222.10: no smoking or vaping where prohibited under Public Health Law article 13-E, and no smoking, vaping or ingesting on school grounds or school buses; civil penalty up to $25 or up to 20 hours of community service."
+        },
+        {
+          "claim": "rule-summary",
+          "source": "ocm-adult-use-info",
+          "value": "Legal in a private home or most places tobacco can be consumed, except a motor vehicle; illegal where tobacco smoking is prohibited and on federal property."
+        }
+      ]
+    },
+    {
+      "id": "rule-ny-home-grow",
+      "topic": "home-grow",
+      "effective_on": "2024-06-26",
+      "next_step_url": "https://www.nysenate.gov/legislation/laws/PEN/222.15",
+      "summary": "Adults 21 and older may grow up to 3 mature and 3 immature plants, with no more than 6 mature and 6 immature plants per residence, only at their private residence and secured from anyone under 21. Selling homegrown cannabis is illegal, and flammable solvents are banned for home processing. Localities may regulate but not effectively ban home growing.",
+      "evidence": [
+        {
+          "claim": "rule-summary",
+          "source": "pen-222-15",
+          "value": "PL 222.15(1)-(3), (6): 3 mature and 3 immature plants per person, 6 and 6 per private residence, cultivation only at a private residence, no one under 21; localities may regulate with penalties of $200 or less but may not completely or essentially prohibit it."
+        },
+        {
+          "claim": "rule-summary",
+          "source": "ocm-home-grow-faq",
+          "value": "Revised Personal Home Cultivation Regulations adopted June 11, 2024; adult-use home cultivation began June 26, 2024; no person may sell, barter or exchange cannabis without a license."
+        },
+        {
+          "claim": "rule-summary",
+          "source": "ocm-adult-use-info",
+          "value": "Flammable materials are prohibited for home processing; plants must be secured and odor controlled."
+        }
+      ]
+    },
+    {
+      "id": "rule-ny-employment",
+      "topic": "employment",
+      "effective_on": "2021-03-31",
+      "next_step_url": "https://www.nysenate.gov/legislation/laws/LAB/201-D",
+      "summary": "Employers generally may not act against workers for lawful off-duty cannabis use away from the workplace and without employer property. Employers may still act when required by state or federal law, when a worker shows specific articulable signs of impairment on the job, or when allowing it would violate federal law or risk a federal contract or funding.",
+      "evidence": [
+        {
+          "claim": "rule-summary",
+          "source": "lab-201-d",
+          "value": "Labor Law 201-d(2)(b)-(c) protects legal use of consumable products and recreational activities, including cannabis in accordance with state law, outside work hours and off premises; 201-d(4-a) permits action required by law, for articulable on-the-job impairment, or to avoid violating federal law or losing a federal contract or funding."
+        }
+      ]
+    },
+    {
+      "id": "rule-ny-driving",
+      "topic": "driving",
+      "effective_on": "2014-09-22",
+      "next_step_url": "https://www.nysenate.gov/legislation/laws/VAT/1192",
+      "summary": "Driving while impaired by a drug, or by drugs combined with alcohol, is a crime and is treated like alcohol-impaired driving. Cannabis in a vehicle must be in a closed container, and smoking cannabis in a vehicle is illegal for drivers and passengers.",
+      "evidence": [
+        {
+          "claim": "rule-summary",
+          "source": "vat-1192",
+          "value": "VTL 1192(4) and (4-a) prohibit operating a motor vehicle while ability is impaired by a drug or by the combined influence of drugs or alcohol and drugs. Open Legislation shows the current revision from 2014-09-22; that date is used as the rule's effective date."
+        },
+        {
+          "claim": "rule-summary",
+          "source": "ocm-adult-use-info",
+          "value": "Cannabis in a vehicle should be in a closed container; open containers and smoking in a vehicle, moving or parked, are illegal; driving under the influence is treated like alcohol-related DUI."
+        }
+      ]
+    },
+    {
+      "id": "rule-ny-record-expungement",
+      "topic": "record-expungement",
+      "effective_on": "2021-03-31",
+      "next_step_url": "https://www.nycourts.gov/help/criminal/cannabis-marihuana-and-expungement-under-new-york-state-law",
+      "summary": "Convictions under the listed marijuana offenses (possession up to 16 ounces or sale up to 25 grams) are expunged automatically, with no motion or fee and no notice sent. Expunged cases do not appear on background checks and need not be disclosed. Other marijuana convictions require a CPL 440.46-a motion.",
+      "evidence": [
+        {
+          "claim": "rule-summary",
+          "source": "courts-expungement",
+          "value": "Effective March 31, 2021; automatic expungement of PL 221.05, 221.10, 221.15, 221.20, 221.35, 221.40, 222.10, 222.15, 222.25 and 222.45 convictions; no notice from the court; expunged charges do not show on background checks and need not be disclosed; CPL 440.46-a motion for others."
+        }
+      ]
+    },
+    {
+      "id": "rule-ny-clean-slate",
+      "topic": "record-sealing",
+      "effective_on": "2024-11-16",
+      "next_step_url": "https://www.nycourts.gov/cleanslate",
+      "summary": "The Clean Slate Act provides automatic sealing of eligible convictions for certain civil background checks: misdemeanors after three years and most felonies after eight years without new convictions. Courts have until November 16, 2027 to finish setting it up. Sex crimes and non-drug Class A felonies are not eligible.",
+      "evidence": [
+        {
+          "claim": "rule-summary",
+          "source": "courts-clean-slate",
+          "value": "Took effect November 16, 2024; implementation due by November 16, 2027; sex crimes and non-drug Class A felonies are not eligible."
+        },
+        {
+          "claim": "rule-summary",
+          "source": "lawhelpny-clean-slate",
+          "value": "Misdemeanors sealed after three years and most felonies after eight years without new convictions; parole or probation must be finished.",
+          "limitations": "Secondary plain-language summary; the statute is CPL 160.57."
+        }
+      ]
+    },
+    {
+      "id": "rule-ny-medical-use",
+      "topic": "medical-use",
+      "effective_on": "2021-03-31",
+      "next_step_url": "https://cannabis.ny.gov/patients",
+      "summary": "A New York certifying provider may certify a patient for any condition the provider judges suitable. Patients or caregivers may buy up to a 60-day supply or 3 ounces of cannabis or 24 grams of concentrate, whichever is greater, and certifications may run up to two years. S3294A, signed in 2025, also lets registered patients and caregivers 18 and older grow at home and lets patients certified in other states buy here.",
+      "evidence": [
+        {
+          "claim": "rule-summary",
+          "source": "ocm-patients",
+          "value": "Certification for any condition the provider deems suitable; purchases up to a 60-day supply or 3 oz/24 g, whichever is greater; certification may be issued for less than two years; patients and caregivers 18+ may grow at home."
+        },
+        {
+          "claim": "rule-summary",
+          "source": "s3294a",
+          "value": "S3294A (2025-2026, Sen. Cooney) is shown as signed by the governor and amends Cannabis Law sections 3, 30, 31, 32, 34, 37, 41 and 42.",
+          "limitations": "Out-of-state patient purchases are described in OCM's November 25, 2025 release; implementation status of each provision was not confirmed. The MRTA date is used as the rule's effective date."
+        }
+      ]
+    }
   ],
   "events": [
-    {"id": "event-ny-ocm-cannabinoids-symposium-2026", "name": "3rd Annual Cannabinoids in Clinical Practice & Research Symposium (OCM with Montefiore Einstein)", "starts_on": "2026-11-19", "ends_on": "2026-11-20", "organization_ids": ["org-ny-office-cannabis-management"], "next_step_url": "https://cannabis.ny.gov/2026-symposium",
-     "evidence": [{"claim": "event-listing", "source": "ocm-symposium", "value": "November 19-20, 2026 at the Westchester Marriott, 670 White Plains Rd, Tarrytown, NY 10591; includes a free in-person Medical Cannabis Program practitioner course on November 19."}]}
+    {
+      "id": "event-ny-ocm-cannabinoids-symposium-2026",
+      "name": "3rd Annual Cannabinoids in Clinical Practice & Research Symposium (OCM with Montefiore Einstein)",
+      "starts_on": "2026-11-19",
+      "ends_on": "2026-11-20",
+      "organization_ids": [
+        "org-ny-office-cannabis-management"
+      ],
+      "next_step_url": "https://cannabis.ny.gov/2026-symposium",
+      "evidence": [
+        {
+          "claim": "event-listing",
+          "source": "ocm-symposium",
+          "value": "November 19-20, 2026 at the Westchester Marriott, 670 White Plains Rd, Tarrytown, NY 10591; includes a free in-person Medical Cannabis Program practitioner course on November 19."
+        }
+      ]
+    }
   ]
 }
