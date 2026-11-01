@@ -76,15 +76,21 @@ for change in ['row-text','zip','geocode','brand','duplicate']:
  else:raise AssertionError('pa '+change)
 print('PASS Pennsylvania roster: 200 regulator-listed locations, 163 accepted geocodes, 3 reviewed corrections and change rejection')
 # New York: OCM open-data export with license numbers and county, no coordinates or phones.
-from import_ny_locations import import_snapshot as import_ny,SOURCE as NY_SOURCE,selected
+from import_ny_locations import import_snapshot as import_ny,import_medical,SOURCE as NY_SOURCE,MEDICAL as NY_MEDICAL,selected
 ny_snapshot=json.loads(NY_SOURCE.read_text());ny_data=load_directory();ny_before=copy.deepcopy(ny_data)
 assert ny_snapshot['export_rows']==3040 and len(ny_snapshot['rows'])==751
 assert 'Primary Contact Name' in ny_snapshot['dropped_columns'] and not any('contact' in k for k in ny_snapshot['rows'][0])
 assert len(selected(ny_snapshot))==698
-assert import_ny(ny_data,copy.deepcopy(ny_snapshot))==698
+ny_medical=json.loads(NY_MEDICAL.read_text())
+assert import_ny(ny_data,copy.deepcopy(ny_snapshot))==698 and import_medical(ny_data,copy.deepcopy(ny_medical))==24
 assert ny_data==ny_before,'Repeated New York import must preserve the canonical tree'
-ny=[l for l in ny_data['locations'] if l['state']=='NY'];assert len(ny)==698
-assert all(l['license']['regulator']=='New York State Office of Cannabis Management' and l['license']['status']=='unknown' and l['license']['kind']=='adult-use' for l in ny)
+ny_all=[l for l in ny_data['locations'] if l['state']=='NY'];assert len(ny_all)==722
+ny=[l for l in ny_all if l['license']['kind']=='adult-use'];assert len(ny)==698
+ny_med=[l for l in ny_all if l['license']['kind']=='medical'];assert len(ny_med)==24 and len(ny_medical['rows'])==30
+assert all(l['license']['regulator']=='New York State Office of Cannabis Management' and l['license']['status']=='unknown' for l in ny_all)
+assert all(l['snapshot_phone'] and l['license']['number'].startswith('MM') for l in ny_med)
+assert not any(l['license']['number'] in ('MM0905D','MM0604D','MM0802D') for l in ny_med),'Temporarily closed facilities are not published'
+assert next(l for l in ny_med if l['license']['number']=='MM0109D')['organization_id']=='org-aefe1b952bc0'
 assert not any('latitude' in l or 'snapshot_phone' in l for l in ny) and all(l.get('county') for l in ny)
 ny_by_license={l['license']['number']:l for l in ny}
 assert ny_by_license['OCM-CAURD-22-000001']['address']=='750 Broadway' and ny_by_license['OCM-CAURD-22-000001']['county']=='New York'
@@ -101,4 +107,13 @@ for change in ['state','county','zip','duplicate','type']:
  try:import_ny(copy.deepcopy(ny_data),bad)
  except ValueError:pass
  else:raise AssertionError('ny '+change)
-print('PASS New York OCM export: 698 active opened stores of 3,040 rows, county-only geography, no personal contact names, stable re-import and change rejection')
+for change in ['registration','duplicate-retail','county']:
+ bad=copy.deepcopy(ny_medical);row=bad['rows'][0]
+ if change=='registration':row['registration_number']='MM09X6D'
+ elif change=='county':row['county']='Brooklyn'
+ else:
+  hw=next(l for l in ny if l['license']['number']=='OCM-CAURD-22-000001');row.update(address=hw['address'],zip=hw['postal_code'],county='New York',city='New York')
+ try:import_medical(copy.deepcopy(ny_data),bad)
+ except ValueError:pass
+ else:raise AssertionError('ny medical '+change)
+print('PASS New York OCM export: 698 active opened stores of 3,040 rows plus 24 open medical facilities of 30, county-only geography, no personal contact names, stable re-import and change rejection')

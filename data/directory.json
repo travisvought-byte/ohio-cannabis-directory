@@ -29079,6 +29079,133 @@
       "scope": "reference-only",
       "legacy_ids": [],
       "contacts": []
+    },
+    {
+      "id": "org-bb116efcc7ce",
+      "name": "Citiva Medical LLC",
+      "kind": "operator",
+      "scope": "reference-only",
+      "legacy_ids": [],
+      "contacts": []
+    },
+    {
+      "id": "org-9772b903fa72",
+      "name": "Curaleaf NY, LLC",
+      "kind": "operator",
+      "scope": "reference-only",
+      "legacy_ids": [],
+      "contacts": []
+    },
+    {
+      "id": "org-f384ebec940c",
+      "name": "Etain, LLC",
+      "kind": "operator",
+      "scope": "reference-only",
+      "legacy_ids": [],
+      "contacts": []
+    },
+    {
+      "id": "org-bafffb381baf",
+      "name": "Vireo Health of New York LLC",
+      "kind": "operator",
+      "scope": "reference-only",
+      "legacy_ids": [],
+      "contacts": []
+    },
+    {
+      "id": "org-ny-office-cannabis-management",
+      "name": "New York State Office of Cannabis Management",
+      "kind": "government",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "888-626-5151"
+        },
+        {
+          "kind": "email",
+          "value": "medical@ocm.ny.gov"
+        }
+      ],
+      "website": "https://cannabis.ny.gov/",
+      "scope": "public"
+    },
+    {
+      "id": "org-ny-unified-court-system",
+      "name": "New York State Unified Court System",
+      "kind": "government",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://www.nycourts.gov/",
+      "scope": "public"
+    },
+    {
+      "id": "org-legal-action-center",
+      "name": "Legal Action Center",
+      "kind": "nonprofit",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "212-243-1313"
+        },
+        {
+          "kind": "email",
+          "value": "lacinfo@lac.org"
+        }
+      ],
+      "website": "https://www.lac.org/",
+      "scope": "public"
+    },
+    {
+      "id": "org-empire-state-norml",
+      "name": "Empire State NORML",
+      "kind": "community",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "559-426-6765"
+        },
+        {
+          "kind": "email",
+          "value": "Info@empirestatenorml.com"
+        }
+      ],
+      "website": "https://www.esnorml.org/",
+      "scope": "public"
+    },
+    {
+      "id": "org-nyc-norml",
+      "name": "NYC NORML",
+      "kind": "community",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "Info@nycnorml.org"
+        }
+      ],
+      "website": "https://www.nycnorml.org/",
+      "scope": "public"
+    },
+    {
+      "id": "org-roc-norml",
+      "name": "Roc NORML",
+      "kind": "community",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "585-469-6731"
+        },
+        {
+          "kind": "email",
+          "value": "rocnorml@rocnorml.org"
+        }
+      ],
+      "website": "https://www.rocnorml.org/",
+      "scope": "public"
     }
   ],
   "locations": [
@@ -52184,6 +52311,486 @@
       "evidence_ids": [
         "ev-0e48cff33196"
       ]
+    },
+    {
+      "id": "loc-888007db9c94",
+      "organization_id": "org-bb116efcc7ce",
+      "name": "Be.",
+      "state": "NY",
+      "county": "Kings",
+      "city": "Brooklyn",
+      "address": "204-206 Flatbush Ave",
+      "postal_code": "11217",
+      "license": {
+        "number": "MM0906D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-c659b92b63c8"
+      ],
+      "snapshot_phone": "(347) 587-8155"
+    },
+    {
+      "id": "loc-ad95e3720863",
+      "organization_id": "org-bb116efcc7ce",
+      "name": "Be.",
+      "state": "NY",
+      "county": "Dutchess",
+      "city": "Wappingers Falls",
+      "address": "1147 Route 9",
+      "postal_code": "12590",
+      "license": {
+        "number": "MM0904D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-40e0206e0deb"
+      ],
+      "snapshot_phone": "(845) 335-4470"
+    },
+    {
+      "id": "loc-5008fac35963",
+      "organization_id": "org-bb116efcc7ce",
+      "name": "Be.",
+      "state": "NY",
+      "county": "Richmond",
+      "city": "Staten Island",
+      "address": "338 New Dorp Lane",
+      "postal_code": "10306",
+      "license": {
+        "number": "MM0903D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-eff0bc509f60"
+      ],
+      "snapshot_phone": "(917) 426-8590"
+    },
+    {
+      "id": "loc-001f417f4905",
+      "organization_id": "org-9772b903fa72",
+      "name": "Curaleaf NY, LLC",
+      "state": "NY",
+      "county": "Orange",
+      "city": "Newburgh",
+      "address": "8 North Plank Road",
+      "postal_code": "12550",
+      "license": {
+        "number": "MM1002D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-cd28e269e482"
+      ],
+      "snapshot_phone": "(845) 762-0110"
+    },
+    {
+      "id": "loc-ad2ae8a3e62c",
+      "organization_id": "org-9772b903fa72",
+      "name": "Curaleaf NY, LLC",
+      "state": "NY",
+      "county": "Clinton",
+      "city": "Plattsburgh",
+      "address": "345 Cornelia Street",
+      "postal_code": "12901",
+      "license": {
+        "number": "MM1003D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-1c153ea14557"
+      ],
+      "snapshot_phone": "(518) 930-4340"
+    },
+    {
+      "id": "loc-979b63c7f7dc",
+      "organization_id": "org-9772b903fa72",
+      "name": "Curaleaf NY, LLC",
+      "state": "NY",
+      "county": "Queens",
+      "city": "Forest Hills",
+      "address": "107-18 70th Road",
+      "postal_code": "11375",
+      "license": {
+        "number": "MM1004D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-f11c640cfdd9"
+      ],
+      "snapshot_phone": "(646) 968-2872"
+    },
+    {
+      "id": "loc-62201e26020d",
+      "organization_id": "org-9772b903fa72",
+      "name": "Curaleaf NY, LLC",
+      "state": "NY",
+      "county": "Nassau",
+      "city": "Carle Place",
+      "address": "255 Glen Cove Road",
+      "postal_code": "11514",
+      "license": {
+        "number": "MM1005D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-386ee8f43509"
+      ],
+      "snapshot_phone": "(516) 534-2872"
+    },
+    {
+      "id": "loc-04e41f36814d",
+      "organization_id": "org-9772b903fa72",
+      "name": "Curaleaf NY, LLC",
+      "state": "NY",
+      "county": "Monroe",
+      "city": "Rochester",
+      "address": "532 Chili Avenue",
+      "postal_code": "14611",
+      "license": {
+        "number": "MM1006D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-7870231174b7"
+      ],
+      "snapshot_phone": "(585) 504-0275"
+    },
+    {
+      "id": "loc-87a01a7ad8a6",
+      "organization_id": "org-9772b903fa72",
+      "name": "Curaleaf NY, LLC",
+      "state": "NY",
+      "county": "Onondaga",
+      "city": "Syracuse",
+      "address": "Valley Plaza, 414 South Salina Street",
+      "postal_code": "13205",
+      "license": {
+        "number": "MM1007D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-3793cc33a379"
+      ],
+      "snapshot_phone": "(680) 244-5785"
+    },
+    {
+      "id": "loc-4e8fbca7a87d",
+      "organization_id": "org-f384ebec940c",
+      "name": "Fluent",
+      "state": "NY",
+      "county": "Westchester",
+      "city": "White Plains",
+      "address": "75 Mamaroneck Avenue",
+      "postal_code": "10601",
+      "license": {
+        "number": "MM0408D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-72e8da88af5e"
+      ],
+      "snapshot_phone": "(914) 437-7898"
+    },
+    {
+      "id": "loc-c853f81d6867",
+      "organization_id": "org-364a9eed8729",
+      "name": "Rise",
+      "state": "NY",
+      "county": "New York",
+      "city": "New York",
+      "address": "2E 30th Street",
+      "postal_code": "10016",
+      "license": {
+        "number": "MM0702D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-fbce5acb7963"
+      ],
+      "snapshot_phone": "(212) 689-8676"
+    },
+    {
+      "id": "loc-12037ea38352",
+      "organization_id": "org-364a9eed8729",
+      "name": "Rise",
+      "state": "NY",
+      "county": "Nassau",
+      "city": "Long Beach",
+      "address": "309 W Park Ave",
+      "postal_code": "11561",
+      "license": {
+        "number": "MM0703D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-63d76186396d"
+      ],
+      "snapshot_phone": "(516) 388-6206"
+    },
+    {
+      "id": "loc-2494c3c5841c",
+      "organization_id": "org-364a9eed8729",
+      "name": "Rise",
+      "state": "NY",
+      "county": "Monroe",
+      "city": "Rochester",
+      "address": "556 Jefferson Road",
+      "postal_code": "14623",
+      "license": {
+        "number": "MM0704D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-d263f85225ae"
+      ],
+      "snapshot_phone": "(585) 242-0203"
+    },
+    {
+      "id": "loc-defb21e15de6",
+      "organization_id": "org-364a9eed8729",
+      "name": "Rise",
+      "state": "NY",
+      "county": "Saratoga",
+      "city": "Halfmoon",
+      "address": "Watkins Plaza, 1675 Route 9",
+      "postal_code": "12065",
+      "license": {
+        "number": "MM0705D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-fd9b4e7cd00b"
+      ],
+      "snapshot_phone": "(518) 373-4147"
+    },
+    {
+      "id": "loc-62ce41050aac",
+      "organization_id": "org-364a9eed8729",
+      "name": "Rise",
+      "state": "NY",
+      "county": "Onondaga",
+      "city": "East Syracuse",
+      "address": "6701 Manlius Center Road",
+      "postal_code": "13057",
+      "license": {
+        "number": "MM0706D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-ef7c8e936c26"
+      ],
+      "snapshot_phone": "(315) 230-0008"
+    },
+    {
+      "id": "loc-646e0d6cb6cb",
+      "organization_id": "org-aefe1b952bc0",
+      "name": "Verilife",
+      "state": "NY",
+      "county": "Erie",
+      "city": "Cheektowaga",
+      "address": "3760 Union Road",
+      "postal_code": "14225",
+      "license": {
+        "number": "MM0109D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-25696353e02a"
+      ],
+      "snapshot_phone": "(888) 493-6066"
+    },
+    {
+      "id": "loc-f4153af0ca81",
+      "organization_id": "org-aefe1b952bc0",
+      "name": "Verilife",
+      "state": "NY",
+      "county": "Onondaga",
+      "city": "East Syracuse",
+      "address": "5841 Bridge Street",
+      "postal_code": "13057",
+      "license": {
+        "number": "MM0107D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-39bffd7fe834"
+      ],
+      "snapshot_phone": "(888) 493-6066"
+    },
+    {
+      "id": "loc-9cb93b401ec7",
+      "organization_id": "org-aefe1b952bc0",
+      "name": "Verilife",
+      "state": "NY",
+      "county": "Albany",
+      "city": "Latham",
+      "address": "2 Wade Road",
+      "postal_code": "12110",
+      "license": {
+        "number": "MM0108D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-545a17a89fe4"
+      ],
+      "snapshot_phone": "(888) 493-6066"
+    },
+    {
+      "id": "loc-b1cea9f543f7",
+      "organization_id": "org-aefe1b952bc0",
+      "name": "Verilife",
+      "state": "NY",
+      "county": "Bronx",
+      "city": "Bronx",
+      "address": "25-27 West Fordham Road",
+      "postal_code": "10468",
+      "license": {
+        "number": "MM0106D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-c44158c2030a"
+      ],
+      "snapshot_phone": "(888) 493-6066"
+    },
+    {
+      "id": "loc-c6848b41f547",
+      "organization_id": "org-667af67557f3",
+      "name": "Remedy-NY",
+      "state": "NY",
+      "county": "Oneida",
+      "city": "New Hartford",
+      "address": "4776 Commercial Drive",
+      "postal_code": "13413",
+      "license": {
+        "number": "MM0805D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-410a0b04ed50"
+      ],
+      "snapshot_phone": "(518) 219-8051"
+    },
+    {
+      "id": "loc-315ea57f34c7",
+      "organization_id": "org-667af67557f3",
+      "name": "Remedy-NY",
+      "state": "NY",
+      "county": "Suffolk",
+      "city": "Huntington Station",
+      "address": "277 Walt Whitman Road",
+      "postal_code": "11746",
+      "license": {
+        "number": "MM0803D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-38fbb2bc7236"
+      ],
+      "snapshot_phone": "(631) 546-7508"
+    },
+    {
+      "id": "loc-61c9c1bcb76d",
+      "organization_id": "org-bafffb381baf",
+      "name": "Vireo Health of New York LLC",
+      "state": "NY",
+      "county": "Queens",
+      "city": "Elmhurst",
+      "address": "89-55 Queens Blvd",
+      "postal_code": "11373",
+      "license": {
+        "number": "MM0205D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-363abfc562d5"
+      ],
+      "snapshot_phone": "(917) 818-3110"
+    },
+    {
+      "id": "loc-b4c82f4ad748",
+      "organization_id": "org-bafffb381baf",
+      "name": "Vireo Health of New York LLC",
+      "state": "NY",
+      "county": "Broome",
+      "city": "Johnson City",
+      "address": "589 Harry L Drive",
+      "postal_code": "13790",
+      "license": {
+        "number": "MM0202D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-2833f47423f8"
+      ],
+      "snapshot_phone": "(607) 224-1170"
+    },
+    {
+      "id": "loc-2f550a085ad0",
+      "organization_id": "org-bafffb381baf",
+      "name": "Vireo Health of New York LLC",
+      "state": "NY",
+      "county": "Albany",
+      "city": "Albany",
+      "address": "38 Fuller Road",
+      "postal_code": "12205",
+      "license": {
+        "number": "MM0203D",
+        "regulator": "New York State Office of Cannabis Management",
+        "kind": "medical",
+        "status": "unknown"
+      },
+      "evidence_ids": [
+        "ev-dcfb15154c29"
+      ],
+      "snapshot_phone": "(518) 249-6350"
     }
   ],
   "services": [
@@ -77041,6 +77648,486 @@
       "listed_in": [
         "PA"
       ]
+    },
+    {
+      "id": "svc-ny-ocm-verified-dispensaries",
+      "organization_id": "org-ny-office-cannabis-management",
+      "location_ids": [],
+      "pathway_ids": [
+        "dispensaries"
+      ],
+      "name": "OCM list of licensed adult-use dispensaries",
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "evidence_ids": [
+            "ev-ny26-b57697eafeb1"
+          ]
+        }
+      ],
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "Adult-use purchases are for adults 21 and older.",
+      "next_step": {
+        "label": "Open OCM's dispensary list",
+        "url": "https://cannabis.ny.gov/dispensary-location-verification"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-b50eaa95a329",
+        "ev-ny26-b57697eafeb1"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "OCM's own list of licensed adult-use dispensaries. Licensed stores display OCM's Dispensary Verification Tool near the entrance; OCM states 757 adult-use dispensaries."
+    },
+    {
+      "id": "svc-ny-medical-dispensing-facilities",
+      "organization_id": "org-ny-office-cannabis-management",
+      "location_ids": [],
+      "pathway_ids": [
+        "dispensaries",
+        "medical"
+      ],
+      "name": "OCM list of medical dispensing facilities",
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "evidence_ids": [
+            "ev-ny26-7399ac52cd78"
+          ]
+        }
+      ],
+      "audiences": [
+        "patients",
+        "caregivers"
+      ],
+      "eligibility": "For certified patients and designated caregivers. Bring the certification and a government-issued photo ID.",
+      "next_step": {
+        "label": "Open OCM's medical dispensary list",
+        "url": "https://cannabis.ny.gov/dispensing-facilities"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-a230bde66bf5",
+        "ev-ny26-7399ac52cd78"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "Medical dispensing facilities run by registered organizations, with county, home-delivery flag and phone. The 24 facilities not marked temporarily closed are also in this directory's location finder."
+    },
+    {
+      "id": "svc-ny-medical-certification",
+      "organization_id": "org-ny-office-cannabis-management",
+      "location_ids": [],
+      "pathway_ids": [
+        "medical"
+      ],
+      "name": "Get certified for the Medical Cannabis Program",
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "evidence_ids": [
+            "ev-ny26-9ad09b5aee6e"
+          ]
+        }
+      ],
+      "audiences": [
+        "patients",
+        "caregivers"
+      ],
+      "eligibility": "The certifying provider decides whether medical cannabis is appropriate.",
+      "next_step": {
+        "label": "Open OCM's patient page",
+        "url": "https://cannabis.ny.gov/patients"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-2ce9cb97b2f9",
+        "ev-ny26-f4c7cee53ced",
+        "ev-ny26-9ad09b5aee6e"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "A New York certifying provider (in person or telehealth) can certify a patient for any condition the provider judges suitable. The certification carries a registry ID that works immediately with a photo ID. There is no program fee, and patients may designate up to five caregivers."
+    },
+    {
+      "id": "svc-ny-medical-provider-finder",
+      "organization_id": "org-ny-office-cannabis-management",
+      "location_ids": [],
+      "pathway_ids": [
+        "medical"
+      ],
+      "name": "Find a certifying health care provider",
+      "coverage": [],
+      "audiences": [
+        "patients"
+      ],
+      "eligibility": "Providers decide whom they certify; appointment fees are set by the provider.",
+      "next_step": {
+        "label": "Open the provider list",
+        "url": "https://data.ny.gov/Human-Services/OCM-Medical-Cannabis-Healthcare-Providers/gegk-4ghy/data_preview"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-f087bd17bf35"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "OCM's open-data list of medical cannabis health care providers, which can be filtered for telemedicine."
+    },
+    {
+      "id": "svc-ny-medical-home-grow",
+      "organization_id": "org-ny-office-cannabis-management",
+      "location_ids": [],
+      "pathway_ids": [
+        "medical",
+        "seeds"
+      ],
+      "name": "Medical home cultivation for patients and caregivers",
+      "coverage": [],
+      "audiences": [
+        "patients",
+        "caregivers"
+      ],
+      "eligibility": "Registered certified patients and designated caregivers 18 and older.",
+      "next_step": {
+        "label": "Open OCM's patient home-grow section",
+        "url": "https://cannabis.ny.gov/patients"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-d2cc44053540"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "Certified patients and designated caregivers 18 and older who are registered with the program may grow cannabis at home for a certified patient's personal use. OCM publishes a fact sheet, guide and FAQs."
+    },
+    {
+      "id": "svc-ny-home-grow-seed-sources",
+      "organization_id": "org-ny-office-cannabis-management",
+      "location_ids": [],
+      "pathway_ids": [
+        "seeds"
+      ],
+      "name": "Where New York home growers can buy seeds and immature plants",
+      "coverage": [],
+      "audiences": [
+        "consumers",
+        "patients"
+      ],
+      "eligibility": "Adult-use home growers must be 21 or older; plant limits apply per person and per residence.",
+      "next_step": {
+        "label": "Open OCM's home cultivation FAQ",
+        "url": "https://cannabis.ny.gov/home-cultivation-faqs"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-ae81117debc2"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "OCM says adults 21 and older can buy seeds or immature plants from an adult-use retail dispensary, microbusiness or registered organization with dispensing, and should call ahead to confirm availability. Medical home growers may buy from registered organizations."
+    },
+    {
+      "id": "svc-ny-courts-marijuana-expungement",
+      "organization_id": "org-ny-unified-court-system",
+      "location_ids": [],
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Marijuana expungement: automatic list and how to check",
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "evidence_ids": [
+            "ev-ny26-e5d4f44dd445"
+          ]
+        }
+      ],
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "Only the listed offenses are automatic; other marijuana convictions need a motion in the court where the conviction occurred.",
+      "next_step": {
+        "label": "Open the court's expungement page",
+        "url": "https://www.nycourts.gov/help/criminal/cannabis-marihuana-and-expungement-under-new-york-state-law"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-c6b3e85975e6",
+        "ev-ny26-e5d4f44dd445"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "Lists the marijuana convictions expunged automatically with no motion or fee, explains how to confirm expungement with a certificate of disposition, and links the CPL 440.46-a motion form for convictions not covered."
+    },
+    {
+      "id": "svc-ny-courts-sealing-160-59",
+      "organization_id": "org-ny-unified-court-system",
+      "location_ids": [],
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Apply to seal up to two convictions after 10 years (CPL 160.59)",
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "evidence_ids": [
+            "ev-ny26-480777bffa9c"
+          ]
+        }
+      ],
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "Sex offenses, violent felonies and serious felonies are not eligible; the court decides each application. Expunged marijuana convictions do not count toward the limit.",
+      "next_step": {
+        "label": "Open the court's sealing instructions",
+        "url": "https://www.nycourts.gov/help/criminal/sealed-records-after-10-years-cpl-16059"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-f3f32950f462",
+        "ev-ny26-480777bffa9c"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "Step-by-step court instructions for asking a court to seal up to two convictions (no more than one felony) after 10 crime-free years, including the certificate of disposition, notarized application, service on the District Attorney and seal verification with DCJS."
+    },
+    {
+      "id": "svc-ny-courts-clean-slate",
+      "organization_id": "org-ny-unified-court-system",
+      "location_ids": [],
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Clean Slate Act status and review request",
+      "coverage": [],
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "Sex crimes and non-drug Class A felonies are not eligible. No individual record should be assumed sealed yet.",
+      "next_step": {
+        "label": "Open the court's Clean Slate page",
+        "url": "https://www.nycourts.gov/cleanslate"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-a5f4b68a0c66"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "The court system's Clean Slate page: automatic sealing took effect November 16, 2024, with implementation due by November 16, 2027, when a form to request a manual review will be posted."
+    },
+    {
+      "id": "svc-ny-lac-record-help",
+      "organization_id": "org-legal-action-center",
+      "location_ids": [],
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Legal Action Center — criminal record help for New York residents",
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "evidence_ids": [
+            "ev-ny26-4d2f33304cba"
+          ]
+        }
+      ],
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "New York State residents. Case acceptance and capacity are decided by Legal Action Center.",
+      "next_step": {
+        "label": "Call (212) 243-1313 or open LAC's legal help page",
+        "url": "https://www.lac.org/legal-help"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "New York State residents with arrest and conviction records",
+          "coverage_note": "New York State (provider-stated)",
+          "contact_note": "Phone (212) 243-1313; lacinfo@lac.org.",
+          "source_url": "https://www.lac.org/",
+          "reviewed_on": "2026-11-01"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-8cd3c7a0d3a9",
+        "ev-ny26-6cf8f46db821",
+        "ev-ny26-4d2f33304cba",
+        "ev-ny26-aa8a39531f48"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "Legal Action Center's legal staff help New York State residents by phone. LawHelpNY refers people to LAC to get a free copy of their RAP sheet and help with their record."
+    },
+    {
+      "id": "svc-ny-ocm-licensing",
+      "organization_id": "org-ny-office-cannabis-management",
+      "location_ids": [],
+      "pathway_ids": [
+        "business"
+      ],
+      "name": "OCM licensing: applications, renewals and permits",
+      "coverage": [],
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Eligibility, fees and windows vary by license type; confirm on OCM's pages.",
+      "next_step": {
+        "label": "Open OCM licensing",
+        "url": "https://cannabis.ny.gov/licensing"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-96bd3e626a8d"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "OCM's licensing hub: adult-use renewals, the new nursery license (applications open November 5), Cannabis Showcase Event permits and the market dashboard. OCM aims to award half of all licenses to social and economic equity applicants."
+    },
+    {
+      "id": "svc-ny-empire-state-norml",
+      "organization_id": "org-empire-state-norml",
+      "location_ids": [],
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "Empire State NORML",
+      "coverage": [],
+      "audiences": [
+        "consumers",
+        "patients"
+      ],
+      "eligibility": "Contact the chapter about meetings, membership or advocacy.",
+      "next_step": {
+        "label": "Open Empire State NORML",
+        "url": "https://www.esnorml.org/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-a8828fdaf0fd"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "Statewide New York chapter of NORML, listed by the national organization."
+    },
+    {
+      "id": "svc-ny-nyc-norml",
+      "organization_id": "org-nyc-norml",
+      "location_ids": [],
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "NYC NORML",
+      "coverage": [],
+      "audiences": [
+        "consumers",
+        "patients"
+      ],
+      "eligibility": "Contact the chapter about meetings, membership or advocacy.",
+      "next_step": {
+        "label": "Open NYC NORML",
+        "url": "https://www.nycnorml.org/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-edeed81730ef"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "New York City chapter of NORML, listed by the national organization."
+    },
+    {
+      "id": "svc-ny-roc-norml",
+      "organization_id": "org-roc-norml",
+      "location_ids": [],
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "Roc NORML (Rochester)",
+      "coverage": [],
+      "audiences": [
+        "consumers",
+        "patients"
+      ],
+      "eligibility": "Contact the chapter about meetings, membership or advocacy.",
+      "next_step": {
+        "label": "Open Roc NORML",
+        "url": "https://www.rocnorml.org/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-34af29a5efc8"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "Rochester-area chapter of NORML, listed by the national organization."
     }
   ],
   "evidence": [
@@ -118353,6 +119440,814 @@
       "recorded_on": "2026-11-01",
       "recheck_on": "2026-12-01",
       "limitations": "Office of Cannabis Management open-data export. A license row and its operational status are a dated snapshot, not a live license verification. Hours, website and delivery flags are as reported to the regulator; confirm with the store. The export publishes no phone numbers or coordinates."
+    },
+    {
+      "id": "ev-c659b92b63c8",
+      "subject_id": "loc-888007db9c94",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM0906D | Kings | Citiva Medical LLC / Doing Business As: Be. / 204-206 Flatbush Ave / Brooklyn, NY 11217 | No | (347) 587-8155",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-40e0206e0deb",
+      "subject_id": "loc-ad95e3720863",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM0904D | Dutchess | Citiva Medical LLC / Doing Business As: Be. / 1147 Route 9 / Wappingers Falls, NY 12590 | No | (845) 335-4470",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-eff0bc509f60",
+      "subject_id": "loc-5008fac35963",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM0903D | Richmond | Citiva Medical LLC / Doing Business As: Be. / 338 New Dorp Lane / Staten Island, NY 10306 | No | (917) 426-8590",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-cd28e269e482",
+      "subject_id": "loc-001f417f4905",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM1002D | Orange | Curaleaf NY, LLC / 8 North Plank Road / Newburgh, NY 12550 | Yes | (845) 762-0110",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-1c153ea14557",
+      "subject_id": "loc-ad2ae8a3e62c",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM1003D | Clinton | Curaleaf NY, LLC / 345 Cornelia Street / Plattsburgh, NY 12901 | Yes | (518) 930-4340",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-f11c640cfdd9",
+      "subject_id": "loc-979b63c7f7dc",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM1004D | Queens | Curaleaf NY, LLC / 107-18 70th Road / Forest Hills, NY 11375 | Yes | (646) 968-2872",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-386ee8f43509",
+      "subject_id": "loc-62201e26020d",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM1005D | Nassau | Curaleaf NY, LLC / 255 Glen Cove Road / Carle Place, NY 11514 | Yes | (516) 534-2872",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-7870231174b7",
+      "subject_id": "loc-04e41f36814d",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM1006D | Monroe | Curaleaf NY, LLC / 532 Chili Avenue / Rochester, NY 14611 | Yes | (585) 504-0275",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-3793cc33a379",
+      "subject_id": "loc-87a01a7ad8a6",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM1007D | Onondaga | Curaleaf NY, LLC / Valley Plaza / 414 South Salina Street / Syracuse, NY 13205 | No | (680) 244-5785",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-72e8da88af5e",
+      "subject_id": "loc-4e8fbca7a87d",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM0408D | Westchester | Etain, LLC / Doing Business As: Fluent / 75 Mamaroneck Avenue / White Plains, NY 10601 | No | (914) 437-7898",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-fbce5acb7963",
+      "subject_id": "loc-c853f81d6867",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM0702D | New York | Fiorello Pharmaceuticals, Inc. / Doing Business As: Rise / 2E 30th Street / New York, NY 10016 | No | (212) 689-8676",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-63d76186396d",
+      "subject_id": "loc-12037ea38352",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM0703D | Nassau | Fiorello Pharmaceuticals, Inc. / Doing Business As: Rise / 309 W Park Ave,  / Long Beach NY, 11561 | Yes | (516) 388-6206",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-d263f85225ae",
+      "subject_id": "loc-2494c3c5841c",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM0704D | Monroe | Fiorello Pharmaceuticals, Inc. / Doing Business As: Rise / 556 Jefferson Road / Rochester, NY 14623 | Yes | (585) 242-0203",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-fd9b4e7cd00b",
+      "subject_id": "loc-defb21e15de6",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM0705D | Saratoga | Fiorello Pharmaceuticals, Inc. / Doing Business As: Rise / Watkins Plaza, 1675 Route 9 / Halfmoon, NY 12065 | Yes | (518) 373-4147",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-ef7c8e936c26",
+      "subject_id": "loc-62ce41050aac",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM0706D | Onondaga | Fiorello Pharmaceuticals, Inc. / Doing Business As: Rise / 6701 Manlius Center Road / East Syracuse, NY 13057 | Yes | (315) 230-0008",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-25696353e02a",
+      "subject_id": "loc-646e0d6cb6cb",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM0109D | Erie | PharmaCann of New York, LLC / Doing Business As: Verilife / 3760 Union Road / Cheektowaga, NY 14225 | No | (888) 493-6066",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-39bffd7fe834",
+      "subject_id": "loc-f4153af0ca81",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM0107D | Onondaga | PharmaCann of New York, LLC / Doing Business As: Verilife / 5841 Bridge Street / East Syracuse, NY 13057 | No | (888) 493-6066",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-545a17a89fe4",
+      "subject_id": "loc-9cb93b401ec7",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM0108D | Albany | PharmaCann of New York, LLC / Doing Business As: Verilife / 2 Wade Road / Latham, NY 12110 | No | (888) 493-6066",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-c44158c2030a",
+      "subject_id": "loc-b1cea9f543f7",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM0106D | Bronx | PharmaCann of New York, LLC / Doing Business As: Verilife / 25-27 West Fordham Road / Bronx, NY 10468 | No | (888) 493-6066",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-410a0b04ed50",
+      "subject_id": "loc-c6848b41f547",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM0805D | Oneida | Valley Agriceuticals, LLC / Doing Business As: Remedy-NY or Sunnyside / 4776 Commercial Drive / New Hartford, NY 13413 | No | (518) 219-8051",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-38fbb2bc7236",
+      "subject_id": "loc-315ea57f34c7",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM0803D | Suffolk | Valley Agriceuticals, LLC / Doing Business As: Remedy-NY or Sunnyside / 277 Walt Whitman Road / Huntington Station, NY 11746 | No | (631) 546-7508",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-363abfc562d5",
+      "subject_id": "loc-61c9c1bcb76d",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM0205D | Queens | Vireo Health of New York LLC / 89-55 Queens Blvd / Elmhurst, NY 11373 | Yes | (917) 818-3110",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-2833f47423f8",
+      "subject_id": "loc-b4c82f4ad748",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM0202D | Broome | Vireo Health of New York LLC / 589 Harry L Drive / Johnson City, NY 13790 | No | (607) 224-1170",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-dcfb15154c29",
+      "subject_id": "loc-2f550a085ad0",
+      "claim": "government-location-snapshot",
+      "value": "OCM medical dispensing facility: MM0203D | Albany | Vireo Health of New York LLC / 38 Fuller Road / Albany, NY 12205 | No | (518) 249-6350",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-listed",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-ny26-b50eaa95a329",
+      "subject_id": "svc-ny-ocm-verified-dispensaries",
+      "claim": "service-description",
+      "value": "Page states there are currently 757 adult-use cannabis dispensaries across New York State and links the Dispensary Verification Tool and the Buy Legal map.",
+      "source_url": "https://cannabis.ny.gov/dispensary-location-verification",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "OCM list of licensed adult-use dispensaries; no as-of date."
+    },
+    {
+      "id": "ev-ny26-b57697eafeb1",
+      "subject_id": "svc-ny-ocm-verified-dispensaries",
+      "claim": "service-coverage",
+      "value": "OCM lists licensed adult-use dispensaries across New York State.",
+      "source_url": "https://cannabis.ny.gov/dispensary-location-verification",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "OCM list of licensed adult-use dispensaries; no as-of date."
+    },
+    {
+      "id": "ev-ny26-a230bde66bf5",
+      "subject_id": "svc-ny-medical-dispensing-facilities",
+      "claim": "service-description",
+      "value": "Table lists 30 dispensing facilities operated by 8 registered organizations, six marked temporarily closed; registered organizations handle delivery and its fees.",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "OCM table of 30 medical dispensing facilities (6 marked temporarily closed); no page date."
+    },
+    {
+      "id": "ev-ny26-7399ac52cd78",
+      "subject_id": "svc-ny-medical-dispensing-facilities",
+      "claim": "service-coverage",
+      "value": "Medical dispensing facilities operated by registered organizations across New York State.",
+      "source_url": "https://cannabis.ny.gov/dispensing-facilities",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "OCM table of 30 medical dispensing facilities (6 marked temporarily closed); no page date."
+    },
+    {
+      "id": "ev-ny26-2ce9cb97b2f9",
+      "subject_id": "svc-ny-medical-certification",
+      "claim": "service-description",
+      "value": "Patients are certified after consulting a NYS certifying provider in person or by telehealth for any condition the provider deems suitable; the certification's registry ID can be used immediately with a government photo ID; no fee to become a patient; up to five caregivers.",
+      "source_url": "https://cannabis.ny.gov/patients",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Program instructions. Individual eligibility is decided by the certifying provider. Product availability and prices are set by registered organizations."
+    },
+    {
+      "id": "ev-ny26-f4c7cee53ced",
+      "subject_id": "svc-ny-medical-certification",
+      "claim": "service-description",
+      "value": "69,031 registered patients and 4,820 certifying practitioners as of October 1, 2026.",
+      "source_url": "https://cannabis.ny.gov/medical",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Program overview with statistics as of October 1, 2026."
+    },
+    {
+      "id": "ev-ny26-9ad09b5aee6e",
+      "subject_id": "svc-ny-medical-certification",
+      "claim": "service-coverage",
+      "value": "New York State Medical Cannabis Program.",
+      "source_url": "https://cannabis.ny.gov/patients",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Program instructions. Individual eligibility is decided by the certifying provider. Product availability and prices are set by registered organizations."
+    },
+    {
+      "id": "ev-ny26-f087bd17bf35",
+      "subject_id": "svc-ny-medical-provider-finder",
+      "claim": "service-description",
+      "value": "OCM's medical program page links this dataset as its practitioner finder.",
+      "source_url": "https://cannabis.ny.gov/medical",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Provider rows were not reviewed individually. Program overview with statistics as of October 1, 2026."
+    },
+    {
+      "id": "ev-ny26-d2cc44053540",
+      "subject_id": "svc-ny-medical-home-grow",
+      "claim": "service-description",
+      "value": "Certified patients and designated caregivers 18+ who are registered with the Medical Cannabis Program may cultivate cannabis at home for a certified patient's personal use; plants may not be transported outside New York State.",
+      "source_url": "https://cannabis.ny.gov/patients",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Program instructions. Individual eligibility is decided by the certifying provider. Product availability and prices are set by registered organizations."
+    },
+    {
+      "id": "ev-ny26-ae81117debc2",
+      "subject_id": "svc-ny-home-grow-seed-sources",
+      "claim": "service-description",
+      "value": "FAQ 37: adult-use consumers 21+ can purchase seeds or immature plants from an adult-use cannabis retail dispensary, microbusiness or registered organization with dispensing (ROD); contact the licensee before visiting. Certified patients and caregivers may buy from a ROD or ROND.",
+      "source_url": "https://cannabis.ny.gov/home-cultivation-faqs",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "OCM adult-use home cultivation FAQ (PDF, undated; refers to rules adopted June 11, 2024 and home cultivation beginning June 26, 2024). Read through a text conversion. It does not address online, out-of-state or gifted seeds."
+    },
+    {
+      "id": "ev-ny26-c6b3e85975e6",
+      "subject_id": "svc-ny-courts-marijuana-expungement",
+      "claim": "service-description",
+      "value": "Automatic expungement without motions or fees for PL 221.05, 221.10, 221.15, 221.20, 221.35, 221.40, 222.10, 222.15, 222.25 and 222.45; the court sends no notice; a certificate of disposition shows whether a case was expunged; CPL 440.46-a motion for other marijuana convictions.",
+      "source_url": "https://www.nycourts.gov/help/criminal/cannabis-marihuana-and-expungement-under-new-york-state-law",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Court-system help page. Immigration consequences and non-listed offenses need individual legal advice. Not legal advice."
+    },
+    {
+      "id": "ev-ny26-e5d4f44dd445",
+      "subject_id": "svc-ny-courts-marijuana-expungement",
+      "claim": "service-coverage",
+      "value": "New York State court convictions.",
+      "source_url": "https://www.nycourts.gov/help/criminal/cannabis-marihuana-and-expungement-under-new-york-state-law",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Court-system help page. Immigration consequences and non-listed offenses need individual legal advice. Not legal advice."
+    },
+    {
+      "id": "ev-ny26-f3f32950f462",
+      "subject_id": "svc-ny-courts-sealing-160-59",
+      "claim": "service-description",
+      "value": "Eligible after 10 crime-free years with no more than two misdemeanors or one felony and one misdemeanor; certificate of disposition fee $5 outside NYC and $10 in NYC; no fee to file; expunged marijuana convictions do not count.",
+      "source_url": "https://www.nycourts.gov/help/criminal/sealed-records-after-10-years-cpl-16059",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Court-system instructions. The court decides each application; listed fees are as stated on the page."
+    },
+    {
+      "id": "ev-ny26-480777bffa9c",
+      "subject_id": "svc-ny-courts-sealing-160-59",
+      "claim": "service-coverage",
+      "value": "New York State court convictions.",
+      "source_url": "https://www.nycourts.gov/help/criminal/sealed-records-after-10-years-cpl-16059",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Court-system instructions. The court decides each application; listed fees are as stated on the page."
+    },
+    {
+      "id": "ev-ny26-a5f4b68a0c66",
+      "subject_id": "svc-ny-courts-clean-slate",
+      "claim": "service-description",
+      "value": "Clean Slate took effect November 16, 2024; courts have until November 16, 2027 to set up automatic sealing; a manual-review request form will be available no later than that date.",
+      "source_url": "https://www.nycourts.gov/cleanslate",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Court-system Clean Slate page. Implementation is due by November 16, 2027; no individual record should be assumed sealed yet."
+    },
+    {
+      "id": "ev-ny26-8cd3c7a0d3a9",
+      "subject_id": "svc-ny-lac-record-help",
+      "claim": "service-description",
+      "value": "LAC protects the rights of people with arrest and conviction records; New York State residents needing help from its legal staff are told to call (212) 243-1313.",
+      "source_url": "https://www.lac.org/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Provider home page. Eligibility, capacity and case acceptance are decided by Legal Action Center."
+    },
+    {
+      "id": "ev-ny26-6cf8f46db821",
+      "subject_id": "svc-ny-lac-record-help",
+      "claim": "service-description",
+      "value": "To check whether a conviction is sealed, get a copy of your RAP sheet; Legal Action Center can help New York residents get one for free at (212) 243-1313.",
+      "source_url": "https://www.lawhelpny.org/resource/new-yorks-clean-slate-act-and-sealing-convictions",
+      "source_kind": "secondary",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Statewide legal-information site; page last reviewed May 7, 2025. Used for the Legal Action Center referral and plain-language waiting periods only."
+    },
+    {
+      "id": "ev-ny26-4d2f33304cba",
+      "subject_id": "svc-ny-lac-record-help",
+      "claim": "service-coverage",
+      "value": "If you live in New York State and need help from LAC's legal staff, call (212) 243-1313.",
+      "source_url": "https://www.lac.org/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Provider home page. Eligibility, capacity and case acceptance are decided by Legal Action Center."
+    },
+    {
+      "id": "ev-ny26-aa8a39531f48",
+      "subject_id": "svc-ny-lac-record-help",
+      "claim": "provider-contact",
+      "value": "Phone (212) 243-1313; lacinfo@lac.org.",
+      "source_url": "https://www.lac.org/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Provider home page. Eligibility, capacity and case acceptance are decided by Legal Action Center."
+    },
+    {
+      "id": "ev-ny26-96bd3e626a8d",
+      "subject_id": "svc-ny-ocm-licensing",
+      "claim": "service-description",
+      "value": "Adult-use nursery license applications open November 5; adult-use renewals submitted online 60 to 120 days before expiration; Cannabis Showcase Event permits available; goal of awarding 50% of licenses to SEE applicants; questions to AULicensing@ocm.ny.gov.",
+      "source_url": "https://cannabis.ny.gov/licensing",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Agency licensing overview. Application windows, fees and eligibility change; confirm on the linked OCM pages before applying."
+    },
+    {
+      "id": "ev-ny26-a8828fdaf0fd",
+      "subject_id": "svc-ny-empire-state-norml",
+      "claim": "service-description",
+      "value": "NORML lists Empire State NORML as a New York chapter with website esnorml.org, phone (559) 426-6765 and Info@empirestatenorml.com.",
+      "source_url": "https://norml.org/about/new-york-chapters/",
+      "source_kind": "secondary",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "NORML's national chapter listing with each chapter's website and contact. Chapter activity, meetings and membership terms were not confirmed on the chapters' own sites."
+    },
+    {
+      "id": "ev-ny26-edeed81730ef",
+      "subject_id": "svc-ny-nyc-norml",
+      "claim": "service-description",
+      "value": "NORML lists NYC NORML as a New York chapter with website nycnorml.org and Info@nycnorml.org.",
+      "source_url": "https://norml.org/about/new-york-chapters/",
+      "source_kind": "secondary",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "NORML's national chapter listing with each chapter's website and contact. Chapter activity, meetings and membership terms were not confirmed on the chapters' own sites."
+    },
+    {
+      "id": "ev-ny26-34af29a5efc8",
+      "subject_id": "svc-ny-roc-norml",
+      "claim": "service-description",
+      "value": "NORML lists Roc NORML as a New York chapter with website rocnorml.org, phone (585) 469-6731 and rocnorml@rocnorml.org.",
+      "source_url": "https://norml.org/about/new-york-chapters/",
+      "source_kind": "secondary",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "NORML's national chapter listing with each chapter's website and contact. Chapter activity, meetings and membership terms were not confirmed on the chapters' own sites."
+    },
+    {
+      "id": "ev-ny26-c1a7291d0466",
+      "subject_id": "rule-ny-adult-use-possession",
+      "claim": "rule-summary",
+      "value": "PL 222.05(1)(a)-(b): possession, purchase and transport of up to 3 oz cannabis and 24 g concentrated cannabis, and transfer without compensation of the same amounts, are lawful for persons 21+.",
+      "source_url": "https://www.nysenate.gov/legislation/laws/PEN/222.05",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Statute text, current revision from 2021-04-02. Local rules, landlord and workplace policies are not covered. Not legal advice."
+    },
+    {
+      "id": "ev-ny26-3c8b436e147a",
+      "subject_id": "rule-ny-adult-use-possession",
+      "claim": "rule-summary",
+      "value": "PL 222.15(5): up to five pounds of cannabis may be possessed in a private residence, secured from persons under 21.",
+      "source_url": "https://www.nysenate.gov/legislation/laws/PEN/222.15",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Statute text, current revision from 2021-04-02. OCM home-cultivation regulations (9 NYCRR Part 115) add safety rules that are summarized only where OCM's own pages state them. Not legal advice."
+    },
+    {
+      "id": "ev-ny26-6579bdd1d33a",
+      "subject_id": "rule-ny-adult-use-possession",
+      "claim": "rule-summary",
+      "value": "Sharing without compensation is legal; any sale of a service or commodity tied to the sharing, including so-called gifting, is illegal. Effective date per the court system: March 31, 2021.",
+      "source_url": "https://cannabis.ny.gov/adult-use-information",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Agency consumer summary; it cites no statute sections."
+    },
+    {
+      "id": "ev-ny26-783c3b56c0ed",
+      "subject_id": "rule-ny-consumption",
+      "claim": "rule-summary",
+      "value": "PL 222.10: no smoking or vaping where prohibited under Public Health Law article 13-E, and no smoking, vaping or ingesting on school grounds or school buses; civil penalty up to $25 or up to 20 hours of community service.",
+      "source_url": "https://www.nysenate.gov/legislation/laws/PEN/222.10",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Statute text, current revision from 2021-04-02. Public Health Law article 13-E smoking locations are not summarized here. Not legal advice."
+    },
+    {
+      "id": "ev-ny26-ff0b1bed244f",
+      "subject_id": "rule-ny-consumption",
+      "claim": "rule-summary",
+      "value": "Legal in a private home or most places tobacco can be consumed, except a motor vehicle; illegal where tobacco smoking is prohibited and on federal property.",
+      "source_url": "https://cannabis.ny.gov/adult-use-information",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Agency consumer summary; it cites no statute sections."
+    },
+    {
+      "id": "ev-ny26-5c1ac2bd065a",
+      "subject_id": "rule-ny-home-grow",
+      "claim": "rule-summary",
+      "value": "PL 222.15(1)-(3), (6): 3 mature and 3 immature plants per person, 6 and 6 per private residence, cultivation only at a private residence, no one under 21; localities may regulate with penalties of $200 or less but may not completely or essentially prohibit it.",
+      "source_url": "https://www.nysenate.gov/legislation/laws/PEN/222.15",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Statute text, current revision from 2021-04-02. OCM home-cultivation regulations (9 NYCRR Part 115) add safety rules that are summarized only where OCM's own pages state them. Not legal advice."
+    },
+    {
+      "id": "ev-ny26-9de20a01bfb2",
+      "subject_id": "rule-ny-home-grow",
+      "claim": "rule-summary",
+      "value": "Revised Personal Home Cultivation Regulations adopted June 11, 2024; adult-use home cultivation began June 26, 2024; no person may sell, barter or exchange cannabis without a license.",
+      "source_url": "https://cannabis.ny.gov/home-cultivation-faqs",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "OCM adult-use home cultivation FAQ (PDF, undated; refers to rules adopted June 11, 2024 and home cultivation beginning June 26, 2024). Read through a text conversion. It does not address online, out-of-state or gifted seeds."
+    },
+    {
+      "id": "ev-ny26-7e15220f2da6",
+      "subject_id": "rule-ny-home-grow",
+      "claim": "rule-summary",
+      "value": "Flammable materials are prohibited for home processing; plants must be secured and odor controlled.",
+      "source_url": "https://cannabis.ny.gov/adult-use-information",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Agency consumer summary; it cites no statute sections."
+    },
+    {
+      "id": "ev-ny26-30c93d631b1d",
+      "subject_id": "rule-ny-employment",
+      "claim": "rule-summary",
+      "value": "Labor Law 201-d(2)(b)-(c) protects legal use of consumable products and recreational activities, including cannabis in accordance with state law, outside work hours and off premises; 201-d(4-a) permits action required by law, for articulable on-the-job impairment, or to avoid violating federal law or losing a federal contract or funding.",
+      "source_url": "https://www.nysenate.gov/legislation/laws/LAB/201-D",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Statute text, current revision from 2023-09-08. Federal rules, safety-sensitive jobs and collective bargaining terms can change the outcome. Not legal advice."
+    },
+    {
+      "id": "ev-ny26-e70c39b1c7c9",
+      "subject_id": "rule-ny-driving",
+      "claim": "rule-summary",
+      "value": "VTL 1192(4) and (4-a) prohibit operating a motor vehicle while ability is impaired by a drug or by the combined influence of drugs or alcohol and drugs. Open Legislation shows the current revision from 2014-09-22; that date is used as the rule's effective date.",
+      "source_url": "https://www.nysenate.gov/legislation/laws/VAT/1192",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Statute text, current revision from 2014-09-22. Penalties, testing and licensing consequences are in other sections and are not summarized. Not legal advice."
+    },
+    {
+      "id": "ev-ny26-314a49b32443",
+      "subject_id": "rule-ny-driving",
+      "claim": "rule-summary",
+      "value": "Cannabis in a vehicle should be in a closed container; open containers and smoking in a vehicle, moving or parked, are illegal; driving under the influence is treated like alcohol-related DUI.",
+      "source_url": "https://cannabis.ny.gov/adult-use-information",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Agency consumer summary; it cites no statute sections."
+    },
+    {
+      "id": "ev-ny26-2ecf4f4652e6",
+      "subject_id": "rule-ny-record-expungement",
+      "claim": "rule-summary",
+      "value": "Effective March 31, 2021; automatic expungement of PL 221.05, 221.10, 221.15, 221.20, 221.35, 221.40, 222.10, 222.15, 222.25 and 222.45 convictions; no notice from the court; expunged charges do not show on background checks and need not be disclosed; CPL 440.46-a motion for others.",
+      "source_url": "https://www.nycourts.gov/help/criminal/cannabis-marihuana-and-expungement-under-new-york-state-law",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Court-system help page. Immigration consequences and non-listed offenses need individual legal advice. Not legal advice."
+    },
+    {
+      "id": "ev-ny26-6660d71a875a",
+      "subject_id": "rule-ny-clean-slate",
+      "claim": "rule-summary",
+      "value": "Took effect November 16, 2024; implementation due by November 16, 2027; sex crimes and non-drug Class A felonies are not eligible.",
+      "source_url": "https://www.nycourts.gov/cleanslate",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Court-system Clean Slate page. Implementation is due by November 16, 2027; no individual record should be assumed sealed yet."
+    },
+    {
+      "id": "ev-ny26-fb197e35c7b3",
+      "subject_id": "rule-ny-clean-slate",
+      "claim": "rule-summary",
+      "value": "Misdemeanors sealed after three years and most felonies after eight years without new convictions; parole or probation must be finished.",
+      "source_url": "https://www.lawhelpny.org/resource/new-yorks-clean-slate-act-and-sealing-convictions",
+      "source_kind": "secondary",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Secondary plain-language summary; the statute is CPL 160.57. Statewide legal-information site; page last reviewed May 7, 2025. Used for the Legal Action Center referral and plain-language waiting periods only."
+    },
+    {
+      "id": "ev-ny26-4909878f7253",
+      "subject_id": "rule-ny-medical-use",
+      "claim": "rule-summary",
+      "value": "Certification for any condition the provider deems suitable; purchases up to a 60-day supply or 3 oz/24 g, whichever is greater; certification may be issued for less than two years; patients and caregivers 18+ may grow at home.",
+      "source_url": "https://cannabis.ny.gov/patients",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Program instructions. Individual eligibility is decided by the certifying provider. Product availability and prices are set by registered organizations."
+    },
+    {
+      "id": "ev-ny26-e445ff64061c",
+      "subject_id": "rule-ny-medical-use",
+      "claim": "rule-summary",
+      "value": "S3294A (2025-2026, Sen. Cooney) is shown as signed by the governor and amends Cannabis Law sections 3, 30, 31, 32, 34, 37, 41 and 42.",
+      "source_url": "https://www.nysenate.gov/legislation/bills/2025/S3294/amendment/A",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Out-of-state patient purchases are described in OCM's November 25, 2025 release; implementation status of each provision was not confirmed. The MRTA date is used as the rule's effective date. Bill page shows S3294A (Sen. Cooney) as signed by the governor and lists the Cannabis Law sections it amends. Chapter number and the effective date of each provision were not confirmed."
+    },
+    {
+      "id": "ev-ny26-3837b5ab594a",
+      "subject_id": "event-ny-ocm-cannabinoids-symposium-2026",
+      "claim": "event-listing",
+      "value": "November 19-20, 2026 at the Westchester Marriott, 670 White Plains Rd, Tarrytown, NY 10591; includes a free in-person Medical Cannabis Program practitioner course on November 19.",
+      "source_url": "https://cannabis.ny.gov/2026-symposium",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Organizer event page. Agenda times are subject to change; registration terms are set by the organizer."
     }
   ],
   "rules": [
@@ -118446,6 +120341,102 @@
         "ev-pa26-64aacd8edbeb"
       ],
       "next_step_url": "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/18/00.091.022.002..HTM"
+    },
+    {
+      "id": "rule-ny-adult-use-possession",
+      "state": "NY",
+      "topic": "adult-use-possession",
+      "summary": "Adults 21 and older may possess, buy and transport up to 3 ounces of cannabis and 24 grams of concentrated cannabis, and may give the same amounts to another adult 21 or older without compensation. At home, up to 5 pounds may be kept if secured from anyone under 21. 'Gifting' tied to a sale is not lawful sharing.",
+      "effective_on": "2021-03-31",
+      "evidence_ids": [
+        "ev-ny26-c1a7291d0466",
+        "ev-ny26-3c8b436e147a",
+        "ev-ny26-6579bdd1d33a"
+      ],
+      "next_step_url": "https://www.nysenate.gov/legislation/laws/PEN/222.05"
+    },
+    {
+      "id": "rule-ny-consumption",
+      "state": "NY",
+      "topic": "public-consumption",
+      "summary": "Adults may consume in a private home and most places where tobacco smoking is allowed, but not in a motor vehicle, where smoking or vaping is banned, on school grounds or school buses, or on federal property. Violations of the state use restrictions carry a civil penalty of up to $25 or up to 20 hours of community service.",
+      "effective_on": "2021-03-31",
+      "evidence_ids": [
+        "ev-ny26-783c3b56c0ed",
+        "ev-ny26-ff0b1bed244f"
+      ],
+      "next_step_url": "https://cannabis.ny.gov/adult-use-information"
+    },
+    {
+      "id": "rule-ny-home-grow",
+      "state": "NY",
+      "topic": "home-grow",
+      "summary": "Adults 21 and older may grow up to 3 mature and 3 immature plants, with no more than 6 mature and 6 immature plants per residence, only at their private residence and secured from anyone under 21. Selling homegrown cannabis is illegal, and flammable solvents are banned for home processing. Localities may regulate but not effectively ban home growing.",
+      "effective_on": "2024-06-26",
+      "evidence_ids": [
+        "ev-ny26-5c1ac2bd065a",
+        "ev-ny26-9de20a01bfb2",
+        "ev-ny26-7e15220f2da6"
+      ],
+      "next_step_url": "https://www.nysenate.gov/legislation/laws/PEN/222.15"
+    },
+    {
+      "id": "rule-ny-employment",
+      "state": "NY",
+      "topic": "employment",
+      "summary": "Employers generally may not act against workers for lawful off-duty cannabis use away from the workplace and without employer property. Employers may still act when required by state or federal law, when a worker shows specific articulable signs of impairment on the job, or when allowing it would violate federal law or risk a federal contract or funding.",
+      "effective_on": "2021-03-31",
+      "evidence_ids": [
+        "ev-ny26-30c93d631b1d"
+      ],
+      "next_step_url": "https://www.nysenate.gov/legislation/laws/LAB/201-D"
+    },
+    {
+      "id": "rule-ny-driving",
+      "state": "NY",
+      "topic": "driving",
+      "summary": "Driving while impaired by a drug, or by drugs combined with alcohol, is a crime and is treated like alcohol-impaired driving. Cannabis in a vehicle must be in a closed container, and smoking cannabis in a vehicle is illegal for drivers and passengers.",
+      "effective_on": "2014-09-22",
+      "evidence_ids": [
+        "ev-ny26-e70c39b1c7c9",
+        "ev-ny26-314a49b32443"
+      ],
+      "next_step_url": "https://www.nysenate.gov/legislation/laws/VAT/1192"
+    },
+    {
+      "id": "rule-ny-record-expungement",
+      "state": "NY",
+      "topic": "record-expungement",
+      "summary": "Convictions under the listed marijuana offenses (possession up to 16 ounces or sale up to 25 grams) are expunged automatically, with no motion or fee and no notice sent. Expunged cases do not appear on background checks and need not be disclosed. Other marijuana convictions require a CPL 440.46-a motion.",
+      "effective_on": "2021-03-31",
+      "evidence_ids": [
+        "ev-ny26-2ecf4f4652e6"
+      ],
+      "next_step_url": "https://www.nycourts.gov/help/criminal/cannabis-marihuana-and-expungement-under-new-york-state-law"
+    },
+    {
+      "id": "rule-ny-clean-slate",
+      "state": "NY",
+      "topic": "record-sealing",
+      "summary": "The Clean Slate Act provides automatic sealing of eligible convictions for certain civil background checks: misdemeanors after three years and most felonies after eight years without new convictions. Courts have until November 16, 2027 to finish setting it up. Sex crimes and non-drug Class A felonies are not eligible.",
+      "effective_on": "2024-11-16",
+      "evidence_ids": [
+        "ev-ny26-6660d71a875a",
+        "ev-ny26-fb197e35c7b3"
+      ],
+      "next_step_url": "https://www.nycourts.gov/cleanslate"
+    },
+    {
+      "id": "rule-ny-medical-use",
+      "state": "NY",
+      "topic": "medical-use",
+      "summary": "A New York certifying provider may certify a patient for any condition the provider judges suitable. Patients or caregivers may buy up to a 60-day supply or 3 ounces of cannabis or 24 grams of concentrate, whichever is greater, and certifications may run up to two years. S3294A, signed in 2025, also lets registered patients and caregivers 18 and older grow at home and lets patients certified in other states buy here.",
+      "effective_on": "2021-03-31",
+      "evidence_ids": [
+        "ev-ny26-4909878f7253",
+        "ev-ny26-e445ff64061c"
+      ],
+      "next_step_url": "https://cannabis.ny.gov/patients"
     }
   ],
   "relationships": [
@@ -119959,6 +121950,20 @@
       "evidence_ids": [
         "ev-ohio-cannabis-expo-2027"
       ]
+    },
+    {
+      "id": "event-ny-ocm-cannabinoids-symposium-2026",
+      "name": "3rd Annual Cannabinoids in Clinical Practice & Research Symposium (OCM with Montefiore Einstein)",
+      "state": "NY",
+      "starts_on": "2026-11-19",
+      "ends_on": "2026-11-20",
+      "organization_ids": [
+        "org-ny-office-cannabis-management"
+      ],
+      "next_step_url": "https://cannabis.ny.gov/2026-symposium",
+      "evidence_ids": [
+        "ev-ny26-3837b5ab594a"
+      ]
     }
   ],
   "pathways": [
@@ -120211,52 +122216,58 @@
         {
           "pathway_id": "dispensaries",
           "coverage_status": "broad",
-          "next_step": "Search the 698 OCM-licensed stores by city, county or ZIP, then confirm details with the store. Medical patients use the OCM list of medical dispensing facilities.",
-          "limitations": "Denominator: every row of the OCM Current OCM Licenses export of November 1, 2026 with Active license and operational status, retail sales purpose and an opening date (698 of 3,040 rows). A licensing snapshot, not a live license check. No map points, so no distance search. Medical dispensing facilities and registered-organization adult-use sites are not included. Staged research: data/research/new-york-2026-11-01-sources.json.",
-          "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/locations.html?state=NY"
+          "next_step": "Search the 698 OCM-licensed adult-use stores and 24 open medical dispensing facilities by city, county or ZIP, then confirm details with the store.",
+          "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/locations.html?state=NY",
+          "limitations": "Denominator: every row of the OCM Current OCM Licenses export of November 1, 2026 with Active license and operational status, retail sales purpose and an opening date (698 of 3,040 rows), plus the 24 of 30 OCM medical dispensing facilities not marked temporarily closed. A licensing snapshot, not a live license check. No map points, so no distance search. 11 registered-organization adult-use sites with no opening date are not included."
         },
         {
           "pathway_id": "seeds",
-          "coverage_status": "not-reviewed",
-          "next_step": "Cite the adult home-cultivation rule, then research suppliers that state New York shipping or licensed retailers that sell seeds or immature plants.",
-          "limitations": "Not reviewed. OCM states adults 21+ may grow 3 mature and 3 immature plants (6 and 6 per household). No supplier or retailer seed/plant route has been reviewed. Staged sources: data/research/new-york-2026-11-01-sources.json (research-only, November 1, 2026)."
+          "coverage_status": "starter",
+          "next_step": "Read the home-grow rule, then call a licensed dispensary, microbusiness or registered organization to ask whether it sells seeds or immature plants.",
+          "public_url": "https://cannabis.ny.gov/home-cultivation-faqs",
+          "limitations": "Sources reviewed November 1, 2026. Adults 21+ may grow 3 mature and 3 immature plants (6 and 6 per residence); registered patients and caregivers 18+ may grow for a patient. OCM names licensed retailers, microbusinesses and registered organizations as seed and plant sources, but no store-level seed or plant availability has been reviewed, and no online or mail-order supplier has been reviewed for New York shipping."
         },
         {
           "pathway_id": "records",
-          "coverage_status": "not-reviewed",
-          "next_step": "Explain MRTA automatic expungement and Clean Slate sealing, then link court, DCJS and regional legal-help routes.",
-          "limitations": "Not reviewed for publication. Clean Slate took effect November 16, 2024 with implementation due by November 16, 2027; no record should be described as already sealed. No legal-help route has been reviewed. Staged sources: data/research/new-york-2026-11-01-sources.json (research-only, November 1, 2026)."
+          "coverage_status": "partial",
+          "next_step": "Check whether a marijuana conviction was expunged automatically, see where Clean Slate sealing stands, or apply for CPL 160.59 sealing; Legal Action Center helps New York residents by phone.",
+          "public_url": "https://www.nycourts.gov/help/criminal/cannabis-marihuana-and-expungement-under-new-york-state-law",
+          "limitations": "Sources reviewed November 1, 2026. Statewide court routes for automatic marijuana expungement, the CPL 440.46-a motion, CPL 160.59 sealing and Clean Slate status, plus one statewide legal-help phone route (Legal Action Center). Clean Slate implementation is due by November 16, 2027, so no record should be assumed sealed. No regional legal-aid office was confirmed to take record cases: LawNY and the Legal Aid Society of Northeastern New York publish intake routes, but the pages reviewed do not say they handle sealing or expungement. Not legal advice."
         },
         {
           "pathway_id": "rules",
-          "coverage_status": "not-reviewed",
-          "next_step": "Publish dated rule cards cited to the Cannabis Law and Penal Law Article 222.",
-          "limitations": "Not reviewed for publication. OCM consumer summaries were read but cite no statute sections. Staged sources: data/research/new-york-2026-11-01-sources.json (research-only, November 1, 2026)."
+          "coverage_status": "starter",
+          "next_step": "Read the dated summaries and the statute text each one links to.",
+          "public_url": "https://www.nysenate.gov/legislation/laws/PEN/222.05",
+          "limitations": "Sources reviewed November 1, 2026. Eight summaries checked against statute text or official pages: possession and sharing, consumption, home cultivation, employment, driving, marijuana expungement, Clean Slate sealing and medical use. Not legal advice. Local rules, landlord and co-op policies, hemp-derived products, packaging and business rules are not summarized. The S3294A medical changes are summarized from OCM and the bill page; the chapter number and each provision's effective date were not confirmed."
         },
         {
           "pathway_id": "medical",
-          "coverage_status": "not-reviewed",
-          "next_step": "Link OCM certification, the practitioner dataset, caregiver registration and medical dispensing facilities.",
-          "limitations": "Not reviewed for publication. S3294A (announced November 25, 2025) changes reciprocity, patient home grow and certification length; implementation status must be confirmed. Staged sources: data/research/new-york-2026-11-01-sources.json (research-only, November 1, 2026)."
+          "coverage_status": "partial",
+          "next_step": "Find a certifying provider, get certified, then buy at a medical dispensing facility with your certification and photo ID.",
+          "public_url": "https://cannabis.ny.gov/patients",
+          "limitations": "Sources reviewed November 1, 2026. Official certification, provider-finder, caregiver, home-grow and dispensing-facility routes. 69,031 registered patients and 4,820 certifying practitioners as of October 1, 2026 (OCM). Provider rows, appointment fees, product prices and registered-organization discounts were not reviewed. Out-of-state patient purchases under S3294A are not yet confirmed as in effect."
         },
         {
           "pathway_id": "business",
-          "coverage_status": "not-reviewed",
-          "next_step": "Reconcile licensed operators from the OCM dataset and research providers that state New York service.",
-          "limitations": "Not reviewed. No organization identities have been reconciled. Staged sources: data/research/new-york-2026-11-01-sources.json (research-only, November 1, 2026)."
+          "coverage_status": "starter",
+          "next_step": "Use OCM licensing for applications, renewals and permits.",
+          "public_url": "https://cannabis.ny.gov/licensing",
+          "limitations": "Sources reviewed November 1, 2026. Official licensing routes only. The adult-use licensees in the location finder are reference records, not reviewed business-directory listings. No banking, insurance, legal, testing or other provider has been reviewed for New York service. Trade associations (CANY, ANYCP and others) remain leads; the CANY site could not be opened on November 1, 2026."
         },
         {
           "pathway_id": "community",
-          "coverage_status": "not-reviewed",
-          "next_step": "Confirm trade associations, NORML chapters, veteran groups and upcoming events on their own pages.",
-          "limitations": "Not reviewed. Leads only. Staged sources: data/research/new-york-2026-11-01-sources.json (research-only, November 1, 2026)."
+          "coverage_status": "starter",
+          "next_step": "Contact a NORML chapter about meetings or advocacy, or register for the OCM clinical symposium.",
+          "public_url": "https://norml.org/about/new-york-chapters/",
+          "limitations": "Sources reviewed November 1, 2026. Three NORML chapters from NORML's national listing and one OCM event (November 19-20, 2026, Tarrytown). Chapter activity was not confirmed on the chapters' own sites. Trade associations, veteran groups and other events have not been reviewed."
         }
       ],
       "location_source": {
-        "description": "These are the 698 stores in the Office of Cannabis Management's Current OCM Licenses open-data export (retrieved November 1, 2026) whose license and operational status are both Active, whose business purpose includes retail sales and that have a date opened to the public. County comes from the regulator; the export has no phone numbers or map points, so distance search is not available for New York yet. Confirm hours, products and delivery with the store.",
+        "description": "These are the 698 stores in the Office of Cannabis Management's Current OCM Licenses open-data export (retrieved November 1, 2026) whose license and operational status are both Active, whose business purpose includes retail sales and that have a date opened to the public, plus the 24 medical dispensing facilities on OCM's medical list that are not marked temporarily closed. County comes from the regulator. The adult-use export has no phone numbers or map points, so distance search is not available for New York yet. Confirm hours, products and delivery with the store.",
         "source_label": "OCM open data",
         "source_url": "https://data.ny.gov/d/jskf-tt3q",
-        "count_note": "OCM's dispensary verification page states 757 adult-use dispensaries (no as-of date). The export's 698 active, opened stores leave out 11 registered-organization adult-use sites that have no opening date and 53 retail rows with an opening date that are marked non-operational (39 with an active license, 14 inactive). The remaining difference is unreconciled. OCM lists its 30 medical dispensing facilities separately; they are not imported.",
+        "count_note": "OCM's dispensary verification page states 757 adult-use dispensaries (no as-of date). The export's 698 active, opened stores leave out 11 registered-organization adult-use sites that have no opening date and 53 retail rows with an opening date that are marked non-operational (39 with an active license, 14 inactive). The remaining difference is unreconciled. OCM's medical list has 30 facilities; the 6 marked temporarily closed are not shown.",
         "count_source_url": "https://cannabis.ny.gov/dispensary-location-verification"
       }
     }

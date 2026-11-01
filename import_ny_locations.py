@@ -7,11 +7,18 @@ medical dispensing facilities carry no opening date in the export and are not im
 
 The export has county but no coordinates or phone numbers, so New York stores support city,
 county and ZIP search but not distance search until a reviewed geocode pass is added.
+
+Medical: the open facilities on OCM's dispensing-facilities page (registered organizations) are
+imported separately with their OCM registration numbers and listed phones. Temporarily closed
+facilities are counted in the source but not published.
 """
-import hashlib,json
+import hashlib,json,re
 from directory_data import ROOT
 from location_validation import validate_location_fields
 SOURCE=ROOT/'data/sources/new-york-ocm-retail-2026-11-01.json'
+MEDICAL=ROOT/'data/sources/new-york-medical-dispensing-facilities-2026-11-01.json'
+# Reviewed brand reuse: the DBA printed by OCM matches an existing national identity, as in the PA roster import.
+MEDICAL_BRANDS={'Rise':'org-364a9eed8729','Verilife':'org-aefe1b952bc0','the Botanist or Acreage NY':'org-7022b334ede8','Remedy-NY or Sunnyside':'org-667af67557f3'}
 REGULATOR='New York State Office of Cannabis Management'
 RECHECK='2026-12-01'
 KIND={'Adult-Use Retail Dispensary License':'adult-use','Adult-Use Conditional Retail Dispensary License':'adult-use','Adult-Use Microbusiness License':'adult-use'}
@@ -63,7 +70,35 @@ def import_snapshot(data,snapshot):
    if existing is None:data[collection].append(item)
    else:data[collection][existing]=item
  return len(rows)
+def upsert(data,collection,item):
+ existing=next((i for i,x in enumerate(data[collection]) if x['id']==item['id']),None)
+ if existing is None:data[collection].append(item)
+ else:data[collection][existing]=item
+def import_medical(data,source):
+ rows=source['rows']
+ regs=[r['registration_number'] for r in rows]
+ if not all(re.fullmatch(r'MM\d{4}D',x) for x in regs) or len(set(regs))!=len(regs):raise ValueError('Invalid or duplicate medical registration number')
+ open_rows=[r for r in rows if not r['temporarily_closed']]
+ retail={(l['address'].casefold(),l['postal_code']) for l in data['locations'] if l['state']=='NY' and l.get('license',{}).get('kind')=='adult-use'}
+ orgs={o['id']:o for o in data['organizations']}
+ for r in open_rows:
+  name=r['dba'] or r['registered_organization']
+  validate_location_fields({'state':'NY','county':r['county'],'city':r['city'],'name':name,'address':r['address'],'postal_code':r['zip']})
+  if (r['address'].casefold(),r['zip']) in retail:raise ValueError('Medical facility duplicates an adult-use store: '+r['registration_number'])
+  oid=MEDICAL_BRANDS.get(r['dba'])
+  if oid and oid not in orgs:raise ValueError('Missing reused identity '+oid)
+  if not oid:
+   oid=stable('org-','new-york-registered-organization:'+r['registered_organization'].casefold())
+   if oid not in orgs:
+    org={'id':oid,'name':r['registered_organization'],'kind':'operator','scope':'reference-only','legacy_ids':[],'contacts':[]};data['organizations'].append(org);orgs[oid]=org
+  lid=stable('loc-','NY-MED:'+r['registration_number']);eid=stable('ev-',lid+':government-location')
+  location={'id':lid,'organization_id':oid,'name':(r['dba'].split(' or ')[0].replace('the Botanist','The Botanist') if r['dba'] else r['registered_organization']),'state':'NY','county':r['county'],'city':r['city'],'address':r['address'],'postal_code':r['zip'],
+            'license':{'number':r['registration_number'],'regulator':REGULATOR,'kind':'medical','status':'unknown'},'evidence_ids':[eid],'snapshot_phone':r['phone']}
+  evidence={'id':eid,'subject_id':lid,'claim':'government-location-snapshot','value':'OCM medical dispensing facility: '+r['row_text'],'source_url':source['source_url'],'source_kind':'government',
+            'status':'source-listed','recorded_on':source['retrieved_on'],'recheck_on':RECHECK,'limitations':source['limitations']}
+  upsert(data,'locations',location);upsert(data,'evidence',evidence)
+ return len(open_rows)
 def main():
- data=json.loads((ROOT/'data/directory.json').read_text());count=import_snapshot(data,json.loads(SOURCE.read_text()))
- (ROOT/'data/directory.json').write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n');print(f'Imported {count} New York OCM retail locations; current license status unknown')
+ data=json.loads((ROOT/'data/directory.json').read_text());count=import_snapshot(data,json.loads(SOURCE.read_text()));medical=import_medical(data,json.loads(MEDICAL.read_text()))
+ (ROOT/'data/directory.json').write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n');print(f'Imported {count} New York OCM retail locations and {medical} open medical dispensing facilities; current license status unknown')
 if __name__=='__main__':main()
