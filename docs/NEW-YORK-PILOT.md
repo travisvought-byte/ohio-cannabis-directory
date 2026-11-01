@@ -6,7 +6,7 @@ Updated November 1, 2026. New York is a labeled **pilot** with all seven pathway
 
 | Pathway | Coverage | What a visitor gets | Known gaps |
 | --- | --- | --- | --- |
-| Dispensaries | broad | 698 OCM-licensed adult-use stores and 24 open medical dispensing facilities in the location finder; OCM's own adult-use and medical lists | No map points, so no distance search; 11 registered-organization adult-use sites with no opening date; 6 medical facilities marked temporarily closed |
+| Dispensaries | broad | 698 OCM-licensed adult-use stores and 24 open medical dispensing facilities in the location finder, 644 with Census map points for distance sorting; OCM's own adult-use and medical lists | 78 locations without a map point; 11 registered-organization adult-use sites with no opening date; 6 medical facilities marked temporarily closed |
 | Seeds | starter | Home-grow rule; OCM's statement that licensed retailers, microbusinesses and registered organizations may sell seeds and immature plants; patient home grow | No store-level availability or online supplier reviewed |
 | Records | partial | Court routes for automatic marijuana expungement, CPL 440.46-a motions, CPL 160.59 sealing and Clean Slate status; Legal Action Center phone help | No regional legal-aid office confirmed for record cases |
 | Rules | starter | Eight dated summaries tied to statute text or official pages | Local rules, hemp, packaging and business rules; S3294A provision dates |
@@ -20,6 +20,7 @@ Updated November 1, 2026. New York is a labeled **pilot** with all seven pathway
 - `data/sources/new-york-medical-dispensing-facilities-2026-11-01.json` holds all 30 rows of OCM's medical dispensing-facility table, read in a browser.
 - `import_ny_locations.py` publishes the 698 adult-use stores (Active license and operational status) and the 24 open medical facilities. Licensees are `reference-only` identities, so they stay out of the Ohio directory, exports and intake index. Medical facilities reuse the existing Rise (Green Thumb), Verilife (PharmaCann), The Botanist (Acreage) and Sunnyside (Cresco) identities, matched by the DBA OCM prints. License status shows as not verified.
 - `data/sources/new-york-ecosystem-2026-11-01.json` and `import_ny_ecosystem.py` add 6 organizations, 14 services, 8 rules and 1 event, following the Pennsylvania manifest pattern.
+- `data/sources/new-york-location-geocodes-2026-11-01.json` holds one Census Geocoder result per location (street, city, NY, ZIP). `apply_geocodes` accepts a point only for a single candidate with the same house number and street and a Census county that matches the regulator's. New York additions to the Pennsylvania rule: hyphenless Queens house numbers (16203 = 162-03), spelled-out suffixes (Court, Parkway, Turnpike, Expressway, Terrace, Highway), County Road as CO RD, and trailing floor/space/store text. Route types are not equated (Route 9 and US Hwy 9 still differ). 644 accepted; 29 no match, 25 street differs, 9 county differs, 8 multiple candidates, 5 house number differs, 2 direction differs.
 - New York county and ZIP checks are in `location_validation.py`. Tests: `tests/locations.py`, `tests/migration.py`, `tests/locations.cjs`, `tests/directory.cjs`.
 - The snapshot `as_of` date is November 1, 2026 so New York's review dates validate. No other record or review date changed.
 
@@ -35,7 +36,7 @@ To refresh the store list, download the export again, run the snapshot script wi
 
 ## Next work
 
-1. **Map points:** Census geocodes with the Pennsylvania acceptance rule, so distance search works for New York.
+1. **Remaining map points:** review the 78 unmatched addresses; the 9 county disagreements (for example, 6850 Main St, Williamsville listed as Onondaga) may be OCM data errors worth reporting.
 2. **Regional record help:** confirm which legal-aid offices take sealing and expungement cases (Legal Aid Society of NYC, LawNY, LASNNY, Legal Services of Central NY, Neighborhood Legal Services).
 3. **Seeds:** review which existing seed suppliers state New York shipping; check OCM's nursery license rollout.
 4. **Business and community:** confirm trade associations (CANY, ANYCP, ECMA, NYMCIA, CRANY, CAURD Inc., NYCRA, BCIA) on their own pages, veteran groups and organizer-confirmed events.
