@@ -29206,6 +29206,97 @@
       ],
       "website": "https://www.rocnorml.org/",
       "scope": "public"
+    },
+    {
+      "id": "org-legal-aid-society-nyc",
+      "name": "The Legal Aid Society (New York City)",
+      "kind": "nonprofit",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "212-298-3120"
+        },
+        {
+          "kind": "email",
+          "value": "CaseClosed@legal-aid.org"
+        }
+      ],
+      "website": "https://legalaidnyc.org/",
+      "scope": "public"
+    },
+    {
+      "id": "org-community-service-society-ny",
+      "name": "Community Service Society of New York",
+      "kind": "nonprofit",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "212-614-5441"
+        }
+      ],
+      "website": "https://www.cssny.org/",
+      "scope": "public"
+    },
+    {
+      "id": "org-youth-represent",
+      "name": "Youth Represent",
+      "kind": "nonprofit",
+      "legacy_ids": [],
+      "contacts": [],
+      "website": "https://youthrepresent.org/",
+      "scope": "public"
+    },
+    {
+      "id": "org-bronx-defenders",
+      "name": "The Bronx Defenders",
+      "kind": "nonprofit",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "718-838-7878"
+        }
+      ],
+      "website": "https://www.bronxdefenders.org/",
+      "scope": "public"
+    },
+    {
+      "id": "org-brooklyn-defender-services",
+      "name": "Brooklyn Defender Services",
+      "kind": "nonprofit",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "718-254-0700"
+        },
+        {
+          "kind": "email",
+          "value": "info@bds.org"
+        }
+      ],
+      "website": "https://bds.org/",
+      "scope": "public"
+    },
+    {
+      "id": "org-center-community-alternatives",
+      "name": "Center for Community Alternatives",
+      "kind": "nonprofit",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "315-422-5638"
+        },
+        {
+          "kind": "email",
+          "value": "cca@communityalternatives.org"
+        }
+      ],
+      "website": "https://communityalternatives.org/",
+      "scope": "public"
     }
   ],
   "locations": [
@@ -80060,6 +80151,318 @@
         "NY"
       ],
       "description": "Rochester-area chapter of NORML, listed by the national organization."
+    },
+    {
+      "id": "svc-ny-las-case-closed",
+      "organization_id": "org-legal-aid-society-nyc",
+      "location_ids": [],
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Legal Aid Society Case Closed — record sealing and expungement (NYC convictions)",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "New York",
+          "evidence_ids": [
+            "ev-ny26-d5893d8141a9"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Kings",
+          "evidence_ids": [
+            "ev-ny26-d5893d8141a9"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Queens",
+          "evidence_ids": [
+            "ev-ny26-d5893d8141a9"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Bronx",
+          "evidence_ids": [
+            "ev-ny26-d5893d8141a9"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Richmond",
+          "evidence_ids": [
+            "ev-ny26-d5893d8141a9"
+          ]
+        }
+      ],
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "Low-income people with criminal convictions that occurred in the five boroughs of New York City only.",
+      "next_step": {
+        "label": "Leave a message at 212-298-3120 or email CaseClosed@legal-aid.org",
+        "url": "https://legalaidnyc.org/programs-projects-units/case-closed-project/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Low-income people with New York City convictions",
+          "coverage_note": "Convictions in the five boroughs of New York City (provider-stated)",
+          "contact_note": "Message line 212-298-3120; CaseClosed@legal-aid.org.",
+          "source_url": "https://legalaidnyc.org/programs-projects-units/case-closed-project/",
+          "reviewed_on": "2026-11-01"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-dbd6ad33fff6",
+        "ev-ny26-d5893d8141a9",
+        "ev-ny26-6deb65aaa3fa"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "Case Closed, part of The Legal Aid Society's Criminal Defense Practice, represents low-income people in record sealing and expungement matters and publishes CPL 160.59, Clean Slate and marijuana expungement guides."
+    },
+    {
+      "id": "svc-ny-css-next-door",
+      "organization_id": "org-community-service-society-ny",
+      "location_ids": [],
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Community Service Society Next Door Project — RAP sheets, sealing and record barriers",
+      "coverage": [],
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "Low-income New Yorkers; records requested free when income is no higher than 200% of the federal poverty level. Appointment required.",
+      "next_step": {
+        "label": "Call (212) 614-5441 to request an appointment",
+        "url": "https://www.cssny.org/programs/entry/the-next-door-project"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Low-income New Yorkers with criminal records",
+          "coverage_note": "New York City office and on-site at partner agencies in New York City (provider-stated)",
+          "contact_note": "Call (212) 614-5441 and leave contact information; monthly group intake listed for November 19 and December 17, 2026.",
+          "source_url": "https://www.cssny.org/programs/entry/the-next-door-project",
+          "reviewed_on": "2026-11-01"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-d9ca7a29696c",
+        "ev-ny26-28e9b7b34494"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "Legal workers and attorneys help low-income New Yorkers request and understand their criminal records, fix mistakes, seal eligible cases, apply for certificates and fight job, license and housing denials. Appointments are made by phone or at monthly group intake sessions."
+    },
+    {
+      "id": "svc-ny-youth-represent",
+      "organization_id": "org-youth-represent",
+      "location_ids": [],
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Youth Represent — records and sealing help for people 26 and under",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "New York",
+          "evidence_ids": [
+            "ev-ny26-ba4c634b4d5b"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Kings",
+          "evidence_ids": [
+            "ev-ny26-ba4c634b4d5b"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Queens",
+          "evidence_ids": [
+            "ev-ny26-ba4c634b4d5b"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Bronx",
+          "evidence_ids": [
+            "ev-ny26-ba4c634b4d5b"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Richmond",
+          "evidence_ids": [
+            "ev-ny26-ba4c634b4d5b"
+          ]
+        }
+      ],
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "Young people ages 26 and under impacted by the criminal legal system; served through partner community organizations.",
+      "next_step": {
+        "label": "Open Youth Represent's legal services page",
+        "url": "https://youthrepresent.org/programs/legal-services/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Young people 26 and under with court involvement",
+          "coverage_note": "All five boroughs of New York City through partner organizations (provider-stated)",
+          "contact_note": "Use the Get Legal Help link on the provider's legal services page.",
+          "source_url": "https://youthrepresent.org/programs/legal-services/",
+          "reviewed_on": "2026-11-01"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-6cd0fde4c019",
+        "ev-ny26-ba4c634b4d5b",
+        "ev-ny26-bd20535a75b7"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "Holistic legal services for young people affected by the criminal legal system: obtaining and correcting RAP sheets, sealing motions, retroactive Youthful Offender motions and certificates of relief, delivered through partner organizations across the five boroughs."
+    },
+    {
+      "id": "svc-ny-bronx-defenders-sealing",
+      "organization_id": "org-bronx-defenders",
+      "location_ids": [],
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "The Bronx Defenders — correcting and sealing criminal court records",
+      "coverage": [],
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "Not stated on the page; the Bronx Defenders primarily serves Bronx residents and clients.",
+      "next_step": {
+        "label": "Call (718) 838-7878",
+        "url": "https://www.bronxdefenders.org/our-work/defending-new-yorkers/civil-action-practice/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Bronx residents and clients",
+          "coverage_note": "Bronx (provider-stated for reentry information sessions)",
+          "contact_note": "(718) 838-7878 as listed on the practice page.",
+          "source_url": "https://www.bronxdefenders.org/our-work/defending-new-yorkers/civil-action-practice/",
+          "reviewed_on": "2026-11-01"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-dfc2e5afed5d",
+        "ev-ny26-ae39aa69a9a4"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "The Bronx Defenders' Civil Action Practice works to uphold sealing laws and challenge the use of sealed criminal records in civil courts, alongside reentry information sessions for Bronx residents."
+    },
+    {
+      "id": "svc-ny-bds-sealing",
+      "organization_id": "org-brooklyn-defender-services",
+      "location_ids": [],
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Brooklyn Defender Services — sealing and expungement",
+      "coverage": [],
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "Not stated on the page; BDS represents low-income Brooklyn residents.",
+      "next_step": {
+        "label": "Call (718) 254-0700 or email info@bds.org",
+        "url": "https://bds.org/get-help"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "Low-income Brooklyn residents",
+          "coverage_note": "Brooklyn (provider-stated offices)",
+          "contact_note": "(718) 254-0700; info@bds.org; community office at 566 Livonia Ave open Wednesdays 9 am to 5 pm.",
+          "source_url": "https://bds.org/get-help",
+          "reviewed_on": "2026-11-01"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-5518462d6b28",
+        "ev-ny26-1cb27a83488b"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "BDS helps people obtain sealing of their arrest record when they are legally entitled to it, and its reentry team supports people after incarceration."
+    },
+    {
+      "id": "svc-ny-cca-reentry-advocacy",
+      "organization_id": "org-center-community-alternatives",
+      "location_ids": [],
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Center for Community Alternatives — free reentry legal services (Syracuse and Rochester)",
+      "coverage": [],
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "People with conviction records in Syracuse and Rochester; case acceptance decided by CCA.",
+      "next_step": {
+        "label": "Call 315-422-5638",
+        "url": "https://communityalternatives.org/programs/3c1-reentry-advocacy"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "provider_details": {
+          "serves": "People with conviction records",
+          "coverage_note": "Syracuse and Rochester (provider-stated)",
+          "contact_note": "315-422-5638; cca@communityalternatives.org.",
+          "source_url": "https://communityalternatives.org/programs/3c1-reentry-advocacy",
+          "reviewed_on": "2026-11-01"
+        }
+      },
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ny26-012fa8120fb5",
+        "ev-ny26-bcfd2ef0eb87"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "NY"
+      ],
+      "description": "Free legal services to obtain, review and correct criminal records, determine eligibility for certificates of rehabilitation or sealing and help apply, plus employment-rights and licensing advocacy."
     }
   ],
   "evidence": [
@@ -129908,6 +130311,188 @@
       "recorded_on": "2026-11-01",
       "recheck_on": "2026-12-01",
       "limitations": "Census geocoding places an address along a street segment. The point is approximate, not the storefront, and supports only straight-line distance sorting. County shown on the site remains the regulator's."
+    },
+    {
+      "id": "ev-ny26-dbd6ad33fff6",
+      "subject_id": "svc-ny-las-case-closed",
+      "claim": "service-description",
+      "value": "Case Closed is a record sealing and expungement project in The Legal Aid Society's Criminal Defense Practice providing direct representation; it assists low-income people with convictions in the five boroughs of New York City only; contact 212-298-3120 or CaseClosed@legal-aid.org.",
+      "source_url": "https://legalaidnyc.org/programs-projects-units/case-closed-project/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Provider program page. Eligibility screening, income limits and case acceptance are decided by The Legal Aid Society."
+    },
+    {
+      "id": "ev-ny26-d5893d8141a9",
+      "subject_id": "svc-ny-las-case-closed",
+      "claim": "service-coverage",
+      "value": "Assists low-income people with criminal convictions which occurred in the five boroughs of New York City only.",
+      "source_url": "https://legalaidnyc.org/programs-projects-units/case-closed-project/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Provider program page. Eligibility screening, income limits and case acceptance are decided by The Legal Aid Society."
+    },
+    {
+      "id": "ev-ny26-6deb65aaa3fa",
+      "subject_id": "svc-ny-las-case-closed",
+      "claim": "provider-contact",
+      "value": "Message line 212-298-3120; CaseClosed@legal-aid.org.",
+      "source_url": "https://legalaidnyc.org/programs-projects-units/case-closed-project/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Provider program page. Eligibility screening, income limits and case acceptance are decided by The Legal Aid Society."
+    },
+    {
+      "id": "ev-ny26-d9ca7a29696c",
+      "subject_id": "svc-ny-css-next-door",
+      "claim": "service-description",
+      "value": "Next Door Project requests criminal records (free at or below 200% FPL), fixes mistakes, seals eligible cases, addresses open warrants, applies for certificates and represents people denied jobs, licenses or housing; appointments at (212) 614-5441; 2026 intake dates include October 29, November 19 and December 17.",
+      "source_url": "https://www.cssny.org/programs/entry/the-next-door-project",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Provider program page. Appointments are required; free record requests depend on the stated income limit. Intake dates are as listed by the provider."
+    },
+    {
+      "id": "ev-ny26-28e9b7b34494",
+      "subject_id": "svc-ny-css-next-door",
+      "claim": "provider-contact",
+      "value": "Call (212) 614-5441 and leave contact information; monthly group intake listed for November 19 and December 17, 2026.",
+      "source_url": "https://www.cssny.org/programs/entry/the-next-door-project",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Provider program page. Appointments are required; free record requests depend on the stated income limit. Intake dates are as listed by the provider."
+    },
+    {
+      "id": "ev-ny26-6cd0fde4c019",
+      "subject_id": "svc-ny-youth-represent",
+      "claim": "service-description",
+      "value": "Serves young people ages 26 and under; obtains RAP sheets from DCJS or the FBI and corrects errors; post-conviction relief includes sealing motions, retroactive Youthful Offender motions and certificates of relief and good conduct.",
+      "source_url": "https://youthrepresent.org/programs/legal-services/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Provider program page. Services are delivered through partner organizations; age limits and case acceptance are decided by Youth Represent."
+    },
+    {
+      "id": "ev-ny26-ba4c634b4d5b",
+      "subject_id": "svc-ny-youth-represent",
+      "claim": "service-coverage",
+      "value": "Partners with community-based organizations across all five boroughs to bring legal support to young people.",
+      "source_url": "https://youthrepresent.org/programs/legal-services/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Provider program page. Services are delivered through partner organizations; age limits and case acceptance are decided by Youth Represent."
+    },
+    {
+      "id": "ev-ny26-bd20535a75b7",
+      "subject_id": "svc-ny-youth-represent",
+      "claim": "provider-contact",
+      "value": "Use the Get Legal Help link on the provider's legal services page.",
+      "source_url": "https://youthrepresent.org/programs/legal-services/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Provider program page. Services are delivered through partner organizations; age limits and case acceptance are decided by Youth Represent."
+    },
+    {
+      "id": "ev-ny26-dfc2e5afed5d",
+      "subject_id": "svc-ny-bronx-defenders-sealing",
+      "claim": "service-description",
+      "value": "Correcting and Sealing Criminal Court Records: fights to uphold sealing laws and challenge use and dissemination of sealed records in civil courts; reentry information sessions for people living in the Bronx; phone (718) 838-7878.",
+      "source_url": "https://www.bronxdefenders.org/our-work/defending-new-yorkers/civil-action-practice/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Provider practice page. It does not state eligibility for record work; the Bronx Defenders primarily serves Bronx residents and clients."
+    },
+    {
+      "id": "ev-ny26-ae39aa69a9a4",
+      "subject_id": "svc-ny-bronx-defenders-sealing",
+      "claim": "provider-contact",
+      "value": "(718) 838-7878 as listed on the practice page.",
+      "source_url": "https://www.bronxdefenders.org/our-work/defending-new-yorkers/civil-action-practice/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Provider practice page. It does not state eligibility for record work; the Bronx Defenders primarily serves Bronx residents and clients."
+    },
+    {
+      "id": "ev-ny26-5518462d6b28",
+      "subject_id": "svc-ny-bds-sealing",
+      "claim": "service-description",
+      "value": "Sealing and Expungement: BDS helps people obtain sealing of their arrest record when they are legally entitled to that relief.",
+      "source_url": "https://bds.org/our-work/civil-justice",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Provider practice page. Eligibility is not stated on the page; BDS provides representation to low-income Brooklyn residents."
+    },
+    {
+      "id": "ev-ny26-1cb27a83488b",
+      "subject_id": "svc-ny-bds-sealing",
+      "claim": "provider-contact",
+      "value": "(718) 254-0700; info@bds.org; community office at 566 Livonia Ave open Wednesdays 9 am to 5 pm.",
+      "source_url": "https://bds.org/get-help",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Provider contact page."
+    },
+    {
+      "id": "ev-ny26-012fa8120fb5",
+      "subject_id": "svc-ny-cca-reentry-advocacy",
+      "claim": "service-description",
+      "value": "CCA provides free legal services in Syracuse and Rochester: criminal record review, RAP sheet error correction, certificate of rehabilitation and sealing eligibility and assistance, employment-rights advocacy; contact 315-422-5638.",
+      "source_url": "https://communityalternatives.org/programs/3c1-reentry-advocacy",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Provider program page. Service is stated for Syracuse and Rochester; county-wide coverage is not claimed."
+    },
+    {
+      "id": "ev-ny26-bcfd2ef0eb87",
+      "subject_id": "svc-ny-cca-reentry-advocacy",
+      "claim": "provider-contact",
+      "value": "315-422-5638; cca@communityalternatives.org.",
+      "source_url": "https://communityalternatives.org/programs/3c1-reentry-advocacy",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-01",
+      "recorded_on": "2026-11-01",
+      "recheck_on": "2026-12-01",
+      "limitations": "Provider program page. Service is stated for Syracuse and Rochester; county-wide coverage is not claimed."
     }
   ],
   "rules": [
@@ -131890,9 +132475,9 @@
         {
           "pathway_id": "records",
           "coverage_status": "partial",
-          "next_step": "Check whether a marijuana conviction was expunged automatically, see where Clean Slate sealing stands, or apply for CPL 160.59 sealing; Legal Action Center helps New York residents by phone.",
+          "next_step": "Check whether a marijuana conviction was expunged automatically, see where Clean Slate sealing stands, or apply for CPL 160.59 sealing; free legal help is listed statewide and for New York City, Syracuse and Rochester.",
           "public_url": "https://www.nycourts.gov/help/criminal/cannabis-marihuana-and-expungement-under-new-york-state-law",
-          "limitations": "Sources reviewed November 1, 2026. Statewide court routes for automatic marijuana expungement, the CPL 440.46-a motion, CPL 160.59 sealing and Clean Slate status, plus one statewide legal-help phone route (Legal Action Center). Clean Slate implementation is due by November 16, 2027, so no record should be assumed sealed. No regional legal-aid office was confirmed to take record cases: LawNY and the Legal Aid Society of Northeastern New York publish intake routes, but the pages reviewed do not say they handle sealing or expungement. Not legal advice."
+          "limitations": "Sources reviewed November 1, 2026. Statewide court routes for automatic marijuana expungement, the CPL 440.46-a motion, CPL 160.59 sealing and Clean Slate status, plus legal help that its own pages say covers sealing or record correction: Legal Action Center (statewide phone), The Legal Aid Society's Case Closed (New York City convictions), Community Service Society's Next Door Project and Youth Represent (New York City), The Bronx Defenders and Brooklyn Defender Services, and the Center for Community Alternatives (Syracuse and Rochester). Long Island, the Hudson Valley, the Capital Region, the North Country and Western New York outside Rochester have no listed regional route yet: LawNY, the Legal Aid Society of Northeastern New York and the Legal Aid Bureau of Buffalo were checked and their pages do not say they handle sealing. Clean Slate implementation is due by November 16, 2027, so no record should be assumed sealed. Not legal advice."
         },
         {
           "pathway_id": "rules",

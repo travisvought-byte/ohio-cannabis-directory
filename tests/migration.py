@@ -100,9 +100,12 @@ bad=copy.deepcopy(data);seed=next(s for s in bad['services'] if s.get('origin')=
 from import_ny_ecosystem import build as import_ny_eco,MANIFEST as NY_MANIFEST
 ny_again=import_ny_eco(copy.deepcopy(data),json.loads(NY_MANIFEST.read_text()))
 assert ny_again==data,'Re-importing the New York manifest must not change the canonical tree'
-ny_services=[s for s in data['services'] if s.get('listed_in')==['NY']];assert len(ny_services)==14
+ny_services=[s for s in data['services'] if s.get('listed_in')==['NY']];assert len(ny_services)==20
 assert all(c['state']=='NY' for s in ny_services for c in s['coverage'])
 assert {r['id'] for r in data['rules'] if r['state']=='NY'}=={'rule-ny-adult-use-possession','rule-ny-consumption','rule-ny-home-grow','rule-ny-employment','rule-ny-driving','rule-ny-record-expungement','rule-ny-clean-slate','rule-ny-medical-use'}
 assert not any('legacy_record' in o for o in data['organizations'] if o['id'] in {s['organization_id'] for s in ny_services})
 assert next(e for e in data['events'] if e['id']=='event-ny-ocm-cannabinoids-symposium-2026')['starts_on']=='2026-11-19'
+las=next(s for s in ny_services if s['id']=='svc-ny-las-case-closed')
+assert {c['county'] for c in las['coverage']}=={'New York','Kings','Queens','Bronx','Richmond'}
+assert not next(s for s in ny_services if s['id']=='svc-ny-cca-reentry-advocacy')['coverage'],'City-level service must not imply county coverage'
 print('PASS migration: exact legacy exports, stable IDs, 60 relationship IDs, seed aliases, conservative coverage and state-template isolation.')
