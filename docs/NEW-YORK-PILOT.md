@@ -1,6 +1,15 @@
 # New York state pack: scoping and work plan
 
-Prepared November 1, 2026. New York is added to `data/directory.json` as a **research-only** state pack. All seven pathways are `not-reviewed`, no route is public, and the state picker does not show New York. Staged sources are in `data/research/new-york-2026-11-01-sources.json`; nothing there is read by the public build.
+Prepared November 1, 2026. New York is a labeled **pilot** with one published pathway: the dispensary finder, built from the OCM open-data export (698 active, opened stores). The other six pathways stay `not-reviewed` with no public route. Other staged sources are in `data/research/new-york-2026-11-01-sources.json` and are not read by the public build.
+
+### Dispensary import (done)
+
+- `scripts/snapshot_ny_ocm_licenses.py <export.xlsx|csv> <date>` converts a downloaded Current OCM Licenses export into `data/sources/new-york-ocm-retail-<date>.json`, keeping retail rows with an opening date (751 of 3,040) and dropping the primary-contact name and equity-category columns. The raw export is not committed.
+- `import_ny_locations.py` publishes rows with Active license and operational status (698). Each store carries its OCM license number, county and one source-listed evidence record that keeps the reported hours, website and delivery flag. License status shows as not verified, as for Ohio.
+- Licensees become `reference-only` identities (694 new), so they stay out of the Ohio business directory, CSV exports and intake index. An exact legal-name match reuses an existing identity.
+- No coordinates or phones in the export: city, county, ZIP and name search work; distance sorting places New York stores last. A reviewed geocode pass is the next improvement.
+- Count note: OCM's page states 757. The export's 698 leave out 11 registered-organization adult-use sites with no opening date and 53 non-operational rows with an opening date (39 with an active license); the rest is unreconciled. The 30 medical dispensing facilities are not imported.
+- To refresh: download the export again, rerun the snapshot script with the new date, point `SOURCE` in the importer at the new file, rerun the import and builds, and update the test counts.
 
 The snapshot `as_of` date moves from October 30 to November 1, 2026 so the new state pack's review date validates. This is not a fresh review of existing records; no other record, count, review date or generated page changes.
 
@@ -27,15 +36,15 @@ The seeds pathway is the biggest change: unlike Pennsylvania, New York has a law
 
 Under `AGENTS.md`, Codex implements labeled research/import issues; Claude handles schema, comparison design and PR review; Travis merges. Suggested issues, in order:
 
-1. **NY location import (`codex`).** Write `import_ny_locations.py` reading the Current OCM Licenses CSV. Filter to retail dispensary license types with Operational Status = Active and a date opened to public; record the filter, row counts and retrieval date as the denominator. Reconcile the 30 medical dispensing facilities. Geocode with the Census geocoder as for PA. Do not publish the primary-contact name column. Acceptance: deterministic re-import, a test mirroring the PA roster test, `location_source` with `count_note` comparing the dataset count with OCM's stated 757.
+1. **NY geocodes and medical sites (`codex`).** The retail import is done (see above). Add Census geocodes with the PA acceptance rule so distance search works, and import the 30 OCM medical dispensing facilities from the OCM page with their registration numbers, reconciled against the 11 registered-organization adult-use sites.
 2. **NY rules and medical pack (`codex`).** Six to eight dated rule cards cited to the Cannabis Law and Penal Law Article 222 (possession, consumption, driving, sharing vs. gifting, home cultivation, employment, medical certification, reciprocity). Confirm S3294A's chapter number and which provisions are in effect. Medical routes: certification, practitioner dataset, caregiver registration, dispensing facilities.
 3. **NY record clearing (`codex`).** MRTA expungement (offense list from the court's Marijuana and Expungement page and CPL 160.50), Clean Slate status, CPL 160.59 petitions, DCJS record review, and reviewed regional legal-aid routes. State the coverage gaps by region, as PA does.
 4. **NY seeds and home grow (`codex`).** Review which existing seed suppliers state New York shipping; review whether OCM publishes which licensed retailers sell seeds or immature plants. Keep fulfillment labels seller-stated.
 5. **NY business and community seed set (`codex`).** Reconcile licensed operators from the dataset to persistent identities (reuse national IDs such as Ascend, Curaleaf, Verano). Confirm trade associations (CANY, ANYCP, ECMA, NYMCIA, CRANY, CAURD Inc., NYCRA, BCIA), NORML chapters and veteran groups on their own pages. Events only with organizer-confirmed dates.
 6. **NY comparison and advocacy (`claude`).** Add New York to the state comparison as the adult-use reference for Ohio and Pennsylvania visitors (licensing structure, home grow, expungement, social equity). Advocacy page waits for the 2027 session bill filings.
 
-Publication gate: switch `publication_status` to `pilot` only after issue 1 and at least the rules or records pathway have reviewed, usable routes. Keep unfinished pathways visible as gaps.
+Publication: New York is a pilot because the dispensary finder is reviewed and usable. Promote other pathways only as each gets reviewed routes; keep unfinished ones visible as gaps.
 
-## Retrieval limitation
+## Retrieval note
 
-The repository workspace used for this scoping could not download from data.ny.gov (egress refused). Dataset rows were not counted or imported; only published metadata was read. A failed retrieval is not a review.
+The workspace used for this work could not reach data.ny.gov directly. The location import uses the export the directory owner downloaded on November 1, 2026; other staged sources were read through a web-fetch service.

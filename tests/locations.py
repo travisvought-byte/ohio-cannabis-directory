@@ -75,3 +75,30 @@ for change in ['row-text','zip','geocode','brand','duplicate']:
  except ValueError:pass
  else:raise AssertionError('pa '+change)
 print('PASS Pennsylvania roster: 200 regulator-listed locations, 163 accepted geocodes, 3 reviewed corrections and change rejection')
+# New York: OCM open-data export with license numbers and county, no coordinates or phones.
+from import_ny_locations import import_snapshot as import_ny,SOURCE as NY_SOURCE,selected
+ny_snapshot=json.loads(NY_SOURCE.read_text());ny_data=load_directory();ny_before=copy.deepcopy(ny_data)
+assert ny_snapshot['export_rows']==3040 and len(ny_snapshot['rows'])==751
+assert 'Primary Contact Name' in ny_snapshot['dropped_columns'] and not any('contact' in k for k in ny_snapshot['rows'][0])
+assert len(selected(ny_snapshot))==698
+assert import_ny(ny_data,copy.deepcopy(ny_snapshot))==698
+assert ny_data==ny_before,'Repeated New York import must preserve the canonical tree'
+ny=[l for l in ny_data['locations'] if l['state']=='NY'];assert len(ny)==698
+assert all(l['license']['regulator']=='New York State Office of Cannabis Management' and l['license']['status']=='unknown' and l['license']['kind']=='adult-use' for l in ny)
+assert not any('latitude' in l or 'snapshot_phone' in l for l in ny) and all(l.get('county') for l in ny)
+ny_by_license={l['license']['number']:l for l in ny}
+assert ny_by_license['OCM-CAURD-22-000001']['address']=='750 Broadway' and ny_by_license['OCM-CAURD-22-000001']['county']=='New York'
+ny_orgs={o['id']:o for o in ny_data['organizations']}
+assert all(ny_orgs[l['organization_id']]['scope'] in ('public','reference-only') for l in ny)
+assert not any(o.get('scope')=='public' and o['id'].startswith('org-') and o['name']=='HOUSING WORKS CANNABIS, LLC' for o in ny_data['organizations']),'New York licensees stay out of the Ohio public directory'
+for change in ['state','county','zip','duplicate','type']:
+ bad=copy.deepcopy(ny_snapshot);row=next(r for r in bad['rows'] if r['license_number']=='OCM-CAURD-22-000001')
+ if change=='state':row['state']='NJ'
+ elif change=='county':row['county']='Manhattan'
+ elif change=='zip':row['zip']='07030'
+ elif change=='duplicate':bad['rows'].append(dict(row))
+ else:row['license_type']='Adult-Use Unknown Retail License'
+ try:import_ny(copy.deepcopy(ny_data),bad)
+ except ValueError:pass
+ else:raise AssertionError('ny '+change)
+print('PASS New York OCM export: 698 active opened stores of 3,040 rows, county-only geography, no personal contact names, stable re-import and change rejection')

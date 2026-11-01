@@ -2,7 +2,7 @@
   "state": "NY",
   "reviewed_on": "2026-11-01",
   "recheck_on": "2026-12-01",
-  "status": "research-only",
+  "status": "research-only, except the OCM retail location import (published as the dispensaries pathway)",
   "method": "Scoping batch for the New York state pack. Each source below was opened and read on November 1, 2026 through the web-fetch service (page converted to text and read). The repository workspace could not download data.ny.gov files directly (egress refused), so no dataset rows were imported or counted here; the dataset entries record only the published metadata. Nothing in this file is read by the public build or approved for publication. Each source supports only the stated claim. Not legal advice.",
   "sources": {
     "ny-ocm-adult-use-info": {
@@ -39,13 +39,15 @@
         "Metadata on November 1, 2026: 3,040 rows; rows last updated October 31, 2026 (22:31 UTC).",
         "44 columns including license number/type/status, entity name, DBA, business website, location ID, address, county, REDC region, operational status (Active/Non-Operational), business purpose, retail delivery flags, date opened to public and hours of operation."
       ],
-      "limitations": "Includes applicants and non-retail license types, so it must be filtered (retail dispensary license types, Operational Status = Active, opened-to-public date present) and the filter documented as the denominator. Rows were not downloaded or counted in this batch. Contains a primary contact name column: do not publish personal names unless the directory owner decides otherwise. No coordinates; geocoding needed."
+      "limitations": "Includes applicants and non-retail license types. The directory owner downloaded the export (Current_OCM_Licenses_20261101.xlsx, 3,040 rows) on November 1, 2026; scripts/snapshot_ny_ocm_licenses.py saved the 751 retail rows with an opening date to data/sources/new-york-ocm-retail-2026-11-01.json without the primary-contact name and equity-category columns, and import_ny_locations.py publishes the 698 with Active license and operational status. No coordinates; geocoding still needed for distance search."
     },
     "ny-open-data-medical-providers": {
       "url": "https://data.ny.gov/Human-Services/OCM-Medical-Cannabis-Healthcare-Providers/gegk-4ghy/data_preview",
       "source_kind": "government-dataset",
       "subject": "Office of Cannabis Management",
-      "claims": ["OCM links this dataset from its medical program page as the certifying-practitioner finder."],
+      "claims": [
+        "OCM links this dataset from its medical program page as the certifying-practitioner finder."
+      ],
       "limitations": "Linked, not opened row by row. Link to it; do not copy practitioner rows into the directory."
     },
     "ny-ocm-medical": {
@@ -116,28 +118,36 @@
       "url": "https://norml.org/about/new-york-chapters",
       "source_kind": "organization",
       "subject": "NORML",
-      "claims": ["Lists Empire State NORML, NYC NORML and Roc NORML as New York chapters."],
+      "claims": [
+        "Lists Empire State NORML, NYC NORML and Roc NORML as New York chapters."
+      ],
       "limitations": "National directory listing from a search excerpt. Confirm each chapter's own page and current activity before listing."
     },
     "ny-cany": {
       "url": "https://www.cany.org/",
       "source_kind": "organization",
       "subject": "Cannabis Association of New York",
-      "claims": ["Statewide trade association (formerly NY Cannabis Growers & Processors Association) representing businesses across the supply chain."],
+      "claims": [
+        "Statewide trade association (formerly NY Cannabis Growers & Processors Association) representing businesses across the supply chain."
+      ],
       "limitations": "Lead from search excerpts of its own site and press. Reopen the home/about page and record a contact route before listing."
     },
     "ny-assembly-anycp-testimony-2026": {
       "url": "https://nyassembly.gov/write/upload/publichearing/001508/006598.pdf",
       "source_kind": "government",
       "subject": "Association of New York Cannabis Processors",
-      "claims": ["ANYCP president John Vavalo testified at the February 26, 2026 Economic Development joint budget hearing."],
+      "claims": [
+        "ANYCP president John Vavalo testified at the February 26, 2026 Economic Development joint budget hearing."
+      ],
       "limitations": "Establishes the association exists and testified; not a contact or membership source."
     },
     "ny-zoning-law-2026": {
       "url": "https://www.marijuanamoment.net/new-york-governor-signs-bills-to-fix-marijuana-business-zoning-issue-that-threatened-closure-of-over-150-dispensaries/",
       "source_kind": "secondary",
       "subject": "A10140 / S9155 (2025-2026)",
-      "claims": ["Governor signed A10140/S9155 (Zinerman/Krueger) codifying door-to-door distance measurement from schools and houses of worship and grandfathering existing retailers; article dated February 12, 2026."],
+      "claims": [
+        "Governor signed A10140/S9155 (Zinerman/Krueger) codifying door-to-door distance measurement from schools and houses of worship and grandfathering existing retailers; article dated February 12, 2026."
+      ],
       "limitations": "Secondary news source. Confirm on nysenate.gov or the Assembly bill page (chapter number and signing date) before citing."
     }
   },
