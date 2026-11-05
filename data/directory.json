@@ -29759,6 +29759,80 @@
       ],
       "website": "https://cannafirst.com/",
       "scope": "public"
+    },
+    {
+      "id": "org-seed-ac2014a85f6d",
+      "name": "Grow Your BLYZZZ",
+      "website": "https://growyourblyzzz.com/",
+      "kind": "retailer",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "3214259999"
+        }
+      ],
+      "scope": "public"
+    },
+    {
+      "id": "org-seed-bea65da1bd89",
+      "name": "Super Dank Seed Bank",
+      "website": "https://superdankseed.com/",
+      "kind": "seed-bank",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "5132373525"
+        }
+      ],
+      "scope": "public"
+    },
+    {
+      "id": "org-seed-0d67652d0c26",
+      "name": "A&I Family Wholesale",
+      "website": "https://anifamilywholesale.com/collections/cannabis-seeds-1",
+      "kind": "retailer",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "6149727100"
+        },
+        {
+          "kind": "email",
+          "value": "Sales@anifamilywholesale.com"
+        }
+      ],
+      "scope": "public"
+    },
+    {
+      "id": "org-seed-081205827a46",
+      "name": "Gardening Indoor",
+      "website": "https://www.gardening-indoor.com/",
+      "kind": "retailer",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "3307580272"
+        }
+      ],
+      "scope": "public"
+    },
+    {
+      "id": "org-seed-42b5fe932c74",
+      "name": "Grow 74OH",
+      "website": "https://grow74oh.com/",
+      "kind": "seed-bank",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "7402380660"
+        }
+      ],
+      "scope": "public"
     }
   ],
   "locations": [
@@ -72708,6 +72782,314 @@
         "phone": "6142621600",
         "email": "sales@indoorgardens.com",
         "reviewed": "2026-10-09"
+      }
+    },
+    {
+      "id": "svc-seed-ac2014a85f6d",
+      "organization_id": "org-seed-ac2014a85f6d",
+      "location_ids": [],
+      "pathway_ids": [
+        "seeds"
+      ],
+      "name": "Grow Your BLYZZZ seed/supply route",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "grower"
+      ],
+      "eligibility": "Confirm seller requirements and state eligibility directly.",
+      "next_step": {
+        "label": "Open catalog or supplier contact",
+        "url": "https://growyourblyzzz.com/"
+      },
+      "availability": "catalog-listed",
+      "attributes": {
+        "seed_types": [
+          "regular",
+          "feminized",
+          "autoflower",
+          "photoperiod"
+        ]
+      },
+      "fulfillment": [
+        {
+          "kind": "in-person",
+          "status": "unverified",
+          "description": "Physical market booth advertised; call ahead to confirm opening, specific strains and pickup.",
+          "evidence_ids": [
+            "ev-seed-ac2014a85f6d-1"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "ev-seed-ac2014a85f6d-1"
+      ],
+      "origin": "seed-profile",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Traders World Market, Building 11, 601 Union Rd, Lebanon, OH 45036. Seller advertises more than 65 strains sold as souvenirs, and its site disclaims seed viability; inventory is not independently verified. The listed phone has a Florida (321) area code, so confirm it before relying on it. Physical market booth advertised; call ahead to confirm opening, specific strains and pickup.",
+      "legacy_seed_record": {
+        "name": "Grow Your BLYZZZ",
+        "area": "Ohio",
+        "role": "Physical seed retailer",
+        "types": [
+          "Regular",
+          "Feminized",
+          "Autoflower",
+          "Photoperiod"
+        ],
+        "url": "https://growyourblyzzz.com/",
+        "note": "Traders World Market, Building 11, 601 Union Rd, Lebanon, OH 45036. Seller advertises more than 65 strains sold as souvenirs, and its site disclaims seed viability; inventory is not independently verified. The listed phone has a Florida (321) area code, so confirm it before relying on it.",
+        "shipping": "Physical market booth advertised; call ahead to confirm opening, specific strains and pickup.",
+        "sources": [
+          "https://growyourblyzzz.com/"
+        ],
+        "phone": "3214259999",
+        "email": "",
+        "reviewed": "2026-11-03"
+      }
+    },
+    {
+      "id": "svc-seed-bea65da1bd89",
+      "organization_id": "org-seed-bea65da1bd89",
+      "location_ids": [],
+      "pathway_ids": [
+        "seeds"
+      ],
+      "name": "Super Dank Seed Bank seed/supply route",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "grower"
+      ],
+      "eligibility": "Confirm seller requirements and state eligibility directly.",
+      "next_step": {
+        "label": "Open catalog or supplier contact",
+        "url": "https://superdankseed.com/"
+      },
+      "availability": "catalog-listed",
+      "attributes": {
+        "seed_types": [
+          "regular",
+          "feminized",
+          "autoflower",
+          "photoperiod"
+        ]
+      },
+      "fulfillment": [
+        {
+          "kind": "shipping",
+          "status": "unverified",
+          "description": "Seller advertises nationwide shipping; Ohio fulfillment and physical pickup should be confirmed directly.",
+          "evidence_ids": [
+            "ev-seed-bea65da1bd89-1"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "ev-seed-bea65da1bd89-1"
+      ],
+      "origin": "seed-profile",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Ohio-based seed retailer advertising Atlas Seed, Humboldt Seed Company, 420 FastBuds and Solfire Gardens. Lockland-area business listing; confirm walk-in service before traveling. Seller advertises nationwide shipping; Ohio fulfillment and physical pickup should be confirmed directly.",
+      "legacy_seed_record": {
+        "name": "Super Dank Seed Bank",
+        "area": "Ohio",
+        "role": "Seed bank / retailer",
+        "types": [
+          "Regular",
+          "Feminized",
+          "Autoflower",
+          "Photoperiod"
+        ],
+        "url": "https://superdankseed.com/",
+        "note": "Ohio-based seed retailer advertising Atlas Seed, Humboldt Seed Company, 420 FastBuds and Solfire Gardens. Lockland-area business listing; confirm walk-in service before traveling.",
+        "shipping": "Seller advertises nationwide shipping; Ohio fulfillment and physical pickup should be confirmed directly.",
+        "sources": [
+          "https://superdankseed.com/"
+        ],
+        "phone": "5132373525",
+        "email": "",
+        "reviewed": "2026-11-03"
+      }
+    },
+    {
+      "id": "svc-seed-0d67652d0c26",
+      "organization_id": "org-seed-0d67652d0c26",
+      "location_ids": [],
+      "pathway_ids": [
+        "seeds"
+      ],
+      "name": "A&I Family Wholesale seed/supply route",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "grower"
+      ],
+      "eligibility": "Confirm seller requirements and state eligibility directly.",
+      "next_step": {
+        "label": "Open catalog or supplier contact",
+        "url": "https://anifamilywholesale.com/collections/cannabis-seeds-1"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "seed_types": []
+      },
+      "fulfillment": [
+        {
+          "kind": "in-person",
+          "status": "unverified",
+          "description": "Wholesale/appointment model; confirm account eligibility, seed availability and pickup before visiting.",
+          "evidence_ids": [
+            "ev-seed-0d67652d0c26-1"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "ev-seed-0d67652d0c26-1"
+      ],
+      "origin": "seed-profile",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Columbus-area appointment-only wholesaler listing Aftermath Seed Co. seed packs and displays. Listed as a local source; buyers may need a wholesale account, and consumer retail sales are not established. Wholesale/appointment model; confirm account eligibility, seed availability and pickup before visiting.",
+      "legacy_seed_record": {
+        "name": "A&I Family Wholesale",
+        "area": "Ohio",
+        "role": "Wholesale seed distributor (appointment only)",
+        "types": [],
+        "url": "https://anifamilywholesale.com/collections/cannabis-seeds-1",
+        "note": "Columbus-area appointment-only wholesaler listing Aftermath Seed Co. seed packs and displays. Listed as a local source; buyers may need a wholesale account, and consumer retail sales are not established.",
+        "shipping": "Wholesale/appointment model; confirm account eligibility, seed availability and pickup before visiting.",
+        "sources": [
+          "https://anifamilywholesale.com/collections/cannabis-seeds-1"
+        ],
+        "phone": "6149727100",
+        "email": "Sales@anifamilywholesale.com",
+        "reviewed": "2026-11-03"
+      }
+    },
+    {
+      "id": "svc-seed-081205827a46",
+      "organization_id": "org-seed-081205827a46",
+      "location_ids": [],
+      "pathway_ids": [
+        "seeds"
+      ],
+      "name": "Gardening Indoor seed/supply route",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "grower"
+      ],
+      "eligibility": "Confirm seller requirements and state eligibility directly.",
+      "next_step": {
+        "label": "Open catalog or supplier contact",
+        "url": "https://www.gardening-indoor.com/"
+      },
+      "availability": "unknown",
+      "attributes": {
+        "seed_types": []
+      },
+      "fulfillment": [
+        {
+          "kind": "in-person",
+          "status": "unverified",
+          "description": "Physical retail location identified by breeder locator. Call ahead for Mosca seed stock and pickup.",
+          "evidence_ids": [
+            "ev-seed-081205827a46-1"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "ev-seed-081205827a46-1"
+      ],
+      "origin": "seed-profile",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "9215 Market Street, North Lima, OH 44452. Listed by Mosca Seeds' store locator as an Ohio retailer (a breeder listing, not the shop's own catalog); current seed stock is not independently confirmed. Physical retail location identified by breeder locator. Call ahead for Mosca seed stock and pickup.",
+      "legacy_seed_record": {
+        "name": "Gardening Indoor",
+        "area": "Ohio",
+        "role": "Grow shop / breeder-listed seed retailer",
+        "types": [],
+        "url": "https://www.gardening-indoor.com/",
+        "note": "9215 Market Street, North Lima, OH 44452. Listed by Mosca Seeds' store locator as an Ohio retailer (a breeder listing, not the shop's own catalog); current seed stock is not independently confirmed.",
+        "shipping": "Physical retail location identified by breeder locator. Call ahead for Mosca seed stock and pickup.",
+        "sources": [
+          "https://moscaseeds.com/cannabis-seeds-near-me/"
+        ],
+        "phone": "3307580272",
+        "email": "",
+        "reviewed": "2026-11-03"
+      }
+    },
+    {
+      "id": "svc-seed-42b5fe932c74",
+      "organization_id": "org-seed-42b5fe932c74",
+      "location_ids": [],
+      "pathway_ids": [
+        "seeds"
+      ],
+      "name": "Grow 74OH seed/supply route",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "grower"
+      ],
+      "eligibility": "Confirm seller requirements and state eligibility directly.",
+      "next_step": {
+        "label": "Open catalog or supplier contact",
+        "url": "https://grow74oh.com/"
+      },
+      "availability": "catalog-listed",
+      "attributes": {
+        "seed_types": [
+          "regular",
+          "feminized",
+          "autoflower"
+        ]
+      },
+      "fulfillment": [
+        {
+          "kind": "shipping",
+          "status": "unverified",
+          "description": "Confirm Ohio fulfillment and any local pickup directly.",
+          "evidence_ids": [
+            "ev-seed-42b5fe932c74-1"
+          ]
+        }
+      ],
+      "evidence_ids": [
+        "ev-seed-42b5fe932c74-1"
+      ],
+      "origin": "seed-profile",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Barnesville-based Ohio cannabis seed business advertising regular, feminized, autoflower and bulk seed options. Physical pickup unconfirmed. Confirm Ohio fulfillment and any local pickup directly.",
+      "legacy_seed_record": {
+        "name": "Grow 74OH",
+        "area": "Ohio",
+        "role": "Seed bank",
+        "types": [
+          "Regular",
+          "Feminized",
+          "Autoflower"
+        ],
+        "url": "https://grow74oh.com/",
+        "note": "Barnesville-based Ohio cannabis seed business advertising regular, feminized, autoflower and bulk seed options. Physical pickup unconfirmed.",
+        "shipping": "Confirm Ohio fulfillment and any local pickup directly.",
+        "sources": [
+          "https://grow74oh.com/"
+        ],
+        "phone": "7402380660",
+        "email": "",
+        "reviewed": "2026-11-03"
       }
     },
     {
@@ -134299,6 +134681,66 @@
       "recorded_on": "2026-11-01",
       "recheck_on": "2026-12-01",
       "limitations": "OCM SEE Cannabis Banking Directory. OCM states listing is for public convenience and is not an endorsement, support or recommendation. Account approval, fees and services are decided by each institution. Regions are New York economic development regions."
+    },
+    {
+      "id": "ev-seed-ac2014a85f6d-1",
+      "subject_id": "svc-seed-ac2014a85f6d",
+      "claim": "supplier-profile",
+      "value": "Traders World Market, Building 11, 601 Union Rd, Lebanon, OH 45036. Seller advertises more than 65 strains sold as souvenirs, and its site disclaims seed viability; inventory is not independently verified. The listed phone has a Florida (321) area code, so confirm it before relying on it. Physical market booth advertised; call ahead to confirm opening, specific strains and pickup.",
+      "source_url": "https://growyourblyzzz.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-03",
+      "recheck_on": "2026-12-03",
+      "limitations": "Seller or breeder page reviewed during the November 2026 seed research pass. Stock, pickup and Ohio fulfillment are not confirmed; no order or visit made."
+    },
+    {
+      "id": "ev-seed-bea65da1bd89-1",
+      "subject_id": "svc-seed-bea65da1bd89",
+      "claim": "supplier-profile",
+      "value": "Ohio-based seed retailer advertising Atlas Seed, Humboldt Seed Company, 420 FastBuds and Solfire Gardens. Lockland-area business listing; confirm walk-in service before traveling. Seller advertises nationwide shipping; Ohio fulfillment and physical pickup should be confirmed directly.",
+      "source_url": "https://superdankseed.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-03",
+      "recheck_on": "2026-12-03",
+      "limitations": "Seller or breeder page reviewed during the November 2026 seed research pass. Stock, pickup and Ohio fulfillment are not confirmed; no order or visit made."
+    },
+    {
+      "id": "ev-seed-0d67652d0c26-1",
+      "subject_id": "svc-seed-0d67652d0c26",
+      "claim": "supplier-profile",
+      "value": "Columbus-area appointment-only wholesaler listing Aftermath Seed Co. seed packs and displays. Listed as a local source; buyers may need a wholesale account, and consumer retail sales are not established. Wholesale/appointment model; confirm account eligibility, seed availability and pickup before visiting.",
+      "source_url": "https://anifamilywholesale.com/collections/cannabis-seeds-1",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-03",
+      "recheck_on": "2026-12-03",
+      "limitations": "Seller or breeder page reviewed during the November 2026 seed research pass. Stock, pickup and Ohio fulfillment are not confirmed; no order or visit made."
+    },
+    {
+      "id": "ev-seed-081205827a46-1",
+      "subject_id": "svc-seed-081205827a46",
+      "claim": "supplier-profile",
+      "value": "9215 Market Street, North Lima, OH 44452. Listed by Mosca Seeds' store locator as an Ohio retailer (a breeder listing, not the shop's own catalog); current seed stock is not independently confirmed. Physical retail location identified by breeder locator. Call ahead for Mosca seed stock and pickup.",
+      "source_url": "https://moscaseeds.com/cannabis-seeds-near-me/",
+      "source_kind": "manufacturer",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-03",
+      "recheck_on": "2026-12-03",
+      "limitations": "Seller or breeder page reviewed during the November 2026 seed research pass. Stock, pickup and Ohio fulfillment are not confirmed; no order or visit made."
+    },
+    {
+      "id": "ev-seed-42b5fe932c74-1",
+      "subject_id": "svc-seed-42b5fe932c74",
+      "claim": "supplier-profile",
+      "value": "Barnesville-based Ohio cannabis seed business advertising regular, feminized, autoflower and bulk seed options. Physical pickup unconfirmed. Confirm Ohio fulfillment and any local pickup directly.",
+      "source_url": "https://grow74oh.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-03",
+      "recheck_on": "2026-12-03",
+      "limitations": "Seller or breeder page reviewed during the November 2026 seed research pass. Stock, pickup and Ohio fulfillment are not confirmed; no order or visit made."
     }
   ],
   "rules": [

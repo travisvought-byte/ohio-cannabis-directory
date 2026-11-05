@@ -18,3 +18,6 @@
 5. Distinguish official seller catalog, breeder locator, third-party account, and unverified lead.
 6. Agricultural seed-labeler registration is not proof of cannabis retail authorization.
 7. Rebuild generated seeds.html, validate output, and merge only after review.
+
+## Promotion
+- 2026-11-05: Owner decision to include any reasonable local way for Ohio residents to get seeds and growing supplies. Grow Your BLYZZZ, Super Dank Seed Bank, A&I Family Wholesale, Gardening Indoor and Grow 74OH promoted through `data/directory.json`. Every fulfillment claim stays `unverified`; notes state the evidence level (seller page, breeder locator, wholesale-only, souvenir/viability disclaimer).
