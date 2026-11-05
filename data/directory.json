@@ -29833,6 +29833,24 @@
         }
       ],
       "scope": "public"
+    },
+    {
+      "id": "org-resource-dfc62e7aa7ac",
+      "name": "Urban League of Greater Southwestern Ohio",
+      "website": "https://ulgso.org/expungement",
+      "kind": "nonprofit",
+      "legacy_ids": [],
+      "contacts": [],
+      "scope": "public"
+    },
+    {
+      "id": "org-resource-6e72b85fc47f",
+      "name": "State Medical Board of Ohio",
+      "website": "https://med.ohio.gov/Publications/CTR-Search",
+      "kind": "government",
+      "legacy_ids": [],
+      "contacts": [],
+      "scope": "public"
     }
   ],
   "locations": [
@@ -73770,7 +73788,15 @@
         "records"
       ],
       "name": "Ohio Legal Help: record sealing",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "OH",
+          "evidence_ids": [
+            "ev-15f2c0f78f82"
+          ]
+        }
+      ],
       "audiences": [
         "consumer",
         "patient",
@@ -73785,7 +73811,8 @@
       "attributes": {},
       "fulfillment": [],
       "evidence_ids": [
-        "ev-15f277c49a31"
+        "ev-15f277c49a31",
+        "ev-15f2c0f78f82"
       ],
       "origin": "consumer-resource",
       "listed_in": [
@@ -73801,7 +73828,15 @@
         "records"
       ],
       "name": "Eligibility interview and action plan",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "OH",
+          "evidence_ids": [
+            "ev-ad31ac0b95dd"
+          ]
+        }
+      ],
       "audiences": [
         "consumer",
         "patient",
@@ -73816,7 +73851,8 @@
       "attributes": {},
       "fulfillment": [],
       "evidence_ids": [
-        "ev-1702b320187f"
+        "ev-1702b320187f",
+        "ev-ad31ac0b95dd"
       ],
       "origin": "consumer-resource",
       "listed_in": [
@@ -73832,7 +73868,16 @@
         "records"
       ],
       "name": "Opportunity Port",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Franklin",
+          "evidence_ids": [
+            "ev-3356171925b0"
+          ]
+        }
+      ],
       "audiences": [
         "consumer",
         "patient",
@@ -73847,7 +73892,8 @@
       "attributes": {},
       "fulfillment": [],
       "evidence_ids": [
-        "ev-69918d2dbc36"
+        "ev-69918d2dbc36",
+        "ev-3356171925b0"
       ],
       "origin": "consumer-resource",
       "listed_in": [
@@ -73863,7 +73909,15 @@
         "records"
       ],
       "name": "Marijuana-specific expungement: ORC 2953.321",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "OH",
+          "evidence_ids": [
+            "ev-f0cca62de828"
+          ]
+        }
+      ],
       "audiences": [
         "consumer",
         "patient",
@@ -73878,7 +73932,8 @@
       "attributes": {},
       "fulfillment": [],
       "evidence_ids": [
-        "ev-463eb1a26d7e"
+        "ev-463eb1a26d7e",
+        "ev-f0cca62de828"
       ],
       "origin": "consumer-resource",
       "listed_in": [
@@ -83195,6 +83250,78 @@
         "NY"
       ],
       "description": "Listed in OCM's Cannabis Banking Directory as serving New York cannabis businesses in Capital District, Central New York, Finger Lakes, Long Island, Mid-Hudson, Mohawk Valley, New York City, North Country, Southern Tier, Western New York. Services listed: Business accounts; cash management services."
+    },
+    {
+      "id": "svc-resource-f89c7f8df926",
+      "organization_id": "org-resource-dfc62e7aa7ac",
+      "location_ids": [],
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Urban Expungement Program (Hamilton County)",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Hamilton",
+          "evidence_ids": [
+            "ev-713290792454"
+          ]
+        }
+      ],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://ulgso.org/expungement"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-2917f3144956",
+        "ev-713290792454"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Free legal support and record-clearing help for eligible cases, with record reviews, help with paperwork and court filings, and help toward eligible fees. Run with the Hamilton County Public Defender's Office, the Ohio Justice Bus and the Hamilton County Clerk of Courts Help Center. Watch the page for the next clinic date."
+    },
+    {
+      "id": "svc-resource-8ef72ada480c",
+      "organization_id": "org-resource-6e72b85fc47f",
+      "location_ids": [],
+      "pathway_ids": [
+        "medical"
+      ],
+      "name": "Find a physician certified to recommend",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://med.ohio.gov/Publications/CTR-Search"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-2d33c85f5fb3"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Only an Ohio physician holding an active certificate to recommend (CTR) from the State Medical Board of Ohio can recommend medical marijuana. The board's CTR search finds certified physicians by practice location. Questions: medicalmarijuana@med.ohio.gov."
     }
   ],
   "evidence": [
@@ -134832,6 +134959,97 @@
       "recorded_on": "2026-11-05",
       "recheck_on": "2026-12-05",
       "limitations": "Reviewed from the Legislative Service Commission's authenticated text of the cited section. Summary only; local ordinances, landlord rules and federal law can add limits. Not legal advice."
+    },
+    {
+      "id": "ev-15f2c0f78f82",
+      "subject_id": "svc-resource-4e51000969c8",
+      "claim": "service-coverage",
+      "value": "Ohio Legal Help is Ohio's statewide legal-information site; its record-sealing guidance and eligibility interview are offered for all Ohio counties and point users to the right assistance for their county.",
+      "source_url": "https://www.ohiolegalhelp.org/topic/seal-criminal-record",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Statewide information and self-help tool; individual legal representation depends on local legal-aid eligibility."
+    },
+    {
+      "id": "ev-ad31ac0b95dd",
+      "subject_id": "svc-resource-d17dcd3e33f3",
+      "claim": "service-coverage",
+      "value": "Ohio Legal Help is Ohio's statewide legal-information site; its record-sealing guidance and eligibility interview are offered for all Ohio counties and point users to the right assistance for their county.",
+      "source_url": "https://www.ohiolegalhelp.org/letters-forms/criminal-sealing-eligibility",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Statewide information and self-help tool; individual legal representation depends on local legal-aid eligibility."
+    },
+    {
+      "id": "ev-f0cca62de828",
+      "subject_id": "svc-resource-23967a954dab",
+      "claim": "service-coverage",
+      "value": "ORC 2953.321 is a state statute; applications go to the sentencing court in any Ohio county.",
+      "source_url": "https://codes.ohio.gov/ohio-revised-code/section-2953.321",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Statewide law; each court sets its own filing procedure."
+    },
+    {
+      "id": "ev-3356171925b0",
+      "subject_id": "svc-resource-929c3c4c748b",
+      "claim": "service-coverage",
+      "value": "Opportunity Port currently serves Franklin County residents seeking help with Ohio records; services outside Franklin County are paused.",
+      "source_url": "https://opportunityport.org/faqs/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-09",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Coverage as stated on the provider's FAQ; check for resumed service elsewhere."
+    },
+    {
+      "id": "ev-2917f3144956",
+      "subject_id": "svc-resource-f89c7f8df926",
+      "claim": "referral-route",
+      "value": "Free legal support and record-clearing help for eligible cases, with record reviews, help with paperwork and court filings, and help toward eligible fees. Run with the Hamilton County Public Defender's Office, the Ohio Justice Bus and the Hamilton County Clerk of Courts Help Center. Watch the page for the next clinic date.",
+      "source_url": "https://ulgso.org/expungement",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-05",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Program page reviewed through its published text; clinic dates change. Eligibility is decided case by case."
+    },
+    {
+      "id": "ev-713290792454",
+      "subject_id": "svc-resource-f89c7f8df926",
+      "claim": "service-coverage",
+      "value": "The program is delivered with the Hamilton County Public Defender's Office and the Hamilton County Clerk of Courts Help Center.",
+      "source_url": "https://ulgso.org/expungement",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-05",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Partner offices are Hamilton County offices; confirm eligibility for cases filed elsewhere."
+    },
+    {
+      "id": "ev-2d33c85f5fb3",
+      "subject_id": "svc-resource-8ef72ada480c",
+      "claim": "referral-route",
+      "value": "Only an Ohio physician holding an active certificate to recommend (CTR) from the State Medical Board of Ohio can recommend medical marijuana. The board's CTR search finds certified physicians by practice location. Questions: medicalmarijuana@med.ohio.gov.",
+      "source_url": "https://dam.assets.ohio.gov/image/upload/com.ohio.gov/documents/MMCP_Quick%20Reference%20Guide%20-%20How%20to%20Obtain%20Medical%20Marijuana.pdf",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-05",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "The Division of Cannabis Control's patient quick-reference guide (dated 07/2023) links this search as step 1; the search page itself was not opened in this review. The contact email comes from the board's CTR physician report."
     }
   ],
   "rules": [
@@ -136750,7 +136968,7 @@
         },
         {
           "pathway_id": "records",
-          "coverage_status": "starter",
+          "coverage_status": "partial",
           "next_step": "Reach a relevant application or legal-aid contact.",
           "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html#records",
           "limitations": "Starter referral coverage; organization service areas remain historical text unless backed by claim-level coverage evidence. No complete statewide location list has been migrated."
@@ -136764,7 +136982,7 @@
         },
         {
           "pathway_id": "medical",
-          "coverage_status": "starter",
+          "coverage_status": "partial",
           "next_step": "Reach the correct official registration or support route.",
           "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html#medical",
           "limitations": "Starter referral coverage; organization service areas remain historical text unless backed by claim-level coverage evidence. No complete statewide location list has been migrated."
@@ -137021,6 +137239,11 @@
           "name": "Marijuana-specific expungement: ORC 2953.321",
           "url": "https://codes.ohio.gov/ohio-revised-code/section-2953.321",
           "description": "Effective March 20, 2026. Covers specified marijuana/hashish possession cases from before that date, including certain dismissed cases. Apply to the sentencing court with case information and evidence of the covered offense. Relief requires a court process; it is not automatic. The statute sets a $50 application fee unless indigent."
+        },
+        {
+          "name": "Urban Expungement Program (Hamilton County)",
+          "url": "https://ulgso.org/expungement",
+          "description": "Free legal support and record-clearing help for eligible cases, with record reviews, help with paperwork and court filings, and help toward eligible fees. Run with the Hamilton County Public Defender's Office, the Ohio Justice Bus and the Hamilton County Clerk of Courts Help Center. Watch the page for the next clinic date."
         }
       ]
     },
@@ -137037,6 +137260,11 @@
           "name": "Patient registry help",
           "url": "https://com.ohio.gov/divisions-and-programs/cannabis-control",
           "description": "For registry questions, the state publishes 1-833-464-6627 and MMCPRegistry@com.ohio.gov. Choose patient and caregiver resources on the DCC page."
+        },
+        {
+          "name": "Find a physician certified to recommend",
+          "url": "https://med.ohio.gov/Publications/CTR-Search",
+          "description": "Only an Ohio physician holding an active certificate to recommend (CTR) from the State Medical Board of Ohio can recommend medical marijuana. The board's CTR search finds certified physicians by practice location. Questions: medicalmarijuana@med.ohio.gov."
         }
       ]
     },
