@@ -50,7 +50,7 @@ Seed sex (`regular`, `feminized`) and flowering behavior (`autoflower`, `photope
 
 State publication statuses: `not-started`, `research-only`, `pilot`, `live`. Only pilot/live packs may supply public routes. The public picker must not advertise research-only or not-started states. Pilot options must be visibly labeled.
 
-Every state declares pathway coverage: `not-reviewed`, `starter`, `partial`, `broad`. These labels never mean exhaustive coverage. Always retain limitations; future “broad” claims need a documented denominator and review method. Missing records mean unknown coverage, not absence of service.
+Every state declares pathway coverage: `not-reviewed`, `starter`, `partial`, `broad`. These labels never mean exhaustive coverage. Always retain limitations; future “broad” claims need a documented denominator and review method. Missing records mean unknown coverage, not absence of service. Levels are earned under the [state completion standard](STATE_COMPLETION_STANDARD.md); `build_state_scorecard.py` measures them and a test rejects any published label that differs from the earned level.
 
 Adding a new state:
 

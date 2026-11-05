@@ -1,0 +1,257 @@
+{
+  "as_of": "2026-11-05",
+  "standard_version": "1.0.0",
+  "states": {
+    "OH": {
+      "name": "Ohio",
+      "publication_status": "live",
+      "pathways": {
+        "dispensaries": {
+          "declared": "broad",
+          "level": "broad",
+          "measures": {
+            "regulator_listed_locations": 230,
+            "regulator_count": 233,
+            "regulator_count_as_of": "2026-11-04",
+            "share": 0.987,
+            "location_source_age_days": 26
+          },
+          "next": null
+        },
+        "seeds": {
+          "declared": "partial",
+          "level": "partial",
+          "measures": {
+            "services": 18,
+            "with_fulfillment_recorded": 16
+          },
+          "next": "Broad needs a documented denominator; none exists for seed sellers"
+        },
+        "records": {
+          "declared": "starter",
+          "level": "starter",
+          "measures": {
+            "services": 4,
+            "statewide_routes": 0,
+            "counties_with_specific_help": 5,
+            "counties": 88,
+            "county_share": 0.057
+          },
+          "next": "1 more record-relief services; statewide coverage evidence on at least one route"
+        },
+        "rules": {
+          "declared": "starter",
+          "level": "starter",
+          "measures": {
+            "core_topics_covered": 2,
+            "core_topics": 7,
+            "missing_topics": [
+              "adult-use-possession",
+              "public-consumption",
+              "driving",
+              "employment",
+              "medical-use"
+            ]
+          },
+          "next": "Add dated, officially sourced rules for: adult-use-possession, public-consumption, driving, employment, medical-use"
+        },
+        "medical": {
+          "declared": "starter",
+          "level": "starter",
+          "measures": {
+            "services": 2,
+            "government_sourced": 2,
+            "support_organizations": 0
+          },
+          "next": "Reach 3 medical routes with 2 officially sourced"
+        },
+        "business": {
+          "declared": "partial",
+          "level": "partial",
+          "measures": {
+            "services": 516,
+            "coverage_confirmed_share": 0.862,
+            "direct_contact_share": 0.938,
+            "categorized_share": 1.0,
+            "current_review_share": 0.992
+          },
+          "next": "20 more listings with confirmed in-state coverage (to 90%)"
+        },
+        "community": {
+          "declared": "starter",
+          "level": "starter",
+          "measures": {
+            "groups": 1,
+            "upcoming_events": 2,
+            "items": 3
+          },
+          "next": "Reach 5 groups or upcoming events"
+        }
+      }
+    },
+    "PA": {
+      "name": "Pennsylvania",
+      "publication_status": "pilot",
+      "pathways": {
+        "dispensaries": {
+          "declared": "broad",
+          "level": "broad",
+          "measures": {
+            "regulator_listed_locations": 200,
+            "regulator_count": 200,
+            "regulator_count_as_of": "2026-09-16",
+            "share": 1.0,
+            "location_source_age_days": 8
+          },
+          "next": null
+        },
+        "seeds": {
+          "declared": "starter",
+          "level": "starter",
+          "measures": {
+            "services": 1,
+            "with_fulfillment_recorded": 0
+          },
+          "next": "Reach 5 seed routes with fulfillment recorded"
+        },
+        "records": {
+          "declared": "partial",
+          "level": "partial",
+          "measures": {
+            "services": 30,
+            "statewide_routes": 7,
+            "counties_with_specific_help": 16,
+            "counties": 67,
+            "county_share": 0.239
+          },
+          "next": "county-specific help in 18 more counties"
+        },
+        "rules": {
+          "declared": "partial",
+          "level": "partial",
+          "measures": {
+            "core_topics_covered": 6,
+            "core_topics": 7,
+            "missing_topics": [
+              "public-consumption"
+            ]
+          },
+          "next": "Add dated, officially sourced rules for: public-consumption"
+        },
+        "medical": {
+          "declared": "broad",
+          "level": "broad",
+          "measures": {
+            "services": 16,
+            "government_sourced": 4,
+            "support_organizations": 12
+          },
+          "next": null
+        },
+        "business": {
+          "declared": "starter",
+          "level": "starter",
+          "measures": {
+            "services": 101,
+            "coverage_confirmed_share": 0.317,
+            "direct_contact_share": 0.297,
+            "categorized_share": 0.208,
+            "current_review_share": 1.0
+          },
+          "next": "44 more listings with confirmed in-state coverage (to 75%); 31 more listings with a phone or email (to 60%)"
+        },
+        "community": {
+          "declared": "partial",
+          "level": "partial",
+          "measures": {
+            "groups": 20,
+            "upcoming_events": 0,
+            "items": 20
+          },
+          "next": "Reach 15 items with at least 1 upcoming event"
+        }
+      }
+    },
+    "NY": {
+      "name": "New York",
+      "publication_status": "pilot",
+      "pathways": {
+        "dispensaries": {
+          "declared": "broad",
+          "level": "broad",
+          "measures": {
+            "regulator_listed_locations": 722,
+            "regulator_count": 722,
+            "regulator_count_as_of": "2026-11-01",
+            "share": 1.0,
+            "location_source_age_days": 4
+          },
+          "next": null
+        },
+        "seeds": {
+          "declared": "starter",
+          "level": "starter",
+          "measures": {
+            "services": 2,
+            "with_fulfillment_recorded": 0
+          },
+          "next": "Reach 5 seed routes with fulfillment recorded"
+        },
+        "records": {
+          "declared": "partial",
+          "level": "partial",
+          "measures": {
+            "services": 10,
+            "statewide_routes": 3,
+            "counties_with_specific_help": 5,
+            "counties": 62,
+            "county_share": 0.081
+          },
+          "next": "county-specific help in 26 more counties"
+        },
+        "rules": {
+          "declared": "broad",
+          "level": "broad",
+          "measures": {
+            "core_topics_covered": 7,
+            "core_topics": 7,
+            "missing_topics": []
+          },
+          "next": null
+        },
+        "medical": {
+          "declared": "partial",
+          "level": "partial",
+          "measures": {
+            "services": 4,
+            "government_sourced": 4,
+            "support_organizations": 0
+          },
+          "next": "Reach 8 routes, 3 official and 1 patient-support organization"
+        },
+        "business": {
+          "declared": "starter",
+          "level": "starter",
+          "measures": {
+            "services": 45,
+            "coverage_confirmed_share": 0.556,
+            "direct_contact_share": 0.556,
+            "categorized_share": 0.044,
+            "current_review_share": 1.0
+          },
+          "next": "9 more listings with confirmed in-state coverage (to 75%); 2 more listings with a phone or email (to 60%)"
+        },
+        "community": {
+          "declared": "starter",
+          "level": "starter",
+          "measures": {
+            "groups": 3,
+            "upcoming_events": 1,
+            "items": 4
+          },
+          "next": "Reach 5 groups or upcoming events"
+        }
+      }
+    }
+  }
+}

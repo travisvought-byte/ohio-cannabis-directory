@@ -136588,14 +136588,14 @@
       "pathways": [
         {
           "pathway_id": "dispensaries",
-          "coverage_status": "starter",
+          "coverage_status": "broad",
           "next_step": "Reach an official location lookup or suitable location contact.",
           "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html#dispensaries",
           "limitations": "Starter referral coverage; organization service areas remain historical text unless backed by claim-level coverage evidence. No complete statewide location list has been migrated."
         },
         {
           "pathway_id": "seeds",
-          "coverage_status": "starter",
+          "coverage_status": "partial",
           "next_step": "Reach a suitable catalog or contact with fulfillment limitations visible.",
           "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/seeds.html",
           "limitations": "Starter referral coverage; organization service areas remain historical text unless backed by claim-level coverage evidence. No complete statewide location list has been migrated."
@@ -136672,21 +136672,21 @@
         },
         {
           "pathway_id": "rules",
-          "coverage_status": "starter",
+          "coverage_status": "partial",
           "next_step": "Read each dated summary, then the official statute it cites.",
           "public_url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2016/0/0016..HTM",
           "limitations": "Six state-law summaries checked October 28, 2026 against the General Assembly's statute text: medical use limits, adult-use status and small-amount possession, home cultivation, employment protection, driving and Clean Slate sealing. Not legal advice. Local ordinances, hemp-derived products, Department of Health regulations and court orders are not summarized."
         },
         {
           "pathway_id": "medical",
-          "coverage_status": "partial",
+          "coverage_status": "broad",
           "next_step": "Register, find an approved practitioner, then check caregiver, fee and assistance options.",
           "public_url": "https://www.pa.gov/services/health/register-for-the-medical-marijuana-program",
           "limitations": "Official registration, approved-practitioner, caregiver and assistance routes plus provider-stated evaluation, education, peer support and conditional subsidy resources. No individual clinician license or program approval, appointment, fee, subsidy slot or medical outcome was independently verified. Paid clinical evaluation is separate from state registration. Read the source conditions before applying."
         },
         {
           "pathway_id": "business",
-          "coverage_status": "partial",
+          "coverage_status": "starter",
           "next_step": "Choose testing, legal, accounting, security, insurance, banking, payments, packaging, equipment, training or hemp resources, then confirm the engagement scope.",
           "public_url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/laboratories",
           "limitations": "Selected Pennsylvania-relevant sources now include packaging, extraction equipment, software integration documentation, professional services, training and industrial-hemp resources alongside the baseline operators and laboratories. This is not a complete current permit roster or provider census. Office presence does not establish statewide service. Hemp resources are separate from medical-marijuana licensing; listing does not verify credentials, regulatory compliance or availability."
@@ -136729,7 +136729,7 @@
         },
         {
           "pathway_id": "rules",
-          "coverage_status": "starter",
+          "coverage_status": "broad",
           "next_step": "Read the dated summaries and the statute text each one links to.",
           "public_url": "https://www.nysenate.gov/legislation/laws/PEN/222.05",
           "limitations": "Sources reviewed November 1, 2026. Eight summaries checked against statute text or official pages: possession and sharing, consumption, home cultivation, employment, driving, marijuana expungement, Clean Slate sealing and medical use. Not legal advice. Local rules, landlord and co-op policies, hemp-derived products, packaging and business rules are not summarized. The S3294A medical changes are summarized from OCM and the bill page; the chapter number and each provision's effective date were not confirmed."
@@ -136743,7 +136743,7 @@
         },
         {
           "pathway_id": "business",
-          "coverage_status": "partial",
+          "coverage_status": "starter",
           "next_step": "Find an OCM-permitted testing laboratory or approved sampling firm, a bank from OCM's cannabis banking directory, or use OCM licensing for applications and permits.",
           "public_url": "https://cannabis.ny.gov/licensing",
           "limitations": "Sources reviewed November 1, 2026. Regulator-published lists: all 11 OCM-permitted testing laboratories with their testing scope, all 13 OCM-approved sampling firms, and the 20 banks and credit unions in OCM's Cannabis Banking Directory with the regions and services each lists (OCM says the directory is not an endorsement). Plus OCM licensing routes. Insurance, legal, accounting, security, packaging, technology and other providers have not been reviewed for New York service. The adult-use licensees in the location finder are reference records, not reviewed business listings. Trade associations remain leads; the CANY site could not be opened on November 1, 2026."
