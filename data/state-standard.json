@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "adopted_on": "2026-11-05",
+  "description": "Completion standard for state directories. Thresholds are owner-set policy; denominators are dated counts from each state's regulator or the U.S. Census Bureau. build_state_scorecard.py measures every state against the same thresholds. See architecture/STATE_COMPLETION_STANDARD.md.",
+  "core_rule_topics": ["adult-use-possession", "home-grow", "public-consumption", "driving", "employment", "medical-use", "record-relief"],
+  "rule_topic_aliases": {"record-expungement": "record-relief", "record-sealing": "record-relief"},
+  "thresholds": {
+    "dispensaries": {"partial_share": 0.5, "broad_share": 0.95, "max_source_age_days": 90},
+    "rules": {"partial_topics": 4, "broad_topics": 7},
+    "records": {"partial_services": 5, "broad_county_share": 0.5},
+    "medical": {"partial_services": 3, "partial_government": 2, "broad_services": 8, "broad_government": 3, "broad_non_government": 1},
+    "community": {"partial_items": 5, "broad_items": 15, "broad_upcoming_events": 1},
+    "seeds": {"partial_services": 5},
+    "business": {
+      "partial_services": 25, "partial_coverage_share": 0.75, "partial_contact_share": 0.6,
+      "broad_services": 150, "broad_coverage_share": 0.9, "broad_contact_share": 0.8, "broad_categorized_share": 0.95, "broad_current_review_share": 0.9
+    }
+  },
+  "states": {
+    "OH": {
+      "counties": 88,
+      "dispensary_denominator": {"count": 233, "as_of": "2026-11-04", "source_url": "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses", "label": "Ohio DCC dual-use dispensary certificates of operation"},
+      "location_source_retrieved_on": "2026-10-10"
+    },
+    "PA": {
+      "counties": 67,
+      "dispensary_denominator": {"count": 200, "as_of": "2026-09-16", "source_url": "https://www.pa.gov/agencies/health/programs/medical-marijuana", "label": "Pennsylvania Department of Health roster of dispensaries with product"},
+      "location_source_retrieved_on": "2026-10-28"
+    },
+    "NY": {
+      "counties": 62,
+      "dispensary_denominator": {"count": 722, "as_of": "2026-11-01", "source_url": "https://cannabis.ny.gov/", "label": "OCM active adult-use retail licenses open to the public plus medical dispensing facilities"},
+      "location_source_retrieved_on": "2026-11-01"
+    }
+  }
+}

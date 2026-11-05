@@ -38,7 +38,7 @@ assert (ROOT/'data/public-state.json').read_bytes()==public_state_before, 'Fixtu
 # The real Pennsylvania pilot reports every pathway with reviewed routes and states its gaps.
 pa_pack=next(s for s in data['states'] if s['code']=='PA')
 assert pa_pack['publication_status']=='pilot'
-assert {p['pathway_id']:p['coverage_status'] for p in pa_pack['pathways']}=={'dispensaries':'broad','seeds':'starter','records':'partial','rules':'starter','medical':'partial','business':'partial','community':'partial'}
+assert {p['pathway_id']:p['coverage_status'] for p in pa_pack['pathways']}=={'dispensaries':'broad','seeds':'starter','records':'partial','rules':'partial','medical':'broad','business':'starter','community':'partial'}
 assert {p['pathway_id'] for p in pa_pack['pathways'] if p.get('public_url')}=={'dispensaries','seeds','records','rules','medical','business'}
 pa_services=[s for s in data['services'] if 'PA' in s.get('listed_in',[])]
 assert len(pa_services)==154
