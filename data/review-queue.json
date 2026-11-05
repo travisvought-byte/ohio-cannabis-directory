@@ -20,10 +20,10 @@
   "forecast_window_days": 60,
   "forecast_by_week": {
     "2026-11-09": {
-      "full-review": 63
+      "full-review": 62
     },
     "2026-11-16": {
-      "full-review": 99
+      "full-review": 93
     }
   },
   "queue": [
@@ -660,12 +660,6 @@
       "due_on": "2026-11-14"
     },
     {
-      "organization_id": "org-7b1ec7846617",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-15"
-    },
-    {
       "organization_id": "org-c50a78614d86",
       "tier": "full-review",
       "category": "Cultivator / Processor / Dispensary",
@@ -720,18 +714,6 @@
       "due_on": "2026-11-20"
     },
     {
-      "organization_id": "org-2adb331ca783",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-20"
-    },
-    {
-      "organization_id": "org-783986a56f1d",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-20"
-    },
-    {
       "organization_id": "org-afa309caf39c",
       "tier": "full-review",
       "category": "Cultivator / Processor / Dispensary",
@@ -745,18 +727,6 @@
     },
     {
       "organization_id": "org-a821a61acb08",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-20"
-    },
-    {
-      "organization_id": "org-acbcf491323e",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-20"
-    },
-    {
-      "organization_id": "org-541abb14f3bc",
       "tier": "full-review",
       "category": "Cultivator / Processor / Dispensary",
       "due_on": "2026-11-20"
@@ -1170,12 +1140,6 @@
       "due_on": "2026-11-21"
     },
     {
-      "organization_id": "org-403a8f6287f1",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
       "organization_id": "org-0fe664576c8d",
       "tier": "full-review",
       "category": "Cultivator / Processor / Dispensary",
@@ -1189,12 +1153,6 @@
     },
     {
       "organization_id": "org-6cae66a61594",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
-      "organization_id": "org-ae7e208afc98",
       "tier": "full-review",
       "category": "Cultivator / Processor / Dispensary",
       "due_on": "2026-11-21"

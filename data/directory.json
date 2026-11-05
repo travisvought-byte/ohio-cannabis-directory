@@ -3614,18 +3614,18 @@
         "Contact Person": "Robert Vanisko — SVP, Public Affairs",
         "Email": "comms@ayrwellness.com",
         "Phone": "786-885-0397",
-        "Website": "https://ayrwellness.com/",
+        "Website": "https://ayrwellness.com/retail",
         "Service Area": "Ohio regional: 8 Ohio dispensaries: Akron, Dayton, Goshen, Lewis Center, Niles, Parma Heights, Streetsboro, Woodmere",
         "Capabilities / Keywords": "Cannabis Operator",
         "Verification Tier": "Source-verified",
-        "Notes": "Documented vendor relationship: DEM360 (security/IT services) names this organization among its current cannabis clients. DEM360 is also an entry in this Directory. Specific Ohio-facility attribution is not established beyond DEM360's general client list. Documented design relationship, geography unspecified: CLC Design Studio (also in this Directory) designed two AYR Wellness dispensaries per CLC's own company profile.DCC roster-verified: all 8 Ohio locations confirmed active, held under five different legal entities — PWC D1 LLC, Daily Releaf LLC (x2), Heaven Wellness LLC (x2), Good Day Dispensary LLC, Twice The Wellness LLC — typical of a multi-state operator using separate LLCs per storefront. OCHBS 2026 exhibitor/direct-contact evidence added 2026-09-26.",
-        "Source(s)": "https://www.globenewswire.com/news-release/2025/12/30/3211626/0/en/ayr-wellness-announces-leadership-update.html | https://ayrwellness.com/ | https://ayrdispensaries.com/ | OCHBS 2026 direct-contact evidence, 2026-09-23–24",
-        "Seed Source": "Organizations | Batch 1 audit, 2026-08-15; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 2), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 4), 2026-08-16; source pages retrieved and reviewed | DCC address-finding reconciliation pass, 2026-08-17; source pages retrieved and reviewed; roster-verified | OCHBS 2026 reconciliation, approved 2026-09-26",
+        "Notes": "Documented vendor relationship: DEM360 (security/IT services) names this organization among its current cannabis clients. DEM360 is also an entry in this Directory. Specific Ohio-facility attribution is not established beyond DEM360's general client list. Documented design relationship, geography unspecified: CLC Design Studio (also in this Directory) designed two AYR Wellness dispensaries per CLC's own company profile.DCC roster-verified: all 8 Ohio locations confirmed active, held under five different legal entities — PWC D1 LLC, Daily Releaf LLC (x2), Heaven Wellness LLC (x2), Good Day Dispensary LLC, Twice The Wellness LLC — typical of a multi-state operator using separate LLCs per storefront. OCHBS 2026 exhibitor/direct-contact evidence added 2026-09-26. 2026-11-05 review: DCC license list match; first-party site live.",
+        "Source(s)": "https://www.globenewswire.com/news-release/2025/12/30/3211626/0/en/ayr-wellness-announces-leadership-update.html | https://ayrwellness.com/ | https://ayrdispensaries.com/ | OCHBS 2026 direct-contact evidence, 2026-09-23–24 | https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses | https://ayrwellness.com/retail",
+        "Seed Source": "Organizations | Batch 1 audit, 2026-08-15; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 2), 2026-08-16; source pages retrieved and reviewed | Pass 2 B2B relationship mapping (round 4), 2026-08-16; source pages retrieved and reviewed | DCC address-finding reconciliation pass, 2026-08-17; source pages retrieved and reviewed; roster-verified | OCHBS 2026 reconciliation, approved 2026-09-26 | Scoped full review against DCC license lists and first-party website, 2026-11-05",
         "Record ID": "org-7b1ec7846617",
-        "Last Reviewed": "2026-08-17",
+        "Last Reviewed": "2026-11-05",
         "Service Area (as published)": "8 Ohio dispensaries: Akron, Dayton, Goshen, Lewis Center, Niles, Parma Heights, Streetsboro, Woodmere"
       },
-      "website": "https://ayrwellness.com/"
+      "website": "https://ayrwellness.com/retail"
     },
     {
       "id": "org-cd73b383c43b",
@@ -4053,11 +4053,11 @@
         "Service Area": "Ohio regional: Alliance, Ashtabula, Cincinnati and Oxford, Ohio; also Illinois and Arizona",
         "Capabilities / Keywords": "Cannabis Operator; Dispensary / Retail",
         "Verification Tier": "Source-verified",
-        "Notes": "Consume's current first-party site confirms four Ohio storefronts. The current DCC roster maps Oxford and Alliance to LMTT LLC (CCD000108-00 and CCD000246-00), Cincinnati to Consume Cannabis Co. (CCD000206-00), and the newly confirmed Ashtabula address at 2202 Metcalf Drive to Terradiol Ohio, LLC (CCD000302-00). These are one consumer brand across three Ohio legal entities, not four separate organizations. Organizational contact route used.",
-        "Source(s)": "https://consumecannabis.com/ | https://consumecannabis.com/contact-us/ | Ohio DCC Current Roster, CCD000108-00 / 206-00 / 246-00 / 302-00 | https://www.journal-news.com/news/oxfords-two-medical-marijuana-dispensaries-on-path-to-recreational-sales/",
-        "Seed Source": "Pass 2 B2B relationship mapping, 2026-08-16; source pages retrieved and reviewed | Cultivator / Processor / Dispensary issue-resolution pass, 2026-08-22; source pages retrieved and reviewed; DCC roster checked",
+        "Notes": "Consume's current first-party site confirms four Ohio storefronts. The current DCC roster maps Oxford and Alliance to LMTT LLC (CCD000108-00 and CCD000246-00), Cincinnati to Consume Cannabis Co. (CCD000206-00), and the newly confirmed Ashtabula address at 2202 Metcalf Drive to Terradiol Ohio, LLC (CCD000302-00). These are one consumer brand across three Ohio legal entities, not four separate organizations. Organizational contact route used. 2026-11-05 review: DCC license list match; first-party site live.",
+        "Source(s)": "https://consumecannabis.com/ | https://consumecannabis.com/contact-us/ | Ohio DCC Current Roster, CCD000108-00 / 206-00 / 246-00 / 302-00 | https://www.journal-news.com/news/oxfords-two-medical-marijuana-dispensaries-on-path-to-recreational-sales/ | https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses | https://consumecannabis.com/dispensaries/ohio-cincinnati/",
+        "Seed Source": "Pass 2 B2B relationship mapping, 2026-08-16; source pages retrieved and reviewed | Cultivator / Processor / Dispensary issue-resolution pass, 2026-08-22; source pages retrieved and reviewed; DCC roster checked | Scoped full review against DCC license lists and first-party website, 2026-11-05",
         "Record ID": "org-2adb331ca783",
-        "Last Reviewed": "2026-08-22",
+        "Last Reviewed": "2026-11-05",
         "Service Area (as published)": "Alliance, Ashtabula, Cincinnati and Oxford, Ohio; also Illinois and Arizona"
       },
       "website": "https://consumecannabis.com/"
@@ -4428,18 +4428,18 @@
         "Contact Person": "Edward Schmults — CEO | Jazmine Couch — Commercial Buyer | Raymond Troyer — Extraction Supervisor / Solventless Specialist",
         "Email": "Cleveland@thelandingdispensaries.com",
         "Phone": "Huron: 419-616-5112 | The Landing Cincinnati: 513-512-4808 | Columbus: 614-547-3750 | Cleveland: 216-770-4089",
-        "Website": "https://www.firelandsscientific.com/contact",
+        "Website": "https://www.firelandsscientific.com/",
         "Service Area": "Ohio statewide",
         "Capabilities / Keywords": "Cannabis Operator; Dispensary / Retail",
         "Verification Tier": "Source-verified",
-        "Notes": "The Landing is Firelands Scientific's retail brand. The current DCC roster places Columbus and Cleveland under OPC Retail II LLC, and Batch 3 resolves Aron OH LLC / CCD000031-00 to The Landing Cincinnati by the exact 4029 Smith Rd address. The current first-party Cincinnati page explicitly states that Aron OH owns and operates that store in collaboration with Firelands Scientific. Keep one Firelands/The Landing operator row.",
-        "Source(s)": "https://www.firelandsscientific.com/contact | https://www.firelandsscientific.com/ | https://ochbs.com/speakers/ | https://www.thelandingdispensaries.com/ohio/cleveland-dispensary | https://www.thelandingdispensaries.com/areas-served/grove-city | https://www.thelandingdispensaries.com/ohio/cincinnati-dispensary | Ohio DCC Current Roster, OPC Retail II LLC / CCD000097-00 and CCD000112-00; Aron OH LLC / CCD000031-00",
-        "Seed Source": "IgniteIt Network | Organizations | Speakers | Batch 2 audit, 2026-08-14; source pages retrieved and reviewed | Operator outreach-enrichment pass, 2026-08-22; source pages retrieved and reviewed | DCC legal-entity → trade-name mapping Batch 2, 2026-08-23; source pages retrieved and reviewed; roster-verified | DCC legal-entity → trade-name mapping Batch 3, 2026-08-23; source pages retrieved and reviewed; roster-verified",
+        "Notes": "The Landing is Firelands Scientific's retail brand. The current DCC roster places Columbus and Cleveland under OPC Retail II LLC, and Batch 3 resolves Aron OH LLC / CCD000031-00 to The Landing Cincinnati by the exact 4029 Smith Rd address. The current first-party Cincinnati page explicitly states that Aron OH owns and operates that store in collaboration with Firelands Scientific. Keep one Firelands/The Landing operator row. 2026-11-05 review: DCC license list match; first-party site live.",
+        "Source(s)": "https://www.firelandsscientific.com/contact | https://www.firelandsscientific.com/ | https://ochbs.com/speakers/ | https://www.thelandingdispensaries.com/ohio/cleveland-dispensary | https://www.thelandingdispensaries.com/areas-served/grove-city | https://www.thelandingdispensaries.com/ohio/cincinnati-dispensary | Ohio DCC Current Roster, OPC Retail II LLC / CCD000097-00 and CCD000112-00; Aron OH LLC / CCD000031-00 | https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "Seed Source": "IgniteIt Network | Organizations | Speakers | Batch 2 audit, 2026-08-14; source pages retrieved and reviewed | Operator outreach-enrichment pass, 2026-08-22; source pages retrieved and reviewed | DCC legal-entity → trade-name mapping Batch 2, 2026-08-23; source pages retrieved and reviewed; roster-verified | DCC legal-entity → trade-name mapping Batch 3, 2026-08-23; source pages retrieved and reviewed; roster-verified | Scoped full review against DCC license lists and first-party website, 2026-11-05",
         "Record ID": "org-403a8f6287f1",
-        "Last Reviewed": "2026-08-23",
+        "Last Reviewed": "2026-11-05",
         "Service Area (as published)": "Huron, Ohio; statewide Ohio retail footprint via The Landing, including Cincinnati, Columbus and Cleveland"
       },
-      "website": "https://www.firelandsscientific.com/contact"
+      "website": "https://www.firelandsscientific.com/"
     },
     {
       "id": "org-bd430c7e91b0",
@@ -4496,18 +4496,18 @@
         "Contact Person": "Mariah Chirchiglia — Buyer / Operations Manager",
         "Email": "",
         "Phone": "330-333-3170",
-        "Website": "https://greenleaftherapy.org/pages/contact",
+        "Website": "https://greenleaftherapy.org/pages/store-information",
         "Service Area": "Ohio regional: Struthers/Youngstown-area, Ohio (93 S. Bridge St.)",
         "Capabilities / Keywords": "Cannabis Operator; Dispensary / Retail",
         "Verification Tier": "Source-verified",
-        "Notes": "The current official site supplies a contact form; the current brand social profile and DCC roster corroborate the store phone and address. No public direct email was found.",
-        "Source(s)": "https://greenleaftherapy.org/pages/contact | https://greenleaftherapy.org/ | https://www.instagram.com/greenleaftherapy_struthers/ | Ohio DCC active licensee roster (CCD000080-00)",
-        "Seed Source": "Organizations | Speakers | Batch 2 audit, 2026-08-14; source pages retrieved and reviewed | Operator outreach-enrichment pass, 2026-08-22; source pages retrieved and reviewed",
+        "Notes": "The current official site supplies a contact form; the current brand social profile and DCC roster corroborate the store phone and address. No public direct email was found. 2026-11-05 review: DCC license list match; first-party site live.",
+        "Source(s)": "https://greenleaftherapy.org/pages/contact | https://greenleaftherapy.org/ | https://www.instagram.com/greenleaftherapy_struthers/ | Ohio DCC active licensee roster (CCD000080-00) | https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses | https://greenleaftherapy.org/pages/store-information",
+        "Seed Source": "Organizations | Speakers | Batch 2 audit, 2026-08-14; source pages retrieved and reviewed | Operator outreach-enrichment pass, 2026-08-22; source pages retrieved and reviewed | Scoped full review against DCC license lists and first-party website, 2026-11-05",
         "Record ID": "org-783986a56f1d",
-        "Last Reviewed": "2026-08-22",
+        "Last Reviewed": "2026-11-05",
         "Service Area (as published)": "Struthers/Youngstown-area, Ohio (93 S. Bridge St.)"
       },
-      "website": "https://greenleaftherapy.org/pages/contact"
+      "website": "https://greenleaftherapy.org/pages/store-information"
     },
     {
       "id": "org-0fe664576c8d",
@@ -5611,18 +5611,18 @@
         "Contact Person": "",
         "Email": "hello@queenccanna.com",
         "Phone": "Norwood: 513-470-2305 | Harrison: 513-687-8351",
-        "Website": "https://queenccanna.com/",
+        "Website": "https://www.queenccanna.com/locations",
         "Service Area": "Ohio regional: Norwood and Harrison, Ohio (Cincinnati metro)",
         "Capabilities / Keywords": "Cannabis Operator; Dispensary / Retail",
         "Verification Tier": "Source-verified",
-        "Notes": "Current first-party pages confirm Queen City Cannabis storefronts in Norwood and Harrison. Canoe Hill Ohio 3 LLC / CCD000062-00 resolves to Queen City Cannabis Norwood by the exact 3764 Montgomery Rd address. This entity does not belong to Story Cannabis; the exact-address DBA evidence controls.",
-        "Source(s)": "https://queenccanna.com/contact-us/ | https://queenccanna.com/norwood/ | https://ohiocapitaljournal.com/2024/08/06/list-heres-where-you-can-buy-recreational-marijuana-in-ohio-tuesday/ | Ohio DCC Current Roster, Canoe Hill Ohio 3 LLC / CCD000062-00",
-        "Seed Source": "DCC legal-entity → trade-name mapping Batch 3, 2026-08-23; source pages retrieved and reviewed; roster-verified",
+        "Notes": "Current first-party pages confirm Queen City Cannabis storefronts in Norwood and Harrison. Canoe Hill Ohio 3 LLC / CCD000062-00 resolves to Queen City Cannabis Norwood by the exact 3764 Montgomery Rd address. This entity does not belong to Story Cannabis; the exact-address DBA evidence controls. 2026-11-05 review: DCC license list match; first-party site live.",
+        "Source(s)": "https://queenccanna.com/contact-us/ | https://queenccanna.com/norwood/ | https://ohiocapitaljournal.com/2024/08/06/list-heres-where-you-can-buy-recreational-marijuana-in-ohio-tuesday/ | Ohio DCC Current Roster, Canoe Hill Ohio 3 LLC / CCD000062-00 | https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses | https://www.queenccanna.com/locations",
+        "Seed Source": "DCC legal-entity → trade-name mapping Batch 3, 2026-08-23; source pages retrieved and reviewed; roster-verified | Scoped full review against DCC license lists and first-party website, 2026-11-05",
         "Record ID": "org-ae7e208afc98",
-        "Last Reviewed": "2026-08-23",
+        "Last Reviewed": "2026-11-05",
         "Service Area (as published)": "Norwood and Harrison, Ohio (Cincinnati metro)"
       },
-      "website": "https://queenccanna.com/"
+      "website": "https://www.queenccanna.com/locations"
     },
     {
       "id": "org-80f8c07ddd91",
@@ -6020,11 +6020,11 @@
         "Service Area": "Ohio regional: Ravenna, Ohio",
         "Capabilities / Keywords": "Dispensary / Retail",
         "Verification Tier": "Source-verified",
-        "Notes": "Current brand channels supply a direct organizational email and Ravenna store phone. Simple AG Ohio, LLC's second Canal Winchester license remains unassigned to the Supergood brand without first-party confirmation.",
-        "Source(s)": "https://supergoodstore.com/store/ravenna/ | https://www.facebook.com/Supergood.OH/ | Ohio DCC active licensee roster (CCD000059-00)",
-        "Seed Source": "Pass 2A promotion — 12 confirmed candidates, 2026-08-17; source pages retrieved and reviewed | Operator outreach-enrichment pass, 2026-08-22; source pages retrieved and reviewed",
+        "Notes": "Current brand channels supply a direct organizational email and Ravenna store phone. Simple AG Ohio, LLC's second Canal Winchester license remains unassigned to the Supergood brand without first-party confirmation. 2026-11-05 review: DCC license list match; first-party site live.",
+        "Source(s)": "https://supergoodstore.com/store/ravenna/ | https://www.facebook.com/Supergood.OH/ | Ohio DCC active licensee roster (CCD000059-00) | https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "Seed Source": "Pass 2A promotion — 12 confirmed candidates, 2026-08-17; source pages retrieved and reviewed | Operator outreach-enrichment pass, 2026-08-22; source pages retrieved and reviewed | Scoped full review against DCC license lists and first-party website, 2026-11-05",
         "Record ID": "org-acbcf491323e",
-        "Last Reviewed": "2026-08-22",
+        "Last Reviewed": "2026-11-05",
         "Service Area (as published)": "Ravenna, Ohio"
       },
       "website": "https://supergoodstore.com/store/ravenna/"
@@ -6274,11 +6274,11 @@
         "Service Area": "Ohio regional: Cleveland and Cincinnati, Ohio",
         "Capabilities / Keywords": "Dispensary / Retail",
         "Verification Tier": "Source-verified",
-        "Notes": "Current official contact page supplies a direct organizational email and Cleveland phone. Both Ohio licenses remain under Green Power OH LLC; this brand remains distinct from similarly named operators.",
-        "Source(s)": "https://www.therapycannabis.com/contact/ | Ohio DCC active licensee roster (CCD000086-00; CCD000146-00)",
-        "Seed Source": "DCC address-finding reconciliation pass, 2026-08-17; source pages retrieved and reviewed; roster-verified | Operator outreach-enrichment pass, 2026-08-22; source pages retrieved and reviewed",
+        "Notes": "Current official contact page supplies a direct organizational email and Cleveland phone. Both Ohio licenses remain under Green Power OH LLC; this brand remains distinct from similarly named operators. 2026-11-05 review: DCC license list match; first-party site live.",
+        "Source(s)": "https://www.therapycannabis.com/contact/ | Ohio DCC active licensee roster (CCD000086-00; CCD000146-00) | https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses | https://www.therapycannabis.com/dispensaries/cincinnati/",
+        "Seed Source": "DCC address-finding reconciliation pass, 2026-08-17; source pages retrieved and reviewed; roster-verified | Operator outreach-enrichment pass, 2026-08-22; source pages retrieved and reviewed | Scoped full review against DCC license lists and first-party website, 2026-11-05",
         "Record ID": "org-541abb14f3bc",
-        "Last Reviewed": "2026-08-22",
+        "Last Reviewed": "2026-11-05",
         "Service Area (as published)": "Cleveland and Cincinnati, Ohio"
       },
       "website": "https://www.therapycannabis.com/contact/"
