@@ -40,20 +40,14 @@
           "next": "1 more record-relief services; statewide coverage evidence on at least one route"
         },
         "rules": {
-          "declared": "starter",
-          "level": "starter",
+          "declared": "broad",
+          "level": "broad",
           "measures": {
-            "core_topics_covered": 2,
+            "core_topics_covered": 7,
             "core_topics": 7,
-            "missing_topics": [
-              "adult-use-possession",
-              "public-consumption",
-              "driving",
-              "employment",
-              "medical-use"
-            ]
+            "missing_topics": []
           },
-          "next": "Add dated, officially sourced rules for: adult-use-possession, public-consumption, driving, employment, medical-use"
+          "next": null
         },
         "medical": {
           "declared": "starter",

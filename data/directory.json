@@ -134741,6 +134741,97 @@
       "reviewed_on": "2026-11-03",
       "recheck_on": "2026-12-03",
       "limitations": "Seller or breeder page reviewed during the November 2026 seed research pass. Stock, pickup and Ohio fulfillment are not confirmed; no order or visit made."
+    },
+    {
+      "id": "ev-60a6a2f696e3",
+      "subject_id": "rule-oh-adult-use-possession",
+      "claim": "rule-summary",
+      "value": "ORC 3796.221(A) lets an adult-use consumer who obtains adult-use marijuana from a licensed dispensary use and possess it; (A)(4) allows transfer to another adult-use consumer without remuneration, up to 2.5 ounces of plant material or 15 grams of extract to the same person in the same day, at privately owned residential or agricultural property; (B) caps cumulative possession of homegrown and adult-use marijuana at 2.5 ounces of plant material and 15 grams of extract; (C) bars other transfers by non-license holders. Effective March 20, 2026 (Senate Bill 56).",
+      "source_url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/37/3796/3796.221/3-20-2026/3796.221-3-20-2026.pdf",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-05",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Reviewed from the Legislative Service Commission's authenticated text of the cited section. Summary only; local ordinances, landlord rules and federal law can add limits. Not legal advice."
+    },
+    {
+      "id": "ev-e087da8aaff0",
+      "subject_id": "rule-oh-public-consumption",
+      "claim": "rule-summary",
+      "value": "ORC 3796.04(C)(2): no person shall knowingly consume adult-use marijuana or homegrown marijuana in a public place; (C)(3): no person operating a public place shall knowingly permit that consumption. (A)(3)-(4) permit storage at and use of homegrown marijuana at the adult-use consumer's primary residence. Effective March 20, 2026 (Senate Bill 56).",
+      "source_url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/37/3796/3796.04/3-20-2026/3796.04-3-20-2026.pdf",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-05",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Reviewed from the Legislative Service Commission's authenticated text of the cited section. Summary only; local ordinances, landlord rules and federal law can add limits. Not legal advice."
+    },
+    {
+      "id": "ev-727a9bd23688",
+      "subject_id": "rule-oh-driving",
+      "claim": "rule-summary",
+      "value": "ORC 3796.221(E): the section does not authorize an adult-use consumer to operate a vehicle, streetcar, trackless trolley, watercraft, or aircraft while under the influence of marijuana. ORC 3796.22(D) and 3796.04(E) say the same for registered patients and homegrown marijuana. Effective March 20, 2026.",
+      "source_url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/37/3796/3796.221/3-20-2026/3796.221-3-20-2026.pdf",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-05",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Reviewed from the Legislative Service Commission's authenticated text of the cited section. Summary only; local ordinances, landlord rules and federal law can add limits. Not legal advice."
+    },
+    {
+      "id": "ev-dd50a24d346c",
+      "subject_id": "rule-oh-driving",
+      "claim": "rule-summary",
+      "value": "ORC 4511.19 (OVI), version effective April 9, 2025: division (A)(1) lists per se concentrations of marihuana and marihuana metabolite in urine and in whole blood, blood serum or plasma at which operating a vehicle is prohibited.",
+      "source_url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/45/4511/4511.19/4-9-2025/4511.19-4-9-2025.pdf",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-05",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Reviewed from the Legislative Service Commission's authenticated text of the cited section. Summary only; local ordinances, landlord rules and federal law can add limits. Not legal advice."
+    },
+    {
+      "id": "ev-173c2e6444ac",
+      "subject_id": "rule-oh-employment",
+      "claim": "rule-summary",
+      "value": "ORC 3796.28(A): nothing in Chapter 3796 (1) requires an employer to permit or accommodate an employee's use, possession, or distribution of marijuana; (2) prohibits an employer from refusing to hire, discharging, disciplining, or otherwise taking adverse action because of marijuana use; (3) prohibits drug testing, drug-free workplace or zero-tolerance policies. Effective March 20, 2026 (Senate Bill 56).",
+      "source_url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/37/3796/3796.28/3-20-2026/3796.28-3-20-2026.pdf",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-05",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Reviewed from the Legislative Service Commission's authenticated text of the cited section. Summary only; local ordinances, landlord rules and federal law can add limits. Not legal advice."
+    },
+    {
+      "id": "ev-538f558eecec",
+      "subject_id": "rule-oh-medical-use",
+      "claim": "rule-summary",
+      "value": "ORC 3796.22(A): a registered patient who obtains medical marijuana from a licensed dispensary may use and possess it and related paraphernalia; (B): possession may not exceed a ninety-day supply specified in rules; (D): no authorization to operate a vehicle under the influence. Effective March 20, 2026 (Senate Bill 56).",
+      "source_url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/37/3796/3796.22/3-20-2026/3796.22-3-20-2026.pdf",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-05",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Reviewed from the Legislative Service Commission's authenticated text of the cited section. Summary only; local ordinances, landlord rules and federal law can add limits. Not legal advice."
+    },
+    {
+      "id": "ev-213d651f8fcd",
+      "subject_id": "rule-oh-medical-use",
+      "claim": "rule-summary",
+      "value": "ORC 3796.08: patients and caregivers apply to the Division of Cannabis Control for registration; the physician's recommendation states a bona fide physician-patient relationship, a qualifying medical condition, and that the physician informed the patient of risks and benefits. Effective March 20, 2026.",
+      "source_url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/37/3796/3796.08/3-20-2026/3796.08-3-20-2026.pdf",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-05",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Reviewed from the Legislative Service Commission's authenticated text of the cited section. Summary only; local ordinances, landlord rules and federal law can add limits. Not legal advice."
     }
   ],
   "rules": [
@@ -134930,6 +135021,63 @@
         "ev-ny26-e445ff64061c"
       ],
       "next_step_url": "https://cannabis.ny.gov/patients"
+    },
+    {
+      "id": "rule-oh-adult-use-possession",
+      "state": "OH",
+      "topic": "adult-use-possession",
+      "summary": "Adults 21+ may use and possess marijuana bought from a licensed Ohio dispensary. The total amount a person may possess, counting dispensary and homegrown marijuana together, is 2.5 ounces of plant material and 15 grams of extract. An adult may give the same amounts to another adult in a single day, without payment, only on private residential or agricultural property; other transfers require a license.",
+      "effective_on": "2026-03-20",
+      "evidence_ids": [
+        "ev-60a6a2f696e3"
+      ],
+      "next_step_url": "https://codes.ohio.gov/ohio-revised-code/section-3796.221"
+    },
+    {
+      "id": "rule-oh-public-consumption",
+      "state": "OH",
+      "topic": "public-consumption",
+      "summary": "Using adult-use or homegrown marijuana in a public place is prohibited, and the person running a public place may not knowingly allow it. Use is legal at a private residence, subject to the property owner's rules.",
+      "effective_on": "2026-03-20",
+      "evidence_ids": [
+        "ev-e087da8aaff0"
+      ],
+      "next_step_url": "https://codes.ohio.gov/ohio-revised-code/section-3796.04"
+    },
+    {
+      "id": "rule-oh-driving",
+      "state": "OH",
+      "topic": "driving",
+      "summary": "Neither the adult-use nor the medical marijuana law allows driving (or operating a streetcar, watercraft or aircraft) under the influence of marijuana. Ohio's OVI law also makes it an offense to drive with marijuana or marijuana metabolite at or above set concentrations in blood or urine, whether or not impairment is shown. Medical registration is not a defense.",
+      "effective_on": "2026-03-20",
+      "evidence_ids": [
+        "ev-727a9bd23688",
+        "ev-dd50a24d346c"
+      ],
+      "next_step_url": "https://codes.ohio.gov/ohio-revised-code/section-4511.19"
+    },
+    {
+      "id": "rule-oh-employment",
+      "state": "OH",
+      "topic": "employment",
+      "summary": "Ohio's marijuana law does not require employers to allow or accommodate marijuana use, possession or distribution. Employers may refuse to hire, discharge or discipline someone because of marijuana use, and may keep drug-testing, drug-free workplace and zero-tolerance policies. This applies to medical and adult-use marijuana alike.",
+      "effective_on": "2026-03-20",
+      "evidence_ids": [
+        "ev-173c2e6444ac"
+      ],
+      "next_step_url": "https://codes.ohio.gov/ohio-revised-code/section-3796.28"
+    },
+    {
+      "id": "rule-oh-medical-use",
+      "state": "OH",
+      "topic": "medical-use",
+      "summary": "A patient registered with the Division of Cannabis Control, with a recommendation from a certified physician for a qualifying condition, may use and possess medical marijuana bought from a licensed dispensary, up to a 90-day supply as set by rule. Caregivers register separately. Patients may not drive under the influence.",
+      "effective_on": "2026-03-20",
+      "evidence_ids": [
+        "ev-538f558eecec",
+        "ev-213d651f8fcd"
+      ],
+      "next_step_url": "https://codes.ohio.gov/ohio-revised-code/section-3796.22"
     }
   ],
   "relationships": [
@@ -136609,7 +136757,7 @@
         },
         {
           "pathway_id": "rules",
-          "coverage_status": "starter",
+          "coverage_status": "broad",
           "next_step": "Read a dated summary and its official source.",
           "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html#rules",
           "limitations": "Starter referral coverage; organization service areas remain historical text unless backed by claim-level coverage evidence. No complete statewide location list has been migrated."
