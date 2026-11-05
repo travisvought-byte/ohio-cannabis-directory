@@ -20,10 +20,10 @@
   "forecast_window_days": 60,
   "forecast_by_week": {
     "2026-11-09": {
-      "full-review": 86
+      "full-review": 63
     },
     "2026-11-16": {
-      "full-review": 133
+      "full-review": 99
     }
   },
   "queue": [
@@ -73,14 +73,41 @@
       "last_attempt": {
         "organization_id": "org-9ee4b284a472",
         "name": "Farkas Farms",
-        "attempted_on": "2026-10-13",
+        "attempted_on": "2026-11-05",
         "sources": [
-          "https://farkasfarms.com/"
+          "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses"
         ],
-        "result": "The bare domain returned only a redirect to a generic lander; no usable company-controlled website was established.",
-        "next_action": "Confirm a current company website from the original public business contact; keep the dated record in the missing-website queue."
+        "result": "License confirmed (DCC Cultivator Licenses (list dated 10/26/2026): Farkas Farms, LLC, CCC000038-00, Dual Use Cultivator Level II, Certificate of Operation). No company website is on record, so the operator site check could not be done.",
+        "next_action": "Find a current company-controlled website or contact page; keep the record in the missing-website queue."
       },
-      "next_action": "Confirm a current company website from the original public business contact; keep the dated record in the missing-website queue."
+      "next_action": "Find a current company-controlled website or contact page; keep the record in the missing-website queue."
+    },
+    {
+      "organization_id": "org-105e0713e773",
+      "name": "Mood Leaf",
+      "priority": "P1",
+      "tier": "full-review",
+      "category": "Cultivator / Processor / Dispensary",
+      "reasons": [
+        "Resolve the named open issue"
+      ],
+      "last_reviewed": "2026-10-13",
+      "due_on": "2027-01-11",
+      "website": "https://www.moodleaf.com/contact",
+      "sources": "OCHBS 2026 firsthand card/flyer: IMG_645D94FD-CC76-432C-A656-F6B08904A916.jpeg; exhibitor booth 811; private intake OCHBS-2026-004; OCHBS-2026-005. Reviewed 2026-10-06. | Scoped contact/service review 2026-10-13: https://www.moodleaf.com/ | https://www.moodleaf.com/contact",
+      "notes": "Firsthand OCHBS 2026 card/flyer evidence retained. Open issue: Confirm current brand/operator identity, licensing entity and organizational website; no independent licensing verification is claimed. Contact/service review 2026-10-13: Wholesale and sales emails are published on the existing brand domain; no delivery test. Footer address and 614-555-0123 are apparent template content and were excluded. Legal/licensing entity remains an open issue. Earlier Nicole email failed delivery and is not used as a public contact.",
+      "triggers": [],
+      "last_attempt": {
+        "organization_id": "org-105e0713e773",
+        "name": "Mood Leaf",
+        "attempted_on": "2026-11-05",
+        "sources": [
+          "https://www.moodleaf.com/contact"
+        ],
+        "result": "No DCC license under this name; brand or parent listing. Listed website https://www.moodleaf.com/contact loads (MoodLeaf Ohio; Designed for Ohio consumers). brand site live; licensed operator behind the brand still not established",
+        "next_action": "Identify the licensed Ohio operator behind this brand from a primary source before dating a full review."
+      },
+      "next_action": "Identify the licensed Ohio operator behind this brand from a primary source before dating a full review."
     },
     {
       "organization_id": "org-7e1ab15e4a71",
@@ -100,14 +127,15 @@
       "last_attempt": {
         "organization_id": "org-7e1ab15e4a71",
         "name": "Ohio Clean Leaf",
-        "attempted_on": "2026-10-13",
+        "attempted_on": "2026-11-05",
         "sources": [
+          "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses",
           "https://ohiocleanleaf.com/"
         ],
-        "result": "Craft-cannabis landing page lacks a current contact route; present license and historical phone remain unverified.",
-        "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
+        "result": "License confirmed (DCC Cultivator Licenses (list dated 10/26/2026): Ohio Clean Leaf LLC, CCC000020-00, Dual Use Cultivator Level II, Certificate of Operation). Listed website https://ohiocleanleaf.com/ returned HTTP 404.",
+        "next_action": "Find the current company website and update the Website field."
       },
-      "next_action": "Verify the exact identity and public contact against original business evidence or a current first-party source. No fresh review date assigned."
+      "next_action": "Find the current company website and update the Website field."
     },
     {
       "organization_id": "org-3af4221fa5d1",
@@ -190,24 +218,6 @@
         "next_action": "Confirm a company-controlled public website or contact from original intake evidence; retain missing-website review priority."
       },
       "next_action": "Confirm a company-controlled public website or contact from original intake evidence; retain missing-website review priority."
-    },
-    {
-      "organization_id": "org-105e0713e773",
-      "name": "Mood Leaf",
-      "priority": "P1",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "reasons": [
-        "Resolve the named open issue"
-      ],
-      "last_reviewed": "2026-10-13",
-      "due_on": "2027-01-11",
-      "website": "https://www.moodleaf.com/contact",
-      "sources": "OCHBS 2026 firsthand card/flyer: IMG_645D94FD-CC76-432C-A656-F6B08904A916.jpeg; exhibitor booth 811; private intake OCHBS-2026-004; OCHBS-2026-005. Reviewed 2026-10-06. | Scoped contact/service review 2026-10-13: https://www.moodleaf.com/ | https://www.moodleaf.com/contact",
-      "notes": "Firsthand OCHBS 2026 card/flyer evidence retained. Open issue: Confirm current brand/operator identity, licensing entity and organizational website; no independent licensing verification is claimed. Contact/service review 2026-10-13: Wholesale and sales emails are published on the existing brand domain; no delivery test. Footer address and 614-555-0123 are apparent template content and were excluded. Legal/licensing entity remains an open issue. Earlier Nicole email failed delivery and is not used as a public contact.",
-      "triggers": [],
-      "last_attempt": null,
-      "next_action": "Full review: confirm operating status, license where applicable, services, contacts and Ohio coverage from primary sources; record source dates and field-level limits."
     },
     {
       "organization_id": "org-fb49bcaddd77",
@@ -302,42 +312,6 @@
       "due_on": "2026-11-12"
     },
     {
-      "organization_id": "org-cadae1a17de3",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-12"
-    },
-    {
-      "organization_id": "org-7831babce707",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-12"
-    },
-    {
-      "organization_id": "org-1d44aa49bf35",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-12"
-    },
-    {
-      "organization_id": "org-bd430c7e91b0",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-12"
-    },
-    {
-      "organization_id": "org-aefe1b952bc0",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-12"
-    },
-    {
-      "organization_id": "org-73dbb4d51092",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-12"
-    },
-    {
       "organization_id": "org-9770d5914483",
       "tier": "full-review",
       "category": "Cultivator / Processor / Dispensary",
@@ -401,18 +375,6 @@
       "organization_id": "org-4a9f91858514",
       "tier": "full-review",
       "category": "Accounting & Tax",
-      "due_on": "2026-11-13"
-    },
-    {
-      "organization_id": "org-24ac5cb3557c",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-13"
-    },
-    {
-      "organization_id": "org-a05f9afca5ef",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
       "due_on": "2026-11-13"
     },
     {
@@ -542,49 +504,7 @@
       "due_on": "2026-11-14"
     },
     {
-      "organization_id": "org-68ca5164ba06",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-14"
-    },
-    {
-      "organization_id": "org-31d30a079044",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-14"
-    },
-    {
-      "organization_id": "org-cd73b383c43b",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-14"
-    },
-    {
-      "organization_id": "org-27e668beecb1",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-14"
-    },
-    {
-      "organization_id": "org-02393016e488",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-14"
-    },
-    {
       "organization_id": "org-cfc630983d08",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-14"
-    },
-    {
-      "organization_id": "org-73fe6ae295b7",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-14"
-    },
-    {
-      "organization_id": "org-7022b334ede8",
       "tier": "full-review",
       "category": "Cultivator / Processor / Dispensary",
       "due_on": "2026-11-14"
@@ -740,61 +660,13 @@
       "due_on": "2026-11-14"
     },
     {
-      "organization_id": "org-8fd15920db44",
-      "tier": "full-review",
-      "category": "Testing Labs",
-      "due_on": "2026-11-14"
-    },
-    {
-      "organization_id": "org-74e57cabf73f",
-      "tier": "full-review",
-      "category": "Testing Labs",
-      "due_on": "2026-11-14"
-    },
-    {
       "organization_id": "org-7b1ec7846617",
       "tier": "full-review",
       "category": "Cultivator / Processor / Dispensary",
       "due_on": "2026-11-15"
     },
     {
-      "organization_id": "org-f84af119e259",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-15"
-    },
-    {
-      "organization_id": "org-922caf289dc8",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-15"
-    },
-    {
-      "organization_id": "org-55ddf9f58f12",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-15"
-    },
-    {
-      "organization_id": "org-2f4e4abf2576",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-15"
-    },
-    {
-      "organization_id": "org-1587d77e43a5",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-15"
-    },
-    {
       "organization_id": "org-c50a78614d86",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-15"
-    },
-    {
-      "organization_id": "org-2412bd73869d",
       "tier": "full-review",
       "category": "Cultivator / Processor / Dispensary",
       "due_on": "2026-11-15"
@@ -854,31 +726,7 @@
       "due_on": "2026-11-20"
     },
     {
-      "organization_id": "org-550cc193e4d0",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-20"
-    },
-    {
-      "organization_id": "org-90725b1d60a7",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-20"
-    },
-    {
       "organization_id": "org-783986a56f1d",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-20"
-    },
-    {
-      "organization_id": "org-364a9eed8729",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-20"
-    },
-    {
-      "organization_id": "org-86d0f1c54920",
       "tier": "full-review",
       "category": "Cultivator / Processor / Dispensary",
       "due_on": "2026-11-20"
@@ -896,61 +744,7 @@
       "due_on": "2026-11-20"
     },
     {
-      "organization_id": "org-63bd45e3d30d",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-20"
-    },
-    {
-      "organization_id": "org-9ee377e930fd",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-20"
-    },
-    {
-      "organization_id": "org-1347773f0174",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-20"
-    },
-    {
-      "organization_id": "org-5557bb333b04",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-20"
-    },
-    {
       "organization_id": "org-a821a61acb08",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-20"
-    },
-    {
-      "organization_id": "org-d480f46274ac",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-20"
-    },
-    {
-      "organization_id": "org-2b099217b822",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-20"
-    },
-    {
-      "organization_id": "org-9bdb83da8d0c",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-20"
-    },
-    {
-      "organization_id": "org-31a9d040cd43",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-20"
-    },
-    {
-      "organization_id": "org-807016fdf315",
       "tier": "full-review",
       "category": "Cultivator / Processor / Dispensary",
       "due_on": "2026-11-20"
@@ -962,19 +756,7 @@
       "due_on": "2026-11-20"
     },
     {
-      "organization_id": "org-4c8da4a965ec",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-20"
-    },
-    {
       "organization_id": "org-541abb14f3bc",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-20"
-    },
-    {
-      "organization_id": "org-79984c5926e3",
       "tier": "full-review",
       "category": "Cultivator / Processor / Dispensary",
       "due_on": "2026-11-20"
@@ -1376,49 +1158,13 @@
       "due_on": "2026-11-21"
     },
     {
-      "organization_id": "org-9e14a3bfda99",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
-      "organization_id": "org-9878f97747e7",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
-      "organization_id": "org-c081c812feb2",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
       "organization_id": "org-405c00e28938",
       "tier": "full-review",
       "category": "Cultivator / Processor / Dispensary",
       "due_on": "2026-11-21"
     },
     {
-      "organization_id": "org-471d2f40325e",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
-      "organization_id": "org-667af67557f3",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
       "organization_id": "org-0dba2c8a737d",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
-      "organization_id": "org-3a4a21b3faf4",
       "tier": "full-review",
       "category": "Cultivator / Processor / Dispensary",
       "due_on": "2026-11-21"
@@ -1436,36 +1182,6 @@
       "due_on": "2026-11-21"
     },
     {
-      "organization_id": "org-40726ffc20a0",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
-      "organization_id": "org-34013988f2ee",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
-      "organization_id": "org-d1d519732a19",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
-      "organization_id": "org-2eb414488b5a",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
-      "organization_id": "org-cbec823aceb6",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
       "organization_id": "org-f3d5255d5bc7",
       "tier": "full-review",
       "category": "Cultivator / Processor / Dispensary",
@@ -1478,55 +1194,7 @@
       "due_on": "2026-11-21"
     },
     {
-      "organization_id": "org-17949ca7057c",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
       "organization_id": "org-ae7e208afc98",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
-      "organization_id": "org-b434c8bd9f4c",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
-      "organization_id": "org-fa59d5f74ed0",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
-      "organization_id": "org-4d7897d29e7e",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
-      "organization_id": "org-a4be8fc0719f",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
-      "organization_id": "org-171927b374cf",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
-      "organization_id": "org-e0b1fa95a12d",
-      "tier": "full-review",
-      "category": "Cultivator / Processor / Dispensary",
-      "due_on": "2026-11-21"
-    },
-    {
-      "organization_id": "org-c987375d90fe",
       "tier": "full-review",
       "category": "Cultivator / Processor / Dispensary",
       "due_on": "2026-11-21"

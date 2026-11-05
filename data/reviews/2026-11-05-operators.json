@@ -1,0 +1,1043 @@
+{
+  "reviewed_on": "2026-11-05",
+  "baseline_commit": "a02cb2a",
+  "method": "Operators and testing labs due for full review by 2026-11-22. Each record was matched by name to the Ohio Division of Cannabis Control's published license lists (cultivator, processor and testing-lab lists dated 10/26/2026; dual-use dispensary certificate list as of 11/4/2026), then its listed first-party website was loaded in a browser and checked for Ohio or operator content and a contact route. A review is dated only when both checks succeeded. Age-gated, empty or redirected-elsewhere pages, unmatched brand names and flagged discrepancies are recorded as attempts and keep their prior review date.",
+  "completed": [
+    {
+      "organization_id": "org-9e14a3bfda99",
+      "name": "ACA Dispensary",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-23",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://acadispensary.com/ohio/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): ACA Dispensary, 437 E. Liberty St., Hubbard. First-party site loaded on 2026-11-05 (ACA Dispensary in Hubbard, Ohio is a licensed medical cannabis dispensary). Contact route: +3305684328, info@acadispensary.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-68ca5164ba06",
+      "name": "Amplify",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-16",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://amplifydispensary.com/contact-us/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Amplify at Bedford, Cleveland Heights, Columbus and Eastlake. First-party site loaded on 2026-11-05 (title: Locations in Bedford, Columbus & Cleveland Heights, OH). Contact route: +14403068583.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-cadae1a17de3",
+      "name": "Ancient Roots",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-14",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/processor-licenses",
+        "https://www.ancientrootsohio.com/contact/"
+      ],
+      "finding": "License: DCC Cultivator Licenses (list dated 10/26/2026): Ancient Roots, LLC, CCC000050-00; DCC Processor Licenses (list dated 10/26/2026): Ancient Roots, LLC, CCP000064-00. First-party site loaded on 2026-11-05 (Ancient Roots is a Cannabis manufacturer in Ohio). Contact route: contact@ancientrootsohio.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-9878f97747e7",
+      "name": "Ascend Cannabis",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-23",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://letsascend.com/locations/ohio/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Ascend Coshocton; Ascend Dispensary Outlet, Sandusky; Ascend Dispensary, Piqua; Ascend Dispensary Englewood. First-party site loaded on 2026-11-05 (Ascend has six medical and non-medical cannabis dispensaries in Ohio). Contact route: 7087221488.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-31d30a079044",
+      "name": "Ascension BioMedical LLC",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-16",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses",
+        "https://ascensioncann.com/"
+      ],
+      "finding": "License: DCC Cultivator Licenses (list dated 10/26/2026): Ascension BioMedical, LLC, CCC000019-00, Dual Use Cultivator Level II. First-party site loaded on 2026-11-05 (consistency and quality in the cultivation of cannabis in the State of Ohio). Contact route: contact route not captured.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified. Read after the 21+ age gate; /contact/ returns 404, so no contact route was captured."
+    },
+    {
+      "organization_id": "org-cd73b383c43b",
+      "name": "Backroad Wellness",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-16",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://www.backroadwellness.com/FAQs/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Backroad Wellness at Lima, Cambridge and New Boston. First-party site loaded on 2026-11-05 (Lima, Ohio). Contact route: 7402555592, info@backroadwellness.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-7831babce707",
+      "name": "Beneleaves",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-14",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/processor-licenses",
+        "https://www.beneleaves.com/ourteam"
+      ],
+      "finding": "License: DCC Processor Licenses (list dated 10/26/2026): Beneleaves Limited, CCP000016-00. First-party site loaded on 2026-11-05 (Columbus, Ohio 43204; White Label Cannabis in Ohio). Contact route: info@beneleaves.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-c081c812feb2",
+      "name": "Beyond Hello",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-23",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://jushico.com/retail/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Beyond Hello at Oxford, Cincinnati (2), Parma, Toledo, Mansfield and Warren. First-party site loaded on 2026-11-05 (Ohio listed among Beyond/Hello retail markets). Contact route: DCC-listed location phone numbers.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-f84af119e259",
+      "name": "Bliss Ohio",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-17",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://blissohio.com/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Bliss Ohio, 331 E. Main St., Kent. First-party site loaded on 2026-11-05 (Medical Marijuana Dispensary, Kent Ohio). Contact route: contact@blissohio.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-922caf289dc8",
+      "name": "Bloom Cannabis (formerly Bloom Medicinals)",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-17",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://bloommarijuana.com/oh/contact"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): listed as Bloom Medicinals at Athens, Seven Mile, Columbus (2), Painesville, Massillon and Akron. First-party site loaded on 2026-11-05 (Contact Bloom's Ohio Dispensaries). Contact route: 5672135101, web@bloommedicinals.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-24ac5cb3557c",
+      "name": "Buckeye Relief",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-15",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/processor-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://buckeyerelief.com/"
+      ],
+      "finding": "License: DCC Cultivator Licenses (list dated 10/26/2026): Buckeye Relief LLC, CCC000041-00; DCC Processor Licenses (list dated 10/26/2026): Buckeye Relief LLC, CCP000042-00; DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Buckeye Relief, Painesville Township. First-party site loaded on 2026-11-05 (Ohio's Premiere marijuana cultivator and processor). Contact route: 4405302880, info@buckeyerelief.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-1d44aa49bf35",
+      "name": "Certified Cultivators",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-14",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/processor-licenses",
+        "https://www.certifiedcultivators.com/contact"
+      ],
+      "finding": "License: DCC Cultivator Licenses (list dated 10/26/2026): Certified Cultivators Corporation, CCC000023-00; DCC Processor Licenses (list dated 10/26/2026): Certified Cultivators Corporation, CCP000019-00. First-party site loaded on 2026-11-05 ((license list establishes Ohio)). Contact route: info@certifiedcultivators.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-471d2f40325e",
+      "name": "Cielo Jardin / Treehaus / CJ's (Heylo)",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-23",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/processor-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://www.heylocannabis.com/contact"
+      ],
+      "finding": "License: DCC Cultivator Licenses (list dated 10/26/2026): Cielo Jardin, LLC, CCC000040-00; DCC Processor Licenses (list dated 10/26/2026): Cielo Processing LLC, CCP000071-00; DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Cielo Jardin, Parma. First-party site loaded on 2026-11-05 ((license list establishes Ohio; parent contact is Washington-based)). Contact route: +12065325444.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-667af67557f3",
+      "name": "Cresco Labs / Sunnyside",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-23",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/processor-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://investors.crescolabs.com/news/news-details/2026/Cresco-Labs-Reports-First-Quarter-2026-Financial-Results-Advances-Multiple-Growth-Initiatives/default.aspx"
+      ],
+      "finding": "License: DCC Cultivator Licenses (list dated 10/26/2026): Cresco Labs Ohio, LLC, CCC000013-00; DCC Processor Licenses (list dated 10/26/2026): Cresco Labs Ohio, LLC, CCP000012-00; DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Sunnyside at Cincinnati, Wintersville, Proctorville, Newark, Marion and Chillicothe; Cresco Labs Ohio at Bridgeport and Aberdeen. First-party site loaded on 2026-11-05 (Opened two new Ohio dispensaries: Bridgeport on April 10, 2026, and Aberdeen on May 5, 2026). Contact route: DCC-listed location phone numbers.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified. The listed website is an investor news release, not an operator contact page."
+    },
+    {
+      "organization_id": "org-550cc193e4d0",
+      "name": "Culture Cannabis Club",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-22",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://culturecannabisclub.com/location/akron-oh/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Culture Cannabis Club, Tallmadge; Culture Retail Partners of Ohio at Columbus and Akron. First-party site loaded on 2026-11-05 (Dispensary Near Me in Akron, OH). Contact route: +18048065240.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-27e668beecb1",
+      "name": "Elevated Growth",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-16",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://www.elevated-growth.com/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Elevated Growth, 7520 High Cross Blvd., Columbus. First-party site loaded on 2026-11-05 (Medical & Non-Medical Cannabis Dispensary in Columbus, Ohio). Contact route: 6145050015.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified. site mailto is a template placeholder (info@website.com); do not use as a contact."
+    },
+    {
+      "organization_id": "org-3a4a21b3faf4",
+      "name": "Ethos Cannabis / Meigs County Grown",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-23",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://ethoscannabis.com/contact/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Ethos at New Lexington and Lebanon (no cultivator license under the Ethos or Meigs County Grown name). First-party site loaded on 2026-11-05 (Ohio listed on contact page). Contact route: 6106744483.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-90725b1d60a7",
+      "name": "FarmaceuticalRx",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-22",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/processor-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://farmaceuticalrx.com/contact/"
+      ],
+      "finding": "License: DCC Cultivator Licenses (list dated 10/26/2026): Farmaceutical RX, LLC, CCC000034-00; DCC Processor Licenses (list dated 10/26/2026): Farmaceutical RX, LLC, CCP000045-00; DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): FarmaceuticalRx/FRX locations including East Liverpool, Dayton, Akron, Middletown and Cuyahoga Falls. First-party site loaded on 2026-11-05 (Ohio listed on contact page). Contact route: 724-655-3335, info@farmaceuticalrx.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-02393016e488",
+      "name": "Feel State",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-16",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://feelstate.com/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Feel State, 962 N. Main St., Urbana. First-party site loaded on 2026-11-05 (title: Best Cannabis Dispensary In MO And OH). Contact route: DCC-listed location phone numbers.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-bd430c7e91b0",
+      "name": "Galenas LLC",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-14",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses",
+        "https://galenas.com/"
+      ],
+      "finding": "License: DCC Cultivator Licenses (list dated 10/26/2026): Galenas LLC, CCC000032-00, Dual Use Cultivator Level II. First-party site loaded on 2026-11-05 ((license list establishes Ohio; 330 area code)). Contact route: 3302089423.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-364a9eed8729",
+      "name": "Green Thumb Industries (RISE / RYTHM)",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-22",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/processor-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://risecannabis.com/dispensaries/ohio/"
+      ],
+      "finding": "License: DCC Cultivator Licenses (list dated 10/26/2026): GTI Ohio, LLC, CCC000030-00; DCC Processor Licenses (list dated 10/26/2026): GTI Ohio, LLC, CCP000027-00; DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): GTI Ohio, LLC at Lakewood, Cleveland (2), Whitehall, Lorain and Toledo. First-party site loaded on 2026-11-05 (Find an Ohio Dispensary nearby (RISE Ohio locations page)). Contact route: DCC-listed location phone numbers.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-40726ffc20a0",
+      "name": "Greenlight Dispensary",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-23",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://ohio.greenlightdispensary.com/locations/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Greenlight Dispensary at Springfield, Columbus, Sandusky, Wintersville, Ironton and Marengo. First-party site loaded on 2026-11-05 (Ohio Greenlight locations page). Contact route: 6144073111.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified. Read after the 21+ age gate."
+    },
+    {
+      "organization_id": "org-73fe6ae295b7",
+      "name": "Guaranteed Dispensary",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-16",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://guaranteeddispensary.com/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Guaranteed Dispensary, 1910 Wayne Ave., Dayton. First-party site loaded on 2026-11-05 (title: Cannabis Dispensary in Dayton Ohio). Contact route: (937)401-2550.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-86d0f1c54920",
+      "name": "Hundred Percent Labs",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-22",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/processor-licenses",
+        "https://www.hundredpercentlabs.com/contact-us/"
+      ],
+      "finding": "License: DCC Processor Licenses (list dated 10/26/2026): Hundred Percent Labs, CCP000037-00. First-party site loaded on 2026-11-05 ((license list establishes Ohio)). Contact route: Ladybugs@HundredPercentLabs.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-55ddf9f58f12",
+      "name": "Italian Herbs",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-17",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://italianherbsdispensary.com/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Italian Herbs, 2712 W. Prospect Rd., Ashtabula. First-party site loaded on 2026-11-05 (medical and recreational cannabis dispensary in Ashtabula, Ohio). Contact route: (440) 990-1600, ciao@italianherbsdispensary.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-34013988f2ee",
+      "name": "King City Gardens",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-23",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://kingcitygardens.com/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): King City Gardens, Cincinnati; The Garden by KCG at Cincinnati (2) (no cultivator listed under the King City Gardens name). First-party site loaded on 2026-11-05 (Level 1 cannabis cultivation company headquartered in Cincinnati, Ohio). Contact route: contact@kingcitygardens.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified. site claims Level 1 cultivator license; no cultivator named King City Gardens on DCC Oct 26 list (legal entity name not matched)."
+    },
+    {
+      "organization_id": "org-d1d519732a19",
+      "name": "Klutch Cannabis",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-23",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/processor-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://www.klutchcannabis.com/"
+      ],
+      "finding": "License: DCC Processor Licenses (list dated 10/26/2026): Klutch Cannabis, CCP000043-00; DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Klutch Cannabis at Loudonville, Cleveland, Columbus, Lorain, Canton and Northfield; The Citizen by Klutch, Wellington. First-party site loaded on 2026-11-05 (Since our founding in April of 2020 in Akron, Ohio). Contact route: DCC-listed location phone numbers.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-2eb414488b5a",
+      "name": "Leaf Relief",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-23",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://leafreliefohio.com/contact-us"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Leaf Relief, 4323 Market St., Youngstown. First-party site loaded on 2026-11-05 (4323 Market Street, Youngstown, Ohio 44512). Contact route: 3303333925.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-63bd45e3d30d",
+      "name": "Locals Cannabis Dispensary",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-22",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://localscannabis.com/contact/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Locals Dispensary at Columbus and Cincinnati. First-party site loaded on 2026-11-05 (Ohio dispensary locations in Columbus or Cincinnati). Contact route: 614-914-5007.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-cbec823aceb6",
+      "name": "Main Street Cannabis Co.",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-23",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://mainstreetcannabis.co/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Main Street Medical Cannabis, 3111 E. Main St., Columbus. First-party site loaded on 2026-11-05 (title: Columbus, OH Dispensary). Contact route: +1-614-670-4384.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-9ee377e930fd",
+      "name": "Mavuno of Ohio",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-22",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://mavunoofoh.com/contact-us/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Mavuno of Athens at Athens and Cleveland. First-party site loaded on 2026-11-05 (title: Contact Mavuno | Cleveland & Athens Dispensaries). Contact route: DCC-listed location phone numbers.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified. Read after the 21+ age gate."
+    },
+    {
+      "organization_id": "org-1347773f0174",
+      "name": "Mother’s Earth Fine Cannabis",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-22",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://shopmotherearths.com/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Mother Earth's Fine Cannabis, 1652 Neil Ave., Columbus. First-party site loaded on 2026-11-05 (Columbus storefront home page). Contact route: DCC-listed location phone numbers.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified. Read after the 21+ age gate."
+    },
+    {
+      "organization_id": "org-5557bb333b04",
+      "name": "Nectar Ohio",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-22",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://nectarohio.com/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Nectar Medical Cannabis Dispensary at Euclid, Cincinnati (3), Harrison and Bowling Green. First-party site loaded on 2026-11-05 (Where to find Nectar in Ohio). Contact route: DCC-listed location phone numbers.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-17949ca7057c",
+      "name": "Off The Charts Dayton",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-23",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://otcdispo.com/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Off The Charts, 3145 Salem Ave., Dayton. First-party site loaded on 2026-11-05 (Off The Charts home page (Dayton)). Contact route: +19379525039.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified. Read after the 21+ age gate."
+    },
+    {
+      "organization_id": "org-d480f46274ac",
+      "name": "Ohio Cannabis Company",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-22",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://occdispensary.com/locations/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Ohio Cannabis Company at Columbus, Dublin, Piqua, Canton and Harpster. First-party site loaded on 2026-11-05 (Canton, Ohio 44706 (locations page)). Contact route: 937-641-0620, piqua@occdispensary.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-aefe1b952bc0",
+      "name": "PharmaCann / Verilife",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-14",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/processor-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://www.verilife.com/oh/locations/cincinnati",
+        "https://verilifeoh.com/"
+      ],
+      "finding": "License: DCC Cultivator Licenses (list dated 10/26/2026): PharmaCann Ohio LLC, CCC000024-00; DCC Processor Licenses (list dated 10/26/2026): PharmaCann Ohio LLC, CCP000021-00; DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Verilife at Wapakoneta, Cincinnati and Hillsboro. First-party site loaded on 2026-11-05 (operator page). Contact route: DCC-listed location phone numbers.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified. Listed URL now redirects to verilifeoh.com; Website updated to the redirect target.",
+      "field_changes": {
+        "Website": {
+          "before": "https://www.verilife.com/oh/locations/cincinnati",
+          "after": "https://verilifeoh.com/"
+        }
+      }
+    },
+    {
+      "organization_id": "org-73dbb4d51092",
+      "name": "Pure Ohio Wellness",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-14",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/processor-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://www.pureohiowellness.com/"
+      ],
+      "finding": "License: DCC Cultivator Licenses (list dated 10/26/2026): Pure Ohio Wellness, LLC, CCC000027-00; DCC Processor Licenses (list dated 10/26/2026): Pure Ohio Wellness, LLC, CCP000030-00; DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Pure Ohio Wellness at Dayton and Tallmadge; Pure Ohio London LLC. First-party site loaded on 2026-11-05 (Ohio Medical and Adult-Use Cannabis Dispensary; in-house cultivated flower). Contact route: DCC-listed location phone numbers.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-2b099217b822",
+      "name": "Purpose Leaf / hōn Cannabis",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-22",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/processor-licenses",
+        "https://www.honcannabis.com/contact/"
+      ],
+      "finding": "License: DCC Processor Licenses (list dated 10/26/2026): Purpose Leaf, LLC, CCP000035-00. First-party site loaded on 2026-11-05 ((Purpose Leaf processor license; 614 Columbus phone)). Contact route: +16144535702, Sales@purposeleaf.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-9bdb83da8d0c",
+      "name": "Ratio Cannabis",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-22",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://www.ratio-cannabis.com/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Ratio, 1145 W. High Ave., New Philadelphia. First-party site loaded on 2026-11-05 (Medical & Recreational Dispensary in New Philadelphia, OH). Contact route: Ratio@RATIO-CANNABIS.COM.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-b434c8bd9f4c",
+      "name": "Riviera Creek",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-23",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/processor-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://rivieracreek.com/contact/"
+      ],
+      "finding": "License: DCC Cultivator Licenses (list dated 10/26/2026): Riviera Creek Holdings LLC, CCC000015-00; DCC Processor Licenses (list dated 10/26/2026): Riviera Creek Holdings II, LLC, CCP000014-00; DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Riviera Creek, Lorain. First-party site loaded on 2026-11-05 (title: Contact Us | Ohio Cannabis Experts | Riviera Creek). Contact route: DCC-listed location phone numbers.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified. Read after the 21+ age gate."
+    },
+    {
+      "organization_id": "org-31a9d040cd43",
+      "name": "ROAM Dispensary",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-22",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://roamdispo.com/contact/",
+        "https://www.roamdispensary.com/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): ROAM Dispensary, 7781 Broadview Rd., Seven Hills. First-party site loaded on 2026-11-05 (title: Medical & Recreational Cannabis in Ohio). Contact route: +12163739238, info@roamdispensary.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified. Listed URL now redirects to roamdispensary.com; Website updated to the redirect target.",
+      "field_changes": {
+        "Website": {
+          "before": "https://roamdispo.com/contact/",
+          "after": "https://www.roamdispensary.com/"
+        }
+      }
+    },
+    {
+      "organization_id": "org-807016fdf315",
+      "name": "Shangri-La Dispensaries",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-22",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://shangriladispensaries.com/contact-us/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Shangri-La Dispensary locations including Monroe, Cleveland, Cincinnati, Delphos and Amelia. First-party site loaded on 2026-11-05 (1143 Ohio Pike (Amelia); Ohio locations listed). Contact route: (513) 718-0028, info@slcann.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-a05f9afca5ef",
+      "name": "Southern Ohio Botanicals",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-15",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://southernohiobotanicals.com/about/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Southern Ohio Botanicals at Waverly and Portsmouth. First-party site loaded on 2026-11-05 (Medical Marijuana Dispensary in Waverly, Ohio). Contact route: +17404964186, support@southernohiobotanicals.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-fa59d5f74ed0",
+      "name": "Standard Wellness / The Forest",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-23",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/processor-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://www.standardwellness.com/contact/"
+      ],
+      "finding": "License: DCC Cultivator Licenses (list dated 10/26/2026): Standard Wellness Company, LLC, CCC000014-00; DCC Processor Licenses (list dated 10/26/2026): Standard Wellness Company, LLC, CCP000013-00; DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): The Forest at Cincinnati, Lakewood and Seville. First-party site loaded on 2026-11-05 (Ohio on contact page (likely form-only)). Contact route: DCC-listed location phone numbers.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-2f4e4abf2576",
+      "name": "Story Cannabis",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-17",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://storycannabis.com/contact-us/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Story at Coshocton, Cleveland, Dublin, Cincinnati, Forest Park and Massillon. First-party site loaded on 2026-11-05 (Ohio on contact page (likely form-only)). Contact route: DCC-listed location phone numbers.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-4d7897d29e7e",
+      "name": "Terrasana Cannabis Co.",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-23",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://terrasanacannabisco.com/about/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Terrasana at Springfield, Garfield Heights, Parma, Columbus (2), Fremont and Middletown. First-party site loaded on 2026-11-05 (an Ohio-based medical and non-medical cannabis company). Contact route: DCC-listed location phone numbers.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-7022b334ede8",
+      "name": "The Botanist (Acreage Holdings)",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-16",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://shopbotanist.com/locations/columbus-dispensary/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): The Botanist at Columbus and Wickliffe. First-party site loaded on 2026-11-05 (our Columbus, Ohio dispensary). Contact route: 614-924-2155, columbus@shopbotanist.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-a4be8fc0719f",
+      "name": "The Garden Club Dispensary",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-23",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://gardenclubdispensaries.com/ohio/dispensary-near-pleasant-run-farm/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): The Garden Club Dispensary, 109 W. Kemper Rd., Springdale. First-party site loaded on 2026-11-05 (As an Ohio dispensary, Garden Club). Contact route: +1 (513) 386-8027.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-4c8da4a965ec",
+      "name": "The Mothership Cannabis Dispensary",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-22",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://mothershipdispensary.com/contact/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): The Mothership Cannabis Dispensary, 9756 State Route 14, Streetsboro. First-party site loaded on 2026-11-05 (title: Streetsboro, Ohio Dispensary). Contact route: +13304228990, info@mothershipdispensary.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified. site phone 330-422-8990 differs from DCC list phone (330) 409-4442."
+    },
+    {
+      "organization_id": "org-1587d77e43a5",
+      "name": "Theory Wellness",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-17",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://theorywellness.org/ohio-dispensary/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Theory Wellness at Sherwood and Columbus. First-party site loaded on 2026-11-05 (our Sherwood and Columbus dispensaries proudly serve Ohio). Contact route: DCC-listed location phone numbers.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-171927b374cf",
+      "name": "Trulieve Ohio",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-23",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://www.trulieveoh.com/shop/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Trulieve at Columbus (3), Cincinnati, Findlay, Lorain and Zanesville. First-party site loaded on 2026-11-05 (title: Trulieve Medical Marijuana Ohio). Contact route: (937) 696-0029.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-e0b1fa95a12d",
+      "name": "UpLift",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-23",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://www.upliftohio.com/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Uplift at Mount Orab, Milford and Cleves. First-party site loaded on 2026-11-05 (premier medical cannabis provider, Ohio Owned and Operated). Contact route: 5135878787.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-2412bd73869d",
+      "name": "Verano / Zen Leaf",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-17",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://investors.verano.com/news-releases/news-release-details/verano-announces-fourth-quarter-and-full-year-2025-financial"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Zen Leaf at Cincinnati, Newark, Riverside (Dayton), Canton and Bowling Green; Mother Grows Best, Antwerp. First-party site loaded on 2026-11-05 (Elevated Ohio retail footprint to six dispensaries statewide with the opening of Zen Leaf Antwerp). Contact route: DCC-listed location phone numbers.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified. The listed website is an investor news release, not an operator contact page."
+    },
+    {
+      "organization_id": "org-c987375d90fe",
+      "name": "Vext Science / Appalachian Pharm / Herbal Wellness Center / The Hive",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-23",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/processor-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://vextscience.com/"
+      ],
+      "finding": "License: DCC Cultivator Licenses (list dated 10/26/2026): Appalachian Pharm Products, LLC, CCC000022-00; DCC Processor Licenses (list dated 10/26/2026): Appalachian Pharm Processing, LLC, CCP000018-00; DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Herbal Wellness Center at Athens, Fairfield, Columbus, Jackson and Portsmouth; The Hive Dispensary, New Paris. First-party site loaded on 2026-11-05 (cannabis operator with core operations in Arizona and Ohio). Contact route: DCC-listed location phone numbers.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-79984c5926e3",
+      "name": "Woodward Fine Cannabis (formerly Pollen)",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-22",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://woodwardcannabis.com/locations/woodward-delaware/"
+      ],
+      "finding": "License: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Woodward, Delaware; Woodward Fine Cannabis, Columbus. First-party site loaded on 2026-11-05 (title: Premium Delaware Dispensary Medical Cannabis). Contact route: (740) 262-8198.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-8fd15920db44",
+      "name": "North Coast Testing Laboratories, LLC",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-16",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/testinglab-licenses",
+        "https://www.northcoasttestinglabs.com/"
+      ],
+      "finding": "License: DCC Testing Laboratory Licenses (list dated 10/26/2026): North Coast Testing Laboratories, LLC, CCL000014-00, Dual Use Testing Laboratory, Certificate of Operation. First-party site loaded on 2026-11-05 ((DCC testing lab license)). Contact route: info@nctl.com.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified."
+    },
+    {
+      "organization_id": "org-74e57cabf73f",
+      "name": "Pinnacle Testing and Specialty Lab",
+      "reviewed_on": "2026-11-05",
+      "prior_last_reviewed": "2026-08-16",
+      "scope": "full-review",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/testinglab-licenses",
+        "https://pinnacletestinglabs.com/"
+      ],
+      "finding": "License: DCC Testing Laboratory Licenses (list dated 10/26/2026): Pinnacle Testing and Specialty Lab, CCL000015-00, Dual Use Testing Laboratory, Certificate of Operation. First-party site loaded on 2026-11-05 (testing laboratory in Ohio). Contact route: 3309834944.",
+      "limitations": "Licenses read from DCC's published lists (cultivator, processor and lab lists dated 10/26/2026; dispensary list as of 11/4/2026). The website check confirmed the page loads with Ohio or operator content; menus, inventory, hours, named contacts and each location address were not re-verified. Read after the 21+ age gate."
+    }
+  ],
+  "blocked": [
+    {
+      "organization_id": "org-9ee4b284a472",
+      "name": "Farkas Farms",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses"
+      ],
+      "result": "License confirmed (DCC Cultivator Licenses (list dated 10/26/2026): Farkas Farms, LLC, CCC000038-00, Dual Use Cultivator Level II, Certificate of Operation). No company website is on record, so the operator site check could not be done.",
+      "next_action": "Find a current company-controlled website or contact page; keep the record in the missing-website queue."
+    },
+    {
+      "organization_id": "org-7e1ab15e4a71",
+      "name": "Ohio Clean Leaf",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses",
+        "https://ohiocleanleaf.com/"
+      ],
+      "result": "License confirmed (DCC Cultivator Licenses (list dated 10/26/2026): Ohio Clean Leaf LLC, CCC000020-00, Dual Use Cultivator Level II, Certificate of Operation). Listed website https://ohiocleanleaf.com/ returned HTTP 404.",
+      "next_action": "Find the current company website and update the Website field."
+    },
+    {
+      "organization_id": "org-51ddc559a90e",
+      "name": "A Dose of Hope",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://adoseofhopebrand.com/where-to-buy/"
+      ],
+      "result": "No DCC license under this name. Listed website https://adoseofhopebrand.com/where-to-buy/ loads but stops at an age-verification gate, so its content was not read.",
+      "next_action": "Complete the site check manually past the age gate, then date the review."
+    },
+    {
+      "organization_id": "org-7b1ec7846617",
+      "name": "Ayr Wellness Ohio",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://ayrwellness.com/"
+      ],
+      "result": "License confirmed (DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): AYR Dispensary at Woodmere, Parma Heights, Lewis Center, Dayton, Streetsboro and Niles; Ayr Wellness, Goshen). Listed website https://ayrwellness.com/ loads, but no Ohio text or contact route was captured. corporate homepage; no Ohio mention or contact route on page",
+      "next_action": "Check the operator site manually (locations or contact page) and update the Website field if a better first-party page exists."
+    },
+    {
+      "organization_id": "org-405c00e28938",
+      "name": "Black Buddha Cannabis",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://blackbuddhacannabis.co/contact"
+      ],
+      "result": "No DCC license under this name. Listed website https://blackbuddhacannabis.co/contact loads, but no Ohio text or contact route was captured. contact page loads; no Ohio mention, phone or email",
+      "next_action": "Check the operator site manually (locations or contact page) and update the Website field if a better first-party page exists."
+    },
+    {
+      "organization_id": "org-64ee2d0eff77",
+      "name": "Canopy Growth / Acreage",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://www.acreageholdings.com/contact-us/"
+      ],
+      "result": "No DCC license under this name. Listed website https://www.acreageholdings.com/contact-us/ loads, but no Ohio text or contact route was captured. parent-company contact page; no Ohio mention",
+      "next_action": "Check the operator site manually (locations or contact page) and update the Website field if a better first-party page exists."
+    },
+    {
+      "organization_id": "org-2adb331ca783",
+      "name": "Consume Cannabis (PTS Grows)",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://consumecannabis.com/"
+      ],
+      "result": "License confirmed (DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Consume Oxford, Oxford; Consume Cannabis Co., Cincinnati). Listed website https://consumecannabis.com/ loads, but no Ohio text or contact route was captured. homepage loads; no Ohio mention or contact link captured",
+      "next_action": "Check the operator site manually (locations or contact page) and update the Website field if a better first-party page exists."
+    },
+    {
+      "organization_id": "org-0dba2c8a737d",
+      "name": "Dialed In Gummies",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://dialedingummies.com/contact/"
+      ],
+      "result": "No DCC license under this name; brand or parent listing. Listed website https://dialedingummies.com/contact/ loads (Ohio mentioned on contact page; no phone/email link).",
+      "next_action": "Identify the licensed Ohio operator behind this brand from a primary source before dating a full review."
+    },
+    {
+      "organization_id": "org-403a8f6287f1",
+      "name": "Firelands Scientific",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://www.firelandsscientific.com/contact"
+      ],
+      "result": "License confirmed (DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Firelands Scientific at Athens and Huron). Listed website https://www.firelandsscientific.com/contact loads, but no Ohio text or contact route was captured. contact page loads; no phone, email or Ohio text captured (likely form-only)",
+      "next_action": "Check the operator site manually (locations or contact page) and update the Website field if a better first-party page exists."
+    },
+    {
+      "organization_id": "org-783986a56f1d",
+      "name": "Green Leaf Therapy",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://greenleaftherapy.org/pages/contact"
+      ],
+      "result": "License confirmed (DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Green Leaf Therapy LLC, 93 S. Bridge St., Struthers). Listed website https://greenleaftherapy.org/pages/contact loads, but no Ohio text or contact route was captured. contact page nearly empty (328 chars); no phone, email or Ohio text",
+      "next_action": "Check the operator site manually (locations or contact page) and update the Website field if a better first-party page exists."
+    },
+    {
+      "organization_id": "org-0fe664576c8d",
+      "name": "Green Releaf Dispensary",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://greenreleafdispensary.com/contact-us"
+      ],
+      "result": "License evidence: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Green Releaf at Cincinnati (4025 Red Bank Rd.) and Dayton (3620 Germantown St.). Site describes itself as serving Missouri, Illinois, Ohio and Kentucky with '14 premier listings' and an Illinois phone; confirm this is the Ohio dispensary's own site and not a directory or look-alike.",
+      "next_action": "Resolve the flagged discrepancy against a primary source before dating the review."
+    },
+    {
+      "organization_id": "org-cfc630983d08",
+      "name": "Grow Ohio / Butterfly Effect",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/processor-licenses",
+        "https://growoh.com/"
+      ],
+      "result": "License confirmed (DCC Cultivator Licenses (list dated 10/26/2026): Grow Ohio, LLC, CCC000029-00; DCC Processor Licenses (list dated 10/26/2026): Grow Ohio, LLC, CCP000026-00). Listed website https://growoh.com/ loads but stops at an age-verification gate, so its content was not read.",
+      "next_action": "Complete the site check manually past the age gate, then date the review."
+    },
+    {
+      "organization_id": "org-afa309caf39c",
+      "name": "INSA",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://insa.com/oh/contact-insa/"
+      ],
+      "result": "No DCC license under this name. No INSA-named dispensary on DCC's Nov 4 list; confirm which licensed location(s) INSA operates in Ohio. Site loaded: Ohio contact page loads.",
+      "next_action": "Resolve the flagged discrepancy against a primary source before dating the review."
+    },
+    {
+      "organization_id": "org-fee14b6a9c90",
+      "name": "Lighthouse Sciences",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://lighthousesci.com/"
+      ],
+      "result": "No DCC license under this name. Listed website https://lighthousesci.com/ loads but stops at an age-verification gate, so its content was not read.",
+      "next_action": "Complete the site check manually past the age gate, then date the review."
+    },
+    {
+      "organization_id": "org-105e0713e773",
+      "name": "Mood Leaf",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://www.moodleaf.com/contact"
+      ],
+      "result": "No DCC license under this name; brand or parent listing. Listed website https://www.moodleaf.com/contact loads (MoodLeaf Ohio; Designed for Ohio consumers). brand site live; licensed operator behind the brand still not established",
+      "next_action": "Identify the licensed Ohio operator behind this brand from a primary source before dating a full review."
+    },
+    {
+      "organization_id": "org-f3d5255d5bc7",
+      "name": "Nar Cannabis",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://www.narreserve.com/contact-us/"
+      ],
+      "result": "License evidence: DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Nar Cannabis at Delaware and Columbus. Listed website now redirects to a store titled 'Michigan's Exclusive Weed Dispensary'; Nar Cannabis Ohio locations (Delaware, Columbus) are on DCC's Nov 4 list, so the record needs its correct Ohio website.",
+      "next_action": "Resolve the flagged discrepancy against a primary source before dating the review."
+    },
+    {
+      "organization_id": "org-a821a61acb08",
+      "name": "Nirvana Center Dispensaries",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://ohio.nirvanacannabis.com/contact/"
+      ],
+      "result": "No DCC license under this name. Elyria contact route; no Nirvana-named dispensary on DCC's Nov 4 list; confirm which licensed Elyria location it operates (DCC lists CREAM Apothecaries Ohio at 914 Cleveland St. and FRX Elyria).",
+      "next_action": "Resolve the flagged discrepancy against a primary source before dating the review."
+    },
+    {
+      "organization_id": "org-6cae66a61594",
+      "name": "Northwoods Cannabis",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://northwoodscultivation.com/contact"
+      ],
+      "result": "No DCC license under this name. Site presents as 'Michigan's premier cannabis cultivation'; no Ohio text and no Ohio license by this name.",
+      "next_action": "Resolve the flagged discrepancy against a primary source before dating the review."
+    },
+    {
+      "organization_id": "org-ae7e208afc98",
+      "name": "Queen City Cannabis",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://www.queenccanna.com/"
+      ],
+      "result": "License confirmed (DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Queen City Cannabis Dispensary at Harrison and Norwood). Listed website https://www.queenccanna.com/ loads, but no Ohio text or contact route was captured. homepage loads; no Ohio text or contact link captured",
+      "next_action": "Check the operator site manually (locations or contact page) and update the Website field if a better first-party page exists."
+    },
+    {
+      "organization_id": "org-9770d5914483",
+      "name": "Rove",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://rovebrand.com/"
+      ],
+      "result": "No DCC license under this name. Listed website https://rovebrand.com/ loads, but no Ohio text or contact route was captured. national brand homepage; no Ohio mention or contact link captured",
+      "next_action": "Check the operator site manually (locations or contact page) and update the Website field if a better first-party page exists."
+    },
+    {
+      "organization_id": "org-acbcf491323e",
+      "name": "Supergood",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://supergoodstore.com/store/ravenna/"
+      ],
+      "result": "License confirmed (DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Supergood, 554 N. Chestnut St., Ravenna). Listed website https://supergoodstore.com/store/ravenna/ loads, but no Ohio text or contact route was captured. store page loads with almost no text (180 chars); no Ohio text or contact link captured",
+      "next_action": "Check the operator site manually (locations or contact page) and update the Website field if a better first-party page exists."
+    },
+    {
+      "organization_id": "org-342301c01b6b",
+      "name": "The Cannabist Company / Columbia Care Ohio",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/cultivators-processors/cultivator-licenses",
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://www.cannabistcompany.com/contact-us"
+      ],
+      "result": "License confirmed (DCC Cultivator Licenses (list dated 10/26/2026): Columbia Care OH LLC, CCC000028-00; DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Cannabist at Monroe, Logan, Dayton, Warren and Marietta; Columbia Care OH at St. Clairsville and Norwalk). Listed website https://www.cannabistcompany.com/contact-us loads, but no Ohio text or contact route was captured. corporate contact page; no Ohio text, phone or email captured",
+      "next_action": "Check the operator site manually (locations or contact page) and update the Website field if a better first-party page exists."
+    },
+    {
+      "organization_id": "org-541abb14f3bc",
+      "name": "Therapy Cannabis",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://www.therapycannabis.com/contact/"
+      ],
+      "result": "License confirmed (DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Therapy Cannabis, Cincinnati; Therapy Medical Cannabis, Cleveland). Listed website https://www.therapycannabis.com/contact/ loads, but no Ohio text or contact route was captured. contact page loads; no Ohio text, phone or email captured",
+      "next_action": "Check the operator site manually (locations or contact page) and update the Website field if a better first-party page exists."
+    },
+    {
+      "organization_id": "org-c50a78614d86",
+      "name": "Thrive Wellness",
+      "attempted_on": "2026-11-05",
+      "sources": [
+        "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses",
+        "https://ir.marimedinc.com/"
+      ],
+      "result": "License confirmed (DCC Dual-Use Dispensary Certificates of Operation (233 as of 11/4/2026): Thrive Wellness Dispensary at Reynoldsburg and Tiffin). Listed website https://ir.marimedinc.com/ loads, but no Ohio text or contact route was captured. listed URL is the parent's investor-relations site; no Ohio text",
+      "next_action": "Check the operator site manually (locations or contact page) and update the Website field if a better first-party page exists."
+    }
+  ],
+  "normalization_changes": []
+}
