@@ -72,14 +72,14 @@
           "next": "20 more listings with confirmed in-state coverage (to 90%)"
         },
         "community": {
-          "declared": "starter",
-          "level": "starter",
+          "declared": "partial",
+          "level": "partial",
           "measures": {
-            "groups": 1,
+            "groups": 12,
             "upcoming_events": 2,
-            "items": 3
+            "items": 14
           },
-          "next": "Reach 5 groups or upcoming events"
+          "next": "Reach 15 items with at least 1 upcoming event"
         }
       }
     },

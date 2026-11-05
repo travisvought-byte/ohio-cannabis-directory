@@ -83322,6 +83322,347 @@
         "OH"
       ],
       "description": "Only an Ohio physician holding an active certificate to recommend (CTR) from the State Medical Board of Ohio can recommend medical marijuana. The board's CTR search finds certified physicians by practice location. Questions: medicalmarijuana@med.ohio.gov."
+    },
+    {
+      "id": "svc-resource-30610f8ff922",
+      "organization_id": "org-a7b45513e9cf",
+      "location_ids": [],
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "Civics Cannabis",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://civicscannabis.org/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-4e20a058bc9b"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Ohio nonprofit for cannabis consumer advocacy, public education and social equity; has taken part in the Ohio Cannabis Expo and a Statehouse lobby day."
+    },
+    {
+      "id": "svc-resource-fb06857696a5",
+      "organization_id": "org-12edc986a5a5",
+      "location_ids": [],
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "Green Environmental Outreach (GEO Nonprofit)",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://www.geononprofit.org/contact"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-d4fa3712429e"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Veteran- and Black-led Ohio community nonprofit; hosted the April 2026 Central Ohio Cannabis Social Equity Forum."
+    },
+    {
+      "id": "svc-resource-dab689cfa94b",
+      "organization_id": "org-b870a8a62a9e",
+      "location_ids": [],
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "MedicateOH",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://medicateoh.com/contact-us/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-bc376664bf79"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Patient-focused cannabis education, reporting, events and advocacy project for Ohio patients."
+    },
+    {
+      "id": "svc-resource-5050e6336639",
+      "organization_id": "org-fd7388e9d2ee",
+      "location_ids": [],
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "Ohio Veteran's Alliance for Medical Cannabis (OVAMC)",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://www.facebook.com/OVAC.4.Change/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-f270a7e1b7d7"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Ohio veteran cannabis-advocacy group. Reach it through its Facebook page; no public email or phone was found."
+    },
+    {
+      "id": "svc-resource-494482302795",
+      "organization_id": "org-36630e5c633e",
+      "location_ids": [],
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "Sensible Movement Coalition",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://www.sensiblemovement.org/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-fa6eb3d6bf70"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Ohio nonprofit that organizes and supports local cannabis-decriminalization ballot initiatives."
+    },
+    {
+      "id": "svc-resource-0b7906250af3",
+      "organization_id": "org-8238a66c6c67",
+      "location_ids": [],
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "The Cannabis Museum",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://cannabismuseum.com/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-08e8168ff4fb"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Historical and educational cannabis museum in Athens, Ohio."
+    },
+    {
+      "id": "svc-resource-5838157f6ebd",
+      "organization_id": "org-28996af4250a",
+      "location_ids": [],
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "OHCANN (Ohio Cannabis Coalition)",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://ohcann.com/contact/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-2818020e7d4c"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Ohio's trade association for licensed cultivators, processors, dispensaries and testing labs; membership information on its site."
+    },
+    {
+      "id": "svc-resource-75f1531de4d2",
+      "organization_id": "org-8aa562b99642",
+      "location_ids": [],
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "Ohio Cannabis Association",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://ohiocannabisassociation.com/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-c9dd2f9908e7"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Ohio cannabis trade and advocacy association with published phone routes."
+    },
+    {
+      "id": "svc-resource-4f2a3e37c3e6",
+      "organization_id": "org-f58fbbd656cf",
+      "location_ids": [],
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "Ohio Healthy Alternatives Association",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://www.ohhaa.org/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-53af32184029"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Ohio hemp trade and advocacy association with current policy activity and public action resources."
+    },
+    {
+      "id": "svc-resource-cc86e28c9877",
+      "organization_id": "org-6d96aab778c7",
+      "location_ids": [],
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "The Cannabis Chamber of Commerce",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://www.thecannabischamber.com/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-af3bdb57e905"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Ohio cannabis chamber of commerce; connected with the Ohio Cannabis Expo."
+    },
+    {
+      "id": "svc-resource-f9b6dbadcdfa",
+      "organization_id": "org-7e749b6967b8",
+      "location_ids": [],
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "Coalition to Regulate Marijuana Like Alcohol (Ohio)",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://www.facebook.com/JustLikeAlcohol/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-7066485ffb35"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "The campaign committee behind Ohio's 2023 adult-use initiative (Issue 2), still active in 2026 cannabis-policy debate."
     }
   ],
   "evidence": [
@@ -135050,6 +135391,149 @@
       "recorded_on": "2026-11-05",
       "recheck_on": "2026-12-05",
       "limitations": "The Division of Cannabis Control's patient quick-reference guide (dated 07/2023) links this search as step 1; the search page itself was not opened in this review. The contact email comes from the board's CTR physician report."
+    },
+    {
+      "id": "ev-4e20a058bc9b",
+      "subject_id": "svc-resource-30610f8ff922",
+      "claim": "referral-route",
+      "value": "Ohio nonprofit for cannabis consumer advocacy, public education and social equity; has taken part in the Ohio Cannabis Expo and a Statehouse lobby day.",
+      "source_url": "https://civicscannabis.org/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-08-22",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Community route drawn from the organization's existing directory review; meeting times, membership terms and current activity need direct confirmation."
+    },
+    {
+      "id": "ev-d4fa3712429e",
+      "subject_id": "svc-resource-fb06857696a5",
+      "claim": "referral-route",
+      "value": "Veteran- and Black-led Ohio community nonprofit; hosted the April 2026 Central Ohio Cannabis Social Equity Forum.",
+      "source_url": "https://www.geononprofit.org/ourstory",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-08-23",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Community route drawn from the organization's existing directory review; meeting times, membership terms and current activity need direct confirmation."
+    },
+    {
+      "id": "ev-bc376664bf79",
+      "subject_id": "svc-resource-dab689cfa94b",
+      "claim": "referral-route",
+      "value": "Patient-focused cannabis education, reporting, events and advocacy project for Ohio patients.",
+      "source_url": "https://medicateoh.com/about-medicateoh/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-08-16",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Community route drawn from the organization's existing directory review; meeting times, membership terms and current activity need direct confirmation."
+    },
+    {
+      "id": "ev-f270a7e1b7d7",
+      "subject_id": "svc-resource-5050e6336639",
+      "claim": "referral-route",
+      "value": "Ohio veteran cannabis-advocacy group. Reach it through its Facebook page; no public email or phone was found.",
+      "source_url": "https://www.facebook.com/OVAC.4.Change/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-08-22",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Community route drawn from the organization's existing directory review; meeting times, membership terms and current activity need direct confirmation."
+    },
+    {
+      "id": "ev-fa6eb3d6bf70",
+      "subject_id": "svc-resource-494482302795",
+      "claim": "referral-route",
+      "value": "Ohio nonprofit that organizes and supports local cannabis-decriminalization ballot initiatives.",
+      "source_url": "https://www.sensiblemovement.org/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-08-23",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Community route drawn from the organization's existing directory review; meeting times, membership terms and current activity need direct confirmation."
+    },
+    {
+      "id": "ev-08e8168ff4fb",
+      "subject_id": "svc-resource-0b7906250af3",
+      "claim": "referral-route",
+      "value": "Historical and educational cannabis museum in Athens, Ohio.",
+      "source_url": "https://cannabismuseum.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-08-15",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Community route drawn from the organization's existing directory review; meeting times, membership terms and current activity need direct confirmation."
+    },
+    {
+      "id": "ev-2818020e7d4c",
+      "subject_id": "svc-resource-5838157f6ebd",
+      "claim": "referral-route",
+      "value": "Ohio's trade association for licensed cultivators, processors, dispensaries and testing labs; membership information on its site.",
+      "source_url": "https://ohcann.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-08-23",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Community route drawn from the organization's existing directory review; meeting times, membership terms and current activity need direct confirmation."
+    },
+    {
+      "id": "ev-c9dd2f9908e7",
+      "subject_id": "svc-resource-75f1531de4d2",
+      "claim": "referral-route",
+      "value": "Ohio cannabis trade and advocacy association with published phone routes.",
+      "source_url": "https://ohiocannabisassociation.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-08-22",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Community route drawn from the organization's existing directory review; meeting times, membership terms and current activity need direct confirmation."
+    },
+    {
+      "id": "ev-53af32184029",
+      "subject_id": "svc-resource-4f2a3e37c3e6",
+      "claim": "referral-route",
+      "value": "Ohio hemp trade and advocacy association with current policy activity and public action resources.",
+      "source_url": "https://www.ohhaa.org/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-08-22",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Community route drawn from the organization's existing directory review; meeting times, membership terms and current activity need direct confirmation."
+    },
+    {
+      "id": "ev-af3bdb57e905",
+      "subject_id": "svc-resource-cc86e28c9877",
+      "claim": "referral-route",
+      "value": "Ohio cannabis chamber of commerce; connected with the Ohio Cannabis Expo.",
+      "source_url": "https://www.thecannabischamber.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-08-15",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Community route drawn from the organization's existing directory review; meeting times, membership terms and current activity need direct confirmation."
+    },
+    {
+      "id": "ev-7066485ffb35",
+      "subject_id": "svc-resource-f9b6dbadcdfa",
+      "claim": "referral-route",
+      "value": "The campaign committee behind Ohio's 2023 adult-use initiative (Issue 2), still active in 2026 cannabis-policy debate.",
+      "source_url": "https://www.statenews.org/government-politics/2026-02-03/effort-to-repeal-ohio-marijuana-hemp-law-can-move-forward-yost-says",
+      "source_kind": "secondary",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-08-22",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Community route drawn from the organization's existing directory review; meeting times, membership terms and current activity need direct confirmation."
     }
   ],
   "rules": [
@@ -136996,7 +137480,7 @@
         },
         {
           "pathway_id": "community",
-          "coverage_status": "starter",
+          "coverage_status": "partial",
           "next_step": "Reach a group contact or event participation page.",
           "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html#community",
           "limitations": "Starter referral coverage; organization service areas remain historical text unless backed by claim-level coverage evidence. No complete statewide location list has been migrated."
@@ -137307,6 +137791,61 @@
           "name": "Browse documented relationships",
           "url": "relationships.html",
           "description": "Explore the existing source-documented relationships between organizations."
+        },
+        {
+          "name": "Civics Cannabis",
+          "url": "https://civicscannabis.org/",
+          "description": "Ohio nonprofit for cannabis consumer advocacy, public education and social equity; has taken part in the Ohio Cannabis Expo and a Statehouse lobby day."
+        },
+        {
+          "name": "Green Environmental Outreach (GEO Nonprofit)",
+          "url": "https://www.geononprofit.org/contact",
+          "description": "Veteran- and Black-led Ohio community nonprofit; hosted the April 2026 Central Ohio Cannabis Social Equity Forum."
+        },
+        {
+          "name": "MedicateOH",
+          "url": "https://medicateoh.com/contact-us/",
+          "description": "Patient-focused cannabis education, reporting, events and advocacy project for Ohio patients."
+        },
+        {
+          "name": "Ohio Veteran's Alliance for Medical Cannabis (OVAMC)",
+          "url": "https://www.facebook.com/OVAC.4.Change/",
+          "description": "Ohio veteran cannabis-advocacy group. Reach it through its Facebook page; no public email or phone was found."
+        },
+        {
+          "name": "Sensible Movement Coalition",
+          "url": "https://www.sensiblemovement.org/",
+          "description": "Ohio nonprofit that organizes and supports local cannabis-decriminalization ballot initiatives."
+        },
+        {
+          "name": "The Cannabis Museum",
+          "url": "https://cannabismuseum.com/",
+          "description": "Historical and educational cannabis museum in Athens, Ohio."
+        },
+        {
+          "name": "OHCANN (Ohio Cannabis Coalition)",
+          "url": "https://ohcann.com/contact/",
+          "description": "Ohio's trade association for licensed cultivators, processors, dispensaries and testing labs; membership information on its site."
+        },
+        {
+          "name": "Ohio Cannabis Association",
+          "url": "https://ohiocannabisassociation.com/",
+          "description": "Ohio cannabis trade and advocacy association with published phone routes."
+        },
+        {
+          "name": "Ohio Healthy Alternatives Association",
+          "url": "https://www.ohhaa.org/",
+          "description": "Ohio hemp trade and advocacy association with current policy activity and public action resources."
+        },
+        {
+          "name": "The Cannabis Chamber of Commerce",
+          "url": "https://www.thecannabischamber.com/",
+          "description": "Ohio cannabis chamber of commerce; connected with the Ohio Cannabis Expo."
+        },
+        {
+          "name": "Coalition to Regulate Marijuana Like Alcohol (Ohio)",
+          "url": "https://www.facebook.com/JustLikeAlcohol/",
+          "description": "The campaign committee behind Ohio's 2023 adult-use initiative (Issue 2), still active in 2026 cannabis-policy debate."
         }
       ]
     }
