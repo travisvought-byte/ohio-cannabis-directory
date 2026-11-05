@@ -18,6 +18,8 @@ jobs:
         run: python tests/check_data.py
       - name: Validate consolidated PA Drive research
         run: python scripts/validate_pa_drive_mining.py
+      - name: Run Python unit tests
+        run: python -m unittest discover -s tests -p 'test_*.py'
       - name: Validate replicable directory foundation
         run: |
           python validate_foundation.py
