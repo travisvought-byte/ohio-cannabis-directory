@@ -11,9 +11,9 @@
 - Exotic Gardens: https://billsbudblog.com/2025/10/08/exotic-gardens/ — third-party 2025 account describes seeds and genetics in Canton; verify current stock.
 
 ## Release blockers
-1. build_seeds.py hardcodes one Ohio grow-supply lead; inaccurate for 16 records.
-2. Generator claims no Ohio seller has pickup, despite sellers advertising physical locations or appointment pickup; differentiate claimed pickup and verified stock.
-3. Exact-match area filter requires controlled location values.
+1. ~~build_seeds.py hardcodes one Ohio grow-supply lead; inaccurate for 16 records.~~ Resolved: the count is computed from records whose role starts with "Grow supplies".
+2. Generator claims no Ohio seller has pickup, despite sellers advertising physical locations or appointment pickup; differentiate claimed pickup and verified stock. Partly resolved: the sentence now follows an optional `pickup_verified` field. Set it only when the seller's own page confirms pickup; stock still needs direct confirmation.
+3. ~~Exact-match area filter requires controlled location values.~~ Resolved: build_seeds.py rejects any area outside Ohio / Michigan / National and builds the filter options from the data.
 4. Seed sex and flowering behavior must remain separate filters.
 5. Distinguish official seller catalog, breeder locator, third-party account, and unverified lead.
 6. Agricultural seed-labeler registration is not proof of cannabis retail authorization.
