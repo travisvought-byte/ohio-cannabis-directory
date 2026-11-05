@@ -6,9 +6,9 @@ As of 2026-11-05. Standard version 1.0.0: [STATE_COMPLETION_STANDARD.md](STATE_C
 | --- | --- | --- | --- |
 | dispensaries | broad | broad | broad |
 | seeds | partial | starter | starter |
-| records | starter | partial | partial |
+| records | partial | partial | partial |
 | rules | broad | partial | broad |
-| medical | starter | broad | partial |
+| medical | partial | broad | partial |
 | business | partial | starter | starter |
 | community | starter | partial | starter |
 
@@ -18,9 +18,9 @@ As of 2026-11-05. Standard version 1.0.0: [STATE_COMPLETION_STANDARD.md](STATE_C
 | --- | --- | --- | --- |
 | dispensaries | broad | regulator listed locations: 230; regulator count: 233; regulator count as of: 2026-11-04; share: 0.987; location source age days: 26 | — |
 | seeds | partial | services: 18; with fulfillment recorded: 16 | Broad needs a documented denominator; none exists for seed sellers |
-| records | starter | services: 4; statewide routes: 0; counties with specific help: 5; counties: 88; county share: 0.057 | 1 more record-relief services; statewide coverage evidence on at least one route |
+| records | partial | services: 5; statewide routes: 3; counties with specific help: 5; counties: 88; county share: 0.057 | county-specific help in 39 more counties |
 | rules | broad | core topics covered: 7; core topics: 7; missing topics:  | — |
-| medical | starter | services: 2; government sourced: 2; support organizations: 0 | Reach 3 medical routes with 2 officially sourced |
+| medical | partial | services: 3; government sourced: 3; support organizations: 0 | Reach 8 routes, 3 official and 1 patient-support organization |
 | business | partial | services: 516; coverage confirmed share: 0.862; direct contact share: 0.938; categorized share: 1.0; current review share: 0.992 | 20 more listings with confirmed in-state coverage (to 90%) |
 | community | starter | groups: 1; upcoming events: 2; items: 3 | Reach 5 groups or upcoming events |
 
