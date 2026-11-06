@@ -29851,6 +29851,42 @@
       "legacy_ids": [],
       "contacts": [],
       "scope": "public"
+    },
+    {
+      "id": "org-resource-726a63e4c56d",
+      "name": "Legal Aid of Southeast and Central Ohio",
+      "website": "https://lasco.org/",
+      "kind": "nonprofit",
+      "legacy_ids": [],
+      "contacts": [],
+      "scope": "public"
+    },
+    {
+      "id": "org-resource-12ef26fbd074",
+      "name": "The Legal Aid Society of Cleveland",
+      "website": "https://lasclev.org/",
+      "kind": "nonprofit",
+      "legacy_ids": [],
+      "contacts": [],
+      "scope": "public"
+    },
+    {
+      "id": "org-resource-bb6282a147f2",
+      "name": "Community Legal Aid",
+      "website": "https://www.communitylegalaid.org/",
+      "kind": "nonprofit",
+      "legacy_ids": [],
+      "contacts": [],
+      "scope": "public"
+    },
+    {
+      "id": "org-resource-85a0834c514c",
+      "name": "Ohio Division of Cannabis Control",
+      "website": "http://www.com.ohio.gov/divisions-and-programs/cannabis-control/patients-caregivers/patient-caregiver-registry/activating-your-medical-marijuana-card",
+      "kind": "government",
+      "legacy_ids": [],
+      "contacts": [],
+      "scope": "public"
     }
   ],
   "locations": [
@@ -83663,6 +83699,652 @@
         "OH"
       ],
       "description": "The campaign committee behind Ohio's 2023 adult-use initiative (Issue 2), still active in 2026 cannabis-policy debate."
+    },
+    {
+      "id": "svc-resource-23fc3a8359bc",
+      "organization_id": "org-resource-726a63e4c56d",
+      "location_ids": [],
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Legal Aid of Southeast and Central Ohio (36 counties)",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Adams",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Athens",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Belmont",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Carroll",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Coshocton",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Delaware",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Fairfield",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Fayette",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Franklin",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Gallia",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Guernsey",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Harrison",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Hocking",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Holmes",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Jackson",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Jefferson",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Knox",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Lawrence",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Licking",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Madison",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Marion",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Meigs",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Monroe",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Morgan",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Morrow",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Muskingum",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Noble",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Perry",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Pickaway",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Pike",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Ross",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Scioto",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Tuscarawas",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Union",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Vinton",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Washington",
+          "evidence_ids": [
+            "ev-5bf1bd2904f3"
+          ]
+        }
+      ],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://lasco.org/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-5ea9b5ca8724",
+        "ev-5bf1bd2904f3"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Free civil legal help for people with low incomes, veterans and seniors in 36 southeast and central Ohio counties, including free \"Fresh Start\" record-sealing and expungement clinics that screen eligibility and help with paperwork. Income limits apply."
+    },
+    {
+      "id": "svc-resource-dd93cab57499",
+      "organization_id": "org-resource-12ef26fbd074",
+      "location_ids": [],
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "The Legal Aid Society of Cleveland (5 counties)",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Ashtabula",
+          "evidence_ids": [
+            "ev-256dbe041973"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Cuyahoga",
+          "evidence_ids": [
+            "ev-256dbe041973"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Geauga",
+          "evidence_ids": [
+            "ev-256dbe041973"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Lake",
+          "evidence_ids": [
+            "ev-256dbe041973"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Lorain",
+          "evidence_ids": [
+            "ev-256dbe041973"
+          ]
+        }
+      ],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://lasclev.org/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-3bcfa281f36c",
+        "ev-256dbe041973"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Free civil legal help in Northeast Ohio, including help checking eligibility for record sealing and Certificates of Qualification for Employment. Call 888-817-3777. Income limits apply."
+    },
+    {
+      "id": "svc-resource-203cce0bf5f3",
+      "organization_id": "org-resource-bb6282a147f2",
+      "location_ids": [],
+      "pathway_ids": [
+        "records"
+      ],
+      "name": "Community Legal Aid (8 counties)",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Columbiana",
+          "evidence_ids": [
+            "ev-ae43735a7d68"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Mahoning",
+          "evidence_ids": [
+            "ev-ae43735a7d68"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Medina",
+          "evidence_ids": [
+            "ev-ae43735a7d68"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Portage",
+          "evidence_ids": [
+            "ev-ae43735a7d68"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Stark",
+          "evidence_ids": [
+            "ev-ae43735a7d68"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Summit",
+          "evidence_ids": [
+            "ev-ae43735a7d68"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Trumbull",
+          "evidence_ids": [
+            "ev-ae43735a7d68"
+          ]
+        },
+        {
+          "kind": "county",
+          "state": "OH",
+          "county": "Wayne",
+          "evidence_ids": [
+            "ev-ae43735a7d68"
+          ]
+        }
+      ],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://www.communitylegalaid.org/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-ab66c1afda0a",
+        "ev-ae43735a7d68"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Free civil legal help in central northeast Ohio. Its staff attorneys give record-sealing and expungement presentations, and it publishes a general sealing application form. Call the HelpLine at 800-998-9454. Income limits apply."
+    },
+    {
+      "id": "svc-resource-902f974502e9",
+      "organization_id": "org-resource-85a0834c514c",
+      "location_ids": [],
+      "pathway_ids": [
+        "medical"
+      ],
+      "name": "Activate your medical marijuana card",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "http://www.com.ohio.gov/divisions-and-programs/cannabis-control/patients-caregivers/patient-caregiver-registry/activating-your-medical-marijuana-card"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-dc9792abe955"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Step 2 of the state's patient guide: after a certified physician submits your recommendation, register and activate your Patient & Caregiver Registry card before buying from a licensed dispensary."
+    },
+    {
+      "id": "svc-resource-b79d1e246ebb",
+      "organization_id": "org-b870a8a62a9e",
+      "location_ids": [],
+      "pathway_ids": [
+        "medical"
+      ],
+      "name": "MedicateOH",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://medicateoh.com/contact-us/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-126752c4b7b8"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Patient-focused cannabis education, reporting and events for Ohio medical patients, including the Women's Cannabis & Wellness Expo."
+    },
+    {
+      "id": "svc-resource-bdea3263f9a6",
+      "organization_id": "org-fd7388e9d2ee",
+      "location_ids": [],
+      "pathway_ids": [
+        "medical"
+      ],
+      "name": "Ohio Veteran's Alliance for Medical Cannabis (OVAMC)",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://www.facebook.com/OVAC.4.Change/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-a06be6c1dd61"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Ohio veterans' group helping veterans learn about and access medical cannabis. Reach it through its Facebook page."
+    },
+    {
+      "id": "svc-resource-f371c54df026",
+      "organization_id": "org-a8433675c717",
+      "location_ids": [],
+      "pathway_ids": [
+        "medical"
+      ],
+      "name": "Realm of Caring Foundation",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://realmofcaring.org/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-00cdaf58570c"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Free one-on-one cannabinoid education and care-specialist support by phone and email, open to Ohio residents. Education only, not medical advice."
+    },
+    {
+      "id": "svc-resource-0a7d1c8a39ff",
+      "organization_id": "org-ed0906c8b550",
+      "location_ids": [],
+      "pathway_ids": [
+        "medical"
+      ],
+      "name": "Compassionate Alternatives",
+      "coverage": [],
+      "audiences": [
+        "consumer",
+        "patient",
+        "grower"
+      ],
+      "eligibility": "Confirm current eligibility and service requirements with the provider.",
+      "next_step": {
+        "label": "Open next step",
+        "url": "https://compassionatealternatives.org/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-681b824436c1"
+      ],
+      "origin": "consumer-resource",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Columbus-founded nonprofit offering medical cannabis education seminars, webinars with medical experts and patient networking events."
     }
   ],
   "evidence": [
@@ -135534,6 +136216,149 @@
       "recorded_on": "2026-11-05",
       "recheck_on": "2026-12-05",
       "limitations": "Community route drawn from the organization's existing directory review; meeting times, membership terms and current activity need direct confirmation."
+    },
+    {
+      "id": "ev-5ea9b5ca8724",
+      "subject_id": "svc-resource-23fc3a8359bc",
+      "claim": "referral-route",
+      "value": "Free civil legal help for people with low incomes, veterans and seniors in 36 southeast and central Ohio counties, including free \"Fresh Start\" record-sealing and expungement clinics that screen eligibility and help with paperwork. Income limits apply.",
+      "source_url": "https://www.lasco.org/legal-aid-offers-free-fresh-start-record-sealing-clinic-in-pickaway-county",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-05",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Clinic schedules change; the record-sealing clinic page reviewed is from February 2025. Eligibility depends on income."
+    },
+    {
+      "id": "ev-5bf1bd2904f3",
+      "subject_id": "svc-resource-23fc3a8359bc",
+      "claim": "service-coverage",
+      "value": "LASCO serves 36 counties from eight offices: Chillicothe (Fairfield, Fayette, Jackson, Pickaway, Pike, Ross), Marion (Delaware, Marion, Morrow, Union), Newark (Knox, Licking, Muskingum, Perry), New Philadelphia (Carroll, Coshocton, Guernsey, Holmes, Tuscarawas), Portsmouth (Adams, Lawrence, Scioto), Steubenville (Belmont, Harrison, Jefferson, Monroe, Noble), Athens (Athens, Gallia, Hocking, Meigs, Morgan, Vinton, Washington) and Columbus (Franklin, Madison).",
+      "source_url": "https://www.lasco.org/local-offices",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-05",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Six office county lists read from LASCO's local-offices page; the Athens and Columbus office lists come from the WomensLaw.org Ohio legal-assistance directory and match LASCO's 36-county total."
+    },
+    {
+      "id": "ev-3bcfa281f36c",
+      "subject_id": "svc-resource-dd93cab57499",
+      "claim": "referral-route",
+      "value": "Free civil legal help in Northeast Ohio, including help checking eligibility for record sealing and Certificates of Qualification for Employment. Call 888-817-3777. Income limits apply.",
+      "source_url": "https://lasclev.org/?p=46313",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-05",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Record-sealing help described in a Legal Aid Society post (2022 news reprint); confirm current clinic availability."
+    },
+    {
+      "id": "ev-256dbe041973",
+      "subject_id": "svc-resource-dd93cab57499",
+      "claim": "service-coverage",
+      "value": "The Legal Aid Society of Cleveland serves Ashtabula, Cuyahoga, Geauga, Lake and Lorain counties.",
+      "source_url": "https://lasclev.org/?p=26",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-05",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Service area as published by the organization."
+    },
+    {
+      "id": "ev-ab66c1afda0a",
+      "subject_id": "svc-resource-203cce0bf5f3",
+      "claim": "referral-route",
+      "value": "Free civil legal help in central northeast Ohio. Its staff attorneys give record-sealing and expungement presentations, and it publishes a general sealing application form. Call the HelpLine at 800-998-9454. Income limits apply.",
+      "source_url": "https://docs.google.com/presentation/d/1EOwxhUHZ6twVmrBElVE44_ho7Pqb_Mmv/htmlpresent",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-05",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Record-sealing work shown in a Community Legal Aid staff attorney's presentation hosted on Google Slides; the organization's own site was not opened in this review."
+    },
+    {
+      "id": "ev-ae43735a7d68",
+      "subject_id": "svc-resource-203cce0bf5f3",
+      "claim": "service-coverage",
+      "value": "Community Legal Aid serves residents of Columbiana, Mahoning, Medina, Portage, Stark, Summit, Trumbull and Wayne counties.",
+      "source_url": "https://www.womenslaw.org/find-help/oh/finding-lawyer/legal-assistance/S",
+      "source_kind": "secondary",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-05",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "County list from the WomensLaw.org Ohio legal-assistance directory; it matches the Legal Services Corporation program profile."
+    },
+    {
+      "id": "ev-dc9792abe955",
+      "subject_id": "svc-resource-902f974502e9",
+      "claim": "referral-route",
+      "value": "Step 2 of the state's patient guide: after a certified physician submits your recommendation, register and activate your Patient & Caregiver Registry card before buying from a licensed dispensary.",
+      "source_url": "https://dam.assets.ohio.gov/image/upload/com.ohio.gov/documents/MMCP_Quick%20Reference%20Guide%20-%20How%20to%20Obtain%20Medical%20Marijuana.pdf",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-05",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Linked from the Division of Cannabis Control's patient quick-reference guide dated 07/2023; the linked page itself was not opened in this review."
+    },
+    {
+      "id": "ev-126752c4b7b8",
+      "subject_id": "svc-resource-b79d1e246ebb",
+      "claim": "referral-route",
+      "value": "Patient-focused cannabis education, reporting and events for Ohio medical patients, including the Women's Cannabis & Wellness Expo.",
+      "source_url": "https://medicateoh.com/about-medicateoh/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-08-16",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Patient-support route drawn from the organization's existing directory review; confirm current programs directly."
+    },
+    {
+      "id": "ev-a06be6c1dd61",
+      "subject_id": "svc-resource-bdea3263f9a6",
+      "claim": "referral-route",
+      "value": "Ohio veterans' group helping veterans learn about and access medical cannabis. Reach it through its Facebook page.",
+      "source_url": "https://www.facebook.com/OVAC.4.Change/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-08-22",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Patient-support route drawn from the organization's existing directory review; confirm current programs directly."
+    },
+    {
+      "id": "ev-00cdaf58570c",
+      "subject_id": "svc-resource-f371c54df026",
+      "claim": "referral-route",
+      "value": "Free one-on-one cannabinoid education and care-specialist support by phone and email, open to Ohio residents. Education only, not medical advice.",
+      "source_url": "https://realmofcaring.org/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-08-22",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Patient-support route drawn from the organization's existing directory review; confirm current programs directly."
+    },
+    {
+      "id": "ev-681b824436c1",
+      "subject_id": "svc-resource-0a7d1c8a39ff",
+      "claim": "referral-route",
+      "value": "Columbus-founded nonprofit offering medical cannabis education seminars, webinars with medical experts and patient networking events.",
+      "source_url": "https://compassionatealternatives.org/about/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-08-22",
+      "recorded_on": "2026-11-05",
+      "recheck_on": "2026-12-05",
+      "limitations": "Patient-support route drawn from the organization's existing directory review; confirm current programs directly."
     }
   ],
   "rules": [
@@ -137452,7 +138277,7 @@
         },
         {
           "pathway_id": "records",
-          "coverage_status": "partial",
+          "coverage_status": "broad",
           "next_step": "Reach a relevant application or legal-aid contact.",
           "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html#records",
           "limitations": "Starter referral coverage; organization service areas remain historical text unless backed by claim-level coverage evidence. No complete statewide location list has been migrated."
@@ -137466,7 +138291,7 @@
         },
         {
           "pathway_id": "medical",
-          "coverage_status": "partial",
+          "coverage_status": "broad",
           "next_step": "Reach the correct official registration or support route.",
           "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html#medical",
           "limitations": "Starter referral coverage; organization service areas remain historical text unless backed by claim-level coverage evidence. No complete statewide location list has been migrated."
@@ -137728,6 +138553,21 @@
           "name": "Urban Expungement Program (Hamilton County)",
           "url": "https://ulgso.org/expungement",
           "description": "Free legal support and record-clearing help for eligible cases, with record reviews, help with paperwork and court filings, and help toward eligible fees. Run with the Hamilton County Public Defender's Office, the Ohio Justice Bus and the Hamilton County Clerk of Courts Help Center. Watch the page for the next clinic date."
+        },
+        {
+          "name": "Legal Aid of Southeast and Central Ohio (36 counties)",
+          "url": "https://lasco.org/",
+          "description": "Free civil legal help for people with low incomes, veterans and seniors in 36 southeast and central Ohio counties, including free \"Fresh Start\" record-sealing and expungement clinics that screen eligibility and help with paperwork. Income limits apply."
+        },
+        {
+          "name": "The Legal Aid Society of Cleveland (5 counties)",
+          "url": "https://lasclev.org/",
+          "description": "Free civil legal help in Northeast Ohio, including help checking eligibility for record sealing and Certificates of Qualification for Employment. Call 888-817-3777. Income limits apply."
+        },
+        {
+          "name": "Community Legal Aid (8 counties)",
+          "url": "https://www.communitylegalaid.org/",
+          "description": "Free civil legal help in central northeast Ohio. Its staff attorneys give record-sealing and expungement presentations, and it publishes a general sealing application form. Call the HelpLine at 800-998-9454. Income limits apply."
         }
       ]
     },
@@ -137749,6 +138589,31 @@
           "name": "Find a physician certified to recommend",
           "url": "https://med.ohio.gov/Publications/CTR-Search",
           "description": "Only an Ohio physician holding an active certificate to recommend (CTR) from the State Medical Board of Ohio can recommend medical marijuana. The board's CTR search finds certified physicians by practice location. Questions: medicalmarijuana@med.ohio.gov."
+        },
+        {
+          "name": "Activate your medical marijuana card",
+          "url": "http://www.com.ohio.gov/divisions-and-programs/cannabis-control/patients-caregivers/patient-caregiver-registry/activating-your-medical-marijuana-card",
+          "description": "Step 2 of the state's patient guide: after a certified physician submits your recommendation, register and activate your Patient & Caregiver Registry card before buying from a licensed dispensary."
+        },
+        {
+          "name": "MedicateOH",
+          "url": "https://medicateoh.com/contact-us/",
+          "description": "Patient-focused cannabis education, reporting and events for Ohio medical patients, including the Women's Cannabis & Wellness Expo."
+        },
+        {
+          "name": "Ohio Veteran's Alliance for Medical Cannabis (OVAMC)",
+          "url": "https://www.facebook.com/OVAC.4.Change/",
+          "description": "Ohio veterans' group helping veterans learn about and access medical cannabis. Reach it through its Facebook page."
+        },
+        {
+          "name": "Realm of Caring Foundation",
+          "url": "https://realmofcaring.org/",
+          "description": "Free one-on-one cannabinoid education and care-specialist support by phone and email, open to Ohio residents. Education only, not medical advice."
+        },
+        {
+          "name": "Compassionate Alternatives",
+          "url": "https://compassionatealternatives.org/",
+          "description": "Columbus-founded nonprofit offering medical cannabis education seminars, webinars with medical experts and patient networking events."
         }
       ]
     },
