@@ -28,16 +28,16 @@
           "next": "Broad needs a documented denominator; none exists for seed sellers"
         },
         "records": {
-          "declared": "partial",
-          "level": "partial",
+          "declared": "broad",
+          "level": "broad",
           "measures": {
-            "services": 5,
+            "services": 8,
             "statewide_routes": 3,
-            "counties_with_specific_help": 5,
+            "counties_with_specific_help": 50,
             "counties": 88,
-            "county_share": 0.057
+            "county_share": 0.568
           },
-          "next": "county-specific help in 39 more counties"
+          "next": null
         },
         "rules": {
           "declared": "broad",
@@ -50,14 +50,14 @@
           "next": null
         },
         "medical": {
-          "declared": "partial",
-          "level": "partial",
+          "declared": "broad",
+          "level": "broad",
           "measures": {
-            "services": 3,
-            "government_sourced": 3,
-            "support_organizations": 0
+            "services": 8,
+            "government_sourced": 4,
+            "support_organizations": 4
           },
-          "next": "Reach 8 routes, 3 official and 1 patient-support organization"
+          "next": null
         },
         "business": {
           "declared": "partial",
