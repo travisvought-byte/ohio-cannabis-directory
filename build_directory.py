@@ -234,6 +234,8 @@ def main():
     noscript_index = "\n".join(noscript)
 
     page = brand_page(TEMPLATE).replace("__PAYLOAD__", payload)
+    # The H1 carries the site name here; the brand line names the organization instead.
+    page = page.replace('<span><strong>Ohio Cannabis Directory</strong></span>', '<span class="brand-org">Veteran Home Guardians</span>', 1)
     page = page.replace("__UPCOMING_EVENTS__", script_json(UPCOMING_EVENTS))
     page = page.replace("__EVENT_SPOTLIGHTS__", script_json(EVENT_SPOTLIGHTS))
     page = page.replace("__HOME_EVENT_MARKUP__", home_event_markup)
@@ -345,6 +347,31 @@ __VHG_CSS__
     margin:0 0 1.25rem; color:var(--ink-soft); font-size:.92rem;
     max-width:44ch;
   }
+
+
+  /* ---- dark hero (Nov 10, 2026) ------------------------------------- */
+  .hero{background:linear-gradient(155deg,#0b1820 0%,#132a37 55%,#17352d 100%);color:#eef2f1;border-bottom:3px solid var(--field)}
+  .hero-inner{padding:1.1rem 1.1rem 1.15rem}
+  .hero .vhg-brand{color:#fff;margin-bottom:.8rem}
+  .hero .vhg-brand img{background:#fff;border-radius:10px;padding:3px;width:44px;height:44px}
+  .brand-org{font-size:.78rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#c8d3d7}
+  .hero .knowledge-links>a{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.32);color:#fff}
+  .hero .knowledge-links>a:hover,.hero .knowledge-links>a:focus-visible{border-color:#fff;color:#fff;background:rgba(255,255,255,.1)}
+  .hero .site-nav .nav-more>summary{background:#d9a441;border-color:#d9a441;color:#10212b}
+  .hero h1{color:#fff;font-size:clamp(2rem,6vw,2.7rem);margin:.9rem 0 .4rem}
+  .hero .directory-intro{color:#c8d3d7;font-size:1rem;max-width:46ch;margin:0 0 1rem}
+  .hero .searchbox{margin:0 0 .4rem}
+  .hero #q{font-family:var(--sans);font-size:1.15rem;background:#fff;color:var(--ink);border:0;border-radius:12px;padding:.8rem 2.8rem .8rem 1rem;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+  .hero #q::placeholder{color:#6b7478}
+  .hero .searchbox:focus-within{box-shadow:none}.hero #q:focus-visible{outline:3px solid #d9a441;outline-offset:2px}
+  .hero #clear{right:.55rem;color:var(--ink-soft)}
+  .hero .task-routes{margin:.8rem 0 0}.hero .task-routes span{color:#c8d3d7}
+  .hero .task-routes a{background:transparent;border-color:rgba(255,255,255,.32);color:#fff}
+  .hero .task-routes a:hover,.hero .task-routes a:focus-visible{border-color:#fff;color:#fff}
+  .hero a:visited{color:#fff}
+  .search-active .hero .directory-intro{display:none}
+  .masthead{padding-top:1rem}
+  @media print{.hero{background:#fff;color:#000;border:0}.hero h1{color:#000}}
 
   /* ---- home screen highlights ------------------------------------- */
   .home-highlights{display:grid;grid-template-columns:1fr;gap:.55rem;margin:0 0 1.15rem}
@@ -481,7 +508,8 @@ __VHG_CSS__
   .btn:hover{border-color:var(--field)}
 
   @media (min-width:40rem){
-    .masthead{padding-top:2.4rem}
+    .masthead{padding-top:1.4rem}
+    .hero-inner{padding:1.6rem 1.1rem 1.6rem}
     h1{font-size:2.2rem}
     #q{font-size:1.6rem}
     article{padding:1.25rem 0}
@@ -503,12 +531,11 @@ __VHG_CSS__
 </head>
 <body>
 
-<header>
-  <div class="wrap masthead">
+<header class="hero">
+  <div class="wrap hero-inner">
     __VHG_BRAND__
-    <h1>Ohio cannabis industry directory</h1>
-    <p class="directory-intro">Browse __N_PUB__ organizations and their published contacts. Search by business, person, specialty, city, or county.</p>
-    __NATIONAL_EVENT_BANNER__
+    <h1>Ohio Cannabis Directory</h1>
+    <p class="directory-intro">__N_PUB__ Ohio cannabis businesses, people and services, each traced to a source. Search by name, specialty, city or county.</p>
     <div class="searchbox">
       <input id="q" type="search" autocomplete="off" spellcheck="false"
              placeholder="Search businesses, people, cities&hellip;"
@@ -516,6 +543,10 @@ __VHG_CSS__
       <button id="clear" type="button" aria-label="Clear search">&times;</button>
     </div>
     <nav class="task-routes" aria-label="Not looking for a business?"><span>Not looking for a business?</span><a href="locations.html" data-track="task:dispensary">Find a dispensary</a><a href="knowledge.html#hemp" data-track="task:hemp-law">Hemp &amp; THC law</a><a href="expungement.html" data-track="task:records">Clear a record</a><a href="advocacy.html" data-track="task:advocacy">Contact lawmakers</a></nav>
+  </div>
+</header>
+<div class="wrap masthead">
+    __NATIONAL_EVENT_BANNER__
 __NOVEMBER_BANNER__
 
 
@@ -551,8 +582,7 @@ __NOVEMBER_BANNER__
       <a class="btn" href="__UPDATE_URL__">Email a listing update</a>
     </div>
     </details>
-  </div>
-</header>
+</div>
 
 <p class="wrap" id="single-record" hidden><button class="btn" id="all-records">Back to all organizations</button></p>
 <main class="wrap" id="results"></main>
