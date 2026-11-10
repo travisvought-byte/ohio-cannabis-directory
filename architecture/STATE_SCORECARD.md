@@ -1,6 +1,6 @@
 # State scorecard
 
-As of 2026-11-05. Standard version 1.0.0: [STATE_COMPLETION_STANDARD.md](STATE_COMPLETION_STANDARD.md). Regenerate with `python build_state_scorecard.py`. Levels are earned from the data; a state is complete when every pathway is broad, except seeds, whose ceiling is partial.
+As of 2026-11-09. Standard version 1.0.0: [STATE_COMPLETION_STANDARD.md](STATE_COMPLETION_STANDARD.md). Regenerate with `python build_state_scorecard.py`. Levels are earned from the data; a state is complete when every pathway is broad, except seeds, whose ceiling is partial.
 
 | Pathway | Ohio | Pennsylvania | New York |
 | --- | --- | --- | --- |
@@ -16,7 +16,7 @@ As of 2026-11-05. Standard version 1.0.0: [STATE_COMPLETION_STANDARD.md](STATE_C
 
 | Pathway | Earned | Measures | Next level needs |
 | --- | --- | --- | --- |
-| dispensaries | broad | regulator listed locations: 230; regulator count: 233; regulator count as of: 2026-11-04; share: 0.987; location source age days: 26 | — |
+| dispensaries | broad | regulator listed locations: 230; regulator count: 233; regulator count as of: 2026-11-04; share: 0.987; location source age days: 30 | — |
 | seeds | partial | services: 18; with fulfillment recorded: 16 | Broad needs a documented denominator; none exists for seed sellers |
 | records | broad | services: 8; statewide routes: 3; counties with specific help: 50; counties: 88; county share: 0.568 | — |
 | rules | broad | core topics covered: 7; core topics: 7; missing topics:  | — |
@@ -28,7 +28,7 @@ As of 2026-11-05. Standard version 1.0.0: [STATE_COMPLETION_STANDARD.md](STATE_C
 
 | Pathway | Earned | Measures | Next level needs |
 | --- | --- | --- | --- |
-| dispensaries | broad | regulator listed locations: 200; regulator count: 200; regulator count as of: 2026-09-16; share: 1.0; location source age days: 8 | — |
+| dispensaries | broad | regulator listed locations: 200; regulator count: 200; regulator count as of: 2026-09-16; share: 1.0; location source age days: 12 | — |
 | seeds | starter | services: 1; with fulfillment recorded: 0 | Reach 5 seed routes with fulfillment recorded |
 | records | partial | services: 30; statewide routes: 7; counties with specific help: 16; counties: 67; county share: 0.239 | county-specific help in 18 more counties |
 | rules | partial | core topics covered: 6; core topics: 7; missing topics: public-consumption | Add dated, officially sourced rules for: public-consumption |
@@ -40,7 +40,7 @@ As of 2026-11-05. Standard version 1.0.0: [STATE_COMPLETION_STANDARD.md](STATE_C
 
 | Pathway | Earned | Measures | Next level needs |
 | --- | --- | --- | --- |
-| dispensaries | broad | regulator listed locations: 722; regulator count: 722; regulator count as of: 2026-11-01; share: 1.0; location source age days: 4 | — |
+| dispensaries | broad | regulator listed locations: 722; regulator count: 722; regulator count as of: 2026-11-01; share: 1.0; location source age days: 8 | — |
 | seeds | starter | services: 2; with fulfillment recorded: 0 | Reach 5 seed routes with fulfillment recorded |
 | records | partial | services: 10; statewide routes: 3; counties with specific help: 5; counties: 62; county share: 0.081 | county-specific help in 26 more counties |
 | rules | broad | core topics covered: 7; core topics: 7; missing topics:  | — |

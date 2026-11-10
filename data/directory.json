@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "scope": "directory",
-  "as_of": "2026-11-05",
+  "as_of": "2026-11-09",
   "organizations": [
     {
       "id": "org-6f5375e74696",
@@ -136359,6 +136359,32 @@
       "recorded_on": "2026-11-05",
       "recheck_on": "2026-12-05",
       "limitations": "Patient-support route drawn from the organization's existing directory review; confirm current programs directly."
+    },
+    {
+      "id": "ev-ohio-cannabis-expo-columbus-2027",
+      "subject_id": "event-oh-ohio-cannabis-expo-columbus-2027",
+      "claim": "event-listing",
+      "value": "Ohio Cannabis Expo — Columbus 2027 | Crowne Plaza Columbus North–Worthington, 6500 Doubletree Avenue, Columbus, Ohio 43229 | Friday, May 21, 2027, 1–7 PM",
+      "source_url": "https://ohiocannabisexpo.com/columbus-2027/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-09",
+      "recorded_on": "2026-11-09",
+      "recheck_on": "2027-02-09",
+      "limitations": "Organizer event page reviewed for date, hours, venue and ticket route. Page lists free general admission for budtenders, veterans, medical cannabis patients and seniors 62+ (21+, VIP excluded) and spectator access to the Ohio Cannabis Car Show. Attendee ticket prices were not listed; checkout was not tested."
+    },
+    {
+      "id": "ev-ohio-cannabis-expo-dayton-2027-page",
+      "subject_id": "event-oh-ohio-cannabis-expo-2027",
+      "claim": "event-listing",
+      "value": "Ohio Cannabis Expo — Dayton 2027 | Dayton Convention Center, Hall A, 22 E. Fifth Street, Dayton, Ohio 45402 | Friday, June 11, 2027, 1–7 PM",
+      "source_url": "https://ohiocannabisexpo.com/dayton-2027/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-09",
+      "recorded_on": "2026-11-09",
+      "recheck_on": "2027-02-09",
+      "limitations": "Organizer event page reviewed for date, hours, venue and prices (General Admission $25, VIP $60). Online ticket sales had not opened when reviewed. The Dayton section and the site-wide banner list free-admission groups differently; eligibility should be confirmed with the organizer. Concert details pending."
     }
   ],
   "rules": [
@@ -138106,6 +138132,20 @@
       ]
     },
     {
+      "id": "event-oh-ohio-cannabis-expo-columbus-2027",
+      "name": "Ohio Cannabis Expo — Columbus 2027",
+      "state": "OH",
+      "starts_on": "2027-05-21",
+      "ends_on": "2027-05-21",
+      "organization_ids": [
+        "org-ea14a4ededa6"
+      ],
+      "next_step_url": "https://ohiocannabisexpo.com/columbus-2027/",
+      "evidence_ids": [
+        "ev-ohio-cannabis-expo-columbus-2027"
+      ]
+    },
+    {
       "id": "event-oh-ohio-cannabis-expo-2027",
       "name": "Ohio Cannabis Expo — Dayton 2027",
       "state": "OH",
@@ -138114,9 +138154,10 @@
       "organization_ids": [
         "org-ea14a4ededa6"
       ],
-      "next_step_url": "https://www.ohiocannabisexpo.com/",
+      "next_step_url": "https://ohiocannabisexpo.com/dayton-2027/",
       "evidence_ids": [
-        "ev-ohio-cannabis-expo-2027"
+        "ev-ohio-cannabis-expo-2027",
+        "ev-ohio-cannabis-expo-dayton-2027-page"
       ]
     },
     {
@@ -138734,11 +138775,21 @@
       "registration_url": "https://www.eventbrite.com/e/2002953936141/"
     },
     {
+      "name": "Ohio Cannabis Expo — Columbus 2027",
+      "date": "2027-05-21",
+      "place": "Crowne Plaza Columbus North–Worthington · 6500 Doubletree Ave · Columbus, Ohio · 1–7 PM",
+      "url": "https://ohiocannabisexpo.com/columbus-2027/",
+      "reviewed_on": "2026-11-09",
+      "registration_url": "https://ohiocannabisexpo.com/etn/ohio-cannabis-expo-columbus-2027/",
+      "save_the_date": true
+    },
+    {
       "name": "Ohio Cannabis Expo — Dayton 2027",
       "date": "2027-06-11",
-      "place": "Dayton Convention Center · Dayton, Ohio",
-      "url": "https://www.ohiocannabisexpo.com/",
-      "reviewed_on": "2026-10-30"
+      "place": "Dayton Convention Center, Hall A · 22 E. Fifth Street · Dayton, Ohio · 1–7 PM",
+      "url": "https://ohiocannabisexpo.com/dayton-2027/",
+      "reviewed_on": "2026-11-09",
+      "save_the_date": true
     }
   ]
 }
