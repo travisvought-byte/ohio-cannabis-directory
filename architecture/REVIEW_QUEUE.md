@@ -10,16 +10,16 @@ Historical evidence and editorial inclusion remain intact. A review date identif
 
 | Priority | Listing | Reason | Last review |
 | --- | --- | --- | --- |
-| P1 | [Precise TB Solutions](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-baee0f174df2) | Resolve the named open issue; No published website or contact-page route | 2026-10-06 |
-| P1 | [Farkas Farms](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-9ee4b284a472) | No published website or contact-page route | 2026-08-16 |
-| P1 | [Mood Leaf](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-105e0713e773) | Resolve the named open issue | 2026-10-13 |
-| P1 | [Ohio Clean Leaf](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-7e1ab15e4a71) | No recorded evidence-review date | Not recorded |
-| P1 | [SIPE Promotional Products](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-3af4221fa5d1) | Resolve the named open issue; No published website or contact-page route | 2026-10-06 |
-| P1 | [Ohio Women’s Cannabis Chamber of Commerce](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-d124f071dca0) | Resolve the named open issue | 2026-10-06 |
-| P1 | [Porcupine Defense Solutions](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-0557619757dc) | Resolve the named open issue; No published website or contact-page route; No recorded evidence-review date | Not recorded |
-| P1 | [Courier Pro Logistics](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-fb49bcaddd77) | Resolve the named open issue | 2026-10-13 |
-| P2 | [Mojo's Smoke Shop (formerly The Hemp House / Wholesale Hemp LLC)](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-20250325b35f) | No recorded evidence-review date | Not recorded |
-| P2 | [Nexus Agriscience](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org=org-4272e7927699) | No recorded evidence-review date | Not recorded |
+| P1 | [Precise TB Solutions](https://weed.vethomeguard.org/directory.html?org=org-baee0f174df2) | Resolve the named open issue; No published website or contact-page route | 2026-10-06 |
+| P1 | [Farkas Farms](https://weed.vethomeguard.org/directory.html?org=org-9ee4b284a472) | No published website or contact-page route | 2026-08-16 |
+| P1 | [Mood Leaf](https://weed.vethomeguard.org/directory.html?org=org-105e0713e773) | Resolve the named open issue | 2026-10-13 |
+| P1 | [Ohio Clean Leaf](https://weed.vethomeguard.org/directory.html?org=org-7e1ab15e4a71) | No recorded evidence-review date | Not recorded |
+| P1 | [SIPE Promotional Products](https://weed.vethomeguard.org/directory.html?org=org-3af4221fa5d1) | Resolve the named open issue; No published website or contact-page route | 2026-10-06 |
+| P1 | [Ohio Women’s Cannabis Chamber of Commerce](https://weed.vethomeguard.org/directory.html?org=org-d124f071dca0) | Resolve the named open issue | 2026-10-06 |
+| P1 | [Porcupine Defense Solutions](https://weed.vethomeguard.org/directory.html?org=org-0557619757dc) | Resolve the named open issue; No published website or contact-page route; No recorded evidence-review date | Not recorded |
+| P1 | [Courier Pro Logistics](https://weed.vethomeguard.org/directory.html?org=org-fb49bcaddd77) | Resolve the named open issue | 2026-10-13 |
+| P2 | [Mojo's Smoke Shop (formerly The Hemp House / Wholesale Hemp LLC)](https://weed.vethomeguard.org/directory.html?org=org-20250325b35f) | No recorded evidence-review date | Not recorded |
+| P2 | [Nexus Agriscience](https://weed.vethomeguard.org/directory.html?org=org-4272e7927699) | No recorded evidence-review date | Not recorded |
 
 ## Coming due in the next 60 days
 

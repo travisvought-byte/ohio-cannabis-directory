@@ -1,40 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://travisvought-byte.github.io/ohio-cannabis-directory/</loc>
+    <loc>https://weed.vethomeguard.org/</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://travisvought-byte.github.io/ohio-cannabis-directory/intake.html</loc>
+    <loc>https://weed.vethomeguard.org/intake.html</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://travisvought-byte.github.io/ohio-cannabis-directory/relationships.html</loc>
+    <loc>https://weed.vethomeguard.org/relationships.html</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url><loc>https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html</loc><lastmod>2026-10-09</lastmod></url>
-<url><loc>https://travisvought-byte.github.io/ohio-cannabis-directory/seeds.html</loc><lastmod>2026-10-09</lastmod></url>
-<url><loc>https://travisvought-byte.github.io/ohio-cannabis-directory/state.html</loc><lastmod>2026-10-09</lastmod></url>
-<url><loc>https://travisvought-byte.github.io/ohio-cannabis-directory/locations.html</loc></url>
-<url><loc>https://travisvought-byte.github.io/ohio-cannabis-directory/ancestry.html</loc><lastmod>2026-10-10</lastmod></url>
-<url><loc>https://travisvought-byte.github.io/ohio-cannabis-directory/knowledge.html</loc><lastmod>2026-10-10</lastmod></url>
-<url><loc>https://travisvought-byte.github.io/ohio-cannabis-directory/buyer-guide.html</loc></url>
-<url><loc>https://travisvought-byte.github.io/ohio-cannabis-directory/assessment.html</loc></url>
-  <url><loc>https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html</loc></url>
-<url><loc>https://travisvought-byte.github.io/ohio-cannabis-directory/advocacy.html</loc><lastmod>2026-10-12</lastmod></url>
-<url><loc>https://travisvought-byte.github.io/ohio-cannabis-directory/lawmakers.html</loc><lastmod>2026-10-12</lastmod></url>
-  <url><loc>https://travisvought-byte.github.io/ohio-cannabis-directory/expungement.html</loc><lastmod>2026-10-18</lastmod></url>
+  <url><loc>https://weed.vethomeguard.org/resources.html</loc><lastmod>2026-10-09</lastmod></url>
+<url><loc>https://weed.vethomeguard.org/seeds.html</loc><lastmod>2026-10-09</lastmod></url>
+<url><loc>https://weed.vethomeguard.org/state.html</loc><lastmod>2026-10-09</lastmod></url>
+<url><loc>https://weed.vethomeguard.org/locations.html</loc></url>
+<url><loc>https://weed.vethomeguard.org/ancestry.html</loc><lastmod>2026-10-10</lastmod></url>
+<url><loc>https://weed.vethomeguard.org/knowledge.html</loc><lastmod>2026-10-10</lastmod></url>
+<url><loc>https://weed.vethomeguard.org/buyer-guide.html</loc></url>
+<url><loc>https://weed.vethomeguard.org/assessment.html</loc></url>
+  <url><loc>https://weed.vethomeguard.org/directory.html</loc></url>
+<url><loc>https://weed.vethomeguard.org/advocacy.html</loc><lastmod>2026-10-12</lastmod></url>
+<url><loc>https://weed.vethomeguard.org/lawmakers.html</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://weed.vethomeguard.org/expungement.html</loc><lastmod>2026-10-18</lastmod></url>
   <url>
-    <loc>https://travisvought-byte.github.io/ohio-cannabis-directory/compare.html</loc>
+    <loc>https://weed.vethomeguard.org/compare.html</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-<url><loc>https://travisvought-byte.github.io/ohio-cannabis-directory/pennsylvania-advocacy.html</loc></url>
+<url><loc>https://weed.vethomeguard.org/pennsylvania-advocacy.html</loc></url>
+  <url>
+    <loc>https://weed.vethomeguard.org/pennsylvania-directory.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://weed.vethomeguard.org/work-with-travis.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>

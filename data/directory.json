@@ -59015,7 +59015,7 @@
       "eligibility": "Confirm current eligibility and service requirements with the provider.",
       "next_step": {
         "label": "Open next step",
-        "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/index.html?org=org-9ee4b284a472"
+        "url": "https://weed.vethomeguard.org/index.html?org=org-9ee4b284a472"
       },
       "availability": "unknown",
       "attributes": {},
@@ -65950,7 +65950,7 @@
       "eligibility": "Confirm current eligibility and service requirements with the provider.",
       "next_step": {
         "label": "Open next step",
-        "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/index.html?org=org-1b9500af4822"
+        "url": "https://weed.vethomeguard.org/index.html?org=org-1b9500af4822"
       },
       "availability": "unknown",
       "attributes": {},
@@ -66131,7 +66131,7 @@
       "eligibility": "Confirm current eligibility and service requirements with the provider.",
       "next_step": {
         "label": "Open next step",
-        "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/index.html?org=org-12c2e0c4f6ba"
+        "url": "https://weed.vethomeguard.org/index.html?org=org-12c2e0c4f6ba"
       },
       "availability": "unknown",
       "attributes": {},
@@ -66158,7 +66158,7 @@
       "eligibility": "Confirm current eligibility and service requirements with the provider.",
       "next_step": {
         "label": "Open next step",
-        "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/index.html?org=org-85a0834c514c"
+        "url": "https://weed.vethomeguard.org/index.html?org=org-85a0834c514c"
       },
       "availability": "unknown",
       "attributes": {},
@@ -66341,7 +66341,7 @@
       "eligibility": "Confirm current eligibility and service requirements with the provider.",
       "next_step": {
         "label": "Open next step",
-        "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/index.html?org=org-feedcad3b5ae"
+        "url": "https://weed.vethomeguard.org/index.html?org=org-feedcad3b5ae"
       },
       "availability": "unknown",
       "attributes": {},
@@ -69682,7 +69682,7 @@
       "eligibility": "Confirm current eligibility and service requirements with the provider.",
       "next_step": {
         "label": "Open next step",
-        "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/index.html?org=org-0557619757dc"
+        "url": "https://weed.vethomeguard.org/index.html?org=org-0557619757dc"
       },
       "availability": "unknown",
       "attributes": {},
@@ -72458,7 +72458,7 @@
       "eligibility": "Confirm current eligibility and service requirements with the provider.",
       "next_step": {
         "label": "Open next step",
-        "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/index.html?org=org-3af4221fa5d1"
+        "url": "https://weed.vethomeguard.org/index.html?org=org-3af4221fa5d1"
       },
       "availability": "unknown",
       "attributes": {},
@@ -72485,7 +72485,7 @@
       "eligibility": "Confirm current eligibility and service requirements with the provider.",
       "next_step": {
         "label": "Open next step",
-        "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/index.html?org=org-baee0f174df2"
+        "url": "https://weed.vethomeguard.org/index.html?org=org-baee0f174df2"
       },
       "availability": "unknown",
       "attributes": {},
@@ -74758,7 +74758,7 @@
       "eligibility": "Retail stores serve registered Pennsylvania medical patients and caregivers. Business inquiries go through the company.",
       "next_step": {
         "label": "Find Sunnyside stores in the dispensary finder",
-        "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/locations.html?state=PA&q=Sunnyside"
+        "url": "https://weed.vethomeguard.org/locations.html?state=PA&q=Sunnyside"
       },
       "availability": "unknown",
       "attributes": {},
@@ -74848,7 +74848,7 @@
       "eligibility": "Retail stores serve registered Pennsylvania medical patients and caregivers.",
       "next_step": {
         "label": "Find Zen Leaf stores in the dispensary finder",
-        "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/locations.html?state=PA&q=Zen%20Leaf"
+        "url": "https://weed.vethomeguard.org/locations.html?state=PA&q=Zen%20Leaf"
       },
       "availability": "unknown",
       "attributes": {},
@@ -74878,7 +74878,7 @@
       "eligibility": "Retail stores serve registered Pennsylvania medical patients and caregivers.",
       "next_step": {
         "label": "Find Verilife stores in the dispensary finder",
-        "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/locations.html?state=PA&q=Verilife"
+        "url": "https://weed.vethomeguard.org/locations.html?state=PA&q=Verilife"
       },
       "availability": "unknown",
       "attributes": {},
@@ -138386,49 +138386,49 @@
           "pathway_id": "dispensaries",
           "coverage_status": "broad",
           "next_step": "Reach an official location lookup or suitable location contact.",
-          "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html#dispensaries",
+          "public_url": "https://weed.vethomeguard.org/resources.html#dispensaries",
           "limitations": "Starter referral coverage; organization service areas remain historical text unless backed by claim-level coverage evidence. No complete statewide location list has been migrated."
         },
         {
           "pathway_id": "seeds",
           "coverage_status": "partial",
           "next_step": "Reach a suitable catalog or contact with fulfillment limitations visible.",
-          "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/seeds.html",
+          "public_url": "https://weed.vethomeguard.org/seeds.html",
           "limitations": "Starter referral coverage; organization service areas remain historical text unless backed by claim-level coverage evidence. No complete statewide location list has been migrated."
         },
         {
           "pathway_id": "records",
           "coverage_status": "broad",
           "next_step": "Reach a relevant application or legal-aid contact.",
-          "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html#records",
+          "public_url": "https://weed.vethomeguard.org/resources.html#records",
           "limitations": "Starter referral coverage; organization service areas remain historical text unless backed by claim-level coverage evidence. No complete statewide location list has been migrated."
         },
         {
           "pathway_id": "rules",
           "coverage_status": "broad",
           "next_step": "Read a dated summary and its official source.",
-          "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html#rules",
+          "public_url": "https://weed.vethomeguard.org/resources.html#rules",
           "limitations": "Starter referral coverage; organization service areas remain historical text unless backed by claim-level coverage evidence. No complete statewide location list has been migrated."
         },
         {
           "pathway_id": "medical",
           "coverage_status": "broad",
           "next_step": "Reach the correct official registration or support route.",
-          "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html#medical",
+          "public_url": "https://weed.vethomeguard.org/resources.html#medical",
           "limitations": "Starter referral coverage; organization service areas remain historical text unless backed by claim-level coverage evidence. No complete statewide location list has been migrated."
         },
         {
           "pathway_id": "business",
           "coverage_status": "partial",
           "next_step": "Reach a relevant service provider and its supporting evidence.",
-          "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/index.html",
+          "public_url": "https://weed.vethomeguard.org/index.html",
           "limitations": "Starter referral coverage; organization service areas remain historical text unless backed by claim-level coverage evidence. No complete statewide location list has been migrated."
         },
         {
           "pathway_id": "community",
           "coverage_status": "partial",
           "next_step": "Reach a group contact or event participation page.",
-          "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/resources.html#community",
+          "public_url": "https://weed.vethomeguard.org/resources.html#community",
           "limitations": "Starter referral coverage; organization service areas remain historical text unless backed by claim-level coverage evidence. No complete statewide location list has been migrated."
         }
       ]
@@ -138450,7 +138450,7 @@
           "coverage_status": "broad",
           "next_step": "Search the 200 Department of Health roster locations by city, county or distance, then confirm details with the store.",
           "limitations": "Denominator: all 200 rows of the Department of Health roster dated September 16, 2026. The roster is not a live permit list and names no permit holder. Store brands are grouped by the name printed on the roster, not by ownership. 37 locations have no county or map point because the Census geocoder did not match their exact address.",
-          "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/locations.html?state=PA"
+          "public_url": "https://weed.vethomeguard.org/locations.html?state=PA"
         },
         {
           "pathway_id": "seeds",
@@ -138506,7 +138506,7 @@
           "pathway_id": "dispensaries",
           "coverage_status": "broad",
           "next_step": "Search the 698 OCM-licensed adult-use stores and 24 open medical dispensing facilities by city, county, ZIP or distance, then confirm details with the store.",
-          "public_url": "https://travisvought-byte.github.io/ohio-cannabis-directory/locations.html?state=NY",
+          "public_url": "https://weed.vethomeguard.org/locations.html?state=NY",
           "limitations": "Denominator: every row of the OCM Current OCM Licenses export of November 1, 2026 with Active license and operational status, retail sales purpose and an opening date (698 of 3,040 rows), plus the 24 of 30 OCM medical dispensing facilities not marked temporarily closed. A licensing snapshot, not a live license check. Approximate Census map points for 644 of 722 locations (geocoded November 1, 2026); 78 addresses had no exact match or a county that disagreed with the regulator's and have no map point. 11 registered-organization adult-use sites with no opening date are not included."
         },
         {

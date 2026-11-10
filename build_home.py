@@ -12,11 +12,11 @@ TEMPLATE = r'''<!doctype html>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ohio Cannabis Industry Directory | Ohio Cannabis Directory</title>
 <meta name="description" content="Find Ohio cannabis businesses, industry contacts, suppliers and service providers in a free source-linked directory.">
-<link rel="canonical" href="https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html">
+<link rel="canonical" href="https://weed.vethomeguard.org/directory.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ohio Cannabis Industry Directory">
 <meta property="og:description" content="Browse Ohio cannabis businesses, industry contacts, suppliers and service providers in a free source-linked directory.">
-<meta property="og:image" content="https://travisvought-byte.github.io/ohio-cannabis-directory/assets/vhg-logo.png">
+<meta property="og:image" content="https://weed.vethomeguard.org/assets/vhg-logo.png">
 <script>location.replace('directory.html'+location.search+location.hash);</script>
 <meta http-equiv="refresh" content="0;url=directory.html">
 <style>
@@ -49,7 +49,7 @@ nav a{min-height:44px;display:inline-flex;align-items:center}
 <a href="assessment.html">Business self-check</a>
 <a href="advocacy.html">Advocacy</a>
 <a href="compare.html">Compare states</a>
-<a href="https://travisvought-byte.github.io/vhg-veteran-resident-guide/">Veteran Resident Guide</a>
+<a href="https://guide.vethomeguard.org/">Veteran Resident Guide</a>
 </nav>
 <p><strong>Looking for cannabis seeds?</strong> <a href="seeds.html">Browse the seed supplier directory</a>, including Ohio breeders, seed banks, and growing supplies.</p>
 </main>
