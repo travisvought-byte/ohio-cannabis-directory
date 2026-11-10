@@ -41,6 +41,65 @@ COLS = {
 
 UPCOMING_EVENTS = load_event_routes()
 
+# Owner-requested national-event banner (issue #114). Dates come from the canonical
+# event record; the planner is the owner's own public Google Sheet.
+MJBIZCON_EVENT_ID = "event-nv-mjbizcon-2026"
+MJBIZCON_PLANNER_ID = "1QlynoENgH6QjzzsPuFThA7PyKAZuv5XOkA_fnxdQaEg"
+MJBIZCON_PLANNER_VIEW = f"https://docs.google.com/spreadsheets/d/{MJBIZCON_PLANNER_ID}/edit?usp=sharing"
+MJBIZCON_PLANNER_XLSX = f"https://docs.google.com/spreadsheets/d/{MJBIZCON_PLANNER_ID}/export?format=xlsx"
+
+
+def event_date_label(start, end):
+    if start == end:
+        return start.strftime("%a, %b %-d, %Y")
+    if start.year == end.year and start.month == end.month:
+        return f"{start.strftime('%b %-d')}–{end.day}, {end.year}"
+    return f"{start.strftime('%b %-d, %Y')} – {end.strftime('%b %-d, %Y')}"
+
+
+def mjbizcon_banner(events, today):
+    event = next((e for e in events if e["id"] == MJBIZCON_EVENT_ID), None)
+    if not event:
+        return ""
+    start = datetime.date.fromisoformat(event["starts_on"])
+    end = datetime.date.fromisoformat(event["ends_on"])
+    if today > end:
+        return ""
+    return (
+        f'<aside class="national-event" id="mjbizcon-banner" data-ends="{end.isoformat()}" aria-label="MJBizCon 2026">'
+        '<p class="national-event-kicker">Industry event · outside Ohio</p>'
+        f'<p><strong>MJBizCon 2026</strong> · Las Vegas Convention Center · <time datetime="{start.isoformat()}">{html.escape(event_date_label(start, end))}</time>. '
+        'Going? Plan who to meet before you fly out with the free <strong>MJBizCon 2026 Attendee Planner &amp; Connection Directory</strong> — exhibitors, distributors and contacts in one spreadsheet.</p>'
+        '<p class="national-event-links">'
+        f'<a href="{html.escape(MJBIZCON_PLANNER_VIEW, quote=True)}" target="_blank" rel="noopener" data-track="mjbizcon:planner-open">Open the planner →</a>'
+        f'<a href="{html.escape(MJBIZCON_PLANNER_XLSX, quote=True)}" data-track="mjbizcon:planner-download">Download (.xlsx)</a>'
+        f'<a href="{html.escape(event["next_step_url"], quote=True)}" target="_blank" rel="noopener" data-track="mjbizcon:event">Event site</a>'
+        '</p></aside>'
+    )
+
+
+def save_the_date_markup(events, after):
+    future = sorted(
+        (e for e in events if e.get("save_the_date") and datetime.date.fromisoformat(e["date"]) > after),
+        key=lambda e: e["date"],
+    )
+    if not future:
+        return ""
+    items = []
+    for event in future:
+        date_label = datetime.date.fromisoformat(event["date"]).strftime("%a, %b %-d, %Y")
+        items.append(
+            '<li class="home-event">'
+            f'<h3>{html.escape(event["name"])}</h3>'
+            f'<p><time datetime="{event["date"]}">{html.escape(date_label)}</time></p>'
+            f'<p class="event-place">{html.escape(event["place"])}</p>'
+            f'<p><a href="{html.escape(event["url"], quote=True)}" target="_blank" rel="noopener">Event details</a>'
+            + (f' · <a href="{html.escape(event["registration_url"], quote=True)}" target="_blank" rel="noopener">Tickets</a>' if event.get("registration_url") else "")
+            + f' · Checked {html.escape(event["reviewed_on"])}</p>'
+            '</li>'
+        )
+    return '<h2>Save the date <span>· coming up later</span></h2><ol class="event-line" aria-label="Later Ohio cannabis events">' + "".join(items) + "</ol>"
+
 
 def clean(v):
     if pd.isna(v):
@@ -104,6 +163,8 @@ def main():
         home_events.append('<li class="home-empty">No confirmed event dates in this window.</li>')
     home_events.append('</ol>')
     home_event_markup = "\n".join(home_events)
+    save_date_markup = save_the_date_markup(UPCOMING_EVENTS, event_limit)
+    national_banner = mjbizcon_banner(data["events"], today)
 
     payload = script_json(records)
 
@@ -147,6 +208,10 @@ def main():
     page = brand_page(TEMPLATE).replace("__PAYLOAD__", payload)
     page = page.replace("__UPCOMING_EVENTS__", script_json(UPCOMING_EVENTS))
     page = page.replace("__HOME_EVENT_MARKUP__", home_event_markup)
+    page = page.replace("__SAVE_DATE_MARKUP__", save_date_markup)
+    if not save_date_markup:
+        page = page.replace('id="save-date-card"', 'id="save-date-card" hidden')
+    page = page.replace("__NATIONAL_EVENT_BANNER__", national_banner)
     page = page.replace("__CAT_OPTS__", cat_opts)
     help_routes = [('Banking & Financial Services', 'Banking'), ('Accounting & Tax', 'Accounting & tax'), ('Legal & Licensing', 'Legal & licensing'), ('Testing Labs', 'Testing labs'), ('Packaging & Labeling', 'Packaging & labels'), ('Staffing & HR', 'Staffing & HR'), ('Insurance', 'Insurance'), ('Security & Cash Logistics', 'Security & cash logistics')]
     from urllib.parse import urlencode, quote
@@ -402,6 +467,7 @@ __VHG_CSS__
     body{background:#fff; font-size:11pt}
     article{page-break-inside:avoid}
   }
+.national-event{background:#0f2f3d;color:#f4f1e8;border-left:5px solid #d9a441;padding:12px 16px;margin:12px 0 16px;font-size:15px;line-height:1.5}.national-event p{margin:.2rem 0}.national-event-kicker{font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#d9a441}.national-event-links{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:.45rem!important}.national-event a{color:#fff;font-weight:700;text-underline-offset:3px;min-height:44px;display:inline-flex;align-items:center}.search-active .national-event{display:none}@media print{.national-event{display:none}}
 .november-campaign{background:#fff8e7;color:#20313a;border-left:4px solid #bb8e36;padding:10px 14px;margin:14px 0 18px;font-size:15px;line-height:1.5}.november-campaign a{color:#215b76;font-weight:700;text-underline-offset:3px}.search-active .november-campaign{display:none}@media print{.november-campaign{display:none}}
 </style>
 </head>
@@ -412,6 +478,7 @@ __VHG_CSS__
     __VHG_BRAND__
     <h1>Ohio cannabis industry directory</h1>
     <p class="directory-intro">Browse __N_PUB__ organizations and their published contacts. Search by business, person, specialty, city, or county.</p>
+    __NATIONAL_EVENT_BANNER__
     <p class="pa-portal-entry"><strong>Looking for Pennsylvania companies?</strong> <a href="pennsylvania-directory.html">Open the Pennsylvania company directory →</a> for operators, suppliers, business contacts and brands. <a href="state.html?state=PA">PA resource portal</a>.</p>
     <div class="searchbox">
       <input id="q" type="search" autocomplete="off" spellcheck="false"
@@ -425,6 +492,7 @@ __VHG_CSS__
 
     <details id="browse-extras" open><summary>Upcoming events and business help</summary>
     <section class="upcoming-events" id="upcoming-card" aria-label="Upcoming Ohio cannabis events">__HOME_EVENT_MARKUP__</section>
+    <section class="upcoming-events save-the-date" id="save-date-card" aria-label="Later Ohio cannabis events">__SAVE_DATE_MARKUP__</section>
     <p class="event-submit"><a href="__EVENT_SUBMISSION__">Submit an Ohio cannabis event</a> · Include an official event link and organizer contact.</p>
 
     <section class="business-help" aria-labelledby="business-help-title"><h2 id="business-help-title">Find business help</h2><nav class="help-links" aria-label="Business help">__HELP_ROUTES__</nav></section>
@@ -491,6 +559,27 @@ function renderHomeHighlights(){
     const date = new Date(year, month - 1, day);
     return date >= today && date <= limit;
   }).sort((a,b) => Number(Boolean(b.featured))-Number(Boolean(a.featured)) || a.date.localeCompare(b.date));
+  const banner = $('mjbizcon-banner');
+  if (banner && banner.dataset.ends){
+    const [by, bm, bd] = banner.dataset.ends.split("-").map(Number);
+    if (today > new Date(by, bm - 1, bd)) banner.remove();
+  }
+  const later = UPCOMING_EVENTS.filter(event => {
+    if (!event.save_the_date) return false;
+    const [year, month, day] = event.date.split("-").map(Number);
+    return new Date(year, month - 1, day) > limit;
+  }).sort((a,b) => a.date.localeCompare(b.date));
+  const laterPanel = $('save-date-card');
+  if (laterPanel){
+    const longDate = event => {
+      const [year, month, day] = event.date.split("-").map(Number);
+      return new Intl.DateTimeFormat(undefined, {weekday:"short", month:"short", day:"numeric", year:"numeric"}).format(new Date(year, month - 1, day));
+    };
+    laterPanel.hidden = !later.length;
+    laterPanel.innerHTML = later.length ? '<h2>Save the date <span>· coming up later</span></h2><ol class="event-line" aria-label="Later Ohio cannabis events">' + later.map(event =>
+      `<li class="home-event"><h3>${esc(event.name)}</h3><p><time datetime="${esc(event.date)}">${esc(longDate(event))}</time></p><p class="event-place">${esc(event.place)}</p><p><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a>${event.registration_url?` · <a href="${esc(event.registration_url)}" target="_blank" rel="noopener">Tickets</a>`:''} · Checked ${esc(event.reviewed_on)}</p></li>`
+    ).join('') + '</ol>' : '';
+  }
   const panel = $('upcoming-card');if(!panel)return;
   if (!upcoming.length){
     panel.innerHTML = '<h2>Upcoming events · next 3 months</h2><p class="home-empty">No confirmed event dates in this window.</p>';

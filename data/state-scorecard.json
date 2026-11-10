@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-05",
+  "as_of": "2026-11-09",
   "standard_version": "1.0.0",
   "states": {
     "OH": {
@@ -14,7 +14,7 @@
             "regulator_count": 233,
             "regulator_count_as_of": "2026-11-04",
             "share": 0.987,
-            "location_source_age_days": 26
+            "location_source_age_days": 30
           },
           "next": null
         },
@@ -95,7 +95,7 @@
             "regulator_count": 200,
             "regulator_count_as_of": "2026-09-16",
             "share": 1.0,
-            "location_source_age_days": 8
+            "location_source_age_days": 12
           },
           "next": null
         },
@@ -178,7 +178,7 @@
             "regulator_count": 722,
             "regulator_count_as_of": "2026-11-01",
             "share": 1.0,
-            "location_source_age_days": 4
+            "location_source_age_days": 8
           },
           "next": null
         },
