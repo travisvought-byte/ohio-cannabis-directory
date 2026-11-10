@@ -28,6 +28,10 @@ def load_resource_routes():
 def load_event_routes():
     return load_directory()['event_routes']
 
+
+def load_event_spotlights():
+    return load_directory().get('event_spotlights', [])
+
 def script_json(value):
     return json.dumps(value, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
 

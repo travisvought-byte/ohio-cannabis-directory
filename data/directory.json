@@ -138860,38 +138860,56 @@
       "place": "Crowne Plaza Columbus North–Worthington · 6500 Doubletree Ave · Columbus, Ohio · 1–7 PM",
       "url": "https://ohiocannabisexpo.com/columbus-2027/",
       "reviewed_on": "2026-11-09",
-      "registration_url": "https://ohiocannabisexpo.com/etn/ohio-cannabis-expo-columbus-2027/",
-      "calls": [
-        {
-          "label": "Sponsors: request sponsorship",
-          "url": "https://ohiocannabisexpo.com/columbus-sponsorship/",
-          "note": "Packages set with the organizer; budgets from under $1,000 to $10,000+"
-        },
-        {
-          "label": "Exhibitors: apply for a booth",
-          "url": "https://ohiocannabisexpo.com/exhibitors/",
-          "note": "Early-bird booth pricing through Dec 31, 2026"
-        }
-      ]
+      "registration_url": "https://ohiocannabisexpo.com/etn/ohio-cannabis-expo-columbus-2027/"
     },
     {
       "name": "Ohio Cannabis Expo — Dayton 2027",
       "date": "2027-06-11",
       "place": "Dayton Convention Center, Hall A · 22 E. Fifth Street · Dayton, Ohio · 1–7 PM",
       "url": "https://ohiocannabisexpo.com/dayton-2027/",
-      "reviewed_on": "2026-11-09",
-      "calls": [
+      "reviewed_on": "2026-11-09"
+    }
+  ],
+  "event_spotlights": [
+    {
+      "id": "spotlight-ohio-cannabis-expo-2027",
+      "title": "Ohio Cannabis Expo 2027",
+      "organization_id": "org-ea14a4ededa6",
+      "events": [
         {
-          "label": "Sponsors: request sponsorship",
-          "url": "https://ohiocannabisexpo.com/dayton-sponsorship/",
-          "note": "Packages set with the organizer; budgets from under $1,000 to $10,000+"
+          "route": "Ohio Cannabis Expo — Columbus 2027",
+          "label": "Columbus"
         },
         {
-          "label": "Exhibitors: apply for a booth",
-          "url": "https://ohiocannabisexpo.com/exhibitors/",
-          "note": "Early-bird booth pricing through Dec 31, 2026"
+          "route": "Ohio Cannabis Expo — Dayton 2027",
+          "label": "Dayton"
         }
-      ]
+      ],
+      "calls": [
+        {
+          "label": "Sponsor Columbus",
+          "url": "https://ohiocannabisexpo.com/columbus-sponsorship/"
+        },
+        {
+          "label": "Sponsor Dayton",
+          "url": "https://ohiocannabisexpo.com/dayton-sponsorship/"
+        },
+        {
+          "label": "Exhibit at either expo",
+          "url": "https://ohiocannabisexpo.com/exhibitors/"
+        }
+      ],
+      "notes": [
+        "Sponsorship packages are set with the organizer; budgets from under $1,000 to $10,000+.",
+        "Early-bird booth pricing through Dec 31, 2026."
+      ],
+      "contact": {
+        "name": "Anthony D. Riley",
+        "role": "Founder and host",
+        "phone": "614-817-5805",
+        "email": "info@ohiocannabisexpo.com"
+      },
+      "reviewed_on": "2026-11-09"
     }
   ]
 }

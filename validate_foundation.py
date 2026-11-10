@@ -97,6 +97,17 @@ def validate(data):
   if item['ends_on']<item['starts_on']:errors.append(f'{item["id"]}: event ends before it starts')
   for org in item['organization_ids']:require(org,'organizations',item['id'])
   if not evidence_refs(item):errors.append(f'{item["id"]}: event requires evidence')
+ route_names={r['name'] for r in data.get('event_routes',[])}
+ for item in data.get('event_spotlights',[]):
+  org=groups['organizations'].get(item['organization_id'])
+  if not org:errors.append(f'{item["id"]}: spotlight organization not found');continue
+  for ev in item['events']:
+   if ev['route'] not in route_names:errors.append(f'{item["id"]}: spotlight event route not found: {ev["route"]}')
+  values={c['value'] for c in org.get('contacts',[])}
+  for kind in ('phone','email'):
+   v=item.get('contact',{}).get(kind)
+   if v and v not in values:errors.append(f'{item["id"]}: spotlight contact {kind} is not on the organization record')
+  if date.fromisoformat(item['reviewed_on'])>as_of:errors.append(f'{item["id"]}: future review date')
  for item in data['states']:
   if item['code'] not in STATE_CODES:errors.append(f'{item["code"]}: invalid state code')
   if date.fromisoformat(item['reviewed_on'])>as_of:errors.append(f'{item["code"]}: future review date')
