@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://travisvought-byte.github.io/ohio-cannabis-directory/schemas/directory.schema.json",
+  "$id": "https://weed.vethomeguard.org/schemas/directory.schema.json",
   "title": "Replicable cannabis directory foundation",
   "type": "object",
   "properties": {

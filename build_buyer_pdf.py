@@ -19,7 +19,7 @@ def table(rows,widths):
  t=Table([[Paragraph(str(c),styles['SmallText']) for c in r] for r in rows],colWidths=widths,hAlign='LEFT')
  t.setStyle(TableStyle([('VALIGN',(0,0),(-1,-1),'TOP'),('BACKGROUND',(0,0),(-1,0),colors.HexColor('#eeeeee')),('GRID',(0,0),(-1,-1),.5,colors.HexColor('#bbbbbb')),('LEFTPADDING',(0,0),(-1,-1),8),('RIGHTPADDING',(0,0),(-1,-1),8),('TOPPADDING',(0,0),(-1,-1),8),('BOTTOMPADDING',(0,0),(-1,-1),8)]));story.append(t)
 def footer(c,d):
- c.setFont('Helvetica',8);c.setFillColor(colors.HexColor('#555555'));c.drawString(42,25,'Veteran Home Guardians | Ohio Cannabis Ecosystem Directory | October 11, 2026');c.drawRightString(570,25,str(d.page))
+ c.setFont('Helvetica',8);c.setFillColor(colors.HexColor('#555555'));c.drawString(42,25,'Veteran Home Guardians | Ohio Cannabis Directory | weed.vethomeguard.org | October 11, 2026');c.drawRightString(570,25,str(d.page))
 p('Your dispensary shopping plan','Title');p('A first-time and new-product buyer guide. Fill this out before your visit, then use it to explain what you need.','Body')
 h('1. What are you trying to accomplish?');line('My goal or question');p('Examples: understand product choices, avoid smoke, find a measurable product, or discuss a health concern with a clinician. Desired effects are not guaranteed.','SmallText')
 p('Experience: [ ] First time  [ ] Occasional  [ ] Returning after a break<br/>[ ] Experienced with cannabis, but new to this product form')
@@ -45,6 +45,6 @@ p('<b>Oil example:</b> 30 mL / an established 0.25 mL per use = 120 uses. At 4 u
 line('Final price with taxes / fees ($)');line('My trial amount / purchase decision');line('Notes after trying it: amount, timing and response')
 h('Sources and more help');p('Sources checked October 11, 2026. Health guidance is general; the Ohio sources cover store entry and purchase documents.','SmallText')
 for name,url in [('Health Canada: lower your risks','https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/resources/lower-your-risks.html'),('Ohio adult-use dispensing rule','https://codes.ohio.gov/ohio-administrative-code/rule-1301:18-8-08'),('Ohio: activating your medical marijuana card','https://com.ohio.gov/divisions-and-programs/cannabis-control/patients-caregivers/patient-and-caregiver-registry/activating-your-medical-marijuana-card')]:p('<link href="'+url+'">'+name+'</link>','SmallText')
-p('<link href="https://travisvought-byte.github.io/ohio-cannabis-directory/buyer-guide.html">Online shopping worksheet and calculator</link><br/><link href="https://travisvought-byte.github.io/ohio-cannabis-directory/knowledge.html">Product definitions, processing and label guide</link>','SmallText')
+p('<link href="https://weed.vethomeguard.org/buyer-guide.html">Online shopping worksheet and calculator</link><br/><link href="https://weed.vethomeguard.org/knowledge.html">Product definitions, processing and label guide</link>','SmallText')
 SimpleDocTemplate(str(OUT),pagesize=(612,792),rightMargin=42,leftMargin=42,topMargin=36,bottomMargin=42).build(story,onFirstPage=footer,onLaterPages=footer)
 print(OUT)

@@ -29,7 +29,7 @@ def brand_header():
             '<a href="buyer-guide.html">Shop smart</a><a href="ancestry.html">Strains</a><a href="seeds.html">Seeds &amp; growing</a><a href="knowledge.html">Learn</a>'
             '<a href="assessment.html">Business self-check</a><a href="advocacy.html">Advocacy</a><a href="compare.html">Compare states</a>'
             '<a href="expungement.html">Record clearing</a>'
-            '<a href="https://travisvought-byte.github.io/vhg-veteran-resident-guide/">Veteran Resident Guide</a></nav>')
+            '<a href="https://guide.vethomeguard.org/">Veteran Resident Guide</a></nav>')
 
 def brand_footer():
     return ('<footer class="site-footer"><nav aria-label="More resources">'
@@ -39,7 +39,7 @@ def brand_footer():
             '<a href="'+update_url()+'">Suggest a correction</a>'
             '<a href="https://github.com/travisvought-byte/ohio-cannabis-directory#readme">Methods &amp; sources</a>'
             '<a href="ohio-cannabis-directory.csv" download>CSV download</a>'
-            '<a href="https://travisvought-byte.github.io/vhg-veteran-resident-guide/">Veteran Resident Guide</a>'
+            '<a href="https://guide.vethomeguard.org/">Veteran Resident Guide</a>'
             '</nav><p>Created and maintained by <a href="work-with-travis.html">Travis Vought</a> · Shared in support of Veteran Home Guardians · '
             '<a href="https://github.com/travisvought-byte/ohio-cannabis-directory/blob/main/PROJECT_STEWARDSHIP.md">Project roles</a></p></footer>')
 
@@ -61,7 +61,7 @@ def brand_page(page):
     description='Find Ohio cannabis businesses, dispensaries and plain-language guides, each traced to a source.'
     if 'name="description"' not in page:page=page.replace('</head>','<meta name="description" content="'+description+'"></head>')
     page=re.sub(r'<meta\s+property="og:[^"]+"[^>]*>','',page)
-    meta='<meta property="og:type" content="website"><meta property="og:site_name" content="Ohio Cannabis Directory"><meta property="og:title" content="'+html.escape(title,quote=True)+'"><meta property="og:description" content="'+description+'"><meta property="og:image" content="https://travisvought-byte.github.io/ohio-cannabis-directory/assets/vhg-logo.png"><meta property="og:image:alt" content="Veteran Home Guardians logo">'
+    meta='<meta property="og:type" content="website"><meta property="og:site_name" content="Ohio Cannabis Directory"><meta property="og:title" content="'+html.escape(title,quote=True)+'"><meta property="og:description" content="'+description+'"><meta property="og:image" content="https://weed.vethomeguard.org/assets/vhg-logo.png"><meta property="og:image:alt" content="Veteran Home Guardians logo">'
     page=page.replace('</head>',meta+'</head>')
 
     page = page.replace('</head>', '<script src="assets/analytics.js"></script></head>')

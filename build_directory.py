@@ -228,12 +228,12 @@ TEMPLATE = r"""<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Business directory</title>
 <meta name="description" content="A searchable, source-verified directory of Ohio cannabis and cannabis-adjacent organizations: operators, service providers and nonprofits.">
-<link rel="canonical" href="https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html">
+<link rel="canonical" href="https://weed.vethomeguard.org/directory.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Business directory">
 <meta property="og:title" content="Business directory">
 <meta property="og:description" content="Find resources for yourself or your business in Ohio cannabis. __N_PUB__ organizations, each traced to a named source. Free and open under CC BY 4.0.">
-<meta property="og:url" content="https://travisvought-byte.github.io/ohio-cannabis-directory/">
+<meta property="og:url" content="https://weed.vethomeguard.org/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Business directory">
 <meta name="twitter:description" content="Find resources for yourself or your business in Ohio cannabis. __N_PUB__ organizations, each traced to a named source. Free and open under CC BY 4.0.">
@@ -243,7 +243,7 @@ TEMPLATE = r"""<!DOCTYPE html>
   "@type": "Dataset",
   "name": "Business directory",
   "description": "A source-verified directory of __N_PUB__ organizations operating in or serving Ohio's cannabis market. Each record is traced to a named source and released under CC BY 4.0.",
-  "url": "https://travisvought-byte.github.io/ohio-cannabis-directory/",
+  "url": "https://weed.vethomeguard.org/",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "isAccessibleForFree": true,
   "keywords": ["Ohio", "cannabis", "business directory", "market map", "open data", "data provenance"],

@@ -135,7 +135,7 @@ def main(as_of=None):
              '| Priority | Listing | Reason | Last review |', '| --- | --- | --- | --- |']
     for r in queue:
         name = r['name'].replace('|', '\\|')
-        lines.append(f"| {r['priority']} | [{name}](https://travisvought-byte.github.io/ohio-cannabis-directory/directory.html?org={r['organization_id']}) | {'; '.join(r['reasons'])} | {r['last_reviewed'] or 'Not recorded'} |")
+        lines.append(f"| {r['priority']} | [{name}](https://weed.vethomeguard.org/directory.html?org={r['organization_id']}) | {'; '.join(r['reasons'])} | {r['last_reviewed'] or 'Not recorded'} |")
     lines += ['', f'## Coming due in the next {FORECAST_DAYS} days', '']
     if forecast:
         lines += ['| Week of | Full reviews | Routine verifications |', '| --- | --- | --- |']

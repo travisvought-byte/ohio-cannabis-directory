@@ -44,7 +44,7 @@ TEMPLATE = r'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Who Works With Whom? | Ohio Cannabis Ecosystem Directory</title>
 <meta name="description" content="Explore 60 documented cannabis business relationships, including banking, technology, construction and brand partnerships.">
-<link rel="canonical" href="https://travisvought-byte.github.io/ohio-cannabis-directory/relationships.html">
+<link rel="canonical" href="https://weed.vethomeguard.org/relationships.html">
 <style>__STYLE__</style></head><body>
 <header><div class="wrap masthead">__VHG_BRAND__<p><a href="index.html">← Ohio Cannabis Ecosystem Directory</a></p>
 <h1>Who works with whom?</h1><p class="standfirst">__COUNT__ documented relationships. Explore partners, projects and the evidence behind them. Status is shown as recorded in the source research.</p>
