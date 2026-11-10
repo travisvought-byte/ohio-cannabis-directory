@@ -169,6 +169,7 @@
   select:focus-visible, button:focus-visible, a:focus-visible, summary:focus-visible{
     outline:2px solid var(--field-deep); outline-offset:2px;
   }
+  .more-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1rem;margin:1.2rem 0 2rem}.more-btn{min-height:48px;padding:0 1.4rem;font-weight:600;background:#183449!important;border-color:#183449!important;color:#fff!important}.more-count{font-size:.85rem;color:var(--ink-soft)}@media print{.more-wrap{display:none}}
   .tally{
     font-family:var(--serif); font-size:.9rem; color:var(--ink-soft);
     margin-left:auto; white-space:nowrap;
@@ -1087,6 +1088,32 @@ function record(r){
   </article>`;
 }
 
+// Draw matches in pages (Nov 10, 2026): search and filters still run over every
+// record, but only the first PAGE_SIZE cards are drawn until the visitor asks for more.
+const PAGE_SIZE = 25;
+let drawn = 0;
+function moreButton(){
+  const left = shown.length - drawn;
+  return left > 0 ? `<p class="more-wrap" id="more-wrap"><button class="btn more-btn" id="show-more" type="button">Show ${Math.min(PAGE_SIZE, left)} more</button> <span class="more-count">Showing ${drawn} of ${shown.length}</span></p>` : '';
+}
+function drawMore(){
+  const next = shown.slice(drawn, drawn + PAGE_SIZE);
+  if (!next.length) return;
+  const old = $('more-wrap'); if (old) old.remove();
+  const first = next[0].id;
+  drawn += next.length;
+  results.insertAdjacentHTML('beforeend', next.map(record).join('') + moreButton());
+  return first;
+}
+function drawAll(){ while (drawn < shown.length) drawMore(); }
+results.addEventListener('click', e => {
+  if (!e.target.closest('#show-more')) return;
+  const first = drawMore();
+  const heading = first && document.getElementById(first)?.querySelector('h2');
+  if (heading){ heading.setAttribute('tabindex','-1'); heading.focus({preventScroll:true}); }
+});
+window.addEventListener('beforeprint', drawAll);
+
 let wasActive = false;
 function render(){
   shown = filtered();
@@ -1108,7 +1135,9 @@ function render(){
     </div>`;
     return;
   }
-  results.innerHTML = shown.map(record).join('');
+  drawn = 0;
+  results.innerHTML = '';
+  drawMore();
 }
 
 // category shortcuts, sized by how many records sit in each lane
