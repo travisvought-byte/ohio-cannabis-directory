@@ -9,7 +9,7 @@ import html
 import datetime
 from pathlib import Path
 import pandas as pd
-from directory_data import RELEASE, RELEASE_DATE, script_json, load_records, load_event_routes, load_directory
+from directory_data import RELEASE, RELEASE_DATE, script_json, load_records, load_event_routes, load_event_spotlights, load_directory
 from directory_brand import brand_page
 from public_data import externalize
 
@@ -39,6 +39,8 @@ COLS = {
 }
 
 UPCOMING_EVENTS = load_event_routes()
+EVENT_SPOTLIGHTS = load_event_spotlights()
+SPOTLIGHT_ROUTES = {e['route'] for s in EVENT_SPOTLIGHTS for e in s['events']}
 
 # Seasonal VHG fundraiser banner; it retires itself after Veterans Day.
 NOVEMBER_BANNER_ENDS = datetime.date(2026, 11, 11)
@@ -78,6 +80,41 @@ def mjbizcon_banner(events, today):
         f'<a href="{html.escape(event["next_step_url"], quote=True)}" target="_blank" rel="noopener" data-track="mjbizcon:event">Event site</a>'
         '</p></aside>'
     )
+
+
+def spotlight_markup(spot, routes, today):
+    """One card for an organizer's event series: every upcoming date, shared calls and one contact."""
+    dates = []
+    for ev in spot['events']:
+        route = routes[ev['route']]
+        day = datetime.date.fromisoformat(route['date'])
+        if day < today:
+            continue
+        dates.append(
+            f'<li><strong>{html.escape(ev["label"])}</strong> <time datetime="{route["date"]}">{html.escape(day.strftime("%a, %b %-d, %Y"))}</time>'
+            f' · <span class="event-place">{html.escape(route["place"])}</span>'
+            f'<span class="spotlight-links"><a href="{html.escape(route["url"], quote=True)}" target="_blank" rel="noopener">Event details</a>'
+            + (f' · <a href="{html.escape(route["registration_url"], quote=True)}" target="_blank" rel="noopener">Tickets</a>' if route.get('registration_url') else '')
+            + '</span></li>')
+    if not dates:
+        return ''
+    calls = ''.join(f'<a href="{html.escape(c["url"], quote=True)}"' + (' target="_blank" rel="noopener"' if c['url'].startswith('https://') else '') + f'>{html.escape(c["label"])}</a>' for c in spot.get('calls', []))
+    notes = ' '.join(html.escape(n) for n in spot.get('notes', []))
+    contact = spot.get('contact') or {}
+    contact_html = ''
+    if contact:
+        reach = []
+        if contact.get('phone'):
+            reach.append(f'<a href="tel:{"".join(ch for ch in contact["phone"] if ch.isdigit())}">Call {html.escape(contact["phone"])}</a>')
+        if contact.get('email'):
+            reach.append(f'<a href="mailto:{html.escape(contact["email"], quote=True)}">{html.escape(contact["email"])}</a>')
+        contact_html = (f'<p class="spotlight-contact">Contact <a href="directory.html?org={spot["organization_id"]}">{html.escape(contact["name"])}</a>'
+                        + (f', {html.escape(contact["role"].lower())}' if contact.get('role') else '') + '</p>'
+                        + (f'<p class="spotlight-reach">{"".join(reach)}</p>' if reach else ''))
+    return (f'<li class="home-event spotlight" id="{spot["id"]}"><span class="event-featured">Spotlight</span><h3>{html.escape(spot["title"])}</h3>'
+            '<ul class="spotlight-dates">' + ''.join(dates) + '</ul>'
+            + (f'<div class="event-calls"><p class="event-call-links"><span class="event-calls-title">Calls for sponsors &amp; exhibitors</span>{calls}</p>' + (f'<p class="event-call-note">{notes}</p>' if notes else '') + '</div>' if calls else '')
+            + contact_html + f'<p class="event-checked">Checked {html.escape(spot["reviewed_on"])}</p></li>')
 
 
 def event_calls_markup(event):
@@ -131,9 +168,11 @@ def main():
     # events the directory is promoting stay visible however far ahead they are.
     visible_events = [
         event for event in UPCOMING_EVENTS
-        if datetime.date.fromisoformat(event["date"]) >= today
+        if datetime.date.fromisoformat(event["date"]) >= today and event["name"] not in SPOTLIGHT_ROUTES
     ]
-    home_events = ['<h2>Upcoming events</h2><ol class="event-line" aria-label="Upcoming Ohio cannabis events">']
+    routes = {e["name"]: e for e in UPCOMING_EVENTS}
+    spotlights = [m for m in (spotlight_markup(s, routes, today) for s in EVENT_SPOTLIGHTS) if m]
+    home_events = ['<h2>Upcoming events</h2><ol class="event-line" aria-label="Upcoming Ohio cannabis events">'] + spotlights
     if visible_events:
         for event in sorted(visible_events, key=lambda e: (not e.get("featured", False), e["date"])):
             event_date = datetime.date.fromisoformat(event["date"])
@@ -149,7 +188,7 @@ def main():
                 + event_calls_markup(event) +
                 '</li>'
             )
-    else:
+    elif not spotlights:
         home_events.append('<li class="home-empty">No upcoming Ohio events are listed yet.</li>')
     home_events.append('</ol>')
     home_event_markup = "\n".join(home_events)
@@ -196,6 +235,7 @@ def main():
 
     page = brand_page(TEMPLATE).replace("__PAYLOAD__", payload)
     page = page.replace("__UPCOMING_EVENTS__", script_json(UPCOMING_EVENTS))
+    page = page.replace("__EVENT_SPOTLIGHTS__", script_json(EVENT_SPOTLIGHTS))
     page = page.replace("__HOME_EVENT_MARKUP__", home_event_markup)
     page = page.replace("__NATIONAL_EVENT_BANNER__", national_banner)
     page = page.replace("__NOVEMBER_BANNER__", "    " + NOVEMBER_BANNER if today <= NOVEMBER_BANNER_ENDS else "")
@@ -455,6 +495,7 @@ __VHG_CSS__
     article{page-break-inside:avoid}
   }
 .event-calls{margin:.45rem 0 .2rem;padding:.45rem .7rem;background:#fff8e7;border-left:3px solid #bb8e36}.event-calls p{margin:.1rem 0}.event-calls-title{width:100%;font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#7a5a1c}.event-call-links{display:flex;flex-wrap:wrap;gap:0 16px}.event-when{margin:.1rem 0 .2rem}.event-when time{font-weight:700}.event-call-links a{font-weight:700}.event-call-note{font-size:.8rem;color:var(--ink-soft)}.event-links{display:flex;flex-wrap:wrap;align-items:center;gap:0 6px}.event-checked{font-size:.8rem;color:var(--ink-soft)}
+.spotlight{grid-column:1/-1;border-left-color:#bb8e36!important;background:#fffdf6;padding:.6rem .8rem .5rem!important}.spotlight h3{font-size:1.25rem!important}.spotlight-dates{list-style:none;margin:.3rem 0 .4rem;padding:0}.spotlight-dates li{font-size:.85rem;margin:.25rem 0;color:var(--ink-soft)}.spotlight-dates strong{color:var(--ink);margin-right:4px}.spotlight-dates time{font-weight:700}.spotlight-links{display:block}.spotlight-contact{font-size:.9rem!important;color:var(--ink)!important;margin:.4rem 0 .1rem!important}.spotlight .event-checked{display:block}.spotlight-contact a{display:inline!important;min-height:0!important}.spotlight-reach{display:flex;flex-wrap:wrap;gap:0 18px;margin:0!important}.spotlight-reach a{font-weight:700;font-size:.9rem}
 .task-routes{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:.6rem 0 .9rem;font-size:14px}.task-routes span{width:100%;color:var(--ink-soft);font-size:13px}.task-routes a{display:inline-flex;align-items:center;min-height:40px;padding:0 12px;border:1px solid #cfd6d9;border-radius:999px;background:#fff;color:#20313a;text-decoration:none}.task-routes a:hover,.task-routes a:focus-visible{border-color:#215b76;color:#215b76}.search-active .task-routes{display:none}@media print{.task-routes{display:none}}
 .national-event{background:#0f2f3d;color:#f4f1e8;border-left:5px solid #d9a441;padding:12px 16px;margin:12px 0 16px;font-size:15px;line-height:1.5}.national-event p{margin:.2rem 0}.national-event-kicker{display:inline-block;margin-right:4px;font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#d9a441}.national-event-links{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:.45rem!important}.national-event a{color:#fff;font-weight:700;text-underline-offset:3px;min-height:44px;display:inline-flex;align-items:center}.search-active .national-event{display:none}@media print{.national-event{display:none}}
 .november-campaign{background:#fff8e7;color:#20313a;border-left:4px solid #bb8e36;padding:10px 14px;margin:14px 0 18px;font-size:15px;line-height:1.5}.november-campaign a{color:#215b76;font-weight:700;text-underline-offset:3px}.search-active .november-campaign{display:none}@media print{.november-campaign{display:none}}
@@ -537,6 +578,24 @@ const esc = s => String(s).replace(/[&<>"]/g, c =>
   ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 const UPCOMING_EVENTS = __UPCOMING_EVENTS__;
+const EVENT_SPOTLIGHTS = __EVENT_SPOTLIGHTS__;
+const SPOTLIGHT_ROUTES = new Set(EVENT_SPOTLIGHTS.flatMap(s => s.events.map(e => e.route)));
+const spotlightCard = (spot, today, longDate) => {
+  const byName = Object.fromEntries(UPCOMING_EVENTS.map(e => [e.name, e]));
+  const dates = spot.events.map(ev => ({ev, route: byName[ev.route]})).filter(({route}) => {
+    const [y, m, d] = route.date.split("-").map(Number); return new Date(y, m - 1, d) >= today;
+  });
+  if (!dates.length) return '';
+  const calls = (spot.calls || []).map(c => `<a href="${esc(c.url)}"${c.url.startsWith('https://')?' target="_blank" rel="noopener"':''}>${esc(c.label)}</a>`).join('');
+  const notes = (spot.notes || []).map(esc).join(' ');
+  const c = spot.contact || {};
+  const reach = (c.phone ? `<a href="tel:${c.phone.replace(/\D/g,'')}">Call ${esc(c.phone)}</a>` : '') + (c.email ? `<a href="mailto:${esc(c.email)}">${esc(c.email)}</a>` : '');
+  const contact = c.name ? `<p class="spotlight-contact">Contact <a href="directory.html?org=${esc(spot.organization_id)}">${esc(c.name)}</a>${c.role?', '+esc(c.role.toLowerCase()):''}</p>` + (reach ? `<p class="spotlight-reach">${reach}</p>` : '') : '';
+  return `<li class="home-event spotlight" id="${esc(spot.id)}"><span class="event-featured">Spotlight</span><h3>${esc(spot.title)}</h3><ul class="spotlight-dates">` +
+    dates.map(({ev, route}) => `<li><strong>${esc(ev.label)}</strong> <time datetime="${esc(route.date)}">${esc(longDate(route))}</time> · <span class="event-place">${esc(route.place)}</span><span class="spotlight-links"><a href="${esc(route.url)}" target="_blank" rel="noopener">Event details</a>${route.registration_url?` · <a href="${esc(route.registration_url)}" target="_blank" rel="noopener">Tickets</a>`:''}</span></li>`).join('') + '</ul>' +
+    (calls ? `<div class="event-calls"><p class="event-call-links"><span class="event-calls-title">Calls for sponsors &amp; exhibitors</span>${calls}</p>${notes?`<p class="event-call-note">${notes}</p>`:''}</div>` : '') +
+    contact + `<p class="event-checked">Checked ${esc(spot.reviewed_on)}</p></li>`;
+};
 const eventCalls = event => {
   if (!(event.calls && event.calls.length)) return '';
   const notes = event.calls.filter(c => c.note).map(c => esc(c.note)).join(' · ');
@@ -549,7 +608,7 @@ function renderHomeHighlights(){
   const upcoming = UPCOMING_EVENTS.filter(event => {
     const [year, month, day] = event.date.split("-").map(Number);
     const date = new Date(year, month - 1, day);
-    return date >= today;
+    return date >= today && !SPOTLIGHT_ROUTES.has(event.name);
   }).sort((a,b) => Number(Boolean(b.featured))-Number(Boolean(a.featured)) || a.date.localeCompare(b.date));
   for (const id of ['november-banner']) {
     const el = $(id);
@@ -561,15 +620,16 @@ function renderHomeHighlights(){
     if (today > new Date(by, bm - 1, bd)) banner.remove();
   }
   const panel = $('upcoming-card');if(!panel)return;
-  if (!upcoming.length){
-    panel.innerHTML = '<h2>Upcoming events</h2><p class="home-empty">No upcoming Ohio events are listed yet.</p>';
-    return;
-  }
   const dateLabel = event => {
     const [year, month, day] = event.date.split("-").map(Number);
     return new Intl.DateTimeFormat(undefined, {weekday:"short", month:"short", day:"numeric", year:"numeric"}).format(new Date(year, month - 1, day));
   };
-  panel.innerHTML = '<h2>Upcoming events</h2><ol class="event-line" aria-label="Upcoming Ohio cannabis events">' + upcoming.map(event =>
+  const spotlights = EVENT_SPOTLIGHTS.map(s => spotlightCard(s, today, dateLabel)).join('');
+  if (!upcoming.length && !spotlights){
+    panel.innerHTML = '<h2>Upcoming events</h2><p class="home-empty">No upcoming Ohio events are listed yet.</p>';
+    return;
+  }
+  panel.innerHTML = '<h2>Upcoming events</h2><ol class="event-line" aria-label="Upcoming Ohio cannabis events">' + spotlights + upcoming.map(event =>
     `<li class="home-event">${event.featured?'<span class="event-featured">Featured event</span>':''}<h3>${esc(event.name)}</h3><p class="event-when"><time datetime="${esc(event.date)}">${esc(dateLabel(event))}</time> · <span class="event-place">${esc(event.place)}</span></p><p class="event-links"><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a>${event.registration_url?` · <a href="${esc(event.registration_url)}" target="_blank" rel="noopener">Register / RSVP</a>`:''} · <span class="event-checked">Checked ${esc(event.reviewed_on)}</span></p>${eventCalls(event)}</li>`
   ).join('') + '</ol>';
 }
