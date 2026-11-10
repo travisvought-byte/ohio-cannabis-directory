@@ -136390,27 +136390,27 @@
       "id": "ev-ohio-cannabis-expo-columbus-2027-calls",
       "subject_id": "event-oh-ohio-cannabis-expo-columbus-2027",
       "claim": "event-participation",
-      "value": "Ohio Cannabis Expo exhibitor application open for Columbus 2027 (May 21, 2027) and Dayton 2027 (June 11, 2027) | XL Booth 10×10 $1,100; Lounge 20×20 $1,300; Store/Demo Store from 20×20 $1,500; community table for small businesses and verified nonprofits $250 by reviewed application | early-bird pricing ends 2026-12-31 | speaker inquiries: no speaker application published; general contact info@ohiocannabisexpo.com",
-      "source_url": "https://ohiocannabisexpo.com/exhibitors/",
+      "value": "Ohio Cannabis Expo Columbus 2027 sponsorship inquiry open (https://ohiocannabisexpo.com/columbus-sponsorship/); budget ranges from under $1,000 to $10,000+, terms confirmed privately with the organizer, no deadline stated | Exhibitor application open for Columbus and Dayton 2027 (https://ohiocannabisexpo.com/exhibitors/): XL Booth 10×10 $1,100; Lounge 20×20 $1,300; Store/Demo Store from 20×20 $1,500; community table for small businesses and verified nonprofits $250 by reviewed application; early-bird pricing ends 2026-12-31",
+      "source_url": "https://ohiocannabisexpo.com/columbus-sponsorship/",
       "source_kind": "provider",
       "status": "source-reviewed",
       "reviewed_on": "2026-11-09",
       "recorded_on": "2026-11-09",
       "recheck_on": "2026-12-31",
-      "limitations": "Organizer exhibitor page reviewed. Submitting does not reserve space; organizer approval and paid invoice are required. Exhibitors may not sell, distribute, sample or display cannabis or hemp products. The speakers page (https://ohiocannabisexpo.com/speakers/) lists past speakers only; no call for speakers, deadline or selection process was published, so speaker routing uses the organizer's general email. Application form submission was not tested."
+      "limitations": "Organizer sponsorship and exhibitor pages reviewed. No sponsorship packages, prices or deadline are published; submitting the sponsorship form does not reserve sponsorship or collect payment. Exhibitor submission does not reserve space; organizer approval and a paid invoice are required. Exhibitors may not sell, distribute, sample or display cannabis or hemp products. Form submissions were not tested."
     },
     {
       "id": "ev-ohio-cannabis-expo-dayton-2027-calls",
       "subject_id": "event-oh-ohio-cannabis-expo-2027",
       "claim": "event-participation",
-      "value": "Ohio Cannabis Expo exhibitor application open for Columbus 2027 (May 21, 2027) and Dayton 2027 (June 11, 2027) | XL Booth 10×10 $1,100; Lounge 20×20 $1,300; Store/Demo Store from 20×20 $1,500; community table for small businesses and verified nonprofits $250 by reviewed application | early-bird pricing ends 2026-12-31 | speaker inquiries: no speaker application published; general contact info@ohiocannabisexpo.com",
-      "source_url": "https://ohiocannabisexpo.com/exhibitors/",
+      "value": "Ohio Cannabis Expo Dayton 2027 sponsorship inquiry open (https://ohiocannabisexpo.com/dayton-sponsorship/); budget ranges from under $1,000 to $10,000+, terms confirmed privately with the organizer, no deadline stated | Exhibitor application open for Columbus and Dayton 2027 (https://ohiocannabisexpo.com/exhibitors/): XL Booth 10×10 $1,100; Lounge 20×20 $1,300; Store/Demo Store from 20×20 $1,500; community table for small businesses and verified nonprofits $250 by reviewed application; early-bird pricing ends 2026-12-31",
+      "source_url": "https://ohiocannabisexpo.com/dayton-sponsorship/",
       "source_kind": "provider",
       "status": "source-reviewed",
       "reviewed_on": "2026-11-09",
       "recorded_on": "2026-11-09",
       "recheck_on": "2026-12-31",
-      "limitations": "Organizer exhibitor page reviewed. Submitting does not reserve space; organizer approval and paid invoice are required. Exhibitors may not sell, distribute, sample or display cannabis or hemp products. The speakers page (https://ohiocannabisexpo.com/speakers/) lists past speakers only; no call for speakers, deadline or selection process was published, so speaker routing uses the organizer's general email. Application form submission was not tested."
+      "limitations": "Organizer sponsorship and exhibitor pages reviewed. No sponsorship packages, prices or deadline are published; submitting the sponsorship form does not reserve sponsorship or collect payment. Exhibitor submission does not reserve space; organizer approval and a paid invoice are required. Exhibitors may not sell, distribute, sample or display cannabis or hemp products. Form submissions were not tested."
     }
   ],
   "rules": [
@@ -138812,13 +138812,14 @@
       "save_the_date": true,
       "calls": [
         {
-          "label": "Vendors: apply to exhibit",
-          "url": "https://ohiocannabisexpo.com/exhibitors/",
-          "note": "Early-bird booth pricing through Dec 31, 2026"
+          "label": "Sponsors: request sponsorship",
+          "url": "https://ohiocannabisexpo.com/columbus-sponsorship/",
+          "note": "Packages set with the organizer; budgets from under $1,000 to $10,000+"
         },
         {
-          "label": "Speakers: email the organizer",
-          "url": "mailto:info@ohiocannabisexpo.com?subject=Speaker%20inquiry%20%E2%80%94%20Ohio%20Cannabis%20Expo%20Columbus%202027"
+          "label": "Exhibitors: apply for a booth",
+          "url": "https://ohiocannabisexpo.com/exhibitors/",
+          "note": "Early-bird booth pricing through Dec 31, 2026"
         }
       ]
     },
@@ -138831,13 +138832,14 @@
       "save_the_date": true,
       "calls": [
         {
-          "label": "Vendors: apply to exhibit",
-          "url": "https://ohiocannabisexpo.com/exhibitors/",
-          "note": "Early-bird booth pricing through Dec 31, 2026"
+          "label": "Sponsors: request sponsorship",
+          "url": "https://ohiocannabisexpo.com/dayton-sponsorship/",
+          "note": "Packages set with the organizer; budgets from under $1,000 to $10,000+"
         },
         {
-          "label": "Speakers: email the organizer",
-          "url": "mailto:info@ohiocannabisexpo.com?subject=Speaker%20inquiry%20%E2%80%94%20Ohio%20Cannabis%20Expo%20Dayton%202027"
+          "label": "Exhibitors: apply for a booth",
+          "url": "https://ohiocannabisexpo.com/exhibitors/",
+          "note": "Early-bird booth pricing through Dec 31, 2026"
         }
       ]
     }

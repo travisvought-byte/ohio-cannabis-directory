@@ -88,7 +88,7 @@ def event_calls_markup(event):
         attrs = ' target="_blank" rel="noopener"' if external else ""
         note = f' <span class="event-call-note">{html.escape(call["note"])}</span>' if call.get("note") else ""
         items.append(f'<li><a href="{html.escape(call["url"], quote=True)}"{attrs}>{html.escape(call["label"])}</a>{note}</li>')
-    return '<div class="event-calls"><p class="event-calls-title">Calls for vendors &amp; speakers</p><ul>' + "".join(items) + "</ul></div>"
+    return '<div class="event-calls"><p class="event-calls-title">Calls for sponsors &amp; exhibitors</p><ul>' + "".join(items) + "</ul></div>"
 
 
 def save_the_date_markup(events, after):
@@ -565,7 +565,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c =>
   ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 const UPCOMING_EVENTS = __UPCOMING_EVENTS__;
-const eventCalls = event => (event.calls && event.calls.length) ? '<div class="event-calls"><p class="event-calls-title">Calls for vendors &amp; speakers</p><ul>' + event.calls.map(call =>
+const eventCalls = event => (event.calls && event.calls.length) ? '<div class="event-calls"><p class="event-calls-title">Calls for sponsors &amp; exhibitors</p><ul>' + event.calls.map(call =>
   `<li><a href="${esc(call.url)}"${call.url.startsWith('https://')?' target="_blank" rel="noopener"':''}>${esc(call.label)}</a>${call.note?` <span class="event-call-note">${esc(call.note)}</span>`:''}</li>`).join('') + '</ul></div>' : '';
 function renderHomeHighlights(){
   const today = new Date();
