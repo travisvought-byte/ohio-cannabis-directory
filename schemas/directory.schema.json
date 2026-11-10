@@ -168,6 +168,29 @@
           "save_the_date": {
             "type": "boolean"
           },
+          "calls": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string",
+                  "pattern": "^(https://|mailto:)"
+                },
+                "note": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "label",
+                "url"
+              ],
+              "additionalProperties": false
+            }
+          },
           "reviewed_on": {
             "type": "string",
             "format": "date"
