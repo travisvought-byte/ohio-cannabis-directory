@@ -165,9 +165,6 @@
           "featured": {
             "type": "boolean"
           },
-          "save_the_date": {
-            "type": "boolean"
-          },
           "calls": {
             "type": "array",
             "items": {
