@@ -3,7 +3,7 @@ const fs = require('node:fs');
 const {JSDOM} = require('jsdom');
 const dom = new JSDOM(fs.readFileSync('knowledge.html','utf8'),{runScripts:'dangerously'});
 const d=dom.window.document, q=d.getElementById('search');
-assert.equal(d.querySelectorAll('.topic').length,30);
+assert.equal(d.querySelectorAll('.topic').length,36);
 q.value='rosin';q.dispatchEvent(new dom.window.Event('input'));
 assert.ok(!d.getElementById('rosin').hidden);
 assert.ok(d.getElementById('thc').hidden);

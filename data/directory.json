@@ -136411,6 +136411,45 @@
       "recorded_on": "2026-11-09",
       "recheck_on": "2026-12-31",
       "limitations": "Organizer sponsorship and exhibitor pages reviewed. No sponsorship packages, prices or deadline are published; submitting the sponsorship form does not reserve sponsorship or collect payment. Exhibitor submission does not reserve space; organizer approval and a paid invoice are required. Exhibitors may not sell, distribute, sample or display cannabis or hemp products. Form submissions were not tested."
+    },
+    {
+      "id": "ev-oh-hemp-orc-928-01",
+      "subject_id": "rule-oh-hemp-products",
+      "claim": "rule-summary",
+      "value": "ORC 928.01(C) (effective March 20, 2026, Senate Bill 56) defines hemp by total tetrahydrocannabinols concentration, including THCA, of not more than 0.3% dry weight, and excludes (C)(4) any final hemp-derived cannabinoid product containing synthetic cannabinoids, cannabinoids synthesized or manufactured outside the plant, or greater than 0.4 mg combined total per container; (A) defines container as the innermost wrapping, packaging or vessel in direct contact with the product, such as a jar, bottle, bag, box, packet, can, carton or cartridge.",
+      "source_url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/9/928/928.01/3-20-2026/928.01-3-20-2026.pdf",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-09",
+      "recorded_on": "2026-11-09",
+      "recheck_on": "2026-12-11",
+      "limitations": "Reviewed from codes.ohio.gov for the cited section and the LSC Final Analysis of SB 56 (https://www.legislature.ohio.gov/download?key=27450). Cannabinoid lists under ORC 928.031 and agency rules were not reviewed. Summary only; not legal advice."
+    },
+    {
+      "id": "ev-oh-hemp-dcc-2026-03-24",
+      "subject_id": "rule-oh-hemp-products",
+      "claim": "rule-summary",
+      "value": "Ohio Department of Commerce release, March 24, 2026: SB 56 bans the manufacture and sale of intoxicating hemp products; any product containing more than 0.4 mg of total THC per container is considered marijuana and is prohibited from being sold outside a cannabis dispensary licensed by the Division of Cannabis Control; dispensary products must be grown, processed and tested in DCC-approved facilities and meet child-resistant packaging requirements.",
+      "source_url": "https://com.ohio.gov/about-us/media-center/news/intoxicating-hemp-ban-in-effect",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-09",
+      "recorded_on": "2026-11-09",
+      "recheck_on": "2026-12-11",
+      "limitations": "Agency news release, not a rule. Does not describe reporting of illegal sales or retailer transition steps."
+    },
+    {
+      "id": "ev-oh-hemp-federal-dates",
+      "subject_id": "rule-oh-hemp-products",
+      "claim": "rule-summary",
+      "value": "H.R. 6500 (Continuing Appropriations and Extensions Act, 2027; P.L. 119-103, signed September 2, 2026), Division B sec. 2019: until December 11, 2026, the section 781 amendments of P.L. 119-37 apply only to products described in section 297A(1)(C)(ii)(I) and (1)(C)(iv)(I) of the Agricultural Marketing Act of 1946. CRS LSB11496 (October 28, 2026) explains these as products containing cannabinoids not capable of being naturally produced by the cannabis plant, effective November 12, 2026; the remaining changes, including the total-THC threshold and 0.4 mg per-container limit, take effect December 11, 2026.",
+      "source_url": "https://www.govinfo.gov/content/pkg/BILLS-119hr6500eas/html/BILLS-119hr6500eas.htm",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-09",
+      "recorded_on": "2026-11-09",
+      "recheck_on": "2026-12-11",
+      "limitations": "Bill text reviewed is the Senate engrossed amendment that was enacted. The CRS explanation was read from a mirror (https://www.everycrsreport.com/files/2026-10-28_LSB11496_2a4809149da4fb31c7c2e387e239a244e0e80157.html); congress.gov could not be retrieved. CRS does not settle whether delta-8 THC converted from CBD falls under the November 12 exclusion. Congress may change the December 11 date. Not legal advice."
     }
   ],
   "rules": [
@@ -136657,6 +136696,19 @@
         "ev-213d651f8fcd"
       ],
       "next_step_url": "https://codes.ohio.gov/ohio-revised-code/section-3796.22"
+    },
+    {
+      "id": "rule-oh-hemp-products",
+      "state": "OH",
+      "topic": "hemp-products",
+      "summary": "Ohio measures hemp by total THC, including THCA. A finished hemp-derived product with more than 0.4 milligrams of combined total THC per container (the innermost package, such as a can, jar, bag or cartridge), or one containing synthetic cannabinoids or cannabinoids made outside the plant, is not hemp under Ohio law. The Division of Cannabis Control treats such products as marijuana that only a dispensary it licenses may sell. Federal law adopts a similar definition: products with cannabinoids the plant cannot naturally produce lose federal hemp status on November 12, 2026, and the remaining changes, including the 0.4 mg per-container cap, take effect December 11, 2026 unless Congress acts again.",
+      "effective_on": "2026-03-20",
+      "evidence_ids": [
+        "ev-oh-hemp-orc-928-01",
+        "ev-oh-hemp-dcc-2026-03-24",
+        "ev-oh-hemp-federal-dates"
+      ],
+      "next_step_url": "https://codes.ohio.gov/ohio-revised-code/section-928.01"
     }
   ],
   "relationships": [

@@ -50,6 +50,36 @@
       "id": "resin",
       "title": "Cresco: concentrates (producer explanation)",
       "url": "https://www.crescocannabis.com/products/concentrates"
+    },
+    {
+      "id": "orc-928-01",
+      "title": "Ohio Revised Code 928.01 (hemp definitions, effective March 20, 2026)",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-928.01"
+    },
+    {
+      "id": "dcc-hemp-ban",
+      "title": "Ohio Division of Cannabis Control: intoxicating hemp ban now in effect (March 24, 2026)",
+      "url": "https://com.ohio.gov/about-us/media-center/news/intoxicating-hemp-ban-in-effect"
+    },
+    {
+      "id": "lsc-sb56",
+      "title": "Ohio Legislative Service Commission: SB 56 final analysis",
+      "url": "https://www.legislature.ohio.gov/download?key=27450"
+    },
+    {
+      "id": "hr6500-2019",
+      "title": "H.R. 6500 (P.L. 119-103), sec. 2019: federal hemp date change",
+      "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr6500eas/html/BILLS-119hr6500eas.htm"
+    },
+    {
+      "id": "crs-lsb11496",
+      "title": "Congressional Research Service LSB11496: delay in changes to the hemp definition (Oct. 28, 2026)",
+      "url": "https://www.everycrsreport.com/files/2026-10-28_LSB11496_2a4809149da4fb31c7c2e387e239a244e0e80157.html"
+    },
+    {
+      "id": "dcc-map",
+      "title": "Ohio Division of Cannabis Control: licensed dispensary map",
+      "url": "https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/what-we-do/cannabis-dispensary-map"
     }
   ],
   "sections": [
@@ -323,6 +353,66 @@
           "text": "If someone has concerning symptoms after cannabis exposure, contact Poison Control in the U.S. at 1-800-222-1222. For a medical emergency, call 911.",
           "sources": [
             "cdc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hemp",
+      "title": "Hemp, CBD and THC products in Ohio",
+      "lead": "What changed in Ohio in 2026, what still counts as hemp, and the federal dates coming up. Sources checked November 9, 2026. This is a plain-language summary, not legal advice.",
+      "items": [
+        {
+          "id": "hemp-ohio-rule",
+          "title": "Ohio’s 0.4 mg rule (since March 20, 2026)",
+          "text": "Senate Bill 56 changed how Ohio defines hemp. THC is now counted as total THC, including THCA. A finished hemp product with more than 0.4 milligrams of total THC per container is not hemp under Ohio law. The Division of Cannabis Control treats it as marijuana, and only a dispensary the Division licenses may sell it.",
+          "sources": [
+            "orc-928-01",
+            "dcc-hemp-ban"
+          ]
+        },
+        {
+          "id": "hemp-per-container",
+          "title": "Per container, not per serving",
+          "text": "“Container” means the innermost package that touches the product: the can, bottle, jar, bag, packet or vape cartridge. Add up every serving inside it. A pack of ten 5 mg gummies holds 50 mg of THC, well over the 0.4 mg limit, so it can only be sold at a licensed dispensary.",
+          "sources": [
+            "orc-928-01"
+          ]
+        },
+        {
+          "id": "hemp-off-shelves",
+          "title": "What left gas stations and smoke shops",
+          "text": "The Division of Cannabis Control says hemp-derived THC drinks, and gummies, candies and cereals made to appeal to children, can no longer be bought legally anywhere in Ohio. Dispensary products, including marijuana drinks, must be grown, processed and tested in state-approved facilities and come in child-resistant packaging. Look for the Division’s seal at the door and on the package.",
+          "sources": [
+            "dcc-hemp-ban",
+            "dcc-map"
+          ]
+        },
+        {
+          "id": "hemp-cbd",
+          "title": "CBD and other low-THC products",
+          "text": "A product can still be hemp in Ohio if it has 0.4 mg of total THC or less per container and no synthetic cannabinoids or cannabinoids made outside the plant. Delta-8 and similar products made by converting CBD in a lab do not qualify. Ask for the lab report and check total THC for the whole container, not just delta-9 THC.",
+          "sources": [
+            "orc-928-01",
+            "lsc-sb56"
+          ]
+        },
+        {
+          "id": "hemp-federal-dates",
+          "title": "Federal dates: November 12 and December 11, 2026",
+          "text": "A 2025 federal law adopts a similar definition nationwide. A September 2026 funding law split its start date. On November 12, 2026, products containing cannabinoids the cannabis plant cannot make naturally, such as THC-O, lose federal hemp status. The rest, including the total-THC test and the 0.4 mg per-container cap, starts December 11, 2026 unless Congress changes it again. In Ohio, the state’s own 0.4 mg rule has applied since March 20, 2026, whatever happens federally.",
+          "sources": [
+            "hr6500-2019",
+            "crs-lsb11496"
+          ]
+        },
+        {
+          "id": "hemp-sellers",
+          "title": "If you sell hemp or CBD products in Ohio",
+          "text": "Anything over 0.4 mg of total THC per container can only be sold through a dispensary the Division of Cannabis Control licenses. Turning hemp into a product needs a hemp processing license from the Ohio Department of Agriculture. The Department enforces the hemp law together with the Ohio Investigative Unit. Check current Department of Agriculture and Division of Cannabis Control guidance, and talk to a lawyer about stock you already hold.",
+          "sources": [
+            "lsc-sb56",
+            "dcc-hemp-ban"
           ]
         }
       ]
