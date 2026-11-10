@@ -102,6 +102,31 @@
     max-width:44ch;
   }
 
+
+  /* ---- dark hero (Nov 10, 2026) ------------------------------------- */
+  .hero{background:linear-gradient(155deg,#0b1820 0%,#132a37 55%,#17352d 100%);color:#eef2f1;border-bottom:3px solid var(--field)}
+  .hero-inner{padding:1.1rem 1.1rem 1.15rem}
+  .hero .vhg-brand{color:#fff;margin-bottom:.8rem}
+  .hero .vhg-brand img{background:#fff;border-radius:10px;padding:3px;width:44px;height:44px}
+  .brand-org{font-size:.78rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#c8d3d7}
+  .hero .knowledge-links>a{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.32);color:#fff}
+  .hero .knowledge-links>a:hover,.hero .knowledge-links>a:focus-visible{border-color:#fff;color:#fff;background:rgba(255,255,255,.1)}
+  .hero .site-nav .nav-more>summary{background:#d9a441;border-color:#d9a441;color:#10212b}
+  .hero h1{color:#fff;font-size:clamp(2rem,6vw,2.7rem);margin:.9rem 0 .4rem}
+  .hero .directory-intro{color:#c8d3d7;font-size:1rem;max-width:46ch;margin:0 0 1rem}
+  .hero .searchbox{margin:0 0 .4rem}
+  .hero #q{font-family:var(--sans);font-size:1.15rem;background:#fff;color:var(--ink);border:0;border-radius:12px;padding:.8rem 2.8rem .8rem 1rem;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+  .hero #q::placeholder{color:#6b7478}
+  .hero .searchbox:focus-within{box-shadow:none}.hero #q:focus-visible{outline:3px solid #d9a441;outline-offset:2px}
+  .hero #clear{right:.55rem;color:var(--ink-soft)}
+  .hero .task-routes{margin:.8rem 0 0}.hero .task-routes span{color:#c8d3d7}
+  .hero .task-routes a{background:transparent;border-color:rgba(255,255,255,.32);color:#fff}
+  .hero .task-routes a:hover,.hero .task-routes a:focus-visible{border-color:#fff;color:#fff}
+  .hero a:visited{color:#fff}
+  .search-active .hero .directory-intro{display:none}
+  .masthead{padding-top:1rem}
+  @media print{.hero{background:#fff;color:#000;border:0}.hero h1{color:#000}}
+
   /* ---- home screen highlights ------------------------------------- */
   .home-highlights{display:grid;grid-template-columns:1fr;gap:.55rem;margin:0 0 1.15rem}
   .highlight-card{padding:.75rem .85rem;background:var(--paper-deep);border-left:3px solid var(--field)}
@@ -237,7 +262,8 @@
   .btn:hover{border-color:var(--field)}
 
   @media (min-width:40rem){
-    .masthead{padding-top:2.4rem}
+    .masthead{padding-top:1.4rem}
+    .hero-inner{padding:1.6rem 1.1rem 1.6rem}
     h1{font-size:2.2rem}
     #q{font-size:1.6rem}
     article{padding:1.25rem 0}
@@ -259,12 +285,11 @@
 <meta property="og:type" content="website"><meta property="og:site_name" content="Ohio Cannabis Directory"><meta property="og:title" content="Business directory | Ohio Cannabis Directory"><meta property="og:description" content="Find Ohio cannabis businesses, dispensaries and plain-language guides, each traced to a source."><meta property="og:image" content="https://weed.vethomeguard.org/assets/vhg-logo.png"><meta property="og:image:alt" content="Veteran Home Guardians logo"><script src="assets/analytics.js"></script></head>
 <body>
 
-<header>
-  <div class="wrap masthead">
-    <a class="vhg-brand" href="index.html"><img src="assets/vhg-logo.png" alt="" width="48" height="48"><span><strong>Ohio Cannabis Directory</strong></span></a><nav class="knowledge-links site-nav" aria-label="Primary"><a href="directory.html">Business directory</a><a href="pennsylvania-directory.html">Pennsylvania directory</a><a href="locations.html">Find a dispensary</a><a href="knowledge.html">Learn</a><details class="nav-more"><summary>All pages</summary><div class="nav-groups"><div class="nav-group"><p>Businesses</p><a href="relationships.html">Who works with whom</a><a href="assessment.html">Business self-check</a><a href="directory.html#upcoming-card">Events</a><a href="mailto:VeteranHomeGuardians@gmail.com?subject=Ohio%20Cannabis%20Directory%3A%20listing%20update&body=Organization%20or%20listing%20link%3A%0D%0A%0D%0AAddition%20or%20correction%3A%0D%0A%0D%0AWebsite%20or%20source%3A%0D%0A%0D%0A">Get listed or fix a listing</a></div><div class="nav-group"><p>Buying and the law</p><a href="buyer-guide.html">Shop smart</a><a href="knowledge.html#hemp">Hemp, CBD and THC</a><a href="ancestry.html">Strains</a><a href="seeds.html">Seeds &amp; growing</a></div><div class="nav-group"><p>Rights and policy</p><a href="expungement.html">Record clearing</a><a href="advocacy.html">Advocacy</a><a href="compare.html">Compare states</a></div><div class="nav-group"><p>Other states</p><a href="state.html?state=PA">Pennsylvania portal</a><a href="locations.html?state=NY">New York dispensaries</a></div><div class="nav-group"><p>Veteran Home Guardians</p><a href="https://guide.vethomeguard.org/">Veteran Resident Guide</a><a href="https://bingo.vethomeguard.org/">Ohio Bingo Finder</a></div></div></details></nav><script>(()=>{const close=()=>document.querySelectorAll(".nav-more[open]").forEach(d=>d.open=false);document.addEventListener("click",e=>{if(!e.target.closest(".nav-more")||e.target.closest(".nav-groups a"))close()});document.addEventListener("keydown",e=>{if(e.key==="Escape")close()});})();</script>
-    <h1>Ohio cannabis industry directory</h1>
-    <p class="directory-intro">Browse 516 organizations and their published contacts. Search by business, person, specialty, city, or county.</p>
-    <aside class="national-event" id="mjbizcon-banner" data-ends="2026-12-04" aria-label="MJBizCon 2026"><p><span class="national-event-kicker">Outside Ohio</span> <strong>MJBizCon 2026</strong> · Las Vegas · <time datetime="2026-12-01">Dec 1–4, 2026</time>. Plan who to meet with the free <strong>Attendee Planner &amp; Connection Directory</strong>.</p><p class="national-event-links"><a href="https://docs.google.com/spreadsheets/d/1QlynoENgH6QjzzsPuFThA7PyKAZuv5XOkA_fnxdQaEg/edit?usp=sharing" target="_blank" rel="noopener" data-track="mjbizcon:planner-open">Open the planner →</a><a href="https://docs.google.com/spreadsheets/d/1QlynoENgH6QjzzsPuFThA7PyKAZuv5XOkA_fnxdQaEg/export?format=xlsx" data-track="mjbizcon:planner-download">Download (.xlsx)</a><a href="https://mjbizconference.com/" target="_blank" rel="noopener" data-track="mjbizcon:event">Event site</a></p></aside>
+<header class="hero">
+  <div class="wrap hero-inner">
+    <a class="vhg-brand" href="index.html"><img src="assets/vhg-logo.png" alt="" width="48" height="48"><span class="brand-org">Veteran Home Guardians</span></a><nav class="knowledge-links site-nav" aria-label="Primary"><a href="directory.html">Business directory</a><a href="pennsylvania-directory.html">Pennsylvania directory</a><a href="locations.html">Find a dispensary</a><a href="knowledge.html">Learn</a><details class="nav-more"><summary>All pages</summary><div class="nav-groups"><div class="nav-group"><p>Businesses</p><a href="relationships.html">Who works with whom</a><a href="assessment.html">Business self-check</a><a href="directory.html#upcoming-card">Events</a><a href="mailto:VeteranHomeGuardians@gmail.com?subject=Ohio%20Cannabis%20Directory%3A%20listing%20update&body=Organization%20or%20listing%20link%3A%0D%0A%0D%0AAddition%20or%20correction%3A%0D%0A%0D%0AWebsite%20or%20source%3A%0D%0A%0D%0A">Get listed or fix a listing</a></div><div class="nav-group"><p>Buying and the law</p><a href="buyer-guide.html">Shop smart</a><a href="knowledge.html#hemp">Hemp, CBD and THC</a><a href="ancestry.html">Strains</a><a href="seeds.html">Seeds &amp; growing</a></div><div class="nav-group"><p>Rights and policy</p><a href="expungement.html">Record clearing</a><a href="advocacy.html">Advocacy</a><a href="compare.html">Compare states</a></div><div class="nav-group"><p>Other states</p><a href="state.html?state=PA">Pennsylvania portal</a><a href="locations.html?state=NY">New York dispensaries</a></div><div class="nav-group"><p>Veteran Home Guardians</p><a href="https://guide.vethomeguard.org/">Veteran Resident Guide</a><a href="https://bingo.vethomeguard.org/">Ohio Bingo Finder</a></div></div></details></nav><script>(()=>{const close=()=>document.querySelectorAll(".nav-more[open]").forEach(d=>d.open=false);document.addEventListener("click",e=>{if(!e.target.closest(".nav-more")||e.target.closest(".nav-groups a"))close()});document.addEventListener("keydown",e=>{if(e.key==="Escape")close()});})();</script>
+    <h1>Ohio Cannabis Directory</h1>
+    <p class="directory-intro">516 Ohio cannabis businesses, people and services, each traced to a source. Search by name, specialty, city or county.</p>
     <div class="searchbox">
       <input id="q" type="search" autocomplete="off" spellcheck="false"
              placeholder="Search businesses, people, cities&hellip;"
@@ -272,6 +297,10 @@
       <button id="clear" type="button" aria-label="Clear search">&times;</button>
     </div>
     <nav class="task-routes" aria-label="Not looking for a business?"><span>Not looking for a business?</span><a href="locations.html" data-track="task:dispensary">Find a dispensary</a><a href="knowledge.html#hemp" data-track="task:hemp-law">Hemp &amp; THC law</a><a href="expungement.html" data-track="task:records">Clear a record</a><a href="advocacy.html" data-track="task:advocacy">Contact lawmakers</a></nav>
+  </div>
+</header>
+<div class="wrap masthead">
+    <aside class="national-event" id="mjbizcon-banner" data-ends="2026-12-04" aria-label="MJBizCon 2026"><p><span class="national-event-kicker">Outside Ohio</span> <strong>MJBizCon 2026</strong> · Las Vegas · <time datetime="2026-12-01">Dec 1–4, 2026</time>. Plan who to meet with the free <strong>Attendee Planner &amp; Connection Directory</strong>.</p><p class="national-event-links"><a href="https://docs.google.com/spreadsheets/d/1QlynoENgH6QjzzsPuFThA7PyKAZuv5XOkA_fnxdQaEg/edit?usp=sharing" target="_blank" rel="noopener" data-track="mjbizcon:planner-open">Open the planner →</a><a href="https://docs.google.com/spreadsheets/d/1QlynoENgH6QjzzsPuFThA7PyKAZuv5XOkA_fnxdQaEg/export?format=xlsx" data-track="mjbizcon:planner-download">Download (.xlsx)</a><a href="https://mjbizconference.com/" target="_blank" rel="noopener" data-track="mjbizcon:event">Event site</a></p></aside>
     <aside class="november-campaign" id="november-banner" data-ends="2026-11-11" aria-label="November retail fundraiser"><strong>Retailers:</strong> run a November roundup for veterans — <strong>Marine Corps birthday (Nov. 10)</strong> and Veterans Day (Nov. 11). <a href="november-campaign.html">Campaign details →</a></aside>
 
 
@@ -331,8 +360,7 @@
       <a class="btn" href="mailto:VeteranHomeGuardians@gmail.com?subject=Ohio%20Cannabis%20Directory%3A%20listing%20update&body=Organization%20or%20listing%20link%3A%0D%0A%0D%0AAddition%20or%20correction%3A%0D%0A%0D%0AWebsite%20or%20source%3A%0D%0A%0D%0A">Email a listing update</a>
     </div>
     </details>
-  </div>
-</header>
+</div>
 
 <p class="wrap" id="single-record" hidden><button class="btn" id="all-records">Back to all organizations</button></p>
 <main class="wrap" id="results"></main>
