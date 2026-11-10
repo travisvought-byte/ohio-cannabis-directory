@@ -40,6 +40,10 @@ COLS = {
 
 UPCOMING_EVENTS = load_event_routes()
 
+# Seasonal VHG fundraiser banner; it retires itself after Veterans Day.
+NOVEMBER_BANNER_ENDS = datetime.date(2026, 11, 11)
+NOVEMBER_BANNER = '<aside class="november-campaign" id="november-banner" data-ends="2026-11-11" aria-label="November retail fundraiser"><strong>Retailers:</strong> run a November roundup for veterans — <strong>Marine Corps birthday (Nov. 10)</strong> and Veterans Day (Nov. 11). <a href="november-campaign.html">Campaign details →</a></aside>'
+
 # Owner-requested national-event banner (issue #114). Dates come from the canonical
 # event record; the planner is the owner's own public Google Sheet.
 MJBIZCON_EVENT_ID = "event-nv-mjbizcon-2026"
@@ -66,9 +70,8 @@ def mjbizcon_banner(events, today):
         return ""
     return (
         f'<aside class="national-event" id="mjbizcon-banner" data-ends="{end.isoformat()}" aria-label="MJBizCon 2026">'
-        '<p class="national-event-kicker">Industry event · outside Ohio</p>'
-        f'<p><strong>MJBizCon 2026</strong> · Las Vegas Convention Center · <time datetime="{start.isoformat()}">{html.escape(event_date_label(start, end))}</time>. '
-        'Going? Plan who to meet before you fly out with the free <strong>MJBizCon 2026 Attendee Planner &amp; Connection Directory</strong> — exhibitors, distributors and contacts in one spreadsheet.</p>'
+        f'<p><span class="national-event-kicker">Outside Ohio</span> <strong>MJBizCon 2026</strong> · Las Vegas · <time datetime="{start.isoformat()}">{html.escape(event_date_label(start, end))}</time>. '
+        'Plan who to meet with the free <strong>Attendee Planner &amp; Connection Directory</strong>.</p>'
         '<p class="national-event-links">'
         f'<a href="{html.escape(MJBIZCON_PLANNER_VIEW, quote=True)}" target="_blank" rel="noopener" data-track="mjbizcon:planner-open">Open the planner →</a>'
         f'<a href="{html.escape(MJBIZCON_PLANNER_XLSX, quote=True)}" data-track="mjbizcon:planner-download">Download (.xlsx)</a>'
@@ -81,13 +84,13 @@ def event_calls_markup(event):
     calls = event.get("calls") or []
     if not calls:
         return ""
-    items = []
+    links = []
     for call in calls:
-        external = call["url"].startswith("https://")
-        attrs = ' target="_blank" rel="noopener"' if external else ""
-        note = f' <span class="event-call-note">{html.escape(call["note"])}</span>' if call.get("note") else ""
-        items.append(f'<li><a href="{html.escape(call["url"], quote=True)}"{attrs}>{html.escape(call["label"])}</a>{note}</li>')
-    return '<div class="event-calls"><p class="event-calls-title">Calls for sponsors &amp; exhibitors</p><ul>' + "".join(items) + "</ul></div>"
+        attrs = ' target="_blank" rel="noopener"' if call["url"].startswith("https://") else ""
+        links.append(f'<a href="{html.escape(call["url"], quote=True)}"{attrs}>{html.escape(call["label"])}</a>')
+    notes = " · ".join(html.escape(c["note"]) for c in calls if c.get("note"))
+    return ('<div class="event-calls"><p class="event-call-links"><span class="event-calls-title">Calls for sponsors &amp; exhibitors</span>' + "".join(links) + '</p>'
+            + (f'<p class="event-call-note">{notes}</p>' if notes else '') + '</div>')
 
 
 def clean(v):
@@ -139,10 +142,10 @@ def main():
                 '<li class="home-event">'
                 + ('<span class="event-featured">Featured event</span>' if event.get('featured') else '') +
                 f'<h3>{html.escape(event["name"])}</h3>'
-                f'<p><time datetime="{event["date"]}">{html.escape(date_label)}</time></p>'
-                f'<p class="event-place">{html.escape(event["place"])}</p>'
-                f'<p><a href="{html.escape(event["url"], quote=True)}" target="_blank" rel="noopener">Event details</a></p>'
-                + (f'<p><a href="{html.escape(event["registration_url"], quote=True)}" target="_blank" rel="noopener">Register / RSVP</a> · Checked {html.escape(event["reviewed_on"])}</p>' if event.get("registration_url") else "")
+                f'<p class="event-when"><time datetime="{event["date"]}">{html.escape(date_label)}</time> · <span class="event-place">{html.escape(event["place"])}</span></p>'
+                f'<p class="event-links"><a href="{html.escape(event["url"], quote=True)}" target="_blank" rel="noopener">Event details</a>'
+                + (f' · <a href="{html.escape(event["registration_url"], quote=True)}" target="_blank" rel="noopener">Register / RSVP</a>' if event.get("registration_url") else "")
+                + f' · <span class="event-checked">Checked {html.escape(event["reviewed_on"])}</span></p>'
                 + event_calls_markup(event) +
                 '</li>'
             )
@@ -195,6 +198,7 @@ def main():
     page = page.replace("__UPCOMING_EVENTS__", script_json(UPCOMING_EVENTS))
     page = page.replace("__HOME_EVENT_MARKUP__", home_event_markup)
     page = page.replace("__NATIONAL_EVENT_BANNER__", national_banner)
+    page = page.replace("__NOVEMBER_BANNER__", "    " + NOVEMBER_BANNER if today <= NOVEMBER_BANNER_ENDS else "")
     page = page.replace("__CAT_OPTS__", cat_opts)
     help_routes = [('Banking & Financial Services', 'Banking'), ('Accounting & Tax', 'Accounting & tax'), ('Legal & Licensing', 'Legal & licensing'), ('Testing Labs', 'Testing labs'), ('Packaging & Labeling', 'Packaging & labels'), ('Staffing & HR', 'Staffing & HR'), ('Insurance', 'Insurance'), ('Security & Cash Logistics', 'Security & cash logistics')]
     from urllib.parse import urlencode, quote
@@ -450,8 +454,9 @@ __VHG_CSS__
     body{background:#fff; font-size:11pt}
     article{page-break-inside:avoid}
   }
-.event-calls{margin:.45rem 0 .2rem;padding:.5rem .7rem;background:#fff8e7;border-left:3px solid #bb8e36}.event-calls-title{margin:0 0 .15rem!important;font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#7a5a1c}.event-calls ul{margin:0;padding:0;list-style:none}.event-calls li{margin:.1rem 0}.event-calls a{font-weight:700;min-height:44px;display:inline-flex;align-items:center}.event-call-note{display:block;font-size:.8rem;color:var(--ink-soft)}
-.national-event{background:#0f2f3d;color:#f4f1e8;border-left:5px solid #d9a441;padding:12px 16px;margin:12px 0 16px;font-size:15px;line-height:1.5}.national-event p{margin:.2rem 0}.national-event-kicker{font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#d9a441}.national-event-links{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:.45rem!important}.national-event a{color:#fff;font-weight:700;text-underline-offset:3px;min-height:44px;display:inline-flex;align-items:center}.search-active .national-event{display:none}@media print{.national-event{display:none}}
+.event-calls{margin:.45rem 0 .2rem;padding:.45rem .7rem;background:#fff8e7;border-left:3px solid #bb8e36}.event-calls p{margin:.1rem 0}.event-calls-title{width:100%;font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#7a5a1c}.event-call-links{display:flex;flex-wrap:wrap;gap:0 16px}.event-when{margin:.1rem 0 .2rem}.event-when time{font-weight:700}.event-call-links a{font-weight:700}.event-call-note{font-size:.8rem;color:var(--ink-soft)}.event-links{display:flex;flex-wrap:wrap;align-items:center;gap:0 6px}.event-checked{font-size:.8rem;color:var(--ink-soft)}
+.task-routes{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:.6rem 0 .9rem;font-size:14px}.task-routes span{width:100%;color:var(--ink-soft);font-size:13px}.task-routes a{display:inline-flex;align-items:center;min-height:40px;padding:0 12px;border:1px solid #cfd6d9;border-radius:999px;background:#fff;color:#20313a;text-decoration:none}.task-routes a:hover,.task-routes a:focus-visible{border-color:#215b76;color:#215b76}.search-active .task-routes{display:none}@media print{.task-routes{display:none}}
+.national-event{background:#0f2f3d;color:#f4f1e8;border-left:5px solid #d9a441;padding:12px 16px;margin:12px 0 16px;font-size:15px;line-height:1.5}.national-event p{margin:.2rem 0}.national-event-kicker{display:inline-block;margin-right:4px;font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#d9a441}.national-event-links{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:.45rem!important}.national-event a{color:#fff;font-weight:700;text-underline-offset:3px;min-height:44px;display:inline-flex;align-items:center}.search-active .national-event{display:none}@media print{.national-event{display:none}}
 .november-campaign{background:#fff8e7;color:#20313a;border-left:4px solid #bb8e36;padding:10px 14px;margin:14px 0 18px;font-size:15px;line-height:1.5}.november-campaign a{color:#215b76;font-weight:700;text-underline-offset:3px}.search-active .november-campaign{display:none}@media print{.november-campaign{display:none}}
 </style>
 </head>
@@ -463,14 +468,14 @@ __VHG_CSS__
     <h1>Ohio cannabis industry directory</h1>
     <p class="directory-intro">Browse __N_PUB__ organizations and their published contacts. Search by business, person, specialty, city, or county.</p>
     __NATIONAL_EVENT_BANNER__
-    <p class="pa-portal-entry"><strong>Looking for Pennsylvania companies?</strong> <a href="pennsylvania-directory.html">Open the Pennsylvania company directory →</a> for operators, suppliers, business contacts and brands. <a href="state.html?state=PA">PA resource portal</a>.</p>
     <div class="searchbox">
       <input id="q" type="search" autocomplete="off" spellcheck="false"
              placeholder="Search businesses, people, cities&hellip;"
              aria-label="Search the directory">
       <button id="clear" type="button" aria-label="Clear search">&times;</button>
     </div>
-    <aside class="november-campaign" aria-label="November retail fundraiser"><strong>Retailers:</strong> run a November roundup for veterans — <strong>Marine Corps birthday (Nov. 10)</strong> and Veterans Day (Nov. 11). <a href="november-campaign.html">Campaign details →</a></aside>
+    <nav class="task-routes" aria-label="Not looking for a business?"><span>Not looking for a business?</span><a href="locations.html" data-track="task:dispensary">Find a dispensary</a><a href="knowledge.html#hemp" data-track="task:hemp-law">Hemp &amp; THC law</a><a href="expungement.html" data-track="task:records">Clear a record</a><a href="advocacy.html" data-track="task:advocacy">Contact lawmakers</a></nav>
+__NOVEMBER_BANNER__
 
 
 
@@ -532,8 +537,12 @@ const esc = s => String(s).replace(/[&<>"]/g, c =>
   ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 const UPCOMING_EVENTS = __UPCOMING_EVENTS__;
-const eventCalls = event => (event.calls && event.calls.length) ? '<div class="event-calls"><p class="event-calls-title">Calls for sponsors &amp; exhibitors</p><ul>' + event.calls.map(call =>
-  `<li><a href="${esc(call.url)}"${call.url.startsWith('https://')?' target="_blank" rel="noopener"':''}>${esc(call.label)}</a>${call.note?` <span class="event-call-note">${esc(call.note)}</span>`:''}</li>`).join('') + '</ul></div>' : '';
+const eventCalls = event => {
+  if (!(event.calls && event.calls.length)) return '';
+  const notes = event.calls.filter(c => c.note).map(c => esc(c.note)).join(' · ');
+  return '<div class="event-calls"><p class="event-call-links"><span class="event-calls-title">Calls for sponsors &amp; exhibitors</span>' + event.calls.map(call =>
+    `<a href="${esc(call.url)}"${call.url.startsWith('https://')?' target="_blank" rel="noopener"':''}>${esc(call.label)}</a>`).join('') + '</p>' + (notes ? `<p class="event-call-note">${notes}</p>` : '') + '</div>';
+};
 function renderHomeHighlights(){
   const today = new Date();
   today.setHours(0,0,0,0);
@@ -542,6 +551,10 @@ function renderHomeHighlights(){
     const date = new Date(year, month - 1, day);
     return date >= today;
   }).sort((a,b) => Number(Boolean(b.featured))-Number(Boolean(a.featured)) || a.date.localeCompare(b.date));
+  for (const id of ['november-banner']) {
+    const el = $(id);
+    if (el && el.dataset.ends) { const [ny, nm, nd] = el.dataset.ends.split("-").map(Number); if (today > new Date(ny, nm - 1, nd)) el.remove(); }
+  }
   const banner = $('mjbizcon-banner');
   if (banner && banner.dataset.ends){
     const [by, bm, bd] = banner.dataset.ends.split("-").map(Number);
@@ -557,7 +570,7 @@ function renderHomeHighlights(){
     return new Intl.DateTimeFormat(undefined, {weekday:"short", month:"short", day:"numeric", year:"numeric"}).format(new Date(year, month - 1, day));
   };
   panel.innerHTML = '<h2>Upcoming events</h2><ol class="event-line" aria-label="Upcoming Ohio cannabis events">' + upcoming.map(event =>
-    `<li class="home-event">${event.featured?'<span class="event-featured">Featured event</span>':''}<h3>${esc(event.name)}</h3><p><time datetime="${esc(event.date)}">${esc(dateLabel(event))}</time></p><p class="event-place">${esc(event.place)}</p><p><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a></p>${event.registration_url?`<p><a href="${esc(event.registration_url)}" target="_blank" rel="noopener">Register / RSVP</a> · Checked ${esc(event.reviewed_on)}</p>`:''}${eventCalls(event)}</li>`
+    `<li class="home-event">${event.featured?'<span class="event-featured">Featured event</span>':''}<h3>${esc(event.name)}</h3><p class="event-when"><time datetime="${esc(event.date)}">${esc(dateLabel(event))}</time> · <span class="event-place">${esc(event.place)}</span></p><p class="event-links"><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a>${event.registration_url?` · <a href="${esc(event.registration_url)}" target="_blank" rel="noopener">Register / RSVP</a>`:''} · <span class="event-checked">Checked ${esc(event.reviewed_on)}</span></p>${eventCalls(event)}</li>`
   ).join('') + '</ol>';
 }
 renderHomeHighlights();
