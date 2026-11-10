@@ -7,7 +7,6 @@ JSON payload for interactive search; no external directory API is required.
 import json
 import html
 import datetime
-import calendar
 from pathlib import Path
 import pandas as pd
 from directory_data import RELEASE, RELEASE_DATE, script_json, load_records, load_event_routes, load_directory
@@ -91,30 +90,6 @@ def event_calls_markup(event):
     return '<div class="event-calls"><p class="event-calls-title">Calls for sponsors &amp; exhibitors</p><ul>' + "".join(items) + "</ul></div>"
 
 
-def save_the_date_markup(events, after):
-    future = sorted(
-        (e for e in events if e.get("save_the_date") and datetime.date.fromisoformat(e["date"]) > after),
-        key=lambda e: e["date"],
-    )
-    if not future:
-        return ""
-    items = []
-    for event in future:
-        date_label = datetime.date.fromisoformat(event["date"]).strftime("%a, %b %-d, %Y")
-        items.append(
-            '<li class="home-event">'
-            f'<h3>{html.escape(event["name"])}</h3>'
-            f'<p><time datetime="{event["date"]}">{html.escape(date_label)}</time></p>'
-            f'<p class="event-place">{html.escape(event["place"])}</p>'
-            f'<p><a href="{html.escape(event["url"], quote=True)}" target="_blank" rel="noopener">Event details</a>'
-            + (f' · <a href="{html.escape(event["registration_url"], quote=True)}" target="_blank" rel="noopener">Tickets</a>' if event.get("registration_url") else "")
-            + f' · Checked {html.escape(event["reviewed_on"])}</p>'
-            + event_calls_markup(event) +
-            '</li>'
-        )
-    return '<h2>Save the date <span>· coming up later</span></h2><ol class="event-line" aria-label="Later Ohio cannabis events">' + "".join(items) + "</ol>"
-
-
 def clean(v):
     if pd.isna(v):
         return ""
@@ -149,16 +124,13 @@ def main():
     built = today.strftime("%B %-d, %Y")
     built_iso = today.isoformat()
 
-    month_index = today.month - 1 + 3
-    limit_year = today.year + month_index // 12
-    limit_month = month_index % 12 + 1
-    limit_day = min(today.day, calendar.monthrange(limit_year, limit_month)[1])
-    event_limit = datetime.date(limit_year, limit_month, limit_day)
+    # One list of every confirmed upcoming date (issue #120): no 3-month cut-off, so
+    # events the directory is promoting stay visible however far ahead they are.
     visible_events = [
         event for event in UPCOMING_EVENTS
-        if today <= datetime.date.fromisoformat(event["date"]) <= event_limit
+        if datetime.date.fromisoformat(event["date"]) >= today
     ]
-    home_events = ['<h2>Upcoming events <span>· next 3 months</span></h2><ol class="event-line" aria-label="Upcoming Ohio cannabis events">']
+    home_events = ['<h2>Upcoming events</h2><ol class="event-line" aria-label="Upcoming Ohio cannabis events">']
     if visible_events:
         for event in sorted(visible_events, key=lambda e: (not e.get("featured", False), e["date"])):
             event_date = datetime.date.fromisoformat(event["date"])
@@ -175,10 +147,9 @@ def main():
                 '</li>'
             )
     else:
-        home_events.append('<li class="home-empty">No confirmed event dates in this window.</li>')
+        home_events.append('<li class="home-empty">No upcoming Ohio events are listed yet.</li>')
     home_events.append('</ol>')
     home_event_markup = "\n".join(home_events)
-    save_date_markup = save_the_date_markup(UPCOMING_EVENTS, event_limit)
     national_banner = mjbizcon_banner(data["events"], today)
 
     payload = script_json(records)
@@ -223,9 +194,6 @@ def main():
     page = brand_page(TEMPLATE).replace("__PAYLOAD__", payload)
     page = page.replace("__UPCOMING_EVENTS__", script_json(UPCOMING_EVENTS))
     page = page.replace("__HOME_EVENT_MARKUP__", home_event_markup)
-    page = page.replace("__SAVE_DATE_MARKUP__", save_date_markup)
-    if not save_date_markup:
-        page = page.replace('id="save-date-card"', 'id="save-date-card" hidden')
     page = page.replace("__NATIONAL_EVENT_BANNER__", national_banner)
     page = page.replace("__CAT_OPTS__", cat_opts)
     help_routes = [('Banking & Financial Services', 'Banking'), ('Accounting & Tax', 'Accounting & tax'), ('Legal & Licensing', 'Legal & licensing'), ('Testing Labs', 'Testing labs'), ('Packaging & Labeling', 'Packaging & labels'), ('Staffing & HR', 'Staffing & HR'), ('Insurance', 'Insurance'), ('Security & Cash Logistics', 'Security & cash logistics')]
@@ -508,7 +476,6 @@ __VHG_CSS__
 
     <details id="browse-extras" open><summary>Upcoming events and business help</summary>
     <section class="upcoming-events" id="upcoming-card" aria-label="Upcoming Ohio cannabis events">__HOME_EVENT_MARKUP__</section>
-    <section class="upcoming-events save-the-date" id="save-date-card" aria-label="Later Ohio cannabis events">__SAVE_DATE_MARKUP__</section>
     <p class="event-submit"><a href="__EVENT_SUBMISSION__">Submit an Ohio cannabis event</a> · Include an official event link and organizer contact.</p>
 
     <section class="business-help" aria-labelledby="business-help-title"><h2 id="business-help-title">Find business help</h2><nav class="help-links" aria-label="Business help">__HELP_ROUTES__</nav></section>
@@ -570,44 +537,26 @@ const eventCalls = event => (event.calls && event.calls.length) ? '<div class="e
 function renderHomeHighlights(){
   const today = new Date();
   today.setHours(0,0,0,0);
-  const limit = new Date(today);
-  limit.setMonth(limit.getMonth() + 3);
   const upcoming = UPCOMING_EVENTS.filter(event => {
     const [year, month, day] = event.date.split("-").map(Number);
     const date = new Date(year, month - 1, day);
-    return date >= today && date <= limit;
+    return date >= today;
   }).sort((a,b) => Number(Boolean(b.featured))-Number(Boolean(a.featured)) || a.date.localeCompare(b.date));
   const banner = $('mjbizcon-banner');
   if (banner && banner.dataset.ends){
     const [by, bm, bd] = banner.dataset.ends.split("-").map(Number);
     if (today > new Date(by, bm - 1, bd)) banner.remove();
   }
-  const later = UPCOMING_EVENTS.filter(event => {
-    if (!event.save_the_date) return false;
-    const [year, month, day] = event.date.split("-").map(Number);
-    return new Date(year, month - 1, day) > limit;
-  }).sort((a,b) => a.date.localeCompare(b.date));
-  const laterPanel = $('save-date-card');
-  if (laterPanel){
-    const longDate = event => {
-      const [year, month, day] = event.date.split("-").map(Number);
-      return new Intl.DateTimeFormat(undefined, {weekday:"short", month:"short", day:"numeric", year:"numeric"}).format(new Date(year, month - 1, day));
-    };
-    laterPanel.hidden = !later.length;
-    laterPanel.innerHTML = later.length ? '<h2>Save the date <span>· coming up later</span></h2><ol class="event-line" aria-label="Later Ohio cannabis events">' + later.map(event =>
-      `<li class="home-event"><h3>${esc(event.name)}</h3><p><time datetime="${esc(event.date)}">${esc(longDate(event))}</time></p><p class="event-place">${esc(event.place)}</p><p><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a>${event.registration_url?` · <a href="${esc(event.registration_url)}" target="_blank" rel="noopener">Tickets</a>`:''} · Checked ${esc(event.reviewed_on)}</p>${eventCalls(event)}</li>`
-    ).join('') + '</ol>' : '';
-  }
   const panel = $('upcoming-card');if(!panel)return;
   if (!upcoming.length){
-    panel.innerHTML = '<h2>Upcoming events · next 3 months</h2><p class="home-empty">No confirmed event dates in this window.</p>';
+    panel.innerHTML = '<h2>Upcoming events</h2><p class="home-empty">No upcoming Ohio events are listed yet.</p>';
     return;
   }
   const dateLabel = event => {
     const [year, month, day] = event.date.split("-").map(Number);
     return new Intl.DateTimeFormat(undefined, {weekday:"short", month:"short", day:"numeric", year:"numeric"}).format(new Date(year, month - 1, day));
   };
-  panel.innerHTML = '<h2>Upcoming events <span>· next 3 months</span></h2><ol class="event-line" aria-label="Upcoming Ohio cannabis events">' + upcoming.map(event =>
+  panel.innerHTML = '<h2>Upcoming events</h2><ol class="event-line" aria-label="Upcoming Ohio cannabis events">' + upcoming.map(event =>
     `<li class="home-event">${event.featured?'<span class="event-featured">Featured event</span>':''}<h3>${esc(event.name)}</h3><p><time datetime="${esc(event.date)}">${esc(dateLabel(event))}</time></p><p class="event-place">${esc(event.place)}</p><p><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a></p>${event.registration_url?`<p><a href="${esc(event.registration_url)}" target="_blank" rel="noopener">Register / RSVP</a> · Checked ${esc(event.reviewed_on)}</p>`:''}${eventCalls(event)}</li>`
   ).join('') + '</ol>';
 }
