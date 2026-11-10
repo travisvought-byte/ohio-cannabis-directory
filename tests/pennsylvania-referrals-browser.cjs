@@ -6,6 +6,7 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
   page.on('pageerror',e=>errors.push(e.message));await page.route('**/gc.zgo.at/**',r=>r.abort());
   await page.goto(server.base+'directory.html');
   const portal=page.getByRole('navigation',{name:'Primary',exact:true}).getByRole('link',{name:'Pennsylvania portal',exact:true});
+  await page.getByRole('navigation',{name:'Primary',exact:true}).locator('.nav-more > summary').click();
   assert(await portal.isVisible());
   await portal.click();
   await page.waitForURL(/state\.html\?state=PA/);await page.waitForFunction(()=>document.querySelector('#state-title')?.textContent==='Pennsylvania cannabis resources');
