@@ -78,6 +78,19 @@ def mjbizcon_banner(events, today):
     )
 
 
+def event_calls_markup(event):
+    calls = event.get("calls") or []
+    if not calls:
+        return ""
+    items = []
+    for call in calls:
+        external = call["url"].startswith("https://")
+        attrs = ' target="_blank" rel="noopener"' if external else ""
+        note = f' <span class="event-call-note">{html.escape(call["note"])}</span>' if call.get("note") else ""
+        items.append(f'<li><a href="{html.escape(call["url"], quote=True)}"{attrs}>{html.escape(call["label"])}</a>{note}</li>')
+    return '<div class="event-calls"><p class="event-calls-title">Calls for vendors &amp; speakers</p><ul>' + "".join(items) + "</ul></div>"
+
+
 def save_the_date_markup(events, after):
     future = sorted(
         (e for e in events if e.get("save_the_date") and datetime.date.fromisoformat(e["date"]) > after),
@@ -96,6 +109,7 @@ def save_the_date_markup(events, after):
             f'<p><a href="{html.escape(event["url"], quote=True)}" target="_blank" rel="noopener">Event details</a>'
             + (f' · <a href="{html.escape(event["registration_url"], quote=True)}" target="_blank" rel="noopener">Tickets</a>' if event.get("registration_url") else "")
             + f' · Checked {html.escape(event["reviewed_on"])}</p>'
+            + event_calls_markup(event) +
             '</li>'
         )
     return '<h2>Save the date <span>· coming up later</span></h2><ol class="event-line" aria-label="Later Ohio cannabis events">' + "".join(items) + "</ol>"
@@ -156,7 +170,8 @@ def main():
                 f'<p><time datetime="{event["date"]}">{html.escape(date_label)}</time></p>'
                 f'<p class="event-place">{html.escape(event["place"])}</p>'
                 f'<p><a href="{html.escape(event["url"], quote=True)}" target="_blank" rel="noopener">Event details</a></p>'
-                + (f'<p><a href="{html.escape(event["registration_url"], quote=True)}" target="_blank" rel="noopener">Register / RSVP</a> · Checked {html.escape(event["reviewed_on"])}</p>' if event.get("registration_url") else "") +
+                + (f'<p><a href="{html.escape(event["registration_url"], quote=True)}" target="_blank" rel="noopener">Register / RSVP</a> · Checked {html.escape(event["reviewed_on"])}</p>' if event.get("registration_url") else "")
+                + event_calls_markup(event) +
                 '</li>'
             )
     else:
@@ -467,6 +482,7 @@ __VHG_CSS__
     body{background:#fff; font-size:11pt}
     article{page-break-inside:avoid}
   }
+.event-calls{margin:.45rem 0 .2rem;padding:.5rem .7rem;background:#fff8e7;border-left:3px solid #bb8e36}.event-calls-title{margin:0 0 .15rem!important;font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#7a5a1c}.event-calls ul{margin:0;padding:0;list-style:none}.event-calls li{margin:.1rem 0}.event-calls a{font-weight:700;min-height:44px;display:inline-flex;align-items:center}.event-call-note{display:block;font-size:.8rem;color:var(--ink-soft)}
 .national-event{background:#0f2f3d;color:#f4f1e8;border-left:5px solid #d9a441;padding:12px 16px;margin:12px 0 16px;font-size:15px;line-height:1.5}.national-event p{margin:.2rem 0}.national-event-kicker{font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#d9a441}.national-event-links{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:.45rem!important}.national-event a{color:#fff;font-weight:700;text-underline-offset:3px;min-height:44px;display:inline-flex;align-items:center}.search-active .national-event{display:none}@media print{.national-event{display:none}}
 .november-campaign{background:#fff8e7;color:#20313a;border-left:4px solid #bb8e36;padding:10px 14px;margin:14px 0 18px;font-size:15px;line-height:1.5}.november-campaign a{color:#215b76;font-weight:700;text-underline-offset:3px}.search-active .november-campaign{display:none}@media print{.november-campaign{display:none}}
 </style>
@@ -549,6 +565,8 @@ const esc = s => String(s).replace(/[&<>"]/g, c =>
   ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 const UPCOMING_EVENTS = __UPCOMING_EVENTS__;
+const eventCalls = event => (event.calls && event.calls.length) ? '<div class="event-calls"><p class="event-calls-title">Calls for vendors &amp; speakers</p><ul>' + event.calls.map(call =>
+  `<li><a href="${esc(call.url)}"${call.url.startsWith('https://')?' target="_blank" rel="noopener"':''}>${esc(call.label)}</a>${call.note?` <span class="event-call-note">${esc(call.note)}</span>`:''}</li>`).join('') + '</ul></div>' : '';
 function renderHomeHighlights(){
   const today = new Date();
   today.setHours(0,0,0,0);
@@ -577,7 +595,7 @@ function renderHomeHighlights(){
     };
     laterPanel.hidden = !later.length;
     laterPanel.innerHTML = later.length ? '<h2>Save the date <span>· coming up later</span></h2><ol class="event-line" aria-label="Later Ohio cannabis events">' + later.map(event =>
-      `<li class="home-event"><h3>${esc(event.name)}</h3><p><time datetime="${esc(event.date)}">${esc(longDate(event))}</time></p><p class="event-place">${esc(event.place)}</p><p><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a>${event.registration_url?` · <a href="${esc(event.registration_url)}" target="_blank" rel="noopener">Tickets</a>`:''} · Checked ${esc(event.reviewed_on)}</p></li>`
+      `<li class="home-event"><h3>${esc(event.name)}</h3><p><time datetime="${esc(event.date)}">${esc(longDate(event))}</time></p><p class="event-place">${esc(event.place)}</p><p><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a>${event.registration_url?` · <a href="${esc(event.registration_url)}" target="_blank" rel="noopener">Tickets</a>`:''} · Checked ${esc(event.reviewed_on)}</p>${eventCalls(event)}</li>`
     ).join('') + '</ol>' : '';
   }
   const panel = $('upcoming-card');if(!panel)return;
@@ -590,7 +608,7 @@ function renderHomeHighlights(){
     return new Intl.DateTimeFormat(undefined, {weekday:"short", month:"short", day:"numeric", year:"numeric"}).format(new Date(year, month - 1, day));
   };
   panel.innerHTML = '<h2>Upcoming events <span>· next 3 months</span></h2><ol class="event-line" aria-label="Upcoming Ohio cannabis events">' + upcoming.map(event =>
-    `<li class="home-event">${event.featured?'<span class="event-featured">Featured event</span>':''}<h3>${esc(event.name)}</h3><p><time datetime="${esc(event.date)}">${esc(dateLabel(event))}</time></p><p class="event-place">${esc(event.place)}</p><p><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a></p>${event.registration_url?`<p><a href="${esc(event.registration_url)}" target="_blank" rel="noopener">Register / RSVP</a> · Checked ${esc(event.reviewed_on)}</p>`:''}</li>`
+    `<li class="home-event">${event.featured?'<span class="event-featured">Featured event</span>':''}<h3>${esc(event.name)}</h3><p><time datetime="${esc(event.date)}">${esc(dateLabel(event))}</time></p><p class="event-place">${esc(event.place)}</p><p><a href="${esc(event.url)}" target="_blank" rel="noopener">Event details</a></p>${event.registration_url?`<p><a href="${esc(event.registration_url)}" target="_blank" rel="noopener">Register / RSVP</a> · Checked ${esc(event.reviewed_on)}</p>`:''}${eventCalls(event)}</li>`
   ).join('') + '</ol>';
 }
 renderHomeHighlights();

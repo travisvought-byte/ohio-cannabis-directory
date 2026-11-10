@@ -136385,6 +136385,32 @@
       "recorded_on": "2026-11-09",
       "recheck_on": "2027-02-09",
       "limitations": "Organizer event page reviewed for date, hours, venue and prices (General Admission $25, VIP $60). Online ticket sales had not opened when reviewed. The Dayton section and the site-wide banner list free-admission groups differently; eligibility should be confirmed with the organizer. Concert details pending."
+    },
+    {
+      "id": "ev-ohio-cannabis-expo-columbus-2027-calls",
+      "subject_id": "event-oh-ohio-cannabis-expo-columbus-2027",
+      "claim": "event-participation",
+      "value": "Ohio Cannabis Expo exhibitor application open for Columbus 2027 (May 21, 2027) and Dayton 2027 (June 11, 2027) | XL Booth 10×10 $1,100; Lounge 20×20 $1,300; Store/Demo Store from 20×20 $1,500; community table for small businesses and verified nonprofits $250 by reviewed application | early-bird pricing ends 2026-12-31 | speaker inquiries: no speaker application published; general contact info@ohiocannabisexpo.com",
+      "source_url": "https://ohiocannabisexpo.com/exhibitors/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-09",
+      "recorded_on": "2026-11-09",
+      "recheck_on": "2026-12-31",
+      "limitations": "Organizer exhibitor page reviewed. Submitting does not reserve space; organizer approval and paid invoice are required. Exhibitors may not sell, distribute, sample or display cannabis or hemp products. The speakers page (https://ohiocannabisexpo.com/speakers/) lists past speakers only; no call for speakers, deadline or selection process was published, so speaker routing uses the organizer's general email. Application form submission was not tested."
+    },
+    {
+      "id": "ev-ohio-cannabis-expo-dayton-2027-calls",
+      "subject_id": "event-oh-ohio-cannabis-expo-2027",
+      "claim": "event-participation",
+      "value": "Ohio Cannabis Expo exhibitor application open for Columbus 2027 (May 21, 2027) and Dayton 2027 (June 11, 2027) | XL Booth 10×10 $1,100; Lounge 20×20 $1,300; Store/Demo Store from 20×20 $1,500; community table for small businesses and verified nonprofits $250 by reviewed application | early-bird pricing ends 2026-12-31 | speaker inquiries: no speaker application published; general contact info@ohiocannabisexpo.com",
+      "source_url": "https://ohiocannabisexpo.com/exhibitors/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-09",
+      "recorded_on": "2026-11-09",
+      "recheck_on": "2026-12-31",
+      "limitations": "Organizer exhibitor page reviewed. Submitting does not reserve space; organizer approval and paid invoice are required. Exhibitors may not sell, distribute, sample or display cannabis or hemp products. The speakers page (https://ohiocannabisexpo.com/speakers/) lists past speakers only; no call for speakers, deadline or selection process was published, so speaker routing uses the organizer's general email. Application form submission was not tested."
     }
   ],
   "rules": [
@@ -138142,7 +138168,8 @@
       ],
       "next_step_url": "https://ohiocannabisexpo.com/columbus-2027/",
       "evidence_ids": [
-        "ev-ohio-cannabis-expo-columbus-2027"
+        "ev-ohio-cannabis-expo-columbus-2027",
+        "ev-ohio-cannabis-expo-columbus-2027-calls"
       ]
     },
     {
@@ -138157,7 +138184,8 @@
       "next_step_url": "https://ohiocannabisexpo.com/dayton-2027/",
       "evidence_ids": [
         "ev-ohio-cannabis-expo-2027",
-        "ev-ohio-cannabis-expo-dayton-2027-page"
+        "ev-ohio-cannabis-expo-dayton-2027-page",
+        "ev-ohio-cannabis-expo-dayton-2027-calls"
       ]
     },
     {
@@ -138781,7 +138809,18 @@
       "url": "https://ohiocannabisexpo.com/columbus-2027/",
       "reviewed_on": "2026-11-09",
       "registration_url": "https://ohiocannabisexpo.com/etn/ohio-cannabis-expo-columbus-2027/",
-      "save_the_date": true
+      "save_the_date": true,
+      "calls": [
+        {
+          "label": "Vendors: apply to exhibit",
+          "url": "https://ohiocannabisexpo.com/exhibitors/",
+          "note": "Early-bird booth pricing through Dec 31, 2026"
+        },
+        {
+          "label": "Speakers: email the organizer",
+          "url": "mailto:info@ohiocannabisexpo.com?subject=Speaker%20inquiry%20%E2%80%94%20Ohio%20Cannabis%20Expo%20Columbus%202027"
+        }
+      ]
     },
     {
       "name": "Ohio Cannabis Expo — Dayton 2027",
@@ -138789,7 +138828,18 @@
       "place": "Dayton Convention Center, Hall A · 22 E. Fifth Street · Dayton, Ohio · 1–7 PM",
       "url": "https://ohiocannabisexpo.com/dayton-2027/",
       "reviewed_on": "2026-11-09",
-      "save_the_date": true
+      "save_the_date": true,
+      "calls": [
+        {
+          "label": "Vendors: apply to exhibit",
+          "url": "https://ohiocannabisexpo.com/exhibitors/",
+          "note": "Early-bird booth pricing through Dec 31, 2026"
+        },
+        {
+          "label": "Speakers: email the organizer",
+          "url": "mailto:info@ohiocannabisexpo.com?subject=Speaker%20inquiry%20%E2%80%94%20Ohio%20Cannabis%20Expo%20Dayton%202027"
+        }
+      ]
     }
   ]
 }
