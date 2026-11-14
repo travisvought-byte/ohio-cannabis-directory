@@ -41,5 +41,5 @@ def main():
  q.addEventListener('input',renderSeeds);area.addEventListener('change',renderSeeds);type.addEventListener('change',renderSeeds);flower.addEventListener('change',renderSeeds);document.getElementById('seed-reset').addEventListener('click',()=>{q.value='';area.value='';type.value='';flower.value='';renderSeeds();});window.addEventListener('popstate',loadSeeds);loadSeeds();
  </script></body></html>'''
  page=page.replace('__COUNT__',str(len(rows))).replace('__SEED_COUNT__',str(len(rows)-len(supply))).replace('__SUPPLY__',supply_text).replace('__PICKUP__',pickup_text).replace('__AREAS__',area_options).replace('__TYPES__',''.join(f'<option>{esc(t)}</option>' for t in types)).replace('__CARDS__',''.join(cards)).replace('__DATA__',script_json(rows))
- OUT.write_text(brand_page(page),encoding='utf-8');print(f'Built seeds.html: {len(rows)} entries')
+ OUT.write_text(brand_page(page, OUT.name),encoding='utf-8');print(f'Built seeds.html: {len(rows)} entries')
 if __name__=='__main__':main()

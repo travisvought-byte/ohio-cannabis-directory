@@ -93,7 +93,24 @@ def update_url(kind='listing'):
             'Website or source:\r\n\r\n')
     return 'mailto:' + EMAIL + '?' + urlencode({'subject': subjects[kind], 'body': body}, quote_via=quote)
 
-def brand_page(page):
+# The Ohio pages in this repo are published at ohioweed.org. Both sites build from here,
+# so each page names one canonical address wherever it is served from. Pennsylvania and
+# the directory home stay on SITE_ORIGIN.
+OHIO_HOME = 'https://ohioweed.org'
+OHIO_PAGES = frozenset({
+    'advocacy.html', 'ancestry.html', 'assessment.html', 'buyer-guide.html', 'compare.html',
+    'expungement.html', 'intake.html', 'knowledge.html', 'lawmakers.html', 'locations.html',
+    'november-campaign.html', 'relationships.html', 'resources.html', 'seeds.html',
+    'work-with-travis.html',
+})
+
+
+def canonical_url(name):
+    """The single public address for a built page."""
+    origin = OHIO_HOME if name in OHIO_PAGES else SITE_ORIGIN
+    return origin + '/' + ('' if name == 'index.html' else name)
+
+def brand_page(page, name=None):
     page = site_origin(page)
     page = re.sub(r'<script\b[^>]*data-goatcounter=[^>]*>\s*</script>', '', page, flags=re.S)
     if '__VHG_BRAND__' not in page:
@@ -106,6 +123,12 @@ def brand_page(page):
     page=re.sub(r'<meta\s+property="og:[^"]+"[^>]*>','',page)
     meta='<meta property="og:type" content="website"><meta property="og:site_name" content="Ohio Cannabis Directory"><meta property="og:title" content="'+html.escape(title,quote=True)+'"><meta property="og:description" content="'+description+'"><meta property="og:image" content="'+SITE_ORIGIN+'/assets/vhg-logo.png"><meta property="og:image:alt" content="Veteran Home Guardians logo">'
     page=page.replace('</head>',meta+'</head>')
+
+    if name:
+        href = canonical_url(name)
+        page = re.sub(r'<link rel="canonical"[^>]*>', '', page)
+        page = page.replace('</head>', '<link rel="canonical" href="' + href + '">'
+                            '<meta property="og:url" content="' + href + '"></head>')
 
     page = page.replace('</head>', '<script src="assets/analytics.js"></script></head>')
     out = page.replace('__VHG_BRAND__', brand_header())

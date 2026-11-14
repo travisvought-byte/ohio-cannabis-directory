@@ -7,7 +7,7 @@ OUT = ROOT / 'advocacy.html'
 
 def main():
     page = (ROOT / 'templates/advocacy.html').read_text(encoding='utf-8')
-    built = brand_page(page)
+    built = brand_page(page, OUT.name)
     import re
     description = re.search(r'<meta name="description" content="([^"]+)"', page).group(1)
     built = re.sub(r'<meta property="og:description" content="[^"]*">', '<meta property="og:description" content="' + description + '">', built)

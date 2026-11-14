@@ -35,7 +35,7 @@ def main():
         records.append(item)
     records.sort(key=lambda r:(r['a'].casefold(),r['b'].casefold(),r['kind'].casefold()))
     style = DIRECTORY_TEMPLATE.split('<style>')[1].split('</style>')[0]
-    page = brand_page(TEMPLATE.replace('__STYLE__', style)).replace('__DATA__', script_json(records))
+    page = brand_page(TEMPLATE.replace('__STYLE__', style), OUT.name).replace('__DATA__', script_json(records))
     page = page.replace('__VERSION__', RELEASE['version']).replace('__DATE__', RELEASE['released_on']).replace('__COUNT__', str(len(records)))
     OUT.write_text(site_origin(page))
     print(f'wrote {OUT} — {len(records)} relationships')

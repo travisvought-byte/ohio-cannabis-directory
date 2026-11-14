@@ -37,7 +37,7 @@ def main():
     cats = sorted({i["c"] for i in index if i["s"]})
     cat_opts = "\n".join(f'<option>{html.escape(c)}</option>' for c in cats)
 
-    page = (brand_page(TEMPLATE)
+    page = (brand_page(TEMPLATE, OUT.name)
             .replace("__INDEX__", script_json(index))
             .replace("__CAT_OPTS__", cat_opts)
             .replace("__N__", str(len(index)))

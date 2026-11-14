@@ -23,7 +23,7 @@ def main():
                            phone +
                            f'<a href="advocacy.html?member={member["id"]}#write">Write a letter</a></li>')
     page = (ROOT / 'templates/lawmakers.html').read_text().replace('__ROSTER__', ''.join(entries)).replace('__CHECKED__', data['checked_on'])
-    OUT.write_text(brand_page(page))
+    OUT.write_text(brand_page(page, OUT.name))
     print('Built lawmakers.html:', len(entries), 'districts with complete fallback')
 
 if __name__ == '__main__':
