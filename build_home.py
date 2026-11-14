@@ -1,6 +1,7 @@
 """Publish a directory-first entry point; preserve existing search and record URLs."""
 from pathlib import Path
 from directory_data import RELEASE, load_records
+from directory_brand import site_origin
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'index.html'
@@ -60,7 +61,7 @@ nav a{min-height:44px;display:inline-flex;align-items:center}
 
 def main():
     count = sum(not row['Category'].startswith('Out of scope') for row in load_records(include_withdrawn=False))
-    OUT.write_text(TEMPLATE.replace('__VERSION__', RELEASE['version']).replace('516 publishable organizations', f'{count} publishable organizations'), encoding='utf-8')
+    OUT.write_text(site_origin(TEMPLATE).replace('__VERSION__', RELEASE['version']).replace('516 publishable organizations', f'{count} publishable organizations'), encoding='utf-8')
 
 if __name__ == '__main__':
     main()

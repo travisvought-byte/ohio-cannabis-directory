@@ -10,6 +10,7 @@ import json
 from collections import Counter
 from datetime import date, timedelta
 from pathlib import Path
+from directory_brand import site_origin
 
 ROOT = Path(__file__).resolve().parent
 
@@ -147,7 +148,7 @@ def main(as_of=None):
     for item in attempts.values():
         lines += [f"- **{item['name']}** ({item['attempted_on']}): {item['result']} Next: {item['next_action']}"]
     lines += ['', '## Completed reviews', '', 'See `data/reviews/` for dated source reviews, exact field changes and remaining limitations. A failed fetch does not establish closure.', '']
-    (ROOT / 'architecture/REVIEW_QUEUE.md').write_text('\n'.join(lines))
+    (ROOT / 'architecture/REVIEW_QUEUE.md').write_text(site_origin('\n'.join(lines)))
     print(f"Review queue: {len(queue)} records; {result['priority_counts']}; {len(upcoming)} more due within {FORECAST_DAYS} days; tiers {dict(tiers)}")
 
 
