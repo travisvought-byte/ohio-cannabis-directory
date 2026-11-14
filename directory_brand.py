@@ -1,11 +1,25 @@
 """Shared VHG identity and public update-request links."""
 import base64
+import os
 import re
 import html
 from pathlib import Path
 from urllib.parse import urlencode, quote
 
 EMAIL = 'VeteranHomeGuardians@gmail.com'
+
+# Public address of the site that serves these pages. The default keeps current output unchanged;
+# set SITE_ORIGIN to publish the same pages on another domain (for example https://ohioweed.org).
+DEFAULT_SITE_ORIGIN = 'https://weed.vethomeguard.org'
+SITE_ORIGIN = os.environ.get('SITE_ORIGIN', DEFAULT_SITE_ORIGIN).rstrip('/')
+
+from urllib.parse import urlparse
+SITE_HOST = urlparse(SITE_ORIGIN).netloc
+DEFAULT_SITE_HOST = urlparse(DEFAULT_SITE_ORIGIN).netloc
+
+def site_origin(text):
+    """Replace the default public domain in built output with SITE_ORIGIN, including bare printed URLs."""
+    return text.replace(DEFAULT_SITE_ORIGIN, SITE_ORIGIN).replace(DEFAULT_SITE_HOST, SITE_HOST)
 BRAND_CSS = '''
   .vhg-brand{display:flex;align-items:center;gap:1rem;margin:0 0 .5rem;text-decoration:none;color:inherit}
   .vhg-brand img{width:48px;height:auto;flex:none}
@@ -80,6 +94,7 @@ def update_url(kind='listing'):
     return 'mailto:' + EMAIL + '?' + urlencode({'subject': subjects[kind], 'body': body}, quote_via=quote)
 
 def brand_page(page):
+    page = site_origin(page)
     page = re.sub(r'<script\b[^>]*data-goatcounter=[^>]*>\s*</script>', '', page, flags=re.S)
     if '__VHG_BRAND__' not in page:
         page=page.replace('<main>', '<main>__VHG_BRAND__',1)
@@ -89,7 +104,7 @@ def brand_page(page):
     description='Find Ohio cannabis businesses, dispensaries and plain-language guides, each traced to a source.'
     if 'name="description"' not in page:page=page.replace('</head>','<meta name="description" content="'+description+'"></head>')
     page=re.sub(r'<meta\s+property="og:[^"]+"[^>]*>','',page)
-    meta='<meta property="og:type" content="website"><meta property="og:site_name" content="Ohio Cannabis Directory"><meta property="og:title" content="'+html.escape(title,quote=True)+'"><meta property="og:description" content="'+description+'"><meta property="og:image" content="https://weed.vethomeguard.org/assets/vhg-logo.png"><meta property="og:image:alt" content="Veteran Home Guardians logo">'
+    meta='<meta property="og:type" content="website"><meta property="og:site_name" content="Ohio Cannabis Directory"><meta property="og:title" content="'+html.escape(title,quote=True)+'"><meta property="og:description" content="'+description+'"><meta property="og:image" content="'+SITE_ORIGIN+'/assets/vhg-logo.png"><meta property="og:image:alt" content="Veteran Home Guardians logo">'
     page=page.replace('</head>',meta+'</head>')
 
     page = page.replace('</head>', '<script src="assets/analytics.js"></script></head>')

@@ -10,7 +10,7 @@ import datetime
 from pathlib import Path
 import pandas as pd
 from directory_data import RELEASE, RELEASE_DATE, script_json, load_records, load_event_routes, load_event_spotlights, load_directory
-from directory_brand import brand_page
+from directory_brand import brand_page, site_origin
 from public_data import externalize
 
 ROOT = Path(__file__).resolve().parent
@@ -261,7 +261,7 @@ def main():
 
     page=externalize(page,payload,records,"data/public-organizations.json")
     with open(OUT, "w", encoding="utf-8") as f:
-        f.write(page)
+        f.write(site_origin(page))
 
     print(f"wrote {OUT}")
     print(f"  {n_pub} publishable, {n_scope} out of scope, {len(cats)} categories")

@@ -5,7 +5,7 @@ import html
 from pathlib import Path
 from build_directory import TEMPLATE as DIRECTORY_TEMPLATE
 from directory_data import ROOT, RELEASE, load_records, load_relationship_records, relationship_id, script_json
-from directory_brand import brand_page
+from directory_brand import brand_page, site_origin
 
 OUT = ROOT / 'relationships.html'
 
@@ -37,7 +37,7 @@ def main():
     style = DIRECTORY_TEMPLATE.split('<style>')[1].split('</style>')[0]
     page = brand_page(TEMPLATE.replace('__STYLE__', style)).replace('__DATA__', script_json(records))
     page = page.replace('__VERSION__', RELEASE['version']).replace('__DATE__', RELEASE['released_on']).replace('__COUNT__', str(len(records)))
-    OUT.write_text(page)
+    OUT.write_text(site_origin(page))
     print(f'wrote {OUT} — {len(records)} relationships')
 
 TEMPLATE = r'''<!doctype html>
