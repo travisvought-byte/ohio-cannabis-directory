@@ -26,7 +26,7 @@ def build_page(data,persist=False):
   routes=[c for c in cards if state['code'] in c['listed_in'] and c['scope']=='public']
   fallback.append('<h2>'+html.escape(state['name'])+' pilot referral routes</h2><p>Selected reviewed routes. Each need lists its coverage limits and known gaps.</p><ul>'+''.join('<li><a href="'+html.escape(c['url'],quote=True)+'">'+html.escape(c['name'])+'</a> — '+html.escape(c['eligibility'])+'</li>' for c in routes)+'</ul>')
  page=(ROOT/'templates/state.html').read_text().replace('__STATE_OPTIONS__',options).replace('__DATA__',script_json(payload)).replace('__PILOT_NOJS__',''.join(fallback))
- return brand_page(externalize(page,script_json(payload),payload,"data/public-state.json",persist=persist))
+ return brand_page(externalize(page,script_json(payload),payload,"data/public-state.json",persist=persist), OUT.name)
 def main():
  OUT.write_text(build_page(load_directory(),persist=True));print('Built shared state.html from state packs and canonical service records')
 if __name__=='__main__':main()

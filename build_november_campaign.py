@@ -6,7 +6,7 @@ OUT = ROOT / 'november-campaign.html'
 
 
 def main():
-    OUT.write_text(brand_page((ROOT / 'templates/november-campaign.html').read_text()))
+    OUT.write_text(brand_page((ROOT / 'templates/november-campaign.html').read_text(), OUT.name))
 
 
 if __name__ == '__main__':

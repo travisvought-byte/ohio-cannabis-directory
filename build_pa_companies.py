@@ -110,7 +110,7 @@ def build_page(data, persist=False):
                              ' | '.join(f['value'] for f in c['facts'] if f['claim']!='company-pa-connection'),
                              c['routes'][0]['url'], ' | '.join(dict.fromkeys(s['source_url'] for s in c['sources']))])
         (ROOT / 'pennsylvania-companies.csv').write_text(stream.getvalue(), encoding='utf-8-sig', newline='')
-    return brand_page(externalize(page, payload, cards, 'data/public-pa-companies.json', persist=persist))
+    return brand_page(externalize(page, payload, cards, 'data/public-pa-companies.json', persist=persist), OUT.name)
 
 
 def main():

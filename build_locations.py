@@ -19,6 +19,6 @@ def build_page(data):
    location['directory_listing']={'id':linked['id'],'name':linked['name']}
  payload=dict(states=states,locations=locations)
  page=(ROOT/'templates/locations.html').read_text().replace('<script id="location-data" type="application/json">__DATA__</script>','').replace("JSON.parse(document.getElementById('location-data').textContent)",script_json(payload))
- return brand_page(externalize(page,script_json(payload),payload,'data/public-locations.json'))
+ return brand_page(externalize(page,script_json(payload),payload,'data/public-locations.json'), OUT.name)
 def main():OUT.write_text(build_page(load_directory()));print('Built locations.html')
 if __name__=='__main__':main()

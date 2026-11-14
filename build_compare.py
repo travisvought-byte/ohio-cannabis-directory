@@ -207,7 +207,7 @@ def main():
     out.append('<script type="application/json" id="letter-data">' + json.dumps(letters, ensure_ascii=False).replace('</', '<\\/') + '</script>')
     out.append(SCRIPT + '</main></body></html>\n')
     page = '\n'.join(out)
-    built = brand_page(page)
+    built = brand_page(page, OUT.name)
     built = re.sub(r'<meta property="og:description" content="[^"]*">', '<meta property="og:description" content="' + esc(DESCRIPTION) + '">', built)
     OUT.write_text(built, encoding='utf-8')
     print(f'Built compare.html: {len(data["topics"])} law topics, {len(data["lessons"])} market lessons')

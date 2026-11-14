@@ -23,7 +23,7 @@ def court_searches():
 
 def main():
     page = (ROOT / 'templates/expungement.html').read_text(encoding='utf-8')
-    OUT.write_text(brand_page(page.replace('__COURT_SEARCHES__', court_searches())), encoding='utf-8')
+    OUT.write_text(brand_page(page.replace('__COURT_SEARCHES__', court_searches()), OUT.name), encoding='utf-8')
     print('Built expungement.html')
 if __name__ == '__main__':
     main()

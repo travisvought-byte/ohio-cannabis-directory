@@ -28,7 +28,7 @@ const input=document.getElementById('search'),cards=[...document.querySelectorAl
 function filter(){const q=input.value.trim().toLowerCase();let n=0;for(const card of cards){card.hidden=!card.textContent.toLowerCase().includes(q);if(!card.hidden)n++;}for(const section of sections)section.hidden=![...section.querySelectorAll('.topic')].some(c=>!c.hidden);document.getElementById('count').textContent=q?(n?n+' matching topics':'No matching topics. Try another word.'):'Browse '+cards.length+' explanations and buying tips.';}
 input.addEventListener('input',filter);document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{input.value='';filter();}));filter();
 </script></body></html>'''.replace('__NAV__',nav).replace('__SECTIONS__',''.join(sections))
-    OUT.write_text(brand_page(page))
+    OUT.write_text(brand_page(page, OUT.name))
     print('Built cannabis knowledge hub:', len(ids)-len(data['sections']), 'topics')
 
 if __name__ == '__main__':

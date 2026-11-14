@@ -39,7 +39,7 @@ const selected=byId[new URLSearchParams(location.search).get('strain')];if(selec
 </script></body></html>'''.replace('__DATA__',payload).replace('__COUNT__',str(len(catalog))).replace('__NAMES__',str(data['selection']['distinct_name_count']))
     page=page.replace('<script id="model" type="application/json">'+payload+'</script>','').replace("JSON.parse(document.getElementById('model').textContent)",payload)
     page=externalize(page,payload,{'data':data,'report':report},'data/public-strains.json')
-    OUT.write_text(brand_page(page))
+    OUT.write_text(brand_page(page, OUT.name))
     strains={s['id']:s for s in data['strains']};sources={s['id']:s for s in data['sources']}
     with (ROOT/'data/strains/ancestry.csv').open('w',newline='') as f:
         writer=csv.writer(f,lineterminator='\n');writer.writerow(['claim_id','child_id','strain','breeder','parent_1_id','parent_1_name','parent_2_id','parent_2_name','status','source_urls','reviewed_on','notes'])

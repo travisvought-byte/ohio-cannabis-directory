@@ -233,7 +233,7 @@ def main():
     noscript.append("</div>")
     noscript_index = "\n".join(noscript)
 
-    page = brand_page(TEMPLATE).replace("__PAYLOAD__", payload)
+    page = brand_page(TEMPLATE, OUT.name).replace("__PAYLOAD__", payload)
     # The H1 carries the site name here; the brand line names the organization instead.
     page = page.replace('<span><strong>Ohio Cannabis Directory</strong></span>', '<span class="brand-org">Veteran Home Guardians</span>', 1)
     page = page.replace("__UPCOMING_EVENTS__", script_json(UPCOMING_EVENTS))
