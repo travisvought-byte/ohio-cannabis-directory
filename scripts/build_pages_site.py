@@ -85,10 +85,17 @@ def main():
     # Catches any address this domain no longer has a page for.
     (out / '404.html').write_text(stub(f'{OHIO_HOME}/'), encoding='utf-8')
 
+    # Every page here forwards, so a sitemap would only point crawlers at redirects.
+    (out / 'sitemap.xml').unlink(missing_ok=True)
+    (out / 'robots.txt').write_text(
+        'User-agent: *\nAllow: /\n\n# Every page here forwards to ohioweed.org, which has its own sitemap.\n',
+        encoding='utf-8')
+
     to_ohio = [n for n in pages if n in FORWARD]
     print(f'Site ready in {out}: {len(pages)} pages forwarded '
           f'({len(to_ohio)} to their ohioweed.org page, {len(pages) - len(to_ohio)} to the home), '
-          f'plus 404.html. Data files and assets still served.')
+          f'plus 404.html. No sitemap, since nothing here is a destination. '
+          f'Data files and assets still served.')
 
 
 if __name__ == '__main__':
