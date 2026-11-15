@@ -1,0 +1,3423 @@
+{
+ "schema_version": "1.0.0",
+ "as_of": "2026-11-15",
+ "purpose": "What adults and patients may do in each state, answered with the same questions for all 50 states and DC. Built top-down: national compilations that cover every state come first, then each state’s official sources. Every answer names its sources and the date it was checked. Missing answers mean not yet reviewed, never that something is prohibited.",
+ "required_questions": [
+  "adult-use",
+  "medical"
+ ],
+ "statuses": {
+  "allowed": "Allowed",
+  "medical-only": "Medical patients only",
+  "limited": "Limited",
+  "not-permitted": "Not permitted",
+  "varies-locally": "Varies locally",
+  "not-reviewed": "Not yet reviewed"
+ },
+ "groups": [
+  {
+   "id": "status",
+   "label": "Is it legal here?"
+  },
+  {
+   "id": "having",
+   "label": "Buying and having it"
+  },
+  {
+   "id": "growing",
+   "label": "Growing at home"
+  },
+  {
+   "id": "using",
+   "label": "Using it"
+  }
+ ],
+ "questions": [
+  {
+   "id": "adult-use",
+   "group": "status",
+   "question": "Can adults 21 and older use cannabis without a medical card?",
+   "keywords": "recreational legal age"
+  },
+  {
+   "id": "medical",
+   "group": "status",
+   "question": "Is there a state medical cannabis program?",
+   "keywords": "patients card registry"
+  },
+  {
+   "id": "buying",
+   "group": "having",
+   "question": "Where can adults buy it legally?",
+   "keywords": "dispensary store retail purchase"
+  },
+  {
+   "id": "possession",
+   "group": "having",
+   "question": "How much can an adult have?",
+   "keywords": "possession limit ounces grams"
+  },
+  {
+   "id": "sharing",
+   "group": "having",
+   "question": "Can adults share or gift it?",
+   "keywords": "gift transfer give"
+  },
+  {
+   "id": "home-grow",
+   "group": "growing",
+   "question": "Can adults grow it at home?",
+   "keywords": "plants cultivation homegrow"
+  },
+  {
+   "id": "public-use",
+   "group": "using",
+   "question": "Can you use it in public?",
+   "keywords": "smoke consume where"
+  },
+  {
+   "id": "driving",
+   "group": "using",
+   "question": "What are the driving rules?",
+   "keywords": "dui drive car vehicle"
+  }
+ ],
+ "jurisdictions": {
+  "AL": "Alabama",
+  "AK": "Alaska",
+  "AZ": "Arizona",
+  "AR": "Arkansas",
+  "CA": "California",
+  "CO": "Colorado",
+  "CT": "Connecticut",
+  "DE": "Delaware",
+  "DC": "District of Columbia",
+  "FL": "Florida",
+  "GA": "Georgia",
+  "HI": "Hawaii",
+  "ID": "Idaho",
+  "IL": "Illinois",
+  "IN": "Indiana",
+  "IA": "Iowa",
+  "KS": "Kansas",
+  "KY": "Kentucky",
+  "LA": "Louisiana",
+  "ME": "Maine",
+  "MD": "Maryland",
+  "MA": "Massachusetts",
+  "MI": "Michigan",
+  "MN": "Minnesota",
+  "MS": "Mississippi",
+  "MO": "Missouri",
+  "MT": "Montana",
+  "NE": "Nebraska",
+  "NV": "Nevada",
+  "NH": "New Hampshire",
+  "NJ": "New Jersey",
+  "NM": "New Mexico",
+  "NY": "New York",
+  "NC": "North Carolina",
+  "ND": "North Dakota",
+  "OH": "Ohio",
+  "OK": "Oklahoma",
+  "OR": "Oregon",
+  "PA": "Pennsylvania",
+  "RI": "Rhode Island",
+  "SC": "South Carolina",
+  "SD": "South Dakota",
+  "TN": "Tennessee",
+  "TX": "Texas",
+  "UT": "Utah",
+  "VT": "Vermont",
+  "VA": "Virginia",
+  "WA": "Washington",
+  "WV": "West Virginia",
+  "WI": "Wisconsin",
+  "WY": "Wyoming"
+ },
+ "official_links": {
+  "AK": {
+   "source_id": "ak-amco-faq"
+  },
+  "AL": {
+   "source_id": "al-amcc"
+  },
+  "AR": {
+   "source_id": "ar-adh-mmj"
+  },
+  "AZ": {
+   "source_id": "az-adhs-marijuana"
+  },
+  "CA": {
+   "source_id": "ca-dcc-whats-legal"
+  },
+  "CO": {
+   "source_id": "co-laws-about-use"
+  },
+  "CT": {
+   "source_id": "ct-dcp-adult-use"
+  },
+  "DC": {
+   "source_id": "dc-abca-home"
+  },
+  "DE": {
+   "source_id": "de-omc-home"
+  },
+  "FL": {
+   "source_id": "fl-ommu"
+  },
+  "GA": {
+   "source_id": "ga-gmcc"
+  },
+  "HI": {
+   "source_id": "hi-doh-mc"
+  },
+  "IL": {
+   "source_id": "il-croo-home"
+  },
+  "KY": {
+   "source_id": "ky-omc"
+  },
+  "MA": {
+   "source_id": "ma-ccc-home"
+  },
+  "MD": {
+   "source_id": "md-mca-home"
+  },
+  "ME": {
+   "source_id": "me-ocp-faq"
+  },
+  "MI": {
+   "source_id": "mi-cra-consumer"
+  },
+  "MN": {
+   "source_id": "mn-ocm-home"
+  },
+  "MO": {
+   "source_id": "mo-dhss-cannabis"
+  },
+  "MS": {
+   "source_id": "ms-mmcp"
+  },
+  "MT": {
+   "source_id": "mt-dor-cannabis"
+  },
+  "NH": {
+   "source_id": "nh-dhhs-tcp"
+  },
+  "NJ": {
+   "source_id": "nj-crc-home"
+  },
+  "NM": {
+   "source_id": "nm-rld-cannabis"
+  },
+  "NV": {
+   "source_id": "nv-ccb-home"
+  },
+  "NY": {
+   "source_id": "ny-ocm-adult-use"
+  },
+  "OH": {
+   "source_id": "oh-dcc-home"
+  },
+  "OK": {
+   "source_id": "ok-omma"
+  },
+  "OR": {
+   "source_id": "or-oha-laws"
+  },
+  "PA": {
+   "source_id": "pa-doh-mm"
+  },
+  "RI": {
+   "source_id": "ri-ccc-faq"
+  },
+  "SD": {
+   "source_id": "sd-doh-mc"
+  },
+  "TX": {
+   "source_id": "tx-dps-cup"
+  },
+  "UT": {
+   "source_id": "ut-cmc"
+  },
+  "VA": {
+   "source_id": "va-cca-home"
+  },
+  "VT": {
+   "source_id": "vt-ccb-home"
+  },
+  "WA": {
+   "source_id": "wa-lcb-know"
+  },
+  "WV": {
+   "source_id": "wv-omc"
+  }
+ },
+ "national": [
+  {
+   "id": "federal-schedule",
+   "need": "Federal law",
+   "title": "Medical cannabis under a state license is now Schedule III",
+   "text": "A federal final rule dated April 28, 2026 placed FDA-approved marijuana products and medical marijuana products regulated by a state medical marijuana license in Schedule III of the Controlled Substances Act. The rule names medical products, not adult-use products. A separate proceeding on moving marijuana generally from Schedule I to Schedule III had a hearing set for June 29 to July 15, 2026; the DEA page reports no decision.",
+   "url": "https://www.dea.gov/marijuana-rescheduling-regulatory-actions",
+   "source_ids": [
+    "us-dea-rescheduling"
+   ],
+   "reviewed_on": "2026-11-15"
+  },
+  {
+   "id": "travel-flying",
+   "need": "Travel",
+   "title": "Flying with cannabis",
+   "text": "TSA says marijuana and certain cannabis products, including some CBD oil, remain illegal under federal law unless they contain no more than 0.3 percent THC on a dry-weight basis or are FDA-approved. Screeners do not search for drugs, but they refer any they find to law enforcement.",
+   "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana",
+   "source_ids": [
+    "us-tsa-mmj"
+   ],
+   "reviewed_on": "2026-11-15"
+  },
+  {
+   "id": "veterans-va",
+   "need": "Veterans",
+   "title": "VA care and state cannabis programs",
+   "text": "Taking part in a state marijuana program does not affect eligibility for VA care, and veterans will not be denied VA benefits because of marijuana use. VA providers discuss marijuana use as part of care, but VA clinicians may not recommend medical marijuana or complete state program forms.",
+   "url": "https://www.publichealth.va.gov/marijuana.asp",
+   "source_ids": [
+    "us-va-marijuana"
+   ],
+   "reviewed_on": "2026-11-15"
+  },
+  {
+   "id": "legal-aid",
+   "need": "Legal help",
+   "title": "Find free civil legal aid",
+   "text": "The Legal Services Corporation’s tool finds a local legal aid organization by address or city and links to LawHelp.org for legal information and forms. LSC-funded programs serve low-income people with civil legal problems.",
+   "url": "https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help",
+   "source_ids": [
+    "us-lsc-legal-help"
+   ],
+   "reviewed_on": "2026-11-15"
+  },
+  {
+   "id": "poison-help",
+   "need": "Health and safety",
+   "title": "Poison Help: 1-800-222-1222",
+   "text": "A free poison help line, open 24 hours a day in over 100 languages, run by the federal Health Resources and Services Administration.",
+   "url": "https://poisonhelp.hrsa.gov/",
+   "source_ids": [
+    "us-hrsa-poison"
+   ],
+   "reviewed_on": "2026-11-15"
+  },
+  {
+   "id": "samhsa-helpline",
+   "need": "Health and safety",
+   "title": "SAMHSA National Helpline: 1-800-662-4357",
+   "text": "Free, confidential treatment referral and information for mental health and substance use, 24 hours a day, in English and Spanish.",
+   "url": "https://www.samhsa.gov/find-help/helplines/national-helpline",
+   "source_ids": [
+    "us-samhsa-helpline"
+   ],
+   "reviewed_on": "2026-11-15"
+  }
+ ],
+ "sources": [
+  {
+   "id": "natl-ballotpedia-laws",
+   "kind": "compilation",
+   "scope": "national",
+   "publisher": "Ballotpedia",
+   "title": "Marijuana laws in the United States (states listed with legal adult use; current as of January 2026)",
+   "url": "https://ballotpedia.org/Marijuana_laws_in_the_United_States",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "natl-disa-map",
+   "kind": "compilation",
+   "scope": "national",
+   "publisher": "DISA Global Solutions",
+   "title": "Map of marijuana legality by state (updated November 2, 2026)",
+   "url": "https://disa.com/marijuana-legality-by-state",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "us-dea-rescheduling",
+   "kind": "government",
+   "scope": "national",
+   "publisher": "U.S. Drug Enforcement Administration",
+   "title": "Marijuana rescheduling regulatory actions",
+   "url": "https://www.dea.gov/marijuana-rescheduling-regulatory-actions",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "us-tsa-mmj",
+   "kind": "government",
+   "scope": "national",
+   "publisher": "Transportation Security Administration",
+   "title": "What can I bring? Medical marijuana",
+   "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "us-va-marijuana",
+   "kind": "government",
+   "scope": "national",
+   "publisher": "U.S. Department of Veterans Affairs",
+   "title": "Marijuana (VA public health; page last updated August 1, 2023)",
+   "url": "https://www.publichealth.va.gov/marijuana.asp",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "us-hrsa-poison",
+   "kind": "government",
+   "scope": "national",
+   "publisher": "Health Resources and Services Administration",
+   "title": "Poison Help",
+   "url": "https://poisonhelp.hrsa.gov/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "us-samhsa-helpline",
+   "kind": "government",
+   "scope": "national",
+   "publisher": "Substance Abuse and Mental Health Services Administration",
+   "title": "SAMHSA National Helpline",
+   "url": "https://www.samhsa.gov/find-help/helplines/national-helpline",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "us-lsc-legal-help",
+   "kind": "organization",
+   "scope": "national",
+   "publisher": "Legal Services Corporation",
+   "title": "Get legal help",
+   "url": "https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ak-amco-faq",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Alaska Alcohol & Marijuana Control Office",
+   "title": "Marijuana FAQs",
+   "url": "https://www.commerce.alaska.gov/web/amco/MarijuanaFAQs",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "az-ars-36-2852",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Arizona State Legislature",
+   "title": "Arizona Revised Statutes 36-2852, allowable possession and personal use of marijuana",
+   "url": "https://www.azleg.gov/ars/36/02852.htm",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "az-adhs-marijuana",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Arizona Department of Health Services",
+   "title": "Marijuana licensing",
+   "url": "https://www.azdhs.gov/licensing/marijuana/index.php",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ca-dcc-whats-legal",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "California Department of Cannabis Control",
+   "title": "What's legal",
+   "url": "https://www.cannabis.ca.gov/consumers/whats-legal/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "co-laws-about-use",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "State of Colorado",
+   "title": "Laws about cannabis use",
+   "url": "https://cannabis.colorado.gov/laws-about-cannabis-use",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ct-dcp-adult-use",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Connecticut Department of Consumer Protection",
+   "title": "Adult-use cannabis in Connecticut",
+   "url": "https://portal.ct.gov/cannabis",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "de-omc-adult-use",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Delaware Office of the Marijuana Commissioner",
+   "title": "Adult use",
+   "url": "https://omc.delaware.gov/adult-use/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "de-omc-home",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Delaware Office of the Marijuana Commissioner",
+   "title": "Office of the Marijuana Commissioner",
+   "url": "https://omc.delaware.gov/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "dc-mpd-facts",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Metropolitan Police Department, District of Columbia",
+   "title": "The facts on DC marijuana laws",
+   "url": "https://mpdc.dc.gov/marijuana",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "dc-abca-home",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "DC Alcoholic Beverage and Cannabis Administration",
+   "title": "Alcoholic Beverage and Cannabis Administration",
+   "url": "https://abca.dc.gov/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "il-croo-home",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Illinois Cannabis Regulation Oversight Officer",
+   "title": "Illinois cannabis (home page; dispensary counts as of November 1, 2026)",
+   "url": "https://cannabis.illinois.gov/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "il-croo-faq",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Illinois Cannabis Regulation Oversight Officer",
+   "title": "FAQs",
+   "url": "https://cannabis.illinois.gov/about/faqs.html",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "me-ocp-faq",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Maine Office of Cannabis Policy",
+   "title": "Frequently asked questions",
+   "url": "https://www.maine.gov/dafs/ocp/resources/faq",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "md-mca-smart",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Maryland Cannabis Administration",
+   "title": "BeCannabisSmart",
+   "url": "https://cannabis.maryland.gov/Pages/BeCannabisSmart.aspx",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "md-mca-home",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Maryland Cannabis Administration",
+   "title": "Maryland Cannabis Administration",
+   "url": "https://cannabis.maryland.gov/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ma-ccc-laws",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Massachusetts Cannabis Control Commission",
+   "title": "Know the laws",
+   "url": "https://masscannabiscontrol.com/know-the-laws/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ma-ccc-home",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Massachusetts Cannabis Control Commission",
+   "title": "Cannabis Control Commission",
+   "url": "https://masscannabiscontrol.com/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "mi-cra-consumer",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Michigan Cannabis Regulatory Agency",
+   "title": "Consumer connection",
+   "url": "https://www.michigan.gov/cra/resources/consumer-connection",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "mn-ocm-adult-use",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Minnesota Office of Cannabis Management",
+   "title": "Adult-use cannabis",
+   "url": "https://mn.gov/ocm/consumers/adult-use/index.jsp",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "mn-ocm-home",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Minnesota Office of Cannabis Management",
+   "title": "Office of Cannabis Management",
+   "url": "https://mn.gov/ocm/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "mo-dhss-adult-faq",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Missouri Department of Health and Senior Services",
+   "title": "Adult use FAQs",
+   "url": "https://health.mo.gov/business-professionals/cannabis-regulation/adult-use-faqs",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "mo-dhss-cannabis",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Missouri Department of Health and Senior Services",
+   "title": "Cannabis regulation",
+   "url": "https://health.mo.gov/safety/cannabis/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "mt-dor-cannabis",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Montana Department of Revenue",
+   "title": "Cannabis regulation",
+   "url": "https://revenue.mt.gov/card/cannabis/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "nv-ccb-laws",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Nevada Cannabis Compliance Board",
+   "title": "Laws and regulations",
+   "url": "https://ccb.nv.gov/laws-regulations/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "nv-ccb-home",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Nevada Cannabis Compliance Board",
+   "title": "Nevada Cannabis Compliance Board",
+   "url": "https://ccb.nv.gov/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "nj-crc-adult",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "New Jersey Cannabis Regulatory Commission",
+   "title": "Recreational cannabis in New Jersey",
+   "url": "https://www.nj.gov/cannabis/adult-personal/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "nj-crc-home",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "New Jersey Cannabis Regulatory Commission",
+   "title": "Cannabis Regulatory Commission",
+   "url": "https://www.nj.gov/cannabis/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "nm-rld-cannabis",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "New Mexico Regulation and Licensing Department",
+   "title": "Cannabis in New Mexico",
+   "url": "https://www.rld.nm.gov/cannabis/cannabis-in-new-mexico/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "or-oha-laws",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Oregon Health Authority",
+   "title": "Cannabis laws in Oregon",
+   "url": "https://www.oregon.gov/oha/ph/PreventionWellness/marijuana/Pages/laws.aspx",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ri-ccc-faq",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Rhode Island Cannabis Control Commission",
+   "title": "Frequently asked questions",
+   "url": "https://ccc.ri.gov/faq",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ri-doh-adults",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Rhode Island Department of Health",
+   "title": "Cannabis information for adults",
+   "url": "https://health.ri.gov/cannabis-safety/information/cannabis-information-adults",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "vt-ccb-faq",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Vermont Cannabis Control Board",
+   "title": "Frequently asked questions",
+   "url": "https://ccb.vermont.gov/faq",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "vt-ccb-home",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Vermont Cannabis Control Board",
+   "title": "Cannabis Control Board",
+   "url": "https://ccb.vermont.gov/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "va-cca-faq",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Virginia Cannabis Control Authority",
+   "title": "Frequently asked questions",
+   "url": "https://cca.virginia.gov/faq",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "va-cca-home",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Virginia Cannabis Control Authority",
+   "title": "Virginia Cannabis Control Authority",
+   "url": "https://cca.virginia.gov/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "wa-lcb-know",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Washington State Liquor and Cannabis Board",
+   "title": "Know the law",
+   "url": "https://lcb.wa.gov/education/know-the-law-cannabis",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "al-amcc",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Alabama Medical Cannabis Commission",
+   "title": "Alabama Medical Cannabis Commission",
+   "url": "https://amcc.alabama.gov/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ar-adh-mmj",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Arkansas Department of Health",
+   "title": "Medical marijuana",
+   "url": "https://www.healthy.arkansas.gov/programs-services/topics/medical-marijuana",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "fl-ommu",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Florida Department of Health, Office of Medical Marijuana Use",
+   "title": "Know the facts",
+   "url": "https://knowthefactsmmj.com/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ga-gmcc",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Georgia Access to Medical Cannabis Commission",
+   "title": "Georgia Access to Medical Cannabis Commission",
+   "url": "https://www.gmcc.ga.gov/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "hi-doh-mc",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Hawaii Department of Health",
+   "title": "Medical cannabis",
+   "url": "https://health.hawaii.gov/medicalcannabis/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ky-omc",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Kentucky Office of Medical Cannabis",
+   "title": "Kentucky medical cannabis",
+   "url": "https://kymedcan.ky.gov/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ms-mmcp",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Mississippi State Department of Health",
+   "title": "Mississippi Medical Cannabis Program",
+   "url": "https://www.mmcp.ms.gov/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "nh-dhhs-tcp",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "New Hampshire Department of Health and Human Services",
+   "title": "Therapeutic Cannabis Program",
+   "url": "https://www.dhhs.nh.gov/programs-services/population-health/therapeutic-cannabis",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ok-omma",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Oklahoma Medical Marijuana Authority",
+   "title": "Oklahoma Medical Marijuana Authority",
+   "url": "https://oklahoma.gov/omma.html",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "sd-doh-mc",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "South Dakota Department of Health",
+   "title": "Medical cannabis",
+   "url": "https://doh.sd.gov/programs/medical-cannabis",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "tx-dps-cup",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Texas Department of Public Safety",
+   "title": "Compassionate Use Program",
+   "url": "https://www.dps.texas.gov/section/compassionate-use-program",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ut-cmc",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Utah Center for Medical Cannabis",
+   "title": "Utah medical cannabis",
+   "url": "https://medicalcannabis.utah.gov/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "wv-omc",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "West Virginia Office of Medical Cannabis",
+   "title": "Office of Medical Cannabis",
+   "url": "https://omc.wv.gov/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "oh-dcc-home",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Ohio Division of Cannabis Control",
+   "title": "Division of Cannabis Control",
+   "url": "https://com.ohio.gov/divisions-and-programs/cannabis-control",
+   "retrieved_on": "2026-10-09"
+  },
+  {
+   "id": "oh-orc-3796-221",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Ohio Legislative Service Commission",
+   "title": "Ohio Revised Code 3796.221, version effective March 20, 2026",
+   "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/37/3796/3796.221/3-20-2026/3796.221-3-20-2026.pdf",
+   "retrieved_on": "2026-11-05"
+  },
+  {
+   "id": "oh-orc-3796-04",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Ohio Legislative Service Commission",
+   "title": "Ohio Revised Code 3796.04, version effective March 20, 2026",
+   "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/37/3796/3796.04/3-20-2026/3796.04-3-20-2026.pdf",
+   "retrieved_on": "2026-11-05"
+  },
+  {
+   "id": "oh-orc-3796-04-grow",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Ohio Legislative Service Commission",
+   "title": "Ohio Revised Code 3796.04",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3796.04",
+   "retrieved_on": "2026-10-09"
+  },
+  {
+   "id": "oh-orc-4511-19",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Ohio Legislative Service Commission",
+   "title": "Ohio Revised Code 4511.19, version effective April 9, 2025",
+   "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/45/4511/4511.19/4-9-2025/4511.19-4-9-2025.pdf",
+   "retrieved_on": "2026-11-05"
+  },
+  {
+   "id": "oh-orc-3796-22",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Ohio Legislative Service Commission",
+   "title": "Ohio Revised Code 3796.22, version effective March 20, 2026",
+   "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/37/3796/3796.22/3-20-2026/3796.22-3-20-2026.pdf",
+   "retrieved_on": "2026-11-05"
+  },
+  {
+   "id": "oh-orc-3796-08",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Ohio Legislative Service Commission",
+   "title": "Ohio Revised Code 3796.08, version effective March 20, 2026",
+   "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/37/3796/3796.08/3-20-2026/3796.08-3-20-2026.pdf",
+   "retrieved_on": "2026-11-05"
+  },
+  {
+   "id": "pa-cs-act",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Pennsylvania General Assembly",
+   "title": "The Controlled Substance, Drug, Device and Cosmetic Act (Act 64 of 1972)",
+   "url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/1972/0/0064..HTM",
+   "retrieved_on": "2026-10-28"
+  },
+  {
+   "id": "pa-mma",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Pennsylvania General Assembly",
+   "title": "Medical Marijuana Act (Act 16 of 2016)",
+   "url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2016/0/0016..HTM",
+   "retrieved_on": "2026-10-28"
+  },
+  {
+   "id": "pa-dui-3802",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Pennsylvania General Assembly",
+   "title": "75 Pa.C.S. § 3802, driving under influence of alcohol or controlled substance",
+   "url": "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/75/00.038.002.000..HTM",
+   "retrieved_on": "2026-10-28"
+  },
+  {
+   "id": "pa-doh-mm",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Pennsylvania Department of Health",
+   "title": "Medical marijuana program",
+   "url": "https://www.pa.gov/agencies/health/programs/medical-marijuana",
+   "retrieved_on": "2026-09-16"
+  },
+  {
+   "id": "ny-pen-222-05",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "New York State Senate",
+   "title": "N.Y. Penal Law § 222.05",
+   "url": "https://www.nysenate.gov/legislation/laws/PEN/222.05",
+   "retrieved_on": "2026-11-01"
+  },
+  {
+   "id": "ny-pen-222-10",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "New York State Senate",
+   "title": "N.Y. Penal Law § 222.10",
+   "url": "https://www.nysenate.gov/legislation/laws/PEN/222.10",
+   "retrieved_on": "2026-11-01"
+  },
+  {
+   "id": "ny-pen-222-15",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "New York State Senate",
+   "title": "N.Y. Penal Law § 222.15",
+   "url": "https://www.nysenate.gov/legislation/laws/PEN/222.15",
+   "retrieved_on": "2026-11-01"
+  },
+  {
+   "id": "ny-vat-1192",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "New York State Senate",
+   "title": "N.Y. Vehicle and Traffic Law § 1192",
+   "url": "https://www.nysenate.gov/legislation/laws/VAT/1192",
+   "retrieved_on": "2026-11-01"
+  },
+  {
+   "id": "ny-ocm-adult-use",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "New York Office of Cannabis Management",
+   "title": "Adult-use information",
+   "url": "https://cannabis.ny.gov/adult-use-information",
+   "retrieved_on": "2026-11-01"
+  },
+  {
+   "id": "ny-ocm-home-cultivation",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "New York Office of Cannabis Management",
+   "title": "Home cultivation FAQs",
+   "url": "https://cannabis.ny.gov/home-cultivation-faqs",
+   "retrieved_on": "2026-11-01"
+  },
+  {
+   "id": "ny-ocm-patients",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "New York Office of Cannabis Management",
+   "title": "Patients",
+   "url": "https://cannabis.ny.gov/patients",
+   "retrieved_on": "2026-11-01"
+  },
+  {
+   "id": "ny-s3294a",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "New York State Senate",
+   "title": "Senate Bill S3294A (2025)",
+   "url": "https://www.nysenate.gov/legislation/bills/2025/S3294/amendment/A",
+   "retrieved_on": "2026-11-01"
+  }
+ ],
+ "answers": [
+  {
+   "state": "AK",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "State law (AS 17.38) makes marijuana use legal only for people 21 and older. An adult may possess up to 1 ounce for personal use.",
+   "citation": "Alaska Alcohol & Marijuana Control Office, Marijuana FAQs (AS 17.38)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ak-amco-faq"
+   ]
+  },
+  {
+   "state": "AK",
+   "question": "home-grow",
+   "status": "allowed",
+   "short": "Up to 12 plants per home, 6 mature",
+   "detail": "No more than 12 plants, with six or fewer mature and flowering, may be present in a single dwelling.",
+   "citation": "Alaska Alcohol & Marijuana Control Office, Marijuana FAQs",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ak-amco-faq"
+   ]
+  },
+  {
+   "state": "AK",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes, registry cards",
+   "detail": "Medical cards are issued under AS 17.37. The adult-use law did not change their privileges or prohibitions.",
+   "citation": "Alaska Alcohol & Marijuana Control Office, Marijuana FAQs (AS 17.37)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ak-amco-faq"
+   ]
+  },
+  {
+   "state": "AK",
+   "question": "possession",
+   "status": "allowed",
+   "short": "1 ounce",
+   "detail": "An adult 21 or older may possess up to 1 ounce of marijuana for personal use.",
+   "citation": "Alaska Alcohol & Marijuana Control Office, Marijuana FAQs",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ak-amco-faq"
+   ]
+  },
+  {
+   "state": "AL",
+   "question": "adult-use",
+   "status": "medical-only",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Alabama. Access runs through the state medical program.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "AL",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "The Alabama Medical Cannabis Commission runs the state’s medical cannabis program for patients and caregivers. Whether licensed dispensaries are open is not yet reviewed.",
+   "citation": "Alabama Medical Cannabis Commission",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "al-amcc"
+   ]
+  },
+  {
+   "state": "AR",
+   "question": "adult-use",
+   "status": "medical-only",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Arkansas. Access runs through the state medical program.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "AR",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "The Arkansas Department of Health issues medical marijuana registry cards. A separate state agency licenses dispensaries.",
+   "citation": "Arkansas Department of Health, Medical marijuana",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ar-adh-mmj"
+   ]
+  },
+  {
+   "state": "AZ",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "An adult 21 or older may possess and use 1 ounce or less of marijuana, of which no more than 5 grams may be concentrate.",
+   "citation": "A.R.S. § 36-2852",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "az-ars-36-2852"
+   ]
+  },
+  {
+   "state": "AZ",
+   "question": "home-grow",
+   "status": "allowed",
+   "short": "6 plants per adult, 12 per home",
+   "detail": "Plants must be at the adult’s primary residence, in an enclosed area with a lock that keeps out minors and not visible from public view. No more than 12 plants at a residence with two or more adults.",
+   "citation": "A.R.S. § 36-2852",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "az-ars-36-2852"
+   ]
+  },
+  {
+   "state": "AZ",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "The Arizona Department of Health Services licenses the medical marijuana program for qualifying patients, caregivers and dispensaries.",
+   "citation": "Arizona Department of Health Services, Marijuana licensing",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "az-adhs-marijuana"
+   ]
+  },
+  {
+   "state": "AZ",
+   "question": "possession",
+   "status": "allowed",
+   "short": "1 ounce (up to 5 g concentrate)",
+   "detail": "No more than 5 grams of the 1 ounce may be marijuana concentrate.",
+   "citation": "A.R.S. § 36-2852",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "az-ars-36-2852"
+   ]
+  },
+  {
+   "state": "AZ",
+   "question": "sharing",
+   "status": "allowed",
+   "short": "Up to 1 ounce or 6 plants, free",
+   "detail": "An adult may transfer 1 ounce or less, or up to six plants, to another adult 21 or older without payment and without advertising or promoting it.",
+   "citation": "A.R.S. § 36-2852",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "az-ars-36-2852"
+   ]
+  },
+  {
+   "state": "CA",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "Adults 21 and older may buy cannabis for adult use.",
+   "citation": "California Department of Cannabis Control, What’s legal",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ca-dcc-whats-legal"
+   ]
+  },
+  {
+   "state": "CA",
+   "question": "buying",
+   "status": "allowed",
+   "short": "Licensed retailers",
+   "detail": "Every cannabis retailer must hold a Department of Cannabis Control license. The department’s license search finds licensed retailers.",
+   "citation": "California Department of Cannabis Control, What’s legal",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ca-dcc-whats-legal"
+   ]
+  },
+  {
+   "state": "CA",
+   "question": "home-grow",
+   "status": "allowed",
+   "short": "Up to 6 plants",
+   "detail": "Adults 21 and older may grow up to six cannabis plants at home.",
+   "citation": "California Department of Cannabis Control, What’s legal",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ca-dcc-whats-legal"
+   ]
+  },
+  {
+   "state": "CA",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes, 18+ with a recommendation",
+   "detail": "People 18 and older with a physician’s recommendation may buy for medicinal use, and medicinal users have higher possession limits.",
+   "citation": "California Department of Cannabis Control, What’s legal",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ca-dcc-whats-legal"
+   ]
+  },
+  {
+   "state": "CO",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "It is illegal for anyone under 21 to buy, have or use retail cannabis. Adults 21 and older can have up to 2 ounces.",
+   "citation": "State of Colorado, Laws about cannabis use",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "co-laws-about-use"
+   ]
+  },
+  {
+   "state": "CO",
+   "question": "buying",
+   "status": "allowed",
+   "short": "Licensed stores, 1 ounce at a time",
+   "detail": "Buy retail cannabis only from licensed retail stores, up to 1 ounce at a time, with valid ID showing you are 21 or older.",
+   "citation": "State of Colorado, Laws about cannabis use",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "co-laws-about-use"
+   ]
+  },
+  {
+   "state": "CO",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "Colorado’s state site says medical cannabis has its own use and possession rules. DISA’s national map also lists medical use as legal.",
+   "citation": "State of Colorado, Laws about cannabis use; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "co-laws-about-use",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "CO",
+   "question": "possession",
+   "status": "allowed",
+   "short": "2 ounces",
+   "detail": "Adults 21 and older can have up to 2 ounces. Having more can bring charges and fines.",
+   "citation": "State of Colorado, Laws about cannabis use",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "co-laws-about-use"
+   ]
+  },
+  {
+   "state": "CO",
+   "question": "public-use",
+   "status": "not-permitted",
+   "short": "Not in public",
+   "detail": "Use is not allowed in public places such as sidewalks, parks and restaurants, or on federal land, including national parks and forests.",
+   "citation": "State of Colorado, Laws about cannabis use",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "co-laws-about-use"
+   ]
+  },
+  {
+   "state": "CO",
+   "question": "sharing",
+   "status": "allowed",
+   "short": "Up to 2 ounces, no sales",
+   "detail": "Adults may give up to 2 ounces to another adult 21 or older but may not sell cannabis, including homegrown cannabis.",
+   "citation": "State of Colorado, Laws about cannabis use",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "co-laws-about-use"
+   ]
+  },
+  {
+   "state": "CT",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "The state’s adult-use page says residents over 21 can legally possess and consume cannabis, and that possessing 1.5 ounces is legal.",
+   "citation": "Connecticut Department of Consumer Protection, Adult-use cannabis in Connecticut",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ct-dcp-adult-use"
+   ]
+  },
+  {
+   "state": "CT",
+   "question": "buying",
+   "status": "allowed",
+   "short": "Licensed retailers",
+   "detail": "Adult-use sales have started at licensed retailers.",
+   "citation": "Connecticut Department of Consumer Protection, Adult-use cannabis in Connecticut",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ct-dcp-adult-use"
+   ]
+  },
+  {
+   "state": "CT",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "Connecticut’s medical marijuana program continues to serve patients alongside adult use.",
+   "citation": "Connecticut Department of Consumer Protection, Adult-use cannabis in Connecticut",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ct-dcp-adult-use"
+   ]
+  },
+  {
+   "state": "CT",
+   "question": "possession",
+   "status": "allowed",
+   "short": "1.5 ounces",
+   "detail": "The state’s adult-use page says possessing 1.5 ounces of cannabis is legal.",
+   "citation": "Connecticut Department of Consumer Protection, Adult-use cannabis in Connecticut",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ct-dcp-adult-use"
+   ]
+  },
+  {
+   "state": "DC",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "A person at least 21 may possess 2 ounces or less and use marijuana on private property.",
+   "citation": "Metropolitan Police Department, The facts on DC marijuana laws",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "dc-mpd-facts"
+   ]
+  },
+  {
+   "state": "DC",
+   "question": "buying",
+   "status": "not-permitted",
+   "short": "No legal adult-use sales",
+   "detail": "DC police guidance says selling any amount of marijuana to another person is illegal. Licensed medical cannabis retailers serve registered patients.",
+   "citation": "Metropolitan Police Department; DC Alcoholic Beverage and Cannabis Administration",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "dc-mpd-facts",
+    "dc-abca-home"
+   ]
+  },
+  {
+   "state": "DC",
+   "question": "home-grow",
+   "status": "allowed",
+   "short": "Up to 6 plants, 3 mature",
+   "detail": "An adult may cultivate up to six plants within their residence, no more than three of them mature.",
+   "citation": "Metropolitan Police Department, The facts on DC marijuana laws",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "dc-mpd-facts"
+   ]
+  },
+  {
+   "state": "DC",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "DC’s Alcoholic Beverage and Cannabis Administration registers medical cannabis patients and caregivers and licenses medical cannabis retailers.",
+   "citation": "DC Alcoholic Beverage and Cannabis Administration",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "dc-abca-home"
+   ]
+  },
+  {
+   "state": "DC",
+   "question": "possession",
+   "status": "allowed",
+   "short": "2 ounces",
+   "detail": "A person at least 21 may possess 2 ounces or less.",
+   "citation": "Metropolitan Police Department, The facts on DC marijuana laws",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "dc-mpd-facts"
+   ]
+  },
+  {
+   "state": "DC",
+   "question": "public-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Use is prohibited on any street, sidewalk, alley, park or parking area. Using medical marijuana in public is also a criminal offense.",
+   "citation": "Metropolitan Police Department, The facts on DC marijuana laws",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "dc-mpd-facts"
+   ]
+  },
+  {
+   "state": "DC",
+   "question": "sharing",
+   "status": "allowed",
+   "short": "Up to 1 ounce, free",
+   "detail": "An adult may transfer 1 ounce or less to another person 21 or older when no payment or exchange of goods or services is involved.",
+   "citation": "Metropolitan Police Department, The facts on DC marijuana laws",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "dc-mpd-facts"
+   ]
+  },
+  {
+   "state": "DE",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "Adults 21 and over may possess up to 1 ounce of marijuana or 750 milligrams of concentrated THC products.",
+   "citation": "Delaware Office of the Marijuana Commissioner, Adult use",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "de-omc-adult-use"
+   ]
+  },
+  {
+   "state": "DE",
+   "question": "home-grow",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Home cultivation remains prohibited.",
+   "citation": "Delaware Office of the Marijuana Commissioner, Adult use",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "de-omc-adult-use"
+   ]
+  },
+  {
+   "state": "DE",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "Medical marijuana may be authorized by a doctor to relieve symptoms of certain diseases.",
+   "citation": "Delaware Office of the Marijuana Commissioner",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "de-omc-home"
+   ]
+  },
+  {
+   "state": "DE",
+   "question": "possession",
+   "status": "allowed",
+   "short": "1 ounce or 750 mg THC concentrate",
+   "detail": "Adults 21 and over may possess up to 1 ounce of marijuana or 750 milligrams of concentrated THC products.",
+   "citation": "Delaware Office of the Marijuana Commissioner, Adult use",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "de-omc-adult-use"
+   ]
+  },
+  {
+   "state": "DE",
+   "question": "public-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Public consumption remains prohibited.",
+   "citation": "Delaware Office of the Marijuana Commissioner, Adult use",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "de-omc-adult-use"
+   ]
+  },
+  {
+   "state": "FL",
+   "question": "adult-use",
+   "status": "medical-only",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Florida. Access runs through the state medical program.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "FL",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "Medical marijuana and low-THC cannabis are available to qualified patients. A qualified physician orders them, and licensed medical marijuana treatment centers are the only businesses allowed to dispense them.",
+   "citation": "Florida Office of Medical Marijuana Use",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "fl-ommu"
+   ]
+  },
+  {
+   "state": "GA",
+   "question": "adult-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Georgia.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "GA",
+   "question": "medical",
+   "status": "limited",
+   "short": "Low-THC oil program only",
+   "detail": "Georgia’s commission runs a medical cannabis registry and licenses dispensaries. DISA’s national map lists Georgia as CBD oil only.",
+   "citation": "Georgia Access to Medical Cannabis Commission; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ga-gmcc",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "HI",
+   "question": "adult-use",
+   "status": "medical-only",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Hawaii. Access runs through the state medical program.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "HI",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "Patients must register with the Department of Health before medical use. The department also runs a dispensary program that serves qualified patients.",
+   "citation": "Hawaii Department of Health, Medical cannabis",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "hi-doh-mc"
+   ]
+  },
+  {
+   "state": "IA",
+   "question": "adult-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Iowa.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "IA",
+   "question": "medical",
+   "status": "limited",
+   "short": "CBD oil only",
+   "detail": "DISA’s national map lists Iowa as CBD oil only, marked as legislation passed with a future effective date.",
+   "citation": "DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "ID",
+   "question": "adult-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Idaho.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "ID",
+   "question": "medical",
+   "status": "not-permitted",
+   "short": "No state program",
+   "detail": "DISA’s national map lists no legal medical use in Idaho.",
+   "citation": "DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "IL",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "Adults 21 and older may buy cannabis. Residents and non-residents have different possession limits.",
+   "citation": "Illinois Cannabis Regulation Oversight Officer, FAQs",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "il-croo-faq"
+   ]
+  },
+  {
+   "state": "IL",
+   "question": "buying",
+   "status": "allowed",
+   "short": "Licensed dispensaries",
+   "detail": "291 dispensaries were licensed to sell cannabis to adults 21 and older as of November 1, 2026.",
+   "citation": "Illinois Cannabis Regulation Oversight Officer",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "il-croo-home"
+   ]
+  },
+  {
+   "state": "IL",
+   "question": "driving",
+   "status": "not-permitted",
+   "short": "Illegal at 5 ng/ml THC in blood",
+   "detail": "Driving is prohibited with 5 nanograms of THC per milliliter of whole blood, or 10 nanograms in another bodily substance, within two hours of driving.",
+   "citation": "Illinois Cannabis Regulation Oversight Officer, FAQs",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "il-croo-faq"
+   ]
+  },
+  {
+   "state": "IL",
+   "question": "home-grow",
+   "status": "medical-only",
+   "short": "Registered patients only, up to 5 plants",
+   "detail": "Only registered qualifying medical cannabis patients may grow, up to five plants at home.",
+   "citation": "Illinois Cannabis Regulation Oversight Officer, FAQs",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "il-croo-faq"
+   ]
+  },
+  {
+   "state": "IL",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "Illinois registers medical cannabis patients and caregivers. 191 dispensaries were licensed to sell medical cannabis as of November 1, 2026.",
+   "citation": "Illinois Cannabis Regulation Oversight Officer",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "il-croo-home"
+   ]
+  },
+  {
+   "state": "IL",
+   "question": "possession",
+   "status": "allowed",
+   "short": "Residents 60 g flower; visitors 30 g",
+   "detail": "Residents over 21: 60 grams of flower, 1,000 milligrams of THC in infused products and 10 grams of concentrate. Non-residents: 30 grams, 500 milligrams and 5 grams. The amounts are cumulative.",
+   "citation": "Illinois Cannabis Regulation Oversight Officer, FAQs",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "il-croo-faq"
+   ]
+  },
+  {
+   "state": "IL",
+   "question": "public-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "The law does not permit using cannabis in any public place, and cannabis cannot be used in a motor vehicle.",
+   "citation": "Illinois Cannabis Regulation Oversight Officer, FAQs",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "il-croo-faq"
+   ]
+  },
+  {
+   "state": "IN",
+   "question": "adult-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Indiana.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "IN",
+   "question": "medical",
+   "status": "limited",
+   "short": "CBD oil only",
+   "detail": "DISA’s national map lists Indiana as CBD oil only.",
+   "citation": "DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "KS",
+   "question": "adult-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Kansas.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "KS",
+   "question": "medical",
+   "status": "not-permitted",
+   "short": "No state program",
+   "detail": "DISA’s national map lists no legal medical use in Kansas.",
+   "citation": "DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "KY",
+   "question": "adult-use",
+   "status": "medical-only",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Kentucky. Access runs through the state medical program.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "KY",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes, since 2025",
+   "detail": "Senate Bill 47 legalized medical cannabis effective January 1, 2025. The Office of Medical Cannabis runs the program.",
+   "citation": "Kentucky Office of Medical Cannabis",
+   "effective_on": "2025-01-01",
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ky-omc"
+   ]
+  },
+  {
+   "state": "LA",
+   "question": "adult-use",
+   "status": "medical-only",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Louisiana. Access runs through the state medical program.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "LA",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "DISA’s national map lists medical use as legal in Louisiana. The state program page has not been reviewed for this answer yet.",
+   "citation": "DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "MA",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "You must be 21 or older to buy or grow adult-use marijuana. Adults may carry up to 2 ounces and keep up to 10 ounces at home.",
+   "citation": "Massachusetts Cannabis Control Commission, Know the laws",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ma-ccc-laws"
+   ]
+  },
+  {
+   "state": "MA",
+   "question": "buying",
+   "status": "allowed",
+   "short": "Licensed stores; visitors 21+ with ID",
+   "detail": "Licensed marijuana establishments sell to adults. Visitors from other states must be 21 or older and show a valid government-issued ID.",
+   "citation": "Massachusetts Cannabis Control Commission, Know the laws",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ma-ccc-laws"
+   ]
+  },
+  {
+   "state": "MA",
+   "question": "driving",
+   "status": "not-permitted",
+   "short": "No driving under the influence",
+   "detail": "It is illegal to drive under the influence of cannabis or to have an open container of marijuana in the passenger area of a car.",
+   "citation": "Massachusetts Cannabis Control Commission, Know the laws",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ma-ccc-laws"
+   ]
+  },
+  {
+   "state": "MA",
+   "question": "home-grow",
+   "status": "allowed",
+   "short": "6 plants per adult, 12 per home",
+   "detail": "Adults may grow up to six plants for personal use, and up to 12 plants when two or more adults live in the home.",
+   "citation": "Massachusetts Cannabis Control Commission, Know the laws",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ma-ccc-laws"
+   ]
+  },
+  {
+   "state": "MA",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "The Medical Use of Marijuana Program serves registered patients and caregivers. Out-of-state residents cannot buy medical marijuana in Massachusetts.",
+   "citation": "Massachusetts Cannabis Control Commission",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ma-ccc-home",
+    "ma-ccc-laws"
+   ]
+  },
+  {
+   "state": "MA",
+   "question": "possession",
+   "status": "allowed",
+   "short": "2 ounces carried, 10 at home",
+   "detail": "Adults may carry up to 2 ounces and possess up to 10 ounces at home.",
+   "citation": "Massachusetts Cannabis Control Commission, Know the laws",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ma-ccc-laws"
+   ]
+  },
+  {
+   "state": "MA",
+   "question": "public-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Cannabis cannot be used in any form in public places or on federal land.",
+   "citation": "Massachusetts Cannabis Control Commission, Know the laws",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ma-ccc-laws"
+   ]
+  },
+  {
+   "state": "MD",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "The Maryland Cannabis Administration states that cannabis is legal for adults 21 and older.",
+   "citation": "Maryland Cannabis Administration, BeCannabisSmart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "md-mca-smart"
+   ]
+  },
+  {
+   "state": "MD",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "The Maryland Cannabis Administration runs a medical cannabis program alongside adult use.",
+   "citation": "Maryland Cannabis Administration",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "md-mca-home"
+   ]
+  },
+  {
+   "state": "ME",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "Maine’s adult use program serves consumers 21 and older, who may possess up to 2.5 ounces.",
+   "citation": "Maine Office of Cannabis Policy, Frequently asked questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "me-ocp-faq"
+   ]
+  },
+  {
+   "state": "ME",
+   "question": "home-grow",
+   "status": "allowed",
+   "short": "6 mature and 12 immature plants",
+   "detail": "Each resident 21 or older may grow up to six mature plants, 12 immature plants and an unlimited number of seedlings.",
+   "citation": "Maine Office of Cannabis Policy, Frequently asked questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "me-ocp-faq"
+   ]
+  },
+  {
+   "state": "ME",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "Maine runs both a medical cannabis program and an adult use program.",
+   "citation": "Maine Office of Cannabis Policy, Frequently asked questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "me-ocp-faq"
+   ]
+  },
+  {
+   "state": "ME",
+   "question": "possession",
+   "status": "allowed",
+   "short": "2.5 ounces (up to 10 g concentrate)",
+   "detail": "Adults 21 and older may possess up to 2.5 ounces, of which up to 10 grams may be concentrate.",
+   "citation": "Maine Office of Cannabis Policy, Frequently asked questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "me-ocp-faq"
+   ]
+  },
+  {
+   "state": "ME",
+   "question": "public-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Use in any form is prohibited in public places. Neither the driver nor passengers may consume cannabis in a vehicle on a public way.",
+   "citation": "Maine Office of Cannabis Policy, Frequently asked questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "me-ocp-faq"
+   ]
+  },
+  {
+   "state": "MI",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "Michigan law allows personal possession and use of marijuana by people 21 and older.",
+   "citation": "Michigan Cannabis Regulatory Agency, Consumer connection",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "mi-cra-consumer"
+   ]
+  },
+  {
+   "state": "MI",
+   "question": "home-grow",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "State law provides for lawful cultivation by people 21 and older. Plant limits are not yet reviewed here.",
+   "citation": "Michigan Cannabis Regulatory Agency, Consumer connection",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "mi-cra-consumer"
+   ]
+  },
+  {
+   "state": "MI",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "The Michigan Medical Marijuana Program registers patients and caregivers.",
+   "citation": "Michigan Cannabis Regulatory Agency, Consumer connection",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "mi-cra-consumer"
+   ]
+  },
+  {
+   "state": "MN",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "A person 21 or older may possess up to 2 ounces of flower in public and 2 pounds at home, plus 8 grams of concentrate and edibles with up to 800 milligrams of THC in total.",
+   "citation": "Minnesota Office of Cannabis Management, Adult-use cannabis",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "mn-ocm-adult-use"
+   ]
+  },
+  {
+   "state": "MN",
+   "question": "driving",
+   "status": "not-permitted",
+   "short": "No driving under the influence",
+   "detail": "Driving under the influence of cannabis is illegal and subject to additional DWI sanctions.",
+   "citation": "Minnesota Office of Cannabis Management, Adult-use cannabis",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "mn-ocm-adult-use"
+   ]
+  },
+  {
+   "state": "MN",
+   "question": "home-grow",
+   "status": "allowed",
+   "short": "Up to 8 plants per home, 4 mature",
+   "detail": "Plants must be kept in an enclosed, locked space that is not open to public view.",
+   "citation": "Minnesota Office of Cannabis Management, Adult-use cannabis",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "mn-ocm-adult-use"
+   ]
+  },
+  {
+   "state": "MN",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "The Office of Cannabis Management runs Minnesota’s medical cannabis program.",
+   "citation": "Minnesota Office of Cannabis Management",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "mn-ocm-home"
+   ]
+  },
+  {
+   "state": "MN",
+   "question": "possession",
+   "status": "allowed",
+   "short": "2 ounces in public, 2 pounds at home",
+   "detail": "Also 8 grams of concentrate and edibles infused with a combined 800 milligrams of THC or less.",
+   "citation": "Minnesota Office of Cannabis Management, Adult-use cannabis",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "mn-ocm-adult-use"
+   ]
+  },
+  {
+   "state": "MN",
+   "question": "public-use",
+   "status": "limited",
+   "short": "Banned in listed places",
+   "detail": "Use and possession are banned at public and charter schools, state correctional facilities, federal property, federally subsidized housing and an employer’s premises, and while driving or operating heavy machinery.",
+   "citation": "Minnesota Office of Cannabis Management, Adult-use cannabis",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "mn-ocm-adult-use"
+   ]
+  },
+  {
+   "state": "MO",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "Consumers at least 21 years old may possess up to 3 ounces of marijuana.",
+   "citation": "Missouri Department of Health and Senior Services, Adult use FAQs",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "mo-dhss-adult-faq"
+   ]
+  },
+  {
+   "state": "MO",
+   "question": "buying",
+   "status": "allowed",
+   "short": "Licensed dispensaries, with ID",
+   "detail": "Consumers must show a valid government-issued photo ID to buy adult-use products at a dispensary.",
+   "citation": "Missouri Department of Health and Senior Services, Adult use FAQs",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "mo-dhss-adult-faq"
+   ]
+  },
+  {
+   "state": "MO",
+   "question": "home-grow",
+   "status": "limited",
+   "short": "Yes, with a state cultivation card",
+   "detail": "Consumers need a personal cultivation identification card, valid for 12 months and renewable. Plant limits are not yet reviewed here.",
+   "citation": "Missouri Department of Health and Senior Services, Adult use FAQs",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "mo-dhss-adult-faq"
+   ]
+  },
+  {
+   "state": "MO",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "Missouri issues medical marijuana ID cards to patients.",
+   "citation": "Missouri Department of Health and Senior Services, Cannabis regulation",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "mo-dhss-cannabis"
+   ]
+  },
+  {
+   "state": "MO",
+   "question": "possession",
+   "status": "allowed",
+   "short": "3 ounces",
+   "detail": "Consumers may possess up to 3 ounces at any time.",
+   "citation": "Missouri Department of Health and Senior Services, Adult use FAQs",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "mo-dhss-adult-faq"
+   ]
+  },
+  {
+   "state": "MS",
+   "question": "adult-use",
+   "status": "medical-only",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Mississippi. Access runs through the state medical program.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "MS",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "The Mississippi Medical Cannabis Program accepts applications from patients, caregivers, medical practitioners, facilities and services.",
+   "citation": "Mississippi Medical Cannabis Program",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ms-mmcp"
+   ]
+  },
+  {
+   "state": "MT",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "Ballotpedia’s list (current as of January 2026) and DISA’s map (November 2, 2026) both list Montana among states with legal adult use. The official state page has not been reviewed for this answer yet.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "MT",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "DISA’s national map lists medical use as legal in Montana.",
+   "citation": "DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "NC",
+   "question": "adult-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes North Carolina.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "NC",
+   "question": "medical",
+   "status": "not-permitted",
+   "short": "No state program",
+   "detail": "DISA’s national map lists no legal medical use in North Carolina.",
+   "citation": "DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "ND",
+   "question": "adult-use",
+   "status": "medical-only",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes North Dakota. Access runs through the state medical program.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "ND",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "DISA’s national map lists medical use as legal in North Dakota. The state program page could not be retrieved on November 15, 2026.",
+   "citation": "DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "NE",
+   "question": "adult-use",
+   "status": "medical-only",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Nebraska. Access runs through the state medical program.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "NE",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes, approved by voters in 2024",
+   "detail": "Ballotpedia reports that Nebraska legalized medical marijuana by a 2024 initiative, and DISA lists medical use as legal. Patient access in practice is not yet reviewed.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "NH",
+   "question": "adult-use",
+   "status": "medical-only",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes New Hampshire. Access runs through the state medical program.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "NH",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "The Therapeutic Cannabis Program issues registry ID cards that let cardholders buy from Alternative Treatment Centers.",
+   "citation": "New Hampshire Department of Health and Human Services, Therapeutic Cannabis Program",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "nh-dhhs-tcp"
+   ]
+  },
+  {
+   "state": "NJ",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "Adults 21 and older may have up to 6 ounces of cannabis.",
+   "citation": "New Jersey Cannabis Regulatory Commission, Recreational cannabis in New Jersey",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "nj-crc-adult"
+   ]
+  },
+  {
+   "state": "NJ",
+   "question": "buying",
+   "status": "allowed",
+   "short": "Licensed dispensaries",
+   "detail": "Buy at the New Jersey licensed dispensaries listed in the state’s dispensary finder.",
+   "citation": "New Jersey Cannabis Regulatory Commission, Recreational cannabis in New Jersey",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "nj-crc-adult"
+   ]
+  },
+  {
+   "state": "NJ",
+   "question": "driving",
+   "status": "not-permitted",
+   "short": "No driving while impaired",
+   "detail": "The state’s impaired-driving laws apply to driving under the influence of cannabis.",
+   "citation": "New Jersey Cannabis Regulatory Commission, Recreational cannabis in New Jersey",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "nj-crc-adult"
+   ]
+  },
+  {
+   "state": "NJ",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "New Jersey runs a Medicinal Cannabis Program for patients.",
+   "citation": "New Jersey Cannabis Regulatory Commission",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "nj-crc-home"
+   ]
+  },
+  {
+   "state": "NJ",
+   "question": "possession",
+   "status": "allowed",
+   "short": "6 ounces",
+   "detail": "Adults 21 and older may have up to 6 ounces.",
+   "citation": "New Jersey Cannabis Regulatory Commission, Recreational cannabis in New Jersey",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "nj-crc-adult"
+   ]
+  },
+  {
+   "state": "NM",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "Adults 21 and older may cultivate, buy, possess and consume cannabis.",
+   "citation": "New Mexico Regulation and Licensing Department, Cannabis in New Mexico",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "nm-rld-cannabis"
+   ]
+  },
+  {
+   "state": "NM",
+   "question": "buying",
+   "status": "allowed",
+   "short": "Licensed retailers",
+   "detail": "The first licensed adult-use sales began on April 1, 2022.",
+   "citation": "New Mexico Regulation and Licensing Department, Cannabis in New Mexico",
+   "effective_on": "2022-04-01",
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "nm-rld-cannabis"
+   ]
+  },
+  {
+   "state": "NM",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "The Department of Health continues to oversee the medical cannabis patient program.",
+   "citation": "New Mexico Regulation and Licensing Department, Cannabis in New Mexico",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "nm-rld-cannabis"
+   ]
+  },
+  {
+   "state": "NV",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "Adults 21 and older can legally possess up to 2.5 ounces of cannabis and up to 1/4 ounce of concentrate.",
+   "citation": "Nevada Cannabis Compliance Board, Laws and regulations",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "nv-ccb-laws"
+   ]
+  },
+  {
+   "state": "NV",
+   "question": "driving",
+   "status": "not-permitted",
+   "short": "No driving under the influence",
+   "detail": "It is illegal to drive under the influence of cannabis.",
+   "citation": "Nevada Cannabis Compliance Board, Laws and regulations",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "nv-ccb-laws"
+   ]
+  },
+  {
+   "state": "NV",
+   "question": "home-grow",
+   "status": "limited",
+   "short": "Only if no store within 25 miles",
+   "detail": "Adults 21 and older may grow up to six plants each and 12 per household, but only if no state-licensed retail cannabis store is within 25 miles of the home.",
+   "citation": "Nevada Cannabis Compliance Board, Laws and regulations",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "nv-ccb-laws"
+   ]
+  },
+  {
+   "state": "NV",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "The Cannabis Compliance Board oversees medical cannabis, including patient ID cards.",
+   "citation": "Nevada Cannabis Compliance Board",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "nv-ccb-home"
+   ]
+  },
+  {
+   "state": "NV",
+   "question": "possession",
+   "status": "allowed",
+   "short": "2.5 ounces; 1/4 ounce concentrate",
+   "detail": "Adults 21 and older can legally possess up to 2.5 ounces of cannabis and up to 1/4 ounce of concentrated cannabis.",
+   "citation": "Nevada Cannabis Compliance Board, Laws and regulations",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "nv-ccb-laws"
+   ]
+  },
+  {
+   "state": "NV",
+   "question": "public-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Cannabis cannot be used in any public place, or in a moving vehicle even as a passenger.",
+   "citation": "Nevada Cannabis Compliance Board, Laws and regulations",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "nv-ccb-laws"
+   ]
+  },
+  {
+   "state": "NY",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "Adults 21 and older may possess, buy and transport up to 3 ounces of cannabis and 24 grams of concentrate. Up to 5 pounds may be kept at home if secured from anyone under 21.",
+   "citation": "N.Y. Penal Law §§ 222.05 and 222.15; Office of Cannabis Management",
+   "effective_on": "2021-03-31",
+   "reviewed_on": "2026-11-01",
+   "source_ids": [
+    "ny-pen-222-05",
+    "ny-pen-222-15",
+    "ny-ocm-adult-use"
+   ]
+  },
+  {
+   "state": "NY",
+   "question": "buying",
+   "status": "allowed",
+   "short": "Yes, up to 3 ounces",
+   "detail": "Adults 21 and older may buy up to 3 ounces of cannabis and 24 grams of concentrate.",
+   "citation": "N.Y. Penal Law § 222.05; Office of Cannabis Management",
+   "effective_on": "2021-03-31",
+   "reviewed_on": "2026-11-01",
+   "source_ids": [
+    "ny-pen-222-05",
+    "ny-ocm-adult-use"
+   ]
+  },
+  {
+   "state": "NY",
+   "question": "driving",
+   "status": "not-permitted",
+   "short": "Impaired driving is a crime",
+   "detail": "Driving impaired by a drug is treated like alcohol-impaired driving. Cannabis in a vehicle must be in a closed container, and smoking cannabis in a vehicle is illegal for drivers and passengers.",
+   "citation": "N.Y. Vehicle and Traffic Law § 1192; Office of Cannabis Management",
+   "effective_on": null,
+   "reviewed_on": "2026-11-01",
+   "source_ids": [
+    "ny-vat-1192",
+    "ny-ocm-adult-use"
+   ]
+  },
+  {
+   "state": "NY",
+   "question": "home-grow",
+   "status": "allowed",
+   "short": "3 mature and 3 immature plants per adult",
+   "detail": "No more than six mature and six immature plants per residence, only at a private residence and secured from anyone under 21. Localities may regulate but not effectively ban home growing.",
+   "citation": "N.Y. Penal Law § 222.15; Office of Cannabis Management, Home cultivation FAQs",
+   "effective_on": "2024-06-26",
+   "reviewed_on": "2026-11-01",
+   "source_ids": [
+    "ny-pen-222-15",
+    "ny-ocm-home-cultivation"
+   ]
+  },
+  {
+   "state": "NY",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "A certifying provider may certify a patient for any condition they judge suitable. Patients or caregivers may buy up to a 60-day supply. A 2025 law (S3294A) lets registered patients and caregivers 18 and older grow at home and lets patients certified in other states buy in New York.",
+   "citation": "Office of Cannabis Management, Patients; Senate Bill S3294A (2025)",
+   "effective_on": "2021-03-31",
+   "reviewed_on": "2026-11-01",
+   "source_ids": [
+    "ny-ocm-patients",
+    "ny-s3294a"
+   ]
+  },
+  {
+   "state": "NY",
+   "question": "possession",
+   "status": "allowed",
+   "short": "3 ounces and 24 g concentrate; 5 pounds at home",
+   "detail": "Up to 5 pounds may be kept at home if secured from anyone under 21.",
+   "citation": "N.Y. Penal Law §§ 222.05 and 222.15",
+   "effective_on": "2021-03-31",
+   "reviewed_on": "2026-11-01",
+   "source_ids": [
+    "ny-pen-222-05",
+    "ny-pen-222-15"
+   ]
+  },
+  {
+   "state": "NY",
+   "question": "public-use",
+   "status": "limited",
+   "short": "Where tobacco smoking is allowed, with exceptions",
+   "detail": "Not in a motor vehicle, where smoking or vaping is banned, on school grounds or buses, or on federal property. Breaking these limits carries a civil penalty of up to $25 or up to 20 hours of community service.",
+   "citation": "N.Y. Penal Law § 222.10; Office of Cannabis Management",
+   "effective_on": "2021-03-31",
+   "reviewed_on": "2026-11-01",
+   "source_ids": [
+    "ny-pen-222-10",
+    "ny-ocm-adult-use"
+   ]
+  },
+  {
+   "state": "NY",
+   "question": "sharing",
+   "status": "allowed",
+   "short": "Same amounts, without payment",
+   "detail": "Adults may give up to 3 ounces and 24 grams of concentrate to another adult 21 or older without compensation. “Gifting” tied to a sale is not lawful sharing.",
+   "citation": "N.Y. Penal Law § 222.05",
+   "effective_on": "2021-03-31",
+   "reviewed_on": "2026-11-01",
+   "source_ids": [
+    "ny-pen-222-05"
+   ]
+  },
+  {
+   "state": "OH",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "Adults 21 and older may use and possess marijuana bought from a licensed Ohio dispensary, up to 2.5 ounces of plant material and 15 grams of extract in total, counting homegrown marijuana.",
+   "citation": "Ohio Revised Code 3796.221",
+   "effective_on": "2026-03-20",
+   "reviewed_on": "2026-11-05",
+   "source_ids": [
+    "oh-orc-3796-221"
+   ]
+  },
+  {
+   "state": "OH",
+   "question": "buying",
+   "status": "allowed",
+   "short": "Licensed Ohio dispensaries",
+   "detail": "Adult-use marijuana must be bought from a licensed Ohio dispensary.",
+   "citation": "Ohio Revised Code 3796.221",
+   "effective_on": "2026-03-20",
+   "reviewed_on": "2026-11-05",
+   "source_ids": [
+    "oh-orc-3796-221"
+   ]
+  },
+  {
+   "state": "OH",
+   "question": "driving",
+   "status": "not-permitted",
+   "short": "No driving under the influence",
+   "detail": "Neither the adult-use nor the medical law allows driving under the influence. Driving with marijuana or its metabolite at or above set blood or urine concentrations is an offense even without shown impairment, and medical registration is not a defense.",
+   "citation": "Ohio Revised Code 3796.221 and 4511.19",
+   "effective_on": "2026-03-20",
+   "reviewed_on": "2026-11-05",
+   "source_ids": [
+    "oh-orc-3796-221",
+    "oh-orc-4511-19"
+   ]
+  },
+  {
+   "state": "OH",
+   "question": "home-grow",
+   "status": "allowed",
+   "short": "6 plants per adult, 12 per home",
+   "detail": "Subject to secured-area, primary-residence and other statutory conditions.",
+   "citation": "Ohio Revised Code 3796.04",
+   "effective_on": "2026-03-20",
+   "reviewed_on": "2026-10-09",
+   "source_ids": [
+    "oh-orc-3796-04-grow"
+   ]
+  },
+  {
+   "state": "OH",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "A patient registered with the Division of Cannabis Control, with a certified physician’s recommendation for a qualifying condition, may possess up to a 90-day supply bought from a licensed dispensary. Caregivers register separately.",
+   "citation": "Ohio Revised Code 3796.22 and 3796.08",
+   "effective_on": "2026-03-20",
+   "reviewed_on": "2026-11-05",
+   "source_ids": [
+    "oh-orc-3796-22",
+    "oh-orc-3796-08"
+   ]
+  },
+  {
+   "state": "OH",
+   "question": "possession",
+   "status": "allowed",
+   "short": "2.5 ounces plant material, 15 g extract",
+   "detail": "The limit counts dispensary and homegrown marijuana together.",
+   "citation": "Ohio Revised Code 3796.221",
+   "effective_on": "2026-03-20",
+   "reviewed_on": "2026-11-05",
+   "source_ids": [
+    "oh-orc-3796-221"
+   ]
+  },
+  {
+   "state": "OH",
+   "question": "public-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Using adult-use or homegrown marijuana in a public place is prohibited. Use is legal at a private residence, subject to the property owner’s rules.",
+   "citation": "Ohio Revised Code 3796.04",
+   "effective_on": "2026-03-20",
+   "reviewed_on": "2026-11-05",
+   "source_ids": [
+    "oh-orc-3796-04"
+   ]
+  },
+  {
+   "state": "OH",
+   "question": "sharing",
+   "status": "limited",
+   "short": "Same amounts, free, on private property only",
+   "detail": "An adult may give the same amounts to another adult in a single day, without payment, only on private residential or agricultural property. Other transfers require a license.",
+   "citation": "Ohio Revised Code 3796.221",
+   "effective_on": "2026-03-20",
+   "reviewed_on": "2026-11-05",
+   "source_ids": [
+    "oh-orc-3796-221"
+   ]
+  },
+  {
+   "state": "OK",
+   "question": "adult-use",
+   "status": "medical-only",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Oklahoma. Access runs through the state medical program.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "OK",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "The Oklahoma Medical Marijuana Authority regulates the state’s medical marijuana program.",
+   "citation": "Oklahoma Medical Marijuana Authority",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ok-omma"
+   ]
+  },
+  {
+   "state": "OR",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "Adults 21 and older can possess and use cannabis within set limits.",
+   "citation": "Oregon Health Authority, Cannabis laws in Oregon",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "or-oha-laws"
+   ]
+  },
+  {
+   "state": "OR",
+   "question": "driving",
+   "status": "not-permitted",
+   "short": "No driving under the influence",
+   "detail": "Driving while impaired, including by cannabis, remains illegal.",
+   "citation": "Oregon Health Authority, Cannabis laws in Oregon",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "or-oha-laws"
+   ]
+  },
+  {
+   "state": "OR",
+   "question": "home-grow",
+   "status": "allowed",
+   "short": "4 plants",
+   "detail": "The personal possession limits include four marijuana plants.",
+   "citation": "Oregon Health Authority, Cannabis laws in Oregon",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "or-oha-laws"
+   ]
+  },
+  {
+   "state": "OR",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "The Oregon Medical Marijuana Act allows medical use for qualifying medical conditions.",
+   "citation": "Oregon Health Authority, Cannabis laws in Oregon",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "or-oha-laws"
+   ]
+  },
+  {
+   "state": "OR",
+   "question": "possession",
+   "status": "allowed",
+   "short": "2 ounces in public, 8 at home",
+   "detail": "Also 16 ounces of solid products or concentrates, 72 ounces of liquid products and 1 ounce of extracts bought from a marijuana retailer.",
+   "citation": "Oregon Health Authority, Cannabis laws in Oregon",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "or-oha-laws"
+   ]
+  },
+  {
+   "state": "OR",
+   "question": "public-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Public use remains illegal.",
+   "citation": "Oregon Health Authority, Cannabis laws in Oregon",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "or-oha-laws"
+   ]
+  },
+  {
+   "state": "PA",
+   "question": "adult-use",
+   "status": "medical-only",
+   "short": "No",
+   "detail": "Pennsylvania has no adult-use law. Without a medical card, possessing up to 30 grams of marijuana or 8 grams of hashish is a misdemeanor punishable by up to 30 days in jail, a fine of up to $500, or both.",
+   "citation": "Controlled Substance, Drug, Device and Cosmetic Act (Act 64 of 1972)",
+   "effective_on": "1972-04-14",
+   "reviewed_on": "2026-10-28",
+   "source_ids": [
+    "pa-cs-act"
+   ]
+  },
+  {
+   "state": "PA",
+   "question": "driving",
+   "status": "not-permitted",
+   "short": "Any amount in the blood is DUI",
+   "detail": "Driving with any amount of a Schedule I controlled substance or its metabolite in the blood is DUI, impaired or not. Marijuana is Schedule I under state law, and there is no exception for medical patients.",
+   "citation": "75 Pa.C.S. § 3802; Act 64 of 1972",
+   "effective_on": "2006-05-11",
+   "reviewed_on": "2026-10-28",
+   "source_ids": [
+    "pa-dui-3802",
+    "pa-cs-act"
+   ]
+  },
+  {
+   "state": "PA",
+   "question": "home-grow",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Only grower/processors permitted by the Department of Health may grow medical marijuana. Pennsylvania has no adult-use home-grow law.",
+   "citation": "Medical Marijuana Act (Act 16 of 2016)",
+   "effective_on": "2016-05-17",
+   "reviewed_on": "2026-10-28",
+   "source_ids": [
+    "pa-mma"
+   ]
+  },
+  {
+   "state": "PA",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "Medical use is lawful only for a registered patient or caregiver with a Department of Health ID card and practitioner certification. A dispensary may sell no more than a 90-day supply, and smoking medical marijuana is unlawful.",
+   "citation": "Medical Marijuana Act (Act 16 of 2016)",
+   "effective_on": "2016-05-17",
+   "reviewed_on": "2026-10-28",
+   "source_ids": [
+    "pa-mma"
+   ]
+  },
+  {
+   "state": "RI",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "Adult use has been legal since December 1, 2022 for people at least 21 years old.",
+   "citation": "Rhode Island Cannabis Control Commission, Frequently asked questions",
+   "effective_on": "2022-12-01",
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ri-ccc-faq"
+   ]
+  },
+  {
+   "state": "RI",
+   "question": "buying",
+   "status": "allowed",
+   "short": "Licensed compassion centers",
+   "detail": "Licensed compassion centers are the retail stores currently selling adult-use cannabis.",
+   "citation": "Rhode Island Cannabis Control Commission, Frequently asked questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ri-ccc-faq"
+   ]
+  },
+  {
+   "state": "RI",
+   "question": "home-grow",
+   "status": "allowed",
+   "short": "3 mature and 3 immature plants",
+   "detail": "Adults 21 and older may grow up to three mature and three immature plants.",
+   "citation": "Rhode Island Department of Health, Cannabis information for adults",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ri-doh-adults"
+   ]
+  },
+  {
+   "state": "RI",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "The Cannabis Control Commission regulates both adult-use and medical marijuana.",
+   "citation": "Rhode Island Cannabis Control Commission, Frequently asked questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ri-ccc-faq"
+   ]
+  },
+  {
+   "state": "RI",
+   "question": "possession",
+   "status": "allowed",
+   "short": "1 ounce carried, 10 at home",
+   "detail": "Adults 21 and older may carry up to 1 ounce of flower, or the equivalent in concentrate, and keep up to 10 ounces at home.",
+   "citation": "Rhode Island Department of Health, Cannabis information for adults",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ri-doh-adults"
+   ]
+  },
+  {
+   "state": "SC",
+   "question": "adult-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes South Carolina.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "SC",
+   "question": "medical",
+   "status": "not-permitted",
+   "short": "No state program",
+   "detail": "DISA’s national map lists no legal medical use in South Carolina.",
+   "citation": "DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "SD",
+   "question": "adult-use",
+   "status": "medical-only",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes South Dakota. Access runs through the state medical program.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "SD",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "Patients get a medical cannabis card, and the Department of Health certifies dispensaries.",
+   "citation": "South Dakota Department of Health, Medical cannabis",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "sd-doh-mc"
+   ]
+  },
+  {
+   "state": "TN",
+   "question": "adult-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Tennessee.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "TN",
+   "question": "medical",
+   "status": "limited",
+   "short": "CBD oil only",
+   "detail": "DISA’s national map lists Tennessee as CBD oil only, marked as legislation passed with a future effective date.",
+   "citation": "DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "TX",
+   "question": "adult-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Texas.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "TX",
+   "question": "medical",
+   "status": "limited",
+   "short": "Low-THC program only",
+   "detail": "The Department of Public Safety runs the Compassionate Use Program created by the 2015 Texas Compassionate Use Act. DISA’s national map lists Texas as CBD oil only.",
+   "citation": "Texas Department of Public Safety; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "tx-dps-cup",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "UT",
+   "question": "adult-use",
+   "status": "medical-only",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Utah. Access runs through the state medical program.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "UT",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "Utah’s Center for Medical Cannabis works to give Utahns safe access to medical cannabis, and its site lists pharmacies that serve patients.",
+   "citation": "Utah Center for Medical Cannabis",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ut-cmc"
+   ]
+  },
+  {
+   "state": "VA",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "Adults 21 and older may possess up to 2 ounces outside their home and generally may use cannabis in private residences.",
+   "citation": "Virginia Cannabis Control Authority, Frequently asked questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "va-cca-faq"
+   ]
+  },
+  {
+   "state": "VA",
+   "question": "buying",
+   "status": "not-permitted",
+   "short": "Not until July 1, 2027",
+   "detail": "Non-medical sales are currently illegal. Retail sales begin July 1, 2027.",
+   "citation": "Virginia Cannabis Control Authority",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "va-cca-faq",
+    "va-cca-home"
+   ]
+  },
+  {
+   "state": "VA",
+   "question": "home-grow",
+   "status": "allowed",
+   "short": "Up to 4 plants per household",
+   "detail": "Four plants per household, not per person, under specified requirements.",
+   "citation": "Virginia Cannabis Control Authority, Frequently asked questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "va-cca-faq"
+   ]
+  },
+  {
+   "state": "VA",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "Virginia runs a medical cannabis program.",
+   "citation": "Virginia Cannabis Control Authority",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "va-cca-home"
+   ]
+  },
+  {
+   "state": "VA",
+   "question": "possession",
+   "status": "allowed",
+   "short": "2 ounces outside the home",
+   "detail": "Adults 21 and older may possess up to 2 ounces outside their private residence.",
+   "citation": "Virginia Cannabis Control Authority, Frequently asked questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "va-cca-faq"
+   ]
+  },
+  {
+   "state": "VA",
+   "question": "public-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Consuming cannabis in any public place is illegal, as is using it while driving or riding as a passenger.",
+   "citation": "Virginia Cannabis Control Authority, Frequently asked questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "va-cca-faq"
+   ]
+  },
+  {
+   "state": "VA",
+   "question": "sharing",
+   "status": "allowed",
+   "short": "Up to 2 ounces, free",
+   "detail": "Adults 21 and older may transfer 2 ounces or less to another adult without payment. Gifts tied to a sale or another exchange do not count.",
+   "citation": "Virginia Cannabis Control Authority, Frequently asked questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "va-cca-faq"
+   ]
+  },
+  {
+   "state": "VT",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "Adults 21 and older with a valid government-issued photo ID may buy cannabis.",
+   "citation": "Vermont Cannabis Control Board, Frequently asked questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "vt-ccb-faq"
+   ]
+  },
+  {
+   "state": "VT",
+   "question": "buying",
+   "status": "allowed",
+   "short": "Licensed retailers, 1 ounce per sale",
+   "detail": "Cannabis may only be bought legally from a licensed retailer or an integrated licensee’s retail arm. A retailer may sell 1 ounce, or the equivalent in products, per transaction.",
+   "citation": "Vermont Cannabis Control Board, Frequently asked questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "vt-ccb-faq"
+   ]
+  },
+  {
+   "state": "VT",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "Vermont has a medical cannabis program.",
+   "citation": "Vermont Cannabis Control Board",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "vt-ccb-home"
+   ]
+  },
+  {
+   "state": "WA",
+   "question": "adult-use",
+   "status": "allowed",
+   "short": "Yes, 21 and older",
+   "detail": "Only adults 21 and older can buy and possess cannabis.",
+   "citation": "Washington State Liquor and Cannabis Board, Know the law",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "wa-lcb-know"
+   ]
+  },
+  {
+   "state": "WA",
+   "question": "buying",
+   "status": "allowed",
+   "short": "State-licensed retail stores",
+   "detail": "Cannabis can only be sold and bought at state-licensed retail stores, with valid photo ID. Adults may buy up to 1 ounce of usable cannabis, 16 ounces of solid edibles, 72 ounces in liquid form and 7 grams of concentrates.",
+   "citation": "Washington State Liquor and Cannabis Board, Know the law",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "wa-lcb-know"
+   ]
+  },
+  {
+   "state": "WA",
+   "question": "driving",
+   "status": "not-permitted",
+   "short": "Illegal above 5 ng/ml THC",
+   "detail": "Driving with more than 5 nanograms of active THC per milliliter of blood is illegal.",
+   "citation": "Washington State Liquor and Cannabis Board, Know the law",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "wa-lcb-know"
+   ]
+  },
+  {
+   "state": "WA",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "DISA’s national map lists medical use as legal in Washington. The state medical program page has not been reviewed for this answer yet.",
+   "citation": "DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "WA",
+   "question": "public-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "It is illegal to consume cannabis in view of the public.",
+   "citation": "Washington State Liquor and Cannabis Board, Know the law",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "wa-lcb-know"
+   ]
+  },
+  {
+   "state": "WI",
+   "question": "adult-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Wisconsin.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "WI",
+   "question": "medical",
+   "status": "limited",
+   "short": "CBD oil only",
+   "detail": "DISA’s national map lists Wisconsin as CBD oil only.",
+   "citation": "DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "WV",
+   "question": "adult-use",
+   "status": "medical-only",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes West Virginia. Access runs through the state medical program.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "WV",
+   "question": "medical",
+   "status": "allowed",
+   "short": "Yes",
+   "detail": "Patients apply to the Office of Medical Cannabis for a card, and its site lists dispensaries.",
+   "citation": "West Virginia Office of Medical Cannabis",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "wv-omc"
+   ]
+  },
+  {
+   "state": "WY",
+   "question": "adult-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Wyoming.",
+   "citation": "Ballotpedia; DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-ballotpedia-laws",
+    "natl-disa-map"
+   ]
+  },
+  {
+   "state": "WY",
+   "question": "medical",
+   "status": "not-permitted",
+   "short": "No state program",
+   "detail": "DISA’s national map lists no legal medical use in Wyoming.",
+   "citation": "DISA national map",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-disa-map"
+   ]
+  }
+ ]
+}

@@ -13,10 +13,13 @@ from validate_comparison import validate
 from policy_portal import render as render_policy_portal
 from state_profiles import render_coverage
 from render_market_trends import render_market_trends
+from validate_permissions import validate as validate_permissions
+import permissions_page
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'compare.html'
 DATA = ROOT / 'data/state-comparison.json'
+PERMISSIONS = ROOT / 'data/state-permissions.json'
 
 KIND_LABEL = {'statute': 'Law', 'regulator': 'Regulator', 'government': 'Government', 'news': 'News report', 'research': 'Research'}
 STATUS_LABEL = {
@@ -25,8 +28,8 @@ STATUS_LABEL = {
     'present': ('Ohio shares this condition', 'risk'),
     'unknown': ('Not yet known for Ohio', 'part'),
 }
-DESCRIPTION = ("Compare cannabis policy across states, learn from other markets, "
-               "and propose changes to your own state lawmakers. Facts are sourced and dated.")
+DESCRIPTION = ("What adults and patients can do with cannabis in all 50 states and DC, plus federal rules "
+               "and national help lines. Compare states and propose changes to your lawmakers. Every answer is sourced and dated.")
 
 CSS = '''
 *{box-sizing:border-box}body{margin:0;background:#f5f5f3;color:#252525;font:17px/1.6 system-ui}main{max-width:1080px;margin:auto;padding:28px}
@@ -112,16 +115,20 @@ def main():
         links = ''.join(f'<a href="#source-{order[i]}" aria-label="Source {order[i]}">[{order[i]}]</a>' for i in ids)
         return f'<span class="cites">{links}</span>'
 
+    permissions = validate_permissions(json.loads(PERMISSIONS.read_text(encoding='utf-8')))
     out = ['<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">',
-           '<title>Compare cannabis policy and propose changes in your state</title>',
+           '<title>Cannabis laws in all 50 states and DC: what you can do, state by state</title>',
            f'<meta name="description" content="{esc(DESCRIPTION)}">',
-           '<style>' + CSS + '</style></head><body><main>__VHG_BRAND__',
-           f'<p class="review">State comparison · facts checked {long_date(data["as_of"])}</p>',
-           '<h1>Compare states. Shape your cannabis policy.</h1>',
-           '<p class="lead">Compare legal approaches, examine what happened in other markets, and write to your own lawmakers about the changes you want.</p>',
-           '<p class="muted">Every fact links to its source and carries the date it was checked. Assessments are the directory’s analysis, labeled as such, with a stated likelihood, confidence level and reasoning. They are reviewed on a schedule and may change as evidence changes.</p>',
-           '<p class="jump"><a href="#policy-portal">Propose a change</a> · <a href="#laws">Laws side by side</a> · <a href="#lessons">Lessons from other markets</a> · <a href="#sources">Sources</a></p>']
+           '<style>' + CSS + permissions_page.CSS + '</style></head><body><main>__VHG_BRAND__',
+           f'<p class="review">All 50 states and DC · answers checked through {long_date(permissions["as_of"])}</p>',
+           '<h1>What’s legal, nationally and in each state</h1>',
+           '<p class="lead">Start with the rules that apply everywhere, then pick a state to see what adults and patients may do there. Compare it with another state, then write to your own lawmakers about the changes you want.</p>',
+           '<p class="muted">Every answer links to its source and carries the date it was checked. National compilations that cover every state are labeled as such; official state sources are used wherever they have been reviewed. Assessments further down are the directory’s analysis, labeled as such, with a stated likelihood, confidence level and reasoning.</p>',
+           '<p class="jump"><a href="#national">Across every state</a> · <a href="#permissions">One state in detail</a> · <a href="#all-states">All states at a glance</a> · <a href="#policy-portal">Propose a change</a> · <a href="#laws">Policy laws side by side</a> · <a href="#lessons">Lessons from other markets</a> · <a href="#sources">Sources</a></p>']
 
+    out.append(permissions_page.render_national(permissions))
+    out.append(permissions_page.render_permissions(permissions))
+    out.append(permissions_page.render_glance(permissions))
     out.append(render_policy_portal(data))
     out.append('<section id="laws"><h2>Laws side by side</h2><p>Choose which reviewed states appear in the comparison. Unreviewed topics are marked explicitly.</p><fieldset class="compare-state-controls"><legend>States to display</legend>' + ''.join(f'<label class="ask" style="display:inline-flex;margin-right:18px"><input type="checkbox" class="compare-state-toggle" value="{esc(code)}" checked> {esc(name)}</label>' for code,name in states.items()) + '</fieldset>')
     shown = [home] + [s for s in states if s != home]
@@ -202,15 +209,17 @@ def main():
     out.append('<section id="sources"><h2>Sources</h2><ol class="sources">')
     for s in data['sources']:
         out.append(f'<li id="source-{order[s["id"]]}"><a href="{esc(s["url"])}" target="_blank" rel="noopener">{esc(s["title"])}</a><span class="meta">{esc(s["publisher"])} · {KIND_LABEL[s["kind"]]} · retrieved {long_date(s["retrieved_on"])}</span></li>')
-    out.append('</ol><p class="muted">Data: <a href="data/state-comparison.json">state-comparison.json</a> (CC BY 4.0). Spot an error or a newer source? Use “Suggest a correction” below.</p></section>')
+    out.append('</ol><p class="muted">Data: <a href="data/state-comparison.json">state-comparison.json</a> (CC BY 4.0). Spot an error or a newer source? Use “Suggest a correction” below.</p>')
+    out.append(permissions_page.render_sources(permissions) + '</section>')
 
     out.append('<script type="application/json" id="letter-data">' + json.dumps(letters, ensure_ascii=False).replace('</', '<\\/') + '</script>')
-    out.append(SCRIPT + '</main></body></html>\n')
+    out.append(SCRIPT + permissions_page.render_script(permissions) + '</main></body></html>\n')
     page = '\n'.join(out)
     built = brand_page(page, OUT.name)
     built = re.sub(r'<meta property="og:description" content="[^"]*">', '<meta property="og:description" content="' + esc(DESCRIPTION) + '">', built)
     OUT.write_text(built, encoding='utf-8')
-    print(f'Built compare.html: {len(data["topics"])} law topics, {len(data["lessons"])} market lessons')
+    print(f'Built compare.html: {len(permissions["answers"])} state answers for {len(permissions["jurisdictions"])} jurisdictions, '
+          f'{len(data["topics"])} law topics, {len(data["lessons"])} market lessons')
 
 
 if __name__ == '__main__':
