@@ -18,6 +18,7 @@ STATUSES = {'allowed', 'medical-only', 'limited', 'not-permitted', 'varies-local
 SOURCE_KINDS = {'statute', 'regulator', 'government', 'organization', 'compilation', 'news'}
 OFFICIAL_KINDS = {'statute', 'regulator', 'government'}
 SCOPES = {'state', 'national'}
+AUDIENCES = {'consumer', 'business'}
 JURISDICTION_COUNT = 51  # 50 states and the District of Columbia
 
 
@@ -116,6 +117,7 @@ def validate(data):
         assert item['url'].startswith('https://'), f'{where}: URL must be https'
         assert _date(item['reviewed_on'], where) <= as_of, f'{where}: reviewed after as_of'
         cite(item['source_ids'], where, OFFICIAL_KINDS | {'organization'})
+        assert item.get('audience', 'consumer') in AUDIENCES, f'{where}: audience must be consumer or business'
         assert item['url'] in {sources[s]['url'] for s in item['source_ids']}, f'{where}: link to the reviewed source'
 
     unused = set(sources) - used

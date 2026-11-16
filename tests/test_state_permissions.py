@@ -57,6 +57,15 @@ class StatePermissionsTest(unittest.TestCase):
         with self.assertRaises(AssertionError):
             validate(broken(lambda d: d['official_links'].update(ID={'source_id': 'natl-disa-map'})))
 
+    def test_national_audience(self):
+        audiences = {i['id']: i.get('audience', 'consumer') for i in DATA['national']}
+        self.assertIn('business', audiences.values())
+        with self.assertRaises(AssertionError):
+            validate(broken(lambda d: d['national'][0].update(audience='investors')))
+        html = permissions_page.render_national(DATA)
+        self.assertLess(html.index('data-audience="consumer"'), html.index('id="national-business"'))
+        self.assertLess(html.index('id="national-business"'), html.index('data-audience="business"'))
+
     def test_evidence_levels(self):
         sources = {s['id']: s for s in DATA['sources']}
         levels = {(a['state'], a['question']): evidence_level(a, sources) for a in DATA['answers']}
