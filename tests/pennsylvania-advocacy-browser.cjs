@@ -7,7 +7,7 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
   await page.goto(server.base+'advocacy.html');
   await page.locator('a[href="pennsylvania-advocacy.html"]').click();
   assert.equal(new URL(page.url()).pathname,'/pennsylvania-advocacy.html');
-  assert(await page.locator('nav[aria-label="Primary"]').isVisible());
+  await page.locator('nav[aria-label="Primary"]').waitFor({state:'visible'});
   assert(await page.getByRole('heading',{name:'HB 20: bipartisan private-market proposal'}).isVisible());
   assert(await page.getByRole('heading',{name:'HB 1200: Pennsylvania Cannabis Stores model'}).isVisible());
   const requests=[];
