@@ -4,14 +4,18 @@ Tracking: #183. Owner direction, November 15 to 16, 2026: build the national res
 
 ## What is built
 
-`build_national.py` writes `national/`: a home page and one page for each of the 50 states and DC. The pages are generated and are never hand-edited.
+Owner direction, November 16, 2026: the site is a cannabis information and resource portal. `build_national.py` writes `national/` (generated, never hand-edited):
+
+- **Home** (`index.html`): a state picker, the law questions to compare, national help grouped by need, and every state.
+- **Compare the law** (`law-<question>.html`, one per shared question): every state and DC side by side with a status filter. Rows link to the state page for the full answer and its source.
+- **Help by need** (`help.html`): the national items from `data/state-permissions.json`, grouped by need.
+- **About** (`about.html`): how answers are checked, the evidence labels, ground rules, build progress and corrections.
+- **One page per state and DC.**
 
 Each state page has the same two parts.
 
 1. **The law.** The shared questions in `data/state-permissions.json`, each answer with its citation, review date and evidence level. An unanswered question reads "Not yet reviewed" and says that this does not mean prohibited.
 2. **Directory and local help.** The seven pathways of the [state directory contract](STATE_DIRECTORY_CONTRACT.md). A state with a pack shows the level it earns in `data/state-scorecard.json` under the [completion standard](STATE_COMPLETION_STANDARD.md), plus what the next level needs. A state without a pack shows "Not started" for all seven.
-
-The home page lists every jurisdiction, the national items that cover every state, and the scorecard for the states that have a guide.
 
 The pages add no claim of their own. `tests/test_national.py` checks that every answer shown comes from the data, that levels come only from the scorecard, and that the committed pages match the build.
 

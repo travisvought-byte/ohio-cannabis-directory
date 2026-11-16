@@ -25,7 +25,7 @@ class NationalPagesTest(unittest.TestCase):
                              f'national/{name} requires rebuild (python build_national.py)')
 
     def test_one_page_per_jurisdiction_linked_from_home(self):
-        self.assertEqual(len(PAGES), len(PERM['jurisdictions']) + 1)
+        self.assertEqual(len(PAGES), len(PERM['jurisdictions']) + 3 + len(PERM['questions']))
         for name in PERM['jurisdictions'].values():
             page = build_national.slug(name) + '.html'
             self.assertIn(page, PAGES)
@@ -41,6 +41,21 @@ class NationalPagesTest(unittest.TestCase):
             for answer in by_state[code].values():
                 self.assertIn(build_national.esc(answer['short']), text)
                 self.assertIn('checked ' + build_national.long_date(answer['reviewed_on']), text)
+
+    def test_portal_pages_cover_every_question_and_need(self):
+        home = PAGES['index.html']
+        for q in PERM['questions']:
+            name = build_national.law_page_name(q['id'])
+            self.assertIn(f'href="{name}"', home)
+            page = PAGES[name]
+            self.assertEqual(len(re.findall(r'<li data-state="', page)), len(PERM['jurisdictions']))
+            answered = sum(a['question'] == q['id'] for a in PERM['answers'])
+            self.assertEqual(page.count('data-status="not-reviewed"'), len(PERM['jurisdictions']) - answered)
+        for item in PERM['national']:
+            self.assertIn(f'data-national="{item["id"]}"', PAGES['help.html'])
+            self.assertIn(f'href="help.html#{build_national.slug(item["need"])}"', home)
+            self.assertIn(f'id="{build_national.slug(item["need"])}"', PAGES['help.html'])
+        self.assertIn('href="about.html"', home)
 
     def test_cited_sources_are_listed_on_the_page(self):
         for name, text in PAGES.items():

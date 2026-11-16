@@ -1,4 +1,5 @@
-"""Build the national section: one home page and one page per state and DC.
+"""Build the national portal: home, help by need, about, one comparison page per law
+question, and one page per state and DC.
 
 Ohio is the template. Every state page has the same two parts: the shared questions
 about the law (data/state-permissions.json) and the seven directory pathways measured
@@ -31,7 +32,7 @@ from validate_permissions import evidence_level
 ROOT = Path(__file__).resolve().parent
 OUT_DIR = ROOT / 'national'
 SITE_NAME = 'The Reefer'
-TAGLINE = 'Cannabis law, directories and help for every state'
+TAGLINE = 'Cannabis information and resources for every state'
 ORIGIN = os.environ.get('NATIONAL_ORIGIN', '').rstrip('/')
 REPO = 'https://github.com/travisvought-byte/ohio-cannabis-directory'
 LEVELS = {'starter': 'Starter', 'partial': 'Partial', 'broad': 'Broad'}
@@ -58,12 +59,15 @@ select{font:inherit;min-height:44px;padding:6px 9px;border:1px solid #888;border
 table{border-collapse:collapse;width:100%;background:#fff}th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}.scroll{overflow-x:auto}
 .sources{font-size:.9rem;padding-left:1.6em}.sources li{margin:.3em 0;overflow-wrap:anywhere}.cites a{font-size:.82rem;margin-left:2px}
 footer.site{border-top:1px solid var(--line);margin-top:32px;font-size:.9rem;color:var(--soft)}footer.site nav{display:flex;flex-wrap:wrap;gap:0 18px}
+.needs{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:10px;margin:12px 0}
+.need{display:block;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;text-decoration:none;color:var(--ink)}
+.need strong{display:block;color:var(--link);text-decoration:underline;text-underline-offset:3px}.need span{display:block;font-size:.9rem;color:var(--soft);margin-top:2px}
+.need:hover,.need:focus-visible{border-color:var(--link)}.jump{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0}.jump select{min-width:min(100%,280px)}
+.rows{list-style:none;padding:0;margin:12px 0}.rows li{background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:6px 0;display:grid;grid-template-columns:minmax(120px,190px) 1fr;gap:4px 14px;align-items:baseline}
+.rows li[hidden]{display:none}.rows .state{font-weight:700}.rows .meta{grid-column:2;font-size:.82rem;color:var(--soft);margin:0}.tally{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin:8px 0}
+@media(max-width:560px){.needs{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.need{padding:10px 11px}.rows li{grid-template-columns:1fr}.rows .meta{grid-column:1}}
 @media print{header.site nav,footer.site nav,select,label{display:none}}
 '''
-
-FILTER_JS = ('<script>(function(){var f=document.getElementById("state-filter");if(!f)return;'
-             'f.addEventListener("change",function(){document.querySelectorAll("#states li").forEach(function(li){'
-             'li.hidden=!!f.value&&li.getAttribute("data-adult")!==f.value&&li.getAttribute("data-guide")!==f.value})})})();</script>')
 
 
 def esc(value):
@@ -103,8 +107,8 @@ def shell(title, description, body, name, place):
         head.append('<meta name="robots" content="noindex,follow">')
     head.append(f'<style>{CSS}</style></head><body>')
     top = (f'<header class="site"><a class="name" href="index.html">{esc(SITE_NAME)}</a><span class="tag">{esc(TAGLINE)}</span>'
-           '<nav aria-label="Primary"><a href="index.html#states">All states</a><a href="index.html#national">Across every state</a>'
-           '<a href="index.html#progress">Build progress</a></nav></header>')
+           '<nav aria-label="Primary"><a href="index.html#states">States</a><a href="index.html#compare">Compare the law</a>'
+           '<a href="help.html">Help by need</a><a href="about.html">About</a></nav></header>')
     foot = ('<footer class="site"><nav aria-label="More">'
             f'<a href="{esc(correction_url(place))}">Suggest a correction</a>'
             f'<a href="{REPO}#readme">Methods &amp; sources</a>'
@@ -188,7 +192,7 @@ def pathway_section(code, name, pathways, card, pack):
     else:
         out.append(f'<p>The {esc(name)} directory has not been started. Ohio is the template: these are the seven parts every state guide is built toward. '
                    '“Not started” means no records have been reviewed yet, not that help does not exist. '
-                   '<a href="index.html#national">National resources that cover every state</a> are available now.</p>')
+                   '<a href="help.html">National resources that cover every state</a> are available now.</p>')
     for p in pathways:
         row = (card or {}).get('pathways', {}).get(p['id'])
         if row:
@@ -229,20 +233,96 @@ def state_page(perm, score, directory, code, answers, sources):
     return shell(f'{name} cannabis guide', description, ''.join(body), slug(name) + '.html', name)
 
 
-def national_section(perm, cites):
-    def item(i):
-        return (f'<article class="card" data-national="{esc(i["id"])}"><p class="muted" style="margin:0;font-weight:700;text-transform:uppercase;font-size:.78rem">{esc(i["need"])}</p>'
-                f'<h3><a href="{esc(i["url"])}" target="_blank" rel="noopener">{esc(i["title"])}</a></h3><p>{esc(i["text"])}</p>'
-                f'<p class="muted">Checked {long_date(i["reviewed_on"])} {cites.mark(i["source_ids"])}</p></article>')
-    consumer = [i for i in perm['national'] if i.get('audience', 'consumer') == 'consumer']
-    business = [i for i in perm['national'] if i.get('audience', 'consumer') == 'business']
-    out = ['<h2 id="national">Across every state</h2><p>Federal rules, national help lines and organizations that cover every state. '
-           'Each links to the agency or organization that runs it. A listing is not an endorsement; advocacy groups are named as such.</p>']
-    out += [item(i) for i in consumer]
-    if business:
-        out.append('<h3 id="national-business">For cannabis businesses</h3>')
-        out += [item(i) for i in business]
-    return ''.join(out)
+NEED_BLURB = {
+    'Federal law': 'Where federal scheduling stands',
+    'State laws': 'A national guide to each state’s laws and penalties',
+    'Travel': 'What the TSA says about flying',
+    'Patients traveling': 'Using a medical card away from home',
+    'Veterans': 'VA care and state cannabis programs',
+    'Legal help': 'Find free civil legal aid',
+    'Record clearing': 'National guides to sealing and expungement',
+    'Contact lawmakers': 'Find your state legislators by address',
+    'Health and safety': 'Poison Help and the national helpline',
+    'Business': 'The national industry association',
+}
+LAW_BLURB = {
+    'adult-use': 'Is adult use legal?',
+    'medical': 'Is there a medical program?',
+    'buying': 'Where adults can buy',
+    'possession': 'How much an adult can have',
+    'sharing': 'Sharing and gifting',
+    'home-grow': 'Growing at home',
+    'public-use': 'Using it in public',
+    'driving': 'Driving rules',
+    'employment': 'Work and off-the-job use',
+    'record-relief': 'Clearing a past record',
+}
+
+
+def law_page_name(question_id):
+    return f'law-{question_id}.html'
+
+
+def needs_in_order(perm):
+    seen = []
+    for item in perm['national']:
+        if item['need'] not in seen:
+            seen.append(item['need'])
+    return seen
+
+
+def status_label(perm, question, status):
+    own = question.get('statuses', {}).get(status)
+    return own['label'] if own else perm['statuses'][status]
+
+
+def help_page(perm, sources):
+    cites = Cites(sources)
+    body = ['<p class="crumbs"><a href="index.html">Home</a> › Help by need</p>', '<h1>Help by need</h1>',
+            '<p>Federal rules, national help lines and organizations that cover every state. Each links to the agency or organization that runs it. '
+            'A listing is not an endorsement; advocacy groups are named as such. For state-specific help, <a href="index.html#states">pick your state</a>.</p>']
+    for need in needs_in_order(perm):
+        body.append(f'<h2 id="{slug(need)}">{esc(need)}</h2>')
+        for i in (i for i in perm['national'] if i['need'] == need):
+            body.append(f'<article class="card" data-national="{esc(i["id"])}"><h3><a href="{esc(i["url"])}" target="_blank" rel="noopener">{esc(i["title"])}</a></h3>'
+                        f'<p>{esc(i["text"])}</p><p class="muted">Checked {long_date(i["reviewed_on"])} {cites.mark(i["source_ids"])}</p></article>')
+    body.append(cites.render())
+    return shell('Help by need', 'National cannabis help lines, federal rules and organizations that cover every state, grouped by what you need.',
+                 ''.join(body), 'help.html', 'the help page')
+
+
+def law_page(perm, question, answers, sources):
+    names = perm['jurisdictions']
+    total = len(names)
+    rows, tally = [], {}
+    for code in sorted(names, key=lambda c: names[c]):
+        a = answers.get(code, {}).get(question['id'])
+        page = slug(names[code]) + '.html'
+        if not a:
+            tally['not-reviewed'] = tally.get('not-reviewed', 0) + 1
+            rows.append(f'<li data-state="{esc(code)}" data-status="not-reviewed"><a class="state" href="{page}">{esc(names[code])}</a>'
+                        f'<span>{chip(perm, "not-reviewed")} <span class="muted">No reviewed source yet. This does not mean it is prohibited.</span></span></li>')
+            continue
+        tally[a['status']] = tally.get(a['status'], 0) + 1
+        level = evidence_level(a, sources)
+        rows.append(f'<li data-state="{esc(code)}" data-status="{esc(a["status"])}"><a class="state" href="{page}">{esc(names[code])}</a>'
+                    f'<span>{chip(perm, a["status"], question)} <span class="short">{esc(a["short"])}</span></span>'
+                    f'<p class="meta">Checked {long_date(a["reviewed_on"])} · {esc(LEVEL_TEXT[level])} · <a href="{page}#law">details and source</a></p></li>')
+    order = [st for st in list(question.get('statuses', {})) + list(perm['statuses']) if st in tally]
+    options = ''.join(f'<option value="{esc(st)}">{esc(status_label(perm, question, st))} ({tally[st]})</option>' for st in order)
+    chips = ' '.join(f'<span>{chip(perm, st, question)} {tally[st]}</span>' for st in order)
+    note = f'<p class="muted">{esc(question["note"])}</p>' if question.get('note') else ''
+    answered = total - tally.get('not-reviewed', 0)
+    body = ['<p class="crumbs"><a href="index.html">Home</a> › <a href="index.html#compare">Compare the law</a></p>',
+            f'<h1>{esc(question["question"])}</h1>',
+            f'<p>Every state and DC, side by side. {answered} of {total} are answered from a named source; open a state for the full answer, its citation and its source.</p>{note}',
+            f'<div class="tally">{chips}</div>',
+            f'<label for="status-filter">Show</label> <select id="status-filter"><option value="">All {total}</option>{options}</select>',
+            '<ul class="rows" id="rows">' + ''.join(rows) + '</ul>',
+            '<script>(function(){var f=document.getElementById("status-filter");f.addEventListener("change",function(){'
+            'document.querySelectorAll("#rows li").forEach(function(li){li.hidden=!!f.value&&li.getAttribute("data-status")!==f.value})})})();</script>']
+    description = f'{question["question"]} All 50 states and DC compared, each answer traced to a named source and the date it was checked.'
+    return shell(question['question'], description, ''.join(body), law_page_name(question['id']), 'the state comparison')
 
 
 def progress_section(perm, score, directory, answers):
@@ -264,19 +344,52 @@ def progress_section(perm, score, directory, answers):
     return ''.join(out)
 
 
+def about_page(perm, score, directory, answers):
+    total_answers = len(perm['answers'])
+    body = ['<p class="crumbs"><a href="index.html">Home</a> › About</p>', f'<h1>About {esc(SITE_NAME)}</h1>',
+            f'<p>{esc(SITE_NAME)} is a free cannabis information and resource portal for all 50 states and DC. It grew out of the Ohio Cannabis Directory at '
+            f'<a href="{OHIO_HOME}/">OhioWeed.org</a>, which is the template every state is built toward.</p>',
+            '<h2 id="method">How the information is checked</h2>',
+            f'<p>Every answer names its source and the date it was checked. The site holds {total_answers} reviewed answers from {len(perm["sources"])} sources, as of {long_date(perm["as_of"])}. Each answer carries one of three labels:</p><ul>'
+            + ''.join(f'<li><span class="level {esc(k)}">{esc(v)}</span></li>' for k, v in LEVEL_TEXT.items()) +
+            '</ul><p>A missing answer reads “Not yet reviewed”. It never means something is prohibited. Summaries are not legal advice; the linked source is the authority.</p>',
+            '<h2 id="rules">Ground rules</h2><ul><li>No paid placement, paid ranking or paid verification.</li>'
+            '<li>State laws are presented side by side and factually. The site does not rank states or say which approach is better.</li>'
+            '<li>Nonpartisan: every party and lawmaker is treated the same way.</li></ul>',
+            progress_section(perm, score, directory, answers),
+            '<h2 id="corrections">Corrections and reuse</h2>'
+            f'<p>Found something wrong or out of date? <a href="{esc(correction_url("the site"))}">Send a correction</a> with a link to the source. '
+            f'Everything here is free to use under CC BY 4.0, and the data and build scripts are public on <a href="{REPO}">GitHub</a>.</p>'
+            '<p>Created and maintained by Travis Vought, shared in support of Veteran Home Guardians.</p>']
+    return shell(f'About {SITE_NAME}', f'How {SITE_NAME} checks its information, what its labels mean, how far each state guide has been built, and how to send a correction.',
+                 ''.join(body), 'about.html', 'the site')
+
+
 def home_page(perm, score, directory, answers, sources):
     names = perm['jurisdictions']
     total = len(perm['questions'])
-    cites = Cites(sources)
+    ordered = sorted(names, key=lambda c: names[c])
+    jump = ''.join(f'<option value="{slug(names[c])}.html">{esc(names[c])}</option>' for c in ordered)
     body = [f'<h1>{esc(TAGLINE)}</h1>',
-            f'<p>Pick a state for its cannabis law in plain language, each answer traced to a named source and the date it was checked. '
-            f'As of {long_date(perm["as_of"])}.</p>',
-            '<h2 id="states">All 50 states and DC</h2>',
-            '<label for="state-filter">Show</label> <select id="state-filter"><option value="">All states and DC</option>'
-            '<option value="allowed">Adult use allowed</option><option value="medical-only">Medical patients only</option>'
-            '<option value="not-permitted">Not permitted</option><option value="guide">States with a directory guide</option></select>',
-            '<ul class="grid" id="states">']
-    for code in sorted(names, key=lambda c: names[c]):
+            f'<p>Plain-language answers about cannabis law, and where to get help, for all 50 states and DC. Every answer names its source and the date it was checked. '
+            f'Free to use. As of {long_date(perm["as_of"])}.</p>',
+            '<div class="jump"><label for="state-jump"><strong>Start with your state</strong></label>'
+            f'<select id="state-jump"><option value="">Choose a state</option>{jump}</select></div>',
+            '<h2 id="compare">Compare the law across states</h2><p>One question, every state side by side.</p><div class="needs">']
+    for q in perm['questions']:
+        answered = sum(q['id'] in answers.get(c, {}) for c in names)
+        body.append(f'<a class="need" href="{law_page_name(q["id"])}"><strong>{esc(LAW_BLURB.get(q["id"], q["question"]))}</strong>'
+                    f'<span>{answered} of {len(names)} answered</span></a>')
+    body.append('</div><h2 id="help">Help by need</h2><p>National help lines, federal rules and organizations that cover every state.</p><div class="needs">')
+    for need in needs_in_order(perm):
+        body.append(f'<a class="need" href="help.html#{slug(need)}"><strong>{esc(need)}</strong><span>{esc(NEED_BLURB.get(need, "National resources"))}</span></a>')
+    body.append(f'<a class="need" href="{OHIO_HOME}/knowledge.html"><strong>Learn the basics</strong><span>Cannabis terms, labels and safer use, on OhioWeed.org</span></a>')
+    body.append('</div><h2 id="states">All 50 states and DC</h2>'
+                '<label for="state-filter">Show</label> <select id="state-filter"><option value="">All states and DC</option>'
+                '<option value="allowed">Adult use allowed</option><option value="medical-only">Medical patients only</option>'
+                '<option value="not-permitted">Not permitted</option><option value="guide">States with a directory guide</option></select>'
+                '<ul class="grid" id="states-list">')
+    for code in ordered:
         a = answers[code]
         card = score['states'].get(code)
         guide = f' · {esc(PACK_LABEL[card["publication_status"]])}' if card else ''
@@ -285,12 +398,17 @@ def home_page(perm, score, directory, answers, sources):
                     f'<span class="chips">Adult use {chip(perm, a["adult-use"]["status"])} Medical {chip(perm, a["medical"]["status"])}</span>'
                     f'<p class="meta">{len(a)} of {total} questions answered{guide}</p></li>')
     body.append('</ul>')
-    body.append(national_section(perm, cites))
-    body.append(progress_section(perm, score, directory, answers))
-    body.append(cites.render())
-    body.append(FILTER_JS)
-    description = 'Cannabis law for all 50 states and DC in plain language, each answer traced to a named source, with state directories built on the Ohio template.'
-    return shell(TAGLINE, description, ''.join(body), 'index.html', 'the national pages')
+    body.append(f'<p class="muted">Looking for Ohio businesses, dispensaries and record-clearing help? The full Ohio guide is at <a href="{OHIO_HOME}/">OhioWeed.org</a>. '
+                'How this site checks its information: <a href="about.html">About</a>.</p>')
+    body.append('<script>(function(){var j=document.getElementById("state-jump");j.addEventListener("change",function(){if(j.value)location.href=j.value});'
+                'var f=document.getElementById("state-filter");f.addEventListener("change",function(){document.querySelectorAll("#states-list li").forEach(function(li){'
+                'li.hidden=!!f.value&&li.getAttribute("data-adult")!==f.value&&li.getAttribute("data-guide")!==f.value})})})();</script>')
+    description = 'A free cannabis information and resource portal: the law in all 50 states and DC in plain language, state-by-state comparisons, and national help by need, each answer traced to a named source.'
+    return shell(TAGLINE, description, ''.join(body), 'index.html', 'the home page')
+
+
+def state_names(perm):
+    return {slug(name) + '.html' for name in perm['jurisdictions'].values()}
 
 
 def pages():
@@ -298,7 +416,11 @@ def pages():
     perm, score, directory = load()
     sources = {s['id']: s for s in perm['sources']}
     answers = answers_by_state(perm)
-    out = {'index.html': home_page(perm, score, directory, answers, sources)}
+    out = {'index.html': home_page(perm, score, directory, answers, sources),
+           'help.html': help_page(perm, sources),
+           'about.html': about_page(perm, score, directory, answers)}
+    for q in perm['questions']:
+        out[law_page_name(q['id'])] = law_page(perm, q, answers, sources)
     for code, name in perm['jurisdictions'].items():
         out[slug(name) + '.html'] = state_page(perm, score, directory, code, answers, sources)
     return out
@@ -314,7 +436,7 @@ def main(out_dir=None):
     out_dir.mkdir(parents=True, exist_ok=True)
     for name, text in built.items():
         (out_dir / name).write_text(text, encoding='utf-8')
-    print(f'Built national/: home page and {len(built) - 1} state pages')
+    print(f'Built national/: {len(built)} pages (home, help, about, {len(built) - 54} law comparisons, 51 states)')
 
 
 if __name__ == '__main__':
