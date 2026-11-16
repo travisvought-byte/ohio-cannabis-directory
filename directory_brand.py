@@ -95,10 +95,11 @@ def update_url(kind='listing'):
 
 # The Ohio pages in this repo are published at ohioweed.org. Both sites build from here,
 # so each page names one canonical address wherever it is served from. Pennsylvania and
-# the directory home stay on SITE_ORIGIN.
+# the shared state page stay on SITE_ORIGIN. The Ohio business directory (directory.html,
+# which index.html forwards to) is the OhioWeed home, so it names ohioweed.org too.
 OHIO_HOME = 'https://ohioweed.org'
 OHIO_PAGES = frozenset({
-    'advocacy.html', 'ancestry.html', 'assessment.html', 'buyer-guide.html', 'compare.html',
+    'advocacy.html', 'ancestry.html', 'assessment.html', 'buyer-guide.html', 'compare.html', 'directory.html',
     'expungement.html', 'intake.html', 'knowledge.html', 'lawmakers.html', 'locations.html',
     'november-campaign.html', 'relationships.html', 'resources.html', 'seeds.html',
     'work-with-travis.html',

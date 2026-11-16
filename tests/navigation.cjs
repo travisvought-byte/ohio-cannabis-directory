@@ -1,6 +1,6 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),{JSDOM}=require('jsdom');
 const links=[['Pennsylvania directory','pennsylvania-directory.html'],['Pennsylvania portal','state.html?state=PA'],['Record clearing','expungement.html'],['Advocacy','advocacy.html'],['Compare states','compare.html'],['Find a dispensary','locations.html'],['Shop smart','buyer-guide.html'],['Strains','ancestry.html'],['Seeds & growing','seeds.html'],['Learn','knowledge.html'],['Business directory','directory.html'],['Business self-check','assessment.html']];
-for(const name of fs.readdirSync('.').filter(n=>n.endsWith('.html'))){const d=new JSDOM(fs.readFileSync(name,'utf8')).window.document;
+for(const name of fs.readdirSync('.').filter(n=>n.endsWith('.html')&&!/^google[0-9a-f]{16}\.html$/.test(n))){const d=new JSDOM(fs.readFileSync(name,'utf8')).window.document;
 if(name==='work-with-travis.html'){
   const nav=d.querySelector('nav[aria-label="Site navigation"]');
   assert(nav,'independent commercial page navigation');

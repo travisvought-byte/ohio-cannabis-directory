@@ -1,7 +1,7 @@
 """Publish a directory-first entry point; preserve existing search and record URLs."""
 from pathlib import Path
 from directory_data import RELEASE, load_records
-from directory_brand import site_origin
+from directory_brand import canonical_url, site_origin
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'index.html'
@@ -13,7 +13,7 @@ TEMPLATE = r'''<!doctype html>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ohio Cannabis Industry Directory | Ohio Cannabis Directory</title>
 <meta name="description" content="Find Ohio cannabis businesses, industry contacts, suppliers and service providers in a free source-linked directory.">
-<link rel="canonical" href="https://weed.vethomeguard.org/directory.html">
+<link rel="canonical" href="__CANONICAL__">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ohio Cannabis Industry Directory">
 <meta property="og:description" content="Browse Ohio cannabis businesses, industry contacts, suppliers and service providers in a free source-linked directory.">
@@ -61,7 +61,7 @@ nav a{min-height:44px;display:inline-flex;align-items:center}
 
 def main():
     count = sum(not row['Category'].startswith('Out of scope') for row in load_records(include_withdrawn=False))
-    OUT.write_text(site_origin(TEMPLATE).replace('__VERSION__', RELEASE['version']).replace('516 publishable organizations', f'{count} publishable organizations'), encoding='utf-8')
+    OUT.write_text(site_origin(TEMPLATE).replace('__CANONICAL__', canonical_url('directory.html')).replace('__VERSION__', RELEASE['version']).replace('516 publishable organizations', f'{count} publishable organizations'), encoding='utf-8')
 
 if __name__ == '__main__':
     main()
