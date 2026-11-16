@@ -26,14 +26,14 @@ KIND_LABEL = {'statute': 'Law', 'regulator': 'Regulator', 'government': 'Governm
 
 CSS = '''
 .chip{display:inline-block;border:1px solid;border-radius:999px;padding:0 10px;font-size:.82rem;font-weight:700;line-height:1.7;white-space:nowrap}
-.chip.allowed{background:#e7f3eb;border-color:#2e7d4f;color:#1d5a37}.chip.medical-only,.chip.limited,.chip.varies-locally{background:#fff4dc;border-color:#b8860b;color:#664a00}
-.chip.not-permitted{background:#fbeaea;border-color:#a90000;color:#7a0000}.chip.not-reviewed{background:#f0f0f0;border-color:#888;color:#444}
+.chip.allowed,.chip.positive{background:#e7f3eb;border-color:#2e7d4f;color:#1d5a37}.chip.medical-only,.chip.limited,.chip.varies-locally,.chip.partial{background:#fff4dc;border-color:#b8860b;color:#664a00}
+.chip.not-permitted,.chip.negative{background:#fbeaea;border-color:#a90000;color:#7a0000}.chip.not-reviewed{background:#f0f0f0;border-color:#888;color:#444}
 .national-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px}.national-item{background:#fff;border:1px solid #ccc;border-radius:10px;padding:14px 16px;min-width:0}
 .national-more summary{cursor:pointer;color:#a90000;font-size:.9rem}.national-more p{margin:.35rem 0}
 .national-item .need{font-size:.78rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#555;margin:0}.national-item h3{margin:.2rem 0 .3rem}.national-item p{margin:.2rem 0}
 .perm-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:end}.perm-controls select,.perm-controls input{width:100%;font:inherit;padding:9px;border:1px solid #888;border-radius:5px;background:#fff}
 .perm-official{margin:10px 0 0}.perm-group h3{margin:24px 0 8px;font-size:1.15rem}.perm-row{background:#fff;border:1px solid #ccc;border-radius:10px;padding:12px 16px 8px;margin:8px 0;min-width:0}
-.perm-row h4{margin:0 0 6px;font-size:1rem;line-height:1.35}.perm-cells{display:grid;gap:10px}.perm-cells.two{grid-template-columns:repeat(2,minmax(0,1fr))}.perm-cell{min-width:0}.perm-cell>p{margin:.15rem 0}
+.perm-row h4{margin:0 0 6px;font-size:1rem;line-height:1.35}.perm-row .perm-note{margin:-2px 0 8px;font-size:.85rem}.perm-cells{display:grid;gap:10px}.perm-cells.two{grid-template-columns:repeat(2,minmax(0,1fr))}.perm-cell{min-width:0}.perm-cell>p{margin:.15rem 0}
 .perm-state{font-size:.82rem;font-weight:700;color:#555}.perm-cells:not(.two) .perm-state{display:none}.perm-short{font-weight:650}
 .perm-cell details{margin:2px 0 0}.perm-cell details>summary{padding:2px 0}.perm-cell summary{cursor:pointer;color:#a90000;font-size:.9rem}.perm-cell details p{margin:.35rem 0}.perm-row[hidden],.perm-group[hidden],.glance li[hidden]{display:none!important}
 .level{display:inline-block;font-size:.78rem;font-weight:700;border-radius:4px;padding:0 6px;background:#eef3fb;color:#24426e}.level.compilation{background:#fff4dc;color:#664a00}.level.mixed{background:#eef3fb;color:#24426e}
@@ -79,8 +79,11 @@ def payload(data):
             'jurisdictions': data['jurisdictions'], 'official': official, 'answers': answers, 'levels': LEVEL_TEXT}
 
 
-def chip(data, status):
-    return f'<span class="chip {esc(status)}">{esc(data["statuses"][status])}</span>'
+def chip(data, status, question=None):
+    """A question may word its own statuses (label and tone); every other status uses the shared set."""
+    own = (question or {}).get('statuses', {}).get(status)
+    label, tone = (own['label'], own['tone']) if own else (data['statuses'][status], status)
+    return f'<span class="chip {esc(tone)}">{esc(label)}</span>'
 
 
 def cites(numbers):
@@ -88,13 +91,13 @@ def cites(numbers):
         f'<a href="#psource-{n}" aria-label="State table source {n}">[s{n}]</a>' for n in numbers) + '</span>'
 
 
-def cell(data, code, answer):
+def cell(data, code, answer, question=None):
     head = f'<p class="perm-state">{esc(data["jurisdictions"][code])}</p>'
     if not answer:
         return (f'<div class="perm-cell" data-state="{esc(code)}">{head}<p>{chip(data, "not-reviewed")} '
                 '<span class="muted">No reviewed source yet.</span></p></div>')
     effective = f' · in effect {long_date(answer["effective_on"])}' if answer.get('effective_on') else ''
-    return (f'<div class="perm-cell" data-state="{esc(code)}">{head}<p>{chip(data, answer["status"])} '
+    return (f'<div class="perm-cell" data-state="{esc(code)}">{head}<p>{chip(data, answer["status"], question)} '
             f'<span class="perm-short">{esc(answer["short"])}</span></p>'
             f'<details><summary>Details and source</summary><p>{esc(answer["detail"])}</p>'
             f'<p class="muted">{esc(answer["citation"])}{effective} · checked {long_date(answer["reviewed_on"])} {cites(answer["cites"])}</p>'
@@ -122,8 +125,9 @@ def table(data, info, codes):
         for q in rows:
             search = f'{q["question"]} {q.get("keywords", "")} {group["label"]}'.lower()
             cls = 'perm-cells two' if len(codes) > 1 else 'perm-cells'
-            out.append(f'<article class="perm-row" data-question="{esc(q["id"])}" data-search="{esc(search)}"><h4>{esc(q["question"])}</h4><div class="{cls}">')
-            out += [cell(data, code, info['answers'].get(code, {}).get(q['id'])) for code in codes]
+            note = f'<p class="perm-note muted">{esc(q["note"])}</p>' if q.get('note') else ''
+            out.append(f'<article class="perm-row" data-question="{esc(q["id"])}" data-search="{esc(search)}"><h4>{esc(q["question"])}</h4>{note}<div class="{cls}">')
+            out += [cell(data, code, info['answers'].get(code, {}).get(q['id']), q) for code in codes]
             out.append('</div></article>')
         out.append('</div>')
     return ''.join(out)
@@ -172,7 +176,7 @@ def render_permissions(data):
         f'<p class="perm-official muted" id="perm-official">{official_line(data, info, [HOME])}</p>',
         f'<div class="legend" aria-label="Answer labels">{legend}</div>',
         f'<div id="perm-table" aria-live="polite">{table(data, info, [HOME])}</div>',
-        '<p class="muted">“Not yet reviewed” means no source has been checked for that answer. It never means the activity is prohibited. '
+        '<p class="muted">“Not yet reviewed” means no source has been checked for that answer. It never means the activity is prohibited, or that a protection or a way to clear a record is missing. '
         'Answers marked “National compilation” come from national lists that cover every state; confirm them with the state before relying on them.</p>',
         '</section>',
     ])
@@ -223,13 +227,13 @@ __LOADER__(async function(){
  var M=['January','February','March','April','May','June','July','August','September','October','November','December'];
  function e(v){return String(v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
  function d(v){var p=v.split('-');return M[+p[1]-1]+' '+(+p[2])+', '+p[0]}
- function chip(s){return '<span class="chip '+e(s)+'">'+e(D.statuses[s])+'</span>'}
+ function chip(s,q){var o=q&&q.statuses&&q.statuses[s];return '<span class="chip '+e(o?o.tone:s)+'">'+e(o?o.label:D.statuses[s])+'</span>'}
  function cites(ns){return '<span class="cites">'+ns.map(function(n){return '<a href="#psource-'+n+'" aria-label="State table source '+n+'">[s'+n+']</a>'}).join('')+'</span>'}
- function cell(code,a){
+ function cell(code,a,q){
   var head='<p class="perm-state">'+e(D.jurisdictions[code])+'</p>';
   if(!a)return '<div class="perm-cell" data-state="'+e(code)+'">'+head+'<p>'+chip('not-reviewed')+' <span class="muted">No reviewed source yet.</span></p></div>';
   var eff=a.effective_on?' · in effect '+d(a.effective_on):'';
-  return '<div class="perm-cell" data-state="'+e(code)+'">'+head+'<p>'+chip(a.status)+' <span class="perm-short">'+e(a.short)+'</span></p>'+
+  return '<div class="perm-cell" data-state="'+e(code)+'">'+head+'<p>'+chip(a.status,q)+' <span class="perm-short">'+e(a.short)+'</span></p>'+
    '<details><summary>Details and source</summary><p>'+e(a.detail)+'</p><p class="muted">'+e(a.citation)+eff+' · checked '+d(a.reviewed_on)+' '+cites(a.cites)+'</p>'+
    '<p><span class="level '+e(a.level)+'">'+e(D.levels[a.level])+'</span></p></details></div>';
  }
@@ -242,8 +246,8 @@ __LOADER__(async function(){
  function render(){var c=codes(),out='';
   D.groups.forEach(function(g){out+='<div class="perm-group" data-group="'+e(g.id)+'"><h3>'+e(g.label)+'</h3>';
    D.questions.filter(function(q){return q.group===g.id}).forEach(function(q){var s=(q.question+' '+(q.keywords||'')+' '+g.label).toLowerCase();
-    out+='<article class="perm-row" data-question="'+e(q.id)+'" data-search="'+e(s)+'"><h4>'+e(q.question)+'</h4><div class="'+(c.length>1?'perm-cells two':'perm-cells')+'">'+
-     c.map(function(code){return cell(code,(D.answers[code]||{})[q.id])}).join('')+'</div></article>'});out+='</div>'});
+    out+='<article class="perm-row" data-question="'+e(q.id)+'" data-search="'+e(s)+'"><h4>'+e(q.question)+'</h4>'+(q.note?'<p class="perm-note muted">'+e(q.note)+'</p>':'')+'<div class="'+(c.length>1?'perm-cells two':'perm-cells')+'">'+
+     c.map(function(code){return cell(code,(D.answers[code]||{})[q.id],q)}).join('')+'</div></article>'});out+='</div>'});
   document.getElementById('perm-table').innerHTML=out;document.getElementById('perm-official').innerHTML=official(c);applyFilter();
   var p=new URLSearchParams(location.search);p.set('state',c[0]);if(c[1])p.set('compare',c[1]);else p.delete('compare');
   history.replaceState(null,'',location.pathname+'?'+p.toString()+location.hash)}

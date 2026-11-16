@@ -22,6 +22,27 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
   assert(await page.evaluate(()=>document.querySelector('#permissions').compareDocumentPosition(document.querySelector('#policy-portal'))&Node.DOCUMENT_POSITION_FOLLOWING),'state table precedes the policy portal');
   const row=q=>page.locator('#perm-table [data-question="'+q+'"]');
   assert.match(await row('adult-use').textContent(),/Allowed/);
+  // Work and past records (#150): these questions word their own labels, in the page and in the switcher.
+  const Q=id=>P.questions.find(q=>q.id===id),own=(s,id)=>Q(id).statuses[P.answers[s][id].status],serverTable=await page.locator('#perm-table').innerHTML();
+  for(const id of ['employment','record-relief']){
+   assert.equal(await row(id).locator('.chip').textContent(),own('OH',id).label,'the page itself carries the question\u2019s own label');
+   assert.equal(await row(id).locator('.perm-note').textContent(),Q(id).note,'the labels are explained under the question');
+  }
+  await page.selectOption('#perm-state','NY');
+  for(const id of ['employment','record-relief']){
+   assert.equal(await row(id).locator('.chip').textContent(),own('NY',id).label,'the switcher words the label the same way');
+   assert.equal(await row(id).locator('.chip').getAttribute('class'),'chip '+own('NY',id).tone);
+   assert(!Object.values(P.statuses).includes(own('NY',id).label),'no "Allowed" or "Not permitted" verdict on these rows');
+   assert.equal(await row(id).locator('.perm-note').textContent(),Q(id).note);
+  }
+  const unanswered=Object.keys(P.jurisdictions).find(s=>!(P.answers[s]||{}).employment);
+  if(unanswered){await page.selectOption('#perm-state',unanswered);assert.equal(await row('employment').locator('.chip').textContent(),'Not yet reviewed','a state without a reviewed source says so');}
+  const shown=()=>page.locator('#perm-table .perm-row:not([hidden])').evaluateAll(rs=>rs.map(r=>r.getAttribute('data-question')));
+  await page.locator('#perm-filter').fill('job');assert.deepEqual(await shown(),['employment'],'question search finds the employment row');
+  await page.locator('#perm-filter').fill('expunge');assert.deepEqual(await shown(),['record-relief'],'question search finds the record row');
+  await page.locator('#perm-filter').fill('');
+  await page.selectOption('#perm-state','OH');
+  assert.equal(await page.locator('#perm-table').innerHTML(),serverTable,'the switcher renders a state exactly as the page does');
   await page.selectOption('#perm-state','TX');
   assert.match(await row('adult-use').locator('[data-state="TX"]').textContent(),/Not permitted/);
   assert.equal(await row('adult-use').locator('.level').textContent(),P.levels[P.answers.TX['adult-use'].level],'each answer names its evidence level');
@@ -111,7 +132,7 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
   assert.deepEqual(errors,[]);
   const offline=await browser.newPage();await offline.route('**/data/public-permissions.json',r=>r.abort());await offline.goto(server.base+'compare.html');assert.match(await offline.locator('#perm-official + p[role="status"]').textContent(),/could not load/,'a failed data download says so');assert.match(await offline.locator('#perm-table [data-question="adult-use"]').innerText(),/Allowed/,'the server-rendered state still reads');await offline.close();
   const plain=await browser.newContext({javaScriptEnabled:false}),fallback=await plain.newPage();await fallback.goto(server.base+'compare.html');
-  assert.match(await fallback.locator('#letter-'+key).inputValue(),/Keep the requests you agree with/);assert.match(await fallback.locator('#policy-portal').innerText(),/Michigan senator lookup/);assert.match(await fallback.locator('#perm-table [data-question="adult-use"]').innerText(),/Allowed/);assert.equal(await fallback.locator('.glance li').count(),51);assert.equal(await fallback.locator('.glance-pick:visible').count(),0,'no dead buttons without JavaScript');await plain.close();
-  console.log('PASS: national layer, 50-state permissions table (unknowns, compilation labels, compare, search, share link, at-a-glance filter), state comparison and Ohio/Michigan proposals, reviewed model coverage, jurisdiction-safe edits/exports, download, print, mobile width, citations, clipboard fallback, privacy and no-JS routes.');
+  assert.match(await fallback.locator('#letter-'+key).inputValue(),/Keep the requests you agree with/);assert.match(await fallback.locator('#policy-portal').innerText(),/Michigan senator lookup/);assert.match(await fallback.locator('#perm-table [data-question="adult-use"]').innerText(),/Allowed/);assert.equal(await fallback.locator('#perm-table [data-question="employment"] .chip').textContent(),own('OH','employment').label,'the work and record rows read without JavaScript');assert.equal(await fallback.locator('.glance li').count(),51);assert.equal(await fallback.locator('.glance-pick:visible').count(),0,'no dead buttons without JavaScript');await plain.close();
+  console.log('PASS: national layer, 50-state permissions table (unknowns, compilation labels, question-specific labels, compare, search, share link, at-a-glance filter), state comparison and Ohio/Michigan proposals, reviewed model coverage, jurisdiction-safe edits/exports, download, print, mobile width, citations, clipboard fallback, privacy and no-JS routes.');
  }finally{await browser.close();await server.close();}
 })().catch(e=>{console.error(e);process.exit(1)});
