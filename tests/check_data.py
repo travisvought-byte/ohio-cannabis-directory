@@ -91,8 +91,11 @@ assert 'compare.html' in (ROOT / 'sitemap.xml').read_text()
 from validate_comparison import validate as validate_comparison
 validate_comparison(json.loads((ROOT / 'data/state-comparison.json').read_text(encoding='utf-8')))
 from validate_permissions import validate as validate_permissions
-validate_permissions(json.loads((ROOT / 'data/state-permissions.json').read_text(encoding='utf-8')))
-assert 'id="permissions-data"' in (ROOT / 'compare.html').read_text(encoding='utf-8')
+import permissions_page
+permissions = validate_permissions(json.loads((ROOT / 'data/state-permissions.json').read_text(encoding='utf-8')))
+assert permissions_page.DATA_PATH in (ROOT / 'compare.html').read_text(encoding='utf-8')
+assert (ROOT / permissions_page.DATA_PATH).read_text(encoding='utf-8') == permissions_page.public_json(permissions), \
+    f'{permissions_page.DATA_PATH} requires rebuild (python build_compare.py)'
 print('PASS: record counts, IDs, review-date evidence, verification tiers, relationship coverage, generated pages and release metadata.')
 
 withdrawn={o["id"] for o in load_directory()["organizations"] if o.get("scope")=="withdrawn"}
