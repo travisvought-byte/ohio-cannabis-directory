@@ -125,7 +125,9 @@ def build(out):
     (out / '404.html').write_text(not_found(), encoding='utf-8')
     (out / 'CNAME').write_text(SITE.split('//')[1] + '\n', encoding='utf-8')
 
-    real = sorted(p.name for p in out.glob('*.html') if p.name not in FORWARD and p.name != '404.html')
+    # Google Search Console ownership file (google<token>.html): published, never listed as a page.
+    real = sorted(p.name for p in out.glob('*.html') if p.name not in FORWARD and p.name != '404.html'
+                  and not (p.name.startswith('google') and len(p.name) == 27))
     urls = [f'{SITE}/' + ('' if n == 'index.html' else n) for n in real]
     (out / 'sitemap.xml').write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
