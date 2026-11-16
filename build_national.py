@@ -165,7 +165,7 @@ def tile_map(perm, question, answers, caption):
         status = a['status'] if a else 'not-reviewed'
         tally[status] = tally.get(status, 0) + 1
         label = status_label(perm, question, status) + (f': {a["short"]}' if a else '')
-        cells.append(f'<a class="tile {esc(tone_of(question, status))}" style="grid-row:{row + 1};grid-column:{col + 1}" '
+        cells.append(f'<a class="tile {esc(tone_of(question, status))}" data-track="map-state" style="grid-row:{row + 1};grid-column:{col + 1}" '
                      f'href="{slug(names[code])}.html" title="{esc(names[code])}: {esc(label)}" aria-label="{esc(names[code])}: {esc(label)}">{code}</a>')
     order = [st for st in list(question.get('statuses', {})) + list(perm['statuses']) if st in tally]
     legend = ''.join(f'<li><span class="sw {esc(tone_of(question, st))}"></span>{esc(status_label(perm, question, st))} ({tally[st]})</li>' for st in order)
@@ -234,7 +234,7 @@ def shell(title, description, body, name, place, hero=''):
             f'<li><a href="{REPO}/blob/main/architecture/STATE_COMPLETION_STANDARD.md">State completion standard</a></li></ul></nav></div>'
             '<p>Summaries of the cited sources, each with the date it was checked. Not legal advice. A missing answer means not yet reviewed, '
             'never that something is prohibited. Free to use under CC BY 4.0. Created and maintained by Travis Vought, shared in support of Veteran Home Guardians.</p></div></footer>')
-    return ''.join(head) + top + hero + '<main>' + body + '</main>' + foot + '</body></html>\n'
+    return ''.join(head) + top + hero + '<main>' + body + '</main>' + foot + '<script src="../assets/analytics.js" defer></script></body></html>\n'
 
 class Cites:
     """Per-page source numbering, in order of first use."""
@@ -535,7 +535,7 @@ def home_page(perm, score, directory, answers, sources):
 
     body = ['<section class="block" id="tasks"><h2>What brings you here?</h2><div class="tasks">']
     for ic, title, desc, href in TASKS:
-        body.append(f'<a class="task" href="{href}"><span class="ic">{icon(ic)}</span><strong>{esc(title)}</strong><span class="d">{esc(desc)}</span></a>')
+        body.append(f'<a class="task" href="{href}" data-track="task:{slug(title)}"><span class="ic">{icon(ic)}</span><strong>{esc(title)}</strong><span class="d">{esc(desc)}</span></a>')
     linked = {href.split('#')[1] for *_, href in TASKS if '#' in href}
     more = [f'<a href="help.html#{slug(n)}">{esc(n)}</a>' for n in needs_in_order(perm) if slug(n) not in linked]
     more.append(f'<a href="{OHIO_HOME}/knowledge.html">Learn the basics</a>')
@@ -565,10 +565,10 @@ def home_page(perm, score, directory, answers, sources):
 
     body.append('<section class="block" id="family"><h2>More from the same team</h2><div class="family">')
     for url, label, host, text in FAMILY:
-        body.append(f'<a class="site-card" href="{esc(url)}"><strong>{esc(label)}</strong><span class="u">{esc(host)}</span><p>{esc(text)}</p></a>')
+        body.append(f'<a class="site-card" href="{esc(url)}" data-track="family:{esc(host)}"><strong>{esc(label)}</strong><span class="u">{esc(host)}</span><p>{esc(text)}</p></a>')
     body.append('</div><p class="muted">How this site checks its information, and its ground rules: <a href="about.html">About</a>. No paid placement or ranking.</p></section>')
     body.append('<script>(function(){var f=document.getElementById("pick"),j=document.getElementById("state-jump");'
-                'function go(){if(j.value)location.href=j.value}f.addEventListener("submit",function(e){e.preventDefault();go()});j.addEventListener("change",go)})();</script>')
+                'function go(){if(!j.value)return;if(window.directoryTrack)window.directoryTrack("state-picker");location.href=j.value}f.addEventListener("submit",function(e){e.preventDefault();go()});j.addEventListener("change",go)})();</script>')
     description = 'Free, plain-language cannabis answers for all 50 states and DC: what is legal, where to buy, record clearing and where to get help, each answer traced to a named source.'
     return shell(TAGLINE, description, ''.join(body), 'index.html', 'the home page', hero)
 

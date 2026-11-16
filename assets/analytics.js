@@ -1,9 +1,11 @@
 /* Aggregate actions only. Never send searches, worksheet answers, coordinates or URL queries. */
 (function () {
   'use strict';
-  var page = location.pathname.split('/').pop() || 'index.html', pending = [];
+  // the-reefer.com shares this counter with ohioweed.org; its paths carry the domain so the two never mix.
+  var site = /(^|\.)the-reefer\.com$/.test(location.hostname) ? '/the-reefer.com' : '';
+  var page = (site ? 'the-reefer.com/' : '') + (location.pathname.split('/').pop() || 'index.html'), pending = [];
   window.goatcounter = window.goatcounter || {};
-  window.goatcounter.path = function () { return location.pathname; };
+  window.goatcounter.path = function () { return site + location.pathname; };
   window.goatcounter.referrer = function () {
     try { var u = new URL(document.referrer); return u.origin + u.pathname; } catch (_) { return ''; }
   };
