@@ -90,6 +90,9 @@ assert 'relationships.html' in (ROOT / 'sitemap.xml').read_text()
 assert 'compare.html' in (ROOT / 'sitemap.xml').read_text()
 from validate_comparison import validate as validate_comparison
 validate_comparison(json.loads((ROOT / 'data/state-comparison.json').read_text(encoding='utf-8')))
+from validate_permissions import validate as validate_permissions
+validate_permissions(json.loads((ROOT / 'data/state-permissions.json').read_text(encoding='utf-8')))
+assert 'id="permissions-data"' in (ROOT / 'compare.html').read_text(encoding='utf-8')
 print('PASS: record counts, IDs, review-date evidence, verification tiers, relationship coverage, generated pages and release metadata.')
 
 withdrawn={o["id"] for o in load_directory()["organizations"] if o.get("scope")=="withdrawn"}
