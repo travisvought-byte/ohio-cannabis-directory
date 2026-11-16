@@ -2192,6 +2192,24 @@
    "title": "Mont. Code Ann. § 16-12-113, decriminalized acts; petition for expungement or resentencing (2025)",
    "url": "https://mca.legmt.gov/bills/mca/title_0160/chapter_0120/part_0010/section_0130/0160-0120-0010-0130.html",
    "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "mi-mcl-333-27954",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Michigan Legislature",
+   "title": "MCL 333.27954, scope of act; employer rights (Michigan Regulation and Taxation of Marihuana Act)",
+   "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-333-27954",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ak-amco-as-17-38",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Alaska Alcohol & Marijuana Control Office",
+   "title": "Alaska Statutes chapter 17.38, the regulation of marijuana (office copy, effective July 25, 2018; marked “Not an Official Copy”)",
+   "url": "https://www.commerce.alaska.gov/web/Portals/9/pub/Archive26/MCB/StatutesAndRegulations/AS17.38.pdf",
+   "retrieved_on": "2026-11-15"
   }
  ],
  "answers": [
@@ -2232,6 +2250,19 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "ak-amco-faq"
+   ]
+  },
+  {
+   "state": "AK",
+   "question": "employment",
+   "status": "not-protected",
+   "short": "Employers may restrict employees’ marijuana use",
+   "detail": "Alaska’s marijuana law says nothing in it requires an employer to permit or accommodate the use, possession or growing of marijuana in the workplace, or affects an employer’s ability to have policies restricting marijuana use by employees. Employers and others who control private property may also prohibit marijuana on it. This is the Alcohol & Marijuana Control Office’s copy of the chapter as of July 25, 2018, which is marked as not an official copy.",
+   "citation": "AS 17.38.220(a) and (d)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ak-amco-as-17-38"
    ]
   },
   {
@@ -2667,6 +2698,19 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "co-driving-traveling"
+   ]
+  },
+  {
+   "state": "CO",
+   "question": "employment",
+   "status": "not-protected",
+   "short": "Employers may act on a THC drug test",
+   "detail": "Colorado’s cannabis site says that even though cannabis is legal, employers can still test for THC and make employment decisions based on the results. It advises people to learn their workplace’s policies before using cannabis.",
+   "citation": "State of Colorado, Laws about cannabis use, “Drug testing at work”",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "co-laws-about-use"
    ]
   },
   {
@@ -3566,11 +3610,12 @@
    "question": "employment",
    "status": "partly-protected",
    "short": "Medical patients, under a court ruling",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists Massachusetts as protecting medical patients through a court ruling, not the medical cannabis law: the state’s high court held that the anti-discrimination law covers disabled employees who use medical cannabis, so an employer must consider a reasonable accommodation unless it would be an undue hardship. Not yet checked against the state’s own law.",
-   "citation": "Barbuto v. Advantage Sales and Marketing; G.L. c. 151B, § 4, per the Marijuana Policy Project’s chart",
+   "detail": "The Cannabis Control Commission tells people to check the rules where they work: employers may have their own policies on marijuana use. The Marijuana Policy Project, an advocacy group, lists a protection for medical patients through a court ruling: the state’s high court held that the anti-discrimination law covers disabled employees who use medical cannabis, so an employer must consider a reasonable accommodation unless it would be an undue hardship (Barbuto v. Advantage Sales and Marketing); that part is not yet checked against an official source.",
+   "citation": "Massachusetts Cannabis Control Commission, Know the laws; Barbuto v. Advantage Sales and Marketing and G.L. c. 151B, § 4, per the Marijuana Policy Project’s chart",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
+    "ma-ccc-laws",
     "natl-mpp-employment-medical"
    ]
   },
@@ -3697,11 +3742,12 @@
    "question": "employment",
    "status": "partly-protected",
    "short": "Fire and rescue workers who are patients",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists Maryland’s protection as covering fire and rescue employees only: those certified as medical cannabis patients are protected from discipline, including after a positive test. Its chart lists exceptions for federal law and on-duty impairment. Not yet checked against the state’s own law.",
-   "citation": "Md. Code, State Gov’t § 20-606, per the Marijuana Policy Project’s chart",
+   "detail": "The Maryland Cannabis Administration says the Cannabis Reform Act does not address cannabis use or impairment in the workplace, or employer drug screening: people remain subject to existing laws and to workplace policies, including policies that ban cannabis use. The Marijuana Policy Project, an advocacy group, lists one protection, for fire and rescue employees who are certified medical cannabis patients (Md. Code, State Gov’t § 20-606); that part is not yet checked against the state’s own law.",
+   "citation": "Maryland Cannabis Administration, Adult-use cannabis FAQs; Md. Code, State Gov’t § 20-606, per the Marijuana Policy Project’s chart",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
+    "md-mca-faq",
     "natl-mpp-employment-medical"
    ]
   },
@@ -3956,6 +4002,19 @@
   },
   {
    "state": "MI",
+   "question": "employment",
+   "status": "not-protected",
+   "short": "Employers may enforce workplace drug policies",
+   "detail": "Michigan’s adult-use law says it does not require an employer to permit or accommodate conduct the act allows in any workplace or on the employer’s property. It does not prevent an employer from refusing to hire, discharging or disciplining a person for violating a workplace drug policy or for working while under the influence of marihuana.",
+   "citation": "MCL 333.27954(3)",
+   "effective_on": "2018-12-06",
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "mi-mcl-333-27954"
+   ]
+  },
+  {
+   "state": "MI",
    "question": "home-grow",
    "status": "allowed",
    "short": "Up to 12 plants per residence",
@@ -4205,12 +4264,13 @@
    "state": "MO",
    "question": "employment",
    "status": "partly-protected",
-   "short": "Medical patients only",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists Missouri’s constitution as protecting medical patients and caregivers, including lawful use off the premises in nonworking hours and positive drug tests. Its chart lists exceptions for impairment at work, loss of a federal benefit and jobs where use affects performance or safety. Not yet checked against the state’s own law.",
-   "citation": "Mo. Const., Amendment 3 (2022), per the Marijuana Policy Project’s chart",
+   "short": "Certain protections in the constitution",
+   "detail": "Missouri’s Department of Health and Senior Services says Article XIV of the state constitution, sections 1 and 2, provides certain employment-related protections for patients and consumers, and that employment questions are outside its authority. The Marijuana Policy Project, an advocacy group, lists the patient protections as covering lawful use off the premises in nonworking hours and positive drug tests, with exceptions for impairment at work, loss of a federal benefit and jobs where use affects performance or safety; that part, and what the constitution gives adult consumers, is not yet checked against the state’s own text.",
+   "citation": "Mo. Const. art. XIV, §§ 1 and 2, per the Department of Health and Senior Services’ FAQ; Marijuana Policy Project’s chart",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
+    "mo-dhss-adult-faq",
     "natl-mpp-employment-medical"
    ]
   },
@@ -4300,6 +4360,19 @@
    "short": "No",
    "detail": "Mississippi has no adult-use law. The state Health Department’s medical cannabis program says recreational use and possession remain illegal. Its patient toolkit lists a $250 fine for a first offense of up to 30 grams outside the program, jail time for repeat offenses, and a felony for more than 30 grams.",
    "citation": "Mississippi Medical Cannabis Program toolkit: patient rights and applicable laws (2026)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ms-mmcp-patient-rights"
+   ]
+  },
+  {
+   "state": "MS",
+   "question": "employment",
+   "status": "not-protected",
+   "short": "Employers need not permit medical cannabis use",
+   "detail": "Mississippi’s Medical Cannabis Program says the law does not require employers to permit medical cannabis use or to exempt employees from drug testing.",
+   "citation": "Mississippi Medical Cannabis Program, Patient Rights & Applicable Laws (program toolkit)",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
@@ -5319,6 +5392,19 @@
   },
   {
    "state": "OR",
+   "question": "employment",
+   "status": "not-protected",
+   "short": "Depends on the employer’s policies",
+   "detail": "The Oregon Liquor and Cannabis Commission says the state’s cannabis law does not change existing employment law. Employers who test for drugs may keep doing so, and whether a person can be fired for using marijuana depends on the employer’s policies.",
+   "citation": "Oregon Liquor and Cannabis Commission, Frequently asked questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "or-olcc-faq"
+   ]
+  },
+  {
+   "state": "OR",
    "question": "home-grow",
    "status": "allowed",
    "short": "4 plants",
@@ -5814,12 +5900,13 @@
    "state": "VA",
    "question": "employment",
    "status": "partly-protected",
-   "short": "Medical patients only",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists Virginia as barring employers from discharging, disciplining or discriminating against an employee for lawful use of cannabis oil under a valid written certification. Its chart lists exceptions for impairment or possession at work, federal law and some defense-industry employers. Not yet checked against the state’s own law.",
-   "citation": "Va. Code § 40.1-27.4, per the Marijuana Policy Project’s chart",
+   "short": "Some medical cannabis use only",
+   "detail": "Virginia’s Cannabis Control Authority says workplaces and employers may still prohibit cannabis use by their employees and enforce drug testing, and that Virginia law protects some medical cannabis use from employment action, though perhaps not for every medical user. The Marijuana Policy Project, an advocacy group, lists that protection as covering employees who use cannabis oil under a valid written certification, with exceptions for impairment or possession at work, federal law and some defense-industry employers (Va. Code § 40.1-27.4); that part is not yet checked against the state’s own law.",
+   "citation": "Virginia Cannabis Control Authority, Frequently asked questions; Va. Code § 40.1-27.4, per the Marijuana Policy Project’s chart",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
+    "va-cca-faq",
     "natl-mpp-employment-medical"
    ]
   },
