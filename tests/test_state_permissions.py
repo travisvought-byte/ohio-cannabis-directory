@@ -189,6 +189,17 @@ class StatePermissionsTest(unittest.TestCase):
                 self.assertIn((state, qid), answers)
                 self.assertEqual(evidence_level(answers[(state, qid)], sources), 'official', (state, qid))
 
+    def test_work_answers_from_a_national_list_alone_say_so(self):
+        # Issue #159: a label taken from a national list names whose list it is and that the state's law is unchecked.
+        sources = {s['id']: s for s in DATA['sources']}
+        listed = [a for a in DATA['answers'] if a['question'] in ('employment', 'record-relief')
+                  and evidence_level(a, sources) == 'compilation']
+        for a in listed:
+            for sid in a['source_ids']:
+                self.assertIn(sources[sid]['publisher'], a['detail'], (a['state'], a['question']))
+            self.assertIn('Not yet checked against', a['detail'], (a['state'], a['question']))
+            self.assertIn(sources[a['source_ids'][0]]['publisher'], a['citation'], (a['state'], a['question']))
+
     def test_page_shows_each_question_s_own_labels(self):
         questions = {q['id']: q for q in DATA['questions']}
         answers = {(a['state'], a['question']): a for a in DATA['answers']}
