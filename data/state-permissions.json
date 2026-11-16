@@ -2381,6 +2381,42 @@
    "title": "Guide for Sealing Virginia Criminal Records Pursuant to Va. Code § 19.2-392.12:1, CC-1203 INST (07/26)",
    "url": "https://vacourts.gov/static/forms/circuit/crim_sealing/cc1203inst.pdf",
    "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "nv-nrs-179-271",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Nevada Legislature",
+   "title": "NRS 179.271, sealing of records after decriminalization of offense (chapter 179, revised April 15, 2026)",
+   "url": "https://www.leg.state.nv.us/nrs/nrs-179.html",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "me-courts-sealing",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "State of Maine Judicial Branch",
+   "title": "Sealing Your Criminal Record",
+   "url": "https://www.courts.maine.gov/help/criminal/sealing.html",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "dc-code-16-802",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Council of the District of Columbia",
+   "title": "D.C. Code § 16-802, automatic expungement of criminal records",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/16-802",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "dc-law-24-284",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Council of the District of Columbia",
+   "title": "D.C. Law 24-284, Second Chance Amendment Act of 2022 (effective March 10, 2023)",
+   "url": "https://code.dccouncil.gov/us/dc/council/laws/24-284",
+   "retrieved_on": "2026-11-15"
   }
  ],
  "answers": [
@@ -3205,14 +3241,15 @@
   {
    "state": "DC",
    "question": "record-relief",
-   "status": "by-application",
-   "short": "Legalized or decriminalized conduct",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists the District as letting people with records for conduct that was later legalized or decriminalized file to have them sealed. Not yet checked against the District’s own law.",
-   "citation": "Marijuana Policy Project’s table of legalization states’ expungement laws",
+   "status": "automatic",
+   "short": "Decriminalized offenses; due by October 1, 2027",
+   "detail": "D.C. Code § 16-802 directs the Superior Court to order automatic expungement of records related only to an offense that was later decriminalized or legalized, and of records related only to simple possession of any quantity of marijuana before February 15, 2015, once the case has ended and unless the prosecutor shows that the record should be kept or that the person does not qualify. Eligible records are to be expunged by October 1, 2027, or within 90 days after the case ends, whichever is later. Under the same 2022 law a person granted expungement cannot be held guilty of perjury for not disclosing the record. The Code’s notes give March 1, 2025 as the date the section began to apply, though several notes on the page conflict.",
+   "citation": "D.C. Code § 16-802 (Second Chance Amendment Act of 2022, D.C. Law 24-284)",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-mpp-expungement"
+    "dc-code-16-802",
+    "dc-law-24-284"
    ]
   },
   {
@@ -4114,13 +4151,13 @@
    "state": "ME",
    "question": "record-relief",
    "status": "by-application",
-   "short": "Some cannabis offenses, sealing",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists Maine as allowing petition-based sealing for some cannabis offenses under a 2024 law (LD 2236). Its table says the sealing is not comprehensive and that some professional licensing bodies can still see the records. Not yet checked against the state’s own law.",
-   "citation": "Marijuana Policy Project’s table of legalization states’ expungement laws",
+   "short": "Some pre-2017 marijuana convictions, sealing",
+   "detail": "Maine’s courts say sealing is not automatic: a person files a Motion to Seal Criminal History (form CR-218) with the clerk of the court where the conviction occurred, and the court holds a hearing. Eligible marijuana convictions are certain Class D possession and cultivation crimes, listed by statute section on the courts’ page, committed before January 30, 2017. At least four years must have passed since the sentence was fully completed, with no later convictions and no pending charges. A sealed record is not erased, since Maine has no expungement, but it is not disclosed to employers, landlords, lenders or school admissions officers, and the person may answer most inquiries as if the conviction had not occurred; criminal justice agencies and the courts can still see it.",
+   "citation": "15 M.R.S. §§ 2263 to 2265, per the State of Maine Judicial Branch’s Sealing Your Criminal Record page",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-mpp-expungement"
+    "me-courts-sealing"
    ]
   },
   {
@@ -5197,13 +5234,13 @@
    "state": "NV",
    "question": "record-relief",
    "status": "by-application",
-   "short": "Legalized or decriminalized conduct, sealing",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists Nevada as allowing people, under a 2019 law, to have past convictions sealed when the conduct, such as marijuana possession, has been legalized or decriminalized. Its table also lists a 2020 pardons-board resolution for possession of one ounce or less from 1986 to 2017. Not yet checked against the state’s own law.",
-   "citation": "Marijuana Policy Project’s table of legalization states’ expungement laws",
+   "short": "Decriminalized offenses, by written request",
+   "detail": "Nevada law lets a person convicted of an offense that was later decriminalized, by an act of the Legislature or a voter initiative, send a written request to any court where they were convicted to seal the records of that conviction held by the court and by criminal justice agencies. No court or agency may charge a fee. The court notifies the prosecutor, who has 10 judicial days to object in writing; with no objection the court must grant the request, and after an objection it holds a hearing and grants the request unless the prosecutor shows good cause by clear and convincing evidence. The section covers decriminalized offenses in general and does not name marijuana; it does not apply to traffic offenses.",
+   "citation": "NRS 179.271 (Nevada Revised Statutes, revised April 15, 2026)",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-mpp-expungement"
+    "nv-nrs-179-271"
    ]
   },
   {
