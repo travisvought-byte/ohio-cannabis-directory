@@ -2444,6 +2444,51 @@
    "title": "JDF 2374, Order to Seal Conviction Records: Conduct No Longer Prohibited, revised July 1, 2025",
    "url": "https://www.coloradojudicial.gov/sites/default/files/2025-07/JDF2374.pdf",
    "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "az-ars-36-2813",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Arizona State Legislature",
+   "title": "Arizona Revised Statutes 36-2813, discrimination prohibited",
+   "url": "https://www.azleg.gov/ars/36/02813.htm",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "wv-code-16a-15-4",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "West Virginia Legislature",
+   "title": "W. Va. Code § 16A-15-4, protections for patients and caregivers",
+   "url": "https://code.wvlegislature.gov/16A-15-4/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "de-code-16-49a",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Delaware General Assembly",
+   "title": "Delaware Code, Title 16, chapter 49A, the Delaware Medical Marijuana Act (§§ 4905A and 4907A)",
+   "url": "https://delcode.delaware.gov/title16/c049A/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "sd-sdcl-34-20g",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "South Dakota Legislature",
+   "title": "South Dakota Codified Laws chapter 34-20G, medical cannabis (§§ 34-20G-1 and 34-20G-22 to 34-20G-24)",
+   "url": "https://sdlegislature.gov/api/Statutes/34-20G.html?all=true",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "me-mrs-22-2430-c",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Maine Legislature",
+   "title": "22 M.R.S. § 2430-C, protections for authorized activity",
+   "url": "https://legislature.maine.gov/statutes/22/title22sec2430-C.html",
+   "retrieved_on": "2026-11-15"
   }
  ],
  "answers": [
@@ -2677,13 +2722,14 @@
    "state": "AZ",
    "question": "employment",
    "status": "partly-protected",
-   "short": "Medical patients only",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists Arizona as barring employers from refusing to hire, firing or penalizing a registered patient for that status or for a positive marijuana test, unless the person used or was impaired by marijuana at work. Its chart lists an exception where the employer would lose a federal benefit. Not yet checked against the state’s own law.",
-   "citation": "A.R.S. § 36-2813, per the Marijuana Policy Project’s chart",
+   "short": "Medical cardholders only",
+   "detail": "Arizona law bars an employer from discriminating in hiring, firing or the terms of a job, or otherwise penalizing a person, because the person is a medical marijuana cardholder, or because a registered qualifying patient tested positive for marijuana, unless the patient used, possessed or was impaired by marijuana at the workplace or during work hours. The bar does not apply where it would cost the employer a monetary or licensing benefit under federal law. The adult-use law gives no such protection: it does not restrict an employer’s right to keep a drug-and-alcohol-free workplace or to have policies restricting marijuana use by employees or applicants, and does not require an employer to allow or accommodate use at work.",
+   "citation": "A.R.S. § 36-2813(B) and § 36-2851",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-mpp-employment-medical"
+    "az-ars-36-2813",
+    "az-ars-36-2851"
    ]
   },
   {
@@ -3337,13 +3383,13 @@
    "state": "DE",
    "question": "employment",
    "status": "partly-protected",
-   "short": "Medical patients only",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists Delaware as barring employers from discriminating against a cardholder for that status or for a positive marijuana test, unless the person used, possessed or was impaired by marijuana at work. Its chart lists an exception where the employer would lose a federal monetary or licensing benefit. Not yet checked against the state’s own law.",
-   "citation": "16 Del. C. § 4905A, per the Marijuana Policy Project’s chart",
+   "short": "Medical cardholders only",
+   "detail": "Delaware’s medical marijuana law bars an employer from discriminating in hiring, firing or any term of employment, or otherwise penalizing a person, because the person is a cardholder, or because a registered qualifying patient tested positive for marijuana, unless the patient used, possessed or was impaired by marijuana at the workplace or during work hours. The bar does not apply where it would cost the employer a monetary or licensing benefit under federal law. An employer need not allow marijuana to be ingested at work or an employee to work under its influence, and may discipline for either; a patient is not treated as under the influence solely because a test shows metabolites. What the adult-use law says about employers has not been reviewed.",
+   "citation": "16 Del. C. §§ 4905A(a)(3) and 4907A",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-mpp-employment-medical"
+    "de-code-16-49a"
    ]
   },
   {
@@ -4115,13 +4161,13 @@
    "state": "ME",
    "question": "employment",
    "status": "partly-protected",
-   "short": "Medical patients only",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists Maine as barring an employer from refusing to employ or otherwise penalizing a person solely for being a qualifying patient or caregiver, unless that would violate federal law or cost a federal contract or funding. Not yet checked against the state’s own law.",
-   "citation": "22 M.R.S. § 2430-C(3), per the Marijuana Policy Project’s chart",
+   "short": "Medical patients and caregivers only",
+   "detail": "Maine’s medical cannabis law says an employer may not refuse to employ or otherwise penalize a person solely for being a qualifying patient or a caregiver, unless that would put the employer in violation of federal law or cost it a federal contract or funding. The same subsection allows limits on administering or growing cannabis on premises where that would be inconsistent with their general use, and lets a business owner who bans all smoking and posts notice ban smoking medical cannabis too. What the adult-use law says about employers has not been reviewed.",
+   "citation": "22 M.R.S. § 2430-C(3)",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-mpp-employment-medical"
+    "me-mrs-22-2430-c"
    ]
   },
   {
@@ -5983,13 +6029,13 @@
    "state": "SD",
    "question": "employment",
    "status": "partly-protected",
-   "short": "Medical patients only",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists South Dakota as giving registered patients the same rights as people prescribed medication in dealings with an employer and in drug testing. Its chart says the protections yield to federal obligations and that employers may act on a positive test for safety-sensitive jobs. Not yet checked against the state’s own law.",
-   "citation": "SDCL §§ 34-20G-22 and 34-20G-23, per the Marijuana Policy Project’s chart",
+   "short": "Medical patients; not safety-sensitive jobs",
+   "detail": "South Dakota law gives a registered qualifying patient who uses cannabis for a medical purpose the same rights, in dealings with an employer and in employer or government drug testing, as a person prescribed a pharmaceutical medication. An employer may still refuse to hire or take adverse action based solely on a positive test for cannabis metabolites where the job is safety-sensitive, meaning one the employer reasonably believes could cause illness, injury, death or serious property damage. Employers need not allow cannabis at work or impaired work and may enforce a drug-free workplace policy with testing; no claim for discrimination or wrongful termination arises from enforcing such a policy. The rights give way where they conflict with an employer’s federal obligations or would cost it a federal benefit.",
+   "citation": "SDCL §§ 34-20G-22 to 34-20G-24 and 34-20G-1(24)",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-mpp-employment-medical"
+    "sd-sdcl-34-20g"
    ]
   },
   {
@@ -6548,13 +6594,13 @@
    "state": "WV",
    "question": "employment",
    "status": "partly-protected",
-   "short": "Medical patients only",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists West Virginia as barring employers from discharging, refusing to hire or discriminating against a person solely for being certified to use medical cannabis, with an exception for federal law. Not yet checked against the state’s own law.",
-   "citation": "W. Va. Code § 16A-15-4, per the Marijuana Policy Project’s chart",
+   "short": "Certified medical patients only",
+   "detail": "West Virginia’s Medical Cannabis Act says no employer may discharge, threaten, refuse to hire or otherwise discriminate or retaliate against an employee solely because the employee is certified to use medical cannabis. An employer need not accommodate use on its premises, may discipline an employee for being under the influence at work when the employee’s conduct falls below the standard of care normally accepted for the position, and need not do anything that would violate federal law.",
+   "citation": "W. Va. Code § 16A-15-4(b)",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-mpp-employment-medical"
+    "wv-code-16a-15-4"
    ]
   },
   {
