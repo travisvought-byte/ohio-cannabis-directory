@@ -57,6 +57,22 @@ class StatePermissionsTest(unittest.TestCase):
         with self.assertRaises(AssertionError):
             validate(broken(lambda d: d['official_links'].update(ID={'source_id': 'natl-disa-map'})))
 
+    def test_medical_not_permitted_needs_an_official_source(self):
+        def change(d):
+            for a in d['answers']:
+                if (a['state'], a['question']) == ('ID', 'medical'):
+                    a['source_ids'] = ['natl-disa-map']
+        with self.assertRaises(AssertionError):
+            validate(broken(change))
+        sources = {s['id']: s for s in DATA['sources']}
+        for a in DATA['answers']:
+            if a['question'] == 'medical' and a['status'] == 'not-permitted':
+                self.assertNotEqual(evidence_level(a, sources), 'compilation', a['state'])
+
+    def test_official_links_cover_the_states_reviewed_for_issue_147(self):
+        reviewed = ['ID', 'IN', 'IA', 'KS', 'LA', 'MT', 'NE', 'NC', 'ND', 'SC', 'WA', 'WI', 'WY']
+        self.assertEqual([c for c in reviewed if c not in DATA['official_links']], [])
+
     def test_national_audience(self):
         audiences = {i['id']: i.get('audience', 'consumer') for i in DATA['national']}
         self.assertIn('business', audiences.values())

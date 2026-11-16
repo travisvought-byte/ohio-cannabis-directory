@@ -94,6 +94,9 @@ def validate(data):
         if a.get('effective_on') is not None:
             _date(a['effective_on'], where)
         cite(a['source_ids'], where)
+        if a['question'] == 'medical' and a['status'] == 'not-permitted':
+            assert any(sources[sid]['kind'] in OFFICIAL_KINDS for sid in a['source_ids']), \
+                f'{where}: "not permitted" for medical use needs a state source showing there is no program'
         for sid in a['source_ids']:
             assert _date(sources[sid]['retrieved_on'], sid) <= _date(a['reviewed_on'], where), \
                 f'{where}: reviewed before its source {sid} was retrieved'

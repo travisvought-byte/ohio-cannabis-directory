@@ -172,11 +172,26 @@
   "HI": {
    "source_id": "hi-doh-mc"
   },
+  "IA": {
+   "source_id": "ia-hhs-mc"
+  },
+  "ID": {
+   "source_id": "id-code-37-2732"
+  },
   "IL": {
    "source_id": "il-croo-home"
   },
+  "IN": {
+   "source_id": "in-code-35-48"
+  },
+  "KS": {
+   "source_id": "ks-ksa-21-5706"
+  },
   "KY": {
    "source_id": "ky-omc"
+  },
+  "LA": {
+   "source_id": "la-ldh-mm"
   },
   "MA": {
    "source_id": "ma-ccc-home"
@@ -201,6 +216,15 @@
   },
   "MT": {
    "source_id": "mt-dor-cannabis"
+  },
+  "NC": {
+   "source_id": "nc-gs-90-95"
+  },
+  "ND": {
+   "source_id": "nd-hhs-mm-patients"
+  },
+  "NE": {
+   "source_id": "ne-mcc-about"
   },
   "NH": {
    "source_id": "nh-dhhs-tcp"
@@ -232,6 +256,9 @@
   "RI": {
    "source_id": "ri-ccc-faq"
   },
+  "SC": {
+   "source_id": "sc-code-44-53"
+  },
   "SD": {
    "source_id": "sd-doh-mc"
   },
@@ -250,8 +277,14 @@
   "WA": {
    "source_id": "wa-lcb-know"
   },
+  "WI": {
+   "source_id": "wi-stat-961-32"
+  },
   "WV": {
    "source_id": "wv-omc"
+  },
+  "WY": {
+   "source_id": "wy-stat-title-35"
   }
  },
  "national": [
@@ -1148,6 +1181,222 @@
    "title": "Senate Bill S3294A (2025)",
    "url": "https://www.nysenate.gov/legislation/bills/2025/S3294/amendment/A",
    "retrieved_on": "2026-11-01"
+  },
+  {
+   "id": "id-code-37-2732",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Idaho Legislature",
+   "title": "Idaho Code 37-2732, Prohibited acts A — penalties",
+   "url": "https://legislature.idaho.gov/statutesrules/idstat/title37/t37ch27/sect37-2732/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "in-code-35-48",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Indiana General Assembly",
+   "title": "Indiana Code 2026, Title 35, Article 48 (controlled substances)",
+   "url": "https://iga.in.gov/ic/2026/Title_35/Article_48.pdf",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ia-code-124-401",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Iowa Legislature",
+   "title": "Iowa Code 124.401, Prohibited acts and penalties",
+   "url": "https://www.legis.iowa.gov/docs/code/124.401.pdf",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ia-hhs-mc",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Iowa Department of Health and Human Services",
+   "title": "Medical cannabis patients and caregivers",
+   "url": "https://hhs.iowa.gov/health-prevention/medical-cannabis-patients-caregivers",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ks-ksa-21-5706",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Kansas Office of Revisor of Statutes",
+   "title": "K.S.A. 21-5706, Unlawful possession of controlled substances",
+   "url": "https://www.ksrevisor.gov/statutes/chapters/ch21/021_057_0006.html",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "la-rs-40-966",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Louisiana State Legislature",
+   "title": "La. R.S. 40:966, Schedule I offenses and penalties",
+   "url": "https://www.legis.la.gov/Legis/Law.aspx?d=98880",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "la-ldh-mm",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Louisiana Department of Health",
+   "title": "Medical marijuana",
+   "url": "https://ldh.la.gov/bureau-of-sanitarian-services/medical-marijuana",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "mt-dor-adult-summary",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Montana Department of Revenue",
+   "title": "Adult-use consumer summary sheet (March 2024)",
+   "url": "https://revenuefiles.mt.gov/files/Cannabis/CCD-Adult-Consumer-Summary-Sheet.pdf",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "mt-dor-cardholder",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Montana Department of Revenue",
+   "title": "Medical marijuana cardholder information",
+   "url": "https://revenue.mt.gov/card/cannabis/cardholder-information",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ne-statute-28-416",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Nebraska Legislature",
+   "title": "Neb. Rev. Stat. 28-416, Prohibited acts; penalties",
+   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=28-416",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ne-statute-71-24-104",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Nebraska Legislature",
+   "title": "Neb. Rev. Stat. 71-24,104, Medical Cannabis Patient Protection Act definitions",
+   "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=71-24%2C104&print=true",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ne-mcc-about",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Nebraska Medical Cannabis Commission",
+   "title": "About the Nebraska Medical Cannabis Commission",
+   "url": "https://mcc.nebraska.gov/about-us",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ne-mcc-apply",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Nebraska Medical Cannabis Commission",
+   "title": "How to apply for a license",
+   "url": "https://mcc.nebraska.gov/how-to-apply",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "nc-gs-90-95",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "North Carolina General Assembly",
+   "title": "N.C. Gen. Stat. 90-95, Violations; penalties",
+   "url": "https://www.ncleg.gov/enactedlegislation/statutes/html/bysection/chapter_90/gs_90-95.html",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "nc-gs-90-94-1",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "North Carolina General Assembly",
+   "title": "N.C. Gen. Stat. 90-94.1, Hemp extract for intractable epilepsy",
+   "url": "https://www.ncleg.gov/enactedlegislation/statutes/pdf/bysection/chapter_90/gs_90-94.1.pdf",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "nd-ndcc-19-03-1",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "North Dakota Legislative Branch",
+   "title": "N.D.C.C. chapter 19-03.1, Uniform Controlled Substances Act",
+   "url": "https://ndlegis.gov/cencode/t19c03-1.pdf",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "nd-hhs-mm-patients",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "North Dakota Department of Health and Human Services",
+   "title": "ND Medical Marijuana Patients",
+   "url": "https://www.hhs.nd.gov/mm/patients",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "sc-code-44-53",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "South Carolina Legislature",
+   "title": "S.C. Code Title 44, Chapter 53, Poisons, drugs and other controlled substances",
+   "url": "https://scstatehouse.gov/code/t44c053.php",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "tn-ag-op-16-40",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Tennessee Attorney General",
+   "title": "Opinion 16-40, Authority of a municipality to decriminalize marijuana possession (2016)",
+   "url": "https://www.tn.gov/content/dam/tn/attorneygeneral/documents/ops/2016/op16-040.pdf",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "wa-doh-mc-faq",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Washington State Department of Health",
+   "title": "Medical cannabis frequently asked questions for patients",
+   "url": "https://doh.wa.gov/you-and-your-family/cannabis/medical-cannabis/patient-information/frequently-asked-questions",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "wa-rcw-69-51a-210",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Washington State Legislature",
+   "title": "RCW 69.51A.210, Amounts for qualifying patients (certified July 12, 2024)",
+   "url": "https://lawfilesext.leg.wa.gov/Law/RCWPDF/RCW%20%2069%20%20TITLE/RCW%20%2069%20.%2051A%20CHAPTER/RCW%20%2069%20.%2051A.210.pdf",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "wi-stat-961-32",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Wisconsin Legislature",
+   "title": "Wis. Stat. 961.32, Possession authorization",
+   "url": "https://docs.legis.wisconsin.gov/statutes/statutes/961/iii/32",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "wi-lrb-ab861",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Wisconsin Legislative Reference Bureau",
+   "title": "2023 Assembly Bill 861, analysis of current law (December 22, 2023)",
+   "url": "https://docs.legis.wisconsin.gov/2023/related/proposals/ab861",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "wy-stat-title-35",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Wyoming Legislature",
+   "title": "Wyoming Statutes Title 35, Public Health and Safety (W.S. 35-7-1031, 35-7-1063)",
+   "url": "https://wyoleg.gov/statutes/compress/title35.pdf",
+   "retrieved_on": "2026-11-15"
   }
  ],
  "answers": [
@@ -1749,26 +1998,25 @@
    "question": "adult-use",
    "status": "not-permitted",
    "short": "No",
-   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Iowa.",
-   "citation": "Ballotpedia; DISA national map",
+   "detail": "Iowa has no adult-use law. A first conviction for possessing marijuana can bring up to six months in jail, a fine of up to $1,000, or both. Penalties rise for repeat offenses.",
+   "citation": "Iowa Code 124.401(5)",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-ballotpedia-laws",
-    "natl-disa-map"
+    "ia-code-124-401"
    ]
   },
   {
    "state": "IA",
    "question": "medical",
    "status": "limited",
-   "short": "CBD oil only",
-   "detail": "DISA’s national map lists Iowa as CBD oil only, marked as legislation passed with a future effective date.",
-   "citation": "DISA national map",
+   "short": "Medical cannabidiol card program",
+   "detail": "The Iowa Department of Health and Human Services registers patients 18 and older who have a health care practitioner’s certification, with cards good for one year. Cardholders buy from five licensed dispensaries. The program page also links a waiver form for the limit of 4.5 grams of THC per 90 days.",
+   "citation": "Iowa Department of Health and Human Services, Medical cannabis patients and caregivers",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-disa-map"
+    "ia-hhs-mc"
    ]
   },
   {
@@ -1776,26 +2024,25 @@
    "question": "adult-use",
    "status": "not-permitted",
    "short": "No",
-   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Idaho.",
-   "citation": "Ballotpedia; DISA national map",
+   "detail": "Idaho has no adult-use law. Possessing 3 ounces of marijuana or less is a misdemeanor, with a fine of at least $300 for anyone 18 or older. More than 3 ounces is a felony punishable by up to 5 years in prison, a fine of up to $10,000, or both.",
+   "citation": "Idaho Code 37-2732(e)",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-ballotpedia-laws",
-    "natl-disa-map"
+    "id-code-37-2732"
    ]
   },
   {
    "state": "ID",
    "question": "medical",
    "status": "not-permitted",
-   "short": "No state program",
-   "detail": "DISA’s national map lists no legal medical use in Idaho.",
-   "citation": "DISA national map",
+   "short": "No medical marijuana law",
+   "detail": "Idaho has no medical marijuana law. The possession penalties in Idaho Code 37-2732 make no exception for medical use.",
+   "citation": "Idaho Code 37-2732",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-disa-map"
+    "id-code-37-2732"
    ]
   },
   {
@@ -1894,26 +2141,25 @@
    "question": "adult-use",
    "status": "not-permitted",
    "short": "No",
-   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Indiana.",
-   "citation": "Ballotpedia; DISA national map",
+   "detail": "Indiana has no adult-use law. Possessing marijuana is a Class B misdemeanor. It is a Class A misdemeanor with a prior drug conviction, and a Level 6 felony with a prior drug conviction and 30 grams or more.",
+   "citation": "Indiana Code 35-48-4-11",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-ballotpedia-laws",
-    "natl-disa-map"
+    "in-code-35-48"
    ]
   },
   {
    "state": "IN",
    "question": "medical",
-   "status": "limited",
-   "short": "CBD oil only",
-   "detail": "DISA’s national map lists Indiana as CBD oil only.",
-   "citation": "DISA national map",
+   "status": "not-permitted",
+   "short": "No medical marijuana law",
+   "detail": "Indiana has no medical marijuana law. Its possession statute, Indiana Code 35-48-4-11, makes no exception for medical use.",
+   "citation": "Indiana Code 35-48-4-11",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-disa-map"
+    "in-code-35-48"
    ]
   },
   {
@@ -1921,26 +2167,25 @@
    "question": "adult-use",
    "status": "not-permitted",
    "short": "No",
-   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Kansas.",
-   "citation": "Ballotpedia; DISA national map",
+   "detail": "Kansas has no adult-use law. Possessing marijuana is a Class B nonperson misdemeanor. One prior conviction makes it a Class A misdemeanor, and two or more make it a drug felony.",
+   "citation": "K.S.A. 21-5706(c)(3)",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-ballotpedia-laws",
-    "natl-disa-map"
+    "ks-ksa-21-5706"
    ]
   },
   {
    "state": "KS",
    "question": "medical",
-   "status": "not-permitted",
-   "short": "No state program",
-   "detail": "DISA’s national map lists no legal medical use in Kansas.",
-   "citation": "DISA national map",
+   "status": "limited",
+   "short": "Legal defense for CBD treatment oil",
+   "detail": "Kansas law gives an affirmative defense to a person charged with possessing a cannabidiol treatment preparation for a debilitating medical condition who has a letter from a Kansas physician dated within the past 15 months. It is a defense in court, not a program for buying medical marijuana.",
+   "citation": "K.S.A. 21-5706(d)",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-disa-map"
+    "ks-ksa-21-5706"
    ]
   },
   {
@@ -1975,26 +2220,26 @@
    "question": "adult-use",
    "status": "medical-only",
    "short": "No",
-   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Louisiana. Access runs through the state medical program.",
-   "citation": "Ballotpedia; DISA national map",
+   "detail": "Louisiana has no adult-use law. Without medical authorization, possessing 14 grams or less brings a summons and a fine of up to $100. A first conviction for more than 14 grams can bring up to six months in jail, a $500 fine, or both.",
+   "citation": "La. R.S. 40:966",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-ballotpedia-laws",
-    "natl-disa-map"
+    "la-rs-40-966"
    ]
   },
   {
    "state": "LA",
    "question": "medical",
    "status": "allowed",
-   "short": "Yes",
-   "detail": "DISA’s national map lists medical use as legal in Louisiana. The state program page has not been reviewed for this answer yet.",
-   "citation": "DISA national map",
+   "short": "Yes, with a clinician’s recommendation",
+   "detail": "The Louisiana Department of Health regulates medical marijuana. A patient with a recommendation from an authorized clinician buys from licensed retailers, and raw flower is limited to 71 grams (2.5 ounces) every 14 days. State law exempts patients in the program from the possession penalties.",
+   "citation": "Louisiana Department of Health; La. R.S. 40:966(F)",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-disa-map"
+    "la-ldh-mm",
+    "la-rs-40-966"
    ]
   },
   {
@@ -2394,26 +2639,25 @@
    "question": "adult-use",
    "status": "allowed",
    "short": "Yes, 21 and older",
-   "detail": "Ballotpedia’s list (current as of January 2026) and DISA’s map (November 2, 2026) both list Montana among states with legal adult use. The official state page has not been reviewed for this answer yet.",
-   "citation": "Ballotpedia; DISA national map",
+   "detail": "Adults 21 and older with ID may buy from licensed dispensaries in counties where adult sales are allowed (green counties). Possession limits are 1 ounce of flower, 8 grams of concentrate and 800 milligrams of THC in products. Using marijuana in a public place is prohibited.",
+   "citation": "Montana Department of Revenue, adult-use consumer summary",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-ballotpedia-laws",
-    "natl-disa-map"
+    "mt-dor-adult-summary"
    ]
   },
   {
    "state": "MT",
    "question": "medical",
    "status": "allowed",
-   "short": "Yes",
-   "detail": "DISA’s national map lists medical use as legal in Montana.",
-   "citation": "DISA national map",
+   "short": "Yes, with a registry card",
+   "detail": "Montana residents with a Montana physician’s recommendation can get a one-year registry card for $20 and buy up to 1 ounce a day and 5 ounces a month at any licensed dispensary.",
+   "citation": "Montana Department of Revenue, cardholder information",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-disa-map"
+    "mt-dor-cardholder"
    ]
   },
   {
@@ -2421,26 +2665,25 @@
    "question": "adult-use",
    "status": "not-permitted",
    "short": "No",
-   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes North Carolina.",
-   "citation": "Ballotpedia; DISA national map",
+   "detail": "North Carolina has no adult-use law. Possessing half an ounce or less is a Class 3 misdemeanor. More than half an ounce, up to 1.5 ounces, is a Class 1 misdemeanor, and more than 1.5 ounces is a Class I felony.",
+   "citation": "N.C. Gen. Stat. 90-95(d)(4)",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-ballotpedia-laws",
-    "natl-disa-map"
+    "nc-gs-90-95"
    ]
   },
   {
    "state": "NC",
    "question": "medical",
-   "status": "not-permitted",
-   "short": "No state program",
-   "detail": "DISA’s national map lists no legal medical use in North Carolina.",
-   "citation": "DISA national map",
+   "status": "limited",
+   "short": "Hemp extract for intractable epilepsy",
+   "detail": "State law lets a caregiver possess and give hemp extract with less than 0.9% THC and at least 5% CBD to a person with intractable epilepsy, with a certificate of analysis for the extract.",
+   "citation": "N.C. Gen. Stat. 90-94.1",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-disa-map"
+    "nc-gs-90-94-1"
    ]
   },
   {
@@ -2448,26 +2691,25 @@
    "question": "adult-use",
    "status": "medical-only",
    "short": "No",
-   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes North Dakota. Access runs through the state medical program.",
-   "citation": "Ballotpedia; DISA national map",
+   "detail": "North Dakota has no adult-use law. Without a medical card, possessing less than half an ounce is an infraction. Half an ounce up to 500 grams is a class B misdemeanor, and more than 500 grams is a class A misdemeanor.",
+   "citation": "N.D.C.C. 19-03.1-23(7)(d)",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-ballotpedia-laws",
-    "natl-disa-map"
+    "nd-ndcc-19-03-1"
    ]
   },
   {
    "state": "ND",
    "question": "medical",
    "status": "allowed",
-   "short": "Yes",
-   "detail": "DISA’s national map lists medical use as legal in North Dakota. The state program page could not be retrieved on November 15, 2026.",
-   "citation": "DISA national map",
+   "short": "Yes, with a state registry card",
+   "detail": "North Dakota residents with written certification from a North Dakota-licensed provider can apply for a registry card ($40). Cardholders may buy only from the state’s eight registered dispensaries; state law does not protect marijuana bought anywhere else.",
+   "citation": "North Dakota Department of Health and Human Services, Medical Marijuana Patients",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-disa-map"
+    "nd-hhs-mm-patients"
    ]
   },
   {
@@ -2475,27 +2717,27 @@
    "question": "adult-use",
    "status": "medical-only",
    "short": "No",
-   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Nebraska. Access runs through the state medical program.",
-   "citation": "Ballotpedia; DISA national map",
+   "detail": "Nebraska has no adult-use law. Without a medical recommendation, a first offense for 1 ounce or less is an infraction with a citation and a $300 fine, and a drug education course may be required. More than 1 ounce, up to 1 pound, is a Class III misdemeanor.",
+   "citation": "Neb. Rev. Stat. 28-416",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-ballotpedia-laws",
-    "natl-disa-map"
+    "ne-statute-28-416"
    ]
   },
   {
    "state": "NE",
    "question": "medical",
    "status": "allowed",
-   "short": "Yes, approved by voters in 2024",
-   "detail": "Ballotpedia reports that Nebraska legalized medical marijuana by a 2024 initiative, and DISA lists medical use as legal. Patient access in practice is not yet reviewed.",
-   "citation": "Ballotpedia; DISA national map",
+   "short": "Yes, with a written recommendation",
+   "detail": "Voters approved Initiative 437 in 2024. It lets a qualified patient with a health care practitioner’s written recommendation use and possess up to 5 ounces of cannabis. The Nebraska Medical Cannabis Commission regulates the program; its application page says only cultivator and manufacturer license applications have opened so far.",
+   "citation": "Neb. Rev. Stat. 71-24,104; Nebraska Medical Cannabis Commission",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-ballotpedia-laws",
-    "natl-disa-map"
+    "ne-statute-71-24-104",
+    "ne-mcc-about",
+    "ne-mcc-apply"
    ]
   },
   {
@@ -3153,26 +3395,25 @@
    "question": "adult-use",
    "status": "not-permitted",
    "short": "No",
-   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes South Carolina.",
-   "citation": "Ballotpedia; DISA national map",
+   "detail": "South Carolina has no adult-use law. A first offense for 1 ounce or less is a misdemeanor punishable by up to 30 days in jail or a fine of $100 to $200. A second or later offense can bring up to a year in jail or a fine of at least $200.",
+   "citation": "S.C. Code 44-53-370(d)(5)",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-ballotpedia-laws",
-    "natl-disa-map"
+    "sc-code-44-53"
    ]
   },
   {
    "state": "SC",
    "question": "medical",
-   "status": "not-permitted",
-   "short": "No state program",
-   "detail": "DISA’s national map lists no legal medical use in South Carolina.",
-   "citation": "DISA national map",
+   "status": "limited",
+   "short": "Low-THC CBD for severe epilepsy",
+   "detail": "State law excludes from the definition of marijuana a cannabidiol product with no more than 0.9% THC and more than 15% CBD, for a person with severe epilepsy, such as Lennox-Gastaut or Dravet syndrome, who has a written certification from a South Carolina-licensed physician.",
+   "citation": "S.C. Code 44-53-110 (definition of marijuana)",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-disa-map"
+    "sc-code-44-53"
    ]
   },
   {
@@ -3207,11 +3448,12 @@
    "question": "adult-use",
    "status": "not-permitted",
    "short": "No",
-   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Tennessee.",
-   "citation": "Ballotpedia; DISA national map",
+   "detail": "Tennessee has no adult-use law. The Attorney General’s 2016 opinion describes possessing any amount as a Class A misdemeanor (up to 11 months and 29 days in jail, a fine of up to $2,500, or both), with minimum fines starting at $250. National compilations list no adult use as of November 2026.",
+   "citation": "Tenn. Code Ann. 39-17-418, per Attorney General Opinion 16-40; Ballotpedia; DISA national map",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
+    "tn-ag-op-16-40",
     "natl-ballotpedia-laws",
     "natl-disa-map"
    ]
@@ -3458,13 +3700,14 @@
    "state": "WA",
    "question": "medical",
    "status": "allowed",
-   "short": "Yes",
-   "detail": "DISA’s national map lists medical use as legal in Washington. The state medical program page has not been reviewed for this answer yet.",
-   "citation": "DISA national map",
+   "short": "Yes, with a practitioner’s authorization",
+   "detail": "With a health care practitioner’s authorization, an adult patient may grow up to four plants. A recognition card from a medically endorsed store adds tax exemptions and higher limits: by default up to 3 ounces of usable cannabis (or equivalent products) and six plants. Patients 18 to 20 must register to buy.",
+   "citation": "Washington State Department of Health; RCW 69.51A.210",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-disa-map"
+    "wa-doh-mc-faq",
+    "wa-rcw-69-51a-210"
    ]
   },
   {
@@ -3485,11 +3728,12 @@
    "question": "adult-use",
    "status": "not-permitted",
    "short": "No",
-   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Wisconsin.",
-   "citation": "Ballotpedia; DISA national map",
+   "detail": "Wisconsin has no adult-use law. A first conviction for possession is a misdemeanor (a fine of up to $1,000, up to six months in jail, or both), and a repeat conviction is a Class I felony. That is the Legislative Reference Bureau’s December 2023 summary of current law; national compilations list no adult use as of November 2026.",
+   "citation": "Wis. Stat. 961.41(3g)(e), per Legislative Reference Bureau analysis; Ballotpedia; DISA national map",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
+    "wi-lrb-ab861",
     "natl-ballotpedia-laws",
     "natl-disa-map"
    ]
@@ -3498,13 +3742,13 @@
    "state": "WI",
    "question": "medical",
    "status": "limited",
-   "short": "CBD oil only",
-   "detail": "DISA’s national map lists Wisconsin as CBD oil only.",
-   "citation": "DISA national map",
+   "short": "CBD with a physician’s certification",
+   "detail": "State law lets a person possess a cannabidiol product with a certification from a Wisconsin-licensed physician, issued within the past year, stating that it treats a medical condition.",
+   "citation": "Wis. Stat. 961.32(2m)",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-disa-map"
+    "wi-stat-961-32"
    ]
   },
   {
@@ -3539,26 +3783,25 @@
    "question": "adult-use",
    "status": "not-permitted",
    "short": "No",
-   "detail": "Neither Ballotpedia’s list of adult-use states (current as of January 2026) nor DISA’s map (updated November 2, 2026) includes Wyoming.",
-   "citation": "Ballotpedia; DISA national map",
+   "detail": "Wyoming has no adult-use law. Possessing up to 3 ounces of marijuana in plant form is a misdemeanor punishable by up to 12 months in jail, a $1,000 fine, or both. Larger amounts are a felony punishable by up to 5 years in prison, a $10,000 fine, or both.",
+   "citation": "W.S. 35-7-1031(c)",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-ballotpedia-laws",
-    "natl-disa-map"
+    "wy-stat-title-35"
    ]
   },
   {
    "state": "WY",
    "question": "medical",
    "status": "not-permitted",
-   "short": "No state program",
-   "detail": "DISA’s national map lists no legal medical use in Wyoming.",
-   "citation": "DISA national map",
+   "short": "No medical marijuana law",
+   "detail": "Wyoming law bars practitioners from prescribing or dispensing marijuana or THC except FDA-approved drugs such as dronabinol. Its former article on supervised medical use of hemp extracts (W.S. 35-7-1901 to 35-7-1903) was repealed in 2019, and hemp products are now outside the controlled substances law.",
+   "citation": "W.S. 35-7-1031(c) and 35-7-1063",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-disa-map"
+    "wy-stat-title-35"
    ]
   }
  ]
