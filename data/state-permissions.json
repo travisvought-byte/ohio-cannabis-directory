@@ -1,6 +1,6 @@
 {
  "schema_version": "1.1.0",
- "as_of": "2026-11-15",
+ "as_of": "2026-11-16",
  "purpose": "What adults and patients may do in each state, answered with the same questions for all 50 states and DC. Built top-down: national compilations that cover every state come first, then each state’s official sources. Every answer names its sources and the date it was checked. Missing answers mean not yet reviewed, never that something is prohibited.",
  "required_questions": [
   "adult-use",
@@ -2588,6 +2588,141 @@
    "title": "Expunging Adult Criminal Records",
    "url": "https://www.utcourts.gov/en/self-help/case-categories/criminal-justice/expunge.html",
    "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "vt-act-167-2020",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Vermont General Assembly",
+   "title": "Act No. 167 of 2020 (S.234), miscellaneous judiciary procedures; Sec. 31, expungement of marijuana criminal history records",
+   "url": "https://legislature.vermont.gov/Documents/2020/Docs/ACTS/ACT167/ACT167%20As%20Enacted.pdf",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "vt-vsa-13-7602",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Vermont General Assembly",
+   "title": "13 V.S.A. § 7602, expungement and sealing of record, postconviction; procedure",
+   "url": "https://legislature.vermont.gov/statutes/section/13/230/07602",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "vt-vsa-13-7601",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Vermont General Assembly",
+   "title": "13 V.S.A. § 7601, definitions (qualifying crimes for sealing)",
+   "url": "https://legislature.vermont.gov/statutes/section/13/230/07601",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "ok-osbi-clean-slate",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Oklahoma State Bureau of Investigation",
+   "title": "Clean Slate Initiative (last modified November 5, 2026)",
+   "url": "https://oklahoma.gov/osbi/cleanslate",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "ok-osbi-expungement",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Oklahoma State Bureau of Investigation",
+   "title": "Criminal History Record Expungement (last modified July 23, 2026)",
+   "url": "https://oklahoma.gov/osbi/services/information-services-division/disposition-services-unit/criminal-history-record-expungement.html",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "nc-courts-expunctions",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "North Carolina Judicial Branch",
+   "title": "Expunctions (help topic)",
+   "url": "https://www.nccourts.gov/help-topics/court-records/expunctions",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "nc-gs-15a-145-2",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "North Carolina General Assembly",
+   "title": "G.S. 15A-145.2, expunction of records for first offenders not over 21 years of age at the time of the offense of certain drug offenses",
+   "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_15A/GS_15A-145.2.html",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "nd-courts-expungement-guide",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "North Dakota Courts (Legal Self Help Center)",
+   "title": "Expungement of Criminal Records, research guide (revised May 2024)",
+   "url": "https://www.ndcourts.gov/Media/Default/Legal%20Resources/Legal%20Self%20Help/Other%20Forms/Expungement.pdf",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "nd-courts-sealing-guide",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "North Dakota Courts (Legal Self Help Center)",
+   "title": "Sealing Criminal Records (N.D.C.C. ch. 12-60.1), research guide (revised August 27, 2025)",
+   "url": "https://www.ndcourts.gov/Media/Default/legal-resources/legal-self-help/other-forms/Sealing%20Criminal%20Records%20Research%20Guide.pdf",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "ky-courts-expungement",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Kentucky Court of Justice, Administrative Office of the Courts",
+   "title": "Expungement Certification Process",
+   "url": "https://kycourts.gov/AOC/Information-and-Technology/Pages/Expungement.aspx",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "in-courts-expungement-digest",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Indiana Judicial Branch",
+   "title": "Expungement Digest for Court Staff and Clerks, I.C. 35-38-9 (updated July 1, 2026)",
+   "url": "https://secure.in.gov/courts/iocs/files/pubs-trial-court-courtmgmt-expungement-digest-for-courtstaffandclerks.pdf",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "tx-sll-expunction-faq",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Texas State Law Library",
+   "title": "Expunctions and Nondisclosure Orders, legal FAQ (updated May 20, 2025)",
+   "url": "https://sll.texas.gov/faqs/expunctions-nondisclosure-orders",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "ar-acic-sealing-forms",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Arkansas Crime Information Center (Department of Public Safety)",
+   "title": "Criminal history forms: petitions and orders to seal (last modified October 26, 2026)",
+   "url": "https://dps.arkansas.gov/crime-info-support/arkansas-crime-information-center/forms/criminal-history/",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "la-ccrp-977",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Louisiana State Legislature",
+   "title": "Code of Criminal Procedure Art. 977, motion to expunge a record of arrest and conviction of a misdemeanor offense",
+   "url": "https://www.legis.la.gov/LEGIS/Law.aspx?d=919669",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "la-ccrp-983",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Louisiana State Legislature",
+   "title": "Code of Criminal Procedure Art. 983, costs of expungement of a record",
+   "url": "https://legis.la.gov/legis/Law.aspx?d=919675",
+   "retrieved_on": "2026-11-16"
   }
  ],
  "answers": [
@@ -2775,6 +2910,19 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "ar-adh-mmj"
+   ]
+  },
+  {
+   "state": "AR",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Court petition under the 2013 sealing act",
+   "detail": "Arkansas seals records through the court where the person was sentenced, using uniform petitions under the Comprehensive Criminal Record Sealing Act (Act 1460 of 2013). The Arkansas Crime Information Center posts separate petitions for misdemeanors, felonies, convictions for possession of a controlled substance, dismissals and acquittals, arrests and pardoned offenses, and for first offenders under Act 346 of 1975. Once a judge signs the order, the clerk sends it to the Center, which has 30 days to update its records. The page describes no automatic sealing, lists no fee and does not mention marijuana; the law covers criminal records in general.",
+   "citation": "Act 1460 of 2013 (Ark. Code § 16-90-1401 et seq.), per the Arkansas Crime Information Center’s forms page",
+   "effective_on": null,
+   "reviewed_on": "2026-11-16",
+   "source_ids": [
+    "ar-acic-sealing-forms"
    ]
   },
   {
@@ -3874,6 +4022,19 @@
    ]
   },
   {
+   "state": "IN",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Court petition after 5 to 10 years, once",
+   "detail": "Indiana expunges records by petition under I.C. 35-38-9. Misdemeanor convictions can be expunged five years after conviction, Class D or Level 6 felonies eight years after, and other eligible felonies after longer waits, unless the prosecutor agrees to less. Conviction petitions may be filed only once in a lifetime (petitions in several counties count as one if filed within 365 days) and carry the civil filing fee unless waived. Arrests and charges that did not end in a conviction can be expunged after one year with no fee, and the courts’ digest describes some orders entered without a petition, such as after an acquittal. Records are sealed or marked expunged, not destroyed. The law covers criminal records in general and does not name marijuana.",
+   "citation": "I.C. 35-38-9, per the Indiana Judicial Branch’s Expungement Digest (July 1, 2026)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-16",
+   "source_ids": [
+    "in-courts-expungement-digest"
+   ]
+  },
+  {
    "state": "KS",
    "question": "adult-use",
    "status": "not-permitted",
@@ -3926,6 +4087,19 @@
    ]
   },
   {
+   "state": "KY",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Court petition with a $40 eligibility certificate",
+   "detail": "Kentucky’s courts expunge convictions only on petition, filed with the circuit court clerk in the county of the charge with a $40 eligibility certification from the Administrative Office of the Courts. Most Class D felonies are eligible (KRS 431.073), and the courts’ list includes marijuana cultivation under KRS 218A.1423; the wait is five years after the sentence, probation or parole ends, with a $50 filing fee and a $250 fee if granted. Misdemeanor and violation convictions go through KRS 431.078, whose waiting period and fee the page does not state. Cases dismissed with prejudice or ending in acquittal on or after July 15, 2020, other than traffic cases, are expunged automatically after 30 days unless the defendant objects. The law covers criminal records in general.",
+   "citation": "KRS 431.073, 431.076 and 431.078, per the Kentucky Court of Justice’s Expungement Certification Process page",
+   "effective_on": null,
+   "reviewed_on": "2026-11-16",
+   "source_ids": [
+    "ky-courts-expungement"
+   ]
+  },
+  {
    "state": "LA",
    "question": "adult-use",
    "status": "medical-only",
@@ -3963,6 +4137,20 @@
    "source_ids": [
     "la-ldh-mm",
     "la-rs-40-966"
+   ]
+  },
+  {
+   "state": "LA",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "First marijuana possession: motion after 90 days",
+   "detail": "Louisiana courts expunge a misdemeanor conviction on motion. A first-offense misdemeanor conviction for possessing marijuana, THC or its derivatives can be expunged once 90 days have passed since the conviction (C.Cr.P. art. 977(D)). Other misdemeanor convictions qualify once set aside under Article 894(B), or five years after the sentence ends with no felony conviction or pending felony charge, as certified by the district attorney; some offenses, such as domestic abuse battery and stalking, are excluded. The total cost is capped at $550, with fee exemptions such as for some dismissed cases; a lower $300 cap for first-offense marijuana possession (art. 983(M)) ended on August 1, 2026 under its own terms. Felony convictions follow separate rules.",
+   "citation": "La. C.Cr.P. arts. 977 and 983",
+   "effective_on": null,
+   "reviewed_on": "2026-11-16",
+   "source_ids": [
+    "la-ccrp-977",
+    "la-ccrp-983"
    ]
   },
   {
@@ -4957,6 +5145,20 @@
    ]
   },
   {
+   "state": "NC",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Court petition; drug law for first offenders 21 or under",
+   "detail": "North Carolina’s courts expunge charges and convictions on petition. A drug-specific statute (G.S. 15A-145.2) covers drug charges dismissed after a conditional discharge or ending in dismissal or acquittal, and a first conviction for simple possession of a controlled substance or drug paraphernalia, or a felony under G.S. 90-95(a)(3), by someone not over 21 at the time: the petition may be filed 12 months after the conviction, once in a lifetime, after a drug education program, with a $175 fee unless the person is indigent. Other nonviolent misdemeanor and felony convictions go through the general statute (G.S. 15A-145.5), with waiting periods set in each statute. The courts’ page says some petitions, such as those for charges dismissed or ending in a not-guilty verdict, carry no fee unless the dismissal followed diversion. Neither source names marijuana.",
+   "citation": "G.S. 15A-145.2; North Carolina Judicial Branch, Expunctions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-16",
+   "source_ids": [
+    "nc-courts-expunctions",
+    "nc-gs-15a-145-2"
+   ]
+  },
+  {
    "state": "ND",
    "question": "adult-use",
    "status": "medical-only",
@@ -4980,6 +5182,20 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "nd-hhs-mm-patients"
+   ]
+  },
+  {
+   "state": "ND",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "First possession of 1 oz or less, by motion",
+   "detail": "North Dakota’s courts say a person convicted of possessing an ounce or less of marijuana may move the court to expunge the record if it was a first offense and, as the guide puts it, there is no other conviction within two years (N.D.C.C. § 19-03.1-23). Other convictions can be sealed by petition under the general law (N.D.C.C. chapter 12-60.1): three years without a new conviction after a misdemeanor, five after a felony, with exceptions for some violent and sex offenses. Sealed records are kept but not disclosed, and criminal history reported to the Bureau of Criminal Investigation cannot be sealed. The courts’ guide also says people convicted of marijuana possession, ingestion or paraphernalia with no conviction in the past five years may apply for a summary pardon, which the Governor signs.",
+   "citation": "N.D.C.C. § 19-03.1-23 and ch. 12-60.1, per the North Dakota Courts’ research guides (May 2024; August 2025)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-16",
+   "source_ids": [
+    "nd-courts-expungement-guide",
+    "nd-courts-sealing-guide"
    ]
   },
   {
@@ -5773,6 +5989,20 @@
    ]
   },
   {
+   "state": "OK",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Request portal since Nov. 2026, or court petition",
+   "detail": "The Oklahoma State Bureau of Investigation describes Clean Slate as a state-initiated process that expunges certain eligible records without a court petition (22 O.S. §§ 18b and 19d). On November 1, 2026 it opened an online portal where a person asks it to expunge an eligible record; the record must show a final disposition, such as a conviction or dismissal. The Bureau’s pages do not say when records will be sealed without a request, and the statute sections could not be read from an official site, so this answer describes the request process. Court petitions under 22 O.S. §§ 18 and 19 remain; the Bureau lists no fee to expunge a court record and charges $150 to process an order expunging an arrest record. The law covers criminal records in general; neither page names cannabis offenses.",
+   "citation": "Oklahoma State Bureau of Investigation, Clean Slate Initiative (November 5, 2026) and Criminal History Record Expungement (July 23, 2026)",
+   "effective_on": "2026-11-01",
+   "reviewed_on": "2026-11-16",
+   "source_ids": [
+    "ok-osbi-clean-slate",
+    "ok-osbi-expungement"
+   ]
+  },
+  {
    "state": "OR",
    "question": "adult-use",
    "status": "allowed",
@@ -6238,6 +6468,19 @@
    ]
   },
   {
+   "state": "TX",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Expunction or nondisclosure order through the courts",
+   "detail": "Texas clears records through the courts in two ways. An expunction (Code of Criminal Procedure chapter 55) removes records entirely and is mainly for charges never filed or dismissed, acquittals, pardons and a few listed convictions. An order of nondisclosure (Government Code chapter 411, subchapter E-1) seals an offense from public view after deferred adjudication, or after community supervision for a qualifying misdemeanor or a DWI, following a waiting period of up to five years; a person petitions for it, and law enforcement and some agencies can still see the record. The State Law Library’s summary says its list is not complete and does not mention marijuana.",
+   "citation": "Tex. Code Crim. Proc. ch. 55 and Tex. Gov’t Code ch. 411, subch. E-1, per the Texas State Law Library (May 20, 2025)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-16",
+   "source_ids": [
+    "tx-sll-expunction-faq"
+   ]
+  },
+  {
    "state": "UT",
    "question": "adult-use",
    "status": "medical-only",
@@ -6535,13 +6778,15 @@
    "state": "VT",
    "question": "record-relief",
    "status": "automatic",
-   "short": "Small possession and cultivation records",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists Vermont as requiring automatic expungement, by January 1, 2022, of records involving up to two ounces of cannabis, 10 grams of hashish, four mature plants and eight immature plants. Its table says expungement and sealing by petition is available for other offenses after a waiting period. Not yet checked against the state’s own law.",
-   "citation": "Marijuana Policy Project’s table of legalization states’ expungement laws",
-   "effective_on": null,
-   "reviewed_on": "2026-11-15",
+   "short": "Pre-2021 possession records expunged by Jan. 2022",
+   "detail": "Vermont’s Act 167 of 2020 directed the Criminal Division of the Superior Court to order the expungement of criminal history records of violations of 18 V.S.A. § 4230(a)(1) committed before January 1, 2021, with no petition, and gave the court and every entity holding such records until January 1, 2022 to finish. The same act made that offense a civil violation from January 1, 2021; as amended it covers possessing more than one ounce of marijuana or five grams of hashish, or growing more than two mature or four immature plants, below the amounts that remain crimes. The court must notify the person and issue a certificate that the offense has been decriminalized; the act sets no fee. Other cannabis convictions go through the general law by petition: a conviction for conduct no longer prohibited can be expunged once the sentence is complete and restitution and surcharges are paid, and qualifying convictions can be sealed three years (misdemeanors) or seven years (felonies, which include drug offenses under § 4230) after the sentence unless the prosecutor shows sealing is against the interests of justice.",
+   "citation": "Act No. 167 of 2020, Sec. 31; 13 V.S.A. §§ 7601 and 7602",
+   "effective_on": "2020-10-07",
+   "reviewed_on": "2026-11-16",
    "source_ids": [
-    "natl-mpp-expungement"
+    "vt-act-167-2020",
+    "vt-vsa-13-7602",
+    "vt-vsa-13-7601"
    ]
   },
   {
