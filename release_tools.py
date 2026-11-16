@@ -13,7 +13,7 @@ def release(version,released_on=None):
  p=ROOT/'CITATION.cff';s=p.read_text();s=re.sub(r"version: '[^']+'",f"version: '{version}'",s);s=re.sub(r"date-released: '[^']+'",f"date-released: '{released_on}'",s);p.write_text(s)
  p=ROOT/'README.md';s=p.read_text();s=re.sub(r'\*\*Current site release:\*\* [^\n]+',f'**Current site release:** {version} · {published.strftime("%B %-d, %Y")}.',s);p.write_text(s)
  importlib.import_module('export_directory').main()
- for name in ['directory','intake','relationships','resources','seeds','state','locations','knowledge','ancestry','tools','advocacy','lawmakers','expungement','compare']:
+ for name in ['directory','intake','relationships','resources','seeds','state','locations','knowledge','ancestry','tools','advocacy','lawmakers','expungement','compare','national']:
   importlib.import_module('build_'+name).main()
  if (ROOT/'build_home.py').exists():importlib.import_module('build_home').main()
  importlib.import_module('build_review_queue').main()

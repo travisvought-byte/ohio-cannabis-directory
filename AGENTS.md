@@ -30,6 +30,7 @@ Each assistant works only in its lane. Two assistants never work on the same fil
 - `data/directory.json` is canonical: organizations, locations, services, evidence, relationships, events, rules, pathways and routes.
 - Everything below is **generated**. Do not hand-edit it; change the canonical data or the build script, then regenerate:
   - every `*.html` page at the repository root
+  - every page in `national/` (built by `build_national.py` from `data/state-permissions.json` and `data/state-scorecard.json`; rebuild it whenever either file changes)
   - `ohio-cannabis-directory.csv`, `b2b-relationships.csv`, `seed-suppliers.json`
   - `data/public-*.json`, `data/home-search.json`, `data/review-queue.json`, `architecture/REVIEW_QUEUE.md`
 - Keep existing record IDs. Never reuse or renumber an ID.
