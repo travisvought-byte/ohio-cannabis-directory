@@ -2552,6 +2552,42 @@
    "title": "Patient Rights & Responsibilities (last modified November 13, 2026)",
    "url": "https://oklahoma.gov/omma/patients-caregivers/patient-rights-and-responsibilities.html",
    "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "nh-rsa-651-5-b",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "New Hampshire General Court",
+   "title": "RSA 651:5-b, annulment of arrests and convictions for marijuana possession",
+   "url": "https://gc.nh.gov/rsa/html/LXII/651/651-5-b.htm",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "nh-courts-marijuana-annulment",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "New Hampshire Judicial Branch",
+   "title": "Annulling Personal Possession (3/4 oz. or less) of Marijuana (Court Service Center instructions, revised August 24, 2020)",
+   "url": "https://www.courts.nh.gov/sites/g/files/ehbemt471/files/documents/2021-04/marijuanaannulment.pdf",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "hi-hrs-706-622-5",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Hawaii State Legislature",
+   "title": "HRS § 706-622.5, sentencing for drug offenders; expungement",
+   "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol14_Ch0701-0853/HRS0706/HRS_0706-0622_0005.htm",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ut-courts-expunge",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Utah State Courts",
+   "title": "Expunging Adult Criminal Records",
+   "url": "https://www.utcourts.gov/en/self-help/case-categories/criminal-justice/expunge.html",
+   "retrieved_on": "2026-11-15"
   }
  ],
  "answers": [
@@ -3613,6 +3649,19 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "hi-doh-mc"
+   ]
+  },
+  {
+   "state": "HI",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Possession of 3 grams or less, by motion",
+   "detail": "Hawaii law says that on a motion from a person convicted of marijuana possession under HRS § 712-1249, where the same facts led to no other criminal charge and the amount was three grams or less, the court shall grant an order expunging the conviction. The rule was added by Act 273 of 2019. A 2024 bill for a state-run pilot that would expunge certain marijuana arrest records without an application was not checked.",
+   "citation": "HRS § 706-622.5(5)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "hi-hrs-706-622-5"
    ]
   },
   {
@@ -5003,6 +5052,20 @@
    ]
   },
   {
+   "state": "NH",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Possession of 3/4 ounce or less before Sept. 2017",
+   "detail": "New Hampshire law lets a person arrested or convicted for possessing 3/4 of an ounce of marijuana or less, for an offense before September 16, 2017, petition the court at any time to annul the arrest record, the court record or both. The prosecutor has 10 days to object; without an objection the court must grant the petition, and at a hearing the prosecutor must prove beyond a reasonable doubt that the amount was larger. The effects of the general annulment law then apply. The courts’ instruction sheet (revised August 2020) lists a $125 court fee and says later possession offenses go through the general annulment law, with waiting periods after a conviction and, for some, added state fees.",
+   "citation": "RSA 651:5-b; New Hampshire Judicial Branch, Annulling Personal Possession (3/4 oz. or less) of Marijuana (August 2020)",
+   "effective_on": "2020-01-01",
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "nh-rsa-651-5-b",
+    "nh-courts-marijuana-annulment"
+   ]
+  },
+  {
    "state": "NJ",
    "question": "adult-use",
    "status": "allowed",
@@ -6214,6 +6277,19 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "ut-cmc"
+   ]
+  },
+  {
+   "state": "UT",
+   "question": "record-relief",
+   "status": "automatic",
+   "short": "Clean Slate, including drug possession after 7 years",
+   "detail": "Utah’s courts say eligible cases are now expunged automatically, without a form: acquittals within 60 days, dismissals with prejudice within 180 days, and some convictions after a wait once fines, fees and restitution are paid, including class A drug possession after seven years (usually no more than two cases), class B misdemeanors after six, and class C misdemeanors and infractions after five. This Clean Slate law covers criminal records in general, not only cannabis. Other cases need a certificate of eligibility from the Bureau of Criminal Identification and a court petition, with fees; the page says a person convicted of cannabis possession who does not qualify for a certificate may still qualify by meeting the medical cannabis requirements. Expunged records are sealed, and a person may say the arrest or conviction never happened.",
+   "citation": "Utah State Courts, Expunging Adult Criminal Records",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ut-courts-expunge"
    ]
   },
   {
