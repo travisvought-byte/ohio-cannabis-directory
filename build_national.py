@@ -43,7 +43,7 @@ CSS = '''
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
 a{color:var(--link);text-underline-offset:3px}.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
 header.site{background:var(--green);color:#fff}header.site .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:0 22px;min-height:62px}
-.brand{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:1.22rem;min-height:48px}.brand svg{width:44px;height:auto;flex:none}
+.brand{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:1.22rem;min-height:48px}.brand img{width:40px;height:40px;border-radius:8px;flex:none}
 header.site nav{margin-left:auto;display:flex;flex-wrap:wrap;gap:0 20px}header.site nav a{color:#fff;text-decoration:none;min-height:44px;display:inline-flex;align-items:center;font-weight:600;opacity:.9}
 header.site nav a:hover,header.site nav a:focus-visible{opacity:1;text-decoration:underline}
 main{max-width:1080px;margin:0 auto;padding:6px 20px 24px}
@@ -53,7 +53,7 @@ p{max-width:70ch}.muted{color:var(--soft);font-size:.9rem}.crumbs{font-size:.9re
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);align-items:center;gap:24px;padding-top:34px;padding-bottom:46px}
 .hero h1{font-size:clamp(32px,5.2vw,52px);line-height:1.06;margin:.25em 0 .35em;max-width:15ch}.hero p{color:#e2eee6;font-size:1.08rem;margin:.4em 0}
 .hero .eyebrow{color:var(--gold);font-size:.82rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
-.hero .art svg{display:block;width:100%;max-width:400px;height:auto;margin:0 auto;filter:drop-shadow(0 14px 22px rgba(0,0,0,.3))}
+.hero .art img{display:block;width:100%;max-width:460px;height:auto;margin:0 auto;border-radius:18px;box-shadow:0 16px 34px rgba(0,0,0,.35)}
 .pick{background:#fff;color:var(--ink);border-radius:14px;padding:14px 16px 16px;margin-top:22px;max-width:520px;box-shadow:0 12px 30px rgba(0,0,0,.2)}
 .pick label{display:block;font-weight:800;margin-bottom:6px}.pick .row{display:flex;gap:8px}.pick select{flex:1;min-width:0;font-size:1.05rem}
 .pick button{font:inherit;font-weight:800;min-height:48px;padding:0 22px;border:0;border-radius:8px;background:var(--gold);color:#221c08;cursor:pointer}
@@ -111,47 +111,14 @@ footer.site h2{font-size:1rem;color:var(--gold);margin:0 0 .3em;text-transform:u
 footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:18px}footer.site ul{list-style:none;padding:0;margin:0}footer.site li a{display:inline-flex;min-height:36px;align-items:center}
 footer.site p{max-width:none;margin:18px 0 0;color:#a9bcb1}
 @media(max-width:900px){.tasks{grid-template-columns:repeat(3,minmax(0,1fr))}.mapbox{grid-template-columns:1fr;gap:6px}}
-@media(max-width:720px){.hero .wrap{grid-template-columns:1fr;padding-top:24px;padding-bottom:34px}.hero .art{order:-1;max-width:230px}}
+@media(max-width:720px){.hero .wrap{grid-template-columns:1fr;padding-top:24px;padding-bottom:34px}.hero .art{order:-1}.hero .art img{max-width:340px;margin:0}}
 @media(max-width:560px){header.site nav{margin-left:0;gap:0 16px}header.site .wrap{padding-bottom:4px}.tasks{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.task{padding:12px}
 .usmap{gap:3px}.tile{border-radius:4px}.glance a{grid-template-columns:1fr}.needs{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.need{padding:10px 11px}.rows li{grid-template-columns:1fr}.rows .meta{grid-column:1}}
 @media print{header.site nav,footer.site,select,label,.pick{display:none}}
 '''
 
-
-def leaf_shapes(cx, cy, scale, fill, vein='#2a7f45'):
-    out = []
-    for angle, length, width in ((-84, 16, 2.4), (-58, 26, 3.3), (-30, 34, 4.1), (0, 40, 4.6), (30, 34, 4.1), (58, 26, 3.3), (84, 16, 2.4)):
-        l, w = length * scale, width * scale
-        out.append(f'<g transform="rotate({angle} {cx:g} {cy:g})"><ellipse cx="{cx:g}" cy="{cy - l / 2:g}" rx="{w:g}" ry="{l / 2:g}" fill="{fill}"/>'
-                   f'<path d="M{cx:g} {cy:g}V{cy - l * 0.9:g}" stroke="{vein}" stroke-width="{max(scale * 0.5, 0.8):g}" stroke-linecap="round"/></g>')
-    return ''.join(out)
-
-def jolly_roger(leaf='#3fae5f', bone='#f4f1e6', cloth='#141414', pole=True, label=True):
-    """Black flag: pot leaf behind a skull, crossed bones beneath. Original artwork."""
-    W, H = 300, 210
-    box = '0 0 330 250' if pole else '14 4 312 228'
-    aria = 'role="img" aria-label="The Reefer flag: a skull and crossbones over a cannabis leaf"' if label else 'aria-hidden="true" focusable="false"'
-    s = [f'<svg viewBox="{box}" xmlns="http://www.w3.org/2000/svg" {aria}>']
-    if pole:
-        s.append('<rect x="8" y="6" width="9" height="240" rx="4" fill="#c9a24a"/><circle cx="12.5" cy="8" r="8" fill="#e9b949"/>')
-    # waving cloth
-    s.append(f'<path d="M17 20 C 90 6, 160 34, 230 18 S 310 10, 322 22 L 322 212 C 300 200, 250 196, 230 208 S 90 226, 17 210 Z" fill="{cloth}"/>')
-    cx, cy = 170, 104
-    # leaf behind the skull
-    s.append(leaf_shapes(cx, cy + 34, 3.25, leaf))
-    # crossed bones
-    for a in (32, -32):
-        s.append(f'<g transform="rotate({a} {cx} {cy + 56})"><rect x="{cx - 72}" y="{cy + 50}" width="144" height="13" rx="6.5" fill="{bone}"/>'
-                 + ''.join(f'<circle cx="{cx + dx}" cy="{cy + 56 + dy}" r="9" fill="{bone}"/>' for dx in (-74, 74) for dy in (-7, 7)) + '</g>')
-    # skull
-    s.append(f'<path d="M{cx - 40} {cy - 2} a40 40 0 1 1 80 0 c0 16 -8 24 -14 28 v12 h-52 v-12 c-6 -4 -14 -12 -14 -28z" fill="{bone}"/>')
-    s.append(f'<ellipse cx="{cx - 16}" cy="{cy}" rx="11.5" ry="12.5" fill="{cloth}"/><ellipse cx="{cx + 16}" cy="{cy}" rx="11.5" ry="12.5" fill="{cloth}"/>')
-    s.append(f'<path d="M{cx} {cy + 12} l-6 12 h12z" fill="{cloth}"/>')
-    s.append(''.join(f'<rect x="{cx - 20 + i * 10 - 1.5}" y="{cy + 30}" width="3" height="10" fill="{cloth}"/>' for i in range(5)))
-    s.append('</svg>')
-    return ''.join(s)
-
-FAVICON = 'data:image/svg+xml,' + quote(jolly_roger(pole=False))
+ASSETS = '../assets/the-reefer/'  # national/ pages; the published copy sits at the root (see scripts/build_pages_site.py)
+LOGO_ALT = 'The-Reefer.com logo: a pirate skull in a red bandana and eye patch over crossed bones and a cannabis leaf'
 
 ICON_PATHS = {
     'scale': 'M12 3v18M6 21h12M4 7h16M7 7l-3 7a3 3 0 0 0 6 0zM17 7l-3 7a3 3 0 0 0 6 0z',
@@ -242,16 +209,18 @@ def shell(title, description, body, name, place, hero=''):
             f'<title>{esc(title)} | {esc(SITE_NAME)}</title>',
             f'<meta name="description" content="{esc(description)}">',
             '<meta name="theme-color" content="#1d4a37">',
-            f'<link rel="icon" href="{esc(FAVICON)}">',
+            f'<link rel="icon" type="image/png" href="{ASSETS}favicon-64.png"><link rel="apple-touch-icon" href="{ASSETS}apple-touch-icon.png">',
             f'<meta property="og:type" content="website"><meta property="og:site_name" content="{esc(SITE_NAME)}">',
             f'<meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(description)}">']
     if ORIGIN:
         href = ORIGIN + '/' + ('' if name == 'index.html' else name)
-        head.append(f'<link rel="canonical" href="{esc(href)}"><meta property="og:url" content="{esc(href)}">')
+        head.append(f'<link rel="canonical" href="{esc(href)}"><meta property="og:url" content="{esc(href)}">'
+                    f'<meta property="og:image" content="{ORIGIN}/assets/the-reefer/logo-share.jpg"><meta property="og:image:width" content="1200">'
+                    f'<meta property="og:image:height" content="800"><meta property="og:image:alt" content="{esc(LOGO_ALT)}"><meta name="twitter:card" content="summary_large_image">')
     else:
         head.append('<meta name="robots" content="noindex,follow">')
     head.append(f'<style>{CSS}</style></head><body>')
-    top = (f'<header class="site"><div class="wrap"><a class="brand" href="index.html" aria-label="{esc(SITE_NAME)} home">{jolly_roger(pole=False, label=False)}<span>{esc(SITE_NAME)}</span></a>'
+    top = (f'<header class="site"><div class="wrap"><a class="brand" href="index.html" aria-label="{esc(SITE_NAME)} home"><img src="{ASSETS}mark-96.png" alt="" width="40" height="40"><span>{esc(SITE_NAME)}</span></a>'
            '<nav aria-label="Primary"><a href="index.html#map">Your state</a><a href="index.html#compare">Compare laws</a>'
            '<a href="help.html">Get help</a><a href="about.html">About</a></nav></div></header>')
     family = ''.join(f'<li><a href="{esc(url)}">{esc(label)}</a></li>' for url, label, _, _ in FAMILY)
@@ -561,7 +530,8 @@ def home_page(perm, score, directory, answers, sources):
             '<form class="pick" id="pick"><label for="state-jump">Pick your state</label><div class="row">'
             f'<select id="state-jump" name="state"><option value="">Choose a state</option>{jump}</select><button type="submit">Go</button></div>'
             f'<p class="muted">Or tap your state on the <a href="#map">map below</a>. Checked as of {long_date(perm["as_of"])}.</p></form></div>'
-            f'<div class="art">{jolly_roger()}</div></div></section>')
+            f'<div class="art"><picture><source type="image/webp" srcset="{ASSETS}logo-960.webp">'
+            f'<img src="{ASSETS}logo-960.jpg" alt="{esc(LOGO_ALT)}" width="960" height="640" fetchpriority="high"></picture></div></div></section>')
 
     body = ['<section class="block" id="tasks"><h2>What brings you here?</h2><div class="tasks">']
     for ic, title, desc, href in TASKS:

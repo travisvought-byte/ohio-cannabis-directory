@@ -119,7 +119,7 @@ def build(out):
     shutil.rmtree(out / 'national', ignore_errors=True)
     (out / 'national').mkdir()
     for name, text in national.items():
-        (out / name).write_text(text.replace('href="../', 'href="'), encoding='utf-8')
+        (out / name).write_text(text.replace('href="../', 'href="').replace('src="../', 'src="').replace('srcset="../', 'srcset="'), encoding='utf-8')
         (out / 'national' / name).write_text(stub(f'{SITE}/' + ('' if name == 'index.html' else name)), encoding='utf-8')
 
     (out / '404.html').write_text(not_found(), encoding='utf-8')
