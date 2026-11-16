@@ -2,6 +2,8 @@
 
 Tracking: #60. Canonical data: [`data/state-permissions.json`](../data/state-permissions.json), validated by [`validate_permissions.py`](../validate_permissions.py) and rendered by [`permissions_page.py`](../permissions_page.py) into `compare.html`.
 
+The default state, the 50-state list and the sources are rendered into the page so they read without JavaScript. The state switcher's data is generated into `data/public-permissions.json` by `build_compare.py` (never hand-edit it) and loaded after first paint, like the other large pages. That keeps `compare.html` under the 200,000-byte page budget in `tests/navigation.cjs` as answers are added. Any copy of the page, such as the OhioWeed mirror, must publish that file beside it.
+
 ## Owner direction
 
 The national guide is built top-down (November 15, 2026). National sources that cover every state come first. Each state's own official sources come next and replace the national answer wherever they have been reviewed. States are not built from the bottom up.

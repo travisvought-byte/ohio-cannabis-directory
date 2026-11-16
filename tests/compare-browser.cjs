@@ -10,7 +10,7 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
   assert(await page.locator('#topic-growing-space .state.missing').count()>=1,'unreviewed states are labeled');
   assert.match(await page.locator('.assessment .tag').first().textContent(),/analysis, not fact/);
   // National layer and the consumer permissions table: every state, top-down, unknowns explicit.
-  const P=JSON.parse(await page.locator('#permissions-data').textContent());
+  await page.waitForSelector('#permissions[data-ready]');assert(requests.some(url=>url.endsWith('data/public-permissions.json')),'state data loads after first paint, not inside the page');const P=await page.evaluate(()=>fetch('data/public-permissions.json').then(r=>r.json()));
   assert.equal(Object.keys(P.jurisdictions).length,51,'all 50 states and DC');
   assert.equal(await page.locator('#perm-state option').count(),51);
   assert(await page.locator('#national .national-item').count()>=5,'national items render first');
@@ -107,6 +107,7 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
   assert.equal(await page.evaluate(()=>localStorage.length+sessionStorage.length),0);
   await page.reload();assert.doesNotMatch(await proposal.inputValue(),/PRIVATE_/,'no personal text is persisted');
   assert.deepEqual(errors,[]);
+  const offline=await browser.newPage();await offline.route('**/data/public-permissions.json',r=>r.abort());await offline.goto(server.base+'compare.html');assert.match(await offline.locator('#perm-official + p[role="status"]').textContent(),/could not load/,'a failed data download says so');assert.match(await offline.locator('#perm-table [data-question="adult-use"]').innerText(),/Allowed/,'the server-rendered state still reads');await offline.close();
   const plain=await browser.newContext({javaScriptEnabled:false}),fallback=await plain.newPage();await fallback.goto(server.base+'compare.html');
   assert.match(await fallback.locator('#letter-'+key).inputValue(),/Keep the requests you agree with/);assert.match(await fallback.locator('#policy-portal').innerText(),/Michigan senator lookup/);assert.match(await fallback.locator('#perm-table [data-question="adult-use"]').innerText(),/Allowed/);assert.equal(await fallback.locator('.glance li').count(),51);assert.equal(await fallback.locator('.glance-pick:visible').count(),0,'no dead buttons without JavaScript');await plain.close();
   console.log('PASS: national layer, 50-state permissions table (unknowns, compilation labels, compare, search, share link, at-a-glance filter), state comparison and Ohio/Michigan proposals, reviewed model coverage, jurisdiction-safe edits/exports, download, print, mobile width, citations, clipboard fallback, privacy and no-JS routes.');

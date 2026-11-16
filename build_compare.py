@@ -218,6 +218,9 @@ def main():
     built = brand_page(page, OUT.name)
     built = re.sub(r'<meta property="og:description" content="[^"]*">', '<meta property="og:description" content="' + esc(DESCRIPTION) + '">', built)
     OUT.write_text(built, encoding='utf-8')
+    state_data = OUT.parent / permissions_page.DATA_PATH
+    state_data.parent.mkdir(parents=True, exist_ok=True)
+    state_data.write_text(permissions_page.public_json(permissions), encoding='utf-8')
     print(f'Built compare.html: {len(permissions["answers"])} state answers for {len(permissions["jurisdictions"])} jurisdictions, '
           f'{len(data["topics"])} law topics, {len(data["lessons"])} market lessons')
 

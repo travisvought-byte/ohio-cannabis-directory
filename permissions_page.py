@@ -3,15 +3,19 @@
 Canonical data: data/state-permissions.json (validated by validate_permissions.py).
 Order on the page is top-down: what applies in every state, one state in detail,
 then every state at a glance. The default state is rendered server-side so the
-answers read without JavaScript; the script re-renders from the same JSON.
+answers read without JavaScript. The state switcher loads data/public-permissions.json
+after first paint (written by build_compare.py), which keeps compare.html under the
+page-size budget as answers are added.
 """
 import html
 import json
 from datetime import date
 
+from public_data import LOADER
 from validate_permissions import evidence_level
 
 HOME = 'OH'
+DATA_PATH = 'data/public-permissions.json'
 LEVEL_TEXT = {
     'official': 'Official source',
     'mixed': 'Official source and national compilation',
@@ -202,11 +206,20 @@ def render_sources(data):
     return ''.join(out)
 
 
-SCRIPT = r'''
+# The national items and the 50-state list work without the state data; the switcher waits for it.
+PAGE_SCRIPT = r'''
 <script>
 (function(){
- var D=JSON.parse(document.getElementById('permissions-data').textContent);
  if(window.matchMedia&&matchMedia('(min-width: 800px)').matches)document.querySelectorAll('.national-more').forEach(function(d){d.open=true});
+ var gf=document.getElementById('glance-filter');
+ gf.addEventListener('change',function(){document.querySelectorAll('.glance li').forEach(function(li){li.hidden=!!gf.value&&li.getAttribute('data-adult')!==gf.value})});
+})();
+</script>'''
+
+SCRIPT = r'''
+<script>
+__LOADER__(async function(){
+ var D=await loadPublicData('__DATA_PATH__');
  var M=['January','February','March','April','May','June','July','August','September','October','November','December'];
  function e(v){return String(v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
  function d(v){var p=v.split('-');return M[+p[1]-1]+' '+(+p[2])+', '+p[0]}
@@ -239,15 +252,18 @@ SCRIPT = r'''
  if(D.jurisdictions[q.get('compare')])compare.value=q.get('compare');
  state.addEventListener('change',render);compare.addEventListener('change',render);filter.addEventListener('input',applyFilter);
  if(state.value!==D.home||compare.value)render();
- var gf=document.getElementById('glance-filter');
- gf.addEventListener('change',function(){document.querySelectorAll('.glance li').forEach(function(li){li.hidden=!!gf.value&&li.getAttribute('data-adult')!==gf.value})});
  document.querySelectorAll('.glance-pick').forEach(function(b){b.hidden=false;b.addEventListener('click',function(){state.value=b.getAttribute('data-state');render();
   document.getElementById('permissions').scrollIntoView();state.focus({preventScroll:true})})});
-})();
+ document.getElementById('permissions').setAttribute('data-ready','');
+})().catch(function(){var n=document.getElementById('perm-official');
+ if(n)n.insertAdjacentHTML('afterend','<p class="muted" role="status">The state switcher could not load. This table shows Ohio; every state is in the list below.</p>')});
 </script>'''
 
 
 def render_script(data):
-    return ('<script type="application/json" id="permissions-data">'
-            + json.dumps(payload(data), ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
-            + '</script>' + SCRIPT)
+    """The page loads the state data from DATA_PATH after first paint, like the other large pages."""
+    return PAGE_SCRIPT + SCRIPT.replace('__LOADER__', LOADER).replace('__DATA_PATH__', DATA_PATH)
+
+
+def public_json(data):
+    return json.dumps(payload(data), ensure_ascii=False, separators=(',', ':')) + '\n'
