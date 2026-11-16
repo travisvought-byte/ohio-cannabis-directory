@@ -221,6 +221,38 @@ class StatePermissionsTest(unittest.TestCase):
         self.assertIn('Not yet reviewed', html)
         self.assertEqual(html.count('<option value='), 51 + 52)
 
+    def test_page_lists_the_sources_its_own_text_cites(self):
+        # Issue #158: the page carries the sources for the national items and the default state;
+        # the switcher adds the rest from the public data, so the page does not grow with every source.
+        import re
+        static = permissions_page.render_national(DATA) + permissions_page.render_permissions(DATA)
+        cited = {int(n) for n in re.findall(r'href="#psource-(\d+)"', static)}
+        listed = [int(n) for n in re.findall(r'<li value="(\d+)" id="psource-\1">', permissions_page.render_sources(DATA))]
+        self.assertTrue(cited)
+        self.assertEqual(set(listed), cited)             # every [sN] in the page resolves, and nothing else is carried
+        self.assertEqual(listed, sorted(listed))
+        self.assertLess(len(listed), len(DATA['sources']))
+        # The browser can add any other source under the same number.
+        info = permissions_page.payload(DATA)
+        self.assertEqual([s['url'] for s in info['sources']], [s['url'] for s in DATA['sources']])
+        self.assertEqual({s['kind'] for s in info['sources']} - set(info['kinds']), set())
+        for answers in info['answers'].values():
+            for a in answers.values():
+                self.assertTrue(all(1 <= n <= len(info['sources']) for n in a['cites']))
+
+    def test_page_does_not_grow_with_another_state_s_sources(self):
+        def change(d):
+            d['sources'].append(dict(d['sources'][0], id='tx-extra-source', url='https://example.gov/tx', retrieved_on=d['as_of']))
+            answer = next(a for a in d['answers'] if a['state'] == 'TX' and a['question'] == 'adult-use')
+            answer['source_ids'].append('tx-extra-source')
+            answer['reviewed_on'] = d['as_of']
+        more = validate(broken(change))
+        self.assertNotEqual(permissions_page.HOME, 'TX')
+        for render in (permissions_page.render_national, permissions_page.render_permissions,
+                       permissions_page.render_glance, permissions_page.render_sources):
+            self.assertEqual(render(more), render(DATA), render.__name__)
+        self.assertEqual(len(permissions_page.payload(more)['sources']), len(DATA['sources']) + 1)
+
 
 if __name__ == '__main__':
     unittest.main()

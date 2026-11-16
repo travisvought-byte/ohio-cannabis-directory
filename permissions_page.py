@@ -5,7 +5,9 @@ Order on the page is top-down: what applies in every state, one state in detail,
 then every state at a glance. The default state is rendered server-side so the
 answers read without JavaScript. The state switcher loads data/public-permissions.json
 after first paint (written by build_compare.py), which keeps compare.html under the
-page-size budget as answers are added.
+page-size budget as answers are added. The page lists only the sources its own text
+cites (national items and the default state); the switcher adds each other state's
+sources from the same file, so the page does not grow with every source.
 """
 import html
 import json
@@ -75,8 +77,10 @@ def payload(data):
     for code, link in data['official_links'].items():
         s = sources[link['source_id']]
         official[code] = {'title': s['title'], 'publisher': s['publisher'], 'url': s['url'], 'checked': s['retrieved_on']}
+    listed = [{k: s[k] for k in ('title', 'publisher', 'url', 'kind', 'retrieved_on')} for s in data['sources']]
     return {'home': HOME, 'statuses': data['statuses'], 'groups': data['groups'], 'questions': data['questions'],
-            'jurisdictions': data['jurisdictions'], 'official': official, 'answers': answers, 'levels': LEVEL_TEXT}
+            'jurisdictions': data['jurisdictions'], 'official': official, 'answers': answers, 'levels': LEVEL_TEXT,
+            'sources': listed, 'kinds': KIND_LABEL}
 
 
 def chip(data, status, question=None):
@@ -201,12 +205,25 @@ def render_glance(data):
     return ''.join(out)
 
 
+def page_source_ids(data):
+    """The sources the page's own text cites: the national items and the default state's answers.
+
+    A visitor without JavaScript cannot switch state, so these are every citation they can see.
+    The switcher adds the sources for any other state it shows (addSources in SCRIPT).
+    """
+    ids = {sid for item in data['national'] for sid in item['source_ids']}
+    return ids | {sid for a in data['answers'] if a['state'] == HOME for sid in a['source_ids']}
+
+
 def render_sources(data):
-    out = ['<h3>Sources for the state-by-state answers and national items</h3><ol class="sources">']
+    keep = page_source_ids(data)
+    out = ['<h3>Sources for the state-by-state answers and national items</h3><ol class="sources" id="perm-sources">']
     for n, s in enumerate(data['sources'], 1):
-        out.append(f'<li id="psource-{n}"><a href="{esc(s["url"])}" target="_blank" rel="noopener">{esc(s["title"])}</a>'
-                   f'<span class="meta">{esc(s["publisher"])} · {KIND_LABEL[s["kind"]]} · retrieved {long_date(s["retrieved_on"])}</span></li>')
-    out.append('</ol><p class="muted">Data: <a href="https://github.com/travisvought-byte/ohio-cannabis-directory/blob/main/data/state-permissions.json" target="_blank" rel="noopener">state-permissions.json</a> (CC BY 4.0).</p>')
+        if s['id'] in keep:  # value keeps each source's number, so [sN] and #psource-N never change
+            out.append(f'<li value="{n}" id="psource-{n}"><a href="{esc(s["url"])}" target="_blank" rel="noopener">{esc(s["title"])}</a>'
+                       f'<span class="meta">{esc(s["publisher"])} · {KIND_LABEL[s["kind"]]} · retrieved {long_date(s["retrieved_on"])}</span></li>')
+    out.append('</ol><p class="muted">This list shows the sources for the national items and for each state you view. Every source, for every state, is in '
+               '<a href="https://github.com/travisvought-byte/ohio-cannabis-directory/blob/main/data/state-permissions.json" target="_blank" rel="noopener">state-permissions.json</a> (CC BY 4.0).</p>')
     return ''.join(out)
 
 
@@ -239,6 +256,11 @@ __LOADER__(async function(){
  }
  function official(codes){return codes.map(function(code){var l=D.official[code],n=e(D.jurisdictions[code]);
   return l?n+' official site: <a href="'+e(l.url)+'" target="_blank" rel="noopener">'+e(l.title)+'</a> <span class="muted">('+e(l.publisher)+', checked '+d(l.checked)+')</span>':n+' official site: <span class="muted">not yet reviewed</span>'}).join('<br>')}
+ function addSources(ns){var list=document.getElementById('perm-sources');ns.forEach(function(n){var s=D.sources[n-1];if(!s||document.getElementById('psource-'+n))return;
+  var li=document.createElement('li'),next=null;li.value=n;li.id='psource-'+n;
+  li.innerHTML='<a href="'+e(s.url)+'" target="_blank" rel="noopener">'+e(s.title)+'</a><span class="meta">'+e(s.publisher)+' · '+e(D.kinds[s.kind])+' · retrieved '+d(s.retrieved_on)+'</span>';
+  for(var i=0;i<list.children.length;i++)if(list.children[i].value>n){next=list.children[i];break}
+  list.insertBefore(li,next)})}
  var state=document.getElementById('perm-state'),compare=document.getElementById('perm-compare'),filter=document.getElementById('perm-filter');
  function codes(){var c=[state.value];if(compare.value&&compare.value!==state.value)c.push(compare.value);return c}
  function applyFilter(){var t=filter.value.trim().toLowerCase();document.querySelectorAll('#perm-table .perm-group').forEach(function(g){var any=false;
@@ -249,6 +271,7 @@ __LOADER__(async function(){
     out+='<article class="perm-row" data-question="'+e(q.id)+'" data-search="'+e(s)+'"><h4>'+e(q.question)+'</h4>'+(q.note?'<p class="perm-note muted">'+e(q.note)+'</p>':'')+'<div class="'+(c.length>1?'perm-cells two':'perm-cells')+'">'+
      c.map(function(code){return cell(code,(D.answers[code]||{})[q.id],q)}).join('')+'</div></article>'});out+='</div>'});
   document.getElementById('perm-table').innerHTML=out;document.getElementById('perm-official').innerHTML=official(c);applyFilter();
+  c.forEach(function(code){var as=D.answers[code]||{};Object.keys(as).forEach(function(k){addSources(as[k].cites)})});
   var p=new URLSearchParams(location.search);p.set('state',c[0]);if(c[1])p.set('compare',c[1]);else p.delete('compare');
   history.replaceState(null,'',location.pathname+'?'+p.toString()+location.hash)}
  var q=new URLSearchParams(location.search);
@@ -256,6 +279,8 @@ __LOADER__(async function(){
  if(D.jurisdictions[q.get('compare')])compare.value=q.get('compare');
  state.addEventListener('change',render);compare.addEventListener('change',render);filter.addEventListener('input',applyFilter);
  if(state.value!==D.home||compare.value)render();
+ var linked=/^#psource-(\d+)$/.exec(location.hash);
+ if(linked){addSources([+linked[1]]);var target=document.getElementById('psource-'+linked[1]);if(target)target.scrollIntoView()}
  document.querySelectorAll('.glance-pick').forEach(function(b){b.hidden=false;b.addEventListener('click',function(){state.value=b.getAttribute('data-state');render();
   document.getElementById('permissions').scrollIntoView();state.focus({preventScroll:true})})});
  document.getElementById('permissions').setAttribute('data-ready','');

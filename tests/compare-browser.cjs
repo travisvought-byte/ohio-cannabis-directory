@@ -12,6 +12,9 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
   // National layer and the consumer permissions table: every state, top-down, unknowns explicit.
   await page.waitForSelector('#permissions[data-ready]');assert(requests.some(url=>url.endsWith('data/public-permissions.json')),'state data loads after first paint, not inside the page');const P=await page.evaluate(()=>fetch('data/public-permissions.json').then(r=>r.json()));
   assert.equal(Object.keys(P.jurisdictions).length,51,'all 50 states and DC');
+  // Sources (#158): the page lists only what its own text cites; the switcher adds each viewed state's sources.
+  const listed=()=>page.locator('#perm-sources li').evaluateAll(ls=>ls.map(l=>l.value)),atLoad=await listed();
+  assert(atLoad.length&&atLoad.length<P.sources.length,'the page does not carry every state\u2019s sources');
   assert.equal(await page.locator('#perm-state option').count(),51);
   assert(await page.locator('#national .national-item').count()>=5,'national items render first');
   const businessCount=await page.locator('#national [data-audience="business"]').count();
@@ -59,6 +62,10 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
   assert.equal(await page.locator('#perm-table .perm-row:not([hidden])').count(),1,'question search narrows the table');
   await page.locator('#perm-filter').fill('');
   for(const href of await page.locator('#perm-table .cites a').evaluateAll(as=>as.map(a=>a.getAttribute('href'))))assert.equal(await page.locator(href).count(),1,href+' resolves');
+  const grown=await listed(),added=grown.find(n=>!atLoad.includes(n));
+  assert(added,'viewing another state adds its sources');assert.deepEqual(grown,[...new Set(grown)].sort((a,b)=>a-b),'sources stay in number order, each listed once');
+  assert((await page.locator('#psource-'+added).textContent()).includes(P.sources[added-1].title),'an added source is the one its number names');
+  assert.equal(await page.locator('#psource-'+added+' a').getAttribute('href'),P.sources[added-1].url);
   assert.equal(await page.locator('.glance li').count(),51);
   const expectedNo=Object.values(P.answers).filter(a=>a['adult-use'].status==='not-permitted').length;
   await page.selectOption('#glance-filter','not-permitted');
@@ -130,9 +137,13 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
   assert.equal(await page.evaluate(()=>localStorage.length+sessionStorage.length),0);
   await page.reload();assert.doesNotMatch(await proposal.inputValue(),/PRIVATE_/,'no personal text is persisted');
   assert.deepEqual(errors,[]);
+  const far=P.sources.map((_,i)=>i+1).reverse().find(n=>!atLoad.includes(n)),deep=await browser.newPage();
+  await deep.goto(server.base+'compare.html#psource-'+far);await deep.waitForSelector('#permissions[data-ready]');
+  assert(await deep.evaluate(n=>{const li=document.getElementById('psource-'+n);if(!li)return false;const r=li.getBoundingClientRect();return r.top>=0&&r.top<innerHeight},far),'a link to any source still lands on it');await deep.close();
   const offline=await browser.newPage();await offline.route('**/data/public-permissions.json',r=>r.abort());await offline.goto(server.base+'compare.html');assert.match(await offline.locator('#perm-official + p[role="status"]').textContent(),/could not load/,'a failed data download says so');assert.match(await offline.locator('#perm-table [data-question="adult-use"]').innerText(),/Allowed/,'the server-rendered state still reads');await offline.close();
   const plain=await browser.newContext({javaScriptEnabled:false}),fallback=await plain.newPage();await fallback.goto(server.base+'compare.html');
-  assert.match(await fallback.locator('#letter-'+key).inputValue(),/Keep the requests you agree with/);assert.match(await fallback.locator('#policy-portal').innerText(),/Michigan senator lookup/);assert.match(await fallback.locator('#perm-table [data-question="adult-use"]').innerText(),/Allowed/);assert.equal(await fallback.locator('#perm-table [data-question="employment"] .chip').textContent(),own('OH','employment').label,'the work and record rows read without JavaScript');assert.equal(await fallback.locator('.glance li').count(),51);assert.equal(await fallback.locator('.glance-pick:visible').count(),0,'no dead buttons without JavaScript');await plain.close();
-  console.log('PASS: national layer, 50-state permissions table (unknowns, compilation labels, question-specific labels, compare, search, share link, at-a-glance filter), state comparison and Ohio/Michigan proposals, reviewed model coverage, jurisdiction-safe edits/exports, download, print, mobile width, citations, clipboard fallback, privacy and no-JS routes.');
+  assert.match(await fallback.locator('#letter-'+key).inputValue(),/Keep the requests you agree with/);assert.match(await fallback.locator('#policy-portal').innerText(),/Michigan senator lookup/);assert.match(await fallback.locator('#perm-table [data-question="adult-use"]').innerText(),/Allowed/);assert.equal(await fallback.locator('#perm-table [data-question="employment"] .chip').textContent(),own('OH','employment').label,'the work and record rows read without JavaScript');assert.equal(await fallback.locator('.glance li').count(),51);assert.equal(await fallback.locator('.glance-pick:visible').count(),0,'no dead buttons without JavaScript');
+  for(const href of new Set(await fallback.locator('#national .cites a, #perm-table .cites a').evaluateAll(as=>as.map(a=>a.getAttribute('href')))))assert.equal(await fallback.locator(href).count(),1,href+' resolves without JavaScript');await plain.close();
+  console.log('PASS: national layer, 50-state permissions table (unknowns, compilation labels, question-specific labels, compare, search, share link, at-a-glance filter, sources added per state), state comparison and Ohio/Michigan proposals, reviewed model coverage, jurisdiction-safe edits/exports, download, print, mobile width, citations, clipboard fallback, privacy and no-JS routes.');
  }finally{await browser.close();await server.close();}
 })().catch(e=>{console.error(e);process.exit(1)});
