@@ -101,6 +101,18 @@ class StatePermissionsTest(unittest.TestCase):
                 self.assertNotEqual(evidence_level(a, sources), 'compilation', a['state'])
                 self.assertTrue(any(sources[sid]['scope'] == 'state' for sid in a['source_ids']), a['state'])
 
+    def test_adult_use_states_answer_the_detail_questions(self):
+        # Issue #148: every adult-use state answers each detail question from official sources.
+        detail = ['buying', 'possession', 'sharing', 'home-grow', 'public-use', 'driving']
+        sources = {s['id']: s for s in DATA['sources']}
+        answers = {(a['state'], a['question']): a for a in DATA['answers']}
+        adult = [s for (s, q), a in answers.items() if q == 'adult-use' and a['status'] == 'allowed']
+        self.assertGreaterEqual(len(adult), 25)
+        for s in adult:
+            for q in detail:
+                self.assertIn((s, q), answers)
+                self.assertEqual(evidence_level(answers[(s, q)], sources), 'official', (s, q))
+
     def test_page_payload_cites_listed_sources(self):
         info = permissions_page.payload(DATA)
         count = len(DATA['sources'])
