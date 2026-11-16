@@ -2640,12 +2640,12 @@
    "question": "record-relief",
    "status": "automatic",
    "short": "Offenses Prop. 64 reduced or eliminated",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists California as clearing records automatically: Proposition 64 allowed expungement or resentencing for penalties it reduced or eliminated, a 2018 law made that automatic, and a 2022 law set deadlines. Its table adds that a separate 2022 law seals most old records after four years without new convictions. Not yet checked against the state’s own law.",
-   "citation": "Marijuana Policy Project’s table of legalization states’ expungement laws",
+   "detail": "California’s courts say the state reviews records itself: under a 2019 law the Department of Justice identified cases that might qualify under Proposition 64, and a 2023 law required courts to grant relief by March 1, 2023 in cases prosecutors had not challenged. A person can also apply. Someone who has completed a sentence may ask the trial court to dismiss and seal an eligible conviction, or to redesignate it as a misdemeanor or infraction; someone still serving a sentence may petition for resentencing or dismissal.",
+   "citation": "Cal. Health & Safety Code §§ 11361.8 and 11361.9, per the Judicial Branch of California’s Proposition 64 page",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-mpp-expungement"
+    "ca-courts-prop64"
    ]
   },
   {
@@ -3808,11 +3808,12 @@
    "question": "record-relief",
    "status": "automatic",
    "short": "Cases where possession was the only charge",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists Maryland as providing automatic expungement, due by July 2024, for cases charged before legalization in which cannabis possession was the only charge. Its table says the state appears to have missed that deadline, and that the governor’s June 2024 pardons do not themselves expunge a record. Not yet checked against the state’s own law.",
-   "citation": "Marijuana Policy Project’s table of legalization states’ expungement laws",
+   "detail": "The Maryland Cannabis Administration says the 2022 and 2023 laws set up a process to expunge cases in which possession of less than 10 grams of cannabis is the only charge, and include other expungement provisions. The Marijuana Policy Project, an advocacy group, lists that expungement as automatic and due by July 2024, says the state appears to have missed the deadline, and notes that the governor’s June 2024 pardons do not themselves expunge a record; those points are not yet checked against the state’s own law.",
+   "citation": "Maryland Cannabis Administration, Adult-use cannabis FAQs; Marijuana Policy Project’s table of legalization states’ expungement laws",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
+    "md-mca-faq",
     "natl-mpp-expungement"
    ]
   },
@@ -4332,11 +4333,12 @@
    "question": "record-relief",
    "status": "automatic",
    "short": "Offenses that are no longer crimes",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists Missouri’s Amendment 3 as directing courts to expunge marijuana offenses that are no longer crimes, misdemeanors by June 8, 2023 and felonies by December 8, 2023. Its table adds that people serving sentences for legalized offenses can petition to be released. Not yet checked against the state’s own law.",
-   "citation": "Marijuana Policy Project’s table of legalization states’ expungement laws",
+   "detail": "Missouri’s Department of Health and Senior Services says the law lets people with certain non-violent marijuana offenses petition for release from incarceration, parole or probation and to have their records expunged, and that sales-tax revenue pays the government bodies that carry out expungement of certain marijuana offenses. The Marijuana Policy Project, an advocacy group, lists Amendment 3 as directing courts to expunge offenses that are no longer crimes without a petition, misdemeanors by June 8, 2023 and felonies by December 8, 2023; that part is not yet checked against the state’s own text.",
+   "citation": "Missouri Department of Health and Senior Services, Adult use FAQs; Marijuana Policy Project’s table of legalization states’ expungement laws",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
+    "mo-dhss-adult-faq",
     "natl-mpp-expungement"
    ]
   },
@@ -4886,11 +4888,12 @@
    "question": "record-relief",
    "status": "automatic",
    "short": "Stand-alone cannabis convictions",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists New Mexico as reviewing and expunging convictions for conduct that was legalized or downgraded, with automatic expungement limited since 2023 to cannabis convictions that stand alone, without other charges. Its table says people can check the status of an expungement and ask for faster processing. Not yet checked against the state’s own law.",
-   "citation": "Marijuana Policy Project’s table of legalization states’ expungement laws",
+   "detail": "New Mexico’s Regulation and Licensing Department says the Criminal Records Expungement Act, in effect since January 1, 2020, lets a qualifying person petition a court to expunge certain criminal records, including marijuana-related records, and points to the state courts’ expungement page. The Marijuana Policy Project, an advocacy group, lists a separate law that reviews and expunges convictions for legalized conduct automatically, limited since 2023 to cannabis convictions that stand alone; that part is not yet checked against the state’s own law.",
+   "citation": "NMSA 1978, §§ 29-3A-1 to 29-3A-9, per the Regulation and Licensing Department’s FAQs; Marijuana Policy Project’s table of legalization states’ expungement laws",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
+    "nm-rld-faqs",
     "natl-mpp-expungement"
    ]
   },
