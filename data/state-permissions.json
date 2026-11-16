@@ -2066,6 +2066,69 @@
    "title": "New York State’s Clean Slate Act",
    "url": "https://www.nycourts.gov/cleanslate",
    "retrieved_on": "2026-11-01"
+  },
+  {
+   "id": "natl-mpp-employment-adult",
+   "kind": "compilation",
+   "scope": "national",
+   "publisher": "Marijuana Policy Project",
+   "title": "Cannabis Legalization and Employment Protections (advocacy group’s state table; undated)",
+   "url": "https://www.mpp.org/issues/legalization/cannabis-legalization-and-employment-protections/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "natl-mpp-employment-medical",
+   "kind": "compilation",
+   "scope": "national",
+   "publisher": "Marijuana Policy Project",
+   "title": "Medical Cannabis Laws and Employment Protections (advocacy group’s state chart; undated)",
+   "url": "https://www.mpp.org/issues/medical-marijuana/medical-cannabis-laws-and-employment-protections/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ca-crd-cannabis-faq",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "California Civil Rights Department",
+   "title": "Discrimination in Employment: Use of Cannabis (FAQ, January 2024)",
+   "url": "https://calcivilrights.ca.gov/wp-content/uploads/sites/32/2024/01/Cannabis-Use-FAQ-ENG.pdf",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ct-cannabis-off-work-use",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "State of Connecticut",
+   "title": "Adult-Use Cannabis in Connecticut: Can my employer prohibit me from consuming cannabis products outside of work? (July 13, 2021)",
+   "url": "https://portal.ct.gov/cannabis/Knowledge-Base/Articles/Consuming-cannabis-outside-of-work",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ct-cannabis-off-duty-policy",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "State of Connecticut",
+   "title": "Adult-Use Cannabis in Connecticut: Can an employer require an employee to refrain from consuming cannabis during off-duty hours? (May 4, 2023)",
+   "url": "https://portal.ct.gov/cannabis/knowledge-base/articles/workplace-and-employee-information/can-an-employer-require-an-employee-to-refrain-from-consuming-cannabis-during-offduty-hours",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "mn-stat-181-938",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Minnesota Revisor of Statutes",
+   "title": "Minn. Stat. § 181.938, nonwork activities; prohibited employer conduct (2026 Minnesota Statutes)",
+   "url": "https://www.revisor.mn.gov/statutes/cite/181.938",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "mt-mca-39-2-313",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Montana Legislature",
+   "title": "Mont. Code Ann. § 39-2-313, discrimination prohibited for use of lawful product during nonworking hours (2025)",
+   "url": "https://mca.legmt.gov/bills/MCA/title_0390/chapter_0020/part_0030/section_0130/0390-0020-0030-0130.html",
+   "retrieved_on": "2026-11-15"
   }
  ],
  "answers": [
@@ -2218,6 +2281,19 @@
   },
   {
    "state": "AR",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Medical patients only",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists Arkansas’s constitution as barring employers from discriminating against qualifying patients and caregivers in hiring, firing or the terms of employment. Its chart says the amendment still lets employers take listed actions and points to the amendment for the full limits. Not yet checked against the state’s own law.",
+   "citation": "Ark. Const. amend. 98, § 3, per the Marijuana Policy Project’s chart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-medical"
+   ]
+  },
+  {
+   "state": "AR",
    "question": "medical",
    "status": "allowed",
    "short": "Yes",
@@ -2267,6 +2343,19 @@
    "source_ids": [
     "az-ars-36-2851",
     "az-ars-36-2852"
+   ]
+  },
+  {
+   "state": "AZ",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Medical patients only",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists Arizona as barring employers from refusing to hire, firing or penalizing a registered patient for that status or for a positive marijuana test, unless the person used or was impaired by marijuana at work. Its chart lists an exception where the employer would lose a federal benefit. Not yet checked against the state’s own law.",
+   "citation": "A.R.S. § 36-2813, per the Marijuana Policy Project’s chart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-medical"
    ]
   },
   {
@@ -2372,6 +2461,19 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "ca-dcc-whats-legal"
+   ]
+  },
+  {
+   "state": "CA",
+   "question": "employment",
+   "status": "protected",
+   "short": "Off-the-job use, with exceptions",
+   "detail": "Since January 1, 2024, California employers generally cannot refuse to hire, fire or penalize someone for using cannabis off the job and away from the workplace, or because a drug test finds only non-psychoactive cannabis metabolites. Employers may still act on a scientifically valid test for psychoactive THC, keep a drug-free workplace and bar use, possession or impairment on the job. The protections do not cover employers with four or fewer employees, jobs that need a federal background investigation or security clearance, or employees in the building and construction trades.",
+   "citation": "Cal. Gov. Code § 12954, per the Civil Rights Department’s FAQ (January 2024)",
+   "effective_on": "2024-01-01",
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ca-crd-cannabis-faq"
    ]
   },
   {
@@ -2585,6 +2687,20 @@
   },
   {
    "state": "CT",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Unless a written employer policy bars it",
+   "detail": "Since July 1, 2022, an employer that is not exempt may not prohibit cannabis use outside work, or act on a positive THC test, unless it has adopted a written policy that says otherwise. Exempt employers may regulate off-duty use as they could before the law. Employers generally may not act on cannabis use from before a person applied or was hired. The state’s cannabis site says an employer cannot require a medical marijuana patient to refrain from off-duty use.",
+   "citation": "State of Connecticut, Adult-Use Cannabis in Connecticut, workplace questions (2021 and 2023)",
+   "effective_on": "2022-07-01",
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ct-cannabis-off-work-use",
+    "ct-cannabis-off-duty-policy"
+   ]
+  },
+  {
+   "state": "CT",
    "question": "home-grow",
    "status": "allowed",
    "short": "3 mature and 3 immature, 12 per home",
@@ -2690,6 +2806,19 @@
   },
   {
    "state": "DC",
+   "question": "employment",
+   "status": "protected",
+   "short": "Cannabis use, with exceptions",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists the District as barring employers from acting against someone for cannabis use, for being a medical cannabis patient, or for cannabis metabolites in a drug test without impairment. Its chart lists exceptions for impairment at work, safety-sensitive jobs, and federal law, contracts or agreements. Not yet checked against the District’s own law.",
+   "citation": "D.C. Law 24-190, per the Marijuana Policy Project’s chart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-medical"
+   ]
+  },
+  {
+   "state": "DC",
    "question": "home-grow",
    "status": "allowed",
    "short": "Up to 6 plants, 3 mature",
@@ -2790,6 +2919,19 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "de-omc-adult-use"
+   ]
+  },
+  {
+   "state": "DE",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Medical patients only",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists Delaware as barring employers from discriminating against a cardholder for that status or for a positive marijuana test, unless the person used, possessed or was impaired by marijuana at work. Its chart lists an exception where the employer would lose a federal monetary or licensing benefit. Not yet checked against the state’s own law.",
+   "citation": "16 Del. C. § 4905A, per the Marijuana Policy Project’s chart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-medical"
    ]
   },
   {
@@ -3032,6 +3174,19 @@
   },
   {
    "state": "IL",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Medical patients, with limits",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists Illinois as giving limited protection: employers may not penalize someone solely for being a registered patient or caregiver, but may enforce drug-testing, zero-tolerance and drug-free workplace policies that are applied without discrimination. Its chart lists an exception for federal law or loss of a federal benefit. Not yet checked against the state’s own law.",
+   "citation": "410 ILCS 130/40 and 130/50, per the Marijuana Policy Project’s chart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-medical"
+   ]
+  },
+  {
+   "state": "IL",
    "question": "home-grow",
    "status": "medical-only",
    "short": "Registered patients only, up to 5 plants",
@@ -3188,6 +3343,19 @@
   },
   {
    "state": "LA",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "State employees who are medical patients",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists Louisiana as protecting state government employees only: a state employer may not penalize an employee solely for a positive marijuana test if the employee has a physician’s recommendation. Its chart lists exceptions for use or impairment at work and for safety and law-enforcement roles. Not yet checked against the state’s own law.",
+   "citation": "La. R.S. 49:1016, per the Marijuana Policy Project’s chart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-medical"
+   ]
+  },
+  {
+   "state": "LA",
    "question": "medical",
    "status": "allowed",
    "short": "Yes, with a clinician’s recommendation",
@@ -3237,6 +3405,19 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "ma-ccc-laws"
+   ]
+  },
+  {
+   "state": "MA",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Medical patients, under a court ruling",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists Massachusetts as protecting medical patients through a court ruling, not the medical cannabis law: the state’s high court held that the anti-discrimination law covers disabled employees who use medical cannabis, so an employer must consider a reasonable accommodation unless it would be an undue hardship. Not yet checked against the state’s own law.",
+   "citation": "Barbuto v. Advantage Sales and Marketing; G.L. c. 151B, § 4, per the Marijuana Policy Project’s chart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-medical"
    ]
   },
   {
@@ -3346,6 +3527,19 @@
   },
   {
    "state": "MD",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Fire and rescue workers who are patients",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists Maryland’s protection as covering fire and rescue employees only: those certified as medical cannabis patients are protected from discipline, including after a positive test. Its chart lists exceptions for federal law and on-duty impairment. Not yet checked against the state’s own law.",
+   "citation": "Md. Code, State Gov’t § 20-606, per the Marijuana Policy Project’s chart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-medical"
+   ]
+  },
+  {
+   "state": "MD",
    "question": "home-grow",
    "status": "allowed",
    "short": "2 plants per household",
@@ -3447,6 +3641,19 @@
    "source_ids": [
     "me-ocp-faq",
     "me-mrs-28b-1501"
+   ]
+  },
+  {
+   "state": "ME",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Medical patients only",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists Maine as barring an employer from refusing to employ or otherwise penalizing a person solely for being a qualifying patient or caregiver, unless that would violate federal law or cost a federal contract or funding. Not yet checked against the state’s own law.",
+   "citation": "22 M.R.S. § 2430-C(3), per the Marijuana Policy Project’s chart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-medical"
    ]
   },
   {
@@ -3660,6 +3867,19 @@
   },
   {
    "state": "MN",
+   "question": "employment",
+   "status": "protected",
+   "short": "Off-premises use in nonworking hours",
+   "detail": "An employer may not refuse to hire an applicant, or discipline or discharge an employee, for using lawful consumable products off the employer’s premises during nonworking hours. Cannabis flower, cannabis products and lower-potency hemp edibles count as lawful products under Minnesota law. Employers may still act on use, possession or impairment during working hours, on work premises or while operating the employer’s vehicle or equipment, or where federal or state law requires it or a federal benefit would be lost. Exceptions include bona fide occupational requirements and conflicts of interest.",
+   "citation": "Minn. Stat. § 181.938",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "mn-stat-181-938"
+   ]
+  },
+  {
+   "state": "MN",
    "question": "home-grow",
    "status": "allowed",
    "short": "Up to 8 plants per home, 4 mature",
@@ -3760,6 +3980,19 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "mo-const-art14-2"
+   ]
+  },
+  {
+   "state": "MO",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Medical patients only",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists Missouri’s constitution as protecting medical patients and caregivers, including lawful use off the premises in nonworking hours and positive drug tests. Its chart lists exceptions for impairment at work, loss of a federal benefit and jobs where use affects performance or safety. Not yet checked against the state’s own law.",
+   "citation": "Mo. Const., Amendment 3 (2022), per the Marijuana Policy Project’s chart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-medical"
    ]
   },
   {
@@ -3891,6 +4124,19 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "mt-mca-16-12-108"
+   ]
+  },
+  {
+   "state": "MT",
+   "question": "employment",
+   "status": "protected",
+   "short": "Off-premises use in nonworking hours",
+   "detail": "Marijuana is a lawful product under Montana’s lawful-product law. An employer may not refuse to employ someone, or discriminate in pay, promotion or other terms of employment, because the person legally uses a lawful product off the employer’s premises during nonworking hours. The rule does not apply to use that affects job performance or the safety of other employees, or that conflicts with a bona fide occupational qualification. An employer also does not violate it by acting in the belief that an established substance abuse or alcohol policy, a professional contract or a collective bargaining agreement permits the action.",
+   "citation": "Mont. Code Ann. § 39-2-313 (2025)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "mt-mca-39-2-313"
    ]
   },
   {
@@ -4058,6 +4304,19 @@
   },
   {
    "state": "NH",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Medical patients, under a court ruling",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists New Hampshire as protecting medical patients through a court ruling, not the therapeutic cannabis law: the state Supreme Court held in 2022 that therapeutic cannabis use may call for a reasonable accommodation under the Law Against Discrimination. Its chart notes the therapeutic cannabis law does not require accommodating use on an employer’s premises. Not yet checked against the state’s own law.",
+   "citation": "Paine v. Ride-Away (N.H. 2022); RSA 354-A; RSA 126-X:3, per the Marijuana Policy Project’s chart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-medical"
+   ]
+  },
+  {
+   "state": "NH",
    "question": "medical",
    "status": "allowed",
    "short": "Yes",
@@ -4106,6 +4365,19 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "nj-crc-adult"
+   ]
+  },
+  {
+   "state": "NJ",
+   "question": "employment",
+   "status": "protected",
+   "short": "Use away from work, with exceptions",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists New Jersey as barring employers from firing, refusing to hire or penalizing workers because they use cannabis, or because of cannabis metabolites alone. Its table says employers may act on use at work or working under the influence, and that federal contractors may follow federal law. Not yet checked against the state’s own law.",
+   "citation": "N.J.S.A. 24:6I-52, per the Marijuana Policy Project’s table",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-adult"
    ]
   },
   {
@@ -4214,6 +4486,19 @@
   },
   {
    "state": "NM",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Medical patients only",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists New Mexico as barring employers from taking adverse action against an applicant or employee for conduct its medical cannabis law allows. Its chart lists exceptions for federal law or loss of a federal benefit, and for jobs the employer deems safety-sensitive. Not yet checked against the state’s own law.",
+   "citation": "N.M. Stat. § 26-2B-9, per the Marijuana Policy Project’s chart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-medical"
+   ]
+  },
+  {
+   "state": "NM",
    "question": "home-grow",
    "status": "allowed",
    "short": "12 plants per adult, 6 mature; 12 mature per home",
@@ -4314,6 +4599,20 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "nv-ccb-laws"
+   ]
+  },
+  {
+   "state": "NV",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Job applicants and medical patients",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists Nevada as banning most employers from using cannabis in pre-employment drug testing, with no protection for current employees, and exceptions for safety-sensitive positions, federal law and collective bargaining agreements. Its medical chart adds that employers must try to reasonably accommodate cardholders’ medical use away from work. Not yet checked against the state’s own law.",
+   "citation": "NRS 613.132 and NRS 678C.850, per the Marijuana Policy Project’s table and chart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-adult",
+    "natl-mpp-employment-medical"
    ]
   },
   {
@@ -4669,6 +4968,19 @@
   },
   {
    "state": "OK",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Medical patients only",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists Oklahoma as barring employers from penalizing an applicant or employee solely for being a medical marijuana licensee or for a positive marijuana test. Its chart lists exceptions for federal law or funding, no valid license, use or impairment at work and safety-sensitive jobs. Not yet checked against the state’s own law.",
+   "citation": "63 O.S. § 427.8, per the Marijuana Policy Project’s chart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-medical"
+   ]
+  },
+  {
+   "state": "OK",
    "question": "medical",
    "status": "allowed",
    "short": "Yes",
@@ -4904,6 +5216,19 @@
   },
   {
    "state": "RI",
+   "question": "employment",
+   "status": "protected",
+   "short": "Use outside work, with exceptions",
+   "detail": "An employer may not fire or discipline an employee solely for private, lawful cannabis use outside the workplace, as long as the employee has not worked and is not working under the influence. The rule gives way to a collective bargaining agreement that prohibits such use, and to federal contractors that would lose a federal benefit. For jobs that are hazardous, dangerous or essential to public welfare and safety, an employer may bar use in the 24 hours before a shift. Employers may act on a violation of a workplace drug policy or on working under the influence.",
+   "citation": "R.I. Gen. Laws § 21-28.11-29(d) and (e)",
+   "effective_on": "2022-05-25",
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "ri-gl-21-28-11-29"
+   ]
+  },
+  {
+   "state": "RI",
    "question": "home-grow",
    "status": "allowed",
    "short": "3 mature and 3 immature plants",
@@ -5011,6 +5336,19 @@
   },
   {
    "state": "SD",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Medical patients only",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists South Dakota as giving registered patients the same rights as people prescribed medication in dealings with an employer and in drug testing. Its chart says the protections yield to federal obligations and that employers may act on a positive test for safety-sensitive jobs. Not yet checked against the state’s own law.",
+   "citation": "SDCL §§ 34-20G-22 and 34-20G-23, per the Marijuana Policy Project’s chart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-medical"
+   ]
+  },
+  {
+   "state": "SD",
    "question": "medical",
    "status": "allowed",
    "short": "Yes",
@@ -5096,6 +5434,19 @@
   },
   {
    "state": "UT",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Public employees who are medical patients",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists Utah as protecting state and local government employees only: their medical cannabis use is treated like a prescribed controlled substance, and a cardholder may not be retaliated against for a failed drug test without evidence of impairment. Its chart lists exceptions tied to federal funding, clearances and licenses. Not yet checked against the state’s own law.",
+   "citation": "Utah Code § 26-61a-111, as cited in the Marijuana Policy Project’s chart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-medical"
+   ]
+  },
+  {
+   "state": "UT",
    "question": "medical",
    "status": "allowed",
    "short": "Yes",
@@ -5145,6 +5496,19 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "va-cca-faq"
+   ]
+  },
+  {
+   "state": "VA",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Medical patients only",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists Virginia as barring employers from discharging, disciplining or discriminating against an employee for lawful use of cannabis oil under a valid written certification. Its chart lists exceptions for impairment or possession at work, federal law and some defense-industry employers. Not yet checked against the state’s own law.",
+   "citation": "Va. Code § 40.1-27.4, per the Marijuana Policy Project’s chart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-medical"
    ]
   },
   {
@@ -5254,6 +5618,19 @@
   },
   {
    "state": "VT",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Medical patients with a disability",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists Vermont as protecting patients through 2018 Attorney General guidance, not the medical cannabis law: a patient with a disability is protected under the state’s Fair Employment Practices Act. Its chart adds that a separate state law restricts drug testing. Not yet checked against the state’s own law.",
+   "citation": "Vermont Attorney General guidance (2018); Fair Employment Practices Act, per the Marijuana Policy Project’s chart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-medical"
+   ]
+  },
+  {
+   "state": "VT",
    "question": "home-grow",
    "status": "allowed",
    "short": "2 mature and 4 immature plants",
@@ -5355,6 +5732,19 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "wa-lcb-know"
+   ]
+  },
+  {
+   "state": "WA",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Job applicants only",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists Washington as generally barring employers from rejecting job applicants for off-hours cannabis use or for a test that finds non-psychoactive cannabis metabolites. Its table lists exceptions that include jail and prison workers, first responders, airline and aerospace jobs, safety-sensitive positions and jobs needing a federal background check or security clearance. Not yet checked against the state’s own law.",
+   "citation": "RCW 49.44.240, per the Marijuana Policy Project’s table",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-adult"
    ]
   },
   {
@@ -5466,6 +5856,19 @@
    "source_ids": [
     "wv-code-60a-4-401",
     "wv-code-60a-4-407"
+   ]
+  },
+  {
+   "state": "WV",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Medical patients only",
+   "detail": "The Marijuana Policy Project, an advocacy group, lists West Virginia as barring employers from discharging, refusing to hire or discriminating against a person solely for being certified to use medical cannabis, with an exception for federal law. Not yet checked against the state’s own law.",
+   "citation": "W. Va. Code § 16A-15-4, per the Marijuana Policy Project’s chart",
+   "effective_on": null,
+   "reviewed_on": "2026-11-15",
+   "source_ids": [
+    "natl-mpp-employment-medical"
    ]
   },
   {
