@@ -1,4 +1,4 @@
-name: Deploy Pennsylvania site to GitHub Pages
+name: Deploy the-reefer.com to GitHub Pages
 
 on:
   push:

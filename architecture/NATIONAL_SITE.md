@@ -23,10 +23,20 @@ The pages add no claim of their own. `tests/test_national.py` checks that every 
 
 ## Publishing
 
-Pages use relative links, so the folder can be served from any address. Until `NATIONAL_ORIGIN` is set at build time, pages carry no canonical address and ask search engines not to index them. Connecting the-reefer.com is an owner decision and a separate issue: GitHub Pages allows one custom domain per repository, and this repository's is currently `weed.vethomeguard.org`.
+Owner direction, November 16, 2026: this repository's GitHub Pages site is the-reefer.com. The domain is registered at Wix; its DNS points the bare domain at GitHub Pages (A records 185.199.108.153, 185.199.109.153, 185.199.110.153 and 185.199.111.153) and `www` at `travisvought-byte.github.io`.
+
+`scripts/build_pages_site.py` assembles the published site on every push to `main`:
+
+- the national pages go to the site root with the-reefer.com as their canonical address (the committed copies in `national/` carry no canonical and stay out of search indexes);
+- each Ohio page forwards to its own page at ohioweed.org, so the Ohio guide has one canonical copy;
+- the shared state page and the Pennsylvania pages are published as built;
+- the retired address `weed.vethomeguard.org` is replaced by the-reefer.com in the published copy only. Committed files still name the old address; moving them is a separate change.
+
+`tests/test_pages_site.py` checks the assembled site.
 
 ## Open questions for the owner
 
 - Site name. The pages use "The Reefer" as a working name taken from the domain.
 - Where the pilot states' pathway links should point. Pennsylvania and New York link to the shared `state.html` in this repository.
-- Whether Ohio pages should link to the national home. This change leaves the Ohio site untouched.
+- Whether Ohio pages should link to the national home. The Ohio site is untouched.
+- Whether the Ohio pages should also be served in full at the-reefer.com instead of forwarding to ohioweed.org.
