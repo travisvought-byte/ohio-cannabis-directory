@@ -1,5 +1,5 @@
 {
- "schema_version": "1.0.0",
+ "schema_version": "1.1.0",
  "as_of": "2026-11-15",
  "purpose": "What adults and patients may do in each state, answered with the same questions for all 50 states and DC. Built top-down: national compilations that cover every state come first, then each state’s official sources. Every answer names its sources and the date it was checked. Missing answers mean not yet reviewed, never that something is prohibited.",
  "required_questions": [
@@ -30,6 +30,10 @@
   {
    "id": "using",
    "label": "Using it"
+  },
+  {
+   "id": "work-records",
+   "label": "Work and past records"
   }
  ],
  "questions": [
@@ -80,6 +84,50 @@
    "group": "using",
    "question": "What are the driving rules?",
    "keywords": "dui drive car vehicle"
+  },
+  {
+   "id": "employment",
+   "group": "work-records",
+   "question": "Does state law protect workers who use cannabis off the job?",
+   "keywords": "job employer employee fired hiring drug test workplace",
+   "note": "Labels sum up what the cited state law says about employers and cannabis use away from work. They are not a ruling on any one job, employer or drug test.",
+   "statuses": {
+    "protected": {
+     "label": "Protected",
+     "tone": "positive"
+    },
+    "partly-protected": {
+     "label": "Partly protected",
+     "tone": "partial"
+    },
+    "not-protected": {
+     "label": "Not protected",
+     "tone": "negative",
+     "needs_official_source": true
+    }
+   }
+  },
+  {
+   "id": "record-relief",
+   "group": "work-records",
+   "question": "Can a past cannabis record be cleared?",
+   "keywords": "expunge expungement seal sealing conviction clean slate pardon criminal record",
+   "note": "Labels name the process the cited state law provides. Whether one record qualifies depends on that record.",
+   "statuses": {
+    "automatic": {
+     "label": "Automatic",
+     "tone": "positive"
+    },
+    "by-application": {
+     "label": "By application",
+     "tone": "partial"
+    },
+    "no-process": {
+     "label": "No process",
+     "tone": "negative",
+     "needs_official_source": true
+    }
+   }
   }
  ],
  "jurisdictions": {
@@ -1964,6 +2012,60 @@
    "title": "Bill summary for SB 6204 (2026): last action, Senate Rules \"X\" file, February 26, 2026",
    "url": "https://app.leg.wa.gov/billsummary?BillNumber=6204&Year=2025&Initiative=false",
    "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "oh-orc-3796-28",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Ohio Legislative Service Commission",
+   "title": "Ohio Revised Code 3796.28, version effective March 20, 2026",
+   "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/37/3796/3796.28/3-20-2026/3796.28-3-20-2026.pdf",
+   "retrieved_on": "2026-11-05"
+  },
+  {
+   "id": "oh-orc-2953-321",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Ohio Legislative Service Commission",
+   "title": "Ohio Revised Code 2953.321, expungement of marijuana or hashish possession offenses",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-2953.321",
+   "retrieved_on": "2026-10-09"
+  },
+  {
+   "id": "pa-clean-slate-9122-2",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Pennsylvania General Assembly",
+   "title": "18 Pa.C.S. § 9122.2, clean slate limited access",
+   "url": "https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/18/00.091.022.002..HTM",
+   "retrieved_on": "2026-10-28"
+  },
+  {
+   "id": "ny-lab-201-d",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "New York State Senate",
+   "title": "N.Y. Labor Law § 201-d",
+   "url": "https://www.nysenate.gov/legislation/laws/LAB/201-D",
+   "retrieved_on": "2026-11-01"
+  },
+  {
+   "id": "ny-courts-cannabis-expungement",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "New York State Unified Court System",
+   "title": "Cannabis (Marihuana) and Expungement Under New York State Law",
+   "url": "https://www.nycourts.gov/help/criminal/cannabis-marihuana-and-expungement-under-new-york-state-law",
+   "retrieved_on": "2026-11-01"
+  },
+  {
+   "id": "ny-courts-clean-slate",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "New York State Unified Court System",
+   "title": "New York State’s Clean Slate Act",
+   "url": "https://www.nycourts.gov/cleanslate",
+   "retrieved_on": "2026-11-01"
   }
  ],
  "answers": [
@@ -4324,6 +4426,19 @@
   },
   {
    "state": "NY",
+   "question": "employment",
+   "status": "protected",
+   "short": "Lawful off-duty use, with exceptions",
+   "detail": "Employers generally may not act against workers for lawful off-duty cannabis use away from the workplace and without employer property. Employers may still act when required by state or federal law, when a worker shows specific articulable signs of impairment on the job, or when allowing it would violate federal law or risk a federal contract or funding.",
+   "citation": "N.Y. Labor Law § 201-d",
+   "effective_on": "2021-03-31",
+   "reviewed_on": "2026-11-01",
+   "source_ids": [
+    "ny-lab-201-d"
+   ]
+  },
+  {
+   "state": "NY",
    "question": "home-grow",
    "status": "allowed",
    "short": "3 mature and 3 immature plants per adult",
@@ -4376,6 +4491,20 @@
    "source_ids": [
     "ny-pen-222-10",
     "ny-ocm-adult-use"
+   ]
+  },
+  {
+   "state": "NY",
+   "question": "record-relief",
+   "status": "automatic",
+   "short": "Listed marijuana convictions are expunged",
+   "detail": "Convictions under the listed marijuana offenses (possession up to 16 ounces or sale up to 25 grams) are expunged automatically, with no motion or fee and no notice sent. Expunged cases do not appear on background checks and need not be disclosed. Other marijuana convictions require a CPL 440.46-a motion. Separately, the Clean Slate Act, in effect since November 16, 2024, provides automatic sealing of eligible convictions for certain civil background checks; courts have until November 16, 2027 to finish setting it up. Sex crimes and non-drug Class A felonies are not eligible.",
+   "citation": "N.Y. Unified Court System: cannabis expungement page and Clean Slate Act page",
+   "effective_on": "2021-03-31",
+   "reviewed_on": "2026-11-01",
+   "source_ids": [
+    "ny-courts-cannabis-expungement",
+    "ny-courts-clean-slate"
    ]
   },
   {
@@ -4433,6 +4562,19 @@
   },
   {
    "state": "OH",
+   "question": "employment",
+   "status": "not-protected",
+   "short": "Employers may act on marijuana use",
+   "detail": "Ohio’s marijuana law does not require employers to allow or accommodate marijuana use, possession or distribution. Employers may refuse to hire, discharge or discipline someone because of marijuana use, and may keep drug-testing, drug-free workplace and zero-tolerance policies. This applies to medical and adult-use marijuana alike.",
+   "citation": "Ohio Revised Code 3796.28",
+   "effective_on": "2026-03-20",
+   "reviewed_on": "2026-11-05",
+   "source_ids": [
+    "oh-orc-3796-28"
+   ]
+  },
+  {
+   "state": "OH",
    "question": "home-grow",
    "status": "allowed",
    "short": "6 plants per adult, 12 per home",
@@ -4482,6 +4624,19 @@
    "reviewed_on": "2026-11-05",
    "source_ids": [
     "oh-orc-3796-04"
+   ]
+  },
+  {
+   "state": "OH",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Some possession cases before March 20, 2026",
+   "detail": "An application-based process to expunge specified marijuana and hashish possession cases from before March 20, 2026. Eligibility and court procedures are stated in the statute.",
+   "citation": "Ohio Revised Code 2953.321",
+   "effective_on": "2026-03-20",
+   "reviewed_on": "2026-10-09",
+   "source_ids": [
+    "oh-orc-2953-321"
    ]
   },
   {
@@ -4658,6 +4813,19 @@
   },
   {
    "state": "PA",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Certified medical patients only",
+   "detail": "An employer may not fire, refuse to hire or otherwise discriminate against someone solely because they are certified to use medical marijuana. Employers need not allow use at work and may discipline employees for being under the influence at work when their conduct falls below the standard of care for the job.",
+   "citation": "Medical Marijuana Act (Act 16 of 2016), section 2103(b)",
+   "effective_on": "2016-05-17",
+   "reviewed_on": "2026-10-28",
+   "source_ids": [
+    "pa-mma"
+   ]
+  },
+  {
+   "state": "PA",
    "question": "home-grow",
    "status": "not-permitted",
    "short": "No",
@@ -4680,6 +4848,19 @@
    "reviewed_on": "2026-10-28",
    "source_ids": [
     "pa-mma"
+   ]
+  },
+  {
+   "state": "PA",
+   "question": "record-relief",
+   "status": "automatic",
+   "short": "Clean Slate seals eligible records",
+   "detail": "Clean Slate limits access to (seals) certain records automatically: charges that did not end in a conviction; summary convictions after five years; and second- and third-degree misdemeanors and misdemeanors punishable by up to two years after seven years free of convictions punishable by a year or more. Court-ordered restitution must be paid. A pardon is a separate step. The law covers criminal records in general, not only cannabis cases; whether one record qualifies depends on the full record and the exclusions in the statute.",
+   "citation": "18 Pa.C.S. § 9122.2, as amended by Act 36 of 2023",
+   "effective_on": "2024-06-11",
+   "reviewed_on": "2026-10-28",
+   "source_ids": [
+    "pa-clean-slate-9122-2"
    ]
   },
   {

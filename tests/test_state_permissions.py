@@ -113,6 +113,104 @@ class StatePermissionsTest(unittest.TestCase):
                 self.assertIn((s, q), answers)
                 self.assertEqual(evidence_level(answers[(s, q)], sources), 'official', (s, q))
 
+    def test_work_and_record_questions_word_their_own_statuses(self):
+        # Issue #150: "Allowed" and "Not permitted" would read as a verdict on the visitor here.
+        questions = {q['id']: q for q in DATA['questions']}
+        for qid in ('employment', 'record-relief'):
+            self.assertFalse(set(questions[qid]['statuses']) & set(DATA['statuses']), qid)
+            self.assertTrue(questions[qid]['note'].strip(), qid)
+
+        def use(status):
+            def change(d):
+                for a in d['answers']:
+                    if (a['state'], a['question']) == ('NY', 'employment'):
+                        a['status'] = status
+            return change
+        validate(broken(use('partly-protected')))
+        for bad in ('allowed', 'not-permitted', 'automatic', 'not-reviewed'):
+            with self.assertRaisesRegex(AssertionError, 'status must be one of', msg=bad):
+                validate(broken(use(bad)))
+        # A question on the shared statuses cannot borrow another question's wording.
+        self.assertNotIn('statuses', questions[DATA['answers'][0]['question']])
+        with self.assertRaises(AssertionError):
+            validate(broken(lambda d: d['answers'][0].update(status='protected')))
+
+    def test_question_status_definitions_are_checked(self):
+        def q(d, qid):
+            return next(x for x in d['questions'] if x['id'] == qid)
+        cases = {
+            'a shared status cannot be reworded': lambda d: q(d, 'employment')['statuses'].update(
+                {'allowed': {'label': 'Allowed', 'tone': 'positive'}}),
+            'tone must be one of': lambda d: q(d, 'employment')['statuses']['protected'].update(tone='good'),
+            'text is required': lambda d: q(d, 'record-relief')['statuses']['automatic'].update(label=' '),
+            'two statuses share a label': lambda d: q(d, 'record-relief')['statuses']['by-application'].update(label='Automatic'),
+            'needs at least two': lambda d: q(d, 'record-relief').update(statuses={}),
+            'note: text is required': lambda d: q(d, 'record-relief').update(note=''),
+            'top-level questions use the shared statuses': lambda d: q(d, 'adult-use').update(
+                statuses={'yes': {'label': 'Yes', 'tone': 'positive'}, 'no': {'label': 'No', 'tone': 'negative'}}),
+        }
+        for message, change in cases.items():
+            with self.assertRaisesRegex(AssertionError, message):
+                validate(broken(change))
+
+    def test_labels_that_say_the_law_lacks_something_need_an_official_source(self):
+        # "Not protected" and "No process" cannot rest on a national list alone.
+        compiled = next(s['id'] for s in DATA['sources'] if s['kind'] == 'compilation')
+
+        def rest_on_compilation(state, keep):
+            def change(d):
+                for a in d['answers']:
+                    if (a['state'], a['question']) == (state, 'employment'):
+                        moved, a['source_ids'], a['reviewed_on'] = a['source_ids'], [compiled], d['as_of']
+                    if (a['state'], a['question']) == (state, 'adult-use'):
+                        keeper = a
+                if keep:  # keep the statute cited somewhere, so nothing else about the data changes
+                    keeper['source_ids'] = keeper['source_ids'] + moved
+                    keeper['reviewed_on'] = d['as_of']
+            return change
+        with self.assertRaisesRegex(AssertionError, 'OH/employment: this answer needs an official source'):
+            validate(broken(rest_on_compilation('OH', keep=True)))
+        validate(broken(rest_on_compilation('NY', keep=True)))  # "Protected" carries no such claim
+
+    def test_answers_rest_on_official_sources_or_compilations_only(self):
+        # The evidence label names those two kinds; an advocacy page or news report cannot carry an answer.
+        other = next(s['id'] for s in DATA['sources'] if s['kind'] == 'organization')
+        with self.assertRaisesRegex(AssertionError, 'must be one of'):
+            validate(broken(lambda d: d['answers'][0]['source_ids'].append(other)))
+        kinds = {s['id']: s['kind'] for s in DATA['sources']}
+        self.assertEqual({kinds[sid] for a in DATA['answers'] for sid in a['source_ids']} - {'statute', 'regulator', 'government', 'compilation'}, set())
+
+    def test_ohio_pennsylvania_and_new_york_answer_work_and_record_questions(self):
+        # Issue #150: migrated from the reviewed rule summaries, each from official sources.
+        sources = {s['id']: s for s in DATA['sources']}
+        answers = {(a['state'], a['question']): a for a in DATA['answers']}
+        for state in ('OH', 'PA', 'NY'):
+            for qid in ('employment', 'record-relief'):
+                self.assertIn((state, qid), answers)
+                self.assertEqual(evidence_level(answers[(state, qid)], sources), 'official', (state, qid))
+
+    def test_page_shows_each_question_s_own_labels(self):
+        questions = {q['id']: q for q in DATA['questions']}
+        answers = {(a['state'], a['question']): a for a in DATA['answers']}
+        html = permissions_page.render_permissions(DATA)  # the default state is rendered into the page
+        rows = html.split('<article class="perm-row" ')
+        for qid in ('employment', 'record-relief'):
+            row = next(r for r in rows if r.startswith(f'data-question="{qid}"'))
+            own = questions[qid]['statuses'][answers[(permissions_page.HOME, qid)]['status']]
+            self.assertIn(f'<span class="chip {own["tone"]}">{own["label"]}</span>', row)
+            self.assertNotIn(DATA['statuses']['allowed'], row)
+            self.assertNotIn(DATA['statuses']['not-permitted'], row)
+            self.assertIn('class="perm-note muted"', row)
+        # Unanswered states keep the shared "Not yet reviewed" label; nothing is filled in for them.
+        unanswered = next((c for c in DATA['jurisdictions'] if (c, 'employment') not in answers), None)
+        if unanswered:
+            cell = permissions_page.cell(DATA, unanswered, None, questions['employment'])
+            self.assertIn('<span class="chip not-reviewed">Not yet reviewed</span>', cell)
+        # The browser gets the labels with the questions, so both renderers word them the same way.
+        info = permissions_page.payload(DATA)
+        self.assertEqual({q['id']: q.get('statuses') for q in info['questions']},
+                         {q['id']: q.get('statuses') for q in DATA['questions']})
+
     def test_page_payload_cites_listed_sources(self):
         info = permissions_page.payload(DATA)
         count = len(DATA['sources'])

@@ -2,7 +2,9 @@
 
 One shared question set, answered once per jurisdiction for all 50 states and DC.
 Every answer names its sources and review date. A missing answer means
-"not yet reviewed" and is never stored as a prohibition. Run:
+"not yet reviewed" and is never stored as a prohibition. A question may word
+its own status labels where "Allowed" and "Not permitted" would read as a
+verdict on the visitor (employment, record relief). Run:
 python validate_permissions.py
 """
 import json
@@ -17,6 +19,11 @@ PATH = ROOT / 'data/state-permissions.json'
 STATUSES = {'allowed', 'medical-only', 'limited', 'not-permitted', 'varies-locally', 'not-reviewed'}
 SOURCE_KINDS = {'statute', 'regulator', 'government', 'organization', 'compilation', 'news'}
 OFFICIAL_KINDS = {'statute', 'regulator', 'government'}
+# An answer rests on official sources, national compilations or both. The evidence label
+# shown beside it names exactly those two, so no other kind of source may carry an answer.
+ANSWER_SOURCE_KINDS = OFFICIAL_KINDS | {'compilation'}
+# How a question-specific status is coloured: good news, a partial answer or bad news for the visitor.
+TONES = {'positive', 'partial', 'negative'}
 SCOPES = {'state', 'national'}
 AUDIENCES = {'consumer', 'business'}
 JURISDICTION_COUNT = 51  # 50 states and the District of Columbia
@@ -74,9 +81,25 @@ def validate(data):
         assert q['id'] not in questions, f'duplicate question {q["id"]}'
         assert q['group'] in groups, f'{q["id"]}: unknown group {q["group"]!r}'
         _text(q['question'], q['id'])
+        if 'note' in q:
+            _text(q['note'], f'{q["id"]} note')
+        own = q.get('statuses')
+        if own is not None:
+            assert isinstance(own, dict) and len(own) >= 2, f'{q["id"]}: a question that words its own statuses needs at least two'
+            for key, status in own.items():
+                where = f'{q["id"]} status {key!r}'
+                assert re.fullmatch(r'[a-z]+(-[a-z]+)*', key), f'{where}: use lower-case words joined by hyphens'
+                assert key not in STATUSES, f'{where}: a shared status cannot be reworded; give the question its own'
+                _text(status['label'], where)
+                assert status['tone'] in TONES, f'{where}: tone must be one of {sorted(TONES)}'
+                assert isinstance(status.get('needs_official_source', False), bool), f'{where}: needs_official_source is true or false'
+            labels = [status['label'] for status in own.values()]
+            assert len(set(labels)) == len(labels), f'{q["id"]}: two statuses share a label'
         questions[q['id']] = q
     required = data['required_questions']
     assert required and set(required) <= set(questions), 'required_questions must name known questions'
+    assert not any(questions[q].get('statuses') for q in required), \
+        'the top-level questions use the shared statuses: the 50-state list and its filter depend on them'
 
     seen = set()
     for n, a in enumerate(data['answers']):
@@ -86,17 +109,25 @@ def validate(data):
         key = (a['state'], a['question'])
         assert key not in seen, f'{where}: duplicate answer'
         seen.add(key)
-        assert a['status'] in STATUSES and a['status'] != 'not-reviewed', \
-            f'{where}: store only reviewed answers; omit the answer to show "Not yet reviewed"'
+        own = questions[a['question']].get('statuses')
+        if own:
+            assert a['status'] in own, \
+                f'{where}: status must be one of {sorted(own)}; omit the answer to show "Not yet reviewed"'
+            needs_official = own[a['status']].get('needs_official_source', False)
+        else:
+            assert a['status'] in STATUSES and a['status'] != 'not-reviewed', \
+                f'{where}: store only reviewed answers; omit the answer to show "Not yet reviewed"'
+            needs_official = a['question'] == 'medical' and a['status'] == 'not-permitted'
         _text(a['short'], where); _text(a['detail'], where); _text(a['citation'], where)
         assert len(a['short']) <= 60, f'{where}: short answer must fit a phone row (60 characters)'
         assert _date(a['reviewed_on'], where) <= as_of, f'{where}: reviewed after as_of'
         if a.get('effective_on') is not None:
             _date(a['effective_on'], where)
-        cite(a['source_ids'], where)
-        if a['question'] == 'medical' and a['status'] == 'not-permitted':
+        cite(a['source_ids'], where, ANSWER_SOURCE_KINDS)
+        if needs_official:
+            # "No program", "Not protected" and "No process" are claims about what the law lacks.
             assert any(sources[sid]['kind'] in OFFICIAL_KINDS for sid in a['source_ids']), \
-                f'{where}: "not permitted" for medical use needs a state source showing there is no program'
+                f'{where}: this answer needs an official source, not a national compilation alone'
         for sid in a['source_ids']:
             assert _date(sources[sid]['retrieved_on'], sid) <= _date(a['reviewed_on'], where), \
                 f'{where}: reviewed before its source {sid} was retrieved'
