@@ -2210,6 +2210,78 @@
    "title": "Alaska Statutes chapter 17.38, the regulation of marijuana (office copy, effective July 25, 2018; marked “Not an Official Copy”)",
    "url": "https://www.commerce.alaska.gov/web/Portals/9/pub/Archive26/MCB/StatutesAndRegulations/AS17.38.pdf",
    "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "il-croo-expungement",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Illinois Cannabis Regulation Oversight Officer",
+   "title": "Expungement (figures as of July 29, 2026)",
+   "url": "https://cannabis.illinois.gov/legal-and-enforcement/expungement.html",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "nj-courts-marijuana-expungement",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "New Jersey Judiciary",
+   "title": "Marijuana Record Expungement (February 1, 2022)",
+   "url": "https://www.njcourts.gov/public/news-media/top-news/marijuana-record-expungement",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "az-courts-prop207",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Arizona Judicial Branch",
+   "title": "Prop 207 (marijuana expungement forms and eligibility)",
+   "url": "https://www.azcourts.gov/prop207",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "az-courts-expungement-instructions",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Arizona Supreme Court",
+   "title": "Instructions for Completing a Petition to Expunge Marijuana-Related Offense Records Pursuant to A.R.S. Section 36-2862 (form AOC CREM1I-071221)",
+   "url": "https://www.azcourts.gov/Portals/0/0/Prop%20207/AOCCREM1I-071221.pdf?ver=2021-06-23-145149-577",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "az-courts-expungement-process",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Arizona Administrative Office of the Courts, Court Services Division",
+   "title": "Expungement Process (court staff presentation, updated June 2022)",
+   "url": "https://www.azcourts.gov/Portals/0/27/ASU/Leg21/Prop207/Prop%20207%20Expungement%20Updated%20Version%20June%202022.pdf?ver=IASwLMeUUGjrubVo08U-pg%3D%3D",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "mn-bca-expungements",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Minnesota Department of Public Safety, Bureau of Criminal Apprehension",
+   "title": "Expungements",
+   "url": "https://dps.mn.gov/divisions/bca/bca-divisions/professional-services/expungements",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "mn-recordrelief-faq",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "State of Minnesota, MN Cannabis Expungement Committee",
+   "title": "FAQs (cannabis record sealing)",
+   "url": "https://mn.gov/recordrelief/faq/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "ri-courts-expungement-phase-one",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Rhode Island Judiciary",
+   "title": "Rhode Island Judiciary Completes Phase One of Marijuana Expungement Process (undated release; after April 30, 2023)",
+   "url": "https://www.courts.ri.gov/Courts/superiorcourt/Documents/Phase%20One%20of%20Marijuana%20Expungement%20Process.pdf",
+   "retrieved_on": "2026-11-15"
   }
  ],
  "answers": [
@@ -2509,13 +2581,15 @@
    "state": "AZ",
    "question": "record-relief",
    "status": "by-application",
-   "short": "Possession up to 2.5 oz; up to six plants",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists Arizona’s legalization law as allowing expungement for possession of up to 2.5 ounces of cannabis and cultivation of up to six plants. Its table adds that a 2023 Court of Appeals ruling found some sales-related convictions qualify, and that prosecutors and the Attorney General can file on a person’s behalf. Not yet checked against the state’s own law.",
-   "citation": "Marijuana Policy Project’s table of legalization states’ expungement laws",
-   "effective_on": null,
+   "short": "2.5 ounces or less, six plants or paraphernalia",
+   "detail": "Arizona’s courts say Proposition 207 added A.R.S. § 36-2862, which lets some people petition a court for an order sealing their marijuana-related criminal records; the courts’ forms call this expungement. It covers a person arrested, charged, convicted or acquitted, for conduct before November 30, 2020, of possessing, consuming or transporting 2.5 ounces or less of marijuana (no more than 12.5 grams of it concentrate), of possessing, transporting, growing or processing up to six plants at a primary residence for personal use, or of a marijuana paraphernalia offense. Courts have taken petitions since July 12, 2021 and may not charge a filing fee. The petition goes to the court that resolved the case or, if no case was filed, to the Superior Court in the county of the arrest. A prosecuting agency may also file.",
+   "citation": "A.R.S. § 36-2862, per the Arizona Judicial Branch’s Prop 207 page, petition instructions and court staff presentation",
+   "effective_on": "2021-07-12",
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-mpp-expungement"
+    "az-courts-prop207",
+    "az-courts-expungement-instructions",
+    "az-courts-expungement-process"
    ]
   },
   {
@@ -3426,13 +3500,13 @@
    "state": "IL",
    "question": "record-relief",
    "status": "automatic",
-   "short": "Up to 30 grams; petition up to 500",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists Illinois as expunging records for up to 30 grams automatically, through the governor’s clemency process. For 30 to 500 grams, its table says the state’s attorney or the person can petition the court to vacate the conviction. Not yet checked against the state’s own law.",
-   "citation": "Marijuana Policy Project’s table of legalization states’ expungement laws",
+   "short": "Under 30 grams: automatic if no conviction",
+   "detail": "Illinois’s cannabis site says minor cannabis offenses that did not end in a conviction, usually possession, manufacture, delivery or intent to deliver under 30 grams, are expunged automatically and removed from the public record. Minor offenses that ended in a conviction may be pardoned by the Governor, which expunges the record, and county State’s Attorneys may ask courts to vacate and expunge convictions. The site names New Leaf Illinois, a statewide, state-funded initiative, for free legal help.",
+   "citation": "Cannabis Regulation and Tax Act, per the State of Illinois cannabis site’s Expungement page",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-mpp-expungement"
+    "il-croo-expungement"
    ]
   },
   {
@@ -4200,13 +4274,14 @@
    "state": "MN",
    "question": "record-relief",
    "status": "automatic",
-   "short": "Low-level offenses; a board reviews others",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists Minnesota as expunging low-level cannabis offenses automatically. Its table says a Cannabis Expungement Board reviews other convictions to decide whether they should be vacated, expunged or resentenced. Not yet checked against the state’s own law.",
-   "citation": "Marijuana Policy Project’s table of legalization states’ expungement laws",
+   "short": "Certain misdemeanors; a board reviews felonies",
+   "detail": "Minnesota’s Bureau of Criminal Apprehension says the Adult-Use Cannabis Act requires automatic expungement of certain earlier cannabis records; it expunged the qualifying records in its system in May 2024 and will review again in 2026. The state’s cannabis record site says these are misdemeanor convictions and certain offenses that did not end in a conviction, that sealed records will not show on most background checks, and that no one is notified: a person can check the courts’ online case search or a courthouse terminal. Felony and gross misdemeanor records go to the Cannabis Expungement Board for review; no application is needed, though a person may apply for earlier consideration. The separate Clean Slate Act, in effect since January 1, 2025, automatically seals certain other records.",
+   "citation": "Minn. Stat. §§ 609A.055 and 609A.06, per the Bureau of Criminal Apprehension’s Expungements page and the state’s cannabis record FAQs",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-mpp-expungement"
+    "mn-bca-expungements",
+    "mn-recordrelief-faq"
    ]
   },
   {
@@ -4757,13 +4832,13 @@
    "state": "NJ",
    "question": "record-relief",
    "status": "automatic",
-   "short": "Several cannabis offenses",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists New Jersey as sealing and expunging records automatically: a 2019 law directed an automatic system for several cannabis offenses, including possession and sale of up to an ounce, and a 2021 law provided automatic expungement and dismissed pending possession and distribution charges. Not yet checked against the state’s own law.",
-   "citation": "Marijuana Policy Project’s table of legalization states’ expungement laws",
+   "short": "Certain marijuana and hashish cases",
+   "detail": "The New Jersey Judiciary says it expunges eligible marijuana and hashish cases automatically, with no request needed, under the Marijuana Decriminalization Law; by February 2022 it had cleared more than 362,000 cases. An expunged case leaves the public court record and need not be reported on applications for jobs, housing or college. A person who believes a case should have qualified can file a motion for judicial review, and can get a certification of expungement from the court that heard the case or the Superior Court Clerk’s Office in Trenton.",
+   "citation": "New Jersey Judiciary, Marijuana Record Expungement (February 1, 2022)",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-mpp-expungement"
+    "nj-courts-marijuana-expungement"
    ]
   },
   {
@@ -5671,13 +5746,13 @@
    "state": "RI",
    "question": "record-relief",
    "status": "automatic",
-   "short": "Past possession convictions",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists Rhode Island’s legalization law as creating a process to expunge prior misdemeanor and felony cannabis possession convictions by July 1, 2024. Its table says the courts completed a first round of automatic expungements in summer 2023. Not yet checked against the state’s own law.",
-   "citation": "Marijuana Policy Project’s table of legalization states’ expungement laws",
+   "short": "Possession convictions and civil violations",
+   "detail": "The Rhode Island Judiciary says the Rhode Island Cannabis Act of 2022 requires the courts to expunge eligible cases and charges automatically, at no cost. Under the Supreme Court’s Executive Order 2023-02 that covers criminal convictions for marijuana possession by people 18 and over and civil violations by people 21 and over, and not other marijuana convictions such as selling, delivering or manufacturing. Cases where possession was the only charge were cleared before April 30, 2023; the Judiciary said cases with other charges were on track for July 1, 2024. A person can check the Judiciary’s Public Portal, where an expunged case no longer appears, and can ask the court that heard the case to act sooner by filing a Notice for Expedited Marijuana Possession Expungement.",
+   "citation": "Rhode Island Cannabis Act (2022) and Supreme Court Executive Order 2023-02, per the Rhode Island Judiciary’s release on phase one of marijuana expungement",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-mpp-expungement"
+    "ri-courts-expungement-phase-one"
    ]
   },
   {
