@@ -2129,6 +2129,51 @@
    "title": "Mont. Code Ann. § 39-2-313, discrimination prohibited for use of lawful product during nonworking hours (2025)",
    "url": "https://mca.legmt.gov/bills/MCA/title_0390/chapter_0020/part_0030/section_0130/0390-0020-0030-0130.html",
    "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "nj-crc-workplace-dui",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "New Jersey Cannabis Regulatory Commission",
+   "title": "Workplace & DUI Laws",
+   "url": "https://www.nj.gov/cannabis/adult-personal/workplace-dui-laws/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "nj-crc-workplace-impairment-guidance",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "New Jersey Cannabis Regulatory Commission",
+   "title": "Guidance on “Workplace Impairment” (issued September 9, 2022)",
+   "url": "https://nj.gov/cannabis/documents/businesses/Business%20Resources/Workplace%20Impairment%20Guidance%20922.pdf",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "nv-nrs-613-132",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Nevada Legislature",
+   "title": "NRS 613.132, refusing to hire based on a screening test that indicates marijuana (NRS chapter 613, revised September 9, 2026)",
+   "url": "https://www.leg.state.nv.us/nrs/nrs-613.html",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "wa-rcw-49-44-240",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Washington State Legislature",
+   "title": "RCW 49.44.240, discrimination based upon cannabis use; exceptions",
+   "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=49.44.240",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "dc-law-24-190",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Council of the District of Columbia",
+   "title": "D.C. Law 24-190, Cannabis Employment Protections Amendment Act of 2022",
+   "url": "https://code.dccouncil.gov/us/dc/council/laws/24-190",
+   "retrieved_on": "2026-11-15"
   }
  ],
  "answers": [
@@ -2689,8 +2734,8 @@
    "state": "CT",
    "question": "employment",
    "status": "partly-protected",
-   "short": "Unless a written employer policy bars it",
-   "detail": "Since July 1, 2022, an employer that is not exempt may not prohibit cannabis use outside work, or act on a positive THC test, unless it has adopted a written policy that says otherwise. Exempt employers may regulate off-duty use as they could before the law. Employers generally may not act on cannabis use from before a person applied or was hired. The state’s cannabis site says an employer cannot require a medical marijuana patient to refrain from off-duty use.",
+   "short": "Unless an employer policy bars it",
+   "detail": "Since July 1, 2022, an employer that is not exempt may not prohibit cannabis use outside work, or act on a positive THC test, unless it has adopted a policy that says otherwise. Exempt employers may regulate off-duty use as they could before the law. Employers generally may not act on cannabis use from before a person applied or was hired. The state’s cannabis site says an employer cannot require a medical marijuana patient to refrain from off-duty use.",
    "citation": "State of Connecticut, Adult-Use Cannabis in Connecticut, workplace questions (2021 and 2023)",
    "effective_on": "2022-07-01",
    "reviewed_on": "2026-11-15",
@@ -2809,12 +2854,12 @@
    "question": "employment",
    "status": "protected",
    "short": "Cannabis use, with exceptions",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists the District as barring employers from acting against someone for cannabis use, for being a medical cannabis patient, or for cannabis metabolites in a drug test without impairment. Its chart lists exceptions for impairment at work, safety-sensitive jobs, and federal law, contracts or agreements. Not yet checked against the District’s own law.",
-   "citation": "D.C. Law 24-190, per the Marijuana Policy Project’s chart",
+   "detail": "An employer may not refuse to hire, fire, suspend, demote, fail to promote or penalize someone for using cannabis, for being a medical cannabis patient, or for cannabinoid metabolites in a drug test without other signs of impairment. Employers may act when the job is designated safety-sensitive, when federal law, a federal contract or funding requires it, when cannabis is used or possessed at work, or when the employee is impaired at work. They may still test after an accident or on reasonable suspicion. The act took effect on October 22, 2022; its protections applied no earlier than 365 days after the Mayor approved it.",
+   "citation": "D.C. Law 24-190, Cannabis Employment Protections Amendment Act of 2022, section 102",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-mpp-employment-medical"
+    "dc-law-24-190"
    ]
   },
   {
@@ -4371,13 +4416,14 @@
    "state": "NJ",
    "question": "employment",
    "status": "protected",
-   "short": "Use away from work, with exceptions",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists New Jersey as barring employers from firing, refusing to hire or penalizing workers because they use cannabis, or because of cannabis metabolites alone. Its table says employers may act on use at work or working under the influence, and that federal contractors may follow federal law. Not yet checked against the state’s own law.",
-   "citation": "N.J.S.A. 24:6I-52, per the Marijuana Policy Project’s table",
+   "short": "Cannabis use alone cannot decide hiring or firing",
+   "detail": "The Cannabis Regulatory Commission says general cannabis use cannot be a determining factor in hiring or firing someone, and that an employer may not take adverse action solely because a drug test finds cannabinoid metabolites from lawful use. Employers may keep a drug- and alcohol-free workplace and may require a drug test on reasonable suspicion of use at work, on signs of impairment, in a random testing program or after a workplace accident. A positive test together with documented signs of impairment during work hours may support action. Employers bound by a federal contract may follow federal rules.",
+   "citation": "N.J.S.A. 24:6I-52, per the Cannabis Regulatory Commission’s workplace page and guidance (September 9, 2022)",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-mpp-employment-adult"
+    "nj-crc-workplace-dui",
+    "nj-crc-workplace-impairment-guidance"
    ]
   },
   {
@@ -4606,11 +4652,12 @@
    "question": "employment",
    "status": "partly-protected",
    "short": "Job applicants and medical patients",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists Nevada as banning most employers from using cannabis in pre-employment drug testing, with no protection for current employees, and exceptions for safety-sensitive positions, federal law and collective bargaining agreements. Its medical chart adds that employers must try to reasonably accommodate cardholders’ medical use away from work. Not yet checked against the state’s own law.",
-   "citation": "NRS 613.132 and NRS 678C.850, per the Marijuana Policy Project’s table and chart",
+   "detail": "It is unlawful for a Nevada employer to refuse to hire a prospective employee because a screening test shows marijuana. That does not cover applicants to be firefighters or emergency medical technicians, jobs that require driving and for which law requires screening tests, or jobs the employer determines could adversely affect the safety of others. It gives way to an employment contract or collective bargaining agreement and to federal law, and does not cover positions funded by a federal grant. The Marijuana Policy Project, an advocacy group, lists no protection for current employees’ adult use, and lists a duty to try to reasonably accommodate medical cardholders’ use away from work (NRS 678C.850); those two points are not yet checked against the state’s own law.",
+   "citation": "NRS 613.132; Marijuana Policy Project’s table and chart for the other points",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
+    "nv-nrs-613-132",
     "natl-mpp-employment-adult",
     "natl-mpp-employment-medical"
    ]
@@ -5739,12 +5786,12 @@
    "question": "employment",
    "status": "partly-protected",
    "short": "Job applicants only",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists Washington as generally barring employers from rejecting job applicants for off-hours cannabis use or for a test that finds non-psychoactive cannabis metabolites. Its table lists exceptions that include jail and prison workers, first responders, airline and aerospace jobs, safety-sensitive positions and jobs needing a federal background check or security clearance. Not yet checked against the state’s own law.",
-   "citation": "RCW 49.44.240, per the Marijuana Policy Project’s table",
-   "effective_on": null,
+   "detail": "Since January 1, 2024, it is unlawful for an employer to discriminate in initial hiring because of a person’s use of cannabis off the job and away from the workplace, or because an employer-required drug test finds non-psychoactive cannabis metabolites. The law covers initial hiring only: it does not apply to testing after hiring, such as post-accident or suspicion-based testing, and it leaves drug-free workplace rules in place. It does not cover applicants for jobs that need a federal background investigation or security clearance, jobs with law enforcement agencies and fire departments, other first responders, corrections officers, airline and aerospace jobs, or safety-sensitive jobs the employer identified in advance.",
+   "citation": "RCW 49.44.240",
+   "effective_on": "2024-01-01",
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-mpp-employment-adult"
+    "wa-rcw-49-44-240"
    ]
   },
   {
