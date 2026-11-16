@@ -2795,6 +2795,42 @@
    "title": "Set-Aside of a Criminal Conviction (self-help)",
    "url": "https://nebraskajudicial.gov/node/16084",
    "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "ks-ksa-21-6614",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Kansas Office of Revisor of Statutes",
+   "title": "K.S.A. 21-6614, expungement of certain convictions, arrest records and diversion agreements",
+   "url": "https://www.ksrevisor.gov/statutes/chapters/ch21/021_066_0014.html",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "id-courts-clean-slate",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Idaho Supreme Court",
+   "title": "Instructions for Requesting Shielding of Records from Public Disclosure (Clean Slate Act; dated January 1, 2024)",
+   "url": "https://isc.idaho.gov/files/Clean-Slate-Instructions.pdf",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "wy-courts-expungements",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Wyoming Judicial Branch",
+   "title": "Expungements (legal help by topic)",
+   "url": "https://www.wyocourts.gov/legal-help-by-topic/expungements/",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "al-alea-expungement",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Alabama Law Enforcement Agency",
+   "title": "Criminal Record Expungement",
+   "url": "https://alea.gov/criminal-record-expungement",
+   "retrieved_on": "2026-11-16"
   }
  ],
  "answers": [
@@ -2941,6 +2977,19 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "al-amcc"
+   ]
+  },
+  {
+   "state": "AL",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Petition filed in court; a court decides",
+   "detail": "Alabama law allows criminal records to be expunged in certain circumstances (Code of Alabama 1975, Title 15, Chapter 27). A court grants an expungement, not the Alabama Law Enforcement Agency. The agency’s page gives the steps: get a certified copy of your criminal history record from the agency, then file the petition form provided by the Administrative Office of Courts. The page does not state which records qualify, any waiting period or the filing fee, and does not mention marijuana; the statute itself has not been reviewed.",
+   "citation": "Alabama Law Enforcement Agency, Criminal Record Expungement (Code of Alabama 1975, § 15-27)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-16",
+   "source_ids": [
+    "al-alea-expungement"
    ]
   },
   {
@@ -3965,6 +4014,19 @@
    ]
   },
   {
+   "state": "ID",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Court petition to shield a record after 5 years, once",
+   "detail": "Idaho’s Clean Slate Act (Idaho Code § 67-3004(11)) lets a person ask the court to shield a record from public view; the record is not destroyed. Only non-violent, non-assaultive offenses qualify. At least five years must have passed since the sentence was completed, including probation, parole, fines and restitution. One offense, or the offenses from a single incident, may be shielded, and only one petition can be granted in a lifetime. The petition is filed in the county where the case was filed, there is no filing fee, and the court holds a hearing. The courts’ instructions do not say which drug offenses qualify and do not mention marijuana; the law covers criminal records in general.",
+   "citation": "Idaho Supreme Court, Clean Slate Act instructions (January 1, 2024); Idaho Code § 67-3004(11)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-16",
+   "source_ids": [
+    "id-courts-clean-slate"
+   ]
+  },
+  {
    "state": "IL",
    "question": "adult-use",
    "status": "allowed",
@@ -4158,6 +4220,19 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "ks-ksa-21-5706"
+   ]
+  },
+  {
+   "state": "KS",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Court petition after 3 or 5 years; $176 docket fee",
+   "detail": "Kansas expunges convictions only by petition to the convicting court (K.S.A. 21-6614). A person convicted of a misdemeanor or a lower-severity drug felony may petition three years after satisfying the sentence or being discharged from probation, parole or other supervision; more serious felonies, including higher-severity drug felonies, take five years. A completed diversion can be expunged three years after its terms were fulfilled. The petition carries a $176 docket fee, and the court decides at a hearing. The text provides no automatic expungement and does not name marijuana; it covers criminal records in general. The Revisor’s page shows the section as amended through 2023; later amendments were not reviewed.",
+   "citation": "K.S.A. 21-6614 (Revisor of Statutes text, history through L. 2023, ch. 91)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-16",
+   "source_ids": [
+    "ks-ksa-21-6614"
    ]
   },
   {
@@ -7168,6 +7243,19 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "wy-stat-title-35"
+   ]
+  },
+  {
+   "state": "WY",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Court petition after 1, 5 or 10 years; once per statute",
+   "detail": "Wyoming does not expunge records automatically; a petition must be filed with the court, served and granted by a judge. A misdemeanor conviction can be expunged at least five years after the sentence ends (one year for a status offense) if no gun was involved and the person is not a substantial danger (W.S. 7-13-1501). An eligible felony takes at least ten years after the sentence, any court-ordered program and restitution are complete, and a list of felonies is excluded (W.S. 7-13-1502). A person can get only one expungement under each statute. The courts’ page does not state a filing fee and does not mention marijuana; the law covers criminal records in general.",
+   "citation": "Wyoming Judicial Branch, Expungements (W.S. 7-13-1501 and 7-13-1502)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-16",
+   "source_ids": [
+    "wy-courts-expungements"
    ]
   }
  ]
