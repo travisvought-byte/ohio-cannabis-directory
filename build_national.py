@@ -176,6 +176,8 @@ def tile_map(perm, question, answers, caption):
 # The other sites in the same family. Every page links to them.
 FAMILY = [
     (OHIO_HOME + '/', 'OhioWeed.org', 'ohioweed.org', 'The complete Ohio guide: business directory, dispensary finder, record clearing and advocacy.'),
+    ('https://mobilitytalk.org/', 'Mobility Talk', 'mobilitytalk.org', 'Mobility resources and advocacy for people across the country.'),
+    ('https://findbingo.org/', 'Find Bingo', 'findbingo.org', 'Find bingo games and halls near you.'),
     ('https://vethomeguard.org/', 'Veteran Home Guardians', 'vethomeguard.org', 'The veteran nonprofit this work is shared in support of.'),
     ('https://travisvought.com/', 'All sites by Travis Vought', 'travisvought.com', 'Every directory, guide and project in one place.'),
 ]
@@ -203,7 +205,35 @@ def correction_url(place):
     return 'mailto:' + EMAIL + '?' + urlencode({'subject': f'{SITE_NAME}: correction for {place}', 'body': body}, quote_via=quote)
 
 
-def shell(title, description, body, name, place, hero=''):
+def page_url(name):
+    return ORIGIN + '/' + ('' if name == 'index.html' else name)
+
+
+def json_ld(nodes):
+    """Structured data for search engines. Only text already shown on the page; absolute URLs need ORIGIN."""
+    if not ORIGIN or not nodes:
+        return ''
+    data = {'@context': 'https://schema.org', '@graph': nodes}
+    text = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+    return f'<script type="application/ld+json">{text}</script>'
+
+
+def breadcrumbs(trail, name, title):
+    """BreadcrumbList matching the visible crumbs: trail is [(label, page)], the current page comes last."""
+    items = [{'@type': 'ListItem', 'position': i, 'name': label, 'item': ORIGIN + '/' + page}
+             for i, (label, page) in enumerate(trail, 1)]
+    items.append({'@type': 'ListItem', 'position': len(items) + 1, 'name': title, 'item': page_url(name)})
+    return {'@type': 'BreadcrumbList', '@id': page_url(name) + '#breadcrumb', 'itemListElement': items}
+
+
+def website_node():
+    return {'@type': 'WebSite', '@id': ORIGIN + '/#website', 'url': ORIGIN + '/', 'name': SITE_NAME,
+            'alternateName': 'The-Reefer.com', 'description': TAGLINE, 'inLanguage': 'en-US',
+            'license': 'https://creativecommons.org/licenses/by/4.0/',
+            'creator': {'@type': 'Person', 'name': 'Travis Vought', 'url': 'https://travisvought.com/'}}
+
+
+def shell(title, description, body, name, place, hero='', ld=None):
     head = ['<!doctype html><html lang="en"><head><meta charset="utf-8">',
             '<meta name="viewport" content="width=device-width,initial-scale=1">',
             f'<title>{esc(title)} | {esc(SITE_NAME)}</title>',
@@ -213,12 +243,14 @@ def shell(title, description, body, name, place, hero=''):
             f'<meta property="og:type" content="website"><meta property="og:site_name" content="{esc(SITE_NAME)}">',
             f'<meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(description)}">']
     if ORIGIN:
-        href = ORIGIN + '/' + ('' if name == 'index.html' else name)
+        href = page_url(name)
         head.append(f'<link rel="canonical" href="{esc(href)}"><meta property="og:url" content="{esc(href)}">'
                     f'<meta property="og:image" content="{ORIGIN}/assets/the-reefer/logo-share.jpg"><meta property="og:image:width" content="1200">'
                     f'<meta property="og:image:height" content="800"><meta property="og:image:alt" content="{esc(LOGO_ALT)}"><meta name="twitter:card" content="summary_large_image">')
     else:
         head.append('<meta name="robots" content="noindex,follow">')
+    if ld and ORIGIN:
+        head.append(json_ld(ld))
     head.append(f'<style>{CSS}</style></head><body>')
     top = (f'<header class="site"><div class="wrap"><a class="brand" href="index.html" aria-label="{esc(SITE_NAME)} home"><img src="{ASSETS}mark-96.png" alt="" width="40" height="40"><span>{esc(SITE_NAME)}</span></a>'
            '<nav aria-label="Primary"><a href="index.html#map">Your state</a><a href="index.html#compare">Compare laws</a>'
@@ -362,7 +394,29 @@ def state_page(perm, score, directory, code, answers, sources):
     body.append(cites.render())
     answered = len(state_answers)
     description = f'{name} cannabis law in plain language: {answered} of {len(perm["questions"])} questions answered from named sources, plus directory and local help.'
-    return shell(f'{name} cannabis guide', description, ''.join(body), slug(name) + '.html', name)
+    page, title = slug(name) + '.html', f'{name} cannabis guide'
+    ld = [breadcrumbs([('All states', '')], page, name)]
+    faq = faq_node(perm, state_answers, page)
+    if faq:
+        ld.append(faq)
+    return shell(title, description, ''.join(body), page, name, ld=ld)
+
+
+def faq_node(perm, state_answers, page):
+    """The answered law questions as FAQPage data: the question, short answer, detail and citation shown on the page."""
+    entries = []
+    for q in perm['questions']:
+        a = state_answers.get(q['id'])
+        if not a:
+            continue
+        effective = f', in effect {long_date(a["effective_on"])}' if a.get('effective_on') else ''
+        text = (f'{a["short"].rstrip(".")}. {a["detail"]} '
+                f'Source: {a["citation"]}{effective}, checked {long_date(a["reviewed_on"])}.')
+        entries.append({'@type': 'Question', 'name': q['question'], 'acceptedAnswer': {'@type': 'Answer', 'text': text}})
+    if not entries:
+        return None
+    return {'@type': 'FAQPage', '@id': page_url(page) + '#law', 'url': page_url(page),
+            'isPartOf': {'@id': ORIGIN + '/#website'}, 'mainEntity': entries}
 
 
 NEED_BLURB = {
@@ -421,7 +475,7 @@ def help_page(perm, sources):
                         f'<p>{esc(i["text"])}</p><p class="muted">Checked {long_date(i["reviewed_on"])} {cites.mark(i["source_ids"])}</p></article>')
     body.append(cites.render())
     return shell('Help by need', 'National cannabis help lines, federal rules and organizations that cover every state, grouped by what you need.',
-                 ''.join(body), 'help.html', 'the help page')
+                 ''.join(body), 'help.html', 'the help page', ld=[breadcrumbs([('Home', '')], 'help.html', 'Help by need')])
 
 
 def law_page(perm, question, answers, sources):
@@ -457,7 +511,9 @@ def law_page(perm, question, answers, sources):
             '<script>(function(){var f=document.getElementById("status-filter");f.addEventListener("change",function(){'
             'document.querySelectorAll("#rows li").forEach(function(li){li.hidden=!!f.value&&li.getAttribute("data-status")!==f.value})})})();</script>']
     description = f'{question["question"]} All 50 states and DC compared, each answer traced to a named source and the date it was checked.'
-    return shell(question['question'], description, ''.join(body), law_page_name(question['id']), 'the state comparison')
+    page = law_page_name(question['id'])
+    ld = [breadcrumbs([('Home', ''), ('Compare the law', '#compare')], page, question['question'])]
+    return shell(question['question'], description, ''.join(body), page, 'the state comparison', ld=ld)
 
 
 def progress_section(perm, score, directory, answers):
@@ -497,7 +553,7 @@ def about_page(perm, score, directory, answers):
             f'Everything here is free to use under CC BY 4.0, and the data and build scripts are public on <a href="{REPO}">GitHub</a>.</p>'
             '<p>Created and maintained by Travis Vought, shared in support of Veteran Home Guardians.</p>']
     return shell(f'About {SITE_NAME}', f'How {SITE_NAME} checks its information, what its labels mean, how far each state guide has been built, and how to send a correction.',
-                 ''.join(body), 'about.html', 'the site')
+                 ''.join(body), 'about.html', 'the site', ld=[breadcrumbs([('Home', '')], 'about.html', 'About')])
 
 
 # What a visitor came for, each with one place to go. Help-page needs are linked by their section.
@@ -570,7 +626,7 @@ def home_page(perm, score, directory, answers, sources):
     body.append('<script>(function(){var f=document.getElementById("pick"),j=document.getElementById("state-jump");'
                 'function go(){if(!j.value)return;if(window.directoryTrack)window.directoryTrack("state-picker");location.href=j.value}f.addEventListener("submit",function(e){e.preventDefault();go()});j.addEventListener("change",go)})();</script>')
     description = 'Free, plain-language cannabis answers for all 50 states and DC: what is legal, where to buy, record clearing and where to get help, each answer traced to a named source.'
-    return shell(TAGLINE, description, ''.join(body), 'index.html', 'the home page', hero)
+    return shell(TAGLINE, description, ''.join(body), 'index.html', 'the home page', hero, ld=[website_node()])
 
 def state_names(perm):
     return {slug(name) + '.html' for name in perm['jurisdictions'].values()}

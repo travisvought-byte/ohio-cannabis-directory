@@ -63,6 +63,35 @@ class PagesSiteTest(unittest.TestCase):
             for href in re.findall(r'href="([^"#:?]+\.html)', self.read(name)):
                 self.assertTrue((self.out / href).exists(), f'{name} links to missing {href}')
 
+    def test_structured_data_matches_the_page(self):
+        import json
+        import re
+        perm = json.loads((ROOT / 'data/state-permissions.json').read_text(encoding='utf-8'))
+        answered = {}
+        for a in perm['answers']:
+            answered.setdefault(a['state'], set()).add(a['question'])
+        questions = {q['id']: q['question'] for q in perm['questions']}
+        for name in self.result['national']:
+            text = self.read(name)
+            blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', text, re.S)
+            self.assertEqual(len(blocks), 1, name)
+            graph = json.loads(blocks[0])['@graph']
+            types = [n['@type'] for n in graph]
+            if name == 'index.html':
+                self.assertEqual(types, ['WebSite'])
+                self.assertEqual(graph[0]['url'], 'https://the-reefer.com/')
+                continue
+            crumbs = graph[0]
+            self.assertEqual(crumbs['@type'], 'BreadcrumbList', name)
+            self.assertEqual(crumbs['itemListElement'][-1]['item'], f'https://the-reefer.com/{name}')
+        for code, state in perm['jurisdictions'].items():
+            name = re.sub(r'[^a-z0-9]+', '-', state.lower()).strip('-') + '.html'
+            graph = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', self.read(name), re.S).group(1))['@graph']
+            faq = [n for n in graph if n['@type'] == 'FAQPage']
+            asked = {q['name'] for q in faq[0]['mainEntity']} if faq else set()
+            # Only questions with a reviewed answer are marked up, each one visible on the page.
+            self.assertEqual(asked, {questions[q] for q in answered.get(code, set())}, name)
+
     def test_committed_files_are_untouched(self):
         self.assertIn('noindex', (ROOT / 'national/index.html').read_text(encoding='utf-8'))
 

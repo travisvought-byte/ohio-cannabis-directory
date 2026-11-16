@@ -77,7 +77,9 @@ def not_found():
             '<meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | The Reefer</title>'
             '<meta name="robots" content="noindex"><style>body{font:16px/1.5 system-ui,sans-serif;margin:3rem auto;max-width:34rem;padding:0 1rem;color:#16221e}'
             'a{color:#215b76}</style></head><body><h1>Page not found</h1>'
-            f'<p>Start from <a href="{SITE}/">the list of all states</a>, or go to the Ohio guide at <a href="{OHIO_HOME}/">OhioWeed.org</a>.</p></body></html>\n')
+            f'<p>Start from <a href="{SITE}/">the list of all states</a>, or go to the Ohio guide at <a href="{OHIO_HOME}/">OhioWeed.org</a>.</p>'
+            # Root-relative: GitHub Pages serves this page at any missing path. Counting it shows which old links break.
+            '<script src="/assets/analytics.js" defer></script></body></html>\n')
 
 
 def build(out):
