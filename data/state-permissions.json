@@ -2363,6 +2363,24 @@
    "title": "Instructions for Vacating Misdemeanor and Gross Misdemeanor Convictions, CrRLJ 09.0300 (07/2022)",
    "url": "https://www.courts.wa.gov/forms/documents/CrRLJ%2009.0300%20InstructVacateMisdConvictions_2022%2007.pdf",
    "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "va-vsp-sealing",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Virginia State Police",
+   "title": "Sealing of Criminal Records",
+   "url": "https://vsp.virginia.gov/petition-based-record-sealing/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "va-courts-sealing-guide-cc1203",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Virginia Judicial System",
+   "title": "Guide for Sealing Virginia Criminal Records Pursuant to Va. Code § 19.2-392.12:1, CC-1203 INST (07/26)",
+   "url": "https://vacourts.gov/static/forms/circuit/crim_sealing/cc1203inst.pdf",
+   "retrieved_on": "2026-11-15"
   }
  ],
  "answers": [
@@ -6129,13 +6147,14 @@
    "state": "VA",
    "question": "record-relief",
    "status": "automatic",
-   "short": "Misdemeanor convictions, sealed from view",
-   "detail": "The Marijuana Policy Project, an advocacy group, lists Virginia as automatically shielding misdemeanor cannabis convictions from public inspection. Not yet checked against the state’s own law.",
-   "citation": "Marijuana Policy Project’s table of legalization states’ expungement laws",
-   "effective_on": null,
+   "short": "Possession offenses, criminal and civil",
+   "detail": "Virginia State Police say statutes taking effect July 1, 2026 (Va. Code § 19.2-392.5 and following) seal possession of marijuana offenses, criminal and civil, automatically, along with some other records; the courts’ July 2026 guide refers to former § 18.2-250.1 possession cases as automatically sealed under § 19.2-392.6:1. A no-fee court petition covers records that should have been sealed automatically but were not, offenses the system cannot identify, such as possession of marijuana-related drug paraphernalia, and misdemeanor sale or distribution of marijuana with an offense date on or after January 1, 1986. Other convictions can be sealed by petition after seven years for a misdemeanor or ten for a felony, with further conditions. Background check companies may not share sealed records.",
+   "citation": "Va. Code § 19.2-392.5 and following, per the Virginia State Police’s Sealing of Criminal Records page and the courts’ sealing guide CC-1203 INST (07/26)",
+   "effective_on": "2026-07-01",
    "reviewed_on": "2026-11-15",
    "source_ids": [
-    "natl-mpp-expungement"
+    "va-vsp-sealing",
+    "va-courts-sealing-guide-cc1203"
    ]
   },
   {
