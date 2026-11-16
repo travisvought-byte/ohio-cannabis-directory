@@ -4618,12 +4618,13 @@
    "state": "MO",
    "question": "employment",
    "status": "partly-protected",
-   "short": "Certain protections in the constitution",
-   "detail": "Missouri’s Department of Health and Senior Services says Article XIV of the state constitution, sections 1 and 2, provides certain employment-related protections for patients and consumers, and that employment questions are outside its authority. The Marijuana Policy Project, an advocacy group, lists the patient protections as covering lawful use off the premises in nonworking hours and positive drug tests, with exceptions for impairment at work, loss of a federal benefit and jobs where use affects performance or safety; that part, and what the constitution gives adult consumers, is not yet checked against the state’s own text.",
-   "citation": "Mo. Const. art. XIV, §§ 1 and 2, per the Department of Health and Senior Services’ FAQ; Marijuana Policy Project’s chart",
+   "short": "Medical patients; adult-use section gives none",
+   "detail": "Missouri’s Department of Health and Senior Services says Article XIV of the state constitution, sections 1 and 2, provides certain employment-related protections for patients and consumers, and that employment questions are outside its authority. Section 2, the adult-use section, gives employees and applicants no protection: it does not require an employer to permit or accommodate the conduct it allows, and does not stop an employer from refusing to hire, firing or disciplining someone for working while under the influence of marijuana. The Marijuana Policy Project, an advocacy group, lists protections for medical patients in section 1 covering lawful use off the premises in nonworking hours and positive drug tests, with exceptions for impairment at work, loss of a federal benefit and jobs where use affects performance or safety; section 1 was not read, so that part is not yet checked against the state’s own text.",
+   "citation": "Mo. Const. art. XIV, § 2, subsection 3(3); Department of Health and Senior Services’ FAQ; Marijuana Policy Project’s chart of state medical cannabis employment protections",
    "effective_on": null,
    "reviewed_on": "2026-11-15",
    "source_ids": [
+    "mo-const-art14-2",
     "mo-dhss-adult-faq",
     "natl-mpp-employment-medical"
    ]
