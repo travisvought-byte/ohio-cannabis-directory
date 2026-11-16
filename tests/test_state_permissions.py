@@ -86,8 +86,20 @@ class StatePermissionsTest(unittest.TestCase):
         sources = {s['id']: s for s in DATA['sources']}
         levels = {(a['state'], a['question']): evidence_level(a, sources) for a in DATA['answers']}
         self.assertEqual(levels[('OH', 'adult-use')], 'official')
-        self.assertEqual(levels[('TX', 'adult-use')], 'compilation')
-        self.assertEqual(levels[('TX', 'medical')], 'mixed')
+        # The rule itself, independent of which answers happen to rest on which sources today.
+        official = next(s['id'] for s in DATA['sources'] if s['kind'] == 'statute')
+        compiled = next(s['id'] for s in DATA['sources'] if s['kind'] == 'compilation')
+        self.assertEqual(evidence_level({'source_ids': [official]}, sources), 'official')
+        self.assertEqual(evidence_level({'source_ids': [compiled]}, sources), 'compilation')
+        self.assertEqual(evidence_level({'source_ids': [official, compiled]}, sources), 'mixed')
+
+    def test_every_adult_use_answer_cites_a_state_source(self):
+        # Issue #146: no adult-use answer rests on national compilations alone.
+        sources = {s['id']: s for s in DATA['sources']}
+        for a in DATA['answers']:
+            if a['question'] == 'adult-use':
+                self.assertNotEqual(evidence_level(a, sources), 'compilation', a['state'])
+                self.assertTrue(any(sources[sid]['scope'] == 'state' for sid in a['source_ids']), a['state'])
 
     def test_page_payload_cites_listed_sources(self):
         info = permissions_page.payload(DATA)

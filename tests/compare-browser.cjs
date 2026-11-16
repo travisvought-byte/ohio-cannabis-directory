@@ -24,7 +24,9 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict');
   assert.match(await row('adult-use').textContent(),/Allowed/);
   await page.selectOption('#perm-state','TX');
   assert.match(await row('adult-use').locator('[data-state="TX"]').textContent(),/Not permitted/);
-  assert.match(await row('adult-use').locator('.level').textContent(),/National compilation/,'compilation answers are labeled');
+  assert.equal(await row('adult-use').locator('.level').textContent(),P.levels[P.answers.TX['adult-use'].level],'each answer names its evidence level');
+  const compiled=Object.keys(P.answers).flatMap(s=>Object.keys(P.answers[s]).filter(q=>P.answers[s][q].level==='compilation').map(q=>[s,q]))[0];
+  if(compiled){await page.selectOption('#perm-state',compiled[0]);assert.match(await row(compiled[1]).locator('.level').textContent(),/National compilation/,'compilation answers are labeled');await page.selectOption('#perm-state','TX');}
   assert.match(await row('possession').textContent(),/Not yet reviewed/,'missing answers read as not yet reviewed');
   await page.selectOption('#perm-compare','OH');
   assert.equal(await row('home-grow').locator('.perm-cell').count(),2);
