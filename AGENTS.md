@@ -1,29 +1,23 @@
 # Working agreement for AI assistants
 
-This file is read by every AI assistant that works on this repository (Codex, Claude, and any other). Read it in full before starting a task. The directory owner is Travis Vought (@travisvought-byte). He approves and merges every change.
+Read this file in full before starting a task. The directory owner is Travis Vought (@travisvought-byte).
 
 ## What this repository is
 
-The Ohio Cannabis Ecosystem Directory: a free, source-linked public directory of organizations operating in or serving the Ohio cannabis market, with consumer resources, record-clearing guidance, a dispensary location finder, and civic advocacy tools. It is published under CC BY 4.0 on GitHub Pages. Its value is that every published claim can be traced to a named source. Protect that above speed.
+The Ohio Cannabis Ecosystem Directory and the national section built from it: a free, source-linked public directory of organizations operating in or serving the cannabis market, with consumer resources, record-clearing guidance, a dispensary location finder, civic advocacy tools, and a page for every state built on the Ohio template. It is published under CC BY 4.0 on GitHub Pages. Its value is that every published claim can be traced to a named source. Protect that above speed.
 
-## Lanes
+## How work moves (owner direction, November 16, 2026)
 
-Each assistant works only in its lane. Two assistants never work on the same files at the same time.
+Travis works on this repository directly through Claude. No other assistant or contributor is working on it. The earlier lanes, issue-claiming and pull-request rules were written for a multi-assistant setup and no longer apply.
 
-| Assistant | Lane |
-| --- | --- |
-| **Claude** | Data structure and schema changes, review policy, multi-state comparison design, reconciliation against regulator data, and reviewing pull requests before merge. |
-| **Codex** | Implementing GitHub issues labeled `codex`: research batches, data additions in reviewable form, page and script changes with written acceptance criteria. |
-| **Grok / X** | Leads only: bill news, event announcements, outreach drafts. Nothing from X is published or committed as evidence. |
+1. **Claude has standing permission to work.** Keep going without asking for approval at each step. Pick the next most useful piece of work toward the owner's stated direction and do it.
+2. **Commit directly to `main`.** No issue, branch or pull request is required. Use a pull request only when Travis asks for one.
+3. **Run the checks before every push** (see Commands). Do not push a change that fails them.
+4. **Ask only for decisions that are the owner's to make:** anything that cannot be undone, spends money, changes a domain or DNS, sends a message on his behalf, deletes records, or changes a rule in this file.
+5. **Report what was done.** After a push, say plainly what changed, what was verified and what remains unconfirmed.
+6. **Do not bump `release.json` or write release notes** unless Travis says to.
 
-## How work moves
-
-1. **Claim the issue.** Work only from a GitHub issue. Comment on it when you start. If an issue is already claimed, do not start it.
-2. **One branch and one pull request per issue.** Name branches `codex/<issue-number>-<short-slug>` or `claude/<issue-number>-<short-slug>`. Reference the issue in the pull request (`Closes #N`).
-3. **Stay inside the issue's scope.** If you find something else that needs fixing, open a new issue instead of widening the pull request.
-4. **The `Validate directory` workflow must pass.** Run the checks locally first (see Commands).
-5. **Never merge your own pull request.** Travis merges. Claude may review and comment before he does.
-6. **Do not bump `release.json` or write release notes** unless the issue says to.
+The evidence standard and the owner's inclusion rules below are unchanged. Working faster never loosens them.
 
 ## Sources of truth
 
@@ -82,10 +76,9 @@ npm run test:browser
 
 See `CONTRIBUTING.md` for field rules and `architecture/` for the directory contract, review queue, event maintenance and analytics.
 
-## Pull request checklist
+## Before each push
 
-- [ ] Linked to its issue and stays within its scope
 - [ ] Canonical data changed, generated files regenerated, none hand-edited
 - [ ] Every new or changed claim has a dated source; blocked retrievals recorded as attempts
 - [ ] All checks pass locally
-- [ ] The description lists what was verified and what remains unconfirmed
+- [ ] The commit message says what was verified and what remains unconfirmed
