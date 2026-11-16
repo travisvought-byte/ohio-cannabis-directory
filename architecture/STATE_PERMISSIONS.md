@@ -44,9 +44,10 @@ A national compilation is a secondary source under the [working agreement](../AG
 
 ## Known gaps (November 15, 2026)
 
-- The adult-use answer rests on national compilations for 26 jurisdictions: the 25 states without adult use other than Pennsylvania (which has a statute-level answer), plus Montana.
-- The medical answer rests wholly on a national compilation for Idaho, Indiana, Iowa, Kansas, Louisiana, Montana, Nebraska, North Carolina, North Dakota, South Carolina, Tennessee, Washington, Wisconsin and Wyoming, and partly for Colorado, Georgia and Texas.
-- No official state link has been reviewed yet for Idaho, Indiana, Iowa, Kansas, Louisiana, Nebraska, North Carolina, North Dakota, South Carolina, Tennessee, Wisconsin and Wyoming. Retrieval of the North Dakota, Iowa and Washington health department pages failed on November 15, 2026.
+- The adult-use answer rests on national compilations alone for 13 states: Alabama, Arkansas, Florida, Georgia, Hawaii, Kentucky, Mississippi, New Hampshire, Oklahoma, South Dakota, Texas, Utah and West Virginia (#146). Tennessee and Wisconsin cite an official source that predates 2026 (a 2016 Attorney General opinion; a December 2023 Legislative Reference Bureau analysis) together with the national compilations.
+- The medical answer rests wholly on a national compilation for Tennessee, and partly for Colorado, Georgia and Texas. The Tennessee General Assembly's pages (`capitol.tn.gov`, `wapp.capitol.tn.gov`) are disallowed to automated readers, so the 2021 cannabidiol oil exception could not be reviewed from the state's own pages.
+- No official state link has been reviewed yet for Tennessee. The only Tennessee page retrieved, the 2016 Attorney General opinion, is cited but is not a starting point for visitors.
+- Some statute pages are disallowed to automated readers: Wisconsin's section pages for 961.41 and Washington's RCW chapter pages on `apps.leg.wa.gov`. The Legislative Reference Bureau analysis and the certified RCW 69.51A.210 PDF were used instead. Earlier retrievals of `hhs.nd.gov/medical-marijuana`, `hhs.iowa.gov/public-health/medical-cannabidiol` and `doh.wa.gov` failed; each state's current program page was retrieved instead.
 - Detail rows (buying, possession, sharing, home grow, public use, driving) are filled only where an official page reviewed for this pass stated them. Every other cell reads "Not yet reviewed".
 - Americans for Safe Access's state-by-state patient pages could not be retrieved on November 15, 2026 (`/states` returned an error; `/patient_guide` is disallowed to automated readers). Only its travel guide is listed.
 - Employment and record relief are not in the shared question set yet. They need status wording that does not read as a verdict.
