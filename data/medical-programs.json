@@ -1,0 +1,910 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-16",
+  "purpose": "How patients get a medical cannabis card in each medical-only state, from the regulator's own pages. Each fact names its source. A missing fact means the regulator page we checked did not state it; it does not mean the program lacks it.",
+  "fields": [
+    "who",
+    "steps",
+    "fee",
+    "card_length",
+    "caregivers",
+    "visitors",
+    "buy",
+    "note"
+  ],
+  "sources": [
+    {
+      "id": "med-fl-patients",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Florida Department of Health, Office of Medical Marijuana Use",
+      "title": "Patients",
+      "url": "https://knowthefactsmmj.com/patients/",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-fl-cards",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Florida Department of Health, Office of Medical Marijuana Use",
+      "title": "Registry identification cards",
+      "url": "https://knowthefactsmmj.com/patients/cards/",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-fl-faq",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Florida Department of Health, Office of Medical Marijuana Use",
+      "title": "Frequently asked questions",
+      "url": "https://knowthefactsmmj.com/about/faq/",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-ok-apply",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Oklahoma Medical Marijuana Authority",
+      "title": "Apply (application requirements and fees)",
+      "url": "https://oklahoma.gov/omma/patients-caregivers/apply.html",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-ok-licenses",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Oklahoma Medical Marijuana Authority",
+      "title": "Patient licenses",
+      "url": "https://oklahoma.gov/omma/patients-caregivers/patient-licenses.html",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-ok-faq",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Oklahoma Medical Marijuana Authority",
+      "title": "FAQs",
+      "url": "https://oklahoma.gov/omma/help/faqs.html",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-ms-faq",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Mississippi State Department of Health, Medical Cannabis Program",
+      "title": "Frequently asked questions",
+      "url": "https://www.mmcp.ms.gov/faq",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-ms-faq-pdf",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Mississippi State Department of Health, Medical Cannabis Program",
+      "title": "Medical Cannabis FAQs (August 2026 tool kit)",
+      "url": "https://www.mmcp.ms.gov/sites/default/files/2026/MMCP%20Tool%20Kit%20-%20August%202026/MSDH_Medical_Cannabis_FAQ.pdf",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-ut-apply",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Utah Department of Health and Human Services, Center for Medical Cannabis",
+      "title": "Apply for a patient card",
+      "url": "https://medicalcannabis.utah.gov/patients/apply-for-patient-card/",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-ut-patients",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Utah Department of Health and Human Services, Center for Medical Cannabis",
+      "title": "Patients",
+      "url": "https://medicalcannabis.utah.gov/patients/",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-ut-nonres",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Utah Department of Health and Human Services, Center for Medical Cannabis",
+      "title": "Apply for a non-Utah resident card",
+      "url": "https://medicalcannabis.utah.gov/patients/non-utah-resident-card/",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-wv-faq",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "West Virginia Office of Medical Cannabis",
+      "title": "Frequently asked questions",
+      "url": "https://omc.wv.gov/faq",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-wv-patients",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "West Virginia Office of Medical Cannabis",
+      "title": "Patients/Caregivers",
+      "url": "https://omc.wv.gov/patientscaregivers",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-al-patients",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Alabama Medical Cannabis Commission",
+      "title": "Patients, Caregivers, & Physicians",
+      "url": "https://amcc.alabama.gov/patients/",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-al-faq",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Alabama Medical Cannabis Commission",
+      "title": "Frequently asked questions",
+      "url": "https://amcc.alabama.gov/frequently-asked-questions/",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-ar-mmj",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Arkansas Department of Health",
+      "title": "Medical marijuana",
+      "url": "https://www.healthy.arkansas.gov/programs-services/topics/medical-marijuana",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-hi-registry",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Hawaii Department of Health, Medical Cannabis Registry Program",
+      "title": "Medical Cannabis Registry Program",
+      "url": "https://health.hawaii.gov/medicalcannabisregistry/",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-hi-fees",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Hawaii Department of Health, Medical Cannabis Registry Program",
+      "title": "Certification fee requirements",
+      "url": "https://health.hawaii.gov/medicalcannabisregistry/fees/",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-hi-travel",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Hawaii Department of Health, Medical Cannabis Registry Program",
+      "title": "Out-of-state patient application",
+      "url": "https://health.hawaii.gov/medicalcannabisregistry/travel/",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-hi-dispensary",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Hawaii Department of Health, Medical Cannabis Dispensary Program",
+      "title": "Medical Cannabis Dispensary Program",
+      "url": "https://health.hawaii.gov/medicalcannabisdispensary/",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-ky-apply",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Kentucky Office of Medical Cannabis",
+      "title": "Apply for a card",
+      "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/application.aspx",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-ky-faq",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Kentucky Office of Medical Cannabis",
+      "title": "General questions",
+      "url": "https://kymedcan.ky.gov/FAQs/Pages/General-Questions.aspx",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-la-ldh",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Louisiana Department of Health",
+      "title": "Medical marijuana",
+      "url": "https://ldh.la.gov/bureau-of-sanitarian-services/medical-marijuana",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-nh-tcp",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "New Hampshire Department of Health and Human Services",
+      "title": "Therapeutic Cannabis Program",
+      "url": "https://www.dhhs.nh.gov/programs-services/population-health/therapeutic-cannabis",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-nd-patients",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "North Dakota Health and Human Services",
+      "title": "ND medical marijuana patients",
+      "url": "https://www.hhs.nd.gov/mm/patients",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-nd-out-of-state",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "North Dakota Health and Human Services",
+      "title": "Out-of-state medical marijuana cardholders",
+      "url": "https://www.hhs.nd.gov/mm/out-of-state",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-sd-program",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "South Dakota Department of Health",
+      "title": "Medical cannabis program",
+      "url": "https://doh.sd.gov/programs/medical-cannabis",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-ne-licensees",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Nebraska Medical Cannabis Commission",
+      "title": "Licensees",
+      "url": "https://mcc.nebraska.gov/licensees",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-pa-patients",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Pennsylvania Department of Health",
+      "title": "Medical marijuana patients and caregivers (FAQs)",
+      "url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/medical-marijuana-patients",
+      "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-pa-program",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Pennsylvania Department of Health",
+      "title": "Medical marijuana program",
+      "url": "https://www.pa.gov/agencies/health/programs/medical-marijuana",
+      "retrieved_on": "2026-11-16"
+    }
+  ],
+  "states": [
+    {
+      "state": "FL",
+      "agency": "Florida Department of Health, Office of Medical Marijuana Use",
+      "who": {
+        "text": "Permanent or seasonal Florida residents diagnosed with a qualifying medical condition by a qualified physician.",
+        "source": "med-fl-patients"
+      },
+      "steps": {
+        "items": [
+          "See a qualified physician. The physician diagnoses a qualifying condition and enters you in the state’s Medical Marijuana Use Registry.",
+          "Apply for your registry ID card online or by mail.",
+          "Once approved, fill your physician’s order at a licensed medical marijuana treatment center, in person or by delivery."
+        ],
+        "source": "med-fl-cards"
+      },
+      "fee": {
+        "text": "$75 per application (online payments add $2.75).",
+        "source": "med-fl-cards"
+      },
+      "card_length": {
+        "text": "Renew every year. Renewals open 45 days before the card expires.",
+        "source": "med-fl-faq"
+      },
+      "caregivers": {
+        "text": "Allowed. Minor patients must name a caregiver, and every caregiver needs their own registry card.",
+        "source": "med-fl-cards"
+      },
+      "visitors": {
+        "text": "Only permanent or seasonal Florida residents can get a Florida card.",
+        "source": "med-fl-patients"
+      },
+      "buy": {
+        "text": "Only at state-approved medical marijuana treatment centers, which may also deliver.",
+        "source": "med-fl-cards"
+      },
+      "links": [
+        {
+          "label": "Apply for a card",
+          "url": "https://knowthefactsmmj.com/patients/cards/"
+        },
+        {
+          "label": "Qualified physician list",
+          "url": "https://knowthefactsmmj.com/physicians/list/"
+        },
+        {
+          "label": "Licensed treatment centers",
+          "url": "https://knowthefactsmmj.com/mmtc/"
+        },
+        {
+          "label": "Qualifying conditions",
+          "url": "https://knowthefactsmmj.com/patients/"
+        }
+      ]
+    },
+    {
+      "state": "OK",
+      "agency": "Oklahoma Medical Marijuana Authority",
+      "who": {
+        "text": "Oklahoma residents with a physician recommendation form signed within 30 days of applying.",
+        "source": "med-ok-apply"
+      },
+      "steps": {
+        "items": [
+          "Have a physician complete the patient recommendation form.",
+          "Apply online with OMMA, with proof of identity, proof of Oklahoma residency and a photo.",
+          "Buy from any licensed dispensary with your patient license."
+        ],
+        "source": "med-ok-licenses"
+      },
+      "fee": {
+        "text": "$100 (plus a $4.30 card-processing fee). $20 for patients on Medicaid/SoonerSelect or Medicare and for 100% disabled veterans.",
+        "source": "med-ok-apply"
+      },
+      "card_length": {
+        "text": "Two years, or 60 days for a short-term license.",
+        "source": "med-ok-faq"
+      },
+      "caregivers": {
+        "text": "Allowed, with no application fee. A patient can have one caregiver at a time, and the physician must certify the need for one.",
+        "source": "med-ok-apply"
+      },
+      "visitors": {
+        "text": "Patients with a state-issued card from another state can get a 30-day temporary Oklahoma license ($100) to buy, use and grow.",
+        "source": "med-ok-faq"
+      },
+      "buy": {
+        "text": "Licensed dispensaries. Show your patient license every time you buy.",
+        "source": "med-ok-licenses"
+      },
+      "links": [
+        {
+          "label": "Apply for a license",
+          "url": "https://oklahoma.gov/omma/patients-caregivers/apply.html"
+        },
+        {
+          "label": "Patient licenses",
+          "url": "https://oklahoma.gov/omma/patients-caregivers/patient-licenses.html"
+        },
+        {
+          "label": "Verify a licensed business",
+          "url": "https://oklahoma.gov/omma/businesses/omma-verify.html"
+        }
+      ]
+    },
+    {
+      "state": "MS",
+      "agency": "Mississippi State Department of Health, Medical Cannabis Program",
+      "who": {
+        "text": "Patients with a qualifying condition, certified after an in-person visit by a registered practitioner: a physician, physician assistant, certified nurse practitioner or optometrist. Only a physician (MD/DO) may certify a minor.",
+        "source": "med-ms-faq"
+      },
+      "steps": {
+        "items": [
+          "Get certified at an in-person visit with a practitioner registered with the Department of Health. Renewal check-ups may be by telehealth.",
+          "Apply in the Department of Health’s licensing portal. Review takes about 10 days once the application is complete.",
+          "Buy at a licensed dispensary with your registry card."
+        ],
+        "source": "med-ms-faq"
+      },
+      "fee": {
+        "text": "$25 ($15 for Medicaid participants). Disabled veterans and disabled first responders with documentation can have the fee waived.",
+        "source": "med-ms-faq"
+      },
+      "card_length": {
+        "text": "The certification is good for one year unless the practitioner sets a shorter time.",
+        "source": "med-ms-faq"
+      },
+      "caregivers": {
+        "text": "Allowed. A minor’s caregiver must be the custodial parent or legal guardian.",
+        "source": "med-ms-faq"
+      },
+      "visitors": {
+        "text": "Nonresident cardholders can buy, with lower limits: six MMCEUs a week and twelve in any 15 days.",
+        "source": "med-ms-faq-pdf"
+      },
+      "buy": {
+        "text": "Licensed dispensaries. The Mississippi Department of Revenue permits dispensaries; the Department of Health licenses the rest of the program.",
+        "source": "med-ms-faq"
+      },
+      "links": [
+        {
+          "label": "Apply (licensing portal)",
+          "url": "https://ms-doh-public.nls.egov.com/"
+        },
+        {
+          "label": "Qualifying conditions",
+          "url": "https://www.mmcp.ms.gov/patients-caregivers/qualifying-medical-conditions"
+        },
+        {
+          "label": "Registered businesses search",
+          "url": "https://www.mmcp.ms.gov/search_business"
+        },
+        {
+          "label": "Dispensary information (Department of Revenue)",
+          "url": "https://www.dor.ms.gov/abc/medical-cannabis"
+        }
+      ]
+    },
+    {
+      "state": "UT",
+      "agency": "Utah Department of Health and Human Services, Center for Medical Cannabis",
+      "who": {
+        "text": "Utah residents 18 or older with an approved medical condition.",
+        "source": "med-ut-apply"
+      },
+      "steps": {
+        "items": [
+          "Create a Utah ID and an account in the state’s electronic verification system (EVS).",
+          "Meet in person with a medical provider, who submits your certification in the EVS.",
+          "Pay the card fee when the emailed instructions arrive.",
+          "Meet with a medical cannabis pharmacist before your first purchase, in person or by phone or video."
+        ],
+        "source": "med-ut-apply"
+      },
+      "card_length": {
+        "text": "One year, unless your provider sets a shorter time.",
+        "source": "med-ut-apply"
+      },
+      "caregivers": {
+        "text": "Caregiver cards and minor patient/guardian cards are available.",
+        "source": "med-ut-patients"
+      },
+      "visitors": {
+        "text": "Visiting patients with a home-state card for a listed condition can get a non-Utah resident card. It lasts 21 days, with up to two a year.",
+        "source": "med-ut-nonres"
+      },
+      "buy": {
+        "text": "Licensed medical cannabis pharmacies or home delivery.",
+        "source": "med-ut-apply"
+      },
+      "links": [
+        {
+          "label": "Apply for a card",
+          "url": "https://medicalcannabis.utah.gov/patients/apply-for-patient-card/"
+        },
+        {
+          "label": "Find a provider",
+          "url": "https://medicalcannabis.utah.gov/find-a-provider/"
+        },
+        {
+          "label": "Pharmacies and delivery",
+          "url": "https://medicalcannabis.utah.gov/pharmacy-locations/"
+        },
+        {
+          "label": "Visiting patients",
+          "url": "https://medicalcannabis.utah.gov/patients/non-utah-resident-card/"
+        }
+      ]
+    },
+    {
+      "state": "WV",
+      "agency": "West Virginia Office of Medical Cannabis",
+      "who": {
+        "text": "West Virginia residents with a serious medical condition, certified by a registered physician.",
+        "source": "med-wv-faq"
+      },
+      "steps": {
+        "items": [
+          "Get certified by a registered physician, in person or through a listed telehealth company.",
+          "Register in the online portal and pay the fee. Applications are reviewed within 30 days.",
+          "Download your digital card and buy at a licensed dispensary."
+        ],
+        "source": "med-wv-faq"
+      },
+      "fee": {
+        "text": "$50. The fee can be waived for income below 200% of the federal poverty level.",
+        "source": "med-wv-faq"
+      },
+      "card_length": {
+        "text": "Renew every year after a visit with a registered physician.",
+        "source": "med-wv-faq"
+      },
+      "caregivers": {
+        "text": "Up to two per patient. Patients under 18 must have one.",
+        "source": "med-wv-patients"
+      },
+      "visitors": {
+        "text": "The program is for West Virginia residents, and cardholders may not take medical cannabis out of the state.",
+        "source": "med-wv-faq"
+      },
+      "buy": {
+        "text": "Dispensaries licensed by the Office of Medical Cannabis.",
+        "source": "med-wv-faq"
+      },
+      "links": [
+        {
+          "label": "Register for a card",
+          "url": "https://omc.wv.gov/patient-registration"
+        },
+        {
+          "label": "Find a registered physician",
+          "url": "https://omc.wv.gov/schedule-appointment"
+        },
+        {
+          "label": "Dispensary list",
+          "url": "https://omc.wv.gov/media/188/download?inline"
+        }
+      ]
+    },
+    {
+      "state": "AL",
+      "agency": "Alabama Medical Cannabis Commission",
+      "who": {
+        "text": "Patients 19 or older with a qualifying condition, recommended by a physician certified by the Alabama Board of Medical Examiners and registered with the Commission. Caregivers register to obtain it for minors.",
+        "source": "med-al-faq"
+      },
+      "steps": {
+        "items": [
+          "See a registered certifying physician.",
+          "Register with the Commission through its online portal.",
+          "Only registered patients and caregivers with a valid Alabama card may enter a dispensary."
+        ],
+        "source": "med-al-patients"
+      },
+      "caregivers": {
+        "text": "Allowed. Parents and others can register as caregivers for minors.",
+        "source": "med-al-faq"
+      },
+      "buy": {
+        "text": "Licensed dispensaries. The first opened on June 4, 2026, and the Commission posts openings on its patients page.",
+        "source": "med-al-faq"
+      },
+      "note": {
+        "text": "Dispensaries are still opening. Check the Commission’s patients page for current locations.",
+        "source": "med-al-patients"
+      },
+      "links": [
+        {
+          "label": "Patients and dispensary openings",
+          "url": "https://amcc.alabama.gov/patients/"
+        },
+        {
+          "label": "Program FAQs",
+          "url": "https://amcc.alabama.gov/frequently-asked-questions/"
+        }
+      ]
+    },
+    {
+      "state": "AR",
+      "agency": "Arkansas Department of Health",
+      "steps": {
+        "items": [
+          "Apply online with the Department of Health’s medical marijuana registry.",
+          "Processing can take up to 14 days. When approved, print your own card."
+        ],
+        "source": "med-ar-mmj"
+      },
+      "fee": {
+        "text": "$50 to apply or renew (non-refundable).",
+        "source": "med-ar-mmj"
+      },
+      "caregivers": {
+        "text": "Allowed. Caregivers pay $50 plus a $40 background-check fee.",
+        "source": "med-ar-mmj"
+      },
+      "visitors": {
+        "text": "Visiting patients apply online and pay $50 for 90 days. Ask the dispensary about its visiting-patient process.",
+        "source": "med-ar-mmj"
+      },
+      "buy": {
+        "text": "Licensed dispensaries. Arkansas Alcoholic Beverage Control licenses them; the Medical Marijuana Commission lists locations.",
+        "source": "med-ar-mmj"
+      },
+      "links": [
+        {
+          "label": "Apply online",
+          "url": "https://healthy.arkansas.gov/programs-services/data-statistics-registries/medical-marijuana/id-card-apply-online/"
+        },
+        {
+          "label": "Qualified patient requirements",
+          "url": "https://healthy.arkansas.gov/programs-services/data-statistics-registries/medical-marijuana/qualified-patient-requirements/"
+        },
+        {
+          "label": "Dispensary locations",
+          "url": "https://www.dfa.arkansas.gov/office/medical-marijuana-commission/"
+        }
+      ]
+    },
+    {
+      "state": "HI",
+      "agency": "Hawaii Department of Health, Medical Cannabis Registry Program",
+      "who": {
+        "text": "Patients certified by a licensed Hawaii physician or advanced practice registered nurse for a recognized debilitating condition.",
+        "source": "med-hi-registry"
+      },
+      "fee": {
+        "text": "State registration is $35 for a one-year certification or $105 for three years. Providers may charge up to three times that for the certification itself.",
+        "source": "med-hi-fees"
+      },
+      "card_length": {
+        "text": "Certifications run one or three years.",
+        "source": "med-hi-fees"
+      },
+      "visitors": {
+        "text": "Patients with a home-state card can register for up to 60 days, and renew once a calendar year for another 60.",
+        "source": "med-hi-travel"
+      },
+      "buy": {
+        "text": "Licensed retail dispensaries regulated by the Department of Health.",
+        "source": "med-hi-dispensary"
+      },
+      "links": [
+        {
+          "label": "Patient registry",
+          "url": "https://health.hawaii.gov/medicalcannabisregistry/"
+        },
+        {
+          "label": "Visiting patients",
+          "url": "https://health.hawaii.gov/medicalcannabisregistry/travel/"
+        },
+        {
+          "label": "Dispensary program",
+          "url": "https://health.hawaii.gov/medicalcannabisdispensary/"
+        }
+      ]
+    },
+    {
+      "state": "KY",
+      "agency": "Kentucky Office of Medical Cannabis",
+      "who": {
+        "text": "Patients with a qualifying condition and a written certification from a medical cannabis practitioner.",
+        "source": "med-ky-apply"
+      },
+      "steps": {
+        "items": [
+          "Get a written certification from a medical cannabis practitioner (the state’s Find a Practitioner directory lists them).",
+          "Apply in the Patient and Caregiver Registry Portal with a notarized signature page and the fee.",
+          "Buy at an open licensed dispensary."
+        ],
+        "source": "med-ky-apply"
+      },
+      "fee": {
+        "text": "$25.",
+        "source": "med-ky-apply"
+      },
+      "caregivers": {
+        "text": "Allowed. Patients under 18 may use medical cannabis only with a parent or legal guardian as their caregiver.",
+        "source": "med-ky-faq"
+      },
+      "visitors": {
+        "text": "Visitors 21 or older with a valid out-of-state card and a documented qualifying condition can register for a Kentucky card.",
+        "source": "med-ky-apply"
+      },
+      "buy": {
+        "text": "Licensed dispensaries. The Office has issued 48 dispensary licenses; it lists the ones that have opened.",
+        "source": "med-ky-faq"
+      },
+      "note": {
+        "text": "Since July 1, 2026, Kentuckians who buy medical cannabis in another state no longer qualify for the governor’s conditional pardon.",
+        "source": "med-ky-faq"
+      },
+      "links": [
+        {
+          "label": "Apply for a card",
+          "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/application.aspx"
+        },
+        {
+          "label": "Find a practitioner",
+          "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/find-a-practitioner.aspx"
+        },
+        {
+          "label": "Open dispensaries",
+          "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx"
+        }
+      ]
+    },
+    {
+      "state": "LA",
+      "agency": "Louisiana Department of Health",
+      "who": {
+        "text": "Any patient with a valid recommendation from an authorized Louisiana clinician in good standing with their licensing board. No state agency keeps a list of recommending clinicians.",
+        "source": "med-la-ldh"
+      },
+      "card_length": {
+        "text": "A recommendation expires no more than 12 months after it is issued.",
+        "source": "med-la-ldh"
+      },
+      "buy": {
+        "text": "Licensed retailers: up to 10 base sites, each with up to two satellite locations. Raw flower is limited to 71 grams every 14 days, and retailers may not deliver outside Louisiana.",
+        "source": "med-la-ldh"
+      },
+      "links": [
+        {
+          "label": "Program page and retailer locations",
+          "url": "https://ldh.la.gov/bureau-of-sanitarian-services/medical-marijuana"
+        }
+      ]
+    },
+    {
+      "state": "NH",
+      "agency": "New Hampshire Department of Health and Human Services, Therapeutic Cannabis Program",
+      "who": {
+        "text": "New Hampshire residents certified by a New Hampshire-licensed provider with prescribing authority.",
+        "source": "med-nh-tcp"
+      },
+      "steps": {
+        "items": [
+          "Have your provider complete a written certification.",
+          "Mail or drop off the patient application, the certification, a $50 check or money order and proof of New Hampshire residency to the Therapeutic Cannabis Program, 29 Hazen Drive, Concord."
+        ],
+        "source": "med-nh-tcp"
+      },
+      "fee": {
+        "text": "$50. The program has no reduced fee for hardship.",
+        "source": "med-nh-tcp"
+      },
+      "card_length": {
+        "text": "A provider may certify a patient for up to three years.",
+        "source": "med-nh-tcp"
+      },
+      "caregivers": {
+        "text": "Caregivers must be 21 or older with no felony conviction. They get their own ID card and pay no fee.",
+        "source": "med-nh-tcp"
+      },
+      "visitors": {
+        "text": "Visiting patients can buy at a New Hampshire treatment center with their out-of-state card and matching photo ID, up to 2 ounces in any 10 days.",
+        "source": "med-nh-tcp"
+      },
+      "buy": {
+        "text": "Seven nonprofit alternative treatment centers, in Chichester, Conway, Dover, Keene, Lebanon, Merrimack and Plymouth.",
+        "source": "med-nh-tcp"
+      },
+      "links": [
+        {
+          "label": "Therapeutic Cannabis Program",
+          "url": "https://www.dhhs.nh.gov/programs-services/population-health/therapeutic-cannabis"
+        }
+      ]
+    },
+    {
+      "state": "ND",
+      "agency": "North Dakota Health and Human Services, Medical Marijuana Program",
+      "who": {
+        "text": "North Dakota residents with a written certification from a healthcare provider licensed in North Dakota. Veterans using VA care and hospice patients have a separate approval route.",
+        "source": "med-nd-patients"
+      },
+      "steps": {
+        "items": [
+          "Create an account in the state’s BioTrackTHC registration system.",
+          "Submit the patient application with a photo, a copy of your North Dakota ID, your provider’s name and email, and a signed release.",
+          "Buy only at one of the state’s eight registered dispensaries."
+        ],
+        "source": "med-nd-patients"
+      },
+      "fee": {
+        "text": "$40, non-refundable.",
+        "source": "med-nd-patients"
+      },
+      "card_length": {
+        "text": "Renew up to 45 days before your card expires.",
+        "source": "med-nd-patients"
+      },
+      "caregivers": {
+        "text": "Up to five per patient. Caregivers pass a criminal history check.",
+        "source": "med-nd-patients"
+      },
+      "visitors": {
+        "text": "Visitors 19 or older with a home-state card can get a 60-day North Dakota card for $40.",
+        "source": "med-nd-out-of-state"
+      },
+      "buy": {
+        "text": "Eight registered dispensaries.",
+        "source": "med-nd-patients"
+      },
+      "links": [
+        {
+          "label": "Patient application",
+          "url": "https://www.hhs.nd.gov/mm/patients"
+        },
+        {
+          "label": "Visiting patients",
+          "url": "https://www.hhs.nd.gov/mm/out-of-state"
+        }
+      ]
+    },
+    {
+      "state": "SD",
+      "agency": "South Dakota Department of Health, Medical Cannabis Program",
+      "who": {
+        "text": "Patients with a debilitating condition certified by a South Dakota-licensed physician, physician assistant or advanced practice registered nurse registered with the program.",
+        "source": "med-sd-program"
+      },
+      "steps": {
+        "items": [
+          "Get certified by a registered practitioner.",
+          "Apply through the online registration system with your medical documentation and the fee."
+        ],
+        "source": "med-sd-program"
+      },
+      "buy": {
+        "text": "Certified dispensaries. The Department of Health publishes a list of certified establishments.",
+        "source": "med-sd-program"
+      },
+      "links": [
+        {
+          "label": "Apply for a card",
+          "url": "https://doh.sd.gov/programs/medical-cannabis/patients-cargivers-practitioners/"
+        },
+        {
+          "label": "Certified establishments",
+          "url": "https://doh.sd.gov/programs/medical-cannabis/medical-cannabis-establishments/establishments-list/"
+        }
+      ]
+    },
+    {
+      "state": "NE",
+      "agency": "Nebraska Medical Cannabis Commission",
+      "note": {
+        "text": "The Commission licenses businesses, and its licensee list shows cultivators. When we checked, its site published no patient card process and no list of open dispensaries.",
+        "source": "med-ne-licensees"
+      },
+      "links": [
+        {
+          "label": "Commission licensees",
+          "url": "https://mcc.nebraska.gov/licensees"
+        }
+      ]
+    },
+    {
+      "state": "PA",
+      "agency": "Pennsylvania Department of Health",
+      "who": {
+        "text": "Pennsylvania residents with one of 23 serious medical conditions, certified by a practitioner approved by the Department.",
+        "source": "med-pa-patients"
+      },
+      "steps": {
+        "items": [
+          "Register online. You can do this before you see a practitioner.",
+          "See an approved practitioner, who certifies you in the system.",
+          "Pay for your ID card within 60 days of the certification. It is printed in about 7 days and mailed in about 14.",
+          "Visit a Pennsylvania dispensary with your ID card."
+        ],
+        "source": "med-pa-patients"
+      },
+      "fee": {
+        "text": "$50. Free for people in Medicaid, PACE/PACENET, CHIP, SNAP or WIC.",
+        "source": "med-pa-patients"
+      },
+      "caregivers": {
+        "text": "Allowed. Caregivers pass a background check, and minors get medical marijuana through a caregiver.",
+        "source": "med-pa-patients"
+      },
+      "visitors": {
+        "text": "Registration requires a Pennsylvania driver’s license or state ID.",
+        "source": "med-pa-patients"
+      },
+      "buy": {
+        "text": "Licensed dispensaries. The Department publishes a list of dispensaries with product.",
+        "source": "med-pa-program"
+      },
+      "links": [
+        {
+          "label": "Patients and caregivers",
+          "url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/medical-marijuana-patients"
+        },
+        {
+          "label": "Dispensaries",
+          "url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/dispensaries"
+        }
+      ]
+    }
+  ]
+}

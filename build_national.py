@@ -87,7 +87,7 @@ details.az{margin:10px 0}details.az summary{cursor:pointer;font-weight:700;color
 .glance li{border-top:1px solid #eceee9}.glance li:first-child{border-top:0}
 .glance a{display:grid;grid-template-columns:minmax(0,210px) 1fr;gap:2px 14px;padding:10px 0;text-decoration:none;color:var(--ink);align-items:baseline}.glance .q{font-weight:650;color:var(--link)}
 .onpage{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.95rem;margin:8px 0}.onpage a{min-height:40px;display:inline-flex;align-items:center}
-.next{background:var(--mint);border-radius:14px;padding:14px 18px;margin:26px 0}.next h2{margin:0 0 .3em;font-size:1.2rem}.next ul{margin:.3em 0;padding-left:1.2em}
+.medcard{background:#fff;border:1px solid var(--line);border-left:6px solid #3b7fa0;border-radius:14px;padding:6px 18px 12px;margin:18px 0}.medcard h2{margin-top:.6em}.steps{padding-left:1.3em}.steps li{margin:.3em 0}.facts{display:grid;grid-template-columns:minmax(0,170px) 1fr;gap:6px 16px;margin:12px 0}.facts dt{font-weight:700}.facts dd{margin:0}.mednote{background:#fff4dc;border-radius:8px;padding:8px 12px}.medlinks{display:flex;flex-wrap:wrap;gap:8px}@media(max-width:560px){.facts{grid-template-columns:1fr}.facts dd{margin-bottom:6px}}.next{background:var(--mint);border-radius:14px;padding:14px 18px;margin:26px 0}.next h2{margin:0 0 .3em;font-size:1.2rem}.next ul{margin:.3em 0;padding-left:1.2em}
 .card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:8px 0;min-width:0;scroll-margin-top:12px}.card h3,.card h4{margin:0 0 6px;font-size:1rem;line-height:1.35}.card p{margin:.25rem 0}
 .chip{display:inline-block;border:1px solid;border-radius:999px;padding:0 10px;font-size:.82rem;font-weight:700;line-height:1.7;white-space:nowrap}
 .chip.allowed,.chip.positive,.chip.broad{background:#e7f3eb;border-color:#2e7d4f;color:#1d5a37}.chip.medical-only{background:#e5f1f7;border-color:#3b7fa0;color:#1d4f68}
@@ -131,6 +131,7 @@ ICON_PATHS = {
     'person': 'M4 21c0-3.3 3.6-5.5 8-5.5s8 2.2 8 5.5M12 12.5a4.25 4.25 0 1 0 0-8.5 4.25 4.25 0 0 0 0 8.5z',
     'megaphone': 'M3 10v4h3l7 4V6l-7 4zM16.5 9.5a3.5 3.5 0 0 1 0 5M19 7a7 7 0 0 1 0 10',
     'briefcase': 'M3 8h18v12H3zM9 8V5h6v3M3 13h18',
+    'card': 'M3 6h18v12H3zM3 10h18M7 15h4M15 13.5v3M13.5 15h3',
 }
 
 
@@ -200,6 +201,36 @@ def load():
     return read('data/state-permissions.json'), read('data/state-scorecard.json'), read('data/directory.json')
 
 
+def load_medical():
+    """Patient guides for the medical-only states (data/medical-programs.json), keyed by state code."""
+    data = json.loads((ROOT / 'data/medical-programs.json').read_text(encoding='utf-8'))
+    return data, {p['state']: p for p in data['states']}
+
+
+MEDICAL_ROWS = [('who', 'Who can get one'), ('fee', 'Cost'), ('card_length', 'How long it lasts'), ('caregivers', 'Caregivers'),
+                ('visitors', 'Visiting patients'), ('buy', 'Where patients buy')]
+
+
+def medical_section(prog, cites, name):
+    """How patients get a card, each fact marked with its regulator source."""
+    out = [f'<section class="medcard" id="medical-card" aria-labelledby="medical-card-h"><h2 id="medical-card-h">How patients get a medical card in {esc(name)}</h2>',
+           f'<p class="muted">From {esc(prog["agency"])}. Adults without a card cannot buy here.</p>']
+    if prog.get('note'):
+        out.append(f'<p class="mednote">{esc(prog["note"]["text"])} {cites.mark([prog["note"]["source"]])}</p>')
+    if prog.get('steps'):
+        out.append('<h3>Steps</h3><ol class="steps">' + ''.join(f'<li>{esc(x)}</li>' for x in prog['steps']['items'])
+                   + f'</ol><p class="muted">Steps as the state describes them {cites.mark([prog["steps"]["source"]])}</p>')
+    rows = [(label, prog[key]) for key, label in MEDICAL_ROWS if prog.get(key)]
+    if rows:
+        out.append('<dl class="facts">' + ''.join(f'<dt>{esc(label)}</dt><dd>{esc(f["text"])} {cites.mark([f["source"]])}</dd>' for label, f in rows) + '</dl>')
+    missing = [label for key, label in MEDICAL_ROWS if not prog.get(key)]
+    if missing:
+        out.append(f'<p class="muted">Not stated on the state pages we checked: {esc(", ".join(m.lower() for m in missing))}. Check with the state.</p>')
+    out.append('<p class="medlinks">' + ''.join(f'<a class="pill" href="{esc(l["url"])}" target="_blank" rel="noopener">{esc(l["label"])}</a>' for l in prog['links']) + '</p>')
+    out.append('</section>')
+    return ''.join(out)
+
+
 def correction_url(place):
     body = 'Page or state:\r\n\r\nAddition or correction:\r\n\r\nWebsite or source:\r\n\r\n'
     return 'mailto:' + EMAIL + '?' + urlencode({'subject': f'{SITE_NAME}: correction for {place}', 'body': body}, quote_via=quote)
@@ -253,7 +284,7 @@ def shell(title, description, body, name, place, hero='', ld=None):
         head.append(json_ld(ld))
     head.append(f'<style>{CSS}</style></head><body>')
     top = (f'<header class="site"><div class="wrap"><a class="brand" href="index.html" aria-label="{esc(SITE_NAME)} home"><img src="{ASSETS}mark-96.png" alt="" width="40" height="40"><span>{esc(SITE_NAME)}</span></a>'
-           '<nav aria-label="Primary"><a href="index.html#map">Your state</a><a href="index.html#compare">Compare laws</a>'
+           '<nav aria-label="Primary"><a href="index.html#map">Your state</a><a href="medical.html">Medical cards</a><a href="index.html#compare">Compare laws</a>'
            '<a href="help.html">Get help</a><a href="about.html">About</a></nav></div></header>')
     family = ''.join(f'<li><a href="{esc(url)}">{esc(label)}</a></li>' for url, label, _, _ in FAMILY)
     foot = ('<footer class="site"><div class="wrap"><div class="cols">'
@@ -364,7 +395,7 @@ def glance(perm, state_answers, name):
     return (f'<section class="glance" id="glance" aria-label="{esc(name)} at a glance"><ul>' + ''.join(rows) + '</ul></section>')
 
 
-def state_page(perm, score, directory, code, answers, sources):
+def state_page(perm, score, directory, code, answers, sources, medical=None):
     name = perm['jurisdictions'][code]
     state_answers = answers.get(code, {})
     cites = Cites(sources)
@@ -381,8 +412,11 @@ def state_page(perm, score, directory, code, answers, sources):
         body.append('<p>Official state site: <span class="muted">not yet reviewed</span></p>')
     if code == 'OH':
         body.append(f'<p><strong>Ohio’s full guide lives at <a href="{OHIO_HOME}/">OhioWeed.org</a></strong>: business directory, dispensary finder, record clearing, advocacy and more.</p>')
-    body.append('<nav class="onpage" aria-label="On this page"><a href="#glance">At a glance</a><a href="#law">The law in detail</a>'
-                '<a href="#directory">Local help</a><a href="#sources">Sources</a></nav>')
+    prog = (medical or {}).get(code)
+    body.append('<nav class="onpage" aria-label="On this page">' + ('<a href="#medical-card">Get a medical card</a>' if prog else '')
+                + '<a href="#glance">At a glance</a><a href="#law">The law in detail</a><a href="#directory">Local help</a><a href="#sources">Sources</a></nav>')
+    if prog:
+        body.append(medical_section(prog, cites, name))
     body.append(glance(perm, state_answers, name))
     body.append(law_section(perm, code, state_answers, cites, sources))
     body.append(pathway_section(code, name, directory['pathways'], card, pack))
@@ -478,6 +512,40 @@ def help_page(perm, sources):
                  ''.join(body), 'help.html', 'the help page', ld=[breadcrumbs([('Home', '')], 'help.html', 'Help by need')])
 
 
+def medical_page(perm, med_data, medical, answers, sources):
+    """Medical cards state by state: medical-only states first, each with cost, visitors and a link to its full patient guide."""
+    names = perm['jurisdictions']
+    grid, legend = tile_map(perm, next(x for x in perm['questions'] if x['id'] == 'adult-use'), answers,
+                            'Map: adult use and medical-only states. Select a state to open its guide.')
+    cites = Cites(sources)
+    body = ['<p class="crumbs"><a href="index.html">Home</a> › Medical cards</p>',
+            '<h1>Getting a medical cannabis card, state by state</h1>',
+            f'<p class="lede">In {len(medical)} states, medical cannabis is legal but adult use is not, so a state card is the only legal way to buy. '
+            'Each state below links to its patient guide: who qualifies, the steps, the cost and whether visiting patients can buy. Every fact comes from the state regulator.</p>',
+            f'<div class="mapbox"><div>{grid}{legend}</div><div><h2 style="margin-top:0">Medical-only states</h2><p class="muted">Blue on the map. '
+            f'Patient facts checked {long_date(med_data["as_of"])}.</p></div></div>',
+            '<div class="guides">']
+    for code in sorted(medical, key=lambda c: names[c]):
+        prog = medical[code]
+        bits = [f'Cost: {prog["fee"]["text"]}' if prog.get('fee') else '', f'Visitors: {prog["visitors"]["text"]}' if prog.get('visitors') else '',
+                prog['note']['text'] if prog.get('note') and not prog.get('steps') else '']
+        if not any(bits):
+            bits = [f'Where patients buy: {prog["buy"]["text"]}' if prog.get('buy') else f'Who: {prog["who"]["text"]}']
+        body.append(f'<a class="guide" href="{slug(names[code])}.html#medical-card"><strong>{esc(names[code])}</strong>'
+                    + ''.join(f'<span>{esc(b)}</span>' for b in bits if b) + '</a>')
+    body.append('</div>')
+    limited = sorted(c for c in names if answers.get(c, {}).get('medical', {}).get('status') == 'limited')
+    if limited:
+        body.append('<h2>States with narrow programs</h2><p>These states allow only low-THC oil or CBD for certain conditions. Open a state to read its answer and source.</p><ul class="pills" style="list-style:none;padding:0">'
+                    + ''.join(f'<li><a class="pill" href="{slug(names[c])}.html#q-medical">{esc(names[c])} <small>{esc(answers[c]["medical"]["short"])}</small></a></li>' for c in limited) + '</ul>')
+    body.append('<h2>States where adults can buy</h2><p>Every adult-use state also has a medical program, often with lower taxes or higher limits for patients. '
+                '<a href="law-medical.html">See every state’s medical program on one page</a>.</p>')
+    body.append('<p class="muted">Summaries of state regulator pages, each linked on the state’s page. Not medical or legal advice. A blank fact means the state page we checked did not say.</p>')
+    title = 'How to get a medical cannabis card in each state'
+    return shell(title, 'How patients get a medical cannabis card in each medical-only state: who qualifies, steps, cost and visiting-patient rules, from state regulators.',
+                 ''.join(body), 'medical.html', 'the medical cards page', ld=[breadcrumbs([('Home', '')], 'medical.html', 'Medical cards')])
+
+
 def law_page(perm, question, answers, sources):
     names = perm['jurisdictions']
     total = len(names)
@@ -559,12 +627,12 @@ def about_page(perm, score, directory, answers):
 # What a visitor came for, each with one place to go. Help-page needs are linked by their section.
 TASKS = [
     ('scale', 'Is it legal where I am?', 'Adult use and medical rules, every state', 'law-adult-use.html'),
+    ('card', 'Get a medical card', 'How patients apply, in the 15 medical-only states', 'medical.html'),
     ('bag', 'Where can I buy?', 'Stores, dispensaries and who may shop', 'law-buying.html'),
     ('sprout', 'Can I grow my own?', 'Home-grow rules by state', 'law-home-grow.html'),
     ('plane', 'Traveling', 'What the TSA says about flying', 'help.html#travel'),
     ('record', 'Clear an old record', 'Sealing and expungement by state', 'law-record-relief.html'),
     ('star', 'Veterans', 'VA care and state cannabis programs', 'help.html#veterans'),
-    ('heart', 'Health and safety', 'Poison Help and the national helpline', 'help.html#health-and-safety'),
     ('person', 'Free legal help', 'Find civil legal aid near you', 'help.html#legal-help'),
     ('megaphone', 'Speak up', 'Find your state lawmakers', 'help.html#contact-lawmakers'),
     ('briefcase', 'Cannabis business', 'Industry association and state directories', 'help.html#business'),
@@ -637,13 +705,16 @@ def pages():
     perm, score, directory = load()
     sources = {s['id']: s for s in perm['sources']}
     answers = answers_by_state(perm)
+    med_data, medical = load_medical()
+    sources.update({s['id']: s for s in med_data['sources']})
     out = {'index.html': home_page(perm, score, directory, answers, sources),
+           'medical.html': medical_page(perm, med_data, medical, answers, sources),
            'help.html': help_page(perm, sources),
            'about.html': about_page(perm, score, directory, answers)}
     for q in perm['questions']:
         out[law_page_name(q['id'])] = law_page(perm, q, answers, sources)
     for code, name in perm['jurisdictions'].items():
-        out[slug(name) + '.html'] = state_page(perm, score, directory, code, answers, sources)
+        out[slug(name) + '.html'] = state_page(perm, score, directory, code, answers, sources, medical)
     return out
 
 
@@ -657,7 +728,7 @@ def main(out_dir=None):
     out_dir.mkdir(parents=True, exist_ok=True)
     for name, text in built.items():
         (out_dir / name).write_text(text, encoding='utf-8')
-    print(f'Built national/: {len(built)} pages (home, help, about, {len(built) - 54} law comparisons, 51 states)')
+    print(f'Built national/: {len(built)} pages (home, help, about, medical cards, {len(built) - 55} law comparisons, 51 states)')
 
 
 if __name__ == '__main__':
