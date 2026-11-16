@@ -2723,6 +2723,78 @@
    "title": "Code of Criminal Procedure Art. 983, costs of expungement of a record",
    "url": "https://legis.la.gov/legis/Law.aspx?d=919675",
    "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "fl-fdle-seal-expunge",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Florida Department of Law Enforcement",
+   "title": "Seal and Expunge Process",
+   "url": "https://www.fdle.state.fl.us/seal-and-expunge-process",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "fl-fdle-certificate",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Florida Department of Law Enforcement",
+   "title": "Certificate of Eligibility Instructions",
+   "url": "https://www.fdle.state.fl.us/Seal-and-Expunge-Process/Certificate-of-Eligibility-Instructions",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "fl-stat-943-0595",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "The Florida Senate",
+   "title": "s. 943.0595, F.S., automatic sealing of criminal history records (2026 Florida Statutes)",
+   "url": "https://m.flsenate.gov/Statutes/943.0595",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "ia-code-901c",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Iowa Legislature",
+   "title": "Iowa Code chapter 901C, expungement of criminal records (2026)",
+   "url": "https://www.legis.iowa.gov/docs/code/2026/901C.html",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "sc-solicitor11-expungement",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Eleventh Circuit Solicitor’s Office (South Carolina)",
+   "title": "Expungement Application (dated January 13, 2026)",
+   "url": "https://solicitor11.sc.gov/sites/solicitor11/files/Documents/Expungement/11th%20Circuit%20Expungement%20Application%202026.pdf",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "wv-code-61-11-26",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "West Virginia Legislature",
+   "title": "W. Va. Code § 61-11-26, expungement of certain criminal convictions",
+   "url": "https://code.wvlegislature.gov/61-11-26/",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "ne-courts-record-rehab",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Nebraska Judicial Branch",
+   "title": "Criminal Record Rehabilitation (self-help)",
+   "url": "https://nebraskajudicial.gov/self-help/criminal-record-rehabilitation",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "ne-courts-set-aside",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Nebraska Judicial Branch",
+   "title": "Set-Aside of a Criminal Conviction (self-help)",
+   "url": "https://nebraskajudicial.gov/node/16084",
+   "retrieved_on": "2026-11-16"
   }
  ],
  "answers": [
@@ -3744,6 +3816,21 @@
    ]
   },
   {
+   "state": "FL",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Court sealing or expungement, once in a lifetime",
+   "detail": "Florida seals or expunges a criminal history record by court order. A person first applies to the Florida Department of Law Enforcement for a certificate of eligibility (a notarized application, fingerprints, certified dispositions and a $75 processing fee), then petitions the court; the Department says a record gets no relief until it receives a certified court order, and a person is entitled to one court-ordered sealing or expungement in a lifetime under ss. 943.0585 and 943.059. Separately, s. 943.0595 seals records automatically, with no limit on how many times, when no charge was filed, all counts were dismissed or dropped, or the person was acquitted of all counts, except for forcible felonies and some other offenses; the clerk sends the disposition to the Department, which seals its record. The law covers criminal records in general; none of the sources mentions marijuana.",
+   "citation": "ss. 943.0585, 943.059 and 943.0595, F.S.; Florida Department of Law Enforcement, Seal and Expunge Process",
+   "effective_on": null,
+   "reviewed_on": "2026-11-16",
+   "source_ids": [
+    "fl-fdle-seal-expunge",
+    "fl-fdle-certificate",
+    "fl-stat-943-0595"
+   ]
+  },
+  {
    "state": "GA",
    "question": "adult-use",
    "status": "not-permitted",
@@ -3836,6 +3923,19 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "ia-hhs-mc"
+   ]
+  },
+  {
+   "state": "IA",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Misdemeanor expunged on application after 8 years, once",
+   "detail": "Iowa courts must expunge the record of a misdemeanor case on the defendant’s application, as a matter of law, once more than eight years have passed since the conviction, if no charges are pending, the person has not had two deferred judgments, and all fines, fees and restitution are paid (Iowa Code § 901C.3). It may be used once in a lifetime, though one application can cover misdemeanors from the same incident; the list of excluded offenses (such as some alcohol, driving, sex, assault and weapons offenses) does not include drug offenses. Charges that ended in acquittal or dismissal can be expunged on application, or on the court’s own motion, 180 days later once costs are paid (§ 901C.2). Expunged records are confidential, and the conviction is removed from the Department of Public Safety’s criminal history files. The law covers criminal records in general and does not name marijuana.",
+   "citation": "Iowa Code §§ 901C.2 and 901C.3",
+   "effective_on": null,
+   "reviewed_on": "2026-11-16",
+   "source_ids": [
+    "ia-code-901c"
    ]
   },
   {
@@ -5227,6 +5327,20 @@
    ]
   },
   {
+   "state": "NE",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Set-aside by petition; sealing for dismissals, pardons",
+   "detail": "Nebraska does not erase adult convictions. A person may petition the sentencing court to set a conviction aside after completing probation, community service, a fine, or a sentence of a year or less; the judge decides, and the order nullifies the conviction but is added to the record beside it, so the conviction must still be disclosed when asked. Records of charges that were dismissed or ended in acquittal, and pardoned convictions, can be sealed from the public record, and the Board of Pardons can pardon state convictions. The courts’ pages do not mention marijuana; the law covers criminal records in general.",
+   "citation": "Nebraska Judicial Branch, Criminal Record Rehabilitation and Set-Aside of a Criminal Conviction (self-help pages)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-16",
+   "source_ids": [
+    "ne-courts-record-rehab",
+    "ne-courts-set-aside"
+   ]
+  },
+  {
    "state": "NH",
    "question": "adult-use",
    "status": "medical-only",
@@ -6369,6 +6483,19 @@
    ]
   },
   {
+   "state": "SC",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Solicitor-run application; first possession after 3 years",
+   "detail": "In South Carolina a solicitor’s office handles expungement applications. The Eleventh Circuit Solicitor’s application (January 2026) lists a first-offense drug conditional discharge (S.C. Code § 44-53-450(b)) and a first-offense conviction for simple possession of a controlled substance (§ 22-5-930), which may be expunged three years after the sentence with no other conviction in that time; for marijuana there must also have been no conditional discharge in the five years before the arrest. Summary-court misdemeanors (§ 22-5-910) qualify three years after conviction, and dismissed or acquitted charges have their own route. Most routes can be used once in a lifetime. Fees are a $250 administrative fee, a $25 SLED verification fee and a $35 clerk’s fee; some are not charged for certain routes, such as General Sessions dismissals.",
+   "citation": "S.C. Code §§ 44-53-450(b), 22-5-930 and 22-5-910, per the Eleventh Circuit Solicitor’s Expungement Application (January 2026)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-16",
+   "source_ids": [
+    "sc-solicitor11-expungement"
+   ]
+  },
+  {
    "state": "SD",
    "question": "adult-use",
    "status": "medical-only",
@@ -7002,6 +7129,19 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "wv-omc"
+   ]
+  },
+  {
+   "state": "WV",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Circuit court petition after 1 to 5 years, once",
+   "detail": "West Virginia expunges convictions by petition to the circuit court where the conviction occurred (W. Va. Code § 61-11-26). One misdemeanor can be expunged one year after the latest of conviction, release or supervision, several misdemeanors after two years, and an eligible nonviolent felony after five; the person must prove eligibility by clear and convincing evidence, and relief under this section and § 61-11-26a is available only once. The fee is the civil filing fee plus $100 to the State Police for processing the order. Court records are sealed, other agencies’ records are expunged, and the person generally need not disclose the record. The listed exclusions (violent and sex offenses, weapons, DUI and others) do not generally exclude drug offenses; the section does not name marijuana.",
+   "citation": "W. Va. Code § 61-11-26",
+   "effective_on": null,
+   "reviewed_on": "2026-11-16",
+   "source_ids": [
+    "wv-code-61-11-26"
    ]
   },
   {
