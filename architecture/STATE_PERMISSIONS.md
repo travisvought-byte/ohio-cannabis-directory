@@ -8,7 +8,7 @@ The national guide is built top-down (November 15, 2026). National sources that 
 
 ## What the page shows, in order
 
-1. **Across every state.** Federal rules and national help lines: federal scheduling, flying, VA care, legal aid, Poison Help and the SAMHSA helpline. Each item links to the agency or organization that runs it.
+1. **Across every state.** Federal rules, national help lines and national organizations that cover every state: federal scheduling, state law summaries (NORML), flying, patient travel (Americans for Safe Access), VA care, legal aid, record clearing (Clean Slate Initiative; Collateral Consequences Resource Center, link only under its terms), finding state legislators (Open States), Poison Help and the SAMHSA helpline. Business resources (NCIA) sit under their own heading. Each item links to the agency or organization that runs it. A listing is not an endorsement, and advocacy groups are named as such. On phones each item's description is collapsed under "What it covers"; it opens automatically on wide screens.
 2. **One state in detail.** The same consumer questions for every jurisdiction, with an optional second state for comparison. The view can be shared as a link (`?state=TX&compare=OH`).
 3. **All 50 states and DC at a glance.** The two top-level answers (adult use and medical program) for every jurisdiction.
 
@@ -22,7 +22,7 @@ The policy portal, business-policy law cards, market data and lessons follow unc
 - `statuses`: `allowed`, `medical-only`, `limited`, `not-permitted`, `varies-locally`, `not-reviewed`. A `not-reviewed` answer is never stored: a missing answer renders as "Not yet reviewed" and never as a prohibition.
 - `sources`: kind (`statute`, `regulator`, `government`, `organization`, `compilation`, `news`), scope (`state` or `national`) and retrieval date. Every listed source must be cited.
 - `official_links`: each state's official starting point, which must be a reviewed state primary source.
-- `national`: items that apply in every state, sourced to the agency or organization that runs them.
+- `national`: items that apply in every state, sourced to the agency or organization that runs them. `audience` is `consumer` (default) or `business`; business items render under their own heading.
 
 ## Evidence levels
 
@@ -46,4 +46,5 @@ A national compilation is a secondary source under the [working agreement](../AG
 - The medical answer rests wholly on a national compilation for Idaho, Indiana, Iowa, Kansas, Louisiana, Montana, Nebraska, North Carolina, North Dakota, South Carolina, Tennessee, Washington, Wisconsin and Wyoming, and partly for Colorado, Georgia and Texas.
 - No official state link has been reviewed yet for Idaho, Indiana, Iowa, Kansas, Louisiana, Nebraska, North Carolina, North Dakota, South Carolina, Tennessee, Wisconsin and Wyoming. Retrieval of the North Dakota, Iowa and Washington health department pages failed on November 15, 2026.
 - Detail rows (buying, possession, sharing, home grow, public use, driving) are filled only where an official page reviewed for this pass stated them. Every other cell reads "Not yet reviewed".
+- Americans for Safe Access's state-by-state patient pages could not be retrieved on November 15, 2026 (`/states` returned an error; `/patient_guide` is disallowed to automated readers). Only its travel guide is listed.
 - Employment and record relief are not in the shared question set yet. They need status wording that does not read as a verdict.

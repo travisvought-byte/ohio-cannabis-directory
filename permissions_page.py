@@ -25,6 +25,7 @@ CSS = '''
 .chip.allowed{background:#e7f3eb;border-color:#2e7d4f;color:#1d5a37}.chip.medical-only,.chip.limited,.chip.varies-locally{background:#fff4dc;border-color:#b8860b;color:#664a00}
 .chip.not-permitted{background:#fbeaea;border-color:#a90000;color:#7a0000}.chip.not-reviewed{background:#f0f0f0;border-color:#888;color:#444}
 .national-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px}.national-item{background:#fff;border:1px solid #ccc;border-radius:10px;padding:14px 16px;min-width:0}
+.national-more summary{cursor:pointer;color:#a90000;font-size:.9rem}.national-more p{margin:.35rem 0}
 .national-item .need{font-size:.78rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#555;margin:0}.national-item h3{margin:.2rem 0 .3rem}.national-item p{margin:.2rem 0}
 .perm-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:end}.perm-controls select,.perm-controls input{width:100%;font:inherit;padding:9px;border:1px solid #888;border-radius:5px;background:#fff}
 .perm-official{margin:10px 0 0}.perm-group h3{margin:24px 0 8px;font-size:1.15rem}.perm-row{background:#fff;border:1px solid #ccc;border-radius:10px;padding:12px 16px 8px;margin:8px 0;min-width:0}
@@ -124,16 +125,28 @@ def table(data, info, codes):
     return ''.join(out)
 
 
+def national_item(item, order):
+    return (f'<article class="national-item" data-national="{esc(item["id"])}" data-audience="{esc(item.get("audience", "consumer"))}">'
+            f'<p class="need">{esc(item["need"])}</p>'
+            f'<h3><a href="{esc(item["url"])}" target="_blank" rel="noopener">{esc(item["title"])}</a></h3>'
+            f'<details class="national-more"><summary>What it covers</summary><p>{esc(item["text"])}</p>'
+            f'<p class="muted">Checked {long_date(item["reviewed_on"])} {cites(order[s] for s in item["source_ids"])}</p></details></article>')
+
+
 def render_national(data):
     order = numbering(data)
+    consumer = [i for i in data['national'] if i.get('audience', 'consumer') == 'consumer']
+    business = [i for i in data['national'] if i.get('audience', 'consumer') == 'business']
     out = ['<section id="national" aria-labelledby="national-title"><h2 id="national-title">Across every state</h2>',
-           '<p>Federal rules and national help lines that apply wherever you live. Each links to the federal agency or national organization that runs it.</p><div class="national-grid">']
-    for item in data['national']:
-        out.append(f'<article class="national-item" data-national="{esc(item["id"])}"><p class="need">{esc(item["need"])}</p>'
-                   f'<h3><a href="{esc(item["url"])}" target="_blank" rel="noopener">{esc(item["title"])}</a></h3>'
-                   f'<p>{esc(item["text"])}</p><p class="muted">Checked {long_date(item["reviewed_on"])} '
-                   f'{cites(order[s] for s in item["source_ids"])}</p></article>')
-    out.append('</div></section>')
+           '<p>Federal rules, national help lines and organizations that cover every state. Each links to the agency or organization that runs it. '
+           'A listing is not an endorsement; advocacy groups are named as such.</p><div class="national-grid">']
+    out += [national_item(item, order) for item in consumer]
+    out.append('</div>')
+    if business:
+        out.append('<h3 id="national-business">For cannabis businesses</h3><div class="national-grid">')
+        out += [national_item(item, order) for item in business]
+        out.append('</div>')
+    out.append('</section>')
     return ''.join(out)
 
 
@@ -193,6 +206,7 @@ SCRIPT = r'''
 <script>
 (function(){
  var D=JSON.parse(document.getElementById('permissions-data').textContent);
+ if(window.matchMedia&&matchMedia('(min-width: 800px)').matches)document.querySelectorAll('.national-more').forEach(function(d){d.open=true});
  var M=['January','February','March','April','May','June','July','August','September','October','November','December'];
  function e(v){return String(v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
  function d(v){var p=v.split('-');return M[+p[1]-1]+' '+(+p[2])+', '+p[0]}

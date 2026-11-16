@@ -264,7 +264,21 @@
    "source_ids": [
     "us-dea-rescheduling"
    ],
-   "reviewed_on": "2026-11-15"
+   "reviewed_on": "2026-11-15",
+   "audience": "consumer"
+  },
+  {
+   "id": "state-law-guide",
+   "need": "State laws",
+   "title": "NORML state-by-state guide to laws and penalties",
+   "text": "NORML (the National Organization for the Reform of Marijuana Laws), an advocacy group, keeps pages on cannabis laws and penalties for every state, DC and federal law. It says the pages are not legal advice and suggests checking state statutes or an attorney.",
+   "url": "https://norml.org/laws/",
+   "source_ids": [
+    "natl-norml-laws",
+    "natl-norml-preface"
+   ],
+   "reviewed_on": "2026-11-15",
+   "audience": "consumer"
   },
   {
    "id": "travel-flying",
@@ -275,7 +289,20 @@
    "source_ids": [
     "us-tsa-mmj"
    ],
-   "reviewed_on": "2026-11-15"
+   "reviewed_on": "2026-11-15",
+   "audience": "consumer"
+  },
+  {
+   "id": "patient-travel",
+   "need": "Patients traveling",
+   "title": "Medical cannabis patient travel guide",
+   "text": "Americans for Safe Access, a medical cannabis patient advocacy group, publishes a guide for patients traveling between states: state-by-state laws, patients’ rights and where medical cannabis can be obtained. The page says it was last updated in December 2024.",
+   "url": "https://www.safeaccessnow.org/travel",
+   "source_ids": [
+    "natl-asa-travel"
+   ],
+   "reviewed_on": "2026-11-15",
+   "audience": "consumer"
   },
   {
    "id": "veterans-va",
@@ -286,7 +313,8 @@
    "source_ids": [
     "us-va-marijuana"
    ],
-   "reviewed_on": "2026-11-15"
+   "reviewed_on": "2026-11-15",
+   "audience": "consumer"
   },
   {
    "id": "legal-aid",
@@ -297,7 +325,44 @@
    "source_ids": [
     "us-lsc-legal-help"
    ],
-   "reviewed_on": "2026-11-15"
+   "reviewed_on": "2026-11-15",
+   "audience": "consumer"
+  },
+  {
+   "id": "clean-slate-states",
+   "need": "Record clearing",
+   "title": "Which states seal records automatically",
+   "text": "The Clean Slate Initiative, an advocacy organization for automatic record sealing, lists the states and DC whose laws meet its criteria (14 states and DC on November 15, 2026), with links to each state campaign.",
+   "url": "https://www.cleanslateinitiative.org/states",
+   "source_ids": [
+    "natl-csi-states"
+   ],
+   "reviewed_on": "2026-11-15",
+   "audience": "consumer"
+  },
+  {
+   "id": "record-relief-comparison",
+   "need": "Record clearing",
+   "title": "50-state comparison of record relief",
+   "text": "The Collateral Consequences Resource Center compares expungement, sealing and other record relief across all 50 states and DC, with a summary for each state. The page says it was updated in July 2024. Read it on the center’s site.",
+   "url": "https://ccresourcecenter.org/state-restoration-profiles/50-state-comparisonjudicial-expungement-sealing-and-set-aside-2-2/",
+   "source_ids": [
+    "natl-ccrc-record-relief"
+   ],
+   "reviewed_on": "2026-11-15",
+   "audience": "consumer"
+  },
+  {
+   "id": "find-legislators",
+   "need": "Contact lawmakers",
+   "title": "Find your state legislators by address",
+   "text": "Open States, now run by Plural, looks up your state legislators from an address or your current location. Its page notes an exception for Montana while that state finishes redistricting.",
+   "url": "https://open.pluralpolicy.com/find_your_legislator",
+   "source_ids": [
+    "natl-openstates-legislators"
+   ],
+   "reviewed_on": "2026-11-15",
+   "audience": "consumer"
   },
   {
    "id": "poison-help",
@@ -308,7 +373,8 @@
    "source_ids": [
     "us-hrsa-poison"
    ],
-   "reviewed_on": "2026-11-15"
+   "reviewed_on": "2026-11-15",
+   "audience": "consumer"
   },
   {
    "id": "samhsa-helpline",
@@ -319,7 +385,20 @@
    "source_ids": [
     "us-samhsa-helpline"
    ],
-   "reviewed_on": "2026-11-15"
+   "reviewed_on": "2026-11-15",
+   "audience": "consumer"
+  },
+  {
+   "id": "industry-association",
+   "need": "Business",
+   "title": "National Cannabis Industry Association",
+   "text": "A national trade association for the legal cannabis industry. Its members include state-licensed cannabis companies, hemp manufacturers and service providers, and it advocates for national policy changes.",
+   "url": "https://thecannabisindustry.org/about",
+   "source_ids": [
+    "natl-ncia-about"
+   ],
+   "reviewed_on": "2026-11-15",
+   "audience": "business"
   }
  ],
  "sources": [
@@ -393,6 +472,69 @@
    "publisher": "Legal Services Corporation",
    "title": "Get legal help",
    "url": "https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "natl-norml-laws",
+   "kind": "organization",
+   "scope": "national",
+   "publisher": "NORML",
+   "title": "State laws",
+   "url": "https://norml.org/laws/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "natl-norml-preface",
+   "kind": "organization",
+   "scope": "national",
+   "publisher": "NORML",
+   "title": "State by state preface (guide to marijuana laws and penalties)",
+   "url": "https://norml.org/laws/state-by-state-preface/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "natl-asa-travel",
+   "kind": "organization",
+   "scope": "national",
+   "publisher": "Americans for Safe Access",
+   "title": "The Medical Cannabis Patient's Guide for U.S. Travel (updated December 2024)",
+   "url": "https://www.safeaccessnow.org/travel",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "natl-csi-states",
+   "kind": "organization",
+   "scope": "national",
+   "publisher": "The Clean Slate Initiative",
+   "title": "Clean Slate in states",
+   "url": "https://www.cleanslateinitiative.org/states",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "natl-ccrc-record-relief",
+   "kind": "organization",
+   "scope": "national",
+   "publisher": "Collateral Consequences Resource Center",
+   "title": "50-State Comparison: Expungement, Sealing & Other Record Relief (updated July 2024)",
+   "url": "https://ccresourcecenter.org/state-restoration-profiles/50-state-comparisonjudicial-expungement-sealing-and-set-aside-2-2/",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "natl-openstates-legislators",
+   "kind": "organization",
+   "scope": "national",
+   "publisher": "Open States (Plural)",
+   "title": "Find your legislators",
+   "url": "https://open.pluralpolicy.com/find_your_legislator",
+   "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "natl-ncia-about",
+   "kind": "organization",
+   "scope": "national",
+   "publisher": "National Cannabis Industry Association",
+   "title": "About NCIA",
+   "url": "https://thecannabisindustry.org/about",
    "retrieved_on": "2026-11-15"
   },
   {
