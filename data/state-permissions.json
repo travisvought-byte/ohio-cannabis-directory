@@ -1,6 +1,6 @@
 {
  "schema_version": "1.1.0",
- "as_of": "2026-11-16",
+ "as_of": "2026-11-17",
  "purpose": "What adults and patients may do in each state, answered with the same questions for all 50 states and DC. Built top-down: national compilations that cover every state come first, then each state’s official sources. Every answer names its sources and the date it was checked. Missing answers mean not yet reviewed, never that something is prohibited.",
  "required_questions": [
   "adult-use",
@@ -2830,6 +2830,60 @@
    "publisher": "Alabama Law Enforcement Agency",
    "title": "Criminal Record Expungement",
    "url": "https://alea.gov/criminal-record-expungement",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "ky-omc-faq",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Kentucky Office of Medical Cannabis",
+   "title": "General questions",
+   "url": "https://kymedcan.ky.gov/FAQs/Pages/General-Questions.aspx",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "ms-mmcp-faq",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Mississippi State Department of Health, Medical Cannabis Program",
+   "title": "Frequently asked questions",
+   "url": "https://www.mmcp.ms.gov/faq",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "wv-omc-faq",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "West Virginia Office of Medical Cannabis",
+   "title": "Frequently asked questions",
+   "url": "https://omc.wv.gov/faq",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "ut-cmc-patients",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Utah Department of Health and Human Services, Center for Medical Cannabis",
+   "title": "Patients",
+   "url": "https://medicalcannabis.utah.gov/patients/",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "fl-ommu-faq",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Florida Department of Health, Office of Medical Marijuana Use",
+   "title": "Frequently asked questions",
+   "url": "https://knowthefactsmmj.com/about/faq/",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "ok-omma-faq",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Oklahoma Medical Marijuana Authority",
+   "title": "FAQs",
+   "url": "https://oklahoma.gov/omma/help/faqs.html",
    "retrieved_on": "2026-11-16"
   }
  ],
@@ -7256,6 +7310,201 @@
    "reviewed_on": "2026-11-16",
    "source_ids": [
     "wy-courts-expungements"
+   ]
+  },
+  {
+   "state": "KY",
+   "question": "buying",
+   "status": "medical-only",
+   "short": "Cardholders only, at licensed dispensaries",
+   "detail": "Medical cannabis is sold only at dispensaries licensed by the Office of Medical Cannabis. Cardholders who buy from an out-of-state dispensary may be subject to law enforcement action.",
+   "citation": "Kentucky Office of Medical Cannabis, General Questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "ky-omc-faq"
+   ]
+  },
+  {
+   "state": "KY",
+   "question": "home-grow",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Kentucky law prohibits individuals from growing their own medical cannabis without a cannabis business license.",
+   "citation": "Kentucky Office of Medical Cannabis, General Questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "ky-omc-faq"
+   ]
+  },
+  {
+   "state": "KY",
+   "question": "driving",
+   "status": "not-permitted",
+   "short": "Not while under the influence",
+   "detail": "Medical cannabis cardholders may not operate vehicles or machinery while under the influence of medical cannabis, or keep it within arm’s reach when operating machinery.",
+   "citation": "Kentucky Office of Medical Cannabis, General Questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "ky-omc-faq"
+   ]
+  },
+  {
+   "state": "KY",
+   "question": "public-use",
+   "status": "limited",
+   "short": "No smoking; barred at schools, jails, federal property",
+   "detail": "Cardholders may not consume medical cannabis by smoking. They may not possess or use it on school property unless the school’s policy allows it, at correctional facilities or on federal property. The page does not state a general rule for other public places.",
+   "citation": "Kentucky Office of Medical Cannabis, General Questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "ky-omc-faq"
+   ]
+  },
+  {
+   "state": "MS",
+   "question": "possession",
+   "status": "medical-only",
+   "short": "Patients: 28 units; visiting patients: 14",
+   "detail": "Resident cardholders may possess a maximum of 28 Mississippi Medical Cannabis Equivalency Units (MMCEUs). Nonresident cardholders may possess 14.",
+   "citation": "Mississippi Medical Cannabis Program, Frequently Asked Questions (Miss. Code Ann. § 41-137-39)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "ms-mmcp-faq"
+   ]
+  },
+  {
+   "state": "MS",
+   "question": "public-use",
+   "status": "not-permitted",
+   "short": "No, and not in a motor vehicle",
+   "detail": "The law does not authorize a patient to use medical cannabis in a public place or in a motor vehicle.",
+   "citation": "Mississippi Medical Cannabis Program, Frequently Asked Questions (Miss. Code Ann. § 41-137-29)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "ms-mmcp-faq"
+   ]
+  },
+  {
+   "state": "WV",
+   "question": "buying",
+   "status": "medical-only",
+   "short": "Cardholders only, at licensed dispensaries",
+   "detail": "Only patients and caregivers with a physician certification and a medical cannabis identification card may buy, at licensed retail dispensaries approved by the Office of Medical Cannabis. Patients may purchase up to 6 ounces of flower or 60 grams of concentrate, or an equivalent combination, per rolling 30-day period unless a registered physician specifies otherwise.",
+   "citation": "West Virginia Office of Medical Cannabis, FAQ",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "wv-omc-faq"
+   ]
+  },
+  {
+   "state": "WV",
+   "question": "home-grow",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "It is unlawful to grow medical cannabis without a grower/processor permit from the bureau.",
+   "citation": "West Virginia Office of Medical Cannabis, FAQ (Chapter 16A, Medical Cannabis Act)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "wv-omc-faq"
+   ]
+  },
+  {
+   "state": "WV",
+   "question": "driving",
+   "status": "not-permitted",
+   "short": "Impaired driving is illegal; no patient exemption",
+   "detail": "Driving under the influence of any controlled substance or drug is illegal. Medical cannabis patients are not exempt from state or federal impaired-driving laws.",
+   "citation": "West Virginia Office of Medical Cannabis, FAQ (Chapter 17C)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "wv-omc-faq"
+   ]
+  },
+  {
+   "state": "UT",
+   "question": "buying",
+   "status": "medical-only",
+   "short": "Cardholders only, at Utah medical cannabis pharmacies",
+   "detail": "Patients can buy at any licensed medical cannabis pharmacy in Utah. It is illegal to buy cannabis in another state and bring it into Utah, even with a medical cannabis card. The provider sets a monthly limit; the highest is 113 grams of unprocessed flower and 20 grams of THC in all other products.",
+   "citation": "Utah Center for Medical Cannabis, Patients",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "ut-cmc-patients"
+   ]
+  },
+  {
+   "state": "UT",
+   "question": "public-use",
+   "status": "not-permitted",
+   "short": "No, except in a medical emergency",
+   "detail": "Patients may not use medical cannabis in public, indoors or outdoors, unless it is a medical emergency. Smoking cannabis is not allowed; vaping is legal.",
+   "citation": "Utah Center for Medical Cannabis, Patients",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "ut-cmc-patients"
+   ]
+  },
+  {
+   "state": "UT",
+   "question": "sharing",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Patients may not share, sell or give away their medical cannabis.",
+   "citation": "Utah Center for Medical Cannabis, Patients",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "ut-cmc-patients"
+   ]
+  },
+  {
+   "state": "FL",
+   "question": "buying",
+   "status": "medical-only",
+   "short": "Patients and caregivers, at licensed treatment centers",
+   "detail": "Only licensed medical marijuana treatment centers can sell medical marijuana, and only to a qualified patient or the patient’s caregiver. It may not be purchased anywhere else.",
+   "citation": "Florida Office of Medical Marijuana Use, General FAQ",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "fl-ommu-faq"
+   ]
+  },
+  {
+   "state": "FL",
+   "question": "home-grow",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Florida law allows only licensed medical marijuana treatment centers to grow, process and dispense marijuana.",
+   "citation": "Florida Office of Medical Marijuana Use, General FAQ",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "fl-ommu-faq"
+   ]
+  },
+  {
+   "state": "OK",
+   "question": "home-grow",
+   "status": "medical-only",
+   "short": "Licensed patients may grow",
+   "detail": "A medical marijuana patient license allows the holder to legally buy, use and grow medical marijuana and medical marijuana products in Oklahoma. The page read does not state the plant limit.",
+   "citation": "Oklahoma Medical Marijuana Authority, FAQs",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "ok-omma-faq"
    ]
   }
  ]
