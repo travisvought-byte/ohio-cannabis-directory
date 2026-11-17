@@ -55,10 +55,18 @@ p{max-width:70ch}.muted{color:var(--soft);font-size:.9rem}.crumbs{font-size:.9re
 .hero .eyebrow{color:var(--gold);font-size:.82rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
 .hero .art .ship{display:block;width:100%;max-width:520px;height:auto;margin:0 auto;border-radius:22px;box-shadow:0 18px 38px rgba(0,0,0,.45)}
 .ship .vessel{transform-origin:330px 540px;animation:bob 7s ease-in-out infinite}.ship .flag{filter:drop-shadow(0 0 7px rgba(150,225,235,.55)) drop-shadow(0 0 1px rgba(220,245,250,.9));transform-origin:330px 140px;animation:fly 3.2s ease-in-out infinite}.ship .swell{animation:swell 6s ease-in-out infinite}
+.ship .sailor{transform-box:fill-box;transform-origin:50% 100%;animation:cough 9s ease-in-out infinite}.ship .ember{fill:#ff7a1a;animation:ember 9s linear infinite}
+.ship .puff{opacity:0;transform-box:fill-box;transform-origin:center;animation:puff 3.3s ease-out infinite}.ship .hack{opacity:0;transform-box:fill-box;transform-origin:0 50%;animation:hack 9s ease-out infinite}
+.ship .cough{font:700 13px system-ui,sans-serif;fill:#f6ecc4;opacity:0;animation:word 9s ease-out infinite}
+@keyframes cough{0%,66%,92%,100%{transform:rotate(0)}70%{transform:rotate(16deg) translateY(1px)}74%{transform:rotate(5deg)}78%{transform:rotate(18deg) translateY(1px)}82%{transform:rotate(6deg)}86%{transform:rotate(15deg)}}
+@keyframes ember{0%,40%,60%,100%{fill:#ff7a1a;r:2.2px}50%{fill:#ffd36b;r:3.4px}}
+@keyframes puff{0%{opacity:0;transform:translate(0,0) scale(.5)}15%{opacity:.75}100%{opacity:0;transform:translate(14px,-46px) scale(2.6)}}
+@keyframes hack{0%,67%{opacity:0;transform:scale(.3)}72%{opacity:.9;transform:scale(1)}80%{opacity:.8;transform:scale(1.25) translateX(4px)}92%,100%{opacity:0;transform:scale(1.7) translate(10px,-8px)}}
+@keyframes word{0%,68%{opacity:0;transform:translateY(4px)}73%,86%{opacity:1;transform:translateY(0)}94%,100%{opacity:0;transform:translateY(-6px)}}
 @keyframes bob{0%,100%{transform:translateY(0) rotate(-.7deg)}50%{transform:translateY(5px) rotate(.8deg)}}
 @keyframes fly{0%,100%{transform:skewY(-1.6deg) scaleX(1)}50%{transform:skewY(2deg) scaleX(.975)}}
 @keyframes swell{0%,100%{transform:translateX(0)}50%{transform:translateX(-36px)}}
-@media (prefers-reduced-motion:reduce){.ship .vessel,.ship .flag,.ship .swell{animation:none}}
+@media (prefers-reduced-motion:reduce){.ship .vessel,.ship .flag,.ship .swell,.ship .sailor,.ship .ember,.ship .puff,.ship .hack,.ship .cough{animation:none}.ship .puff{opacity:.5}}
 .pick{background:#fff;color:var(--ink);border-radius:14px;padding:14px 16px 16px;margin-top:22px;max-width:520px;box-shadow:0 12px 30px rgba(0,0,0,.2)}
 .pick label{display:block;font-weight:800;margin-bottom:6px}.pick .row{display:flex;gap:8px}.pick select{flex:1;min-width:0;font-size:1.05rem}
 .pick button{font:inherit;font-weight:800;min-height:48px;padding:0 22px;border:0;border-radius:8px;background:var(--gold);color:#221c08;cursor:pointer}
@@ -773,6 +781,24 @@ def ship_art():
     stars = ''.join(f'<circle cx="{x}" cy="{y}" r="{r}"/>' for x, y, r in (
         (42, 60, 1.4), (96, 210, 1), (150, 38, 1.2), (236, 92, 1), (285, 30, 1.5), (60, 300, 1), (200, 250, 1.2), (598, 300, 1.2),
         (640, 262, 1), (560, 340, 1), (318, 172, 1), (24, 150, 1.2), (250, 180, .9), (628, 380, 1.1), (180, 330, 1)))
+    def sailor(x, flip, delay, bandana):
+        """A deckhand with a joint: smoke drifts up, and every few seconds he doubles over coughing."""
+        d = f' style="animation-delay:{delay}s"'
+        puffs = ''.join(f'<circle class="puff" cx="21" cy="-58" r="4" style="animation-delay:{delay + i * 1.1:.1f}s"/>' for i in range(3))
+        burst = ''.join(f'<circle cx="{cx}" cy="{cy}" r="{r}"/>' for cx, cy, r in ((24, -54, 5), (32, -58, 6), (30, -49, 4), (39, -53, 5)))
+        return (f'<g transform="translate({x} 471) scale({-1 if flip else 1} 1)"><g class="sailor"{d}>'
+                '<path d="M-5 0L-4-22M5 0L4-22" stroke="#22323b" stroke-width="6" stroke-linecap="round"/>'
+                '<rect x="-9" y="-45" width="18" height="25" rx="5" fill="#ece6d2"/><path d="M-9-38H9M-9-31H9M-9-24H9" stroke="#33566b" stroke-width="2.4"/>'
+                '<path d="M-8-41L-13-27" stroke="#d9a77a" stroke-width="4.5" stroke-linecap="round"/>'
+                '<circle cx="0" cy="-53" r="8" fill="#d9a77a"/>'
+                f'<path d="M-8.5-55Q0-66 8.5-55Q0-58-8.5-55Z" fill="{bandana}"/><path d="M-8-55l-7 5 6-1z" fill="{bandana}"/>'
+                '<path d="M8-41L15-45L11-51" fill="none" stroke="#d9a77a" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>'
+                f'<path d="M10-52L19-55" stroke="#f6f2e4" stroke-width="2.4" stroke-linecap="round"/><circle class="ember" cx="20" cy="-55.4" r="2.2"{d}/>'
+                f'<g class="hack" fill="#dfe9ea"{d}>{burst}</g></g>'
+                f'<g fill="#dfe9ea">{puffs}</g>'
+                f'<text class="cough" x="{-34 if flip else 14}" y="-74" transform="scale({-1 if flip else 1} 1)"{d}>*cough*</text></g>')
+
+    crew = '<g aria-hidden="true">' + sailor(285, False, 0, '#d0342c') + sailor(392, True, -4.6, '#2f7d4f') + '</g>'
     sail = 'fill="url(#sail)" stroke="#6f8791" stroke-width="1.6"'
     return (
         f'<svg class="ship" viewBox="0 0 660 620" role="img" aria-label="{esc(LOGO_ALT)}, flying as a flag from the mast of a ship at sea under a full moon" xmlns="http://www.w3.org/2000/svg">'
@@ -798,6 +824,7 @@ def ship_art():
         '<path d="M412 322H512Q530 366 518 406H404Q422 366 412 322Z"/><path d="M404 414H520Q540 452 528 486H396Q416 452 404 414Z"/>'
         '<path d="M470 300L628 408L474 446Q496 372 470 300Z"/></g>'
         '<g stroke="#000" stroke-width="1" opacity=".35" fill="none"><path d="M300 266Q318 318 296 368M360 266Q380 318 362 368M300 376Q322 432 296 482M362 376Q386 432 366 482"/></g>'
+        + crew +
         # hull with stern castle, gun ports and lantern
         '<path d="M70 448H150V470H520L572 444L548 520Q470 560 330 560Q170 560 96 524Z" fill="url(#hull)" stroke="#000" stroke-width="2"/>'
         '<path d="M70 448H150V470H520L572 444" fill="none" stroke="#c9a24a" stroke-width="3" opacity=".7"/>'
