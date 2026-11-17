@@ -8,7 +8,8 @@ Owner direction, November 16, 2026: this repository hosts the national cannabis 
 - The Ohio guide lives at ohioweed.org. Each Ohio page here forwards to its own
   ohioweed.org page, so there is one canonical copy.
 - Every other page (the shared state page and the Pennsylvania pages) is published as
-  built, with the old weed.vethomeguard.org address replaced by the-reefer.com.
+  built, with the old weed.vethomeguard.org address replaced by the-reefer.com and the
+  Ohio directory's brand, menu and footer replaced by this site's (rebrand()).
 - Data files and assets are served, so download links keep working.
 
 Nothing here changes a committed file; the swap happens only in the published copy.
@@ -72,6 +73,47 @@ def swap_origin(text):
     return text.replace(OLD_SITE, SITE).replace(OLD_SITE.split('//')[1], SITE.split('//')[1])
 
 
+# Pages published as built (the state portal and the Pennsylvania pages) were made for the Ohio
+# directory. On the-reefer.com they carry this site's name, menu and footer instead.
+REEFER_TOP = (
+    '<div class="reefer-top" style="display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.25rem;margin:0 0 1rem;padding:.6rem .9rem;'
+    'background:#1d4a37;border-radius:12px">'
+    '<a href="index.html" aria-label="The Reefer home" style="display:flex;align-items:center;gap:.6rem;color:#fff;text-decoration:none;font-weight:700;font-size:1.15rem">'
+    '<img src="assets/the-reefer/mark-96.png" alt="" width="40" height="40" style="border-radius:8px"><span>The Reefer</span></a>'
+    '<nav aria-label="Primary" style="display:flex;flex-wrap:wrap;gap:.25rem 1rem">'
+    + ''.join(f'<a href="{href}" style="color:#fff;padding:.55rem 0;min-height:44px;display:inline-flex;align-items:center">{label}</a>' for href, label in (
+        ('index.html#map', 'Your state'), ('medical.html', 'Medical cards'), ('index.html#compare', 'Compare laws'), ('help.html', 'Get help'),
+        ('pennsylvania.html', 'Pennsylvania law'), ('pennsylvania-directory.html', 'Pennsylvania companies'), ('new-york.html', 'New York law'),
+        ('about.html', 'About')))
+    + '</nav></div>')
+REEFER_FOOT = (
+    '<footer class="site-footer"><nav aria-label="More resources">'
+    '<a href="index.html">All states</a><a href="medical.html">Medical cards</a><a href="coverage.html">Medicaid and insurance</a><a href="help.html">Get help</a>'
+    '<a href="partners.html">Partners</a><a href="pennsylvania-directory.html">Pennsylvania companies</a><a href="pennsylvania-advocacy.html">Pennsylvania advocacy</a>'
+    '<a href="state.html?state=PA">Pennsylvania portal</a><a href="state.html?state=NY">New York portal</a>'
+    f'<a href="{OHIO_HOME}/">OhioWeed.org</a><a href="https://mobilitytalk.org/">Mobility Talk</a><a href="https://findbingo.org/">Find Bingo</a></nav>'
+    '<p>Created and maintained by <a href="https://travisvought.com/">Travis Vought</a> · Shared in support of '
+    '<a href="https://vethomeguard.org/">Veteran Home Guardians</a></p></footer>')
+
+
+def rebrand(text):
+    """Swap the Ohio directory's brand, menu and footer for this site's on a page published as built."""
+    start = text.find('<a class="vhg-brand"')
+    nav = text.find('<nav class="knowledge-links site-nav"', start)
+    end = text.find('</nav>', nav)
+    if min(start, nav, end) < 0:
+        raise SystemExit('a page published as built has no Ohio menu to replace; check rebrand()')
+    text = text[:start] + REEFER_TOP + text[end + len('</nav>'):]
+    foot = text.rfind('<footer class="site-footer"')
+    close = text.find('</footer>', foot)
+    if min(foot, close) < 0:
+        raise SystemExit('a page published as built has no site footer to replace; check rebrand()')
+    text = text[:foot] + REEFER_FOOT + text[close + len('</footer>'):]
+    return (text.replace(' | Ohio Cannabis Directory</title>', ' | The Reefer</title>')
+            .replace(' | Ohio Cannabis Directory">', ' | The Reefer">')
+            .replace('property="og:site_name" content="Ohio Cannabis Directory"', 'property="og:site_name" content="The Reefer"'))
+
+
 def not_found():
     return ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | The Reefer</title>'
@@ -123,6 +165,11 @@ def build(out):
     for name, text in national.items():
         (out / name).write_text(text.replace('href="../', 'href="').replace('src="../', 'src="').replace('srcset="../', 'srcset="'), encoding='utf-8')
         (out / 'national' / name).write_text(stub(f'{SITE}/' + ('' if name == 'index.html' else name)), encoding='utf-8')
+
+    # Whatever is left at the root was built for the Ohio directory: give it this site's name and menu.
+    for path in out.glob('*.html'):
+        if path.name not in FORWARD and path.name not in national and not (path.name.startswith('google') and len(path.name) == 27):
+            path.write_text(rebrand(path.read_text(encoding='utf-8')), encoding='utf-8')
 
     (out / '404.html').write_text(not_found(), encoding='utf-8')
     (out / 'CNAME').write_text(SITE.split('//')[1] + '\n', encoding='utf-8')

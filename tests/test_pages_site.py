@@ -53,6 +53,18 @@ class PagesSiteTest(unittest.TestCase):
             self.assertNotIn('http-equiv="refresh"', text)
             self.assertIn(f'https://the-reefer.com/{name}', text)
 
+    def test_other_pages_carry_this_sites_name_and_menu(self):
+        import re
+        for name in ('state.html', 'pennsylvania-directory.html', 'pennsylvania-advocacy.html'):
+            text = self.read(name)
+            self.assertIn('| The Reefer</title>', text)
+            self.assertIn('aria-label="The Reefer home"', text)
+            self.assertNotIn('class="vhg-brand"', text)
+            self.assertNotIn('knowledge-links site-nav', text)
+            block = text[text.index('<div class="reefer-top"'):text.index('</nav></div>')] + text[text.rindex('<footer class="site-footer"'):]
+            for href in re.findall(r'href="([^"#:?]+\.html)', block):
+                self.assertTrue((self.out / href).exists(), f'{name} menu links to missing {href}')
+
     def test_no_published_page_names_the_retired_address(self):
         for path in self.out.rglob('*.html'):
             self.assertNotIn('weed.vethomeguard.org', path.read_text(encoding='utf-8'), path.name)
