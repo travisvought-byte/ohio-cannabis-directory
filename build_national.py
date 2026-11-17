@@ -323,7 +323,7 @@ def shell(title, description, body, name, place, hero='', ld=None):
     family = ''.join(f'<li><a href="{esc(url)}">{esc(label)}</a></li>' for url, label, _, _ in FAMILY)
     foot = ('<footer class="site"><div class="wrap"><div class="cols">'
             '<nav aria-label="This site"><h2>This site</h2><ul><li><a href="index.html#map">Pick your state</a></li>'
-            '<li><a href="index.html#compare">Compare the law</a></li><li><a href="help.html">Get help</a></li><li><a href="about.html">About and methods</a></li></ul></nav>'
+            '<li><a href="index.html#compare">Compare the law</a></li><li><a href="medical.html">Medical cards</a></li><li><a href="coverage.html">Medicaid and insurance</a></li><li><a href="help.html">Get help</a></li><li><a href="partners.html">Partners</a></li><li><a href="about.html">About and methods</a></li></ul></nav>'
             f'<nav aria-label="Our other sites"><h2>Our other sites</h2><ul>{family}</ul></nav>'
             '<nav aria-label="Corrections and data"><h2>Fix or reuse</h2><ul>'
             f'<li><a href="{esc(correction_url(place))}">Suggest a correction</a></li>'
@@ -709,6 +709,42 @@ def coverage_page(perm, medical, sources):
                  ld=[breadcrumbs([('Home', ''), ('Medical cards', 'medical.html')], 'coverage.html', 'Medicaid and insurance'), faq])
 
 
+def partners_page(perm, sources):
+    """How an organization can be listed or link here. Ground rules first; no organization is called a partner until it agrees."""
+    body_mail = 'Organization:\r\nWebsite:\r\nState(s) served:\r\nWho you help (patients, veterans, legal aid, business):\r\nContact person:\r\n'
+    mail = 'mailto:' + EMAIL + '?' + urlencode({'subject': f'{SITE_NAME}: partner or listing request', 'body': body_mail}, quote_via=quote)
+    link_html = f'<a href="{ORIGIN or DEFAULT_SITE_ORIGIN}/">Cannabis laws, medical cards and help for every state (The Reefer)</a>'
+    orgs = []
+    for i in perm['national']:
+        s = sources[i['source_ids'][0]]
+        if s['kind'] == 'organization' and s['publisher'] not in [o[0] for o in orgs]:
+            orgs.append((s['publisher'], i['url'], i['need']))
+    body = ['<p class="crumbs"><a href="index.html">Home</a> › Partners</p>', '<h1>Work with The Reefer</h1>',
+            '<p class="lede">The Reefer is a free, source-linked guide to cannabis law, medical cards and help in every state. '
+            'Patient groups, veteran organizations, legal aid offices, clinics, libraries and state associations can be listed here and can link here, at no cost.</p>',
+            '<div class="needs">'
+            '<div class="need"><strong>Get listed</strong><span>Tell us who you help and where. We add organizations to the state pages they serve, with a link to your own site.</span></div>'
+            '<div class="need"><strong>Link to us</strong><span>Point your members to their state page, the medical card guides or the Medicaid and insurance page.</span></div>'
+            '<div class="need"><strong>Correct us</strong><span>If a rule, fee or address on a page you know is out of date, send the source and we fix it.</span></div></div>',
+            '<h2 id="rules">Ground rules</h2><ul>'
+            '<li>No paid placement, paid ranking or paid verification. Listing is free and cannot be bought.</li>'
+            '<li>A listing is not an endorsement, in either direction. Advocacy groups are named as advocacy groups.</li>'
+            '<li>Every published fact names its source and the date it was checked. Listings link to the organization’s own site.</li>'
+            '<li>The site is nonpartisan and treats every party and lawmaker the same way.</li>'
+            '<li>Everything here is free to reuse under CC BY 4.0.</li></ul>',
+            f'<h2 id="ask">Ask to be listed or to partner</h2><p><a class="pill" href="{esc(mail)}">Email a request</a></p>'
+            '<p class="muted">Include your website, the states you serve and who you help. Requests are reviewed by a person.</p>',
+            '<h2 id="link">Link to The Reefer</h2><p>Copy this link into your resources page, or link straight to any state page (for example, <code>the-reefer.com/florida.html</code>).</p>'
+            f'<pre style="white-space:pre-wrap;background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 12px;overflow-wrap:anywhere">{esc(link_html)}</pre>'
+            '<ul><li><a href="medical.html">Medical card guides, state by state</a></li><li><a href="coverage.html">Medicaid, Medicare and insurance</a></li>'
+            '<li><a href="help.html#veterans">Veterans</a></li><li><a href="law-record-relief.html">Clearing a past record, state by state</a></li></ul>',
+            '<h2 id="already">Organizations this site already points visitors to</h2>'
+            '<p>These national organizations are linked from the <a href="help.html">help page</a> because they run a resource visitors need. They are not partners of this site and have not endorsed it.</p><ul>'
+            + ''.join(f'<li><a href="{esc(url)}" target="_blank" rel="noopener">{esc(name)}</a> <span class="muted">({esc(need.lower())})</span></li>' for name, url, need in orgs) + '</ul>']
+    return shell('Partner with The Reefer', 'How patient groups, veteran organizations, legal aid offices and state associations can be listed on The Reefer or link to it. Free, no paid placement.',
+                 ''.join(body), 'partners.html', 'the partners page', ld=[breadcrumbs([('Home', '')], 'partners.html', 'Partners')])
+
+
 TASKS = [
     ('scale', 'Is it legal where I am?', 'Adult use and medical rules, every state', 'law-adult-use.html'),
     ('card', 'Get a medical card', 'How patients apply, state by state', 'medical.html'),
@@ -797,6 +833,7 @@ def pages():
     out = {'index.html': home_page(perm, score, directory, answers, sources),
            'medical.html': medical_page(perm, med_data, medical, answers, sources, dispensaries),
            'coverage.html': coverage_page(perm, medical, sources),
+           'partners.html': partners_page(perm, sources),
            'help.html': help_page(perm, sources),
            'about.html': about_page(perm, score, directory, answers)}
     for q in perm['questions']:
@@ -816,7 +853,7 @@ def main(out_dir=None):
     out_dir.mkdir(parents=True, exist_ok=True)
     for name, text in built.items():
         (out_dir / name).write_text(text, encoding='utf-8')
-    print(f'Built national/: {len(built)} pages (home, help, about, medical cards, coverage, {len(built) - 56} law comparisons, 51 states)')
+    print(f'Built national/: {len(built)} pages (home, help, about, medical cards, coverage, partners, {len(built) - 57} law comparisons, 51 states)')
 
 
 if __name__ == '__main__':
