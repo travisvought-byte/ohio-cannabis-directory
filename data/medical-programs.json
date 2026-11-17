@@ -382,6 +382,42 @@
       "title": "Apply for a Colorado medical marijuana card",
       "url": "https://cdphe.colorado.gov/apply-colorado-medical-marijuana-card",
       "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-il-program",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Illinois Department of Public Health",
+      "title": "Medical cannabis",
+      "url": "https://dph.illinois.gov/topics-services/prevention-wellness/medical-cannabis.html",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-il-veterans",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Illinois Department of Public Health",
+      "title": "Medical Cannabis Patient Program: veterans requirements",
+      "url": "https://dph.illinois.gov/topics-services/prevention-wellness/medical-cannabis/mcpp-veterans-requirements.html",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-me-program",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Maine Office of Cannabis Policy",
+      "title": "Maine Medical Use of Cannabis Program",
+      "url": "https://www.maine.gov/dafs/ocp/medical-use",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-me-visiting",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Maine Office of Cannabis Policy",
+      "title": "Visiting patients: approved list of states",
+      "url": "https://www.maine.gov/dafs/ocp/medical-use/visiting-patients",
+      "retrieved_on": "2026-11-17"
     }
   ],
   "states": [
@@ -1383,6 +1419,58 @@
         {
           "label": "Apply for a card",
           "url": "https://cdphe.colorado.gov/apply-colorado-medical-marijuana-card"
+        }
+      ]
+    },
+    {
+      "state": "IL",
+      "agency": "Illinois Department of Public Health, Medical Cannabis Patient Program",
+      "who": {
+        "text": "Illinois residents who meet the program requirements. The Department reviews applications and issues registry cards, which patients print or download from their online account.",
+        "source": "med-il-program"
+      },
+      "fee_help": {
+        "text": "Veterans with an honorable or general discharge who are eligible for VA services get a reduced application fee, with a copy of their DD-214.",
+        "source": "med-il-veterans"
+      },
+      "note": {
+        "text": "Veterans who get their care at a VA facility do not need a physician’s written certification. They submit their VA medical records for the last 12 months instead.",
+        "source": "med-il-veterans"
+      },
+      "links": [
+        {
+          "label": "Medical cannabis program",
+          "url": "https://dph.illinois.gov/topics-services/prevention-wellness/medical-cannabis.html"
+        },
+        {
+          "label": "Veterans requirements",
+          "url": "https://dph.illinois.gov/topics-services/prevention-wellness/medical-cannabis/mcpp-veterans-requirements.html"
+        }
+      ]
+    },
+    {
+      "state": "ME",
+      "agency": "Maine Office of Cannabis Policy, Medical Use of Cannabis Program",
+      "visitors": {
+        "text": "Visiting patients show their home state’s registry card or other state-issued patient document, if their home state allows it. They may buy up to 2.5 ounces every 15 days. The Office lists the approved states.",
+        "source": "med-me-visiting"
+      },
+      "buy": {
+        "text": "Registered caregivers and medical dispensaries. Medical cannabis in Maine is not subject to mandatory contaminant testing or statewide inventory tracking.",
+        "source": "med-me-program"
+      },
+      "links": [
+        {
+          "label": "Medical use program",
+          "url": "https://www.maine.gov/dafs/ocp/medical-use"
+        },
+        {
+          "label": "Visiting patients: approved states",
+          "url": "https://www.maine.gov/dafs/ocp/medical-use/visiting-patients"
+        },
+        {
+          "label": "Certification process",
+          "url": "https://www.maine.gov/dafs/ocp/medical-use/certification-process"
         }
       ]
     }
