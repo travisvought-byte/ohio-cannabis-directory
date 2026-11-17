@@ -2878,12 +2878,57 @@
    "retrieved_on": "2026-11-16"
   },
   {
-   "id": "ok-omma-faq",
+   "id": "ok-omma-rights",
    "kind": "regulator",
    "scope": "state",
    "publisher": "Oklahoma Medical Marijuana Authority",
+   "title": "Patient rights and responsibilities",
+   "url": "https://oklahoma.gov/omma/patients-caregivers/patient-rights-and-responsibilities.html",
+   "retrieved_on": "2026-11-17"
+  },
+  {
+   "id": "hi-doh-faq",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Hawaii Department of Health, Medical Cannabis Registry Program",
    "title": "FAQs",
-   "url": "https://oklahoma.gov/omma/help/faqs.html",
+   "url": "https://health.hawaii.gov/medicalcannabisregistry/general-information/faqs/",
+   "retrieved_on": "2026-11-17"
+  },
+  {
+   "id": "hi-doh-growing",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Hawaii Department of Health, Medical Cannabis Registry Program",
+   "title": "Growing cannabis",
+   "url": "https://health.hawaii.gov/medicalcannabisregistry/patients/growing-cannabis/",
+   "retrieved_on": "2026-11-17"
+  },
+  {
+   "id": "hi-doh-registry",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Hawaii Department of Health",
+   "title": "Medical Cannabis Registry Program",
+   "url": "https://health.hawaii.gov/medicalcannabisregistry/",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "nd-hhs-patients",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "North Dakota Health and Human Services",
+   "title": "Medical marijuana patients",
+   "url": "https://www.hhs.nd.gov/mm/patients",
+   "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "al-amcc-faq",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Alabama Medical Cannabis Commission",
+   "title": "Frequently asked questions",
+   "url": "https://amcc.alabama.gov/frequently-asked-questions/",
    "retrieved_on": "2026-11-16"
   }
  ],
@@ -7496,15 +7541,133 @@
   },
   {
    "state": "OK",
-   "question": "home-grow",
+   "question": "possession",
    "status": "medical-only",
-   "short": "Licensed patients may grow",
-   "detail": "A medical marijuana patient license allows the holder to legally buy, use and grow medical marijuana and medical marijuana products in Oklahoma. The page read does not state the plant limit.",
-   "citation": "Oklahoma Medical Marijuana Authority, FAQs",
+   "short": "Patients: 3 oz on you, 8 oz at home",
+   "detail": "A licensed patient may have up to 3 ounces of marijuana on their person, 8 ounces at their residence, 1 ounce of concentrate, 72 ounces of edibles and 72 ounces of topicals.",
+   "citation": "Oklahoma Medical Marijuana Authority, Patient Rights & Responsibilities (63 O.S. § 420; OAC 442:10-2-8)",
    "effective_on": null,
    "reviewed_on": "2026-11-17",
    "source_ids": [
-    "ok-omma-faq"
+    "ok-omma-rights"
+   ]
+  },
+  {
+   "state": "OK",
+   "question": "home-grow",
+   "status": "medical-only",
+   "short": "Patients: 6 mature plants and 6 seedlings",
+   "detail": "A licensed patient may have 6 mature marijuana plants and the harvested marijuana, plus 6 seedlings. Plants must be on property the patient owns or has the owner’s written permission to use, and must not be visible from an adjacent street.",
+   "citation": "Oklahoma Medical Marijuana Authority, Patient Rights & Responsibilities (63 O.S. § 427.12; OAC 442:10-2-9)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "ok-omma-rights"
+   ]
+  },
+  {
+   "state": "OK",
+   "question": "public-use",
+   "status": "limited",
+   "short": "Smoking and vaping follow tobacco rules",
+   "detail": "Smoking and vaping medical marijuana outdoors in public, or indoors at a workplace, is subject to the same state laws as smoking tobacco.",
+   "citation": "Oklahoma Medical Marijuana Authority, Patient Rights & Responsibilities (63 O.S. § 427.8(L); OAC 442:10-2-11)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "ok-omma-rights"
+   ]
+  },
+  {
+   "state": "OK",
+   "question": "sharing",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "Licensed patients are prohibited from sharing legally purchased medical marijuana.",
+   "citation": "Oklahoma Medical Marijuana Authority, Patient Rights & Responsibilities (OAC 442:10-2-9(a)(b))",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "ok-omma-rights"
+   ]
+  },
+  {
+   "state": "HI",
+   "question": "possession",
+   "status": "medical-only",
+   "short": "Patients: 4 ounces",
+   "detail": "The maximum a patient may have on hand is 4 ounces.",
+   "citation": "Hawaii Department of Health, Medical Cannabis Registry FAQs",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "hi-doh-faq"
+   ]
+  },
+  {
+   "state": "HI",
+   "question": "public-use",
+   "status": "not-permitted",
+   "short": "No",
+   "detail": "The law prohibits ingesting cannabis in any public place, in a bus or any moving vehicle, in the workplace, on school grounds or college property, or in the presence of anyone under 18.",
+   "citation": "Hawaii Department of Health, Medical Cannabis Registry FAQs",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "hi-doh-faq"
+   ]
+  },
+  {
+   "state": "HI",
+   "question": "home-grow",
+   "status": "medical-only",
+   "short": "Patients: up to 10 plants",
+   "detail": "State law defines a patient’s adequate supply as no more than ten cannabis plants, immature or mature, and four ounces of usable cannabis at any time.",
+   "citation": "Hawaii Department of Health, Growing Cannabis (definitions from HRS chapter 329)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "hi-doh-growing"
+   ]
+  },
+  {
+   "state": "HI",
+   "question": "driving",
+   "status": "not-permitted",
+   "short": "Not under the influence; no use in a moving vehicle",
+   "detail": "The Department of Health says it is not okay to drive a motor vehicle under the influence of medical cannabis. The law also prohibits ingesting cannabis in any moving vehicle.",
+   "citation": "Hawaii Department of Health, Medical Cannabis Registry Program and FAQs",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "hi-doh-registry",
+    "hi-doh-faq"
+   ]
+  },
+  {
+   "state": "ND",
+   "question": "buying",
+   "status": "medical-only",
+   "short": "Cardholders only, at the 8 registered dispensaries",
+   "detail": "A North Dakota cardholder is authorized to purchase and possess medical marijuana only from one of the eight registered dispensaries in the state. State law has no protections for marijuana not purchased from an in-state registered dispensary.",
+   "citation": "North Dakota Health and Human Services, Medical Marijuana Patients",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "nd-hhs-patients"
+   ]
+  },
+  {
+   "state": "AL",
+   "question": "buying",
+   "status": "medical-only",
+   "short": "Cardholders 19 and older; no smokable products",
+   "detail": "Patients 19 or older with a qualifying condition could receive a medical cannabis card to buy products; caregivers could obtain them for minors. Raw plant material, products that could be smoked or vaped, and food products are not allowed. The Commission lists the cities where dispensing sites will be located.",
+   "citation": "Alabama Medical Cannabis Commission, Frequently Asked Questions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-17",
+   "source_ids": [
+    "al-amcc-faq"
    ]
   }
  ]
