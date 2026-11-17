@@ -25,7 +25,7 @@ class NationalPagesTest(unittest.TestCase):
                              f'national/{name} requires rebuild (python build_national.py)')
 
     def test_one_page_per_jurisdiction_linked_from_home(self):
-        self.assertEqual(len(PAGES), len(PERM['jurisdictions']) + 4 + len(PERM['questions']))  # home, help, about, medical cards
+        self.assertEqual(len(PAGES), len(PERM['jurisdictions']) + 5 + len(PERM['questions']))  # home, help, about, medical cards, coverage
         for name in PERM['jurisdictions'].values():
             page = build_national.slug(name) + '.html'
             self.assertIn(page, PAGES)

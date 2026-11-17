@@ -10,7 +10,8 @@ import build_national  # noqa: E402
 
 DATA = json.loads((ROOT / 'data/medical-programs.json').read_text(encoding='utf-8'))
 PERM = json.loads((ROOT / 'data/state-permissions.json').read_text(encoding='utf-8'))
-FACTS = ('who', 'fee', 'card_length', 'caregivers', 'visitors', 'buy', 'note')
+FACTS = ('who', 'fee', 'fee_help', 'card_length', 'caregivers', 'visitors', 'buy', 'note')
+COVERAGE = json.loads((ROOT / 'data/medical-coverage.json').read_text(encoding='utf-8'))
 
 
 class MedicalPrograms(unittest.TestCase):
@@ -61,6 +62,24 @@ class MedicalPrograms(unittest.TestCase):
         ohio = pages['ohio.html']
         self.assertNotIn('id="medical-card"', ohio)
         self.assertIn('href="medical.html"', pages['index.html'])
+
+    def test_coverage_answers_cite_known_sources_and_render(self):
+        known = {s['id'] for s in DATA['sources']} | {s['id'] for s in PERM['sources']} | {s['id'] for s in COVERAGE['sources']}
+        for s in COVERAGE['sources']:
+            self.assertIn(s['kind'], ('regulator', 'government', 'statute'), s['id'])
+            self.assertRegex(s['retrieved_on'], r'^\d{4}-\d{2}-\d{2}$')
+        page = build_national.pages()['coverage.html']
+        for item in COVERAGE['items']:
+            self.assertTrue(any(p['source'] for p in item['points']), item['id'])
+            self.assertIn(f'id="{item["id"]}"', page)
+            for point in item['points']:
+                if point['source']:
+                    self.assertIn(point['source'], known, item['id'])
+                self.assertIn(build_national.esc(point['text']), page)
+        for p in DATA['states']:
+            if 'fee_help' in p:
+                self.assertIn(build_national.esc(p['fee_help']['text']), page)
+        self.assertIn('href="coverage.html"', build_national.pages()['index.html'])
 
 
 if __name__ == '__main__':

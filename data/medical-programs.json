@@ -10,7 +10,8 @@
     "caregivers",
     "visitors",
     "buy",
-    "note"
+    "note",
+    "fee_help"
   ],
   "sources": [
     {
@@ -387,7 +388,11 @@
           "label": "Verify a licensed business",
           "url": "https://oklahoma.gov/omma/businesses/omma-verify.html"
         }
-      ]
+      ],
+      "fee_help": {
+        "text": "$20 instead of $100 with proof of Medicaid (SoonerSelect) or Medicare enrollment, or 100% disabled veteran status.",
+        "source": "med-ok-apply"
+      }
     },
     {
       "state": "MS",
@@ -441,7 +446,11 @@
           "label": "Dispensary information (Department of Revenue)",
           "url": "https://www.dor.ms.gov/abc/medical-cannabis"
         }
-      ]
+      ],
+      "fee_help": {
+        "text": "$15 instead of $25 for Medicaid participants. Waived for disabled veterans and disabled first responders with documentation.",
+        "source": "med-ms-faq"
+      }
     },
     {
       "state": "UT",
@@ -542,7 +551,11 @@
           "label": "Dispensary list",
           "url": "https://omc.wv.gov/media/188/download?inline"
         }
-      ]
+      ],
+      "fee_help": {
+        "text": "The $50 fee can be waived for household income below 200% of the federal poverty level.",
+        "source": "med-wv-faq"
+      }
     },
     {
       "state": "AL",
@@ -880,7 +893,7 @@
         "source": "med-pa-patients"
       },
       "fee": {
-        "text": "$50. Free for people in Medicaid, PACE/PACENET, CHIP, SNAP or WIC.",
+        "text": "$50. People in Medicaid, PACE/PACENET, CHIP, SNAP or WIC may qualify for a no-cost card.",
         "source": "med-pa-patients"
       },
       "caregivers": {
@@ -904,7 +917,11 @@
           "label": "Dispensaries",
           "url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/dispensaries"
         }
-      ]
+      ],
+      "fee_help": {
+        "text": "People in Medicaid, PACE/PACENET, CHIP, SNAP or WIC may qualify for a no-cost card instead of paying $50.",
+        "source": "med-pa-patients"
+      }
     }
   ]
 }

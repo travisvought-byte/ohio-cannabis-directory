@@ -207,6 +207,11 @@ def load_medical():
     return data, {p['state']: p for p in data['states']}
 
 
+def load_coverage():
+    """Who pays for medical cannabis (data/medical-coverage.json)."""
+    return json.loads((ROOT / 'data/medical-coverage.json').read_text(encoding='utf-8'))
+
+
 MEDICAL_ROWS = [('who', 'Who can get one'), ('fee', 'Cost'), ('card_length', 'How long it lasts'), ('caregivers', 'Caregivers'),
                 ('visitors', 'Visiting patients'), ('buy', 'Where patients buy')]
 
@@ -226,6 +231,7 @@ def medical_section(prog, cites, name):
     missing = [label for key, label in MEDICAL_ROWS if not prog.get(key)]
     if missing:
         out.append(f'<p class="muted">Not stated on the state pages we checked: {esc(", ".join(m.lower() for m in missing))}. Check with the state.</p>')
+    out.append('<p><a href="coverage.html">Does Medicaid, Medicare or insurance pay for it?</a></p>')
     out.append('<p class="medlinks">' + ''.join(f'<a class="pill" href="{esc(l["url"])}" target="_blank" rel="noopener">{esc(l["label"])}</a>' for l in prog['links']) + '</p>')
     out.append('</section>')
     return ''.join(out)
@@ -538,6 +544,8 @@ def medical_page(perm, med_data, medical, answers, sources):
     if limited:
         body.append('<h2>States with narrow programs</h2><p>These states allow only low-THC oil or CBD for certain conditions. Open a state to read its answer and source.</p><ul class="pills" style="list-style:none;padding:0">'
                     + ''.join(f'<li><a class="pill" href="{slug(names[c])}.html#q-medical">{esc(names[c])} <small>{esc(answers[c]["medical"]["short"])}</small></a></li>' for c in limited) + '</ul>')
+    body.append('<h2>Paying for it</h2><p>Medicaid, Medicare and insurance generally do not pay for medical cannabis, but some states cut the card fee. '
+                '<a href="coverage.html">See who pays and where the card costs less</a>.</p>')
     body.append('<h2>States where adults can buy</h2><p>Every adult-use state also has a medical program, often with lower taxes or higher limits for patients. '
                 '<a href="law-medical.html">See every state’s medical program on one page</a>.</p>')
     body.append('<p class="muted">Summaries of state regulator pages, each linked on the state’s page. Not medical or legal advice. A blank fact means the state page we checked did not say.</p>')
@@ -625,6 +633,39 @@ def about_page(perm, score, directory, answers):
 
 
 # What a visitor came for, each with one place to go. Help-page needs are linked by their section.
+def coverage_page(perm, medical, sources):
+    """Who pays for medical cannabis, question by question, then the states that lower the card fee."""
+    data, names, cites = load_coverage(), perm['jurisdictions'], Cites(sources)
+    body = ['<p class="crumbs"><a href="index.html">Home</a> › <a href="medical.html">Medical cards</a> › Medicaid and insurance</p>',
+            '<h1>Does Medicaid, Medicare or insurance pay for medical cannabis?</h1>',
+            '<p class="lede">Short answer: patients pay for dispensary cannabis themselves. What can change is the cost of the card, '
+            'and a few cannabis medicines are ordinary prescriptions. Each answer below comes from the agency’s own page.</p>',
+            '<nav class="pills" aria-label="On this page">' + ''.join(f'<a class="pill" href="#{esc(i["id"])}">{esc(i["question"])}</a>' for i in data['items'])
+            + '<a class="pill" href="#fee-help">Card fee help by state</a></nav>']
+    for item in data['items']:
+        body.append(f'<article class="card" id="{esc(item["id"])}"><h2 style="margin:.2em 0">{esc(item["question"])}</h2><p class="short">{esc(item["short"])}</p><ul>')
+        for point in item['points']:
+            body.append(f'<li>{esc(point["text"])}' + (f' {cites.mark([point["source"]])}' if point['source'] else '') + '</li>')
+        body.append('</ul></article>')
+    helped = sorted((c for c in medical if medical[c].get('fee_help')), key=lambda c: names[c])
+    body.append('<h2 id="fee-help">Card fee help by state</h2><p>States that lower or waive the patient card fee for people on Medicaid or with low income, and for veterans, '
+                'among the state programs reviewed so far.</p><ul class="rows">')
+    for code in helped:
+        f = medical[code]['fee_help']
+        body.append(f'<li><a class="state" href="{slug(names[code])}.html#medical-card">{esc(names[code])}</a><span>{esc(f["text"])} {cites.mark([f["source"]])}</span></li>')
+    body.append('</ul><p class="muted">A state missing from this list has not been reviewed for fee help yet, or its regulator page did not state any. '
+                f'Checked {long_date(data["as_of"])}. Not medical, legal or tax advice.</p>')
+    body.append('<aside class="next"><h2>Where to go next</h2><ul><li><a href="medical.html">How to get a medical card in your state</a></li>'
+                '<li><a href="help.html#veterans">Veterans: VA care and state programs</a></li><li><a href="index.html#map">Pick your state</a></li></ul></aside>')
+    body.append(cites.render())
+    title = 'Does Medicaid, Medicare or insurance cover medical cannabis?'
+    faq = {'@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': i['question'],
+           'acceptedAnswer': {'@type': 'Answer', 'text': i['short'] + ' ' + ' '.join(p['text'] for p in i['points'] if p['source'])}} for i in data['items']]}
+    return shell(title, 'Whether Medicaid, Medicare, private insurance or the VA pay for medical cannabis, which cannabis medicines are prescriptions, and which states cut the card fee.',
+                 ''.join(body), 'coverage.html', 'the Medicaid and insurance page',
+                 ld=[breadcrumbs([('Home', ''), ('Medical cards', 'medical.html')], 'coverage.html', 'Medicaid and insurance'), faq])
+
+
 TASKS = [
     ('scale', 'Is it legal where I am?', 'Adult use and medical rules, every state', 'law-adult-use.html'),
     ('card', 'Get a medical card', 'How patients apply, in the 15 medical-only states', 'medical.html'),
@@ -633,7 +674,7 @@ TASKS = [
     ('plane', 'Traveling', 'What the TSA says about flying', 'help.html#travel'),
     ('record', 'Clear an old record', 'Sealing and expungement by state', 'law-record-relief.html'),
     ('star', 'Veterans', 'VA care and state cannabis programs', 'help.html#veterans'),
-    ('person', 'Free legal help', 'Find civil legal aid near you', 'help.html#legal-help'),
+    ('heart', 'Medicaid and insurance', 'Who pays for medical cannabis, and card fee help', 'coverage.html'),
     ('megaphone', 'Speak up', 'Find your state lawmakers', 'help.html#contact-lawmakers'),
     ('briefcase', 'Cannabis business', 'Industry association and state directories', 'help.html#business'),
 ]
@@ -707,8 +748,10 @@ def pages():
     answers = answers_by_state(perm)
     med_data, medical = load_medical()
     sources.update({s['id']: s for s in med_data['sources']})
+    sources.update({s['id']: s for s in load_coverage()['sources']})
     out = {'index.html': home_page(perm, score, directory, answers, sources),
            'medical.html': medical_page(perm, med_data, medical, answers, sources),
+           'coverage.html': coverage_page(perm, medical, sources),
            'help.html': help_page(perm, sources),
            'about.html': about_page(perm, score, directory, answers)}
     for q in perm['questions']:
@@ -728,7 +771,7 @@ def main(out_dir=None):
     out_dir.mkdir(parents=True, exist_ok=True)
     for name, text in built.items():
         (out_dir / name).write_text(text, encoding='utf-8')
-    print(f'Built national/: {len(built)} pages (home, help, about, medical cards, {len(built) - 55} law comparisons, 51 states)')
+    print(f'Built national/: {len(built)} pages (home, help, about, medical cards, coverage, {len(built) - 56} law comparisons, 51 states)')
 
 
 if __name__ == '__main__':
