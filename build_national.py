@@ -818,11 +818,17 @@ def ship_art():
         (42, 60, 1.4), (96, 210, 1), (150, 38, 1.2), (236, 92, 1), (285, 30, 1.5), (60, 300, 1), (200, 250, 1.2), (598, 300, 1.2),
         (640, 262, 1), (560, 340, 1), (318, 172, 1), (24, 150, 1.2), (250, 180, .9), (628, 380, 1.1), (180, 330, 1)))
     def sailor(x, flip, delay, bandana):
-        """A deckhand with a joint: smoke drifts up, and every few seconds he doubles over coughing."""
+        """A deckhand with a joint: smoke drifts up, and every few seconds he doubles over coughing.
+
+        The sailor facing left is the same drawing mirrored. His "*cough*" is a word, so it is drawn on its own,
+        outside the mirrored group, and reads left to right. Do not flip it back with a transform on the <text>:
+        the stylesheet animates that element's transform and the animation replaces the attribute, which is how the
+        word came out backwards (owner's report, November 17, 2026). tests/picture-browser.cjs checks it in a browser."""
         d = f' style="animation-delay:{delay}s"'
         puffs = ''.join(f'<circle class="puff" cx="21" cy="-58" r="4" style="animation-delay:{delay + i * 1.1:.1f}s"/>' for i in range(3))
         burst = ''.join(f'<circle cx="{cx}" cy="{cy}" r="{r}"/>' for cx, cy, r in ((24, -54, 5), (32, -58, 6), (30, -49, 4), (39, -53, 5)))
-        return (f'<g transform="translate({x} 471) scale({-1 if flip else 1} 1)"><g class="sailor"{d}>'
+        mirror = ' transform="scale(-1 1)"' if flip else ''
+        return (f'<g transform="translate({x} 471)"><g{mirror}><g class="sailor"{d}>'
                 '<path d="M-5 0L-4-22M5 0L4-22" stroke="#22323b" stroke-width="6" stroke-linecap="round"/>'
                 '<rect x="-9" y="-45" width="18" height="25" rx="5" fill="#ece6d2"/><path d="M-9-38H9M-9-31H9M-9-24H9" stroke="#33566b" stroke-width="2.4"/>'
                 '<path d="M-8-41L-13-27" stroke="#d9a77a" stroke-width="4.5" stroke-linecap="round"/>'
@@ -831,8 +837,8 @@ def ship_art():
                 '<path d="M8-41L15-45L11-51" fill="none" stroke="#d9a77a" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>'
                 f'<path d="M10-52L19-55" stroke="#f6f2e4" stroke-width="2.4" stroke-linecap="round"/><circle class="ember" cx="20" cy="-55.4" r="2.2"{d}/>'
                 f'<g class="hack" fill="#dfe9ea"{d}>{burst}</g></g>'
-                f'<g fill="#dfe9ea">{puffs}</g>'
-                f'<text class="cough" x="{-34 if flip else 14}" y="-74" transform="scale({-1 if flip else 1} 1)"{d}>*cough*</text></g>')
+                f'<g fill="#dfe9ea">{puffs}</g></g>'
+                f'<text class="cough" x="{-34 if flip else 14}" y="-74"{d}>*cough*</text></g>')
 
     crew = '<g aria-hidden="true">' + sailor(285, False, 0, '#d0342c') + sailor(392, True, -4.6, '#2f7d4f') + '</g>'
     sail = 'fill="url(#sail)" stroke="#6f8791" stroke-width="1.6"'

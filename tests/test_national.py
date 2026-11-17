@@ -95,6 +95,34 @@ class NationalPagesTest(unittest.TestCase):
             build_national.main(temp)
             self.assertEqual({p.name for p in Path(temp).glob('*.html')}, set(PAGES))
 
+    def test_words_in_the_home_picture_are_never_mirrored(self):
+        """The sailor facing left is the other sailor's drawing mirrored, but his "*cough*" must read left to right.
+        So a word never sits inside a mirrored group, and never carries a transform of its own: the stylesheet
+        animates the word's transform, and that animation replaces the attribute (the cause of the backwards word the
+        owner reported on November 17, 2026). tests/picture-browser.cjs checks the same thing as a browser draws it."""
+        import xml.etree.ElementTree as ET
+        home = PAGES['index.html']
+        start = home.index('<svg class="ship"')
+        picture = ET.fromstring(home[start:home.index('</svg>', start) + len('</svg>')])
+        parent = {child: node for node in picture.iter() for child in node}
+        words = [node for node in picture.iter() if node.tag.endswith('}text')]
+        self.assertEqual([word.text for word in words], ['*cough*', '*cough*'], 'one cough for each sailor')
+        mirrored = 0
+        for word in words:
+            self.assertNotIn('transform', word.attrib, 'the animation would replace a transform set on the word itself')
+            node, figure = word, parent[word]
+            while node in parent:
+                node = parent[node]
+                for factors in re.findall(r'scale\(([^)]*)\)', node.get('transform', '')):
+                    self.assertTrue(all(float(f) > 0 for f in re.split(r'[\s,]+', factors.strip())),
+                                    f'a word sits inside a flipped group: scale({factors})')
+            # The word belongs to one sailor: it shares a group with his figure, and only the figure may be mirrored.
+            figures = [g for g in figure if g is not word]
+            self.assertEqual(len(figures), 1)
+            self.assertEqual(len([g for g in figures[0].iter() if g.get('class') == 'sailor']), 1)
+            mirrored += figures[0].get('transform') == 'scale(-1 1)'
+        self.assertEqual(mirrored, 1, 'the two sailors face each other: exactly one figure is mirrored')
+
 
 if __name__ == '__main__':
     unittest.main()
