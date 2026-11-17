@@ -418,6 +418,60 @@
       "title": "Visiting patients: approved list of states",
       "url": "https://www.maine.gov/dafs/ocp/medical-use/visiting-patients",
       "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-ny-faq",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "New York State Office of Cannabis Management",
+      "title": "Medical Cannabis Program FAQs",
+      "url": "https://cannabis.ny.gov/medical-cannabis-program-faqs",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-ca-mmicp-faq",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "California Department of Public Health",
+      "title": "Medical Marijuana Identification Card Program: frequently asked questions",
+      "url": "https://www.cdph.ca.gov/Programs/CHSI/Pages/MMICP-FAQs.aspx",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-or-fees",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Oregon Health Authority",
+      "title": "Oregon Medical Marijuana Program: fees",
+      "url": "https://www.oregon.gov/oha/ph/DiseasesConditions/ChronicDisease/MedicalMarijuanaProgram/Pages/OMMP-Fees.aspx",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-or-apply",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Oregon Health Authority",
+      "title": "Oregon Medical Marijuana Program: patient application",
+      "url": "https://www.oregon.gov/oha/ph/diseasesconditions/chronicdisease/medicalmarijuanaprogram/pages/forms.aspx",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-ma-register",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Massachusetts Cannabis Control Commission",
+      "title": "Register as a new patient",
+      "url": "https://masscannabiscontrol.com/patients-caregivers/for-new-patients/register-as-a-new-patient",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-ma-faq",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Massachusetts Cannabis Control Commission",
+      "title": "New patient questions",
+      "url": "https://masscannabiscontrol.com/new-patients/new-patient-faqs",
+      "retrieved_on": "2026-11-17"
     }
   ],
   "states": [
@@ -1471,6 +1525,178 @@
         {
           "label": "Certification process",
           "url": "https://www.maine.gov/dafs/ocp/medical-use/certification-process"
+        }
+      ]
+    },
+    {
+      "state": "NY",
+      "agency": "New York State Office of Cannabis Management, Medical Cannabis Program",
+      "who": {
+        "text": "Patients with any condition their healthcare provider deems clinically appropriate.",
+        "source": "med-ny-faq"
+      },
+      "steps": {
+        "items": [
+          "Talk with your treating healthcare provider. If medical cannabis is appropriate, the provider may issue a certification.",
+          "The certification carries a registry ID number. Registry ID cards are no longer issued.",
+          "Bring the certification and a government-issued photo ID to a Registered Organization dispensary."
+        ],
+        "source": "med-ny-faq"
+      },
+      "caregivers": {
+        "text": "Certified patients and designated caregivers 21 or older who are registered with the program may grow cannabis at home for personal use.",
+        "source": "med-ny-faq"
+      },
+      "visitors": {
+        "text": "Out-of-state patients can buy with proof of a certification, registration or equivalent from their state and a government-issued photo ID. Confirm requirements with the dispensary.",
+        "source": "med-ny-faq"
+      },
+      "buy": {
+        "text": "Any Registered Organization dispensary in New York, some with home delivery. They may dispense up to a 60-day supply.",
+        "source": "med-ny-faq"
+      },
+      "links": [
+        {
+          "label": "Program FAQs",
+          "url": "https://cannabis.ny.gov/medical-cannabis-program-faqs"
+        },
+        {
+          "label": "Designated caregivers",
+          "url": "https://cannabis.ny.gov/designated-caregivers"
+        }
+      ]
+    },
+    {
+      "state": "CA",
+      "agency": "California Department of Public Health, Medical Marijuana Identification Card Program",
+      "who": {
+        "text": "Patients diagnosed with a serious medical condition whose physician’s recommendation is documented in their medical records. The card is voluntary.",
+        "source": "med-ca-mmicp-faq"
+      },
+      "steps": {
+        "items": [
+          "Get your physician’s recommendation.",
+          "Make an appointment with the health department program in the county where you live. You can apply only at the county program.",
+          "Bring the application form, the recommendation, a government-issued photo ID and proof of county residency. The county takes your photo."
+        ],
+        "source": "med-ca-mmicp-faq"
+      },
+      "fee": {
+        "text": "Set by each county, up to $100 per application or renewal.",
+        "source": "med-ca-mmicp-faq"
+      },
+      "fee_help": {
+        "text": "Medi-Cal beneficiaries get a 50 percent reduction (no more than $50). Fees are waived for indigent patients in the County Medical Services Program.",
+        "source": "med-ca-mmicp-faq"
+      },
+      "card_length": {
+        "text": "Up to one year.",
+        "source": "med-ca-mmicp-faq"
+      },
+      "caregivers": {
+        "text": "The patient applies for a primary caregiver’s card, and the caregiver applies in person at the patient’s county program. The caregiver’s card expires with the patient’s.",
+        "source": "med-ca-mmicp-faq"
+      },
+      "buy": {
+        "text": "Patients with a valid card pay no sales and use tax on retail purchases of medical cannabis products.",
+        "source": "med-ca-mmicp-faq"
+      },
+      "links": [
+        {
+          "label": "Card program questions",
+          "url": "https://www.cdph.ca.gov/Programs/CHSI/Pages/MMICP-FAQs.aspx"
+        },
+        {
+          "label": "Card program",
+          "url": "https://www.cdph.ca.gov/Programs/CHSI/Pages/MMICP.aspx"
+        }
+      ]
+    },
+    {
+      "state": "OR",
+      "agency": "Oregon Health Authority, Oregon Medical Marijuana Program",
+      "who": {
+        "text": "Oregon residents with an Attending Provider’s Statement signed within 90 days of applying.",
+        "source": "med-or-apply"
+      },
+      "steps": {
+        "items": [
+          "Have your provider sign the Attending Provider’s Statement.",
+          "Create an account and apply online at ommpsystem.oregon.gov, or apply by mail.",
+          "Submit the application, the provider statement, a copy of your photo ID and the fee. Online applicants can print a 30-day receipt once the application is complete."
+        ],
+        "source": "med-or-apply"
+      },
+      "fee": {
+        "text": "$200 basic application fee when you grow for yourself or list no grower.",
+        "source": "med-or-fees"
+      },
+      "fee_help": {
+        "text": "Reduced fees with current proof: $60 with SNAP, $50 with the Oregon Health Plan, $20 with SSI, $20 for veterans. No fee for veterans with a service-connected total disability rating of at least 50 percent and a discharge under other than dishonorable conditions.",
+        "source": "med-or-fees"
+      },
+      "caregivers": {
+        "text": "You can designate a caregiver on your application; include a copy of the caregiver’s photo ID. The caregiver’s card is mailed to you.",
+        "source": "med-or-apply"
+      },
+      "note": {
+        "text": "Questions: the program’s customer service line is open 12:00 to 4:00 PM, Monday to Friday.",
+        "source": "med-or-apply"
+      },
+      "links": [
+        {
+          "label": "Apply online",
+          "url": "https://ommpsystem.oregon.gov/"
+        },
+        {
+          "label": "Fees and reduced fees",
+          "url": "https://www.oregon.gov/oha/ph/DiseasesConditions/ChronicDisease/MedicalMarijuanaProgram/Pages/OMMP-Fees.aspx"
+        },
+        {
+          "label": "Call the program",
+          "url": "tel:+19716731234"
+        }
+      ]
+    },
+    {
+      "state": "MA",
+      "agency": "Massachusetts Cannabis Control Commission, Medical Use of Marijuana Program",
+      "who": {
+        "text": "Massachusetts residents with a qualifying medical condition and a written recommendation from a Certifying Health Care Provider. Patients under 18 need two certifying providers, one a pediatrician or pediatric specialist, and a parent or guardian as caregiver.",
+        "source": "med-ma-register"
+      },
+      "steps": {
+        "items": [
+          "Get certified by a registered Certifying Health Care Provider.",
+          "Have a valid driver’s license or government-issued ID and proof of Massachusetts residency.",
+          "Apply online with the PIN the program sends you. Paper applications take considerably longer."
+        ],
+        "source": "med-ma-register"
+      },
+      "fee": {
+        "text": "No fee for a registration card. A replacement card is $10, and that fee can be waived for verified financial hardship. Providers set their own fees for certification visits.",
+        "source": "med-ma-register"
+      },
+      "caregivers": {
+        "text": "You may designate up to two Personal Caregivers when you register. If you name a second, one must be an immediate family member. A caregiver can serve up to five patients.",
+        "source": "med-ma-register"
+      },
+      "buy": {
+        "text": "At a Medical Marijuana Treatment Center, with your registration card and a valid ID. You can print a temporary card once approved. Patients may possess a 60-day supply, up to 10 ounces.",
+        "source": "med-ma-register"
+      },
+      "note": {
+        "text": "The Commission says medical marijuana is not covered by insurance.",
+        "source": "med-ma-faq"
+      },
+      "links": [
+        {
+          "label": "Register as a new patient",
+          "url": "https://masscannabiscontrol.com/patients-caregivers/for-new-patients/register-as-a-new-patient"
+        },
+        {
+          "label": "Call the program",
+          "url": "tel:+18338696820"
         }
       ]
     }
