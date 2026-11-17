@@ -407,8 +407,14 @@ def state_page(perm, score, directory, code, answers, sources, medical=None):
     cites = Cites(sources)
     card = score['states'].get(code)
     pack = next((s for s in directory['states'] if s['code'] == code), None)
+    place = 'the District of Columbia' if code == 'DC' else name
     body = [f'<p class="crumbs"><a href="index.html#map">All states</a> › {esc(name)}</p>',
-            f'<h1>{esc(name)} cannabis guide</h1>']
+            f'<h1>Is weed legal in {esc(place)}?</h1>']
+    lede = [f'{label}: {chip(perm, a["status"], q)} {esc(a["short"])}' for label, q, a in
+            (('Adult use', q, state_answers.get(q['id'])) if q['id'] == 'adult-use' else ('Medical use', q, state_answers.get(q['id']))
+             for q in perm['questions'] if q['id'] in ('adult-use', 'medical')) if a]
+    if lede:
+        body.append('<p class="lede">' + '<br>'.join(lede) + '</p>')
     link = perm['official_links'].get(code)
     if link:
         s = sources[link['source_id']]
@@ -433,8 +439,10 @@ def state_page(perm, score, directory, code, answers, sources, medical=None):
                 '<li><a href="index.html#map">Pick another state</a></li></ul></aside>')
     body.append(cites.render())
     answered = len(state_answers)
-    description = f'{name} cannabis law in plain language: {answered} of {len(perm["questions"])} questions answered from named sources, plus directory and local help.'
-    page, title = slug(name) + '.html', f'{name} cannabis guide'
+    short = {k: state_answers[k]['short'].rstrip('.') for k in ('adult-use', 'medical') if k in state_answers}
+    description = (f'Is weed legal in {place}? Adult use: {short.get("adult-use", "not yet reviewed")}. Medical: {short.get("medical", "not yet reviewed")}. '
+                   f'{answered} of {len(perm["questions"])} questions answered from named sources, plus how to get a medical card and local help.')
+    page, title = slug(name) + '.html', f'Is weed legal in {place}? {name} cannabis laws'
     ld = [breadcrumbs([('All states', '')], page, name)]
     faq = faq_node(perm, state_answers, page)
     if faq:
