@@ -53,7 +53,7 @@ p{max-width:70ch}.muted{color:var(--soft);font-size:.9rem}.crumbs{font-size:.9re
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);align-items:center;gap:24px;padding-top:34px;padding-bottom:46px}
 .hero h1{font-size:clamp(32px,5.2vw,52px);line-height:1.06;margin:.25em 0 .35em;max-width:15ch}.hero p{color:#e2eee6;font-size:1.08rem;margin:.4em 0}
 .hero .eyebrow{color:var(--gold);font-size:.82rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
-.hero .art .ship{display:block;width:100%;max-width:520px;height:auto;margin:0 auto;border-radius:22px;box-shadow:0 18px 38px rgba(0,0,0,.45)}
+.hero .art .shipbox{position:relative;max-width:520px;margin:0 auto}.hero .art .ship{display:block;width:100%;height:auto;border-radius:22px;box-shadow:0 18px 38px rgba(0,0,0,.45)}
 .ship .vessel{transform-origin:330px 540px;animation:bob 7s ease-in-out infinite}.ship .flag{filter:drop-shadow(0 0 7px rgba(150,225,235,.55)) drop-shadow(0 0 1px rgba(220,245,250,.9));transform-origin:330px 140px;animation:fly 3.2s ease-in-out infinite}.ship .swell{animation:swell 6s ease-in-out infinite}
 .ship .sailor{transform-box:fill-box;transform-origin:50% 100%;animation:cough 9s ease-in-out infinite}.ship .ember{fill:#ff7a1a;animation:ember 9s linear infinite}
 .ship .puff{opacity:0;transform-box:fill-box;transform-origin:center;animation:puff 3.3s ease-out infinite}.ship .hack{opacity:0;transform-box:fill-box;transform-origin:0 50%;animation:hack 9s ease-out infinite}
@@ -63,7 +63,7 @@ p{max-width:70ch}.muted{color:var(--soft);font-size:.9rem}.crumbs{font-size:.9re
 @keyframes puff{0%{opacity:0;transform:translate(0,0) scale(.5)}15%{opacity:.75}100%{opacity:0;transform:translate(14px,-46px) scale(2.6)}}
 @keyframes hack{0%,67%{opacity:0;transform:scale(.3)}72%{opacity:.9;transform:scale(1)}80%{opacity:.8;transform:scale(1.25) translateX(4px)}92%,100%{opacity:0;transform:scale(1.7) translate(10px,-8px)}}
 @keyframes word{0%,68%{opacity:0;transform:translateY(4px)}73%,86%{opacity:1;transform:translateY(0)}94%,100%{opacity:0;transform:translateY(-6px)}}
-.joke{border-left:6px solid var(--gold);background:#fffaf0;border-radius:12px;padding:14px 18px}.joke #joke-text{font-size:1.2rem;font-weight:600;margin:.2em 0}
+.yarn{position:relative;z-index:1;margin:-17% 3.5% 0;padding:10px 15px 13px;background:#fffaf0;color:var(--ink);border-radius:14px;filter:drop-shadow(0 8px 16px rgba(0,0,0,.5))}.yarn::before{content:"";position:absolute;left:42.6%;bottom:calc(100% - 1px);width:5.4%;aspect-ratio:1/1.9;background:#fffaf0;clip-path:polygon(30% 0,100% 100%,0 100%)}.yarnhead{display:flex;align-items:center;justify-content:space-between;gap:10px}.yarn h2{margin:0;font-size:.78rem;line-height:1.3;letter-spacing:.09em;text-transform:uppercase;color:var(--green2)}.yarnhead a{flex:none;font-size:.85rem;min-height:28px;display:inline-flex;align-items:center}.yarn #joke-text{max-width:none;margin:.1em 0 0;color:var(--ink);font-size:1.12rem;font-weight:600;line-height:1.35}
 .jokes{list-style:none;padding:0}.jokes li{padding:12px 0;border-bottom:1px solid #ddd}
 @keyframes bob{0%,100%{transform:translateY(0) rotate(-.7deg)}50%{transform:translateY(5px) rotate(.8deg)}}
 @keyframes fly{0%,100%{transform:skewY(-1.6deg) scaleX(1)}50%{transform:skewY(2deg) scaleX(.975)}}
@@ -126,7 +126,7 @@ footer.site h2{font-size:1rem;color:var(--gold);margin:0 0 .3em;text-transform:u
 footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:18px}footer.site ul{list-style:none;padding:0;margin:0}footer.site li a{display:inline-flex;min-height:36px;align-items:center}
 footer.site p{max-width:none;margin:18px 0 0;color:#a9bcb1}
 @media(max-width:900px){.tasks{grid-template-columns:repeat(3,minmax(0,1fr))}.mapbox{grid-template-columns:1fr;gap:6px}}
-@media(max-width:720px){.hero .wrap{grid-template-columns:1fr;padding-top:24px;padding-bottom:34px}.hero .art{order:-1}.hero .art .ship{max-width:420px;margin:0}}
+@media(max-width:720px){.hero .wrap{grid-template-columns:1fr;padding-top:24px;padding-bottom:34px}.hero .art{order:-1}.hero .art .shipbox{max-width:420px;margin:0}}
 @media(max-width:560px){header.site nav{margin-left:0;gap:0 16px}header.site .wrap{padding-bottom:4px}.tasks{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.task{padding:12px}
 .usmap{gap:3px}.tile{border-radius:4px}.glance a{grid-template-columns:1fr}.needs{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.need{padding:10px 11px}.rows li{grid-template-columns:1fr}.rows .meta{grid-column:1}}
 @media print{header.site nav,footer.site,select,label,.pick{display:none}}
@@ -256,10 +256,15 @@ def load_jokes():
     return {j['date']: j['text'] for j in data['jokes'] if j.get('approved')}
 
 
+# Shows the joke for the visitor's own date in the sailor's speech bubble, and on jokes.html the ones that have already
+# run. A day with no joke of its own keeps the one before it. Once the batch has run out the list starts over, one a
+# day, so the sailors are never left with nothing to say; only approved jokes are ever in the page.
 JOKE_SCRIPT = ('<script>(function(){var d=new Date(),t=d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2);'
-               'var j=JSON.parse(document.getElementById("jokes-data").textContent);'
-               'var box=document.getElementById("joke");if(box&&j[t]){document.getElementById("joke-text").textContent=j[t];box.hidden=false}'
-               'var rows=document.querySelectorAll("#joke-list li"),shown=0;for(var i=0;i<rows.length;i++)if(rows[i].getAttribute("data-date")<=t){rows[i].hidden=false;shown++}'
+               'var j=JSON.parse(document.getElementById("jokes-data").textContent),k=Object.keys(j).sort(),p=null,i;'
+               'function n(s){var a=s.split("-");return Math.round(Date.UTC(+a[0],a[1]-1,+a[2])/864e5)}'
+               'if(k.length&&t>k[k.length-1]){p=k[(n(t)-n(k[k.length-1])-1)%k.length]}else{for(i=0;i<k.length;i++)if(k[i]<=t)p=k[i]}'
+               'var box=document.getElementById("joke");if(box&&p){document.getElementById("joke-text").textContent=j[p];box.hidden=false}'
+               'var rows=document.querySelectorAll("#joke-list li"),shown=0;for(i=0;i<rows.length;i++)if(rows[i].getAttribute("data-date")<=t){rows[i].hidden=false;shown++}'
                'var none=document.getElementById("joke-none");if(none&&rows.length&&!shown)none.hidden=false})();</script>')
 
 
@@ -874,8 +879,20 @@ def ship_art():
         '</g></svg>')
 
 
+def joke_bubble(jokes):
+    """The joke of the day as a speech bubble in the home page picture: the sailor in the red bandana tells it and his
+    shipmate coughs. Owner's direction, November 17, 2026: the joke belongs in the picture, told by the two sailors, and
+    should be prominent. It is HTML laid over the foot of the picture (the water), not part of the drawing, so the words
+    wrap and are read aloud; the flag and the moon stay clear. Hidden until the script has a joke for today."""
+    if not jokes:
+        return ''
+    return ('<div class="yarn" id="joke" hidden><div class="yarnhead"><h2>Joke of the day</h2>'
+            '<a href="jokes.html">Earlier jokes</a></div><p id="joke-text"></p></div>')
+
+
 def home_page(perm, score, directory, answers, sources):
     names = perm['jurisdictions']
+    jokes = load_jokes()
     ordered = sorted(names, key=lambda c: names[c])
     jump = ''.join(f'<option value="{slug(names[c])}.html">{esc(names[c])}</option>' for c in ordered)
     hero = ('<section class="hero"><div class="wrap"><div class="copy">'
@@ -885,11 +902,10 @@ def home_page(perm, score, directory, answers, sources):
             '<form class="pick" id="pick"><label for="state-jump">Pick your state</label><div class="row">'
             f'<select id="state-jump" name="state"><option value="">Choose a state</option>{jump}</select><button type="submit">Go</button></div>'
             f'<p class="muted">Or tap your state on the <a href="#map">map below</a>. Checked as of {long_date(perm["as_of"])}.</p></form></div>'
-            f'<div class="art">{ship_art()}</div></div></section>')
+            f'<div class="art"><div class="shipbox">{ship_art()}{joke_bubble(jokes)}</div></div></div></section>')
 
-    jokes = load_jokes()
-    joke = ('<section class="block joke" id="joke" hidden><h2>Joke of the day</h2><p id="joke-text"></p>'
-            '<p class="muted"><a href="jokes.html">Earlier jokes</a></p></section>' + jokes_data(jokes) + JOKE_SCRIPT) if jokes else ''
+    # The joke itself is in the picture (joke_bubble); its data and the script that picks today's follow the first block.
+    joke = (jokes_data(jokes) + JOKE_SCRIPT) if jokes else ''
     body = ['<section class="block" id="tasks"><h2>What brings you here?</h2><div class="tasks">']
     for ic, title, desc, href in TASKS:
         body.append(f'<a class="task" href="{href}" data-track="task:{slug(title)}"><span class="ic">{icon(ic)}</span><strong>{esc(title)}</strong><span class="d">{esc(desc)}</span></a>')
