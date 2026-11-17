@@ -63,6 +63,8 @@ p{max-width:70ch}.muted{color:var(--soft);font-size:.9rem}.crumbs{font-size:.9re
 @keyframes puff{0%{opacity:0;transform:translate(0,0) scale(.5)}15%{opacity:.75}100%{opacity:0;transform:translate(14px,-46px) scale(2.6)}}
 @keyframes hack{0%,67%{opacity:0;transform:scale(.3)}72%{opacity:.9;transform:scale(1)}80%{opacity:.8;transform:scale(1.25) translateX(4px)}92%,100%{opacity:0;transform:scale(1.7) translate(10px,-8px)}}
 @keyframes word{0%,68%{opacity:0;transform:translateY(4px)}73%,86%{opacity:1;transform:translateY(0)}94%,100%{opacity:0;transform:translateY(-6px)}}
+.joke{border-left:6px solid var(--gold);background:#fffaf0;border-radius:12px;padding:14px 18px}.joke #joke-text{font-size:1.2rem;font-weight:600;margin:.2em 0}
+.jokes{list-style:none;padding:0}.jokes li{padding:12px 0;border-bottom:1px solid #ddd}
 @keyframes bob{0%,100%{transform:translateY(0) rotate(-.7deg)}50%{transform:translateY(5px) rotate(.8deg)}}
 @keyframes fly{0%,100%{transform:skewY(-1.6deg) scaleX(1)}50%{transform:skewY(2deg) scaleX(.975)}}
 @keyframes swell{0%,100%{transform:translateX(0)}50%{transform:translateX(-36px)}}
@@ -248,6 +250,35 @@ def dispensary_section(entry, cites, name):
             'for(var i=0;i<r.length;i++)r[i].hidden=q&&r[i].textContent.toLowerCase().indexOf(q)<0})})();</script></section>')
 
 
+def load_jokes():
+    """Jokes the owner has approved, as {ISO date: text} (data/jokes.json). Unapproved jokes are never published."""
+    data = json.loads((ROOT / 'data/jokes.json').read_text(encoding='utf-8'))
+    return {j['date']: j['text'] for j in data['jokes'] if j.get('approved')}
+
+
+JOKE_SCRIPT = ('<script>(function(){var d=new Date(),t=d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2);'
+               'var j=JSON.parse(document.getElementById("jokes-data").textContent);'
+               'var box=document.getElementById("joke");if(box&&j[t]){document.getElementById("joke-text").textContent=j[t];box.hidden=false}'
+               'var rows=document.querySelectorAll("#joke-list li"),shown=0;for(var i=0;i<rows.length;i++)if(rows[i].getAttribute("data-date")<=t){rows[i].hidden=false;shown++}'
+               'var none=document.getElementById("joke-none");if(none&&rows.length&&!shown)none.hidden=false})();</script>')
+
+
+def jokes_data(jokes):
+    return '<script type="application/json" id="jokes-data">' + json.dumps(jokes, ensure_ascii=False).replace('</', '<\\/') + '</script>'
+
+
+def jokes_page(jokes):
+    """The running list: every approved joke up to today, newest first. Future jokes stay hidden until their day."""
+    rows = ''.join(f'<li data-date="{d}" hidden><span class="muted">{long_date(d)}</span><br>{esc(jokes[d])}</li>' for d in sorted(jokes, reverse=True))
+    body = ['<p class="crumbs"><a href="index.html">Home</a> › Joke of the day</p>', '<h1>Joke of the day</h1>',
+            '<p class="lede">One cannabis joke a day. Today’s is on the <a href="index.html">home page</a>; the ones that already ran are below, newest first.</p>',
+            f'<ul class="jokes" id="joke-list">{rows}</ul>',
+            '<p class="muted" id="joke-none"' + ('' if not jokes else ' hidden') + '>No jokes have run yet. Check back tomorrow.</p>',
+            jokes_data(jokes), JOKE_SCRIPT]
+    return shell('Joke of the day', 'A cannabis joke every day, with the running list of the ones that already ran.', ''.join(body), 'jokes.html', 'the joke of the day page',
+                 ld=[breadcrumbs([('Home', '')], 'jokes.html', 'Joke of the day')])
+
+
 def load_coverage():
     """Who pays for medical cannabis (data/medical-coverage.json)."""
     return json.loads((ROOT / 'data/medical-coverage.json').read_text(encoding='utf-8'))
@@ -336,7 +367,7 @@ def shell(title, description, body, name, place, hero='', ld=None):
     family = ''.join(f'<li><a href="{esc(url)}">{esc(label)}</a></li>' for url, label, _, _ in FAMILY)
     foot = ('<footer class="site"><div class="wrap"><div class="cols">'
             '<nav aria-label="This site"><h2>This site</h2><ul><li><a href="index.html#map">Pick your state</a></li>'
-            '<li><a href="index.html#compare">Compare the law</a></li><li><a href="medical.html">Medical cards</a></li><li><a href="coverage.html">Medicaid and insurance</a></li><li><a href="help.html">Get help</a></li><li><a href="partners.html">Partners</a></li><li><a href="about.html">About and methods</a></li></ul></nav>'
+            '<li><a href="index.html#compare">Compare the law</a></li><li><a href="medical.html">Medical cards</a></li><li><a href="coverage.html">Medicaid and insurance</a></li><li><a href="help.html">Get help</a></li><li><a href="jokes.html">Joke of the day</a></li><li><a href="partners.html">Partners</a></li><li><a href="about.html">About and methods</a></li></ul></nav>'
             f'<nav aria-label="Our other sites"><h2>Our other sites</h2><ul>{family}</ul></nav>'
             '<nav aria-label="Corrections and data"><h2>Fix or reuse</h2><ul>'
             f'<li><a href="{esc(correction_url(place))}">Suggest a correction</a></li>'
@@ -856,6 +887,9 @@ def home_page(perm, score, directory, answers, sources):
             f'<p class="muted">Or tap your state on the <a href="#map">map below</a>. Checked as of {long_date(perm["as_of"])}.</p></form></div>'
             f'<div class="art">{ship_art()}</div></div></section>')
 
+    jokes = load_jokes()
+    joke = ('<section class="block joke" id="joke" hidden><h2>Joke of the day</h2><p id="joke-text"></p>'
+            '<p class="muted"><a href="jokes.html">Earlier jokes</a></p></section>' + jokes_data(jokes) + JOKE_SCRIPT) if jokes else ''
     body = ['<section class="block" id="tasks"><h2>What brings you here?</h2><div class="tasks">']
     for ic, title, desc, href in TASKS:
         body.append(f'<a class="task" href="{href}" data-track="task:{slug(title)}"><span class="ic">{icon(ic)}</span><strong>{esc(title)}</strong><span class="d">{esc(desc)}</span></a>')
@@ -863,6 +897,7 @@ def home_page(perm, score, directory, answers, sources):
     more = [f'<a href="help.html#{slug(n)}">{esc(n)}</a>' for n in needs_in_order(perm) if slug(n) not in linked]
     more.append(f'<a href="{OHIO_HOME}/knowledge.html">Learn the basics</a>')
     body.append('</div><p class="also">Also: ' + ' · '.join(more) + ' · <a href="help.html">All national help</a></p></section>')
+    body.append(joke)
 
     adult = next(q for q in perm['questions'] if q['id'] == 'adult-use')
     grid, legend = tile_map(perm, adult, answers, 'Map: adult use by state. Select a state to open its guide.')
@@ -913,6 +948,7 @@ def pages():
            'medical.html': medical_page(perm, med_data, medical, answers, sources, dispensaries),
            'coverage.html': coverage_page(perm, medical, sources),
            'partners.html': partners_page(perm, sources),
+           'jokes.html': jokes_page(load_jokes()),
            'help.html': help_page(perm, sources),
            'about.html': about_page(perm, score, directory, answers)}
     for q in perm['questions']:
@@ -932,7 +968,7 @@ def main(out_dir=None):
     out_dir.mkdir(parents=True, exist_ok=True)
     for name, text in built.items():
         (out_dir / name).write_text(text, encoding='utf-8')
-    print(f'Built national/: {len(built)} pages (home, help, about, medical cards, coverage, partners, {len(built) - 57} law comparisons, 51 states)')
+    print(f'Built national/: {len(built)} pages (home, help, about, medical cards, coverage, partners, jokes, {len(built) - 58} law comparisons, 51 states)')
 
 
 if __name__ == '__main__':
