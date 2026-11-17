@@ -207,6 +207,34 @@ def load_medical():
     return data, {p['state']: p for p in data['states']}
 
 
+def load_dispensaries():
+    """Regulator-published dispensary lists (data/medical-dispensaries.json), keyed by state code."""
+    data = json.loads((ROOT / 'data/medical-dispensaries.json').read_text(encoding='utf-8'))
+    return data, {s['state']: s for s in data['states']}
+
+
+def dispensary_section(entry, cites, name):
+    """The regulator's list as printed: name, address, phone, each row filterable by a typed city or name."""
+    src = entry['source']
+    dated = f', list dated {long_date(entry["list_date"])}' if entry.get('list_date') else ''
+    rows = []
+    for loc in entry['locations']:
+        extra = [loc[k] for k in ('phone',) if loc.get(k)]
+        if loc.get('county'):
+            extra.append(f'{loc["county"]} County')
+        if loc.get('opened'):
+            extra.append(f'open since {loc["opened"]}')
+        site = f' · <a href="{esc(loc["website"])}" target="_blank" rel="noopener">Website</a>' if loc.get('website') else ''
+        licensee = f' <span class="muted">({esc(loc["licensee"])})</span>' if loc.get('licensee') and loc['licensee'] != loc['name'] else ''
+        rows.append(f'<li><strong>{esc(loc["name"])}</strong>{licensee}<br>{esc(loc["address"])}<br><span class="muted">{esc(" · ".join(extra))}</span>{site}</li>')
+    return (f'<section class="medcard" id="dispensaries" aria-labelledby="dispensaries-h"><h2 id="dispensaries-h">Where to buy in {esc(name)}: {len(rows)} {esc(entry["label"])}</h2>'
+            f'<p class="muted">Copied from the regulator’s own list{dated}, retrieved {long_date(src["retrieved_on"])} {cites.mark([src["id"]])}. Call ahead: hours and openings change.</p>'
+            '<label for="disp-filter">Filter by city or name</label> <input id="disp-filter" type="search" autocomplete="off" style="font:inherit;min-height:44px;padding:6px 10px;border:1px solid #888;border-radius:8px;max-width:100%">'
+            f'<ul class="grid" id="disp-list">{"".join(rows)}</ul>'
+            '<script>(function(){var f=document.getElementById("disp-filter"),r=document.querySelectorAll("#disp-list li");f.addEventListener("input",function(){var q=f.value.trim().toLowerCase();'
+            'for(var i=0;i<r.length;i++)r[i].hidden=q&&r[i].textContent.toLowerCase().indexOf(q)<0})})();</script></section>')
+
+
 def load_coverage():
     """Who pays for medical cannabis (data/medical-coverage.json)."""
     return json.loads((ROOT / 'data/medical-coverage.json').read_text(encoding='utf-8'))
@@ -401,7 +429,7 @@ def glance(perm, state_answers, name):
     return (f'<section class="glance" id="glance" aria-label="{esc(name)} at a glance"><ul>' + ''.join(rows) + '</ul></section>')
 
 
-def state_page(perm, score, directory, code, answers, sources, medical=None):
+def state_page(perm, score, directory, code, answers, sources, medical=None, dispensaries=None):
     name = perm['jurisdictions'][code]
     state_answers = answers.get(code, {})
     cites = Cites(sources)
@@ -425,10 +453,14 @@ def state_page(perm, score, directory, code, answers, sources, medical=None):
     if code == 'OH':
         body.append(f'<p><strong>Ohio’s full guide lives at <a href="{OHIO_HOME}/">OhioWeed.org</a></strong>: business directory, dispensary finder, record clearing, advocacy and more.</p>')
     prog = (medical or {}).get(code)
+    shops = (dispensaries or {}).get(code)
     body.append('<nav class="onpage" aria-label="On this page">' + ('<a href="#medical-card">Get a medical card</a>' if prog else '')
+                + ('<a href="#dispensaries">Where to buy</a>' if shops else '')
                 + '<a href="#glance">At a glance</a><a href="#law">The law in detail</a><a href="#directory">Local help</a><a href="#sources">Sources</a></nav>')
     if prog:
         body.append(medical_section(prog, cites, name, state_answers.get('adult-use', {}).get('status') == 'medical-only'))
+    if shops:
+        body.append(dispensary_section(shops, cites, name))
     body.append(glance(perm, state_answers, name))
     body.append(law_section(perm, code, state_answers, cites, sources))
     body.append(pathway_section(code, name, directory['pathways'], card, pack))
@@ -526,7 +558,7 @@ def help_page(perm, sources):
                  ''.join(body), 'help.html', 'the help page', ld=[breadcrumbs([('Home', '')], 'help.html', 'Help by need')])
 
 
-def medical_page(perm, med_data, medical, answers, sources):
+def medical_page(perm, med_data, medical, answers, sources, dispensaries=None):
     """Medical cards state by state: medical-only states first, each with cost, visitors and a link to its full patient guide."""
     names = perm['jurisdictions']
     grid, legend = tile_map(perm, next(x for x in perm['questions'] if x['id'] == 'adult-use'), answers,
@@ -543,6 +575,8 @@ def medical_page(perm, med_data, medical, answers, sources):
         prog = medical[code]
         bits = [f'Cost: {prog["fee"]["text"]}' if prog.get('fee') else '', f'Visitors: {prog["visitors"]["text"]}' if prog.get('visitors') else '',
                 prog['note']['text'] if prog.get('note') and not prog.get('steps') else '']
+        if (dispensaries or {}).get(code):
+            bits.append(f'{len(dispensaries[code]["locations"])} {dispensaries[code]["label"]} listed')
         if not any(bits):
             bits = [f'Where patients buy: {prog["buy"]["text"]}' if prog.get('buy') else f'Who: {prog["who"]["text"]}']
         return (f'<a class="guide" href="{slug(names[code])}.html#medical-card"><strong>{esc(names[code])}</strong>'
@@ -758,15 +792,17 @@ def pages():
     med_data, medical = load_medical()
     sources.update({s['id']: s for s in med_data['sources']})
     sources.update({s['id']: s for s in load_coverage()['sources']})
+    disp_data, dispensaries = load_dispensaries()
+    sources.update({s['source']['id']: s['source'] for s in disp_data['states']})
     out = {'index.html': home_page(perm, score, directory, answers, sources),
-           'medical.html': medical_page(perm, med_data, medical, answers, sources),
+           'medical.html': medical_page(perm, med_data, medical, answers, sources, dispensaries),
            'coverage.html': coverage_page(perm, medical, sources),
            'help.html': help_page(perm, sources),
            'about.html': about_page(perm, score, directory, answers)}
     for q in perm['questions']:
         out[law_page_name(q['id'])] = law_page(perm, q, answers, sources)
     for code, name in perm['jurisdictions'].items():
-        out[slug(name) + '.html'] = state_page(perm, score, directory, code, answers, sources, medical)
+        out[slug(name) + '.html'] = state_page(perm, score, directory, code, answers, sources, medical, dispensaries)
     return out
 
 

@@ -1,0 +1,761 @@
+{
+ "schema_version": 1,
+ "as_of": "2026-11-17",
+ "purpose": "Licensed medical cannabis dispensaries in medical-only states, copied from each regulator's own published list. Names, addresses and phone numbers are as the regulator printed them, including any typing errors. A dispensary missing here may have opened after the list was retrieved.",
+ "states": [
+  {
+   "state": "KY",
+   "label": "dispensaries the Office of Medical Cannabis lists as open",
+   "list_date": "2026-10-16",
+   "source": {
+    "id": "disp-ky-open",
+    "kind": "regulator",
+    "scope": "state",
+    "publisher": "Kentucky Office of Medical Cannabis",
+    "title": "Find a dispensary: dispensaries open as of October 16, 2026",
+    "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+    "retrieved_on": "2026-11-16"
+   },
+   "locations": [
+    {
+     "name": "Ace 4 Target",
+     "licensee": "Ace 4 Target",
+     "address": "212 Wayne Dr, Richmond, KY 40475",
+     "opened": "August 14, 2026"
+    },
+    {
+     "name": "Speakeasy Dispensary - Bowling Green",
+     "licensee": "AR-MO-KY-MS Cannabis Ventures LLC",
+     "address": "2708 Scottsville Rd, Ste A, Bowling Green, KY 42104",
+     "opened": "June 5, 2026"
+    },
+    {
+     "name": "Barrio Capital Partners LLC",
+     "licensee": "Barrio Capital Partners LLC",
+     "address": "950 N Mulberry St, Suites 220A, 220B, and 220C, Elizabethtown, KY 42701",
+     "opened": "June 1, 2026"
+    },
+    {
+     "name": "BD Expansion, LLC",
+     "licensee": "BD Expansion, LLC",
+     "address": "1501-1641 Paris Pike, Georgetown, KY 42324",
+     "opened": "May 4, 2026"
+    },
+    {
+     "name": "Bluegrass Cannacare LLC",
+     "licensee": "Bluegrass Cannacare LLC",
+     "address": "6809 Burlington Pike, Florence, KY 41042",
+     "opened": "February 7, 2026"
+    },
+    {
+     "name": "Sunnyside Prestonsburg",
+     "licensee": "BSRKYAPP, LLC",
+     "address": "81 Glynview Plaza, Prestonsburg, KY 41653",
+     "opened": "October 13, 2026"
+    },
+    {
+     "name": "C3 Kentucky LLC",
+     "licensee": "C3 Kentucky LLC",
+     "address": "23 Country Drive, Wilder, KY 41076",
+     "opened": "August 17, 2026"
+    },
+    {
+     "name": "NuEra Frankfort",
+     "licensee": "Canntucky Ventures LLC",
+     "address": "325 Leonardwood Dr., Frankfort, KY 40601",
+     "opened": "January 30, 2026"
+    },
+    {
+     "name": "Blue Sage Cannabis Company",
+     "licensee": "CB Slugger, LLC",
+     "address": "172 Imperial Way, Nicholasville, KY 40356",
+     "opened": "January 29, 2026"
+    },
+    {
+     "name": "DHK KY LLC",
+     "licensee": "DHK KY LLC",
+     "address": "130 W Tiverton Way, Suite 100, Lexington, KY 40503",
+     "opened": "October 16, 2026"
+    },
+    {
+     "name": "Speakeasy Dispensary - Nortonville",
+     "licensee": "DPDMJF Cannabis Holding Company LLC",
+     "address": "140 N Hopkinsville St, Nortonville, KY 42442",
+     "opened": "February 20, 2026"
+    },
+    {
+     "name": "ERH KY LLC",
+     "licensee": "ERH KY LLC",
+     "address": "140 Faith Assembly Church Rd, London, KY 40741",
+     "opened": "May 5, 2026"
+    },
+    {
+     "name": "Grass Roots Dispensary",
+     "licensee": "Green4U LLC",
+     "address": "1220 Paris Rd, Mayfield, KY 42066",
+     "opened": "July 15, 2026"
+    },
+    {
+     "name": "Speakeasy Dispensary - Lexington",
+     "licensee": "KYLX Acquisition Company LLC",
+     "address": "1849 Alysheba Way, Lexington, KY 40509",
+     "opened": "January 15, 2026"
+    },
+    {
+     "name": "Nature Med",
+     "licensee": "KY Murray Dispensary",
+     "address": "1300 N 16th St, Murray, KY 42071",
+     "opened": "July 29, 2026"
+    },
+    {
+     "name": "Blue Sage - Oak Grove",
+     "licensee": "Mallard Club LLC",
+     "address": "2624 Walter Garrett Ln, Oak Grove, KY 42262",
+     "opened": "April 13, 2026"
+    },
+    {
+     "name": "Nature Med",
+     "licensee": "OM MED, LLC",
+     "address": "435 Jordon Dr, Paducah, KY 42001",
+     "opened": "April 23, 2026"
+    },
+    {
+     "name": "Kentucky Alternative Care",
+     "licensee": "Picasso Cannabis",
+     "address": "2401-B Bardstown Rd, Louisville, KY 40205",
+     "opened": "January 31, 2026"
+    },
+    {
+     "name": "Speakeasy Dispensary - Stanford",
+     "licensee": "R5 MedCann Investments LLC",
+     "address": "933 US HWY 27, Stanford, KY 40484",
+     "opened": "August 6, 2026"
+    },
+    {
+     "name": "Green Releaf Dispensary",
+     "licensee": "REED KY DISPENSARY",
+     "address": "1900 Murphy Ave, Ferguson, KY 42533",
+     "opened": "January 23, 2026"
+    },
+    {
+     "name": "Speakeasy Dispensary - Princeton",
+     "licensee": "River City Relief House LLC",
+     "address": "108 E. Main Street, Princeton, KY 42445",
+     "opened": "April 10, 2026"
+    },
+    {
+     "name": "The Post Dispensary",
+     "licensee": "Tree Soft LLC",
+     "address": "300 N. Main St, Beaver Dam, KY 42320",
+     "opened": "January 16, 2026"
+    },
+    {
+     "name": "Blue Sage Cannabis Dispensary",
+     "licensee": "WPBD Target, LLC",
+     "address": "617 W. Main St, Lebanon, KY 40033",
+     "opened": "August 28, 2026"
+    },
+    {
+     "name": "Nature Med",
+     "licensee": "YELLOW FLOWERS LLC",
+     "address": "635 Donaldson Hwy, Erlanger, KY 41018",
+     "opened": "May 11, 2026"
+    },
+    {
+     "name": "Speakeasy Dispensary - Ashland",
+     "licensee": "Z3 Medicinal Investments LLC",
+     "address": "3508 Winchester Ave, Ashland, KY 41101",
+     "opened": "May 7, 2026"
+    },
+    {
+     "name": "Speakeasy Dispensary - Corbin",
+     "licensee": "Zone 5 Retail Company",
+     "address": "1895 Cumberland Falls Highway, Corbin, KY 40701",
+     "opened": "July 9, 2026"
+    }
+   ]
+  },
+  {
+   "state": "ND",
+   "label": "registered dispensaries",
+   "source": {
+    "id": "disp-nd-locations",
+    "kind": "regulator",
+    "scope": "state",
+    "publisher": "North Dakota Health and Human Services",
+    "title": "Dispensary locations in North Dakota",
+    "url": "https://www.hhs.nd.gov/mm/dispensary-locations",
+    "retrieved_on": "2026-11-17"
+   },
+   "locations": [
+    {
+     "name": "Pure Dakota Health of Bismarck",
+     "address": "1207 Memorial Highway, Bismarck, ND",
+     "phone": "(701) 595-0995",
+     "website": "https://www.puredakotahealth.com"
+    },
+    {
+     "name": "Strive Life",
+     "address": "1809 13th Ave. North, Grand Forks, ND",
+     "phone": "(701) 335-6124",
+     "website": "https://www.StriveGrandForks.com"
+    },
+    {
+     "name": "Curaleaf",
+     "address": "310 Highway 2 East, Devils Lake, ND",
+     "phone": "(701) 864-2797",
+     "website": "https://nd.curaleaf.com"
+    },
+    {
+     "name": "Curaleaf",
+     "address": "1513 Business Loop East, Jamestown, ND",
+     "phone": "(701) 404-1897",
+     "website": "https://nd.curaleaf.com"
+    },
+    {
+     "name": "Curaleaf",
+     "address": "318 24th Street East, Dickinson, ND",
+     "phone": "(701) 660-3174",
+     "website": "https://nd.curaleaf.com"
+    },
+    {
+     "name": "Curaleaf",
+     "address": "2301 16th St. SW, Minot, ND",
+     "phone": "(701) 248-5310",
+     "website": "https://nd.curaleaf.com"
+    },
+    {
+     "name": "Pure Dakota Health",
+     "address": "4302 13th Ave. S. #19, Fargo, ND",
+     "phone": "(701) 807-1455",
+     "website": "https://www.puredakotahealth.com"
+    },
+    {
+     "name": "Pure Dakota Health of Williston",
+     "address": "120 26th Street East, Suite 500, Williston, ND",
+     "phone": "(701) 409-8800",
+     "website": "https://www.puredakotahealth.com"
+    }
+   ]
+  },
+  {
+   "state": "UT",
+   "label": "medical cannabis pharmacies",
+   "source": {
+    "id": "disp-ut-pharmacies",
+    "kind": "regulator",
+    "scope": "state",
+    "publisher": "Utah Department of Health and Human Services, Center for Medical Cannabis",
+    "title": "Medical cannabis pharmacy locations",
+    "url": "https://medicalcannabis.utah.gov/pharmacy-locations/",
+    "retrieved_on": "2026-11-16"
+   },
+   "locations": [
+    {
+     "name": "Beehive Farmacy - Brigham City",
+     "address": "870 W 1150 S, Suite C, Brigham City, 84302",
+     "phone": "(435) 919-0966",
+     "county": "Box Elder",
+     "website": "https://beehivefarmacy.com/"
+    },
+    {
+     "name": "Beehive Farmacy - Salt Lake City",
+     "address": "1991 S 3600 W, Salt Lake City, UT, 84104",
+     "phone": "(385) 212-0088",
+     "county": "Salt Lake",
+     "website": "https://beehivefarmacy.com/"
+    },
+    {
+     "name": "Bloc Pharmacy - South Jordan",
+     "address": "10392 South Jordan Gateway, South Jordan, UT, 84095",
+     "phone": "(385) 249-9400",
+     "county": "Salt Lake",
+     "website": "https://blocpharmacy.com/southjordan/"
+    },
+    {
+     "name": "Bloc Pharmacy - St. George",
+     "address": "1624 S Convention Center Drive, St. George, UT, 84790",
+     "phone": "(435) 216-3400",
+     "county": "Washington",
+     "website": "https://blocpharmacy.com/stgeorge/"
+    },
+    {
+     "name": "Boojum - Moab",
+     "address": "160 E 100 S, Ste 4, Moab, UT 84532",
+     "phone": "(435) 355-1469",
+     "county": "Grand",
+     "website": "http://www.boojummoab.com"
+    },
+    {
+     "name": "Curaleaf - Lehi",
+     "address": "3633 N Thanksgiving Way, Lehi, UT, 84043",
+     "phone": "(385) 338-8010",
+     "county": "Utah",
+     "website": "https://curaleaf.com/shop/utah/curaleaf-ut-lehi"
+    },
+    {
+     "name": "Curaleaf - Park City",
+     "address": "1351 Kearns Blvd, STE 110-B, Park City, UT, 84060",
+     "phone": "(435) 252-1052",
+     "county": "Summit",
+     "website": "https://curaleaf.com/shop/utah/curaleaf-ut-wellness-park"
+    },
+    {
+     "name": "Curaleaf - Springville",
+     "address": "484 S 1750 W, Unit F, Springville, UT, 84663",
+     "phone": "(385) 404-4422",
+     "county": "Utah",
+     "website": "https://ut.curaleaf.com/shop/utah/curaleaf-ut-springville"
+    },
+    {
+     "name": "Curaleaf - Provo",
+     "address": "222 N Draper Lane, Provo, UT, 84601",
+     "phone": "(801) 872-7447",
+     "county": "Utah",
+     "website": "https://curaleaf.com/shop/utah/curaleaf-ut-provo"
+    },
+    {
+     "name": "Dragonfly Wellness - Salt Lake City",
+     "address": "711 South State Street, Salt Lake City, UT 84111",
+     "phone": "(801) 413-6945",
+     "county": "Salt Lake",
+     "website": "https://www.dragonflywellness.com/"
+    },
+    {
+     "name": "Dragonfly Wellness - Price",
+     "address": "20 E Main Street, Price, UT 84501",
+     "phone": "(435) 637-3770",
+     "county": "Carbon",
+     "website": "https://www.dragonflywellness.com"
+    },
+    {
+     "name": "The Flower Shop - Logan",
+     "address": "2150 N Main, Suite 1, North Logan, UT, 84341",
+     "phone": "(385) 289-1800",
+     "county": "Cache",
+     "website": "https://theflowershopusa.com/logan"
+    },
+    {
+     "name": "The Flower Shop - Ogden",
+     "address": "3775 S Wall Ave, South Ogden, UT, 84405",
+     "phone": "(385) 289-1800",
+     "county": "Weber",
+     "website": "https://theflowershopusa.com/ogden"
+    },
+    {
+     "name": "The Forest",
+     "address": "6041 State St, Murray, UT 84107484",
+     "phone": "(385) 474-9505",
+     "county": "Salt Lake",
+     "website": "https://theforestutah.com/"
+    },
+    {
+     "name": "WholesomeCo Cannabis",
+     "address": "580 W 100 N Suite 1, West Bountiful, UT, 84010",
+     "phone": "(801) 695-4480",
+     "county": "Davis",
+     "website": "https://www.wholesome.co/"
+    },
+    {
+     "name": "Zion Medicinal",
+     "address": "301 S Main Street, Cedar City, UT, 84720",
+     "phone": "(435) 708-1630",
+     "county": "Iron",
+     "website": "https://www.zionmed.com/"
+    }
+   ]
+  },
+  {
+   "state": "WV",
+   "label": "dispensaries on the Office of Medical Cannabis list",
+   "source": {
+    "id": "disp-wv-list",
+    "kind": "regulator",
+    "scope": "state",
+    "publisher": "West Virginia Office of Medical Cannabis",
+    "title": "Dispensaries (PDF list)",
+    "url": "https://omc.wv.gov/media/188/download?inline",
+    "retrieved_on": "2026-11-17"
+   },
+   "locations": [
+    {
+     "name": "Barboursville Cannabis Company",
+     "address": "2A Mall Rd. Barboursville, WV 25504",
+     "county": "Cabell",
+     "phone": "(304) 949-8588"
+    },
+    {
+     "name": "Cannabist - Beckley",
+     "address": "300 Galleria Plz # 308 Beckley, WV 25801",
+     "county": "Raleigh",
+     "phone": "(304) 362-0518"
+    },
+    {
+     "name": "Greenlight - Beckley",
+     "address": "4244 Robert C Byrd Dr. Beckley, WV 25801",
+     "county": "Raleigh",
+     "phone": "(304) 860-1058"
+    },
+    {
+     "name": "The Landing Dispensary - Beckley",
+     "address": "2810 Robert C Byrd Dr. Beckley, WV 25801",
+     "county": "Raleigh",
+     "phone": "(681) 387-7849"
+    },
+    {
+     "name": "Trulieve - Beckley",
+     "address": "1000 N Eisenhower Dr. Beckley, WV 25801",
+     "county": "Raleigh",
+     "phone": "(681) 666-3143"
+    },
+    {
+     "name": "Country Grown Cannabis - Beckley",
+     "address": "93 Hickory Dr. Beckley, WV 25801",
+     "county": "Raleigh",
+     "phone": "(304) 256-0346"
+    },
+    {
+     "name": "Trulieve - Belle",
+     "address": "2700 E Dupont Ave. STE 9 Belle, WV 25015",
+     "county": "Kanawha",
+     "phone": "(304) 486-3049"
+    },
+    {
+     "name": "The Landing Dispensary - Bridgeport",
+     "address": "1048 Anmoore Rd Bridgeport, WV 26330",
+     "county": "Harrison",
+     "phone": "(681) 387-7847"
+    },
+    {
+     "name": "Zen Leaf - Buckhannon",
+     "address": "120 Buckhannon Xrds ST 104 Buckhannon, WV",
+     "county": "Upshur",
+     "phone": "(304) 470-0936"
+    },
+    {
+     "name": "Country Grown Cannabis - Charles Town",
+     "address": "672 E Washington St. Charles Town, WV 25414",
+     "county": "Jefferson",
+     "phone": "(304) 930-1456"
+    },
+    {
+     "name": "Greene Street Cannabis Co. - Charleston",
+     "address": "5126 Maccorkle Ave SE Charleston, WV 25304",
+     "county": "Kanawha",
+     "phone": "(304) 306-0679"
+    },
+    {
+     "name": "Kanacare Health - Charleston",
+     "address": "5703 Maccorkle Ave SE SUITE 110 Charleston, WV 25304",
+     "county": "Kanawha",
+     "phone": "(681) 205-2085"
+    },
+    {
+     "name": "The Landing Dispensary - Charleston",
+     "address": "4002 Maccorkle Ave SE SUITE 1 Charleston, WV 25304",
+     "county": "Kanawha",
+     "phone": "(681) 387-7842"
+    },
+    {
+     "name": "The Next Level Wellness #4 - Clarksburg",
+     "address": "742 W Pike St. Clarksburg, WV 26301",
+     "county": "Harrison",
+     "phone": "(304) 969-1633"
+    },
+    {
+     "name": "Zen Leaf - Clarksburg",
+     "address": "254 Emily Dr. Clarksburg, WV 26301",
+     "county": "Harrison",
+     "phone": "(681) 600-3110"
+    },
+    {
+     "name": "Greene Street Cannabis Co. - Cross Lanes",
+     "address": "125 Lakeview Dr. STE D Cross Lanes, WV 25313",
+     "county": "Kanawha",
+     "phone": "(304) 564-6017"
+    },
+    {
+     "name": "Country Grown Cannabis - Dunbar",
+     "address": "1005 Dunbar Ave. Dunbar, WV 25064",
+     "county": "Kanawha",
+     "phone": "(304) 768-3930"
+    },
+    {
+     "name": "Greenlight - Elkins",
+     "address": "6 CHemistry Dr. Elkins, WV 25801",
+     "county": "Randolph",
+     "phone": "(304) 621-6156"
+    },
+    {
+     "name": "NewLeaf - Fairmont",
+     "address": "161 Middletown Circle STE 2 Fairmont, WV 26554",
+     "county": "Marion",
+     "phone": "(304) 460-0707"
+    },
+    {
+     "name": "The Riverside Dispensary - Fairmont",
+     "address": "501 Merchant St. Fairmont, WV 26554",
+     "county": "Marion",
+     "phone": "(681) 404-6020"
+    },
+    {
+     "name": "Country Grown Cannabis Dispensary - Fairmont",
+     "address": "9685 Mall Loop # 3467 Fairmont, WV 26554",
+     "county": "Marion",
+     "phone": "(304) 816-3236"
+    },
+    {
+     "name": "Cannabist - Huntington",
+     "address": "917 3rd Ave Huntington, WV 25701",
+     "county": "Cabell",
+     "phone": "(681) 500-3501"
+    },
+    {
+     "name": "C by Country Grown - Huntington",
+     "address": "2689 5th Ave Huntington, WV 25702",
+     "county": "Cabell",
+     "phone": "(681) 378-6175"
+    },
+    {
+     "name": "Huntington Gardens - Huntington",
+     "address": "1338 3rd Ave Huntington WV 25701",
+     "county": "Cabell",
+     "phone": "(681) 378-2848"
+    },
+    {
+     "name": "NewLeaf - Huntington",
+     "address": "2018 3rd Ave Huntington, WV 25703",
+     "county": "Cabell",
+     "phone": "(304) 578-5266"
+    },
+    {
+     "name": "The Landing Dispensary - Huntington",
+     "address": "1824 US RT 60 Huntington, WV 25705",
+     "county": "Cabell",
+     "phone": "(681) 387-7844"
+    },
+    {
+     "name": "Trulieve - Huntington",
+     "address": "2013 5th Ave Huntington, WV 26201",
+     "phone": "(304) 699-0440"
+    },
+    {
+     "name": "Trulieve - Hurricane",
+     "address": "2 Putnam Village Dr. STE 2-3 Hurricane, WV 25526",
+     "county": "Putnam",
+     "phone": "(304) 779-8604"
+    },
+    {
+     "name": "The Landing Dispensary - Hurricane",
+     "address": "3761 Teays Valley Rd Hurricane, WV 25526",
+     "county": "Putnam",
+     "phone": "(681) 387-7833"
+    },
+    {
+     "name": "Country Grown Cannabis - Inwood",
+     "address": "791 Middleway Pike Unit 11A Inwood, WV 25428",
+     "county": "Berkeley",
+     "phone": "(304) 821-4347"
+    },
+    {
+     "name": "The Next Level Wellness #5 - Kingwood",
+     "address": "107B Pleasant Ave. Kingwood, WV 26537",
+     "county": "Preston",
+     "phone": "(304) 969-1633"
+    },
+    {
+     "name": "Greenlight - Lewisburg",
+     "address": "1747 Jefferson St. N Lewisburg, WV 24901",
+     "county": "Greenbrier",
+     "phone": "(304) 520-4175"
+    },
+    {
+     "name": "Country Grown Cannabis - Logan",
+     "address": "201 George Kostas Dr. Logan, WV 25601",
+     "county": "Logan",
+     "phone": "(304) 752-5244"
+    },
+    {
+     "name": "Country Grown Cannabis - Martinsburg",
+     "address": "1321 Edwin Miller Blvd. Martinsburg, WV 25404",
+     "county": "Berkeley",
+     "phone": "(304) 350-1054"
+    },
+    {
+     "name": "NewLeaf - Martinsburg",
+     "address": "776 Foxcroft Ave. Martinsburg, WV 25401",
+     "county": "Berkeley",
+     "phone": "(304) 578-5255"
+    },
+    {
+     "name": "Trulieve - Milton",
+     "address": "5 Perry Morris Square, US RT 60 Milton, WV 25541",
+     "county": "Cabell",
+     "phone": "(304) 635-5046"
+    },
+    {
+     "name": "Cannabist - Morgantown",
+     "address": "225 Don Knotts Blvd. Morgantown, WV 26501",
+     "county": "Monongalia",
+     "phone": "(304) 244-5178"
+    },
+    {
+     "name": "NewLeaf - Morgantown",
+     "address": "3227 Earl L Core Rd. Morgantown, WV 26508",
+     "county": "Monongalia",
+     "phone": "(304) 712-2030"
+    },
+    {
+     "name": "Trulieve - Morgantown",
+     "address": "525 Granville Sq. STE 101 Morgantown, WV 26501",
+     "county": "Monongalia",
+     "phone": "(304) 449-5304"
+    },
+    {
+     "name": "The Green House Dispensary - Morgantown",
+     "address": "2045 University Ave. B Morgantown, WV 26505",
+     "county": "Monongalia",
+     "phone": "(304) 212-5249"
+    },
+    {
+     "name": "The Landing Dispensary - Morgantown",
+     "address": "63 Don Knotts Blvd. Morgantown, WV 26501",
+     "county": "Monongalia",
+     "phone": "(681) 387-7832"
+    },
+    {
+     "name": "Trulieve - Morgantown",
+     "address": "1397 Earl L Core Rd. Morgantown, WV 26505",
+     "county": "Monongalia",
+     "phone": "(304) 381-6721"
+    },
+    {
+     "name": "Zen Leaf - Morgantown",
+     "address": "205 Venture Dr. Morgantown, WV 26508",
+     "county": "Monongalia",
+     "phone": "(681) 376-0011"
+    },
+    {
+     "name": "The Landing Dispensary - Parkersburg",
+     "address": "3914 Murdoch Ave. Unit 7, Parkersburg, WV 26105",
+     "county": "Wood",
+     "phone": "(681) 387-7845"
+    },
+    {
+     "name": "Trulieve - Parkersburg",
+     "address": "152 Park Center Dr., Parkersburg, WV 26101",
+     "county": "Wood",
+     "phone": "(304) 470-4833"
+    },
+    {
+     "name": "Verdant Creations - Parkersburg",
+     "address": "1255 ½-A Gihon Rd., Parkersburg, WV 26101",
+     "county": "Wood",
+     "phone": "(304) 679-1110"
+    },
+    {
+     "name": "Kanacare - Parkersburg",
+     "address": "808 Division St., Parkersburg, WV 26101",
+     "county": "Wood",
+     "phone": "(681) 229-1350"
+    },
+    {
+     "name": "Greenlight - Princeton",
+     "address": "112 Expert Circle, Princeton, WV 24740",
+     "county": "Mercer",
+     "phone": "(304) 250-3029"
+    },
+    {
+     "name": "The Orchard Dispensary - Romney",
+     "address": "22 Hannas Rd., Romney, WV 26757",
+     "county": "Hampshire",
+     "phone": "(304) 359-2050"
+    },
+    {
+     "name": "NewLeaf - South Charleston",
+     "address": "2390 Mountaineer Blvd., South Charleston, WV 25309",
+     "county": "Kanawha",
+     "phone": "(304) 896-9611"
+    },
+    {
+     "name": "Trulieve - South Charleston",
+     "address": "4701 MacCorkle Ave. SW #200, South Charleston, WV 25309",
+     "county": "Kanawha",
+     "phone": "(304) 407-2434"
+    },
+    {
+     "name": "Cannabist - St. Albans",
+     "address": "603 3rd Ave., St. Albans, WV 25177",
+     "county": "Kanawha",
+     "phone": "(304) 693-2705"
+    },
+    {
+     "name": "Greenlight Dispensary - Stollings",
+     "address": "351 Hanging Rock Hwy., Stollings, WV 25646",
+     "county": "Logan",
+     "phone": "(304) 953-2018"
+    },
+    {
+     "name": "Greenlight Dispensary - Summersville",
+     "address": "1007 Industrial Dr. Suite A, Summersville, WV 26651",
+     "county": "Nicholas",
+     "phone": "(681) 628-0275"
+    },
+    {
+     "name": "NewLeaf - Triadelphia",
+     "address": "355 Wayfarer Dr., Tridelphia, WV 26059",
+     "county": "Ohio",
+     "phone": "(304) 578-3231"
+    },
+    {
+     "name": "The Foundry - Weirton",
+     "address": "4075 Main St. B, Weirton, WV 26062",
+     "county": "Brooke",
+     "phone": "(304) 914-4090"
+    },
+    {
+     "name": "The Next Level Wellness - Weston",
+     "address": "166 Berlin Rd., Weston, WV 26452",
+     "county": "Lewis",
+     "phone": "(304) 969-1633"
+    },
+    {
+     "name": "Trulieve - Weston",
+     "address": "137 Staunton Dr., Weston, WV 26452",
+     "county": "Lewis",
+     "phone": "(304) 407-3288"
+    },
+    {
+     "name": "Zen Leaf - Westover",
+     "address": "871 Fairmont Rd., Westover, WV 26501",
+     "county": "Monongalia",
+     "phone": "(681) 376-0032"
+    },
+    {
+     "name": "Country Grown Cannabis - Wheeling",
+     "address": "2085 National Rd., Wheeling, WV 26003",
+     "county": "Kanawha",
+     "phone": "(304) 905-8019"
+    },
+    {
+     "name": "Zen Leaf - Wheeling",
+     "address": "231-237 Warwood Ave., Wheeling, WV 26003",
+     "county": "Ohio",
+     "phone": "(304) 907-4973"
+    },
+    {
+     "name": "Kanacare - White Hall",
+     "address": "101 Tygart Mall Loop #102A, White Hall, WV 26554",
+     "county": "Marion",
+     "phone": "(304) 816-3096"
+    },
+    {
+     "name": "Cannabist - Williamstown",
+     "address": "76 Thunder Rd., Williamstown, WV 26187",
+     "county": "Wood",
+     "phone": "(304) 440-9703"
+    }
+   ]
+  }
+ ]
+}
