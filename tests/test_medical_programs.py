@@ -15,9 +15,14 @@ COVERAGE = json.loads((ROOT / 'data/medical-coverage.json').read_text(encoding='
 
 
 class MedicalPrograms(unittest.TestCase):
-    def test_covers_exactly_the_medical_only_states(self):
-        medical_only = {a['state'] for a in PERM['answers'] if a['question'] == 'adult-use' and a['status'] == 'medical-only'}
-        self.assertEqual({p['state'] for p in DATA['states']}, medical_only)
+    def test_covers_every_medical_only_state_and_only_states_with_a_program(self):
+        status = {q: {a['state']: a['status'] for a in PERM['answers'] if a['question'] == q} for q in ('adult-use', 'medical')}
+        medical_only = {s for s, v in status['adult-use'].items() if v == 'medical-only'}
+        covered = [p['state'] for p in DATA['states']]
+        self.assertEqual(len(covered), len(set(covered)))
+        self.assertFalse(medical_only - set(covered))
+        for state in covered:
+            self.assertIn(status['medical'].get(state), ('allowed', 'medical-only'), state)
 
     def test_every_fact_names_an_existing_regulator_source(self):
         sources = {s['id']: s for s in DATA['sources']}
@@ -41,7 +46,7 @@ class MedicalPrograms(unittest.TestCase):
                 used.add(p['steps']['source'])
             self.assertTrue(p['links'], p['state'])
             for link in p['links']:
-                self.assertTrue(link['url'].startswith('https://') and link['label'].strip(), (p['state'], link))
+                self.assertTrue(link['url'].startswith(('https://', 'tel:+1')) and link['label'].strip(), (p['state'], link))
             self.assertTrue(any(k in p for k in FACTS + ('steps',)), p['state'])
         self.assertEqual(used, set(sources), 'every listed source is used')
 
@@ -59,8 +64,8 @@ class MedicalPrograms(unittest.TestCase):
             self.assertIn(f'{build_national.slug(PERM["jurisdictions"][p["state"]])}.html#medical-card', pages['medical.html'])
             for link in p['links']:
                 self.assertIn(build_national.esc(link['url']), page)
-        ohio = pages['ohio.html']
-        self.assertNotIn('id="medical-card"', ohio)
+        self.assertNotIn('id="medical-card"', pages['idaho.html'])
+        self.assertNotIn('Adults without a card cannot buy here', pages['ohio.html'])
         self.assertIn('href="medical.html"', pages['index.html'])
 
     def test_coverage_answers_cite_known_sources_and_render(self):

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "as_of": "2026-11-16",
-  "purpose": "How patients get a medical cannabis card in each medical-only state, from the regulator's own pages. Each fact names its source. A missing fact means the regulator page we checked did not state it; it does not mean the program lacks it.",
+  "purpose": "How patients get a medical cannabis card, state by state, from the regulator's own pages. Covers every medical-only state and, as they are reviewed, states where adults can also buy. Each fact names its source. A missing fact means the regulator page we checked did not state it; it does not mean the program lacks it.",
   "fields": [
     "who",
     "steps",
@@ -283,6 +283,15 @@
       "title": "Medical marijuana program",
       "url": "https://www.pa.gov/agencies/health/programs/medical-marijuana",
       "retrieved_on": "2026-11-16"
+    },
+    {
+      "id": "med-oh-obtain",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Ohio Department of Commerce, Division of Cannabis Control",
+      "title": "How to obtain medical marijuana",
+      "url": "https://com.ohio.gov/divisions-and-programs/cannabis-control/patients-caregivers/obtain-medical-marijuana",
+      "retrieved_on": "2026-11-17"
     }
   ],
   "states": [
@@ -922,6 +931,58 @@
         "text": "People in Medicaid, PACE/PACENET, CHIP, SNAP or WIC may qualify for a no-cost card instead of paying $50.",
         "source": "med-pa-patients"
       }
+    },
+    {
+      "state": "OH",
+      "agency": "Ohio Department of Commerce, Division of Cannabis Control",
+      "who": {
+        "text": "Patients with a qualifying condition, confirmed by a physician certified to recommend medical cannabis. The physician needs your Ohio driver’s license, Ohio ID card or another ID the Division approves.",
+        "source": "med-oh-obtain"
+      },
+      "steps": {
+        "items": [
+          "Visit a physician certified to recommend medical cannabis, in person or by telemedicine. The State Medical Board’s search lists them.",
+          "The physician enters the recommendation and your profile into the Patient & Caregiver Registry. Ask them to mark indigent or veteran status if it applies.",
+          "Open the registry’s email (subject “ACTION NEEDED: Ohio MMCP Registry - Account Registration”), follow the link and activate your card.",
+          "Buy at a licensed dispensary with your active card, active recommendation and government-issued ID.",
+          "Renew each year after a visit with your physician."
+        ],
+        "source": "med-oh-obtain"
+      },
+      "fee_help": {
+        "text": "Indigent status (for example SSDI or SSI enrollment) and veteran status are recorded at registration. Send proof to the Division if your physician did not mark it.",
+        "source": "med-oh-obtain"
+      },
+      "card_length": {
+        "text": "Renew every year. A recommendation can cover up to a 90-day supply with three refills, 360 days in all.",
+        "source": "med-oh-obtain"
+      },
+      "caregivers": {
+        "text": "A registered caregiver may possess and administer medical cannabis for the patients listed on their registration. The recommending physician registers the caregiver.",
+        "source": "med-oh-obtain"
+      },
+      "buy": {
+        "text": "Licensed dispensaries. The Division publishes a map of them.",
+        "source": "med-oh-obtain"
+      },
+      "links": [
+        {
+          "label": "Steps from the Division",
+          "url": "https://com.ohio.gov/divisions-and-programs/cannabis-control/patients-caregivers/obtain-medical-marijuana"
+        },
+        {
+          "label": "Find a certified physician",
+          "url": "https://med.ohio.gov/for-the-public/medical-marijuana/ctr-physician-search-1"
+        },
+        {
+          "label": "Ohio dispensary finder (OhioWeed.org)",
+          "url": "https://ohioweed.org/dispensaries.html"
+        },
+        {
+          "label": "Registry helpline: 1-833-464-6627",
+          "url": "tel:+18334646627"
+        }
+      ]
     }
   ]
 }

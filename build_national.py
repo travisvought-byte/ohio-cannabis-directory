@@ -212,14 +212,14 @@ def load_coverage():
     return json.loads((ROOT / 'data/medical-coverage.json').read_text(encoding='utf-8'))
 
 
-MEDICAL_ROWS = [('who', 'Who can get one'), ('fee', 'Cost'), ('card_length', 'How long it lasts'), ('caregivers', 'Caregivers'),
+MEDICAL_ROWS = [('who', 'Who can get one'), ('fee', 'Cost'), ('fee_help', 'Help with the cost'), ('card_length', 'How long it lasts'), ('caregivers', 'Caregivers'),
                 ('visitors', 'Visiting patients'), ('buy', 'Where patients buy')]
 
 
-def medical_section(prog, cites, name):
+def medical_section(prog, cites, name, medical_only=True):
     """How patients get a card, each fact marked with its regulator source."""
     out = [f'<section class="medcard" id="medical-card" aria-labelledby="medical-card-h"><h2 id="medical-card-h">How patients get a medical card in {esc(name)}</h2>',
-           f'<p class="muted">From {esc(prog["agency"])}. Adults without a card cannot buy here.</p>']
+           f'<p class="muted">From {esc(prog["agency"])}. ' + ('Adults without a card cannot buy here.' if medical_only else 'Adults 21 and older can also buy without a card; see the answers below.') + '</p>']
     if prog.get('note'):
         out.append(f'<p class="mednote">{esc(prog["note"]["text"])} {cites.mark([prog["note"]["source"]])}</p>')
     if prog.get('steps'):
@@ -228,7 +228,7 @@ def medical_section(prog, cites, name):
     rows = [(label, prog[key]) for key, label in MEDICAL_ROWS if prog.get(key)]
     if rows:
         out.append('<dl class="facts">' + ''.join(f'<dt>{esc(label)}</dt><dd>{esc(f["text"])} {cites.mark([f["source"]])}</dd>' for label, f in rows) + '</dl>')
-    missing = [label for key, label in MEDICAL_ROWS if not prog.get(key)]
+    missing = [label for key, label in MEDICAL_ROWS if not prog.get(key) and key != 'fee_help']
     if missing:
         out.append(f'<p class="muted">Not stated on the state pages we checked: {esc(", ".join(m.lower() for m in missing))}. Check with the state.</p>')
     out.append('<p><a href="coverage.html">Does Medicaid, Medicare or insurance pay for it?</a></p>')
@@ -422,7 +422,7 @@ def state_page(perm, score, directory, code, answers, sources, medical=None):
     body.append('<nav class="onpage" aria-label="On this page">' + ('<a href="#medical-card">Get a medical card</a>' if prog else '')
                 + '<a href="#glance">At a glance</a><a href="#law">The law in detail</a><a href="#directory">Local help</a><a href="#sources">Sources</a></nav>')
     if prog:
-        body.append(medical_section(prog, cites, name))
+        body.append(medical_section(prog, cites, name, state_answers.get('adult-use', {}).get('status') == 'medical-only'))
     body.append(glance(perm, state_answers, name))
     body.append(law_section(perm, code, state_answers, cites, sources))
     body.append(pathway_section(code, name, directory['pathways'], card, pack))
@@ -523,23 +523,23 @@ def medical_page(perm, med_data, medical, answers, sources):
     names = perm['jurisdictions']
     grid, legend = tile_map(perm, next(x for x in perm['questions'] if x['id'] == 'adult-use'), answers,
                             'Map: adult use and medical-only states. Select a state to open its guide.')
-    cites = Cites(sources)
+    only = {c for c in medical if answers.get(c, {}).get('adult-use', {}).get('status') == 'medical-only'}
     body = ['<p class="crumbs"><a href="index.html">Home</a> › Medical cards</p>',
             '<h1>Getting a medical cannabis card, state by state</h1>',
-            f'<p class="lede">In {len(medical)} states, medical cannabis is legal but adult use is not, so a state card is the only legal way to buy. '
+            f'<p class="lede">In {len(only)} states, medical cannabis is legal but adult use is not, so a state card is the only legal way to buy. '
             'Each state below links to its patient guide: who qualifies, the steps, the cost and whether visiting patients can buy. Every fact comes from the state regulator.</p>',
             f'<div class="mapbox"><div>{grid}{legend}</div><div><h2 style="margin-top:0">Medical-only states</h2><p class="muted">Blue on the map. '
             f'Patient facts checked {long_date(med_data["as_of"])}.</p></div></div>',
             '<div class="guides">']
-    for code in sorted(medical, key=lambda c: names[c]):
+    def guide(code):
         prog = medical[code]
         bits = [f'Cost: {prog["fee"]["text"]}' if prog.get('fee') else '', f'Visitors: {prog["visitors"]["text"]}' if prog.get('visitors') else '',
                 prog['note']['text'] if prog.get('note') and not prog.get('steps') else '']
         if not any(bits):
             bits = [f'Where patients buy: {prog["buy"]["text"]}' if prog.get('buy') else f'Who: {prog["who"]["text"]}']
-        body.append(f'<a class="guide" href="{slug(names[code])}.html#medical-card"><strong>{esc(names[code])}</strong>'
-                    + ''.join(f'<span>{esc(b)}</span>' for b in bits if b) + '</a>')
-    body.append('</div>')
+        return (f'<a class="guide" href="{slug(names[code])}.html#medical-card"><strong>{esc(names[code])}</strong>'
+                + ''.join(f'<span>{esc(b)}</span>' for b in bits if b) + '</a>')
+    body.append(''.join(guide(c) for c in sorted(only, key=lambda c: names[c])) + '</div>')
     limited = sorted(c for c in names if answers.get(c, {}).get('medical', {}).get('status') == 'limited')
     if limited:
         body.append('<h2>States with narrow programs</h2><p>These states allow only low-THC oil or CBD for certain conditions. Open a state to read its answer and source.</p><ul class="pills" style="list-style:none;padding:0">'
@@ -547,7 +547,8 @@ def medical_page(perm, med_data, medical, answers, sources):
     body.append('<h2>Paying for it</h2><p>Medicaid, Medicare and insurance generally do not pay for medical cannabis, but some states cut the card fee. '
                 '<a href="coverage.html">See who pays and where the card costs less</a>.</p>')
     body.append('<h2>States where adults can buy</h2><p>Every adult-use state also has a medical program, often with lower taxes or higher limits for patients. '
-                '<a href="law-medical.html">See every state’s medical program on one page</a>.</p>')
+                'Patient guides so far:</p><div class="guides">' + ''.join(guide(c) for c in sorted(set(medical) - only, key=lambda c: names[c]))
+                + '</div><p><a href="law-medical.html">See every state’s medical program on one page</a>.</p>')
     body.append('<p class="muted">Summaries of state regulator pages, each linked on the state’s page. Not medical or legal advice. A blank fact means the state page we checked did not say.</p>')
     title = 'How to get a medical cannabis card in each state'
     return shell(title, 'How patients get a medical cannabis card in each medical-only state: who qualifies, steps, cost and visiting-patient rules, from state regulators.',
