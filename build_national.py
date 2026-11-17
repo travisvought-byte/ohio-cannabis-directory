@@ -53,7 +53,12 @@ p{max-width:70ch}.muted{color:var(--soft);font-size:.9rem}.crumbs{font-size:.9re
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);align-items:center;gap:24px;padding-top:34px;padding-bottom:46px}
 .hero h1{font-size:clamp(32px,5.2vw,52px);line-height:1.06;margin:.25em 0 .35em;max-width:15ch}.hero p{color:#e2eee6;font-size:1.08rem;margin:.4em 0}
 .hero .eyebrow{color:var(--gold);font-size:.82rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
-.hero .art img{display:block;width:100%;max-width:460px;height:auto;margin:0 auto;border-radius:18px;box-shadow:0 16px 34px rgba(0,0,0,.35)}
+.hero .art .ship{display:block;width:100%;max-width:520px;height:auto;margin:0 auto;border-radius:22px;box-shadow:0 18px 38px rgba(0,0,0,.45)}
+.ship .vessel{transform-origin:330px 540px;animation:bob 7s ease-in-out infinite}.ship .flag{filter:drop-shadow(0 0 7px rgba(150,225,235,.55)) drop-shadow(0 0 1px rgba(220,245,250,.9));transform-origin:330px 140px;animation:fly 3.2s ease-in-out infinite}.ship .swell{animation:swell 6s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-.7deg)}50%{transform:translateY(5px) rotate(.8deg)}}
+@keyframes fly{0%,100%{transform:skewY(-1.6deg) scaleX(1)}50%{transform:skewY(2deg) scaleX(.975)}}
+@keyframes swell{0%,100%{transform:translateX(0)}50%{transform:translateX(-36px)}}
+@media (prefers-reduced-motion:reduce){.ship .vessel,.ship .flag,.ship .swell{animation:none}}
 .pick{background:#fff;color:var(--ink);border-radius:14px;padding:14px 16px 16px;margin-top:22px;max-width:520px;box-shadow:0 12px 30px rgba(0,0,0,.2)}
 .pick label{display:block;font-weight:800;margin-bottom:6px}.pick .row{display:flex;gap:8px}.pick select{flex:1;min-width:0;font-size:1.05rem}
 .pick button{font:inherit;font-weight:800;min-height:48px;padding:0 22px;border:0;border-radius:8px;background:var(--gold);color:#221c08;cursor:pointer}
@@ -111,7 +116,7 @@ footer.site h2{font-size:1rem;color:var(--gold);margin:0 0 .3em;text-transform:u
 footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:18px}footer.site ul{list-style:none;padding:0;margin:0}footer.site li a{display:inline-flex;min-height:36px;align-items:center}
 footer.site p{max-width:none;margin:18px 0 0;color:#a9bcb1}
 @media(max-width:900px){.tasks{grid-template-columns:repeat(3,minmax(0,1fr))}.mapbox{grid-template-columns:1fr;gap:6px}}
-@media(max-width:720px){.hero .wrap{grid-template-columns:1fr;padding-top:24px;padding-bottom:34px}.hero .art{order:-1}.hero .art img{max-width:340px;margin:0}}
+@media(max-width:720px){.hero .wrap{grid-template-columns:1fr;padding-top:24px;padding-bottom:34px}.hero .art{order:-1}.hero .art .ship{max-width:420px;margin:0}}
 @media(max-width:560px){header.site nav{margin-left:0;gap:0 16px}header.site .wrap{padding-bottom:4px}.tasks{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.task{padding:12px}
 .usmap{gap:3px}.tile{border-radius:4px}.glance a{grid-template-columns:1fr}.needs{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.need{padding:10px 11px}.rows li{grid-template-columns:1fr}.rows .meta{grid-column:1}}
 @media print{header.site nav,footer.site,select,label,.pick{display:none}}
@@ -763,6 +768,54 @@ def guide_link(code, name):
     return (OHIO_HOME + '/') if code == 'OH' else slug(name) + '.html'
 
 
+def ship_art():
+    """The home page picture: the site flag flying from a ship under the moon. The flag is the logo itself (scripts/build_reefer_flag.py)."""
+    stars = ''.join(f'<circle cx="{x}" cy="{y}" r="{r}"/>' for x, y, r in (
+        (42, 60, 1.4), (96, 210, 1), (150, 38, 1.2), (236, 92, 1), (285, 30, 1.5), (60, 300, 1), (200, 250, 1.2), (598, 300, 1.2),
+        (640, 262, 1), (560, 340, 1), (318, 172, 1), (24, 150, 1.2), (250, 180, .9), (628, 380, 1.1), (180, 330, 1)))
+    sail = 'fill="url(#sail)" stroke="#6f8791" stroke-width="1.6"'
+    return (
+        f'<svg class="ship" viewBox="0 0 660 620" role="img" aria-label="{esc(LOGO_ALT)}, flying as a flag from the mast of a ship at sea under a full moon" xmlns="http://www.w3.org/2000/svg">'
+        '<defs><radialGradient id="sky" cx="22%" cy="24%" r="95%"><stop offset="0" stop-color="#1c4a5c"/><stop offset=".45" stop-color="#0c2531"/><stop offset="1" stop-color="#04090d"/></radialGradient>'
+        '<radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#fff6cf" stop-opacity=".55"/><stop offset="1" stop-color="#fff6cf" stop-opacity="0"/></radialGradient>'
+        '<linearGradient id="sail" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#46565e"/><stop offset="1" stop-color="#141b1f"/></linearGradient>'
+        '<linearGradient id="hull" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1d14"/><stop offset="1" stop-color="#0a0705"/></linearGradient>'
+        '<linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0f3a47"/><stop offset="1" stop-color="#03141a"/></linearGradient>'
+        '<clipPath id="frame"><rect width="660" height="620" rx="22"/></clipPath></defs>'
+        '<g clip-path="url(#frame)"><rect width="660" height="620" fill="url(#sky)"/>'
+        f'<g fill="#e9f3f5" opacity=".8">{stars}</g>'
+        '<circle cx="138" cy="138" r="150" fill="url(#glow)"/><circle cx="138" cy="138" r="58" fill="#f6ecc4"/>'
+        '<g fill="#d9cc9c" opacity=".55"><circle cx="120" cy="120" r="11"/><circle cx="158" cy="150" r="7"/><circle cx="128" cy="165" r="5"/></g>'
+        '<path d="M0 520 Q60 508 120 520 T240 520 T360 520 T480 520 T600 520 T720 520 V620 H0Z" fill="#0b2f3a" opacity=".9"/>'
+        '<g class="vessel">'
+        # masts, yards and rigging
+        '<g stroke="#120c08" stroke-linecap="round" fill="none"><path d="M330 500V40" stroke-width="9"/><path d="M196 500V236" stroke-width="7"/><path d="M462 500V262" stroke-width="7"/>'
+        '<path d="M560 452 L636 404" stroke-width="7"/><path d="M248 262H412M236 372H424M140 300H252M132 398H260M410 318H514M402 410H522" stroke-width="5"/>'
+        '<g stroke-width="1.3" opacity=".8"><path d="M330 60L96 470M330 60L196 236M330 60L462 262M330 110L636 404M462 262L636 404M196 236L96 470M330 250L560 452"/></g></g>'
+        # sails, filled by the wind toward the bow
+        f'<g {sail}><path d="M250 266H410Q434 318 420 368H240Q262 318 250 266Z"/><path d="M238 376H422Q448 432 432 482H228Q252 432 238 376Z"/>'
+        '<path d="M142 304H250Q268 350 256 394H134Q152 350 142 304Z"/><path d="M134 402H258Q278 446 264 484H126Q146 446 134 402Z"/>'
+        '<path d="M412 322H512Q530 366 518 406H404Q422 366 412 322Z"/><path d="M404 414H520Q540 452 528 486H396Q416 452 404 414Z"/>'
+        '<path d="M470 300L628 408L474 446Q496 372 470 300Z"/></g>'
+        '<g stroke="#000" stroke-width="1" opacity=".35" fill="none"><path d="M300 266Q318 318 296 368M360 266Q380 318 362 368M300 376Q322 432 296 482M362 376Q386 432 366 482"/></g>'
+        # hull with stern castle, gun ports and lantern
+        '<path d="M70 448H150V470H520L572 444L548 520Q470 560 330 560Q170 560 96 524Z" fill="url(#hull)" stroke="#000" stroke-width="2"/>'
+        '<path d="M70 448H150V470H520L572 444" fill="none" stroke="#c9a24a" stroke-width="3" opacity=".7"/>'
+        '<path d="M92 500Q330 532 556 492" fill="none" stroke="#c9a24a" stroke-width="2" opacity=".45"/>'
+        '<g fill="#f2c14e"><rect x="88" y="476" width="12" height="12" rx="2"/><rect x="112" y="478" width="12" height="12" rx="2"/><circle cx="74" cy="436" r="5"/></g>'
+        '<g fill="#000"><rect x="190" y="490" width="16" height="13" rx="2"/><rect x="250" y="494" width="16" height="13" rx="2"/><rect x="310" y="496" width="16" height="13" rx="2"/>'
+        '<rect x="370" y="495" width="16" height="13" rx="2"/><rect x="430" y="491" width="16" height="13" rx="2"/><rect x="486" y="485" width="16" height="13" rx="2"/></g>'
+        '<path d="M74 448V432" stroke="#120c08" stroke-width="3"/>'
+        # the flag
+        f'<g class="flag"><image href="{ASSETS}flag-900.webp" x="330" y="14" width="318" height="261" preserveAspectRatio="none"/></g>'
+        '<circle cx="330" cy="38" r="7" fill="#c9a24a"/></g>'
+        # water in front of the hull
+        '<path class="swell" d="M-60 548 Q0 530 60 548 T180 548 T300 548 T420 548 T540 548 T660 548 T780 548 V620 H-60Z" fill="url(#sea)"/>'
+        '<g fill="none" stroke="#9fd3d6" stroke-width="2" stroke-linecap="round" opacity=".5"><path d="M84 540q24-12 48 0M220 552q24-12 48 0M470 546q24-12 48 0M560 566q20-10 40 0M40 584q22-10 44 0M330 590q22-10 44 0"/></g>'
+        '<path d="M110 540 Q138 548 132 600 L150 600 Q150 548 166 540Z" fill="#f6ecc4" opacity=".12"/>'
+        '</g></svg>')
+
+
 def home_page(perm, score, directory, answers, sources):
     names = perm['jurisdictions']
     ordered = sorted(names, key=lambda c: names[c])
@@ -774,8 +827,7 @@ def home_page(perm, score, directory, answers, sources):
             '<form class="pick" id="pick"><label for="state-jump">Pick your state</label><div class="row">'
             f'<select id="state-jump" name="state"><option value="">Choose a state</option>{jump}</select><button type="submit">Go</button></div>'
             f'<p class="muted">Or tap your state on the <a href="#map">map below</a>. Checked as of {long_date(perm["as_of"])}.</p></form></div>'
-            f'<div class="art"><picture><source type="image/webp" srcset="{ASSETS}logo-960.webp">'
-            f'<img src="{ASSETS}logo-960.jpg" alt="{esc(LOGO_ALT)}" width="960" height="640" fetchpriority="high"></picture></div></div></section>')
+            f'<div class="art">{ship_art()}</div></div></section>')
 
     body = ['<section class="block" id="tasks"><h2>What brings you here?</h2><div class="tasks">']
     for ic, title, desc, href in TASKS:
