@@ -711,7 +711,7 @@ def coverage_page(perm, medical, sources):
 
 TASKS = [
     ('scale', 'Is it legal where I am?', 'Adult use and medical rules, every state', 'law-adult-use.html'),
-    ('card', 'Get a medical card', 'How patients apply, in the 15 medical-only states', 'medical.html'),
+    ('card', 'Get a medical card', 'How patients apply, state by state', 'medical.html'),
     ('bag', 'Where can I buy?', 'Stores, dispensaries and who may shop', 'law-buying.html'),
     ('sprout', 'Can I grow my own?', 'Home-grow rules by state', 'law-home-grow.html'),
     ('plane', 'Traveling', 'What the TSA says about flying', 'help.html#travel'),

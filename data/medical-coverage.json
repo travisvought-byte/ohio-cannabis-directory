@@ -3,43 +3,148 @@
   "as_of": "2026-11-17",
   "purpose": "Who pays for medical cannabis: what Medicaid, Medicare, private insurance, the VA and the IRS say, each from the agency's own page. Source ids beginning med- are in data/medical-programs.json and us-va-marijuana is in data/state-permissions.json.",
   "sources": [
-    {"id": "us-cms-substance-bei", "kind": "government", "scope": "national", "publisher": "Centers for Medicare & Medicaid Services, Innovation Center", "title": "Substance Access Beneficiary Engagement Incentive", "url": "https://www.cms.gov/priorities/innovation/substance-access-beneficiary-engagement-incentive", "retrieved_on": "2026-11-17"},
-    {"id": "us-irs-pub502", "kind": "government", "scope": "national", "publisher": "Internal Revenue Service", "title": "Publication 502, Medical and Dental Expenses: Controlled Substances", "url": "https://www.irs.gov/publications/p502", "retrieved_on": "2026-11-17"},
-    {"id": "us-fda-cannabis-drugs", "kind": "government", "scope": "national", "publisher": "U.S. Food and Drug Administration", "title": "FDA and Cannabis: Research and Drug Approval Process", "url": "https://www.fda.gov/news-events/public-health-focus/fda-and-cannabis-research-and-drug-approval-process", "retrieved_on": "2026-11-17"}
+    {
+      "id": "us-cms-substance-bei",
+      "kind": "government",
+      "scope": "national",
+      "publisher": "Centers for Medicare & Medicaid Services, Innovation Center",
+      "title": "Substance Access Beneficiary Engagement Incentive",
+      "url": "https://www.cms.gov/priorities/innovation/substance-access-beneficiary-engagement-incentive",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "us-irs-pub502",
+      "kind": "government",
+      "scope": "national",
+      "publisher": "Internal Revenue Service",
+      "title": "Publication 502, Medical and Dental Expenses: Controlled Substances",
+      "url": "https://www.irs.gov/publications/p502",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "us-fda-cannabis-drugs",
+      "kind": "government",
+      "scope": "national",
+      "publisher": "U.S. Food and Drug Administration",
+      "title": "FDA and Cannabis: Research and Drug Approval Process",
+      "url": "https://www.fda.gov/news-events/public-health-focus/fda-and-cannabis-research-and-drug-approval-process",
+      "retrieved_on": "2026-11-17"
+    }
   ],
   "items": [
-    {"id": "medicaid", "question": "Does Medicaid pay for medical cannabis?", "short": "No.",
-     "points": [
-       {"text": "State medical cannabis programs that address the question say no. Mississippi’s program states that neither Medicaid nor private insurance will pay for medical cannabis or medical cannabis products.", "source": "med-ms-faq"},
-       {"text": "Being on Medicaid can still lower the cost of the card itself in some states. See the card fee help below.", "source": null}
-     ]},
-    {"id": "medicare", "question": "Does Medicare pay for medical cannabis?", "short": "Not for dispensary cannabis. A small hemp pilot exists.",
-     "points": [
-       {"text": "Since April 1, 2026, care organizations in two Medicare Innovation Center models (ACO REACH and the Enhancing Oncology Model) may give eligible patients up to $500 a year of hemp products. A third model, LEAD, joins on January 1, 2027.", "source": "us-cms-substance-bei"},
-       {"text": "The pilot covers only federally legal hemp products with no more than 0.3% delta-9 THC, and no inhalable products. CMS says it does not override the Controlled Substances Act or authorize Schedule I substances.", "source": "us-cms-substance-bei"},
-       {"text": "Medicare does not pay for the products, and patients cannot buy retail products and send in receipts. Only patients already aligned to a participating organization can receive them, after a physician decides it is appropriate.", "source": "us-cms-substance-bei"}
-     ]},
-    {"id": "insurance", "question": "Does private health insurance pay?", "short": "Generally no.",
-     "points": [
-       {"text": "Alabama’s Medical Cannabis Commission states that health insurers are not required to cover the cost of medical cannabis.", "source": "med-al-faq"},
-       {"text": "Mississippi’s program states that private insurance will not pay for medical cannabis or medical cannabis products.", "source": "med-ms-faq"},
-       {"text": "Your own plan’s documents are the final word. Ask the plan before you assume either way.", "source": null}
-     ]},
-    {"id": "va", "question": "Does the VA pay, and does using it affect VA benefits?", "short": "The VA does not pay. Veterans are not denied benefits for using it.",
-     "points": [
-       {"text": "The VA says veterans will not be denied VA benefits because of marijuana use, and encourages veterans to discuss marijuana use with their VA providers.", "source": "us-va-marijuana"},
-       {"text": "The VA says its clinicians may not recommend medical marijuana or complete the forms for state programs, its pharmacies may not fill prescriptions for it, and the VA will not pay for it from any source.", "source": "us-va-marijuana"},
-       {"text": "Some states cut or waive the card fee for veterans. See the card fee help below.", "source": null}
-     ]},
-    {"id": "fda-drugs", "question": "Are any cannabis medicines covered like regular prescriptions?", "short": "Four FDA-approved drugs are prescription medicines.",
-     "points": [
-       {"text": "The FDA has approved one cannabis-derived drug, Epidiolex (cannabidiol), and three synthetic cannabis-related drugs: Marinol and Syndros (dronabinol) and Cesamet (nabilone). They are available only with a prescription from a licensed healthcare provider.", "source": "us-fda-cannabis-drugs"},
-       {"text": "The FDA has not approved cannabis itself, or any other cannabis or CBD product on the market, to treat any disease or condition.", "source": "us-fda-cannabis-drugs"},
-       {"text": "Because those four are prescription drugs, ask your doctor and your plan’s pharmacy benefit whether one is covered for you.", "source": null}
-     ]},
-    {"id": "taxes", "question": "Can I deduct medical cannabis as a medical expense?", "short": "The IRS says no.",
-     "points": [
-       {"text": "IRS Publication 502 says you cannot include in medical expenses amounts you pay for controlled substances, such as marijuana, that are not legal under federal law, even if state law has legalized them.", "source": "us-irs-pub502"}
-     ]}
+    {
+      "id": "medicaid",
+      "question": "Does Medicaid pay for medical cannabis?",
+      "short": "No.",
+      "points": [
+        {
+          "text": "Maryland’s Cannabis Administration states that the cost of medical cannabis is not reimbursable by any private or public insurance plan, Medicare or Medicaid, or through veterans’ covered plans.",
+          "source": "med-md-patients"
+        },
+        {
+          "text": "State medical cannabis programs that address the question say no. Mississippi’s program states that neither Medicaid nor private insurance will pay for medical cannabis or medical cannabis products.",
+          "source": "med-ms-faq"
+        },
+        {
+          "text": "Being on Medicaid can still lower the cost of the card itself in some states. See the card fee help below.",
+          "source": null
+        }
+      ]
+    },
+    {
+      "id": "medicare",
+      "question": "Does Medicare pay for medical cannabis?",
+      "short": "Not for dispensary cannabis. A small hemp pilot exists.",
+      "points": [
+        {
+          "text": "Maryland’s Cannabis Administration states that the cost of medical cannabis is not reimbursable by any private or public insurance plan, Medicare or Medicaid, or through veterans’ covered plans.",
+          "source": "med-md-patients"
+        },
+        {
+          "text": "Since April 1, 2026, care organizations in two Medicare Innovation Center models (ACO REACH and the Enhancing Oncology Model) may give eligible patients up to $500 a year of hemp products. A third model, LEAD, joins on January 1, 2027.",
+          "source": "us-cms-substance-bei"
+        },
+        {
+          "text": "The pilot covers only federally legal hemp products with no more than 0.3% delta-9 THC, and no inhalable products. CMS says it does not override the Controlled Substances Act or authorize Schedule I substances.",
+          "source": "us-cms-substance-bei"
+        },
+        {
+          "text": "Medicare does not pay for the products, and patients cannot buy retail products and send in receipts. Only patients already aligned to a participating organization can receive them, after a physician decides it is appropriate.",
+          "source": "us-cms-substance-bei"
+        }
+      ]
+    },
+    {
+      "id": "insurance",
+      "question": "Does private health insurance pay?",
+      "short": "Generally no.",
+      "points": [
+        {
+          "text": "Maryland’s Cannabis Administration states that the cost of medical cannabis is not reimbursable by any private or public insurance plan, Medicare or Medicaid, or through veterans’ covered plans.",
+          "source": "med-md-patients"
+        },
+        {
+          "text": "Alabama’s Medical Cannabis Commission states that health insurers are not required to cover the cost of medical cannabis.",
+          "source": "med-al-faq"
+        },
+        {
+          "text": "Mississippi’s program states that private insurance will not pay for medical cannabis or medical cannabis products.",
+          "source": "med-ms-faq"
+        },
+        {
+          "text": "Your own plan’s documents are the final word. Ask the plan before you assume either way.",
+          "source": null
+        }
+      ]
+    },
+    {
+      "id": "va",
+      "question": "Does the VA pay, and does using it affect VA benefits?",
+      "short": "The VA does not pay. Veterans are not denied benefits for using it.",
+      "points": [
+        {
+          "text": "The VA says veterans will not be denied VA benefits because of marijuana use, and encourages veterans to discuss marijuana use with their VA providers.",
+          "source": "us-va-marijuana"
+        },
+        {
+          "text": "The VA says its clinicians may not recommend medical marijuana or complete the forms for state programs, its pharmacies may not fill prescriptions for it, and the VA will not pay for it from any source.",
+          "source": "us-va-marijuana"
+        },
+        {
+          "text": "Some states cut or waive the card fee for veterans. See the card fee help below.",
+          "source": null
+        }
+      ]
+    },
+    {
+      "id": "fda-drugs",
+      "question": "Are any cannabis medicines covered like regular prescriptions?",
+      "short": "Four FDA-approved drugs are prescription medicines.",
+      "points": [
+        {
+          "text": "The FDA has approved one cannabis-derived drug, Epidiolex (cannabidiol), and three synthetic cannabis-related drugs: Marinol and Syndros (dronabinol) and Cesamet (nabilone). They are available only with a prescription from a licensed healthcare provider.",
+          "source": "us-fda-cannabis-drugs"
+        },
+        {
+          "text": "The FDA has not approved cannabis itself, or any other cannabis or CBD product on the market, to treat any disease or condition.",
+          "source": "us-fda-cannabis-drugs"
+        },
+        {
+          "text": "Because those four are prescription drugs, ask your doctor and your plan’s pharmacy benefit whether one is covered for you.",
+          "source": null
+        }
+      ]
+    },
+    {
+      "id": "taxes",
+      "question": "Can I deduct medical cannabis as a medical expense?",
+      "short": "The IRS says no.",
+      "points": [
+        {
+          "text": "IRS Publication 502 says you cannot include in medical expenses amounts you pay for controlled substances, such as marijuana, that are not legal under federal law, even if state law has legalized them.",
+          "source": "us-irs-pub502"
+        }
+      ]
+    }
   ]
 }

@@ -292,6 +292,51 @@
       "title": "How to obtain medical marijuana",
       "url": "https://com.ohio.gov/divisions-and-programs/cannabis-control/patients-caregivers/obtain-medical-marijuana",
       "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-nj-mcp",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "New Jersey Cannabis Regulatory Commission",
+      "title": "Medicinal Cannabis Program",
+      "url": "https://www.nj.gov/cannabis/medicinalcannabis/",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-dc-patients",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "District of Columbia Alcoholic Beverage and Cannabis Administration",
+      "title": "Medical cannabis patients",
+      "url": "https://abca.dc.gov/page/medical-cannabis-patients",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-wa-faq",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Washington State Department of Health",
+      "title": "Medical cannabis: patient frequently asked questions",
+      "url": "https://doh.wa.gov/you-and-your-family/cannabis/medical-cannabis/patient-information/frequently-asked-questions",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-nm-apply",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "New Mexico Department of Health, Medical Cannabis Program",
+      "title": "Medical Cannabis Program application process",
+      "url": "https://www.nmhealth.org/about/mcp/svcs/",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-md-patients",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Maryland Cannabis Administration",
+      "title": "Patients",
+      "url": "https://cannabis.maryland.gov/Pages/patients.aspx",
+      "retrieved_on": "2026-11-17"
     }
   ],
   "states": [
@@ -981,6 +1026,177 @@
         {
           "label": "Registry helpline: 1-833-464-6627",
           "url": "tel:+18334646627"
+        }
+      ]
+    },
+    {
+      "state": "NJ",
+      "agency": "New Jersey Cannabis Regulatory Commission, Medicinal Cannabis Program",
+      "who": {
+        "text": "Patients diagnosed with a qualifying condition by a New Jersey healthcare practitioner registered with the program, with whom they have a bona fide relationship.",
+        "source": "med-nj-mcp"
+      },
+      "steps": {
+        "items": [
+          "Check whether your healthcare provider takes part in the program, or find a participating practitioner.",
+          "The practitioner diagnoses a qualifying condition and orders up to 85 grams for each 30-day period.",
+          "Enroll with the Medicinal Cannabis Program and get your ID card.",
+          "Fill the order at a state-licensed Alternative Treatment Center or dispensary."
+        ],
+        "source": "med-nj-mcp"
+      },
+      "fee": {
+        "text": "Digital ID cards are free. A physical card costs $10.",
+        "source": "med-nj-mcp"
+      },
+      "card_length": {
+        "text": "Two years. Renewal reminders go out 60 days before the card expires.",
+        "source": "med-nj-mcp"
+      },
+      "caregivers": {
+        "text": "Patients who cannot travel to a dispensary may designate and register caregivers to buy for them.",
+        "source": "med-nj-mcp"
+      },
+      "buy": {
+        "text": "State-licensed Alternative Treatment Centers and dispensaries.",
+        "source": "med-nj-mcp"
+      },
+      "links": [
+        {
+          "label": "Medicinal Cannabis Program",
+          "url": "https://www.nj.gov/cannabis/medicinalcannabis/"
+        }
+      ]
+    },
+    {
+      "state": "DC",
+      "agency": "District of Columbia Alcoholic Beverage and Cannabis Administration (ABCA)",
+      "who": {
+        "text": "District residents of any age and non-residents 21 or older. Residents 21 and older can self-certify; residents 20 and younger need a healthcare practitioner’s recommendation, and minors need an adult caregiver.",
+        "source": "med-dc-patients"
+      },
+      "steps": {
+        "items": [
+          "Create an account in ABCA’s system and submit the registration.",
+          "District residents get a temporary digital registration right away, good for 90 days while staff review it.",
+          "A two-year digital registration follows a successful review."
+        ],
+        "source": "med-dc-patients"
+      },
+      "fee": {
+        "text": "Free for District residents. Non-residents pay $10 to $100, depending on the period they choose.",
+        "source": "med-dc-patients"
+      },
+      "card_length": {
+        "text": "Two years for District residents. Non-residents choose a period from 30 to 365 days.",
+        "source": "med-dc-patients"
+      },
+      "caregivers": {
+        "text": "A caregiver can be affiliated with an adult or minor resident patient.",
+        "source": "med-dc-patients"
+      },
+      "visitors": {
+        "text": "Non-residents 21 or older can register by self-certifying. Patients from jurisdictions with reciprocity can also use their home registration; ABCA lists the eligible jurisdictions.",
+        "source": "med-dc-patients"
+      },
+      "buy": {
+        "text": "Licensed medical cannabis retailers. Registered patients can buy up to 8 ounces in a rolling 30 days.",
+        "source": "med-dc-patients"
+      },
+      "links": [
+        {
+          "label": "Patient registration",
+          "url": "https://abca.dc.gov/page/medical-cannabis-patients"
+        }
+      ]
+    },
+    {
+      "state": "WA",
+      "agency": "Washington State Department of Health",
+      "who": {
+        "text": "Any patient, regardless of age, whose healthcare practitioner authorizes cannabis as medically appropriate. Minors need a parent or legal guardian as their designated provider.",
+        "source": "med-wa-faq"
+      },
+      "fee": {
+        "text": "At least $1 for the recognition card. Stores may charge more.",
+        "source": "med-wa-faq"
+      },
+      "card_length": {
+        "text": "An authorization can be good for up to a year for an adult and up to six months for a minor.",
+        "source": "med-wa-faq"
+      },
+      "caregivers": {
+        "text": "A designated provider 21 or older, with their own authorization form from the patient’s practitioner, can buy and grow for the patient.",
+        "source": "med-wa-faq"
+      },
+      "buy": {
+        "text": "Medically endorsed retail stores. Patients with a recognition card pay no excise or sales tax on Department of Health medical products there, and may hold up to three times the recreational limits.",
+        "source": "med-wa-faq"
+      },
+      "links": [
+        {
+          "label": "Patient questions and answers",
+          "url": "https://doh.wa.gov/you-and-your-family/cannabis/medical-cannabis/patient-information/frequently-asked-questions"
+        }
+      ]
+    },
+    {
+      "state": "NM",
+      "agency": "New Mexico Department of Health, Medical Cannabis Program",
+      "steps": {
+        "items": [
+          "Visit your medical provider. Only a medical provider can start an application, new or renewal.",
+          "Register or log in to the Online Patient Portal.",
+          "Complete the application online with your New Mexico ID or driver’s license. Your electronic card is available as soon as you are approved."
+        ],
+        "source": "med-nm-apply"
+      },
+      "fee": {
+        "text": "None. The Department of Health charges no fee to enroll, take part or use the patient portal.",
+        "source": "med-nm-apply"
+      },
+      "links": [
+        {
+          "label": "How to apply",
+          "url": "https://www.nmhealth.org/about/mcp/svcs/"
+        }
+      ]
+    },
+    {
+      "state": "MD",
+      "agency": "Maryland Cannabis Administration",
+      "who": {
+        "text": "Anyone living in Maryland whose provider recommends medical cannabis for a qualifying medical condition.",
+        "source": "med-md-patients"
+      },
+      "steps": {
+        "items": [
+          "Create an account at Maryland OneStop and verify your email.",
+          "Complete the patient application online, with your documents ready to upload.",
+          "After approval, you can order a patient ID card."
+        ],
+        "source": "med-md-patients"
+      },
+      "fee": {
+        "text": "$25 for the patient ID card, ordered after approval.",
+        "source": "med-md-patients"
+      },
+      "caregivers": {
+        "text": "A patient may name one caregiver aged 21 or older. Minor patients must have at least one caregiver who is a parent or guardian, and may have up to four.",
+        "source": "med-md-patients"
+      },
+      "buy": {
+        "text": "Licensed Maryland dispensaries.",
+        "source": "med-md-patients"
+      },
+      "links": [
+        {
+          "label": "Patient registration",
+          "url": "https://cannabis.maryland.gov/Pages/patients.aspx"
+        },
+        {
+          "label": "Maryland OneStop",
+          "url": "https://onestop.md.gov/"
         }
       ]
     }
