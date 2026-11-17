@@ -472,6 +472,114 @@
       "title": "New patient questions",
       "url": "https://masscannabiscontrol.com/new-patients/new-patient-faqs",
       "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-az-renewal",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Arizona Department of Health Services",
+      "title": "Registry identification card renewal fact sheet",
+      "url": "https://www.azdhs.gov/documents/licensing/medical-marijuana/mmj-card-renewal-fact-sheet.pdf",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-az-patient",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Arizona Department of Health Services",
+      "title": "Qualifying patients fact sheet",
+      "url": "https://www.azdhs.gov/documents/licensing/medical-marijuana/mm-patient-factsheet.pdf",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-nv-faq",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Nevada Division of Public and Behavioral Health",
+      "title": "Medical Marijuana Patient Cardholder Registry: questions",
+      "url": "https://www.dpbh.nv.gov/regulatory/medical-marijuana-patient-cardholder-registry/faqs/",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-mi-register",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Michigan Cannabis Regulatory Agency",
+      "title": "How do I register as a patient (over age 18) with the Michigan Medical Marijuana Program?",
+      "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-do-i-register-as-a-patient-over-age-18-with-the-michigan-medical-marijuana-program-mmmp",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-ct-mmp",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Connecticut Department of Consumer Protection",
+      "title": "Medical Marijuana Program",
+      "url": "https://portal.ct.gov/cannabis/medical-marijuana-program",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-ct-register",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Connecticut Department of Consumer Protection",
+      "title": "Patient registration process",
+      "url": "https://portal.ct.gov/DCP/Medical-Marijuana-Program/Patient-Registration-Process",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-ri-mmp",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Rhode Island Department of Health",
+      "title": "Medical Marijuana Program",
+      "url": "https://health.ri.gov/medical-marijuana-0",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-mt-cardholder",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Montana Department of Revenue, Cannabis Control Division",
+      "title": "Cardholder information",
+      "url": "https://revenue.mt.gov/cannabis/cardholder-information",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-mn-register",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Minnesota Department of Health",
+      "title": "How to become a medical cannabis patient",
+      "url": "https://health.state.mn.us/people/cannabis/patients/registration.html",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-ak-registry",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Alaska Department of Health",
+      "title": "Medical marijuana registry",
+      "url": "https://health.alaska.gov/en/education/drugs-and-alcohol/marijuana/medical-marijuana/",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-ak-packet",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Alaska Department of Health, Health Analytics and Vital Records",
+      "title": "Medical marijuana registry application packet",
+      "url": "https://health.alaska.gov/media/ocjibnfh/medicalmarijuana.pdf",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-de-apply",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Delaware Office of the Marijuana Commissioner",
+      "title": "Patients and caregivers application process",
+      "url": "https://omc.delaware.gov/medical/index.shtml?dc=appProc",
+      "retrieved_on": "2026-11-17"
     }
   ],
   "states": [
@@ -1697,6 +1805,364 @@
         {
           "label": "Call the program",
           "url": "tel:+18338696820"
+        }
+      ]
+    },
+    {
+      "state": "AZ",
+      "agency": "Arizona Department of Health Services, Medical Marijuana Program",
+      "steps": {
+        "items": [
+          "Get a current physician certification.",
+          "Have a current photograph and a signed, dated Patient Attestation Form.",
+          "Apply through the Individual Licensing Portal, where you can also track the application and view, download and print your electronic card."
+        ],
+        "source": "med-az-renewal"
+      },
+      "fee": {
+        "text": "$150 for a qualifying patient application. A minor patient application, which includes the caregiver, is $350. Renewals cost the same as new applications.",
+        "source": "med-az-renewal"
+      },
+      "fee_help": {
+        "text": "$75 if you are eligible for SNAP and submit current documentation; $275 for a minor patient application with SNAP.",
+        "source": "med-az-renewal"
+      },
+      "card_length": {
+        "text": "Two years. You cannot renew more than 90 days before the card expires.",
+        "source": "med-az-renewal"
+      },
+      "caregivers": {
+        "text": "A designated caregiver application is $200. If the patient’s card expires, the caregiver’s card is voided.",
+        "source": "med-az-renewal"
+      },
+      "buy": {
+        "text": "A patient may purchase up to 2.5 ounces of medical marijuana in any 14-day window. The portal shows your purchase history.",
+        "source": "med-az-patient"
+      },
+      "links": [
+        {
+          "label": "Individual Licensing Portal",
+          "url": "https://individual-licensing.azdhs.gov"
+        },
+        {
+          "label": "Medical Marijuana Program",
+          "url": "https://azdhs.gov/licensing/medical-marijuana"
+        },
+        {
+          "label": "Call the program",
+          "url": "tel:+16023641793"
+        }
+      ]
+    },
+    {
+      "state": "NV",
+      "agency": "Nevada Division of Public and Behavioral Health, Medical Marijuana Patient Cardholder Registry",
+      "who": {
+        "text": "People with a qualifying condition, including anxiety disorder, autism spectrum disorder, autoimmune disease, cancer, glaucoma, nausea, seizures, and severe or chronic pain. Any provider licensed to prescribe and in good standing with their Nevada board can sign the provider statement.",
+        "source": "med-nv-faq"
+      },
+      "steps": {
+        "items": [
+          "Register as a cardholder on the online registry and upload your Nevada driver’s license or ID.",
+          "Download and print the application and have your provider complete the Attending Healthcare Provider Statement.",
+          "Upload the completed application and pay online. You can also request a paper application."
+        ],
+        "source": "med-nv-faq"
+      },
+      "fee": {
+        "text": "$50 for a one-year registration or $100 for two years. The registry says the fee cannot be waived or paid in installments, and insurance does not cover it.",
+        "source": "med-nv-faq"
+      },
+      "card_length": {
+        "text": "One or two years. Your provider sets the term on the provider statement.",
+        "source": "med-nv-faq"
+      },
+      "caregivers": {
+        "text": "You add a caregiver to your account after you register. For a child under 18, call the registry.",
+        "source": "med-nv-faq"
+      },
+      "note": {
+        "text": "Cardholders may grow at home only in listed cases, such as living more than 25 miles from a dispensary or being unable to travel to one.",
+        "source": "med-nv-faq"
+      },
+      "links": [
+        {
+          "label": "Online registry",
+          "url": "https://mmportal.nv.gov/Account/Login"
+        },
+        {
+          "label": "Registry questions",
+          "url": "https://www.dpbh.nv.gov/regulatory/medical-marijuana-patient-cardholder-registry/faqs/"
+        },
+        {
+          "label": "Call the registry",
+          "url": "tel:+17756877594"
+        }
+      ]
+    },
+    {
+      "state": "MI",
+      "agency": "Michigan Cannabis Regulatory Agency, Michigan Medical Marijuana Program",
+      "who": {
+        "text": "Michigan residents with a medical evaluation, within the last six months, from an active Michigan physician who certifies the medical need.",
+        "source": "med-mi-register"
+      },
+      "steps": {
+        "items": [
+          "Get a medical evaluation and physician certification.",
+          "Without a caregiver: create a secure online account and apply online.",
+          "With a caregiver: mail a paper application packet with the physician certification form, proof of Michigan residency and proof of the caregiver’s identity."
+        ],
+        "source": "med-mi-register"
+      },
+      "fee": {
+        "text": "$40 application fee.",
+        "source": "med-mi-register"
+      },
+      "caregivers": {
+        "text": "Patients who have or want a caregiver must apply on paper, with a copy of the caregiver’s state-issued driver license or ID.",
+        "source": "med-mi-register"
+      },
+      "links": [
+        {
+          "label": "Michigan Medical Marijuana Program",
+          "url": "https://www.michigan.gov/mmp"
+        },
+        {
+          "label": "How to register",
+          "url": "https://www.michigan.gov/cra/faq/program-list/applicant-questions/how-do-i-register-as-a-patient-over-age-18-with-the-michigan-medical-marijuana-program-mmmp"
+        }
+      ]
+    },
+    {
+      "state": "CT",
+      "agency": "Connecticut Department of Consumer Protection, Medical Marijuana Program",
+      "who": {
+        "text": "Patients whose physician, physician assistant or advanced practice registered nurse certifies a qualifying medical condition. Only that provider can start the application.",
+        "source": "med-ct-register"
+      },
+      "steps": {
+        "items": [
+          "See your physician, physician assistant or advanced practice registered nurse, who certifies you to the Department. Give them an email address and phone number.",
+          "Submit proof of identity and proof of Connecticut residency with your online registration.",
+          "If your certification says you need a primary caregiver, the caregiver must register and be approved before you get your certificate."
+        ],
+        "source": "med-ct-register"
+      },
+      "fee": {
+        "text": "No fee for patients or caregivers to register.",
+        "source": "med-ct-mmp"
+      },
+      "visitors": {
+        "text": "Since October 1, 2026, patients and caregivers registered for medical cannabis in another state or jurisdiction may purchase medical cannabis in Connecticut.",
+        "source": "med-ct-mmp"
+      },
+      "buy": {
+        "text": "At a dispensary facility or hybrid retailer. Registered patients buy tax-free, can buy up to 5 ounces, and get priority entry at hybrid retailers.",
+        "source": "med-ct-mmp"
+      },
+      "links": [
+        {
+          "label": "Register for a card",
+          "url": "https://portal.ct.gov/cannabis/knowledge-base/articles/mmp/register-for-a-medical-marijuana-card"
+        },
+        {
+          "label": "Patient questions",
+          "url": "https://portal.ct.gov/cannabis/mmppatientfaq"
+        }
+      ]
+    },
+    {
+      "state": "RI",
+      "agency": "Rhode Island Department of Health, Medical Marijuana Program",
+      "who": {
+        "text": "Patients with an approved condition, including cancer, glaucoma, HIV, hepatitis C, autism spectrum disorder, PTSD (18 or older), or a condition causing severe chronic pain, severe nausea, seizures or wasting. The practitioner’s written certification must include a physical examination, not a telemedicine visit.",
+        "source": "med-ri-mmp"
+      },
+      "steps": {
+        "items": [
+          "Get a written certification from your practitioner after a physical examination.",
+          "Apply through the Department of Health’s online portal.",
+          "Say on the application whether you plan to grow for yourself."
+        ],
+        "source": "med-ri-mmp"
+      },
+      "fee": {
+        "text": "No fee for a patient, caregiver or authorized purchaser application.",
+        "source": "med-ri-mmp"
+      },
+      "card_length": {
+        "text": "One year from the date of issuance.",
+        "source": "med-ri-mmp"
+      },
+      "caregivers": {
+        "text": "A patient can have one primary caregiver, who must be at least 21 and live in Rhode Island, and one authorized purchaser, who must be 21, pass a criminal identification check, and may live out of state.",
+        "source": "med-ri-mmp"
+      },
+      "note": {
+        "text": "Applications for patients receiving chemotherapy or eligible for hospice care are expedited and approved within 72 hours.",
+        "source": "med-ri-mmp"
+      },
+      "links": [
+        {
+          "label": "Medical Marijuana Program",
+          "url": "https://health.ri.gov/medical-marijuana-0"
+        }
+      ]
+    },
+    {
+      "state": "MT",
+      "agency": "Montana Department of Revenue, Cannabis Control Division",
+      "who": {
+        "text": "Montana residents with a recommendation signed by a Montana-licensed physician (MD or DO) within 60 days of applying. Minors need two physician approvals unless the physician is an oncologist, neurologist or epileptologist.",
+        "source": "med-mt-cardholder"
+      },
+      "steps": {
+        "items": [
+          "Get the Physician Statement signed.",
+          "Have a recent photo and proof of Montana residency, such as a Montana driver’s license or state ID.",
+          "Apply through the TransAction Portal. All applications must be completed there; you can print a temporary card."
+        ],
+        "source": "med-mt-cardholder"
+      },
+      "fee": {
+        "text": "$20 for a new or renewal registration; $10 for a replacement card. Fees are non-refundable.",
+        "source": "med-mt-cardholder"
+      },
+      "card_length": {
+        "text": "Up to one year from approval, or shorter if the physician specifies.",
+        "source": "med-mt-cardholder"
+      },
+      "caregivers": {
+        "text": "You may designate up to two purchasers, each at least 21, when you apply or renew. They must have the medical card to buy for you.",
+        "source": "med-mt-cardholder"
+      },
+      "buy": {
+        "text": "Registered cardholders can purchase at any licensed dispensary in Montana.",
+        "source": "med-mt-cardholder"
+      },
+      "links": [
+        {
+          "label": "Apply in the TransAction Portal",
+          "url": "https://tap.dor.mt.gov/?Link=CannabisMedCardMenu"
+        },
+        {
+          "label": "Cardholder information",
+          "url": "https://revenue.mt.gov/cannabis/cardholder-information"
+        },
+        {
+          "label": "Call the Helena office",
+          "url": "tel:+14064446900"
+        }
+      ]
+    },
+    {
+      "state": "MN",
+      "agency": "Minnesota Medical Cannabis Program",
+      "steps": {
+        "items": [
+          "Have a Minnesota-licensed physician, physician assistant or advanced practice registered nurse certify your condition in the Medical Cannabis Registry.",
+          "Enroll using the link in your certification email. Staff review can take up to 30 days.",
+          "After approval, complete a Patient Self-Evaluation and see a dispensary pharmacist to pick up medical cannabis."
+        ],
+        "source": "med-mn-register"
+      },
+      "fee": {
+        "text": "None. The annual enrollment fee was eliminated effective July 1, 2023.",
+        "source": "med-mn-register"
+      },
+      "card_length": {
+        "text": "Enrollment is yearly; you re-enroll each year to continue.",
+        "source": "med-mn-register"
+      },
+      "caregivers": {
+        "text": "You can add a caregiver, parent or legal guardian, or spouse to your account when you enroll. A caregiver must bring their own photo ID to pick up medicine.",
+        "source": "med-mn-register"
+      },
+      "buy": {
+        "text": "At a Medical Cannabis Dispensary.",
+        "source": "med-mn-register"
+      },
+      "links": [
+        {
+          "label": "How to become a patient",
+          "url": "https://health.state.mn.us/people/cannabis/patients/registration.html"
+        }
+      ]
+    },
+    {
+      "state": "AK",
+      "agency": "Alaska Department of Health, Bureau of Vital Statistics",
+      "who": {
+        "text": "Alaska residents whose physician states they have a qualifying debilitating medical condition and might benefit from medical marijuana. The card is valid only in Alaska.",
+        "source": "med-ak-registry"
+      },
+      "steps": {
+        "items": [
+          "Download the application packet and have your physician sign the physician’s statement. Originals are required; photocopies are not accepted.",
+          "Sign and date the application in front of a witness, who also signs.",
+          "Include a photocopy of your Alaska driver’s license or ID and the fee."
+        ],
+        "source": "med-ak-packet"
+      },
+      "fee": {
+        "text": "$25 for an initial application; $20 for a timely renewal, before the current card expires.",
+        "source": "med-ak-packet"
+      },
+      "caregivers": {
+        "text": "You can name a primary caregiver on the application. For a minor, a parent or guardian living in Alaska must consent and register as the primary caregiver.",
+        "source": "med-ak-packet"
+      },
+      "note": {
+        "text": "An incomplete application may be denied, and you cannot reapply for at least six months.",
+        "source": "med-ak-registry"
+      },
+      "links": [
+        {
+          "label": "Medical marijuana registry",
+          "url": "https://health.alaska.gov/en/education/drugs-and-alcohol/marijuana/medical-marijuana/"
+        },
+        {
+          "label": "Application packet (PDF)",
+          "url": "https://health.alaska.gov/media/ocjibnfh/medicalmarijuana.pdf"
+        },
+        {
+          "label": "Call the Registration Unit",
+          "url": "tel:+19074655423"
+        }
+      ]
+    },
+    {
+      "state": "DE",
+      "agency": "Delaware Office of the Marijuana Commissioner, Medical Marijuana Program",
+      "who": {
+        "text": "Delaware residents 18 or older, or pediatric patients with parental consent, certified by a Delaware-licensed MD, DO, APRN or PA. Patients 65 and older may self-certify.",
+        "source": "med-de-apply"
+      },
+      "steps": {
+        "items": [
+          "Meet with your health care practitioner. To apply online, your practitioner must be registered for online applications and have seen you in the past 90 days; otherwise apply on paper.",
+          "Complete the patient application and pay the fee.",
+          "Provide a Delaware driver’s license or state ID as proof of age and residency."
+        ],
+        "source": "med-de-apply"
+      },
+      "fee": {
+        "text": "$50 for one year, $75 for two years or $100 for three years. Non-refundable.",
+        "source": "med-de-apply"
+      },
+      "card_length": {
+        "text": "One, two or three years, depending on the fee you choose.",
+        "source": "med-de-apply"
+      },
+      "caregivers": {
+        "text": "A caregiver must be a Delaware resident and 21 or older, or the parent or legal guardian of a minor patient, and completes a caregiver application with the patient’s registry number.",
+        "source": "med-de-apply"
+      },
+      "links": [
+        {
+          "label": "Application process",
+          "url": "https://omc.delaware.gov/medical/index.shtml?dc=appProc"
         }
       ]
     }
