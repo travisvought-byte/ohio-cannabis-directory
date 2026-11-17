@@ -337,6 +337,51 @@
       "title": "Patients",
       "url": "https://cannabis.maryland.gov/Pages/patients.aspx",
       "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-mo-apply",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Missouri Department of Health and Senior Services",
+      "title": "How to apply: patient information",
+      "url": "https://health.mo.gov/safety/cannabis/how-to-apply-pi.php",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-mo-faq",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Missouri Department of Health and Senior Services",
+      "title": "Patient and consumer FAQs",
+      "url": "https://health.mo.gov/citizens/cannabis-patient-services/patient-consumer-faqs",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-va-patients",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Virginia Cannabis Control Authority",
+      "title": "Patients and caregivers",
+      "url": "https://cca.virginia.gov/medicalcannabis/patients",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-vt-faq",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Vermont Cannabis Control Board",
+      "title": "Medical program frequently asked questions",
+      "url": "https://ccb.vermont.gov/med-FAQ",
+      "retrieved_on": "2026-11-17"
+    },
+    {
+      "id": "med-co-apply",
+      "kind": "regulator",
+      "scope": "state",
+      "publisher": "Colorado Department of Public Health and Environment",
+      "title": "Apply for a Colorado medical marijuana card",
+      "url": "https://cdphe.colorado.gov/apply-colorado-medical-marijuana-card",
+      "retrieved_on": "2026-11-17"
     }
   ],
   "states": [
@@ -1197,6 +1242,147 @@
         {
           "label": "Maryland OneStop",
           "url": "https://onestop.md.gov/"
+        }
+      ]
+    },
+    {
+      "state": "MO",
+      "agency": "Missouri Department of Health and Senior Services",
+      "who": {
+        "text": "Patients with a qualifying condition certified by an MD, DO or nurse practitioner licensed and in good standing in Missouri.",
+        "source": "med-mo-faq"
+      },
+      "steps": {
+        "items": [
+          "Have an MD, DO or nurse practitioner complete the Physician Certification Form.",
+          "Register in the department’s secure online registry portal and submit the patient application.",
+          "Renew in the window from 60 to 30 days before the card expires, with a new certification."
+        ],
+        "source": "med-mo-apply"
+      },
+      "card_length": {
+        "text": "Three years for applications approved on or after December 8, 2022.",
+        "source": "med-mo-faq"
+      },
+      "caregivers": {
+        "text": "Caregivers apply online with a Patient Authorization Form and the patient’s ID card number. A minor’s parent or legal guardian must apply as caregiver.",
+        "source": "med-mo-apply"
+      },
+      "visitors": {
+        "text": "A person with an equivalent card or authorization from another state is not subject to arrest under Missouri law for possessing less than the limits set for Missouri patients.",
+        "source": "med-mo-faq"
+      },
+      "buy": {
+        "text": "Licensed dispensaries. A patient may buy up to 6 ounces in 30 days unless certified for more.",
+        "source": "med-mo-faq"
+      },
+      "links": [
+        {
+          "label": "How to apply",
+          "url": "https://health.mo.gov/safety/cannabis/how-to-apply-pi.php"
+        },
+        {
+          "label": "Patient FAQs and fee schedule",
+          "url": "https://health.mo.gov/citizens/cannabis-patient-services/patient-consumer-faqs"
+        }
+      ]
+    },
+    {
+      "state": "VA",
+      "agency": "Virginia Cannabis Control Authority",
+      "who": {
+        "text": "Permanent or temporary Virginia residents, 18 or older or with a parent or guardian’s consent, with a valid government-issued ID and a condition a licensed practitioner finds may benefit.",
+        "source": "med-va-patients"
+      },
+      "steps": {
+        "items": [
+          "Meet the basic qualifications.",
+          "See an eligible practitioner: a physician, physician assistant or advanced practice registered nurse. If you are a good candidate, they issue a written certification.",
+          "Take the certification and your government-issued ID to a licensed dispensary, which scans the certification’s QR code."
+        ],
+        "source": "med-va-patients"
+      },
+      "card_length": {
+        "text": "The practitioner sets how long the written certification lasts, up to one year.",
+        "source": "med-va-patients"
+      },
+      "caregivers": {
+        "text": "The practitioner can add a registered agent to the certification for patients who need help. Parents or guardians can receive a certification for a minor or vulnerable adult.",
+        "source": "med-va-patients"
+      },
+      "buy": {
+        "text": "Licensed medical cannabis dispensaries.",
+        "source": "med-va-patients"
+      },
+      "links": [
+        {
+          "label": "How to take part",
+          "url": "https://cca.virginia.gov/medicalcannabis/patients"
+        }
+      ]
+    },
+    {
+      "state": "VT",
+      "agency": "Vermont Cannabis Control Board, Medical Cannabis Program",
+      "who": {
+        "text": "Vermont residents with a debilitating medical condition, verified by a healthcare professional: a physician, osteopathic or naturopathic physician, physician assistant or nurse practitioner.",
+        "source": "med-vt-faq"
+      },
+      "fee": {
+        "text": "$50 with each initial or renewal application, non-refundable.",
+        "source": "med-vt-faq"
+      },
+      "card_length": {
+        "text": "Three years.",
+        "source": "med-vt-faq"
+      },
+      "caregivers": {
+        "text": "A registered caregiver is a Vermont resident over 21 who can go to the dispensary, receive deliveries and help grow for up to two registered patients.",
+        "source": "med-vt-faq"
+      },
+      "buy": {
+        "text": "Dispensaries. Medical patients pay no tax on their purchases.",
+        "source": "med-vt-faq"
+      },
+      "links": [
+        {
+          "label": "Medical program questions",
+          "url": "https://ccb.vermont.gov/med-FAQ"
+        },
+        {
+          "label": "Medical program",
+          "url": "https://ccb.vermont.gov/medical"
+        }
+      ]
+    },
+    {
+      "state": "CO",
+      "agency": "Colorado Department of Public Health and Environment, Medical Marijuana Registry",
+      "who": {
+        "text": "Colorado residents 18 or older with a qualifying medical condition. Minors qualify with a Colorado-resident parent and two provider certifications.",
+        "source": "med-co-apply"
+      },
+      "steps": {
+        "items": [
+          "See your health care provider, who submits a provider certification electronically. You need a new one each time you apply.",
+          "Complete your application online within 6 months of the certification, with your Colorado ID or driver’s license.",
+          "Complete applications are approved in 1 to 3 business days.",
+          "Print or display your card from your online account."
+        ],
+        "source": "med-co-apply"
+      },
+      "fee": {
+        "text": "$52 per application, non-refundable.",
+        "source": "med-co-apply"
+      },
+      "fee_help": {
+        "text": "The fee can be waived for household income at or below 185% of the federal poverty level, shown by a tax return.",
+        "source": "med-co-apply"
+      },
+      "links": [
+        {
+          "label": "Apply for a card",
+          "url": "https://cdphe.colorado.gov/apply-colorado-medical-marijuana-card"
         }
       ]
     }
