@@ -756,6 +756,216 @@
      "phone": "(304) 440-9703"
     }
    ]
+  },
+  {
+   "state": "LA",
+   "label": "medical marijuana retailers and satellite locations the Department of Health lists",
+   "source": {
+    "id": "disp-la-retailers",
+    "kind": "regulator",
+    "scope": "state",
+    "publisher": "Louisiana Department of Health",
+    "title": "Medical marijuana: retailers and satellite locations",
+    "url": "https://ldh.la.gov/page/medical-marijuana",
+    "retrieved_on": "2026-11-17"
+   },
+   "locations": [
+    {
+     "name": "H & W Acquisition Company LLC",
+     "address": "1667 Tchoupitoulas Blvd., Suite B, New Orleans, LA 70130",
+     "phone": "504-301-2363"
+    },
+    {
+     "name": "Crescent City Therapeutics, LLC",
+     "address": "100 W. Airline Hwy, Kenner, LA 70062",
+     "phone": "504-800-6420"
+    },
+    {
+     "name": "Capitol Wellness Solutions, LLC",
+     "address": "8037 Picardy Avenue, Baton Rouge, LA 70809",
+     "phone": "225-800-9420"
+    },
+    {
+     "name": "Green Leaf Dispensary, LLC",
+     "address": "174 Arlington Street, Morgan City, LA 70280",
+     "phone": "985-263-3125"
+    },
+    {
+     "name": "The Apothecary Shoppe, LLC",
+     "address": "2104 Ambassador Caffery Parkway, Lafayette, LA 70506",
+     "phone": "337-345-4500"
+    },
+    {
+     "name": "Medicis, LLC",
+     "address": "3005 L'Auberge Blvd., Lake Charles, LA 70601",
+     "phone": "337-420-8420"
+    },
+    {
+     "name": "The Medicine Cabinet Pharmacy, LLC",
+     "address": "40 Pinecrest Drive, Pineville, LA 71360",
+     "phone": "318-545-4460"
+    },
+    {
+     "name": "Hope Pharmacy, LLC",
+     "address": "4590 E. Texas Street, Bossier City, LA 71111",
+     "phone": "318-402-1819"
+    },
+    {
+     "name": "Delta Medmar, LLC",
+     "address": "1707 McKeen Place, Monroe, LA 71201",
+     "phone": "318-855-3381"
+    },
+    {
+     "name": "Willow Pharmacy, Inc.",
+     "address": "69090 Highway 190 Service Road, Covington, LA 70433",
+     "phone": "985-792-2391"
+    },
+    {
+     "name": "H & W Acquisition Company LLC",
+     "address": "5055 Veterans Memorial Blvd., Metairie, LA 70006",
+     "phone": "504-301-2363"
+    },
+    {
+     "name": "H & W Acquisition Company LLC",
+     "address": "1544 Manhattan Blvd., Harvey, LA 70058",
+     "phone": "504-457-1576"
+    },
+    {
+     "name": "Crescent City Therapeutics, LLC",
+     "address": "1407 S. Carrollton Avenue, New Orleans, LA 70118",
+     "phone": "504-554-0003"
+    },
+    {
+     "name": "Crescent City Therapeutics, LLC",
+     "address": "429 Bourbon Street, New Orleans, LA 70130",
+     "phone": "504-965-0651"
+    },
+    {
+     "name": "Capitol Wellness Solutions, LLC",
+     "address": "1940 O'Neal Lane, Baton Rouge, LA 70816",
+     "phone": "225-529-1420"
+    },
+    {
+     "name": "Capitol Wellness Solutions, LLC",
+     "address": "17097 Airline Hwy, Prairieville, LA 70769",
+     "phone": "225-401-6240"
+    },
+    {
+     "name": "Green Leaf Dispensary, LLC",
+     "address": "6048 W. Park Avenue, Houma, LA 70364",
+     "phone": "985-360-3372"
+    },
+    {
+     "name": "The Apothecary Shoppe, LLC",
+     "address": "4079 I-49 S. Service Road, Opelousas, LA 70570",
+     "phone": "337-345-4500"
+    },
+    {
+     "name": "The Apothecary Shoppe, LLC",
+     "address": "1700 Center Street, New Iberia, LA 70560",
+     "phone": "337-345-4500"
+    },
+    {
+     "name": "Medicis, LLC",
+     "address": "1920 Evangeline Road, Jennings, LA 70546",
+     "phone": "337-218-4643"
+    },
+    {
+     "name": "Medicis, LLC",
+     "address": "303 South Cities Service Hwy., Sulphur, LA 70663",
+     "phone": "337-244-6638"
+    },
+    {
+     "name": "The Medicine Cabinet Pharmacy, LLC",
+     "address": "101 Cocoville Road, Mansura, LA 71350",
+     "phone": "318-409-0809"
+    },
+    {
+     "name": "The Medicine Cabinet Pharmacy, LLC",
+     "address": "111 W. Harriet Street, Leesville, LA 71446",
+     "phone": "318-487-4460"
+    },
+    {
+     "name": "Hope Pharmacy, LLC",
+     "address": "5033 University Parkway, Natchitoches, LA 71457",
+     "phone": "318-609-1234"
+    },
+    {
+     "name": "Hope Pharmacy, LLC",
+     "address": "9352 Mansfield Road, Shreveport, LA 71118",
+     "phone": "318-533-4952"
+    },
+    {
+     "name": "Delta Medmar, LLC",
+     "address": "111 McMillian Road, West Monroe, LA 71291",
+     "phone": "318-225-4373"
+    },
+    {
+     "name": "Delta Medmar, LLC",
+     "address": "746 Celebrity Drive, Ruston, LA 71270",
+     "phone": "318-974-9492"
+    },
+    {
+     "name": "Willow Pharmacy, Inc.",
+     "address": "796 East I-10 Service Road, Slidell, LA 70461",
+     "phone": "985-288-2660"
+    },
+    {
+     "name": "Willow Pharmacy, Inc.",
+     "address": "1410 SW Railroad Avenue, Hammond, LA 70403",
+     "phone": "985-520-0099"
+    }
+   ]
+  },
+  {
+   "state": "NH",
+   "label": "Alternative Treatment Center dispensaries the Department of Health and Human Services lists",
+   "source": {
+    "id": "disp-nh-atc",
+    "kind": "regulator",
+    "scope": "state",
+    "publisher": "New Hampshire Department of Health and Human Services",
+    "title": "Alternative Treatment Centers",
+    "url": "https://dhhs.nh.gov/programs-services/population-health/therapeutic-cannabis/alternative-treatment-centers",
+    "retrieved_on": "2026-11-17"
+   },
+   "locations": [
+    {
+     "name": "GraniteLeaf Cannabis",
+     "address": "380 Daniel Webster Highway, Units A and C, Merrimack, NH 03054",
+     "phone": "603-262-5035"
+    },
+    {
+     "name": "GraniteLeaf Cannabis",
+     "address": "349 Dover Road (Route 4), Chichester, NH 03258",
+     "phone": "603-212-1500"
+    },
+    {
+     "name": "Sanctuary ATC",
+     "address": "568 Tenney Mountain Highway, Plymouth, NH 03264",
+     "phone": "603-346-4619"
+    },
+    {
+     "name": "Sanctuary ATC",
+     "address": "234 White Mountain Highway, Conway, NH 03818",
+     "phone": "603-662-0113"
+    },
+    {
+     "name": "Temescal Wellness, Inc.",
+     "address": "26 Crosby Road, Units 11-12, Dover, NH 03820",
+     "phone": "603-285-9383"
+    },
+    {
+     "name": "Temescal Wellness, Inc.",
+     "address": "367 Route 120, Unit E-2, Lebanon, NH 03766",
+     "phone": "603-285-9383"
+    },
+    {
+     "name": "Temescal Wellness, Inc.",
+     "address": "69 Island Street, Suite 1, Keene, NH 03431",
+     "phone": "603-285-9383"
+    }
+   ]
   }
  ]
 }
