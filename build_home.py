@@ -1,7 +1,7 @@
 """Publish a directory-first entry point; preserve existing search and record URLs."""
 from pathlib import Path
 from directory_data import RELEASE, load_records
-from directory_brand import canonical_url, help_now, site_origin
+from directory_brand import canonical_url, site_origin
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'index.html'
@@ -54,14 +54,14 @@ nav a{min-height:44px;display:inline-flex;align-items:center}
 </nav>
 <p><strong>Looking for cannabis seeds?</strong> <a href="seeds.html">Browse the seed supplier directory</a>, including Ohio breeders, seed banks, and growing supplies.</p>
 </main>
-__HELP_NOW__<footer class="site-footer"><a href="pennsylvania-directory.html">Pennsylvania directory</a> · <a href="state.html?state=PA">Pennsylvania portal</a> · Created and maintained by <a href="work-with-travis.html">Travis Vought</a> · Shared in support of Veteran Home Guardians · release v__VERSION__</footer>
+<footer class="site-footer"><a href="pennsylvania-directory.html">Pennsylvania directory</a> · <a href="state.html?state=PA">Pennsylvania portal</a> · Created and maintained by <a href="work-with-travis.html">Travis Vought</a> · Shared in support of Veteran Home Guardians · release v__VERSION__</footer>
 </body>
 </html>
 '''
 
 def main():
     count = sum(not row['Category'].startswith('Out of scope') for row in load_records(include_withdrawn=False))
-    OUT.write_text(site_origin(TEMPLATE).replace('__HELP_NOW__', help_now()).replace('__CANONICAL__', canonical_url('directory.html')).replace('__VERSION__', RELEASE['version']).replace('516 publishable organizations', f'{count} publishable organizations'), encoding='utf-8')
+    OUT.write_text(site_origin(TEMPLATE).replace('__CANONICAL__', canonical_url('directory.html')).replace('__VERSION__', RELEASE['version']).replace('516 publishable organizations', f'{count} publishable organizations'), encoding='utf-8')
 
 if __name__ == '__main__':
     main()

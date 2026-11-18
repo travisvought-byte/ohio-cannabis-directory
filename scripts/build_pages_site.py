@@ -11,9 +11,6 @@ Owner direction, November 16, 2026: this repository hosts the national cannabis 
   built, with the old weed.vethomeguard.org address replaced by the-reefer.com and the
   Ohio directory's brand, menu and footer replaced by this site's (rebrand()).
 - Data files and assets are served, so download links keep working.
-- Every page a visitor reads, the "page not found" page included, carries the suicide and
-  homelessness help block (directory_brand.help_now()). Forwarding pages do not: they send the
-  visitor on at once.
 
 Nothing here changes a committed file; the swap happens only in the published copy.
 
@@ -118,16 +115,11 @@ def rebrand(text):
 
 
 def not_found():
-    import sys
-    sys.path.insert(0, str(ROOT))
-    from directory_brand import help_now
     return ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | The Reefer</title>'
             '<meta name="robots" content="noindex"><style>body{font:16px/1.5 system-ui,sans-serif;margin:3rem auto;max-width:34rem;padding:0 1rem;color:#16221e}'
             'a{color:#215b76}</style></head><body><h1>Page not found</h1>'
             f'<p>Start from <a href="{SITE}/">the list of all states</a>, or go to the Ohio guide at <a href="{OHIO_HOME}/">OhioWeed.org</a>.</p>'
-            # The same suicide and homelessness help every other page carries (owner direction, November 17, 2026).
-            + help_now() +
             # Root-relative: GitHub Pages serves this page at any missing path. Counting it shows which old links break.
             '<script src="/assets/analytics.js" defer></script></body></html>\n')
 
