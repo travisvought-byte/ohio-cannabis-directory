@@ -25,7 +25,7 @@ from datetime import date
 from pathlib import Path
 from urllib.parse import quote, urlencode, urlparse
 
-from directory_brand import DEFAULT_SITE_ORIGIN, EMAIL, OHIO_HOME
+from directory_brand import DEFAULT_SITE_ORIGIN, EMAIL, OHIO_HOME, help_now
 from permissions_page import KIND_LABEL, LEVEL_TEXT, chip
 from validate_permissions import evidence_level
 
@@ -370,7 +370,7 @@ def shell(title, description, body, name, place, hero='', ld=None):
            '<nav aria-label="Primary"><a href="index.html#map">Your state</a><a href="medical.html">Medical cards</a><a href="index.html#compare">Compare laws</a>'
            '<a href="help.html">Get help</a><a href="about.html">About</a></nav></div></header>')
     family = ''.join(f'<li><a href="{esc(url)}">{esc(label)}</a></li>' for url, label, _, _ in FAMILY)
-    foot = ('<footer class="site"><div class="wrap"><div class="cols">'
+    foot = (help_now() + '<footer class="site"><div class="wrap"><div class="cols">'
             '<nav aria-label="This site"><h2>This site</h2><ul><li><a href="index.html#map">Pick your state</a></li>'
             '<li><a href="index.html#compare">Compare the law</a></li><li><a href="medical.html">Medical cards</a></li><li><a href="coverage.html">Medicaid and insurance</a></li><li><a href="help.html">Get help</a></li><li><a href="jokes.html">Joke of the day</a></li><li><a href="partners.html">Partners</a></li><li><a href="about.html">About and methods</a></li></ul></nav>'
             f'<nav aria-label="Our other sites"><h2>Our other sites</h2><ul>{family}</ul></nav>'

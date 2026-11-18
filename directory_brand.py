@@ -72,6 +72,29 @@ def brand_header():
             'document.addEventListener("click",e=>{if(!e.target.closest(".nav-more")||e.target.closest(".nav-groups a"))close()});'
             'document.addEventListener("keydown",e=>{if(e.key==="Escape")close()});})();</script>')
 
+def help_now():
+    """Suicide and homelessness help shown above the footer of every page (owner direction, November 17, 2026).
+
+    Sources, each read on November 17, 2026:
+    - 988lifeline.org: call or text 988, 24 hours a day, free and confidential.
+    - veteranscrisisline.net: dial 988, then press 1.
+    - hud.gov/contactus: dial 2-1-1 and press 6 for homeless services; the Find Shelter tool.
+    - usa.gov/emergency-housing: National Call Center for Homeless Veterans, 1-877-424-3838, 24 hours a day.
+    """
+    # Each link is underlined and bold so it stands out on any page's own styling; short ones never break across lines.
+    wrap = ' style="color:#0b4f6c;font-weight:600;text-decoration:underline"'
+    link = ' style="color:#0b4f6c;font-weight:600;text-decoration:underline;white-space:nowrap"'
+    return ('<aside class="help-now" aria-label="Need help now?" style="box-sizing:border-box;width:calc(100% - 32px);max-width:1120px;margin:24px auto 0;padding:12px 16px;'
+            'border:1px solid #ccc;border-left:6px solid #7a1f1f;border-radius:6px;background:#fff;color:#1b1b1b;'
+            'font-size:.95rem;line-height:1.5;text-align:left">'
+            '<strong>Need help now?</strong> Thinking about suicide, or in any crisis: '
+            '<a href="tel:988"' + link + '>call</a> or <a href="sms:988"' + link + '>text 988</a>, any time. '
+            'Veterans: dial 988, then press 1. No safe place to sleep tonight: '
+            '<a href="tel:211"' + link + '>dial 211</a> and press 6 for homeless services, or use '
+            '<a href="https://www.hud.gov/findshelter"' + wrap + '>HUD’s Find Shelter tool</a>. Veterans: '
+            '<a href="tel:+18774243838"' + link + '>1-877-424-3838</a>, 24 hours a day.</aside>')
+
+
 def brand_footer():
     return ('<footer class="site-footer"><nav aria-label="More resources">'
             '<a href="pennsylvania-directory.html">Pennsylvania directory</a><a href="state.html?state=PA">Pennsylvania portal</a>'
@@ -117,7 +140,7 @@ def brand_page(page, name=None):
     if '__VHG_BRAND__' not in page:
         page=page.replace('<main>', '<main>__VHG_BRAND__',1)
     page=re.sub(r'<title>(.*?)</title>',lambda m:'<title>'+re.sub(r' \|.*$','',m.group(1)).replace('Ohio Cannabis Ecosystem Directory','Ohio Cannabis Directory')+' | Ohio Cannabis Directory</title>',page,count=1)
-    page=page.replace('</body>',brand_footer()+'</body>')
+    page=page.replace('</body>',help_now()+brand_footer()+'</body>')
     title=re.search(r'<title>(.*?)</title>',page).group(1)
     description='Find Ohio cannabis businesses, dispensaries and plain-language guides, each traced to a source.'
     if 'name="description"' not in page:page=page.replace('</head>','<meta name="description" content="'+description+'"></head>')

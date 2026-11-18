@@ -104,6 +104,18 @@ class PagesSiteTest(unittest.TestCase):
             # Only questions with a reviewed answer are marked up, each one visible on the page.
             self.assertEqual(asked, {questions[q] for q in answered.get(code, set())}, name)
 
+    def test_every_page_a_visitor_reads_carries_the_help_block(self):
+        from directory_brand import help_now
+        block = help_now()
+        readable = self.result['real'] + ['404.html']
+        self.assertEqual(len(readable), 72)
+        for name in readable:
+            text = self.read(name)
+            self.assertEqual(text.count(block), 1, f'{name} should carry the suicide and homelessness help once')
+        # Forwarding pages send the visitor on at once; the page they land on carries the block.
+        for name in build_pages_site.FORWARD:
+            self.assertIn('http-equiv="refresh"', self.read(name))
+
     def test_committed_files_are_untouched(self):
         self.assertIn('noindex', (ROOT / 'national/index.html').read_text(encoding='utf-8'))
 
