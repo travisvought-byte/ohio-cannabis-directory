@@ -1,0 +1,356 @@
+{
+ "schema_version": "1.0.0",
+ "as_of": "2026-11-19",
+ "purpose": "Where cannabis comes from: its origin, the landraces of each region and the people who kept the traditions. Every passage names its sources.",
+ "origin": {
+  "title": "Where it all started",
+  "text": "A 2021 genome study of 110 cannabis plants from around the world found that cannabis was first domesticated in East Asia in early Neolithic times, about 12,000 years ago. Every hemp and drug variety grown today traces back to an ancestral gene pool that still survives in feral plants and landraces in China.",
+  "source_ids": [
+   "ren2021",
+   "ren2021-afp"
+  ]
+ },
+ "landrace": {
+  "title": "What a landrace is",
+  "text": "A landrace is a local variety shaped over generations by the farmers and climate of one place. Botanists trace the two drug types people now call \"Sativa\" and \"Indica\" to South Asia and Central Asia. Decades of crossbreeding have since blurred the difference, which is why researchers describe the old, unhybridized landraces as endangered.",
+  "source_ids": [
+   "mcpartland2020"
+  ]
+ },
+ "regions": [
+  {
+   "id": "east-asia",
+   "place": "China and East Asia",
+   "peoples": "Early Neolithic farmers",
+   "landraces": [
+    "Feral and landrace cannabis in China (the ancestral gene pool)"
+   ],
+   "story": "Genetic dating puts the first domestication in East Asia, where some of the oldest surviving cannabis still grows. Selective breeding for fiber or for cannabinoids came much later, around 4,000 years ago.",
+   "source_ids": [
+    "ren2021",
+    "ren2021-afp"
+   ]
+  },
+  {
+   "id": "india",
+   "place": "India and the Himalaya",
+   "peoples": "Hindu worshippers of Shiva, sadhus (wandering ascetics), farmers of the Himalayan foothills",
+   "landraces": [
+    "South Asian \"Sativa\" lines",
+    "Himalayan wild cannabis"
+   ],
+   "story": "India gave the world three words: charas (resin), ganja (flower) and bhang (leaves and seeds, often in drinks). The Atharvaveda names bhanga among five sacred plants that relieve anxiety, though scholars debate whether that meant cannabis. Bhang is offered at the Holi and Shivratri festivals. In 1893 the British government in India appointed the Indian Hemp Drugs Commission, which heard more than 1,100 witnesses and reported in 1894 that moderate use did little harm. Botanists trace the drug type called \"Sativa\" to South Asia, from where it spread early to Southeast Asia, Africa and the Americas.",
+   "law_now": null,
+   "source_ids": [
+    "wiki-india",
+    "nls-ihdc",
+    "ucla-ihdc",
+    "wiki-ihdc",
+    "mcpartland2020"
+   ]
+  },
+  {
+   "id": "hindu-kush",
+   "place": "Afghanistan, Pakistan and the Hindu Kush",
+   "peoples": "Mountain farmers and hashish makers of Afghanistan and northern Pakistan",
+   "landraces": [
+    "Afghani",
+    "Hindu Kush",
+    "Afghan Black (chars)"
+   ],
+   "story": "The drug type called \"Indica\" traces to Central Asia, including Afghanistan. Afghan hashish, chars, long served local markets and spread beyond them only in the second half of the twentieth century. Afghan genetics became one third of Skunk #1, the hybrid behind much of modern indoor cannabis.",
+   "source_ids": [
+    "mcpartland2020",
+    "asc-afghan",
+    "hightimes-skunk"
+   ]
+  },
+  {
+   "id": "morocco",
+   "place": "Morocco's Rif Mountains",
+   "peoples": "Amazigh (Berber) farming communities of the Rif, around Ketama and Chefchaouen",
+   "landraces": [
+    "Beldiya (the local kif variety)"
+   ],
+   "story": "Kif has been grown and used in the Rif for centuries; it was widespread by the Saadian dynasty of the 1500s and 1600s. The local beldiya variety has been losing ground to imported hybrids that yield far more hashish. Law 13-21 of 2021 now licenses cannabis for medical, pharmaceutical, cosmetic and industrial use through farmer cooperatives; Morocco's regulator reported 5,765 authorizations in 2026, almost all for cultivation. Recreational use stays outside the law.",
+   "law_now": "Medical and industrial cultivation licensed since 2021; recreational use illegal.",
+   "source_ids": [
+    "ma-pmc",
+    "ma-jied",
+    "ma-africanews",
+    "ma-mwn"
+   ]
+  },
+  {
+   "id": "lebanon",
+   "place": "Lebanon's Bekaa Valley",
+   "peoples": "Farming families and clans of the Bekaa, many growing on land passed down through generations",
+   "landraces": [
+    "Lebanese red and blond hashish"
+   ],
+   "story": "Hashish production was banned in 1926 under the French Mandate, but cultivation in the Bekaa never stopped. In April 2020 Lebanon became the first Arab country to legalize cannabis cultivation for medical and industrial use, yet six years on some Bekaa families are still growing outside the law.",
+   "law_now": "Medical and industrial cultivation legal on paper since 2020; recreational use illegal.",
+   "source_ids": [
+    "lb-wiki",
+    "lb-newlines"
+   ]
+  },
+  {
+   "id": "southern-africa",
+   "place": "South Africa and southern Africa",
+   "peoples": "Khoikhoi, San and Bantu-speaking peoples; Mpondo farmers of the Eastern Cape",
+   "landraces": [
+    "Durban Poison",
+    "Mpondo landrace"
+   ],
+   "story": "The word dagga comes from the Khoikhoi word dacha. Cannabis is thought to have reached Africa with Arab or Indian traders and was in wide use among Khoisan and Bantu peoples before Europeans settled the Cape in 1652; Jan van Riebeeck noted it in his journal in 1658. South Africa's landraces include Durban Poison, known worldwide, and the Mpondo landrace of the Eastern Cape, whose small farmers risk being left out of the new legal market.",
+   "law_now": "Private adult use decriminalized by the Constitutional Court in 2018; the 2024 Act awaits final regulations.",
+   "source_ids": [
+    "za-wiki",
+    "za-maverick",
+    "za-tni",
+    "za-gov"
+   ]
+  },
+  {
+   "id": "jamaica",
+   "place": "Jamaica and the Caribbean",
+   "peoples": "Indian indentured laborers and their Indo-Jamaican descendants; the Rastafari",
+   "landraces": [
+    "Lamb's Bread and other Jamaican sativas"
+   ],
+   "story": "Between 1845 and 1917 about 35,000 indentured workers came from India to Jamaica, bringing their religious traditions and cannabis with them. The word ganja is Hindi. The Rastafari later took up ganja in their spiritual practice, and one theory traces dreadlocks to Hindu holy men who came over as indentured laborers.",
+   "law_now": "Up to 2 ounces decriminalized since 2015; licensed medical herb houses.",
+   "source_ids": [
+    "jm-osu",
+    "jm-smithsonian",
+    "jm-moj"
+   ]
+  },
+  {
+   "id": "thailand",
+   "place": "Thailand and Southeast Asia",
+   "peoples": "Farmers of Thailand and neighboring Laos",
+   "landraces": [
+    "Thai (Thai stick)"
+   ],
+   "story": "Thai buds tied to slender sticks became famous in the late 1960s and 1970s. US troops stationed in Thailand during the Vietnam War bought them cheaply and started shipping them home, building the first wave of demand in the West.",
+   "law_now": "Flower is prescription-only since 2025.",
+   "country_page": "world-thailand.html",
+   "source_ids": [
+    "th-diplomat",
+    "th-bkkpost"
+   ]
+  },
+  {
+   "id": "americas",
+   "place": "Mexico and Colombia",
+   "peoples": "Mountain farmers of Guerrero and Michoacán in Mexico and the Sierra Nevada de Santa Marta in Colombia",
+   "landraces": [
+    "Acapulco Gold",
+    "Michoacán",
+    "Colombian (Santa Marta) Gold"
+   ],
+   "story": "These were the names Americans knew in the 1960s and 1970s, each named for where it grew. Acapulco Gold and Colombian Gold, crossed with Afghan genetics, produced Skunk #1, which made uniform, fast-flowering indoor cannabis possible.",
+   "law_now": "See the Mexico page.",
+   "country_page": "world-mexico.html",
+   "source_ids": [
+    "hightimes-skunk"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "ren2021",
+   "kind": "research",
+   "publisher": "Science Advances (Ren et al., 2021)",
+   "title": "Large-scale whole-genome resequencing unravels the domestication history of Cannabis sativa",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8284894",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ren2021-afp",
+   "kind": "news",
+   "publisher": "AFP via Inquirer",
+   "title": "Cannabis first domesticated 12,000 years ago, study (Jul 18 2021)",
+   "url": "https://newsinfo.inquirer.net/?p=1461081",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mcpartland2020",
+   "kind": "research",
+   "publisher": "PhytoKeys (McPartland and Small, 2020)",
+   "title": "Classification of high-THC cannabis domesticates and their wild relatives (PhytoKeys 144: 81-112)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7148385",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "wiki-india",
+   "kind": "compilation",
+   "publisher": "Wikipedia",
+   "title": "Cannabis in India",
+   "url": "https://en.wikipedia.org/wiki/Cannabis_in_India",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "wiki-ihdc",
+   "kind": "compilation",
+   "publisher": "Wikipedia",
+   "title": "Indian Hemp Drugs Commission",
+   "url": "https://en.wikipedia.org/wiki/Indian_Hemp_Drugs_Commission",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ucla-ihdc",
+   "kind": "research",
+   "publisher": "UCLA Center for India and South Asia",
+   "title": "Indian Hemp Drugs Commission (Sebastiaan Broere)",
+   "url": "https://southasia.ucla.edu/history-politics/colonial-epistemologies/indian-hemp-drugs-commission",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nls-ihdc",
+   "kind": "government",
+   "publisher": "National Library of Scotland (digitized)",
+   "title": "Report of the Indian Hemp Drugs Commission, 1893-94, chapter IX",
+   "url": "https://deriv.nls.uk/dcn9/7443/74434909.9.htm",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "asc-afghan",
+   "kind": "organization",
+   "publisher": "Afghan Studies Center",
+   "title": "The cultural history of hashish in Afghanistan (dispatch, Jan 7 2019)",
+   "url": "https://afghanstudiescenter.org/?p=31973",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "hightimes-skunk",
+   "kind": "news",
+   "publisher": "High Times",
+   "title": "The primary colors of cannabis",
+   "url": "https://hightimes.com/culture/the-primary-colors-of-cannabis/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ma-pmc",
+   "kind": "research",
+   "publisher": "PMC (review of Cannabis in Morocco)",
+   "title": "Origin, history and cultivation of Cannabis in Morocco",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9587784",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ma-jied",
+   "kind": "research",
+   "publisher": "Journal of Illicit Economies and Development (Tinasti et al.)",
+   "title": "Morocco's Law 13-21: policy commentary",
+   "url": "https://repository.graduateinstitute.ch/record/321513/files/CCDP_OA_68ad77616b793.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ma-mwn",
+   "kind": "news",
+   "publisher": "Morocco World News",
+   "title": "Cannabis legalization will be judged in the Rif, not in Rabat (Jul 2026)",
+   "url": "https://www.moroccoworldnews.com/2026/07/329556/moroccan-researcher-cannabis-legalization-will-be-judged-in-the-rif-not-in-rabat/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ma-africanews",
+   "kind": "news",
+   "publisher": "Africanews (AFP)",
+   "title": "Morocco takes up foreign marijuana hybrids (Oct 2019)",
+   "url": "https://www.africanews.com/2019/10/10/moroccco-takes-up-foreign-marijuana-hybrids//",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "lb-wiki",
+   "kind": "compilation",
+   "publisher": "Wikipedia",
+   "title": "Cannabis in Lebanon",
+   "url": "https://en.wikipedia.org/wiki/Cannabis_in_Lebanon",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "lb-newlines",
+   "kind": "news",
+   "publisher": "New Lines Magazine",
+   "title": "Lebanon's cannabis farmers are still outlaws",
+   "url": "https://newlinesmag.com/spotlight/lebanons-cannabis-farmers-are-still-outlaws/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "za-wiki",
+   "kind": "compilation",
+   "publisher": "Wikipedia",
+   "title": "Cannabis in South Africa",
+   "url": "https://en.wikipedia.org/wiki/Cannabis_in_South_Africa",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "za-maverick",
+   "kind": "news",
+   "publisher": "Daily Maverick",
+   "title": "The holy herb: medicinal cannabis farming in the Klein Karoo (Jul 16 2026)",
+   "url": "https://www.dailymaverick.co.za/article/2026-07-16-the-holy-herb-medicinal-cannabis-farming-in-the-klein-karoo/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "za-tni",
+   "kind": "organization",
+   "publisher": "Transnational Institute",
+   "title": "Seeds of Inequality: the Mpondo landrace (2023)",
+   "url": "https://www.tni.org/files/2023-11/TNI_SeedsInequality_web.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "za-gov",
+   "kind": "government",
+   "publisher": "Government of South Africa",
+   "title": "Draft regulations under the Cannabis for Private Purposes Act (Feb 2026)",
+   "url": "https://www.gov.za/news/media-statements/justice-and-constitutional-development-draft-regulations-under-cannabis",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "jm-osu",
+   "kind": "research",
+   "publisher": "Ohio State University Knowledge Bank",
+   "title": "Indian Influences on Rastafarianism",
+   "url": "https://kb.osu.edu/items/923e4735-c308-5050-b909-3e89a9a0cd9e",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "jm-smithsonian",
+   "kind": "organization",
+   "publisher": "Smithsonian Education",
+   "title": "Dread History: the African diaspora, Ethiopianism and Rastafari",
+   "url": "https://smithsonianeducation.org/migrations/rasta/pic06.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "jm-moj",
+   "kind": "government",
+   "publisher": "Ministry of Justice Jamaica",
+   "title": "Dangerous Drugs Act fact sheet (2015 amendments)",
+   "url": "https://moj.gov.jm/sites/default/files/pdf/Dangerous%20Drugs%20Act%20Fact%20Sheet%20Booklet.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "th-diplomat",
+   "kind": "news",
+   "publisher": "The Diplomat",
+   "title": "Thailand's legendary marijuana (Peter Maguire, Apr 2018)",
+   "url": "https://thediplomat.com/2018/04/thailands-legendary-marijuana/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "th-bkkpost",
+   "kind": "news",
+   "publisher": "Bangkok Post",
+   "title": "Thai stick: surfers, scammers and the marijuana trade",
+   "url": "https://www.bangkokpost.com/thailand/special-reports/845656",
+   "retrieved_on": "2026-11-19"
+  }
+ ]
+}

@@ -14,6 +14,7 @@ WORLD = json.loads((ROOT / 'data/world-permissions.json').read_text(encoding='ut
 PERM = json.loads((ROOT / 'data/state-permissions.json').read_text(encoding='utf-8'))
 PAGES = build_national.pages()
 SOURCE_IDS = {s['id'] for s in WORLD['sources']}
+HERITAGE = json.loads((ROOT / 'data/world-heritage.json').read_text(encoding='utf-8'))
 
 
 class WorldTest(unittest.TestCase):
@@ -32,6 +33,8 @@ class WorldTest(unittest.TestCase):
             used |= set(w['source_ids'])
             self.assertTrue(w['source_ids'], w['place'])
         used |= set(WORLD['texas_concentrates']['source_ids'])
+        for c in WORLD['countries'].values():
+            used |= set(c.get('experiment', {}).get('source_ids', []))
         self.assertLessEqual(used, SOURCE_IDS)
         self.assertEqual(used, SOURCE_IDS, 'every listed source is cited somewhere')
         for s in WORLD['sources']:
@@ -55,6 +58,28 @@ class WorldTest(unittest.TestCase):
         for code in no_adult:
             self.assertIn(f'href="{build_national.slug(PERM["jurisdictions"][code])}.html"', text)
         self.assertEqual(len(re.findall(r'<li><span class="state">', text)), len(no_adult))
+
+    def test_source_ids_never_collide_across_datasets(self):
+        state_ids = {s['id'] for s in PERM['sources']}
+        heritage_ids = {s['id'] for s in HERITAGE['sources']}
+        self.assertFalse(SOURCE_IDS & state_ids)
+        self.assertFalse(heritage_ids & state_ids)
+        self.assertFalse(heritage_ids & SOURCE_IDS)
+
+    def test_every_heritage_passage_is_cited_and_shown(self):
+        ids = {s['id'] for s in HERITAGE['sources']}
+        used = set(HERITAGE['origin']['source_ids']) | set(HERITAGE['landrace']['source_ids'])
+        text = PAGES['heritage.html']
+        for r in HERITAGE['regions']:
+            self.assertTrue(r['source_ids'], r['id'])
+            used |= set(r['source_ids'])
+            self.assertIn(build_national.esc(r['story']), text)
+            self.assertIn(f'id="{r["id"]}"', text)
+            if r.get('country_page'):
+                self.assertIn(r['country_page'], PAGES)
+        self.assertEqual(used, ids)
+        for s in HERITAGE['sources']:
+            self.assertIn(s['kind'], build_national.KIND_LABEL)
 
     def test_world_is_in_the_menu_of_every_page(self):
         for name, text in PAGES.items():

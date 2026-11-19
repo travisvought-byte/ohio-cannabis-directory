@@ -26,8 +26,8 @@ class NationalPagesTest(unittest.TestCase):
 
     def test_one_page_per_jurisdiction_linked_from_home(self):
         world = json.loads((ROOT / 'data/world-permissions.json').read_text(encoding='utf-8'))
-        # home, help, about, privacy, medical cards, coverage, partners, jokes; plus the world hub, travel warnings and one page per country
-        self.assertEqual(len(PAGES), len(PERM['jurisdictions']) + 8 + len(PERM['questions']) + 2 + len(world['countries']))
+        # home, help, about, privacy, medical cards, coverage, partners, jokes; plus the world hub, travel warnings, heritage and one page per country
+        self.assertEqual(len(PAGES), len(PERM['jurisdictions']) + 8 + len(PERM['questions']) + 3 + len(world['countries']))
         for name in PERM['jurisdictions'].values():
             page = build_national.slug(name) + '.html'
             self.assertIn(page, PAGES)

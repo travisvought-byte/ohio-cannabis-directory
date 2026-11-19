@@ -24,7 +24,8 @@ LEVEL_TEXT = {
     'compilation': 'National compilation: confirm with the state',
 }
 KIND_LABEL = {'statute': 'Law', 'regulator': 'Regulator', 'government': 'Government',
-              'organization': 'Organization', 'compilation': 'National compilation', 'news': 'News report'}
+              'organization': 'Organization', 'compilation': 'National compilation', 'news': 'News report',
+              'research': 'Research'}
 
 CSS = '''
 .chip{display:inline-block;border:1px solid;border-radius:999px;padding:0 10px;font-size:.82rem;font-weight:700;line-height:1.7;white-space:nowrap}

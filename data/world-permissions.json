@@ -238,6 +238,211 @@
      ]
     }
    }
+  },
+  "DE": {
+   "name": "Germany",
+   "page": "world-germany.html",
+   "summary": "Legal for adults since April 1, 2024, without shops. Adults can carry some, grow a few plants at home, or join a non-profit cultivation club.",
+   "note": "",
+   "answers": {
+    "adult-use": {
+     "status": "allowed",
+     "short": "Yes, 18 and older",
+     "detail": "The Cannabis Act took effect on April 1, 2024. Since then, adults in Germany can legally use cannabis.",
+     "citation": "Cannabisgesetz (CanG); Federal Government FAQ",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "de-breg",
+      "de-cms"
+     ]
+    },
+    "possession": {
+     "status": "allowed",
+     "short": "25 grams in public, 50 grams at home",
+     "detail": "Possession of up to 25 grams of dried cannabis in public is not punished. At home the limit is 50 grams.",
+     "citation": "Federal Government FAQ",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "de-breg"
+     ]
+    },
+    "home-grow": {
+     "status": "allowed",
+     "short": "3 plants per adult resident",
+     "detail": "Adults who have lived in Germany for at least six months may grow up to three plants at a time at home for their own use.",
+     "citation": "CMS legal guide (secondary)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "de-cms"
+     ]
+    },
+    "buying": {
+     "status": "limited",
+     "short": "No shops. Non-profit clubs only",
+     "detail": "Cultivation associations have been allowed to grow since July 1, 2024 and may pass cannabis only to their members. Members get at most 25 grams a day and 50 grams a month; members aged 18 to 20 get at most 30 grams a month, with no more than 10 percent THC.",
+     "citation": "Federal Ministry of Health FAQ; Federal Government FAQ",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "de-bmg-faq",
+      "de-breg-import"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Yes, under the Medical Cannabis Act",
+     "detail": "Since April 1, 2024 cannabis is no longer listed under the narcotics law. Medical cannabis is governed by its own law, the Medizinal-Cannabisgesetz (MedCanG).",
+     "citation": "Federal Ministry of Health, Cannabis als Medizin",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "de-bmg-med"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "Importing is still banned",
+     "detail": "Bringing cannabis into Germany from abroad remains prohibited.",
+     "citation": "Federal Government FAQ",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "de-breg-import"
+     ]
+    }
+   }
+  },
+  "NL": {
+   "name": "Netherlands",
+   "page": "world-netherlands.html",
+   "summary": "Selling is technically illegal but tolerated in coffeeshops since the 1970s. Growing for those shops was never legal; a state experiment with licensed growers started in 2025.",
+   "note": "",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "Tolerated, not legal",
+     "detail": "Selling drugs is illegal in the Netherlands, but the government tolerates the sale of soft drugs in coffeeshops that follow its rules.",
+     "citation": "Business.gov.nl",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "nl-bizgov"
+     ]
+    },
+    "buying": {
+     "status": "limited",
+     "short": "Coffeeshops, 5 grams per person per day",
+     "detail": "A coffeeshop may sell no more than 5 grams per person per day, keep no more than 500 grams in stock and, under the toleration rules, admit only residents of the Netherlands.",
+     "citation": "Business.gov.nl",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "nl-bizgov"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Growing is illegal",
+     "detail": "The sale is tolerated, but growing cannabis is not.",
+     "citation": "NL Times (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "nl-nltimes"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "The Controlled Cannabis Supply Chain Experiment entered its experimental phase on April 7, 2025. Coffeeshops in the participating towns may now sell only cannabis from licensed growers, and researchers are measuring the effects on crime, safety and public health.",
+    "source_ids": [
+     "nl-gov-exp",
+     "nl-gov-bg"
+    ]
+   }
+  },
+  "UY": {
+   "name": "Uruguay",
+   "page": "world-uruguay.html",
+   "summary": "The first country to regulate the whole market, in 2013. Residents register for one of three routes: grow at home, join a club, or buy at a pharmacy.",
+   "note": "",
+   "answers": {
+    "adult-use": {
+     "status": "allowed",
+     "short": "Yes, for registered residents",
+     "detail": "Uruguay regulated home growing, cannabis clubs and pharmacy sales in 2013, the first country to do so. Users must register in a national registry and can use only one of the three routes at a time.",
+     "citation": "Pardal et al.; Rychert et al. (research)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "uy-pardal",
+      "uy-rychert"
+     ]
+    },
+    "buying": {
+     "status": "limited",
+     "short": "Pharmacies or clubs, 40 grams a month",
+     "detail": "The government sets pharmacy prices and limits total production. Buyers at pharmacies and clubs can get at most 40 grams a month.",
+     "citation": "Rychert et al. (research)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "uy-rychert"
+     ]
+    },
+    "home-grow": {
+     "status": "allowed",
+     "short": "Up to 6 plants, registered with IRCCA",
+     "detail": "Home growers register with IRCCA, the national cannabis regulator, and may grow up to six plants.",
+     "citation": "Government of Uruguay; Rio Times (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "uy-gub",
+      "uy-riotimes"
+     ]
+    },
+    "border": {
+     "status": "limited",
+     "short": "Visitors have no legal route",
+     "detail": "Only residents can register, so tourists have no legal way to get cannabis. IRCCA's director has said this pushes visitors to the illegal market.",
+     "citation": "Rio Times (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "uy-riotimes"
+     ]
+    }
+   }
+  },
+  "TH": {
+   "name": "Thailand",
+   "page": "world-thailand.html",
+   "summary": "Decriminalized in 2022, then pulled back. Since June 26, 2025 cannabis flower is a controlled herb, and shops may sell buds only against a medical prescription.",
+   "note": "",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No. Prescription only",
+     "detail": "Under the Ministry of Public Health's 2025 notification, cannabis flower is a controlled herb. The narcotics board says buds may be sold to the public only against a prescription covering no more than 30 days.",
+     "citation": "Office of the Narcotics Control Board, via The Nation (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "th-nation-oncb",
+      "th-tilleke"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Yes, by prescription",
+     "detail": "Sales of cannabis flower to the public are limited to people with a valid prescription from a qualified practitioner.",
+     "citation": "The Nation (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "th-nation-gov"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "Up to 10 years for smuggling",
+     "detail": "Taking cannabis out of the country can mean up to 10 years in prison, and bringing it in carries the same maximum.",
+     "citation": "The Nation (news); Fox News",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "th-nation-gov",
+      "th-fox"
+     ]
+    }
+   }
   }
  },
  "canada_provinces": [
@@ -444,6 +649,33 @@
    "tx-norml"
   ]
  },
+ "groups": [
+  {
+   "id": "legal",
+   "label": "Legal for adults",
+   "codes": [
+    "CA",
+    "UY",
+    "DE"
+   ]
+  },
+  {
+   "id": "gray",
+   "label": "Tolerated, court-driven or pulled back",
+   "codes": [
+    "NL",
+    "MX",
+    "TH"
+   ]
+  },
+  {
+   "id": "strict",
+   "label": "Medical only",
+   "codes": [
+    "GB"
+   ]
+  }
+ ],
  "next_up": [
   "Malta",
   "U.S. Virgin Islands",
@@ -727,6 +959,134 @@
    "publisher": "NORML",
    "title": "Texas laws and penalties",
    "url": "https://norml.org/laws/texas-penalties-2/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-bmg-faq",
+   "kind": "government",
+   "publisher": "Federal Ministry of Health (Germany)",
+   "title": "FAQ on the Cannabis Act",
+   "url": "https://bundesgesundheitsministerium.de/en/themen/cannabis/faq-cannabis-act.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-breg",
+   "kind": "government",
+   "publisher": "Federal Government of Germany",
+   "title": "FAQ zur Legalisierung von Cannabis",
+   "url": "https://www.bundesregierung.de/breg-de/aktuelles/cannabis-legalisierung-2213640",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-breg-import",
+   "kind": "government",
+   "publisher": "Federal Government of Germany",
+   "title": "FAQ zur Legalisierung von Cannabis (import and clubs)",
+   "url": "https://www.bundesregierung.de/breg-de/service/archiv-bundesregierung/cannabis-legalisierung-2213640",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-bmg-med",
+   "kind": "government",
+   "publisher": "Federal Ministry of Health (Germany)",
+   "title": "Cannabis als Medizin: Fragen und Antworten",
+   "url": "https://www.bundesgesundheitsministerium.de/service/begriffe-von-a-z/c/cannabis/faq-cannabis-als-medizin.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-cms",
+   "kind": "organization",
+   "publisher": "CMS (law firm)",
+   "title": "Cannabis law and legislation in Germany",
+   "url": "https://cms.law/en/int/expert-guides/cms-expert-guide-to-a-legal-roadmap-to-cannabis/germany",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nl-bizgov",
+   "kind": "government",
+   "publisher": "Business.gov.nl (Netherlands Enterprise Agency)",
+   "title": "Closed cannabis supply chain trial and toleration policy",
+   "url": "https://business.gov.nl/amendment/closed-cannabis-supply-chain-trial",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nl-gov-exp",
+   "kind": "government",
+   "publisher": "Government of the Netherlands",
+   "title": "Experimental phase of the closed coffee shop chain experiment starts on 7 April 2025",
+   "url": "https://www.government.nl/latest/news/2025/04/02/experimental-phase-of-the-closed-coffee-shop-chain-experiment-weed-experiment-starts-on-april-7th",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nl-gov-bg",
+   "kind": "government",
+   "publisher": "Government of the Netherlands",
+   "title": "Controlled cannabis supply chain experiment: background",
+   "url": "https://www.government.nl/topics/controlled-cannabis-supply-chain-experiment/background-information-and-experiment-design",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nl-nltimes",
+   "kind": "news",
+   "publisher": "NL Times",
+   "title": "One year of the Dutch regulated cannabis experiment (Apr 7 2026)",
+   "url": "https://nltimes.nl/2026/04/07/one-year-dutch-regulated-cannabis-experiment-apparent-success-fines-issued",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uy-pardal",
+   "kind": "organization",
+   "publisher": "Pardal, Queirolo, Repetto and Rychert (International Journal of Drug Policy)",
+   "title": "A decade of regulated Cannabis Social Clubs in Uruguay",
+   "url": "https://mro.massey.ac.nz/bitstreams/f0694219-69fe-4819-a2d1-4a0b5ecad293/download",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uy-rychert",
+   "kind": "organization",
+   "publisher": "Massey University research repository",
+   "title": "For-profit organisations in Uruguay's recreational cannabis market",
+   "url": "https://mro.massey.ac.nz/bitstreams/4e4e41c4-a91d-4b42-8ac2-991582906fa8/download",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uy-gub",
+   "kind": "government",
+   "publisher": "Government of Uruguay",
+   "title": "Registros IRCCA (home growers, buyers, membership clubs)",
+   "url": "https://www.gub.uy/tramites/registros-ircca",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uy-riotimes",
+   "kind": "news",
+   "publisher": "The Rio Times",
+   "title": "Uruguay wants to sell legal weed to tourists (2026)",
+   "url": "https://www.riotimesonline.com/uruguay-wants-to-sell-legal-weed-to-tourists",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "th-nation-oncb",
+   "kind": "news",
+   "publisher": "The Nation (Thailand)",
+   "title": "Cannabis buds remain prescription-only, ONCB warns retailers (Jul 12 2026)",
+   "url": "https://www.nationthailand.com/news/40068540",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "th-nation-gov",
+   "kind": "news",
+   "publisher": "The Nation (Thailand)",
+   "title": "Thailand strengthens controls on cannabis flower sales and exports (Jul 17 2026)",
+   "url": "https://www.nationthailand.com/news/40068733",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "th-tilleke",
+   "kind": "organization",
+   "publisher": "Tilleke & Gibbins",
+   "title": "Thailand's new cannabis controls impact doctors, dispensaries, and growers",
+   "url": "https://www.tilleke.com/insights/thailands-new-cannabis-controls-impact-doctors-dispensaries-and-growers/",
    "retrieved_on": "2026-11-19"
   }
  ]
