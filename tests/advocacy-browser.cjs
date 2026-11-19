@@ -32,7 +32,7 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=r
   const beforeInvalid=await page.locator('#letter').inputValue();await page.locator('#restore-work').setInputFiles({name:'invalid.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({version:2,fields:{recipient:'changed'},priorities:['homegrow']}))});await page.waitForFunction(()=>document.getElementById('status').textContent.includes('could not be restored'));assert.equal(await page.locator('#letter').inputValue(),beforeInvalid);
   const readableEvent=page.waitForEvent('download');await page.locator('#download-readable').click();const readable=await readableEvent;assert.match(fs.readFileSync(await readable.path(),'utf8'),/OHIO CANNABIS ADVOCACY NOTES/);
   assert.equal(await page.locator('#letter-actions a').getAttribute('target'),'_blank');
-  await page.locator('#equity summary').click();await page.locator('[data-priorities]').click();assert.equal(await page.locator('input[name="priority"]:checked').count(),2);assert(await page.locator('input[value="equity"]').isChecked());
+  await page.locator('#equity summary').click();await page.locator('#equity [data-priorities]').click();assert.equal(await page.locator('input[name="priority"]:checked').count(),2);assert(await page.locator('input[value="equity"]').isChecked());
   page.once('dialog',dialog=>dialog.accept());await page.locator('#clear-work').click();assert.equal(await page.locator('#letter').inputValue(),'');assert.equal(await page.evaluate(()=>sessionStorage.length),0);
 
   await page.setViewportSize({width:1280,height:900});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
