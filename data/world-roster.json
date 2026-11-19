@@ -109,8 +109,8 @@
 "iso": "AU",
 "name": "Australia",
 "display": "Australia",
-"status": "queued",
-"page": null,
+"status": "deep",
+"page": "world-australia.html",
 "queue": 12
 },
 {

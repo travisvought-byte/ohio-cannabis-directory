@@ -1526,6 +1526,151 @@
      "Patients pay. Cannabis is outside the government health basket."
     ]
    }
+  },
+  "AU": {
+   "name": "Australia",
+   "page": "world-australia.html",
+   "summary": "Adult use is illegal almost everywhere. The exception is the Australian Capital Territory, where adults may keep up to 50 grams and grow two plants at home, though nothing can be sold or shared. Medicinal cannabis is prescribed nationwide and dispensed by pharmacies.",
+   "note": "Each state and territory writes its own drug laws, so check the place you are in. Dollar amounts are Australian dollars.",
+   "answers": {
+    "adult-use": {
+     "status": "varies-locally",
+     "short": "Only in the Australian Capital Territory",
+     "detail": "Since January 31, 2020, adults 18 and over in the Australian Capital Territory, which includes Canberra, may possess small amounts and use it at home. Using it in public is still an offence there. Everywhere else adult use is illegal, and selling is illegal in every state and territory. Commonwealth law also applies across Australia, including the ACT, and ACT Policing says its officers can use either law.",
+     "citation": "ACT Government, Cannabis; ACT Policing, Drugs and the law; healthdirect, Cannabis (reviewed Feb 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "au-act-gov",
+      "au-act-police",
+      "au-healthdirect-cannabis"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Yes, by prescription through a pharmacy",
+     "detail": "A doctor or other registered prescriber can prescribe medicinal cannabis anywhere in Australia. Most products are unapproved medicines, so the prescriber first goes through the Therapeutic Goods Administration's Special Access or Authorised Prescriber scheme, and may also need approval from the state or territory health department. A doctor can apply to prescribe it for any condition but may have to show evidence it is likely to help. A pharmacist dispenses the product. Only one cannabis medicine, for certain kinds of epilepsy, is subsidised by the Pharmaceutical Benefits Scheme, so most patients pay the full price, which healthdirect says can run to thousands of dollars a year.",
+     "citation": "health.gov.au, Other ways to access medicines; healthdirect, Medicinal cannabis (reviewed Feb 2026); Better Health Channel, Victoria (reviewed 2019)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "au-health-access",
+      "au-healthdirect-medicinal",
+      "au-betterhealth"
+     ]
+    },
+    "buying": {
+     "status": "medical-only",
+     "short": "Pharmacies only, with a prescription",
+     "detail": "No shop anywhere in Australia may sell cannabis for adult use. That includes the ACT, where selling stays illegal even from home. The only lawful purchase is a prescribed medicinal product dispensed by a pharmacist.",
+     "citation": "ACT Government, Cannabis; healthdirect, Cannabis and Medicinal cannabis (reviewed Feb 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "au-act-gov",
+      "au-healthdirect-cannabis",
+      "au-healthdirect-medicinal"
+     ]
+    },
+    "possession": {
+     "status": "varies-locally",
+     "short": "50 grams in the ACT; an offence elsewhere",
+     "detail": "Adults in the ACT may hold up to 50 grams of dried cannabis or 150 grams of fresh cannabis. Possession is illegal in New South Wales, Victoria, Queensland, Western Australia and Tasmania. In South Australia and the Northern Territory a small amount is not a criminal offence but can bring a fine. A University of New South Wales review of the rules as of May 2024 put South Australia's fine at A$250 to A$400 for up to 100 grams, and found police elsewhere can caution or divert instead of charging: under 30 grams in New South Wales, up to 50 grams in Victoria and Queensland, and up to 10 grams in Western Australia.",
+     "citation": "ACT Policing, Drugs and the law; healthdirect, Cannabis (reviewed Feb 2026); UNSW Drug Policy Modelling Program, Bulletin No. 31, June 2024 (research)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "au-act-police",
+      "au-healthdirect-cannabis",
+      "au-dpmp-bulletin31"
+     ]
+    },
+    "sharing": {
+     "status": "not-permitted",
+     "short": "No. Even a gift is an offence in the ACT",
+     "detail": "The ACT allows personal possession only. Selling, sharing or giving cannabis to another person is an offence there, and that covers plants and seeds. It is illegal to distribute cannabis in every other state and territory as well.",
+     "citation": "ACT Policing, Drugs and the law; ACT Government, Cannabis; healthdirect, Cannabis (reviewed Feb 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "au-act-police",
+      "au-act-gov",
+      "au-healthdirect-cannabis"
+     ]
+    },
+    "home-grow": {
+     "status": "varies-locally",
+     "short": "Two plants per adult in the ACT only",
+     "detail": "Adults in the ACT may grow up to two plants each at home, with a maximum of four per household. Hydroponics and other artificial cultivation are an offence, and so is growing where the public can reach the plants. Growing is illegal in every other state and territory, and healthdirect says that applies to people with a prescription too.",
+     "citation": "ACT Policing, Drugs and the law; ACT Government, Cannabis; healthdirect, Medicinal cannabis (reviewed Feb 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "au-act-police",
+      "au-act-gov",
+      "au-healthdirect-medicinal"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "Any THC is an offence in NSW, Victoria and the ACT",
+     "detail": "It is illegal to drive under the effects of cannabis in every state and territory, and a positive roadside test for THC brings penalties. In New South Wales, Victoria and the ACT the offence is having any THC present, impaired or not. In New South Wales and Victoria that applies to patients with a prescription too, and the ACT applies its rule even though possession is legal there. In New South Wales a first offence currently brings a fine and a three-month licence suspension. Tasmania's law is different: there is no offence when the drug was obtained and administered in line with the state's Poisons Act. A South Australian MP told parliament in March 2025 that this does not cover prescriptions written outside Tasmania. Since March 2025 Victorian magistrates can decide not to cancel the licence of an unimpaired patient, a news report says.",
+     "citation": "healthdirect (reviewed Feb 2026); ACT Policing; Better Health Channel, Victoria; NSW Government release, Jun 25 2026; Road Safety (Alcohol and Drugs) Act 1970 (Tas) s. 6A; SA Hansard, Mar 5 2025; CarExpert, Sep 21 2026 (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "au-healthdirect-cannabis",
+      "au-healthdirect-medicinal",
+      "au-act-police",
+      "au-betterhealth",
+      "au-nsw-driving-release",
+      "au-tas-rsada",
+      "au-sa-hansard",
+      "au-carexpert"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "No, except prescribed medicine you carry yourself",
+     "detail": "Cannabis cannot be brought into Australia without permission. The Australian Border Force has warned that cannabis and CBD products imported without approval from the Office of Drug Control are seized and the importer may be prosecuted, and that they cannot come in under the personal importation scheme. A traveller can carry prescribed medicinal cannabis under the traveller's exemption: up to three months' supply for yourself or an immediate family member travelling with you, with a prescription from a medical practitioner, in its original packaging and ready to declare on arrival. The New South Wales Government's medicinal cannabis site warns that the medicine must have been supplied under that prescription, and that cannabis obtained another way may not meet the import rules. Inside Australia the ACT's rules end at its border: possessing cannabis in New South Wales is an offence.",
+     "citation": "Australian Border Force release, Jul 5 2021; Office of Drug Control, Travelling with medicines; NSW Government, Travelling with cannabis medicine; Better Health Channel, Victoria (reviewed 2019); ACT Government, Cannabis",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "au-abf-2021",
+      "au-odc-travel",
+      "au-nsw-cmc-travel",
+      "au-betterhealth",
+      "au-act-gov"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "New South Wales is changing its drug-driving law for patients. A bill that passed both houses on September 17, 2026 lets patients with an unrestricted licence register with Transport for NSW, show a valid prescription and complete an online course. A registered patient whose lab result is under 50 nanograms of THC per millilitre of saliva faces no action. At or above that, the first two detections in two years bring warnings and a third brings a fine and a suspension of at least three months. Learner, provisional and commercial drivers are excluded, and a positive roadside test still means 24 hours off the road. Reports in late September said the law was awaiting assent and a start date, with registration expected in late 2026 or early 2027. We could not confirm that it has started.",
+    "source_ids": [
+     "au-nsw-driving-release",
+     "au-carexpert",
+     "au-cdl-driving"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Australia",
+    "source_ids": [
+     "au-dpmp-explainer",
+     "au-dpmp-bulletin31",
+     "au-act-gov",
+     "au-act-police",
+     "au-healthdirect-cannabis",
+     "au-healthdirect-medicinal",
+     "au-nsw-driving-release",
+     "au-tas-rsada",
+     "au-carexpert",
+     "au-aph-report",
+     "au-hempgazette"
+    ],
+    "points": [
+     "Six states and two territories each write their own drug laws, with Commonwealth law on top, so the answer changes when you cross a state line.",
+     "The ACT is the only place where adults may have and grow cannabis, and it never legalised buying. Selling, sharing and gifting, plants and seeds included, are still offences.",
+     "ACT home growers may not use hydroponics or other artificial cultivation, and no household may have more than four plants.",
+     "Commonwealth law still makes possession an offence in the ACT. ACT Policing says its officers can use either law. A University of New South Wales explainer reports the view that a Commonwealth prosecution is unlikely in practice.",
+     "South Australia and the Northern Territory fine small amounts instead of prosecuting. Other states rely on police cautions and diversion, each with its own gram limit.",
+     "Medicinal cannabis is dispensed by ordinary pharmacies, but most products are unapproved medicines and only one, for epilepsy, is subsidised.",
+     "A prescription does not protect a driver from a positive roadside test in New South Wales or Victoria. Tasmania's law has an exception for prescribed use, and New South Wales passed a registration scheme for patients in September 2026.",
+     "A bill to legalise cannabis nationally was voted down in the Senate on November 27, 2024, 24 votes to 13, after a Senate committee recommended in May 2024 that it not pass."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -1844,7 +1989,8 @@
    "label": "Medical programs, adult use illegal",
    "codes": [
     "IL",
-    "GB"
+    "GB",
+    "AU"
    ]
   }
  ],
@@ -1852,7 +1998,6 @@
   "U.S. Virgin Islands",
   "Guam",
   "Northern Mariana Islands",
-  "Australia",
   "New Zealand",
   "Ireland",
   "South Africa",
@@ -3434,6 +3579,150 @@
    "publisher": "Food Standards Agency (via GOV.UK)",
    "title": "CBD novel food applications: recommendations to ministers on first authorisations (Sep 3 2026)",
    "url": "https://www.gov.uk/government/publications/food-standards-agency-september-2026-board-meeting/cbd-novel-food-applications-recommendations-to-ministers-on-first-authorisations",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "au-act-gov",
+   "kind": "government",
+   "publisher": "ACT Government",
+   "title": "Cannabis",
+   "url": "https://act.gov.au/cannabis/home",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "au-act-police",
+   "kind": "government",
+   "publisher": "ACT Policing",
+   "title": "Drugs and the law",
+   "url": "https://police.act.gov.au/community-safety/alcohol-and-drugs/drugs-and-the-law",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "au-healthdirect-cannabis",
+   "kind": "government",
+   "publisher": "healthdirect (Australian government-funded health service)",
+   "title": "Cannabis (marijuana), last reviewed February 2026",
+   "url": "https://www.healthdirect.gov.au/marijuana-and-mental-health",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "au-healthdirect-medicinal",
+   "kind": "government",
+   "publisher": "healthdirect (Australian government-funded health service)",
+   "title": "Medicinal cannabis, last reviewed February 2026",
+   "url": "https://www.healthdirect.gov.au/medicinal-cannabis",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "au-health-access",
+   "kind": "government",
+   "publisher": "Australian Government, health.gov.au",
+   "title": "Other ways to access medicines",
+   "url": "https://www.health.gov.au/topics/medicines/access/other-ways-to-access",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "au-betterhealth",
+   "kind": "government",
+   "publisher": "Better Health Channel (Victorian Government)",
+   "title": "Medicinal cannabis (page reviewed June 2019)",
+   "url": "https://betterhealth.vic.gov.au/health/conditionsandtreatments/medicinal-cannabis",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "au-dpmp-bulletin31",
+   "kind": "research",
+   "publisher": "Drug Policy Modelling Program, UNSW Sydney (O'Reilly and Ritter)",
+   "title": "Non-criminal responses to drug use and personal possession in Australia, DPMP Bulletin No. 31 (June 2024)",
+   "url": "https://unsw.edu.au/content/dam/pdfs/ada/sprc/research-reports/dpmp-drug-summit-2024-explainers/2024-10-dpmp-bulletin-no-31-non-criminal-responses-to-drug-use-and-personal-possession-in-australia.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "au-dpmp-explainer",
+   "kind": "research",
+   "publisher": "Drug Policy Modelling Program, UNSW Sydney",
+   "title": "How do Commonwealth drug laws relate to state/territory drug laws? (October 2024)",
+   "url": "https://unsw.edu.au/content/dam/pdfs/ada/sprc/research-reports/dpmp-drug-summit-2024-explainers/2024-10-how-do-commonwealth-drug-laws-relate-to-stateterritory-drug-laws-dpmp-2024-v2.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "au-nsw-driving-release",
+   "kind": "government",
+   "publisher": "NSW Government",
+   "title": "Medicinal cannabis driving reforms introduced to Parliament by the Minns Labor Government (Jun 25 2026)",
+   "url": "https://www.nsw.gov.au/ministerial-releases/medicinal-cannabis-driving-reforms-introduced-to-parliament-by-minns-labor-government",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "au-carexpert",
+   "kind": "news",
+   "publisher": "CarExpert",
+   "title": "NSW to relax drug-driving laws for medicinal cannabis users (Sep 21 2026)",
+   "url": "https://www.carexpert.com.au/car-news/nsw-to-relax-drug-driving-laws-for-medicinal-cannabis-users",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "au-cdl-driving",
+   "kind": "organization",
+   "publisher": "Criminal Defence Lawyers Australia (law firm)",
+   "title": "New Medicinal Cannabis Driving Laws in NSW (Sep 28 2026)",
+   "url": "https://www.criminaldefencelawyers.com.au/blog/new-medicinal-cannabis-driving-laws-in-nsw/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "au-tas-rsada",
+   "kind": "statute",
+   "publisher": "Tasmanian Legislation",
+   "title": "Road Safety (Alcohol and Drugs) Act 1970, section 6A",
+   "url": "https://www.legislation.tas.gov.au/view/whole/html/inforce/current/act-1970-077",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "au-sa-hansard",
+   "kind": "government",
+   "publisher": "Parliament of South Australia",
+   "title": "Hansard, Legislative Council, March 5 2025: question from the Hon. T.A. Franks on medicinal cannabis and drug driving",
+   "url": "https://hansardsearch.parliament.sa.gov.au/daily/uh/2025-03-05/extract/13/download",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "au-abf-2021",
+   "kind": "government",
+   "publisher": "Australian Border Force",
+   "title": "Increase in seizures prompts warning to potential importers of products containing cannabis (Jul 5 2021)",
+   "url": "https://www.abf.gov.au/newsroom-subsite/Pages/increase-in-seizures-warning-potential-importers-cannabis-05-07-2021.aspx",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "au-odc-travel",
+   "kind": "government",
+   "publisher": "Office of Drug Control (Australian Government)",
+   "title": "Travelling to or from Australia with medicines and medical devices",
+   "url": "https://www.odc.gov.au/node/1215",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "au-nsw-cmc-travel",
+   "kind": "government",
+   "publisher": "NSW Government, medicinalcannabis.nsw.gov.au",
+   "title": "Travelling with cannabis medicine",
+   "url": "https://www.medicinalcannabis.nsw.gov.au/patients/travel",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "au-aph-report",
+   "kind": "government",
+   "publisher": "Parliament of Australia, Senate Legal and Constitutional Affairs Legislation Committee",
+   "title": "Legalising Cannabis Bill 2023: report (May 2024)",
+   "url": "https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Legal_and_Constitutional_Affairs/LegalisingCannabis/Report",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "au-hempgazette",
+   "kind": "news",
+   "publisher": "Hemp Gazette",
+   "title": "Australia's Legalising Cannabis Bill 2023 Fails To Pass (Nov 29 2024)",
+   "url": "https://hempgazette.com/?p=10219",
    "retrieved_on": "2026-11-19"
   }
  ]
