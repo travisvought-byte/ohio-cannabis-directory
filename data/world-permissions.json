@@ -1,0 +1,733 @@
+{
+ "schema_version": "1.0.0",
+ "as_of": "2026-11-19",
+ "purpose": "The world section of the-reefer.com: the same kind of plain answers as the state pages, for other countries, plus a travel warning list. Every answer names its sources and the date it was checked. A missing answer means not yet reviewed.",
+ "statuses": {
+  "allowed": "Allowed",
+  "medical-only": "Medical patients only",
+  "limited": "Limited",
+  "not-permitted": "Not permitted",
+  "varies-locally": "Varies locally",
+  "not-reviewed": "Not yet reviewed"
+ },
+ "questions": [
+  {
+   "id": "adult-use",
+   "label": "Can adults use it without a prescription?"
+  },
+  {
+   "id": "medical",
+   "label": "Is there a medical program?"
+  },
+  {
+   "id": "buying",
+   "label": "Where can adults buy it legally?"
+  },
+  {
+   "id": "possession",
+   "label": "How much can an adult carry?"
+  },
+  {
+   "id": "sharing",
+   "label": "Can adults share it?"
+  },
+  {
+   "id": "home-grow",
+   "label": "Can adults grow it at home?"
+  },
+  {
+   "id": "border",
+   "label": "Can you take it across the border?"
+  }
+ ],
+ "countries": {
+  "CA": {
+   "name": "Canada",
+   "page": "world-canada.html",
+   "summary": "Legal for adults nationwide since October 17, 2018. Provinces set the age, who sells it and some home-grow rules.",
+   "note": "",
+   "answers": {
+    "adult-use": {
+     "status": "allowed",
+     "short": "Yes. 18 federally, 19 in most provinces, 21 in Quebec",
+     "detail": "Federal law sets 18 as the minimum and lets provinces raise it. Ontario, British Columbia and Manitoba use 19, Alberta uses 18 and Quebec raised its age to 21 on January 1, 2020.",
+     "citation": "Cannabis Act (S.C. 2018, c. 16); provincial government pages",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ca-justice",
+      "ca-on",
+      "ca-bc",
+      "ca-ab",
+      "ca-mb-age",
+      "ca-qc-age"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Yes, through Health Canada",
+     "detail": "Medical cannabis stays under Health Canada, separate from the provincial rules for non-medical cannabis.",
+     "citation": "Government of British Columbia; Government of Ontario",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ca-bc",
+      "ca-on"
+     ]
+    },
+    "buying": {
+     "status": "allowed",
+     "short": "Provincially licensed stores and online",
+     "detail": "Buy from a retailer authorized by your province. Where a province has no retail system, adults can buy online from federally licensed producers. Ontario's online store (OCS.ca) supplies the province's authorized stores.",
+     "citation": "Department of Justice Canada; Ontario Cannabis Store",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ca-justice",
+      "ca-ocs"
+     ]
+    },
+    "possession": {
+     "status": "allowed",
+     "short": "30 grams dried in public",
+     "detail": "Adults can carry up to 30 grams of legal dried cannabis, or the equivalent, in public. British Columbia also caps what a household keeps at home at 1,000 grams.",
+     "citation": "Department of Justice Canada; Government of British Columbia",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ca-justice",
+      "ca-bc"
+     ]
+    },
+    "sharing": {
+     "status": "allowed",
+     "short": "Up to 30 grams with another adult",
+     "detail": "Adults can share up to 30 grams of legal cannabis with other adults.",
+     "citation": "Department of Justice Canada",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ca-justice"
+     ]
+    },
+    "home-grow": {
+     "status": "varies-locally",
+     "short": "4 plants per home, except Quebec",
+     "detail": "Federal law allows 4 plants per residence, from licensed seed or seedlings. Quebec bans home growing, and the Supreme Court of Canada upheld that ban in 2023. Manitoba ended its ban on May 1, 2025 and now allows 4 plants per household for people 19 and older.",
+     "citation": "Cannabis Act; Murray-Hall v. Quebec, 2023 SCC 10; Government of Manitoba",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ca-justice",
+      "ca-hc-facts",
+      "ca-scc-murray-hall",
+      "ca-mb-grow"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "Never across the border",
+     "detail": "Cannabis cannot be taken into or out of Canada, including to or from US states where it is legal. This is a federal offence under the Cannabis Act.",
+     "citation": "Cannabis Act",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ca-act"
+     ]
+    }
+   }
+  },
+  "GB": {
+   "name": "United Kingdom",
+   "page": "world-united-kingdom.html",
+   "summary": "Illegal for recreational use. Doctors on the specialist register have been able to prescribe cannabis-based medicines since November 2018.",
+   "note": "",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No. Cannabis is a Class B drug",
+     "detail": "Possession carries up to 5 years in prison, an unlimited fine, or both. Supply and production carry up to 14 years.",
+     "citation": "GOV.UK, Drugs penalties",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "uk-penalties"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Warning or on-the-spot fine for small amounts",
+     "detail": "Police can give a warning or an on-the-spot fine of up to £90 for cannabis. Repeat offences can go up to the maximum possession penalty.",
+     "citation": "GOV.UK, Drugs penalties",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "uk-penalties"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Specialist prescription only",
+     "detail": "Only specialist doctors can start a prescription for a cannabis-based medicine. A GP can continue one under a shared-care arrangement. Most patients go through private clinics; one 2026 estimate put UK patients at about 80,000 to 90,000.",
+     "citation": "Chambers practice guide 2026 (secondary); Patient.info (secondary)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "uk-chambers",
+      "uk-patientinfo"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal retail",
+     "detail": "There is no legal sale outside a prescription.",
+     "citation": "GOV.UK, Drugs penalties",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "uk-penalties"
+     ]
+    }
+   }
+  },
+  "MX": {
+   "name": "Mexico",
+   "page": "world-mexico.html",
+   "summary": "No legal market. Courts have struck down the total ban on personal use, but adults need a permit from COFEPRIS, the federal health regulator, to grow and use their own. Selling is still a crime.",
+   "note": "Most official sources are in Spanish. Answers summarize them in English.",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "Only with a COFEPRIS permit",
+     "detail": "The Supreme Court ruled the absolute ban on recreational use unconstitutional. COFEPRIS says adults can use cannabis for personal use only with its health authorization, and that this does not legalize a market.",
+     "citation": "COFEPRIS statements reported July 2026 (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "mx-cofepris-publimetro",
+      "mx-razon"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No. Selling is still illegal",
+     "detail": "COFEPRIS has stated that the Supreme Court never recognized a right to sell cannabis.",
+     "citation": "COFEPRIS statements reported July 2026 (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "mx-cofepris-publimetro"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "5 grams under the health law; courts are loosening this",
+     "detail": "The General Health Law sets 5 grams as the personal amount. In July 2026 the Supreme Court declared part of that rule unconstitutional, limiting prosecutors' power to charge users who carry more for personal use. Congress has not passed a law to replace it.",
+     "citation": "Ley General de Salud; Supreme Court ruling reported July 15 2026 (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "mx-scjn-jul2026",
+      "mx-expansion"
+     ]
+    },
+    "home-grow": {
+     "status": "limited",
+     "short": "Only with a COFEPRIS permit",
+     "detail": "A permit lets an adult plant, grow, harvest, prepare, possess and carry cannabis for personal use only.",
+     "citation": "La Razón, July 8 2026 (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "mx-razon"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Yes, under the 2021 regulation",
+     "detail": "The medical cannabis regulation under the General Health Law was published in the Diario Oficial on January 12, 2021. It covers production, research and medical use, overseen by COFEPRIS.",
+     "citation": "Reglamento published in the DOF, January 12 2021",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "mx-dof-2021"
+     ]
+    }
+   }
+  }
+ },
+ "canada_provinces": [
+  {
+   "name": "Alberta",
+   "age": "18",
+   "age_source_ids": [
+    "ca-ab"
+   ],
+   "home_grow": "4 plants, indoors",
+   "home_grow_source_ids": [
+    "ca-ab"
+   ]
+  },
+  {
+   "name": "British Columbia",
+   "age": "19",
+   "age_source_ids": [
+    "ca-bc"
+   ],
+   "home_grow": "4 plants per household",
+   "home_grow_source_ids": [
+    "ca-bc"
+   ]
+  },
+  {
+   "name": "Manitoba",
+   "age": "19",
+   "age_source_ids": [
+    "ca-mb-age"
+   ],
+   "home_grow": "4 plants per household (since May 1, 2025)",
+   "home_grow_source_ids": [
+    "ca-mb-grow"
+   ]
+  },
+  {
+   "name": "New Brunswick",
+   "age": null,
+   "age_source_ids": [],
+   "home_grow": null,
+   "home_grow_source_ids": []
+  },
+  {
+   "name": "Newfoundland and Labrador",
+   "age": null,
+   "age_source_ids": [],
+   "home_grow": null,
+   "home_grow_source_ids": []
+  },
+  {
+   "name": "Northwest Territories",
+   "age": null,
+   "age_source_ids": [],
+   "home_grow": null,
+   "home_grow_source_ids": []
+  },
+  {
+   "name": "Nova Scotia",
+   "age": "19",
+   "age_source_ids": [
+    "ca-ns"
+   ],
+   "home_grow": "4 plants per household",
+   "home_grow_source_ids": [
+    "ca-ns"
+   ]
+  },
+  {
+   "name": "Nunavut",
+   "age": null,
+   "age_source_ids": [],
+   "home_grow": null,
+   "home_grow_source_ids": []
+  },
+  {
+   "name": "Ontario",
+   "age": "19",
+   "age_source_ids": [
+    "ca-on"
+   ],
+   "home_grow": "4 plants per residence",
+   "home_grow_source_ids": [
+    "ca-on"
+   ]
+  },
+  {
+   "name": "Prince Edward Island",
+   "age": null,
+   "age_source_ids": [],
+   "home_grow": null,
+   "home_grow_source_ids": []
+  },
+  {
+   "name": "Quebec",
+   "age": "21",
+   "age_source_ids": [
+    "ca-qc-age"
+   ],
+   "home_grow": "Banned (upheld by the Supreme Court, 2023)",
+   "home_grow_source_ids": [
+    "ca-scc-murray-hall",
+    "ca-qc-cbc"
+   ]
+  },
+  {
+   "name": "Saskatchewan",
+   "age": null,
+   "age_source_ids": [],
+   "home_grow": null,
+   "home_grow_source_ids": []
+  },
+  {
+   "name": "Yukon",
+   "age": null,
+   "age_source_ids": [],
+   "home_grow": null,
+   "home_grow_source_ids": []
+  }
+ ],
+ "travel_warnings": [
+  {
+   "place": "Singapore",
+   "risk": "Death penalty possible",
+   "detail": "Possession of even very small quantities can lead to the death penalty, according to UK travel advice. Singapore classes cannabis as a Class A drug, with up to 10 years in prison and a fine of up to S$20,000 for consumption. Drug use detected on arrival can mean arrest.",
+   "source_ids": [
+    "sg-fcdo",
+    "sg-cnb",
+    "sg-state"
+   ],
+   "reviewed_on": "2026-11-19"
+  },
+  {
+   "place": "Indonesia",
+   "risk": "Death penalty possible",
+   "detail": "Zero tolerance. Possessing, using, making or trafficking drugs can bring long prison sentences or the death penalty. Airports scan transit passengers' bags for cannabis.",
+   "source_ids": [
+    "id-fcdo"
+   ],
+   "reviewed_on": "2026-11-19"
+  },
+  {
+   "place": "Malaysia",
+   "risk": "Long prison terms",
+   "detail": "Possession, trafficking and manufacture of any illegal drug, including cannabis, are serious offences. British travellers have been caught carrying cannabis while only transiting. Australia lists Malaysia among countries that apply the death penalty to drug offences.",
+   "source_ids": [
+    "my-fcdo",
+    "au-smartraveller"
+   ],
+   "reviewed_on": "2026-11-19"
+  },
+  {
+   "place": "United Arab Emirates",
+   "risk": "Cannabis in your blood counts",
+   "detail": "UAE authorities treat drugs found in your bloodstream as possession, so use before arrival can lead to charges. Some CBD products are illegal.",
+   "source_ids": [
+    "ae-fcdo"
+   ],
+   "reviewed_on": "2026-11-19"
+  },
+  {
+   "place": "Japan",
+   "risk": "Up to 7 years for use",
+   "detail": "Since December 12, 2024, using cannabis is a crime. Possession, use and transfer each carry up to 7 years in prison, and import carries 1 to 10 years.",
+   "source_ids": [
+    "jp-mhlw",
+    "jp-nippon"
+   ],
+   "reviewed_on": "2026-11-19"
+  },
+  {
+   "place": "South Korea",
+   "risk": "Up to 5 years",
+   "detail": "Possession or use can bring up to 5 years in prison, and smuggling carries much longer terms, followed by deportation and an entry ban (Thai embassy warning).",
+   "source_ids": [
+    "kr-bkk"
+   ],
+   "reviewed_on": "2026-11-19"
+  },
+  {
+   "place": "Thailand",
+   "risk": "Up to 10 years at the border",
+   "detail": "Since June 2026, bringing cannabis across Thailand's border can mean up to 10 years in prison, a fine of up to 500,000 baht, or both.",
+   "source_ids": [
+    "th-fox"
+   ],
+   "reviewed_on": "2026-11-19"
+  },
+  {
+   "place": "China, Vietnam, Sri Lanka",
+   "risk": "Death penalty possible",
+   "detail": "Australia's government lists these among countries that apply the death penalty to drug offences.",
+   "source_ids": [
+    "au-smartraveller"
+   ],
+   "reviewed_on": "2026-11-19"
+  }
+ ],
+ "texas_concentrates": {
+  "text": "In Texas, THC concentrates (vape oil, wax, most edibles) are not treated as marijuana. They are Penalty Group 2 controlled substances, and possessing less than 1 gram is a state jail felony: 180 days to 2 years and a fine of up to $10,000.",
+  "citation": "Tex. Health & Safety Code 481.103 and 481.116; NORML penalty table",
+  "source_ids": [
+   "tx-hsc-481",
+   "tx-norml"
+  ]
+ },
+ "next_up": [
+  "Malta",
+  "U.S. Virgin Islands",
+  "Guam",
+  "Northern Mariana Islands",
+  "Australia",
+  "New Zealand",
+  "Ireland",
+  "South Africa",
+  "Jamaica",
+  "Caribbean islands"
+ ],
+ "sources": [
+  {
+   "id": "ca-justice",
+   "kind": "government",
+   "publisher": "Department of Justice Canada",
+   "title": "Cannabis Legalization and Regulation",
+   "url": "https://justice.gc.ca/eng/cj-jp/cannabis/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-hc-facts",
+   "kind": "government",
+   "publisher": "Health Canada",
+   "title": "The Cannabis Act: The Facts",
+   "url": "https://www.canada.ca/en/health-canada/news/2018/10/backgrounder-the-cannabis-act-the-facts.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-act",
+   "kind": "statute",
+   "publisher": "Justice Laws Website",
+   "title": "Cannabis Act (S.C. 2018, c. 16), current to 2026-06-17, last amended 2026-03-26",
+   "url": "https://laws-lois.justice.gc.ca/eng/acts/C-24.5/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-on",
+   "kind": "government",
+   "publisher": "Government of Ontario",
+   "title": "Cannabis laws",
+   "url": "https://www.ontario.ca/page/cannabis-laws",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-ocs",
+   "kind": "government",
+   "publisher": "Ontario Cannabis Store",
+   "title": "Legal use of cannabis in Ontario",
+   "url": "https://ocs.ca/blogs/whats-legal/legal-use-of-cannabis-in-ontario",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-bc",
+   "kind": "government",
+   "publisher": "Government of British Columbia",
+   "title": "Possession and purchasing limits",
+   "url": "https://www2.gov.bc.ca/gov/content/safety/public-safety/cannabis/possession-and-purchasing-limits",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-ab",
+   "kind": "government",
+   "publisher": "Government of Alberta",
+   "title": "Cannabis legalization in Canada",
+   "url": "https://alberta.ca/cannabis-legalization-in-canada",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-mb-grow",
+   "kind": "government",
+   "publisher": "Government of Manitoba",
+   "title": "You can grow cannabis at home in Manitoba",
+   "url": "https://gov.mb.ca/cannabis/knowthelaw/growathome.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-mb-age",
+   "kind": "government",
+   "publisher": "Government of Manitoba",
+   "title": "You must be 19 years or older",
+   "url": "https://gov.mb.ca/cannabis/knowthelaw/19years.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-ns",
+   "kind": "government",
+   "publisher": "Government of Nova Scotia",
+   "title": "Cannabis laws in Nova Scotia",
+   "url": "https://novascotia.ca/cannabis/laws/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-scc-murray-hall",
+   "kind": "statute",
+   "publisher": "Supreme Court of Canada",
+   "title": "Murray-Hall v. Quebec (Attorney General), 2023 SCC 10, case in brief",
+   "url": "https://www.scc-csc.gc.ca/judgments-jugements/cb/2023/39906",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-qc-cbc",
+   "kind": "news",
+   "publisher": "CBC News",
+   "title": "Ban on homegrown cannabis plants in Quebec upheld in unanimous Supreme Court ruling (Apr 14 2023)",
+   "url": "https://www.cbc.ca/1.6810476",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-qc-age",
+   "kind": "compilation",
+   "publisher": "Wikipedia",
+   "title": "Cannabis in Quebec (legal age raised to 21 on January 1, 2020)",
+   "url": "https://en.wikipedia.org/wiki/Cannabis_in_Quebec",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uk-penalties",
+   "kind": "government",
+   "publisher": "GOV.UK",
+   "title": "Drugs penalties",
+   "url": "https://www.gov.uk/penalties-drug-possession-dealing",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uk-chambers",
+   "kind": "compilation",
+   "publisher": "Chambers and Partners",
+   "title": "Medical Cannabis & Psychedelic Medicines 2026: UK law and practice",
+   "url": "https://chambers.com/practice-guides/guides/medical-cannabis-psychedelic-medicines-2026/uk/law-and-practice",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uk-patientinfo",
+   "kind": "organization",
+   "publisher": "Patient.info",
+   "title": "Medical cannabis prescriptions: the facts behind the headlines (Jan 2026)",
+   "url": "https://patient.info/features/health-news/medical-cannabis-prescriptions-the-facts-behind-the-headlines",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mx-dof-2021",
+   "kind": "statute",
+   "publisher": "Diario Oficial de la Federación",
+   "title": "Reglamento de la Ley General de Salud en materia de control sanitario para la producción, investigación y uso medicinal de la cannabis (Jan 12 2021)",
+   "url": "https://dof.gob.mx/nota_detalle.php%3Fcodigo=5609709%26fecha=12/01/2021",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mx-cofepris-publimetro",
+   "kind": "news",
+   "publisher": "Publimetro México",
+   "title": "Cofepris aclara qué sí y qué no está permitido (Jul 7 2026)",
+   "url": "https://www.publimetro.com.mx/noticias/2026/07/07/esta-prohibido-consumir-cannabis-en-mexico-cofepris-aclara-que-si-y-que-no-esta-permitido/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mx-razon",
+   "kind": "news",
+   "publisher": "La Razón",
+   "title": "¿Qué es el recurso de inconstitucionalidad por el autoconsumo lúdico de cannabis y qué permite? (Jul 8 2026)",
+   "url": "https://www.razon.com.mx/mexico/2026/07/08/que-es-el-recurso-de-inconstitucionalidad-por-el-autoconsumo-ludico-de-cannabis-y-que-permite/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mx-scjn-jul2026",
+   "kind": "news",
+   "publisher": "Última Hora (EFE)",
+   "title": "Corte Suprema de México flexibiliza criterio sobre posesión de marihuana para uso personal (Jul 15 2026)",
+   "url": "https://www.ultimahora.com/corte-suprema-mexico-flexibiliza-criterio-posesion-marihuana-uso-personal-n3001098.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mx-expansion",
+   "kind": "news",
+   "publisher": "Expansión Política",
+   "title": "El vacío legal del cannabis en México (Jun 21 2026)",
+   "url": "https://politica.expansion.mx/mexico/2026/06/21/riesgos-consumo-cannabis-turistas-mundial-2026-mexico",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "sg-fcdo",
+   "kind": "government",
+   "publisher": "GOV.UK (FCDO)",
+   "title": "Singapore travel advice: safety and security",
+   "url": "https://www.gov.uk/foreign-travel-advice/singapore/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "sg-cnb",
+   "kind": "government",
+   "publisher": "Central Narcotics Bureau, Singapore",
+   "title": "Singapore's anti-drug laws on cannabis",
+   "url": "https://www.cnb.gov.sg/educational-resources/myths-and-facts-about-drugs/cannabis/singapore's-anti-drug-laws-on-cannabis",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "sg-state",
+   "kind": "government",
+   "publisher": "U.S. Department of State",
+   "title": "Singapore travel advisory",
+   "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/singapore-travel-advisory.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "my-fcdo",
+   "kind": "government",
+   "publisher": "GOV.UK (FCDO)",
+   "title": "Malaysia travel advice: safety and security",
+   "url": "https://gov.uk/foreign-travel-advice/malaysia/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "id-fcdo",
+   "kind": "government",
+   "publisher": "GOV.UK (FCDO)",
+   "title": "Indonesia travel advice: safety and security",
+   "url": "https://gov.uk/foreign-travel-advice/indonesia/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ae-fcdo",
+   "kind": "government",
+   "publisher": "GOV.UK (FCDO)",
+   "title": "United Arab Emirates travel advice: safety and security",
+   "url": "https://gov.uk/foreign-travel-advice/united-arab-emirates/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "jp-mhlw",
+   "kind": "government",
+   "publisher": "Ministry of Health, Labour and Welfare, Japan",
+   "title": "To all foreigners staying in Japan: drug penalties",
+   "url": "https://www.mhlw.go.jp/content/11120000/001682817.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "jp-nippon",
+   "kind": "news",
+   "publisher": "Nippon.com (Jiji Press)",
+   "title": "Japan implements revised laws to criminalize cannabis use (Dec 12 2024)",
+   "url": "https://nippon.com/en/news/yjj2024121100726",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "au-smartraveller",
+   "kind": "government",
+   "publisher": "Smartraveller (Australian Government)",
+   "title": "Carrying or using drugs",
+   "url": "https://www.smartraveller.gov.au/travel-essentials/following-law/carrying-or-using-drugs",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "kr-bkk",
+   "kind": "news",
+   "publisher": "Bangkok Post",
+   "title": "Travellers reminded cannabis illegal in other countries in the region (Thai embassy in Seoul warning)",
+   "url": "https://www.bangkokpost.com/thailand/general/2336333/travellers-reminded-cannabis-illegal-in-other-countries-in-the-region",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "th-fox",
+   "kind": "news",
+   "publisher": "Fox News",
+   "title": "One cannabis mistake at airport could bring 10 years in prison and $15,000 fine (2026)",
+   "url": "https://www.foxnews.com/travel/cannabis-mistake-airport-could-bring-10-years-prison-15000-fine.amp",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "tx-hsc-481",
+   "kind": "statute",
+   "publisher": "Texas Legislature",
+   "title": "Texas Health and Safety Code, chapter 481 (Controlled Substances Act)",
+   "url": "https://statutes.capitol.texas.gov/Docs/HS/htm/HS.481.htm",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "tx-norml",
+   "kind": "compilation",
+   "publisher": "NORML",
+   "title": "Texas laws and penalties",
+   "url": "https://norml.org/laws/texas-penalties-2/",
+   "retrieved_on": "2026-11-19"
+  }
+ ]
+}
