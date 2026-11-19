@@ -1645,8 +1645,8 @@
 "iso": "ZA",
 "name": "South Africa",
 "display": "South Africa",
-"status": "queued",
-"page": null,
+"status": "deep",
+"page": "world-south-africa.html",
 "queue": 14
 },
 {
