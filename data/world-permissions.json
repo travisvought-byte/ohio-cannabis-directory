@@ -715,41 +715,83 @@
   "TH": {
    "name": "Thailand",
    "page": "world-thailand.html",
-   "summary": "Decriminalized in 2022, then pulled back. Since June 26, 2025 cannabis flower is a controlled herb, and shops may sell buds only against a medical prescription.",
+   "summary": "The first country in Asia to decriminalize, in 2022, and the first to pull back. Since June 26, 2025 cannabis flower is a controlled herb, sold only against a prescription. A bill to make cannabis medical-only went to Parliament in September 2026.",
    "note": "",
    "answers": {
     "adult-use": {
      "status": "not-permitted",
      "short": "No. Prescription only",
-     "detail": "Under the Ministry of Public Health's 2025 notification, cannabis flower is a controlled herb. The narcotics board says buds may be sold to the public only against a prescription covering no more than 30 days.",
-     "citation": "Office of the Narcotics Control Board, via The Nation (news)",
+     "detail": "The government says cannabis is not fully legal. Under the Ministry of Public Health's 2025 notification on controlled herbs, cannabis flower may be bought and sold only with a medical prescription. The narcotics board says a prescription can cover no more than 30 days.",
+     "citation": "Government statement via Thairath; ONCB via The Nation (news)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
+      "th-thairath-gov",
       "th-nation-oncb",
       "th-tilleke"
      ]
     },
     "medical": {
      "status": "allowed",
-     "short": "Yes, by prescription",
-     "detail": "Sales of cannabis flower to the public are limited to people with a valid prescription from a qualified practitioner.",
+     "short": "Yes, by prescription from one of seven professions",
+     "detail": "Licensed shops may sell only to patients with a valid prescription from one of seven recognized practitioners, including medical doctors, Thai traditional medicine doctors, pharmacists and dentists. Since January 2026, every operating dispensary must have a licensed practitioner on site.",
+     "citation": "Tilleke & Gibbins (law firm); The Nation; Thaiger (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "th-tilleke",
+      "th-tilleke-reset",
+      "th-nation-gov",
+      "th-thaiger"
+     ]
+    },
+    "buying": {
+     "status": "limited",
+     "short": "Licensed shops, prescription only, and shrinking",
+     "detail": "Shops still trade under three-year licences that expire between 2026 and 2028. The health minister has said more than half of them will need to become medical facilities to renew. More than 7,000 shops have already closed as the rules tightened.",
      "citation": "The Nation (news)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
-      "th-nation-gov"
+      "th-nation-cabinet",
+      "th-nation-7000"
      ]
     },
     "border": {
      "status": "not-permitted",
      "short": "Up to 10 years for smuggling",
-     "detail": "Taking cannabis out of the country can mean up to 10 years in prison, and bringing it in carries the same maximum.",
-     "citation": "The Nation (news); Fox News",
+     "detail": "It is illegal to carry cannabis out of Thailand, and British travellers have been caught doing it, including while transiting. Smuggling carries up to 10 years in prison, and since June 2026 bringing cannabis in can mean up to 10 years and a fine of up to 500,000 baht.",
+     "citation": "UK FCDO; Thairath; Fox News (news)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
-      "th-nation-gov",
+      "th-fcdo",
+      "th-thairath-gov",
       "th-fox"
      ]
     }
+   },
+   "experiment": {
+    "text": "On September 22, 2026 the cabinet approved a draft Cannabis and Hemp Act that would limit cannabis strictly to medical use, require shops to operate as medical facilities and phase out recreational sales. It now goes to the House. In October 2026 the prime minister also proposed tougher penalties through changes to the Narcotics Act.",
+    "source_ids": [
+     "th-nation-cabinet",
+     "th-star-oct"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Thailand",
+    "source_ids": [
+     "th-ap",
+     "th-tilleke",
+     "th-nation-apr",
+     "th-thairath-gov",
+     "th-nation-cabinet",
+     "th-nation-7000",
+     "th-fcdo"
+    ],
+    "points": [
+     "Thailand dropped cannabis from its narcotics list in 2022, the first Asian country to do so, and dispensaries spread fast, drawing tourists from countries with tough laws.",
+     "Since June 26, 2025 the flower is a controlled herb rather than a narcotic. It is not legal for fun, but it is regulated under traditional medicine law rather than drug law.",
+     "Walk-in sales are over. Shops may sell only against a prescription, and they are being pushed toward becoming clinics.",
+     "The shop count is collapsing as licences expire, with more than 7,000 closures so far.",
+     "Leaving with it is the biggest risk. Travellers have been caught carrying it out, and smuggling carries up to 10 years."
+    ]
    }
   },
   "MT": {
@@ -2056,6 +2098,78 @@
    "publisher": "The Nation (Thailand)",
    "title": "Thailand strengthens controls on cannabis flower sales and exports (Jul 17 2026)",
    "url": "https://www.nationthailand.com/news/40068733",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "th-tilleke-reset",
+   "kind": "organization",
+   "publisher": "Tilleke & Gibbins",
+   "title": "Thailand's Cannabis Reset: Dispensaries to Clinics (2026)",
+   "url": "https://www.tilleke.com/insights/thailands-cannabis-reset-dispensaries-to-clinics/30/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "th-thairath-gov",
+   "kind": "news",
+   "publisher": "Thairath Online",
+   "title": "Government emphasizes cannabis is not fully legalized (Jul 17 2026)",
+   "url": "https://en.thairath.co.th/news/politic/2946820",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "th-nation-cabinet",
+   "kind": "news",
+   "publisher": "The Nation (Thailand)",
+   "title": "Thai cabinet endorses draft cannabis control bill for medical use (Sep 23 2026)",
+   "url": "https://www.nationthailand.com/news/politics/40071386",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "th-nation-7000",
+   "kind": "news",
+   "publisher": "The Nation (Thailand)",
+   "title": "7,000+ cannabis shops close as rules tighten (2026)",
+   "url": "https://www.nationthailand.com/news/policy/40060795",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "th-nation-apr",
+   "kind": "news",
+   "publisher": "The Nation (Thailand)",
+   "title": "Thailand to force cannabis shops into medical model as numbers plunge (Apr 1 2026)",
+   "url": "https://www.nationthailand.com/news/policy/40064558",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "th-thaiger",
+   "kind": "news",
+   "publisher": "Thaiger",
+   "title": "Cannabis in Thailand 2026: Bangkok dispensaries and the new medical-only rules",
+   "url": "https://thethaiger.com/guides/cannabis/cannabis-thailand-2026-medical-rules",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "th-star-oct",
+   "kind": "news",
+   "publisher": "The Star (Malaysia)",
+   "title": "Thailand to tighten cannabis controls and propose tougher penalties (Oct 22 2026)",
+   "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/22/thailand-to-tighten-cannabis-controls-and-propose-tougher-penalties",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "th-ap",
+   "kind": "news",
+   "publisher": "Associated Press via WTOP",
+   "title": "A look at where Thailand's cannabis laws stand (Sep 2025)",
+   "url": "https://wtop.com/world/2025/09/a-look-at-where-thailands-cannabis-laws-stand",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "th-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office",
+   "title": "Thailand travel advice: do not carry cannabis out of Thailand",
+   "url": "https://www.gov.uk/foreign-travel-advice/thailand/travel-advice-help-and-support",
    "retrieved_on": "2026-11-19"
   },
   {
