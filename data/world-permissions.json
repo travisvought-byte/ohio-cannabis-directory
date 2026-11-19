@@ -182,7 +182,7 @@
   "GB": {
    "name": "United Kingdom",
    "page": "world-united-kingdom.html",
-   "summary": "Illegal for recreational use. Doctors on the specialist register have been able to prescribe cannabis-based medicines since November 2018.",
+   "summary": "Illegal for recreational use. Cannabis is a Class B drug. Specialist doctors have been able to prescribe cannabis-based medicines since November 1, 2018, mostly through private clinics.",
    "note": "",
    "answers": {
     "adult-use": {
@@ -197,23 +197,27 @@
     },
     "possession": {
      "status": "not-permitted",
-     "short": "Warning or on-the-spot fine for small amounts",
-     "detail": "Police can give a warning or an on-the-spot fine of up to £90 for cannabis. Repeat offences can go up to the maximum possession penalty.",
-     "citation": "GOV.UK, Drugs penalties",
+     "short": "Warning or £90 on-the-spot fine for small amounts",
+     "detail": "Police in England and Wales can give a warning or an on-the-spot fine of up to £90 for cannabis; repeat offences can go up to the maximum. In Scotland, police can issue a Recorded Police Warning for possession instead of reporting it to the prosecutor; the warning still goes on the person's criminal record.",
+     "citation": "GOV.UK, Drugs penalties; Crown Office (COPFS); Police Scotland via STV News",
      "reviewed_on": "2026-11-19",
      "source_ids": [
-      "uk-penalties"
+      "uk-penalties",
+      "uk-copfs",
+      "uk-stv"
      ]
     },
     "medical": {
      "status": "limited",
-     "short": "Specialist prescription only",
-     "detail": "Only specialist doctors can start a prescription for a cannabis-based medicine. A GP can continue one under a shared-care arrangement. Most patients go through private clinics; one 2026 estimate put UK patients at about 80,000 to 90,000.",
-     "citation": "Chambers practice guide 2026 (secondary); Patient.info (secondary)",
+     "short": "Specialist prescription only, never smoked",
+     "detail": "Since November 1, 2018, cannabis-based products for medicinal use can be prescribed in England, Wales and Scotland, but only by doctors on the General Medical Council's Specialist Register. Smoking them stays illegal, even with a prescription. GPs cannot start a prescription. Since January 2026, national police guidance approved by the National Police Chiefs' Council tells officers in England and Wales how to deal with prescribed patients.",
+     "citation": "Home Office Circular 018/2018; Misuse of Drugs Regulations 2001 reg. 16A; APCDLO guidance; Chambers 2026 (secondary)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
-      "uk-chambers",
-      "uk-patientinfo"
+      "uk-circular",
+      "uk-reg16a",
+      "uk-apcdlo",
+      "uk-chambers"
      ]
     },
     "buying": {
@@ -225,7 +229,64 @@
      "source_ids": [
       "uk-penalties"
      ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "No. Growing counts as production",
+     "detail": "Growing cannabis is production under the Misuse of Drugs Act, with a maximum of 14 years in prison.",
+     "citation": "GOV.UK, Drugs penalties",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "uk-penalties"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "2 micrograms of THC per litre of blood",
+     "detail": "It is an offence to drive with more than 2 µg/L of THC in your blood, whether or not your driving was affected. The limit is set low on a zero-tolerance approach.",
+     "citation": "GOV.UK, Changes to drug driving law; Road Traffic Act 1988 s. 5A",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "uk-drugdrive"
+     ]
+    },
+    "record-relief": {
+     "status": "limited",
+     "short": "No expungement; records become spent",
+     "detail": "There is no process to erase a cannabis conviction. Under the Rehabilitation of Offenders Act 1974, a simple caution is spent immediately and a conviction becomes spent after its rehabilitation period. Spent records no longer show on a basic DBS check, but can still show on standard or enhanced checks.",
+     "citation": "GOV.UK, Rehabilitation periods; Disclosing your criminal record",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "uk-rehab",
+      "uk-disclose"
+     ]
     }
+   },
+   "experiment": {
+    "text": "CBD is legal to sell as food only under Food Standards Agency rules. The FSA advises healthy adults to take no more than 10 mg of CBD a day, has set a safe upper limit of 0.07 mg of THC a day, and in September 2026 recommended the first CBD food authorisations to ministers. All CBD products must still comply with the Misuse of Drugs Act.",
+    "source_ids": [
+     "uk-fsa-advice",
+     "uk-fsa-reform",
+     "uk-fsa-board"
+    ]
+   },
+   "differences": {
+    "title": "What is different about the United Kingdom",
+    "source_ids": [
+     "uk-penalties",
+     "uk-circular",
+     "uk-patientinfo",
+     "uk-copfs",
+     "uk-drugdrive",
+     "uk-rehab"
+    ],
+    "points": [
+     "Recreational use is a crime, yet medical cannabis has been legal since 2018. One 2026 estimate puts UK patients at about 80,000 to 90,000, most of them through private clinics rather than the NHS.",
+     "Prescribed flower has to be vaporised. Smoking it is a crime even with a prescription.",
+     "Scotland handles small possession through Recorded Police Warnings set by the Lord Advocate; England and Wales use warnings and £90 fines.",
+     "The drug-driving limit for THC is 2 µg/L of blood, among the lowest anywhere.",
+     "Old convictions are never erased. They become spent and disappear from basic checks only."
+    ]
    }
   },
   "MX": {
@@ -1724,6 +1785,94 @@
    "publisher": "Public Safety Canada",
    "title": "No-fee, expedited pardons for simple possession of cannabis (Aug 1 2019)",
    "url": "https://www.canada.ca/en/public-safety-canada/news/2019/08/individuals-convicted-of-simple-possession-of-cannabis-can-now-apply-for-no-fee-expedited-pardons.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uk-copfs",
+   "kind": "government",
+   "publisher": "Crown Office and Procurator Fiscal Service (Scotland)",
+   "title": "Lord Advocate statement on diversion from prosecution",
+   "url": "https://www.copfs.gov.uk/media-site-news-from-copfs/1983-lord-advocate-statement-on-diversion-from-prosecution",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uk-stv",
+   "kind": "news",
+   "publisher": "STV News",
+   "title": "Police can now issue warnings for the possession of Class A drugs",
+   "url": "https://news.stv.tv/scotland/police-can-now-issue-warnings-for-the-possession-of-class-a-drugs",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uk-circular",
+   "kind": "government",
+   "publisher": "Home Office",
+   "title": "Circular 018/2018: rescheduling of cannabis-based products for medicinal use in humans",
+   "url": "https://gov.uk/government/publications/circular-0182018-rescheduling-of-cannabis-based-products-for-medicinal-use-in-humans/rescheduling-of-cannabis-based-products-for-medicinal-use-in-humans-accessible-version",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uk-reg16a",
+   "kind": "statute",
+   "publisher": "legislation.gov.uk",
+   "title": "Misuse of Drugs Regulations 2001, regulation 16A",
+   "url": "https://www.legislation.gov.uk/uksi/2001/3998/regulation/16A/data.htm",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uk-apcdlo",
+   "kind": "organization",
+   "publisher": "Association of Police Controlled Drug Liaison Officers",
+   "title": "Medicinal Cannabis Guidance for Officers and Staff, version 1 (NPCC-approved January 2026)",
+   "url": "https://www.cicouncil.org.uk/app/uploads/2026/01/APCDLO-Medicinal-Cannabis-Guidance-Version-1.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uk-drugdrive",
+   "kind": "government",
+   "publisher": "GOV.UK (Department for Transport)",
+   "title": "Changes to drug driving law",
+   "url": "https://gov.uk/government/collections/drug-driving",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uk-rehab",
+   "kind": "government",
+   "publisher": "GOV.UK (Ministry of Justice)",
+   "title": "Rehabilitation periods",
+   "url": "https://gov.uk/guidance/rehabilitation-periods",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uk-disclose",
+   "kind": "government",
+   "publisher": "GOV.UK",
+   "title": "Check if you need to tell someone about your criminal record",
+   "url": "https://www.gov.uk/tell-employer-or-college-about-criminal-record/what-information-you-need-to-give",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uk-fsa-advice",
+   "kind": "government",
+   "publisher": "Food Standards Agency",
+   "title": "FSA and FSS update consumer advice for CBD",
+   "url": "https://www.food.gov.uk/news-alerts/news/food-standards-agency-and-food-standards-scotland-update-consumer-advice-for-cbd",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uk-fsa-reform",
+   "kind": "government",
+   "publisher": "Food Standards Agency",
+   "title": "FSA updates guidance allowing CBD businesses to reformulate products on the Public List",
+   "url": "https://www.food.gov.uk/news-alerts/news/food-standards-agency-updates-guidance-allowing-cbd-businesses-to-reformulate-products-on-the-public-list-for-safety-reasons",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uk-fsa-board",
+   "kind": "government",
+   "publisher": "Food Standards Agency (via GOV.UK)",
+   "title": "CBD novel food applications: recommendations to ministers on first authorisations (Sep 3 2026)",
+   "url": "https://www.gov.uk/government/publications/food-standards-agency-september-2026-board-meeting/cbd-novel-food-applications-recommendations-to-ministers-on-first-authorisations",
    "retrieved_on": "2026-11-19"
   }
  ]

@@ -257,8 +257,8 @@ def announcement():
     world = load()
     n = len(world['countries'])
     full = [c['name'] for c in world['countries'].values() if c.get('differences')]
-    charted = (f'{" and ".join(full)} charted down to every last province' if len(full) <= 2
-               else f'{len(full)} of them charted down to every last province')
+    charted = (f'{" and ".join(full)} charted in full' if len(full) <= 2
+               else f'{len(full)} of them charted in full')
     return ('<aside class="ahoy" aria-label="Announcement"><div class="wrap"><p>'
             '<span class="flag" aria-hidden="true">🏴‍☠️</span> <strong>Ahoy! The Reefer has set sail.</strong> '
             f'We crossed the seven seas and hauled back the cannabis laws of {n} countries, '
