@@ -1302,36 +1302,125 @@
   "CH": {
    "name": "Switzerland",
    "page": "world-switzerland.html",
-   "summary": "Illegal above 1% THC, except for about 10,000 adults in official city pilot trials. Parliament is working on a law for regulated access.",
-   "note": "",
+   "summary": "Illegal above 1% THC, but up to 10 grams for personal use is not punished and using it is a 100 franc fine. About 10,000 adults buy legally through official city pilot trials, and a law for regulated access is still in committee.",
+   "note": "German sources are summarized in English.",
    "answers": {
     "adult-use": {
      "status": "limited",
-     "short": "Only inside official pilot trials",
-     "detail": "Recreational use of cannabis with 1% THC or more stays prohibited outside the authorized pilot trials. About 10,400 adults were in the seven ongoing trials as of June 2025.",
-     "citation": "FOPH executive summary; Chambers 2026",
+     "short": "Illegal, but small amounts are tolerated",
+     "detail": "Cannabis with 1% THC or more is prohibited outside the official pilot trials. An adult caught using it can get a fixed penalty of 100 francs, while having up to 10 grams for personal use is not a criminal offence. Enforcement still differs from canton to canton. About 10,400 adults were in the seven ongoing trials as of June 2025.",
+     "citation": "FOPH; ch.ch; FOPH pilot trial analysis; Chambers 2026",
      "reviewed_on": "2026-11-19",
      "source_ids": [
+      "ch-foph-cannabis",
+      "ch-chch",
       "ch-foph",
       "ch-chambers"
      ]
     },
     "buying": {
      "status": "limited",
-     "short": "Pilot trial pharmacies and shops only",
-     "detail": "The trials sell regulated cannabis to registered participants. The Bern, Biel and Lucerne pharmacy trial has been extended to October 2028.",
+     "short": "Pilot trials, or low-THC hemp",
+     "detail": "The trials sell regulated cannabis to registered participants. The Bern, Biel and Lucerne pharmacy trial has been extended to October 2028. Outside the trials, only products under 1% THC, such as high-CBD flowers for smoking, can be sold and bought legally.",
      "citation": "FOPH; Swissinfo (news)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
       "ch-foph",
-      "ch-swissinfo"
+      "ch-swissinfo",
+      "ch-foph-cannabis"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "Up to 10 grams is not punished",
+     "detail": "Having up to 10 grams for your own use is not a criminal offence and is not fined. Using it can still bring the 100 franc fixed penalty. Minors come under juvenile criminal law.",
+     "citation": "FOPH; ch.ch",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ch-foph-cannabis",
+      "ch-chch"
+     ]
+    },
+    "sharing": {
+     "status": "limited",
+     "short": "Passing up to 10 grams to an adult is not fined",
+     "detail": "Supplying up to 10 grams to another adult, such as sharing a joint, is not fined. Selling it is not allowed.",
+     "citation": "ch.ch",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ch-chch"
+     ]
+    },
+    "home-grow": {
+     "status": "limited",
+     "short": "Only hemp under 1% THC",
+     "detail": "Growing your own is allowed only if the plant stays below 1% THC. Cannabis at or above that level is prohibited outside the pilot trials.",
+     "citation": "ch.ch; FOPH",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ch-chch",
+      "ch-foph-cannabis"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Yes, on a doctor's prescription since August 2022",
+     "detail": "The ban on cannabis for medical purposes was lifted on August 1, 2022. Doctors can prescribe cannabis medicines without a special permit from the health office, and pharmacies make up preparations on prescription. Patients usually pay themselves, because compulsory health insurance covers the cost only in exceptional cases. Doctors must report treatment data for the first two years, a requirement that runs until 2029.",
+     "citation": "FOPH, Medizinische Anwendung von Cannabis; ch.ch",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ch-foph-med",
+      "ch-chch"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "Zero tolerance: 1.5 micrograms of THC per litre of blood",
+     "detail": "Driving with THC in your blood is not allowed. Switzerland treats proven THC as unfit to drive whatever the concentration, using an analytical limit of 1.5 micrograms per litre of whole blood with a 30 percent margin for measurement uncertainty. Legal low-THC hemp can still leave measurable THC. People taking prescribed THC products get an individual fitness assessment instead.",
+     "citation": "ch.ch; Swiss Society of Legal Medicine report for the Federal Roads Office (2023)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ch-chch",
+      "ch-sgrm"
+     ]
+    },
+    "border": {
+     "status": "limited",
+     "short": "Swiss-legal hemp can be illegal next door",
+     "detail": "Other countries, including Switzerland's neighbours, have stricter laws and lower THC limits, so products that are legal in Switzerland may be prohibited abroad. The government's advice is to check with the authorities of the country you are travelling to before taking any cannabis product with you.",
+     "citation": "ch.ch",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ch-chch"
      ]
     }
    },
    "experiment": {
-    "text": "A National Council committee drafted a Cannabis Products Act that would give adults legal, strictly regulated access, and sent it out for consultation until December 1, 2025. It is not law yet.",
+    "text": "A National Council committee drafted a Cannabis Products Act that would give adults legal, strictly regulated access, and put it out for consultation from August 29 to December 1, 2025. On May 8, 2026 the committee voted 16 to 8, with one abstention, to keep working on it and sent the draft back to its subcommittee for revision; it reported that a majority of cantons reject the draft in its current form. It is not law.",
     "source_ids": [
-     "ch-bluewin"
+     "ch-bluewin",
+     "ch-parl-2026",
+     "ch-foph-canpg"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Switzerland",
+    "source_ids": [
+     "ch-foph-cannabis",
+     "ch-chch",
+     "ch-foph",
+     "ch-sgrm",
+     "ch-parl-2026",
+     "ch-foph-med"
+    ],
+    "points": [
+     "The line is 1% THC, higher than in neighbouring countries. Below it, hemp flowers are sold and bought legally.",
+     "Using it is fined, having it is not. An adult caught using can get a 100 franc penalty, while up to 10 grams for personal use is not punished.",
+     "Legal cannabis exists only inside research. About 10,400 adults were buying it through seven pilot trials in mid-2025.",
+     "Cantons differ. The federal health office says the fixed penalty has only partly made enforcement uniform.",
+     "Zero tolerance at the wheel, and legal hemp can still leave THC in the blood.",
+     "A legalization bill exists, but the committee sent it back for revision in May 2026.",
+     "Medical cannabis needs no special permit since 2022, but patients usually pay for it themselves."
     ]
    }
   },
@@ -2973,6 +3062,54 @@
    "publisher": "Swissinfo",
    "title": "Legal Swiss cannabis sales promote safer consumption",
    "url": "https://www.swissinfo.ch/eng/various/the-sale-of-cannabis-in-pharmacies-promotes-safer-consumption/92014610",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ch-foph-cannabis",
+   "kind": "government",
+   "publisher": "Federal Office of Public Health (Switzerland)",
+   "title": "Cannabis (page last modified Jun 4 2024)",
+   "url": "https://www.bag.admin.ch/bag/en/home/gesund-leben/sucht-und-gesundheit/cannabis.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ch-chch",
+   "kind": "government",
+   "publisher": "ch.ch, the Swiss authorities online",
+   "title": "Cannabis: what is banned, what is tolerated, driving and travel",
+   "url": "https://ch.ch/en/safety-and-justice/police/cannabis",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ch-foph-med",
+   "kind": "government",
+   "publisher": "Federal Office of Public Health (Switzerland)",
+   "title": "Medizinische Anwendung von Cannabis",
+   "url": "https://www.bag.admin.ch/med-anwendung-cannabis",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ch-parl-2026",
+   "kind": "government",
+   "publisher": "Swiss Parliament, National Council health committee (SGK-N)",
+   "title": "Press release: Cannabisproduktegesetz zur Überarbeitung zurück in die Subkommission (May 8 2026)",
+   "url": "https://www.parlament.ch/press-releases/Pages/mm-sgk-n-2026-05-08.aspx",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ch-foph-canpg",
+   "kind": "government",
+   "publisher": "Federal Office of Public Health (Switzerland)",
+   "title": "Neues Cannabisproduktegesetz",
+   "url": "https://www.bag.admin.ch/de/neues-cannabisproduktegesetz",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ch-sgrm",
+   "kind": "research",
+   "publisher": "Swiss Society of Legal Medicine, for the Federal Roads Office",
+   "title": "Schlussbericht: THC-Grenzwert im Strassenverkehr (Jun 2023)",
+   "url": "https://sgrm.ch/inhalte/user_upload/Schlussbericht_THC_Grenzwert_final.pdf",
    "retrieved_on": "2026-11-19"
   },
   {

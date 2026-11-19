@@ -1725,7 +1725,7 @@
 "iso": "CH",
 "name": "Switzerland",
 "display": "Switzerland",
-"status": "basic",
+"status": "deep",
 "page": "world-switzerland.html",
 "queue": 10
 },
