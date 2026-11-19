@@ -52,7 +52,7 @@ p{max-width:70ch}.muted{color:var(--soft);font-size:.9rem}.crumbs{font-size:.9re
 .hero{position:relative;overflow:hidden;background:linear-gradient(155deg,var(--green) 0%,var(--green2) 100%);color:#fff}
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);align-items:center;gap:24px;padding-top:34px;padding-bottom:46px}
 .hero h1{font-size:clamp(32px,5.2vw,52px);line-height:1.06;margin:.25em 0 .35em;max-width:15ch}.hero p{color:#e2eee6;font-size:1.08rem;margin:.4em 0}
-.hero .eyebrow{color:var(--gold);font-size:.82rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+.hero .worldlink{margin:14px 0 0;font-weight:700}.hero .worldlink a{color:var(--gold)}.hero .eyebrow{color:var(--gold);font-size:.82rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
 .hero .art .shipbox{position:relative;max-width:520px;margin:0 auto}.hero .art .ship{display:block;width:100%;height:auto;border-radius:22px;box-shadow:0 18px 38px rgba(0,0,0,.45)}
 .ship .vessel{transform-origin:330px 540px;animation:bob 7s ease-in-out infinite}.ship .flag{filter:drop-shadow(0 0 7px rgba(150,225,235,.55)) drop-shadow(0 0 1px rgba(220,245,250,.9));transform-origin:330px 140px;animation:fly 3.2s ease-in-out infinite}.ship .swell{animation:swell 6s ease-in-out infinite}
 .ship .sailor{transform-box:fill-box;transform-origin:50% 100%;animation:cough 9s ease-in-out infinite}.ship .ember{fill:#ff7a1a;animation:ember 9s linear infinite}
@@ -1104,7 +1104,8 @@ def home_page(perm, score, directory, answers, sources, sponsors=()):
             '<p>What’s legal, where to buy, how to clear a record and where to get help. Each answer links to the law or agency it comes from.</p>'
             '<form class="pick" id="pick"><label for="state-jump">Pick your state</label><div class="row">'
             f'<select id="state-jump" name="state"><option value="">Choose a state</option>{jump}</select><button type="submit">Go</button></div>'
-            f'<p class="muted">Or tap your state on the <a href="#map">map below</a>. Checked as of {long_date(perm["as_of"])}.</p></form></div>'
+            f'<p class="muted">Or tap your state on the <a href="#map">map below</a>. Checked as of {long_date(perm["as_of"])}.</p></form>'
+            '<p class="worldlink"><a href="world.html">Travelling or outside the US? Laws around the world →</a></p></div>'
             f'<div class="art"><div class="shipbox">{ship_art()}{joke_bubble(jokes)}</div></div></div></section>')
 
     # The joke itself is in the picture (joke_bubble); its data and the script that picks today's follow the first block.
@@ -1114,7 +1115,7 @@ def home_page(perm, score, directory, answers, sources, sponsors=()):
         body.append(f'<a class="task" href="{href}" data-track="task:{slug(title)}"><span class="ic">{icon(ic)}</span><strong>{esc(title)}</strong><span class="d">{esc(desc)}</span></a>')
     linked = {href.split('#')[1] for *_, href in TASKS if '#' in href}
     more = [f'<a href="help.html#{slug(n)}">{esc(n)}</a>' for n in needs_in_order(perm) if slug(n) not in linked]
-    more.append(f'<a href="{OHIO_HOME}/knowledge.html">Learn the basics</a>')
+    more.append('<a href="learn.html">Cannabis 101</a>')
     body.append('</div><p class="also">Also: ' + ' · '.join(more) + ' · <a href="help.html">All national help</a></p></section>')
     body.append(joke)
 
@@ -1133,6 +1134,8 @@ def home_page(perm, score, directory, answers, sources, sponsors=()):
                 '<details class="az"><summary>List all states A–Z</summary><ul>'
                 + ''.join(f'<li><a href="{slug(names[c])}.html">{esc(names[c])}</a></li>' for c in ordered) + '</ul></details></section>')
 
+    import build_world  # the world section lives in build_world; imported here to avoid a load-time cycle
+    body.append(build_world.home_block())
     body.append('<section class="block" id="compare"><h2>Compare one rule across every state</h2>'
                 '<p>Pick a question to see every state side by side, on a map and in a list.</p><div class="pills">')
     for q in perm['questions']:

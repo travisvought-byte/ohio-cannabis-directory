@@ -16,6 +16,7 @@ from permissions_page import chip
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / 'data/world-permissions.json'
 HERITAGE = ROOT / 'data/world-heritage.json'
+ROSTER = ROOT / 'data/world-roster.json'
 
 CSS = ('<style>.wcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:12px;margin:14px 0}'
        '.wcard{display:block;background:var(--card);border:1px solid var(--line);border-top:5px solid var(--green2);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--ink)}'
@@ -46,10 +47,11 @@ def province_table(world, cites):
     for p in world['canada_provinces']:
         age = (f'{nat.esc(p["age"])} {cites.mark(p["age_source_ids"])}' if p['age'] else '<span class="muted">Not yet reviewed</span>')
         grow = (f'{nat.esc(p["home_grow"])} {cites.mark(p["home_grow_source_ids"])}' if p['home_grow'] else '<span class="muted">Not yet reviewed</span>')
-        rows.append(f'<tr><th scope="row">{nat.esc(p["name"])}</th><td>{age}</td><td>{grow}</td></tr>')
+        retail = f'{nat.esc(p["retail"])} {cites.mark(p["retail_source_ids"])}'
+        rows.append(f'<tr><th scope="row">{nat.esc(p["name"])}</th><td>{age}</td><td>{retail}</td><td>{grow}</td></tr>')
     return ('<h2 id="provinces">Province by province</h2><p>Provinces and territories set their own minimum age and home-grow rules. '
-            'Rows marked "Not yet reviewed" have not been checked against that province\'s own site yet; the federal rules above still apply there.</p>'
-            '<div class="scroll"><table><thead><tr><th scope="col">Province or territory</th><th scope="col">Minimum age</th><th scope="col">Growing at home</th></tr></thead>'
+            'Ages and store models are as Health Canada lists them; growing rules come from each province. "Not yet reviewed" means that territory\'s own rule has not been checked yet; the federal limit of 4 plants is the ceiling.</p>'
+            '<div class="scroll"><table><thead><tr><th scope="col">Province or territory</th><th scope="col">Minimum age</th><th scope="col">Where to buy</th><th scope="col">Growing at home</th></tr></thead>'
             f'<tbody>{"".join(rows)}</tbody></table></div>')
 
 
@@ -60,6 +62,10 @@ def country_page(world, sources, code):
             f'<h1>Cannabis laws in {nat.esc(c["name"])}</h1>', f'<p class="lede">{nat.esc(c["summary"])}</p>']
     if c.get('note'):
         body.append(f'<p class="muted">{nat.esc(c["note"])}</p>')
+    if c.get('differences'):
+        d = c['differences']
+        pts = ''.join(f'<li>{nat.esc(x)}</li>' for x in d['points'])
+        body.append(f'<div class="story"><h2>{nat.esc(d["title"])}</h2><ul>{pts}</ul><p>{cites.mark(d["source_ids"])}</p></div>')
     body.append('<p class="alert"><strong>Travelling?</strong> Never carry cannabis across an international border, even between two places where it is legal. '
                 '<a href="travel-warnings.html">See where it can land you in prison</a>.</p>')
     for q in world['questions']:
@@ -99,11 +105,21 @@ def hub_page(world, sources):
              '<p>The landraces, the places they grew and the people who kept the tradition: India, the Hindu Kush, the Rif, the Bekaa, southern Africa, Jamaica, Thailand, Mexico and Colombia.</p></a>'
              '<a class="wcard warn" href="travel-warnings.html"><strong>Where weed can put you in prison</strong>'
              '<p>Countries with death-penalty or long-prison drug laws, and the strictest US states.</p></a></div>')
-    nxt = ', '.join(nat.esc(n) for n in world['next_up'])
+    roster = json.loads(ROSTER.read_text(encoding='utf-8'))
+    blocks = []
+    for st, label in roster['statuses'].items():
+        rows = [r for r in roster['countries'] if r['status'] == st]
+        if st == 'queued':
+            rows.sort(key=lambda r: r['queue'])
+        items = ''.join((f'<li><a href="{nat.esc(r["page"])}">{nat.esc(r["display"])}</a></li>' if r['page'] else f'<li>{nat.esc(r["display"])}</li>') for r in rows)
+        blocks.append(f'<details class="az"{" open" if st in ("deep", "basic", "queued") else ""}><summary>{nat.esc(label)} ({len(rows)})</summary>'
+                      f'<{"ol" if st == "queued" else "ul"}>{items}</{"ol" if st == "queued" else "ul"}></details>')
+    roster_html = ('<h2 id="every-country">Every country, and how far we have got</h2>'
+                   f'<p>All {len(roster["countries"])} countries and territories. We go one country at a time, in the order below. '
+                   'This shows our coverage, not whether cannabis is legal there.</p>' + ''.join(blocks))
     body = (CSS + '<p class="crumbs"><a href="index.html">Home</a> › Around the world</p><h1>Cannabis laws around the world</h1>'
             '<p class="lede">The same plain answers as the state pages, for other countries, plus the history of where cannabis comes from. Every answer names its source and the date it was checked.</p>'
-            + extra + ''.join(groups) +
-            f'<h2>Coming next</h2><p>{nxt}.</p>'
+            + extra + ''.join(groups) + roster_html +
             '<p class="muted">Not legal advice. Laws change; check the cited source before you act on anything here.</p>')
     return nat.shell('Cannabis laws around the world', 'Cannabis laws country by country: Canada, Uruguay, Germany, the Netherlands, Mexico, Thailand and the UK, plus where weed comes from and where it can mean prison. Sourced and dated.',
                      body, 'world.html', 'world', ld=[nat.breadcrumbs([('Home', '')], 'world.html', 'Around the world')])
@@ -234,6 +250,20 @@ def heritage_page(her, sources):
                      'The origin of cannabis, the classic landraces (Afghani, Hindu Kush, Thai, Durban Poison, Acapulco Gold, Colombian Gold, beldiya) and the peoples who kept the tradition. Sourced.',
                      body, 'heritage.html', 'the heritage page',
                      ld=[nat.breadcrumbs([('Home', ''), ('Around the world', 'world.html')], 'heritage.html', 'Where weed comes from')])
+
+
+def home_block():
+    """The home page's way into the world section: every country, grouped, plus history and travel warnings."""
+    world = load()
+    groups = []
+    for g in world['groups']:
+        links = ' · '.join(f'<a href="{nat.esc(world["countries"][c]["page"])}">{nat.esc(world["countries"][c]["name"])}</a>' for c in g['codes'])
+        groups.append(f'<p><strong>{nat.esc(g["label"])}:</strong> {links}</p>')
+    return ('<section class="block" id="world"><h2>Around the world</h2>'
+            '<p>Same plain answers for other countries, the history of where weed comes from, and where it can land you in prison.</p>'
+            + ''.join(groups) +
+            '<div class="pills"><a class="pill" href="world.html">All countries</a><a class="pill" href="heritage.html">Where weed comes from</a>'
+            '<a class="pill" href="travel-warnings.html">Where weed can put you in prison</a><a class="pill" href="learn.html">Cannabis 101</a></div></section>')
 
 
 def pages(perm, base_sources):

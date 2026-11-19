@@ -36,6 +36,14 @@
    "label": "Can adults grow it at home?"
   },
   {
+   "id": "driving",
+   "label": "What are the driving rules?"
+  },
+  {
+   "id": "record-relief",
+   "label": "Can an old cannabis record be cleared?"
+  },
+  {
    "id": "border",
    "label": "Can you take it across the border?"
   }
@@ -127,7 +135,48 @@
      "source_ids": [
       "ca-act"
      ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "Criminal THC limits: 2 ng and 5 ng",
+     "detail": "Having 2 to under 5 nanograms of THC per millilitre of blood within two hours of driving is a less serious criminal offence; 5 ng or more is more serious; and 2.5 ng combined with a blood alcohol of 50 mg per 100 ml is also an offence. There is no medical exemption. Some provinces add zero tolerance: Newfoundland and Labrador allows no detectable THC for novice drivers, commercial drivers and anyone under 22.",
+     "citation": "Criminal Code and Blood Drug Concentration Regulations; Justice Canada; Government of Newfoundland and Labrador",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ca-justice-driving",
+      "ca-bdc-regs",
+      "ca-nl-faq"
+     ]
+    },
+    "record-relief": {
+     "status": "allowed",
+     "short": "Free record suspension for old possession convictions",
+     "detail": "Since August 1, 2019, people convicted only of simple possession of cannabis can apply to the Parole Board of Canada for a record suspension with no fee and no waiting period, without a lawyer. Non-Canadians convicted in Canada can apply too. A record suspension sets the conviction aside but does not erase it, and it does not guarantee entry to another country.",
+     "citation": "Parole Board of Canada; Public Safety Canada",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ca-pbc",
+      "ca-pbc-what",
+      "ca-ps-2019"
+     ]
     }
+   },
+   "differences": {
+    "title": "What is different about Canada",
+    "source_ids": [
+     "ca-hc-prov",
+     "ca-scc-murray-hall",
+     "ca-pbc-what",
+     "ca-act"
+    ],
+    "points": [
+     "Legal nationwide under one federal law since October 17, 2018, with each province adding its own rules.",
+     "The legal age depends on the province: 18 in Alberta, 21 in Quebec, 19 everywhere else.",
+     "Each province picks its own store model: government-run, private, or a mix.",
+     "Quebec bans home growing, and the Supreme Court upheld that in 2023.",
+     "Old possession convictions are set aside by a free record suspension, not erased by expungement.",
+     "You still cannot cross the border with it, in either direction."
+    ]
    }
   },
   "GB": {
@@ -695,7 +744,11 @@
    "name": "Alberta",
    "age": "18",
    "age_source_ids": [
-    "ca-ab"
+    "ca-hc-prov"
+   ],
+   "retail": "Private licensed in-person and online stores",
+   "retail_source_ids": [
+    "ca-hc-prov"
    ],
    "home_grow": "4 plants, indoors",
    "home_grow_source_ids": [
@@ -706,7 +759,11 @@
    "name": "British Columbia",
    "age": "19",
    "age_source_ids": [
-    "ca-bc"
+    "ca-hc-prov"
+   ],
+   "retail": "Government-operated in-person and online stores or private licensed in-person stores",
+   "retail_source_ids": [
+    "ca-hc-prov"
    ],
    "home_grow": "4 plants per household",
    "home_grow_source_ids": [
@@ -717,7 +774,11 @@
    "name": "Manitoba",
    "age": "19",
    "age_source_ids": [
-    "ca-mb-age"
+    "ca-hc-prov"
+   ],
+   "retail": "Private licensed in person and online stores",
+   "retail_source_ids": [
+    "ca-hc-prov"
    ],
    "home_grow": "4 plants per household (since May 1, 2025)",
    "home_grow_source_ids": [
@@ -726,22 +787,44 @@
   },
   {
    "name": "New Brunswick",
-   "age": null,
-   "age_source_ids": [],
-   "home_grow": null,
-   "home_grow_source_ids": []
+   "age": "19",
+   "age_source_ids": [
+    "ca-hc-prov"
+   ],
+   "retail": "Government-operated in-person and online stores",
+   "retail_source_ids": [
+    "ca-hc-prov"
+   ],
+   "home_grow": "4 plants on your own property, secured",
+   "home_grow_source_ids": [
+    "ca-nb"
+   ]
   },
   {
    "name": "Newfoundland and Labrador",
-   "age": null,
-   "age_source_ids": [],
-   "home_grow": null,
-   "home_grow_source_ids": []
+   "age": "19",
+   "age_source_ids": [
+    "ca-hc-prov"
+   ],
+   "retail": "Private licensed in-person stores or government-operated online store",
+   "retail_source_ids": [
+    "ca-hc-prov"
+   ],
+   "home_grow": "4 plants",
+   "home_grow_source_ids": [
+    "ca-nl-cbc"
+   ]
   },
   {
    "name": "Northwest Territories",
-   "age": null,
-   "age_source_ids": [],
+   "age": "19",
+   "age_source_ids": [
+    "ca-hc-prov"
+   ],
+   "retail": "Government-operated in-person and online stores",
+   "retail_source_ids": [
+    "ca-hc-prov"
+   ],
    "home_grow": null,
    "home_grow_source_ids": []
   },
@@ -749,7 +832,11 @@
    "name": "Nova Scotia",
    "age": "19",
    "age_source_ids": [
-    "ca-ns"
+    "ca-hc-prov"
+   ],
+   "retail": "Government-operated in-person and online stores",
+   "retail_source_ids": [
+    "ca-hc-prov"
    ],
    "home_grow": "4 plants per household",
    "home_grow_source_ids": [
@@ -758,8 +845,14 @@
   },
   {
    "name": "Nunavut",
-   "age": null,
-   "age_source_ids": [],
+   "age": "19",
+   "age_source_ids": [
+    "ca-hc-prov"
+   ],
+   "retail": "Private licensed in person and online stores",
+   "retail_source_ids": [
+    "ca-hc-prov"
+   ],
    "home_grow": null,
    "home_grow_source_ids": []
   },
@@ -767,7 +860,11 @@
    "name": "Ontario",
    "age": "19",
    "age_source_ids": [
-    "ca-on"
+    "ca-hc-prov"
+   ],
+   "retail": "Private licensed in-person stores or government-operated online store",
+   "retail_source_ids": [
+    "ca-hc-prov"
    ],
    "home_grow": "4 plants per residence",
    "home_grow_source_ids": [
@@ -776,16 +873,28 @@
   },
   {
    "name": "Prince Edward Island",
-   "age": null,
-   "age_source_ids": [],
-   "home_grow": null,
-   "home_grow_source_ids": []
+   "age": "19",
+   "age_source_ids": [
+    "ca-hc-prov"
+   ],
+   "retail": "Government-operated in-person and online stores",
+   "retail_source_ids": [
+    "ca-hc-prov"
+   ],
+   "home_grow": "4 plants per household, out of reach of anyone under 19",
+   "home_grow_source_ids": [
+    "ca-pe"
+   ]
   },
   {
    "name": "Quebec",
    "age": "21",
    "age_source_ids": [
-    "ca-qc-age"
+    "ca-hc-prov"
+   ],
+   "retail": "Government-operated in-person and online stores",
+   "retail_source_ids": [
+    "ca-hc-prov"
    ],
    "home_grow": "Banned (upheld by the Supreme Court, 2023)",
    "home_grow_source_ids": [
@@ -795,15 +904,29 @@
   },
   {
    "name": "Saskatchewan",
-   "age": null,
-   "age_source_ids": [],
-   "home_grow": null,
-   "home_grow_source_ids": []
+   "age": "19",
+   "age_source_ids": [
+    "ca-hc-prov"
+   ],
+   "retail": "Private licensed in-person and online stores",
+   "retail_source_ids": [
+    "ca-hc-prov"
+   ],
+   "home_grow": "4 plants per household",
+   "home_grow_source_ids": [
+    "ca-sk-global"
+   ]
   },
   {
    "name": "Yukon",
-   "age": null,
-   "age_source_ids": [],
+   "age": "19",
+   "age_source_ids": [
+    "ca-hc-prov"
+   ],
+   "retail": "Private licensed in-person and online stores",
+   "retail_source_ids": [
+    "ca-hc-prov"
+   ],
    "home_grow": null,
    "home_grow_source_ids": []
   }
@@ -1513,6 +1636,94 @@
    "publisher": "MJBizDaily",
    "title": "Israel debates removing smokeable flower (May 4 2026)",
    "url": "https://mjbizdaily.com/?p=615816",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-hc-prov",
+   "kind": "government",
+   "publisher": "Health Canada",
+   "title": "Authorized cannabis retailers in the provinces and territories (page modified 2022-10-26)",
+   "url": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/laws-regulations/provinces-territories.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-sk-global",
+   "kind": "news",
+   "publisher": "Global News",
+   "title": "What you need to know about cannabis in Saskatchewan (Oct 17 2018)",
+   "url": "https://globalnews.ca/news/4557956/what-you-need-to-know-about-cannabis-in-saskatchewan",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-nb",
+   "kind": "government",
+   "publisher": "Government of New Brunswick",
+   "title": "Cannabis: information for consumers",
+   "url": "https://www2.gnb.ca/content/dam/gnb/Departments/eco-bce/Promo/cannabis_info/factsheet_info_consumers.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-pe",
+   "kind": "government",
+   "publisher": "Government of Prince Edward Island",
+   "title": "Know the laws on cannabis (fact sheet)",
+   "url": "https://qatauth.gpei.ca/sites/default/files/publications/cannabis-laws_factsheet.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-nl-cbc",
+   "kind": "news",
+   "publisher": "CBC News",
+   "title": "All your questions about legal recreational cannabis in N.L. answered",
+   "url": "https://amp.cbc.ca/lite/story/1.4856698",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-nl-faq",
+   "kind": "government",
+   "publisher": "Government of Newfoundland and Labrador",
+   "title": "Cannabis: frequently asked questions",
+   "url": "https://www.gov.nl.ca/cannabis/frequently-asked-questions/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-justice-driving",
+   "kind": "government",
+   "publisher": "Department of Justice Canada",
+   "title": "Impaired driving laws",
+   "url": "https://justice.gc.ca/eng/cj-jp/sidl-rlcfa/index.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-bdc-regs",
+   "kind": "statute",
+   "publisher": "Justice Laws Website",
+   "title": "Blood Drug Concentration Regulations (SOR/2018-148)",
+   "url": "https://www.laws-lois.justice.gc.ca/PDF/SOR-2018-148.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-pbc",
+   "kind": "government",
+   "publisher": "Parole Board of Canada",
+   "title": "Fact sheet: applying for a cannabis record suspension",
+   "url": "https://www.canada.ca/en/parole-board/corporate/publications-and-forms/applying-for-a-cannabis-record-suspension.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-pbc-what",
+   "kind": "government",
+   "publisher": "Parole Board of Canada",
+   "title": "What is a cannabis record suspension?",
+   "url": "https://www.canada.ca/en/parole-board/services/cannabis-record-suspensions/what-is-a-cannabis-record-suspension.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ca-ps-2019",
+   "kind": "government",
+   "publisher": "Public Safety Canada",
+   "title": "No-fee, expedited pardons for simple possession of cannabis (Aug 1 2019)",
+   "url": "https://www.canada.ca/en/public-safety-canada/news/2019/08/individuals-convicted-of-simple-possession-of-cannabis-can-now-apply-for-no-fee-expedited-pardons.html",
    "retrieved_on": "2026-11-19"
   }
  ]

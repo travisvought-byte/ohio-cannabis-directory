@@ -26,7 +26,8 @@ class WorldTest(unittest.TestCase):
                 self.assertTrue(a['source_ids'] and a['reviewed_on'] and a['citation'])
                 self.assertIn(a['status'], WORLD['statuses'])
         for p in WORLD['canada_provinces']:
-            used |= set(p['age_source_ids']) | set(p['home_grow_source_ids'])
+            used |= set(p['age_source_ids']) | set(p['home_grow_source_ids']) | set(p['retail_source_ids'])
+            self.assertTrue(p['retail_source_ids'], p['name'])
             self.assertEqual(bool(p['age']), bool(p['age_source_ids']), p['name'])
             self.assertEqual(bool(p['home_grow']), bool(p['home_grow_source_ids']), p['name'])
         for w in WORLD['travel_warnings']:
@@ -35,6 +36,7 @@ class WorldTest(unittest.TestCase):
         used |= set(WORLD['texas_concentrates']['source_ids'])
         for c in WORLD['countries'].values():
             used |= set(c.get('experiment', {}).get('source_ids', []))
+            used |= set(c.get('differences', {}).get('source_ids', []))
         self.assertLessEqual(used, SOURCE_IDS)
         self.assertEqual(used, SOURCE_IDS, 'every listed source is cited somewhere')
         for s in WORLD['sources']:
@@ -94,6 +96,16 @@ class WorldTest(unittest.TestCase):
         cited = set(re.findall(r'href="#ksource-(\d+)"', text))
         listed = set(re.findall(r'id="ksource-(\d+)"', text))
         self.assertEqual(cited, listed)
+
+    def test_roster_covers_every_built_country_and_links_it(self):
+        roster = json.loads((ROOT / 'data/world-roster.json').read_text(encoding='utf-8'))
+        pages = {r['page'] for r in roster['countries'] if r['status'] in ('deep', 'basic')}
+        self.assertEqual(pages, {c['page'] for c in WORLD['countries'].values()})
+        for r in roster['countries']:
+            self.assertIn(r['status'], roster['statuses'])
+            if r['page']:
+                self.assertIn(f'href="{r["page"]}"', PAGES['world.html'])
+        self.assertIn('id="world"', PAGES['index.html'])
 
     def test_world_is_in_the_menu_of_every_page(self):
         for name, text in PAGES.items():
