@@ -893,8 +893,8 @@
 "iso": "JM",
 "name": "Jamaica",
 "display": "Jamaica",
-"status": "queued",
-"page": null,
+"status": "deep",
+"page": "world-jamaica.html",
 "queue": 15
 },
 {

@@ -1944,6 +1944,118 @@
      "Drug-driving law has no THC limit yet, and a 2019 study found drivers are rarely tested for drugs."
     ]
    }
+  },
+  "JM": {
+   "name": "Jamaica",
+   "page": "world-jamaica.html",
+   "summary": "Ganja is still illegal for recreational use, but since April 15, 2015 having two ounces or less is a ticket, not a crime. Households may grow five plants, Rastafarians may use it as a sacrament, and licensed herb houses sell it to people with a medical recommendation.",
+   "note": "Jamaican law calls cannabis ganja. Amounts are in Jamaican dollars.",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "Decriminalised, not legal",
+     "detail": "Since the Dangerous Drugs (Amendment) Act 2015 took effect on April 15, 2015, police cannot arrest, charge or try anyone for having two ounces or less, and it leaves no criminal record. They can issue a J$500 ticket. Smoking at a private home is treated the same way. Smoking in public, or within five metres of a public place, is banned like cigarette smoking and also earns a J$500 ticket. Use is lawful with a medical recommendation, as a Rastafarian sacrament, at licensed venues and at declared exempt events.",
+     "citation": "Ministry of Justice, Fact sheet on the Dangerous Drugs (Amendment) Act 2015",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "jm-moj-factsheet"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Yes, on a medical recommendation",
+     "detail": "Possession is exempt when a registered doctor, or another health practitioner approved by the Minister of Health, recommends or prescribes it. The Cannabis Licensing Authority licenses growing, processing and retail. Under the law, visitors such as tourists can apply for a permit to buy and possess up to two ounces at a time for medical use, by showing a recommendation from a practitioner at home or signing a voluntary declaration; the Ministry of Justice fact sheet says the Ministry of Health issues it for a fee. In April 2026 the authority launched fee-free special permits to bring traditional small growers into the licensed industry.",
+     "citation": "Ministry of Justice fact sheet (2015); Jamaica Information Service, Apr 17 2026",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "jm-moj-factsheet",
+      "jm-jis-permits"
+     ]
+    },
+    "buying": {
+     "status": "medical-only",
+     "short": "Licensed herb houses, with a recommendation",
+     "detail": "Licensed retail herb houses may sell ganja to customers with a medical prescription or recommendation, up to two ounces at a time, and may let them consume it on site, a 2016 Gleaner column on the licensing rules explains. Since 2020, herb houses can take online orders from registered customers for pickup at a licensed outlet, and 2025 amendments to the licensing rules let retailers deliver.",
+     "citation": "Jamaica Gleaner, Aug 16 2016 (column); Ministry of Industry, Investment and Commerce, May 21 2020; Jamaica Information Service, Apr 17 2026",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "jm-gleaner-herbhouse",
+      "jm-miic-online",
+      "jm-jis-permits"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "Two ounces or less: a J$500 ticket",
+     "detail": "Having two ounces (about 57 grams) or less is not an arrestable offence. Police can issue a J$500 ticket, payable at a tax office within 30 days. Not paying is an offence that sends you to Petty Sessions Court, where a conviction goes on your record. Anyone under 18, or an adult who appears dependent, is referred to the National Council on Drug Abuse for counselling. More than two ounces is still a crime that can bring a fine, prison or both.",
+     "citation": "Ministry of Justice, Fact sheet on the Dangerous Drugs (Amendment) Act 2015",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "jm-moj-factsheet"
+     ]
+    },
+    "home-grow": {
+     "status": "allowed",
+     "short": "Five plants per household",
+     "detail": "Each household may grow up to five ganja plants on its premises. Where several households share one property, each may grow five. Rastafarians 18 and older, and Rastafarian organisations, can apply for authorisation to grow it for sacramental use, but that ganja may not be sold or exported.",
+     "citation": "Ministry of Justice, Fact sheet on the Dangerous Drugs (Amendment) Act 2015",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "jm-moj-factsheet"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "No driving under the influence; up to J$50,000",
+     "detail": "The Road Traffic Act 2018, in force since February 1, 2023, makes it an offence to drive or be in charge of a vehicle while under the influence of alcohol or other drugs to the point of being unable to control it properly. A first conviction can bring a fine of up to J$50,000 and a 12-month driving ban unless the court finds special reasons. The Act sets no THC limit. It also lists smoking ganja while driving as a separate offence.",
+     "citation": "Road Traffic Act 2018 s. 66 and Fifth Schedule; Monitor Tribune, Feb 2023 (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "jm-rta-2018",
+      "jm-monitortribune"
+     ]
+    },
+    "record-relief": {
+     "status": "allowed",
+     "short": "Small ganja convictions leave no record",
+     "detail": "A 2014 amendment to the Criminal Records (Rehabilitation of Offenders) Act provides that convictions for possessing two ounces or less, for smoking ganja, or for having a pipe or other smoking utensil do not go on a criminal record. A lawyer's advice column says people whose old conviction still shows can apply in writing to the Criminal Records (Rehabilitation of Offenders) Board.",
+     "citation": "Jamaica Information Service, Jul 7 2014; Jamaica Observer advice column, May 6 2018",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "jm-jis-records",
+      "jm-observer-expunge"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "No. Exporting is a serious crime",
+     "detail": "The 2015 reform did not legalise taking ganja out of Jamaica, and the government says it significantly raised the penalties for exporting. Even ganja grown under a Rastafarian authorisation may not be exported. Importing is allowed only in narrow cases: patients with cancer or another serious illness certified by a doctor may import ganja-based medicine, and approved research bodies may import it for study, under the regulations.",
+     "citation": "Ministry of Justice, Fact sheet on the Dangerous Drugs (Amendment) Act 2015",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "jm-moj-factsheet"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about Jamaica",
+    "source_ids": [
+     "jm-moj-factsheet",
+     "jm-gleaner-herbhouse",
+     "jm-jis-records",
+     "jm-rta-2018",
+     "jm-jis-permits"
+    ],
+    "points": [
+     "Two ounces or less is handled like a traffic ticket: J$500, no arrest and no criminal record, as long as you pay within 30 days.",
+     "Rastafarian sacramental use is written into the law, including registered places of worship and events declared exempt.",
+     "The home-grow limit of five plants applies to each household, so several households on one property may each grow five.",
+     "Visitors can apply for a permit to buy up to two ounces for medical use on a home doctor's recommendation or their own signed declaration.",
+     "Herb houses can let customers smoke on site, which is otherwise banned in public and within five metres of a public place.",
+     "Convictions for small amounts, smoking and pipes are kept off criminal records under a 2014 change.",
+     "There is no THC limit for drivers; the test is whether you could properly control the vehicle."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -2255,7 +2367,8 @@
     "CH",
     "MX",
     "TH",
-    "ZA"
+    "ZA",
+    "JM"
    ]
   },
   {
@@ -2274,7 +2387,6 @@
   "Guam",
   "Northern Mariana Islands",
   "Ireland",
-  "Jamaica",
   "Caribbean islands"
  ],
  "sources": [
@@ -4124,6 +4236,70 @@
    "publisher": "University of Pretoria repository (South African Crime Quarterly)",
    "title": "Lienberg et al., Drugged driving in South Africa (2019)",
    "url": "https://repository.up.ac.za/handle/2263/77993",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "jm-moj-factsheet",
+   "kind": "government",
+   "publisher": "Ministry of Justice (Jamaica)",
+   "title": "Fact sheet on the Dangerous Drugs (Amendment) Act 2015",
+   "url": "https://moj.gov.jm/sites/default/files/pdf/Dangerous%20Drugs%20Act%20Fact%20Sheet%20Booklet.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "jm-jis-records",
+   "kind": "government",
+   "publisher": "Jamaica Information Service",
+   "title": "Senate Passes Amendments to Criminal Records Act (Jul 7 2014)",
+   "url": "https://jis.gov.jm/senate-passes-amendments-criminal-records-act/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "jm-observer-expunge",
+   "kind": "news",
+   "publisher": "Jamaica Observer (legal advice column)",
+   "title": "Expunging a criminal record for ganja (May 6 2018)",
+   "url": "https://www.jamaicaobserver.com/allwoman/2018/05/06/expunging-a-criminal-record-for-ganja/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "jm-rta-2018",
+   "kind": "statute",
+   "publisher": "Houses of Parliament of Jamaica",
+   "title": "The Road Traffic Act, 2018 (section 66 and Fifth Schedule)",
+   "url": "https://japarliament.gov.jm/attachments/article/339/the%20road%20traffic%20act%202018.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "jm-monitortribune",
+   "kind": "news",
+   "publisher": "Monitor Tribune",
+   "title": "New Road Traffic Act and Regulations come into effect (Feb 2023)",
+   "url": "https://monitortribune.com/?p=5451",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "jm-jis-permits",
+   "kind": "government",
+   "publisher": "Jamaica Information Service",
+   "title": "CLA Launches Medical Cannabis Special Permit Programmes (Apr 17 2026)",
+   "url": "https://jis.gov.jm/cla-launches-medical-cannabis-special-permit-programmes/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "jm-miic-online",
+   "kind": "government",
+   "publisher": "Ministry of Industry, Investment and Commerce (Jamaica)",
+   "title": "Qualified Customers Can Purchase Medical Marijuana Online (May 21 2020)",
+   "url": "https://www.miic.gov.jm/qualified-customers-can-purchase-medical-marijuana-online/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "jm-gleaner-herbhouse",
+   "kind": "news",
+   "publisher": "Jamaica Gleaner (column by Erika-Rae Harvey)",
+   "title": "Cannabis licensing tips for the would-be applicant (Aug 16 2016)",
+   "url": "https://past.jamaica-gleaner.com/article/business/20160817/erika-rae-harvey-cannabis-licensing-tips-would-be-applicant",
    "retrieved_on": "2026-11-19"
   }
  ]
