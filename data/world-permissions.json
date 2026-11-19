@@ -292,16 +292,17 @@
   "MX": {
    "name": "Mexico",
    "page": "world-mexico.html",
-   "summary": "No legal market. Courts have struck down the total ban on personal use, but adults need a permit from COFEPRIS, the federal health regulator, to grow and use their own. Selling is still a crime.",
+   "summary": "No legal market. The Supreme Court struck down the total ban on personal use in 2021, but Congress never passed a law, so adults need a permit from COFEPRIS, the federal health regulator, to grow and use their own. Selling is still a crime, and tourists get no protection.",
    "note": "Most official sources are in Spanish. Answers summarize them in English.",
    "answers": {
     "adult-use": {
      "status": "limited",
      "short": "Only with a COFEPRIS permit",
-     "detail": "The Supreme Court ruled the absolute ban on recreational use unconstitutional. COFEPRIS says adults can use cannabis for personal use only with its health authorization, and that this does not legalize a market.",
-     "citation": "COFEPRIS statements reported July 2026 (news)",
+     "detail": "On June 28, 2021 the Supreme Court's full bench struck down the parts of the General Health Law that banned recreational use outright. Congress never wrote a replacement law. COFEPRIS says the ruling only lets an adult use cannabis personally under its health authorization, and does not legalize a market.",
+     "citation": "SCJN Comunicado 187/2021; COFEPRIS statements reported July 2026 (news)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
+      "mx-scjn-dgi",
       "mx-cofepris-publimetro",
       "mx-razon"
      ]
@@ -309,7 +310,7 @@
     "buying": {
      "status": "not-permitted",
      "short": "No. Selling is still illegal",
-     "detail": "COFEPRIS has stated that the Supreme Court never recognized a right to sell cannabis.",
+     "detail": "There are no legal shops. COFEPRIS has stated that the court rulings do not authorize selling or distributing cannabis.",
      "citation": "COFEPRIS statements reported July 2026 (news)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
@@ -318,35 +319,76 @@
     },
     "possession": {
      "status": "limited",
-     "short": "5 grams under the health law; courts are loosening this",
-     "detail": "The General Health Law sets 5 grams as the personal amount. In July 2026 the Supreme Court declared part of that rule unconstitutional, limiting prosecutors' power to charge users who carry more for personal use. Congress has not passed a law to replace it.",
-     "citation": "Ley General de Salud; Supreme Court ruling reported July 15 2026 (news)",
+     "short": "5 grams is the line in the health law",
+     "detail": "Under article 478 of the General Health Law, prosecutors do not charge a user who carries no more than the article 479 table amount, which is 5 grams of cannabis. Above that, possession can be charged as narcomenudeo. In February 2026 the Supreme Court protected one man caught with about 14 grams for personal use, but the ruling applied only to his case; the vote fell short of the majority needed to change the rule for everyone.",
+     "citation": "Ley General de Salud arts. 478 and 479; SCJN, Amparo en Revisión 132/2025; El Cronista (news)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
-      "mx-scjn-jul2026",
-      "mx-expansion"
+      "mx-lgs",
+      "mx-scjn-ar132",
+      "mx-cronista-ar132"
      ]
     },
     "home-grow": {
      "status": "limited",
      "short": "Only with a COFEPRIS permit",
-     "detail": "A permit lets an adult plant, grow, harvest, prepare, possess and carry cannabis for personal use only.",
-     "citation": "La Razón, July 8 2026 (news)",
+     "detail": "A permit lets an adult acquire, plant, grow, harvest, prepare, possess and carry cannabis for personal use only. In 2026 the Supreme Court ordered COFEPRIS to issue permits it had refused, and said the paperwork can be required but cannot be used as a barrier to the right.",
+     "citation": "SCJN Comunicado 097/2026; SCJN case synopsis, Sep 2026; La Razón (news)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
+      "mx-scjn-097",
+      "mx-scjn-sinopsis",
       "mx-razon"
      ]
     },
     "medical": {
      "status": "allowed",
      "short": "Yes, under the 2021 regulation",
-     "detail": "The medical cannabis regulation under the General Health Law was published in the Diario Oficial on January 12, 2021. It covers production, research and medical use, overseen by COFEPRIS.",
+     "detail": "The medical cannabis regulation under the General Health Law was published in the Diario Oficial on January 12, 2021. It covers production, research, manufacturing and medical use, with prescriptions and licenses overseen by COFEPRIS.",
      "citation": "Reglamento published in the DOF, January 12 2021",
      "reviewed_on": "2026-11-19",
      "source_ids": [
       "mx-dof-2021"
      ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "No driving high; in Mexico City, 20 to 36 hours in jail",
+     "detail": "Traffic rules are set locally. In Mexico City, article 50 of the traffic regulation bans driving under the influence of narcotics or psychotropics, with an administrative arrest of 20 to 36 hours that cannot be paid off as a fine, plus six license points.",
+     "citation": "Reglamento de Tránsito de la Ciudad de México art. 50, via ADN40 (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "mx-cdmx-transito"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "Never bring cannabis in, even medical",
+     "detail": "The U.S. government warns that drug possession and use, including medical marijuana, is illegal in Mexico and may lead to a lengthy jail sentence.",
+     "citation": "U.S. Department of State (OSAC)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "mx-osac"
+     ]
     }
+   },
+   "differences": {
+    "title": "What is different about Mexico",
+    "source_ids": [
+     "mx-scjn-dgi",
+     "mx-scjn-sinopsis",
+     "mx-lgs",
+     "mx-cronista-ar132",
+     "mx-osac",
+     "mx-cdmx-transito"
+    ],
+    "points": [
+     "Personal use became a right through the courts, not Congress. The Supreme Court ruled in 2021, and lawmakers never followed with a law to regulate it.",
+     "The right is real but runs through paperwork. You apply to COFEPRIS for a permit, and people refused have gone back to court to force it to issue one.",
+     "There is still nowhere legal to buy. The permit covers growing your own and nothing else.",
+     "Without a permit, the 5 gram table in the health law is what separates a user from a dealer. A 2026 attempt to scrap that limit for everyone fell one vote short.",
+     "Visitors get none of this. The U.S. government warns that any drug possession, medical cannabis included, can mean a long jail sentence."
+    ]
    }
   },
   "DE": {
@@ -1024,6 +1066,15 @@
    "reviewed_on": "2026-11-19"
   },
   {
+   "place": "Mexico",
+   "risk": "Medical cards do not count",
+   "detail": "Possession is a crime outside a COFEPRIS permit, and visitors have no permit. The U.S. government warns that drug possession and use, including medical marijuana, is illegal in Mexico and may result in a lengthy jail sentence.",
+   "source_ids": [
+    "mx-osac"
+   ],
+   "reviewed_on": "2026-11-19"
+  },
+  {
    "place": "United Arab Emirates",
    "risk": "Cannabis in your blood counts",
    "detail": "UAE authorities treat drugs found in your bloodstream as possession, so use before arrival can lead to charges. Some CBD products are illegal.",
@@ -1276,19 +1327,67 @@
    "retrieved_on": "2026-11-19"
   },
   {
-   "id": "mx-scjn-jul2026",
-   "kind": "news",
-   "publisher": "Última Hora (EFE)",
-   "title": "Corte Suprema de México flexibiliza criterio sobre posesión de marihuana para uso personal (Jul 15 2026)",
-   "url": "https://www.ultimahora.com/corte-suprema-mexico-flexibiliza-criterio-posesion-marihuana-uso-personal-n3001098.html",
+   "id": "mx-scjn-dgi",
+   "kind": "government",
+   "publisher": "Suprema Corte de Justicia de la Nación",
+   "title": "Comunicado 187/2021: Declaratoria general de inconstitucionalidad 1/2018 (Jun 28 2021)",
+   "url": "https://www.internet2.scjn.gob.mx/red2/comunicados/noticia.asp?id=6495",
    "retrieved_on": "2026-11-19"
   },
   {
-   "id": "mx-expansion",
+   "id": "mx-scjn-097",
+   "kind": "government",
+   "publisher": "Suprema Corte de Justicia de la Nación",
+   "title": "Comunicado 097/2026 (Jun 25 2026)",
+   "url": "https://www.internet2.scjn.gob.mx/red2/comunicados/comunicado.asp?id=8516",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mx-scjn-sinopsis",
+   "kind": "government",
+   "publisher": "Suprema Corte de Justicia de la Nación",
+   "title": "Sinopsis: autorización COFEPRIS para autoconsumo recreativo (Pleno, Sep 10 2026)",
+   "url": "https://www.scjn.gob.mx/sites/default/files/sinopsis_asuntos_destacados/documento/2026-10/TP-100926-LBG.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mx-scjn-ar132",
+   "kind": "government",
+   "publisher": "Suprema Corte de Justicia de la Nación",
+   "title": "Comunicado: Amparo en Revisión 132/2025, resolved Feb 4 2026",
+   "url": "https://www.internet2.scjn.gob.mx/red2/comunicados/comunicado.asp?id=8437",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mx-cronista-ar132",
    "kind": "news",
-   "publisher": "Expansión Política",
-   "title": "El vacío legal del cannabis en México (Jun 21 2026)",
-   "url": "https://politica.expansion.mx/mexico/2026/06/21/riesgos-consumo-cannabis-turistas-mundial-2026-mexico",
+   "publisher": "El Cronista México",
+   "title": "La Suprema Corte estuvo a un solo voto de cambiar la posesión de marihuana (Feb 2026)",
+   "url": "https://www.cronista.com/mexico/finanzas-economia/la-suprema-corte-estuvo-a-un-solo-voto-de-cambiar-para-siempre-la-posesion-de-marihuana-que-decidio-y-por-que-freno-el-fallo",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mx-lgs",
+   "kind": "statute",
+   "publisher": "Ley General de Salud (via Justia México)",
+   "title": "Capítulo VII, Delitos contra la salud en su modalidad de narcomenudeo, arts. 473 to 482",
+   "url": "https://mexico.justia.com/federales/leyes/ley-general-de-salud/titulo-decimo-octavo/capitulo-vii/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mx-osac",
+   "kind": "government",
+   "publisher": "U.S. Department of State, OSAC",
+   "title": "Mexico security alert: drugs, including medical marijuana",
+   "url": "https://www.osac.gov/Content/Report/8b43715d-cb8b-4989-ad6c-1dee1de7c8ed",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mx-cdmx-transito",
+   "kind": "news",
+   "publisher": "ADN40",
+   "title": "Manejar en estado de ebriedad en CDMX vs Edomex: Reglamento de Tránsito art. 50 (Jul 15 2026)",
+   "url": "https://www.adn40.mx/mexico/2026-07-15/manejar-en-estado-de-ebriedad-te-sale-hasta-tres-veces-mas-caro-en-cdmx-que-en-edomex/",
    "retrieved_on": "2026-11-19"
   },
   {
