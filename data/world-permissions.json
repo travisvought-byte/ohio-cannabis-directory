@@ -1200,40 +1200,103 @@
   "PT": {
    "name": "Portugal",
    "page": "world-portugal.html",
-   "summary": "Decriminalized all drugs for personal use in 2001. Possession of up to 10 days' supply goes to a health-focused panel, not a court. Selling and growing are still crimes.",
-   "note": "",
+   "summary": "Decriminalized all drugs for personal use in 2001. Having cannabis for yourself goes to a health-focused panel, not a court, and since 2023 that holds whatever the amount if personal use is shown. Selling and growing are still crimes.",
+   "note": "Portuguese sources are summarized in English.",
    "answers": {
     "adult-use": {
      "status": "limited",
      "short": "Decriminalized, not legal",
-     "detail": "Since July 2001, using, buying or possessing up to a 10-day supply of any drug is an administrative matter. Cases go to a regional Commission for the Dissuasion of Drug Addiction, which can recommend treatment, warnings or fines.",
-     "citation": "Law 30/2000; U.S. OJP fact sheet; UNSW",
+     "detail": "Since July 2001, using, buying or having any drug for your own use is an administrative offence, not a crime. Cases go to a regional Commission for the Dissuasion of Drug Addiction, which can recommend treatment, warnings or fines. It is still unlawful: police can seize the drug, and anyone aged 16 or over who is caught is called before the commission.",
+     "citation": "Law 30/2000; U.S. OJP fact sheet; UNSW; Observador (news)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
       "pt-ojp",
-      "pt-unsw"
+      "pt-unsw",
+      "pt-observador"
      ]
     },
     "possession": {
      "status": "limited",
-     "short": "Up to 10 days' supply",
-     "detail": "A 2008 Supreme Court ruling made possession above the 10-day amount a crime again.",
-     "citation": "Harm Reduction Journal (research)",
+     "short": "10 days' supply is the reference: 25 grams of herb, 5 of hashish",
+     "detail": "The reference table sets a daily dose of 2.5 grams of herbal cannabis, 0.5 grams of resin and 0.25 grams of oil, so the 10-day mark is 25 grams, 5 grams and 2.5 grams. Since October 1, 2023 that mark is no longer the line between an offence and a crime. Having more is only a sign that the purpose may not be personal use, and if personal use is shown the case is closed and sent to the dissuasion commission. A 2008 Supreme Court ruling had made larger amounts a crime; Law 55/2023 reversed that.",
+     "citation": "Portaria 94/96; Law 55/2023 via Dantas Rodrigues and PLMJ (law firms); Harm Reduction Journal (research)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
+      "pt-portaria94",
+      "pt-dantas",
+      "pt-plmj",
       "pt-pmc"
      ]
     },
     "buying": {
      "status": "not-permitted",
      "short": "Selling and growing are crimes",
-     "detail": "Dealers, traffickers and growers still face criminal penalties.",
-     "citation": "UNSW (research)",
+     "detail": "Dealers, traffickers and growers still face criminal penalties. Buying for your own use is itself an administrative offence.",
+     "citation": "UNSW (research); Decreto-Lei 15/93 art. 40 via Dantas Rodrigues (law firm)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
-      "pt-unsw"
+      "pt-unsw",
+      "pt-dantas"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "No. Growing for yourself is still a crime",
+     "detail": "Growing cannabis for your own use carries up to three months in prison or a fine of up to 30 day-units, though the court may waive the penalty. The 2023 reform decriminalized having and buying for personal use, not growing.",
+     "citation": "Decreto-Lei 15/93 art. 40 as amended by Law 55/2023, via Dantas Rodrigues and PLMJ (law firms)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "pt-dantas",
+      "pt-plmj"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Yes, on prescription from a pharmacy, since 2019",
+     "detail": "Law 33/2018 and Decree-Law 8/2019 allow cannabis-based medicines and preparations approved by the medicines agency, INFARMED. A doctor may prescribe them only when conventional treatments with authorised medicines do not work or cause relevant side effects, and they are dispensed in pharmacies. INFARMED's list of approved uses took effect on February 1, 2019: spasticity from multiple sclerosis or spinal cord injury, nausea from chemotherapy and similar treatments, appetite stimulation in palliative care, chronic cancer or nerve pain, Tourette syndrome, severe childhood epilepsy and treatment-resistant glaucoma.",
+     "citation": "INFARMED Deliberação 11/CD/2019 (Lei 33/2018; Decreto-Lei 8/2019)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "pt-infarmed-ind"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "Banned under the influence; fine of €500 to €2,500",
+     "detail": "The Highway Code bans driving under the influence of psychotropic substances. A driver counts as under the influence when a medical or forensic report says so after testing, and the fine is €500 to €2,500. It becomes a crime, with up to a year in prison or a fine of up to 120 day-units, when the driver is not in a condition to drive safely.",
+     "citation": "Código da Estrada art. 81 via Pplware (secondary); Código Penal art. 292 via Tribunal da Relação de Coimbra, 2022",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "pt-pplware",
+      "pt-trc"
      ]
     }
+   },
+   "experiment": {
+    "text": "The 2023 change is contested. In January 2026 Madeira's regional parliament voted to ask the national parliament to restore a presumption of trafficking for anyone holding more than the 10-day amount, arguing that the reform made small-scale dealing harder to prosecute. It is a proposal, not law. In practice, a lawyer quoted by Observador in 2023 put fines at about 50 to 100 euros, and the paper reported that a person who follows the commission's plan is not fined.",
+    "source_ids": [
+     "pt-joram",
+     "pt-observador"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Portugal",
+    "source_ids": [
+     "pt-ojp",
+     "pt-unsw",
+     "pt-dantas",
+     "pt-plmj",
+     "pt-observador",
+     "pt-infarmed-ind"
+    ],
+    "points": [
+     "Decriminalized is not legal. Use and possession are administrative offences handled by health-focused commissions instead of courts.",
+     "It covers every drug, not just cannabis, and has since July 2001.",
+     "Quantity no longer decides it. Since October 2023, more than 10 days' supply is a warning sign, not an automatic crime.",
+     "Growing is the exception. Growing for yourself is still a crime, even though having it is not.",
+     "Police can still take it. It is not a crime, but it is not lawful either.",
+     "Medical cannabis is a pharmacy product on prescription, for a short list of conditions."
+    ]
    }
   },
   "CH": {
@@ -2814,6 +2877,70 @@
    "publisher": "UNSW Drug Policy Modelling Program",
    "title": "Was decriminalisation effective in Portugal? (2024)",
    "url": "https://unsw.edu.au/content/dam/pdfs/ada/sprc/research-reports/dpmp-drug-summit-2024-explainers/2024-11-was-decriminalisation-effective-in-portugal-v3.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "pt-dantas",
+   "kind": "organization",
+   "publisher": "Dantas Rodrigues & Associados (law firm)",
+   "title": "Nova Lei da Droga: old and new Article 40 of Decreto-Lei 15/93 after Lei 55/2023 (in force Oct 1 2023)",
+   "url": "https://dantasrodrigues.com/wp-content/uploads/nova-lei-da-droga-v3.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "pt-plmj",
+   "kind": "organization",
+   "publisher": "PLMJ (law firm)",
+   "title": "Change to the Anti-Drugs Law: a new distinction between trafficking and use (Nov 2023)",
+   "url": "https://www.plmj.com/xms/files/03_Novidades_legislativas/2023/outubro/NI_Change_to_the_Anti-Drugs_Law.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "pt-observador",
+   "kind": "news",
+   "publisher": "Observador",
+   "title": "Posse não é crime, mas é ilegal: how the possession rules work (Nov 9 2023)",
+   "url": "https://observador.pt/2023/11/09/haxixe-encontrado-na-casa-de-joao-galamba-estava-dentro-da-lei-para-autoconsumo-posse-nao-e-crime-mas-e-ilegal/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "pt-portaria94",
+   "kind": "statute",
+   "publisher": "Portaria n.º 94/96 (Diário da República pages, copy hosted by Erowid)",
+   "title": "Limites quantitativos máximos para cada dose média individual diária: annexed table",
+   "url": "https://taz4.erowid.org/psychoactives/law/countries/portugal/portaria_94_96.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "pt-joram",
+   "kind": "government",
+   "publisher": "Jornal Oficial da Região Autónoma da Madeira",
+   "title": "Resolução da Assembleia Legislativa n.º 3/2026/M: bill to amend Decreto-Lei 15/93 and Lei 30/2000 (Feb 19 2026)",
+   "url": "https://joram.madeira.gov.pt/joram/Iserie/Ano%20de%202026/ISerie-030-2026-02-19.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "pt-infarmed-ind",
+   "kind": "government",
+   "publisher": "INFARMED",
+   "title": "Deliberação n.º 11/CD/2019: approved therapeutic indications for cannabis-based preparations (Jan 31 2019)",
+   "url": "https://www.infarmed.pt/documents/15786/2893227/lista+das+indica%C3%A7%C3%B5es+terap%C3%AAuticas+aprovadas+para+as+prepara%C3%A7%C3%B5es+e+subst%C3%A2ncias+%C3%A0+base+da+planta+da+can%C3%A1bis/294b3a2d-326b-46c3-9c08-a3b57427d027",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "pt-pplware",
+   "kind": "news",
+   "publisher": "Pplware",
+   "title": "Código da Estrada, artigo 81.º: condução sob influência de álcool ou de substâncias psicotrópicas (Nov 17 2019)",
+   "url": "https://pplware.sapo.pt/motores/codigo-da-estrada-taxa-alcool/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "pt-trc",
+   "kind": "government",
+   "publisher": "Tribunal da Relação de Coimbra via vLex",
+   "title": "Acórdão n.º 4/21.0PTCBR.C1 (Mar 17 2022): Código Penal art. 292 and Código da Estrada art. 81",
+   "url": "https://vlex.pt/vid/acordao-n-4-21-1032041335",
    "retrieved_on": "2026-11-19"
   },
   {
