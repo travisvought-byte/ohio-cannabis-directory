@@ -942,51 +942,142 @@
   "CZ": {
    "name": "Czechia",
    "page": "world-czechia.html",
-   "summary": "Since January 1, 2026, adults 21 and older can grow three plants and keep 100 grams at home. No sales and no clubs yet.",
-   "note": "",
+   "summary": "Since January 1, 2026, adults over 21 can grow three plants, keep 100 grams at home and carry 25 grams. There are no shops and no clubs, and supplying anyone else is still a crime.",
+   "note": "Czech sources are summarized in English.",
    "answers": {
     "adult-use": {
      "status": "allowed",
-     "short": "Yes, 21 and older (personal use)",
-     "detail": "A criminal code reform that took effect January 1, 2026 lets adults 21 and over grow and possess limited amounts. Commercial activity is still not permitted.",
-     "citation": "Radio Prague International; Expats.cz (news)",
+     "short": "Yes, 21 and older, for personal use",
+     "detail": "Since January 1, 2026 a person over 21 needs no permit to keep a limited amount of cannabis or to grow up to three plants for their own use. The change came with Act No. 270/2025, a wider reform of the Criminal Code. Commercial activity is still not permitted.",
+     "citation": "Act No. 167/1998 § 5(12) and (13); Advokátní deník; Radio Prague International; Expats.cz (news)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
+      "cz-act167",
+      "cz-advokatni-denik",
       "cz-radio",
       "cz-expats"
      ]
     },
     "possession": {
      "status": "allowed",
-     "short": "100 grams at home, 25 grams in public",
-     "detail": "Possession of 101 to 200 grams at home is an administrative offence; more than 200 grams is a crime.",
-     "citation": "Expats.cz; Business of Cannabis (news)",
+     "short": "100 grams at home, 25 grams outside",
+     "detail": "A person over 21 may keep up to 100 grams of cannabis at home and up to 25 grams elsewhere, for their own use. More than that is a misdemeanour with a fine of up to 50,000 crowns. More than 200 grams at home or 50 grams elsewhere is a crime. Under 21 there is no legal amount: up to 200 grams at home or 50 grams elsewhere is a misdemeanour.",
+     "citation": "Act No. 167/1998 § 5(12) and § 39; Criminal Code § 285 via Advokátní deník; Expats.cz (news)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
-      "cz-expats",
-      "cz-boc"
+      "cz-act167",
+      "cz-advokatni-denik",
+      "cz-expats"
      ]
     },
     "home-grow": {
      "status": "allowed",
-     "short": "3 plants",
-     "detail": "Growing up to three plants is legal. Four or five plants is a misdemeanour, and more than five is a felony.",
-     "citation": "Business of Cannabis (news)",
+     "short": "3 plants, 21 and older",
+     "detail": "A person over 21 may grow, harvest and process up to three cannabis plants for their own use, in a property they own or have another legal right to. More than three plants is a misdemeanour with a fine of up to 50,000 crowns, and more than five is a crime. Under 21, growing up to five plants is a misdemeanour. Extracting resin or THC from the plant is prohibited outside medicine and science.",
+     "citation": "Act No. 167/1998 § 5(13), § 15 and § 39; Criminal Code § 285 via Advokátní deník; Business of Cannabis (news)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
+      "cz-act167",
+      "cz-advokatni-denik",
       "cz-boc"
      ]
     },
     "buying": {
      "status": "not-permitted",
-     "short": "No legal sales",
-     "detail": "No retail sales, and cannabis clubs are not yet legal.",
-     "citation": "Expats.cz (news)",
+     "short": "No legal sales, no clubs",
+     "detail": "There are no shops and no cannabis clubs. The 2026 allowance covers only keeping and growing for your own use. Producing, offering, selling or otherwise supplying cannabis to someone else is a crime under the new section 283a of the Criminal Code.",
+     "citation": "Criminal Code § 283a via Advokátní deník; Act No. 167/1998 § 5(12) and (13); Expats.cz (news)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
+      "cz-advokatni-denik",
+      "cz-act167",
       "cz-expats"
      ]
+    },
+    "sharing": {
+     "status": "not-permitted",
+     "short": "No. Supplying someone else is a crime",
+     "detail": "The legal amounts are for your own use only. Section 283a of the Criminal Code covers anyone who offers, sells or otherwise supplies cannabis to another person. Separately, enabling a person under 21 to use an addictive substance unlawfully is a misdemeanour.",
+     "citation": "Criminal Code § 283a via Advokátní deník; Act No. 167/1998 § 5(12) and § 39(2)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cz-advokatni-denik",
+      "cz-act167"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Yes, on electronic prescription; insurance pays 90 percent",
+     "detail": "Doctors prescribe medical cannabis on an electronic prescription to patients over 18, up to 180 grams per 30 days. Public health insurance pays 90 percent of the price for 30 grams a month, and more if the insurer's reviewing doctor approves it. Since April 2025 general practitioners can prescribe it for chronic pain that cannot otherwise be relieved; other conditions stay with specialists.",
+     "citation": "eRecept guide for doctors (Decree No. 236/2015); ČTK (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cz-erecept",
+      "cz-ctk-gp"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "2 ng/ml of THC in blood; the 2026 reform changed nothing",
+     "detail": "A driver with 2 nanograms of THC per millilitre of blood or more counts as under the influence, which is at least a misdemeanour: a fine of 7,000 to 25,000 crowns, a driving ban of 6 to 18 months and 6 penalty points. From about 10 ng/ml courts generally treat it as a crime, with up to three years in prison and a ban of up to ten years. Refusing the test brings a fine of 25,000 to 75,000 crowns and an 18 to 36 month ban. The January 2026 cannabis reform left these rules as they were.",
+     "citation": "Government Regulation No. 41/2014 and Road Traffic Act § 125c via epravo.cz (law firm); Cebia guide (secondary)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cz-epravo-thc",
+      "cz-cebia"
+     ]
+    },
+    "record-relief": {
+     "status": "limited",
+     "short": "No clearing scheme; unserved sentences are not carried out",
+     "detail": "Our sources describe no erasure of old cannabis convictions. What the reform did is stop punishment: a sentence imposed by December 31, 2025 for something that stopped being a crime on January 1, 2026 is not carried out, including any unserved remainder. The Ministry of Justice says courts apply this on their own, with no application needed, and that it covers some conduct under the old section 285(1), which dealt with growing for personal use.",
+     "citation": "Act No. 270/2025 transitional provision via Ministry of Justice reply MSP-542/2025; Advokátní deník",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cz-msp-foi",
+      "cz-advokatni-denik"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "No. Import and export are crimes",
+     "detail": "Section 283a of the Criminal Code makes it a crime to import or export cannabis without authorisation, alongside producing and selling it. The 2026 allowance covers keeping and growing for your own use and says nothing about crossing a border.",
+     "citation": "Criminal Code § 283a via Advokátní deník; Act No. 167/1998 § 5(12) and (13)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cz-advokatni-denik",
+      "cz-act167"
+     ]
     }
+   },
+   "experiment": {
+    "text": "Cannabis with no more than 1 percent THC counts as technical hemp and sits outside these limits. In July 2025 the government's drug policy office said its working group would keep discussing the proposals that were not adopted. In January 2026 the new justice minister, Jeroným Tejc, said he wants tougher penalties for people who drive or commit other offences under the influence of drugs, including letting courts take away driving licences; as of that report the change was still being prepared.",
+    "source_ids": [
+     "cz-act167",
+     "cz-policie",
+     "cz-vlada-2025",
+     "cz-echo24-tejc"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Czechia",
+    "source_ids": [
+     "cz-act167",
+     "cz-advokatni-denik",
+     "cz-expats",
+     "cz-erecept",
+     "cz-cebia",
+     "cz-epravo-thc",
+     "cz-msp-foi"
+    ],
+    "points": [
+     "You must be over 21. Below that age no amount is legal, though small amounts are a misdemeanour rather than a crime.",
+     "Three tiers, not two. Up to 100 grams at home or three plants is legal, the next band is a fine of up to 50,000 crowns, and beyond 200 grams at home or five plants it is a crime.",
+     "Nothing to buy. There are no shops and no clubs, and supplying anyone else is a crime under a new cannabis section of the Criminal Code.",
+     "Insurance pays for medical cannabis: 90 percent of the price for 30 grams a month.",
+     "The reform did not touch driving. The limit stays at 2 ng/ml of THC in blood.",
+     "Sentences for acts that stopped being crimes are no longer carried out from January 1, 2026, and courts apply that without an application."
+    ]
    }
   },
   "ES": {
@@ -2476,6 +2567,86 @@
    "publisher": "Business of Cannabis",
    "title": "Czech Republic moves closer to cannabis decriminalisation with landmark law",
    "url": "https://businessofcannabis.com/czech-republic-moves-closer-to-cannabis-decriminalisation-with-landmark-law/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cz-act167",
+   "kind": "statute",
+   "publisher": "Act No. 167/1998 Coll. (Ministry of Health, Czechia)",
+   "title": "Zákon o návykových látkách, text in force from January 1, 2026: § 2, § 5(12) and (13), § 15 and § 39",
+   "url": "https://mzd.gov.cz/wp-content/uploads/2025/10/Sb_1998_167_2026-01-01_IZ.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cz-advokatni-denik",
+   "kind": "organization",
+   "publisher": "Advokátní deník (Czech Bar Association)",
+   "title": "Drogové trestné činy ve světle aktuální novely trestního zákoníku: Criminal Code § 283a and § 285 (Apr 4 2026)",
+   "url": "https://advokatnidenik.cz/2026/04/04/drogove-trestne-ciny-ve-svetle-aktualni-novely-trestniho-zakoniku/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cz-msp-foi",
+   "kind": "government",
+   "publisher": "Ministry of Justice (Czechia)",
+   "title": "Reply MSP-542/2025-OSV-OSV/4: what happens to sentences already imposed (Jul 14 2025)",
+   "url": "https://eudeska.justice.cz/Lists/EUD/Attachments/5839/MSP-542_2025-OSV-OSV.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cz-vlada-2025",
+   "kind": "government",
+   "publisher": "Office of the Government of the Czech Republic, Drug Policy Department",
+   "title": "Dekriminalizace drogových trestných činů pokračuje (Jul 11 2025)",
+   "url": "https://vlada.gov.cz/assets/ppov/zavislosti/media/2025-07-11_Dekriminalizace-drogovych-trestnych-cinu-pokracuje_fin.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cz-erecept",
+   "kind": "government",
+   "publisher": "eRecept, the Czech electronic prescription system",
+   "title": "Funkcionality eRecept pro lékaře, version 3.1 (Jan 1 2025): cannabis quantity limit and reimbursement",
+   "url": "https://epreskripce.gov.cz/wp-content/uploads/2024/12/Funkcionality-eRecept-lekar-v3.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cz-ctk-gp",
+   "kind": "news",
+   "publisher": "ČTK via České noviny",
+   "title": "Od dubna mohou praktičtí lékaři předepsat léčebné konopí (Mar 30 2025)",
+   "url": "https://www.ceskenoviny.cz/zpravy/2654349",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cz-epravo-thc",
+   "kind": "organization",
+   "publisher": "epravo.cz (Kaska & Písečka, law firm)",
+   "title": "Přestupek nebo trestný čin: limitní hodnota THC vylučující schopnost řídit (Mar 22 2016)",
+   "url": "https://www.epravo.cz/top/clanky/prestupek-nebo-trestny-cin-limitni-hodnota-thc-vylucujici-schopnost-ridit-motorove-vozidlo-100685.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cz-cebia",
+   "kind": "organization",
+   "publisher": "Cebia",
+   "title": "Drogy za volantem: limits and penalties in 2026 (Oct 2 2026)",
+   "url": "https://www.cebia.cz/pruvodce/drogy-za-volantem",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cz-echo24-tejc",
+   "kind": "news",
+   "publisher": "Echo24",
+   "title": "Zpřísnění trestů za skutky pod vlivem drog? (Jan 10 2026)",
+   "url": "https://www.echo24.cz/a/HmASx/vlada-koalice-konopi-navykove-latky-zprisneni-trest-ridicske-opravneni-opozice-benda-stojanova-platenik-kritika",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cz-policie",
+   "kind": "government",
+   "publisher": "Police of the Czech Republic",
+   "title": "Konopí a konopné produkty (Jul 1 2026)",
+   "url": "https://policie.gov.cz/konopi-a-konopne-produkty",
    "retrieved_on": "2026-11-19"
   },
   {
