@@ -1,0 +1,4 @@
+{
+  "about": "Sponsored spots on the-reefer.com, read by build_national.py. Empty by default: with no entries, no page shows a sponsored spot or any trace of one. Each entry: id (unique), slot (\"home\" or \"state\"), sponsor (name), text (up to 200 characters), url (the sponsor's own https:// address); optional image (a file in assets/sponsors/, served from this site) with image_alt; optional start and end dates (YYYY-MM-DD, both days included); optional states (state codes, state slot only; none means every state page). At most one spot shows per page: the first active entry for that slot, in file order. A spot shows from the first site update on or after its start date, and is hidden on visitors' screens after its end date. Spots are reviewed by a person before they are added; see the partners page rules.",
+  "sponsors": []
+}

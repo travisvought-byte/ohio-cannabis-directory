@@ -89,7 +89,7 @@ REEFER_TOP = (
 REEFER_FOOT = (
     '<footer class="site-footer"><nav aria-label="More resources">'
     '<a href="index.html">All states</a><a href="medical.html">Medical cards</a><a href="coverage.html">Medicaid and insurance</a><a href="help.html">Get help</a>'
-    '<a href="partners.html">Partners</a><a href="pennsylvania-directory.html">Pennsylvania companies</a><a href="pennsylvania-advocacy.html">Pennsylvania advocacy</a>'
+    '<a href="partners.html">Partners</a><a href="privacy.html">Privacy</a><a href="pennsylvania-directory.html">Pennsylvania companies</a><a href="pennsylvania-advocacy.html">Pennsylvania advocacy</a>'
     '<a href="state.html?state=PA">Pennsylvania portal</a><a href="state.html?state=NY">New York portal</a>'
     f'<a href="{OHIO_HOME}/">OhioWeed.org</a><a href="https://mobilitytalk.org/">Mobility Talk</a><a href="https://findbingo.org/">Find Bingo</a></nav>'
     '<p>Created and maintained by <a href="https://travisvought.com/">Travis Vought</a> · Shared in support of '

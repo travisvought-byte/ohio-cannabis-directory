@@ -34,7 +34,7 @@ class PagesSiteTest(unittest.TestCase):
 
     def test_every_state_page_is_at_the_root_and_in_the_sitemap(self):
         sitemap = self.read('sitemap.xml')
-        self.assertEqual(len(self.result['national']), 68)
+        self.assertEqual(len(self.result['national']), 69)
         for name in self.result['national']:
             self.assertTrue((self.out / name).exists(), name)
             if name != 'index.html':
@@ -62,6 +62,7 @@ class PagesSiteTest(unittest.TestCase):
             self.assertNotIn('class="vhg-brand"', text)
             self.assertNotIn('knowledge-links site-nav', text)
             block = text[text.index('<div class="reefer-top"'):text.index('</nav></div>')] + text[text.rindex('<footer class="site-footer"'):]
+            self.assertIn('<a href="privacy.html">Privacy</a>', block, f'{name} footer links to the privacy page')
             for href in re.findall(r'href="([^"#:?]+\.html)', block):
                 self.assertTrue((self.out / href).exists(), f'{name} menu links to missing {href}')
 

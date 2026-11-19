@@ -151,7 +151,13 @@ select{border-color:#5d6b64}}
 @media(max-width:720px){.hero .wrap{grid-template-columns:1fr;padding-top:24px;padding-bottom:34px}.hero .art{order:-1}.hero .art .shipbox{max-width:420px;margin:0}}
 @media(max-width:560px){header.site nav{margin-left:0;gap:0 16px}header.site .wrap{padding-bottom:4px}.tasks{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.task{padding:12px}
 .usmap{gap:3px}.tile{border-radius:4px}.glance a{grid-template-columns:1fr}.needs{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.need{padding:10px 11px}.rows li{grid-template-columns:1fr}.rows .meta{grid-column:1}}
-@media print{header.site nav,footer.site,select,label,.pick{display:none}}
+/* Sponsored spots: set apart from listings and answers by a dashed gold frame and their own label. */
+.ad-slot{margin:34px 0;padding:10px 16px 14px;max-width:720px;background:#fbf6e6;border:2px dashed #b89a45;border-radius:12px}.ad-slot[hidden]{display:none}
+.ad-label{margin:0 0 6px;font-size:.75rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:#6b5517}
+.ad-slot a{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;text-decoration:none;color:var(--ink);min-height:44px}.ad-slot img{max-width:120px;max-height:90px;width:auto;height:auto;border-radius:8px;flex:none}
+.ad-slot .ad-text{flex:1 1 220px;min-width:0}.ad-slot strong{display:block;color:var(--link);text-decoration:underline;text-underline-offset:3px}.ad-slot .ad-text span{display:block;font-size:.93rem}
+@media (prefers-color-scheme:dark){.ad-slot{background:#25210f;border-color:#8c7638}.ad-label{color:#e8d08a}}
+@media print{header.site nav,footer.site,select,label,.pick,.ad-slot{display:none}}
 '''
 
 ASSETS = '../assets/the-reefer/'  # national/ pages; the published copy sits at the root (see scripts/build_pages_site.py)
@@ -314,6 +320,95 @@ def jokes_page(jokes):
                  ld=[breadcrumbs([('Home', '')], 'jokes.html', 'Joke of the day')])
 
 
+# Sponsored spots (owner's direction, November 19, 2026: the site carries advertising from direct sponsors, kept apart from
+# the listings and the law). data/national-sponsors.json is empty by default, and an empty file puts nothing on any page.
+# A spot is never placed inside the answers, a listing or the map; it never changes what is listed, how it ranks or what
+# a state page says. At most one spot on the home page and one on each state page: the first active entry in file order.
+SPONSORS_FILE = ROOT / 'data/national-sponsors.json'
+SPONSOR_SLOTS = {'home': 'the home page', 'state': 'state pages'}
+SPONSOR_FIELDS = {'id', 'slot', 'sponsor', 'text', 'url', 'image', 'image_alt', 'start', 'end', 'states'}
+SPONSOR_TEXT_MAX = 200
+
+
+def load_sponsors(codes, path=None):
+    """Read and check the sponsored spots. A mistake stops the build rather than publishing a broken or misleading spot."""
+    data = json.loads(Path(path or SPONSORS_FILE).read_text(encoding='utf-8'))
+    rows = data.get('sponsors')
+    if not isinstance(rows, list):
+        raise SystemExit('data/national-sponsors.json: "sponsors" must be a list (empty when there are none)')
+    seen = set()
+    for i, s in enumerate(rows):
+        where = f'data/national-sponsors.json sponsor {i + 1}'
+        if not isinstance(s, dict):
+            raise SystemExit(f'{where}: must be an object')
+        unknown = set(s) - SPONSOR_FIELDS
+        if unknown:
+            raise SystemExit(f'{where}: unknown field(s) {sorted(unknown)}')
+        for key in ('id', 'slot', 'sponsor', 'text', 'url'):
+            if not isinstance(s.get(key), str) or not s[key].strip():
+                raise SystemExit(f'{where}: "{key}" is required')
+        if s['id'] in seen:
+            raise SystemExit(f'{where}: id "{s["id"]}" is used twice')
+        seen.add(s['id'])
+        if s['slot'] not in SPONSOR_SLOTS:
+            raise SystemExit(f'{where}: "slot" must be one of {sorted(SPONSOR_SLOTS)}')
+        if len(s['text']) > SPONSOR_TEXT_MAX:
+            raise SystemExit(f'{where}: "text" is longer than {SPONSOR_TEXT_MAX} characters')
+        if not re.fullmatch(r'https://[^\s"<>]+', s['url']):
+            raise SystemExit(f'{where}: "url" must be a full https:// address')
+        if 'image' in s:
+            # Served from this site, so showing a spot never sends a visitor's browser to the sponsor's server.
+            if not re.fullmatch(r'assets/sponsors/[A-Za-z0-9._-]+\.(png|jpg|jpeg|webp|svg)', s['image'] or '') or not (ROOT / s['image']).is_file():
+                raise SystemExit(f'{where}: "image" must be a file in assets/sponsors/ (png, jpg, webp or svg)')
+            if not isinstance(s.get('image_alt'), str) or not s['image_alt'].strip():
+                raise SystemExit(f'{where}: an image needs "image_alt" text')
+        elif 'image_alt' in s:
+            raise SystemExit(f'{where}: "image_alt" without an image')
+        for key in ('start', 'end'):
+            if key in s:
+                try:
+                    date.fromisoformat(s[key])
+                except (TypeError, ValueError):
+                    raise SystemExit(f'{where}: "{key}" must be a date like 2026-12-31')
+        if 'start' in s and 'end' in s and s['start'] > s['end']:
+            raise SystemExit(f'{where}: "start" is after "end"')
+        if 'states' in s:
+            if s['slot'] != 'state':
+                raise SystemExit(f'{where}: "states" applies only to the state slot')
+            if not isinstance(s['states'], list) or not s['states'] or set(s['states']) - set(codes):
+                raise SystemExit(f'{where}: "states" must be a list of state codes such as ["OH", "PA"]')
+    return rows
+
+
+def active_sponsor(sponsors, slot, code=None, today=None):
+    """The one spot to show in a slot today, or None. A spot without states runs on every state page."""
+    today = (today or date.today()).isoformat()
+    for s in sponsors:
+        if s['slot'] != slot or s.get('start', today) > today or s.get('end', today) < today:
+            continue
+        if slot == 'state' and s.get('states') and code not in s['states']:
+            continue
+        return s
+    return None
+
+
+# The site is rebuilt only when it changes, so a page could outlive a spot's end date: the visitor's own date hides it.
+SPONSOR_SCRIPT = ('<script>(function(){var d=new Date(),t=d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2);'
+                  'var a=document.querySelectorAll(".ad-slot[data-end]");for(var i=0;i<a.length;i++)if(a[i].getAttribute("data-end")<t)a[i].hidden=true})();</script>')
+
+
+def sponsor_slot(s):
+    """A labeled sponsored spot, or nothing at all when no spot is active."""
+    if not s:
+        return ''
+    image = f'<img src="../{esc(s["image"])}" alt="{esc(s["image_alt"])}" loading="lazy">' if s.get('image') else ''
+    end = f' data-end="{esc(s["end"])}"' if s.get('end') else ''
+    return (f'<aside class="ad-slot" aria-label="Sponsored" data-sponsor="{esc(s["id"])}"{end}><p class="ad-label">Sponsored</p>'
+            f'<a href="{esc(s["url"])}" target="_blank" rel="sponsored noopener" data-track="sponsor:{esc(s["id"])}">{image}'
+            f'<span class="ad-text"><strong>{esc(s["sponsor"])}</strong><span>{esc(s["text"])}</span></span></a></aside>'
+            + (SPONSOR_SCRIPT if end else ''))
+
+
 def load_coverage():
     """Who pays for medical cannabis (data/medical-coverage.json)."""
     return json.loads((ROOT / 'data/medical-coverage.json').read_text(encoding='utf-8'))
@@ -402,7 +497,7 @@ def shell(title, description, body, name, place, hero='', ld=None):
     family = ''.join(f'<li><a href="{esc(url)}">{esc(label)}</a></li>' for url, label, _, _ in FAMILY)
     foot = ('<footer class="site"><div class="wrap"><div class="cols">'
             '<nav aria-label="This site"><h2>This site</h2><ul><li><a href="index.html#map">Pick your state</a></li>'
-            '<li><a href="index.html#compare">Compare the law</a></li><li><a href="medical.html">Medical cards</a></li><li><a href="coverage.html">Medicaid and insurance</a></li><li><a href="help.html">Get help</a></li><li><a href="jokes.html">Joke of the day</a></li><li><a href="partners.html">Partners</a></li><li><a href="about.html">About and methods</a></li></ul></nav>'
+            '<li><a href="index.html#compare">Compare the law</a></li><li><a href="medical.html">Medical cards</a></li><li><a href="coverage.html">Medicaid and insurance</a></li><li><a href="help.html">Get help</a></li><li><a href="jokes.html">Joke of the day</a></li><li><a href="partners.html">Partners</a></li><li><a href="about.html">About and methods</a></li><li><a href="privacy.html">Privacy</a></li></ul></nav>'
             f'<nav aria-label="Our other sites"><h2>Our other sites</h2><ul>{family}</ul></nav>'
             '<nav aria-label="Corrections and data"><h2>Fix or reuse</h2><ul>'
             f'<li><a href="{esc(correction_url(place))}">Suggest a correction</a></li>'
@@ -514,7 +609,7 @@ def glance(perm, state_answers, name):
             + ''.join(rows) + '</ul></section>')
 
 
-def state_page(perm, score, directory, code, answers, sources, medical=None, dispensaries=None):
+def state_page(perm, score, directory, code, answers, sources, medical=None, dispensaries=None, sponsors=()):
     name = perm['jurisdictions'][code]
     state_answers = answers.get(code, {})
     cites = Cites(sources)
@@ -549,6 +644,8 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
     body.append(glance(perm, state_answers, name))
     body.append(law_section(perm, code, state_answers, cites, sources))
     body.append(pathway_section(code, name, directory['pathways'], card, pack))
+    # After the main content, outside the answers and the directory cards.
+    body.append(sponsor_slot(active_sponsor(sponsors, 'state', code)))
     guide = (f'<li><a href="{guide_link(code, name)}">The full {esc(name)} guide</a>: directory and local help</li>' if card else '')
     body.append(f'<aside class="next" aria-label="Where to go next"><h2>Where to go next</h2><ul>{guide}'
                 '<li><a href="help.html">National help</a>: travel, veterans, legal aid, health and safety</li>'
@@ -749,15 +846,57 @@ def about_page(perm, score, directory, answers):
             + ''.join(f'<li><span class="level {esc(k)}">{esc(v)}</span></li>' for k, v in LEVEL_TEXT.items()) +
             '</ul><p>A missing answer reads “Not yet reviewed”. It never means something is prohibited. Summaries are not legal advice; the linked source is the authority.</p>',
             '<h2 id="rules">Ground rules</h2><ul><li>No paid placement, paid ranking or paid verification.</li>'
+            '<li>The site carries advertising from direct sponsors. Sponsored spots are labeled “Sponsored”, sit apart from listings and answers, and never change what’s listed, how it ranks, or what a state page says. <a href="partners.html#sponsor">How sponsoring works</a>.</li>'
             '<li>State laws are presented side by side and factually. The site does not rank states or say which approach is better.</li>'
             '<li>Nonpartisan: every party and lawmaker is treated the same way.</li></ul>',
             progress_section(perm, score, directory, answers),
             '<h2 id="corrections">Corrections and reuse</h2>'
             f'<p>Found something wrong or out of date? <a href="{esc(correction_url("the site"))}">Send a correction</a> with a link to the source. '
             f'Everything here is free to use under CC BY 4.0, and the data and build scripts are public on <a href="{REPO}">GitHub</a>.</p>'
+            '<p>How visits are counted and what the site keeps: <a href="privacy.html">Privacy</a>.</p>'
             '<p>Created and maintained by Travis Vought, shared in support of Veteran Home Guardians.</p>']
     return shell(f'About {SITE_NAME}', f'How {SITE_NAME} checks its information, what its labels mean, how far each state guide has been built, and how to send a correction.',
                  ''.join(body), 'about.html', 'the site', ld=[breadcrumbs([('Home', '')], 'about.html', 'About')])
+
+
+PRIVACY_UPDATED = '2026-11-19'
+PRIVACY_STATEMENT = 'https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement'
+
+
+def privacy_page():
+    """What the site counts and keeps, in plain words. Keep it true to assets/analytics.js and to the pages' own scripts:
+    the national pages set no cookies and use no browser storage, and nothing typed into a filter or the letter builder leaves the page."""
+    contact = 'mailto:' + EMAIL + '?' + urlencode({'subject': f'{SITE_NAME}: privacy question'}, quote_via=quote)
+    body = ['<p class="crumbs"><a href="index.html">Home</a> › Privacy</p>', '<h1>Privacy</h1>',
+            f'<p class="muted">Last updated {long_date(PRIVACY_UPDATED)}.</p>',
+            f'<p class="lede">{esc(SITE_NAME)} does not ask who you are. It counts visits without cookies, keeps nothing you type, '
+            'shares nothing about you with sponsors and sells no personal information.</p>',
+            '<h2 id="counting">Counting visits</h2>'
+            '<p>Visits are counted with <a href="https://www.goatcounter.com/">GoatCounter</a>. It sets no cookies and stores no personal information. '
+            'For each page view it records the page, the site you came from, your browser and screen size, and an approximate country worked out from '
+            'your IP address. It does not store the IP address.</p>'
+            '<p>The counter also tallies which links and buttons are used, such as a state on the map, the name of another website a link leads to, '
+            'or that a filter was used. It never records what you type. The results are seen as totals, not as a record of any one visitor.</p>',
+            '<h2 id="hosting">Hosting</h2>'
+            '<p>The site is hosted on GitHub Pages. Like any web host, GitHub receives your IP address when your browser asks for a page, and GitHub may '
+            f'keep server logs, including IP addresses, for security. See the <a href="{PRIVACY_STATEMENT}">GitHub General Privacy Statement</a>.</p>',
+            '<h2 id="typing">What you type or choose</h2>'
+            '<p>The state picker, the filters and the letter builder work inside your browser. What you type there is not sent to this site '
+            'and is not saved: it is gone when you close the page. The pages do not use cookies or your browser’s storage.</p>'
+            '<p>If you email a correction or a question, we receive your message and your email address and use them only to answer you and fix the page.</p>',
+            '<h2 id="sponsors">Sponsors</h2>'
+            '<p>Sponsored spots are labeled “Sponsored” and link to the sponsor’s own site. Their pictures are served from this site, so seeing a spot '
+            'does not contact the sponsor. Once you follow a sponsor’s link, that site’s privacy rules apply. This site does not share visitor '
+            'information with sponsors. See <a href="partners.html#sponsor">how sponsoring works</a>.</p>',
+            '<h2 id="other-sites">Links to other sites</h2>'
+            '<p>Answers link to state agencies, laws and organizations, and to our other sites. Each has its own privacy rules once you are there.</p>',
+            '<h2 id="audience">Who this site is for</h2>'
+            '<p>This site is for adults 21 and older. It is not directed to children, and we do not knowingly collect information from children. '
+            'We do not sell personal information.</p>',
+            '<h2 id="contact">Questions</h2>'
+            f'<p><a href="{esc(contact)}">Email a privacy question</a>. If this page changes, the date at the top changes with it.</p>']
+    return shell('Privacy', f'How {SITE_NAME} counts visits without cookies, what it keeps (nothing you type), how sponsors are handled and who the site is for.',
+                 ''.join(body), 'privacy.html', 'the privacy page', ld=[breadcrumbs([('Home', '')], 'privacy.html', 'Privacy')])
 
 
 # What a visitor came for, each with one place to go. Help-page needs are linked by their section.
@@ -798,6 +937,9 @@ def partners_page(perm, sources):
     """How an organization can be listed or link here. Ground rules first; no organization is called a partner until it agrees."""
     body_mail = 'Organization:\r\nWebsite:\r\nState(s) served:\r\nWho you help (patients, veterans, legal aid, business):\r\nContact person:\r\n'
     mail = 'mailto:' + EMAIL + '?' + urlencode({'subject': f'{SITE_NAME}: partner or listing request', 'body': body_mail}, quote_via=quote)
+    sponsor_body = ('Organization:\r\nWebsite:\r\nLicense and state (if you hold one):\r\nStates you want to reach:\r\n'
+                    'What you would like the spot to say:\r\nContact person:\r\n')
+    sponsor_mail = 'mailto:' + EMAIL + '?' + urlencode({'subject': f'{SITE_NAME}: sponsoring or advertising', 'body': sponsor_body}, quote_via=quote)
     link_html = f'<a href="{ORIGIN or DEFAULT_SITE_ORIGIN}/">Cannabis laws, medical cards and help for every state (The Reefer)</a>'
     orgs = []
     for i in perm['national']:
@@ -813,12 +955,31 @@ def partners_page(perm, sources):
             '<div class="need"><strong>Correct us</strong><span>If a rule, fee or address on a page you know is out of date, send the source and we fix it.</span></div></div>',
             '<h2 id="rules">Ground rules</h2><ul>'
             '<li>No paid placement, paid ranking or paid verification. Listing is free and cannot be bought.</li>'
+            '<li>Sponsored spots are labeled “Sponsored”, sit apart from listings and answers, and never change what’s listed, how it ranks, or what a state page says.</li>'
             '<li>A listing is not an endorsement, in either direction. Advocacy groups are named as advocacy groups.</li>'
             '<li>Every published fact names its source and the date it was checked. Listings link to the organization’s own site.</li>'
             '<li>The site is nonpartisan and treats every party and lawmaker the same way.</li>'
             '<li>Everything here is free to reuse under CC BY 4.0.</li></ul>',
             f'<h2 id="ask">Ask to be listed or to partner</h2><p><a class="pill" href="{esc(mail)}">Email a request</a></p>'
             '<p class="muted">Include your website, the states you serve and who you help. Requests are reviewed by a person.</p>',
+            '<h2 id="sponsor">Sponsor or advertise</h2>'
+            '<p>The Reefer is free to use. Sponsors help pay for it. A sponsor gets a labeled spot on the home page or on the state pages it chooses: '
+            'a short message and a link to its own site. Sponsoring is separate from being listed, which stays free.</p>'
+            '<h3>Who can sponsor</h3><ul>'
+            '<li>Cannabis businesses licensed in the states where they operate: dispensaries, growers, processors, testing labs and the companies that serve them</li>'
+            '<li>Patient, veteran and advocacy groups</li>'
+            '<li>Legal, compliance, banking, insurance and accounting services</li>'
+            '<li>Events, publications and other organizations whose work fits the people who use this site</li></ul>'
+            '<h3>Rules for sponsored spots</h3><ul>'
+            '<li>Every spot is labeled “Sponsored” and sits apart from listings, the law answers and the map.</li>'
+            '<li>Sponsoring never changes what is listed, how anything ranks, or what a law answer or state page says. It does not buy a listing, a review or a verification.</li>'
+            '<li>Every spot is reviewed by a person before it runs, and can be declined or taken down.</li>'
+            '<li>Only businesses licensed where they operate.</li>'
+            '<li>No health or medical claims.</li>'
+            '<li>Nothing that appeals to anyone under 21.</li>'
+            '<li>The spot links to the sponsor’s own site. Visitor information is not shared with sponsors; see <a href="privacy.html">Privacy</a>.</li></ul>'
+            f'<h3>Get in touch</h3><p><a class="pill" href="{esc(sponsor_mail)}">Email about sponsoring</a></p>'
+            '<p class="muted">Include your website, your license and its state if you hold one, and the states you want to reach. Requests are answered by a person.</p>',
             '<h2 id="link">Link to The Reefer</h2><p>Copy this link into your resources page, or link straight to any state page (for example, <code>the-reefer.com/florida.html</code>).</p>'
             f'<pre style="white-space:pre-wrap;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 12px;overflow-wrap:anywhere">{esc(link_html)}</pre>'
             '<ul><li><a href="medical.html">Medical card guides, state by state</a></li><li><a href="coverage.html">Medicaid, Medicare and insurance</a></li>'
@@ -826,7 +987,7 @@ def partners_page(perm, sources):
             '<h2 id="already">Organizations this site already points visitors to</h2>'
             '<p>These national organizations are linked from the <a href="help.html">help page</a> because they run a resource visitors need. They are not partners of this site and have not endorsed it.</p><ul>'
             + ''.join(f'<li><a href="{esc(url)}" target="_blank" rel="noopener">{esc(name)}</a> <span class="muted">({esc(need.lower())})</span></li>' for name, url, need in orgs) + '</ul>']
-    return shell('Partner with The Reefer', 'How patient groups, veteran organizations, legal aid offices and state associations can be listed on The Reefer or link to it. Free, no paid placement.',
+    return shell('Partner with The Reefer', 'How patient groups, veteran organizations, legal aid offices and state associations can be listed on The Reefer or link to it, free with no paid placement, and how to sponsor a labeled spot.',
                  ''.join(body), 'partners.html', 'the partners page', ld=[breadcrumbs([('Home', '')], 'partners.html', 'Partners')])
 
 
@@ -932,7 +1093,7 @@ def joke_bubble(jokes):
             '<a href="jokes.html">Earlier jokes</a></div><p id="joke-text"></p></div>')
 
 
-def home_page(perm, score, directory, answers, sources):
+def home_page(perm, score, directory, answers, sources, sponsors=()):
     names = perm['jurisdictions']
     jokes = load_jokes()
     ordered = sorted(names, key=lambda c: names[c])
@@ -979,6 +1140,8 @@ def home_page(perm, score, directory, answers, sources):
         body.append(f'<a class="pill" href="{law_page_name(q["id"])}">{esc(LAW_BLURB.get(q["id"], q["question"]))} <small>{answered}/{len(names)}</small></a>')
     body.append('</div><p class="muted">The number shows how many states have a reviewed answer so far. A missing answer means not yet reviewed, never that something is prohibited.</p></section>')
 
+    # After the map and the comparisons, never inside them.
+    body.append(sponsor_slot(active_sponsor(sponsors, 'home')))
     body.append('<section class="block" id="family"><h2>More from the same team</h2><div class="family">')
     for url, label, host, text in FAMILY:
         body.append(f'<a class="site-card" href="{esc(url)}" data-track="family:{esc(host)}"><strong>{esc(label)}</strong><span class="u">{esc(host)}</span><p>{esc(text)}</p></a>')
@@ -1002,17 +1165,19 @@ def pages():
     sources.update({s['id']: s for s in load_coverage()['sources']})
     disp_data, dispensaries = load_dispensaries()
     sources.update({s['source']['id']: s['source'] for s in disp_data['states']})
-    out = {'index.html': home_page(perm, score, directory, answers, sources),
+    sponsors = load_sponsors(perm['jurisdictions'])
+    out = {'index.html': home_page(perm, score, directory, answers, sources, sponsors),
            'medical.html': medical_page(perm, med_data, medical, answers, sources, dispensaries),
            'coverage.html': coverage_page(perm, medical, sources),
            'partners.html': partners_page(perm, sources),
            'jokes.html': jokes_page(load_jokes()),
            'help.html': help_page(perm, sources),
-           'about.html': about_page(perm, score, directory, answers)}
+           'about.html': about_page(perm, score, directory, answers),
+           'privacy.html': privacy_page()}
     for q in perm['questions']:
         out[law_page_name(q['id'])] = law_page(perm, q, answers, sources)
     for code, name in perm['jurisdictions'].items():
-        out[slug(name) + '.html'] = state_page(perm, score, directory, code, answers, sources, medical, dispensaries)
+        out[slug(name) + '.html'] = state_page(perm, score, directory, code, answers, sources, medical, dispensaries, sponsors)
     return out
 
 
@@ -1026,7 +1191,7 @@ def main(out_dir=None):
     out_dir.mkdir(parents=True, exist_ok=True)
     for name, text in built.items():
         (out_dir / name).write_text(text, encoding='utf-8')
-    print(f'Built national/: {len(built)} pages (home, help, about, medical cards, coverage, partners, jokes, {len(built) - 58} law comparisons, 51 states)')
+    print(f'Built national/: {len(built)} pages (home, help, about, privacy, medical cards, coverage, partners, jokes, {len(built) - 59} law comparisons, 51 states)')
 
 
 if __name__ == '__main__':
