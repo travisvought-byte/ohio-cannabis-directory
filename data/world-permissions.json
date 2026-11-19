@@ -519,45 +519,103 @@
   "NL": {
    "name": "Netherlands",
    "page": "world-netherlands.html",
-   "summary": "Selling is technically illegal but tolerated in coffeeshops since the 1970s. Growing for those shops was never legal; a state experiment with licensed growers started in 2025.",
-   "note": "",
+   "summary": "Cannabis is still illegal under the Opium Act, but since the 1970s the state has tolerated small-scale use and sales in licensed coffeeshops. Growing for those shops was never allowed; a state experiment with licensed growers started in 2025.",
+   "note": "Dutch sources are summarized in English.",
    "answers": {
     "adult-use": {
      "status": "limited",
      "short": "Tolerated, not legal",
-     "detail": "Selling drugs is illegal in the Netherlands, but the government tolerates the sale of soft drugs in coffeeshops that follow its rules.",
-     "citation": "Business.gov.nl",
+     "detail": "Possessing, selling and growing cannabis are all offences. Prosecutors do not pursue adults for small personal amounts, and coffeeshops that follow the national rules are left alone.",
+     "citation": "Government of the Netherlands; Rijksoverheid",
      "reviewed_on": "2026-11-19",
      "source_ids": [
-      "nl-bizgov"
+      "nl-gov-offence",
+      "nl-rijk-gedoog"
      ]
     },
     "buying": {
      "status": "limited",
      "short": "Coffeeshops, 5 grams per person per day",
-     "detail": "A coffeeshop may sell no more than 5 grams per person per day, keep no more than 500 grams in stock and, under the toleration rules, admit only residents of the Netherlands.",
-     "citation": "Business.gov.nl",
+     "detail": "A coffeeshop may sell no more than 5 grams per person per day, keep no more than 500 grams in stock and admit only residents of the Netherlands. Whether the residents-only rule is enforced differs from town to town, and each town decides whether to allow coffeeshops at all.",
+     "citation": "Business.gov.nl; Government of the Netherlands",
      "reviewed_on": "2026-11-19",
      "source_ids": [
-      "nl-bizgov"
+      "nl-biz-coffeeshop",
+      "nl-gov-toleration"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "Up to 5 grams is not prosecuted",
+     "detail": "The Public Prosecution Service does not prosecute people for possessing no more than 5 grams of cannabis.",
+     "citation": "Government of the Netherlands; Rijksoverheid",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "nl-gov-toleration",
+      "nl-rijk-gedoog"
      ]
     },
     "home-grow": {
-     "status": "not-permitted",
-     "short": "Growing is illegal",
-     "detail": "The sale is tolerated, but growing cannabis is not.",
-     "citation": "NL Times (news)",
+     "status": "limited",
+     "short": "Illegal, but 5 plants are not prosecuted",
+     "detail": "The government says growing cannabis at home or anywhere else is not permitted. Its toleration policy still says prosecutors do not pursue people for no more than five plants. Police can seize the plants.",
+     "citation": "Government of the Netherlands; DutchNews.nl, 2011 Supreme Court ruling (news)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
-      "nl-nltimes"
+      "nl-gov-offence",
+      "nl-gov-toleration",
+      "nl-dutchnews-5plants"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Yes, by prescription since 2003",
+     "detail": "Since September 1, 2003, pharmacies have been able to dispense medicinal cannabis to patients with a doctor's prescription. The government's Office of Medicinal Cannabis supplies standardized, pharmaceutical-grade cannabis, and every Dutch pharmacy can dispense it.",
+     "citation": "Cannabis and Cannabinoid Research (2018); Al Jazeera, Sep 1 2003 (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "nl-pmc-medical",
+      "nl-aljazeera-2003"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "3 micrograms of THC per litre of blood; zero if combined",
+     "detail": "Driving under the influence of drugs is prohibited. Since July 1, 2017 there have been fixed blood limits for the most common drugs; for THC the limit is 3 µg per litre of blood. Using several drugs, or drugs with alcohol, triggers a zero limit. Police screen with a saliva test and confirm with a blood test. Two convictions in five years cancel your licence.",
+     "citation": "Government of the Netherlands; Netherlands Forensic Institute; CBR",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "nl-gov-drive",
+      "nl-nfi-thc",
+      "nl-cbr-houwing"
      ]
     }
    },
    "experiment": {
-    "text": "The Controlled Cannabis Supply Chain Experiment entered its experimental phase on April 7, 2025. Coffeeshops in the participating towns may now sell only cannabis from licensed growers, and researchers are measuring the effects on crime, safety and public health.",
+    "text": "The Controlled Cannabis Supply Chain Experiment entered its experimental phase on April 7, 2025, which fixes its end date at April 7, 2029. Coffeeshops in the participating towns may now buy, sell and stock cannabis only from designated growers, and the 500 gram stock limit does not apply to them. Before the experiment ends, the government will decide the future of coffeeshop policy based on the research.",
     "source_ids": [
      "nl-gov-exp",
-     "nl-gov-bg"
+     "nl-gov-bg",
+     "nl-factsheet"
+    ]
+   },
+   "differences": {
+    "title": "What is different about the Netherlands",
+    "source_ids": [
+     "nl-gov-offence",
+     "nl-gov-toleration",
+     "nl-wodc-wiet",
+     "nl-rug",
+     "nl-factsheet",
+     "nl-pmc-medical",
+     "nl-gov-drive"
+    ],
+    "points": [
+     "Nothing about cannabis is actually legal. The famous Dutch model is a written promise by prosecutors not to act, under rules known as AHOJG-I: shops may not advertise, sell hard drugs, cause nuisance, admit minors or sell large quantities, and must serve residents only.",
+     "The back door problem: coffeeshops may sell, but growing is illegal, so for decades their supply came from the illegal market. The state experiment is the first attempt to fix that.",
+     "Tourists can be turned away. Coffeeshops are meant for residents of the Netherlands, though towns decide how strictly to enforce it.",
+     "Medical cannabis has been sold in ordinary pharmacies since 2003, earlier than almost anywhere else.",
+     "Driving uses a fixed blood limit for THC, with zero tolerance for mixing drugs or drugs and alcohol."
     ]
    }
   },
@@ -1710,14 +1768,6 @@
    "retrieved_on": "2026-11-19"
   },
   {
-   "id": "nl-bizgov",
-   "kind": "government",
-   "publisher": "Business.gov.nl (Netherlands Enterprise Agency)",
-   "title": "Closed cannabis supply chain trial and toleration policy",
-   "url": "https://business.gov.nl/amendment/closed-cannabis-supply-chain-trial",
-   "retrieved_on": "2026-11-19"
-  },
-  {
    "id": "nl-gov-exp",
    "kind": "government",
    "publisher": "Government of the Netherlands",
@@ -1734,11 +1784,107 @@
    "retrieved_on": "2026-11-19"
   },
   {
-   "id": "nl-nltimes",
+   "id": "nl-gov-toleration",
+   "kind": "government",
+   "publisher": "Government of the Netherlands",
+   "title": "Toleration policy regarding soft drugs and coffee shops",
+   "url": "https://www.government.nl/themes/family-health-and-care/drugs/toleration-policy-regarding-soft-drugs-and-coffee-shops",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nl-rijk-gedoog",
+   "kind": "government",
+   "publisher": "Rijksoverheid",
+   "title": "Gedoogbeleid softdrugs en coffeeshops",
+   "url": "https://www.rijksoverheid.nl/onderwerpen/drugs/gedoogbeleid-softdrugs-en-coffeeshops",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nl-gov-offence",
+   "kind": "government",
+   "publisher": "Government of the Netherlands",
+   "title": "Am I committing a criminal offence if I possess, produce or deal in drugs?",
+   "url": "https://www.government.nl/topics/drugs/am-i-committing-a-criminal-offence-if-i-possess-produce-or-deal-in-drugs",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nl-biz-coffeeshop",
+   "kind": "government",
+   "publisher": "Business.gov.nl (Netherlands Enterprise Agency)",
+   "title": "Sale of cannabis in coffeeshops (checked Jan 9 2026)",
+   "url": "https://business.gov.nl/regulations/cannabis-sale-coffeeshop/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nl-gov-drive",
+   "kind": "government",
+   "publisher": "Government of the Netherlands",
+   "title": "Am I allowed to drive under the influence of drugs?",
+   "url": "https://www.government.nl/themes/transport/vehicles/question-and-answer/mobility-public-transport-and-road-safety/am-i-allowed-to-drive-under-the-influence-of-drugs",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nl-nfi-thc",
+   "kind": "research",
+   "publisher": "Netherlands Forensic Institute",
+   "title": "Recente literatuurinzichten grenswaarde voor enkelvoudig gebruik van cannabis (current limit 3 µg THC per litre of blood)",
+   "url": "https://www.forensischinstituut.nl/binaries/nfi/documenten/wob-verzoeken/2023/11/28/recente-literatuurinzichten-grenswaarde-voor-enkelvoudig-gebruik-van-cannabis-met-logo-en-begeleidende-nota/Recente+literatuurinzichten+grenswaarde+voor+enkelvoudig+gebruik+van+cannabis+met+logo+en+begeleidende+nota.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nl-cbr-houwing",
+   "kind": "organization",
+   "publisher": "CBR (Dutch driving licence authority), via ETSC",
+   "title": "Drug driving legislation in the Netherlands (May 2019)",
+   "url": "https://etsc.eu/wp-content/uploads/4.-Etat-des-lieux-aux-Pays-Bas-Sjoerd-Houwing.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nl-pmc-medical",
+   "kind": "research",
+   "publisher": "de Hoop, Heerdink and Hazekamp, Cannabis and Cannabinoid Research",
+   "title": "Medicinal Cannabis on Prescription in The Netherlands: Statistics for 2003 to 2016 (2018)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5868329",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nl-aljazeera-2003",
    "kind": "news",
-   "publisher": "NL Times",
-   "title": "One year of the Dutch regulated cannabis experiment (Apr 7 2026)",
-   "url": "https://nltimes.nl/2026/04/07/one-year-dutch-regulated-cannabis-experiment-apparent-success-fines-issued",
+   "publisher": "Al Jazeera",
+   "title": "Holland clears way for prescription cannabis (Sep 1 2003)",
+   "url": "https://www.aljazeera.com/news/2003/09/01/holland-clears-way-for-prescription-cannabis/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nl-factsheet",
+   "kind": "government",
+   "publisher": "Rijksoverheid",
+   "title": "Factsheet Onderzoek Experiment gesloten coffeeshopketen (experiment ends Apr 7 2029)",
+   "url": "https://zoek.officielebekendmakingen.nl/blg-1268625.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nl-wodc-wiet",
+   "kind": "research",
+   "publisher": "WODC / Breuer&Intraval",
+   "title": "Coffee shops in the Netherlands: tolerance (AHOJGI) criteria",
+   "url": "https://repository.wodc.nl/server/api/core/bitstreams/6063a026-c449-4bc0-8d5b-a269589abaef/content",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nl-rug",
+   "kind": "organization",
+   "publisher": "University of Groningen",
+   "title": "Are drugs legal in the Netherlands?",
+   "url": "https://www.rug.nl/lustrum/viltjescampagne/are-drugs-legal-in-the-netherlands?lang=en",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nl-dutchnews-5plants",
+   "kind": "news",
+   "publisher": "DutchNews.nl",
+   "title": "Five marijuana plants are okay, no matter how big they are (Apr 2011)",
+   "url": "https://www.dutchnews.nl/news/2011/04/five_marijuana_plants_are_okay/",
    "retrieved_on": "2026-11-19"
   },
   {
