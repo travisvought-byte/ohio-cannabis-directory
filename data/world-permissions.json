@@ -1084,36 +1084,84 @@
    "name": "Spain",
    "page": "world-spain.html",
    "summary": "Not legal, but private use and private growing are not crimes. Hundreds of private cannabis clubs operate in a legal gray zone that courts and police are tightening.",
-   "note": "",
+   "note": "Spanish sources are summarized in English.",
    "answers": {
     "adult-use": {
      "status": "limited",
      "short": "Private use is not a crime",
-     "detail": "Using and growing for yourself in private is not criminal. Buying, carrying or using in public is an administrative offence with a fine and confiscation.",
-     "citation": "Wikipedia, Cannabis in Spain (compilation)",
+     "detail": "Spain has not legalized cannabis. Using or having drugs in public places, streets, public premises or public transport is a serious administrative offence even when it is not for trafficking, and the Criminal Code punishes growing, making and trafficking. Using and growing for yourself in private is not criminal.",
+     "citation": "Ley Orgánica 4/2015 art. 36.16; Código Penal art. 368; Wikipedia, Cannabis in Spain (compilation)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
+      "es-losc",
+      "es-cp",
       "es-wiki"
      ]
     },
     "buying": {
      "status": "not-permitted",
      "short": "Selling is a crime",
-     "detail": "Sale and import of any amount are criminal offences that can bring prison.",
-     "citation": "Wikipedia, Cannabis in Spain (compilation)",
+     "detail": "There are no legal shops. Trafficking in drugs, or otherwise promoting or facilitating their illegal use, is punished with one to three years in prison and a fine of up to twice the drug's value where the substance is not one that causes serious harm to health, and three to six years where it is. Courts may go one grade lower for minor cases. Import of any amount is also a crime.",
+     "citation": "Código Penal art. 368; Wikipedia, Cannabis in Spain (compilation)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
+      "es-cp",
       "es-wiki"
      ]
     },
     "home-grow": {
      "status": "limited",
-     "short": "Allowed in private if hidden",
-     "detail": "Plants visible from the street or a balcony count as a serious administrative offence, with fines from €601 up to €30,000.",
-     "citation": "Wikipedia, Cannabis in Spain (compilation)",
+     "short": "Not a crime in private for yourself; fined if visible",
+     "detail": "Growing in a place visible to the public is a serious administrative offence, fined €601 to €30,000, unless it amounts to a crime. Growing to supply others is a crime under Article 368. A Murcia court in 2023 upheld one- and two-year prison sentences for a grow of more than 100 plants, calling the number a strong sign of trafficking.",
+     "citation": "Ley Orgánica 4/2015 arts. 36.18 and 39; Código Penal art. 368; El Derecho (news); Wikipedia (compilation)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
+      "es-losc",
+      "es-cp",
+      "es-elderecho-murcia",
       "es-wiki"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "No legal amount in public; fines from €601",
+     "detail": "Having or using cannabis in a public place brings a fine of €601 to €30,000 and confiscation, even with no intent to sell. Paying within 15 days cuts the fine by half, and a minor's fine can be suspended for treatment or re-education. There is no fixed legal amount. Courts use guideline quantities to separate personal use from supply, about 25 grams for hashish, and judge each case on its facts.",
+     "citation": "Ley Orgánica 4/2015 arts. 36.16, 39 and 54 and disposición adicional quinta; El Derecho on a 2023 Murcia ruling (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "es-losc",
+      "es-elderecho-murcia"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Hospital-only cannabis preparations since October 2025",
+     "detail": "Royal Decree 903/2025, in force since October 10, 2025, allows standardised cannabis preparations as pharmacy-compounded formulas. Only hospital specialist doctors may prescribe them, for the indications in the medicines agency's monographs and when authorised medicines do not work well enough, and only hospital pharmacy services prepare and dispense them. The decree covers standardised extracts, with cannabis flower only as the starting material. The agency, AEMPS, keeps a public register of the preparations.",
+     "citation": "Real Decreto 903/2025 arts. 2, 4, 6, 7, 8 and 9",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "es-rd903"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "Any presence of drugs: €1,000 and 6 points",
+     "detail": "Driving with drugs present in the body is an administrative offence: a €1,000 fine and 6 licence points. Driving under the influence of drugs is a crime, with three to six months in prison, or a fine, or 31 to 90 days of community service, plus a driving ban of more than one and up to four years. Refusing the test is also a crime: six months to a year in prison and the same ban.",
+     "citation": "DGT; Código Penal arts. 379.2 and 383",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "es-dgt",
+      "es-cp"
+     ]
+    },
+    "record-relief": {
+     "status": "limited",
+     "short": "General rule: records are cancelled after a crime-free period",
+     "detail": "We found no cannabis-specific scheme. Under the general rule, a person who has completed their sentence has the right to have the criminal record cancelled by the Ministry of Justice after a period without reoffending: six months for light penalties, two years for penalties of up to twelve months, three years for other less serious penalties under three years, five years for less serious penalties of three years or more, and ten years for serious ones. It can be done on request or by the ministry on its own.",
+     "citation": "Código Penal art. 136",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "es-cp"
      ]
     }
    },
@@ -1123,6 +1171,29 @@
      "es-tni",
      "es-ugr",
      "es-spanisheye"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Spain",
+    "source_ids": [
+     "es-losc",
+     "es-cp",
+     "es-wiki",
+     "es-elderecho-murcia",
+     "es-tni",
+     "es-ugr",
+     "es-spanisheye",
+     "es-rd903",
+     "es-dgt"
+    ],
+    "points": [
+     "Two tracks and no legal market. In public it is an administrative offence with a fine, supply is a crime, and private use sits in between, unpunished.",
+     "The fines are steep. A public-use ticket starts at €601 and can reach €30,000, though paying within 15 days halves it.",
+     "No number is safe. There is no legal carry limit; courts work from guideline amounts and the facts of each case.",
+     "A plant on the balcony can cost you. Growing where the public can see it is fined on the same scale as public use.",
+     "The clubs are tolerated, not licensed. Their status depends on the case, the judge and the region, and they may not advertise or recruit tourists.",
+     "Medical cannabis arrived late and narrow: hospital specialists only, from October 2025.",
+     "Drivers are punished for presence alone: €1,000 and 6 points, with prison possible when the driving was under the influence."
     ]
    }
   },
@@ -2679,6 +2750,46 @@
    "publisher": "The Spanish Eye",
    "title": "Cannabis clubs in Spain: how they work and why police are shutting them down (Mar 22 2026)",
    "url": "https://www.thespanisheye.com/2026/03/22/cannabis-clubs-in-spain-how-they-work-and-why-police-are-shutting-them-down-after-brit-ex-footballer-is-latest-to-be-arrested",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "es-losc",
+   "kind": "statute",
+   "publisher": "Ley Orgánica 4/2015 (BOE)",
+   "title": "Protección de la seguridad ciudadana: arts. 36.16 to 36.19, 39 and 54, and disposición adicional quinta",
+   "url": "https://www.boe.es/boe/dias/2015/03/31/pdfs/BOE-A-2015-3442.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "es-cp",
+   "kind": "statute",
+   "publisher": "Código Penal, Ley Orgánica 10/1995 (BOE, consolidated text)",
+   "title": "Arts. 136, 368, 379 and 383",
+   "url": "https://www.boe.es/eli/es/lo/1995/11/23/10/con",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "es-rd903",
+   "kind": "statute",
+   "publisher": "Real Decreto 903/2025 (BOE)",
+   "title": "Fórmulas magistrales tipificadas de preparados estandarizados de cannabis (in force Oct 10 2025)",
+   "url": "https://www.boe.es/eli/es/rd/2025/10/07/903/con",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "es-dgt",
+   "kind": "government",
+   "publisher": "Dirección General de Tráfico (DGT)",
+   "title": "Campaña de alcohol y drogas: sanciones y penas (Dec 7 2020)",
+   "url": "https://www.dgt.es/export/sites/web-DGT/.galleries/Images/notas-de-prensa/2020/la-dgt-alerta-de-un-repunte-de-conductores-positivos-en-controles-de-drogas/NP-Campana-Alcohol-drogas-DGT-diciembre2020.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "es-elderecho-murcia",
+   "kind": "news",
+   "publisher": "El Derecho",
+   "title": "La AP de Murcia confirma que el cultivo de 100 plantas de marihuana es un poderoso indicio de tráfico (Oct 18 2023)",
+   "url": "https://elderecho.com/?p=402731",
    "retrieved_on": "2026-11-19"
   },
   {
