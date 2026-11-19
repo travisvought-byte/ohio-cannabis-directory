@@ -797,40 +797,146 @@
   "MT": {
    "name": "Malta",
    "page": "world-malta.html",
-   "summary": "The first EU country to legalize personal use, in 2021. No shops: adults can grow at home or join a licensed non-profit association.",
+   "summary": "The first EU country to legalize personal use, in December 2021. There are no shops and no legal route for visitors: adults can carry 7 grams, grow four plants at home, or join a licensed non-profit association if they live in Malta.",
    "note": "",
    "answers": {
     "adult-use": {
      "status": "allowed",
-     "short": "Yes, personal use since 2021",
-     "detail": "Chapter 628 of Malta's laws (2021) created ARUC, the Authority for the Responsible Use of Cannabis, to allow restricted, regulated access instead of criminal enforcement.",
-     "citation": "Cap. 628 via ARUC charter",
+     "short": "Yes, 18 and older, since December 2021",
+     "detail": "Act LXVI of 2021 took effect on December 18, 2021. Since then a person over 18 may have up to 7 grams for personal use without committing an offence. The same law set up ARUC, the Authority for the Responsible Use of Cannabis, to regulate the system.",
+     "citation": "Act LXVI of 2021; Cap. 537 art. 4A; Government of Malta",
      "reviewed_on": "2026-11-19",
      "source_ids": [
+      "mt-act66",
+      "mt-cap537",
+      "mt-gov-2021",
       "mt-aruc"
      ]
     },
     "possession": {
      "status": "allowed",
-     "short": "7 grams carried; up to 4 plants at home",
-     "detail": "Adults may carry up to 7 grams and grow up to four plants at home under the 2021 law. Smoking in public is banned.",
-     "citation": "The Scotsman (news); confirm in Cap. 628",
+     "short": "7 grams on you, 50 grams at home",
+     "detail": "Adults may carry up to 7 grams. More than 7 and up to 28 grams for personal use goes before a Commissioner for Justice, with a penalty of €50 to €100. At home, up to 50 grams of dried cannabis is allowed. Using it in a public place costs €235, and using it in front of anyone under 18 costs €300 to €500.",
+     "citation": "Cap. 537 arts. 4A and 7",
      "reviewed_on": "2026-11-19",
      "source_ids": [
-      "mt-scotsman"
+      "mt-cap537"
      ]
     },
     "buying": {
      "status": "limited",
-     "short": "Licensed associations, residents 18+ only",
-     "detail": "Supply comes from non-profit Cannabis Harm Reduction Associations licensed by ARUC. Only Malta residents aged 18 and over can join. Association possession rules were updated in February 2026.",
-     "citation": "BusinessNow.mt (news); L.N. 45 of 2026",
+     "short": "No shops. Non-profit associations, residents only",
+     "detail": "The only legal supply is a non-profit Cannabis Harm Reduction Association licensed by ARUC; 25 held an operating permit when we checked. Members must be at least 18 and show an identity or residence card issued by the Maltese government, and ARUC says tourists may not become members. A member can get at most 7 grams a day and 50 grams a month, plus up to 20 seeds a month. Each association is capped at 500 members, may not advertise, and must be at least 250 metres from schools, sports facilities and youth centres.",
+     "citation": "Cap. 537 art. 7A; ARUC; BusinessNow.mt (news)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
-      "mt-bizmt",
-      "mt-ln45"
+      "mt-cap537",
+      "mt-aruc-chras",
+      "mt-bizmt"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Yes, by prescription since 2018",
+     "detail": "Any licensed doctor may prescribe medicinal cannabis when there is no viable alternative. Applications are made patient by patient, as directed by the Superintendent of Public Health, and a pharmacist dispenses it at a licensed pharmacy. Preparations may not be meant for smoking. The Malta Medicines Authority publishes the list of approved products.",
+     "citation": "Cap. 537 art. 10; Superintendence of Public Health; Malta Medicines Authority",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "mt-cap537",
+      "mt-sph",
+      "mt-mma"
+     ]
+    },
+    "home-grow": {
+     "status": "allowed",
+     "short": "4 plants per household",
+     "detail": "Adults may grow up to four plants at the home address on their identity card. The limit is four for the household, however many people live there. Plants must be out of public view, out of sight and reach of children, and must not cause a smell nuisance to others. Breaking those conditions costs €300 to €500. Growing up to four plants anywhere other than the registered home costs €700 to €1,000.",
+     "citation": "Cap. 537 art. 7",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "mt-cap537"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "2 micrograms of THC per litre of blood; random roadside tests",
+     "detail": "It is an offence to drive with any amount of a drug still in your body. For THC, the law allows drivers of private vehicles up to 2 micrograms per litre of blood; that allowance does not apply to drivers of commercial vehicles, buses, coaches or other passenger-carrying vehicles. Since March 10, 2026 police may demand an oral fluid (saliva) test at random, with no suspicion of the driver needed, and a driver who tests positive for THC can be sent for a blood test. A first conviction brings a fine of at least €4,000 and a driving ban of at least six months; a later one, at least €8,000 and at least a year. Holding a drug control card or a prescription does not exempt a driver.",
+     "citation": "Traffic Regulation Ordinance (Cap. 65) arts. 15BA, 15CB, 15CC, 15CD and 15H; Act II of 2026; Malta Police",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "mt-cap65",
+      "mt-act2-2026",
+      "mt-police-drugtests"
+     ]
+    },
+    "record-relief": {
+     "status": "allowed",
+     "short": "Yes, by written request",
+     "detail": "A person convicted of something that has since been decriminalised can write to the office that issues conduct certificates and ask for the conviction to be taken off. Once the office confirms the offence has been decriminalised, it must accept the request and remove the entry. The government says no new court application is needed.",
+     "citation": "Conduct Certificates Ordinance (Cap. 77) art. 8A; Government of Malta",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "mt-cap77",
+      "mt-gov-2021"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "No. Importing is a crime, even for your own use",
+     "detail": "Importing or exporting cannabis without authorisation is an offence, and a court treats importation as dealing unless it is satisfied the drug was only for the person's own use. Even then, the Court of Magistrates can give three to twelve months in prison, a fine of €465.87 to €2,329.37, or both. The law exempts a visitor from criminal liability if they do not live in Malta and, at the first opportunity after landing, hand the drug to a police or customs officer and declare it was for personal use only, in an amount that fits that. A traveller from Spain who arrived with a little cannabis for his holiday, and half a gram of amphetamine, was charged with importation and fined €700. The UK government warns its travellers that drug penalties in Malta can include a ban from the Schengen area of up to five years.",
+     "citation": "Dangerous Drugs Ordinance (Cap. 101) arts. 14, 15A and 22; MaltaToday court report (news); UK FCDO travel advice",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "mt-cap101",
+      "mt-maltatoday-import",
+      "mt-fcdo"
+     ]
+    },
+    "sharing": {
+     "status": "not-permitted",
+     "short": "No. Supplying counts as dealing",
+     "detail": "The 2021 reform covers having, growing and getting cannabis from an association. It has no rule letting adults give cannabis to one another, and it leaves the rest of the drug law in place. Under the Dangerous Drugs Ordinance, supplying or distributing a drug is dealing, and payment is not part of the definition. The one concession is in sentencing: where a person shared a small amount to be used on the spot, at a single event and for no profit, the court may relax the stricter sentencing rules for dealing, once only.",
+     "citation": "Dangerous Drugs Ordinance (Cap. 101) art. 22(1B) and (9); Cap. 537 art. 3",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "mt-cap101",
+      "mt-cap537"
      ]
     }
+   },
+   "experiment": {
+    "text": "Parliament tightened the law through Act XII of 2025, in force since May 16, 2025. Synthetic cannabinoids such as HHC and THC-P were prohibited, and letting anyone under 18 into an association now costs €3,000 to €10,000. Separately, ARUC lets associations make and hand out resin, by solventless methods only, with one gram of resin counted as three grams of flower toward a member's limits. Regulations made in February 2026 cap the stock at each distribution site by category, from 350 grams to 3.5 kilograms. On November 5, 2026 the home affairs minister said tourists caught smoking cannabis in public would get a €235 on-the-spot fine; the legal notice was still being drafted.",
+    "source_ids": [
+     "mt-act12-2025",
+     "mt-cap537",
+     "mt-aruc-resin",
+     "mt-ln45",
+     "mt-italpress-tourists"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Malta",
+    "source_ids": [
+     "mt-independent-2021",
+     "mt-gov-2021",
+     "mt-cap537",
+     "mt-aruc-chras",
+     "mt-act12-2025",
+     "mt-independent-odour",
+     "mt-cap65",
+     "mt-cap77",
+     "mt-cap101"
+    ],
+    "points": [
+     "First in Europe. The law took effect on December 18, 2021.",
+     "No shops, and nothing for visitors. The legal sources are your own four plants or a non-profit association, and associations are for people who live in Malta.",
+     "Small by design. Associations are capped at 500 members and may not advertise or put up signs, and only 25 held an operating permit when we checked.",
+     "Smell counts. Since 2025, cannabis odour that causes a nuisance to others carries the same €235 penalty as using it in public, and ARUC inspectors handle complaints about private homes.",
+     "Weaker cannabis for the youngest members. ARUC's head said THC must not exceed 18 percent for members aged 18 to 21.",
+     "Driving has a hard number: 2 micrograms of THC per litre of blood for private drivers, with random roadside tests since March 2026.",
+     "An old conviction for something now decriminalised comes off the conduct certificate on a written request.",
+     "The border has a surrender rule. A visitor who hands the drug to police or customs at the first opportunity after landing, and declares it was for personal use, is exempt from criminal liability if the amount fits personal use. Otherwise, bringing it in is importation, a crime."
+    ]
    }
   },
   "CZ": {
@@ -2197,19 +2303,155 @@
    "retrieved_on": "2026-11-19"
   },
   {
-   "id": "mt-scotsman",
-   "kind": "news",
-   "publisher": "The Scotsman",
-   "title": "Which other countries have decriminalised cannabis (Apr 1 2024)",
-   "url": "https://www.scotsman.com/news/world/cannabis-is-partially-legal-in-germany-from-today-which-other-countries-have-decriminalised-the-drug-and-will-visitors-to-germany-during-the-euros-be-able-to-take-it-4575349",
-   "retrieved_on": "2026-11-19"
-  },
-  {
    "id": "mt-bizmt",
    "kind": "news",
    "publisher": "BusinessNow.mt",
    "title": "Licence requirements for cannabis associations in Malta explained",
    "url": "https://businessnow.mt/licence-requirements-for-cannabis-associations-in-malta-explained-applications-open-28th-february/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mt-cap537",
+   "kind": "statute",
+   "publisher": "Cap. 537 (legislation.mt)",
+   "title": "Drug Dependence (Treatment not Imprisonment) Act, consolidated to Act XII of 2025: arts. 4A, 7, 7A and 10",
+   "url": "https://legislation.mt/eli/cap/537/eng/pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mt-act66",
+   "kind": "statute",
+   "publisher": "Act LXVI of 2021 (legislation.mt)",
+   "title": "Authority on the Responsible Use of Cannabis Act, 2021 (Government Gazette, Dec 18 2021)",
+   "url": "https://legislation.mt/eli/act/2021/66/eng",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mt-gov-2021",
+   "kind": "government",
+   "publisher": "Government of Malta, Department of Information",
+   "title": "Press release PR212248: Act LXVI of 2021 enters into force (Dec 18 2021)",
+   "url": "https://www.gov.mt/en/Government/DOI/Press%20Releases/Pages/2021/December/18/pr212248en.aspx",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mt-aruc-chras",
+   "kind": "government",
+   "publisher": "Authority for the Responsible Use of Cannabis (ARUC)",
+   "title": "Associations holding an operating permit, and who may join",
+   "url": "https://aruc.mt/operational-chras/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mt-sph",
+   "kind": "government",
+   "publisher": "Superintendence of Public Health (Malta)",
+   "title": "Medical cannabinoids information",
+   "url": "https://superintendencepublichealth.gov.mt/en/?p=5326",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mt-mma",
+   "kind": "government",
+   "publisher": "Malta Medicines Authority",
+   "title": "Cannabis for Medicinal and Research Purposes",
+   "url": "https://medicinesauthority.gov.mt/cannabisformedicinalandresearchpurposes",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mt-cap65",
+   "kind": "statute",
+   "publisher": "Cap. 65 (legislation.mt)",
+   "title": "Traffic Regulation Ordinance, consolidated to Act II of 2026: arts. 15BA, 15CB, 15CC, 15CD and 15H",
+   "url": "https://legislation.mt/eli/cap/65/eng/pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mt-act2-2026",
+   "kind": "statute",
+   "publisher": "Act II of 2026 (legislation.mt)",
+   "title": "Various Laws relating to the Prevention of Driving under the influence of Alcohol and Drugs (Amendment) Act, 2026 (in force Mar 10 2026)",
+   "url": "https://legislation.mt/eli/act/2026/2/eng",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mt-police-drugtests",
+   "kind": "government",
+   "publisher": "Malta Police Force",
+   "title": "PR 180/26: Drug tests during road checks",
+   "url": "https://pulizija.gov.mt/en/drug-tests-during-road-checks/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mt-cap77",
+   "kind": "statute",
+   "publisher": "Cap. 77 (legislation.mt)",
+   "title": "Conduct Certificates Ordinance, art. 8A: Deregistration of convictions",
+   "url": "https://legislation.mt/eli/cap/77/eng/pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mt-cap101",
+   "kind": "statute",
+   "publisher": "Cap. 101 (legislation.mt)",
+   "title": "Dangerous Drugs Ordinance, consolidated to Act XII of 2025: arts. 14, 15A and 22",
+   "url": "https://legislation.mt/eli/cap/101/eng/pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mt-maltatoday-import",
+   "kind": "news",
+   "publisher": "MaltaToday",
+   "title": "Man fined for bringing cannabis supply for his Malta holiday",
+   "url": "https://www.maltatoday.com.mt/news/court_and_police/126203/man_fined_for_bringing_cannabis_supply_for_his_malta_holiday",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mt-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office",
+   "title": "Malta travel advice: safety and security (illegal drugs)",
+   "url": "https://www.gov.uk/foreign-travel-advice/malta/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mt-independent-2021",
+   "kind": "news",
+   "publisher": "The Malta Independent",
+   "title": "President signs cannabis law (Dec 18 2021)",
+   "url": "https://www.independent.com.mt/articles/2021-12-18/local-news/President-signs-cannabis-law-6736239195",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mt-act12-2025",
+   "kind": "statute",
+   "publisher": "Act XII of 2025 (legislation.mt)",
+   "title": "Various Laws relating to Cannabis Activities (Amendment) Act, 2025 (in force May 16 2025)",
+   "url": "https://legislation.mt/eli/act/2025/12/eng",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mt-independent-odour",
+   "kind": "news",
+   "publisher": "The Malta Independent",
+   "title": "All cannabis odour complaints will be handled by ARUC (Jun 16 2025)",
+   "url": "https://www.independent.com.mt/articles/2025-06-16/local-news/All-cannabis-odour-complaints-will-be-handled-by-ARUC-6736270934",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mt-aruc-resin",
+   "kind": "government",
+   "publisher": "Authority for the Responsible Use of Cannabis (ARUC)",
+   "title": "Amendment allowing associations to produce and distribute cannabis resin",
+   "url": "https://aruc.mt/news/resin-harm-reduction/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "mt-italpress-tourists",
+   "kind": "news",
+   "publisher": "Italpress",
+   "title": "Malta, tourists to face fine for public cannabis smoking (Nov 5 2026)",
+   "url": "https://www.italpress.com/?p=773309",
    "retrieved_on": "2026-11-19"
   },
   {
