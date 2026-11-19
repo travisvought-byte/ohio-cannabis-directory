@@ -669,7 +669,7 @@
 "iso": "DE",
 "name": "Germany",
 "display": "Germany",
-"status": "basic",
+"status": "deep",
 "page": "world-germany.html",
 "queue": 2
 },

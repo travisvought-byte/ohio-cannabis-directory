@@ -408,26 +408,6 @@
       "de-cms"
      ]
     },
-    "possession": {
-     "status": "allowed",
-     "short": "25 grams in public, 50 grams at home",
-     "detail": "Possession of up to 25 grams of dried cannabis in public is not punished. At home the limit is 50 grams.",
-     "citation": "Federal Government FAQ",
-     "reviewed_on": "2026-11-19",
-     "source_ids": [
-      "de-breg"
-     ]
-    },
-    "home-grow": {
-     "status": "allowed",
-     "short": "3 plants per adult resident",
-     "detail": "Adults who have lived in Germany for at least six months may grow up to three plants at a time at home for their own use.",
-     "citation": "CMS legal guide (secondary)",
-     "reviewed_on": "2026-11-19",
-     "source_ids": [
-      "de-cms"
-     ]
-    },
     "buying": {
      "status": "limited",
      "short": "No shops. Non-profit clubs only",
@@ -458,7 +438,82 @@
      "source_ids": [
       "de-breg-import"
      ]
+    },
+    "possession": {
+     "status": "allowed",
+     "short": "25 grams in public, 50 grams at home",
+     "detail": "Adults may carry up to 25 grams in public and keep up to 50 grams at home. Going a little over (up to 30 grams out, up to 60 grams at home) is a fine. Beyond that it is a crime with up to three years in prison.",
+     "citation": "Federal Government FAQ; Lower Saxony state government",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "de-breg",
+      "de-nds"
+     ]
+    },
+    "home-grow": {
+     "status": "allowed",
+     "short": "3 plants per adult",
+     "detail": "Adults may grow up to three plants at home for their own use. The plants and harvest must be protected from children, teenagers and other people.",
+     "citation": "Federal Ministry of Health, Feb 23 2024; Federal Government FAQ",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "de-bmg-pm2024",
+      "de-breg"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "3.5 ng/ml THC in blood serum; zero for new drivers",
+     "detail": "Since August 22, 2024 it is an offence to drive with 3.5 ng/ml of THC or more in blood serum. The standard penalty is a 500 euro fine and a one-month driving ban; mixed with alcohol, the standard fine is 1,000 euros. Drivers on probation and anyone under 21 face a total ban, with a standard 250 euro fine. Patients taking prescribed cannabis are exempt.",
+     "citation": "StVG § 24a (BGBl. 2024 I Nr. 266); Legal Tribune Online; Deutsches Ärzteblatt",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "de-bgbl-stvg",
+      "de-lto-stvg",
+      "de-aerzteblatt-stvg"
+     ]
+    },
+    "record-relief": {
+     "status": "allowed",
+     "short": "Old convictions can be erased on request",
+     "detail": "Since January 1, 2025, a person convicted under the old narcotics law for something that is no longer a crime can ask the public prosecutor to confirm that the entry can be erased from the federal criminal register. The prosecutor then tells the register to delete it. Lawyers say it is unclear which entries qualify.",
+     "citation": "KCanG §§ 40 and 41; CanG Art. 15; Legal Tribune Online (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "de-kcang40",
+      "de-kcang41",
+      "de-buzer-15",
+      "de-lto-tilgung"
+     ]
     }
+   },
+   "experiment": {
+    "text": "A federal evaluation called EKOCAN is running until 2028. Its second interim report, on April 1, 2026, found that cultivation clubs still play only a minor role in pushing back the illegal market; the health minister called the law a dud. A separate bill to stop telemedicine prescriptions and mail-order delivery of medical cannabis flower was introduced in December 2025 and was still in Parliament at our last check.",
+    "source_ids": [
+     "de-bmg-ekocan",
+     "de-tuebingen",
+     "de-bt-medcang",
+     "de-bmg-medcang-amend"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Germany",
+    "source_ids": [
+     "de-kcang5",
+     "de-bmg-pm2024",
+     "de-pz",
+     "de-bt-medcang",
+     "de-bgbl-stvg",
+     "de-kcang41"
+    ],
+    "points": [
+     "Legal to have and grow, but there are no shops. The only legal sources are your own three plants, a non-profit club, or a prescription.",
+     "Where you light up matters. No smoking within 100 metres of the entrance to schools, playgrounds, youth centres or public sports grounds, and none in pedestrian zones between 7am and 8pm.",
+     "The clubs have been slow to start. Only 366 had been approved nationwide by October 31, 2025.",
+     "Medical cannabis became the easy route instead. Imports of medical flower rose 170 percent from the first to the second half of 2024 as online prescription platforms spread, and the government now wants to restrict them.",
+     "Driving has a hard number: 3.5 ng/ml of THC in blood serum, and zero for new and young drivers.",
+     "Old convictions for things that are now legal can be wiped from the federal register on request."
+    ]
    }
   },
   "NL": {
@@ -1524,6 +1579,126 @@
    "publisher": "Federal Ministry of Health (Germany)",
    "title": "Cannabis als Medizin: Fragen und Antworten",
    "url": "https://www.bundesgesundheitsministerium.de/service/begriffe-von-a-z/c/cannabis/faq-cannabis-als-medizin.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-kcang5",
+   "kind": "statute",
+   "publisher": "KCanG § 5 (gesetze-im-internet.de)",
+   "title": "Konsumcannabisgesetz § 5 Konsumverbot",
+   "url": "https://www.gesetze-im-internet.de/kcang/__5.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-bmg-pm2024",
+   "kind": "government",
+   "publisher": "Federal Ministry of Health (Germany)",
+   "title": "Bundestag beschließt kontrollierte Abgabe von Cannabis (Feb 23 2024)",
+   "url": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/bt-beschliesst-kontrollierte-abgabe-von-cannabis-zu-konsumzwecken-pm-23-02-2024.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-nds",
+   "kind": "government",
+   "publisher": "Lower Saxony state government",
+   "title": "Informationen zu den Cannabis-Vorschriften (possession thresholds)",
+   "url": "https://niedersachsen.de/download/207934",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-bgbl-stvg",
+   "kind": "statute",
+   "publisher": "Bundesgesetzblatt 2024 I Nr. 266",
+   "title": "Änderung des Straßenverkehrsgesetzes: § 24a Abs. 1a, 3.5 ng/ml THC (Aug 21 2024)",
+   "url": "https://epflicht.ulb.uni-bonn.de/download/pdf/776073",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-lto-stvg",
+   "kind": "news",
+   "publisher": "Legal Tribune Online",
+   "title": "Bundesrat billigt THC-Grenzwert am Steuer (Jul 5 2024)",
+   "url": "https://www.lto.de/recht/nachrichten/n/bundesrat-zustimmung-aenderung-stvg-konsum-cannabis-autofahren-thc-grenzwert",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-aerzteblatt-stvg",
+   "kind": "news",
+   "publisher": "Deutsches Ärzteblatt",
+   "title": "Cannabis im Straßenverkehr: Gesetz in Kraft",
+   "url": "https://www.aerzteblatt.de/nachrichten/153729/Cannabis-im-Strassenverkehr-Gesetz-in-Kraft",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-kcang41",
+   "kind": "statute",
+   "publisher": "KCanG § 41 (gesetze-im-internet.de)",
+   "title": "Feststellung der Tilgungsfähigkeit von Eintragungen im Bundeszentralregister",
+   "url": "https://www.gesetze-im-internet.de/kcang/__41.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-kcang40",
+   "kind": "statute",
+   "publisher": "KCanG § 40 (gesetze-im-internet.de)",
+   "title": "Tilgungsfähige Eintragungen im Bundeszentralregister",
+   "url": "https://www.gesetze-im-internet.de/kcang/__40.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-buzer-15",
+   "kind": "statute",
+   "publisher": "CanG Art. 15 via buzer.de",
+   "title": "Inkrafttreten: §§ 40 to 42 KCanG from January 1, 2025",
+   "url": "https://www.buzer.de/41_KCanG.htm",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-lto-tilgung",
+   "kind": "news",
+   "publisher": "Legal Tribune Online",
+   "title": "Tilgung von Cannabisdelikten aus dem Bundeszentralregister (Aug 10 2026)",
+   "url": "https://www.lto.de/recht/hintergruende/h/cannabis-teillegalisierung-verurteilung-tilgung-bundeszentralregister-bzr-stv",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-bmg-medcang-amend",
+   "kind": "government",
+   "publisher": "Federal Ministry of Health (Germany)",
+   "title": "Gesetz zur Änderung des Medizinal-Cannabisgesetzes (procedure page)",
+   "url": "https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/detail/aenderung-medizinal-cannabisgesetzes.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-bt-medcang",
+   "kind": "government",
+   "publisher": "Deutscher Bundestag",
+   "title": "hib 681/2025: Gesetzentwurf zur Änderung des Medizinal-Cannabisgesetzes (Dec 5 2025)",
+   "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1129402",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-bmg-ekocan",
+   "kind": "government",
+   "publisher": "Federal Ministry of Health (Germany)",
+   "title": "Zweite Evaluation zur Cannabis-Teillegalisierung (Apr 1 2026)",
+   "url": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/zweite-evaluation-zur-cannabis-teillegalisierung-01-04-26",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-tuebingen",
+   "kind": "research",
+   "publisher": "University of Tübingen",
+   "title": "Neue Zwischenergebnisse zur Evaluation des Konsumcannabisgesetzes (EKOCAN)",
+   "url": "https://uni-tuebingen.de/universitaet/aktuelles-und-publikationen/attempto-online/forschung/newsfullview-attempto-forschung/article/neue-zwischenergebnisse-zur-evaluation-des-konsumcannabisgesetzes-kcang/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "de-pz",
+   "kind": "news",
+   "publisher": "Pharmazeutische Zeitung",
+   "title": "Zwei Jahre Cannabisgesetz: Medizinalcannabis statt Social Clubs (2026)",
+   "url": "https://www.pharmazeutische-zeitung.de/medizinalcannabis-statt-social-clubs-164126/",
    "retrieved_on": "2026-11-19"
   },
   {
