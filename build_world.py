@@ -70,7 +70,7 @@ def country_page(world, sources, code):
         body.append(province_table(world, cites))
     if c.get('experiment'):
         e = c['experiment']
-        body.append(f'<h2 id="experiment">What is changing</h2><p>{nat.esc(e["text"])} {cites.mark(e["source_ids"])}</p>')
+        body.append(f'<h2 id="context">Good to know</h2><p>{nat.esc(e["text"])} {cites.mark(e["source_ids"])}</p>')
     region = next((r for r in load_heritage()['regions'] if r.get('country_page') == c['page']), None)
     if region:
         body.append(f'<p class="lawnow">Heritage: <a href="heritage.html#{nat.esc(region["id"])}">where {nat.esc(region["place"])} fits in cannabis history</a></p>')
@@ -93,7 +93,9 @@ def hub_page(world, sources):
     for g in world['groups']:
         cards = ''.join(country_card(world, world['countries'][code]) for code in g['codes'])
         groups.append(f'<h2 id="{nat.esc(g["id"])}">{nat.esc(g["label"])}</h2><div class="wcards">{cards}</div>')
-    extra = ('<div class="wcards"><a class="wcard heritage" href="heritage.html"><strong>Where weed comes from</strong>'
+    extra = ('<div class="wcards"><a class="wcard heritage" href="learn.html"><strong>Cannabis 101</strong>'
+             '<p>THC, CBD, terpenes, product forms, hash and rosin, reading a label, and safer use.</p></a>'
+             '<a class="wcard heritage" href="heritage.html"><strong>Where weed comes from</strong>'
              '<p>The landraces, the places they grew and the people who kept the tradition: India, the Hindu Kush, the Rif, the Bekaa, southern Africa, Jamaica, Thailand, Mexico and Colombia.</p></a>'
              '<a class="wcard warn" href="travel-warnings.html"><strong>Where weed can put you in prison</strong>'
              '<p>Countries with death-penalty or long-prison drug laws, and the strictest US states.</p></a></div>')
@@ -158,6 +160,57 @@ def load_heritage():
     return json.loads(HERITAGE.read_text(encoding='utf-8'))
 
 
+def hash_section(her, cites):
+    h = her['hash']
+    items = ''.join(f'<div class="card"><h3>{nat.esc(m["name"])}</h3><p class="muted">{nat.esc(m["where"])}</p>'
+                    f'<p>{nat.esc(m["text"])} {cites.mark(m["source_ids"])}</p></div>' for m in h['methods'])
+    return (f'<h2 id="hash">{nat.esc(h["title"])}</h2><p>{nat.esc(h["intro"])}</p>{items}'
+            '<p class="muted">Modern solventless forms such as ice-water hash and rosin are explained in <a href="learn.html#processing">Cannabis 101</a>.</p>')
+
+
+KNOWLEDGE = ROOT / 'data/knowledge.json'
+LEARN_SKIP = {'hemp'}  # Ohio-specific rules stay on the Ohio guide
+
+
+def learn_page():
+    """Cannabis 101 for the national site, read from the directory's reviewed knowledge records."""
+    k = json.loads(KNOWLEDGE.read_text(encoding='utf-8'))
+    srcs = {s['id']: s for s in k['sources']}
+    order = []
+
+    def mark(ids):
+        out = []
+        for sid in ids:
+            if sid not in order:
+                order.append(sid)
+            n = order.index(sid) + 1
+            out.append(f'<a href="#ksource-{n}" aria-label="Source {n}">[{n}]</a>')
+        return '<span class="cites">' + ''.join(out) + '</span>'
+
+    secs = [s for s in k['sections'] if s['id'] not in LEARN_SKIP]
+    nav = ' · '.join(f'<a href="#{nat.esc(s["id"])}">{nat.esc(s["title"])}</a>' for s in secs)
+    body = [CSS, '<p class="crumbs"><a href="index.html">Home</a> › Cannabis 101</p><h1>Cannabis 101</h1>',
+            '<p class="lede">Plain-language explanations of cannabis words, product forms, processing, labels and safer use. '
+            f'Reviewed {nat.long_date(k["reviewed_on"])}. For product literacy, not a personal treatment or dosing plan.</p>',
+            f'<p class="onpage">{nav}</p>']
+    for s in secs:
+        body.append(f'<h2 id="{nat.esc(s["id"])}">{nat.esc(s["title"])}</h2>')
+        if s.get('lead'):
+            body.append(f'<p>{nat.esc(s["lead"])}</p>')
+        for it in s['items']:
+            body.append(f'<div class="card" id="{nat.esc(s["id"])}-{nat.esc(it["id"])}"><h3>{nat.esc(it["title"])}</h3>'
+                        f'<p>{nat.esc(it["text"])} {mark(it.get("sources", []))}</p></div>')
+    body.append('<p>More: <a href="heritage.html">where weed comes from</a> · <a href="world.html">laws around the world</a> · '
+                '<a href="https://ohioweed.org/knowledge.html">the Ohio guide, with Ohio\'s hemp rules</a></p>')
+    body.append('<h2 id="sources">Sources</h2><ol class="sources">' + ''.join(
+        f'<li id="ksource-{n}"><a href="{nat.esc(srcs[sid]["url"])}" target="_blank" rel="noopener">{nat.esc(srcs[sid]["title"])}</a></li>'
+        for n, sid in enumerate(order, 1)) + '</ol>')
+    return nat.shell('Cannabis 101: words, products, labels and safer use',
+                     'THC, CBD, terpenes, flower, edibles, vapes, kief, hash, rosin, lab reports and safer use, explained in plain language with sources.',
+                     ''.join(body), 'learn.html', 'Cannabis 101',
+                     ld=[nat.breadcrumbs([('Home', '')], 'learn.html', 'Cannabis 101')])
+
+
 def heritage_page(her, sources):
     cites = nat.Cites(sources)
     o, l = her['origin'], her['landrace']
@@ -175,7 +228,7 @@ def heritage_page(her, sources):
             '<p class="lede">Every strain on a shelf today goes back to plants that farmers in particular places selected over generations. These are the places, the landraces and the people who carried the tradition.</p>'
             f'<div class="story"><h2>{nat.esc(o["title"])}</h2><p>{nat.esc(o["text"])} {cites.mark(o["source_ids"])}</p></div>'
             f'<div class="story"><h2>{nat.esc(l["title"])}</h2><p>{nat.esc(l["text"])} {cites.mark(l["source_ids"])}</p></div>'
-            f'<p class="onpage">{jump}</p>' + ''.join(cards) +
+            f'<p class="onpage">{jump} · <a href="#hash">Hash traditions</a></p>' + ''.join(cards) + hash_section(her, cites) +
             '<p class="muted">History drawn from the cited research, government records and reporting. Strain names are traditional market names, not verified genetics.</p>' + cites.render())
     return nat.shell('Where weed comes from: landraces and the people behind them',
                      'The origin of cannabis, the classic landraces (Afghani, Hindu Kush, Thai, Durban Poison, Acapulco Gold, Colombian Gold, beldiya) and the peoples who kept the tradition. Sourced.',
@@ -190,7 +243,7 @@ def pages(perm, base_sources):
     her = load_heritage()
     sources.update({s['id']: s for s in her['sources']})
     out = {'world.html': hub_page(world, sources), 'travel-warnings.html': warnings_page(world, perm, sources),
-           'heritage.html': heritage_page(her, sources)}
+           'heritage.html': heritage_page(her, sources), 'learn.html': learn_page()}
     for code, c in world['countries'].items():
         out[c['page']] = country_page(world, sources, code)
     return out

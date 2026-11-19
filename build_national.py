@@ -493,11 +493,11 @@ def shell(title, description, body, name, place, hero='', ld=None):
     head.append(f'<style>{CSS}</style></head><body>')
     top = (f'<header class="site"><div class="wrap"><a class="brand" href="index.html" aria-label="{esc(SITE_NAME)} home"><img src="{ASSETS}mark-96.png" alt="" width="40" height="40"><span>{esc(SITE_NAME)}</span></a>'
            '<nav aria-label="Primary"><a href="index.html#map">Your state</a><a href="medical.html">Medical cards</a><a href="index.html#compare">Compare laws</a>'
-           '<a href="world.html">World</a><a href="help.html">Get help</a><a href="about.html">About</a></nav></div></header>')
+           '<a href="world.html">World</a><a href="learn.html">101</a><a href="help.html">Get help</a><a href="about.html">About</a></nav></div></header>')
     family = ''.join(f'<li><a href="{esc(url)}">{esc(label)}</a></li>' for url, label, _, _ in FAMILY)
     foot = ('<footer class="site"><div class="wrap"><div class="cols">'
             '<nav aria-label="This site"><h2>This site</h2><ul><li><a href="index.html#map">Pick your state</a></li>'
-            '<li><a href="index.html#compare">Compare the law</a></li><li><a href="medical.html">Medical cards</a></li><li><a href="coverage.html">Medicaid and insurance</a></li><li><a href="help.html">Get help</a></li><li><a href="world.html">Around the world</a></li><li><a href="heritage.html">Where weed comes from</a></li><li><a href="travel-warnings.html">Travel warnings</a></li><li><a href="jokes.html">Joke of the day</a></li><li><a href="partners.html">Partners</a></li><li><a href="about.html">About and methods</a></li><li><a href="privacy.html">Privacy</a></li></ul></nav>'
+            '<li><a href="index.html#compare">Compare the law</a></li><li><a href="medical.html">Medical cards</a></li><li><a href="coverage.html">Medicaid and insurance</a></li><li><a href="help.html">Get help</a></li><li><a href="world.html">Around the world</a></li><li><a href="learn.html">Cannabis 101</a></li><li><a href="heritage.html">Where weed comes from</a></li><li><a href="travel-warnings.html">Travel warnings</a></li><li><a href="jokes.html">Joke of the day</a></li><li><a href="partners.html">Partners</a></li><li><a href="about.html">About and methods</a></li><li><a href="privacy.html">Privacy</a></li></ul></nav>'
             f'<nav aria-label="Our other sites"><h2>Our other sites</h2><ul>{family}</ul></nav>'
             '<nav aria-label="Corrections and data"><h2>Fix or reuse</h2><ul>'
             f'<li><a href="{esc(correction_url(place))}">Suggest a correction</a></li>'

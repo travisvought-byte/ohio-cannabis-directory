@@ -17,6 +17,41 @@
    "mcpartland2020"
   ]
  },
+ "hash": {
+  "title": "Hash: the oldest concentrate",
+  "intro": "Long before extraction labs, people collected the resin glands (trichomes) of the plant by hand or by shaking dried plants over sieves. Most traditional hash still comes from one of two methods.",
+  "methods": [
+   {
+    "name": "Hand-rubbed (charas)",
+    "where": "India and Nepal, also Afghanistan",
+    "text": "Resin is rubbed off living plants by hand. North India and Nepal have a long tradition of making charas this way.",
+    "source_ids": [
+     "hash-emcdda",
+     "hash-wiki",
+     "hash-fad"
+    ]
+   },
+   {
+    "name": "Sieved (dry sift)",
+    "where": "Morocco, Lebanon, Afghanistan, Pakistan",
+    "text": "Dried plants are beaten or shaken over fine screens and the powder that falls through is pressed into blocks. In Afghanistan, sieved resin is also placed in heated mortars and pounded with a heavy object. Sieved hash is much easier and faster to make than hand-rubbed charas.",
+    "source_ids": [
+     "hash-emcdda",
+     "hash-fad",
+     "hash-geopium"
+    ]
+   },
+   {
+    "name": "Trade history",
+    "where": "Afghanistan, Pakistan, Lebanon, Morocco",
+    "text": "Afghan and Pakistani sieved hash reached Europe along the 1960s and 1970s overland \"hippie trail\", with Lebanon the other main source. Morocco was the last of the major hash nations to produce enough to export, starting in the late 1960s, and its production grew while wars disrupted supply from Lebanon and Afghanistan.",
+    "source_ids": [
+     "hash-chouvy",
+     "hash-emcdda"
+    ]
+   }
+  ]
+ },
  "regions": [
   {
    "id": "east-asia",
@@ -350,6 +385,46 @@
    "publisher": "Bangkok Post",
    "title": "Thai stick: surfers, scammers and the marijuana trade",
    "url": "https://www.bangkokpost.com/thailand/special-reports/845656",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "hash-emcdda",
+   "kind": "government",
+   "publisher": "EMCDDA (European Monitoring Centre for Drugs and Drug Addiction)",
+   "title": "Cannabis resin production and markets (insight chapter)",
+   "url": "https://medbox.org/index.php/dl/5e148832db60a2044c2d557d",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "hash-chouvy",
+   "kind": "research",
+   "publisher": "Chouvy (2016), EMCDDA background paper",
+   "title": "The supply of hashish to Europe",
+   "url": "https://www.geopium.org/wp-content/uploads/2019/06/Chouvy_2016_EMCDDA_Supply_Hashish_Europe.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "hash-geopium",
+   "kind": "research",
+   "publisher": "Geopium (Pierre-Arnaud Chouvy)",
+   "title": "Morocco said to produce nearly half of the world's hashish supply",
+   "url": "https://www.geopium.org/morocco-said-to-produce-nearly-half-of-the-worlds-hashish-supply",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "hash-wiki",
+   "kind": "compilation",
+   "publisher": "Wikipedia",
+   "title": "Hashish",
+   "url": "https://en.wikipedia.org/wiki/Hashish",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "hash-fad",
+   "kind": "compilation",
+   "publisher": "Facts and Details",
+   "title": "Hashish and charas production",
+   "url": "https://factsanddetails.com/world/cat54/sub348/entry-8267.html",
    "retrieved_on": "2026-11-19"
   }
  ]

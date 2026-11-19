@@ -69,6 +69,9 @@ class WorldTest(unittest.TestCase):
     def test_every_heritage_passage_is_cited_and_shown(self):
         ids = {s['id'] for s in HERITAGE['sources']}
         used = set(HERITAGE['origin']['source_ids']) | set(HERITAGE['landrace']['source_ids'])
+        for m in HERITAGE['hash']['methods']:
+            used |= set(m['source_ids'])
+            self.assertIn(build_national.esc(m['text']), PAGES['heritage.html'])
         text = PAGES['heritage.html']
         for r in HERITAGE['regions']:
             self.assertTrue(r['source_ids'], r['id'])
@@ -80,6 +83,17 @@ class WorldTest(unittest.TestCase):
         self.assertEqual(used, ids)
         for s in HERITAGE['sources']:
             self.assertIn(s['kind'], build_national.KIND_LABEL)
+
+    def test_learn_page_shows_every_non_ohio_knowledge_item(self):
+        k = json.loads((ROOT / 'data/knowledge.json').read_text(encoding='utf-8'))
+        text = PAGES['learn.html']
+        for s in k['sections']:
+            for it in s['items']:
+                shown = build_national.esc(it['text']) in text
+                self.assertEqual(shown, s['id'] not in build_world.LEARN_SKIP, it['id'])
+        cited = set(re.findall(r'href="#ksource-(\d+)"', text))
+        listed = set(re.findall(r'id="ksource-(\d+)"', text))
+        self.assertEqual(cited, listed)
 
     def test_world_is_in_the_menu_of_every_page(self):
         for name, text in PAGES.items():
