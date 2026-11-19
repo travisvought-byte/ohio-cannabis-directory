@@ -1253,8 +1253,8 @@
 "iso": "NZ",
 "name": "New Zealand",
 "display": "New Zealand",
-"status": "queued",
-"page": null,
+"status": "deep",
+"page": "world-new-zealand.html",
 "queue": 13
 },
 {

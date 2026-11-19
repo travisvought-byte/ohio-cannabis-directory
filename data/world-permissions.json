@@ -1671,6 +1671,142 @@
      "A bill to legalise cannabis nationally was voted down in the Senate on November 27, 2024, 24 votes to 13, after a Senate committee recommended in May 2024 that it not pass."
     ]
    }
+  },
+  "NZ": {
+   "name": "New Zealand",
+   "page": "world-new-zealand.html",
+   "summary": "Illegal for adult use. A 2020 referendum to legalise it failed by about two points. Possession is a crime on paper, but police are told to weigh a health approach and rarely charge it on its own. Medicinal cannabis has been available on prescription since April 2020.",
+   "note": "Dollar amounts are New Zealand dollars.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No. A 2020 vote to legalise it failed narrowly",
+     "detail": "Cannabis is a controlled drug under the Misuse of Drugs Act 1975, and using or possessing it is an offence. On October 17, 2020 voters were asked whether they supported the proposed Cannabis Legalisation and Control Bill. The official count was 50.7% against and 48.4% in favour, a gap of 67,662 votes out of 2.9 million.",
+     "citation": "Misuse of Drugs Act 1975 s. 7, via the Community Law Manual; New Zealand Gazette notice 2020-au5131",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "nz-communitylaw",
+      "nz-gazette-referendum"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Yes, on prescription since April 2020",
+     "detail": "The Medicinal Cannabis Scheme began on April 1, 2020. Products are available only on prescription; the Ministry of Health names doctors, nurse practitioners and pharmacist prescribers, and no specialist recommendation is needed. Every product must be verified as meeting a minimum quality standard. Apart from two approved medicines, Sativex and Epidyolex, they are not approved medicines, which means their safety and efficacy have not been assessed. Dried flower can be prescribed for vaporising or for making tea, not for smoking. CBD products are prescription medicines too. No medicinal cannabis product was funded by Pharmac, the national medicines funder, as of February 2025.",
+     "citation": "Ministry of Health, information for consumers and minimum quality standard pages; bpacnz overview (updated Feb 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "nz-moh-consumers",
+      "nz-moh-mqs",
+      "nz-bpac"
+     ]
+    },
+    "buying": {
+     "status": "medical-only",
+     "short": "Only on prescription",
+     "detail": "No shop may sell cannabis. Selling any amount is dealing, which carries up to eight years in prison. The only legal supply is a medicinal product dispensed on prescription, and having one sent to you from overseas is against the law.",
+     "citation": "Community Law Manual (Misuse of Drugs Act 1975 s. 6); Ministry of Health, information for consumers",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "nz-communitylaw",
+      "nz-moh-consumers"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "No legal amount; up to 3 months or a NZ$500 fine",
+     "detail": "There is no legal amount. Possession carries a maximum of three months in prison, a fine of up to NZ$500, or both. A judge can jail someone only because of previous convictions or exceptional circumstances, and a first conviction usually means a fine. A 2019 amendment requires police to use discretion about prosecuting, and the Community Law Manual says a charge for possession alone is rare: a warning is more likely, and a first offender may be offered diversion. Holding 28 grams or 100 joints creates a presumption of dealing.",
+     "citation": "Misuse of Drugs Act 1975 s. 7 and Schedule 5, via the Community Law Manual (2026); bpacnz overview",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "nz-communitylaw",
+      "nz-bpac"
+     ]
+    },
+    "sharing": {
+     "status": "not-permitted",
+     "short": "No. Giving it to an adult is punished like possession",
+     "detail": "Giving cannabis to someone 18 or older is treated like possession, with a fine of up to NZ$500 for a first offence. Selling it to anyone, or giving it to someone under 18, is dealing, with a maximum of eight years in prison.",
+     "citation": "Community Law Manual (Misuse of Drugs Act 1975 ss. 6 and 7)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "nz-communitylaw"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "No. Growing is a crime",
+     "detail": "Cultivating cannabis carries a maximum of seven years in prison. The Community Law Manual says a small grow for personal use usually ends in a fine or a community sentence, while commercial growing starts at two to four years. The medicinal scheme covers licensed commercial growing, and the Ministry of Health's patient page describes no allowance for growing your own.",
+     "citation": "Community Law Manual (Misuse of Drugs Act 1975 s. 9); Ministry of Health, information for consumers",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "nz-communitylaw",
+      "nz-moh-consumers"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "Random saliva tests; NZ$200 and 50 demerit points",
+     "detail": "Police can stop any driver for a saliva test that screens for THC, methamphetamine, MDMA and cocaine. Testing began in Wellington on December 15, 2025 and has run nationwide since July 1, 2026. Two positive roadside tests mean a 12-hour driving ban, and a sample goes to a laboratory. A lab result over the limit for one drug brings a NZ$200 fine and 50 demerit points; two or more drugs, or refusing the test, bring NZ$400 and 75 points. The NZ Drug Foundation puts the THC thresholds at 15 nanograms per millilitre for the roadside screen and 5 for the lab. Patients who used a prescribed product as directed can apply for a medical defence after a notice arrives, but it does not lift the 12-hour ban. Driving while impaired is illegal in its own right, and an officer with good cause can order an impairment test and then a blood test.",
+     "citation": "NZ Drug Foundation, Roadside drug testing (as of Dec 16 2025); Radio 1XX citing New Zealand Police, Jul 17 2026 (news); bpacnz overview",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "nz-drugfoundation-rdt",
+      "nz-1xx",
+      "nz-bpac"
+     ]
+    },
+    "record-relief": {
+     "status": "limited",
+     "short": "Concealed after 7 clean years, never erased",
+     "detail": "There is no cannabis-specific expungement. Under the Clean Slate scheme, convictions are concealed automatically once a person has gone seven years without a conviction, was never sentenced to custody, has paid every court-ordered fine and meets the other conditions. They can then say they have no convictions when asked in New Zealand. The record is hidden, not deleted, it comes back after any new conviction, and the scheme does not apply outside New Zealand, so another country may still ask for the full record.",
+     "citation": "Ministry of Justice, Clean Slate scheme (last updated Sep 9 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "nz-cleanslate"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "No, except prescribed medicine declared on arrival",
+     "detail": "A traveller may bring a medicinal cannabis product into New Zealand only if it was prescribed to them, they carry a copy of the prescription or a letter from the prescriber, it is in its original labelled container and they declare it on the passenger arrival card. The limit is three months' supply of a CBD product or one month's supply of any other medicinal cannabis product. Having a product sent to you from overseas is against the law. When leaving, check every destination and transit country: the Ministry of Health warns that some treat possession as a crime with no medical exemption.",
+     "citation": "Ministry of Health, Medicinal cannabis: information for consumers",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "nz-moh-consumers"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "Roadside testing is new and still small. From the first tests in Wellington in December 2025 to June 30, 2026, police ran 4,143 roadside screening tests and 134 came back positive, about 3.2%, according to a July 2026 radio news report citing police. THC may show in saliva for about 12 hours in people who use cannabis occasionally and up to 72 hours in frequent users, the NZ Drug Foundation says, citing studies, and detection varies widely.",
+    "source_ids": [
+     "nz-1xx",
+     "nz-drugfoundation-rdt"
+    ]
+   },
+   "differences": {
+    "title": "What is different about New Zealand",
+    "source_ids": [
+     "nz-gazette-referendum",
+     "nz-communitylaw",
+     "nz-bpac",
+     "nz-moh-consumers",
+     "nz-moh-mqs",
+     "nz-drugfoundation-rdt",
+     "nz-1xx",
+     "nz-cleanslate"
+    ],
+    "points": [
+     "New Zealand put legalisation to a national vote and it lost by 67,662 votes, 50.7% to 48.4%, on October 17, 2020.",
+     "Possession can still mean three months in prison on paper, but the law has required police discretion since 2019 and charges for possession alone are rare.",
+     "At 28 grams or 100 joints the law presumes you are dealing, and it is up to you to prove otherwise.",
+     "Giving cannabis to another adult is punished like possession. Selling any amount, or giving it to someone under 18, is dealing, with up to eight years in prison.",
+     "Prescribed flower is for a vaporiser or for tea. A prescription cannot be for a product meant to be smoked.",
+     "A 2018 law change gave terminally ill patients a legal defence for possessing illicit cannabis, according to bpacnz, a clinical guidance body.",
+     "Random roadside saliva testing went nationwide on July 1, 2026. A prescription can cancel the fine afterwards but not the 12-hour driving ban at the roadside.",
+     "Old convictions are concealed, not erased, after seven conviction-free years, and the Clean Slate scheme stops at the border."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -1990,7 +2126,8 @@
    "codes": [
     "IL",
     "GB",
-    "AU"
+    "AU",
+    "NZ"
    ]
   }
  ],
@@ -1998,7 +2135,6 @@
   "U.S. Virgin Islands",
   "Guam",
   "Northern Mariana Islands",
-  "New Zealand",
   "Ireland",
   "South Africa",
   "Jamaica",
@@ -3723,6 +3859,70 @@
    "publisher": "Hemp Gazette",
    "title": "Australia's Legalising Cannabis Bill 2023 Fails To Pass (Nov 29 2024)",
    "url": "https://hempgazette.com/?p=10219",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nz-communitylaw",
+   "kind": "organization",
+   "publisher": "Community Law (Community Law Centres o Aotearoa)",
+   "title": "Community Law Manual: Cannabis and other Class C drugs (page modified Mar 20 2026)",
+   "url": "https://communitylaw.org.nz/community-law-manual/chapter-34-common-crimes/drug-offences/cannabis-and-other-class-c-drugs/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nz-gazette-referendum",
+   "kind": "government",
+   "publisher": "New Zealand Gazette (Electoral Commission)",
+   "title": "2020 Cannabis Legalisation and Control Referendum Declaration of Official Results (Nov 6 2020)",
+   "url": "https://gazette.govt.nz/notice/id/2020-au5131",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nz-moh-consumers",
+   "kind": "government",
+   "publisher": "Ministry of Health (New Zealand)",
+   "title": "Medicinal cannabis: information for consumers",
+   "url": "https://www.health.govt.nz/regulation-legislation/medicinal-cannabis/information-for-consumers",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nz-moh-mqs",
+   "kind": "government",
+   "publisher": "Ministry of Health (New Zealand)",
+   "title": "Medicinal cannabis products that meet the minimum quality standard",
+   "url": "https://www.health.govt.nz/regulation-legislation/medicinal-cannabis/information-for-health-professionals/minimum-quality-standard-medicinal-cannabis-products",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nz-bpac",
+   "kind": "organization",
+   "publisher": "bpacnz (Best Practice Advocacy Centre New Zealand)",
+   "title": "An overview of medicinal cannabis for health practitioners (updated Feb 27 2025)",
+   "url": "https://bpac.org.nz/2018/cannabinoids.aspx",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nz-drugfoundation-rdt",
+   "kind": "organization",
+   "publisher": "NZ Drug Foundation",
+   "title": "Roadside drug testing: what you need to know (accurate as of Dec 16 2025)",
+   "url": "https://drugfoundation.org.nz/articles/roadside-drug-testing-what-you-need-to-know",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nz-1xx",
+   "kind": "news",
+   "publisher": "Radio 1XX (Media Bay of Plenty)",
+   "title": "Roadside Drug Testing Now Operating Across Eastern Bay of Plenty (Jul 17 2026)",
+   "url": "https://www.1xx.co.nz/news/regional-news/roadside-drug-testing-now-operating-across-eastern-bay-of-plenty/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "nz-cleanslate",
+   "kind": "government",
+   "publisher": "Ministry of Justice (New Zealand)",
+   "title": "Clean Slate scheme (last updated Sep 9 2026)",
+   "url": "https://www.justice.govt.nz/criminal-records/clean-slate/",
    "retrieved_on": "2026-11-19"
   }
  ]
