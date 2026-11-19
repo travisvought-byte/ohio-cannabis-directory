@@ -52,7 +52,7 @@ p{max-width:70ch}.muted{color:var(--soft);font-size:.9rem}.crumbs{font-size:.9re
 .hero{position:relative;overflow:hidden;background:linear-gradient(155deg,var(--green) 0%,var(--green2) 100%);color:#fff}
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);align-items:center;gap:24px;padding-top:34px;padding-bottom:46px}
 .hero h1{font-size:clamp(32px,5.2vw,52px);line-height:1.06;margin:.25em 0 .35em;max-width:15ch}.hero p{color:#e2eee6;font-size:1.08rem;margin:.4em 0}
-.hero .worldlink{margin:14px 0 0;font-weight:700}.hero .worldlink a{color:var(--gold)}.hero .eyebrow{color:var(--gold);font-size:.82rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+.ahoy{background:var(--gold);color:#221c08}.ahoy p{max-width:none;margin:0;padding:10px 0;font-size:.98rem;line-height:1.45}.ahoy a{color:#221c08;font-weight:800;white-space:nowrap}.ahoy .flag{font-size:1.15rem}.hero .worldlink{margin:14px 0 0;font-weight:700}.hero .worldlink a{color:var(--gold)}.hero .eyebrow{color:var(--gold);font-size:.82rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
 .hero .art .shipbox{position:relative;max-width:520px;margin:0 auto}.hero .art .ship{display:block;width:100%;height:auto;border-radius:22px;box-shadow:0 18px 38px rgba(0,0,0,.45)}
 .ship .vessel{transform-origin:330px 540px;animation:bob 7s ease-in-out infinite}.ship .flag{filter:drop-shadow(0 0 7px rgba(150,225,235,.55)) drop-shadow(0 0 1px rgba(220,245,250,.9));transform-origin:330px 140px;animation:fly 3.2s ease-in-out infinite}.ship .swell{animation:swell 6s ease-in-out infinite}
 .ship .sailor{transform-box:fill-box;transform-origin:50% 100%;animation:cough 9s ease-in-out infinite}.ship .ember{fill:#ff7a1a;animation:ember 9s linear infinite}
@@ -1098,7 +1098,8 @@ def home_page(perm, score, directory, answers, sources, sponsors=()):
     jokes = load_jokes()
     ordered = sorted(names, key=lambda c: names[c])
     jump = ''.join(f'<option value="{slug(names[c])}.html">{esc(names[c])}</option>' for c in ordered)
-    hero = ('<section class="hero"><div class="wrap"><div class="copy">'
+    import build_world  # the world section lives in build_world; imported here to avoid a load-time cycle
+    hero = (build_world.announcement() + '<section class="hero"><div class="wrap"><div class="copy">'
             '<p class="eyebrow">Free · All 50 states and DC · Every answer sourced</p>'
             '<h1>Cannabis answers for your state, in plain language.</h1>'
             '<p>What’s legal, where to buy, how to clear a record and where to get help. Each answer links to the law or agency it comes from.</p>'

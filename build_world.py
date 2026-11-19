@@ -252,6 +252,21 @@ def heritage_page(her, sources):
                      ld=[nat.breadcrumbs([('Home', ''), ('Around the world', 'world.html')], 'heritage.html', 'Where weed comes from')])
 
 
+def announcement():
+    """Site-wide news banner for the world launch. Counts come from the data, so they stay true as countries are added."""
+    world = load()
+    n = len(world['countries'])
+    full = [c['name'] for c in world['countries'].values() if c.get('differences')]
+    charted = (f'{" and ".join(full)} charted down to every last province' if len(full) <= 2
+               else f'{len(full)} of them charted down to every last province')
+    return ('<aside class="ahoy" aria-label="Announcement"><div class="wrap"><p>'
+            '<span class="flag" aria-hidden="true">🏴‍☠️</span> <strong>Ahoy! The Reefer has set sail.</strong> '
+            f'We crossed the seven seas and hauled back the cannabis laws of {n} countries, '
+            f'{charted}, and more ports on the map. '
+            'We dug up where the old landraces were buried, and marked the waters where weed can land ye in the brig. '
+            '<a href="world.html">Board the ship →</a></p></div></aside>')
+
+
 def home_block():
     """The home page's way into the world section: every country, grouped, plus history and travel warnings."""
     world = load()
