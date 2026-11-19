@@ -622,51 +622,94 @@
   "UY": {
    "name": "Uruguay",
    "page": "world-uruguay.html",
-   "summary": "The first country to regulate the whole market, in 2013. Residents register for one of three routes: grow at home, join a club, or buy at a pharmacy.",
-   "note": "",
+   "summary": "The first country to regulate the whole market, under Law 19.172 of December 2013. Citizens and permanent residents register for one of three routes: grow at home, join a club, or buy at a pharmacy. Tourists are shut out.",
+   "note": "Spanish sources are summarized in English.",
    "answers": {
     "adult-use": {
      "status": "allowed",
-     "short": "Yes, for registered residents",
-     "detail": "Uruguay regulated home growing, cannabis clubs and pharmacy sales in 2013, the first country to do so. Users must register in a national registry and can use only one of the three routes at a time.",
-     "citation": "Pardal et al.; Rychert et al. (research)",
+     "short": "Yes, for registered citizens and residents",
+     "detail": "Law 19.172 regulated home growing, cannabis clubs and pharmacy sales, the first country to do so. Users must register with IRCCA, the national cannabis regulator, and can use only one of the three routes at a time.",
+     "citation": "Ley 19.172 (IMPO guide); EUDA; Pardal et al. (research)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
-      "uy-pardal",
-      "uy-rychert"
+      "uy-impo-guia",
+      "uy-euda-2017",
+      "uy-pardal"
      ]
     },
     "buying": {
      "status": "limited",
-     "short": "Pharmacies or clubs, 40 grams a month",
-     "detail": "The government sets pharmacy prices and limits total production. Buyers at pharmacies and clubs can get at most 40 grams a month.",
-     "citation": "Rychert et al. (research)",
+     "short": "Pharmacies: 10 grams a week, 40 a month",
+     "detail": "Pharmacy sales began on July 19, 2017. Registered buyers may purchase up to 10 grams a week and no more than 40 grams a month, in sealed packs, at prices set by IRCCA. Clubs must have between 15 and 45 members and are licensed and inspected by IRCCA.",
+     "citation": "Decreto 120/014; IMPO guide to Ley 19.172; EUDA; Ámbito (news)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
-      "uy-rychert"
+      "uy-decreto120",
+      "uy-impo-guia",
+      "uy-euda-2017",
+      "uy-ambito-precios"
      ]
     },
     "home-grow": {
      "status": "allowed",
-     "short": "Up to 6 plants, registered with IRCCA",
-     "detail": "Home growers register with IRCCA, the national cannabis regulator, and may grow up to six plants.",
-     "citation": "Government of Uruguay; Rio Times (news)",
+     "short": "6 plants and 480 grams a year per household",
+     "detail": "Registered home growers may keep up to six flowering plants per household, with a harvest of no more than 480 grams a year, for personal or shared use at home.",
+     "citation": "IMPO guide to Ley 19.172; Government of Uruguay",
      "reviewed_on": "2026-11-19",
      "source_ids": [
-      "uy-gub",
-      "uy-riotimes"
+      "uy-impo-guia",
+      "uy-gub"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "Zero alcohol, and no driving after cannabis",
+     "detail": "Uruguay's traffic law bars driving with any alcohol in the blood. The cannabis law also bars driving with THC above the permitted level, and the national drug board says drug use must be zero whenever you are going to drive. The government bought 1,000 drug detection devices and trained traffic officers across the country to use them.",
+     "citation": "Ley 18.191 art. 45; Junta Nacional de Drogas; Infobae 2014 (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "uy-ley18191-45",
+      "uy-jnd-transito",
+      "uy-infobae-2014"
      ]
     },
     "border": {
      "status": "limited",
      "short": "Visitors have no legal route",
-     "detail": "Only residents can register, so tourists have no legal way to get cannabis. IRCCA's director has said this pushes visitors to the illegal market.",
-     "citation": "Rio Times (news)",
+     "detail": "Only citizens and permanent residents can register, so tourists cannot legally buy. In 2026 IRCCA's director said this pushes visitors to the illegal market and that the regulator is designing a way to let them buy.",
+     "citation": "EUDA; Rio Times (news)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
+      "uy-euda-2017",
       "uy-riotimes"
      ]
     }
+   },
+   "experiment": {
+    "text": "As of April 30, 2026, 120,083 people were registered: 88,955 pharmacy buyers, 20,798 club members and 10,330 home growers. A government evaluation in 2026 found that 46 percent of consumers now buy through the legal market, and described a remaining gray market made up mostly of unregistered home growers and informal sharing.",
+    "source_ids": [
+     "uy-montevideo-2026",
+     "uy-presidencia-snd",
+     "uy-jnd-eval",
+     "uy-cronista-gris"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Uruguay",
+    "source_ids": [
+     "uy-impo-guia",
+     "uy-euda-2017",
+     "uy-decreto120",
+     "uy-montevideo-2026",
+     "uy-riotimes"
+    ],
+    "points": [
+     "The state runs it. IRCCA licenses the growers, sets pharmacy prices, registers every user and inspects clubs.",
+     "You pick one route. Home grow, club or pharmacy, never two at once.",
+     "Your pharmacy has it, maybe. Sales are at ordinary pharmacies that opt in, and in 2017 only 16 of about 1,200 did.",
+     "Pharmacy buyers are by far the largest group, almost 89,000 of about 120,000 registered in 2026.",
+     "The first legal country is closed to tourists, though the regulator now wants to change that."
+    ]
    }
   },
   "TH": {
@@ -1896,19 +1939,99 @@
    "retrieved_on": "2026-11-19"
   },
   {
-   "id": "uy-rychert",
-   "kind": "organization",
-   "publisher": "Massey University research repository",
-   "title": "For-profit organisations in Uruguay's recreational cannabis market",
-   "url": "https://mro.massey.ac.nz/bitstreams/4e4e41c4-a91d-4b42-8ac2-991582906fa8/download",
-   "retrieved_on": "2026-11-19"
-  },
-  {
    "id": "uy-gub",
    "kind": "government",
    "publisher": "Government of Uruguay",
    "title": "Registros IRCCA (home growers, buyers, membership clubs)",
    "url": "https://www.gub.uy/tramites/registros-ircca",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uy-impo-guia",
+   "kind": "government",
+   "publisher": "IMPO (Uruguay official gazette)",
+   "title": "La ley en tu lenguaje: Ley 19.172 de regulación y control del cannabis",
+   "url": "https://www.impo.com.uy/wp_impo/wp-content/uploads/2019/06/cannabis.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uy-decreto120",
+   "kind": "statute",
+   "publisher": "Decreto 120/014 (via FAOLEX)",
+   "title": "Reglamentación de la Ley 19.172: pharmacy limits of 10 g a week and 40 g a month",
+   "url": "https://faolex.fao.org/docs/pdf/uru135101.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uy-euda-2017",
+   "kind": "government",
+   "publisher": "European Union Drugs Agency (EUDA)",
+   "title": "Uruguay: recreational cannabis sales start at pharmacies (2017)",
+   "url": "https://www.euda.europa.eu/news/2017/uruguay-recreational-cannabis-sales-start-at-pharmacies_en",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uy-montevideo-2026",
+   "kind": "news",
+   "publisher": "Montevideo Portal",
+   "title": "IRCCA report: 120,083 registered as of April 30 2026",
+   "url": "https://www.montevideo.com.uy/Noticias/Hubo-un-banderazo-para-que-la-marihuana-no-tenga-un-mercado-gris--que-reclaman-uc963677",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uy-presidencia-snd",
+   "kind": "government",
+   "publisher": "Presidencia de la República (Uruguay)",
+   "title": "Secretaría Nacional de Drogas: informe sobre el mercado de cannabis (2026)",
+   "url": "https://www.gub.uy/presidencia/comunicacion/noticias/cannabis-iirca-junta-de-drogas-informe",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uy-jnd-eval",
+   "kind": "government",
+   "publisher": "Secretaría Nacional de Drogas (Uruguay)",
+   "title": "Regulación del mercado de cannabis en Uruguay: segunda evaluación de la ley 19.172 (Apr 2026)",
+   "url": "https://www.gub.uy/junta-nacional-drogas/sites/junta-nacional-drogas/files/documentos/publicaciones/L1_Regulacion_abril2026.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uy-cronista-gris",
+   "kind": "news",
+   "publisher": "El Cronista Uruguay",
+   "title": "Del narcotráfico al mercado formal: avances y sombras en la ley del cannabis (2026)",
+   "url": "https://www.cronista.com/uruguay/actualidad-uy/del-narcotrafico-al-mercado-formal-avances-y-sombras-en-la-ley-del-cannabis",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uy-ley18191-45",
+   "kind": "statute",
+   "publisher": "Ley 18.191 art. 45 (IMPO)",
+   "title": "Ley de Tránsito y Seguridad Vial: zero blood alcohol for all drivers",
+   "url": "https://www.impo.com.uy/bases/leyes/18191-2007/45",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uy-jnd-transito",
+   "kind": "government",
+   "publisher": "Junta Nacional de Drogas (Uruguay)",
+   "title": "Gobierno capacita a agentes de tránsito en el uso de dispositivos de detección",
+   "url": "https://www.gub.uy/junta-nacional-drogas/comunicacion/noticias/gobierno-capacita-agentes-transito-todo-pais-uso-dispositivos-deteccion",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uy-infobae-2014",
+   "kind": "news",
+   "publisher": "Infobae",
+   "title": "Uruguay: si fuma marihuana, no conduzca (May 5 2014)",
+   "url": "https://www.infobae.com/2014/05/05/1561888-uruguay-si-fuma-marihuana-no-conduzca/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "uy-ambito-precios",
+   "kind": "news",
+   "publisher": "Ámbito",
+   "title": "¿Cómo quedan los precios del cannabis legal tras el nuevo incremento? (Jul 31 2026)",
+   "url": "https://www.ambito.com/uruguay/como-quedan-los-precios-del-cannabis-legal-el-nuevo-incremento-n6305806",
    "retrieved_on": "2026-11-19"
   },
   {
