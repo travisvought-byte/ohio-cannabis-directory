@@ -58,7 +58,7 @@ def brand_header():
                                ('compare.html', 'Compare states')]),
         ('Other states', [('state.html?state=PA', 'Pennsylvania portal'), ('locations.html?state=NY', 'New York dispensaries')]),
         ('Veteran Home Guardians', [('https://guide.vethomeguard.org/', 'Veteran Resident Guide'),
-                                    ('https://bingo.vethomeguard.org/', 'Ohio Bingo Finder')]),
+                                    ('https://www.findbingo.org/ohio/', 'Ohio Bingo Finder')]),
     ]
     menu = ''.join('<div class="nav-group"><p>' + title + '</p>' + ''.join(f'<a href="{href}">{label}</a>' for href, label in links) + '</div>'
                    for title, links in groups)
@@ -81,7 +81,7 @@ def brand_footer():
             '<a href="https://github.com/travisvought-byte/ohio-cannabis-directory#readme">Methods &amp; sources</a>'
             '<a href="ohio-cannabis-directory.csv" download>CSV download</a>'
             '<a href="https://guide.vethomeguard.org/">Veteran Resident Guide</a>'
-            '<a href="https://bingo.vethomeguard.org/">Ohio Bingo Finder</a>'
+            '<a href="https://www.findbingo.org/ohio/">Ohio Bingo Finder</a>'
             '</nav><p>Created and maintained by <a href="work-with-travis.html">Travis Vought</a> · Shared in support of Veteran Home Guardians · '
             '<a href="https://github.com/travisvought-byte/ohio-cannabis-directory/blob/main/PROJECT_STEWARDSHIP.md">Project roles</a></p></footer>')
 

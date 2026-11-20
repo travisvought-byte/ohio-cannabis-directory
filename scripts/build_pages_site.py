@@ -37,6 +37,24 @@ FORWARD = [
 SKIP = {'.git', '.github', 'node_modules', '__pycache__', '_site', '.pytest_cache'}
 
 
+# Working files that belong in the repository but not on the public site: build and import
+# scripts, tests, page templates (half-built copies of real pages), assistant and release
+# instructions, and planning notes. They stay readable on GitHub. Only the site root is
+# filtered, so documentation that pages link to inside data/ (data/strains/README.md) still serves.
+WORKSHOP_DIRS = {'architecture', 'docs', 'research', 'schemas', 'scripts', 'templates', 'tests'}
+WORKSHOP_FILES = {'requirements.txt', 'package.json', 'package-lock.json', 'CITATION.cff',
+                  'RELEASE_UPLOAD_INSTRUCTIONS.txt'}
+WORKSHOP_SUFFIXES = {'.py', '.md'}
+
+
+def remove_workshop_files(out: Path):
+    for path in out.iterdir():
+        if path.is_dir() and path.name in WORKSHOP_DIRS:
+            shutil.rmtree(path)
+        elif path.is_file() and (path.name in WORKSHOP_FILES or path.suffix in WORKSHOP_SUFFIXES):
+            path.unlink()
+
+
 def check_forward_list():
     """Every Ohio page should forward to its own address, not the home. Catch drift."""
     import sys
@@ -134,6 +152,7 @@ def build(out):
     if out.exists():
         shutil.rmtree(out)
     shutil.copytree(ROOT, out, ignore=shutil.ignore_patterns(*SKIP))
+    remove_workshop_files(out)
 
     missing = [n for n in FORWARD if not (ROOT / n).exists()]
     if missing:
