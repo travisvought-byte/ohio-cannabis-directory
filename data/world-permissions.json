@@ -4940,6 +4940,86 @@
      "Expungement covers past convictions for home plants and pipes, not only possession."
     ]
    }
+  },
+  "BS": {
+   "name": "Bahamas",
+   "page": "world-bahamas.html",
+   "summary": "Recreational cannabis is illegal. The Cannabis Act passed in 2024 sets a $250 fine instead of a criminal charge for up to 30 grams and legalises medical and Rastafari religious use, but it has been brought in slowly: arrests for small amounts were still reported in 2025, and the medical licensing portal had not opened as of July 2026.",
+   "note": "The Cannabis Act text and its commencement orders were not opened; this guide relies on the Prime Minister's speech and Nassau news reports.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Recreational use stays illegal",
+     "detail": "The Prime Minister told Parliament in July 2024 that recreational use is not permitted under the reform package, and that possession of small amounts would still be unlawful, with a $250 fine replacing a criminal conviction. Smoking cannabis in public places is an offence.",
+     "citation": "OPM, Prime Minister's debate contribution (Jul 15 2024)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bs-opm-2024"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Legal in law; licensing not yet open",
+     "detail": "The 2024 package legalises medical cannabis for listed conditions such as chronic pain, epilepsy and glaucoma. Prescribers must be trained, dispensaries must have a licensed pharmacist, and foreign medical cannabis cards from listed jurisdictions are to be recognised. As of July 22, 2026, the Cannabis Authority's online licensing portal, including a personal medical use category, had not opened.",
+     "citation": "OPM (Jul 15 2024); The Tribune (Jul 22 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bs-opm-2024",
+      "bs-tribune-2026"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales yet",
+     "detail": "There is no recreational sale. Medical sales are to go through licensed dispensaries, including pharmacies with a separate licence and a physically separate dispensary area, but licensing had not started as of July 2026. Cultivation, sale and transport licences are reserved for wholly Bahamian-owned businesses.",
+     "citation": "The Tribune (Jul 22 2026); OPM (Jul 15 2024)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bs-tribune-2026",
+      "bs-opm-2024"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "$250 fine on paper; prosecutions still reported",
+     "detail": "The Cannabis Act 2024 sets a $250 fine instead of criminal penalties for possession of up to 30 grams. In February 2025 only the provisions creating the Cannabis Authority were in force, and in September 2025 the Authority's chairman said people caught with small amounts were still being prosecuted, which he had raised with officials several times.",
+     "citation": "The Tribune (Feb 5 2025; Sep 24 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bs-tribune-2025a",
+      "bs-tribune-2025b"
+     ]
+    },
+    "record-relief": {
+     "status": "limited",
+     "short": "Apply to have old 30-gram convictions expunged",
+     "detail": "People convicted in the past of possessing 30 grams or less can apply to the Minister to have the record expunged, the Prime Minister said in presenting the bills.",
+     "citation": "OPM (Jul 15 2024)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bs-opm-2024"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "Rastafari religious use has its own licences: a licensed group's leader may give cannabis only to members at a place of worship, and an unaffiliated believer can be licensed to use it in a secured private space at home.",
+    "source_ids": [
+     "bs-opm-2024"
+    ]
+   },
+   "differences": {
+    "title": "What is different about the Bahamas",
+    "source_ids": [
+     "bs-opm-2024",
+     "bs-tribune-2025b",
+     "bs-tribune-2026"
+    ],
+    "points": [
+     "The law has been passed but brought into effect in stages, so practice can lag behind the text.",
+     "Foreign medical cannabis cards from listed jurisdictions are meant to be recognised.",
+     "Most industry licences are reserved for Bahamian owners."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -5300,7 +5380,8 @@
     "SE",
     "FI",
     "PR",
-    "BB"
+    "BB",
+    "BS"
    ]
   },
   {
@@ -8677,6 +8758,38 @@
    "publisher": "Caribbean National Weekly",
    "title": "Grenada decriminalises cannabis, sets age of 21 for legal possession (Jan 21 2026)",
    "url": "https://www.caribbeannationalweekly.com/posts/grenada-decriminalises-cannabis-sets-age-of-21-for-legal-possession",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bs-opm-2024",
+   "kind": "government",
+   "publisher": "Office of the Prime Minister of The Bahamas",
+   "title": "Prime Minister Philip Davis's contribution to the Cannabis Reform Compendium 2024 debate (Jul 15 2024)",
+   "url": "https://opm.gov.bs/?p=291898",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bs-tribune-2025a",
+   "kind": "news",
+   "publisher": "The Tribune (Nassau)",
+   "title": "\"Why no decriminalisation despite cannabis law?\" (Feb 5 2025)",
+   "url": "https://www.tribune242.com/comments/cr/124/185838/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bs-tribune-2025b",
+   "kind": "news",
+   "publisher": "The Tribune (Nassau)",
+   "title": "Cannabis cases still go to court despite law change (Sep 24 2025)",
+   "url": "https://www.tribune242.com/comments/cr/124/190348",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bs-tribune-2026",
+   "kind": "news",
+   "publisher": "The Tribune (Nassau)",
+   "title": "\"Measure twice, cut once\" medical cannabis approach (Jul 22 2026)",
+   "url": "https://tribune242.com/news/2026/jul/22/measure-twice-cut-once-medical-cannabis-approach/",
    "retrieved_on": "2026-11-19"
   }
  ]
