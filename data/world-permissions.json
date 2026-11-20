@@ -5020,6 +5020,74 @@
      "Most industry licences are reserved for Bahamian owners."
     ]
    }
+  },
+  "LC": {
+   "name": "Saint Lucia",
+   "page": "world-st-lucia.html",
+   "summary": "Since September 2021, possessing 30 grams or less of cannabis or resin is not an offence, and a person may grow up to four plants at their home. Smoking in public is still an offence with a fine of up to $1,500 that does not go on a criminal record. There is no legal market yet; a draft Cannabis and Industrial Hemp Bill went to public consultation in 2025.",
+   "note": "Amounts are in Eastern Caribbean dollars.",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "Decriminalised in private; no legal market",
+     "detail": "The 2021 amendment made personal amounts lawful to hold. Smoking any part of the cannabis plant in a public place, including bars, restaurants, clubs and government offices, is an offence with a fine of up to $1,500 that does not form part of a criminal record, and owners who knowingly allow it also commit an offence. A privately occupied home not used commercially is not a public place. A child or young person found with cannabis must attend an approved drug counselling programme.",
+     "citation": "Drugs (Prevention of Misuse) (Amendment) Act 2021, ss. 5-6 (new ss. 14A, 27A)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "lc-act-2021"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales",
+     "detail": "There is no licensed market. A draft Cannabis and Industrial Hemp Bill covering farming, processing and sales of cannabis and hemp was released for public consultation, which closed on February 7, 2025; this guide did not find it enacted.",
+     "citation": "HempToday (Jan 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "lc-hemptoday-2025"
+     ]
+    },
+    "possession": {
+     "status": "allowed",
+     "short": "30 grams or less is not an offence",
+     "detail": "A person who possesses 30 grams or less of cannabis or cannabis resin is not guilty of an offence, and prosecution and punishment under section 37 do not apply to that amount.",
+     "citation": "Drugs (Prevention of Misuse) Act, s. 8A (inserted by Act 13 of 2021)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "lc-ag-8a",
+      "lc-act-2021"
+     ]
+    },
+    "home-grow": {
+     "status": "allowed",
+     "short": "Up to four plants at home",
+     "detail": "Under the Cannabis Cultivation Regulations of 2021, a person may grow no more than four cannabis plants at a time at his or her dwelling-house, and the regulation also limits the total where more than one person lives there. Growing may be indoors, in one room, or outdoors, and the regulations restrict growing near school premises.",
+     "citation": "Drugs (Prevention of Misuse) (Cannabis Cultivation) Regulations, SI 208/2021, regs. 4-8",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "lc-ag-reg4"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "A ticket for smoking in public stays off your criminal record, but owners and managers of bars, restaurants and clubs can be fined too if they knowingly let people smoke there.",
+    "source_ids": [
+     "lc-act-2021"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Saint Lucia",
+    "source_ids": [
+     "lc-act-2021",
+     "lc-ag-reg4",
+     "lc-hemptoday-2025"
+    ],
+    "points": [
+     "Possession, home growing and the public-smoking rule all came in one 2021 amendment.",
+     "Home growing has its own regulations, down to growing indoors in a single room.",
+     "A wider cannabis and hemp industry law was still at the draft stage in 2025."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -5352,7 +5420,8 @@
     "KN",
     "VC",
     "TT",
-    "GD"
+    "GD",
+    "LC"
    ]
   },
   {
@@ -8790,6 +8859,38 @@
    "publisher": "The Tribune (Nassau)",
    "title": "\"Measure twice, cut once\" medical cannabis approach (Jul 22 2026)",
    "url": "https://tribune242.com/news/2026/jul/22/measure-twice-cut-once-medical-cannabis-approach/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "lc-act-2021",
+   "kind": "statute",
+   "publisher": "National Printing Corporation, Government of Saint Lucia",
+   "title": "Drugs (Prevention of Misuse) (Amendment) Act, 2021, No. 13 of 2021 (assented Sep 23 2021)",
+   "url": "https://npc.govt.lc/files/laws/acts/2021/No.%2013%20of%202021%20-%20Drugs%20(Prevention%20of%20Misuse)%20(Amendment)%20Act%20-%20Act%20-%20Price%20$3.00.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "lc-ag-8a",
+   "kind": "statute",
+   "publisher": "Attorney General's Chambers of Saint Lucia",
+   "title": "Revised Laws of Saint Lucia (2023), Drugs (Prevention of Misuse) Act, s. 8A: exemption from criminal liability",
+   "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/drugs-prevention-of-misuse-act/section-8a",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "lc-ag-reg4",
+   "kind": "statute",
+   "publisher": "Attorney General's Chambers of Saint Lucia",
+   "title": "Revised Laws of Saint Lucia (2023), Drugs (Prevention of Misuse) (Cannabis Cultivation) Regulations (SI 208/2021), reg. 4",
+   "url": "https://www.attorneygeneralchambers.com/laws-of-saint-lucia/drugs-prevention-of-misuse-act/section-4-03",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "lc-hemptoday-2025",
+   "kind": "news",
+   "publisher": "HempToday",
+   "title": "Draft law maps the way for hemp, marijuana sectors to open up in St. Lucia this year (Jan 2025)",
+   "url": "https://hemptoday.net/draft-law-maps-the-way-for-hemp-marijuana-sectors-to-open-up-in-st-lucia-this-year/",
    "retrieved_on": "2026-11-19"
   }
  ]

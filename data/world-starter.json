@@ -2108,22 +2108,6 @@
     }
    ]
   },
-  "LC": {
-   "name": "St Lucia",
-   "page": "world-st-lucia.html",
-   "fcdo_title": "St Lucia",
-   "source_id": "fcdo-st-lucia",
-   "updated": "2025-12-10",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs penalties",
-     "paragraphs": [
-      "There are severe penalties for all drug offences. Pack all luggage yourself and do not carry anything through customs for anyone else."
-     ]
-    }
-   ]
-  },
   "SX": {
    "name": "St Maarten",
    "page": "world-st-maarten.html",
@@ -3485,14 +3469,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "St Helena, Ascension and Tristan da Cunha travel advice (last updated by the FCDO 2026-09-10)",
    "url": "https://www.gov.uk/foreign-travel-advice/st-helena-ascension-and-tristan-da-cunha",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-st-lucia",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "St Lucia travel advice (last updated by the FCDO 2025-12-10)",
-   "url": "https://www.gov.uk/foreign-travel-advice/st-lucia",
    "retrieved_on": "2026-11-20"
   },
   {
