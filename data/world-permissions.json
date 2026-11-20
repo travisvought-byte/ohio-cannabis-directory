@@ -3191,6 +3191,96 @@
      "Courts read the medical exception strictly when grows look larger than one patient needs."
     ]
    }
+  },
+  "PE": {
+   "name": "Peru",
+   "page": "world-peru.html",
+   "summary": "Possessing up to 8 grams of marijuana, or 2 grams of its derivatives, for your own immediate use is not punishable under the Penal Code. Selling and growing remain serious crimes. Medical cannabis has been legal since 2017 for patients in the national registry, sold through licensed establishments, and registered patients can form associations licensed to grow for their members.",
+   "note": "Spanish sources are summarized in English.",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "Small amounts for immediate use are not punished",
+     "detail": "Article 299 of the Penal Code makes possession for your own immediate use non-punishable up to set amounts, including 8 grams of marijuana or 2 grams of its derivatives. The exemption does not apply if you have two or more types of drugs. There is no legal adult-use sale.",
+     "citation": "Código Penal art. 299, as amended by Ley 30681 (Nov 17 2017)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "pe-ley30681"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Legal since 2017 for registered patients",
+     "detail": "Law 30681 allows cannabis and its derivatives for medicinal and therapeutic use only. The Ministry of Health keeps a confidential registry of patients certified by their treating doctor. Only licensed establishments may sell medical cannabis, only certified physicians may prescribe, and the pharmacy checks each prescription against the patient registry (RENPUC) and keeps it on file.",
+     "citation": "Ley 30681 arts. 1, 4-7; MINSA sanitary oversight slides on RENPUC dispensing",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "pe-ley30681",
+      "pe-minsa-controlados"
+     ]
+    },
+    "buying": {
+     "status": "medical-only",
+     "short": "Only licensed medical sales",
+     "detail": "There is no legal adult-use market. Import and sale licences go to registered importers and sellers, production licences only to registered public entities and laboratories, and medical cannabis may be sold only by licensed establishments. Selling or growing cannabis outside a licence is a crime under the Penal Code.",
+     "citation": "Ley 30681 art. 5 and Código Penal art. 296-A; MINSA slides",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "pe-ley30681",
+      "pe-minsa-controlados"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "Up to 8 grams for immediate use",
+     "detail": "Possession for your own immediate use is not punishable up to 8 grams of marijuana or 2 grams of its derivatives, as long as you carry only one type of drug. A registered patient may also possess the quantity needed for their own treatment, or for someone in their care.",
+     "citation": "Código Penal art. 299, as amended by Ley 30681",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "pe-ley30681"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Growing is a crime; patient associations can be licensed",
+     "detail": "Planting or growing cannabis carries 8 to 15 years in prison under article 296-A of the Penal Code, or 2 to 6 years when there are 100 plants or fewer. The article 299 exemption covers possession, not growing. Since Law 31312 (2021), associations of at least two registered patients can get a licence to grow, process, transport and store cannabis only for their own members' medical use.",
+     "citation": "Código Penal art. 296-A (Ley 30681, Ley 31312); Ley 30681 arts. 3-A and 8-A",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "pe-ley30681",
+      "pe-ley31312"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "A crash under the influence ends your licence for good",
+     "detail": "Under infraction M01 of the National Traffic Regulation, driving under the effects of narcotics or hallucinogens confirmed by a test, or refusing the test, and being involved in a crash, is punished with a fine of 100% of the tax unit (UIT), cancellation of the licence and a permanent ban on getting a new one.",
+     "citation": "Reglamento Nacional de Tránsito (DS 016-2009-MTC), infraction M01, as applied by MP Huaraz (Feb 25 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "pe-huaraz-m01"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "The 8-gram limit is for one drug at a time: carrying a small amount of marijuana together with any other drug removes the exemption entirely.",
+    "source_ids": [
+     "pe-ley30681"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Peru",
+    "source_ids": [
+     "pe-ley30681",
+     "pe-ley31312",
+     "pe-minsa-controlados"
+    ],
+    "points": [
+     "The personal-use limit is a fixed number written into the Penal Code, not a court presumption.",
+     "Medical access depends on a national patient registry that pharmacies check at every sale.",
+     "Patients cannot grow alone, but registered patients can grow together through a licensed association."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -3510,7 +3600,8 @@
     "IT",
     "BR",
     "AR",
-    "CL"
+    "CL",
+    "PE"
    ]
   },
   {
@@ -5989,6 +6080,38 @@
    "publisher": "Diario Constitucional",
    "title": "Corte Suprema ratifica condena por cultivo ilegal de cannabis en Cañete (Dec 29 2025)",
    "url": "https://www.diarioconstitucional.cl/2025/12/29/corte-suprema-ratifica-condena-por-cultivo-ilegal-de-cannabis-en-canete/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "pe-ley30681",
+   "kind": "statute",
+   "publisher": "Congreso de la República del Perú",
+   "title": "Ley 30681, uso medicinal y terapéutico del cannabis, with new Código Penal arts. 296-A, 299 and 300 (El Peruano, Nov 17 2017)",
+   "url": "https://www.congreso.gob.pe/Docs/DGP/DIDP/files/ley_30681.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "pe-ley31312",
+   "kind": "statute",
+   "publisher": "Congreso de la República del Perú",
+   "title": "Ley 31312, associative cultivation for registered patients (El Peruano, Jul 25 2021)",
+   "url": "https://www.congreso.gob.pe/Docs/DGP/DIDP/files/ley_31312.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "pe-minsa-controlados",
+   "kind": "government",
+   "publisher": "Ministerio de Salud (MINSA), sanitary oversight training slides on gob.pe",
+   "title": "Productos controlados: medical cannabis dispensing and RENPUC (undated; cites norms through DS 020-2024-SA; retrieved Nov 19 2026)",
+   "url": "https://cdn.www.gob.pe/uploads/document/file/7696210/6514249-8-productos-controlados.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "pe-huaraz-m01",
+   "kind": "government",
+   "publisher": "Municipalidad Provincial de Huaraz, Sub Gerencia de Transportes",
+   "title": "Resolución N° 000444-2025-MPHZ/GM/SGT applying infraction M01 of the Reglamento Nacional de Tránsito (Feb 25 2025)",
+   "url": "https://cdn.www.gob.pe/uploads/document/file/7801420/6585297-resolucion-sub-gerencial-n-444-2025-mphz-gm-sgt.pdf",
    "retrieved_on": "2026-11-19"
   }
  ]

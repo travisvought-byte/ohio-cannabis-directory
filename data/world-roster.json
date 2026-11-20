@@ -1389,8 +1389,8 @@
 "iso": "PE",
 "name": "Peru",
 "display": "Peru",
-"status": "queued",
-"page": null,
+"status": "deep",
+"page": "world-peru.html",
 "queue": 27
 },
 {
