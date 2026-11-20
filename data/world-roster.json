@@ -429,7 +429,7 @@
    "iso": "CR",
    "name": "Costa Rica",
    "display": "Costa Rica",
-   "status": "basic",
+   "status": "deep",
    "page": "world-costa-rica.html",
    "queue": 30
   },
@@ -981,7 +981,7 @@
    "iso": "LB",
    "name": "Lebanon",
    "display": "Lebanon",
-   "status": "basic",
+   "status": "deep",
    "page": "world-lebanon.html",
    "queue": 32
   },
@@ -1189,7 +1189,7 @@
    "iso": "MA",
    "name": "Morocco",
    "display": "Morocco",
-   "status": "basic",
+   "status": "deep",
    "page": "world-morocco.html",
    "queue": 31
   },

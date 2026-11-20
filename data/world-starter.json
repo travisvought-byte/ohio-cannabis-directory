@@ -678,22 +678,6 @@
     }
    ]
   },
-  "CR": {
-   "name": "Costa Rica",
-   "page": "world-costa-rica.html",
-   "fcdo_title": "Costa Rica",
-   "source_id": "fcdo-costa-rica",
-   "updated": "2026-05-19",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "Do not get involved with drugs of any kind. The Costa Rican authorities treat the possession of drugs and drug trafficking severely. The minimum sentence is 8 years imprisonment."
-     ]
-    }
-   ]
-  },
   "CI": {
    "name": "Côte d'Ivoire",
    "page": "world-cote-d-ivoire.html",
@@ -1508,29 +1492,6 @@
     }
    ]
   },
-  "LB": {
-   "name": "Lebanon",
-   "page": "world-lebanon.html",
-   "fcdo_title": "Lebanon",
-   "source_id": "fcdo-lebanon",
-   "updated": "2026-08-10",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Drug smuggling and violent crime",
-     "paragraphs": [
-      "Criminal gangs involved in drug cultivation and smuggling operate in parts of the Beqaa Valley, especially northern Beqaa. Other armed crimes, such as robbery and kidnap, can occur in these areas. There are also frequent armed clashes between gangs and the security forces."
-     ]
-    },
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "Possessing, using and trafficking illegal drugs (including small quantities) are all serious offences, punishable with prison sentences."
-     ]
-    }
-   ]
-  },
   "LS": {
    "name": "Lesotho",
    "page": "world-lesotho.html",
@@ -1851,23 +1812,6 @@
      "heading": "Illegal drugs and prison sentences",
      "paragraphs": [
       "The penalties for possession, use or trafficking of illegal drugs are severe. If convicted, offenders can expect prison sentences and heavy fines."
-     ]
-    }
-   ]
-  },
-  "MA": {
-   "name": "Morocco",
-   "page": "world-morocco.html",
-   "fcdo_title": "Morocco",
-   "source_id": "fcdo-morocco",
-   "updated": "2026-08-19",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs",
-     "paragraphs": [
-      "Morocco has a zero-tolerance approach towards drugs. Possessing, using or trafficking illegal drugs, including cannabis, are serious offences and carry severe penalties.",
-      "You should expect a long jail sentence and heavy fines for these actions, including when transiting through the country. Airports in Morocco are equipped with technology and security for detecting items prohibited by customs controls, including for the baggage or transiting passengers. Do not accept items from strangers or leave your bags attended."
      ]
     }
    ]
@@ -3347,14 +3291,6 @@
    "retrieved_on": "2026-11-20"
   },
   {
-   "id": "fcdo-costa-rica",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Costa Rica travel advice (last updated by the FCDO 2026-05-19)",
-   "url": "https://www.gov.uk/foreign-travel-advice/costa-rica",
-   "retrieved_on": "2026-11-20"
-  },
-  {
    "id": "fcdo-cote-d-ivoire",
    "kind": "government",
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
@@ -3723,14 +3659,6 @@
    "retrieved_on": "2026-11-20"
   },
   {
-   "id": "fcdo-lebanon",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Lebanon travel advice (last updated by the FCDO 2026-08-10)",
-   "url": "https://www.gov.uk/foreign-travel-advice/lebanon",
-   "retrieved_on": "2026-11-20"
-  },
-  {
    "id": "fcdo-lesotho",
    "kind": "government",
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
@@ -3864,14 +3792,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Montserrat travel advice (last updated by the FCDO 2026-07-03)",
    "url": "https://www.gov.uk/foreign-travel-advice/montserrat",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-morocco",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Morocco travel advice (last updated by the FCDO 2026-08-19)",
-   "url": "https://www.gov.uk/foreign-travel-advice/morocco",
    "retrieved_on": "2026-11-20"
   },
   {

@@ -122,8 +122,11 @@ def build():
                             'title': f'{c["title"]} travel advice (last updated by the FCDO {c["updated"]})', 'url': c['url'], 'retrieved_on': SNAPSHOT_DATE})
     pages = [s['page'] for s in starter.values()]
     assert len(pages) == len(set(pages)), 'two starter pages would share a file name'
+    world = json.loads(WORLD.read_text(encoding='utf-8'))['countries']
     for r in roster['countries']:
-        if r['iso'] in starter:
+        if r['iso'] in world:
+            r['status'], r['page'] = 'deep', world[r['iso']]['page']
+        elif r['iso'] in starter:
             r['status'], r['page'] = 'basic', starter[r['iso']]['page']
         elif r['status'] == 'basic':
             r['status'], r['page'] = ('queued' if r.get('queue') else 'not-started'), None

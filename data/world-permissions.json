@@ -3434,6 +3434,168 @@
      "Medical home growing passed Congress in 2020 but was vetoed by the President."
     ]
    }
+  },
+  "CR": {
+   "name": "Costa Rica",
+   "page": "world-costa-rica.html",
+   "summary": "Using drugs for yourself is not a crime in Costa Rica, but there is no legal market, and possession that looks like dealing carries at least 8 years. A 2022 law allows psychoactive cannabis only for medical and therapeutic use, and hemp for food and industry.",
+   "note": "Spanish sources are summarized in English. The law sets no fixed personal-use amount.",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "Using is not a crime; there is no legal market",
+     "detail": "Costa Rica does not penalise personal drug use, unlike its Central American neighbours. Selling, growing, making and transporting drugs remain crimes: article 58 of Law 8204 punishes them together with 8 to 15 years in prison.",
+     "citation": "Ley 8204, art. 58, as summarized by TNI",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "cr-tni"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "A 2022 law allows medical and therapeutic use",
+     "detail": "Law 10113, signed on March 2, 2022, regulates psychoactive cannabis exclusively for medical and therapeutic purposes, and hemp for food and industrial use, through licences. This guide has not yet confirmed which medical products patients can buy today.",
+     "citation": "Ley N.º 10113 (2022); La Nación (Mar 2022)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "cr-ley10113",
+      "cr-nacion"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "No fixed amount; proven personal use is not punished",
+     "detail": "The law sets no limit for personal use. Whether an amount was for personal use or for sale is decided case by case from the evidence; if the defence proves it was for personal consumption, it is not a crime. A 2024 article in the judiciary's law review, by a prosecutor, argues police may still seize drugs held for personal use. The UK government warns that authorities treat drug possession severely, with a minimum sentence of 8 years.",
+     "citation": "CRHoy (former criminal judge Esteban Córdoba); Revista Judicial No. 137 (2024); UK FCDO travel advice",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "cr-crhoy",
+      "cr-pj-2024",
+      "cr-fcdo"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Growing is not authorised",
+     "detail": "The General Health Law prohibits sowing and growing drugs, and Law 8204 punishes cultivation together with trafficking. A bill to regulate home growing for personal use was under review in 2025, when the Attorney General's office issued an opinion on it; it is a proposal, not law.",
+     "citation": "Ley General de Salud and Ley 8204 (TNI); Procuraduría General de la República opinion (Apr 28, 2025)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "cr-tni",
+      "cr-pgr-2025"
+     ]
+    }
+   }
+  },
+  "MA": {
+   "name": "Morocco",
+   "page": "world-morocco.html",
+   "summary": "Morocco legalised growing and processing cannabis for medical, pharmaceutical and industrial use in 2021, under a national licensing agency. Recreational use, possession and unlicensed growing are still crimes, with severe penalties.",
+   "note": "French and Arabic legal texts are summarized in English.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No. Only medical and industrial uses are legal",
+     "detail": "Law 13-21 of 2021 legalised cannabis for medical, pharmaceutical and industrial purposes and kept recreational use prohibited. The UK government says possessing, using or trafficking illegal drugs, including cannabis, are serious offences with long jail sentences and heavy fines, including for people transiting.",
+     "citation": "Law No. 13-21 (2021); UK FCDO travel advice",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "ma-law1321",
+      "ma-cms",
+      "ma-gi-2025",
+      "ma-fcdo"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Licensed medical and pharmaceutical production",
+     "detail": "The national agency ANRAC, created in 2022, licenses cultivation, processing, sale, export and import for lawful uses. Varieties above 1% THC may be authorised only for the medical and pharmaceutical industry. Morocco World News reported 67 approved cannabis-based products in September 2025. This guide has not yet confirmed how patients obtain them.",
+     "citation": "Law No. 13-21; CMS; Global Initiative (2025); Morocco World News (Sep 2025)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "ma-law1321",
+      "ma-cms",
+      "ma-gi-2025",
+      "ma-mwn-2025"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Any amount outside the licensed system",
+     "detail": "Outside the licensed circuit, cannabis stays under the 1954 dahir prohibiting kif and the 1974 dahir on drug offences, which Law 13-21 left in force. The UK government advises that Morocco has a zero-tolerance approach and that possession can bring a long jail sentence and heavy fines.",
+     "citation": "Dahirs of 1954 and 1974 (cited in Law 13-21); UK FCDO travel advice",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "ma-law1321",
+      "ma-fcdo"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Only licensed growers in authorised provinces",
+     "detail": "Cultivation is legal only with an ANRAC authorisation, for growers organised in cooperatives in the provinces the law covers, under rules set by Decree 2.24.130. ANRAC reported 5,765 operational authorisations in 2026, 5,492 of them for cultivation. Growing for yourself is not allowed.",
+     "citation": "Law No. 13-21; Decree 2.24.130; Morocco World News (Jul 2026)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "ma-law1321",
+      "ma-nap",
+      "ma-mwn-2026"
+     ]
+    }
+   }
+  },
+  "LB": {
+   "name": "Lebanon",
+   "page": "world-lebanon.html",
+   "summary": "Lebanon passed a law in 2020 to license cannabis growing for medical and industrial use, but it has been slow to start. Using and possessing cannabis remain crimes under the 1998 drug law, which lets a court send a user to treatment instead of prison.",
+   "note": "Arabic legal texts are summarized in English.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No. Use and possession are crimes",
+     "detail": "Recreational use remains illegal. Law 673 of 1998 criminalises drug use and personal possession, and Law 178 of 2020 kept those penalties and added more.",
+     "citation": "Law 673/1998; Law 178/2020 (CMS; HRI; IDPC/Skoun)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "lb-cms",
+      "lb-idpc-2023"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Legal to grow for medicine on paper; slow to start",
+     "detail": "Law 178/2020 allows licensed cultivation for medical and industrial use, overseen by a regulatory authority. Progress has been slow because members of that authority were not appointed; L'Orient Today reported two of its seven members chosen. Skoun notes the law gives patients no express right to use medical cannabis.",
+     "citation": "Law 178/2020; L'Orient Today; IDPC/Skoun (2023)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "lb-law178",
+      "lb-olj",
+      "lb-idpc-2023"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Prison of 3 months to 3 years, or treatment",
+     "detail": "A person arrested for use can ask for treatment instead of prosecution, and prosecution is suspended while they stay in a treatment programme. If the judge refuses, article 127 provides 3 months to 3 years in prison. The UK government warns that possessing even small quantities is punishable with prison.",
+     "citation": "Law 673/1998, arts. 127, 183 and 193 (Annahar; IDPC 2011); UK FCDO travel advice",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "lb-annahar",
+      "lb-idpc-2011",
+      "lb-fcdo"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Only with a licence from the regulatory authority",
+     "detail": "Cultivation is lawful only with the authority's decision and licence, for set amounts within a controlled area.",
+     "citation": "Law 178/2020 (CMS)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "lb-cms"
+     ]
+    }
+   }
   }
  },
  "canada_provinces": [
@@ -3756,7 +3918,8 @@
     "CL",
     "PE",
     "EC",
-    "PY"
+    "PY",
+    "CR"
    ]
   },
   {
@@ -3770,7 +3933,9 @@
     "IE",
     "FR",
     "AT",
-    "DK"
+    "DK",
+    "MA",
+    "LB"
    ]
   }
  ],
@@ -6348,6 +6513,174 @@
    "title": "Senado se ratifica en uso medicinal de la marihuana (Nov 5 2020)",
    "url": "https://www.lanacion.com.py/politica/2020/11/05/senado-se-ratifica-en-uso-medicinal-de-la-marihuana/",
    "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cr-ley10113",
+   "kind": "statute",
+   "publisher": "Asamblea Legislativa de Costa Rica (via FAOLEX)",
+   "title": "Ley N.º 10113, Ley del cannabis para uso medicinal y terapéutico y del cáñamo para uso alimentario e industrial",
+   "url": "https://faolex.fao.org/docs/pdf/cos218497.pdf",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "cr-nacion",
+   "kind": "news",
+   "publisher": "La Nación (Costa Rica)",
+   "title": "Cannabis medicinal en Costa Rica: así quedó la ley (Mar 2022)",
+   "url": "https://www.nacion.com/blogs/el-explicador/cannabis-medicinal-en-costa-rica-asi-quedo-la-ley/TYRNBTPTIRHR5NCE6IL36EQ4RE/story/",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "cr-tni",
+   "kind": "organization",
+   "publisher": "Transnational Institute (TNI)",
+   "title": "Reforma de la ley de drogas en Costa Rica: guía básica",
+   "url": "https://www.tni.org/es/publicaci%C3%B3n/reforma-de-la-ley-de-drogas-en-costa-rica-guia-basica?translation=es",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "cr-crhoy",
+   "kind": "news",
+   "publisher": "CRHoy",
+   "title": "¿Cuál es la máxima cantidad de droga que una persona puede transportar para autoconsumo?",
+   "url": "https://crhoy.com/nacionales/cual-es-la-maxima-cantidad-de-droga-que-una-persona-puede-transportar-para-autoconsumo/",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "cr-pj-2024",
+   "kind": "research",
+   "publisher": "Revista Judicial, Poder Judicial de Costa Rica, No. 137 (June 2024)",
+   "title": "El decomiso de drogas de uso no autorizado que son poseídas para el consumo personal",
+   "url": "https://pjenlinea3.poder-judicial.go.cr/biblioteca/uploads/Archivos/Articulo/EL%20DECOMISO%20DE%20DROGAS%20MONTOYA.pdf",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "cr-pgr-2025",
+   "kind": "government",
+   "publisher": "Procuraduría General de la República (Costa Rica)",
+   "title": "Opinion of April 28, 2025 on the bill to regulate home cultivation of cannabis",
+   "url": "https://www.pgrweb.go.cr/DOCS/DICTAMENES/1/P/J/2020-2029/2025-2029/2025/1755F9.HTML",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "ma-law1321",
+   "kind": "statute",
+   "publisher": "Ministry of Justice, Morocco (adala.justice.gov.ma)",
+   "title": "Dahir promulgating Law No. 13-21 on the lawful uses of cannabis (French text)",
+   "url": "https://adala.justice.gov.ma/api/uploads/2024/03/25/usages%20licites%20du%20cannabis-1711358998943.pdf",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "ma-cms",
+   "kind": "organization",
+   "publisher": "CMS (law firm)",
+   "title": "CMS Expert Guide to a legal roadmap to cannabis: Morocco",
+   "url": "https://cms.law/en/int/expert-guides/cms-expert-guide-to-a-legal-roadmap-to-cannabis/morocco",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "ma-gi-2025",
+   "kind": "research",
+   "publisher": "Global Initiative Against Transnational Organized Crime",
+   "title": "Morocco's cannabis policy and the informal economy (Apr 29, 2025)",
+   "url": "https://globalinitiative.net/analysis/moroccos-cannabis-policy-informal-economy-ocindex/",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "ma-mwn-2026",
+   "kind": "news",
+   "publisher": "Morocco World News",
+   "title": "Moroccan researcher: cannabis legalization will be judged in the Rif, not in Rabat (Jul 2026)",
+   "url": "https://www.moroccoworldnews.com/2026/07/329556/moroccan-researcher-cannabis-legalization-will-be-judged-in-the-rif-not-in-rabat/",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "ma-mwn-2025",
+   "kind": "news",
+   "publisher": "Morocco World News",
+   "title": "Morocco approves 67 cannabis-based products (Sep 2025)",
+   "url": "https://www.moroccoworldnews.com/2025/09/258293/morocco-approves-67-cannabis-based-products/",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "ma-nap",
+   "kind": "news",
+   "publisher": "North Africa Post",
+   "title": "Morocco sets rules for regulated medical cannabis cultivation (Decree 2.24.130)",
+   "url": "https://northafricapost.com/?p=87362",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "lb-law178",
+   "kind": "statute",
+   "publisher": "Lexis Middle East",
+   "title": "Lebanon Law No. 178/2020 permitting the cultivation of cannabis plants for medical and industrial use",
+   "url": "https://www.lexismiddleeast.com/law/Lebanon/Law_178_2020/en",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "lb-cms",
+   "kind": "organization",
+   "publisher": "CMS (law firm)",
+   "title": "Cannabis law and legislation in Lebanon",
+   "url": "https://cms.law/en/int/expert-guides/cms-expert-guide-to-a-legal-roadmap-to-cannabis/lebanon",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "lb-idpc-2023",
+   "kind": "organization",
+   "publisher": "IDPC (paper by Skoun)",
+   "title": "The legalization of the cultivation of cannabis in Lebanon: moralistic views vs the right to health (May 2023)",
+   "url": "https://idpc.net/publications/2023/5/the-legalization-of-the-cultivation-of-cannabis-in-lebanon-moralistic-views-vs-the-right-to",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "lb-annahar",
+   "kind": "news",
+   "publisher": "Annahar",
+   "title": "How can the Lebanese authorities help drug addicts?",
+   "url": "https://www.annahar.com/english/article/1114990-how-can-the-lebanese-authorities-help-drug-addicts-amp",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "lb-idpc-2011",
+   "kind": "organization",
+   "publisher": "IDPC",
+   "title": "Lebanese drug law: between text and implementation (Jul 2011)",
+   "url": "https://idpc.net/publications/2011/07/lebanese-drug-law-between-text-and-implementation",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "lb-olj",
+   "kind": "news",
+   "publisher": "L'Orient Today",
+   "title": "Salam plans modern economic boost with medical cannabis industry",
+   "url": "https://today.lorientlejour.com/article/1469509/salam-plans-modern-economic-boost-with-medical-cannabis-industry.html",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "lb-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
+   "title": "Lebanon travel advice: safety and security",
+   "url": "https://www.gov.uk/foreign-travel-advice/lebanon/safety-and-security",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "ma-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
+   "title": "Morocco travel advice: safety and security",
+   "url": "https://www.gov.uk/foreign-travel-advice/morocco/safety-and-security",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "cr-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
+   "title": "Costa Rica travel advice: safety and security",
+   "url": "https://www.gov.uk/foreign-travel-advice/costa-rica/safety-and-security",
+   "retrieved_on": "2026-11-20"
   }
  ]
 }
