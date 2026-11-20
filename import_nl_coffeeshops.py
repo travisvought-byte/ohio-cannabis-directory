@@ -1,0 +1,104 @@
+"""Build data/world-coffeeshops-nl.json from two dated source snapshots.
+
+1. data/sources/amsterdam-horeca-coffeeshops-2026-11-20.csv
+   Every record in the City of Amsterdam's open horeca operating-permit register
+   (api.data.amsterdam.nl/v1/horeca/v1/exploitatievergunning) whose specification is
+   "Coffeeshop", as downloaded on November 20, 2026. Names and addresses are shown as the
+   city registers them; nothing is added. Permit status "Verleend" means granted; a blank
+   status is shown as "status not stated in the register".
+2. data/sources/wodc-coffeeshops-per-municipality-2024.csv
+   The 2024 column of Appendix 1 of "Coffeeshops in Nederland 2024" (Breuer&Intraval for the
+   WODC, Ministry of Justice and Security): tolerated coffeeshops per municipality on
+   December 31, 2024.
+
+The ten experiment towns come from the Government of the Netherlands' list of participating
+municipalities. Map points are the register's Dutch RD coordinates (EPSG:28992) converted to
+latitude/longitude with the standard RD-to-WGS84 approximation (accurate to about a metre).
+
+Run: python import_nl_coffeeshops.py   (then python build_national.py)
+"""
+import csv
+import json
+import re
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+AMS = ROOT / 'data/sources/amsterdam-horeca-coffeeshops-2026-11-20.csv'
+WODC = ROOT / 'data/sources/wodc-coffeeshops-per-municipality-2024.csv'
+OUT = ROOT / 'data/world-coffeeshops-nl.json'
+
+EXPERIMENT_TOWNS = ['Arnhem', 'Almere', 'Breda', 'Groningen', 'Heerlen', 'Voorne aan Zee', 'Maastricht', 'Nijmegen', 'Tilburg', 'Zaanstad']
+
+SOURCES = [
+    {'id': 'nlcs-ams-register', 'kind': 'government', 'publisher': 'City of Amsterdam (Gemeente Amsterdam)',
+     'title': 'Horeca operating permits (exploitatievergunningen), open data register',
+     'url': 'https://api.data.amsterdam.nl/v1/docs/datasets/horeca@v1.html', 'retrieved_on': '2026-11-20'},
+    {'id': 'nlcs-wodc-2024', 'kind': 'government', 'publisher': 'WODC, Ministry of Justice and Security (research by Breuer&Intraval)',
+     'title': 'Coffeeshops in Nederland 2024: aantallen coffeeshops en gemeentelijk beleid 1999-2024',
+     'url': 'https://zoek.officielebekendmakingen.nl/dossier/blg-1218538.pdf', 'retrieved_on': '2026-11-20'},
+    {'id': 'nlcs-exp-towns', 'kind': 'government', 'publisher': 'Government of the Netherlands (Rijksoverheid)',
+     'title': 'Deelnemende gemeenten, experiment gesloten coffeeshopketen',
+     'url': 'https://www.rijksoverheid.nl/themas/familie-zorg-en-gezondheid/experiment-gesloten-coffeeshopketen-wietexperiment/deelnemende-gemeenten',
+     'retrieved_on': '2026-11-20'},
+]
+
+
+def rd_to_wgs84(x, y):
+    """Dutch RD New (EPSG:28992) to WGS84, after Schreutelkamp and Strang van Hees."""
+    dx, dy = (x - 155000) * 1e-5, (y - 463000) * 1e-5
+    kp = [(0, 1, 3235.65389), (2, 0, -32.58297), (0, 2, -0.2475), (2, 1, -0.84978), (0, 3, -0.0655),
+          (2, 2, -0.01709), (1, 0, -0.00738), (4, 0, 0.0053), (2, 3, -0.00039), (4, 1, 0.00033), (1, 1, -0.00012)]
+    lp = [(1, 0, 5260.52916), (1, 1, 105.94684), (1, 2, 2.45656), (3, 0, -0.81885), (1, 3, 0.05594),
+          (3, 1, -0.05607), (0, 1, 0.01199), (3, 2, -0.00256), (1, 4, 0.00128), (0, 2, 0.00022), (2, 0, -0.00022), (5, 0, 0.00026)]
+    lat = 52.15517440 + sum(c * dx ** p * dy ** q for p, q, c in kp) / 3600
+    lon = 5.38720621 + sum(c * dx ** p * dy ** q for p, q, c in lp) / 3600
+    return round(lat, 5), round(lon, 5)
+
+
+def amsterdam():
+    shops = []
+    with AMS.open(encoding='utf-8') as f:
+        for r in csv.DictReader(f):
+            m = re.search(r'POINT \(([\d.]+) ([\d.]+)\)', r['locatie'])
+            lat, lon = rd_to_wgs84(float(m.group(1)), float(m.group(2))) if m else (None, None)
+            address = re.sub(r'\s+Amsterdam$', '', r['adres'].strip())
+            shops.append({'register_id': r['id'], 'name': r['zaaknaam'].strip(), 'address': address,
+                          'postcode': r['postcode'].strip(), 'permit': 'granted' if r['statusVergunning'] == 'Verleend' else 'not-stated',
+                          'permit_until': r['einddatum'] or None, 'lat': lat, 'lon': lon})
+    shops.sort(key=lambda s: (s['postcode'] or '9999', s['address'], s['name']))
+    return shops
+
+
+def towns():
+    with WODC.open(encoding='utf-8') as f:
+        rows = [{'name': r['gemeente'], 'count_2024': int(r['coffeeshops_2024'])} for r in csv.DictReader(f)]
+    names = {r['name'] for r in rows}
+    missing = [t for t in EXPERIMENT_TOWNS if t not in names]
+    assert not missing, f'experiment towns missing from WODC table: {missing}'
+    for r in rows:
+        r['experiment'] = r['name'] in EXPERIMENT_TOWNS
+    return rows
+
+
+def main():
+    t = towns()
+    data = {
+        'schema_version': 1,
+        'country': 'NL',
+        'purpose': 'Where Dutch coffeeshops are: the City of Amsterdam permit register shop by shop, and the official count for every town. Generated by import_nl_coffeeshops.py; do not hand-edit.',
+        'national': {'coffeeshops': sum(r['count_2024'] for r in t), 'towns_with_coffeeshops': sum(1 for r in t if r['count_2024']),
+                     'towns_with_policy': len(t), 'municipalities': 342, 'as_of': '2024-12-31', 'source_ids': ['nlcs-wodc-2024']},
+        'towns': t,
+        'towns_source_ids': ['nlcs-wodc-2024'],
+        'experiment_source_ids': ['nlcs-exp-towns'],
+        'amsterdam': {'retrieved_on': '2026-11-20', 'source_ids': ['nlcs-ams-register'], 'shops': amsterdam()},
+        'sources': SOURCES,
+    }
+    OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+    a = data['amsterdam']['shops']
+    print(f"{len(a)} Amsterdam records ({sum(s['permit'] == 'granted' for s in a)} granted); "
+          f"{data['national']['coffeeshops']} coffeeshops in {len(t)} towns")
+
+
+if __name__ == '__main__':
+    main()

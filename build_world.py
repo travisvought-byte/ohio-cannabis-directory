@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parent
 DATA = ROOT / 'data/world-permissions.json'
 HERITAGE = ROOT / 'data/world-heritage.json'
 ROSTER = ROOT / 'data/world-roster.json'
+NL_SHOPS = ROOT / 'data/world-coffeeshops-nl.json'
 
 CSS = ('<style>.wcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:12px;margin:14px 0}'
        '.wcard{display:block;background:var(--card);border:1px solid var(--line);border-top:5px solid var(--green2);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--ink)}'
@@ -55,6 +56,83 @@ def province_table(world, cites):
             f'<tbody>{"".join(rows)}</tbody></table></div>')
 
 
+def load_nl_shops():
+    return json.loads(NL_SHOPS.read_text(encoding='utf-8'))
+
+
+NL_CSS = ('<style>.bars{list-style:none;padding:0;margin:12px 0}.bars li{display:grid;grid-template-columns:9.5em 1fr 3em;gap:8px;align-items:center;margin:4px 0;font-size:.95rem}'
+          '.bars .bar{height:16px;border-radius:4px;background:var(--green2)}.bars .bar.exp{background:var(--gold)}.bars .n{font-weight:800;text-align:right}'
+          '.stat{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 16px;margin:4px 8px 4px 0}.stat b{display:block;font-size:1.6rem;color:var(--green)}'
+          '.filter{width:100%;max-width:420px;padding:8px 10px;font-size:1rem;border:1px solid var(--line);border-radius:8px;margin:6px 0 10px}'
+          '.tag{display:inline-block;font-size:.8rem;font-weight:700;border-radius:999px;padding:0 8px;background:var(--note)}'
+          'td.num{text-align:right}</style>')
+
+
+def coffeeshop_section(cs, cites):
+    """Netherlands only: the official count for every town and Amsterdam's permit register shop by shop."""
+    nat_count = cs['national']
+    towns = cs['towns']
+    shops = cs['amsterdam']['shops']
+    granted = [s for s in shops if s['permit'] == 'granted']
+    other = [s for s in shops if s['permit'] != 'granted']
+    ams = next(t['count_2024'] for t in towns if t['name'] == 'Amsterdam')
+    exp_n = sum(t['count_2024'] for t in towns if t['experiment'])
+    out = [NL_CSS, '<h2 id="coffeeshops">Coffeeshops: where they are</h2>',
+           f'<p>At the end of 2024 the Netherlands had <strong>{nat_count["coffeeshops"]} tolerated coffeeshops</strong> in {nat_count["towns_with_policy"]} of its '
+           f'{nat_count["municipalities"]} municipalities. Most towns allow none. Amsterdam alone had {ams}, about {round(ams * 10 / nat_count["coffeeshops"])} in every 10. '
+           f'{cites.mark(nat_count["source_ids"])}</p>',
+           f'<p><span class="stat"><b>{nat_count["coffeeshops"]}</b>coffeeshops</span><span class="stat"><b>{nat_count["towns_with_policy"]}</b>towns that allow them</span>'
+           f'<span class="stat"><b>{len(shops)}</b>Amsterdam shops listed below</span></p>',
+           '<div class="pills"><a class="pill" href="#amsterdam-shops">Amsterdam, shop by shop</a><a class="pill" href="#every-town">Every town and its count</a>'
+           '<a class="pill" href="#experiment-towns">Towns selling state-grown cannabis</a></div>']
+    top = sorted(towns, key=lambda t: (-t['count_2024'], t['name']))[:15]
+    peak = top[0]['count_2024']
+    bars = ''.join(f'<li><span>{nat.esc(t["name"])}</span><span class="bar{" exp" if t["experiment"] else ""}" style="width:{max(2, round(100 * t["count_2024"] / peak))}%"></span>'
+                   f'<span class="n">{t["count_2024"]}</span></li>' for t in top)
+    out.append(f'<h3>The 15 towns with the most coffeeshops</h3><ul class="bars" aria-label="Coffeeshops per town, end of 2024">{bars}</ul>'
+               f'<p class="muted">Gold bars are towns in the legal-supply experiment. Counts on December 31, 2024. {cites.mark(cs["towns_source_ids"])}</p>')
+
+    def row(s):
+        until = nat.long_date(s['permit_until']) if s['permit_until'] else '<span class="muted">Not stated</span>'
+        where = (f'<a href="https://www.openstreetmap.org/?mlat={s["lat"]}&amp;mlon={s["lon"]}#map=18/{s["lat"]}/{s["lon"]}" target="_blank" rel="noopener">Map</a>'
+                 if s['lat'] is not None else '<span class="muted">No map point</span>')
+        return (f'<tr><th scope="row">{nat.esc(s["name"])}</th><td>{nat.esc(s["address"])}</td><td>{nat.esc(s["postcode"])}</td>'
+                f'<td>{until}</td><td>{where}</td></tr>')
+
+    head = '<thead><tr><th scope="col">Name in the city register</th><th scope="col">Address</th><th scope="col">Postcode</th><th scope="col">Permit runs to</th><th scope="col">Where</th></tr></thead>'
+    out.append(f'<h3 id="amsterdam-shops">Amsterdam coffeeshops, shop by shop</h3>'
+               f'<p>Every business the City of Amsterdam lists as a coffeeshop in its open operating-permit register: {len(granted)} with a granted permit, and '
+               f'{len(other)} more listed without a permit status. Names are as the city records them, which is sometimes the company name rather than the sign over the door. '
+               f'Sorted by postcode, so shops near each other sit together. '
+               f'{cites.mark(cs["amsterdam"]["source_ids"])}</p>'
+               f'<p class="muted">The register is the city\'s permit list, not a guide to opening hours, menus or whether a shop admits visitors. '
+               f'Its total differs from the national count above because the two are kept for different purposes and on different dates. Downloaded {nat.long_date(cs["amsterdam"]["retrieved_on"])}.</p>'
+               '<label for="cs-filter"><strong>Find a shop</strong> by name, street or postcode</label><br>'
+               '<input id="cs-filter" class="filter" type="search" placeholder="e.g. Bulldog, Haarlemmerstraat, 1012" autocomplete="off">'
+               f'<p class="muted" id="cs-count" aria-live="polite">{len(granted)} shops with a granted permit</p>'
+               f'<div class="scroll"><table id="cs-table">{head}<tbody>{"".join(row(s) for s in granted)}</tbody></table></div>'
+               f'<details class="az"><summary>Listed without a permit status ({len(other)})</summary><p class="muted">These records name the business as a coffeeshop but leave the permit status blank, and the register does not say why.</p>'
+               f'<div class="scroll"><table>{head}<tbody>{"".join(row(s) for s in other)}</tbody></table></div></details>'
+               '<script>(function(){var i=document.getElementById("cs-filter"),t=document.getElementById("cs-table"),c=document.getElementById("cs-count");if(!i||!t)return;'
+               'var rows=t.tBodies[0].rows;i.addEventListener("input",function(){var q=i.value.trim().toLowerCase(),n=0;for(var k=0;k<rows.length;k++){var hit=!q||rows[k].textContent.toLowerCase().indexOf(q)>-1;'
+               'rows[k].hidden=!hit;if(hit)n++}c.textContent=q?n+" of "+rows.length+" shops match":rows.length+" shops with a granted permit"})})();</script>')
+
+    exp = [t for t in towns if t['experiment']]
+    out.append(f'<h3 id="experiment-towns">Towns selling state-grown cannabis</h3>'
+               f'<p>In these {len(exp)} towns every coffeeshop takes part in the legal-supply experiment, so what is on the menu comes from government-designated growers. '
+               f'Together they had {exp_n} coffeeshops at the end of 2024. {cites.mark(cs["experiment_source_ids"] + ["nl-gov-exp"] + cs["towns_source_ids"])}</p>'
+               '<div class="pills">' + ''.join(f'<span class="pill">{nat.esc(t["name"])} ({t["count_2024"]})</span>' for t in sorted(exp, key=lambda t: t['name'])) + '</div>')
+
+    rows = ''.join(f'<tr><th scope="row">{nat.esc(t["name"])}</th><td class="num">{t["count_2024"]}</td>'
+                   f'<td>{"<span class=tag>Yes</span>" if t["experiment"] else ""}</td></tr>' for t in sorted(towns, key=lambda t: t['name']))
+    out.append(f'<h3 id="every-town">Every town that allows coffeeshops</h3>'
+               f'<p>The official count for each of the {len(towns)} towns, December 31, 2024. So far this page lists shops one by one only for Amsterdam, from the city\'s open data; '
+               f'for any other town, its own website or town hall is the place to check. {cites.mark(cs["towns_source_ids"])}</p>'
+               f'<details class="az" open><summary>All {len(towns)} towns, A to Z</summary><div class="scroll"><table><thead><tr><th scope="col">Town (municipality)</th>'
+               f'<th scope="col">Coffeeshops</th><th scope="col">Experiment</th></tr></thead><tbody>{rows}</tbody></table></div></details>')
+    return ''.join(out)
+
+
 def country_page(world, sources, code):
     c = world['countries'][code]
     cites = nat.Cites(sources)
@@ -66,6 +144,8 @@ def country_page(world, sources, code):
         d = c['differences']
         pts = ''.join(f'<li>{nat.esc(x)}</li>' for x in d['points'])
         body.append(f'<div class="story"><h2>{nat.esc(d["title"])}</h2><ul>{pts}</ul><p>{cites.mark(d["source_ids"])}</p></div>')
+    if code == 'NL':
+        body.append('<p class="lawnow"><a href="#coffeeshops">Jump to the coffeeshop list: every town, and Amsterdam shop by shop</a></p>')
     body.append('<p class="alert"><strong>Travelling?</strong> Never carry cannabis across an international border, even between two places where it is legal. '
                 '<a href="travel-warnings.html">See where it can land you in prison</a>.</p>')
     for q in world['questions']:
@@ -74,6 +154,8 @@ def country_page(world, sources, code):
             body.append(answer_card(world, q, a, cites))
     if code == 'CA':
         body.append(province_table(world, cites))
+    if code == 'NL':
+        body.append(coffeeshop_section(load_nl_shops(), cites))
     if c.get('experiment'):
         e = c['experiment']
         body.append(f'<h2 id="context">Good to know</h2><p>{nat.esc(e["text"])} {cites.mark(e["source_ids"])}</p>')
@@ -287,6 +369,7 @@ def pages(perm, base_sources):
     sources.update({s['id']: s for s in world['sources']})
     her = load_heritage()
     sources.update({s['id']: s for s in her['sources']})
+    sources.update({s['id']: s for s in load_nl_shops()['sources']})
     out = {'world.html': hub_page(world, sources), 'travel-warnings.html': warnings_page(world, perm, sources),
            'heritage.html': heritage_page(her, sources), 'learn.html': learn_page()}
     for code, c in world['countries'].items():

@@ -117,6 +117,22 @@ class WorldTest(unittest.TestCase):
         for name, text in PAGES.items():
             self.assertIn('href="world.html"', text, name)
 
+    def test_netherlands_coffeeshops_match_their_sources(self):
+        cs = json.loads((ROOT / 'data/world-coffeeshops-nl.json').read_text(encoding='utf-8'))
+        text = PAGES['world-netherlands.html']
+        self.assertEqual(cs['national']['coffeeshops'], sum(t['count_2024'] for t in cs['towns']))
+        self.assertEqual(cs['national']['coffeeshops'], 563, 'WODC 2024 national total')
+        self.assertEqual(len(cs['towns']), 103, 'WODC 2024: 103 coffeeshop municipalities')
+        self.assertEqual(sum(t['experiment'] for t in cs['towns']), 10)
+        for t in cs['towns']:
+            self.assertIn(f'<th scope="row">{build_national.esc(t["name"])}</th><td class="num">{t["count_2024"]}</td>', text)
+        for s in cs['amsterdam']['shops']:
+            self.assertTrue(s['name'] and s['address'], s['register_id'])
+            self.assertIn(f'<th scope="row">{build_national.esc(s["name"])}</th><td>{build_national.esc(s["address"])}</td>', text)
+        ids = {s['id'] for s in cs['sources']}
+        self.assertFalse(ids & SOURCE_IDS, 'coffeeshop source ids are separate from the world sources')
+        for sid in ids:
+            self.assertIn(build_national.esc(next(s['title'] for s in cs['sources'] if s['id'] == sid)), text)
 
 if __name__ == '__main__':
     unittest.main()
