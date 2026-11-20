@@ -2056,6 +2056,116 @@
      "There is no THC limit for drivers; the test is whether you could properly control the vehicle."
     ]
    }
+  },
+  "CO": {
+   "name": "Colombia",
+   "page": "world-colombia.html",
+   "summary": "Carrying a personal dose, 20 grams of marijuana, has not been a crime since a 1994 court ruling, and the law allows up to 20 plants. There is no legal adult market: two attempts to legalise one failed in the Senate in 2023. Medical cannabis is licensed, and dried flower became a medical product in October 2025.",
+   "note": "Spanish sources are summarized in English. Court rulings shape much of this law.",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "Personal use is not a crime, but not legal either",
+     "detail": "In ruling C-221 of May 5, 1994, the Constitutional Court struck down the penalties for carrying and using a personal dose, holding that they violated personal autonomy. A 2009 constitutional amendment then banned carrying and using drugs except on prescription, but without criminal penalties; it allows only educational, preventive or therapeutic measures, with the person's consent. Using in parks and some public areas can be restricted by local rules.",
+     "citation": "Dejusticia, May 2024 (organization); Constitutional Court ruling C-127 of 2023 (communiqué)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "co-dejusticia",
+      "co-c127"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Yes, licensed, now including dried flower",
+     "detail": "Medical cannabis is regulated under Law 1787 of 2016 and its decrees. Decree 1138 of October 27, 2025 lets dried flower be sold and dispensed as a finished product for medical purposes only. Products above a THC limit set by the Ministry of Health are controlled and sold through pharmacies, and only pharmacies certified by the medicines regulator, INVIMA, may make up cannabis preparations. A trade publication reported that patients would get flower treatments under prescription and sanitary control.",
+     "citation": "Decreto 1138 de 2025; ConsultorSalud, Oct 29 2025 (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "co-dec1138",
+      "co-consultorsalud"
+     ]
+    },
+    "buying": {
+     "status": "medical-only",
+     "short": "No adult shops. Medical products through pharmacies",
+     "detail": "No law allows selling cannabis to adults for recreational use. A constitutional reform to create a regulated market fell short in its eighth and final Senate vote on June 20, 2023, 47 to 43 when 54 votes were needed, and a second attempt was shelved by the Senate, 46 to 40, on December 12, 2023. Medical products are sold through pharmacies.",
+     "citation": "Blu Radio, Jun 20 2023; Noticias RCN, Dec 12 2023; Decreto 1138 de 2025",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "co-bluradio-2023",
+      "co-rcn-2023",
+      "co-dec1138"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "20 grams is the personal dose, but intent is what counts",
+     "detail": "The 1986 drug law sets the personal dose at 20 grams of marijuana and 5 grams of hashish. Those figures are no longer the line: the Supreme Court has held that buying a larger supply for several occasions is not a crime, and that whatever the amount, prosecutors must prove intent to sell or distribute. In 2023 the Constitutional Court ruled that carrying a personal or medical dose cannot be punished under the rules on public spaces. Police still issued 1,188,906 tickets for possession and use in public space between 2017 and 2022, Dejusticia reports, and 99.6% of marijuana seizures were under 20 grams.",
+     "citation": "Dejusticia, May 2024 (organization); Constitutional Court ruling C-127 of 2023 (communiqué)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "co-dejusticia",
+      "co-c127"
+     ]
+    },
+    "sharing": {
+     "status": "limited",
+     "short": "Sharing for free is not a crime; selling is",
+     "detail": "In 2023 the Supreme Court recognised a \"shared dose\": carrying drugs to share for free with people you trust is not a crime. Selling, or carrying with intent to sell, remains drug trafficking.",
+     "citation": "Dejusticia, May 2024 (organization)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "co-dejusticia"
+     ]
+    },
+    "home-grow": {
+     "status": "limited",
+     "short": "Up to 20 plants",
+     "detail": "Since the 1986 drug law, growing up to 20 plants from which a psychoactive substance can be extracted has not counted as a plantation. Decree 1138 of 2025 keeps home growing outside the medical licensing system, but home growers may not sell, give or deliver seeds, plants or cannabis products to anyone else.",
+     "citation": "Dejusticia, May 2024 (organization); Decreto 1138 de 2025",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "co-dejusticia",
+      "co-dec1138"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "Illegal; refusing a test means losing your licence",
+     "detail": "Law 1696 of 2013 makes driving under the effects of psychoactive substances an infraction punished with the fines in article 152 of the traffic code. That article grades penalties only by blood alcohol, so the text does not say which tier applies to cannabis alone. A driver who refuses the physical or clinical tests, or flees, has their licence cancelled, faces a fine of 1,440 daily minimum wages and has the vehicle impounded for 20 working days.",
+     "citation": "Ley 1696 de 2013, art. 131 lit. F and art. 152",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "co-ley1696"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "Cities set their own rules on where you may use cannabis outdoors. The 2023 court ruling let mayors restrict consumption in parks and set zones to protect children, but not ban carrying a personal or medical dose, and it ordered a national protocol. Dejusticia reviewed 42 local decrees and counted at least 18 that ban possession outright and at least 10 that restrict use around the clock across nearly all public space.",
+    "source_ids": [
+     "co-c127",
+     "co-dejusticia"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Colombia",
+    "source_ids": [
+     "co-dejusticia",
+     "co-c127",
+     "co-dec1138",
+     "co-bluradio-2023",
+     "co-rcn-2023"
+    ],
+    "points": [
+     "Judges, not lawmakers, decriminalised personal use, in a 1994 ruling grounded in personal autonomy.",
+     "The Constitution itself bans carrying and using drugs without a prescription, yet forbids criminal punishment for it.",
+     "The 20-gram personal dose is a guide, not a ceiling: what makes it a crime is proof of intent to sell.",
+     "Growing up to 20 plants has been allowed since 1986, decades before the medical program existed.",
+     "Legalising a market needs a constitutional amendment and eight votes in Congress. The 2023 attempt won a majority in the Senate but not the 54 votes required.",
+     "Since October 2025 dried flower can be sold for medical use, with small and medium growers given priority for the domestic market.",
+     "Where you may smoke outdoors depends on your city, and many local rules go further than the courts allow."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -2368,7 +2478,8 @@
     "MX",
     "TH",
     "ZA",
-    "JM"
+    "JM",
+    "CO"
    ]
   },
   {
@@ -4300,6 +4411,62 @@
    "publisher": "Jamaica Gleaner (column by Erika-Rae Harvey)",
    "title": "Cannabis licensing tips for the would-be applicant (Aug 16 2016)",
    "url": "https://past.jamaica-gleaner.com/article/business/20160817/erika-rae-harvey-cannabis-licensing-tips-would-be-applicant",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "co-dejusticia",
+   "kind": "organization",
+   "publisher": "Dejusticia (Centro de Estudios de Derecho, Justicia y Sociedad)",
+   "title": "30 años de la despenalización del uso y porte personal de drogas: avances y paradojas (May 2024)",
+   "url": "https://develop.dejusticia.org/wp-content/uploads/2024/05/DeJusticia-Infografia-30-anos-de-la-despenalizacion-del-uso-y-porte-personal-de-drogas-Avances-y-paradojas-May-2024-copia.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "co-c127",
+   "kind": "government",
+   "publisher": "Corte Constitucional de Colombia, communiqué (copy hosted by Ámbito Jurídico)",
+   "title": "Sentencia C-127 de 2023 (Apr 27 2023)",
+   "url": "https://www.ambitojuridico.com/sites/default/files/2023-05/Com-Sent-C-127-23.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "co-dec1138",
+   "kind": "statute",
+   "publisher": "Diario Oficial 53.286, via JEP legal compilation",
+   "title": "Decreto 1138 de 2025 (Oct 27 2025)",
+   "url": "https://jurinfo.jep.gov.co/Normograma/Compilacion/docs/decreto_1138_2025.htm",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "co-consultorsalud",
+   "kind": "news",
+   "publisher": "ConsultorSalud",
+   "title": "Gobierno habilita la flor de cannabis como producto medicinal en Colombia (Oct 29 2025)",
+   "url": "https://consultorsalud.com/gobierno-habilita-cannabis-producto-medicinal/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "co-ley1696",
+   "kind": "statute",
+   "publisher": "RUNT (Colombian national transit registry)",
+   "title": "Ley 1696 de 2013 (drunk and drugged driving)",
+   "url": "https://www.runt.gov.co/sites/default/files/normas/Ley%201696%20de%202013%20Disposiciones%20penales%20y%20administrativas%20para%20sancionar%20conducci%C3%B3n%20bajo%20alcohol%20o%20psicoactivas.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "co-bluradio-2023",
+   "kind": "news",
+   "publisher": "Blu Radio",
+   "title": "Regulación de cannabis de uso adulto en el país se hundió en el Senado (Jun 20 2023)",
+   "url": "https://www.bluradio.com/politica/regulacion-de-cannabis-de-uso-adulto-en-el-pais-se-hundio-en-el-senado-rs15",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "co-rcn-2023",
+   "kind": "news",
+   "publisher": "Noticias RCN",
+   "title": "Se hunde en Senado el proyecto que buscaba legalizar el consumo de cannabis en adultos (Dec 12 2023)",
+   "url": "https://www.noticiasrcn.com/colombia/se-hunde-proyecto-para-regular-cannabis-de-uso-adulto-460623",
    "retrieved_on": "2026-11-19"
   }
  ]

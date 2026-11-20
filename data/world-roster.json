@@ -389,8 +389,8 @@
 "iso": "CO",
 "name": "Colombia",
 "display": "Colombia",
-"status": "queued",
-"page": null,
+"status": "deep",
+"page": "world-colombia.html",
 "queue": 16
 },
 {
