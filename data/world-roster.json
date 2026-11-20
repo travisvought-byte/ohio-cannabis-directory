@@ -117,8 +117,8 @@
 "iso": "AT",
 "name": "Austria",
 "display": "Austria",
-"status": "queued",
-"page": null,
+"status": "deep",
+"page": "world-austria.html",
 "queue": 22
 },
 {
