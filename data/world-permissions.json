@@ -2467,6 +2467,104 @@
      "A positive saliva test means losing your licence on the spot for at least 15 days, even before any court hearing."
     ]
    }
+  },
+  "FR": {
+   "name": "France",
+   "page": "world-france.html",
+   "summary": "Illegal, with no distinction between cannabis and other drugs. Police can settle simple use of cannabis by an adult with a €200 on-the-spot criminal fine. A medical cannabis experiment closed to new patients at the end of 2024 while the government prepares to make it permanent.",
+   "note": "French sources are summarized in English.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No. Use is a crime",
+     "detail": "Illicit use of any drug classified as a narcotic is punishable by one year in prison and a €3,750 fine under article L.3421-1 of the Public Health Code. The law makes no distinction between cannabis and other drugs.",
+     "citation": "Drogues Info Service, L'usage de stupéfiants (May 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "fr-dis-usage"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "An experiment, closed to new patients",
+     "detail": "An experiment run by the medicines agency ANSM let trained doctors prescribe medical cannabis in a few indications, mostly refractory nerve pain, along with epilepsy, multiple sclerosis spasticity, cancer symptoms and palliative care. New patients could no longer join after the end of 2024. Patients still treated on December 31, 2024 keep receiving treatment beyond March 31, 2026 by ministerial decision, and ANSM counted roughly 700 of them in early 2026. The 2024 social security financing law provides for making medical cannabis permanent; the decrees to do so were still awaited in spring 2026.",
+     "citation": "ANSM committee minutes, Jan 14 2026; Le Quotidien du Pharmacien, Apr 9 2026 (news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "fr-ansm-2026",
+      "fr-quotidien-2026"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sale",
+     "detail": "Buying, possessing, transporting and offering drugs are trafficking offences punishable by up to 10 years in prison and a €7.5 million fine. Selling or giving to someone for their personal use carries up to 5 years and €75,000.",
+     "citation": "Drogues Info Service, Le trafic de stupéfiants (May 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "fr-dis-trafic"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Small amounts: a €200 criminal fine",
+     "detail": "Since 2019 police can settle simple use by an adult with an on-the-spot criminal fine (amende forfaitaire délictuelle) of €200, cut to €150 if paid within 15 days and raised to €450 after 45 days. It is limited by ministry instructions to cannabis, cocaine and ecstasy, and excludes people already known to police for drug offences. Paying ends the case but counts as an admission and goes on the criminal record. A 2026 bill on public order would raise the fine to €500; an amendment filed in June 2026 sought to strike that increase, and we could not confirm the outcome.",
+     "citation": "Drogues Info Service, L'usage de stupéfiants (May 2026); Assemblée nationale amendment CL305",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "fr-dis-usage",
+      "fr-an-amendment"
+     ]
+    },
+    "sharing": {
+     "status": "not-permitted",
+     "short": "No. Sharing is treated as trafficking",
+     "detail": "Sharing with friends, or buying for a group, is in legal terms a transfer and acquisition of drugs, Drogues Info Service warns, even when people see it as doing someone a favour.",
+     "citation": "Drogues Info Service, Le trafic de stupéfiants (May 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "fr-dis-trafic"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "No. Growing counts as production",
+     "detail": "Illicit production of drugs is a crime under article 222-35 of the Penal Code, punishable by 20 years and a €7.5 million fine. A 2013 Senate note observed that the law makes no separate provision for growing for personal use.",
+     "citation": "Drogues Info Service, Le trafic de stupéfiants; Sénat note LC 238 (2013)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "fr-dis-trafic",
+      "fr-senat-2013"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "Any detected use: up to 3 years and €9,000",
+     "detail": "Driving after using drugs is an offence under article L235-1 of the Highway Code once a saliva or blood analysis confirms use; there is no THC threshold. Since July 11, 2025 the maximum is 3 years in prison and a €9,000 fine, and the driver automatically loses half the licence points, 6 out of 12. Police can hold the licence for 72 hours, the prefect can suspend it for up to a year, and a court can suspend it for up to 5 years or cancel it.",
+     "citation": "Drogues Info Service, La conduite automobile et les drogues (Feb 2026); Legipermis",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "fr-dis-conduite",
+      "fr-legipermis"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about France",
+    "source_ids": [
+     "fr-dis-usage",
+     "fr-dis-trafic",
+     "fr-dis-conduite",
+     "fr-ansm-2026"
+    ],
+    "points": [
+     "French drug law treats cannabis exactly like heroin or cocaine: there is no lower category for it.",
+     "The €200 on-the-spot fine is a criminal penalty, not a ticket: paying it puts the offence on your record.",
+     "Sharing a joint with friends counts legally as transferring drugs, a trafficking offence.",
+     "There is no THC limit for drivers. Any use confirmed by a saliva or blood test is enough.",
+     "Medical cannabis exists only as an experiment that stopped taking new patients at the end of 2024; about 700 patients still receive it."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -2793,7 +2891,8 @@
     "GB",
     "AU",
     "NZ",
-    "IE"
+    "IE",
+    "FR"
    ]
   }
  ],
@@ -4938,6 +5037,70 @@
    "publisher": "Agence wallonne pour la Sécurité routière (AWSR)",
    "title": "Les drogues et la conduite (leaflet, May 2026)",
    "url": "https://www.awsr.be/wp-content/uploads/2026/05/awsr-depliant-les-drogues-et-conduite.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "fr-dis-usage",
+   "kind": "government",
+   "publisher": "Drogues Info Service (Santé publique France)",
+   "title": "L'usage de stupéfiants (May 29 2026)",
+   "url": "https://drogues-info-service.fr/content/view/pdf/19975",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "fr-dis-trafic",
+   "kind": "government",
+   "publisher": "Drogues Info Service (Santé publique France)",
+   "title": "Le trafic de stupéfiants (May 8 2026)",
+   "url": "https://drogues-info-service.fr/content/view/pdf/19976",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "fr-dis-conduite",
+   "kind": "government",
+   "publisher": "Drogues Info Service (Santé publique France)",
+   "title": "La conduite automobile et les drogues (Feb 14 2026)",
+   "url": "https://www.drogues-info-service.fr/content/view/pdf/19985",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "fr-legipermis",
+   "kind": "organization",
+   "publisher": "Legipermis",
+   "title": "Contrôle positif aux stupéfiants au volant : les sanctions",
+   "url": "https://www.legipermis.com/infractions/amende-stupefiant-volant.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "fr-senat-2013",
+   "kind": "government",
+   "publisher": "Sénat (French Senate), comparative-law note LC 238",
+   "title": "La dépénalisation de la consommation du cannabis (Nov 2013)",
+   "url": "https://conferenceconsensuslogement.senat.fr/lc/lc238/lc238.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "fr-ansm-2026",
+   "kind": "government",
+   "publisher": "ANSM (French medicines agency)",
+   "title": "Minutes of the temporary scientific committee on the medical cannabis experiment (meeting of Jan 14 2026)",
+   "url": "https://ansm.sante.fr/uploads/2026/03/23/20260323-cr-cst-suivi-expe-cannabis-medical.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "fr-quotidien-2026",
+   "kind": "news",
+   "publisher": "Le Quotidien du Pharmacien",
+   "title": "Cannabis médical : où en est-on ? (Apr 9 2026)",
+   "url": "https://www.lequotidiendupharmacien.fr/cannabis-medical-ou-en-est",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "fr-an-amendment",
+   "kind": "government",
+   "publisher": "Assemblée nationale",
+   "title": "Amendment No. CL305 to bill No. 2850, article 6 (Jun 18 2026)",
+   "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2850/CION_LOIS/CL305.rtf",
    "retrieved_on": "2026-11-19"
   }
  ]

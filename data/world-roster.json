@@ -613,8 +613,8 @@
 "iso": "FR",
 "name": "France",
 "display": "France",
-"status": "queued",
-"page": null,
+"status": "deep",
+"page": "world-france.html",
 "queue": 20
 },
 {
