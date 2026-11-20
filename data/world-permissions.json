@@ -4853,6 +4853,93 @@
      "Sacramental use is tied to permitted places of worship, and the High Court has upheld that limit."
     ]
    }
+  },
+  "GD": {
+   "name": "Grenada",
+   "page": "world-grenada.html",
+   "summary": "Since February 2026, possessing up to 56 grams of cannabis or 15 grams of resin is not an offence, and up to four plants per household are allowed. Under-21s found with a personal amount are referred to counselling instead of being charged. Smoking near public places is a ticketable offence and near schools a serious one. Old convictions for these amounts are expunged. There is no legal market yet; the government must bring in a separate law for a regulated industry.",
+   "note": "Amounts are in Eastern Caribbean dollars. The Cannabis Commission's FAQ page was defaced when checked, so the guide relies on the Act itself.",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "Decriminalised; no legal sales yet",
+     "detail": "Act No. 1 of 2026, published on February 20, 2026, takes personal amounts and home plants out of the drug offences. Smoking or using cannabis within five metres of the entrance, exit, window or air intake of a public place, workplace or public transport is an offence: a $300 fixed penalty that is not a conviction, or up to $5,000 in court. Public places include beaches, parks, bars and government offices, but not private homes or registered Rastafari places of worship.",
+     "citation": "Drug Abuse (Prevention and Control) (Amendment) Act 2026, ss. 6(5), 13B, 13E, Ninth Schedule; Gazette (Feb 20 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "gd-act-2026",
+      "gd-gazette-2026"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Allowed on a practitioner's recommendation; industry law pending",
+     "detail": "Possession for medical or therapeutic use recommended by a medical or other licensed health practitioner is lawful, and importing a medicinal product is exempt when a doctor certifies a qualifying condition. The Act directs the Minister to develop separate legislation for a licensed medicinal, therapeutic, scientific and religious cannabis industry.",
+     "citation": "Drug Abuse (Prevention and Control) (Amendment) Act 2026, ss. 4(4), 6(6), 13D",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "gd-act-2026"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales yet",
+     "detail": "The 2026 Act decriminalises possession and home growing but does not create a legal market. Licensing for a regulated industry is left to future legislation.",
+     "citation": "Drug Abuse (Prevention and Control) (Amendment) Act 2026, s. 13D; Caribbean National Weekly (Jan 21 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "gd-act-2026",
+      "gd-cnw-2026"
+     ]
+    },
+    "possession": {
+     "status": "allowed",
+     "short": "Up to 56 grams is not an offence",
+     "detail": "Possessing up to 56 grams of cannabis or 15 grams of resin is not an offence. A child under 18 found with that amount is referred to the Child Protection Authority, and a young person aged 18 to 20 to a drug counselling programme; neither can be arrested or charged and no record results, though the cannabis can be forfeited. 71 grams of cannabis or 30 grams of resin is a trafficable quantity.",
+     "citation": "Drug Abuse (Prevention and Control) (Amendment) Act 2026, ss. 6(5), 6A, Second and Eighth Schedules",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "gd-act-2026"
+     ]
+    },
+    "home-grow": {
+     "status": "allowed",
+     "short": "Up to four plants per household",
+     "detail": "The cultivation and possession offences do not apply to four or fewer cannabis plants on any premises, and where a building houses more than one household, each household counts separately. The Act does not require registration for this. Rastafari adherents aged 21 or over can be authorised by Gazette order to grow on designated land for sacramental use.",
+     "citation": "Drug Abuse (Prevention and Control) (Amendment) Act 2026, ss. 11(3)-(4), 13A",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "gd-act-2026"
+     ]
+    },
+    "record-relief": {
+     "status": "allowed",
+     "short": "Old small-amount convictions expunged",
+     "detail": "Convictions before the Act for possessing or using up to 56 grams or 15 grams of resin, growing four or fewer plants, or having pipes or equipment are treated as spent and expunged. People can apply to the Rehabilitation of Offenders Board, which can also act on its own, and pending proceedings for such conduct must be discontinued.",
+     "citation": "Drug Abuse (Prevention and Control) (Amendment) Act 2026, Schedule (new s. 19A, Rehabilitation of Offenders Act)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "gd-act-2026"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "Smoking or using cannabis on school premises, or in a public place within 100 yards of a school during school hours, can bring a fine of up to $250,000 or seven years in prison, and more on indictment.",
+    "source_ids": [
+     "gd-act-2026"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Grenada",
+    "source_ids": [
+     "gd-act-2026"
+    ],
+    "points": [
+     "Young adults aged 18 to 20 are sent to counselling rather than charged for a personal amount.",
+     "Smoking rules are measured in metres from doorways and windows, not just \"in public\".",
+     "Expungement covers past convictions for home plants and pipes, not only possession."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -5184,7 +5271,8 @@
     "AG",
     "KN",
     "VC",
-    "TT"
+    "TT",
+    "GD"
    ]
   },
   {
@@ -8565,6 +8653,30 @@
    "publisher": "Barbados Today",
    "title": "Judge upholds cannabis restrictions as constitutional (Jul 31 2026)",
    "url": "https://barbadostoday.bb/2026/07/31/judge-upholds-cannabis-restrictions-as-constitutional/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "gd-act-2026",
+   "kind": "statute",
+   "publisher": "Parliament of Grenada",
+   "title": "Drug Abuse (Prevention and Control) (Amendment) Act, 2026, Act No. 1 of 2026 (assented Feb 13 2026; published Feb 20 2026)",
+   "url": "https://grenadaparliament.gd/wp-content/uploads/2026/02/Act-No.-1-of-2026-Drug-Abuse-Prevention-and-Control-Amendment-Act-2026.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "gd-gazette-2026",
+   "kind": "government",
+   "publisher": "Government of Grenada, Government Gazette",
+   "title": "Government Gazette Vol. 144 No. 9: publication of Act No. 1 of 2026 (Feb 20 2026)",
+   "url": "https://grenadaparliament.gd/wp-content/uploads/2026/02/No.-9-of-2026-Friday-February-20th-2026.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "gd-cnw-2026",
+   "kind": "news",
+   "publisher": "Caribbean National Weekly",
+   "title": "Grenada decriminalises cannabis, sets age of 21 for legal possession (Jan 21 2026)",
+   "url": "https://www.caribbeannationalweekly.com/posts/grenada-decriminalises-cannabis-sets-age-of-21-for-legal-possession",
    "retrieved_on": "2026-11-19"
   }
  ]

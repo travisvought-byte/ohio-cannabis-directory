@@ -974,22 +974,6 @@
     }
    ]
   },
-  "GD": {
-   "name": "Grenada",
-   "page": "world-grenada.html",
-   "fcdo_title": "Grenada",
-   "source_id": "fcdo-grenada",
-   "updated": "2025-12-10",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs penalties",
-     "paragraphs": [
-      "There are severe penalties for all drug offences. Pack all luggage yourself and do not carry anything through customs for anyone else."
-     ]
-    }
-   ]
-  },
   "GT": {
    "name": "Guatemala",
    "page": "world-guatemala.html",
@@ -2989,14 +2973,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Gibraltar (British Overseas Territory) travel advice (last updated by the FCDO 2026-07-14)",
    "url": "https://www.gov.uk/foreign-travel-advice/gibraltar",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-grenada",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Grenada travel advice (last updated by the FCDO 2025-12-10)",
-   "url": "https://www.gov.uk/foreign-travel-advice/grenada",
    "retrieved_on": "2026-11-20"
   },
   {
