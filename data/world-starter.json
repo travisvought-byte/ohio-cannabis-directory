@@ -2366,36 +2366,6 @@
     }
    ]
   },
-  "TT": {
-   "name": "Trinidad and Tobago",
-   "page": "world-trinidad-and-tobago.html",
-   "fcdo_title": "Trinidad and Tobago",
-   "source_id": "fcdo-trinidad-and-tobago",
-   "updated": "2026-11-11",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Drug assisted robbery and sexual assault",
-     "paragraphs": [
-      "There have been reports of criminals in Trinidad and Tobago using drugs, deception and sexual solicitation, including via dating apps, to facilitate robbery and sexual assault. Victims may be lured and drugged or beaten and robbed. Incidents have occurred in bars, nightclubs, hotels and on city streets, sometimes involving groups working together.",
-      "You should:",
-      "avoid accepting invitations from strangers or inviting them to your accommodation",
-      "take care when using dating apps",
-      "keep food and drinks under supervision",
-      "plan travel routes in advance, particularly at night",
-      "If drugged, seek local medical attention as soon as possible."
-     ]
-    },
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs penalties",
-     "paragraphs": [
-      "Trinidad and Tobago has decriminalised the possession of up to 30g of cannabis or up to 5g of cannabis resin. However, you’re not allowed to smoke cannabis in public spaces or while operating a vehicle.",
-      "If you are stopped with these amounts, you can be fined up to 50,000 Trinidad and Tobago dollars. For larger quantities there are more hefty fines and possible imprisonment. There are also severe penalties for other drug-related offences."
-     ]
-    }
-   ]
-  },
   "TN": {
    "name": "Tunisia",
    "page": "world-tunisia.html",
@@ -3683,14 +3653,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Tonga travel advice (last updated by the FCDO 2026-03-19)",
    "url": "https://www.gov.uk/foreign-travel-advice/tonga",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-trinidad-and-tobago",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Trinidad and Tobago travel advice (last updated by the FCDO 2026-11-11)",
-   "url": "https://www.gov.uk/foreign-travel-advice/trinidad-and-tobago",
    "retrieved_on": "2026-11-20"
   },
   {

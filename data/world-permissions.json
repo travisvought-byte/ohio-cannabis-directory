@@ -4670,6 +4670,94 @@
      "The government frames its reforms as staying inside the UN drug conventions."
     ]
    }
+  },
+  "TT": {
+   "name": "Trinidad and Tobago",
+   "page": "world-trinidad-and-tobago.html",
+   "summary": "Under a 2019 law, having up to 30 grams of cannabis or 5 grams of resin, and growing up to four plants, is not an offence. Larger amounts and smoking in public carry fines, often settled with a fixed penalty ticket, and old small-possession records were ordered expunged. A Cannabis Control Act for medical and religious use was passed in 2022. A bill introduced in September 2026 would limit the personal-use exemption to people over 25.",
+   "note": "Amounts are in Trinidad and Tobago dollars. The September 2026 age bill had not passed when this guide was written.",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "Decriminalised in private; no legal market",
+     "detail": "The Dangerous Drugs (Amendment) Act 2019 made small amounts and four plants lawful to hold, with no age limit written in. Smoking or using cannabis in a public place is an offence with a fine of up to $50,000; police must issue a fixed penalty notice for it, and private dwellings not used commercially are outside the definition of a public place. A Bill introduced on September 30, 2026 would restrict the exemption to people over 25 and give under-25s a fixed penalty or rehabilitative programme instead.",
+     "citation": "Dangerous Drugs (Amendment) Act 2019, ss. 3, 5(2), 5A, 5B; Bill Essentials (Oct 2 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "tt-dda-2019",
+      "tt-bill-2026"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Licensing law passed in 2022",
+     "detail": "The Cannabis Control Act (Act No. 10 of 2022, assented June 17, 2022) sets up the Trinidad and Tobago Cannabis Licensing Authority to control cannabis for medicinal, therapeutic, scientific and religious purposes. Parliament's own record of the Act does not show a proclamation date, so this guide does not say how far patient access has started.",
+     "citation": "Parliament progress record for Act No. 10 of 2022",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "tt-cca-2022"
+     ]
+    },
+    "possession": {
+     "status": "allowed",
+     "short": "Up to 30 grams is not an offence",
+     "detail": "Possessing up to 30 grams of cannabis or 5 grams of resin is not an offence. From 30 to 60 grams (5 to 10 grams of resin) the court fine is $50,000, but police issue a fixed penalty notice of $2,000 payable within 14 days that ends liability. From 60 to 100 grams (10 to 14 grams of resin) the fine is $75,000. Unpaid fines can be replaced with community service.",
+     "citation": "Dangerous Drugs (Amendment) Act 2019, ss. 5(2)(f), 5(2A)-(2D), 5B",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "tt-dda-2019"
+     ]
+    },
+    "home-grow": {
+     "status": "allowed",
+     "short": "Up to four plants",
+     "detail": "A person does not commit an offence by cultivating or possessing up to four growing cannabis plants, and that is excluded from the trafficking offence. The Act does not say whether the limit is per person or per household.",
+     "citation": "Dangerous Drugs (Amendment) Act 2019, ss. 5(2)(g), 5(3A)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "tt-dda-2019"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "Up to $250,000 and five years",
+     "detail": "Operating or being in actual physical control of a motor vehicle, aircraft or ship under the influence of cannabis carries a fine of $250,000 and up to five years in prison. The 2026 Bill would raise the fine to $500,000.",
+     "citation": "Dangerous Drugs (Amendment) Act 2019, s. 5C; Bill Essentials (Oct 2 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "tt-dda-2019",
+      "tt-bill-2026"
+     ]
+    },
+    "record-relief": {
+     "status": "allowed",
+     "short": "Small-possession records expunged",
+     "detail": "The Commissioner of Police must expunge records from before the 2019 Act for possession of up to 100 grams of cannabis or 14 grams of resin, and anyone convicted of that may apply to have the conviction expunged and then seek a pardon. People charged before the Act with up to 60 grams could apply to the court for a discharge.",
+     "citation": "Dangerous Drugs (Amendment) Act 2019, s. 5D",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "tt-dda-2019"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "Cannabis on a school bus or where children gather for school, sport or culture carries the same $250,000 and five-year penalty as driving high, whatever the amount.",
+    "source_ids": [
+     "tt-dda-2019"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Trinidad and Tobago",
+    "source_ids": [
+     "tt-dda-2019",
+     "tt-bill-2026"
+    ],
+    "points": [
+     "Small amounts and four plants are simply not an offence, with tickets for the next tier up.",
+     "Record clean-up reaches back to 100 grams, well above the new personal-use amount.",
+     "A 2026 bill proposes an age line of 25 for the personal-use exemption."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -5000,7 +5088,8 @@
     "IN",
     "AG",
     "KN",
-    "VC"
+    "VC",
+    "TT"
    ]
   },
   {
@@ -8308,6 +8397,30 @@
    "publisher": "Jamaica Observer (CMC)",
    "title": "First cannabis consumption lounge opens in St Vincent and the Grenadines (May 7 2022)",
    "url": "https://jamaicaobserver.com/latest-news/first-cannabis-consumption-lounge-opens-in-st-vincent-and-the-grenadines",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "tt-dda-2019",
+   "kind": "statute",
+   "publisher": "Parliament of the Republic of Trinidad and Tobago",
+   "title": "Dangerous Drugs (Amendment) Act, 2019, Act No. 24 of 2019 (assented Dec 18 2019)",
+   "url": "https://www.ttparliament.org/wp-content/uploads/2021/10/a2019-24.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "tt-cca-2022",
+   "kind": "government",
+   "publisher": "Parliament of the Republic of Trinidad and Tobago",
+   "title": "The Cannabis Control Bill, 2020: progress record (Act No. 10 of 2022, assented Jun 17 2022)",
+   "url": "https://www.ttparliament.org/?p=128131",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "tt-bill-2026",
+   "kind": "government",
+   "publisher": "Parliament of the Republic of Trinidad and Tobago",
+   "title": "Bill Essentials: Miscellaneous Provisions (Alcohol, Cannabis, Dangerous Drugs, Gambling and Tobacco) Bill, 2026 (Oct 2 2026)",
+   "url": "https://www.ttparliament.org/wp-content/uploads/2026/09/b2026h17be.pdf",
    "retrieved_on": "2026-11-19"
   }
  ]
