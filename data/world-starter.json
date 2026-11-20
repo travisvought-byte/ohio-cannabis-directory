@@ -708,22 +708,6 @@
     }
    ]
   },
-  "DM": {
-   "name": "Dominica",
-   "page": "world-dominica.html",
-   "fcdo_title": "Dominica",
-   "source_id": "fcdo-dominica",
-   "updated": "2025-12-10",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "There are severe penalties for drug offences. Pack all your luggage yourself and do not carry anything through customs for anyone else."
-     ]
-    }
-   ]
-  },
   "DO": {
    "name": "Dominican Republic",
    "page": "world-dominican-republic.html",
@@ -2813,14 +2797,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Djibouti travel advice (last updated by the FCDO 2026-07-27)",
    "url": "https://www.gov.uk/foreign-travel-advice/djibouti",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-dominica",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Dominica travel advice (last updated by the FCDO 2025-12-10)",
-   "url": "https://www.gov.uk/foreign-travel-advice/dominica",
    "retrieved_on": "2026-11-20"
   },
   {

@@ -5088,6 +5088,74 @@
      "A wider cannabis and hemp industry law was still at the draft stage in 2025."
     ]
    }
+  },
+  "DM": {
+   "name": "Dominica",
+   "page": "world-dominica.html",
+   "summary": "Since an October 2020 amendment to the Drugs (Prevention of Misuse) Act, adults 18 and over are not guilty of an offence for having 28 grams or less of cannabis; more than that is still unlawful. There is no legal market, and a medical cannabis framework was still being developed in 2025.",
+   "note": "The 2020 amendment text was not reachable; this guide relies on news reports of the debate and a 2025 government release.",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "Small amounts decriminalised; no legal market",
+     "detail": "Parliament amended the Drugs (Prevention of Misuse) Act on October 26, 2020, decriminalising small quantities for personal and religious use, the National Security Minister said. He added that cannabis should not be decriminalised entirely without restrictions.",
+     "citation": "Jamaica Observer (Oct 26 2020); CARICOM Today (Oct 2020)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "dm-observer-2020",
+      "dm-caricom-2020"
+     ]
+    },
+    "medical": {
+     "status": "not-permitted",
+     "short": "No medical framework yet",
+     "detail": "The government held a National Cannabis Symposium on July 9-10, 2025, and its 2024/2025 budget provides for developing legislation on safe access to medicinal cannabis. A regulated medical industry had not been set up as of that release.",
+     "citation": "Government Information Service (Jul 11 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "dm-gis-2025"
+     ]
+    },
+    "possession": {
+     "status": "allowed",
+     "short": "Up to 28 grams for adults",
+     "detail": "People aged 18 and over who have 28 grams or less are not guilty of an offence under section 72 of the Act. Having more than 28 grams remains unlawful.",
+     "citation": "Drugs (Prevention of Misuse) (Amendment) Act 2020, as reported by CARICOM Today and the Jamaica Observer",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "dm-caricom-2020",
+      "dm-observer-2020"
+     ]
+    },
+    "record-relief": {
+     "status": "limited",
+     "short": "Government said 28-gram records would be cleared",
+     "detail": "Presenting the amendment, the minister said the government was taking steps to expunge the records of people in respect of possession of 28 grams. How this works in practice was not found.",
+     "citation": "Jamaica Observer (Oct 26 2020); CARICOM Today (Oct 2020)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "dm-observer-2020",
+      "dm-caricom-2020"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "In 2020 the Prime Minister said a medical cannabis industry would be hard to run alone, with Dominica sitting between the French territories of Martinique and Guadeloupe.",
+    "source_ids": [
+     "dm-observer-2020"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Dominica",
+    "source_ids": [
+     "dm-observer-2020",
+     "dm-gis-2025"
+    ],
+    "points": [
+     "The 28-gram line applies only to adults aged 18 and over.",
+     "Government work in 2025 centred on a framework for a regulated medical cannabis industry."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -5421,7 +5489,8 @@
     "VC",
     "TT",
     "GD",
-    "LC"
+    "LC",
+    "DM"
    ]
   },
   {
@@ -8891,6 +8960,30 @@
    "publisher": "HempToday",
    "title": "Draft law maps the way for hemp, marijuana sectors to open up in St. Lucia this year (Jan 2025)",
    "url": "https://hemptoday.net/draft-law-maps-the-way-for-hemp-marijuana-sectors-to-open-up-in-st-lucia-this-year/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "dm-observer-2020",
+   "kind": "news",
+   "publisher": "Jamaica Observer (CMC)",
+   "title": "Dominica Parliament amends marijuana legislation (Oct 26 2020)",
+   "url": "https://www.jamaicaobserver.com/2020/10/26/dominica-parliament-amends-marijuana-legislation/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "dm-caricom-2020",
+   "kind": "news",
+   "publisher": "CARICOM Today (Dominica News Online)",
+   "title": "Dominica parliament passes legislation to decriminalise small amounts of marijuana (Oct 2020)",
+   "url": "https://today.caricom.org/?p=46558",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "dm-gis-2025",
+   "kind": "government",
+   "publisher": "Government of Dominica, Government Information Service",
+   "title": "Government hosts two-day National Cannabis Symposium (Jul 11 2025)",
+   "url": "https://www.news.gov.dm/news/news-items/government-hosts-two-day-national-cannabis-symposium",
    "retrieved_on": "2026-11-19"
   }
  ]
