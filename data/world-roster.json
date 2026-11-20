@@ -1381,8 +1381,8 @@
 "iso": "PY",
 "name": "Paraguay",
 "display": "Paraguay",
-"status": "queued",
-"page": null,
+"status": "deep",
+"page": "world-paraguay.html",
 "queue": 29
 },
 {

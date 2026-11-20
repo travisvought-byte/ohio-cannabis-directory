@@ -3363,6 +3363,77 @@
      "Legal cannabis means the under-1% THC plant, regulated by the Agriculture Ministry and ARCSA."
     ]
    }
+  },
+  "PY": {
+   "name": "Paraguay",
+   "page": "world-paraguay.html",
+   "summary": "Under the 1988 drug law, possessing up to 10 grams of marijuana for personal use is exempt from punishment; more than that can be prosecuted. Growing is still a crime, even a couple of plants. Medical cannabis runs through a state programme created in 2017, with licensed producers, a patient registry and free oil for registered patients.",
+   "note": "Spanish sources are summarized in English. The drug law text itself could not be opened; possession limits come from news reports.",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "Small personal amounts are exempt; no legal market",
+     "detail": "Law 1340 of 1988 exempts possession for personal use from punishment up to a fixed limit, which is 10 grams for marijuana. There is no legal adult-use sale. Lawmakers discussed raising the limit to allow three plants in 2024, but that is a proposal, not law.",
+     "citation": "Ley 1340/1988, as reported by Diario HOY (May 24 2024) and Última Hora (Apr 11 2024)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "py-hoy-2024",
+      "py-uh-2024"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "A state programme with licensed producers and a registry",
+     "detail": "Law 6007 of 2017 created a national programme for the medical study and use of cannabis, run by DINAVISA, the health regulator. DINAVISA licenses production and industrialisation; licences are non-transferable and renewed every five years. Patients and their doctors must be on the national registry of users. CBD-only products need a simple prescription, products with up to 0.5% THC a simple prescription kept on file, and products above 0.5% THC a quadruplicate prescription. Registered patients can receive free oil, supplied from at least 2% of private producers' output.",
+     "citation": "Ley 6007/2017 and Decrees 9303/2018, 6519/2021, 7761/2022, as summarized by the IBA (Dec 4 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "py-iba-2025"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "Up to 10 grams for personal use",
+     "detail": "Possessing up to 10 grams of marijuana for personal use is not punished under Law 1340. Above the limit the exemption no longer applies: a defence lawyer quoted in April 2024 noted that 11 grams is already punishable.",
+     "citation": "Ley 1340/1988; Diario HOY (May 24 2024); Última Hora (Apr 11 2024)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "py-hoy-2024",
+      "py-uh-2024"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Growing is a crime, including for medical use",
+     "detail": "Cultivation remains punishable. In September 2020 the President vetoed bill 6602/2020, which would have decriminalised growing cannabis for medical use; the Senate re-approved it in November 2020 and sent it to the Chamber of Deputies, and this guide found no record that it became law. In April 2024 a 62-year-old woman was detained and charged over two plants she said were for personal use.",
+     "citation": "La Nación (Sep 11 2020; Nov 5 2020); Última Hora (Apr 11 2024)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "py-lanacion-veto",
+      "py-lanacion-senado",
+      "py-uh-2024"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "The 10-gram exemption covers carrying a small amount, not growing it: two plants on a balcony were enough for a prosecutor to order pre-trial detention in 2024.",
+    "source_ids": [
+     "py-uh-2024"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Paraguay",
+    "source_ids": [
+     "py-hoy-2024",
+     "py-iba-2025",
+     "py-lanacion-veto"
+    ],
+    "points": [
+     "The personal-use limit has been fixed in the drug law since 1988.",
+     "Medical access is a state programme, with free oil for registered patients funded by producers' output.",
+     "Medical home growing passed Congress in 2020 but was vetoed by the President."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -3684,7 +3755,8 @@
     "AR",
     "CL",
     "PE",
-    "EC"
+    "EC",
+    "PY"
    ]
   },
   {
@@ -6235,6 +6307,46 @@
    "publisher": "Vistazo",
    "title": "¿Qué debes saber si quieres producir y comercializar productos con cáñamo en Ecuador? (Mar 5 2021)",
    "url": "https://www.vistazo.com/amp/actualidad/nacional/que-debes-saber-si-quieres-producir-y-comercializar-productos-con-canamo-en-ecuador-NGVI225686",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "py-hoy-2024",
+   "kind": "news",
+   "publisher": "Diario HOY",
+   "title": "Evalúan elevar la cantidad mínima permitida para la tenencia de marihuana (May 24 2024)",
+   "url": "https://www.hoy.com.py/nacionales/2024/05/24/evaluan-elevar-la-cantidad-minima-permitida-para-la-tenencia-de-marihuana",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "py-uh-2024",
+   "kind": "news",
+   "publisher": "Última Hora",
+   "title": "Abogado califica de irracional la detención de una mujer de 62 años por tener dos plantas de marihuana (Apr 11 2024)",
+   "url": "https://www.ultimahora.com/abogado-califica-de-irracional-la-detencion-de-una-mujer-de-62-anos-por-tener-dos-plantas-de-marihuana",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "py-iba-2025",
+   "kind": "organization",
+   "publisher": "International Bar Association (Cervieri Monsuárez)",
+   "title": "Medical cannabis in Paraguay: regulatory framework and development opportunities (Dec 4 2025)",
+   "url": "https://www.ibanet.org/medical-cannabis-paraguay",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "py-lanacion-veto",
+   "kind": "news",
+   "publisher": "La Nación (Paraguay)",
+   "title": "Ejecutivo veta proyecto de ley que despenaliza el cultivo de marihuana para uso medicinal (Sep 11 2020)",
+   "url": "https://www.lanacion.com.py/politica/2020/09/11/ejecutivo-veta-proyecto-de-ley-que-despenaliza-el-cultivo-de-marihuana-para-uso-medicinal/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "py-lanacion-senado",
+   "kind": "news",
+   "publisher": "La Nación (Paraguay)",
+   "title": "Senado se ratifica en uso medicinal de la marihuana (Nov 5 2020)",
+   "url": "https://www.lanacion.com.py/politica/2020/11/05/senado-se-ratifica-en-uso-medicinal-de-la-marihuana/",
    "retrieved_on": "2026-11-19"
   }
  ]
