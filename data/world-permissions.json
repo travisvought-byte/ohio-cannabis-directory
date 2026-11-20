@@ -2959,6 +2959,121 @@
      "Nonprofit patient associations have their own route under Anvisa's 2026 rules, without commercial sale."
     ]
    }
+  },
+  "AR": {
+   "name": "Argentina",
+   "page": "world-argentina.html",
+   "summary": "In the 2009 Arriola ruling the Supreme Court held that punishing an adult for possessing drugs for personal use, when it puts no one else at risk, is unconstitutional. Congress never changed the drug law, so possession is still written as a crime and courts decide case by case. Registered medical patients can grow up to nine flowering plants through the REPROCANN registry. There is no legal market.",
+   "note": "Spanish sources are summarized in English. Court rulings shape much of this law.",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "Protected in private by a court ruling, not by law",
+     "detail": "On August 25, 2009, in the Arriola case, the Supreme Court found the personal-use possession offence in article 14 of Law 23.737 unconstitutional under article 19 of the Constitution, but only where possession for one's own use creates no concrete danger or harm to others. Courts apply that test case by case. The text of the law was not changed, and conspicuous use with public reach is still punishable under article 12.",
+     "citation": "CSJN, Arriola (Fallos 332:1963, Aug 25 2009), as applied by the Procuración General (Mar 5 2015); Ley 23.737 arts. 12, 14",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ar-arriola-pgn",
+      "ar-diariojudicial-2019",
+      "ar-ley23737"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Registered patients can grow or have it grown",
+     "detail": "Law 27.350 (2017) set up medical cannabis access, and the Health Ministry's REPROCANN registry authorises patients with a medical indication to grow for themselves, through one third-party grower, or through a registered nonprofit association or foundation. Resolution 1780/2025 rewrote the rules: doctors must be registered and trained, a patient's permit lasts three years, and all access must be non-commercial. The consent form notes that home-made derivatives are not ANMAT-approved medicines.",
+     "citation": "Ministerio de Salud, Resolución 1780/2025 (Boletín Oficial May 23 2025), citing Ley 27.350",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ar-res1780"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sale",
+     "detail": "There is no legal adult-use market. Trading, distributing or holding drugs for sale carries 4 to 15 years in prison under article 5 of Law 23.737. REPROCANN access must be without commercial purpose, and producing or selling cannabis outside the permitted cases remains an offence under that law.",
+     "citation": "Ley 23.737 art. 5; Resolución 1780/2025",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ar-ley23737",
+      "ar-res1780"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "Still a crime on paper; private use protected case by case",
+     "detail": "Article 14 of Law 23.737 still punishes possession with 1 to 6 years, or 1 month to 2 years when the small amount and circumstances clearly show personal use. Under Arriola, courts must not punish personal possession that creates no concrete danger or harm to others, judged case by case. Registered REPROCANN patients may carry up to 40 grams of dried flower or six 30 ml bottles of oil.",
+     "citation": "Ley 23.737 art. 14; CSJN Arriola (2009); Resolución 1780/2025 Annex II",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ar-ley23737",
+      "ar-arriola-pgn",
+      "ar-res1780"
+     ]
+    },
+    "sharing": {
+     "status": "not-permitted",
+     "short": "Giving it away is a crime",
+     "detail": "Supplying drugs free of charge carries 3 to 12 years under article 5 of Law 23.737. When the supply is occasional, free, small and clearly for the recipient's own use, the penalty drops to 6 months to 3 years. Promoting use or inducing someone to use carries 2 to 6 years under article 12.",
+     "citation": "Ley 23.737 arts. 5 (inc. e and last paragraph) and 12",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ar-ley23737"
+     ]
+    },
+    "home-grow": {
+     "status": "medical-only",
+     "short": "Up to nine flowering plants with a REPROCANN permit",
+     "detail": "Registered patients may grow 1 to 9 flowering plants each, on up to 6 square metres indoors or 15 square metres outdoors. Without a permit, growing is a crime under article 5 of Law 23.737; when the small amount and circumstances clearly show personal use, the penalty is 1 month to 2 years.",
+     "citation": "Resolución 1780/2025 Annex II; Ley 23.737 art. 5",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ar-res1780",
+      "ar-ley23737"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "No driving after drugs; zero alcohol",
+     "detail": "Since Law 27.714 (Boletín Oficial May 3 2023), article 48 of the national Traffic Law bans driving after consuming narcotics or medicines that reduce the ability to drive, and sets a zero blood-alcohol limit for every vehicle. Checks use a method approved by the health authority.",
+     "citation": "Ley 24.449 art. 48 a), as amended by Ley 27.714",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ar-ley27714"
+     ]
+    },
+    "record-relief": {
+     "status": "limited",
+     "short": "Treatment or education can replace a sentence",
+     "detail": "For personal-use cases, a judge can suspend the case or sentence and order treatment (articles 17 and 18), or, once, replace the penalty with an educational programme for a non-dependent first-time user (article 21). After three years of recovery, a judge may order the drug-use entry removed from the national criminal records registry (article 22).",
+     "citation": "Ley 23.737 arts. 17, 18, 21 and 22",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ar-ley23737"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "A registered nonprofit association or foundation can grow for up to 150 REPROCANN patients, and a third-party grower can grow for themselves and one other patient. The 2025 rules tightened these roles after the Health Ministry said some growers were using them commercially.",
+    "source_ids": [
+     "ar-res1780"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Argentina",
+    "source_ids": [
+     "ar-arriola-pgn",
+     "ar-ley23737",
+     "ar-res1780",
+     "ar-ley27714"
+    ],
+    "points": [
+     "Arriola changed how courts treat private possession, but the drug law still lists it as a crime.",
+     "Medical access runs through a national registry that lets patients grow, rather than only through pharmacies.",
+     "Associations and foundations can grow for registered patients, without selling.",
+     "Driving rules are strict: zero alcohol and no driving after drugs that reduce driving ability."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -3276,7 +3391,8 @@
     "CO",
     "BE",
     "IT",
-    "BR"
+    "BR",
+    "AR"
    ]
   },
   {
@@ -5667,6 +5783,46 @@
    "publisher": "Vrum (Estado de Minas)",
    "title": "Com maconha descriminalizada, dirigir sob efeito ainda é crime (Sep 2024)",
    "url": "https://www.vrum.com.br/aceleradas/2024/09/6948717-com-maconha-descriminalizada-dirigir-sob-efeito-ainda-e-crime.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ar-ley23737",
+   "kind": "statute",
+   "publisher": "Argentina.gob.ar (InfoLEG updated text)",
+   "title": "Ley 23.737, Régimen penal de estupefacientes, texto actualizado (retrieved Nov 19 2026)",
+   "url": "https://www.argentina.gob.ar/normativa/nacional/norma-138/actualizacion",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ar-res1780",
+   "kind": "government",
+   "publisher": "Ministerio de Salud de la Nación, via Argentina.gob.ar",
+   "title": "Resolución 1780/2025, REPROCANN medical cannabis registry (signed May 22 2025; Boletín Oficial May 23 2025)",
+   "url": "https://www.argentina.gob.ar/normativa/nacional/norma-413121/texto",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ar-arriola-pgn",
+   "kind": "government",
+   "publisher": "Procuración General de la Nación, dictamen (copy in the Ministerio Público de la Defensa repository)",
+   "title": "F., S. D. s/ causa n° 338/2013: opinion applying the Supreme Court's Arriola ruling (Mar 5 2015)",
+   "url": "https://repositorio.mpd.gov.ar/documentos/FV,%20S.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ar-diariojudicial-2019",
+   "kind": "news",
+   "publisher": "Diario Judicial",
+   "title": "A 10 años de Arriola (Aug 19 2019)",
+   "url": "https://www.diariojudicial.com/news-84214-a-10-anos-de-arriola",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ar-ley27714",
+   "kind": "statute",
+   "publisher": "Argentina.gob.ar (InfoLEG)",
+   "title": "Ley 27.714, amending article 48 of the Ley de Tránsito 24.449 (Boletín Oficial May 3 2023)",
+   "url": "https://www.argentina.gob.ar/normativa/nacional/383043/texto",
    "retrieved_on": "2026-11-19"
   }
  ]

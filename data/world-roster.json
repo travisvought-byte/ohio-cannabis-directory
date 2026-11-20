@@ -85,8 +85,8 @@
 "iso": "AR",
 "name": "Argentina",
 "display": "Argentina",
-"status": "queued",
-"page": null,
+"status": "deep",
+"page": "world-argentina.html",
 "queue": 25
 },
 {
