@@ -2156,23 +2156,6 @@
     }
    ]
   },
-  "KN": {
-   "name": "St Kitts and Nevis",
-   "page": "world-st-kitts-and-nevis.html",
-   "fcdo_title": "St Kitts and Nevis",
-   "source_id": "fcdo-st-kitts-and-nevis",
-   "updated": "2026-01-05",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "There are severe penalties for all drug offences, particularly drug trafficking. If convicted at Magistrates Court, you could get a fine of up to 400,000 EC dollars or 3 times the street value, whichever is higher, and up to 10 years in prison. If the case goes to the High Court, sentences are a minimum of 15 years, up to life imprisonment.",
-      "Marijuana (cannabis) for personal use has been decriminalised, but you must have a licence to use it. There are fines for smoking of marijuana in some public places or without a licence."
-     ]
-    }
-   ]
-  },
   "LC": {
    "name": "St Lucia",
    "page": "world-st-lucia.html",
@@ -3620,14 +3603,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "St Helena, Ascension and Tristan da Cunha travel advice (last updated by the FCDO 2026-09-10)",
    "url": "https://www.gov.uk/foreign-travel-advice/st-helena-ascension-and-tristan-da-cunha",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-st-kitts-and-nevis",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "St Kitts and Nevis travel advice (last updated by the FCDO 2026-01-05)",
-   "url": "https://www.gov.uk/foreign-travel-advice/st-kitts-and-nevis",
    "retrieved_on": "2026-11-20"
   },
   {

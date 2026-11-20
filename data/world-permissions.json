@@ -4502,6 +4502,101 @@
      "Visitors with a recommendation from home can buy from a medical dispensary but cannot take it with them."
     ]
    }
+  },
+  "KN": {
+   "name": "Saint Kitts and Nevis",
+   "page": "world-st-kitts-and-nevis.html",
+   "summary": "Small amounts and up to five plants carry no criminal sanction. Adults can also take out a licence under the Freedom of Conscience (Cannabis) Act 2023 to carry up to 56 grams in permitted public places, smoke in designated smoking areas and grow up to five plants at home; fees are waived until the end of 2026. Rastafari sacramental use is recognised in law, and a Medicinal Cannabis Authority licenses sales.",
+   "note": "Two of the laws are cited from the bill texts the government published; the final enacted wording was not opened.",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "Decriminalised, with an optional adult licence",
+     "detail": "The government says individuals may possess small quantities and grow up to five plants without criminal sanctions. Adults aged 18 or over can also apply to the Ministry responsible for faith-based affairs for a two-year licence under the Freedom of Conscience (Cannabis) Act 2023. A seven-day temporary licence also exists. Licence fees are waived until December 31, 2026. Unauthorised sales remain illegal.",
+     "citation": "SKNIS (Apr 28 2025); Freedom of Conscience (Cannabis) Bill 2023, ss. 2-5; Government notice (Apr 2 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "kn-sknis-2025",
+      "kn-foc-2023",
+      "kn-forms-2026"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "A Medicinal Cannabis Authority licenses the industry",
+     "detail": "The Medicinal Cannabis Authority was launched on April 25, 2025, under the Ministry of Agriculture, to license a regulated medicinal cannabis industry for patients with authorised prescriptions. Legal sales are permitted only through licensed entities.",
+     "citation": "SKNIS (Apr 28 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "kn-sknis-2025"
+     ]
+    },
+    "buying": {
+     "status": "limited",
+     "short": "Only through licensed entities",
+     "detail": "Legal cannabis sales are permitted only through entities licensed under the Cannabis Act, and the government has named cannabis lounges as a new opportunity. Unauthorised sales remain illegal and are enforced by the police.",
+     "citation": "SKNIS (Apr 28 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "kn-sknis-2025"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "Small amounts are not a crime; licence holders up to 56 grams",
+     "detail": "The 2019 amendment to the Drugs Act, passed on July 31, 2019, replaced prosecution for up to 15 grams of cannabis or 5 grams of resin with a $50 fixed penalty notice in the bill as published. The government described small-quantity possession in 2025 as carrying no criminal sanction. A Freedom of Conscience licence lets an adult carry up to 56 grams of cannabis or 15 grams of resin in permitted public places, which exclude schools, hospitals, churches, police and government offices and similar places.",
+     "citation": "Drugs (Amendment) Bill 2019, s. 6A(2); SKNIS (Aug 1 2019; Apr 28 2025); Freedom of Conscience (Cannabis) Bill 2023, ss. 2-3",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "kn-drugs-bill-2019",
+      "kn-sknis-2019",
+      "kn-sknis-2025",
+      "kn-foc-2023"
+     ]
+    },
+    "home-grow": {
+     "status": "limited",
+     "short": "Up to five plants",
+     "detail": "The government says up to five plants can be grown without criminal sanction. With a Freedom of Conscience licence, an adult may grow five or fewer plants in a secured area of their private premises, kept away from minors and vulnerable people. Going over the limit, or failing to secure the plants, falls back under the Drugs Act.",
+     "citation": "SKNIS (Apr 28 2025); Freedom of Conscience (Cannabis) Bill 2023, ss. 3, 7",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "kn-sknis-2025",
+      "kn-foc-2023",
+      "kn-forms-2026"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "Impaired driving falls under traffic law",
+     "detail": "The 2019 Drugs Act amendment, as published, leaves impaired driving to the Vehicles and Road Traffic Act, and sets heavy fines for using cannabis in schools, on school buses and near schools during school hours.",
+     "citation": "Drugs (Amendment) Bill 2019, s. 6B",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "kn-drugs-bill-2019"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "Smoking in public is the line to watch: outside designated smoking areas it drew a $1,000 fixed penalty in the 2019 bill, and three tickets for it can cost a Freedom of Conscience licence.",
+    "source_ids": [
+     "kn-drugs-bill-2019",
+     "kn-foc-2023"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Saint Kitts and Nevis",
+    "source_ids": [
+     "kn-foc-2023",
+     "kn-sknis-2025",
+     "kn-forms-2026"
+    ],
+    "points": [
+     "Adult use is framed as freedom of conscience, with a licence issued by the ministry for faith-based affairs.",
+     "Rastafari sacramental use is recognised in its own 2023 Act, with free permits.",
+     "A short temporary licence exists alongside the two-year licence."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -4830,7 +4925,8 @@
     "PY",
     "CR",
     "IN",
-    "AG"
+    "AG",
+    "KN"
    ]
   },
   {
@@ -8066,6 +8162,46 @@
    "publisher": "Antigua Newsroom",
    "title": "Antigua and Barbuda issues first official medical cannabis licence (licence issued Jun 14 2021)",
    "url": "https://antiguanewsroom.com/antigua-and-barbuda-issues-first-official-medical-cannabis-licence",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "kn-sknis-2025",
+   "kind": "government",
+   "publisher": "SKNIS (St Kitts and Nevis Information Service)",
+   "title": "Attorney General Wilkin welcomes the establishment of a regulated Medicinal Cannabis Authority (Apr 28 2025)",
+   "url": "https://www.sknis.gov.kn/?p=94869",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "kn-foc-2023",
+   "kind": "statute",
+   "publisher": "SKNIS (bill text as published)",
+   "title": "Freedom of Conscience (Cannabis) Bill, 2023 (published 2023; enacted as the Freedom of Conscience (Cannabis) Act, 2023)",
+   "url": "https://www.sknis.gov.kn/?p=78725",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "kn-forms-2026",
+   "kind": "government",
+   "publisher": "Government of St Kitts and Nevis (SKNIS notice, Consulate General Toronto copy)",
+   "title": "Forms available for applications under the Freedom of Conscience (Cannabis) Act and Rastafari Rights Recognition Act (Apr 2 2026)",
+   "url": "https://www.skncgtoronto.gov.kn/?p=14639",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "kn-drugs-bill-2019",
+   "kind": "statute",
+   "publisher": "SKNIS (bill text as published)",
+   "title": "Drugs (Prevention & Abatement of the Misuse and Abuse of Drugs) (Amendment) Bill, 2019",
+   "url": "https://www.sknis.gov.kn/?p=41009",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "kn-sknis-2019",
+   "kind": "government",
+   "publisher": "SKNIS",
+   "title": "Attorney General endorses first legal step in updating Drugs Act (Aug 1 2019; bill passed Jul 31 2019)",
+   "url": "https://www.sknis.gov.kn/2019/08/01/st-kitts-and-nevis-attorney-general-endorses-first-legal-step-in-updating-drugs-act",
    "retrieved_on": "2026-11-19"
   }
  ]
