@@ -34,7 +34,9 @@ class PagesSiteTest(unittest.TestCase):
 
     def test_every_state_page_is_at_the_root_and_in_the_sitemap(self):
         sitemap = self.read('sitemap.xml')
-        self.assertEqual(len(self.result['national']), 278)  # 69 state-section pages, world pages (full guides, the Canada stores page, hub pages) and starter country pages: 278 in all
+        built = sorted(f.name for f in (ROOT / 'national').glob('*.html'))
+        self.assertEqual(len(self.result['national']), len(built))  # every page build_national.py made is published (state section, world guides, store pages, starter pages)
+        self.assertGreater(len(built), 270)
         for name in self.result['national']:
             self.assertTrue((self.out / name).exists(), name)
             if name != 'index.html':

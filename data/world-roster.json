@@ -725,8 +725,8 @@
    "iso": "GU",
    "name": "Guam",
    "display": "Guam",
-   "status": "not-started",
-   "page": null,
+   "status": "deep",
+   "page": "world-guam.html",
    "queue": null
   },
   {
@@ -1317,8 +1317,8 @@
    "iso": "MP",
    "name": "Northern Mariana Islands",
    "display": "Northern Mariana Islands",
-   "status": "not-started",
-   "page": null,
+   "status": "deep",
+   "page": "world-northern-mariana-islands.html",
    "queue": null
   },
   {
@@ -1429,8 +1429,8 @@
    "iso": "PR",
    "name": "Puerto Rico",
    "display": "Puerto Rico",
-   "status": "not-started",
-   "page": null,
+   "status": "deep",
+   "page": "world-puerto-rico.html",
    "queue": null
   },
   {
@@ -1949,8 +1949,8 @@
    "iso": "VI",
    "name": "Virgin Islands, U.S.",
    "display": "Virgin Islands, U.S.",
-   "status": "not-started",
-   "page": null,
+   "status": "deep",
+   "page": "world-us-virgin-islands.html",
    "queue": null
   },
   {

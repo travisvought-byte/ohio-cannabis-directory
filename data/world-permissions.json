@@ -4232,6 +4232,163 @@
      ]
     }
    }
+  },
+  "GU": {
+   "name": "Guam",
+   "page": "world-guam.html",
+   "summary": "Guam, a U.S. territory, legalised medical cannabis in 2014 and adult use in 2019. Adults 21 and over may possess up to an ounce and grow at home, but the licensed market has been slow to open. Federal law still applies, including at the airport.",
+   "note": "U.S. federal law still prohibits cannabis, and federal agents work at airports and ports in the territories.",
+   "answers": {
+    "adult-use": {
+     "status": "allowed",
+     "short": "Yes, 21 and over",
+     "detail": "The Guam Cannabis Industries Act, signed on April 4, 2019, legalised personal possession by adults and set rules for licensed production and retail sale.",
+     "citation": "Guam Cannabis Industries Act 2019 (NORML; MPP)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "gu-norml-legal",
+      "us-mpp-territories"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Yes, since 2014",
+     "detail": "Guam was the first U.S. territory to legalise medical cannabis, in 2014. Patients may possess 2.5 ounces and grow up to six mature and 12 immature plants. NORML lists licensed dispensaries as allowed but not yet operating.",
+     "citation": "NORML; MPP",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "gu-norml-med",
+      "us-mpp-territories"
+     ]
+    },
+    "possession": {
+     "status": "allowed",
+     "short": "Up to 1 ounce",
+     "detail": "Adults may possess up to one ounce, plus what their own plants produce. Having more than an ounce is a petty misdemeanour with up to 60 days in jail and a fine of up to $500.",
+     "citation": "Guam Pub. L. 35-05 (NORML)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "gu-norml-pen"
+     ]
+    },
+    "home-grow": {
+     "status": "allowed",
+     "short": "Six plants, three flowering",
+     "detail": "Adults may grow six plants at a time, three flowering and three immature, in private.",
+     "citation": "Weedmaps summary (secondary)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "gu-weedmaps"
+     ]
+    }
+   }
+  },
+  "MP": {
+   "name": "Northern Mariana Islands",
+   "page": "world-northern-mariana-islands.html",
+   "summary": "The Northern Mariana Islands, a U.S. commonwealth, legalised cannabis for medical and adult use in September 2018, the first U.S. territory to legalise adult use by legislation. Federal law still applies.",
+   "note": "U.S. federal law still prohibits cannabis.",
+   "answers": {
+    "adult-use": {
+     "status": "allowed",
+     "short": "Yes, 21 and over",
+     "detail": "The governor signed the Taulamwaar Sensible CNMI Cannabis Act into law on September 21, 2018, legalising cannabis for medical purposes and adult use. Business licences require 10 years of continued residency, with exceptions for military service and education.",
+     "citation": "Taulamwaar Sensible CNMI Cannabis Act 2018 (MPP)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "us-mpp-territories",
+      "mp-mpp-2018"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Yes",
+     "detail": "The same 2018 law covers medical use.",
+     "citation": "MPP",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "us-mpp-territories"
+     ]
+    },
+    "home-grow": {
+     "status": "allowed",
+     "short": "Yes, registered home growers",
+     "detail": "Adults may grow at home after registering with the Cannabis Commission; plants may not be in public view and must be secured from anyone under 21.",
+     "citation": "Taulamwaar Sensible CNMI Cannabis Act 2018 (MPP summary)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "mp-mpp-2018"
+     ]
+    }
+   }
+  },
+  "VI": {
+   "name": "U.S. Virgin Islands",
+   "page": "world-us-virgin-islands.html",
+   "summary": "The U.S. Virgin Islands legalised adult-use cannabis on January 18, 2023, alongside medical and sacramental use, under one regulator. Possession is legal for adults 21 and over; the first licensed dispensaries were expected to open by the end of 2026. Federal law still applies.",
+   "note": "U.S. federal law still prohibits cannabis.",
+   "answers": {
+    "adult-use": {
+     "status": "allowed",
+     "short": "Yes, 21 and over (residents and visitors)",
+     "detail": "The Virgin Islands Cannabis Use Act (Act 8680), signed on January 18, 2023, allows cannabis for medicinal, sacramental and adult use and regulates production and sale through the Office of Cannabis Regulation.",
+     "citation": "Act 8680 (Government House; Office of Cannabis Regulation)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "vi-gov-2023",
+      "vi-ocr"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Yes, with higher limits",
+     "detail": "Medical cannabis was legalised in 2019 and folded into the 2023 Act. Qualified patients may possess more than other adults: 4 ounces of flower, 1 ounce of concentrate and 2 ounces of cannabis products.",
+     "citation": "Act 8680 (VibeHigh summary, secondary)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "vi-vibehigh",
+      "vi-ocr"
+     ]
+    },
+    "possession": {
+     "status": "allowed",
+     "short": "2 oz flower, 14 g concentrate",
+     "detail": "Adults 21 and over may possess up to 2 ounces of flower, 14 grams of concentrate and 1 ounce of cannabis products, with no card required.",
+     "citation": "Act 8680 (VibeHigh summary, secondary)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "vi-vibehigh"
+     ]
+    },
+    "buying": {
+     "status": "limited",
+     "short": "Stores were expected to open by the end of 2026",
+     "detail": "In August 2026 the Office of Cannabis Regulation told legislators that licensed cultivation could begin within weeks and at least two dispensaries might open before the end of 2026, but sales cannot start until a testing laboratory is operating.",
+     "citation": "VI Consortium (Aug 2026)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "vi-consortium-2026"
+     ]
+    }
+   }
+  },
+  "PR": {
+   "name": "Puerto Rico",
+   "page": "world-puerto-rico.html",
+   "summary": "Puerto Rico, a U.S. territory, has had a medical cannabis program since 2015, run by its Department of Health. This guide has not yet reviewed the rules for adult use or possession there. Federal law still applies.",
+   "note": "U.S. federal law still prohibits cannabis.",
+   "answers": {
+    "medical": {
+     "status": "allowed",
+     "short": "Yes, since 2015",
+     "detail": "The governor signed a medical cannabis measure in 2015 and the Department of Health implemented it. There were 114,274 registered patients in March 2021.",
+     "citation": "MPP",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "us-mpp-territories"
+     ]
+    }
+   }
   }
  },
  "canada_provinces": [
@@ -4531,7 +4688,10 @@
     "DE",
     "MT",
     "CZ",
-    "LU"
+    "LU",
+    "GU",
+    "MP",
+    "VI"
    ]
   },
   {
@@ -4582,7 +4742,8 @@
     "GR",
     "NO",
     "SE",
-    "FI"
+    "FI",
+    "PR"
    ]
   },
   {
@@ -7682,6 +7843,86 @@
    "publisher": "Prohibition Partners",
    "title": "Finland: medical cannabis market overview 2025 (Oct 10 2025)",
    "url": "https://prohibitionpartners.com/2025/10/10/finland-medical-cannabis-market-overview-2025/",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "gu-norml-legal",
+   "kind": "organization",
+   "publisher": "NORML",
+   "title": "Guam legalization (Guam Cannabis Industries Act, signed Apr 4 2019)",
+   "url": "https://norml.org/laws/legalization/guam-legalization",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "gu-norml-pen",
+   "kind": "organization",
+   "publisher": "NORML",
+   "title": "Guam penalties",
+   "url": "https://norml.org/laws/guam-penalties/",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "gu-norml-med",
+   "kind": "organization",
+   "publisher": "NORML",
+   "title": "Guam medical marijuana law",
+   "url": "https://norml.org/legal/item/guam-medical-marijuana-law",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "gu-weedmaps",
+   "kind": "organization",
+   "publisher": "Weedmaps (secondary)",
+   "title": "Is weed legal in Guam?",
+   "url": "https://weedmaps.com/learn/laws-and-regulations/guam",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "us-mpp-territories",
+   "kind": "organization",
+   "publisher": "Marijuana Policy Project",
+   "title": "U.S. territories",
+   "url": "https://www.mpp.org/policy/us-territories/",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "mp-mpp-2018",
+   "kind": "organization",
+   "publisher": "Marijuana Policy Project",
+   "title": "Summary of the Taulamwaar Sensible CNMI Cannabis Act of 2018 (HB 20-178)",
+   "url": "https://www.mpp.org/states/northern-mariana-islands-marijuana-legalization-and-regulation-bill-summary/",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "vi-ocr",
+   "kind": "regulator",
+   "publisher": "Virgin Islands Office of Cannabis Regulation",
+   "title": "Office of Cannabis Regulation home page",
+   "url": "https://ocr.vi.gov/",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "vi-gov-2023",
+   "kind": "government",
+   "publisher": "Government of the U.S. Virgin Islands",
+   "title": "Government House clarifies status of cannabis use in the territory (Jan 2023)",
+   "url": "https://www.vi.gov/government-house-clarifies-status-of-cannabis-use-in-the-territory/",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "vi-vibehigh",
+   "kind": "organization",
+   "publisher": "VibeHigh USVI (secondary)",
+   "title": "USVI cannabis law: from the MCPCA to the Cannabis Use Act (updated Apr 12 2026)",
+   "url": "https://www.vibehigh.vi/guides/us-virgin-islands-medical-marijuana-law/",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "vi-consortium-2026",
+   "kind": "news",
+   "publisher": "The Virgin Islands Consortium",
+   "title": "OCR says cannabis cultivation could begin within weeks, with dispensaries opening before year-end (Aug 2026)",
+   "url": "https://viconsortium.com/vi-business/virgin-islands-ocr-says-cannabis-cultivation-could-begin-within-weeks--with-dispensaries-opening-before-year-end",
    "retrieved_on": "2026-11-20"
   }
  ]
