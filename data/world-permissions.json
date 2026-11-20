@@ -5156,6 +5156,83 @@
      "Government work in 2025 centred on a framework for a regulated medical cannabis industry."
     ]
    }
+  },
+  "BM": {
+   "name": "Bermuda",
+   "page": "world-bermuda.html",
+   "summary": "Since December 20, 2017, simple possession of 7 grams or less of cannabis is not a criminal offence, but cannabis is still a controlled drug: police can seize any amount, and smoking, growing, selling and importing remain illegal. Bermuda's 2022 bill for a licensed cannabis market was blocked when the UK instructed the Governor not to give assent.",
+   "note": "Bermuda is a British Overseas Territory, so the UK has a say over laws that touch its treaty obligations.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Decriminalised possession only; use is illegal",
+     "detail": "The 2017 amendment does not legalise cannabis. Smoking it in public or private places, growing, trafficking and importing all remain illegal, and the government has reminded the public that decriminalisation is not legalisation.",
+     "citation": "Government of Bermuda fact sheet (2017); Ministerial Statement",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bm-facts-2017",
+      "bm-ministerial"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales",
+     "detail": "There is no licensed market. The Cannabis Licensing Bill 2022 would have created one, but on September 6, 2022 the Governor announced she had been instructed not to assent to it, because the UK judged it inconsistent with the 1961 and 1971 UN drug conventions.",
+     "citation": "Governor's statement (gov.uk, Sep 6 2022)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bm-uk-2022"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "7 grams or less is not a criminal offence",
+     "detail": "Criminal offences no longer apply to simple possession of 7 grams or less by any person. Police may still seize any amount, weigh and test it, and search a home, vessel or vehicle if they suspect another offence such as intent to supply. More than 7 grams can lead to arrest, prosecution and a conviction.",
+     "citation": "Government of Bermuda fact sheet on the 2017 Amendment Act, items 3 and 6-9",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bm-facts-2017"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Growing is illegal",
+     "detail": "The 2017 Act does not make it legal to cultivate cannabis in any quantity.",
+     "citation": "Government of Bermuda fact sheet (2017), item 3",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bm-facts-2017"
+     ]
+    },
+    "record-relief": {
+     "status": "not-permitted",
+     "short": "Old convictions are not erased",
+     "detail": "The 2017 Act does not erase cannabis convictions from before it took effect, and the government notes it cannot guarantee anyone will not be stopped when travelling to the United States.",
+     "citation": "Government of Bermuda fact sheet (2017), items 4-5",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bm-facts-2017"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "The UK said in 2022 that Bermuda can still legislate for medicinal, scientific and some industrial cannabis, and can decriminalise small personal amounts, but not legalise sales in shops or cafés.",
+    "source_ids": [
+     "bm-uk-2022"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Bermuda",
+    "source_ids": [
+     "bm-facts-2017",
+     "bm-uk-2022"
+    ],
+    "points": [
+     "Possession of a small amount is not a crime, but using cannabis anywhere still is.",
+     "A 2022 bill for a licensed market was stopped by the UK.",
+     "Past convictions stay on record, which can matter at the US border."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -5519,7 +5596,8 @@
     "FI",
     "PR",
     "BB",
-    "BS"
+    "BS",
+    "BM"
    ]
   },
   {
@@ -8984,6 +9062,30 @@
    "publisher": "Government of Dominica, Government Information Service",
    "title": "Government hosts two-day National Cannabis Symposium (Jul 11 2025)",
    "url": "https://www.news.gov.dm/news/news-items/government-hosts-two-day-national-cannabis-symposium",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bm-facts-2017",
+   "kind": "government",
+   "publisher": "Government of Bermuda",
+   "title": "Public Awareness Fact Sheet: Misuse of Drugs (Decriminalisation of Cannabis) Amendment Act 2017 (in force Dec 20 2017)",
+   "url": "https://www.gov.bm/sites/default/files/8870_Decrim_Weed_FACTS-REVISED.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bm-uk-2022",
+   "kind": "government",
+   "publisher": "UK Government (gov.uk), Governor of Bermuda",
+   "title": "Governor of Bermuda update on Cannabis Licensing Bill (statement of Sep 6 2022)",
+   "url": "https://www.gov.uk/government/news/governor-of-bermuda-update-on-cannabis-licensing-bill",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bm-ministerial",
+   "kind": "government",
+   "publisher": "Government of Bermuda",
+   "title": "Ministerial Statement: Clarification on Legal Status of Cannabis Possession (undated; retrieved Nov 20 2026)",
+   "url": "https://www.gov.bm/print/html/node/1224686",
    "retrieved_on": "2026-11-19"
   }
  ]

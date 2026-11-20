@@ -243,22 +243,6 @@
     }
    ]
   },
-  "BM": {
-   "name": "Bermuda",
-   "page": "world-bermuda.html",
-   "fcdo_title": "Bermuda (British Overseas Territory)",
-   "source_id": "fcdo-bermuda",
-   "updated": "2025-11-01",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs penalties",
-     "paragraphs": [
-      "Do not become involved with drugs of any kind. Penalties for possessing or importing drugs include prison sentences of up to 25 years and heavy fines."
-     ]
-    }
-   ]
-  },
   "BT": {
    "name": "Bhutan",
    "page": "world-bhutan.html",
@@ -2597,14 +2581,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Benin travel advice (last updated by the FCDO 2026-11-04)",
    "url": "https://www.gov.uk/foreign-travel-advice/benin",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-bermuda",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Bermuda (British Overseas Territory) travel advice (last updated by the FCDO 2025-11-01)",
-   "url": "https://www.gov.uk/foreign-travel-advice/bermuda",
    "retrieved_on": "2026-11-20"
   },
   {
