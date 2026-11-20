@@ -1,0 +1,3376 @@
+{
+ "snapshot_date": "2026-11-20",
+ "api": "https://www.gov.uk/api/content/foreign-travel-advice/<slug>",
+ "countries": {
+  "afghanistan": {
+   "title": "Afghanistan",
+   "url": "https://www.gov.uk/foreign-travel-advice/afghanistan",
+   "updated": "2026-07-30",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal food, drugs and alcohol",
+     "paragraphs": [
+      "You are not allowed to use or bring into the country narcotics, alcohol or pork products. If you do, you could be arrested."
+     ]
+    }
+   ]
+  },
+  "albania": {
+   "title": "Albania",
+   "url": "https://www.gov.uk/foreign-travel-advice/albania",
+   "updated": "2026-10-15",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Penalties for drug-related crimes are severe.",
+      "You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Possession of illegal drugs could result in a prison sentence of 5 to 10 years. The penalty for supplying drugs is up to 15 years in prison.",
+      "Airports in Albania have excellent technology and security for detecting illegal items, including cannabis. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "algeria": {
+   "title": "Algeria",
+   "url": "https://www.gov.uk/foreign-travel-advice/algeria",
+   "updated": "2026-09-25",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There is zero tolerance for drugs-related offences. The penalties for trafficking, smuggling, using and possessing illegal drugs are severe and can include the death penalty depending upon the severity of the offence."
+     ]
+    }
+   ]
+  },
+  "andorra": {
+   "title": "Andorra",
+   "url": "https://www.gov.uk/foreign-travel-advice/andorra",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Andorra has a zero-tolerance policy on the possession and use of illegal drugs. Punishment for possession of even the smallest amount of illegal drugs can include refusal of entry, expulsion from the country, fines and prison sentences."
+     ]
+    }
+   ]
+  },
+  "angola": {
+   "title": "Angola",
+   "url": "https://www.gov.uk/foreign-travel-advice/angola",
+   "updated": "2026-05-28",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Drug taking and smuggling are offences. Punishments can be severe and prison conditions are very poor."
+     ]
+    }
+   ]
+  },
+  "anguilla": {
+   "title": "Anguilla (British Overseas Territory)",
+   "url": "https://www.gov.uk/foreign-travel-advice/anguilla",
+   "updated": "2025-05-15",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "Similar to the UK, there are harsh penalties in Anguilla if you’re caught with illegal drugs."
+     ]
+    }
+   ]
+  },
+  "antarctica-british-antarctic-territory": {
+   "title": "Antarctica/British Antarctic Territory",
+   "url": "https://www.gov.uk/foreign-travel-advice/antarctica-british-antarctic-territory",
+   "updated": "2025-04-10",
+   "sections": []
+  },
+  "antigua-and-barbuda": {
+   "title": "Antigua and Barbuda",
+   "url": "https://www.gov.uk/foreign-travel-advice/antigua-and-barbuda",
+   "updated": "2026-03-13",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "It is illegal to possess drugs. There are severe penalties for all drug offences. Pack all luggage yourself and do not carry anything through customs for anyone else."
+     ]
+    }
+   ]
+  },
+  "argentina": {
+   "title": "Argentina",
+   "url": "https://www.gov.uk/foreign-travel-advice/argentina",
+   "updated": "2026-05-07",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Do not become involved with illegal drugs of any kind. Possession of even very small quantities can lead to a lengthy prison sentence."
+     ]
+    }
+   ]
+  },
+  "armenia": {
+   "title": "Armenia",
+   "url": "https://www.gov.uk/foreign-travel-advice/armenia",
+   "updated": "2026-03-01",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "If you possess, use or smuggle illegal drugs, including cannabis, you can get heavy fines and a long jail sentence, including when transiting through the airport. The penalty for smuggling drugs is a prison sentence of between 4 and 10 years.",
+      "It is illegal to use, possess or trade marijuana, cannabidiol (CBD), or tetrahydrocannabinol (THC) products. You can be prosecuted for having these substances even when they are prescribed for medical purposes.",
+      "Airports in Armenia have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "aruba": {
+   "title": "Aruba",
+   "url": "https://www.gov.uk/foreign-travel-advice/aruba",
+   "updated": "2026-07-07",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Drug-related crime",
+     "paragraphs": [
+      "Aruba is used as a drug passageway from South America to Europe and North America. There can be drug-related violent crime."
+     ]
+    },
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "There are severe penalties for all drug offences. Do not leave bags unattended or agree to carry a package for anyone."
+     ]
+    }
+   ]
+  },
+  "australia": {
+   "title": "Australia",
+   "url": "https://www.gov.uk/foreign-travel-advice/australia",
+   "updated": "2026-03-19",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "The Australian authorities act against anyone who imports or traffics illegal drugs. Prosecution can lead to a lengthy prison sentence and deportation."
+     ]
+    }
+   ]
+  },
+  "austria": {
+   "title": "Austria",
+   "url": "https://www.gov.uk/foreign-travel-advice/austria",
+   "updated": "2026-08-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties.",
+      "You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Austria have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "azerbaijan": {
+   "title": "Azerbaijan",
+   "url": "https://www.gov.uk/foreign-travel-advice/azerbaijan",
+   "updated": "2026-10-23",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Possession or use of illegal drugs, including cannabis, carries severe penalties. You should expect a long jail sentence and heavy fines for possessing, using, or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Azerbaijan have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "bahamas": {
+   "title": "Bahamas",
+   "url": "https://www.gov.uk/foreign-travel-advice/bahamas",
+   "updated": "2026-05-28",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Penalties for possessing or trafficking drugs are severe. Tourists may encounter drugs in pubs and bars. Police are vigilant and you could face a substantial fine, deportation or imprisonment."
+     ]
+    }
+   ]
+  },
+  "bahrain": {
+   "title": "Bahrain",
+   "url": "https://www.gov.uk/foreign-travel-advice/bahrain",
+   "updated": "2026-11-18",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Illegal drugs are strictly forbidden, even a residual amount. Consuming or carrying illegal drugs, even if you are travelling through the airport, can lead to a prison sentence and deportation. Buying or selling illegal drugs and narcotics is illegal and can lead to a life sentence.",
+      "Some skincare products and e-cigarette refills may contain ingredients that are illegal in Bahrain, such as CBD oil."
+     ]
+    }
+   ]
+  },
+  "bangladesh": {
+   "title": "Bangladesh",
+   "url": "https://www.gov.uk/foreign-travel-advice/bangladesh",
+   "updated": "2026-10-22",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "There are severe penalties for possessing and trafficking illegal drugs. Some drug-related offences are punishable by the death penalty or life imprisonment."
+     ]
+    }
+   ]
+  },
+  "barbados": {
+   "title": "Barbados",
+   "url": "https://www.gov.uk/foreign-travel-advice/barbados",
+   "updated": "2026-01-23",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "It is illegal to possess drugs. There are severe penalties for all drug offences. Pack your luggage yourself and do not carry anything through customs for anyone else."
+     ]
+    }
+   ]
+  },
+  "belarus": {
+   "title": "Belarus",
+   "url": "https://www.gov.uk/foreign-travel-advice/belarus",
+   "updated": "2026-09-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "There are severe penalties for drug-related crimes in Belarus. Possession of illegal drugs, including small amounts of Class C substances such as cannabis, can result in prison sentences of up to 5 years. More serious offences, such as smuggling or trafficking, carry penalties of up to 25 years in prison and heavy fines. These laws apply even if you are only transiting through the airport.",
+      "Airports in Belarus have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers. You should expect strict enforcement and serious consequences if found in possession of illegal substances."
+     ]
+    }
+   ]
+  },
+  "belgium": {
+   "title": "Belgium",
+   "url": "https://www.gov.uk/foreign-travel-advice/belgium",
+   "updated": "2026-10-17",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Possession, use, or trafficking of illegal drugs, including cannabis, are serious offences and can lead to a minimum 3-month prison sentence, long jail terms, or heavy fines. You should expect severe penalties even when transiting through the airport.",
+      "Airports in Belgium have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "belize": {
+   "title": "Belize",
+   "url": "https://www.gov.uk/foreign-travel-advice/belize",
+   "updated": "2026-11-05",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Possession of illegal drugs can lead to a fine and prison sentence."
+     ]
+    }
+   ]
+  },
+  "benin": {
+   "title": "Benin",
+   "url": "https://www.gov.uk/foreign-travel-advice/benin",
+   "updated": "2026-11-04",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Possession, use or trafficking of illegal drugs is a serious offence and can result in a lengthy prison sentence and heavy fines."
+     ]
+    }
+   ]
+  },
+  "bermuda": {
+   "title": "Bermuda (British Overseas Territory)",
+   "url": "https://www.gov.uk/foreign-travel-advice/bermuda",
+   "updated": "2025-11-01",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "Do not become involved with drugs of any kind. Penalties for possessing or importing drugs include prison sentences of up to 25 years and heavy fines."
+     ]
+    }
+   ]
+  },
+  "bhutan": {
+   "title": "Bhutan",
+   "url": "https://www.gov.uk/foreign-travel-advice/bhutan",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There are strict penalties for possession, use and trafficking of illegal drugs. If convicted, you could get a prison sentence and heavy fine. Sentences range from a minimum of 3 years to a life sentence depending upon the type and quantity of drugs."
+     ]
+    }
+   ]
+  },
+  "bolivia": {
+   "title": "Bolivia",
+   "url": "https://www.gov.uk/foreign-travel-advice/bolivia",
+   "updated": "2026-09-22",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Bolivia is the world’s third largest producer of cocaine. There are harsh penalties for those caught trafficking or in possession of drugs. The minimum sentence is 8 years and prison conditions are very poor. Never leave luggage unattended when departing the country and avoid any contact with illegal drugs. Under Bolivian law carrying any amount of illegal drugs or substances is considered drug trafficking.",
+      "All passengers on departing international flights from Bolivia will have their hold and hand baggage searched by the Police Narcotics Division, and this will include a search of your person and your bags by a sniffer dog."
+     ]
+    }
+   ]
+  },
+  "bonaire-st-eustatius-saba": {
+   "title": "Bonaire, St Eustatius and Saba",
+   "url": "https://www.gov.uk/foreign-travel-advice/bonaire-st-eustatius-saba",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Drug smuggling",
+     "paragraphs": [
+      "Drug smugglers use Bonaire, St Eustatius and Saba to smuggle illegal drugs from South America to Europe and North America. Never leave bags unattended and do not discuss or agree to carry a package for anyone.",
+      "Dutch authorities generally screen all baggage and passengers from Bonaire, St Eustatius and Saba."
+     ]
+    }
+   ]
+  },
+  "bosnia-and-herzegovina": {
+   "title": "Bosnia and Herzegovina",
+   "url": "https://www.gov.uk/foreign-travel-advice/bosnia-and-herzegovina",
+   "updated": "2026-08-13",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Bosnia and Herzegovina have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "botswana": {
+   "title": "Botswana",
+   "url": "https://www.gov.uk/foreign-travel-advice/botswana",
+   "updated": "2026-11-06",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Drug taking and trafficking are illegal. If you’re convicted of a drug-related offence, you can get a fine of up to 500,000 pulas (about £30,000) or a prison sentence of up to 25 years, or both. Prison conditions are generally poor."
+     ]
+    }
+   ]
+  },
+  "brazil": {
+   "title": "Brazil",
+   "url": "https://www.gov.uk/foreign-travel-advice/brazil",
+   "updated": "2026-11-17",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and trafficking scams",
+     "paragraphs": [
+      "Drug trafficking is widespread in Brazil. Bringing drugs in to or out of Brazil in any quantity is illegal and the penalties are severe.",
+      "You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "British nationals have been targeted through email scams where fraudsters offer a financial reward for travelling to Brazil, where they are then asked to carry items in to or out of Brazil, including to the UK. These items are often illegal drugs. Anyone caught will face detention for drug trafficking, regardless of the circumstances.",
+      "Airports in Brazil have excellent technology and security for detecting illegal items, including cannabis. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "british-indian-ocean-territory": {
+   "title": "British Indian Ocean Territory",
+   "url": "https://www.gov.uk/foreign-travel-advice/british-indian-ocean-territory",
+   "updated": "2024-04-08",
+   "sections": []
+  },
+  "british-virgin-islands": {
+   "title": "British Virgin Islands (British Overseas Territory)",
+   "url": "https://www.gov.uk/foreign-travel-advice/british-virgin-islands",
+   "updated": "2025-11-03",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Possession of even small quantities of illegal drugs can lead to large fines or imprisonment. Drug trafficking is a serious offence. Pack your luggage yourself and do not carry items for anyone else."
+     ]
+    }
+   ]
+  },
+  "brunei": {
+   "title": "Brunei",
+   "url": "https://www.gov.uk/foreign-travel-advice/brunei",
+   "updated": "2026-03-19",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "There are severe penalties for drug offences in Brunei including, in some cases, the death penalty. Other crimes may be punished by caning and lengthy prison sentences."
+     ]
+    }
+   ]
+  },
+  "bulgaria": {
+   "title": "Bulgaria",
+   "url": "https://www.gov.uk/foreign-travel-advice/bulgaria",
+   "updated": "2026-08-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and sex offences",
+     "paragraphs": [
+      "The Bulgarian authorities treat all drug-related and sex offences very seriously. Any foreign nationals convicted of such offences can expect a prison sentence. Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using, or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Bulgaria have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "burkina-faso": {
+   "title": "Burkina Faso",
+   "url": "https://www.gov.uk/foreign-travel-advice/burkina-faso",
+   "updated": "2026-10-26",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "The death penalty was reinstated in Burkina Faso in October 2026 for certain offences, including:",
+      "acts of terrorism",
+      "espionage",
+      "treason",
+      "parricide",
+      "importing expired or banned products that cause death",
+      "Do not get involved in drugs of any kind. If you’re convicted of possessing or distributing any illegal drug, you can expect heavy fines and long jail sentences. Local prison conditions are harsh."
+     ]
+    }
+   ]
+  },
+  "burundi": {
+   "title": "Burundi",
+   "url": "https://www.gov.uk/foreign-travel-advice/burundi",
+   "updated": "2026-05-21",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties.",
+      "You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Burundi have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "cambodia": {
+   "title": "Cambodia",
+   "url": "https://www.gov.uk/foreign-travel-advice/cambodia",
+   "updated": "2026-11-18",
+   "sections": [
+    {
+     "part": "warnings-and-insurance",
+     "heading": "Cannabis and drug offences",
+     "paragraphs": [
+      "It is illegal to carry cannabis out of Cambodia. British nationals have been arrested for attempting to take cannabis out of the country, including while transiting through other countries. Many international airports use advanced screening technology and may scan the baggage of transit passengers.",
+      "Drug offences, including the possession, use and trafficking of cannabis, are serious crimes in Cambodia. If you are found carrying cannabis or other illegal drugs, you can be arrested and may face a lengthy prison sentence of up to 30 years. Do not carry bags, packages or items for other people. You are responsible for anything found in your luggage.",
+      "See more information about illegal drugs on the Safety and security page."
+     ]
+    },
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Possession, trafficking and manufacture of any illegal drugs are serious offences in Cambodia. This includes cannabis. British nationals have been caught carrying cannabis while transiting through Cambodia.",
+      "Airports in Cambodia have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers.",
+      "The Cambodia authorities have a zero-tolerance policy to drug offences. Possessing drugs, even in very small quantities, can carry severe penalties, including:",
+      "arrest and detention",
+      "a long jail sentence if charged and convicted. This can include a life sentence with no reduction for good behaviour",
+      "Legal processes before court hearings can be long and expensive. It can take many months for a case to come to trial.",
+      "Criminal gangs in the UK and elsewhere have been known to coerce people into carrying drugs across borders. Do not allow yourself to be persuaded.",
+      "It is important to be aware of your rights if you are detained by the police. See our guidance for those detained or imprisoned in Cambodia .",
+      "Police often raid venues known to be frequented by foreigners. You may have to take a urine or blood test if there is a suspicion you have used drugs. You will be arrested if the test is positive."
+     ]
+    }
+   ]
+  },
+  "cameroon": {
+   "title": "Cameroon",
+   "url": "https://www.gov.uk/foreign-travel-advice/cameroon",
+   "updated": "2026-11-06",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Penalties for using and possessing drugs are severe and usually include a prison sentence."
+     ]
+    }
+   ]
+  },
+  "canada": {
+   "title": "Canada",
+   "url": "https://www.gov.uk/foreign-travel-advice/canada",
+   "updated": "2026-06-02",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and cannabis",
+     "paragraphs": [
+      "Illegal drugs carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Recreational cannabis is legally available in Canada. Laws vary depending on the province or territory you are visiting . It is illegal to take cannabis across the Canadian border without a permit or exemption authorised by Health Canada. Those who attempt to take cannabis out of Canada without the relevant permit face arrest.",
+      "Airports in Canada have excellent technology and security for detecting illegal items, including cannabis. This is also used to scan the baggage of transiting passengers.",
+      "See the Canadian Border Services Agency website for more information."
+     ]
+    }
+   ]
+  },
+  "cape-verde": {
+   "title": "Cape Verde",
+   "url": "https://www.gov.uk/foreign-travel-advice/cape-verde",
+   "updated": "2026-07-28",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There are severe penalties for possessing, using or trafficking drugs. Penalties include fines and long prison sentences."
+     ]
+    }
+   ]
+  },
+  "cayman-islands": {
+   "title": "Cayman Islands (British Overseas Territory)",
+   "url": "https://www.gov.uk/foreign-travel-advice/cayman-islands",
+   "updated": "2025-10-29",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There are harsh penalties for those caught with drugs of any kind. Penalties can include imprisonment for up to 35 years, and fines of unlimited amounts."
+     ]
+    }
+   ]
+  },
+  "central-african-republic": {
+   "title": "Central African Republic",
+   "url": "https://www.gov.uk/foreign-travel-advice/central-african-republic",
+   "updated": "2026-05-28",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "There are severe penalties for drug use and possession. If convicted, you can expect heavy fines and a long jail sentence."
+     ]
+    }
+   ]
+  },
+  "chad": {
+   "title": "Chad",
+   "url": "https://www.gov.uk/foreign-travel-advice/chad",
+   "updated": "2026-11-04",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Penalties for drug use and possession are severe and usually include a prison sentence. Conditions in local prisons are harsh."
+     ]
+    }
+   ]
+  },
+  "chile": {
+   "title": "Chile",
+   "url": "https://www.gov.uk/foreign-travel-advice/chile",
+   "updated": "2026-11-09",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Using or possessing drugs is illegal and can lead to prison sentences."
+     ]
+    }
+   ]
+  },
+  "china": {
+   "title": "China",
+   "url": "https://www.gov.uk/foreign-travel-advice/china",
+   "updated": "2026-08-27",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties and prison sentences",
+     "paragraphs": [
+      "Possession, trafficking and manufacture of any illegal drugs, including cannabis, are serious offences in China. The Chinese authorities have a zero-tolerance policy and those caught face heavy fines, lengthy prison sentences, or the death penalty.",
+      "Airports in China have security equipment and procedures in place for scanning and detecting illegal items, including cannabis. This is also used to scan all the baggage of transiting passengers.",
+      "The Chinese authorities can randomly test foreign nationals for drugs, including on entry to the country. Police can also raid homes as well as nightclubs and bars. If you’re in a bar that’s raided, you will be subject to on-the-spot testing and immigration checks. This may involve:",
+      "being kept at the location, or another location, for several hours",
+      "giving hair and urine samples",
+      "passport and visa checks",
+      "If you test positive, the Chinese authorities can prosecute you regardless of where or when you took drugs. Testing positive for drugs, or being found in breach of your visa conditions, can lead to heavy fines, detention and deportation."
+     ]
+    }
+   ]
+  },
+  "colombia": {
+   "title": "Colombia",
+   "url": "https://www.gov.uk/foreign-travel-advice/colombia",
+   "updated": "2026-10-30",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Drug assisted robberies and sexual assaults",
+     "paragraphs": [
+      "The British Embassy has received reports of criminals in Colombia using drugs to subdue their victims. This includes the use of scopolamine, which temporarily incapacitates victims. Criminals can administer drugs through food, drinks, cigarettes, aerosols and even paper flyers. Victims become disoriented quickly and are vulnerable to robbery, sexual assault, rape and other crimes.",
+      "Criminals use dating applications and websites to identify and lure foreign nationals who are travelling alone and looking to meet local people. Criminals work in teams, with women easing the victim into a false sense of security. Victims are incapacitated and robbed. Incidents have been reported in nightclubs, bars, restaurants, public transportation, including taxis, and on city streets. Do not accept invitations from strangers to their accommodation, and do not invite strangers to your accommodation.",
+      "Do not leave food or drinks unattended and do not take anything offered by strangers. These drugs can cause serious medical problems, including loss of consciousness, memory loss and can be fatal if administered in large quantities. Get local medical attention as soon as possible.",
+      "Where possible, plan how you will travel to and from your destination. Only use pre-booked taxis."
+     ]
+    },
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Colombia has severe penalties for possession, use or trafficking of illegal drugs.",
+      "Colombian drug detection methods are sophisticated and anyone attempting to traffic drugs can expect to be arrested. British nationals have been arrested and detained for trying to smuggle cocaine out of the country. Prison conditions are harsh. Pack your own luggage and keep it with you at all times. Lock your cases to protect them from tampering. Never carry items for other people. Never exchange money for strangers, as this is a common practice among money launderers."
+     ]
+    }
+   ]
+  },
+  "comoros": {
+   "title": "Comoros",
+   "url": "https://www.gov.uk/foreign-travel-advice/comoros",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Drug trafficking and possession are serious offences. If you are found guilty, you could get a long prison sentence and a fine."
+     ]
+    }
+   ]
+  },
+  "congo": {
+   "title": "Congo",
+   "url": "https://www.gov.uk/foreign-travel-advice/congo",
+   "updated": "2026-10-27",
+   "sections": []
+  },
+  "cook-islands-tokelau-and-niue": {
+   "title": "Cook Islands, Tokelau and Niue",
+   "url": "https://www.gov.uk/foreign-travel-advice/cook-islands-tokelau-and-niue",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There are severe penalties for possessing or importing even small amounts of drugs, including deportation and imprisonment."
+     ]
+    }
+   ]
+  },
+  "costa-rica": {
+   "title": "Costa Rica",
+   "url": "https://www.gov.uk/foreign-travel-advice/costa-rica",
+   "updated": "2026-05-19",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Do not get involved with drugs of any kind. The Costa Rican authorities treat the possession of drugs and drug trafficking severely. The minimum sentence is 8 years imprisonment."
+     ]
+    }
+   ]
+  },
+  "cote-d-ivoire": {
+   "title": "Côte d'Ivoire",
+   "url": "https://www.gov.uk/foreign-travel-advice/cote-d-ivoire",
+   "updated": "2026-11-09",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Drug trafficking and possession are illegal. If you’re found guilty, you could receive a long prison sentence or a heavy fine."
+     ]
+    }
+   ]
+  },
+  "croatia": {
+   "title": "Croatia",
+   "url": "https://www.gov.uk/foreign-travel-advice/croatia",
+   "updated": "2026-08-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. Carrying cannabis for personal use has been decriminalised but if found on you or in your apartment, you will be asked to pay sometimes heavy fines.",
+      "You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Croatia have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "cuba": {
+   "title": "Cuba",
+   "url": "https://www.gov.uk/foreign-travel-advice/cuba",
+   "updated": "2026-09-25",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "Cuba has a zero tolerance policy against the use, possession and trafficking of illegal drugs. Cuban courts can give severe penalties for drug-related offences. Pack all luggage yourself and do not carry items for anyone else."
+     ]
+    }
+   ]
+  },
+  "curacao": {
+   "title": "Curaçao",
+   "url": "https://www.gov.uk/foreign-travel-advice/curacao",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Drug smuggling",
+     "paragraphs": [
+      "Criminals continue to use the islands of the Dutch Caribbean to smuggle illegal drugs from South America to Europe and North America. Because of this problem, never leave luggage unattended when departing the country. Do not discuss or agree to carry a package for anyone. You may be asked to have a body scan at some airports. Dutch authorities generally screen all baggage and passengers from the Dutch Caribbean."
+     ]
+    }
+   ]
+  },
+  "cyprus": {
+   "title": "Cyprus",
+   "url": "https://www.gov.uk/foreign-travel-advice/cyprus",
+   "updated": "2026-08-14",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Cyprus has a strictly enforced zero-tolerance policy towards illegal drugs, including laughing gas and cannabis.",
+      "You should expect severe penalties such as a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Cyprus have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "czechia": {
+   "title": "Czechia",
+   "url": "https://www.gov.uk/foreign-travel-advice/czechia",
+   "updated": "2026-08-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "The possession, sale and distribution of drugs, including cannabis, is illegal, and the drugs are often dangerous counterfeits. Some shops, particularly in Prague, advertise ‘cannabis products’, which contain trace amounts of THC permissible under Czech law.",
+      "You should expect severe penalties such as a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport. Convictions carry sentences of up to 18 years.",
+      "Airports in Czechia have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "democratic-republic-of-the-congo": {
+   "title": "Democratic Republic of the Congo",
+   "url": "https://www.gov.uk/foreign-travel-advice/democratic-republic-of-the-congo",
+   "updated": "2026-10-08",
+   "sections": []
+  },
+  "denmark": {
+   "title": "Denmark",
+   "url": "https://www.gov.uk/foreign-travel-advice/denmark",
+   "updated": "2026-08-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, are strictly prohibited, even in small quantities. Severe penalties apply for possessing, using, or smuggling illegal drugs, including when transiting through airports.",
+      "You should expect long jail sentences of up to 10 years and substantial heavy fines.",
+      "Airports in Denmark have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "djibouti": {
+   "title": "Djibouti",
+   "url": "https://www.gov.uk/foreign-travel-advice/djibouti",
+   "updated": "2026-07-27",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "",
+     "paragraphs": [
+      "Driving standards are generally poor. Many drivers use the legal narcotic khat, which contributes to speeding and unsafe driving. Roads are often narrow and poorly lit and maintained."
+     ]
+    }
+   ]
+  },
+  "dominica": {
+   "title": "Dominica",
+   "url": "https://www.gov.uk/foreign-travel-advice/dominica",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There are severe penalties for drug offences. Pack all your luggage yourself and do not carry anything through customs for anyone else."
+     ]
+    }
+   ]
+  },
+  "dominican-republic": {
+   "title": "Dominican Republic",
+   "url": "https://www.gov.uk/foreign-travel-advice/dominican-republic",
+   "updated": "2026-08-07",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There are severe penalties for all drug offences. Possession of even small quantities of any drug can lead to a fine and a prison sentence. Pack your own luggage and do not carry anything through customs for anyone else.",
+      "If you’re arrested for drug offences your case can take several years to progress through the judicial process, during which you’re likely to be held in detention. If you’re given a prison sentence, you will serve the whole sentence in the Dominican Republic."
+     ]
+    }
+   ]
+  },
+  "ecuador": {
+   "title": "Ecuador",
+   "url": "https://www.gov.uk/foreign-travel-advice/ecuador",
+   "updated": "2026-11-20",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Drug-assisted robbery",
+     "paragraphs": [
+      "Criminals may use drugs to incapacitate victims, leaving them vulnerable to robbery, assault and other crimes. Substances such as scopolamine can cause confusion, compliance, memory loss and an inability to resist or seek help, even while victims remain conscious and appear functional.",
+      "These substances may be administered in food or drinks and, in some reported cases, through direct physical contact without a victim’s knowledge. Even brief interactions can impair awareness and judgement. Be cautious of strangers offering food, drinks, cigarettes, chewing gum, leaflets, perfume samples or other items. Avoid accepting anything from people you do not know well.",
+      "British nationals have reported suspected drug-assisted robberies in private rented accommodation. Take particular care when meeting with people you only know through online interactions, inviting unfamiliar individuals into your accommodation, or visiting theirs. Where possible, meet in public, share your plans with someone you trust, and avoid being alone with people you do not know well."
+     ]
+    },
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "The penalties for drug trafficking or drug use are harsh, and prison conditions are very basic."
+     ]
+    }
+   ]
+  },
+  "egypt": {
+   "title": "Egypt",
+   "url": "https://www.gov.uk/foreign-travel-advice/egypt",
+   "updated": "2026-10-27",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "Possession, use or trafficking of illegal drugs is a serious offence and can, even for small amounts, lead to life imprisonment or the death penalty. People who get a life sentence on drugs charges normally spend the rest of their lives in prison with no chance of parole or a pardon.",
+      "Khat is illegal in Egypt."
+     ]
+    }
+   ]
+  },
+  "el-salvador": {
+   "title": "El Salvador",
+   "url": "https://www.gov.uk/foreign-travel-advice/el-salvador",
+   "updated": "2026-11-05",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There are severe penalties for drug use and trafficking in El Salvador. Prisons are overcrowded and violent."
+     ]
+    }
+   ]
+  },
+  "equatorial-guinea": {
+   "title": "Equatorial Guinea",
+   "url": "https://www.gov.uk/foreign-travel-advice/equatorial-guinea",
+   "updated": "2026-01-08",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Possession of drugs is a serious offence and punishments can be severe, including prison sentences."
+     ]
+    }
+   ]
+  },
+  "eritrea": {
+   "title": "Eritrea",
+   "url": "https://www.gov.uk/foreign-travel-advice/eritrea",
+   "updated": "2026-11-09",
+   "sections": []
+  },
+  "estonia": {
+   "title": "Estonia",
+   "url": "https://www.gov.uk/foreign-travel-advice/estonia",
+   "updated": "2026-08-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, are strictly prohibited, even in very small quantities. Severe penalties apply for possessing, using, buying, or smuggling illegal drugs, including when transiting through airports. You should expect long jail sentences of up to 10 years and heavy fines.",
+      "Airports in Estonia have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "eswatini": {
+   "title": "Eswatini",
+   "url": "https://www.gov.uk/foreign-travel-advice/eswatini",
+   "updated": "2026-11-09",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Punishments for possessing or smuggling narcotic drugs can be severe. You can be imprisoned for illegal drug offences."
+     ]
+    }
+   ]
+  },
+  "ethiopia": {
+   "title": "Ethiopia",
+   "url": "https://www.gov.uk/foreign-travel-advice/ethiopia",
+   "updated": "2026-10-30",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Drug offences are treated seriously in Ethiopia. Possession of drugs can lead to prison sentences of 5 to 10 years and potentially large fines.",
+      "Khat is legal in Ethiopia, but it is illegal to take it out of the country. If you’re found with it in your baggage, the authorities are likely to prosecute you."
+     ]
+    }
+   ]
+  },
+  "falkland-islands": {
+   "title": "Falkland Islands (British Overseas Territory)",
+   "url": "https://www.gov.uk/foreign-travel-advice/falkland-islands",
+   "updated": "2026-08-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Drug trafficking and possession are illegal in the Falkland Islands and can lead to a prison sentence."
+     ]
+    }
+   ]
+  },
+  "federated-states-of-micronesia": {
+   "title": "Federated States of Micronesia",
+   "url": "https://www.gov.uk/foreign-travel-advice/federated-states-of-micronesia",
+   "updated": "2026-03-19",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There are heavy penalties for drug offences. If convicted, you risk a fine and a long prison sentence."
+     ]
+    }
+   ]
+  },
+  "fiji": {
+   "title": "Fiji",
+   "url": "https://www.gov.uk/foreign-travel-advice/fiji",
+   "updated": "2026-08-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Possession of even small quantities of illegal drugs can lead to imprisonment and a large fine. Possession of any amount of marijuana carries a 3-month prison sentence."
+     ]
+    }
+   ]
+  },
+  "finland": {
+   "title": "Finland",
+   "url": "https://www.gov.uk/foreign-travel-advice/finland",
+   "updated": "2026-11-17",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, are prohibited, even in small quantities. Severe penalties apply for possessing, using, buying or smuggling illegal drugs, including when transiting through airports. You should expect long jail sentences of up to 10 years and heavy fines.",
+      "Airports in Finland have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "france": {
+   "title": "France",
+   "url": "https://www.gov.uk/foreign-travel-advice/france",
+   "updated": "2026-10-22",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties including imprisonment and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through airports, ports and Eurostar stations.",
+      "Airports, ports and Eurostar stations in France have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "french-guiana": {
+   "title": "French Guiana",
+   "url": "https://www.gov.uk/foreign-travel-advice/french-guiana",
+   "updated": "2025-12-10",
+   "sections": []
+  },
+  "french-polynesia": {
+   "title": "French Polynesia",
+   "url": "https://www.gov.uk/foreign-travel-advice/french-polynesia",
+   "updated": "2025-12-10",
+   "sections": []
+  },
+  "gabon": {
+   "title": "Gabon",
+   "url": "https://www.gov.uk/foreign-travel-advice/gabon",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Possession of drugs is a serious offence and punishment can be severe, including a prison sentence."
+     ]
+    }
+   ]
+  },
+  "georgia": {
+   "title": "Georgia",
+   "url": "https://www.gov.uk/foreign-travel-advice/georgia",
+   "updated": "2026-11-12",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence of 5 to 25 years and heavy fines for possessing, using, or smuggling of illegal drugs, including when transiting through the airport.",
+      "Airports in Georgia have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "germany": {
+   "title": "Germany",
+   "url": "https://www.gov.uk/foreign-travel-advice/germany",
+   "updated": "2026-08-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Germany have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "ghana": {
+   "title": "Ghana",
+   "url": "https://www.gov.uk/foreign-travel-advice/ghana",
+   "updated": "2026-11-04",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "The possession of Illegal drugs, including cannabis, carry severe penalties.",
+      "Bail is not normally granted.",
+      "You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Even possession of small amounts of cannabis can lead to a prison sentence of more than 5 years, usually after a long and expensive legal process.",
+      "Airports in Ghana have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers.",
+      "Class A drugs like cocaine are likely to be laced with other substances. Foreign visitors, including British nationals, have died after taking these drugs."
+     ]
+    }
+   ]
+  },
+  "gibraltar": {
+   "title": "Gibraltar (British Overseas Territory)",
+   "url": "https://www.gov.uk/foreign-travel-advice/gibraltar",
+   "updated": "2026-07-14",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Alcohol and drug laws",
+     "paragraphs": [
+      "The laws of Gibraltar are similar to UK laws for alcohol, drugs and anti-social behaviour."
+     ]
+    }
+   ]
+  },
+  "greece": {
+   "title": "Greece",
+   "url": "https://www.gov.uk/foreign-travel-advice/greece",
+   "updated": "2026-11-03",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through airports.",
+      "Airports in Greece have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "grenada": {
+   "title": "Grenada",
+   "url": "https://www.gov.uk/foreign-travel-advice/grenada",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "There are severe penalties for all drug offences. Pack all luggage yourself and do not carry anything through customs for anyone else."
+     ]
+    }
+   ]
+  },
+  "guadeloupe": {
+   "title": "Guadeloupe",
+   "url": "https://www.gov.uk/foreign-travel-advice/guadeloupe",
+   "updated": "2026-10-22",
+   "sections": []
+  },
+  "guatemala": {
+   "title": "Guatemala",
+   "url": "https://www.gov.uk/foreign-travel-advice/guatemala",
+   "updated": "2026-11-16",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There are severe penalties for drug trafficking and the use of drugs. Guatemalan prisons are overcrowded, violent, and dirty."
+     ]
+    }
+   ]
+  },
+  "guinea-bissau": {
+   "title": "Guinea-Bissau",
+   "url": "https://www.gov.uk/foreign-travel-advice/guinea-bissau",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There are severe penalties for all drug offences. Local prison conditions are harsh."
+     ]
+    }
+   ]
+  },
+  "guinea": {
+   "title": "Guinea",
+   "url": "https://www.gov.uk/foreign-travel-advice/guinea",
+   "updated": "2026-08-12",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Do not become involved with illegal drugs of any kind.",
+      "If you commit a drugs crime, you are likely to be prosecuted. There are heavy penalties for those convicted."
+     ]
+    }
+   ]
+  },
+  "guyana": {
+   "title": "Guyana",
+   "url": "https://www.gov.uk/foreign-travel-advice/guyana",
+   "updated": "2025-12-30",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "You can get lengthy prison sentences and heavy fines for possession or the trafficking of drugs. The minimum jail sentence for drug offences is 3 years, and prison conditions in Guyana are tough. Pack all luggage yourself and do not carry any items that do not belong to you."
+     ]
+    }
+   ]
+  },
+  "haiti": {
+   "title": "Haiti",
+   "url": "https://www.gov.uk/foreign-travel-advice/haiti",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Penalties for possession, use or trafficking of illegal drugs are severe. Convicted offenders can expect lengthy legal proceedings, jail sentences and fines.",
+      "Pack all luggage yourself and do not carry items through customs for anyone else.",
+      "If you’re caught in possession of drugs or suspected of drug trafficking, you may be arrested and jailed for weeks or months before appearing in court. Prison conditions in Haiti are very poor."
+     ]
+    }
+   ]
+  },
+  "honduras": {
+   "title": "Honduras",
+   "url": "https://www.gov.uk/foreign-travel-advice/honduras",
+   "updated": "2026-11-05",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There are severe penalties for drug trafficking (15 to 20 years in prison and a very large fine) and drug use (from 3 to 9 months in a rehabilitation centre). Honduran prisons are overcrowded and violent."
+     ]
+    }
+   ]
+  },
+  "hong-kong": {
+   "title": "Hong Kong (SAR of China)",
+   "url": "https://www.gov.uk/foreign-travel-advice/hong-kong",
+   "updated": "2026-04-01",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Avoid any involvement with illegal drugs, including cannabis. All cannabis products are illegal in Hong Kong, including CBD (cannabidiol) items such as oils, creams, capsules, and food products.",
+      "Criminal gangs and individuals in the UK and overseas have been known to coerce people into carrying drugs. Do not allow yourself to be persuaded.",
+      "Hong Kong enforces a zero‑tolerance policy toward dangerous drugs and will not tolerate drug‑related activities. If you are found guilty of smuggling, trafficking, possessing, or using illegal narcotics, including while transiting through the airport, you should expect a severe prison sentence.",
+      "Airports in Hong Kong have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "hungary": {
+   "title": "Hungary",
+   "url": "https://www.gov.uk/foreign-travel-advice/hungary",
+   "updated": "2026-09-23",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Hungary have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "iceland": {
+   "title": "Iceland",
+   "url": "https://www.gov.uk/foreign-travel-advice/iceland",
+   "updated": "2026-08-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, even small amounts, including cannabis and khat carry severe penalties.",
+      "You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Iceland have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "india": {
+   "title": "India",
+   "url": "https://www.gov.uk/foreign-travel-advice/india",
+   "updated": "2026-10-07",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Do not get involved with any illegal drugs. Drugs are not categorised as they would be in the UK, into Class A, B and C and possession of any illegal drug could lead to sentencing. You could face a minimum sentence of 6 months for possession of small amounts deemed for personal consumption only, up to a 10-year sentence for other amounts. The judicial process is slow, and you could be detained for several years while your case is processed."
+     ]
+    }
+   ]
+  },
+  "indonesia": {
+   "title": "Indonesia",
+   "url": "https://www.gov.uk/foreign-travel-advice/indonesia",
+   "updated": "2026-09-18",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Alcoholic drinks and drugs",
+     "paragraphs": [
+      "Drinks served in bars can be stronger than those in the UK, usually because the measures of spirits are larger. In some cases, excessive drinking and taking drugs has resulted in accidents, injuries, robbery, assaults and lost travel documents. Some British nationals have suffered psychiatric problems caused by alcohol, drugs and a lack of sleep. Drink responsibly and be aware of your limits."
+     ]
+    },
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Do not get involved with illegal drugs in Indonesia. Possession, using, making or trafficking illegal drugs is a serious crime. The Indonesian authorities have a zero-tolerance policy and those caught may face long prison sentences or the death penalty. Legal cases can be lengthy and costly.",
+      "Cannabis and cannabis-based products, including medicinal cannabis, cannabis-based oils and creams, hemp-based products, CBD, THC, hash and edibles, are illegal in Indonesia. This applies whether it is carried in a bottle, vape, or any other form. The NHS has guidance explaining how cannabis oils differ and the risks they may carry.",
+      "British nationals have been caught and given long prison sentences for drug offences. Criminal groups sometimes pressure people into carrying drugs across borders. Do not allow yourself to be persuaded.",
+      "Airports in Indonesia have excellent technology and security for detecting illegal items, including cannabis. This is also used to scan the baggage of transiting passengers.",
+      "If you are detained by the police, it is important to understand your rights. The British embassy provides a guide to the legal and detention systems in Indonesia , but you must follow local laws and regulations. Any payments requested after arrest, that you agree to, are at your own discretion.",
+      "In some venues drugs may be offered as free samples. Police often raid venues popular with foreigners, especially in Bali. If police suspect drug use, you may be required to take a urine or blood test. A positive result will lead to arrest."
+     ]
+    }
+   ]
+  },
+  "iran": {
+   "title": "Iran",
+   "url": "https://www.gov.uk/foreign-travel-advice/iran",
+   "updated": "2026-11-18",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "It is illegal to import, sell, manufacture or consume drugs in Iran. Penalties for importing and possessing drugs are severe and enforced. Many people convicted of drug offences, including foreign nationals, have been executed."
+     ]
+    }
+   ]
+  },
+  "iraq": {
+   "title": "Iraq",
+   "url": "https://www.gov.uk/foreign-travel-advice/iraq",
+   "updated": "2026-11-18",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Iraq continues to practise the death penalty for a range of crimes including:",
+      "drug trafficking",
+      "espionage",
+      "kidnapping",
+      "murder",
+      "rape",
+      "smuggling antiquities",
+      "terrorism",
+      "war crimes"
+     ]
+    }
+   ]
+  },
+  "ireland": {
+   "title": "Ireland",
+   "url": "https://www.gov.uk/foreign-travel-advice/ireland",
+   "updated": "2026-09-04",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Possession of even small quantities of drugs, including cannabis, carry severe penalties.",
+      "You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport. Do not offer to carry any items for anyone else when entering or leaving Ireland.",
+      "Airports in Ireland have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "israel": {
+   "title": "Israel",
+   "url": "https://www.gov.uk/foreign-travel-advice/israel",
+   "updated": "2026-11-18",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "If you’re caught with drugs, you can expect a prison sentence."
+     ]
+    }
+   ]
+  },
+  "italy": {
+   "title": "Italy",
+   "url": "https://www.gov.uk/foreign-travel-advice/italy",
+   "updated": "2026-11-03",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through airports.",
+      "Airports in Italy have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "jamaica": {
+   "title": "Jamaica",
+   "url": "https://www.gov.uk/foreign-travel-advice/jamaica",
+   "updated": "2026-05-06",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "It’s illegal to smoke marijuana (ganja) in Jamaica. There are penalties for all drug offences including those involving marijuana. For possession of amounts of up to 2 ounces you will get a fine of 500 Jamaican dollars, to be paid within 30 days. Severe penalties apply for all other drug related offences, including attempting to export narcotics.",
+      "All prison sentences are served in full in Jamaica. Prison conditions are harsh. Always pack your own luggage and do not carry anything through customs for someone else."
+     ]
+    }
+   ]
+  },
+  "japan": {
+   "title": "Japan",
+   "url": "https://www.gov.uk/foreign-travel-advice/japan",
+   "updated": "2026-08-28",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Japan has strict laws around drug use. If the police find an illegal substance in your bloodstream, you may be charged, regardless of whether you consented or were aware of taking the drugs. If you refuse to take a test if asked to by the police, you could be arrested and detained for ‘obstructing police duties’.",
+      "If you take blood tests at medical institutions, they are usually obliged to report to the police if they detect any illegal substances."
+     ]
+    },
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There is zero tolerance of drug crime and the penalties are severe. British nationals have been arrested and detained for receiving small quantities through the post or if they test positive when the police raid clubs or bars. British nationals convicted of drug trafficking have received sentences ranging from 6 to 17 years and fines of 3 to 4 million yen. Prisoners in Japan are assigned labour or factory work as part of their sentences."
+     ]
+    }
+   ]
+  },
+  "jordan": {
+   "title": "Jordan",
+   "url": "https://www.gov.uk/foreign-travel-advice/jordan",
+   "updated": "2026-11-18",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "It is illegal to possess, use or traffic drugs. If convicted, you can get a lengthy prison sentence and heavy fine."
+     ]
+    }
+   ]
+  },
+  "kazakhstan": {
+   "title": "Kazakhstan",
+   "url": "https://www.gov.uk/foreign-travel-advice/kazakhstan",
+   "updated": "2026-10-30",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "You could face a lengthy prison sentence:",
+      "for possession, storing and transportation of drugs with distribution purposes – 5 to 8 years",
+      "for possession, storing and transportation of drugs with distribution purposes in large amounts – 6 to 10 years",
+      "for advertising drugs – up to 3 years in prison, and 3 to 6 years if using social media",
+      "Prison conditions are basic.",
+      "Airports in Kazakhstan have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "kenya": {
+   "title": "Kenya",
+   "url": "https://www.gov.uk/foreign-travel-advice/kenya",
+   "updated": "2026-11-06",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "If you’re convicted of using illegal drugs in Kenya, you will get a heavy fine and prison sentence. The penalty for possession is up to 10 years in prison. People found to be trafficking illegal drugs could face life imprisonment."
+     ]
+    }
+   ]
+  },
+  "kiribati": {
+   "title": "Kiribati",
+   "url": "https://www.gov.uk/foreign-travel-advice/kiribati",
+   "updated": "2026-03-19",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Possession or trafficking of drugs is a serious offence in Kiribati, and prison sentences may be heavy."
+     ]
+    }
+   ]
+  },
+  "kosovo": {
+   "title": "Kosovo",
+   "url": "https://www.gov.uk/foreign-travel-advice/kosovo",
+   "updated": "2026-09-23",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Kosovo have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "kuwait": {
+   "title": "Kuwait",
+   "url": "https://www.gov.uk/foreign-travel-advice/kuwait",
+   "updated": "2026-11-18",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "Kuwait has zero tolerance for drug-related offences. Penalties for drug smuggling or trafficking include the death sentence. Offences involving minors or committed in schools, hospitals, prisons or other protected locations can result in life imprisonment or the death penalty.",
+      "Possession or use of illegal drugs, including for small or residual amounts, can lead to a prison sentence of between 5 and 10 years, and heavy fines. Bail is not usually given and even if found not guilty, defendants can expect to spend several months in detention while the case progresses through the judicial system.",
+      "Wearing, using, or displaying items that promote or encourage narcotics, including logos on clothing, constitutes an offence and may result in significant fines."
+     ]
+    }
+   ]
+  },
+  "kyrgyzstan": {
+   "title": "Kyrgyzstan",
+   "url": "https://www.gov.uk/foreign-travel-advice/kyrgyzstan",
+   "updated": "2026-09-14",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "It is illegal to possess or use drugs. You could get a lengthy prison sentence if convicted. Prison conditions are basic.",
+      "The police conduct regular drug raids in bars and night clubs. Police will be masked and armed. Stay calm and follow instructions. If you are not carrying and have not taken drugs you are normally asked for identification and then allowed to leave."
+     ]
+    }
+   ]
+  },
+  "laos": {
+   "title": "Laos",
+   "url": "https://www.gov.uk/foreign-travel-advice/laos",
+   "updated": "2026-11-19",
+   "sections": [
+    {
+     "part": "warnings-and-insurance",
+     "heading": "It is illegal to attempt to smuggle drugs out of Laos",
+     "paragraphs": [
+      "British nationals have been caught attempting to smuggle drugs out of Laos. The airports and border checkpoints have excellent technology and security for detecting illegal items, which may be used to scan the baggage of passengers. If caught you will be arrested and detained.",
+      "See more information about illegal drugs on the Safety and security page."
+     ]
+    },
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and the death penalty",
+     "paragraphs": [
+      "Possession, trafficking and manufacturing of any illegal drugs are serious offences in Laos. This includes cannabis. British nationals have been arrested carrying drugs through the Laos border and are serving lengthy sentences in Lao prisons.",
+      "The Laos authorities have a zero-tolerance policy to drug offences. Possessing drugs, even in very small quantities, carries severe penalties, including:",
+      "arrest and detention",
+      "a long jail sentence if charged and convicted",
+      "a possible death penalty for drug trafficking",
+      "Criminal gangs in the UK and elsewhere are known to coerce British nationals into carrying drugs across the Laos border. Do not allow yourself to be persuaded, once you are caught it is too late to regret the decision you have made.",
+      "Airports in Laos have security equipment and procedures in place for scanning and detecting illegal substances, including cannabis. This is also used to scan the carry-on and checked-in baggage of all passengers.",
+      "Police often raid venues known to be frequented by foreigners. You may have to take a urine or blood test if there is a suspicion you have used drugs. You are likely to be arrested if the test is positive."
+     ]
+    }
+   ]
+  },
+  "latvia": {
+   "title": "Latvia",
+   "url": "https://www.gov.uk/foreign-travel-advice/latvia",
+   "updated": "2026-08-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, are strictly prohibited, even in very small quantities. Severe penalties apply for possessing, using, buying, or smuggling illegal drugs, including when transiting through airports. You should expect long jail sentences of up to 10 years and heavy fines.",
+      "Airports in Latvia have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "lebanon": {
+   "title": "Lebanon",
+   "url": "https://www.gov.uk/foreign-travel-advice/lebanon",
+   "updated": "2026-08-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Drug smuggling and violent crime",
+     "paragraphs": [
+      "Criminal gangs involved in drug cultivation and smuggling operate in parts of the Beqaa Valley, especially northern Beqaa. Other armed crimes, such as robbery and kidnap, can occur in these areas. There are also frequent armed clashes between gangs and the security forces."
+     ]
+    },
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Possessing, using and trafficking illegal drugs (including small quantities) are all serious offences, punishable with prison sentences."
+     ]
+    }
+   ]
+  },
+  "lesotho": {
+   "title": "Lesotho",
+   "url": "https://www.gov.uk/foreign-travel-advice/lesotho",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Possession of drugs is a serious offence and punishments can be severe, including prison sentences."
+     ]
+    }
+   ]
+  },
+  "liberia": {
+   "title": "Liberia",
+   "url": "https://www.gov.uk/foreign-travel-advice/liberia",
+   "updated": "2026-11-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Drug trafficking and diamond smuggling",
+     "paragraphs": [
+      "Drug trafficking and gold and diamond smuggling are illegal. If convicted, you will get a long prison sentence. Local prison conditions are harsh."
+     ]
+    }
+   ]
+  },
+  "libya": {
+   "title": "Libya",
+   "url": "https://www.gov.uk/foreign-travel-advice/libya",
+   "updated": "2026-07-21",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Alcohol and drugs laws",
+     "paragraphs": [
+      "It is illegal in Libya to drink alcohol or use drugs. Libyan authorities treat drug and alcohol offences seriously. You can be punished for use, possession and trafficking of drugs or alcohol."
+     ]
+    }
+   ]
+  },
+  "liechtenstein": {
+   "title": "Liechtenstein",
+   "url": "https://www.gov.uk/foreign-travel-advice/liechtenstein",
+   "updated": "2026-08-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the country."
+     ]
+    }
+   ]
+  },
+  "lithuania": {
+   "title": "Lithuania",
+   "url": "https://www.gov.uk/foreign-travel-advice/lithuania",
+   "updated": "2026-08-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, are strictly prohibited, even in very small quantities. Severe penalties apply for possessing, using, buying, or smuggling illegal drugs, including when transiting through airports. You should expect long jail sentences of up to 10 years and heavy fines.",
+      "Airports in Lithuania have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "luxembourg": {
+   "title": "Luxembourg",
+   "url": "https://www.gov.uk/foreign-travel-advice/luxembourg",
+   "updated": "2026-08-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "The airport in Luxembourg has excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "macao": {
+   "title": "Macao (SAR of China)",
+   "url": "https://www.gov.uk/foreign-travel-advice/macao",
+   "updated": "2025-12-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Do not become involved with drugs. Possession of drugs can lead to imprisonment."
+     ]
+    }
+   ]
+  },
+  "madagascar": {
+   "title": "Madagascar",
+   "url": "https://www.gov.uk/foreign-travel-advice/madagascar",
+   "updated": "2026-11-16",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Drug smuggling is a serious offence. Punishments can be severe and prison conditions are harsh and life-threatening."
+     ]
+    }
+   ]
+  },
+  "malawi": {
+   "title": "Malawi",
+   "url": "https://www.gov.uk/foreign-travel-advice/malawi",
+   "updated": "2026-10-20",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "Penalties for drug use and smuggling can be severe. This includes cannabis."
+     ]
+    }
+   ]
+  },
+  "malaysia": {
+   "title": "Malaysia",
+   "url": "https://www.gov.uk/foreign-travel-advice/malaysia",
+   "updated": "2026-11-18",
+   "sections": [
+    {
+     "part": "warnings-and-insurance",
+     "heading": "Cannabis and drug offences",
+     "paragraphs": [
+      "It is illegal to possess, use, traffic, import or export cannabis and other controlled drugs in Malaysia, including while transiting through to other countries. Many international airports use advance screening technology and may scan the baggage of transit passengers.",
+      "Malaysia has some of the world’s strictest drug laws. Severe penalties apply, including long prison sentences of up to 20 years, caning, and the death penalty.",
+      "See more information on the Safety and security page."
+     ]
+    },
+    {
+     "part": "entry-requirements",
+     "heading": "Drug screening",
+     "paragraphs": [
+      "The Malaysian authorities could ask you to take a urine test on arrival if they suspect drug use. If they find drugs in your system, they could detain or deport you and ban you from returning to Malaysia. You could face these penalties even if you took the drug outside Malaysia, including in a country where it is legal."
+     ]
+    },
+    {
+     "part": "safety-and-security",
+     "heading": "Cannabis and drug offences",
+     "paragraphs": [
+      "British Nationals have been arrested for attempting to take cannabis through Malaysian airports and border crossings. You can be arrested and prosecuted even if the drugs belong to someone else or if you are carrying items on behalf of another person.",
+      "Never carry packages, bags or other items through Malaysian airports or border crossings for people you do not know or trust. You are responsible for the content of your luggage and personal belongings.",
+      "If you are arrested or detained for a drug-related offence, the British High Commission can provide consular assistance but cannot intervene in the Malaysian legal process or secure your release from custody."
+     ]
+    },
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "Possession, trafficking and manufacture of any illegal drugs are serious offences in Malaysia. This includes cannabis. British nationals have been caught carrying cannabis while transiting through Malaysia.",
+      "Airports in Malaysia have security equipment and procedures in place for scanning and detecting illegal substances, including cannabis. This is also used to scan all carry-on and checked-in baggage of transiting passengers.",
+      "The Malaysian authorities have a zero-tolerance policy to drug offences. Possessing drugs, even in very small quantities, carries severe penalties, including:",
+      "arrest and detention",
+      "a long jail sentence if charged and convicted",
+      "a possible whipping",
+      "a possible death sentence by hanging for drug trafficking",
+      "Legal processes before court hearings can be long and expensive. It can take many months for a case to go to trial and time served ahead of that will not be included as part of the sentence.",
+      "Criminal gangs in the UK and elsewhere are known to coerce people into carrying drugs across borders. Do not allow yourself to be persuaded.",
+      "It is important to be aware of your rights if you are detained by the police. See our guidance for those detained or imprisoned in Malaysia .",
+      "Police often raid venues known to be frequented by foreigners. You may have to take a urine or blood test if there is a reasonable suspicion you have used drugs. You will be arrested if the test is positive."
+     ]
+    }
+   ]
+  },
+  "maldives": {
+   "title": "Maldives",
+   "url": "https://www.gov.uk/foreign-travel-advice/maldives",
+   "updated": "2026-08-12",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "Possession, trafficking and manufacture of any illegal drugs are serious offences in Maldives and penalties can be severe. This includes cannabis, even small quantities can lead to arrest.",
+      "British nationals have been caught carrying controlled drugs while transiting Maldives.",
+      "International airports in Maldives have advanced scanning systems and procedures in place for scanning and detecting illegal substances, including cannabis. This includes all carry-on and checked-in baggage of transiting passengers.",
+      "The Maldivian authorities have a zero-tolerance policy to drug offences. Possessing drugs, even in very small quantities, carries severe penalties, including:",
+      "arrest and detention",
+      "long prison sentences if convicted",
+      "corporal punishment (whipping) in some cases",
+      "death penalty for the most serious offences",
+      "You are strongly advised:",
+      "not to carry any controlled substances, including cannabis, even if legal in your departure country",
+      "to check your luggage thoroughly before travelling or transiting through the Maldives",
+      "if prescribed medication contains controlled substances, carry a doctor’s prescription and check Maldivian regulations in advance"
+     ]
+    }
+   ]
+  },
+  "mali": {
+   "title": "Mali",
+   "url": "https://www.gov.uk/foreign-travel-advice/mali",
+   "updated": "2026-07-10",
+   "sections": []
+  },
+  "malta": {
+   "title": "Malta",
+   "url": "https://www.gov.uk/foreign-travel-advice/malta",
+   "updated": "2026-08-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties for tourists.",
+      "Malta legalised the cultivation and personal use of cannabis at home in 2021, but smoking in public is illegal and attracts a fine. Possession of up to 7g of cannabis in public for personal use at home is legal for Maltese residents only.",
+      "You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport. Schengen bans (of up to 5 years) may also be issued alongside fines or after release from detention.",
+      "The airport in Malta has excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "marshall-islands": {
+   "title": "Marshall Islands",
+   "url": "https://www.gov.uk/foreign-travel-advice/marshall-islands",
+   "updated": "2026-03-19",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "There are severe penalties for all drug offences, including long prison sentences and heavy fines."
+     ]
+    }
+   ]
+  },
+  "martinique": {
+   "title": "Martinique",
+   "url": "https://www.gov.uk/foreign-travel-advice/martinique",
+   "updated": "2026-10-23",
+   "sections": []
+  },
+  "mauritania": {
+   "title": "Mauritania",
+   "url": "https://www.gov.uk/foreign-travel-advice/mauritania",
+   "updated": "2026-10-19",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Drug laws in Mauritania are severe. The penalties for possessing illegal drugs include imprisonment."
+     ]
+    }
+   ]
+  },
+  "mauritius": {
+   "title": "Mauritius",
+   "url": "https://www.gov.uk/foreign-travel-advice/mauritius",
+   "updated": "2026-10-19",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. Pack all luggage yourself and do not carry anything through customs for anyone else.",
+      "You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Mauritius have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers.",
+      "If you are found with any drugs, it’s unlikely you’ll be bailed, regardless of the type of drug. Prosecutions take a year or more to come to court, and you’ll be detained until your trial."
+     ]
+    }
+   ]
+  },
+  "mayotte": {
+   "title": "Mayotte",
+   "url": "https://www.gov.uk/foreign-travel-advice/mayotte",
+   "updated": "2025-12-10",
+   "sections": []
+  },
+  "mexico": {
+   "title": "Mexico",
+   "url": "https://www.gov.uk/foreign-travel-advice/mexico",
+   "updated": "2026-10-20",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Do not become involved with drugs of any kind. Penalties for drug offences are severe and convictions carry sentences of up to 25 years."
+     ]
+    }
+   ]
+  },
+  "moldova": {
+   "title": "Moldova",
+   "url": "https://www.gov.uk/foreign-travel-advice/moldova",
+   "updated": "2026-11-04",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, even small quantities of drugs (class A, B or C) including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Moldova have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "monaco": {
+   "title": "Monaco",
+   "url": "https://www.gov.uk/foreign-travel-advice/monaco",
+   "updated": "2025-12-10",
+   "sections": []
+  },
+  "mongolia": {
+   "title": "Mongolia",
+   "url": "https://www.gov.uk/foreign-travel-advice/mongolia",
+   "updated": "2026-08-07",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "It is illegal to possess or use any type of drugs, including cannabis. If you are found guilty of drug trafficking, you could face a life sentence. Mongolian prisons have very basic facilities."
+     ]
+    }
+   ]
+  },
+  "montenegro": {
+   "title": "Montenegro",
+   "url": "https://www.gov.uk/foreign-travel-advice/montenegro",
+   "updated": "2026-08-13",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Montenegro have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "montserrat": {
+   "title": "Montserrat",
+   "url": "https://www.gov.uk/foreign-travel-advice/montserrat",
+   "updated": "2026-07-03",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "The penalties for possession, use or trafficking of illegal drugs are severe. If convicted, offenders can expect prison sentences and heavy fines."
+     ]
+    }
+   ]
+  },
+  "morocco": {
+   "title": "Morocco",
+   "url": "https://www.gov.uk/foreign-travel-advice/morocco",
+   "updated": "2026-08-19",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Morocco has a zero-tolerance approach towards drugs. Possessing, using or trafficking illegal drugs, including cannabis, are serious offences and carry severe penalties.",
+      "You should expect a long jail sentence and heavy fines for these actions, including when transiting through the country. Airports in Morocco are equipped with technology and security for detecting items prohibited by customs controls, including for the baggage or transiting passengers. Do not accept items from strangers or leave your bags attended."
+     ]
+    }
+   ]
+  },
+  "mozambique": {
+   "title": "Mozambique",
+   "url": "https://www.gov.uk/foreign-travel-advice/mozambique",
+   "updated": "2026-08-20",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "If you are convicted of drug use, possession or trafficking, you can expect to get a long prison sentence and a fine."
+     ]
+    }
+   ]
+  },
+  "myanmar": {
+   "title": "Myanmar",
+   "url": "https://www.gov.uk/foreign-travel-advice/myanmar",
+   "updated": "2026-08-04",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Penalties for drug trafficking include a prison sentence of a minimum 15 years or even the death penalty.",
+      "For possession of illegal drugs in Myanmar, you could get a fine and a prison sentence of a minimum 5 years to a maximum of 10 years, regardless of the quantity of drugs."
+     ]
+    }
+   ]
+  },
+  "namibia": {
+   "title": "Namibia",
+   "url": "https://www.gov.uk/foreign-travel-advice/namibia",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Penalties for using or smuggling illegal drugs can be severe. Penalties include large fines and imprisonment."
+     ]
+    }
+   ]
+  },
+  "nauru": {
+   "title": "Nauru",
+   "url": "https://www.gov.uk/foreign-travel-advice/nauru",
+   "updated": "2026-03-19",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Do not get involved with illegal drugs of any kind. There are severe penalties including custodial sentences for drug offences."
+     ]
+    }
+   ]
+  },
+  "nepal": {
+   "title": "Nepal",
+   "url": "https://www.gov.uk/foreign-travel-advice/nepal",
+   "updated": "2026-10-01",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Penalties for drugs related offences are severe. If you are caught with even small amounts of marijuana, you can go to prison for over 5 years, usually after a long and expensive legal process.",
+      "Some skincare products and e-cigarette refills may contain ingredients that are illegal in Nepal such as cannabidiol ( CBD ). If the police find you with products containing CBD , they may seize them and charge you with drug possession."
+     ]
+    }
+   ]
+  },
+  "netherlands": {
+   "title": "Netherlands",
+   "url": "https://www.gov.uk/foreign-travel-advice/netherlands",
+   "updated": "2026-08-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Drug sellers",
+     "paragraphs": [
+      "Avoid confrontation with anyone offering you drugs. Stay away from quiet or dark alleys, particularly late at night."
+     ]
+    },
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "The Netherlands has a reputation for being tolerant on the use of ‘soft drugs’, such as cannabis. However, drug use is only tolerated in designated premises in the major cities. Buying or possessing prohibited drugs and substances outside of designated areas, including when transiting through airports, is illegal and can result in a prison sentence.",
+      "Airports in Netherlands have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers.",
+      "Smoking soft drugs in public places is illegal. There are specific cafés where it is legal to purchase and use cannabis in limited quantities and under strict conditions.",
+      "The sale of dry and fresh psychoactive mushrooms is illegal. However, the truffle (sclerotium) form of psychoactive (psilocybin) mushrooms is not covered under Dutch law (Opium Act) and is still sold in regulated ‘smart shops’.",
+      "Be extremely careful as mixing alcohol, cannabis and wild mushrooms can be fatal."
+     ]
+    }
+   ]
+  },
+  "new-caledonia": {
+   "title": "New Caledonia",
+   "url": "https://www.gov.uk/foreign-travel-advice/new-caledonia",
+   "updated": "2025-12-10",
+   "sections": []
+  },
+  "new-zealand": {
+   "title": "New Zealand",
+   "url": "https://www.gov.uk/foreign-travel-advice/new-zealand",
+   "updated": "2026-03-19",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Importing illegal drugs could result in a prison sentence of up to 12 years."
+     ]
+    }
+   ]
+  },
+  "nicaragua": {
+   "title": "Nicaragua",
+   "url": "https://www.gov.uk/foreign-travel-advice/nicaragua",
+   "updated": "2026-11-05",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Do not become involved with drugs of any kind. Possession of even small quantities can lead to imprisonment."
+     ]
+    }
+   ]
+  },
+  "niger": {
+   "title": "Niger",
+   "url": "https://www.gov.uk/foreign-travel-advice/niger",
+   "updated": "2026-10-23",
+   "sections": []
+  },
+  "nigeria": {
+   "title": "Nigeria",
+   "url": "https://www.gov.uk/foreign-travel-advice/nigeria",
+   "updated": "2026-11-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Possession or use of illegal drugs, including cannabis, carries severe penalties in Nigeria. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting.",
+      "Nigeria has excellent technology and security for detecting illegal items at the border. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "north-korea": {
+   "title": "Korea, DPR (North Korea)",
+   "url": "https://www.gov.uk/foreign-travel-advice/north-korea",
+   "updated": "2025-12-10",
+   "sections": []
+  },
+  "north-macedonia": {
+   "title": "North Macedonia",
+   "url": "https://www.gov.uk/foreign-travel-advice/north-macedonia",
+   "updated": "2026-08-13",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in North Macedonia have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "norway": {
+   "title": "Norway",
+   "url": "https://www.gov.uk/foreign-travel-advice/norway",
+   "updated": "2026-08-25",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Norway have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "oman": {
+   "title": "Oman",
+   "url": "https://www.gov.uk/foreign-travel-advice/oman",
+   "updated": "2026-11-18",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "There are severe penalties for importing, trafficking, smuggling and possessing drugs, even residual amounts. In some cases, offenders could get the death penalty. There is no distinction in Omani law between ‘soft’ and ‘hard’ drugs – both are treated with equal severity."
+     ]
+    }
+   ]
+  },
+  "pakistan": {
+   "title": "Pakistan",
+   "url": "https://www.gov.uk/foreign-travel-advice/pakistan",
+   "updated": "2026-11-18",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and penalties",
+     "paragraphs": [
+      "You can get a prison sentence for possession of even small quantities of illegal drugs. British nationals have been arrested on drug trafficking charges and have been detained for long periods while their case is in the Pakistan legal system."
+     ]
+    }
+   ]
+  },
+  "palau": {
+   "title": "Palau",
+   "url": "https://www.gov.uk/foreign-travel-advice/palau",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There are heavy penalties for all drug offences. If you’re convicted of possessing even a small amount of an illegal drug, you could get a fine or a prison sentence."
+     ]
+    }
+   ]
+  },
+  "palestine": {
+   "title": "Palestine",
+   "url": "https://www.gov.uk/foreign-travel-advice/palestine",
+   "updated": "2026-11-18",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "If you’re caught with drugs, you can expect a prison sentence."
+     ]
+    }
+   ]
+  },
+  "panama": {
+   "title": "Panama",
+   "url": "https://www.gov.uk/foreign-travel-advice/panama",
+   "updated": "2026-10-09",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Do not become involved with drugs of any kind. You can get a prison sentence for possessing even a small quantity of drugs.",
+      "The judicial process is slow and sentencing may take up to 2 years, during which you are likely to be detained. Conditions in prisons and other detention facilities in Panama are often harsh. Most facilities are overcrowded with limited access to healthcare. There have been recent cases of riots resulting in prisoner deaths."
+     ]
+    }
+   ]
+  },
+  "papua-new-guinea": {
+   "title": "Papua New Guinea",
+   "url": "https://www.gov.uk/foreign-travel-advice/papua-new-guinea",
+   "updated": "2026-08-17",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "It is a serious offence to use, possess or traffic illegal drugs, including marijuana. If convicted, you can get a long prison sentence."
+     ]
+    }
+   ]
+  },
+  "paraguay": {
+   "title": "Paraguay",
+   "url": "https://www.gov.uk/foreign-travel-advice/paraguay",
+   "updated": "2026-11-03",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There are severe penalties for trafficking and possession of illegal drugs. If you are caught in possession of or trafficking drugs, you may get a prison sentence, without bail. Prison standards are poor."
+     ]
+    }
+   ]
+  },
+  "peru": {
+   "title": "Peru",
+   "url": "https://www.gov.uk/foreign-travel-advice/peru",
+   "updated": "2026-11-06",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Illegal drug use and drug trafficking in Peru carry lengthy jail sentences. Prison conditions in Peru are extremely poor and the British Embassy cannot intervene in police or judicial matters, or secure more favourable conditions.",
+      "You should:",
+      "pack your luggage yourself and always keep it with you",
+      "not carry anything through customs for anyone",
+      "not take coca leaves or coca tea out of the country – it is illegal to import these items into the UK",
+      "Drug couriers have targeted British nationals with email scams. These criminals will try to get you to travel to Peru to pick up items containing drugs. You’ll face detention for drug trafficking if convicted."
+     ]
+    }
+   ]
+  },
+  "philippines": {
+   "title": "Philippines",
+   "url": "https://www.gov.uk/foreign-travel-advice/philippines",
+   "updated": "2026-07-15",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Do not become involved with drugs of any kind. Penalties for importing and using illegal drugs are particularly severe. A conviction for possession of even a small amount of any illicit drug in the Philippines means a mandatory prison sentence.",
+      "Police and other authorities have been publicly encouraged to kill suspected drug traffickers who resist arrest."
+     ]
+    }
+   ]
+  },
+  "pitcairn-island": {
+   "title": "Pitcairn Island",
+   "url": "https://www.gov.uk/foreign-travel-advice/pitcairn-island",
+   "updated": "2025-03-27",
+   "sections": []
+  },
+  "poland": {
+   "title": "Poland",
+   "url": "https://www.gov.uk/foreign-travel-advice/poland",
+   "updated": "2026-11-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Poland have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "portugal": {
+   "title": "Portugal",
+   "url": "https://www.gov.uk/foreign-travel-advice/portugal",
+   "updated": "2026-11-12",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Portugal have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "qatar": {
+   "title": "Qatar",
+   "url": "https://www.gov.uk/foreign-travel-advice/qatar",
+   "updated": "2026-11-18",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There is zero tolerance for drugs-related offences in Qatar. Some medications that are legal in other countries are illegal in Qatar. See guidance on medications that you can bring into Qatar.",
+      "Penalties for using, trafficking, smuggling and possessing drugs, including cannabis, (even residual amounts) are severe.",
+      "You should expect a long prison sentence, deportation and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Qatar have highly effective technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "reunion": {
+   "title": "Réunion",
+   "url": "https://www.gov.uk/foreign-travel-advice/reunion",
+   "updated": "2026-10-22",
+   "sections": []
+  },
+  "romania": {
+   "title": "Romania",
+   "url": "https://www.gov.uk/foreign-travel-advice/romania",
+   "updated": "2026-09-18",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Romania have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers.",
+      "Increasing numbers of people, including foreign visitors, have been arrested and received lengthy sentences for drug offences at music festivals in Romania."
+     ]
+    }
+   ]
+  },
+  "russia": {
+   "title": "Russia",
+   "url": "https://www.gov.uk/foreign-travel-advice/russia",
+   "updated": "2026-09-18",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "You can be prosecuted for possessing even small quantities of any drugs, including cannabis. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Russia have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "rwanda": {
+   "title": "Rwanda",
+   "url": "https://www.gov.uk/foreign-travel-advice/rwanda",
+   "updated": "2026-09-04",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties.",
+      "You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Rwanda have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "samoa": {
+   "title": "Samoa",
+   "url": "https://www.gov.uk/foreign-travel-advice/samoa",
+   "updated": "2026-03-19",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Possession of illegal drugs carries a possible 14-year prison sentence."
+     ]
+    }
+   ]
+  },
+  "san-marino": {
+   "title": "San Marino",
+   "url": "https://www.gov.uk/foreign-travel-advice/san-marino",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There is a zero-tolerance policy towards the possession and use of illegal drugs. If you are convicted, you will face a prison sentence or a heavy fine."
+     ]
+    }
+   ]
+  },
+  "sao-tome-and-principe": {
+   "title": "Sao Tome & Príncipe",
+   "url": "https://www.gov.uk/foreign-travel-advice/sao-tome-and-principe",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There are severe penalties for all drug offences. Pack all luggage yourself and do not carry anything through customs for anyone else."
+     ]
+    }
+   ]
+  },
+  "saudi-arabia": {
+   "title": "Saudi Arabia",
+   "url": "https://www.gov.uk/foreign-travel-advice/saudi-arabia",
+   "updated": "2026-11-18",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "There is zero tolerance for drug offences in Saudi Arabia, and the penalties are severe. If you’re arrested for drug offences, you may have a long period of detention before trial. You can get a prison sentence of up to 5 years and a fine of 30,000 Saudi riyals for possessing even small amounts. Drug dealing and smuggling can result in a death sentence."
+     ]
+    }
+   ]
+  },
+  "senegal": {
+   "title": "Senegal",
+   "url": "https://www.gov.uk/foreign-travel-advice/senegal",
+   "updated": "2026-10-15",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There are severe penalties for possession, use or trafficking of illegal drugs. People accused regularly spend lengthy periods on remand before being tried. The maximum sentence for trafficking is 20 years.",
+      "Prison conditions in Senegal are considerably poorer than in UK prisons. There may be problems such as overcrowding, lack of adequate meals, clean drinking water and electricity, and poor sanitation."
+     ]
+    }
+   ]
+  },
+  "serbia": {
+   "title": "Serbia",
+   "url": "https://www.gov.uk/foreign-travel-advice/serbia",
+   "updated": "2026-10-22",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "There are strict penalties for possessing and trafficking drugs, including cannabis.",
+      "Airports in Serbia have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "seychelles": {
+   "title": "Seychelles",
+   "url": "https://www.gov.uk/foreign-travel-advice/seychelles",
+   "updated": "2026-10-23",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Seychelles has strict laws on drug use and smuggling. Penalties are severe and may include fines and prison sentences, up to life imprisonment. This can be applied both for supplying and simple possession of any drugs, including when transiting through the airport. Bail is highly unlikely and prosecutions can take a year or more to come to court.",
+      "Seychelles International Airport has excellent technology and security for detecting illegal items, including cannabis. This can be used to scan the baggage of transiting passengers.",
+      "Pack all luggage yourself and never carry anything through customs for anyone else."
+     ]
+    }
+   ]
+  },
+  "sierra-leone": {
+   "title": "Sierra Leone",
+   "url": "https://www.gov.uk/foreign-travel-advice/sierra-leone",
+   "updated": "2026-06-19",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Do not become involved with drugs of any kind. There are heavy penalties for drug trafficking, including prison sentences. Prison conditions are harsh."
+     ]
+    }
+   ]
+  },
+  "singapore": {
+   "title": "Singapore",
+   "url": "https://www.gov.uk/foreign-travel-advice/singapore",
+   "updated": "2026-03-19",
+   "sections": [
+    {
+     "part": "warnings-and-insurance",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "There are severe consequences for drug related crimes in Singapore. Evidence of drug use in your system on arrival or in transit will lead to refusal of entry or arrest. See Entry requirements and Safety and security pages for more information."
+     ]
+    },
+    {
+     "part": "entry-requirements",
+     "heading": "Screening: Drugs",
+     "paragraphs": [
+      "Penalties for drug possession, including cannabis, are severe. If you are carrying or transporting drugs, you can be imprisoned, caned or executed .",
+      "You can be screened for drugs in your system on arrival in Singapore, including if you’re in transit. You can be charged with drug consumption or detained without trial even if the drugs were taken in another country, including countries where the use of that particular drug is legal. See Illegal drugs"
+     ]
+    },
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "There are severe penalties for all drug offences in Singapore, including possession. Carrying even a small amount of drugs can have significant consequences.",
+      "You can be charged with trafficking (‘intent to sell’) for possessing drugs above a certain amount. You can be detained without trial. Sentences include prison terms, caning and the death penalty, including when transiting through the airport.",
+      "Airports in Singapore have excellent technology and security for detecting illegal items, including cannabis. This is also used to scan the baggage of transiting passengers.",
+      "See the Misuse of Drugs Act for information on definitions and penalties."
+     ]
+    }
+   ]
+  },
+  "slovakia": {
+   "title": "Slovakia",
+   "url": "https://www.gov.uk/foreign-travel-advice/slovakia",
+   "updated": "2026-08-28",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Slovakia have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "slovenia": {
+   "title": "Slovenia",
+   "url": "https://www.gov.uk/foreign-travel-advice/slovenia",
+   "updated": "2026-08-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Slovenia have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "solomon-islands": {
+   "title": "Solomon Islands",
+   "url": "https://www.gov.uk/foreign-travel-advice/solomon-islands",
+   "updated": "2026-10-12",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "The possession, selling and use of drugs is illegal in the Solomon Islands and can lead to prison sentences."
+     ]
+    }
+   ]
+  },
+  "somalia": {
+   "title": "Somalia",
+   "url": "https://www.gov.uk/foreign-travel-advice/somalia",
+   "updated": "2026-06-04",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Drug offences, including drug use, possession and trafficking, are treated seriously in Somalia and are punishable by law. Possible punishments include a lengthy prison sentence without bail."
+     ]
+    }
+   ]
+  },
+  "south-africa": {
+   "title": "South Africa",
+   "url": "https://www.gov.uk/foreign-travel-advice/south-africa",
+   "updated": "2026-11-05",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and cannabis laws",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. Whilst the personal consumption of cannabis is considered legal, all other drug possession, use or smuggling illegal drugs, including when transiting through the airport is illegal.",
+      "British nationals have been arrested for attempting to carry illegal drugs, including cocaine, cannabis and khat, to the UK. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in South Africa have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    },
+    {
+     "part": "health",
+     "heading": "Rehabilitation centres for drug or alcohol addiction",
+     "paragraphs": [
+      "Private rehabilitation centres are widely accessible to foreign visitors. You should read available guidance on rehabilitation, recovery and residential treatment in South Africa , if you are considering attending an inpatient treatment programme.",
+      "You should also:",
+      "do extensive research beforehand",
+      "choose a reputable facility that is registered with the South African Department of Social Development or the Western Cape’s Substance Use Disorder Service",
+      "get the right visa for your stay",
+      "get the right travel insurance, including medical cover suitable for a rehabilitation stay and your particular circumstances",
+      "Make plans in case:",
+      "you relapse abroad",
+      "treatment is unsuccessful",
+      "you need unplanned repatriation to the UK – this may need to include access to extra funds",
+      "TravelHealthPro has information on travelling abroad for treatment .",
+      "International Association for Medical Assistance to Travellers has information on the impact of travel and substance use.",
+      "The British High Commission in Pretoria does not usually contact or visit people who have travelled specifically for medical treatment."
+     ]
+    }
+   ]
+  },
+  "south-georgia-and-south-sandwich-islands": {
+   "title": "South Georgia and South Sandwich Islands (British Overseas Territory)",
+   "url": "https://www.gov.uk/foreign-travel-advice/south-georgia-and-south-sandwich-islands",
+   "updated": "2025-09-24",
+   "sections": []
+  },
+  "south-korea": {
+   "title": "South Korea",
+   "url": "https://www.gov.uk/foreign-travel-advice/south-korea",
+   "updated": "2026-05-14",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "If you’re convicted of possession, use or trafficking of illegal drugs you can face a long jail sentence and heavy fines. This applies even to personal use of small amounts of marijuana. British nationals have been detained solely on the basis of drug tests."
+     ]
+    }
+   ]
+  },
+  "south-sudan": {
+   "title": "South Sudan",
+   "url": "https://www.gov.uk/foreign-travel-advice/south-sudan",
+   "updated": "2026-08-25",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "There are severe penalties for using or trafficking drugs in South Sudan, including the death penalty and life imprisonment."
+     ]
+    }
+   ]
+  },
+  "spain": {
+   "title": "Spain",
+   "url": "https://www.gov.uk/foreign-travel-advice/spain",
+   "updated": "2026-11-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through airports. Possession of even a small quantity of drugs can lead to arrest and detention.",
+      "Airports in Spain have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "sri-lanka": {
+   "title": "Sri Lanka",
+   "url": "https://www.gov.uk/foreign-travel-advice/sri-lanka",
+   "updated": "2026-09-21",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Sri Lanka use technology to detect illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "st-helena-ascension-and-tristan-da-cunha": {
+   "title": "St Helena, Ascension and Tristan da Cunha",
+   "url": "https://www.gov.uk/foreign-travel-advice/st-helena-ascension-and-tristan-da-cunha",
+   "updated": "2026-09-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Do not become involved with drugs of any kind. There are severe penalties for possessing or importing even small amounts of drugs."
+     ]
+    }
+   ]
+  },
+  "st-kitts-and-nevis": {
+   "title": "St Kitts and Nevis",
+   "url": "https://www.gov.uk/foreign-travel-advice/st-kitts-and-nevis",
+   "updated": "2026-01-05",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There are severe penalties for all drug offences, particularly drug trafficking. If convicted at Magistrates Court, you could get a fine of up to 400,000 EC dollars or 3 times the street value, whichever is higher, and up to 10 years in prison. If the case goes to the High Court, sentences are a minimum of 15 years, up to life imprisonment.",
+      "Marijuana (cannabis) for personal use has been decriminalised, but you must have a licence to use it. There are fines for smoking of marijuana in some public places or without a licence."
+     ]
+    }
+   ]
+  },
+  "st-lucia": {
+   "title": "St Lucia",
+   "url": "https://www.gov.uk/foreign-travel-advice/st-lucia",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "There are severe penalties for all drug offences. Pack all luggage yourself and do not carry anything through customs for anyone else."
+     ]
+    }
+   ]
+  },
+  "st-maarten": {
+   "title": "St Maarten",
+   "url": "https://www.gov.uk/foreign-travel-advice/st-maarten",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Drug-related crime",
+     "paragraphs": [
+      "St Maarten is used as a drug passageway from South America to Europe and North America. There can be drug-related violent crime, but this rarely affects tourists. Do not leave bags unattended or agree to carry a package for anyone.",
+      "The authorities use body scanners and baggage screening for passengers. There are severe penalties for possessing and trafficking narcotics."
+     ]
+    }
+   ]
+  },
+  "st-martin-and-st-barthelemy": {
+   "title": "St Martin and St Barthélemy",
+   "url": "https://www.gov.uk/foreign-travel-advice/st-martin-and-st-barthelemy",
+   "updated": "2025-12-10",
+   "sections": []
+  },
+  "st-pierre-and-miquelon": {
+   "title": "St Pierre & Miquelon",
+   "url": "https://www.gov.uk/foreign-travel-advice/st-pierre-and-miquelon",
+   "updated": "2025-12-10",
+   "sections": []
+  },
+  "st-vincent-and-the-grenadines": {
+   "title": "St Vincent and the Grenadines",
+   "url": "https://www.gov.uk/foreign-travel-advice/st-vincent-and-the-grenadines",
+   "updated": "2026-04-23",
+   "sections": [
+    {
+     "part": "Safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There are severe penalties for all drug offences. Pack your own luggage and do not carry anything through customs for anyone else."
+     ]
+    }
+   ]
+  },
+  "sudan": {
+   "title": "Sudan",
+   "url": "https://www.gov.uk/foreign-travel-advice/sudan",
+   "updated": "2026-05-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Alcohol and drug laws",
+     "paragraphs": [
+      "Non-Muslims are allowed to drink alcohol in Sudan, but not in the presence of Muslims. However, you may still be arrested for drinking alcohol regardless of the circumstances.",
+      "There are severe penalties for drug trafficking."
+     ]
+    }
+   ]
+  },
+  "suriname": {
+   "title": "Suriname",
+   "url": "https://www.gov.uk/foreign-travel-advice/suriname",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "There are severe penalties for all drug offences. Pack all luggage yourself and do not carry anything through customs for anyone else."
+     ]
+    }
+   ]
+  },
+  "sweden": {
+   "title": "Sweden",
+   "url": "https://www.gov.uk/foreign-travel-advice/sweden",
+   "updated": "2026-08-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, are strictly prohibited, even in small quantities. Severe penalties apply for possessing, using or smuggling illegal drugs, including when transiting through airports. You should expect long jail sentences of up to 10 years and heavy fines.",
+      "Airports in Sweden have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "switzerland": {
+   "title": "Switzerland",
+   "url": "https://www.gov.uk/foreign-travel-advice/switzerland",
+   "updated": "2026-08-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Switzerland have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "syria": {
+   "title": "Syria",
+   "url": "https://www.gov.uk/foreign-travel-advice/syria",
+   "updated": "2026-11-18",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "There are severe penalties for drug offences in Syria. The penalty for drug possession is life imprisonment, and the death penalty applies for drug trafficking."
+     ]
+    }
+   ]
+  },
+  "taiwan": {
+   "title": "Taiwan",
+   "url": "https://www.gov.uk/foreign-travel-advice/taiwan",
+   "updated": "2026-11-18",
+   "sections": [
+    {
+     "part": "warnings-and-insurance",
+     "heading": "Illegal drug offences",
+     "paragraphs": [
+      "Possession, trafficking and manufacture of illegal drugs are serious offences in Taiwan. This applies to all illegal drugs, including cannabis and ketamine. British nationals have been arrested for carrying these substances when entering Taiwan and while transiting through Taiwanese airports.",
+      "See more information on the Safety and security page."
+     ]
+    },
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and penalties",
+     "paragraphs": [
+      "Possession, trafficking and manufacture of illegal drugs are serious offences in Taiwan. This applies to all illegal drugs, including cannabis and ketamine. British nationals have been arrested for carrying these substances when entering Taiwan and while transiting through Taiwanese airports.",
+      "Airports in Taiwan have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers.",
+      "The Taiwanese authorities take a zero-tolerance approach to drug offences. Possessing drugs, even in very small quantities, can result in arrest, detention and lengthy prison sentences if convicted.",
+      "Criminal gangs may pressure or coerce people into carrying drugs across international borders. Do not carry bags, packages or other items for anyone else. You are responsible for anything found in your luggage.",
+      "Legal processes before court hearings can be long and expensive. It can take many months for a case to come to trial. See our guidance for British people detained or imprisoned in Taiwan ."
+     ]
+    }
+   ]
+  },
+  "tajikistan": {
+   "title": "Tajikistan",
+   "url": "https://www.gov.uk/foreign-travel-advice/tajikistan",
+   "updated": "2026-08-19",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Possession of drugs is illegal. You can get a lengthy prison sentence if convicted. Prison conditions are basic.",
+      "The police may conduct drug raids in bars and night clubs. Stay calm and follow instructions."
+     ]
+    }
+   ]
+  },
+  "tanzania": {
+   "title": "Tanzania",
+   "url": "https://www.gov.uk/foreign-travel-advice/tanzania",
+   "updated": "2026-10-30",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Tanzania has strict laws on drug use. There may be severe penalties, including lengthy prison sentences which can be applied both for supplying and simple possession of any drugs, including when transiting through the airport. Some ‘herbal highs’ and products containing cannabidiol (CBD) are illegal in Tanzania. Travellers are advised to ensure they do not try to enter Tanzania with skincare products and e-cigarette refills containing CBD. Penalties for importing and trafficking controlled substances can be severe, including up to 30 years’ imprisonment in some cases.",
+      "Airports in Tanzania have technology and security for detecting illegal items, including cannabis. This can be used to scan the baggage of transiting passengers.",
+      "Tanzanian prisons tend to be dirty and overcrowded."
+     ]
+    }
+   ]
+  },
+  "thailand": {
+   "title": "Thailand",
+   "url": "https://www.gov.uk/foreign-travel-advice/thailand",
+   "updated": "2026-10-12",
+   "sections": [
+    {
+     "part": "warnings-and-insurance",
+     "heading": "It is illegal to carry cannabis out of Thailand",
+     "paragraphs": [
+      "British nationals have been caught carrying cannabis out of Thailand, including while transiting through other countries. Many international airports have excellent technology and security for detecting illegal items, which may be used to scan the baggage of transiting passengers. If caught you will be arrested or fined."
+     ]
+    },
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Thailand has strict laws against drug use, possession and trafficking. Possessing small quantities of illegal substances can lead to heavy fines or imprisonment. Possessing Class A drugs can lead to the death penalty.",
+      "Conditions in prisons and other detention facilities in Thailand are harsh, with limited access to healthcare. Detainees have died in custody.",
+      "Some British nationals have suffered severe psychiatric problems because of drug use, sometimes leading to suicide."
+     ]
+    },
+    {
+     "part": "safety-and-security",
+     "heading": "Cannabis",
+     "paragraphs": [
+      "Cannabis laws in Thailand are strictly enforced and have changed in recent years. You must follow local regulations on possession, use and export.",
+      "Cannabis use in Thailand is restricted to medical purposes only. You must not buy, possess or use it without a Thai-issued medical prescription, which is limited to a 30-day supply. Recreational use remains illegal.",
+      "It is illegal to take cannabis out of Thailand without the appropriate export permission from the authorities.",
+      "Attempting to take cannabis out of Thailand will result in penalties, including fines starting at 30,000 Thai baht per kilogram (about £684 per kg). If you do not pay, you will be detained or imprisoned. You will also be placed on an immigration watchlist affecting future travel to Thailand.",
+      "Cannabis is illegal in many countries. If you carry it when arriving in, or transiting through, another country, you risk arrest and serious penalties, including long prison sentences."
+     ]
+    }
+   ]
+  },
+  "the-gambia": {
+   "title": "The Gambia",
+   "url": "https://www.gov.uk/foreign-travel-advice/the-gambia",
+   "updated": "2026-11-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "There is a zero tolerance towards illegal drugs. This includes importing, exporting, or possession of drugs. Do not accept packages on behalf of anyone without knowing the contents.",
+      "Sentences for those found in possession of drugs can be severe, including fines or prison sentences. Cases of entrapment by Gambian authorities are not uncommon."
+     ]
+    }
+   ]
+  },
+  "timor-leste": {
+   "title": "East Timor (Timor-Leste)",
+   "url": "https://www.gov.uk/foreign-travel-advice/timor-leste",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Do not get involved with illegal drugs. There are severe penalties if you’re convicted."
+     ]
+    }
+   ]
+  },
+  "togo": {
+   "title": "Togo",
+   "url": "https://www.gov.uk/foreign-travel-advice/togo",
+   "updated": "2026-11-04",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Possession, use or trafficking of illegal drugs is a serious offence and can result in fines and a prison sentence."
+     ]
+    }
+   ]
+  },
+  "tonga": {
+   "title": "Tonga",
+   "url": "https://www.gov.uk/foreign-travel-advice/tonga",
+   "updated": "2026-03-19",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Drug taking in all forms is illegal. The maximum penalty for importing or exporting illegal drugs is 30 years’ hard labour and fines of several hundred thousand US dollars. If you are found guilty of cultivating or distributing illegal drugs, you are likely to receive a severe punishment."
+     ]
+    }
+   ]
+  },
+  "trinidad-and-tobago": {
+   "title": "Trinidad and Tobago",
+   "url": "https://www.gov.uk/foreign-travel-advice/trinidad-and-tobago",
+   "updated": "2026-11-11",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Drug assisted robbery and sexual assault",
+     "paragraphs": [
+      "There have been reports of criminals in Trinidad and Tobago using drugs, deception and sexual solicitation, including via dating apps, to facilitate robbery and sexual assault. Victims may be lured and drugged or beaten and robbed. Incidents have occurred in bars, nightclubs, hotels and on city streets, sometimes involving groups working together.",
+      "You should:",
+      "avoid accepting invitations from strangers or inviting them to your accommodation",
+      "take care when using dating apps",
+      "keep food and drinks under supervision",
+      "plan travel routes in advance, particularly at night",
+      "If drugged, seek local medical attention as soon as possible."
+     ]
+    },
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "Trinidad and Tobago has decriminalised the possession of up to 30g of cannabis or up to 5g of cannabis resin. However, you’re not allowed to smoke cannabis in public spaces or while operating a vehicle.",
+      "If you are stopped with these amounts, you can be fined up to 50,000 Trinidad and Tobago dollars. For larger quantities there are more hefty fines and possible imprisonment. There are also severe penalties for other drug-related offences."
+     ]
+    }
+   ]
+  },
+  "tunisia": {
+   "title": "Tunisia",
+   "url": "https://www.gov.uk/foreign-travel-advice/tunisia",
+   "updated": "2026-07-24",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Drugs and illegal substances",
+     "paragraphs": [
+      "It is illegal to bring any controlled or prohibited substances into Tunisia. Travellers found in possession of illegal drugs can face severe penalties, including lengthy prison sentences and heavy fines. Tunisian legislation relating to illegal drugs applies regardless of the traveller’s country of residence, country of departure, whether the substance is legal elsewhere or the quantity being carried. Do not carry any such substances into the country."
+     ]
+    }
+   ]
+  },
+  "turkey": {
+   "title": "Turkey",
+   "url": "https://www.gov.uk/foreign-travel-advice/turkey",
+   "updated": "2026-11-18",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long prison sentence of 4 to 24 years and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through airports.",
+      "Airports in Turkey have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  },
+  "turkmenistan": {
+   "title": "Turkmenistan",
+   "url": "https://www.gov.uk/foreign-travel-advice/turkmenistan",
+   "updated": "2026-10-21",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "If you’re found guilty of possession or use of illegal drugs, you could face a lengthy prison sentence in very basic conditions."
+     ]
+    }
+   ]
+  },
+  "turks-and-caicos-islands": {
+   "title": "Turks and Caicos Islands (British Overseas Territory)",
+   "url": "https://www.gov.uk/foreign-travel-advice/turks-and-caicos-islands",
+   "updated": "2026-03-13",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Do not become involved with drugs of any kind. There are severe penalties for possession of even a small amount. You could be arrested and face fines of up to 5,000 US dollars and 2 years imprisonment."
+     ]
+    }
+   ]
+  },
+  "tuvalu": {
+   "title": "Tuvalu",
+   "url": "https://www.gov.uk/foreign-travel-advice/tuvalu",
+   "updated": "2026-03-19",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "It is illegal to import, export, cultivate or distribute drugs. Penalties include fines and imprisonment."
+     ]
+    }
+   ]
+  },
+  "uganda": {
+   "title": "Uganda",
+   "url": "https://www.gov.uk/foreign-travel-advice/uganda",
+   "updated": "2026-11-06",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drug penalties",
+     "paragraphs": [
+      "Penalties for illegal drug possession and illegal drug trafficking are severe. The maximum sentence is 20 years for possession and life imprisonment for trafficking."
+     ]
+    }
+   ]
+  },
+  "ukraine": {
+   "title": "Ukraine",
+   "url": "https://www.gov.uk/foreign-travel-advice/ukraine",
+   "updated": "2026-10-02",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Penalties for being caught in possession of drugs are severe."
+     ]
+    }
+   ]
+  },
+  "united-arab-emirates": {
+   "title": "United Arab Emirates",
+   "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates",
+   "updated": "2026-11-18",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "There is zero tolerance for drugs-related offences.",
+      "The penalties for trafficking, smuggling, using and possessing illegal drugs (including residual amounts) are severe. Sentences for drug trafficking can include the death penalty. Possession of even the smallest amount of illegal drugs, including cannabis, can lead to a minimum 3-month prison term or a fine of between 20,000 UAE dirham and 100,000 UAE dirham. The Emirati authorities count the presence of drugs in the blood stream as possession.",
+      "Some ‘herbal highs’ and products containing cannabidiol (CBD) are illegal in the UAE .",
+      "Possessing, concealing or making transactions with money from drugs-related offences is illegal. You could get a prison sentence and a fine.",
+      "UAE airports have excellent technology and security for detecting illegal items, including cannabis. This is also used to scan the baggage of transiting passengers. You can be arrested for carrying drugs, even residual amounts.",
+      "Some skincare products and e-cigarette refills may contain ingredients that are illegal in the UAE such as CBD oil. If you are found in possession of such products, they will be confiscated and you could face criminal charges. A list of narcotic, psychotropic and controlled drugs where this rule applies, allowed quantities and documents to be presented can be found on the UAE Ministry of Health website ."
+     ]
+    }
+   ]
+  },
+  "uruguay": {
+   "title": "Uruguay",
+   "url": "https://www.gov.uk/foreign-travel-advice/uruguay",
+   "updated": "2025-12-10",
+   "sections": [
+    {
+     "part": "entry-requirements",
+     "heading": "",
+     "paragraphs": [
+      "narcotics"
+     ]
+    },
+    {
+     "part": "safety-and-security",
+     "heading": "",
+     "paragraphs": [
+      "If they have registered with the Uruguayan government, it is legal for Uruguayan nationals or foreign nationals who have been resident for more than 2 years, to grow marijuana or buy it from registered pharmacies. However, it is illegal for tourists to do this.",
+      "You will also get a fine if you’re found driving under the influence of drugs."
+     ]
+    }
+   ]
+  },
+  "usa": {
+   "title": "USA",
+   "url": "https://www.gov.uk/foreign-travel-advice/usa",
+   "updated": "2026-11-14",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through airports. US law prohibits the importation, exportation, manufacture, sale or transportation of drug paraphernalia. If you are convicted of any of these offenses, you will be subject to fines and imprisonment.",
+      "Airports in USA have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers. All persons arriving at a port-of-entry to the United States are subject to inspection by U.S. Customs and Border Protection (CBP) officers.",
+      "Check state laws to make sure you follow laws on possession and use of controlled substances. The US Department of Justice provides a list of all controlled substances ."
+     ]
+    }
+   ]
+  },
+  "uzbekistan": {
+   "title": "Uzbekistan",
+   "url": "https://www.gov.uk/foreign-travel-advice/uzbekistan",
+   "updated": "2026-03-19",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Possession of drugs is illegal. You can get a long prison sentence if convicted. While prison conditions have reportedly improved, reports of widespread hepatitis and tuberculosis as well as allegations of mistreatment of some prisoners by officials remain a concern."
+     ]
+    }
+   ]
+  },
+  "vanuatu": {
+   "title": "Vanuatu",
+   "url": "https://www.gov.uk/foreign-travel-advice/vanuatu",
+   "updated": "2026-03-19",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Avoid all recreational drugs. Possession of even small quantities can lead to imprisonment and a large fine."
+     ]
+    }
+   ]
+  },
+  "venezuela": {
+   "title": "Venezuela",
+   "url": "https://www.gov.uk/foreign-travel-advice/venezuela",
+   "updated": "2026-11-18",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs and prison sentences",
+     "paragraphs": [
+      "Drug trafficking is a serious crime in Venezuela. Detection methods are sophisticated, and drug traffickers should expect to be arrested. Conviction leads to a lengthy prison sentence of between 8 and 15 years. Conditions in Venezuelan jails are harsh, dangerous, and among the worst in the region."
+     ]
+    }
+   ]
+  },
+  "vietnam": {
+   "title": "Vietnam",
+   "url": "https://www.gov.uk/foreign-travel-advice/vietnam",
+   "updated": "2026-09-21",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs penalties",
+     "paragraphs": [
+      "Penalties for possessing, using, distributing or manufacturing drugs, including cannabis, regardless of the amount involved, are severe. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Vietnam have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers.",
+      "The death penalty may also be imposed depending on the severity of the crime. Police periodically raid nightlife establishments suspected of engaging in the drug trade. You may be required to submit to drug testing if present during these raids.",
+      "Police will also routinely conduct drug testing at private residences or parties when responding to a reported disturbance. A positive result, regardless of whether drugs were consumed in Vietnam or before entry, may result in criminal charges.",
+      "Illegal drugs are often tampered with or spiked and can be much stronger than in Europe. British nationals in Vietnam have suffered severe psychiatric problems because of drug use.",
+      "Recreational drugs available in Vietnam can be extremely dangerous and can result in death. Drugs sold in Vietnam may be fake, synthetic, or laced with toxic ingredients undetectable to the buyer. This includes nitrous oxide balloons widely available in nightlife establishments.",
+      "It is important to be aware of your rights if you are detained by the police. See our guidance for those detained or imprisoned in Vietnam ."
+     ]
+    }
+   ]
+  },
+  "wallis-and-futuna": {
+   "title": "Wallis & Futuna Islands",
+   "url": "https://www.gov.uk/foreign-travel-advice/wallis-and-futuna",
+   "updated": "2025-12-10",
+   "sections": []
+  },
+  "western-sahara": {
+   "title": "Western Sahara",
+   "url": "https://www.gov.uk/foreign-travel-advice/western-sahara",
+   "updated": "2026-06-29",
+   "sections": []
+  },
+  "yemen": {
+   "title": "Yemen",
+   "url": "https://www.gov.uk/foreign-travel-advice/yemen",
+   "updated": "2026-11-18",
+   "sections": []
+  },
+  "zambia": {
+   "title": "Zambia",
+   "url": "https://www.gov.uk/foreign-travel-advice/zambia",
+   "updated": "2026-06-01",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "It is illegal to possess or use drugs, including marijuana. Drug use and smuggling are serious offences."
+     ]
+    }
+   ]
+  },
+  "zimbabwe": {
+   "title": "Zimbabwe",
+   "url": "https://www.gov.uk/foreign-travel-advice/zimbabwe",
+   "updated": "2026-07-15",
+   "sections": [
+    {
+     "part": "safety-and-security",
+     "heading": "Illegal drugs",
+     "paragraphs": [
+      "Illegal drugs, including cannabis, carry severe penalties. You should expect a long jail sentence and heavy fines for possessing, using or smuggling illegal drugs, including when transiting through the airport.",
+      "Airports in Zimbabwe have excellent technology and security for detecting illegal items. This is also used to scan the baggage of transiting passengers."
+     ]
+    }
+   ]
+  }
+ }
+}

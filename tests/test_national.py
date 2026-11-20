@@ -29,6 +29,7 @@ class NationalPagesTest(unittest.TestCase):
         # home, help, about, privacy, medical cards, coverage, partners, jokes; plus the world hub, travel warnings, heritage, Cannabis 101 and one page per country
         where = json.loads((ROOT / 'data/world-where-to-buy.json').read_text(encoding='utf-8'))
         store_pages = sum(1 for c in where['countries'].values() if c.get('page'))
+        store_pages += len(json.loads((ROOT / 'data/world-starter.json').read_text(encoding='utf-8'))['countries'])  # starter pages
         self.assertEqual(len(PAGES), len(PERM['jurisdictions']) + 8 + len(PERM['questions']) + 4 + len(world['countries']) + store_pages)
         for name in PERM['jurisdictions'].values():
             page = build_national.slug(name) + '.html'

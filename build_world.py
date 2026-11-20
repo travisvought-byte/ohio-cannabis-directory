@@ -20,6 +20,7 @@ HERITAGE = ROOT / 'data/world-heritage.json'
 ROSTER = ROOT / 'data/world-roster.json'
 NL_SHOPS = ROOT / 'data/world-coffeeshops-nl.json'
 WHERE = ROOT / 'data/world-where-to-buy.json'
+STARTER = ROOT / 'data/world-starter.json'
 
 CSS = ('<style>.wcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:12px;margin:14px 0}'
        '.wcard{display:block;background:var(--card);border:1px solid var(--line);border-top:5px solid var(--green2);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--ink)}'
@@ -209,6 +210,38 @@ def stores_page(world, sources, code, entry):
 
 def world_where_as_of():
     return load_where()['as_of']
+
+
+def load_starter():
+    return json.loads(STARTER.read_text(encoding='utf-8'))
+
+
+def starter_page(world, sources, code, st, licence):
+    """A country without a full guide yet: the UK government's drugs advice, credited, and the core questions marked not reviewed."""
+    cites = nat.Cites(sources)
+    name = st['name']
+    body = [CSS, f'<p class="crumbs"><a href="index.html">Home</a> › <a href="world.html">Around the world</a> › {nat.esc(name)}</p>',
+            f'<h1>Cannabis laws in {nat.esc(name)}</h1>',
+            f'<p class="lede">This is a starter page. We have not reviewed {nat.esc(name)}\'s cannabis law in full yet, so the answers below are marked "Not yet reviewed". '
+            'Until we do, here is what the UK government tells travellers about drugs there, in its own words.</p>',
+            '<p class="alert"><strong>Travelling?</strong> Never carry cannabis across an international border, even between two places where it is legal. '
+            '<a href="travel-warnings.html">See where it can land you in prison</a>.</p>',
+            f'<div class="story"><h2 id="travel-advice">What the UK government tells travellers about drugs</h2>']
+    for sec in st['sections']:
+        if sec['heading']:
+            body.append(f'<h3>{nat.esc(sec["heading"])}</h3>')
+        body.append(''.join(f'<p>{nat.esc(p)}</p>' for p in sec['paragraphs']))
+    body.append(f'<p class="muted">{nat.esc(st["fcdo_title"])} travel advice, last updated by the FCDO on {nat.long_date(st["updated"])}. {cites.mark([st["source_id"]])} '
+                f'{nat.esc(licence)}</p></div>')
+    for q in world['questions']:
+        if q['id'] in ('adult-use', 'medical', 'possession', 'home-grow'):
+            body.append(answer_card(world, q, None, cites))
+    body.append('<p class="muted">A full guide for this country is on our list. Know the law here, or spot something out of date? Use "Fix or reuse" below.</p>')
+    body.append(cites.render())
+    title = f'Cannabis laws in {name}'
+    desc = f'Starter page for {name}: what the UK government tells travellers about drugs there, credited and dated. Full cannabis law guide still to come.'
+    ld = [nat.breadcrumbs([('Home', ''), ('Around the world', 'world.html')], st['page'], name)]
+    return nat.shell(title, desc, ''.join(body), st['page'], name, ld=ld)
 
 
 def country_page(world, sources, code):
@@ -452,10 +485,14 @@ def pages(perm, base_sources):
     sources.update({s['id']: s for s in her['sources']})
     sources.update({s['id']: s for s in load_nl_shops()['sources']})
     sources.update({s['id']: s for s in load_where()['sources']})
+    starter = load_starter()
+    sources.update({s['id']: s for s in starter['sources']})
     out = {'world.html': hub_page(world, sources), 'travel-warnings.html': warnings_page(world, perm, sources),
            'heritage.html': heritage_page(her, sources), 'learn.html': learn_page()}
     for code, c in world['countries'].items():
         out[c['page']] = country_page(world, sources, code)
+    for code, st in starter['countries'].items():
+        out[st['page']] = starter_page(world, sources, code, st, starter['licence'])
     for code, entry in load_where()['countries'].items():
         if entry.get('page'):
             out[entry['page']] = stores_page(world, sources, code, entry)

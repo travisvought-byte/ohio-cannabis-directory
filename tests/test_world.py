@@ -100,7 +100,8 @@ class WorldTest(unittest.TestCase):
     def test_roster_covers_every_built_country_and_links_it(self):
         roster = json.loads((ROOT / 'data/world-roster.json').read_text(encoding='utf-8'))
         pages = {r['page'] for r in roster['countries'] if r['status'] in ('deep', 'basic')}
-        self.assertEqual(pages, {c['page'] for c in WORLD['countries'].values()})
+        starter = json.loads((ROOT / 'data/world-starter.json').read_text(encoding='utf-8'))
+        self.assertEqual(pages, {c['page'] for c in WORLD['countries'].values()} | {c['page'] for c in starter['countries'].values()})
         for r in roster['countries']:
             self.assertIn(r['status'], roster['statuses'])
             if r['page']:
@@ -151,6 +152,19 @@ class WorldTest(unittest.TestCase):
                     self.assertIn(build_national.esc(r['name']), page, f'{t["id"]}: {r["name"]}')
             if entry.get('page'):
                 self.assertIn(f'href="{entry["page"]}"', PAGES[WORLD['countries'][code]['page']])
+    def test_starter_pages_quote_the_fcdo_with_credit_and_claim_nothing(self):
+        starter = json.loads((ROOT / 'data/world-starter.json').read_text(encoding='utf-8'))
+        ids = {s['id'] for s in starter['sources']}
+        self.assertFalse(ids & SOURCE_IDS)
+        self.assertFalse(set(starter['countries']) & set(WORLD['countries']), 'a full guide replaces the starter page')
+        for code, st in starter['countries'].items():
+            text = PAGES[st['page']]
+            self.assertIn(st['source_id'], ids)
+            self.assertIn('Open Government Licence v3.0', text)
+            self.assertEqual(text.count('class="chip not-reviewed'), 4, code)
+            for sec in st['sections']:
+                for para in sec['paragraphs']:
+                    self.assertIn(build_national.esc(para), text, code)
 
 if __name__ == '__main__':
     unittest.main()
