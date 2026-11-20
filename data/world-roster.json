@@ -173,8 +173,8 @@
 "iso": "BE",
 "name": "Belgium",
 "display": "Belgium",
-"status": "queued",
-"page": null,
+"status": "deep",
+"page": "world-belgium.html",
 "queue": 19
 },
 {

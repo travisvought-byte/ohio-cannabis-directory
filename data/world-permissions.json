@@ -2375,6 +2375,98 @@
      "Legal home use does not change the road rules: 1 ng/ml of THC in blood serum is an offence."
     ]
    }
+  },
+  "BE": {
+   "name": "Belgium",
+   "page": "world-belgium.html",
+   "summary": "Illegal, but tolerated in small amounts. Since 2005 an adult with up to 3 grams or one plant and no aggravating circumstances is the lowest prosecution priority. Medical use is limited to approved medicines such as Sativex and prescribed CBD preparations. Drivers face zero tolerance.",
+   "note": "French-language sources are summarized in English. Belgium's regions run their own road safety agencies.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No. Small amounts are the lowest priority",
+     "detail": "Cannabis is illegal under the drug law of February 24, 1921. A joint directive of the Minister of Justice and the prosecutors general from 2005 puts possession of up to 3 grams, or one plant grown for personal use, by an adult at the lowest level of prosecution priority. The tolerance does not apply where there are aggravating circumstances or a disturbance of public order. For anyone under 18, using and possessing cannabis are prohibited.",
+     "citation": "Province de Liège, Le cannabis et la loi; EMCDDA Country Drug Report 2017",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "be-liege-loi",
+      "be-euda-2017"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Approved medicines and CBD preparations only",
+     "detail": "A Royal Decree of June 2015 allowed THC-containing medicines to be prescribed. Pharmacists can dispense authorised cannabis-based medicines such as Sativex on prescription, and prepare CBD preparations for a patient on a doctor's prescription if THC exposure stays very low. A 2019 law created a state cannabis agency to supply medicinal cannabis, but it was not yet active as of April 2021.",
+     "citation": "EMCDDA Country Drug Report 2017; CMS expert guide (updated Apr 2021, law firm)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "be-euda-2017",
+      "be-cms"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sale",
+     "detail": "Selling cannabis is trafficking, an aggravating circumstance that takes a case outside the tolerance. Producing, importing and selling recreational cannabis is prohibited.",
+     "citation": "Province de Liège, Le cannabis et la loi; CMS expert guide (law firm)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "be-liege-loi",
+      "be-cms"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "3 grams: a simplified report and a fine",
+     "detail": "For an adult with up to 3 grams and no aggravating circumstances, police write a simplified report and do not seize the cannabis, and the report goes to the prosecutor once a month. The CMS guide puts the fine at €120 to €200. The tolerance ends with possession in a school or near one, in a prison, conspicuous possession in public, driving, or a minor being present. Aggravated cases can bring 3 months to 1 year in prison and a heavy fine.",
+     "citation": "Province de Liège, Le cannabis et la loi; CMS expert guide (law firm); EMCDDA 2017",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "be-liege-loi",
+      "be-cms",
+      "be-euda-2017"
+     ]
+    },
+    "home-grow": {
+     "status": "limited",
+     "short": "One plant is tolerated, not legal",
+     "detail": "Growing remains illegal, but one plant grown for personal use by an adult falls within the lowest prosecution priority, and in principle will not be prosecuted.",
+     "citation": "Province de Liège, Le cannabis et la loi; CMS expert guide (law firm)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "be-liege-loi",
+      "be-cms"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "Zero tolerance; licence withdrawn on the spot",
+     "detail": "Driving under the influence of any drug is prohibited under zero tolerance. If a roadside saliva test finds THC, police withdraw the licence immediately, for at least 15 days and up to six and a half months, and the case goes to the police court. The court can fine a first offender €1,600 to €16,000 and ban them from driving for 1 month to 5 years or for good; repeat offenders face €3,200 to €40,000. THC can show up in saliva 14 hours or more after use, and drivers involved in an accident are tested as a matter of course.",
+     "citation": "Brussels-Capital Region, Alcool, drogues, médicaments au volant; AWSR leaflet (May 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "be-brussels-driving",
+      "be-awsr-2026"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about Belgium",
+    "source_ids": [
+     "be-liege-loi",
+     "be-euda-2017",
+     "be-cms",
+     "be-brussels-driving",
+     "be-awsr-2026"
+    ],
+    "points": [
+     "The tolerance comes from a prosecutors' directive, not from a change to the 1921 law.",
+     "Police do not seize 3 grams or less from an adult when the tolerance applies; they write a simplified report.",
+     "Being near a school, carrying cannabis openly in public or having a minor present is enough to lose the tolerance.",
+     "There is no medical flower program: patients get approved medicines or prescribed CBD preparations.",
+     "A positive saliva test means losing your licence on the spot for at least 15 days, even before any court hearing."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -2689,7 +2781,8 @@
     "TH",
     "ZA",
     "JM",
-    "CO"
+    "CO",
+    "BE"
    ]
   },
   {
@@ -4805,6 +4898,46 @@
    "publisher": "Houses of the Oireachtas",
    "title": "Parliamentary question on spent convictions (Apr 24 2024)",
    "url": "https://www.oireachtas.ie/en/debates/question/2024-04-24/124/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "be-liege-loi",
+   "kind": "government",
+   "publisher": "Province de Liège",
+   "title": "Le cannabis et la loi (on the 2005 joint directive)",
+   "url": "https://www.provincedeliege.be/sites/default/files/media/6008/Assu%C3%A9tudes-cannabis_loi.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "be-euda-2017",
+   "kind": "government",
+   "publisher": "European Monitoring Centre for Drugs and Drug Addiction (now EUDA)",
+   "title": "Belgium, Country Drug Report 2017",
+   "url": "https://www.euda.europa.eu/system/files/publications/4530/TD0416908ENN.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "be-cms",
+   "kind": "organization",
+   "publisher": "CMS (law firm)",
+   "title": "Expert guide: cannabis law and legislation in Belgium (updated Apr 15 2021)",
+   "url": "https://cms.law/en/int/expert-guides/cms-expert-guide-to-a-legal-roadmap-to-cannabis/belgium",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "be-brussels-driving",
+   "kind": "government",
+   "publisher": "Brussels-Capital Region (be.brussels)",
+   "title": "Alcool, drogues, médicaments au volant",
+   "url": "https://be.brussels/fr/transport-mobilite/securite-routiere/conseils-pour-la-securite-routiere/alcool-drogues-medicaments-au-volant",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "be-awsr-2026",
+   "kind": "government",
+   "publisher": "Agence wallonne pour la Sécurité routière (AWSR)",
+   "title": "Les drogues et la conduite (leaflet, May 2026)",
+   "url": "https://www.awsr.be/wp-content/uploads/2026/05/awsr-depliant-les-drogues-et-conduite.pdf",
    "retrieved_on": "2026-11-19"
   }
  ]
