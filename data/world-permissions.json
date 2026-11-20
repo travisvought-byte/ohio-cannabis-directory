@@ -3753,6 +3753,200 @@
      ]
     }
    }
+  },
+  "SG": {
+   "name": "Singapore",
+   "page": "world-singapore.html",
+   "summary": "Singapore has zero tolerance for cannabis. Consumption alone carries up to 10 years in prison, drug use detected on arrival can mean arrest, and trafficking can bring the death penalty. Only approved cannabinoid medicines, case by case, are allowed.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No. Zero tolerance",
+     "detail": "The government has strict laws against trafficking, possession, consumption, import and export of cannabis and cannabis products. Cannabis is a Class A drug: consumption carries up to 10 years in prison and a fine of up to S$20,000.",
+     "citation": "Misuse of Drugs Act (CNB; MHA)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "sg-cnb",
+      "sg-mha"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Only approved cannabinoid medicines, case by case",
+     "detail": "The government separates raw cannabis, which it says is not medically validated, from pharmaceutical cannabinoid products, which may be used only under strict assessment and approval. In 2019 a girl with drug-resistant epilepsy became the first patient approved, after her doctor applied to the Health Sciences Authority.",
+     "citation": "MHA position; CNB; Mothership (Dec 2019)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "sg-mha",
+      "sg-cnb-med",
+      "sg-mothership"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Any amount, including drugs in your system",
+     "detail": "The UK government warns that people carrying drugs can be imprisoned, caned or executed, and that drug use detected on arrival or in transit leads to refusal of entry or arrest. The US State Department gives similar warnings.",
+     "citation": "UK FCDO travel advice; US State Department advisory",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "sg-fcdo",
+      "sg-state"
+     ]
+    }
+   }
+  },
+  "MY": {
+   "name": "Malaysia",
+   "page": "world-malaysia.html",
+   "summary": "Malaysia has some of the world's strictest drug laws, with long prison terms, caning and the death penalty. Since 2021 the Health Ministry has said registered cannabis-based medicines can be prescribed, but none is known to be widely available.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No",
+     "detail": "The Dangerous Drugs Act, Poisons Act and Sale of Drugs Act prohibit possessing, planting, harvesting and processing cannabis.",
+     "citation": "Medical Journal of Malaysia (2026), summarising the three Acts",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "my-mjm-2026"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Legal only for registered products on prescription",
+     "detail": "The Health Ministry says the law does not bar medical use: a product must be registered with the Drug Control Authority, imported under licence, and sold only on prescription by a registered doctor or a pharmacist with a Type A licence. In March 2025 it invited registration applications backed by enough scientific evidence. A 2026 medical-journal article says import of cannabis-based medicines is otherwise allowed only for research or clinical trials.",
+     "citation": "Health Ministry statements (CodeBlue, Nov 2021; The Star, Mar 2025); Medical Journal of Malaysia (2026)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "my-codeblue",
+      "my-star-2025",
+      "my-mjm-2026"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Any amount, even in transit",
+     "detail": "Possessing, using, trafficking, importing or exporting cannabis is illegal, including while transiting. The UK government lists penalties of up to 20 years in prison, caning and the death penalty; Australia also lists Malaysia among countries with the death penalty for drug offences.",
+     "citation": "UK FCDO travel advice; Australian Smartraveller",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "my-fcdo",
+      "au-smartraveller"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "No",
+     "detail": "Planting and harvesting cannabis are prohibited under the Dangerous Drugs Act.",
+     "citation": "Medical Journal of Malaysia (2026)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "my-mjm-2026"
+     ]
+    }
+   }
+  },
+  "PH": {
+   "name": "Philippines",
+   "page": "world-philippines.html",
+   "summary": "Cannabis is illegal in the Philippines under the Comprehensive Dangerous Drugs Act (RA 9165), and even a small amount means a mandatory prison sentence. The only medical route is a special permit from the Food and Drug Administration; bills to create a medical program were advancing in 2026.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No",
+     "detail": "Possession, use, cultivation and distribution of cannabis are illegal under RA 9165.",
+     "citation": "RA 9165 (Respicio & Co., Jan 2026)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "ph-respicio"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Only with an FDA compassionate special permit",
+     "detail": "The Department of Health allows medical use only under a compassionate special permit signed by the FDA director general, which needs a doctor's prescription and records of the patient's condition. House committees approved a medical cannabis bill in February 2026; it was not law when checked.",
+     "citation": "FDA compassionate special permit (Philstar, Feb 2024; Respicio & Co., Jan 2026); Manila Times (Feb 25 2026)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "ph-philstar-2024",
+      "ph-respicio",
+      "ph-mt-2026"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Even a small amount: mandatory prison",
+     "detail": "The UK government warns that a conviction for possessing even a small amount of any illicit drug means a mandatory prison sentence.",
+     "citation": "UK FCDO travel advice",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "ph-fcdo"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "No",
+     "detail": "Cultivation is illegal under RA 9165.",
+     "citation": "RA 9165 (Respicio & Co., Jan 2026)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "ph-respicio"
+     ]
+    }
+   }
+  },
+  "AE": {
+   "name": "United Arab Emirates",
+   "page": "world-united-arab-emirates.html",
+   "summary": "The UAE has zero tolerance for drugs. Possessing even the smallest amount of cannabis can mean at least 3 months in prison or a heavy fine, traces in your blood count as possession, and some CBD products are illegal.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No. Zero tolerance",
+     "detail": "The UK government says there is zero tolerance for drug offences, with severe penalties for using, possessing, smuggling and trafficking, including the death penalty for trafficking.",
+     "citation": "UK FCDO travel advice",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "ae-fcdo"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Any amount, including traces in your blood",
+     "detail": "Possession of even the smallest amount, including cannabis, can lead to a minimum 3-month prison term or a fine of 20,000 to 100,000 dirhams. The authorities count drugs found in your bloodstream as possession, so use before arrival can lead to charges.",
+     "citation": "UK FCDO travel advice (updated Nov 18 2026)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "ae-fcdo"
+     ]
+    }
+   }
+  },
+  "ID": {
+   "name": "Indonesia",
+   "page": "world-indonesia.html",
+   "summary": "Indonesia has zero tolerance for drugs. Possessing, using, making or trafficking cannabis can bring long prison sentences or the death penalty, and airports scan transit passengers' bags.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No. Zero tolerance",
+     "detail": "The UK government warns not to get involved with illegal drugs in Indonesia: possession, use, manufacture and trafficking can bring long prison sentences or the death penalty.",
+     "citation": "UK FCDO travel advice",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "id-fcdo"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Any amount: long prison or death",
+     "detail": "Possession of any amount is an offence; penalties include long prison sentences and, for serious cases, the death penalty. Airports scan the bags of transit passengers.",
+     "citation": "UK FCDO travel advice",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "id-fcdo"
+     ]
+    }
+   }
   }
  },
  "canada_provinces": [
@@ -4095,7 +4289,18 @@
     "MA",
     "LB",
     "JP",
-    "NP"
+    "NP",
+    "SG",
+    "MY",
+    "PH"
+   ]
+  },
+  {
+   "id": "banned",
+   "label": "Banned, with no medical program",
+   "codes": [
+    "AE",
+    "ID"
    ]
   }
  ],
@@ -6960,6 +7165,86 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Nepal travel advice: safety and security",
    "url": "https://www.gov.uk/foreign-travel-advice/nepal/safety-and-security",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "sg-mha",
+   "kind": "government",
+   "publisher": "Ministry of Home Affairs, Singapore",
+   "title": "The Singapore Government's position on the use of pharmaceutical products containing cannabinoids",
+   "url": "https://www.mha.gov.sg/media-room/newsroom/the-singapore-government-position-on-the-use-of-pharmaceutical-products-containing-cannabinoids/",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "sg-cnb-med",
+   "kind": "government",
+   "publisher": "Central Narcotics Bureau, Singapore",
+   "title": "Understanding \"medical cannabis\"",
+   "url": "https://www.cnb.gov.sg/educational-resources/myths-and-facts-about-drugs/cannabis/understanding-medical-cannabis",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "sg-mothership",
+   "kind": "news",
+   "publisher": "Mothership",
+   "title": "Girl with epilepsy in Singapore first and only one receiving cannabis-based drug approved for treatment (Dec 2019)",
+   "url": "https://mothership.sg/2019/12/singapore-cannabis-drug-epilepsy-treatment",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "my-star-2025",
+   "kind": "news",
+   "publisher": "The Star (Malaysia)",
+   "title": "Health Ministry opens door for cannabis-based products in medical treatment (Mar 4 2025)",
+   "url": "https://www.thestar.com.my/news/nation/2025/03/04/health-ministry-opens-door-for-cannabis-based-products-in-medical-treatment",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "my-codeblue",
+   "kind": "news",
+   "publisher": "CodeBlue",
+   "title": "Health Ministry permits marijuana for medical treatment (Nov 2021)",
+   "url": "https://codeblue.galencentre.org/?p=28527",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "my-mjm-2026",
+   "kind": "research",
+   "publisher": "Medical Journal of Malaysia, vol. 81 no. 2 (2026)",
+   "title": "Willingness of medical practitioners to prescribe medical cannabis",
+   "url": "https://www.e-mjm.org/2026/v81n2/prescribe-medical-cannabis.pdf",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "ph-respicio",
+   "kind": "organization",
+   "publisher": "Respicio & Co. (law firm commentary)",
+   "title": "Current legal status and pending legislation on medical cannabis in the Philippines (Jan 2026)",
+   "url": "https://www.respicio.ph/commentaries/current-legal-status-and-pending-legislation-on-medical-cannabis-in-the-philippines",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "ph-mt-2026",
+   "kind": "news",
+   "publisher": "The Manila Times (via Newswav)",
+   "title": "House panels OK medical cannabis bill (Feb 25 2026)",
+   "url": "https://newswav.com/article/house-panels-ok-medical-cannabis-bill-A2602_CumPCf",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "ph-philstar-2024",
+   "kind": "news",
+   "publisher": "The Philippine Star",
+   "title": "DOH: medical cannabis proposals need strong science, cost-effective analysis (Feb 13 2024)",
+   "url": "https://www.philstar.com/business/agriculture/2024/02/13/2333123/doh-medical-cannabis-proposals-need-strong-science-cost-effective-analysis",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "ph-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
+   "title": "Philippines travel advice: safety and security",
+   "url": "https://www.gov.uk/foreign-travel-advice/philippines/safety-and-security",
    "retrieved_on": "2026-11-20"
   }
  ]

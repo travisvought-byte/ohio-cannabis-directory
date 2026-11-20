@@ -1231,34 +1231,6 @@
     }
    ]
   },
-  "ID": {
-   "name": "Indonesia",
-   "page": "world-indonesia.html",
-   "fcdo_title": "Indonesia",
-   "source_id": "fcdo-indonesia",
-   "updated": "2026-09-18",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Alcoholic drinks and drugs",
-     "paragraphs": [
-      "Drinks served in bars can be stronger than those in the UK, usually because the measures of spirits are larger. In some cases, excessive drinking and taking drugs has resulted in accidents, injuries, robbery, assaults and lost travel documents. Some British nationals have suffered psychiatric problems caused by alcohol, drugs and a lack of sleep. Drink responsibly and be aware of your limits."
-     ]
-    },
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "Do not get involved with illegal drugs in Indonesia. Possession, using, making or trafficking illegal drugs is a serious crime. The Indonesian authorities have a zero-tolerance policy and those caught may face long prison sentences or the death penalty. Legal cases can be lengthy and costly.",
-      "Cannabis and cannabis-based products, including medicinal cannabis, cannabis-based oils and creams, hemp-based products, CBD, THC, hash and edibles, are illegal in Indonesia. This applies whether it is carried in a bottle, vape, or any other form. The NHS has guidance explaining how cannabis oils differ and the risks they may carry.",
-      "British nationals have been caught and given long prison sentences for drug offences. Criminal groups sometimes pressure people into carrying drugs across borders. Do not allow yourself to be persuaded.",
-      "Airports in Indonesia have excellent technology and security for detecting illegal items, including cannabis. This is also used to scan the baggage of transiting passengers.",
-      "If you are detained by the police, it is important to understand your rights. The British embassy provides a guide to the legal and detention systems in Indonesia , but you must follow local laws and regulations. Any payments requested after arrest, that you agree to, are at your own discretion.",
-      "In some venues drugs may be offered as free samples. Police often raid venues popular with foreigners, especially in Bali. If police suspect drug use, you may be required to take a urine or blood test. A positive result will lead to arrest."
-     ]
-    }
-   ]
-  },
   "IR": {
    "name": "Iran",
    "page": "world-iran.html",
@@ -1577,57 +1549,6 @@
      "heading": "Illegal drugs penalties",
      "paragraphs": [
       "Penalties for drug use and smuggling can be severe. This includes cannabis."
-     ]
-    }
-   ]
-  },
-  "MY": {
-   "name": "Malaysia",
-   "page": "world-malaysia.html",
-   "fcdo_title": "Malaysia",
-   "source_id": "fcdo-malaysia",
-   "updated": "2026-11-18",
-   "sections": [
-    {
-     "part": "warnings-and-insurance",
-     "heading": "Cannabis and drug offences",
-     "paragraphs": [
-      "It is illegal to possess, use, traffic, import or export cannabis and other controlled drugs in Malaysia, including while transiting through to other countries. Many international airports use advance screening technology and may scan the baggage of transit passengers.",
-      "Malaysia has some of the world’s strictest drug laws. Severe penalties apply, including long prison sentences of up to 20 years, caning, and the death penalty.",
-      "See more information on the Safety and security page."
-     ]
-    },
-    {
-     "part": "entry-requirements",
-     "heading": "Drug screening",
-     "paragraphs": [
-      "The Malaysian authorities could ask you to take a urine test on arrival if they suspect drug use. If they find drugs in your system, they could detain or deport you and ban you from returning to Malaysia. You could face these penalties even if you took the drug outside Malaysia, including in a country where it is legal."
-     ]
-    },
-    {
-     "part": "safety-and-security",
-     "heading": "Cannabis and drug offences",
-     "paragraphs": [
-      "British Nationals have been arrested for attempting to take cannabis through Malaysian airports and border crossings. You can be arrested and prosecuted even if the drugs belong to someone else or if you are carrying items on behalf of another person.",
-      "Never carry packages, bags or other items through Malaysian airports or border crossings for people you do not know or trust. You are responsible for the content of your luggage and personal belongings.",
-      "If you are arrested or detained for a drug-related offence, the British High Commission can provide consular assistance but cannot intervene in the Malaysian legal process or secure your release from custody."
-     ]
-    },
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs penalties",
-     "paragraphs": [
-      "Possession, trafficking and manufacture of any illegal drugs are serious offences in Malaysia. This includes cannabis. British nationals have been caught carrying cannabis while transiting through Malaysia.",
-      "Airports in Malaysia have security equipment and procedures in place for scanning and detecting illegal substances, including cannabis. This is also used to scan all carry-on and checked-in baggage of transiting passengers.",
-      "The Malaysian authorities have a zero-tolerance policy to drug offences. Possessing drugs, even in very small quantities, carries severe penalties, including:",
-      "arrest and detention",
-      "a long jail sentence if charged and convicted",
-      "a possible whipping",
-      "a possible death sentence by hanging for drug trafficking",
-      "Legal processes before court hearings can be long and expensive. It can take many months for a case to go to trial and time served ahead of that will not be included as part of the sentence.",
-      "Criminal gangs in the UK and elsewhere are known to coerce people into carrying drugs across borders. Do not allow yourself to be persuaded.",
-      "It is important to be aware of your rights if you are detained by the police. See our guidance for those detained or imprisoned in Malaysia .",
-      "Police often raid venues known to be frequented by foreigners. You may have to take a urine or blood test if there is a reasonable suspicion you have used drugs. You will be arrested if the test is positive."
      ]
     }
    ]
@@ -2005,23 +1926,6 @@
     }
    ]
   },
-  "PH": {
-   "name": "Philippines",
-   "page": "world-philippines.html",
-   "fcdo_title": "Philippines",
-   "source_id": "fcdo-philippines",
-   "updated": "2026-07-15",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "Do not become involved with drugs of any kind. Penalties for importing and using illegal drugs are particularly severe. A conviction for possession of even a small amount of any illicit drug in the Philippines means a mandatory prison sentence.",
-      "Police and other authorities have been publicly encouraged to kill suspected drug traffickers who resist arrest."
-     ]
-    }
-   ]
-  },
   "PL": {
    "name": "Poland",
    "page": "world-poland.html",
@@ -2239,40 +2143,6 @@
      "heading": "Illegal drugs and prison sentences",
      "paragraphs": [
       "Do not become involved with drugs of any kind. There are heavy penalties for drug trafficking, including prison sentences. Prison conditions are harsh."
-     ]
-    }
-   ]
-  },
-  "SG": {
-   "name": "Singapore",
-   "page": "world-singapore.html",
-   "fcdo_title": "Singapore",
-   "source_id": "fcdo-singapore",
-   "updated": "2026-03-19",
-   "sections": [
-    {
-     "part": "warnings-and-insurance",
-     "heading": "Illegal drugs",
-     "paragraphs": [
-      "There are severe consequences for drug related crimes in Singapore. Evidence of drug use in your system on arrival or in transit will lead to refusal of entry or arrest. See Entry requirements and Safety and security pages for more information."
-     ]
-    },
-    {
-     "part": "entry-requirements",
-     "heading": "Screening: Drugs",
-     "paragraphs": [
-      "Penalties for drug possession, including cannabis, are severe. If you are carrying or transporting drugs, you can be imprisoned, caned or executed .",
-      "You can be screened for drugs in your system on arrival in Singapore, including if you’re in transit. You can be charged with drug consumption or detained without trial even if the drugs were taken in another country, including countries where the use of that particular drug is legal. See Illegal drugs"
-     ]
-    },
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs",
-     "paragraphs": [
-      "There are severe penalties for all drug offences in Singapore, including possession. Carrying even a small amount of drugs can have significant consequences.",
-      "You can be charged with trafficking (‘intent to sell’) for possessing drugs above a certain amount. You can be detained without trial. Sentences include prison terms, caning and the death penalty, including when transiting through the airport.",
-      "Airports in Singapore have excellent technology and security for detecting illegal items, including cannabis. This is also used to scan the baggage of transiting passengers.",
-      "See the Misuse of Drugs Act for information on definitions and penalties."
      ]
     }
    ]
@@ -2807,27 +2677,6 @@
      "heading": "Illegal drugs and prison sentences",
      "paragraphs": [
       "Penalties for being caught in possession of drugs are severe."
-     ]
-    }
-   ]
-  },
-  "AE": {
-   "name": "United Arab Emirates",
-   "page": "world-united-arab-emirates.html",
-   "fcdo_title": "United Arab Emirates",
-   "source_id": "fcdo-united-arab-emirates",
-   "updated": "2026-11-18",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs penalties",
-     "paragraphs": [
-      "There is zero tolerance for drugs-related offences.",
-      "The penalties for trafficking, smuggling, using and possessing illegal drugs (including residual amounts) are severe. Sentences for drug trafficking can include the death penalty. Possession of even the smallest amount of illegal drugs, including cannabis, can lead to a minimum 3-month prison term or a fine of between 20,000 UAE dirham and 100,000 UAE dirham. The Emirati authorities count the presence of drugs in the blood stream as possession.",
-      "Some ‘herbal highs’ and products containing cannabidiol (CBD) are illegal in the UAE .",
-      "Possessing, concealing or making transactions with money from drugs-related offences is illegal. You could get a prison sentence and a fine.",
-      "UAE airports have excellent technology and security for detecting illegal items, including cannabis. This is also used to scan the baggage of transiting passengers. You can be arrested for carrying drugs, even residual amounts.",
-      "Some skincare products and e-cigarette refills may contain ingredients that are illegal in the UAE such as CBD oil. If you are found in possession of such products, they will be confiscated and you could face criminal charges. A list of narcotic, psychotropic and controlled drugs where this rule applies, allowed quantities and documents to be presented can be found on the UAE Ministry of Health website ."
      ]
     }
    ]
@@ -3498,14 +3347,6 @@
    "retrieved_on": "2026-11-20"
   },
   {
-   "id": "fcdo-indonesia",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Indonesia travel advice (last updated by the FCDO 2026-09-18)",
-   "url": "https://www.gov.uk/foreign-travel-advice/indonesia",
-   "retrieved_on": "2026-11-20"
-  },
-  {
    "id": "fcdo-iran",
    "kind": "government",
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
@@ -3647,14 +3488,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Malawi travel advice (last updated by the FCDO 2026-10-20)",
    "url": "https://www.gov.uk/foreign-travel-advice/malawi",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-malaysia",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Malaysia travel advice (last updated by the FCDO 2026-11-18)",
-   "url": "https://www.gov.uk/foreign-travel-advice/malaysia",
    "retrieved_on": "2026-11-20"
   },
   {
@@ -3834,14 +3667,6 @@
    "retrieved_on": "2026-11-20"
   },
   {
-   "id": "fcdo-philippines",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Philippines travel advice (last updated by the FCDO 2026-07-15)",
-   "url": "https://www.gov.uk/foreign-travel-advice/philippines",
-   "retrieved_on": "2026-11-20"
-  },
-  {
    "id": "fcdo-poland",
    "kind": "government",
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
@@ -3943,14 +3768,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Sierra Leone travel advice (last updated by the FCDO 2026-06-19)",
    "url": "https://www.gov.uk/foreign-travel-advice/sierra-leone",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-singapore",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Singapore travel advice (last updated by the FCDO 2026-03-19)",
-   "url": "https://www.gov.uk/foreign-travel-advice/singapore",
    "retrieved_on": "2026-11-20"
   },
   {
@@ -4199,14 +4016,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Ukraine travel advice (last updated by the FCDO 2026-10-02)",
    "url": "https://www.gov.uk/foreign-travel-advice/ukraine",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-united-arab-emirates",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "United Arab Emirates travel advice (last updated by the FCDO 2026-11-18)",
-   "url": "https://www.gov.uk/foreign-travel-advice/united-arab-emirates",
    "retrieved_on": "2026-11-20"
   },
   {

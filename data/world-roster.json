@@ -837,7 +837,7 @@
    "iso": "ID",
    "name": "Indonesia",
    "display": "Indonesia",
-   "status": "basic",
+   "status": "deep",
    "page": "world-indonesia.html",
    "queue": 40
   },
@@ -1061,7 +1061,7 @@
    "iso": "MY",
    "name": "Malaysia",
    "display": "Malaysia",
-   "status": "basic",
+   "status": "deep",
    "page": "world-malaysia.html",
    "queue": 39
   },
@@ -1397,7 +1397,7 @@
    "iso": "PH",
    "name": "Philippines",
    "display": "Philippines",
-   "status": "basic",
+   "status": "deep",
    "page": "world-philippines.html",
    "queue": 37
   },
@@ -1597,7 +1597,7 @@
    "iso": "SG",
    "name": "Singapore",
    "display": "Singapore",
-   "status": "basic",
+   "status": "deep",
    "page": "world-singapore.html",
    "queue": 38
   },
@@ -1869,7 +1869,7 @@
    "iso": "AE",
    "name": "United Arab Emirates",
    "display": "United Arab Emirates",
-   "status": "basic",
+   "status": "deep",
    "page": "world-united-arab-emirates.html",
    "queue": 41
   },
