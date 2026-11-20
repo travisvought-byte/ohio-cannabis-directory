@@ -253,8 +253,8 @@
 "iso": "BR",
 "name": "Brazil",
 "display": "Brazil",
-"status": "queued",
-"page": null,
+"status": "deep",
+"page": "world-brazil.html",
 "queue": 24
 },
 {
