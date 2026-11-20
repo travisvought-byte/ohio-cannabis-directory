@@ -5233,6 +5233,72 @@
      "Past convictions stay on record, which can matter at the US border."
     ]
    }
+  },
+  "KY": {
+   "name": "Cayman Islands",
+   "page": "world-cayman-islands.html",
+   "summary": "Cannabis is illegal except for prescribed medical extracts and tinctures. Possession and use still carry prison terms on the books. Voters backed decriminalising small amounts in an April 2025 referendum, and the Law Reform Commission was taking public submissions on how to do it until September 1, 2026.",
+   "note": "Amounts are in Cayman Islands dollars. Reform was under consultation when this guide was written.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal; reform under consultation",
+     "detail": "Consuming cannabis carries a fine of up to $3,000 and up to three years in prison under the Misuse of Drugs Act, rising to $10,000 and ten years for a third conviction. On April 30, 2025, 55.64% of voters in a non-binding referendum supported decriminalising consumption and possession of small amounts. Cabinet referred the question to the Law Reform Commission on June 27, 2025, and its discussion paper took submissions until September 1, 2026.",
+     "citation": "Law Reform Commission discussion paper (Jul 1 2026), citing the Misuse of Drugs Act (2026 Revision)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ky-lrc-2026"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Prescribed extracts and tinctures only",
+     "detail": "Section 2A of the Misuse of Drugs Act permits cannabis extracts and tinctures for medical or therapeutic use on a prescription from a medical doctor.",
+     "citation": "Misuse of Drugs Act s. 2A, as cited in the Law Reform Commission paper (Jul 1 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ky-lrc-2026"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Still a crime",
+     "detail": "Possessing less than one pound of cannabis or resin carries a fine of up to $20,000 and up to seven years in prison under the current Act, with up to ten years for a repeat conviction. The 2025 referendum result has not yet changed the law.",
+     "citation": "Law Reform Commission discussion paper (Jul 1 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ky-lrc-2026"
+     ]
+    },
+    "record-relief": {
+     "status": "limited",
+     "short": "Parliament asked for an expungement law",
+     "detail": "On October 9, 2024 Parliament passed a motion asking the Government to consider amending the spent convictions law so that convictions for possessing one ounce or less for personal use can be expunged. The motion does not itself expunge records.",
+     "citation": "Parliament of the Cayman Islands, PMM No. 2 of 2024-2025",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ky-motion-2024"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "The Law Reform Commission's paper compares decriminalisation models from elsewhere, including some that allow personal cultivation, but it had not settled on a Cayman model when consultation opened.",
+    "source_ids": [
+     "ky-lrc-2026"
+    ]
+   },
+   "differences": {
+    "title": "What is different about the Cayman Islands",
+    "source_ids": [
+     "ky-lrc-2026",
+     "ky-motion-2024"
+    ],
+    "points": [
+     "Voters have already backed decriminalisation, but the law has not changed yet.",
+     "Medical access is limited to prescribed extracts and tinctures.",
+     "On paper, possession of under a pound can still mean years in prison."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -5597,7 +5663,8 @@
     "PR",
     "BB",
     "BS",
-    "BM"
+    "BM",
+    "KY"
    ]
   },
   {
@@ -9086,6 +9153,22 @@
    "publisher": "Government of Bermuda",
    "title": "Ministerial Statement: Clarification on Legal Status of Cannabis Possession (undated; retrieved Nov 20 2026)",
    "url": "https://www.gov.bm/print/html/node/1224686",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ky-lrc-2026",
+   "kind": "government",
+   "publisher": "Cayman Islands Law Reform Commission (via Radio Cayman, gov.ky)",
+   "title": "Discussion Paper: Cannabis Reform (Jul 1 2026; submissions due Sep 1 2026)",
+   "url": "https://www.radiocayman.gov.ky/viewPDF/documents/2026-07-02-04-15-18-Discussion-Paper---Cannabis-Reform---1-July-2026.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ky-motion-2024",
+   "kind": "government",
+   "publisher": "Parliament of the Cayman Islands",
+   "title": "Private Member's Motion No. 2 of 2024-2025: Motion to Expunge Criminal Records (passed Oct 9 2024)",
+   "url": "https://parliament.ky/wp-content/uploads/2024/10/PMM-No.-2-Motion-to-Expunge-Criminal-Records__PASSED-9.10.24.pdf",
    "retrieved_on": "2026-11-19"
   }
  ]

@@ -480,22 +480,6 @@
     }
    ]
   },
-  "KY": {
-   "name": "Cayman Islands",
-   "page": "world-cayman-islands.html",
-   "fcdo_title": "Cayman Islands (British Overseas Territory)",
-   "source_id": "fcdo-cayman-islands",
-   "updated": "2025-10-29",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "There are harsh penalties for those caught with drugs of any kind. Penalties can include imprisonment for up to 35 years, and fines of unlimited amounts."
-     ]
-    }
-   ]
-  },
   "CF": {
    "name": "Central African Republic",
    "page": "world-central-african-republic.html",
@@ -2685,14 +2669,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Cape Verde travel advice (last updated by the FCDO 2026-07-28)",
    "url": "https://www.gov.uk/foreign-travel-advice/cape-verde",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-cayman-islands",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Cayman Islands (British Overseas Territory) travel advice (last updated by the FCDO 2025-10-29)",
-   "url": "https://www.gov.uk/foreign-travel-advice/cayman-islands",
    "retrieved_on": "2026-11-20"
   },
   {
