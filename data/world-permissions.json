@@ -2166,6 +2166,118 @@
      "Where you may smoke outdoors depends on your city, and many local rules go further than the courts allow."
     ]
    }
+  },
+  "IE": {
+   "name": "Ireland",
+   "page": "world-ireland.html",
+   "summary": "Illegal for recreational use. Since December 2020 gardaí can caution a first-time adult found with cannabis for personal use instead of prosecuting. Specialist doctors can prescribe it for three conditions, and a 2026 Oireachtas committee called for decriminalising personal possession.",
+   "note": "Gardaí are the Irish police. The 1977 Act states its fines in Irish pounds; euro figures are the official conversions.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No. Possession is a crime",
+     "detail": "Possessing a controlled drug without authorisation is an offence under section 3 of the Misuse of Drugs Act 1977, and cannabis is controlled. A Citizens' Assembly recommended a health-led response in January 2024, and in June 2026 the Joint Committee on Drugs Use recommended repealing section 3 and fully decriminalising possession for personal use. An Irish Times editorial in July 2026 said government signals suggested little appetite for the change.",
+     "citation": "Misuse of Drugs Act 1977 (revised); Law Society Gazette, Jun 24 2026; Irish Times, Jul 2 2026 (editorial)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ie-mda-revised",
+      "ie-gazette-2026",
+      "ie-irishtimes-2026"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Consultants only, for three conditions",
+     "detail": "Under the Medical Cannabis Access Programme, medical consultants can prescribe specified cannabis-based products to patients who have exhausted other treatments for spasticity in multiple sclerosis, nausea and vomiting from chemotherapy, or severe treatment-resistant epilepsy. For other conditions a doctor can apply to the Minister for Health for a licence for a named patient. A GP cannot prescribe on their own. The HSE reimburses only treatment for the three listed conditions.",
+     "citation": "Houses of the Oireachtas, Apr 19 2023; HSE, Medical Cannabis Products Reimbursement Scheme",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ie-oireachtas-mcap",
+      "ie-hse-mcprs"
+     ]
+    },
+    "buying": {
+     "status": "medical-only",
+     "short": "No legal sale except by prescription",
+     "detail": "There is no legal market for adults. Patients get products only on a consultant's prescription, and the HSE reimbursement scheme for the licence route covers products bought from one pharmacy in the Netherlands, Transvaal Apotheek.",
+     "citation": "Misuse of Drugs Act 1977 (revised); HSE, Medical Cannabis Products Reimbursement Scheme",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ie-mda-revised",
+      "ie-hse-mcprs"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "A first offence may get a caution; fines in court",
+     "detail": "Since December 14, 2020 gardaí can give an adult caution instead of prosecuting someone found with cannabis for personal use, for a first offence only and for no other drug. In court, the Act sets a maximum fine for personal-use possession of £300 (€380.92) on summary conviction for a first offence and £400 (€507.90) for a second. A third or later offence can bring up to 12 months in prison on summary conviction, or three years on indictment. The Irish Times reports that gardaí tend to prosecute only repeat offenders.",
+     "citation": "Misuse of Drugs Act 1977 s. 27 (revised); Offaly Express, Sep 2025 (news); Irish Times, Jul 2 2026",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ie-mda-revised",
+      "ie-offaly-caution",
+      "ie-irishtimes-2026"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "No. Up to 14 years on indictment",
+     "detail": "Section 17 bans cultivating any plant of the genus Cannabis without a licence. The maximum penalty is 12 months in prison on summary conviction, or up to 14 years on indictment.",
+     "citation": "Misuse of Drugs Act 1977 ss. 17 and 27 (revised)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ie-mda-s17",
+      "ie-mda-revised"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "1 ng/ml of THC in blood, minimum 1-year ban",
+     "detail": "Under the Road Traffic Act 2016 it is an offence to drive with 1 nanogram of THC per millilitre of blood or more, or 5 ng/ml of its metabolite, whether or not you are impaired. Gardaí can test saliva at the roadside. Driving over the limit brings a disqualification of at least one year for a first offence and two years for a second. Driving while impaired brings at least four and six years. Fines run up to €5,000, with up to six months in prison on summary conviction. A medical exemption certificate covers prescribed cannabinoid products, but not driving while impaired.",
+     "citation": "Road Traffic Act 2016 s. 8; Garda Síochána, Preliminary Drug Testing FAQ (Dec 2022)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ie-rta-2016",
+      "ie-garda-drugtest"
+     ]
+    },
+    "record-relief": {
+     "status": "limited",
+     "short": "A single minor conviction becomes spent after 7 years",
+     "detail": "Under the Criminal Justice (Spent Convictions and Certain Disclosures) Act 2016, a person with one, and only one, conviction that led to a fine or a prison term under 12 months no longer has to disclose it after seven years. There is no cannabis-specific expungement, and the government has said it is reviewing the Act with a view to widening it.",
+     "citation": "Houses of the Oireachtas, Apr 24 2024",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ie-oireachtas-spent"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "Ireland ran a Citizens' Assembly on Drugs Use from April to October 2023. Its final report made 36 recommendations. The closest vote was on cannabis: 39 members backed a health-led approach and 38 backed legalising and regulating cannabis.",
+    "source_ids": [
+     "ie-citizens-assembly",
+     "ie-journal-2024"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Ireland",
+    "source_ids": [
+     "ie-offaly-caution",
+     "ie-mda-revised",
+     "ie-hse-mcprs",
+     "ie-rta-2016",
+     "ie-gazette-2026",
+     "ie-journal-2024"
+    ],
+    "points": [
+     "Cannabis is the only drug covered by the adult caution: other drugs still go to court.",
+     "The law punishes cannabis possession for personal use with fines only for the first two offences; prison becomes possible from the third.",
+     "Medical cannabis exists, but only consultants can prescribe it and reimbursement covers just three conditions.",
+     "The drug-driving limit for THC is 1 ng/ml of blood, and an offence does not need proof of impairment.",
+     "A citizens' assembly came within one vote, 39 to 38, of backing a legal cannabis market over a health-led approach.",
+     "An Oireachtas committee recommended full decriminalisation of personal possession in June 2026; the government had not adopted it."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -2489,7 +2601,8 @@
     "IL",
     "GB",
     "AU",
-    "NZ"
+    "NZ",
+    "IE"
    ]
   }
  ],
@@ -2497,7 +2610,6 @@
   "U.S. Virgin Islands",
   "Guam",
   "Northern Mariana Islands",
-  "Ireland",
   "Caribbean islands"
  ],
  "sources": [
@@ -4467,6 +4579,102 @@
    "publisher": "Noticias RCN",
    "title": "Se hunde en Senado el proyecto que buscaba legalizar el consumo de cannabis en adultos (Dec 12 2023)",
    "url": "https://www.noticiasrcn.com/colombia/se-hunde-proyecto-para-regular-cannabis-de-uso-adulto-460623",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ie-mda-revised",
+   "kind": "statute",
+   "publisher": "Law Reform Commission, Revised Acts",
+   "title": "Misuse of Drugs Act 1977 (revised), sections 3 and 27",
+   "url": "https://revisedacts.lawreform.ie/eli/1977/act/12/revised/en/html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ie-mda-s17",
+   "kind": "statute",
+   "publisher": "Law Reform Commission, Revised Acts",
+   "title": "Misuse of Drugs Act 1977 (revised), section 17: cultivation",
+   "url": "https://revisedacts.lawreform.ie/eli/1977/act/12/section/17/revised/en/html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ie-offaly-caution",
+   "kind": "news",
+   "publisher": "Offaly Express",
+   "title": "Penalty eased for first offence cannabis possession for personal use",
+   "url": "https://www.offalyexpress.ie/news/home/596336/penalty-eased-for-first-offence-cannabis-possession-for-personal-use.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ie-irishtimes-2026",
+   "kind": "news",
+   "publisher": "The Irish Times (editorial)",
+   "title": "The Irish Times view on drugs policy: a plan worth considering (Jul 2 2026)",
+   "url": "https://www.irishtimes.com/opinion/editorials/2026/07/02/the-irish-times-view-on-drugs-policy-a-plan-worth-considering/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ie-gazette-2026",
+   "kind": "news",
+   "publisher": "Law Society Gazette",
+   "title": "Report backs health-led approach to drugs (Jun 24 2026)",
+   "url": "https://www.lawsociety.ie/gazette/top-stories/2026/june/report-backs-health-led-approach-to-drugs/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ie-citizens-assembly",
+   "kind": "government",
+   "publisher": "Citizens' Assembly",
+   "title": "Launch of the Report of the Citizens' Assembly on Drugs Use (Jan 25 2024)",
+   "url": "https://citizensassembly.ie/launch-of-the-report-of-the-citizens-assembly-on-drugs-use/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ie-journal-2024",
+   "kind": "news",
+   "publisher": "TheJournal.ie",
+   "title": "Ireland has 'once in a generation' chance to decriminalise personal drug use, Paul Reid says (Jan 25 2024)",
+   "url": "https://www.thejournal.ie/final-report-on-citizens-assembly-on-drug-use-6281145-Jan2024/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ie-oireachtas-mcap",
+   "kind": "government",
+   "publisher": "Houses of the Oireachtas",
+   "title": "Parliamentary question on the Medical Cannabis Access Programme (Apr 19 2023)",
+   "url": "https://www.oireachtas.ie/en/debates/question/2023-04-19/177/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ie-hse-mcprs",
+   "kind": "government",
+   "publisher": "Health Service Executive (HSE)",
+   "title": "Medical Cannabis Products Reimbursement Scheme",
+   "url": "https://www2.hse.ie/services/schemes-allowances/medical-cannabis-products-reimbursement-scheme",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ie-rta-2016",
+   "kind": "statute",
+   "publisher": "Law Reform Commission, Revised Acts",
+   "title": "Road Traffic Act 2016, section 8 (drug limits)",
+   "url": "https://revisedacts.lawreform.ie/eli/2016/act/21/section/8/revised/en/html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ie-garda-drugtest",
+   "kind": "government",
+   "publisher": "An Garda Síochána",
+   "title": "Preliminary Drug Testing: Frequently Asked Questions (updated Dec 1 2022)",
+   "url": "https://www.garda.ie/en/about-us/our-departments/office-of-corporate-communications/news-media/faqs-drug-testing.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ie-oireachtas-spent",
+   "kind": "government",
+   "publisher": "Houses of the Oireachtas",
+   "title": "Parliamentary question on spent convictions (Apr 24 2024)",
+   "url": "https://www.oireachtas.ie/en/debates/question/2024-04-24/124/",
    "retrieved_on": "2026-11-19"
   }
  ]

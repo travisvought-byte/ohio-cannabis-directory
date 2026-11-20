@@ -861,8 +861,8 @@
 "iso": "IE",
 "name": "Ireland",
 "display": "Ireland",
-"status": "queued",
-"page": null,
+"status": "deep",
+"page": "world-ireland.html",
 "queue": 17
 },
 {
