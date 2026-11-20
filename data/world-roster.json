@@ -1029,8 +1029,8 @@
 "iso": "LU",
 "name": "Luxembourg",
 "display": "Luxembourg",
-"status": "queued",
-"page": null,
+"status": "deep",
+"page": "world-luxembourg.html",
 "queue": 18
 },
 {

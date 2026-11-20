@@ -2278,6 +2278,103 @@
      "An Oireachtas committee recommended full decriminalisation of personal possession in June 2026; the government had not adopted it."
     ]
    }
+  },
+  "LU": {
+   "name": "Luxembourg",
+   "page": "world-luxembourg.html",
+   "summary": "Since July 2023 adults may grow up to four plants per household from seed and use cannabis at home. There is no legal shop, and carrying it in public is still an offence, fined for 3 grams or less. Medical cannabis is free from hospital pharmacies for qualifying residents.",
+   "note": "French-language law texts are summarized in English.",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "Yes, at home, from your own plants",
+     "detail": "The law of July 10, 2023, published on July 17, 2023, lets adults consume and hold home-grown cannabis at their home or usual residence. Using it outside the home is still an offence, fined €25 to €500. Using it in front of minors, at school or at work can bring 8 days to 6 months in prison and a fine of €251 to €2,500.",
+     "citation": "Loi du 10 juillet 2023 (Mémorial A 408); Bonn & Schmitt, Jul 24 2023 (law firm)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "lu-law-2023",
+      "lu-mondaq-bonn"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Yes, free from hospital pharmacies",
+     "detail": "Prescription has been allowed since July 2018. A doctor licensed in Luxembourg who has completed a training course certified by the Health Directorate can prescribe dried flower or oil with set THC and CBD levels for severe chronic pain that has not responded to treatment, nausea from chemotherapy, or spasticity in multiple sclerosis. It is dispensed free of charge at four hospital pharmacies, within 60 days of the prescription. Patients must live in Luxembourg, be covered by its health insurance or hold Luxembourg nationality.",
+     "citation": "Health Directorate, How to access medicinal cannabis",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "lu-sante-access"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal shops",
+     "detail": "The 2023 law legalised growing at home, not selling. Acquiring cannabis is still an offence: up to 3 grams brings a fine, and more than 3 grams can bring 8 days to 6 months in prison and a fine of up to €2,500. Medical cannabis comes only from hospital pharmacies.",
+     "citation": "Loi du 10 juillet 2023; Health Directorate, How to access medicinal cannabis",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "lu-law-2023",
+      "lu-sante-access"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "At home, no set limit; in public, 3 grams means a fine",
+     "detail": "At home adults may hold what they grow. In public, possessing or transporting 3 grams or less is a minor offence with a fine of €25 to €500, and police or customs can issue a €145 on-the-spot notice instead; if it is paid within 45 days, prosecution ends. More than 3 grams is a criminal offence punishable by 8 days to 6 months in prison and a fine of €251 to €2,500.",
+     "citation": "Loi du 10 juillet 2023 arts. 7-1 and 7-3",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "lu-law-2023"
+     ]
+    },
+    "sharing": {
+     "status": "not-permitted",
+     "short": "No. Only home use is legal",
+     "detail": "The law allows holding and using home-grown cannabis at home, not passing it on. Offering cannabis to a minor, home-grown included, can bring 6 months to 2 years in prison and a fine of up to €25,000, and providing premises or means for others to use it is a separate offence.",
+     "citation": "Loi du 10 juillet 2023 art. 7-1",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "lu-law-2023"
+     ]
+    },
+    "home-grow": {
+     "status": "allowed",
+     "short": "Four plants per household, from seed",
+     "detail": "Up to four plants per household, meaning everyone who shares a home and a common budget, not per person. Only an adult may grow them, only from seed, at the home or usual residence, and they must not be visible from the public road. More plants, or growing somewhere else, can bring 8 days to 5 years in prison and a fine of €500 to €250,000.",
+     "citation": "Loi du 10 juillet 2023 arts. 7-1 and 7-2; Bonn & Schmitt (law firm)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "lu-law-2023",
+      "lu-mondaq-bonn"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "1 ng/ml of THC in blood serum",
+     "detail": "Driving with a THC level of 1 nanogram per millilitre of blood serum or more is an offence under article 12 of the road traffic law of February 14, 1955. It carries 8 days to 3 years in prison, a fine of €500 to €10,000, or both, and courts can ban the driver for 3 months to 15 years, as a 2024 criminal judgment sets out.",
+     "citation": "Tribunal d'arrondissement de Luxembourg, judgment of Mar 14 2024",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "lu-court-thc"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about Luxembourg",
+    "source_ids": [
+     "lu-law-2023",
+     "lu-sante-access",
+     "lu-court-thc"
+    ],
+    "points": [
+     "The four-plant limit is per household with a shared budget, so three adults living together still share four plants.",
+     "Plants must start from seed and must not be visible from the public road.",
+     "Home growing is legal, but there is nowhere to buy cannabis legally, so seeds are the only lawful starting point.",
+     "Carrying up to 3 grams in public can end with a €145 notice paid on the spot instead of a court case.",
+     "Medical cannabis is dispensed free of charge, but only to residents, people insured in Luxembourg or Luxembourg nationals.",
+     "Legal home use does not change the road rules: 1 ng/ml of THC in blood serum is an offence."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -2576,7 +2673,8 @@
     "UY",
     "DE",
     "MT",
-    "CZ"
+    "CZ",
+    "LU"
    ]
   },
   {
@@ -4675,6 +4773,38 @@
    "publisher": "Houses of the Oireachtas",
    "title": "Parliamentary question on spent convictions (Apr 24 2024)",
    "url": "https://www.oireachtas.ie/en/debates/question/2024-04-24/124/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "lu-law-2023",
+   "kind": "statute",
+   "publisher": "Mémorial A No. 408 (Ministry of Justice copy)",
+   "title": "Loi du 10 juillet 2023 modifying the law of 19 February 1973 (home cultivation of cannabis)",
+   "url": "https://mj.gouvernement.lu/dam-assets/dossiers/cannabis/loi-du-10-juillet-2023-cannabis.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "lu-mondaq-bonn",
+   "kind": "organization",
+   "publisher": "Bonn & Schmitt (law firm), via Legal 500",
+   "title": "Regulation Of Recreational Cannabis (Jul 24 2023)",
+   "url": "https://www.legal500.com/intelligence/luxembourg/cannabis-hemp/regulation-of-recreational-cannabis",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "lu-sante-access",
+   "kind": "government",
+   "publisher": "Health Directorate (Luxembourg)",
+   "title": "Information for patients: How to access medicinal cannabis?",
+   "url": "https://santesecu.public.lu/dam-assets/fr/publications/c/cannabis-medicinal-comment-acceder-fr/cannabis-comment-acceder-cannabis-medicinal-en.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "lu-court-thc",
+   "kind": "government",
+   "publisher": "Tribunal d'arrondissement de Luxembourg (judgment published on data.public.lu)",
+   "title": "Criminal judgment of Mar 14 2024 on driving with THC (pseudonymised)",
+   "url": "https://download.data.public.lu/resources/tribunal-darrondissement-luxembourg-penal/20240828-025713/20240314-tal-756-pseudonymise-accessible.pdf",
    "retrieved_on": "2026-11-19"
   }
  ]
