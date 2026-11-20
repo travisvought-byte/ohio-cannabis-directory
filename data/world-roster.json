@@ -1,2005 +1,2005 @@
 {
- "as_of": "2026-11-19",
- "purpose": "Every country and territory in ISO 3166-1, with how far the-reefer.com covers it. Status is site coverage, not a statement about the law.",
- "statuses": {
-  "states": "Covered state by state",
-  "deep": "Full country guide",
-  "basic": "Starter page",
-  "queued": "Next in line",
-  "not-started": "Not started"
- },
- "countries": [
-  {
-   "iso": "AF",
-   "name": "Afghanistan",
-   "display": "Afghanistan",
-   "status": "basic",
-   "page": "world-afghanistan.html",
-   "queue": null
-  },
-  {
-   "iso": "AL",
-   "name": "Albania",
-   "display": "Albania",
-   "status": "basic",
-   "page": "world-albania.html",
-   "queue": null
-  },
-  {
-   "iso": "DZ",
-   "name": "Algeria",
-   "display": "Algeria",
-   "status": "basic",
-   "page": "world-algeria.html",
-   "queue": null
-  },
-  {
-   "iso": "AS",
-   "name": "American Samoa",
-   "display": "American Samoa",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "AD",
-   "name": "Andorra",
-   "display": "Andorra",
-   "status": "basic",
-   "page": "world-andorra.html",
-   "queue": null
-  },
-  {
-   "iso": "AO",
-   "name": "Angola",
-   "display": "Angola",
-   "status": "basic",
-   "page": "world-angola.html",
-   "queue": null
-  },
-  {
-   "iso": "AI",
-   "name": "Anguilla",
-   "display": "Anguilla",
-   "status": "basic",
-   "page": "world-anguilla.html",
-   "queue": null
-  },
-  {
-   "iso": "AQ",
-   "name": "Antarctica",
-   "display": "Antarctica",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "AG",
-   "name": "Antigua and Barbuda",
-   "display": "Antigua and Barbuda",
-   "status": "basic",
-   "page": "world-antigua-and-barbuda.html",
-   "queue": null
-  },
-  {
-   "iso": "AR",
-   "name": "Argentina",
-   "display": "Argentina",
-   "status": "deep",
-   "page": "world-argentina.html",
-   "queue": 25
-  },
-  {
-   "iso": "AM",
-   "name": "Armenia",
-   "display": "Armenia",
-   "status": "basic",
-   "page": "world-armenia.html",
-   "queue": null
-  },
-  {
-   "iso": "AW",
-   "name": "Aruba",
-   "display": "Aruba",
-   "status": "basic",
-   "page": "world-aruba.html",
-   "queue": null
-  },
-  {
-   "iso": "AU",
-   "name": "Australia",
-   "display": "Australia",
-   "status": "deep",
-   "page": "world-australia.html",
-   "queue": 12
-  },
-  {
-   "iso": "AT",
-   "name": "Austria",
-   "display": "Austria",
-   "status": "deep",
-   "page": "world-austria.html",
-   "queue": 22
-  },
-  {
-   "iso": "AZ",
-   "name": "Azerbaijan",
-   "display": "Azerbaijan",
-   "status": "basic",
-   "page": "world-azerbaijan.html",
-   "queue": null
-  },
-  {
-   "iso": "BS",
-   "name": "Bahamas",
-   "display": "Bahamas",
-   "status": "basic",
-   "page": "world-bahamas.html",
-   "queue": null
-  },
-  {
-   "iso": "BH",
-   "name": "Bahrain",
-   "display": "Bahrain",
-   "status": "basic",
-   "page": "world-bahrain.html",
-   "queue": null
-  },
-  {
-   "iso": "BD",
-   "name": "Bangladesh",
-   "display": "Bangladesh",
-   "status": "basic",
-   "page": "world-bangladesh.html",
-   "queue": null
-  },
-  {
-   "iso": "BB",
-   "name": "Barbados",
-   "display": "Barbados",
-   "status": "basic",
-   "page": "world-barbados.html",
-   "queue": null
-  },
-  {
-   "iso": "BY",
-   "name": "Belarus",
-   "display": "Belarus",
-   "status": "basic",
-   "page": "world-belarus.html",
-   "queue": null
-  },
-  {
-   "iso": "BE",
-   "name": "Belgium",
-   "display": "Belgium",
-   "status": "deep",
-   "page": "world-belgium.html",
-   "queue": 19
-  },
-  {
-   "iso": "BZ",
-   "name": "Belize",
-   "display": "Belize",
-   "status": "basic",
-   "page": "world-belize.html",
-   "queue": null
-  },
-  {
-   "iso": "BJ",
-   "name": "Benin",
-   "display": "Benin",
-   "status": "basic",
-   "page": "world-benin.html",
-   "queue": null
-  },
-  {
-   "iso": "BM",
-   "name": "Bermuda",
-   "display": "Bermuda",
-   "status": "basic",
-   "page": "world-bermuda.html",
-   "queue": null
-  },
-  {
-   "iso": "BT",
-   "name": "Bhutan",
-   "display": "Bhutan",
-   "status": "basic",
-   "page": "world-bhutan.html",
-   "queue": null
-  },
-  {
-   "iso": "BO",
-   "name": "Bolivia",
-   "display": "Bolivia",
-   "status": "basic",
-   "page": "world-bolivia.html",
-   "queue": null
-  },
-  {
-   "iso": "BQ",
-   "name": "Bonaire, Sint Eustatius and Saba",
-   "display": "Bonaire, Sint Eustatius and Saba",
-   "status": "basic",
-   "page": "world-bonaire-st-eustatius-and-saba.html",
-   "queue": null
-  },
-  {
-   "iso": "BA",
-   "name": "Bosnia and Herzegovina",
-   "display": "Bosnia and Herzegovina",
-   "status": "basic",
-   "page": "world-bosnia-and-herzegovina.html",
-   "queue": null
-  },
-  {
-   "iso": "BW",
-   "name": "Botswana",
-   "display": "Botswana",
-   "status": "basic",
-   "page": "world-botswana.html",
-   "queue": null
-  },
-  {
-   "iso": "BV",
-   "name": "Bouvet Island",
-   "display": "Bouvet Island",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "BR",
-   "name": "Brazil",
-   "display": "Brazil",
-   "status": "deep",
-   "page": "world-brazil.html",
-   "queue": 24
-  },
-  {
-   "iso": "IO",
-   "name": "British Indian Ocean Territory",
-   "display": "British Indian Ocean Territory",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "BN",
-   "name": "Brunei Darussalam",
-   "display": "Brunei Darussalam",
-   "status": "basic",
-   "page": "world-brunei.html",
-   "queue": null
-  },
-  {
-   "iso": "BG",
-   "name": "Bulgaria",
-   "display": "Bulgaria",
-   "status": "basic",
-   "page": "world-bulgaria.html",
-   "queue": null
-  },
-  {
-   "iso": "BF",
-   "name": "Burkina Faso",
-   "display": "Burkina Faso",
-   "status": "basic",
-   "page": "world-burkina-faso.html",
-   "queue": null
-  },
-  {
-   "iso": "BI",
-   "name": "Burundi",
-   "display": "Burundi",
-   "status": "basic",
-   "page": "world-burundi.html",
-   "queue": null
-  },
-  {
-   "iso": "CV",
-   "name": "Cabo Verde",
-   "display": "Cabo Verde",
-   "status": "basic",
-   "page": "world-cape-verde.html",
-   "queue": null
-  },
-  {
-   "iso": "KH",
-   "name": "Cambodia",
-   "display": "Cambodia",
-   "status": "basic",
-   "page": "world-cambodia.html",
-   "queue": null
-  },
-  {
-   "iso": "CM",
-   "name": "Cameroon",
-   "display": "Cameroon",
-   "status": "basic",
-   "page": "world-cameroon.html",
-   "queue": null
-  },
-  {
-   "iso": "CA",
-   "name": "Canada",
-   "display": "Canada",
-   "status": "deep",
-   "page": "world-canada.html",
-   "queue": null
-  },
-  {
-   "iso": "KY",
-   "name": "Cayman Islands",
-   "display": "Cayman Islands",
-   "status": "basic",
-   "page": "world-cayman-islands.html",
-   "queue": null
-  },
-  {
-   "iso": "CF",
-   "name": "Central African Republic",
-   "display": "Central African Republic",
-   "status": "basic",
-   "page": "world-central-african-republic.html",
-   "queue": null
-  },
-  {
-   "iso": "TD",
-   "name": "Chad",
-   "display": "Chad",
-   "status": "basic",
-   "page": "world-chad.html",
-   "queue": null
-  },
-  {
-   "iso": "CL",
-   "name": "Chile",
-   "display": "Chile",
-   "status": "deep",
-   "page": "world-chile.html",
-   "queue": 26
-  },
-  {
-   "iso": "CN",
-   "name": "China",
-   "display": "China",
-   "status": "deep",
-   "page": "world-china.html",
-   "queue": 43
-  },
-  {
-   "iso": "CX",
-   "name": "Christmas Island",
-   "display": "Christmas Island",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "CC",
-   "name": "Cocos (Keeling) Islands",
-   "display": "Cocos (Keeling) Islands",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "CO",
-   "name": "Colombia",
-   "display": "Colombia",
-   "status": "deep",
-   "page": "world-colombia.html",
-   "queue": 16
-  },
-  {
-   "iso": "KM",
-   "name": "Comoros",
-   "display": "Comoros",
-   "status": "basic",
-   "page": "world-comoros.html",
-   "queue": null
-  },
-  {
-   "iso": "CG",
-   "name": "Congo",
-   "display": "Congo",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "CD",
-   "name": "Congo, The Democratic Republic of the",
-   "display": "Congo, The Democratic Republic of the",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "CK",
-   "name": "Cook Islands",
-   "display": "Cook Islands",
-   "status": "basic",
-   "page": "world-cook-islands.html",
-   "queue": null
-  },
-  {
-   "iso": "CR",
-   "name": "Costa Rica",
-   "display": "Costa Rica",
-   "status": "deep",
-   "page": "world-costa-rica.html",
-   "queue": 30
-  },
-  {
-   "iso": "HR",
-   "name": "Croatia",
-   "display": "Croatia",
-   "status": "basic",
-   "page": "world-croatia.html",
-   "queue": null
-  },
-  {
-   "iso": "CU",
-   "name": "Cuba",
-   "display": "Cuba",
-   "status": "basic",
-   "page": "world-cuba.html",
-   "queue": null
-  },
-  {
-   "iso": "CW",
-   "name": "Curaçao",
-   "display": "Curaçao",
-   "status": "basic",
-   "page": "world-curacao.html",
-   "queue": null
-  },
-  {
-   "iso": "CY",
-   "name": "Cyprus",
-   "display": "Cyprus",
-   "status": "basic",
-   "page": "world-cyprus.html",
-   "queue": null
-  },
-  {
-   "iso": "CZ",
-   "name": "Czechia",
-   "display": "Czechia",
-   "status": "deep",
-   "page": "world-czechia.html",
-   "queue": 7
-  },
-  {
-   "iso": "CI",
-   "name": "Côte d'Ivoire",
-   "display": "Côte d'Ivoire",
-   "status": "basic",
-   "page": "world-cote-d-ivoire.html",
-   "queue": null
-  },
-  {
-   "iso": "DK",
-   "name": "Denmark",
-   "display": "Denmark",
-   "status": "deep",
-   "page": "world-denmark.html",
-   "queue": 23
-  },
-  {
-   "iso": "DJ",
-   "name": "Djibouti",
-   "display": "Djibouti",
-   "status": "basic",
-   "page": "world-djibouti.html",
-   "queue": null
-  },
-  {
-   "iso": "DM",
-   "name": "Dominica",
-   "display": "Dominica",
-   "status": "basic",
-   "page": "world-dominica.html",
-   "queue": null
-  },
-  {
-   "iso": "DO",
-   "name": "Dominican Republic",
-   "display": "Dominican Republic",
-   "status": "basic",
-   "page": "world-dominican-republic.html",
-   "queue": null
-  },
-  {
-   "iso": "EC",
-   "name": "Ecuador",
-   "display": "Ecuador",
-   "status": "deep",
-   "page": "world-ecuador.html",
-   "queue": 28
-  },
-  {
-   "iso": "EG",
-   "name": "Egypt",
-   "display": "Egypt",
-   "status": "basic",
-   "page": "world-egypt.html",
-   "queue": null
-  },
-  {
-   "iso": "SV",
-   "name": "El Salvador",
-   "display": "El Salvador",
-   "status": "basic",
-   "page": "world-el-salvador.html",
-   "queue": null
-  },
-  {
-   "iso": "GQ",
-   "name": "Equatorial Guinea",
-   "display": "Equatorial Guinea",
-   "status": "basic",
-   "page": "world-equatorial-guinea.html",
-   "queue": null
-  },
-  {
-   "iso": "ER",
-   "name": "Eritrea",
-   "display": "Eritrea",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "EE",
-   "name": "Estonia",
-   "display": "Estonia",
-   "status": "basic",
-   "page": "world-estonia.html",
-   "queue": null
-  },
-  {
-   "iso": "SZ",
-   "name": "Eswatini",
-   "display": "Eswatini",
-   "status": "basic",
-   "page": "world-eswatini.html",
-   "queue": null
-  },
-  {
-   "iso": "ET",
-   "name": "Ethiopia",
-   "display": "Ethiopia",
-   "status": "basic",
-   "page": "world-ethiopia.html",
-   "queue": null
-  },
-  {
-   "iso": "FK",
-   "name": "Falkland Islands (Malvinas)",
-   "display": "Falkland Islands (Malvinas)",
-   "status": "basic",
-   "page": "world-falkland-islands.html",
-   "queue": null
-  },
-  {
-   "iso": "FO",
-   "name": "Faroe Islands",
-   "display": "Faroe Islands",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "FJ",
-   "name": "Fiji",
-   "display": "Fiji",
-   "status": "basic",
-   "page": "world-fiji.html",
-   "queue": null
-  },
-  {
-   "iso": "FI",
-   "name": "Finland",
-   "display": "Finland",
-   "status": "deep",
-   "page": "world-finland.html",
-   "queue": 49
-  },
-  {
-   "iso": "FR",
-   "name": "France",
-   "display": "France",
-   "status": "deep",
-   "page": "world-france.html",
-   "queue": 20
-  },
-  {
-   "iso": "GF",
-   "name": "French Guiana",
-   "display": "French Guiana",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "PF",
-   "name": "French Polynesia",
-   "display": "French Polynesia",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "TF",
-   "name": "French Southern Territories",
-   "display": "French Southern Territories",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "GA",
-   "name": "Gabon",
-   "display": "Gabon",
-   "status": "basic",
-   "page": "world-gabon.html",
-   "queue": null
-  },
-  {
-   "iso": "GM",
-   "name": "Gambia",
-   "display": "Gambia",
-   "status": "basic",
-   "page": "world-the-gambia.html",
-   "queue": null
-  },
-  {
-   "iso": "GE",
-   "name": "Georgia",
-   "display": "Georgia",
-   "status": "basic",
-   "page": "world-georgia.html",
-   "queue": null
-  },
-  {
-   "iso": "DE",
-   "name": "Germany",
-   "display": "Germany",
-   "status": "deep",
-   "page": "world-germany.html",
-   "queue": 2
-  },
-  {
-   "iso": "GH",
-   "name": "Ghana",
-   "display": "Ghana",
-   "status": "basic",
-   "page": "world-ghana.html",
-   "queue": null
-  },
-  {
-   "iso": "GI",
-   "name": "Gibraltar",
-   "display": "Gibraltar",
-   "status": "basic",
-   "page": "world-gibraltar.html",
-   "queue": null
-  },
-  {
-   "iso": "GR",
-   "name": "Greece",
-   "display": "Greece",
-   "status": "deep",
-   "page": "world-greece.html",
-   "queue": 45
-  },
-  {
-   "iso": "GL",
-   "name": "Greenland",
-   "display": "Greenland",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "GD",
-   "name": "Grenada",
-   "display": "Grenada",
-   "status": "basic",
-   "page": "world-grenada.html",
-   "queue": null
-  },
-  {
-   "iso": "GP",
-   "name": "Guadeloupe",
-   "display": "Guadeloupe",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "GU",
-   "name": "Guam",
-   "display": "Guam",
-   "status": "deep",
-   "page": "world-guam.html",
-   "queue": null
-  },
-  {
-   "iso": "GT",
-   "name": "Guatemala",
-   "display": "Guatemala",
-   "status": "basic",
-   "page": "world-guatemala.html",
-   "queue": null
-  },
-  {
-   "iso": "GG",
-   "name": "Guernsey",
-   "display": "Guernsey",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "GN",
-   "name": "Guinea",
-   "display": "Guinea",
-   "status": "basic",
-   "page": "world-guinea.html",
-   "queue": null
-  },
-  {
-   "iso": "GW",
-   "name": "Guinea-Bissau",
-   "display": "Guinea-Bissau",
-   "status": "basic",
-   "page": "world-guinea-bissau.html",
-   "queue": null
-  },
-  {
-   "iso": "GY",
-   "name": "Guyana",
-   "display": "Guyana",
-   "status": "basic",
-   "page": "world-guyana.html",
-   "queue": null
-  },
-  {
-   "iso": "HT",
-   "name": "Haiti",
-   "display": "Haiti",
-   "status": "basic",
-   "page": "world-haiti.html",
-   "queue": null
-  },
-  {
-   "iso": "HM",
-   "name": "Heard Island and McDonald Islands",
-   "display": "Heard Island and McDonald Islands",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "VA",
-   "name": "Holy See (Vatican City State)",
-   "display": "Holy See (Vatican City State)",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "HN",
-   "name": "Honduras",
-   "display": "Honduras",
-   "status": "basic",
-   "page": "world-honduras.html",
-   "queue": null
-  },
-  {
-   "iso": "HK",
-   "name": "Hong Kong",
-   "display": "Hong Kong",
-   "status": "basic",
-   "page": "world-hong-kong.html",
-   "queue": null
-  },
-  {
-   "iso": "HU",
-   "name": "Hungary",
-   "display": "Hungary",
-   "status": "basic",
-   "page": "world-hungary.html",
-   "queue": null
-  },
-  {
-   "iso": "IS",
-   "name": "Iceland",
-   "display": "Iceland",
-   "status": "basic",
-   "page": "world-iceland.html",
-   "queue": null
-  },
-  {
-   "iso": "IN",
-   "name": "India",
-   "display": "India",
-   "status": "deep",
-   "page": "world-india.html",
-   "queue": 33
-  },
-  {
-   "iso": "ID",
-   "name": "Indonesia",
-   "display": "Indonesia",
-   "status": "deep",
-   "page": "world-indonesia.html",
-   "queue": 40
-  },
-  {
-   "iso": "IR",
-   "name": "Iran",
-   "display": "Iran",
-   "status": "basic",
-   "page": "world-iran.html",
-   "queue": null
-  },
-  {
-   "iso": "IQ",
-   "name": "Iraq",
-   "display": "Iraq",
-   "status": "basic",
-   "page": "world-iraq.html",
-   "queue": null
-  },
-  {
-   "iso": "IE",
-   "name": "Ireland",
-   "display": "Ireland",
-   "status": "deep",
-   "page": "world-ireland.html",
-   "queue": 17
-  },
-  {
-   "iso": "IM",
-   "name": "Isle of Man",
-   "display": "Isle of Man",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "IL",
-   "name": "Israel",
-   "display": "Israel",
-   "status": "deep",
-   "page": "world-israel.html",
-   "queue": 11
-  },
-  {
-   "iso": "IT",
-   "name": "Italy",
-   "display": "Italy",
-   "status": "deep",
-   "page": "world-italy.html",
-   "queue": 21
-  },
-  {
-   "iso": "JM",
-   "name": "Jamaica",
-   "display": "Jamaica",
-   "status": "deep",
-   "page": "world-jamaica.html",
-   "queue": 15
-  },
-  {
-   "iso": "JP",
-   "name": "Japan",
-   "display": "Japan",
-   "status": "deep",
-   "page": "world-japan.html",
-   "queue": 35
-  },
-  {
-   "iso": "JE",
-   "name": "Jersey",
-   "display": "Jersey",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "JO",
-   "name": "Jordan",
-   "display": "Jordan",
-   "status": "basic",
-   "page": "world-jordan.html",
-   "queue": null
-  },
-  {
-   "iso": "KZ",
-   "name": "Kazakhstan",
-   "display": "Kazakhstan",
-   "status": "basic",
-   "page": "world-kazakhstan.html",
-   "queue": null
-  },
-  {
-   "iso": "KE",
-   "name": "Kenya",
-   "display": "Kenya",
-   "status": "basic",
-   "page": "world-kenya.html",
-   "queue": null
-  },
-  {
-   "iso": "KI",
-   "name": "Kiribati",
-   "display": "Kiribati",
-   "status": "basic",
-   "page": "world-kiribati.html",
-   "queue": null
-  },
-  {
-   "iso": "KW",
-   "name": "Kuwait",
-   "display": "Kuwait",
-   "status": "basic",
-   "page": "world-kuwait.html",
-   "queue": null
-  },
-  {
-   "iso": "KG",
-   "name": "Kyrgyzstan",
-   "display": "Kyrgyzstan",
-   "status": "basic",
-   "page": "world-kyrgyzstan.html",
-   "queue": null
-  },
-  {
-   "iso": "LA",
-   "name": "Laos",
-   "display": "Laos",
-   "status": "basic",
-   "page": "world-laos.html",
-   "queue": null
-  },
-  {
-   "iso": "LV",
-   "name": "Latvia",
-   "display": "Latvia",
-   "status": "basic",
-   "page": "world-latvia.html",
-   "queue": null
-  },
-  {
-   "iso": "LB",
-   "name": "Lebanon",
-   "display": "Lebanon",
-   "status": "deep",
-   "page": "world-lebanon.html",
-   "queue": 32
-  },
-  {
-   "iso": "LS",
-   "name": "Lesotho",
-   "display": "Lesotho",
-   "status": "basic",
-   "page": "world-lesotho.html",
-   "queue": null
-  },
-  {
-   "iso": "LR",
-   "name": "Liberia",
-   "display": "Liberia",
-   "status": "basic",
-   "page": "world-liberia.html",
-   "queue": null
-  },
-  {
-   "iso": "LY",
-   "name": "Libya",
-   "display": "Libya",
-   "status": "basic",
-   "page": "world-libya.html",
-   "queue": null
-  },
-  {
-   "iso": "LI",
-   "name": "Liechtenstein",
-   "display": "Liechtenstein",
-   "status": "basic",
-   "page": "world-liechtenstein.html",
-   "queue": null
-  },
-  {
-   "iso": "LT",
-   "name": "Lithuania",
-   "display": "Lithuania",
-   "status": "basic",
-   "page": "world-lithuania.html",
-   "queue": null
-  },
-  {
-   "iso": "LU",
-   "name": "Luxembourg",
-   "display": "Luxembourg",
-   "status": "deep",
-   "page": "world-luxembourg.html",
-   "queue": 18
-  },
-  {
-   "iso": "MO",
-   "name": "Macao",
-   "display": "Macao",
-   "status": "basic",
-   "page": "world-macao.html",
-   "queue": null
-  },
-  {
-   "iso": "MG",
-   "name": "Madagascar",
-   "display": "Madagascar",
-   "status": "basic",
-   "page": "world-madagascar.html",
-   "queue": null
-  },
-  {
-   "iso": "MW",
-   "name": "Malawi",
-   "display": "Malawi",
-   "status": "basic",
-   "page": "world-malawi.html",
-   "queue": null
-  },
-  {
-   "iso": "MY",
-   "name": "Malaysia",
-   "display": "Malaysia",
-   "status": "deep",
-   "page": "world-malaysia.html",
-   "queue": 39
-  },
-  {
-   "iso": "MV",
-   "name": "Maldives",
-   "display": "Maldives",
-   "status": "basic",
-   "page": "world-maldives.html",
-   "queue": null
-  },
-  {
-   "iso": "ML",
-   "name": "Mali",
-   "display": "Mali",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "MT",
-   "name": "Malta",
-   "display": "Malta",
-   "status": "deep",
-   "page": "world-malta.html",
-   "queue": 6
-  },
-  {
-   "iso": "MH",
-   "name": "Marshall Islands",
-   "display": "Marshall Islands",
-   "status": "basic",
-   "page": "world-marshall-islands.html",
-   "queue": null
-  },
-  {
-   "iso": "MQ",
-   "name": "Martinique",
-   "display": "Martinique",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "MR",
-   "name": "Mauritania",
-   "display": "Mauritania",
-   "status": "basic",
-   "page": "world-mauritania.html",
-   "queue": null
-  },
-  {
-   "iso": "MU",
-   "name": "Mauritius",
-   "display": "Mauritius",
-   "status": "basic",
-   "page": "world-mauritius.html",
-   "queue": null
-  },
-  {
-   "iso": "YT",
-   "name": "Mayotte",
-   "display": "Mayotte",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "MX",
-   "name": "Mexico",
-   "display": "Mexico",
-   "status": "deep",
-   "page": "world-mexico.html",
-   "queue": 1
-  },
-  {
-   "iso": "FM",
-   "name": "Micronesia, Federated States of",
-   "display": "Micronesia, Federated States of",
-   "status": "basic",
-   "page": "world-federated-states-of-micronesia.html",
-   "queue": null
-  },
-  {
-   "iso": "MD",
-   "name": "Moldova",
-   "display": "Moldova",
-   "status": "basic",
-   "page": "world-moldova.html",
-   "queue": null
-  },
-  {
-   "iso": "MC",
-   "name": "Monaco",
-   "display": "Monaco",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "MN",
-   "name": "Mongolia",
-   "display": "Mongolia",
-   "status": "basic",
-   "page": "world-mongolia.html",
-   "queue": null
-  },
-  {
-   "iso": "ME",
-   "name": "Montenegro",
-   "display": "Montenegro",
-   "status": "basic",
-   "page": "world-montenegro.html",
-   "queue": null
-  },
-  {
-   "iso": "MS",
-   "name": "Montserrat",
-   "display": "Montserrat",
-   "status": "basic",
-   "page": "world-montserrat.html",
-   "queue": null
-  },
-  {
-   "iso": "MA",
-   "name": "Morocco",
-   "display": "Morocco",
-   "status": "deep",
-   "page": "world-morocco.html",
-   "queue": 31
-  },
-  {
-   "iso": "MZ",
-   "name": "Mozambique",
-   "display": "Mozambique",
-   "status": "basic",
-   "page": "world-mozambique.html",
-   "queue": null
-  },
-  {
-   "iso": "MM",
-   "name": "Myanmar",
-   "display": "Myanmar",
-   "status": "basic",
-   "page": "world-myanmar.html",
-   "queue": null
-  },
-  {
-   "iso": "NA",
-   "name": "Namibia",
-   "display": "Namibia",
-   "status": "basic",
-   "page": "world-namibia.html",
-   "queue": null
-  },
-  {
-   "iso": "NR",
-   "name": "Nauru",
-   "display": "Nauru",
-   "status": "basic",
-   "page": "world-nauru.html",
-   "queue": null
-  },
-  {
-   "iso": "NP",
-   "name": "Nepal",
-   "display": "Nepal",
-   "status": "deep",
-   "page": "world-nepal.html",
-   "queue": 34
-  },
-  {
-   "iso": "NL",
-   "name": "Netherlands",
-   "display": "Netherlands",
-   "status": "deep",
-   "page": "world-netherlands.html",
-   "queue": 3
-  },
-  {
-   "iso": "NC",
-   "name": "New Caledonia",
-   "display": "New Caledonia",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "NZ",
-   "name": "New Zealand",
-   "display": "New Zealand",
-   "status": "deep",
-   "page": "world-new-zealand.html",
-   "queue": 13
-  },
-  {
-   "iso": "NI",
-   "name": "Nicaragua",
-   "display": "Nicaragua",
-   "status": "basic",
-   "page": "world-nicaragua.html",
-   "queue": null
-  },
-  {
-   "iso": "NE",
-   "name": "Niger",
-   "display": "Niger",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "NG",
-   "name": "Nigeria",
-   "display": "Nigeria",
-   "status": "basic",
-   "page": "world-nigeria.html",
-   "queue": null
-  },
-  {
-   "iso": "NU",
-   "name": "Niue",
-   "display": "Niue",
-   "status": "basic",
-   "page": "world-niue.html",
-   "queue": null
-  },
-  {
-   "iso": "NF",
-   "name": "Norfolk Island",
-   "display": "Norfolk Island",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "KP",
-   "name": "North Korea",
-   "display": "North Korea",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "MK",
-   "name": "North Macedonia",
-   "display": "North Macedonia",
-   "status": "basic",
-   "page": "world-north-macedonia.html",
-   "queue": null
-  },
-  {
-   "iso": "MP",
-   "name": "Northern Mariana Islands",
-   "display": "Northern Mariana Islands",
-   "status": "deep",
-   "page": "world-northern-mariana-islands.html",
-   "queue": null
-  },
-  {
-   "iso": "NO",
-   "name": "Norway",
-   "display": "Norway",
-   "status": "deep",
-   "page": "world-norway.html",
-   "queue": 47
-  },
-  {
-   "iso": "OM",
-   "name": "Oman",
-   "display": "Oman",
-   "status": "basic",
-   "page": "world-oman.html",
-   "queue": null
-  },
-  {
-   "iso": "PK",
-   "name": "Pakistan",
-   "display": "Pakistan",
-   "status": "basic",
-   "page": "world-pakistan.html",
-   "queue": null
-  },
-  {
-   "iso": "PW",
-   "name": "Palau",
-   "display": "Palau",
-   "status": "basic",
-   "page": "world-palau.html",
-   "queue": null
-  },
-  {
-   "iso": "PS",
-   "name": "Palestine, State of",
-   "display": "Palestine, State of",
-   "status": "basic",
-   "page": "world-palestine.html",
-   "queue": null
-  },
-  {
-   "iso": "PA",
-   "name": "Panama",
-   "display": "Panama",
-   "status": "basic",
-   "page": "world-panama.html",
-   "queue": null
-  },
-  {
-   "iso": "PG",
-   "name": "Papua New Guinea",
-   "display": "Papua New Guinea",
-   "status": "basic",
-   "page": "world-papua-new-guinea.html",
-   "queue": null
-  },
-  {
-   "iso": "PY",
-   "name": "Paraguay",
-   "display": "Paraguay",
-   "status": "deep",
-   "page": "world-paraguay.html",
-   "queue": 29
-  },
-  {
-   "iso": "PE",
-   "name": "Peru",
-   "display": "Peru",
-   "status": "deep",
-   "page": "world-peru.html",
-   "queue": 27
-  },
-  {
-   "iso": "PH",
-   "name": "Philippines",
-   "display": "Philippines",
-   "status": "deep",
-   "page": "world-philippines.html",
-   "queue": 37
-  },
-  {
-   "iso": "PN",
-   "name": "Pitcairn",
-   "display": "Pitcairn",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "PL",
-   "name": "Poland",
-   "display": "Poland",
-   "status": "deep",
-   "page": "world-poland.html",
-   "queue": 46
-  },
-  {
-   "iso": "PT",
-   "name": "Portugal",
-   "display": "Portugal",
-   "status": "deep",
-   "page": "world-portugal.html",
-   "queue": 9
-  },
-  {
-   "iso": "PR",
-   "name": "Puerto Rico",
-   "display": "Puerto Rico",
-   "status": "deep",
-   "page": "world-puerto-rico.html",
-   "queue": null
-  },
-  {
-   "iso": "QA",
-   "name": "Qatar",
-   "display": "Qatar",
-   "status": "basic",
-   "page": "world-qatar.html",
-   "queue": null
-  },
-  {
-   "iso": "RO",
-   "name": "Romania",
-   "display": "Romania",
-   "status": "basic",
-   "page": "world-romania.html",
-   "queue": null
-  },
-  {
-   "iso": "RU",
-   "name": "Russian Federation",
-   "display": "Russian Federation",
-   "status": "basic",
-   "page": "world-russia.html",
-   "queue": null
-  },
-  {
-   "iso": "RW",
-   "name": "Rwanda",
-   "display": "Rwanda",
-   "status": "basic",
-   "page": "world-rwanda.html",
-   "queue": null
-  },
-  {
-   "iso": "RE",
-   "name": "Réunion",
-   "display": "Réunion",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "BL",
-   "name": "Saint Barthélemy",
-   "display": "Saint Barthélemy",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "SH",
-   "name": "Saint Helena, Ascension and Tristan da Cunha",
-   "display": "Saint Helena, Ascension and Tristan da Cunha",
-   "status": "basic",
-   "page": "world-st-helena-ascension-and-tristan-da-cunha.html",
-   "queue": null
-  },
-  {
-   "iso": "KN",
-   "name": "Saint Kitts and Nevis",
-   "display": "Saint Kitts and Nevis",
-   "status": "basic",
-   "page": "world-st-kitts-and-nevis.html",
-   "queue": null
-  },
-  {
-   "iso": "LC",
-   "name": "Saint Lucia",
-   "display": "Saint Lucia",
-   "status": "basic",
-   "page": "world-st-lucia.html",
-   "queue": null
-  },
-  {
-   "iso": "MF",
-   "name": "Saint Martin (French part)",
-   "display": "Saint Martin (French part)",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "PM",
-   "name": "Saint Pierre and Miquelon",
-   "display": "Saint Pierre and Miquelon",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "VC",
-   "name": "Saint Vincent and the Grenadines",
-   "display": "Saint Vincent and the Grenadines",
-   "status": "basic",
-   "page": "world-st-vincent-and-the-grenadines.html",
-   "queue": null
-  },
-  {
-   "iso": "WS",
-   "name": "Samoa",
-   "display": "Samoa",
-   "status": "basic",
-   "page": "world-samoa.html",
-   "queue": null
-  },
-  {
-   "iso": "SM",
-   "name": "San Marino",
-   "display": "San Marino",
-   "status": "basic",
-   "page": "world-san-marino.html",
-   "queue": null
-  },
-  {
-   "iso": "ST",
-   "name": "Sao Tome and Principe",
-   "display": "Sao Tome and Principe",
-   "status": "basic",
-   "page": "world-sao-tome-principe.html",
-   "queue": null
-  },
-  {
-   "iso": "SA",
-   "name": "Saudi Arabia",
-   "display": "Saudi Arabia",
-   "status": "deep",
-   "page": "world-saudi-arabia.html",
-   "queue": 42
-  },
-  {
-   "iso": "SN",
-   "name": "Senegal",
-   "display": "Senegal",
-   "status": "basic",
-   "page": "world-senegal.html",
-   "queue": null
-  },
-  {
-   "iso": "RS",
-   "name": "Serbia",
-   "display": "Serbia",
-   "status": "basic",
-   "page": "world-serbia.html",
-   "queue": null
-  },
-  {
-   "iso": "SC",
-   "name": "Seychelles",
-   "display": "Seychelles",
-   "status": "basic",
-   "page": "world-seychelles.html",
-   "queue": null
-  },
-  {
-   "iso": "SL",
-   "name": "Sierra Leone",
-   "display": "Sierra Leone",
-   "status": "basic",
-   "page": "world-sierra-leone.html",
-   "queue": null
-  },
-  {
-   "iso": "SG",
-   "name": "Singapore",
-   "display": "Singapore",
-   "status": "deep",
-   "page": "world-singapore.html",
-   "queue": 38
-  },
-  {
-   "iso": "SX",
-   "name": "Sint Maarten (Dutch part)",
-   "display": "Sint Maarten (Dutch part)",
-   "status": "basic",
-   "page": "world-st-maarten.html",
-   "queue": null
-  },
-  {
-   "iso": "SK",
-   "name": "Slovakia",
-   "display": "Slovakia",
-   "status": "basic",
-   "page": "world-slovakia.html",
-   "queue": null
-  },
-  {
-   "iso": "SI",
-   "name": "Slovenia",
-   "display": "Slovenia",
-   "status": "basic",
-   "page": "world-slovenia.html",
-   "queue": null
-  },
-  {
-   "iso": "SB",
-   "name": "Solomon Islands",
-   "display": "Solomon Islands",
-   "status": "basic",
-   "page": "world-solomon-islands.html",
-   "queue": null
-  },
-  {
-   "iso": "SO",
-   "name": "Somalia",
-   "display": "Somalia",
-   "status": "basic",
-   "page": "world-somalia.html",
-   "queue": null
-  },
-  {
-   "iso": "ZA",
-   "name": "South Africa",
-   "display": "South Africa",
-   "status": "deep",
-   "page": "world-south-africa.html",
-   "queue": 14
-  },
-  {
-   "iso": "GS",
-   "name": "South Georgia and the South Sandwich Islands",
-   "display": "South Georgia and the South Sandwich Islands",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "KR",
-   "name": "South Korea",
-   "display": "South Korea",
-   "status": "basic",
-   "page": "world-south-korea.html",
-   "queue": null
-  },
-  {
-   "iso": "SS",
-   "name": "South Sudan",
-   "display": "South Sudan",
-   "status": "basic",
-   "page": "world-south-sudan.html",
-   "queue": null
-  },
-  {
-   "iso": "ES",
-   "name": "Spain",
-   "display": "Spain",
-   "status": "deep",
-   "page": "world-spain.html",
-   "queue": 8
-  },
-  {
-   "iso": "LK",
-   "name": "Sri Lanka",
-   "display": "Sri Lanka",
-   "status": "basic",
-   "page": "world-sri-lanka.html",
-   "queue": null
-  },
-  {
-   "iso": "SD",
-   "name": "Sudan",
-   "display": "Sudan",
-   "status": "basic",
-   "page": "world-sudan.html",
-   "queue": null
-  },
-  {
-   "iso": "SR",
-   "name": "Suriname",
-   "display": "Suriname",
-   "status": "basic",
-   "page": "world-suriname.html",
-   "queue": null
-  },
-  {
-   "iso": "SJ",
-   "name": "Svalbard and Jan Mayen",
-   "display": "Svalbard and Jan Mayen",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "SE",
-   "name": "Sweden",
-   "display": "Sweden",
-   "status": "deep",
-   "page": "world-sweden.html",
-   "queue": 48
-  },
-  {
-   "iso": "CH",
-   "name": "Switzerland",
-   "display": "Switzerland",
-   "status": "deep",
-   "page": "world-switzerland.html",
-   "queue": 10
-  },
-  {
-   "iso": "SY",
-   "name": "Syria",
-   "display": "Syria",
-   "status": "basic",
-   "page": "world-syria.html",
-   "queue": null
-  },
-  {
-   "iso": "TW",
-   "name": "Taiwan",
-   "display": "Taiwan",
-   "status": "basic",
-   "page": "world-taiwan.html",
-   "queue": null
-  },
-  {
-   "iso": "TJ",
-   "name": "Tajikistan",
-   "display": "Tajikistan",
-   "status": "basic",
-   "page": "world-tajikistan.html",
-   "queue": null
-  },
-  {
-   "iso": "TZ",
-   "name": "Tanzania",
-   "display": "Tanzania",
-   "status": "basic",
-   "page": "world-tanzania.html",
-   "queue": null
-  },
-  {
-   "iso": "TH",
-   "name": "Thailand",
-   "display": "Thailand",
-   "status": "deep",
-   "page": "world-thailand.html",
-   "queue": 5
-  },
-  {
-   "iso": "TL",
-   "name": "Timor-Leste",
-   "display": "Timor-Leste",
-   "status": "basic",
-   "page": "world-east-timor.html",
-   "queue": null
-  },
-  {
-   "iso": "TG",
-   "name": "Togo",
-   "display": "Togo",
-   "status": "basic",
-   "page": "world-togo.html",
-   "queue": null
-  },
-  {
-   "iso": "TK",
-   "name": "Tokelau",
-   "display": "Tokelau",
-   "status": "basic",
-   "page": "world-tokelau.html",
-   "queue": null
-  },
-  {
-   "iso": "TO",
-   "name": "Tonga",
-   "display": "Tonga",
-   "status": "basic",
-   "page": "world-tonga.html",
-   "queue": null
-  },
-  {
-   "iso": "TT",
-   "name": "Trinidad and Tobago",
-   "display": "Trinidad and Tobago",
-   "status": "basic",
-   "page": "world-trinidad-and-tobago.html",
-   "queue": null
-  },
-  {
-   "iso": "TN",
-   "name": "Tunisia",
-   "display": "Tunisia",
-   "status": "basic",
-   "page": "world-tunisia.html",
-   "queue": null
-  },
-  {
-   "iso": "TM",
-   "name": "Turkmenistan",
-   "display": "Turkmenistan",
-   "status": "basic",
-   "page": "world-turkmenistan.html",
-   "queue": null
-  },
-  {
-   "iso": "TC",
-   "name": "Turks and Caicos Islands",
-   "display": "Turks and Caicos Islands",
-   "status": "basic",
-   "page": "world-turks-and-caicos-islands.html",
-   "queue": null
-  },
-  {
-   "iso": "TV",
-   "name": "Tuvalu",
-   "display": "Tuvalu",
-   "status": "basic",
-   "page": "world-tuvalu.html",
-   "queue": null
-  },
-  {
-   "iso": "TR",
-   "name": "Türkiye",
-   "display": "Türkiye",
-   "status": "deep",
-   "page": "world-turkey.html",
-   "queue": 44
-  },
-  {
-   "iso": "UG",
-   "name": "Uganda",
-   "display": "Uganda",
-   "status": "basic",
-   "page": "world-uganda.html",
-   "queue": null
-  },
-  {
-   "iso": "UA",
-   "name": "Ukraine",
-   "display": "Ukraine",
-   "status": "basic",
-   "page": "world-ukraine.html",
-   "queue": null
-  },
-  {
-   "iso": "AE",
-   "name": "United Arab Emirates",
-   "display": "United Arab Emirates",
-   "status": "deep",
-   "page": "world-united-arab-emirates.html",
-   "queue": 41
-  },
-  {
-   "iso": "GB",
-   "name": "United Kingdom",
-   "display": "United Kingdom",
-   "status": "deep",
-   "page": "world-united-kingdom.html",
-   "queue": 0
-  },
-  {
-   "iso": "US",
-   "name": "United States",
-   "display": "United States",
-   "status": "states",
-   "page": "index.html",
-   "queue": null
-  },
-  {
-   "iso": "UM",
-   "name": "United States Minor Outlying Islands",
-   "display": "United States Minor Outlying Islands",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "UY",
-   "name": "Uruguay",
-   "display": "Uruguay",
-   "status": "deep",
-   "page": "world-uruguay.html",
-   "queue": 4
-  },
-  {
-   "iso": "UZ",
-   "name": "Uzbekistan",
-   "display": "Uzbekistan",
-   "status": "basic",
-   "page": "world-uzbekistan.html",
-   "queue": null
-  },
-  {
-   "iso": "VU",
-   "name": "Vanuatu",
-   "display": "Vanuatu",
-   "status": "basic",
-   "page": "world-vanuatu.html",
-   "queue": null
-  },
-  {
-   "iso": "VE",
-   "name": "Venezuela",
-   "display": "Venezuela",
-   "status": "basic",
-   "page": "world-venezuela.html",
-   "queue": null
-  },
-  {
-   "iso": "VN",
-   "name": "Vietnam",
-   "display": "Vietnam",
-   "status": "basic",
-   "page": "world-vietnam.html",
-   "queue": null
-  },
-  {
-   "iso": "VG",
-   "name": "Virgin Islands, British",
-   "display": "Virgin Islands, British",
-   "status": "basic",
-   "page": "world-british-virgin-islands.html",
-   "queue": null
-  },
-  {
-   "iso": "VI",
-   "name": "Virgin Islands, U.S.",
-   "display": "Virgin Islands, U.S.",
-   "status": "deep",
-   "page": "world-us-virgin-islands.html",
-   "queue": null
-  },
-  {
-   "iso": "WF",
-   "name": "Wallis and Futuna",
-   "display": "Wallis and Futuna",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "EH",
-   "name": "Western Sahara",
-   "display": "Western Sahara",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "YE",
-   "name": "Yemen",
-   "display": "Yemen",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  },
-  {
-   "iso": "ZM",
-   "name": "Zambia",
-   "display": "Zambia",
-   "status": "basic",
-   "page": "world-zambia.html",
-   "queue": null
-  },
-  {
-   "iso": "ZW",
-   "name": "Zimbabwe",
-   "display": "Zimbabwe",
-   "status": "basic",
-   "page": "world-zimbabwe.html",
-   "queue": null
-  },
-  {
-   "iso": "AX",
-   "name": "Åland Islands",
-   "display": "Åland Islands",
-   "status": "not-started",
-   "page": null,
-   "queue": null
-  }
- ]
+"as_of": "2026-11-19",
+"purpose": "Every country and territory in ISO 3166-1, with how far the-reefer.com covers it. Status is site coverage, not a statement about the law.",
+"statuses": {
+"states": "Covered state by state",
+"deep": "Full country guide",
+"basic": "Starter page",
+"queued": "Next in line",
+"not-started": "Not started"
+},
+"countries": [
+{
+"iso": "AF",
+"name": "Afghanistan",
+"display": "Afghanistan",
+"status": "basic",
+"page": "world-afghanistan.html",
+"queue": null
+},
+{
+"iso": "AL",
+"name": "Albania",
+"display": "Albania",
+"status": "basic",
+"page": "world-albania.html",
+"queue": null
+},
+{
+"iso": "DZ",
+"name": "Algeria",
+"display": "Algeria",
+"status": "basic",
+"page": "world-algeria.html",
+"queue": null
+},
+{
+"iso": "AS",
+"name": "American Samoa",
+"display": "American Samoa",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "AD",
+"name": "Andorra",
+"display": "Andorra",
+"status": "basic",
+"page": "world-andorra.html",
+"queue": null
+},
+{
+"iso": "AO",
+"name": "Angola",
+"display": "Angola",
+"status": "basic",
+"page": "world-angola.html",
+"queue": null
+},
+{
+"iso": "AI",
+"name": "Anguilla",
+"display": "Anguilla",
+"status": "basic",
+"page": "world-anguilla.html",
+"queue": null
+},
+{
+"iso": "AQ",
+"name": "Antarctica",
+"display": "Antarctica",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "AG",
+"name": "Antigua and Barbuda",
+"display": "Antigua and Barbuda",
+"status": "deep",
+"page": "world-antigua-and-barbuda.html",
+"queue": null
+},
+{
+"iso": "AR",
+"name": "Argentina",
+"display": "Argentina",
+"status": "deep",
+"page": "world-argentina.html",
+"queue": 25
+},
+{
+"iso": "AM",
+"name": "Armenia",
+"display": "Armenia",
+"status": "basic",
+"page": "world-armenia.html",
+"queue": null
+},
+{
+"iso": "AW",
+"name": "Aruba",
+"display": "Aruba",
+"status": "basic",
+"page": "world-aruba.html",
+"queue": null
+},
+{
+"iso": "AU",
+"name": "Australia",
+"display": "Australia",
+"status": "deep",
+"page": "world-australia.html",
+"queue": 12
+},
+{
+"iso": "AT",
+"name": "Austria",
+"display": "Austria",
+"status": "deep",
+"page": "world-austria.html",
+"queue": 22
+},
+{
+"iso": "AZ",
+"name": "Azerbaijan",
+"display": "Azerbaijan",
+"status": "basic",
+"page": "world-azerbaijan.html",
+"queue": null
+},
+{
+"iso": "BS",
+"name": "Bahamas",
+"display": "Bahamas",
+"status": "basic",
+"page": "world-bahamas.html",
+"queue": null
+},
+{
+"iso": "BH",
+"name": "Bahrain",
+"display": "Bahrain",
+"status": "basic",
+"page": "world-bahrain.html",
+"queue": null
+},
+{
+"iso": "BD",
+"name": "Bangladesh",
+"display": "Bangladesh",
+"status": "basic",
+"page": "world-bangladesh.html",
+"queue": null
+},
+{
+"iso": "BB",
+"name": "Barbados",
+"display": "Barbados",
+"status": "basic",
+"page": "world-barbados.html",
+"queue": null
+},
+{
+"iso": "BY",
+"name": "Belarus",
+"display": "Belarus",
+"status": "basic",
+"page": "world-belarus.html",
+"queue": null
+},
+{
+"iso": "BE",
+"name": "Belgium",
+"display": "Belgium",
+"status": "deep",
+"page": "world-belgium.html",
+"queue": 19
+},
+{
+"iso": "BZ",
+"name": "Belize",
+"display": "Belize",
+"status": "basic",
+"page": "world-belize.html",
+"queue": null
+},
+{
+"iso": "BJ",
+"name": "Benin",
+"display": "Benin",
+"status": "basic",
+"page": "world-benin.html",
+"queue": null
+},
+{
+"iso": "BM",
+"name": "Bermuda",
+"display": "Bermuda",
+"status": "basic",
+"page": "world-bermuda.html",
+"queue": null
+},
+{
+"iso": "BT",
+"name": "Bhutan",
+"display": "Bhutan",
+"status": "basic",
+"page": "world-bhutan.html",
+"queue": null
+},
+{
+"iso": "BO",
+"name": "Bolivia",
+"display": "Bolivia",
+"status": "basic",
+"page": "world-bolivia.html",
+"queue": null
+},
+{
+"iso": "BQ",
+"name": "Bonaire, Sint Eustatius and Saba",
+"display": "Bonaire, Sint Eustatius and Saba",
+"status": "basic",
+"page": "world-bonaire-st-eustatius-and-saba.html",
+"queue": null
+},
+{
+"iso": "BA",
+"name": "Bosnia and Herzegovina",
+"display": "Bosnia and Herzegovina",
+"status": "basic",
+"page": "world-bosnia-and-herzegovina.html",
+"queue": null
+},
+{
+"iso": "BW",
+"name": "Botswana",
+"display": "Botswana",
+"status": "basic",
+"page": "world-botswana.html",
+"queue": null
+},
+{
+"iso": "BV",
+"name": "Bouvet Island",
+"display": "Bouvet Island",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "BR",
+"name": "Brazil",
+"display": "Brazil",
+"status": "deep",
+"page": "world-brazil.html",
+"queue": 24
+},
+{
+"iso": "IO",
+"name": "British Indian Ocean Territory",
+"display": "British Indian Ocean Territory",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "BN",
+"name": "Brunei Darussalam",
+"display": "Brunei Darussalam",
+"status": "basic",
+"page": "world-brunei.html",
+"queue": null
+},
+{
+"iso": "BG",
+"name": "Bulgaria",
+"display": "Bulgaria",
+"status": "basic",
+"page": "world-bulgaria.html",
+"queue": null
+},
+{
+"iso": "BF",
+"name": "Burkina Faso",
+"display": "Burkina Faso",
+"status": "basic",
+"page": "world-burkina-faso.html",
+"queue": null
+},
+{
+"iso": "BI",
+"name": "Burundi",
+"display": "Burundi",
+"status": "basic",
+"page": "world-burundi.html",
+"queue": null
+},
+{
+"iso": "CV",
+"name": "Cabo Verde",
+"display": "Cabo Verde",
+"status": "basic",
+"page": "world-cape-verde.html",
+"queue": null
+},
+{
+"iso": "KH",
+"name": "Cambodia",
+"display": "Cambodia",
+"status": "basic",
+"page": "world-cambodia.html",
+"queue": null
+},
+{
+"iso": "CM",
+"name": "Cameroon",
+"display": "Cameroon",
+"status": "basic",
+"page": "world-cameroon.html",
+"queue": null
+},
+{
+"iso": "CA",
+"name": "Canada",
+"display": "Canada",
+"status": "deep",
+"page": "world-canada.html",
+"queue": null
+},
+{
+"iso": "KY",
+"name": "Cayman Islands",
+"display": "Cayman Islands",
+"status": "basic",
+"page": "world-cayman-islands.html",
+"queue": null
+},
+{
+"iso": "CF",
+"name": "Central African Republic",
+"display": "Central African Republic",
+"status": "basic",
+"page": "world-central-african-republic.html",
+"queue": null
+},
+{
+"iso": "TD",
+"name": "Chad",
+"display": "Chad",
+"status": "basic",
+"page": "world-chad.html",
+"queue": null
+},
+{
+"iso": "CL",
+"name": "Chile",
+"display": "Chile",
+"status": "deep",
+"page": "world-chile.html",
+"queue": 26
+},
+{
+"iso": "CN",
+"name": "China",
+"display": "China",
+"status": "deep",
+"page": "world-china.html",
+"queue": 43
+},
+{
+"iso": "CX",
+"name": "Christmas Island",
+"display": "Christmas Island",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "CC",
+"name": "Cocos (Keeling) Islands",
+"display": "Cocos (Keeling) Islands",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "CO",
+"name": "Colombia",
+"display": "Colombia",
+"status": "deep",
+"page": "world-colombia.html",
+"queue": 16
+},
+{
+"iso": "KM",
+"name": "Comoros",
+"display": "Comoros",
+"status": "basic",
+"page": "world-comoros.html",
+"queue": null
+},
+{
+"iso": "CG",
+"name": "Congo",
+"display": "Congo",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "CD",
+"name": "Congo, The Democratic Republic of the",
+"display": "Congo, The Democratic Republic of the",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "CK",
+"name": "Cook Islands",
+"display": "Cook Islands",
+"status": "basic",
+"page": "world-cook-islands.html",
+"queue": null
+},
+{
+"iso": "CR",
+"name": "Costa Rica",
+"display": "Costa Rica",
+"status": "deep",
+"page": "world-costa-rica.html",
+"queue": 30
+},
+{
+"iso": "HR",
+"name": "Croatia",
+"display": "Croatia",
+"status": "basic",
+"page": "world-croatia.html",
+"queue": null
+},
+{
+"iso": "CU",
+"name": "Cuba",
+"display": "Cuba",
+"status": "basic",
+"page": "world-cuba.html",
+"queue": null
+},
+{
+"iso": "CW",
+"name": "Curaçao",
+"display": "Curaçao",
+"status": "basic",
+"page": "world-curacao.html",
+"queue": null
+},
+{
+"iso": "CY",
+"name": "Cyprus",
+"display": "Cyprus",
+"status": "basic",
+"page": "world-cyprus.html",
+"queue": null
+},
+{
+"iso": "CZ",
+"name": "Czechia",
+"display": "Czechia",
+"status": "deep",
+"page": "world-czechia.html",
+"queue": 7
+},
+{
+"iso": "CI",
+"name": "Côte d'Ivoire",
+"display": "Côte d'Ivoire",
+"status": "basic",
+"page": "world-cote-d-ivoire.html",
+"queue": null
+},
+{
+"iso": "DK",
+"name": "Denmark",
+"display": "Denmark",
+"status": "deep",
+"page": "world-denmark.html",
+"queue": 23
+},
+{
+"iso": "DJ",
+"name": "Djibouti",
+"display": "Djibouti",
+"status": "basic",
+"page": "world-djibouti.html",
+"queue": null
+},
+{
+"iso": "DM",
+"name": "Dominica",
+"display": "Dominica",
+"status": "basic",
+"page": "world-dominica.html",
+"queue": null
+},
+{
+"iso": "DO",
+"name": "Dominican Republic",
+"display": "Dominican Republic",
+"status": "basic",
+"page": "world-dominican-republic.html",
+"queue": null
+},
+{
+"iso": "EC",
+"name": "Ecuador",
+"display": "Ecuador",
+"status": "deep",
+"page": "world-ecuador.html",
+"queue": 28
+},
+{
+"iso": "EG",
+"name": "Egypt",
+"display": "Egypt",
+"status": "basic",
+"page": "world-egypt.html",
+"queue": null
+},
+{
+"iso": "SV",
+"name": "El Salvador",
+"display": "El Salvador",
+"status": "basic",
+"page": "world-el-salvador.html",
+"queue": null
+},
+{
+"iso": "GQ",
+"name": "Equatorial Guinea",
+"display": "Equatorial Guinea",
+"status": "basic",
+"page": "world-equatorial-guinea.html",
+"queue": null
+},
+{
+"iso": "ER",
+"name": "Eritrea",
+"display": "Eritrea",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "EE",
+"name": "Estonia",
+"display": "Estonia",
+"status": "basic",
+"page": "world-estonia.html",
+"queue": null
+},
+{
+"iso": "SZ",
+"name": "Eswatini",
+"display": "Eswatini",
+"status": "basic",
+"page": "world-eswatini.html",
+"queue": null
+},
+{
+"iso": "ET",
+"name": "Ethiopia",
+"display": "Ethiopia",
+"status": "basic",
+"page": "world-ethiopia.html",
+"queue": null
+},
+{
+"iso": "FK",
+"name": "Falkland Islands (Malvinas)",
+"display": "Falkland Islands (Malvinas)",
+"status": "basic",
+"page": "world-falkland-islands.html",
+"queue": null
+},
+{
+"iso": "FO",
+"name": "Faroe Islands",
+"display": "Faroe Islands",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "FJ",
+"name": "Fiji",
+"display": "Fiji",
+"status": "basic",
+"page": "world-fiji.html",
+"queue": null
+},
+{
+"iso": "FI",
+"name": "Finland",
+"display": "Finland",
+"status": "deep",
+"page": "world-finland.html",
+"queue": 49
+},
+{
+"iso": "FR",
+"name": "France",
+"display": "France",
+"status": "deep",
+"page": "world-france.html",
+"queue": 20
+},
+{
+"iso": "GF",
+"name": "French Guiana",
+"display": "French Guiana",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "PF",
+"name": "French Polynesia",
+"display": "French Polynesia",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "TF",
+"name": "French Southern Territories",
+"display": "French Southern Territories",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "GA",
+"name": "Gabon",
+"display": "Gabon",
+"status": "basic",
+"page": "world-gabon.html",
+"queue": null
+},
+{
+"iso": "GM",
+"name": "Gambia",
+"display": "Gambia",
+"status": "basic",
+"page": "world-the-gambia.html",
+"queue": null
+},
+{
+"iso": "GE",
+"name": "Georgia",
+"display": "Georgia",
+"status": "basic",
+"page": "world-georgia.html",
+"queue": null
+},
+{
+"iso": "DE",
+"name": "Germany",
+"display": "Germany",
+"status": "deep",
+"page": "world-germany.html",
+"queue": 2
+},
+{
+"iso": "GH",
+"name": "Ghana",
+"display": "Ghana",
+"status": "basic",
+"page": "world-ghana.html",
+"queue": null
+},
+{
+"iso": "GI",
+"name": "Gibraltar",
+"display": "Gibraltar",
+"status": "basic",
+"page": "world-gibraltar.html",
+"queue": null
+},
+{
+"iso": "GR",
+"name": "Greece",
+"display": "Greece",
+"status": "deep",
+"page": "world-greece.html",
+"queue": 45
+},
+{
+"iso": "GL",
+"name": "Greenland",
+"display": "Greenland",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "GD",
+"name": "Grenada",
+"display": "Grenada",
+"status": "basic",
+"page": "world-grenada.html",
+"queue": null
+},
+{
+"iso": "GP",
+"name": "Guadeloupe",
+"display": "Guadeloupe",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "GU",
+"name": "Guam",
+"display": "Guam",
+"status": "deep",
+"page": "world-guam.html",
+"queue": null
+},
+{
+"iso": "GT",
+"name": "Guatemala",
+"display": "Guatemala",
+"status": "basic",
+"page": "world-guatemala.html",
+"queue": null
+},
+{
+"iso": "GG",
+"name": "Guernsey",
+"display": "Guernsey",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "GN",
+"name": "Guinea",
+"display": "Guinea",
+"status": "basic",
+"page": "world-guinea.html",
+"queue": null
+},
+{
+"iso": "GW",
+"name": "Guinea-Bissau",
+"display": "Guinea-Bissau",
+"status": "basic",
+"page": "world-guinea-bissau.html",
+"queue": null
+},
+{
+"iso": "GY",
+"name": "Guyana",
+"display": "Guyana",
+"status": "basic",
+"page": "world-guyana.html",
+"queue": null
+},
+{
+"iso": "HT",
+"name": "Haiti",
+"display": "Haiti",
+"status": "basic",
+"page": "world-haiti.html",
+"queue": null
+},
+{
+"iso": "HM",
+"name": "Heard Island and McDonald Islands",
+"display": "Heard Island and McDonald Islands",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "VA",
+"name": "Holy See (Vatican City State)",
+"display": "Holy See (Vatican City State)",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "HN",
+"name": "Honduras",
+"display": "Honduras",
+"status": "basic",
+"page": "world-honduras.html",
+"queue": null
+},
+{
+"iso": "HK",
+"name": "Hong Kong",
+"display": "Hong Kong",
+"status": "basic",
+"page": "world-hong-kong.html",
+"queue": null
+},
+{
+"iso": "HU",
+"name": "Hungary",
+"display": "Hungary",
+"status": "basic",
+"page": "world-hungary.html",
+"queue": null
+},
+{
+"iso": "IS",
+"name": "Iceland",
+"display": "Iceland",
+"status": "basic",
+"page": "world-iceland.html",
+"queue": null
+},
+{
+"iso": "IN",
+"name": "India",
+"display": "India",
+"status": "deep",
+"page": "world-india.html",
+"queue": 33
+},
+{
+"iso": "ID",
+"name": "Indonesia",
+"display": "Indonesia",
+"status": "deep",
+"page": "world-indonesia.html",
+"queue": 40
+},
+{
+"iso": "IR",
+"name": "Iran",
+"display": "Iran",
+"status": "basic",
+"page": "world-iran.html",
+"queue": null
+},
+{
+"iso": "IQ",
+"name": "Iraq",
+"display": "Iraq",
+"status": "basic",
+"page": "world-iraq.html",
+"queue": null
+},
+{
+"iso": "IE",
+"name": "Ireland",
+"display": "Ireland",
+"status": "deep",
+"page": "world-ireland.html",
+"queue": 17
+},
+{
+"iso": "IM",
+"name": "Isle of Man",
+"display": "Isle of Man",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "IL",
+"name": "Israel",
+"display": "Israel",
+"status": "deep",
+"page": "world-israel.html",
+"queue": 11
+},
+{
+"iso": "IT",
+"name": "Italy",
+"display": "Italy",
+"status": "deep",
+"page": "world-italy.html",
+"queue": 21
+},
+{
+"iso": "JM",
+"name": "Jamaica",
+"display": "Jamaica",
+"status": "deep",
+"page": "world-jamaica.html",
+"queue": 15
+},
+{
+"iso": "JP",
+"name": "Japan",
+"display": "Japan",
+"status": "deep",
+"page": "world-japan.html",
+"queue": 35
+},
+{
+"iso": "JE",
+"name": "Jersey",
+"display": "Jersey",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "JO",
+"name": "Jordan",
+"display": "Jordan",
+"status": "basic",
+"page": "world-jordan.html",
+"queue": null
+},
+{
+"iso": "KZ",
+"name": "Kazakhstan",
+"display": "Kazakhstan",
+"status": "basic",
+"page": "world-kazakhstan.html",
+"queue": null
+},
+{
+"iso": "KE",
+"name": "Kenya",
+"display": "Kenya",
+"status": "basic",
+"page": "world-kenya.html",
+"queue": null
+},
+{
+"iso": "KI",
+"name": "Kiribati",
+"display": "Kiribati",
+"status": "basic",
+"page": "world-kiribati.html",
+"queue": null
+},
+{
+"iso": "KW",
+"name": "Kuwait",
+"display": "Kuwait",
+"status": "basic",
+"page": "world-kuwait.html",
+"queue": null
+},
+{
+"iso": "KG",
+"name": "Kyrgyzstan",
+"display": "Kyrgyzstan",
+"status": "basic",
+"page": "world-kyrgyzstan.html",
+"queue": null
+},
+{
+"iso": "LA",
+"name": "Laos",
+"display": "Laos",
+"status": "basic",
+"page": "world-laos.html",
+"queue": null
+},
+{
+"iso": "LV",
+"name": "Latvia",
+"display": "Latvia",
+"status": "basic",
+"page": "world-latvia.html",
+"queue": null
+},
+{
+"iso": "LB",
+"name": "Lebanon",
+"display": "Lebanon",
+"status": "deep",
+"page": "world-lebanon.html",
+"queue": 32
+},
+{
+"iso": "LS",
+"name": "Lesotho",
+"display": "Lesotho",
+"status": "basic",
+"page": "world-lesotho.html",
+"queue": null
+},
+{
+"iso": "LR",
+"name": "Liberia",
+"display": "Liberia",
+"status": "basic",
+"page": "world-liberia.html",
+"queue": null
+},
+{
+"iso": "LY",
+"name": "Libya",
+"display": "Libya",
+"status": "basic",
+"page": "world-libya.html",
+"queue": null
+},
+{
+"iso": "LI",
+"name": "Liechtenstein",
+"display": "Liechtenstein",
+"status": "basic",
+"page": "world-liechtenstein.html",
+"queue": null
+},
+{
+"iso": "LT",
+"name": "Lithuania",
+"display": "Lithuania",
+"status": "basic",
+"page": "world-lithuania.html",
+"queue": null
+},
+{
+"iso": "LU",
+"name": "Luxembourg",
+"display": "Luxembourg",
+"status": "deep",
+"page": "world-luxembourg.html",
+"queue": 18
+},
+{
+"iso": "MO",
+"name": "Macao",
+"display": "Macao",
+"status": "basic",
+"page": "world-macao.html",
+"queue": null
+},
+{
+"iso": "MG",
+"name": "Madagascar",
+"display": "Madagascar",
+"status": "basic",
+"page": "world-madagascar.html",
+"queue": null
+},
+{
+"iso": "MW",
+"name": "Malawi",
+"display": "Malawi",
+"status": "basic",
+"page": "world-malawi.html",
+"queue": null
+},
+{
+"iso": "MY",
+"name": "Malaysia",
+"display": "Malaysia",
+"status": "deep",
+"page": "world-malaysia.html",
+"queue": 39
+},
+{
+"iso": "MV",
+"name": "Maldives",
+"display": "Maldives",
+"status": "basic",
+"page": "world-maldives.html",
+"queue": null
+},
+{
+"iso": "ML",
+"name": "Mali",
+"display": "Mali",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "MT",
+"name": "Malta",
+"display": "Malta",
+"status": "deep",
+"page": "world-malta.html",
+"queue": 6
+},
+{
+"iso": "MH",
+"name": "Marshall Islands",
+"display": "Marshall Islands",
+"status": "basic",
+"page": "world-marshall-islands.html",
+"queue": null
+},
+{
+"iso": "MQ",
+"name": "Martinique",
+"display": "Martinique",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "MR",
+"name": "Mauritania",
+"display": "Mauritania",
+"status": "basic",
+"page": "world-mauritania.html",
+"queue": null
+},
+{
+"iso": "MU",
+"name": "Mauritius",
+"display": "Mauritius",
+"status": "basic",
+"page": "world-mauritius.html",
+"queue": null
+},
+{
+"iso": "YT",
+"name": "Mayotte",
+"display": "Mayotte",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "MX",
+"name": "Mexico",
+"display": "Mexico",
+"status": "deep",
+"page": "world-mexico.html",
+"queue": 1
+},
+{
+"iso": "FM",
+"name": "Micronesia, Federated States of",
+"display": "Micronesia, Federated States of",
+"status": "basic",
+"page": "world-federated-states-of-micronesia.html",
+"queue": null
+},
+{
+"iso": "MD",
+"name": "Moldova",
+"display": "Moldova",
+"status": "basic",
+"page": "world-moldova.html",
+"queue": null
+},
+{
+"iso": "MC",
+"name": "Monaco",
+"display": "Monaco",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "MN",
+"name": "Mongolia",
+"display": "Mongolia",
+"status": "basic",
+"page": "world-mongolia.html",
+"queue": null
+},
+{
+"iso": "ME",
+"name": "Montenegro",
+"display": "Montenegro",
+"status": "basic",
+"page": "world-montenegro.html",
+"queue": null
+},
+{
+"iso": "MS",
+"name": "Montserrat",
+"display": "Montserrat",
+"status": "basic",
+"page": "world-montserrat.html",
+"queue": null
+},
+{
+"iso": "MA",
+"name": "Morocco",
+"display": "Morocco",
+"status": "deep",
+"page": "world-morocco.html",
+"queue": 31
+},
+{
+"iso": "MZ",
+"name": "Mozambique",
+"display": "Mozambique",
+"status": "basic",
+"page": "world-mozambique.html",
+"queue": null
+},
+{
+"iso": "MM",
+"name": "Myanmar",
+"display": "Myanmar",
+"status": "basic",
+"page": "world-myanmar.html",
+"queue": null
+},
+{
+"iso": "NA",
+"name": "Namibia",
+"display": "Namibia",
+"status": "basic",
+"page": "world-namibia.html",
+"queue": null
+},
+{
+"iso": "NR",
+"name": "Nauru",
+"display": "Nauru",
+"status": "basic",
+"page": "world-nauru.html",
+"queue": null
+},
+{
+"iso": "NP",
+"name": "Nepal",
+"display": "Nepal",
+"status": "deep",
+"page": "world-nepal.html",
+"queue": 34
+},
+{
+"iso": "NL",
+"name": "Netherlands",
+"display": "Netherlands",
+"status": "deep",
+"page": "world-netherlands.html",
+"queue": 3
+},
+{
+"iso": "NC",
+"name": "New Caledonia",
+"display": "New Caledonia",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "NZ",
+"name": "New Zealand",
+"display": "New Zealand",
+"status": "deep",
+"page": "world-new-zealand.html",
+"queue": 13
+},
+{
+"iso": "NI",
+"name": "Nicaragua",
+"display": "Nicaragua",
+"status": "basic",
+"page": "world-nicaragua.html",
+"queue": null
+},
+{
+"iso": "NE",
+"name": "Niger",
+"display": "Niger",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "NG",
+"name": "Nigeria",
+"display": "Nigeria",
+"status": "basic",
+"page": "world-nigeria.html",
+"queue": null
+},
+{
+"iso": "NU",
+"name": "Niue",
+"display": "Niue",
+"status": "basic",
+"page": "world-niue.html",
+"queue": null
+},
+{
+"iso": "NF",
+"name": "Norfolk Island",
+"display": "Norfolk Island",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "KP",
+"name": "North Korea",
+"display": "North Korea",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "MK",
+"name": "North Macedonia",
+"display": "North Macedonia",
+"status": "basic",
+"page": "world-north-macedonia.html",
+"queue": null
+},
+{
+"iso": "MP",
+"name": "Northern Mariana Islands",
+"display": "Northern Mariana Islands",
+"status": "deep",
+"page": "world-northern-mariana-islands.html",
+"queue": null
+},
+{
+"iso": "NO",
+"name": "Norway",
+"display": "Norway",
+"status": "deep",
+"page": "world-norway.html",
+"queue": 47
+},
+{
+"iso": "OM",
+"name": "Oman",
+"display": "Oman",
+"status": "basic",
+"page": "world-oman.html",
+"queue": null
+},
+{
+"iso": "PK",
+"name": "Pakistan",
+"display": "Pakistan",
+"status": "basic",
+"page": "world-pakistan.html",
+"queue": null
+},
+{
+"iso": "PW",
+"name": "Palau",
+"display": "Palau",
+"status": "basic",
+"page": "world-palau.html",
+"queue": null
+},
+{
+"iso": "PS",
+"name": "Palestine, State of",
+"display": "Palestine, State of",
+"status": "basic",
+"page": "world-palestine.html",
+"queue": null
+},
+{
+"iso": "PA",
+"name": "Panama",
+"display": "Panama",
+"status": "basic",
+"page": "world-panama.html",
+"queue": null
+},
+{
+"iso": "PG",
+"name": "Papua New Guinea",
+"display": "Papua New Guinea",
+"status": "basic",
+"page": "world-papua-new-guinea.html",
+"queue": null
+},
+{
+"iso": "PY",
+"name": "Paraguay",
+"display": "Paraguay",
+"status": "deep",
+"page": "world-paraguay.html",
+"queue": 29
+},
+{
+"iso": "PE",
+"name": "Peru",
+"display": "Peru",
+"status": "deep",
+"page": "world-peru.html",
+"queue": 27
+},
+{
+"iso": "PH",
+"name": "Philippines",
+"display": "Philippines",
+"status": "deep",
+"page": "world-philippines.html",
+"queue": 37
+},
+{
+"iso": "PN",
+"name": "Pitcairn",
+"display": "Pitcairn",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "PL",
+"name": "Poland",
+"display": "Poland",
+"status": "deep",
+"page": "world-poland.html",
+"queue": 46
+},
+{
+"iso": "PT",
+"name": "Portugal",
+"display": "Portugal",
+"status": "deep",
+"page": "world-portugal.html",
+"queue": 9
+},
+{
+"iso": "PR",
+"name": "Puerto Rico",
+"display": "Puerto Rico",
+"status": "deep",
+"page": "world-puerto-rico.html",
+"queue": null
+},
+{
+"iso": "QA",
+"name": "Qatar",
+"display": "Qatar",
+"status": "basic",
+"page": "world-qatar.html",
+"queue": null
+},
+{
+"iso": "RO",
+"name": "Romania",
+"display": "Romania",
+"status": "basic",
+"page": "world-romania.html",
+"queue": null
+},
+{
+"iso": "RU",
+"name": "Russian Federation",
+"display": "Russian Federation",
+"status": "basic",
+"page": "world-russia.html",
+"queue": null
+},
+{
+"iso": "RW",
+"name": "Rwanda",
+"display": "Rwanda",
+"status": "basic",
+"page": "world-rwanda.html",
+"queue": null
+},
+{
+"iso": "RE",
+"name": "Réunion",
+"display": "Réunion",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "BL",
+"name": "Saint Barthélemy",
+"display": "Saint Barthélemy",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "SH",
+"name": "Saint Helena, Ascension and Tristan da Cunha",
+"display": "Saint Helena, Ascension and Tristan da Cunha",
+"status": "basic",
+"page": "world-st-helena-ascension-and-tristan-da-cunha.html",
+"queue": null
+},
+{
+"iso": "KN",
+"name": "Saint Kitts and Nevis",
+"display": "Saint Kitts and Nevis",
+"status": "basic",
+"page": "world-st-kitts-and-nevis.html",
+"queue": null
+},
+{
+"iso": "LC",
+"name": "Saint Lucia",
+"display": "Saint Lucia",
+"status": "basic",
+"page": "world-st-lucia.html",
+"queue": null
+},
+{
+"iso": "MF",
+"name": "Saint Martin (French part)",
+"display": "Saint Martin (French part)",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "PM",
+"name": "Saint Pierre and Miquelon",
+"display": "Saint Pierre and Miquelon",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "VC",
+"name": "Saint Vincent and the Grenadines",
+"display": "Saint Vincent and the Grenadines",
+"status": "basic",
+"page": "world-st-vincent-and-the-grenadines.html",
+"queue": null
+},
+{
+"iso": "WS",
+"name": "Samoa",
+"display": "Samoa",
+"status": "basic",
+"page": "world-samoa.html",
+"queue": null
+},
+{
+"iso": "SM",
+"name": "San Marino",
+"display": "San Marino",
+"status": "basic",
+"page": "world-san-marino.html",
+"queue": null
+},
+{
+"iso": "ST",
+"name": "Sao Tome and Principe",
+"display": "Sao Tome and Principe",
+"status": "basic",
+"page": "world-sao-tome-principe.html",
+"queue": null
+},
+{
+"iso": "SA",
+"name": "Saudi Arabia",
+"display": "Saudi Arabia",
+"status": "deep",
+"page": "world-saudi-arabia.html",
+"queue": 42
+},
+{
+"iso": "SN",
+"name": "Senegal",
+"display": "Senegal",
+"status": "basic",
+"page": "world-senegal.html",
+"queue": null
+},
+{
+"iso": "RS",
+"name": "Serbia",
+"display": "Serbia",
+"status": "basic",
+"page": "world-serbia.html",
+"queue": null
+},
+{
+"iso": "SC",
+"name": "Seychelles",
+"display": "Seychelles",
+"status": "basic",
+"page": "world-seychelles.html",
+"queue": null
+},
+{
+"iso": "SL",
+"name": "Sierra Leone",
+"display": "Sierra Leone",
+"status": "basic",
+"page": "world-sierra-leone.html",
+"queue": null
+},
+{
+"iso": "SG",
+"name": "Singapore",
+"display": "Singapore",
+"status": "deep",
+"page": "world-singapore.html",
+"queue": 38
+},
+{
+"iso": "SX",
+"name": "Sint Maarten (Dutch part)",
+"display": "Sint Maarten (Dutch part)",
+"status": "basic",
+"page": "world-st-maarten.html",
+"queue": null
+},
+{
+"iso": "SK",
+"name": "Slovakia",
+"display": "Slovakia",
+"status": "basic",
+"page": "world-slovakia.html",
+"queue": null
+},
+{
+"iso": "SI",
+"name": "Slovenia",
+"display": "Slovenia",
+"status": "basic",
+"page": "world-slovenia.html",
+"queue": null
+},
+{
+"iso": "SB",
+"name": "Solomon Islands",
+"display": "Solomon Islands",
+"status": "basic",
+"page": "world-solomon-islands.html",
+"queue": null
+},
+{
+"iso": "SO",
+"name": "Somalia",
+"display": "Somalia",
+"status": "basic",
+"page": "world-somalia.html",
+"queue": null
+},
+{
+"iso": "ZA",
+"name": "South Africa",
+"display": "South Africa",
+"status": "deep",
+"page": "world-south-africa.html",
+"queue": 14
+},
+{
+"iso": "GS",
+"name": "South Georgia and the South Sandwich Islands",
+"display": "South Georgia and the South Sandwich Islands",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "KR",
+"name": "South Korea",
+"display": "South Korea",
+"status": "basic",
+"page": "world-south-korea.html",
+"queue": null
+},
+{
+"iso": "SS",
+"name": "South Sudan",
+"display": "South Sudan",
+"status": "basic",
+"page": "world-south-sudan.html",
+"queue": null
+},
+{
+"iso": "ES",
+"name": "Spain",
+"display": "Spain",
+"status": "deep",
+"page": "world-spain.html",
+"queue": 8
+},
+{
+"iso": "LK",
+"name": "Sri Lanka",
+"display": "Sri Lanka",
+"status": "basic",
+"page": "world-sri-lanka.html",
+"queue": null
+},
+{
+"iso": "SD",
+"name": "Sudan",
+"display": "Sudan",
+"status": "basic",
+"page": "world-sudan.html",
+"queue": null
+},
+{
+"iso": "SR",
+"name": "Suriname",
+"display": "Suriname",
+"status": "basic",
+"page": "world-suriname.html",
+"queue": null
+},
+{
+"iso": "SJ",
+"name": "Svalbard and Jan Mayen",
+"display": "Svalbard and Jan Mayen",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "SE",
+"name": "Sweden",
+"display": "Sweden",
+"status": "deep",
+"page": "world-sweden.html",
+"queue": 48
+},
+{
+"iso": "CH",
+"name": "Switzerland",
+"display": "Switzerland",
+"status": "deep",
+"page": "world-switzerland.html",
+"queue": 10
+},
+{
+"iso": "SY",
+"name": "Syria",
+"display": "Syria",
+"status": "basic",
+"page": "world-syria.html",
+"queue": null
+},
+{
+"iso": "TW",
+"name": "Taiwan",
+"display": "Taiwan",
+"status": "basic",
+"page": "world-taiwan.html",
+"queue": null
+},
+{
+"iso": "TJ",
+"name": "Tajikistan",
+"display": "Tajikistan",
+"status": "basic",
+"page": "world-tajikistan.html",
+"queue": null
+},
+{
+"iso": "TZ",
+"name": "Tanzania",
+"display": "Tanzania",
+"status": "basic",
+"page": "world-tanzania.html",
+"queue": null
+},
+{
+"iso": "TH",
+"name": "Thailand",
+"display": "Thailand",
+"status": "deep",
+"page": "world-thailand.html",
+"queue": 5
+},
+{
+"iso": "TL",
+"name": "Timor-Leste",
+"display": "Timor-Leste",
+"status": "basic",
+"page": "world-east-timor.html",
+"queue": null
+},
+{
+"iso": "TG",
+"name": "Togo",
+"display": "Togo",
+"status": "basic",
+"page": "world-togo.html",
+"queue": null
+},
+{
+"iso": "TK",
+"name": "Tokelau",
+"display": "Tokelau",
+"status": "basic",
+"page": "world-tokelau.html",
+"queue": null
+},
+{
+"iso": "TO",
+"name": "Tonga",
+"display": "Tonga",
+"status": "basic",
+"page": "world-tonga.html",
+"queue": null
+},
+{
+"iso": "TT",
+"name": "Trinidad and Tobago",
+"display": "Trinidad and Tobago",
+"status": "basic",
+"page": "world-trinidad-and-tobago.html",
+"queue": null
+},
+{
+"iso": "TN",
+"name": "Tunisia",
+"display": "Tunisia",
+"status": "basic",
+"page": "world-tunisia.html",
+"queue": null
+},
+{
+"iso": "TM",
+"name": "Turkmenistan",
+"display": "Turkmenistan",
+"status": "basic",
+"page": "world-turkmenistan.html",
+"queue": null
+},
+{
+"iso": "TC",
+"name": "Turks and Caicos Islands",
+"display": "Turks and Caicos Islands",
+"status": "basic",
+"page": "world-turks-and-caicos-islands.html",
+"queue": null
+},
+{
+"iso": "TV",
+"name": "Tuvalu",
+"display": "Tuvalu",
+"status": "basic",
+"page": "world-tuvalu.html",
+"queue": null
+},
+{
+"iso": "TR",
+"name": "Türkiye",
+"display": "Türkiye",
+"status": "deep",
+"page": "world-turkey.html",
+"queue": 44
+},
+{
+"iso": "UG",
+"name": "Uganda",
+"display": "Uganda",
+"status": "basic",
+"page": "world-uganda.html",
+"queue": null
+},
+{
+"iso": "UA",
+"name": "Ukraine",
+"display": "Ukraine",
+"status": "basic",
+"page": "world-ukraine.html",
+"queue": null
+},
+{
+"iso": "AE",
+"name": "United Arab Emirates",
+"display": "United Arab Emirates",
+"status": "deep",
+"page": "world-united-arab-emirates.html",
+"queue": 41
+},
+{
+"iso": "GB",
+"name": "United Kingdom",
+"display": "United Kingdom",
+"status": "deep",
+"page": "world-united-kingdom.html",
+"queue": 0
+},
+{
+"iso": "US",
+"name": "United States",
+"display": "United States",
+"status": "states",
+"page": "index.html",
+"queue": null
+},
+{
+"iso": "UM",
+"name": "United States Minor Outlying Islands",
+"display": "United States Minor Outlying Islands",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "UY",
+"name": "Uruguay",
+"display": "Uruguay",
+"status": "deep",
+"page": "world-uruguay.html",
+"queue": 4
+},
+{
+"iso": "UZ",
+"name": "Uzbekistan",
+"display": "Uzbekistan",
+"status": "basic",
+"page": "world-uzbekistan.html",
+"queue": null
+},
+{
+"iso": "VU",
+"name": "Vanuatu",
+"display": "Vanuatu",
+"status": "basic",
+"page": "world-vanuatu.html",
+"queue": null
+},
+{
+"iso": "VE",
+"name": "Venezuela",
+"display": "Venezuela",
+"status": "basic",
+"page": "world-venezuela.html",
+"queue": null
+},
+{
+"iso": "VN",
+"name": "Vietnam",
+"display": "Vietnam",
+"status": "basic",
+"page": "world-vietnam.html",
+"queue": null
+},
+{
+"iso": "VG",
+"name": "Virgin Islands, British",
+"display": "Virgin Islands, British",
+"status": "basic",
+"page": "world-british-virgin-islands.html",
+"queue": null
+},
+{
+"iso": "VI",
+"name": "Virgin Islands, U.S.",
+"display": "Virgin Islands, U.S.",
+"status": "deep",
+"page": "world-us-virgin-islands.html",
+"queue": null
+},
+{
+"iso": "WF",
+"name": "Wallis and Futuna",
+"display": "Wallis and Futuna",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "EH",
+"name": "Western Sahara",
+"display": "Western Sahara",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "YE",
+"name": "Yemen",
+"display": "Yemen",
+"status": "not-started",
+"page": null,
+"queue": null
+},
+{
+"iso": "ZM",
+"name": "Zambia",
+"display": "Zambia",
+"status": "basic",
+"page": "world-zambia.html",
+"queue": null
+},
+{
+"iso": "ZW",
+"name": "Zimbabwe",
+"display": "Zimbabwe",
+"status": "basic",
+"page": "world-zimbabwe.html",
+"queue": null
+},
+{
+"iso": "AX",
+"name": "Åland Islands",
+"display": "Åland Islands",
+"status": "not-started",
+"page": null,
+"queue": null
+}
+]
 }

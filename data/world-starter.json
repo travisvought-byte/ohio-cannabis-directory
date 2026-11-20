@@ -103,22 +103,6 @@
     }
    ]
   },
-  "AG": {
-   "name": "Antigua and Barbuda",
-   "page": "world-antigua-and-barbuda.html",
-   "fcdo_title": "Antigua and Barbuda",
-   "source_id": "fcdo-antigua-and-barbuda",
-   "updated": "2026-03-13",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "It is illegal to possess drugs. There are severe penalties for all drug offences. Pack all luggage yourself and do not carry anything through customs for anyone else."
-     ]
-    }
-   ]
-  },
   "AM": {
    "name": "Armenia",
    "page": "world-armenia.html",
@@ -2692,14 +2676,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Anguilla (British Overseas Territory) travel advice (last updated by the FCDO 2025-05-15)",
    "url": "https://www.gov.uk/foreign-travel-advice/anguilla",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-antigua-and-barbuda",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Antigua and Barbuda travel advice (last updated by the FCDO 2026-03-13)",
-   "url": "https://www.gov.uk/foreign-travel-advice/antigua-and-barbuda",
    "retrieved_on": "2026-11-20"
   },
   {
