@@ -3947,6 +3947,291 @@
      ]
     }
    }
+  },
+  "SA": {
+   "name": "Saudi Arabia",
+   "page": "world-saudi-arabia.html",
+   "summary": "Saudi Arabia has zero tolerance for drugs. Possessing even a small amount can mean up to 5 years in prison and a large fine, and dealing or smuggling can bring a death sentence.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No. Zero tolerance",
+     "detail": "The UK government says there is zero tolerance for drug offences and the penalties are severe, with long detention possible before trial.",
+     "citation": "UK FCDO travel advice",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "sa-fcdo"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Up to 5 years, even for small amounts",
+     "detail": "Possessing even small amounts can bring up to 5 years in prison and a fine of 30,000 riyals. Drug dealing and smuggling can result in a death sentence.",
+     "citation": "UK FCDO travel advice (updated Nov 18 2026)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "sa-fcdo"
+     ]
+    }
+   }
+  },
+  "CN": {
+   "name": "China",
+   "page": "world-china.html",
+   "summary": "China has zero tolerance for drugs, including cannabis. People caught face heavy fines, long prison sentences or the death penalty, and airports scan for cannabis.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No. Zero tolerance",
+     "detail": "Possession, trafficking and manufacture of any illegal drug, including cannabis, are serious offences under a zero-tolerance policy.",
+     "citation": "UK FCDO travel advice",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "cn-fcdo"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Any amount: fines, prison or death",
+     "detail": "Those caught face heavy fines, lengthy prison sentences or the death penalty. Australia also lists China among countries that apply the death penalty to drug offences.",
+     "citation": "UK FCDO travel advice; Australian Smartraveller",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "cn-fcdo",
+      "au-smartraveller"
+     ]
+    }
+   }
+  },
+  "TR": {
+   "name": "Türkiye",
+   "page": "world-turkey.html",
+   "summary": "Cannabis is illegal in Türkiye. The UK government warns of 4 to 24 years in prison and heavy fines for possessing, using or smuggling drugs, including when transiting through airports.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No",
+     "detail": "Illegal drugs, including cannabis, carry severe penalties for possession, use and smuggling.",
+     "citation": "UK FCDO travel advice",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "tr-fcdo"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "4 to 24 years possible",
+     "detail": "The UK government says to expect a long prison sentence of 4 to 24 years and heavy fines for possessing, using or smuggling illegal drugs, including in transit; airports scan transit baggage.",
+     "citation": "UK FCDO travel advice (updated Nov 18 2026)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "tr-fcdo"
+     ]
+    }
+   }
+  },
+  "PL": {
+   "name": "Poland",
+   "page": "world-poland.html",
+   "summary": "Possession of any amount of cannabis is a crime in Poland, though prosecutors may drop small personal-use cases. Medical cannabis has been available on prescription from pharmacies since 2017.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No",
+     "detail": "Recreational use is not allowed and is subject to criminal liability under the Act on Counteracting Drug Addiction of 2005.",
+     "citation": "Act on Counteracting Drug Addiction 2005 (EUDA 2017; CMS)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "pl-euda-2017",
+      "pl-cms"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "On prescription, prepared by pharmacies",
+     "detail": "Medical cannabis is dispensed by pharmacies as a prescription medicine, prepared in the pharmacy from a doctor's prescription.",
+     "citation": "CMS Expert Guide: Poland",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "pl-cms"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Up to 3 years; small cases may be dropped",
+     "detail": "Any drug possession, even a small amount for personal use, carries up to 3 years in prison; a minor offence can bring a fine, restriction of liberty or up to 1 year; a substantial amount up to 12 years. Prosecutors may discontinue cases involving small amounts for personal use, but do not have to.",
+     "citation": "Act on Counteracting Drug Addiction (EUDA Country Drug Report 2017)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "pl-euda-2017",
+      "pl-fcdo"
+     ]
+    }
+   }
+  },
+  "GR": {
+   "name": "Greece",
+   "page": "world-greece.html",
+   "summary": "Recreational cannabis is illegal in Greece, but the 2013 drug law treats personal use more leniently than dealing. Licensed medical cannabis production has been legal since 2018, and prescription cannabis became available in pharmacies in 2024.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No",
+     "detail": "Possession, use and smuggling are offences; the UK government warns of jail and heavy fines, including when transiting airports.",
+     "citation": "Law 4139/2013; UK FCDO travel advice",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "gr-euda-2018",
+      "gr-fcdo"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Prescription cannabis from pharmacies since 2024",
+     "detail": "Law 4523/2018 allowed licensed production of medicinal cannabis end-products. Prescription cannabis became available in pharmacies in early 2024, about two years after the plan was announced.",
+     "citation": "Law 4523/2018; Greek Reporter (Feb 25 2024)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "gr-law4523",
+      "gr-greekreporter"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "Personal use punished more leniently; a judge decides the amount",
+     "detail": "Law 4139/2013 separates possession for personal use from possession for sale and sets milder sanctions for personal use. It dropped fixed personal-use quantities; judges decide based on the substance, its quantity and purity, and the person's needs.",
+     "citation": "Law 4139/2013 (EUDA Country Drug Report 2018)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "gr-euda-2018"
+     ]
+    }
+   }
+  },
+  "NO": {
+   "name": "Norway",
+   "page": "world-norway.html",
+   "summary": "Cannabis is illegal in Norway, but small personal amounts usually bring a fine. Two cannabis medicines are approved, and doctors can apply for special permits for others.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No",
+     "detail": "Recreational use is not allowed. A 2021 government proposal to decriminalise possession of small amounts for personal use did not become law.",
+     "citation": "CMS Expert Guide: Norway",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "no-cms"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Two approved medicines; others by special permit",
+     "detail": "Doctors who can prescribe group A medicines can prescribe the approved cannabis medicines Sativex and Epidyolex, and can apply for a special permit for named patients to use other cannabis products. Other uses are treated as experimental.",
+     "citation": "Norwegian Medical Products Agency",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "no-dmp"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "Up to 15 g usually means a fine",
+     "detail": "Possession and use carry up to 6 months in prison, but possessing a small amount, up to 15 grams, for personal use is usually punished only with a fine, especially for first offences.",
+     "citation": "Penal Code and Medicines Act (CMS)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "no-cms",
+      "no-fcdo"
+     ]
+    }
+   }
+  },
+  "SE": {
+   "name": "Sweden",
+   "page": "world-sweden.html",
+   "summary": "Sweden prohibits cannabis even in small amounts and enforces minor drug offences more than its Nordic neighbours. A few cannabis medicines are available on prescription or under licence.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No",
+     "detail": "Illegal drugs, including cannabis, are strictly prohibited even in small quantities; use itself is an offence.",
+     "citation": "UK FCDO travel advice; Nordic Welfare Centre (2019)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "se-fcdo",
+      "se-nordic"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "A few medicines on prescription or licence",
+     "detail": "Sativex is used for multiple sclerosis spasms, and Marinol can be prescribed under licence.",
+     "citation": "Nordic Welfare Centre (2019)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "se-nordic"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Minor offence: fine or up to 6 months",
+     "detail": "Penalties depend on the amount and how dangerous the substance is judged to be; a minor drug offence carries a fine or up to 6 months in prison. The UK government warns of sentences of up to 10 years for serious cases.",
+     "citation": "Narcotic Drugs Punishments Act (Nordic Welfare Centre); UK FCDO travel advice",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "se-nordic",
+      "se-fcdo"
+     ]
+    }
+   }
+  },
+  "FI": {
+   "name": "Finland",
+   "page": "world-finland.html",
+   "summary": "Using, possessing and growing cannabis are crimes in Finland under the Criminal Code. Medical cannabis is available only as Sativex or through individual special permits from the medicines agency.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No",
+     "detail": "Drug use has been a crime since 1966; the Criminal Code covers use, possession, manufacturing, growing, smuggling and selling.",
+     "citation": "Criminal Code (Nordic Welfare Centre)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "fi-nordic"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Sativex, or a special permit from Fimea",
+     "detail": "Sativex has a marketing authorisation. Other medical cannabis is an unlicensed medicine that needs a special permit from the Finnish Medicines Agency, granted patient by patient.",
+     "citation": "Prohibition Partners (Oct 2025)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "fi-pp-2025"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Prohibited even in small amounts",
+     "detail": "Possession and use are offences even in small quantities. The UK government warns of sentences of up to 10 years and heavy fines for serious cases.",
+     "citation": "Criminal Code (Nordic Welfare Centre); UK FCDO travel advice",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "fi-nordic",
+      "fi-fcdo"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "No",
+     "detail": "Growing cannabis is an offence under the Criminal Code.",
+     "citation": "Criminal Code (Nordic Welfare Centre)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "fi-nordic"
+     ]
+    }
+   }
   }
  },
  "canada_provinces": [
@@ -4292,15 +4577,23 @@
     "NP",
     "SG",
     "MY",
-    "PH"
+    "PH",
+    "PL",
+    "GR",
+    "NO",
+    "SE",
+    "FI"
    ]
   },
   {
    "id": "banned",
-   "label": "Banned, with no medical program",
+   "label": "Banned, with severe penalties",
    "codes": [
     "AE",
-    "ID"
+    "ID",
+    "SA",
+    "CN",
+    "TR"
    ]
   }
  ],
@@ -7245,6 +7538,150 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Philippines travel advice: safety and security",
    "url": "https://www.gov.uk/foreign-travel-advice/philippines/safety-and-security",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "sa-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
+   "title": "Saudi Arabia travel advice: safety and security",
+   "url": "https://www.gov.uk/foreign-travel-advice/saudi-arabia/safety-and-security",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "cn-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
+   "title": "China travel advice: safety and security",
+   "url": "https://www.gov.uk/foreign-travel-advice/china/safety-and-security",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "tr-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
+   "title": "Turkey travel advice: safety and security",
+   "url": "https://www.gov.uk/foreign-travel-advice/turkey/safety-and-security",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "gr-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
+   "title": "Greece travel advice: safety and security",
+   "url": "https://www.gov.uk/foreign-travel-advice/greece/safety-and-security",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "pl-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
+   "title": "Poland travel advice: safety and security",
+   "url": "https://www.gov.uk/foreign-travel-advice/poland/safety-and-security",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "no-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
+   "title": "Norway travel advice: safety and security",
+   "url": "https://www.gov.uk/foreign-travel-advice/norway/safety-and-security",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "se-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
+   "title": "Sweden travel advice: safety and security",
+   "url": "https://www.gov.uk/foreign-travel-advice/sweden/safety-and-security",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "fi-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
+   "title": "Finland travel advice: safety and security",
+   "url": "https://www.gov.uk/foreign-travel-advice/finland/safety-and-security",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "pl-euda-2017",
+   "kind": "government",
+   "publisher": "European Monitoring Centre for Drugs and Drug Addiction (now EUDA)",
+   "title": "Poland Country Drug Report 2017",
+   "url": "https://www.euda.europa.eu/system/files/media/publications/documents/4509/TD0116917ENN.pdf",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "pl-cms",
+   "kind": "organization",
+   "publisher": "CMS (law firm)",
+   "title": "Cannabis law and legislation in Poland",
+   "url": "https://cms.law/en/int/expert-guides/cms-expert-guide-to-a-legal-roadmap-to-cannabis/poland",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "gr-law4523",
+   "kind": "statute",
+   "publisher": "Government Gazette of Greece (via 1st Health Region)",
+   "title": "Law 4523/2018 on the production of medicinal cannabis end-products (Greek text)",
+   "url": "https://www.1dype.gov.gr/wp-content/uploads/2019/06/%CE%9D.-4523_07.03.2018.pdf",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "gr-euda-2018",
+   "kind": "government",
+   "publisher": "European Monitoring Centre for Drugs and Drug Addiction (now EUDA)",
+   "title": "Greece Country Drug Report 2018",
+   "url": "https://www.euda.europa.eu/system/files/publications/8879/greece-cdr-2018-with-numbers.pdf",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "gr-greekreporter",
+   "kind": "news",
+   "publisher": "Greek Reporter",
+   "title": "Prescription cannabis for medicinal use becomes legal in Greece (Feb 25 2024)",
+   "url": "https://greekreporter.com/2024/02/25/prescription-cannabis-medicinal-use-legal-greece/",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "no-dmp",
+   "kind": "regulator",
+   "publisher": "Norwegian Medical Products Agency (DMP)",
+   "title": "Procedure for treatment with cannabis within current regulations",
+   "url": "https://www.dmp.no/en/special-permit-named-patient/for-physicians-and-dentists/medicinal-products-frequently-inquired-about-for-special-permit-named-patient/procedure-for-treatment-with-cannabis-within-current-regulations",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "no-cms",
+   "kind": "organization",
+   "publisher": "CMS (law firm)",
+   "title": "Cannabis law and legislation in Norway",
+   "url": "https://cms.law/en/int/expert-guides/cms-expert-guide-to-a-legal-roadmap-to-cannabis/norway",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "se-nordic",
+   "kind": "organization",
+   "publisher": "Nordic Alcohol and Drug Policy Network (from Nordic Welfare Centre, 2019)",
+   "title": "Sweden: cannabis",
+   "url": "https://www.nordicalcohol.org/sweden-cannabis",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "fi-nordic",
+   "kind": "organization",
+   "publisher": "Nordic Alcohol and Drug Policy Network (from Nordic Welfare Centre, 2019)",
+   "title": "Finland: cannabis",
+   "url": "https://nordicalcohol.org/finland-cannabis",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "fi-pp-2025",
+   "kind": "research",
+   "publisher": "Prohibition Partners",
+   "title": "Finland: medical cannabis market overview 2025 (Oct 10 2025)",
+   "url": "https://prohibitionpartners.com/2025/10/10/finland-medical-cannabis-market-overview-2025/",
    "retrieved_on": "2026-11-20"
   }
  ]

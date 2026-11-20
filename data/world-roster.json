@@ -365,7 +365,7 @@
    "iso": "CN",
    "name": "China",
    "display": "China",
-   "status": "basic",
+   "status": "deep",
    "page": "world-china.html",
    "queue": 43
   },
@@ -605,7 +605,7 @@
    "iso": "FI",
    "name": "Finland",
    "display": "Finland",
-   "status": "basic",
+   "status": "deep",
    "page": "world-finland.html",
    "queue": 49
   },
@@ -693,7 +693,7 @@
    "iso": "GR",
    "name": "Greece",
    "display": "Greece",
-   "status": "basic",
+   "status": "deep",
    "page": "world-greece.html",
    "queue": 45
   },
@@ -1325,7 +1325,7 @@
    "iso": "NO",
    "name": "Norway",
    "display": "Norway",
-   "status": "basic",
+   "status": "deep",
    "page": "world-norway.html",
    "queue": 47
   },
@@ -1413,7 +1413,7 @@
    "iso": "PL",
    "name": "Poland",
    "display": "Poland",
-   "status": "basic",
+   "status": "deep",
    "page": "world-poland.html",
    "queue": 46
   },
@@ -1557,7 +1557,7 @@
    "iso": "SA",
    "name": "Saudi Arabia",
    "display": "Saudi Arabia",
-   "status": "basic",
+   "status": "deep",
    "page": "world-saudi-arabia.html",
    "queue": 42
   },
@@ -1717,7 +1717,7 @@
    "iso": "SE",
    "name": "Sweden",
    "display": "Sweden",
-   "status": "basic",
+   "status": "deep",
    "page": "world-sweden.html",
    "queue": 48
   },
@@ -1845,7 +1845,7 @@
    "iso": "TR",
    "name": "Türkiye",
    "display": "Türkiye",
-   "status": "basic",
+   "status": "deep",
    "page": "world-turkey.html",
    "queue": 44
   },
