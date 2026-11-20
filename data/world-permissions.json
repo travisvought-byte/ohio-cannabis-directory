@@ -4597,6 +4597,79 @@
      "A short temporary licence exists alongside the two-year licence."
     ]
    }
+  },
+  "VC": {
+   "name": "Saint Vincent and the Grenadines",
+   "page": "world-st-vincent-and-the-grenadines.html",
+   "summary": "Possession of up to 56 grams (two ounces) is still illegal but only a ticketable offence: no arrest and no criminal record. Smoking at home and at Rastafari places of worship is not punished, but smoking in public is unlawful. A Medicinal Cannabis Authority set up in 2019 licenses a medical industry, including dispensaries and a consumption lounge for card holders. The government rejects full legalisation.",
+   "note": "The amended Drugs (Prevention of Misuse) Act was not opened; possession rules come from news reports and police statements.",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "Decriminalised at home; not legal",
+     "detail": "Since a 2019 amendment to the Drugs (Prevention of Misuse) Act, smoking cannabis in private homes and at Rastafari places of worship is not punished. Section 7C makes it unlawful to smoke or use cannabis in any public place, though the Minister may designate public areas, and police may ask people to move somewhere private. Prime Minister Gonsalves said in April 2025 that the government permits small quantities for personal use but will not legalise.",
+     "citation": "Drugs (Prevention of Misuse) Act as amended in 2019, reported by Searchlight (Aug 2 2019; Dec 13 2024); gov.vc (Apr 17 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "vc-searchlight-2019",
+      "vc-searchlight-2024",
+      "vc-gov-2025"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Prescription plus an Authority ID card",
+     "detail": "Parliament passed a medicinal cannabis industry law on December 11, 2018, and the Medicinal Cannabis Authority was established in 2019 to regulate cultivation, manufacture and compliance. A patient with a prescription applies to the Authority for a cannabis ID card valid for one year, then buys from a licensed dispensary. In 2022 the first consumption lounge opened, with on-site doctor consultations.",
+     "citation": "Searchlight (Aug 2 2019); gov.vc (Apr 17 2025); Jamaica Observer (May 7 2022)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "vc-searchlight-2019",
+      "vc-gov-2025",
+      "vc-observer-2022"
+     ]
+    },
+    "buying": {
+     "status": "medical-only",
+     "short": "Licensed dispensaries for card holders",
+     "detail": "There is no recreational market. Medicinal cannabis is sold by licensed dispensaries to people with a Medicinal Cannabis Authority ID card, and people with a medical prescription may smoke in designated areas.",
+     "citation": "Jamaica Observer (May 7 2022); Searchlight (Dec 13 2024)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "vc-observer-2022",
+      "vc-searchlight-2024"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "Up to 56 grams is a ticket, not an arrest",
+     "detail": "Possession of 56 grams or less remains illegal but is ticketable: no arrest, no detention and no criminal record. A person who admits it gets a health and education card and has a month to pay an $80 ticket; under-18s and people who seem dependent are pointed to counselling. A person who denies it is summoned to court, where the maximum fine is $500. Any amount on school, medical, sporting or cultural premises with students present is still treated as trafficking unless proven otherwise.",
+     "citation": "Searchlight (Aug 2 2019; Dec 13 2024)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "vc-searchlight-2019",
+      "vc-searchlight-2024"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "Alongside the medical law, Parliament passed a separate amnesty Act in December 2018 for traditional cannabis growers.",
+    "source_ids": [
+     "vc-searchlight-2019"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Saint Vincent and the Grenadines",
+    "source_ids": [
+     "vc-searchlight-2019",
+     "vc-gov-2025",
+     "vc-observer-2022"
+    ],
+    "points": [
+     "Up to 56 grams is handled with a ticket and leaves no criminal record.",
+     "Traditional growers were offered an amnesty when the medical law passed.",
+     "The government frames its reforms as staying inside the UN drug conventions."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -4926,7 +4999,8 @@
     "CR",
     "IN",
     "AG",
-    "KN"
+    "KN",
+    "VC"
    ]
   },
   {
@@ -8202,6 +8276,38 @@
    "publisher": "SKNIS",
    "title": "Attorney General endorses first legal step in updating Drugs Act (Aug 1 2019; bill passed Jul 31 2019)",
    "url": "https://www.sknis.gov.kn/2019/08/01/st-kitts-and-nevis-attorney-general-endorses-first-legal-step-in-updating-drugs-act",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "vc-searchlight-2019",
+   "kind": "news",
+   "publisher": "Searchlight (St Vincent)",
+   "title": "No arrest for two ounces or less of cannabis (Aug 2 2019)",
+   "url": "https://www.searchlight.vc/front-page/2019/08/02/no-arrest-for-two-ounces-or-less-of-cannabis",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "vc-searchlight-2024",
+   "kind": "news",
+   "publisher": "Searchlight (St Vincent)",
+   "title": "Marijuana laws being misinterpreted by civilians, says narcotics officer (Dec 13 2024)",
+   "url": "https://www.searchlight.vc/news/2024/12/13/marijuana-laws-misinterpreted-civilians-says-narcotics-officer",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "vc-gov-2025",
+   "kind": "government",
+   "publisher": "Government of Saint Vincent and the Grenadines (gov.vc)",
+   "title": "What the convention permits is what we have done: PM Gonsalves on marijuana (Apr 17 2025)",
+   "url": "https://www.gov.vc/images/pdf_documents/What-the-convention-permits-is-what-we-have-done--PM-Gonsalves-on-Marijuana--.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "vc-observer-2022",
+   "kind": "news",
+   "publisher": "Jamaica Observer (CMC)",
+   "title": "First cannabis consumption lounge opens in St Vincent and the Grenadines (May 7 2022)",
+   "url": "https://jamaicaobserver.com/latest-news/first-cannabis-consumption-lounge-opens-in-st-vincent-and-the-grenadines",
    "retrieved_on": "2026-11-19"
   }
  ]

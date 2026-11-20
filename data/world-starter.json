@@ -2189,22 +2189,6 @@
     }
    ]
   },
-  "VC": {
-   "name": "St Vincent and the Grenadines",
-   "page": "world-st-vincent-and-the-grenadines.html",
-   "fcdo_title": "St Vincent and the Grenadines",
-   "source_id": "fcdo-st-vincent-and-the-grenadines",
-   "updated": "2026-04-23",
-   "sections": [
-    {
-     "part": "Safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "There are severe penalties for all drug offences. Pack your own luggage and do not carry anything through customs for anyone else."
-     ]
-    }
-   ]
-  },
   "SD": {
    "name": "Sudan",
    "page": "world-sudan.html",
@@ -3619,14 +3603,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "St Maarten travel advice (last updated by the FCDO 2025-12-10)",
    "url": "https://www.gov.uk/foreign-travel-advice/st-maarten",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-st-vincent-and-the-grenadines",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "St Vincent and the Grenadines travel advice (last updated by the FCDO 2026-04-23)",
-   "url": "https://www.gov.uk/foreign-travel-advice/st-vincent-and-the-grenadines",
    "retrieved_on": "2026-11-20"
   },
   {
