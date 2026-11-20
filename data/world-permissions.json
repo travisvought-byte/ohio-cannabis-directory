@@ -4758,6 +4758,101 @@
      "A 2026 bill proposes an age line of 25 for the personal-use exemption."
     ]
    }
+  },
+  "BB": {
+   "name": "Barbados",
+   "page": "world-barbados.html",
+   "summary": "Cannabis is still illegal for adult use. Since a 2021 amendment, police can hand someone with 14 grams or less a $200 fixed penalty ticket instead of charging them, and older convictions for that amount are treated as expunged. Medical cannabis is legal on a doctor's prescription, filled by a pharmacist; the first licensed dispensary opened in 2025. Rastafari can use cannabis as a sacrament only in permitted places of worship.",
+   "note": "Amounts are in Barbados dollars. The Acts are cited from the bill texts on Parliament's site.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal; small amounts get a ticket",
+     "detail": "Recreational use is not permitted, the licensing authority said in 2025. Possession remains an offence; the 2021 fixed-penalty system only changes how small amounts are handled. In July 2026 the High Court upheld the drug law against a constitutional challenge, noting that home use and home growing outside the sacramental scheme remain regulated by it.",
+     "citation": "Barbados Today (Jun 14 2025; Jun 1 2024; Jul 31 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bb-today-2025",
+      "bb-today-2024",
+      "bb-today-2026"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Doctor's prescription, filled by a pharmacist",
+     "detail": "Under the Medicinal Cannabis Industry Act 2019, medicinal cannabis may be used only when a medical practitioner prescribes or recommends it. A pharmacist dispenses it at a pharmacy or licensed therapeutic facility on a prescription and valid ID, with no more than a 30-day supply at a time for ongoing use. Under-21s need a practitioner's certificate and parental consent. The Act covers non-resident visitors holding a prescription or written recommendation, with the dispensing procedure left to regulations. The first licensed dispensary, Island Therapeutics in Worthing, opened in June 2025.",
+     "citation": "Medicinal Cannabis Industry Act 2019, ss. 2, 25-29, 42; Barbados Today (Jun 14 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bb-mcia-2019",
+      "bb-today-2025"
+     ]
+    },
+    "buying": {
+     "status": "medical-only",
+     "short": "Only on prescription",
+     "detail": "There is no recreational sale. Medicinal cannabis is not sold to walk-in customers, and selling or giving it away at conventions, trade shows or events is prohibited. Using cannabis that is not prescribed carries up to $100,000 or 10 years under the medical Act.",
+     "citation": "Barbados Today (Jun 14 2025); Medicinal Cannabis Industry Act 2019, ss. 25(3), 40",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bb-today-2025",
+      "bb-mcia-2019"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "Up to 14 grams: a $200 ticket",
+     "detail": "If police believe someone had 14 grams or less, they can serve a fixed penalty notice instead of a charge. Paying $200 within 30 days ends liability to conviction. People under 18 must also attend the National Council on Substance Abuse for assessment within 14 days; adults can be referred if they seem addicted. Not paying is an offence with a $1,000 fine, and someone who disputes the possession can be prosecuted instead.",
+     "citation": "Drug Abuse (Prevention and Control) (Amendment) Act 2021, s. 6A; Barbados Today (Jun 1 2024)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bb-dapca-2021",
+      "bb-today-2024"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Not allowed outside the sacramental scheme",
+     "detail": "Cultivation is licensed for the medical industry, and the sacramental scheme allows growing only on the premises of a permitted place of worship. The High Court noted in July 2026 that private home cultivation remains regulated under the general drug law.",
+     "citation": "Medicinal Cannabis Industry Act 2019, ss. 30-31; Sacramental Cannabis Act 2019 draft; Barbados Today (Jul 31 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bb-mcia-2019",
+      "bb-sca-2019",
+      "bb-today-2026"
+     ]
+    },
+    "record-relief": {
+     "status": "limited",
+     "short": "Small-possession convictions deemed expunged",
+     "detail": "A person convicted of possessing 14 grams or less is deemed rehabilitated once the sentence is served, and the conviction is deemed expunged, despite the general rehabilitation-of-offenders law.",
+     "citation": "Drug Abuse (Prevention and Control) (Amendment) Act 2021, s. 6B",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bb-dapca-2021"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "Rastafari places of worship can hold a sacramental use permit to grow and use cannabis on the premises, not within 600 metres of a school, and get a one-day permit to carry up to 14 grams to a worship event in a public place. Nothing under the scheme may be sold.",
+    "source_ids": [
+     "bb-sca-2019",
+     "bb-today-2026"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Barbados",
+    "source_ids": [
+     "bb-dapca-2021",
+     "bb-mcia-2019",
+     "bb-today-2026"
+    ],
+    "points": [
+     "Small possession is ticketed, but officials stress it is not decriminalised.",
+     "Medical cannabis goes through pharmacists, with a 30-day supply limit for ongoing use.",
+     "Sacramental use is tied to permitted places of worship, and the High Court has upheld that limit."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -5116,7 +5211,8 @@
     "NO",
     "SE",
     "FI",
-    "PR"
+    "PR",
+    "BB"
    ]
   },
   {
@@ -8421,6 +8517,54 @@
    "publisher": "Parliament of the Republic of Trinidad and Tobago",
    "title": "Bill Essentials: Miscellaneous Provisions (Alcohol, Cannabis, Dangerous Drugs, Gambling and Tobacco) Bill, 2026 (Oct 2 2026)",
    "url": "https://www.ttparliament.org/wp-content/uploads/2026/09/b2026h17be.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bb-dapca-2021",
+   "kind": "statute",
+   "publisher": "Parliament of Barbados",
+   "title": "Drug Abuse (Prevention and Control) (Amendment) Act, 2021: bill text (Mar 5 2021)",
+   "url": "https://www.barbadosparliament.com/uploads/bill_resolution/0ea7e3e8e12c3a619708f6b1f889679f.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bb-today-2024",
+   "kind": "news",
+   "publisher": "Barbados Today",
+   "title": "Cops \"can issue tickets\" under new cannabis law (Jun 1 2024)",
+   "url": "https://barbadostoday.bb/2024/06/01/cops-can-issue-tickets-under-new-cannabis-law/amp/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bb-mcia-2019",
+   "kind": "statute",
+   "publisher": "Parliament of Barbados",
+   "title": "Medicinal Cannabis Industry Act, 2019: bill text (Aug 29 2019)",
+   "url": "https://www.barbadosparliament.com/uploads/document/16615de36c201de4f6e17c022cd7f454.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bb-today-2025",
+   "kind": "news",
+   "publisher": "Barbados Today",
+   "title": "Barbados officially opens first licensed medicinal cannabis therapeutics facility (Jun 14 2025)",
+   "url": "https://barbadostoday.bb/2025/06/14/barbados-officially-opens-first-licensed-medicinal-cannabis-therapeutics-facility/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bb-sca-2019",
+   "kind": "statute",
+   "publisher": "Parliament of Barbados",
+   "title": "Sacramental Cannabis Act, 2019: sixth draft bill (Nov 22 2019)",
+   "url": "https://www.barbadosparliament.com/uploads/bill_resolution/c4433732d6d7e8242403e549be66dcae.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bb-today-2026",
+   "kind": "news",
+   "publisher": "Barbados Today",
+   "title": "Judge upholds cannabis restrictions as constitutional (Jul 31 2026)",
+   "url": "https://barbadostoday.bb/2026/07/31/judge-upholds-cannabis-restrictions-as-constitutional/",
    "retrieved_on": "2026-11-19"
   }
  ]

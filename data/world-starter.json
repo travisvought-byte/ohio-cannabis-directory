@@ -210,22 +210,6 @@
     }
    ]
   },
-  "BB": {
-   "name": "Barbados",
-   "page": "world-barbados.html",
-   "fcdo_title": "Barbados",
-   "source_id": "fcdo-barbados",
-   "updated": "2026-01-23",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs penalties",
-     "paragraphs": [
-      "It is illegal to possess drugs. There are severe penalties for all drug offences. Pack your luggage yourself and do not carry anything through customs for anyone else."
-     ]
-    }
-   ]
-  },
   "BY": {
    "name": "Belarus",
    "page": "world-belarus.html",
@@ -2661,14 +2645,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Bangladesh travel advice (last updated by the FCDO 2026-10-22)",
    "url": "https://www.gov.uk/foreign-travel-advice/bangladesh",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-barbados",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Barbados travel advice (last updated by the FCDO 2026-01-23)",
-   "url": "https://www.gov.uk/foreign-travel-advice/barbados",
    "retrieved_on": "2026-11-20"
   },
   {
