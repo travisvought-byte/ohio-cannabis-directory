@@ -2744,6 +2744,90 @@
      "Cannabis medicines are available, but flower is not, after a 2019 health council report found no evidence for it."
     ]
    }
+  },
+  "DK": {
+   "name": "Denmark",
+   "page": "world-denmark.html",
+   "summary": "Illegal. Possession for your own use is normally a fine, starting at 2,000 kroner for under 10 grams. Fines double in designated penalty zones. Medical cannabis, including dried flower, has been prescribed since 2018, and the scheme became permanent on January 1, 2026.",
+   "note": "Danish sources are summarized in English. Amounts are in Danish kroner (DKK).",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No. Possession is an offence",
+     "detail": "Breaking the Act on Euphoriant Substances is punishable by a fine or up to two years in prison. Possession for your own use is, as a clear rule, punished with a fine from the prosecutors' standard table, and the cannabis is confiscated.",
+     "citation": "Rigsadvokatmeddelelsen om narkotika (Apr 2026); Lovguiden",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "dk-rigsadvokat-2026",
+      "dk-lovguiden-eget-brug"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Yes, prescribed and sold by pharmacies",
+     "detail": "A trial began on January 1, 2018 and was made permanent from January 1, 2026. Any doctor can prescribe for pain; for multiple sclerosis, spinal cord injury or chemotherapy nausea the guidance points to the relevant specialist. Products include dried flower, oil and capsules, dispensed by pharmacies on an electronic prescription covering at most a month. The state subsidy covers 50% of the first 20,000 kroner a year, so at most 10,000 kroner. Patients prove lawful possession with the prescription, the pharmacy-labelled pack and the receipt.",
+     "citation": "Lovguiden, Medicinsk cannabis (compilation)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "dk-lovguiden-medicinsk"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Under 10 grams: a 2,000-kroner fine",
+     "detail": "Up to about 10 grams of hash or cannabis is presumed to be for your own use. Fines for a first offence are 2,000 kroner under 10 grams, 3,000 from 10 to 49.9 grams and 5,000 from 50 to 99.9 grams; they rise by half for a second offence and double from the third. From 100 grams the starting point is prison. Fines are lower for under-18s and people on very low incomes. In designated penalty zones the fine is doubled, and a repeat offence there normally means prison.",
+     "citation": "Rigsadvokatmeddelelsen om narkotika (Apr 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "dk-rigsadvokat-2026"
+     ]
+    },
+    "sharing": {
+     "status": "not-permitted",
+     "short": "No. Selling small amounts doubles the fine",
+     "detail": "Selling under 50 grams of hash can be fined for a first offence, generally at double the possession fine, but organised selling, such as through known sales points or phone-order couriers, can mean prison even the first time. Patients may not share their medical cannabis.",
+     "citation": "Rigsadvokatmeddelelsen om narkotika (Apr 2026); Lovguiden, Medicinsk cannabis",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "dk-rigsadvokat-2026",
+      "dk-lovguiden-medicinsk"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "No. Plants are fined by weight",
+     "detail": "Cannabis plants are treated as a separate category in the fine table: a first offence costs 2,000 kroner for under 99.9 grams of plant material, 3,000 for 100 to 249.9 grams and 5,000 for 250 to 999.9 grams. The own-use guideline for plants is 100 grams.",
+     "citation": "Lovguiden, fine table under § 3 of the Act on Euphoriant Substances",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "dk-lovguiden-eget-brug"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "Zero tolerance: 0.001 mg THC per kg of blood",
+     "detail": "It is an offence to drive with more than 0.001 milligrams of THC per kilogram of blood, unless it was taken under a lawful prescription. Even then, a patient who is unfit to drive can be prosecuted, and official guidance recommends that doctors ban patients in the medical scheme from driving for the whole treatment period.",
+     "citation": "Lovguiden, Medicinsk cannabis and færdselsloven § 54",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "dk-lovguiden-medicinsk"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about Denmark",
+    "source_ids": [
+     "dk-rigsadvokat-2026",
+     "dk-lovguiden-eget-brug",
+     "dk-lovguiden-medicinsk"
+    ],
+    "points": [
+     "Prosecutors publish a fixed fine table, so the fine depends on the weight and on how many times you have been caught.",
+     "Police can designate penalty zones where fines are doubled; a case over 117 grams of hash in Christiania's Pusher Street went to the top courts on how that doubling works.",
+     "Medical patients can get dried flower from pharmacies, but the subsidy stops at 10,000 kroner a year.",
+     "The THC driving limit is effectively zero, and patients are usually told not to drive at all during treatment."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -3073,7 +3157,8 @@
     "NZ",
     "IE",
     "FR",
-    "AT"
+    "AT",
+    "DK"
    ]
   }
  ],
@@ -5354,6 +5439,30 @@
    "publisher": "praktischArzt.at (medical portal)",
    "title": "Cannabis-based medicines in Austria",
    "url": "https://www.praktischarzt.at/?p=62807",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "dk-rigsadvokat-2026",
+   "kind": "government",
+   "publisher": "Rigsadvokaten (Director of Public Prosecutions), via Retsinformation",
+   "title": "Rigsadvokatmeddelelsen, afsnit Narkotika (CIR1H nr 9362, Apr 1 2026)",
+   "url": "https://www.retsinformation.dk/api/pdf/256033",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "dk-lovguiden-eget-brug",
+   "kind": "compilation",
+   "publisher": "Lovguiden",
+   "title": "Bødetakster, mængdegrænser og advarselsordning efter lov om euforiserende stoffer § 3",
+   "url": "https://www.lovguiden.dk/praksisoversigt/narkotika-eget-brug",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "dk-lovguiden-medicinsk",
+   "kind": "compilation",
+   "publisher": "Lovguiden",
+   "title": "Medicinsk cannabis: ordineringsret, lovlig besiddelse og færdselslovens § 54",
+   "url": "https://www.lovguiden.dk/praksisoversigt/socialret/medicinsk-cannabis-patienter-og-laeger",
    "retrieved_on": "2026-11-19"
   }
  ]
