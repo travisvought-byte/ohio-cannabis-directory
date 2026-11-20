@@ -2849,11 +2849,12 @@
     "medical": {
      "status": "allowed",
      "short": "Pharmacy products on prescription, or import",
-     "detail": "Anvisa rule RDC 1.015/2026 replaced RDC 327/2019 and took effect on May 4, 2026. Authorised cannabis products are dispensed by a pharmacist in pharmacies and drugstores. Doctors and dentists can prescribe them when no registered medicine is a satisfactory alternative. Products with up to 0.2% THC need a special control prescription; above 0.2% THC needs a Notificação de Receita A, and those products are limited to serious debilitating or life-threatening conditions. Separately, a patient can apply to Anvisa to import a product for personal use under RDC 660/2022.",
-     "citation": "Anvisa, Q&A on RDC 1.015/2026 (Jul 20 2026), arts. 5, 35-37; CFF (Mar 9 2026)",
+     "detail": "Anvisa rule RDC 1.015/2026 replaced RDC 327/2019 and took effect on May 4, 2026. Authorised cannabis products are dispensed by a pharmacist in pharmacies and drugstores. Doctors and dentists can prescribe them when no registered medicine is a satisfactory alternative. Products with up to 0.2% THC need a special control prescription; above 0.2% THC needs a Notificação de Receita A, and those products are limited to serious debilitating or life-threatening conditions. The 2026 rule named fibromyalgia and lupus among the qualifying conditions and added skin, under-the-tongue, cheek and inhaled forms. Separately, a patient can apply to Anvisa to import a product for personal use under RDC 660/2022.",
+     "citation": "Anvisa, Q&A on RDC 1.015/2026 (Jul 20 2026), arts. 5, 35-37; Anvisa (Feb 3 2026); CFF (Mar 9 2026)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
       "br-anvisa-qa1015",
+      "br-anvisa-2026",
       "br-cff-1015"
      ]
     },
@@ -2895,13 +2896,13 @@
      "status": "limited",
      "short": "Six female plants presumed personal; medical growers go to court",
      "detail": "The Drug Law treats growing a small amount for your own use the same way as possession (article 28, paragraph 1), and the Supreme Court's presumption covers six female plants, so this is handled outside criminal law but is not legal. Patients who grow for treatment have won habeas corpus orders (salvo-conduto) from the Superior Court of Justice case by case, with proof of medical need; the order is limited to the prescription and bars selling or giving away the plants or extracts. Anvisa's February 2026 rules authorise production only by companies after inspection, plus a separate route for nonprofit patient associations that does not allow commercial sale.",
-     "citation": "Lei 11.343/2006 art. 28 §1; STF Tema 506; STJ (Jun 7 2023); Anvisa via Agência Gov (Feb 3 2026)",
+     "citation": "Lei 11.343/2006 art. 28 §1; STF Tema 506; STJ (Jun 7 2023); Anvisa (Feb 3 2026)",
      "reviewed_on": "2026-11-19",
      "source_ids": [
       "br-lei11343",
       "br-tjmg-tema506",
       "br-stj-salvo",
-      "br-agenciagov-2026"
+      "br-anvisa-2026"
      ]
     },
     "driving": {
@@ -2941,7 +2942,7 @@
    "experiment": {
     "text": "Anvisa's 2026 update opens a possible path for compounding pharmacies to prepare cannabis products, but a specific rule still has to be written and approved before that can happen.",
     "source_ids": [
-     "br-agenciagov-2026"
+     "br-anvisa-2026"
     ]
    },
    "differences": {
@@ -2950,7 +2951,7 @@
      "br-stf-tema506",
      "br-tjmg-tema506",
      "br-stj-salvo",
-     "br-agenciagov-2026"
+     "br-anvisa-2026"
     ],
     "points": [
      "The change came from the Supreme Court, not Congress. The 40-gram line applies until Congress passes its own rule.",
@@ -5714,6 +5715,46 @@
    "retrieved_on": "2026-11-19"
   },
   {
+   "id": "ar-ley23737",
+   "kind": "statute",
+   "publisher": "Argentina.gob.ar (InfoLEG updated text)",
+   "title": "Ley 23.737, Régimen penal de estupefacientes, texto actualizado (retrieved Nov 19 2026)",
+   "url": "https://www.argentina.gob.ar/normativa/nacional/norma-138/actualizacion",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ar-res1780",
+   "kind": "government",
+   "publisher": "Ministerio de Salud de la Nación, via Argentina.gob.ar",
+   "title": "Resolución 1780/2025, REPROCANN medical cannabis registry (signed May 22 2025; Boletín Oficial May 23 2025)",
+   "url": "https://www.argentina.gob.ar/normativa/nacional/norma-413121/texto",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ar-arriola-pgn",
+   "kind": "government",
+   "publisher": "Procuración General de la Nación, dictamen (copy in the Ministerio Público de la Defensa repository)",
+   "title": "F., S. D. s/ causa n° 338/2013: opinion applying the Supreme Court's Arriola ruling (Mar 5 2015)",
+   "url": "https://repositorio.mpd.gov.ar/documentos/FV,%20S.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ar-diariojudicial-2019",
+   "kind": "news",
+   "publisher": "Diario Judicial",
+   "title": "A 10 años de Arriola (Aug 19 2019)",
+   "url": "https://www.diariojudicial.com/news-84214-a-10-anos-de-arriola",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ar-ley27714",
+   "kind": "statute",
+   "publisher": "Argentina.gob.ar (InfoLEG)",
+   "title": "Ley 27.714, amending article 48 of the Ley de Tránsito 24.449 (Boletín Oficial May 3 2023)",
+   "url": "https://www.argentina.gob.ar/normativa/nacional/383043/texto",
+   "retrieved_on": "2026-11-19"
+  },
+  {
    "id": "br-stf-tema506",
    "kind": "government",
    "publisher": "Supremo Tribunal Federal (STF)",
@@ -5754,11 +5795,11 @@
    "retrieved_on": "2026-11-19"
   },
   {
-   "id": "br-agenciagov-2026",
+   "id": "br-anvisa-2026",
    "kind": "government",
-   "publisher": "Agência Gov (EBC), via Anvisa",
-   "title": "Anvisa publica no Diário Oficial as novas regras para produção de cannabis medicinal (Feb 3 2026)",
-   "url": "https://agenciagov.ebc.com.br/noticias/202602/anvisa-publica-regras-para-producao-de-cannabis-medicinal",
+   "publisher": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+   "title": "Anvisa publica regras para produção de cannabis medicinal: RDCs 1.012 to 1.015/2026 (Feb 3 2026)",
+   "url": "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-publica-regras-para-producao-de-cannabis-medicinal",
    "retrieved_on": "2026-11-19"
   },
   {
@@ -5783,46 +5824,6 @@
    "publisher": "Vrum (Estado de Minas)",
    "title": "Com maconha descriminalizada, dirigir sob efeito ainda é crime (Sep 2024)",
    "url": "https://www.vrum.com.br/aceleradas/2024/09/6948717-com-maconha-descriminalizada-dirigir-sob-efeito-ainda-e-crime.html",
-   "retrieved_on": "2026-11-19"
-  },
-  {
-   "id": "ar-ley23737",
-   "kind": "statute",
-   "publisher": "Argentina.gob.ar (InfoLEG updated text)",
-   "title": "Ley 23.737, Régimen penal de estupefacientes, texto actualizado (retrieved Nov 19 2026)",
-   "url": "https://www.argentina.gob.ar/normativa/nacional/norma-138/actualizacion",
-   "retrieved_on": "2026-11-19"
-  },
-  {
-   "id": "ar-res1780",
-   "kind": "government",
-   "publisher": "Ministerio de Salud de la Nación, via Argentina.gob.ar",
-   "title": "Resolución 1780/2025, REPROCANN medical cannabis registry (signed May 22 2025; Boletín Oficial May 23 2025)",
-   "url": "https://www.argentina.gob.ar/normativa/nacional/norma-413121/texto",
-   "retrieved_on": "2026-11-19"
-  },
-  {
-   "id": "ar-arriola-pgn",
-   "kind": "government",
-   "publisher": "Procuración General de la Nación, dictamen (copy in the Ministerio Público de la Defensa repository)",
-   "title": "F., S. D. s/ causa n° 338/2013: opinion applying the Supreme Court's Arriola ruling (Mar 5 2015)",
-   "url": "https://repositorio.mpd.gov.ar/documentos/FV,%20S.pdf",
-   "retrieved_on": "2026-11-19"
-  },
-  {
-   "id": "ar-diariojudicial-2019",
-   "kind": "news",
-   "publisher": "Diario Judicial",
-   "title": "A 10 años de Arriola (Aug 19 2019)",
-   "url": "https://www.diariojudicial.com/news-84214-a-10-anos-de-arriola",
-   "retrieved_on": "2026-11-19"
-  },
-  {
-   "id": "ar-ley27714",
-   "kind": "statute",
-   "publisher": "Argentina.gob.ar (InfoLEG)",
-   "title": "Ley 27.714, amending article 48 of the Ley de Tránsito 24.449 (Boletín Oficial May 3 2023)",
-   "url": "https://www.argentina.gob.ar/normativa/nacional/383043/texto",
    "retrieved_on": "2026-11-19"
   }
  ]
