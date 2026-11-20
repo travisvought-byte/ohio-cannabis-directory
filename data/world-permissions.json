@@ -3075,6 +3075,122 @@
      "Driving rules are strict: zero alcohol and no driving after drugs that reduce driving ability."
     ]
    }
+  },
+  "CL": {
+   "name": "Chile",
+   "page": "world-chile.html",
+   "summary": "Holding small amounts for your own use soon is exempt from the drug law's criminal penalties, but using or carrying cannabis in public is a minor offence punished with fines, programmes or community work. Since 2023 a doctor's prescription justifies growing cannabis for medical treatment, as long as it is not smoked. There is no legal market.",
+   "note": "Spanish sources are summarized in English. Court rulings shape much of this law.",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "Private personal use is not punished; public use is",
+     "detail": "Law 20.000 exempts small amounts held for \"exclusive personal use, close in time\" from its criminal penalty for small quantities. Using, carrying or holding drugs in public places such as streets, parks, bars or stadiums, or in schools, is a minor offence under article 50, and so is private use by people who arranged to meet for it. The penalty is a fine of 1 to 10 UTM (a monthly tax unit), a prevention programme of up to 60 days or treatment of up to 180 days, or up to 30 hours of community work, plus a driving licence suspension. There is no legal sale.",
+     "citation": "Ley 20.000 arts. 4 and 50",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cl-ley20000",
+      "cl-art50-iura"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "A prescription justifies growing; some medicines are registered",
+     "detail": "Law 21.575, published May 23 2023, added to article 8 of Law 20.000 that growing cannabis for medical treatment is justified with a prescription from the treating physician. The prescription must state the diagnosis, the treatment and its duration, and the form of administration, which cannot be by combustion. Forging a prescription or knowingly using a false one carries a prison term. Separately, the Public Health Institute (ISP) registered a CBD medicine, Convupidiol, in 2022, sold in pharmacies with a retained prescription.",
+     "citation": "Ley 21.575 (Diario Oficial May 23 2023), art. 1 no. 4; Mediabanco (news, Sep 26 2022)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cl-ley21575",
+      "cl-mediabanco-cbd"
+     ]
+    },
+    "buying": {
+     "status": "medical-only",
+     "short": "Only registered medicines, on prescription",
+     "detail": "There is no legal adult-use market. Trafficking, which includes selling, importing, transporting or holding drugs without authorisation, carries presidio mayor in its minimum to medium grades and a fine of 40 to 400 UTM under article 3. Registered cannabis medicines are sold in pharmacies on prescription.",
+     "citation": "Ley 20.000 arts. 1 and 3; Mediabanco (news, Sep 26 2022)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cl-ley20000",
+      "cl-mediabanco-cbd"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "Small amounts for your own use are exempt",
+     "detail": "Holding, carrying or transporting small amounts without authorisation carries presidio menor in its medium to maximum grades and a fine of 10 to 40 UTM under article 4, unless the amount is for medical treatment or for exclusive personal use close in time. Whether possession is personal is judged from the circumstances. Carrying it in public for your own use is still the article 50 minor offence.",
+     "citation": "Ley 20.000 arts. 4 and 50",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cl-ley20000",
+      "cl-art50-iura"
+     ]
+    },
+    "sharing": {
+     "status": "not-permitted",
+     "short": "Passing it on is a crime",
+     "detail": "Transferring or supplying small amounts so another person can use them carries the same penalty as unauthorised small-quantity possession: presidio menor in its medium to maximum grades and a fine of 10 to 40 UTM. Private use by people who arranged to use together is an article 50 minor offence.",
+     "citation": "Ley 20.000 arts. 4 and 50",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cl-ley20000",
+      "cl-art50-iura"
+     ]
+    },
+    "home-grow": {
+     "status": "limited",
+     "short": "Personal growing gets minor penalties; medical growing is justified",
+     "detail": "Growing cannabis without authorisation from the Agriculture and Livestock Service (SAG) carries presidio menor in its maximum grade to presidio mayor in its minimum grade and a fine of 40 to 400 UTM under article 8. If the plants are for exclusive personal use close in time, only the article 50 minor-offence penalties apply. Since 2023, growing for medical treatment with a qualifying prescription is justified. Courts apply that exception strictly: in December 2025 the Supreme Court upheld a conviction where the plants and set-up went beyond personal use.",
+     "citation": "Ley 20.000 arts. 8 and 9; Ley 21.575; Diario Constitucional (news, Dec 29 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cl-ley20000",
+      "cl-ley21575",
+      "cl-dc-2025"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "Driving under the influence is banned",
+     "detail": "The Traffic Law (Law 18.290) bans driving under the influence of narcotic or psychotropic substances, as it does with alcohol. Drivers in crashes with injuries or deaths must take a breath test or another test, and refusing without reason can be treated by the judge as evidence of being under the influence.",
+     "citation": "Ley 18.290, as summarized by SENDA Boletín N° 3",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cl-senda-driving"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "Importing counts as trafficking",
+     "detail": "Importing or exporting drugs without authorisation is treated as trafficking under article 3 of Law 20.000, with presidio mayor in its minimum to medium grades and a fine of 40 to 400 UTM.",
+     "citation": "Ley 20.000 art. 3",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cl-ley20000"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "A public-use offence can cost you your driving licence even if you were not driving: article 50 adds a suspension of up to six months, up to a year for a repeat offence, and up to two years after that.",
+    "source_ids": [
+     "cl-art50-iura"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Chile",
+    "source_ids": [
+     "cl-ley20000",
+     "cl-ley21575",
+     "cl-art50-iura",
+     "cl-dc-2025"
+    ],
+    "points": [
+     "The line is drawn by place: private personal use is not punished, while public use is a minor offence.",
+     "Since 2023 a prescription alone can justify medical home growing, but smoking is excluded.",
+     "Cultivation licences come from the agriculture service, SAG.",
+     "Courts read the medical exception strictly when grows look larger than one patient needs."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -3393,7 +3509,8 @@
     "BE",
     "IT",
     "BR",
-    "AR"
+    "AR",
+    "CL"
    ]
   },
   {
@@ -5824,6 +5941,54 @@
    "publisher": "Vrum (Estado de Minas)",
    "title": "Com maconha descriminalizada, dirigir sob efeito ainda é crime (Sep 2024)",
    "url": "https://www.vrum.com.br/aceleradas/2024/09/6948717-com-maconha-descriminalizada-dirigir-sob-efeito-ainda-e-crime.html",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cl-ley20000",
+   "kind": "statute",
+   "publisher": "Ministerio del Interior y Seguridad Pública (copy of the BCN text)",
+   "title": "Ley 20.000, tráfico ilícito de estupefacientes (version in force from Feb 21 2011; copy generated Apr 8 2014)",
+   "url": "https://divdecar.interior.gob.cl/media/2021/04/LEY-20000.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cl-ley21575",
+   "kind": "statute",
+   "publisher": "Diario Oficial de la República de Chile",
+   "title": "Ley 21.575, amending Ley 20.000 including article 8 on medical cultivation (May 23 2023)",
+   "url": "https://www.diariooficial.interior.gob.cl/publicaciones/2023/05/23/43558-B/01/2319485.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cl-art50-iura",
+   "kind": "compilation",
+   "publisher": "Iura.cl (from BCN text)",
+   "title": "Ley 20.000, artículo 50: consumption and possession in public places (page generated Aug 5 2026)",
+   "url": "https://www.iura.cl/20000/50",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cl-senda-driving",
+   "kind": "government",
+   "publisher": "SENDA (Servicio Nacional para la Prevención y Rehabilitación del Consumo de Drogas y Alcohol)",
+   "title": "Boletín N° 3: Efectos de las drogas en la conducción de vehículos motorizados (uploaded May 2024)",
+   "url": "https://academiasenda.gob.cl/wp-content/uploads/2024/05/Efectos-de-las-drogas-en-la-conduccion-de-vehiculos-motorizados.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cl-mediabanco-cbd",
+   "kind": "news",
+   "publisher": "Mediabanco",
+   "title": "ISP autoriza venta en Chile de primer producto farmacéutico de cannabidiol (Sep 26 2022)",
+   "url": "https://www.mediabanco.com/isp-autoriza-venta-en-chile-de-primer-producto-farmaceutico-de-cannabidiol-cbd/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cl-dc-2025",
+   "kind": "news",
+   "publisher": "Diario Constitucional",
+   "title": "Corte Suprema ratifica condena por cultivo ilegal de cannabis en Cañete (Dec 29 2025)",
+   "url": "https://www.diarioconstitucional.cl/2025/12/29/corte-suprema-ratifica-condena-por-cultivo-ilegal-de-cannabis-en-canete/",
    "retrieved_on": "2026-11-19"
   }
  ]

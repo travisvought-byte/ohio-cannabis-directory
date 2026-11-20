@@ -357,8 +357,8 @@
 "iso": "CL",
 "name": "Chile",
 "display": "Chile",
-"status": "queued",
-"page": null,
+"status": "deep",
+"page": "world-chile.html",
 "queue": 26
 },
 {
