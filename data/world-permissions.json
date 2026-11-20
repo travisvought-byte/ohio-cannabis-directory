@@ -3281,6 +3281,88 @@
      "Patients cannot grow alone, but registered patients can grow together through a licensed association."
     ]
    }
+  },
+  "EC": {
+   "name": "Ecuador",
+   "page": "world-ecuador.html",
+   "summary": "The 2008 Constitution bars treating drug use as a crime, and possession for personal use is not punishable if it is proven. But the 10-gram threshold for marijuana was repealed in November 2023, and since June 2025 personal use is never presumed: prosecutors and judges decide case by case, with toxicology or psychological exams. Only cannabis under 1% THC is outside drug control, grown and sold under licence.",
+   "note": "Spanish sources are summarized in English. Several points here rely on news reports; official texts were not all reachable.",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "Use is not a crime; there is no legal market",
+     "detail": "The 2008 Constitution prohibits criminalising drug use. Under article 220 of the Penal Code (COIP), as reformed by the Organic Law of National Solidarity in June 2025, possession for personal use that is properly proven is not punishable, and the state is to offer addiction care. There is no legal sale of psychoactive cannabis.",
+     "citation": "COIP art. 220 as reformed in June 2025 (reported by Vistazo); OECO/PADF (2025) on the Constitution",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ec-vistazo-solidaridad",
+      "ec-oeco-2025"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Low-THC products only; stronger medicines are controlled",
+     "detail": "A reform of the COIP removed non-psychoactive cannabis and hemp, meaning under 1% THC by dry weight, from the list of controlled substances. Finished products for human use need a sanitary registration from ARCSA, the health regulator, and raw material must come from growers licensed by the Agriculture Ministry. Medicines with 1% THC or more are regulated as controlled medicines.",
+     "citation": "MAG Acuerdo Ministerial 003 (Jan 10 2025), citing the COIP reform; Vistazo on ARCSA rules (Mar 5 2021)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ec-mag-am003",
+      "ec-vistazo-arcsa"
+     ]
+    },
+    "buying": {
+     "status": "limited",
+     "short": "Only registered low-THC products",
+     "detail": "Products made from cannabis under 1% THC can be imported and sold once they have an ARCSA sanitary registration and a certificate of THC content. There is no legal sale of psychoactive cannabis.",
+     "citation": "Vistazo on ARCSA rules (Mar 5 2021); MAG Acuerdo Ministerial 003",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ec-vistazo-arcsa",
+      "ec-mag-am003"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "No fixed amount; personal use must be proven",
+     "detail": "From 2013 a reference table treated up to 10 grams of marijuana as personal use. The government repealed that table by executive decree in November 2023. Since June 2025 the COIP says consumption is never presumed: toxicology and/or psychological exams must come before a decision, and the fiscal or judge decides whether the drugs were for personal use or trafficking. New parameters are to be set by a joint resolution of the Health Ministry, the Prosecutor's Office and the Judicial Council. In December 2023 the National Court of Justice said quantity alone cannot prove trafficking.",
+     "citation": "COIP arts. 220 and 228 as reformed in June 2025 (Vistazo); OECO/PADF (2025); El Universo (Dec 26 2023)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ec-vistazo-solidaridad",
+      "ec-oeco-2025",
+      "ec-eluniverso-cnj"
+     ]
+    },
+    "home-grow": {
+     "status": "limited",
+     "short": "Only under-1% THC plants",
+     "detail": "The Agriculture Ministry licenses commercial growing of non-psychoactive cannabis and industrial hemp through seven licence types. Its 2025 regulation says self-cultivation of non-psychoactive cannabis and hemp for personal, non-commercial use is not a commercial activity, and it sets no licence for that. No legal route to grow cannabis at 1% THC or more was found.",
+     "citation": "MAG Acuerdo Ministerial 003 (Jan 10 2025), arts. 3, 5 and 6",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ec-mag-am003"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "Under the June 2025 reform, a person found with drugs is not presumed to be a user. The exams that decide it, toxicology and/or psychological, come before the prosecutor's or judge's decision.",
+    "source_ids": [
+     "ec-vistazo-solidaridad"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Ecuador",
+    "source_ids": [
+     "ec-oeco-2025",
+     "ec-vistazo-solidaridad",
+     "ec-mag-am003"
+    ],
+    "points": [
+     "The Constitution itself bars criminalising drug use.",
+     "Ecuador had a 10-gram reference amount for marijuana and repealed it in 2023, moving to case-by-case exams.",
+     "Legal cannabis means the under-1% THC plant, regulated by the Agriculture Ministry and ARCSA."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -3601,7 +3683,8 @@
     "BR",
     "AR",
     "CL",
-    "PE"
+    "PE",
+    "EC"
    ]
   },
   {
@@ -6112,6 +6195,46 @@
    "publisher": "Municipalidad Provincial de Huaraz, Sub Gerencia de Transportes",
    "title": "Resolución N° 000444-2025-MPHZ/GM/SGT applying infraction M01 of the Reglamento Nacional de Tránsito (Feb 25 2025)",
    "url": "https://cdn.www.gob.pe/uploads/document/file/7801420/6585297-resolucion-sub-gerencial-n-444-2025-mphz-gm-sgt.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ec-vistazo-solidaridad",
+   "kind": "news",
+   "publisher": "Vistazo",
+   "title": "Con la eliminación de tabla de drogas y la nueva ley, ¿cómo se diferenciará entre el consumidor y el traficante? (Jun 25 2025)",
+   "url": "https://www.vistazo.com/amp/politica/nacional/2025-06-25-eliminacion-tabla-drogas-cambios-consumidor-ecuador-NX9563168",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ec-eluniverso-cnj",
+   "kind": "news",
+   "publisher": "El Universo",
+   "title": "Corte Nacional de Justicia emite parámetros tras la derogatoria de la tabla de drogas (Dec 26 2023)",
+   "url": "https://www.eluniverso.com/noticias/seguridad/quito-derogatoria-tabla-de-drogas-parametros-judiciales-nota/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ec-oeco-2025",
+   "kind": "research",
+   "publisher": "Observatorio Ecuatoriano de Crimen Organizado (OECO), PADF",
+   "title": "Análisis de respuesta del sistema penal a delitos de drogas, short version (2025)",
+   "url": "https://oeco.padf.org/wp-content/uploads/2025/09/Analisis-de-respuesta-Version-corta-Ajustada.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ec-mag-am003",
+   "kind": "government",
+   "publisher": "Ministerio de Agricultura y Ganadería (MAG)",
+   "title": "Acuerdo Ministerial No. 003: Reglamento de producción y procesamiento primario de cannabis no psicoactivo y cáñamo industrial (Jan 10 2025)",
+   "url": "https://agricultura.gob.ec/wp-content/uploads/downloads/2025/01/ac_ministerial_canamo_10.01.2025-signed-signed.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ec-vistazo-arcsa",
+   "kind": "news",
+   "publisher": "Vistazo",
+   "title": "¿Qué debes saber si quieres producir y comercializar productos con cáñamo en Ecuador? (Mar 5 2021)",
+   "url": "https://www.vistazo.com/amp/actualidad/nacional/que-debes-saber-si-quieres-producir-y-comercializar-productos-con-canamo-en-ecuador-NGVI225686",
    "retrieved_on": "2026-11-19"
   }
  ]

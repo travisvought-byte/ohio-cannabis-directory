@@ -517,8 +517,8 @@
 "iso": "EC",
 "name": "Ecuador",
 "display": "Ecuador",
-"status": "queued",
-"page": null,
+"status": "deep",
+"page": "world-ecuador.html",
 "queue": 28
 },
 {
