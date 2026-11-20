@@ -5299,6 +5299,73 @@
      "On paper, possession of under a pound can still mean years in prison."
     ]
    }
+  },
+  "BZ": {
+   "name": "Belize",
+   "page": "world-belize.html",
+   "summary": "Since November 2017, possessing 10 grams or less of cannabis is not an offence, except on school premises, and smoking that amount is allowed at your own home, someone else's home with their consent, or a hotel room with the manager's consent. Anything beyond that is still under the Misuse of Drugs Act, and there is no legal market.",
+   "note": "Amounts are in Belize dollars.",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "Allowed in private for 10 grams or less",
+     "detail": "The 2017 amendment exempts smoking or using cannabis, and having a pipe for it, where the total is 10 grams or less and it happens at your own residence, at another person's residence with their consent, or in guest accommodation such as a hotel room with the proprietor's or manager's consent. Each household on a property counts as separate premises. A person under 18 found with cannabis must join an approved drug treatment or counselling programme.",
+     "citation": "Misuse of Drugs (Amendment) Act 2017, ss. 3 and 6 (new s. 7(7)-(9), s. 12(2)-(3))",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bz-act-2017"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales",
+     "detail": "The 2017 amendment changed possession and private use only; it did not create any lawful way to buy or sell cannabis.",
+     "citation": "Misuse of Drugs (Amendment) Act 2017",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bz-act-2017"
+     ]
+    },
+    "possession": {
+     "status": "allowed",
+     "short": "10 grams or less is not an offence",
+     "detail": "Possessing 10 grams or less of cannabis or cannabis resin is not unlawful. On school premises it is a contravention instead: a police warning the first time, then a $100 violation ticket, with no arrest and no criminal record.",
+     "citation": "Misuse of Drugs (Amendment) Act 2017, s. 3 (new s. 7(7)-(9))",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bz-act-2017"
+     ]
+    },
+    "record-relief": {
+     "status": "limited",
+     "short": "Expungement provision, with a repeal bill pending",
+     "detail": "Section 28B, added in 2017, lets a person convicted of cannabis possession with a fine of $1,000 or less apply to have the conviction removed from police records. A 2024 bill would repeal section 28B; whether it passed was not confirmed.",
+     "citation": "Misuse of Drugs (Amendment) Act 2017, s. 8 (new s. 28B); Misuse of Drugs (Amendment) Bill 2024",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bz-act-2017",
+      "bz-bill-2024"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "The private-use exemption reaches hotel rooms too, but only with the consent of the proprietor or manager.",
+    "source_ids": [
+     "bz-act-2017"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Belize",
+    "source_ids": [
+     "bz-act-2017",
+     "bz-bill-2024"
+    ],
+    "points": [
+     "Private use is defined by place: homes and consenting hotels, not public spaces.",
+     "Possession at school gets a warning and then a ticket, not a criminal charge.",
+     "A 2017 expungement route may be repealed by a 2024 bill."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -5633,7 +5700,8 @@
     "TT",
     "GD",
     "LC",
-    "DM"
+    "DM",
+    "BZ"
    ]
   },
   {
@@ -9169,6 +9237,22 @@
    "publisher": "Parliament of the Cayman Islands",
    "title": "Private Member's Motion No. 2 of 2024-2025: Motion to Expunge Criminal Records (passed Oct 9 2024)",
    "url": "https://parliament.ky/wp-content/uploads/2024/10/PMM-No.-2-Motion-to-Expunge-Criminal-Records__PASSED-9.10.24.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bz-act-2017",
+   "kind": "statute",
+   "publisher": "Government of Belize (gazetted copy hosted by the OAS)",
+   "title": "Misuse of Drugs (Amendment) Act, 2017, No. 47 of 2017 (assented Nov 2 2017; gazetted Nov 4 2017)",
+   "url": "https://oas.org/ext/Portals/33/adam/Content/1LAvBxqRKUevbza4NS5FZw/Text/Act-No.-47-of-2017-Misuse-of-Drugs-Amendment-Act-2017.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bz-bill-2024",
+   "kind": "statute",
+   "publisher": "National Assembly of Belize",
+   "title": "Misuse of Drugs (Amendment) Bill, 2024: repeal of section 28B (published Sep 2024)",
+   "url": "https://nationalassembly.gov.bz/wp-content/uploads/2024/09/Misuse-of-Drugs-Amendment-Bill-2024.pdf",
    "retrieved_on": "2026-11-19"
   }
  ]

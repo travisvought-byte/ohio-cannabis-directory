@@ -211,22 +211,6 @@
     }
    ]
   },
-  "BZ": {
-   "name": "Belize",
-   "page": "world-belize.html",
-   "fcdo_title": "Belize",
-   "source_id": "fcdo-belize",
-   "updated": "2026-11-05",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "Possession of illegal drugs can lead to a fine and prison sentence."
-     ]
-    }
-   ]
-  },
   "BJ": {
    "name": "Benin",
    "page": "world-benin.html",
@@ -2549,14 +2533,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Belarus travel advice (last updated by the FCDO 2026-09-10)",
    "url": "https://www.gov.uk/foreign-travel-advice/belarus",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-belize",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Belize travel advice (last updated by the FCDO 2026-11-05)",
-   "url": "https://www.gov.uk/foreign-travel-advice/belize",
    "retrieved_on": "2026-11-20"
   },
   {
