@@ -2565,6 +2565,102 @@
      "Medical cannabis exists only as an experiment that stopped taking new patients at the end of 2024; about 700 patients still receive it."
     ]
    }
+  },
+  "IT": {
+   "name": "Italy",
+   "page": "world-italy.html",
+   "summary": "Possession for personal use is not a crime but brings administrative penalties, such as losing your driving licence or passport for a few months. Italy's highest court has held that growing a few plants at home for yourself is not a crime. Doctors can prescribe medical cannabis, including flower grown by a military pharmaceutical plant.",
+   "note": "Italian sources are summarized in English.",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "Not a crime, but punished administratively",
+     "detail": "Possession is never allowed by Italian law, a prefecture FAQ stresses. If the amount is small and nothing suggests sale or giving it to others, it is treated as personal use and reported to the Prefect, who can impose administrative penalties under article 75 of the 1990 drug law.",
+     "citation": "Prefettura, FAQ on article 75 DPR 309/1990",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "it-prefettura-faq"
+     ]
+    },
+    "medical": {
+     "status": "allowed",
+     "short": "Yes, any doctor can prescribe it",
+     "detail": "Any licensed doctor can prescribe cannabis flower as a magistral preparation on a non-repeatable prescription, with the patient's written informed consent, when standard treatments have failed. Listed uses include chronic and neuropathic pain, spasticity in multiple sclerosis, nausea from chemotherapy, appetite loss, glaucoma and Tourette syndrome. Italy's own flower, Cannabis FM2, is grown by the military pharmaceutical plant in Florence and has been available since December 2016. It is taken as a tea or with a vaporiser, and smoking is advised against. Whether the health service pays depends on the region.",
+     "citation": "Ministry of Health and Defence working group, FM2 prescriber recommendations (Feb 2017)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "it-fm2-recommendations"
+     ]
+    },
+    "buying": {
+     "status": "medical-only",
+     "short": "Only on prescription through pharmacies",
+     "detail": "There is no legal adult market. Selling, offering or giving cannabis to others takes a case outside personal use. Patients get prescribed flower as a pharmacy preparation.",
+     "citation": "Prefettura FAQ; FM2 prescriber recommendations (Feb 2017)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "it-prefettura-faq",
+      "it-fm2-recommendations"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "Personal use: 1 to 3 months without a licence or passport",
+     "detail": "For cannabis, the Prefect can suspend or bar a driving licence, gun permit, passport or ID card valid for travel for one to three months; for other drugs it is two months to a year. On a first report the case can end with a formal warning if the person attends an interview, and completing an agreed treatment or education programme entitles the person to have the measure lifted. Police can also take a driver's licence for 30 days on the spot. Reports stay in the prefecture's files with no expiry.",
+     "citation": "Prefettura, FAQ on article 75 DPR 309/1990",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "it-prefettura-faq"
+     ]
+    },
+    "sharing": {
+     "status": "not-permitted",
+     "short": "No. Giving it away is not personal use",
+     "detail": "Personal use covers only someone's own consumption. Selling, offering or giving cannabis to anyone else falls outside it.",
+     "citation": "Prefettura, FAQ on article 75 DPR 309/1990",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "it-prefettura-faq"
+     ]
+    },
+    "home-grow": {
+     "status": "limited",
+     "short": "A few plants at home is not a crime, per the top court",
+     "detail": "In ruling 12348 of 2020 the joint sections of the Court of Cassation held that very small domestic cultivation falls outside the criminal offence when the techniques are rudimentary, the plants few, the yield very modest, and nothing points to the drug market. The cannabis produced still counts as possession for personal use, so the administrative penalties can apply. Larger grows remain a crime.",
+     "citation": "Studio Cataldi on Cassazione SU n. 12348/2020 (legal news)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "it-studiocataldi-su"
+     ]
+    },
+    "driving": {
+     "status": "not-permitted",
+     "short": "Up to €6,000, arrest and a 1-2 year suspension",
+     "detail": "Since December 14, 2024, article 187 of the Highway Code punishes driving after taking drugs, no longer requiring proof of impairment. Penalties are a fine of €1,500 to €6,000, arrest of six months to a year and a licence suspension of one to two years, doubled if the driver does not own the vehicle. In January 2026 the Constitutional Court upheld the law but read it narrowly: prosecutors must show the substance was taken close enough to driving that it could still impair an average user.",
+     "citation": "Pagella Politica, Dec 13 2024 (news); Corte costituzionale, sentenza 10/2026",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "it-pagella-187",
+      "it-corte-10-2026"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about Italy",
+    "source_ids": [
+     "it-prefettura-faq",
+     "it-studiocataldi-su",
+     "it-fm2-recommendations",
+     "it-corte-10-2026"
+    ],
+    "points": [
+     "Personal use is punished by taking away documents, not by fines or prison: a driving licence or passport can be suspended.",
+     "The penalties are lighter for cannabis than for other drugs: one to three months instead of up to a year.",
+     "Courts, not lawmakers, carved out home growing: a few plants grown with rudimentary means for yourself is not a crime.",
+     "The state grows its own medical cannabis at a military pharmaceutical plant in Florence.",
+     "A 2024 law dropped the need to prove impairment for drug driving, but the Constitutional Court still requires use close to the time of driving."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -2880,7 +2976,8 @@
     "ZA",
     "JM",
     "CO",
-    "BE"
+    "BE",
+    "IT"
    ]
   },
   {
@@ -5101,6 +5198,46 @@
    "publisher": "Assemblée nationale",
    "title": "Amendment No. CL305 to bill No. 2850, article 6 (Jun 18 2026)",
    "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2850/CION_LOIS/CL305.rtf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "it-prefettura-faq",
+   "kind": "government",
+   "publisher": "Prefettura (Ministry of the Interior, Italy)",
+   "title": "FAQ on reports under article 75 of DPR 309/1990",
+   "url": "https://prefettura.interno.gov.it/sites/default/files/5/2024-06/20171215_faq_not.docx",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "it-studiocataldi-su",
+   "kind": "organization",
+   "publisher": "Studio Cataldi (legal news)",
+   "title": "Cassazione: coltivare cannabis in casa non è reato (Apr 18 2020)",
+   "url": "https://www.studiocataldi.it/articoli/38143-cassazione-coltivare-cannabis-in-casa-non-e-reato.asp",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "it-fm2-recommendations",
+   "kind": "government",
+   "publisher": "Ministry of Health and Ministry of Defence working group (via ISS EpiCentro)",
+   "title": "Recommendations for prescribers of Cannabis FM2 flower (Feb 2017)",
+   "url": "https://www.epicentro.iss.it/cannabis-uso-medico/pdf/C_17_pagineAree_4589_listaFile_itemName_2_file.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "it-pagella-187",
+   "kind": "news",
+   "publisher": "Pagella Politica",
+   "title": "Guida e sostanze stupefacenti: che cosa cambia con il nuovo Codice della strada (Dec 13 2024)",
+   "url": "https://pagellapolitica.it/articoli/guida-sostanze-stupefacenti-droga-riforma-codice-strada",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "it-corte-10-2026",
+   "kind": "government",
+   "publisher": "Corte costituzionale",
+   "title": "Sentenza n. 10 del 2026 on article 187 of the Highway Code (filed Jan 29 2026)",
+   "url": "https://www.cortecostituzionale.it/stampa-pdf-pronuncia/2026/10",
    "retrieved_on": "2026-11-19"
   }
  ]
