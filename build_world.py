@@ -8,6 +8,7 @@ reads "Not yet reviewed".
 Called by build_national.pages(); the pages land in national/ beside the state pages.
 """
 import json
+import re
 from pathlib import Path
 
 import build_national as nat
@@ -18,6 +19,7 @@ DATA = ROOT / 'data/world-permissions.json'
 HERITAGE = ROOT / 'data/world-heritage.json'
 ROSTER = ROOT / 'data/world-roster.json'
 NL_SHOPS = ROOT / 'data/world-coffeeshops-nl.json'
+WHERE = ROOT / 'data/world-where-to-buy.json'
 
 CSS = ('<style>.wcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:12px;margin:14px 0}'
        '.wcard{display:block;background:var(--card);border:1px solid var(--line);border-top:5px solid var(--green2);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--ink)}'
@@ -133,6 +135,82 @@ def coffeeshop_section(cs, cites):
     return ''.join(out)
 
 
+def load_where():
+    return json.loads(WHERE.read_text(encoding='utf-8'))
+
+
+FILTER_JS = ('<script>(function(){document.querySelectorAll("input[data-filter]").forEach(function(i){var t=document.getElementById(i.getAttribute("data-filter"));'
+             'var c=document.getElementById(i.getAttribute("data-filter")+"-count");if(!t)return;var rows=t.tBodies[0].rows;i.addEventListener("input",function(){'
+             'var q=i.value.trim().toLowerCase(),n=0;for(var k=0;k<rows.length;k++){var hit=!q||rows[k].textContent.toLowerCase().indexOf(q)>-1;rows[k].hidden=!hit;if(hit)n++}'
+             'if(c)c.textContent=q?n+" of "+rows.length+" match":rows.length+" listed"})})})();</script>')
+
+
+def _cell(key, r):
+    v = r.get(key)
+    if key == 'map':
+        if r.get('lat') is None:
+            return '<span class="muted">No map point</span>'
+        return (f'<a href="https://www.openstreetmap.org/?mlat={r["lat"]}&amp;mlon={r["lon"]}#map=18/{r["lat"]}/{r["lon"]}" target="_blank" rel="noopener">Map</a>')
+    if not v:
+        return ''
+    if key in ('website',):
+        url = v if v.startswith('http') else 'https://' + v
+        label = re.sub(r'^https?://(www\.)?', '', v).rstrip('/')
+        return f'<a href="{nat.esc(url)}" target="_blank" rel="noopener nofollow">{nat.esc(label)}</a>'
+    if key == 'email':
+        return f'<a href="mailto:{nat.esc(v)}">{nat.esc(v)}</a>'
+    if key == 'phone':
+        return f'<a href="tel:{nat.esc(re.sub(r"[^0-9+]", "", v))}">{nat.esc(v)}</a>'
+    return nat.esc(v)
+
+
+def wtb_table(t, cites, searchable):
+    head = ''.join(f'<th scope="col">{nat.esc(label)}</th>' for _, label in t['columns'])
+    rows = ''.join('<tr>' + ''.join((f'<th scope="row">{_cell(k, r)}</th>' if n == 0 else f'<td>{_cell(k, r)}</td>') for n, (k, _) in enumerate(t['columns'])) + '</tr>'
+                   for r in t['rows'])
+    tid = 'wtb-' + t['id']
+    search = (f'<label for="{tid}-q"><strong>Search</strong> by name, street or town</label><br><input id="{tid}-q" class="filter" type="search" data-filter="{tid}" autocomplete="off">'
+              f'<p class="muted" id="{tid}-count" aria-live="polite">{len(t["rows"])} listed</p>') if searchable and len(t['rows']) > 15 else ''
+    note = f'<p class="muted">{nat.esc(t["note"])}</p>' if t.get('note') else ''
+    return (f'<h3 id="{nat.esc(t["id"])}">{nat.esc(t["caption"])}</h3>{note}<p class="muted">Source: {cites.mark(t["source_ids"])}</p>{search}'
+            f'<div class="scroll"><table id="{tid}"><thead><tr>{head}</tr></thead><tbody>{rows}</tbody></table></div>')
+
+
+def where_section(entry, cites, page_link=False):
+    out = [NL_CSS, f'<h2 id="where-to-buy">{nat.esc(entry["heading"])}</h2>', f'<p>{nat.esc(entry["intro"])} {cites.mark(entry["source_ids"])}</p>']
+    for link in entry.get('links', []):
+        out.append(f'<p class="lawnow"><a href="{nat.esc(link["url"])}" target="_blank" rel="noopener">{nat.esc(link["label"])}</a> {cites.mark(link["source_ids"])}</p>')
+    if entry.get('gap'):
+        out.append(f'<p class="muted">{nat.esc(entry["gap"])}</p>')
+    if page_link:
+        total = sum(len(t['rows']) for t in entry['tables'])
+        items = ''.join(f'<li><a href="{nat.esc(entry["page"])}#{nat.esc(t["id"])}">{nat.esc(t["caption"])}</a></li>' for t in entry['tables'])
+        out.append(f'<p><a class="pill" href="{nat.esc(entry["page"])}"><strong>See all {total:,} stores, province by province</strong></a></p><ul>{items}</ul>')
+    else:
+        out.extend(wtb_table(t, cites, True) for t in entry['tables'])
+        if any(len(t['rows']) > 15 for t in entry['tables']):
+            out.append(FILTER_JS)
+    return ''.join(out)
+
+
+def stores_page(world, sources, code, entry):
+    c = world['countries'][code]
+    cites = nat.Cites(sources)
+    pills = ''.join(f'<a class="pill" href="#{nat.esc(t["id"])}">{nat.esc(t["caption"].split(":")[0])}</a>' for t in entry['tables'])
+    body = [CSS, NL_CSS, f'<p class="crumbs"><a href="index.html">Home</a> › <a href="world.html">Around the world</a> › <a href="{nat.esc(c["page"])}">{nat.esc(c["name"])}</a> › Stores</p>',
+            f'<h1>{nat.esc(entry["page_title"])}</h1>', f'<p class="lede">{nat.esc(entry["page_intro"])}</p>', f'<div class="pills">{pills}</div>']
+    body.extend(wtb_table(t, cites, True) for t in entry['tables'])
+    body.append(FILTER_JS)
+    body.append(f'<p class="muted">Copied from each regulator\'s list on {nat.long_date(world_where_as_of())}. Not legal advice.</p>')
+    body.append(cites.render())
+    ld = [nat.breadcrumbs([('Home', ''), ('Around the world', 'world.html'), (c['name'], c['page'])], entry['page'], 'Stores')]
+    return nat.shell(entry['page_title'], entry['page_intro'][:300], ''.join(body), entry['page'], entry['page_title'], ld=ld)
+
+
+def world_where_as_of():
+    return load_where()['as_of']
+
+
 def country_page(world, sources, code):
     c = world['countries'][code]
     cites = nat.Cites(sources)
@@ -148,6 +226,9 @@ def country_page(world, sources, code):
         body.append('<p class="lawnow"><a href="#coffeeshops">Jump to the coffeeshop list: every town, and Amsterdam shop by shop</a></p>')
     body.append('<p class="alert"><strong>Travelling?</strong> Never carry cannabis across an international border, even between two places where it is legal. '
                 '<a href="travel-warnings.html">See where it can land you in prison</a>.</p>')
+    where = load_where()['countries'].get(code)
+    if where:
+        body.append(where_section(where, cites, page_link=bool(where.get('page'))))
     for q in world['questions']:
         a = c['answers'].get(q['id'])
         if a or q['id'] in ('adult-use', 'medical', 'possession', 'home-grow'):
@@ -370,8 +451,12 @@ def pages(perm, base_sources):
     her = load_heritage()
     sources.update({s['id']: s for s in her['sources']})
     sources.update({s['id']: s for s in load_nl_shops()['sources']})
+    sources.update({s['id']: s for s in load_where()['sources']})
     out = {'world.html': hub_page(world, sources), 'travel-warnings.html': warnings_page(world, perm, sources),
            'heritage.html': heritage_page(her, sources), 'learn.html': learn_page()}
     for code, c in world['countries'].items():
         out[c['page']] = country_page(world, sources, code)
+    for code, entry in load_where()['countries'].items():
+        if entry.get('page'):
+            out[entry['page']] = stores_page(world, sources, code, entry)
     return out

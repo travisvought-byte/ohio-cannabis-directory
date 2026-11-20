@@ -133,6 +133,24 @@ class WorldTest(unittest.TestCase):
         self.assertFalse(ids & SOURCE_IDS, 'coffeeshop source ids are separate from the world sources')
         for sid in ids:
             self.assertIn(build_national.esc(next(s['title'] for s in cs['sources'] if s['id'] == sid)), text)
+    def test_where_to_buy_lists_every_row_with_a_source(self):
+        where = json.loads((ROOT / 'data/world-where-to-buy.json').read_text(encoding='utf-8'))
+        ids = {s['id'] for s in where['sources']}
+        self.assertFalse(ids & SOURCE_IDS, 'where-to-buy source ids are separate from the world sources')
+        allowed = {'name', 'address', 'city', 'postal', 'licence', 'status', 'lat', 'lon', 'website', 'type', 'open', 'expires', 'province',
+                   'phone', 'online_sales', 'email', 'locality', 'district', 'canton', 'towns', 'outlets', 'period'}
+        for code, entry in where['countries'].items():
+            self.assertIn(code, WORLD['countries'])
+            page = PAGES[entry['page']] if entry.get('page') else PAGES[WORLD['countries'][code]['page']]
+            self.assertTrue(entry['source_ids'] and set(entry['source_ids']) <= ids, code)
+            self.assertTrue(entry['tables'] or entry['links'], f'{code} needs a list or an official link')
+            for t in entry['tables']:
+                self.assertTrue(t['rows'] and set(t['source_ids']) <= ids, t['id'])
+                for r in t['rows']:
+                    self.assertLessEqual(set(r), allowed, f'{t["id"]}: only business fields, never personal names')
+                    self.assertIn(build_national.esc(r['name']), page, f'{t["id"]}: {r["name"]}')
+            if entry.get('page'):
+                self.assertIn(f'href="{entry["page"]}"', PAGES[WORLD['countries'][code]['page']])
 
 if __name__ == '__main__':
     unittest.main()
