@@ -1231,22 +1231,6 @@
     }
    ]
   },
-  "IN": {
-   "name": "India",
-   "page": "world-india.html",
-   "fcdo_title": "India",
-   "source_id": "fcdo-india",
-   "updated": "2026-10-07",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "Do not get involved with any illegal drugs. Drugs are not categorised as they would be in the UK, into Class A, B and C and possession of any illegal drug could lead to sentencing. You could face a minimum sentence of 6 months for possession of small amounts deemed for personal consumption only, up to a 10-year sentence for other amounts. The judicial process is slow, and you could be detained for several years while your case is processed."
-     ]
-    }
-   ]
-  },
   "ID": {
    "name": "Indonesia",
    "page": "world-indonesia.html",
@@ -1311,30 +1295,6 @@
       "smuggling antiquities",
       "terrorism",
       "war crimes"
-     ]
-    }
-   ]
-  },
-  "JP": {
-   "name": "Japan",
-   "page": "world-japan.html",
-   "fcdo_title": "Japan",
-   "source_id": "fcdo-japan",
-   "updated": "2026-08-28",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs",
-     "paragraphs": [
-      "Japan has strict laws around drug use. If the police find an illegal substance in your bloodstream, you may be charged, regardless of whether you consented or were aware of taking the drugs. If you refuse to take a test if asked to by the police, you could be arrested and detained for ‘obstructing police duties’.",
-      "If you take blood tests at medical institutions, they are usually obliged to report to the police if they detect any illegal substances."
-     ]
-    },
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "There is zero tolerance of drug crime and the penalties are severe. British nationals have been arrested and detained for receiving small quantities through the post or if they test positive when the police raid clubs or bars. British nationals convicted of drug trafficking have received sentences ranging from 6 to 17 years and fines of 3 to 4 million yen. Prisoners in Japan are assigned labour or factory work as part of their sentences."
      ]
     }
    ]
@@ -1877,23 +1837,6 @@
      "heading": "Illegal drugs and prison sentences",
      "paragraphs": [
       "Do not get involved with illegal drugs of any kind. There are severe penalties including custodial sentences for drug offences."
-     ]
-    }
-   ]
-  },
-  "NP": {
-   "name": "Nepal",
-   "page": "world-nepal.html",
-   "fcdo_title": "Nepal",
-   "source_id": "fcdo-nepal",
-   "updated": "2026-10-01",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "Penalties for drugs related offences are severe. If you are caught with even small amounts of marijuana, you can go to prison for over 5 years, usually after a long and expensive legal process.",
-      "Some skincare products and e-cigarette refills may contain ingredients that are illegal in Nepal such as cannabidiol ( CBD ). If the police find you with products containing CBD , they may seize them and charge you with drug possession."
      ]
     }
    ]
@@ -3555,14 +3498,6 @@
    "retrieved_on": "2026-11-20"
   },
   {
-   "id": "fcdo-india",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "India travel advice (last updated by the FCDO 2026-10-07)",
-   "url": "https://www.gov.uk/foreign-travel-advice/india",
-   "retrieved_on": "2026-11-20"
-  },
-  {
    "id": "fcdo-indonesia",
    "kind": "government",
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
@@ -3584,14 +3519,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Iraq travel advice (last updated by the FCDO 2026-11-18)",
    "url": "https://www.gov.uk/foreign-travel-advice/iraq",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-japan",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Japan travel advice (last updated by the FCDO 2026-08-28)",
-   "url": "https://www.gov.uk/foreign-travel-advice/japan",
    "retrieved_on": "2026-11-20"
   },
   {
@@ -3824,14 +3751,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Nauru travel advice (last updated by the FCDO 2026-03-19)",
    "url": "https://www.gov.uk/foreign-travel-advice/nauru",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-nepal",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Nepal travel advice (last updated by the FCDO 2026-10-01)",
-   "url": "https://www.gov.uk/foreign-travel-advice/nepal",
    "retrieved_on": "2026-11-20"
   },
   {

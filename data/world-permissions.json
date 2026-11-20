@@ -3596,6 +3596,163 @@
      ]
     }
    }
+  },
+  "JP": {
+   "name": "Japan",
+   "page": "world-japan.html",
+   "summary": "Japan made using cannabis a crime on December 12, 2024, when it reclassified cannabis and THC as narcotics. Possession, use and transfer each carry up to 7 years in prison. The same reform allows approved cannabis-derived medicines.",
+   "note": "Japanese sources are summarized in English.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No. Using it is a crime since December 2024",
+     "detail": "The revised laws that took effect on December 12, 2024 classify cannabis and THC as narcotics and add a crime of use, which did not exist before. Use, possession and transfer each carry up to 7 years in prison, up from 5 years for possession.",
+     "citation": "Revised Cannabis Control Act and Narcotics and Psychotropics Control Act (2024); MHLW; Nippon.com/Jiji",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "jp-mhlw",
+      "jp-nippon",
+      "jp-dia"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Only approved cannabis-derived medicines",
+     "detail": "The reform lifted the ban on cannabis-derived medicines once their efficacy and safety are confirmed; before it, such medicines were allowed only in clinical trials. CBD is not treated as a narcotic, but smokable plant material and resin are.",
+     "citation": "Revised laws (2024); Nippon.com/Jiji; DIA Global Forum (Feb 2025)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "jp-nippon",
+      "jp-dia"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Any amount: up to 7 years",
+     "detail": "Possession of any amount is a crime punishable by up to 7 years in prison; import carries 1 to 10 years. The UK government warns of zero tolerance, that police may charge people whose blood shows an illegal substance, and that small quantities received by post have led to arrests.",
+     "citation": "MHLW notice to foreign residents; UK FCDO travel advice",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "jp-mhlw",
+      "jp-fcdo"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Only licensed growers",
+     "detail": "Growing cannabis needs a licence. The 2024 reform split cultivation licences into two kinds during 2025: for raw materials for cannabis-plant products and for medicines.",
+     "citation": "Jiji Press (Dec 12 2024)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "jp-jiji"
+     ]
+    }
+   }
+  },
+  "IN": {
+   "name": "India",
+   "page": "world-india.html",
+   "summary": "India bans cannabis flowers (ganja) and resin (charas) under the 1985 NDPS Act, with penalties scaled by quantity. The leaves and seeds are outside the federal definition, so bhang is left to the states: some license bhang shops, others ban it.",
+   "note": "Several sources here are legal explainers rather than the statute itself; they agree on the structure of the law.",
+   "answers": {
+    "adult-use": {
+     "status": "limited",
+     "short": "No, except bhang where a state allows it",
+     "detail": "Producing, possessing, selling, buying, transporting and using ganja and charas are offences under the NDPS Act. Leaves and seeds are excluded from its definition of cannabis, and states regulate them: Uttar Pradesh and Rajasthan have authorised bhang shops, while Assam's own law bans both ganja and bhang.",
+     "citation": "NDPS Act 1985, s. 2 and s. 20 (Nyaaya; The News Minute; SCC Online)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "in-nyaaya",
+      "in-tnm",
+      "in-scc"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Ayurvedic preparations under licence",
+     "detail": "The Ministry of AYUSH permits cannabis in medicinal preparations, subject to the legal framework and state rules. This guide has not yet checked how patients obtain them.",
+     "citation": "GKToday summary of NDPS Act and AYUSH rules",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "in-gk"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Up to 1 kg of ganja is a \"small quantity\"",
+     "detail": "Penalties depend on the amount. A small quantity, up to 1 kg of ganja or 100 g of charas, carries up to 1 year in prison, a fine of up to Rs 10,000, or both. Above that but below commercial quantity (20 kg of ganja, 1 kg of charas) carries up to 10 years and a fine of up to Rs 1 lakh. The UK government warns British travellers of a minimum of 6 months for small personal amounts.",
+     "citation": "NDPS Act, s. 20 (Nyaaya; The News Minute); UK FCDO travel advice",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "in-nyaaya",
+      "in-tnm",
+      "in-fcdo"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Growing the plant is a crime",
+     "detail": "Cultivating the cannabis plant is an offence even though bhang made from its leaves can be legal. In 2025 the Kerala High Court dismissed a petition from a man caught with five plants on his terrace.",
+     "citation": "NDPS Act (Vajiram & Ravi summary, Nov 2025)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "in-vajiram"
+     ]
+    }
+   }
+  },
+  "NP": {
+   "name": "Nepal",
+   "page": "world-nepal.html",
+   "summary": "Cannabis has been illegal in Nepal since the Narcotic Drugs (Control) Act of 1976, and even small amounts can mean years in prison. In 2026 Gandaki province passed its own law to license medical and industrial cultivation, and the Supreme Court ordered the federal government to write cultivation rules.",
+   "note": "Nepali sources are summarized in English. The national ban and the provincial law were still in tension when this was checked.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "No",
+     "detail": "The 1976 Act prohibits growing, producing, buying, selling, storing and using cannabis.",
+     "citation": "Narcotic Drugs (Control) Act 1976 (Substance Abuse and Rehabilitation, 2024)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "np-dove"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "A provincial law and a court order, not yet a national program",
+     "detail": "In 2026 Gandaki province legalised licensed farming and use of cannabis for medical purposes despite the national ban, with five-year licences for registered companies. The 1976 Act allows special licences only to the national government or institutions under its full supervision. On November 2, 2026 the Supreme Court ordered the government to write cultivation rules under the Act within three months.",
+     "citation": "AP (Aug 5 2026); My Republica; Kathmandu Post (Aug 12 2026); Supreme Court order (Nov 2 2026)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "np-ap",
+      "np-republica",
+      "np-kpost",
+      "np-sc"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Even small amounts: prison possible",
+     "detail": "Possession is a crime under the 1976 Act. The UK government warns that being caught with even small amounts of marijuana can mean more than 5 years in prison, and that police may seize and charge over products containing CBD.",
+     "citation": "UK FCDO travel advice; Narcotic Drugs (Control) Act 1976",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "np-fcdo",
+      "np-dove"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "No. Unlicensed growing is a federal crime",
+     "detail": "Growing is prohibited under the 1976 Act. Even under Gandaki's law, cultivating without a licence is punished under the federal Act.",
+     "citation": "Narcotic Drugs (Control) Act 1976; My Republica (2026)",
+     "reviewed_on": "2026-11-20",
+     "source_ids": [
+      "np-dove",
+      "np-republica"
+     ]
+    }
+   }
   }
  },
  "canada_provinces": [
@@ -3919,7 +4076,8 @@
     "PE",
     "EC",
     "PY",
-    "CR"
+    "CR",
+    "IN"
    ]
   },
   {
@@ -3935,7 +4093,9 @@
     "AT",
     "DK",
     "MA",
-    "LB"
+    "LB",
+    "JP",
+    "NP"
    ]
   }
  ],
@@ -6680,6 +6840,126 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Costa Rica travel advice: safety and security",
    "url": "https://www.gov.uk/foreign-travel-advice/costa-rica/safety-and-security",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "jp-dia",
+   "kind": "research",
+   "publisher": "DIA Global Forum (Feb 2025)",
+   "title": "Cannabis-derived drugs in Japan: new legislation and outlook",
+   "url": "https://globalforum.diaglobal.org/issue/february-2025/cannabis-derived-drugs-in-japan-new-legislation-and-outlook/",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "jp-jiji",
+   "kind": "news",
+   "publisher": "Jiji Press",
+   "title": "大麻使用、7年以下の懲役に 医療用は解禁、改正法12日施行 (Dec 12 2024)",
+   "url": "https://sp.m.jiji.com/english/show/37205",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "jp-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
+   "title": "Japan travel advice: safety and security",
+   "url": "https://www.gov.uk/foreign-travel-advice/japan/safety-and-security",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "in-nyaaya",
+   "kind": "organization",
+   "publisher": "Nyaaya (Vidhi Centre for Legal Policy)",
+   "title": "Legal explainer: cannabis",
+   "url": "https://nyaaya.org/legal-explainer/cannabis/",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "in-tnm",
+   "kind": "news",
+   "publisher": "The News Minute",
+   "title": "What is legal and illegal about weed in India? A look at the NDPS Act of 1985",
+   "url": "https://www.thenewsminute.com/article/what-legal-and-illegal-about-weed-india-look-ndps-act-1985-133726",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "in-scc",
+   "kind": "organization",
+   "publisher": "SCC Online",
+   "title": "Cannabis: your guide to what's legal and what's not in India (Sep 25 2020)",
+   "url": "https://www.scconline.com/blog/post/2020/09/25/cannabis-your-guide-to-whats-legal-and-whats-not-in-india/amp",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "in-vajiram",
+   "kind": "organization",
+   "publisher": "Vajiram & Ravi (current affairs)",
+   "title": "Bhang vs cannabis in India: why bhang is legal but growing cannabis isn't (Nov 2025)",
+   "url": "https://vajiramandravi.com/current-affairs/bhang-vs-cannabis-in-india-why-bhang-is-legal-but-growing-cannabis-isnt/",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "in-gk",
+   "kind": "organization",
+   "publisher": "GKToday",
+   "title": "Hemp, cannabis and narcotics laws in India",
+   "url": "https://www.gktoday.in/hemp-cannabis-and-narcotics-laws-in-india/",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "in-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
+   "title": "India travel advice: safety and security",
+   "url": "https://www.gov.uk/foreign-travel-advice/india/safety-and-security",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "np-ap",
+   "kind": "news",
+   "publisher": "Associated Press (via ABC News)",
+   "title": "Nepal's Gandaki province legalizes medical cannabis farming and use (Aug 5 2026)",
+   "url": "https://abcnews.com/Health/wireStory/nepals-gandaki-province-legalizes-medical-cannabis-farming-135376985",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "np-republica",
+   "kind": "news",
+   "publisher": "My Republica",
+   "title": "Gandaki legalizes cannabis cultivation (2026)",
+   "url": "https://myrepublica.nagariknetwork.com/index.php/news/gandaki-legalizes-cannabis-cultivation-23-61.html",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "np-kpost",
+   "kind": "news",
+   "publisher": "The Kathmandu Post (column)",
+   "title": "Gandaki passed the cannabis law. The harder one comes next (Aug 12 2026)",
+   "url": "https://kathmandupost.com/columns/2026/08/12/gandaki-passed-the-cannabis-law-the-harder-one-comes-next",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "np-sc",
+   "kind": "news",
+   "publisher": "Asia News Network (The Kathmandu Post)",
+   "title": "Nepal's Supreme Court orders government to regulate cannabis cultivation for medicinal and industrial use (Nov 2 2026)",
+   "url": "https://asianews.network/?p=311883",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "np-dove",
+   "kind": "research",
+   "publisher": "Substance Abuse and Rehabilitation, vol. 15 (Sep 2024)",
+   "title": "Current status of cannabis legalization and decriminalization efforts in Nepal",
+   "url": "https://www.dovepress.com/current-status-of-cannabis-legalization-and-decriminalization-efforts--peer-reviewed-fulltext-article-SAR",
+   "retrieved_on": "2026-11-20"
+  },
+  {
+   "id": "np-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
+   "title": "Nepal travel advice: safety and security",
+   "url": "https://www.gov.uk/foreign-travel-advice/nepal/safety-and-security",
    "retrieved_on": "2026-11-20"
   }
  ]

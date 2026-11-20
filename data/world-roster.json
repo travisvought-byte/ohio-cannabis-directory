@@ -829,7 +829,7 @@
    "iso": "IN",
    "name": "India",
    "display": "India",
-   "status": "basic",
+   "status": "deep",
    "page": "world-india.html",
    "queue": 33
   },
@@ -901,7 +901,7 @@
    "iso": "JP",
    "name": "Japan",
    "display": "Japan",
-   "status": "basic",
+   "status": "deep",
    "page": "world-japan.html",
    "queue": 35
   },
@@ -1229,7 +1229,7 @@
    "iso": "NP",
    "name": "Nepal",
    "display": "Nepal",
-   "status": "basic",
+   "status": "deep",
    "page": "world-nepal.html",
    "queue": 34
   },
