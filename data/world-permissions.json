@@ -4680,6 +4680,38 @@
    "retrieved_on": "2026-11-19"
   },
   {
+   "id": "lu-law-2023",
+   "kind": "statute",
+   "publisher": "Mémorial A No. 408 (Ministry of Justice copy)",
+   "title": "Loi du 10 juillet 2023 modifying the law of 19 February 1973 (home cultivation of cannabis)",
+   "url": "https://mj.gouvernement.lu/dam-assets/dossiers/cannabis/loi-du-10-juillet-2023-cannabis.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "lu-mondaq-bonn",
+   "kind": "organization",
+   "publisher": "Bonn & Schmitt (law firm), via Legal 500",
+   "title": "Regulation Of Recreational Cannabis (Jul 24 2023)",
+   "url": "https://www.legal500.com/intelligence/luxembourg/cannabis-hemp/regulation-of-recreational-cannabis",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "lu-sante-access",
+   "kind": "government",
+   "publisher": "Health Directorate (Luxembourg)",
+   "title": "Information for patients: How to access medicinal cannabis?",
+   "url": "https://santesecu.public.lu/dam-assets/fr/publications/c/cannabis-medicinal-comment-acceder-fr/cannabis-comment-acceder-cannabis-medicinal-en.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "lu-court-thc",
+   "kind": "government",
+   "publisher": "Tribunal d'arrondissement de Luxembourg (judgment published on data.public.lu)",
+   "title": "Criminal judgment of Mar 14 2024 on driving with THC (pseudonymised)",
+   "url": "https://download.data.public.lu/resources/tribunal-darrondissement-luxembourg-penal/20240828-025713/20240314-tal-756-pseudonymise-accessible.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
    "id": "ie-mda-revised",
    "kind": "statute",
    "publisher": "Law Reform Commission, Revised Acts",
@@ -4773,38 +4805,6 @@
    "publisher": "Houses of the Oireachtas",
    "title": "Parliamentary question on spent convictions (Apr 24 2024)",
    "url": "https://www.oireachtas.ie/en/debates/question/2024-04-24/124/",
-   "retrieved_on": "2026-11-19"
-  },
-  {
-   "id": "lu-law-2023",
-   "kind": "statute",
-   "publisher": "Mémorial A No. 408 (Ministry of Justice copy)",
-   "title": "Loi du 10 juillet 2023 modifying the law of 19 February 1973 (home cultivation of cannabis)",
-   "url": "https://mj.gouvernement.lu/dam-assets/dossiers/cannabis/loi-du-10-juillet-2023-cannabis.pdf",
-   "retrieved_on": "2026-11-19"
-  },
-  {
-   "id": "lu-mondaq-bonn",
-   "kind": "organization",
-   "publisher": "Bonn & Schmitt (law firm), via Legal 500",
-   "title": "Regulation Of Recreational Cannabis (Jul 24 2023)",
-   "url": "https://www.legal500.com/intelligence/luxembourg/cannabis-hemp/regulation-of-recreational-cannabis",
-   "retrieved_on": "2026-11-19"
-  },
-  {
-   "id": "lu-sante-access",
-   "kind": "government",
-   "publisher": "Health Directorate (Luxembourg)",
-   "title": "Information for patients: How to access medicinal cannabis?",
-   "url": "https://santesecu.public.lu/dam-assets/fr/publications/c/cannabis-medicinal-comment-acceder-fr/cannabis-comment-acceder-cannabis-medicinal-en.pdf",
-   "retrieved_on": "2026-11-19"
-  },
-  {
-   "id": "lu-court-thc",
-   "kind": "government",
-   "publisher": "Tribunal d'arrondissement de Luxembourg (judgment published on data.public.lu)",
-   "title": "Criminal judgment of Mar 14 2024 on driving with THC (pseudonymised)",
-   "url": "https://download.data.public.lu/resources/tribunal-darrondissement-luxembourg-penal/20240828-025713/20240314-tal-756-pseudonymise-accessible.pdf",
    "retrieved_on": "2026-11-19"
   }
  ]
