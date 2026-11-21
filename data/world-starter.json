@@ -1957,23 +1957,6 @@
     }
    ]
   },
-  "SX": {
-   "name": "St Maarten",
-   "page": "world-st-maarten.html",
-   "fcdo_title": "St Maarten",
-   "source_id": "fcdo-st-maarten",
-   "updated": "2025-12-10",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Drug-related crime",
-     "paragraphs": [
-      "St Maarten is used as a drug passageway from South America to Europe and North America. There can be drug-related violent crime, but this rarely affects tourists. Do not leave bags unattended or agree to carry a package for anyone.",
-      "The authorities use body scanners and baggage screening for passengers. There are severe penalties for possessing and trafficking narcotics."
-     ]
-    }
-   ]
-  },
   "SD": {
    "name": "Sudan",
    "page": "world-sudan.html",
@@ -3230,14 +3213,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "St Helena, Ascension and Tristan da Cunha travel advice (last updated by the FCDO 2026-09-10)",
    "url": "https://www.gov.uk/foreign-travel-advice/st-helena-ascension-and-tristan-da-cunha",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-st-maarten",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "St Maarten travel advice (last updated by the FCDO 2025-12-10)",
-   "url": "https://www.gov.uk/foreign-travel-advice/st-maarten",
    "retrieved_on": "2026-11-20"
   },
   {

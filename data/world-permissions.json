@@ -5804,6 +5804,83 @@
      "Minors with a user amount can be sent to a prevention-focused hearing."
     ]
    }
+  },
+  "SX": {
+   "name": "St Maarten",
+   "page": "world-st-maarten.html",
+   "summary": "Cannabis is illegal in Sint Maarten, the Dutch side of the island. Under prosecution guidelines, up to 25 grams is normally seized and the case dismissed, but growing and selling are prosecuted. The government set up a committee in 2024 to work toward legalisation, and in February 2026 a draft law was still with the Department of Legal Affairs and had not reached Parliament.",
+   "note": "This page covers Sint Maarten, the Dutch side. Saint-Martin, the French side, is under French law. The 25-gram rule is prosecution policy, not a legal right.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal",
+     "detail": "The 2024 government regulation creating the legalisation committee notes that people continue to be penalised for possession and cultivation. In February 2026 the Minister of Tourism and Economic Affairs said the framework cannot proceed without a law being passed.",
+     "citation": "AB 2024 no. 11 (Feb 28 2024); The Peoples Tribune (Feb 2 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "sx-ab-2024-11",
+      "sx-tribune-2026"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales",
+     "detail": "There is no licensed market. As of February 2026 the draft cannabis law still had to go through the Council of Advice and the Council of Ministers before reaching Parliament.",
+     "citation": "The Peoples Tribune (Feb 2 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "sx-tribune-2026"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "Up to 25 grams is usually seized, not prosecuted",
+     "detail": "The prosecution directive in effect since December 1, 2018 says possession of 0 to 25 grams of cannabis leads to seizure and a (conditional) dismissal, and 25 to 50 grams to a fine of up to NAf 500 (US$280). This does not apply if there is another offence, signs of dealing, a minor, repeat offending, or possession at a carnival parade, at work or in a government building. Minors are prosecuted even for 0 to 5 grams.",
+     "citation": "Prosecution directive 2018/01 (Dec 1 2018), listed on the Sint Maarten guidelines page",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "sx-om-2018",
+      "sx-om-list"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Growing is prosecuted",
+     "detail": "The directive notes that growing plants of the genus Cannabis is prohibited under article 2a of the Opium Ordinance 1960.",
+     "citation": "Prosecution directive 2018/01 (Dec 1 2018)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "sx-om-2018"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "Do not carry cannabis",
+     "detail": "The UK Foreign Office says St Maarten is used as a drug passageway, that authorities use body scanners and baggage screening for passengers, and that there are severe penalties for possessing and trafficking narcotics. It advises travellers not to agree to carry a package for anyone.",
+     "citation": "FCDO travel advice (Dec 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "sx-fcdo"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "A 2024 ministerial regulation set up a National Cannabis Legalization Committee to prepare a legal framework for medicinal, scientific, religious and recreational cannabis and to propose changes to decriminalise it.",
+    "source_ids": [
+     "sx-ab-2024-11"
+    ]
+   },
+   "differences": {
+    "title": "What is different about St Maarten",
+    "source_ids": [
+     "sx-om-2018",
+     "sx-tribune-2026"
+    ],
+    "points": [
+     "The same prosecution directive covers Curaçao and the BES islands.",
+     "A legalisation law is being drafted, but Parliament has not voted on it."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -6142,7 +6219,8 @@
     "BZ",
     "AI",
     "AW",
-    "CW"
+    "CW",
+    "SX"
    ]
   },
   {
@@ -9849,6 +9927,46 @@
    "publisher": "Procureur-generaal of Curaçao, Sint Maarten and Bonaire, Sint Eustatius and Saba",
    "title": "Richtlijn voor strafvordering Opiumdelicten, no. 2018/01 (in effect Dec 1 2018)",
    "url": "https://cuatro.sim-cdn.nl/openbaarministerie/uploads/richtlijnopiumdelicten_per_011218_nieuw.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "sx-om-2018",
+   "kind": "government",
+   "publisher": "Procureur-generaal of Curaçao, Sint Maarten and Bonaire, Sint Eustatius and Saba",
+   "title": "Richtlijn voor strafvordering Opiumdelicten, no. 2018/01 (in effect Dec 1 2018)",
+   "url": "https://cuatro.sim-cdn.nl/openbaarministerie/uploads/richtlijnopiumdelicten_per_011218_nieuw.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "sx-om-list",
+   "kind": "government",
+   "publisher": "Openbaar Ministerie (Prosecutor's Office)",
+   "title": "Guidelines SXM (lists Richtlijn Opiumdelicten per 01-12-18; retrieved Nov 20 2026)",
+   "url": "https://www.openbaarministerie.org/en/guidelines-sxm",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "sx-ab-2024-11",
+   "kind": "government",
+   "publisher": "Government of Sint Maarten (Afkondigingsblad)",
+   "title": "AB 2024, no. 11: Regulation establishing a workgroup on the legalization of cannabis (Feb 28 2024)",
+   "url": "https://www.sintmaartengov.org/Documents/Official%20Publications/AB%202024%2C%20no.%2011%20Regulation%20containing%20measures%20to%20establish%20workgroup%20tasked%20with%20ensuring%20legalization%20cannabis.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "sx-tribune-2026",
+   "kind": "news",
+   "publisher": "The Peoples Tribune (via SXM Talks)",
+   "title": "Heyliger-Marten: Cannabis law moving, local farmers remain the focal point (Feb 2 2026)",
+   "url": "https://www.sxm-talks.com/local-news/heyliger-marten-cannabis-law-moving-local-farmers-remain-focal-the-point-the-peoples-tribune/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "sx-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office",
+   "title": "St Maarten travel advice: Safety and security (updated Dec 10 2025)",
+   "url": "https://www.gov.uk/foreign-travel-advice/st-maarten/safety-and-security",
    "retrieved_on": "2026-11-19"
   }
  ]
