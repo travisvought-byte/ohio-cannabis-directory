@@ -101,7 +101,7 @@
 "iso": "AW",
 "name": "Aruba",
 "display": "Aruba",
-"status": "basic",
+"status": "deep",
 "page": "world-aruba.html",
 "queue": null
 },

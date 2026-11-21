@@ -105,29 +105,6 @@
     }
    ]
   },
-  "AW": {
-   "name": "Aruba",
-   "page": "world-aruba.html",
-   "fcdo_title": "Aruba",
-   "source_id": "fcdo-aruba",
-   "updated": "2026-07-07",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Drug-related crime",
-     "paragraphs": [
-      "Aruba is used as a drug passageway from South America to Europe and North America. There can be drug-related violent crime."
-     ]
-    },
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs",
-     "paragraphs": [
-      "There are severe penalties for all drug offences. Do not leave bags unattended or agree to carry a package for anyone."
-     ]
-    }
-   ]
-  },
   "AZ": {
    "name": "Azerbaijan",
    "page": "world-azerbaijan.html",
@@ -2405,14 +2382,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Armenia travel advice (last updated by the FCDO 2026-03-01)",
    "url": "https://www.gov.uk/foreign-travel-advice/armenia",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-aruba",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Aruba travel advice (last updated by the FCDO 2026-07-07)",
-   "url": "https://www.gov.uk/foreign-travel-advice/aruba",
    "retrieved_on": "2026-11-20"
   },
   {

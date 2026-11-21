@@ -5713,6 +5713,94 @@
      "The 2024 ordinance replaced the earlier Opium Ordinance and keeps cannabis fully prohibited."
     ]
    }
+  },
+  "AW": {
+   "name": "Aruba",
+   "page": "world-aruba.html",
+   "summary": "Cannabis is illegal in Aruba: its narcotics ordinance bans growing, possessing, using, selling and importing it. Under a 2021 prosecution directive, a case of possessing up to 5 grams is normally dismissed once the cannabis is given up, unless there are aggravating factors. Larger amounts are prosecuted.",
+   "note": "Aruba is part of the Kingdom of the Netherlands but has its own drug law. The 5-gram rule is prosecution policy, not a legal right, and police can still seize cannabis.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal",
+     "detail": "Article 4 of the Landsverordening verdovende middelen prohibits possessing or using cannabis (hennep), its resin and preparations such as hashish. Intentional breaches are crimes (misdrijven) under article 14.",
+     "citation": "Landsverordening verdovende middelen, arts. 4 and 14",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "aw-lvm"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "No cannabis program; CBD imports under permit reported",
+     "detail": "There is no medical cannabis program in the ordinance. It lets licensed pharmacists and doctors handle controlled substances for medical purposes, and exempts lawfully obtained supplies for a person's own medical use. In January 2021 the Health Ministry reported that it had given local companies permits in 2019 to import CBD-containing products, sold in drugstores, and was finalising cultivation permits; whether those cultivation permits were issued was not confirmed.",
+     "citation": "Landsverordening verdovende middelen, art. 7; Caribbean News Global (Jan 17 2021)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "aw-lvm",
+      "aw-cng-2021"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales",
+     "detail": "Selling, supplying and transporting cannabis are prohibited under article 4. There is no exception like the Dutch coffeeshop system in the ordinance.",
+     "citation": "Landsverordening verdovende middelen, art. 4",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "aw-lvm"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "Up to 5 grams is usually not prosecuted",
+     "detail": "The ordinance itself has no small-quantity threshold. The Procureur-generaal's directive of February 11, 2021 tells prosecutors to dismiss cases of 0 to 5 grams of soft drugs, with the cannabis given up, except where there is another offence, a repeat offence, a minor, or special circumstances such as possession at a carnival parade, at work or in a government building. For 5 to 250 grams the directive sets a maximum demand of one month in prison, wholly or partly suspended.",
+     "citation": "Prosecution directive (Feb 11 2021), soft-drugs table; Landsverordening verdovende middelen, art. 4",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "aw-pg-2021",
+      "aw-lvm"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Growing is banned",
+     "detail": "Article 2 bans cultivating any Cannabis plant, and article 4 bans cultivating, preparing and processing cannabis unless the Minister has given written permission.",
+     "citation": "Landsverordening verdovende middelen, arts. 2, 4 and 7",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "aw-lvm"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "Do not carry cannabis in or out",
+     "detail": "Importing, exporting and transit of cannabis are prohibited without the Minister's permission. The UK Foreign Office warns of severe penalties for all drug offences and that Aruba is used as a drug passageway.",
+     "citation": "Landsverordening verdovende middelen, arts. 4 and 6; FCDO (Jul 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "aw-lvm",
+      "aw-fcdo"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "Aruba handles small cases through prosecution guidelines rather than a change in the law: the directive separates \"soft drugs\" from hard drugs on health grounds and sets lighter demands for soft drugs.",
+    "source_ids": [
+     "aw-pg-2021"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Aruba",
+    "source_ids": [
+     "aw-pg-2021",
+     "aw-lvm"
+    ],
+    "points": [
+     "The 5-gram dismissal does not apply to minors, repeat cases or possession at events, work or government buildings.",
+     "Minors with a user amount can be sent to a prevention-focused hearing."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -6049,7 +6137,8 @@
     "LC",
     "DM",
     "BZ",
-    "AI"
+    "AI",
+    "AW"
    ]
   },
   {
@@ -9717,6 +9806,38 @@
    "publisher": "UK Foreign, Commonwealth & Development Office",
    "title": "Curaçao travel advice: Safety and security (updated Dec 10 2025)",
    "url": "https://www.gov.uk/foreign-travel-advice/curacao/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "aw-lvm",
+   "kind": "statute",
+   "publisher": "Government of Aruba (Centraal Wettenregister)",
+   "title": "Landsverordening verdovende middelen, AB 1990 no. GT 7 (consolidated text of Oct 25 2013)",
+   "url": "https://cuatro.sim-cdn.nl/arubaoverheid2858bd/uploads/0708gt90.007.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "aw-pg-2021",
+   "kind": "government",
+   "publisher": "Procureur-generaal of Aruba",
+   "title": "Richtlijn Landsverordening verdovende middelen (prosecution directive, in effect Feb 11 2021)",
+   "url": "https://cuatro.sim-cdn.nl/arubaoverheid2858bd/uploads/richtlijn_landsverordening_verdovende_middelen.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "aw-cng-2021",
+   "kind": "news",
+   "publisher": "Caribbean News Global",
+   "title": "Medicinal Cannabis products available in Aruba (Jan 17 2021)",
+   "url": "https://www.caribbeannewsglobal.com/medicinal-cannabis-products-available-in-aruba",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "aw-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office",
+   "title": "Aruba travel advice: Safety and security (updated Jul 7 2026)",
+   "url": "https://www.gov.uk/foreign-travel-advice/aruba/safety-and-security",
    "retrieved_on": "2026-11-19"
   }
  ]
