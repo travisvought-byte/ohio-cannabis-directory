@@ -1,0 +1,61 @@
+name: Tell search engines about changed pages
+
+# Runs after each successful deploy of the-reefer.com. IndexNow sends Bing (and
+# Yandex, Seznam, Naver) the address of each published page that changed, so
+# they pick it up within days instead of whenever they next crawl. No account
+# is needed: the key file 380f8e650153b996ff5b5cef2497a1dc.txt at the site root proves the site
+# is ours. The published site is built twice, for this deploy and the one
+# before it, and only pages that differ and are listed in sitemap.xml are sent.
+
+on:
+  workflow_run:
+    workflows: ['Deploy the-reefer.com to GitHub Pages']
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      all:
+        description: Send every page in the sitemap, not only the changed ones
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  indexnow:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Send the changed pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          HEAD_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+          ALL: ${{ inputs.all }}
+        run: |
+          now="$RUNNER_TEMP/site-now"; before_site="$RUNNER_TEMP/site-before"
+          python3 scripts/build_pages_site.py --out "$now"
+          if [ "$ALL" = "true" ]; then
+            python3 scripts/indexnow.py --host the-reefer.com --key 380f8e650153b996ff5b5cef2497a1dc --root "$now" --all --wait
+            exit
+          fi
+          before=$(gh api "repos/$REPO/actions/workflows/pages.yml/runs?branch=main&status=success&per_page=10" \
+            --jq "[.workflow_runs[] | select(.head_sha != \"$HEAD_SHA\")][0].head_sha // empty")
+          mkdir -p "$before_site"
+          if [ -n "$before" ] && git cat-file -e "$before^{commit}" 2>/dev/null; then
+            git worktree add --detach "$RUNNER_TEMP/before" "$before"
+            python3 "$RUNNER_TEMP/before/scripts/build_pages_site.py" --out "$before_site" || echo "::warning::could not build the previous version; sending every changed-looking page"
+          fi
+          python3 scripts/indexnow.py --host the-reefer.com --key 380f8e650153b996ff5b5cef2497a1dc --root "$now" --compare "$before_site" --wait
