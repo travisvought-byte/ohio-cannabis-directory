@@ -221,23 +221,6 @@
     }
    ]
   },
-  "BQ": {
-   "name": "Bonaire, St Eustatius and Saba",
-   "page": "world-bonaire-st-eustatius-and-saba.html",
-   "fcdo_title": "Bonaire, St Eustatius and Saba",
-   "source_id": "fcdo-bonaire-st-eustatius-saba",
-   "updated": "2025-12-10",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Drug smuggling",
-     "paragraphs": [
-      "Drug smugglers use Bonaire, St Eustatius and Saba to smuggle illegal drugs from South America to Europe and North America. Never leave bags unattended and do not discuss or agree to carry a package for anyone.",
-      "Dutch authorities generally screen all baggage and passengers from Bonaire, St Eustatius and Saba."
-     ]
-    }
-   ]
-  },
   "BA": {
    "name": "Bosnia and Herzegovina",
    "page": "world-bosnia-and-herzegovina.html",
@@ -2421,14 +2404,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Bolivia travel advice (last updated by the FCDO 2026-09-22)",
    "url": "https://www.gov.uk/foreign-travel-advice/bolivia",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-bonaire-st-eustatius-saba",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Bonaire, St Eustatius and Saba travel advice (last updated by the FCDO 2025-12-10)",
-   "url": "https://www.gov.uk/foreign-travel-advice/bonaire-st-eustatius-saba",
    "retrieved_on": "2026-11-20"
   },
   {

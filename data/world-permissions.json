@@ -5881,6 +5881,81 @@
      "A legalisation law is being drafted, but Parliament has not voted on it."
     ]
    }
+  },
+  "BQ": {
+   "name": "Bonaire, St Eustatius and Saba",
+   "page": "world-bonaire-st-eustatius-and-saba.html",
+   "summary": "Cannabis is illegal on Bonaire, St Eustatius and Saba. These islands are special municipalities of the Netherlands, but they have their own drug law, the Opiumwet 1960 BES, not the Dutch Opium Act. Under prosecution guidelines, up to 25 grams is normally seized and the case dismissed.",
+   "note": "The 25-gram rule is prosecution policy, not a legal right. Police still seize the cannabis, and the policy does not cover minors or possession at events, work or government buildings.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal",
+     "detail": "Article 4 of the Opiumwet 1960 BES prohibits possessing or using cannabis (hennep), its resin and preparations, and importing or exporting them.",
+     "citation": "Opiumwet 1960 BES, art. 4 (Stb. 2010, 641)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bq-opiumwet"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "No cannabis program; general medical exceptions only",
+     "detail": "There is no medical cannabis program in the law. Article 7 lets pharmacists and licensed doctors handle controlled substances for medical purposes and exempts a person who shows they need the amount found for their own medical use and obtained it lawfully. Whether any cannabis product is available this way was not confirmed.",
+     "citation": "Opiumwet 1960 BES, art. 7",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bq-opiumwet"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales",
+     "detail": "There is no licensed sale. Since April 1, 2025 the island governor can also order the closure of homes or premises connected to drug offences.",
+     "citation": "Opiumwet 1960 BES; Stb. 2024, 377; Stb. 2025, 18",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bq-opiumwet",
+      "bq-stb-2024",
+      "bq-stb-2025"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "Up to 25 grams is usually seized, not prosecuted",
+     "detail": "The law sets no quantity threshold. The prosecution directive for Curaçao, Sint Maarten and the BES islands, in effect since December 1, 2018, says possession of 0 to 25 grams leads to seizure and a (conditional) dismissal, and 25 to 50 grams to a fine of up to NAf 500 (US$280). This does not apply if there is another offence, signs of dealing, a minor, repeat offending, or possession at a carnival parade, at work or in a government building. Minors are prosecuted even for 0 to 5 grams.",
+     "citation": "Prosecution directive 2018/01 (Dec 1 2018), listed on the BES guidelines page",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bq-om-2018",
+      "bq-om-list"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Growing is banned",
+     "detail": "Article 2a states that cultivating plants of the genus Cannabis is prohibited.",
+     "citation": "Opiumwet 1960 BES, art. 2a",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bq-opiumwet",
+      "bq-om-2018"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about Bonaire, St Eustatius and Saba",
+    "source_ids": [
+     "bq-opiumwet",
+     "bq-om-2018",
+     "bq-stb-2024"
+    ],
+    "points": [
+     "They are part of the Netherlands itself, but have their own drug law rather than the European Dutch one.",
+     "Prosecution follows the same directive as Curaçao and Sint Maarten.",
+     "A 2024 law lets island governors close premises used for drug offences."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -6220,7 +6295,8 @@
     "AI",
     "AW",
     "CW",
-    "SX"
+    "SX",
+    "BQ"
    ]
   },
   {
@@ -9967,6 +10043,46 @@
    "publisher": "UK Foreign, Commonwealth & Development Office",
    "title": "St Maarten travel advice: Safety and security (updated Dec 10 2025)",
    "url": "https://www.gov.uk/foreign-travel-advice/st-maarten/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bq-opiumwet",
+   "kind": "statute",
+   "publisher": "Kingdom of the Netherlands (Staatsblad)",
+   "title": "Opiumwet 1960 BES, text as adapted for Bonaire, Sint Eustatius and Saba (Stb. 2010, 641)",
+   "url": "https://zoek.officielebekendmakingen.nl/stb-2010-641.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bq-om-2018",
+   "kind": "government",
+   "publisher": "Procureur-generaal of Curaçao, Sint Maarten and Bonaire, Sint Eustatius and Saba",
+   "title": "Richtlijn voor strafvordering Opiumdelicten, no. 2018/01 (in effect Dec 1 2018)",
+   "url": "https://cuatro.sim-cdn.nl/openbaarministerie/uploads/richtlijnopiumdelicten_per_011218_nieuw.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bq-om-list",
+   "kind": "government",
+   "publisher": "Openbaar Ministerie (Prosecutor's Office)",
+   "title": "Guidelines BES (lists the opium-offences directive of Dec 1 2018; retrieved Nov 20 2026)",
+   "url": "https://www.openbaarministerie.org/en/guidelines-bes",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bq-stb-2024",
+   "kind": "statute",
+   "publisher": "Kingdom of the Netherlands (Staatsblad)",
+   "title": "Wet van 20 november 2024 amending the Opiumwet 1960 BES on closing drug premises (Stb. 2024, 377)",
+   "url": "https://zoek.officielebekendmakingen.nl/stb-2024-377.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bq-stb-2025",
+   "kind": "statute",
+   "publisher": "Kingdom of the Netherlands (Staatsblad)",
+   "title": "Besluit of Jan 23 2025 setting entry into force of Stb. 2024, 377 on Apr 1 2025 (Stb. 2025, 18)",
+   "url": "https://eerstekamer.nl/9370000/1/j9vvkfvj6b325az/vmkgckgk9hvo/f=y.pdf",
    "retrieved_on": "2026-11-19"
   }
  ]
