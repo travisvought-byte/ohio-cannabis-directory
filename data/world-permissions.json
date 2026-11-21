@@ -5638,7 +5638,7 @@
   "CW": {
    "name": "Curaçao",
    "page": "world-curacao.html",
-   "summary": "Cannabis is illegal in Curaçao. Its Opium Ordinance 2024 bans growing cannabis and bans possessing, selling, supplying, importing and exporting it, with no small-quantity threshold. Curaçao is part of the Kingdom of the Netherlands but has its own drug law, separate from the Dutch one.",
+   "summary": "Cannabis is illegal in Curaçao. Its Opium Ordinance 2024 bans growing cannabis and bans possessing, selling, supplying, importing and exporting it, with no small-quantity threshold in the law. Under prosecution guidelines, up to 25 grams is normally seized and the case dismissed. Curaçao is part of the Kingdom of the Netherlands but has its own drug law, separate from the Dutch one.",
    "note": "The ordinance is in Dutch. Article numbers below refer to the Opiumlandsverordening 2024 as published in the Publicatieblad.",
    "answers": {
     "adult-use": {
@@ -5672,12 +5672,13 @@
      ]
     },
     "possession": {
-     "status": "not-permitted",
-     "short": "No amount is allowed",
-     "detail": "The ordinance sets no quantity threshold and no lower penalty for small amounts; the same penalty article (11) covers possession of any quantity.",
-     "citation": "Opiumlandsverordening 2024, arts. 4 and 11",
+     "status": "limited",
+     "short": "Up to 25 grams is usually seized, not prosecuted",
+     "detail": "The ordinance sets no quantity threshold. The prosecution directive for Curaçao, Sint Maarten and the BES islands, in effect since December 1, 2018, says possession of 0 to 25 grams of cannabis leads to seizure and a (conditional) dismissal, and 25 to 50 grams to a fine of up to NAf 500 (US$280). This does not apply if there is another offence, signs of dealing, a minor, repeat offending, or possession at a carnival parade, at work or in a government building. Minors are prosecuted even for 0 to 5 grams.",
+     "citation": "Prosecution directive 2018/01 (Dec 1 2018); Opiumlandsverordening 2024, art. 4",
      "reviewed_on": "2026-11-19",
      "source_ids": [
+      "cw-om-2018",
       "cw-opium-2024"
      ]
     },
@@ -5706,10 +5707,12 @@
    "differences": {
     "title": "What is different about Curaçao",
     "source_ids": [
-     "cw-opium-2024"
+     "cw-opium-2024",
+     "cw-om-2018"
     ],
     "points": [
      "Curaçao makes its own drug law; the ordinance has no exception like the Dutch coffeeshop system.",
+     "The 25-gram rule is prosecution policy written before the 2024 ordinance, not a legal right; police still seize the cannabis.",
      "The 2024 ordinance replaced the earlier Opium Ordinance and keeps cannabis fully prohibited."
     ]
    }
@@ -6138,7 +6141,8 @@
     "DM",
     "BZ",
     "AI",
-    "AW"
+    "AW",
+    "CW"
    ]
   },
   {
@@ -6172,8 +6176,7 @@
     "KY",
     "VG",
     "TC",
-    "MS",
-    "CW"
+    "MS"
    ]
   },
   {
@@ -9793,22 +9796,6 @@
    "retrieved_on": "2026-11-19"
   },
   {
-   "id": "cw-opium-2024",
-   "kind": "statute",
-   "publisher": "Government of Curaçao (Publicatieblad)",
-   "title": "Opiumlandsverordening 2024, P.B. 2024 no. 74 (landsverordening of Jul 5 2024)",
-   "url": "https://gobiernu.cw/wp-content/uploads/2024/07/74.-Opiumlv.-2024-2.pdf",
-   "retrieved_on": "2026-11-19"
-  },
-  {
-   "id": "cw-fcdo",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office",
-   "title": "Curaçao travel advice: Safety and security (updated Dec 10 2025)",
-   "url": "https://www.gov.uk/foreign-travel-advice/curacao/safety-and-security",
-   "retrieved_on": "2026-11-19"
-  },
-  {
    "id": "aw-lvm",
    "kind": "statute",
    "publisher": "Government of Aruba (Centraal Wettenregister)",
@@ -9838,6 +9825,30 @@
    "publisher": "UK Foreign, Commonwealth & Development Office",
    "title": "Aruba travel advice: Safety and security (updated Jul 7 2026)",
    "url": "https://www.gov.uk/foreign-travel-advice/aruba/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cw-opium-2024",
+   "kind": "statute",
+   "publisher": "Government of Curaçao (Publicatieblad)",
+   "title": "Opiumlandsverordening 2024, P.B. 2024 no. 74 (landsverordening of Jul 5 2024)",
+   "url": "https://gobiernu.cw/wp-content/uploads/2024/07/74.-Opiumlv.-2024-2.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cw-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office",
+   "title": "Curaçao travel advice: Safety and security (updated Dec 10 2025)",
+   "url": "https://www.gov.uk/foreign-travel-advice/curacao/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cw-om-2018",
+   "kind": "government",
+   "publisher": "Procureur-generaal of Curaçao, Sint Maarten and Bonaire, Sint Eustatius and Saba",
+   "title": "Richtlijn voor strafvordering Opiumdelicten, no. 2018/01 (in effect Dec 1 2018)",
+   "url": "https://cuatro.sim-cdn.nl/openbaarministerie/uploads/richtlijnopiumdelicten_per_011218_nieuw.pdf",
    "retrieved_on": "2026-11-19"
   }
  ]
