@@ -6605,6 +6605,66 @@
      "If a drug crime results in a death, the law provides for the death penalty or 30 years in prison."
     ]
    }
+  },
+  "SV": {
+   "name": "El Salvador",
+   "page": "world-el-salvador.html",
+   "summary": "Cannabis is illegal in El Salvador, and even less than 2 grams can mean prison. Under the 2003 drug law, possessing under 2 grams carries 1 to 3 years, 2 grams or more 3 to 6 years, and possession meant for trafficking 6 to 10 years. Growing carries 5 to 15 years.",
+   "note": "Article numbers refer to the Ley Reguladora de las Actividades Relativas a las Drogas (D.L. 153 of 2003). Later reforms after 2006 were not reviewed.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal",
+     "detail": "The law regulates possession, holding and consumption, and allows controlled substances only in the amounts strictly needed for research, with authorisation from the Superior Council of Public Health. The UK Foreign Office warns of severe penalties for drug use.",
+     "citation": "LRARD, arts. 1 and 3; FCDO (Nov 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "sv-lrard",
+      "sv-fcdo"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales",
+     "detail": "There is no legal market; holding cannabis to sell or distribute it carries 6 to 10 years under article 34, and trafficking is punished separately under article 33.",
+     "citation": "LRARD, arts. 33-34",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "sv-lrard"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Under 2 grams: 1 to 3 years",
+     "detail": "Article 34 punishes possessing seeds, leaves, flowers, plants or drugs without authorisation: under 2 grams with 1 to 3 years in prison and a fine, 2 grams or more with 3 to 6 years, and any amount held to traffic with 6 to 10 years. The Supreme Court has applied these tiers to marijuana cases.",
+     "citation": "LRARD, art. 34; Corte Suprema de Justicia (2018)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "sv-lrard",
+      "sv-csj-2018"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Growing carries 5 to 15 years",
+     "detail": "Article 31 punishes sowing, cultivating or harvesting seeds or plants from which drugs can be obtained, without legal authorisation, with 5 to 15 years in prison and a fine.",
+     "citation": "LRARD, art. 31",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "sv-lrard"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about El Salvador",
+    "source_ids": [
+     "sv-lrard"
+    ],
+    "points": [
+     "Even seeds and leaves count: the possession offence covers any part of the plant.",
+     "There is no personal-use allowance: the lowest tier, under 2 grams, still carries prison."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -6988,7 +7048,8 @@
     "VE",
     "BO",
     "PA",
-    "GT"
+    "GT",
+    "SV"
    ]
   },
   {
@@ -10955,6 +11016,30 @@
    "publisher": "UK Foreign, Commonwealth & Development Office",
    "title": "Guatemala travel advice: Safety and security (updated Nov 16 2026)",
    "url": "https://www.gov.uk/foreign-travel-advice/guatemala/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "sv-lrard",
+   "kind": "statute",
+   "publisher": "Universidad de El Salvador, legislation library (official text as published)",
+   "title": "Ley Reguladora de las Actividades Relativas a las Drogas, D.L. 153 of Oct 2 2003, reformed to D.L. 1032 (2006)",
+   "url": "https://www.jurisprudencia.ues.edu.sv/oajc/leyes/LegislacionPenal/ley%20reguladora%20de%20las%20actividades%20relativas%20a%20las%20drogas.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "sv-csj-2018",
+   "kind": "government",
+   "publisher": "Corte Suprema de Justicia de El Salvador (jurisprudencia.gob.sv)",
+   "title": "Sala de lo Penal decision on art. 34 LRARD, posesión y tenencia de marihuana (Dec 2018)",
+   "url": "https://www.jurisprudencia.gob.sv/DocumentosBoveda/E/1/2010-2019/2018/12/D6FA5.HTML",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "sv-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office",
+   "title": "El Salvador travel advice: Safety and security (updated Nov 5 2026)",
+   "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/safety-and-security",
    "retrieved_on": "2026-11-19"
   }
  ]

@@ -556,22 +556,6 @@
     }
    ]
   },
-  "SV": {
-   "name": "El Salvador",
-   "page": "world-el-salvador.html",
-   "fcdo_title": "El Salvador",
-   "source_id": "fcdo-el-salvador",
-   "updated": "2026-11-05",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "There are severe penalties for drug use and trafficking in El Salvador. Prisons are overcrowded and violent."
-     ]
-    }
-   ]
-  },
   "GQ": {
    "name": "Equatorial Guinea",
    "page": "world-equatorial-guinea.html",
@@ -2391,14 +2375,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Egypt travel advice (last updated by the FCDO 2026-10-27)",
    "url": "https://www.gov.uk/foreign-travel-advice/egypt",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-el-salvador",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "El Salvador travel advice (last updated by the FCDO 2026-11-05)",
-   "url": "https://www.gov.uk/foreign-travel-advice/el-salvador",
    "retrieved_on": "2026-11-20"
   },
   {
