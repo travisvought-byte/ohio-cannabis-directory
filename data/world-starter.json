@@ -756,22 +756,6 @@
     }
    ]
   },
-  "GT": {
-   "name": "Guatemala",
-   "page": "world-guatemala.html",
-   "fcdo_title": "Guatemala",
-   "source_id": "fcdo-guatemala",
-   "updated": "2026-11-16",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "There are severe penalties for drug trafficking and the use of drugs. Guatemalan prisons are overcrowded, violent, and dirty."
-     ]
-    }
-   ]
-  },
   "GN": {
    "name": "Guinea",
    "page": "world-guinea.html",
@@ -2503,14 +2487,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Gibraltar (British Overseas Territory) travel advice (last updated by the FCDO 2026-07-14)",
    "url": "https://www.gov.uk/foreign-travel-advice/gibraltar",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-guatemala",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Guatemala travel advice (last updated by the FCDO 2026-11-16)",
-   "url": "https://www.gov.uk/foreign-travel-advice/guatemala",
    "retrieved_on": "2026-11-20"
   },
   {

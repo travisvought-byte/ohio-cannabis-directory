@@ -6536,6 +6536,75 @@
      "Medical products are sold only through licensed pharmacies authorised by the licence holder."
     ]
    }
+  },
+  "GT": {
+   "name": "Guatemala",
+   "page": "world-guatemala.html",
+   "summary": "Cannabis is illegal in Guatemala, and possessing it for your own use is a crime: 4 months to 2 years in prison and a fine under the 1992 Law against Narco-activity. There is no gram limit; the judge decides whether the amount was reasonable for immediate personal use. Growing carries 5 to 20 years.",
+   "note": "Article numbers refer to Decreto 48-92, the Ley contra la Narcoactividad, as amended.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal",
+     "detail": "Drugs may be used only in the amounts strictly necessary for medical treatment, analysis, research or medicine production by authorised people (art. 3). The UK Foreign Office warns of severe penalties for drug use and trafficking.",
+     "citation": "Decreto 48-92, art. 3; FCDO (Nov 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "gt-dec-48-92",
+      "gt-fcdo"
+     ]
+    },
+    "medical": {
+     "status": "not-permitted",
+     "short": "No cannabis program",
+     "detail": "The law allows controlled drugs only for medical treatment and research by authorised people, with prescriptions for retail sale; no medical cannabis program was found.",
+     "citation": "Decreto 48-92, art. 3",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "gt-dec-48-92"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales",
+     "detail": "Acquiring, selling, importing, storing, transporting or distributing drugs without authorisation carries 12 to 20 years and a fine of up to Q1,000,000.",
+     "citation": "Decreto 48-92, art. 38",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "gt-dec-48-92"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Personal use: 4 months to 2 years",
+     "detail": "Article 39 punishes possession for personal consumption with 4 months to 2 years in prison and a fine of Q200 to Q10,000. It applies only where the amount does not exceed what is reasonable for immediate consumption, judged by the circumstances; otherwise possession can be treated as trafficking under article 38 (12 to 20 years).",
+     "citation": "Decreto 48-92, arts. 38-39",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "gt-dec-48-92"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Growing carries 5 to 20 years",
+     "detail": "Article 36 punishes planting, cultivating or harvesting plants from which drugs can be obtained, without legal authorisation, with 5 to 20 years in prison and a fine of Q10,000 to Q100,000.",
+     "citation": "Decreto 48-92, art. 36",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "gt-dec-48-92"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about Guatemala",
+    "source_ids": [
+     "gt-dec-48-92"
+    ],
+    "points": [
+     "There is no fixed gram limit separating personal use from trafficking; the judge decides.",
+     "If a drug crime results in a death, the law provides for the death penalty or 30 years in prison."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -6918,7 +6987,8 @@
     "SR",
     "VE",
     "BO",
-    "PA"
+    "PA",
+    "GT"
    ]
   },
   {
@@ -10869,6 +10939,22 @@
    "publisher": "Panamá América",
    "title": "Instalan consejo técnico para regular uso del cannabis medicinal (Apr 1 2026)",
    "url": "https://www.panamaamerica.com.pa/sociedad/instalan-consejo-tecnico-para-regular-uso-del-cannabis-medicinal-1260262",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "gt-dec-48-92",
+   "kind": "statute",
+   "publisher": "Ministerio de Gobernación de Guatemala",
+   "title": "Decreto 48-92, Ley contra la Narcoactividad y sus reformas (compiled text, published Jan 2024)",
+   "url": "https://mingob.gob.gt/wp-content/uploads/2024/01/Decreto-48-92-Ley-contra-la-Narcoactividad-y-sus-Reformas.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "gt-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office",
+   "title": "Guatemala travel advice: Safety and security (updated Nov 16 2026)",
+   "url": "https://www.gov.uk/foreign-travel-advice/guatemala/safety-and-security",
    "retrieved_on": "2026-11-19"
   }
  ]
