@@ -1465,22 +1465,6 @@
     }
    ]
   },
-  "MS": {
-   "name": "Montserrat",
-   "page": "world-montserrat.html",
-   "fcdo_title": "Montserrat",
-   "source_id": "fcdo-montserrat",
-   "updated": "2026-07-03",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "The penalties for possession, use or trafficking of illegal drugs are severe. If convicted, offenders can expect prison sentences and heavy fines."
-     ]
-    }
-   ]
-  },
   "MZ": {
    "name": "Mozambique",
    "page": "world-mozambique.html",
@@ -3045,14 +3029,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Montenegro travel advice (last updated by the FCDO 2026-08-13)",
    "url": "https://www.gov.uk/foreign-travel-advice/montenegro",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-montserrat",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Montserrat travel advice (last updated by the FCDO 2026-07-03)",
-   "url": "https://www.gov.uk/foreign-travel-advice/montserrat",
    "retrieved_on": "2026-11-20"
   },
   {

@@ -5586,6 +5586,54 @@
      "No reform bill had been announced as of a September 2026 secondary review."
     ]
    }
+  },
+  "MS": {
+   "name": "Montserrat",
+   "page": "world-montserrat.html",
+   "summary": "Cannabis is illegal in Montserrat. In July 2024 the Legislative Assembly passed an amendment that lets magistrates dismiss small possession cases, cuts fines for up to 30 grams and allows doctor-approved medical cannabinoid imports, but it is not confirmed that the amendment has received assent or come into force. In February 2025 the police commissioner said cannabis was still illegal and visitors could be detained.",
+   "note": "Montserrat is a British Overseas Territory. Anguilla's police non-enforcement policy does not apply here.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal",
+     "detail": "Speaking on February 13, 2025, Police Commissioner Mark Payne said cannabis is still illegal on the island and that visitors who do not know the rules could be detained. He said he encourages officers to be sensible and proportionate, and that use in a private home is much less likely to lead to police action than use in public.",
+     "citation": "Montserrat Focus (Feb 19 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ms-focus-2025"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Any amount is an offence",
+     "detail": "Cannabis is a Class B drug. The 2024 amendment, passed on July 24, 2024, would still treat possession as an offence, but lets a magistrate dismiss a charge for up to 30 grams and limits the fine for 10 to 30 grams to EC$1,000. Its parliamentary listing shows it as sent \"For Assent,\" and no commencement date was found.",
+     "citation": "Bill No. 14 of 2024, s.7(8)-(11) and Fourth Schedule; Legislative Assembly listings; Montserrat Focus",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ms-bill-2024",
+      "ms-summary-2024",
+      "ms-act-listing",
+      "ms-focus-2025"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "The 2024 amendment links small possession cases to rehabilitation instead of punishment: for up to 10 grams no penalty may be imposed, a court may order a rehabilitation programme, and the conviction is expunged once it is completed. It would also treat older convictions for 30 grams or less as spent.",
+    "source_ids": [
+     "ms-bill-2024"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Montserrat",
+    "source_ids": [
+     "ms-bill-2024",
+     "ms-act-listing"
+    ],
+    "points": [
+     "The passed amendment lists about 22 medical conditions and lets the Chief Medical Officer approve imports of medicinal cannabinoid products.",
+     "Whether that amendment is in force has not been confirmed from an official source."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -5955,7 +6003,8 @@
     "BM",
     "KY",
     "VG",
-    "TC"
+    "TC",
+    "MS"
    ]
   },
   {
@@ -9540,6 +9589,38 @@
    "publisher": "The Cannigma (secondary)",
    "title": "Is Marijuana Legal in Turks and Caicos? Laws and Penalties (last reviewed Sep 17 2026)",
    "url": "https://cannigma.com/regulation/is-weed-legal-in-turks-and-caicos/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ms-bill-2024",
+   "kind": "statute",
+   "publisher": "Montserrat Legislative Assembly",
+   "title": "Drugs (Prevention of Misuse) (Amendment) Bill 2024, Bill No. 14 of 2024 (submitted Jun 18 2024)",
+   "url": "https://parliament.ms/wp-content/uploads/2024/06/Bill-No.-14-of-2024-Drugs-Prevention-of-Misuse-Amendment-Bill-2024-submitted-to-Leg-Ass-18.06.2024.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ms-summary-2024",
+   "kind": "government",
+   "publisher": "Montserrat Legislative Assembly",
+   "title": "Summary Report of sittings, July 23-24 2024",
+   "url": "https://parliament.ms/wp-content/uploads/2024/07/Summary-Report-for-July-23-2024.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ms-act-listing",
+   "kind": "government",
+   "publisher": "Montserrat Legislative Assembly",
+   "title": "Act No. 24 of 2024, Drugs (Prevention of Misuse) (Amendment) Act 2024, listed \"For Assent\" (posted Sep 30 2024)",
+   "url": "https://parliament.ms/?p=4929",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ms-focus-2025",
+   "kind": "news",
+   "publisher": "Montserrat Focus",
+   "title": "Montserrat's police chief reminds visitors that cannabis is still illegal (Feb 19 2025)",
+   "url": "https://montserratfocus.com/montserrats-police-chief-reminds-visitors-that-cannabis-is-still-illegal/",
    "retrieved_on": "2026-11-19"
   }
  ]
