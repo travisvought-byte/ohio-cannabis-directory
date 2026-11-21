@@ -5634,6 +5634,85 @@
      "Whether that amendment is in force has not been confirmed from an official source."
     ]
    }
+  },
+  "CW": {
+   "name": "Curaçao",
+   "page": "world-curacao.html",
+   "summary": "Cannabis is illegal in Curaçao. Its Opium Ordinance 2024 bans growing cannabis and bans possessing, selling, supplying, importing and exporting it, with no small-quantity threshold. Curaçao is part of the Kingdom of the Netherlands but has its own drug law, separate from the Dutch one.",
+   "note": "The ordinance is in Dutch. Article numbers below refer to the Opiumlandsverordening 2024 as published in the Publicatieblad.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal",
+     "detail": "Article 4 prohibits possessing or using cannabis (hennep), its resin and preparations such as hashish. Breaking that ban is classed as a crime (misdrijf) under article 13.",
+     "citation": "Opiumlandsverordening 2024, arts. 4 and 13",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cw-opium-2024"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "No cannabis program; general medical exceptions only",
+     "detail": "There is no medical cannabis program. The ordinance lets pharmacists and authorised doctors handle controlled substances for medical purposes, and exempts a person who shows they need the amount found for their own medical use and obtained it lawfully. Whether any cannabis product is available this way was not confirmed.",
+     "citation": "Opiumlandsverordening 2024, art. 7(2)-(3)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cw-opium-2024"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales",
+     "detail": "Selling, supplying and transporting cannabis are prohibited under article 4, and advertising aimed at promoting its sale is banned under article 4a.",
+     "citation": "Opiumlandsverordening 2024, arts. 4 and 4a",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cw-opium-2024"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "No amount is allowed",
+     "detail": "The ordinance sets no quantity threshold and no lower penalty for small amounts; the same penalty article (11) covers possession of any quantity.",
+     "citation": "Opiumlandsverordening 2024, arts. 4 and 11",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cw-opium-2024"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Growing is banned",
+     "detail": "Article 2a states that cultivating plants of the genus Cannabis is prohibited, unless the Minister grants a permit under articles 7 and 8.",
+     "citation": "Opiumlandsverordening 2024, arts. 2a, 7-8",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cw-opium-2024"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "Do not carry cannabis in or out",
+     "detail": "Importing, exporting and transit of cannabis are prohibited without a ministerial permit. The UK Foreign Office warns that the Dutch Caribbean islands are used to smuggle drugs and advises travellers never to carry a package for anyone.",
+     "citation": "Opiumlandsverordening 2024, arts. 4 and 6; FCDO (Dec 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cw-opium-2024",
+      "cw-fcdo"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about Curaçao",
+    "source_ids": [
+     "cw-opium-2024"
+    ],
+    "points": [
+     "Curaçao makes its own drug law; the ordinance has no exception like the Dutch coffeeshop system.",
+     "The 2024 ordinance replaced the earlier Opium Ordinance and keeps cannabis fully prohibited."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -6004,7 +6083,8 @@
     "KY",
     "VG",
     "TC",
-    "MS"
+    "MS",
+    "CW"
    ]
   },
   {
@@ -9621,6 +9701,22 @@
    "publisher": "Montserrat Focus",
    "title": "Montserrat's police chief reminds visitors that cannabis is still illegal (Feb 19 2025)",
    "url": "https://montserratfocus.com/montserrats-police-chief-reminds-visitors-that-cannabis-is-still-illegal/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cw-opium-2024",
+   "kind": "statute",
+   "publisher": "Government of Curaçao (Publicatieblad)",
+   "title": "Opiumlandsverordening 2024, P.B. 2024 no. 74 (landsverordening of Jul 5 2024)",
+   "url": "https://gobiernu.cw/wp-content/uploads/2024/07/74.-Opiumlv.-2024-2.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cw-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office",
+   "title": "Curaçao travel advice: Safety and security (updated Dec 10 2025)",
+   "url": "https://www.gov.uk/foreign-travel-advice/curacao/safety-and-security",
    "retrieved_on": "2026-11-19"
   }
  ]

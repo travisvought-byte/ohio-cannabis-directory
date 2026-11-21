@@ -578,22 +578,6 @@
     }
    ]
   },
-  "CW": {
-   "name": "Curaçao",
-   "page": "world-curacao.html",
-   "fcdo_title": "Curaçao",
-   "source_id": "fcdo-curacao",
-   "updated": "2025-12-10",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Drug smuggling",
-     "paragraphs": [
-      "Criminals continue to use the islands of the Dutch Caribbean to smuggle illegal drugs from South America to Europe and North America. Because of this problem, never leave luggage unattended when departing the country. Do not discuss or agree to carry a package for anyone. You may be asked to have a body scan at some airports. Dutch authorities generally screen all baggage and passengers from the Dutch Caribbean."
-     ]
-    }
-   ]
-  },
   "CY": {
    "name": "Cyprus",
    "page": "world-cyprus.html",
@@ -2621,14 +2605,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Cuba travel advice (last updated by the FCDO 2026-09-25)",
    "url": "https://www.gov.uk/foreign-travel-advice/cuba",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-curacao",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Curaçao travel advice (last updated by the FCDO 2025-12-10)",
-   "url": "https://www.gov.uk/foreign-travel-advice/curacao",
    "retrieved_on": "2026-11-20"
   },
   {
