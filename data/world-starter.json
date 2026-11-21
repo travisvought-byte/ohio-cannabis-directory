@@ -838,24 +838,6 @@
     }
    ]
   },
-  "HT": {
-   "name": "Haiti",
-   "page": "world-haiti.html",
-   "fcdo_title": "Haiti",
-   "source_id": "fcdo-haiti",
-   "updated": "2025-12-10",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "Penalties for possession, use or trafficking of illegal drugs are severe. Convicted offenders can expect lengthy legal proceedings, jail sentences and fines.",
-      "Pack all luggage yourself and do not carry items through customs for anyone else.",
-      "If you’re caught in possession of drugs or suspected of drug trafficking, you may be arrested and jailed for weeks or months before appearing in court. Prison conditions in Haiti are very poor."
-     ]
-    }
-   ]
-  },
   "HN": {
    "name": "Honduras",
    "page": "world-honduras.html",
@@ -2643,14 +2625,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Guyana travel advice (last updated by the FCDO 2025-12-30)",
    "url": "https://www.gov.uk/foreign-travel-advice/guyana",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-haiti",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Haiti travel advice (last updated by the FCDO 2025-12-10)",
-   "url": "https://www.gov.uk/foreign-travel-advice/haiti",
    "retrieved_on": "2026-11-20"
   },
   {

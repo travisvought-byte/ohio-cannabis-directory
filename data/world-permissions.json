@@ -6106,6 +6106,55 @@
      "Failing to report a drug offence you know about can itself carry 2 to 5 years."
     ]
    }
+  },
+  "HT": {
+   "name": "Haiti",
+   "page": "world-haiti.html",
+   "summary": "Cannabis is illegal in Haiti. Drug offences fall under a 2001 drug-control law, and the UK government warns that penalties for possession, use or trafficking are severe and that people can be held for weeks or months before a court date. New Penal and Criminal Procedure Codes are due to take effect in January 2027.",
+   "note": "No official text of the 2001 law was retrieved, so this page does not state specific sentences. Check the new codes once they take effect.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal",
+     "detail": "The UK Foreign Office says penalties for possession, use or trafficking of illegal drugs are severe, and convicted offenders can expect lengthy legal proceedings, jail sentences and fines.",
+     "citation": "FCDO travel advice (Dec 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ht-fcdo"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Any amount can mean jail",
+     "detail": "Anyone caught with drugs or suspected of trafficking may be arrested and held for weeks or months before appearing in court, and the Foreign Office describes prison conditions as very poor.",
+     "citation": "FCDO travel advice (Dec 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ht-fcdo"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "Do not carry any cannabis",
+     "detail": "The Foreign Office advises packing all luggage yourself and not carrying items through customs for anyone else.",
+     "citation": "FCDO travel advice (Dec 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ht-fcdo"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about Haiti",
+    "source_ids": [
+     "ht-moniteur-2014",
+     "ht-undp-2026"
+    ],
+    "points": [
+     "Drug control rests on the law of September 24, 2001 on the control and repression of illicit drug trafficking.",
+     "New Penal and Criminal Procedure Codes, replacing texts in use since 1835, are set to take effect in January 2027."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -6482,7 +6531,8 @@
     "TC",
     "MS",
     "DO",
-    "CU"
+    "CU",
+    "HT"
    ]
   },
   {
@@ -6497,9 +6547,7 @@
    ]
   }
  ],
- "next_up": [
-  "Caribbean islands"
- ],
+ "next_up": [],
  "sources": [
   {
    "id": "ca-justice",
@@ -10275,6 +10323,30 @@
    "publisher": "UK Foreign, Commonwealth & Development Office",
    "title": "Cuba travel advice: Safety and security (updated Sep 25 2026)",
    "url": "https://www.gov.uk/foreign-travel-advice/cuba/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ht-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office",
+   "title": "Haiti travel advice: Safety and security (updated Dec 10 2025)",
+   "url": "https://www.gov.uk/foreign-travel-advice/haiti/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ht-moniteur-2014",
+   "kind": "government",
+   "publisher": "Le Moniteur, Journal officiel de la République d'Haïti",
+   "title": "No. 87, May 9 2014 (anti-corruption law citing the Loi du 24 septembre 2001 relative au contrôle et à la répression du trafic illicite de la drogue)",
+   "url": "https://budget.gouv.ht/storage/app/uploads/public/5f4/5d6/fd8/5f45d6fd800db250475447.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ht-undp-2026",
+   "kind": "organization",
+   "publisher": "United Nations Development Programme (UNDP)",
+   "title": "Haïti prépare la mise en œuvre de ses nouveaux Codes pénal et de procédure pénale (Jul 16 2026)",
+   "url": "https://www.undp.org/fr/node/595356",
    "retrieved_on": "2026-11-19"
   }
  ]
