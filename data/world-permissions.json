@@ -5956,6 +5956,86 @@
      "A 2024 law lets island governors close premises used for drug offences."
     ]
    }
+  },
+  "DO": {
+   "name": "Dominican Republic",
+   "page": "world-dominican-republic.html",
+   "summary": "Cannabis is illegal in the Dominican Republic, with no medical program. Under Law 50-88, up to 20 grams counts as simple possession, which carries 6 months to 2 years in prison and a fine; more than 20 grams is treated as distribution, and more than a pound as trafficking. Growing even a few plants is a prison offence.",
+   "note": "Carrying any amount for sale makes a person a distributor whatever the quantity. Courts can send a person found to be dependent to treatment, and time spent in rehabilitation counts toward the sentence.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal",
+     "detail": "Law 50-88 places marijuana in Category I, substances with high abuse potential and no accepted medical use. In March 2026 the US Embassy described the country as having a zero-tolerance policy on drugs.",
+     "citation": "Ley 50-88, art. 8; El Día (Mar 14 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "do-ley-50-88",
+      "do-eldia-2026"
+     ]
+    },
+    "medical": {
+     "status": "not-permitted",
+     "short": "No medical program",
+     "detail": "The US Embassy said in March 2026 that the Dominican Republic has no medical marijuana program and does not recognise US medical cannabis cards. It also warned that some CBD products may be treated like marijuana.",
+     "citation": "El Día, reporting the US Embassy (Mar 14 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "do-eldia-2026"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales",
+     "detail": "There is no licensed market. Selling or carrying cannabis for sale is treated as distribution or trafficking.",
+     "citation": "Ley 50-88, art. 6",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "do-ley-50-88"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Up to 20 grams still means prison",
+     "detail": "Up to 20 grams is classed as simple possession (art. 6), punishable by 6 months to 2 years in prison and a fine (art. 75). From 20 grams to one pound the person is classed as a distributor, and above one pound as a trafficker. Under article 6(c), anyone carrying the drug for distribution or sale is treated as a distributor regardless of quantity.",
+     "citation": "Ley 50-88, arts. 6 and 75 (as amended by Ley 17-95)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "do-ley-50-88"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Growing is a serious offence",
+     "detail": "Article 21 prohibits sowing or growing cannabis. Under article 64, growing up to 20 plants carries 2 to 5 years in prison and a fine; more plants carry longer sentences, and unauthorised cultivation is otherwise treated as trafficking.",
+     "citation": "Ley 50-88, arts. 21 and 64",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "do-ley-50-88"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "Do not carry any cannabis product",
+     "detail": "The US Embassy called taking cannabis into or out of the country a serious crime that can lead to detention and prosecution. The UK Foreign Office says possession of even small quantities of any drug can lead to a fine and a prison sentence.",
+     "citation": "El Día (Mar 14 2026); FCDO (Aug 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "do-eldia-2026",
+      "do-fcdo"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about the Dominican Republic",
+    "source_ids": [
+     "do-ley-50-88"
+    ],
+    "points": [
+     "The law sorts people by quantity into user, distributor and trafficker, each with its own penalties.",
+     "A court-ordered rehabilitation period counts toward the sentence, and full recovery can end it."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -6330,7 +6410,8 @@
     "KY",
     "VG",
     "TC",
-    "MS"
+    "MS",
+    "DO"
    ]
   },
   {
@@ -10083,6 +10164,30 @@
    "publisher": "Kingdom of the Netherlands (Staatsblad)",
    "title": "Besluit of Jan 23 2025 setting entry into force of Stb. 2024, 377 on Apr 1 2025 (Stb. 2025, 18)",
    "url": "https://eerstekamer.nl/9370000/1/j9vvkfvj6b325az/vmkgckgk9hvo/f=y.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "do-ley-50-88",
+   "kind": "statute",
+   "publisher": "Dominican Republic (text filed with the WTO import-licensing registry)",
+   "title": "Ley 50-88 sobre Drogas y Sustancias Controladas, with amendments by Leyes 35-90 and 17-95",
+   "url": "https://www.importlicensing.wto.org/sites/default/files/members/44/Ley%20No.50%20-%20Drogas%20y%20sustancias%20controladas_30.05.1988.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "do-eldia-2026",
+   "kind": "news",
+   "publisher": "El Día",
+   "title": "Advertencia de EEUU: tarjetas de marihuana medicinal no son válidas en RD (Mar 14 2026)",
+   "url": "https://eldia.com.do/advertencia-de-eeuu-tarjetas-de-marihuana-medicinal-no-son-validas-en-rd/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "do-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office",
+   "title": "Dominican Republic travel advice: Safety and security (updated Aug 7 2026)",
+   "url": "https://www.gov.uk/foreign-travel-advice/dominican-republic/safety-and-security",
    "retrieved_on": "2026-11-19"
   }
  ]
