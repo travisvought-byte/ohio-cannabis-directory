@@ -6449,6 +6449,93 @@
      "Personal use leads to compulsory treatment rather than a fine or prison."
     ]
    }
+  },
+  "PA": {
+   "name": "Panama",
+   "page": "world-panama.html",
+   "summary": "Recreational cannabis is illegal in Panama, but possessing a small amount for personal use is punished with day-fines, weekend arrest or community work rather than prison. Since Law 242 of 2021 Panama allows medical cannabis products; after slow rule-making, licensed companies began selling prescription CBD products through authorised pharmacies in 2026.",
+   "note": "What counts as a small personal amount is decided case by case by the Institute of Legal Medicine and Forensic Sciences, not by a fixed gram limit.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal",
+     "detail": "Possessing drugs is an offence under the Penal Code. Possession that is objectively not for personal use carries 8 to 12 years in prison (art. 321).",
+     "citation": "Código Penal, arts. 320-321",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "pa-cp"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Yes, prescription products under Law 242",
+     "detail": "Law 242 of October 13, 2021 regulates the medicinal and therapeutic use of cannabis. Executive Decree 6 of April 4, 2025 lets licence holders sell medical cannabis products through licensed pharmacies, and in 2026 a first pharmacy began selling CBD products on prescription. The Health Ministry installed a technical council for the program in April 2026.",
+     "citation": "Chambers (2025); La Prensa (2026); Panamá América (Apr 1 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "pa-ley-242",
+      "pa-prensa-2026",
+      "pa-pa-2026"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No recreational sales",
+     "detail": "There is no adult-use market. Only licensed medical cannabis products are sold, through authorised pharmacies and on prescription.",
+     "citation": "La Prensa (2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "pa-prensa-2026"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "Small personal amounts: fine or community work",
+     "detail": "Under article 320, possessing a small amount for personal use is punished with 50 to 250 day-fines, weekend arrest or community work. If the person is dependent, a treatment measure applies instead. The Institute of Legal Medicine decides what counts as a small amount in each case.",
+     "citation": "Código Penal, art. 320",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "pa-cp"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Growing for drugs is a serious crime",
+     "detail": "Article 314 punishes sowing, growing, keeping or guarding seeds or plants that can be used to produce illicit drugs for sale with 10 to 15 years in prison. The law has no home-grow allowance.",
+     "citation": "Código Penal, art. 314",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "pa-cp"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "Do not bring cannabis",
+     "detail": "Bringing even a small amount into the country for personal use is punished under article 313 with 2 to 4 years, day-fines or treatment measures.",
+     "citation": "Código Penal, art. 313",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "pa-cp"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "Pharmacies must change their operating licence and get the licence holder's written authorisation before stocking medical cannabis products; those that do not already handle controlled substances must first pass a technical inspection by the national pharmacy and drugs directorate.",
+    "source_ids": [
+     "pa-prensa-2026"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Panama",
+    "source_ids": [
+     "pa-cp",
+     "pa-prensa-2026"
+    ],
+    "points": [
+     "Small personal amounts bring fines or community work, not prison.",
+     "Medical products are sold only through licensed pharmacies authorised by the licence holder."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -6830,7 +6917,8 @@
     "HT",
     "SR",
     "VE",
-    "BO"
+    "BO",
+    "PA"
    ]
   },
   {
@@ -10749,6 +10837,38 @@
    "publisher": "UK Foreign, Commonwealth & Development Office",
    "title": "Bolivia travel advice: Safety and security (updated Sep 22 2026)",
    "url": "https://www.gov.uk/foreign-travel-advice/bolivia/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "pa-cp",
+   "kind": "statute",
+   "publisher": "Órgano Judicial de Panamá",
+   "title": "Código Penal (Ley 14 de 2007), texto actualizado a diciembre de 2020",
+   "url": "https://www.organojudicial.gob.pa/uploads/blogs.dir/2/2020/12/462/codigo-penal-actualizado-al-mes-de-diciembre-de-2020.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "pa-ley-242",
+   "kind": "compilation",
+   "publisher": "Chambers and Partners, Medical Cannabis & Cannabinoid Regulation 2025 (secondary)",
+   "title": "Panama: Law 242 of October 13 2021 regulating the medicinal and therapeutic use of cannabis",
+   "url": "https://practiceguides.chambers.com/practice-guides/comparison/1003/16304/25531-25538-25540",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "pa-prensa-2026",
+   "kind": "news",
+   "publisher": "La Prensa (Panamá)",
+   "title": "Cannabis medicinal gana terreno en Panamá: esto cambia para las farmacias (2026, Comunicado 019-DNFD-2026)",
+   "url": "https://www.prensa.com/sociedad/cannabis-medicinal-gana-terreno-en-panama-esto-cambia-para-las-farmacias/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "pa-pa-2026",
+   "kind": "news",
+   "publisher": "Panamá América",
+   "title": "Instalan consejo técnico para regular uso del cannabis medicinal (Apr 1 2026)",
+   "url": "https://www.panamaamerica.com.pa/sociedad/instalan-consejo-tecnico-para-regular-uso-del-cannabis-medicinal-1260262",
    "retrieved_on": "2026-11-19"
   }
  ]

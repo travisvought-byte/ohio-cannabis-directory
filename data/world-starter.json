@@ -1504,23 +1504,6 @@
     }
    ]
   },
-  "PA": {
-   "name": "Panama",
-   "page": "world-panama.html",
-   "fcdo_title": "Panama",
-   "source_id": "fcdo-panama",
-   "updated": "2026-10-09",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "Do not become involved with drugs of any kind. You can get a prison sentence for possessing even a small quantity of drugs.",
-      "The judicial process is slow and sentencing may take up to 2 years, during which you are likely to be detained. Conditions in prisons and other detention facilities in Panama are often harsh. Most facilities are overcrowded with limited access to healthcare. There have been recent cases of riots resulting in prisoner deaths."
-     ]
-    }
-   ]
-  },
   "PG": {
    "name": "Papua New Guinea",
    "page": "world-papua-new-guinea.html",
@@ -2864,14 +2847,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Palestine travel advice (last updated by the FCDO 2026-11-18)",
    "url": "https://www.gov.uk/foreign-travel-advice/palestine",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-panama",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Panama travel advice (last updated by the FCDO 2026-10-09)",
-   "url": "https://www.gov.uk/foreign-travel-advice/panama",
    "retrieved_on": "2026-11-20"
   },
   {
