@@ -204,23 +204,6 @@
     }
    ]
   },
-  "BO": {
-   "name": "Bolivia",
-   "page": "world-bolivia.html",
-   "fcdo_title": "Bolivia",
-   "source_id": "fcdo-bolivia",
-   "updated": "2026-09-22",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "Bolivia is the world’s third largest producer of cocaine. There are harsh penalties for those caught trafficking or in possession of drugs. The minimum sentence is 8 years and prison conditions are very poor. Never leave luggage unattended when departing the country and avoid any contact with illegal drugs. Under Bolivian law carrying any amount of illegal drugs or substances is considered drug trafficking.",
-      "All passengers on departing international flights from Bolivia will have their hold and hand baggage searched by the Police Narcotics Division, and this will include a search of your person and your bags by a sniffer dog."
-     ]
-    }
-   ]
-  },
   "BA": {
    "name": "Bosnia and Herzegovina",
    "page": "world-bosnia-and-herzegovina.html",
@@ -2297,14 +2280,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Bhutan travel advice (last updated by the FCDO 2025-12-10)",
    "url": "https://www.gov.uk/foreign-travel-advice/bhutan",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-bolivia",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Bolivia travel advice (last updated by the FCDO 2026-09-22)",
-   "url": "https://www.gov.uk/foreign-travel-advice/bolivia",
    "retrieved_on": "2026-11-20"
   },
   {

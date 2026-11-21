@@ -6368,6 +6368,87 @@
      "Growing even a few plants is punished as a trafficking-level offence."
     ]
    }
+  },
+  "BO": {
+   "name": "Bolivia",
+   "page": "world-bolivia.html",
+   "summary": "Cannabis is illegal in Bolivia, where Law 1008 prohibits its consumption. A user caught with a minimal amount is sent to a drug-dependence institute for treatment rather than prison, but anyone over that amount, judged as about 48 hours of use by two medical experts, is prosecuted for trafficking, which carries 10 to 25 years.",
+   "note": "The coca leaf has its own legal regime in Bolivia; this page covers cannabis only. The UK Foreign Office warns that carrying any amount of illegal drugs can be treated as trafficking.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal; users are sent to treatment",
+     "detail": "Article 37 prohibits the consumption of List I substances, which include cannabis and its resin. Under article 49 a dependent or occasional user caught with a minimal amount is committed to a public or private drug-dependence institute for treatment.",
+     "citation": "Ley 1008, arts. 37 and 49",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bo-ley-1008"
+     ]
+    },
+    "medical": {
+     "status": "not-permitted",
+     "short": "No cannabis program",
+     "detail": "List I substances, including cannabis, can be imported only in limited amounts for research by authorised institutions (art. 38); the law makes no medical exception for cannabis.",
+     "citation": "Ley 1008, arts. 35-39",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bo-ley-1008"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales",
+     "detail": "Trafficking in controlled substances carries 10 to 25 years under article 48. The UK Foreign Office says the minimum sentence is 8 years and prison conditions are very poor.",
+     "citation": "Ley 1008, art. 48; FCDO (Sep 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bo-ley-1008",
+      "bo-fcdo"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Above a minimal amount means trafficking charges",
+     "detail": "The minimal amount is set by two specialists from a public drug-dependence institute; the implementing rules define it as the quantity equal to 48 hours of use. Above it, the case falls under article 48, trafficking, with 10 to 25 years in prison and fines.",
+     "citation": "Ley 1008, arts. 48-49; OAS legislation library",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bo-ley-1008",
+      "bo-ds-22099"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Growing carries prison",
+     "detail": "Article 34 prohibits producing or keeping controlled plants and seeds, and article 46 punishes illicitly sowing, growing or harvesting them with 1 to 2 years in prison, or 2 to 4 years for a repeat offence.",
+     "citation": "Ley 1008, arts. 34 and 46",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bo-ley-1008"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "Do not carry any cannabis",
+     "detail": "The UK Foreign Office says carrying any amount of illegal drugs is considered trafficking under Bolivian law and advises never leaving luggage unattended.",
+     "citation": "FCDO travel advice (Sep 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "bo-fcdo"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about Bolivia",
+    "source_ids": [
+     "bo-ley-1008",
+     "bo-ds-22099"
+    ],
+    "points": [
+     "There is no fixed gram limit: two medical experts decide what counts as a personal amount.",
+     "Personal use leads to compulsory treatment rather than a fine or prison."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -6748,7 +6829,8 @@
     "CU",
     "HT",
     "SR",
-    "VE"
+    "VE",
+    "BO"
    ]
   },
   {
@@ -10643,6 +10725,30 @@
    "publisher": "UK Foreign, Commonwealth & Development Office",
    "title": "Venezuela travel advice: Safety and security (updated Nov 18 2026)",
    "url": "https://www.gov.uk/foreign-travel-advice/venezuela/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bo-ley-1008",
+   "kind": "statute",
+   "publisher": "Plurinational State of Bolivia (text filed with the WTO import-licensing registry)",
+   "title": "Ley 1008 del Régimen de la Coca y Sustancias Controladas (Jul 19 1988)",
+   "url": "https://www.importlicensing.wto.org/sites/default/files/members/14/Ley%20No.1008%20-%20Coca%20y%20sustancias%20controladas_19.07.1988.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bo-ds-22099",
+   "kind": "organization",
+   "publisher": "Organization of American States (MLA legislation library)",
+   "title": "Bolivian drug legislation in English (mutual legal assistance library), on possession for immediate personal consumption",
+   "url": "https://www.oas.org/ext/Portals/33/Files/MLA/bol_mla_leg1_en.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "bo-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office",
+   "title": "Bolivia travel advice: Safety and security (updated Sep 22 2026)",
+   "url": "https://www.gov.uk/foreign-travel-advice/bolivia/safety-and-security",
    "retrieved_on": "2026-11-19"
   }
  ]
