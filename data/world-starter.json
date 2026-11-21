@@ -2146,22 +2146,6 @@
     }
    ]
   },
-  "VE": {
-   "name": "Venezuela",
-   "page": "world-venezuela.html",
-   "fcdo_title": "Venezuela",
-   "source_id": "fcdo-venezuela",
-   "updated": "2026-11-18",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "Drug trafficking is a serious crime in Venezuela. Detection methods are sophisticated, and drug traffickers should expect to be arrested. Conviction leads to a lengthy prison sentence of between 8 and 15 years. Conditions in Venezuelan jails are harsh, dangerous, and among the worst in the region."
-     ]
-    }
-   ]
-  },
   "VN": {
    "name": "Vietnam",
    "page": "world-vietnam.html",
@@ -3201,14 +3185,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Vanuatu travel advice (last updated by the FCDO 2026-03-19)",
    "url": "https://www.gov.uk/foreign-travel-advice/vanuatu",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-venezuela",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Venezuela travel advice (last updated by the FCDO 2026-11-18)",
-   "url": "https://www.gov.uk/foreign-travel-advice/venezuela",
    "retrieved_on": "2026-11-20"
   },
   {

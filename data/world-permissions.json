@@ -6300,6 +6300,74 @@
      "Industrial hemp growing was allowed in principle in 2018, with the conditions left to a later law."
     ]
    }
+  },
+  "VE": {
+   "name": "Venezuela",
+   "page": "world-venezuela.html",
+   "summary": "Cannabis is illegal in Venezuela. Under the 2010 Organic Drug Law, a consumer found with a personal dose is put through \"social security measures\" such as reintegration, follow-up and community service rather than prison. Possession of up to 20 grams for other purposes carries 1 to 2 years, and growing cannabis is treated as trafficking.",
+   "note": "Article numbers refer to the Ley Orgánica de Drogas published in Gaceta Oficial No. 39.510.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal",
+     "detail": "Use outside a doctor's prescribed treatment is unlawful. A consumer with a personal dose is not given the article 153 prison sentence but is subject to social security measures under articles 130 and 131.",
+     "citation": "Ley Orgánica de Drogas, arts. 3, 130-131 and 153",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ve-lod-2010"
+     ]
+    },
+    "medical": {
+     "status": "not-permitted",
+     "short": "No cannabis program",
+     "detail": "The law limits controlled substances strictly to the amounts needed for medical treatment and declares any other use unlawful; no medical cannabis program was found.",
+     "citation": "Ley Orgánica de Drogas, art. 37",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ve-lod-2010"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales",
+     "detail": "There is no licensed market. The UK Foreign Office says drug trafficking convictions bring 8 to 15 years in prison and that Venezuelan jails are among the worst in the region.",
+     "citation": "FCDO travel advice (Nov 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ve-fcdo"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Up to 20 grams: treatment measures or 1-2 years",
+     "detail": "Article 153 sets the reference amount at up to 20 grams of marijuana, or 5 grams of genetically modified marijuana. Possessing it for purposes other than lawful activities or personal consumption carries 1 to 2 years in prison. A proven personal dose leads instead to measures such as social reintegration, follow-up and community service.",
+     "citation": "Ley Orgánica de Drogas, arts. 130-131 and 153",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ve-lod-2010"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Growing carries 6 to 18 years",
+     "detail": "Article 151 punishes illicitly sowing, growing or harvesting these plants with 12 to 18 years in prison, or 6 to 10 years where it involves no more than 10 plants or 300 grams of seed or resin. Only Health Ministry-authorised research cultivation is allowed (art. 57).",
+     "citation": "Ley Orgánica de Drogas, arts. 57 and 151",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ve-lod-2010"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about Venezuela",
+    "source_ids": [
+     "ve-lod-2010"
+    ],
+    "points": [
+     "The law has a separate, lower threshold for \"genetically modified\" marijuana: 5 grams instead of 20.",
+     "Growing even a few plants is punished as a trafficking-level offence."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -6679,7 +6747,8 @@
     "DO",
     "CU",
     "HT",
-    "SR"
+    "SR",
+    "VE"
    ]
   },
   {
@@ -10558,6 +10627,22 @@
    "publisher": "UK Foreign, Commonwealth & Development Office",
    "title": "Suriname travel advice: Safety and security (updated Dec 10 2025)",
    "url": "https://www.gov.uk/foreign-travel-advice/suriname/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ve-lod-2010",
+   "kind": "statute",
+   "publisher": "República Bolivariana de Venezuela, Gaceta Oficial (copy on Legiscomex)",
+   "title": "Ley Orgánica de Drogas, Gaceta Oficial No. 39.510 (Sep 15 2010)",
+   "url": "https://legiscomex.com/BancoMedios/Imagenes/ley_drogas.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ve-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office",
+   "title": "Venezuela travel advice: Safety and security (updated Nov 18 2026)",
+   "url": "https://www.gov.uk/foreign-travel-advice/venezuela/safety-and-security",
    "retrieved_on": "2026-11-19"
   }
  ]
