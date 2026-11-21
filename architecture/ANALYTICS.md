@@ -1,6 +1,6 @@
 # Directory usage measurement
 
-Open https://travisvought.goatcounter.com/ and look for paths beginning `action:`.
+Open https://vhg-guide.goatcounter.com/ and look for paths beginning `action:`.
 
 - `navigate:<page>`: section clicks from each source page.
 - `download:<filename>`: PDF and data link clicks; a click is not proof of a completed download.

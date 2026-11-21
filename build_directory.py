@@ -848,7 +848,7 @@ window.addEventListener('popstate',()=>{loadSearch();syncLanes();render()});
 loadSearch();syncLanes();render();
 </script>
 <script
-  data-goatcounter="https://travisvought.goatcounter.com/count"
+  data-goatcounter="https://vhg-guide.goatcounter.com/count"
   async
   src="//gc.zgo.at/count.js">
 </script>

@@ -71,7 +71,7 @@ $('group').addEventListener('change',()=>{selected='';render()});
 $('q').addEventListener('input',()=>{selected='';render()});$('clear').onclick=()=>{selected='';$('q').value='';$('group').value='';render();$('q').focus()};
 $('share').onclick=async()=>{try{await navigator.clipboard.writeText(searchURL().href);$('share-status').textContent='Link copied.'}catch{$('share-status').textContent='Copy the page address to share this search.'}};
 window.addEventListener('popstate',()=>{loadSearch();render()});loadSearch();render();
-</script><script data-goatcounter="https://travisvought.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></body></html>'''
+</script><script data-goatcounter="https://vhg-guide.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></body></html>'''
 
 if __name__ == '__main__':
     main()

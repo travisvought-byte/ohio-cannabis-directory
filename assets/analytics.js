@@ -18,7 +18,7 @@
   function loadCounter() {
     if (document.querySelector('script[data-goatcounter]')) return;
     var script = document.createElement('script'); script.async=true; script.src='https://gc.zgo.at/count.js';
-    script.dataset.goatcounter='https://travisvought.goatcounter.com/count';
+    script.dataset.goatcounter='https://vhg-guide.goatcounter.com/count';
     script.onload=function(){if(typeof window.goatcounter.count==='function'){pending.forEach(function(e){window.goatcounter.count(e);});pending=[];}};
     document.head.appendChild(script);
   }
