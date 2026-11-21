@@ -6217,6 +6217,89 @@
      "Courts can order counselling instead of the old option of a reduced sentence for 5 grams."
     ]
    }
+  },
+  "SR": {
+   "name": "Suriname",
+   "page": "world-suriname.html",
+   "summary": "Cannabis is illegal in Suriname. The Narcotic Drugs Act bans growing, possessing, using, selling and importing it, with no small-quantity threshold. Since a 2018 amendment, cannabis with no more than 1.5% THC is outside the possession ban, and growing it for industrial purposes is allowed on conditions still to be set by law.",
+   "note": "Article numbers refer to the Wet verdovende middelen of 1998, as amended in 2002 and 2018.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal",
+     "detail": "Article 4 prohibits possessing or using cannabis, and a 2024 government drug alert repeats that possessing, trading and producing cannabis is illegal in Suriname.",
+     "citation": "Wet verdovende middelen, art. 4; gov.sr alert (Jul 2024)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "sr-wvm",
+      "sr-gov-2024"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "No cannabis program; general medical exceptions only",
+     "detail": "There is no medical cannabis program. Article 7 lets pharmacists and dispensing doctors handle controlled substances for medical purposes and exempts lawfully obtained supplies for a person's own medical use. Whether any cannabis product is available this way was not confirmed.",
+     "citation": "Wet verdovende middelen, art. 7",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "sr-wvm"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales",
+     "detail": "Selling and supplying cannabis are prohibited under article 4, and since 2018 promoting its sale is banned except for purely medical or scientific information.",
+     "citation": "Wet verdovende middelen, art. 4; S.B. 2018 no. 64, new art. 4a",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "sr-wvm",
+      "sr-sb-2018-64"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Any amount is an offence",
+     "detail": "The law sets no small-quantity threshold. Intentional possession carries up to 13 years in prison under article 11(3) of the consolidated text. The 2018 amendment exempts cannabis with 1.5% THC or less from the possession ban.",
+     "citation": "Wet verdovende middelen, arts. 4 and 11; S.B. 2018 no. 64",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "sr-wvm",
+      "sr-sb-2018-64"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Growing is banned",
+     "detail": "Article 2 prohibits cultivating cannabis. The 2018 amendment extended the ban from Cannabis sativa to all cannabis, with an exemption only for industrial growing at 1.5% THC or less under conditions to be set by a later law.",
+     "citation": "Wet verdovende middelen, art. 2; S.B. 2018 no. 64",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "sr-wvm",
+      "sr-sb-2018-64"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "Do not carry any cannabis",
+     "detail": "Importing and exporting cannabis are prohibited under article 4. The UK Foreign Office warns of severe penalties for all drug offences and advises packing your own luggage.",
+     "citation": "Wet verdovende middelen, art. 4; FCDO (Dec 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "sr-wvm",
+      "sr-fcdo"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about Suriname",
+    "source_ids": [
+     "sr-sb-2018-64"
+    ],
+    "points": [
+     "The legal line is a THC test, 1.5% or less, rather than a quantity limit.",
+     "Industrial hemp growing was allowed in principle in 2018, with the conditions left to a later law."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -6595,7 +6678,8 @@
     "MS",
     "DO",
     "CU",
-    "HT"
+    "HT",
+    "SR"
    ]
   },
   {
@@ -10442,6 +10526,38 @@
    "publisher": "UK Foreign, Commonwealth & Development Office",
    "title": "Guyana travel advice: Safety and security (updated Dec 30 2025)",
    "url": "https://www.gov.uk/foreign-travel-advice/guyana/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "sr-wvm",
+   "kind": "statute",
+   "publisher": "De Nationale Assemblée (Republic of Suriname)",
+   "title": "Wet verdovende middelen, S.B. 1998 no. 14 as amended by S.B. 2002 no. 68 (consolidated text)",
+   "url": "https://www.dna.sr/media/34ygwacb/wet_verdovende_middelen.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "sr-sb-2018-64",
+   "kind": "statute",
+   "publisher": "De Nationale Assemblée (Republic of Suriname)",
+   "title": "Wet van 13 juli 2018 amending the Wet Verdovende Middelen, S.B. 2018 no. 64",
+   "url": "https://www.dna.sr/media/bn3hqm5l/sb_2018___64.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "sr-gov-2024",
+   "kind": "government",
+   "publisher": "Government of Suriname (gov.sr)",
+   "title": "Alert: Cannabis snoep (drug information alert on THC sweets, Jul 2024)",
+   "url": "https://gov.sr/wp-content/uploads/2024/07/Alert-Cannabis-snoep.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "sr-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office",
+   "title": "Suriname travel advice: Safety and security (updated Dec 10 2025)",
+   "url": "https://www.gov.uk/foreign-travel-advice/suriname/safety-and-security",
    "retrieved_on": "2026-11-19"
   }
  ]

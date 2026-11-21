@@ -1890,22 +1890,6 @@
     }
    ]
   },
-  "SR": {
-   "name": "Suriname",
-   "page": "world-suriname.html",
-   "fcdo_title": "Suriname",
-   "source_id": "fcdo-suriname",
-   "updated": "2025-12-10",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs penalties",
-     "paragraphs": [
-      "There are severe penalties for all drug offences. Pack all luggage yourself and do not carry anything through customs for anyone else."
-     ]
-    }
-   ]
-  },
   "SY": {
    "name": "Syria",
    "page": "world-syria.html",
@@ -3097,14 +3081,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Sudan travel advice (last updated by the FCDO 2026-05-11)",
    "url": "https://www.gov.uk/foreign-travel-advice/sudan",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-suriname",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Suriname travel advice (last updated by the FCDO 2025-12-10)",
-   "url": "https://www.gov.uk/foreign-travel-advice/suriname",
    "retrieved_on": "2026-11-20"
   },
   {
