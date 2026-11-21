@@ -773,22 +773,6 @@
     }
    ]
   },
-  "HN": {
-   "name": "Honduras",
-   "page": "world-honduras.html",
-   "fcdo_title": "Honduras",
-   "source_id": "fcdo-honduras",
-   "updated": "2026-11-05",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "There are severe penalties for drug trafficking (15 to 20 years in prison and a very large fine) and drug use (from 3 to 9 months in a rehabilitation centre). Honduran prisons are overcrowded and violent."
-     ]
-    }
-   ]
-  },
   "HK": {
    "name": "Hong Kong",
    "page": "world-hong-kong.html",
@@ -2479,14 +2463,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Guinea-Bissau travel advice (last updated by the FCDO 2025-12-10)",
    "url": "https://www.gov.uk/foreign-travel-advice/guinea-bissau",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-honduras",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Honduras travel advice (last updated by the FCDO 2026-11-05)",
-   "url": "https://www.gov.uk/foreign-travel-advice/honduras",
    "retrieved_on": "2026-11-20"
   },
   {

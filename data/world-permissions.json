@@ -6665,6 +6665,77 @@
      "There is no personal-use allowance: the lowest tier, under 2 grams, still carries prison."
     ]
    }
+  },
+  "HN": {
+   "name": "Honduras",
+   "page": "world-honduras.html",
+   "summary": "Cannabis is illegal in Honduras. Using it or holding a personal dose leads to compulsory internment and a fine under the 1989 drug law, with the amount set by a forensic doctor. Under the Penal Code in force since 2020, growing or trafficking cannabis carries 4 to 7 years, lower than for other drugs because cannabis derivatives are classed as not causing serious harm to health.",
+   "note": "Honduras has two overlapping texts: the 1989 drug law and the 2020 Penal Code. How far the code replaced the older law's penalties was not confirmed, and the UK Foreign Office gives different figures for drug use (3 to 9 months in a rehabilitation centre).",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal; users face internment",
+     "detail": "Article 26 of the 1989 law punishes consumption: a first offence brings internment of up to 30 days and a fine of 500 to 1,000 lempiras, a second 30 to 90 days and a higher fine. A dependent person is interned for treatment. Foreigners can be fined and expelled (art. 27).",
+     "citation": "Decreto 126-89, arts. 26-27; FCDO (Nov 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "hn-dec-126-89",
+      "hn-fcdo"
+     ]
+    },
+    "medical": {
+     "status": "not-permitted",
+     "short": "No cannabis program",
+     "detail": "Medicines containing controlled substances may be sold only on prescription in authorised pharmacies, with Health Ministry authorisation; no medical cannabis program was found.",
+     "citation": "Decreto 126-89, art. 12",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "hn-dec-126-89"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales",
+     "detail": "Selling or transporting cannabis falls under article 311 of the Penal Code (4 to 7 years), rising to 10 to 15 years with aggravating factors such as supplying minors (art. 312).",
+     "citation": "Código Penal, arts. 311-312",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "hn-cp-2020"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Only a personal dose avoids trafficking charges",
+     "detail": "A personal dose is the minimum amount for immediate use, set by the judiciary's forensic medical department or a state doctor; the law gives marijuana cigarettes as an example but no weight. Holding more than that is treated as trafficking.",
+     "citation": "Decreto 126-89, arts. 5 and 26",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "hn-dec-126-89"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Growing carries 4 to 7 years",
+     "detail": "The 1989 law bans sowing and growing marijuana (art. 7). The 2020 Penal Code punishes sowing, cultivating and harvesting along with trafficking: 4 to 7 years and a fine for drugs that do not cause serious harm, which include cannabis derivatives, or 1 to 3 years where the case is of lesser gravity.",
+     "citation": "Decreto 126-89, art. 7; Código Penal, arts. 311 and 321",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "hn-dec-126-89",
+      "hn-cp-2020"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about Honduras",
+    "source_ids": [
+     "hn-cp-2020",
+     "hn-dec-126-89"
+    ],
+    "points": [
+     "The Penal Code classes cannabis derivatives as drugs that do not cause serious harm, which lowers trafficking sentences compared with cocaine.",
+     "Drug use itself is sanctioned with internment, not prison."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -7049,7 +7120,8 @@
     "BO",
     "PA",
     "GT",
-    "SV"
+    "SV",
+    "HN"
    ]
   },
   {
@@ -11040,6 +11112,30 @@
    "publisher": "UK Foreign, Commonwealth & Development Office",
    "title": "El Salvador travel advice: Safety and security (updated Nov 5 2026)",
    "url": "https://www.gov.uk/foreign-travel-advice/el-salvador/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "hn-cp-2020",
+   "kind": "statute",
+   "publisher": "Republic of Honduras (copy on Right of Assembly)",
+   "title": "Código Penal, Decreto 130-2017 (in force 2020), arts. 311-321",
+   "url": "https://www.rightofassembly.info/assets/downloads/Honduras_Penal_Code_(2020).pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "hn-dec-126-89",
+   "kind": "statute",
+   "publisher": "Tribunal Superior de Cuentas de Honduras (legislation library)",
+   "title": "Ley sobre Uso Indebido y Tráfico Ilícito de Drogas y Sustancias Psicotrópicas, Decreto 126-89",
+   "url": "https://www.tsc.gob.hn/web/leyes/Ley%20sobre%20uso%20Indebido%20y%20Trafico%20Ilicito%20de%20Drogas%20y%20Sustancias%20Psicotropicas.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "hn-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office",
+   "title": "Honduras travel advice: Safety and security (updated Nov 5 2026)",
+   "url": "https://www.gov.uk/foreign-travel-advice/honduras/safety-and-security",
    "retrieved_on": "2026-11-19"
   }
  ]
