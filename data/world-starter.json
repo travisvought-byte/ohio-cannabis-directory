@@ -310,22 +310,6 @@
     }
    ]
   },
-  "VG": {
-   "name": "British Virgin Islands",
-   "page": "world-british-virgin-islands.html",
-   "fcdo_title": "British Virgin Islands (British Overseas Territory)",
-   "source_id": "fcdo-british-virgin-islands",
-   "updated": "2025-11-03",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "Possession of even small quantities of illegal drugs can lead to large fines or imprisonment. Drug trafficking is a serious offence. Pack your luggage yourself and do not carry items for anyone else."
-     ]
-    }
-   ]
-  },
   "BN": {
    "name": "Brunei",
    "page": "world-brunei.html",
@@ -2581,14 +2565,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Botswana travel advice (last updated by the FCDO 2026-11-06)",
    "url": "https://www.gov.uk/foreign-travel-advice/botswana",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-british-virgin-islands",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "British Virgin Islands (British Overseas Territory) travel advice (last updated by the FCDO 2025-11-03)",
-   "url": "https://www.gov.uk/foreign-travel-advice/british-virgin-islands",
    "retrieved_on": "2026-11-20"
   },
   {

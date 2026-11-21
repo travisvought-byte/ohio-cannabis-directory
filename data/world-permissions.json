@@ -5366,6 +5366,73 @@
      "A 2017 expungement route may be repealed by a 2024 bill."
     ]
    }
+  },
+  "VG": {
+   "name": "British Virgin Islands",
+   "page": "world-british-virgin-islands.html",
+   "summary": "Cannabis is illegal. The territory's House of Assembly passed a medical Cannabis Licensing Act and a bill to decriminalise small amounts in 2020, but neither had received the Governor's assent as of July 2026. The UK Home Office remains the licensing authority for narcotics, including medical ones.",
+   "note": "The British Virgin Islands is a British Overseas Territory; the Governor must reserve bills that may conflict with the UK's treaty obligations.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal",
+     "detail": "The Drugs (Prevention of Misuse) Amendment Bill 2020, which would decriminalise small amounts, was passed to the UK Foreign Secretary in December 2020 rather than given assent, citing drug-trafficking concerns. A Cayman Islands Law Reform Commission review published in July 2026 reported that it still had not received assent.",
+     "citation": "Governor's statement (Dec 10 2020); Cayman Islands Law Reform Commission paper (Jul 1 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "vg-governor-2020",
+      "vg-cayman-lrc-2026"
+     ]
+    },
+    "medical": {
+     "status": "not-permitted",
+     "short": "Medical licensing law still awaiting assent",
+     "detail": "The Cannabis Licensing Act 2020 would set up a local authority to license medical cannabis cultivation, processing, import, export and sale. Before assent, the territory and the UK Home Office must agree to transfer narcotics licensing, which the Home Office still holds. The July 2026 review reported that the Act still had not received assent.",
+     "citation": "Governor's statement (Dec 10 2020); Cayman Islands Law Reform Commission paper (Jul 1 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "vg-governor-2020",
+      "vg-cayman-lrc-2026"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales",
+     "detail": "No cannabis licensing regime is in force, so there is no lawful way to buy cannabis.",
+     "citation": "Cayman Islands Law Reform Commission paper (Jul 1 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "vg-cayman-lrc-2026"
+     ]
+    },
+    "record-relief": {
+     "status": "not-permitted",
+     "short": "Expungement bill not in force",
+     "detail": "The 2020 drugs amendment would expunge some historic minor offences involving up to 50 grams of cannabis or 10 grams of resin, but it has not received assent.",
+     "citation": "Cayman Islands Law Reform Commission paper (Jul 1 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "vg-cayman-lrc-2026"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "The 2020 licensing bill would have let adults buy small amounts from dispensaries on proof of age or self-declaration, which a later review said would in effect allow recreational sale.",
+    "source_ids": [
+     "vg-cayman-lrc-2026"
+    ]
+   },
+   "differences": {
+    "title": "What is different about the British Virgin Islands",
+    "source_ids": [
+     "vg-governor-2020",
+     "vg-cayman-lrc-2026"
+    ],
+    "points": [
+     "Both reform bills passed locally in 2020 and have been waiting on UK sign-off ever since.",
+     "Narcotics licensing, even for medicine, still sits with the UK Home Office."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -5732,7 +5799,8 @@
     "BB",
     "BS",
     "BM",
-    "KY"
+    "KY",
+    "VG"
    ]
   },
   {
@@ -9253,6 +9321,22 @@
    "publisher": "National Assembly of Belize",
    "title": "Misuse of Drugs (Amendment) Bill, 2024: repeal of section 28B (published Sep 2024)",
    "url": "https://nationalassembly.gov.bz/wp-content/uploads/2024/09/Misuse-of-Drugs-Amendment-Bill-2024.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "vg-governor-2020",
+   "kind": "news",
+   "publisher": "BVI News (Governor's press release reproduced)",
+   "title": "Governor's full statement on Cannabis Licensing Act (Dec 10 2020)",
+   "url": "https://bvinews.com/governors-full-statement-on-cannabis-licensing-act",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "vg-cayman-lrc-2026",
+   "kind": "government",
+   "publisher": "Cayman Islands Law Reform Commission (via Radio Cayman, gov.ky)",
+   "title": "Discussion Paper: Cannabis Reform, section 5.4 British Virgin Islands (Jul 1 2026)",
+   "url": "https://www.radiocayman.gov.ky/viewPDF/documents/2026-07-02-04-15-18-Discussion-Paper---Cannabis-Reform---1-July-2026.pdf",
    "retrieved_on": "2026-11-19"
   }
  ]
