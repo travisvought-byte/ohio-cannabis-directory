@@ -5525,6 +5525,67 @@
      "Medical imports are decided one case at a time by the Chief Medical Officer."
     ]
    }
+  },
+  "TC": {
+   "name": "Turks and Caicos Islands",
+   "page": "world-turks-and-caicos-islands.html",
+   "summary": "Cannabis is illegal in the Turks and Caicos Islands, with no decriminalised amount, no medical program and no exception for visitors. The UK government warns of severe penalties for possession of even a small amount, and Border Force lists cannabis-infused products and CBD oils among the controlled drugs that are an offence to import.",
+   "note": "The islands are a British Overseas Territory with their own drug law. Reforms in Bermuda, the Cayman Islands or the UK do not apply here.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal",
+     "detail": "The UK Foreign Office advises visitors not to become involved with drugs of any kind and warns of severe penalties for possession of even a small amount.",
+     "citation": "FCDO travel advice (updated Mar 13 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "tc-fcdo"
+     ]
+    },
+    "medical": {
+     "status": "not-permitted",
+     "short": "No medical program",
+     "detail": "A secondary review found no medical cannabis program, licence or import route, and says a medical card from another country is not recognised. Border Force notes only that a doctor's prescription may validate certain prescribed medications.",
+     "citation": "The Cannigma, secondary (Sep 2026); Border Force (Mar 2024)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "tc-cannigma-2026",
+      "tc-borderforce"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Any amount is an offence",
+     "detail": "The Foreign Office says possession can lead to arrest, fines of up to US$5,000 and two years in prison. A secondary review of the Control of Drugs Ordinance lists cannabis as a Class B drug and gives higher maximums than the Foreign Office figures; it also says no amount is decriminalised.",
+     "citation": "FCDO travel advice (updated Mar 13 2026); The Cannigma, secondary (Sep 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "tc-fcdo",
+      "tc-cannigma-2026"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "Do not bring cannabis or CBD products",
+     "detail": "Border Force lists cannabis-infused products, cannabidiol derivatives and any oils containing cannabidiol as controlled drugs that it is an offence to import. Restricted goods brought in illegally are confiscated or re-exported at the owner's expense.",
+     "citation": "Turks and Caicos Islands Border Force (Mar 2024)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "tc-borderforce"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about the Turks and Caicos Islands",
+    "source_ids": [
+     "tc-borderforce",
+     "tc-cannigma-2026"
+    ],
+    "points": [
+     "CBD oils are on the Border Force controlled-drug list, so even CBD can be seized on arrival.",
+     "No reform bill had been announced as of a September 2026 secondary review."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -5893,7 +5954,8 @@
     "BS",
     "BM",
     "KY",
-    "VG"
+    "VG",
+    "TC"
    ]
   },
   {
@@ -9454,6 +9516,30 @@
    "publisher": "The Peoples Tribune (via SXM Talks)",
    "title": "Cannabis pilot ends in Anguilla, review to decide the next steps (Dec 1 2025)",
    "url": "https://www.sxm-talks.com/local-news/cannabis-pilot-ends-in-anguilla-review-to-decide-the-next-steps-the-peoples-tribune/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "tc-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office",
+   "title": "Turks and Caicos Islands travel advice: Safety and security (updated Mar 13 2026)",
+   "url": "https://www.gov.uk/foreign-travel-advice/turks-and-caicos-islands/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "tc-borderforce",
+   "kind": "government",
+   "publisher": "Turks and Caicos Islands Border Force",
+   "title": "Prohibitions & Restrictions (last modified Mar 25 2024)",
+   "url": "https://borderforce.gov.tc/prohibitions-restrictions",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "tc-cannigma-2026",
+   "kind": "compilation",
+   "publisher": "The Cannigma (secondary)",
+   "title": "Is Marijuana Legal in Turks and Caicos? Laws and Penalties (last reviewed Sep 17 2026)",
+   "url": "https://cannigma.com/regulation/is-weed-legal-in-turks-and-caicos/",
    "retrieved_on": "2026-11-19"
   }
  ]

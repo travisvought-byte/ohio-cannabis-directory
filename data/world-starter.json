@@ -2238,22 +2238,6 @@
     }
    ]
   },
-  "TC": {
-   "name": "Turks and Caicos Islands",
-   "page": "world-turks-and-caicos-islands.html",
-   "fcdo_title": "Turks and Caicos Islands (British Overseas Territory)",
-   "source_id": "fcdo-turks-and-caicos-islands",
-   "updated": "2026-03-13",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "Do not become involved with drugs of any kind. There are severe penalties for possession of even a small amount. You could be arrested and face fines of up to 5,000 US dollars and 2 years imprisonment."
-     ]
-    }
-   ]
-  },
   "TV": {
    "name": "Tuvalu",
    "page": "world-tuvalu.html",
@@ -3429,14 +3413,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Turkmenistan travel advice (last updated by the FCDO 2026-10-21)",
    "url": "https://www.gov.uk/foreign-travel-advice/turkmenistan",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-turks-and-caicos-islands",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Turks and Caicos Islands (British Overseas Territory) travel advice (last updated by the FCDO 2026-03-13)",
-   "url": "https://www.gov.uk/foreign-travel-advice/turks-and-caicos-islands",
    "retrieved_on": "2026-11-20"
   },
   {
