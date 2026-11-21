@@ -5433,6 +5433,98 @@
      "Narcotics licensing, even for medicine, still sits with the UK Home Office."
     ]
    }
+  },
+  "AI": {
+   "name": "Anguilla",
+   "page": "world-anguilla.html",
+   "summary": "Cannabis is still illegal in Anguilla, but from December 2024 police stopped enforcing criminal penalties against adults 18 and over with up to 10 grams or up to four plants, used in private. That one-year pilot ended on December 1, 2025; news reports say the same police guidelines stay in place while the police review it. Sales and trafficking are still prosecuted.",
+   "note": "This is a police policy, not a change in the law. It can be changed without a vote, so check for updates before relying on it.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Still illegal; police policy limits arrests",
+     "detail": "The government called the scheme a directive to stop enforcing the law, not legalisation. The minister said Anguilla cannot legalise cannabis because of the UN narcotics convention that the UK extended to the territory. Use was limited to private or residential places.",
+     "citation": "Anguilla Focus (Dec 4 2024; Dec 1 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ai-focus-2024",
+      "ai-focus-2025"
+     ]
+    },
+    "medical": {
+     "status": "limited",
+     "short": "Case-by-case import requests",
+     "detail": "There is no medical cannabis program. Anyone wishing to import cannabis for medical use can contact the Chief Medical Officer, who reviews each case individually.",
+     "citation": "Anguilla Focus (Dec 4 2024); The Peoples Tribune (Dec 1 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ai-focus-2024",
+      "ai-tribune-2025"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales",
+     "detail": "Police continue to enforce the law on sale and trafficking. The government said a possible second phase would consider importing cannabis and selling cannabis oils and medicinal products, but no such step had been taken in the reports reviewed.",
+     "citation": "Anguilla Focus (Dec 4 2024); The Peoples Tribune (Dec 1 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ai-focus-2024",
+      "ai-tribune-2025"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "Up to 10 grams for adults, under police policy",
+     "detail": "Under the pilot that began December 1, 2024, police did not enforce criminal penalties against adults 18 and over with up to 10 grams for personal use. After the pilot ended on December 1, 2025, police said the same internal guidelines would stay in effect while they reviewed it. Children found with cannabis are referred to the Child Justice Board.",
+     "citation": "Anguilla Focus (Dec 4 2024); The Peoples Tribune (Dec 1 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ai-focus-2024",
+      "ai-tribune-2025"
+     ]
+    },
+    "home-grow": {
+     "status": "limited",
+     "short": "Up to four plants, under police policy",
+     "detail": "The same police guidelines cover adults growing up to four plants for personal use. Growing is still an offence in law; the policy only means police do not enforce it within the limit.",
+     "citation": "Anguilla Focus (Dec 4 2024); The Peoples Tribune (Dec 1 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ai-focus-2024",
+      "ai-tribune-2025"
+     ]
+    },
+    "record-relief": {
+     "status": "not-permitted",
+     "short": "No clearing of past records yet",
+     "detail": "In December 2024 the government said its legal framework did not allow it to wipe records of people prosecuted for possession. It said it planned a Rehabilitation of Offenders Act that would consider clearing non-violent records.",
+     "citation": "Anguilla Focus (Dec 4 2024)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ai-focus-2024"
+     ]
+    }
+   },
+   "experiment": {
+    "text": "Anguilla ran its change as a one-year trial of police non-enforcement rather than a new law, then kept the guidelines in place while the police review how it worked in practice.",
+    "source_ids": [
+     "ai-focus-2025",
+     "ai-tribune-2025"
+    ]
+   },
+   "differences": {
+    "title": "What is different about Anguilla",
+    "source_ids": [
+     "ai-focus-2024",
+     "ai-tribune-2025"
+    ],
+    "points": [
+     "The limits come from police guidelines, not from a statute.",
+     "The policy covers adults 18 and over and private or residential use only.",
+     "Medical imports are decided one case at a time by the Chief Medical Officer."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -5768,7 +5860,8 @@
     "GD",
     "LC",
     "DM",
-    "BZ"
+    "BZ",
+    "AI"
    ]
   },
   {
@@ -9337,6 +9430,30 @@
    "publisher": "Cayman Islands Law Reform Commission (via Radio Cayman, gov.ky)",
    "title": "Discussion Paper: Cannabis Reform, section 5.4 British Virgin Islands (Jul 1 2026)",
    "url": "https://www.radiocayman.gov.ky/viewPDF/documents/2026-07-02-04-15-18-Discussion-Paper---Cannabis-Reform---1-July-2026.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ai-focus-2024",
+   "kind": "news",
+   "publisher": "Anguilla Focus",
+   "title": "Anguilla decriminalises personal use of cannabis for adults (Dec 4 2024)",
+   "url": "https://anguillafocus.com/anguilla-decriminalises-personal-use-of-cannabis-for-adults/",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ai-focus-2025",
+   "kind": "news",
+   "publisher": "Anguilla Focus",
+   "title": "Cannabis decriminalisation pilot ends but police rules remain pending review (Dec 1 2025)",
+   "url": "https://anguillafocus.com/?p=12603",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ai-tribune-2025",
+   "kind": "news",
+   "publisher": "The Peoples Tribune (via SXM Talks)",
+   "title": "Cannabis pilot ends in Anguilla, review to decide the next steps (Dec 1 2025)",
+   "url": "https://www.sxm-talks.com/local-news/cannabis-pilot-ends-in-anguilla-review-to-decide-the-next-steps-the-peoples-tribune/",
    "retrieved_on": "2026-11-19"
   }
  ]

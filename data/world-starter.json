@@ -87,22 +87,6 @@
     }
    ]
   },
-  "AI": {
-   "name": "Anguilla",
-   "page": "world-anguilla.html",
-   "fcdo_title": "Anguilla (British Overseas Territory)",
-   "source_id": "fcdo-anguilla",
-   "updated": "2025-05-15",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs penalties",
-     "paragraphs": [
-      "Similar to the UK, there are harsh penalties in Anguilla if you’re caught with illegal drugs."
-     ]
-    }
-   ]
-  },
   "AM": {
    "name": "Armenia",
    "page": "world-armenia.html",
@@ -2461,14 +2445,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Angola travel advice (last updated by the FCDO 2026-05-28)",
    "url": "https://www.gov.uk/foreign-travel-advice/angola",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-anguilla",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Anguilla (British Overseas Territory) travel advice (last updated by the FCDO 2025-05-15)",
-   "url": "https://www.gov.uk/foreign-travel-advice/anguilla",
    "retrieved_on": "2026-11-20"
   },
   {
