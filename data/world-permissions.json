@@ -6736,6 +6736,64 @@
      "Drug use itself is sanctioned with internment, not prison."
     ]
    }
+  },
+  "NI": {
+   "name": "Nicaragua",
+   "page": "world-nicaragua.html",
+   "summary": "Cannabis is illegal in Nicaragua. Under the Penal Code as reformed in September 2024, possessing more than 5 and less than 20 grams of marijuana, or one to five plants, carries 6 months to 3 years in prison; larger amounts carry 3 to 8 years. Drug cases are tried with the accused held in pre-trial detention until sentence.",
+   "note": "Article numbers refer to Ley 641, the Penal Code, as reformed by Ley 1216 of 2024.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal",
+     "detail": "The UK Foreign Office advises not to become involved with drugs of any kind and warns that possession of even small quantities can lead to imprisonment.",
+     "citation": "FCDO travel advice (Nov 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ni-fcdo"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales",
+     "detail": "There is no legal market. Since 2024, drug cases are heard by a professional judge, with the accused held in pre-trial detention until sentence (art. 565).",
+     "citation": "Código Penal, art. 565 (as reformed by Ley 1216, 2024)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ni-ley-1216"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Over 5 grams: 6 months to 3 years",
+     "detail": "Article 358 punishes possessing more than 5 and less than 20 grams of marijuana, or one to five psychoactive plants, with 6 months to 3 years in prison and 50 to 100 day-fines. Above those limits the penalty is 3 to 8 years and 100 to 300 day-fines.",
+     "citation": "Código Penal, art. 358 (as reformed by Ley 1216, 2024)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ni-ley-1216"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Even one plant is a crime",
+     "detail": "Having one to five plants with psychoactive substances is punished in the same tier as small possession, 6 months to 3 years; more plants carry 3 to 8 years.",
+     "citation": "Código Penal, art. 358 (as reformed by Ley 1216, 2024)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "ni-ley-1216"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about Nicaragua",
+    "source_ids": [
+     "ni-ley-1216"
+    ],
+    "points": [
+     "Since 2024, anyone charged with a drug offence stays in pre-trial detention until sentence.",
+     "Nicaragua's drug laws reach offences committed abroad, and companies can be held criminally liable."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -7121,7 +7179,8 @@
     "PA",
     "GT",
     "SV",
-    "HN"
+    "HN",
+    "NI"
    ]
   },
   {
@@ -11136,6 +11195,22 @@
    "publisher": "UK Foreign, Commonwealth & Development Office",
    "title": "Honduras travel advice: Safety and security (updated Nov 5 2026)",
    "url": "https://www.gov.uk/foreign-travel-advice/honduras/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ni-ley-1216",
+   "kind": "statute",
+   "publisher": "Asamblea Nacional de Nicaragua, La Gaceta No. 166 (copy on Leybook)",
+   "title": "Ley 1216, Ley de reforma a la Ley 641 Código Penal (Sep 4 2024, published Sep 6 2024)",
+   "url": "https://leybook.com/doc/33929/pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "ni-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office",
+   "title": "Nicaragua travel advice: Safety and security (updated Nov 5 2026)",
+   "url": "https://www.gov.uk/foreign-travel-advice/nicaragua/safety-and-security",
    "retrieved_on": "2026-11-19"
   }
  ]

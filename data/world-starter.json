@@ -1342,22 +1342,6 @@
     }
    ]
   },
-  "NI": {
-   "name": "Nicaragua",
-   "page": "world-nicaragua.html",
-   "fcdo_title": "Nicaragua",
-   "source_id": "fcdo-nicaragua",
-   "updated": "2026-11-05",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "Do not become involved with drugs of any kind. Possession of even small quantities can lead to imprisonment."
-     ]
-    }
-   ]
-  },
   "NG": {
    "name": "Nigeria",
    "page": "world-nigeria.html",
@@ -2719,14 +2703,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Nauru travel advice (last updated by the FCDO 2026-03-19)",
    "url": "https://www.gov.uk/foreign-travel-advice/nauru",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-nicaragua",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Nicaragua travel advice (last updated by the FCDO 2026-11-05)",
-   "url": "https://www.gov.uk/foreign-travel-advice/nicaragua",
    "retrieved_on": "2026-11-20"
   },
   {
