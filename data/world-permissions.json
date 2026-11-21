@@ -6155,6 +6155,68 @@
      "New Penal and Criminal Procedure Codes, replacing texts in use since 1835, are set to take effect in January 2027."
     ]
    }
+  },
+  "GY": {
+   "name": "Guyana",
+   "page": "world-guyana.html",
+   "summary": "Cannabis is illegal in Guyana, but since a 2022 amendment there is no prison sentence for possessing 30 grams or less. Up to 15 grams brings mandatory counselling and 15 to 30 grams community service; it remains a criminal offence. Above 30 grams a person must prove they were not trafficking.",
+   "note": "The UK Foreign Office travel advice still mentions a 3-year minimum sentence for drug offences, without noting the 2022 change for 30 grams or less.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal, but no jail for small amounts",
+     "detail": "The 2022 amendment removed the fine and prison term for smoking or using cannabis and replaced them with community service of up to six months. Smoking in certain public places is also prohibited, with fines under the Tobacco Control Act. The Attorney General said it still remains a criminal offence.",
+     "citation": "Act No. 22 of 2022; Stabroek News (Nov 9 2022)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "gy-act-2022",
+      "gy-stabroek-2022"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales",
+     "detail": "There is no licensed market. Above 30 grams the burden shifts to the person to show the cannabis was not for trafficking; before 2022 that threshold was 15 grams.",
+     "citation": "Stabroek News (Nov 9 2022)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "gy-stabroek-2022"
+     ]
+    },
+    "possession": {
+     "status": "limited",
+     "short": "No prison for 30 grams or less",
+     "detail": "Up to 15 grams brings mandatory counselling for a period set by the counsellor. From 15 to 30 grams the penalty is community service of up to six months under the Extra-Mural Work Act. Refusing or breaching counselling or community service can lead to a fine of $250,000. Above 30 grams the earlier penalties still apply.",
+     "citation": "Act No. 22 of 2022; Stabroek News and DPI (Nov 9 2022)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "gy-act-2022",
+      "gy-stabroek-2022",
+      "gy-dpi-2022"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "Do not carry any cannabis",
+     "detail": "The UK Foreign Office warns of lengthy prison sentences and heavy fines for possession or trafficking, tough prison conditions, and advises not carrying items that do not belong to you.",
+     "citation": "FCDO travel advice (Dec 2025)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "gy-fcdo"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about Guyana",
+    "source_ids": [
+     "gy-stabroek-2022",
+     "gy-dpi-2022"
+    ],
+    "points": [
+     "Guyana removed jail time for small amounts without decriminalising: the offence stays on the books.",
+     "Courts can order counselling instead of the old option of a reduced sentence for 5 grams."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -6495,7 +6557,8 @@
     "AW",
     "CW",
     "SX",
-    "BQ"
+    "BQ",
+    "GY"
    ]
   },
   {
@@ -10347,6 +10410,38 @@
    "publisher": "United Nations Development Programme (UNDP)",
    "title": "Haïti prépare la mise en œuvre de ses nouveaux Codes pénal et de procédure pénale (Jul 16 2026)",
    "url": "https://www.undp.org/fr/node/595356",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "gy-act-2022",
+   "kind": "statute",
+   "publisher": "Parliament of Guyana (Official Gazette, Legal Supplement A)",
+   "title": "Narcotic Drugs and Psychotropic Substances (Control) (Amendment) Act 2022, Act No. 22 of 2022 (gazetted Nov 15 2022)",
+   "url": "https://parliament.gov.gy/new2/documents/acts/23504-act_no._22_of_2022.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "gy-stabroek-2022",
+   "kind": "news",
+   "publisher": "Stabroek News",
+   "title": "No prison time for possession of less than 30 grammes of cannabis (Nov 9 2022)",
+   "url": "https://stabroeknews.com/2022/11/09/news/guyana/no-prison-time-for-possession-of-less-than-30-grammes-of-cannabis",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "gy-dpi-2022",
+   "kind": "government",
+   "publisher": "Department of Public Information (via High Commission of Guyana, South Africa)",
+   "title": "Custodial sentences for 30 grammes or less of cannabis will be removed (Nov 9 2022)",
+   "url": "https://www.guyana-hc-south-africa.co.za/?p=5242",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "gy-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office",
+   "title": "Guyana travel advice: Safety and security (updated Dec 30 2025)",
+   "url": "https://www.gov.uk/foreign-travel-advice/guyana/safety-and-security",
    "retrieved_on": "2026-11-19"
   }
  ]

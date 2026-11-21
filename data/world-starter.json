@@ -822,22 +822,6 @@
     }
    ]
   },
-  "GY": {
-   "name": "Guyana",
-   "page": "world-guyana.html",
-   "fcdo_title": "Guyana",
-   "source_id": "fcdo-guyana",
-   "updated": "2025-12-30",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs and prison sentences",
-     "paragraphs": [
-      "You can get lengthy prison sentences and heavy fines for possession or the trafficking of drugs. The minimum jail sentence for drug offences is 3 years, and prison conditions in Guyana are tough. Pack all luggage yourself and do not carry any items that do not belong to you."
-     ]
-    }
-   ]
-  },
   "HN": {
    "name": "Honduras",
    "page": "world-honduras.html",
@@ -2617,14 +2601,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Guinea-Bissau travel advice (last updated by the FCDO 2025-12-10)",
    "url": "https://www.gov.uk/foreign-travel-advice/guinea-bissau",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-guyana",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Guyana travel advice (last updated by the FCDO 2025-12-30)",
-   "url": "https://www.gov.uk/foreign-travel-advice/guyana",
    "retrieved_on": "2026-11-20"
   },
   {
