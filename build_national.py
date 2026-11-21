@@ -859,7 +859,7 @@ def about_page(perm, score, directory, answers):
                  ''.join(body), 'about.html', 'the site', ld=[breadcrumbs([('Home', '')], 'about.html', 'About')])
 
 
-PRIVACY_UPDATED = '2026-11-19'
+PRIVACY_UPDATED = '2026-11-21'
 PRIVACY_STATEMENT = 'https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement'
 
 
@@ -880,8 +880,16 @@ def privacy_page():
             '<h2 id="hosting">Hosting</h2>'
             '<p>The site is hosted on GitHub Pages. Like any web host, GitHub receives your IP address when your browser asks for a page, and GitHub may '
             f'keep server logs, including IP addresses, for security. See the <a href="{PRIVACY_STATEMENT}">GitHub General Privacy Statement</a>.</p>',
+            '<h2 id="map">Maps</h2>'
+            '<p>Some pages show stores on a map, such as Ontario’s cannabis stores and Amsterdam’s coffeeshops. The map’s code is served from this site, '
+            'but the street pictures come from <a href="https://www.openstreetmap.org/">OpenStreetMap</a> (tile.openstreetmap.org). To show them, your browser '
+            'asks OpenStreetMap for the pictures of the area you look at, so OpenStreetMap sees your IP address and which area you view, under the '
+            '<a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Foundation privacy policy</a>. Pages without a map do not contact it.</p>'
+            '<p>The “near me” button asks your browser for your location only when you press it, and your browser asks you first. If you allow it, '
+            'the page uses it to center the map and list the closest stores. Your location is never stored or sent to this site. The map then shows '
+            'your area, so OpenStreetMap is asked for the pictures of that area, as for any area you look at.</p>'
             '<h2 id="typing">What you type or choose</h2>'
-            '<p>The state picker, the filters and the letter builder work inside your browser. What you type there is not sent to this site '
+            '<p>The state picker, the filters, the maps and the letter builder work inside your browser. What you type there is not sent to this site '
             'and is not saved: it is gone when you close the page. The pages do not use cookies or your browser’s storage.</p>'
             '<p>If you email a correction or a question, we receive your message and your email address and use them only to answer you and fix the page.</p>',
             '<h2 id="sponsors">Sponsors</h2>'

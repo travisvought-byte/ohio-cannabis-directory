@@ -209,13 +209,16 @@ class PrivacyPageTest(unittest.TestCase):
 
     def test_privacy_page_says_what_is_counted_and_kept(self):
         text = self.PAGES['privacy.html']
-        for words in ('Last updated November 19, 2026.', 'GoatCounter', 'sets no cookies', 'stores no personal information',
+        for words in ('Last updated November 21, 2026.', 'GoatCounter', 'sets no cookies', 'stores no personal information',
                       'your browser and screen size', 'approximate country', 'It does not store the IP address',
                       'GitHub Pages', build_national.PRIVACY_STATEMENT, 'server logs, including IP addresses, for security',
                       'not sent to this site', 'do not use cookies or your browser’s storage',
                       'labeled “Sponsored”', 'does not share visitor information with sponsors',
                       'adults 21 and older', 'not directed to children', 'We do not sell personal information',
-                      'mailto:' + build_national.EMAIL):
+                      'mailto:' + build_national.EMAIL,
+                      # the store maps (November 21, 2026): where the street pictures come from and what the "near me" button does
+                      '<h2 id="map">Maps</h2>', 'tile.openstreetmap.org', 'OpenStreetMap sees your IP address',
+                      'Your location is never stored or sent to this site'):
             self.assertIn(words, text)
 
     def test_the_counter_is_still_goatcounter(self):

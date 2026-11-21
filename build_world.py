@@ -59,6 +59,34 @@ def province_table(world, cites):
             f'<tbody>{"".join(rows)}</tbody></table></div>')
 
 
+# The store maps (assets/place-map.js): Leaflet and its pin grouping are served from this site; only the street
+# pictures come from OpenStreetMap, which the privacy page says. Rows with a map point carry data-lat and data-lon;
+# the map shows them, follows the table's search, and lists the closest ones beside it. Without JavaScript the
+# section stays hidden and the table, with its own "Map" link per row, is the list.
+MAP_ASSETS = ('<link rel="stylesheet" href="../assets/vendor/leaflet.css"><link rel="stylesheet" href="../assets/vendor/markercluster.css">'
+              '<link rel="stylesheet" href="../assets/place-map.css"><script src="../assets/vendor/leaflet.js" defer></script>'
+              '<script src="../assets/vendor/leaflet.markercluster.js" defer></script><script src="../assets/place-map.js" defer></script>')
+
+
+def map_section(table_id, input_id, noun, what):
+    """An empty map beside the table it shows. noun is 'store,stores'; what names the places for screen readers."""
+    one, many = noun.split(',')
+    return (f'<section class="placemap pm-dark" data-table="{table_id}" data-input="{input_id}" data-unit="km" data-noun="{noun}" '
+            f'aria-label="Map of {nat.esc(what)}" hidden>'
+            f'<div class="pm-tools"><button type="button" class="pm-locate" hidden>Show {many} near me</button><span class="pm-status" role="status"></span></div>'
+            f'<div class="pm-body"><div class="pm-mapcol"><div class="pm-map" role="region" aria-label="Map of {nat.esc(what)}. Pins close together are grouped; '
+            f'the closest {many} are listed next to the map, and every one is in the table below."></div>'
+            '<p class="pm-note">Map pictures come from OpenStreetMap, which sees your IP address and which area you look at. '
+            'Your location, if you share it, is used only inside this page and is never stored or sent. <a href="privacy.html#map">Privacy</a></p></div>'
+            '<div class="pm-side"><h4 class="pm-head">Closest to the middle of the map</h4><p class="pm-count"></p><ul class="pm-list"></ul></div></div></section>')
+
+
+def map_attrs(lat, lon, sub):
+    if lat is None or lon is None:
+        return ''
+    return f' data-lat="{lat}" data-lon="{lon}" data-sub="{nat.esc(sub)}"'
+
+
 def load_nl_shops():
     return json.loads(NL_SHOPS.read_text(encoding='utf-8'))
 
@@ -99,7 +127,7 @@ def coffeeshop_section(cs, cites):
         until = nat.long_date(s['permit_until']) if s['permit_until'] else '<span class="muted">Not stated</span>'
         where = (f'<a href="https://www.openstreetmap.org/?mlat={s["lat"]}&amp;mlon={s["lon"]}#map=18/{s["lat"]}/{s["lon"]}" target="_blank" rel="noopener">Map</a>'
                  if s['lat'] is not None else '<span class="muted">No map point</span>')
-        return (f'<tr><th scope="row">{nat.esc(s["name"])}</th><td>{nat.esc(s["address"])}</td><td>{nat.esc(s["postcode"])}</td>'
+        return (f'<tr{map_attrs(s["lat"], s["lon"], ", ".join(x for x in (s["address"], s["postcode"]) if x))}><th scope="row">{nat.esc(s["name"])}</th><td>{nat.esc(s["address"])}</td><td>{nat.esc(s["postcode"])}</td>'
                 f'<td>{until}</td><td>{where}</td></tr>')
 
     head = '<thead><tr><th scope="col">Name in the city register</th><th scope="col">Address</th><th scope="col">Postcode</th><th scope="col">Permit runs to</th><th scope="col">Where</th></tr></thead>'
@@ -113,6 +141,7 @@ def coffeeshop_section(cs, cites):
                '<label for="cs-filter"><strong>Find a shop</strong> by name, street or postcode</label><br>'
                '<input id="cs-filter" class="filter" type="search" placeholder="e.g. Bulldog, Haarlemmerstraat, 1012" autocomplete="off">'
                f'<p class="muted" id="cs-count" aria-live="polite">{len(granted)} shops with a granted permit</p>'
+               + MAP_ASSETS + map_section('cs-table', 'cs-filter', 'coffeeshop,coffeeshops', 'Amsterdam coffeeshops with a granted permit') +
                f'<div class="scroll"><table id="cs-table">{head}<tbody>{"".join(row(s) for s in granted)}</tbody></table></div>'
                f'<details class="az"><summary>Listed without a permit status ({len(other)})</summary><p class="muted">These records name the business as a coffeeshop but leave the permit status blank, and the register does not say why.</p>'
                f'<div class="scroll"><table>{head}<tbody>{"".join(row(s) for s in other)}</tbody></table></div></details>'
@@ -167,13 +196,15 @@ def _cell(key, r):
 
 def wtb_table(t, cites, searchable):
     head = ''.join(f'<th scope="col">{nat.esc(label)}</th>' for _, label in t['columns'])
-    rows = ''.join('<tr>' + ''.join((f'<th scope="row">{_cell(k, r)}</th>' if n == 0 else f'<td>{_cell(k, r)}</td>') for n, (k, _) in enumerate(t['columns'])) + '</tr>'
+    mapped = any(r.get('lat') is not None for r in t['rows'])
+    rows = ''.join('<tr' + (map_attrs(r.get('lat'), r.get('lon'), ', '.join(r[k] for k in ('address', 'city') if r.get(k))) if mapped else '') + '>' + ''.join((f'<th scope="row">{_cell(k, r)}</th>' if n == 0 else f'<td>{_cell(k, r)}</td>') for n, (k, _) in enumerate(t['columns'])) + '</tr>'
                    for r in t['rows'])
     tid = 'wtb-' + t['id']
     search = (f'<label for="{tid}-q"><strong>Search</strong> by name, street or town</label><br><input id="{tid}-q" class="filter" type="search" data-filter="{tid}" autocomplete="off">'
               f'<p class="muted" id="{tid}-count" aria-live="polite">{len(t["rows"])} listed</p>') if searchable and len(t['rows']) > 15 else ''
     note = f'<p class="muted">{nat.esc(t["note"])}</p>' if t.get('note') else ''
-    return (f'<h3 id="{nat.esc(t["id"])}">{nat.esc(t["caption"])}</h3>{note}<p class="muted">Source: {cites.mark(t["source_ids"])}</p>{search}'
+    place = MAP_ASSETS + map_section(tid, f'{tid}-q', 'store,stores', t['caption']) if mapped and search else ''
+    return (f'<h3 id="{nat.esc(t["id"])}">{nat.esc(t["caption"])}</h3>{note}<p class="muted">Source: {cites.mark(t["source_ids"])}</p>{search}{place}'
             f'<div class="scroll"><table id="{tid}"><thead><tr>{head}</tr></thead><tbody>{rows}</tbody></table></div>')
 
 
