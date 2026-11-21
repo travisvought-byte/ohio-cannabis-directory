@@ -522,22 +522,6 @@
     }
    ]
   },
-  "CU": {
-   "name": "Cuba",
-   "page": "world-cuba.html",
-   "fcdo_title": "Cuba",
-   "source_id": "fcdo-cuba",
-   "updated": "2026-09-25",
-   "sections": [
-    {
-     "part": "safety-and-security",
-     "heading": "Illegal drugs penalties",
-     "paragraphs": [
-      "Cuba has a zero tolerance policy against the use, possession and trafficking of illegal drugs. Cuban courts can give severe penalties for drug-related offences. Pack all luggage yourself and do not carry items for anyone else."
-     ]
-    }
-   ]
-  },
   "CY": {
    "name": "Cyprus",
    "page": "world-cyprus.html",
@@ -2507,14 +2491,6 @@
    "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
    "title": "Croatia travel advice (last updated by the FCDO 2026-08-11)",
    "url": "https://www.gov.uk/foreign-travel-advice/croatia",
-   "retrieved_on": "2026-11-20"
-  },
-  {
-   "id": "fcdo-cuba",
-   "kind": "government",
-   "publisher": "UK Foreign, Commonwealth & Development Office (GOV.UK)",
-   "title": "Cuba travel advice (last updated by the FCDO 2026-09-25)",
-   "url": "https://www.gov.uk/foreign-travel-advice/cuba",
    "retrieved_on": "2026-11-20"
   },
   {

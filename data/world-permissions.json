@@ -6036,6 +6036,76 @@
      "A court-ordered rehabilitation period counts toward the sentence, and full recovery can end it."
     ]
    }
+  },
+  "CU": {
+   "name": "Cuba",
+   "page": "world-cuba.html",
+   "summary": "Cannabis is illegal in Cuba. Under the 2022 Penal Code, possessing marijuana without authorisation or a prescription carries 6 months to 2 years in prison, a fine, or both, and growing cannabis or knowingly holding its seeds carries 4 to 10 years. The UK government describes a zero-tolerance policy on drugs.",
+   "note": "Article numbers refer to Ley 151/2022, the Penal Code in force since 2022.",
+   "answers": {
+    "adult-use": {
+     "status": "not-permitted",
+     "short": "Illegal",
+     "detail": "Article 236 makes possession of drugs without authorisation or a medical prescription an offence. The UK Foreign Office says Cuba has a zero-tolerance policy against the use, possession and trafficking of illegal drugs and that courts can give severe penalties.",
+     "citation": "Código Penal 2022, art. 236; FCDO (Sep 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cu-cp-2022",
+      "cu-fcdo"
+     ]
+    },
+    "buying": {
+     "status": "not-permitted",
+     "short": "No legal sales",
+     "detail": "Acquiring, transporting or trafficking drugs without authorisation is punished under article 235 with 4 to 10 years, and running premises where people consume drugs is covered too.",
+     "citation": "Código Penal 2022, art. 235.1",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cu-cp-2022"
+     ]
+    },
+    "possession": {
+     "status": "not-permitted",
+     "short": "Any amount is a crime",
+     "detail": "Article 236(b) punishes possession of cannabis or its derivatives with 6 months to 2 years in prison, a fine of 200 to 500 cuotas, or both. Holding drugs with intent to supply falls under article 235 (4 to 10 years).",
+     "citation": "Código Penal 2022, arts. 235-236",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cu-cp-2022"
+     ]
+    },
+    "home-grow": {
+     "status": "not-permitted",
+     "short": "Growing carries 4 to 10 years",
+     "detail": "Article 235.1 punishes cultivating the Cannabis plant, or knowingly possessing its seeds or plant parts, with 4 to 10 years in prison. Land owned or used by the grower can be confiscated.",
+     "citation": "Código Penal 2022, art. 235.1 and 235.5",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cu-cp-2022"
+     ]
+    },
+    "border": {
+     "status": "not-permitted",
+     "short": "Do not carry any cannabis",
+     "detail": "Importing or exporting drugs falls under article 235, and international trafficking is an aggravating factor. The UK Foreign Office advises packing all luggage yourself and not carrying items for anyone else.",
+     "citation": "Código Penal 2022, art. 235; FCDO (Sep 2026)",
+     "reviewed_on": "2026-11-19",
+     "source_ids": [
+      "cu-cp-2022",
+      "cu-fcdo"
+     ]
+    }
+   },
+   "differences": {
+    "title": "What is different about Cuba",
+    "source_ids": [
+     "cu-cp-2022"
+    ],
+    "points": [
+     "Aggravated drug offences, such as those near schools, involving minors or in relatively large quantities, carry 10 to 30 years, life imprisonment or death.",
+     "Failing to report a drug offence you know about can itself carry 2 to 5 years."
+    ]
+   }
   }
  },
  "canada_provinces": [
@@ -6411,7 +6481,8 @@
     "VG",
     "TC",
     "MS",
-    "DO"
+    "DO",
+    "CU"
    ]
   },
   {
@@ -10188,6 +10259,22 @@
    "publisher": "UK Foreign, Commonwealth & Development Office",
    "title": "Dominican Republic travel advice: Safety and security (updated Aug 7 2026)",
    "url": "https://www.gov.uk/foreign-travel-advice/dominican-republic/safety-and-security",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cu-cp-2022",
+   "kind": "statute",
+   "publisher": "Republic of Cuba, Gaceta Oficial (copy on FAOLEX)",
+   "title": "Ley 151/2022 Código Penal (GOC-2022-861-O93, Sep 1 2022)",
+   "url": "https://faolex.fao.org/docs/pdf/cub212824.pdf",
+   "retrieved_on": "2026-11-19"
+  },
+  {
+   "id": "cu-fcdo",
+   "kind": "government",
+   "publisher": "UK Foreign, Commonwealth & Development Office",
+   "title": "Cuba travel advice: Safety and security (updated Sep 25 2026)",
+   "url": "https://www.gov.uk/foreign-travel-advice/cuba/safety-and-security",
    "retrieved_on": "2026-11-19"
   }
  ]
