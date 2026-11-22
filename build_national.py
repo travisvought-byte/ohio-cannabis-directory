@@ -654,14 +654,47 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
     body.append(cites.render())
     answered = len(state_answers)
     short = {k: state_answers[k]['short'].rstrip('.') for k in ('adult-use', 'medical') if k in state_answers}
-    description = (f'Is weed legal in {place}? Adult use: {short.get("adult-use", "not yet reviewed")}. Medical: {short.get("medical", "not yet reviewed")}. '
-                   f'{answered} of {len(perm["questions"])} questions answered from named sources, plus how to get a medical card and local help.')
+    description = state_description(place, state_answers, answered, len(perm['questions']))
     page, title = slug(name) + '.html', f'Is weed legal in {place}? {name} cannabis laws'
     ld = [breadcrumbs([('All states', '')], page, name)]
     faq = faq_node(perm, state_answers, page)
     if faq:
         ld.append(faq)
     return shell(title, description, ''.join(body), page, name, ld=ld)
+
+
+def state_description(place, state_answers, answered, total):
+    """The search-result snippet for a state page: the answer first, in plain words,
+    then the details people look for next. Built only from the short answers shown on the page."""
+    def short(q):
+        a = state_answers.get(q)
+        return (a['short'].rstrip('.'), a['status']) if a else (None, None)
+    adult, adult_status = short('adult-use')
+    med, med_status = short('medical')
+    med_detail = med and not med.lower().startswith('yes')
+    if adult_status == 'allowed':
+        lead = (f'Yes. Weed is legal in {place} for adults 21 and older'
+                + (', and for medical patients.' if med_status == 'allowed' else '.')
+                if adult == 'Yes, 21 and older' else f'Yes. Adult use in {place}: {adult}.')
+        extra = []
+        for q, label in (('possession', 'Limit'), ('home-grow', 'Home grow')):
+            text, status = short(q)
+            if text and status in ('allowed', 'limited'):
+                extra.append(f'{label}: {text[0].lower() + text[1:]}.')
+        rest = ' '.join(extra) or 'Where to buy, limits and driving rules, with official sources.'
+    elif adult_status == 'medical-only':
+        lead = f'Only with a medical card. Recreational weed is not legal in {place}' + (f'; medical: {med}.' if med_detail else ', but medical cannabis is.')
+        rest = 'How to get a medical card, who qualifies and the rules, with official sources.'
+    elif adult_status == 'not-permitted' and med_status == 'not-permitted':
+        lead = f'No. Weed is not legal in {place}, and there is no medical marijuana law.'
+        rest = 'Driving, work and record-clearing rules, with official sources.'
+    elif adult_status == 'not-permitted':
+        lead = f'No. Weed is not legal in {place}. Medical use: {med or "a narrow program only"}.'
+        rest = 'Driving, work and record-clearing rules, with official sources.'
+    else:
+        lead = f'Is weed legal in {place}? Adult use: {adult or "not yet reviewed"}. Medical: {med or "not yet reviewed"}.'
+        rest = f'{answered} of {total} questions answered from official sources.'
+    return f'{lead} {rest}'
 
 
 def faq_node(perm, state_answers, page):
