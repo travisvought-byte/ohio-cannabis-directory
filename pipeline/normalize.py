@@ -69,7 +69,10 @@ def read_raw(source):
         tables = pd.read_html(io.StringIO(path.read_text(encoding='utf-8', errors='ignore')), match=parse.get('match', '.+'),
                               header=parse.get('header'))
         if parse.get('all_tables'):
-            frames = tables
+            # Tables whose first header cell names them (e.g. "Southern Nevada Retail Stores"):
+            # keep the ones matching table_title and give their first column one common name.
+            frames = [f.rename(columns={f.columns[0]: parse.get('first_column', f.columns[0])}) for f in tables
+                      if re.search(parse.get('table_title', '.'), str(f.columns[0]))]
         else:
             frames = [tables[i] for i in parse['tables']] if 'tables' in parse else [tables[parse.get('table', 0)]]
         return [r for f in frames for r in f.astype(object).to_dict('records')]
@@ -162,8 +165,10 @@ def normalize_row(row, mapping, state):
         out['county'] = re.sub(r'\s+county$', '', out['county'], flags=re.I)
     if out.get('state') and len(out['state']) > 2:
         out['state'] = state
-    if not out.get('name') and out.get('licensee'):
-        out['name'] = out['licensee']
+    if out.get('licensee') and (not out.get('name') or re.match(r'^\d+\s', out['name'])):
+        out['name'] = out.pop('licensee')  # some lists put the street in the trade-name column
+    if out.get('address'):  # "Portland Or 97214" after title-casing -> "Portland, OR 97214"
+        out['address'] = re.sub(r',?\s+%s\s+(\d{5})' % re.escape(state.title()), r', %s \1' % state, out['address'])
     return out
 
 

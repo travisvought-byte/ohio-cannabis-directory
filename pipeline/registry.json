@@ -810,10 +810,6 @@
     "name": "business_name",
     "licensee": "business_licenses",
     "address": "physical_address",
-    "city": {
-     "column": "physical_address",
-     "regex": ",\\s*([^,]+?),?\\s+OR\\b"
-    },
     "county": "county",
     "license_number": "license_number",
     "license_type": "license_type",
@@ -826,7 +822,8 @@
    "label": "retailers the Oregon Liquor and Cannabis Commission lists as active",
    "evidence_level": "regulator-open-data",
    "cadence_days": 30,
-   "status": "active"
+   "status": "active",
+   "limitations": "Where the State lists a street in the trade-name column, the licensee name is shown instead. Addresses as the State records them. A dated copy, not a live license verification."
   },
   {
    "id": "us-nv-ccb-retail-stores",
@@ -842,7 +839,9 @@
    },
    "parse": {
     "match": "License Number",
-    "all_tables": true
+    "all_tables": true,
+    "table_title": "Retail Stores",
+    "first_column": "Store"
    },
    "keep": [
     {
@@ -850,18 +849,18 @@
      "match": "\\S"
     }
    ],
-   "kept_rule": "Rows of the Board's retail store tables (southern and northern Nevada) that carry a license number.",
+   "kept_rule": "Rows of the Board's Southern and Northern Nevada retail store tables (consumption lounges left out).",
    "map": {
     "name": {
-     "col_index": 0,
-     "regex": "^(.*?)\\s+[\\u2013\\u2014-]\\s+"
+     "column": "Store",
+     "regex": "^(.*?)\\s+[\\u2013\\u2014]\\s+"
     },
-    "address": {
-     "col_index": 0,
-     "regex": "[\\u2013\\u2014-]\\s+(.*?)\\s+[\\u2013\\u2014-]\\s+(?:Adult|Medical)"
+    "street": {
+     "column": "Store",
+     "regex": "[\\u2013\\u2014]\\s+(.*)\\s+[\\u2013\\u2014]\\s+(?:Adult|Medical)"
     },
     "license_type": {
-     "col_index": 0,
+     "column": "Store",
      "regex": "((?:Adult Use|Medical)[^\\u2013\\u2014]*)$"
     },
     "license_number": "License Number"
@@ -870,10 +869,10 @@
     "Delivery Option"
    ],
    "label": "retail stores the Cannabis Compliance Board lists",
-   "queue_note": "Table layout confirmed from the page; first run checks the parse.",
    "evidence_level": "regulator-list",
    "cadence_days": 30,
-   "status": "active"
+   "status": "active",
+   "limitations": "The Board's list gives a street address but no city or ZIP. A dated copy, not a live license verification."
   },
   {
    "id": "us-wa-lcb-licensees",
