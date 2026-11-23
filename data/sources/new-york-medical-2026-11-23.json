@@ -1,0 +1,285 @@
+{
+  "reviewed_on": "2026-11-23",
+  "recheck_on": "2027-02-21",
+  "method": "Medical Cannabis Program routes read on cannabis.ny.gov and one advocacy guide read on NORML's own site, November 23, 2026. Pages not specific to the medical program, unread brochures and third-party-hosted forms were left out.",
+  "sources": {
+    "ocm-caregivers": {
+      "url": "https://cannabis.ny.gov/designated-caregivers",
+      "source_kind": "government",
+      "limitations": "OCM page reviewed November 23, 2026. Program rules change; confirm on the linked OCM page before acting."
+    },
+    "ocm-caregiver-facility": {
+      "url": "https://cannabis.ny.gov/designated-caregiver-facility-registration",
+      "source_kind": "government",
+      "limitations": "OCM page reviewed November 23, 2026. Program rules change; confirm on the linked OCM page before acting."
+    },
+    "ocm-practitioners": {
+      "url": "https://cannabis.ny.gov/practitioners",
+      "source_kind": "government",
+      "limitations": "OCM page reviewed November 23, 2026. Program rules change; confirm on the linked OCM page before acting."
+    },
+    "ocm-medicaid-visits": {
+      "url": "https://cannabis.ny.gov/medical-cannabis-office-visits",
+      "source_kind": "government",
+      "limitations": "OCM page reviewed November 23, 2026. Program rules change; confirm on the linked OCM page before acting."
+    },
+    "ocm-amendments-2026": {
+      "url": "https://cannabis.ny.gov/system/files/documents/2026/03/summary-of-medical-bill-amendments-pdf.pdf",
+      "source_kind": "government",
+      "limitations": "OCM summary of 2026 medical program amendments (PDF, March 2026), reviewed November 23, 2026. No separate web page yet; confirm current rules with OCM or the dispensary."
+    },
+    "ocm-faq": {
+      "url": "https://cannabis.ny.gov/medical-cannabis-program-faqs",
+      "source_kind": "government",
+      "limitations": "OCM page reviewed November 23, 2026. Program rules change; confirm on the linked OCM page before acting."
+    },
+    "ocm-patient-rights": {
+      "url": "https://cannabis.ny.gov/patient-rights-and-protections",
+      "source_kind": "government",
+      "limitations": "OCM page reviewed November 23, 2026. Program rules change; confirm on the linked OCM page before acting."
+    },
+    "norml-ny-medical": {
+      "url": "https://norml.org/laws/new-york-medical-marijuana-law",
+      "source_kind": "secondary",
+      "limitations": "NORML's New York medical law overview, reviewed November 23, 2026 (page last modified September 22, 2026). An advocacy summary, not legal advice or a patient service; confirm rules with OCM."
+    }
+  },
+  "organizations": [],
+  "services": [
+    {
+      "id": "svc-ny-medical-caregivers",
+      "organization_id": "org-ny-office-cannabis-management",
+      "pathway_ids": [
+        "medical"
+      ],
+      "name": "Register as a designated caregiver",
+      "description": "Certified patients may designate up to five caregivers, who are registered automatically when the patient names them, and can then buy, carry and help administer medical cannabis for the patient.",
+      "audiences": [
+        "caregivers",
+        "patients"
+      ],
+      "eligibility": "The certified patient designates the caregiver; caregiver age and other rules are on the OCM page.",
+      "next_step": {
+        "label": "Open OCM caregiver page",
+        "url": "https://cannabis.ny.gov/designated-caregivers"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-caregivers",
+          "value": "New York State Medical Cannabis Program."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-caregivers",
+          "value": "Certified patients registered with the Medical Cannabis Program may designate up to five caregivers; a caregiver named on the patient registration is auto-registered."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-medical-caregiver-facilities",
+      "organization_id": "org-ny-office-cannabis-management",
+      "pathway_ids": [
+        "medical"
+      ],
+      "name": "Register a facility as a designated caregiver",
+      "description": "Hospitals, nursing and adult care facilities, mental health and developmental disability residences, youth residential programs and schools can apply to OCM to act as a designated caregiver for patients in their care.",
+      "audiences": [
+        "caregivers",
+        "business"
+      ],
+      "eligibility": "For eligible facility types listed by OCM.",
+      "next_step": {
+        "label": "Open facility registration",
+        "url": "https://cannabis.ny.gov/designated-caregiver-facility-registration"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-caregiver-facility",
+          "value": "New York State Medical Cannabis Program."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-caregiver-facility",
+          "value": "A facility may apply to become an OCM-approved designated caregiver facility; eligible types include hospitals, residential health care and adult care facilities, mental health and developmental disability residences, youth residential programs and schools."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-medical-practitioners",
+      "organization_id": "org-ny-office-cannabis-management",
+      "pathway_ids": [
+        "medical"
+      ],
+      "name": "Register to certify patients (health care providers)",
+      "description": "Licensed practitioners complete an approved course of at least two hours and then certify patients through the state Medical Cannabis Data Management System.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "For licensed practitioners eligible to certify under New York rules.",
+      "next_step": {
+        "label": "Open OCM practitioner page",
+        "url": "https://cannabis.ny.gov/practitioners"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-practitioners",
+          "value": "New York State Medical Cannabis Program."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-practitioners",
+          "value": "A minimum of a 2-hour approved course must be completed by providers who certify patients, who then certify through the Medical Cannabis Data Management System in the Health Commerce System."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-medical-medicaid-visits",
+      "organization_id": "org-ny-office-cannabis-management",
+      "pathway_ids": [
+        "medical"
+      ],
+      "name": "Medicaid coverage of certification visits",
+      "description": "New York Medicaid covers practitioner office visits to evaluate and certify a patient for medical cannabis; the cannabis products themselves are not covered.",
+      "audiences": [
+        "patients"
+      ],
+      "eligibility": "For New York Medicaid members seeing a Medicaid-participating practitioner.",
+      "next_step": {
+        "label": "Open OCM coverage page",
+        "url": "https://cannabis.ny.gov/medical-cannabis-office-visits"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-medicaid-visits",
+          "value": "New York State Medical Cannabis Program."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-medicaid-visits",
+          "value": "Medical cannabis products are not a covered benefit under New York State Medicaid; practitioner office visits for evaluation and certification are."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-medical-visiting-patients",
+      "organization_id": "org-ny-office-cannabis-management",
+      "pathway_ids": [
+        "medical"
+      ],
+      "name": "Buying medical cannabis in New York with another state's card",
+      "description": "Medical patients certified or registered in another U.S. state may buy medical cannabis products in New York by showing that proof with a government photo ID.",
+      "audiences": [
+        "patients"
+      ],
+      "eligibility": "Bring proof of certification or registration from your state and a government photo ID.",
+      "next_step": {
+        "label": "Open OCM medical FAQ",
+        "url": "https://cannabis.ny.gov/medical-cannabis-program-faqs"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-faq",
+          "value": "New York State Medical Cannabis Program."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-amendments-2026",
+          "value": "Medical cannabis patients from other U.S. jurisdictions may now purchase medical cannabis products in New York (2026 amendments)."
+        },
+        {
+          "claim": "service-description",
+          "source": "ocm-faq",
+          "value": "Out-of-state patients may purchase provided they present proof of a certification, registration or the equivalent for their state."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-medical-patient-rights",
+      "organization_id": "org-ny-office-cannabis-management",
+      "pathway_ids": [
+        "medical"
+      ],
+      "name": "Know your rights as a certified patient",
+      "description": "OCM explains protections for certified patients in employment, housing and family court, including that status as a certified patient cannot be held against you in family court or social services cases.",
+      "audiences": [
+        "patients",
+        "caregivers"
+      ],
+      "eligibility": "For certified patients; specific situations may have exceptions described by OCM.",
+      "next_step": {
+        "label": "Open patient rights page",
+        "url": "https://cannabis.ny.gov/patient-rights-and-protections"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "ocm-patient-rights",
+          "value": "New York State Medical Cannabis Program."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "ocm-patient-rights",
+          "value": "You cannot be fired for your status as a certified medical cannabis patient; in domestic violence, social services or family court cases that status cannot be held against you."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-norml-medical-guide",
+      "organization_id": "org-73029716e566",
+      "pathway_ids": [
+        "medical"
+      ],
+      "name": "NORML's New York medical cannabis law guide",
+      "description": "National patient and consumer advocacy group's overview of New York medical cannabis laws and regulations for patients.",
+      "audiences": [
+        "patients",
+        "caregivers"
+      ],
+      "eligibility": "Free to read; an advocacy summary, not legal advice.",
+      "next_step": {
+        "label": "Open NORML's New York guide",
+        "url": "https://norml.org/laws/new-york-medical-marijuana-law"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "norml-ny-medical",
+          "value": "New York State Medical Cannabis Program."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "norml-ny-medical",
+          "value": "NORML provides an overview of the medical cannabis laws and regulations for patients in New York; the page was last modified September 22, 2026."
+        }
+      ]
+    }
+  ],
+  "rules": [],
+  "events": []
+}

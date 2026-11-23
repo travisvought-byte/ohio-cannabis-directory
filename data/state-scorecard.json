@@ -212,14 +212,14 @@
           "next": null
         },
         "medical": {
-          "declared": "partial",
-          "level": "partial",
+          "declared": "broad",
+          "level": "broad",
           "measures": {
-            "services": 4,
-            "government_sourced": 4,
-            "support_organizations": 0
+            "services": 11,
+            "government_sourced": 10,
+            "support_organizations": 1
           },
-          "next": "Reach 8 routes, 3 official and 1 patient-support organization"
+          "next": null
         },
         "business": {
           "declared": "partial",

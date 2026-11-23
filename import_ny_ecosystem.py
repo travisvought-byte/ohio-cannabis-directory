@@ -10,7 +10,7 @@ from directory_data import ROOT
 from import_pa_ecosystem import upsert
 MANIFEST=ROOT/'data/sources/new-york-ecosystem-2026-11-01.json'
 # Later reviewed batches; each is imported after the base manifest with its own review date.
-MANIFESTS=[MANIFEST,ROOT/'data/sources/new-york-suppliers-2026-11-01.json',ROOT/'data/sources/new-york-business-addresses-2026-11-23.json',ROOT/'data/sources/new-york-community-2026-11-23.json']
+MANIFESTS=[MANIFEST,ROOT/'data/sources/new-york-suppliers-2026-11-01.json',ROOT/'data/sources/new-york-business-addresses-2026-11-23.json',ROOT/'data/sources/new-york-community-2026-11-23.json',ROOT/'data/sources/new-york-medical-2026-11-23.json']
 DIRECTORY=ROOT/'data/directory.json'
 STATE='NY'
 PREFIX='ev-ny26-'
