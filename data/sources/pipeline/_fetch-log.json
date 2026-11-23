@@ -1,0 +1,74 @@
+{
+ "us-mo-dcr-dispensaries": {
+  "ok": true,
+  "fetched_at": "2026-11-23T21:07:21+00:00",
+  "file": "us-mo-dcr-dispensaries.json",
+  "resolved_url": "https://services6.arcgis.com/Bd4MACzvEukoZ9mR/arcgis/rest/services/DCR_Verified_Dispensary_Map_layer/FeatureServer/0",
+  "bytes": 88655,
+  "sha256": "21da12ae87d5642f42b0edb725fdff8895c7cedae744a149f1d22c34a14347df"
+ },
+ "us-il-idfpr-dispensary-map": {
+  "ok": true,
+  "fetched_at": "2026-11-23T21:07:21+00:00",
+  "file": "us-il-idfpr-dispensary-map.csv",
+  "resolved_url": "https://public.data.illinois.gov/t/Public/views/DispensaryMap/Map.csv",
+  "bytes": 35060,
+  "sha256": "9725e25992865e26fd394344b869e012c87144a165e437db4097212b9af0a08e"
+ },
+ "us-ma-ccc-retailers": {
+  "ok": true,
+  "fetched_at": "2026-11-23T21:07:23+00:00",
+  "file": "us-ma-ccc-retailers.csv",
+  "resolved_url": "https://masscannabiscontrol.com/resource/l_licenses_commence_ops.csv",
+  "bytes": 545172,
+  "sha256": "c6a7d763199f3a2240a4ba2e8f420fa8eaa11ee24d19ab5b38d94681010f5cf0"
+ },
+ "us-ct-dcp-retail-locations": {
+  "ok": true,
+  "fetched_at": "2026-11-23T21:07:23+00:00",
+  "file": "us-ct-dcp-retail-locations.json",
+  "resolved_url": "https://data.ct.gov/resource/42yd-3x3d.json",
+  "bytes": 21571,
+  "sha256": "1983959573cf98f225021da515f656930d44f23b12f45698acdba048de11a98d"
+ },
+ "us-md-mca-dispensaries": {
+  "ok": true,
+  "fetched_at": "2026-11-23T21:07:34+00:00",
+  "file": "us-md-mca-dispensaries.json",
+  "resolved_url": "https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/MCA_Licensed_Dispensaries_List_view_API/FeatureServer/0",
+  "bytes": 84199,
+  "sha256": "4f72e940fa45e020dddc8833debc5356d02b4c59cc65778769fe294a502b3ee2"
+ },
+ "us-fl-ommu-dispensing-locations": {
+  "ok": true,
+  "fetched_at": "2026-11-23T21:07:34+00:00",
+  "file": "us-fl-ommu-dispensing-locations.html",
+  "resolved_url": "https://knowthefactsmmj.com/mmtc/",
+  "bytes": 455480,
+  "sha256": "128aec1b7351ddfaddddfdf2cfbd5bd5b105c4194a61ef7420d30d7dee2a7571"
+ },
+ "us-ri-ccc-compassion-centers": {
+  "ok": true,
+  "fetched_at": "2026-11-23T21:07:34+00:00",
+  "file": "us-ri-ccc-compassion-centers.html",
+  "resolved_url": "https://ccc.ri.gov/cannabis-office/compassion-centers/licensed-compassion-centers",
+  "bytes": 776600,
+  "sha256": "2db7de092bf1acc7f65bbde5d810504da60a401220e5f0e9c3fb285f42e24d5e"
+ },
+ "us-or-olcc-retailers": {
+  "ok": true,
+  "fetched_at": "2026-11-23T21:07:34+00:00",
+  "file": "us-or-olcc-retailers.json",
+  "resolved_url": "https://data.oregon.gov/resource/q32u-cmam.json",
+  "bytes": 323813,
+  "sha256": "47229a7036b49821ec8fdbc55f94f8b372f6b4be232920cf1d8299f562bc2785"
+ },
+ "us-nv-ccb-retail-stores": {
+  "ok": true,
+  "fetched_at": "2026-11-23T21:07:35+00:00",
+  "file": "us-nv-ccb-retail-stores.html",
+  "resolved_url": "https://ccb.nv.gov/list-of-licensees/",
+  "bytes": 134705,
+  "sha256": "0fcdc5d8e21274cae2e4b0c101441ae4b0e674c705f0a61e8883389e5ce34399"
+ }
+}

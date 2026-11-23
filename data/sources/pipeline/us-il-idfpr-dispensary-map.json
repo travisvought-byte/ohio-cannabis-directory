@@ -1,0 +1,1780 @@
+{
+ "source_id": "us-il-idfpr-dispensary-map",
+ "jurisdiction": "IL",
+ "topic": "retail",
+ "publisher": "Illinois Department of Financial and Professional Regulation, Cannabis Regulation Oversight Office",
+ "title": "Dispensary locations (State of Illinois public data, dispensary map export)",
+ "landing_url": "https://cannabis.illinois.gov/about/locations.html",
+ "download_url": "https://public.data.illinois.gov/t/Public/views/DispensaryMap/Map.csv",
+ "retrieved_on": "2026-11-23",
+ "sha256": "9725e25992865e26fd394344b869e012c87144a165e437db4097212b9af0a08e",
+ "evidence_level": "official-portal",
+ "evidence_meaning": "Listed on the government's official open-data portal, attributed to the regulator.",
+ "export_rows": 289,
+ "export_counts": {
+  "Serves Medical Patients": {
+   "Yes": 202,
+   "No": 72,
+   "yes": 15
+  },
+  "BLS Region": {
+   "Chicago-Naperville-Elgin": 184,
+   "St. Louis, MO": 14,
+   "Peoria": 12,
+   "West Central Illinois Nonmetropolitan": 11,
+   "South Illinois Nonmetropolitan": 10,
+   "Rockford": 7,
+   "Springfield": 7,
+   "East Central IL Nonmetropolitan": 7,
+   "Northwest Illinois nonmetropolitan area": 7,
+   "Bloomington": 6,
+   "Champaign-Urbana": 5,
+   "Davenport-Moline-Rock Island": 5,
+   "Kankakee": 3,
+   "Decatur": 3,
+   "Carbondale-Marion": 3,
+   "Danville": 3,
+   "Cape Girardeau, MO": 2
+  }
+ },
+ "kept_rule": "Every row: the map lists licensed adult-use dispensaries; the Serves Medical Patients column marks those that also serve registered patients.",
+ "kept_rows": 289,
+ "dropped_incomplete_rows": 0,
+ "limitations": "The State's map export has no ZIP, phone, website or license number, and its coordinates are not precise enough to copy. A dated copy, not a live license verification.",
+ "rows": [
+  {
+   "name": "EarthMed",
+   "street": "852 S Westgate St",
+   "city": "Addison",
+   "state": "IL"
+  },
+  {
+   "name": "Hatch Dispensary",
+   "street": "1433 W Fullerton Ave Ste C",
+   "city": "Addison",
+   "state": "IL"
+  },
+  {
+   "name": "Alton Dispensary",
+   "street": "1400 E Broadway",
+   "city": "Alton",
+   "state": "IL"
+  },
+  {
+   "name": "Terrace - Alton",
+   "street": "1400 E Broadway",
+   "city": "Alton",
+   "state": "IL"
+  },
+  {
+   "name": "Village Dispensary - Godfrey",
+   "street": "110 Homer M Adams Pkwy",
+   "city": "Alton",
+   "state": "IL"
+  },
+  {
+   "name": "Thrive Anna",
+   "street": "87 Richview Drive",
+   "city": "Anna",
+   "state": "IL"
+  },
+  {
+   "name": "Bloc Dispensary - Antioch",
+   "street": "417 E Il Route 173 Unit 106",
+   "city": "Antioch",
+   "state": "IL"
+  },
+  {
+   "name": "Consume Antioch",
+   "street": "471 Main St",
+   "city": "Antioch",
+   "state": "IL"
+  },
+  {
+   "name": "Tru Essence Arlington Heights",
+   "street": "792 E Rand Rd.",
+   "city": "Arlington Heights",
+   "state": "IL"
+  },
+  {
+   "name": "Verilife Arlington Heights",
+   "street": "1816 S Arlington Heights Rd",
+   "city": "Arlington Heights",
+   "state": "IL"
+  },
+  {
+   "name": "AuraLight - Aurora",
+   "street": "1350 N Orchard Rd",
+   "city": "Aurora",
+   "state": "IL"
+  },
+  {
+   "name": "NuEra Aurora",
+   "street": "1415 Corporate Blvd.",
+   "city": "Aurora",
+   "state": "IL"
+  },
+  {
+   "name": "ZenLeaf - Aurora",
+   "street": "740 IL Rte 59",
+   "city": "Aurora",
+   "state": "IL"
+  },
+  {
+   "name": "Dutchess Cannabis - Batavia",
+   "street": "144 S Randall Rd",
+   "city": "Batavia",
+   "state": "IL"
+  },
+  {
+   "name": "Market 96 - Belleville",
+   "street": "7300 Twin Pyramid Pkwy",
+   "city": "Belleville",
+   "state": "IL"
+  },
+  {
+   "name": "Mystic Greenz - Belleville",
+   "street": "360 S Green Mount Rd",
+   "city": "Belleville",
+   "state": "IL"
+  },
+  {
+   "name": "Aroma Hill - Belvidere",
+   "street": "1874 Crystal Parkway",
+   "city": "Belvidere",
+   "state": "IL"
+  },
+  {
+   "name": "Ash Ivy - Benton",
+   "street": "9 N Rend Lake Plz",
+   "city": "Benton",
+   "state": "IL"
+  },
+  {
+   "name": "Bloc Dispensary Berwyn",
+   "street": "7122 Ogden Ave",
+   "city": "Berwyn",
+   "state": "IL"
+  },
+  {
+   "name": "Beyond Hello Bloomington Keaton Place",
+   "street": "118 Keaton Place",
+   "city": "Bloomington",
+   "state": "IL"
+  },
+  {
+   "name": "Cookies - Bloomington",
+   "street": "1006 Jc Pkwy",
+   "city": "Bloomington",
+   "state": "IL"
+  },
+  {
+   "name": "Be Blue Island",
+   "street": "12720 Western Ave",
+   "city": "Blue Island",
+   "state": "IL"
+  },
+  {
+   "name": "Cookies Bolingbrook",
+   "street": "190 S Weber Rd",
+   "city": "Bolingbrook",
+   "state": "IL"
+  },
+  {
+   "name": "Ivy Hall - Bolingbrook",
+   "street": "361 S Bolingbrook Dr",
+   "city": "Bolingbrook",
+   "state": "IL"
+  },
+  {
+   "name": "Green Releaf - Bourbonnais",
+   "street": "1660 N State Route 50",
+   "city": "Bourbonnais",
+   "state": "IL"
+  },
+  {
+   "name": "Phili Dispensary",
+   "street": "1300 Locke Dr.",
+   "city": "Bourbonnais",
+   "state": "IL"
+  },
+  {
+   "name": "Viola CHI",
+   "street": "1516 W Roosevelt Rd.",
+   "city": "Broadview",
+   "state": "IL"
+  },
+  {
+   "name": "Sunnyside - Buffalo Grove",
+   "street": "830 Milwaukee Ave",
+   "city": "Buffalo Grove",
+   "state": "IL"
+  },
+  {
+   "name": "Starbuds-Burbank",
+   "street": "7844 S Cicero Ave",
+   "city": "Burbank",
+   "state": "IL"
+  },
+  {
+   "name": "Vertical People Dispensary",
+   "street": "300 Washington Ave.",
+   "city": "Cairo",
+   "state": "IL"
+  },
+  {
+   "name": "Mission Calumet City",
+   "street": "1330 Torrence Ave.",
+   "city": "Calumet City",
+   "state": "IL"
+  },
+  {
+   "name": "Rise - Canton",
+   "street": "3104 N Main St",
+   "city": "Canton",
+   "state": "IL"
+  },
+  {
+   "name": "Consume Carbondale",
+   "street": "201 E. Main Street",
+   "city": "Carbondale",
+   "state": "IL"
+  },
+  {
+   "name": "Key- Carbondale",
+   "street": "1010 E Main St.",
+   "city": "Carbondale",
+   "state": "IL"
+  },
+  {
+   "name": "The Carbondale Dispensary",
+   "street": "613 E Main St.",
+   "city": "Carbondale",
+   "state": "IL"
+  },
+  {
+   "name": "Altius Dispensary - Carol Stream",
+   "street": "506 S Schmale Rd",
+   "city": "Carol Stream",
+   "state": "IL"
+  },
+  {
+   "name": "Bisa Lina Carol Stream",
+   "street": "720 E North Ave",
+   "city": "Carol Stream",
+   "state": "IL"
+  },
+  {
+   "name": "Windy City Cannabis Carpentersville",
+   "street": "125 S Western Ave",
+   "city": "Carpentersville",
+   "state": "IL"
+  },
+  {
+   "name": "Vertical Dispensary",
+   "street": "20 Northwest Hwy",
+   "city": "Cary",
+   "state": "IL"
+  },
+  {
+   "name": "Thrive - Casey",
+   "street": "912 N Route 49",
+   "city": "Casey",
+   "state": "IL"
+  },
+  {
+   "name": "Chambana Cannabis",
+   "street": "1826 Glenn Park Dr",
+   "city": "Champaign",
+   "state": "IL"
+  },
+  {
+   "name": "Cloud9 - Champaign",
+   "street": "505 W Town Center Blvd.",
+   "city": "Champaign",
+   "state": "IL"
+  },
+  {
+   "name": "NuEra Champaign",
+   "street": "102 E. Green St.",
+   "city": "Champaign",
+   "state": "IL"
+  },
+  {
+   "name": "Sunnyside - Champaign",
+   "street": "1704 S Neil St Ste C",
+   "city": "Champaign",
+   "state": "IL"
+  },
+  {
+   "name": "Rise Charleston",
+   "street": "909 Lincoln Ave.",
+   "city": "Charleston",
+   "state": "IL"
+  },
+  {
+   "name": "Ascend Moca Logan Square",
+   "street": "2367 N Milwaukee Ave.",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Ascend Moca River North",
+   "street": "216 W. Ohio St.",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "BLOC Dispensary Kedzie",
+   "street": "3545 N Kedzie Ave",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Bud & Rita's - The Loop",
+   "street": "105 W Madison St",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Bud & Ritas - West Town",
+   "street": "1914 W Chicago Ave",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Bud and Ritas Chicago",
+   "street": "3425 W Belmont Ave",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Cannabist - Chicago",
+   "street": "4758 N Milwaukee Ave",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Consume Chicago",
+   "street": "6428 N Milwaukee Ave",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Cookies - Chicago",
+   "street": "215 N Clinton St",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Curaleaf Lincoln Park",
+   "street": "923 W. Weed St.",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Dispensary 33",
+   "street": "5001 N Clark St",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Dispensary 33 - Fulton Market",
+   "street": "1152 W. Randolph",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Dr Greenthumbs Chicago",
+   "street": "2200 N Ashland Ave",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Grasshopper Club - South Loop",
+   "street": "58 E Roosevelt Rd Fl 1",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Grasshopper Club Logan Square",
+   "street": "2551 N. Milwaukee Ave.",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Green Rose - Chicago",
+   "street": "612 N. Wells St.",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Guaranteed Dispensary",
+   "street": "620 N Fairbanks Ct",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Ivy Hall - Damen",
+   "street": "1720 N Damen Ave.",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Ivy Hall - Logan Square",
+   "street": "3115 W Armitage Ave",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Karma Club",
+   "street": "1590 N Clybourn Ave",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Maribis Of Chicago",
+   "street": "4570 S Archer Ave",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Market 96 - S Wells Street",
+   "street": "529 S Wells St Ste 100",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Midway by Ascend",
+   "street": "5648 S Archer Ave",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Mission Illinois",
+   "street": "8554 S Commercial Ave",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "NCC Chi-West Loop",
+   "street": "810 W. Randolph St.",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Nirvana Dispensary Chicago",
+   "street": "2301 W Lawrence Ave",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Nuera Chicago",
+   "street": "1308 W North Ave",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Perception Cannabis",
+   "street": "7000 N Clark St",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Prairie Cannabis South Loop",
+   "street": "622 W Roosevelt Rd",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Spark'd Wicker Park",
+   "street": "1212 N Ashland Ave",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Sparkd Dispensary - South Loop",
+   "street": "2114 S Wabash Ave",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Sunnyside - Chi-River North",
+   "street": "436 N. Clark St.",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Sunnyside - Wrigleyville",
+   "street": "3524 N. Clark St.",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Sway",
+   "street": "3340 N Halsted St.",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "UMI - Chicago",
+   "street": "2575 N Lincoln Ave.",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Verilife Chicago River North",
+   "street": "60 W Superior St",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Village Bucktown",
+   "street": "1850 W Webster Ave",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Zen Leaf - West Loop",
+   "street": "222 S Halsted St",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Zen Leaf Rogers Park",
+   "street": "7305 N Rogers Ave",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "ZenLeaf Pilsen",
+   "street": "1301 S Western Ave",
+   "city": "Chicago",
+   "state": "IL"
+  },
+  {
+   "name": "Mood Shine Chicago Heights",
+   "street": "628 W Lincoln Hwy",
+   "city": "Chicago Heights",
+   "state": "IL"
+  },
+  {
+   "name": "Ascend Chicago Ridge",
+   "street": "9820 Ridgeland Ave",
+   "city": "Chicago Ridge",
+   "state": "IL"
+  },
+  {
+   "name": "Ascend - Collinsville",
+   "street": "1014 Eastport Plaza Dr",
+   "city": "Collinsville",
+   "state": "IL"
+  },
+  {
+   "name": "Stashouse - Maryville",
+   "street": "2533 Vandalia St",
+   "city": "Collinsville",
+   "state": "IL"
+  },
+  {
+   "name": "Hi Five Crestwood",
+   "street": "13352 Cicero Ave",
+   "city": "Crestwood",
+   "state": "IL"
+  },
+  {
+   "name": "Ivy Hall - Crystal Lake",
+   "street": "501 Pingree Rd.",
+   "city": "Crystal Lake",
+   "state": "IL"
+  },
+  {
+   "name": "Spark'd - Crystal Lake",
+   "street": "330 State Route 31",
+   "city": "Crystal Lake",
+   "state": "IL"
+  },
+  {
+   "name": "Seven Point - Danville",
+   "street": "380 Eastgate Dr.",
+   "city": "Danville",
+   "state": "IL"
+  },
+  {
+   "name": "Sunnyside - Danville",
+   "street": "369 Lynch Dr.",
+   "city": "Danville",
+   "state": "IL"
+  },
+  {
+   "name": "High Haven Darien",
+   "street": "8131 Cass Ave",
+   "city": "Darien",
+   "state": "IL"
+  },
+  {
+   "name": "Mystic Greenz - Decatur",
+   "street": "5405 Indus. Dr.",
+   "city": "Decatur",
+   "state": "IL"
+  },
+  {
+   "name": "Curaleaf Deerfield",
+   "street": "677 Lake Cook Rd",
+   "city": "Deerfield",
+   "state": "IL"
+  },
+  {
+   "name": "Excelleaf Dispensary",
+   "street": "305 E Locust St",
+   "city": "DeKalb",
+   "state": "IL"
+  },
+  {
+   "name": "NuEra - Dekalb",
+   "street": "818 W Lincoln Hwy Ste 7",
+   "city": "DeKalb",
+   "state": "IL"
+  },
+  {
+   "name": "Here and Now - Des Plaines",
+   "street": "1587 Lee St.",
+   "city": "Des Plaines",
+   "state": "IL"
+  },
+  {
+   "name": "Supergood Store",
+   "street": "660 N. Wolf Rd.",
+   "city": "Des Plaines",
+   "state": "IL"
+  },
+  {
+   "name": "Tree Haus - Diamond",
+   "street": "2910 E. Division St",
+   "city": "Diamond",
+   "state": "IL"
+  },
+  {
+   "name": "Terrabis - Dixon",
+   "street": "1679 S Galena Ave.",
+   "city": "Dixon",
+   "state": "IL"
+  },
+  {
+   "name": "Bridge City Collective East Dubuque",
+   "street": "122 Sinsinawa Ave",
+   "city": "East Dubuque",
+   "state": "IL"
+  },
+  {
+   "name": "Nuera East Dubuque",
+   "street": "20170 US Highway 20 W",
+   "city": "East Dubuque",
+   "state": "IL"
+  },
+  {
+   "name": "The Dispensary East Dubuque",
+   "street": "1709 Il Route 35 N",
+   "city": "East Dubuque",
+   "state": "IL"
+  },
+  {
+   "name": "Cloud 9 - East Peoria",
+   "street": "406 W Camp St.",
+   "city": "East Peoria",
+   "state": "IL"
+  },
+  {
+   "name": "Noxx - East Peoria",
+   "street": "300 S Main St",
+   "city": "East Peoria",
+   "state": "IL"
+  },
+  {
+   "name": "Nuera East Peoria",
+   "street": "504 Riverside Dr",
+   "city": "East Peoria",
+   "state": "IL"
+  },
+  {
+   "name": "Cloud9 - Edwardsville",
+   "street": "2341 Plum St",
+   "city": "Edwardsville",
+   "state": "IL"
+  },
+  {
+   "name": "Ivy Hall - Edwardsville",
+   "street": "6197 Old Alton Edwardsville Rd",
+   "city": "Edwardsville",
+   "state": "IL"
+  },
+  {
+   "name": "Rise - Effingham",
+   "street": "1011 Ford Ave Ste C",
+   "city": "Effingham",
+   "state": "IL"
+  },
+  {
+   "name": "High Haven Elgin",
+   "street": "15 Clock Tower Plz",
+   "city": "Elgin",
+   "state": "IL"
+  },
+  {
+   "name": "Jane & Bud's - Elgin",
+   "street": "205 S Randall Rd",
+   "city": "Elgin",
+   "state": "IL"
+  },
+  {
+   "name": "Snap Canna - Elk Grove Vilage",
+   "street": "840 E. Higgins Rd.",
+   "city": "Elk Grove Village",
+   "state": "IL"
+  },
+  {
+   "name": "Sunnyside - Elmwood Park",
+   "street": "7955 W Grand Ave",
+   "city": "Elmwood Park",
+   "state": "IL"
+  },
+  {
+   "name": "OKAY Cannabis Dispensary - Evanston",
+   "street": "100 Chicago Ave",
+   "city": "Evanston",
+   "state": "IL"
+  },
+  {
+   "name": "Zen Leaf Evanston",
+   "street": "1804 Maple Ave",
+   "city": "Evanston",
+   "state": "IL"
+  },
+  {
+   "name": "Ascend Fairview Heights",
+   "street": "114 Commerce Ln",
+   "city": "Fairview Heights",
+   "state": "IL"
+  },
+  {
+   "name": "Bloc - Forest Park",
+   "street": "7216 Circle Ave",
+   "city": "Forest Park",
+   "state": "IL"
+  },
+  {
+   "name": "Mint Cannabis - Forest Park",
+   "street": "7207 Roosevelt Rd",
+   "city": "Forest Park",
+   "state": "IL"
+  },
+  {
+   "name": "Parkway Forest Park",
+   "street": "7432 Madison St.",
+   "city": "Forest Park",
+   "state": "IL"
+  },
+  {
+   "name": "Aroma Hill - Fox Lake",
+   "street": "1298 US Highway 12",
+   "city": "Fox Lake",
+   "state": "IL"
+  },
+  {
+   "name": "Redemption Botanicals - Fox Lake",
+   "street": "107 Towne Centre Ln 31",
+   "city": "Fox lake",
+   "state": "IL"
+  },
+  {
+   "name": "Smokehouse Fox Lake",
+   "street": "44 S US Highway 12",
+   "city": "Fox Lake",
+   "state": "IL"
+  },
+  {
+   "name": "Cannect Dispensary",
+   "street": "3147 Mannheim Rd",
+   "city": "Franklin Park",
+   "state": "IL"
+  },
+  {
+   "name": "The Dispensary",
+   "street": "1801 16th Ave",
+   "city": "Fulton",
+   "state": "IL"
+  },
+  {
+   "name": "Verilife Galena",
+   "street": "115 Perry St.",
+   "city": "Galena",
+   "state": "IL"
+  },
+  {
+   "name": "Natures Treatment of Illinois - Galesburg",
+   "street": "735 W. Main St.",
+   "city": "Galesburg",
+   "state": "IL"
+  },
+  {
+   "name": "Ivy Hall - Glendale Heights",
+   "street": "2130 Bloomingdale Rd Unit B",
+   "city": "Glendale Heights",
+   "state": "IL"
+  },
+  {
+   "name": "Terrabis - Grayville",
+   "street": "105 Koehler St.",
+   "city": "Grayville",
+   "state": "IL"
+  },
+  {
+   "name": "Thrive Harrisburg",
+   "street": "105 N Veterans Drive",
+   "city": "Harrisburg",
+   "state": "IL"
+  },
+  {
+   "name": "nuEra Chicago Southland",
+   "street": "16950 Halsted St.",
+   "city": "Harvey",
+   "state": "IL"
+  },
+  {
+   "name": "Green Rose - Harwood Heights",
+   "street": "4660 N Harlem Ave",
+   "city": "Harwood Heights",
+   "state": "IL"
+  },
+  {
+   "name": "Zen Leaf Highland Park",
+   "street": "2030 Skokie Valley Rd",
+   "city": "Highland Park",
+   "state": "IL"
+  },
+  {
+   "name": "Windy City Cannabis Highwood",
+   "street": "260 Green Bay Rd.",
+   "city": "Highwood",
+   "state": "IL"
+  },
+  {
+   "name": "Namaste Wellness",
+   "street": "6119 East Ave A",
+   "city": "Hodgkins",
+   "state": "IL"
+  },
+  {
+   "name": "Aroma Hill - Hoffman Estates",
+   "street": "1237 North Barrington Road",
+   "city": "Hoffman Estates",
+   "state": "IL"
+  },
+  {
+   "name": "Hi Rise Dispensary",
+   "street": "1795 N Barrington Rd",
+   "city": "Hoffman Estates",
+   "state": "IL"
+  },
+  {
+   "name": "Starbuds Hoffman Estates",
+   "street": "5 E Golf Rd",
+   "city": "Hoffman Estates",
+   "state": "IL"
+  },
+  {
+   "name": "Bloom Wellness- Hometown",
+   "street": "4140 Southwest Hwy",
+   "city": "Hometown",
+   "state": "IL"
+  },
+  {
+   "name": "Windy City Cannabis Homewood",
+   "street": "1137 W. 175th St",
+   "city": "Homewood",
+   "state": "IL"
+  },
+  {
+   "name": "Emerald - Island Lake",
+   "street": "660 E State Rd.",
+   "city": "Island Lake",
+   "state": "IL"
+  },
+  {
+   "name": "Kush21 - Jacksonville",
+   "street": "1112 Veterans Dr",
+   "city": "Jacksonville",
+   "state": "IL"
+  },
+  {
+   "name": "Bisa Lina Joliet",
+   "street": "2121 W Jefferson St",
+   "city": "Joliet",
+   "state": "IL"
+  },
+  {
+   "name": "Rise - Joliet Colorado Ave",
+   "street": "2903 Colorado Ave.",
+   "city": "Joliet",
+   "state": "IL"
+  },
+  {
+   "name": "Rise - Joliet Rock Creek",
+   "street": "1627 Rock Creek Blvd",
+   "city": "Joliet",
+   "state": "IL"
+  },
+  {
+   "name": "Curaleaf Justice",
+   "street": "8340 S Roberts Rd",
+   "city": "Justice",
+   "state": "IL"
+  },
+  {
+   "name": "Aroma Hill - Kankakee",
+   "street": "2255 E Court St",
+   "city": "Kankakee",
+   "state": "IL"
+  },
+  {
+   "name": "Trichome Cannabis Company - Kewanee",
+   "street": "618 Tenney St",
+   "city": "Kewane",
+   "state": "IL"
+  },
+  {
+   "name": "Rise Lake in the Hills",
+   "street": "270 N Randall Rd",
+   "city": "Lake In The Hills",
+   "state": "IL"
+  },
+  {
+   "name": "Nobo",
+   "street": "27500 Il 120",
+   "city": "Lakemoor",
+   "state": "IL"
+  },
+  {
+   "name": "Herb Social",
+   "street": "616 12th St.",
+   "city": "Lawrenceville",
+   "state": "IL"
+  },
+  {
+   "name": "Mystic Greenz - Lincoln",
+   "street": "1120 Woodlawn Rd",
+   "city": "Lincoln",
+   "state": "IL"
+  },
+  {
+   "name": "Green Rose - Lincolnwood",
+   "street": "4656 W Touhy Ave",
+   "city": "Lincolnwood",
+   "state": "IL"
+  },
+  {
+   "name": "Windy City Cannabis - Litchfield",
+   "street": "719 W Union Ave",
+   "city": "Litchfield",
+   "state": "IL"
+  },
+  {
+   "name": "ZenLeaf Lombard",
+   "street": "783 Butterfield Rd.",
+   "city": "Lombard",
+   "state": "IL"
+  },
+  {
+   "name": "The Happy Cannabis Company Loves Park",
+   "street": "4120 N Bell School Rd",
+   "city": "Loves Park",
+   "state": "IL"
+  },
+  {
+   "name": "Dutchess - Lynwood",
+   "street": "20513 Torrence Ave",
+   "city": "Lynwood",
+   "state": "IL"
+  },
+  {
+   "name": "Windy City Cannabis Macomb",
+   "street": "518 W Jackson St",
+   "city": "Macomb",
+   "state": "IL"
+  },
+  {
+   "name": "Bud and Ritas Forsyth",
+   "street": "1401 Hickory Point Dr.",
+   "city": "Macon",
+   "state": "IL"
+  },
+  {
+   "name": "Consume Marion",
+   "street": "8195 Express Dr",
+   "city": "Marion",
+   "state": "IL"
+  },
+  {
+   "name": "Dutchess Cannabis - Markham",
+   "street": "3063 W 159th St.",
+   "city": "Markham",
+   "state": "IL"
+  },
+  {
+   "name": "High Profile - Martinsville",
+   "street": "3001 N York St.",
+   "city": "Martinsville",
+   "state": "IL"
+  },
+  {
+   "name": "Lux Leaf Dispensary",
+   "street": "5539 Miller Circle Dr",
+   "city": "Matteson",
+   "state": "IL"
+  },
+  {
+   "name": "Bloc Dispensary - Mattoon",
+   "street": "511 Lake Land Blvd",
+   "city": "Mattoon",
+   "state": "IL"
+  },
+  {
+   "name": "Earthmed - McHenry",
+   "street": "1711 N Richmond Rd.",
+   "city": "McHenry",
+   "state": "IL"
+  },
+  {
+   "name": "Curaleaf Melrose Park",
+   "street": "1413 West North Ave.",
+   "city": "Melrose Park",
+   "state": "IL"
+  },
+  {
+   "name": "Bloc Dispensary Metropolis",
+   "street": "2125 E 5th St",
+   "city": "Metropolis",
+   "state": "IL"
+  },
+  {
+   "name": "High Profile - Metropolis",
+   "street": "1801 E 5th St",
+   "city": "Metropolis",
+   "state": "IL"
+  },
+  {
+   "name": "Thrive Metropolis",
+   "street": "1551 E. 5th St.",
+   "city": "Metropolis",
+   "state": "IL"
+  },
+  {
+   "name": "Natures Treatment of Illinois - Milan",
+   "street": "973 Tech Dr",
+   "city": "Milan",
+   "state": "IL"
+  },
+  {
+   "name": "Terrace Cannabis - Milan",
+   "street": "800 Tech Dr",
+   "city": "Milan",
+   "state": "IL"
+  },
+  {
+   "name": "Stashouse - Moline",
+   "street": "4301 44th Ave",
+   "city": "Moline",
+   "state": "IL"
+  },
+  {
+   "name": "Terrace Moline",
+   "street": "2727 Avenue of the Cities",
+   "city": "Moline",
+   "state": "IL"
+  },
+  {
+   "name": "Ivy Hall - Montgomery",
+   "street": "1970 Caterpillar Dr",
+   "city": "Montgomery",
+   "state": "IL"
+  },
+  {
+   "name": "Curaleaf Morris",
+   "street": "2400 W US Route 6",
+   "city": "Morris",
+   "state": "IL"
+  },
+  {
+   "name": "Tree Haus Morris",
+   "street": "50 Gore Rd",
+   "city": "Morris",
+   "state": "IL"
+  },
+  {
+   "name": "Dutchess Cannabis Morton Grove",
+   "street": "6761 Dempster St",
+   "city": "Morton Grove",
+   "state": "IL"
+  },
+  {
+   "name": "Nirvana Dispensary Mt. Carmel",
+   "street": "825 Chestnut St",
+   "city": "Mount Carmel",
+   "state": "IL"
+  },
+  {
+   "name": "Blyss Dispensary - Mount Vernon",
+   "street": "610B S 42nd St",
+   "city": "Mount Vernon",
+   "state": "IL"
+  },
+  {
+   "name": "Thrive Dispensary - Mt. Vernon",
+   "street": "800 S 45th St",
+   "city": "Mount Vernon",
+   "state": "IL"
+  },
+  {
+   "name": "Revolution Dispensary - Mt. Prospect",
+   "street": "2015 E Euclid Ave",
+   "city": "Mt Prospect",
+   "state": "IL"
+  },
+  {
+   "name": "Key Cannabis Dispensary - Mt. Zion",
+   "street": "1225 N State Route 121",
+   "city": "Mt Zion",
+   "state": "IL"
+  },
+  {
+   "name": "Rise - Mundelein",
+   "street": "1325 Armour Blvd",
+   "city": "Mundelein",
+   "state": "IL"
+  },
+  {
+   "name": "Terrabis - Mundelein",
+   "street": "3210 W II Route 60",
+   "city": "Mundelein",
+   "state": "IL"
+  },
+  {
+   "name": "Rise - Naperville",
+   "street": "1700 Quincy Ave Ste 103",
+   "city": "Naperville",
+   "state": "IL"
+  },
+  {
+   "name": "Sunnyside Naperville",
+   "street": "2740 W 75th St",
+   "city": "Naperville",
+   "state": "IL"
+  },
+  {
+   "name": "Zen Leaf Naperville",
+   "street": "1516 N. Naper Blvd, Spc 100",
+   "city": "Naperville",
+   "state": "IL"
+  },
+  {
+   "name": "Curaleaf New Lenox",
+   "street": "705 E Lincoln Hwy.",
+   "city": "New Lenox",
+   "state": "IL"
+  },
+  {
+   "name": "Bud and Ritas - Niles",
+   "street": "5960 W Touhy Ave",
+   "city": "Niles",
+   "state": "IL"
+  },
+  {
+   "name": "Rise - Niles",
+   "street": "9621 N Milwaukee Ave.",
+   "city": "Niles",
+   "state": "IL"
+  },
+  {
+   "name": "Beyond/Hello Normal",
+   "street": "501 W Northtown Rd",
+   "city": "Normal",
+   "state": "IL"
+  },
+  {
+   "name": "Bloom Wellness - Normal",
+   "street": "1730 Bradford Ln Ste 185",
+   "city": "Normal",
+   "state": "IL"
+  },
+  {
+   "name": "High Haven Dispensary",
+   "street": "106 Mall Dr",
+   "city": "Normal",
+   "state": "IL"
+  },
+  {
+   "name": "Revolution Dispensary - Normal",
+   "street": "1609 Northbrook Dr",
+   "city": "Normal",
+   "state": "IL"
+  },
+  {
+   "name": "Mission - Norridge",
+   "street": "4113 N Harlem Ave",
+   "city": "Norridge",
+   "state": "IL"
+  },
+  {
+   "name": "Verilife North Aurora",
+   "street": "2080 West Orchard Rd",
+   "city": "North Aurora",
+   "state": "IL"
+  },
+  {
+   "name": "Dutchess Cannabis N. Riverside",
+   "street": "8380 W Cermak Rd",
+   "city": "North Riverside",
+   "state": "IL"
+  },
+  {
+   "name": "Curaleaf Northbrook",
+   "street": "755 Skokie Blvd.",
+   "city": "Northbrook",
+   "state": "IL"
+  },
+  {
+   "name": "Bloc Dispensary Northfield",
+   "street": "161 Waukegan Rd",
+   "city": "Northfield",
+   "state": "IL"
+  },
+  {
+   "name": "Ascend Cannabis Outlet by InLabs",
+   "street": "39 W North Ave.",
+   "city": "Northlake",
+   "state": "IL"
+  },
+  {
+   "name": "Be. - Oak Forest",
+   "street": "5940 159th St",
+   "city": "Oak Forest",
+   "state": "IL"
+  },
+  {
+   "name": "Dutchess Cannabis Oak Park",
+   "street": "1132 Lake St",
+   "city": "Oak Park",
+   "state": "IL"
+  },
+  {
+   "name": "Consume - Oakbrook Terrace",
+   "street": "1S130 Summit Ave.",
+   "city": "Oakbrook Terrace",
+   "state": "IL"
+  },
+  {
+   "name": "Mystic Greenz - Olive Branch",
+   "street": "26650 IL State Route 3",
+   "city": "Olive Branch",
+   "state": "IL"
+  },
+  {
+   "name": "Altius Dispensary - Orland Hills",
+   "street": "9101 159th St",
+   "city": "Orland Hills",
+   "state": "IL"
+  },
+  {
+   "name": "Stash Orland Hills",
+   "street": "9545 167th St.",
+   "city": "Orland Hills",
+   "state": "IL"
+  },
+  {
+   "name": "Cloud 9 - Oswego",
+   "street": "2420 US Highway 30",
+   "city": "Oswego",
+   "state": "IL"
+  },
+  {
+   "name": "Market 96 - Owego",
+   "street": "1144 Douglas Rd.",
+   "city": "Oswego",
+   "state": "IL"
+  },
+  {
+   "name": "Verilife Ottawa",
+   "street": "4100 Columbus St",
+   "city": "Ottawa",
+   "state": "IL"
+  },
+  {
+   "name": "Nirvana Dispensary Palatine",
+   "street": "333 East Lake Cook Rd",
+   "city": "Palatine",
+   "state": "IL"
+  },
+  {
+   "name": "Greenlight Dispensary - Park City",
+   "street": "3331 Belvidere Rd Suites B C",
+   "city": "Park City",
+   "state": "IL"
+  },
+  {
+   "name": "Sociale Park Ridge",
+   "street": "1036 Higgins Rd",
+   "city": "Park Ridge",
+   "state": "IL"
+  },
+  {
+   "name": "NuEra Pekin",
+   "street": "3249 Court St.",
+   "city": "Pekin",
+   "state": "IL"
+  },
+  {
+   "name": "Pekin Local Dispensary & Supply",
+   "street": "359 Court St.",
+   "city": "Pekin",
+   "state": "IL"
+  },
+  {
+   "name": "Aroma Hill - Peoria",
+   "street": "1210 W Glen Ave",
+   "city": "Peoria",
+   "state": "IL"
+  },
+  {
+   "name": "Beyond/Hello - Peoria",
+   "street": "7620 N IL Rt 91",
+   "city": "Peoria",
+   "state": "IL"
+  },
+  {
+   "name": "Ivy Hall - Peoria",
+   "street": "3929 W. War Memorial Dr",
+   "city": "Peoria",
+   "state": "IL"
+  },
+  {
+   "name": "Trinity Compassionate Care Center",
+   "street": "2301 W. Glen Ave.",
+   "city": "Peoria",
+   "state": "IL"
+  },
+  {
+   "name": "Trinity Compassionate Care Centers",
+   "street": "3125 N University St Ste B",
+   "city": "Peoria",
+   "state": "IL"
+  },
+  {
+   "name": "Cookies - Peoria Heights",
+   "street": "1209 E War Memorial Dr",
+   "city": "Peoria Heights",
+   "state": "IL"
+  },
+  {
+   "name": "Stash - Peru",
+   "street": "1320 38th St",
+   "city": "Peru",
+   "state": "IL"
+  },
+  {
+   "name": "Aces Dispensary - Plainfield",
+   "street": "12627 S Route 59",
+   "city": "Plainfield",
+   "state": "IL"
+  },
+  {
+   "name": "Terrabis Plainfield",
+   "street": "16020 S Route 59",
+   "city": "Plainfield",
+   "state": "IL"
+  },
+  {
+   "name": "Dutchess Cannabis - Plano",
+   "street": "6518 W US Highway 34",
+   "city": "Plano",
+   "state": "IL"
+  },
+  {
+   "name": "Snap Canna - Pontiac",
+   "street": "1910 W Reynolds St Unit A",
+   "city": "Pontiac",
+   "state": "IL"
+  },
+  {
+   "name": "Cookies - Pontoon Beach",
+   "street": "5111 State Route 111",
+   "city": "Pontoon Beach",
+   "state": "IL"
+  },
+  {
+   "name": "Windy City Cannabis Posen",
+   "street": "2535 Veterans Dr",
+   "city": "Posen",
+   "state": "IL"
+  },
+  {
+   "name": "Zen Leaf Prospect Heights",
+   "street": "1434 N Rand Rd.",
+   "city": "Prospect Heights",
+   "state": "IL"
+  },
+  {
+   "name": "Bloom Wellness - Quincy",
+   "street": "4440 Broadway St Ste 1",
+   "city": "Quincy",
+   "state": "IL"
+  },
+  {
+   "name": "Bloom Wellness - Quincy 2",
+   "street": "1837 Broadway St",
+   "city": "Quincy",
+   "state": "IL"
+  },
+  {
+   "name": "Rise - Quincy",
+   "street": "2703 Broadway St",
+   "city": "Quincy",
+   "state": "IL"
+  },
+  {
+   "name": "Spark'd - Richmond",
+   "street": "9705 Prairie Ridge",
+   "city": "Richmond",
+   "state": "IL"
+  },
+  {
+   "name": "Stash - Richton Park",
+   "street": "22214 Governors Hwy",
+   "city": "Richton Park",
+   "state": "IL"
+  },
+  {
+   "name": "Starbuds - Riverside",
+   "street": "2704 Harlem Ave",
+   "city": "Riverside",
+   "state": "IL"
+  },
+  {
+   "name": "Lyfe Dispensary",
+   "street": "6774 Troy Dr",
+   "city": "Rockford",
+   "state": "IL"
+  },
+  {
+   "name": "Sunnyside - Rockford",
+   "street": "2696 McFarland Rd",
+   "city": "Rockford",
+   "state": "IL"
+  },
+  {
+   "name": "The Happy Cannabis Company - Rockford",
+   "street": "4777 Stenstrom Rd",
+   "city": "Rockford",
+   "state": "IL"
+  },
+  {
+   "name": "Natures Care Company",
+   "street": "975 Rohlwing Rd",
+   "city": "Rolling Meadows",
+   "state": "IL"
+  },
+  {
+   "name": "Lakeshore Cannabis Club",
+   "street": "1335 Lakeside Dr Unit 4",
+   "city": "Romeoville",
+   "state": "IL"
+  },
+  {
+   "name": "Verilife Romeoville",
+   "street": "412 N Weber Rd",
+   "city": "Romeoville",
+   "state": "IL"
+  },
+  {
+   "name": "River Bluff Cannabis",
+   "street": "1350 Lake St.",
+   "city": "Roselle",
+   "state": "IL"
+  },
+  {
+   "name": "Earthmed Rosemont",
+   "street": "10441 E. Touhy Ave.",
+   "city": "Rosemont",
+   "state": "IL"
+  },
+  {
+   "name": "Verilife Rosemont",
+   "street": "5540 Park Pl",
+   "city": "Rosemont",
+   "state": "IL"
+  },
+  {
+   "name": "Altius Dispensary",
+   "street": "993 E Rollins Rd",
+   "city": "Round Lake Beach",
+   "state": "IL"
+  },
+  {
+   "name": "Zen Leaf St. Charles",
+   "street": "3691 E. Main St.",
+   "city": "Saint Charles",
+   "state": "IL"
+  },
+  {
+   "name": "Beyond Hello Sauget Mississippi Ave",
+   "street": "1401 Mississippi Ave. Ste. 17",
+   "city": "Sauget",
+   "state": "IL"
+  },
+  {
+   "name": "Beyond/Hello Sauget",
+   "street": "2021 Goose Lake Rd",
+   "city": "Sauget",
+   "state": "IL"
+  },
+  {
+   "name": "Cloud 9 Cannabis - Schaumburg",
+   "street": "1823 W Wise Rd.",
+   "city": "Schaumburg",
+   "state": "IL"
+  },
+  {
+   "name": "Revolution Dispensary Schaumburg",
+   "street": "820 E. Golf Rd.",
+   "city": "Schaumburg",
+   "state": "IL"
+  },
+  {
+   "name": "Sunnyside - Schaumburg",
+   "street": "1739 E. Golf Rd.",
+   "city": "Schaumburg",
+   "state": "IL"
+  },
+  {
+   "name": "Verilife Schaumburg",
+   "street": "150 N Barrington Rd",
+   "city": "Schaumburg",
+   "state": "IL"
+  },
+  {
+   "name": "Curaleaf Skokie",
+   "street": "10000 Skokie Blvd",
+   "city": "Skokie",
+   "state": "IL"
+  },
+  {
+   "name": "Cloudhaven - South Beloit",
+   "street": "1322 Gardner St.",
+   "city": "South Beloit",
+   "state": "IL"
+  },
+  {
+   "name": "Sunnyside - South Beloit",
+   "street": "7000 First Ranger Dr.",
+   "city": "South Beloit",
+   "state": "IL"
+  },
+  {
+   "name": "Ascend - Springfield",
+   "street": "628 E Adams St",
+   "city": "Springfield",
+   "state": "IL"
+  },
+  {
+   "name": "Ascend - Springfield Horizon Dr.",
+   "street": "3201 Horizon Dr.",
+   "city": "Springfield",
+   "state": "IL"
+  },
+  {
+   "name": "High Profile Cannabis Shop",
+   "street": "4211 Conestoga Dr",
+   "city": "Springfield",
+   "state": "IL"
+  },
+  {
+   "name": "Maribis of Springfield",
+   "street": "2451 Denver Drive",
+   "city": "Springfield",
+   "state": "IL"
+  },
+  {
+   "name": "Maribis of Springfield 2",
+   "street": "3025 Lindbergh Blvd",
+   "city": "Springfield",
+   "state": "IL"
+  },
+  {
+   "name": "Shangri La Dispensary",
+   "street": "3128 S Dirksen Pkwy",
+   "city": "Springfield",
+   "state": "IL"
+  },
+  {
+   "name": "SHARE - Springfield",
+   "street": "3600 S 6th Street Rd",
+   "city": "Springfield",
+   "state": "IL"
+  },
+  {
+   "name": "Consume St. Charles",
+   "street": "584 S Randall Rd.",
+   "city": "St Charles",
+   "state": "IL"
+  },
+  {
+   "name": "Goodies - Streamwood",
+   "street": "1594 Buttitta Dr",
+   "city": "Streamwood",
+   "state": "IL"
+  },
+  {
+   "name": "Ivy Hall - Streamwood",
+   "street": "630 S Sutton Rd",
+   "city": "Streamwood",
+   "state": "IL"
+  },
+  {
+   "name": "Starbuds - Summit",
+   "street": "5436 S Harlem Ave",
+   "city": "Summit",
+   "state": "IL"
+  },
+  {
+   "name": "Parkway Dispensary - Tilton",
+   "street": "2 Donna Dr.",
+   "city": "Tilton",
+   "state": "IL"
+  },
+  {
+   "name": "Ascend by Homecoming",
+   "street": "16200 Harlem Ave.",
+   "city": "Tinley Park",
+   "state": "IL"
+  },
+  {
+   "name": "Green Temple",
+   "street": "904 Edwardsville Rd.",
+   "city": "Troy",
+   "state": "IL"
+  },
+  {
+   "name": "Nuera Urbana",
+   "street": "105 E University Ave",
+   "city": "Urbana",
+   "state": "IL"
+  },
+  {
+   "name": "Cannabist - Villa Park",
+   "street": "133 Roosevelt Rd.",
+   "city": "Villa Park",
+   "state": "IL"
+  },
+  {
+   "name": "Green Releaf - Villa Park",
+   "street": "305 W North Ave",
+   "city": "Villa Park",
+   "state": "IL"
+  },
+  {
+   "name": "Mint Cannabis - Villa Park",
+   "street": "310 E North Ave",
+   "city": "Villa Park",
+   "state": "IL"
+  },
+  {
+   "name": "Bud and Ritas - Wadsworth",
+   "street": "41509 N US Highway 41",
+   "city": "Wadsworth",
+   "state": "IL"
+  },
+  {
+   "name": "Prairie Cannabis - Naperville",
+   "street": "4S120 N Route 59",
+   "city": "Warrenville",
+   "state": "IL"
+  },
+  {
+   "name": "Ivy Hall Waukegan",
+   "street": "996 S Waukegan Rd.",
+   "city": "Waukegan",
+   "state": "IL"
+  },
+  {
+   "name": "Planet 13 - Waukegan",
+   "street": "4000 Northpoint Blvd",
+   "city": "Waukegan",
+   "state": "IL"
+  },
+  {
+   "name": "Maribis Westchester",
+   "street": "1137 South Mannheim Road",
+   "city": "Westchester",
+   "state": "IL"
+  },
+  {
+   "name": "Curaleaf Westmont",
+   "street": "11 E. Ogden Ave.",
+   "city": "Westmont",
+   "state": "IL"
+  },
+  {
+   "name": "Starbuds WM",
+   "street": "101 W Ogden Ave",
+   "city": "Westmont",
+   "state": "IL"
+  },
+  {
+   "name": "Hatch Dispensary Wheeling",
+   "street": "1500 E Lake Cook Rd",
+   "city": "Wheeling",
+   "state": "IL"
+  },
+  {
+   "name": "OKAY Cannabis - Wheeling",
+   "street": "781 N Milwaukee Ave",
+   "city": "Wheeling",
+   "state": "IL"
+  },
+  {
+   "name": "Mint - Willowbrook",
+   "street": "900 75th St",
+   "city": "Willowbrook",
+   "state": "IL"
+  },
+  {
+   "name": "Sparkd Winthrop Harbor",
+   "street": "935 Sheridan Rd",
+   "city": "Winthrop Harbor",
+   "state": "IL"
+  },
+  {
+   "name": "The Cannaisseur - Wood River",
+   "street": "40 E Ferguson Ave",
+   "city": "Wood River",
+   "state": "IL"
+  },
+  {
+   "name": "Terrabis - Woodstock",
+   "street": "601 S Eastwood Dr",
+   "city": "Woodstock",
+   "state": "IL"
+  },
+  {
+   "name": "Curaleaf Worth",
+   "street": "11425 S Harlem Ave",
+   "city": "Worth",
+   "state": "IL"
+  },
+  {
+   "name": "Nirvana Dispensary Lake Zurich",
+   "street": "676 S Rand Rd",
+   "city": "Zake Zurich",
+   "state": "IL"
+  }
+ ]
+}

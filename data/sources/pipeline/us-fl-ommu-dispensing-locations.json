@@ -1,0 +1,6449 @@
+{
+ "source_id": "us-fl-ommu-dispensing-locations",
+ "jurisdiction": "FL",
+ "topic": "medical-dispensary",
+ "publisher": "Florida Department of Health, Office of Medical Marijuana Use",
+ "title": "Medical marijuana treatment center dispensing locations",
+ "landing_url": "https://knowthefactsmmj.com/mmtc/",
+ "download_url": "https://knowthefactsmmj.com/mmtc/",
+ "retrieved_on": "2026-11-23",
+ "sha256": "128aec1b7351ddfaddddfdf2cfbd5bd5b105c4194a61ef7420d30d7dee2a7571",
+ "evidence_level": "regulator-list",
+ "evidence_meaning": "Listed by the state or national regulator's own published list on the date retrieved.",
+ "export_rows": 795,
+ "export_counts": {
+  "COMPANY": {
+   "Trulieve": 172,
+   "MUV": 89,
+   "Curaleaf": 82,
+   "Green Dragon": 74,
+   "Ayr Cannabis Dispensary": 65,
+   "Surterra Wellness": 43,
+   "Planet 13": 34,
+   "Sunnyside*": 31,
+   "GTI (Rise Dispensaries)": 27,
+   "Sanctuary Cannabis": 27,
+   "GrowHealthy": 26,
+   "Cookies Florida": 20,
+   "The Flowery": 18,
+   "Goldflower Cannabis": 17,
+   "Mint Cannabis": 17,
+   "Jungle Boys": 15,
+   "Sunburn": 15,
+   "Insa": 9,
+   "One Plant": 7,
+   "Eden Florida, LLC": 4,
+   "Bloom Dispensary": 1,
+   "Wildflower Cannabis": 1,
+   "Fino Cannabis": 1
+  },
+  "COUNTY": {
+   "Palm Beach": 57,
+   "Pinellas": 56,
+   "Hillsborough": 54,
+   "Orange": 51,
+   "Lee": 45,
+   "Miami-Dade": 41,
+   "Duval": 40,
+   "Broward": 38,
+   "Volusia": 33,
+   "Brevard": 30,
+   "Marion": 25,
+   "Sarasota": 24,
+   "Polk": 23,
+   "Pasco": 23,
+   "Leon": 21,
+   "Escambia": 19,
+   "Seminole": 16,
+   "Alachua": 15,
+   "Lake": 15,
+   "St. Lucie": 14,
+   "Martin": 13,
+   "Clay": 12,
+   "Bay": 12,
+   "Okaloosa": 12,
+   "Manatee": 12,
+   "Hernando": 11,
+   "Highlands": 10,
+   "Charlotte": 9,
+   "Citrus": 9,
+   "St. Johns": 6,
+   "Putnam": 6,
+   "Nassau": 5,
+   "Santa Rosa": 5,
+   "Walton": 4,
+   "Columbia": 4,
+   "Monroe": 4,
+   "Flagler": 3,
+   "Osceola": 3,
+   "Indian River": 3,
+   "Collier": 2
+  }
+ },
+ "kept_rule": "Every row of the dispensing locations table.",
+ "kept_rows": 795,
+ "dropped_incomplete_rows": 0,
+ "limitations": "A dated copy of the regulator's list, not a live license verification. Hours and inventory are not copied; confirm with the store.",
+ "rows": [
+  {
+   "name": "MUV",
+   "street": "5999 US Hwy 41 N",
+   "city": "Apollo Beach",
+   "zip": "33572",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "6586 N US Hwy 41",
+   "city": "Apollo Beach",
+   "zip": "33572",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "1809 E Semoran Boulevard",
+   "city": "Apopka",
+   "zip": "32703",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "3309 E State Road 436",
+   "city": "Apopka",
+   "zip": "32703",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "2121 W Orange Blossom Trail",
+   "city": "Apopka",
+   "zip": "33823",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "763 Atlantic Boulevard",
+   "city": "Atlantic Beach",
+   "zip": "32233",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "2093 US Hwy 92",
+   "city": "Auburndale",
+   "zip": "33823",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "2005 US Hwy 92 W",
+   "city": "Auburndale",
+   "zip": "33823",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "1014 W Main Street",
+   "city": "Avon Park",
+   "zip": "33825",
+   "county": "Highlands",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "299 US Hwy 27 S",
+   "city": "Avon Park",
+   "zip": "33825",
+   "county": "Highlands",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1030 Broadway Avenue N",
+   "city": "Bartow",
+   "zip": "33830",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "10907 US Hwy 441",
+   "city": "Belleview",
+   "zip": "34420",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "5428 SE Abshier Boulevard",
+   "city": "Belleview",
+   "zip": "34420",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "9912 Glades Road",
+   "city": "Boca Raton",
+   "zip": "33434",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "19631 State Road 7",
+   "city": "Boca Raton",
+   "zip": "33498",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "7875 Glades Road",
+   "city": "Boca Raton",
+   "zip": "33434",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "21401 Powerline Road",
+   "city": "Boca Raton",
+   "zip": "33433",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "877 E Palmetto Park Road",
+   "city": "Boca Raton",
+   "zip": "33432",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "23233 S State Road 7",
+   "city": "Boca Raton",
+   "zip": "33428",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "9293 Glades Road",
+   "city": "Boca Raton",
+   "zip": "33434",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "24611 Production Circle",
+   "city": "Bonita Springs",
+   "zip": "34135",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "11721 Bonita Beach Road",
+   "city": "Bonita Springs",
+   "zip": "34135",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Goldflower Cannabis",
+   "street": "24830 S Tamiami Trail",
+   "city": "Bonita Springs",
+   "zip": "34134",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "25987 S Tamiami Trail",
+   "city": "Bonita Springs",
+   "zip": "34134",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "26701 S Tamiami Trail",
+   "city": "Bonita Springs",
+   "zip": "33781",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Jungle Boys",
+   "street": "28751 S Tamiami Trail",
+   "city": "Bonita Springs",
+   "zip": "34134",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Mint Cannabis",
+   "street": "8800 Terrene Court",
+   "city": "Bonita Springs",
+   "zip": "34135",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "28245 S Tamiami Trail",
+   "city": "Bonita Springs",
+   "zip": "34134",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "26251 S Tamiami Trail",
+   "city": "Bonita Springs",
+   "zip": "34134",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "18500 Bonita Crossings Boulevard",
+   "city": "Bonita Springs",
+   "zip": "34135",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "28520 Bonita Crossings Boulevard",
+   "city": "Bonita Springs",
+   "zip": "34135",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "10347 Bonita Beach Road SE",
+   "city": "Bonita Springs",
+   "zip": "34135",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "28811 S Tamiami Trail",
+   "city": "Bonita Springs",
+   "zip": "34134",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "1865 Woolbright Road",
+   "city": "Boynton Beach",
+   "zip": "33426",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "3575 W Boynton Beach Boulevard",
+   "city": "Boynton Beach",
+   "zip": "33436",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "1660 S Congress Avenue",
+   "city": "Boynton Beach",
+   "zip": "33426",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "2201 S Federal Highway",
+   "city": "Boynton Beach",
+   "zip": "33435",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "137 E Woolbright Road",
+   "city": "Boynton Beach",
+   "zip": "33435",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "710 N Federal Highway",
+   "city": "Boynton Beach",
+   "zip": "33435",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "202 E Boynton Beach Boulevard",
+   "city": "Boynton Beach",
+   "zip": "33435",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "3975 W Boynton Beach Boulevard",
+   "city": "Boynton Beach",
+   "zip": "33436",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1530 SW 8th Street",
+   "city": "Boynton Beach",
+   "zip": "33426",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "330 Winchester Park Boulevard",
+   "city": "Boynton Beach",
+   "zip": "33436",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "1475 Cortez Road",
+   "city": "Bradenton",
+   "zip": "34207",
+   "county": "Manatee",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "4427 53rd Avenue E",
+   "city": "Bradenton",
+   "zip": "34203",
+   "county": "Manatee",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "2605 Cortez Road W",
+   "city": "Bradenton",
+   "zip": "34207",
+   "county": "Manatee",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "4227 Manatee Avenue E",
+   "city": "Bradenton",
+   "zip": "34208",
+   "county": "Manatee",
+   "state": "FL"
+  },
+  {
+   "name": "Goldflower Cannabis",
+   "street": "6216 14th Street W",
+   "city": "Bradenton",
+   "zip": "34207",
+   "county": "Manatee",
+   "state": "FL"
+  },
+  {
+   "name": "Mint Cannabis",
+   "street": "4545 14th Street W",
+   "city": "Bradenton",
+   "zip": "34207",
+   "county": "Manatee",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "4312 75th Street W",
+   "city": "Bradenton",
+   "zip": "34209",
+   "county": "Manatee",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "8465 Heritage Green Way",
+   "city": "Bradenton",
+   "zip": "34212",
+   "county": "Manatee",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "5203 Cortez Road W",
+   "city": "Bradenton",
+   "zip": "34210",
+   "county": "Manatee",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "6815 53rd Avenue",
+   "city": "Bradenton",
+   "zip": "34203",
+   "county": "Manatee",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "4808 Manatee Avenue W",
+   "city": "Bradenton",
+   "zip": "34209",
+   "county": "Manatee",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "6722 14th Street W",
+   "city": "Bradenton",
+   "zip": "34207",
+   "county": "Manatee",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "1409 W Brandon Boulevard",
+   "city": "Brandon",
+   "zip": "33511",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "846 E Brandon Boulevard",
+   "city": "Brandon",
+   "zip": "33511",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "1401 West Brandon Boulevard",
+   "city": "Brandon",
+   "zip": "33511",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "1525 E Brandon Boulevard",
+   "city": "Brandon",
+   "zip": "33411",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "420 W Brandon Boulevard",
+   "city": "Brandon",
+   "zip": "33511",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Mint Cannabis",
+   "street": "2118 W Brandon Boulevard",
+   "city": "Brandon",
+   "zip": "33511",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "942 W Lumsden Rd",
+   "city": "Brandon",
+   "zip": "33511",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "One Plant",
+   "street": "206 E Brandon Boulevard",
+   "city": "Brandon",
+   "zip": "33511",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "1256 E Brandon Boulevard",
+   "city": "Brandon",
+   "zip": "33511",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "638 Oakfield Drive",
+   "city": "Brandon",
+   "zip": "33511",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "12115 Cortez Boulevard",
+   "city": "Brooksville",
+   "zip": "34613",
+   "county": "Hernando",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "1170 S Broad Street",
+   "city": "Brooksville",
+   "zip": "34601",
+   "county": "Hernando",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "745 S Broad Street",
+   "city": "Brooksville",
+   "zip": "34601",
+   "county": "Hernando",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1280 S Broad Street",
+   "city": "Brooksville",
+   "zip": "34601",
+   "county": "Hernando",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "14099 Cortez Boulevard",
+   "city": "Brooksville",
+   "zip": "34613",
+   "county": "Hernando",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "6710 N Atlantic Avenue, Suite A",
+   "city": "Cape Canaveral",
+   "zip": "32920",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "1321 SE 47th Terrace",
+   "city": "Cape Coral",
+   "zip": "33904",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "345 SW 10th Place",
+   "city": "Cape Coral",
+   "zip": "33991",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Goldflower Cannabis",
+   "street": "1830 Del Prado Boulevard S",
+   "city": "Cape Coral",
+   "zip": "33990",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "103 SW 3rd Place",
+   "city": "Cape Coral",
+   "zip": "33991",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "1712 Del Prado Boulevard S",
+   "city": "Cape Coral",
+   "zip": "33990",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "2323 Del Prado Boulevard",
+   "city": "Cape Coral",
+   "zip": "33990",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "928 NE Pine Island Road",
+   "city": "Cape Coral",
+   "zip": "33909",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Mint Cannabis",
+   "street": "2126 Del Prado Boulevard S",
+   "city": "Cape Coral",
+   "zip": "32216",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "2612 Santa Barbara Boulevard",
+   "city": "Cape Coral",
+   "zip": "33914",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "1411 Cape Coral Parkway E",
+   "city": "Cape Coral",
+   "zip": "33904",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Sunburn",
+   "street": "1628 Del Prado Boulevard S",
+   "city": "Cape Coral",
+   "zip": "33990",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "1897 S Del Prado Boulevard",
+   "city": "Cape Coral",
+   "zip": "33990",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "2517 Santa Barbara Boulevard",
+   "city": "Cape Coral",
+   "zip": "33914",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "487 State Road 436",
+   "city": "Casselberry",
+   "zip": "32707",
+   "county": "Seminole",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "314 S Belcher Road",
+   "city": "Clearwater",
+   "zip": "33765",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "2082 Gulf to Bay Boulevard",
+   "city": "Clearwater",
+   "zip": "33765",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "921 S Missouri Avenue",
+   "city": "Clearwater",
+   "zip": "33756",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "1724 Gulf to Bay Boulevard",
+   "city": "Clearwater",
+   "zip": "33755",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "29901 US Hwy 19 N",
+   "city": "Clearwater",
+   "zip": "33761",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "5555 Roosevelt Boulevard",
+   "city": "Clearwater",
+   "zip": "33760",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "One Plant",
+   "street": "27062 US Hwy 19 N",
+   "city": "Clearwater",
+   "zip": "33761",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "2760 Gulf to Bay Boulevard",
+   "city": "Clearwater",
+   "zip": "33759",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "19042 US Hwy 19 N",
+   "city": "Clearwater",
+   "zip": "33764",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "The Flowery",
+   "street": "1201 N Highland Avenue",
+   "city": "Clearwater",
+   "zip": "33755",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "24639 US Hwy 19 N",
+   "city": "Clearwater",
+   "zip": "33763",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "2699 Roosevelt Boulevard",
+   "city": "Clearwater",
+   "zip": "33760",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "2794 Gulf to Bay Boulevard",
+   "city": "Clearwater",
+   "zip": "33759",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "900 Hooks Street",
+   "city": "Clermont",
+   "zip": "34714",
+   "county": "Lake",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "1900 US Hwy 27 S",
+   "city": "Clermont",
+   "zip": "34711",
+   "county": "Lake",
+   "state": "FL"
+  },
+  {
+   "name": "Fino Cannabis",
+   "street": "833 W Highway 50",
+   "city": "Clermont",
+   "zip": "34711",
+   "county": "Lake",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "2560 State Route 50",
+   "city": "Clermont",
+   "zip": "34711",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "1495 State Road 50 E",
+   "city": "Clermont",
+   "zip": "34711",
+   "county": "Lake",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "17011 State Road 50",
+   "city": "Clermont",
+   "zip": "34711",
+   "county": "Lake",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "941 N Cocoa Boulevard",
+   "city": "Cocoa",
+   "zip": "32922",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "4465 W King Street",
+   "city": "Cocoa",
+   "zip": "32926",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Eden Florida, LLC",
+   "street": "4300 N Atlantic Avenue",
+   "city": "Cocoa Beach",
+   "zip": "32931",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "655 N Atlantic Avenue",
+   "city": "Cocoa Beach",
+   "zip": "32931",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "6706 N State Road 7",
+   "city": "Coconut Creek",
+   "zip": "33073",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "1406 N University Drive",
+   "city": "Coral Springs",
+   "zip": "33701",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "10400 W Atlantic Boulevard",
+   "city": "Coral Springs",
+   "zip": "33071",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "2615 Crawfordville Highway",
+   "city": "Crawfordville",
+   "zip": "32327",
+   "county": "Wakulla",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "895 N Summit Street",
+   "city": "Crescent City",
+   "zip": "32112",
+   "county": "Putnam",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "2385 S Ferdon Boulevard",
+   "city": "Crestview",
+   "zip": "32536",
+   "county": "Okaloosa",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "2573 S Ferdon Boulevard",
+   "city": "Crestview",
+   "zip": "32539",
+   "county": "Okaloosa",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "2150 S Ferdon Boulevard",
+   "city": "Crestview",
+   "zip": "32536",
+   "county": "Okaloosa",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "91 NE US Hwy 19",
+   "city": "Crystal River",
+   "zip": "34429",
+   "county": "Citrus",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "1208 NE 5th Street",
+   "city": "Crystal River",
+   "zip": "34429",
+   "county": "Citrus",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "941 NE US Hwy 19",
+   "city": "Crystal River",
+   "zip": "34429",
+   "county": "Citrus",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "275 NE US Hwy 19",
+   "city": "Crystal River",
+   "zip": "34429",
+   "county": "Citrus",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "19300 S Dixie Highway",
+   "city": "Cutler Bay",
+   "zip": "33157",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "222 N Federal Highway, Suite 103",
+   "city": "Dania Beach",
+   "zip": "33004",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1121 S Federal Highway",
+   "city": "Dania Beach",
+   "zip": "33004",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "520 Stirling Road",
+   "city": "Dania Beach",
+   "zip": "33004",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "2500 Deer Creek Commerce Lane",
+   "city": "Davenport",
+   "zip": "33837",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "2290 W International Speedway Boulevard",
+   "city": "Daytona Beach",
+   "zip": "32114",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "910 W International Speedway Boulevard",
+   "city": "Daytona Beach",
+   "zip": "32114",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "915 Ridgewood Avenue",
+   "city": "Daytona Beach",
+   "zip": "32117",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "2525 W International Speedway Boulevard",
+   "city": "Daytona Beach",
+   "zip": "32114",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Jungle Boys",
+   "street": "1392 W International Speedway Boulevard",
+   "city": "Daytona Beach",
+   "zip": "32114",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "600 E International Speedway Boulevard",
+   "city": "Daytona Beach",
+   "zip": "32118",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "One Plant",
+   "street": "1305 Beville Road",
+   "city": "Daytona Beach",
+   "zip": "32119",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "1260 Beville Road",
+   "city": "Daytona Beach",
+   "zip": "32114",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "2110 W International Speedway Boulevard",
+   "city": "Daytona Beach",
+   "zip": "32114",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "812 W International Speedway",
+   "city": "Daytona Beach",
+   "zip": "32114",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "148 N Federal Highway",
+   "city": "Deerfield Beach",
+   "zip": "33441",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "622 S Federal Highway",
+   "city": "Deerfield Beach",
+   "zip": "33441",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "1444 S Federal Highway",
+   "city": "Deerfield Beach",
+   "zip": "33441",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "2305 W Hillsboro Boulevard",
+   "city": "Deerfield Beach",
+   "zip": "33442",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Jungle Boys",
+   "street": "1299 S Military Trail",
+   "city": "Deerfield Beach",
+   "zip": "33442",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "953 S Federal Highway",
+   "city": "Deerfield Beach",
+   "zip": "33441",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "1101 S Powerline Road",
+   "city": "Deerfield Beach",
+   "zip": "33442",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "699 S Federal Highway",
+   "city": "Deerfield Beach",
+   "zip": "33441",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "458 W Hillsboro Boulevard",
+   "city": "Deerfield Beach",
+   "zip": "33441",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "1105 S Woodland Boulevard",
+   "city": "DeLand",
+   "zip": "32720",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "2231 S Woodland Boulevard",
+   "city": "DeLand",
+   "zip": "32720",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "309 N Woodland Boulevard",
+   "city": "DeLand",
+   "zip": "32720",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1329 N Woodland Boulevard",
+   "city": "DeLand",
+   "zip": "32720",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Mint Cannabis",
+   "street": "6110 W Atlantic Avenue",
+   "city": "Delray Beach",
+   "zip": "33484",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "5859 W Atlantic Avenue",
+   "city": "Delray Beach",
+   "zip": "33484",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "15200 S Jog Road",
+   "city": "Delray Beach",
+   "zip": "33446",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "15140 Jog Road",
+   "city": "Delray Beach",
+   "zip": "33446",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "1670 Providence Boulevard",
+   "city": "Deltona",
+   "zip": "32725",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "1200 Deltona Boulevard",
+   "city": "Deltona",
+   "zip": "32725",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "34761 Emerald Coast Parkway",
+   "city": "Destin",
+   "zip": "32541",
+   "county": "Okaloosa",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "862 US Hwy 98 E",
+   "city": "Destin",
+   "zip": "32541",
+   "county": "Okaloosa",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "1352 Main Street",
+   "city": "Dunedin",
+   "zip": "34698",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1846 Main Street",
+   "city": "Dunedin",
+   "zip": "34698",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "11192 N Williams Street",
+   "city": "Dunnellon",
+   "zip": "34432",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "2115 S Ridgewood Avenue",
+   "city": "Edgewater",
+   "zip": "32141",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "1308 S Ridgewood Avenue",
+   "city": "Edgewater",
+   "zip": "32132",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "2102 S Ridgewood Avenue",
+   "city": "Edgewater",
+   "zip": "32141",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "1930 S McCall Road",
+   "city": "Englewood",
+   "zip": "34223",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "960 S McCall Road",
+   "city": "Englewood",
+   "zip": "34223",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1720 S McCall Road",
+   "city": "Englewood",
+   "zip": "34223",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "15443 US Hwy 441",
+   "city": "Eustis",
+   "zip": "32726",
+   "county": "Lake",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "2901 S Bay Street",
+   "city": "Eustis",
+   "zip": "32726",
+   "county": "Lake",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "134 Fernwood Boulevard",
+   "city": "Fern Park",
+   "zip": "32730",
+   "county": "Seminole",
+   "state": "FL"
+  },
+  {
+   "name": "The Flowery",
+   "street": "7985 South US Highway 17 92",
+   "city": "Fern Park",
+   "zip": "32730",
+   "county": "Seminole",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "1951 S 8th St",
+   "city": "Fernandina Beach",
+   "zip": "32034",
+   "county": "Nassau",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "1940 S 8th Street",
+   "city": "Fernandina Beach",
+   "zip": "32034",
+   "county": "Nassau",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "474285 E State Road 200",
+   "city": "Fernandina Beach",
+   "zip": "32034",
+   "county": "Nassau",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "33497 S Dixie Highway",
+   "city": "Florida City",
+   "zip": "33034",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "2501 W Broward Boulevard",
+   "city": "Fort Lauderdale",
+   "zip": "33312",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Sunburn",
+   "street": "2949 N Federal Highway",
+   "city": "Fort Lauderdale",
+   "zip": "33306",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "1830 Cordova Road",
+   "city": "Fort Lauderdale",
+   "zip": "33316",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "1776 E Sunrise Boulevard",
+   "city": "Fort Lauderdale",
+   "zip": "33304",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1417 SW 40th Terrace",
+   "city": "Fort Lauderdale",
+   "zip": "33317",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "2952 Cleveland Avenue",
+   "city": "Fort Myers",
+   "zip": "33901",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "8951 Daniels Parkway",
+   "city": "Fort Myers",
+   "zip": "33912",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "9962 Interstate Commerce Drive",
+   "city": "Fort Myers",
+   "zip": "33913",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "4480 Fowler Street",
+   "city": "Fort Myers",
+   "zip": "33901",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "5611 Six Mile Commercial Court",
+   "city": "Fort Myers",
+   "zip": "33912",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "2649 Dr. Martin Luther King Jr. Boulevard",
+   "city": "Fort Myers",
+   "zip": "33916",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "10993 Colonial Boulevard",
+   "city": "Fort Myers",
+   "zip": "33913",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "11340 Summerlin Square Drive",
+   "city": "Fort Myers",
+   "zip": "33907",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "7010 Cypress Terrace",
+   "city": "Fort Myers",
+   "zip": "33907",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "12720 McGregor Boulevard",
+   "city": "Fort Myers",
+   "zip": "33919",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "The Flowery",
+   "street": "11620 S Cleveland Avenue",
+   "city": "Fort Myers",
+   "zip": "33907",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "12575 S Cleveland Avenue",
+   "city": "Fort Myers",
+   "zip": "33907",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "15620 Summerlin Road",
+   "city": "Fort Myers",
+   "zip": "33908",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "17274 San Carlos Boulevard",
+   "city": "Fort Myers Beach",
+   "zip": "33931",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "5053 Turnpike Feeder Road",
+   "city": "Fort Pierce",
+   "zip": "34951",
+   "county": "St. Lucie",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "3218 US Hwy 1",
+   "city": "Fort Pierce",
+   "zip": "34982",
+   "county": "St. Lucie",
+   "state": "FL"
+  },
+  {
+   "name": "Goldflower Cannabis",
+   "street": "2620 S Hwy 1",
+   "city": "Fort Pierce",
+   "zip": "34982",
+   "county": "St. Lucie",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "1001 S US Hwy 1",
+   "city": "Fort Pierce",
+   "zip": "34950",
+   "county": "St. Lucie",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "1006 S US Hwy 1",
+   "city": "Fort Pierce",
+   "zip": "34950",
+   "county": "St. Lucie",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "5001 S US Hwy 1",
+   "city": "Fort Pierce",
+   "zip": "34982",
+   "county": "St. Lucie",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1495 S US Hwy 1",
+   "city": "Fort Pierce",
+   "zip": "34950",
+   "county": "St. Lucie",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "233 Racetrack Road NW",
+   "city": "Fort Walton",
+   "zip": "32547",
+   "county": "Okaloosa",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "109 Racetrack Road NE",
+   "city": "Fort Walton Beach",
+   "zip": "32547",
+   "county": "Okaloosa",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "418 Mary Esther Cut Off NW",
+   "city": "Fort Walton Beach",
+   "zip": "32548",
+   "county": "Okaloosa",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "3460 US Hwy 441",
+   "city": "Fruitland Park",
+   "zip": "34731",
+   "county": "Lake",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "3295 US Hwy 441",
+   "city": "Fruitland Park",
+   "zip": "34731",
+   "county": "Lake",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "12 SW 2nd Street",
+   "city": "Gainesville",
+   "zip": "32601",
+   "county": "Alachua",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "626 NW 13th Street",
+   "city": "Gainesville",
+   "zip": "32601",
+   "county": "Alachua",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "2300 SW 34th Street",
+   "city": "Gainesville",
+   "zip": "32607",
+   "county": "Alachua",
+   "state": "FL"
+  },
+  {
+   "name": "Goldflower Cannabis",
+   "street": "1805 SW 13th Street",
+   "city": "Gainesville",
+   "zip": "32608",
+   "county": "Alachua",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "3400 SW 34th Street",
+   "city": "Gainesville",
+   "zip": "32608",
+   "county": "Alachua",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "4880 Newberry Road",
+   "city": "Gainesville",
+   "zip": "32607",
+   "county": "Alachua",
+   "state": "FL"
+  },
+  {
+   "name": "Jungle Boys",
+   "street": "1120 W University Avenue",
+   "city": "Gainesville",
+   "zip": "32601",
+   "county": "Alachua",
+   "state": "FL"
+  },
+  {
+   "name": "Mint Cannabis",
+   "street": "318 NW 13th Street",
+   "city": "Gainesville",
+   "zip": "32601",
+   "county": "Alachua",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "2020 SW 34th Street",
+   "city": "Gainesville",
+   "zip": "32608",
+   "county": "Alachua",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "3607 SW Archer Road",
+   "city": "Gainesville",
+   "zip": "32608",
+   "county": "Alachua",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "1310 NW 23rd Avenue",
+   "city": "Gainesville",
+   "zip": "32605",
+   "county": "Alachua",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "15 SW 1st Avenue",
+   "city": "Gainesville",
+   "zip": "32601",
+   "county": "Alachua",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1527 NW 6th Street",
+   "city": "Gainesville",
+   "zip": "32601",
+   "county": "Alachua",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1614 W University Avenue",
+   "city": "Gainesville",
+   "zip": "32603",
+   "county": "Alachua",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "3833 Archer Road",
+   "city": "Gainesville",
+   "zip": "32608",
+   "county": "Alachua",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "6905 Lake Worth Road",
+   "city": "Greenacres",
+   "zip": "33467",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "4660 Hypoluxo Road",
+   "city": "Greenacres",
+   "zip": "33463",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "2871 Gulf Breeze Parkway",
+   "city": "Gulf Breeze",
+   "zip": "32563",
+   "county": "Santa Rosa",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "3271 Gulf Breeze Parkway",
+   "city": "Gulf Breeze",
+   "zip": "32563",
+   "county": "Santa Rosa",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "127 US Hwy 17",
+   "city": "Haines City",
+   "zip": "33844",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1702 E Hinson Avenue",
+   "city": "Haines City",
+   "zip": "33844",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "701 W Hallandale Beach Boulevard",
+   "city": "Hallandale",
+   "zip": "33009",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "308 N Federal Highway",
+   "city": "Hallandale Beach",
+   "zip": "33009",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "2100 E Hallandale Beach Boulevard",
+   "city": "Hallandale Beach",
+   "zip": "33009",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "10455 SE Federal Highway",
+   "city": "Hobe Sound",
+   "zip": "33455",
+   "county": "Martin",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "10835 SE Federal Highway",
+   "city": "Hobe Sound",
+   "zip": "33455",
+   "county": "Martin",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "555 Ridgewood Avenue",
+   "city": "Holly Hill",
+   "zip": "32117",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "1027 N Nova Road",
+   "city": "Holly Hill",
+   "zip": "32117",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "2119 Hollywood Boulevard",
+   "city": "Hollywood",
+   "zip": "33020",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "6661 Taft Street",
+   "city": "Hollywood",
+   "zip": "33024",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "The Flowery",
+   "street": "1113 S 30th Avenue",
+   "city": "Hollywood",
+   "zip": "33020",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "2908 Hollywood Boulevard",
+   "city": "Hollywood",
+   "zip": "33020",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "5709 S Suncoast Boulevard",
+   "city": "Homosassa",
+   "zip": "34446",
+   "county": "Citrus",
+   "state": "FL"
+  },
+  {
+   "name": "Insa",
+   "street": "12426 US Hwy 19",
+   "city": "Hudson",
+   "zip": "34667",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "11909 State Road 52",
+   "city": "Hudson",
+   "zip": "34669",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "Sunburn",
+   "street": "1170 N Highway A1A",
+   "city": "Indialantic",
+   "zip": "32903",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "3177 E Gulf to Lake Highway",
+   "city": "Inverness",
+   "zip": "34453",
+   "county": "Citrus",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "1500 N US Hwy 41",
+   "city": "Inverness",
+   "zip": "34450",
+   "county": "Citrus",
+   "state": "FL"
+  },
+  {
+   "name": "The Flowery",
+   "street": "3129 E Gulf Lake Highway",
+   "city": "Inverness",
+   "zip": "34453",
+   "county": "Citrus",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "950 W Main Street",
+   "city": "Inverness",
+   "zip": "34450",
+   "county": "Citrus",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "1319 Dunn Avenue",
+   "city": "Jacksonville",
+   "zip": "32218",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "8050 Philips Highway",
+   "city": "Jacksonville",
+   "zip": "32217",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "8215 Dix Ellis Trail",
+   "city": "Jacksonville",
+   "zip": "32256",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "13799 Beach Boulevard Suite 2",
+   "city": "Jacksonville",
+   "zip": "32224",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "6361 103rd Street",
+   "city": "Jacksonville",
+   "zip": "32210",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "9760 San Jose Boulevard",
+   "city": "Jacksonville",
+   "zip": "32257",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "5180 Baymeadows Road",
+   "city": "Jacksonville",
+   "zip": "32217",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "6352 103rd Street",
+   "city": "Jacksonville",
+   "zip": "32210",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "9510 Atlantic Boulevard",
+   "city": "Jacksonville",
+   "zip": "32225",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "971 Cassat Avenue",
+   "city": "Jacksonville",
+   "zip": "32205",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "9901 San Jose Boulevard",
+   "city": "Jacksonville",
+   "zip": "32257",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "12041 Beach Boulevard",
+   "city": "Jacksonville",
+   "zip": "32246",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "9421 Baymeadows Road",
+   "city": "Jacksonville",
+   "zip": "32256",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Insa",
+   "street": "10051 Skinner Lake Drive",
+   "city": "Jacksonville",
+   "zip": "32246",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Jungle Boys",
+   "street": "3655 University Boulevard W",
+   "city": "Jacksonville",
+   "zip": "32217",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Mint Cannabis",
+   "street": "4332 University Boulevard S",
+   "city": "Jacksonville",
+   "zip": "32216",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "1198 Beach Boulevard",
+   "city": "Jacksonville",
+   "zip": "32250",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "1550 Hendricks Avenue",
+   "city": "Jacksonville",
+   "zip": "32207",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "725 Skymarks Drive",
+   "city": "Jacksonville",
+   "zip": "32218",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "4339 Roosevelt Boulevard",
+   "city": "Jacksonville",
+   "zip": "32210",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "5298 Sunbeam Road",
+   "city": "Jacksonville",
+   "zip": "32257",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "1070 Edgewood Avenue S",
+   "city": "Jacksonville",
+   "zip": "32205",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "11450 Beach Boulevard",
+   "city": "Jacksonville",
+   "zip": "32246",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Sunburn",
+   "street": "1059 Park Street",
+   "city": "Jacksonville",
+   "zip": "32204",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Sunburn",
+   "street": "11190 San Jose Boulevard",
+   "city": "Jacksonville",
+   "zip": "32223",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Sunburn",
+   "street": "308 3rd Street S",
+   "city": "Jacksonville",
+   "zip": "32250",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "2725 College Street",
+   "city": "Jacksonville",
+   "zip": "32205",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "13642 Atlantic Boulevard",
+   "city": "Jacksonville",
+   "zip": "32225",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "537 Park Street",
+   "city": "Jacksonville",
+   "zip": "32204",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "The Flowery",
+   "street": "8669 Baymeadows Road",
+   "city": "Jacksonville",
+   "zip": "32256",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "10095 Beach Boulevard",
+   "city": "Jacksonville",
+   "zip": "32246",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "10339 San Jose Boulevard",
+   "city": "Jacksonville",
+   "zip": "32257",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1141 Dunn Avenue",
+   "city": "Jacksonville",
+   "zip": "32218",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "6259 Beach Boulevard",
+   "city": "Jacksonville",
+   "zip": "32216",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "8355 Baymeadows Road",
+   "city": "Jacksonville",
+   "zip": "32256",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "1222 S 3rd Street",
+   "city": "Jacksonville Beach",
+   "zip": "32250",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "1161 Beach Boulevard",
+   "city": "Jacksonville Beach",
+   "zip": "32250",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "102 N 6th Avenue",
+   "city": "Jacksonville Beach",
+   "zip": "32250",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Wildflower Cannabis",
+   "street": "240 3rd Street South",
+   "city": "Jacksonville Beach",
+   "zip": "32250",
+   "county": "Duval",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "3631 NW Federal Highway",
+   "city": "Jensen Beach",
+   "zip": "34957",
+   "county": "Martin",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "10064 W Indiantown Road",
+   "city": "Jupiter",
+   "zip": "33478",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "9002 S Dadeland Boulevard",
+   "city": "Kendall",
+   "zip": "33156",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "519 Duval Street",
+   "city": "Key West",
+   "zip": "33040",
+   "county": "Monroe",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "3126 Flagler Avenue",
+   "city": "Key West",
+   "zip": "33040",
+   "county": "Monroe",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "400 Duval Street",
+   "city": "Key West",
+   "zip": "33040",
+   "county": "Monroe",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "2647 E Irlo Bronson Memorial Highway",
+   "city": "Kissimmee",
+   "zip": "34744",
+   "county": "Osceola",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "4967 W Irlo Bronson Memorial Highway",
+   "city": "Kissimmee",
+   "zip": "34746",
+   "county": "Osceola",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "919 US Hwy 441",
+   "city": "Lady Lake",
+   "zip": "32159",
+   "county": "Lake",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "929 US Hwy 441",
+   "city": "Lady Lake",
+   "zip": "32159",
+   "county": "Lake",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "415 US Hwy 441",
+   "city": "Lady Lake",
+   "zip": "32159",
+   "county": "Lake",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "1720 W US Hwy 90",
+   "city": "Lake City",
+   "zip": "32055",
+   "county": "Columbia",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "905 SW Main Boulevard",
+   "city": "Lake City",
+   "zip": "32025",
+   "county": "Columbia",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "2938 W US Hwy 90",
+   "city": "Lake City",
+   "zip": "32055",
+   "county": "Columbia",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "2670 W US Hwy 90",
+   "city": "Lake City",
+   "zip": "32055",
+   "county": "Columbia",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "3701 W Lake Mary Boulevard",
+   "city": "Lake Mary",
+   "zip": "32746",
+   "county": "Seminole",
+   "state": "FL"
+  },
+  {
+   "name": "Insa",
+   "street": "702 US Hwy 27 S",
+   "city": "Lake Placid",
+   "zip": "33852",
+   "county": "Highlands",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "413 US Hwy 27",
+   "city": "Lake Placid",
+   "zip": "33852",
+   "county": "Highlands",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1341 State Road 60 E",
+   "city": "Lake Wales",
+   "zip": "33853",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "7118 S Military Trail",
+   "city": "Lake Worth",
+   "zip": "33463",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "1125 N Dixie Highway",
+   "city": "Lake Worth",
+   "zip": "33460",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "1 S Dixie Highway",
+   "city": "Lake Worth",
+   "zip": "33460",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "7343 Lake Worth Road",
+   "city": "Lake Worth",
+   "zip": "33467",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "5614 State Road 7",
+   "city": "Lake Worth",
+   "zip": "33449",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "6520 Lake Worth Road",
+   "city": "Lake Worth",
+   "zip": "33467",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "8724 Lake Worth Road",
+   "city": "Lake Worth",
+   "zip": "33467",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "6990 Florida Avenue S",
+   "city": "Lakeland",
+   "zip": "33813",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "3145 US Hwy 98 N",
+   "city": "Lakeland",
+   "zip": "33805",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "Goldflower Cannabis",
+   "street": "3970 US Hwy 98 N",
+   "city": "Lakeland",
+   "zip": "33809",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "4825 US Hwy 98 N",
+   "city": "Lakeland",
+   "zip": "33809",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "3004 US Hwy 98 N",
+   "city": "Lakeland",
+   "zip": "33805",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "224 N Florida Avenue",
+   "city": "Lakeland",
+   "zip": "33801",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "4000 Hwy 98 N",
+   "city": "Lakeland",
+   "zip": "33809",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "1222 Florida Avenue S",
+   "city": "Lakeland",
+   "zip": "33801",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1644 N Florida Avenue",
+   "city": "Lakeland",
+   "zip": "33805",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "17704 Aprile Drive",
+   "city": "Land O' Lakes",
+   "zip": "34638",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "21529 Village Lakes Shopping Center Drive",
+   "city": "Land O’ Lakes",
+   "zip": "34639",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "10289 Ulmerton Road",
+   "city": "Largo",
+   "zip": "33771",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Goldflower Cannabis",
+   "street": "2401 E Bay Drive",
+   "city": "Largo",
+   "zip": "33771",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "12887 Walsingham Road",
+   "city": "Largo",
+   "zip": "33774",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "4465 E Bay Drive",
+   "city": "Largo",
+   "zip": "33746",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Insa",
+   "street": "2650 E Bay Drive",
+   "city": "Largo",
+   "zip": "33771",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "12955 Seminole Boulevard",
+   "city": "Largo",
+   "zip": "33778",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "10761 Ulmerton Road",
+   "city": "Largo",
+   "zip": "33771",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "2076 Seminole Boulevard",
+   "city": "Largo",
+   "zip": "33778",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "3990 NW 16th Street",
+   "city": "Lauderhill",
+   "zip": "33311",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "1105 N 14th Street",
+   "city": "Leesburg",
+   "zip": "34748",
+   "county": "Lake",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "1403 Akron Drive",
+   "city": "Leesburg",
+   "zip": "34748",
+   "county": "Lake",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "106 W North Boulevard",
+   "city": "Leesburg",
+   "zip": "34748",
+   "county": "Lake",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "902 Lee Boulevard",
+   "city": "Lehigh Acres",
+   "zip": "33936",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1315 Homestead Road N",
+   "city": "Lehigh Acres",
+   "zip": "33936",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "1521 Ohio Avenue S",
+   "city": "Live Oak",
+   "zip": "32064",
+   "county": "Suwannee",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "750 S US Hwy 17-92",
+   "city": "Longwood",
+   "zip": "32750",
+   "county": "Seminole",
+   "state": "FL"
+  },
+  {
+   "name": "Mint Cannabis",
+   "street": "1415 W State Road 434",
+   "city": "Longwood",
+   "zip": "32750",
+   "county": "Seminole",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "1090 W State Road 434",
+   "city": "Longwood",
+   "zip": "32750",
+   "county": "Seminole",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "182 W State Road 434",
+   "city": "Longwood",
+   "zip": "32750",
+   "county": "Seminole",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "820 W State Road 434",
+   "city": "Longwood",
+   "zip": "32750",
+   "county": "Seminole",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "1408 Dale Mabry Highway",
+   "city": "Lutz",
+   "zip": "33548",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "21126 State Road 54",
+   "city": "Lutz",
+   "zip": "33558",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "21708 State Road 54",
+   "city": "Lutz",
+   "zip": "33549",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "24408 State Road 54",
+   "city": "Lutz",
+   "zip": "33559",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "855 W Base Street",
+   "city": "Madison",
+   "zip": "32340",
+   "county": "Madison",
+   "state": "FL"
+  },
+  {
+   "name": "Mint Cannabis",
+   "street": "456 W Base St",
+   "city": "Madison",
+   "zip": "32340",
+   "county": "Madison",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "695 Bald Eagle Drive",
+   "city": "Marco Island",
+   "zip": "34145",
+   "county": "Collier",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "615 E Elkcam Circle",
+   "city": "Marco Island",
+   "zip": "34145",
+   "county": "Collier",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "4365 Lafayette Street",
+   "city": "Marianna",
+   "zip": "32446",
+   "county": "Jackson",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "4256 Lafayette Street",
+   "city": "Marianna",
+   "zip": "32446",
+   "county": "Jackson",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "421 Mary Esther Boulevard",
+   "city": "Mary Esther",
+   "zip": "32569",
+   "county": "Okaloosa",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "2090 US Hwy 98",
+   "city": "Mary Esther",
+   "zip": "32569",
+   "county": "Okaloosa",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "6340 N Wickham Road",
+   "city": "Melbourne",
+   "zip": "32940",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Mint Cannabis",
+   "street": "21 Suntree Place",
+   "city": "Melbourne",
+   "zip": "32803",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "7660 N Wickham Road",
+   "city": "Melbourne",
+   "zip": "32940",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1921 Alma Drive",
+   "city": "Melbourne",
+   "zip": "32904",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "150 E Merritt Island Causeway",
+   "city": "Merritt Island",
+   "zip": "32952",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "205 Crockett Boulevard",
+   "city": "Merritt Island",
+   "zip": "32953",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "929 N Courtenay Parkway",
+   "city": "Merritt Island",
+   "zip": "32953",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "324 E Merritt Island Causeway",
+   "city": "Merritt Island",
+   "zip": "32952",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "700 E Merritt Island Causeway",
+   "city": "Merritt Island",
+   "zip": "32952",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "6827 SW 40th Street",
+   "city": "Miami",
+   "zip": "33155",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "17150 Biscayne Boulevard",
+   "city": "Miami",
+   "zip": "33160",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "8303 SW 40th Street",
+   "city": "Miami",
+   "zip": "33155",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "11245 SW 211th Street",
+   "city": "Miami",
+   "zip": "33189",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "12125 SW 152nd Street",
+   "city": "Miami",
+   "zip": "33177",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "5400 NW 72nd Avenue",
+   "city": "Miami",
+   "zip": "33166",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Goldflower Cannabis",
+   "street": "7401 SW 40th Street",
+   "city": "Miami",
+   "zip": "33155",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "5827 SW 40th Street",
+   "city": "Miami",
+   "zip": "33155",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "11561 N Kendall Drive",
+   "city": "Miami",
+   "zip": "33173",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Jungle Boys",
+   "street": "8994 SW 40th Street",
+   "city": "Miami",
+   "zip": "33165",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Mint Cannabis",
+   "street": "12083 SW 117th Avenue",
+   "city": "Miami",
+   "zip": "33186",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "9711 SW 77th Avenue",
+   "city": "Miami",
+   "zip": "33156",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "8345 SW 124th Street",
+   "city": "Miami",
+   "zip": "33156",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "8717 SW 24th Street",
+   "city": "Miami",
+   "zip": "33165",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "10755 SW 72nd St",
+   "city": "Miami",
+   "zip": "33173",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "6647 S Dixie Highway",
+   "city": "Miami",
+   "zip": "33143",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "The Flowery",
+   "street": "11900 Biscayne Boulevard",
+   "city": "Miami",
+   "zip": "33181",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "18350 NW 47th Avenue",
+   "city": "Miami",
+   "zip": "33055",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "4020 NW 26th Street",
+   "city": "Miami",
+   "zip": "33142",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "9600 SW 77th Avenue",
+   "city": "Miami",
+   "zip": "33156",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "550 Collins Avenue",
+   "city": "Miami Beach",
+   "zip": "33139",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Jungle Boys",
+   "street": "6958 Collins Avenue",
+   "city": "Miami Beach",
+   "zip": "33141",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "One Plant",
+   "street": "740 Alton Rd",
+   "city": "Miami Beach",
+   "zip": "33139",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Sunburn",
+   "street": "1428 Alton Road",
+   "city": "Miami Beach",
+   "zip": "33139",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1011 5th Street",
+   "city": "Miami Beach",
+   "zip": "33139",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "175 NW 167th Street",
+   "city": "Miami Beach",
+   "zip": "33169",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1539 Blanding Boulevard",
+   "city": "Middleburg",
+   "zip": "32068",
+   "county": "Clay",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "9637 US Hwy 98",
+   "city": "Miramar Beach",
+   "zip": "32550",
+   "county": "Walton",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "13320 US Hwy 98 W",
+   "city": "Miramar Beach",
+   "zip": "32550",
+   "county": "Walton",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "11610 Emerald Coast Parkway",
+   "city": "Miramar Beach",
+   "zip": "32550",
+   "county": "Walton",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "12889 Emerald Coast Parkway",
+   "city": "Miramar Beach",
+   "zip": "32550",
+   "county": "Walton",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "6751 N Church Avenue",
+   "city": "Mulberry",
+   "zip": "33860",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "26655 S Dixie Highway",
+   "city": "Naranja",
+   "zip": "33032",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "6883 Navarre Parkway",
+   "city": "Navarre",
+   "zip": "32566",
+   "county": "Santa Rosa",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "5138 Deer Park Drive",
+   "city": "New Port Richey",
+   "zip": "34653",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "6213 State Road 54",
+   "city": "New Port Richey",
+   "zip": "34653",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "4218 US Hwy 19",
+   "city": "New Port Richey",
+   "zip": "34652",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "7002 State Road 54",
+   "city": "New Port Richey",
+   "zip": "34653",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "763 E 3rd Avenue",
+   "city": "New Smyrna Beach",
+   "zip": "32169",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "4550 US Hwy 20",
+   "city": "Niceville",
+   "zip": "32578",
+   "county": "Okaloosa",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "6350 Bayshore Road",
+   "city": "North Fort Myers",
+   "zip": "33917",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "5500 Bayshore Road",
+   "city": "North Fort Myers",
+   "zip": "33917",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "5660 Bayshore Road",
+   "city": "North Fort Myers",
+   "zip": "33917",
+   "county": "Lee",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "16685 NW 2nd Avenue",
+   "city": "North Miami",
+   "zip": "33169",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Goldflower Cannabis",
+   "street": "12605 Biscayne Boulevard",
+   "city": "North Miami",
+   "zip": "33181",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "13400 Biscayne Boulevard",
+   "city": "North Miami",
+   "zip": "33181",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "12395 Biscayne Boulevard",
+   "city": "North Miami",
+   "zip": "33181",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "2250 NE 163rd Street",
+   "city": "North Miami Beach",
+   "zip": "33160",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Jungle Boys",
+   "street": "3495 NE 163rd Street",
+   "city": "North Miami Beach",
+   "zip": "33160",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "16635 NE 19th Avenue",
+   "city": "North Miami Beach",
+   "zip": "33162",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "15100 Biscayne Boulevard",
+   "city": "North Miami Beach",
+   "zip": "33160",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "11575 US Hwy 1",
+   "city": "North Palm Beach",
+   "zip": "33408",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "11859 US Hwy 1",
+   "city": "North Palm Beach",
+   "zip": "33408",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "4490 Aidan Lane",
+   "city": "North Port",
+   "zip": "34287",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "5674 Tuscola Boulevard",
+   "city": "North Port",
+   "zip": "34286",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "14906 Tamiami Trail",
+   "city": "North Port",
+   "zip": "34287",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "7050 Sumter Crossing Drive",
+   "city": "North Port",
+   "zip": "34287",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "499 E Oakland Park",
+   "city": "Oakland Park",
+   "zip": "33334",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "301 W Oakland Park Boulevard",
+   "city": "Oakland Park",
+   "zip": "33309",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "4920 E Silver Springs Boulevard",
+   "city": "Ocala",
+   "zip": "34470",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "1839 SW College Road",
+   "city": "Ocala",
+   "zip": "34471",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "9268 SE Maricamp Road",
+   "city": "Ocala",
+   "zip": "34772",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "Goldflower Cannabis",
+   "street": "2613 SW 19th Avenue Road",
+   "city": "Ocala",
+   "zip": "34471",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "2645 E Silver Springs Boulevard",
+   "city": "Ocala",
+   "zip": "34470",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "2370 SW College Road",
+   "city": "Ocala",
+   "zip": "34474",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "3871 SW College Road",
+   "city": "Ocala",
+   "zip": "34474",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "Jungle Boys",
+   "street": "2301 N Pine Avenue",
+   "city": "Ocala",
+   "zip": "34475",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "3701 SW College Road",
+   "city": "Ocala",
+   "zip": "34474",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "8750 SW State Road 200",
+   "city": "Ocala",
+   "zip": "34481",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "811 NE 36th Avenue",
+   "city": "Ocala",
+   "zip": "32270",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "11115 SW 93rd Court Road",
+   "city": "Ocala",
+   "zip": "34481",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "The Flowery",
+   "street": "1704 S Pine Avenue",
+   "city": "Ocala",
+   "zip": "34471",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1927 SW College Road",
+   "city": "Ocala",
+   "zip": "34471",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "9070 SW State Road 200",
+   "city": "Ocala",
+   "zip": "34481",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "510 NE Park Street",
+   "city": "Okeechobee",
+   "zip": "34972",
+   "county": "Okeechobee",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1300 N Parrott Avenue",
+   "city": "Okeechobee",
+   "zip": "34972",
+   "county": "Okeechobee",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "8868 Bird Road",
+   "city": "Olympia Heights",
+   "zip": "33165",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "9578 Bird Road",
+   "city": "Olympia Heights",
+   "zip": "33165",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "2590 S Volusia Avenue",
+   "city": "Orange City",
+   "zip": "32763",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "2494 Enterprise Road",
+   "city": "Orange City",
+   "zip": "32763",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "2616 Enterprise Road",
+   "city": "Orange City",
+   "zip": "32763",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "1907 Wells Road",
+   "city": "Orange Park",
+   "zip": "32073",
+   "county": "Clay",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "859 Blanding Boulevard",
+   "city": "Orange Park",
+   "zip": "32065",
+   "county": "Clay",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "495 Blanding Boulevard",
+   "city": "Orange Park",
+   "zip": "32073",
+   "county": "Clay",
+   "state": "FL"
+  },
+  {
+   "name": "Goldflower Cannabis",
+   "street": "999 Blanding Boulevard",
+   "city": "Orange Park",
+   "zip": "32065",
+   "county": "Clay",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "950 Blanding Boulevard",
+   "city": "Orange Park",
+   "zip": "32065",
+   "county": "Clay",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "68 Blanding Boulevard",
+   "city": "Orange Park",
+   "zip": "32073",
+   "county": "Clay",
+   "state": "FL"
+  },
+  {
+   "name": "One Plant",
+   "street": "450 Park Avenue",
+   "city": "Orange Park",
+   "zip": "32073",
+   "county": "Clay",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "921 Blanding Boulevard",
+   "city": "Orange Park",
+   "zip": "32065",
+   "county": "Clay",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "80 Blanding Boulevard",
+   "city": "Orange Park",
+   "zip": "32073",
+   "county": "Clay",
+   "state": "FL"
+  },
+  {
+   "name": "The Flowery",
+   "street": "491 Blanding Boulevard",
+   "city": "Orange Park",
+   "zip": "32073",
+   "county": "Clay",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "342 Blanding Boulevard",
+   "city": "Orange Park",
+   "zip": "32073",
+   "county": "Clay",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "13832 Landstar Boulevard",
+   "city": "Orlando",
+   "zip": "32824",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "4650 N Alafaya Trail",
+   "city": "Orlando",
+   "zip": "32826",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "6325 N Orange Blossom Trail",
+   "city": "Orlando",
+   "zip": "32810",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "7720 Turkey Lake Road",
+   "city": "Orlando",
+   "zip": "32819",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "9815 S Orange Blossom Trail",
+   "city": "Orlando",
+   "zip": "32837",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "1345 Lee Road",
+   "city": "Orlando",
+   "zip": "32810",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "9350 S Orange Blossom Trail",
+   "city": "Orlando",
+   "zip": "32837",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "11311 University Boulevard",
+   "city": "Orlando",
+   "zip": "32817",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "12402 S Orange Blossom Trail",
+   "city": "Orlando",
+   "zip": "32837",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "6600 International Drive",
+   "city": "Orlando",
+   "zip": "32819",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "775 N Semoran Boulevard",
+   "city": "Orlando",
+   "zip": "32807",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Eden Florida, LLC",
+   "street": "3434 S Orange Avenue",
+   "city": "Orlando",
+   "zip": "32806",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Goldflower Cannabis",
+   "street": "7101 E Colonial Drive",
+   "city": "Orlando",
+   "zip": "32803",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "10607 E Colonial Drive",
+   "city": "Orlando",
+   "zip": "32817",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "1901 N Orange Avenue",
+   "city": "Orlando",
+   "zip": "32804",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "800 Lee Road",
+   "city": "Orlando",
+   "zip": "32810",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "848 W Sand Lake Road",
+   "city": "Orlando",
+   "zip": "32809",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "4353 Edgewater Drive",
+   "city": "Orlando",
+   "zip": "32804",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "7858 Turkey Lake Road",
+   "city": "Orlando",
+   "zip": "32819",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "725 Good Homes Road",
+   "city": "Orlando",
+   "zip": "32818",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Insa",
+   "street": "640 Lee Road",
+   "city": "Orlando",
+   "zip": "32810",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Insa",
+   "street": "7500 E Colonial Drive",
+   "city": "Orlando",
+   "zip": "32807",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Jungle Boys",
+   "street": "11401 University Boulevard",
+   "city": "Orlando",
+   "zip": "32817",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Mint Cannabis",
+   "street": "10615 E Colonial Drive",
+   "city": "Orlando",
+   "zip": "32803",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "101 S Garland Avenue",
+   "city": "Orlando",
+   "zip": "32801",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "11247 E Colonial Drive",
+   "city": "Orlando",
+   "zip": "32817",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "8103 Vineland Parkway",
+   "city": "Orlando",
+   "zip": "32821",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "1700 N Semoran Boulevard",
+   "city": "Orlando",
+   "zip": "32807",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "7400 Southland Boulevard",
+   "city": "Orlando",
+   "zip": "32809",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "5381 International Drive",
+   "city": "Orlando",
+   "zip": "32819",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "8185 Lee Vista Boulevard",
+   "city": "Orlando",
+   "zip": "32829",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Sunburn",
+   "street": "11551 University Boulevard",
+   "city": "Orlando",
+   "zip": "32817",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "2051 Town Center Boulevard",
+   "city": "Orlando",
+   "zip": "32837",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "6990 W Colonial Drive",
+   "city": "Orlando",
+   "zip": "32818",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "1743 S Orange Avenue",
+   "city": "Orlando",
+   "zip": "32806",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "2820 E Colonial Drive",
+   "city": "Orlando",
+   "zip": "32803",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "The Flowery",
+   "street": "8586 S Orange Blossom Trail",
+   "city": "Orlando",
+   "zip": "32809",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "11291 E Colonial Drive",
+   "city": "Orlando",
+   "zip": "32817",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "4192 Conroy Road",
+   "city": "Orlando",
+   "zip": "32839",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "4544 N Orange Blossom Trail",
+   "city": "Orlando",
+   "zip": "32804",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "6651 S Semoran Boulevard",
+   "city": "Orlando",
+   "zip": "32822",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "7225 W Colonial Drive",
+   "city": "Orlando",
+   "zip": "32818",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "9521 S Orange Blossom Trail",
+   "city": "Orlando",
+   "zip": "32712",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "290 Clyde Morris Boulevard",
+   "city": "Ormond Beach",
+   "zip": "32174",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1100 S Tamiami Trail",
+   "city": "Osprey",
+   "zip": "34229",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "4301 Alafaya Trail",
+   "city": "Oviedo",
+   "zip": "32765",
+   "county": "Seminole",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "3050 Alafaya Trail",
+   "city": "Oviedo",
+   "zip": "32765",
+   "county": "Seminole",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "7505 Red Bug Lake Road",
+   "city": "Oviedo",
+   "zip": "32765",
+   "county": "Seminole",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "4612 School Lane",
+   "city": "Pace",
+   "zip": "32571",
+   "county": "Santa Rosa",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "5037 US Hwy 90",
+   "city": "Pace",
+   "zip": "32571",
+   "county": "Santa Rosa",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "440 N State Road 19",
+   "city": "Palatka",
+   "zip": "32177",
+   "county": "Putnam",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "1519 Saint Johns Avenue",
+   "city": "Palatka",
+   "zip": "32177",
+   "county": "Putnam",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "850 S Moody Road",
+   "city": "Palatka",
+   "zip": "32177",
+   "county": "Putnam",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "839 S State Road 19",
+   "city": "Palatka",
+   "zip": "32177",
+   "county": "Putnam",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "101 US Hwy 17",
+   "city": "Palatka",
+   "zip": "32177",
+   "county": "Putnam",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "4805 Babcock Street NE",
+   "city": "Palm Bay",
+   "zip": "32905",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "1300 Palm Bay Road NE",
+   "city": "Palm Bay",
+   "zip": "32905",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "1420 Palm Bay Road NE",
+   "city": "Palm Bay",
+   "zip": "32905",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "1760 Palm Bay Road NE",
+   "city": "Palm Bay",
+   "zip": "32905",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "1663 Georgia Street NE",
+   "city": "Palm Bay",
+   "zip": "32907",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "1260 Malabar Road",
+   "city": "Palm Bay",
+   "zip": "32907",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "6295 Minton Road NE",
+   "city": "Palm Bay",
+   "zip": "32907",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "The Flowery",
+   "street": "1755 Palm Bay Road NE",
+   "city": "Palm Bay",
+   "zip": "32905",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "4940 Babcock Street NE",
+   "city": "Palm Bay",
+   "zip": "32905",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "12300 Alternate A1A Highway",
+   "city": "Palm Beach Gardens",
+   "zip": "33410",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "3555 Northlake Boulevard",
+   "city": "Palm Beach Gardens",
+   "zip": "33403",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "100 Flagler Plaza Drive",
+   "city": "Palm Coast",
+   "zip": "32137",
+   "county": "Flagler",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "28 Old Kings Road N",
+   "city": "Palm Coast",
+   "zip": "32137",
+   "county": "Flagler",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "5650 State Road 100 E",
+   "city": "Palm Coast",
+   "zip": "32137",
+   "county": "Flagler",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "31487 US Hwy 19 N",
+   "city": "Palm Harbor",
+   "zip": "34684",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Bloom Dispensary",
+   "street": "1300 Tampa Road",
+   "city": "Palm Harbor",
+   "zip": "34683",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "35388 US Hwy 19 N",
+   "city": "Palm Harbor",
+   "zip": "34684",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "2431 Tampa Road",
+   "city": "Palm Harbor",
+   "zip": "34683",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Jungle Boys",
+   "street": "31650 US Hwy 19",
+   "city": "Palm Harbor",
+   "zip": "34684",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "35098 US Hwy 19 N",
+   "city": "Palm Harbor",
+   "zip": "34684",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "30600 US Hwy 19",
+   "city": "Palm Harbor",
+   "zip": "34684",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "The Flowery",
+   "street": "8898 SW 144th Street",
+   "city": "Palmetto Bay",
+   "zip": "33176",
+   "county": "Miami-Dade",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "201 E 6th Street",
+   "city": "Panama City",
+   "zip": "32401",
+   "county": "Bay",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "226 W 23rd Street",
+   "city": "Panama City",
+   "zip": "32405",
+   "county": "Bay",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "749 W 23rd Street",
+   "city": "Panama City",
+   "zip": "32405",
+   "county": "Bay",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "3611 US Hwy 98",
+   "city": "Panama City",
+   "zip": "32401",
+   "county": "Bay",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "917 Harrison Avenue",
+   "city": "Panama City",
+   "zip": "32401",
+   "county": "Bay",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "309 E 23rd Street",
+   "city": "Panama City",
+   "zip": "32405",
+   "county": "Bay",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "411 E 23rd Street",
+   "city": "Panama City",
+   "zip": "32405",
+   "county": "Bay",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1020 E 23rd Street",
+   "city": "Panama City",
+   "zip": "32405",
+   "county": "Bay",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "7915 Panama City Beach Parkway",
+   "city": "Panama City Beach",
+   "zip": "32407",
+   "county": "Bay",
+   "state": "FL"
+  },
+  {
+   "name": "Sunburn",
+   "street": "11049 Hutchison Boulevard",
+   "city": "Panama City Beach",
+   "zip": "32407",
+   "county": "Bay",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "10916 Hutchison Boulevard",
+   "city": "Panama City Beach",
+   "zip": "32407",
+   "county": "Bay",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "9952 Hutchison Boulevard",
+   "city": "Panama City Beach",
+   "zip": "32407",
+   "county": "Bay",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "2900 Country Club Lane",
+   "city": "Pembroke Park",
+   "zip": "33009",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "2146 W 9 Mile Road",
+   "city": "Pensacola",
+   "zip": "32534",
+   "county": "Escambia",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "4455 Mobile Highway",
+   "city": "Pensacola",
+   "zip": "32506",
+   "county": "Escambia",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "7152 N Davis Highway",
+   "city": "Pensacola",
+   "zip": "32504",
+   "county": "Escambia",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "176 E 9 Mile Road",
+   "city": "Pensacola",
+   "zip": "32534",
+   "county": "Escambia",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "2 E 9 Mile Road",
+   "city": "Pensacola",
+   "zip": "32534",
+   "county": "Escambia",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "5090 N 9th Avenue",
+   "city": "Pensacola",
+   "zip": "32504",
+   "county": "Escambia",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "301 E Nine Road",
+   "city": "Pensacola",
+   "zip": "32514",
+   "county": "Escambia",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "500 E Chase Street",
+   "city": "Pensacola",
+   "zip": "32502",
+   "county": "Escambia",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "701 E 9 Mile Road",
+   "city": "Pensacola",
+   "zip": "32514",
+   "county": "Escambia",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "920 N Navy Boulevard",
+   "city": "Pensacola",
+   "zip": "32507",
+   "county": "Escambia",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "7817 N Davis Highway",
+   "city": "Pensacola",
+   "zip": "32514",
+   "county": "Escambia",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "4785 N 9th Avenue",
+   "city": "Pensacola",
+   "zip": "32503",
+   "county": "Escambia",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "2401 Langley Avenue",
+   "city": "Pensacola",
+   "zip": "32504",
+   "county": "Escambia",
+   "state": "FL"
+  },
+  {
+   "name": "Sunburn",
+   "street": "5048 Bayou Boulevard",
+   "city": "Pensacola",
+   "zip": "32504",
+   "county": "Escambia",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "2122 W 9 Mile Road",
+   "city": "Pensacola",
+   "zip": "32534",
+   "county": "Escambia",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "3900 N 9th Avenue",
+   "city": "Pensacola",
+   "zip": "32503",
+   "county": "Escambia",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "5046 Bayou Boulevard",
+   "city": "Pensacola",
+   "zip": "32503",
+   "county": "Escambia",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1901 E Nine Mile Road",
+   "city": "Pensacola",
+   "zip": "32514",
+   "county": "Escambia",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "3119 N Davis Highway",
+   "city": "Pensacola",
+   "zip": "32503",
+   "county": "Escambia",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "6769 US Hwy 19 N",
+   "city": "Pinellas Park",
+   "zip": "33781",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "6999 US Hwy 19",
+   "city": "Pinellas Park",
+   "zip": "33781",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "7263 Park Boulevard N",
+   "city": "Pinellas Park",
+   "zip": "33781",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "6950 Park Boulevard",
+   "city": "Pinellas Park",
+   "zip": "33781",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "51 N Doverplum Avenue",
+   "city": "Poinciana",
+   "zip": "33020",
+   "county": "Osceola",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "4656 Tamiami Trail",
+   "city": "Port Charlotte",
+   "zip": "33980",
+   "county": "Charlotte",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "4535 Tamiami Trail",
+   "city": "Port Charlotte",
+   "zip": "33980",
+   "county": "Charlotte",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "1994 Kings Highway",
+   "city": "Port Charlotte",
+   "zip": "33980",
+   "county": "Charlotte",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "1931 Tamiami Trail",
+   "city": "Port Charlotte",
+   "zip": "33948",
+   "county": "Charlotte",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "22627 Bayshore Road",
+   "city": "Port Charlotte",
+   "zip": "33980",
+   "county": "Charlotte",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "1100 El Jobean Road",
+   "city": "Port Charlotte",
+   "zip": "33948",
+   "county": "Charlotte",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "4120 Tamiami Trail",
+   "city": "Port Charlotte",
+   "zip": "33952",
+   "county": "Charlotte",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "1760 Dunlawton Avenue",
+   "city": "Port Orange",
+   "zip": "32127",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "4041 S Nova Road",
+   "city": "Port Orange",
+   "zip": "32127",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "3880 S Nova Road",
+   "city": "Port Orange",
+   "zip": "32127",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "900 Village Trail",
+   "city": "Port Orange",
+   "zip": "32127",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "3665 S Clyde Morris Boulevard",
+   "city": "Port Orange",
+   "zip": "32129",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "The Flowery",
+   "street": "3790 S Nova Road",
+   "city": "Port Orange",
+   "zip": "32129",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1090 Dunlawton Avenue",
+   "city": "Port Orange",
+   "zip": "32127",
+   "county": "Volusia",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "9314 US Hwy 19 N",
+   "city": "Port Richey",
+   "zip": "34668",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "8605 US Hwy 19",
+   "city": "Port Richey",
+   "zip": "34668",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "9010 US Hwy 19",
+   "city": "Port Richey",
+   "zip": "34668",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "6939 Ridge Road",
+   "city": "Port Richey",
+   "zip": "34668",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "10523 US Hwy 19",
+   "city": "Port Richey",
+   "zip": "34668",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "5422 US Hwy 19",
+   "city": "Port Richey",
+   "zip": "34652",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1068 SE Port Saint Lucie Boulevard",
+   "city": "Port Saint Lucie",
+   "zip": "34952",
+   "county": "Saint Lucie",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "10941 US Hwy 1",
+   "city": "Port St. Lucie",
+   "zip": "34952",
+   "county": "St. Lucie",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "1401 SE Village Green Drive",
+   "city": "Port St. Lucie",
+   "zip": "34952",
+   "county": "St. Lucie",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "1720 SW Gatlin Boulevard",
+   "city": "Port St. Lucie",
+   "zip": "34953",
+   "county": "St. Lucie",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "2092 NW Courtyard Circle",
+   "city": "Port St. Lucie",
+   "zip": "34986",
+   "county": "St. Lucie",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "120 SW Chamber Court",
+   "city": "Port St. Lucie",
+   "zip": "34986",
+   "county": "St. Lucie",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "7510 US Hwy 1",
+   "city": "Port St. Lucie",
+   "zip": "34952",
+   "county": "St. Lucie",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "7061 US Hwy 1",
+   "city": "Port St. Lucie",
+   "zip": "34952",
+   "county": "St. Lucie",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1288 SW Gatlin Boulevard",
+   "city": "Port St. Lucie",
+   "zip": "34953",
+   "county": "St. Lucie",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "100 Madrid Boulevard",
+   "city": "Punta Gorda",
+   "zip": "33950",
+   "county": "Charlotte",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "10175 Tamiami Trail",
+   "city": "Punta Gorda",
+   "zip": "33950",
+   "county": "Charlotte",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "10422 US Hwy 301 S",
+   "city": "Riverview",
+   "zip": "33578",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Mint Cannabis",
+   "street": "10456 Stelling Drive",
+   "city": "Riverview",
+   "zip": "33578",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "9910 Upper Alafia Court",
+   "city": "Riverview",
+   "zip": "33578",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "105 Monroe Road",
+   "city": "Sanford",
+   "zip": "32771",
+   "county": "Seminole",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "610 Lake Minnie Drive",
+   "city": "Sanford",
+   "zip": "32771",
+   "county": "Seminole",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "4740 W State Road 46",
+   "city": "Sanford",
+   "zip": "32771",
+   "county": "Seminole",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "2067 Siesta Drive",
+   "city": "Sarasota",
+   "zip": "34239",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "1435 S Tamiami Trail",
+   "city": "Sarasota",
+   "zip": "34239",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "3704 84th Avenue Circle E",
+   "city": "Sarasota",
+   "zip": "34243",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "Eden Florida, LLC",
+   "street": "7394 South Tamiami Trail",
+   "city": "Sarasota",
+   "zip": "34231",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "3555 Clark Road",
+   "city": "Sarasota",
+   "zip": "34231",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "Mint Cannabis",
+   "street": "6979 S Tamiami Trail",
+   "city": "Sarasota",
+   "zip": "34231",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "1618 Main Street",
+   "city": "Sarasota",
+   "zip": "34236",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "5045 Fruitville Road",
+   "city": "Sarasota",
+   "zip": "34232",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "2460 Stickney Point Road",
+   "city": "Sarasota",
+   "zip": "34231",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "1199 N Washington Boulevard",
+   "city": "Sarasota",
+   "zip": "34236",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "Sunburn",
+   "street": "1410 Main Street",
+   "city": "Sarasota",
+   "zip": "34236",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "8307 Lockwood Ridge Road",
+   "city": "Sarasota",
+   "zip": "34243",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "935 N Beneva Road",
+   "city": "Sarasota",
+   "zip": "34232",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "106 Florida A1A",
+   "city": "Satellite Beach",
+   "zip": "32937",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "1701 US Hwy 1",
+   "city": "Sebastian",
+   "zip": "32958",
+   "county": "Indian River",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1621 US Hwy 1",
+   "city": "Sebastian",
+   "zip": "32958",
+   "county": "Indian River",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "135 US Hwy 27 N",
+   "city": "Sebring",
+   "zip": "33870",
+   "county": "Highlands",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "4226 Sebring Parkway",
+   "city": "Sebring",
+   "zip": "33870",
+   "county": "Highlands",
+   "state": "FL"
+  },
+  {
+   "name": "Goldflower Cannabis",
+   "street": "5220 Hardware Place",
+   "city": "Sebring",
+   "zip": "33870",
+   "county": "Highlands",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "3900 US Hwy 27",
+   "city": "Sebring",
+   "zip": "33870",
+   "county": "Highlands",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "4208 US Hwy 27 S",
+   "city": "Sebring",
+   "zip": "33870",
+   "county": "Highlands",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "2058 US Hwy 27 N",
+   "city": "Sebring",
+   "zip": "33870",
+   "county": "Highlands",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "801 W Martin Luther King Jr Boulevard",
+   "city": "Seffner",
+   "zip": "33584",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "1246 Eglin Parkway",
+   "city": "Shalimar",
+   "zip": "32579",
+   "county": "Okaloosa",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "1271 Pasadena Avenue S",
+   "city": "South Pasadena",
+   "zip": "33707",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "2356 Commercial Way Service Road",
+   "city": "Spring Hill",
+   "zip": "34606",
+   "county": "Hernando",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "4287 Mariner Boulevard",
+   "city": "Spring Hill",
+   "zip": "34609",
+   "county": "Hernando",
+   "state": "FL"
+  },
+  {
+   "name": "Mint Cannabis",
+   "street": "7184 Mariner Boulevard",
+   "city": "Spring Hill",
+   "zip": "34609",
+   "county": "Hernando",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "18941 Old Shady Hills Road",
+   "city": "Spring Hill",
+   "zip": "34610",
+   "county": "Hernando",
+   "state": "FL"
+  },
+  {
+   "name": "One Plant",
+   "street": "10520 Spring Hill Drive",
+   "city": "Spring Hill",
+   "zip": "34608",
+   "county": "Hernando",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "404 Suzanne Drive",
+   "city": "Spring Hill",
+   "zip": "34607",
+   "county": "Hernando",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "1280 N Ponce De Leon Boulevard",
+   "city": "St. Augustine",
+   "zip": "32084",
+   "county": "St. Johns",
+   "state": "FL"
+  },
+  {
+   "name": "Mint Cannabis",
+   "street": "160 King Street",
+   "city": "St. Augustine",
+   "zip": "32084",
+   "county": "St. Johns",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "400 S Ponce De Leon Boulevard",
+   "city": "St. Augustine",
+   "zip": "32084",
+   "county": "St. Johns",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1650 US Hwy 1",
+   "city": "St. Augustine",
+   "zip": "32084",
+   "county": "St. Johns",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "3945 A1a S",
+   "city": "St. Augustine",
+   "zip": "32080",
+   "county": "St. Johns",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "2198 A1a S",
+   "city": "St. Augustine Beach",
+   "zip": "32080",
+   "county": "St. Johns",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "513 Martin Luther King Jr. Street N",
+   "city": "St. Petersburg",
+   "zip": "33701",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "3811 Tyrone Boulevard",
+   "city": "St. Petersburg",
+   "zip": "33709",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "5935 4th Street N",
+   "city": "St. Petersburg",
+   "zip": "33703",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Goldflower Cannabis",
+   "street": "2160 Central Avenue N",
+   "city": "St. Petersburg",
+   "zip": "33712",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "130 Fountain Parkway N",
+   "city": "St. Petersburg",
+   "zip": "33716",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "601 34th Street N",
+   "city": "St. Petersburg",
+   "zip": "33713",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "4831 34th Street S",
+   "city": "St. Petersburg",
+   "zip": "33711",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Jungle Boys",
+   "street": "4500 4th Street N",
+   "city": "St. Petersburg",
+   "zip": "33703",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "1101 1st Avenue N",
+   "city": "St. Petersburg",
+   "zip": "33705",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "One Plant",
+   "street": "2832 4th Street N",
+   "city": "St. Petersburg",
+   "zip": "33704",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "3790 Tyrone Boulevard N",
+   "city": "St. Petersburg",
+   "zip": "33710",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Sunburn",
+   "street": "326 5th Avenue N",
+   "city": "St. Petersburg",
+   "zip": "33701",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "150 22nd Street",
+   "city": "St. Petersburg",
+   "zip": "33712",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "8123 4th Street N",
+   "city": "St. Petersburg",
+   "zip": "33702",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "2001 4th Street N",
+   "city": "St. Petersburg",
+   "zip": "33704",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "3210 Central Avenue",
+   "city": "St. Petersburg",
+   "zip": "33712",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "6752 22nd Avenue N",
+   "city": "St. Petersburg",
+   "zip": "33710",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "8435 4th Street N",
+   "city": "St. Petersburg",
+   "zip": "33702",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "3323 SE Federal Highway",
+   "city": "Stuart",
+   "zip": "32997",
+   "county": "Martin",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "1910 SE Federal Highway",
+   "city": "Stuart",
+   "zip": "34994",
+   "county": "Martin",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "2048 SE Federal Highway",
+   "city": "Stuart",
+   "zip": "34994",
+   "county": "Martin",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "1981 SE Federal Highway",
+   "city": "Stuart",
+   "zip": "34994",
+   "county": "Martin",
+   "state": "FL"
+  },
+  {
+   "name": "Mint Cannabis",
+   "street": "4203 SE Federal Highway",
+   "city": "Stuart",
+   "zip": "34997",
+   "county": "Martin",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "265 SW Monterey Road",
+   "city": "Stuart",
+   "zip": "34994",
+   "county": "Martin",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "1655 NW Federal Highway",
+   "city": "Stuart",
+   "zip": "34994",
+   "county": "Martin",
+   "state": "FL"
+  },
+  {
+   "name": "Sunburn",
+   "street": "1390 NW Federal Highway",
+   "city": "Stuart",
+   "zip": "34994",
+   "county": "Martin",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1970 NW Federal Highway",
+   "city": "Stuart",
+   "zip": "34994",
+   "county": "Martin",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "6600 S Kanner Highway",
+   "city": "Stuart",
+   "zip": "34997",
+   "county": "Martin",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "16810 S Hwy 441",
+   "city": "Summerfield",
+   "zip": "34491",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "Goldflower Cannabis",
+   "street": "16714 US Hwy 441",
+   "city": "Summerfield",
+   "zip": "34491",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "15405 US Hwy 441",
+   "city": "Summerfield",
+   "zip": "34491",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "Insa",
+   "street": "11220 SE 179th Place",
+   "city": "Summerfield",
+   "zip": "34491",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "17350 SE 109th Terrace Road",
+   "city": "Summerfield",
+   "zip": "34491",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "10915 SE 174th Place",
+   "city": "Summerfield",
+   "zip": "34491",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "17950 US Hwy 441",
+   "city": "Summerfield",
+   "zip": "34491",
+   "county": "Marion",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "1507 Rickenbacker Drive",
+   "city": "Sun City Center",
+   "zip": "33573",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "1525 W Tennessee Street",
+   "city": "Tallahassee",
+   "zip": "32304",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "1345 Thomasville Road",
+   "city": "Tallahassee",
+   "zip": "32303",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "2121 W Tennessee Street",
+   "city": "Tallahassee",
+   "zip": "32304",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "Goldflower Cannabis",
+   "street": "3513 Apalachee Parkway",
+   "city": "Tallahassee",
+   "zip": "32311",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "1902 Thomasville Road",
+   "city": "Tallahassee",
+   "zip": "32303",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "1912 N Monroe Street",
+   "city": "Tallahassee",
+   "zip": "32303",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "437 W Gaines Street",
+   "city": "Tallahassee",
+   "zip": "32301",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "1787 W Tennessee Street",
+   "city": "Tallahassee",
+   "zip": "32304",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "1412 W Tennessee Street",
+   "city": "Tallahassee",
+   "zip": "32304",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "2459 Mahan Drive",
+   "city": "Tallahassee",
+   "zip": "32308",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "Insa",
+   "street": "640 W Tennessee Street",
+   "city": "Tallahassee",
+   "zip": "32304",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "Jungle Boys",
+   "street": "1719 W Tennessee Street",
+   "city": "Tallahassee",
+   "zip": "32304",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "2711 N Blairstone Road",
+   "city": "Tallahassee",
+   "zip": "32301",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "6808 Thomasville Road",
+   "city": "Tallahassee",
+   "zip": "32312",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "1212 N Monroe Street",
+   "city": "Tallahassee",
+   "zip": "32303",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "Sunburn",
+   "street": "1126 Thomasville Rd",
+   "city": "Tallahassee",
+   "zip": "32303",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "1639 Village Square Boulevard",
+   "city": "Tallahassee",
+   "zip": "32309",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "The Flowery",
+   "street": "1968 W Tennessee Street",
+   "city": "Tallahassee",
+   "zip": "32304",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1800 W Tennessee Street",
+   "city": "Tallahassee",
+   "zip": "32304",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "5138 Thomasville Road",
+   "city": "Tallahassee",
+   "zip": "32312",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "800 Capital Circle SE",
+   "city": "Tallahassee",
+   "zip": "32301",
+   "county": "Leon",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "6899 N University Drive",
+   "city": "Tamarac",
+   "zip": "33321",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "5100 W Commercial Boulevard",
+   "city": "Tamarac",
+   "zip": "33319",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "6580 N University Drive",
+   "city": "Tamarac",
+   "zip": "33319",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "6001 N University Drive",
+   "city": "Tamarac",
+   "zip": "33321",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "5900 Rock Island Road",
+   "city": "Tamarac",
+   "zip": "33319",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "2814 W Martin Luther King Jr. Boulevard",
+   "city": "Tampa",
+   "zip": "33607",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "5502 S Dale Mabry Highway",
+   "city": "Tampa",
+   "zip": "33611",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "1509 E Fletcher Ave",
+   "city": "Tampa",
+   "zip": "33612",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Cookies Florida",
+   "street": "2961 N Dale Mabry Highway",
+   "city": "Tampa",
+   "zip": "33607",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "10612 Sheldon Road",
+   "city": "Tampa",
+   "zip": "33626",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "13755 N Dale Mabry Highway",
+   "city": "Tampa",
+   "zip": "33618",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "3630 W Gandy Boulevard",
+   "city": "Tampa",
+   "zip": "33611",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "612 N Dale Mabry Highway",
+   "city": "Tampa",
+   "zip": "33609",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "6421 N Florida Avenue",
+   "city": "Tampa",
+   "zip": "33604",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Eden Florida, LLC",
+   "street": "10424 N Dale Mabry Highway",
+   "city": "Tampa",
+   "zip": "33618",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Goldflower Cannabis",
+   "street": "141 S Dale Mabry Highway",
+   "city": "Tampa",
+   "zip": "33609",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "12807 W Hillsborough Avenue",
+   "city": "Tampa",
+   "zip": "33635",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "3974 W Linebaugh Avenue",
+   "city": "Tampa",
+   "zip": "33618",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "7218 E Hillsborough Avenue",
+   "city": "Tampa",
+   "zip": "33610",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Insa",
+   "street": "5115 S Dale Mabry Highway",
+   "city": "Tampa",
+   "zip": "33611",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Jungle Boys",
+   "street": "602 N Dale Mabry Highway",
+   "city": "Tampa",
+   "zip": "33609",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "17521 Preserve Walk Lane",
+   "city": "Tampa",
+   "zip": "33647",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "2617 W Kennedy Boulevard",
+   "city": "Tampa",
+   "zip": "33609",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "4820 S Himes Avenue",
+   "city": "Tampa",
+   "zip": "33611",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "7229 N Dale Mabry Highway",
+   "city": "Tampa",
+   "zip": "33614",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "17631 Bruce B Down Boulevard",
+   "city": "Tampa",
+   "zip": "33647",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "2007 W Kennedy Boulevard",
+   "city": "Tampa",
+   "zip": "33606",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "5712 W Waters Avenue",
+   "city": "Tampa",
+   "zip": "33634",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "716 N Dale Mabry Highway",
+   "city": "Tampa",
+   "zip": "33609",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "1902 N Dale Mabry Highway",
+   "city": "Tampa",
+   "zip": "33607",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "2558 E Fowler Avenue",
+   "city": "Tampa",
+   "zip": "33612",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "4306 S Dale Mabry Highway",
+   "city": "Tampa",
+   "zip": "33611",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "The Flowery",
+   "street": "5235 S Dale Mabry Highway",
+   "city": "Tampa",
+   "zip": "33611",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "13829 W Hillsborough Avenue",
+   "city": "Tampa",
+   "zip": "33635",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "2021 W Kennedy Boulevard",
+   "city": "Tampa",
+   "zip": "33606",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "2916 E Busch Boulevard",
+   "city": "Tampa",
+   "zip": "33612",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "3126 W Gandy Boulevard",
+   "city": "Tampa",
+   "zip": "33611",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "319 N Dale Mabry Highway",
+   "city": "Tampa",
+   "zip": "33609",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "4410 W Hillsborough Avenue",
+   "city": "Tampa",
+   "zip": "33614",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "7702 E Hillsborough Avenue",
+   "city": "Tampa",
+   "zip": "33610",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "8602 N Dale Mabry Highway",
+   "city": "Tampa",
+   "zip": "33614",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "8625 Citrus Park Drive",
+   "city": "Tampa",
+   "zip": "33625",
+   "county": "Hillsborough",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "41680 US Hwy 19 N",
+   "city": "Tarpon Springs",
+   "zip": "34689",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "40084 US Hwy 19 N",
+   "city": "Tarpon Springs",
+   "zip": "34689",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "40545 US Hwy 19 N",
+   "city": "Tarpon Springs",
+   "zip": "34689",
+   "county": "Pinellas",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "91216 Overseas Highway",
+   "city": "Tavernier",
+   "zip": "33070",
+   "county": "Monroe",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "19510 US Hwy 1",
+   "city": "Tequesta",
+   "zip": "33469",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "200 S Washington Avenue",
+   "city": "Titusville",
+   "zip": "32796",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "714 Cheney Highway",
+   "city": "Titusville",
+   "zip": "32780",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "4250 S Washington Avenue",
+   "city": "Titusville",
+   "zip": "32780",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "3055 Columbia Boulevard",
+   "city": "Titusville",
+   "zip": "32780",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "4369 S Tamiami Trail",
+   "city": "Venice",
+   "zip": "34293",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "The Flowery",
+   "street": "1763 S Tamiami Trail",
+   "city": "Venice",
+   "zip": "34293",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1260 Jacaranda Boulevard",
+   "city": "Venice",
+   "zip": "34292",
+   "county": "Sarasota",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1814 Commerce Avenue",
+   "city": "Vero Beach",
+   "zip": "32960",
+   "county": "Indian River",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "2495 S State Road 7",
+   "city": "Wellington",
+   "zip": "33414",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "1045 State Road 7",
+   "city": "Wellington",
+   "zip": "33414",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "19416 Bruce B Downs Boulevard",
+   "city": "Wesley Chapel",
+   "zip": "33647",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "28053 Wesley Chapel Boulevard",
+   "city": "Wesley Chapel",
+   "zip": "33543",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "27437 Wesley Chapel Boulevard",
+   "city": "Wesley Chapel",
+   "zip": "33544",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "4450 W New Haven Avenue",
+   "city": "West Melbourne",
+   "zip": "32904",
+   "county": "Brevard",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "1540 Palm Beach Lakes Boulevard",
+   "city": "West Palm Beach",
+   "zip": "33401",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "3540 Northlake Boulevard",
+   "city": "West Palm Beach",
+   "zip": "33403",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "6835 Okeechobee Boulevard",
+   "city": "West Palm Beach",
+   "zip": "33411",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "1695 Forum Place",
+   "city": "West Palm Beach",
+   "zip": "33401",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "GrowHealthy",
+   "street": "4237 Okeechobee Boulevard",
+   "city": "West Palm Beach",
+   "zip": "33409",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "GTI (Rise Dispensaries)",
+   "street": "430 Clematis Street",
+   "city": "West Palm Beach",
+   "zip": "33446",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Jungle Boys",
+   "street": "4561 Okeechobee Boulevard",
+   "city": "West Palm Beach",
+   "zip": "33417",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "2550 Okeechobee Boulevard",
+   "city": "West Palm Beach",
+   "zip": "33409",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "313 Datura Street",
+   "city": "West Palm Beach",
+   "zip": "33401",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "2881 N Military Trail",
+   "city": "West Palm Beach",
+   "zip": "33409",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Planet 13",
+   "street": "770 S Military Trail",
+   "city": "West Palm Beach",
+   "zip": "33415",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "6000 Okeechobee Boulevard",
+   "city": "West Palm Beach",
+   "zip": "33417",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Sanctuary Cannabis",
+   "street": "875 Belvedere Road",
+   "city": "West Palm Beach",
+   "zip": "33405",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Sunburn",
+   "street": "539 Clematis Street",
+   "city": "West Palm Beach",
+   "zip": "33401",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "2710 Okeechobee Boulevard",
+   "city": "West Palm Beach",
+   "zip": "33409",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "2500 S Dixie Highway",
+   "city": "West Palm Beach",
+   "zip": "33401",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "The Flowery",
+   "street": "5613 Okeechobee Boulevard",
+   "city": "West Palm Beach",
+   "zip": "33417",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "1324 N Military Trail",
+   "city": "West Palm Beach",
+   "zip": "33409",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "4139 Okeechobee Boulevard",
+   "city": "West Palm Beach",
+   "zip": "33409",
+   "county": "Palm Beach",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "1985 N Andrews Avenue",
+   "city": "Wilton Manors",
+   "zip": "33311",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "The Flowery",
+   "street": "2010 Wilton Drive",
+   "city": "Wilton Manors",
+   "zip": "33305",
+   "county": "Broward",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "1285 1st Street",
+   "city": "Winter Haven",
+   "zip": "33880",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "6930 Cypress Gardens Boulevard",
+   "city": "Winter Haven",
+   "zip": "33884",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "6900 Cypress Gardens Boulevard",
+   "city": "Winter Haven",
+   "zip": "33881",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "Surterra Wellness",
+   "street": "514 Cypress Gardens Boulevard",
+   "city": "Winter Haven",
+   "zip": "33880",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "6000 Cypress Gardens Boulevard",
+   "city": "Winter Haven",
+   "zip": "33884",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "749 3rd Street NW",
+   "city": "Winter Haven",
+   "zip": "33881",
+   "county": "Polk",
+   "state": "FL"
+  },
+  {
+   "name": "Ayr Cannabis Dispensary",
+   "street": "7390 Aloma Avenue",
+   "city": "Winter Park",
+   "zip": "32792",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "3048 Aloma Avenue",
+   "city": "Winter Park",
+   "zip": "32792",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Sunnyside*",
+   "street": "591 S Semoran Boulevard",
+   "city": "Winter Park",
+   "zip": "32792",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "6840 Aloma Avenue",
+   "city": "Winter Park",
+   "zip": "32792",
+   "county": "Orange",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "1315 Tuskawilla Road",
+   "city": "Winter Springs",
+   "zip": "32708",
+   "county": "Seminole",
+   "state": "FL"
+  },
+  {
+   "name": "Green Dragon",
+   "street": "463721 SR 200 Suite 14A",
+   "city": "Yulee",
+   "zip": "32097",
+   "county": "Nassau",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "463128 State Road 200",
+   "city": "Yulee",
+   "zip": "32097",
+   "county": "Nassau",
+   "state": "FL"
+  },
+  {
+   "name": "MUV",
+   "street": "5230 6th Street",
+   "city": "Zephyrhills",
+   "zip": "33542",
+   "county": "Pasco",
+   "state": "FL"
+  },
+  {
+   "name": "Trulieve",
+   "street": "6601 Gall Boulevard",
+   "city": "Zephyrhills",
+   "zip": "33542",
+   "county": "Pasco",
+   "state": "FL"
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "source_id": "us-ri-ccc-compassion-centers",
+ "jurisdiction": "RI",
+ "topic": "retail-and-medical",
+ "publisher": "Rhode Island Cannabis Control Commission",
+ "title": "Licensed compassion centers",
+ "landing_url": "https://ccc.ri.gov/cannabis-office/compassion-centers/licensed-compassion-centers",
+ "download_url": "https://ccc.ri.gov/cannabis-office/compassion-centers/licensed-compassion-centers",
+ "retrieved_on": "2026-11-23",
+ "sha256": "2db7de092bf1acc7f65bbde5d810504da60a401220e5f0e9c3fb285f42e24d5e",
+ "evidence_level": "regulator-list",
+ "evidence_meaning": "Listed by the state or national regulator's own published list on the date retrieved.",
+ "export_rows": 9,
+ "export_counts": {},
+ "kept_rule": "Every licensed compassion center in the Commission's table.",
+ "kept_rows": 9,
+ "dropped_incomplete_rows": 0,
+ "limitations": "A dated copy of the regulator's list, not a live license verification. Hours and inventory are not copied; confirm with the store.",
+ "rows": [
+  {
+   "name": "Aura of Rhode Island, Inc. F/K/A Pinnacle Compassion Center, Inc.",
+   "address": "1136 Lonsdale Avenue Central Falls, RI 02806",
+   "phone": "(401) 335-5356",
+   "license_number": "MMP CC 005",
+   "state": "RI"
+  },
+  {
+   "name": "Green Wave CC, LLC",
+   "address": "187 Danielson Pike, Foster RI 02825",
+   "phone": "(774) 203-8551",
+   "license_number": "MMP CC 008",
+   "state": "RI"
+  },
+  {
+   "name": "Mother Earth Wellness Inc.",
+   "address": "125 Esten Avenue Pawtucket, RI 02860",
+   "phone": "(401) 352-4300",
+   "license_number": "MMP CC 006",
+   "state": "RI"
+  },
+  {
+   "name": "New Leaf Compassion Center, Inc.D/B/A Reef Wellness",
+   "address": "2000 Diamond Hill Road Woonsocket, RI 02895",
+   "phone": "(401) 522-3044",
+   "license_number": "MMP CC 009",
+   "state": "RI"
+  },
+  {
+   "name": "Ocean State Controlled Botanicals DBA Newport Cannabis Co.",
+   "address": "1637 West Main Road, Portsmouth, RI 02871",
+   "phone": "(401) 293-5987",
+   "license_number": "MMP CC 002",
+   "state": "RI"
+  },
+  {
+   "name": "Plant Based Compassionate Care D/B/A Sweetspot Dispensary",
+   "address": "560 South County Trail, Bldg. B Exeter, RI 02822",
+   "phone": "(401) 271-3869",
+   "license_number": "MMP CC 004",
+   "state": "RI"
+  },
+  {
+   "name": "Solar Therapeutics Rhode Island D/B/A Solar Cannabis Co.",
+   "address": "65 Meadow Street, Unit A Warwick, RI 02886",
+   "phone": "(401) 642-1919",
+   "license_number": "MMP CC 007",
+   "state": "RI"
+  },
+  {
+   "name": "Summit Medical Compassion Center D/B/A RISE Warwick",
+   "address": "444 Quaker Lane, Warwick, RI 02886",
+   "phone": "(401) 889-3990",
+   "license_number": "MMP CC 003",
+   "state": "RI"
+  },
+  {
+   "name": "Thomas C. Slater Compassion Center",
+   "address": "1 Corliss Street Providence, RI 02904",
+   "phone": "(401) 274-1000",
+   "license_number": "MMP CC 001",
+   "state": "RI"
+  }
+ ]
+}

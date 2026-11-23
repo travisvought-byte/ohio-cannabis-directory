@@ -10,7 +10,9 @@
    "store_list_from": null,
    "store_list_age_days": null,
    "law_answers": "9/10",
-   "registry": {},
+   "registry": {
+    "queued": 1
+   },
    "last_fetch": {},
    "gaps": [
     "no store list",
@@ -27,7 +29,9 @@
    "store_list_from": null,
    "store_list_age_days": null,
    "law_answers": "5/10",
-   "registry": {},
+   "registry": {
+    "queued": 1
+   },
    "last_fetch": {},
    "gaps": [
     "no store list",
@@ -44,7 +48,9 @@
    "store_list_from": null,
    "store_list_age_days": null,
    "law_answers": "10/10",
-   "registry": {},
+   "registry": {
+    "queued": 1
+   },
    "last_fetch": {},
    "gaps": [
     "no store list",
@@ -60,7 +66,9 @@
    "store_list_from": null,
    "store_list_age_days": null,
    "law_answers": "4/10",
-   "registry": {},
+   "registry": {
+    "queued": 1
+   },
    "last_fetch": {},
    "gaps": [
     "no store list",
@@ -78,7 +86,7 @@
    "store_list_age_days": null,
    "law_answers": "10/10",
    "registry": {
-    "queued": 6
+    "queued": 7
    },
    "last_fetch": {},
    "gaps": [
@@ -95,23 +103,9 @@
    "store_list_from": null,
    "store_list_age_days": null,
    "law_answers": "10/10",
-   "registry": {},
-   "last_fetch": {},
-   "gaps": [
-    "no store list",
-    "no full state guide (business, records, community)"
-   ],
-   "priority": 12
-  },
-  {
-   "code": "CT",
-   "name": "Connecticut",
-   "market": "allowed",
-   "stores": 0,
-   "store_list_from": null,
-   "store_list_age_days": null,
-   "law_answers": "10/10",
-   "registry": {},
+   "registry": {
+    "queued": 1
+   },
    "last_fetch": {},
    "gaps": [
     "no store list",
@@ -128,7 +122,7 @@
    "store_list_age_days": null,
    "law_answers": "10/10",
    "registry": {
-    "queued": 1
+    "queued": 2
    },
    "last_fetch": {},
    "gaps": [
@@ -154,39 +148,6 @@
    "priority": 12
   },
   {
-   "code": "FL",
-   "name": "Florida",
-   "market": "medical-only",
-   "stores": 0,
-   "store_list_from": null,
-   "store_list_age_days": null,
-   "law_answers": "6/10",
-   "registry": {},
-   "last_fetch": {},
-   "gaps": [
-    "no store list",
-    "4 law questions unanswered",
-    "no full state guide (business, records, community)"
-   ],
-   "priority": 12
-  },
-  {
-   "code": "IL",
-   "name": "Illinois",
-   "market": "allowed",
-   "stores": 0,
-   "store_list_from": null,
-   "store_list_age_days": null,
-   "law_answers": "10/10",
-   "registry": {},
-   "last_fetch": {},
-   "gaps": [
-    "no store list",
-    "no full state guide (business, records, community)"
-   ],
-   "priority": 12
-  },
-  {
    "code": "ME",
    "name": "Maine",
    "market": "allowed",
@@ -194,40 +155,12 @@
    "store_list_from": null,
    "store_list_age_days": null,
    "law_answers": "10/10",
-   "registry": {},
-   "last_fetch": {},
-   "gaps": [
-    "no store list",
-    "no full state guide (business, records, community)"
-   ],
-   "priority": 12
-  },
-  {
-   "code": "MD",
-   "name": "Maryland",
-   "market": "allowed",
-   "stores": 0,
-   "store_list_from": null,
-   "store_list_age_days": null,
-   "law_answers": "10/10",
-   "registry": {},
-   "last_fetch": {},
-   "gaps": [
-    "no store list",
-    "no full state guide (business, records, community)"
-   ],
-   "priority": 12
-  },
-  {
-   "code": "MA",
-   "name": "Massachusetts",
-   "market": "allowed",
-   "stores": 0,
-   "store_list_from": null,
-   "store_list_age_days": null,
-   "law_answers": "10/10",
-   "registry": {},
-   "last_fetch": {},
+   "registry": {
+    "blocked": 1
+   },
+   "last_fetch": {
+    "us-me-ocp-adult-use": "not run"
+   },
    "gaps": [
     "no store list",
     "no full state guide (business, records, community)"
@@ -242,7 +175,9 @@
    "store_list_from": null,
    "store_list_age_days": null,
    "law_answers": "10/10",
-   "registry": {},
+   "registry": {
+    "queued": 1
+   },
    "last_fetch": {},
    "gaps": [
     "no store list",
@@ -258,8 +193,12 @@
    "store_list_from": null,
    "store_list_age_days": null,
    "law_answers": "10/10",
-   "registry": {},
-   "last_fetch": {},
+   "registry": {
+    "blocked": 1
+   },
+   "last_fetch": {
+    "us-mn-ocm-licensees": "not run"
+   },
    "gaps": [
     "no store list",
     "no full state guide (business, records, community)"
@@ -274,27 +213,13 @@
    "store_list_from": null,
    "store_list_age_days": null,
    "law_answers": "6/10",
-   "registry": {},
+   "registry": {
+    "queued": 1
+   },
    "last_fetch": {},
    "gaps": [
     "no store list",
     "4 law questions unanswered",
-    "no full state guide (business, records, community)"
-   ],
-   "priority": 12
-  },
-  {
-   "code": "MO",
-   "name": "Missouri",
-   "market": "allowed",
-   "stores": 0,
-   "store_list_from": null,
-   "store_list_age_days": null,
-   "law_answers": "10/10",
-   "registry": {},
-   "last_fetch": {},
-   "gaps": [
-    "no store list",
     "no full state guide (business, records, community)"
    ],
    "priority": 12
@@ -308,7 +233,7 @@
    "store_list_age_days": null,
    "law_answers": "10/10",
    "registry": {
-    "queued": 1
+    "queued": 2
    },
    "last_fetch": {},
    "gaps": [
@@ -335,22 +260,6 @@
    "priority": 12
   },
   {
-   "code": "NV",
-   "name": "Nevada",
-   "market": "allowed",
-   "stores": 0,
-   "store_list_from": null,
-   "store_list_age_days": null,
-   "law_answers": "10/10",
-   "registry": {},
-   "last_fetch": {},
-   "gaps": [
-    "no store list",
-    "no full state guide (business, records, community)"
-   ],
-   "priority": 12
-  },
-  {
    "code": "NJ",
    "name": "New Jersey",
    "market": "allowed",
@@ -358,7 +267,9 @@
    "store_list_from": null,
    "store_list_age_days": null,
    "law_answers": "10/10",
-   "registry": {},
+   "registry": {
+    "queued": 1
+   },
    "last_fetch": {},
    "gaps": [
     "no store list",
@@ -374,39 +285,9 @@
    "store_list_from": null,
    "store_list_age_days": null,
    "law_answers": "10/10",
-   "registry": {},
-   "last_fetch": {},
-   "gaps": [
-    "no store list",
-    "no full state guide (business, records, community)"
-   ],
-   "priority": 12
-  },
-  {
-   "code": "OR",
-   "name": "Oregon",
-   "market": "allowed",
-   "stores": 0,
-   "store_list_from": null,
-   "store_list_age_days": null,
-   "law_answers": "10/10",
-   "registry": {},
-   "last_fetch": {},
-   "gaps": [
-    "no store list",
-    "no full state guide (business, records, community)"
-   ],
-   "priority": 12
-  },
-  {
-   "code": "RI",
-   "name": "Rhode Island",
-   "market": "allowed",
-   "stores": 0,
-   "store_list_from": null,
-   "store_list_age_days": null,
-   "law_answers": "10/10",
-   "registry": {},
+   "registry": {
+    "queued": 1
+   },
    "last_fetch": {},
    "gaps": [
     "no store list",
@@ -422,7 +303,9 @@
    "store_list_from": null,
    "store_list_age_days": null,
    "law_answers": "4/10",
-   "registry": {},
+   "registry": {
+    "queued": 1
+   },
    "last_fetch": {},
    "gaps": [
     "no store list",
@@ -439,7 +322,9 @@
    "store_list_from": null,
    "store_list_age_days": null,
    "law_answers": "10/10",
-   "registry": {},
+   "registry": {
+    "queued": 1
+   },
    "last_fetch": {},
    "gaps": [
     "no store list",
@@ -455,7 +340,9 @@
    "store_list_from": null,
    "store_list_age_days": null,
    "law_answers": "10/10",
-   "registry": {},
+   "registry": {
+    "queued": 1
+   },
    "last_fetch": {},
    "gaps": [
     "no store list",
@@ -471,7 +358,9 @@
    "store_list_from": null,
    "store_list_age_days": null,
    "law_answers": "10/10",
-   "registry": {},
+   "registry": {
+    "queued": 1
+   },
    "last_fetch": {},
    "gaps": [
     "no store list",
@@ -487,7 +376,9 @@
    "store_list_from": null,
    "store_list_age_days": null,
    "law_answers": "8/10",
-   "registry": {},
+   "registry": {
+    "queued": 1
+   },
    "last_fetch": {},
    "gaps": [
     "no store list",
@@ -504,7 +395,9 @@
    "store_list_from": null,
    "store_list_age_days": null,
    "law_answers": "8/10",
-   "registry": {},
+   "registry": {
+    "queued": 1
+   },
    "last_fetch": {},
    "gaps": [
     "no store list",
@@ -512,6 +405,26 @@
     "no full state guide (business, records, community)"
    ],
    "priority": 10
+  },
+  {
+   "code": "FL",
+   "name": "Florida",
+   "market": "medical-only",
+   "stores": 795,
+   "store_list_from": "source pipeline",
+   "store_list_age_days": 0,
+   "law_answers": "6/10",
+   "registry": {
+    "active": 1
+   },
+   "last_fetch": {
+    "us-fl-ommu-dispensing-locations": "ok"
+   },
+   "gaps": [
+    "4 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 6
   },
   {
    "code": "LA",
@@ -623,6 +536,159 @@
     "no full state guide (business, records, community)"
    ],
    "priority": 4
+  },
+  {
+   "code": "CT",
+   "name": "Connecticut",
+   "market": "allowed",
+   "stores": 76,
+   "store_list_from": "source pipeline",
+   "store_list_age_days": 0,
+   "law_answers": "10/10",
+   "registry": {
+    "active": 1
+   },
+   "last_fetch": {
+    "us-ct-dcp-retail-locations": "ok"
+   },
+   "gaps": [
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 3
+  },
+  {
+   "code": "IL",
+   "name": "Illinois",
+   "market": "allowed",
+   "stores": 289,
+   "store_list_from": "source pipeline",
+   "store_list_age_days": 0,
+   "law_answers": "10/10",
+   "registry": {
+    "active": 1
+   },
+   "last_fetch": {
+    "us-il-idfpr-dispensary-map": "ok"
+   },
+   "gaps": [
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 3
+  },
+  {
+   "code": "MD",
+   "name": "Maryland",
+   "market": "allowed",
+   "stores": 129,
+   "store_list_from": "source pipeline",
+   "store_list_age_days": 0,
+   "law_answers": "10/10",
+   "registry": {
+    "active": 1
+   },
+   "last_fetch": {
+    "us-md-mca-dispensaries": "ok"
+   },
+   "gaps": [
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 3
+  },
+  {
+   "code": "MA",
+   "name": "Massachusetts",
+   "market": "allowed",
+   "stores": 406,
+   "store_list_from": "source pipeline",
+   "store_list_age_days": 0,
+   "law_answers": "10/10",
+   "registry": {
+    "active": 1,
+    "queued": 1
+   },
+   "last_fetch": {
+    "us-ma-ccc-retailers": "ok"
+   },
+   "gaps": [
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 3
+  },
+  {
+   "code": "MO",
+   "name": "Missouri",
+   "market": "allowed",
+   "stores": 228,
+   "store_list_from": "source pipeline",
+   "store_list_age_days": 0,
+   "law_answers": "10/10",
+   "registry": {
+    "active": 1
+   },
+   "last_fetch": {
+    "us-mo-dcr-dispensaries": "ok"
+   },
+   "gaps": [
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 3
+  },
+  {
+   "code": "NV",
+   "name": "Nevada",
+   "market": "allowed",
+   "stores": 109,
+   "store_list_from": "source pipeline",
+   "store_list_age_days": 0,
+   "law_answers": "10/10",
+   "registry": {
+    "active": 1
+   },
+   "last_fetch": {
+    "us-nv-ccb-retail-stores": "ok"
+   },
+   "gaps": [
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 3
+  },
+  {
+   "code": "OR",
+   "name": "Oregon",
+   "market": "allowed",
+   "stores": 748,
+   "store_list_from": "source pipeline",
+   "store_list_age_days": 0,
+   "law_answers": "10/10",
+   "registry": {
+    "active": 1
+   },
+   "last_fetch": {
+    "us-or-olcc-retailers": "ok"
+   },
+   "gaps": [
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 3
+  },
+  {
+   "code": "RI",
+   "name": "Rhode Island",
+   "market": "allowed",
+   "stores": 9,
+   "store_list_from": "source pipeline",
+   "store_list_age_days": 0,
+   "law_answers": "10/10",
+   "registry": {
+    "active": 1
+   },
+   "last_fetch": {
+    "us-ri-ccc-compassion-centers": "ok"
+   },
+   "gaps": [
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 3
   },
   {
    "code": "GA",
@@ -1965,6 +2031,153 @@
    "status": "queued",
    "why": "Currently sourced from news reports; a regulator list of licensed sellers should replace them.",
    "landing_url": "https://www.dtam.moph.go.th/"
+  },
+  {
+   "id": "us-mn-ocm-licensees",
+   "jurisdiction": "MN",
+   "status": "blocked",
+   "why": "The state site turned GitHub's runner away (bot check) on Nov 23; a person can download the file and run normalize.",
+   "landing_url": "https://mn.gov/ocm/data-reports/application-data/"
+  },
+  {
+   "id": "us-mi-cra-adult-use",
+   "jurisdiction": "MI",
+   "status": "queued",
+   "why": "Roster is only downloadable through a search form (Accela); not scripted. A person can download it and run normalize.",
+   "landing_url": "https://michigan.gov/cra/verify-a-license-1"
+  },
+  {
+   "id": "us-ok-omma-dispensaries",
+   "jurisdiction": "OK",
+   "status": "queued",
+   "why": "OMMA removed its downloadable business lists; only a one-at-a-time lookup portal remains.",
+   "landing_url": "https://oklahoma.gov/omma/businesses/lists-of-licensed-businesses.html"
+  },
+  {
+   "id": "us-ar-mmc-dispensaries",
+   "jurisdiction": "AR",
+   "status": "queued",
+   "why": "Only a 2020 PDF is published; too old to list without a newer regulator copy.",
+   "landing_url": "https://www.dfa.arkansas.gov/office/medical-marijuana-commission/"
+  },
+  {
+   "id": "us-sd-doh-dispensaries",
+   "jurisdiction": "SD",
+   "status": "queued",
+   "why": "Published with city only, no street address; needs a second source for addresses.",
+   "landing_url": "https://doh.sd.gov/programs/medical-cannabis/med-cannabis-establishments/establishments-list/"
+  },
+  {
+   "id": "us-al-amcc-dispensaries",
+   "jurisdiction": "AL",
+   "status": "queued",
+   "why": "Five open locations announced as prose; small enough to hand-copy next.",
+   "landing_url": "https://amcc.alabama.gov/patients/"
+  },
+  {
+   "id": "us-ms-mmcp-dispensaries",
+   "jurisdiction": "MS",
+   "status": "queued",
+   "why": "Search page loads results by script; no list or export published.",
+   "landing_url": "https://www.mmcp.ms.gov/search_business"
+  },
+  {
+   "id": "us-ma-ccc-treatment-centers",
+   "jurisdiction": "MA",
+   "status": "queued",
+   "why": "Columns not yet mapped; add after the first probe.",
+   "landing_url": "https://masscannabiscontrol.com/open-data/data-catalog/"
+  },
+  {
+   "id": "us-me-ocp-adult-use",
+   "jurisdiction": "ME",
+   "status": "blocked",
+   "why": "The state site answered 403 to GitHub's runner on Nov 23; a person can download the file and run normalize.",
+   "landing_url": "https://www.maine.gov/dafs/ocp/open-data/adult-use/licensee-search"
+  },
+  {
+   "id": "us-va-cca-dispensaries",
+   "jurisdiction": "VA",
+   "status": "queued",
+   "why": "25 locations as page text, not a table; needs a small page parser.",
+   "landing_url": "https://cca.virginia.gov/medicalcannabis/dispensaries"
+  },
+  {
+   "id": "us-nj-crc-permitted",
+   "jurisdiction": "NJ",
+   "status": "queued",
+   "why": "Names and towns only, no street addresses; the dispensary map is a third-party embed.",
+   "landing_url": "https://www.nj.gov/cannabis/businesses/permitted"
+  },
+  {
+   "id": "us-de-omc-dispensaries",
+   "jurisdiction": "DE",
+   "status": "queued",
+   "why": "14 addresses as page text; small enough to hand-copy next.",
+   "landing_url": "https://omc.delaware.gov/dispensaries"
+  },
+  {
+   "id": "us-vt-ccb-licenses",
+   "jurisdiction": "VT",
+   "status": "queued",
+   "why": "Town only, no street address; table may be incomplete.",
+   "landing_url": "https://ccb.vermont.gov/licenses"
+  },
+  {
+   "id": "us-hi-doh-dispensaries",
+   "jurisdiction": "HI",
+   "status": "queued",
+   "why": "Licensee websites by county, no store addresses.",
+   "landing_url": "https://health.hawaii.gov/medicalcannabisdispensary/dispensary-websites-and-locations/"
+  },
+  {
+   "id": "us-wa-lcb-licensees",
+   "jurisdiction": "WA",
+   "status": "queued",
+   "why": "Held for the owner: the page says lists obtained under the Public Records Act may not be used for commercial purposes (RCW 42.56.070(8)).",
+   "landing_url": "https://lcb.wa.gov/records/frequently-requested-lists"
+  },
+  {
+   "id": "us-ca-dcc-retailers",
+   "jurisdiction": "CA",
+   "status": "queued",
+   "why": "No public download; the official bulk API needs a free account and key (owner decision). The search app's backend is undocumented.",
+   "landing_url": "https://cannabis.ca.gov/resources/search-for-licensed-business"
+  },
+  {
+   "id": "us-co-med-stores",
+   "jurisdiction": "CO",
+   "status": "queued",
+   "why": "Monthly lists are linked spreadsheets whose addresses could not be confirmed; next to script.",
+   "landing_url": "https://med.colorado.gov/licensee-information-and-lookup-tool/licensed-facilities"
+  },
+  {
+   "id": "us-mt-dor-dispensaries",
+   "jurisdiction": "MT",
+   "status": "queued",
+   "why": "Names, towns and phones only; no street addresses.",
+   "landing_url": "https://revenue.mt.gov/card/cannabis/cannabis-licenses/lists/dispensary-locations"
+  },
+  {
+   "id": "us-ak-amco-retail",
+   "jurisdiction": "AK",
+   "status": "queued",
+   "why": "Search form only; no list with addresses.",
+   "landing_url": "https://www.commerce.alaska.gov/abc/marijuana/Home/licensesearch"
+  },
+  {
+   "id": "us-az-adhs-establishments",
+   "jurisdiction": "AZ",
+   "status": "queued",
+   "why": "Search portal only; the PDF list dates from 2021.",
+   "landing_url": "https://azcarecheck.azdhs.gov/"
+  },
+  {
+   "id": "us-nm-ccd-retailers",
+   "jurisdiction": "NM",
+   "status": "queued",
+   "why": "Pages load data by script; no list or export published.",
+   "landing_url": "https://crop.rld.nm.gov/dispensaries.html"
   }
  ]
 }

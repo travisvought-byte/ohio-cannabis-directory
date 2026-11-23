@@ -1,0 +1,789 @@
+{
+ "source_id": "us-nv-ccb-retail-stores",
+ "jurisdiction": "NV",
+ "topic": "retail-and-medical",
+ "publisher": "Nevada Cannabis Compliance Board",
+ "title": "List of licensees: retail stores",
+ "landing_url": "https://ccb.nv.gov/list-of-licensees/",
+ "download_url": "https://ccb.nv.gov/list-of-licensees/",
+ "retrieved_on": "2026-11-23",
+ "sha256": "0fcdc5d8e21274cae2e4b0c101441ae4b0e674c705f0a61e8883389e5ce34399",
+ "evidence_level": "regulator-list",
+ "evidence_meaning": "Listed by the state or national regulator's own published list on the date retrieved.",
+ "export_rows": 109,
+ "export_counts": {
+  "Delivery Option": {
+   "Y": 82,
+   "N": 27
+  }
+ },
+ "kept_rule": "Rows of the Board's Southern and Northern Nevada retail store tables (consumption lounges left out).",
+ "kept_rows": 109,
+ "dropped_incomplete_rows": 0,
+ "limitations": "The Board's list gives a street address but no city or ZIP. A dated copy, not a live license verification.",
+ "rows": [
+  {
+   "name": "Battle Born Dispensary",
+   "street": "10115 US Highway 50",
+   "license_number": "45333337224974981554",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Beyond/hello",
+   "street": "430 E Twain Ave",
+   "license_number": "54588636135598286871",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Beyond/hello",
+   "street": "7885 W Sahara Ave, Suite 111-112",
+   "license_number": "56859471821919325427",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Beyond/hello",
+   "street": "877 Tahoe Blvd",
+   "license_number": "77903356343424586888",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Canna Starz",
+   "street": "631 S Las Vegas Blvd",
+   "license_number": "00170400460138702033",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Cookies Las Vegas",
+   "street": "4240 W Flamingo Rd, Suite 100",
+   "license_number": "01359449685112111637",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Cultivate",
+   "street": "3615 Spring Mountain Rd",
+   "license_number": "01653343486142530020",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Cultivate",
+   "street": "7105 N Durango Dr, Suite 120",
+   "license_number": "58417803212814915538",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "1370 W Cheyenne Ave, Suite 1",
+   "license_number": "21012999822242883351",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "1736 S Las Vegas Blvd",
+   "license_number": "50748233769645953480",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "195 E Glendale Ave, Suite 3",
+   "license_number": "31882641465304506399",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "2320 Western Ave",
+   "license_number": "11058209030610809158",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "3400 Western Ave",
+   "license_number": "56426800972005264608",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Curaleaf",
+   "street": "5105 Sun Valley Blvd, Bldg B",
+   "license_number": "14864731709040080608",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Deep Roots Harvest Inc",
+   "street": "1306 W Craig Rd, Suite A",
+   "license_number": "89468956878290453653",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Deep Roots Harvest Inc",
+   "street": "195 Willis Carrier Canyon",
+   "license_number": "44613767467345472019",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Deep Roots Harvest Inc",
+   "street": "3725 Blue Diamond Rd",
+   "license_number": "33067718465021979566",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Deep Roots Harvest Inc",
+   "street": "395 Industrial Way",
+   "license_number": "28778114311315160635",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Deep Roots Harvest Inc",
+   "street": "580 Parkson Rd",
+   "license_number": "06085399432340594372",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Deep Roots Harvest Inc",
+   "street": "5991 W Cheyenne Ave",
+   "license_number": "25343951714103210330",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Euphoria Wellness",
+   "street": "7780 S Jones Blvd, Suite 105",
+   "license_number": "84716656554039635124",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Green Cross Farmacy",
+   "street": "510 W Williams Ave",
+   "license_number": "10899841596112495650",
+   "license_type": "Medical Only",
+   "state": "NV"
+  },
+  {
+   "name": "Green.",
+   "street": "101 S Rainbow Blvd, Suite 1-5",
+   "license_number": "67664169559680064201",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Green.",
+   "street": "10420 S Eastern Ave, Suite 100",
+   "license_number": "55363208938053798722",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Green.",
+   "street": "4510 S Hualapai Way",
+   "license_number": "48573289589249273073",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Green.",
+   "street": "5530 N Decatur Blvd",
+   "license_number": "83760475147127946601",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Greenleaf Wellness",
+   "street": "1730 Glendale Ave",
+   "license_number": "81154974231636348055",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Greenlight Dispensary",
+   "street": "2244 Paradise Rd",
+   "license_number": "54283805068313943868",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Greenlight Dispensary",
+   "street": "823 S 3rd St",
+   "license_number": "67501179020484699802",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Greenlight Dispensary",
+   "street": "940 E Aultman St",
+   "license_number": "99035327095322531323",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "High Sierra Holistics LLC",
+   "street": "5270 Longley Ln",
+   "license_number": "88066209745143423581",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Inyo Fine Cannabis Dispensary Corp",
+   "street": "2520 S Maryland Parkway, Suite 2",
+   "license_number": "24344359150856320396",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Jade Cannabis co",
+   "street": "1130 E Desert Inn Rd",
+   "license_number": "90401540947579963618",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Jade Cannabis co",
+   "street": "6050 Sky Pointe Ave, Suite 150",
+   "license_number": "63179017136792237088",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Jade Cannabis Co.",
+   "street": "1085 S Virginia St",
+   "license_number": "01696915226901375362",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Jardin",
+   "street": "2900 E Desert Inn Rd, Suite 102",
+   "license_number": "15398675340409721326",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Kanna",
+   "street": "5398 Sun Valley Blvd",
+   "license_number": "61179392211013199930",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Lucid Management LLC",
+   "street": "3555 Construction Way",
+   "license_number": "35921128494419615677",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Medizin",
+   "street": "4850 W Sunset Rd, Suite 130",
+   "license_number": "76170147149504770817",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Mint Cannabis",
+   "street": "4503 Paradise Rd",
+   "license_number": "04045523128584413069",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Mint Cannabis",
+   "street": "6332 S Rainbow Blvd, Suite 105",
+   "license_number": "47182081583508846760",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Nevada Made Marijuana",
+   "street": "1675 E Cactus Ave",
+   "license_number": "78183023264727429508",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Nevada Made Marijuana",
+   "street": "3915 E Charleston Blvd",
+   "license_number": "75203668337906025844",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Nevada Made Marijuana",
+   "street": "7650 W Charleston Blvd",
+   "license_number": "07716430045859597948",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Nevada Made Marijuana",
+   "street": "95 E Warm Springs Rd",
+   "license_number": "27764211258972498624",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Nevada Wellness Center",
+   "street": "3200 S Valley View Blvd",
+   "license_number": "93968461789695028039",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Nwc West",
+   "street": "9030 W Flamingo Rd, Suite 180",
+   "license_number": "57228409765781650784",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Oasis Medical Cannabis",
+   "street": "1800 Industrial Rd, Suite 180",
+   "license_number": "55910347793434478299",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Pisos",
+   "street": "4110 S Maryland Parkway, Suite 1",
+   "license_number": "43766627397168972639",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Planet 13",
+   "street": "2548 W Desert Inn Rd",
+   "license_number": "62474301567586344896",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Pure Tonic Concentrates LLC",
+   "street": "420 USA Parkway",
+   "license_number": "24170469501580671157",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Rise",
+   "street": "1000 S Boulder Hwy",
+   "license_number": "43490264137335866974",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Rise",
+   "street": "135 Clearview Dr, Unit 119",
+   "license_number": "97028286992913304766",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Rise",
+   "street": "1530 S Stanford Way Unit 102",
+   "license_number": "48470950795921214873",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Rise",
+   "street": "2307 S Las Vegas Blvd",
+   "license_number": "06347213896566425206",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Rise",
+   "street": "2881 Northtowne Ln",
+   "license_number": "26849340152215972256",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Rise",
+   "street": "3930 W Craig Rd, Suite 101-104",
+   "license_number": "18482416987753786163",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Rise",
+   "street": "4300 E Sunset Rd, Suite A2-A3",
+   "license_number": "19873661470522818141",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Rise",
+   "street": "5765 W Tropicana Ave",
+   "license_number": "54135769938859220718",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Rise",
+   "street": "6410 S Durango Dr",
+   "license_number": "09271842370730937488",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Rise",
+   "street": "7260 S Rainbow Blvd, Suite 104",
+   "license_number": "15464995890053145809",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Rise",
+   "street": "871 N Nellis Blvd, Suite 9",
+   "license_number": "48202177934598005793",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Rise Carson City",
+   "street": "US HWY 50 – 3060 U.S. Highway 50",
+   "license_number": "34299986630191194451",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "RISE Spanish Springs",
+   "street": "9650 Pyramid Way",
+   "license_number": "52125541619394980552",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Sahara Wellness",
+   "street": "420 E Sahara Ave",
+   "license_number": "25729455103203031356",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Showgrow",
+   "street": "4850 S Fort Apache Rd, Suite 100",
+   "license_number": "21647298952036123142",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Silver Sage Wellness LLC",
+   "street": "4626 W Charleston Blvd",
+   "license_number": "48309202150183437033",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Silver State Relief",
+   "street": "12240 Old Virginia Rd",
+   "license_number": "52453211787476290375",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Silver State Relief",
+   "street": "1301 Financial Way",
+   "license_number": "71064968398758187793",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Silver State Relief",
+   "street": "175 E Greg St",
+   "license_number": "11443721033142554219",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Slv Dispensary",
+   "street": "4380 S Boulder Hwy",
+   "license_number": "67391843247886555156",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Sol Cannabis",
+   "street": "275 US Highway 395 S",
+   "license_number": "02411041046250902247",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Stash Fine Cannabis",
+   "street": "1164 U.S. Highway 95",
+   "license_number": "43755076185517777908",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "The Cannabis Co.",
+   "street": "200 E Charleston Blvd",
+   "license_number": "11679863451946958412",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "The Dispensary",
+   "street": "100 W Plumb Ln",
+   "license_number": "71702389611437559364",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "The Dispensary",
+   "street": "132 E 2nd St",
+   "license_number": "46934338604709544132",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "The Dispensary",
+   "street": "340 Lemmon Dr, Suite A",
+   "license_number": "13244303247046007918",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "The Dispensary",
+   "street": "50 N Gibson Rd, Suite 170 & 175",
+   "license_number": "08792343110299625005",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "The Dispensary",
+   "street": "5347 S Decatur Blvd",
+   "license_number": "71224329369156133247",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "The Dispensary",
+   "street": "8605 S Eastern Ave",
+   "license_number": "64345737726226352455",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "The Gold Leaf",
+   "street": "3302 Traders Way",
+   "license_number": "41491863218758323982",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "The Grove",
+   "street": "1541 E Basin Ave",
+   "license_number": "96822610504919713285",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "The Grove",
+   "street": "4647 University Center Dr",
+   "license_number": "19619496668049413129",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "The Sanctuary Dispensaries",
+   "street": "1324 S 3rd St",
+   "license_number": "33333930069916107890",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "The Sanctuary Dispensaries",
+   "street": "2113 N Las Vegas Blvd",
+   "license_number": "42964757214640794936",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "The Source",
+   "street": "2370 & 2380 Homestead Rd",
+   "license_number": "43388435085849646312",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "The Source",
+   "street": "2550 S Rainbow Blvd",
+   "license_number": "51266222807288437193",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "The Source",
+   "street": "420 E Deer Springs Way, Suite 100",
+   "license_number": "13932286413907255774",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "The Source",
+   "street": "450 N Water St",
+   "license_number": "41608878118736307569",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "The Source",
+   "street": "9480 S Eastern Ave, Suite 185 & 190",
+   "license_number": "59287610826909824091",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "The Spot",
+   "street": "4310 W Flamingo Rd",
+   "license_number": "28476312257204037070",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "The Treehouse Vegas",
+   "street": "4660 S Decatur Blvd",
+   "license_number": "54535922714915823296",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Thrive Cannabis Marketplace",
+   "street": "1317 S Main St",
+   "license_number": "30384137740970358778",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Thrive Cannabis Marketplace",
+   "street": "1868 Royal Dr",
+   "license_number": "04054268305722414317",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Thrive Cannabis Marketplace",
+   "street": "2755 W Cheyenne Ave",
+   "license_number": "44593280192084310982",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Thrive Cannabis Marketplace",
+   "street": "2975 Sammy Davis Jr Dr",
+   "license_number": "40050104995800309174",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Thrive Cannabis Marketplace",
+   "street": "3500 W Sahara Ave",
+   "license_number": "77505483208802721121",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Thrive Cannabis Marketplace",
+   "street": "3698 W Cactus Ave, Suite 107-109",
+   "license_number": "14194022211467850983",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Thrive Cannabis Marketplace",
+   "street": "7300 S Virginia St, Suite B",
+   "license_number": "85577035657658637557",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Top Notch the Health Center",
+   "street": "5630 Stephanie St",
+   "license_number": "76816813303097791333",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Tree of Life Dispensary Lv",
+   "street": "1437 N Jones Blvd",
+   "license_number": "60232754740405315836",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Tree of Life Nv",
+   "street": "150 E Centennial Parkway, Suite 114",
+   "license_number": "59173856084611315340",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Wallflower Cannabis House",
+   "street": "3485 Volunteer Blvd",
+   "license_number": "65945966941949057205",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Wallflower Cannabis House",
+   "street": "6540 Blue Diamond Rd",
+   "license_number": "23003643426806888206",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Zen Leaf",
+   "street": "1605 E 2nd St, Suite 103",
+   "license_number": "34243875109059614286",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Zen Leaf",
+   "street": "2765 US Highway 50 E, Suite A",
+   "license_number": "08487688474890863372",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Zen Leaf",
+   "street": "5335 S Fort Apache Rd",
+   "license_number": "10340862547948454764",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Zen Leaf",
+   "street": "5940 W Flamingo Rd",
+   "license_number": "72379193611776921142",
+   "license_type": "Adult Use",
+   "state": "NV"
+  },
+  {
+   "name": "Zen Leaf North Las Vegas",
+   "street": "4444 Craig Rd",
+   "license_number": "44563284956259379216",
+   "license_type": "Adult Use",
+   "state": "NV"
+  }
+ ]
+}
