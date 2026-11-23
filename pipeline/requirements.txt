@@ -1,0 +1,4 @@
+# Extra packages the source pipeline needs on top of the repository's requirements.txt
+openpyxl==3.1.5
+pdfplumber==0.11.4
+lxml==5.3.0

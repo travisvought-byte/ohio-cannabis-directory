@@ -258,16 +258,33 @@ def load_medical():
     return data, {p['state']: p for p in data['states']}
 
 
+# States with their own full guide keep their own store finder; the pipeline list is not shown there.
+OWN_STORE_FINDER = {'OH', 'PA', 'NY'}
+
+
 def load_dispensaries():
-    """Regulator-published dispensary lists (data/medical-dispensaries.json), keyed by state code."""
+    """Regulator-published store lists, keyed by state code.
+
+    data/medical-dispensaries.json holds hand-copied lists for medical-only states;
+    data/state-retail-locations.json is written by the source pipeline (pipeline/) from each
+    regulator's own list. Where both cover a state, the pipeline copy is used.
+    """
     data = json.loads((ROOT / 'data/medical-dispensaries.json').read_text(encoding='utf-8'))
-    return data, {s['state']: s for s in data['states']}
+    by_state = {s['state']: s for s in data['states']}
+    mined = ROOT / 'data/state-retail-locations.json'
+    if mined.exists():
+        for s in json.loads(mined.read_text(encoding='utf-8'))['states']:
+            if s['state'] not in OWN_STORE_FINDER and s['locations']:
+                by_state[s['state']] = {**s, 'source': s['sources'][0]}
+    return data, by_state
 
 
 def dispensary_section(entry, cites, name):
     """The regulator's list as printed: name, address, phone, each row filterable by a typed city or name."""
     src = entry['source']
+    srcs = entry.get('sources') or [src]
     dated = f', list dated {long_date(entry["list_date"])}' if entry.get('list_date') else ''
+    several_kinds = len({loc.get('kind') for loc in entry['locations']}) > 1
     rows = []
     for loc in entry['locations']:
         extra = [loc[k] for k in ('phone',) if loc.get(k)]
@@ -275,11 +292,15 @@ def dispensary_section(entry, cites, name):
             extra.append(f'{loc["county"]} County')
         if loc.get('opened'):
             extra.append(f'open since {loc["opened"]}')
+        if several_kinds and loc.get('kind'):
+            extra.append(loc['kind'])
+        if loc.get('licenses'):
+            extra.append(('Licenses ' if len(loc['licenses']) > 1 else 'License ') + ', '.join(loc['licenses']))
         site = f' · <a href="{esc(loc["website"])}" target="_blank" rel="noopener">Website</a>' if loc.get('website') else ''
         licensee = f' <span class="muted">({esc(loc["licensee"])})</span>' if loc.get('licensee') and loc['licensee'] != loc['name'] else ''
         rows.append(f'<li><strong>{esc(loc["name"])}</strong>{licensee}<br>{esc(loc["address"])}<br><span class="muted">{esc(" · ".join(extra))}</span>{site}</li>')
     return (f'<section class="medcard" id="dispensaries" aria-labelledby="dispensaries-h"><h2 id="dispensaries-h">Where to buy in {esc(name)}: {len(rows)} {esc(entry["label"])}</h2>'
-            f'<p class="muted">Copied from the regulator’s own list{dated}, retrieved {long_date(src["retrieved_on"])} {cites.mark([src["id"]])}. Call ahead: hours and openings change.</p>'
+            f'<p class="muted">Copied from the regulator’s own {"lists" if len(srcs) > 1 else "list"}{dated}, retrieved {long_date(src["retrieved_on"])} {cites.mark([s["id"] for s in srcs])}. Call ahead: hours and openings change.</p>'
             '<label for="disp-filter">Filter by city or name</label> <input id="disp-filter" type="search" autocomplete="off" style="font:inherit;min-height:44px;padding:6px 10px;border:1px solid #888;border-radius:8px;max-width:100%">'
             f'<ul class="grid" id="disp-list">{"".join(rows)}</ul>'
             '<script>(function(){var f=document.getElementById("disp-filter"),r=document.querySelectorAll("#disp-list li");f.addEventListener("input",function(){var q=f.value.trim().toLowerCase();'
@@ -1209,7 +1230,7 @@ def pages():
     sources.update({s['id']: s for s in med_data['sources']})
     sources.update({s['id']: s for s in load_coverage()['sources']})
     disp_data, dispensaries = load_dispensaries()
-    sources.update({s['source']['id']: s['source'] for s in disp_data['states']})
+    sources.update({src['id']: src for s in dispensaries.values() for src in (s.get('sources') or [s['source']])})
     sponsors = load_sponsors(perm['jurisdictions'])
     out = {'index.html': home_page(perm, score, directory, answers, sources, sponsors),
            'medical.html': medical_page(perm, med_data, medical, answers, sources, dispensaries),

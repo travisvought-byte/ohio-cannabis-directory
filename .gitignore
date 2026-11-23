@@ -3,3 +3,6 @@ node_modules/
 playwright-report/
 test-results/
 _site/
+
+# source pipeline raw downloads (may contain personal names; never committed)
+.pipeline-cache/

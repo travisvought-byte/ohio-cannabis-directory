@@ -1,0 +1,783 @@
+{
+ "schema_version": 1,
+ "purpose": "Where The Reefer's listings come from: one entry per public source, state by state and country by country. Read by pipeline/ (see pipeline/README.md). Hand-maintained.",
+ "baseline_per_state": {
+  "store_list": "Regulator licensee list or open-data export (this file, topic retail / medical-dispensary)",
+  "law": "data/state-permissions.json answers with citations and review dates",
+  "official_link": "data/state-permissions.json official_links",
+  "medical_program": "data/medical-programs.json patient guides",
+  "medicaid_and_coverage": "data/medical-coverage.json (national answer, state program pages as sources)",
+  "lawmakers_and_advocacy": "Ohio (data/legislators.json) and Pennsylvania (pennsylvania-advocacy.html) only so far"
+ },
+ "baseline_per_country": {
+  "law": "data/world-permissions.json",
+  "where_to_buy": "data/world-where-to-buy.json via import_where_to_buy.py (regulator lists; manual download)"
+ },
+ "us_jurisdictions": {
+  "AL": "Alabama",
+  "AK": "Alaska",
+  "AZ": "Arizona",
+  "AR": "Arkansas",
+  "CA": "California",
+  "CO": "Colorado",
+  "CT": "Connecticut",
+  "DE": "Delaware",
+  "DC": "District of Columbia",
+  "FL": "Florida",
+  "GA": "Georgia",
+  "HI": "Hawaii",
+  "ID": "Idaho",
+  "IL": "Illinois",
+  "IN": "Indiana",
+  "IA": "Iowa",
+  "KS": "Kansas",
+  "KY": "Kentucky",
+  "LA": "Louisiana",
+  "ME": "Maine",
+  "MD": "Maryland",
+  "MA": "Massachusetts",
+  "MI": "Michigan",
+  "MN": "Minnesota",
+  "MS": "Mississippi",
+  "MO": "Missouri",
+  "MT": "Montana",
+  "NE": "Nebraska",
+  "NV": "Nevada",
+  "NH": "New Hampshire",
+  "NJ": "New Jersey",
+  "NM": "New Mexico",
+  "NY": "New York",
+  "NC": "North Carolina",
+  "ND": "North Dakota",
+  "OH": "Ohio",
+  "OK": "Oklahoma",
+  "OR": "Oregon",
+  "PA": "Pennsylvania",
+  "RI": "Rhode Island",
+  "SC": "South Carolina",
+  "SD": "South Dakota",
+  "TN": "Tennessee",
+  "TX": "Texas",
+  "UT": "Utah",
+  "VT": "Vermont",
+  "VA": "Virginia",
+  "WA": "Washington",
+  "WV": "West Virginia",
+  "WI": "Wisconsin",
+  "WY": "Wyoming"
+ },
+ "sources": [
+  {
+   "id": "ca-on-agco-stores",
+   "jurisdiction": "CA",
+   "topic": "retail",
+   "publisher": "Alcohol and Gaming Commission of Ontario (AGCO)",
+   "title": "Cannabis retail store authorizations, open data map file",
+   "landing_url": "https://www.agco.ca/en/cannabis/cannabis-retail-stores",
+   "fetch": {
+    "method": "manual",
+    "url": "https://www.agco.ca/sites/default/files/opendata/AGCOWebSiteCRSANewProcessMapData.csv"
+   },
+   "queue_note": "Imported by import_where_to_buy.py (Nov 20 snapshot); move to automatic csv fetch next.",
+   "scope": "country",
+   "status": "queued",
+   "evidence_level": "regulator-list"
+  },
+  {
+   "id": "ca-bc-lcrb-stores",
+   "jurisdiction": "CA",
+   "topic": "retail",
+   "publisher": "Government of British Columbia, Liquor and Cannabis Regulation Branch",
+   "title": "Cannabis retail stores in BC (Excel report)",
+   "landing_url": "https://www2.gov.bc.ca/gov/content/employment-business/business/liquor-regulation-licensing/cannabis-licences/cannabis-store-locations-and-buy-legal-information",
+   "fetch": {
+    "method": "manual"
+   },
+   "queue_note": "Imported by import_where_to_buy.py (Nov 20 snapshot).",
+   "scope": "country",
+   "status": "queued",
+   "evidence_level": "regulator-list"
+  },
+  {
+   "id": "ca-ab-aglc-stores",
+   "jurisdiction": "CA",
+   "topic": "retail",
+   "publisher": "Alberta Gaming, Liquor and Cannabis (AGLC)",
+   "title": "Cannabis licensee report (Excel export)",
+   "landing_url": "https://aglc.ca/cannabis/retail-cannabis/cannabis-licensee-search",
+   "fetch": {
+    "method": "manual"
+   },
+   "queue_note": "Imported by import_where_to_buy.py (Nov 20 snapshot).",
+   "scope": "country",
+   "status": "queued",
+   "evidence_level": "regulator-list"
+  },
+  {
+   "id": "ca-sk-slga-stores",
+   "jurisdiction": "CA",
+   "topic": "retail",
+   "publisher": "Saskatchewan Liquor and Gaming Authority (SLGA)",
+   "title": "Saskatchewan cannabis retailers (Excel list)",
+   "landing_url": "https://www.slga.com/cannabis/cannabis-permits/authorized-saskatchewan-cannabis-sellers-and-distributors",
+   "fetch": {
+    "method": "manual"
+   },
+   "queue_note": "Imported by import_where_to_buy.py; file name changes with each list date.",
+   "scope": "country",
+   "status": "queued",
+   "evidence_level": "regulator-list"
+  },
+  {
+   "id": "ca-mb-lgca-stores",
+   "jurisdiction": "CA",
+   "topic": "retail",
+   "publisher": "Liquor, Gaming and Cannabis Authority of Manitoba (LGCA)",
+   "title": "Legal cannabis stores in Manitoba",
+   "landing_url": "https://lgcamb.ca/cannabis/store-list",
+   "fetch": {
+    "method": "manual"
+   },
+   "queue_note": "Imported by import_where_to_buy.py (Nov 20 snapshot).",
+   "scope": "country",
+   "status": "queued",
+   "evidence_level": "regulator-list"
+  },
+  {
+   "id": "ca-qc-nb-ns-pe-nl-stores",
+   "jurisdiction": "CA",
+   "topic": "retail",
+   "publisher": "Provincial government retailers (SQDC, Cannabis NB, NSLC, PEI Cannabis, NL)",
+   "title": "Government-run store locators for Quebec and the Atlantic provinces",
+   "landing_url": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/laws-regulations/provinces-territories.html",
+   "fetch": {
+    "method": "manual"
+   },
+   "queue_note": "Not yet sourced: five provinces and three territories have no store list on the site yet.",
+   "scope": "country",
+   "status": "queued",
+   "evidence_level": "regulator-list"
+  },
+  {
+   "id": "mt-aruc-chras",
+   "jurisdiction": "MT",
+   "topic": "club",
+   "publisher": "Authority for the Responsible Use of Cannabis (ARUC), Malta",
+   "title": "Cannabis Harm Reduction Associations with an operating permit",
+   "landing_url": "https://aruc.mt/operational-chras/",
+   "fetch": {
+    "method": "manual"
+   },
+   "queue_note": "Imported by import_where_to_buy.py (Nov 20 snapshot).",
+   "scope": "country",
+   "status": "queued",
+   "evidence_level": "regulator-list"
+  },
+  {
+   "id": "ch-bag-pilots",
+   "jurisdiction": "CH",
+   "topic": "retail",
+   "publisher": "Federal Office of Public Health (BAG), Switzerland",
+   "title": "Approved cannabis pilot trials",
+   "landing_url": "https://www.bag.admin.ch/de/uebersicht-ueber-die-bewilligten-pilotversuche-mit-cannabis",
+   "fetch": {
+    "method": "manual"
+   },
+   "queue_note": "Imported by import_where_to_buy.py (Nov 20 snapshot).",
+   "scope": "country",
+   "status": "queued",
+   "evidence_level": "regulator-list"
+  },
+  {
+   "id": "de-lwk-ni-clubs",
+   "jurisdiction": "DE",
+   "topic": "club",
+   "publisher": "Landwirtschaftskammer Niedersachsen",
+   "title": "Licensed cultivation associations, Lower Saxony",
+   "landing_url": "https://www.lwk-niedersachsen.de/cannabis/kcanglist",
+   "fetch": {
+    "method": "manual"
+   },
+   "queue_note": "Imported (Lower Saxony and Hamburg only); other German states publish no club list yet or were not checked.",
+   "scope": "country",
+   "status": "queued",
+   "evidence_level": "regulator-list"
+  },
+  {
+   "id": "nl-wodc-coffeeshops",
+   "jurisdiction": "NL",
+   "topic": "retail",
+   "publisher": "WODC (Dutch Ministry of Justice research centre) and City of Amsterdam",
+   "title": "Coffeeshops per municipality (2024) and Amsterdam licensed coffeeshops",
+   "landing_url": "https://www.wodc.nl/",
+   "fetch": {
+    "method": "manual"
+   },
+   "queue_note": "Counts per municipality and the Amsterdam list are in data/sources; no national address list is published.",
+   "scope": "country",
+   "status": "queued",
+   "evidence_level": "regulator-list"
+  },
+  {
+   "id": "uy-ircca-pharmacies",
+   "jurisdiction": "UY",
+   "topic": "retail",
+   "publisher": "IRCCA (Instituto de Regulación y Control del Cannabis)",
+   "title": "Pharmacies selling cannabis to registered residents",
+   "landing_url": "https://www.ircca.gub.uy/",
+   "fetch": {
+    "method": "manual"
+   },
+   "queue_note": "Currently sourced from news reports; the regulator's own pharmacy list should replace them.",
+   "scope": "country",
+   "status": "queued",
+   "evidence_level": "regulator-list"
+  },
+  {
+   "id": "th-dtam-shops",
+   "jurisdiction": "TH",
+   "topic": "retail",
+   "publisher": "Thai Department of Thai Traditional and Alternative Medicine",
+   "title": "Licensed cannabis sellers",
+   "landing_url": "https://www.dtam.moph.go.th/",
+   "fetch": {
+    "method": "manual"
+   },
+   "queue_note": "Currently sourced from news reports; a regulator list of licensed sellers should replace them.",
+   "scope": "country",
+   "status": "queued",
+   "evidence_level": "regulator-list"
+  },
+  {
+   "id": "us-mo-dcr-dispensaries",
+   "jurisdiction": "MO",
+   "scope": "state",
+   "topic": "retail-and-medical",
+   "publisher": "Missouri Department of Health and Senior Services, Division of Cannabis Regulation",
+   "title": "Verified dispensary map layer (licensed dispensary facilities)",
+   "landing_url": "https://health.mo.gov/safety/cannabis/licensed-facilities.php",
+   "fetch": {
+    "method": "arcgis",
+    "url": "https://services6.arcgis.com/Bd4MACzvEukoZ9mR/arcgis/rest/services/DCR_Verified_Dispensary_Map_layer/FeatureServer/0"
+   },
+   "keep": [],
+   "kept_rule": "Every row: the layer lists only dispensaries the Division has verified as operating.",
+   "map": {
+    "name": "Dispensary",
+    "street": "Address",
+    "city": "City",
+    "zip": "Zip_code",
+    "county": "County",
+    "phone": "Phone_Number",
+    "website": "Website",
+    "license_number": "License",
+    "lat": "latitude",
+    "lon": "longitude"
+   },
+   "count_columns": [
+    "County"
+   ],
+   "label": "dispensaries the Division of Cannabis Regulation lists as verified",
+   "evidence_level": "regulator-open-data",
+   "cadence_days": 30,
+   "status": "active"
+  },
+  {
+   "id": "us-il-idfpr-dispensary-map",
+   "jurisdiction": "IL",
+   "scope": "state",
+   "topic": "retail",
+   "publisher": "Illinois Department of Financial and Professional Regulation, Cannabis Regulation Oversight Office",
+   "title": "Dispensary locations (State of Illinois public data, dispensary map export)",
+   "landing_url": "https://cannabis.illinois.gov/about/locations.html",
+   "fetch": {
+    "method": "csv",
+    "url": "https://public.data.illinois.gov/t/Public/views/DispensaryMap/Map.csv"
+   },
+   "keep": [],
+   "kept_rule": "Every row: the map lists licensed adult-use dispensaries; the Serves Medical Patients column marks those that also serve registered patients.",
+   "map": {
+    "name": "Dispensary Name",
+    "street": "Street Address",
+    "city": "City",
+    "lat": "Latitude",
+    "lon": "Longitude"
+   },
+   "count_columns": [
+    "Serves Medical Patients",
+    "BLS Region"
+   ],
+   "label": "dispensaries the State of Illinois lists",
+   "limitations": "The State's map export has no ZIP, phone, website or license number. A dated copy, not a live license verification.",
+   "evidence_level": "official-portal",
+   "cadence_days": 30,
+   "status": "active"
+  },
+  {
+   "id": "us-mn-ocm-licensees",
+   "jurisdiction": "MN",
+   "scope": "state",
+   "topic": "retail",
+   "publisher": "Minnesota Office of Cannabis Management",
+   "title": "Public data on cannabis and lower-potency hemp edible license holders",
+   "landing_url": "https://mn.gov/ocm/data-reports/application-data/",
+   "fetch": {
+    "method": "page-link",
+    "url": "https://mn.gov/ocm/data-reports/application-data/",
+    "link_pattern": "MN_OCM_licensed_businesses.*\\.xlsx",
+    "then": "xlsx"
+   },
+   "parse": {
+    "header_contains": "License Type"
+   },
+   "keep": [
+    {
+     "column": "License Type",
+     "match": "retail|microbusiness|mezzobusiness|medical combination"
+    }
+   ],
+   "kept_rule": "License types that can sell to consumers at a storefront (retailer, microbusiness, mezzobusiness, medical combination); hemp-only types are left out.",
+   "map": {
+    "name": [
+     "Business Name"
+    ],
+    "licensee": "Legal Name",
+    "street": "Address",
+    "city": "City",
+    "zip": "Zip",
+    "county": "County",
+    "license_number": "License Number",
+    "license_type": "License Type",
+    "status": "License Status"
+   },
+   "count_columns": [
+    "License Type",
+    "License Status"
+   ],
+   "label": "license holders the Office of Cannabis Management lists",
+   "queue_note": "Column names not yet confirmed; the first run prints them.",
+   "evidence_level": "regulator-open-data",
+   "cadence_days": 30,
+   "status": "active"
+  },
+  {
+   "id": "us-mi-cra-adult-use",
+   "jurisdiction": "MI",
+   "scope": "state",
+   "topic": "retail",
+   "publisher": "Michigan Cannabis Regulatory Agency",
+   "title": "Verify a license: adult-use license search and download",
+   "landing_url": "https://michigan.gov/cra/verify-a-license-1",
+   "fetch": {
+    "method": "manual"
+   },
+   "evidence_level": "regulator-list",
+   "status": "queued",
+   "queue_note": "Roster is only downloadable through a search form (Accela); not scripted. A person can download it and run normalize."
+  },
+  {
+   "id": "us-ok-omma-dispensaries",
+   "jurisdiction": "OK",
+   "scope": "state",
+   "topic": "medical-dispensary",
+   "publisher": "Oklahoma Medical Marijuana Authority",
+   "title": "OMMA Verify license lookup",
+   "landing_url": "https://oklahoma.gov/omma/businesses/lists-of-licensed-businesses.html",
+   "fetch": {
+    "method": "manual"
+   },
+   "evidence_level": "regulator-list",
+   "status": "queued",
+   "queue_note": "OMMA removed its downloadable business lists; only a one-at-a-time lookup portal remains."
+  },
+  {
+   "id": "us-ar-mmc-dispensaries",
+   "jurisdiction": "AR",
+   "scope": "state",
+   "topic": "medical-dispensary",
+   "publisher": "Arkansas Department of Finance and Administration, Medical Marijuana Commission",
+   "title": "Dispensary locations (PDF, March 2020)",
+   "landing_url": "https://www.dfa.arkansas.gov/office/medical-marijuana-commission/",
+   "fetch": {
+    "method": "manual"
+   },
+   "evidence_level": "regulator-list",
+   "status": "queued",
+   "queue_note": "Only a 2020 PDF is published; too old to list without a newer regulator copy."
+  },
+  {
+   "id": "us-sd-doh-dispensaries",
+   "jurisdiction": "SD",
+   "scope": "state",
+   "topic": "medical-dispensary",
+   "publisher": "South Dakota Department of Health, Medical Cannabis Program",
+   "title": "Medical cannabis establishments list",
+   "landing_url": "https://doh.sd.gov/programs/medical-cannabis/med-cannabis-establishments/establishments-list/",
+   "fetch": {
+    "method": "manual"
+   },
+   "evidence_level": "regulator-list",
+   "status": "queued",
+   "queue_note": "Published with city only, no street address; needs a second source for addresses."
+  },
+  {
+   "id": "us-al-amcc-dispensaries",
+   "jurisdiction": "AL",
+   "scope": "state",
+   "topic": "medical-dispensary",
+   "publisher": "Alabama Medical Cannabis Commission",
+   "title": "Dispensary opening announcements",
+   "landing_url": "https://amcc.alabama.gov/patients/",
+   "fetch": {
+    "method": "manual"
+   },
+   "evidence_level": "regulator-list",
+   "status": "queued",
+   "queue_note": "Five open locations announced as prose; small enough to hand-copy next."
+  },
+  {
+   "id": "us-ms-mmcp-dispensaries",
+   "jurisdiction": "MS",
+   "scope": "state",
+   "topic": "medical-dispensary",
+   "publisher": "Mississippi State Department of Health, Medical Cannabis Program",
+   "title": "Business search",
+   "landing_url": "https://www.mmcp.ms.gov/search_business",
+   "fetch": {
+    "method": "manual"
+   },
+   "evidence_level": "regulator-list",
+   "status": "queued",
+   "queue_note": "Search page loads results by script; no list or export published."
+  },
+  {
+   "id": "us-ma-ccc-retailers",
+   "jurisdiction": "MA",
+   "scope": "state",
+   "topic": "retail",
+   "publisher": "Massachusetts Cannabis Control Commission",
+   "title": "Open data: licensees that have commenced operations",
+   "landing_url": "https://masscannabiscontrol.com/open-data/data-catalog/",
+   "fetch": {
+    "method": "csv",
+    "url": "https://masscannabiscontrol.com/resource/l_licenses_commence_ops.csv"
+   },
+   "keep": [
+    {
+     "column": "LICENSE_TYPE",
+     "match": "^Marijuana Retailer$"
+    },
+    {
+     "column": "LICENSE_STATUS",
+     "match": "^Active$"
+    }
+   ],
+   "kept_rule": "License type Marijuana Retailer with license status Active, among licensees the Commission lists as having commenced operations.",
+   "map": {
+    "name": "BUSINESS_NAME",
+    "street": [
+     "PHYSICAL_ADDRESS_1",
+     "ESTABLISHMENT_ADDRESS_2"
+    ],
+    "city": "PHYSICAL_CITY",
+    "zip": "PHYSICAL_ZIP_CODE",
+    "county": "county",
+    "phone": "BUSINESS_PHONE",
+    "license_number": "LICENSE_NUMBER",
+    "license_type": "LICENSE_TYPE",
+    "status": "LICENSE_STATUS",
+    "lat": "latitude",
+    "lon": "longitude",
+    "opened": "COMMENCE_OPERATIONS_DATE"
+   },
+   "count_columns": [
+    "LICENSE_TYPE",
+    "LICENSE_STATUS"
+   ],
+   "label": "retailers the Cannabis Control Commission lists as active and open",
+   "evidence_level": "regulator-open-data",
+   "cadence_days": 30,
+   "status": "active"
+  },
+  {
+   "id": "us-ma-ccc-treatment-centers",
+   "jurisdiction": "MA",
+   "scope": "state",
+   "topic": "medical-dispensary",
+   "publisher": "Massachusetts Cannabis Control Commission",
+   "title": "Open data: medical marijuana treatment centers",
+   "landing_url": "https://masscannabiscontrol.com/open-data/data-catalog/",
+   "fetch": {
+    "method": "manual",
+    "url": "https://masscannabiscontrol.com/resource/l_licenses_mtc.csv"
+   },
+   "evidence_level": "regulator-open-data",
+   "status": "queued",
+   "queue_note": "Columns not yet mapped; add after the first probe."
+  },
+  {
+   "id": "us-ct-dcp-retail-locations",
+   "jurisdiction": "CT",
+   "scope": "state",
+   "topic": "retail-and-medical",
+   "publisher": "Connecticut Department of Consumer Protection, Cannabis Control Division",
+   "title": "Licensed cannabis and medical marijuana retail locations (CT Open Data)",
+   "landing_url": "https://data.ct.gov/d/42yd-3x3d",
+   "fetch": {
+    "method": "socrata",
+    "url": "https://data.ct.gov/resource/42yd-3x3d.json"
+   },
+   "keep": [],
+   "kept_rule": "Every row: the dataset lists retail locations only (hybrid, adult-use only and medical only).",
+   "map": {
+    "name": "dba",
+    "licensee": "business",
+    "street": "street",
+    "city": "city",
+    "zip": "zipcode",
+    "website": "website",
+    "license_number": "license",
+    "license_type": "type",
+    "lon": {
+     "path": [
+      "location",
+      "coordinates",
+      0
+     ]
+    },
+    "lat": {
+     "path": [
+      "location",
+      "coordinates",
+      1
+     ]
+    }
+   },
+   "count_columns": [
+    "type"
+   ],
+   "label": "retail locations the Department of Consumer Protection lists",
+   "evidence_level": "regulator-open-data",
+   "cadence_days": 30,
+   "status": "active"
+  },
+  {
+   "id": "us-md-mca-dispensaries",
+   "jurisdiction": "MD",
+   "scope": "state",
+   "topic": "retail-and-medical",
+   "publisher": "Maryland Cannabis Administration",
+   "title": "Licensed dispensary locations (map layer)",
+   "landing_url": "https://cannabis.maryland.gov/Pages/licensed-dispensary-locations.aspx",
+   "fetch": {
+    "method": "arcgis",
+    "url": "https://services.arcgis.com/njFNhDsUCentVYJW/arcgis/rest/services/MCA_Licensed_Dispensaries_List_view_API/FeatureServer/0"
+   },
+   "keep": [],
+   "kept_rule": "Every row: the layer lists licensed dispensaries, each serving medical patients and adults.",
+   "map": {
+    "name": "dba",
+    "licensee": "name",
+    "street": [
+     "Address",
+     "Address_2"
+    ],
+    "city": "City",
+    "zip": "Zip",
+    "county": "county",
+    "website": "url",
+    "license_number": "license_number",
+    "lat": "lat",
+    "lon": "long"
+   },
+   "count_columns": [
+    "Licensee_Type",
+    "county"
+   ],
+   "label": "dispensaries the Maryland Cannabis Administration lists",
+   "evidence_level": "regulator-open-data",
+   "cadence_days": 30,
+   "status": "active"
+  },
+  {
+   "id": "us-me-ocp-adult-use",
+   "jurisdiction": "ME",
+   "scope": "state",
+   "topic": "retail",
+   "publisher": "Maine Office of Cannabis Policy",
+   "title": "Adult use establishments (open data, monthly)",
+   "landing_url": "https://www.maine.gov/dafs/ocp/open-data/adult-use/licensee-search",
+   "fetch": {
+    "method": "page-link",
+    "url": "https://www.maine.gov/dafs/ocp/open-data/adult-use/licensee-search",
+    "link_pattern": "Adult_Use_Establishments.*\\.csv",
+    "then": "csv"
+   },
+   "keep": [
+    {
+     "column": "License Type",
+     "match": "store"
+    },
+    {
+     "column": "License Status",
+     "match": "^active"
+    }
+   ],
+   "kept_rule": "Cannabis store licenses with status Active.",
+   "map": {
+    "name": "Business Name",
+    "licensee": "Licensee Name",
+    "street": "Address",
+    "city": "City",
+    "zip": "Zip",
+    "license_number": "License Number",
+    "license_type": "License Type",
+    "status": "License Status"
+   },
+   "count_columns": [
+    "License Type",
+    "License Status"
+   ],
+   "label": "adult-use stores the Office of Cannabis Policy lists as active",
+   "queue_note": "Column names not yet confirmed; the first run prints them.",
+   "evidence_level": "regulator-open-data",
+   "cadence_days": 30,
+   "status": "active"
+  },
+  {
+   "id": "us-fl-ommu-dispensing-locations",
+   "jurisdiction": "FL",
+   "scope": "state",
+   "topic": "medical-dispensary",
+   "publisher": "Florida Department of Health, Office of Medical Marijuana Use",
+   "title": "Medical marijuana treatment center dispensing locations",
+   "landing_url": "https://knowthefactsmmj.com/mmtc/",
+   "fetch": {
+    "method": "html",
+    "url": "https://knowthefactsmmj.com/mmtc/"
+   },
+   "parse": {
+    "match": "ZIP CODE"
+   },
+   "keep": [],
+   "kept_rule": "Every row of the dispensing locations table.",
+   "map": {
+    "name": "COMPANY",
+    "street": "ADDRESS",
+    "city": "CITY",
+    "zip": "ZIP CODE",
+    "county": "COUNTY",
+    "phone": "PHONE"
+   },
+   "count_columns": [
+    "COMPANY",
+    "COUNTY"
+   ],
+   "label": "dispensing locations the Office of Medical Marijuana Use lists",
+   "evidence_level": "regulator-list",
+   "cadence_days": 30,
+   "status": "active"
+  },
+  {
+   "id": "us-ri-ccc-compassion-centers",
+   "jurisdiction": "RI",
+   "scope": "state",
+   "topic": "retail-and-medical",
+   "publisher": "Rhode Island Cannabis Control Commission",
+   "title": "Licensed compassion centers",
+   "landing_url": "https://ccc.ri.gov/cannabis-office/compassion-centers/licensed-compassion-centers",
+   "fetch": {
+    "method": "html",
+    "url": "https://ccc.ri.gov/cannabis-office/compassion-centers/licensed-compassion-centers"
+   },
+   "keep": [],
+   "kept_rule": "Every licensed compassion center in the Commission's table.",
+   "map": {
+    "name": "Name",
+    "street": "Address",
+    "phone": "Phone",
+    "license_number": "License Number"
+   },
+   "label": "compassion centers the Cannabis Control Commission lists",
+   "queue_note": "Column names not yet confirmed; the first run prints them.",
+   "evidence_level": "regulator-list",
+   "cadence_days": 30,
+   "status": "active"
+  },
+  {
+   "id": "us-va-cca-dispensaries",
+   "jurisdiction": "VA",
+   "scope": "state",
+   "topic": "medical-dispensary",
+   "publisher": "Virginia Cannabis Control Authority",
+   "title": "Medical cannabis dispensaries",
+   "landing_url": "https://cca.virginia.gov/medicalcannabis/dispensaries",
+   "fetch": {
+    "method": "manual"
+   },
+   "evidence_level": "regulator-list",
+   "status": "queued",
+   "queue_note": "25 locations as page text, not a table; needs a small page parser."
+  },
+  {
+   "id": "us-nj-crc-permitted",
+   "jurisdiction": "NJ",
+   "scope": "state",
+   "topic": "retail",
+   "publisher": "New Jersey Cannabis Regulatory Commission",
+   "title": "Permitted cannabis businesses",
+   "landing_url": "https://www.nj.gov/cannabis/businesses/permitted",
+   "fetch": {
+    "method": "manual"
+   },
+   "evidence_level": "regulator-list",
+   "status": "queued",
+   "queue_note": "Names and towns only, no street addresses; the dispensary map is a third-party embed."
+  },
+  {
+   "id": "us-de-omc-dispensaries",
+   "jurisdiction": "DE",
+   "scope": "state",
+   "topic": "retail-and-medical",
+   "publisher": "Delaware Office of the Marijuana Commissioner",
+   "title": "Dispensaries",
+   "landing_url": "https://omc.delaware.gov/dispensaries",
+   "fetch": {
+    "method": "manual"
+   },
+   "evidence_level": "regulator-list",
+   "status": "queued",
+   "queue_note": "14 addresses as page text; small enough to hand-copy next."
+  },
+  {
+   "id": "us-vt-ccb-licenses",
+   "jurisdiction": "VT",
+   "scope": "state",
+   "topic": "retail",
+   "publisher": "Vermont Cannabis Control Board",
+   "title": "Licenses",
+   "landing_url": "https://ccb.vermont.gov/licenses",
+   "fetch": {
+    "method": "manual"
+   },
+   "evidence_level": "regulator-list",
+   "status": "queued",
+   "queue_note": "Town only, no street address; table may be incomplete."
+  },
+  {
+   "id": "us-hi-doh-dispensaries",
+   "jurisdiction": "HI",
+   "scope": "state",
+   "topic": "medical-dispensary",
+   "publisher": "Hawaii Department of Health, Medical Cannabis Dispensary Program",
+   "title": "Dispensary websites and locations",
+   "landing_url": "https://health.hawaii.gov/medicalcannabisdispensary/dispensary-websites-and-locations/",
+   "fetch": {
+    "method": "manual"
+   },
+   "evidence_level": "regulator-list",
+   "status": "queued",
+   "queue_note": "Licensee websites by county, no store addresses."
+  }
+ ]
+}

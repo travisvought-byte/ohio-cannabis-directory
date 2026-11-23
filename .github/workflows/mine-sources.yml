@@ -1,0 +1,82 @@
+name: Mine state sources
+
+# Pulls each active source in pipeline/registry.json from the regulator's own site, keeps
+# business details only, rebuilds the state pages and publishes them. Started by hand
+# (Actions > Mine state sources > Run workflow) or on the schedule the owner sets.
+
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: 'State codes or source ids, separated by spaces (blank = every active source)'
+        required: false
+        default: ''
+      publish:
+        description: 'Commit the results to main and redeploy the-reefer.com'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: mine-sources
+  cancel-in-progress: false
+
+jobs:
+  mine:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install
+        run: pip install -r requirements.txt -r pipeline/requirements.txt
+      - name: Pull, normalize, merge and rank coverage
+        env:
+          ONLY: ${{ inputs.only }}
+        run: python -m pipeline.run ${ONLY:+--only $ONLY}
+      - name: Columns and categories of what was pulled
+        env:
+          ONLY: ${{ inputs.only }}
+        run: python -m pipeline.probe ${ONLY:+--only $ONLY}
+      - name: Fetch log
+        run: cat data/sources/pipeline/_fetch-log.json || true
+      - name: Keep the normalized results for review (business fields only)
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-results
+          path: |
+            data/sources/pipeline
+            data/state-retail-locations.json
+            data/pipeline-coverage.json
+            architecture/PIPELINE_COVERAGE.md
+          if-no-files-found: ignore
+      - name: Rebuild the national pages
+        run: python build_national.py
+      - name: Checks
+        run: |
+          python tests/check_data.py
+          python -m unittest discover -s tests -p 'test_*.py'
+      - name: Publish
+        if: ${{ inputs.publish }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Rebuild on top of the newest main so generated pages never conflict with other work.
+          mkdir -p /tmp/mined data/sources/pipeline && cp -r data/sources/pipeline /tmp/mined/
+          git fetch origin main && git reset --hard origin/main
+          rm -rf data/sources/pipeline && cp -r /tmp/mined/pipeline data/sources/pipeline
+          python -m pipeline.run --offline
+          python build_national.py
+          python tests/check_data.py
+          python -m unittest discover -s tests -p 'test_*.py'
+          git config user.name 'the-reefer source pipeline'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/sources/pipeline data/state-retail-locations.json data/pipeline-coverage.json architecture/PIPELINE_COVERAGE.md national
+          if git diff --cached --quiet; then echo 'Nothing changed.'; exit 0; fi
+          git commit -m "Source pipeline: refresh regulator store lists (${{ inputs.only || 'all active sources' }})"
+          git push origin HEAD:main
+          gh workflow run pages.yml --ref main

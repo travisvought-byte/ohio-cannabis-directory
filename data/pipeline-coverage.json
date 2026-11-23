@@ -1,0 +1,1970 @@
+{
+ "as_of": "2026-11-23",
+ "method": "Rank thin state and country pages, so the next mining batch goes where it matters most.\n\nReads the published data (nothing is fetched) and writes:\n  data/pipeline-coverage.json         machine-readable, one row per state and country\n  architecture/PIPELINE_COVERAGE.md   the same, readable, with the source queue\n\nA page is \"thin\" when it has a legal market but is missing what a visitor needs: a store\nlist from the regulator, a fresh copy of it, the official state link, answers to the\nshared law questions, or a patient guide where medical use is legal.\n\nPriority = market weight x gap points. Market weight: adult use 3, medical only 2,\nlimited or varies locally 1, not permitted 0 (a closed market has nothing to list).",
+ "states": [
+  {
+   "code": "AK",
+   "name": "Alaska",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "9/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "1 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 15
+  },
+  {
+   "code": "AL",
+   "name": "Alabama",
+   "market": "medical-only",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "5/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "5 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "AZ",
+   "name": "Arizona",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "AR",
+   "name": "Arkansas",
+   "market": "medical-only",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "4/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "6 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "CA",
+   "name": "California",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {
+    "queued": 6
+   },
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "CO",
+   "name": "Colorado",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "CT",
+   "name": "Connecticut",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "DE",
+   "name": "Delaware",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {
+    "queued": 1
+   },
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "DC",
+   "name": "District of Columbia",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "FL",
+   "name": "Florida",
+   "market": "medical-only",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "6/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "4 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "IL",
+   "name": "Illinois",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "ME",
+   "name": "Maine",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "MD",
+   "name": "Maryland",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "MA",
+   "name": "Massachusetts",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "MI",
+   "name": "Michigan",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "MN",
+   "name": "Minnesota",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "MS",
+   "name": "Mississippi",
+   "market": "medical-only",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "6/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "4 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "MO",
+   "name": "Missouri",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "MT",
+   "name": "Montana",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {
+    "queued": 1
+   },
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "NE",
+   "name": "Nebraska",
+   "market": "medical-only",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "3/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "7 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "NV",
+   "name": "Nevada",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "NJ",
+   "name": "New Jersey",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "NM",
+   "name": "New Mexico",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "OR",
+   "name": "Oregon",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "RI",
+   "name": "Rhode Island",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "SD",
+   "name": "South Dakota",
+   "market": "medical-only",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "4/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "6 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "VT",
+   "name": "Vermont",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "VA",
+   "name": "Virginia",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "WA",
+   "name": "Washington",
+   "market": "allowed",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "HI",
+   "name": "Hawaii",
+   "market": "medical-only",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "8/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "2 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 10
+  },
+  {
+   "code": "OK",
+   "name": "Oklahoma",
+   "market": "medical-only",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "8/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no store list",
+    "2 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 10
+  },
+  {
+   "code": "LA",
+   "name": "Louisiana",
+   "market": "medical-only",
+   "stores": 29,
+   "store_list_from": "hand-copied regulator list",
+   "store_list_age_days": 6,
+   "law_answers": "4/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "6 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 6
+  },
+  {
+   "code": "NH",
+   "name": "New Hampshire",
+   "market": "medical-only",
+   "stores": 7,
+   "store_list_from": "hand-copied regulator list",
+   "store_list_age_days": 6,
+   "law_answers": "4/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "6 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 6
+  },
+  {
+   "code": "ND",
+   "name": "North Dakota",
+   "market": "medical-only",
+   "stores": 8,
+   "store_list_from": "hand-copied regulator list",
+   "store_list_age_days": 6,
+   "law_answers": "5/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "5 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 6
+  },
+  {
+   "code": "KY",
+   "name": "Kentucky",
+   "market": "medical-only",
+   "stores": 26,
+   "store_list_from": "hand-copied regulator list",
+   "store_list_age_days": 7,
+   "law_answers": "8/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "2 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 4
+  },
+  {
+   "code": "PA",
+   "name": "Pennsylvania",
+   "market": "medical-only",
+   "stores": 200,
+   "store_list_from": "state directory pack",
+   "store_list_age_days": null,
+   "law_answers": "6/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "4 law questions unanswered"
+   ],
+   "priority": 4
+  },
+  {
+   "code": "UT",
+   "name": "Utah",
+   "market": "medical-only",
+   "stores": 16,
+   "store_list_from": "hand-copied regulator list",
+   "store_list_age_days": 7,
+   "law_answers": "7/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "3 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 4
+  },
+  {
+   "code": "WV",
+   "name": "West Virginia",
+   "market": "medical-only",
+   "stores": 63,
+   "store_list_from": "hand-copied regulator list",
+   "store_list_age_days": 6,
+   "law_answers": "7/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "3 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 4
+  },
+  {
+   "code": "GA",
+   "name": "Georgia",
+   "market": "not-permitted",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "4/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "6 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "ID",
+   "name": "Idaho",
+   "market": "not-permitted",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "3/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "7 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "IN",
+   "name": "Indiana",
+   "market": "not-permitted",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "3/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "7 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "IA",
+   "name": "Iowa",
+   "market": "not-permitted",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "4/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "6 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "KS",
+   "name": "Kansas",
+   "market": "not-permitted",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "3/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "7 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "NY",
+   "name": "New York",
+   "market": "allowed",
+   "stores": 722,
+   "store_list_from": "state directory pack",
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [],
+   "priority": 0
+  },
+  {
+   "code": "NC",
+   "name": "North Carolina",
+   "market": "not-permitted",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "3/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "7 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "OH",
+   "name": "Ohio",
+   "market": "allowed",
+   "stores": 230,
+   "store_list_from": "state directory pack",
+   "store_list_age_days": null,
+   "law_answers": "10/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [],
+   "priority": 0
+  },
+  {
+   "code": "SC",
+   "name": "South Carolina",
+   "market": "not-permitted",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "3/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "7 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "TN",
+   "name": "Tennessee",
+   "market": "not-permitted",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "3/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "no official state link",
+    "7 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "TX",
+   "name": "Texas",
+   "market": "not-permitted",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "3/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "7 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "WI",
+   "name": "Wisconsin",
+   "market": "not-permitted",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "2/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "8 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "WY",
+   "name": "Wyoming",
+   "market": "not-permitted",
+   "stores": 0,
+   "store_list_from": null,
+   "store_list_age_days": null,
+   "law_answers": "3/10",
+   "registry": {},
+   "last_fetch": {},
+   "gaps": [
+    "7 law questions unanswered",
+    "no full state guide (business, records, community)"
+   ],
+   "priority": 0
+  }
+ ],
+ "countries": [
+  {
+   "code": "GU",
+   "name": "Guam",
+   "market": "allowed",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "5 law questions unanswered"
+   ],
+   "priority": 15
+  },
+  {
+   "code": "MP",
+   "name": "Northern Mariana Islands",
+   "market": "allowed",
+   "store_list": false,
+   "law_answers": "3/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "6 law questions unanswered"
+   ],
+   "priority": 15
+  },
+  {
+   "code": "VI",
+   "name": "U.S. Virgin Islands",
+   "market": "allowed",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "5 law questions unanswered"
+   ],
+   "priority": 15
+  },
+  {
+   "code": "PR",
+   "name": "Puerto Rico",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "1/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "8 law questions unanswered"
+   ],
+   "priority": 12
+  },
+  {
+   "code": "CR",
+   "name": "Costa Rica",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "5 law questions unanswered"
+   ],
+   "priority": 10
+  },
+  {
+   "code": "GR",
+   "name": "Greece",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "3/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "6 law questions unanswered"
+   ],
+   "priority": 10
+  },
+  {
+   "code": "PY",
+   "name": "Paraguay",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "5 law questions unanswered"
+   ],
+   "priority": 10
+  },
+  {
+   "code": "PL",
+   "name": "Poland",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "3/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "6 law questions unanswered"
+   ],
+   "priority": 10
+  },
+  {
+   "code": "VC",
+   "name": "Saint Vincent and the Grenadines",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "5 law questions unanswered"
+   ],
+   "priority": 10
+  },
+  {
+   "code": "CZ",
+   "name": "Czechia",
+   "market": "allowed",
+   "store_list": false,
+   "law_answers": "9/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list"
+   ],
+   "priority": 9
+  },
+  {
+   "code": "AG",
+   "name": "Antigua and Barbuda",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "8/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "1 law questions unanswered"
+   ],
+   "priority": 8
+  },
+  {
+   "code": "AR",
+   "name": "Argentina",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "8/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "1 law questions unanswered"
+   ],
+   "priority": 8
+  },
+  {
+   "code": "AU",
+   "name": "Australia",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "8/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "1 law questions unanswered"
+   ],
+   "priority": 8
+  },
+  {
+   "code": "BB",
+   "name": "Barbados",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "6/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "3 law questions unanswered"
+   ],
+   "priority": 8
+  },
+  {
+   "code": "CL",
+   "name": "Chile",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "8/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "1 law questions unanswered"
+   ],
+   "priority": 8
+  },
+  {
+   "code": "CO",
+   "name": "Colombia",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "7/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "2 law questions unanswered"
+   ],
+   "priority": 8
+  },
+  {
+   "code": "DK",
+   "name": "Denmark",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "6/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "3 law questions unanswered"
+   ],
+   "priority": 8
+  },
+  {
+   "code": "IL",
+   "name": "Israel",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "6/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "3 law questions unanswered"
+   ],
+   "priority": 8
+  },
+  {
+   "code": "IT",
+   "name": "Italy",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "7/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "2 law questions unanswered"
+   ],
+   "priority": 8
+  },
+  {
+   "code": "JM",
+   "name": "Jamaica",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "8/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "1 law questions unanswered"
+   ],
+   "priority": 8
+  },
+  {
+   "code": "LU",
+   "name": "Luxembourg",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "7/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "2 law questions unanswered"
+   ],
+   "priority": 8
+  },
+  {
+   "code": "MX",
+   "name": "Mexico",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "7/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "2 law questions unanswered"
+   ],
+   "priority": 8
+  },
+  {
+   "code": "NL",
+   "name": "Netherlands",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "6/9",
+   "registry_sources": 1,
+   "gaps": [
+    "no official store or club list",
+    "3 law questions unanswered"
+   ],
+   "priority": 8
+  },
+  {
+   "code": "PE",
+   "name": "Peru",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "6/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "3 law questions unanswered"
+   ],
+   "priority": 8
+  },
+  {
+   "code": "PT",
+   "name": "Portugal",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "6/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "3 law questions unanswered"
+   ],
+   "priority": 8
+  },
+  {
+   "code": "KN",
+   "name": "Saint Kitts and Nevis",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "6/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list",
+    "3 law questions unanswered"
+   ],
+   "priority": 8
+  },
+  {
+   "code": "BR",
+   "name": "Brazil",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "9/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list"
+   ],
+   "priority": 6
+  },
+  {
+   "code": "NZ",
+   "name": "New Zealand",
+   "market": "medical-only",
+   "store_list": false,
+   "law_answers": "9/9",
+   "registry_sources": 0,
+   "gaps": [
+    "no official store or club list"
+   ],
+   "priority": 6
+  },
+  {
+   "code": "UY",
+   "name": "Uruguay",
+   "market": "allowed",
+   "store_list": true,
+   "law_answers": "5/9",
+   "registry_sources": 1,
+   "gaps": [
+    "4 law questions unanswered"
+   ],
+   "priority": 6
+  },
+  {
+   "code": "TH",
+   "name": "Thailand",
+   "market": "medical-only",
+   "store_list": true,
+   "law_answers": "4/9",
+   "registry_sources": 1,
+   "gaps": [
+    "5 law questions unanswered"
+   ],
+   "priority": 4
+  },
+  {
+   "code": "DE",
+   "name": "Germany",
+   "market": "allowed",
+   "store_list": true,
+   "law_answers": "8/9",
+   "registry_sources": 1,
+   "gaps": [
+    "1 law questions unanswered"
+   ],
+   "priority": 3
+  },
+  {
+   "code": "BZ",
+   "name": "Belize",
+   "market": "limited",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "5 law questions unanswered"
+   ],
+   "priority": 2
+  },
+  {
+   "code": "DM",
+   "name": "Dominica",
+   "market": "limited",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "5 law questions unanswered"
+   ],
+   "priority": 2
+  },
+  {
+   "code": "EC",
+   "name": "Ecuador",
+   "market": "limited",
+   "store_list": false,
+   "law_answers": "5/9",
+   "registry_sources": 0,
+   "gaps": [
+    "4 law questions unanswered"
+   ],
+   "priority": 2
+  },
+  {
+   "code": "IN",
+   "name": "India",
+   "market": "limited",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "5 law questions unanswered"
+   ],
+   "priority": 2
+  },
+  {
+   "code": "LC",
+   "name": "Saint Lucia",
+   "market": "limited",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "5 law questions unanswered"
+   ],
+   "priority": 2
+  },
+  {
+   "code": "CH",
+   "name": "Switzerland",
+   "market": "medical-only",
+   "store_list": true,
+   "law_answers": "8/9",
+   "registry_sources": 1,
+   "gaps": [
+    "1 law questions unanswered"
+   ],
+   "priority": 2
+  },
+  {
+   "code": "GD",
+   "name": "Grenada",
+   "market": "limited",
+   "store_list": false,
+   "law_answers": "6/9",
+   "registry_sources": 0,
+   "gaps": [
+    "3 law questions unanswered"
+   ],
+   "priority": 1
+  },
+  {
+   "code": "ES",
+   "name": "Spain",
+   "market": "limited",
+   "store_list": false,
+   "law_answers": "7/9",
+   "registry_sources": 0,
+   "gaps": [
+    "2 law questions unanswered"
+   ],
+   "priority": 1
+  },
+  {
+   "code": "TT",
+   "name": "Trinidad and Tobago",
+   "market": "limited",
+   "store_list": false,
+   "law_answers": "6/9",
+   "registry_sources": 0,
+   "gaps": [
+    "3 law questions unanswered"
+   ],
+   "priority": 1
+  },
+  {
+   "code": "AI",
+   "name": "Anguilla",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "6/9",
+   "registry_sources": 0,
+   "gaps": [
+    "3 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "AW",
+   "name": "Aruba",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "6/9",
+   "registry_sources": 0,
+   "gaps": [
+    "3 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "AT",
+   "name": "Austria",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "6/9",
+   "registry_sources": 0,
+   "gaps": [
+    "3 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "BS",
+   "name": "Bahamas",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "5/9",
+   "registry_sources": 0,
+   "gaps": [
+    "4 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "BE",
+   "name": "Belgium",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "6/9",
+   "registry_sources": 0,
+   "gaps": [
+    "3 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "BM",
+   "name": "Bermuda",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "5/9",
+   "registry_sources": 0,
+   "gaps": [
+    "4 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "BO",
+   "name": "Bolivia",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "6/9",
+   "registry_sources": 0,
+   "gaps": [
+    "3 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "BQ",
+   "name": "Bonaire, St Eustatius and Saba",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "5/9",
+   "registry_sources": 0,
+   "gaps": [
+    "4 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "VG",
+   "name": "British Virgin Islands",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "5 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "CA",
+   "name": "Canada",
+   "market": "allowed",
+   "store_list": true,
+   "law_answers": "9/9",
+   "registry_sources": 6,
+   "gaps": [],
+   "priority": 0
+  },
+  {
+   "code": "KY",
+   "name": "Cayman Islands",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "5 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "CN",
+   "name": "China",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "2/9",
+   "registry_sources": 0,
+   "gaps": [
+    "7 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "CU",
+   "name": "Cuba",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "5/9",
+   "registry_sources": 0,
+   "gaps": [
+    "4 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "CW",
+   "name": "Curaçao",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "6/9",
+   "registry_sources": 0,
+   "gaps": [
+    "3 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "DO",
+   "name": "Dominican Republic",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "6/9",
+   "registry_sources": 0,
+   "gaps": [
+    "3 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "SV",
+   "name": "El Salvador",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "5 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "FI",
+   "name": "Finland",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "5 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "FR",
+   "name": "France",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "7/9",
+   "registry_sources": 0,
+   "gaps": [
+    "2 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "GT",
+   "name": "Guatemala",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "5/9",
+   "registry_sources": 0,
+   "gaps": [
+    "4 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "GY",
+   "name": "Guyana",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "5 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "HT",
+   "name": "Haiti",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "3/9",
+   "registry_sources": 0,
+   "gaps": [
+    "6 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "HN",
+   "name": "Honduras",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "5/9",
+   "registry_sources": 0,
+   "gaps": [
+    "4 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "ID",
+   "name": "Indonesia",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "2/9",
+   "registry_sources": 0,
+   "gaps": [
+    "7 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "IE",
+   "name": "Ireland",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "7/9",
+   "registry_sources": 0,
+   "gaps": [
+    "2 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "JP",
+   "name": "Japan",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "5 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "LB",
+   "name": "Lebanon",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "5 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "MY",
+   "name": "Malaysia",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "5 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "MT",
+   "name": "Malta",
+   "market": "allowed",
+   "store_list": true,
+   "law_answers": "9/9",
+   "registry_sources": 1,
+   "gaps": [],
+   "priority": 0
+  },
+  {
+   "code": "MS",
+   "name": "Montserrat",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "2/9",
+   "registry_sources": 0,
+   "gaps": [
+    "7 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "MA",
+   "name": "Morocco",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "5 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "NP",
+   "name": "Nepal",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "5 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "NI",
+   "name": "Nicaragua",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "5 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "NO",
+   "name": "Norway",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "3/9",
+   "registry_sources": 0,
+   "gaps": [
+    "6 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "PA",
+   "name": "Panama",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "6/9",
+   "registry_sources": 0,
+   "gaps": [
+    "3 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "PH",
+   "name": "Philippines",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "5 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "SA",
+   "name": "Saudi Arabia",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "2/9",
+   "registry_sources": 0,
+   "gaps": [
+    "7 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "SG",
+   "name": "Singapore",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "3/9",
+   "registry_sources": 0,
+   "gaps": [
+    "6 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "ZA",
+   "name": "South Africa",
+   "market": "limited",
+   "store_list": false,
+   "law_answers": "9/9",
+   "registry_sources": 0,
+   "gaps": [],
+   "priority": 0
+  },
+  {
+   "code": "SX",
+   "name": "St Maarten",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "5/9",
+   "registry_sources": 0,
+   "gaps": [
+    "4 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "SR",
+   "name": "Suriname",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "6/9",
+   "registry_sources": 0,
+   "gaps": [
+    "3 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "SE",
+   "name": "Sweden",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "3/9",
+   "registry_sources": 0,
+   "gaps": [
+    "6 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "TC",
+   "name": "Turks and Caicos Islands",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "4/9",
+   "registry_sources": 0,
+   "gaps": [
+    "5 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "TR",
+   "name": "Türkiye",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "2/9",
+   "registry_sources": 0,
+   "gaps": [
+    "7 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "AE",
+   "name": "United Arab Emirates",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "2/9",
+   "registry_sources": 0,
+   "gaps": [
+    "7 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "GB",
+   "name": "United Kingdom",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "7/9",
+   "registry_sources": 0,
+   "gaps": [
+    "2 law questions unanswered"
+   ],
+   "priority": 0
+  },
+  {
+   "code": "VE",
+   "name": "Venezuela",
+   "market": "not-permitted",
+   "store_list": false,
+   "law_answers": "5/9",
+   "registry_sources": 0,
+   "gaps": [
+    "4 law questions unanswered"
+   ],
+   "priority": 0
+  }
+ ],
+ "source_queue": [
+  {
+   "id": "ca-on-agco-stores",
+   "jurisdiction": "CA",
+   "status": "queued",
+   "why": "Imported by import_where_to_buy.py (Nov 20 snapshot); move to automatic csv fetch next.",
+   "landing_url": "https://www.agco.ca/en/cannabis/cannabis-retail-stores"
+  },
+  {
+   "id": "ca-bc-lcrb-stores",
+   "jurisdiction": "CA",
+   "status": "queued",
+   "why": "Imported by import_where_to_buy.py (Nov 20 snapshot).",
+   "landing_url": "https://www2.gov.bc.ca/gov/content/employment-business/business/liquor-regulation-licensing/cannabis-licences/cannabis-store-locations-and-buy-legal-information"
+  },
+  {
+   "id": "ca-ab-aglc-stores",
+   "jurisdiction": "CA",
+   "status": "queued",
+   "why": "Imported by import_where_to_buy.py (Nov 20 snapshot).",
+   "landing_url": "https://aglc.ca/cannabis/retail-cannabis/cannabis-licensee-search"
+  },
+  {
+   "id": "ca-sk-slga-stores",
+   "jurisdiction": "CA",
+   "status": "queued",
+   "why": "Imported by import_where_to_buy.py; file name changes with each list date.",
+   "landing_url": "https://www.slga.com/cannabis/cannabis-permits/authorized-saskatchewan-cannabis-sellers-and-distributors"
+  },
+  {
+   "id": "ca-mb-lgca-stores",
+   "jurisdiction": "CA",
+   "status": "queued",
+   "why": "Imported by import_where_to_buy.py (Nov 20 snapshot).",
+   "landing_url": "https://lgcamb.ca/cannabis/store-list"
+  },
+  {
+   "id": "ca-qc-nb-ns-pe-nl-stores",
+   "jurisdiction": "CA",
+   "status": "queued",
+   "why": "Not yet sourced: five provinces and three territories have no store list on the site yet.",
+   "landing_url": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/laws-regulations/provinces-territories.html"
+  },
+  {
+   "id": "mt-aruc-chras",
+   "jurisdiction": "MT",
+   "status": "queued",
+   "why": "Imported by import_where_to_buy.py (Nov 20 snapshot).",
+   "landing_url": "https://aruc.mt/operational-chras/"
+  },
+  {
+   "id": "ch-bag-pilots",
+   "jurisdiction": "CH",
+   "status": "queued",
+   "why": "Imported by import_where_to_buy.py (Nov 20 snapshot).",
+   "landing_url": "https://www.bag.admin.ch/de/uebersicht-ueber-die-bewilligten-pilotversuche-mit-cannabis"
+  },
+  {
+   "id": "de-lwk-ni-clubs",
+   "jurisdiction": "DE",
+   "status": "queued",
+   "why": "Imported (Lower Saxony and Hamburg only); other German states publish no club list yet or were not checked.",
+   "landing_url": "https://www.lwk-niedersachsen.de/cannabis/kcanglist"
+  },
+  {
+   "id": "nl-wodc-coffeeshops",
+   "jurisdiction": "NL",
+   "status": "queued",
+   "why": "Counts per municipality and the Amsterdam list are in data/sources; no national address list is published.",
+   "landing_url": "https://www.wodc.nl/"
+  },
+  {
+   "id": "uy-ircca-pharmacies",
+   "jurisdiction": "UY",
+   "status": "queued",
+   "why": "Currently sourced from news reports; the regulator's own pharmacy list should replace them.",
+   "landing_url": "https://www.ircca.gub.uy/"
+  },
+  {
+   "id": "th-dtam-shops",
+   "jurisdiction": "TH",
+   "status": "queued",
+   "why": "Currently sourced from news reports; a regulator list of licensed sellers should replace them.",
+   "landing_url": "https://www.dtam.moph.go.th/"
+  }
+ ]
+}
