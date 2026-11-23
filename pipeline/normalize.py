@@ -68,7 +68,10 @@ def read_raw(source):
     if ext == 'html':
         tables = pd.read_html(io.StringIO(path.read_text(encoding='utf-8', errors='ignore')), match=parse.get('match', '.+'),
                               header=parse.get('header'))
-        frames = [tables[i] for i in parse['tables']] if 'tables' in parse else [tables[parse.get('table', 0)]]
+        if parse.get('all_tables'):
+            frames = tables
+        else:
+            frames = [tables[i] for i in parse['tables']] if 'tables' in parse else [tables[parse.get('table', 0)]]
         return [r for f in frames for r in f.astype(object).to_dict('records')]
     if ext == 'pdf':
         import pdfplumber
@@ -100,6 +103,9 @@ def value(row, rule):
     if isinstance(rule, list):
         parts = [clean(column(row, c)) for c in rule]
         return clean(' '.join(p for p in parts if p))
+    if 'col_index' in rule and 'regex' not in rule:  # tables whose header names vary
+        vals = list(row.values())
+        return clean(vals[rule['col_index']]) if rule['col_index'] < len(vals) else None
     if 'path' in rule:  # nested JSON, e.g. {"path": ["location", "coordinates", 1]}
         v = row
         for part in rule['path']:
@@ -114,7 +120,8 @@ def value(row, rule):
         text = re.sub(r'\{([^}]+)\}', lambda m: clean(column(row, m.group(1))) or '', rule['template'])
         return clean(re.sub(r'(\s*,)+', ',', text).strip(' ,'))
     if 'regex' in rule:
-        text = clean(column(row, rule['column'])) or ''
+        src = list(row.values())[rule['col_index']] if 'col_index' in rule else column(row, rule['column'])
+        text = clean(src) or ''
         m = re.search(rule['regex'], text)
         return clean(m.group(rule.get('group', 1))) if m else None
     raise ValueError(f'bad map rule {rule}')

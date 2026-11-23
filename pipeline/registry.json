@@ -299,16 +299,14 @@
    "map": {
     "name": "Dispensary Name",
     "street": "Street Address",
-    "city": "City",
-    "lat": "Latitude",
-    "lon": "Longitude"
+    "city": "City"
    },
    "count_columns": [
     "Serves Medical Patients",
     "BLS Region"
    ],
    "label": "dispensaries the State of Illinois lists",
-   "limitations": "The State's map export has no ZIP, phone, website or license number. A dated copy, not a live license verification.",
+   "limitations": "The State's map export has no ZIP, phone, website or license number, and its coordinates are not precise enough to copy. A dated copy, not a live license verification.",
    "evidence_level": "official-portal",
    "cadence_days": 30,
    "status": "active"
@@ -694,12 +692,12 @@
    "kept_rule": "Every licensed compassion center in the Commission's table.",
    "map": {
     "name": "Name",
-    "street": "Address",
+    "address": "Address",
     "phone": "Phone",
-    "license_number": "License Number"
+    "website": "Web Page",
+    "license_number": "License #"
    },
    "label": "compassion centers the Cannabis Control Commission lists",
-   "queue_note": "Column names not yet confirmed; the first run prints them.",
    "evidence_level": "regulator-list",
    "cadence_days": 30,
    "status": "active",
@@ -781,6 +779,206 @@
    "evidence_level": "regulator-list",
    "status": "queued",
    "queue_note": "Licensee websites by county, no store addresses."
+  },
+  {
+   "id": "us-or-olcc-retailers",
+   "jurisdiction": "OR",
+   "scope": "state",
+   "topic": "retail",
+   "publisher": "Oregon Liquor and Cannabis Commission",
+   "title": "OLCC cannabis business licenses and endorsements (Oregon Open Data)",
+   "landing_url": "https://data.oregon.gov/stories/s/h9xu-m9mv",
+   "fetch": {
+    "method": "socrata",
+    "url": "https://data.oregon.gov/resource/q32u-cmam.json",
+    "params": {
+     "$where": "license_type='RECREATIONAL RETAILER' AND license_status='ACTIVE'"
+    }
+   },
+   "keep": [
+    {
+     "column": "license_type",
+     "match": "^RECREATIONAL RETAILER$"
+    },
+    {
+     "column": "license_status",
+     "match": "^ACTIVE$"
+    }
+   ],
+   "kept_rule": "License type Recreational Retailer with license status Active.",
+   "map": {
+    "name": "business_name",
+    "licensee": "business_licenses",
+    "address": "physical_address",
+    "city": {
+     "column": "physical_address",
+     "regex": ",\\s*([^,]+?),?\\s+OR\\b"
+    },
+    "county": "county",
+    "license_number": "license_number",
+    "license_type": "license_type",
+    "status": "license_status"
+   },
+   "count_columns": [
+    "county",
+    "endorsement"
+   ],
+   "label": "retailers the Oregon Liquor and Cannabis Commission lists as active",
+   "evidence_level": "regulator-open-data",
+   "cadence_days": 30,
+   "status": "active"
+  },
+  {
+   "id": "us-nv-ccb-retail-stores",
+   "jurisdiction": "NV",
+   "scope": "state",
+   "topic": "retail-and-medical",
+   "publisher": "Nevada Cannabis Compliance Board",
+   "title": "List of licensees: retail stores",
+   "landing_url": "https://ccb.nv.gov/list-of-licensees/",
+   "fetch": {
+    "method": "html",
+    "url": "https://ccb.nv.gov/list-of-licensees/"
+   },
+   "parse": {
+    "match": "License Number",
+    "all_tables": true
+   },
+   "keep": [
+    {
+     "column": "License Number",
+     "match": "\\S"
+    }
+   ],
+   "kept_rule": "Rows of the Board's retail store tables (southern and northern Nevada) that carry a license number.",
+   "map": {
+    "name": {
+     "col_index": 0,
+     "regex": "^(.*?)\\s+[\\u2013\\u2014-]\\s+"
+    },
+    "address": {
+     "col_index": 0,
+     "regex": "[\\u2013\\u2014-]\\s+(.*?)\\s+[\\u2013\\u2014-]\\s+(?:Adult|Medical)"
+    },
+    "license_type": {
+     "col_index": 0,
+     "regex": "((?:Adult Use|Medical)[^\\u2013\\u2014]*)$"
+    },
+    "license_number": "License Number"
+   },
+   "count_columns": [
+    "Delivery Option"
+   ],
+   "label": "retail stores the Cannabis Compliance Board lists",
+   "queue_note": "Table layout confirmed from the page; first run checks the parse.",
+   "evidence_level": "regulator-list",
+   "cadence_days": 30,
+   "status": "active"
+  },
+  {
+   "id": "us-wa-lcb-licensees",
+   "jurisdiction": "WA",
+   "scope": "state",
+   "topic": "retail",
+   "publisher": "Washington State Liquor and Cannabis Board",
+   "title": "Frequently requested lists: cannabis applicants and licensees",
+   "landing_url": "https://lcb.wa.gov/records/frequently-requested-lists",
+   "fetch": {
+    "method": "manual"
+   },
+   "evidence_level": "regulator-list",
+   "status": "queued",
+   "queue_note": "Held for the owner: the page says lists obtained under the Public Records Act may not be used for commercial purposes (RCW 42.56.070(8))."
+  },
+  {
+   "id": "us-ca-dcc-retailers",
+   "jurisdiction": "CA",
+   "scope": "state",
+   "topic": "retail",
+   "publisher": "California Department of Cannabis Control",
+   "title": "Search for a licensed business / DCA iServices license API",
+   "landing_url": "https://cannabis.ca.gov/resources/search-for-licensed-business",
+   "fetch": {
+    "method": "manual"
+   },
+   "evidence_level": "regulator-list",
+   "status": "queued",
+   "queue_note": "No public download; the official bulk API needs a free account and key (owner decision). The search app's backend is undocumented."
+  },
+  {
+   "id": "us-co-med-stores",
+   "jurisdiction": "CO",
+   "scope": "state",
+   "topic": "retail",
+   "publisher": "Colorado Marijuana Enforcement Division",
+   "title": "Licensed facilities: stores (monthly lists)",
+   "landing_url": "https://med.colorado.gov/licensee-information-and-lookup-tool/licensed-facilities",
+   "fetch": {
+    "method": "manual"
+   },
+   "evidence_level": "regulator-list",
+   "status": "queued",
+   "queue_note": "Monthly lists are linked spreadsheets whose addresses could not be confirmed; next to script."
+  },
+  {
+   "id": "us-mt-dor-dispensaries",
+   "jurisdiction": "MT",
+   "scope": "state",
+   "topic": "retail-and-medical",
+   "publisher": "Montana Department of Revenue, Cannabis Control Division",
+   "title": "Licensed dispensary locations",
+   "landing_url": "https://revenue.mt.gov/card/cannabis/cannabis-licenses/lists/dispensary-locations",
+   "fetch": {
+    "method": "manual"
+   },
+   "evidence_level": "regulator-list",
+   "status": "queued",
+   "queue_note": "Names, towns and phones only; no street addresses."
+  },
+  {
+   "id": "us-ak-amco-retail",
+   "jurisdiction": "AK",
+   "scope": "state",
+   "topic": "retail",
+   "publisher": "Alaska Alcohol and Marijuana Control Office",
+   "title": "Marijuana license search",
+   "landing_url": "https://www.commerce.alaska.gov/abc/marijuana/Home/licensesearch",
+   "fetch": {
+    "method": "manual"
+   },
+   "evidence_level": "regulator-list",
+   "status": "queued",
+   "queue_note": "Search form only; no list with addresses."
+  },
+  {
+   "id": "us-az-adhs-establishments",
+   "jurisdiction": "AZ",
+   "scope": "state",
+   "topic": "retail-and-medical",
+   "publisher": "Arizona Department of Health Services",
+   "title": "AZ Care Check",
+   "landing_url": "https://azcarecheck.azdhs.gov/",
+   "fetch": {
+    "method": "manual"
+   },
+   "evidence_level": "regulator-list",
+   "status": "queued",
+   "queue_note": "Search portal only; the PDF list dates from 2021."
+  },
+  {
+   "id": "us-nm-ccd-retailers",
+   "jurisdiction": "NM",
+   "scope": "state",
+   "topic": "retail",
+   "publisher": "New Mexico Regulation and Licensing Department, Cannabis Control Division",
+   "title": "Find a dispensary / public license search",
+   "landing_url": "https://crop.rld.nm.gov/dispensaries.html",
+   "fetch": {
+    "method": "manual"
+   },
+   "evidence_level": "regulator-list",
+   "status": "queued",
+   "queue_note": "Pages load data by script; no list or export published."
   }
  ]
 }
