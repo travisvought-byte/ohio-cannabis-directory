@@ -2068,15 +2068,6 @@
    "retrieved_on": "2026-11-01"
   },
   {
-   "id": "natl-mpp-employment-adult",
-   "kind": "compilation",
-   "scope": "national",
-   "publisher": "Marijuana Policy Project",
-   "title": "Cannabis Legalization and Employment Protections (advocacy group’s state table; undated)",
-   "url": "https://www.mpp.org/issues/legalization/cannabis-legalization-and-employment-protections/",
-   "retrieved_on": "2026-11-15"
-  },
-  {
    "id": "natl-mpp-employment-medical",
    "kind": "compilation",
    "scope": "national",
@@ -2293,6 +2284,24 @@
    "retrieved_on": "2026-11-15"
   },
   {
+   "id": "ma-gl-94g-2",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Massachusetts Legislature",
+   "title": "General Laws c. 94G, § 2",
+   "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXV/Chapter94G/Section2",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "ma-law-library-mmj",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Massachusetts Trial Court Law Libraries",
+   "title": "Massachusetts law about medical marijuana (updated October 22, 2026)",
+   "url": "https://www.mass.gov/info-details/massachusetts-law-about-medical-marijuana",
+   "retrieved_on": "2026-11-23"
+  },
+  {
    "id": "mi-ag-expungement-assistance",
    "kind": "government",
    "scope": "state",
@@ -2374,6 +2383,15 @@
    "retrieved_on": "2026-11-15"
   },
   {
+   "id": "va-code-40-1-27-4",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Virginia General Assembly",
+   "title": "Code of Virginia § 40.1-27.4",
+   "url": "https://law.lis.virginia.gov/vacode/40.1-27.4/",
+   "retrieved_on": "2026-11-23"
+  },
+  {
    "id": "nv-nrs-179-271",
    "kind": "statute",
    "scope": "state",
@@ -2381,6 +2399,15 @@
    "title": "NRS 179.271, sealing of records after decriminalization of offense (chapter 179, revised April 15, 2026)",
    "url": "https://www.leg.state.nv.us/nrs/nrs-179.html",
    "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "nv-nrs-678c",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Nevada Legislature",
+   "title": "NRS chapter 678C (revised April 15, 2026), NRS 678C.850",
+   "url": "https://www.leg.state.nv.us/NRS/NRS-678C.html",
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "me-courts-sealing",
@@ -2408,6 +2435,42 @@
    "title": "D.C. Law 24-284, Second Chance Amendment Act of 2022 (effective March 10, 2023)",
    "url": "https://code.dccouncil.gov/us/dc/council/laws/24-284",
    "retrieved_on": "2026-11-15"
+  },
+  {
+   "id": "dc-code-32-951-02",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Council of the District of Columbia",
+   "title": "D.C. Code § 32-951.02, employment protections (marked Not Funded)",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/32-951.02",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "dc-council-unfunded-2026-07",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Council of the District of Columbia",
+   "title": "Currently Unfunded Laws: Legislation Passed Subject to Funding (quarterly report, July 15, 2026)",
+   "url": "https://dccouncil.gov/wp-content/uploads/2026/08/2026-07-15-Subject-to-Funding-Legislation-quarterly-report.pdf",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "dc-code-1-620-62",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Council of the District of Columbia",
+   "title": "D.C. Code § 1-620.62, protections for qualifying medical marijuana patients",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-620.62",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "dc-code-32-931",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Council of the District of Columbia",
+   "title": "D.C. Code § 32-931, restriction on pre-employment marijuana testing",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/32-931",
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "de-code-11-43-vii",
@@ -2488,15 +2551,6 @@
    "publisher": "New Mexico Regulation and Licensing Department",
    "title": "NMSA 1978, Chapter 26, Article 2B, Lynn and Erin Compassionate Use Act (copy posted by the department, August 2023)",
    "url": "https://www.rld.nm.gov/wp-content/uploads/2023/08/ARTICLE-2B-Lynn-and-Erin-Compassionate-Use-Act-_-Chapter-26-Drugs-and-Cosmetics.pdf",
-   "retrieved_on": "2026-11-15"
-  },
-  {
-   "id": "ut-code-26b-4-part2",
-   "kind": "statute",
-   "scope": "state",
-   "publisher": "Utah State Legislature",
-   "title": "Utah Code Title 26B, chapter 4, part 2, cannabinoid research and medical cannabis (§§ 26B-4-207 and 26B-4-211)",
-   "url": "https://le.utah.gov/xcode/Title26B/Chapter4/C26B-4-P2_2023050320230503.pdf",
    "retrieved_on": "2026-11-15"
   },
   {
@@ -2698,6 +2752,15 @@
    "retrieved_on": "2026-11-16"
   },
   {
+   "id": "ar-hb1851-2021",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Arkansas General Assembly",
+   "title": "HB1851 (2021 Regular Session), bill detail and history",
+   "url": "https://arkleg.state.ar.us/Bills/Detail?id=HB1851&ddBienniumSession=2021%2F2021R",
+   "retrieved_on": "2026-11-23"
+  },
+  {
    "id": "la-ccrp-977",
    "kind": "statute",
    "scope": "state",
@@ -2714,6 +2777,15 @@
    "title": "Code of Criminal Procedure Art. 983, costs of expungement of a record",
    "url": "https://legis.la.gov/legis/Law.aspx?d=919675",
    "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "la-hb313-2024",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Louisiana State Legislature",
+   "title": "HB313 (2024 Regular Session), bill information and history",
+   "url": "https://legis.la.gov/legis/BillInfo.aspx?&i=245951",
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "fl-fdle-seal-expunge",
@@ -2750,6 +2822,24 @@
    "title": "Iowa Code chapter 901C, expungement of criminal records (2026)",
    "url": "https://www.legis.iowa.gov/docs/code/2026/901C.html",
    "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "ia-code-124e-21",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Iowa Legislature",
+   "title": "Iowa Code 2026, § 124E.21, employer regulation of marijuana use",
+   "url": "https://www.legis.iowa.gov/docs/code/2026/124E.21.pdf",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "ia-code-124e-24",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Iowa Legislature",
+   "title": "Iowa Code 2026, § 124E.24, limitation of liability",
+   "url": "https://www.legis.iowa.gov/docs/code/2026/124E.24.pdf",
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "sc-solicitor11-expungement",
@@ -2833,6 +2923,33 @@
    "retrieved_on": "2026-11-16"
   },
   {
+   "id": "ky-krs-218b-040",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Kentucky General Assembly",
+   "title": "KRS 218B.040, employer not required to permit or accommodate use",
+   "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=54282",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "ky-krs-218b-045",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Kentucky General Assembly",
+   "title": "KRS 218B.045, patient rights under state and local law",
+   "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=55795",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "ky-omc-patient-faq",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Kentucky Office of Medical Cannabis",
+   "title": "FAQs: patient and caregiver questions",
+   "url": "https://kymedcan.ky.gov/FAQs/Pages/Patient-and-Caregiver-Questions.aspx",
+   "retrieved_on": "2026-11-23"
+  },
+  {
    "id": "ms-mmcp-faq",
    "kind": "regulator",
    "scope": "state",
@@ -2860,6 +2977,24 @@
    "retrieved_on": "2026-11-16"
   },
   {
+   "id": "ut-code-34a-5-115",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Utah State Legislature",
+   "title": "Utah Code § 34A-5-115, nondiscrimination for medical cannabis use while employed by the government (effective May 1, 2024)",
+   "url": "https://le.utah.gov/xcode/Title34A/Chapter5/C34A-5-S115_2024050120240501.html",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "ut-code-26b-4-207",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Utah State Legislature",
+   "title": "Utah Code § 26B-4-207 (effective May 1, 2024)",
+   "url": "https://le.utah.gov/xcode/Title26B/Chapter4/C26B-4-S207_2024050120240501.html",
+   "retrieved_on": "2026-11-23"
+  },
+  {
    "id": "fl-ommu-faq",
    "kind": "regulator",
    "scope": "state",
@@ -2867,6 +3002,15 @@
    "title": "Frequently asked questions",
    "url": "https://knowthefactsmmj.com/about/faq/",
    "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "fl-stat-381-986",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "The Florida Senate",
+   "title": "2026 Florida Statutes, s. 381.986, medical use of marijuana",
+   "url": "https://m.flsenate.gov/statutes/381.986",
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "ok-omma-rights",
@@ -2905,6 +3049,42 @@
    "retrieved_on": "2026-11-16"
   },
   {
+   "id": "hi-hrs-329-122",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Hawaii State Legislature",
+   "title": "HRS § 329-122, medical use of cannabis; conditions of use",
+   "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol06_Ch0321-0344/HRS0329/HRS_0329-0122.htm",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "hi-hrs-329-125-5",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Hawaii State Legislature",
+   "title": "HRS § 329-125.5, medical cannabis patient and caregiver protections",
+   "url": "https://data.capitol.hawaii.gov/hrscurrent/Vol06_Ch0321-0344/HRS0329/HRS_0329-0125_0005.htm",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "hi-hcrc-har-12-46-9",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Hawaii Civil Rights Commission",
+   "title": "Hawaii Administrative Rules, Title 12, Chapter 46, Subchapter 9 (disability discrimination), amended July 19, 2025",
+   "url": "https://labor.hawaii.gov/hcrc/find-a-law/hawaii-administrative-rules-9/",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "hi-lrb-acts-2026",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Hawaii Legislative Reference Bureau",
+   "title": "2026 Acts list (as of July 15, 2026)",
+   "url": "https://lrb.hawaii.gov/wp-content/uploads/2026_Acts.pdf",
+   "retrieved_on": "2026-11-23"
+  },
+  {
    "id": "nd-hhs-patients",
    "kind": "regulator",
    "scope": "state",
@@ -2914,6 +3094,24 @@
    "retrieved_on": "2026-11-16"
   },
   {
+   "id": "nd-ndcc-19-24-1",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "North Dakota Legislative Branch",
+   "title": "N.D. Cent. Code chapter 19-24.1, medical marijuana",
+   "url": "https://ndlegis.gov/cencode/t19c24-1.pdf",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "nd-ndcc-14-02-4",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "North Dakota Legislative Branch",
+   "title": "N.D. Cent. Code chapter 14-02.4, human rights",
+   "url": "https://ndlegis.gov/cencode/t14c02-4.pdf",
+   "retrieved_on": "2026-11-23"
+  },
+  {
    "id": "al-amcc-faq",
    "kind": "regulator",
    "scope": "state",
@@ -2921,6 +3119,15 @@
    "title": "Frequently asked questions",
    "url": "https://amcc.alabama.gov/frequently-asked-questions/",
    "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "al-amcc-statute",
+   "kind": "regulator",
+   "scope": "state",
+   "publisher": "Alabama Medical Cannabis Commission",
+   "title": "Alabama Medical Cannabis Statute, updated November 2024 (Title 20, Chapter 2A)",
+   "url": "https://amcc.alabama.gov/wp-content/uploads/2024/11/Alabama-Medical-Cannabis-Statute-updated-November-2024.pdf",
+   "retrieved_on": "2026-11-23"
   },
   {
    "id": "ms-hb1280-2026",
@@ -2995,6 +3202,24 @@
    "retrieved_on": "2026-11-23"
   },
   {
+   "id": "ga-hb324-2019",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Office of the Governor of Georgia",
+   "title": "HB 324 (2019), signed legislation, as passed House and Senate",
+   "url": "https://gov.georgia.gov/document/signed-legislation/hb-324pdf/download",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "ga-doas-mmj-faq",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Georgia Department of Administrative Services",
+   "title": "Medical Marijuana FAQ for state agencies (November 2025)",
+   "url": "https://doas.ga.gov/sites/default/files/2025-11/Medical%20Marijuana%20FAQ.pdf",
+   "retrieved_on": "2026-11-23"
+  },
+  {
    "id": "tn-knox-dag-expungements",
    "kind": "government",
    "scope": "state",
@@ -3049,12 +3274,39 @@
    "retrieved_on": "2026-11-23"
   },
   {
+   "id": "md-ch183-2026",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Maryland General Assembly",
+   "title": "2026 Regular Session, Chapter 183 (SB 439), enrolled text",
+   "url": "https://mgaleg.maryland.gov/2026RS/Chapters_noln/CH_183_sb0439t.pdf",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "md-sg-20-606",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Maryland General Assembly",
+   "title": "Md. Code, State Government § 20-606",
+   "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gsg&section=20-606",
+   "retrieved_on": "2026-11-23"
+  },
+  {
    "id": "mo-courts-marijuana-expungement",
    "kind": "government",
    "scope": "state",
    "publisher": "Missouri Courts",
    "title": "Marijuana Expungement (clerk resources; webinar Q&A updated December 2, 2024)",
    "url": "https://www.courts.mo.gov/page.jsp?id=110936",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "mo-const-art14-1",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Missouri Revisor of Statutes",
+   "title": "Missouri Constitution, Article XIV, Section 1, right to access medical marijuana (effective December 8, 2022)",
+   "url": "https://revisor.mo.gov/main/OneSection.aspx?section=XIV++++1",
    "retrieved_on": "2026-11-23"
   },
   {
@@ -3073,6 +3325,15 @@
    "publisher": "New Mexico Courts, Administrative Office of the Courts",
    "title": "Expungement (Office of General Counsel; last modified July 2, 2024)",
    "url": "https://nmcourts.gov/court-administration/office-of-general-counsel/expungement",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "nm-sb129-2026",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "New Mexico Legislature",
+   "title": "SB 129 (2026 Regular Session), adverse employment action and cannabis: bill status",
+   "url": "https://www.nmlegis.gov/Legislation/Legislation?chamber=S&legType=B&legNo=129&year=26",
    "retrieved_on": "2026-11-23"
   },
   {
@@ -3282,12 +3543,13 @@
    "question": "employment",
    "status": "partly-protected",
    "short": "Medical patients and caregivers only",
-   "detail": "Arkansas’s constitution, as amended by the legislature in 2017, bars employers from discriminating in hiring, firing or the terms of employment, or otherwise penalizing a person, for being or having been a qualifying patient or designated caregiver. Employers may still keep a drug-free workplace policy with drug testing and act under it, act on a good-faith belief that a patient used marijuana or was under its influence at work or during work hours (a positive test alone cannot be the basis for that belief), and exclude a patient from a safety-sensitive position on a good-faith belief of current use. Damages are limited to those under the Arkansas Civil Rights Act of 1993, and a claim must be filed within a year. A 2021 bill changed the definition of a safety-sensitive position; the current wording was not checked.",
+   "detail": "Arkansas’s constitution, as amended by the legislature in 2017, bars employers from discriminating in hiring, firing or the terms of employment, or otherwise penalizing a person, for being or having been a qualifying patient or designated caregiver. Employers may still keep a drug-free workplace policy with drug testing and act under it, act on a good-faith belief that a patient used marijuana or was under its influence at work or during work hours (a positive test alone cannot be the basis for that belief), and exclude a patient from a safety-sensitive position on a good-faith belief of current use. Damages are limited to those under the Arkansas Civil Rights Act of 1993, and a claim must be filed within a year. A 2021 bill to change the definition of a safety-sensitive position (HB 1851) was withdrawn and did not pass.",
    "citation": "Ark. Const. amend. 98, § 3(f)(3), as amended by Act 593 of 2017",
    "effective_on": null,
-   "reviewed_on": "2026-11-15",
+   "reviewed_on": "2026-11-23",
    "source_ids": [
-    "ar-act-593-2017"
+    "ar-act-593-2017",
+    "ar-hb1851-2021"
    ]
   },
   {
@@ -3889,13 +4151,17 @@
   {
    "state": "DC",
    "question": "employment",
-   "status": "protected",
-   "short": "Cannabis use, with exceptions",
-   "detail": "An employer may not refuse to hire, fire, suspend, demote, fail to promote or penalize someone for using cannabis, for being a medical cannabis patient, or for cannabinoid metabolites in a drug test without other signs of impairment. Employers may act when the job is designated safety-sensitive, when federal law, a federal contract or funding requires it, when cannabis is used or possessed at work, or when the employee is impaired at work. They may still test after an accident or on reasonable suspicion. The act took effect on October 22, 2022; its protections applied no earlier than 365 days after the Mayor approved it.",
-   "citation": "D.C. Law 24-190, Cannabis Employment Protections Amendment Act of 2022, section 102",
+   "status": "partly-protected",
+   "short": "D.C. agency workers who are medical patients",
+   "detail": "The D.C. Council’s official code marks the private-employer protections of D.C. Law 24-190 (D.C. Code § 32-951.02) as not funded: they take effect only once their cost is in an approved budget, and the Council’s July 15, 2026 report still lists the law as not funded. What is in force: D.C. government agencies may not refuse to hire, fire or penalize someone for being a registered medical marijuana patient, except in safety-sensitive jobs, where federal law conflicts, or for use or impairment at work. Separately, any employer may test an applicant for marijuana only after a conditional job offer, though a positive test can still cost the job.",
+   "citation": "D.C. Code § 1-620.62; D.C. Code § 32-931; D.C. Code § 32-951.02 (D.C. Law 24-190, not funded)",
    "effective_on": null,
-   "reviewed_on": "2026-11-15",
+   "reviewed_on": "2026-11-23",
    "source_ids": [
+    "dc-code-1-620-62",
+    "dc-code-32-931",
+    "dc-code-32-951-02",
+    "dc-council-unfunded-2026-07",
     "dc-law-24-190"
    ]
   },
@@ -4165,6 +4431,20 @@
   },
   {
    "state": "GA",
+   "question": "employment",
+   "status": "not-protected",
+   "short": "Employers may ban on- and off-duty use",
+   "detail": "Georgia’s low-THC oil law, as amended by HB 324 (Georgia’s Hope Act, 2019), says nothing in it requires an employer to permit or accommodate marijuana use in any form or affects an employer’s written zero-tolerance policy against on-duty and off-duty use, or against a detectable amount at work. The text was read in HB 324 as passed, posted by the Governor’s office; the subsection’s current lettering in the official code was not checked. The Department of Administrative Services tells state agencies they need not accommodate certified users.",
+   "citation": "O.C.G.A. § 16-12-191, as amended by 2019 HB 324, § 3; Department of Administrative Services, Medical Marijuana FAQ",
+   "effective_on": null,
+   "reviewed_on": "2026-11-23",
+   "source_ids": [
+    "ga-hb324-2019",
+    "ga-doas-mmj-faq"
+   ]
+  },
+  {
+   "state": "GA",
    "question": "medical",
    "status": "limited",
    "short": "Low-THC oil program only",
@@ -4243,6 +4523,20 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "ia-code-124-401"
+   ]
+  },
+  {
+   "state": "IA",
+   "question": "employment",
+   "status": "not-protected",
+   "short": "Employers may restrict use and keep zero-tolerance testing",
+   "detail": "Iowa’s medical cannabidiol law says nothing in it requires an employer to permit or accommodate marijuana at work, and employers may adopt policies restricting employees’ use, put a no-use clause in contracts and run zero-tolerance or drug-free workplace testing. Another section says the chapter creates no discrimination claim for refusing to hire, firing or disciplining someone over conduct the chapter permits.",
+   "citation": "Iowa Code §§ 124E.21 and 124E.24",
+   "effective_on": null,
+   "reviewed_on": "2026-11-23",
+   "source_ids": [
+    "ia-code-124e-21",
+    "ia-code-124e-24"
    ]
   },
   {
@@ -4576,12 +4870,13 @@
    "question": "employment",
    "status": "partly-protected",
    "short": "State employees who are medical patients",
-   "detail": "Louisiana law bars a state employer from penalizing an employee or job applicant solely for a positive marijuana test if the person has a clinically diagnosed debilitating medical condition and a licensed physician has recommended marijuana under the state’s medical marijuana law. A state employer may still act against an employee who uses or is impaired by marijuana at work or during work hours, or whose main job is to drive or maintain state vehicles or supervise those who do, and the rule does not cover emergency medical services, law enforcement, public safety officials, firefighters or the horse racing commission. The section covers only state employers; a 2024 bill to extend it to city, parish and municipal employers was not checked.",
+   "detail": "Louisiana law bars a state employer from penalizing an employee or job applicant solely for a positive marijuana test if the person has a clinically diagnosed debilitating medical condition and a licensed physician has recommended marijuana under the state’s medical marijuana law. A state employer may still act against an employee who uses or is impaired by marijuana at work or during work hours, or whose main job is to drive or maintain state vehicles or supervise those who do, and the rule does not cover emergency medical services, law enforcement, public safety officials, firefighters or the horse racing commission. The section covers only state employers; a 2024 bill to extend it to city, parish and municipal employers (HB 313) did not pass.",
    "citation": "La. R.S. 49:1016 (Acts 2022, No. 651)",
    "effective_on": null,
-   "reviewed_on": "2026-11-15",
+   "reviewed_on": "2026-11-23",
    "source_ids": [
-    "la-rs-49-1016"
+    "la-rs-49-1016",
+    "la-hb313-2024"
    ]
   },
   {
@@ -4656,13 +4951,13 @@
    "question": "employment",
    "status": "partly-protected",
    "short": "Medical patients, under a court ruling",
-   "detail": "The Cannabis Control Commission tells people to check the rules where they work: employers may have their own policies on marijuana use. The Marijuana Policy Project, an advocacy group, lists a protection for medical patients through a court ruling: the state’s high court held that the anti-discrimination law covers disabled employees who use medical cannabis, so an employer must consider a reasonable accommodation unless it would be an undue hardship (Barbuto v. Advantage Sales and Marketing); that part is not yet checked against an official source.",
-   "citation": "Massachusetts Cannabis Control Commission, Know the laws; Barbuto v. Advantage Sales and Marketing and G.L. c. 151B, § 4, per the Marijuana Policy Project’s chart",
+   "detail": "The adult-use law says it does not require employers to permit or accommodate marijuana use at work and does not affect their power to enforce workplace policies restricting employees’ use. The Trial Court Law Libraries’ guide summarizes the Supreme Judicial Court’s ruling in Barbuto v. Advantage Sales and Marketing (2017): an employee fired for using medical marijuana off-site, and not before or during work, may sue for handicap discrimination. The medical-use law itself has no employment language. The opinion was summarized from the Law Libraries’ guide; it was not read on a court site.",
+   "citation": "G.L. c. 94G, § 2(e); Barbuto v. Advantage Sales and Marketing, LLC, 477 Mass. 456 (2017), per the Trial Court Law Libraries",
    "effective_on": null,
-   "reviewed_on": "2026-11-15",
+   "reviewed_on": "2026-11-23",
    "source_ids": [
-    "ma-ccc-laws",
-    "natl-mpp-employment-medical"
+    "ma-gl-94g-2",
+    "ma-law-library-mmj"
    ]
   },
   {
@@ -4789,13 +5084,14 @@
    "question": "employment",
    "status": "partly-protected",
    "short": "Fire and rescue workers who are patients",
-   "detail": "The Maryland Cannabis Administration says the Cannabis Reform Act does not address cannabis use or impairment in the workplace, or employer drug screening: people remain subject to existing laws and to workplace policies, including policies that ban cannabis use. The Marijuana Policy Project, an advocacy group, lists one protection, for fire and rescue employees who are certified medical cannabis patients (Md. Code, State Gov’t § 20-606); that part is not yet checked against the state’s own law.",
-   "citation": "Maryland Cannabis Administration, Adult-use cannabis FAQs; Md. Code, State Gov’t § 20-606, per the Marijuana Policy Project’s chart",
-   "effective_on": null,
-   "reviewed_on": "2026-11-15",
+   "detail": "Chapter 183 of the 2026 session (SB 439) bars employers from firing, disciplining or otherwise discriminating against a public fire and rescue employee (firefighters, EMTs, cardiac rescue technicians and paramedics) for holding a valid medical cannabis certification or testing positive while holding one. Employers may still ban working while impaired or using cannabis on duty, and need not break federal law or lose a federal benefit. The Maryland Cannabis Administration says the adult-use law does not address workplace use or employer drug testing, so other workers remain subject to workplace policies.",
+   "citation": "Md. Code, State Gov’t § 20-606, as amended by 2026 Md. Laws ch. 183 (SB 439); Maryland Cannabis Administration, Adult-use cannabis FAQs",
+   "effective_on": "2026-10-01",
+   "reviewed_on": "2026-11-23",
    "source_ids": [
-    "md-mca-faq",
-    "natl-mpp-employment-medical"
+    "md-ch183-2026",
+    "md-sg-20-606",
+    "md-mca-faq"
    ]
   },
   {
@@ -5314,15 +5610,14 @@
    "state": "MO",
    "question": "employment",
    "status": "partly-protected",
-   "short": "Medical patients; adult-use section gives none",
-   "detail": "Missouri’s Department of Health and Senior Services says Article XIV of the state constitution, sections 1 and 2, provides certain employment-related protections for patients and consumers, and that employment questions are outside its authority. Section 2, the adult-use section, gives employees and applicants no protection: it does not require an employer to permit or accommodate the conduct it allows, and does not stop an employer from refusing to hire, firing or disciplining someone for working while under the influence of marijuana. The Marijuana Policy Project, an advocacy group, lists protections for medical patients in section 1 covering lawful use off the premises in nonworking hours and positive drug tests, with exceptions for impairment at work, loss of a federal benefit and jobs where use affects performance or safety; section 1 was not read, so that part is not yet checked against the state’s own text.",
-   "citation": "Mo. Const. art. XIV, § 2, subsection 3(3); Department of Health and Senior Services’ FAQ; Marijuana Policy Project’s chart of state medical cannabis employment protections",
+   "short": "Medical cardholders only, with job-safety exceptions",
+   "detail": "Article XIV, section 1 of the Missouri Constitution bars employers from discriminating in hiring, firing or terms of employment against a qualifying patient or caregiver with a valid card, including for legal use off the employer’s premises outside work hours, or for a positive test, unless the person used, possessed or was under the influence at work or during work hours. It does not apply where acting otherwise would cost the employer a federal monetary or licensing benefit, or to jobs where use affects job performance or others’ safety or conflicts with a bona fide occupational qualification. The adult-use section (section 2) gives employees and applicants no protection.",
+   "citation": "Mo. Const. art. XIV, § 1, subd. 7(15); art. XIV, § 2",
    "effective_on": null,
-   "reviewed_on": "2026-11-15",
+   "reviewed_on": "2026-11-23",
    "source_ids": [
-    "mo-const-art14-2",
-    "mo-dhss-adult-faq",
-    "natl-mpp-employment-medical"
+    "mo-const-art14-1",
+    "mo-const-art14-2"
    ]
   },
   {
@@ -5930,13 +6225,14 @@
    "question": "employment",
    "status": "partly-protected",
    "short": "Medical patients; not safety-sensitive jobs",
-   "detail": "New Mexico’s medical cannabis law makes it unlawful, unless it would cost the employer a monetary or licensing benefit under federal law, to take adverse employment action against an applicant or employee for conduct the law allows. Employers may still prohibit or act on use of, or impairment by, medical cannabis at work or during work hours, and the protection does not apply where the employer deems the job safety-sensitive. The adult-use law gives no such protection: it preserves an employer’s right to act on impairment, possession or use at work and to adopt a written zero-tolerance policy that may allow discipline or firing for a positive drug test. Both texts are the Regulation and Licensing Department’s August 2023 copies; a 2026 Senate bill (SB 129) would remove the safety-sensitive exception, and whether it became law was not checked.",
+   "detail": "New Mexico’s medical cannabis law makes it unlawful, unless it would cost the employer a monetary or licensing benefit under federal law, to take adverse employment action against an applicant or employee for conduct the law allows. Employers may still prohibit or act on use of, or impairment by, medical cannabis at work or during work hours, and the protection does not apply where the employer deems the job safety-sensitive. The adult-use law gives no such protection: it preserves an employer’s right to act on impairment, possession or use at work and to adopt a written zero-tolerance policy that may allow discipline or firing for a positive drug test. Both texts are the Regulation and Licensing Department’s August 2023 copies; a 2026 Senate bill to remove the safety-sensitive exception (SB 129) died in committee.",
    "citation": "NMSA 1978, §§ 26-2B-9 and 26-2C-34, per the Regulation and Licensing Department’s posted copies (August 2023)",
    "effective_on": "2019-06-14",
-   "reviewed_on": "2026-11-15",
+   "reviewed_on": "2026-11-23",
    "source_ids": [
     "nm-nmsa-26-2b",
-    "nm-nmsa-26-2c"
+    "nm-nmsa-26-2c",
+    "nm-sb129-2026"
    ]
   },
   {
@@ -6062,15 +6358,15 @@
    "state": "NV",
    "question": "employment",
    "status": "partly-protected",
-   "short": "Job applicants and medical patients",
-   "detail": "It is unlawful for a Nevada employer to refuse to hire a prospective employee because a screening test shows marijuana. That does not cover applicants to be firefighters or emergency medical technicians, jobs that require driving and for which law requires screening tests, or jobs the employer determines could adversely affect the safety of others. It gives way to an employment contract or collective bargaining agreement and to federal law, and does not cover positions funded by a federal grant. The Marijuana Policy Project, an advocacy group, lists no protection for current employees’ adult use, and lists a duty to try to reasonably accommodate medical cardholders’ use away from work (NRS 678C.850); those two points are not yet checked against the state’s own law.",
-   "citation": "NRS 613.132; Marijuana Policy Project’s table and chart for the other points",
+   "short": "Applicants; medical cardholders get accommodation",
+   "detail": "NRS 613.132 makes it unlawful to refuse to hire an applicant because a screening test shows marijuana, except for firefighters, EMTs, safety-sensitive and required-testing driving jobs, federally funded jobs, or where a contract, bargaining agreement or federal law conflicts. For medical cardholders, NRS 678C.850 says employers need not allow use at work but must try to make reasonable accommodations for the cardholder’s medical needs unless that would threaten harm, impose an undue hardship or keep the employee from doing the job; law enforcement agencies may ban use. The adult-use chapter (NRS 678D.510) leaves employers free to enforce workplace policies on adult use. NRS 613.333 (lawful products) does not name cannabis.",
+   "citation": "NRS 613.132; NRS 678C.850; NRS 678D.510(1)(a)",
    "effective_on": null,
-   "reviewed_on": "2026-11-15",
+   "reviewed_on": "2026-11-23",
    "source_ids": [
     "nv-nrs-613-132",
-    "natl-mpp-employment-adult",
-    "natl-mpp-employment-medical"
+    "nv-nrs-678c",
+    "nv-nrs-678d"
    ]
   },
   {
@@ -7021,14 +7317,14 @@
    "state": "UT",
    "question": "employment",
    "status": "partly-protected",
-   "short": "Public employees who are medical patients",
-   "detail": "Utah’s medical cannabis law says it does not require a private employer to accommodate medical cannabis use or limit a private employer’s policies restricting use by applicants or employees. When a state or local government employee or officer considers a person’s lawful medical cannabis possession or use, it may not be treated differently from lawful use of a prescribed controlled substance. The Marijuana Policy Project, an advocacy group, lists a further rule that a state or local government employee with a medical cannabis card may not be retaliated against for a failed drug test without evidence of impairment, with exceptions tied to federal funding, clearances and licenses; that rule was not found in the 2024 text of § 26B-4-207 as read and is not yet checked against the state’s own law.",
-   "citation": "Utah Code §§ 26B-4-207 and 26B-4-211; Marijuana Policy Project’s chart of state medical cannabis employment protections",
-   "effective_on": null,
-   "reviewed_on": "2026-11-15",
+   "short": "Government workers with medical cards only",
+   "detail": "Since May 1, 2024, Utah Code § 34A-5-115 lets a state or local government employer act against an employee for a failed drug test from lawfully used medical cannabis, or for holding a medical cannabis card, only if it would do the same for a lawfully used prescribed controlled substance, under a written policy that treats the two alike. Exceptions cover jobs where use would put federal funding, a federal security clearance or background determination, or a license or peace officer certification at risk; complaints go to the Labor Commission. Neither § 34A-5-115 nor § 26B-4-207 requires private employers to accommodate medical cannabis.",
+   "citation": "Utah Code § 34A-5-115; § 26B-4-207(3)",
+   "effective_on": "2024-05-01",
+   "reviewed_on": "2026-11-23",
    "source_ids": [
-    "ut-code-26b-4-part2",
-    "natl-mpp-employment-medical"
+    "ut-code-34a-5-115",
+    "ut-code-26b-4-207"
    ]
   },
   {
@@ -7101,14 +7397,14 @@
    "state": "VA",
    "question": "employment",
    "status": "partly-protected",
-   "short": "Some medical cannabis use only",
-   "detail": "Virginia’s Cannabis Control Authority says workplaces and employers may still prohibit cannabis use by their employees and enforce drug testing, and that Virginia law protects some medical cannabis use from employment action, though perhaps not for every medical user. The Marijuana Policy Project, an advocacy group, lists that protection as covering employees who use cannabis oil under a valid written certification, with exceptions for impairment or possession at work, federal law and some defense-industry employers (Va. Code § 40.1-27.4); that part is not yet checked against the state’s own law.",
-   "citation": "Virginia Cannabis Control Authority, Frequently asked questions; Va. Code § 40.1-27.4, per the Marijuana Policy Project’s chart",
+   "short": "Medical cannabis oil users only",
+   "detail": "Va. Code § 40.1-27.4 bars employers, including the Commonwealth and its localities, from firing, disciplining or discriminating against an employee for lawful use of cannabis oil under a practitioner’s written certification. Employers may still act on impairment at work and bar possession during work hours, need not break federal law or lose a federal contract or funding, and defense contractors need not hire or keep someone testing above set THC levels. Law enforcement officers are not covered. The Cannabis Control Authority says employers may otherwise prohibit cannabis use and drug-test.",
+   "citation": "Va. Code § 40.1-27.4; Virginia Cannabis Control Authority, Frequently asked questions",
    "effective_on": null,
-   "reviewed_on": "2026-11-15",
+   "reviewed_on": "2026-11-23",
    "source_ids": [
-    "va-cca-faq",
-    "natl-mpp-employment-medical"
+    "va-code-40-1-27-4",
+    "va-cca-faq"
    ]
   },
   {
@@ -7619,6 +7915,21 @@
   },
   {
    "state": "KY",
+   "question": "employment",
+   "status": "not-protected",
+   "short": "Employers may restrict use, test and fire",
+   "detail": "Kentucky’s medical cannabis law (in effect January 1, 2025) says nothing in it requires an employer to permit or accommodate medical cannabis at work, stops employers from restricting employees’ use or enforcing drug-testing and zero-tolerance policies, or allows a wrongful-discharge or discrimination suit. The Office of Medical Cannabis says workers can be dismissed for on-site use if the employer does not allow it. A separate section gives patients the same rights as prescription-drug users, but only for drug testing that state or local law requires.",
+   "citation": "KRS 218B.040; KRS 218B.045(1); Office of Medical Cannabis, patient and caregiver FAQs",
+   "effective_on": "2025-01-01",
+   "reviewed_on": "2026-11-23",
+   "source_ids": [
+    "ky-krs-218b-040",
+    "ky-krs-218b-045",
+    "ky-omc-patient-faq"
+   ]
+  },
+  {
+   "state": "KY",
    "question": "public-use",
    "status": "limited",
    "short": "No smoking; barred at schools, jails, federal property",
@@ -7763,6 +8074,19 @@
   },
   {
    "state": "FL",
+   "question": "employment",
+   "status": "not-protected",
+   "short": "No workplace accommodation; drug-free policies allowed",
+   "detail": "Florida’s medical marijuana law says it does not limit an employer’s drug-free workplace program or policy, does not require an employer to accommodate medical use in any workplace or an employee working under the influence, and creates no claim for wrongful discharge or discrimination. Case law on off-duty use was not checked.",
+   "citation": "Fla. Stat. § 381.986(15)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-23",
+   "source_ids": [
+    "fl-stat-381-986"
+   ]
+  },
+  {
+   "state": "FL",
    "question": "home-grow",
    "status": "not-permitted",
    "short": "No",
@@ -7880,6 +8204,22 @@
    ]
   },
   {
+   "state": "HI",
+   "question": "employment",
+   "status": "partly-protected",
+   "short": "Disability accommodation may cover medical cannabis",
+   "detail": "Hawaii’s medical cannabis law does not authorize use at work, and its patient-protection section covers schools, landlords, medical care and custody, not employers. The Hawaii Civil Rights Commission’s disability rules, amended effective July 19, 2025, say a reasonable accommodation request can concern drug-testing policies, including tests for medical cannabis, and do not count state-lawful medical cannabis as illegal drug use. No law bars firing a patient outright. A 2026 bill to ban employment discrimination against patients (SB 2998) does not appear in the Legislative Reference Bureau’s list of 2026 acts.",
+   "citation": "HRS §§ 329-122(e) and 329-125.5; Haw. Admin. R. §§ 12-46-182 and 12-46-187(a) (amended July 19, 2025)",
+   "effective_on": "2025-07-19",
+   "reviewed_on": "2026-11-23",
+   "source_ids": [
+    "hi-hrs-329-122",
+    "hi-hrs-329-125-5",
+    "hi-hcrc-har-12-46-9",
+    "hi-lrb-acts-2026"
+   ]
+  },
+  {
    "state": "ND",
    "question": "buying",
    "status": "medical-only",
@@ -7893,6 +8233,20 @@
    ]
   },
   {
+   "state": "ND",
+   "question": "employment",
+   "status": "not-protected",
+   "short": "Employers may discipline, even for THC in system",
+   "detail": "North Dakota’s medical marijuana law protects registered patients from arrest and prosecution, but section 19-24.1-34 says the chapter does not stop an employer from disciplining an employee for possessing or using marijuana at work, working under the influence, or working with marijuana in the employee’s system. The state’s off-duty conduct law (14-02.4-03) protects lawful activity away from work during nonworking hours and does not mention marijuana; no official source tying it to cannabis was found.",
+   "citation": "N.D. Cent. Code §§ 19-24.1-34(2) and 14-02.4-03",
+   "effective_on": null,
+   "reviewed_on": "2026-11-23",
+   "source_ids": [
+    "nd-ndcc-19-24-1",
+    "nd-ndcc-14-02-4"
+   ]
+  },
+  {
    "state": "AL",
    "question": "buying",
    "status": "medical-only",
@@ -7903,6 +8257,19 @@
    "reviewed_on": "2026-11-17",
    "source_ids": [
     "al-amcc-faq"
+   ]
+  },
+  {
+   "state": "AL",
+   "question": "employment",
+   "status": "not-protected",
+   "short": "Employers may refuse to hire or fire for medical use",
+   "detail": "Alabama’s medical cannabis law says it does not require employers to permit or accommodate medical cannabis use, does not stop them from refusing to hire, firing or disciplining someone for that use whether or not the person is impaired, and gives no right to sue an employer over it. Drug-testing and drug-free workplace policies stay in place. Read in the Alabama Medical Cannabis Commission’s copy of the statute (updated November 2024); the Legislature’s own code page could not be read, and later amendments were not checked.",
+   "citation": "Ala. Code § 20-2A-6(a)(2), (a)(3), (a)(7), per the Alabama Medical Cannabis Commission",
+   "effective_on": null,
+   "reviewed_on": "2026-11-23",
+   "source_ids": [
+    "al-amcc-statute"
    ]
   }
  ]
