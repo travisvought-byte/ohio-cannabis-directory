@@ -1,0 +1,269 @@
+{
+  "reviewed_on": "2026-11-23",
+  "recheck_on": "2027-02-21",
+  "method": "Community groups and events read on each group's or organizer's own site, November 23, 2026. Groups were listed only with a 2026-dated item on their own site; events only with explicit dates and a New York place. National organizations and events with no venue were left out.",
+  "sources": {
+    "cany-home": {
+      "url": "https://www.cany.org/",
+      "source_kind": "provider",
+      "limitations": "Organization's own page reviewed November 23, 2026. Membership terms, meeting schedules and current programs were not confirmed; no contact was made."
+    },
+    "cany-contact": {
+      "url": "https://www.cany.org/contact/",
+      "source_kind": "provider",
+      "limitations": "Organization's own page reviewed November 23, 2026. Membership terms, meeting schedules and current programs were not confirmed; no contact was made."
+    },
+    "cany-2026": {
+      "url": "https://www.cany.org/2026/02/",
+      "source_kind": "provider",
+      "limitations": "Organization's own page reviewed November 23, 2026. Membership terms, meeting schedules and current programs were not confirmed; no contact was made."
+    },
+    "esgsa-home": {
+      "url": "https://www.greenstandardalliance.org/",
+      "source_kind": "provider",
+      "limitations": "Organization's own page reviewed November 23, 2026. Membership terms, meeting schedules and current programs were not confirmed; no contact was made."
+    },
+    "hub-home": {
+      "url": "https://thebronxcannabishub.org/",
+      "source_kind": "provider",
+      "limitations": "Organization's own page reviewed November 23, 2026. Membership terms, meeting schedules and current programs were not confirmed; no contact was made."
+    },
+    "nysba-cannabis": {
+      "url": "https://nysba.org/am2027-cannabis-law-section/",
+      "source_kind": "provider",
+      "limitations": "Organizer event page reviewed November 23, 2026. Times, speakers and registration terms are set by the organizer and may change."
+    },
+    "suny-conf": {
+      "url": "https://sunyniagara.edu/cannabisconference/2026-suny-cannabis-conference-suny-niagara-speaker-information/",
+      "source_kind": "provider",
+      "limitations": "Organizer event page reviewed November 23, 2026. Times, speakers and registration terms are set by the organizer and may change. The page address still reads 2026; its heading and dates say 2027."
+    },
+    "flower-ny": {
+      "url": "https://theflowerexpo.com/new-york/",
+      "source_kind": "provider",
+      "limitations": "Organizer event page reviewed November 23, 2026. Times, speakers and registration terms are set by the organizer and may change. Business-to-business show for licensed operators."
+    }
+  },
+  "organizations": [
+    {
+      "id": "org-ny-cannabis-association-of-new-york",
+      "name": "Cannabis Association of New York (CANY)",
+      "kind": "community",
+      "website": "https://www.cany.org/",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "607-205-8686"
+        },
+        {
+          "kind": "email",
+          "value": "members@cany.org"
+        }
+      ]
+    },
+    {
+      "id": "org-ny-empire-state-green-standard-alliance",
+      "name": "Empire State Green Standard Alliance",
+      "kind": "community",
+      "website": "https://www.greenstandardalliance.org/",
+      "contacts": []
+    },
+    {
+      "id": "org-ny-bronx-cannabis-hub",
+      "name": "The Bronx Cannabis Hub",
+      "kind": "community",
+      "website": "https://thebronxcannabishub.org/",
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "info@thebronxcannabishub.org"
+        }
+      ]
+    },
+    {
+      "id": "org-ny-new-york-state-bar-association",
+      "name": "New York State Bar Association",
+      "kind": "community",
+      "website": "https://nysba.org/",
+      "contacts": []
+    },
+    {
+      "id": "org-ny-suny-niagara",
+      "name": "SUNY Niagara",
+      "kind": "community",
+      "website": "https://sunyniagara.edu/",
+      "contacts": []
+    },
+    {
+      "id": "org-flower-expo",
+      "name": "Flower Expo",
+      "kind": "community",
+      "website": "https://theflowerexpo.com/",
+      "contacts": []
+    }
+  ],
+  "services": [
+    {
+      "id": "svc-ny-cany",
+      "organization_id": "org-ny-cannabis-association-of-new-york",
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "Cannabis Association of New York (CANY)",
+      "description": "Statewide industry association that says it represents the whole cannabis supply chain in New York, with members across the state.",
+      "audiences": [
+        "business"
+      ],
+      "eligibility": "Membership is for cannabis businesses and companies that work with them; confirm terms with CANY.",
+      "next_step": {
+        "label": "Open CANY",
+        "url": "https://www.cany.org/"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "cany-home",
+          "value": "CANY describes members stretching across New York State."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "cany-home",
+          "value": "CANY says it represents the whole cannabis supply chain in New York and also serves businesses that work with the industry."
+        },
+        {
+          "claim": "provider-contact",
+          "source": "cany-contact",
+          "value": "CANY publishes phone (607) 205-8686 and members@cany.org."
+        },
+        {
+          "claim": "service-activity",
+          "source": "cany-2026",
+          "value": "CANY posted an open letter to the Office of Cannabis Management dated February 26, 2026."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-esgsa",
+      "organization_id": "org-ny-empire-state-green-standard-alliance",
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "Empire State Green Standard Alliance",
+      "description": "Statewide consumer advocacy group for New York cannabis consumers' rights and safety.",
+      "audiences": [
+        "consumers"
+      ],
+      "eligibility": "Open to consumers who want to follow or join its advocacy; the site lists no direct phone or email.",
+      "next_step": {
+        "label": "Open the Alliance",
+        "url": "https://www.greenstandardalliance.org/"
+      },
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "NY",
+          "source": "esgsa-home",
+          "value": "The Alliance calls itself a statewide organization for New York's cannabis consumers."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "esgsa-home",
+          "value": "The Alliance describes itself as a statewide organization working for the rights, safety and convenience of New York's cannabis consumers, with a November 2026 newsroom release."
+        }
+      ]
+    },
+    {
+      "id": "svc-ny-bronx-cannabis-hub",
+      "organization_id": "org-ny-bronx-cannabis-hub",
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "The Bronx Cannabis Hub (a project of The Bronx Defenders)",
+      "description": "Equity program for New Yorkers impacted by the state's marijuana laws who want to enter the legal industry, based in the Bronx.",
+      "audiences": [
+        "business",
+        "consumers"
+      ],
+      "eligibility": "For people impacted by marijuana enforcement; cohort screening and terms are set by the Hub.",
+      "next_step": {
+        "label": "Open the Bronx Cannabis Hub",
+        "url": "https://thebronxcannabishub.org/"
+      },
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Bronx",
+          "source": "hub-home",
+          "value": "The Hub lists its office at 360 E 161st Street, The Bronx."
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "service-description",
+          "source": "hub-home",
+          "value": "The Hub describes itself as an initiative for equitable inclusion of New Yorkers impacted by the state's marijuana laws, and publishes info@thebronxcannabishub.org."
+        }
+      ]
+    }
+  ],
+  "rules": [],
+  "events": [
+    {
+      "id": "event-ny-nysba-cannabis-law-2027",
+      "name": "NYSBA Annual Conference: Cannabis Law Section program",
+      "starts_on": "2027-01-21",
+      "ends_on": "2027-01-21",
+      "organization_ids": [
+        "org-ny-new-york-state-bar-association"
+      ],
+      "next_step_url": "https://nysba.org/am2027-cannabis-law-section/",
+      "evidence": [
+        {
+          "claim": "event-listing",
+          "source": "nysba-cannabis",
+          "value": "Cannabis Law Section MCLE program Thursday, January 21, 2027, 1:00 to 6:00 PM, with a reception after, at the New York Hilton Midtown during the NYSBA Annual Conference."
+        }
+      ]
+    },
+    {
+      "id": "event-ny-suny-cannabis-conference-2027",
+      "name": "2027 SUNY Cannabis Conference (SUNY Niagara)",
+      "starts_on": "2027-01-11",
+      "ends_on": "2027-01-12",
+      "organization_ids": [
+        "org-ny-suny-niagara"
+      ],
+      "next_step_url": "https://sunyniagara.edu/cannabisconference/2026-suny-cannabis-conference-suny-niagara-speaker-information/",
+      "evidence": [
+        {
+          "claim": "event-listing",
+          "source": "suny-conf",
+          "value": "Culinary Experience Day Monday, January 11, 2027 at the Niagara Falls Culinary Institute; Main Industry Day Tuesday, January 12, 2027 at the SUNY Niagara Sanborn campus."
+        }
+      ]
+    },
+    {
+      "id": "event-ny-flower-expo-2027",
+      "name": "Flower Expo New York",
+      "starts_on": "2027-03-31",
+      "ends_on": "2027-04-01",
+      "organization_ids": [
+        "org-flower-expo"
+      ],
+      "next_step_url": "https://theflowerexpo.com/new-york/",
+      "evidence": [
+        {
+          "claim": "event-listing",
+          "source": "flower-ny",
+          "value": "March 31 to April 1, 2027 at 99 Scott Studio, 99 Scott Ave, Brooklyn; business-to-business only."
+        }
+      ]
+    }
+  ]
+}

@@ -234,14 +234,14 @@
           "next": "105 more listings; 6 more listings with confirmed in-state coverage (to 90%); 41 more categorized listings (to 95%)"
         },
         "community": {
-          "declared": "starter",
-          "level": "starter",
+          "declared": "partial",
+          "level": "partial",
           "measures": {
-            "groups": 3,
-            "upcoming_events": 0,
-            "items": 3
+            "groups": 6,
+            "upcoming_events": 3,
+            "items": 9
           },
-          "next": "Reach 5 groups or upcoming events"
+          "next": "Reach 15 items with at least 1 upcoming event"
         }
       }
     }
