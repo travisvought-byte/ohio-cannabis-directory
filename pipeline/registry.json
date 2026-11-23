@@ -355,10 +355,10 @@
     "License Status"
    ],
    "label": "license holders the Office of Cannabis Management lists",
-   "queue_note": "Column names not yet confirmed; the first run prints them.",
+   "queue_note": "The state site turned GitHub's runner away (bot check) on Nov 23; a person can download the file and run normalize.",
    "evidence_level": "regulator-open-data",
    "cadence_days": 30,
-   "status": "active"
+   "status": "blocked"
   },
   {
    "id": "us-mi-cra-adult-use",
@@ -639,10 +639,10 @@
     "License Status"
    ],
    "label": "adult-use stores the Office of Cannabis Policy lists as active",
-   "queue_note": "Column names not yet confirmed; the first run prints them.",
+   "queue_note": "The state site answered 403 to GitHub's runner on Nov 23; a person can download the file and run normalize.",
    "evidence_level": "regulator-open-data",
    "cadence_days": 30,
-   "status": "active"
+   "status": "blocked"
   },
   {
    "id": "us-fl-ommu-dispensing-locations",
@@ -702,7 +702,10 @@
    "queue_note": "Column names not yet confirmed; the first run prints them.",
    "evidence_level": "regulator-list",
    "cadence_days": 30,
-   "status": "active"
+   "status": "active",
+   "parse": {
+    "header": 0
+   }
   },
   {
    "id": "us-va-cca-dispensaries",

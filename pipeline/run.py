@@ -18,7 +18,11 @@ def main(argv=None):
     if not args.offline:
         fetch.main(only)
         normalize.main(only)
-    merge.main()
+    merged = merge.build()
+    for s in merged['states']:
+        print(f'{s["state"]}: {s["counts"]["locations"]} locations ({s["counts"]["duplicates_merged"]} duplicates merged); first rows:')
+        for loc in s['locations'][:3]:  # business fields only; safe for public logs
+            print('   ', loc)
     data = coverage.build()
     print(f'Coverage: {len(data["source_queue"])} sources queued; thinnest state: {data["states"][0]["name"]}.')
 

@@ -22,7 +22,7 @@ def main(argv=None):
     for s in registry()['sources']:
         if wanted and s['id'].upper() not in wanted and s['jurisdiction'].upper() not in wanted:
             continue
-        if not log.get(s['id'], {}).get('ok') and 'probe' not in log.get(s['id'], {}).get('error', 'probe'):
+        if s['fetch']['method'] == 'manual' or s['id'] not in log:
             continue
         try:
             rows = read_raw(s)

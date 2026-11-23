@@ -66,7 +66,8 @@ def read_raw(source):
         matrix = pd.read_excel(path, sheet_name=sheet, header=None, dtype=object).values.tolist()
         return table_rows(matrix, parse.get('header_contains'))
     if ext == 'html':
-        tables = pd.read_html(io.StringIO(path.read_text(encoding='utf-8', errors='ignore')), match=parse.get('match', '.+'))
+        tables = pd.read_html(io.StringIO(path.read_text(encoding='utf-8', errors='ignore')), match=parse.get('match', '.+'),
+                              header=parse.get('header'))
         frames = [tables[i] for i in parse['tables']] if 'tables' in parse else [tables[parse.get('table', 0)]]
         return [r for f in frames for r in f.astype(object).to_dict('records')]
     if ext == 'pdf':
