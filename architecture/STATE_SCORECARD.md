@@ -8,7 +8,7 @@ As of 2026-11-23. Standard version 1.0.0: [STATE_COMPLETION_STANDARD.md](STATE_C
 | seeds | partial | starter | starter |
 | records | broad | partial | partial |
 | rules | broad | broad | broad |
-| medical | broad | broad | partial |
+| medical | broad | broad | broad |
 | business | partial | partial | partial |
 | community | partial | broad | partial |
 
@@ -44,6 +44,6 @@ As of 2026-11-23. Standard version 1.0.0: [STATE_COMPLETION_STANDARD.md](STATE_C
 | seeds | starter | services: 2; with fulfillment recorded: 0 | Reach 5 seed routes with fulfillment recorded |
 | records | partial | services: 10; statewide routes: 3; counties with specific help: 5; counties: 62; county share: 0.081 | county-specific help in 26 more counties |
 | rules | broad | core topics covered: 7; core topics: 7; missing topics:  | — |
-| medical | partial | services: 4; government sourced: 4; support organizations: 0 | Reach 8 routes, 3 official and 1 patient-support organization |
+| medical | broad | services: 11; government sourced: 10; support organizations: 1 | — |
 | business | partial | services: 45; coverage confirmed share: 0.778; direct contact share: 0.867; categorized share: 0.044; current review share: 1.0 | 105 more listings; 6 more listings with confirmed in-state coverage (to 90%); 41 more categorized listings (to 95%) |
 | community | partial | groups: 6; upcoming events: 3; items: 9 | Reach 15 items with at least 1 upcoming event |

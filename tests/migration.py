@@ -101,7 +101,7 @@ from import_ny_ecosystem import build as import_ny_eco,MANIFEST as NY_MANIFEST,M
 ny_again=copy.deepcopy(data)
 for path in NY_MANIFESTS:ny_again=import_ny_eco(ny_again,json.loads(path.read_text()))
 assert ny_again==data,'Re-importing the New York manifest must not change the canonical tree'
-ny_services=[s for s in data['services'] if s.get('listed_in')==['NY']];assert len(ny_services)==67
+ny_services=[s for s in data['services'] if s.get('listed_in')==['NY']];assert len(ny_services)==74
 assert all(c['state']=='NY' for s in ny_services for c in s['coverage'])
 assert {r['id'] for r in data['rules'] if r['state']=='NY'}=={'rule-ny-adult-use-possession','rule-ny-consumption','rule-ny-home-grow','rule-ny-employment','rule-ny-driving','rule-ny-record-expungement','rule-ny-clean-slate','rule-ny-medical-use'}
 ny_manifest_orgs={o['id'] for path in NY_MANIFESTS for o in json.loads(path.read_text())['organizations']}
