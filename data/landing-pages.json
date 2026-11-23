@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-23",
+  "purpose": "Who each entry page is written for (owner direction, November 23, 2026: every landing page speaks to the person most likely to land there). Titles, search descriptions and the opening sentence or two for pages whose wording is fixed. These lines frame the page for its visitor and route them; they add no fact of their own. Every fact a visitor acts on stays in the cited answers below each opening. State, country and starter-country openings are not here: build_national.py and build_world.py compose them from each page's own cited answers.",
+  "home_chooser": {
+    "heading": "I’m here to…",
+    "intents": [
+      {
+        "id": "buy",
+        "icon": "bag",
+        "label": "Buy legally near me",
+        "text": "Who may buy in each state and where, with the regulator’s own store list on the state pages that have one.",
+        "href": "law-buying.html",
+        "more": [["Pick your state", "#map"], ["Plan a first visit (Ohio)", "https://ohioweed.org/buyer-guide.html"]]
+      },
+      {
+        "id": "medical",
+        "icon": "card",
+        "label": "Get a medical card or use Medicaid",
+        "text": "Who qualifies, the steps and the cost in each state, and whether Medicaid, Medicare or insurance pays.",
+        "href": "medical.html",
+        "more": [["Medicaid and insurance", "coverage.html"], ["Card fee help", "coverage.html#fee-help"]]
+      },
+      {
+        "id": "record",
+        "icon": "record",
+        "label": "Clear my record",
+        "text": "Whether your state seals or expunges an old cannabis record on its own or by application, and where to find free legal help.",
+        "href": "law-record-relief.html",
+        "more": [["Free legal aid", "help.html#legal-help"], ["Ohio step by step", "https://ohioweed.org/expungement.html"]]
+      },
+      {
+        "id": "veteran",
+        "icon": "star",
+        "label": "Ask about cannabis as a veteran",
+        "text": "What the VA says about care and benefits, and the states that cut the medical card fee for veterans.",
+        "href": "help.html#veterans",
+        "more": [["Does the VA pay?", "coverage.html#va"], ["Card fee help", "coverage.html#fee-help"]]
+      },
+      {
+        "id": "business",
+        "icon": "briefcase",
+        "label": "Run or supply a cannabis business",
+        "text": "The national industry association, company directories for Ohio and Pennsylvania, and how to sponsor a labeled spot.",
+        "href": "help.html#business",
+        "more": [["Pennsylvania companies", "../pennsylvania-directory.html"], ["Ohio business directory", "https://ohioweed.org/directory.html"], ["Sponsor", "partners.html#sponsor"]]
+      },
+      {
+        "id": "law",
+        "icon": "megaphone",
+        "label": "Change the law",
+        "text": "Find your state lawmakers, see how other states handle a rule, and say what you think in your own words.",
+        "href": "help.html#contact-lawmakers",
+        "more": [["Compare states", "#compare"], ["Pennsylvania", "../pennsylvania-advocacy.html"], ["Ohio letter builder", "https://ohioweed.org/advocacy.html"]]
+      },
+      {
+        "id": "travel",
+        "icon": "plane",
+        "label": "Travel",
+        "text": "Flying, crossing a border, using a medical card away from home, and the law in other countries.",
+        "href": "world.html",
+        "more": [["Flying", "help.html#travel"], ["Patients traveling", "help.html#patients-traveling"], ["Where it can mean prison", "travel-warnings.html"]]
+      }
+    ]
+  },
+  "law_pages": {
+    "adult-use": {
+      "title": "Is weed legal? Adult use in every state",
+      "intro": "Want to know whether an adult can legally use cannabis where you live, or where you are headed? Tap the state on the map or find it in the list; every answer links to the law it comes from.",
+      "more": [["Traveling", "help.html#travel"], ["Laws in other countries", "world.html"]]
+    },
+    "medical": {
+      "title": "Medical marijuana programs in every state",
+      "intro": "Patient or caregiver checking whether your state has a medical program? Find it below, then open the medical card guide for who qualifies, the steps and the cost.",
+      "more": [["Medical card guides", "medical.html"], ["Medicaid and insurance", "coverage.html"]]
+    },
+    "buying": {
+      "title": "Where to buy cannabis legally in every state",
+      "intro": "Looking for a legal place to buy? Find your state for who may shop and where. The state pages listed first carry the regulator’s own store list, so you can find a licensed store near you.",
+      "more": [["Medical cards", "medical.html"], ["Plan a first visit (Ohio)", "https://ohioweed.org/buyer-guide.html"]]
+    },
+    "possession": {
+      "title": "How much weed can you carry? Possession limits by state",
+      "intro": "Carrying cannabis at home, in the car or on a trip? Limits are set state by state, so check the state you will be in, not only the one you bought it in.",
+      "more": [["Driving rules", "law-driving.html"], ["Traveling", "help.html#travel"]]
+    },
+    "sharing": {
+      "title": "Can you share or gift weed? Rules by state",
+      "intro": "Planning to pass some to a friend or give it as a gift? Find your state for whether sharing is allowed, and on what terms.",
+      "more": [["Possession limits", "law-possession.html"]]
+    },
+    "home-grow": {
+      "title": "Can you grow weed at home? Home-grow laws by state",
+      "intro": "Thinking about growing your own? Find your state for whether adults may grow at home, how many plants and where.",
+      "more": [["Seeds and supplies (Ohio)", "https://ohioweed.org/seeds.html"], ["Cannabis 101", "learn.html"]]
+    },
+    "public-use": {
+      "title": "Can you smoke weed in public? Rules by state",
+      "intro": "Before you light up anywhere outside your own home, find the state you are in for where use is allowed.",
+      "more": [["Possession limits", "law-possession.html"], ["Traveling", "help.html#travel"]]
+    },
+    "driving": {
+      "title": "Cannabis and driving: DUI rules by state",
+      "intro": "Drive after using, or carry cannabis in the car? Find your state for its impaired-driving rule and what it says about cannabis in a vehicle.",
+      "more": [["Possession limits", "law-possession.html"]]
+    },
+    "employment": {
+      "title": "Can you be fired for using weed off the job? Worker protections by state",
+      "intro": "Worried that a drug test or what you do on your own time could cost you a job? Find your state for whether its law protects workers who use cannabis off the job.",
+      "more": [["Free legal aid", "help.html#legal-help"]]
+    },
+    "record-relief": {
+      "title": "Clear a cannabis record: sealing and expungement by state",
+      "intro": "If an old cannabis conviction still shows up when you apply for a job, an apartment or a license, start here. Find your state for whether relief is automatic or by application, then follow its source.",
+      "more": [["Free legal aid", "help.html#legal-help"], ["National record-clearing guides", "help.html#record-clearing"], ["Ohio step by step", "https://ohioweed.org/expungement.html"]]
+    }
+  },
+  "national_pages": {
+    "medical.html": {
+      "intro": "Need a medical card? Find your state below for who qualifies, the steps and what it costs, as the state regulator puts it. If the cost is the worry, see whether Medicaid, low income or veteran status lowers the fee."
+    },
+    "coverage.html": {
+      "intro": "On Medicaid or Medicare, or a veteran getting care through the VA, and wondering whether any of it pays for medical cannabis? Each answer below comes from the agency’s own page, followed by the states that cut the card fee."
+    },
+    "help.html": {
+      "title": "Cannabis help by need: travel, veterans, legal aid and more",
+      "intro": "Not sure where to start? Pick what you need: flying and travel, veterans, free legal aid, clearing a record, reaching your lawmakers, health and safety, or business."
+    },
+    "world.html": {
+      "intro": "Traveling, or living outside the US? Pick a country for what visitors and residents can legally do there, where to buy if anywhere, and what happens at the border."
+    },
+    "travel-warnings.html": {
+      "intro": "Flying abroad or driving through a strict state? Read this before you pack. Legal at home does not mean legal where you land, and some countries treat any amount, or cannabis still in your bloodstream, as a serious crime."
+    },
+    "heritage.html": {
+      "intro": "Ever wondered where the strain on the shelf really comes from? Every strain today goes back to plants that farmers in particular places selected over generations. These are the places, the landraces and the people who carried the tradition."
+    },
+    "learn.html": {
+      "intro": "New to cannabis, or staring at a label that makes no sense? Look up the words, the product forms and how to read a lab report, in plain language."
+    }
+  },
+  "ohio_pages": {
+    "advocacy.html": {
+      "intro": "Want Ohio’s cannabis law to change, or to stay as it is? Find your own officials, pick an issue, and write or call in your own words."
+    },
+    "ancestry.html": {
+      "title": "Cannabis strain library: Ohio flower and classic genetics",
+      "description": "Saw a strain name on an Ohio menu? Look up its lineage, producer-specific versions and the source for each profile, from Ohio producers’ published catalogs and strain references.",
+      "intro": "Saw a strain name on an Ohio menu and want to know what it is? Look it up here: its lineage, producer-specific versions and familiar classics, with the source for each profile."
+    },
+    "assessment.html": {
+      "title": "Cannabis business self-check: banking and financing readiness",
+      "description": "For Ohio cannabis businesses getting ready for a bank, a lender or an internal review: score what you can document today and get a prioritized action plan.",
+      "intro": "Running an Ohio cannabis business and getting ready for a bank, a lender or an internal review? Score what you can document today and leave with a prioritized action plan."
+    },
+    "buyer-guide.html": {
+      "title": "Plan your first Ohio dispensary visit",
+      "description": "New to cannabis in Ohio? Build a short shopping plan to show the person helping you at the dispensary, with Ohio’s basics, then download or print it before you go."
+    },
+    "expungement.html": {
+      "title": "Clear an Ohio criminal record: sealing and expungement steps",
+      "intro": "Is an old Ohio marijuana charge, or another record, getting in the way of a job, an apartment or a license? These are the steps to ask a court to seal or expunge it. The judge decides whether you qualify."
+    },
+    "intake.html": {
+      "description": "Add an Ohio cannabis organization to the directory or send a correction. Entries stay on your device until you export them."
+    },
+    "knowledge.html": {
+      "title": "Cannabis products, labels and Ohio hemp rules, explained",
+      "intro": "At the counter, or about to order, and not sure what rosin, live resin or a lab report means? Look it up here in plain language, then use the buying checklist."
+    },
+    "lawmakers.html": {
+      "intro": "Want to tell your Ohio representative and senator what you think about cannabis law? Search the full roster, see how each member voted on SB 56, open an official contact page and prepare a letter."
+    },
+    "locations.html": {
+      "title": "Find an Ohio dispensary near you",
+      "description": "Looking for a dispensary in Ohio? Search addresses by city or county and see each location on the map, with a link to confirm current license status with the state.",
+      "intro": "Looking for a dispensary near you in Ohio? Search by address, city or county and see each location on the map, then confirm hours and license status before you go."
+    },
+    "relationships.html": {
+      "title": "Who works with whom in cannabis: documented business relationships",
+      "description": "Vetting a partner or looking for who supplies cannabis operators? Explore documented banking, technology, construction and brand relationships, with the evidence behind each.",
+      "intro": "Vetting a partner, or looking for who already works with cannabis operators? Explore documented banking, technology, construction and brand relationships, and the evidence behind each. Status is shown as recorded in the source research."
+    },
+    "resources.html": {
+      "title": "Ohio cannabis help by need: dispensaries, records, medical cards",
+      "intro": "In Ohio and looking for a dispensary, seeds, help with a record, a medical card or your local cannabis community? Pick what you need, see who serves it, and follow the source to the next step."
+    },
+    "seeds.html": {
+      "title": "Cannabis seeds and growing supplies for Ohio home growers",
+      "intro": "Growing at home in Ohio and looking for seeds or supplies? Compare suppliers by Ohio connection, seed type and shipping evidence before you order or make the trip."
+    },
+    "pennsylvania-directory.html": {
+      "title": "Pennsylvania cannabis companies: operators, suppliers and services",
+      "description": "Selling to Pennsylvania cannabis operators or looking for a supplier? Search operators, suppliers and business providers by company, person, product or brand, with public contacts and source links.",
+      "intro": "Selling to Pennsylvania cannabis operators, or looking for a supplier or service provider? Search operators, suppliers and business providers by company, person, product or brand, each with public business contacts and a source link."
+    },
+    "pennsylvania-advocacy.html": {
+      "title": "Pennsylvania cannabis legalization: the bills and who decides",
+      "intro": "Want a say in whether Pennsylvania legalizes adult use? Pennsylvania has a regulated medical marijuana program, and adult-use legalization has not become law. This pilot starts with selected current-session proposals, the officials who can act, and questions residents can raise."
+    }
+  }
+}

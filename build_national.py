@@ -80,6 +80,10 @@ section.block{margin:38px 0}section.block>h2{margin-top:0}
 .task .ic{width:46px;height:46px;border-radius:12px;background:var(--mint);color:var(--green);display:grid;place-items:center}.task .ic svg{width:26px;height:26px}
 .task strong{font-size:1.02rem;line-height:1.25}.task .d{font-size:.88rem;color:var(--soft);line-height:1.35}
 .also{font-size:.95rem}.also a{white-space:nowrap}
+.tasks.intents{grid-template-columns:repeat(4,minmax(0,1fr))}.intent{position:relative}.intent .go{color:var(--ink);text-decoration:none}
+.intent .go::after{content:"";position:absolute;inset:0;border-radius:14px}.intent .go:focus-visible{outline:none}.intent:focus-within{outline:3px solid var(--link);outline-offset:2px}
+.intent .more{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:0 12px;margin-top:auto;font-size:.86rem}.intent .more a{min-height:32px;display:inline-flex;align-items:center}
+.for-you{font-size:1.08rem}
 .mapbox{display:grid;grid-template-columns:minmax(0,640px) minmax(0,1fr);gap:28px;align-items:start}
 .usmap{display:grid;grid-template-columns:repeat(11,minmax(0,1fr));gap:4px;margin:10px 0;max-width:640px}
 .tile{aspect-ratio:1;display:grid;place-items:center;border-radius:6px;font-weight:800;font-size:clamp(10px,1.7vw,15px);text-decoration:none;color:#fff;background:#9aa3a0}
@@ -147,9 +151,9 @@ footer.site p{max-width:none;margin:18px 0 0;color:#a9bcb1}
 .glance li.t-limited .qi,.glance li.t-varies-locally .qi{background:rgba(184,134,11,.25);color:#f1d48a}.glance li.t-not-permitted .qi,.glance li.t-negative .qi{background:rgba(169,0,0,.28);color:#f3b0a6}
 .glance li.t-not-reviewed .qi{background:rgba(136,136,136,.22);color:#cfd4d1}.tile.not-reviewed,.tile.not-started{background:#3a4640;color:#d7ddd9}.sw.not-reviewed,.sw.not-started{background:#3a4640}
 select{border-color:#5d6b64}}
-@media(max-width:900px){.tasks{grid-template-columns:repeat(3,minmax(0,1fr))}.mapbox{grid-template-columns:1fr;gap:6px}}
+@media(max-width:900px){.tasks{grid-template-columns:repeat(3,minmax(0,1fr))}.tasks.intents{grid-template-columns:repeat(2,minmax(0,1fr))}.mapbox{grid-template-columns:1fr;gap:6px}}
 @media(max-width:720px){.hero .wrap{grid-template-columns:1fr;padding-top:24px;padding-bottom:34px}.hero .art{order:-1}.hero .art .shipbox{max-width:420px;margin:0}}
-@media(max-width:560px){header.site nav{margin-left:0;gap:0 16px}header.site .wrap{padding-bottom:4px}.tasks{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.task{padding:12px}
+@media(max-width:560px){header.site nav{margin-left:0;gap:0 16px}header.site .wrap{padding-bottom:4px}.tasks{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.task{padding:12px}.tasks.intents{grid-template-columns:1fr}
 .usmap{gap:3px}.tile{border-radius:4px}.glance a{grid-template-columns:1fr}.needs{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.need{padding:10px 11px}.rows li{grid-template-columns:1fr}.rows .meta{grid-column:1}}
 /* Sponsored spots: set apart from listings and answers by a dashed gold frame and their own label. */
 .ad-slot{margin:34px 0;padding:10px 16px 14px;max-width:720px;background:#fbf6e6;border:2px dashed #b89a45;border-radius:12px}.ad-slot[hidden]{display:none}
@@ -252,6 +256,24 @@ def load():
     return read('data/state-permissions.json'), read('data/state-scorecard.json'), read('data/directory.json')
 
 
+def load_landing():
+    """Who each fixed page is written for (data/landing-pages.json): titles, openings and the home page's
+    "I'm here to…" chooser. State and country openings are composed from each page's own answers instead."""
+    return json.loads((ROOT / 'data/landing-pages.json').read_text(encoding='utf-8'))
+
+
+def for_you(text):
+    """The opening written to the person most likely to land on a page. Framing only: facts stay in the cited answers."""
+    return f'<p class="lede for-you">{text}</p>'
+
+
+def more_links(pairs):
+    """Next stops for a page's visitor, as pills. Every link goes to a page that already exists."""
+    if not pairs:
+        return ''
+    return '<nav class="pills" aria-label="Also useful">' + ''.join(f'<a class="pill" href="{esc(href)}">{esc(label)}</a>' for label, href in pairs) + '</nav>'
+
+
 def load_medical():
     """Patient guides for the medical-only states (data/medical-programs.json), keyed by state code."""
     data = json.loads((ROOT / 'data/medical-programs.json').read_text(encoding='utf-8'))
@@ -299,7 +321,7 @@ def dispensary_section(entry, cites, name):
         site = f' · <a href="{esc(loc["website"])}" target="_blank" rel="noopener">Website</a>' if loc.get('website') else ''
         licensee = f' <span class="muted">({esc(loc["licensee"])})</span>' if loc.get('licensee') and loc['licensee'] != loc['name'] else ''
         rows.append(f'<li><strong>{esc(loc["name"])}</strong>{licensee}<br>{esc(loc["address"])}<br><span class="muted">{esc(" · ".join(extra))}</span>{site}</li>')
-    return (f'<section class="medcard" id="dispensaries" aria-labelledby="dispensaries-h"><h2 id="dispensaries-h">Where to buy in {esc(name)}: {len(rows)} {esc(entry["label"])}</h2>'
+    return (f'<section class="medcard" id="dispensaries" aria-labelledby="dispensaries-h"><h2 id="dispensaries-h">Where to buy in {esc(name)}: the {esc(entry["label"])}</h2>'
             f'<p class="muted">Copied from the regulator’s own {"lists" if len(srcs) > 1 else "list"}{dated}, retrieved {long_date(src["retrieved_on"])} {cites.mark([s["id"] for s in srcs])}. Call ahead: hours and openings change.</p>'
             '<label for="disp-filter">Filter by city or name</label> <input id="disp-filter" type="search" autocomplete="off" style="font:inherit;min-height:44px;padding:6px 10px;border:1px solid #888;border-radius:8px;max-width:100%">'
             f'<ul class="grid" id="disp-list">{"".join(rows)}</ul>'
@@ -637,8 +659,10 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
     card = score['states'].get(code)
     pack = next((s for s in directory['states'] if s['code'] == code), None)
     place = 'the District of Columbia' if code == 'DC' else name
+    prog = (medical or {}).get(code)
+    shops = (dispensaries or {}).get(code)
     body = [f'<p class="crumbs"><a href="index.html#map">All states</a> › {esc(name)}</p>',
-            f'<h1>Is weed legal in {esc(place)}?</h1>']
+            f'<h1>Is weed legal in {esc(place)}?</h1>', for_you(state_intro(code, place, state_answers, prog, shops))]
     lede = [f'{label}: {chip(perm, a["status"], q)} {esc(a["short"])}' for label, q, a in
             (('Adult use', q, state_answers.get(q['id'])) if q['id'] == 'adult-use' else ('Medical use', q, state_answers.get(q['id']))
              for q in perm['questions'] if q['id'] in ('adult-use', 'medical')) if a]
@@ -653,14 +677,21 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
         body.append('<p>Official state site: <span class="muted">not yet reviewed</span></p>')
     if code == 'OH':
         body.append(f'<p><strong>Ohio’s full guide lives at <a href="{OHIO_HOME}/">OhioWeed.org</a></strong>: business directory, dispensary finder, record clearing, advocacy and more.</p>')
-    prog = (medical or {}).get(code)
-    shops = (dispensaries or {}).get(code)
-    body.append('<nav class="onpage" aria-label="On this page">' + ('<a href="#medical-card">Get a medical card</a>' if prog else '')
-                + ('<a href="#dispensaries">Where to buy</a>' if shops else '')
-                + '<a href="#glance">At a glance</a><a href="#law">The law in detail</a><a href="#directory">Local help</a><a href="#sources">Sources</a></nav>')
-    if prog:
-        body.append(medical_section(prog, cites, name, state_answers.get('adult-use', {}).get('status') == 'medical-only'))
+    # What the visitor most likely came for comes first: where adults can buy the store list, elsewhere the medical card.
+    adult_status = state_answers.get('adult-use', {}).get('status')
+    card_html = medical_section(prog, cites, name, adult_status == 'medical-only') if prog else ''
+    card_link = '<a href="#medical-card">Get a medical card</a>' if prog else ''
+    shop_link = ''
+    stores_first = adult_status == 'allowed'
     if shops:
+        shop_link = '<a href="#dispensaries">Where to buy</a>'
+    first, second = ((shop_link, card_link) if stores_first else (card_link, shop_link))
+    body.append('<nav class="onpage" aria-label="On this page">' + first + second
+                + '<a href="#glance">At a glance</a><a href="#law">The law in detail</a><a href="#directory">Local help</a><a href="#sources">Sources</a></nav>')
+    if stores_first and shops:
+        body.append(dispensary_section(shops, cites, name))
+    body.append(card_html)
+    if shops and not stores_first:
         body.append(dispensary_section(shops, cites, name))
     body.append(glance(perm, state_answers, name))
     body.append(law_section(perm, code, state_answers, cites, sources))
@@ -675,8 +706,8 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
     body.append(cites.render())
     answered = len(state_answers)
     short = {k: state_answers[k]['short'].rstrip('.') for k in ('adult-use', 'medical') if k in state_answers}
-    description = state_description(place, state_answers, answered, len(perm['questions']))
-    page, title = slug(name) + '.html', f'Is weed legal in {place}? {name} cannabis laws'
+    description = state_description(place, state_answers, answered, len(perm['questions']), bool(shops))
+    page, title = slug(name) + '.html', state_title(name, place, adult_status, prog, shops)
     ld = [breadcrumbs([('All states', '')], page, name)]
     faq = faq_node(perm, state_answers, page)
     if faq:
@@ -684,7 +715,73 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
     return shell(title, description, ''.join(body), page, name, ld=ld)
 
 
-def state_description(place, state_answers, answered, total):
+def state_title(name, place, adult_status, prog, shops):
+    """The tab and search title: the question people ask, then what this page leads with for them."""
+    if adult_status == 'allowed' and shops:
+        return f'Is weed legal in {place}? Where to buy in {name} and the rules'
+    if adult_status == 'medical-only' and prog:
+        return f'Is weed legal in {place}? How to get a medical card in {name}'
+    return f'Is weed legal in {place}? {name} cannabis laws'
+
+
+def answer_link(state_answers, qid):
+    """A state's own short answer, word for word, linked to its full answer and source further down the page."""
+    a = state_answers.get(qid)
+    return f'<a href="#q-{esc(qid)}">{esc(a["short"].rstrip("."))}</a>' if a else ''
+
+
+def state_intro(code, place, state_answers, prog, shops):
+    """The opening for a state page, written to someone in that state or headed there.
+
+    Built only from what the page itself shows: the state's own cited short answers (linked to their
+    full answer and source), the regulator's store list and the medical card guide. A state with
+    different answers gets different words; nothing here is a claim the page does not already cite."""
+    link = lambda qid: answer_link(state_answers, qid)
+    adult = state_answers.get('adult-use')
+    status = adult['status'] if adult else None
+    record = link('record-relief')
+    record_line = f'Old cannabis record holding you back? In {esc(place)}: {record}.' if record else ''
+    if status == 'allowed':
+        facts = [f'{label}: {link(q)}' for label, q in (('Buy', 'buying'), ('Carry', 'possession'), ('Grow at home', 'home-grow')) if link(q)]
+        first = (f'If you are 21 or older in {esc(place)}, here is the short version. ' + ' · '.join(facts) + '.' if facts
+                 else f'Adults 21 and older can use cannabis in {esc(place)}: {link("adult-use")}.')
+        if shops:
+            second = f'Start with the <a href="#dispensaries">list of {esc(shops["label"])}</a> just below to find one near you; every rule after it links to its source.'
+        elif code == 'OH':
+            second = f'Ohio’s dispensary finder, business directory and record-clearing guide are on <a href="{OHIO_HOME}/">OhioWeed.org</a>.'
+        else:
+            second = record_line
+        return f'{first} {second}'.strip()
+    if status == 'medical-only':
+        first = f'In {esc(place)}, only registered patients can buy and use cannabis, so for most people the first step is a medical card.'
+        if prog:
+            # Name only the facts the state's guide actually gives, in the order a patient needs them.
+            parts = [label for key, label in (('who', 'who qualifies'), ('steps', 'the steps'), ('fee', 'what it costs'),
+                                              ('fee_help', 'help with the cost'), ('buy', 'where patients buy')) if prog.get(key)]
+            listed = (', '.join(parts[:-1]) + ' and ' + parts[-1]) if len(parts) > 1 else (parts[0] if parts else 'the card rules')
+            where = f', followed by the <a href="#dispensaries">list of {esc(shops["label"])}</a>' if shops else ''
+            second = (f'{listed[0].upper() + listed[1:]}, as the state regulator ({esc(prog["agency"])}) gives them, '
+                      f'{"are" if len(parts) > 1 else "is"} <a href="#medical-card">just below</a>{where}.')
+        else:
+            second = f'Medical program: {link("medical")}.' if link('medical') else ''
+        return ' '.join(x for x in (first, second, record_line) if x)
+    medical = link('medical')
+    if status == 'not-permitted':
+        first = f'Adult use is not legal in {esc(place)}' + (f'. Medical: {medical}.' if medical else '.')
+    elif status:
+        first = f'Adult use in {esc(place)}: {link("adult-use")}.' + (f' Medical: {medical}.' if medical else '')
+    else:
+        first = f'Here is what is known so far about cannabis law in {esc(place)}, each answer with its source.'
+    if record:
+        second = f'If an old cannabis charge is what brought you here, the route in {esc(place)} is: {record}.'
+    elif prog:
+        second = 'Patients: the medical card steps are <a href="#medical-card">just below</a>.'
+    else:
+        second = ''
+    return f'{first} {second}'.strip()
+
+
+def state_description(place, state_answers, answered, total, has_stores=False):
     """The search-result snippet for a state page: the answer first, in plain words,
     then the details people look for next. Built only from the short answers shown on the page."""
     def short(q):
@@ -703,9 +800,11 @@ def state_description(place, state_answers, answered, total):
             if text and status in ('allowed', 'limited'):
                 extra.append(f'{label}: {text[0].lower() + text[1:]}.')
         rest = ' '.join(extra) or 'Where to buy, limits and driving rules, with official sources.'
+        if has_stores:
+            rest = (rest + ' Plus the regulator’s own store list.').strip()
     elif adult_status == 'medical-only':
         lead = f'Only with a medical card. Recreational weed is not legal in {place}' + (f'; medical: {med}.' if med_detail else ', but medical cannabis is.')
-        rest = 'How to get a medical card, who qualifies and the rules, with official sources.'
+        rest = 'How to get a medical card, who qualifies and the rules, with official sources.' + (' Plus where patients buy.' if has_stores else '')
     elif adult_status == 'not-permitted' and med_status == 'not-permitted':
         lead = f'No. Weed is not legal in {place}, and there is no medical marijuana law.'
         rest = 'Driving, work and record-clearing rules, with official sources.'
@@ -780,7 +879,8 @@ def status_label(perm, question, status):
 
 def help_page(perm, sources):
     cites = Cites(sources)
-    body = ['<p class="crumbs"><a href="index.html">Home</a> › Help by need</p>', '<h1>Help by need</h1>',
+    land = load_landing()['national_pages']['help.html']
+    body = ['<p class="crumbs"><a href="index.html">Home</a> › Help by need</p>', '<h1>Help by need</h1>', for_you(esc(land['intro'])),
             '<p>Federal rules, national help lines and organizations that cover every state. Each links to the agency or organization that runs it. '
             'A listing is not an endorsement; advocacy groups are named as such. For state-specific help, <a href="index.html#map">pick your state</a>.</p>',
             '<nav class="pills" aria-label="Jump to a need">' + ''.join(f'<a class="pill" href="#{slug(n)}">{esc(n)}</a>' for n in needs_in_order(perm)) + '</nav>']
@@ -790,7 +890,7 @@ def help_page(perm, sources):
             body.append(f'<article class="card" data-national="{esc(i["id"])}"><h3><a href="{esc(i["url"])}" target="_blank" rel="noopener">{esc(i["title"])}</a></h3>'
                         f'<p>{esc(i["text"])}</p><p class="muted">Checked {long_date(i["reviewed_on"])} {cites.mark(i["source_ids"])}</p></article>')
     body.append(cites.render())
-    return shell('Help by need', 'National cannabis help lines, federal rules and organizations that cover every state, grouped by what you need.',
+    return shell(land['title'], 'National cannabis help lines, federal rules and organizations that cover every state, grouped by what you need.',
                  ''.join(body), 'help.html', 'the help page', ld=[breadcrumbs([('Home', '')], 'help.html', 'Help by need')])
 
 
@@ -802,7 +902,8 @@ def medical_page(perm, med_data, medical, answers, sources, dispensaries=None):
     only = {c for c in medical if answers.get(c, {}).get('adult-use', {}).get('status') == 'medical-only'}
     body = ['<p class="crumbs"><a href="index.html">Home</a> › Medical cards</p>',
             '<h1>Getting a medical cannabis card, state by state</h1>',
-            f'<p class="lede">In {len(only)} states, medical cannabis is legal but adult use is not, so a state card is the only legal way to buy. '
+            for_you(esc(load_landing()['national_pages']['medical.html']['intro'])),
+            f'<p>In {len(only)} states, medical cannabis is legal but adult use is not, so a state card is the only legal way to buy. '
             'Each state below links to its patient guide: who qualifies, the steps, the cost and whether visiting patients can buy. Every fact comes from the state regulator.</p>',
             f'<div class="mapbox"><div>{grid}{legend}</div><div><h2 style="margin-top:0">Medical-only states</h2><p class="muted">Blue on the map. '
             f'Patient facts checked {long_date(med_data["as_of"])}.</p></div></div>',
@@ -812,7 +913,7 @@ def medical_page(perm, med_data, medical, answers, sources, dispensaries=None):
         bits = [f'Cost: {prog["fee"]["text"]}' if prog.get('fee') else '', f'Visitors: {prog["visitors"]["text"]}' if prog.get('visitors') else '',
                 prog['note']['text'] if prog.get('note') and not prog.get('steps') else '']
         if (dispensaries or {}).get(code):
-            bits.append(f'{len(dispensaries[code]["locations"])} {dispensaries[code]["label"]} listed')
+            bits.append(f'Store list: the {dispensaries[code]["label"]}')
         if not any(bits):
             bits = [f'Where patients buy: {prog["buy"]["text"]}' if prog.get('buy') else f'Who: {prog["who"]["text"]}']
         return (f'<a class="guide" href="{slug(names[code])}.html#medical-card"><strong>{esc(names[code])}</strong>'
@@ -833,8 +934,9 @@ def medical_page(perm, med_data, medical, answers, sources, dispensaries=None):
                  ''.join(body), 'medical.html', 'the medical cards page', ld=[breadcrumbs([('Home', '')], 'medical.html', 'Medical cards')])
 
 
-def law_page(perm, question, answers, sources):
+def law_page(perm, question, answers, sources, dispensaries=None):
     names = perm['jurisdictions']
+    land = load_landing()['law_pages'].get(question['id'], {})
     total = len(names)
     rows, tally = [], {}
     for code in sorted(names, key=lambda c: names[c]):
@@ -856,8 +958,15 @@ def law_page(perm, question, answers, sources):
     note = f'<p class="muted">{esc(question["note"])}</p>' if question.get('note') else ''
     answered = total - tally.get('not-reviewed', 0)
     map_grid = ''.join(tile_map(perm, question, answers, f'Map: {question["question"]} Select a state to open its guide.'))
+    stores = ''
+    if question['id'] == 'buying' and dispensaries:
+        # The buyer's next step: the state pages that carry the regulator's own store list.
+        stores = ('<h2 id="store-lists">States with the regulator’s store list</h2><nav class="pills" aria-label="State store lists">'
+                  + ''.join(f'<a class="pill" href="{slug(names[c])}.html#dispensaries">{esc(names[c])}</a>' for c in sorted(dispensaries, key=lambda c: names[c]))
+                  + '</nav>')
     body = ['<p class="crumbs"><a href="index.html">Home</a> › <a href="index.html#compare">Compare the law</a></p>',
             f'<h1>{esc(question["question"])}</h1>',
+            for_you(esc(land['intro'])) if land.get('intro') else '', stores, more_links(land.get('more')),
             f'<p>Every state and DC, side by side. {answered} of {total} are answered from a named source; open a state for the full answer, its citation and its source.</p>{note}',
             map_grid, '<p class="muted">Tap a state for its full answer and source, or use the list below.</p>',
             f'<h2 id="list">Every state in a list</h2><div class="tally">{chips}</div>',
@@ -866,9 +975,11 @@ def law_page(perm, question, answers, sources):
             '<script>(function(){var f=document.getElementById("status-filter");f.addEventListener("change",function(){'
             'document.querySelectorAll("#rows li").forEach(function(li){li.hidden=!!f.value&&li.getAttribute("data-status")!==f.value})})})();</script>']
     description = f'{question["question"]} All 50 states and DC compared, each answer traced to a named source and the date it was checked.'
+    if land.get('intro') and len(land['intro']) <= 240:
+        description = land['intro'] + ' All 50 states and DC, each answer sourced and dated.'
     page = law_page_name(question['id'])
     ld = [breadcrumbs([('Home', ''), ('Compare the law', '#compare')], page, question['question'])]
-    return shell(question['question'], description, ''.join(body), page, 'the state comparison', ld=ld)
+    return shell(land.get('title') or question['question'], description, ''.join(body), page, 'the state comparison', ld=ld)
 
 
 def progress_section(perm, score, directory, answers):
@@ -967,7 +1078,8 @@ def coverage_page(perm, medical, sources):
     data, names, cites = load_coverage(), perm['jurisdictions'], Cites(sources)
     body = ['<p class="crumbs"><a href="index.html">Home</a> › <a href="medical.html">Medical cards</a> › Medicaid and insurance</p>',
             '<h1>Does Medicaid, Medicare or insurance pay for medical cannabis?</h1>',
-            '<p class="lede">Short answer: patients pay for dispensary cannabis themselves. What can change is the cost of the card, '
+            for_you(esc(load_landing()['national_pages']['coverage.html']['intro'])),
+            '<p class="short">Short answer: patients pay for dispensary cannabis themselves. What can change is the cost of the card, '
             'and a few cannabis medicines are ordinary prescriptions. Each answer below comes from the agency’s own page.</p>',
             '<nav class="pills" aria-label="On this page">' + ''.join(f'<a class="pill" href="#{esc(i["id"])}">{esc(i["question"])}</a>' for i in data['items'])
             + '<a class="pill" href="#fee-help">Card fee help by state</a></nav>']
@@ -1053,18 +1165,20 @@ def partners_page(perm, sources):
                  ''.join(body), 'partners.html', 'the partners page', ld=[breadcrumbs([('Home', '')], 'partners.html', 'Partners')])
 
 
-TASKS = [
-    ('scale', 'Is it legal where I am?', 'Adult use and medical rules, every state', 'law-adult-use.html'),
-    ('card', 'Get a medical card', 'How patients apply, state by state', 'medical.html'),
-    ('bag', 'Where can I buy?', 'Stores, dispensaries and who may shop', 'law-buying.html'),
-    ('sprout', 'Can I grow my own?', 'Home-grow rules by state', 'law-home-grow.html'),
-    ('plane', 'Traveling', 'What the TSA says about flying', 'help.html#travel'),
-    ('record', 'Clear an old record', 'Sealing and expungement by state', 'law-record-relief.html'),
-    ('star', 'Veterans', 'VA care and state cannabis programs', 'help.html#veterans'),
-    ('heart', 'Medicaid and insurance', 'Who pays for medical cannabis, and card fee help', 'coverage.html'),
-    ('megaphone', 'Speak up', 'Find your state lawmakers', 'help.html#contact-lawmakers'),
-    ('briefcase', 'Cannabis business', 'Industry association and state directories', 'help.html#business'),
-]
+# Quick questions that sit under the "I'm here to…" chooser on the home page.
+QUICK = [('Is it legal where I am?', 'law-adult-use.html'), ('Can I grow my own?', 'law-home-grow.html')]
+
+
+def chooser(data):
+    """The home page's "I'm here to…" chooser (data/landing-pages.json, home_chooser): one card per reason people
+    come, each going to a page that already exists, with a few next stops under it."""
+    cards = []
+    for it in data['intents']:
+        more = ''.join(f'<a href="{esc(href)}" data-track="intent-more:{esc(it["id"])}">{esc(label)}</a>' for label, href in it.get('more', []))
+        cards.append(f'<div class="task intent" id="for-{esc(it["id"])}"><span class="ic">{icon(it["icon"])}</span>'
+                     f'<a class="go" href="{esc(it["href"])}" data-track="intent:{esc(it["id"])}"><strong>{esc(it["label"])}</strong></a>'
+                     f'<span class="d">{esc(it["text"])}</span>' + (f'<span class="more">{more}</span>' if more else '') + '</div>')
+    return f'<h2>{esc(data["heading"])}</h2><div class="tasks intents">' + ''.join(cards) + '</div>'
 
 
 def guide_link(code, name):
@@ -1204,13 +1318,14 @@ def home_page(perm, score, directory, answers, sources, sponsors=()):
 
     # The joke itself is in the picture (joke_bubble); its data and the script that picks today's follow the first block.
     joke = (jokes_data(jokes) + JOKE_SCRIPT) if jokes else ''
-    body = ['<section class="block" id="tasks"><h2>What brings you here?</h2><div class="tasks">']
-    for ic, title, desc, href in TASKS:
-        body.append(f'<a class="task" href="{href}" data-track="task:{slug(title)}"><span class="ic">{icon(ic)}</span><strong>{esc(title)}</strong><span class="d">{esc(desc)}</span></a>')
-    linked = {href.split('#')[1] for *_, href in TASKS if '#' in href}
-    more = [f'<a href="help.html#{slug(n)}">{esc(n)}</a>' for n in needs_in_order(perm) if slug(n) not in linked]
+    pick = load_landing()['home_chooser']
+    body = ['<section class="block" id="tasks">' + chooser(pick)]
+    hrefs = [it['href'] for it in pick['intents']] + [href for it in pick['intents'] for _, href in it.get('more', [])]
+    linked = {href.split('#')[1] for href in hrefs if href.startswith('help.html#')}
+    more = [f'<a href="{href}">{esc(label)}</a>' for label, href in QUICK]
+    more += [f'<a href="help.html#{slug(n)}">{esc(n)}</a>' for n in needs_in_order(perm) if slug(n) not in linked]
     more.append('<a href="learn.html">Cannabis 101</a>')
-    body.append('</div><p class="also">Also: ' + ' · '.join(more) + ' · <a href="help.html">All national help</a></p></section>')
+    body.append('<p class="also">Also: ' + ' · '.join(more) + ' · <a href="help.html">All national help</a></p></section>')
     body.append(joke)
 
     adult = next(q for q in perm['questions'] if q['id'] == 'adult-use')
@@ -1272,7 +1387,7 @@ def pages():
            'about.html': about_page(perm, score, directory, answers),
            'privacy.html': privacy_page()}
     for q in perm['questions']:
-        out[law_page_name(q['id'])] = law_page(perm, q, answers, sources)
+        out[law_page_name(q['id'])] = law_page(perm, q, answers, sources, dispensaries)
     for code, name in perm['jurisdictions'].items():
         out[slug(name) + '.html'] = state_page(perm, score, directory, code, answers, sources, medical, dispensaries, sponsors)
     import build_world  # imported here: build_world uses this module's page shell

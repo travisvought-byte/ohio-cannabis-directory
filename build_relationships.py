@@ -47,7 +47,7 @@ TEMPLATE = r'''<!doctype html>
 <link rel="canonical" href="https://weed.vethomeguard.org/relationships.html">
 <style>__STYLE__</style></head><body>
 <header><div class="wrap masthead">__VHG_BRAND__<p><a href="index.html">← Ohio Cannabis Ecosystem Directory</a></p>
-<h1>Who works with whom?</h1><p class="standfirst">__COUNT__ documented relationships. Explore partners, projects and the evidence behind them. Status is shown as recorded in the source research.</p>
+<h1>Who works with whom?</h1><p class="standfirst">__LANDING_INTRO__</p>
 <div class="searchbox"><input id="q" type="search" aria-label="Search relationships" placeholder="Company, partner or service…"><button id="clear" aria-label="Clear search" type="button">×</button></div>
 <p><label for="group">Relationship type</label> <select id="group"><option value="">All relationship types</option></select></p>
 <div class="actions"><button class="btn" id="share">Copy search link</button><a class="btn" href="b2b-relationships.csv" download>Download relationships CSV</a><a class="btn" href="__RELATIONSHIP_UPDATE_URL__">Email a relationship update</a><span id="share-status" role="status" aria-live="polite"></span></div>

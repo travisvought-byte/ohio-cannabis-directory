@@ -21,6 +21,7 @@ ROSTER = ROOT / 'data/world-roster.json'
 NL_SHOPS = ROOT / 'data/world-coffeeshops-nl.json'
 WHERE = ROOT / 'data/world-where-to-buy.json'
 STARTER = ROOT / 'data/world-starter.json'
+LANDING = json.loads((ROOT / 'data/landing-pages.json').read_text(encoding='utf-8'))['national_pages']
 
 CSS = ('<style>.wcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:12px;margin:14px 0}'
        '.wcard{display:block;background:var(--card);border:1px solid var(--line);border-top:5px solid var(--green2);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--ink)}'
@@ -215,9 +216,8 @@ def where_section(entry, cites, page_link=False):
     if entry.get('gap'):
         out.append(f'<p class="muted">{nat.esc(entry["gap"])}</p>')
     if page_link:
-        total = sum(len(t['rows']) for t in entry['tables'])
         items = ''.join(f'<li><a href="{nat.esc(entry["page"])}#{nat.esc(t["id"])}">{nat.esc(t["caption"])}</a></li>' for t in entry['tables'])
-        out.append(f'<p><a class="pill" href="{nat.esc(entry["page"])}"><strong>See all {total:,} stores, province by province</strong></a></p><ul>{items}</ul>')
+        out.append(f'<p><a class="pill" href="{nat.esc(entry["page"])}"><strong>See every store, province by province</strong></a></p><ul>{items}</ul>')
     else:
         out.extend(wtb_table(t, cites, True) for t in entry['tables'])
         if any(len(t['rows']) > 15 for t in entry['tables']):
@@ -247,13 +247,48 @@ def load_starter():
     return json.loads(STARTER.read_text(encoding='utf-8'))
 
 
+# Names that read with "the" in a sentence ("traveling to the Netherlands").
+THE_NAMES = {'Netherlands', 'Bahamas', 'Philippines', 'Maldives', 'Comoros', 'Seychelles', 'United Kingdom', 'United Arab Emirates',
+             'Dominican Republic', 'Central African Republic', 'Federated States of Micronesia'}
+
+
+def in_sentence(name):
+    return f'the {name}' if name in THE_NAMES or name.endswith('Islands') else name
+
+
+def first_sentence(text):
+    m = re.match(r'(.+?[.!?])(\s|$)', text.strip())
+    return m.group(1) if m else text.strip()
+
+
+def country_intro(c, where, code):
+    """The opening for a country page, written to a traveler (or someone who lives there), from the
+    country's own cited short answers, each linked to its full answer and source below."""
+    a = c['answers']
+    link = lambda q: f'<a href="#{q}">{nat.esc(a[q]["short"].rstrip("."))}</a>' if q in a else ''
+    facts = [f'{label}: {link(q)}' for label, q in (('Adults', 'adult-use'), ('Buying', 'buying'), ('Carrying', 'possession'), ('At the border', 'border')) if link(q)]
+    first = f'Planning a trip to {nat.esc(in_sentence(c["name"]))}, or live there? ' + (' · '.join(facts) + '.' if facts else 'Here is what is known so far, each answer with its source.')
+    if code == 'NL':
+        second = 'The <a href="#coffeeshops">coffeeshop list</a>, town by town, is further down.'
+    elif where:
+        # The section's own heading ("Where to join: licensed clubs"), so a club-only country never reads as having shops.
+        head, _, what = where['heading'].partition(': ')
+        second = f'{nat.esc(head)}' + (f' ({nat.esc(what)})' if what else '') + ' is <a href="#where-to-buy">just below</a>.'
+    else:
+        second = ''
+    return f'{first} {second}'.strip()
+
+
 def starter_page(world, sources, code, st, licence):
     """A country without a full guide yet: the UK government's drugs advice, credited, and the core questions marked not reviewed."""
     cites = nat.Cites(sources)
     name = st['name']
+    lead = first_sentence(st['sections'][0]['paragraphs'][0])
     body = [CSS, f'<p class="crumbs"><a href="index.html">Home</a> › <a href="world.html">Around the world</a> › {nat.esc(name)}</p>',
-            f'<h1>Cannabis laws in {nat.esc(name)}</h1>',
-            f'<p class="lede">This is a starter page. We have not reviewed {nat.esc(name)}\'s cannabis law in full yet, so the answers below are marked "Not yet reviewed". '
+            f'<h1>Cannabis laws in {nat.esc(in_sentence(name))}</h1>',
+            nat.for_you(f'Traveling to {nat.esc(in_sentence(name))}? Before you pack, here is how the UK government sums up drugs there: '
+                        f'“{nat.esc(lead)}” {cites.mark([st["source_id"]])}'),
+            f'<p>This is a starter page. We have not reviewed the cannabis law in {nat.esc(in_sentence(name))} in full yet, so the answers below are marked "Not yet reviewed". '
             'Until we do, here is what the UK government tells travellers about drugs there, in its own words.</p>',
             '<p class="alert"><strong>Travelling?</strong> Never carry cannabis across an international border, even between two places where it is legal. '
             '<a href="travel-warnings.html">See where it can land you in prison</a>.</p>',
@@ -269,8 +304,10 @@ def starter_page(world, sources, code, st, licence):
             body.append(answer_card(world, q, None, cites))
     body.append('<p class="muted">A full guide for this country is on our list. Know the law here, or spot something out of date? Use "Fix or reuse" below.</p>')
     body.append(cites.render())
-    title = f'Cannabis laws in {name}'
-    desc = f'Starter page for {name}: what the UK government tells travellers about drugs there, credited and dated. Full cannabis law guide still to come.'
+    title = f'Cannabis laws in {in_sentence(name)}'
+    desc = f'Traveling to {in_sentence(name)}? {lead} What the UK government tells visitors about drugs there, credited and dated.'
+    if len(desc) > 300:
+        desc = f'Traveling to {in_sentence(name)}? What the UK government tells visitors about drugs and cannabis there, credited and dated.'
     ld = [nat.breadcrumbs([('Home', ''), ('Around the world', 'world.html')], st['page'], name)]
     return nat.shell(title, desc, ''.join(body), st['page'], name, ld=ld)
 
@@ -279,7 +316,8 @@ def country_page(world, sources, code):
     c = world['countries'][code]
     cites = nat.Cites(sources)
     body = [CSS, f'<p class="crumbs"><a href="index.html">Home</a> › <a href="world.html">Around the world</a> › {nat.esc(c["name"])}</p>',
-            f'<h1>Cannabis laws in {nat.esc(c["name"])}</h1>', f'<p class="lede">{nat.esc(c["summary"])}</p>']
+            f'<h1>Cannabis laws in {nat.esc(in_sentence(c["name"]))}</h1>', nat.for_you(country_intro(c, load_where()['countries'].get(code), code)),
+            f'<p>{nat.esc(c["summary"])}</p>']
     if c.get('note'):
         body.append(f'<p class="muted">{nat.esc(c["note"])}</p>')
     if c.get('differences'):
@@ -309,8 +347,8 @@ def country_page(world, sources, code):
         body.append(f'<p class="lawnow">Heritage: <a href="heritage.html#{nat.esc(region["id"])}">where {nat.esc(region["place"])} fits in cannabis history</a></p>')
     body.append('<p class="muted">Summaries of the cited sources, each with the date it was checked. Not legal advice.</p>')
     body.append(cites.render())
-    title = f'Cannabis laws in {c["name"]}'
-    desc = f'{c["summary"]} Sourced, plain-English answers, checked {nat.long_date(world["as_of"])}.'
+    title = f'Cannabis laws in {in_sentence(c["name"])}'
+    desc = f'Visiting {in_sentence(c["name"])}? {c["summary"]} Sourced, plain-English answers, checked {nat.long_date(world["as_of"])}.'
     ld = [nat.breadcrumbs([('Home', ''), ('Around the world', 'world.html')], c['page'], c['name'])]
     return nat.shell(title, desc[:300], ''.join(body), c['page'], c['name'], ld=ld)
 
@@ -345,7 +383,8 @@ def hub_page(world, sources):
                    f'<p>All {len(roster["countries"])} countries and territories. We go one country at a time, in the order below. '
                    'This shows our coverage, not whether cannabis is legal there.</p>' + ''.join(blocks))
     body = (CSS + '<p class="crumbs"><a href="index.html">Home</a> › Around the world</p><h1>Cannabis laws around the world</h1>'
-            '<p class="lede">The same plain answers as the state pages, for other countries, plus the history of where cannabis comes from. Every answer names its source and the date it was checked.</p>'
+            + nat.for_you(nat.esc(LANDING['world.html']['intro'])) +
+            '<p>The same plain answers as the state pages, for other countries, plus the history of where cannabis comes from. Every answer names its source and the date it was checked.</p>'
             + extra + ''.join(groups) + roster_html +
             '<p class="muted">Not legal advice. Laws change; check the cited source before you act on anything here.</p>')
     return nat.shell('Cannabis laws around the world', 'Cannabis laws country by country: Canada, Uruguay, Germany, the Netherlands, Mexico, Thailand and the UK, plus where weed comes from and where it can mean prison. Sourced and dated.',
@@ -380,7 +419,7 @@ def warnings_page(world, perm, sources):
     med_rows = us_rows(perm, cites, 'medical-only')
     body = (CSS + '<p class="crumbs"><a href="index.html">Home</a> › <a href="world.html">Around the world</a> › Travel warnings</p>'
             '<h1>Where weed can put you in prison</h1>'
-            '<p class="lede">Legal at home does not mean legal where you land. Some countries treat any amount, or cannabis still in your bloodstream, as a serious crime.</p>'
+            + nat.for_you(nat.esc(LANDING['travel-warnings.html']['intro'])) +
             '<p class="alert"><strong>The short version:</strong> don\'t fly with it, don\'t cross a border with it, and check whether a country tests travellers before you go. '
             'That includes CBD and vape cartridges.</p>'
             '<h2 id="countries">Countries with the harshest penalties</h2>' + ''.join(cards) +
@@ -432,8 +471,8 @@ def learn_page():
 
     secs = [s for s in k['sections'] if s['id'] not in LEARN_SKIP]
     nav = ' · '.join(f'<a href="#{nat.esc(s["id"])}">{nat.esc(s["title"])}</a>' for s in secs)
-    body = [CSS, '<p class="crumbs"><a href="index.html">Home</a> › Cannabis 101</p><h1>Cannabis 101</h1>',
-            '<p class="lede">Plain-language explanations of cannabis words, product forms, processing, labels and safer use. '
+    body = [CSS, '<p class="crumbs"><a href="index.html">Home</a> › Cannabis 101</p><h1>Cannabis 101</h1>', nat.for_you(nat.esc(LANDING['learn.html']['intro'])),
+            '<p>Plain-language explanations of cannabis words, product forms, processing, labels and safer use. '
             f'Reviewed {nat.long_date(k["reviewed_on"])}. For product literacy, not a personal treatment or dosing plan.</p>',
             f'<p class="onpage">{nav}</p>']
     for s in secs:
@@ -468,7 +507,7 @@ def heritage_page(her, sources):
     jump = ' · '.join(f'<a href="#{nat.esc(r["id"])}">{nat.esc(r["place"])}</a>' for r in her['regions'])
     body = (CSS + '<p class="crumbs"><a href="index.html">Home</a> › <a href="world.html">Around the world</a> › Where weed comes from</p>'
             '<h1>Where weed comes from</h1>'
-            '<p class="lede">Every strain on a shelf today goes back to plants that farmers in particular places selected over generations. These are the places, the landraces and the people who carried the tradition.</p>'
+            + nat.for_you(nat.esc(LANDING['heritage.html']['intro'])) +
             f'<div class="story"><h2>{nat.esc(o["title"])}</h2><p>{nat.esc(o["text"])} {cites.mark(o["source_ids"])}</p></div>'
             f'<div class="story"><h2>{nat.esc(l["title"])}</h2><p>{nat.esc(l["text"])} {cites.mark(l["source_ids"])}</p></div>'
             f'<p class="onpage">{jump} · <a href="#hash">Hash traditions</a></p>' + ''.join(cards) + hash_section(her, cites) +

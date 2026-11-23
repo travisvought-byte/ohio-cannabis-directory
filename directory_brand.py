@@ -111,8 +111,40 @@ def canonical_url(name):
     origin = OHIO_HOME if name in OHIO_PAGES else SITE_ORIGIN
     return origin + '/' + ('' if name == 'index.html' else name)
 
+LANDING_FILE = Path(__file__).resolve().parent / 'data/landing-pages.json'
+LANDING_INTRO = '__LANDING_INTRO__'
+
+
+def landing(name):
+    """Who a built page is written for (data/landing-pages.json, ohio_pages): its tab title, search
+    description and opening lines. Owner direction, November 23, 2026: every landing page speaks to the
+    person most likely to land there."""
+    import json
+    return json.loads(LANDING_FILE.read_text(encoding='utf-8'))['ohio_pages'].get(name or '', {})
+
+
+def apply_landing(page, name):
+    """Put the page's own title, description and opening in place. A page that asks for an opening
+    (__LANDING_INTRO__) and has none in the data stops the build rather than publishing a blank line."""
+    entry = landing(name)
+    if LANDING_INTRO in page:
+        if not entry.get('intro'):
+            raise SystemExit(f'{name}: the page has an opening slot but data/landing-pages.json gives it no "intro"')
+        page = page.replace(LANDING_INTRO, html.escape(entry['intro'], quote=False))
+    if entry.get('title'):
+        page = re.sub(r'<title>.*?</title>', lambda m: '<title>' + html.escape(entry['title'], quote=False) + '</title>', page, count=1, flags=re.S)
+    if entry.get('description'):
+        tag = '<meta name="description" content="' + html.escape(entry['description'], quote=True) + '">'
+        if re.search(r'<meta name="description" content="[^"]*">', page):
+            page = re.sub(r'<meta name="description" content="[^"]*">', lambda m: tag, page, count=1)
+        else:
+            page = page.replace('</head>', tag + '</head>', 1)
+    return page
+
+
 def brand_page(page, name=None):
     page = site_origin(page)
+    page = apply_landing(page, name)
     page = re.sub(r'<script\b[^>]*data-goatcounter=[^>]*>\s*</script>', '', page, flags=re.S)
     if '__VHG_BRAND__' not in page:
         page=page.replace('<main>', '<main>__VHG_BRAND__',1)
@@ -121,6 +153,9 @@ def brand_page(page, name=None):
     title=re.search(r'<title>(.*?)</title>',page).group(1)
     description='Find Ohio cannabis businesses, dispensaries and plain-language guides, each traced to a source.'
     if 'name="description"' not in page:page=page.replace('</head>','<meta name="description" content="'+description+'"></head>')
+    # The share card says what this page says in search, not a line shared by every page.
+    own = re.search(r'<meta name="description" content="([^"]*)">', page)
+    description = own.group(1) if own else description
     page=re.sub(r'<meta\s+property="og:[^"]+"[^>]*>','',page)
     meta='<meta property="og:type" content="website"><meta property="og:site_name" content="Ohio Cannabis Directory"><meta property="og:title" content="'+html.escape(title,quote=True)+'"><meta property="og:description" content="'+description+'"><meta property="og:image" content="'+SITE_ORIGIN+'/assets/vhg-logo.png"><meta property="og:image:alt" content="Veteran Home Guardians logo">'
     page=page.replace('</head>',meta+'</head>')
