@@ -1155,13 +1155,44 @@ def joke_bubble(jokes):
             '<a href="jokes.html">Earlier jokes</a></div><p id="joke-text"></p></div>')
 
 
+# Owner's request, November 23, 2026: promote the free MJBizCon attendee planner (his own public
+# Google Sheet) on the home page while the show is ahead. Dates come from the canonical event record;
+# the bar is left out of builds after the show and a small script hides it for visitors once it ends.
+MJBIZCON_EVENT_ID = 'event-nv-mjbizcon-2026'
+MJBIZCON_PLANNER = 'https://docs.google.com/spreadsheets/d/1QlynoENgH6QjzzsPuFThA7PyKAZuv5XOkA_fnxdQaEg'
+
+
+def show_bar(directory, today=None):
+    event = next((e for e in directory.get('events', []) if e['id'] == MJBIZCON_EVENT_ID), None)
+    if not event:
+        return ''
+    start, end = date.fromisoformat(event['starts_on']), date.fromisoformat(event['ends_on'])
+    if (today or date.today()) > end:
+        return ''
+    when = f'{start.strftime("%b")} {start.day}–{end.day}, {end.year}' if start.month == end.month else f'{start:%b %d} – {end:%b %d, %Y}'
+    return ('<style>.showbar{background:#10291f;color:#f4f1e8;border-bottom:3px solid var(--gold)}.showbar .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:6px 22px;padding-top:12px;padding-bottom:12px}.showbar p{max-width:none;margin:0;font-size:.98rem;line-height:1.45;flex:1 1 420px}.showbar .kicker{display:inline-block;margin-right:6px;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}.showbar .go{display:flex;flex-wrap:wrap;gap:4px 18px}.showbar .go a{color:#fff;font-weight:800;min-height:44px;display:inline-flex;align-items:center;text-underline-offset:3px;white-space:nowrap}.showbar .go a.cta{background:var(--gold);color:#221c08;border-radius:8px;padding:0 16px;text-decoration:none}@media print{.showbar{display:none}}</style>'
+            f'<aside class="showbar" id="mjbizcon-bar" data-ends="{end.isoformat()}" aria-label="MJBizCon 2026"><div class="wrap">'
+            f'<p><span class="kicker">Heading to Vegas?</span> <strong>MJBizCon 2026</strong> · Las Vegas Convention Center · '
+            f'<time datetime="{start.isoformat()}">{esc(when)}</time>. Plan your trip with the free <strong>Attendee Planner</strong>: '
+            'every exhibitor with booth numbers, every speaker and session with times and rooms, state takeovers and after-hours '
+            'events, and a printable meeting plan. Make your own copy and it works on your phone.</p>'
+            '<p class="go">'
+            f'<a class="cta" href="{esc(MJBIZCON_PLANNER)}/edit?usp=sharing" target="_blank" rel="noopener" data-track="mjbizcon:planner-open">Open the planner →</a>'
+            f'<a href="{esc(MJBIZCON_PLANNER)}/copy" target="_blank" rel="noopener" data-track="mjbizcon:planner-copy">Make my own copy</a>'
+            f'<a href="{esc(MJBIZCON_PLANNER)}/export?format=xlsx" data-track="mjbizcon:planner-download">Download (.xlsx)</a>'
+            '</p></div></aside>'
+            '<script>(function(){var b=document.getElementById("mjbizcon-bar");if(!b)return;var d=new Date(),'
+            't=d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2);'
+            'if(t>b.getAttribute("data-ends"))b.remove()})();</script>')
+
+
 def home_page(perm, score, directory, answers, sources, sponsors=()):
     names = perm['jurisdictions']
     jokes = load_jokes()
     ordered = sorted(names, key=lambda c: names[c])
     jump = ''.join(f'<option value="{slug(names[c])}.html">{esc(names[c])}</option>' for c in ordered)
     import build_world  # the world section lives in build_world; imported here to avoid a load-time cycle
-    hero = (build_world.announcement() + '<section class="hero"><div class="wrap"><div class="copy">'
+    hero = (build_world.announcement() + show_bar(directory) + '<section class="hero"><div class="wrap"><div class="copy">'
             '<p class="eyebrow">Free · All 50 states and DC · Every answer sourced</p>'
             '<h1>Cannabis answers for your state, in plain language.</h1>'
             '<p>What’s legal, where to buy, how to clear a record and where to get help. Each answer links to the law or agency it comes from.</p>'
