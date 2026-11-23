@@ -29675,7 +29675,12 @@
       "name": "Kaycha NY LLC",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "(833) 465-8378"
+        }
+      ],
       "scope": "public"
     },
     {
@@ -29683,7 +29688,12 @@
       "name": "MCR Labs of New York",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "315-541-4202"
+        }
+      ],
       "website": "https://mcrlabs.com/",
       "scope": "public"
     },
@@ -29692,7 +29702,16 @@
       "name": "Certified Testing and Data (CTND NY LLC)",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "518-900-5515"
+        },
+        {
+          "kind": "email",
+          "value": "sales@certifiedtnd.com"
+        }
+      ],
       "website": "https://certifiedtnd.com/",
       "scope": "public"
     },
@@ -29710,7 +29729,16 @@
       "name": "DRS Testing",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "(716) 503-8147"
+        },
+        {
+          "kind": "email",
+          "value": "info@drstesting.com"
+        }
+      ],
       "website": "https://drstesting.com/",
       "scope": "public"
     },
@@ -29719,7 +29747,12 @@
       "name": "Certainty Analytical Labs",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "info@certainsciences.com"
+        }
+      ],
       "scope": "public"
     },
     {
@@ -29748,7 +29781,16 @@
       "name": "Dope Diagnostics Inc.",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "845 762 5559"
+        },
+        {
+          "kind": "email",
+          "value": "info@dopediagnostics.com"
+        }
+      ],
       "website": "https://dopediagnostics.com/",
       "scope": "public"
     },
@@ -29757,7 +29799,16 @@
       "name": "Cannabis Sampling Solutions",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "1-845-670-5950"
+        },
+        {
+          "kind": "email",
+          "value": "info@cannabissamplingny.com"
+        }
+      ],
       "website": "https://cannabissamplingny.com/",
       "scope": "public"
     },
@@ -29766,7 +29817,16 @@
       "name": "Western NY Hemp Handlers",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "(716) 713-8581"
+        },
+        {
+          "kind": "email",
+          "value": "bpm.hemptesting@gmail.com"
+        }
+      ],
       "website": "https://wnyhemp-cannabis-sampling.com/",
       "scope": "public"
     },
@@ -29793,7 +29853,12 @@
       "name": "Fruition Flowers Firm",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "services@fruitionfirm.com"
+        }
+      ],
       "website": "https://fruitionfirm.com/",
       "scope": "public"
     },
@@ -82408,7 +82473,8 @@
       "evidence_ids": [
         "ev-ny26-d82670956307",
         "ev-ny26-c91e61d29966",
-        "ev-ny26-636c0594a6a5"
+        "ev-ny26-636c0594a6a5",
+        "ev-ny26-47576e3abc24"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -82455,7 +82521,8 @@
       "evidence_ids": [
         "ev-ny26-0952a2271d7f",
         "ev-ny26-4b61d0bd8330",
-        "ev-ny26-8aedebf31c48"
+        "ev-ny26-8aedebf31c48",
+        "ev-ny26-80a44b0b9a18"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -82502,7 +82569,8 @@
       "evidence_ids": [
         "ev-ny26-a2f1d0ed8a09",
         "ev-ny26-2e485a117341",
-        "ev-ny26-52a498751817"
+        "ev-ny26-52a498751817",
+        "ev-ny26-ad03f971d719"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -82596,7 +82664,8 @@
       "evidence_ids": [
         "ev-ny26-49f075cd18cd",
         "ev-ny26-d5982dc3a14a",
-        "ev-ny26-60bd63e0d2a0"
+        "ev-ny26-60bd63e0d2a0",
+        "ev-ny26-3b1d9db13691"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -82643,7 +82712,8 @@
       "evidence_ids": [
         "ev-ny26-9c143c8ba37a",
         "ev-ny26-3c71e2830b4b",
-        "ev-ny26-4cee2e2e2c70"
+        "ev-ny26-4cee2e2e2c70",
+        "ev-ny26-8cb3054f2b0a"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -82784,7 +82854,8 @@
       "evidence_ids": [
         "ev-ny26-0133df75dda5",
         "ev-ny26-f05f3e094a7a",
-        "ev-ny26-1bbc1bcef970"
+        "ev-ny26-1bbc1bcef970",
+        "ev-ny26-875d548f8023"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -82800,7 +82871,16 @@
         "business"
       ],
       "name": "DRS Testing — OCM-approved cannabis sampling firm",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Erie",
+          "evidence_ids": [
+            "ev-ny26-1a872be5476c"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -82822,7 +82902,9 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-ny26-5d41a585e0d8",
-        "ev-ny26-a48b579666b1"
+        "ev-ny26-a48b579666b1",
+        "ev-ny26-1a872be5476c",
+        "ev-ny26-9773a2a49b37"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -82860,7 +82942,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-ny26-8e68833d21df",
-        "ev-ny26-f318930cd543"
+        "ev-ny26-f318930cd543",
+        "ev-ny26-c5ac88f98c15"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -82876,7 +82959,16 @@
         "business"
       ],
       "name": "ACT Laboratories of New York, LLC. — OCM-approved cannabis sampling firm",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Saratoga",
+          "evidence_ids": [
+            "ev-ny26-66f3d21e3157"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -82898,7 +82990,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-ny26-837874f43fb8",
-        "ev-ny26-b9a5363e8619"
+        "ev-ny26-b9a5363e8619",
+        "ev-ny26-66f3d21e3157"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -82936,7 +83029,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-ny26-48ad773f5cd3",
-        "ev-ny26-fec50a6d4cf3"
+        "ev-ny26-fec50a6d4cf3",
+        "ev-ny26-340a7f3f5cb7"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -83066,7 +83160,16 @@
         "business"
       ],
       "name": "Dope Diagnostics Inc. — OCM-approved cannabis sampling firm",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Rockland",
+          "evidence_ids": [
+            "ev-ny26-89ccda710022"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -83088,7 +83191,9 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-ny26-680686204836",
-        "ev-ny26-f0121612fc79"
+        "ev-ny26-f0121612fc79",
+        "ev-ny26-89ccda710022",
+        "ev-ny26-7d20759a47ea"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -83142,7 +83247,16 @@
         "business"
       ],
       "name": "CTND NY LLC — OCM-approved cannabis sampling firm",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Albany",
+          "evidence_ids": [
+            "ev-ny26-8ab710ca6802"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -83164,7 +83278,9 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-ny26-4a9c9c2ed2ce",
-        "ev-ny26-157ab9dba15c"
+        "ev-ny26-157ab9dba15c",
+        "ev-ny26-8ab710ca6802",
+        "ev-ny26-3e375fd0e2a5"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -83180,7 +83296,16 @@
         "business"
       ],
       "name": "MCR Labs NY — OCM-approved cannabis sampling firm",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Oneida",
+          "evidence_ids": [
+            "ev-ny26-96b5d7c98e5d"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -83202,7 +83327,9 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-ny26-1fef28d8d870",
-        "ev-ny26-fb6614b85678"
+        "ev-ny26-fb6614b85678",
+        "ev-ny26-96b5d7c98e5d",
+        "ev-ny26-739d270c7524"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -83240,7 +83367,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-ny26-21d11af0f00c",
-        "ev-ny26-ba17f4d13c6b"
+        "ev-ny26-ba17f4d13c6b",
+        "ev-ny26-a8e5803f2374"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -83567,7 +83695,16 @@
         "business"
       ],
       "name": "Ponce Bank — cannabis business banking (OCM banking directory)",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Bronx",
+          "evidence_ids": [
+            "ev-ny26-a6c045fc4d5a"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -83589,7 +83726,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-ny26-146ccd7ed958",
-        "ev-ny26-0e73336278f3"
+        "ev-ny26-0e73336278f3",
+        "ev-ny26-a6c045fc4d5a"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -83840,7 +83978,16 @@
         "business"
       ],
       "name": "Seneca Savings — cannabis business banking (OCM banking directory)",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Onondaga",
+          "evidence_ids": [
+            "ev-ny26-4c9f56bf2487"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -83862,7 +84009,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-ny26-7185dc6fc2ef",
-        "ev-ny26-61b8e847d177"
+        "ev-ny26-61b8e847d177",
+        "ev-ny26-4c9f56bf2487"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -83878,7 +84026,16 @@
         "business"
       ],
       "name": "Sunmark Credit Union — cannabis business banking (OCM banking directory)",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Albany",
+          "evidence_ids": [
+            "ev-ny26-490e0d835451"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -83900,7 +84057,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-ny26-977d002efd1f",
-        "ev-ny26-06e77a7550ff"
+        "ev-ny26-06e77a7550ff",
+        "ev-ny26-490e0d835451"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -83916,7 +84074,16 @@
         "business"
       ],
       "name": "Tioga State Bank, N.A. — cannabis business banking (OCM banking directory)",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Tioga",
+          "evidence_ids": [
+            "ev-ny26-95f84470dfb5"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -83938,7 +84105,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-ny26-9df4e9a8d98c",
-        "ev-ny26-ad4c5157a87f"
+        "ev-ny26-ad4c5157a87f",
+        "ev-ny26-95f84470dfb5"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -84001,7 +84169,16 @@
         "business"
       ],
       "name": "Trustco Bank — cannabis business banking (OCM banking directory)",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Schenectady",
+          "evidence_ids": [
+            "ev-ny26-8118135239b0"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -84023,7 +84200,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-ny26-43525982161d",
-        "ev-ny26-9a738d4ac91b"
+        "ev-ny26-9a738d4ac91b",
+        "ev-ny26-8118135239b0"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -84086,7 +84264,16 @@
         "business"
       ],
       "name": "Four Leaf Federal Credit Union — cannabis business banking (OCM banking directory)",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Nassau",
+          "evidence_ids": [
+            "ev-ny26-5cd9ad192195"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -84108,7 +84295,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-ny26-09551fc8c7ca",
-        "ev-ny26-b9ec060935ec"
+        "ev-ny26-b9ec060935ec",
+        "ev-ny26-5cd9ad192195"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -138704,6 +138892,318 @@
       "recorded_on": "2026-11-23",
       "recheck_on": "2027-02-21",
       "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-ny26-1a872be5476c",
+      "subject_id": "svc-ny-sampling-00016",
+      "claim": "service-coverage",
+      "value": "DRS Testing's own site lists 28 Best Street, Buffalo, NY 14209 in Erie County, New York.",
+      "source_url": "https://drstesting.com/contact-us",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-9773a2a49b37",
+      "subject_id": "svc-ny-sampling-00016",
+      "claim": "provider-contact",
+      "value": "DRS Testing publishes phone (716) 503-8147 and email info@drstesting.com.",
+      "source_url": "https://drstesting.com/contact-us",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-66f3d21e3157",
+      "subject_id": "svc-ny-sampling-00003",
+      "claim": "service-coverage",
+      "value": "ACT LAB (ACT Laboratories, Inc.)'s own site lists 16 Corporate Drive, Halfmoon, NY 12065 in Saratoga County, New York.",
+      "source_url": "https://actlab.com/new-york/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-89ccda710022",
+      "subject_id": "svc-ny-sampling-00010",
+      "claim": "service-coverage",
+      "value": "Dope Diagnostics Inc.'s own site lists Hudson Valley iCampus, 401 N. Middletown Road, Building 60A, Pearl River, NY 10965 in Rockland County, New York.",
+      "source_url": "https://dopediagnostics.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-7d20759a47ea",
+      "subject_id": "svc-ny-sampling-00010",
+      "claim": "provider-contact",
+      "value": "Dope Diagnostics Inc. publishes phone 845 762 5559 and email info@dopediagnostics.com.",
+      "source_url": "https://dopediagnostics.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-8ab710ca6802",
+      "subject_id": "svc-ny-sampling-00014",
+      "claim": "service-coverage",
+      "value": "Certified Testing and Data (CTND NY LLC)'s own site lists 150 Broadway STE 194, Menands, NY 12204 in Albany County, New York.",
+      "source_url": "https://certifiedtnd.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-3e375fd0e2a5",
+      "subject_id": "svc-ny-sampling-00014",
+      "claim": "provider-contact",
+      "value": "Certified Testing and Data (CTND NY LLC) publishes phone 518-900-5515 and email sales@certifiedtnd.com.",
+      "source_url": "https://certifiedtnd.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-96b5d7c98e5d",
+      "subject_id": "svc-ny-sampling-00013",
+      "claim": "service-coverage",
+      "value": "MCR Labs of New York's own site lists 800 Broad St., Utica, NY 13501 in Oneida County, New York.",
+      "source_url": "https://ny.mcrlabs.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-739d270c7524",
+      "subject_id": "svc-ny-sampling-00013",
+      "claim": "provider-contact",
+      "value": "MCR Labs of New York publishes phone 315-541-4202.",
+      "source_url": "https://ny.mcrlabs.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-a6c045fc4d5a",
+      "subject_id": "svc-ny-bank-ponce-bank",
+      "claim": "service-coverage",
+      "value": "Ponce Bank's own site lists 2244 Westchester Avenue, Bronx, NY 10462 in Bronx County, New York.",
+      "source_url": "https://www.poncebank.com/locations",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-4c9f56bf2487",
+      "subject_id": "svc-ny-bank-seneca-savings",
+      "claim": "service-coverage",
+      "value": "Seneca Savings's own site lists 35 Oswego Street, Baldwinsville, NY 13027 in Onondaga County, New York.",
+      "source_url": "https://www.senecasavings.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-490e0d835451",
+      "subject_id": "svc-ny-bank-sunmark-credit-union",
+      "claim": "service-coverage",
+      "value": "Sunmark Credit Union's own site lists 1187 Troy Schenectady Road, Latham, NY 12110 in Albany County, New York.",
+      "source_url": "https://sunmark.org/cannabis-banking",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-95f84470dfb5",
+      "subject_id": "svc-ny-bank-tioga-state-bank",
+      "claim": "service-coverage",
+      "value": "Tioga State Bank, N.A.'s own site lists 1 N. Main Street, PO Box 386, Spencer, NY 14883-0386 in Tioga County, New York.",
+      "source_url": "https://www.tiogabank.com/locations-and-hours/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-8118135239b0",
+      "subject_id": "svc-ny-bank-trustco-bank",
+      "claim": "service-coverage",
+      "value": "Trustco Bank's own site lists 320 State Street, Schenectady, NY 12305 in Schenectady County, New York.",
+      "source_url": "https://www.trustcobank.com/branch-and-atm-locator/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-5cd9ad192195",
+      "subject_id": "svc-ny-bank-four-leaf-federal-credit-union",
+      "claim": "service-coverage",
+      "value": "Four Leaf Federal Credit Union's own site lists 899 S. Oyster Bay Road, Bethpage, NY 11714 in Nassau County, New York.",
+      "source_url": "https://www.fourleaffcu.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-3b1d9db13691",
+      "subject_id": "svc-ny-lab-00011",
+      "claim": "provider-contact",
+      "value": "DRS Testing publishes phone (716) 503-8147 and email info@drstesting.com.",
+      "source_url": "https://drstesting.com/contact-us",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-80a44b0b9a18",
+      "subject_id": "svc-ny-lab-00008",
+      "claim": "provider-contact",
+      "value": "MCR Labs of New York publishes phone 315-541-4202.",
+      "source_url": "https://ny.mcrlabs.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-ad03f971d719",
+      "subject_id": "svc-ny-lab-00009",
+      "claim": "provider-contact",
+      "value": "Certified Testing and Data (CTND NY LLC) publishes phone 518-900-5515 and email sales@certifiedtnd.com.",
+      "source_url": "https://certifiedtnd.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-875d548f8023",
+      "subject_id": "svc-ny-lab-00021",
+      "claim": "provider-contact",
+      "value": "Dope Diagnostics Inc. publishes phone 845 762 5559 and email info@dopediagnostics.com.",
+      "source_url": "https://dopediagnostics.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-c5ac88f98c15",
+      "subject_id": "svc-ny-sampling-00001",
+      "claim": "provider-contact",
+      "value": "Cannabis Sampling Solutions publishes phone 1-845-670-5950 and email info@cannabissamplingny.com.",
+      "source_url": "https://www.cannabissamplingny.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-340a7f3f5cb7",
+      "subject_id": "svc-ny-sampling-00004",
+      "claim": "provider-contact",
+      "value": "Western NY Hemp Handlers publishes phone (716) 713-8581 and email bpm.hemptesting@gmail.com.",
+      "source_url": "https://wnyhemp-cannabis-sampling.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-a8e5803f2374",
+      "subject_id": "svc-ny-sampling-00017",
+      "claim": "provider-contact",
+      "value": "Fruition Flowers Firm publishes email services@fruitionfirm.com.",
+      "source_url": "https://fruitionfirm.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-8cb3054f2b0a",
+      "subject_id": "svc-ny-lab-00012",
+      "claim": "provider-contact",
+      "value": "Certainty Analytical Labs publishes email info@certainsciences.com.",
+      "source_url": "https://www.certainsciences.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed. Provider page reviewed November 23, 2026."
+    },
+    {
+      "id": "ev-ny26-47576e3abc24",
+      "subject_id": "svc-ny-lab-00006",
+      "claim": "provider-contact",
+      "value": "Kaycha NY LLC publishes phone (833) 465-8378.",
+      "source_url": "https://www.kaychalabs.com/locations/albany-new-york",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed. Provider page reviewed November 23, 2026."
     }
   ],
   "rules": [
@@ -140832,10 +141332,10 @@
         },
         {
           "pathway_id": "business",
-          "coverage_status": "starter",
+          "coverage_status": "partial",
           "next_step": "Find an OCM-permitted testing laboratory or approved sampling firm, a bank from OCM's cannabis banking directory, or use OCM licensing for applications and permits.",
           "public_url": "https://cannabis.ny.gov/licensing",
-          "limitations": "Sources reviewed November 1, 2026. Regulator-published lists: all 11 OCM-permitted testing laboratories with their testing scope, all 13 OCM-approved sampling firms, and the 20 banks and credit unions in OCM's Cannabis Banking Directory with the regions and services each lists (OCM says the directory is not an endorsement). Plus OCM licensing routes. Insurance, legal, accounting, security, packaging, technology and other providers have not been reviewed for New York service. The adult-use licensees in the location finder are reference records, not reviewed business listings. Trade associations remain leads; the CANY site could not be opened on November 1, 2026."
+          "limitations": "Sources reviewed November 1, 2026. Regulator-published lists: all 11 OCM-permitted testing laboratories with their testing scope, all 13 OCM-approved sampling firms, and the 20 banks and credit unions in OCM's Cannabis Banking Directory with the regions and services each lists (OCM says the directory is not an endorsement). Plus OCM licensing routes. Eleven listings carry county coverage from an office, branch or lab address on the business's own site (reviewed November 23, 2026); that never implies statewide service. Insurance, legal, accounting, security, packaging, technology and other providers have not been reviewed for New York service. The adult-use licensees in the location finder are reference records, not reviewed business listings. Trade associations remain leads; the CANY site could not be opened on November 1, 2026."
         },
         {
           "pathway_id": "community",

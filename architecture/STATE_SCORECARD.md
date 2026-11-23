@@ -9,7 +9,7 @@ As of 2026-11-23. Standard version 1.0.0: [STATE_COMPLETION_STANDARD.md](STATE_C
 | records | broad | partial | partial |
 | rules | broad | broad | broad |
 | medical | broad | broad | partial |
-| business | partial | partial | starter |
+| business | partial | partial | partial |
 | community | partial | broad | starter |
 
 ## Ohio (live)
@@ -45,5 +45,5 @@ As of 2026-11-23. Standard version 1.0.0: [STATE_COMPLETION_STANDARD.md](STATE_C
 | records | partial | services: 10; statewide routes: 3; counties with specific help: 5; counties: 62; county share: 0.081 | county-specific help in 26 more counties |
 | rules | broad | core topics covered: 7; core topics: 7; missing topics:  | — |
 | medical | partial | services: 4; government sourced: 4; support organizations: 0 | Reach 8 routes, 3 official and 1 patient-support organization |
-| business | starter | services: 45; coverage confirmed share: 0.556; direct contact share: 0.578; categorized share: 0.044; current review share: 1.0 | 9 more listings with confirmed in-state coverage (to 75%); 1 more listings with a phone or email (to 60%) |
+| business | partial | services: 45; coverage confirmed share: 0.778; direct contact share: 0.867; categorized share: 0.044; current review share: 1.0 | 105 more listings; 6 more listings with confirmed in-state coverage (to 90%); 41 more categorized listings (to 95%) |
 | community | starter | groups: 3; upcoming events: 0; items: 3 | Reach 5 groups or upcoming events |

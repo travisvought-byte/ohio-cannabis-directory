@@ -1,0 +1,399 @@
+{
+  "reviewed_on": "2026-11-23",
+  "recheck_on": "2027-02-21",
+  "method": "Provider-published New York office, branch or facility addresses and contact routes read on each business's own site, November 23, 2026. Per the state completion standard, a provider's own address counts as coverage for that county only. Emails hidden behind page protection and addresses not tied to the listed business were left out.",
+  "sources": {
+    "p1": {
+      "url": "https://drstesting.com/contact-us",
+      "source_kind": "provider",
+      "limitations": "Provider page reviewed November 23, 2026."
+    },
+    "p2": {
+      "url": "https://actlab.com/new-york/",
+      "source_kind": "provider",
+      "limitations": "Provider page reviewed November 23, 2026."
+    },
+    "p3": {
+      "url": "https://dopediagnostics.com/contact/",
+      "source_kind": "provider",
+      "limitations": "Provider page reviewed November 23, 2026."
+    },
+    "p4": {
+      "url": "https://certifiedtnd.com/",
+      "source_kind": "provider",
+      "limitations": "Provider page reviewed November 23, 2026."
+    },
+    "p5": {
+      "url": "https://ny.mcrlabs.com/contact-us/",
+      "source_kind": "provider",
+      "limitations": "Provider page reviewed November 23, 2026."
+    },
+    "p6": {
+      "url": "https://www.poncebank.com/locations",
+      "source_kind": "provider",
+      "limitations": "Provider page reviewed November 23, 2026."
+    },
+    "p7": {
+      "url": "https://www.senecasavings.com/",
+      "source_kind": "provider",
+      "limitations": "Provider page reviewed November 23, 2026."
+    },
+    "p8": {
+      "url": "https://sunmark.org/cannabis-banking",
+      "source_kind": "provider",
+      "limitations": "Provider page reviewed November 23, 2026."
+    },
+    "p9": {
+      "url": "https://www.tiogabank.com/locations-and-hours/",
+      "source_kind": "provider",
+      "limitations": "Provider page reviewed November 23, 2026."
+    },
+    "p10": {
+      "url": "https://www.trustcobank.com/branch-and-atm-locator/",
+      "source_kind": "provider",
+      "limitations": "Provider page reviewed November 23, 2026."
+    },
+    "p11": {
+      "url": "https://www.fourleaffcu.com/",
+      "source_kind": "provider",
+      "limitations": "Provider page reviewed November 23, 2026."
+    },
+    "p12": {
+      "url": "https://www.cannabissamplingny.com/contact",
+      "source_kind": "provider",
+      "limitations": "Provider page reviewed November 23, 2026."
+    },
+    "p13": {
+      "url": "https://wnyhemp-cannabis-sampling.com/",
+      "source_kind": "provider",
+      "limitations": "Provider page reviewed November 23, 2026."
+    },
+    "p14": {
+      "url": "https://fruitionfirm.com/",
+      "source_kind": "provider",
+      "limitations": "Provider page reviewed November 23, 2026."
+    },
+    "p15": {
+      "url": "https://www.certainsciences.com/contact",
+      "source_kind": "provider",
+      "limitations": "Provider page reviewed November 23, 2026."
+    },
+    "p16": {
+      "url": "https://www.kaychalabs.com/locations/albany-new-york",
+      "source_kind": "provider",
+      "limitations": "Provider page reviewed November 23, 2026."
+    }
+  },
+  "organizations": [],
+  "services": [],
+  "rules": [],
+  "events": [],
+  "service_updates": [
+    {
+      "service_id": "svc-ny-sampling-00016",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Erie",
+          "source": "p1",
+          "value": "DRS Testing's own site lists 28 Best Street, Buffalo, NY 14209 in Erie County, New York.",
+          "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made."
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "(716) 503-8147"
+        },
+        {
+          "kind": "email",
+          "value": "info@drstesting.com"
+        }
+      ],
+      "contact_source": "p1",
+      "contact_value": "DRS Testing publishes phone (716) 503-8147 and email info@drstesting.com."
+    },
+    {
+      "service_id": "svc-ny-sampling-00003",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Saratoga",
+          "source": "p2",
+          "value": "ACT LAB (ACT Laboratories, Inc.)'s own site lists 16 Corporate Drive, Halfmoon, NY 12065 in Saratoga County, New York.",
+          "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made."
+        }
+      ]
+    },
+    {
+      "service_id": "svc-ny-sampling-00010",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Rockland",
+          "source": "p3",
+          "value": "Dope Diagnostics Inc.'s own site lists Hudson Valley iCampus, 401 N. Middletown Road, Building 60A, Pearl River, NY 10965 in Rockland County, New York.",
+          "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made."
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "845 762 5559"
+        },
+        {
+          "kind": "email",
+          "value": "info@dopediagnostics.com"
+        }
+      ],
+      "contact_source": "p3",
+      "contact_value": "Dope Diagnostics Inc. publishes phone 845 762 5559 and email info@dopediagnostics.com."
+    },
+    {
+      "service_id": "svc-ny-sampling-00014",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Albany",
+          "source": "p4",
+          "value": "Certified Testing and Data (CTND NY LLC)'s own site lists 150 Broadway STE 194, Menands, NY 12204 in Albany County, New York.",
+          "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made."
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "518-900-5515"
+        },
+        {
+          "kind": "email",
+          "value": "sales@certifiedtnd.com"
+        }
+      ],
+      "contact_source": "p4",
+      "contact_value": "Certified Testing and Data (CTND NY LLC) publishes phone 518-900-5515 and email sales@certifiedtnd.com."
+    },
+    {
+      "service_id": "svc-ny-sampling-00013",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Oneida",
+          "source": "p5",
+          "value": "MCR Labs of New York's own site lists 800 Broad St., Utica, NY 13501 in Oneida County, New York.",
+          "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made."
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "315-541-4202"
+        }
+      ],
+      "contact_source": "p5",
+      "contact_value": "MCR Labs of New York publishes phone 315-541-4202."
+    },
+    {
+      "service_id": "svc-ny-bank-ponce-bank",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Bronx",
+          "source": "p6",
+          "value": "Ponce Bank's own site lists 2244 Westchester Avenue, Bronx, NY 10462 in Bronx County, New York.",
+          "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made."
+        }
+      ]
+    },
+    {
+      "service_id": "svc-ny-bank-seneca-savings",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Onondaga",
+          "source": "p7",
+          "value": "Seneca Savings's own site lists 35 Oswego Street, Baldwinsville, NY 13027 in Onondaga County, New York.",
+          "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made."
+        }
+      ]
+    },
+    {
+      "service_id": "svc-ny-bank-sunmark-credit-union",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Albany",
+          "source": "p8",
+          "value": "Sunmark Credit Union's own site lists 1187 Troy Schenectady Road, Latham, NY 12110 in Albany County, New York.",
+          "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made."
+        }
+      ]
+    },
+    {
+      "service_id": "svc-ny-bank-tioga-state-bank",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Tioga",
+          "source": "p9",
+          "value": "Tioga State Bank, N.A.'s own site lists 1 N. Main Street, PO Box 386, Spencer, NY 14883-0386 in Tioga County, New York.",
+          "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made."
+        }
+      ]
+    },
+    {
+      "service_id": "svc-ny-bank-trustco-bank",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Schenectady",
+          "source": "p10",
+          "value": "Trustco Bank's own site lists 320 State Street, Schenectady, NY 12305 in Schenectady County, New York.",
+          "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made."
+        }
+      ]
+    },
+    {
+      "service_id": "svc-ny-bank-four-leaf-federal-credit-union",
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "NY",
+          "county": "Nassau",
+          "source": "p11",
+          "value": "Four Leaf Federal Credit Union's own site lists 899 S. Oyster Bay Road, Bethpage, NY 11714 in Nassau County, New York.",
+          "limitations": "Provider-published New York address only, recorded as coverage for that county. Service elsewhere in New York is not confirmed; no contact was made."
+        }
+      ]
+    },
+    {
+      "service_id": "svc-ny-lab-00011",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "(716) 503-8147"
+        },
+        {
+          "kind": "email",
+          "value": "info@drstesting.com"
+        }
+      ],
+      "contact_source": "p1",
+      "contact_value": "DRS Testing publishes phone (716) 503-8147 and email info@drstesting.com."
+    },
+    {
+      "service_id": "svc-ny-lab-00008",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "315-541-4202"
+        }
+      ],
+      "contact_source": "p5",
+      "contact_value": "MCR Labs of New York publishes phone 315-541-4202."
+    },
+    {
+      "service_id": "svc-ny-lab-00009",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "518-900-5515"
+        },
+        {
+          "kind": "email",
+          "value": "sales@certifiedtnd.com"
+        }
+      ],
+      "contact_source": "p4",
+      "contact_value": "Certified Testing and Data (CTND NY LLC) publishes phone 518-900-5515 and email sales@certifiedtnd.com."
+    },
+    {
+      "service_id": "svc-ny-lab-00021",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "845 762 5559"
+        },
+        {
+          "kind": "email",
+          "value": "info@dopediagnostics.com"
+        }
+      ],
+      "contact_source": "p3",
+      "contact_value": "Dope Diagnostics Inc. publishes phone 845 762 5559 and email info@dopediagnostics.com."
+    },
+    {
+      "service_id": "svc-ny-sampling-00001",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "1-845-670-5950"
+        },
+        {
+          "kind": "email",
+          "value": "info@cannabissamplingny.com"
+        }
+      ],
+      "contact_source": "p12",
+      "contact_value": "Cannabis Sampling Solutions publishes phone 1-845-670-5950 and email info@cannabissamplingny.com."
+    },
+    {
+      "service_id": "svc-ny-sampling-00004",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "(716) 713-8581"
+        },
+        {
+          "kind": "email",
+          "value": "bpm.hemptesting@gmail.com"
+        }
+      ],
+      "contact_source": "p13",
+      "contact_value": "Western NY Hemp Handlers publishes phone (716) 713-8581 and email bpm.hemptesting@gmail.com."
+    },
+    {
+      "service_id": "svc-ny-sampling-00017",
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "services@fruitionfirm.com"
+        }
+      ],
+      "contact_source": "p14",
+      "contact_value": "Fruition Flowers Firm publishes email services@fruitionfirm.com."
+    },
+    {
+      "service_id": "svc-ny-lab-00012",
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "info@certainsciences.com"
+        }
+      ],
+      "contact_source": "p15",
+      "contact_value": "Certainty Analytical Labs publishes email info@certainsciences.com."
+    },
+    {
+      "service_id": "svc-ny-lab-00006",
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "(833) 465-8378"
+        }
+      ],
+      "contact_source": "p16",
+      "contact_value": "Kaycha NY LLC publishes phone (833) 465-8378."
+    }
+  ]
+}
