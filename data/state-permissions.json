@@ -3074,6 +3074,33 @@
    "title": "Expungement (Office of General Counsel; last modified July 2, 2024)",
    "url": "https://nmcourts.gov/court-administration/office-of-general-counsel/expungement",
    "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "sd-sdcl-24-14-11",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "South Dakota Legislature",
+   "title": "SDCL 24-14-11, effects of pardon (records sealed)",
+   "url": "https://sdlegislature.gov/api/Statutes/24-14-11.html?all=true",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "sd-pardon-faq",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "South Dakota Board of Pardons and Paroles",
+   "title": "Online Pardon Application: frequently asked questions",
+   "url": "https://docpardon.sd.gov/faq.aspx",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "sd-sdcl-23a-27-17",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "South Dakota Legislature",
+   "title": "SDCL 23A-27-17, sealing of records after discharge and dismissal",
+   "url": "https://sdlegislature.gov/api/Statutes/23A-27-17.html",
+   "retrieved_on": "2026-11-23"
   }
  ],
  "answers": [
@@ -6874,16 +6901,19 @@
   {
    "state": "SD",
    "question": "record-relief",
-   "status": "automatic",
-   "short": "Petty and Class 2 misdemeanor cases, after 5 years",
-   "detail": "South Dakota removes a charge or conviction from a person’s public record automatically after five years when the most serious offense in the case was a petty offense, a municipal ordinance violation or a Class 2 misdemeanor, every court-ordered condition has been met and there has been no new conviction in that time (SDCL 23A-3-34). The record stays available to court personnel and can still be used to enhance the penalty in a later case. Possessing two ounces of marijuana or less is a Class 1 misdemeanor (SDCL 22-42-6), which that section does not list. A person who was arrested but not convicted can move the court to expunge the arrest record one year after an arrest with no charge filed or after the prosecutor dismisses the whole case, or at any time after an acquittal (SDCL 23A-3-27; the Unified Judicial System’s expungement page and forms). The pages read describe no court route to expunge a conviction and do not mention marijuana; the law covers criminal records in general.",
-   "citation": "SDCL 23A-3-34, 23A-3-27 and 22-42-6; South Dakota Unified Judicial System, Expungement",
+   "status": "by-application",
+   "short": "Pardon application; a pardon seals the record",
+   "detail": "A typical cannabis conviction in South Dakota, possessing two ounces of marijuana or less, is a Class 1 misdemeanor (SDCL 22-42-6). The route the official sources show for such a conviction is a pardon. A person may apply to the Board of Pardons and Paroles one year or more after the conviction date; there is no application fee; the Board reviews the request and recommends it, and only the Governor can grant a pardon (the Board’s pardon FAQ). When the Governor grants a pardon, the Governor orders the official records of the arrest, charge, trial, finding of guilt and the pardon proceedings sealed, and the person need not disclose them when asked; the pardoned offense still counts as a prior conviction for sentencing on a later offense (SDCL 24-14-11). Two other routes cover fewer cases. When a court grants a suspended imposition of sentence and the person is later discharged and the case dismissed, the court orders the records sealed (SDCL 23A-27-17); that is decided at sentencing. And a case whose most serious offense was a petty offense, a municipal ordinance violation or a Class 2 misdemeanor comes off the public record automatically after five years with no new conviction (SDCL 23A-3-34), which does not reach a Class 1 possession conviction. A court motion to expunge covers only arrests that did not end in a conviction (SDCL 23A-3-27; the Unified Judicial System’s expungement page). None of these pages names marijuana; the law covers criminal records in general.",
+   "citation": "SDCL 24-14-11 and the Board of Pardons and Paroles’ pardon FAQ; SDCL 22-42-6, 23A-27-17, 23A-3-34 and 23A-3-27; Unified Judicial System, Expungement",
    "effective_on": null,
    "reviewed_on": "2026-11-23",
    "source_ids": [
+    "sd-sdcl-22-42-6",
+    "sd-sdcl-24-14-11",
+    "sd-pardon-faq",
+    "sd-sdcl-23a-27-17",
     "sd-sdcl-23a-3-34",
     "sd-sdcl-23a-3-27",
-    "sd-sdcl-22-42-6",
     "sd-ujs-expungement"
    ]
   },
