@@ -29,7 +29,7 @@ arco['legacy_record']['Notes'] = 'Fixture: preserve separately reviewed Ohio pro
 assert next(o for o in build(fixture, manifest)['organizations'] if o['id'] == arco['id']) == arco
 ids = {'svc-pa-supplier-' + p['staging_id'].removeprefix('pa-') for p in manifest['profiles']}
 services = [s for s in data['services'] if s['id'] in ids]
-assert len(services) == 6 and all(s['coverage'] == [] and s['availability'] == 'unknown' for s in services)
+assert len(services) == 6 and all(all(g['evidence_ids'] for g in s['coverage']) and s['availability'] == 'unknown' for s in services)
 assert all(s['listed_in'] == ['PA'] for s in services)
 assert len([s for s in data['services'] if 'PA' in s.get('listed_in',[])]) == 154
 for kind in ('organizations','services','evidence'):

@@ -23588,7 +23588,16 @@
       "name": "JR Peters, Inc.",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "866-522-5752"
+        },
+        {
+          "kind": "email",
+          "value": "info@jrpeters.com"
+        }
+      ],
       "website": "https://www.jrpeters.com/",
       "scope": "public"
     },
@@ -23597,7 +23606,16 @@
       "name": "Boyle Construction",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "484-223-0726"
+        },
+        {
+          "kind": "email",
+          "value": "info@boyleconstruction.com"
+        }
+      ],
       "website": "https://boyleconstruction.com/",
       "scope": "public"
     },
@@ -23606,7 +23624,16 @@
       "name": "Titanium Security & Surveillance",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "610-277-9000"
+        },
+        {
+          "kind": "email",
+          "value": "info@titaniumss.com"
+        }
+      ],
       "website": "https://titaniumss.com/",
       "scope": "public"
     },
@@ -23615,7 +23642,16 @@
       "name": "Automated Security Corporation",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "610-873-0067"
+        },
+        {
+          "kind": "email",
+          "value": "service@automatedsecuritycorp.com"
+        }
+      ],
       "website": "https://automatedsecuritycorp.com/",
       "scope": "public"
     },
@@ -23624,7 +23660,16 @@
       "name": "MJ Freeway / MJ Platform",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "855-657-2147"
+        },
+        {
+          "kind": "email",
+          "value": "sales@mjfreeway.com"
+        }
+      ],
       "website": "https://mjplatform.com/",
       "scope": "public"
     },
@@ -23633,7 +23678,12 @@
       "name": "McKim & Creed",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "412-489-9100"
+        }
+      ],
       "website": "https://www.mckimcreed.com/",
       "scope": "public"
     },
@@ -23642,7 +23692,16 @@
       "name": "Wooster & Associates",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "412-921-3303"
+        },
+        {
+          "kind": "email",
+          "value": "info@dewooster.com"
+        }
+      ],
       "website": "https://www.dewooster.com/",
       "scope": "public"
     },
@@ -23651,7 +23710,12 @@
       "name": "Palmer Construction",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "717-485-5111"
+        }
+      ],
       "website": "https://palmerconstruction.net/",
       "scope": "public"
     },
@@ -23660,7 +23724,12 @@
       "name": "Panacea Payroll",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "610-310-7615"
+        }
+      ],
       "website": "https://panaceapayroll.com/",
       "scope": "public"
     },
@@ -23669,7 +23738,12 @@
       "name": "LabRepCo",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "800-521-0754"
+        }
+      ],
       "website": "https://www.labrepco.com/",
       "scope": "public"
     },
@@ -23687,7 +23761,16 @@
       "name": "Corcoran Printing",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "570-343-0414"
+        },
+        {
+          "kind": "email",
+          "value": "orders@corcoranprinting.com"
+        }
+      ],
       "website": "https://corcoranprinting.com/",
       "scope": "public"
     },
@@ -23696,7 +23779,16 @@
       "name": "JPAK International LLC",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "215-860-5306"
+        },
+        {
+          "kind": "email",
+          "value": "sales@jpakinternational.com"
+        }
+      ],
       "website": "https://jpakinternational.com/",
       "scope": "public"
     },
@@ -23705,7 +23797,16 @@
       "name": "Paragon Engineering Services",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "717-854-7374"
+        },
+        {
+          "kind": "email",
+          "value": "info@peservices.org"
+        }
+      ],
       "website": "https://www.peservices.org/",
       "scope": "public"
     },
@@ -23714,7 +23815,12 @@
       "name": "Kinsley Energy Systems",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "800-255-3503"
+        }
+      ],
       "website": "https://www.kinsley-group.com/",
       "scope": "public"
     },
@@ -23723,7 +23829,12 @@
       "name": "Graves Design Group",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "412-338-1976"
+        }
+      ],
       "website": "https://www.gravesdesigngroup.com/",
       "scope": "public"
     },
@@ -23732,7 +23843,16 @@
       "name": "HiTechTrader",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "609-518-9100"
+        },
+        {
+          "kind": "email",
+          "value": "sales@hitechtrader.com"
+        }
+      ],
       "website": "https://hitechtrader.com/",
       "scope": "public"
     },
@@ -23741,7 +23861,16 @@
       "name": "Dellinger Horticulture, Inc.",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "717-752-7248"
+        },
+        {
+          "kind": "email",
+          "value": "contact_dhi@yahoo.com"
+        }
+      ],
       "website": "https://www.dellingerhorticulture.com/",
       "scope": "public"
     },
@@ -23750,7 +23879,16 @@
       "name": "Innovative Industrial Properties",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "858-997-3332"
+        },
+        {
+          "kind": "email",
+          "value": "info@iipreit.com"
+        }
+      ],
       "website": "https://innovativeindustrialproperties.com/",
       "scope": "public"
     },
@@ -76426,7 +76564,16 @@
         "business"
       ],
       "name": "Alpine Packaging, Inc.",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Allegheny",
+          "evidence_ids": [
+            "ev-pa27-ea0978e0f855"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -76449,7 +76596,8 @@
       "evidence_ids": [
         "ev-pa-drive-9e171a0e4e877f86",
         "ev-pa-drive-31506f549c41f25d",
-        "ev-pa27-a706ed89d997"
+        "ev-pa27-a706ed89d997",
+        "ev-pa27-ea0978e0f855"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -76465,7 +76613,16 @@
         "business"
       ],
       "name": "Thar Process",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Allegheny",
+          "evidence_ids": [
+            "ev-pa27-59f47b77c11a"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -76489,7 +76646,8 @@
         "ev-pa-drive-aae533228ad167ee",
         "ev-pa-drive-fee1341038f07db0",
         "ev-pa-drive-aa86e70b02b7db52",
-        "ev-pa27-c63f7e4157e9"
+        "ev-pa27-c63f7e4157e9",
+        "ev-pa27-59f47b77c11a"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -76923,7 +77081,16 @@
         "community"
       ],
       "name": "Central Penn College — Cannabis Customer Service",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Cumberland",
+          "evidence_ids": [
+            "ev-pa27-4c79c010bfe4"
+          ]
+        }
+      ],
       "audiences": [
         "business",
         "consumer"
@@ -76947,7 +77114,8 @@
       "evidence_ids": [
         "ev-pa-drive-24646211a62c46b3",
         "ev-pa-drive-39794603f7b988ac",
-        "ev-pa27-de533b073b4b"
+        "ev-pa27-de533b073b4b",
+        "ev-pa27-4c79c010bfe4"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77014,7 +77182,16 @@
         "community"
       ],
       "name": "Lackawanna College — Cannabis Professional",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Lackawanna",
+          "evidence_ids": [
+            "ev-pa27-94f02f330637"
+          ]
+        }
+      ],
       "audiences": [
         "business",
         "consumer"
@@ -77038,7 +77215,8 @@
       "evidence_ids": [
         "ev-pa-drive-b01c18bd5fb2ecba",
         "ev-pa-drive-244ee692a2690281",
-        "ev-pa27-4970e438cca5"
+        "ev-pa27-4970e438cca5",
+        "ev-pa27-94f02f330637"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77055,7 +77233,16 @@
         "community"
       ],
       "name": "Pennsylvania Institute of Technology — Cannabis Cultivation",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Delaware",
+          "evidence_ids": [
+            "ev-pa27-9dfbb39cf883"
+          ]
+        }
+      ],
       "audiences": [
         "business",
         "consumer"
@@ -77079,7 +77266,8 @@
       "evidence_ids": [
         "ev-pa-drive-2e326ac51890fccf",
         "ev-pa-drive-b21ef2b6c4c50e22",
-        "ev-pa27-dcb9e63e2122"
+        "ev-pa27-dcb9e63e2122",
+        "ev-pa27-9dfbb39cf883"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77096,7 +77284,16 @@
         "community"
       ],
       "name": "Thomas Jefferson University — Lambert Center Graduate Programs",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Philadelphia",
+          "evidence_ids": [
+            "ev-pa27-380c5209f3d8"
+          ]
+        }
+      ],
       "audiences": [
         "business",
         "consumer"
@@ -77120,7 +77317,8 @@
       "evidence_ids": [
         "ev-pa-drive-6e05b6d69b246ab5",
         "ev-pa-drive-8170e236aa21fa31",
-        "ev-pa27-1ae3ee487414"
+        "ev-pa27-1ae3ee487414",
+        "ev-pa27-380c5209f3d8"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77136,7 +77334,16 @@
         "business"
       ],
       "name": "Cozen O’Connor — Cannabis Practice",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Philadelphia",
+          "evidence_ids": [
+            "ev-pa27-efc5ccdbc1f4"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -77158,7 +77365,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-58fd6635bd12769f",
-        "ev-pa-drive-76434ef0807d4ba8"
+        "ev-pa-drive-76434ef0807d4ba8",
+        "ev-pa27-efc5ccdbc1f4"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77694,7 +77902,16 @@
         "business"
       ],
       "name": "Clark Hill - Cannabis Industry Group",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Philadelphia",
+          "evidence_ids": [
+            "ev-pa27-1aed2c4224b9"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -77718,7 +77935,8 @@
         "ev-pa-drive-e43899aa5252e34b",
         "ev-pa-drive-02b37a45b769dd73",
         "ev-pa-drive-8052dd766e166a1e",
-        "ev-pa27-20033aeea1cd"
+        "ev-pa27-20033aeea1cd",
+        "ev-pa27-1aed2c4224b9"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77734,7 +77952,16 @@
         "business"
       ],
       "name": "Leech Tishman - Cannabis Group",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Allegheny",
+          "evidence_ids": [
+            "ev-pa27-6d2777f03b03"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -77758,7 +77985,8 @@
         "ev-pa-drive-7131010ee0f5c059",
         "ev-pa-drive-a3266123a8ed3051",
         "ev-pa-drive-c5c30cb1ccb3b462",
-        "ev-pa27-79b8360282da"
+        "ev-pa27-79b8360282da",
+        "ev-pa27-6d2777f03b03"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77964,7 +78192,16 @@
         "business"
       ],
       "name": "Panacea Group - Cannabis Insurance",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Philadelphia",
+          "evidence_ids": [
+            "ev-pa27-bb2769f0c21b"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -77987,7 +78224,8 @@
       "evidence_ids": [
         "ev-pa-drive-2c2a955fd6cb865e",
         "ev-pa-drive-2db37d13b14d88bf",
-        "ev-pa27-ea407f713c2b"
+        "ev-pa27-ea407f713c2b",
+        "ev-pa27-bb2769f0c21b"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -78051,7 +78289,16 @@
         "business"
       ],
       "name": "Robertson Insurance & Risk Management - Cannabis",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Lancaster",
+          "evidence_ids": [
+            "ev-pa27-982c91530ce2"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -78074,7 +78321,8 @@
       "evidence_ids": [
         "ev-pa-drive-1d9560617e226450",
         "ev-pa-drive-76d8b915035680e2",
-        "ev-pa27-e093df72b638"
+        "ev-pa27-e093df72b638",
+        "ev-pa27-982c91530ce2"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -78223,7 +78471,16 @@
         "business"
       ],
       "name": "Inland Packaging - Cannabis Labels",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Chester",
+          "evidence_ids": [
+            "ev-pa27-9d27a78865ad"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -78247,7 +78504,8 @@
         "ev-pa-drive-b1bf0c96f9ed437d",
         "ev-pa-drive-d6f0b04b79d9acd2",
         "ev-pa-drive-e37d1f9a2d05999f",
-        "ev-pa27-41ee4d76fc6e"
+        "ev-pa27-41ee4d76fc6e",
+        "ev-pa27-9d27a78865ad"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -78263,7 +78521,16 @@
         "business"
       ],
       "name": "Elmark Packaging - Cannabis Labeling Equipment",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Chester",
+          "evidence_ids": [
+            "ev-pa27-42c354d4a695"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -78286,7 +78553,8 @@
       "evidence_ids": [
         "ev-pa-drive-736e5ce2ebd5d3a1",
         "ev-pa-drive-b4c2503ddc6904a2",
-        "ev-pa27-926b97615d0f"
+        "ev-pa27-926b97615d0f",
+        "ev-pa27-42c354d4a695"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -78528,7 +78796,16 @@
         "community"
       ],
       "name": "DON Enterprises - PA Hemp Home",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Lawrence",
+          "evidence_ids": [
+            "ev-pa27-a4a1d588468c"
+          ]
+        }
+      ],
       "audiences": [
         "business",
         "consumer"
@@ -78552,7 +78829,8 @@
       "evidence_ids": [
         "ev-pa-drive-9ac70516664dc9c8",
         "ev-pa-drive-8a015c90358d2cd3",
-        "ev-pa27-da345d9957b3"
+        "ev-pa27-da345d9957b3",
+        "ev-pa27-a4a1d588468c"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -79954,7 +80232,16 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Lehigh",
+          "evidence_ids": [
+            "ev-pa27-6b86edf2358e"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -79977,7 +80264,8 @@
       "evidence_ids": [
         "ev-pa-company-011513c0153f2537",
         "ev-pa-company-28384b08ec835491",
-        "ev-pa27-19230fb0ccb0"
+        "ev-pa27-19230fb0ccb0",
+        "ev-pa27-6b86edf2358e"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80032,7 +80320,16 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Adams",
+          "evidence_ids": [
+            "ev-pa27-52f8ecbf8dde"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -80055,7 +80352,8 @@
       "evidence_ids": [
         "ev-pa-company-c4a24a7421d974f6",
         "ev-pa-company-e9bcd392ee04a8a7",
-        "ev-pa27-9f976030bbe2"
+        "ev-pa27-9f976030bbe2",
+        "ev-pa27-52f8ecbf8dde"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80071,7 +80369,16 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Berks",
+          "evidence_ids": [
+            "ev-pa27-9b6f71c61f3f"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -80094,7 +80401,8 @@
       "evidence_ids": [
         "ev-pa-company-86ade5c577d2e3a8",
         "ev-pa-company-cb1c058d0292e547",
-        "ev-pa27-38fad818dcdf"
+        "ev-pa27-38fad818dcdf",
+        "ev-pa27-9b6f71c61f3f"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80110,7 +80418,16 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "McKean",
+          "evidence_ids": [
+            "ev-pa27-13cf751a9ab1"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -80133,7 +80450,8 @@
       "evidence_ids": [
         "ev-pa-company-fc32b1100bf30855",
         "ev-pa-company-60c5792ddd01cb06",
-        "ev-pa27-4223bf2d404e"
+        "ev-pa27-4223bf2d404e",
+        "ev-pa27-13cf751a9ab1"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80150,7 +80468,16 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Lehigh",
+          "evidence_ids": [
+            "ev-pa27-0a24beff3a7e"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -80173,7 +80500,9 @@
       "evidence_ids": [
         "ev-pa-supplier-1dcf296f9cc62a00",
         "ev-pa-supplier-fdc89757727ee3f4",
-        "ev-pa-supplier-05a24d6dd4d33236"
+        "ev-pa-supplier-05a24d6dd4d33236",
+        "ev-pa27-0a24beff3a7e",
+        "ev-pa27-e87158d519c0"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80189,7 +80518,16 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Lehigh",
+          "evidence_ids": [
+            "ev-pa27-18fee6b27686"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -80212,7 +80550,9 @@
       "evidence_ids": [
         "ev-pa-supplier-655839e65bd826c8",
         "ev-pa-supplier-b9737a3816119679",
-        "ev-pa-supplier-5bc227cd60f3327e"
+        "ev-pa-supplier-5bc227cd60f3327e",
+        "ev-pa27-18fee6b27686",
+        "ev-pa27-3202f6a193ce"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80228,7 +80568,16 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Montgomery",
+          "evidence_ids": [
+            "ev-pa27-823ac1d6ede2"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -80251,7 +80600,9 @@
       "evidence_ids": [
         "ev-pa-supplier-24efe4f27179f10b",
         "ev-pa-supplier-e06e7dea19578209",
-        "ev-pa-supplier-724b1a14399fd8c2"
+        "ev-pa-supplier-724b1a14399fd8c2",
+        "ev-pa27-823ac1d6ede2",
+        "ev-pa27-4d65d8c2d308"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80267,7 +80618,16 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Lancaster",
+          "evidence_ids": [
+            "ev-pa27-5b9823196230"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -80290,7 +80650,9 @@
       "evidence_ids": [
         "ev-pa-supplier-f2d0bf40f2ee14b3",
         "ev-pa-supplier-940ada3af76364a9",
-        "ev-pa-supplier-99e7e240b25d1385"
+        "ev-pa-supplier-99e7e240b25d1385",
+        "ev-pa27-5b9823196230",
+        "ev-pa27-7a1264c46b3a"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80306,7 +80668,15 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa27-40dbb86eb190"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -80329,7 +80699,9 @@
       "evidence_ids": [
         "ev-pa-supplier-6d011ab316063b9b",
         "ev-pa-supplier-7b4072092380c126",
-        "ev-pa-supplier-4fb1c37ff0ae964d"
+        "ev-pa-supplier-4fb1c37ff0ae964d",
+        "ev-pa27-40dbb86eb190",
+        "ev-pa27-092f0dbca8b3"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80345,7 +80717,16 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Allegheny",
+          "evidence_ids": [
+            "ev-pa27-a00ff0d23eb5"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -80368,7 +80749,9 @@
       "evidence_ids": [
         "ev-pa-supplier-a1e3487896e8f0f3",
         "ev-pa-supplier-df200ea50040bfe0",
-        "ev-pa-supplier-8be835ea2563a147"
+        "ev-pa-supplier-8be835ea2563a147",
+        "ev-pa27-a00ff0d23eb5",
+        "ev-pa27-202ed8a2b69e"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80423,7 +80806,15 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa27-4acf628987bb"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -80446,7 +80837,9 @@
       "evidence_ids": [
         "ev-pa-supplier-c1ba88182c33d0e6",
         "ev-pa-supplier-12344d932a0946e1",
-        "ev-pa-supplier-7bebc7c28df1e14d"
+        "ev-pa-supplier-7bebc7c28df1e14d",
+        "ev-pa27-4acf628987bb",
+        "ev-pa27-0648286f62e2"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80462,7 +80855,16 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Fulton",
+          "evidence_ids": [
+            "ev-pa27-02c740bd3444"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -80485,7 +80887,9 @@
       "evidence_ids": [
         "ev-pa-supplier-0bf72f594a0e4ab1",
         "ev-pa-supplier-ff09a8246b99df32",
-        "ev-pa-supplier-86067d24756e9c90"
+        "ev-pa-supplier-86067d24756e9c90",
+        "ev-pa27-02c740bd3444",
+        "ev-pa27-1392d89b59bc"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80501,7 +80905,16 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Montgomery",
+          "evidence_ids": [
+            "ev-pa27-90c83281eeee"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -80524,7 +80937,9 @@
       "evidence_ids": [
         "ev-pa-supplier-afca065c112e7ef4",
         "ev-pa-supplier-8e2030a1ff7fbd93",
-        "ev-pa-supplier-52850902f8474cf7"
+        "ev-pa-supplier-52850902f8474cf7",
+        "ev-pa27-90c83281eeee",
+        "ev-pa27-190d4c8919db"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80540,7 +80955,16 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Montgomery",
+          "evidence_ids": [
+            "ev-pa27-3a07dd6b3e10"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -80563,7 +80987,9 @@
       "evidence_ids": [
         "ev-pa-supplier-9c4de20149dc2a3f",
         "ev-pa-supplier-d89d09ea8bb55f59",
-        "ev-pa-supplier-f47edae7ffe3799b"
+        "ev-pa-supplier-f47edae7ffe3799b",
+        "ev-pa27-3a07dd6b3e10",
+        "ev-pa27-57d90f7ee80d"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80618,7 +81044,16 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Lackawanna",
+          "evidence_ids": [
+            "ev-pa27-9fac616813cc"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -80641,7 +81076,9 @@
       "evidence_ids": [
         "ev-pa-supplier-b1538871d80f4aad",
         "ev-pa-supplier-47bd25b6948b7ba8",
-        "ev-pa-supplier-a07d5db84230ff12"
+        "ev-pa-supplier-a07d5db84230ff12",
+        "ev-pa27-9fac616813cc",
+        "ev-pa27-cbd5967eb3f3"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80657,7 +81094,16 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Bucks",
+          "evidence_ids": [
+            "ev-pa27-f782dddfe4da"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -80680,7 +81126,9 @@
       "evidence_ids": [
         "ev-pa-supplier-8deb7c2824fe5ebc",
         "ev-pa-supplier-98f8de0873d0fcf8",
-        "ev-pa-supplier-41adb7ab41fdc3b2"
+        "ev-pa-supplier-41adb7ab41fdc3b2",
+        "ev-pa27-f782dddfe4da",
+        "ev-pa27-32c532dce2d4"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80696,7 +81144,16 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "York",
+          "evidence_ids": [
+            "ev-pa27-317c29c796f9"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -80719,7 +81176,9 @@
       "evidence_ids": [
         "ev-pa-supplier-cade2fde59507aa8",
         "ev-pa-supplier-1d9163d8c38e2540",
-        "ev-pa-supplier-dfe7f096a0612441"
+        "ev-pa-supplier-dfe7f096a0612441",
+        "ev-pa27-317c29c796f9",
+        "ev-pa27-5475e382d96d"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80758,7 +81217,8 @@
       "evidence_ids": [
         "ev-pa-supplier-f39cf219d6bbb99b",
         "ev-pa-supplier-f9ac977a4e1d526b",
-        "ev-pa-supplier-b8d34302d517ddc7"
+        "ev-pa-supplier-b8d34302d517ddc7",
+        "ev-pa27-0e1a3353968c"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80813,7 +81273,16 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Allegheny",
+          "evidence_ids": [
+            "ev-pa27-5b8bdcc0e4b6"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -80836,7 +81305,9 @@
       "evidence_ids": [
         "ev-pa-supplier-fb347f5d47dfc59a",
         "ev-pa-supplier-27c17bdb679a2177",
-        "ev-pa-supplier-d4703ee0b0784fc6"
+        "ev-pa-supplier-d4703ee0b0784fc6",
+        "ev-pa27-5b8bdcc0e4b6",
+        "ev-pa27-845a209adfee"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80875,7 +81346,8 @@
       "evidence_ids": [
         "ev-pa-supplier-dc76786a82816fb6",
         "ev-pa-supplier-a82b2280ad98754c",
-        "ev-pa-supplier-4dbf553d4ba53f29"
+        "ev-pa-supplier-4dbf553d4ba53f29",
+        "ev-pa27-da4dd4a4bd64"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80914,7 +81386,8 @@
       "evidence_ids": [
         "ev-pa-supplier-bbffaaf0b589d6f1",
         "ev-pa-supplier-a716014ea709b933",
-        "ev-pa-supplier-42b1edaf913a1ea8"
+        "ev-pa-supplier-42b1edaf913a1ea8",
+        "ev-pa27-5f820a7d4dff"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80969,7 +81442,16 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "county",
+          "state": "PA",
+          "county": "Franklin",
+          "evidence_ids": [
+            "ev-pa27-82d70e3c2970"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -80992,7 +81474,9 @@
       "evidence_ids": [
         "ev-pa-supplier-59c9508b4d238a18",
         "ev-pa-supplier-d45e66e56883a92d",
-        "ev-pa-supplier-2c235ee8f27a1824"
+        "ev-pa-supplier-2c235ee8f27a1824",
+        "ev-pa27-82d70e3c2970",
+        "ev-pa27-e3dedfb9fa2e"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -137557,6 +138041,669 @@
       "recorded_on": "2026-10-28",
       "recheck_on": "2026-11-27",
       "limitations": "General Assembly compilation of the Controlled Substance, Drug, Device and Cosmetic Act. Local ordinances, charging practices and diversion programs are not covered. Not legal advice."
+    },
+    {
+      "id": "ev-pa27-ea0978e0f855",
+      "subject_id": "svc-pa-drive-b2-alpine",
+      "claim": "service-coverage",
+      "value": "Alpine Packaging, Inc.'s own page lists an office or facility in Allegheny County, Pennsylvania.",
+      "source_url": "https://www.alpinepackaging.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-59f47b77c11a",
+      "subject_id": "svc-pa-drive-b2-thar",
+      "claim": "service-coverage",
+      "value": "Thar Process's own page lists an office or facility in Allegheny County, Pennsylvania.",
+      "source_url": "https://www.tharprocess.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-4c79c010bfe4",
+      "subject_id": "svc-pa-drive-b4-centralpenn",
+      "claim": "service-coverage",
+      "value": "Central Penn College's own page lists an office or facility in Cumberland County, Pennsylvania.",
+      "source_url": "https://www.centralpenn.edu/academics/cannabiscustomerservice/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-94f02f330637",
+      "subject_id": "svc-pa-drive-b4-lackawanna",
+      "claim": "service-coverage",
+      "value": "Lackawanna College's own page lists an office or facility in Lackawanna County, Pennsylvania.",
+      "source_url": "https://www.lackawanna.edu/certificates/cannabis-professional/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-9dfbb39cf883",
+      "subject_id": "svc-pa-drive-b4-pit",
+      "claim": "service-coverage",
+      "value": "Pennsylvania Institute of Technology's own page lists an office or facility in Delaware County, Pennsylvania.",
+      "source_url": "https://www.pit.edu/programs/cannabis-cultivation-principles-practices-cert/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-380c5209f3d8",
+      "subject_id": "svc-pa-drive-b4-jefferson",
+      "claim": "service-coverage",
+      "value": "Thomas Jefferson University's own page lists an office or facility in Philadelphia County, Pennsylvania.",
+      "source_url": "https://www.jefferson.edu/academics/colleges-schools-institutes/health-professions/emerging-health-professions/centers/lambert-center/education/cannabis-graduate-programs.html",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-efc5ccdbc1f4",
+      "subject_id": "svc-pa-drive-b4-cozen",
+      "claim": "service-coverage",
+      "value": "Cozen O’Connor's own page lists an office or facility in Philadelphia County, Pennsylvania.",
+      "source_url": "https://www.cozen.com/industries/cannabis",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-1aed2c4224b9",
+      "subject_id": "svc-pa-drive-b5-clark",
+      "claim": "service-coverage",
+      "value": "Clark Hill's own page lists an office or facility in Philadelphia County, Pennsylvania.",
+      "source_url": "https://www.clarkhill.com/offices/philadelphia/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-6d2777f03b03",
+      "subject_id": "svc-pa-drive-b5-leech",
+      "claim": "service-coverage",
+      "value": "Leech Tishman's own page lists an office or facility in Allegheny County, Pennsylvania.",
+      "source_url": "https://www.leechtishman.com/locations/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-bb2769f0c21b",
+      "subject_id": "svc-pa-drive-b5-panacea",
+      "claim": "service-coverage",
+      "value": "Panacea Group's own page lists an office or facility in Philadelphia County, Pennsylvania.",
+      "source_url": "https://www.buycannabisinsurance.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-982c91530ce2",
+      "subject_id": "svc-pa-drive-b5-robertson",
+      "claim": "service-coverage",
+      "value": "Robertson Insurance & Risk Management's own page lists an office or facility in Lancaster County, Pennsylvania.",
+      "source_url": "https://www.robertson.insure/business/cannabis-insurance/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-9d27a78865ad",
+      "subject_id": "svc-pa-drive-b5-inland",
+      "claim": "service-coverage",
+      "value": "Inland Packaging's own page lists an office or facility in Chester County, Pennsylvania.",
+      "source_url": "https://www.inlandpackaging.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-42c354d4a695",
+      "subject_id": "svc-pa-drive-b5-elmark",
+      "claim": "service-coverage",
+      "value": "Elmark Packaging's own page lists an office or facility in Chester County, Pennsylvania.",
+      "source_url": "https://www.elmarkpkg.com/cannabis-hemp-cbd-products/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-a4a1d588468c",
+      "subject_id": "svc-pa-drive-b5-don",
+      "claim": "service-coverage",
+      "value": "DON Enterprises's own page lists an office or facility in Lawrence County, Pennsylvania.",
+      "source_url": "https://www.donenterprises.org/hemphome",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-6b86edf2358e",
+      "subject_id": "svc-pa-company-applied",
+      "claim": "service-coverage",
+      "value": "Applied Separations's own page lists an office or facility in Lehigh County, Pennsylvania.",
+      "source_url": "https://appliedseparations.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-52f8ecbf8dde",
+      "subject_id": "svc-pa-company-pahydro",
+      "claim": "service-coverage",
+      "value": "PA Hydroponics's own page lists an office or facility in Adams County, Pennsylvania.",
+      "source_url": "https://shop.pahydroponics.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-9b6f71c61f3f",
+      "subject_id": "svc-pa-company-griffin",
+      "claim": "service-coverage",
+      "value": "Griffin Greenhouse Supplies's own page lists an office or facility in Berks County, Pennsylvania.",
+      "source_url": "https://www.griffins.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-13cf751a9ab1",
+      "subject_id": "svc-pa-company-labelpack",
+      "claim": "service-coverage",
+      "value": "LabelPack Automation's own page lists an office or facility in McKean County, Pennsylvania.",
+      "source_url": "https://www.lpautomation.com/contact-labelpack-automation",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-0a24beff3a7e",
+      "subject_id": "svc-pa-supplier-b12-jr-peters",
+      "claim": "service-coverage",
+      "value": "JR Peters, Inc.'s own page lists an office or facility in Lehigh County, Pennsylvania.",
+      "source_url": "https://www.jrpeters.com/contact-us",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-e87158d519c0",
+      "subject_id": "svc-pa-supplier-b12-jr-peters",
+      "claim": "provider-contact",
+      "value": "JR Peters, Inc. publishes phone 866-522-5752 and email info@jrpeters.com.",
+      "source_url": "https://www.jrpeters.com/contact-us",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-18fee6b27686",
+      "subject_id": "svc-pa-supplier-b12-boyle",
+      "claim": "service-coverage",
+      "value": "Boyle Construction's own page lists an office or facility in Lehigh County, Pennsylvania.",
+      "source_url": "https://boyleconstruction.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-3202f6a193ce",
+      "subject_id": "svc-pa-supplier-b12-boyle",
+      "claim": "provider-contact",
+      "value": "Boyle Construction publishes phone 484-223-0726 and email info@boyleconstruction.com.",
+      "source_url": "https://boyleconstruction.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-823ac1d6ede2",
+      "subject_id": "svc-pa-supplier-b12-titanium",
+      "claim": "service-coverage",
+      "value": "Titanium Security & Surveillance's own page lists an office or facility in Montgomery County, Pennsylvania.",
+      "source_url": "https://titaniumss.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-4d65d8c2d308",
+      "subject_id": "svc-pa-supplier-b12-titanium",
+      "claim": "provider-contact",
+      "value": "Titanium Security & Surveillance publishes phone 610-277-9000 and email info@titaniumss.com.",
+      "source_url": "https://titaniumss.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-5b9823196230",
+      "subject_id": "svc-pa-supplier-b12-automated-security",
+      "claim": "service-coverage",
+      "value": "Automated Security Corporation's own page lists an office or facility in Lancaster County, Pennsylvania.",
+      "source_url": "https://automatedsecuritycorp.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-7a1264c46b3a",
+      "subject_id": "svc-pa-supplier-b12-automated-security",
+      "claim": "provider-contact",
+      "value": "Automated Security Corporation publishes phone 610-873-0067 and email service@automatedsecuritycorp.com.",
+      "source_url": "https://automatedsecuritycorp.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-40dbb86eb190",
+      "subject_id": "svc-pa-supplier-b12-mj-freeway",
+      "claim": "service-coverage",
+      "value": "MJ Freeway / MJ Platform's own page names Pennsylvania as a place it serves or operates.",
+      "source_url": "https://mjplatform.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
+    },
+    {
+      "id": "ev-pa27-092f0dbca8b3",
+      "subject_id": "svc-pa-supplier-b12-mj-freeway",
+      "claim": "provider-contact",
+      "value": "MJ Freeway / MJ Platform publishes phone 855-657-2147 and email sales@mjfreeway.com.",
+      "source_url": "https://mjplatform.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-a00ff0d23eb5",
+      "subject_id": "svc-pa-supplier-b12-mckim-creed",
+      "claim": "service-coverage",
+      "value": "McKim & Creed's own page lists an office or facility in Allegheny County, Pennsylvania.",
+      "source_url": "https://www.mckimcreed.com/location/pittsburgh/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-202ed8a2b69e",
+      "subject_id": "svc-pa-supplier-b12-mckim-creed",
+      "claim": "provider-contact",
+      "value": "McKim & Creed publishes phone 412-489-9100.",
+      "source_url": "https://www.mckimcreed.com/location/pittsburgh/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-4acf628987bb",
+      "subject_id": "svc-pa-supplier-b12-wooster",
+      "claim": "service-coverage",
+      "value": "Wooster & Associates's own page names Pennsylvania as a place it serves or operates.",
+      "source_url": "https://www.dewooster.com/contact-us",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
+    },
+    {
+      "id": "ev-pa27-0648286f62e2",
+      "subject_id": "svc-pa-supplier-b12-wooster",
+      "claim": "provider-contact",
+      "value": "Wooster & Associates publishes phone 412-921-3303 and email info@dewooster.com.",
+      "source_url": "https://www.dewooster.com/contact-us",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-02c740bd3444",
+      "subject_id": "svc-pa-supplier-b12-palmer",
+      "claim": "service-coverage",
+      "value": "Palmer Construction's own page lists an office or facility in Fulton County, Pennsylvania.",
+      "source_url": "https://palmerconstruction.net/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-1392d89b59bc",
+      "subject_id": "svc-pa-supplier-b12-palmer",
+      "claim": "provider-contact",
+      "value": "Palmer Construction publishes phone 717-485-5111.",
+      "source_url": "https://palmerconstruction.net/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-90c83281eeee",
+      "subject_id": "svc-pa-supplier-b13-panacea-payroll",
+      "claim": "service-coverage",
+      "value": "Panacea Payroll's own page lists an office or facility in Montgomery County, Pennsylvania.",
+      "source_url": "https://panaceapayroll.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-190d4c8919db",
+      "subject_id": "svc-pa-supplier-b13-panacea-payroll",
+      "claim": "provider-contact",
+      "value": "Panacea Payroll publishes phone 610-310-7615.",
+      "source_url": "https://panaceapayroll.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-3a07dd6b3e10",
+      "subject_id": "svc-pa-supplier-b13-labrepco",
+      "claim": "service-coverage",
+      "value": "LabRepCo's own page lists an office or facility in Montgomery County, Pennsylvania.",
+      "source_url": "https://www.labrepco.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-57d90f7ee80d",
+      "subject_id": "svc-pa-supplier-b13-labrepco",
+      "claim": "provider-contact",
+      "value": "LabRepCo publishes phone 800-521-0754.",
+      "source_url": "https://www.labrepco.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-9fac616813cc",
+      "subject_id": "svc-pa-supplier-b13-corcoran-printing",
+      "claim": "service-coverage",
+      "value": "Corcoran Printing's own page lists an office or facility in Lackawanna County, Pennsylvania.",
+      "source_url": "https://corcoranprinting.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-cbd5967eb3f3",
+      "subject_id": "svc-pa-supplier-b13-corcoran-printing",
+      "claim": "provider-contact",
+      "value": "Corcoran Printing publishes phone 570-343-0414 and email orders@corcoranprinting.com.",
+      "source_url": "https://corcoranprinting.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-f782dddfe4da",
+      "subject_id": "svc-pa-supplier-b13-jpak",
+      "claim": "service-coverage",
+      "value": "JPAK International LLC's own page lists an office or facility in Bucks County, Pennsylvania.",
+      "source_url": "https://jpakinternational.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-32c532dce2d4",
+      "subject_id": "svc-pa-supplier-b13-jpak",
+      "claim": "provider-contact",
+      "value": "JPAK International LLC publishes phone 215-860-5306 and email sales@jpakinternational.com.",
+      "source_url": "https://jpakinternational.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-317c29c796f9",
+      "subject_id": "svc-pa-supplier-b13-paragon-engineering",
+      "claim": "service-coverage",
+      "value": "Paragon Engineering Services's own page lists an office or facility in York County, Pennsylvania.",
+      "source_url": "https://www.peservices.org/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-5475e382d96d",
+      "subject_id": "svc-pa-supplier-b13-paragon-engineering",
+      "claim": "provider-contact",
+      "value": "Paragon Engineering Services publishes phone 717-854-7374 and email info@peservices.org.",
+      "source_url": "https://www.peservices.org/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-0e1a3353968c",
+      "subject_id": "svc-pa-supplier-b13-kinsley-energy",
+      "claim": "provider-contact",
+      "value": "Kinsley Energy Systems publishes phone 800-255-3503.",
+      "source_url": "https://www.kinsley-group.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-5b8bdcc0e4b6",
+      "subject_id": "svc-pa-supplier-oct30-graves",
+      "claim": "service-coverage",
+      "value": "Graves Design Group's own page lists an office or facility in Allegheny County, Pennsylvania.",
+      "source_url": "https://www.gravesdesigngroup.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-845a209adfee",
+      "subject_id": "svc-pa-supplier-oct30-graves",
+      "claim": "provider-contact",
+      "value": "Graves Design Group publishes phone 412-338-1976.",
+      "source_url": "https://www.gravesdesigngroup.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-da4dd4a4bd64",
+      "subject_id": "svc-pa-supplier-oct30-hitech",
+      "claim": "provider-contact",
+      "value": "HiTechTrader publishes phone 609-518-9100 and email sales@hitechtrader.com.",
+      "source_url": "https://hitechtrader.com/industries/cannabis-hemp-extraction/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-5f820a7d4dff",
+      "subject_id": "svc-pa-supplier-oct30-dellinger",
+      "claim": "provider-contact",
+      "value": "Dellinger Horticulture, Inc. publishes phone 717-752-7248 and email contact_dhi@yahoo.com.",
+      "source_url": "https://www.dellingerhorticulture.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-82d70e3c2970",
+      "subject_id": "svc-pa-supplier-oct30-iip",
+      "claim": "service-coverage",
+      "value": "Innovative Industrial Properties's own page lists an office or facility in Franklin County, Pennsylvania.",
+      "source_url": "https://innovativeindustrialproperties.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-published Pennsylvania address only, recorded as coverage for that county. Service elsewhere in Pennsylvania is not confirmed; no contact was made."
+    },
+    {
+      "id": "ev-pa27-e3dedfb9fa2e",
+      "subject_id": "svc-pa-supplier-oct30-iip",
+      "claim": "provider-contact",
+      "value": "Innovative Industrial Properties publishes phone 858-997-3332 and email info@iipreit.com.",
+      "source_url": "https://innovativeindustrialproperties.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
     }
   ],
   "rules": [
@@ -139628,10 +140775,10 @@
         },
         {
           "pathway_id": "business",
-          "coverage_status": "starter",
+          "coverage_status": "partial",
           "next_step": "Choose testing, legal, accounting, security, insurance, banking, payments, packaging, equipment, training or hemp resources, then confirm the engagement scope.",
           "public_url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/laboratories",
-          "limitations": "Selected Pennsylvania-relevant sources now include packaging, extraction equipment, software integration documentation, professional services, training and industrial-hemp resources alongside the baseline operators and laboratories. This is not a complete current permit roster or provider census. Office presence does not establish statewide service. Hemp resources are separate from medical-marijuana licensing; listing does not verify credentials, regulatory compliance or availability."
+          "limitations": "Selected Pennsylvania-relevant sources now include packaging, extraction equipment, software integration documentation, professional services, training and industrial-hemp resources alongside the baseline operators and laboratories. This is not a complete current permit roster or provider census. A provider's own published office or facility address counts as coverage for that county only, never statewide. Hemp resources are separate from medical-marijuana licensing; listing does not verify credentials, regulatory compliance or availability."
         },
         {
           "pathway_id": "community",

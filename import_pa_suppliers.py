@@ -25,6 +25,8 @@ def build(data, manifest):
     orgs = {o['id']: o for o in result['organizations']}
     service_ids = {'svc-pa-supplier-' + p['staging_id'].removeprefix('pa-') for p in profiles}
     subjects = service_ids | {p['organization_id'] for p in profiles}
+    # Coverage and evidence reviewed after the import (outside this PREFIX) stay on the rebuilt service.
+    prior = {s['id']: s for s in result['services'] if s['id'] in service_ids}
     result['services'] = [s for s in result['services'] if s['id'] not in service_ids]
     result['evidence'] = [e for e in result['evidence']
                           if not (e['id'].startswith(PREFIX) and e['subject_id'] in subjects)]
@@ -80,6 +82,9 @@ def build(data, manifest):
                 coverage_note=profile['pa_connection'], contact_note=note, source_url=inquiry['url'],
                 reviewed_on=inquiry['reviewed_on'])}, fulfillment=[], evidence_ids=evidence_ids,
             origin='organization-profile', listed_in=['PA']))
+        if sid in prior:
+            result['services'][-1]['coverage'] = copy.deepcopy(prior[sid]['coverage'])
+            result['services'][-1]['evidence_ids'] += [k for k in prior[sid]['evidence_ids'] if not k.startswith(PREFIX)]
     result['services'] = preserve_order(data['services'], result['services'])
     result['evidence'] = preserve_order(data['evidence'], result['evidence'])
     return result

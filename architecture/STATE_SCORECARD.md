@@ -9,7 +9,7 @@ As of 2026-11-23. Standard version 1.0.0: [STATE_COMPLETION_STANDARD.md](STATE_C
 | records | broad | partial | partial |
 | rules | broad | broad | broad |
 | medical | broad | broad | partial |
-| business | partial | starter | starter |
+| business | partial | partial | starter |
 | community | partial | broad | starter |
 
 ## Ohio (live)
@@ -33,7 +33,7 @@ As of 2026-11-23. Standard version 1.0.0: [STATE_COMPLETION_STANDARD.md](STATE_C
 | records | partial | services: 30; statewide routes: 7; counties with specific help: 16; counties: 67; county share: 0.239 | county-specific help in 18 more counties |
 | rules | broad | core topics covered: 7; core topics: 7; missing topics:  | — |
 | medical | broad | services: 16; government sourced: 4; support organizations: 12 | — |
-| business | starter | services: 101; coverage confirmed share: 0.475; direct contact share: 0.614; categorized share: 0.208; current review share: 0.931 | 28 more listings with confirmed in-state coverage (to 75%) |
+| business | partial | services: 101; coverage confirmed share: 0.802; direct contact share: 0.792; categorized share: 0.208; current review share: 0.931 | 49 more listings; 10 more listings with confirmed in-state coverage (to 90%); 1 more listings with a phone or email (to 80%); 75 more categorized listings (to 95%) |
 | community | broad | groups: 20; upcoming events: 2; items: 22 | — |
 
 ## New York (pilot)
