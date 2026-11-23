@@ -72,14 +72,14 @@
           "next": "20 more listings with confirmed in-state coverage (to 90%); 109 more listings reviewed within policy (to 90%)"
         },
         "community": {
-          "declared": "partial",
-          "level": "partial",
+          "declared": "broad",
+          "level": "broad",
           "measures": {
-            "groups": 12,
+            "groups": 13,
             "upcoming_events": 2,
-            "items": 14
+            "items": 15
           },
-          "next": "Reach 15 items with at least 1 upcoming event"
+          "next": null
         }
       }
     },
