@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-09",
+  "as_of": "2026-11-23",
   "standard_version": "1.0.0",
   "states": {
     "OH": {
@@ -14,7 +14,7 @@
             "regulator_count": 233,
             "regulator_count_as_of": "2026-11-04",
             "share": 0.987,
-            "location_source_age_days": 30
+            "location_source_age_days": 44
           },
           "next": null
         },
@@ -67,9 +67,9 @@
             "coverage_confirmed_share": 0.862,
             "direct_contact_share": 0.938,
             "categorized_share": 1.0,
-            "current_review_share": 0.992
+            "current_review_share": 0.69
           },
-          "next": "20 more listings with confirmed in-state coverage (to 90%)"
+          "next": "20 more listings with confirmed in-state coverage (to 90%); 109 more listings reviewed within policy (to 90%)"
         },
         "community": {
           "declared": "partial",
@@ -95,7 +95,7 @@
             "regulator_count": 200,
             "regulator_count_as_of": "2026-09-16",
             "share": 1.0,
-            "location_source_age_days": 12
+            "location_source_age_days": 26
           },
           "next": null
         },
@@ -121,16 +121,14 @@
           "next": "county-specific help in 18 more counties"
         },
         "rules": {
-          "declared": "partial",
-          "level": "partial",
+          "declared": "broad",
+          "level": "broad",
           "measures": {
-            "core_topics_covered": 6,
+            "core_topics_covered": 7,
             "core_topics": 7,
-            "missing_topics": [
-              "public-consumption"
-            ]
+            "missing_topics": []
           },
-          "next": "Add dated, officially sourced rules for: public-consumption"
+          "next": null
         },
         "medical": {
           "declared": "broad",
@@ -147,22 +145,22 @@
           "level": "starter",
           "measures": {
             "services": 101,
-            "coverage_confirmed_share": 0.317,
-            "direct_contact_share": 0.297,
+            "coverage_confirmed_share": 0.495,
+            "direct_contact_share": 0.792,
             "categorized_share": 0.208,
-            "current_review_share": 1.0
+            "current_review_share": 0.931
           },
-          "next": "44 more listings with confirmed in-state coverage (to 75%); 31 more listings with a phone or email (to 60%)"
+          "next": "26 more listings with confirmed in-state coverage (to 75%)"
         },
         "community": {
-          "declared": "partial",
-          "level": "partial",
+          "declared": "broad",
+          "level": "broad",
           "measures": {
             "groups": 20,
-            "upcoming_events": 0,
-            "items": 20
+            "upcoming_events": 2,
+            "items": 22
           },
-          "next": "Reach 15 items with at least 1 upcoming event"
+          "next": null
         }
       }
     },
@@ -178,7 +176,7 @@
             "regulator_count": 722,
             "regulator_count_as_of": "2026-11-01",
             "share": 1.0,
-            "location_source_age_days": 8
+            "location_source_age_days": 22
           },
           "next": null
         },
@@ -229,19 +227,19 @@
           "measures": {
             "services": 45,
             "coverage_confirmed_share": 0.556,
-            "direct_contact_share": 0.556,
+            "direct_contact_share": 0.578,
             "categorized_share": 0.044,
             "current_review_share": 1.0
           },
-          "next": "9 more listings with confirmed in-state coverage (to 75%); 2 more listings with a phone or email (to 60%)"
+          "next": "9 more listings with confirmed in-state coverage (to 75%); 1 more listings with a phone or email (to 60%)"
         },
         "community": {
           "declared": "starter",
           "level": "starter",
           "measures": {
             "groups": 3,
-            "upcoming_events": 1,
-            "items": 4
+            "upcoming_events": 0,
+            "items": 3
           },
           "next": "Reach 5 groups or upcoming events"
         }
