@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "scope": "directory",
-  "as_of": "2026-11-09",
+  "as_of": "2026-11-23",
   "organizations": [
     {
       "id": "org-6f5375e74696",
@@ -22697,7 +22697,12 @@
       "name": "Dura-Pack",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "313-299-9600"
+        }
+      ],
       "website": "https://dura-pack.com/",
       "scope": "public"
     },
@@ -22706,7 +22711,12 @@
       "name": "SD Associates, P.C.",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "215-517-5600"
+        }
+      ],
       "website": "https://www.sdaccounting.com/",
       "scope": "public"
     },
@@ -22715,7 +22725,16 @@
       "name": "Alpine Packaging, Inc.",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "412-664-4000"
+        },
+        {
+          "kind": "email",
+          "value": "info@alpinepackaging.com"
+        }
+      ],
       "website": "https://www.alpinepackaging.com/",
       "scope": "public"
     },
@@ -22724,7 +22743,16 @@
       "name": "Thar Process",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "412-968-0200"
+        },
+        {
+          "kind": "email",
+          "value": "info@tharprocess.com"
+        }
+      ],
       "website": "https://www.tharprocess.com/",
       "scope": "public"
     },
@@ -22805,7 +22833,12 @@
       "name": "HACC, Central Pennsylvania’s Community College",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "workforce@hacc.edu"
+        }
+      ],
       "website": "https://cannabiseducation.hacc.edu/",
       "scope": "public"
     },
@@ -22814,7 +22847,12 @@
       "name": "Central Penn College",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "800-759-2727"
+        }
+      ],
       "website": "https://www.centralpenn.edu/",
       "scope": "public"
     },
@@ -22823,7 +22861,16 @@
       "name": "Delaware Valley University",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "215-489-4848"
+        },
+        {
+          "kind": "email",
+          "value": "CPSadmit@delval.edu"
+        }
+      ],
       "website": "https://delval.edu/",
       "scope": "public"
     },
@@ -22832,7 +22879,16 @@
       "name": "Lackawanna College",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "877-346-3552"
+        },
+        {
+          "kind": "email",
+          "value": "admissions@lackawanna.edu"
+        }
+      ],
       "website": "https://www.lackawanna.edu/",
       "scope": "public"
     },
@@ -22841,7 +22897,16 @@
       "name": "Pennsylvania Institute of Technology",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "610-892-1500"
+        },
+        {
+          "kind": "email",
+          "value": "info@pit.edu"
+        }
+      ],
       "website": "https://www.pit.edu/",
       "scope": "public"
     },
@@ -22850,7 +22915,12 @@
       "name": "Thomas Jefferson University",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "LambertCenter@jefferson.edu"
+        }
+      ],
       "website": "https://www.jefferson.edu/",
       "scope": "public"
     },
@@ -22940,7 +23010,12 @@
       "name": "Earp Cohn P.C.",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "215-963-9520"
+        }
+      ],
       "website": "https://earpcohn.com/",
       "scope": "public"
     },
@@ -22967,7 +23042,12 @@
       "name": "Clark Hill",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "215-640-8500"
+        }
+      ],
       "website": "https://www.clarkhill.com/",
       "scope": "public"
     },
@@ -22976,7 +23056,12 @@
       "name": "Leech Tishman",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "412-261-1600"
+        }
+      ],
       "website": "https://www.leechtishman.com/",
       "scope": "public"
     },
@@ -22985,7 +23070,12 @@
       "name": "RiP Security Group",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "sales@ripusa.com"
+        }
+      ],
       "website": "https://ripusa.com/",
       "scope": "public"
     },
@@ -23003,7 +23093,16 @@
       "name": "Mil-Spec Safety & Security",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "215-882-2328"
+        },
+        {
+          "kind": "email",
+          "value": "info@mil-specsecurity.com"
+        }
+      ],
       "website": "https://mil-specsecurity.com/",
       "scope": "public"
     },
@@ -23012,7 +23111,16 @@
       "name": "Panacea Group",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "215-985-5818"
+        },
+        {
+          "kind": "email",
+          "value": "info@panaceallc.com"
+        }
+      ],
       "website": "https://www.buycannabisinsurance.com/",
       "scope": "public"
     },
@@ -23021,7 +23129,16 @@
       "name": "Penn Summit Insurance Agency",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "724-329-0386"
+        },
+        {
+          "kind": "email",
+          "value": "info@pennsummit.net"
+        }
+      ],
       "website": "https://pennsummit.net/",
       "scope": "public"
     },
@@ -23030,7 +23147,16 @@
       "name": "Robertson Insurance & Risk Management",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "717-625-3770"
+        },
+        {
+          "kind": "email",
+          "value": "info@robertson.insure"
+        }
+      ],
       "website": "https://www.robertson.insure/",
       "scope": "public"
     },
@@ -23039,7 +23165,16 @@
       "name": "Jonestown Bank & Trust Co.",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "717-274-5180"
+        },
+        {
+          "kind": "email",
+          "value": "eservice@jbt.bank"
+        }
+      ],
       "website": "https://www.jbt.bank/",
       "scope": "public"
     },
@@ -23048,7 +23183,12 @@
       "name": "Inland Packaging",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "608-788-5800"
+        }
+      ],
       "website": "https://www.inlandpackaging.com/",
       "scope": "public"
     },
@@ -23057,7 +23197,16 @@
       "name": "Elmark Packaging",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "610-692-2455"
+        },
+        {
+          "kind": "email",
+          "value": "info@elmarkpkg.com"
+        }
+      ],
       "website": "https://www.elmarkpkg.com/",
       "scope": "public"
     },
@@ -23102,7 +23251,12 @@
       "name": "Pennsylvania Hemp & Cannabis Guild",
       "kind": "nonprofit",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "admin@pahempcannabisguild.com"
+        }
+      ],
       "website": "https://pahempcannabisguild.com/",
       "scope": "public"
     },
@@ -23111,7 +23265,16 @@
       "name": "DON Enterprises",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "724-652-5144"
+        },
+        {
+          "kind": "email",
+          "value": "info@doninc.org"
+        }
+      ],
       "website": "https://www.donenterprises.org/",
       "scope": "public"
     },
@@ -23273,7 +23436,12 @@
       "name": "Penn Health Group",
       "kind": "operator",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "contact@pennhgroup.com"
+        }
+      ],
       "website": "https://www.pennhealthgrouppa.com/",
       "scope": "public"
     },
@@ -23282,7 +23450,12 @@
       "name": "Prime Wellness of Pennsylvania",
       "kind": "operator",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "info@primewellnesspa.com"
+        }
+      ],
       "website": "https://www.primewellnesspa.com/",
       "scope": "public"
     },
@@ -23309,7 +23482,12 @@
       "name": "Greenzone Engineering",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "715-209-4209"
+        }
+      ],
       "website": "https://www.greenzone-eng.com/about",
       "scope": "public"
     },
@@ -23318,7 +23496,12 @@
       "name": "Cannagas Supply",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "877-710-1965"
+        }
+      ],
       "website": "https://canna-gas.com/contact",
       "scope": "public"
     },
@@ -23327,7 +23510,12 @@
       "name": "Applied Separations",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "610-770-0900"
+        }
+      ],
       "website": "https://appliedseparations.com/",
       "scope": "public"
     },
@@ -23336,7 +23524,12 @@
       "name": "HTG Supply",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "866-710-4769"
+        }
+      ],
       "website": "https://www.htgsupply.com/",
       "scope": "public"
     },
@@ -23345,7 +23538,16 @@
       "name": "PA Hydroponics",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "717-528-4175"
+        },
+        {
+          "kind": "email",
+          "value": "info@pahydroponics.com"
+        }
+      ],
       "website": "https://shop.pahydroponics.com/",
       "scope": "public"
     },
@@ -23354,7 +23556,12 @@
       "name": "Griffin Greenhouse Supplies",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "800-888-0054"
+        }
+      ],
       "website": "https://www.griffins.com/",
       "scope": "public"
     },
@@ -23363,7 +23570,16 @@
       "name": "LabelPack Automation",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "value": "814-362-1528"
+        },
+        {
+          "kind": "email",
+          "value": "sales@lpautomation.com"
+        }
+      ],
       "website": "https://www.lpautomation.com/",
       "scope": "public"
     },
@@ -76018,7 +76234,8 @@
         "ev-pa-drive-6f3d238037334742",
         "ev-pa-drive-4de99f8f7af83be5",
         "ev-pa-drive-94cc65aa643c1827",
-        "ev-pa-drive-8de9b57ecf5e2912"
+        "ev-pa-drive-8de9b57ecf5e2912",
+        "ev-pa27-463fa72f68cd"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -76145,7 +76362,8 @@
       "evidence_ids": [
         "ev-pa-drive-c1be95468b03e90e",
         "ev-pa-drive-128f848fce01f0a5",
-        "ev-pa-drive-55638c8d7dd00e3f"
+        "ev-pa-drive-55638c8d7dd00e3f",
+        "ev-pa27-aa9a16afc36e"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -76230,7 +76448,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-9e171a0e4e877f86",
-        "ev-pa-drive-31506f549c41f25d"
+        "ev-pa-drive-31506f549c41f25d",
+        "ev-pa27-a706ed89d997"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -76269,7 +76488,8 @@
       "evidence_ids": [
         "ev-pa-drive-aae533228ad167ee",
         "ev-pa-drive-fee1341038f07db0",
-        "ev-pa-drive-aa86e70b02b7db52"
+        "ev-pa-drive-aa86e70b02b7db52",
+        "ev-pa27-c63f7e4157e9"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -76653,7 +76873,15 @@
         "community"
       ],
       "name": "HACC — Cannabis Career Training",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa27-f18a71955e35"
+          ]
+        }
+      ],
       "audiences": [
         "business",
         "consumer"
@@ -76667,7 +76895,7 @@
       "attributes": {
         "provider_details": {
           "serves": "Organizations seeking the capability described on this source page.",
-          "coverage_note": "Pennsylvania relevance: HACC-branded site presents online cannabis career certificate training. Confirm current admissions, prerequisites, tuition and enrollment availability. A program page is not proof of a seat, employment outcome or occupational license. Confirm the delivery partner and credential issuer; marketing salary figures are not adopted. No statewide coverage is established by this listing.",
+          "coverage_note": "Pennsylvania relevance: HACC-branded site presents online cannabis career certificate training. Confirm current admissions, prerequisites, tuition and enrollment availability. A program page is not proof of a seat, employment outcome or occupational license. Confirm the delivery partner and credential issuer; marketing salary figures are not adopted. Its own page says it serves Pennsylvania; reach within the state is not confirmed.",
           "contact_note": "Use the source page’s published inquiry or application route. No form, call, booking or payment was submitted.",
           "source_url": "https://cannabiseducation.hacc.edu/",
           "reviewed_on": "2026-10-28"
@@ -76676,7 +76904,9 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-c5ff5ae52a92abf1",
-        "ev-pa-drive-f8d07f1c686c9f1b"
+        "ev-pa-drive-f8d07f1c686c9f1b",
+        "ev-pa27-f18a71955e35",
+        "ev-pa27-50101b91160b"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -76716,7 +76946,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-24646211a62c46b3",
-        "ev-pa-drive-39794603f7b988ac"
+        "ev-pa-drive-39794603f7b988ac",
+        "ev-pa27-de533b073b4b"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -76733,7 +76964,15 @@
         "community"
       ],
       "name": "Delaware Valley University — Cannabis Studies",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa27-d8dd159ad733"
+          ]
+        }
+      ],
       "audiences": [
         "business",
         "consumer"
@@ -76747,7 +76986,7 @@
       "attributes": {
         "provider_details": {
           "serves": "Organizations seeking the capability described on this source page.",
-          "coverage_note": "Pennsylvania relevance: Lists a standalone cannabis studies certificate for part-time students at its Doylestown campus. Confirm current admissions, prerequisites, tuition and enrollment availability. A program page is not proof of a seat, employment outcome or occupational license. No statewide coverage is established by this listing.",
+          "coverage_note": "Pennsylvania relevance: Lists a standalone cannabis studies certificate for part-time students at its Doylestown campus. Confirm current admissions, prerequisites, tuition and enrollment availability. A program page is not proof of a seat, employment outcome or occupational license. Its own page says it serves Pennsylvania; reach within the state is not confirmed.",
           "contact_note": "Use the source page’s published inquiry or application route. No form, call, booking or payment was submitted.",
           "source_url": "https://delval.edu/cannabis-studies-certificate-part-time-students",
           "reviewed_on": "2026-10-28"
@@ -76756,7 +76995,9 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-e07ad5e123dd01f3",
-        "ev-pa-drive-99cd0993e76cd3a8"
+        "ev-pa-drive-99cd0993e76cd3a8",
+        "ev-pa27-d8dd159ad733",
+        "ev-pa27-7318d2b429c0"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -76796,7 +77037,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-b01c18bd5fb2ecba",
-        "ev-pa-drive-244ee692a2690281"
+        "ev-pa-drive-244ee692a2690281",
+        "ev-pa27-4970e438cca5"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -76836,7 +77078,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-2e326ac51890fccf",
-        "ev-pa-drive-b21ef2b6c4c50e22"
+        "ev-pa-drive-b21ef2b6c4c50e22",
+        "ev-pa27-dcb9e63e2122"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -76876,7 +77119,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-6e05b6d69b246ab5",
-        "ev-pa-drive-8170e236aa21fa31"
+        "ev-pa-drive-8170e236aa21fa31",
+        "ev-pa27-1ae3ee487414"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77326,7 +77570,15 @@
         "business"
       ],
       "name": "Earp Cohn P.C. - Regulated Substances",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa27-ef4c279b76ef"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -77339,7 +77591,7 @@
       "attributes": {
         "provider_details": {
           "serves": "Organizations seeking the capability described on this source page.",
-          "coverage_note": "Pennsylvania relevance: Lists a Pennsylvania and New Jersey cannabis practice and a Philadelphia office. First-party service statement only. Verify the responsible attorney's eligibility, current PA matter intake, conflicts, fees and engagement terms. No attorney-client relationship, legal outcome or source legal/tax conclusions are established. No statewide coverage is established by this listing.",
+          "coverage_note": "Pennsylvania relevance: Lists a Pennsylvania and New Jersey cannabis practice and a Philadelphia office. First-party service statement only. Verify the responsible attorney's eligibility, current PA matter intake, conflicts, fees and engagement terms. No attorney-client relationship, legal outcome or source legal/tax conclusions are established. Its own page says it serves Pennsylvania; reach within the state is not confirmed.",
           "contact_note": "Use the source page’s published inquiry or application route. No form, call, booking or payment was submitted.",
           "source_url": "https://earpcohn.com/practice-areas/regulated-substances/",
           "reviewed_on": "2026-10-28"
@@ -77348,7 +77600,9 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-e067e992bb6006fe",
-        "ev-pa-drive-968a2327e13efdae"
+        "ev-pa-drive-968a2327e13efdae",
+        "ev-pa27-ef4c279b76ef",
+        "ev-pa27-10cb0cd14447"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77463,7 +77717,8 @@
       "evidence_ids": [
         "ev-pa-drive-e43899aa5252e34b",
         "ev-pa-drive-02b37a45b769dd73",
-        "ev-pa-drive-8052dd766e166a1e"
+        "ev-pa-drive-8052dd766e166a1e",
+        "ev-pa27-20033aeea1cd"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77502,7 +77757,8 @@
       "evidence_ids": [
         "ev-pa-drive-7131010ee0f5c059",
         "ev-pa-drive-a3266123a8ed3051",
-        "ev-pa-drive-c5c30cb1ccb3b462"
+        "ev-pa-drive-c5c30cb1ccb3b462",
+        "ev-pa27-79b8360282da"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77518,7 +77774,15 @@
         "business"
       ],
       "name": "RiP Security Group - Cannabis Security",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa27-c9e342c9227b"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -77531,7 +77795,7 @@
       "attributes": {
         "provider_details": {
           "serves": "Organizations seeking the capability described on this source page.",
-          "coverage_note": "Pennsylvania relevance: Pittsburgh-focused cannabis security page offers facility protection, risk planning and a service inquiry route. Provider-stated capability and PA reach only. Confirm current PA licensing, personnel qualifications, insurance, service territory, capacity and project terms. No security audit or regulatory compliance approval was performed; transport marketing is not a cannabis transport authorization. No statewide coverage is established by this listing.",
+          "coverage_note": "Pennsylvania relevance: Pittsburgh-focused cannabis security page offers facility protection, risk planning and a service inquiry route. Provider-stated capability and PA reach only. Confirm current PA licensing, personnel qualifications, insurance, service territory, capacity and project terms. No security audit or regulatory compliance approval was performed; transport marketing is not a cannabis transport authorization. Its own page says it serves Pennsylvania; reach within the state is not confirmed.",
           "contact_note": "Use the source page’s published inquiry or application route. No form, call, booking or payment was submitted.",
           "source_url": "https://ripusa.com/services/rip-security/cannabis-security-services/",
           "reviewed_on": "2026-10-28"
@@ -77540,7 +77804,9 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-19cee75d1a8bbfe4",
-        "ev-pa-drive-65068feeb7ef86c8"
+        "ev-pa-drive-65068feeb7ef86c8",
+        "ev-pa27-c9e342c9227b",
+        "ev-pa27-fa0d28f175dc"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77556,7 +77822,15 @@
         "business"
       ],
       "name": "CLG & Associates - Cannabis Security",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa27-07a6ba65a140"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -77569,7 +77843,7 @@
       "attributes": {
         "provider_details": {
           "serves": "Organizations seeking the capability described on this source page.",
-          "coverage_note": "Pennsylvania relevance: States that it provides cannabis-related security services in Pennsylvania among several states. Provider-stated capability and PA reach only. Confirm current PA licensing, personnel qualifications, insurance, service territory, capacity and project terms. No security audit or regulatory compliance approval was performed; transport marketing is not a cannabis transport authorization. A PA service claim does not establish a physical PA office. No statewide coverage is established by this listing.",
+          "coverage_note": "Pennsylvania relevance: States that it provides cannabis-related security services in Pennsylvania among several states. Provider-stated capability and PA reach only. Confirm current PA licensing, personnel qualifications, insurance, service territory, capacity and project terms. No security audit or regulatory compliance approval was performed; transport marketing is not a cannabis transport authorization. A PA service claim does not establish a physical PA office. Its own page says it serves Pennsylvania; reach within the state is not confirmed.",
           "contact_note": "Use the source page’s published inquiry or application route. No form, call, booking or payment was submitted.",
           "source_url": "https://www.clgassocllc.com/about",
           "reviewed_on": "2026-10-28"
@@ -77578,7 +77852,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-51ba3e441a7d1778",
-        "ev-pa-drive-9a3a81be32a5388b"
+        "ev-pa-drive-9a3a81be32a5388b",
+        "ev-pa27-07a6ba65a140"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77594,7 +77869,15 @@
         "business"
       ],
       "name": "Mil-Spec Safety & Security - Cannabis",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa27-76ab3e04e231"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -77607,7 +77890,7 @@
       "attributes": {
         "provider_details": {
           "serves": "Organizations seeking the capability described on this source page.",
-          "coverage_note": "Pennsylvania relevance: Advertises Pennsylvania cannabis guarding, surveillance and access-control services, with a Philadelphia contact address. Provider-stated capability and PA reach only. Confirm current PA licensing, personnel qualifications, insurance, service territory, capacity and project terms. No security audit or regulatory compliance approval was performed; transport marketing is not a cannabis transport authorization. No statewide coverage is established by this listing.",
+          "coverage_note": "Pennsylvania relevance: Advertises Pennsylvania cannabis guarding, surveillance and access-control services, with a Philadelphia contact address. Provider-stated capability and PA reach only. Confirm current PA licensing, personnel qualifications, insurance, service territory, capacity and project terms. No security audit or regulatory compliance approval was performed; transport marketing is not a cannabis transport authorization. Its own page says it serves Pennsylvania; reach within the state is not confirmed.",
           "contact_note": "Use the source page’s published inquiry or application route. No form, call, booking or payment was submitted.",
           "source_url": "https://mil-specsecurity.com/industries-serviced/cannabis/",
           "reviewed_on": "2026-10-28"
@@ -77616,7 +77899,9 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-3ed273422014569f",
-        "ev-pa-drive-d6d5e7c6c5d7922f"
+        "ev-pa-drive-d6d5e7c6c5d7922f",
+        "ev-pa27-76ab3e04e231",
+        "ev-pa27-07fe7b442ca0"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77701,7 +77986,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-2c2a955fd6cb865e",
-        "ev-pa-drive-2db37d13b14d88bf"
+        "ev-pa-drive-2db37d13b14d88bf",
+        "ev-pa27-ea407f713c2b"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77717,7 +78003,15 @@
         "business"
       ],
       "name": "Penn Summit Insurance Agency - Cannabis",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa27-6a27b06b45f4"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -77730,7 +78024,7 @@
       "attributes": {
         "provider_details": {
           "serves": "Organizations seeking the capability described on this source page.",
-          "coverage_note": "Pennsylvania relevance: Offers a cannabis insurance quote route and lists a Chalk Hill, Pennsylvania office. Insurance inquiry route only. Verify PA producer authorization, eligible operations, carrier availability, exclusions, limits, premiums and policy terms. No coverage is bound or guaranteed; page marketing is not independent insurance or legal advice. Local office presence does not establish statewide capacity. No statewide coverage is established by this listing.",
+          "coverage_note": "Pennsylvania relevance: Offers a cannabis insurance quote route and lists a Chalk Hill, Pennsylvania office. Insurance inquiry route only. Verify PA producer authorization, eligible operations, carrier availability, exclusions, limits, premiums and policy terms. No coverage is bound or guaranteed; page marketing is not independent insurance or legal advice. Local office presence does not establish statewide capacity. Its own page says it serves Pennsylvania; reach within the state is not confirmed.",
           "contact_note": "Use the source page’s published inquiry or application route. No form, call, booking or payment was submitted.",
           "source_url": "https://pennsummit.net/business-insurance/specialized-business-insurance/cannabis-insurance/",
           "reviewed_on": "2026-10-28"
@@ -77739,7 +78033,9 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-6aa5946bfae71a8b",
-        "ev-pa-drive-4380c55c933a2887"
+        "ev-pa-drive-4380c55c933a2887",
+        "ev-pa27-6a27b06b45f4",
+        "ev-pa27-e1a31fadedde"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77777,7 +78073,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-1d9560617e226450",
-        "ev-pa-drive-76d8b915035680e2"
+        "ev-pa-drive-76d8b915035680e2",
+        "ev-pa27-e093df72b638"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77831,7 +78128,15 @@
         "business"
       ],
       "name": "Jonestown Bank & Trust Co. - Cannabis Banking",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa27-a6f209bb29d2"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -77844,7 +78149,7 @@
       "attributes": {
         "provider_details": {
           "serves": "Organizations seeking the capability described on this source page.",
-          "coverage_note": "Pennsylvania relevance: Its cannabis business page explicitly includes Pennsylvania in its supported states. Bank-stated service route only. Confirm current account eligibility, ownership and licensing documentation, due diligence, fees, deposit access and product terms. No account approval, lending commitment or independent regulatory conclusion is established. No statewide coverage is established by this listing.",
+          "coverage_note": "Pennsylvania relevance: Its cannabis business page explicitly includes Pennsylvania in its supported states. Bank-stated service route only. Confirm current account eligibility, ownership and licensing documentation, due diligence, fees, deposit access and product terms. No account approval, lending commitment or independent regulatory conclusion is established. Its own page says it serves Pennsylvania; reach within the state is not confirmed.",
           "contact_note": "Use the source page’s published inquiry or application route. No form, call, booking or payment was submitted.",
           "source_url": "https://www.jbt.bank/cannabis-industry/",
           "reviewed_on": "2026-10-28"
@@ -77853,7 +78158,9 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-6a4027436891e14d",
-        "ev-pa-drive-af938dcba2b7e69f"
+        "ev-pa-drive-af938dcba2b7e69f",
+        "ev-pa27-a6f209bb29d2",
+        "ev-pa27-f79079596222"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77939,7 +78246,8 @@
       "evidence_ids": [
         "ev-pa-drive-b1bf0c96f9ed437d",
         "ev-pa-drive-d6f0b04b79d9acd2",
-        "ev-pa-drive-e37d1f9a2d05999f"
+        "ev-pa-drive-e37d1f9a2d05999f",
+        "ev-pa27-41ee4d76fc6e"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77977,7 +78285,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-736e5ce2ebd5d3a1",
-        "ev-pa-drive-b4c2503ddc6904a2"
+        "ev-pa-drive-b4c2503ddc6904a2",
+        "ev-pa27-926b97615d0f"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -77994,7 +78303,15 @@
         "community"
       ],
       "name": "Penn State - Cannabis Science Research",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa27-8114dd13ddda"
+          ]
+        }
+      ],
       "audiences": [
         "business",
         "consumer"
@@ -78008,7 +78325,7 @@
       "attributes": {
         "provider_details": {
           "serves": "Organizations seeking the capability described on this source page.",
-          "coverage_note": "Pennsylvania relevance: The Plant Science research group studies industrial-hemp grain, fiber and CBD production and invites research collaborators. University research contact and information route only. Not a paid testing service, approved-practitioner referral, medical-marijuana treatment program or proof of active study enrollment. Extension pages returned HTTP 403; this separately readable academic page supports this row. No statewide coverage is established by this listing.",
+          "coverage_note": "Pennsylvania relevance: The Plant Science research group studies industrial-hemp grain, fiber and CBD production and invites research collaborators. University research contact and information route only. Not a paid testing service, approved-practitioner referral, medical-marijuana treatment program or proof of active study enrollment. Extension pages returned HTTP 403; this separately readable academic page supports this row. Its own page says it serves Pennsylvania; reach within the state is not confirmed.",
           "contact_note": "Use the source page’s published inquiry or application route. No form, call, booking or payment was submitted.",
           "source_url": "https://plantscience.psu.edu/research/labs/cannabis-science",
           "reviewed_on": "2026-10-28"
@@ -78017,7 +78334,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-7df4f825b800e6ca",
-        "ev-pa-drive-1b9a76b3fc8caa35"
+        "ev-pa-drive-1b9a76b3fc8caa35",
+        "ev-pa27-8114dd13ddda"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -78074,7 +78392,15 @@
         "business"
       ],
       "name": "PA Hemp Steering Committee - Supply Chain Directory",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa27-9ccd99907fd3"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -78087,7 +78413,7 @@
       "attributes": {
         "provider_details": {
           "serves": "Organizations seeking the capability described on this source page.",
-          "coverage_note": "Pennsylvania relevance: Publishes a Pennsylvania industrial-hemp directory covering processors, manufacturers and testing labs. Secondary referral directory maintained by the named committee. Supplier capabilities and accreditations are self-reported; verify each provider and current permits separately. Do not describe the directory as a government license registry or each listed company as approved. No statewide coverage is established by this listing.",
+          "coverage_note": "Pennsylvania relevance: Publishes a Pennsylvania industrial-hemp directory covering processors, manufacturers and testing labs. Secondary referral directory maintained by the named committee. Supplier capabilities and accreditations are self-reported; verify each provider and current permits separately. Do not describe the directory as a government license registry or each listed company as approved. Its own page says it serves Pennsylvania; reach within the state is not confirmed.",
           "contact_note": "Use the source page’s published inquiry or application route. No form, call, booking or payment was submitted.",
           "source_url": "https://www.pa-hemp-steering-committee.org/hemp-directory",
           "reviewed_on": "2026-10-28"
@@ -78096,7 +78422,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-816456dc40811fac",
-        "ev-pa-drive-693bdda675791241"
+        "ev-pa-drive-693bdda675791241",
+        "ev-pa27-9ccd99907fd3"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -78151,7 +78478,15 @@
         "community"
       ],
       "name": "Pennsylvania Hemp & Cannabis Guild",
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa27-2e503da624cb"
+          ]
+        }
+      ],
       "audiences": [
         "business",
         "consumer"
@@ -78165,7 +78500,7 @@
       "attributes": {
         "provider_details": {
           "serves": "Organizations seeking the capability described on this source page.",
-          "coverage_note": "Pennsylvania relevance: Describes Pennsylvania hemp/cannabis business connections, education and policy advocacy with a Harrisburg contact location. Industry association route, separate from the PA Hemp Industry Council staged in batch 04. Confirm membership terms, current activities and legal entity. Economic figures and policy positions are organizational claims, not independent research or official guidance. No statewide coverage is established by this listing.",
+          "coverage_note": "Pennsylvania relevance: Describes Pennsylvania hemp/cannabis business connections, education and policy advocacy with a Harrisburg contact location. Industry association route, separate from the PA Hemp Industry Council staged in batch 04. Confirm membership terms, current activities and legal entity. Economic figures and policy positions are organizational claims, not independent research or official guidance. Its own page says it serves Pennsylvania; reach within the state is not confirmed.",
           "contact_note": "Use the source page’s published inquiry or application route. No form, call, booking or payment was submitted.",
           "source_url": "https://pahempcannabisguild.com/",
           "reviewed_on": "2026-10-28"
@@ -78174,7 +78509,9 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-b2248709b591f972",
-        "ev-pa-drive-f49e99e7cd80087f"
+        "ev-pa-drive-f49e99e7cd80087f",
+        "ev-pa27-2e503da624cb",
+        "ev-pa27-1716a00168b3"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -78214,7 +78551,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-drive-9ac70516664dc9c8",
-        "ev-pa-drive-8a015c90358d2cd3"
+        "ev-pa-drive-8a015c90358d2cd3",
+        "ev-pa27-da345d9957b3"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -79263,7 +79601,15 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa27-8407a3463805"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -79285,7 +79631,9 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-company-83f374e85be930e8",
-        "ev-pa-company-24ef887d92b76d7c"
+        "ev-pa-company-24ef887d92b76d7c",
+        "ev-pa27-8407a3463805",
+        "ev-pa27-7b98925c3eab"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -79301,7 +79649,15 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa27-7ef9c43a281f"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -79323,7 +79679,9 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-company-c4fe7203f75f1f0c",
-        "ev-pa-company-05bf1af78a17a702"
+        "ev-pa-company-05bf1af78a17a702",
+        "ev-pa27-7ef9c43a281f",
+        "ev-pa27-d6aa39f900ff"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -79339,7 +79697,15 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa27-fd79b4d511f2"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -79361,7 +79727,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-company-75648e0347722907",
-        "ev-pa-company-8dee4c0bf450d077"
+        "ev-pa-company-8dee4c0bf450d077",
+        "ev-pa27-fd79b4d511f2"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -79453,7 +79820,15 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa27-449674568030"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -79475,7 +79850,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-company-4f198977a7cf8328",
-        "ev-pa-company-fcd69dca9a8bee8f"
+        "ev-pa-company-fcd69dca9a8bee8f",
+        "ev-pa27-449674568030"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -79513,7 +79889,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-company-33cdb47932978a95",
-        "ev-pa-company-1f734a66f165c73f"
+        "ev-pa-company-1f734a66f165c73f",
+        "ev-pa27-746587f28944"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -79529,7 +79906,15 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [],
+      "coverage": [
+        {
+          "kind": "state",
+          "state": "PA",
+          "evidence_ids": [
+            "ev-pa27-8162a136512c"
+          ]
+        }
+      ],
       "audiences": [
         "business"
       ],
@@ -79551,7 +79936,9 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-company-67b57346b5db577d",
-        "ev-pa-company-02d22458ac969aae"
+        "ev-pa-company-02d22458ac969aae",
+        "ev-pa27-8162a136512c",
+        "ev-pa27-c63f68fc990f"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -79589,7 +79976,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-company-011513c0153f2537",
-        "ev-pa-company-28384b08ec835491"
+        "ev-pa-company-28384b08ec835491",
+        "ev-pa27-19230fb0ccb0"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -79627,7 +80015,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-company-7ec4bf72448d1696",
-        "ev-pa-company-7951b68463cd9f84"
+        "ev-pa-company-7951b68463cd9f84",
+        "ev-pa27-748c8b9c4f0b"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -79665,7 +80054,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-company-c4a24a7421d974f6",
-        "ev-pa-company-e9bcd392ee04a8a7"
+        "ev-pa-company-e9bcd392ee04a8a7",
+        "ev-pa27-9f976030bbe2"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -79703,7 +80093,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-company-86ade5c577d2e3a8",
-        "ev-pa-company-cb1c058d0292e547"
+        "ev-pa-company-cb1c058d0292e547",
+        "ev-pa27-38fad818dcdf"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -79741,7 +80132,8 @@
       "fulfillment": [],
       "evidence_ids": [
         "ev-pa-company-fc32b1100bf30855",
-        "ev-pa-company-60c5792ddd01cb06"
+        "ev-pa-company-60c5792ddd01cb06",
+        "ev-pa27-4223bf2d404e"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -136450,6 +136842,721 @@
       "recorded_on": "2026-11-09",
       "recheck_on": "2026-12-11",
       "limitations": "Bill text reviewed is the Senate engrossed amendment that was enacted. The CRS explanation was read from a mirror (https://www.everycrsreport.com/files/2026-10-28_LSB11496_2a4809149da4fb31c7c2e387e239a244e0e80157.html); congress.gov could not be retrieved. CRS does not settle whether delta-8 THC converted from CBD falls under the November 12 exclusion. Congress may change the December 11 date. Not legal advice."
+    },
+    {
+      "id": "ev-pa26-50864930b8bc",
+      "subject_id": "rule-pa-public-consumption",
+      "claim": "rule-summary",
+      "value": "Medical Marijuana Act § 304(a): use of medical marijuana is unlawful except as provided in § 303, § 704, Chapter 19 or Chapter 20; § 304(b)(1): unlawful to smoke medical marijuana; § 304(c): patients or caregivers may incorporate it into edible form; § 303(b)(2): dispensed only as pill, oil, topical, vaporization or nebulization form, tincture or liquid (dry leaf excluded unless allowed by regulations under § 1202). No amendment note on §§ 303 (section level) or 304.",
+      "source_url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2016/0/0016..HTM",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2026-12-23",
+      "limitations": "General Assembly compilation of the Medical Marijuana Act. The act has no general public-place clause; Department of Health regulations, local ordinances, property owners' rules, the Clean Indoor Air Act and federal law are not summarized. Not legal advice."
+    },
+    {
+      "id": "ev-pa26-776e501c2f94",
+      "subject_id": "rule-pa-public-consumption",
+      "claim": "rule-summary",
+      "value": "Medical Marijuana Act § 1309(2)-(3): the act does not permit, and does not prevent penalties for, possessing or using medical marijuana in a State or county correctional facility or in a youth detention center or other facility housing children adjudicated delinquent; neither paragraph applies to facility employees. No amendment note follows § 1309.",
+      "source_url": "https://www.legis.state.pa.us/WU01/LI/LI/US/PDF/2016/0/0016..PDF",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2026-12-23",
+      "limitations": "PDF of the General Assembly compilation of the Medical Marijuana Act. Facility policies for employees are set by the Department of Corrections and counties and are not summarized. Not legal advice."
+    },
+    {
+      "id": "ev-pa26-47ae6fe5c5d1",
+      "subject_id": "rule-pa-public-consumption",
+      "claim": "rule-summary",
+      "value": "Students may not possess any form of medical marijuana on school property or during school activities on school property; a parent, legal guardian or caregiver may administer it to the student on school premises in a secure and private location the school provides and must remove excess. Labeled recommended guidance, in effect until the Department of Education promulgates regulations.",
+      "source_url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/medical-marijuana-school.html",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2026-12-23",
+      "limitations": "Agency recommended guidance, not a statute or regulation; page cites no statute section and shows no issue date. Individual school district policies may differ. Not legal advice."
+    },
+    {
+      "id": "ev-pa26-43a07a26d86f",
+      "subject_id": "event-pa-morgantown-canna-fair-2027",
+      "claim": "event-listing",
+      "value": "Morgantown Canna Fair | Morgantown Center, Morgantown, Pennsylvania | 2027-03-20 to 2027-03-21",
+      "source_url": "https://www.cannaworldfair.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2026-12-07",
+      "limitations": "Organizer (CannaMedShow, LLC) homepage and all-shows page reviewed for dates, venue name and city. Hours, street address, admission price and age limit were not posted on the organizer's pages; a street address appears only in a Facebook post embedded on the page and was not used. Tickets and vendor registration were not tested."
+    },
+    {
+      "id": "ev-pa26-62dfbfe418ec",
+      "subject_id": "event-pa-necann-pennsylvania-2027",
+      "claim": "event-listing",
+      "value": "The Pennsylvania Cannabis Convention | David L. Lawrence Convention Center, 1000 Ft. Duquesne Blvd, Pittsburgh, PA 15222 | 2027-08-06 to 2027-08-07 (day one B2B, day two public Pittsburgh Cannabis Fest)",
+      "source_url": "https://necann.com/pennsylvania-convention/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2026-12-07",
+      "limitations": "Organizer (NECANN) event page and homepage reviewed for dates and venue. Hours, prices and registration were not posted or not tested. The separate PACC site (pacannabisconvention.com, 'a NECANN Event') says only 'Returning Summer 2027' with no date or venue."
+    },
+    {
+      "id": "ev-pa27-463fa72f68cd",
+      "subject_id": "svc-pa-drive-b2-durapack",
+      "claim": "provider-contact",
+      "value": "Dura-Pack publishes phone 313-299-9600.",
+      "source_url": "https://dura-pack.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-aa9a16afc36e",
+      "subject_id": "svc-pa-drive-b2-sd",
+      "claim": "provider-contact",
+      "value": "SD Associates, P.C. publishes phone 215-517-5600.",
+      "source_url": "https://www.sdaccounting.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-a706ed89d997",
+      "subject_id": "svc-pa-drive-b2-alpine",
+      "claim": "provider-contact",
+      "value": "Alpine Packaging, Inc. publishes phone 412-664-4000 and email info@alpinepackaging.com.",
+      "source_url": "https://www.alpinepackaging.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-c63f7e4157e9",
+      "subject_id": "svc-pa-drive-b2-thar",
+      "claim": "provider-contact",
+      "value": "Thar Process publishes phone 412-968-0200 and email info@tharprocess.com.",
+      "source_url": "https://www.tharprocess.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-f18a71955e35",
+      "subject_id": "svc-pa-drive-b4-hacc",
+      "claim": "service-coverage",
+      "value": "HACC, Central Pennsylvania’s Community College's own page names Pennsylvania as a place it serves or operates.",
+      "source_url": "https://cannabiseducation.hacc.edu/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
+    },
+    {
+      "id": "ev-pa27-50101b91160b",
+      "subject_id": "svc-pa-drive-b4-hacc",
+      "claim": "provider-contact",
+      "value": "HACC, Central Pennsylvania’s Community College publishes email workforce@hacc.edu.",
+      "source_url": "https://cannabiseducation.hacc.edu/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-de533b073b4b",
+      "subject_id": "svc-pa-drive-b4-centralpenn",
+      "claim": "provider-contact",
+      "value": "Central Penn College publishes phone 800-759-2727.",
+      "source_url": "https://www.centralpenn.edu/academics/cannabiscustomerservice/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-d8dd159ad733",
+      "subject_id": "svc-pa-drive-b4-delval",
+      "claim": "service-coverage",
+      "value": "Delaware Valley University's own page names Pennsylvania as a place it serves or operates.",
+      "source_url": "https://delval.edu/cannabis-studies-certificate-part-time-students",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
+    },
+    {
+      "id": "ev-pa27-7318d2b429c0",
+      "subject_id": "svc-pa-drive-b4-delval",
+      "claim": "provider-contact",
+      "value": "Delaware Valley University publishes phone 215-489-4848 and email CPSadmit@delval.edu.",
+      "source_url": "https://delval.edu/cannabis-studies-certificate-part-time-students",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-4970e438cca5",
+      "subject_id": "svc-pa-drive-b4-lackawanna",
+      "claim": "provider-contact",
+      "value": "Lackawanna College publishes phone 877-346-3552 and email admissions@lackawanna.edu.",
+      "source_url": "https://www.lackawanna.edu/certificates/cannabis-professional/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-dcb9e63e2122",
+      "subject_id": "svc-pa-drive-b4-pit",
+      "claim": "provider-contact",
+      "value": "Pennsylvania Institute of Technology publishes phone 610-892-1500 and email info@pit.edu.",
+      "source_url": "https://www.pit.edu/programs/cannabis-cultivation-principles-practices-cert/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-1ae3ee487414",
+      "subject_id": "svc-pa-drive-b4-jefferson",
+      "claim": "provider-contact",
+      "value": "Thomas Jefferson University publishes email LambertCenter@jefferson.edu.",
+      "source_url": "https://www.jefferson.edu/academics/colleges-schools-institutes/health-professions/emerging-health-professions/centers/lambert-center/education/cannabis-graduate-programs.html",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-ef4c279b76ef",
+      "subject_id": "svc-pa-drive-b5-earp",
+      "claim": "service-coverage",
+      "value": "Earp Cohn P.C.'s own page names Pennsylvania as a place it serves or operates.",
+      "source_url": "https://earpcohn.com/practice-areas/regulated-substances/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
+    },
+    {
+      "id": "ev-pa27-10cb0cd14447",
+      "subject_id": "svc-pa-drive-b5-earp",
+      "claim": "provider-contact",
+      "value": "Earp Cohn P.C. publishes phone 215-963-9520.",
+      "source_url": "https://earpcohn.com/practice-areas/regulated-substances/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-20033aeea1cd",
+      "subject_id": "svc-pa-drive-b5-clark",
+      "claim": "provider-contact",
+      "value": "Clark Hill publishes phone 215-640-8500.",
+      "source_url": "https://www.clarkhill.com/offices/philadelphia/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-79b8360282da",
+      "subject_id": "svc-pa-drive-b5-leech",
+      "claim": "provider-contact",
+      "value": "Leech Tishman publishes phone 412-261-1600.",
+      "source_url": "https://www.leechtishman.com/locations/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-c9e342c9227b",
+      "subject_id": "svc-pa-drive-b5-rip",
+      "claim": "service-coverage",
+      "value": "RiP Security Group's own page names Pennsylvania as a place it serves or operates.",
+      "source_url": "https://ripusa.com/services/rip-security/cannabis-security-services/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
+    },
+    {
+      "id": "ev-pa27-fa0d28f175dc",
+      "subject_id": "svc-pa-drive-b5-rip",
+      "claim": "provider-contact",
+      "value": "RiP Security Group publishes email sales@ripusa.com.",
+      "source_url": "https://ripusa.com/services/rip-security/cannabis-security-services/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-07a6ba65a140",
+      "subject_id": "svc-pa-drive-b5-clg",
+      "claim": "service-coverage",
+      "value": "CLG & Associates's own page names Pennsylvania as a place it serves or operates.",
+      "source_url": "https://www.clgassocllc.com/about",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
+    },
+    {
+      "id": "ev-pa27-76ab3e04e231",
+      "subject_id": "svc-pa-drive-b5-milspec",
+      "claim": "service-coverage",
+      "value": "Mil-Spec Safety & Security's own page names Pennsylvania as a place it serves or operates.",
+      "source_url": "https://mil-specsecurity.com/industries-serviced/cannabis/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
+    },
+    {
+      "id": "ev-pa27-07fe7b442ca0",
+      "subject_id": "svc-pa-drive-b5-milspec",
+      "claim": "provider-contact",
+      "value": "Mil-Spec Safety & Security publishes phone 215-882-2328 and email info@mil-specsecurity.com.",
+      "source_url": "https://mil-specsecurity.com/industries-serviced/cannabis/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-ea407f713c2b",
+      "subject_id": "svc-pa-drive-b5-panacea",
+      "claim": "provider-contact",
+      "value": "Panacea Group publishes phone 215-985-5818 and email info@panaceallc.com.",
+      "source_url": "https://www.buycannabisinsurance.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-6a27b06b45f4",
+      "subject_id": "svc-pa-drive-b5-pennsummit",
+      "claim": "service-coverage",
+      "value": "Penn Summit Insurance Agency's own page names Pennsylvania as a place it serves or operates.",
+      "source_url": "https://pennsummit.net/business-insurance/specialized-business-insurance/cannabis-insurance/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
+    },
+    {
+      "id": "ev-pa27-e1a31fadedde",
+      "subject_id": "svc-pa-drive-b5-pennsummit",
+      "claim": "provider-contact",
+      "value": "Penn Summit Insurance Agency publishes phone 724-329-0386 and email info@pennsummit.net.",
+      "source_url": "https://pennsummit.net/business-insurance/specialized-business-insurance/cannabis-insurance/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-e093df72b638",
+      "subject_id": "svc-pa-drive-b5-robertson",
+      "claim": "provider-contact",
+      "value": "Robertson Insurance & Risk Management publishes phone 717-625-3770 and email info@robertson.insure.",
+      "source_url": "https://www.robertson.insure/business/cannabis-insurance/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-a6f209bb29d2",
+      "subject_id": "svc-pa-drive-b5-jbt",
+      "claim": "service-coverage",
+      "value": "Jonestown Bank & Trust Co.'s own page names Pennsylvania as a place it serves or operates.",
+      "source_url": "https://www.jbt.bank/cannabis-industry/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
+    },
+    {
+      "id": "ev-pa27-f79079596222",
+      "subject_id": "svc-pa-drive-b5-jbt",
+      "claim": "provider-contact",
+      "value": "Jonestown Bank & Trust Co. publishes phone 717-274-5180 and email eservice@jbt.bank.",
+      "source_url": "https://www.jbt.bank/cannabis-industry/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-41ee4d76fc6e",
+      "subject_id": "svc-pa-drive-b5-inland",
+      "claim": "provider-contact",
+      "value": "Inland Packaging publishes phone 608-788-5800.",
+      "source_url": "https://www.inlandpackaging.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-926b97615d0f",
+      "subject_id": "svc-pa-drive-b5-elmark",
+      "claim": "provider-contact",
+      "value": "Elmark Packaging publishes phone 610-692-2455 and email info@elmarkpkg.com.",
+      "source_url": "https://www.elmarkpkg.com/cannabis-hemp-cbd-products/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-8114dd13ddda",
+      "subject_id": "svc-pa-drive-b5-psu",
+      "claim": "service-coverage",
+      "value": "Penn State University's own page names Pennsylvania as a place it serves or operates.",
+      "source_url": "https://plantscience.psu.edu/research/labs/cannabis-science",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
+    },
+    {
+      "id": "ev-pa27-9ccd99907fd3",
+      "subject_id": "svc-pa-drive-b5-steering",
+      "claim": "service-coverage",
+      "value": "PA Hemp Steering Committee's own page names Pennsylvania as a place it serves or operates.",
+      "source_url": "https://www.pa-hemp-steering-committee.org/hemp-directory",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
+    },
+    {
+      "id": "ev-pa27-2e503da624cb",
+      "subject_id": "svc-pa-drive-b5-guild",
+      "claim": "service-coverage",
+      "value": "Pennsylvania Hemp & Cannabis Guild's own page names Pennsylvania as a place it serves or operates.",
+      "source_url": "https://pahempcannabisguild.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
+    },
+    {
+      "id": "ev-pa27-1716a00168b3",
+      "subject_id": "svc-pa-drive-b5-guild",
+      "claim": "provider-contact",
+      "value": "Pennsylvania Hemp & Cannabis Guild publishes email admin@pahempcannabisguild.com.",
+      "source_url": "https://pahempcannabisguild.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-da345d9957b3",
+      "subject_id": "svc-pa-drive-b5-don",
+      "claim": "provider-contact",
+      "value": "DON Enterprises publishes phone 724-652-5144 and email info@doninc.org.",
+      "source_url": "https://www.donenterprises.org/hemphome",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-8407a3463805",
+      "subject_id": "svc-pa-company-phg",
+      "claim": "service-coverage",
+      "value": "Penn Health Group's own page names Pennsylvania as a place it serves or operates.",
+      "source_url": "https://www.pennhealthgrouppa.com/about",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
+    },
+    {
+      "id": "ev-pa27-7b98925c3eab",
+      "subject_id": "svc-pa-company-phg",
+      "claim": "provider-contact",
+      "value": "Penn Health Group publishes email contact@pennhgroup.com.",
+      "source_url": "https://www.pennhealthgrouppa.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-7ef9c43a281f",
+      "subject_id": "svc-pa-company-prime",
+      "claim": "service-coverage",
+      "value": "Prime Wellness of Pennsylvania's own page names Pennsylvania as a place it serves or operates.",
+      "source_url": "https://www.primewellnesspa.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
+    },
+    {
+      "id": "ev-pa27-d6aa39f900ff",
+      "subject_id": "svc-pa-company-prime",
+      "claim": "provider-contact",
+      "value": "Prime Wellness of Pennsylvania publishes email info@primewellnesspa.com.",
+      "source_url": "https://www.primewellnesspa.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-fd79b4d511f2",
+      "subject_id": "svc-pa-company-hanging",
+      "claim": "service-coverage",
+      "value": "Hanging Gardens's own page names Pennsylvania as a place it serves or operates.",
+      "source_url": "https://hanginggardensmmj.com/about-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
+    },
+    {
+      "id": "ev-pa27-449674568030",
+      "subject_id": "svc-pa-company-holistic",
+      "claim": "service-coverage",
+      "value": "Holistic Industries's own page names Pennsylvania as a place it serves or operates.",
+      "source_url": "https://holisticindustries.com/our-grows/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
+    },
+    {
+      "id": "ev-pa27-746587f28944",
+      "subject_id": "svc-pa-company-greenzone",
+      "claim": "provider-contact",
+      "value": "Greenzone Engineering publishes phone 715-209-4209.",
+      "source_url": "https://www.greenzone-eng.com/about",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-8162a136512c",
+      "subject_id": "svc-pa-company-cannagas",
+      "claim": "service-coverage",
+      "value": "Cannagas Supply's own page names Pennsylvania as a place it serves or operates.",
+      "source_url": "https://canna-gas.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
+    },
+    {
+      "id": "ev-pa27-c63f68fc990f",
+      "subject_id": "svc-pa-company-cannagas",
+      "claim": "provider-contact",
+      "value": "Cannagas Supply publishes phone 877-710-1965.",
+      "source_url": "https://canna-gas.com/contact",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-19230fb0ccb0",
+      "subject_id": "svc-pa-company-applied",
+      "claim": "provider-contact",
+      "value": "Applied Separations publishes phone 610-770-0900.",
+      "source_url": "https://appliedseparations.com/contact/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-748c8b9c4f0b",
+      "subject_id": "svc-pa-company-htg",
+      "claim": "provider-contact",
+      "value": "HTG Supply publishes phone 866-710-4769.",
+      "source_url": "https://www.htgsupply.com/shipping-policy/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-9f976030bbe2",
+      "subject_id": "svc-pa-company-pahydro",
+      "claim": "provider-contact",
+      "value": "PA Hydroponics publishes phone 717-528-4175 and email info@pahydroponics.com.",
+      "source_url": "https://shop.pahydroponics.com/contact-us/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-38fad818dcdf",
+      "subject_id": "svc-pa-company-griffin",
+      "claim": "provider-contact",
+      "value": "Griffin Greenhouse Supplies publishes phone 800-888-0054.",
+      "source_url": "https://www.griffins.com/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-4223bf2d404e",
+      "subject_id": "svc-pa-company-labelpack",
+      "claim": "provider-contact",
+      "value": "LabelPack Automation publishes phone 814-362-1528 and email sales@lpautomation.com.",
+      "source_url": "https://www.lpautomation.com/contact-labelpack-automation",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2027-02-21",
+      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
+    },
+    {
+      "id": "ev-pa27-a93900a310e0",
+      "subject_id": "rule-pa-public-consumption",
+      "claim": "rule-summary",
+      "value": "Section 304(b)(1) makes it unlawful to smoke medical marijuana; 304(c) allows patients or caregivers to incorporate it into edible form; Sections 405 and 801 limit receipt to a 90-day supply. The act took effect 30 days after April 17, 2016 (Section 2110).",
+      "source_url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2016/0/0016..HTM",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-28",
+      "recorded_on": "2026-10-28",
+      "recheck_on": "2026-11-27",
+      "limitations": "General Assembly compilation of the Medical Marijuana Act, showing amendments through Act 63 of 2023 and a compiler's note on Act 45 of 2025. Regulations, Department of Health notices and court orders also apply and are not summarized here. Not legal advice."
+    },
+    {
+      "id": "ev-pa27-b1f4bbd0e483",
+      "subject_id": "rule-pa-public-consumption",
+      "claim": "rule-summary",
+      "value": "35 P.S. § 780-113(a)(31) defines a small amount as 30 grams of marihuana or 8 grams of hashish; § 780-113(g) sets imprisonment not exceeding thirty days, a fine not exceeding $500, or both. Section 13 took effect immediately on enactment (Section 44).",
+      "source_url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/1972/0/0064..HTM",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-10-28",
+      "recorded_on": "2026-10-28",
+      "recheck_on": "2026-11-27",
+      "limitations": "General Assembly compilation of the Controlled Substance, Drug, Device and Cosmetic Act. Local ordinances, charging practices and diversion programs are not covered. Not legal advice."
     }
   ],
   "rules": [
@@ -136709,6 +137816,21 @@
         "ev-oh-hemp-federal-dates"
       ],
       "next_step_url": "https://codes.ohio.gov/ohio-revised-code/section-928.01"
+    },
+    {
+      "id": "rule-pa-public-consumption",
+      "state": "PA",
+      "topic": "public-consumption",
+      "summary": "Pennsylvania has no adult-use law, so outside the medical program there is no lawful place to use cannabis. Registered patients may not smoke medical marijuana anywhere; it is dispensed as pills, oils, topicals, tinctures, liquids and forms for vaporization or nebulization, and patients or caregivers may make edibles. The Medical Marijuana Act does not permit possessing or using it in a state or county correctional facility or a youth detention center. Students may not possess it on school property; state guidance lets a parent, guardian or caregiver give it to a student in a private place the school provides. Local ordinances, property owners, the Clean Indoor Air Act and federal property rules are not summarized here.",
+      "effective_on": "2016-05-17",
+      "evidence_ids": [
+        "ev-pa26-50864930b8bc",
+        "ev-pa26-776e501c2f94",
+        "ev-pa26-47ae6fe5c5d1",
+        "ev-pa27-a93900a310e0",
+        "ev-pa27-b1f4bbd0e483"
+      ],
+      "next_step_url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2016/0/0016..HTM"
     }
   ],
   "relationships": [
@@ -138253,6 +139375,30 @@
       "evidence_ids": [
         "ev-ny26-3837b5ab594a"
       ]
+    },
+    {
+      "id": "event-pa-morgantown-canna-fair-2027",
+      "name": "Morgantown Canna Fair — March 2027",
+      "state": "PA",
+      "starts_on": "2027-03-20",
+      "ends_on": "2027-03-21",
+      "organization_ids": [],
+      "next_step_url": "https://www.cannaworldfair.com/",
+      "evidence_ids": [
+        "ev-pa26-43a07a26d86f"
+      ]
+    },
+    {
+      "id": "event-pa-necann-pennsylvania-2027",
+      "name": "The Pennsylvania Cannabis Convention (NECANN) 2027",
+      "state": "PA",
+      "starts_on": "2027-08-06",
+      "ends_on": "2027-08-07",
+      "organization_ids": [],
+      "next_step_url": "https://necann.com/pennsylvania-convention/",
+      "evidence_ids": [
+        "ev-pa26-62dfbfe418ec"
+      ]
     }
   ],
   "pathways": [
@@ -138468,10 +139614,10 @@
         },
         {
           "pathway_id": "rules",
-          "coverage_status": "partial",
+          "coverage_status": "broad",
           "next_step": "Read each dated summary, then the official statute it cites.",
           "public_url": "https://www.legis.state.pa.us/WU01/LI/LI/US/HTM/2016/0/0016..HTM",
-          "limitations": "Six state-law summaries checked October 28, 2026 against the General Assembly's statute text: medical use limits, adult-use status and small-amount possession, home cultivation, employment protection, driving and Clean Slate sealing. Not legal advice. Local ordinances, hemp-derived products, Department of Health regulations and court orders are not summarized."
+          "limitations": "Seven state-law summaries checked against the General Assembly's statute text: medical use limits, adult-use status and small-amount possession, home cultivation, employment protection, driving, public use and Clean Slate sealing. Not legal advice. Local ordinances, hemp-derived products, Department of Health regulations and court orders are not summarized."
         },
         {
           "pathway_id": "medical",
@@ -138489,9 +139635,9 @@
         },
         {
           "pathway_id": "community",
-          "coverage_status": "partial",
+          "coverage_status": "broad",
           "next_step": "Contact a group about meetings, membership or advocacy.",
-          "limitations": "Selected groups, peer networks, education programs, research resources and advocacy contacts. No Pennsylvania cannabis events are verified for the next three months. A recurring program or completed demonstration does not establish an upcoming event, open enrollment or current grant. Confirm membership, admissions and participation directly."
+          "limitations": "Selected groups, peer networks, education programs, research resources and advocacy contacts. Two 2027 trade events are listed from their organizers' own pages; none is verified for the next three months. A recurring program or completed demonstration does not establish an upcoming event, open enrollment or current grant. Confirm membership, admissions and participation directly."
         }
       ]
     },
