@@ -1,6 +1,6 @@
 {
  "schema_version": "1.1.0",
- "as_of": "2026-11-17",
+ "as_of": "2026-11-23",
  "purpose": "What adults and patients may do in each state, answered with the same questions for all 50 states and DC. Built top-down: national compilations that cover every state come first, then each state’s official sources. Every answer names its sources and the date it was checked. Missing answers mean not yet reviewed, never that something is prohibited.",
  "required_questions": [
   "adult-use",
@@ -2176,15 +2176,6 @@
    "retrieved_on": "2026-11-15"
   },
   {
-   "id": "natl-mpp-expungement",
-   "kind": "compilation",
-   "scope": "national",
-   "publisher": "Marijuana Policy Project",
-   "title": "Legalization States’ Approaches to Expungement and Release (advocacy group’s state table; undated)",
-   "url": "https://www.mpp.org/issues/legalization/legalization-states-approaches-to-expungement-and-release/",
-   "retrieved_on": "2026-11-15"
-  },
-  {
    "id": "mt-mca-16-12-113",
    "kind": "statute",
    "scope": "state",
@@ -2930,6 +2921,159 @@
    "title": "Frequently asked questions",
    "url": "https://amcc.alabama.gov/frequently-asked-questions/",
    "retrieved_on": "2026-11-16"
+  },
+  {
+   "id": "ms-hb1280-2026",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Mississippi Legislature",
+   "title": "2026 House Bill 1280 as introduced, reprinting Miss. Code § 41-29-139 (marijuana possession of 30 grams or less)",
+   "url": "https://billstatus.ls.state.ms.us/documents/2026/html/HB/1200-1299/HB1280IN.htm",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "ms-hb1546-2026",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Mississippi Legislature",
+   "title": "2026 House Bill 1546 as sent to the Governor, amending Miss. Code § 99-19-71 (expunction)",
+   "url": "https://billstatus.ls.state.ms.us/documents/2026/html/HB/1500-1599/HB1546SG.htm",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "sd-sdcl-23a-3-34",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "South Dakota Legislature",
+   "title": "SDCL 23A-3-34, automatic removal of non-felony charges or convictions from the public record",
+   "url": "https://sdlegislature.gov/api/Statutes/23A-3-34.html",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "sd-sdcl-23a-3-27",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "South Dakota Legislature",
+   "title": "SDCL 23A-3-27, expungement of arrest records (as amended effective March 15, 2022)",
+   "url": "https://sdlegislature.gov/api/Statutes/23A-3-27.html",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "sd-sdcl-22-42-6",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "South Dakota Legislature",
+   "title": "SDCL 22-42-6, possession of marijuana",
+   "url": "https://sdlegislature.gov/api/Statutes/22-42-6.html?all=true",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "sd-ujs-expungement",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "South Dakota Unified Judicial System",
+   "title": "Expungement (self-help; forms revised July 2026)",
+   "url": "https://ujs.sd.gov/self-help/civil-law-help/expungement/",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "ga-sb288-2020",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Office of the Governor of Georgia",
+   "title": "Senate Bill 288 as passed (2020 signed legislation), amending O.C.G.A. § 35-3-37 on record restriction",
+   "url": "https://gov.georgia.gov/document/2020-signed-legislation/sb-288/download",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "ga-cherokee-sg-restrictions",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Cherokee County Solicitor-General",
+   "title": "Criminal Record Restrictions (O.C.G.A. § 35-3-37)",
+   "url": "https://cherokeecountyga.gov/Solicitor-General/CRIMINAL-RECORD-RESTRICTIONS",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "tn-knox-dag-expungements",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Knox County District Attorney General",
+   "title": "Expungements (community resources; last modified November 4, 2026)",
+   "url": "https://dag.knoxcountytn.gov/community-resources/expungements/",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "tn-tbi-expungements",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Tennessee Bureau of Investigation",
+   "title": "Diversions, Expungements, & Dispositions",
+   "url": "https://www.tn.gov/tbi/divisions/cjis-division/diversions-expungements.html",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "tn-ctas-expunging",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "University of Tennessee County Technical Assistance Service",
+   "title": "Expunging court records (e-Li reference CTAS-1161, after the 2025 reorganization)",
+   "url": "https://www.ctas.tennessee.edu/eli/expunging-court-records",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "co-sb22-099",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "Colorado General Assembly",
+   "title": "Senate Bill 22-099 as signed, automatic sealing of records (C.R.S. § 13-3-117)",
+   "url": "https://leg.colorado.gov/sites/default/files/2022a_099_signed.pdf",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "md-dls-records-guide",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Maryland Department of Legislative Services",
+   "title": "Limiting Access to Criminal Records Guide Sheet (updated December 2025)",
+   "url": "https://dls.maryland.gov/pubs/prod/NoPblTabPDF/Limiting-Access-to-Criminal-Records-Guide-Sheet.pdf",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "md-courts-cannabis-expungement",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Maryland Judiciary",
+   "title": "Expungement, Part 7: Cannabis (tip sheet)",
+   "url": "https://www.mdcourts.gov/sites/default/files/import/video/docs/tipsheetcannabisexpungement.pdf",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "mo-courts-marijuana-expungement",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "Missouri Courts",
+   "title": "Marijuana Expungement (clerk resources; webinar Q&A updated December 2, 2024)",
+   "url": "https://www.courts.mo.gov/page.jsp?id=110936",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "nm-hb314-2023",
+   "kind": "statute",
+   "scope": "state",
+   "publisher": "New Mexico Legislature",
+   "title": "House Bill 314 (2023), final version, amending NMSA 1978 § 29-3A-8 (automatic expungement of cannabis records)",
+   "url": "https://nmlegis.gov/Sessions/23%20Regular/final/HB0314.PDF",
+   "retrieved_on": "2026-11-23"
+  },
+  {
+   "id": "nm-courts-expungement",
+   "kind": "government",
+   "scope": "state",
+   "publisher": "New Mexico Courts, Administrative Office of the Courts",
+   "title": "Expungement (Office of General Counsel; last modified July 2, 2024)",
+   "url": "https://nmcourts.gov/court-administration/office-of-general-counsel/expungement",
+   "retrieved_on": "2026-11-23"
   }
  ],
  "answers": [
@@ -3519,15 +3663,15 @@
    "state": "CO",
    "question": "record-relief",
    "status": "automatic",
-   "short": "Many drug offenses; motion for now-legal conduct",
-   "detail": "Colorado’s courts publish a no-fee motion to seal a conviction for conduct that state law no longer prohibits (forms JDF 2370, 2371 and 2374, under C.R.S. § 24-72-711): it is filed in the criminal case once the sentence and any supervision are complete, with a copy to the prosecutor, needs no criminal history report, and agencies generally seal within 30 days of the order. The forms do not name marijuana. The Marijuana Policy Project, an advocacy group, lists a separate Clean Slate law that seals many drug misdemeanors and felonies after waiting periods, automatically from 2024, and 2020 pardons for possession of up to two ounces; those points are not yet checked against the state’s own law.",
-   "citation": "C.R.S. § 24-72-711, per the Colorado Judicial Branch’s forms JDF 2370 and JDF 2374 (July 1, 2025); Marijuana Policy Project’s table of legalization states’ expungement laws",
+   "short": "Older cases sealed automatically; motion for now-legal acts",
+   "detail": "Colorado’s 2022 law (Senate Bill 22-099, C.R.S. § 13-3-117) has the courts seal conviction records without an application: civil infractions four years after final disposition, petty offenses and misdemeanors seven years after, and eligible felonies ten years after, if there has been no new conviction in that time and the whole case is closed; some offenses are excluded. The state court administrator compiles the list, the district attorney may object, and the court orders sealing. The act starts the list of eligible drug convictions, misdemeanors and petty offenses on July 1, 2024, and adds eligible felonies on July 1, 2025. Separately, the courts publish a no-fee motion to seal a conviction for conduct that state law no longer prohibits (forms JDF 2370, 2371 and 2374, under C.R.S. § 24-72-711): it is filed in the criminal case once the sentence and any supervision are complete, with a copy to the prosecutor, and agencies generally seal within 30 days of the order. Neither names marijuana; both cover criminal records in general. Pardons for marijuana possession and later amendments to § 13-3-117 were not reviewed.",
+   "citation": "C.R.S. § 13-3-117 (Senate Bill 22-099, as signed); C.R.S. § 24-72-711, per the Colorado Judicial Branch’s forms JDF 2370 and JDF 2374 (July 1, 2025)",
    "effective_on": null,
-   "reviewed_on": "2026-11-15",
+   "reviewed_on": "2026-11-23",
    "source_ids": [
+    "co-sb22-099",
     "co-courts-jdf-2370",
-    "co-courts-jdf-2374",
-    "natl-mpp-expungement"
+    "co-courts-jdf-2374"
    ]
   },
   {
@@ -4004,6 +4148,20 @@
    "source_ids": [
     "ga-gmcc",
     "natl-disa-map"
+   ]
+  },
+  {
+   "state": "GA",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Court petition for misdemeanors after 4 years",
+   "detail": "Georgia restricts and seals criminal history records rather than expunging them (O.C.G.A. § 35-3-37). Under a 2020 law (Senate Bill 288), a person convicted of a misdemeanor, or of misdemeanors from a single incident, may petition the court where the conviction occurred once the sentence is complete, if they have had no conviction in any jurisdiction for at least four years (not counting nonserious traffic offenses) and have no pending charges. Some offenses are excluded, such as certain family violence, sex, theft and serious traffic offenses. The court restricts the record only if it finds that the harm to the person clearly outweighs the public’s interest. A person whose offense was pardoned may also petition. For arrests on or after July 1, 2013 there is no application to an agency: the prosecutor may approve restriction, and otherwise a petition goes to the sentencing court; earlier arrests go through the arresting agency (Cherokee County Solicitor-General). The act does not name marijuana; the law covers criminal records in general. Later amendments to § 35-3-37, including one in 2021, were not reviewed.",
+   "citation": "O.C.G.A. § 35-3-37, as amended by Senate Bill 288 (2020); Cherokee County Solicitor-General, Criminal Record Restrictions",
+   "effective_on": null,
+   "reviewed_on": "2026-11-23",
+   "source_ids": [
+    "ga-sb288-2020",
+    "ga-cherokee-sg-restrictions"
    ]
   },
   {
@@ -4669,14 +4827,14 @@
    "state": "MD",
    "question": "record-relief",
    "status": "automatic",
-   "short": "Cases where possession was the only charge",
-   "detail": "The Maryland Cannabis Administration says the 2022 and 2023 laws set up a process to expunge cases in which possession of less than 10 grams of cannabis is the only charge, and include other expungement provisions. The Marijuana Policy Project, an advocacy group, lists that expungement as automatic and due by July 2024, says the state appears to have missed the deadline, and notes that the governor’s June 2024 pardons do not themselves expunge a record; those points are not yet checked against the state’s own law.",
-   "citation": "Maryland Cannabis Administration, Adult-use cannabis FAQs; Marijuana Policy Project’s table of legalization states’ expungement laws",
+   "short": "Possession-only cases automatically; others by petition",
+   "detail": "Maryland removed cannabis cases in which possession was the only charge, decided before July 1, 2023, from the state’s criminal records repository by July 1, 2024, and keeps them off the Judiciary’s Case Search; the courts note that these records are not expunged at the court itself and may still appear on background checks (Criminal Procedure §§ 10-111, 10-112 and 10-401). A civil charge for possessing a personal-use amount is expunged three years after it is decided if nothing in the case ended in a conviction (§ 10-105.1). Other cannabis convictions are expunged by petition in the court where the case was decided: possession as soon as the sentence, including any probation or parole, is complete (§ 10-105), and possession with intent to distribute three years after (§ 10-110). Unpaid court fees and costs do not bar expungement, and the court waives those tied to the charge (§ 10-105.4). A pardoned possession conviction may be kept off Case Search from January 31, 2026.",
+   "citation": "Md. Code, Criminal Procedure §§ 10-105, 10-105.1, 10-110 and 10-111, per the Department of Legislative Services’ guide sheet (December 2025); Maryland Judiciary, Expungement, Part 7: Cannabis",
    "effective_on": null,
-   "reviewed_on": "2026-11-15",
+   "reviewed_on": "2026-11-23",
    "source_ids": [
-    "md-mca-faq",
-    "natl-mpp-expungement"
+    "md-dls-records-guide",
+    "md-courts-cannabis-expungement"
    ]
   },
   {
@@ -5197,14 +5355,15 @@
    "state": "MO",
    "question": "record-relief",
    "status": "automatic",
-   "short": "Offenses that are no longer crimes",
-   "detail": "Missouri’s Department of Health and Senior Services says the law lets people with certain non-violent marijuana offenses petition for release from incarceration, parole or probation and to have their records expunged, and that sales-tax revenue pays the government bodies that carry out expungement of certain marijuana offenses. The Marijuana Policy Project, an advocacy group, lists Amendment 3 as directing courts to expunge offenses that are no longer crimes without a petition, misdemeanors by June 8, 2023 and felonies by December 8, 2023; that part is not yet checked against the state’s own text.",
-   "citation": "Missouri Department of Health and Senior Services, Adult use FAQs; Marijuana Policy Project’s table of legalization states’ expungement laws",
+   "short": "Courts expunge past marijuana offenses without a petition",
+   "detail": "Missouri’s constitution, as amended in 2022, directs the circuit courts to order expungement of misdemeanor marijuana offenses within six months of the amendment taking effect (for people no longer incarcerated or supervised) and of felony marijuana offenses within twelve months (for people who have completed their sentence), with no petition; some higher-level felonies are expunged once incarceration and supervision end (Article XIV, Section 2.10(8), adopted November 8, 2022, effective December 8, 2022). Selling or giving marijuana to a minor, violent offenses and driving under the influence are excluded. A person still incarcerated for an eligible offense may petition the sentencing court to vacate the sentence and expunge the record, with no filing fee. The Missouri courts also provide a petition form for marijuana-related offenses (CR375). The Department of Health and Senior Services says sales-tax revenue pays the government bodies that carry out the expungements.",
+   "citation": "Missouri Constitution, Article XIV, Section 2.10; Missouri Courts, Marijuana Expungement; Department of Health and Senior Services, Adult use FAQs",
    "effective_on": null,
-   "reviewed_on": "2026-11-15",
+   "reviewed_on": "2026-11-23",
    "source_ids": [
-    "mo-dhss-adult-faq",
-    "natl-mpp-expungement"
+    "mo-const-art14-2",
+    "mo-courts-marijuana-expungement",
+    "mo-dhss-adult-faq"
    ]
   },
   {
@@ -5809,14 +5968,15 @@
    "state": "NM",
    "question": "record-relief",
    "status": "automatic",
-   "short": "Stand-alone cannabis convictions",
-   "detail": "New Mexico’s Regulation and Licensing Department says the Criminal Records Expungement Act, in effect since January 1, 2020, lets a qualifying person petition a court to expunge certain criminal records, including marijuana-related records, and points to the state courts’ expungement page. The Marijuana Policy Project, an advocacy group, lists a separate law that reviews and expunges convictions for legalized conduct automatically, limited since 2023 to cannabis convictions that stand alone; that part is not yet checked against the state’s own law.",
-   "citation": "NMSA 1978, §§ 29-3A-1 to 29-3A-9, per the Regulation and Licensing Department’s FAQs; Marijuana Policy Project’s table of legalization states’ expungement laws",
+   "short": "Cannabis-only records cleared after 2 years",
+   "detail": "New Mexico expunges arrest and conviction records automatically when the conduct is no longer a crime under the Cannabis Regulation Act, or would be a lesser offense, and the record involves only cannabis and cannabis paraphernalia charges: two years after the conviction, or after the arrest if there was no conviction (NMSA 1978, § 29-3A-8, as amended by House Bill 314 of 2023). When a case also has other charges, the person may ask the Administrative Office of the Courts to expunge the eligible cannabis charges. The courts’ expungement page lets people apply online to have cannabis records expunged, with a photo ID, and says cases with other charges, or records that do not name cannabis, can go through a court petition under the Criminal Records Expungement Act (NMSA 1978, §§ 29-3A-1 to 29-3A-9), which covers ordinance violations, misdemeanors and felonies; the Regulation and Licensing Department’s FAQs point to the same act. Neither page states waiting periods or fees for the petition route.",
+   "citation": "NMSA 1978, § 29-3A-8 (House Bill 314, 2023); New Mexico Courts, Expungement; Regulation and Licensing Department FAQs (§§ 29-3A-1 to 29-3A-9)",
    "effective_on": null,
-   "reviewed_on": "2026-11-15",
+   "reviewed_on": "2026-11-23",
    "source_ids": [
-    "nm-rld-faqs",
-    "natl-mpp-expungement"
+    "nm-hb314-2023",
+    "nm-courts-expungement",
+    "nm-rld-faqs"
    ]
   },
   {
@@ -6712,6 +6872,22 @@
    ]
   },
   {
+   "state": "SD",
+   "question": "record-relief",
+   "status": "automatic",
+   "short": "Petty and Class 2 misdemeanor cases, after 5 years",
+   "detail": "South Dakota removes a charge or conviction from a person’s public record automatically after five years when the most serious offense in the case was a petty offense, a municipal ordinance violation or a Class 2 misdemeanor, every court-ordered condition has been met and there has been no new conviction in that time (SDCL 23A-3-34). The record stays available to court personnel and can still be used to enhance the penalty in a later case. Possessing two ounces of marijuana or less is a Class 1 misdemeanor (SDCL 22-42-6), which that section does not list. A person who was arrested but not convicted can move the court to expunge the arrest record one year after an arrest with no charge filed or after the prosecutor dismisses the whole case, or at any time after an acquittal (SDCL 23A-3-27; the Unified Judicial System’s expungement page and forms). The pages read describe no court route to expunge a conviction and do not mention marijuana; the law covers criminal records in general.",
+   "citation": "SDCL 23A-3-34, 23A-3-27 and 22-42-6; South Dakota Unified Judicial System, Expungement",
+   "effective_on": null,
+   "reviewed_on": "2026-11-23",
+   "source_ids": [
+    "sd-sdcl-23a-3-34",
+    "sd-sdcl-23a-3-27",
+    "sd-sdcl-22-42-6",
+    "sd-ujs-expungement"
+   ]
+  },
+  {
    "state": "TN",
    "question": "adult-use",
    "status": "not-permitted",
@@ -6737,6 +6913,21 @@
    "reviewed_on": "2026-11-15",
    "source_ids": [
     "natl-disa-map"
+   ]
+  },
+  {
+   "state": "TN",
+   "question": "record-relief",
+   "status": "by-application",
+   "short": "Court petition; $100 fee for eligible convictions",
+   "detail": "Tennessee clears records by court order: the Knox County District Attorney General says expungement is not an automatic process and a person must file with the court. Dismissed charges, no true bills and not-guilty verdicts are expunged at no cost (Tennessee Bureau of Investigation; Knox County District Attorney General). Completed diversions and qualifying convictions carry a $100 fee paid to the court clerk, and restitution, court costs, fines and probation fees must be paid first. Before ordering a conviction expunged, the court generally needs a Bureau of Investigation certificate checking the offense against the statute’s list of eligible offenses; the University of Tennessee County Technical Assistance Service says the expungement laws were largely reorganized in 2025, moving provisions out of T.C.A. § 40-32-101 into §§ 40-32-106 to 40-32-108. The pages read do not state which convictions qualify, how many or any waiting period, and do not mention marijuana; the law covers criminal records in general. The courts’ expungement page returned only a browser check on November 23, 2026, and the current statute was not read.",
+   "citation": "Knox County District Attorney General, Expungements; Tennessee Bureau of Investigation; UT County Technical Assistance Service (T.C.A. Title 40, Chapter 32)",
+   "effective_on": null,
+   "reviewed_on": "2026-11-23",
+   "source_ids": [
+    "tn-knox-dag-expungements",
+    "tn-tbi-expungements",
+    "tn-ctas-expunging"
    ]
   },
   {
@@ -7433,6 +7624,20 @@
    "reviewed_on": "2026-11-17",
    "source_ids": [
     "ms-mmcp-faq"
+   ]
+  },
+  {
+   "state": "MS",
+   "question": "record-relief",
+   "status": "automatic",
+   "short": "Small possession: record cleared 2 years after conviction",
+   "detail": "After a first or second conviction for possessing 30 grams of marijuana or less, Mississippi courts report it to the Bureau of Narcotics, which keeps a private, nonpublic record used only by the courts to set the penalty for a later conviction. That record is not a criminal record for private or administrative inquiry, and the record of each conviction is expunged two years after the date of conviction; the text names no petition (Miss. Code § 41-29-139(c)(2)(A)). That text was read as it is reprinted in a 2026 House bill that proposed changes to the section; the code itself is published through LexisNexis and was not opened, and whether a 2026 law changed the section was not checked. Other convictions go through a petition to the court under Miss. Code § 99-19-71, which a 2026 bill sent to the Governor (HB 1546) would amend, shortening the felony waiting period from five years to three; that section’s other eligibility rules, the bill’s outcome and § 41-29-150 were not reviewed.",
+   "citation": "Miss. Code § 41-29-139(c)(2)(A), as reprinted in 2026 House Bill 1280; Miss. Code § 99-19-71, per 2026 House Bill 1546",
+   "effective_on": null,
+   "reviewed_on": "2026-11-23",
+   "source_ids": [
+    "ms-hb1280-2026",
+    "ms-hb1546-2026"
    ]
   },
   {
