@@ -10,7 +10,7 @@ from directory_data import ROOT
 from import_pa_ecosystem import upsert
 MANIFEST=ROOT/'data/sources/new-york-ecosystem-2026-11-01.json'
 # Later reviewed batches; each is imported after the base manifest with its own review date.
-MANIFESTS=[MANIFEST,ROOT/'data/sources/new-york-suppliers-2026-11-01.json']
+MANIFESTS=[MANIFEST,ROOT/'data/sources/new-york-suppliers-2026-11-01.json',ROOT/'data/sources/new-york-business-addresses-2026-11-23.json']
 DIRECTORY=ROOT/'data/directory.json'
 STATE='NY'
 PREFIX='ev-ny26-'
@@ -55,6 +55,24 @@ def build(data,manifest):
   evidence=[ev(spec['id'],e) for e in spec['evidence']]
   new_events.append(dict(id=spec['id'],name=spec['name'],state=STATE,starts_on=spec['starts_on'],ends_on=spec['ends_on'],organization_ids=spec['organization_ids'],next_step_url=spec['next_step_url'],evidence_ids=[e['id'] for e in evidence]))
   new_evidence+=evidence
+ # Later reviews add coverage or published contacts to services an earlier manifest imported.
+ services={x['id']:x for x in data['services']+new_services}
+ for spec in manifest.get('service_updates',[]):
+  sid=spec['service_id'];svc=services[sid]
+  for geo in spec.get('coverage',[]):
+   if geo.get('state')!=STATE:raise ValueError(f'{sid}: coverage outside New York')
+   e=ev(sid,dict(claim='service-coverage',source=geo['source'],value=geo['value'],limitations=geo['limitations']))
+   entry={k:geo[k] for k in ('kind','state','county') if k in geo}|{'evidence_ids':[e['id']]}
+   if entry not in svc['coverage']:svc['coverage'].append(entry)
+   if e['id'] not in svc['evidence_ids']:svc['evidence_ids'].append(e['id'])
+   new_evidence.append(e)
+  if spec.get('contacts'):
+   org=orgs[svc['organization_id']]
+   for c in spec['contacts']:
+    if c not in org['contacts']:org['contacts'].append(c)
+   e=ev(sid,dict(claim='provider-contact',source=spec['contact_source'],value=spec['contact_value'],limitations='Published contact route only; no call, email or form was sent and response is not confirmed.'))
+   if e['id'] not in svc['evidence_ids']:svc['evidence_ids'].append(e['id'])
+   new_evidence.append(e)
  subjects={x['id'] for x in new_services+new_rules+new_events}
  data['services']=upsert(data['services'],new_services)
  data['rules']=upsert(data['rules'],new_rules)

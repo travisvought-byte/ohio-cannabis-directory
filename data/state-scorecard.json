@@ -222,16 +222,16 @@
           "next": "Reach 8 routes, 3 official and 1 patient-support organization"
         },
         "business": {
-          "declared": "starter",
-          "level": "starter",
+          "declared": "partial",
+          "level": "partial",
           "measures": {
             "services": 45,
-            "coverage_confirmed_share": 0.556,
-            "direct_contact_share": 0.578,
+            "coverage_confirmed_share": 0.778,
+            "direct_contact_share": 0.867,
             "categorized_share": 0.044,
             "current_review_share": 1.0
           },
-          "next": "9 more listings with confirmed in-state coverage (to 75%); 1 more listings with a phone or email (to 60%)"
+          "next": "105 more listings; 6 more listings with confirmed in-state coverage (to 90%); 41 more categorized listings (to 95%)"
         },
         "community": {
           "declared": "starter",
