@@ -29,7 +29,8 @@ assert not any(s['id'].startswith('svc-pa-supplier-b14-') for s in data['service
 batch_ids = {'svc-pa-supplier-' + p['staging_id'].removeprefix('pa-') for p in manifest['profiles']}
 new = [s for s in data['services'] if s['id'] in batch_ids]
 assert len(new) == 16
-assert all(s['coverage'] == [] and s['listed_in'] == ['PA'] for s in new)
+# Coverage starts empty on import; later reviews may add evidenced coverage that re-imports keep.
+assert all(all(g['evidence_ids'] for g in s['coverage']) and s['listed_in'] == ['PA'] for s in new)
 # A shared national record keeps its contacts, name, legacy fields and Ohio coverage.
 fixture = copy.deepcopy(data)
 shared = next(o for o in fixture['organizations'] if o['id'] == 'org-f73d6f8cdebe')

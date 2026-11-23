@@ -11,7 +11,7 @@ The [state directory contract](STATE_DIRECTORY_CONTRACT.md) defines the data mod
 ## Principles
 
 1. **Measure against a dated count where one exists.** A "broad" dispensary claim needs the regulator's own count and date. Where no count exists (seed sellers), the ceiling is `partial`.
-2. **Count only what the data supports.** Rules need official evidence and an effective date. Coverage counts only when recorded on the record, not implied by an address.
+2. **Count only what the data supports.** Rules need official evidence and an effective date. Coverage counts only when recorded on the record. A provider's own published office or facility address may be recorded as coverage for that county, never as statewide coverage.
 3. **The same thresholds apply to every state.** Denominators differ by state; thresholds do not.
 4. **Missing records mean unknown, not absent.** A low level is a work list, not a claim that help does not exist.
 
@@ -32,7 +32,7 @@ Core rule topics: adult-use possession, home grow, public consumption, driving, 
 ## How measures are counted
 
 - **Dispensaries:** state locations carrying government evidence, divided by the regulator count recorded in `data/state-standard.json`. Update the count and its date whenever the regulator publishes a new list.
-- **Business:** published listings only (scope `public`). For legacy Ohio records, confirmed coverage means any service area other than "Multistate, Ohio unconfirmed", and reviews are current under [REVIEW_POLICY.md](REVIEW_POLICY.md). For other states, confirmed coverage means a recorded state or county coverage entry, and reviews are current when the newest evidence is under 180 days old. Categorized means the listing carries a business category.
+- **Business:** published listings only (scope `public`). For legacy Ohio records, confirmed coverage means any service area other than "Multistate, Ohio unconfirmed", and reviews are current under [REVIEW_POLICY.md](REVIEW_POLICY.md). For other states, confirmed coverage means a recorded state or county coverage entry (a county entry may rest on the provider's own published office or facility address in that county), and reviews are current when the newest evidence is under 180 days old. Categorized means the listing carries a business category.
 - **Records:** county-specific help counts recorded county coverage, plus, for Ohio, the counties in the court-search guide (`data/record-clearing-courts.json`).
 - **Medical, community, records and seeds:** routes may belong to organizations kept out of the business listings (scope `retained`); withdrawn organizations never count.
 - **Community:** events count while their end date (or start date) is on or after the directory's `as_of` date.

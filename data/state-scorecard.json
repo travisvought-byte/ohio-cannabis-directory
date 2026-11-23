@@ -141,16 +141,16 @@
           "next": null
         },
         "business": {
-          "declared": "starter",
-          "level": "starter",
+          "declared": "partial",
+          "level": "partial",
           "measures": {
             "services": 101,
-            "coverage_confirmed_share": 0.475,
-            "direct_contact_share": 0.614,
+            "coverage_confirmed_share": 0.802,
+            "direct_contact_share": 0.792,
             "categorized_share": 0.208,
             "current_review_share": 0.931
           },
-          "next": "28 more listings with confirmed in-state coverage (to 75%)"
+          "next": "49 more listings; 10 more listings with confirmed in-state coverage (to 90%); 1 more listings with a phone or email (to 80%); 75 more categorized listings (to 95%)"
         },
         "community": {
           "declared": "broad",
