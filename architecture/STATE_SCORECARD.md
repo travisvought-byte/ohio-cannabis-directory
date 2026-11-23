@@ -10,7 +10,7 @@ As of 2026-11-23. Standard version 1.0.0: [STATE_COMPLETION_STANDARD.md](STATE_C
 | rules | broad | broad | broad |
 | medical | broad | broad | broad |
 | business | partial | partial | partial |
-| community | partial | broad | partial |
+| community | broad | broad | partial |
 
 ## Ohio (live)
 
@@ -22,7 +22,7 @@ As of 2026-11-23. Standard version 1.0.0: [STATE_COMPLETION_STANDARD.md](STATE_C
 | rules | broad | core topics covered: 7; core topics: 7; missing topics:  | — |
 | medical | broad | services: 8; government sourced: 4; support organizations: 4 | — |
 | business | partial | services: 516; coverage confirmed share: 0.862; direct contact share: 0.938; categorized share: 1.0; current review share: 0.69 | 20 more listings with confirmed in-state coverage (to 90%); 109 more listings reviewed within policy (to 90%) |
-| community | partial | groups: 12; upcoming events: 2; items: 14 | Reach 15 items with at least 1 upcoming event |
+| community | broad | groups: 13; upcoming events: 2; items: 15 | — |
 
 ## Pennsylvania (pilot)
 

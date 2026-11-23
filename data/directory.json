@@ -30374,6 +30374,20 @@
       "contacts": [],
       "website": "https://theflowerexpo.com/",
       "scope": "public"
+    },
+    {
+      "id": "org-ohio-norml",
+      "name": "Ohio NORML",
+      "kind": "community",
+      "legacy_ids": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "value": "ohionormlbod@gmail.com"
+        }
+      ],
+      "website": "https://www.facebook.com/OhioNORML/",
+      "scope": "public"
     }
   ],
   "locations": [
@@ -85866,6 +85880,36 @@
         "NY"
       ],
       "description": "National patient and consumer advocacy group's overview of New York medical cannabis laws and regulations for patients."
+    },
+    {
+      "id": "svc-oh-norml",
+      "organization_id": "org-ohio-norml",
+      "location_ids": [],
+      "pathway_ids": [
+        "community"
+      ],
+      "name": "Ohio NORML",
+      "coverage": [],
+      "audiences": [
+        "residents"
+      ],
+      "eligibility": "Contact the chapter for meetings and membership.",
+      "next_step": {
+        "label": "Open chapter page",
+        "url": "https://norml.org/about/ohio-chapters/"
+      },
+      "availability": "unknown",
+      "attributes": {},
+      "fulfillment": [],
+      "evidence_ids": [
+        "ev-oh-norml-chapter",
+        "ev-oh-norml-contact"
+      ],
+      "origin": "organization-profile",
+      "listed_in": [
+        "OH"
+      ],
+      "description": "Ohio's NORML chapter, listed by NORML."
     }
   ],
   "evidence": [
@@ -139689,6 +139733,32 @@
       "limitations": "NORML's New York medical law overview, reviewed November 23, 2026 (page last modified September 22, 2026). An advocacy summary, not legal advice or a patient service; confirm rules with OCM."
     },
     {
+      "id": "ev-oh-norml-chapter",
+      "subject_id": "svc-oh-norml",
+      "claim": "service-description",
+      "value": "NORML lists Ohio NORML as its Ohio chapter, with a Facebook page and a board email address.",
+      "source_url": "https://norml.org/about/ohio-chapters/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2026-12-23",
+      "limitations": "NORML's own chapter list. Meeting times and current chapter activity are not shown on the page."
+    },
+    {
+      "id": "ev-oh-norml-contact",
+      "subject_id": "svc-oh-norml",
+      "claim": "provider-contact",
+      "value": "ohionormlbod@gmail.com",
+      "source_url": "https://norml.org/about/ohio-chapters/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-23",
+      "recorded_on": "2026-11-23",
+      "recheck_on": "2026-12-23",
+      "limitations": "Email address as NORML's chapter list gives it; the chapter has no website of its own on that page."
+    },
+    {
       "id": "ev-ny26-1a872be5476c",
       "subject_id": "svc-ny-sampling-00016",
       "claim": "service-coverage",
@@ -142056,10 +142126,10 @@
         },
         {
           "pathway_id": "community",
-          "coverage_status": "partial",
+          "coverage_status": "broad",
           "next_step": "Reach a group contact or event participation page.",
           "public_url": "https://weed.vethomeguard.org/resources.html#community",
-          "limitations": "Starter referral coverage; organization service areas remain historical text unless backed by claim-level coverage evidence. No complete statewide location list has been migrated."
+          "limitations": "Thirteen Ohio groups and two upcoming events, each from the group's or organizer's own page. Meeting times and membership terms need direct confirmation with each group."
         }
       ]
     },
