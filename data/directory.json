@@ -23588,16 +23588,7 @@
       "name": "JR Peters, Inc.",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "866-522-5752"
-        },
-        {
-          "kind": "email",
-          "value": "info@jrpeters.com"
-        }
-      ],
+      "contacts": [],
       "website": "https://www.jrpeters.com/",
       "scope": "public"
     },
@@ -23606,16 +23597,7 @@
       "name": "Boyle Construction",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "484-223-0726"
-        },
-        {
-          "kind": "email",
-          "value": "info@boyleconstruction.com"
-        }
-      ],
+      "contacts": [],
       "website": "https://boyleconstruction.com/",
       "scope": "public"
     },
@@ -23624,16 +23606,7 @@
       "name": "Titanium Security & Surveillance",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "610-277-9000"
-        },
-        {
-          "kind": "email",
-          "value": "info@titaniumss.com"
-        }
-      ],
+      "contacts": [],
       "website": "https://titaniumss.com/",
       "scope": "public"
     },
@@ -23642,16 +23615,7 @@
       "name": "Automated Security Corporation",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "610-873-0067"
-        },
-        {
-          "kind": "email",
-          "value": "service@automatedsecuritycorp.com"
-        }
-      ],
+      "contacts": [],
       "website": "https://automatedsecuritycorp.com/",
       "scope": "public"
     },
@@ -23660,16 +23624,7 @@
       "name": "MJ Freeway / MJ Platform",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "855-657-2147"
-        },
-        {
-          "kind": "email",
-          "value": "sales@mjfreeway.com"
-        }
-      ],
+      "contacts": [],
       "website": "https://mjplatform.com/",
       "scope": "public"
     },
@@ -23678,12 +23633,7 @@
       "name": "McKim & Creed",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "412-489-9100"
-        }
-      ],
+      "contacts": [],
       "website": "https://www.mckimcreed.com/",
       "scope": "public"
     },
@@ -23692,16 +23642,7 @@
       "name": "Wooster & Associates",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "412-921-3303"
-        },
-        {
-          "kind": "email",
-          "value": "info@dewooster.com"
-        }
-      ],
+      "contacts": [],
       "website": "https://www.dewooster.com/",
       "scope": "public"
     },
@@ -23710,12 +23651,7 @@
       "name": "Palmer Construction",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "717-485-5111"
-        }
-      ],
+      "contacts": [],
       "website": "https://palmerconstruction.net/",
       "scope": "public"
     },
@@ -23724,12 +23660,7 @@
       "name": "Panacea Payroll",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "610-310-7615"
-        }
-      ],
+      "contacts": [],
       "website": "https://panaceapayroll.com/",
       "scope": "public"
     },
@@ -23738,12 +23669,7 @@
       "name": "LabRepCo",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "800-521-0754"
-        }
-      ],
+      "contacts": [],
       "website": "https://www.labrepco.com/",
       "scope": "public"
     },
@@ -23761,16 +23687,7 @@
       "name": "Corcoran Printing",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "570-343-0414"
-        },
-        {
-          "kind": "email",
-          "value": "orders@corcoranprinting.com"
-        }
-      ],
+      "contacts": [],
       "website": "https://corcoranprinting.com/",
       "scope": "public"
     },
@@ -23779,16 +23696,7 @@
       "name": "JPAK International LLC",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "215-860-5306"
-        },
-        {
-          "kind": "email",
-          "value": "sales@jpakinternational.com"
-        }
-      ],
+      "contacts": [],
       "website": "https://jpakinternational.com/",
       "scope": "public"
     },
@@ -23797,16 +23705,7 @@
       "name": "Paragon Engineering Services",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "717-854-7374"
-        },
-        {
-          "kind": "email",
-          "value": "info@peservices.org"
-        }
-      ],
+      "contacts": [],
       "website": "https://www.peservices.org/",
       "scope": "public"
     },
@@ -23815,12 +23714,7 @@
       "name": "Kinsley Energy Systems",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "800-255-3503"
-        }
-      ],
+      "contacts": [],
       "website": "https://www.kinsley-group.com/",
       "scope": "public"
     },
@@ -23829,12 +23723,7 @@
       "name": "Graves Design Group",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "412-338-1976"
-        }
-      ],
+      "contacts": [],
       "website": "https://www.gravesdesigngroup.com/",
       "scope": "public"
     },
@@ -23843,16 +23732,7 @@
       "name": "HiTechTrader",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "609-518-9100"
-        },
-        {
-          "kind": "email",
-          "value": "sales@hitechtrader.com"
-        }
-      ],
+      "contacts": [],
       "website": "https://hitechtrader.com/",
       "scope": "public"
     },
@@ -23861,16 +23741,7 @@
       "name": "Dellinger Horticulture, Inc.",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "717-752-7248"
-        },
-        {
-          "kind": "email",
-          "value": "contact_dhi@yahoo.com"
-        }
-      ],
+      "contacts": [],
       "website": "https://www.dellingerhorticulture.com/",
       "scope": "public"
     },
@@ -23879,16 +23750,7 @@
       "name": "Innovative Industrial Properties",
       "kind": "service-provider",
       "legacy_ids": [],
-      "contacts": [
-        {
-          "kind": "phone",
-          "value": "858-997-3332"
-        },
-        {
-          "kind": "email",
-          "value": "info@iipreit.com"
-        }
-      ],
+      "contacts": [],
       "website": "https://innovativeindustrialproperties.com/",
       "scope": "public"
     },
@@ -80311,8 +80173,7 @@
       "evidence_ids": [
         "ev-pa-supplier-1dcf296f9cc62a00",
         "ev-pa-supplier-fdc89757727ee3f4",
-        "ev-pa-supplier-05a24d6dd4d33236",
-        "ev-pa27-e87158d519c0"
+        "ev-pa-supplier-05a24d6dd4d33236"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80351,8 +80212,7 @@
       "evidence_ids": [
         "ev-pa-supplier-655839e65bd826c8",
         "ev-pa-supplier-b9737a3816119679",
-        "ev-pa-supplier-5bc227cd60f3327e",
-        "ev-pa27-3202f6a193ce"
+        "ev-pa-supplier-5bc227cd60f3327e"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80391,8 +80251,7 @@
       "evidence_ids": [
         "ev-pa-supplier-24efe4f27179f10b",
         "ev-pa-supplier-e06e7dea19578209",
-        "ev-pa-supplier-724b1a14399fd8c2",
-        "ev-pa27-4d65d8c2d308"
+        "ev-pa-supplier-724b1a14399fd8c2"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80431,8 +80290,7 @@
       "evidence_ids": [
         "ev-pa-supplier-f2d0bf40f2ee14b3",
         "ev-pa-supplier-940ada3af76364a9",
-        "ev-pa-supplier-99e7e240b25d1385",
-        "ev-pa27-7a1264c46b3a"
+        "ev-pa-supplier-99e7e240b25d1385"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80448,15 +80306,7 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [
-        {
-          "kind": "state",
-          "state": "PA",
-          "evidence_ids": [
-            "ev-pa27-40dbb86eb190"
-          ]
-        }
-      ],
+      "coverage": [],
       "audiences": [
         "business"
       ],
@@ -80479,9 +80329,7 @@
       "evidence_ids": [
         "ev-pa-supplier-6d011ab316063b9b",
         "ev-pa-supplier-7b4072092380c126",
-        "ev-pa-supplier-4fb1c37ff0ae964d",
-        "ev-pa27-40dbb86eb190",
-        "ev-pa27-092f0dbca8b3"
+        "ev-pa-supplier-4fb1c37ff0ae964d"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80520,8 +80368,7 @@
       "evidence_ids": [
         "ev-pa-supplier-a1e3487896e8f0f3",
         "ev-pa-supplier-df200ea50040bfe0",
-        "ev-pa-supplier-8be835ea2563a147",
-        "ev-pa27-202ed8a2b69e"
+        "ev-pa-supplier-8be835ea2563a147"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80576,15 +80423,7 @@
       "pathway_ids": [
         "business"
       ],
-      "coverage": [
-        {
-          "kind": "state",
-          "state": "PA",
-          "evidence_ids": [
-            "ev-pa27-4acf628987bb"
-          ]
-        }
-      ],
+      "coverage": [],
       "audiences": [
         "business"
       ],
@@ -80607,9 +80446,7 @@
       "evidence_ids": [
         "ev-pa-supplier-c1ba88182c33d0e6",
         "ev-pa-supplier-12344d932a0946e1",
-        "ev-pa-supplier-7bebc7c28df1e14d",
-        "ev-pa27-4acf628987bb",
-        "ev-pa27-0648286f62e2"
+        "ev-pa-supplier-7bebc7c28df1e14d"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80648,8 +80485,7 @@
       "evidence_ids": [
         "ev-pa-supplier-0bf72f594a0e4ab1",
         "ev-pa-supplier-ff09a8246b99df32",
-        "ev-pa-supplier-86067d24756e9c90",
-        "ev-pa27-1392d89b59bc"
+        "ev-pa-supplier-86067d24756e9c90"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80688,8 +80524,7 @@
       "evidence_ids": [
         "ev-pa-supplier-afca065c112e7ef4",
         "ev-pa-supplier-8e2030a1ff7fbd93",
-        "ev-pa-supplier-52850902f8474cf7",
-        "ev-pa27-190d4c8919db"
+        "ev-pa-supplier-52850902f8474cf7"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80728,8 +80563,7 @@
       "evidence_ids": [
         "ev-pa-supplier-9c4de20149dc2a3f",
         "ev-pa-supplier-d89d09ea8bb55f59",
-        "ev-pa-supplier-f47edae7ffe3799b",
-        "ev-pa27-57d90f7ee80d"
+        "ev-pa-supplier-f47edae7ffe3799b"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80807,8 +80641,7 @@
       "evidence_ids": [
         "ev-pa-supplier-b1538871d80f4aad",
         "ev-pa-supplier-47bd25b6948b7ba8",
-        "ev-pa-supplier-a07d5db84230ff12",
-        "ev-pa27-cbd5967eb3f3"
+        "ev-pa-supplier-a07d5db84230ff12"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80847,8 +80680,7 @@
       "evidence_ids": [
         "ev-pa-supplier-8deb7c2824fe5ebc",
         "ev-pa-supplier-98f8de0873d0fcf8",
-        "ev-pa-supplier-41adb7ab41fdc3b2",
-        "ev-pa27-32c532dce2d4"
+        "ev-pa-supplier-41adb7ab41fdc3b2"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80887,8 +80719,7 @@
       "evidence_ids": [
         "ev-pa-supplier-cade2fde59507aa8",
         "ev-pa-supplier-1d9163d8c38e2540",
-        "ev-pa-supplier-dfe7f096a0612441",
-        "ev-pa27-5475e382d96d"
+        "ev-pa-supplier-dfe7f096a0612441"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -80927,8 +80758,7 @@
       "evidence_ids": [
         "ev-pa-supplier-f39cf219d6bbb99b",
         "ev-pa-supplier-f9ac977a4e1d526b",
-        "ev-pa-supplier-b8d34302d517ddc7",
-        "ev-pa27-0e1a3353968c"
+        "ev-pa-supplier-b8d34302d517ddc7"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -81006,8 +80836,7 @@
       "evidence_ids": [
         "ev-pa-supplier-fb347f5d47dfc59a",
         "ev-pa-supplier-27c17bdb679a2177",
-        "ev-pa-supplier-d4703ee0b0784fc6",
-        "ev-pa27-845a209adfee"
+        "ev-pa-supplier-d4703ee0b0784fc6"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -81046,8 +80875,7 @@
       "evidence_ids": [
         "ev-pa-supplier-dc76786a82816fb6",
         "ev-pa-supplier-a82b2280ad98754c",
-        "ev-pa-supplier-4dbf553d4ba53f29",
-        "ev-pa27-da4dd4a4bd64"
+        "ev-pa-supplier-4dbf553d4ba53f29"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -81086,8 +80914,7 @@
       "evidence_ids": [
         "ev-pa-supplier-bbffaaf0b589d6f1",
         "ev-pa-supplier-a716014ea709b933",
-        "ev-pa-supplier-42b1edaf913a1ea8",
-        "ev-pa27-5f820a7d4dff"
+        "ev-pa-supplier-42b1edaf913a1ea8"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -81165,8 +80992,7 @@
       "evidence_ids": [
         "ev-pa-supplier-59c9508b4d238a18",
         "ev-pa-supplier-d45e66e56883a92d",
-        "ev-pa-supplier-2c235ee8f27a1824",
-        "ev-pa27-e3dedfb9fa2e"
+        "ev-pa-supplier-2c235ee8f27a1824"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -137699,266 +137525,6 @@
       "claim": "provider-contact",
       "value": "LabelPack Automation publishes phone 814-362-1528 and email sales@lpautomation.com.",
       "source_url": "https://www.lpautomation.com/contact-labelpack-automation",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
-    },
-    {
-      "id": "ev-pa27-e87158d519c0",
-      "subject_id": "svc-pa-supplier-b12-jr-peters",
-      "claim": "provider-contact",
-      "value": "JR Peters, Inc. publishes phone 866-522-5752 and email info@jrpeters.com.",
-      "source_url": "https://www.jrpeters.com/contact-us",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
-    },
-    {
-      "id": "ev-pa27-3202f6a193ce",
-      "subject_id": "svc-pa-supplier-b12-boyle",
-      "claim": "provider-contact",
-      "value": "Boyle Construction publishes phone 484-223-0726 and email info@boyleconstruction.com.",
-      "source_url": "https://boyleconstruction.com/contact-us/",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
-    },
-    {
-      "id": "ev-pa27-4d65d8c2d308",
-      "subject_id": "svc-pa-supplier-b12-titanium",
-      "claim": "provider-contact",
-      "value": "Titanium Security & Surveillance publishes phone 610-277-9000 and email info@titaniumss.com.",
-      "source_url": "https://titaniumss.com/contact/",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
-    },
-    {
-      "id": "ev-pa27-7a1264c46b3a",
-      "subject_id": "svc-pa-supplier-b12-automated-security",
-      "claim": "provider-contact",
-      "value": "Automated Security Corporation publishes phone 610-873-0067 and email service@automatedsecuritycorp.com.",
-      "source_url": "https://automatedsecuritycorp.com/contact/",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
-    },
-    {
-      "id": "ev-pa27-40dbb86eb190",
-      "subject_id": "svc-pa-supplier-b12-mj-freeway",
-      "claim": "service-coverage",
-      "value": "MJ Freeway / MJ Platform's own page names Pennsylvania as a place it serves or operates.",
-      "source_url": "https://mjplatform.com/contact/",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
-    },
-    {
-      "id": "ev-pa27-092f0dbca8b3",
-      "subject_id": "svc-pa-supplier-b12-mj-freeway",
-      "claim": "provider-contact",
-      "value": "MJ Freeway / MJ Platform publishes phone 855-657-2147 and email sales@mjfreeway.com.",
-      "source_url": "https://mjplatform.com/contact/",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
-    },
-    {
-      "id": "ev-pa27-202ed8a2b69e",
-      "subject_id": "svc-pa-supplier-b12-mckim-creed",
-      "claim": "provider-contact",
-      "value": "McKim & Creed publishes phone 412-489-9100.",
-      "source_url": "https://www.mckimcreed.com/location/pittsburgh/",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
-    },
-    {
-      "id": "ev-pa27-4acf628987bb",
-      "subject_id": "svc-pa-supplier-b12-wooster",
-      "claim": "service-coverage",
-      "value": "Wooster & Associates's own page names Pennsylvania as a place it serves or operates.",
-      "source_url": "https://www.dewooster.com/contact-us",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Provider-stated Pennsylvania service or operation only. Reach within the state, licensing and current availability are not confirmed; no contact or order was made."
-    },
-    {
-      "id": "ev-pa27-0648286f62e2",
-      "subject_id": "svc-pa-supplier-b12-wooster",
-      "claim": "provider-contact",
-      "value": "Wooster & Associates publishes phone 412-921-3303 and email info@dewooster.com.",
-      "source_url": "https://www.dewooster.com/contact-us",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
-    },
-    {
-      "id": "ev-pa27-1392d89b59bc",
-      "subject_id": "svc-pa-supplier-b12-palmer",
-      "claim": "provider-contact",
-      "value": "Palmer Construction publishes phone 717-485-5111.",
-      "source_url": "https://palmerconstruction.net/contact-us/",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
-    },
-    {
-      "id": "ev-pa27-190d4c8919db",
-      "subject_id": "svc-pa-supplier-b13-panacea-payroll",
-      "claim": "provider-contact",
-      "value": "Panacea Payroll publishes phone 610-310-7615.",
-      "source_url": "https://panaceapayroll.com/",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
-    },
-    {
-      "id": "ev-pa27-57d90f7ee80d",
-      "subject_id": "svc-pa-supplier-b13-labrepco",
-      "claim": "provider-contact",
-      "value": "LabRepCo publishes phone 800-521-0754.",
-      "source_url": "https://www.labrepco.com/contact",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
-    },
-    {
-      "id": "ev-pa27-cbd5967eb3f3",
-      "subject_id": "svc-pa-supplier-b13-corcoran-printing",
-      "claim": "provider-contact",
-      "value": "Corcoran Printing publishes phone 570-343-0414 and email orders@corcoranprinting.com.",
-      "source_url": "https://corcoranprinting.com/contact/",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
-    },
-    {
-      "id": "ev-pa27-32c532dce2d4",
-      "subject_id": "svc-pa-supplier-b13-jpak",
-      "claim": "provider-contact",
-      "value": "JPAK International LLC publishes phone 215-860-5306 and email sales@jpakinternational.com.",
-      "source_url": "https://jpakinternational.com/contact/",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
-    },
-    {
-      "id": "ev-pa27-5475e382d96d",
-      "subject_id": "svc-pa-supplier-b13-paragon-engineering",
-      "claim": "provider-contact",
-      "value": "Paragon Engineering Services publishes phone 717-854-7374 and email info@peservices.org.",
-      "source_url": "https://www.peservices.org/contact/",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
-    },
-    {
-      "id": "ev-pa27-0e1a3353968c",
-      "subject_id": "svc-pa-supplier-b13-kinsley-energy",
-      "claim": "provider-contact",
-      "value": "Kinsley Energy Systems publishes phone 800-255-3503.",
-      "source_url": "https://www.kinsley-group.com/",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
-    },
-    {
-      "id": "ev-pa27-845a209adfee",
-      "subject_id": "svc-pa-supplier-oct30-graves",
-      "claim": "provider-contact",
-      "value": "Graves Design Group publishes phone 412-338-1976.",
-      "source_url": "https://www.gravesdesigngroup.com/contact",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
-    },
-    {
-      "id": "ev-pa27-da4dd4a4bd64",
-      "subject_id": "svc-pa-supplier-oct30-hitech",
-      "claim": "provider-contact",
-      "value": "HiTechTrader publishes phone 609-518-9100 and email sales@hitechtrader.com.",
-      "source_url": "https://hitechtrader.com/industries/cannabis-hemp-extraction/",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
-    },
-    {
-      "id": "ev-pa27-5f820a7d4dff",
-      "subject_id": "svc-pa-supplier-oct30-dellinger",
-      "claim": "provider-contact",
-      "value": "Dellinger Horticulture, Inc. publishes phone 717-752-7248 and email contact_dhi@yahoo.com.",
-      "source_url": "https://www.dellingerhorticulture.com/contact",
-      "source_kind": "provider",
-      "status": "source-reviewed",
-      "reviewed_on": "2026-11-23",
-      "recorded_on": "2026-11-23",
-      "recheck_on": "2027-02-21",
-      "limitations": "Published contact route only; no call, email or form was sent and response is not confirmed."
-    },
-    {
-      "id": "ev-pa27-e3dedfb9fa2e",
-      "subject_id": "svc-pa-supplier-oct30-iip",
-      "claim": "provider-contact",
-      "value": "Innovative Industrial Properties publishes phone 858-997-3332 and email info@iipreit.com.",
-      "source_url": "https://innovativeindustrialproperties.com/contact/",
       "source_kind": "provider",
       "status": "source-reviewed",
       "reviewed_on": "2026-11-23",

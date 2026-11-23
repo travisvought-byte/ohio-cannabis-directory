@@ -145,12 +145,12 @@
           "level": "starter",
           "measures": {
             "services": 101,
-            "coverage_confirmed_share": 0.495,
-            "direct_contact_share": 0.792,
+            "coverage_confirmed_share": 0.475,
+            "direct_contact_share": 0.614,
             "categorized_share": 0.208,
             "current_review_share": 0.931
           },
-          "next": "26 more listings with confirmed in-state coverage (to 75%)"
+          "next": "28 more listings with confirmed in-state coverage (to 75%)"
         },
         "community": {
           "declared": "broad",
