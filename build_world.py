@@ -230,7 +230,8 @@ def stores_page(world, sources, code, entry):
     cites = nat.Cites(sources)
     pills = ''.join(f'<a class="pill" href="#{nat.esc(t["id"])}">{nat.esc(t["caption"].split(":")[0])}</a>' for t in entry['tables'])
     body = [CSS, NL_CSS, f'<p class="crumbs"><a href="index.html">Home</a> › <a href="world.html">Around the world</a> › <a href="{nat.esc(c["page"])}">{nat.esc(c["name"])}</a> › Stores</p>',
-            f'<h1>{nat.esc(entry["page_title"])}</h1>', f'<p class="lede">{nat.esc(entry["page_intro"])}</p>', f'<div class="pills">{pills}</div>']
+            f'<h1>{nat.esc(entry["page_title"])}</h1>', f'<p class="lede">{nat.esc(entry["page_intro"])}</p>', f'<div class="pills">{pills}</div>',
+            '<h2 id="by-region">' + ('Stores by province' if code == 'CA' else 'Stores by region') + '</h2>']
     body.extend(wtb_table(t, cites, True) for t in entry['tables'])
     body.append(FILTER_JS)
     body.append(f'<p class="muted">Copied from each regulator\'s list on {nat.long_date(world_where_as_of())}. Not legal advice.</p>')
@@ -331,6 +332,8 @@ def country_page(world, sources, code):
     where = load_where()['countries'].get(code)
     if where:
         body.append(where_section(where, cites, page_link=bool(where.get('page'))))
+    # The answer cards are h3s; they sit under their own h2 so headings never skip a level (WCAG 1.3.1).
+    body.append(f'<h2 id="the-law">The law in {nat.esc(in_sentence(c["name"]))}</h2>')
     for q in world['questions']:
         a = c['answers'].get(q['id'])
         if a or q['id'] in ('adult-use', 'medical', 'possession', 'home-grow'):

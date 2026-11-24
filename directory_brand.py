@@ -168,8 +168,11 @@ def brand_page(page, name=None):
 
     page = page.replace('</head>', '<script src="assets/analytics.js"></script></head>')
     out = page.replace('__VHG_BRAND__', brand_header())
-    return (out
-            .replace('__VHG_CSS__', BRAND_CSS)
-            .replace('__UPDATE_URL__', update_url())
-            .replace('__RELATIONSHIP_UPDATE_URL__', update_url('relationship'))
-            .replace('__VHG_EMAIL__', EMAIL))
+    out = (out
+           .replace('__VHG_CSS__', BRAND_CSS)
+           .replace('__UPDATE_URL__', update_url())
+           .replace('__RELATIONSHIP_UPDATE_URL__', update_url('relationship'))
+           .replace('__VHG_EMAIL__', EMAIL))
+    # Last: a skip link past the site menu, and less motion when the visitor's device asks (a11y.py).
+    from a11y import finish
+    return finish(out)

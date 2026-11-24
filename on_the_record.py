@@ -190,7 +190,7 @@ def filing_rows(org):
         people = (f'<ul>{paid}</ul>' if paid else '<p>No one listed with reportable compensation.</p>') + \
                  f'<p class="review">{f["unpaid_people_listed"]} other officers, directors or trustees listed with no reportable compensation.</p>'
         dl = ''.join(f'<dt>{esc(k)}</dt><dd>{v}</dd>' for k, v in lines)
-        out.append(f'<h4>Fiscal year ending {esc(day(f["fiscal_year_end"]))}</h4><dl>{dl}</dl>'
+        out.append(f'<h3 class="fy">Fiscal year ending {esc(day(f["fiscal_year_end"]))}</h3><dl>{dl}</dl>'
                    f'<p><strong>Officers, directors and key employees with compensation (Part VII)</strong></p>{people}')
     return ''.join(out)
 

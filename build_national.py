@@ -88,7 +88,7 @@ section.block{margin:38px 0}section.block>h2{margin-top:0}
 .usmap{display:grid;grid-template-columns:repeat(11,minmax(0,1fr));gap:4px;margin:10px 0;max-width:640px}
 .tile{aspect-ratio:1;display:grid;place-items:center;border-radius:6px;font-weight:800;font-size:clamp(10px,1.7vw,15px);text-decoration:none;color:#fff;background:#9aa3a0}
 .tile:hover,.tile:focus-visible{outline:3px solid var(--ink);outline-offset:1px}
-.tile.allowed,.tile.positive,.tile.broad,.sw.allowed,.sw.positive,.sw.broad{background:#2f7d4f}.tile.medical-only,.sw.medical-only{background:#3b7fa0}
+.tile.allowed,.tile.positive,.tile.broad,.sw.allowed,.sw.positive,.sw.broad{background:#2f7d4f}.tile.medical-only,.sw.medical-only{background:#387b9c}
 .tile.limited,.tile.varies-locally,.tile.partial,.tile.starter,.sw.limited,.sw.varies-locally,.sw.partial,.sw.starter{background:#e3b23c;color:#2a2108}
 .tile.not-permitted,.tile.negative,.sw.not-permitted,.sw.negative{background:#b4513a}.tile.not-reviewed,.tile.not-started,.sw.not-reviewed,.sw.not-started{background:#d4d8d5;color:#3b4541}
 .legend{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:6px 18px;margin:8px 0;font-size:.93rem}.legend .sw{display:inline-block;width:15px;height:15px;border-radius:4px;vertical-align:-2px;margin-right:7px}
@@ -163,6 +163,47 @@ select{border-color:#5d6b64}}
 @media (prefers-color-scheme:dark){.ad-slot{background:#25210f;border-color:#8c7638}.ad-label{color:#e8d08a}}
 @media print{header.site nav,footer.site,select,label,.pick,.ad-slot{display:none}}
 '''
+
+
+# A symbol on each map tile and key swatch, so a state's answer does not rest on color alone (WCAG 1.4.1;
+# owner direction, November 24, 2026): a check for allowed, a plus for medical only, a half circle for
+# limited or partial, an X for not permitted, a dashed ring for not yet reviewed. Line drawings from Lucide
+# (ISC license, https://lucide.dev), drawn in the tile's text color, so they show in Windows high contrast
+# where the tile colors do not. Screen readers already hear the answer in each tile's label.
+STATUS_SYMBOLS = {
+    ('allowed', 'positive', 'broad'): '<path d="M20 6 9 17l-5-5"/>',
+    ('medical-only',): '<path d="M5 12h14"/><path d="M12 5v14"/>',
+    ('limited', 'varies-locally', 'partial', 'starter'): '<circle cx="12" cy="12" r="10"/><path d="M12 18a6 6 0 0 0 0-12v12z"/>',
+    ('not-permitted', 'negative'): '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
+    ('not-reviewed', 'not-started'): ('<path d="M10.1 2.182a10 10 0 0 1 3.8 0"/><path d="M13.9 21.818a10 10 0 0 1-3.8 0"/>'
+                                      '<path d="M17.609 3.721a10 10 0 0 1 2.69 2.7"/><path d="M2.182 13.9a10 10 0 0 1 0-3.8"/>'
+                                      '<path d="M20.279 17.609a10 10 0 0 1-2.7 2.69"/><path d="M21.818 10.1a10 10 0 0 1 0 3.8"/>'
+                                      '<path d="M3.721 6.391a10 10 0 0 1 2.7-2.69"/><path d="M6.391 20.279a10 10 0 0 1-2.69-2.7"/>'),
+}
+
+
+def _symbol_url(inner):
+    from urllib.parse import quote
+    svg = ("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' "
+           "stroke-linecap='round' stroke-linejoin='round'>" + inner.replace('"', "'") + '</svg>')
+    return 'url("data:image/svg+xml,' + quote(svg, safe=" /:='.,-") + '")'
+
+
+def status_symbol_css():
+    rules = ['.usmap .tile{align-content:center;gap:1px}'
+             '.usmap .tile::before,.legend .sw::before{content:"";display:block;background:currentColor;'
+             '-webkit-mask:var(--sym) center/contain no-repeat;mask:var(--sym) center/contain no-repeat}'
+             '.usmap .tile::before{width:.8em;height:.8em}'
+             '.legend .sw{display:inline-grid;place-items:center;color:#fff}.legend .sw::before{width:11px;height:11px}']
+    for tones, inner in STATUS_SYMBOLS.items():
+        rules.append(','.join(f'.tile.{t}::before,.sw.{t}::before' for t in tones) + '{--sym:' + _symbol_url(inner) + '}')
+    rules.append('@media (prefers-color-scheme:dark){.sw.not-reviewed,.sw.not-started{color:#d7ddd9}}')
+    rules.append('@media (forced-colors:active){.usmap .tile::before{background:LinkText;forced-color-adjust:none}'
+                 '.legend .sw::before{background:CanvasText;forced-color-adjust:none}}')
+    return '\n' + ''.join(rules) + '\n'
+
+
+CSS += status_symbol_css()
 
 ASSETS = '../assets/the-reefer/'  # national/ pages; the published copy sits at the root (see scripts/build_pages_site.py)
 LOGO_ALT = 'The-Reefer.com logo: a pirate skull in a red bandana and eye patch over crossed bones and a cannabis leaf'
@@ -548,7 +589,8 @@ def shell(title, description, body, name, place, hero='', ld=None):
             f'<li><a href="{REPO}/blob/main/architecture/STATE_COMPLETION_STANDARD.md">State completion standard</a></li></ul></nav></div>'
             '<p>Summaries of the cited sources, each with the date it was checked. Not legal advice. A missing answer means not yet reviewed, '
             'never that something is prohibited. Free to use under CC BY 4.0. Created and maintained by Travis Vought, shared in support of Veteran Home Guardians.</p></div></footer>')
-    return ''.join(head) + top + hero + '<main>' + body + '</main>' + foot + '<script src="../assets/analytics.js" defer></script></body></html>\n'
+    from a11y import finish  # a skip link and less motion when the visitor's device asks
+    return finish(''.join(head) + top + hero + '<main>' + body + '</main>' + foot + '<script src="../assets/analytics.js" defer></script></body></html>\n')
 
 class Cites:
     """Per-page source numbering, in order of first use."""
@@ -1306,9 +1348,9 @@ def home_page(perm, score, directory, answers, sources, sponsors=()):
     ordered = sorted(names, key=lambda c: names[c])
     jump = ''.join(f'<option value="{slug(names[c])}.html">{esc(names[c])}</option>' for c in ordered)
     import build_world  # the world section lives in build_world; imported here to avoid a load-time cycle
-    hero = (build_world.announcement() + show_bar(directory) + '<section class="hero"><div class="wrap"><div class="copy">'
+    hero = (build_world.announcement() + show_bar(directory) + '<section class="hero" aria-labelledby="hero-title"><div class="wrap"><div class="copy">'
             '<p class="eyebrow">Free · All 50 states and DC · Every answer sourced</p>'
-            '<h1>Cannabis answers for your state, in plain language.</h1>'
+            '<h1 id="hero-title">Cannabis answers for your state, in plain language.</h1>'
             '<p>What’s legal, where to buy, how to clear a record and where to get help. Each answer links to the law or agency it comes from.</p>'
             '<form class="pick" id="pick"><label for="state-jump">Pick your state</label><div class="row">'
             f'<select id="state-jump" name="state"><option value="">Choose a state</option>{jump}</select><button type="submit">Go</button></div>'

@@ -54,7 +54,7 @@ TEMPLATE = r'''<!doctype html>
 <p id="tally" role="status" aria-live="polite"></p></div></header>
 <main class="wrap" id="results"></main>
 <noscript><p class="wrap">Read the <a href="b2b-relationships.csv">relationship CSV</a> for all documented relationships and evidence.</p></noscript>
-<footer class="wrap"><p>A Veteran Home Guardians resource, compiled and maintained by Travis Vought. Release v__VERSION__ · __DATE__. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p><p class="update-contact">Additions and corrections: <a href="__RELATIONSHIP_UPDATE_URL__">__VHG_EMAIL__</a>.</p></footer>
+<aside class="wrap page-notes" aria-label="About this listing"><p>A Veteran Home Guardians resource, compiled and maintained by Travis Vought. Release v__VERSION__ · __DATE__. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p><p class="update-contact">Additions and corrections: <a href="__RELATIONSHIP_UPDATE_URL__">__VHG_EMAIL__</a>.</p></aside>
 <script>
 const RELATIONSHIPS=__DATA__;
 const $=id=>document.getElementById(id),esc=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));

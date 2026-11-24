@@ -74,7 +74,7 @@ __VHG_CSS__
   label .req{color:var(--flag)}
   input,select,textarea{
     width:100%;font-family:var(--sans);font-size:16px;color:var(--ink);
-    background:#F6F7F2;border:1px solid var(--rule);border-radius:2px;
+    background:#F6F7F2;border:1px solid #6F7A66;border-radius:2px;
     padding:.55rem .6rem;appearance:none;
   }
   textarea{min-height:4.5rem;resize:vertical;line-height:1.45}
@@ -129,6 +129,7 @@ __VHG_CSS__
   <p class="sub update-contact">For a listing update, <a href="__UPDATE_URL__">email VHG</a>. Attach your CSV if you have several updates.</p>
 </header>
 
+<main id="main-content">
 <div class="wrap">
   <div class="warn" id="nostore">This browser is blocking local storage, so entries will be lost if the page reloads. Export after every few records.</div>
 
@@ -202,6 +203,7 @@ __VHG_CSS__
     <button class="btn" id="wipe">Clear all</button>
   </div>
 </section>
+</main>
 
 <script>
 const INDEX = __INDEX__;

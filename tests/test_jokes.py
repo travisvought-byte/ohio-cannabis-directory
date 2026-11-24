@@ -52,7 +52,7 @@ class Jokes(unittest.TestCase):
         self.assertIn('<div class="art"><div class="shipbox"><svg class="ship"', home)
         self.assertNotIn('class="block joke"', home, 'the joke no longer sits in a box of its own down the page')
         self.assertLess(home.index('id="joke"'), home.index('id="tasks"'), 'the joke is met before the list of tasks')
-        self.assertLess(home.index('<h1>'), home.index('id="joke"'), 'the page heading still comes first for screen readers')
+        self.assertLess(home.index('<h1'), home.index('id="joke"'), 'the page heading still comes first for screen readers')
         self.assertLess(home.index('id="joke"'), home.index('id="jokes-data"'), 'the bubble exists before the script fills it')
         # The bubble is not hidden from screen readers; only the two sailors in the drawing are decoration.
         bubble = home[home.index('<div class="yarn"'):home.index('</section>', home.index('<div class="yarn"'))]

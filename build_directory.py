@@ -391,7 +391,7 @@ __VHG_CSS__
     background:transparent; border:0; border-bottom:3px solid var(--field);
     border-radius:0; appearance:none;
   }
-  #q::placeholder{color:#868E92}
+  #q::placeholder{color:#646C71}
   #q:focus{outline:0; border-bottom-color:var(--field-deep)}
   #q:focus-visible{outline:0}
   .searchbox:focus-within{box-shadow:0 3px 0 -1px rgba(186,12,47,.22)}
@@ -406,7 +406,7 @@ __VHG_CSS__
   .controls{display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; padding-bottom:.9rem}
   select{
     font-family:var(--sans); font-size:.88rem; color:var(--ink);
-    background:var(--paper-deep); border:1px solid var(--rule);
+    background:var(--paper-deep); border:1px solid #6B7478;
     padding:.42rem 1.9rem .42rem .6rem; border-radius:2px;
     appearance:none; cursor:pointer; max-width:100%;
     background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%234A5A50' stroke-width='1.4' fill='none'/%3E%3C/svg%3E");
@@ -431,7 +431,7 @@ __VHG_CSS__
   }
   .lane:hover{border-color:var(--field); color:var(--ink)}
   .lane[aria-pressed="true"]{background:var(--field); border-color:var(--field); color:#FFFFFF}
-  .lane .n{color:#868E92; margin-left:.3rem}
+  .lane .n{color:#646C71; margin-left:.3rem}
   .lane[aria-pressed="true"] .n{color:#EFF1F2}
 
   /* ---- records ------------------------------------------------------ */
@@ -451,7 +451,7 @@ __VHG_CSS__
   .contact{display:flex; flex-wrap:wrap; gap:.15rem .9rem; margin-top:.5rem; font-size:.88rem}
   .contact a{color:var(--field-deep); text-decoration:none; border-bottom:1px solid rgba(186,12,47,.35)}
   .contact a:hover{border-bottom-color:var(--field-deep)}
-  .contact span{color:#868E92}
+  .contact span{color:#646C71}
   .business-help{margin:1rem 0}.business-help h2{font-size:1rem;margin:0 0 .5rem}.help-links{display:flex;flex-wrap:wrap;gap:.45rem}.help-route{min-height:44px;display:inline-flex;align-items:center}.help-route[aria-current="true"]{background:var(--field);color:white;border-color:var(--field)}
   .provider-details{margin:.55rem 0;padding:.6rem .75rem;background:var(--paper-deep);font-size:.84rem}.provider-details p{margin:.15rem 0}.provider-details a{color:var(--field-deep)}
   #browse-extras>summary{display:none}
@@ -492,12 +492,12 @@ __VHG_CSS__
   .home-event time{font-weight:700}.home-event a{display:inline-block;padding:.4rem 0;min-height:44px}
   @media print{.event-line{display:block;overflow:visible}.home-event{break-inside:avoid}}
   /* ---- footer ------------------------------------------------------- */
-  footer{
+  footer,.page-notes{
     border-top:1px solid var(--rule); margin-top:2rem; padding:1.5rem 0 3rem;
     font-size:.82rem; color:var(--ink-soft);
   }
-  footer p{margin:0 0 .6rem; max-width:60ch}
-  footer a{color:var(--field-deep)}
+  footer p,.page-notes p{margin:0 0 .6rem; max-width:60ch}
+  footer a,.page-notes a{color:var(--field-deep)}
   .actions{display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:1.1rem}
   .masthead .actions{margin:.1rem 0 1.15rem}
   .btn{
@@ -559,7 +559,7 @@ __NOVEMBER_BANNER__
     <section class="business-help" aria-labelledby="business-help-title"><h2 id="business-help-title">Find business help</h2><nav class="help-links" aria-label="Business help">__HELP_ROUTES__</nav></section>
     </details>
 
-    <div class="controls">
+    <div class="controls" role="search" aria-label="Filter results">
       <select id="cat" aria-label="Filter by category">
         <option value="">All categories</option>
         __CAT_OPTS__
@@ -589,13 +589,13 @@ __NOVEMBER_BANNER__
 <main class="wrap" id="results"></main>
 <details class="wrap"><summary>Browse the full text index without JavaScript</summary>__NOSCRIPT_INDEX__</details>
 
-<footer class="wrap">
+<aside class="wrap page-notes" aria-label="About this directory">
   <p>Listings are not paid placements. Any sponsorship or business relationship with a listed organization is disclosed on its record.</p><p>A Veteran Home Guardians resource, compiled and maintained by Travis Vought. Built __BUILT__ from release v__VERSION__. Every record carries the source used to verify it; open the provenance note on any entry to see it.</p>
   <p class="update-contact">Additions and corrections: <a href="__UPDATE_URL__">__VHG_EMAIL__</a>.</p>
   <p><a href="intake.html">Capture organizations offline</a> · <a href="relationships.html">Browse 60 documented relationships</a> · <a href="b2b-relationships.csv">Download relationship data</a></p>
   <p>Out-of-scope records are kept rather than deleted so that renamed, acquired and superseded organizations stay findable. They are hidden by default.</p>
   <p>Released under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener" target="_blank">CC BY 4.0</a>. Copy it, build on it, keep the attribution. Corrections and additions are welcome and get verified before they go in.</p>
-</footer>
+</aside>
 
 <script>
 const DATA = __PAYLOAD__;
