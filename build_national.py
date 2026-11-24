@@ -1116,6 +1116,34 @@ def progress_section(perm, score, directory, answers):
     return ''.join(out)
 
 
+# Other open projects that collect related cannabis data, linked from the About page so people can find the data
+# without anyone collecting it twice (owner direction, November 24, 2026). Name, URL, one sentence.
+RELATED_PROJECTS = [
+    ('Cannlytics cannabis license data', 'https://huggingface.co/datasets/cannlytics/cannabis_licenses',
+     'open licensee data for about 21 states under CC BY 4.0; Ohio isn’t included yet.'),
+    ('PDAPS Retail Marijuana Laws', 'https://pdaps.org/datasets/retail-marijuana-laws',
+     'coded state retail cannabis laws from Temple University’s Center for Public Health Law Research, CC BY 4.0, current through March 2024.'),
+    ('Collateral Consequences Resource Center', 'https://ccresourcecenter.org/marijuana-decriminalization-drives-expungement-reform/',
+     'a national comparison of marijuana record clearing by state.'),
+    ('Massachusetts Cannabis Control Commission open data', 'https://masscannabiscontrol.com/open-data/data-catalog/',
+     'the state’s licensee data as downloadable files.'),
+]
+DATA_CREDIT = 'Ohio Cannabis Ecosystem Directory, compiled by Travis Vought.'  # the required attribution in LICENSE
+
+
+def open_data_section():
+    mail = 'mailto:' + EMAIL + '?' + urlencode({'subject': f'{SITE_NAME}: linking open datasets'}, quote_via=quote)
+    return ('<h2 id="open-data" class="ih"><span class="hi">' + icon('swap') + '</span>Open data, and projects like this one</h2>'
+            '<p>The directory’s listings are open data under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>. '
+            'Anyone may copy and reuse them, with credit, so nobody has to collect the same listings twice. '
+            f'The credit to use is “{esc(DATA_CREDIT)}” '
+            f'The files are in <a href="{REPO}">the directory’s repository on GitHub</a>.</p>'
+            '<h3 id="related">Related open projects</h3><ul>'
+            + ''.join(f'<li><a href="{esc(url)}" target="_blank" rel="noopener">{esc(name)}</a> (new tab): {esc(line)}</li>'
+                      for name, url, line in RELATED_PROJECTS) +
+            f'</ul><p>Maintain a similar dataset? Write to us at <a href="{esc(mail)}">{esc(EMAIL)}</a> and we’ll link to each other.</p>')
+
+
 def about_page(perm, score, directory, answers):
     total_answers = len(perm['answers'])
     body = ['<p class="crumbs"><a href="index.html">Home</a> › About</p>', f'<h1>About {esc(SITE_NAME)}</h1>',
@@ -1130,13 +1158,14 @@ def about_page(perm, score, directory, answers):
             '<li>State laws are presented side by side and factually. The site does not rank states or say which approach is better.</li>'
             '<li>Nonpartisan: every party and lawmaker is treated the same way.</li></ul>',
             progress_section(perm, score, directory, answers),
+            open_data_section(),
             '<h2 id="corrections">Corrections and reuse</h2>'
             f'<p>Found something wrong or out of date? <a href="{esc(correction_url("the site"))}">Send a correction</a> with a link to the source. '
             f'Everything here is free to use under CC BY 4.0, and the data and build scripts are public on <a href="{REPO}">GitHub</a>.</p>'
             '<p>How visits are counted and what the site keeps: <a href="privacy.html">Privacy</a>.</p>'
             '<p>Created and maintained by Travis Vought, shared in support of Veteran Home Guardians.</p>']
     return shell(f'About {SITE_NAME}', f'How {SITE_NAME} checks its information, what its labels mean, how far each state guide has been built, and how to send a correction.',
-                 ''.join(body), 'about.html', 'the site', ld=[breadcrumbs([('Home', '')], 'about.html', 'About')])
+                 ''.join(body), 'about.html', 'the site', ld=[breadcrumbs([('Home', '')], 'about.html', 'About')], css=ICON_HEAD_CSS)
 
 
 PRIVACY_UPDATED = '2026-11-21'
