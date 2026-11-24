@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "scope": "directory",
-  "as_of": "2026-11-23",
+  "as_of": "2026-11-24",
   "organizations": [
     {
       "id": "org-6f5375e74696",
@@ -65475,7 +65475,14 @@
       "evidence_ids": [
         "ev-30b41d837520",
         "ev-5b73821a417d",
-        "ev-8f71006d64a6"
+        "ev-8f71006d64a6",
+        "ev-otr-28996af4250a-hb160",
+        "ev-otr-28996af4250a-sb56",
+        "ev-otr-28996af4250a-hb611",
+        "ev-otr-28996af4250a-jlec-registration",
+        "ev-otr-28996af4250a-jlec-bills",
+        "ev-otr-28996af4250a-statements",
+        "ev-otr-28996af4250a-irs-990"
       ],
       "origin": "organization-profile",
       "listed_in": [
@@ -127510,6 +127517,90 @@
       "recorded_on": "2026-11-01",
       "recheck_on": "2026-12-01",
       "limitations": "Office of Cannabis Management list of medical dispensing facilities operated by registered organizations. The page shows no date. Temporarily closed facilities are marked by OCM. Products, hours, delivery areas and fees must be confirmed with the registered organization. Registration numbers are as printed."
+    },
+    {
+      "id": "ev-otr-28996af4250a-hb160",
+      "subject_id": "svc-profile-28996af4250a",
+      "claim": "legislative-testimony",
+      "value": "Recorded position on HB 160 (136th General Assembly, revise liquor control, hemp, and adult-use marijuana laws): proponent, written-only testimony for the House Judiciary hearing of April 30, 2025, witness David Bowling for OHCANN. See lawmakers.html#on-the-record.",
+      "source_url": "https://search-prod.lis.state.oh.us/api/v2/general_assembly_136/committees/cmte_h_judiciary_1/meetings/cmte_h_judiciary_1_2025-04-30-1100_393/testimony/5833/protest_hb160_davidbowling_ohcann_writtenonly.pdf",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-24",
+      "recheck_on": "2027-02-24",
+      "limitations": "Position as recorded by the committee and stated in the testimony document. HB 160 saw no action after three hearings."
+    },
+    {
+      "id": "ev-otr-28996af4250a-sb56",
+      "subject_id": "svc-profile-28996af4250a",
+      "claim": "legislative-testimony",
+      "value": "SB 56 (136th General Assembly): no OHCANN or OMCIA witness entry appears in the committee testimony record (Senate General Government, January 29 and February 18, 2025; House Judiciary, April 30 and June 4, 2025). See lawmakers.html#on-the-record.",
+      "source_url": "https://www.ohiosenate.gov/legislation/136/sb56/committee",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-24",
+      "recheck_on": "2027-02-24",
+      "limitations": "Committee testimony tables only; conference committee proceedings and floor debate are not covered."
+    },
+    {
+      "id": "ev-otr-28996af4250a-hb611",
+      "subject_id": "svc-profile-28996af4250a",
+      "claim": "legislative-testimony",
+      "value": "HB 611 (136th General Assembly, issue medical marijuana processor cultivation and dispensary license): no OHCANN or OMCIA witness entry appears in the committee testimony record (House Judiciary, March 25, May 13 and May 20, 2026). See lawmakers.html#on-the-record.",
+      "source_url": "https://www.ohiosenate.gov/legislation/136/hb611/committee",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-24",
+      "recheck_on": "2027-02-24",
+      "limitations": "No Senate hearing is listed as of the review date."
+    },
+    {
+      "id": "ev-otr-28996af4250a-jlec-registration",
+      "subject_id": "svc-profile-28996af4250a",
+      "claim": "lobbying-registration",
+      "value": "Registered lobbying employer with the Joint Legislative Ethics Committee as Ohio Cannabis Coalition (OHCANN); alternate names on the registration: OMCIA, Ohio Medical Cannabis Cultivators Association, OMCCA, Ohio Medical Cannabis Industry Association. Current registered agent: David Bowling (legislative and executive).",
+      "source_url": "https://www2.jlec-olig.state.oh.us/olac/Reports/Employers/8704/Agents",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-24",
+      "recheck_on": "2027-02-24",
+      "limitations": "JLEC lists only current engagements."
+    },
+    {
+      "id": "ev-otr-28996af4250a-jlec-bills",
+      "subject_id": "svc-profile-28996af4250a",
+      "claim": "lobbying-activity",
+      "value": "JLEC legislative activity reports list SB 56 for every period from January–April 2025 through May–August 2026, HB 160 from January–April 2025 through January–April 2026, and HB 611 for January–April 2026 (agent Adrienne Robbins). Activity reports do not state a position.",
+      "source_url": "https://www2.jlec-olig.state.oh.us/olac/Reports/DecisionSearches/Legislative?StartingPeriodId=188&EndingPeriodId=210&EmployerName=Ohio+Cannabis+Coalition",
+      "source_kind": "government",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-24",
+      "recheck_on": "2027-02-24",
+      "limitations": "Bills as reported by the employer and its agents; no position or spending per bill is reported."
+    },
+    {
+      "id": "ev-otr-28996af4250a-statements",
+      "subject_id": "svc-profile-28996af4250a",
+      "claim": "public-statement",
+      "value": "Own statements on SB 56: February 26, 2025 (“We applaud the Senate for their diligent work on Senate Bill 56”), December 19, 2025 (on the Governor signing SB 56) and March 19, 2026 (“applauding the implementation of Senate Bill 56”); on HB 160: March 6, 2025. No statement on HB 611 on its news and press page.",
+      "source_url": "https://ohcann.com/news/",
+      "source_kind": "provider",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-24",
+      "recheck_on": "2027-02-24",
+      "limitations": "Press releases are linked from the news page as shared documents. The January 2025 SB 56 statement link returned Not Found and is not quoted."
+    },
+    {
+      "id": "ev-otr-28996af4250a-irs-990",
+      "subject_id": "svc-profile-28996af4250a",
+      "claim": "irs-filing",
+      "value": "EIN 83-3732401, section 501(c)(6). Form 990 total revenue: $477,752 (2023, filed as Ohio Medical Cannabis Industry Association), $562,628 (2024) and $774,444 (2025). Part IV line 3 (political campaign activity) answered No each year; no Schedule C attached.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/833732401",
+      "source_kind": "secondary",
+      "status": "source-reviewed",
+      "reviewed_on": "2026-11-24",
+      "recheck_on": "2027-02-24",
+      "limitations": "Figures read from the IRS e-file XML (object IDs 202400449349301125, 202520789349300747, 202601039349301035); ProPublica is linked for viewing the same filings."
     },
     {
       "id": "ev-ny26-b50eaa95a329",

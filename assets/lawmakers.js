@@ -6,6 +6,16 @@ const element=(tag,text,cls)=>{const el=document.createElement(tag);if(text!==un
 const link=(label,url,cls)=>{const el=element('a',label,cls);el.href=url;return el;};
 const dateLabel=s=>new Date(s+'T12:00:00Z').toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric',timeZone:'UTC'});
 function finalVote(member){return member.votes.find(v=>events.get(v.event_id).is_final_agreement);}
+function hb611(member){
+ const record=(data.bill_records||{})['HB 611'],box=element('div',undefined,'vote bill-611');if(!record)return box;
+ const sponsor=(member.sponsorships||[]).find(s=>s.bill==='HB 611'),votes=member.votes.filter(v=>events.get(v.event_id).bill==='HB 611');
+ const head=element('p','HB 611 (processor cultivation and dispensary licenses): '+(sponsor?sponsor.role:'not a sponsor or cosponsor'),'vote-label');box.append(head);
+ const list=element('ul',undefined,'vote-history');
+ votes.forEach(v=>{const e=events.get(v.event_id),li=element('li');li.append(link(dateLabel(e.date)+' · '+e.stage+' · '+v.vote,e.source));list.append(li);});
+ if(votes.length)box.append(list);
+ else box.append(element('p',member.chamber==='House'?'No recorded HB 611 yea/nay.':'No Senate vote on HB 611 recorded as of '+record.checked_on+'.','review'));
+ const source=element('p',undefined,'review');source.append(link('Official HB 611 record, checked '+record.checked_on,record.source));box.append(source);return box;
+}
 function card(member){
  const article=element('article');article.id=member.id;
  article.append(element('h3',member.vacant?'Vacant seat':member.name));
@@ -15,8 +25,9 @@ function card(member){
  const final=finalVote(member),event=data.vote_events.find(e=>e.chamber===member.chamber&&e.is_final_agreement),vote=element('div',undefined,'vote');
  vote.append(element('p','Final SB 56 agreement: '+(final?final.vote:'No recorded yea/nay'),'vote-label'));
  const source=element('p',undefined,'review');source.append(link(dateLabel(event.date)+' · Conference report',event.source));vote.append(source);article.append(vote);
- const history=member.votes.filter(v=>!events.get(v.event_id).is_final_agreement);
+ const history=member.votes.filter(v=>{const e=events.get(v.event_id);return e.bill==='SB 56'&&!e.is_final_agreement;});
  if(history.length){const details=element('details'),list=element('ul',undefined,'vote-history');details.append(element('summary','Other SB 56 votes ('+history.length+')'));history.forEach(v=>{const e=events.get(v.event_id),li=element('li');li.append(link(dateLabel(e.date)+' · '+e.stage+' · '+v.vote,e.source));list.append(li);});details.append(list);article.append(details);}
+ article.append(hb611(member));
  const actions=element('div',undefined,'actions'),write=link('Write to this lawmaker','advocacy.html?member='+member.id+'#write','button');write.dataset.track='lawmakers-start-letter';actions.append(write,link('Official contact',member.contact_url,'button secondary'));article.append(actions);
  const contact=element('p');if(member.phone)contact.append(link('Call '+member.phone,'tel:+1'+member.phone.replace(/\D/g,'')),document.createTextNode(' · '));contact.append(link('Profile',member.profile_url),document.createTextNode(' · '),link('Share this listing','lawmakers.html#'+member.id));article.append(contact);
  if(member.contact_note)article.append(element('p',member.contact_note,'review'));
@@ -29,7 +40,7 @@ function render(){
 }
 function filter(updateUrl=true){
  const query=byId('member-search').value.toLowerCase().trim().split(/\s+/).filter(Boolean),chamber=byId('chamber').value,party=byId('party').value,vote=byId('vote').value,role=byId('role').value;
- results=data.members.filter(m=>{const search=(m.name+' '+m.chamber+' District '+m.district+' '+(m.party||'')+' '+m.roles.map(r=>r.label).join(' ')).toLowerCase();return query.every(q=>search.includes(q))&&(!chamber||m.chamber===chamber)&&(!party||m.party===party)&&(!role||m.roles.some(r=>role==='leadership'?r.source.includes('/members/'):r.label.startsWith(role)))&&(!vote||(vote==='vacant'?m.vacant:!m.vacant&&(vote==='unrecorded'?!finalVote(m):finalVote(m)?.vote===vote)));});
+ results=data.members.filter(m=>{const search=(m.name+' '+m.chamber+' District '+m.district+' '+(m.party||'')+' '+m.roles.map(r=>r.label).join(' ')+' '+(m.sponsorships||[]).map(s=>s.bill+' '+s.role).join(' ')).toLowerCase();return query.every(q=>search.includes(q))&&(!chamber||m.chamber===chamber)&&(!party||m.party===party)&&(!role||(role==='HB 611'?(m.sponsorships||[]).some(x=>x.bill==='HB 611'):m.roles.some(r=>role==='leadership'?r.source.includes('/members/'):r.label.startsWith(role))))&&(!vote||(vote==='vacant'?m.vacant:!m.vacant&&(vote==='unrecorded'?!finalVote(m):finalVote(m)?.vote===vote)));});
  page=0;render();
  if(updateUrl){const url=new URL(location.href);for(const [key,id]of Object.entries(fields)){const value=byId(id).value;if(value)url.searchParams.set(key,value);else url.searchParams.delete(key);}url.hash='';history.replaceState(null,'',url);}
 }

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "checked_on": "2026-10-12",
   "general_assembly": 136,
-  "scope": "Ohio state House and Senate; current roster with historical SB 56 roll calls",
+  "scope": "Ohio state House and Senate; current roster with historical SB 56 roll calls, plus HB 611 sponsorships and roll calls",
   "role_scope": "Chamber leadership, SB 56 sponsorship, plus Judiciary, Finance, General Government, and Rules and Reference membership; not every committee.",
   "members": [
     {
@@ -31,6 +31,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-5",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -64,6 +68,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -102,11 +110,27 @@
         {
           "event_id": "sb56-house-2025-10-21-7",
           "vote": "Nay"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-2",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/ismail-mohamed",
       "contact_source": "https://ohiohouse.gov/members/ismail-mohamed",
-      "contact_evidence": "Phone: (614) 466-1896; Contact: https://ohiohouse.gov/members/ismail-mohamed/contact"
+      "contact_evidence": "Phone: (614) 466-1896; Contact: https://ohiohouse.gov/members/ismail-mohamed/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-04",
@@ -162,6 +186,14 @@
         {
           "event_id": "sb56-house-2025-10-21-7",
           "vote": "Nay"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-2",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/beryl-brown-piccolantonio",
@@ -189,11 +221,23 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/meredith-r-lawson-rowe",
       "contact_source": "https://ohiohouse.gov/members/meredith-r-lawson-rowe",
-      "contact_evidence": "Phone: (614) 644-6002; Contact: https://ohiohouse.gov/members/meredith-r-lawson-rowe/contact"
+      "contact_evidence": "Phone: (614) 644-6002; Contact: https://ohiohouse.gov/members/meredith-r-lawson-rowe/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-06",
@@ -212,11 +256,23 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Nay"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/christine-cockley",
       "contact_source": "https://ohiohouse.gov/members/christine-cockley",
-      "contact_evidence": "Phone: (614) 644-6005; Contact: https://ohiohouse.gov/members/christine-cockley/contact"
+      "contact_evidence": "Phone: (614) 644-6005; Contact: https://ohiohouse.gov/members/christine-cockley/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-07",
@@ -245,6 +301,10 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/c-allison-russo",
@@ -267,6 +327,10 @@
       "votes": [
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -305,11 +369,23 @@
         {
           "event_id": "sb56-house-2025-10-22-5",
           "vote": "Nay"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/munira-abdullahi",
       "contact_source": "https://ohiohouse.gov/members/munira-abdullahi",
-      "contact_evidence": "Phone: (614) 466-2473; Contact: https://ohiohouse.gov/members/munira-abdullahi/contact"
+      "contact_evidence": "Phone: (614) 466-2473; Contact: https://ohiohouse.gov/members/munira-abdullahi/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-10",
@@ -338,11 +414,23 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/mark-sigrist",
       "contact_source": "https://ohiohouse.gov/members/mark-sigrist",
-      "contact_evidence": "Phone: (614) 466-9690; Contact: https://ohiohouse.gov/members/mark-sigrist/contact"
+      "contact_evidence": "Phone: (614) 466-9690; Contact: https://ohiohouse.gov/members/mark-sigrist/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-11",
@@ -360,6 +448,10 @@
       "votes": [
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -412,11 +504,27 @@
         {
           "event_id": "sb56-house-2025-10-21-7",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-2",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/brian-stewart",
       "contact_source": "https://ohiohouse.gov/members/brian-stewart",
-      "contact_evidence": "Phone: (614) 466-1464; Contact: https://ohiohouse.gov/members/brian-stewart/contact"
+      "contact_evidence": "Phone: (614) 466-1464; Contact: https://ohiohouse.gov/members/brian-stewart/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Primary sponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-13",
@@ -434,6 +542,10 @@
       "votes": [
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -468,11 +580,23 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/sean-p-brennan",
       "contact_source": "https://ohiohouse.gov/members/sean-p-brennan",
-      "contact_evidence": "Phone: (614) 466-3485; Contact: https://ohiohouse.gov/members/sean-p-brennan/contact"
+      "contact_evidence": "Phone: (614) 466-3485; Contact: https://ohiohouse.gov/members/sean-p-brennan/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-15",
@@ -505,11 +629,23 @@
         {
           "event_id": "sb56-house-2025-10-22-5",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/chris-glassburn",
       "contact_source": "https://ohiohouse.gov/members/chris-glassburn",
-      "contact_evidence": "Phone: (614) 466-3100; Contact: https://ohiohouse.gov/members/chris-glassburn/contact"
+      "contact_evidence": "Phone: (614) 466-3100; Contact: https://ohiohouse.gov/members/chris-glassburn/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-16",
@@ -541,6 +677,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-5",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -579,6 +719,10 @@
         {
           "event_id": "sb56-house-2025-10-22-5",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/michael-d-dovilla",
@@ -608,11 +752,23 @@
         {
           "event_id": "sb56-house-2025-11-19-2",
           "vote": "Nay"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/juanita-o-brent",
       "contact_source": "https://ohiohouse.gov/members/juanita-o-brent",
-      "contact_evidence": "Phone: (614) 466-1408; Contact: https://ohiohouse.gov/members/juanita-o-brent/contact"
+      "contact_evidence": "Phone: (614) 466-1408; Contact: https://ohiohouse.gov/members/juanita-o-brent/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-19",
@@ -658,6 +814,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-21-6",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -733,11 +893,27 @@
         {
           "event_id": "sb56-house-2025-10-21-7",
           "vote": "Nay"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-2",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/eric-synenberg",
       "contact_source": "https://ohiohouse.gov/members/eric-synenberg",
-      "contact_evidence": "Phone: (614) 644-5079; Contact: https://ohiohouse.gov/members/eric-synenberg/contact"
+      "contact_evidence": "Phone: (614) 644-5079; Contact: https://ohiohouse.gov/members/eric-synenberg/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-22",
@@ -765,6 +941,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -798,6 +978,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-5",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -841,11 +1025,23 @@
         {
           "event_id": "sb56-house-2025-10-21-6",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/dani-isaacsohn",
       "contact_source": "https://ohiohouse.gov/members/dani-isaacsohn",
-      "contact_evidence": "Phone: (614) 466-5786; Contact: https://ohiohouse.gov/members/dani-isaacsohn/contact"
+      "contact_evidence": "Phone: (614) 466-5786; Contact: https://ohiohouse.gov/members/dani-isaacsohn/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-25",
@@ -867,6 +1063,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -901,11 +1101,23 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/ashley-bryant-bailey",
       "contact_source": "https://ohiohouse.gov/members/ashley-bryant-bailey",
-      "contact_evidence": "Phone: (614) 466-1308; Contact: https://ohiohouse.gov/members/ashley-bryant-bailey/contact"
+      "contact_evidence": "Phone: (614) 466-1308; Contact: https://ohiohouse.gov/members/ashley-bryant-bailey/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-27",
@@ -937,6 +1149,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-5",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -1008,11 +1224,23 @@
         {
           "event_id": "sb56-house-2025-10-22-5",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/cindy-abrams",
       "contact_source": "https://ohiohouse.gov/members/cindy-abrams",
-      "contact_evidence": "Phone: (614) 466-9091; Contact: https://ohiohouse.gov/members/cindy-abrams/contact"
+      "contact_evidence": "Phone: (614) 466-9091; Contact: https://ohiohouse.gov/members/cindy-abrams/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-30",
@@ -1050,11 +1278,27 @@
         {
           "event_id": "sb56-house-2025-10-21-7",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-2",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/mike-odioso",
       "contact_source": "https://ohiohouse.gov/members/mike-odioso",
-      "contact_evidence": "Phone: (614) 466-8258; Contact: https://ohiohouse.gov/members/mike-odioso/contact"
+      "contact_evidence": "Phone: (614) 466-8258; Contact: https://ohiohouse.gov/members/mike-odioso/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-31",
@@ -1087,6 +1331,10 @@
         {
           "event_id": "sb56-house-2025-10-22-5",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/bill-roemer",
@@ -1113,6 +1361,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -1151,11 +1403,23 @@
         {
           "event_id": "sb56-house-2025-10-22-5",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/veronica-r-sims",
       "contact_source": "https://ohiohouse.gov/members/veronica-r-sims",
-      "contact_evidence": "Phone: (614) 644-6037; Contact: https://ohiohouse.gov/members/veronica-r-sims/contact"
+      "contact_evidence": "Phone: (614) 644-6037; Contact: https://ohiohouse.gov/members/veronica-r-sims/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-34",
@@ -1244,6 +1508,10 @@
         {
           "event_id": "sb56-house-2025-10-22-5",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/andrea-white",
@@ -1285,6 +1553,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-5",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -1337,11 +1609,27 @@
         {
           "event_id": "sb56-house-2025-10-21-7",
           "vote": "Nay"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-2",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/desiree-tims",
       "contact_source": "https://ohiohouse.gov/members/desiree-tims",
-      "contact_evidence": "Phone: (614) 466-1607; Contact: https://ohiohouse.gov/members/desiree-tims/contact"
+      "contact_evidence": "Phone: (614) 466-1607; Contact: https://ohiohouse.gov/members/desiree-tims/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-39",
@@ -1407,6 +1695,14 @@
         {
           "event_id": "sb56-house-2025-10-21-7",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-2",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/phil-plummer",
@@ -1433,6 +1729,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -1461,6 +1761,10 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/erika-white",
@@ -1483,6 +1787,10 @@
       "votes": [
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -1517,11 +1825,23 @@
         {
           "event_id": "sb56-house-2025-10-22-5",
           "vote": "Nay"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/michele-grim",
       "contact_source": "https://ohiohouse.gov/members/michele-grim",
-      "contact_evidence": "Phone: (614) 644-6017; Contact: https://ohiohouse.gov/members/michele-grim/contact"
+      "contact_evidence": "Phone: (614) 644-6017; Contact: https://ohiohouse.gov/members/michele-grim/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-44",
@@ -1582,11 +1902,27 @@
         {
           "event_id": "sb56-house-2025-10-21-7",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-2",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/josh-williams",
       "contact_source": "https://ohiohouse.gov/members/josh-williams",
-      "contact_evidence": "Phone: (614) 466-1418; Contact: https://ohiohouse.gov/members/josh-williams/contact"
+      "contact_evidence": "Phone: (614) 466-1418; Contact: https://ohiohouse.gov/members/josh-williams/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-45",
@@ -1609,6 +1945,10 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Nay"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/jennifer-gross",
@@ -1646,6 +1986,10 @@
         {
           "event_id": "sb56-house-2025-10-22-5",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/thomas-hall",
@@ -1665,7 +2009,12 @@
       "phone": "(614) 644-6721",
       "contact_url": "https://ohiohouse.gov/members/diane-mullins/contact",
       "roles": [],
-      "votes": [],
+      "votes": [
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Nay"
+        }
+      ],
       "phone_source": "https://ohiohouse.gov/members/diane-mullins",
       "contact_source": "https://ohiohouse.gov/members/diane-mullins",
       "contact_evidence": "Phone: (614) 644-6721; Contact: https://ohiohouse.gov/members/diane-mullins/contact"
@@ -1701,6 +2050,14 @@
         },
         {
           "event_id": "sb56-house-2025-10-21-7",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-2",
           "vote": "Yea"
         }
       ],
@@ -1748,6 +2105,14 @@
         {
           "event_id": "sb56-house-2025-10-21-7",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-2",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/jim-thomas",
@@ -1774,6 +2139,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -1802,11 +2171,23 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/jodi-salvo",
       "contact_source": "https://ohiohouse.gov/members/jodi-salvo",
-      "contact_evidence": "Phone: (614) 466-8035; Contact: https://ohiohouse.gov/members/jodi-salvo/contact"
+      "contact_evidence": "Phone: (614) 466-8035; Contact: https://ohiohouse.gov/members/jodi-salvo/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-52",
@@ -1858,6 +2239,10 @@
         {
           "event_id": "sb56-house-2025-10-21-6",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/gayle-manning",
@@ -1884,6 +2269,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -1912,6 +2301,10 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/kellie-deeter",
@@ -1939,6 +2332,10 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Nay"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/michelle-teska",
@@ -1976,11 +2373,27 @@
         {
           "event_id": "sb56-house-2025-10-21-7",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-2",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/adam-mathews",
       "contact_source": "https://ohiohouse.gov/members/adam-mathews",
-      "contact_evidence": "Phone: (614) 644-6027; Contact: https://ohiohouse.gov/members/adam-mathews/contact"
+      "contact_evidence": "Phone: (614) 644-6027; Contact: https://ohiohouse.gov/members/adam-mathews/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-57",
@@ -2027,11 +2440,27 @@
         {
           "event_id": "sb56-house-2025-10-21-7",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-2",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/jamie-callender",
       "contact_source": "https://ohiohouse.gov/members/jamie-callender",
-      "contact_evidence": "Phone: (614) 644-6074; Contact: https://ohiohouse.gov/members/jamie-callender/contact"
+      "contact_evidence": "Phone: (614) 644-6074; Contact: https://ohiohouse.gov/members/jamie-callender/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Primary sponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-58",
@@ -2053,6 +2482,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -2081,11 +2514,23 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/tex-fischer",
       "contact_source": "https://ohiohouse.gov/members/tex-fischer",
-      "contact_evidence": "Phone: (614) 466-6107; Contact: https://ohiohouse.gov/members/tex-fischer/contact"
+      "contact_evidence": "Phone: (614) 466-6107; Contact: https://ohiohouse.gov/members/tex-fischer/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-60",
@@ -2107,6 +2552,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -2130,6 +2579,10 @@
       "votes": [
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -2167,6 +2620,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-5",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -2223,6 +2680,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-21-6",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -2302,6 +2763,10 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/david-thomas",
@@ -2348,6 +2813,10 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/melanie-miller",
@@ -2375,6 +2844,10 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Nay"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/thaddeus-j-claggett",
@@ -2408,6 +2881,10 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/kevin-d-miller",
@@ -2434,6 +2911,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -2462,6 +2943,10 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Nay"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/levi-dean",
@@ -2488,6 +2973,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -2521,6 +3010,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -2564,11 +3057,23 @@
         {
           "event_id": "sb56-house-2025-10-22-5",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/bernard-willis",
       "contact_source": "https://ohiohouse.gov/members/bernard-willis",
-      "contact_evidence": "Phone: (614) 466-2038; Contact: https://ohiohouse.gov/members/bernard-willis/contact"
+      "contact_evidence": "Phone: (614) 466-2038; Contact: https://ohiohouse.gov/members/bernard-willis/contact",
+      "sponsorships": [
+        {
+          "bill": "HB 611",
+          "role": "Cosponsor",
+          "source": "https://ohiohouse.gov/legislation/136/hb611",
+          "checked_on": "2026-11-24"
+        }
+      ]
     },
     {
       "id": "house-75",
@@ -2591,6 +3096,10 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Nay"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/haraz-n-ghanbari",
@@ -2652,6 +3161,10 @@
         {
           "event_id": "sb56-house-2025-10-21-6",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/marilyn-john",
@@ -2678,6 +3191,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -2721,6 +3238,10 @@
         {
           "event_id": "sb56-house-2025-10-21-6",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/matt-huffman",
@@ -2747,6 +3268,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -2818,6 +3343,10 @@
         {
           "event_id": "sb56-house-2025-10-22-5",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/james-m-hoops",
@@ -2844,6 +3373,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -2872,6 +3405,10 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/ty-d-mathews",
@@ -2899,6 +3436,10 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Nay"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/angela-n-king",
@@ -2926,6 +3467,10 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Nay"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/tim-barhorst",
@@ -2952,6 +3497,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -3000,6 +3549,10 @@
         {
           "event_id": "sb56-house-2025-10-21-6",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Nay"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/riordan-t-mcclain",
@@ -3065,6 +3618,10 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/justin-pizzulli",
@@ -3091,6 +3648,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -3129,6 +3690,10 @@
         {
           "event_id": "sb56-house-2025-10-22-5",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/mark-johnson",
@@ -3155,6 +3720,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -3193,6 +3762,10 @@
         {
           "event_id": "sb56-house-2025-10-22-5",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/kevin-ritter",
@@ -3220,6 +3793,10 @@
         {
           "event_id": "sb56-house-2025-10-22-4",
           "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
         }
       ],
       "phone_source": "https://ohiohouse.gov/members/ty-moore",
@@ -3239,7 +3816,12 @@
       "phone": "(614) 466-3735",
       "contact_url": "https://ohiohouse.gov/members/ron-ferguson/contact",
       "roles": [],
-      "votes": [],
+      "votes": [
+        {
+          "event_id": "hb611-house-2026-06-10-1",
+          "vote": "Yea"
+        }
+      ],
       "phone_source": "https://ohiohouse.gov/members/ron-ferguson",
       "contact_source": "https://ohiohouse.gov/members/ron-ferguson",
       "contact_evidence": "Phone: (614) 466-3735; Contact: https://ohiohouse.gov/members/ron-ferguson/contact"
@@ -3264,6 +3846,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -3291,6 +3877,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -3324,6 +3914,10 @@
         },
         {
           "event_id": "sb56-house-2025-10-22-4",
+          "vote": "Yea"
+        },
+        {
+          "event_id": "hb611-house-2026-06-10-1",
           "vote": "Yea"
         }
       ],
@@ -6507,6 +7101,573 @@
       "source": "https://ohiohouse.gov/legislation/136/sb56/votes",
       "status_source": "https://ohiohouse.gov/legislation/136/sb56/status",
       "checked_on": "2026-10-12"
+    },
+    {
+      "id": "hb611-house-2026-06-10-1",
+      "bill": "HB 611",
+      "general_assembly": 136,
+      "chamber": "House",
+      "date": "2026-06-10",
+      "stage": "Floor passage",
+      "official_action": "Passed",
+      "is_final_agreement": false,
+      "yeas": 87,
+      "nays": 5,
+      "source": "https://ohiohouse.gov/legislation/136/hb611/votes",
+      "status_source": "https://ohiohouse.gov/legislation/136/hb611/status",
+      "checked_on": "2026-11-24",
+      "voters": [
+        {
+          "name_as_recorded": "Munira Abdullahi",
+          "vote": "Yea",
+          "current_member_id": "house-09"
+        },
+        {
+          "name_as_recorded": "Cindy Abrams",
+          "vote": "Yea",
+          "current_member_id": "house-29"
+        },
+        {
+          "name_as_recorded": "Rachel B. Baker",
+          "vote": "Yea",
+          "current_member_id": "house-27"
+        },
+        {
+          "name_as_recorded": "Tim Barhorst",
+          "vote": "Yea",
+          "current_member_id": "house-85"
+        },
+        {
+          "name_as_recorded": "Adam C. Bird",
+          "vote": "Yea",
+          "current_member_id": "house-63"
+        },
+        {
+          "name_as_recorded": "Sean P. Brennan",
+          "vote": "Yea",
+          "current_member_id": "house-14"
+        },
+        {
+          "name_as_recorded": "Juanita O. Brent",
+          "vote": "Yea",
+          "current_member_id": "house-18"
+        },
+        {
+          "name_as_recorded": "Darnell T. Brewer",
+          "vote": "Yea",
+          "current_member_id": "house-22"
+        },
+        {
+          "name_as_recorded": "Ashley Bryant Bailey",
+          "vote": "Yea",
+          "current_member_id": "house-26"
+        },
+        {
+          "name_as_recorded": "Jamie Callender",
+          "vote": "Yea",
+          "current_member_id": "house-57"
+        },
+        {
+          "name_as_recorded": "Christine Cockley",
+          "vote": "Yea",
+          "current_member_id": "house-06"
+        },
+        {
+          "name_as_recorded": "Meredith Craig",
+          "vote": "Yea",
+          "current_member_id": "house-77"
+        },
+        {
+          "name_as_recorded": "Rodney Creech",
+          "vote": "Yea",
+          "current_member_id": "house-40"
+        },
+        {
+          "name_as_recorded": "Jack K. Daniels",
+          "vote": "Yea",
+          "current_member_id": "house-32"
+        },
+        {
+          "name_as_recorded": "Levi Dean",
+          "vote": "Yea",
+          "current_member_id": "house-71"
+        },
+        {
+          "name_as_recorded": "Kellie Deeter",
+          "vote": "Yea",
+          "current_member_id": "house-54"
+        },
+        {
+          "name_as_recorded": "Michael D. Dovilla",
+          "vote": "Yea",
+          "current_member_id": "house-17"
+        },
+        {
+          "name_as_recorded": "Ron Ferguson",
+          "vote": "Yea",
+          "current_member_id": "house-96"
+        },
+        {
+          "name_as_recorded": "Tex Fischer",
+          "vote": "Yea",
+          "current_member_id": "house-59"
+        },
+        {
+          "name_as_recorded": "Sarah Fowler Arthur",
+          "vote": "Yea",
+          "current_member_id": "house-99"
+        },
+        {
+          "name_as_recorded": "Chris Glassburn",
+          "vote": "Yea",
+          "current_member_id": "house-15"
+        },
+        {
+          "name_as_recorded": "Michele Grim",
+          "vote": "Yea",
+          "current_member_id": "house-43"
+        },
+        {
+          "name_as_recorded": "Jennifer Gross",
+          "vote": "Yea",
+          "current_member_id": "house-45"
+        },
+        {
+          "name_as_recorded": "Thomas Hall",
+          "vote": "Yea",
+          "current_member_id": "house-46"
+        },
+        {
+          "name_as_recorded": "Mark Hiner",
+          "vote": "Yea",
+          "current_member_id": "house-98"
+        },
+        {
+          "name_as_recorded": "Adam Holmes",
+          "vote": "Yea",
+          "current_member_id": "house-97"
+        },
+        {
+          "name_as_recorded": "James M. Hoops",
+          "vote": "Yea",
+          "current_member_id": "house-81"
+        },
+        {
+          "name_as_recorded": "Matt Huffman",
+          "vote": "Yea",
+          "current_member_id": "house-78"
+        },
+        {
+          "name_as_recorded": "Latyna M. Humphrey",
+          "vote": "Yea",
+          "current_member_id": "house-02"
+        },
+        {
+          "name_as_recorded": "Dani Isaacsohn",
+          "vote": "Yea",
+          "current_member_id": "house-24"
+        },
+        {
+          "name_as_recorded": "Dontavius L. Jarrells",
+          "vote": "Yea",
+          "current_member_id": "house-01"
+        },
+        {
+          "name_as_recorded": "Marilyn John",
+          "vote": "Yea",
+          "current_member_id": "house-76"
+        },
+        {
+          "name_as_recorded": "Mark Johnson",
+          "vote": "Yea",
+          "current_member_id": "house-92"
+        },
+        {
+          "name_as_recorded": "Matthew Kishman",
+          "vote": "Yea",
+          "current_member_id": "house-50"
+        },
+        {
+          "name_as_recorded": "Roy Klopfenstein",
+          "vote": "Yea",
+          "current_member_id": "house-82"
+        },
+        {
+          "name_as_recorded": "Jeff LaRe",
+          "vote": "Yea",
+          "current_member_id": "house-73"
+        },
+        {
+          "name_as_recorded": "Brian Lampton",
+          "vote": "Yea",
+          "current_member_id": "house-70"
+        },
+        {
+          "name_as_recorded": "Meredith R. Lawson-Rowe",
+          "vote": "Yea",
+          "current_member_id": "house-05"
+        },
+        {
+          "name_as_recorded": "Beth Lear",
+          "vote": "Yea",
+          "current_member_id": "house-61"
+        },
+        {
+          "name_as_recorded": "Crystal Lett",
+          "vote": "Yea",
+          "current_member_id": "house-11"
+        },
+        {
+          "name_as_recorded": "Brian Lorenz",
+          "vote": "Yea",
+          "current_member_id": "house-60"
+        },
+        {
+          "name_as_recorded": "Gayle Manning",
+          "vote": "Yea",
+          "current_member_id": "house-52"
+        },
+        {
+          "name_as_recorded": "Adam Mathews",
+          "vote": "Yea",
+          "current_member_id": "house-56"
+        },
+        {
+          "name_as_recorded": "Ty D. Mathews",
+          "vote": "Yea",
+          "current_member_id": "house-83"
+        },
+        {
+          "name_as_recorded": "Lauren McNally",
+          "vote": "Yea",
+          "current_member_id": "house-58"
+        },
+        {
+          "name_as_recorded": "Joseph A. Miller, III",
+          "vote": "Yea",
+          "current_member_id": "house-53"
+        },
+        {
+          "name_as_recorded": "Kevin D. Miller",
+          "vote": "Yea",
+          "current_member_id": "house-69"
+        },
+        {
+          "name_as_recorded": "Melanie Miller",
+          "vote": "Yea",
+          "current_member_id": "house-67"
+        },
+        {
+          "name_as_recorded": "Ismail Mohamed",
+          "vote": "Yea",
+          "current_member_id": "house-03"
+        },
+        {
+          "name_as_recorded": "Ty Moore",
+          "vote": "Yea",
+          "current_member_id": "house-95"
+        },
+        {
+          "name_as_recorded": "Mike Odioso",
+          "vote": "Yea",
+          "current_member_id": "house-30"
+        },
+        {
+          "name_as_recorded": "Scott Oelslager",
+          "vote": "Yea",
+          "current_member_id": "house-48"
+        },
+        {
+          "name_as_recorded": "Bob Peterson",
+          "vote": "Yea",
+          "current_member_id": "house-91"
+        },
+        {
+          "name_as_recorded": "Beryl Brown Piccolantonio",
+          "vote": "Yea",
+          "current_member_id": "house-04"
+        },
+        {
+          "name_as_recorded": "Justin Pizzulli",
+          "vote": "Yea",
+          "current_member_id": "house-90"
+        },
+        {
+          "name_as_recorded": "Phil Plummer",
+          "vote": "Yea",
+          "current_member_id": "house-39"
+        },
+        {
+          "name_as_recorded": "Tristan Rader",
+          "vote": "Yea",
+          "current_member_id": "house-13"
+        },
+        {
+          "name_as_recorded": "Sharon A. Ray",
+          "vote": "Yea",
+          "current_member_id": null
+        },
+        {
+          "name_as_recorded": "Tracy M. Richardson",
+          "vote": "Yea",
+          "current_member_id": "house-86"
+        },
+        {
+          "name_as_recorded": "Kevin Ritter",
+          "vote": "Yea",
+          "current_member_id": "house-94"
+        },
+        {
+          "name_as_recorded": "Monica Robb Blasdel",
+          "vote": "Yea",
+          "current_member_id": "house-79"
+        },
+        {
+          "name_as_recorded": "Phillip M. Robinson, Jr.",
+          "vote": "Yea",
+          "current_member_id": "house-19"
+        },
+        {
+          "name_as_recorded": "Bill Roemer",
+          "vote": "Yea",
+          "current_member_id": "house-31"
+        },
+        {
+          "name_as_recorded": "Elgin Rogers, Jr.",
+          "vote": "Yea",
+          "current_member_id": "house-42"
+        },
+        {
+          "name_as_recorded": "C. Allison Russo",
+          "vote": "Yea",
+          "current_member_id": "house-07"
+        },
+        {
+          "name_as_recorded": "Jodi Salvo",
+          "vote": "Yea",
+          "current_member_id": "house-51"
+        },
+        {
+          "name_as_recorded": "Jean Schmidt",
+          "vote": "Yea",
+          "current_member_id": "house-62"
+        },
+        {
+          "name_as_recorded": "Mark Sigrist",
+          "vote": "Yea",
+          "current_member_id": "house-10"
+        },
+        {
+          "name_as_recorded": "Veronica R. Sims",
+          "vote": "Yea",
+          "current_member_id": "house-33"
+        },
+        {
+          "name_as_recorded": "Anita Somani",
+          "vote": "Yea",
+          "current_member_id": "house-08"
+        },
+        {
+          "name_as_recorded": "Jason Stephens",
+          "vote": "Yea",
+          "current_member_id": "house-93"
+        },
+        {
+          "name_as_recorded": "Brian Stewart",
+          "vote": "Yea",
+          "current_member_id": "house-12"
+        },
+        {
+          "name_as_recorded": "D. J. Swearingen",
+          "vote": "Yea",
+          "current_member_id": null
+        },
+        {
+          "name_as_recorded": "Bride Rose Sweeney",
+          "vote": "Yea",
+          "current_member_id": "house-16"
+        },
+        {
+          "name_as_recorded": "Eric Synenberg",
+          "vote": "Yea",
+          "current_member_id": "house-21"
+        },
+        {
+          "name_as_recorded": "Michelle Teska",
+          "vote": "Yea",
+          "current_member_id": "house-55"
+        },
+        {
+          "name_as_recorded": "Cecil Thomas",
+          "vote": "Yea",
+          "current_member_id": "house-25"
+        },
+        {
+          "name_as_recorded": "David Thomas",
+          "vote": "Yea",
+          "current_member_id": "house-65"
+        },
+        {
+          "name_as_recorded": "Jim Thomas",
+          "vote": "Yea",
+          "current_member_id": "house-49"
+        },
+        {
+          "name_as_recorded": "Desiree Tims",
+          "vote": "Yea",
+          "current_member_id": "house-38"
+        },
+        {
+          "name_as_recorded": "Daniel P. Troy",
+          "vote": "Yea",
+          "current_member_id": "house-23"
+        },
+        {
+          "name_as_recorded": "Andrea White",
+          "vote": "Yea",
+          "current_member_id": "house-36"
+        },
+        {
+          "name_as_recorded": "Erika White",
+          "vote": "Yea",
+          "current_member_id": "house-41"
+        },
+        {
+          "name_as_recorded": "Josh Williams",
+          "vote": "Yea",
+          "current_member_id": "house-44"
+        },
+        {
+          "name_as_recorded": "Bernard Willis",
+          "vote": "Yea",
+          "current_member_id": "house-74"
+        },
+        {
+          "name_as_recorded": "Heidi Workman",
+          "vote": "Yea",
+          "current_member_id": "house-72"
+        },
+        {
+          "name_as_recorded": "Tom Young",
+          "vote": "Yea",
+          "current_member_id": "house-37"
+        },
+        {
+          "name_as_recorded": "Thaddeus J. Claggett",
+          "vote": "Nay",
+          "current_member_id": "house-68"
+        },
+        {
+          "name_as_recorded": "Haraz N. Ghanbari",
+          "vote": "Nay",
+          "current_member_id": "house-75"
+        },
+        {
+          "name_as_recorded": "Angela N. King",
+          "vote": "Nay",
+          "current_member_id": "house-84"
+        },
+        {
+          "name_as_recorded": "Riordan T. McClain",
+          "vote": "Nay",
+          "current_member_id": "house-87"
+        },
+        {
+          "name_as_recorded": "Diane Mullins",
+          "vote": "Nay",
+          "current_member_id": "house-47"
+        }
+      ]
+    },
+    {
+      "id": "hb611-house-2026-06-10-2",
+      "bill": "HB 611",
+      "general_assembly": 136,
+      "chamber": "House",
+      "date": "2026-06-10",
+      "stage": "Committee action (Judiciary) — favorable passage",
+      "official_action": "Favorable Passage",
+      "is_final_agreement": false,
+      "yeas": 13,
+      "nays": 0,
+      "source": "https://ohiohouse.gov/legislation/136/hb611/votes",
+      "status_source": "https://ohiohouse.gov/legislation/136/hb611/status",
+      "checked_on": "2026-11-24",
+      "voters": [
+        {
+          "name_as_recorded": "Jamie Callender",
+          "vote": "Yea",
+          "current_member_id": "house-57"
+        },
+        {
+          "name_as_recorded": "Adam Mathews",
+          "vote": "Yea",
+          "current_member_id": "house-56"
+        },
+        {
+          "name_as_recorded": "Ismail Mohamed",
+          "vote": "Yea",
+          "current_member_id": "house-03"
+        },
+        {
+          "name_as_recorded": "Mike Odioso",
+          "vote": "Yea",
+          "current_member_id": "house-30"
+        },
+        {
+          "name_as_recorded": "Scott Oelslager",
+          "vote": "Yea",
+          "current_member_id": "house-48"
+        },
+        {
+          "name_as_recorded": "Beryl Brown Piccolantonio",
+          "vote": "Yea",
+          "current_member_id": "house-04"
+        },
+        {
+          "name_as_recorded": "Phil Plummer",
+          "vote": "Yea",
+          "current_member_id": "house-39"
+        },
+        {
+          "name_as_recorded": "Brian Stewart",
+          "vote": "Yea",
+          "current_member_id": "house-12"
+        },
+        {
+          "name_as_recorded": "D. J. Swearingen",
+          "vote": "Yea",
+          "current_member_id": null
+        },
+        {
+          "name_as_recorded": "Eric Synenberg",
+          "vote": "Yea",
+          "current_member_id": "house-21"
+        },
+        {
+          "name_as_recorded": "Jim Thomas",
+          "vote": "Yea",
+          "current_member_id": "house-49"
+        },
+        {
+          "name_as_recorded": "Desiree Tims",
+          "vote": "Yea",
+          "current_member_id": "house-38"
+        },
+        {
+          "name_as_recorded": "Josh Williams",
+          "vote": "Yea",
+          "current_member_id": "house-44"
+        }
+      ]
     }
-  ]
+  ],
+  "bill_records": {
+    "HB 611": {
+      "title": "Issue medical marijuana processor cultivation, dispensary license",
+      "source": "https://ohiohouse.gov/legislation/136/hb611",
+      "checked_on": "2026-11-24",
+      "note": "Sponsorships and roll calls are matched to the current roster by exact name. Members not on the roster checked 2026-10-12 keep their recorded name with no current district."
+    }
+  }
 }

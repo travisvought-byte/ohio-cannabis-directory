@@ -169,7 +169,20 @@
       "intro": "At the counter, or about to order, and not sure what rosin, live resin or a lab report means? Look it up here in plain language, then use the buying checklist."
     },
     "lawmakers.html": {
-      "intro": "Want to tell your Ohio representative and senator what you think about cannabis law? Search the full roster, see how each member voted on SB 56, open an official contact page and prepare a letter."
+      "title": "Ohio lawmakers, their cannabis votes, and who is on the record",
+      "description": "Every Ohio legislator with their SB 56 and HB 611 record, plus who testified and lobbied on Ohio’s cannabis bills, from the official records.",
+      "intro": "Want to tell your Ohio representative and senator what you think about cannabis law? Search the full roster, see each member’s SB 56 votes and HB 611 record, open an official contact page and prepare a letter. Further down, see who testified and lobbied on these bills, in their own words.",
+      "sections": {
+        "on-the-record": {
+          "heading": "On the record: who testified and who lobbied",
+          "intro": "Before you write, see who has already spoken to lawmakers on these bills. This section lists every witness the General Assembly recorded on SB 56, HB 160 and HB 611, with their stated position and a line in their own words. A companion page shows who lobbied on each bill, the Ohio Cannabis Coalition’s profile and the tax filings of the groups that testified. Every group appears in the same format, and every entry links to the official record."
+        }
+      }
+    },
+    "on-the-record.html": {
+      "title": "Who lobbied Ohio’s cannabis bills: SB 56, HB 160, HB 611",
+      "description": "Lobbying reports, the Ohio Cannabis Coalition’s profile and members, and IRS Form 990 filings of the groups that testified on Ohio’s cannabis bills.",
+      "intro": "Want to know who is working on Ohio’s cannabis bills besides the people who testified? This page lists every employer whose registered lobbyists reported SB 56, HB 160 or HB 611, the Ohio Cannabis Coalition’s own record and member companies, and what the trade and advocacy groups that testified report on their tax returns. Each entry comes from the official filing and links to it."
     },
     "locations.html": {
       "title": "Find an Ohio dispensary near you",

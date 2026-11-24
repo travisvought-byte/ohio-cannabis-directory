@@ -40,6 +40,10 @@ def validate():
         for role in m['roles']:
             assert role['label'] and role['checked_on'] == data['checked_on']
             official(role['source'])
+        for sponsorship in m.get('sponsorships', []):
+            assert sponsorship['bill'] in data['bill_records'] and sponsorship['role'] in ('Primary sponsor', 'Cosponsor')
+            official(sponsorship['source'])
+            assert sponsorship['checked_on'] == data['bill_records'][sponsorship['bill']]['checked_on']
         for vote in m['votes']:
             event = events[vote['event_id']]
             assert event['chamber'] == m['chamber']
@@ -56,9 +60,11 @@ def validate():
                 member = by_id[vote['current_member_id']]
                 assert normalize(member['name']) == normalize(vote['name_as_recorded'])
                 assert not member['vacant'] and member['chamber'] == event['chamber']
+        assert event['bill'] in ('SB 56', *data.get('bill_records', {}))
         if event['is_final_agreement']:
+            assert event['bill'] == 'SB 56'
             assert (event['chamber'], event['date']) in [('House', '2025-11-19'), ('Senate', '2025-12-09')]
-    print('PASS: all 132 districts, official contacts and role sources, roll-call totals, exact identity attribution and vacancy boundaries.')
+    print('PASS: all 132 districts, official contacts and role sources, sponsorships, roll-call totals, exact identity attribution and vacancy boundaries.')
 
 if __name__ == '__main__':
     validate()

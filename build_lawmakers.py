@@ -1,11 +1,20 @@
-"""Build a lightweight searchable roster with a complete non-JS fallback."""
+"""Build a lightweight searchable roster with a complete non-JS fallback, and the committee
+testimony from data/on-the-record.json rendered as plain HTML (on_the_record.py) so it reads
+without JavaScript and on every site that mirrors this page."""
 import html
 import json
 from pathlib import Path
-from directory_brand import brand_page
+from directory_brand import brand_page, landing
+from on_the_record import CSS, lawmakers_section
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'lawmakers.html'
+
+
+def on_the_record():
+    text = landing('lawmakers.html')['sections']['on-the-record']
+    return lawmakers_section(text['heading'], text['intro'])
+
 
 def main():
     data = json.loads((ROOT / 'data/legislators.json').read_text())
@@ -23,8 +32,10 @@ def main():
                            phone +
                            f'<a href="advocacy.html?member={member["id"]}#write">Write a letter</a></li>')
     page = (ROOT / 'templates/lawmakers.html').read_text().replace('__ROSTER__', ''.join(entries)).replace('__CHECKED__', data['checked_on'])
+    page = page.replace('__ON_THE_RECORD__', on_the_record()).replace('__OTR_CSS__', CSS)
     OUT.write_text(brand_page(page, OUT.name))
-    print('Built lawmakers.html:', len(entries), 'districts with complete fallback')
+    print('Built lawmakers.html:', len(entries), 'districts with complete fallback and the on-the-record section')
+
 
 if __name__ == '__main__':
     main()
