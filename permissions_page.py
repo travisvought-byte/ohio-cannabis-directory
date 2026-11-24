@@ -48,6 +48,11 @@ body .glance .glance-pick{background:none;border:0;color:#a90000;padding:3px 0;m
 @media(max-width:700px){.perm-cells.two{grid-template-columns:1fr}.perm-cells.two .perm-cell+.perm-cell{border-top:1px solid #ddd;padding-top:8px}}
 '''
 
+# The same status symbol as the-reefer.com's map and chips (status_symbols.py), so an answer never rests on
+# color alone; medical only and limited share a color here and differ by symbol.
+from status_symbols import chip_css  # noqa: E402
+CSS += chip_css() + '\n'
+
 
 def esc(value):
     return html.escape(str(value), quote=True)

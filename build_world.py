@@ -13,6 +13,7 @@ from pathlib import Path
 
 import build_national as nat
 from permissions_page import chip
+from site_visuals import KNOWLEDGE_ICONS, icon as knowledge_icon
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / 'data/world-permissions.json'
@@ -479,7 +480,9 @@ def learn_page():
             f'Reviewed {nat.long_date(k["reviewed_on"])}. For product literacy, not a personal treatment or dosing plan.</p>',
             f'<p class="onpage">{nav}</p>']
     for s in secs:
-        body.append(f'<h2 id="{nat.esc(s["id"])}">{nat.esc(s["title"])}</h2>')
+        # The same section icon as the Ohio knowledge hub (owner direction, November 24, 2026); hidden from screen readers.
+        mark_icon = f'<span class="hi">{knowledge_icon(KNOWLEDGE_ICONS[s["id"]])}</span>' if s['id'] in KNOWLEDGE_ICONS else ''
+        body.append(f'<h2 id="{nat.esc(s["id"])}" class="ih">{mark_icon}{nat.esc(s["title"])}</h2>')
         if s.get('lead'):
             body.append(f'<p>{nat.esc(s["lead"])}</p>')
         for it in s['items']:
@@ -493,7 +496,7 @@ def learn_page():
     return nat.shell('Cannabis 101: words, products, labels and safer use',
                      'THC, CBD, terpenes, flower, edibles, vapes, kief, hash, rosin, lab reports and safer use, explained in plain language with sources.',
                      ''.join(body), 'learn.html', 'Cannabis 101',
-                     ld=[nat.breadcrumbs([('Home', '')], 'learn.html', 'Cannabis 101')])
+                     ld=[nat.breadcrumbs([('Home', '')], 'learn.html', 'Cannabis 101')], css=nat.ICON_HEAD_CSS)
 
 
 def heritage_page(her, sources):

@@ -166,41 +166,23 @@ select{border-color:#5d6b64}}
 '''
 
 
-# A symbol on each map tile and key swatch, so a state's answer does not rest on color alone (WCAG 1.4.1;
-# owner direction, November 24, 2026): a check for allowed, a plus for medical only, a half circle for
-# limited or partial, an X for not permitted, a dashed ring for not yet reviewed. Line drawings from Lucide
-# (ISC license, https://lucide.dev), drawn in the tile's text color, so they show in Windows high contrast
-# where the tile colors do not. Screen readers already hear the answer in each tile's label.
-STATUS_SYMBOLS = {
-    ('allowed', 'positive', 'broad'): '<path d="M20 6 9 17l-5-5"/>',
-    ('medical-only',): '<path d="M5 12h14"/><path d="M12 5v14"/>',
-    ('limited', 'varies-locally', 'partial', 'starter'): '<circle cx="12" cy="12" r="10"/><path d="M12 18a6 6 0 0 0 0-12v12z"/>',
-    ('not-permitted', 'negative'): '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
-    ('not-reviewed', 'not-started'): ('<path d="M10.1 2.182a10 10 0 0 1 3.8 0"/><path d="M13.9 21.818a10 10 0 0 1-3.8 0"/>'
-                                      '<path d="M17.609 3.721a10 10 0 0 1 2.69 2.7"/><path d="M2.182 13.9a10 10 0 0 1 0-3.8"/>'
-                                      '<path d="M20.279 17.609a10 10 0 0 1-2.7 2.69"/><path d="M21.818 10.1a10 10 0 0 1 0 3.8"/>'
-                                      '<path d="M3.721 6.391a10 10 0 0 1 2.7-2.69"/><path d="M6.391 20.279a10 10 0 0 1-2.69-2.7"/>'),
-}
-
-
-def _symbol_url(inner):
-    from urllib.parse import quote
-    svg = ("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' "
-           "stroke-linecap='round' stroke-linejoin='round'>" + inner.replace('"', "'") + '</svg>')
-    return 'url("data:image/svg+xml,' + quote(svg, safe=" /:='.,-") + '")'
+# A symbol on each map tile, key swatch, answer chip and comparison bar, so a state's answer does not rest on
+# color alone (WCAG 1.4.1; owner direction, November 24, 2026). The symbols live in status_symbols.py, shared
+# with compare.html. Screen readers already hear the answer in each tile's label and each chip's words.
+from status_symbols import STATUS_SYMBOLS, chip_css, symbol_rules, symbol_url as _symbol_url  # noqa: E402
 
 
 def status_symbol_css():
     rules = ['.usmap .tile{align-content:center;gap:1px}'
-             '.usmap .tile::before,.legend .sw::before{content:"";display:block;background:currentColor;'
+             '.usmap .tile::before,.legend .sw::before,.spread .seg::before{content:"";display:block;background:currentColor;'
              '-webkit-mask:var(--sym) center/contain no-repeat;mask:var(--sym) center/contain no-repeat}'
              '.usmap .tile::before{width:.8em;height:.8em}'
-             '.legend .sw{display:inline-grid;place-items:center;color:#fff}.legend .sw::before{width:11px;height:11px}']
-    for tones, inner in STATUS_SYMBOLS.items():
-        rules.append(','.join(f'.tile.{t}::before,.sw.{t}::before' for t in tones) + '{--sym:' + _symbol_url(inner) + '}')
+             '.legend .sw{display:inline-grid;place-items:center;color:#fff}.legend .sw::before{width:11px;height:11px}'
+             '.spread .seg::before{flex:none;width:13px;height:13px}',
+             symbol_rules('tile', 'sw', 'seg', 'chip'), chip_css(with_symbols=False)]
     rules.append('@media (prefers-color-scheme:dark){.sw.not-reviewed,.sw.not-started{color:#d7ddd9}}')
     rules.append('@media (forced-colors:active){.usmap .tile::before{background:LinkText;forced-color-adjust:none}'
-                 '.legend .sw::before{background:CanvasText;forced-color-adjust:none}}')
+                 '.legend .sw::before,.spread .seg::before{background:CanvasText;forced-color-adjust:none}}')
     return '\n' + ''.join(rules) + '\n'
 
 
@@ -225,6 +207,10 @@ ICON_PATHS = {
     'swap': 'M4 9h14l-3-3M20 15H6l3 3',
     'cloud': 'M7 18a4 4 0 0 1-.6-7.96A5.5 5.5 0 0 1 17 9.1 4.5 4.5 0 0 1 17 18z',
     'car': 'M3 16v-4l2.2-5h13.6l2.2 5v4zM3 12h18M6 16v3M18 16v3M7 14h.01M17 14h.01',
+    # Help page (November 24, 2026): a capitol for federal law, a gavel for legal help, a phone for help lines.
+    'capitol': 'M3 21h18M4 18h16M5.5 18v-6M10 18v-6M14 18v-6M18.5 18v-6M3.5 12h17M6.5 12a5.5 5.5 0 0 1 11 0M12 6.5V3',
+    'gavel': 'M12 6l2.5-2.5 6 6L18 12zM15 9 4 20M13 21h8',
+    'phone': 'M5 4h3.5L10 8.5 8 10a11 11 0 0 0 6 6l1.5-2 4.5 1.5V19a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z',
 }
 QUESTION_ICON = {'adult-use': 'scale', 'medical': 'heart', 'buying': 'bag', 'possession': 'box', 'sharing': 'swap', 'home-grow': 'sprout',
                  'public-use': 'cloud', 'driving': 'car', 'employment': 'briefcase', 'record-relief': 'record'}
@@ -557,7 +543,7 @@ def website_node():
             'creator': {'@type': 'Person', 'name': 'Travis Vought', 'url': 'https://travisvought.com/'}}
 
 
-def shell(title, description, body, name, place, hero='', ld=None):
+def shell(title, description, body, name, place, hero='', ld=None, css=''):
     head = ['<!doctype html><html lang="en"><head><meta charset="utf-8">',
             '<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark">',
             f'<title>{esc(title)} | {esc(SITE_NAME)}</title>',
@@ -575,7 +561,7 @@ def shell(title, description, body, name, place, hero='', ld=None):
         head.append('<meta name="robots" content="noindex,follow">')
     if ld and ORIGIN:
         head.append(json_ld(ld))
-    head.append(f'<style>{CSS}</style></head><body>')
+    head.append(f'<style>{CSS}{css}</style></head><body>')
     top = (f'<header class="site"><div class="wrap"><a class="brand" href="index.html" aria-label="{esc(SITE_NAME)} home"><img src="{ASSETS}mark-96.png" alt="" width="40" height="40"><span>{esc(SITE_NAME)}</span></a>'
            '<nav aria-label="Primary"><a href="index.html#map">Your state</a><a href="medical.html">Medical cards</a><a href="index.html#compare">Compare laws</a>'
            '<a href="world.html">World</a><a href="learn.html">101</a><a href="help.html">Get help</a><a href="about.html">About</a></nav></div></header>')
@@ -904,6 +890,76 @@ LAW_BLURB = {
 }
 
 
+SPREAD_CSS = '''
+/* The comparison chart on the home page (spread_chart): one bar per question, one segment per answer, 51 jurisdictions each. */
+.spread{margin:22px 0 6px;max-width:860px}.spread figcaption strong{display:block;font-size:1.1rem}.spread figcaption span{display:block}
+.spread ol{list-style:none;margin:12px 0;padding:0;display:grid;gap:9px}.spread li{display:grid;grid-template-columns:minmax(0,14.5em) minmax(0,1fr);gap:3px 14px;align-items:center}
+.spread .sq{font-weight:650;line-height:1.3}.spread .bar{display:flex;gap:2px;min-height:30px}
+.spread .seg{display:flex;align-items:center;justify-content:center;gap:4px;min-width:3px;overflow:hidden;border-radius:4px;color:#fff;font-weight:800;font-size:.88rem;line-height:1}
+.spread .seg.allowed,.spread .seg.positive{background:#2f7d4f}.spread .seg.medical-only{background:#387b9c}
+.spread .seg.limited,.spread .seg.varies-locally,.spread .seg.partial{background:#e3b23c;color:#2a2108}.spread .seg.not-permitted,.spread .seg.negative{background:#b4513a}
+.spread .seg.not-reviewed{background:#d4d8d5;color:#3b4541}.spread .seg.bare::before{display:none}
+/* The light segments get a darker edge, so every bar stands out 3:1 from the page (WCAG 1.4.11). */
+.spread .seg.limited,.spread .seg.varies-locally,.spread .seg.partial{box-shadow:inset 0 0 0 1.5px #8a6a12}.spread .seg.not-reviewed{box-shadow:inset 0 0 0 1.5px #6b7470}
+.spread details{margin:6px 0}.spread summary{cursor:pointer;font-weight:700;color:var(--link);min-height:44px;display:flex;align-items:center}.spread td,.spread th{font-size:.92rem}
+@media (prefers-color-scheme:dark){.spread .seg.not-reviewed{background:#3a4640;color:#d7ddd9;box-shadow:inset 0 0 0 1.5px #8a9690}}
+@media (forced-colors:active){.spread .seg{forced-color-adjust:none;background:Canvas;color:CanvasText;border:1px solid CanvasText}}
+@media(max-width:560px){.spread li{grid-template-columns:1fr}}
+@media print{.spread .seg{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+'''
+
+
+SPREAD_ORDER = ['allowed', 'positive', 'medical-only', 'limited', 'varies-locally', 'partial', 'not-permitted', 'negative', 'not-reviewed']
+
+
+def spread_chart(perm, answers):
+    """How the 50 states and DC answer each question: one bar per question, one segment per answer, sized by
+    how many jurisdictions give it. Owner direction, November 24, 2026: visuals that carry information. Nothing
+    new is said: the counts are the same answers each law page maps and lists, and the table under the chart
+    gives every number as text. Unreviewed states are counted as "Not yet reviewed", never as a "no"."""
+    names = perm['jurisdictions']
+    total = len(names)
+    rows, table, keyed = [], [], {}
+    for q in perm['questions']:
+        tally = {}
+        for code in names:
+            a = answers.get(code, {}).get(q['id'])
+            st = a['status'] if a else 'not-reviewed'
+            tally[st] = tally.get(st, 0) + 1
+        order = [st for st in list(q.get('statuses', {})) + list(perm['statuses']) if st in tally]
+        # Like answers sit together: yes, then medical only, then limited, then no, then not yet reviewed.
+        order.sort(key=lambda st: SPREAD_ORDER.index(tone_of(q, st)))
+        said = [f'{status_label(perm, q, st)} {tally[st]}' for st in order]
+        segs = []
+        for st in order:
+            tone, n = tone_of(q, st), tally[st]
+            keyed.setdefault(tone, [])
+            if status_label(perm, q, st) not in keyed[tone]:
+                keyed[tone].append(status_label(perm, q, st))
+            # Room for a symbol and the count only where the segment is wide enough to hold them.
+            inside = f'<span>{n}</span>' if n >= 4 else ''
+            segs.append(f'<span class="seg {esc(tone)}{"" if n >= 8 else " bare"}" style="flex:{n} 1 0">{inside}</span>')
+        label = esc(LAW_BLURB.get(q['id'], q['question']))
+        rows.append(f'<li><a class="sq" href="{law_page_name(q["id"])}">{label}</a>'
+                    f'<span class="bar" role="img" aria-label="{esc(", ".join(said))}, of {total}">{"".join(segs)}</span></li>')
+        table.append(f'<tr><th scope="row">{label}</th><td>{esc(" · ".join(said))}</td></tr>')
+    families = [('allowed', 'positive'), ('medical-only',), ('limited', 'varies-locally', 'partial'), ('not-permitted', 'negative'), ('not-reviewed',)]
+    key = []
+    for fam in families:
+        labels = [lab for tone in fam for lab in keyed.get(tone, [])]
+        if labels:
+            key.append(f'<li><span class="sw {fam[0]}"></span>{esc(" / ".join(labels))}</li>')
+    assert all(any(t in fam for fam in families) for t in keyed), 'a status tone has no place in the chart key'
+    return ('<figure class="spread" id="spread"><figcaption><strong>How the 50 states and DC answer each question</strong>'
+            f'<span class="muted">Each bar is all {total} jurisdictions, split by their answer; the number is how many give it. '
+            f'Select a question for the map and the list. From the answers on each state’s page, each with its own source, as of {long_date(perm["as_of"])}.</span></figcaption>'
+            '<ol>' + ''.join(rows) + '</ol>'
+            '<ul class="legend" aria-label="Chart key">' + ''.join(key) + '</ul>'
+            '<details><summary>Chart data as a table</summary><div class="scroll"><table><caption class="muted">Number of jurisdictions giving each answer, '
+            f'as of {long_date(perm["as_of"])}</caption><thead><tr><th scope="col">Question</th><th scope="col">Answers</th></tr></thead><tbody>'
+            + ''.join(table) + '</tbody></table></div></details></figure>')
+
+
 def law_page_name(question_id):
     return f'law-{question_id}.html'
 
@@ -921,21 +977,36 @@ def status_label(perm, question, status):
     return own['label'] if own else perm['statuses'][status]
 
 
+# One icon per need on the help page, from the same set as the home page cards. A need without one shows none.
+# ICON_HEAD_CSS styles an icon in front of a heading (.ih .hi) or inside a pill (.pi); Cannabis 101 uses it too.
+NEED_ICON = {'Federal law': 'capitol', 'State laws': 'scale', 'Travel': 'plane', 'Patients traveling': 'card', 'Veterans': 'star',
+             'Legal help': 'gavel', 'Record clearing': 'record', 'Contact lawmakers': 'megaphone', 'Health and safety': 'phone',
+             'Business': 'briefcase'}
+ICON_HEAD_CSS = ('.pill .pi{display:grid;color:var(--green2)}.pill .pi svg{width:20px;height:20px}'
+            '.ih{display:flex;align-items:center;gap:10px}.ih .hi{flex:none;width:38px;height:38px;border-radius:10px;display:grid;place-items:center;'
+            'background:var(--mint);color:var(--green)}.ih .hi svg{width:22px;height:22px}'
+            '@media (prefers-color-scheme:dark){.pill .pi,.ih .hi{color:#a8dfbd}}')
+
+
+def need_icon(need, cls):
+    return f'<span class="{cls}">{icon(NEED_ICON[need])}</span>' if need in NEED_ICON else ''
+
+
 def help_page(perm, sources):
     cites = Cites(sources)
     land = load_landing()['national_pages']['help.html']
     body = ['<p class="crumbs"><a href="index.html">Home</a> › Help by need</p>', '<h1>Help by need</h1>', for_you(esc(land['intro'])),
             '<p>Federal rules, national help lines and organizations that cover every state. Each links to the agency or organization that runs it. '
             'A listing is not an endorsement; advocacy groups are named as such. For state-specific help, <a href="index.html#map">pick your state</a>.</p>',
-            '<nav class="pills" aria-label="Jump to a need">' + ''.join(f'<a class="pill" href="#{slug(n)}">{esc(n)}</a>' for n in needs_in_order(perm)) + '</nav>']
+            '<nav class="pills" aria-label="Jump to a need">' + ''.join(f'<a class="pill" href="#{slug(n)}">{need_icon(n, "pi")}{esc(n)}</a>' for n in needs_in_order(perm)) + '</nav>']
     for need in needs_in_order(perm):
-        body.append(f'<h2 id="{slug(need)}">{esc(need)}</h2>')
+        body.append(f'<h2 id="{slug(need)}" class="ih">{need_icon(need, "hi")}{esc(need)}</h2>')
         for i in (i for i in perm['national'] if i['need'] == need):
             body.append(f'<article class="card" data-national="{esc(i["id"])}"><h3><a href="{esc(i["url"])}" target="_blank" rel="noopener">{esc(i["title"])}</a></h3>'
                         f'<p>{esc(i["text"])}</p><p class="muted">Checked {long_date(i["reviewed_on"])} {cites.mark(i["source_ids"])}</p></article>')
     body.append(cites.render())
     return shell(land['title'], 'National cannabis help lines, federal rules and organizations that cover every state, grouped by what you need.',
-                 ''.join(body), 'help.html', 'the help page', ld=[breadcrumbs([('Home', '')], 'help.html', 'Help by need')])
+                 ''.join(body), 'help.html', 'the help page', ld=[breadcrumbs([('Home', '')], 'help.html', 'Help by need')], css=ICON_HEAD_CSS)
 
 
 def medical_page(perm, med_data, medical, answers, sources, dispensaries=None):
@@ -1394,7 +1465,8 @@ def home_page(perm, score, directory, answers, sources, sponsors=()):
     for q in perm['questions']:
         answered = sum(q['id'] in answers.get(c, {}) for c in names)
         body.append(f'<a class="pill" href="{law_page_name(q["id"])}">{esc(LAW_BLURB.get(q["id"], q["question"]))} <small>{answered}/{len(names)}</small></a>')
-    body.append('</div><p class="muted">The number shows how many states have a reviewed answer so far. A missing answer means not yet reviewed, never that something is prohibited.</p></section>')
+    body.append('</div><p class="muted">The number shows how many states have a reviewed answer so far. A missing answer means not yet reviewed, never that something is prohibited.</p>'
+                + spread_chart(perm, answers) + '</section>')
 
     # After the map and the comparisons, never inside them.
     body.append(sponsor_slot(active_sponsor(sponsors, 'home')))
@@ -1405,7 +1477,7 @@ def home_page(perm, score, directory, answers, sources, sponsors=()):
     body.append('<script>(function(){var f=document.getElementById("pick"),j=document.getElementById("state-jump");'
                 'function go(){if(!j.value)return;if(window.directoryTrack)window.directoryTrack("state-picker");location.href=j.value}f.addEventListener("submit",function(e){e.preventDefault();go()});j.addEventListener("change",go)})();</script>')
     description = 'Free, plain-language cannabis answers for all 50 states and DC: what is legal, where to buy, record clearing and where to get help, each answer traced to a named source.'
-    return shell(TAGLINE, description, ''.join(body), 'index.html', 'the home page', hero, ld=[website_node()])
+    return shell(TAGLINE, description, ''.join(body), 'index.html', 'the home page', hero, ld=[website_node()], css=SPREAD_CSS)
 
 def state_names(perm):
     return {slug(name) + '.html' for name in perm['jurisdictions'].values()}

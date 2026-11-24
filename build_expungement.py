@@ -1,8 +1,10 @@
 """Build the source-linked Ohio record relief walkthrough."""
 import html
 import json
+import re
 from pathlib import Path
 from directory_brand import brand_page
+from site_visuals import duration_bars, step_flow, with_css
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'expungement.html'
 def court_searches():
@@ -21,9 +23,47 @@ def court_searches():
     result += '<details><summary>Do not remember which courts have your cases?</summary><p><a href="https://www.ohioattorneygeneral.gov/Individuals-and-Families/Consumers/Requesting-Your-Own-Criminal-Records">Request your own Ohio BCI criminal history</a>. This requires identification, consent, fingerprints and a $22 state fee, plus any WebCheck provider fee. It is not an instant public name search and does not replace the court documents.</p></details>'
     return result
 
+# One icon per main step, in order (owner direction, November 24, 2026: visuals wherever they help).
+STEP_ICONS = ['search', 'fork', 'form', 'tray', 'gavel', 'order']
+STEP = re.compile(r'<li data-step="(\d)"><label><input type="checkbox"><strong>\1\. (.+?)\.</strong>')
+
+
+def step_overview(page):
+    """The six main steps as numbered icon cards above the checklist. Titles are read from the checklist itself,
+    so the picture can never say something the steps do not; each card links to its step."""
+    steps = STEP.findall(page)
+    assert [n for n, _ in steps] == [str(i) for i in range(1, len(STEP_ICONS) + 1)], 'the checklist steps changed; update STEP_ICONS'
+    page = STEP.sub(lambda m: m.group(0).replace('<li data-step="', f'<li id="step-{m.group(1)}" data-step="', 1), page)
+    cards = step_flow([(html.unescape(title), name, f'#step-{n}') for (n, title), name in zip(steps, STEP_ICONS)],
+                      'The six steps at a glance')
+    head = '<section id="steps"><h2>What you need to do</h2>'
+    assert head in page
+    return page.replace(head, head + cards, 1)
+
+
+def waiting_chart(page):
+    """The general-route waiting periods, drawn from the table just above the chart, with that table's source."""
+    start = page.index('<section id="timing">')
+    end = page.index('</table></div>', start) + len('</table></div>')
+    table = page[start:end]
+    series = re.findall(r'<th scope="col">([^<]+)</th>', table)[1:]
+    rows = [(html.unescape(label), [html.unescape(v) for v in values.split('</td><td>')])
+            for label, values in re.findall(r'<tr><th scope="row">([^<]+)</th><td>(.+?)</td></tr>', table)]
+    assert series == ['Sealing', 'Expungement'] and len(rows) == 4 and all(len(v) == 2 for _, v in rows), 'the waiting-period table changed'
+    source = re.search(r'<p class="source">(<a href="https://www\.supremecourt\.ohio\.gov/[^"]+">[^<]+</a>)</p>', page[end:])
+    checked = re.search(r'<p class="eyebrow">OHIO • (Checked [^<]+)</p>', page).group(1)
+    note = (f'The waiting periods in the table above, on one scale: the longer the bar, the longer the wait. Source: '
+            f'{source.group(1)}. {checked}.')
+    chart = duration_bars(rows, series, 'The same waiting periods as bars', note)
+    # After the table's own caution and source line, so they stay next to the table.
+    after = end + source.end()
+    return page[:after] + chart + page[after:]
+
+
 def main():
     page = (ROOT / 'templates/expungement.html').read_text(encoding='utf-8')
-    OUT.write_text(brand_page(page.replace('__COURT_SEARCHES__', court_searches()), OUT.name), encoding='utf-8')
+    page = with_css(waiting_chart(step_overview(page.replace('__COURT_SEARCHES__', court_searches()))))
+    OUT.write_text(brand_page(page, OUT.name), encoding='utf-8')
     print('Built expungement.html')
 if __name__ == '__main__':
     main()

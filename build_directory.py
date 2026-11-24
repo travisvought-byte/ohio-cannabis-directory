@@ -11,6 +11,7 @@ from pathlib import Path
 import pandas as pd
 from directory_data import RELEASE, RELEASE_DATE, script_json, load_records, load_event_routes, load_event_spotlights, load_directory
 from directory_brand import brand_page, site_origin
+from site_visuals import icon, with_css
 from public_data import externalize
 
 ROOT = Path(__file__).resolve().parent
@@ -233,7 +234,7 @@ def main():
     noscript.append("</div>")
     noscript_index = "\n".join(noscript)
 
-    page = brand_page(TEMPLATE, OUT.name).replace("__PAYLOAD__", payload)
+    page = brand_page(with_css(TEMPLATE), OUT.name).replace("__PAYLOAD__", payload)
     # The H1 carries the site name here; the brand line names the organization instead.
     page = page.replace('<span><strong>Ohio Cannabis Directory</strong></span>', '<span class="brand-org">Veteran Home Guardians</span>', 1)
     page = page.replace("__UPCOMING_EVENTS__", script_json(UPCOMING_EVENTS))
@@ -245,7 +246,9 @@ def main():
     help_routes = [('Banking & Financial Services', 'Banking'), ('Accounting & Tax', 'Accounting & tax'), ('Legal & Licensing', 'Legal & licensing'), ('Testing Labs', 'Testing labs'), ('Packaging & Labeling', 'Packaging & labels'), ('Staffing & HR', 'Staffing & HR'), ('Insurance', 'Insurance'), ('Security & Cash Logistics', 'Security & cash logistics')]
     from urllib.parse import urlencode, quote
     help_actions = ['banking', 'accounting', 'legal', 'testing', 'packaging', 'staffing', 'insurance', 'security']
-    page = page.replace('__HELP_ROUTES__', ''.join(f'<a class="btn help-route" href="directory.html?{html.escape(urlencode({"category": category}), quote=True)}" data-help="{html.escape(category, quote=True)}" data-track="business-help:{action}">{html.escape(label)}</a>' for (category, label), action in zip(help_routes, help_actions)))
+    # One icon per route (owner direction, November 24, 2026: symbols that make the page scannable).
+    help_icons = ['bank', 'calculator', 'scale', 'flask', 'package', 'people', 'shield', 'lock']
+    page = page.replace('__HELP_ROUTES__', ''.join(f'<a class="btn help-route vic" href="directory.html?{html.escape(urlencode({"category": category}), quote=True)}" data-help="{html.escape(category, quote=True)}" data-track="business-help:{action}">{icon(name)}{html.escape(label)}</a>' for (category, label), action, name in zip(help_routes, help_actions, help_icons)))
     event_subject = quote('Ohio cannabis event submission')
     event_body = quote('Event name:\nDate and time:\nVenue, city and county:\nOrganizer and public contact:\nOfficial event or registration link:\nAudience and age requirements:\nCost, if any:\n')
     page = page.replace('__EVENT_SUBMISSION__', f'mailto:veteranhomeguardians@gmail.com?subject={event_subject}&amp;body={event_body}')
@@ -452,7 +455,7 @@ __VHG_CSS__
   .contact a{color:var(--field-deep); text-decoration:none; border-bottom:1px solid rgba(186,12,47,.35)}
   .contact a:hover{border-bottom-color:var(--field-deep)}
   .contact span{color:#646C71}
-  .business-help{margin:1rem 0}.business-help h2{font-size:1rem;margin:0 0 .5rem}.help-links{display:flex;flex-wrap:wrap;gap:.45rem}.help-route{min-height:44px;display:inline-flex;align-items:center}.help-route[aria-current="true"]{background:var(--field);color:white;border-color:var(--field)}
+  .business-help{margin:1rem 0}.business-help h2{font-size:1rem;margin:0 0 .5rem}.help-links{display:flex;flex-wrap:wrap;gap:.45rem}.help-route{min-height:44px;display:inline-flex;align-items:center}.help-route[aria-current="true"]{background:var(--field);color:white;border-color:var(--field)}.help-route[aria-current="true"] svg{color:currentColor}
   .provider-details{margin:.55rem 0;padding:.6rem .75rem;background:var(--paper-deep);font-size:.84rem}.provider-details p{margin:.15rem 0}.provider-details a{color:var(--field-deep)}
   #browse-extras>summary{display:none}
   .search-active #browse-extras>summary{display:inline-flex;align-items:center}
