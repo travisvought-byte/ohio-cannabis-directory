@@ -893,7 +893,7 @@ LAW_BLURB = {
 SPREAD_CSS = '''
 /* The comparison chart on the home page (spread_chart): one bar per question, one segment per answer, 51 jurisdictions each. */
 .spread{margin:22px 0 6px;max-width:860px}.spread figcaption strong{display:block;font-size:1.1rem}.spread figcaption span{display:block}
-.spread ol{list-style:none;margin:12px 0;padding:0;display:grid;gap:9px}.spread li{display:grid;grid-template-columns:minmax(0,14.5em) minmax(0,1fr);gap:3px 14px;align-items:center}
+.spread ol{list-style:none;margin:12px 0;padding:0;display:grid;gap:9px}.spread ol>li{display:grid;grid-template-columns:minmax(0,14.5em) minmax(0,1fr);gap:3px 14px;align-items:center}
 .spread .sq{font-weight:650;line-height:1.3}.spread .bar{display:flex;gap:2px;min-height:30px}
 .spread .seg{display:flex;align-items:center;justify-content:center;gap:4px;min-width:3px;overflow:hidden;border-radius:4px;color:#fff;font-weight:800;font-size:.88rem;line-height:1}
 .spread .seg.allowed,.spread .seg.positive{background:#2f7d4f}.spread .seg.medical-only{background:#387b9c}
@@ -904,7 +904,7 @@ SPREAD_CSS = '''
 .spread details{margin:6px 0}.spread summary{cursor:pointer;font-weight:700;color:var(--link);min-height:44px;display:flex;align-items:center}.spread td,.spread th{font-size:.92rem}
 @media (prefers-color-scheme:dark){.spread .seg.not-reviewed{background:#3a4640;color:#d7ddd9;box-shadow:inset 0 0 0 1.5px #8a9690}}
 @media (forced-colors:active){.spread .seg{forced-color-adjust:none;background:Canvas;color:CanvasText;border:1px solid CanvasText}}
-@media(max-width:560px){.spread li{grid-template-columns:1fr}}
+@media(max-width:560px){.spread ol>li{grid-template-columns:1fr}}
 @media print{.spread .seg{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
 '''
 
