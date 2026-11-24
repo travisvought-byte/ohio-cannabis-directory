@@ -111,7 +111,8 @@ REEFER_FOOT = (
     '<a href="state.html?state=PA">Pennsylvania portal</a><a href="state.html?state=NY">New York portal</a>'
     f'<a href="{OHIO_HOME}/">OhioWeed.org</a><a href="https://mobilitytalk.org/">Mobility Talk</a><a href="https://findbingo.org/">Find Bingo</a></nav>'
     '<p>Created and maintained by <a href="https://travisvought.com/">Travis Vought</a> · Shared in support of '
-    '<a href="https://vethomeguard.org/">Veteran Home Guardians</a></p></footer>')
+    '<a href="https://vethomeguard.org/">Veteran Home Guardians</a> · '
+    '<a href="https://www.zeffy.com/en-US/donation-form/giving-tuesday-no-veteran-left-isolated">Give to VHG on Giving Tuesday</a></p></footer>')
 
 
 def rebrand(text):

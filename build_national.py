@@ -35,6 +35,7 @@ SITE_NAME = 'The Reefer'
 TAGLINE = 'Cannabis information and resources for every state'
 ORIGIN = os.environ.get('NATIONAL_ORIGIN', '').rstrip('/')
 REPO = 'https://github.com/travisvought-byte/ohio-cannabis-directory'
+GIVING_TUESDAY = 'https://www.zeffy.com/en-US/donation-form/giving-tuesday-no-veteran-left-isolated'  # VHG's Giving Tuesday 2026 campaign on Zeffy; footer link until Travis says to take it down
 LEVELS = {'starter': 'Starter', 'partial': 'Partial', 'broad': 'Broad'}
 PACK_LABEL = {'live': 'Full state guide', 'pilot': 'Pilot state guide'}
 
@@ -588,7 +589,8 @@ def shell(title, description, body, name, place, hero='', ld=None):
             f'<li><a href="{REPO}#readme">Methods &amp; sources</a></li>'
             f'<li><a href="{REPO}/blob/main/architecture/STATE_COMPLETION_STANDARD.md">State completion standard</a></li></ul></nav></div>'
             '<p>Summaries of the cited sources, each with the date it was checked. Not legal advice. A missing answer means not yet reviewed, '
-            'never that something is prohibited. Free to use under CC BY 4.0. Created and maintained by Travis Vought, shared in support of Veteran Home Guardians.</p></div></footer>')
+            'never that something is prohibited. Free to use under CC BY 4.0. Created and maintained by Travis Vought, shared in support of Veteran Home Guardians. '
+            f'Giving Tuesday is December 1: <a href="{GIVING_TUESDAY}">give to Veteran Home Guardians</a>.</p></div></footer>')
     from a11y import finish  # a skip link and less motion when the visitor's device asks
     return finish(''.join(head) + top + hero + '<main>' + body + '</main>' + foot + '<script src="../assets/analytics.js" defer></script></body></html>\n')
 
