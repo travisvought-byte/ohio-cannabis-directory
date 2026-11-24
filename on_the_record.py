@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parent
 RECORD = ROOT / 'data/on-the-record.json'
 NATIONAL_HOME = 'https://the-reefer.com'
 DETAIL_URL = NATIONAL_HOME + '/on-the-record.html'
+LOBBY_URL = NATIONAL_HOME + '/lobbyists.html'
 LAWMAKERS_URL = OHIO_HOME + '/lawmakers.html'
 DATA_URL = 'https://github.com/travisvought-byte/ohio-cannabis-directory/blob/main/data/on-the-record.json'
 POSITIONS = ['Sponsor', 'Proponent', 'Opponent', 'Interested Party']
@@ -99,7 +100,7 @@ def testimony_bill(bill, rows, lob):
             f'{a("Bill page", bill["official_page"])} · {a("Committee testimony", bill["committee_page"])} · {a("Status history", bill["status_page"])}</p>'
             f'<details open><summary>Committee testimony: {len(rows)} entries</summary><p class="counts">{esc(count_line)}</p>{testimony_table(rows)}</details>'
             f'<p>{len(lob["employers"])} employers reported lobbying on {esc(bill["number"])}. '
-            f'{a("See who lobbied, their registered agents and the reporting periods", DETAIL_URL + "#lobby-" + bill["id"])}.</p></section>')
+            f'{a("See who lobbied, their registered agents and the reporting periods", LOBBY_URL + "#lobby-" + bill["id"])}.</p></section>')
 
 
 def lawmakers_section(heading, intro):
@@ -111,7 +112,7 @@ def lawmakers_section(heading, intro):
     nums = bill_numbers(data)
     positions = ''.join(f'<li><strong>{esc(nums[k])}:</strong> {esc(v)}</li>' for k, v in data['ohcann']['positions'].items())
     return (f'<section class="otr" id="on-the-record"><h2>{esc(heading)}</h2><p>{esc(intro)}</p>'
-            f'<nav class="jump" aria-label="On the record">{jump} {a("Who lobbied", DETAIL_URL + "#lobbying")} '
+            f'<nav class="jump" aria-label="On the record">{jump} {a("Who lobbied", LOBBY_URL + "#lobbying")} '
             f'{a("OHCANN profile", DETAIL_URL + "#ohcann")} {a("Form 990 filings", DETAIL_URL + "#form-990")}</nav>'
             f'<details><summary>How this section is built</summary><ul>{rules}</ul><p>{esc(data["testimony_source"])}</p></details>'
             f'<p class="review">Records checked {esc(day(data["as_of"]))}. {a("Download every entry as data", DATA_URL)}.</p>'
@@ -221,11 +222,6 @@ def ohcann_section(data):
     statements = ''.join(f'<li>{esc(day(s["date"]))} · {a(s["title"], s["source"])}' + (f'<blockquote>“{esc(s["quote"])}”</blockquote>' if s['quote'] else '') + '</li>' for s in o['statements'])
     own = ''.join(f'<li>{esc(nums[t["bill"]])}: {esc(t["position"])}, {esc(day(t["hearing_date"]))}. {a("Testimony entry", LAWMAKERS_URL + "#" + t["id"])}</li>'
                   for t in data['testimony'] if t['organization'] and 'OHCANN' in t['organization'])
-    members = []
-    for m in data['ohcann_members']:
-        lob = '; '.join(f'{nums[k]} (as {v})' for k, v in m['lobbying_reported_on'].items()) or '—'
-        tst = ', '.join(a(nums[i.split('-')[0]] + ' testimony', LAWMAKERS_URL + '#' + i) for i in m['testimony_ids']) or '—'
-        members.append(f'<tr><td data-label="Member">{a(m["name"], m["website"])}</td><td data-label="Lobbying reported on">{esc(lob)}</td><td data-label="Testimony">{tst}</td></tr>')
     return (f'<section id="ohcann"><h2>Profile: Ohio Cannabis Coalition (OHCANN)</h2>'
             f'<p>Built from the same kinds of record as the rest of this page: its own website and statements, its lobbying registration, the committee records and its tax returns. '
             f'Its directory listing keeps record ID {esc(o["directory_record_id"])}.</p>'
@@ -242,10 +238,76 @@ def ohcann_section(data):
             f'<details><summary>Every bill OHCANN reported lobbying on, January 2023 to now ({len(reg["bills_reported"])} bills)</summary>'
             f'<div class="table-wrap"><table><thead><tr><th scope="col">Bill (as reported)</th><th scope="col">Reporting periods</th><th scope="col">Agents</th></tr></thead><tbody>{bills}</tbody></table></div>'
             f'<p class="review">{a("Run this search on JLEC", reg["bills_reported_source"])}.</p></details>'
-            f'<p>{esc(o["federal_lobbying"])}</p>'
-            f'<h3>Member companies, as companies</h3><p>{esc(data["ohcann_members_note"])} {a("OHCANN’s members page", data["ohcann_members_source"])}.</p>'
-            f'<details><summary>{len(data["ohcann_members"])} listed members, with their lobbying reports and testimony on these bills</summary>'
-            f'<div class="table-wrap"><table><thead><tr><th scope="col">Member (as shown)</th><th scope="col">Lobbying reported on, as employer</th><th scope="col">Testimony</th></tr></thead><tbody>{"".join(members)}</tbody></table></div></details></section>')
+            f'<p>{esc(o["federal_lobbying"])}</p><p><a href="#members">Member companies: the membership tracker</a> · {a("Registered lobbyists’ federal contributions", LOBBY_URL + "#lobbyists")}</p></section>')
+
+
+def member_row(m, data, nums):
+    testimony = {t['id']: t for t in data['testimony']}
+    tst = []
+    for i in m['testimony_ids']:
+        t = testimony[i]
+        tst.append(f'Testified as {esc(t["position"].lower())} on {esc(nums[t["bill"]])}, {esc(day(t["hearing_date"]))} ({esc(t["chamber"])} {esc(t["committee"])}). '
+                   + a('Testimony entry', LAWMAKERS_URL + '#' + i))
+    lob = '; '.join(f'{nums[k]} (as {v})' for k, v in m['lobbying_reported_on'].items())
+    regs = ''.join(f'<p>{a(r["employer"], r["source"])}: ' + (esc(', '.join(x['name'] for x in r['current_agents'])) or 'no current agent') + '</p>' for r in m['jlec_registrations'])
+    directory = (f'{a("Listed", OHIO_HOME + "/directory.html")} as {esc(m["directory_record_name"])} ({esc(m["directory_record_id"])})'
+                 if m['directory_record_id'] else 'Not listed')
+    status = (f'Left OHCANN on {esc(day(m["left_on"]))}. {a("Source", m["left_source"])}' if m['left_on']
+              else f'Listed as OHCANN member (as of {esc(day(m["status_as_of"]))})')
+    return (f'<tr><td data-label="Member">{a(m["name"], m["website"])}</td><td data-label="Status">{status}</td><td data-label="In the directory">{directory}</td>'
+            f'<td data-label="JLEC registration (current agents)">{regs or "None found"}</td>'
+            f'<td data-label="Testimony on SB 56, HB 160, HB 611">{"<br>".join(tst) or "None"}</td>'
+            f'<td data-label="Lobbying reported on these bills">{esc(lob) or "None reported"}</td></tr>')
+
+
+def members_section(data):
+    ms = data['ohcann_membership']
+    nums = bill_numbers(data)
+    head = ('<div class="table-wrap"><table><thead><tr><th scope="col">Member (as shown)</th><th scope="col">Status</th><th scope="col">In the directory</th>'
+            '<th scope="col">JLEC registration (current agents)</th><th scope="col">Testimony on SB 56, HB 160, HB 611</th><th scope="col">Lobbying reported on these bills</th></tr></thead><tbody>')
+    left = [m for m in data['ohcann_members'] if m['left_on']]
+    listed = [m for m in data['ohcann_members'] if not m['left_on']]
+    testified = [m for m in listed if m['testimony_ids']]
+    def summary(m):
+        counts = Counter((next(t['position'] for t in data['testimony'] if t['id'] == i).lower(), nums[i.split('-')[0]]) for i in m['testimony_ids'])
+        return ', '.join(f'{esc(p)} on {esc(b)}' + (f' ({n} witnesses)' if n > 1 else '') for (p, b), n in counts.items())
+    against = '; '.join(f'{esc(m["name"])}: {summary(m)}' for m in testified)
+    snaps = ', '.join(a(day(x['date']), x['url']) for x in ms['wayback_snapshots'])
+    left_block = (head + ''.join(member_row(m, data, nums) for m in left) + '</tbody></table></div>') if left else '<p>None recorded. No dated source has been found that says a member company left.</p>'
+    return (f'<section id="members"><h2>OHCANN member companies: tracker</h2>'
+            f'<p>From {a("OHCANN’s members page", ms["source"])}, retrieved {esc(day(ms["retrieved_on"]))}. Internet Archive snapshots: {snaps}. {esc(ms["wayback_note"])}</p>'
+            f'<p>{esc(ms["status_rule"])} {esc(data["ohcann_members_note"])} {esc(ms["directory_note"])}</p>'
+            f'<h3>Left OHCANN</h3>{left_block}'
+            f'<h3>Listed members ({len(listed)})</h3>'
+            + (f'<p>Members whose own testimony is in the committee record on these bills: {against}.</p>' if testified else '')
+            + f'<details open><summary>All {len(listed)} listed members</summary>{head}{"".join(member_row(m, data, nums) for m in listed)}</tbody></table></div></details></section>')
+
+
+def lobbyists_section(data):
+    lc = data['lobbyist_contributions']
+    rows, pending = [], {}
+    for r in lc['agents']:
+        if not r['checked_on']:
+            pending.setdefault(r['tier'], []).append(r['name'])
+            continue
+        contrib = ''.join(f'<li>{esc(day(c["date"])) if c["date"] else "date not given"} · {esc(name_case(c["recipient"] or ""))}'
+                          + (f' ({esc(c["party"])})' if c['party'] else ' (party not stated)') + f' · ${c["amount"]:,.2f} · ' + a('FEC', c['source']) + '</li>' for c in r['contributions'])
+        bio = (f'<p>{esc(r["bio"]["text"])} {a("Source", r["bio"]["source"])}</p>' if r.get('bio') else '')
+        summary = f'<p>{esc(r["party_summary"])}.</p>' if r.get('party_summary') else ''
+        note = f'<p class="review">{esc(r["note"])}</p>' if r.get('note') else ''
+        rows.append(f'<tr><td data-label="Registered agent">{esc(r["name"])}<br><span class="review">{esc(r["tier"])}</span></td>'
+                    f'<td data-label="Registered for">{esc("; ".join(r["registered_for"]))}</td>'
+                    f'<td data-label="Checked">{esc(day(r["checked_on"]))}</td>'
+                    f'<td data-label="Federal contributions">{esc(r["status"].capitalize())}.{summary}' + (f'<ul>{contrib}</ul>' if contrib else '') + f'{note}</td>'
+                    f'<td data-label="Own bio">{bio or "Not reviewed yet"}</td></tr>')
+    checked = len(rows)
+    waiting = ''.join(f'<p><strong>{esc(t)} ({len(n)}):</strong> {esc(", ".join(n))}</p>' for t, n in pending.items())
+    return (f'<section id="lobbyists"><h2>Registered lobbyists: federal contributions</h2>'
+            f'<p class="counts">In progress, as of {esc(day(lc["as_of"]))}: {checked} of {len(lc["agents"])} registered agents checked.</p>'
+            f'<p>{esc(lc["method"])} {esc(lc["order"])} {esc(lc["bios_rule"])}</p>'
+            f'<div class="table-wrap"><table><thead><tr><th scope="col">Registered agent</th><th scope="col">Registered for</th><th scope="col">Checked</th>'
+            f'<th scope="col">Federal contributions</th><th scope="col">Own bio</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div>'
+            f'<details><summary>Not yet checked ({len(lc["agents"]) - checked})</summary>{waiting}</details></section>')
 
 
 def attempts_section(data):
@@ -258,10 +320,21 @@ def attempts_section(data):
 def detail_body():
     data = load()
     rules = ''.join(f'<li>{esc(r)}</li>' for r in data['rules'])
-    jump = ' '.join(f'<a href="#lobby-{esc(b["id"])}">{esc(b["number"])} lobbying</a>' for b in data['bills'])
-    return (f'<nav class="jump" aria-label="On this page">{jump} <a href="#ohcann">OHCANN profile</a> <a href="#form-990">Form 990 filings</a> '
-            f'<a href="#not-checked">What could not be checked</a> {a("Committee testimony and lawmakers", LAWMAKERS_URL + "#on-the-record")}</nav>'
+    return (f'<nav class="jump" aria-label="On this page"><a href="#ohcann">OHCANN profile</a> <a href="#members">Member tracker</a> <a href="#form-990">Form 990 filings</a> '
+            f'<a href="#not-checked">What could not be checked</a> {a("Who lobbied and their contributions", LOBBY_URL)} {a("Committee testimony and lawmakers", LAWMAKERS_URL + "#on-the-record")}</nav>'
             f'<details><summary>How this page is built</summary><ul>{rules}</ul></details>'
             f'<p class="review">Records checked {esc(day(data["as_of"]))}. {a("Download every entry as data", DATA_URL)}.</p>'
-            f'{lobbying_section(data)}{ohcann_section(data)}{nonprofit_section(data)}{attempts_section(data)}'
-            f'<p><strong>Your turn.</strong> Lawmakers hear from these groups. {a("Find your own representative and senator and write in your own words", OHIO_HOME + "/advocacy.html#write")}.</p>')
+            f'{ohcann_section(data)}{members_section(data)}{nonprofit_section(data)}{attempts_section(data)}'
+            f'<p><strong>Your turn.</strong> {a("Find your own representative and senator and write in your own words", OHIO_HOME + "/advocacy.html#write")}.</p>')
+
+
+def lobbyists_body():
+    data = load()
+    rules = ''.join(f'<li>{esc(r)}</li>' for r in data['rules'])
+    jump = ' '.join(f'<a href="#lobby-{esc(b["id"])}">{esc(b["number"])}</a>' for b in data['bills'])
+    return (f'<nav class="jump" aria-label="On this page">{jump} <a href="#lobbyists">Lobbyists’ federal contributions</a> '
+            f'{a("OHCANN profile and member tracker", DETAIL_URL + "#ohcann")} {a("Committee testimony and lawmakers", LAWMAKERS_URL + "#on-the-record")}</nav>'
+            f'<details><summary>How this page is built</summary><ul>{rules}</ul></details>'
+            f'<p class="review">Records checked {esc(day(data["as_of"]))}. {a("Download every entry as data", DATA_URL)}.</p>'
+            f'{lobbying_section(data)}{lobbyists_section(data)}'
+            f'<p><strong>Your turn.</strong> {a("Find your own representative and senator and write in your own words", OHIO_HOME + "/advocacy.html#write")}.</p>')

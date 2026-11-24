@@ -8730,14 +8730,72 @@
     "hb160": "Buckeye Relief",
     "hb611": "Buckeye Relief"
    },
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-24ac5cb3557c",
+   "directory_record_name": "Buckeye Relief",
+   "jlec_registrations": [
+    {
+     "employer": "Buckeye Relief",
+     "jlec_employer_id": "7658",
+     "source": "https://www2.jlec-olig.state.oh.us/olac/Reports/Employers/7658/Agents",
+     "current_agents": [
+      {
+       "name": "Victor F Hipsley",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "Matthew S Whitehead",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "Kelsey Woolard",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "Sydney Sanders",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "Ronald Romito",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "Michael Guastella",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      }
+     ]
+    }
+   ],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Amplify",
    "website": "https://amplifydispensary.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-68ca5164ba06",
+   "directory_record_name": "Amplify",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Klutch Cannabis",
@@ -8750,21 +8808,80 @@
     "hb160": "ATCPC of Ohio, LLC d/b/a Klutch Cannabis",
     "hb611": "ATCPC of Ohio, LLC d/b/a Klutch Cannabis"
    },
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-d1d519732a19",
+   "directory_record_name": "Klutch Cannabis",
+   "jlec_registrations": [
+    {
+     "employer": "ATCPC of Ohio, LLC d/b/a Klutch Cannabis",
+     "jlec_employer_id": "10234",
+     "source": "https://www2.jlec-olig.state.oh.us/olac/Reports/Employers/10234/Agents",
+     "current_agents": [
+      {
+       "name": "Dan McCarthy",
+       "legislative": true,
+       "executive": false,
+       "retirement": false
+      },
+      {
+       "name": "Brad McLean",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "Kevin DeWine",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "Trint Hatt",
+       "legislative": true,
+       "executive": false,
+       "retirement": false
+      },
+      {
+       "name": "Giles Allen",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      }
+     ]
+    }
+   ],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Firelands Scientific",
    "website": "https://www.firelandsscientific.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-403a8f6287f1",
+   "directory_record_name": "Firelands Scientific",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "The Landing (Monroe)",
    "website": "https://www.thelandingmonroe.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": null,
+   "directory_record_name": null,
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Standard Wellness",
@@ -8776,14 +8893,48 @@
     "sb56": "Standard Wellness Company, LLC",
     "hb160": "Standard Wellness Company, LLC"
    },
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-fa59d5f74ed0",
+   "directory_record_name": "Standard Wellness / The Forest",
+   "jlec_registrations": [
+    {
+     "employer": "Standard Wellness Company, LLC",
+     "jlec_employer_id": "8192",
+     "source": "https://www2.jlec-olig.state.oh.us/olac/Reports/Employers/8192/Agents",
+     "current_agents": [
+      {
+       "name": "Andrew D Bowers",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "William Hinman",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      }
+     ]
+    }
+   ],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Verilife",
    "website": "https://www.verilife.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-aefe1b952bc0",
+   "directory_record_name": "PharmaCann / Verilife",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Verdant Creations",
@@ -8796,14 +8947,28 @@
     "hb160": "Verdant Creations",
     "hb611": "Verdant Creations"
    },
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": null,
+   "directory_record_name": null,
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "The Forest",
    "website": "https://theforestdispensary.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-fa59d5f74ed0",
+   "directory_record_name": "Standard Wellness / The Forest",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "King City Gardens",
@@ -8815,14 +8980,48 @@
     "sb56": "King City Gardens",
     "hb160": "King City Gardens"
    },
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-34013988f2ee",
+   "directory_record_name": "King City Gardens",
+   "jlec_registrations": [
+    {
+     "employer": "King City Gardens",
+     "jlec_employer_id": "11756",
+     "source": "https://www2.jlec-olig.state.oh.us/olac/Reports/Employers/11756/Agents",
+     "current_agents": [
+      {
+       "name": "William Hinman",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "Andrew D Bowers",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      }
+     ]
+    }
+   ],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Sunnyside",
    "website": "https://www.sunnyside.shop/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-667af67557f3",
+   "directory_record_name": "Cresco Labs / Sunnyside",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "BeneLeaves",
@@ -8831,28 +9030,70 @@
    "lobbying_reported_on": {},
    "testimony_ids": [
     "sb56-41"
-   ]
+   ],
+   "directory_record_id": "org-7831babce707",
+   "directory_record_name": "Beneleaves",
+   "jlec_registrations": [
+    {
+     "employer": "BeneLeaves LLC",
+     "jlec_employer_id": "12122",
+     "source": "https://www2.jlec-olig.state.oh.us/olac/Reports/Employers/12122/Agents",
+     "current_agents": [
+      {
+       "name": "Emily Ramach",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      }
+     ]
+    }
+   ],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Southern Ohio Botanicals",
    "website": "https://southernohiobotanicals.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-a05f9afca5ef",
+   "directory_record_name": "Southern Ohio Botanicals",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Smithers",
    "website": "https://www.smithers.com/news/2023/smithers-plans-to-enter-ohio-cannabis-testing",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-a3ab86b73858",
+   "directory_record_name": "Smithers CTS Ohio, LLC",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Uplift Ohio",
    "website": "https://upliftohio.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-e0b1fa95a12d",
+   "directory_record_name": "UpLift",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Riviera Creek",
@@ -8865,7 +9106,46 @@
     "hb160": "Riviera Creek Holdings LLC",
     "hb611": "Riviera Creek Holdings LLC"
    },
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-b434c8bd9f4c",
+   "directory_record_name": "Riviera Creek",
+   "jlec_registrations": [
+    {
+     "employer": "Riviera Creek Holdings LLC",
+     "jlec_employer_id": "11488",
+     "source": "https://www2.jlec-olig.state.oh.us/olac/Reports/Employers/11488/Agents",
+     "current_agents": [
+      {
+       "name": "Courtney Saunders",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "Daniel P Leite",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "Kurt L Leib",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "Robert N Eshenbaugh, Jr",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      }
+     ]
+    }
+   ],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Curaleaf",
@@ -8877,49 +9157,118 @@
     "sb56": "Curaleaf Holdings, Inc.",
     "hb160": "Curaleaf Holdings, Inc."
    },
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-6bb8b2a3ca4e",
+   "directory_record_name": "Curaleaf Ohio",
+   "jlec_registrations": [
+    {
+     "employer": "Curaleaf Holdings, Inc.",
+     "jlec_employer_id": "9624",
+     "source": "https://www2.jlec-olig.state.oh.us/olac/Reports/Employers/9624/Agents",
+     "current_agents": [
+      {
+       "name": "Lloyd Pierre-Louis",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "Terrence O'Donnell",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      }
+     ]
+    }
+   ],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "INSA",
    "website": "https://insa.com/ohio/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-afa309caf39c",
+   "directory_record_name": "INSA",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "PharmaCann",
    "website": "https://www.pharmacann.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-aefe1b952bc0",
+   "directory_record_name": "PharmaCann / Verilife",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Omega",
    "website": "https://www.omegastore.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": null,
+   "directory_record_name": null,
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Ohio Green Systems",
    "website": null,
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-e49263f057bc",
+   "directory_record_name": "Ohio Green Systems",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "North Coast Testing Laboratories",
    "website": "https://www.northcoasttestinglabs.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-8fd15920db44",
+   "directory_record_name": "North Coast Testing Laboratories, LLC",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Rise",
    "website": "https://risecannabis.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-364a9eed8729",
+   "directory_record_name": "Green Thumb Industries (RISE / RYTHM)",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Nectar",
@@ -8931,21 +9280,56 @@
     "sb56": "Nectar Markets of Ohio",
     "hb160": "Nectar Markets of Ohio"
    },
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-5557bb333b04",
+   "directory_record_name": "Nectar Ohio",
+   "jlec_registrations": [
+    {
+     "employer": "Nectar Markets of Ohio",
+     "jlec_employer_id": "11350",
+     "source": "https://www2.jlec-olig.state.oh.us/olac/Reports/Employers/11350/Agents",
+     "current_agents": [
+      {
+       "name": "Brian Perera",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      }
+     ]
+    }
+   ],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Nar Reserve",
    "website": "https://www.narreserve.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-f3d5255d5bc7",
+   "directory_record_name": "Nar Cannabis",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Dizpot",
    "website": "https://dizpot.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-36e94688f898",
+   "directory_record_name": "DIZPOT",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Italian Herbs",
@@ -8958,7 +9342,34 @@
     "sb56-36",
     "sb56-37",
     "sb56-38"
-   ]
+   ],
+   "directory_record_id": "org-55ddf9f58f12",
+   "directory_record_name": "Italian Herbs",
+   "jlec_registrations": [
+    {
+     "employer": "Italian Herbs LLC",
+     "jlec_employer_id": "13100",
+     "source": "https://www2.jlec-olig.state.oh.us/olac/Reports/Employers/13100/Agents",
+     "current_agents": [
+      {
+       "name": "Shawn Nelson",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "Gary E Smith, Jr.",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      }
+     ]
+    }
+   ],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Mavuno of Ohio",
@@ -8967,7 +9378,14 @@
    "lobbying_reported_on": {},
    "testimony_ids": [
     "sb56-17"
-   ]
+   ],
+   "directory_record_id": "org-9ee377e930fd",
+   "directory_record_name": "Mavuno of Ohio",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Green Thumb Industries (GTI)",
@@ -8980,21 +9398,80 @@
     "hb160": "GTI Ohio LLC",
     "hb611": "GTI Ohio LLC"
    },
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-364a9eed8729",
+   "directory_record_name": "Green Thumb Industries (RISE / RYTHM)",
+   "jlec_registrations": [
+    {
+     "employer": "GTI Ohio LLC",
+     "jlec_employer_id": "7842",
+     "source": "https://www2.jlec-olig.state.oh.us/olac/Reports/Employers/7842/Agents",
+     "current_agents": [
+      {
+       "name": "John H Oberle",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "Samuel Porter, III",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "Greg May",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "McKenzie K Davis",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "W. Fletch Zimpher",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      }
+     ]
+    }
+   ],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "GIP",
    "website": "https://www.gipohio.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": null,
+   "directory_record_name": null,
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Frantz Ward",
    "website": "https://www.frantzward.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-a165a0f11715",
+   "directory_record_name": "Frantz Ward LLP",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Cresco Labs",
@@ -9007,70 +9484,160 @@
     "hb160": "CrescoLabs",
     "hb611": "CrescoLabs"
    },
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-667af67557f3",
+   "directory_record_name": "Cresco Labs / Sunnyside",
+   "jlec_registrations": [
+    {
+     "employer": "CrescoLabs",
+     "jlec_employer_id": "7556",
+     "source": "https://www2.jlec-olig.state.oh.us/olac/Reports/Employers/7556/Agents",
+     "current_agents": [
+      {
+       "name": "Chad Hawley",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "Matthew Ryan",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      }
+     ]
+    }
+   ],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Dutchie",
    "website": "https://dutchie.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-a06c1362a303",
+   "directory_record_name": "Dutchie",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Bloom",
    "website": "https://bloomohio.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-922caf289dc8",
+   "directory_record_name": "Bloom Cannabis (formerly Bloom Medicinals)",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Appalachian Pharm",
    "website": "https://appalachianpharm.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-c987375d90fe",
+   "directory_record_name": "Vext Science / Appalachian Pharm / Herbal Wellness Center / The Hive",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "ACT Lab",
    "website": "https://actlab.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-439251489828",
+   "directory_record_name": "ACT LAB (ACT Laboratories, Inc.)",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Shangri-La",
    "website": "https://shangriladispensaries.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-807016fdf315",
+   "directory_record_name": "Shangri-La Dispensaries",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Story Cannabis",
    "website": "https://storycannabis.com/dispensary-locations/ohio/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-2f4e4abf2576",
+   "directory_record_name": "Story Cannabis",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "HBK CPAs & Consultants",
    "website": "https://hbkcpa.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-cc96c3d190d4",
+   "directory_record_name": "HBK Cannabis Solutions",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Certified Cultivators",
    "website": "https://www.certifiedcultivators.com/home",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-1d44aa49bf35",
+   "directory_record_name": "Certified Cultivators",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Ice Miller",
    "website": "https://www.icemiller.com",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-91ee171bdaeb",
+   "directory_record_name": "Ice Miller LLP",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Backroad Wellness",
@@ -9081,35 +9648,90 @@
    "lobbying_reported_on": {
     "sb56": "SEO Natural Enterprises, LLC dba Backroad Wellness"
    },
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-cd73b383c43b",
+   "directory_record_name": "Backroad Wellness",
+   "jlec_registrations": [
+    {
+     "employer": "SEO Natural Enterprises, LLC dba Backroad Wellness",
+     "jlec_employer_id": "11120",
+     "source": "https://www2.jlec-olig.state.oh.us/olac/Reports/Employers/11120/Agents",
+     "current_agents": [
+      {
+       "name": "Nick Blazer",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "Matt Redfield",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      }
+     ]
+    }
+   ],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Ascend",
    "website": "https://www.awholdings.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-9878f97747e7",
+   "directory_record_name": "Ascend Cannabis",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Green Analytics",
    "website": "https://greenanalyticslabs.com",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-923f274679fc",
+   "directory_record_name": "Green Analytics OH",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Surfside",
    "website": "http://www.surfside.io",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-207c57d3828a",
+   "directory_record_name": "Surfside",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "McManamon Insurance",
    "website": "https://www.mcmanamoninsurance.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": null,
+   "directory_record_name": null,
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "CP Labs",
@@ -9120,98 +9742,222 @@
    "lobbying_reported_on": {
     "hb160": "CP Labs Ohio"
    },
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-326247e5b9d0",
+   "directory_record_name": "CP Labs Ohio Operating Company, LLC",
+   "jlec_registrations": [
+    {
+     "employer": "CP Labs Ohio",
+     "jlec_employer_id": "12068",
+     "source": "https://www2.jlec-olig.state.oh.us/olac/Reports/Employers/12068/Agents",
+     "current_agents": [
+      {
+       "name": "Erin Synk",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "Scott Owens",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      },
+      {
+       "name": "Charles Trefny",
+       "legislative": true,
+       "executive": true,
+       "retirement": false
+      }
+     ]
+    }
+   ],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Greenlight",
    "website": "https://greenlightdispensary.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-40726ffc20a0",
+   "directory_record_name": "Greenlight Dispensary",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Locals Cannabis",
    "website": "https://localscannabis.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-63bd45e3d30d",
+   "directory_record_name": "Locals Cannabis Dispensary",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Wright-Patt Credit Union",
    "website": "https://www.wpcu.coop/en-us",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-a5f1518ea942",
+   "directory_record_name": "Wright-Patt Credit Union",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Grow Ohio",
    "website": "https://growoh.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-cfc630983d08",
+   "directory_record_name": "Grow Ohio / Butterfly Effect",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Dope Automation",
    "website": "https://www.dopeautomation.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": null,
+   "directory_record_name": null,
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Kegler Brown",
    "website": "https://www.keglerbrown.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-9b673ee01ed9",
+   "directory_record_name": "Kegler Brown Hill + Ritter",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Gron",
    "website": "https://eatgron.com/ohio-cannabis-edibles/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": null,
+   "directory_record_name": null,
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Elite Preparedness",
    "website": "https://www.elitepreparedness.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-604ede518b05",
+   "directory_record_name": "Elite Preparedness Asset Protection",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Needham Bank",
    "website": "https://www.needhambank.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-ed0c0107656d",
+   "directory_record_name": "Needham Bank",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Sweed",
    "website": "https://www.sweedpos.com/SWEED",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-40bdc9eb2854",
+   "directory_record_name": "Sweed",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "SparkPlug",
    "website": "https://sparkplug.app/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": null,
+   "directory_record_name": null,
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "Supergood",
    "website": "https://supergoodstore.com/store/ravenna/?",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": "org-acbcf491323e",
+   "directory_record_name": "Supergood",
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   },
   {
    "name": "TerrAscend",
    "website": "https://terrascend.com/",
    "jlec_employer_names": [],
    "lobbying_reported_on": {},
-   "testimony_ids": []
+   "testimony_ids": [],
+   "directory_record_id": null,
+   "directory_record_name": null,
+   "jlec_registrations": [],
+   "status": "listed",
+   "status_as_of": "2026-11-24",
+   "left_on": null,
+   "left_source": null
   }
  ],
  "retrieval_attempts": [
@@ -9262,6 +10008,3222 @@
    "url": "https://www.irs.gov/charities-non-profits/form-990-series-downloads",
    "attempted_on": "2026-11-24",
    "result": "The most recent returns listed in the 2026 index for the Ohio Prosecuting Attorneys Association, Ohio Grocers Association and Center for Christian Virtue were not inside the batch file the index names; earlier returns are shown. OHCANN’s 2022 return (filed as OMCIA) is in the 2023 index, which has no batch column; it is linked on ProPublica but not summarized here."
+  },
+  {
+   "source": "Internet Archive snapshots of ohcann.com/members/ (to compare earlier membership)",
+   "url": "https://web.archive.org/web/20260513140251/https://ohcann.com/members/",
+   "attempted_on": "2026-11-24",
+   "result": "The snapshot list and pages reset the connection from the retrieval environment; only the availability service answered. Earlier membership lists were not compared."
+  },
+  {
+   "source": "Ohio Secretary of State bulk campaign finance downloads",
+   "url": "https://www.ohiosos.gov/campaign-finance/campaign-finance-data-downloads/",
+   "attempted_on": "2026-11-24",
+   "result": "Tried once, with the CFDISCLOSURE data host and the FTP host: all returned the same security block (HTTP 403, or no connection for FTP). Stopped there; these files can be pulled by hand later."
   }
- ]
+ ],
+ "ohcann_membership": {
+  "source": "https://ohcann.com/members/",
+  "retrieved_on": "2026-11-24",
+  "wayback_snapshots": [
+   {
+    "date": "2026-05-13",
+    "url": "https://web.archive.org/web/20260513140251/https://ohcann.com/members/"
+   },
+   {
+    "date": "2025-01-15",
+    "url": "https://web.archive.org/web/20250115033214/https://ohcann.com/members/"
+   },
+   {
+    "date": "2024-04-25",
+    "url": "https://web.archive.org/web/20240425084909/https://ohcann.com/members/"
+   }
+  ],
+  "wayback_note": "Snapshot links come from the Internet Archive availability service. The archive’s pages could not be opened from the retrieval environment on 2026-11-24 (connection reset), so earlier membership lists were not compared and no change in membership is inferred from them. No snapshot of the 2026-11-24 retrieval exists.",
+  "status_rule": "Every company is shown as “Listed as OHCANN member (as of the retrieval date)”. A company is moved to “Left OHCANN” only with a dated source that says so.",
+  "directory_note": "Directory record IDs refer to data/directory.json. The OhioWeed directory page does not open a single record by link, so the link opens the directory, where the name can be searched."
+ },
+ "lobbyist_contributions": {
+  "status": "in progress",
+  "as_of": "2026-11-24",
+  "method": "Federal contributions from the FEC individual-contributions API (Ohio addresses, January 2019 on), searched by surname and given name. A record is shown only when the employer named on it is an employer the agent is registered for at JLEC, or a firm the agent’s own firm or bio page confirms. Records that cannot be tied this way are left off. Addresses are used only to read the records and are never published. Ohio contributions are not included: the Secretary of State’s site and bulk files blocked retrieval.",
+  "order": "Agents for OHCANN and OMCIA first, then agents for OHCANN member companies, then every other employer’s agents. The same rule applies to all.",
+  "bios_rule": "Prior government or campaign roles and party ties appear only as the agent’s own firm, organization or bio page states them.",
+  "agents": [
+   {
+    "name": "Abigail Benjamin",
+    "tier": "OHCANN / OMCIA",
+    "registered_for": [
+     "Ohio Cannabis Coalition (OHCANN)",
+     "Ohio Craft Brewers Association"
+    ],
+    "checked_on": "2026-11-24",
+    "status": "records under this name list an employer not tied to the registration; not shown",
+    "contributions": [],
+    "note": "FEC records under this name list the employer Strategic Public Partners (Columbus). That firm’s website is parked, so the firm could not be confirmed from a firm or bio page. Not shown.",
+    "bio": null
+   },
+   {
+    "name": "Adrienne Robbins",
+    "tier": "OHCANN / OMCIA",
+    "registered_for": [
+     "Ohio Cannabis Coalition (OHCANN)"
+    ],
+    "checked_on": "2026-11-24",
+    "status": "records under this name list an employer not tied to the registration; not shown",
+    "contributions": [],
+    "note": "FEC records under this name list the employer Strategic Public Partners (Columbus). That firm’s website is parked, so the firm could not be confirmed from a firm or bio page. Not shown.",
+    "bio": {
+     "text": "Appointed Deputy Executive Director of OHCANN on February 17, 2025; described as a former consultant and former TV news reporter and anchor. No government or campaign role or party tie is stated.",
+     "source": "https://drive.google.com/file/d/1dTONpaeaab215Zj6ggrFQJwqCNneh24m/view?usp=drive_link",
+     "party_ties": null
+    }
+   },
+   {
+    "name": "Charles Trefny",
+    "tier": "OHCANN / OMCIA",
+    "registered_for": [
+     "CP Labs Ohio",
+     "Ohio Cannabis Coalition (OHCANN)"
+    ],
+    "checked_on": "2026-11-24",
+    "status": "no federal records tied to the registration",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "David Bowling",
+    "tier": "OHCANN / OMCIA",
+    "registered_for": [
+     "Ohio Cannabis Coalition (OHCANN)"
+    ],
+    "checked_on": "2026-11-24",
+    "status": "no federal records tied to the registration",
+    "contributions": [],
+    "note": null,
+    "bio": {
+     "text": "Executive Director of OHCANN since late 2024; previously Deputy Superintendent of the Division of Cannabis Control and Deputy Chief Legal Counsel for the Ohio Department of Commerce.",
+     "source": "https://ohcann.com/ohcann-leadership/",
+     "party_ties": null
+    }
+   },
+   {
+    "name": "Joseph R Stevens",
+    "tier": "OHCANN / OMCIA",
+    "registered_for": [
+     "City of Cincinnati",
+     "Matesich Distributing Company",
+     "Ohio Cannabis Coalition (OHCANN)"
+    ],
+    "checked_on": "2026-11-24",
+    "status": "records under this name list an employer not tied to the registration; not shown",
+    "contributions": [],
+    "note": "One FEC record under this name lists the employer Roetzel and Andress. The firm’s website returned a security challenge, so the firm could not be confirmed from its own page. Not shown.",
+    "bio": null
+   },
+   {
+    "name": "Kevin R Schmidt",
+    "tier": "OHCANN / OMCIA",
+    "registered_for": [
+     "Ohio Cannabis Coalition (OHCANN)"
+    ],
+    "checked_on": "2026-11-24",
+    "status": "no federal records tied to the registration",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Matt Close",
+    "tier": "OHCANN / OMCIA",
+    "registered_for": [
+     "Ohio Cannabis Coalition (OHCANN)"
+    ],
+    "checked_on": "2026-11-24",
+    "status": "no federal records tied to the registration",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Andrew D Bowers",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "King City Gardens",
+     "Progressive Treatment Solutions (PTS)",
+     "Pure Ohio Wellness",
+     "Standard Wellness Company, LLC"
+    ],
+    "checked_on": "2026-11-24",
+    "status": "records under this name list an employer not tied to the registration; not shown",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Brad McLean",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "ATCPC of Ohio, LLC d/b/a Klutch Cannabis"
+    ],
+    "checked_on": "2026-11-24",
+    "status": "no federal records tied to the registration",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Brian Perera",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "Nectar Markets of Ohio"
+    ],
+    "checked_on": "2026-11-24",
+    "status": "no federal records tied to the registration",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Chad Hawley",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "CrescoLabs"
+    ],
+    "checked_on": "2026-11-24",
+    "status": "records under this name list an employer not tied to the registration; not shown",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Courtney Saunders",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "Riviera Creek Holdings LLC",
+     "The Scotts Miracle-Gro Company"
+    ],
+    "checked_on": "2026-11-24",
+    "status": "no federal records tied to the registration",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Dan McCarthy",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "ATCPC of Ohio, LLC d/b/a Klutch Cannabis"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Daniel P Leite",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "Riviera Creek Holdings LLC",
+     "The Scotts Miracle-Gro Company"
+    ],
+    "checked_on": "2026-11-24",
+    "status": "records under this name list an employer not tied to the registration; not shown",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Emily Ramach",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "BeneLeaves LLC"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Erin Synk",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "CP Labs Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Gary E Smith, Jr.",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "Ancient Roots",
+     "Ascension Biomedical LLC",
+     "Farkas Farms LLC",
+     "Fire Rock LTD.",
+     "Galenas LLC",
+     "Italian Herbs LLC",
+     "NEN Holdings LLC",
+     "OhiGrow, LLC",
+     "Ohio Clean Leaf",
+     "Paragon Development Group, LLC",
+     "Wellspring Fields"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Giles Allen",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "ATCPC of Ohio, LLC d/b/a Klutch Cannabis",
+     "Governor's Office"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Greg May",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "GTI Ohio LLC",
+     "Trulieve"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Hartwell Marable",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "GTI Ohio LLC",
+     "Trulieve"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Holly Gross",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "Diamond Science",
+     "Verdant Creations"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "John H Oberle",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "GTI Ohio LLC",
+     "Ohio Patient Access",
+     "Trulieve"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Kelsey Woolard",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "Buckeye Relief",
+     "Ohio Alliance of Recovery Providers",
+     "Ohio Manufactured Homes Association (OMHA)",
+     "Ohio Real Estate Investors Association",
+     "Ohio Township Association",
+     "Wholesale Beer and Wine Association of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Kevin DeWine",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "ATCPC of Ohio, LLC d/b/a Klutch Cannabis",
+     "City of Dayton"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Kurt L Leib",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "Riviera Creek Holdings LLC",
+     "The Scotts Miracle-Gro Company"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Lloyd Pierre-Louis",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "Curaleaf Holdings, Inc."
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Matt Redfield",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "Ohio Association of Municipal Court Clerks",
+     "SEO Natural Enterprises, LLC dba Backroad Wellness"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Matthew Ryan",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "CrescoLabs"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Matthew S Whitehead",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "Buckeye Relief",
+     "Ohio Alliance of Recovery Providers",
+     "Ohio Manufactured Homes Association (OMHA)",
+     "Ohio Real Estate Investors Association",
+     "Ohio Township Association",
+     "Wholesale Beer and Wine Association of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "McKenzie K Davis",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "Buckeye State Sheriff's Association",
+     "GTI Ohio LLC",
+     "Ohio Council of Behavioral Health & Family Services Providers",
+     "Ohio Restaurant & Hospitality Alliance",
+     "Wholesale Beer and Wine Association of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Michael Guastella",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "Buckeye Relief",
+     "Ohio Alliance of Recovery Providers",
+     "Ohio Manufactured Homes Association (OMHA)",
+     "Ohio Township Association",
+     "Wholesale Beer and Wine Association of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Nick Blazer",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "OPC Investors LLC d/b/a Ohio Patients Choice",
+     "SEO Natural Enterprises, LLC dba Backroad Wellness"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Rachel G Winder",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "Diamond Science",
+     "Verdant Creations"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Robert N Eshenbaugh, Jr",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "Riviera Creek Holdings LLC",
+     "The Scotts Miracle-Gro Company"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Ronald Romito",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "Buckeye Relief",
+     "Ohio Alliance of Recovery Providers",
+     "Ohio Manufactured Homes Association (OMHA)",
+     "Ohio Real Estate Investors Association",
+     "Ohio Township Association",
+     "Wholesale Beer and Wine Association of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Samuel Porter, III",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "GTI Ohio LLC",
+     "Trulieve"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Scott Owens",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "CP Labs Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Shawn Nelson",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "Ancient Roots",
+     "Ascension Biomedical LLC",
+     "Farkas Farms LLC",
+     "Fire Rock LTD.",
+     "Galenas LLC",
+     "Italian Herbs LLC",
+     "NEN Holdings LLC",
+     "OhiGrow, LLC",
+     "Ohio Clean Leaf",
+     "Paragon Development Group, LLC",
+     "Wellspring Fields"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Sydney Sanders",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "Buckeye Relief",
+     "Ohio Alliance of Recovery Providers",
+     "Ohio Manufactured Homes Association (OMHA)",
+     "Ohio Real Estate Investors Association",
+     "Ohio Township Association",
+     "Wholesale Beer and Wine Association of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Terrence O'Donnell",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "Curaleaf Holdings, Inc.",
+     "Molson Coors Beverage Company USA LLC",
+     "Wild Bill's Tobacco"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Trint Hatt",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "ATCPC of Ohio, LLC d/b/a Klutch Cannabis"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Victor F Hipsley",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "Buckeye Relief",
+     "Ohio Alliance of Recovery Providers",
+     "Ohio Manufactured Homes Association (OMHA)",
+     "Ohio Real Estate Investors Association",
+     "Ohio Township Association",
+     "Wholesale Beer and Wine Association of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "W. Fletch Zimpher",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "GTI Ohio LLC",
+     "Ohio Restaurant & Hospitality Alliance",
+     "Wholesale Beer and Wine Association of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "William Hinman",
+    "tier": "OHCANN member company",
+    "registered_for": [
+     "King City Gardens",
+     "Metrc",
+     "Progressive Treatment Solutions (PTS)",
+     "Pure Ohio Wellness",
+     "Standard Wellness Company, LLC"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Aaron Baer",
+    "tier": "Other employer",
+    "registered_for": [
+     "Center for Christian Virtue"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Aaron M Ockerman",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Healthy Alternatives Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Abby Schafer",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Commerce"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Abigail Wiet",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Taxation"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Abraham Jacob",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Association of Chiefs of Police"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Adam Hewit",
+    "tier": "Other employer",
+    "registered_for": [
+     "OPC Investors LLC d/b/a Ohio Patients Choice"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Adam Schwiebert",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Taxation"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Aileen Collins",
+    "tier": "Other employer",
+    "registered_for": [
+     "Nationwide Children's Hospital, Inc"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Alana Tucker",
+    "tier": "Other employer",
+    "registered_for": [
+     "Center for Addiction Treatment",
+     "City of Cincinnati",
+     "Talbert House"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Alex Boehnke",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Council of Retail Merchants"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Allison DeRoberts",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Restaurant & Hospitality Alliance"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Allison Lawlor",
+    "tier": "Other employer",
+    "registered_for": [
+     "Equitas Health",
+     "Ohio Association of Broadcasters"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Amanda R Sines",
+    "tier": "Other employer",
+    "registered_for": [
+     "American Healthy Alternatives Association",
+     "Ohio Healthy Alternatives Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Andrea Reichman",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Manufactured Homes Association (OMHA)"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Andrew Bauer",
+    "tier": "Other employer",
+    "registered_for": [
+     "Trulieve"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Andrew Conners",
+    "tier": "Other employer",
+    "registered_for": [
+     "Governor's Office"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Andrew Havas",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Healthy Alternatives Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Andrew McAfee",
+    "tier": "Other employer",
+    "registered_for": [
+     "Clermont County Chamber of Commerce"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Andrew Minton",
+    "tier": "Other employer",
+    "registered_for": [
+     "City of Columbus",
+     "Nationwide Children's Hospital, Inc"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Andrew W Herf",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Bar Owners Association",
+     "Ohio Spirits Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Andy Pusateri",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Commerce"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Anne Sesler",
+    "tier": "Other employer",
+    "registered_for": [
+     "City of Cincinnati",
+     "Hamilton County Administration",
+     "Talbert House"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Anthony Aquillo",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Council of Behavioral Health & Family Services Providers"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Anthony Seegers",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Healthy Alternatives Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Bevan Schneck",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Municipal League"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Bria Meisse",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Taxation"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Brian Baldridge",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Agriculture"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Brian Durdle",
+    "tier": "Other employer",
+    "registered_for": [
+     "City of Cuyahoga Falls",
+     "Lake County"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Brian Hickey",
+    "tier": "Other employer",
+    "registered_for": [
+     "Catholic Conference of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Chad Budreau",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Association of Broadcasters"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Charles H Gerhardt, III",
+    "tier": "Other employer",
+    "registered_for": [
+     "Center for Addiction Treatment",
+     "City of Blue Ash",
+     "City of Cincinnati",
+     "City of Lebanon",
+     "City of Mason",
+     "Fifty West Brewing Company",
+     "Green Township, Ohio",
+     "Hamilton County Administration",
+     "Hamilton County Mental Health & Recovery Services Board (HCMHRSB)",
+     "Miami Township (Clermont County)",
+     "Ohio Distiller's Guild",
+     "Rhinegeist Brewery",
+     "Talbert House"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Charles Michael Solley, Jr",
+    "tier": "Other employer",
+    "registered_for": [
+     "Nationwide Children's Hospital, Inc"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Charles Norman",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Public Safety"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Chris Oliveti",
+    "tier": "Other employer",
+    "registered_for": [
+     "The Scotts Miracle-Gro Company"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Christina Polesovsky",
+    "tier": "Other employer",
+    "registered_for": [
+     "American Petroleum Institute - API Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Christina Shaynak-Diaz",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Association of County Behavioral Health Authorities"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Christine Morrison",
+    "tier": "Other employer",
+    "registered_for": [
+     "Governor's Office"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Christine Van Kirk",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Commerce"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Christopher Corder",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Public Safety"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Christopher N Slagle",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Manufacturers' Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Christopher R Long",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Christian Alliance"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Collin Crigger",
+    "tier": "Other employer",
+    "registered_for": [
+     "City of Columbus",
+     "Nationwide Children's Hospital, Inc"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Collin Marozzi",
+    "tier": "Other employer",
+    "registered_for": [
+     "ACLU of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Corey Jordan",
+    "tier": "Other employer",
+    "registered_for": [
+     "Attorney General's Office"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Dakota Sawyer",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohioans for Medical Freedom of Choice Coalition"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Dan Acton",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Real Estate Investors Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Dan Fitzpatrick",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Public Safety"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Dan Pozniak",
+    "tier": "Other employer",
+    "registered_for": [
+     "City of Fairfield",
+     "City of Milford",
+     "City of Monroe"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Daniel Baker",
+    "tier": "Other employer",
+    "registered_for": [
+     "County Commissioners' Association of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Dave Salisbury",
+    "tier": "Other employer",
+    "registered_for": [
+     "Equitas Health",
+     "Ohio Association of Broadcasters"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "David Mahan",
+    "tier": "Other employer",
+    "registered_for": [
+     "Center for Christian Virtue"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "David Wilson",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Public Safety"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Deborah Hackathorn",
+    "tier": "Other employer",
+    "registered_for": [
+     "Distilled Spirits Council of the U.S., Inc",
+     "Ohio Grocers Association",
+     "US Hemp Roundtable"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Desmond Bryant",
+    "tier": "Other employer",
+    "registered_for": [
+     "AmeriHealth Caritas",
+     "Cleveland Clinic Foundation"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Dominic Morgione",
+    "tier": "Other employer",
+    "registered_for": [
+     "Youngstown/Warren Regional Chamber"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Donald Baird",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Healthy Alternatives Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Donovan O'Neil",
+    "tier": "Other employer",
+    "registered_for": [
+     "Americans for Prosperity"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Doug Talbott",
+    "tier": "Other employer",
+    "registered_for": [
+     "Giant Eagle, Inc"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Douglas Moormann",
+    "tier": "Other employer",
+    "registered_for": [
+     "City of Cincinnati",
+     "City of Lebanon",
+     "Columbia Township",
+     "Fifty West Brewing Company",
+     "Green Township, Ohio",
+     "Miami Township (Clermont County)",
+     "Ohio Distiller's Guild",
+     "Rhinegeist Brewery",
+     "Springfield Township Board of Trustees"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Dwayne Siekman",
+    "tier": "Other employer",
+    "registered_for": [
+     "Verano"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Edward L Albright",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Municipal League"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Elizabeth Ford Martini",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Manufacturers' Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Elizabeth Henrich",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Association of County Behavioral Health Authorities"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Elizabeth Miller",
+    "tier": "Other employer",
+    "registered_for": [
+     "Office of the Ohio Public Defender"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Emily Graeter",
+    "tier": "Other employer",
+    "registered_for": [
+     "Cincinnati USA Regional Chamber"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Fonda Freeman",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Association of County Behavioral Health Authorities"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Geoffrey K Collver",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Council of Behavioral Health & Family Services Providers"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Gerald Griffin",
+    "tier": "Other employer",
+    "registered_for": [
+     "Midwest Independent Retailers Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Gordon M Gough",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Council of Retail Merchants"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Grant Stahl",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Restaurant & Hospitality Alliance"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Greg Bennett",
+    "tier": "Other employer",
+    "registered_for": [
+     "420 Craft Beverages"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Gregory J Lestini",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Manufacturers' Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Gretchen Craycraft",
+    "tier": "Other employer",
+    "registered_for": [
+     "Governor's Office"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Heidi M Fought",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Township Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Hurst Talbott",
+    "tier": "Other employer",
+    "registered_for": [
+     "Giant Eagle, Inc"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Isaac Northrop",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Healthy Alternatives Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Jacob C Evans",
+    "tier": "Other employer",
+    "registered_for": [
+     "Wholesale Beer and Wine Association of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Jacob Sargent",
+    "tier": "Other employer",
+    "registered_for": [
+     "Attorney General's Office",
+     "Ohio Manufacturers' Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "James Banko",
+    "tier": "Other employer",
+    "registered_for": [
+     "Christian Business Partnership"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "James Lee",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Manufacturers' Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "James T Benedict",
+    "tier": "Other employer",
+    "registered_for": [
+     "Center for Addiction Treatment",
+     "City of Blue Ash",
+     "City of Cincinnati",
+     "City of Lebanon",
+     "City of Mason",
+     "Fifty West Brewing Company",
+     "Green Township, Ohio",
+     "Hamilton County Administration",
+     "Hamilton County Mental Health & Recovery Services Board (HCMHRSB)",
+     "Miami Township (Clermont County)",
+     "Ohio Distiller's Guild",
+     "Rhinegeist Brewery",
+     "Talbert House"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Jason A Paduchik",
+    "tier": "Other employer",
+    "registered_for": [
+     "Heidelberg Distributing",
+     "Hometown Hero",
+     "Ohio Healthy Alternatives Association",
+     "Ohio Hemp Beverage Alliance"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Jason Dodson",
+    "tier": "Other employer",
+    "registered_for": [
+     "Summit County"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Jason McDonald",
+    "tier": "Other employer",
+    "registered_for": [
+     "Fraternal Order of Police of Ohio, Inc"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Jeff Jacobson",
+    "tier": "Other employer",
+    "registered_for": [
+     "Wholesale Beer and Wine Association of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Jeffrey T DeLeone",
+    "tier": "Other employer",
+    "registered_for": [
+     "Wine Institute"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Jennifer Lynch",
+    "tier": "Other employer",
+    "registered_for": [
+     "Acreage",
+     "Metrc",
+     "Progressive Treatment Solutions (PTS)"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Jill Schuler",
+    "tier": "Other employer",
+    "registered_for": [
+     "Office of Budget and Management"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Jimmy Wolf",
+    "tier": "Other employer",
+    "registered_for": [
+     "Equitas Health",
+     "Ohio Association of Broadcasters"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Johann I Klein",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Public Safety"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "John Carney",
+    "tier": "Other employer",
+    "registered_for": [
+     "Parkland Ventures, LLC"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Jon Cross",
+    "tier": "Other employer",
+    "registered_for": [
+     "Hemp Hold Co."
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Jonathon L McGee",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Municipal League"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Jonithon LaCross",
+    "tier": "Other employer",
+    "registered_for": [
+     "Parkland Ventures, LLC"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Joseph Ewig",
+    "tier": "Other employer",
+    "registered_for": [
+     "Distilled Spirits Council of the U.S., Inc",
+     "Ohio Grocers Association",
+     "US Hemp Roundtable"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Joseph Hollabaugh",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Bar Owners Association",
+     "Ohio Spirits Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Joseph Price",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Vapor Trade Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Joseph Savarise",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Hotel & Lodging Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Joshua Sanders",
+    "tier": "Other employer",
+    "registered_for": [
+     "Diageo North America, Inc."
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Katherine Hunter",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Taxation"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Keary McCarthy",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Mayors Alliance"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Kelly Keyes",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Association of Chiefs of Police"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Kendal Hinesman",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Alliance of Boys & Girls Clubs"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Kent M Scarrett",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Municipal League"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Kevin L Futryk",
+    "tier": "Other employer",
+    "registered_for": [
+     "American Healthy Alternatives Association",
+     "Outdoor Advertising Association of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Kevin Shimp",
+    "tier": "Other employer",
+    "registered_for": [
+     "Molson Coors Beverage Company USA LLC",
+     "Wild Bill's Tobacco"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Kevin Stanek",
+    "tier": "Other employer",
+    "registered_for": [
+     "Columbia Care LLC"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Kimberly Murnieks",
+    "tier": "Other employer",
+    "registered_for": [
+     "Office of Budget and Management"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Kristin M Mullins",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Grocers Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Kyle Brooks",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Township Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Kyle Miller",
+    "tier": "Other employer",
+    "registered_for": [
+     "Anheuser-Busch Companies"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Laura Stanley",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Taxation"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Lauren Diaz",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Bar Owners Association",
+     "Ohio Spirits Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Lauren Huddleston",
+    "tier": "Other employer",
+    "registered_for": [
+     "Wholesale Beer and Wine Association of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Levi Gross",
+    "tier": "Other employer",
+    "registered_for": [
+     "City of Columbus",
+     "Nationwide Children's Hospital, Inc"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Lindsey Brigano",
+    "tier": "Other employer",
+    "registered_for": [
+     "Governor's Office"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Lindsey Short",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Manufacturers' Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Lisa H Dodge",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Association of Broadcasters"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Lora L Miller",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Council of Retail Merchants"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Lori Kershner",
+    "tier": "Other employer",
+    "registered_for": [
+     "Dayton Live"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Louis Tobin",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Prosecuting Attorneys Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Lyle Huffman",
+    "tier": "Other employer",
+    "registered_for": [
+     "Youngstown/Warren Regional Chamber"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Madison Whalen",
+    "tier": "Other employer",
+    "registered_for": [
+     "City of Akron, OH",
+     "Harbor",
+     "Shatterproof"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Maggie Ostrowski",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Association of Criminal Defense Lawyers"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Margaret Sheehan",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Agriculture"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Margaret Simmons",
+    "tier": "Other employer",
+    "registered_for": [
+     "Prevention Action Alliance (PAA)"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Matt Carle",
+    "tier": "Other employer",
+    "registered_for": [
+     "Alliance for Safety and Justice Action Fund",
+     "City of Akron, OH",
+     "Harbor",
+     "Shatterproof"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Matt Koppitch",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Manufacturers' Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Matthew Davis",
+    "tier": "Other employer",
+    "registered_for": [
+     "City of Fairfield",
+     "City of Milford",
+     "City of Monroe"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Matthew Forney",
+    "tier": "Other employer",
+    "registered_for": [
+     "Wine Institute"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Matthew G Kallner",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Association of Chiefs of Police"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Matthew MacLaren",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Chamber of Commerce"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Matthew R Cox",
+    "tier": "Other employer",
+    "registered_for": [
+     "Sarene Craft"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "McKenzie Pickrell-Sensi",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Behavioral Health"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Megan Lashutka",
+    "tier": "Other employer",
+    "registered_for": [
+     "DoorDash, Inc."
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Melissa R Hoeffel",
+    "tier": "Other employer",
+    "registered_for": [
+     "City of Akron, OH",
+     "Harbor",
+     "Shatterproof"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Michael S Weinman",
+    "tier": "Other employer",
+    "registered_for": [
+     "Fraternal Order of Police of Ohio, Inc"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Michael T Evans",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Hotel & Lodging Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Michael Toman",
+    "tier": "Other employer",
+    "registered_for": [
+     "Centene Corporation",
+     "Ohio Council of Behavioral Health & Family Services Providers",
+     "Wholesale Beer and Wine Association of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Michaela Burriss",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Justice & Policy Center"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Michala Stewart",
+    "tier": "Other employer",
+    "registered_for": [
+     "Alliance for Safety and Justice Action Fund",
+     "City of Akron, OH",
+     "Harbor",
+     "Shatterproof"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Mike Culp",
+    "tier": "Other employer",
+    "registered_for": [
+     "City of Cleveland"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Nathan Aichele",
+    "tier": "Other employer",
+    "registered_for": [
+     "Wholesale Beer and Wine Association of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Nathanael Jonhenry",
+    "tier": "Other employer",
+    "registered_for": [
+     "Columbus Distributing Company",
+     "Cuyahoga County Mayors and City Managers Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Pamela Siekman",
+    "tier": "Other employer",
+    "registered_for": [
+     "Verano"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Patricia Harris",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Taxation"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Patrick Higgins",
+    "tier": "Other employer",
+    "registered_for": [
+     "ACLU of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Patrick Schwartz",
+    "tier": "Other employer",
+    "registered_for": [
+     "MAG Industries"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "RJ Mancini",
+    "tier": "Other employer",
+    "registered_for": [
+     "Outdoor Advertising Association of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Rachael Guastella",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Manufacturers' Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Rachel Schubert",
+    "tier": "Other employer",
+    "registered_for": [
+     "420 Craft Beverages",
+     "Sarene Craft"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Rebecca Simon",
+    "tier": "Other employer",
+    "registered_for": [
+     "420 Craft Beverages",
+     "Sarene Craft"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Reese Gallagher",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Association of Broadcasters"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Rick Carfagna",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Chamber of Commerce"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Robert A Cornwell",
+    "tier": "Other employer",
+    "registered_for": [
+     "Buckeye State Sheriff's Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Robert Frost",
+    "tier": "Other employer",
+    "registered_for": [
+     "420 Craft Beverages",
+     "Sarene Craft"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Robert Paduchik",
+    "tier": "Other employer",
+    "registered_for": [
+     "CannAscend Ohio Processing, LLC",
+     "Fraternal Order of Police of Ohio, Inc"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Robert Sellers",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Public Safety"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Ryan Folz",
+    "tier": "Other employer",
+    "registered_for": [
+     "Center for Christian Virtue"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Ryan R Augsburger",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Manufacturers' Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Ryan Stenger",
+    "tier": "Other employer",
+    "registered_for": [
+     "Heidelberg Distributing",
+     "Hometown Hero",
+     "Ohio Hemp Beverage Alliance"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Sarah Biehl",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Mayors Alliance"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Sarah Kincaid",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Children's Hospital Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Sarah O'Leary",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Taxation"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Scott Corbitt",
+    "tier": "Other employer",
+    "registered_for": [
+     "Anheuser-Busch Companies"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Scott Lundregan",
+    "tier": "Other employer",
+    "registered_for": [
+     "Columbus Distributing Company"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Scott North",
+    "tier": "Other employer",
+    "registered_for": [
+     "Parkland Ventures, LLC"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Sean P Dunn",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Association of Broadcasters"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Shannon Strow",
+    "tier": "Other employer",
+    "registered_for": [
+     "Dayton Live"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Shawn Kasych",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Mayors Alliance"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Sherri Warner",
+    "tier": "Other employer",
+    "registered_for": [
+     "City of Cincinnati",
+     "Matesich Distributing Company",
+     "Summit County"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Sheryl Maxfield",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Commerce"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Soley Hernandez",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Council of Behavioral Health & Family Services Providers"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Spencer Gross",
+    "tier": "Other employer",
+    "registered_for": [
+     "MAG Industries"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Stanley E. Gates, II",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Bar Owners Association",
+     "Ohio Spirits Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Stephanie Gilligan",
+    "tier": "Other employer",
+    "registered_for": [
+     "City of Columbus",
+     "Nationwide Children's Hospital, Inc"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Stephen D Dimon, Jr",
+    "tier": "Other employer",
+    "registered_for": [
+     "Noohra Labs"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Stephen E Tugend",
+    "tier": "Other employer",
+    "registered_for": [
+     "City of Cleveland",
+     "NEN Holdings LLC",
+     "One Orijin"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Stephen Nielson",
+    "tier": "Other employer",
+    "registered_for": [
+     "City of Columbus",
+     "Nationwide Children's Hospital, Inc"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Steve Stivers",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Chamber of Commerce"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Teresa L Nau",
+    "tier": "Other employer",
+    "registered_for": [
+     "Talbert House"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Teresa Marie Lampl",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Council of Behavioral Health & Family Services Providers"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Thomas P Pappas",
+    "tier": "Other employer",
+    "registered_for": [
+     "Anheuser-Busch Companies"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Thomas Wetmore",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Municipal League"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Tia Moretti",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Behavioral Health"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Tim Biggam",
+    "tier": "Other employer",
+    "registered_for": [
+     "City of Forest Park",
+     "City of Piqua",
+     "City of Strongsville",
+     "Ohio Municipal League"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Tim W Johnson",
+    "tier": "Other employer",
+    "registered_for": [
+     "Cannabis Safety First LLC"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Timothy J Bechtold",
+    "tier": "Other employer",
+    "registered_for": [
+     "Wholesale Beer and Wine Association of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Timothy J Cosgrove",
+    "tier": "Other employer",
+    "registered_for": [
+     "Cuyahoga County Mayors and City Managers Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Timothy Johnson",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Poverty Law Center"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Timothy Lynch",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Taxation"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Timothy Williams",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Manufactured Homes Association (OMHA)"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Tod Bowen",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Restaurant & Hospitality Alliance"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Todd Thatcher",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Agriculture"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Tony Long",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Chamber of Commerce"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Troy Judy",
+    "tier": "Other employer",
+    "registered_for": [
+     "Reason Foundation"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Vanessa McMahon",
+    "tier": "Other employer",
+    "registered_for": [
+     "Department of Behavioral Health"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "William Fitzgibbon",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Vapor Trade Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "William Kuehnle",
+    "tier": "Other employer",
+    "registered_for": [
+     "Catholic Conference of Ohio"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "William L Byers, IV",
+    "tier": "Other employer",
+    "registered_for": [
+     "City of Columbus",
+     "Nationwide Children's Hospital, Inc"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "William Schwartz",
+    "tier": "Other employer",
+    "registered_for": [
+     "Midwest Independent Retailers Association"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "William Seitz",
+    "tier": "Other employer",
+    "registered_for": [
+     "CannAscend Ohio Processing, LLC"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "William Vorys",
+    "tier": "Other employer",
+    "registered_for": [
+     "Molson Coors Beverage Company USA LLC",
+     "Wild Bill's Tobacco"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Zachary Miller",
+    "tier": "Other employer",
+    "registered_for": [
+     "Office of the Ohio Public Defender"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   },
+   {
+    "name": "Zack Eckles",
+    "tier": "Other employer",
+    "registered_for": [
+     "Ohio Poverty Law Center"
+    ],
+    "checked_on": null,
+    "status": "not yet checked",
+    "contributions": [],
+    "note": null,
+    "bio": null
+   }
+  ]
+ }
 }

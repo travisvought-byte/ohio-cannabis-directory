@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / 'data/on-the-record.json').read_text(encoding='utf-8'))
 PAGE = (ROOT / 'lawmakers.html').read_text(encoding='utf-8')
 DETAIL = (ROOT / 'on-the-record.html').read_text(encoding='utf-8')
+LOBBY = (ROOT / 'lobbyists.html').read_text(encoding='utf-8')
 LEG = json.loads((ROOT / 'data/legislators.json').read_text(encoding='utf-8'))
 POSITIONS = {'Sponsor', 'Proponent', 'Opponent', 'Interested Party'}
 
@@ -45,6 +46,7 @@ class OnTheRecord(unittest.TestCase):
                 self.assertTrue(t['witness'] and t['organization'] not in ('', 'Self'), t['id'])
         self.assertNotIn('<td>Self</td>', PAGE)
         self.assertNotIn('<td>Self</td>', DETAIL)
+        self.assertNotIn('<td>Self</td>', LOBBY)
 
     def test_every_entry_is_rendered_in_the_same_format(self):
         section = PAGE[PAGE.index('id="on-the-record"'):]
@@ -57,7 +59,7 @@ class OnTheRecord(unittest.TestCase):
         for lob in DATA['lobbying']:
             self.assertTrue(lob['employers'])
             self.assertEqual(urlparse(lob['search_url']).hostname, 'www2.jlec-olig.state.oh.us')
-            block = DETAIL[DETAIL.index('id="lobby-%s"' % lob['bill']):]
+            block = LOBBY[LOBBY.index('id="lobby-%s"' % lob['bill']):]
             block = block[:block.index('</section>')]
             self.assertEqual(block.count('<tr><td data-label="Employer">'), len(lob['employers']), lob['bill'])
             for e in lob['employers']:
@@ -107,15 +109,53 @@ class OnTheRecord(unittest.TestCase):
 
     def test_pages_link_to_the_section(self):
         self.assertIn('href="#on-the-record"', PAGE)
-        self.assertIn('href="https://the-reefer.com/on-the-record.html#lobbying"', PAGE)
+        self.assertIn('href="https://the-reefer.com/lobbyists.html#lobbying"', PAGE)
+        self.assertIn('href="https://ohioweed.org/lawmakers.html#on-the-record"', LOBBY)
         self.assertIn('href="https://ohioweed.org/lawmakers.html#on-the-record"', DETAIL)
         advocacy = (ROOT / 'advocacy.html').read_text(encoding='utf-8')
         self.assertIn('href="lawmakers.html#on-the-record"', advocacy)
         self.assertIn('href="https://the-reefer.com/on-the-record.html"', advocacy)
+        self.assertIn('href="https://the-reefer.com/lobbyists.html"', advocacy)
 
     def test_each_page_stays_inside_the_html_budget(self):
-        for name in ('lawmakers.html', 'on-the-record.html'):
+        for name in ('lawmakers.html', 'on-the-record.html', 'lobbyists.html'):
             self.assertLess((ROOT / name).stat().st_size, 200000, name)
+
+
+    def test_member_tracker(self):
+        ms = DATA['ohcann_membership']
+        self.assertEqual(ms['retrieved_on'], DATA['as_of'])
+        self.assertTrue(all(x['url'].startswith('https://web.archive.org/web/') for x in ms['wayback_snapshots']))
+        section = DETAIL[DETAIL.index('id="members"'):]
+        for m in DATA['ohcann_members']:
+            # Leaving requires a dated source; listed members carry the retrieval date.
+            if m['left_on']:
+                self.assertTrue(m['left_source'], m['name'])
+            else:
+                self.assertEqual(m['status_as_of'], ms['retrieved_on'])
+            self.assertIn(html.escape(m['name']), section, m['name'])
+        self.assertLess(section.index('Left OHCANN'), section.index('Listed members'))
+        against = {m['name'] for m in DATA['ohcann_members']
+                   if any(t['bill'] == 'sb56' and t['position'] == 'Opponent' for t in DATA['testimony'] if t['id'] in m['testimony_ids'])}
+        self.assertEqual(against, {'Italian Herbs', 'Mavuno of Ohio', 'BeneLeaves'})
+        for name in against:
+            self.assertRegex(section, re.escape(html.escape(name)) + r'[^<]*: opponent on SB 56')
+
+    def test_lobbyist_contributions_follow_the_matching_rule(self):
+        lc = DATA['lobbyist_contributions']
+        self.assertEqual(lc['status'], 'in progress')
+        self.assertIn('In progress, as of', LOBBY)
+        tiers = [a['tier'] for a in lc['agents']]
+        order = ['OHCANN / OMCIA', 'OHCANN member company', 'Other employer']
+        self.assertEqual(tiers, sorted(tiers, key=order.index))
+        for a in lc['agents']:
+            self.assertEqual(bool(a['checked_on']), a['status'] != 'not yet checked', a['name'])
+            for c in a['contributions']:
+                self.assertTrue(c['tied_by'], a['name'])
+                self.assertNotIn('contributor_street_1', c)
+                self.assertEqual(urlparse(c['source']).hostname, 'www.fec.gov')
+            if a.get('bio'):
+                self.assertTrue(a['bio']['source'], a['name'])
 
 
 if __name__ == '__main__':

@@ -179,10 +179,15 @@
         }
       }
     },
-    "on-the-record.html": {
+    "lobbyists.html": {
       "title": "Who lobbied Ohio’s cannabis bills: SB 56, HB 160, HB 611",
-      "description": "Lobbying reports, the Ohio Cannabis Coalition’s profile and members, and IRS Form 990 filings of the groups that testified on Ohio’s cannabis bills.",
-      "intro": "Want to know who is working on Ohio’s cannabis bills besides the people who testified? This page lists every employer whose registered lobbyists reported SB 56, HB 160 or HB 611, the Ohio Cannabis Coalition’s own record and member companies, and what the trade and advocacy groups that testified report on their tax returns. Each entry comes from the official filing and links to it."
+      "description": "Every employer and registered lobbyist who reported working on SB 56, HB 160 or HB 611, and the lobbyists’ federal contributions as the filings show them.",
+      "intro": "Want to know who is working on Ohio’s cannabis bills besides the people who testified? This page lists every employer whose registered lobbyists reported SB 56, HB 160 or HB 611, with the agents and reporting periods, and each agent’s federal political contributions that can be tied to the registration. Each entry links to the official filing."
+    },
+    "on-the-record.html": {
+      "title": "Ohio Cannabis Coalition record, member tracker and tax filings",
+      "description": "The Ohio Cannabis Coalition’s registrations, statements and member companies, and the IRS Form 990 filings of the groups that testified on Ohio’s cannabis bills.",
+      "intro": "Want to see who the Ohio Cannabis Coalition is and who belongs to it? This page shows its own statements, lobbying registration and tax returns, every member company it lists with that company’s own testimony and lobbying, and what the trade and advocacy groups that testified report on their tax returns. Each entry comes from the official filing and links to it."
     },
     "locations.html": {
       "title": "Find an Ohio dispensary near you",
