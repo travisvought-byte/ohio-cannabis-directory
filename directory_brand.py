@@ -82,7 +82,7 @@ def brand_footer():
             '<a href="ohio-cannabis-directory.csv" download>CSV download</a>'
             '<a href="https://guide.vethomeguard.org/">Veteran Resident Guide</a>'
             '<a href="https://www.findbingo.org/ohio/">Ohio Bingo Finder</a>'
-            '</nav><p>Created and maintained by <a href="work-with-travis.html">Travis Vought</a> · Shared in support of Veteran Home Guardians · '
+            '</nav><p>Created and maintained by <a href="work-with-travis.html">Travis Vought</a> · Shared in support of Veteran Home Guardians · <a href="https://www.zeffy.com/en-US/donation-form/giving-tuesday-no-veteran-left-isolated">Give to VHG on Giving Tuesday</a> · '
             '<a href="https://github.com/travisvought-byte/ohio-cannabis-directory/blob/main/PROJECT_STEWARDSHIP.md">Project roles</a></p></footer>')
 
 def update_url(kind='listing'):
