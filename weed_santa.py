@@ -130,7 +130,7 @@ def page(nat, landing):
 
     def agree(fid, text):
         return (f'<div class="field"><label class="opt"><input type="checkbox" id="{fid}" name="{fid}" value="yes" data-label="{esc(text)}" required aria-required="true"> '
-                f'{esc(text)} <span class="req">(required)</span></label></div>')
+                f'<span>{esc(text)} <span class="req">(required)</span></span></label></div>')
 
     def done(kind):
         return (f'<div class="ws-done" hidden role="status"><p><strong data-focus tabindex="-1">Your email app should open with your {kind} filled in. Press send there.</strong></p>'
@@ -203,7 +203,7 @@ def page(nat, landing):
                 + '<button type="submit">Send my interest</button>' + done('note') + '</form>')
 
     body.append(f'<h2 id="states">Outside Ohio</h2><p>{esc(d["other_states"])} '
-                'Want it in your state? Say so through <a href="#give">the gifter form</a>, and name your state in the county box\'s note.</p>')
+                f'Want it in your state? <a href="mailto:{esc(email)}?subject=Weed%20Santa%20in%20my%20state">Email Weed Santa</a> and name your state.</p>')
     body.append(f'<p class="muted">Checked {nat.long_date(d["as_of"])}. This page explains Ohio law in plain words; it is not legal advice.</p>')
     body.append('<h2 id="sources">Sources</h2><ol class="sources">' + ''.join(
         f'<li id="wsource-{n}"><a href="{esc(srcs[sid]["url"])}" target="_blank" rel="noopener">{esc(srcs[sid]["title"])}</a> · '
