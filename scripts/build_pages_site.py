@@ -34,6 +34,8 @@ FORWARD = [
     'locations.html', 'november-campaign.html', 'relationships.html', 'resources.html',
     'seeds.html', 'work-with-travis.html',
 ]
+# Folders with a hand-built page of their own, published as written and listed in the sitemap.
+EXTRA_FOLDERS = {'policy-weekend'}
 SKIP = {'.git', '.github', 'node_modules', '__pycache__', '_site', '.pytest_cache'}
 
 
@@ -198,6 +200,8 @@ def build(out):
     real = sorted(p.name for p in out.glob('*.html') if p.name not in FORWARD and p.name != '404.html'
                   and not (p.name.startswith('google') and len(p.name) == 27))
     urls = [f'{SITE}/' + ('' if n == 'index.html' else n) for n in real]
+    # Stand-alone pages that live in their own folder (an event page) are listed too.
+    urls += [f'{SITE}/{p.parent.name}/' for p in sorted(out.glob('*/index.html')) if p.parent.name in EXTRA_FOLDERS]
     (out / 'sitemap.xml').write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + ''.join(f'  <url><loc>{u}</loc></url>\n' for u in urls) + '</urlset>\n', encoding='utf-8')
