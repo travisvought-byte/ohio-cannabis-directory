@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-24",
+  "purpose": "Hash myths, busted (hash-myths.html on the-reefer.com). Owner direction, November 24, 2026: a myth-buster on mechanical hash making built from Travis's own dry sift runs. First-hand figures are labeled as Travis's own; every other claim carries a named source with the date it was checked.",
+  "photo": {
+    "jpg": "hash-dry-sift.jpg",
+    "webp": "hash-dry-sift.webp",
+    "width": 769,
+    "height": 576,
+    "alt": "Fresh dry sift hash lining a black tray, next to a bag of finished sift and a bag of cannabis flower, with a hand sifter on the bench behind them.",
+    "caption": "Travis's bench: the sifter, a tray of fresh dry sift, a bag of finished sift and the flower it came from."
+  },
+  "yield": {
+    "in_grams": 28,
+    "out_grams": 3,
+    "note": "Travis's own dry sift runs: about 3 grams back from an ounce of flower, sometimes a little more, sometimes a little less, depending on the plant."
+  },
+  "steps": [
+    {"icon": "leaf", "title": "Flower or trim", "text": "Start with what you have. An ounce is a real batch."},
+    {"icon": "shake", "title": "Agitate over a screen", "text": "Resin heads fall through; most of the plant stays on top."},
+    {"icon": "tray", "title": "Collect the sift", "text": "Ready right away. Nothing to dry."},
+    {"icon": "filter", "title": "Press through a filter bag", "text": "A fine micron bag holds back the plant matter that got through."},
+    {"icon": "drop", "title": "Clean rosin", "text": "Heat and pressure, no solvent, no water."}
+  ],
+  "myths": [
+    {
+      "id": "pounds",
+      "icon": "scale",
+      "myth": "You need pounds of weed to make hash.",
+      "verdict": "Busted",
+      "text": "You can make hash from a single ounce. On Travis's own dry sift runs, an ounce of flower (about 28 grams) gives back about 3 grams of sift, roughly 1 gram for every 10 in. A screen, a tray and an ounce is a real batch, not a waste of time.",
+      "first_hand": true,
+      "source_ids": []
+    },
+    {
+      "id": "one-pass",
+      "icon": "repeat",
+      "myth": "One pass and the material is spent.",
+      "verdict": "Busted",
+      "text": "Travis runs the same material through a food processor and screen as many as four times and still gets kief out of it. The first pass gives the best grade; each pass after it comes out a step lower. Keep the passes separate and you have several grades from one batch instead of one.",
+      "first_hand": true,
+      "source_ids": []
+    },
+    {
+      "id": "ice",
+      "icon": "snow",
+      "myth": "You need 80 pounds of ice and a tub.",
+      "verdict": "Busted",
+      "text": "Ice water is one way to separate resin, not the only way. Dry sift uses agitation and screens, with no water at all. If you want the cold without the water, dry ice hash keeps the agitation and skips the water.",
+      "source_ids": ["tt-dry-sift-vs-bubble", "gwe-dry-ice-vs-bubble"]
+    },
+    {
+      "id": "clean",
+      "icon": "filter",
+      "myth": "Only ice water makes clean hash.",
+      "verdict": "Busted",
+      "text": "Some plant matter does fall through the screen with dry sift. The fix is refining, not water. Press the sift through a fine micron filter bag and the bag holds the plant matter back. Hash rosin is made from dry sift as well as ice water hash.",
+      "source_ids": ["tt-dry-sift-vs-bubble", "wm-ice-water-hash"]
+    },
+    {
+      "id": "water",
+      "icon": "drop",
+      "myth": "Water makes the hash better.",
+      "verdict": "Busted",
+      "text": "Water adds work. Bubble hash has to be dried before you can use it, and wet hash that is not dried properly can grow mold. Dry sift never touches water, so it is ready as soon as you collect it.",
+      "source_ids": ["trimleaf-dry-sift-vs-bubble", "cen-bubble-vs-dry-sift"]
+    },
+    {
+      "id": "ohio-law",
+      "icon": "gavel",
+      "myth": "Making hash at home is illegal in Ohio.",
+      "verdict": "Busted, with one line you cannot cross",
+      "text": "Ohio law lets an adult-use consumer process homegrown marijuana by manual or mechanical means. Screens, sifting and pressing are mechanical. What the law does not allow at home is hydrocarbon extraction, such as butane. Other home grow limits still apply.",
+      "source_ids": ["orc-3796-04"]
+    }
+  ],
+  "method": {
+    "title": "Travis's take: the process is backwards",
+    "points": [
+      {"icon": "layers", "title": "It is all sorting by size", "text": "Hash grading is classification, like panning for gold. Whole resin heads fall in one micron range; broken stalks and plant bits fall in others. The micron size is what matters. Run your sift through the same micron bags people use for bubble hash, dry, and you sort it into grades without any water."},
+      {"icon": "drop", "title": "You do not really need the water", "text": "The dry bags already do the sorting. If someone insists on a wash anyway, washing sift through the bags does the same job as washing flower: the same particles, sorted by the same micron sizes. Start with sift instead of a tub of plant material and most of the plant is already gone. Cold water is enough, no mountain of ice, and the little plant matter left floats off while the heavier resin heads settle to the bottom."}
+    ],
+    "view": "The tub-and-ice routine is a workaround, built around what was lawful and possible to do, not around what works best. Start from the sift, not the plant.",
+    "label": "Travis's view, from his own runs."
+  },
+  "bottom_line": "All of it is mechanical separation: knock the resin heads off, screen them out, filter what got through, press. The rest is marketing.",
+  "sources": [
+    {"id": "orc-3796-04", "title": "Ohio Revised Code 3796.04 (home grow), effective March 20, 2026", "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/37/3796/3796.04/3-20-2026/3796.04-3-20-2026.pdf", "checked": "2026-11-24", "kind": "primary"},
+    {"id": "tt-dry-sift-vs-bubble", "title": "Terpenes and Testing: dry sift vs. bubble hash, what the water actually does", "url": "https://terpenesandtesting.com/dry-sift-vs-bubble-hash/", "checked": "2026-11-24", "kind": "secondary"},
+    {"id": "gwe-dry-ice-vs-bubble", "title": "Grow Weed Easy: bubble hash vs. dry ice hash", "url": "https://www.growweedeasy.com/?p=13776", "checked": "2026-11-24", "kind": "secondary"},
+    {"id": "wm-ice-water-hash", "title": "Weedmaps: ice water hash and hash rosin", "url": "https://weedmaps.com/products/concentrates/solventless/ice-water-hash", "checked": "2026-11-24", "kind": "secondary"},
+    {"id": "trimleaf-dry-sift-vs-bubble", "title": "Trimleaf: dry sift vs. bubble hash", "url": "https://trimleaf.com/blogs/articles/dry-sift-vs-bubble-hash-the-differences-between-the-two", "checked": "2026-11-24", "kind": "secondary"},
+    {"id": "cen-bubble-vs-dry-sift", "title": "Cannabis Equipment News: bubble hash vs. dry sift", "url": "https://www.cannabisequipmentnews.com/processing/article/22874658/bubble-hash-vs-dry-sift-similarities-and-differences", "checked": "2026-11-24", "kind": "secondary"}
+  ]
+}
