@@ -177,7 +177,9 @@ def status_symbol_css():
              '.usmap .tile::before,.legend .sw::before,.spread .seg::before{content:"";display:block;background:currentColor;'
              '-webkit-mask:var(--sym) center/contain no-repeat;mask:var(--sym) center/contain no-repeat}'
              '.usmap .tile::before{width:.8em;height:.8em}'
-             '.legend .sw{display:inline-grid;place-items:center;color:#fff}.legend .sw::before{width:11px;height:11px}'
+             '.sw{color:#fff}.legend .sw{display:inline-grid;place-items:center}.legend .sw::before{width:11px;height:11px}'
+             '.sw.limited,.sw.varies-locally,.sw.partial,.sw.starter{box-shadow:inset 0 0 0 1.5px #8a6a12}'
+             '.sw.not-reviewed,.sw.not-started{box-shadow:inset 0 0 0 1.5px #6b7470}'
              '.spread .seg::before{flex:none;width:13px;height:13px}',
              symbol_rules('tile', 'sw', 'seg', 'chip'), chip_css(with_symbols=False)]
     rules.append('@media (prefers-color-scheme:dark){.sw.not-reviewed,.sw.not-started{color:#d7ddd9}}')
