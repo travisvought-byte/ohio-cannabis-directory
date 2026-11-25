@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-25",
+  "purpose": "Weed Santa on the-reefer.com (owner direction, November 25, 2026): free help for Ohio adults who cannot afford cannabis, served by vetted Ohio adults who give a legal amount at no cost under Ohio's gifting law. Promotes the help, never a product. Ohio first; no domain, trademark or separate entity yet (owner's call).",
+  "who": "Weed Santa is Travis Vought, who runs this site. Every gifter is vetted by him.",
+  "steps": [
+    {
+      "icon": "mail",
+      "title": "You ask, privately",
+      "text": "Fill in the short form below. It goes straight to Weed Santa's inbox. Nothing is posted on this site."
+    },
+    {
+      "icon": "people",
+      "title": "We match you in your county",
+      "text": "Weed Santa pairs you with a vetted gifter near you, as gifters are available. First names only until you both agree to meet."
+    },
+    {
+      "icon": "home",
+      "title": "You meet at a private home",
+      "text": "Yours or the gifter's, or a farm. Never a parking lot, park, bar, hall, hotel or event."
+    },
+    {
+      "icon": "gift",
+      "title": "It is a gift. Full stop.",
+      "text": "You never pay, tip, trade or chip in for gas. Bring your ID; the gifter will check it."
+    }
+  ],
+  "rules": [
+    {
+      "icon": "id",
+      "title": "Both 21 or older",
+      "text": "The person giving and the person receiving must both be at least 21. Giving to anyone younger is against the law.",
+      "source_ids": [
+        "orc-3796-221",
+        "orc-3796-06"
+      ]
+    },
+    {
+      "icon": "gift",
+      "title": "Free means free",
+      "text": "The gift must be without remuneration: no money, no gas money, no trade, no tip, no favor in return.",
+      "source_ids": [
+        "orc-3796-221"
+      ]
+    },
+    {
+      "icon": "scale",
+      "title": "Up to 2.5 oz or 15 g a day",
+      "text": "No more than 2.5 ounces of flower or 15 grams of extract to the same person on the same day.",
+      "source_ids": [
+        "orc-3796-221"
+      ]
+    },
+    {
+      "icon": "home",
+      "title": "Private homes and farms only",
+      "text": "The handoff must happen on privately owned property used mainly as a home or a farm. Every other kind of handoff needs a state license.",
+      "source_ids": [
+        "orc-3796-221"
+      ]
+    },
+    {
+      "icon": "pin",
+      "title": "Ohio only",
+      "text": "Ohio's law covers a handoff on private property in Ohio. It does not cover mailing it or carrying it into another state.",
+      "source_ids": [
+        "orc-3796-221"
+      ]
+    },
+    {
+      "icon": "sprout",
+      "title": "Share a harvest, don't grow for someone",
+      "text": "Home growers may give from their own harvest, but Ohio bars growing or holding plants on someone else's behalf, and selling or profiting from a home grow.",
+      "source_ids": [
+        "orc-3796-04"
+      ]
+    },
+    {
+      "icon": "nosmoke",
+      "title": "Not in public",
+      "text": "Consuming it in a public place is against the law.",
+      "source_ids": [
+        "orc-3796-04"
+      ]
+    }
+  ],
+  "never": [
+    "Weed Santa never sells cannabis, never takes payment or donations for a gift, and never ships it.",
+    "Weed Santa never holds, stores or hands out cannabis itself. Gifts go from one Ohio adult to another.",
+    "Weed Santa never publishes who asked. Requests are deleted 90 days after they close.",
+    "Nothing sold here, ever, comes with a gift. No buy-this-get-that."
+  ],
+  "cost_help": [
+    {
+      "icon": "card",
+      "title": "The state card costs nothing",
+      "text": "Ohio dropped its medical marijuana patient and caregiver registration fee on May 15, 2024. The cost left is the visit with a certified physician.",
+      "source_ids": [
+        "dcc-fee-2024",
+        "loveland-fee-2024"
+      ]
+    },
+    {
+      "icon": "star",
+      "title": "Say if you're a veteran or on SSI or SSDI",
+      "text": "Indigent status (for example SSI or SSDI) and veteran status are recorded when you register. Ask your physician to mark it.",
+      "source_ids": [
+        "oh-dcc-obtain"
+      ]
+    },
+    {
+      "icon": "tag",
+      "title": "Ask the dispensary about pricing",
+      "text": "Ask about veteran, medical patient or low-income pricing before you buy. Each store sets its own terms, so ask at the counter or check the store's own page.",
+      "source_ids": []
+    }
+  ],
+  "code": [
+    {
+      "title": "Free means free",
+      "text": "Never take money, gas money, a trade, a tip or a favor, from the person or from anyone on their behalf."
+    },
+    {
+      "title": "Private homes and farms only",
+      "text": "Never hand off in a parking lot, park, bar, hall, hotel or at an event."
+    },
+    {
+      "title": "Check ID, every time",
+      "text": "Both of you 21 or older. No ID, no gift."
+    },
+    {
+      "title": "Stay within the limit",
+      "text": "No more than 2.5 oz of flower or 15 g of extract to the same person in a day."
+    },
+    {
+      "title": "Ohio only",
+      "text": "Give only what you bought at an Ohio dispensary or grew yourself in Ohio. Never mail it or take it across a state line."
+    },
+    {
+      "title": "Share, don't grow for someone",
+      "text": "Give from your own harvest; don't grow for a particular person."
+    },
+    {
+      "title": "Keep it private",
+      "text": "First names only. Never share a requester's details with anyone."
+    },
+    {
+      "title": "Either side can say no",
+      "text": "Anyone can cancel at any time. Tell Weed Santa if anything feels off."
+    }
+  ],
+  "vetting": "Every gifter is vouched for by someone Weed Santa already trusts, shows ID on a video call with Weed Santa, and agrees to the gifter's code. Gifters set how often they can give.",
+  "other_states": "Weed Santa starts in Ohio. Other states set their own gifting limits, and Michigan and Massachusetts also bar gifts that are advertised or promoted to the public, so each state is opened only after its own law is checked.",
+  "privacy": "The form opens an email to Weed Santa from your own email app, so nothing you type is stored on this site or seen by anyone else. Weed Santa uses it only to find you a match and deletes it 90 days after your request closes. Please leave out medical records and diagnoses; they are not needed.",
+  "sources": [
+    {
+      "id": "orc-3796-221",
+      "title": "Ohio Revised Code chapter 3796, section 3796.221 (rights of adult-use consumers, including gifts), effective March 20, 2026",
+      "url": "https://codes.ohio.gov/ohio-revised-code/chapter-3796",
+      "checked": "2026-11-25",
+      "kind": "primary"
+    },
+    {
+      "id": "orc-3796-04",
+      "title": "Ohio Revised Code 3796.04 (home grow and public use), effective March 20, 2026",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-3796.04",
+      "checked": "2026-11-25",
+      "kind": "primary"
+    },
+    {
+      "id": "orc-3796-06",
+      "title": "Ohio Revised Code 3796.06 (no giving to anyone under 21)",
+      "url": "https://codes.findlaw.com/oh/title-xxxvii-health-safety-morals/oh-rev-code-sect-3796-06/",
+      "checked": "2026-11-25",
+      "kind": "secondary"
+    },
+    {
+      "id": "dcc-fee-2024",
+      "title": "Ohio Division of Cannabis Control: patient fee announcement, February 27, 2024",
+      "url": "https://dam.assets.ohio.gov/image/upload/com.ohio.gov/DCC/2024_February_27_Patient_Fee_Announcement.pdf",
+      "checked": "2026-11-25",
+      "kind": "primary"
+    },
+    {
+      "id": "loveland-fee-2024",
+      "title": "Loveland Magazine: Ohio Division of Cannabis Control eliminates patient fee (May 16, 2024)",
+      "url": "https://lovelandmagazine.com/?p=117350",
+      "checked": "2026-11-25",
+      "kind": "secondary"
+    },
+    {
+      "id": "oh-dcc-obtain",
+      "title": "Ohio Division of Cannabis Control: How to obtain medical marijuana",
+      "url": "https://com.ohio.gov/divisions-and-programs/cannabis-control/patients-caregivers/obtain-medical-marijuana",
+      "checked": "2026-10-09",
+      "kind": "primary"
+    }
+  ]
+}
