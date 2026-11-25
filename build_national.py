@@ -1170,6 +1170,7 @@ def help_page(perm, sources):
     body = ['<p class="crumbs"><a href="index.html">Home</a> › Help by need</p>', '<h1>Help by need</h1>', for_you(esc(land['intro'])),
             '<p>Federal rules, national help lines and organizations that cover every state. Each links to the agency or organization that runs it. '
             'A listing is not an endorsement; advocacy groups are named as such. For state-specific help, <a href="index.html#map">pick your state</a>.</p>',
+            '<p><strong>In Ohio and can\'t afford cannabis you need?</strong> <a href="weed-santa.html">Weed Santa</a> matches adults 21 and over with vetted gifters who give a legal amount for free.</p>',
             '<nav class="pills" aria-label="Jump to a need">' + ''.join(f'<a class="pill" href="#{slug(n)}">{need_icon(n, "pi")}{esc(n)}</a>' for n in needs_in_order(perm)) + '</nav>']
     for need in needs_in_order(perm):
         body.append(f'<h2 id="{slug(need)}" class="ih">{need_icon(need, "hi")}{esc(need)}</h2>')
