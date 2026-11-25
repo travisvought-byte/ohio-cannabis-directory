@@ -6,6 +6,7 @@ from pathlib import Path
 from build_directory import TEMPLATE as DIRECTORY_TEMPLATE
 from directory_data import ROOT, RELEASE, load_records, load_relationship_records, relationship_id, script_json
 from directory_brand import brand_page, site_origin
+from site_visuals import count_bars, with_css
 
 OUT = ROOT / 'relationships.html'
 
@@ -35,7 +36,14 @@ def main():
         records.append(item)
     records.sort(key=lambda r:(r['a'].casefold(),r['b'].casefold(),r['kind'].casefold()))
     style = DIRECTORY_TEMPLATE.split('<style>')[1].split('</style>')[0]
-    page = brand_page(TEMPLATE.replace('__STYLE__', style), OUT.name).replace('__DATA__', script_json(records))
+    # How many documented relationships fall under each type, the same types as the filter above and on every card
+    # (visuals pass, November 25, 2026).
+    groups = {}
+    for r in records:
+        groups[r['group']] = groups.get(r['group'], 0) + 1
+    chart = count_bars([(g, n, f'{n} relationship' + ('' if n == 1 else 's')) for g, n in sorted(groups.items(), key=lambda kv: (-kv[1], kv[0]))],
+                       'Documented relationships by type', f'Counted from the {len(records)} relationships listed on this page and in the CSV.')
+    page = brand_page(with_css(TEMPLATE.replace('__STYLE__', style).replace('__CHART__', chart)), OUT.name).replace('__DATA__', script_json(records))
     page = page.replace('__VERSION__', RELEASE['version']).replace('__DATE__', RELEASE['released_on']).replace('__COUNT__', str(len(records)))
     OUT.write_text(site_origin(page))
     print(f'wrote {OUT} — {len(records)} relationships')
@@ -53,6 +61,7 @@ TEMPLATE = r'''<!doctype html>
 <div class="actions"><button class="btn" id="share">Copy search link</button><a class="btn" href="b2b-relationships.csv" download>Download relationships CSV</a><a class="btn" href="__RELATIONSHIP_UPDATE_URL__">Email a relationship update</a><span id="share-status" role="status" aria-live="polite"></span></div>
 <p id="tally" role="status" aria-live="polite"></p></div></header>
 <main class="wrap" id="results"></main>
+<section class="wrap" aria-label="Relationships by type">__CHART__</section>
 <noscript><p class="wrap">Read the <a href="b2b-relationships.csv">relationship CSV</a> for all documented relationships and evidence.</p></noscript>
 <aside class="wrap page-notes" aria-label="About this listing"><p>A Veteran Home Guardians resource, compiled and maintained by Travis Vought. Release v__VERSION__ · __DATE__. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p><p class="update-contact">Additions and corrections: <a href="__RELATIONSHIP_UPDATE_URL__">__VHG_EMAIL__</a>.</p></aside>
 <script>

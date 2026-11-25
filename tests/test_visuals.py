@@ -91,5 +91,59 @@ class StepDiagrams(unittest.TestCase):
             self.assertEqual(dupes, [], name)
 
 
+# Visuals pass (owner direction, November 25, 2026: "add some reasonable visuals everywhere, at least for the US side").
+NATIONAL = ROOT / 'national'
+US_PAGES = [p for p in sorted(NATIONAL.glob('*.html')) if not p.name.startswith('world') and p.name != 'jokes.html']
+VISUAL = re.compile(r'<svg\b|class="(usmap|lmap|vsteps|tline|spread[^"]*|stats|vstats|vflow|vchart)"')
+
+
+class EveryUsPage(unittest.TestCase):
+    def test_every_us_page_has_a_visual(self):
+        for path in US_PAGES:
+            self.assertRegex(path.read_text(encoding='utf-8'), VISUAL, path.name)
+        for name in ('advocacy', 'expungement', 'resources', 'knowledge', 'directory', 'buyer-guide', 'assessment', 'lawmakers', 'seeds',
+                     'on-the-record', 'lobbyists', 'relationships', 'pennsylvania-advocacy', 'pennsylvania-directory', 'november-campaign', 'ancestry'):
+            self.assertRegex((ROOT / f'{name}.html').read_text(encoding='utf-8'), VISUAL, name)
+
+
+class StatePageVisuals(unittest.TestCase):
+    import json as _json
+    PERM = _json.loads((ROOT / 'data/state-permissions.json').read_text(encoding='utf-8'))
+    MED = {p['state']: p for p in _json.loads((ROOT / 'data/medical-programs.json').read_text(encoding='utf-8'))['states']}
+
+    def page(self, code):
+        name = re.sub(r'[^a-z0-9]+', '-', self.PERM['jurisdictions'][code].lower()).strip('-')
+        return (NATIONAL / f'{name}.html').read_text(encoding='utf-8')
+
+    def test_locator_marks_one_state_and_says_it_in_words(self):
+        for code in self.PERM['jurisdictions']:
+            page = self.page(code)
+            fig = re.search(r'<figure class="locator">(.*?)</figure>', page, re.S)
+            self.assertTrue(fig, code)
+            self.assertEqual(fig.group(1).count('class="here '), 1, code)
+            self.assertRegex(fig.group(1), r'<div class="lmap" role="img" aria-label="Map: [^"]+ for adult use">')
+            self.assertIn('Adult use: <span class="chip', fig.group(1), 'the caption gives the answer in words')
+
+    def test_medical_steps_are_the_states_own_words_in_order(self):
+        for code, prog in self.MED.items():
+            if not prog.get('steps'):
+                continue
+            steps = re.search(r'<ol class="steps vsteps" role="list">(.*?)</ol>', self.page(code), re.S).group(1)
+            self.assertEqual([text(x) for x in re.findall(r'<span class="stt">(.*?)</span>', steps)], prog['steps']['items'], code)
+            self.assertNotIn('<svg', re.sub(r'<svg viewBox="0 0 24 24"[^>]*aria-hidden="true" focusable="false">', '', steps.replace('<span class="sti" aria-hidden="true">', '')))
+
+    def test_timeline_dates_come_from_the_answers(self):
+        for code in self.PERM['jurisdictions']:
+            page = self.page(code)
+            dates = sorted({a['effective_on'] for a in self.PERM['answers'] if a['state'] == code and a['effective_on']})
+            fig = re.search(r'<figure class="tline".*?</figure>', page, re.S)
+            if not dates:
+                self.assertIsNone(fig, code)
+                continue
+            self.assertEqual(re.findall(r'<time datetime="([^"]+)">', fig.group(0)), dates, code)
+            for href in re.findall(r'href="#([^"]+)"', fig.group(0)):
+                self.assertIn(f'id="{href}"', page, code)
+
+
 if __name__ == '__main__':
     unittest.main()

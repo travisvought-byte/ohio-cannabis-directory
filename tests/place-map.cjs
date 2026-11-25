@@ -45,5 +45,5 @@ assert(/data-table="cs-table" data-input="cs-filter"/.test(nl),'the Amsterdam ma
 
 // privacy
 const priv=read('national/privacy.html');
-assert(/<h2 id="map">Maps<\/h2>/.test(priv)&&/tile\.openstreetmap\.org/.test(priv)&&/OpenStreetMap sees your IP address/.test(priv)&&/never stored or sent to this site/.test(priv),'privacy page explains the map pictures and the near-me button');
+assert(/<h2 id="map"[^>]*>(<span class="hi">.*?<\/span>)?Maps<\/h2>/.test(priv)&&/tile\.openstreetmap\.org/.test(priv)&&/OpenStreetMap sees your IP address/.test(priv)&&/never stored or sent to this site/.test(priv),'privacy page explains the map pictures and the near-me button');
 console.log(`PASS place maps: Leaflet served from this site, ${caRows.length} Ontario stores and ${shops.filter(s=>s.lat!=null).length} Amsterdam coffeeshops pinned from the data, dispensary pins from the records, OpenStreetMap the only outside source and disclosed, nothing stored.`);

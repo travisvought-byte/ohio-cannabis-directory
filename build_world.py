@@ -412,6 +412,15 @@ def us_rows(perm, cites, status):
     return rows
 
 
+def us_map(perm):
+    """The home page's adult-use tile map, so a traveller sees at a glance where the strict states are (visuals pass,
+    November 25, 2026). Each tile names its state and answer; the key counts each answer."""
+    adult = next(q for q in perm['questions'] if q['id'] == 'adult-use')
+    grid, legend = nat.tile_map(perm, adult, nat.answers_by_state(perm), 'Map: adult use by state. Select a state to open its guide.')
+    return ('<h3 id="us-map">Every state on one map</h3><p>Adult use by state, from each state page. Not permitted and medical-only states are the ones '
+            f'listed on this page.</p><div class="mapbox"><div>{grid}{legend}</div></div>')
+
+
 def warnings_page(world, perm, sources):
     cites = nat.Cites(sources)
     cards = []
@@ -426,14 +435,15 @@ def warnings_page(world, perm, sources):
             + nat.for_you(nat.esc(LANDING['travel-warnings.html']['intro'])) +
             '<p class="alert"><strong>The short version:</strong> don\'t fly with it, don\'t cross a border with it, and check whether a country tests travellers before you go. '
             'That includes CBD and vape cartridges.</p>'
-            '<h2 id="countries">Countries with the harshest penalties</h2>' + ''.join(cards) +
-            '<h2 id="us-states">The strictest US states</h2>'
+            + nat.icon_heading(2, 'countries', 'Countries with the harshest penalties', 'warning') + ''.join(cards) +
+            nat.icon_heading(2, 'us-states', 'The strictest US states', 'scale') +
             f'<p>These {len(rows)} states have no adult-use law and no full medical program, and some penalties reach felony level. '
             'Each answer comes from the state page and links to its source.</p>'
             f'<div class="alert"><strong>Texas: vapes and edibles are felonies.</strong> {nat.esc(tx["text"])} {cites.mark(tx["source_ids"])}'
             f'<br><span class="muted">{nat.esc(tx["citation"])}</span></div>'
             f'<ul class="rows">{"".join(rows)}</ul>'
-            '<h2 id="medical-only-states">Medical card only</h2>'
+            + us_map(perm) +
+            nat.icon_heading(2, 'medical-only-states', 'Medical card only', 'card') +
             f'<p>In these {len(med_rows)} states, cannabis is legal only for registered patients. Without a card, the state\'s criminal penalties apply.</p>'
             f'<ul class="rows">{"".join(med_rows)}</ul>'
             '<p class="muted">Summaries of the cited sources, each with the date it was checked. Not legal advice.</p>' + cites.render())
@@ -450,7 +460,7 @@ def hash_section(her, cites):
     h = her['hash']
     items = ''.join(f'<div class="card"><h3>{nat.esc(m["name"])}</h3><p class="muted">{nat.esc(m["where"])}</p>'
                     f'<p>{nat.esc(m["text"])} {cites.mark(m["source_ids"])}</p></div>' for m in h['methods'])
-    return (f'<h2 id="hash">{nat.esc(h["title"])}</h2><p>{nat.esc(h["intro"])}</p>{items}'
+    return (nat.icon_heading(2, 'hash', nat.esc(h["title"]), 'box') + f'<p>{nat.esc(h["intro"])}</p>{items}'
             '<p class="muted">Modern solventless forms such as ice-water hash and rosin are explained in <a href="learn.html#processing">Cannabis 101</a>.</p>')
 
 
@@ -499,6 +509,21 @@ def learn_page():
                      ld=[nat.breadcrumbs([('Home', '')], 'learn.html', 'Cannabis 101')], css=nat.ICON_HEAD_CSS)
 
 
+def heritage_scene():
+    """A decorative header picture for the heritage page (visuals pass, November 25, 2026): a cannabis plant on a hillside
+    under the sun, an original flat drawing. It says nothing the page does not, so it is hidden from screen readers."""
+    leaf = ''.join(f'<ellipse cx="0" cy="-{l // 2}" rx="{max(3, l // 7)}" ry="{l // 2}" transform="rotate({a})"/>'
+                   for a, l in ((0, 46), (-28, 40), (28, 40), (-58, 32), (58, 32), (-88, 22), (88, 22)))
+    return ('<svg class="scene" viewBox="0 0 520 150" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">'
+            '<rect width="520" height="150" rx="16" fill="#e8efe3"/><circle cx="420" cy="48" r="26" fill="#e9b949"/>'
+            '<path d="M0 112 Q90 70 200 98 T420 92 T520 100 V150 H0 Z" fill="#9cc29a"/><path d="M0 128 Q130 104 260 122 T520 118 V150 H0 Z" fill="#2f6d50"/>'
+            '<path d="M150 118 V58" stroke="#1d4a37" stroke-width="3" stroke-linecap="round"/>'
+            f'<g fill="#1d4a37" transform="translate(150 66)">{leaf}</g>'
+            f'<g fill="#2f6d50" transform="translate(150 98) scale(.55)">{leaf}</g>'
+            f'<g fill="#2f6d50" transform="translate(300 116) scale(.5)">{leaf}</g>'
+            '<path d="M300 132 V116" stroke="#1d4a37" stroke-width="2"/></svg>')
+
+
 def heritage_page(her, sources):
     cites = nat.Cites(sources)
     o, l = her['origin'], her['landrace']
@@ -513,9 +538,9 @@ def heritage_page(her, sources):
     jump = ' · '.join(f'<a href="#{nat.esc(r["id"])}">{nat.esc(r["place"])}</a>' for r in her['regions'])
     body = (CSS + '<p class="crumbs"><a href="index.html">Home</a> › <a href="world.html">Around the world</a> › Where weed comes from</p>'
             '<h1>Where weed comes from</h1>'
-            + nat.for_you(nat.esc(LANDING['heritage.html']['intro'])) +
-            f'<div class="story"><h2>{nat.esc(o["title"])}</h2><p>{nat.esc(o["text"])} {cites.mark(o["source_ids"])}</p></div>'
-            f'<div class="story"><h2>{nat.esc(l["title"])}</h2><p>{nat.esc(l["text"])} {cites.mark(l["source_ids"])}</p></div>'
+            + nat.for_you(nat.esc(LANDING['heritage.html']['intro'])) + heritage_scene() +
+            f'<div class="story"><h2 class="ih2"><span class="hi">{nat.icon("globe")}</span>{nat.esc(o["title"])}</h2><p>{nat.esc(o["text"])} {cites.mark(o["source_ids"])}</p></div>'
+            f'<div class="story"><h2 class="ih2"><span class="hi">{nat.icon("leaf")}</span>{nat.esc(l["title"])}</h2><p>{nat.esc(l["text"])} {cites.mark(l["source_ids"])}</p></div>'
             f'<p class="onpage">{jump} · <a href="#hash">Hash traditions</a></p>' + ''.join(cards) + hash_section(her, cites) +
             '<p class="muted">History drawn from the cited research, government records and reporting. Strain names are traditional market names, not verified genetics.</p>' + cites.render())
     return nat.shell('Where weed comes from: landraces and the people behind them',

@@ -74,10 +74,14 @@ a.vflow-box .vflow-t{color:var(--v-accent,#8c0924);text-decoration:underline;tex
 .vtrack{display:block;height:16px;border-radius:3px;background:#f1ecec}.vb{display:block;height:100%;min-width:4px;width:calc(var(--w)*100%);border-radius:3px;background:var(--v-accent,#8c0924)}
 .vb.alt{background:repeating-linear-gradient(135deg,var(--v-accent,#8c0924) 0 4px,#ecc9d0 4px 8px);box-shadow:inset 0 0 0 1.5px var(--v-accent,#8c0924)}
 .vic{display:inline-flex;align-items:center;gap:8px}.vic svg{flex:none;width:22px;height:22px;color:var(--v-accent,#8c0924)}
+.vstats{list-style:none;margin:14px 0 18px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:10px}
+.vstats li{display:flex;align-items:center;gap:12px;min-width:0;padding:12px 14px;background:#fff;border:1px solid #c9c9c9;border-left:5px solid var(--v-accent,#8c0924);border-radius:10px;color:#25282b;line-height:1.3}
+.vstats .vs-ic{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--v-tint,#f7e9ec);color:var(--v-accent,#8c0924)}.vstats .vs-ic svg{width:24px;height:24px}
+.vstats strong{display:block;font-size:1.45rem;line-height:1.1}.vstats .vs-l{display:block;font-size:.9rem;color:#4d4f52;overflow-wrap:anywhere}
 .sec-h{display:flex;align-items:center;gap:12px}.sec-ic{flex:none;display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--v-tint,#f7e9ec);color:var(--v-accent,#8c0924)}.sec-ic svg{width:24px;height:24px}
 @media(max-width:600px){.vbars dd{grid-template-columns:1fr}}
 @media print{.vchart,.vflow-box{break-inside:avoid}.vb,.vflow-n,.vflow-ic,.sec-ic{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
-@media (forced-colors:active){.vflow-box{border-color:CanvasText}.vb{forced-color-adjust:none;background:CanvasText}
+@media (forced-colors:active){.vflow-box,.vstats li{border-color:CanvasText}.vb{forced-color-adjust:none;background:CanvasText}
 .vb.alt{background:repeating-linear-gradient(135deg,CanvasText 0 4px,Canvas 4px 8px);box-shadow:inset 0 0 0 1.5px CanvasText}.vtrack{border:1px solid CanvasText}}
 '''
 
@@ -131,6 +135,25 @@ def duration_bars(rows, series, title, note):
         groups.append(f'<div><dt>{html.escape(label)}</dt>{dds}</div>')
     return (f'<figure class="vchart"><figcaption><strong>{html.escape(title)}</strong><span>{note}</span></figcaption>'
             f'<dl class="vbars">' + ''.join(groups) + '</dl></figure>')
+
+
+def stat_tiles(items, label, accent=None):
+    """Counts the page already gives, as icon tiles (visuals pass, November 25, 2026). items: (icon, number, words).
+    A list, so each tile reads as one line ("16 source-reviewed entries"); the icon is hidden from screen readers."""
+    style = f' style="--v-accent:{accent}"' if accent else ''
+    return (f'<ul class="vstats" aria-label="{html.escape(label, quote=True)}"{style}>' + ''.join(
+        f'<li><span class="vs-ic" aria-hidden="true">{icon(name)}</span><span><strong>{html.escape(str(n))}</strong> '
+        f'<span class="vs-l">{html.escape(words)}</span></span></li>' for name, n, words in items) + '</ul>')
+
+
+def count_bars(rows, title, note):
+    """A bar chart of counts the page already states in words (visuals pass, November 25, 2026). rows: (label, count,
+    words shown beside the bar). Each bar keeps its words and number as text; bars share one scale, the largest count."""
+    top = max(n for _, n, _ in rows) or 1
+    groups = ''.join(f'<div><dt>{html.escape(label)}</dt><dd><span>{html.escape(words)}</span><span class="vtrack">'
+                     f'<span class="vb" style="--w:{n / top:.4f}"></span></span></dd></div>' for label, n, words in rows)
+    return (f'<figure class="vchart"><figcaption><strong>{html.escape(title)}</strong><span>{note}</span></figcaption>'
+            f'<dl class="vbars">{groups}</dl></figure>')
 
 
 def section_heading(level, inner, name, attrs=''):

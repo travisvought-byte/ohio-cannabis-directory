@@ -196,8 +196,9 @@ class AdvertisingWordingTest(unittest.TestCase):
 
     def test_partners_page_explains_sponsoring_without_prices(self):
         partners = self.PAGES['partners.html']
-        start = partners.index('<h2 id="sponsor">Sponsor or advertise</h2>')
-        section = partners[start:partners.index('<h2 id="link">', start)]
+        start = partners.index('<h2 id="sponsor"')
+        self.assertRegex(partners[start:], r'^<h2 id="sponsor"[^>]*>(<span class="hi">.*?</span>)?Sponsor or advertise</h2>')
+        section = partners[start:partners.index('<h2 id="link"', start)]
         for words in ('Who can sponsor', 'labeled “Sponsored”', 'licensed where they operate', 'No health or medical claims',
                       'under 21', 'reviewed by a person', 'mailto:' + build_national.EMAIL):
             self.assertIn(words, section)
@@ -217,9 +218,11 @@ class PrivacyPageTest(unittest.TestCase):
                       'adults 21 and older', 'not directed to children', 'We do not sell personal information',
                       'mailto:' + build_national.EMAIL,
                       # the store maps (November 21, 2026): where the street pictures come from and what the "near me" button does
-                      '<h2 id="map">Maps</h2>', 'tile.openstreetmap.org', 'OpenStreetMap sees your IP address',
+                      'tile.openstreetmap.org', 'OpenStreetMap sees your IP address',
                       'Your location is never stored or sent to this site'):
             self.assertIn(words, text)
+        # its heading may carry a decorative icon (visuals pass, November 25, 2026)
+        self.assertRegex(text, r'<h2 id="map"[^>]*>(<span class="hi">.*?</span>)?Maps</h2>')
 
     def test_the_counter_is_still_goatcounter(self):
         script = (ROOT / 'assets/analytics.js').read_text(encoding='utf-8')

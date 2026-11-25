@@ -3,6 +3,7 @@ import csv
 import json
 from directory_brand import brand_page
 from public_data import externalize
+from site_visuals import count_bars, with_css
 from strain_ancestry import DATA, ROOT, analyze
 OUT = ROOT / 'ancestry.html'
 
@@ -39,6 +40,16 @@ const selected=byId[new URLSearchParams(location.search).get('strain')];if(selec
 </script></body></html>'''.replace('__DATA__',payload).replace('__COUNT__',str(len(catalog))).replace('__NAMES__',str(data['selection']['distinct_name_count']))
     page=page.replace('<script id="model" type="application/json">'+payload+'</script>','').replace("JSON.parse(document.getElementById('model').textContent)",payload)
     page=externalize(page,payload,{'data':data,'report':report},'data/public-strains.json')
+    # Producer-specific profiles per producer, the same producers as the filter below (visuals pass, November 25, 2026).
+    by_producer={}
+    for st in catalog:
+        if st.get('producer'):
+            by_producer[st['producer']]=by_producer.get(st['producer'],0)+1
+    if by_producer:
+        chart=count_bars([(name,n,f'{n} profile'+('' if n==1 else 's')) for name,n in sorted(by_producer.items(),key=lambda kv:(-kv[1],kv[0]))],
+                         'Producer-specific profiles, by producer','Counted from the profiles in this library. Catalog inclusion does not establish popularity or sales rank.')
+        at=page.index('<label for="q">')
+        page=with_css(page[:at]+chart+page[at:])
     OUT.write_text(brand_page(page, OUT.name))
     strains={s['id']:s for s in data['strains']};sources={s['id']:s for s in data['sources']}
     with (ROOT/'data/strains/ancestry.csv').open('w',newline='') as f:

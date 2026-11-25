@@ -14,6 +14,7 @@ from datetime import date
 from pathlib import Path
 
 from directory_brand import OHIO_HOME
+from site_visuals import count_bars, stat_tiles
 
 ROOT = Path(__file__).resolve().parent
 RECORD = ROOT / 'data/on-the-record.json'
@@ -317,6 +318,23 @@ def attempts_section(data):
             f'are not shown yet. The attempts are recorded here so the gap is visible.</p><ul>{items}</ul></section>')
 
 
+# Visuals (owner direction, November 25, 2026): the page's own counts as tiles and bars, each beside the words that
+# give it. Nothing is counted here that the sections below do not list.
+def detail_tiles(data):
+    listed = sum(1 for m in data['ohcann_members'] if not m['left_on'])
+    return stat_tiles([('people', listed, 'OHCANN listed members'), ('form', len(data['nonprofit_filings']), 'groups with Form 990 filings shown'),
+                       ('search', len(data['retrieval_attempts']), 'sources that could not be checked, recorded')], 'This page at a glance', accent='#a90000')
+
+
+def lobbying_bars(data):
+    rows = []
+    for b in data['bills']:
+        n = len(next(l for l in data['lobbying'] if l['bill'] == b['id'])['employers'])
+        rows.append((b['number'], n, f'{n} employer' + ('' if n == 1 else 's') + ' reported lobbying'))
+    return count_bars(rows, 'Employers that reported lobbying, by bill',
+                      f'Counted from the activity reports listed below, as of {esc(day(data["as_of"]))}. A report does not show a position or an amount.')
+
+
 def detail_body():
     data = load()
     rules = ''.join(f'<li>{esc(r)}</li>' for r in data['rules'])
@@ -324,6 +342,7 @@ def detail_body():
             f'<a href="#not-checked">What could not be checked</a> {a("Who lobbied and their contributions", LOBBY_URL)} {a("Committee testimony and lawmakers", LAWMAKERS_URL + "#on-the-record")}</nav>'
             f'<details><summary>How this page is built</summary><ul>{rules}</ul></details>'
             f'<p class="review">Records checked {esc(day(data["as_of"]))}. {a("Download every entry as data", DATA_URL)}.</p>'
+            + detail_tiles(data) +
             f'{ohcann_section(data)}{members_section(data)}{nonprofit_section(data)}{attempts_section(data)}'
             f'<p><strong>Your turn.</strong> {a("Find your own representative and senator and write in your own words", OHIO_HOME + "/advocacy.html#write")}.</p>')
 
@@ -336,5 +355,6 @@ def lobbyists_body():
             f'{a("OHCANN profile and member tracker", DETAIL_URL + "#ohcann")} {a("Committee testimony and lawmakers", LAWMAKERS_URL + "#on-the-record")}</nav>'
             f'<details><summary>How this page is built</summary><ul>{rules}</ul></details>'
             f'<p class="review">Records checked {esc(day(data["as_of"]))}. {a("Download every entry as data", DATA_URL)}.</p>'
+            + lobbying_bars(data) +
             f'{lobbying_section(data)}{lobbyists_section(data)}'
             f'<p><strong>Your turn.</strong> {a("Find your own representative and senator and write in your own words", OHIO_HOME + "/advocacy.html#write")}.</p>')

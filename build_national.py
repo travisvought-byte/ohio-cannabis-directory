@@ -214,6 +214,26 @@ ICON_PATHS = {
     'capitol': 'M3 21h18M4 18h16M5.5 18v-6M10 18v-6M14 18v-6M18.5 18v-6M3.5 12h17M6.5 12a5.5 5.5 0 0 1 11 0M12 6.5V3',
     'gavel': 'M12 6l2.5-2.5 6 6L18 12zM15 9 4 20M13 21h8',
     'phone': 'M5 4h3.5L10 8.5 8 10a11 11 0 0 0 6 6l1.5-2 4.5 1.5V19a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z',
+    # Visuals pass (November 25, 2026): steps of a medical card, the coverage questions, privacy, partners and about.
+    'doctor': 'M6 3v6a4 4 0 0 0 8 0V3M10 13v2.5a5 5 0 0 0 10 0V14M20 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4z',
+    'form': 'M6 3h9l4 4v14H6zM15 3v4h4M9 11h7M9 14.5h7M9 18h4',
+    'shield': 'M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6zM9 12l2 2 4-4',
+    'pill': 'M10.5 20.5a5 5 0 0 1-7-7l6-6a5 5 0 0 1 7 7zM8.5 8.5l7 7',
+    'receipt': 'M6 3h12v18l-3-2-3 2-3-2-3 2zM9 8h6M9 12h6M9 16h3',
+    'chart': 'M4 20V10M10 20V4M16 20v-7M2 20h20',
+    'server': 'M4 4h16v6H4zM4 14h16v6H4zM8 7h.01M8 17h.01',
+    'pin': 'M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11zM12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z',
+    'lock': 'M5 11h14v10H5zM8 11V7a4 4 0 0 1 8 0v4M12 15v2',
+    'tag': 'M3 12V4h8l10 10-8 8zM7.5 7.5h.01',
+    'link': 'M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1',
+    'people': 'M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM2.5 20c0-3.5 2.9-6 6.5-6s6.5 2.5 6.5 6M16 4.3a3.5 3.5 0 0 1 0 6.4M18 14.4c2.1.8 3.5 2.8 3.5 5.6',
+    'mail': 'M3 6h18v12H3zM3 6l9 7 9-7',
+    'check': 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM8 12l3 3 5-6',
+    'book': 'M4 19V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2 2 2 0 0 0 2 2h13M8 7.5h7M8 11h5',
+    'calendar': 'M4 5h16v16H4zM4 10h16M8 3v4M16 3v4',
+    'globe': 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3z',
+    'warning': 'M12 3 2 20h20zM12 9v5M12 17h.01',
+    'leaf': 'M5 19C5 11 10 5 20 4c-1 10-7 15-15 15zM5 19l7-7',
 }
 QUESTION_ICON = {'adult-use': 'scale', 'medical': 'heart', 'buying': 'bag', 'possession': 'box', 'sharing': 'swap', 'home-grow': 'sprout',
                  'public-use': 'cloud', 'driving': 'car', 'employment': 'briefcase', 'record-relief': 'record'}
@@ -258,6 +278,153 @@ def tile_map(perm, question, answers, caption):
     legend = ''.join(f'<li><span class="sw {esc(tone_of(question, st))}"></span>{esc(status_label(perm, question, st))} ({tally[st]})</li>' for st in order)
     return (f'<div class="usmap" role="group" aria-label="{esc(caption)}">' + ''.join(cells) + '</div>',
             f'<ul class="legend" aria-label="Map key">{legend}</ul>')
+
+
+# Visuals on every US page (owner direction, November 25, 2026: "add some reasonable visuals everywhere, at least for
+# the US side"). Each one redraws facts the page already states in words, beside those words; none adds a claim.
+# - locator(): where the state sits on the same tile map as the home page, its tile carrying its adult-use symbol.
+#   The figure is a named image, and its caption says the same in words.
+# - the medical card steps (medical_section) are drawn as a numbered stepper; the steps stay an ordered list of
+#   the state's own wording, and each step's icon is decoration chosen from words in that step.
+# - At a glance is a grid of icon tiles, each tile edged in its answer's tone and carrying its status symbol.
+# - law_timeline(): the dates a state's answers give as "in effect", in order, each linking to its answer.
+# - question_bar(): on a comparison page, the 51 answers as one bar, its counts also shown as text in the tally.
+VISUAL_CSS = '''
+.statehead{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,220px);gap:4px 26px;align-items:start}
+.locator{margin:10px 0 6px}.lmap{display:grid;grid-template-columns:repeat(11,minmax(0,1fr));gap:2px;max-width:220px}
+.lmap span{aspect-ratio:1;border-radius:2px;background:#a9b1ad}
+.lmap .here{position:relative;z-index:1;display:grid;place-items:center;border-radius:3px;transform:scale(1.6);box-shadow:0 0 0 1px #13261d;color:#fff}
+.lmap .here::before{content:"";width:72%;height:72%;background:currentColor;-webkit-mask:var(--sym) center/contain no-repeat;mask:var(--sym) center/contain no-repeat}
+.lmap .here.allowed,.lmap .here.positive{background:#2f7d4f}.lmap .here.medical-only{background:#387b9c}
+.lmap .here.limited,.lmap .here.varies-locally,.lmap .here.partial{background:#e3b23c;color:#2a2108}
+.lmap .here.not-permitted,.lmap .here.negative{background:#b4513a}.lmap .here.not-reviewed{background:#d4d8d5;color:#3b4541}
+.locator figcaption{margin-top:14px;font-size:.88rem;color:var(--soft);line-height:1.5}.locator figcaption strong{color:var(--ink)}
+.vsteps{list-style:none;padding:0;margin:12px 0;counter-reset:vst}
+.vsteps li{position:relative;display:grid;grid-template-columns:46px minmax(0,1fr);gap:12px;align-items:start;margin:0;padding:0 0 16px;counter-increment:vst}
+.vsteps li:not(:last-child)::after{content:"";position:absolute;left:22px;top:48px;bottom:2px;width:2px;background:#6b8796}
+.vsteps .sti{position:relative;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#e5f1f7;color:#1d4f68;border:1.5px solid #3b7fa0}
+.vsteps .sti svg{width:24px;height:24px}.vsteps .sti::after{content:counter(vst);position:absolute;top:-7px;right:-9px;min-width:22px;height:22px;padding:0 5px;border-radius:11px;background:#1d4f68;color:#fff;font:700 13px/22px system-ui,sans-serif;text-align:center}
+.vsteps .stt{padding-top:10px}
+.glance{padding:4px 16px 14px}.glance ul{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:10px;padding:12px 0 0}
+.glance li,.glance li:first-child{border:1px solid var(--line);border-top:4px solid #888;border-radius:12px;background:var(--card)}
+.glance li.t-allowed,.glance li.t-positive{border-top-color:#2f7d4f}.glance li.t-medical-only{border-top-color:#387b9c}
+.glance li.t-limited,.glance li.t-varies-locally,.glance li.t-partial{border-top-color:#b8860b}.glance li.t-not-permitted,.glance li.t-negative{border-top-color:#b4513a}
+.glance a,.glance li a{display:flex;flex-direction:column;align-items:flex-start;gap:8px;height:100%;padding:12px 14px}
+.glance .qi{width:42px;height:42px;border-radius:12px}.glance .qi svg{width:24px;height:24px}
+.glance li.t-partial .qi{background:#fff4dc;color:#664a00}
+.tline{margin:14px 0 18px;padding:12px 16px;background:var(--card);border:1px solid var(--line);border-radius:12px;max-width:760px}
+.tline figcaption strong{display:block;font-size:1.05rem}.tline figcaption span{display:block;font-size:.88rem;color:var(--soft)}
+.tline ol{list-style:none;margin:12px 0 0;padding:0 0 0 6px}.tline li{position:relative;padding:0 0 14px 26px;border-left:2px solid #6b8796}
+.tline li:last-child{border-left-color:transparent;padding-bottom:2px}.tline li::before{content:"";position:absolute;left:-8px;top:3px;width:14px;height:14px;border-radius:50%;background:var(--green2);box-shadow:0 0 0 3px var(--card)}
+.tline time{display:block;font-weight:750}.tline .tq{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;margin:3px 0}.tline .tq a{display:inline-flex;align-items:center;gap:6px;min-height:32px}
+.tline .tq svg{width:18px;height:18px;flex:none;color:var(--green2)}
+.spread.solo{margin:14px 0 4px;max-width:640px}.spread.solo .bar{display:flex;gap:2px;min-height:30px;margin-top:8px}
+.ih2{display:flex;align-items:center;gap:10px}.ih2 .hi{flex:none;width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:var(--mint);color:var(--green)}.ih2 .hi svg{width:22px;height:22px}
+.stats{list-style:none;padding:0;margin:14px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:10px}
+.stats li{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--green2);border-radius:12px;padding:12px 14px}
+.stats .si{flex:none;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--mint);color:var(--green)}.stats .si svg{width:24px;height:24px}
+.stats strong{display:block;font-size:1.5rem;line-height:1.1}.stats span.l{display:block;font-size:.88rem;color:var(--soft);line-height:1.3}
+.need .ni{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--mint);color:var(--green);margin-bottom:6px}.need .ni svg{width:24px;height:24px}
+.scene{display:block;width:100%;max-width:520px;height:auto;margin:6px 0 14px}
+@media (prefers-color-scheme:dark){.lmap span{background:#3d4a43}.lmap .here{box-shadow:0 0 0 1px #e6ece8}.vsteps .sti{background:rgba(59,127,160,.28);color:#a9d8ef}.vsteps .sti::after{background:#a9d8ef;color:#10202a}
+.glance li.t-partial .qi{background:rgba(184,134,11,.25);color:#f1d48a}.tline .tq svg{color:#a8dfbd}.ih2 .hi,.stats .si,.need .ni{color:#a8dfbd}}
+@media(max-width:700px){.statehead{grid-template-columns:1fr}.locator{display:flex;align-items:center;gap:22px}.lmap{width:150px;flex:none}.locator figcaption{margin-top:0}}
+@media print{.lmap .here,.vsteps .sti,.vsteps .sti::after,.tline li::before{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+@media (forced-colors:active){.lmap span{forced-color-adjust:none;background:Canvas;border:1px solid GrayText}.lmap .here{background:Highlight;color:HighlightText}
+.lmap .here::before{background:HighlightText}.vsteps .sti{border-color:CanvasText}.vsteps .sti::after{forced-color-adjust:none;background:CanvasText;color:Canvas}
+.vsteps li:not(:last-child)::after,.tline li::before{forced-color-adjust:none;background:CanvasText}.tline li{border-left-color:CanvasText}.glance li{border-color:CanvasText}}
+''' + symbol_rules('here')
+CSS += VISUAL_CSS
+
+
+def locator(perm, code, answers, place):
+    """Where the state sits among the 50 states and DC, on the home page's tile map. One tile is drawn in its
+    adult-use answer's color and symbol; the caption gives the same answer in words."""
+    q = next(x for x in perm['questions'] if x['id'] == 'adult-use')
+    a = answers.get(code, {}).get('adult-use')
+    status = a['status'] if a else 'not-reviewed'
+    tone, label = tone_of(q, status), status_label(perm, q, status)
+    cells = ''.join(f'<span class="here {esc(tone)}" style="grid-row:{r + 1};grid-column:{c + 1}"></span>' if k == code
+                    else f'<span style="grid-row:{r + 1};grid-column:{c + 1}"></span>'
+                    for k, (r, c) in sorted(TILES.items(), key=lambda kv: kv[1]))
+    return (f'<figure class="locator"><div class="lmap" role="img" aria-label="Map: {esc(place)} among the 50 states and DC, '
+            f'marked {esc(label.lower())} for adult use">{cells}</div>'
+            f'<figcaption><strong>{esc(place[0].upper() + place[1:])}</strong> on the US map. Adult use: {chip(perm, status, q)}</figcaption></figure>')
+
+
+# A step's icon, from the words of the step itself, in this order of preference. Decoration only: the step's
+# own words are the content, and a step that matches none of these gets the number alone.
+STEP_ICONS = [('doctor', r'physician|doctor|provider|practitioner|pharmacist|clinician|certif|recommendation'),
+              ('bag', r'dispensar|\bbuy\b|purchase|treatment center|pharmac'),
+              ('form', r'apply|applic|register|registry|portal|account|online|\bform\b|submit'),
+              ('card', r'\bcard\b|\bid\b|\bfee|\bpay')]
+
+
+def step_icon(text):
+    for name, words in STEP_ICONS:
+        if re.search(words, text, re.I):
+            return icon(name)
+    return ''
+
+
+def step_list(items):
+    """The state's steps as a numbered stepper: still an ordered list of the state's words, read in order; the
+    drawn number and icon are hidden from screen readers, which number the list themselves."""
+    return ('<ol class="steps vsteps" role="list">' + ''.join(
+        f'<li><span class="sti" aria-hidden="true">{step_icon(x)}</span><span class="stt">{esc(x)}</span></li>' for x in items) + '</ol>')
+
+
+def law_timeline(perm, state_answers, place):
+    """The dates on which a state's answers say a rule took effect, oldest first. Only dates already in the
+    answers (effective_on); each entry links to the answer that gives it."""
+    by_date = {}
+    for q in perm['questions']:
+        a = state_answers.get(q['id'])
+        if a and a.get('effective_on'):
+            by_date.setdefault(a['effective_on'], []).append((q, a))
+    if not by_date:
+        return ''
+    rows = []
+    for day in sorted(by_date):
+        items = ''.join(f'<span class="tq"><a href="#q-{esc(q["id"])}">{icon(QUESTION_ICON[q["id"]]) if q["id"] in QUESTION_ICON else ""}'
+                        f'{esc(LAW_BLURB.get(q["id"], q["question"]))}</a> <span class="muted">{esc(a["citation"])}</span></span>' for q, a in by_date[day])
+        rows.append(f'<li><time datetime="{esc(day)}">{long_date(day)}</time>{items}</li>')
+    what = 'date' if len(by_date) == 1 else 'dates'
+    return (f'<figure class="tline" aria-labelledby="tline-h"><figcaption id="tline-h"><strong>Key {what} in {esc(place)}</strong>'
+            '<span>The date each cited law or rule below took effect, as its answer gives it. Select one for the full answer and source.</span></figcaption>'
+            f'<ol>{"".join(rows)}</ol></figure>')
+
+
+def question_bar(perm, question, answers):
+    """One comparison question's 51 answers as a single bar, in the home page chart's colors and symbols. The
+    counts are in the bar's name and in the tally under the map; the map's key explains each symbol."""
+    names = perm['jurisdictions']
+    tally = {}
+    for code in names:
+        a = answers.get(code, {}).get(question['id'])
+        st = a['status'] if a else 'not-reviewed'
+        tally[st] = tally.get(st, 0) + 1
+    order = [st for st in list(question.get('statuses', {})) + list(perm['statuses']) if st in tally]
+    order.sort(key=lambda st: SPREAD_ORDER.index(tone_of(question, st)))
+    said = [f'{status_label(perm, question, st)} {tally[st]}' for st in order]
+    segs = ''.join(f'<span class="seg {esc(tone_of(question, st))}{"" if tally[st] >= 8 else " bare"}" style="flex:{tally[st]} 1 0">'
+                   + (f'<span>{tally[st]}</span>' if tally[st] >= 4 else '') + '</span>' for st in order)
+    return ('<figure class="spread solo"><figcaption><strong>All the answers in one bar</strong>'
+            f'<span class="muted">Each part is one answer, sized by how many of the {len(names)} jurisdictions give it; the number is the count. '
+            'The key under the map explains each symbol, and the list below gives every count in words.</span></figcaption>'
+            f'<span class="bar" role="img" aria-label="{esc(", ".join(said))}, of {len(names)}">{segs}</span></figure>')
+
+
+def icon_heading(level, hid, text, name):
+    """A section heading with a decorative icon in front; the heading reads exactly as its words."""
+    return f'<h{level} id="{esc(hid)}" class="ih2"><span class="hi">{icon(name)}</span>{text}</h{level}>'
+
+
+def stat_tiles(items, label):
+    """Numbers the page already states, as tiles: (icon, number, words). A list, so each reads as one line."""
+    return (f'<ul class="stats" aria-label="{esc(label)}">' + ''.join(
+        f'<li><span class="si" aria-hidden="true">{icon(name)}</span><span><strong>{esc(n)}</strong> <span class="l">{esc(words)}</span></span></li>'
+        for name, n, words in items) + '</ul>')
 
 
 # The other sites in the same family. Every page links to them.
@@ -499,8 +666,8 @@ def medical_section(prog, cites, name, medical_only=True):
     if prog.get('note'):
         out.append(f'<p class="mednote">{esc(prog["note"]["text"])} {cites.mark([prog["note"]["source"]])}</p>')
     if prog.get('steps'):
-        out.append('<h3>Steps</h3><ol class="steps">' + ''.join(f'<li>{esc(x)}</li>' for x in prog['steps']['items'])
-                   + f'</ol><p class="muted">Steps as the state describes them {cites.mark([prog["steps"]["source"]])}</p>')
+        out.append('<h3>Steps</h3>' + step_list(prog['steps']['items'])
+                   + f'<p class="muted">Steps as the state describes them {cites.mark([prog["steps"]["source"]])}</p>')
     rows = [(label, prog[key]) for key, label in MEDICAL_ROWS if prog.get(key)]
     if rows:
         out.append('<dl class="facts">' + ''.join(f'<dt>{esc(label)}</dt><dd>{esc(f["text"])} {cites.mark([f["source"]])}</dd>' for label, f in rows) + '</dl>')
@@ -629,7 +796,8 @@ def pack_link(code, pack, pathway_id):
 def law_section(perm, code, state_answers, cites, sources):
     name = perm['jurisdictions'][code]
     out = [f'<h2 id="law">The law in {esc(name)}</h2>',
-           f'<p>The same {len(perm["questions"])} questions are asked of every state. Each answer names its source and the date it was checked.</p>']
+           f'<p>The same {len(perm["questions"])} questions are asked of every state. Each answer names its source and the date it was checked.</p>',
+           law_timeline(perm, state_answers, 'the District of Columbia' if code == 'DC' else name)]
     for group in perm['groups']:
         out.append(f'<h3>{esc(group["label"])}</h3>')
         for q in (q for q in perm['questions'] if q['group'] == group['id']):
@@ -695,7 +863,7 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
     prog = (medical or {}).get(code)
     shops = (dispensaries or {}).get(code)
     body = [f'<p class="crumbs"><a href="index.html#map">All states</a> › {esc(name)}</p>',
-            f'<h1>Is weed legal in {esc(place)}?</h1>', for_you(state_intro(code, place, state_answers, prog, shops))]
+            f'<h1>Is weed legal in {esc(place)}?</h1>', '<div class="statehead"><div>', for_you(state_intro(code, place, state_answers, prog, shops))]
     lede = [f'{label}: {chip(perm, a["status"], q)} {esc(a["short"])}' for label, q, a in
             (('Adult use', q, state_answers.get(q['id'])) if q['id'] == 'adult-use' else ('Medical use', q, state_answers.get(q['id']))
              for q in perm['questions'] if q['id'] in ('adult-use', 'medical')) if a]
@@ -708,6 +876,7 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
                     f'<span class="muted">({esc(s["publisher"])}, checked {long_date(s["retrieved_on"])})</span></p>')
     else:
         body.append('<p>Official state site: <span class="muted">not yet reviewed</span></p>')
+    body.append('</div>' + locator(perm, code, answers, place) + '</div>')
     if code == 'OH':
         body.append(f'<p><strong>Ohio’s full guide lives at <a href="{OHIO_HOME}/">OhioWeed.org</a></strong>: business directory, dispensary finder, record clearing, advocacy and more.</p>')
     # What the visitor most likely came for comes first: where adults can buy the store list, elsewhere the medical card.
@@ -1086,7 +1255,7 @@ def law_page(perm, question, answers, sources, dispensaries=None):
             f'<h1>{esc(question["question"])}</h1>',
             for_you(esc(land['intro'])) if land.get('intro') else '', stores, more_links(land.get('more')),
             f'<p>Every state and DC, side by side. {answered} of {total} are answered from a named source; open a state for the full answer, its citation and its source.</p>{note}',
-            map_grid, '<p class="muted">Tap a state for its full answer and source, or use the list below.</p>',
+            question_bar(perm, question, answers), map_grid, '<p class="muted">Tap a state for its full answer and source, or use the list below.</p>',
             f'<h2 id="list">Every state in a list</h2><div class="tally">{chips}</div>',
             f'<label for="status-filter">Show</label> <select id="status-filter"><option value="">All {total}</option>{options}</select>',
             '<ul class="rows" id="rows">' + ''.join(rows) + '</ul>',
@@ -1097,14 +1266,14 @@ def law_page(perm, question, answers, sources, dispensaries=None):
         description = land['intro'] + ' All 50 states and DC, each answer sourced and dated.'
     page = law_page_name(question['id'])
     ld = [breadcrumbs([('Home', ''), ('Compare the law', '#compare')], page, question['question'])]
-    return shell(land.get('title') or question['question'], description, ''.join(body), page, 'the state comparison', ld=ld)
+    return shell(land.get('title') or question['question'], description, ''.join(body), page, 'the state comparison', ld=ld, css=SPREAD_CSS)
 
 
 def progress_section(perm, score, directory, answers):
     pathways = directory['pathways']
     total = len(perm['questions'])
     full = sum(len(answers.get(c, {})) == total for c in perm['jurisdictions'])
-    out = ['<h2 id="progress">Build progress</h2>',
+    out = [icon_heading(2, 'progress', 'Build progress', 'chart'),
            f'<p>Ohio is the template. Every state is built toward the same seven-part guide and measured by the same standard. '
            f'{full} of {len(perm["jurisdictions"])} jurisdictions have all {total} law questions answered; '
            f'{len(score["states"])} have a state guide. Scorecard as of {long_date(score["as_of"])}.</p>',
@@ -1152,17 +1321,20 @@ def about_page(perm, score, directory, answers):
     body = ['<p class="crumbs"><a href="index.html">Home</a> › About</p>', f'<h1>About {esc(SITE_NAME)}</h1>',
             f'<p>{esc(SITE_NAME)} is a free cannabis information and resource portal for all 50 states and DC. It grew out of the Ohio Cannabis Directory at '
             f'<a href="{OHIO_HOME}/">OhioWeed.org</a>, which is the template every state is built toward.</p>',
-            '<h2 id="method">How the information is checked</h2>',
+            icon_heading(2, 'method', 'How the information is checked', 'check'),
             f'<p>Every answer names its source and the date it was checked. The site holds {total_answers} reviewed answers from {len(perm["sources"])} sources, as of {long_date(perm["as_of"])}. Each answer carries one of three labels:</p><ul>'
             + ''.join(f'<li><span class="level {esc(k)}">{esc(v)}</span></li>' for k, v in LEVEL_TEXT.items()) +
             '</ul><p>A missing answer reads “Not yet reviewed”. It never means something is prohibited. Summaries are not legal advice; the linked source is the authority.</p>',
-            '<h2 id="rules">Ground rules</h2><ul><li>No paid placement, paid ranking or paid verification.</li>'
+            stat_tiles([('check', total_answers, 'reviewed answers'), ('book', len(perm['sources']), 'named sources'),
+                        ('pin', len(perm['jurisdictions']), 'states and DC, the same questions for each'),
+                        ('form', len(perm['questions']), 'law questions asked of every state')], f'The site in numbers, as of {long_date(perm["as_of"])}'),
+            icon_heading(2, 'rules', 'Ground rules', 'scale') + '<ul><li>No paid placement, paid ranking or paid verification.</li>'
             '<li>The site carries advertising from direct sponsors. Sponsored spots are labeled “Sponsored”, sit apart from listings and answers, and never change what’s listed, how it ranks, or what a state page says. <a href="partners.html#sponsor">How sponsoring works</a>.</li>'
             '<li>State laws are presented side by side and factually. The site does not rank states or say which approach is better.</li>'
             '<li>Nonpartisan: every party and lawmaker is treated the same way.</li></ul>',
             progress_section(perm, score, directory, answers),
             open_data_section(),
-            '<h2 id="corrections">Corrections and reuse</h2>'
+            icon_heading(2, 'corrections', 'Corrections and reuse', 'mail') +
             f'<p>Found something wrong or out of date? <a href="{esc(correction_url("the site"))}">Send a correction</a> with a link to the source. '
             f'Everything here is free to use under CC BY 4.0, and the data and build scripts are public on <a href="{REPO}">GitHub</a>.</p>'
             '<p>How visits are counted and what the site keeps: <a href="privacy.html">Privacy</a>.</p>'
@@ -1183,43 +1355,50 @@ def privacy_page():
             f'<p class="muted">Last updated {long_date(PRIVACY_UPDATED)}.</p>',
             f'<p class="lede">{esc(SITE_NAME)} does not ask who you are. It counts visits without cookies, keeps nothing you type, '
             'shares nothing about you with sponsors and sells no personal information.</p>',
-            '<h2 id="counting">Counting visits</h2>'
+            '<ul class="stats" aria-label="In short">' + ''.join(f'<li><span class="si" aria-hidden="true">{icon(n)}</span><span class="l">{t}</span></li>' for n, t in (
+                ('chart', 'Visits counted without cookies'), ('lock', 'Nothing you type is kept'), ('tag', 'Nothing about you shared with sponsors'),
+                ('receipt', 'No personal information sold'))) + '</ul>',
+            icon_heading(2, 'counting', 'Counting visits', 'chart') + ''
             '<p>Visits are counted with <a href="https://www.goatcounter.com/">GoatCounter</a>. It sets no cookies and stores no personal information. '
             'For each page view it records the page, the site you came from, your browser and screen size, and an approximate country worked out from '
             'your IP address. It does not store the IP address.</p>'
             '<p>The counter also tallies which links and buttons are used, such as a state on the map, the name of another website a link leads to, '
             'or that a filter was used. It never records what you type. The results are seen as totals, not as a record of any one visitor.</p>',
-            '<h2 id="hosting">Hosting</h2>'
+            icon_heading(2, 'hosting', 'Hosting', 'server') + ''
             '<p>The site is hosted on GitHub Pages. Like any web host, GitHub receives your IP address when your browser asks for a page, and GitHub may '
             f'keep server logs, including IP addresses, for security. See the <a href="{PRIVACY_STATEMENT}">GitHub General Privacy Statement</a>.</p>',
-            '<h2 id="map">Maps</h2>'
+            icon_heading(2, 'map', 'Maps', 'pin') + ''
             '<p>Some pages show stores on a map, such as Ontario’s cannabis stores and Amsterdam’s coffeeshops. The map’s code is served from this site, '
             'but the street pictures come from <a href="https://www.openstreetmap.org/">OpenStreetMap</a> (tile.openstreetmap.org). To show them, your browser '
             'asks OpenStreetMap for the pictures of the area you look at, so OpenStreetMap sees your IP address and which area you view, under the '
             '<a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Foundation privacy policy</a>. Pages without a map do not contact it.</p>'
             '<p>The “near me” button asks your browser for your location only when you press it, and your browser asks you first. If you allow it, '
             'the page uses it to center the map and list the closest stores. Your location is never stored or sent to this site. The map then shows '
-            'your area, so OpenStreetMap is asked for the pictures of that area, as for any area you look at.</p>'
-            '<h2 id="typing">What you type or choose</h2>'
+            'your area, so OpenStreetMap is asked for the pictures of that area, as for any area you look at.</p>',
+            icon_heading(2, 'typing', 'What you type or choose', 'lock') + ''
             '<p>The state picker, the filters, the maps and the letter builder work inside your browser. What you type there is not sent to this site '
             'and is not saved: it is gone when you close the page. The pages do not use cookies or your browser’s storage.</p>'
             '<p>If you email a correction or a question, we receive your message and your email address and use them only to answer you and fix the page.</p>',
-            '<h2 id="sponsors">Sponsors</h2>'
+            icon_heading(2, 'sponsors', 'Sponsors', 'tag') + ''
             '<p>Sponsored spots are labeled “Sponsored” and link to the sponsor’s own site. Their pictures are served from this site, so seeing a spot '
             'does not contact the sponsor. Once you follow a sponsor’s link, that site’s privacy rules apply. This site does not share visitor '
             'information with sponsors. See <a href="partners.html#sponsor">how sponsoring works</a>.</p>',
-            '<h2 id="other-sites">Links to other sites</h2>'
+            icon_heading(2, 'other-sites', 'Links to other sites', 'link') + ''
             '<p>Answers link to state agencies, laws and organizations, and to our other sites. Each has its own privacy rules once you are there.</p>',
-            '<h2 id="audience">Who this site is for</h2>'
+            icon_heading(2, 'audience', 'Who this site is for', 'people') + ''
             '<p>This site is for adults 21 and older. It is not directed to children, and we do not knowingly collect information from children. '
             'We do not sell personal information.</p>',
-            '<h2 id="contact">Questions</h2>'
+            icon_heading(2, 'contact', 'Questions', 'mail') + ''
             f'<p><a href="{esc(contact)}">Email a privacy question</a>. If this page changes, the date at the top changes with it.</p>']
     return shell('Privacy', f'How {SITE_NAME} counts visits without cookies, what it keeps (nothing you type), how sponsors are handled and who the site is for.',
                  ''.join(body), 'privacy.html', 'the privacy page', ld=[breadcrumbs([('Home', '')], 'privacy.html', 'Privacy')])
 
 
 # What a visitor came for, each with one place to go. Help-page needs are linked by their section.
+# A decorative icon in front of each coverage question (data/medical-coverage.json); a new question shows none.
+COVERAGE_ICON = {'medicaid': 'people', 'medicare': 'person', 'insurance': 'shield', 'va': 'star', 'fda-drugs': 'pill', 'taxes': 'receipt'}
+
+
 def coverage_page(perm, medical, sources):
     """Who pays for medical cannabis, question by question, then the states that lower the card fee."""
     data, names, cites = load_coverage(), perm['jurisdictions'], Cites(sources)
@@ -1231,12 +1410,13 @@ def coverage_page(perm, medical, sources):
             '<nav class="pills" aria-label="On this page">' + ''.join(f'<a class="pill" href="#{esc(i["id"])}">{esc(i["question"])}</a>' for i in data['items'])
             + '<a class="pill" href="#fee-help">Card fee help by state</a></nav>']
     for item in data['items']:
-        body.append(f'<article class="card" id="{esc(item["id"])}"><h2 style="margin:.2em 0">{esc(item["question"])}</h2><p class="short">{esc(item["short"])}</p><ul>')
+        ic = f'<span class="hi">{icon(COVERAGE_ICON[item["id"]])}</span>' if item['id'] in COVERAGE_ICON else ''
+        body.append(f'<article class="card" id="{esc(item["id"])}"><h2 class="ih2" style="margin:.2em 0">{ic}{esc(item["question"])}</h2><p class="short">{esc(item["short"])}</p><ul>')
         for point in item['points']:
             body.append(f'<li>{esc(point["text"])}' + (f' {cites.mark([point["source"]])}' if point['source'] else '') + '</li>')
         body.append('</ul></article>')
     helped = sorted((c for c in medical if medical[c].get('fee_help')), key=lambda c: names[c])
-    body.append('<h2 id="fee-help">Card fee help by state</h2><p>States that lower or waive the patient card fee for people on Medicaid or with low income, and for veterans, '
+    body.append(icon_heading(2, 'fee-help', 'Card fee help by state', 'card') + '<p>States that lower or waive the patient card fee for people on Medicaid or with low income, and for veterans, '
                 'among the state programs reviewed so far.</p><ul class="rows">')
     for code in helped:
         f = medical[code]['fee_help']
@@ -1271,19 +1451,19 @@ def partners_page(perm, sources):
             '<p class="lede">The Reefer is a free, source-linked guide to cannabis law, medical cards and help in every state. '
             'Patient groups, veteran organizations, legal aid offices, clinics, libraries and state associations can be listed here and can link here, at no cost.</p>',
             '<div class="needs">'
-            '<div class="need"><strong>Get listed</strong><span>Tell us who you help and where. We add organizations to the state pages they serve, with a link to your own site.</span></div>'
-            '<div class="need"><strong>Link to us</strong><span>Point your members to their state page, the medical card guides or the Medicaid and insurance page.</span></div>'
-            '<div class="need"><strong>Correct us</strong><span>If a rule, fee or address on a page you know is out of date, send the source and we fix it.</span></div></div>',
-            '<h2 id="rules">Ground rules</h2><ul>'
+            f'<div class="need"><span class="ni" aria-hidden="true">{icon("form")}</span><strong>Get listed</strong><span>Tell us who you help and where. We add organizations to the state pages they serve, with a link to your own site.</span></div>'
+            f'<div class="need"><span class="ni" aria-hidden="true">{icon("link")}</span><strong>Link to us</strong><span>Point your members to their state page, the medical card guides or the Medicaid and insurance page.</span></div>'
+            f'<div class="need"><span class="ni" aria-hidden="true">{icon("check")}</span><strong>Correct us</strong><span>If a rule, fee or address on a page you know is out of date, send the source and we fix it.</span></div></div>',
+            icon_heading(2, 'rules', 'Ground rules', 'scale') + '<ul>'
             '<li>No paid placement, paid ranking or paid verification. Listing is free and cannot be bought.</li>'
             '<li>Sponsored spots are labeled “Sponsored”, sit apart from listings and answers, and never change what’s listed, how it ranks, or what a state page says.</li>'
             '<li>A listing is not an endorsement, in either direction. Advocacy groups are named as advocacy groups.</li>'
             '<li>Every published fact names its source and the date it was checked. Listings link to the organization’s own site.</li>'
             '<li>The site is nonpartisan and treats every party and lawmaker the same way.</li>'
             '<li>Everything here is free to reuse under CC BY 4.0.</li></ul>',
-            f'<h2 id="ask">Ask to be listed or to partner</h2><p><a class="pill" href="{esc(mail)}">Email a request</a></p>'
+            icon_heading(2, 'ask', 'Ask to be listed or to partner', 'mail') + f'<p><a class="pill" href="{esc(mail)}">Email a request</a></p>'
             '<p class="muted">Include your website, the states you serve and who you help. Requests are reviewed by a person.</p>',
-            '<h2 id="sponsor">Sponsor or advertise</h2>'
+            icon_heading(2, 'sponsor', 'Sponsor or advertise', 'tag') +
             '<p>The Reefer is free to use. Sponsors help pay for it. A sponsor gets a labeled spot on the home page or on the state pages it chooses: '
             'a short message and a link to its own site. Sponsoring is separate from being listed, which stays free.</p>'
             '<h3>Who can sponsor</h3><ul>'
@@ -1301,11 +1481,11 @@ def partners_page(perm, sources):
             '<li>The spot links to the sponsor’s own site. Visitor information is not shared with sponsors; see <a href="privacy.html">Privacy</a>.</li></ul>'
             f'<h3>Get in touch</h3><p><a class="pill" href="{esc(sponsor_mail)}">Email about sponsoring</a></p>'
             '<p class="muted">Include your website, your license and its state if you hold one, and the states you want to reach. Requests are answered by a person.</p>',
-            '<h2 id="link">Link to The Reefer</h2><p>Copy this link into your resources page, or link straight to any state page (for example, <code>the-reefer.com/florida.html</code>).</p>'
+            icon_heading(2, 'link', 'Link to The Reefer', 'link') + '<p>Copy this link into your resources page, or link straight to any state page (for example, <code>the-reefer.com/florida.html</code>).</p>'
             f'<pre style="white-space:pre-wrap;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 12px;overflow-wrap:anywhere">{esc(link_html)}</pre>'
             '<ul><li><a href="medical.html">Medical card guides, state by state</a></li><li><a href="coverage.html">Medicaid, Medicare and insurance</a></li>'
             '<li><a href="help.html#veterans">Veterans</a></li><li><a href="law-record-relief.html">Clearing a past record, state by state</a></li></ul>',
-            '<h2 id="already">Organizations this site already points visitors to</h2>'
+            icon_heading(2, 'already', 'Organizations this site already points visitors to', 'people') +
             '<p>These national organizations are linked from the <a href="help.html">help page</a> because they run a resource visitors need. They are not partners of this site and have not endorsed it.</p><ul>'
             + ''.join(f'<li><a href="{esc(url)}" target="_blank" rel="noopener">{esc(name)}</a> <span class="muted">({esc(need.lower())})</span></li>' for name, url, need in orgs) + '</ul>']
     return shell('Partner with The Reefer', 'How patient groups, veteran organizations, legal aid offices and state associations can be listed on The Reefer or link to it, free with no paid placement, and how to sponsor a labeled spot.',

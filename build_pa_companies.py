@@ -10,6 +10,7 @@ from collections import defaultdict
 from directory_data import ROOT, load_directory, script_json
 from directory_brand import brand_page
 from public_data import externalize
+from site_visuals import stat_tiles, with_css
 
 OUT = ROOT / 'pennsylvania-directory.html'
 
@@ -97,6 +98,13 @@ def build_page(data, persist=False):
     fallback = '<h2>Company index</h2><ul>' + ''.join(
         '<li><a href="'+html.escape(c['routes'][0]['url'], quote=True)+'">'+html.escape(c['name'])+'</a> · '+html.escape('; '.join(c['categories']))+'</li>' for c in cards) + '</ul>'
     page = (ROOT / 'templates/pa-companies.html').read_text().replace('__COUNT__', str(len(cards))).replace('__FALLBACK__', fallback)
+    # The directory's size by company type, the same types as the filter (visuals pass, November 25, 2026).
+    roles = [(name, label, sum(1 for c in cards if role in c['roles'])) for role, label, name in
+             (('Operator', 'operators', 'store'), ('Supplier', 'suppliers', 'package'), ('Service provider', 'business service providers', 'briefcase'))]
+    tiles = stat_tiles([('people', len(cards), 'companies listed')] + [(name, n, label) for name, label, n in roles if n],
+                       'The directory at a glance', accent='#a90000')
+    lead = page.index('</p>', page.index('<p class="lead">')) + 4
+    page = with_css(page[:lead] + tiles + page[lead:])
     payload = script_json(cards)
     page = page.replace('__DATA__', payload)
     if persist:

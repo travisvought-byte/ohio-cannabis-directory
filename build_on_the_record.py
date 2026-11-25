@@ -4,6 +4,7 @@ data/on-the-record.json. Committee testimony is on lawmakers.html; lobbying is o
 from pathlib import Path
 
 from directory_brand import brand_page
+from site_visuals import with_css
 from on_the_record import CSS, detail_body, load, day
 
 ROOT = Path(__file__).resolve().parent
@@ -14,7 +15,7 @@ def main():
     page = (ROOT / 'templates/on-the-record.html').read_text(encoding='utf-8')
     page = (page.replace('__OTR_CSS__', CSS).replace('__BODY__', detail_body())
             .replace('__CHECKED__', day(load()['as_of'])))
-    OUT.write_text(brand_page(page, OUT.name), encoding='utf-8')
+    OUT.write_text(brand_page(with_css(page), OUT.name), encoding='utf-8')
     print('Built on-the-record.html: OHCANN profile, member tracker, Form 990 filings and recorded gaps')
 
 

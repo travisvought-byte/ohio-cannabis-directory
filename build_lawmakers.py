@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 from directory_brand import brand_page, landing
 from on_the_record import CSS, lawmakers_section
+from site_visuals import stat_tiles, with_css
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'lawmakers.html'
@@ -33,6 +34,13 @@ def main():
                            f'<a href="advocacy.html?member={member["id"]}#write">Write a letter</a></li>')
     page = (ROOT / 'templates/lawmakers.html').read_text().replace('__ROSTER__', ''.join(entries)).replace('__CHECKED__', data['checked_on'])
     page = page.replace('__ON_THE_RECORD__', on_the_record()).replace('__OTR_CSS__', CSS)
+    # The roster's size as tiles under the opening (visuals pass, November 25, 2026), counted from the list below.
+    chambers = [(c, sum(1 for m in data['members'] if m['chamber'] == c)) for c in dict.fromkeys(m['chamber'] for m in data['members'])]
+    vacant = sum(1 for m in data['members'] if m['vacant'])
+    tiles = stat_tiles([('bank', n, f'{c} districts') for c, n in chambers]
+                       + ([('pin', vacant, f'vacant as of {data["checked_on"]}')] if vacant else []), 'The roster at a glance', accent='#a90000')
+    intro = page.index('</p>', page.index('</h1>')) + 4
+    page = with_css(page[:intro] + tiles + page[intro:])
     OUT.write_text(brand_page(page, OUT.name))
     print('Built lawmakers.html:', len(entries), 'districts with complete fallback and the on-the-record section')
 
