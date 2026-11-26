@@ -1,7 +1,0 @@
-loads https://the-reefer.com/pillage/data.js?v=11
-DOCKED "nassau"
-PORT "⚓ Nassau"
-NAME "Captain Mildred “Mildew” Mudge"
-ROLE "Retired pirate, professional hammock tester"
-ANSWER "“I have been in this hammock a long time, Captain. A long, long time.”"
-RESULT OK
