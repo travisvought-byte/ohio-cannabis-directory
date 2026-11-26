@@ -12,8 +12,9 @@ const GAME_FILES = ['index.html', 'coasts.js', 'data.js', 'engine.js', 'events.j
 const PINS = require('./frozen.json');
 const frozen = {};
 // The game's files at the contest's version: the commit frozen.json pins for it, else a git tag pillage-<version>.
-// A version with neither (practice before the freeze) uses the files as they are. A pinned version whose files
-// can't be read stops the checker, so a run is never scored against the wrong game.
+// A version with neither (practice before the freeze) uses the files as they are. When git can't reach a pinned
+// commit (a shallow checkout), the files on disk stand in only if their hash matches the pin. Otherwise the checker
+// stops, so a run is never scored against the wrong game.
 function filesFor(ver) {
   if (!ver) return undefined;
   if (frozen[ver] !== undefined) return frozen[ver] || undefined;
@@ -23,8 +24,13 @@ function filesFor(ver) {
     for (const f of GAME_FILES) files[f] = execFileSync('git', ['show', ref + ':pillage/' + f], {cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'], maxBuffer: 64e6});
     frozen[ver] = files;
   } catch (e) {
-    if (PINS[ver]) throw new Error('the game files for ' + ver + ' (commit ' + PINS[ver].commit + ') could not be read: ' + e.message);
-    frozen[ver] = null;
+    if (PINS[ver]) {
+      const read = f => require('fs').readFileSync(path.join(root, 'pillage', f), 'utf8');
+      if (gameHash(read) !== PINS[ver].sha256) throw new Error('the game files for ' + ver + ' (commit ' + PINS[ver].commit + ') could not be read, and the files here are not the frozen ones: ' + e.message);
+      const files = {};
+      for (const f of GAME_FILES) files[f] = read(f);
+      frozen[ver] = files;
+    } else frozen[ver] = null;
   }
   return frozen[ver] || undefined;
 }
