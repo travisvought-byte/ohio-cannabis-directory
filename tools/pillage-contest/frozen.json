@@ -1,0 +1,7 @@
+{
+  "cup1": {
+    "commit": "e48df0b927dec8aa0f14c72a75294ea951e151cc",
+    "sha256": "3e5e91cc626ad3ec047967123c6c3fb6ec8049fdc34dcdb5deee0bddac460f91",
+    "note": "Game files frozen for the Silver Cup, December 1 to 4, 2026. Change only with a logged fix, and pin the new commit and hash together."
+  }
+}

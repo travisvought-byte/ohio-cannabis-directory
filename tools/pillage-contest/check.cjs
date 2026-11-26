@@ -2,23 +2,30 @@
 /* Silver Cup checker: takes the runs waiting on the server, replays each one (verify.cjs) and sends back what the
    replay made of it. Run by .github/workflows/pillage-cup-check.yml, which proves to the server who it is with a token
    GitHub signs for that workflow alone. A run is replayed with the game exactly as it stood when the contest froze (the
-   git tag pillage-<version>), so a later change to the game can't change anyone's score.
+   commit frozen.json names for its version, or a git tag pillage-<version>), so a later change to the game can't change
+   anyone's score.
    Usage: node check.cjs [--for SECONDS]   (the server's address comes from pillage/cup-api.js, or PILLAGE_API) */
 const zlib = require('zlib'), path = require('path'), {execFileSync} = require('child_process');
 const {verify} = require('./verify.cjs');
 
 const GAME_FILES = ['index.html', 'coasts.js', 'data.js', 'engine.js', 'events.js', 'qr.js', 'game.js'];
+const PINS = require('./frozen.json');
 const frozen = {};
-// The game's files at the contest's version, from its git tag; with no tag yet (practice), the files as they are.
+// The game's files at the contest's version: the commit frozen.json pins for it, else a git tag pillage-<version>.
+// A version with neither (practice before the freeze) uses the files as they are. A pinned version whose files
+// can't be read stops the checker, so a run is never scored against the wrong game.
 function filesFor(ver) {
   if (!ver) return undefined;
   if (frozen[ver] !== undefined) return frozen[ver] || undefined;
-  const root = path.join(__dirname, '..', '..');
+  const root = path.join(__dirname, '..', '..'), ref = (PINS[ver] && PINS[ver].commit) || 'pillage-' + ver;
   try {
     const files = {};
-    for (const f of GAME_FILES) files[f] = execFileSync('git', ['show', 'pillage-' + ver + ':pillage/' + f], {cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'], maxBuffer: 64e6});
+    for (const f of GAME_FILES) files[f] = execFileSync('git', ['show', ref + ':pillage/' + f], {cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'], maxBuffer: 64e6});
     frozen[ver] = files;
-  } catch (e) { frozen[ver] = null; }
+  } catch (e) {
+    if (PINS[ver]) throw new Error('the game files for ' + ver + ' (commit ' + PINS[ver].commit + ') could not be read: ' + e.message);
+    frozen[ver] = null;
+  }
   return frozen[ver] || undefined;
 }
 
@@ -71,7 +78,14 @@ function apiAddress() {
   return api.replace(/\/+$/, '');
 }
 
-module.exports = {checkOnce, filesFor, actionsToken, apiAddress};
+// The hash frozen.json keeps for a version's game files, worked out the same way, so a test can tell when they change.
+function gameHash(read) {
+  const h = require('crypto').createHash('sha256');
+  for (const f of GAME_FILES) { h.update(f + '\n'); h.update(read(f)); }
+  return h.digest('hex');
+}
+
+module.exports = {checkOnce, filesFor, actionsToken, apiAddress, gameHash, PINS, GAME_FILES};
 
 if (require.main === module) {
   (async () => {

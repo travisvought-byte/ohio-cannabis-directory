@@ -76,5 +76,14 @@ const tick = () => new Promise(r => setTimeout(r, 20));
   const c = fs.readFileSync(path.join(DIR, 'contest.html'), 'utf8');
   assert.equal(spot(c), spot(t), 'one spot price on both pages');
   P.w.close();
+
+  // The frozen game: the version the game stamps on Cup runs is pinned to a commit, and the game files today are
+  // exactly the pinned ones. A change to any of them fails here until the pin (commit and hash) is moved on purpose.
+  const {PINS, gameHash} = require(path.join(__dirname, '..', 'tools', 'pillage-contest', 'check.cjs'));
+  const ver = (fs.readFileSync(path.join(DIR, 'data.js'), 'utf8').match(/ver:\s*'([^']+)'/) || [])[1];
+  assert.ok(ver && PINS[ver], 'the Cup version ' + ver + ' is pinned in frozen.json');
+  assert.match(PINS[ver].commit, /^[0-9a-f]{40}$/, 'the pin is a full commit id');
+  assert.equal(gameHash(f => fs.readFileSync(path.join(DIR, f))), PINS[ver].sha256,
+    'the game files match the frozen ' + ver + ' files; a logged fix moves the pin (commit and hash) on purpose');
   console.log('pillage contest pages ok');
 })().catch(e => { console.error(e); process.exit(1); });
