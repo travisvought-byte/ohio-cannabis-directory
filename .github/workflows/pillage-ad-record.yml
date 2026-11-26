@@ -1,0 +1,42 @@
+name: Record Pillage the Reefer ad footage
+on:
+  push:
+    branches: [claude/project-thread-ft0m1y]
+    paths:
+      - 'tools/pillage-ad/record.cjs'
+      - '.github/workflows/pillage-ad-record.yml'
+permissions:
+  contents: write
+concurrency:
+  group: pillage-ad-record
+  cancel-in-progress: true
+jobs:
+  record:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+      - name: Record gameplay
+        run: node tools/pillage-ad/record.cjs 2>&1 | tee tools/pillage-ad/out-log.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pillage-ad-footage
+          path: |
+            tools/pillage-ad/out
+            tools/pillage-ad/out-log.txt
+      - name: Commit footage to this branch
+        run: |
+          mv tools/pillage-ad/out-log.txt tools/pillage-ad/out/log.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -f tools/pillage-ad/out
+          git commit -m "Pillage ad footage from run ${{ github.run_id }} [skip ci]" || exit 0
+          git push origin HEAD:${{ github.ref_name }}
