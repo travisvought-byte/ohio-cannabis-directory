@@ -110,3 +110,44 @@ def end_card(logo_path):
     t = 'Adults 21+  ·  Real 1718 history, cartoon weed'
     d.text(((W - d.textlength(t, font=f3)) / 2, y), t, font=f3, fill=SOFT)
     return img
+
+
+def cup_end_card(logo_path):
+    """End card for the Silver Cup cut: same look as end_card, with the contest's words."""
+    img = Image.new('RGBA', (W, H), (0, 0, 0, 0))
+    vg = Image.new('L', (W, H), 0)
+    vd = ImageDraw.Draw(vg)
+    for i in range(40):
+        r = 900 - i * 18
+        vd.ellipse((W / 2 - r, H / 2 - r, W / 2 + r, H / 2 + r), fill=150 + i * 2)
+    vg = vg.filter(ImageFilter.GaussianBlur(40))
+    dark = Image.new('RGBA', (W, H), (6, 18, 14, 255))
+    dark.putalpha(vg.point(lambda v: min(235, v + 20)))
+    img = Image.alpha_composite(img, dark)
+    logo = Image.open(logo_path).convert('RGBA')
+    lw = 400
+    logo = logo.resize((lw, int(logo.height * lw / logo.width)), Image.LANCZOS)
+    img.alpha_composite(logo, ((W - lw) // 2, 120))
+    d = ImageDraw.Draw(img)
+    y = 120 + logo.height + 4
+    ft = font(CALADEA, 92)
+    t = 'The Silver Cup'
+    d.text(((W - d.textlength(t, font=ft)) / 2 + 3, y + 4), t, font=ft, fill=(0, 0, 0, 160))
+    d.text(((W - d.textlength(t, font=ft)) / 2, y), t, font=ft, fill=GOLD)
+    y += 112
+    f2 = font(INTER_B, 40)
+    for t in ['Win silver half dollars in Pillage the Reefer,', 'a free pirate game. December 1 to 4.']:
+        d.text(((W - d.textlength(t, font=f2)) / 2, y), t, font=f2, fill=CREAM)
+        y += 54
+    y += 22
+    fu = font(INTER_XB, 58)
+    t = 'the-reefer.com/pillage'
+    tw = d.textlength(t, font=fu)
+    d.rounded_rectangle(((W - tw) / 2 - 34, y - 10, (W + tw) / 2 + 34, y + 84), 46, fill=GOLD + (255,))
+    d.text(((W - tw) / 2, y + 2), t, font=fu, fill=(26, 22, 8))
+    y += 116
+    f3 = font(INTER_SB, 27)
+    for t in ['Free  ·  No purchase necessary  ·  Adults 21+', 'US only  ·  Rules on the site']:
+        d.text(((W - d.textlength(t, font=f3)) / 2, y), t, font=f3, fill=SOFT)
+        y += 38
+    return img

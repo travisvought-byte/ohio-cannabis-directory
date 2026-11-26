@@ -204,6 +204,9 @@ def render(timeline, cards, total, out_sq, out_vert=None, xfade=8):
         vt.stdin.close(); vt.wait()
 
 
+VERTICAL_LINE = 'Free to play in your browser'
+
+
 class VerticalFrame:
     """The square video in the middle of a 9:16 frame, over a blurred copy of itself, with the name above and the address below."""
 
@@ -222,7 +225,7 @@ class VerticalFrame:
         self.bot = Image.new('RGBA', (1080, 420), (0, 0, 0, 0))
         d = ImageDraw.Draw(self.bot)
         f2 = ov.font(ov.INTER_B, 40)
-        t = 'Free to play in your browser'
+        t = VERTICAL_LINE
         d.text(((1080 - d.textlength(t, font=f2)) / 2, 74), t, font=f2, fill=ov.CREAM)
         fu = ov.font(ov.INTER_XB, 54)
         t = 'the-reefer.com/pillage'
