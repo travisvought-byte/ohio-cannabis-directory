@@ -3,6 +3,9 @@
 // filled at the port that asks, levels climb, every fight can end, and a new game boots, sails, fights and saves cleanly.
 // Round three: products trade on their own swings, every good can be smoked, the odds on a button are the odds rolled,
 // burning a bale is a real 50-50, and a quick passage lands you in port with the routes tab and trade ledger ready.
+// Round four: every check is a d20 roll, cannonballs run out and Brick Weed fills in, markets run out and prices move
+// as you trade, pirates come in five sizes, a sunk ship ends the voyage but the hideout and the hall of fame outlive it,
+// the smuggler's hold hides bales from Customs and pirates, goals earn relics, and old saves keep gentle seas.
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const dir=path.join(__dirname,'..','pillage'),read=f=>fs.readFileSync(path.join(dir,f),'utf8');
 
@@ -60,6 +63,18 @@ assert(odds(ship(2,2,2),'pirate',3)>0.9,'a mid-upgraded ship can beat the roughe
 assert(odds(ship(4,3,5),'boss',4)>0.9&&odds(ship(2,2,2),'boss',4)<0.1,'Gristle needs a strong ship');
 for(const kind of ['merchant','pirate','boss']) for(const t of [undefined,0,1,2,3,9]){ const f=E.foe(kind,t); assert(Number.isFinite(f.hull)&&Number.isFinite(f.fire),'foe stats are numbers'); }
 assert(EV.sea.length>=10&&EV.port.length>=5,'surprises at sea and in port');
+// round four: the die, pirate sizes, stock and price pressure
+assert.equal(E.need(50),11); assert.equal(E.need(95),2); assert.equal(E.need(5),20);
+for(let r=0;r<1;r+=0.01){ assert(E.pirateTier(1,1,r,true)<=1,'new captains only meet small pirates in home waters'); const t=E.pirateTier(3,9,r,false); assert(t>=3&&t<=5,'tiers stay in range'); }
+assert.equal(E.pirateTier(3,9,0.95,false),5,'a famous captain can meet a man-o-war'); assert.equal(E.foe('pirate',5).cls,'man-o’-war');
+assert(odds(ship(0,0,0),'pirate',2)<0.2&&odds(ship(2,2,2),'pirate',5)<0.2,'bigger pirates out-gun you, so there is real danger');
+assert.equal(E.stockMax('tortuga','tangerine'),16); assert.equal(E.stockMax('havana','tangerine'),0,'no stock where it is not sold'); assert(E.stockMax('nassau','brick')>=20,'Brick Weed is plentiful');
+assert(E.pushed(100,10,true)>100&&E.pushed(100,10,false)<100&&E.pushed(100,0,true)===100,'trading moves the price');
+assert(D.GOODS.brick.kind==='brick'&&!D.COMMON.includes('brick')&&!D.COMMON.includes('pearl'),'brick and pearl are not loot strains');
+{ const H=D.HIDEOUT,m=maps[H.map],f=E.nearestFreePoint(m,H.dock[0],H.dock[1]),p=D.PORTS.tortuga.dock;
+  assert(Math.hypot(f[0]-H.dock[0],f[1]-H.dock[1])<40&&E.findPath(m,p[0],p[1],f[0],f[1]),'the hideout cove can be sailed to'); }
+for(const k of ['spyglass','tooth','wig','compass','doubloon','figure','seal','goldbrick','flag']) assert(D.RELICS[k]&&D.RELICS[k].does,k+' relic is described');
+for(const t of [D.SAILS,D.FLAGS]) for(const k in t) assert(t[k].name&&/^#[0-9a-f]{6}$/.test(t[k].color),k+' has a name and colour');
 
 // the page boots, a new game docks, sails, fights a merchant and saves
 const {JSDOM}=require('jsdom');
@@ -76,20 +91,26 @@ for(const f of ['data.js','engine.js','events.js','game.js']) w.eval(read(f));
 const $=id=>w.document.getElementById(id),P=w.__pillage;
 assert(read('game.js').includes("window.directoryTrack('pillage-'"),'milestones go to the site visit counter');
 assert(/21\+|21 or older/.test(read('index.html')),'adults only');
-$('btn-new').click(); $('note-ok').click();
-assert($('dlg-port').open,'starts docked at Tortuga'); assert.equal(P.state.xp,25,'first visit earns renown');
+$('btn-new').click(); assert($('dlg-captain').open,'a new voyage starts by naming the captain');
+assert($('cap-real').checked&&!P.state.gentle,'real danger is the default');
+$('cap-name').value='  Anne <b>Bonny</b>\u0007 '; $('cap-ship').value=''; $('cap-ok').click();
+assert.equal(P.state.look.captain,'Anne bBonny/b','names are cleaned'); assert.equal(P.state.look.ship,'the Lucky Leaf','a blank ship name keeps the default');
+assert(/the Lucky Leaf/.test($('note-body').textContent)&&/ship goes down/.test($('note-body').textContent),'the welcome note warns about real danger');
+$('note-ok').click();
+assert($('dlg-port').open,'starts docked at Tortuga'); assert.equal(P.state.xp,25,'first visit earns renown'); assert.equal(P.state.shot,12,'twelve cannonballs to start');
 $('set-sail').click(); for(let i=0;i<300;i++) P.step(1/30);
 const S=P.state,n={kind:'merchant',tier:1,name:'the Test',captain:'X',cool:0,x:S.x+5,y:S.y,route:[[0,0]],leg:0};
 P.encounter(n); [...$('enc-body').querySelectorAll('.choice')].find(b=>/Attack/.test(b.textContent)).click();
-for(let i=0;i<30&&$('enc-body').querySelector('.choice');i++) $('enc-body').querySelector('.choice').click();
-assert(/strikes her colours|surrenders|Your ship is beaten/.test($('enc-text').textContent),'the fight ends');
+for(let i=0;i<30&&$('enc-body').querySelector('.choice');i++) $('enc-body').querySelector('.choice:not([disabled])').click();
+assert(/strikes her colours|surrenders|rolls over and sinks|Your ship is beaten/.test($('enc-text').textContent),'the fight ends');
+assert(P.state.shot<12,'firing uses cannonballs');
 $('enc-body').querySelector('.primary').click(); assert(!$('dlg-encounter').open);
 // odds: the number on the button is the number rolled, and a miss earns a second wind
 const rnd=w.Math.random;
-S.buff=null; S.grit=2; assert.equal(P.odds.chanceOf(0.5),70); assert.equal(P.odds.pct(0.5),'70% chance');
-S.grit=0; assert.equal(P.odds.chanceOf(0.99),95,'never certain'); assert.equal(P.odds.chanceOf(0),5,'never hopeless');
-w.Math.random=()=>0.99; P.odds.roll(0.5); assert.equal(S.grit,1); P.odds.roll(0.5); P.odds.roll(0.5); P.odds.roll(0.5); assert.equal(S.grit,3,'second wind caps at three misses'); assert.equal(P.odds.chanceOf(0.5),80);
-w.Math.random=()=>0; assert(P.odds.roll(0.5)); assert.equal(S.grit,0,'a hit resets it'); w.Math.random=rnd;
+S.buff=null; S.grit=2; assert.equal(P.odds.chanceOf(0.5),70); assert.equal(P.odds.pct(0.5),'🎲 7+, 70%','the button shows the number to roll');
+S.grit=0; assert.equal(P.odds.chanceOf(0.99),95,'never certain'); assert.equal(P.odds.chanceOf(0),5,'never hopeless'); assert.equal(P.odds.pct(0.5),'🎲 11+, 50%');
+w.Math.random=()=>0; P.odds.roll(0.5); assert.equal(S.grit,1,'a 1 misses'); P.odds.roll(0.5); P.odds.roll(0.5); P.odds.roll(0.5); assert.equal(S.grit,3,'second wind caps at three misses'); assert.equal(P.odds.chanceOf(0.5),80);
+w.Math.random=()=>0.99; assert(P.odds.roll(0.5),'a 20 hits'); assert.equal(S.grit,0,'a hit resets it'); w.Math.random=rnd;
 let hits=0; for(let i=0;i<6000;i++){ S.grit=0; if(P.odds.roll(0.6)) hits++; } S.grit=0;
 assert(Math.abs(hits/6000-0.6)<0.03,'rolls land as often as the label says: '+hits/6000);
 // smoking a bale costs one bale and gives the boost on its label
@@ -99,13 +120,14 @@ assert(P.odds.chanceOf(0.5)===50&&!P.smoke('kraken'),'no luck from Old Sea Dog, 
 // Customs offers to burn a bale at even odds; it costs the cheapest bale whatever happens
 P.encounter({kind:'customs',name:'Officer Test',cool:0,x:S.x+5,y:S.y,route:[[0,0]],leg:0});
 let burn=[...$('enc-body').querySelectorAll('.choice')].find(b=>/Burn a bale/.test(b.textContent));
-assert(burn&&/Burn a bale of Tortuga Tangerine \(50% chance\)/.test(burn.textContent),'burn a bale shows its real odds: '+(burn&&burn.textContent));
-assert([...$('enc-body').querySelectorAll('.choice')].every(b=>/% chance\)|fee/.test(b.textContent)),'every Customs option shows a percentage');
-w.Math.random=()=>0; burn.click(); w.Math.random=rnd;
+assert(burn&&/Burn a bale of Tortuga Tangerine \(🎲 11\+, 50%\)/.test(burn.textContent),'burn a bale shows its real odds: '+(burn&&burn.textContent));
+assert([...$('enc-body').querySelectorAll('.choice')].every(b=>/%|fee/.test(b.textContent)),'every Customs option shows a percentage');
+w.Math.random=()=>0.99; burn.click(); w.Math.random=rnd;
 assert(/wanders off/.test($('enc-text').textContent)&&!S.cargo.tangerine,'the cutter wanders off and the bale is gone');
+assert(/You rolled 20|natural 20/.test($('enc-text').textContent)&&$('enc-body').querySelector('.die.hit'),'the roll is shown, with the die');
 $('enc-body').querySelector('.primary').click(); assert(!$('dlg-encounter').open);
 // a quick passage takes days, may bring one run-in, and lands you in port with the routes tab ready
-P.dock('tortuga'); const d0=S.dist; S.cargo={}; assert(P.voyage('tortuga','havana'),'a route to Havana');
+P.dock('tortuga'); const d0=S.dist; S.cargo={}; S.gentle=true; assert(P.voyage('tortuga','havana'),'a route to Havana');
 assert(P.passage('havana'));
 for(let i=0;i<40&&$('dlg-encounter').open;i++) ($('enc-body').querySelector('.choice:not([disabled])')||$('enc-body').querySelector('.primary')).click();
 assert.equal(S.docked,'havana','landed in Havana'); assert.equal(Math.round(S.dist-d0),P.voyage('tortuga','havana').days*900,'the day counter moves by the days shown');
@@ -113,8 +135,61 @@ assert(S.seen.tortuga&&S.seen.havana,'both ports are in the ledger');
 // browsers fire the old port's close event after the new port has opened; it must not cast you off again
 $('dlg-port').dispatchEvent(new w.Event('close')); assert.equal(S.docked,'havana','still docked after a late close event'); assert($('dlg-port').open);
 $('tab-routes').click(); assert(/Sail to/.test($('port-panel').textContent)&&/Trade ledger/.test($('port-panel').textContent),'routes tab lists passages and the ledger');
+// longer, richer runs draw more pirates
+S.cargo={}; const vs=P.voyage('tortuga','portroyal'),vl=P.voyage('tortuga','barbados');
+assert(vl.days>vs.days&&P.passageRisk(vl).pirates>P.passageRisk(vs).pirates,'a longer passage is riskier');
+const r0=P.passageRisk(vl).pirates; S.cargo={haze:20}; assert(P.passageRisk(vl).pirates>r0,'a rich hold draws pirates'); S.cargo={};
 w.dispatchEvent(new w.Event('pagehide'));
 const saved=JSON.parse(w.localStorage.getItem('pillageTheReefer.v1')); assert.equal(saved.xp,S.xp,'renown is saved');
+// markets run out, and every bale you trade moves the price
+$('set-sail').click(); P.dock('tortuga'); S.gold=10000; S.cargo={}; S.mk={};
+const p0=P.buyAt('tortuga','tangerine'),got=P.buyBales('tortuga','tangerine',100);
+assert.equal(got.n,16,'Tortuga only has 16 bales on the shelf'); assert.equal(P.stockOf('tortuga','tangerine'),0); assert(P.buyAt('tortuga','tangerine')>p0,'buying pushes the price up');
+const s0=P.sellAt('tortuga','tangerine'); P.sellBales('tortuga','tangerine',8); assert(P.sellAt('tortuga','tangerine')<s0,'selling pushes the price down');
+S.dist+=900; assert(P.stockOf('tortuga','tangerine')>0,'the shelves refill as the days pass');
+S.shot=12; $('tab-market').click(); assert(/in stock|Sold out/.test($('port-panel').textContent)&&/Cannonballs: 12 of 40/.test($('port-panel').textContent),'the market shows stock and sells cannonballs');
+$('port-panel').querySelector('[data-key="shot10"]').click(); assert.equal(S.shot,22,'buying cannonballs');
+// the smuggler's hold hides the most valuable bales from Customs and pirates
+S.up.secret=1; S.cargo={kraken:2,tangerine:5,brick:3};
+assert.deepEqual(JSON.parse(JSON.stringify(P.openCargo())),{tangerine:3,brick:3},'kraken and two tangerine ride hidden'); assert.equal(P.hiddenCount(),4);
+$('set-sail').click();
+// a pirate fight: lob Brick Weed, then strike your colours and sail on
+const pir=()=>({kind:'pirate',tier:1,name:'the Test Pirate',captain:'Captain Test',cool:0,x:S.x+5,y:S.y,route:[[0,0]],leg:0});
+S.hull=P.stats().hullMax; P.fight(pir(),null);
+const lob=[...$('enc-body').querySelectorAll('.choice')].find(b=>/Lob a bale of Brick Weed/.test(b.textContent)); assert(lob,'Brick Weed is offered as ammunition');
+const b0=S.bricks; lob.click(); assert.equal(S.cargo.brick,2,'a bale of Brick Weed is fired'); assert.equal(S.bricks,b0+1);
+assert(/THWUMP/.test($('enc-text').textContent)||/sinks|surrender/.test($('enc-text').textContent),'the bale lands');
+if($('enc-body').querySelector('.choice')){ assert(/giggly/.test($('enc-body').textContent),'their crew gets high');
+  const g0=S.gold; [...$('enc-body').querySelectorAll('.choice')].find(b=>/Strike your colours/.test(b.textContent)).click();
+  assert.equal(S.cargo.kraken,2,'the smuggler’s hold keeps its kraken'); assert(!S.cargo.brick&&S.cargo.tangerine===2,'they take the open hold'); assert.equal(S.gold,g0-Math.floor(g0/3),'and a third of the gold');
+  assert(/smuggler’s hold/.test($('enc-text').textContent)); }
+$('enc-body').querySelector('.primary').click(); assert(!$('dlg-encounter').open);
+// goals earn relics
+S.visited={tortuga:1,portroyal:1,petitgoave:1,havana:1,nassau:1}; P.checkGoals(); assert(S.relics.spyglass,'five ports earn the spyglass');
+// the hideout: buy the key, leave gold and bales, cast off
+S.gold=3000; P.effects('base:buy'); assert(P.legacy.base&&S.gold===2500,'Toussaint sells the key');
+P.enterBase(); assert($('dlg-hideout').open&&S.atBase,'the hideout opens');
+$('base-body').querySelector('[data-key="gl100"]').click(); assert.equal(P.legacy.base.gold,100,'gold in the strongbox');
+$('base-body').querySelector('[data-key="statangerine"]').click(); assert.equal(P.legacy.base.bales.tangerine,2,'bales in the stash');
+assert(/Sail to/.test($('base-body').textContent),'quick passage from the hideout');
+$('base-leave').click(); assert(!$('dlg-hideout').open&&!S.atBase,'cast off');
+assert(JSON.parse(w.localStorage.getItem('pillageTheReefer.legacy')).base.gold===100,'the hideout is saved apart from the voyage');
+// real danger: a sunk ship ends the voyage; the hideout and the hall of fame stay
+S.sunk=Math.max(1,S.sunk); P.checkGoals(); assert(P.legacy.sails.black,'beating a pirate earns black sails for every voyage');
+S.gentle=false; S.hull=1; S.shot=5; const big={kind:'pirate',tier:5,name:'the Huge Problem',captain:'Admiral Test',cool:0,x:S.x+5,y:S.y,route:[[0,0]],leg:0};
+P.fight(big,null); assert(/could sink you/.test($('enc-body').textContent),'fair warning before a sinking shot');
+[...$('enc-body').querySelectorAll('.choice')].find(b=>/Fire cannonballs/.test(b.textContent)).click();
+assert(/goes down/.test($('enc-title').textContent)&&/voyage is over/.test($('enc-body').textContent),'the ship sinks');
+assert.equal(w.localStorage.getItem('pillageTheReefer.v1'),null,'the voyage is gone');
+const fame=JSON.parse(w.localStorage.getItem('pillageTheReefer.legacy')).fame; assert(fame.length===1&&fame[0].how==='sunk'&&/Admiral Test/.test(fame[0].by),'the hall of fame remembers');
+$('enc-body').querySelector('.primary').click(); assert(!$('title-screen').hidden&&/Anne/.test($('title-fame').textContent),'back to the title, with the hall of fame');
+assert(P.legacy.sails.black,'earned sails stay earned');
+$('btn-new').click(); assert($('dlg-captain').open); assert($('cap-sails').querySelector('input[value="black"]:not([disabled])'),'black sails are unlocked now');
+$('cap-gentle').click(); $('cap-ok').click(); assert(P.state.gentle,'gentle seas chosen');
+assert(/still holds 100 doubloons and 2 bales/.test($('note-body').textContent),'the next voyage hears about the hideout'); $('note-ok').click();
+assert.equal(P.state.gold,250,'a fresh purse'); assert(!P.state.relics.spyglass,'relics went down with the ship'); assert.equal(P.legacy.base.gold,100,'the strongbox survived');
+// a voyage saved before ships could sink keeps gentle seas
+const old=JSON.parse(JSON.stringify(saved)); delete old.gentle; delete old.shot; P.begin(false,old); assert(P.state.gentle&&P.state.shot===12,'old saves sail gentle seas with twelve cannonballs');
 assert.equal(errors.length,0,String(errors));
 console.log('pillage ok');
 process.exit(0);

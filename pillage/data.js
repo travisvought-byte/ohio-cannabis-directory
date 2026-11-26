@@ -16,6 +16,7 @@
     fountain:  {name: 'Fountain of Youth', icon: '⛲', base: 46, home: 'staugustine', note: 'Makes you feel nineteen. Results not guaranteed.'},
     rumcake:   {name: 'Bajan Rum Cake', icon: '🍰', base: 40, home: 'barbados', note: 'Rich, boozy-sweet and gone too soon.'},
     kraken:    {name: 'Kraken Kush', icon: '🐙', base: 150, rare: 'Only found in the holds of merchant ships.', note: 'Legendary. Grips you with all eight arms.'},
+    pearl:     {name: 'Black Pearl', icon: '⚫', base: 170, rare: 'Only carried by the strongest pirate ships.', note: 'Dark, glossy and very illegal. The Crown would love a word with whoever owns it.'},
     mermaid:   {name: "Mermaid's Kiss", icon: '🧜', base: 120, rare: 'Only found floating at sea.', note: 'Drifts in on the tide, sweet and salty.'},
     // Products: made in one port, wanted most in a few others (they pay a premium), and their prices swing by their own amount.
     hash:      {name: "Smuggler's Hash", icon: '🧱', base: 66, home: 'petitgoave', kind: 'product', swing: 0.3, wants: ['havana', 'cartagena', 'barbados'],
@@ -23,7 +24,10 @@
     rosin:     {name: 'Amber Rosin', icon: '🔶', base: 84, home: 'willemstad', kind: 'product', swing: 0.5, wants: ['nassau', 'staugustine', 'veracruz'],
       note: 'Golden and glassy, squeezed by hand. Pricey, and its price jumps about from day to day. Prized in Nassau, St. Augustine and Veracruz.'},
     biscuits:  {name: "Cook's Biscuits", icon: '🍪', base: 34, home: 'nassau', kind: 'product', swing: 0.2, wants: ['tortuga', 'portobelo', 'barbados'],
-      note: 'Baked by a very relaxed cook. Cheap and steady. Prized in Tortuga, Portobelo and Barbados.'}
+      note: 'Baked by a very relaxed cook. Cheap and steady. Prized in Tortuga, Portobelo and Barbados.'},
+    // Brick Weed: cheap pressed schwag, sold almost everywhere. Not worth much, but you can load it in a cannon.
+    brick:     {name: 'Brick Weed', icon: '🟫', base: 12, home: 'nassau', kind: 'brick', swing: 0.2,
+      note: 'Pressed brown brick, seeds, stems and all. Nobody smokes it on purpose, but it burns like a bonfire and fits a cannon nicely.'}
   };
   var COMMON = ['tangerine', 'purple', 'breath', 'haze', 'nectar', 'candy', 'pineapple', 'cloud', 'vanilla', 'fountain', 'rumcake'];
 
@@ -188,27 +192,27 @@
 
   /* Ports. dock: where the ship ties up (water); town: where the houses are drawn (land). */
   var PORTS = {
-    tortuga:    {name: 'Tortuga', map: 'windward', dock: [1000, 302], town: [1000, 272], sells: ['tangerine', 'breath', 'purple'], yard: true, who: 'ruthie',
+    tortuga:    {name: 'Tortuga', map: 'windward', dock: [1000, 302], town: [1000, 272], sells: ['tangerine', 'breath', 'purple', 'brick'], yard: true, who: 'ruthie',
                  blurb: 'A rocky little island full of hammocks, gossip and suspicious-smelling smoke.'},
-    portroyal:  {name: 'Port Royal', map: 'windward', dock: [545, 832], town: [532, 798], sells: ['purple', 'tangerine', 'breath'], yard: true, who: 'percival',
+    portroyal:  {name: 'Port Royal', map: 'windward', dock: [545, 832], town: [532, 798], sells: ['purple', 'tangerine', 'breath', 'brick'], yard: true, who: 'percival',
                  blurb: 'The richest, rowdiest harbor in the Caribbean. The wigs are very tall here.'},
     petitgoave: {name: 'Petit-Goâve', map: 'windward', dock: [985, 598], town: [994, 630], sells: ['breath', 'tangerine', 'pineapple', 'hash'], yard: false, who: 'toussaint',
                  blurb: 'A quiet old buccaneer harbor where everyone is mending a net or pretending to.'},
-    havana:     {name: 'Havana', map: 'straits', dock: [385, 746], town: [385, 792], sells: ['haze', 'nectar', 'fountain'], yard: true, who: 'catalina',
+    havana:     {name: 'Havana', map: 'straits', dock: [385, 746], town: [385, 792], sells: ['haze', 'nectar', 'fountain', 'brick'], yard: true, who: 'catalina',
                  blurb: 'Grand walls, grand ships and the finest rollers on any sea.'},
-    nassau:     {name: 'Nassau', map: 'straits', dock: [1132, 300], town: [1135, 334], sells: ['nectar', 'haze', 'tangerine', 'biscuits'], yard: false, who: 'mildew',
+    nassau:     {name: 'Nassau', map: 'straits', dock: [1132, 300], town: [1135, 334], sells: ['nectar', 'haze', 'tangerine', 'biscuits', 'brick'], yard: false, who: 'mildew',
                  blurb: 'A pirate republic of palm trees, hammocks and very relaxed rules.'},
     cartagena:  {name: 'Cartagena', map: 'main', dock: [500, 758], town: [508, 806], sells: ['candy', 'pineapple', 'cloud'], yard: true, who: 'quill',
                  blurb: 'A walled city of balconies, bells and one very busy botanist.'},
-    portobelo:  {name: 'Portobelo', map: 'main', dock: [180, 724], town: [182, 770], sells: ['pineapple', 'candy', 'breath'], yard: false, who: 'prudence',
+    portobelo:  {name: 'Portobelo', map: 'main', dock: [180, 724], town: [182, 770], sells: ['pineapple', 'candy', 'breath', 'brick'], yard: false, who: 'prudence',
                  blurb: 'Sleepy treasure port. Somebody important is on holiday here.'},
     willemstad: {name: 'Willemstad', map: 'main', dock: [1196, 502], town: [1192, 472], sells: ['cloud', 'candy', 'nectar', 'rosin'], yard: true, who: 'ines',
                  blurb: 'Colorful houses, a floating bridge and a famous captain in retirement.'},
     staugustine: {name: 'St. Augustine', map: 'straits', dock: [482, 75], town: [418, 52], sells: ['fountain', 'nectar', 'tangerine'], yard: false, who: 'bartholomew',
                  blurb: 'The oldest town in Florida. Some of the residents feel it.'},
-    veracruz:   {name: 'Veracruz', map: 'gulf', dock: [322, 790], town: [266, 820], sells: ['vanilla', 'haze', 'fountain'], yard: true, who: 'esperanza',
+    veracruz:   {name: 'Veracruz', map: 'gulf', dock: [322, 790], town: [266, 820], sells: ['vanilla', 'haze', 'fountain', 'brick'], yard: true, who: 'esperanza',
                  blurb: 'A busy old harbor that smells of vanilla, tar and very long lunches.'},
-    barbados:   {name: 'Barbados', map: 'antilles', dock: [1362, 800], town: [1398, 768], sells: ['rumcake', 'cloud', 'pineapple'], yard: true, who: 'clementine',
+    barbados:   {name: 'Barbados', map: 'antilles', dock: [1362, 800], town: [1398, 768], sells: ['rumcake', 'cloud', 'pineapple', 'brick'], yard: true, who: 'clementine',
                  blurb: 'Bridgetown, on Carlisle Bay. Flying fish, cricket and a rum shop that never seems to close.'}
   };
 
@@ -263,7 +267,15 @@
         {label: 'Tell me about pillaging.', next: 'pillage'},
         {label: 'Do you need anything?', next: 'ask', if: '!quest:toussaint'},
         {label: 'Two bales of Mermaid’s Kiss, as promised.', next: 'done', if: 'can:toussaint'},
+        {label: 'Know a safe place to stash cargo?', next: 'cave', if: '!base'},
+        {label: 'Any advice for a smuggler?', next: 'smuggle'},
         {label: 'Farewell, Grandpère.', end: true}]},
+      cave: {text: 'Île-à-Vache, the little cow island just south of here. The old buccaneer crews met there. There’s a dry cave above the beach with a door that still locks, and it’s mine. Five hundred doubloons and the key is yours. Whatever you leave in there stays there, even if the sea takes you.', do: 'base:know', options: [
+        {label: 'Here’s five hundred doubloons.', do: 'base:buy', if: 'gold:500', next: 'key'},
+        {label: 'I can’t afford it yet.', if: '!gold:500', next: 'start'},
+        {label: 'Maybe later.', if: 'gold:500', next: 'start'}]},
+      key: {text: 'The key is heavy, rusty and smells of goat. Sail into the cove on the south side of Île-à-Vache and she’s all yours. Leave your spare gold there. The sea is greedy.', options: [{label: 'Thank you, Grandpère.', next: 'start'}]},
+      smuggle: {text: 'Customs sniff for cargo in the open hold. A good shipwright can build you a smuggler’s hold behind a false bulkhead, and whatever rides in there, they never find. Keep your Kraken Kush and Black Pearl in it. Those, they take on sight.', options: [{label: 'False bulkhead. Got it.', next: 'start'}]},
       pillage: {text: 'Fat merchant ships waddle across the sea like ducks full of bread. Sail right into one and you can try boarding her. More cannons, better odds. Cannons are what pirates have instead of manners.', options: [{label: 'Ducks full of bread. Got it.', next: 'start'}]},
       ask: {text: 'Mermaid’s Kiss. The bales that float in on the tide, sweet as island honey. Keep your eyes on the water. Bring me two and I’ll pay three hundred fifty doubloons and tell you a story.', options: [
         {label: 'You’ve got a deal.', do: 'quest:toussaint', next: 'start'}, {label: 'Not today.', next: 'start'}]},
@@ -403,7 +415,9 @@
     cannons:  {name: 'More cannons', icon: '💣', levels: [0, 1, 2, 3, 4], cost: [300, 1000, 2600, 5500], note: 'Every broadside hits harder, and warning shots land better.'},
     crew:     {name: 'Hire boarders', icon: '👥', levels: [0, 1, 2, 3], cost: [400, 1300, 3200], note: 'Better odds when you board, and more hands to carry off loot.'},
     sails:    {name: 'Faster sails', icon: '⛵', levels: [0, 1, 2, 3], cost: [500, 1500, 3800], note: 'Sail faster, and outrun Customs and pirates more often.'},
-    lavender: {name: 'Lavender-lined hold', icon: '🌸', levels: [0, 1], cost: [900], note: 'Customs can’t smell your cargo from as far away.'}
+    lavender: {name: 'Lavender-lined hold', icon: '🌸', levels: [0, 1], cost: [900], note: 'Customs can’t smell your cargo from as far away.'},
+    secret:   {name: 'Smuggler’s hold', icon: '🕳️', levels: [0, 4, 10, 18], cost: [600, 1600, 3600],
+      note: 'A hidden hold behind a false bulkhead, on top of your normal hold. Your most valuable bales ride in it: Customs never find them and pirates never take them.'}
   };
 
   /* Renown earns levels. Every level after the first gives a skill point. */
@@ -421,7 +435,9 @@
 
   /* How rough each sea is: it sets how tough the pirates are and how rich the loot. */
   var SEA_TIER = {windward: 1, straits: 2, antilles: 2, gulf: 3, main: 3};
-  var PIRATE_COUNT = {windward: 1, straits: 1, antilles: 2, gulf: 2, main: 2};
+  var PIRATE_COUNT = {windward: 2, straits: 2, antilles: 2, gulf: 3, main: 3};
+  // Pirate ships come in five sizes. Most match the sea they sail, some are bigger than you'd like.
+  var SHIP_CLASS = ['sloop', 'brigantine', 'brig', 'frigate', 'man-o’-war'];
   var PIRATE_SHIPS = ['the Salty Grudge', 'the Crooked Grin', 'the Wet Sock', 'the Bad Idea', 'the Second Helping', 'the Loud Neighbour',
     'the Unpaid Invoice', 'the Sore Loser', 'the Petty Theft', 'the Last Straw'];
   var PIRATE_CAPTAINS = ['One-Eyed Edna Bramble', 'Barnaby “Bilge” Crumb', 'Scurvy Sal Tuckett', 'Gentleman Jeb Mortimer', 'Two-Hat Tilly Ross',
@@ -438,7 +454,9 @@
     'The note reads: “Goods from another sea fetch the best prices. Tortuga Tangerine in Cartagena? Chef’s kiss.”',
     'The note reads: “Merchant ships carry Kraken Kush. Customs cutters carry clipboards. Choose your fights.”',
     'The note reads: “Black sails mean pirates. Pound them with broadsides first, then board when they’re weak.”',
-    'The note reads: “A pirate who beats you only takes part of your hold. Patch up at any port and try again.”',
+    'The note reads: “Count the guns before you pick a fight. A frigate will send a sloop to the bottom. When the odds turn, run, pay or strike your colours.”',
+    'The note reads: “Out of cannonballs? Lob a bale of Brick Weed. It hits softer, but their crew gets so high they can’t aim.”',
+    'The note reads: “The sea keeps whatever sinks. Old Toussaint in Petit-Goâve rents out a cave where the sea can’t reach.”',
     'The note reads: “Whoever finds this: the haze over Smoke Cay never lifts. Signed, someone who got lost there for a week.”',
     'The note reads: “Pressed hash from Petit-Goâve fetches a fortune in Havana. Write down every price you see. Your ledger is your best friend.”',
     'The note reads: “Every strain gives a different buzz. Smoke a bale of Cartagena Candy before a tricky bit of business.”'
@@ -463,13 +481,54 @@
     mermaid:   {name: 'Swims Like a Fish', speed: 0.25, does: 'Your ship sails 25% faster.', flavor: 'Salt spray, sweet air and a sudden urge to sing.'},
     hash:      {name: 'Iron Nerves', fight: 2, luck: 0.05, does: '+2 Fighting and +5% on every odds check.', flavor: 'Heavy, slow and steady. Nothing rattles you.'},
     rosin:     {name: 'Golden Glow', charm: 2, sell: 0.05, does: '+2 Charm and +5% on everything you sell.', flavor: 'You glow. Literally, a little. It’s fine.'},
+    pearl:     {name: 'Dread Calm', fight: 3, luck: 0.05, does: '+3 Fighting and +5% on every odds check.', flavor: 'Dark, heavy and very quiet. You could stare down a hurricane.'},
+    brick:     {name: 'Rough Night', fight: 1, does: '+1 Fighting. It isn’t pleasant, but it’s cheap.', flavor: 'Everyone coughs for ten minutes and then wants to fight a seagull.'},
     biscuits:  {name: 'Slow Burn', sail: 1, charm: 1, fight: 1, days: 4, verb: 'eat', does: '+1 Fighting, Sailing and Charm, and it lasts twice as long.', flavor: 'Nothing happens for an hour. Then everything is lovely for days.'}
   };
 
   var PARROT = 'Admiral Biscuit';
 
+  /* Your hideout: a cave on Île-à-Vache. What you leave there survives even if your ship goes down. */
+  var HIDEOUT = {name: 'Île-à-Vache', map: 'windward', at: [960, 738], dock: [960, 762], price: 500,
+    caps: [40, 90, 160], capCost: [900, 2400]};
+
+  /* Relics: one-of-a-kind finds that each goal can earn. They belong to the captain and go down with the ship. */
+  var RELICS = {
+    spyglass: {name: 'Brass Spyglass', icon: '🔭', sight: 1.4, does: 'You see 40% farther, so the fog lifts faster.'},
+    tooth:    {name: 'Kraken Tooth', icon: '🦷', fight: 1, does: '+1 Fighting, for good.'},
+    wig:      {name: 'Powdered Wig', icon: '🎩', charm: 1, does: '+1 Charm, for good.'},
+    compass:  {name: 'Featherstone’s Compass', icon: '🧭', sail: 1, does: '+1 Sailing, for good.'},
+    doubloon: {name: 'Lucky Doubloon', icon: '🪙', luck: 0.05, does: '+5% on every odds check.'},
+    figure:   {name: 'Iron Figurehead', icon: '🗿', hull: 15, does: '+15 hull points, for good.'},
+    seal:     {name: 'Merchant’s Seal', icon: '📜', sell: 0.05, does: '+5% on everything you sell.'},
+    goldbrick:{name: 'Golden Brick', icon: '🧈', brick: 1, does: 'Brick Weed hits as hard as cannonballs.'},
+    flag:     {name: 'Gristle’s Flag', icon: '🏴', scare: 2, does: 'Sloops and brigantines fly the other way when they see it.'}
+  };
+
+  /* Your ship's look. Some colours and flags are earned: each one says how. Earned ones stay earned for every voyage. */
+  var SAILS = {
+    canvas:  {name: 'Canvas', color: '#fbf4e2'},
+    ochre:   {name: 'Ochre', color: '#e3b25a'},
+    seafoam: {name: 'Sea green', color: '#8fd3b6'},
+    sky:     {name: 'Sky blue', color: '#a9cfee'},
+    rose:    {name: 'Rose', color: '#f0a7b6'},
+    black:   {name: 'Black', color: '#2b2b2b', earn: 'Beat a pirate ship'},
+    crimson: {name: 'Crimson', color: '#b8322a', earn: 'Beat a frigate or a man-o’-war'},
+    gold:    {name: 'Gold', color: '#f2c94c', earn: 'Have 5,000 doubloons at once'},
+    emerald: {name: 'Emerald', color: '#2fae6b', earn: 'Dig up the Emerald Bale'}
+  };
+  var FLAGS = {
+    skull:  {name: 'Skull and crossbones', icon: '☠️', color: '#141414'},
+    leaf:   {name: 'Green leaf', icon: '🌿', color: '#2f8f4e'},
+    parrot: {name: 'Parrot', icon: '🦜', color: '#d0342c'},
+    anchor: {name: 'Anchor', icon: '⚓', color: '#24446e'},
+    kraken: {name: 'Kraken', icon: '🐙', color: '#6b3fa0', earn: 'Get hold of Kraken Kush'},
+    crown:  {name: 'Stolen crown', icon: '👑', color: '#c99a1d', earn: 'Reach level 10'}
+  };
+
   window.PILLAGE_DATA = {GOODS: GOODS, COMMON: COMMON, MAPS: MAPS, PORTS: PORTS, STASHES: STASHES, PEOPLE: PEOPLE,
     QUESTS: QUESTS, UPGRADES: UPGRADES, LEVELS: LEVELS, SKILLS: SKILLS, SKILL_MAX: SKILL_MAX, SEA_TIER: SEA_TIER,
     PIRATE_COUNT: PIRATE_COUNT, PIRATE_SHIPS: PIRATE_SHIPS, PIRATE_CAPTAINS: PIRATE_CAPTAINS, BOSS: BOSS,
-    CUSTOMS_NAMES: CUSTOMS_NAMES, MERCHANT_NAMES: MERCHANT_NAMES, BOTTLE_TIPS: BOTTLE_TIPS, SMOKE: SMOKE, PARROT: PARROT};
+    CUSTOMS_NAMES: CUSTOMS_NAMES, MERCHANT_NAMES: MERCHANT_NAMES, BOTTLE_TIPS: BOTTLE_TIPS, SMOKE: SMOKE, PARROT: PARROT,
+    SHIP_CLASS: SHIP_CLASS, HIDEOUT: HIDEOUT, RELICS: RELICS, SAILS: SAILS, FLAGS: FLAGS};
 })();
