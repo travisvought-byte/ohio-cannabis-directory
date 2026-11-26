@@ -305,7 +305,8 @@ def tile_map(perm, question, answers, caption):
         tally[status] = tally.get(status, 0) + 1
         tone = tone_of(question, status)
         tones.append(tone)
-        label = status_label(perm, question, status) + (f': {a["short"]}' if a else '')
+        short = (a or {}).get('short', '').strip()
+        label = status_label(perm, question, status) + (f': {short}' if short and short.rstrip('.').lower() not in ('yes', 'no') else '')
         href = f'{slug(names[code])}.html'
         shapes.append(f'<a href="{href}" class="st {esc(tone)}" data-track="map-state" aria-label="{esc(names[code])}: {esc(label)}">'
                       f'<title>{esc(names[code])}: {esc(status_label(perm, question, status))}</title><path d="{st["d"]}" fill="{_fill(tone)}"/></a>')
