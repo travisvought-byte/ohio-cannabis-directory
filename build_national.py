@@ -738,7 +738,7 @@ def shell(title, description, body, name, place, hero='', ld=None, css=''):
     family = ''.join(f'<li><a href="{esc(url)}">{esc(label)}</a></li>' for url, label, _, _ in FAMILY)
     foot = ('<footer class="site"><div class="wrap"><div class="cols">'
             '<nav aria-label="This site"><h2>This site</h2><ul><li><a href="index.html#map">Pick your state</a></li>'
-            '<li><a href="index.html#compare">Compare the law</a></li><li><a href="medical.html">Medical cards</a></li><li><a href="coverage.html">Medicaid and insurance</a></li><li><a href="help.html">Get help</a></li><li><a href="weed-santa.html">Weed Santa</a></li><li><a href="world.html">Around the world</a></li><li><a href="learn.html">Cannabis 101</a></li><li><a href="hash-myths.html">Hash myths, busted</a></li><li><a href="heritage.html">Where weed comes from</a></li><li><a href="travel-warnings.html">Travel warnings</a></li><li><a href="jokes.html">Joke of the day</a></li><li><a href="partners.html">Partners</a></li><li><a href="about.html">About and methods</a></li><li><a href="privacy.html">Privacy</a></li></ul></nav>'
+            '<li><a href="index.html#compare">Compare the law</a></li><li><a href="medical.html">Medical cards</a></li><li><a href="coverage.html">Medicaid and insurance</a></li><li><a href="help.html">Get help</a></li><li><a href="weed-santa.html">Weed Santa</a></li><li><a href="world.html">Around the world</a></li><li><a href="learn.html">Cannabis 101</a></li><li><a href="hash-myths.html">Hash myths, busted</a></li><li><a href="heritage.html">Where weed comes from</a></li><li><a href="travel-warnings.html">Travel warnings</a></li><li><a href="jokes.html">Joke of the day</a></li><li><a href="../pillage/">Pillage the Reefer (a game)</a></li><li><a href="partners.html">Partners</a></li><li><a href="about.html">About and methods</a></li><li><a href="privacy.html">Privacy</a></li></ul></nav>'
             f'<nav aria-label="Our other sites"><h2>Our other sites</h2><ul>{family}</ul></nav>'
             '<nav aria-label="Corrections and data"><h2>Fix or reuse</h2><ul>'
             f'<li><a href="{esc(correction_url(place))}">Suggest a correction</a></li>'
@@ -1641,7 +1641,9 @@ def home_page(perm, score, directory, answers, sources, sponsors=()):
             '<form class="pick" id="pick"><label for="state-jump">Pick your state</label><div class="row">'
             f'<select id="state-jump" name="state"><option value="">Choose a state</option>{jump}</select><button type="submit">Go</button></div>'
             f'<p class="muted">Or tap your state on the <a href="#map">map below</a>. Checked as of {long_date(perm["as_of"])}.</p></form>'
-            '<p class="worldlink"><a href="world.html">Travelling or outside the US? Laws around the world →</a></p></div>'
+            '<p class="worldlink"><a href="world.html">Travelling or outside the US? Laws around the world →</a></p>'
+            # Owner's request, November 26, 2026: a light pirate game on the site, Pillage the Reefer (pillage/, hand-built).
+            '<p class="worldlink"><a href="../pillage/">Need a break? Play Pillage the Reefer, our pirate game →</a></p></div>'
             f'<div class="art"><div class="shipbox">{ship_art()}{joke_bubble(jokes)}</div></div></div></section>')
 
     # The joke itself is in the picture (joke_bubble); its data and the script that picks today's follow the first block.

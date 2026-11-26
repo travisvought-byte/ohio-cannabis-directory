@@ -35,7 +35,7 @@ FORWARD = [
     'seeds.html', 'work-with-travis.html',
 ]
 # Folders with a hand-built page of their own, published as written and listed in the sitemap.
-EXTRA_FOLDERS = {'policy-weekend'}
+EXTRA_FOLDERS = {'policy-weekend', 'pillage'}
 SKIP = {'.git', '.github', 'node_modules', '__pycache__', '_site', '.pytest_cache'}
 
 
