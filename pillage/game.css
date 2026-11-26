@@ -202,7 +202,7 @@ button:disabled{opacity:.5}
   .wrap{padding:0 12px}
   .stage{height:clamp(320px,62vh,560px);border-width:4px;border-radius:12px}
   .hud li{font-size:.82rem;padding:2px 8px}
-  .hud .hud-sea,.hud .hud-day,.hud .hud-title{display:none}
+  .hud .hud-sea,.hud .hud-day,.hud .hud-title,.hud .hud-fleet{display:none}
   .bar-row{grid-template-columns:1fr}
   .toast{top:64px;font-size:.92rem}
   .dlg{padding:14px 14px 12px}

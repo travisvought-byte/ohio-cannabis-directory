@@ -169,7 +169,7 @@ const b0=S.bricks; lob.click(); assert.equal(S.cargo.brick,2,'a bale of Brick We
 assert(/THWUMP/.test($('enc-text').textContent)||/sinks|surrender/.test($('enc-text').textContent),'the bale lands');
 if($('enc-body').querySelector('.choice')){ assert(/giggly/.test($('enc-body').textContent),'their crew gets high');
   const g0=S.gold; [...$('enc-body').querySelectorAll('.choice')].find(b=>/Strike your colours/.test(b.textContent)).click();
-  assert.equal(S.cargo.kraken,2,'the smuggler’s hold keeps its kraken'); assert(!S.cargo.brick&&S.cargo.tangerine===2,'they take the open hold'); assert.equal(S.gold,g0-Math.floor(g0/3),'and a third of the gold');
+  assert.equal(S.cargo.kraken,2,'the smuggler’s hold keeps its kraken'); assert(!S.cargo.brick&&S.cargo.tangerine===2,'they take the open hold'); assert.equal(S.gold,g0-Math.floor(g0/2),'and half the gold');
   assert(/smuggler’s hold/.test($('enc-text').textContent)); }
 $('enc-body').querySelector('.primary').click(); assert(!$('dlg-encounter').open);
 // goals earn relics
@@ -237,6 +237,47 @@ w.dispatchEvent(new w.Event('pagehide')); const s5=JSON.parse(w.localStorage.get
 assert(s5.rep.britain===-19&&s5.jobsDone===1&&s5.flags.r5,'standing and jobs are saved');
 $('btn-log').click(); assert(/The powers of 1718/.test($('log-body').textContent)&&/Great Britain: ⚪ Neutral \(-19\)/.test($('log-body').textContent)&&$('log-body').querySelectorAll('.fl').length>=5,'the log shows every nation with its flag');
 $('log-close').click();
+// Round five, part two: provisions, the law, decoys and fire ships
+const closeEnc=()=>{ for(let i=0;i<20&&$('dlg-encounter').open;i++) ($('enc-body').querySelector('.primary')||$('enc-body').querySelector('.choice:not([disabled])')).click(); };
+const choose=re=>{ const b=[...$('enc-body').querySelectorAll('.choice')].find(x=>re.test(x.textContent)); assert(b,'offered: '+re); b.click(); };
+const cust=k=>({kind:'customs',nation:k,name:'the Test Cutter',captain:'X',cool:0,x:T.x+5,y:T.y,route:[[0,0]],leg:0});
+T.up.secret=0; T.gentle=true; T.marque=''; T.jobs=[]; T.news=[]; T.cargo={}; T.gold=1000; T.hull=P.stats().hullMax;
+// the crew eats a day's provisions for every day at sea from level 2, and two more for a smoke
+P.dock('tortuga'); $('tab-market').click(); assert(/Provisions: \d+ of 40 days/.test($('port-panel').textContent),'markets sell provisions from level 2');
+T.food=20; const fd0=E.dayOf(T.dist); w.Math.random=()=>0.99; assert(P.passage('portroyal'),'sail to Port Royal'); closeEnc(); w.Math.random=rnd;
+const fdays=E.dayOf(T.dist)-fd0; assert(fdays>0&&T.food===20-fdays,'the crew eats a day for each of the '+fdays+' days at sea: '+T.food);
+const sm=Object.keys(D.SMOKE).find(g=>!D.CONTRABAND||!D.CONTRABAND.includes(g)); T.cargo[sm]=1; T.food=10; assert(P.smoke(sm)); assert.equal(T.food,8,'the munchies eat two days of provisions');
+T.food=0; const hc=P.odds.chanceOf(0.5); assert(P.hungry(),'no food, hungry crew'); T.food=5; assert.equal(P.odds.chanceOf(0.5),hc+10,'a hungry crew rolls 10% worse');
+T.gold=100; T.food=35; assert.equal(P.buyFood(10),5,'the lockers hold 40 days'); assert(T.food===40&&T.gold===90,'provisions cost 2 doubloons a day');
+if($('dlg-port').open) $('set-sail').click();
+// the law: a small haul gets a warning, then a fine
+T.food=20; T.gold=1000; T.record={}; T.rep.france=0; T.cargo={brick:5}; w.Math.random=()=>0;
+P.customs(cust('france')); choose(/Run for it/); assert(/first offence/.test($('enc-text').textContent)&&T.gold===1000,'a first offence is a warning'); closeEnc();
+T.cargo={brick:5}; P.customs(cust('france')); choose(/Run for it/); assert(/fine as well: 100 doubloons/.test($('enc-text').textContent)&&T.gold===900,'a second is a fine'); closeEnc();
+// a big haul in plain sight means jail: the open hold, half the gold, days inside, and a nation against you
+T.cargo={brick:60}; T.gold=1000; T.rep.britain=0; T.record={}; assert(P.bigHaul()); const jd0=E.dayOf(T.dist);
+P.customs(cust('britain')); assert(/jail, not a fine/.test($('enc-body').textContent),'the customs warn you about jail'); choose(/Run for it/);
+assert(/locks you up for 5 days/.test($('enc-text').textContent)&&T.gold===500&&!T.cargo.brick&&T.rep.britain===-80,'jail takes the hold and half the gold');
+w.Math.random=()=>0.99; $('enc-body').querySelector('.primary').click(); w.Math.random=rnd;
+assert(D.PORTS[T.docked]&&D.PORTS[T.docked].nation==='britain'&&$('dlg-port').open,'you walk out on a British dock: '+T.docked);
+assert(E.dayOf(T.dist)>=jd0+5&&P.standOf('britain')===0,'five days pass, and Britain is still hostile');
+// decoys at level 3: bought at the shipwright, they draw off the customs or a pirate
+T.rep.britain=0; T.xp=Math.max(T.xp,D.LEVELS[2].xp); T.gold=1000; T.decoys=0; $('set-sail').click(); P.dock('tortuga'); $('tab-yard').click();
+$('port-panel').querySelector('[data-key=decoy]').click(); $('port-panel').querySelector('[data-key=decoy]').click();
+assert(T.decoys===2&&T.gold===500&&/Two decoys is all/.test($('port-panel').textContent),'two decoys at 250 each');
+$('set-sail').click(); T.cargo={brick:5}; P.customs(cust('france')); choose(/Send a decoy/); assert(T.decoys===1&&T.cargo.brick===5,'a decoy draws off the customs'); closeEnc();
+const gd=T.gold; P.fight(pir(),null); choose(/Send a decoy/); assert(T.decoys===0&&T.gold===gd&&!$('enc-body').querySelector('.choice'),'and ends a fight'); closeEnc();
+// fire ships at level 4: hired in a Nassau tavern, they burn one ship
+T.xp=Math.max(T.xp,D.LEVELS[3].xp); T.gold=1000; T.fireship=0; P.dock('nassau'); $('tab-tavern').click();
+assert(/Maracaibo/.test($('port-panel').textContent),'the tavern tells the real story'); $('port-panel').querySelector('[data-key=fireship]').click();
+assert(T.fireship===1&&T.gold===500,'a fire ship costs 500'); $('set-sail').click();
+w.Math.random=()=>0.99; P.fight(pir(),null); choose(/Send in your fire ship/); w.Math.random=rnd;
+assert(T.fireship===0&&/fire ship/i.test($('enc-text').textContent)&&/burns with her/.test($('enc-text').textContent),'the fire ship burns her'); closeEnc();
+// taken over by pirates: the open hold and nine doubloons in ten
+T.gold=1000; T.cargo={brick:4}; T.hull=1; w.Math.random=()=>0; P.fight(pir(),null); choose(/^⚔️ Board/); w.Math.random=rnd;
+assert(T.gold===100&&!T.cargo.brick&&/nine in every ten/.test($('enc-text').textContent),'pirates take 90% of the gold'); closeEnc();
+w.dispatchEvent(new w.Event('pagehide')); const s6=JSON.parse(w.localStorage.getItem('pillageTheReefer.v1'));
+assert(s6.flags.r6&&Number.isFinite(s6.food)&&s6.record,'provisions and the record are saved');
 assert.equal(errors.length,0,String(errors));
 console.log('pillage ok');
 process.exit(0);

@@ -13,6 +13,8 @@
   // Contraband: the rare bales no market sells. Customs take them on sight, unless they're in the smuggler's hold.
   var CONTRABAND = ORDER.filter(function (g) { return GOODS[g].rare; });
   var SHOT_MAX = 40, SHOT_PRICE = 3, NAME_MAX = 24;
+  // Round five, part two: provisions, decoys, fire ships and the law.
+  var FOOD_MAX = 40, FOOD_PRICE = 2, DECOY_MAX = 2, DECOY_COST = 250, FIRE_COST = 500, FIRE_P = 0.8, LAW_BIG = 50;
   function $(id) { return document.getElementById(id); }
 
   /* ---------- small helpers ---------- */
@@ -116,17 +118,23 @@
       flags: {}, docked: null, fog: {}, grit: 0, buff: null, seen: {},
       shot: 12, mk: {}, look: {captain: '', ship: 'the Lucky Leaf', sail: 'canvas', flag: 'skull'}, relics: {}, gentle: false, earned: 0, bricks: 0, atBase: false,
       rep: {britain: 0, spain: 0, france: 0, dutch: 0, brethren: 0}, marque: '', jobs: [], jobsTaken: {}, jobsDone: 0, bounties: 0, news: [], lastDay: 0,
-      salute: {}, seed: Math.floor(Math.random() * 1e9)};
+      salute: {}, seed: Math.floor(Math.random() * 1e9), food: 20, decoys: 0, fireship: 0, record: {}};
   }
   function curMap() { return MAPS[state.map]; }
   // Your ship and skills, plus whatever boost you've smoked.
   function stats() {
-    var b = boost();
-    if (!b) return E.stats(state);
-    var k = state.skill, st = E.stats({up: state.up, relics: state.relics, skill: {fight: k.fight + (b.fight || 0), sail: k.sail + (b.sail || 0), charm: k.charm + (b.charm || 0)}});
-    if (b.speed) st.speed *= 1 + b.speed;
+    var b = boost(), st;
+    if (!b) st = E.stats(state);
+    else {
+      var k = state.skill;
+      st = E.stats({up: state.up, relics: state.relics, skill: {fight: k.fight + (b.fight || 0), sail: k.sail + (b.sail || 0), charm: k.charm + (b.charm || 0)}});
+      if (b.speed) st.speed *= 1 + b.speed;
+    }
+    if (hungry()) st.speed *= 0.8;
     return st;
   }
+  // From level 2 the crew eats. With nothing left, they sail slower and do everything worse.
+  function hungry() { return !!state && level() >= 2 && (state.food || 0) <= 0; }
   function relic(key) { return E.relicSum(state, key); }
   function hullMax() { return UP.hull.levels[state.up.hull] + relic('hull'); }
   function captainName() { return state.look.captain || 'A nameless captain'; }
@@ -207,7 +215,7 @@
   // A miss earns a second wind: +10% on the next check for each miss in a row, up to +30%. Some boosts add luck too.
   function boost() { var b = state && state.buff; return b && SMOKE[b.g] && state.dist < b.until ? SMOKE[b.g] : null; }
   // Every check is a roll of a twenty-sided die. A 50% chance means you need 11 or more; each 5% is one face of the die.
-  function edge() { var b = boost(); return Math.min(0.3, 0.1 * (state.grit || 0)) + ((b && b.luck) || 0) + relic('luck'); }
+  function edge() { var b = boost(); return Math.min(0.3, 0.1 * (state.grit || 0)) + ((b && b.luck) || 0) + relic('luck') - (hungry() ? 0.1 : 0); }
   function chanceOf(p) { return Math.round(clamp(p + edge(), 0.05, 0.95) * 20) * 5; }
   function pct(p) { var c = chanceOf(p); return '🎲 ' + E.need(c) + '+, ' + c + '%'; }
   var lastRoll = null;
@@ -232,7 +240,9 @@
     if (state.grit) parts.push('+' + Math.min(30, 10 * state.grit) + '% second wind after ' + ['a miss', 'two misses', 'three misses'][Math.min(3, state.grit) - 1]);
     if (b && b.luck) parts.push('+' + Math.round(b.luck * 100) + '% from your ' + b.name);
     if (lk) parts.push('+' + Math.round(lk * 100) + '% from your ' + RELICS.doubloon.name);
-    return parts.length ? '🍀 Already counted in these odds: ' + andList(parts) + '.' : '';
+    var out = parts.length ? '🍀 Already counted in these odds: ' + andList(parts) + '.' : '';
+    if (hungry()) out += (out ? ' ' : '') + '🍞 Your crew is hungry: −10% on every roll until you buy provisions.';
+    return out;
   }
 
   /* ---------- smoking a bale: a short, strain-specific boost ---------- */
@@ -248,8 +258,14 @@
     mendAcc = 0;
     sfx('pickup');
     track('smoke');
+    var munch = '';
+    if (level() >= 2) {
+      var ate = Math.min(2, state.food);
+      state.food -= ate;
+      munch = ate ? ' The munchies hit: the crew eats ' + ate + ' ' + plural(ate, 'day') + ' of provisions.' + (state.food ? '' : ' That was the last of the food.') : ' The munchies hit, and there’s nothing left to eat.';
+    }
     say('🔥 You ' + (verb(g) === 'eat' ? 'pass round a crate of ' : 'light up a bale of ') + GOODS[g].name + '. ' + S.flavor + ' Boost: ' + S.name + ', about ' + boostDays(S) + ' days of sailing. ' + S.does +
-      (had && had !== S ? ' It replaces ' + had.name + '.' : ''));
+      (had && had !== S ? ' It replaces ' + had.name + '.' : '') + munch);
     save();
     return true;
   }
@@ -416,6 +432,11 @@
     b.jobsDone = Math.max(0, Math.floor(b.jobsDone) || 0);
     b.bounties = Math.max(0, Math.floor(b.bounties) || 0);
     b.lastDay = Math.max(0, Math.floor(b.lastDay) || 0);
+    b.food = s.food === undefined ? 20 : clamp(Math.floor(b.food) || 0, 0, FOOD_MAX);
+    b.decoys = clamp(Math.floor(b.decoys) || 0, 0, DECOY_MAX);
+    b.fireship = b.fireship ? 1 : 0;
+    if (typeof b.record !== 'object' || Array.isArray(b.record)) b.record = {};
+    for (var rc in b.record) { var R = b.record[rc]; if (!D.NATIONS[rc] || !R || !(R.n > 0) || !(R.d > 0)) delete b.record[rc]; }
     return b;
   }
 
@@ -978,6 +999,59 @@
     }
     return msg;
   }
+  /* The law. Caught with a small haul: a warning the first time, then a fine. Caught with a big one: jail. */
+  var pendingJail = null;
+  function bigHaul() { return openCount() + openParcels() >= LAW_BIG; }
+  function decoysLeft() { return state.decoys ? ' You have ' + state.decoys + ' ' + plural(state.decoys, 'decoy') + ' left.' : ' That was your last decoy.'; }
+  function offences(k) { var r = state.record[k]; return r && day() - r.d <= 30 ? r.n : 0; }
+  function booked(k) { var before = offences(k); state.record[k] = {n: before + 1, d: day()}; return before; }
+  function warnOrFine(k) {
+    if (!booked(k)) return ' It’s your first offence with ' + NAT[k].short + ', so they let you off with a warning. Next time there’ll be a fine.';
+    var fine = Math.min(state.gold, Math.max(25, Math.round(state.gold * 0.1)));
+    state.gold -= fine;
+    return fine ? ' They’ve caught you before, so there’s a fine as well: ' + fmt(fine) + ' doubloons.' : '';
+  }
+  // Jail: they take the whole open hold and half your gold, then lock you up for a few days. It happens when the encounter closes.
+  function jailText(k, lead) {
+    var N = NAT[k], seen = openCount() + openParcels(), big = seen >= LAW_BIG, sz = seizeContraband(), o = openCargo(), lostN = 0;
+    for (var g in o) { takeCargo(g, o[g]); lostN += o[g]; }
+    var fine = Math.floor(state.gold / 2), days = big ? 5 : 3;
+    state.gold -= fine;
+    booked(k);
+    state.rep[k] = big ? Math.min(repOf(k), -80) : -40;
+    if (state.marque === k) state.marque = '';
+    pendingJail = {k: k, days: days};
+    sfx('bad'); track('jail');
+    return lead + ' ⛓️ ' + (big ? 'With ' + baleWord(seen) + ' in plain sight, this is no fine.' : cap(N.short) + ' counts you an enemy, so this is no fine.') + ' ' + cap(N.law) + ' impounds ' +
+      (lostN ? 'your whole open hold, ' + baleWord(lostN) + ',' : 'everything they can find') + ' takes ' + fmt(fine) + ' doubloons in fines and court costs, and locks you up for ' + days + ' days.' + sz +
+      (hiddenCount() ? ' They never find your smuggler’s hold.' : '') +
+      (big ? ' ' + cap(N.short) + ' now counts you a public enemy, and its warships will be hunting you for weeks.' : ' Once you’re out, ' + N.short + ' will still be wary of you.');
+  }
+  // Arrested by a warship: a big haul or bad blood means jail, otherwise a stiff fine.
+  function arrest(k, lead) {
+    if (bigHaul() || standOf(k) === 0) return jailText(k, lead);
+    var o = openCargo(), lostN = 0, fine = Math.floor(state.gold / 3);
+    for (var g in o) { takeCargo(g, o[g]); lostN += o[g]; }
+    state.gold -= fine; settle(k); booked(k);
+    return lead + ' They impound ' + (lostN ? baleWord(lostN) : 'nothing from your empty hold') + (fine ? ' and fine you ' + fmt(fine) + ' doubloons' : '') + '. “Thank you for your cooperation.” Your slate with ' + NAT[k].short + ' is clean, at a price.' +
+      (hiddenCount() ? ' They never find your smuggler’s hold.' : '');
+  }
+  // Serve the time, then walk out on the docks of the nearest port of theirs.
+  function serveJail() {
+    var J = pendingJail;
+    pendingJail = null;
+    if (!J) return;
+    var ports = Object.keys(PORTS).filter(function (p) { return PORTS[p].nation === J.k; }), here = ports.filter(function (p) { return PORTS[p].map === state.map; });
+    var pid = here[0] || ports[0];
+    state.dist += J.days * 900;
+    var worn = boostTick(J.days * 900), news = dayTick(true), lead = '⛓️ After ' + J.days + ' days on bread and water, the turnkey lets you go. It’s now day ' + day() + '.' + (worn ? ' ' + worn : '') + (news ? ' ' + news : '');
+    if (!pid) { say(lead); save(); return; }
+    var P = PORTS[pid], m = enterMap(P.map), f = E.nearestFreePoint(m, P.dock[0], P.dock[1]);
+    auto = null; ship.vx = ship.vy = 0; wake = []; keys = {}; justLeft = null;
+    state.map = P.map; state.x = f[0]; state.y = f[1];
+    snapCamera(); needRender = true;
+    dock(pid, lead);
+  }
   function encounter(n) {
     ship.vx *= 0.2; ship.vy *= 0.2;
     keys = {};
@@ -1005,7 +1079,7 @@
   var BURN_P = 0.5;
   function customs(n, after, lead, die) {
     // A cutter that has had its word with you leaves you alone for a good while.
-    var done = function () { n.cool = 60; grace = 3; if (after) after(); };
+    var done = function () { n.cool = 60; grace = 3; if (pendingJail) { serveJail(); return; } if (after) after(); };
     var k = n.nation || lawOf(state.map), N = NAT[k], law = N.law, LAW = cap(law), sk = standOf(k);
     n.nation = k;
     if (!openCount() && !openParcels()) {
@@ -1025,7 +1099,8 @@
     var hint = 'Your odds come from your ship and skills: sails and Sailing for running, cannons and Fighting for a warning shot, Charm for talking. ' + edgeHint() +
       (hot ? ' ⚠️ They can see contraband in your open hold: the fee is doubled, and if a check fails they take it all.' : '') +
       (STAND[sk].bribe !== 1 ? ' Your standing with ' + N.short + ' (' + STAND[sk].name + ') ' + (STAND[sk].bribe > 1 ? 'raises' : 'lowers') + ' the fee.' : '') +
-      (crack ? ' 📰 There’s a crackdown on in these waters: the fee is half again as much.' : '');
+      (crack ? ' 📰 There’s a crackdown on in these waters: the fee is half again as much.' : '') +
+      (bigHaul() ? ' ⛓️ ' + cap(baleWord(openCount() + op)) + ' in plain sight: if a check fails, it’s jail, not a fine.' : '');
     var opts = [
       {label: '🪙 Pay a “paperwork fee” of ' + fmt(bribe) + ' doubloons', disabled: state.gold < bribe, fn: function () {
         state.gold -= bribe; sfx('coin');
@@ -1045,12 +1120,15 @@
     opts.push(
       {label: '⛵ Run for it (' + pct(runP) + ')', fn: function () {
         if (roll(runP)) return 'You crowd on every scrap of sail and leave the cutter wallowing in your wake. Somewhere behind you, a whistle is blown very angrily.' + gainXp(10) + shift(k, -3);
+        if (bigHaul()) return jailText(k, 'They catch you before you clear the reef.');
         var s = seized(), lost = confiscate(1 / 3); sfx('bad');
-        return 'They catch you before you clear the reef. ' + n.name + ' confiscates ' + baleWord(lost) + ' “for evidence.”' + s + ' You hear coughing from their ship for the rest of the afternoon.' + shift(k, -2);
+        return 'They catch you before you clear the reef. ' + n.name + ' confiscates ' + baleWord(lost) + ' “for evidence.”' + s + ' You hear coughing from their ship for the rest of the afternoon.' + warnOrFine(k) + shift(k, -2);
       }},
       {label: state.shot > 0 ? '💣 Fire a warning shot (' + pct(shotP) + ', costs 1 cannonball)' : '💣 Fire a warning shot (no cannonballs left)', disabled: state.shot < 1, fn: function () {
         state.shot--;
         if (roll(shotP)) return 'BOOM. The cannonball lands a polite distance from their bow. After a short meeting, the cutter decides it left the kettle on and sails home.' + gainXp(10) + shift(k, -8);
+        if (bigHaul()) return jailText(k, 'BOOM. You hit their flagpole.');
+        booked(k);
         var s = seized(), lost = confiscate(1 / 3), fine = Math.min(state.gold, Math.round(state.gold * 0.1));
         state.gold -= fine; sfx('bad');
         return 'BOOM. You hit their flagpole. ' + n.name + ' is furious, seizes ' + baleWord(lost) + ' and fines you ' + fmt(fine) + ' doubloons for damage to the property of ' + N.name + '.' + s + shift(k, -5);
@@ -1059,10 +1137,15 @@
         if (roll(talkP)) return pick(['“Rough day?” you ask. ' + n.name + ' talks for forty minutes about a stapler. Everyone forgets about the inspection.',
           'You compliment their hat. They blush, wave you through and ask where you got your parrot.',
           'You explain it’s all for a botanist in Cartagena. Technically true. They let you go with a warning and a pamphlet.']) + gainXp(10);
+        if (bigHaul()) return jailText(k, n.name + ' is not interested in your thoughts on the weather.');
         var s = seized(), lost = confiscate(0.25); sfx('bad');
-        return n.name + ' is not interested in your thoughts on the weather and confiscates ' + baleWord(lost) + '.' + s + shift(k, -2);
+        return n.name + ' is not interested in your thoughts on the weather and confiscates ' + baleWord(lost) + '.' + s + warnOrFine(k) + shift(k, -2);
       }}
     );
+    if (state.decoys) opts.push({label: '🚩 Send a decoy to draw them off (always works; you lose her)', fn: function () {
+      state.decoys--; track('decoy');
+      return 'Your decoy sloop breaks away with every sail set, looking as guilty as a ship can look. ' + cap(n.name) + ' gives chase. Somewhere over the horizon they’ll board her and find nothing but a crew eating biscuits.' + shift(k, -3) + decoysLeft();
+    }});
     if (bg) opts.push({label: '🔥 Burn a bale of ' + GOODS[bg].name + ' (' + pct(BURN_P) + ')', next: function () {
       takeCargo(bg, 1);
       var ok = roll(BURN_P), r = lastRoll;
@@ -1155,13 +1238,15 @@
       {label: state.shot > 0 ? '💣 Fire cannonballs (' + range(st.fire) + ' damage, ' + state.shot + ' left)' : '💣 Fire cannonballs (none left)', act: 'fire', disabled: state.shot < 1}
     ];
     if (lb) opts.push({label: GOODS[lb].icon + ' Lob a bale of ' + GOODS[lb].name + ' (' + range(lobFire(st, lb)) + ' damage, gets them high)', act: 'lob'});
+    if (state.fireship && n.kind !== 'merchant') opts.push({label: '🔥 Send in your fire ship (' + pct(FIRE_P) + '; you lose her either way)', act: 'fireship'});
+    if (state.decoys && n.kind !== 'merchant') opts.push({label: '🚩 Send a decoy to draw them off (always works; you lose her)', act: 'decoy'});
     opts.push({label: '⚔️ Board ' + (n.kind === 'merchant' ? 'her' : 'them') + ' (' + pct(bp) + ')', act: 'board'});
     opts.push({label: '⛵ Run for it (' + pct(fp) + ')', act: 'run'});
     if (n.kind === 'pirate' && bg) opts.push({label: '🔥 Burn a bale of ' + GOODS[bg].name + ' (' + pct(BURN_P) + ')', act: 'burn'});
     if (B.round === 0 && n.kind === 'pirate') opts.push({label: '🪙 Pay them to leave you alone (' + fmt(toll(n)) + ' doubloons)', act: 'pay', disabled: state.gold < toll(n)});
     if (B.round === 0 && n.kind === 'pirate' && !n.bounty && standOf('brethren') >= 3) opts.push({label: '🤝 Show the Brethren’s mark and parley (' + pct(parleyP(n)) + ')', act: 'parley'});
     if (n.kind === 'navy') opts.push({label: '🪙 Pay what you owe ' + NAT[n.nation].short + ' (' + fmt(fineOf(n.nation)) + ' doubloons, and your slate is clean)', act: 'fine', disabled: state.gold < fineOf(n.nation)});
-    if (n.kind !== 'merchant') opts.push({label: '🏳️ Strike your colours (they take your open hold and a third of your gold)', act: 'strike'});
+    if (n.kind !== 'merchant') opts.push({label: '🏳️ Strike your colours (' + (n.kind !== 'navy' ? 'they take your open hold and half your gold' : bigHaul() || standOf(n.nation) === 0 ? 'jail: they take your open hold and half your gold' : 'they take your open hold and a third of your gold') + ')', act: 'strike'});
     if (B.round === 0 && n.kind === 'merchant') opts.push({label: '🏳️ Let her go after all', act: 'leave'});
     opts.forEach(function (o) {
       var b = el('button', {type: 'button', class: 'choice'}, o.label);
@@ -1191,12 +1276,13 @@
       return;
     }
     if (act === 'strike') {
-      var o = openCargo(), lostN = 0, fine = Math.floor(state.gold / 3);
+      if (n.kind === 'navy') { n.cool = 120; sfx('bad'); endFight(B, arrest(n.nation, 'You haul down your flag, and marines from ' + n.name + ' come aboard.')); return; }
+      var o = openCargo(), lostN = 0, fine = Math.floor(state.gold / 2);
       for (var og in o) { takeCargo(og, o[og]); lostN += o[og]; }
       state.gold -= fine; n.cool = 90; sfx('bad');
-      var after2 = n.kind === 'navy' ? (settle(n.nation), ' Your slate with ' + NAT[n.nation].short + ' is clean, at a price.') : n.kind === 'pirate' && !n.bounty ? shift('brethren', 2) : '';
-      endFight(B, 'You haul down your flag. ' + foeName(n) + ' takes ' + (lostN ? baleWord(lostN) : 'nothing from your empty hold') + (fine ? ' and ' + fmt(fine) + ' doubloons' : '') +
-        (hiddenCount() ? ', but never finds your smuggler’s hold' : '') + '. ' + (n.kind === 'navy' ? '“Thank you for your cooperation.”' : '“Pleasure doing business.”') + ' You live to sail another day.' + after2);
+      var after2 = n.kind === 'pirate' && !n.bounty ? shift('brethren', 2) : '';
+      endFight(B, 'You haul down your flag. ' + foeName(n) + ' takes ' + (lostN ? baleWord(lostN) : 'nothing from your empty hold') + (fine ? ' and ' + fmt(fine) + ' doubloons, half your purse' : '') +
+        (hiddenCount() ? ', but never finds your smuggler’s hold' : '') + '. “Pleasure doing business.” You live to sail another day.' + after2);
       return;
     }
     if (act === 'burn') {
@@ -1228,6 +1314,24 @@
       }
       die = lastRoll;
       txt = rollText(die) + n.captain + ' squints at your coin. “Never heard of you.”';
+    } else if (act === 'decoy') {
+      if (!state.decoys) { renderFight(B, 'You have no decoys left.'); return; }
+      state.decoys--; n.cool = 90; sfx('boom'); track('decoy');
+      endFight(B, 'Your decoy sloop cuts across ' + n.name + '’s bow, peppers the rigging with musket fire and runs for the horizon. ' + foeName(n) + ' takes the bait. By the time they catch her, empty and grinning, you’re long gone. Her crew will find their own way home.' + decoysLeft());
+      return;
+    } else if (act === 'fireship') {
+      if (!state.fireship) { renderFight(B, 'You have no fire ship.'); return; }
+      state.fireship = 0; track('fireship');
+      if (roll(FIRE_P)) {
+        if (n.kind !== 'boss') { win(B, 'fire', lastRoll); return; }
+        var burnt = Math.ceil(en.hull * 0.6);
+        B.eh = Math.max(0, B.eh - burnt); die = lastRoll; sfx('boom');
+        txt = rollText(die) + 'Your fire ship grapples alongside ' + n.name + '. Her skeleton crew lights the fuses and rows clear, and flames race up the rigging for ' + burnt + ' damage. ' + foeName(n) + '’s crew beats the fire out, just.';
+        if (B.eh <= 0) { win(B, 'fire', die); return; }
+      } else {
+        die = lastRoll;
+        txt = rollText(die) + 'The wind backs at the last moment. Your fire ship drifts past ' + n.name + ' and burns out harmlessly. Her crew rows back, singed and sheepish.';
+      }
     } else if (act === 'board') {
       if (roll(boardP(B, st))) { win(B, 'board', lastRoll); return; }
       die = lastRoll;
@@ -1287,10 +1391,10 @@
     for (var h in haul) total += haul[h];
     while (total < count) { var g = pick(D.COMMON); haul[g] = (haul[g] || 0) + 1; total++; }
     // Sink her and half of it goes to the bottom. Board her and it's all yours, with a bonus on a natural 20.
-    if (how === 'sink' && n.kind !== 'boss') {
+    if ((how === 'sink' || how === 'fire') && n.kind !== 'boss') {
       gold = Math.round(gold / 2);
       for (var hk in haul) { haul[hk] = Math.floor(haul[hk] / 2); if (!haul[hk]) delete haul[hk]; }
-      note2 = ' Half her cargo goes down with her.';
+      note2 = how === 'fire' ? ' Half her cargo burns with her.' : ' Half her cargo goes down with her.';
     } else if (how === 'board' && die && die.d === 20) {
       gold = Math.round(gold * 1.5);
       note2 = ' Your boarders find the captain’s secret purse as well.';
@@ -1303,6 +1407,7 @@
     });
     var txt = how === 'board' ? 'With a mighty “Arrr!” your crew swings aboard. ' + (n.kind === 'merchant' ? 'The merchants surrender at once; they’re paid by the hour.' : foeName(n) + ' throws down their cutlass.')
       : how === 'strike' ? cap(n.name) + ' strikes her colours before you can fire again.'
+      : how === 'fire' ? 'Your fire ship grapples alongside ' + n.name + '. Her skeleton crew lights the fuses and rows clear, and the whole lot goes up like a bonfire. ' + foeName(n) + ' and the crew jump for the boats.'
       : n.kind === 'boss' ? 'Your broadside smashes ' + n.name + '’s mainmast. ' + foeName(n) + ' surrenders.'
       : cap(n.name) + ' rolls over and sinks. ' + foeName(n) + ' and the crew row away in a very small boat.';
     txt = (die ? rollText(die) : '') + txt + note2;
@@ -1347,12 +1452,16 @@
     if (n.kind === 'merchant') {
       n.cool = 30;
       txt += ' That’s enough for your poor ship. Her crew chases you off with mops and a strongly worded letter.';
+    } else if (n.kind === 'navy') {
+      n.cool = 120;
+      txt += ' ' + arrest(n.nation, 'Your ship is beaten, and marines from ' + n.name + ' come aboard.');
     } else {
-      var lost = confiscate(1 / 3), fine = Math.min(Math.round(state.gold * 0.1), 400);
+      // Taken over: they strip the open hold and nine doubloons in every ten.
+      var o = openCargo(), lost = 0, fine = Math.floor(state.gold * 0.9);
+      for (var og in o) { takeCargo(og, o[og]); lost += o[og]; }
       state.gold -= fine;
       n.cool = 90;
-      txt += ' Your ship is beaten. ' + foeName(n) + ' takes ' + (lost ? baleWord(lost) : 'nothing from your open hold') + (fine ? ' and ' + fmt(fine) + ' doubloons' : '') + (n.kind === 'navy' ? ' as a fine, and calls it even.' : ', then sails off laughing.');
-      if (n.kind === 'navy') settle(n.nation);
+      txt += ' Your ship is beaten, and ' + foeName(n) + '’s crew swarms aboard. They take ' + (lost ? baleWord(lost) : 'nothing from your empty hold') + (fine ? ' and ' + fmt(fine) + ' doubloons, nine in every ten you had' : '') + (hiddenCount() ? ', but never find your smuggler’s hold' : '') + ', then sail off laughing.';
     }
     txt += ' Your crew patches the worst holes. Get to a port for repairs.';
     endFight(B, txt, die);
@@ -1389,6 +1498,7 @@
       if (n.kind === 'merchant' && !n.looted) n.cool = Math.max(n.cool, 12);
       checkGoals();
       save();
+      if (pendingJail) { serveJail(); return; }
       if (B.after) B.after();
     });
     body.appendChild(c);
@@ -1679,12 +1789,18 @@
   }
   function newsLine(x) { return x.text + ' (until day ' + x.until + ')'; }
   // Once a day: bad blood fades, late jobs fail, old news goes stale and new news comes in.
-  function dayTick() {
+  function dayTick(fed) {
     var d = day();
     if (!state.lastDay) { state.lastDay = d; return ''; }
     if (d <= state.lastDay) return '';
     var passed = Math.min(30, d - state.lastDay), msgs = [];
     state.lastDay = d;
+    if (level() >= 2 && !fed) {
+      var had = state.food;
+      state.food = Math.max(0, state.food - passed);
+      if (had > 0 && !state.food) msgs.push('🍞 The provisions are gone. A hungry crew sails slower and does everything worse (−10% on every roll) until you buy more in a market.');
+      else if (had > 5 && state.food <= 5) msgs.push('🍞 Provisions are running low: ' + state.food + ' ' + plural(state.food, 'day') + ' left. Any market sells more.');
+    }
     NAT_ORDER.forEach(function (k) { if (state.rep[k] < 0) state.rep[k] = Math.min(0, state.rep[k] + passed); });
     state.jobs = state.jobs.filter(function (j) {
       if (j.due >= d) return true;
@@ -1705,7 +1821,7 @@
   // What each level opens up, said once.
   function unlockText(lv) {
     var out = [];
-    [2, 3].forEach(function (L) {
+    [2, 3, 4].forEach(function (L) {
       if (L > lv || state.flags['u' + L]) return;
       state.flags['u' + L] = 1;
       out.push('🔓 ' + D.UNLOCK[L]);
@@ -1909,6 +2025,29 @@
     save();
     return n;
   }
+  // Provisions: from level 2 the crew eats a day's worth for every day at sea.
+  function buyFood(n) {
+    n = Math.min(n, FOOD_MAX - state.food, Math.floor(state.gold / FOOD_PRICE));
+    if (n <= 0) return 0;
+    state.gold -= n * FOOD_PRICE; state.food += n;
+    sfx('coin');
+    say('🍞 Bought ' + n + ' ' + plural(n, 'day') + ' of provisions for ' + fmt(n * FOOD_PRICE) + ' doubloons. You have ' + state.food + '.');
+    save();
+    return n;
+  }
+  function foodRow() {
+    var room = FOOD_MAX - state.food, afford = Math.min(room, Math.floor(state.gold / FOOD_PRICE)), box = el('div', {class: 'repair'});
+    box.appendChild(el('p', null, '🍞 Provisions: ' + state.food + ' of ' + FOOD_MAX + ' days. Ship’s biscuit, salt pork, plantains and a sack of the good snacks, ' + FOOD_PRICE + ' doubloons a day. The crew eats a day’s worth for every day at sea, and two more every time you smoke.' +
+      (hungry() ? ' ⚠️ Your crew is hungry right now: slower sails and −10% on every roll.' : '')));
+    var ten = Math.min(10, afford);
+    [['food10', ten, ten ? 'Buy ' + ten + ' days · ' + fmt(ten * FOOD_PRICE) + ' 🪙' : 'Buy 10 days'], ['foodfill', afford, room ? 'Fill up (' + afford + ') · ' + fmt(afford * FOOD_PRICE) + ' 🪙' : 'Lockers are full']].forEach(function (o) {
+      var b = el('button', {type: 'button', class: 'secondary', 'data-key': o[0], 'aria-label': o[1] ? 'Buy ' + o[1] + ' days of provisions for ' + fmt(o[1] * FOOD_PRICE) + ' doubloons' : null}, o[2]);
+      b.disabled = o[1] <= 0;
+      b.addEventListener('click', function () { if (buyFood(o[1])) renderPanel(o[0]); });
+      box.appendChild(b);
+    });
+    return box;
+  }
   function shotRow() {
     var room = SHOT_MAX - state.shot, afford = Math.min(room, Math.floor(state.gold / SHOT_PRICE)), box = el('div', {class: 'repair'});
     box.appendChild(el('p', null, '💣 Cannonballs: ' + state.shot + ' of ' + SHOT_MAX + '. Powder and shot cost ' + SHOT_PRICE + ' doubloons a ball. Out of shot, you can still lob bales of weed.'));
@@ -2021,6 +2160,7 @@
     var sk = standOf(natOf(pid));
     if (sk !== 2) panel.appendChild(el('p', {class: 'hint'}, STAND[sk].icon + ' ' + (natOf(pid) === 'brethren' ? 'The Brethren' : cap(NAT[natOf(pid)].short)) + ' ' + (sk > 2 ? 'likes you, so you buy a little cheaper and sell a little dearer here.' : 'doesn’t trust you, so you buy a little dearer and sell a little cheaper here.')));
     panel.appendChild(shotRow());
+    if (level() >= 2) panel.appendChild(foodRow());
     if (held.length) {
       var all = el('button', {type: 'button', class: 'secondary sellall', 'data-key': 'sellall'}, '💰 Sell the whole hold for ' + fmt(total) + ' doubloons');
       all.addEventListener('click', function () {
@@ -2290,6 +2430,7 @@
       if (heard.length) li.appendChild(el('p', {class: 'g-note'}, '📰 ' + heard.map(newsLine).join(' ')));
       var work = state.jobs.filter(function (j) { return j.to === o.pid || ((j.kind === 'supply' || (j.kind === 'bounty' && j.hit)) && j.from === o.pid); });
       if (work.length) li.appendChild(el('p', {class: 'g-note'}, '📋 Job here: ' + andList(work.map(jobTitle)) + '.'));
+      if (level() >= 2 && state.food < o.v.days) li.appendChild(el('p', {class: 'g-note warn'}, '🍞 Not enough provisions: the crew will go hungry ' + (state.food ? 'after ' + state.food + ' ' + plural(state.food, 'day') : 'the whole way') + '.'));
       if (base) li.appendChild(el('p', {class: 'g-note'}, '🪙 ' + fmt(legacy.base.gold) + ' doubloons and ' + baleWord(baseBales()) + ' stashed there.'));
       else if (!seen) li.appendChild(el('p', {class: 'g-note'}, '📒 You haven’t seen this market yet.'));
       else {
@@ -2413,6 +2554,22 @@
       hist.appendChild(document.createTextNode(' 📜 Real history: ' + PORTS[pid].history));
       panel.appendChild(hist);
     }
+    if (level() >= 4 && D.FIRE_PORTS.indexOf(pid) >= 0) {
+      var fbox = el('div', {class: 'repair'});
+      fbox.appendChild(el('p', null, '🔥 Fire ship: an old hulk packed with tar, powder and brimstone, with a skeleton crew who light the fuses and row clear. In a fight, send her into one enemy ship. ' + (state.fireship ? 'One already sails with you.' : 'You can lead one at a time.')));
+      var fb = el('button', {type: 'button', class: 'secondary', 'data-key': 'fireship', 'aria-label': state.fireship ? null : 'Hire a fire ship for ' + fmt(FIRE_COST) + ' doubloons'}, state.fireship ? 'One is enough' : 'Hire a fire ship · ' + fmt(FIRE_COST) + ' 🪙');
+      fb.disabled = !!state.fireship || state.gold < FIRE_COST;
+      fb.addEventListener('click', function () {
+        if (state.fireship || state.gold < FIRE_COST) return;
+        state.gold -= FIRE_COST; state.fireship = 1; sfx('fanfare'); track('hire-fireship');
+        say('🔥 A low, black hulk falls in astern of you, reeking of tar. Her skeleton crew waves cheerfully and nobody lights a pipe.');
+        save(); renderPanel('fireship');
+      });
+      fbox.appendChild(fb);
+      var fh = el('p', {class: 'history'}, '📜 Real history: ' + D.FIRESHIP_NOTE);
+      fbox.appendChild(fh);
+      panel.appendChild(fbox);
+    }
     if (level() >= 2) {
       panel.appendChild(el('h4', null, '📰 Harbour news'));
       if (!state.news.length) panel.appendChild(el('p', {class: 'hint'}, 'Quiet week. Nothing worth repeating.'));
@@ -2456,6 +2613,27 @@
       li.appendChild(btns);
       ul.appendChild(li);
     });
+    // Decoys: from level 3, a cheap sloop that sails in your wake and leads trouble away.
+    if (level() >= 3) {
+      var dli = el('li', {class: 'good'}), dh = el('div', {class: 'g-head'}), dbtns = el('div', {class: 'g-btns'});
+      dh.appendChild(el('span', {class: 'g-ico', 'aria-hidden': 'true'}, '🚩'));
+      dh.appendChild(el('h3', null, 'Decoy sloop'));
+      dli.appendChild(dh);
+      dli.appendChild(el('p', {class: 'g-note'}, 'A cheap, quick little sloop with a skeleton crew that sails in your wake. When pirates, a warship or the customs catch you, send her to harass them and lead the chase away. It always works, and you lose her. You have ' + state.decoys + ' of ' + DECOY_MAX + '.'));
+      if (state.decoys < DECOY_MAX) {
+        var db = el('button', {type: 'button', 'data-key': 'decoy', 'aria-label': 'Buy a decoy sloop for ' + fmt(DECOY_COST) + ' doubloons'}, 'Buy a decoy · ' + fmt(DECOY_COST) + ' 🪙');
+        db.disabled = state.gold < DECOY_COST;
+        db.addEventListener('click', function () {
+          if (state.gold < DECOY_COST || state.decoys >= DECOY_MAX) return;
+          state.gold -= DECOY_COST; state.decoys++; sfx('fanfare'); track('buy-decoy');
+          say('🚩 A decoy sloop falls in astern of you, and her crew waves. You now sail with ' + state.decoys + ' ' + plural(state.decoys, 'decoy') + '.');
+          save(); renderPanel('decoy');
+        });
+        dbtns.appendChild(db);
+      } else dbtns.appendChild(el('span', {class: 'tag'}, 'Two decoys is all you can lead'));
+      dli.appendChild(dbtns);
+      ul.appendChild(dli);
+    }
     panel.appendChild(ul);
   }
 
@@ -2582,7 +2760,7 @@
     var b = $('log-body'), lv = level(), next = D.LEVELS[lv], st = stats();
     b.textContent = '';
     b.appendChild(el('h3', {class: 'log-top'}, '🏴‍☠️ ' + captainName() + ', captain of ' + shipName()));
-    b.appendChild(el('p', {class: 'hint'}, state.gentle ? '🌤️ Gentle seas: a beaten ship limps away, poorer, and the voyage goes on.' : '⚠️ Real danger: a ship sunk in battle ends the voyage. Your hideout and the colours you earn carry over.'));
+    b.appendChild(el('p', {class: 'hint'}, state.gentle ? '🌤️ Gentle seas: a beaten ship limps away and the voyage goes on, though pirates who take you over keep your open hold and nine doubloons in ten.' : '⚠️ Real danger: a ship sunk in battle ends the voyage. Your hideout and the colours you earn carry over.'));
     b.appendChild(el('p', null, '🎖️ ' + rank() + ' · 📅 Day ' + day() + ' · 🪙 ' + fmt(state.gold) + ' doubloons · ⛵ ' + fmt(state.dist / 100) + ' leagues sailed · ⚔️ ' + state.pillaged + ' ' + plural(state.pillaged, 'merchant') + ' pillaged, ' + state.sunk + ' ' + plural(state.sunk, 'pirate') + ' beaten'));
     b.appendChild(el('h3', null, 'Your captain: level ' + lv + ', ' + title(lv)));
     b.appendChild(el('p', null, '⭐ Renown: ' + fmt(state.xp) + (next ? '. Level ' + (lv + 1) + ', ' + next.title + ', at ' + fmt(next.xp) + '.' : '. You’ve reached the top level!')));
@@ -2593,7 +2771,8 @@
       b.appendChild(track);
     }
     b.appendChild(el('p', {class: 'hint'}, 'Earn renown by trading at a profit, winning fights, finishing requests, finding treasure and seeing new ports.'));
-    b.appendChild(el('p', null, '🛡️ Hull ' + state.hull + ' of ' + st.hullMax + ' · 💣 Broadside about ' + st.fire + ' damage, ' + state.shot + ' ' + plural(state.shot, 'cannonball') + ' left · 👥 Boarders: level ' + st.crew + ' · ⛵ Sails: level ' + st.sails));
+    b.appendChild(el('p', null, '🛡️ Hull ' + state.hull + ' of ' + st.hullMax + ' · 💣 Broadside about ' + st.fire + ' damage, ' + state.shot + ' ' + plural(state.shot, 'cannonball') + ' left · 👥 Boarders: level ' + st.crew + ' · ⛵ Sails: level ' + st.sails +
+      (lv >= 2 ? ' · 🍞 ' + state.food + ' ' + plural(state.food, 'day') + ' of provisions' + (hungry() ? ' (the crew is hungry)' : '') : '') + (state.decoys ? ' · 🚩 ' + state.decoys + ' ' + plural(state.decoys, 'decoy') : '') + (state.fireship ? ' · 🔥 a fire ship' : '')));
     if (legacy.base) b.appendChild(el('p', null, '🏚️ Your hideout on ' + HIDE.name + ': ' + fmt(legacy.base.gold) + ' doubloons and ' + baseBales() + ' of ' + baseCap() + ' bales stashed.'));
     var bz = boost();
     if (bz) b.appendChild(el('p', {class: 'win'}, '🔥 ' + bz.name + ': ' + bz.does + ' About ' + boostLeft() + ' ' + plural(boostLeft(), 'day') + ' left.'));
@@ -3031,7 +3210,8 @@
     looted: {hull: '#6d5a48', deck: '#a99780', sail: '#b2a993', flag: '#7f7f7f'},
     pirate: {hull: '#2b2420', deck: '#6a5d52', sail: '#1c1c1c', flag: '#f2f2f2', mark: '#f2f2f2'},
     boss: {hull: '#3a1010', deck: '#7a4a3a', sail: '#4d0b0b', flag: '#f2d34a', mark: '#f2d34a'},
-    navy: {hull: '#3a2618', deck: '#a98b62', sail: '#f7f2e4', flag: '#c8102e'}
+    navy: {hull: '#3a2618', deck: '#a98b62', sail: '#f7f2e4', flag: '#c8102e'},
+    fireship: {hull: '#241a14', deck: '#4a3a2c', sail: '#6e6256', flag: '#c0392b', mark: '#e0702a'}
   };
   var NAVY_SIZE = [22, 25, 28];
   // Real ensigns of 1718, small: British red with the Union in the corner, Spain's ragged red X on white,
@@ -3191,6 +3371,12 @@
           n.kind === 'pirate' || n.kind === 'boss' ? null : n.nation);
       });
       var bob = anim ? Math.sin(t * 1.6) * 0.06 : 0;
+      // Decoys and a fire ship sail in your wake.
+      var ex = Math.cos(state.angle), ey = Math.sin(state.angle), tail = (state.decoys || 0) + (state.fireship ? 1 : 0);
+      for (var di = 0; di < tail; di++) {
+        var back = 28 + 16 * di, side = (di % 2 ? 1 : -1) * 11;
+        drawShip(c, state.x - ex * back - ey * side, state.y - ey * back + ex * side, state.angle + bob, di < (state.decoys || 0) ? playerLook() : LOOK.fireship, 10);
+      }
       drawShip(c, state.x, state.y, state.angle + bob, playerLook(), 15);
     }
     c.imageSmoothingEnabled = true;
@@ -3287,6 +3473,15 @@
     var low = state.hull < hullMax() * 0.35, pts = state.pts > 0;
     if (hudCache.low !== low) { hudCache.low = low; $('h-hull').parentNode.classList.toggle('low', low); }
     if (hudCache.pts !== pts) { hudCache.pts = pts; $('h-pts').hidden = !pts; $('log-pip').hidden = !pts; }
+    var fd = level() >= 2 ? String(state.food) : '';
+    if (hudCache.food !== fd) { hudCache.food = fd; $('h-food').textContent = fd; $('h-food-li').hidden = !fd; $('h-food-li').classList.toggle('low', !!fd && state.food <= 5); }
+    var fl = (state.decoys || 0) + '/' + (state.fireship || 0);
+    if (hudCache.fleet !== fl) {
+      hudCache.fleet = fl;
+      $('h-fleet-li').hidden = !state.decoys && !state.fireship;
+      $('h-fleet').textContent = (state.decoys ? '🚩' + state.decoys : '') + (state.fireship ? (state.decoys ? ' ' : '') + '🔥' : '');
+      $('h-fleet-sr').textContent = (state.decoys ? state.decoys + ' ' + plural(state.decoys, 'decoy') : '') + (state.fireship ? (state.decoys ? ' and ' : '') + 'a fire ship' : '');
+    }
   }
 
   /* ---------- starting, continuing, starting over ---------- */
@@ -3300,7 +3495,7 @@
     Object.keys(state.known).forEach(function (pid) { if (PORTS[pid]) reveal(PORTS[pid].map, PORTS[pid].dock[0], PORTS[pid].dock[1], 110); });
     started = true;
     levelUp = 0; evClock = 70 + Math.random() * 30; evRecent = []; lastPortEv = -999; hudCache = {}; mendAcc = 0;
-    if (fresh) state.flags.r5 = 1;
+    if (fresh) state.flags.r5 = state.flags.r6 = 1;
     dayTick();
     $('title-screen').hidden = true;
     $('hud').hidden = false; $('tools').hidden = false;
@@ -3319,13 +3514,17 @@
           (state.gentle ? 'These are gentle seas: lose a fight and you limp away poorer, but your voyage goes on.' : 'Fair warning: these seas are real. Lose a sea battle and your ship goes down, voyage over. When a fight looks bad, run, pay or strike your colours.') + base + '\n\n' +
           'Start at the Leaky Lantern tavern here in Tortuga. Mama Ruthie hears everything.', null, function () { dock('tortuga'); });
       });
-    } else if (!state.flags.r5) {
-      // A voyage from before the nations: say once what's new, then carry on where it left off.
-      state.flags.r5 = 1;
-      var lv0 = level(), more = unlockText(lv0);
-      note('⚓ New since your last voyage', 'Every port now flies a real flag of 1718, British, Spanish, French, Dutch or pirate, and every nation keeps track of how it feels about you. Pillage its merchants and it turns cold: its ports charge you more, its Customs lean harder and its warships come looking. Pay its fees, do its jobs and salute its ships and it warms up again.' +
-        (more ? '\n\n' + more : '\n\nAt level 2, port taverns start posting paid jobs and harbour news. At level 3, bounties and letters of marque.') +
-        '\n\nYour captain’s log has the full picture, under The powers of 1718.', null, resume);
+    } else if (!state.flags.r5 || !state.flags.r6) {
+      // A voyage from before the nations or the law: say once what's new, then carry on where it left off.
+      var was5 = !!state.flags.r5, lv0 = level();
+      state.flags.r5 = state.flags.r6 = 1;
+      // Unlocks already announced in part one don't repeat; provisions, decoys and fire ships get a word here instead.
+      var more = unlockText(lv0), lawText = 'Customs and warships now follow the law: get caught with a small haul and it’s a warning, then a fine. Get caught with ' + LAW_BIG + ' or more bales in plain sight, or as a nation’s enemy, and it’s jail. Pirates who take you over strip your open hold and most of your gold.';
+      var extra = [lv0 >= 2 && was5 ? '🍞 Your crew eats now: a day’s provisions for every day at sea, and two more every time you smoke. Buy provisions in any market.' : '', lv0 >= 3 && was5 ? '🚩 Shipwrights sell decoy sloops that lead trouble away from you.' : ''].filter(Boolean).join('\n\n');
+      note('⚓ New since your last voyage', (was5 ? '' : 'Every port now flies a real flag of 1718, British, Spanish, French, Dutch or pirate, and every nation keeps track of how it feels about you. Pillage its merchants and it turns cold: its ports charge you more, its Customs lean harder and its warships come looking. Pay its fees, do its jobs and salute its ships and it warms up again.\n\n') +
+        lawText + (more ? '\n\n' + more : '') + (extra ? '\n\n' + extra : '') +
+        (lv0 < 2 ? '\n\nAt level 2, port taverns post paid jobs and harbour news, and your crew starts eating. At level 3, bounties, letters of marque and decoys. At level 4, fire ships.' : '') +
+        '\n\nYour captain’s log has the full picture.', null, resume);
     } else resume();
     function resume() {
       if (state.atBase && legacy.base) {
@@ -3483,5 +3682,6 @@
     buyAt: buyAt, sellAt: sellAt, enterBase: enterBase, leaveBase: leaveBase, stash: stash, unstash: unstash, effects: effects, lobPick: lobPick,
     get legacy() { return legacy; }, openCaptain: openCaptain, showTitle: showTitle,
     jobOffers: jobOffers, takeJob: takeJob, settleJobs: settleJobs, dayTick: dayTick, standOf: standOf, shift: shift, buyFor: buyFor, sellFor: sellFor,
-    makeNews: makeNews, jobLoad: jobLoad, space: space, openParcels: openParcels, showTab: showTab, openPort: openPort};
+    makeNews: makeNews, jobLoad: jobLoad, space: space, openParcels: openParcels, showTab: showTab, openPort: openPort,
+    hungry: hungry, buyFood: buyFood, customs: customs, bigHaul: bigHaul};
 })();
