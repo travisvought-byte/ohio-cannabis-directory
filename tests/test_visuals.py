@@ -26,6 +26,8 @@ class InlineDrawings(unittest.TestCase):
             for tag in re.findall(r'<svg\b[^>]*>', page):
                 decorative = 'aria-hidden="true"' in tag
                 named = 'role="img"' in tag and re.search(r'aria-label(ledby)?="[^"]+"', tag)
+                # The US map is a named group of links, one per state (keyboard and screen reader reachable).
+                named = named or ('role="group"' in tag and re.search(r'aria-label="[^"]+"', tag))
                 self.assertTrue(decorative or named, f'{path.name}: {tag[:120]}')
                 if decorative:
                     self.assertIn('focusable="false"', tag, f'{path.name}: hidden drawing must not take focus')

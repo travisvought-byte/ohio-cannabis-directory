@@ -27,3 +27,18 @@ class FeaturedGroups(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class OutsideGuides(unittest.TestCase):
+    def test_every_guide_link_is_https_and_known(self):
+        import build_national as nat
+        data = nat.load_guides()
+        self.assertGreater(sum(len(s['links']) for s in data['states'].values()), 200)
+
+    def test_state_section_says_who_does_not_pay(self):
+        import build_national as nat
+        data = nat.load_guides()
+        html = nat.guides_section(data, 'FL', 'Florida')
+        self.assertIn('they don’t pay us', html)
+        self.assertIn('Free and open source', html)
+        self.assertEqual(nat.guides_section({'states': {}}, 'FL', 'Florida'), '')

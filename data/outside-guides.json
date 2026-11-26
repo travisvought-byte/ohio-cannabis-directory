@@ -1,0 +1,749 @@
+{
+ "schema_version": 1,
+ "checked_on": "2026-11-26",
+ "purpose": "Outside guides The Reefer points to on each state page (owner direction, November 26, 2026): link the best existing resources instead of pretending to be the best at everything. Links only; no affiliation, payment or endorsement implied. Every address returned HTTP 200 from a GitHub Actions check on the checked_on date (.github/workflows/check-links.yml). Store counts are the numbers each site's state page stated that day (Weedmaps: its listing total; Leafly: the largest dispensary count its state page showed), compared with the regulator's own list where this site has one. They are rough: a site may count delivery services or closed stores, and the regulator list may lag.",
+ "complete_at": 0.85,
+ "guides": {
+  "leafly": {
+   "name": "Leafly",
+   "what": "Store map, menus, deals and reviews",
+   "kind": "stores"
+  },
+  "weedmaps": {
+   "name": "Weedmaps",
+   "what": "Store map, menus, deals and delivery",
+   "kind": "stores"
+  },
+  "mpp": {
+   "name": "Marijuana Policy Project",
+   "what": "The state’s cannabis laws and bills in progress",
+   "kind": "law"
+  },
+  "norml_laws": {
+   "name": "NORML",
+   "what": "Laws and penalties, in detail",
+   "kind": "law"
+  },
+  "norml_lawyers": {
+   "name": "NORML Legal Committee",
+   "what": "Find a cannabis defense lawyer",
+   "kind": "lawyers"
+  }
+ },
+ "states": {
+  "AL": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/alabama",
+    "leafly": "https://www.leafly.com/dispensaries/alabama",
+    "mpp": "https://www.mpp.org/states/alabama/",
+    "norml_lawyers": "https://lawyers.norml.org/alabama",
+    "norml_laws": "https://norml.org/laws/alabama-penalties/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 0,
+    "leafly": 3
+   }
+  },
+  "AK": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/alaska",
+    "leafly": "https://www.leafly.com/dispensaries/alaska",
+    "mpp": "https://www.mpp.org/states/alaska/",
+    "norml_lawyers": "https://lawyers.norml.org/alaska",
+    "norml_laws": "https://norml.org/laws/alaska-penalties/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 122,
+    "leafly": 154
+   }
+  },
+  "AZ": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/arizona",
+    "leafly": "https://www.leafly.com/dispensaries/arizona",
+    "mpp": "https://www.mpp.org/states/arizona/",
+    "norml_lawyers": "https://lawyers.norml.org/arizona",
+    "norml_laws": "https://norml.org/laws/arizona-penalties/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 132,
+    "leafly": 173
+   }
+  },
+  "AR": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/arkansas",
+    "leafly": "https://www.leafly.com/dispensaries/arkansas",
+    "mpp": "https://www.mpp.org/states/arkansas/",
+    "norml_lawyers": "https://lawyers.norml.org/arkansas",
+    "norml_laws": "https://norml.org/laws/arkansas-penalties/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 22,
+    "leafly": 29
+   }
+  },
+  "CA": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/california",
+    "leafly": "https://www.leafly.com/dispensaries/california",
+    "mpp": "https://www.mpp.org/states/california/",
+    "norml_lawyers": "https://lawyers.norml.org/california",
+    "norml_laws": "https://norml.org/laws/california-penalties/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 892,
+    "leafly": 1019
+   }
+  },
+  "CO": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/colorado",
+    "leafly": "https://www.leafly.com/dispensaries/colorado",
+    "mpp": "https://www.mpp.org/states/colorado/",
+    "norml_lawyers": "https://lawyers.norml.org/colorado",
+    "norml_laws": "https://norml.org/laws/colorado-penalties/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 470,
+    "leafly": 612
+   }
+  },
+  "CT": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/connecticut",
+    "leafly": "https://www.leafly.com/dispensaries/connecticut",
+    "mpp": "https://www.mpp.org/states/connecticut/",
+    "norml_lawyers": "https://lawyers.norml.org/connecticut",
+    "norml_laws": "https://norml.org/laws/connecticut-penalties/"
+   },
+   "counts": {
+    "regulator": 76,
+    "weedmaps": 43,
+    "leafly": 68
+   }
+  },
+  "DE": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/delaware",
+    "leafly": "https://www.leafly.com/dispensaries/delaware",
+    "mpp": "https://www.mpp.org/states/delaware/",
+    "norml_lawyers": "https://lawyers.norml.org/delaware",
+    "norml_laws": "https://norml.org/laws/delaware-penalties/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 4,
+    "leafly": 16
+   }
+  },
+  "DC": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/district-of-columbia",
+    "leafly": "https://www.leafly.com/dispensaries/district-of-columbia",
+    "mpp": "https://www.mpp.org/states/district-of-columbia/",
+    "norml_lawyers": "https://lawyers.norml.org/district-of-columbia",
+    "norml_laws": "https://norml.org/laws/district-of-columbia-penalties/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 37,
+    "leafly": 56
+   }
+  },
+  "FL": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/florida",
+    "leafly": "https://www.leafly.com/dispensaries/florida",
+    "mpp": "https://www.mpp.org/states/florida/",
+    "norml_lawyers": "https://lawyers.norml.org/florida",
+    "norml_laws": "https://norml.org/laws/florida-penalties/"
+   },
+   "counts": {
+    "regulator": 795,
+    "weedmaps": 695,
+    "leafly": 796
+   }
+  },
+  "GA": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/georgia",
+    "leafly": "https://www.leafly.com/dispensaries/georgia",
+    "mpp": "https://www.mpp.org/states/georgia/",
+    "norml_lawyers": "https://lawyers.norml.org/georgia",
+    "norml_laws": "https://norml.org/laws/georgia-penalties/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 35,
+    "leafly": 17
+   }
+  },
+  "HI": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/hawaii",
+    "leafly": "https://www.leafly.com/dispensaries/hawaii",
+    "mpp": "https://www.mpp.org/states/hawaii/",
+    "norml_lawyers": "https://lawyers.norml.org/hawaii",
+    "norml_laws": "https://norml.org/laws/hawaii-penalties/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 11,
+    "leafly": 13
+   }
+  },
+  "ID": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/idaho",
+    "leafly": "https://www.leafly.com/dispensaries/idaho",
+    "mpp": "https://www.mpp.org/states/idaho/",
+    "norml_lawyers": "https://lawyers.norml.org/idaho",
+    "norml_laws": "https://norml.org/laws/idaho-penalties"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": null,
+    "leafly": null
+   }
+  },
+  "IL": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/illinois",
+    "leafly": "https://www.leafly.com/dispensaries/illinois",
+    "mpp": "https://www.mpp.org/states/illinois/",
+    "norml_lawyers": "https://lawyers.norml.org/illinois",
+    "norml_laws": "https://norml.org/laws/illinois-penalties/"
+   },
+   "counts": {
+    "regulator": 289,
+    "weedmaps": 155,
+    "leafly": 299
+   }
+  },
+  "IN": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/indiana",
+    "leafly": "https://www.leafly.com/dispensaries/indiana",
+    "mpp": "https://www.mpp.org/states/indiana/",
+    "norml_lawyers": "https://lawyers.norml.org/indiana",
+    "norml_laws": "https://norml.org/laws/indiana-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": null,
+    "leafly": 13
+   }
+  },
+  "IA": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/iowa",
+    "leafly": "https://www.leafly.com/dispensaries/iowa",
+    "mpp": "https://www.mpp.org/states/iowa/",
+    "norml_lawyers": "https://lawyers.norml.org/iowa",
+    "norml_laws": "https://norml.org/laws/iowa-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 3,
+    "leafly": 3
+   }
+  },
+  "KS": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/kansas",
+    "leafly": "https://www.leafly.com/dispensaries/kansas",
+    "mpp": "https://www.mpp.org/states/kansas/",
+    "norml_lawyers": "https://lawyers.norml.org/kansas",
+    "norml_laws": "https://norml.org/laws/kansas-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": null,
+    "leafly": null
+   }
+  },
+  "KY": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/kentucky",
+    "leafly": "https://www.leafly.com/dispensaries/kentucky",
+    "mpp": "https://www.mpp.org/states/kentucky/",
+    "norml_lawyers": "https://lawyers.norml.org/kentucky",
+    "norml_laws": "https://norml.org/laws/kentucky-penalties-2/"
+   },
+   "counts": {
+    "regulator": 26,
+    "weedmaps": 3,
+    "leafly": 12
+   }
+  },
+  "LA": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/louisiana",
+    "leafly": "https://www.leafly.com/dispensaries/louisiana",
+    "mpp": "https://www.mpp.org/states/louisiana/",
+    "norml_lawyers": "https://lawyers.norml.org/louisiana",
+    "norml_laws": "https://norml.org/laws/louisiana-penalties-2/"
+   },
+   "counts": {
+    "regulator": 29,
+    "weedmaps": 14,
+    "leafly": 24
+   }
+  },
+  "ME": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/maine",
+    "leafly": "https://www.leafly.com/dispensaries/maine",
+    "mpp": "https://www.mpp.org/states/maine/",
+    "norml_lawyers": "https://lawyers.norml.org/maine",
+    "norml_laws": "https://norml.org/laws/maine-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 313,
+    "leafly": 209
+   }
+  },
+  "MD": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/maryland",
+    "leafly": "https://www.leafly.com/dispensaries/maryland",
+    "mpp": "https://www.mpp.org/states/maryland/",
+    "norml_lawyers": "https://lawyers.norml.org/maryland",
+    "norml_laws": "https://norml.org/laws/maryland-penalties-2/"
+   },
+   "counts": {
+    "regulator": 129,
+    "weedmaps": 101,
+    "leafly": 130
+   }
+  },
+  "MA": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/massachusetts",
+    "leafly": "https://www.leafly.com/dispensaries/massachusetts",
+    "mpp": "https://www.mpp.org/states/massachusetts/",
+    "norml_lawyers": "https://lawyers.norml.org/massachusetts",
+    "norml_laws": "https://norml.org/laws/massachusetts-penalties-2/"
+   },
+   "counts": {
+    "regulator": 406,
+    "weedmaps": 220,
+    "leafly": 310
+   }
+  },
+  "MI": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/michigan",
+    "leafly": "https://www.leafly.com/dispensaries/michigan",
+    "mpp": "https://www.mpp.org/states/michigan/",
+    "norml_lawyers": "https://lawyers.norml.org/michigan",
+    "norml_laws": "https://norml.org/laws/michigan-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 534,
+    "leafly": 859
+   }
+  },
+  "MN": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/minnesota",
+    "leafly": "https://www.leafly.com/dispensaries/minnesota",
+    "mpp": "https://www.mpp.org/states/minnesota/",
+    "norml_lawyers": "https://lawyers.norml.org/minnesota",
+    "norml_laws": "https://norml.org/laws/minnesota-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 131,
+    "leafly": 130
+   }
+  },
+  "MS": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/mississippi",
+    "leafly": "https://www.leafly.com/dispensaries/mississippi",
+    "mpp": "https://www.mpp.org/states/mississippi/",
+    "norml_lawyers": "https://lawyers.norml.org/mississippi",
+    "norml_laws": "https://norml.org/laws/mississippi-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 111,
+    "leafly": 123
+   }
+  },
+  "MO": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/missouri",
+    "leafly": "https://www.leafly.com/dispensaries/missouri",
+    "mpp": "https://www.mpp.org/states/missouri/",
+    "norml_lawyers": "https://lawyers.norml.org/missouri",
+    "norml_laws": "https://norml.org/laws/missouri-penalties-2/"
+   },
+   "counts": {
+    "regulator": 228,
+    "weedmaps": 148,
+    "leafly": 237
+   }
+  },
+  "MT": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/montana",
+    "leafly": "https://www.leafly.com/dispensaries/montana",
+    "mpp": "https://www.mpp.org/states/montana/",
+    "norml_lawyers": "https://lawyers.norml.org/montana",
+    "norml_laws": "https://norml.org/laws/montana-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 224,
+    "leafly": 374
+   }
+  },
+  "NE": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/nebraska",
+    "leafly": "https://www.leafly.com/dispensaries/nebraska",
+    "mpp": "https://www.mpp.org/states/nebraska/",
+    "norml_lawyers": "https://lawyers.norml.org/nebraska",
+    "norml_laws": "https://norml.org/laws/nebraska-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": null,
+    "leafly": 4
+   }
+  },
+  "NV": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/nevada",
+    "leafly": "https://www.leafly.com/dispensaries/nevada",
+    "mpp": "https://www.mpp.org/states/nevada/",
+    "norml_lawyers": "https://lawyers.norml.org/nevada",
+    "norml_laws": "https://norml.org/laws/nevada-penalties-2/"
+   },
+   "counts": {
+    "regulator": 109,
+    "weedmaps": 75,
+    "leafly": 122
+   }
+  },
+  "NH": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/new-hampshire",
+    "leafly": "https://www.leafly.com/dispensaries/new-hampshire",
+    "mpp": "https://www.mpp.org/states/new-hampshire/",
+    "norml_lawyers": "https://lawyers.norml.org/new-hampshire",
+    "norml_laws": "https://norml.org/laws/new-hampshire-penalties-2/"
+   },
+   "counts": {
+    "regulator": 7,
+    "weedmaps": null,
+    "leafly": 6
+   }
+  },
+  "NJ": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/new-jersey",
+    "leafly": "https://www.leafly.com/dispensaries/new-jersey",
+    "mpp": "https://www.mpp.org/states/new-jersey/",
+    "norml_lawyers": "https://lawyers.norml.org/new-jersey",
+    "norml_laws": "https://norml.org/laws/new-jersey-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 215,
+    "leafly": 245
+   }
+  },
+  "NM": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/new-mexico",
+    "leafly": "https://www.leafly.com/dispensaries/new-mexico",
+    "mpp": "https://www.mpp.org/states/new-mexico/",
+    "norml_lawyers": "https://lawyers.norml.org/new-mexico",
+    "norml_laws": "https://norml.org/laws/new-mexico-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 220,
+    "leafly": 594
+   }
+  },
+  "NY": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/new-york",
+    "leafly": "https://www.leafly.com/dispensaries/new-york",
+    "mpp": "https://www.mpp.org/states/new-york/",
+    "norml_lawyers": "https://lawyers.norml.org/new-york",
+    "norml_laws": "https://norml.org/laws/new-york-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 447,
+    "leafly": 980
+   }
+  },
+  "NC": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/north-carolina",
+    "leafly": "https://www.leafly.com/dispensaries/north-carolina",
+    "mpp": "https://www.mpp.org/states/north-carolina/",
+    "norml_lawyers": "https://lawyers.norml.org/north-carolina",
+    "norml_laws": "https://norml.org/laws/north-carolina-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": null,
+    "leafly": 15
+   }
+  },
+  "ND": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/north-dakota",
+    "leafly": "https://www.leafly.com/dispensaries/north-dakota",
+    "mpp": "https://www.mpp.org/states/north-dakota/",
+    "norml_lawyers": "https://lawyers.norml.org/north-dakota",
+    "norml_laws": "https://norml.org/laws/north-dakota-penalties-2/"
+   },
+   "counts": {
+    "regulator": 8,
+    "weedmaps": 8,
+    "leafly": 8
+   }
+  },
+  "OH": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/ohio",
+    "leafly": "https://www.leafly.com/dispensaries/ohio",
+    "mpp": "https://www.mpp.org/states/ohio/",
+    "norml_lawyers": "https://lawyers.norml.org/ohio",
+    "norml_laws": "https://norml.org/laws/ohio-penalties-2/"
+   },
+   "counts": {
+    "regulator": 230,
+    "weedmaps": 140,
+    "leafly": 165
+   }
+  },
+  "OK": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/oklahoma",
+    "leafly": "https://www.leafly.com/dispensaries/oklahoma",
+    "mpp": "https://www.mpp.org/states/oklahoma/",
+    "norml_lawyers": "https://lawyers.norml.org/oklahoma",
+    "norml_laws": "https://norml.org/laws/oklahoma-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 519,
+    "leafly": 1097
+   }
+  },
+  "OR": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/oregon",
+    "leafly": "https://www.leafly.com/dispensaries/oregon",
+    "mpp": "https://www.mpp.org/states/oregon/",
+    "norml_lawyers": "https://lawyers.norml.org/oregon",
+    "norml_laws": "https://norml.org/laws/oregon-penalties-2/"
+   },
+   "counts": {
+    "regulator": 748,
+    "weedmaps": 249,
+    "leafly": 700
+   }
+  },
+  "PA": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/pennsylvania",
+    "leafly": "https://www.leafly.com/dispensaries/pennsylvania",
+    "mpp": "https://www.mpp.org/states/pennsylvania/",
+    "norml_lawyers": "https://lawyers.norml.org/pennsylvania",
+    "norml_laws": "https://norml.org/laws/pennsylvania-penalties-2/"
+   },
+   "counts": {
+    "regulator": 180,
+    "weedmaps": 148,
+    "leafly": 165
+   }
+  },
+  "RI": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/rhode-island",
+    "leafly": "https://www.leafly.com/dispensaries/rhode-island",
+    "mpp": "https://www.mpp.org/states/rhode-island/",
+    "norml_lawyers": "https://lawyers.norml.org/rhode-island",
+    "norml_laws": "https://norml.org/laws/rhode-island-penalties-2/"
+   },
+   "counts": {
+    "regulator": 9,
+    "weedmaps": 3,
+    "leafly": 10
+   }
+  },
+  "SC": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/south-carolina",
+    "leafly": "https://www.leafly.com/dispensaries/south-carolina",
+    "mpp": "https://www.mpp.org/states/south-carolina/",
+    "norml_lawyers": "https://lawyers.norml.org/south-carolina",
+    "norml_laws": "https://norml.org/laws/south-carolina-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": null,
+    "leafly": 101
+   }
+  },
+  "SD": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/south-dakota",
+    "leafly": "https://www.leafly.com/dispensaries/south-dakota",
+    "mpp": "https://www.mpp.org/states/south-dakota/",
+    "norml_lawyers": "https://lawyers.norml.org/south-dakota",
+    "norml_laws": "https://norml.org/laws/south-dakota-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 28,
+    "leafly": 33
+   }
+  },
+  "TN": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/tennessee",
+    "leafly": "https://www.leafly.com/dispensaries/tennessee",
+    "mpp": "https://www.mpp.org/states/tennessee/",
+    "norml_lawyers": "https://lawyers.norml.org/tennessee",
+    "norml_laws": "https://norml.org/laws/tennessee-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": null,
+    "leafly": 48
+   }
+  },
+  "TX": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/texas",
+    "leafly": "https://www.leafly.com/dispensaries/texas",
+    "mpp": "https://www.mpp.org/states/texas/",
+    "norml_lawyers": "https://lawyers.norml.org/texas",
+    "norml_laws": "https://norml.org/laws/texas-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 7,
+    "leafly": 407
+   }
+  },
+  "UT": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/utah",
+    "leafly": "https://www.leafly.com/dispensaries/utah",
+    "mpp": "https://www.mpp.org/states/utah/",
+    "norml_lawyers": "https://lawyers.norml.org/utah",
+    "norml_laws": "https://norml.org/laws/utah-penalties-2/"
+   },
+   "counts": {
+    "regulator": 16,
+    "weedmaps": 9,
+    "leafly": 6
+   }
+  },
+  "VT": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/vermont",
+    "leafly": "https://www.leafly.com/dispensaries/vermont",
+    "mpp": "https://www.mpp.org/states/vermont/",
+    "norml_lawyers": "https://lawyers.norml.org/vermont",
+    "norml_laws": "https://norml.org/laws/vermont-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 60,
+    "leafly": 83
+   }
+  },
+  "VA": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/virginia",
+    "leafly": "https://www.leafly.com/dispensaries/virginia",
+    "mpp": "https://www.mpp.org/states/virginia/",
+    "norml_lawyers": "https://lawyers.norml.org/virginia",
+    "norml_laws": "https://norml.org/laws/virginia-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 13,
+    "leafly": 20
+   }
+  },
+  "WA": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/washington",
+    "leafly": "https://www.leafly.com/dispensaries/washington",
+    "mpp": "https://www.mpp.org/states/washington/",
+    "norml_lawyers": "https://lawyers.norml.org/washington",
+    "norml_laws": "https://norml.org/laws/washington-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": 254,
+    "leafly": 461
+   }
+  },
+  "WV": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/west-virginia",
+    "leafly": "https://www.leafly.com/dispensaries/west-virginia",
+    "mpp": "https://www.mpp.org/states/west-virginia/",
+    "norml_lawyers": "https://lawyers.norml.org/west-virginia",
+    "norml_laws": "https://norml.org/laws/west-virginia-penalties-2/"
+   },
+   "counts": {
+    "regulator": 63,
+    "weedmaps": 40,
+    "leafly": 29
+   }
+  },
+  "WI": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/wisconsin",
+    "leafly": "https://www.leafly.com/dispensaries/wisconsin",
+    "mpp": "https://www.mpp.org/states/wisconsin/",
+    "norml_lawyers": "https://lawyers.norml.org/wisconsin",
+    "norml_laws": "https://norml.org/laws/wisconsin-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": null,
+    "leafly": 93
+   }
+  },
+  "WY": {
+   "links": {
+    "weedmaps": "https://weedmaps.com/dispensaries/in/united-states/wyoming",
+    "leafly": "https://www.leafly.com/dispensaries/wyoming",
+    "mpp": "https://www.mpp.org/states/wyoming/",
+    "norml_lawyers": "https://lawyers.norml.org/wyoming",
+    "norml_laws": "https://norml.org/laws/wyoming-penalties-2/"
+   },
+   "counts": {
+    "regulator": null,
+    "weedmaps": null,
+    "leafly": null
+   }
+  }
+ }
+}

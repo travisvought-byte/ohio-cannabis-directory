@@ -108,11 +108,12 @@ class WorldTest(unittest.TestCase):
                 self.assertIn(f'href="{r["page"]}"', PAGES['world.html'])
         self.assertIn('id="world"', PAGES['index.html'])
 
-    def test_home_announcement_counts_come_from_the_data(self):
+    def test_home_world_count_comes_from_the_data(self):
+        # Owner direction, November 26, 2026: the "set sail" banner is gone; the world section keeps the count.
         home = PAGES['index.html']
-        self.assertIn('class="ahoy"', home)
-        self.assertIn(f'cannabis laws of {len(WORLD["countries"])} countries', home)
-        self.assertIn('href="world.html">Board the ship', home)
+        self.assertNotIn('class="ahoy"', home)
+        self.assertIn(f'plain answers for {len(WORLD["countries"])} countries', home)
+        self.assertIn('href="world.html"', home)
 
     def test_world_is_in_the_menu_of_every_page(self):
         for name, text in PAGES.items():

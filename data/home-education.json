@@ -1,0 +1,28 @@
+{
+ "schema_version": 1,
+ "reviewed_on": "2026-11-26",
+ "purpose": "The home page's 'Learn the basics' section (owner direction, November 26, 2026: the whole point is education; drop real knowledge, bust myths, explain basic terms, set context). Every line restates a reviewed record this site already publishes: terms come from data/knowledge.json (Cannabis 101), the federal and travel facts from the national records in data/state-permissions.json, and the state counts are computed from the state answers at build time. Each item carries the same sources as its record.",
+ "terms": [
+  {"knowledge": "cannabis", "term": "Cannabis and cannabinoids", "text": "Cannabis is the plant. Cannabinoids are compounds it makes, including THC and CBD."},
+  {"knowledge": "thc", "term": "THC and CBD", "text": "THC is the main cannabinoid that gets you high. CBD doesn’t cause the same high, but it can still have side effects and interact with medicines."},
+  {"knowledge": "thca", "term": "THCA", "text": "The form of THC in the raw plant. Heat turns it into THC, which is why lab reports list both."},
+  {"knowledge": "terpenes", "term": "Terpenes", "text": "The compounds behind cannabis smell and flavor. A batch lab report shows which ones a product actually has."},
+  {"knowledge": "kief", "term": "Kief and hash", "text": "Kief is the resin-rich dust shaken off the plant. Hash is that resin concentrated, often pressed."},
+  {"knowledge": "coa", "term": "COA (lab report)", "text": "A certificate of analysis records lab results for one batch. Make sure the batch on the report matches the batch you bought."}
+ ],
+ "myths": [
+  {"myth": "Legal in my state means legal everywhere.",
+   "fact": "Federal law still controls cannabis. In April 2026 medical products under a state license moved to Schedule III, but adult-use products did not. TSA says marijuana is still illegal under federal law, and screeners hand what they find to police.",
+   "national": ["federal-schedule", "travel-flying"], "more": ["Flying with cannabis", "help.html#travel"]},
+  {"myth": "If an edible hasn’t kicked in, take more.",
+   "fact": "Swallowed cannabis can take 30 minutes to 2 hours to start working, and the effects can last for hours. That delay is why people take too much.",
+   "knowledge": ["edibles", "timing"], "more": ["Edibles, explained", "learn.html#forms-edibles"]},
+  {"myth": "CBD is harmless, so it can’t interact with anything.",
+   "fact": "CBD doesn’t get you high, but it can have side effects and interact with medicines. Tell your doctor or pharmacist if you use it.",
+   "knowledge": ["thc"], "more": ["THC and CBD", "learn.html#definitions-thc"]},
+  {"myth": "The strain name tells you what’s in it.",
+   "fact": "A product’s name alone doesn’t tell you its chemistry. The lab report for that batch does.",
+   "knowledge": ["cannabis", "coa"], "more": ["How to read a label", "learn.html#labels"]}
+ ],
+ "more": [["Cannabis 101, the full guide", "learn.html"], ["Hash myths, busted", "hash-myths.html"], ["Where weed comes from", "heritage.html"], ["Where weed can put you in prison", "travel-warnings.html"]]
+}

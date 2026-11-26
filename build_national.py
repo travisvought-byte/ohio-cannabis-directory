@@ -41,8 +41,8 @@ LEVELS = {'starter': 'Starter', 'partial': 'Partial', 'broad': 'Broad'}
 PACK_LABEL = {'live': 'Full state guide', 'pilot': 'Pilot state guide'}
 
 CSS = '''
-:root{color-scheme:light dark;--ink:#17231e;--soft:#56625d;--line:#d9ddd6;--link:#1d5c7a;--bg:#f7f6f1;--card:#fff;--green:#1d4a37;--green2:#2f6d50;--gold:#e9b949;--mint:#e6f0e9;--note:#fff4dc}
-*{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+:root{color-scheme:light dark;--ink:#17231e;--soft:#4a554f;--line:#d9ddd6;--link:#1d5c7a;--bg:#f7f6f1;--card:#fff;--green:#1d4a37;--green2:#2f6d50;--gold:#e9b949;--mint:#e6f0e9;--note:#fff4dc}
+*{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
 a{color:var(--link);text-underline-offset:3px}.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
 header.site{background:var(--green);color:#fff}header.site .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:0 22px;min-height:62px}
 .brand{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:1.22rem;min-height:48px}.brand img{width:40px;height:40px;border-radius:8px;flex:none}
@@ -50,7 +50,7 @@ header.site nav{margin-left:auto;display:flex;flex-wrap:wrap;gap:0 20px}header.s
 header.site nav a:hover,header.site nav a:focus-visible{opacity:1;text-decoration:underline}
 main{max-width:1080px;margin:0 auto;padding:6px 20px 24px}
 h1{font-size:clamp(26px,4vw,38px);line-height:1.15;margin:.6em 0 .3em}h2{margin:1.6em 0 .4em;font-size:1.45rem;line-height:1.25}h3{margin:1.2em 0 .4em;font-size:1.1rem}
-p{max-width:70ch}.muted{color:var(--soft);font-size:.9rem}.crumbs{font-size:.9rem;margin:14px 0 0}.lede{font-size:1.08rem}
+p{max-width:70ch}.muted{color:var(--soft);font-size:.95rem}.crumbs{font-size:.9rem;margin:14px 0 0}.lede{font-size:1.08rem}
 .hero{position:relative;overflow:hidden;background:linear-gradient(155deg,var(--green) 0%,var(--green2) 100%);color:#fff}
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);align-items:center;gap:24px;padding-top:34px;padding-bottom:46px}
 .hero h1{font-size:clamp(32px,5.2vw,52px);line-height:1.06;margin:.25em 0 .35em;max-width:15ch}.hero p{color:#e2eee6;font-size:1.08rem;margin:.4em 0}
@@ -108,7 +108,7 @@ details.az{margin:10px 0}details.az summary{cursor:pointer;font-weight:700;color
 .glance li{border-top:1px solid var(--line)}.glance li:first-child{border-top:0}
 .glance a{display:grid;grid-template-columns:minmax(0,210px) 1fr;gap:2px 14px;padding:10px 0;text-decoration:none;color:var(--ink);align-items:baseline}.glance .q{font-weight:650;color:var(--link)}
 .onpage{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.95rem;margin:8px 0}.onpage a{min-height:40px;display:inline-flex;align-items:center}
-.medcard{background:var(--card);border:1px solid var(--line);border-left:6px solid #3b7fa0;border-radius:14px;padding:6px 18px 12px;margin:18px 0}.medcard h2{margin-top:.6em}.steps{padding-left:1.3em}.steps li{margin:.3em 0}.facts{display:grid;grid-template-columns:minmax(0,170px) 1fr;gap:6px 16px;margin:12px 0}.facts dt{font-weight:700}.facts dd{margin:0}.mednote{background:var(--note);border-radius:8px;padding:8px 12px}.medlinks{display:flex;flex-wrap:wrap;gap:8px}@media(max-width:560px){.facts{grid-template-columns:1fr}.facts dd{margin-bottom:6px}}.featured{background:var(--card);border:3px solid #4a8a3c;border-radius:16px;padding:12px 20px 14px;margin:20px 0;box-shadow:0 4px 14px rgba(0,0,0,.08)}.feat-label{display:inline-flex;align-items:center;gap:6px;margin:0 0 8px;padding:3px 12px;border-radius:999px;background:#4a8a3c;color:#fff;font-weight:700;font-size:.9rem}.feat-label svg{width:18px;height:18px}.feat-top{display:flex;flex-wrap:wrap;gap:16px;align-items:center}.feat-top>div{flex:1 1 260px;min-width:0}.feat-top h2{margin:.1em 0}.feat-logo{flex:none;display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px}.feat-logo img{display:block;width:140px;height:auto}.feat-kind{margin:0;font-weight:700;color:var(--soft)}.feat-go{list-style:none;padding:0;margin:12px 0 6px;display:flex;flex-wrap:wrap;gap:10px}.feat-go a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border:2px solid #4a8a3c;border-radius:10px;font-weight:700;text-decoration:none;color:var(--ink);background:var(--card)}.feat-go a svg{width:20px;height:20px}.feat-go a.primary{background:#2f6b28;border-color:#2f6b28;color:#fff}.feat-go a:hover,.feat-go a:focus-visible{outline:3px solid #4a8a3c;outline-offset:2px}.feat-note{margin:.4em 0 0}@media(max-width:560px){.feat-go a{width:100%}.feat-go li{flex:1 1 100%}}.next{background:var(--mint);border-radius:14px;padding:14px 18px;margin:26px 0}.next h2{margin:0 0 .3em;font-size:1.2rem}.next ul{margin:.3em 0;padding-left:1.2em}
+.medcard{background:var(--card);border:1px solid var(--line);border-left:6px solid #3b7fa0;border-radius:14px;padding:6px 18px 12px;margin:18px 0}.medcard h2{margin-top:.6em}.steps{padding-left:1.3em}.steps li{margin:.3em 0}.facts{display:grid;grid-template-columns:minmax(0,170px) 1fr;gap:6px 16px;margin:12px 0}.facts dt{font-weight:700}.facts dd{margin:0}.mednote{background:var(--note);border-radius:8px;padding:8px 12px}.medlinks{display:flex;flex-wrap:wrap;gap:8px}@media(max-width:560px){.facts{grid-template-columns:1fr}.facts dd{margin-bottom:6px}}.featured{background:var(--card);border:3px solid #4a8a3c;border-radius:16px;padding:12px 20px 14px;margin:20px 0;box-shadow:0 4px 14px rgba(0,0,0,.08)}.feat-label{display:inline-flex;align-items:center;gap:6px;margin:0 0 8px;padding:3px 12px;border-radius:999px;background:#4a8a3c;color:#fff;font-weight:700;font-size:.9rem}.feat-label svg{width:18px;height:18px}.feat-top{display:flex;flex-wrap:wrap;gap:16px;align-items:center}.feat-top>div{flex:1 1 260px;min-width:0}.feat-top h2{margin:.1em 0}.feat-logo{flex:none;display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px}.feat-logo img{display:block;width:140px;height:auto}.feat-kind{margin:0;font-weight:700;color:var(--soft)}.feat-go{list-style:none;padding:0;margin:12px 0 6px;display:flex;flex-wrap:wrap;gap:10px}.feat-go a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border:2px solid #4a8a3c;border-radius:10px;font-weight:700;text-decoration:none;color:var(--ink);background:var(--card)}.feat-go a svg{width:20px;height:20px}.feat-go a.primary{background:#2f6b28;border-color:#2f6b28;color:#fff}.feat-go a:hover,.feat-go a:focus-visible{outline:3px solid #4a8a3c;outline-offset:2px}.feat-note{margin:.4em 0 0}@media(max-width:560px){.feat-go a{width:100%}.feat-go li{flex:1 1 100%}}.og{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:10px 20px 12px;margin:20px 0}.og h2{display:flex;align-items:center;gap:8px;margin:.3em 0}.og h2 svg{width:24px;height:24px}.og-list{list-style:none;padding:0;margin:10px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}.og-list li{border:1px solid var(--line);border-radius:12px;padding:10px 14px;background:var(--bg,#fff)}.og-list a{display:flex;flex-direction:column;min-height:44px;text-decoration:none;color:var(--ink)}.og-list a strong{font-size:1.1rem;text-decoration:underline;text-underline-offset:3px}.og-list p{margin:.3em 0 0;font-size:.95rem}.og-best{display:inline-block;margin-top:6px;padding:2px 10px;border-radius:999px;background:#2f6b28;color:#fff;font-weight:700;font-size:.85rem}.reuse{background:var(--mint);border-radius:10px;padding:10px 14px}.next{background:var(--mint);border-radius:14px;padding:14px 18px;margin:26px 0}.next h2{margin:0 0 .3em;font-size:1.2rem}.next ul{margin:.3em 0;padding-left:1.2em}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:8px 0;min-width:0;scroll-margin-top:12px}.card h3,.card h4{margin:0 0 6px;font-size:1rem;line-height:1.35}.card p{margin:.25rem 0}
 .chip{display:inline-block;border:1px solid;border-radius:999px;padding:0 10px;font-size:.82rem;font-weight:700;line-height:1.7;white-space:nowrap}
 .chip.allowed,.chip.positive,.chip.broad{background:#e7f3eb;border-color:#2e7d4f;color:#1d5a37}.chip.medical-only{background:#e5f1f7;border-color:#3b7fa0;color:#1d4f68}
@@ -261,23 +261,88 @@ def tone_of(question, status):
     return own['tone'] if own else status
 
 
+# Owner direction, November 26, 2026: "could you just give us a better map?" The square tile grid became a real map of
+# the country, the same state outlines Nina's Map uses (data/us-map.json). Each state is a link with its answer in its
+# name; small northeastern states also get a labeled box at the side so they are easy to tap. Color is never the only
+# signal: each answer has its own fill pattern, the legend shows the same patterns, and the A-Z list repeats everything.
+US_MAP = json.loads((ROOT / 'data/us-map.json').read_text(encoding='utf-8'))
+SIDE_BOXES = ['VT', 'NH', 'MA', 'RI', 'CT', 'NJ', 'DE', 'MD', 'DC']
+LABEL_AT = {'MI': (690, 197), 'FL': (790, 520), 'LA': (566, 470), 'KY': (700, 322), 'ID': (196, 175), 'CA': (76, 290)}
+FILLS = {  # tone: (fill color, pattern drawn over it, label color)
+    'allowed': ('#2f7d4f', '', '#fff'), 'positive': ('#2f7d4f', '', '#fff'), 'broad': ('#2f7d4f', '', '#fff'),
+    'medical-only': ('#387b9c', '<path d="M0 8L8 0" stroke="#fff" stroke-opacity=".45" stroke-width="2"/>', '#fff'),
+    'limited': ('#e3b23c', '<circle cx="4" cy="4" r="1.3" fill="#5c4708"/>', '#2a2108'),
+    'varies-locally': ('#e3b23c', '<circle cx="4" cy="4" r="1.3" fill="#5c4708"/>', '#2a2108'),
+    'partial': ('#e3b23c', '<circle cx="4" cy="4" r="1.3" fill="#5c4708"/>', '#2a2108'),
+    'starter': ('#e3b23c', '<circle cx="4" cy="4" r="1.3" fill="#5c4708"/>', '#2a2108'),
+    'not-permitted': ('#b4513a', '<path d="M0 0L8 8M8 0L0 8" stroke="#fff" stroke-opacity=".35" stroke-width="1.4"/>', '#fff'),
+    'negative': ('#b4513a', '<path d="M0 0L8 8M8 0L0 8" stroke="#fff" stroke-opacity=".35" stroke-width="1.4"/>', '#fff'),
+    'not-reviewed': ('#d4d8d5', '', '#2c3531'), 'not-started': ('#d4d8d5', '', '#2c3531')}
+
+
+def _fill(tone):
+    color, pattern, _ = FILLS.get(tone, FILLS['not-reviewed'])
+    return f'url(#pt-{tone})' if pattern else color
+
+
+def map_defs(tones):
+    out = []
+    for t in sorted(set(tones)):
+        color, pattern, _ = FILLS.get(t, FILLS['not-reviewed'])
+        if pattern:
+            out.append(f'<pattern id="pt-{t}" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="{color}"/>{pattern}</pattern>')
+    return '<defs>' + ''.join(out) + '</defs>'
+
+
 def tile_map(perm, question, answers, caption):
     """Each state colored by its answer to one question; a state with no reviewed answer is grey, never 'prohibited'."""
     names = perm['jurisdictions']
-    cells, tally = [], {}
-    for i, (code, (row, col)) in enumerate(sorted(TILES.items(), key=lambda kv: kv[1])):
+    tally, tones, shapes, labels, boxes = {}, [], [], [], []
+    for i, st in enumerate(US_MAP['states']):
+        code = st['code']
         a = answers.get(code, {}).get(question['id'])
         status = a['status'] if a else 'not-reviewed'
         tally[status] = tally.get(status, 0) + 1
+        tone = tone_of(question, status)
+        tones.append(tone)
         label = status_label(perm, question, status) + (f': {a["short"]}' if a else '')
-        edge = ' tl' if col <= 1 else ' tr' if col >= 9 else ''
-        cells.append(f'<a class="tile {esc(tone_of(question, status))}{edge}" data-track="map-state" style="grid-row:{row + 1};grid-column:{col + 1};--i:{i}" '
-                     f'href="{slug(names[code])}.html" data-tip="{esc(names[code])}: {esc(status_label(perm, question, status))}" '
-                     f'aria-label="{esc(names[code])}: {esc(label)}">{code}</a>')
+        href = f'{slug(names[code])}.html'
+        shapes.append(f'<a href="{href}" class="st {esc(tone)}" data-track="map-state" aria-label="{esc(names[code])}: {esc(label)}">'
+                      f'<title>{esc(names[code])}: {esc(status_label(perm, question, status))}</title><path d="{st["d"]}" fill="{_fill(tone)}"/></a>')
+        ink = FILLS.get(tone, FILLS['not-reviewed'])[2]
+        if code in SIDE_BOXES:
+            y = 92 + SIDE_BOXES.index(code) * 40
+            boxes.append(f'<a href="{href}" class="st box {esc(tone)}" data-track="map-state" aria-label="{esc(names[code])}: {esc(label)}">'
+                         f'<title>{esc(names[code])}: {esc(status_label(perm, question, status))}</title>'
+                         f'<rect x="992" y="{y}" width="58" height="32" rx="6" fill="{_fill(tone)}"/>'
+                         f'<text x="1021" y="{y + 21}" fill="{ink}" aria-hidden="true">{code}</text></a>')
+        else:
+            x, y = LABEL_AT.get(code, (st['cx'], st['cy']))
+            labels.append(f'<text x="{x}" y="{y + 5}" fill="{ink}">{code}</text>')
     order = [st for st in list(question.get('statuses', {})) + list(perm['statuses']) if st in tally]
-    legend = ''.join(f'<li><span class="sw {esc(tone_of(question, st))}"></span>{esc(status_label(perm, question, st))} ({tally[st]})</li>' for st in order)
-    return (f'<div class="usmap" role="group" aria-label="{esc(caption)}">' + ''.join(cells) + '</div>',
-            f'<ul class="legend" aria-label="Map key">{legend}</ul>')
+    legend = ''.join(f'<li><svg class="swv" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" focusable="false">'
+                     f'<rect width="22" height="22" rx="4" fill="{_fill(tone_of(question, st))}"/></svg>'
+                     f'{esc(status_label(perm, question, st))} ({tally[st]})</li>' for st in order)
+    svg = (f'<figure class="usvg"><svg viewBox="0 0 1060 {US_MAP["height"]}" role="group" aria-label="{esc(caption)}">'
+           + map_defs(tones) + '<g class="shapes">' + ''.join(shapes) + '</g>'
+           '<g class="labels" aria-hidden="true">' + ''.join(labels) + '</g>'
+           '<g class="boxes">' + ''.join(boxes) + '</g></svg>'
+           '<figcaption class="muted">Small states are also in the boxes on the right. Every state is in the A–Z list too.</figcaption></figure>')
+    return svg, f'<ul class="legend" aria-label="Map key">{legend}</ul>'
+
+
+USVG_CSS = (
+    '.usvg{margin:10px 0;max-width:820px}.usvg svg{display:block;width:100%;height:auto}'
+    '.usvg .st path,.usvg .st rect{stroke:#fff;stroke-width:1;transition:filter .12s}'
+    '.usvg .st:hover path,.usvg .st:hover rect{filter:brightness(1.15)}'
+    '.usvg .st:focus{outline:none}.usvg .st:focus-visible path,.usvg .st:focus-visible rect{stroke:#111;stroke-width:3.5}'
+    '.usvg text{font:700 13px system-ui,sans-serif;text-anchor:middle;pointer-events:none}'
+    '.usvg .labels text{paint-order:stroke;stroke:rgba(0,0,0,.25);stroke-width:.6px}'
+    '.legend .swv{vertical-align:middle;margin-right:6px;flex:none}'
+    '.legend li{display:inline-flex;align-items:center;margin:0 14px 6px 0}'
+    '@media (forced-colors:active){.usvg .st path,.usvg .st rect{stroke:CanvasText}.usvg .st:focus-visible path{stroke:Highlight}}'
+)
+CSS += USVG_CSS
 
 
 # Visuals on every US page (owner direction, November 25, 2026: "add some reasonable visuals everywhere, at least for
@@ -726,6 +791,61 @@ def medical_section(prog, cites, name, medical_only=True):
     return ''.join(out)
 
 
+# Owner direction, November 26, 2026: point people to the best existing resources instead of pretending to be
+# the best at everything. Links only, no affiliation or payment. Completeness was checked against the regulator's
+# own store list where this site has one (data/outside-guides.json says how).
+GUIDES_FILE = ROOT / 'data/outside-guides.json'
+GUIDE_ORDER = ('leafly', 'weedmaps', 'mpp', 'norml_laws', 'norml_lawyers')
+
+
+def load_guides(path=None):
+    data = json.loads((path or GUIDES_FILE).read_text(encoding='utf-8'))
+    for code, st in data['states'].items():
+        for key, url in st['links'].items():
+            if key not in data['guides'] or not url.startswith('https://'):
+                raise ValueError(f'outside guide {key} for {code} must be a known guide with an https address')
+    return data
+
+
+def reuse_offer(place='this'):
+    """The free and open source offer (owner direction, November 26, 2026), with a way to reach Travis."""
+    return (f'<p class="reuse"><strong>Free and open source.</strong> Run a {esc(place)} guide or group of your own? Copy anything on The Reefer '
+            f'that helps you, and Travis will help you set it up for free: <a href="mailto:{EMAIL}">email {EMAIL}</a> or '
+            f'<a href="{REPO}">get the code on GitHub</a>.</p>')
+
+
+def guides_section(data, code, name):
+    st = (data or {}).get('states', {}).get(code)
+    if not st or not st['links']:
+        return ''
+    counts, full = st['counts'], data['complete_at']
+    reg = counts.get('regulator')
+
+    def note(key):
+        n = counts.get(key)
+        if not (reg and n):
+            return '', 0
+        share = n / reg
+        if share >= full:
+            return f'Lists about as many stores as the state’s own list ({n:,} vs {reg:,}).', share
+        return f'Lists fewer stores than the state’s own list ({n:,} vs {reg:,}), so check the state’s list too.', share
+
+    stores = sorted((k for k in ('leafly', 'weedmaps') if k in st['links']), key=lambda k: -note(k)[1])
+    items = []
+    for key in stores + [k for k in GUIDE_ORDER if k not in ('leafly', 'weedmaps') and k in st['links']]:
+        g = data['guides'][key]
+        text, share = note(key)
+        best = ' <span class="og-best">Most complete store finder we checked</span>' if key == (stores[0] if stores else None) and share >= full else ''
+        items.append(f'<li><a href="{esc(st["links"][key])}" target="_blank" rel="noopener"><strong>{esc(g["name"])}</strong>'
+                     f'<span>{esc(g["what"])}</span></a>{best}' + (f'<p class="muted">{esc(text)}</p>' if text else '') + '</li>')
+    when = long_date(data['checked_on'])
+    return (f'<section class="og" id="other-guides" aria-labelledby="og-h"><h2 id="og-h">{icon("link")} Other good guides for {esc(name)}</h2>'
+            '<p>Other sites already do some of this well, so use them too. We don’t run them and they don’t pay us.</p>'
+            f'<ul class="og-list">{"".join(items)}</ul>'
+            f'<p class="muted">Links and store counts checked {when}. Counts are rough: a site may include delivery services, and a state list can lag.</p>'
+            + reuse_offer(name) + '</section>')
+
+
 def correction_url(place):
     body = 'Page or state:\r\n\r\nAddition or correction:\r\n\r\nWebsite or source:\r\n\r\n'
     return 'mailto:' + EMAIL + '?' + urlencode({'subject': f'{SITE_NAME}: correction for {place}', 'body': body}, quote_via=quote)
@@ -791,7 +911,9 @@ def shell(title, description, body, name, place, hero='', ld=None, css=''):
             '<nav aria-label="Corrections and data"><h2>Fix or reuse</h2><ul>'
             f'<li><a href="{esc(correction_url(place))}">Suggest a correction</a></li>'
             f'<li><a href="{REPO}#readme">Methods &amp; sources</a></li>'
-            f'<li><a href="{REPO}/blob/main/architecture/STATE_COMPLETION_STANDARD.md">State completion standard</a></li></ul></nav></div>'
+            f'<li><a href="{REPO}/blob/main/architecture/STATE_COMPLETION_STANDARD.md">State completion standard</a></li>'
+            '<li><a href="about.html#reuse">Copy anything here, free</a></li></ul></nav></div>'
+            f'<p class="foot-reuse"><strong>Free and open source.</strong> Anyone may copy what’s on this site for their own site or group, and Travis will help you set it up: <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>'
             '<p>Summaries of the cited sources, each with the date it was checked. Not legal advice. A missing answer means not yet reviewed, '
             'never that something is prohibited. Free to use under CC BY 4.0. Created and maintained by Travis Vought, shared in support of Veteran Home Guardians. '
             f'Giving Tuesday is December 1: <a href="{GIVING_TUESDAY}">give to Veteran Home Guardians</a>.</p></div></footer>')
@@ -901,7 +1023,7 @@ def glance(perm, state_answers, name):
             + ''.join(rows) + '</ul></section>')
 
 
-def state_page(perm, score, directory, code, answers, sources, medical=None, dispensaries=None, sponsors=(), featured=None):
+def state_page(perm, score, directory, code, answers, sources, medical=None, dispensaries=None, sponsors=(), featured=None, guides=None):
     name = perm['jurisdictions'][code]
     groups = (featured or {}).get(code, [])
     state_answers = answers.get(code, {})
@@ -929,6 +1051,7 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
     body.append(featured_section(groups, name))
     if code == 'OH':
         body.append(f'<p><strong>Ohio’s full guide lives at <a href="{OHIO_HOME}/">OhioWeed.org</a></strong>: business directory, dispensary finder, record clearing, advocacy and more.</p>')
+    body.append(guides_section(guides, code, name))
     # What the visitor most likely came for comes first: where adults can buy the store list, elsewhere the medical card.
     adult_status = state_answers.get('adult-use', {}).get('status')
     card_html = medical_section(prog, cites, name, adult_status == 'medical-only') if prog else ''
@@ -939,7 +1062,7 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
         shop_link = '<a href="#dispensaries">Where to buy</a>'
     first, second = ((shop_link, card_link) if stores_first else (card_link, shop_link))
     body.append('<nav class="onpage" aria-label="On this page">' + first + second
-                + ('<a href="#groups">Local groups</a>' if groups else '') + '<a href="#glance">At a glance</a><a href="#law">The law in detail</a><a href="#directory">Local help</a><a href="#sources">Sources</a></nav>')
+                + ('<a href="#groups">Local groups</a>' if groups else '') + ('<a href="#other-guides">Other guides</a>' if (guides or {}).get('states', {}).get(code, {}).get('links') else '') + '<a href="#glance">At a glance</a><a href="#law">The law in detail</a><a href="#directory">Local help</a><a href="#sources">Sources</a></nav>')
     if stores_first and shops:
         body.append(dispensary_section(shops, cites, name))
     body.append(card_html)
@@ -1385,6 +1508,11 @@ def about_page(perm, score, directory, answers):
             '<li>Nonpartisan: every party and lawmaker is treated the same way.</li></ul>',
             progress_section(perm, score, directory, answers),
             open_data_section(),
+            icon_heading(2, 'reuse', 'Free and open source: copy anything', 'link') +
+            '<p>Everything on The Reefer is free and open source. If you run a guide, a group or a business site and something here would help '
+            'your visitors, copy it: the pages, the data and the code that builds them. You don’t need to ask, and you don’t need to send traffic back. '
+            'We link other good guides on every state page for the same reason: the more people find good information, the better.</p>'
+            + reuse_offer('state or local') +
             icon_heading(2, 'corrections', 'Corrections and reuse', 'mail') +
             f'<p>Found something wrong or out of date? <a href="{esc(correction_url("the site"))}">Send a correction</a> with a link to the source. '
             f'Everything here is free to use under CC BY 4.0, and the data and build scripts are public on <a href="{REPO}">GitHub</a>.</p>'
@@ -1678,36 +1806,129 @@ def show_bar(directory, today=None):
             'if(t>b.getAttribute("data-ends"))b.remove()})();</script>')
 
 
+# Owner direction, November 26, 2026: the home page felt disjointed. It now opens on three clear ways in (your state,
+# the game, the MJBizCon planner while the show is ahead), then a real education section, then the rest. The
+# "set sail" announcement and the separate MJBizCon bar were folded into this.
+EDU_FILE = ROOT / 'data/home-education.json'
+NATIONAL_GUIDES = [('Leafly', 'https://www.leafly.com/strains', 'Strain library and reviews'),
+                   ('Leafly Learn', 'https://www.leafly.com/learn', 'Beginner guides and how-tos'),
+                   ('Weedmaps Learn', 'https://weedmaps.com/learn', 'Plain guides to products and terms'),
+                   ('NORML', 'https://norml.org/laws/', 'Laws and penalties in every state'),
+                   ('Marijuana Policy Project', 'https://www.mpp.org/states/', 'Where each state’s laws and bills stand')]
+
+
+def mjbizcon_card(directory, today=None):
+    """The third way in while MJBizCon 2026 is ahead; after the show it is left out and a small script hides it."""
+    event = next((e for e in directory.get('events', []) if e['id'] == MJBIZCON_EVENT_ID), None)
+    if not event:
+        return ''
+    start, end = date.fromisoformat(event['starts_on']), date.fromisoformat(event['ends_on'])
+    if (today or date.today()) > end:
+        return ''
+    when = f'{start.strftime("%b")} {start.day}–{end.day}, {end.year}' if start.month == end.month else f'{start:%b %d} – {end:%b %d, %Y}'
+    return ('<li class="path biz" id="mjbizcon-card" data-ends="' + end.isoformat() + '"><span class="pi" aria-hidden="true">' + icon('calendar') + '</span>'
+            f'<h2>Going to MJBizCon?</h2><p>Las Vegas, <time datetime="{start.isoformat()}">{esc(when)}</time>. Our free planner has every exhibitor and booth, '
+            'every session with times and rooms, and after-hours events. Make a copy and it works on your phone.</p>'
+            f'<a class="go" href="{esc(MJBIZCON_PLANNER)}/copy" target="_blank" rel="noopener" data-track="mjbizcon:planner-copy">Get the free planner</a>'
+            f'<a class="alt" href="{esc(MJBIZCON_PLANNER)}/edit?usp=sharing" target="_blank" rel="noopener" data-track="mjbizcon:planner-open">Just look at it</a></li>'
+            '<script>(function(){var b=document.getElementById("mjbizcon-card");if(!b)return;var d=new Date(),'
+            't=d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2);'
+            'if(t>b.getAttribute("data-ends"))b.remove()})();</script>')
+
+
+def education_section(perm, answers):
+    """Learn the basics: words to know, myths busted, and the big picture, every line from a reviewed record."""
+    edu = json.loads(EDU_FILE.read_text(encoding='utf-8'))
+    k = json.loads((ROOT / 'data/knowledge.json').read_text(encoding='utf-8'))
+    ksrc = {x['id']: x for x in k['sources']}
+    kitems = {it['id']: it for sec in k['sections'] for it in sec['items']}
+    nat = {r['id']: r for r in perm['national']}
+    psrc = {x['id']: x for x in perm['sources']}
+
+    def src_links(entry):
+        out = []
+        for kid in entry.get('knowledge', []):
+            for sid in kitems[kid].get('sources', []):
+                out.append((ksrc[sid]['title'], ksrc[sid]['url']))
+        for nid in entry.get('national', []):
+            for sid in nat[nid]['source_ids']:
+                out.append((psrc[sid]['publisher'], psrc[sid]['url']))
+        seen, links = set(), []
+        for title, url in out:
+            if url not in seen:
+                seen.add(url)
+                links.append(f'<a href="{esc(url)}" target="_blank" rel="noopener">{esc(title)}</a>')
+        return '<p class="src">Source: ' + ' · '.join(links) + '</p>' if links else ''
+
+    terms = ''.join(f'<div><dt>{esc(t["term"])}</dt><dd>{esc(t["text"])} <a href="learn.html#definitions-{esc(t["knowledge"])}" aria-label="More on {esc(t["term"])}">More</a></dd></div>'
+                    if any(sec['id'] == 'definitions' and t['knowledge'] in {i['id'] for i in sec['items']} for sec in k['sections'])
+                    else f'<div><dt>{esc(t["term"])}</dt><dd>{esc(t["text"])}</dd></div>' for t in edu['terms'])
+    term_src = src_links({'knowledge': [t['knowledge'] for t in edu['terms']]})
+    myths = ''.join(f'<li><p class="myth"><span class="tag no">Myth</span> {esc(m["myth"])}</p><p class="fact"><span class="tag yes">Fact</span> {esc(m["fact"])}</p>'
+                    f'{src_links(m)}<p class="more"><a href="{esc(m["more"][1])}">{esc(m["more"][0])}</a></p></li>' for m in edu['myths'])
+
+    def tally(qid):
+        t = {}
+        for c in perm['jurisdictions']:
+            a = answers.get(c, {}).get(qid)
+            if a:
+                t[a['status']] = t.get(a['status'], 0) + 1
+        return t
+    au, med, rec = tally('adult-use'), tally('medical'), tally('record-relief')
+    hemp = kitems['hemp-federal-dates']
+    big = [('chart', f'{au.get("allowed", 0)}', 'of the 50 states and DC let adults 21 and older use cannabis.',
+            f'{au.get("medical-only", 0)} more allow it for medical patients only, and {au.get("not-permitted", 0)} don’t allow it for adults.', 'law-adult-use.html', 'See the map'),
+           ('card', f'{med.get("allowed", 0)}', 'have a full medical cannabis program.',
+            f'{med.get("limited", 0)} more have a limited one, often low-THC or CBD only.', 'medical.html', 'How to get a card'),
+           ('record', f'{rec.get("automatic", 0)}', 'clear some old cannabis records on their own.',
+            f'{rec.get("by-application", 0)} more do it when you apply, often with free legal help.', 'law-record-relief.html', 'Clear a record')]
+    tiles = ''.join(f'<li><span class="bi" aria-hidden="true">{icon(ic)}</span><p><strong class="num">{n}</strong> {esc(a)}</p><p>{esc(b)}</p><a href="{href}">{esc(go)}</a></li>'
+                    for ic, n, a, b, href, go in big)
+    hemp_note = ('<li class="wide"><span class="bi" aria-hidden="true">' + icon('warning') + '</span><p><strong>Gas station THC is changing.</strong> '
+                 'Since November 12, 2026, products with cannabinoids the plant can’t make on its own, like THC-O, are no longer federal hemp. '
+                 'From December 11, 2026, federal hemp counts total THC and caps it at 0.4 mg per container, unless Congress changes it again.</p>'
+                 + src_links({'knowledge': ['hemp-federal-dates']}) + '</li>')
+    more = ' · '.join(f'<a href="{esc(h)}">{esc(l)}</a>' for l, h in edu['more'])
+    return ('<section class="block edu" id="learn" aria-labelledby="learn-h"><h2 id="learn-h">Learn the basics</h2>'
+            '<p class="lede">Real answers, no hype. Every fact below links to the agency or lab it comes from.</p>'
+            '<div class="edu-grid">'
+            f'<div class="edu-col"><h3>{icon("book")} Words to know</h3><dl class="terms">{terms}</dl>{term_src}</div>'
+            f'<div class="edu-col"><h3>{icon("warning")} Myths, busted</h3><ul class="myths">{myths}</ul></div></div>'
+            f'<h3 class="bigh">{icon("globe")} The big picture</h3><ul class="big">{tiles}{hemp_note}</ul>'
+            '<p class="muted">State counts come from the answer on each state’s page, each with its own source, as of '
+            f'{long_date(perm["as_of"])}.</p><p class="edu-more">Keep learning: {more}</p></section>')
+
+
 def home_page(perm, score, directory, answers, sources, sponsors=()):
     names = perm['jurisdictions']
     jokes = load_jokes()
     ordered = sorted(names, key=lambda c: names[c])
     jump = ''.join(f'<option value="{slug(names[c])}.html">{esc(names[c])}</option>' for c in ordered)
-    import build_world  # the world section lives in build_world; imported here to avoid a load-time cycle
-    hero = (build_world.announcement() + show_bar(directory) + '<section class="hero" aria-labelledby="hero-title"><div class="wrap"><div class="copy">'
+    hero = ('<section class="hero" aria-labelledby="hero-title"><div class="wrap"><div class="copy">'
             '<p class="eyebrow">Free · All 50 states and DC · Every answer sourced</p>'
             '<h1 id="hero-title">Cannabis answers for your state, in plain language.</h1>'
-            '<p>What’s legal, where to buy, how to clear a record and where to get help. Each answer links to the law or agency it comes from.</p>'
-            '<form class="pick" id="pick"><label for="state-jump">Pick your state</label><div class="row">'
-            f'<select id="state-jump" name="state"><option value="">Choose a state</option>{jump}</select><button type="submit">Go</button></div>'
-            f'<p class="muted">Or tap your state on the <a href="#map">map below</a>. Checked as of {long_date(perm["as_of"])}.</p></form>'
-            '<p class="worldlink"><a href="world.html">Travelling or outside the US? Laws around the world →</a></p>'
-            # Owner's request, November 26, 2026: a light pirate game on the site, Pillage the Reefer (pillage/, hand-built).
-            # Round 4: a card, not a line, so people actually notice the game and go play it.
-            '<div class="gamecard"><span class="gc-flag" aria-hidden="true">🏴‍☠️</span><div><p class="gc-title">Pillage the Reefer, our free pirate game</p>'
-            '<p class="gc-sub">Run weed between Caribbean ports, smuggle past the law and fight pirates. Plays on your phone, no sign-up.</p></div>'
-            '<a class="gc-go" href="../pillage/">Play the game <span aria-hidden="true">→</span></a></div></div>'
+            '<p>What’s legal, where to buy, how to clear a record and where to get help, with a link to the law or agency behind every answer.</p></div>'
             f'<div class="art"><div class="shipbox">{ship_art()}{joke_bubble(jokes)}</div></div></div></section>')
+    # Three ways in, big and side by side, right under the title.
+    paths = ('<section class="paths-wrap" aria-label="Start here"><ul class="paths">'
+             '<li class="path state"><span class="pi" aria-hidden="true">' + icon('pin') + '</span><h2>Your state</h2>'
+             '<p>The law in plain words, where to buy, medical cards and local help.</p>'
+             '<form class="pick" id="pick"><label for="state-jump">Pick your state</label><div class="row">'
+             f'<select id="state-jump" name="state"><option value="">Choose a state</option>{jump}</select><button type="submit">Go</button></div></form>'
+             '<a class="alt" href="#map">Or tap it on the map</a> <a class="alt" href="world.html">Outside the US?</a></li>'
+             '<li class="path game"><span class="pi" aria-hidden="true">🏴‍☠️</span><h2>Pillage the Reefer</h2>'
+             '<p>Our free pirate game. Run weed between Caribbean ports, dodge the law and fight pirates. Plays on your phone, no sign-up.</p>'
+             '<a class="go" href="../pillage/" data-track="home:game">Play the game</a></li>'
+             + mjbizcon_card(directory) + '</ul></section>')
 
-    # The joke itself is in the picture (joke_bubble); its data and the script that picks today's follow the first block.
     joke = (jokes_data(jokes) + JOKE_SCRIPT) if jokes else ''
+    body = [paths, education_section(perm, answers)]
     pick = load_landing()['home_chooser']
-    body = ['<section class="block" id="tasks">' + chooser(pick)]
+    body.append('<section class="block" id="tasks">' + chooser(pick))
     hrefs = [it['href'] for it in pick['intents']] + [href for it in pick['intents'] for _, href in it.get('more', [])]
     linked = {href.split('#')[1] for href in hrefs if href.startswith('help.html#')}
     more = [f'<a href="{href}">{esc(label)}</a>' for label, href in QUICK]
     more += [f'<a href="help.html#{slug(n)}">{esc(n)}</a>' for n in needs_in_order(perm) if slug(n) not in linked]
-    more.append('<a href="learn.html">Cannabis 101</a>')
     body.append('<p class="also">Also: ' + ' · '.join(more) + ' · <a href="help.html">All national help</a></p></section>')
     body.append(joke)
 
@@ -1718,16 +1939,27 @@ def home_page(perm, score, directory, answers, sources, sponsors=()):
         what = ('Business directory, dispensary finder, record clearing and advocacy on OhioWeed.org' if code == 'OH'
                 else f'{PACK_LABEL[card["publication_status"]]}: directory and local help, being built out')
         guides.append(f'<a class="guide" href="{guide_link(code, card["name"])}"><strong>{esc(card["name"])}</strong><span>{esc(what)}</span></a>')
-    body.append('<section class="block" id="map"><h2>Where adults can use cannabis</h2>'
-                '<p>Tap a state for its full guide: the law in plain language, with the source for every answer.</p>'
+    body.append('<section class="block" id="map"><h2>Pick your state on the map</h2>'
+                '<p>Colors show where adults can use cannabis. Tap a state for its full guide.</p>'
                 f'<div class="mapbox"><div>{grid}{legend}</div><div><h3>States with a full local guide</h3>'
                 '<p class="muted">Directories of businesses, dispensaries and local help. More states are added over time.</p>'
                 f'<div class="guides">{"".join(guides)}</div></div></div>'
                 '<details class="az"><summary>List all states A–Z</summary><ul>'
                 + ''.join(f'<li><a href="{slug(names[c])}.html">{esc(names[c])}</a></li>' for c in ordered) + '</ul></details></section>')
 
+    # Good guides that already exist, linked plainly (owner direction, November 26, 2026).
+    body.append('<section class="block og" id="other-guides" aria-labelledby="og-h"><h2 id="og-h">' + icon('link') + ' Other good guides</h2>'
+                '<p>Plenty of people already do parts of this well. Each state page links the best store finders and law guides for that state. '
+                'We don’t run these sites and they don’t pay us.</p><ul class="og-list">'
+                + ''.join(f'<li><a href="{esc(u)}" target="_blank" rel="noopener"><strong>{esc(n)}</strong><span>{esc(w)}</span></a></li>' for n, u, w in NATIONAL_GUIDES)
+                + '</ul>' + reuse_offer('state or local') + '</section>')
+
     import build_world  # the world section lives in build_world; imported here to avoid a load-time cycle
-    body.append(build_world.home_block())
+    n_world = len(build_world.load()['countries'])
+    body.append('<section class="block" id="world"><h2>Around the world</h2>'
+                f'<p>The same plain answers for {n_world} countries, where weed comes from, and the places it can land you in prison.</p>'
+                '<div class="pills"><a class="pill" href="world.html">All countries</a><a class="pill" href="travel-warnings.html">Travel warnings</a>'
+                '<a class="pill" href="heritage.html">Where weed comes from</a></div></section>')
     body.append('<section class="block" id="compare"><h2>Compare one rule across every state</h2>'
                 '<p>Pick a question to see every state side by side, on a map and in a list.</p><div class="pills">')
     for q in perm['questions']:
@@ -1744,8 +1976,42 @@ def home_page(perm, score, directory, answers, sources, sponsors=()):
     body.append('</div><p class="muted">How this site checks its information, and its ground rules: <a href="about.html">About</a>. No paid placement or ranking.</p></section>')
     body.append('<script>(function(){var f=document.getElementById("pick"),j=document.getElementById("state-jump");'
                 'function go(){if(!j.value)return;if(window.directoryTrack)window.directoryTrack("state-picker");location.href=j.value}f.addEventListener("submit",function(e){e.preventDefault();go()});j.addEventListener("change",go)})();</script>')
-    description = 'Free, plain-language cannabis answers for all 50 states and DC: what is legal, where to buy, record clearing and where to get help, each answer traced to a named source.'
-    return shell(TAGLINE, description, ''.join(body), 'index.html', 'the home page', hero, ld=[website_node()], css=SPREAD_CSS)
+    description = 'Free, plain-language cannabis answers for all 50 states and DC: what is legal, where to buy, record clearing, myths busted and the basics explained, each answer traced to a named source.'
+    return shell(TAGLINE, description, ''.join(body), 'index.html', 'the home page', hero, ld=[website_node()], css=SPREAD_CSS + HOME_CSS)
+
+
+HOME_CSS = """
+.hero .wrap{padding-bottom:30px}
+.paths-wrap{background:linear-gradient(180deg,var(--green2) 0,var(--green2) 70px,var(--bg) 70px)}
+.paths{list-style:none;margin:0 auto;padding:0 20px;max-width:1080px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.path{position:relative;background:var(--card);color:var(--ink);border-radius:18px;padding:18px 20px 20px;box-shadow:0 10px 28px rgba(0,0,0,.16);border-top:6px solid var(--green2);display:flex;flex-direction:column;gap:6px}
+.path.game{border-top-color:#b4513a}.path.biz{border-top-color:var(--gold)}
+.path h2{margin:0;font-size:1.5rem}.path p{margin:0}.path .pi{font-size:2rem;line-height:1;width:44px;height:44px;display:grid;place-items:center}.path .pi svg{width:36px;height:36px}
+.path .go{margin-top:auto;align-self:flex-start;display:inline-flex;align-items:center;min-height:52px;padding:0 24px;border-radius:12px;background:var(--green);color:#fff;font-weight:800;font-size:1.1rem;text-decoration:none}
+.path.game .go{background:#8f3a26}.path.biz .go{background:var(--gold);color:#221c08}
+.path .go:hover,.path .go:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.path .alt{font-weight:700;min-height:44px;display:inline-flex;align-items:center;margin-right:14px}
+.path .pick{margin:6px 0 0;padding:0;box-shadow:none;max-width:none}.path .pick select{min-height:52px;font-size:1.1rem}
+.edu .lede{font-size:1.15rem}
+.edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.edu-col{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:6px 20px 16px}
+.edu h3{display:flex;align-items:center;gap:8px;font-size:1.3rem}.edu h3 svg{width:26px;height:26px}
+.terms{margin:0}.terms div{padding:10px 0;border-bottom:1px solid var(--line)}.terms dt{font-weight:800;font-size:1.08rem}.terms dd{margin:2px 0 0}
+.myths{list-style:none;margin:0;padding:0}.myths li{padding:12px 0;border-bottom:1px solid var(--line)}.myths p{margin:.2em 0}
+.myth{font-weight:700;text-decoration:line-through;text-decoration-thickness:2px;text-decoration-color:#b4513a}.myth .tag{text-decoration:none}
+.tag{display:inline-block;margin-right:6px;padding:1px 9px;border-radius:999px;font-size:.85rem;font-weight:800;color:#fff;text-decoration:none}.tag.no{background:#9a3b27}.tag.yes{background:#2f6b28}
+.src{font-size:.92rem;color:var(--soft)}.src a{color:var(--link)}.more{font-weight:700}
+.big{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.big li{background:var(--mint);border-radius:16px;padding:14px 18px}.big li.wide{grid-column:1/-1;background:var(--note)}
+.big .bi svg{width:30px;height:30px}.big p{margin:.3em 0}.big .num{font-size:2.2rem;line-height:1;display:block}.big a{font-weight:800;min-height:44px;display:inline-flex;align-items:center}
+.edu-more{font-weight:700}
+.og-list{list-style:none;padding:0;margin:10px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.og-list li{border:1px solid var(--line);border-radius:12px;padding:10px 14px;background:var(--card)}
+.og-list a{display:flex;flex-direction:column;min-height:44px;text-decoration:none;color:var(--ink)}.og-list a strong{font-size:1.1rem;text-decoration:underline;text-underline-offset:3px}
+.reuse{background:var(--mint);border-radius:10px;padding:10px 14px}
+@media(prefers-color-scheme:dark){.path{background:#1c2622;color:#eef3ee}.edu-col,.og-list li{background:#1c2622}.big li{background:#22312a}.big li.wide{background:#3a3220}.reuse{background:#22312a}}
+"""
+
 
 def state_names(perm):
     return {slug(name) + '.html' for name in perm['jurisdictions'].values()}
@@ -1763,6 +2029,7 @@ def pages():
     sources.update({src['id']: src for s in dispensaries.values() for src in (s.get('sources') or [s['source']])})
     sponsors = load_sponsors(perm['jurisdictions'])
     featured = load_featured(perm['jurisdictions'])
+    guides = load_guides()
     out = {'index.html': home_page(perm, score, directory, answers, sources, sponsors),
            'medical.html': medical_page(perm, med_data, medical, answers, sources, dispensaries),
            'coverage.html': coverage_page(perm, medical, sources),
@@ -1778,7 +2045,7 @@ def pages():
     for q in perm['questions']:
         out[law_page_name(q['id'])] = law_page(perm, q, answers, sources, dispensaries)
     for code, name in perm['jurisdictions'].items():
-        out[slug(name) + '.html'] = state_page(perm, score, directory, code, answers, sources, medical, dispensaries, sponsors, featured)
+        out[slug(name) + '.html'] = state_page(perm, score, directory, code, answers, sources, medical, dispensaries, sponsors, featured, guides)
     import build_world  # imported here: build_world uses this module's page shell
     world = build_world.pages(perm, sources)
     clash = sorted(set(world) & set(out))
