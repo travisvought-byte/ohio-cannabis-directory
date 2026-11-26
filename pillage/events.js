@@ -1,5 +1,6 @@
 /* Pillage the Reefer: little choose-your-own-adventure moments, at sea and in port.
    Each one gets a helper object (a) from the game: a.gold(), a.xp(), a.hurt(), a.give() and friends.
+   A choice that shows its odds with a.odds(p) must roll them with a.check(p), so the number shown is the number rolled.
    Every choice returns the text that happens next. Losses stay small, so a bad roll never ruins a voyage. */
 (function () {
   'use strict';
@@ -26,7 +27,7 @@
       opts: function (a) {
         return [
           {label: 'Search her hold (' + a.odds(0.7) + ')', fn: function () {
-            if (a.chance(0.7)) {
+            if (a.check(0.7)) {
               var g = a.gold(a.rand(30, 70) * a.tier), got = a.giveRandom(a.rand(1, 3));
               return 'Behind a barrel of very old pickles you find ' + a.money(g) + (got ? ' and ' + got : '') + '.' + a.xp(10 + 5 * a.tier);
             }
@@ -40,7 +41,7 @@
       opts: function (a) {
         return [
           {label: 'Follow her (' + a.odds(0.55) + ')', fn: function () {
-            if (a.chance(0.55)) {
+            if (a.check(0.55)) {
               var n = a.give('mermaid', 2);
               return n ? 'She leads you to a patch of floating crates: ' + a.bales(n, 'mermaid') + '. She winks. Probably.' + a.xp(15)
                 : 'She leads you to a patch of floating crates, but your hold is full. You wave them goodbye.' + a.xp(10);
@@ -57,7 +58,7 @@
         return [
           {label: 'Ride it out', fn: function () { return 'You lash yourself to the wheel and come out the other side soaked, proud and slightly dented. ' + a.hurtText(a.rand(3, 7)) + a.xp(20); }},
           {label: 'Sing shanties until it passes (' + a.odds(sing) + ')', fn: function () {
-            if (a.chance(sing)) return 'Your crew sings so loudly and so badly that the storm gives up and goes somewhere else.' + a.xp(25);
+            if (a.check(sing)) return 'Your crew sings so loudly and so badly that the storm gives up and goes somewhere else.' + a.xp(25);
             return 'The storm does not care for your singing. ' + a.hurtText(5) + a.xp(5);
           }},
           {label: 'Wait for it to blow over', fn: function () { return 'It takes an hour. Nothing happens, apart from a great deal of rain.'; }}
@@ -68,7 +69,7 @@
       opts: function (a) {
         return [
           {label: 'Steer toward the song (' + a.odds(0.5) + ')', fn: function () {
-            if (a.chance(0.5)) {
+            if (a.check(0.5)) {
               var n = a.give('mermaid', 2);
               return 'Three cheerful mermaids are holding a bake sale. ' + (n ? 'You leave with ' + a.bales(n, 'mermaid') + ' and a recipe.' : 'Your hold is full, so you just buy a scone.') + a.xp(15);
             }
@@ -82,7 +83,7 @@
       opts: function (a) {
         return [
           {label: 'Board her (' + a.odds(0.5) + ')', fn: function () {
-            if (a.chance(0.5)) {
+            if (a.check(0.5)) {
               var g = a.gold(a.rand(80, 160) * a.tier);
               return 'The “ghosts” are just very pale accountants who got lost doing an audit. They’re so relieved to see anyone that they give you ' + a.money(g) + '.' + a.xp(30);
             }
@@ -98,7 +99,7 @@
         var win = Math.min(0.9, 0.4 + 0.08 * a.st.fight + 0.05 * a.st.cannons);
         var out = [
           {label: 'Fight it (' + a.odds(win) + ')', fn: function () {
-            if (a.chance(win)) return 'After a long and undignified struggle, the crab lets go. Your cook makes a crab stew that patches everyone up. ' + a.heal(10) + a.xp(25);
+            if (a.check(win)) return 'After a long and undignified struggle, the crab lets go. Your cook makes a crab stew that patches everyone up. ' + a.heal(10) + a.xp(25);
             return 'The crab wins. It takes a bite out of your rail and lets go when it gets bored. ' + a.hurtText(6) + a.xp(5);
           }},
           {label: 'Wait it out', fn: function () { return 'Two hours later it lets go and wanders off sideways, as crabs do.'; }}
@@ -145,7 +146,7 @@
         var p = Math.min(0.9, 0.4 + 0.08 * a.st.sails + 0.05 * a.st.sail);
         return [
           {label: 'Race! (' + a.odds(p) + ')', fn: function () {
-            if (a.chance(p)) { var g = a.gold(40 * a.tier); return 'You round the rock a full length ahead. Your rival pays up with good grace: ' + a.money(g) + '.' + a.xp(20); }
+            if (a.check(p)) { var g = a.gold(40 * a.tier); return 'You round the rock a full length ahead. Your rival pays up with good grace: ' + a.money(g) + '.' + a.xp(20); }
             var lost = -a.gold(-Math.min(a.goldNow(), 20 * a.tier));
             return 'You lose by a nose, and a bit of pride.' + (lost ? ' The rum costs you ' + a.money(lost) + '.' : '') + a.xp(5);
           }},
@@ -165,12 +166,12 @@
       opts: function (a) {
         var p = Math.min(0.9, 0.35 + 0.1 * a.st.cannons + 0.04 * a.st.fight);
         var out = [{label: 'Fire the cannons (' + a.odds(p) + ')', fn: function () {
-          if (a.chance(p)) { var n = a.give('kraken', 1); return 'BOOM. The tentacles slither off in a huff' + (n ? ', and something drifts up in their wake: a bale of Kraken Kush.' : '.') + a.xp(40); }
+          if (a.check(p)) { var n = a.give('kraken', 1); return 'BOOM. The tentacles slither off in a huff' + (n ? ', and something drifts up in their wake: a bale of Kraken Kush.' : '.') + a.xp(40); }
           return 'BOOM. You miss. A tentacle gives your mast a firm squeeze before it lets go. ' + a.hurtText(10) + a.xp(10);
         }}];
         if (a.cargo() > 0) out.push({label: 'Offer it a bale', fn: function () { var lost = a.loseRandom(1); return 'A tentacle takes ' + lost + ', very gently, and gives your ship a friendly pat goodbye.' + a.xp(15); }});
-        out.push({label: 'Sit very still', fn: function () {
-          if (a.chance(0.6)) return 'You all hold your breath. After a while the tentacles lose interest and sink away.' + a.xp(10);
+        out.push({label: 'Sit very still (' + a.odds(0.6) + ')', fn: function () {
+          if (a.check(0.6)) return 'You all hold your breath. After a while the tentacles lose interest and sink away.' + a.xp(10);
           return 'You sit very still. A tentacle pokes you anyway, quite hard. ' + a.hurtText(5);
         }});
         return out;
@@ -192,7 +193,7 @@
         var p = Math.min(0.9, 0.35 + 0.1 * a.st.fight);
         return [
           {label: 'Accept (' + a.odds(p) + ')', fn: function () {
-            if (a.chance(p)) { var g = a.gold(30 * a.tier); return 'You win with a mighty grunt. The whole dock cheers, and your new friend pays for dinner and ' + a.money(g) + ' on top.' + a.xp(15); }
+            if (a.check(p)) { var g = a.gold(30 * a.tier); return 'You win with a mighty grunt. The whole dock cheers, and your new friend pays for dinner and ' + a.money(g) + ' on top.' + a.xp(15); }
             var lost = -a.gold(-Math.min(a.goldNow(), 10 * a.tier));
             return 'Your arm goes flat on the barrel so fast it makes a noise.' + (lost ? ' Dinner costs you ' + a.money(lost) + '.' : '') + a.xp(5);
           }},
@@ -214,7 +215,7 @@
         var p = Math.min(0.9, 0.55 + 0.06 * a.st.sail);
         return [
           {label: 'Chase him down (' + a.odds(p) + ')', fn: function () {
-            if (a.chance(p)) {
+            if (a.check(p)) {
               var map = a.chance(0.5) ? a.giveMap() : null;
               if (map) return 'You catch him by the hat. He hands back your purse and, impressed, sells you a secret for nothing. ' + map + a.xp(15);
               var g = a.gold(25 * a.tier);

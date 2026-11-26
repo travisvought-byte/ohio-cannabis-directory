@@ -279,7 +279,9 @@
 
   /* ---------- prices ---------- */
   function dayOf(dist) { return 1 + Math.floor((dist || 0) / 900); }
-  function fluct(pid, g, day) { return 0.88 + 0.24 * rand01('f' + pid + g + day); }
+  // Daily drift. Strains move 12% either way; products set their own swing.
+  function fluct(pid, g, day) { var G = D.GOODS[g], s = (G && G.swing) || 0.24; return 1 - s / 2 + s * rand01('f' + pid + g + day); }
+  function wanted(pid, g) { var G = D.GOODS[g]; return !!(G && G.wants && G.wants.indexOf(pid) >= 0); }
   // charm is the captain's Charm skill: each point takes 2% off what you pay and adds 2% to what you get.
   function buyPrice(pid, g, day, charm) {
     var p = D.PORTS[pid], G = D.GOODS[g];
@@ -292,6 +294,7 @@
     if (G.home === pid) m = 0.5;
     else if (p.sells.indexOf(g) >= 0) m = 0.8;
     else if (G.rare) m = 0.95 + 0.3 * rand01('r' + pid + g);
+    else if (wanted(pid, g)) m = 1.3 + 0.12 * rand01('w' + pid + g);
     else {
       m = 0.95 + 0.35 * rand01('d' + pid + g);
       if (D.PORTS[G.home].map !== p.map) m += 0.12;
@@ -322,7 +325,8 @@
     if (kind === 'merchant') return {kind: kind, tier: tier, hull: 8 + 5 * tier, fire: 1 + tier};
     return {kind: kind, tier: tier, hull: 4 + 14 * tier, fire: 3 * tier};
   }
-  function hit(fire, r) { return Math.max(1, Math.round((fire || 1) * (0.75 + 0.5 * r)) || 1); }
+  // Damage stays within 15% of the ship's firepower, so the number on the button is what you get.
+  function hit(fire, r) { return Math.max(1, Math.round((fire || 1) * (0.85 + 0.3 * r)) || 1); }
   function boardChance(st, en, enHull) {
     return clamp(0.2 + 0.55 * (1 - enHull / en.hull) + 0.05 * st.fight + 0.08 * st.crew - 0.05 * en.tier, 0.08, 0.95);
   }
@@ -338,7 +342,7 @@
     hashStr: hashStr, rng: rng, rand01: rand01, clamp: clamp,
     prepareMap: prepareMap, landAt: landAt, nearLand: nearLand, shipBlocked: shipBlocked,
     cellIdx: cellIdx, cellCenter: cellCenter, nearestFreePoint: nearestFreePoint, walkable: walkable, findPath: findPath,
-    dayOf: dayOf, buyPrice: buyPrice, sellPrice: sellPrice,
+    dayOf: dayOf, buyPrice: buyPrice, sellPrice: sellPrice, wanted: wanted,
     levelOf: levelOf, stats: stats, foe: foe, hit: hit, boardChance: boardChance, fleeChance: fleeChance, danger: danger
   };
 })(typeof window !== 'undefined' ? window : globalThis);

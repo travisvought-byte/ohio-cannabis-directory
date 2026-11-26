@@ -1,6 +1,8 @@
 // Pillage the Reefer (November 26, 2026): the pirate game at /pillage/. Every sea links up, every port and dig site
 // sits in open water a ship can reach, trade routes the characters recommend actually pay, delivery requests can't be
 // filled at the port that asks, levels climb, every fight can end, and a new game boots, sails, fights and saves cleanly.
+// Round three: products trade on their own swings, every good can be smoked, the odds on a button are the odds rolled,
+// burning a bale is a real 50-50, and a quick passage lands you in port with the routes tab and trade ledger ready.
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const dir=path.join(__dirname,'..','pillage'),read=f=>fs.readFileSync(path.join(dir,f),'utf8');
 
@@ -32,6 +34,16 @@ const pays=(g,from,to)=>avg(d=>E.sellPrice(to,g,d))>avg(d=>E.buyPrice(from,g,d))
 assert(pays('tangerine','tortuga','havana'),'Ruthie: tangerine to Havana');
 assert(pays('purple','portroyal','havana'),'Catalina: purple to Havana');
 assert(pays('vanilla','veracruz','barbados'),'Esperanza: vanilla to Barbados');
+// hash, rosin and biscuits trade on their own swings and pay extra where they're wanted; every good can be smoked
+for(const g of Object.keys(D.GOODS)) assert(D.SMOKE[g]&&D.SMOKE[g].name&&D.SMOKE[g].does&&D.SMOKE[g].flavor,g+' can be smoked');
+const products=Object.keys(D.GOODS).filter(g=>D.GOODS[g].kind==='product');
+assert(products.length>=3,'there is more than strains to trade');
+for(const g of products){ const G=D.GOODS[g]; assert(D.PORTS[G.home].sells.includes(g),g+' sold where it is made');
+  const buy=avg(d=>E.buyPrice(G.home,g,d)),sell=p=>avg(d=>E.sellPrice(p,g,d)),others=Object.keys(D.PORTS).filter(p=>p!==G.home&&!G.wants.includes(p));
+  const best=Math.max(...Object.keys(D.PORTS).map(sell)),mean=a=>a.reduce((s,p)=>s+sell(p),0)/a.length;
+  assert(best>buy*1.5&&best<buy*2.4,g+' margin '+buy.toFixed(0)+' -> '+best.toFixed(0));
+  assert(G.wants.every(p=>D.PORTS[p])&&mean(G.wants)>mean(others)*1.1,g+' pays more where it is wanted'); }
+assert.notEqual(D.GOODS.hash.swing,D.GOODS.rosin.swing,'products swing differently');
 for(const k in D.QUESTS){ const r=D.QUESTS[k]; assert(!D.PORTS[r.port].sells.includes(r.good),k+' asks for something the port does not sell'); }
 
 // levels, upgrades and fights
@@ -72,6 +84,33 @@ P.encounter(n); [...$('enc-body').querySelectorAll('.choice')].find(b=>/Attack/.
 for(let i=0;i<30&&$('enc-body').querySelector('.choice');i++) $('enc-body').querySelector('.choice').click();
 assert(/strikes her colours|surrenders|Your ship is beaten/.test($('enc-text').textContent),'the fight ends');
 $('enc-body').querySelector('.primary').click(); assert(!$('dlg-encounter').open);
+// odds: the number on the button is the number rolled, and a miss earns a second wind
+const rnd=w.Math.random;
+S.buff=null; S.grit=2; assert.equal(P.odds.chanceOf(0.5),70); assert.equal(P.odds.pct(0.5),'70% chance');
+S.grit=0; assert.equal(P.odds.chanceOf(0.99),95,'never certain'); assert.equal(P.odds.chanceOf(0),5,'never hopeless');
+w.Math.random=()=>0.99; P.odds.roll(0.5); assert.equal(S.grit,1); P.odds.roll(0.5); P.odds.roll(0.5); assert.equal(S.grit,2,'second wind caps at two misses');
+w.Math.random=()=>0; assert(P.odds.roll(0.5)); assert.equal(S.grit,0,'a hit resets it'); w.Math.random=rnd;
+let hits=0; for(let i=0;i<6000;i++){ S.grit=0; if(P.odds.roll(0.6)) hits++; } S.grit=0;
+assert(Math.abs(hits/6000-0.6)<0.03,'rolls land as often as the label says: '+hits/6000);
+// smoking a bale costs one bale and gives the boost on its label
+S.cargo={breath:2,tangerine:1}; const f0=P.stats().fight;
+assert(P.smoke('breath')); assert.equal(S.cargo.breath,1,'one bale burned'); assert.equal(P.stats().fight,f0+2,'Old Sea Dog adds Fighting');
+assert(P.odds.chanceOf(0.5)===50&&!P.smoke('kraken'),'no luck from Old Sea Dog, and you cannot smoke what you lack');
+// Customs offers to burn a bale at even odds; it costs the cheapest bale whatever happens
+P.encounter({kind:'customs',name:'Officer Test',cool:0,x:S.x+5,y:S.y,route:[[0,0]],leg:0});
+let burn=[...$('enc-body').querySelectorAll('.choice')].find(b=>/Burn a bale/.test(b.textContent));
+assert(burn&&/Burn a bale of Tortuga Tangerine \(50% chance\)/.test(burn.textContent),'burn a bale shows its real odds: '+(burn&&burn.textContent));
+assert([...$('enc-body').querySelectorAll('.choice')].every(b=>/% chance\)|fee/.test(b.textContent)),'every Customs option shows a percentage');
+w.Math.random=()=>0; burn.click(); w.Math.random=rnd;
+assert(/wanders off/.test($('enc-text').textContent)&&!S.cargo.tangerine,'the cutter wanders off and the bale is gone');
+$('enc-body').querySelector('.primary').click(); assert(!$('dlg-encounter').open);
+// a quick passage takes days, may bring one run-in, and lands you in port with the routes tab ready
+P.dock('tortuga'); const d0=S.dist; S.cargo={}; assert(P.voyage('tortuga','havana'),'a route to Havana');
+assert(P.passage('havana'));
+for(let i=0;i<40&&$('dlg-encounter').open;i++) ($('enc-body').querySelector('.choice:not([disabled])')||$('enc-body').querySelector('.primary')).click();
+assert.equal(S.docked,'havana','landed in Havana'); assert(S.dist>d0+900,'days passed');
+assert(S.seen.tortuga&&S.seen.havana,'both ports are in the ledger');
+$('tab-routes').click(); assert(/Sail to/.test($('port-panel').textContent)&&/Trade ledger/.test($('port-panel').textContent),'routes tab lists passages and the ledger');
 w.dispatchEvent(new w.Event('pagehide'));
 const saved=JSON.parse(w.localStorage.getItem('pillageTheReefer.v1')); assert.equal(saved.xp,S.xp,'renown is saved');
 assert.equal(errors.length,0,String(errors));
