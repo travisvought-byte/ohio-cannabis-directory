@@ -395,11 +395,25 @@ assert.equal(errors.length,0,String(errors));
   const show=Date.UTC(2026,11,2,20);
   // Anne plays during the show, and her best voyage is on her own board
   const A=mk(B.url,show); A.$('btn-new').click(); A.$('cap-name').value='Anne Bonny'; A.$('cap-ship').value='the Revenge'; A.$('cap-ok').click(); A.$('note-ok').click();
-  A.$('set-sail').click(); A.P.gainXp(500); const best=A.P.myBest();
+  A.$('set-sail').click();
+  // the breakout boards count what you sell, smoke, plunder, sink, dig up and lob
+  const sg=Object.keys(D.SMOKE).find(g=>A.P.sellAt('havana',g)>0); A.P.state.cargo[sg]=6;
+  assert(A.P.sellBales('havana',sg,3)&&A.P.smoke(sg)&&A.P.state.sold===3&&A.P.state.smoked===1,'bales sold and smoked are counted');
+  A.P.state.pillaged=4; A.P.state.sunk=2;
+  A.P.gainXp(500); const best=A.P.myBest();
   assert(best&&best.captain==='Anne Bonny'&&best.ship==='the Revenge'&&best.xp===A.P.state.xp&&best.me&&/^[a-z0-9]{6}$/.test(best.pid),'your voyage is your score');
+  assert(best.st.sold===3&&best.st.smoked===1&&best.st.pillaged===4&&best.st.sunk===2&&best.st.dug===0&&best.st.bricks===0&&best.st.days>=1,'and so are its tallies');
   const code=A.P.scoreCode(best),back=A.P.readScore(code),link=A.P.scoreLink(best);
-  assert(/^[A-Za-z0-9_-]+$/.test(code)&&link===B.url+'?vs='+code&&link.length<122,'a short, clean link that fits a small QR code');
+  assert(/^[A-Za-z0-9_-]+$/.test(code)&&link===B.url+'?vs='+code&&link.length<150,'a short, clean link that fits a small QR code');
   assert(back&&back.pid===best.pid&&back.captain==='Anne Bonny'&&back.xp===best.xp&&back.day===best.day&&Math.abs(back.t-show)<60000,'the code reads back');
+  assert.deepEqual(back.st,best.st,'tallies and all');
+  // a code made before the breakout boards (version 1) still reads, with only its days at sea
+  const seal1=x=>{let h=0x811c9dc5; x='pillage:'+x; for(let i=0;i<x.length;i++){h^=x.charCodeAt(i);h=Math.imul(h,0x01000193)>>>0;} return ('0000'+h.toString(36)).slice(-4);};
+  const b64=x=>Buffer.from(x,'utf8').toString('base64').replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+  const v1body=['1','old111','Old Salt','the Barnacle',300,4,900,0,Math.floor((show-600e3)/60000).toString(36)].join('~'),v1=b64(v1body+'~'+seal1(v1body));
+  const o1=A.P.readScore(v1); assert(o1&&o1.captain==='Old Salt'&&o1.xp===300&&o1.st.days===4&&o1.st.sold===undefined,'an old code still reads');
+  const v2bad=b64(Buffer.from(code.replace(/-/g,'+').replace(/_/g,'/'),'base64').toString('utf8').replace(/~3\./,'~9.'));
+  assert.equal(A.P.readScore(v2bad),null,'a tally changed by hand breaks the seal');
   const flip=code.slice(0,8)+(code[8]==='A'?'B':'A')+code.slice(9);
   assert.equal(A.P.readScore(flip),null,'a mangled code is refused'); assert.equal(A.P.readScore('not a code'),null); assert.equal(A.P.readScore(''),null);
   const odd=Object.assign({},best,{captain:'Cap~n <Jack>',ship:'Ñandú 🏴‍☠️'}),odd2=A.P.readScore(A.P.scoreCode(odd));
@@ -408,20 +422,34 @@ assert.equal(errors.length,0,String(errors));
   const svg=A.$('share-qr').querySelector('svg[role=img]');
   assert(svg&&/scans it with their phone camera/.test(svg.getAttribute('aria-label'))&&svg.querySelector('path').getAttribute('d').length>500,'with a labelled QR code');
   assert.equal(A.$('share-link').value,link,'and the link to copy'); assert(/Anne Bonny, the Revenge \(you\): /.test(A.$('share-score').textContent));
-  const q=A.v.PILLAGE_QR.encode(link); assert(q&&q.version<=7&&q.size===q.version*4+17,'the code fits version 7 or smaller');
+  const q=A.v.PILLAGE_QR.encode(link); assert(q&&q.version<=8&&q.size===q.version*4+17,'the code fits version 8 or smaller');
+  const big=Object.assign({},best,{captain:'Bartholomew Roberts III',ship:'the Royal Fortune, Nassau',xp:9999999,day:99999,gold:99999999,st:{sold:9999999,smoked:9999999,pillaged:9999999,sunk:9999999,dug:9999999,bricks:9999999,days:99999}});
+  A.P.openShare(big); const bigBack=A.P.readScore(A.$('share-link').value.split('?vs=')[1]);
+  assert(A.$('share-qr').querySelector('svg')&&bigBack&&bigBack.st.sold===9999999&&bigBack.xp===9999999,'even a record-breaking score gets a QR code, names shortened if need be');
+  A.$('share-done').click(); A.P.openShare(best);
+  const ss=A.$('share-stats'); assert(!ss.hidden&&/3 bales sold/.test(ss.textContent)&&/4 merchants plundered/.test(ss.textContent)&&/1 bale smoked/.test(ss.textContent)&&!/treasure/.test(ss.textContent)&&ss.querySelector('ul[aria-label]'),'the score card lists the tallies');
   A.$('share-done').click(); assert(!A.$('dlg-share').open);
   A.P.renderLog(); const lb=A.$('log-body').textContent;
   assert(/MJBizCon week board/.test(lb)&&/Anne Bonny, the Revenge \(you\)/.test(lb)&&A.$('log-body').querySelector('.board-share'),'the board is in the captain’s log');
+  assert.equal(A.$('log-body').querySelectorAll('.board .board-cat h4').length,B.stats.length,'with a breakout board for every tally');
+  assert(/Smuggler Supreme: Anne Bonny \(you\), 3 bales sold/.test(lb)&&/Nobody yet\. Dig up buried treasure\./.test(lb),'each with its leader and title, or how to get on it');
   assert.equal(A.errs.length,0,String(A.errs));
   // Ben scans her code on the floor: she lands on his board and the address bar is tidied
   const Bn=mk(link,show+3600e3); const tb=Bn.$('title-board');
   assert(!tb.hidden&&/Anne Bonny of the Revenge is on your MJBizCon week board/.test(tb.textContent)&&/Anne Bonny, the Revenge: /.test(tb.textContent),'a scanned score goes on the board');
   assert.equal(Bn.v.location.search,'','the code leaves the address bar'); assert.equal(Bn.P.legacy.rivals.length,1);
   assert(!tb.querySelector('.board-share')&&/Nobody|Set sail|Anne/.test(tb.textContent),'no score of his own to share yet');
+  const ah=[...tb.querySelectorAll('h4')].map(h=>h.textContent); assert(ah.length===B.stats.length+1&&/Overall/.test(ah[0])&&ah.includes('📦 Top Smugglers')&&ah.includes('💨 Most Smoked')&&ah.includes('⚓ Merchant Wreckers'),'the overall board and the breakout boards each have a heading');
+  const top=tb.querySelector('.board-list li'); assert(/Admiral of the Week/.test(top.textContent)&&/Smuggler Supreme/.test(top.textContent)&&top.querySelector('.crowns .sr-only')&&top.querySelector('.crowns [aria-hidden=true]'),'her line wears her titles');
+  assert(/Captain Cloud: Anne Bonny, 1 bale smoked/.test(tb.textContent)&&/Scourge of the Merchant Fleet: Anne Bonny, 4 merchants plundered/.test(tb.textContent)&&/Terror of the Brethren: Anne Bonny, 2 pirate ships sunk/.test(tb.textContent),'and she leads the boards she has tallies on');
+  const Bo=mk(B.url+'?vs='+v1,show+3600e3,{'pillageTheReefer.legacy':Bn.v.localStorage.getItem('pillageTheReefer.legacy')}),bt=Bo.$('title-board').textContent;
+  assert(Bo.P.legacy.rivals.length===2&&/Saltiest Dog: Old Salt, 4 days at sea/.test(bt)&&!/Smuggler Supreme: Old Salt/.test(bt),'an old code joins the board, and only the boards it can count');
+  assert.equal(Bo.errs.length,0,String(Bo.errs));
   assert.equal(JSON.parse(Bn.v.localStorage.getItem('pillageTheReefer.legacy')).rivals[0].captain,'Anne Bonny','and it is saved');
   const store={'pillageTheReefer.legacy':Bn.v.localStorage.getItem('pillageTheReefer.legacy')};
-  const worse=A.P.scoreCode(Object.assign({},best,{xp:10})),better=A.P.scoreCode(Object.assign({},best,{xp:best.xp+100}));
+  const worse=A.P.scoreCode(Object.assign({},best,{xp:10,st:Object.assign({},best.st,{sold:9})})),better=A.P.scoreCode(Object.assign({},best,{xp:best.xp+100}));
   let B2=mk(B.url+'?vs='+worse,show+7200e3,store); assert.equal(B2.P.legacy.rivals[0].xp,best.xp,'a lower score from the same player keeps the best one');
+  assert(B2.P.legacy.rivals[0].st.sold===9&&B2.P.legacy.rivals[0].st.smoked===1,'but each tally keeps its best');
   B2=mk(B.url+'?vs='+better,show+7200e3,store); assert.equal(B2.P.legacy.rivals[0].xp,best.xp+100,'a better one replaces it');
   assert.equal(B2.P.legacy.rivals.length,1,'one line per player');
   // your own code, an old code and the end of the week
@@ -434,8 +462,9 @@ assert.equal(errors.length,0,String(errors));
   assert(/final standings/.test(after.$('title-board').textContent)&&!after.$('title-board').querySelector('.board-share')&&/Anne Bonny/.test(after.$('title-board').textContent),'after the show the board is final');
   const gone=mk(B.url,Date.UTC(2027,0,2),store); assert(gone.$('title-board').hidden&&gone.$('how-board').hidden,'and in the new year it is gone');
   // a damaged record keeps only good lines
-  const junk=JSON.stringify({pid:'BAD!',rivals:[{pid:'abc123',captain:'Ok',ship:'Fine',xp:5,day:2,gold:3,t:show},{pid:'x',xp:5,t:1},{pid:'abc124',captain:'<b>',xp:-4,t:show},null]});
+  const junk=JSON.stringify({pid:'BAD!',rivals:[{pid:'abc123',captain:'Ok',ship:'Fine',xp:5,day:2,gold:3,t:show,st:{sold:'lots',smoked:-3,pillaged:7,hack:5}},{pid:'x',xp:5,t:1},{pid:'abc124',captain:'<b>',xp:-4,t:show},null]});
   const J=mk(B.url,show,{'pillageTheReefer.legacy':junk}); assert(J.P.legacy.rivals.length===1&&J.P.legacy.pid==='','damaged lines are dropped');
+  assert.deepEqual(Object.assign({},J.P.legacy.rivals[0].st),{pillaged:7,days:2},'and bad tallies with them');
   for(const X of [Bn,B2,own,after,gone,J]) assert.equal(X.errs.length,0,String(X.errs)); }
 console.log('pillage ok');
 process.exit(0);

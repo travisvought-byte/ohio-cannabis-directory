@@ -16,7 +16,7 @@
 <meta property="og:description" content="A silly little pirate game: sail the Caribbean, trade cannabis cargo, pillage merchant ships and hunt for the legendary Emerald Bale. Free, in your browser, adults 21+.">
 <meta property="og:url" content="https://the-reefer.com/pillage/">
 <meta property="og:image" content="https://the-reefer.com/assets/the-reefer/logo-share.jpg">
-<link rel="stylesheet" href="game.css?v=10">
+<link rel="stylesheet" href="game.css?v=11">
 <script src="/assets/analytics.js" defer></script>
 </head>
 <body>
@@ -99,7 +99,7 @@
       <li><b>Roll the die:</b> every risky choice rolls a twenty-sided die and shows the number you need, like 11 or more for a 50% chance. A natural 20 earns extra renown, doubles a shot and fills a boarding party's pockets. Each miss in a row gives you a second wind of +10% on your next roll, up to +30%.</li>
       <li><b>Real danger:</b> a ship sunk in battle ends the voyage. When a fight looks bad, run for it, pay the pirates off or strike your colours (pirates take your open hold and half your gold, a warship takes you in, and either way you sail on). If you'd rather not risk it, pick gentle seas when you start a voyage.</li>
       <li><b>Smoke a bale:</b> every strain gives its own short boost, like faster sails, sharper haggling, steadier aim or better luck. Smoke one from the market or your captain's log. It lasts about two days of sailing.</li>
-      <li id="how-board"><b>MJBizCon week board:</b> heading to MJBizCon in Las Vegas, December 1 to 4? Your best voyage until December 6 goes on the board on the title screen and in your captain's log. Tap <b>Show or send my score</b> and another player scans the QR code with their phone camera, or opens your link, to put you on their board. Then scan theirs.</li>
+      <li id="how-board"><b>MJBizCon week board:</b> heading to MJBizCon in Las Vegas, December 1 to 4? Your best voyage until December 6 goes on the board on the title screen and in your captain's log. Tap <b>Show or send my score</b> and another player scans the QR code with their phone camera, or opens your link, to put you on their board. Then scan theirs. Besides the overall board there are breakout boards for bales sold, bales smoked, merchants plundered, pirate ships sunk, treasure dug up, Brick Weed lobbed and days at sea, and whoever leads one takes its title, like Smuggler Supreme or Captain Cloud.</li>
       <li><b>Level up:</b> trading at a profit, winning fights, finishing requests, finding treasure and seeing new ports all earn renown. Each level gives a skill point for Fighting, Sailing or Charm. Shipwrights sell a bigger hold, a stouter hull, cannons, boarders, faster sails and a smuggler's hold.</li>
     </ul>
     <h3>Deeper waters</h3>
@@ -122,7 +122,7 @@
 
     <h2 id="fine-print">Fine print</h2>
     <p>This is a cartoon. Every captain and parrot in it is made up, and so are the strains you trade between ports. The strains you breed at the hideout are real, with their documented family trees simplified. The ports are real places borrowed for fun, and the charts are real too: every coastline, island and port sits where it really is, drawn at one scale for all five seas from <a href="https://www.naturalearthdata.com/">Natural Earth</a>'s public-domain map data. Nothing here is advice about real cannabis or real law. The nations, flags, wars and port histories are real, and the 📜 notes in taverns and bottles try to get them right. The weed isn't: in 1718 nobody in the Caribbean smoked cannabis. Hemp was grown for rope and sailcloth, and smoking it came well over a century later. It's meant for adults 21 and over. If you want the real rules where you live, <a href="/#map">check your state on The Reefer</a>.</p>
-    <p>Your voyage, hideout and hall of fame are saved in this browser only, on this device. Nothing about it is sent anywhere. When you show or send your score for the MJBizCon week board, the QR code and link carry only your captain's name, your ship's name and your score, and they go only to whoever you show or send them to. Like the rest of the site, this page counts visits and a few game milestones, like starting a voyage, with no cookies and nothing that identifies you. <a href="/privacy.html">Privacy</a></p>
+    <p>Your voyage, hideout and hall of fame are saved in this browser only, on this device. Nothing about it is sent anywhere. When you show or send your score for the MJBizCon week board, the QR code and link carry only your captain's name, your ship's name, your score and the tallies on the breakout boards, like bales sold, and they go only to whoever you show or send them to. Like the rest of the site, this page counts visits and a few game milestones, like starting a voyage, with no cookies and nothing that identifies you. <a href="/privacy.html">Privacy</a></p>
   </div></section>
 </main>
 
@@ -220,6 +220,7 @@
 <dialog id="dlg-share" class="dlg dlg-small dlg-share" aria-labelledby="share-title">
   <h2 id="share-title">Your score</h2>
   <p id="share-score" class="share-score"></p>
+  <div id="share-stats" class="share-stats-box" hidden></div>
   <div id="share-qr" class="qr"></div>
   <p class="hint">Another player points their phone camera at this code to put you on their board. Then scan theirs, and you're on each other's.</p>
   <div class="fields">
@@ -242,10 +243,10 @@
 </dialog>
 
 <script src="coasts.js?v=1"></script>
-<script src="data.js?v=12"></script>
+<script src="data.js?v=13"></script>
 <script src="qr.js?v=10"></script>
 <script src="engine.js?v=11"></script>
 <script src="events.js?v=10"></script>
-<script src="game.js?v=11"></script>
+<script src="game.js?v=12"></script>
 </body>
 </html>

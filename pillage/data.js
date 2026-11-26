@@ -528,7 +528,20 @@
   // Sunday, December 6 in Las Vegas and leaves the title screen at the new year.
   var BOARD = {name: 'MJBizCon week', open: Date.UTC(2026, 10, 26), close: Date.UTC(2026, 11, 7, 8), hide: Date.UTC(2027, 0, 1, 8), max: 30,
     url: 'https://the-reefer.com/pillage/',
-    blurb: 'For MJBizCon in Las Vegas, December 1 to 4. Show another player your score’s QR code, or send them the link, and you land on each other’s boards. Your best voyage until December 6 counts.'};
+    blurb: 'For MJBizCon in Las Vegas, December 1 to 4. Show another player your score’s QR code, or send them the link, and you land on each other’s boards. Your best voyage until December 6 counts.',
+    // Whoever tops the overall board.
+    top: 'Admiral of the Week',
+    // The breakout boards: one for each thing the game counts, and a title for whoever leads it. Each player's best
+    // from any voyage this week counts. Shared score codes carry these in this order, so only ever add to the end.
+    stats: [
+      {k: 'sold', icon: '📦', board: 'Top Smugglers', one: 'bale sold', many: 'bales sold', crown: 'Smuggler Supreme', how: 'Sell a bale in any market.'},
+      {k: 'smoked', icon: '💨', board: 'Most Smoked', one: 'bale smoked', many: 'bales smoked', crown: 'Captain Cloud', how: 'Light up a bale from your hold.'},
+      {k: 'pillaged', icon: '⚓', board: 'Merchant Wreckers', one: 'merchant plundered', many: 'merchants plundered', crown: 'Scourge of the Merchant Fleet', how: 'Plunder a merchant ship.'},
+      {k: 'sunk', icon: '💥', board: 'Pirate Hunters', one: 'pirate ship sunk', many: 'pirate ships sunk', crown: 'Terror of the Brethren', how: 'Sink a pirate ship.'},
+      {k: 'dug', icon: '💎', board: 'Treasure Hounds', one: 'treasure dug up', many: 'treasures dug up', crown: 'X Marks the Spot', how: 'Dig up buried treasure.'},
+      {k: 'bricks', icon: '🧱', board: 'Brick Lobbers', one: 'bale of Brick Weed lobbed', many: 'bales of Brick Weed lobbed', crown: 'Commodore of Bricks', how: 'Lob Brick Weed in a fight.'},
+      {k: 'days', icon: '🧭', board: 'Old Salts', one: 'day at sea', many: 'days at sea', crown: 'Saltiest Dog', how: 'Spend a day at sea.'}
+    ]};
 
   /* Real geography: every sea's coastline, crossings and sea lanes, and where each port, dig site and the hideout sit. */
   var C = window.PILLAGE_COASTS;

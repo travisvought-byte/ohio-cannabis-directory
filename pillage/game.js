@@ -19,6 +19,8 @@
   var GROW = D.GROW, GENES = D.GENES || {}, CROSSES = D.CROSSES || [];
   // The MJBizCon week board: scores swapped phone to phone by QR code or link. Nothing goes to a server.
   var BOARD = D.BOARD || null, QR = window.PILLAGE_QR || null;
+  // The breakout boards' stats. Set here, before the saved board is read, because reading it cleans each score's stats.
+  var STATS = BOARD && BOARD.stats ? BOARD.stats : [], STAT_KEYS = STATS.map(function (S) { return S.k; });
   function $(id) { return document.getElementById(id); }
 
   /* ---------- small helpers ---------- */
@@ -138,7 +140,7 @@
       flags: {}, docked: null, fog: {}, grit: 0, buff: null, seen: {},
       shot: 12, mk: {}, look: {captain: '', ship: 'the Lucky Leaf', sail: 'canvas', flag: 'skull'}, relics: {}, gentle: false, earned: 0, bricks: 0, atBase: false,
       rep: {britain: 0, spain: 0, france: 0, dutch: 0, brethren: 0}, marque: '', jobs: [], jobsTaken: {}, jobsDone: 0, bounties: 0, news: [], lastDay: 0,
-      salute: {}, seed: Math.floor(Math.random() * 1e9), food: 20, decoys: 0, fireship: 0, record: {}};
+      salute: {}, seed: Math.floor(Math.random() * 1e9), food: 20, decoys: 0, fireship: 0, record: {}, sold: 0, smoked: 0};
   }
   function curMap() { return MAPS[state.map]; }
   // Your ship and skills, plus whatever boost you've smoked.
@@ -203,6 +205,7 @@
     if (n <= 0) return null;
     state.gold += n * price;
     state.earned += n * price;
+    state.sold = (state.sold || 0) + n;
     return {n: n, gold: n * price, xp: Math.floor(Math.max(0, n * price - cost) / 20)};
   }
   function cargoValue() { var v = 0; for (var g in state.cargo) v += state.cargo[g] * GOODS[g].base; return v; }
@@ -274,6 +277,7 @@
     var S = SMOKE[g], had = boost();
     if (!S || !(state.cargo[g] > 0)) return false;
     takeCargo(g, 1);
+    state.smoked = (state.smoked || 0) + 1;
     state.buff = {g: g, until: Math.round(state.dist) + 900 * boostDays(S)};
     mendAcc = 0;
     sfx('pickup');
@@ -420,6 +424,9 @@
     b.shot = s.shot === undefined ? 12 : clamp(Math.floor(b.shot) || 0, 0, SHOT_MAX);
     b.earned = Math.max(0, Math.round(b.earned) || 0);
     b.bricks = Math.max(0, Math.floor(b.bricks) || 0);
+    // Bales sold and smoked are counted from November 26, 2026, for the breakout boards.
+    b.sold = Math.max(0, Math.floor(b.sold) || 0);
+    b.smoked = Math.max(0, Math.floor(b.smoked) || 0);
     if (typeof b.mk !== 'object' || Array.isArray(b.mk)) b.mk = {};
     for (var mp in b.mk) { var M = b.mk[mp]; if (!PORTS[mp] || !M || typeof M.st !== 'object' || typeof M.b !== 'object' || typeof M.s !== 'object') delete b.mk[mp]; }
     var L = b.look;
@@ -3221,7 +3228,7 @@
   function addFame(s, how, by) {
     if (!s || !(s.dist > 0 || s.xp > 25)) return;
     legacy.fame.push({captain: s.look.captain || 'A nameless captain', ship: s.look.ship || 'the Lucky Leaf', lvl: E.levelOf(s.xp), xp: Math.round(s.xp) || 0,
-      day: E.dayOf(s.dist), gold: Math.round(s.gold) || 0, how: how, by: String(by || '').slice(0, 90), gentle: !!s.gentle, at: Date.now()});
+      day: E.dayOf(s.dist), gold: Math.round(s.gold) || 0, how: how, by: String(by || '').slice(0, 90), gentle: !!s.gentle, at: Date.now(), st: voyageStats(s)});
     legacy.fame.sort(function (a, b) { return (b.xp || 0) - (a.xp || 0); });
     legacy.fame = legacy.fame.slice(0, 8);
     saveLegacy();
@@ -3255,13 +3262,27 @@
     }
     return legacy.pid;
   }
+  // What a voyage has done, for the breakout boards. Days at sea count whole days, as the log shows them.
+  function voyageStats(s) {
+    var st = {};
+    STAT_KEYS.forEach(function (k) { st[k] = k === 'days' ? E.dayOf(s.dist) : Math.max(0, Math.floor(s[k]) || 0); });
+    return st;
+  }
   // A score from a link, or one saved on this device: names cleaned, numbers in range, or nothing at all.
+  // Stats a code doesn't carry (codes made before the breakout boards) stay unknown, so those players sit out those boards.
   function cleanEntry(r) {
     if (!r || typeof r !== 'object' || typeof r.pid !== 'string' || !/^[a-z0-9]{6}$/.test(r.pid)) return null;
     var xp = Math.floor(+r.xp), at = Math.floor(+r.t);
     if (!(xp >= 0 && xp <= 9999999) || !(at > 0)) return null;
+    var day = clamp(Math.floor(+r.day) || 1, 1, 99999), src = r.st && typeof r.st === 'object' ? r.st : {}, st = {};
+    STAT_KEYS.forEach(function (k) {
+      if (src[k] === undefined || src[k] === null || src[k] === '') return;
+      var v = Math.floor(+src[k]);
+      if (v >= 0 && v <= 9999999) st[k] = v;
+    });
+    if (STAT_KEYS.indexOf('days') >= 0 && !(st.days >= day)) st.days = day;
     return {pid: r.pid, captain: cleanName(r.captain, 'A nameless captain'), ship: cleanName(r.ship, 'the Lucky Leaf'), xp: xp,
-      day: clamp(Math.floor(+r.day) || 1, 1, 99999), gold: clamp(Math.floor(+r.gold) || 0, 0, 99999999), gentle: !!r.gentle, t: at};
+      day: day, gold: clamp(Math.floor(+r.gold) || 0, 0, 99999999), gentle: !!r.gentle, t: at, st: st};
   }
   // A light seal on each code: it catches a typo or a mangled link, not a determined cheat.
   function seal(s) {
@@ -3276,43 +3297,66 @@
     while (s.length % 4) s += '=';
     return decodeURIComponent(escape(atob(s)));
   }
+  // Version 2 codes add the breakout stats, in the order BOARD.stats lists them. Version 1 codes (from before) still read.
   function scoreCode(e) {
-    var body = ['1', e.pid, e.captain.replace(/~/g, '-'), e.ship.replace(/~/g, '-'), e.xp, e.day, e.gold, e.gentle ? 1 : 0, Math.floor(e.t / 60000).toString(36)].join('~');
+    var st = e.st || {}, packed = STAT_KEYS.map(function (k) { return st[k] >= 0 ? Math.floor(st[k]).toString(36) : ''; }).join('.');
+    var body = ['2', e.pid, e.captain.replace(/~/g, '-'), e.ship.replace(/~/g, '-'), e.xp, e.day, e.gold, e.gentle ? 1 : 0, Math.floor(e.t / 60000).toString(36), packed].join('~');
     return toB64(body + '~' + seal(body));
   }
   function readScore(code) {
     try {
-      var p = fromB64(code).split('~');
-      if (p.length !== 10 || p[0] !== '1' || p[9] !== seal(p.slice(0, 9).join('~'))) return null;
-      return cleanEntry({pid: p[1], captain: p[2], ship: p[3], xp: p[4], day: p[5], gold: p[6], gentle: p[7] === '1', t: parseInt(p[8], 36) * 60000});
+      var p = fromB64(code).split('~'), st = {};
+      if (p[0] === '1') { if (p.length !== 10 || p[9] !== seal(p.slice(0, 9).join('~'))) return null; }
+      else if (p[0] === '2') {
+        if (p.length !== 11 || p[10] !== seal(p.slice(0, 10).join('~'))) return null;
+        p[9].split('.').forEach(function (v, i) { if (STAT_KEYS[i] && /^[0-9a-z]+$/.test(v)) st[STAT_KEYS[i]] = parseInt(v, 36); });
+      } else return null;
+      return cleanEntry({pid: p[1], captain: p[2], ship: p[3], xp: p[4], day: p[5], gold: p[6], gentle: p[7] === '1', t: parseInt(p[8], 36) * 60000, st: st});
     } catch (e) { return null; }
   }
   function scoreLink(e) { return BOARD.url + '?vs=' + scoreCode(e); }
+  // The higher of each stat in two records.
+  function mergeStats(a, b) {
+    var st = {};
+    [a || {}, b || {}].forEach(function (x) { for (var k in x) if (STAT_KEYS.indexOf(k) >= 0 && x[k] >= 0 && !(st[k] >= x[k])) st[k] = x[k]; });
+    return st;
+  }
   // Your best voyage this week: a finished one from the hall of fame, or the one you're sailing now.
+  // Each breakout stat is your best from any voyage this week.
   function myBest() {
-    var best = null, live = null;
+    var best = null, live = null, top = {};
     legacy.fame.forEach(function (f) {
-      if (f.at && inWeek(f.at) && (!best || (f.xp || 0) > best.xp)) best = {captain: f.captain, ship: f.ship, xp: f.xp || 0, day: f.day, gold: f.gold, gentle: f.gentle, t: f.at};
+      if (!(f.at && inWeek(f.at))) return;
+      top = mergeStats(top, f.st || {days: f.day});
+      if (!best || (f.xp || 0) > best.xp) best = {captain: f.captain, ship: f.ship, xp: f.xp || 0, day: f.day, gold: f.gold, gentle: f.gentle, t: f.at};
     });
     if (boardOpen()) {
       if ($('title-screen').hidden) live = state;
       else { var sv = loadSaved(); if (sv) { try { live = fromSave(sv); } catch (e) { live = null; } } }
     }
-    if (live && (live.dist > 0 || live.xp > 25) && (!best || live.xp >= best.xp)) {
-      best = {captain: live.look.captain || 'A nameless captain', ship: live.look.ship || 'the Lucky Leaf', xp: Math.round(live.xp) || 0,
-        day: E.dayOf(live.dist), gold: Math.round(live.gold) || 0, gentle: !!live.gentle, t: Date.now()};
+    if (live && (live.dist > 0 || live.xp > 25)) {
+      top = mergeStats(top, voyageStats(live));
+      if (!best || live.xp >= best.xp) {
+        best = {captain: live.look.captain || 'A nameless captain', ship: live.look.ship || 'the Lucky Leaf', xp: Math.round(live.xp) || 0,
+          day: E.dayOf(live.dist), gold: Math.round(live.gold) || 0, gentle: !!live.gentle, t: Date.now()};
+      }
     }
     if (!best) return null;
     best.pid = playerId();
+    best.st = top;
     best = cleanEntry(best);
     best.me = true;
     return best;
   }
+  // One line per player: the better overall score, and the best of each stat from every code they've shown you.
   function addRival(r) {
     var old = null;
     legacy.rivals.forEach(function (x) { if (x.pid === r.pid) old = x; });
-    if (old) { if (r.xp > old.xp || (r.xp === old.xp && r.t > old.t)) legacy.rivals[legacy.rivals.indexOf(old)] = r; }
-    else legacy.rivals.push(r);
+    if (old) {
+      var keep = r.xp > old.xp || (r.xp === old.xp && r.t > old.t) ? r : old;
+      keep.st = mergeStats(old.st, r.st);
+      legacy.rivals[legacy.rivals.indexOf(old)] = keep;
+    } else legacy.rivals.push(r);
     legacy.rivals.sort(function (a, b) { return b.xp - a.xp; });
     legacy.rivals = legacy.rivals.slice(0, BOARD.max);
     saveLegacy();
@@ -3337,23 +3381,85 @@
   function boardLine(r) {
     return r.captain + ', ' + r.ship + (r.me ? ' (you)' : '') + ': ' + fmt(r.xp) + ' renown, level ' + E.levelOf(r.xp) + ', day ' + r.day + (r.gentle ? ' (gentle seas)' : '') + '.';
   }
+  function statWords(S, n) { return fmt(n) + ' ' + plural(n, S.one, S.many); }
+  // A breakout board: everyone with that stat, best first; ties go to whoever got there first.
+  function statRows(rows, k) {
+    return rows.filter(function (r) { return r.st && r.st[k] > 0; })
+      .sort(function (a, b) { return b.st[k] - a.st[k] || (a.me ? -1 : b.me ? 1 : a.t - b.t); });
+  }
+  // The titles each player holds: one for the top of the overall board, one for the top of each breakout board.
+  function crownsOf(rows) {
+    var crowns = {};
+    function give(r, t) { (crowns[r.pid] = crowns[r.pid] || []).push(t); }
+    if (rows.length && rows[0].xp > 0) give(rows[0], BOARD.top);
+    STATS.forEach(function (S) { var lead = statRows(rows, S.k)[0]; if (lead) give(lead, S.crown); });
+    return crowns;
+  }
+  function crownTag(titles) {
+    var c = el('span', {class: 'crowns'});
+    c.appendChild(el('span', {'aria-hidden': 'true'}, ' 👑 '));
+    c.appendChild(el('span', {class: 'sr-only'}, ' ' + plural(titles.length, 'Title', 'Titles') + ': '));
+    c.appendChild(document.createTextNode(titles.join(' · ')));
+    return c;
+  }
   function boardBox(max) {
     var open = boardOpen(), me = myBest(), rows = legacy.rivals.filter(function (r) { return inWeek(r.t); });
     if (me) rows.push(me);
     rows.sort(function (a, b) { return b.xp - a.xp || (a.me ? -1 : b.me ? 1 : a.t - b.t); });
+    var crowns = crownsOf(rows), few = max <= 5 ? 1 : 5;
     var box = el('div', {class: 'board'}), h = el('h3');
     h.appendChild(el('span', {'aria-hidden': 'true'}, '🏆 '));
     h.appendChild(document.createTextNode(BOARD.name + ' board' + (open ? '' : ': final standings')));
     box.appendChild(h);
     if (boardMsg) box.appendChild(el('p', {class: 'win', role: 'status'}, boardMsg));
     box.appendChild(el('p', {class: 'hint'}, open ? BOARD.blurb : 'The board closed at the end of show week. Thanks for sailing.'));
+    var oh = el('h4');
+    oh.appendChild(el('span', {'aria-hidden': 'true'}, '⭐ '));
+    oh.appendChild(document.createTextNode('Overall: most renown'));
+    box.appendChild(oh);
     if (rows.length) {
       var ol = el('ol', {class: 'fame board-list'}), mine = rows.indexOf(me);
-      rows.slice(0, max).forEach(function (r) { ol.appendChild(el('li', {class: r.me ? 'me' : null}, boardLine(r))); });
-      if (mine >= max) ol.appendChild(el('li', {class: 'me', value: mine + 1}, boardLine(me)));
+      var line = function (r, at) {
+        var li = el('li', {class: r.me ? 'me' : null, value: at}, boardLine(r));
+        if (crowns[r.pid]) li.appendChild(crownTag(crowns[r.pid]));
+        return li;
+      };
+      rows.slice(0, max).forEach(function (r) { ol.appendChild(line(r)); });
+      if (mine >= max) ol.appendChild(line(me, mine + 1));
       box.appendChild(ol);
       if (rows.length > max && mine < max) box.appendChild(el('p', {class: 'hint'}, (rows.length - max) + ' more in your captain’s log.'));
     } else box.appendChild(el('p', null, 'Nobody on it yet. Set sail and you will be.'));
+    // The breakout boards, each with its own leader and title.
+    if (STATS.length) {
+      box.appendChild(el('p', {class: 'hint board-cats-intro'}, STATS.length + ' breakout boards. Lead one and its title is yours.' + (max <= 5 ? ' The full boards are in your captain’s log.' : '')));
+      var grid = el('div', {class: 'board-cats'});
+      STATS.forEach(function (S) {
+        var card = el('div', {class: 'board-cat'}), ch = el('h4'), sr = statRows(rows, S.k), at = sr.indexOf(me);
+        ch.appendChild(el('span', {'aria-hidden': 'true'}, S.icon + ' '));
+        ch.appendChild(document.createTextNode(S.board));
+        card.appendChild(ch);
+        if (!sr.length) card.appendChild(el('p', {class: 'hint'}, 'Nobody yet. ' + S.how));
+        else {
+          var co = el('ol', {class: 'board-mini'});
+          var put = function (r, i) {
+            var li = el('li', {class: r.me ? 'me' : null, value: i ? i : null});
+            if (r === sr[0]) {
+              var cr = el('span', {class: 'crown'});
+              cr.appendChild(el('span', {'aria-hidden': 'true'}, '👑 '));
+              cr.appendChild(document.createTextNode(S.crown + ': '));
+              li.appendChild(cr);
+            }
+            li.appendChild(document.createTextNode(r.captain + (r.me ? ' (you)' : '') + ', ' + statWords(S, r.st[S.k])));
+            return li;
+          };
+          sr.slice(0, few).forEach(function (r) { co.appendChild(put(r)); });
+          if (at >= few) co.appendChild(put(me, at + 1));
+          card.appendChild(co);
+        }
+        grid.appendChild(card);
+      });
+      box.appendChild(grid);
+    }
     if (open && me) {
       var b = el('button', {type: 'button', class: 'secondary board-share', 'data-key': 'share'});
       b.appendChild(el('span', {'aria-hidden': 'true'}, '📲 '));
@@ -3363,9 +3469,24 @@
     }
     return box;
   }
+  // The score card's list of what you've done this week, for the player you're showing it to.
+  function statList(e) {
+    var ul = el('ul', {class: 'share-stats', 'aria-label': 'Your tallies this week'});
+    STATS.forEach(function (S) {
+      var n = e.st && e.st[S.k];
+      if (!(n > 0)) return;
+      var li = el('li');
+      li.appendChild(el('span', {'aria-hidden': 'true'}, S.icon + ' '));
+      li.appendChild(document.createTextNode(statWords(S, n)));
+      ul.appendChild(li);
+    });
+    return ul;
+  }
   function openShare(e) {
     var url = scoreLink(e), qbox = $('share-qr'), label = 'QR code for your score. Another player scans it with their phone camera to put you on their board.';
     $('share-score').textContent = boardLine(e);
+    var sl = $('share-stats');
+    if (sl) { sl.textContent = ''; var ul = statList(e); if (ul.children.length) sl.appendChild(ul); sl.hidden = !ul.children.length; }
     qbox.textContent = '';
     var q = QR && QR.svg(url, label);
     if (QR && !q) {
