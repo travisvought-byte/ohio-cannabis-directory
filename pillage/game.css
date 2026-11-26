@@ -224,3 +224,7 @@ button:disabled{opacity:.5}
 .history{background:var(--paper);border-left:4px solid var(--paperline);border-radius:8px;padding:8px 12px;font-size:.95rem}
 .checks.powers .fl{margin-top:.35em;align-self:flex-start}
 @media (forced-colors:active){.fl{forced-color-adjust:none}}
+/* The grow: the breeder's notebook folds away under the beds. */
+.notebook{margin:.8em 0;border:2px solid var(--line);border-radius:12px;background:var(--card);padding:6px 12px}
+.notebook summary{cursor:pointer;font-weight:700;padding:10px 0}
+.notebook .checks li{margin:.4em 0}

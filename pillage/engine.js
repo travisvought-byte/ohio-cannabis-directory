@@ -294,6 +294,7 @@
     if (G.home === pid) m = 0.5;
     else if (p.sells.indexOf(g) >= 0) m = 0.8;
     else if (G.rare) m = 0.95 + 0.3 * rand01('r' + pid + g);
+    else if (G.kind === 'grown') m = 1 + 0.3 * rand01('g' + pid + g);
     else if (wanted(pid, g)) m = 1.3 + 0.12 * rand01('w' + pid + g);
     else {
       m = 0.95 + 0.35 * rand01('d' + pid + g);

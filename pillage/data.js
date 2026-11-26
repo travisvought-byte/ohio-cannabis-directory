@@ -25,6 +25,15 @@
       note: 'Golden and glassy, squeezed by hand. Pricey, and its price jumps about from day to day. Prized in Nassau, St. Augustine and Veracruz.'},
     biscuits:  {name: "Cook's Biscuits", icon: '🍪', base: 34, home: 'nassau', kind: 'product', swing: 0.2, wants: ['tortuga', 'portobelo', 'barbados'],
       note: 'Baked by a very relaxed cook. Cheap and steady. Prized in Tortuga, Portobelo and Barbados.'},
+    // Grown in your own beds at the hideout (see GENES below). Any market buys them; none sells them.
+    g_home:  {name: 'Homegrown', icon: '🌿', base: 22, kind: 'grown', note: 'Leafy, seedy and honest. What comes up in your beds before you’ve bred anything worth naming.'},
+    g_nl:    {name: 'Northern Lights', icon: '🌌', base: 64, kind: 'grown', note: 'Bred in your own beds from Afghani and Thai. Short, dense and famously sleepy.'},
+    g_skunk: {name: 'Skunk #1', icon: '🦨', base: 66, kind: 'grown', note: 'Bred in your own beds from Afghani, Colombian Gold and Acapulco Gold. You can smell it from the next island.'},
+    g_haze:  {name: 'Original Haze', icon: '🌁', base: 80, kind: 'grown', note: 'Bred in your own beds from four landraces. Tall, slow to finish and very, very up.'},
+    g_ak47:  {name: 'AK-47', icon: '🎯', base: 84, kind: 'grown', note: 'Bred in your own beds from Colombian, Mexican, Thai and Afghani. Quick to finish for something so tall.'},
+    g_shiva: {name: 'Shiva Skunk', icon: '🔱', base: 78, kind: 'grown', note: 'Bred in your own beds from Northern Lights and Skunk #1. Heavy, musky and calm.'},
+    g_ssh:   {name: 'Super Silver Haze', icon: '🥈', base: 100, kind: 'grown', note: 'Bred in your own beds from Skunk, Northern Lights and Haze. Frosty, bright and in demand everywhere.'},
+    g_jack:  {name: 'Jack Herer', icon: '📗', base: 112, kind: 'grown', note: 'Bred in your own beds from Haze, Northern Lights and Shiva Skunk. The prize of any breeder’s notebook.'},
     // Brick Weed: cheap pressed schwag, sold almost everywhere. Not worth much, but you can load it in a cannon.
     brick:     {name: 'Brick Weed', icon: '🟫', base: 12, home: 'nassau', kind: 'brick', swing: 0.2,
       note: 'Pressed brown brick, seeds, stems and all. Nobody smokes it on purpose, but it burns like a bonfire and fits a cannon nicely.'}
@@ -492,6 +501,14 @@
     rosin:     {name: 'Golden Glow', charm: 2, sell: 0.05, does: '+2 Charm and +5% on everything you sell.', flavor: 'You glow. Literally, a little. It’s fine.'},
     pearl:     {name: 'Dread Calm', fight: 3, luck: 0.05, does: '+3 Fighting and +5% on every odds check.', flavor: 'Dark, heavy and very quiet. You could stare down a hurricane.'},
     brick:     {name: 'Rough Night', fight: 1, does: '+1 Fighting. It isn’t pleasant, but it’s cheap.', flavor: 'Everyone coughs for ten minutes and then wants to fight a seagull.'},
+    g_home:    {name: 'Garden Variety', charm: 1, does: '+1 Charm.', flavor: 'It tastes like a hillside. Everyone tells you how proud they are of you.'},
+    g_nl:      {name: 'Lights Out', mend: 1, calm: 1, does: 'Pirates leave you be, and your sleepy crew patches 1 hull point for every league you sail.', flavor: 'Half the crew is asleep in the rigging. The other half is smiling at the stars.'},
+    g_skunk:   {name: 'Skunk Cloud', fight: 2, sail: 1, does: '+2 Fighting and +1 Sailing.', flavor: 'The smell alone makes an enemy crew think twice.'},
+    g_haze:    {name: 'Long Haze', sail: 2, sight: 1.6, does: '+2 Sailing, and you see much farther, so the fog lifts faster.', flavor: 'Every thought takes the scenic route, and the scenery is lovely.'},
+    g_ak47:    {name: 'Quick Draw', fight: 2, luck: 0.05, does: '+2 Fighting and +5% on every odds check.', flavor: 'Sharp, fast and a little bit loud.'},
+    g_shiva:   {name: 'Many Arms', fight: 3, does: '+3 Fighting.', flavor: 'Heavy and calm. You feel like you could hold a cutlass in every hand.'},
+    g_ssh:     {name: 'Silver Tongue', charm: 3, sell: 0.05, does: '+3 Charm and +5% on everything you sell.', flavor: 'Everything you say comes out sounding clever. Some of it even is.'},
+    g_jack:    {name: 'The Emperor’s Clothes', sail: 1, charm: 1, fight: 1, luck: 0.1, does: '+1 Fighting, Sailing and Charm, and +10% on every odds check.', flavor: 'Clear-headed, bright and ready for anything.'},
     biscuits:  {name: 'Slow Burn', sail: 1, charm: 1, fight: 1, days: 4, verb: 'eat', does: '+1 Fighting, Sailing and Charm, and it lasts twice as long.', flavor: 'Nothing happens for an hour. Then everything is lovely for days.'}
   };
 
@@ -621,11 +638,48 @@
   var FIRE_PORTS = ['nassau', 'tortuga', 'petitgoave', 'portroyal'];
   var FIRESHIP_NOTE = 'In 1669 three Spanish warships trapped Henry Morgan inside Lake Maracaibo. He disguised a captured ship as a warship, packed her with tar, powder and brimstone, and sent her into the Spanish flagship Magdalena, which burned. Her few crew got clear just before she struck, and Morgan’s fleet slipped out to sea.';
 
+  /* The grow: two beds above the hideout. Landrace seeds come from three tavern seed traders; crosses are real,
+     documented breeding lines (simplified to one pair at a time). Seeds you buy or breed stay in the seed chest for good. */
+  var GROW = {days: 6, yield: 6, beds: 2, price: 120, xp: 60};
+  var GENES = {
+    afghani:  {name: 'Afghani', kind: 'landrace', from: 'willemstad', note: 'A landrace from the Hindu Kush mountains: short, broad-leafed, sticky with resin and quick to flower.'},
+    thai:     {name: 'Thai', kind: 'landrace', from: 'willemstad', note: 'A landrace from Thailand: tall, narrow-leafed and slow, with a bright, racy high.'},
+    sindian:  {name: 'South Indian', kind: 'landrace', from: 'willemstad', note: 'A landrace from southern India: tall and slow to finish, grown there for centuries.'},
+    colgold:  {name: 'Colombian Gold', kind: 'landrace', from: 'cartagena', note: 'A landrace from Colombia’s Santa Marta mountains: tall, golden and strong.'},
+    acapulco: {name: 'Acapulco Gold', kind: 'landrace', from: 'veracruz', note: 'A landrace from Mexico’s Pacific coast: tall, gold-tinged and famous by name.'},
+    x_afcol:  {name: 'Afghani × Colombian Gold', kind: 'cross', note: 'Halfway to Skunk #1. Cross it with Acapulco Gold.'},
+    x_mexcol: {name: 'Acapulco Gold × Colombian Gold', kind: 'cross', note: 'The start of both Haze and AK-47.'},
+    x_mcsi:   {name: 'Mexican × Colombian × South Indian', kind: 'cross', note: 'One step from Haze. Cross it with Thai.'},
+    x_mct:    {name: 'Colombian × Mexican × Thai', kind: 'cross', note: 'One step from AK-47. Cross it with Afghani.'},
+    x_hznl:   {name: 'Haze × Northern Lights', kind: 'cross', note: 'One step from Jack Herer. Cross it with Shiva Skunk.'},
+    nl:       {name: 'Northern Lights', kind: 'strain', good: 'g_nl', note: 'Usually described as Afghani × Thai. It came out of the US Pacific Northwest in the 1970s and was made famous by a Dutch seed bank in the 1980s.'},
+    skunk1:   {name: 'Skunk #1', kind: 'strain', good: 'g_skunk', note: 'Afghani × Colombian Gold, crossed again with Acapulco Gold, in 1970s California. It won the first High Times Cannabis Cup in 1988 and sits in the family tree of countless modern strains.'},
+    haze:     {name: 'Original Haze', kind: 'strain', good: 'g_haze', note: 'Bred in Santa Cruz, California, in the 1970s from Mexican, Colombian, South Indian and Thai landraces. The exact recipe is part legend.'},
+    ak47:     {name: 'AK-47', kind: 'strain', good: 'g_ak47', note: 'Released by Serious Seeds in 1992 from Colombian, Mexican, Thai and Afghani genetics. The breeder never published the order of the crosses.'},
+    shiva:    {name: 'Shiva Skunk', kind: 'strain', good: 'g_shiva', note: 'Northern Lights #5 × Skunk #1, first sold in 1987 and renamed Shiva Skunk a few years later.'},
+    ssh:      {name: 'Super Silver Haze', kind: 'strain', good: 'g_ssh', note: 'Skunk, Northern Lights and Haze. It won the High Times Cannabis Cup three years running, 1997 to 1999.'},
+    jack:     {name: 'Jack Herer', kind: 'strain', good: 'g_jack', note: 'Sensi Seeds keeps the recipe secret, but growers believe it’s Haze, Northern Lights #5 and Shiva Skunk. It’s named after the hemp activist who wrote The Emperor Wears No Clothes (1985).'}
+  };
+  // Each pair, in either order, and what its seeds grow into.
+  var CROSSES = [
+    ['afghani', 'thai', 'nl'], ['afghani', 'colgold', 'x_afcol'], ['x_afcol', 'acapulco', 'skunk1'],
+    ['acapulco', 'colgold', 'x_mexcol'], ['x_mexcol', 'sindian', 'x_mcsi'], ['x_mcsi', 'thai', 'haze'],
+    ['x_mexcol', 'thai', 'x_mct'], ['x_mct', 'afghani', 'ak47'],
+    ['nl', 'skunk1', 'shiva'], ['shiva', 'haze', 'ssh'], ['haze', 'nl', 'x_hznl'], ['x_hznl', 'shiva', 'jack']
+  ];
+  var GROW_LESSONS = [
+    'A landrace is a local variety that adapted to one place over many generations of farmers saving their own seed.',
+    'Crossing two plants mixes their genes. Real breeders grow out hundreds of seedlings, keep the best and cross again for years before a strain grows true.',
+    'Afghani-type plants grow short and finish fast. Thai, Colombian and Mexican types grow tall and take far longer. Most famous hybrids mix the two.',
+    'The labels indica and sativa describe how a plant grows. Lab tests show they say much less about how it feels.'
+  ];
+
   window.PILLAGE_DATA = {GOODS: GOODS, COMMON: COMMON, MAPS: MAPS, PORTS: PORTS, STASHES: STASHES, PEOPLE: PEOPLE,
     QUESTS: QUESTS, UPGRADES: UPGRADES, LEVELS: LEVELS, SKILLS: SKILLS, SKILL_MAX: SKILL_MAX, SEA_TIER: SEA_TIER,
     PIRATE_COUNT: PIRATE_COUNT, PIRATE_SHIPS: PIRATE_SHIPS, PIRATE_CAPTAINS: PIRATE_CAPTAINS, BOSS: BOSS,
     CUSTOMS_NAMES: CUSTOMS_NAMES, MERCHANT_NAMES: MERCHANT_NAMES, BOTTLE_TIPS: BOTTLE_TIPS, SMOKE: SMOKE, PARROT: PARROT,
     SHIP_CLASS: SHIP_CLASS, HIDEOUT: HIDEOUT, RELICS: RELICS, SAILS: SAILS, FLAGS: FLAGS,
     NATIONS: NATIONS, NATION_ORDER: NATION_ORDER, WAR: WAR, WAR_NOTE: WAR_NOTE, SEA_LAW: SEA_LAW, SEA_NAVY: SEA_NAVY, SEA_TRADE: SEA_TRADE,
-    NAVY_CLASS: NAVY_CLASS, STAND: STAND, JOB_CARGO: JOB_CARGO, NEWS: NEWS, UNLOCK: UNLOCK, FIRE_PORTS: FIRE_PORTS, FIRESHIP_NOTE: FIRESHIP_NOTE};
+    NAVY_CLASS: NAVY_CLASS, STAND: STAND, JOB_CARGO: JOB_CARGO, NEWS: NEWS, UNLOCK: UNLOCK, FIRE_PORTS: FIRE_PORTS, FIRESHIP_NOTE: FIRESHIP_NOTE,
+    GROW: GROW, GENES: GENES, CROSSES: CROSSES, GROW_LESSONS: GROW_LESSONS};
 })();
