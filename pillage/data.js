@@ -463,7 +463,7 @@
     mermaid:   {name: 'Swims Like a Fish', speed: 0.25, does: 'Your ship sails 25% faster.', flavor: 'Salt spray, sweet air and a sudden urge to sing.'},
     hash:      {name: 'Iron Nerves', fight: 2, luck: 0.05, does: '+2 Fighting and +5% on every odds check.', flavor: 'Heavy, slow and steady. Nothing rattles you.'},
     rosin:     {name: 'Golden Glow', charm: 2, sell: 0.05, does: '+2 Charm and +5% on everything you sell.', flavor: 'You glow. Literally, a little. It’s fine.'},
-    biscuits:  {name: 'Slow Burn', sail: 1, charm: 1, fight: 1, days: 4, verb: 'eat', does: '+1 Fighting, Sailing and Charm, for four days instead of two.', flavor: 'Nothing happens for an hour. Then everything is lovely for days.'}
+    biscuits:  {name: 'Slow Burn', sail: 1, charm: 1, fight: 1, days: 4, verb: 'eat', does: '+1 Fighting, Sailing and Charm, and it lasts twice as long.', flavor: 'Nothing happens for an hour. Then everything is lovely for days.'}
   };
 
   var PARROT = 'Admiral Biscuit';
