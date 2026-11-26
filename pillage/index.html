@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Pillage the Reefer: a silly little pirate game | The Reefer</title>
+<meta name="description" content="Sail a cartoon Caribbean from Tortuga to Cartagena, trade bales of pirate cannabis, pillage fat merchant ships, chat with odd characters and dig up a legendary lost crop. A free browser game for adults 21 and over.">
+<link rel="canonical" href="https://the-reefer.com/pillage/">
+<meta name="theme-color" content="#1d4a37">
+<link rel="icon" type="image/png" href="/assets/the-reefer/favicon-64.png">
+<link rel="apple-touch-icon" href="/assets/the-reefer/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Reefer">
+<meta property="og:title" content="Pillage the Reefer">
+<meta property="og:description" content="A silly little pirate game: sail the Caribbean, trade cannabis cargo, pillage merchant ships and hunt for the legendary Emerald Bale. Free, in your browser, adults 21+.">
+<meta property="og:url" content="https://the-reefer.com/pillage/">
+<meta property="og:image" content="https://the-reefer.com/assets/the-reefer/logo-share.jpg">
+<link rel="stylesheet" href="game.css">
+<script src="/assets/analytics.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#game">Skip to the game</a>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/"><img src="/assets/the-reefer/mark-96.png" alt="" width="36" height="36"><span>The Reefer</span></a>
+  <nav aria-label="On this page"><a href="#game">Play</a><a href="#how">How to play</a><a href="#fine-print">Fine print</a><a href="/">Back to The Reefer</a></nav>
+</div></header>
+
+<main id="main">
+  <section class="intro" aria-labelledby="title"><div class="wrap">
+    <p class="kicker">A silly little game from The Reefer · Adults 21+</p>
+    <h1 id="title">Pillage the Reefer</h1>
+    <p>Captain a leaky sloop across a cartoon Caribbean. Buy bales cheap where they grow, sell them dear where they don't, pillage the odd fat merchant ship, dodge Crown Customs and chat with the strange folk of Tortuga, Havana, Cartagena and beyond. Somewhere out there, a retired captain buried the finest crop that ever sailed.</p>
+  </div></section>
+
+  <section id="game" class="game" aria-label="The game" tabindex="-1"><div class="wrap">
+    <div class="stage">
+      <canvas id="sea" tabindex="0" role="application" aria-roledescription="sea" aria-label="The sea, seen from above. Use the arrow keys or W A S D to steer, Enter to dock, talk or dig, M for the sea chart and L for the captain's log. You can also tap or click anywhere on the sea to sail there." aria-describedby="where"></canvas>
+
+      <ul id="hud" class="hud" hidden>
+        <li title="Doubloons"><span aria-hidden="true">🪙</span><span class="sr-only">Doubloons:</span> <b id="h-gold">0</b></li>
+        <li title="Bales in your hold"><span aria-hidden="true">📦</span><span class="sr-only">Hold:</span> <b id="h-hold">0/20</b></li>
+        <li title="Day of your voyage"><span aria-hidden="true">📅</span> Day <b id="h-day">1</b></li>
+        <li class="hud-rank" title="Your rank"><span aria-hidden="true">🎖️</span><span class="sr-only">Rank:</span> <b id="h-rank">Deckhand</b></li>
+        <li class="hud-sea" title="The sea you're in"><span aria-hidden="true">🌊</span><span class="sr-only">Sea:</span> <b id="h-sea">Windward</b></li>
+      </ul>
+
+      <div id="toast" class="toast" aria-hidden="true"></div>
+      <button id="action" class="action" type="button" hidden></button>
+
+      <div id="title-screen" class="title-screen">
+        <div class="title-card">
+          <p class="flag" aria-hidden="true">🏴‍☠️</p>
+          <h2>Pillage the Reefer</h2>
+          <p class="tagline">Three seas. Eight ports. One very opinionated parrot.</p>
+          <div class="title-buttons">
+            <button id="btn-continue" type="button" class="primary" hidden>Continue your voyage</button>
+            <p id="continue-note" class="continue-note"></p>
+            <button id="btn-new" type="button" class="primary">Set sail</button>
+          </div>
+          <div id="title-confirm" class="confirm" hidden>
+            <p>Start a new voyage? Your saved one will be lost.</p>
+            <button id="btn-confirm-new" type="button" class="danger">Yes, start over</button>
+            <button id="btn-keep" type="button" class="secondary">Keep my voyage</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p id="where" class="where"></p>
+    <div id="tools" class="tools" hidden>
+      <button id="btn-chart" type="button"><span aria-hidden="true">🗺️</span> Sea chart <kbd>M</kbd></button>
+      <button id="btn-log" type="button"><span aria-hidden="true">📜</span> Captain's log <kbd>L</kbd></button>
+      <button id="btn-settings" type="button"><span aria-hidden="true">⚙️</span> Settings</button>
+    </div>
+    <p id="live" class="sr-only" aria-live="polite"></p>
+    <noscript><p class="status">This game needs JavaScript turned on. Everything else on The Reefer works without it.</p></noscript>
+  </div></section>
+
+  <section class="info" aria-labelledby="how"><div class="wrap">
+    <h2 id="how">How to play</h2>
+    <ul class="howto">
+      <li><b>Sail:</b> tap or click the sea and your crew sails there. On a keyboard, steer with the arrow keys or W A S D.</li>
+      <li><b>Dock, talk and dig:</b> sail up to a port or a treasure mark and press the button that appears, or Enter.</li>
+      <li><b>Trade:</b> every port grows one strain cheaply. Sell it somewhere far away, best of all in another sea.</li>
+      <li><b>Pillage:</b> bump into a fat merchant ship to try boarding her. Blue-sailed Customs cutters will want a word.</li>
+      <li><b>Explore:</b> sail off the edge of the chart to reach the Florida Straits and the Spanish Main. The sea chart sets a course for anywhere you've found.</li>
+      <li><b>Win:</b> find three pieces of Captain Featherstone's map and dig up the Emerald Bale. Your captain's log keeps track of every goal.</li>
+    </ul>
+
+    <h2 id="fine-print">Fine print</h2>
+    <p>This is a cartoon. Every captain, parrot and strain in it is made up, the ports are real places borrowed for fun, and nothing here is advice about real cannabis or real law. It's meant for adults 21 and over. If you want the real rules where you live, <a href="/#map">check your state on The Reefer</a>.</p>
+    <p>Your voyage is saved in this browser only, on this device. Nothing about it is sent anywhere. Like the rest of the site, this page counts visits and a few game milestones, like starting a voyage, with no cookies and nothing that identifies you. <a href="/privacy.html">Privacy</a></p>
+  </div></section>
+</main>
+
+<footer class="site"><div class="wrap">
+  <p>Made for fun by <a href="https://the-reefer.com/">The Reefer</a> · <a href="/">Home</a> · <a href="/privacy.html">Privacy</a></p>
+</div></footer>
+
+<dialog id="dlg-port" class="dlg dlg-port" aria-labelledby="port-title">
+  <div class="dlg-head">
+    <h2 id="port-title">Port</h2>
+    <p id="port-blurb" class="blurb"></p>
+    <p id="port-status" class="pstatus"></p>
+  </div>
+  <div id="port-tabs" class="tabs" role="tablist" aria-label="Places in this port"></div>
+  <div id="port-panel" class="panel" role="tabpanel"></div>
+  <p class="dlg-live" role="status" hidden></p>
+  <div class="dlg-foot"><button id="set-sail" type="button" class="primary"><span aria-hidden="true">⛵</span> Set sail</button></div>
+</dialog>
+
+<dialog id="dlg-encounter" class="dlg dlg-small" aria-labelledby="enc-title">
+  <h2 id="enc-title">Ahoy</h2>
+  <div id="enc-body"></div>
+  <p class="dlg-live" role="status" hidden></p>
+</dialog>
+
+<dialog id="dlg-chart" class="dlg" aria-labelledby="chart-title">
+  <h2 id="chart-title">Sea chart: <span id="chart-title-sea"></span></h2>
+  <div id="chart-seas" class="seas" role="group" aria-label="Show another sea"></div>
+  <div class="chart-wrap"><canvas id="chart-canvas" role="img" aria-label="Chart"></canvas></div>
+  <h3>Set a course</h3>
+  <ul id="chart-dests" class="dests"></ul>
+  <p class="dlg-live" role="status" hidden></p>
+  <div class="dlg-foot"><button id="chart-close" type="button" class="secondary" data-close>Close the chart</button></div>
+</dialog>
+
+<dialog id="dlg-log" class="dlg" aria-labelledby="log-title">
+  <h2 id="log-title">Captain's log</h2>
+  <div id="log-body"></div>
+  <p class="dlg-live" role="status" hidden></p>
+  <div class="dlg-foot"><button id="log-close" type="button" class="secondary" data-close>Close the log</button></div>
+</dialog>
+
+<dialog id="dlg-settings" class="dlg dlg-small" aria-labelledby="settings-title">
+  <h2 id="settings-title">Settings</h2>
+  <div class="opts">
+    <label><input id="opt-sound" type="checkbox"> Sound effects</label>
+    <label><input id="opt-motion" type="checkbox"> Reduce motion (still waves, no wake)</label>
+    <label><input id="opt-fast" type="checkbox"> Faster sailing when your crew steers</label>
+  </div>
+  <p class="muted">Settings are saved in this browser.</p>
+  <button id="opt-new" type="button" class="secondary">Start a new voyage</button>
+  <div id="settings-confirm" class="confirm" hidden>
+    <p>Throw away this voyage and start again from Tortuga?</p>
+    <button id="opt-new-yes" type="button" class="danger">Yes, start over</button>
+    <button id="opt-new-no" type="button" class="secondary">No, keep sailing</button>
+  </div>
+  <p class="dlg-live" role="status" hidden></p>
+  <div class="dlg-foot"><button type="button" class="primary" data-close>Done</button></div>
+</dialog>
+
+<dialog id="dlg-note" class="dlg dlg-small" aria-labelledby="note-title">
+  <h2 id="note-title">Note</h2>
+  <div id="note-body"></div>
+  <p class="dlg-live" role="status" hidden></p>
+  <div class="dlg-foot"><button id="note-ok" type="button" class="primary">Aye aye</button></div>
+</dialog>
+
+<script src="data.js"></script>
+<script src="engine.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
