@@ -32,7 +32,7 @@
     var dirs = ['east', 'north-east', 'north', 'north-west', 'west', 'south-west', 'south', 'south-east'];
     return dirs[Math.round(((a + 360) % 360) / 45) % 8];
   }
-  function oddsWord(p) { return p < 0.35 ? 'long odds' : p < 0.5 ? 'even odds' : p < 0.65 ? 'decent odds' : p < 0.8 ? 'good odds' : 'great odds'; }
+  function oddsWord(p) { return p < 0.3 ? 'long odds' : p < 0.45 ? 'so-so odds' : p < 0.6 ? 'even odds' : p < 0.78 ? 'good odds' : 'great odds'; }
   function track(a) { try { if (window.directoryTrack) window.directoryTrack('pillage-' + a); } catch (e) { /* counting is optional */ } }
 
   /* ---------- preferences (kept apart from the voyage) ---------- */
@@ -791,9 +791,9 @@
     }
     var st = stats(), vicar = state.flags.vicar ? 1 : 0;
     var bribe = Math.max(15, Math.round(cargoValue() * 0.18 * (1 - 0.1 * st.charm)));
-    var runP = Math.min(0.95, 0.35 + 0.12 * st.sails + 0.05 * st.sail + 0.1 * vicar);
+    var runP = Math.min(0.95, 0.5 + 0.1 * st.sails + 0.05 * st.sail + 0.1 * vicar);
     var shotP = Math.min(0.95, 0.2 + 0.13 * st.cannons + 0.05 * st.fight);
-    var talkP = Math.min(0.95, 0.3 + 0.08 * st.charm + 0.3 * vicar);
+    var talkP = Math.min(0.95, 0.35 + 0.08 * st.charm + 0.3 * vicar);
     showEncounter('🔵 Crown Customs!', n.name + ' of the Crown Customs blocks your way. “Inspection! What is that smell? Is that… citrus?”', [
       {label: '🪙 Pay a “paperwork fee” of ' + fmt(bribe) + ' doubloons', disabled: state.gold < bribe, fn: function () {
         state.gold -= bribe; sfx('coin');
@@ -802,7 +802,7 @@
       }},
       {label: '⛵ Run for it (' + oddsWord(runP) + ')', fn: function () {
         if (Math.random() < runP) return 'You crowd on every scrap of sail and leave the cutter wallowing in your wake. Somewhere behind you, a whistle is blown very angrily.' + gainXp(10);
-        var lost = confiscate(0.5); sfx('bad');
+        var lost = confiscate(1 / 3); sfx('bad');
         return 'They catch you before you clear the reef. ' + n.name + ' confiscates ' + baleWord(lost) + ' “for evidence.” You hear coughing from their ship for the rest of the afternoon.';
       }},
       {label: '💣 Fire a warning shot (' + oddsWord(shotP) + ')', fn: function () {
