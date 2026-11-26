@@ -1,0 +1,97 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "DC",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 3,
+ "records": [
+  {
+   "crm_id": "crm-o-05c5aad094",
+   "name": "DC Alcoholic Beverage and Cannabis Administration",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Washington",
+   "hq_state": "DC",
+   "states_active": [
+    "DC"
+   ],
+   "website": "https://abca.dc.gov/",
+   "description": "District agency that registers medical cannabis patients and licenses medical cannabis cultivators, manufacturers and retailers in DC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://abca.dc.gov/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://abca.dc.gov/page/medical-cannabis-metrics-2025",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://abca.dc.gov/page/legal-and-public-policy-medical-cannabis-0",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://abca.dc.gov/page/joint-agency-inspections-illegal-cannabis-businessestest",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://abca.dc.gov/node/1499531",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://abca.dc.gov/release/abc-board-expands-two-new-appointments",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f1ef82da0c",
+   "name": "U.S. Department of Veterans Affairs — marijuana policy",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Washington",
+   "hq_state": "DC",
+   "states_active": [
+    "US"
+   ],
+   "website": "https://www.publichealth.va.gov/marijuana.asp",
+   "description": "Federal veterans agency whose public-health page explains how state cannabis program participation interacts with VA care.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.publichealth.va.gov/marijuana.asp",
+     "reviewed_on": "2026-11-15",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f2c3037eeb",
+   "name": "US Cannabis Council",
+   "segment": "trade_association",
+   "category": "Associations / advocacy / nonprofits",
+   "hq_city": "Washington",
+   "hq_state": "DC",
+   "states_active": [
+    "US"
+   ],
+   "website": "https://www.uscannabiscouncil.org/",
+   "description": "National coalition of cannabis businesses and advocacy groups working for federal legalization.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.uscannabiscouncil.org/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  }
+ ]
+}

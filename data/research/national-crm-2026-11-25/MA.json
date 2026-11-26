@@ -1,0 +1,237 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "MA",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 5,
+ "records": [
+  {
+   "crm_id": "crm-o-2d33a920c0",
+   "name": "MariMed Inc.",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Norwood",
+   "hq_state": "MA",
+   "website": "https://marimedinc.com/",
+   "description": "Massachusetts-based multistate cannabis operator with brands such as Betty's Eddies and Panacea Life dispensaries.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.globenewswire.com/news-release/2026/05/13/3294498/0/en/marimed-reports-first-quarter-2026-earnings.html",
+     "kind": "primary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://www.barchart.com/story/news/35742459/marimed-announces-strategic-exit-from-missouri-market",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://www.cannabisbusinesstimes.com/us-states/massachusetts/news/15828656/marimed-submits-dea-registration-applications-for-statelicensed-medical-cannabis-businesses",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    }
+   ],
+   "people": [
+    {
+     "name": "Jon Levine",
+     "role": "President & CEO (verify)",
+     "confidence": "lead",
+     "sources": [
+      "https://blog.thecse.com/tag/jon-levine/"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-31da8242d3",
+   "name": "Massachusetts Cannabis Control Commission",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Worcester",
+   "hq_state": "MA",
+   "states_active": [
+    "MA"
+   ],
+   "website": "https://masscannabiscontrol.com/",
+   "description": "State agency that licenses and regulates adult-use and medical marijuana businesses in Massachusetts.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://masscannabiscontrol.com/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://masscannabiscontrol.com/about/commission-leadership-team/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://boards.mass.gov/detail/100065/cannabis-control-commission",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.mass.gov/news/governor-healey-appoints-new-cannabis-control-commissioners-following-major-reform-law",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://malegislature.gov/Laws/SessionLaws/Acts/2026/Chapter65",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.axios.com/local/boston/2026/05/19/massachusetts-cannabis-control-commission-harding-delobato-wilson-new-commissioners-healey",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.nbcboston.com/news/local/former-revenue-chief-to-lead-reshaped-cannabis-control-commission/3952283/?amp=1",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Bruce Stebbins",
+     "role": "Commissioner (named to second term Aug 2025; status after 2026 reform unverified)",
+     "confidence": "lead",
+     "sources": [
+      "https://masscannabiscontrol.com/2025/08/cannabis-control-commissioner-bruce-stebbins-named-to-a-second-term-by-governor-state-treasurer-and-attorney-general/"
+     ]
+    },
+    {
+     "name": "Carrie Benedon",
+     "role": "Commissioner (appointment announced by AG Campbell, Gov. Healey, Treasurer Goldberg; status after 2026 reform unverified)",
+     "confidence": "lead",
+     "sources": [
+      "https://www.mass.gov/news/ag-campbell-governor-healey-treasurer-goldberg-appoint-carrie-benedon-to-cannabis-control-commission"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-23afe691db",
+   "name": "Massachusetts Trial Court (marijuana expungement)",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_state": "MA",
+   "states_active": [
+    "MA"
+   ],
+   "website": "https://www.mass.gov/doc/petition-for-expungement-of-marijuana-offenses-form/download",
+   "description": "State court system that processes petitions to expunge eligible marijuana offenses under G.L. c. 276, s. 100K1/4.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.mass.gov/doc/petition-for-expungement-of-marijuana-offenses-form/download",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://mass.gov/info-details/massachusetts-law-about-criminal-records",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-fe3b588dc0",
+   "name": "NECANN",
+   "segment": "event_organizer",
+   "category": "Events / networking",
+   "hq_city": "Boston",
+   "hq_state": "MA",
+   "states_active": [
+    "MA",
+    "NJ",
+    "PA"
+   ],
+   "website": "https://necann.com/",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Organizer of regional cannabis conventions and NECANN Cup awards in New England, New Jersey and Pennsylvania.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://necann.com/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://necann.com/links",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://necann.com/?p=53386",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://necann.com/boston/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://necann.com/boston/boston-programming-schedule",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ganjapreneur.com/necann-brings-east-coast-cannabis-together-in-boston/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://cannabispromotions.com/tradeshows/event/necann-boston-2027",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.businesswire.com/news/home/20260730065307/en/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://ganjapreneur.com/necanns-new-jersey-cannabis-convention-and-necann-cup-awards-return-to-atlantic-city-september-18-19/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://cannabispromotions.com/tradeshows/event/necann-new-jersey-2027",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://necann.com/pennsylvania-convention/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-dcdd323fcd",
+   "name": "Talking Joints Memo",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "MA",
+   "states_active": [
+    "MA"
+   ],
+   "website": "https://talkingjointsmemo.com/",
+   "description": "Online publication covering Massachusetts cannabis regulation and Cannabis Control Commission meetings.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://talkingjointsmemo.com/new-cannabis-control-commission-members-hold-first-board-meeting/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  }
+ ]
+}

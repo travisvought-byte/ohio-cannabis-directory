@@ -1,0 +1,223 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "CT",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 4,
+ "records": [
+  {
+   "crm_id": "crm-o-7b4dc9f9b0",
+   "name": "Blazin J's Smoke Shop",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "CT",
+   "states_active": [
+    "PA"
+   ],
+   "events": [
+    "Summer Cannafest 2025"
+   ],
+   "description": "hand-blown glass pipes",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://lebtown.com/2025/06/10/rainy-weekend-doesnt-dampen-spirits-for-2025-summer-canna-fest-at-fairgrounds/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ce429b4065",
+   "name": "Connecticut Department of Consumer Protection (Cannabis Control Division)",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Hartford",
+   "hq_state": "CT",
+   "states_active": [
+    "CT"
+   ],
+   "website": "https://portal.ct.gov/cannabis",
+   "public_contact": "https://portal.ct.gov/dcp/contact",
+   "description": "State agency whose cannabis division licenses and regulates Connecticut's adult-use and medical cannabis market.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://portal.ct.gov/cannabis",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://portal.ct.gov/dcp/contact",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://mjbizdaily.com/?p=403269",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://portal.ct.gov/cleanslate/cannabis-eligibility?language=en_US",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://portal.ct.gov/cleanslate/petition-for-cannabis-erasure",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://portal.ct.gov/ag/press-releases/2026-press-releases/attorney-general-tong-announces-settlement-with-company-for-distributing-illegal-cannabis-products",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://portal.ct.gov/ag/press-releases/2026-press-releases/anesthesia-smoke-and-convenience-in-new-haven-to-remain-permanently-closed",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "William Tong",
+     "role": "Attorney General",
+     "confidence": "verified",
+     "sources": [
+      "https://portal.ct.gov/ag/press-releases/2026-press-releases/attorney-general-tong-announces-settlement-with-company-for-distributing-illegal-cannabis-products"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-499756c48c",
+   "name": "Connecticut General Assembly (2026 cannabis legislation)",
+   "segment": "lawmaker_official",
+   "category": "Government / regulators",
+   "hq_city": "Hartford",
+   "hq_state": "CT",
+   "states_active": [
+    "CT"
+   ],
+   "website": "https://www.cga.ct.gov/",
+   "description": "State legislature; 2026 session considered cannabis-related bills including SB 231 (General Law committee joint favorable report).",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://cga.ct.gov/2026/JFR/S/PDF/2026SB-00231-R00GL-JFR.PDF",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://prdext3.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00100-R00HB-05222-PA.PDF",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://prdext2.cga.ct.gov/2025/act/pa/pdf/2025PA-00166-R00HB-07181-PA.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-31aed7b205",
+   "name": "Curaleaf",
+   "segment": "ancillary_business",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Stamford",
+   "hq_state": "CT",
+   "states_active": [
+    "OH",
+    "NV"
+   ],
+   "website": "https://www.curaleaf.com/",
+   "license": "NV CCB retail store (adult-use and medical), 6 listed location(s)",
+   "events": [
+    "MJBizCon 2026",
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Silver sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizconference.com/speakers/",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.prnewswire.com/de/news-releases/curaleaf-announces-appointment-of-torsten-greif-to-board-of-directors-302759580.html",
+     "kind": "primary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://www.preparedfoods.com/articles/130634-curaleaf-names-rahul-pinto-as-president",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://businessofcannabis.com/cfo-ranjan-kalia-appointed-to-curaleaf/",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Richard Philbrook",
+     "role": "Principal Scientist",
+     "confidence": "verified",
+     "sources": [
+      "https://mjbizconference.com/speakers/"
+     ]
+    },
+    {
+     "name": "Rahul Pinto",
+     "role": "President",
+     "confidence": "lead",
+     "sources": [
+      "https://www.preparedfoods.com/articles/130634-curaleaf-names-rahul-pinto-as-president"
+     ]
+    },
+    {
+     "name": "Ranjan Kalia",
+     "role": "Chief Financial Officer",
+     "confidence": "lead",
+     "sources": [
+      "https://businessofcannabis.com/cfo-ranjan-kalia-appointed-to-curaleaf/"
+     ]
+    },
+    {
+     "name": "Torsten Greif",
+     "role": "Board director",
+     "confidence": "verified",
+     "sources": [
+      "https://www.prnewswire.com/de/news-releases/curaleaf-announces-appointment-of-torsten-greif-to-board-of-directors-302759580.html"
+     ]
+    },
+    {
+     "name": "Boris Jordan",
+     "role": "Executive Chairman & CEO (verify)",
+     "confidence": "lead",
+     "sources": [
+      "https://simplywall.st/stocks/us/pharmaceuticals-biotech/otc-curl.f/curaleaf-holdings/management"
+     ]
+    }
+   ]
+  }
+ ]
+}

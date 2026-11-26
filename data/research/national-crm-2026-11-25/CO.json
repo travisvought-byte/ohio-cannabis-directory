@@ -1,0 +1,348 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "CO",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 13,
+ "records": [
+  {
+   "crm_id": "crm-o-fa21c3d37e",
+   "name": "Colorado Department of Public Health and Environment, Medical Marijuana Registry",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Denver",
+   "hq_state": "CO",
+   "states_active": [
+    "CO"
+   ],
+   "website": "https://cdphe.colorado.gov/apply-colorado-medical-marijuana-card",
+   "public_contact": "https://cdphe.colorado.gov/apply-colorado-medical-marijuana-card",
+   "description": "State health department program that issues Colorado medical marijuana cards to qualifying patients.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cdphe.colorado.gov/apply-colorado-medical-marijuana-card",
+     "reviewed_on": "2026-11-17",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3126cd2468",
+   "name": "Colorado Department of Revenue",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Denver",
+   "hq_state": "CO",
+   "states_active": [
+    "CO"
+   ],
+   "website": "https://cdor.colorado.gov/",
+   "description": "State revenue department that houses the Marijuana Enforcement Division within its Specialized Business Group and collects marijuana taxes.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cdor.colorado.gov/cdor-organizational-chart",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cdor.colorado.gov/marijuana-enforcement-division-2026-regulatory-agenda",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cdor.colorado.gov/sites/default/files/documents/DR_4125_2026_CDOR_FY26_Performance_Management_Plan.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-14ef312b30",
+   "name": "Colorado General Assembly",
+   "segment": "lawmaker_official",
+   "category": "Government / regulators",
+   "hq_city": "Denver",
+   "hq_state": "CO",
+   "states_active": [
+    "CO"
+   ],
+   "website": "https://leg.colorado.gov/",
+   "description": "Colorado's state legislature, which writes the state's marijuana and record-sealing statutes.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://leg.colorado.gov/sites/default/files/2022a_099_signed.pdf",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://content.leg.colorado.gov/sites/default/files/documents/audits/2553P_Marijuana_Consumer_Safety.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f43e4c32ce",
+   "name": "Colorado Judicial Branch",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Denver",
+   "hq_state": "CO",
+   "states_active": [
+    "CO"
+   ],
+   "website": "https://www.coloradojudicial.gov/",
+   "description": "State courts system that publishes the forms for sealing conviction records for conduct no longer prohibited, including marijuana offenses.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.coloradojudicial.gov/sites/default/files/2025-07/JDF2370.pdf",
+     "reviewed_on": "2026-11-15",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.coloradojudicial.gov/sites/default/files/2025-07/JDF2374.pdf",
+     "reviewed_on": "2026-11-15",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5ea0b34602",
+   "name": "Colorado Marijuana Enforcement Division",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Denver",
+   "hq_state": "CO",
+   "states_active": [
+    "CO"
+   ],
+   "website": "https://med.colorado.gov/",
+   "public_contact": "https://med.colorado.gov/",
+   "description": "State agency within the Colorado Department of Revenue that licenses and enforces rules for medical and retail marijuana businesses.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://med.colorado.gov/about-med",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://med.colorado.gov/newsroom",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cdor.colorado.gov/marijuana-enforcement-division-2026-regulatory-agenda",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://med.colorado.gov/press-release/med-publishes-2025-regulatory-and-enforcement-update-report",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Dominique Mendiola",
+     "role": "Senior Director (appointed 2021; current status not verified)",
+     "confidence": "lead",
+     "sources": [
+      "https://www.coloradopolitics.com/2021/05/07/dominique-mendiola-named-senior-director-of-the-marijuana-enforcement-division-1769cd32-af6f-11eb-bed7-2b34f744734e",
+      "https://cannabislaw.report/?p=107621",
+      "https://sbg.colorado.gov/sites/sbg/files/documents/Press%20Release%20-%20New%20MED%20Senior%20Director.pdf"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-603f71ffe7",
+   "name": "Colorado Politics",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "CO",
+   "states_active": [
+    "CO"
+   ],
+   "website": "https://www.coloradopolitics.com/",
+   "description": "Colorado political news outlet that covers marijuana regulation and MED leadership.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.coloradopolitics.com/2021/06/21/qa-with-dominique-mendiola-meds-new-senior-director-brings-a-focus-on-social-equity-2e980812-cd0f-11eb-805a-4f159108fdac/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0c8651d29d",
+   "name": "Glassentrate",
+   "segment": "ancillary_business",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Conifer",
+   "hq_state": "CO",
+   "states_active": [
+    "US"
+   ],
+   "website": "https://glassentrate.com/",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Fake hash (display replicas) and custom displays for dispensaries.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/glassentrate",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c004cf8329",
+   "name": "Schwazze",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "states_active": [
+    "CO",
+    "NM"
+   ],
+   "description": "Former Colorado and New Mexico cannabis operator whose assets were acquired by Vireo Growth.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.barchart.com/story/news/915283/vireo-growth-inc-announces-closing-of-acquisition-of-assets-of-schwazze",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-73017f927b",
+   "name": "State of Colorado cannabis information site",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_state": "CO",
+   "states_active": [
+    "CO"
+   ],
+   "website": "https://cannabis.colorado.gov/",
+   "description": "State-run public education site explaining Colorado's cannabis laws on use, home grow, driving and travel.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.colorado.gov/laws-about-cannabis-use",
+     "reviewed_on": "2026-11-15",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.colorado.gov/home-grow-laws",
+     "reviewed_on": "2026-11-15",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d33126a1ee",
+   "name": "The Cannabist",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Denver",
+   "hq_state": "CO",
+   "states_active": [
+    "CO"
+   ],
+   "website": "https://www.thecannabist.co/",
+   "description": "Cannabis news site launched by The Denver Post; current publishing status unverified.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.thecannabist.co/?p=48775",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3cc1f5b9fd",
+   "name": "The Gazette (Colorado Springs)",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Colorado Springs",
+   "hq_state": "CO",
+   "states_active": [
+    "CO"
+   ],
+   "website": "https://gazette.com/",
+   "description": "Colorado Springs newspaper group that reported on the October 2026 state audit of marijuana consumer-safety regulation.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://gazette.com/pikespeakcourier/2026/10/19/deficiencies-marijuana-safety-regulations-consumers-safety-3/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f54f998810",
+   "name": "Wana",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Boulder",
+   "hq_state": "CO",
+   "states_active": [
+    "OH"
+   ],
+   "website": "https://www.wanabrands.com/",
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Gold sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.cannabisbusinesstimes.com/industry-headlines/news/15705420/canopy-usa-completes-acquisition-of-wana-canopy-growth-confirms",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b297a9f015",
+   "name": "Westword",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Denver",
+   "hq_state": "CO",
+   "states_active": [
+    "CO"
+   ],
+   "website": "https://www.westword.com/marijuana",
+   "description": "Denver alternative weekly with a long-running marijuana news and culture section.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.westword.com/marijuana/colorados-new-marijuana-director-dominique-mendiola-has-marijuana-enforcement-division-roots-10507268",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  }
+ ]
+}

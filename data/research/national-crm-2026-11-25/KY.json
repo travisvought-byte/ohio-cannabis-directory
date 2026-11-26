@@ -1,0 +1,1132 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "KY",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 47,
+ "records": [
+  {
+   "crm_id": "crm-o-97226cd17c",
+   "name": "Ace 4 Target",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Richmond",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee Ace 4 Target.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c22a08ace7",
+   "name": "Barrio Capital Partners LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Elizabethtown",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee Barrio Capital Partners LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-fbe0297d90",
+   "name": "BD Expansion, LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Georgetown",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee BD Expansion, LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1dd33eb56f",
+   "name": "Bison Infused Kentucky, LLC",
+   "segment": "plant_touching_operator",
+   "category": "Processing / extraction / testing",
+   "hq_city": "Dayton",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "description": "Medical cannabis processor that opened in Dayton, Northern Kentucky, reported as the state's first processing facility in January 2026.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.citybeat.com/?p=251060",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.fox19.com/2026/01/15/kentuckys-first-medical-marijuana-processor-opens-nky/?outputType=amp",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://themarijuanaherald.com/2026/01/kentucky-approves-first-medical-marijuana-processor-as-dispensary-access-expands/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-9e36805a59",
+   "name": "Blue Sage - Oak Grove (Mallard Club LLC)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Oak Grove",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee Mallard Club LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-73c9554392",
+   "name": "Blue Sage Cannabis Company (CB Slugger, LLC)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Nicholasville",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee CB Slugger, LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d0788ef7b2",
+   "name": "Blue Sage Cannabis Dispensary (WPBD Target, LLC)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Lebanon",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee WPBD Target, LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7c473868f5",
+   "name": "Bluegrass Cannacare LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Florence",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee Bluegrass Cannacare LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d253fead00",
+   "name": "C3 Kentucky LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Wilder",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee C3 Kentucky LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7e2d431059",
+   "name": "Cresco Labs",
+   "segment": "ancillary_business",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Chicago",
+   "hq_state": "IL",
+   "states_active": [
+    "OH",
+    "KY"
+   ],
+   "website": "https://www.crescolabs.com",
+   "events": [
+    "MJBizCon 2026",
+    "OCHBS 2026",
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Ohio marketing contact for a vertically integrated multistate cannabis operator and brand portfolio.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizconference.com/sessions/stock-smarter-sell-faster-inventory-velocity-strategies-from-big-box-retail/",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1832928/000183292826000005/cresco-aifxq42025.htm",
+     "kind": "primary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://winchestersun.com/?p=83911",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.lex18.com/news/covering-kentucky/1-of-kentuckys-largest-medical-marijuana-facilities-unveiled-in-clark-county",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://lpm.org/news/2025-04-30/how-a-top-marijuana-company-landed-kentuckys-most-coveted-medical-cannabis-license",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Cory Rothschild",
+     "role": "Retail President",
+     "confidence": "verified",
+     "sources": [
+      "https://mjbizconference.com/sessions/stock-smarter-sell-faster-inventory-velocity-strategies-from-big-box-retail/"
+     ]
+    },
+    {
+     "name": "Charlie Bachtell",
+     "role": "Co-founder & CEO",
+     "confidence": "lead",
+     "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1832928/000183292826000005/cresco-aifxq42025.htm"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f617f99f79",
+   "name": "Dark Horse Cannabis",
+   "segment": "plant_touching_operator",
+   "category": "Cultivation / facility systems",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "description": "Cannabis company that marked its first harvest at a Kentucky medical cannabis cultivation facility.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.cannabisbusinesstimes.com/us-states/kentucky/news/15815051/dark-horse-cannabis-marks-1st-harvest-at-kentucky-cultivation-facility",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c5d4f639a8",
+   "name": "DHK KY LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Lexington",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee DHK KY LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-eab6aed6b7",
+   "name": "ERH KY LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "London",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee ERH KY LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-34f39fcb3e",
+   "name": "Grass Roots Dispensary (Green4U LLC)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Mayfield",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee Green4U LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a880e7a60c",
+   "name": "Holler Cannabis",
+   "segment": "plant_touching_operator",
+   "category": "Cultivation / facility systems",
+   "hq_city": "Lexington",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "description": "Medical cannabis cultivator that opened a facility in Lexington, Kentucky in August 2026.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://spectrumnews1.com/ky/northern-ky/news/2026/08/22/holler-cannabis-comes-to-lexington",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.weku.org/lexington-richmond/2026-08-24/at-lexington-cannabis-cultivator-opening-beshear-says-medical-program-rollout-has-been-slow",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e3ec56a22f",
+   "name": "KCA Labs",
+   "segment": "lab_testing",
+   "category": "Processing / extraction / testing",
+   "hq_city": "Nicholasville",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "description": "Nicholasville cannabis testing lab that received Kentucky's first medical cannabis business license (safety compliance facility) in September 2024.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://spectrumnews1.com/ky/louisville/news/2024/10/01/kca-labs-gets-business-license",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.lex18.com/news/covering-kentucky/inside-the-nicholasville-lab-that-received-kentuckys-first-medical-marijuana-license",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://kaco.org/articles/first-medical-cannabis-business-license-awarded-in-kentucky/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ca3ce256ca",
+   "name": "Kentucky Alternative Care (Picasso Cannabis)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Louisville",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee Picasso Cannabis.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ce0bdb8126",
+   "name": "Kentucky Association of Counties",
+   "segment": "event_organizer",
+   "category": "Events / networking",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "website": "https://kaco.org/",
+   "events": [
+    "50th Annual KACo Conference & Exposition"
+   ],
+   "description": "Association of Kentucky county governments whose annual conference has hosted medical cannabis update sessions for local officials.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://conference.kaco.org/agenda-list/medical-cannabis-update",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://kaco.org/media/5274/2024-05-08-kentucky-association-of-counties-kaco-presentation.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-235dd50d3d",
+   "name": "Kentucky Auditor of Public Accounts",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Frankfort",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "description": "State auditor's office that conducted a preliminary assessment of the Office of Medical Cannabis, to which the office responded in May 2025.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/transparency/Documents/APA%20Preliminary%20Assessment%20Letter%20-%20Office%20of%20Medical%20Cannabis.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://kymedcan.ky.gov/transparency/Documents/2025-5-1%20-%20Signed%20-%20OMC%20Response%20Ltr%20to%20APA%20w%20Appendix%20-%20signed.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-95ad09c26d",
+   "name": "Kentucky Cabinet for Health and Family Services",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Frankfort",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "website": "https://www.chfs.ky.gov/",
+   "description": "State cabinet that houses the Office of Medical Cannabis and issues program news releases.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://chfs.ky.gov/News/Documents/20240627",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.chfs.ky.gov/News/Documents/State38",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b387131437",
+   "name": "Kentucky Department of Criminal Justice Training",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "website": "https://www.docjt.ky.gov/",
+   "description": "State police-training agency that published guidance for officers on the medical cannabis law.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.docjt.ky.gov/bluegrassbeat/2025/1/2/medical-cannabis",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-294a2d6517",
+   "name": "Kentucky Office of Medical Cannabis",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Frankfort",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "website": "https://kymedcan.ky.gov/",
+   "description": "State office within the Cabinet for Health and Family Services that licenses medical cannabis businesses and issues patient and caregiver cards under SB 47 (program effective Jan 1, 2025).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/About/Pages/default.aspx",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://kymedcan.ky.gov/FAQs/Pages/General-Questions.aspx",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://kymedcan.ky.gov/About/Documents/2026-07-15%20BoPA%20Regular%20Meeting,%20Agenda.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://kymedcan.ky.gov/About/Documents/2026-04-29%20Team%20Kentucky%20Medical%20Cannabis%20Workgroup%20Regular%20Meeting%2c%20Agenda.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://kymedcan.ky.gov/About/Documents/2024-12-19%20Local%20Government%20and%20Law%20Enforcement%20Subcommittee%20Meeting%20Minutes%2c%20Executed.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Sam Flynn",
+     "role": "Executive Director",
+     "confidence": "lead",
+     "sources": [
+      "https://apps.legislature.ky.gov/CommitteeDocuments/366/30824/10%2023%202024%206.%20Flynn%20-%20CHFS%20Medical%20Cannabis%20Office.pdf",
+      "https://conference.kaco.org/speakers/sam-flynn",
+      "https://kaco.org/articles/medical-cannabis-program-director-outlines-county-government-options/"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4e2a8b5ae8",
+   "name": "LEO Weekly",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Louisville",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "website": "https://leoweekly.com/",
+   "description": "Louisville alt-weekly that has covered Kentucky medical cannabis licensing.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://leoweekly.com/news/kentucky-has-awarded-its-first-business-license-for-the-medical-cannabis-program-16890742",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0a2b95126b",
+   "name": "LEX18",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Lexington",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "website": "https://www.lex18.com/",
+   "description": "Lexington TV news station covering Kentucky medical cannabis expansion and licensees.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.lex18.com/news/covering-kentucky/gov-beshear-expands-medical-cannabis-access-adding-15-new-qualifying-conditions",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-950e14b85c",
+   "name": "Louisville Public Media",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Louisville",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "website": "https://lpm.org/",
+   "description": "Louisville public broadcaster whose newsroom has investigated Kentucky's medical cannabis license lotteries.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://lpm.org/news/2024-11-25/kentucky-medical-marijuana-lottery-dominated-by-out-of-state-pot-companies",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://lpm.org/news/2024-12-16/out-of-state-companies-score-again-land-nearly-all-kentucky-marijuana-dispensary-licenses",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8e4d81851f",
+   "name": "Nature Med (KY Murray Dispensary)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Murray",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee KY Murray Dispensary.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-709c0e3f20",
+   "name": "NuEra Frankfort (Canntucky Ventures LLC)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Frankfort",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee Canntucky Ventures LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5ff0b30d3c",
+   "name": "Smiley Pete Publishing",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Lexington",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "website": "https://smileypete.com/",
+   "description": "Lexington business publisher that has profiled Kentucky cannabis testing businesses.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://smileypete.com/business/setting-the-standard",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-bfdb7460c0",
+   "name": "Speakeasy Dispensary",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary (multiple licensees)",
+   "description": "Dispensary brand with the most Kentucky locations on the OMC open-dispensary list, each held by a separate licensee LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c26f0015e3",
+   "name": "Speakeasy Dispensary - Ashland (Z3 Medicinal Investments LLC)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Ashland",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee Z3 Medicinal Investments LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-62059709ea",
+   "name": "Speakeasy Dispensary - Bowling Green (AR-MO-KY-MS Cannabis Ventures LLC)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Bowling Green",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee AR-MO-KY-MS Cannabis Ventures LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d8edc6f6ef",
+   "name": "Speakeasy Dispensary - Corbin (Zone 5 Retail Company)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Corbin",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee Zone 5 Retail Company.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-6903381b3d",
+   "name": "Speakeasy Dispensary - Lexington (KYLX Acquisition Company LLC)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Lexington",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee KYLX Acquisition Company LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8e064429f7",
+   "name": "Speakeasy Dispensary - Nortonville (DPDMJF Cannabis Holding Company LLC)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Nortonville",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee DPDMJF Cannabis Holding Company LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ee0488e191",
+   "name": "Speakeasy Dispensary - Princeton (River City Relief House LLC)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Princeton",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee River City Relief House LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-59254027f7",
+   "name": "Speakeasy Dispensary - Stanford (R5 MedCann Investments LLC)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Stanford",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee R5 MedCann Investments LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-23a24dd875",
+   "name": "Spectrum News 1 Kentucky",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Louisville",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "website": "https://spectrumnews1.com/ky/louisville",
+   "description": "Statewide cable news outlet that regularly reports on Kentucky cannabis businesses and the medical program.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://spectrumnews1.com/ky/louisville/news/2026/04/22/medical-cannabis-update",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-9b60aa749b",
+   "name": "State38 LLC",
+   "segment": "plant_touching_operator",
+   "category": "Cultivation / facility systems",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "description": "Kentucky medical cannabis business whose facility groundbreaking (May 28, 2025) was publicized by the state health cabinet.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.chfs.ky.gov/News/Documents/State38",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.wdrb.com/state38-llc/image_91c32df4-744b-4b6d-bf54-e4673c0582ef.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-12fc27b30a",
+   "name": "Stites & Harbison",
+   "segment": "law_firm_legal",
+   "category": "Legal / compliance / consulting",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "website": "https://www.stites.com/",
+   "description": "Law firm that publishes client alerts tracking Kentucky's medical cannabis law and qualifying-condition changes.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.stites.com/resources/client-alerts/kentucky-medical-cannabis-update-governor-expands-qualifying-conditions-by-executive-order/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.stites.com/resources/client-alerts/kentucky-becomes-38th-state-to-legalize-the-use-of-medical-cannabis/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4ee199cb3e",
+   "name": "Sunnyside Prestonsburg (BSRKYAPP, LLC)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Prestonsburg",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee BSRKYAPP, LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3d6f54b3d0",
+   "name": "The Post Dispensary (Tree Soft LLC)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Beaver Dam",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "license": "KY Office of Medical Cannabis dispensary",
+   "description": "Licensed Kentucky medical cannabis dispensary operated by licensee Tree Soft LLC.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://kymedcan.ky.gov/patients-and-caregivers/Pages/Find-A-Dispensary.aspx",
+     "reviewed_on": "2026-11-16",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-9af50691b5",
+   "name": "University of Kentucky Cooperative Extension Service",
+   "segment": "education_research",
+   "category": "Education / research / health",
+   "hq_city": "Lexington",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "description": "UK College of Agriculture extension program that publishes educational material on medical cannabis.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ces-manuals.ca.uky.edu/sites/ces-manuals.ca.uky.edu/files/Medical%20Cannabis-2.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4948fb4006",
+   "name": "WDRB",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Louisville",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "website": "https://www.wdrb.com/",
+   "description": "Louisville TV news station reporting on Kentucky medical cannabis licensing and access.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.wdrb.com/news/business/26-medical-marijuana-businesses-awarded-licenses-in-kentucky-after-lottery/article_66ff5d26-956c-11ef-848b-a3c9001f0937.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ed0d352b02",
+   "name": "WEKU",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Richmond",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "website": "https://www.weku.org/",
+   "description": "Central Kentucky public radio station that covers the medical cannabis program, including cultivator openings.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.weku.org/the-commonwealth/2025-10-03/kentuckys-second-medical-cannabis-cultivator-approved-to-open-in-madison-co",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.weku.org/the-commonwealth/2026-01-15/beshear-tours-kentuckys-2nd-licensed-medical-cannabis-grower",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-97e3d9f850",
+   "name": "WKMS",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Murray",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "website": "https://www.wkms.org/",
+   "description": "Western Kentucky public radio station covering medical cannabis licensing and cultivation.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.wkms.org/2025-07-29/kentucky-medical-marijuana-cultivator-brings-in-half-grown-plants-to-speed-harvest",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d0d07b51ab",
+   "name": "WKYU",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Bowling Green",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "website": "https://www.wkyufm.org/",
+   "description": "Bowling Green public radio station covering Kentucky medical cannabis milestones.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.wkyufm.org/news/2025-02-04/kentuckys-medical-cannabis-program-notches-another-milestone-as-beshear-asks-federal-government-to-loosen-restrictions",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8812d16894",
+   "name": "WUKY",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Lexington",
+   "hq_state": "KY",
+   "states_active": [
+    "KY"
+   ],
+   "website": "https://www.wuky.org/",
+   "description": "Lexington public radio station reporting on Kentucky medical cannabis facilities.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.wuky.org/wuky-news/2025-10-05/its-been-slow-growing-but-more-medical-cannabis-is-set-to-bloom-in-kentucky",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  }
+ ]
+}

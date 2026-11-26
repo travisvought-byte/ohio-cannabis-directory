@@ -1,0 +1,4986 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "PA",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 207,
+ "records": [
+  {
+   "crm_id": "crm-o-d73899ad74",
+   "name": "412 Genetics",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.pittsburghcannabisfest.com/vendors",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-9135cbc517",
+   "name": "Acme Engineering & Manufacturing",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.ACME",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-15cb302732",
+   "name": "ACS Laboratory",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://acslabcannabis.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://acslabcannabis.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf#page=1",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d1f891d1e4",
+   "name": "Advancing Alternatives",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.advancingalternatives.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.advancingalternatives.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.ADVALT",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e0e471e10b",
+   "name": "Age Old Organics",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/age-old-organics/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b960881cfb",
+   "name": "aGROair",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/agroair/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7fe96a9cf0",
+   "name": "AgroMagen",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/agromagen/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-362a99f41e",
+   "name": "Alpine IQ / AIQ",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://alpineiq.com/industry/cannabis",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://alpineiq.com/industry/cannabis",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-442dde8d8c",
+   "name": "American Granby",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.AMERGRANBY",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b3c3f958ec",
+   "name": "American Nettings & Fabric",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.AMERNETFAB",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b29a9d4f96",
+   "name": "Americhanvre",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://americhanvre.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://americhanvre.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://americhanvre.com/contact/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7a410c6a82",
+   "name": "Amiad USA",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.AMIAD",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ed171d8ba7",
+   "name": "Anatis Bioprotection",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "http://anatisbioprotection.com/en/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "http://anatisbioprotection.com/en/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-fdce93002f",
+   "name": "Antelco Corporation",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/antelco/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1ec18af995",
+   "name": "Anthos Seeds",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://anthosseeds.com",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://anthosseeds.com",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pittsburghcannabisfest.com/vendors",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-72e56080eb",
+   "name": "Applied Bio-Nomics Ltd.",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "http://www.appliedbio-nomics.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "http://www.appliedbio-nomics.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-dbd2d13769",
+   "name": "Aptus Plant Tech",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/aptus-plant-tech/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4fe39d9044",
+   "name": "Aquatrols",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.AQUATROLS",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0925e694a1",
+   "name": "ARBICO Organics",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "http://www.arbico-organics.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "http://www.arbico-organics.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8b78df5dee",
+   "name": "Arbill Industries",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.arbill.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.arbill.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.ARBILL",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7e69c43758",
+   "name": "Ashs to Ash",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.pittsburghcannabisfest.com/vendors",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3479fb1725",
+   "name": "Associates Insectary",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "http://www.associatesinsectary.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "http://www.associatesinsectary.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5c82dccbad",
+   "name": "Atami",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/atami/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-6745faafad",
+   "name": "Athena",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/athena-nutrients/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c9cc2d2dda",
+   "name": "AutoPot",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/autopot/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b9ec743119",
+   "name": "Axios Philadelphia",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Philadelphia",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.axios.com/local/philadelphia",
+   "description": "Local Axios newsletter; Jan 2026 story reported declining participation in the PA medical program.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.axios.com/local/philadelphia/2026/01/12/pennsylvania-medical-marijuana-legalization-2026",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-bd77899412",
+   "name": "Badgerland Ventilation",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.BADGERLAND",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f7b009737a",
+   "name": "Bartlett Bench & Wire",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.BARTLETT",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b4e8839b77",
+   "name": "BASF Agricultural Specialities",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-2b62803a6c",
+   "name": "Beneficial Insectary, Inc.",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "http://www.insectary.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "http://www.insectary.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-60aee71b84",
+   "name": "Bio Green Clean",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/bio-green-clean/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-75c1ada99f",
+   "name": "bio365",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/bio365/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1488abb98e",
+   "name": "Biobee USA Inc.",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "http://www.biobee.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "http://www.biobee.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d48877b43f",
+   "name": "Biobizz",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/biobizz/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-45e0475d5d",
+   "name": "Bioline Agrosciences",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.biolineagrosciences.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.biolineagrosciences.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b30b9afa02",
+   "name": "BioSafe Systems",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/biosafe-systems/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7b4dc9f9b0",
+   "name": "Blazin J's Smoke Shop",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "CT",
+   "states_active": [
+    "PA"
+   ],
+   "events": [
+    "Summer Cannafest 2025"
+   ],
+   "description": "hand-blown glass pipes",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://lebtown.com/2025/06/10/rainy-weekend-doesnt-dampen-spirits-for-2025-summer-canna-fest-at-fairgrounds/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ef595a120b",
+   "name": "Boshart Industries",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.BOSHART",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-dd4fda851d",
+   "name": "Cambium Analytica",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.cambiumanalytica.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.cambiumanalytica.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf#page=1",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-195f860d9f",
+   "name": "Can Filters",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/can/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ebf9eecb74",
+   "name": "CANNA",
+   "segment": "ancillary_business",
+   "category": "Cultivation / facility systems",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Co-sponsor of Loud Omakase listed only as 'Canna'; possibly the CANNA nutrients brand (unconfirmed).",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/canna/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "file:///home/claude/work/drive/mjbizcon-happenings.xlsx",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c5ee229f59",
+   "name": "Cannabiscapes",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.pittsburghcannabisfest.com/vendors",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-292d90fbd7",
+   "name": "CannaBusiness Laboratories LLC",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "http://www.cannabusinesslabs.us/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "http://www.cannabusinesslabs.us/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf#page=1",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-683a7818fd",
+   "name": "CannaMedShow LLC / Canna World Fair",
+   "segment": "event_organizer",
+   "category": "Events / networking",
+   "hq_city": "Morgantown",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.cannaworldfair.com/",
+   "description": "Pennsylvania cannabis consumer and vendor fair held at the Morgantown Center.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.cannaworldfair.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.cannaworldfair.com/sponsors/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1e70a4089a",
+   "name": "Carolina Perlite Company",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.CAROLINAPER",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0890800282",
+   "name": "CBC America / BIOPLANET",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://bioplanet.eu/en/about-us/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://bioplanet.eu/en/about-us/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c11e48e239",
+   "name": "CenturionPro",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/centurion-pro-trimming-machines/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-edf8fb13f0",
+   "name": "Certified Testing & Data",
+   "segment": "lab_testing",
+   "category": "Processing / extraction / testing",
+   "hq_state": "NY",
+   "states_active": [
+    "PA",
+    "NY"
+   ],
+   "website": "https://certifiedtnd.com/",
+   "public_contact": "518-900-5515; sales@certifiedtnd.com",
+   "license": "NY OCM permitted cannabis laboratory and approved sampling firm",
+   "description": "Cannabis testing laboratory permitted by the NY Office of Cannabis Management; also an OCM-approved sampling firm.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://certifiedtnd.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf#page=1",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://cannabis.ny.gov/cannabis-laboratories",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.ny.gov/sampling-firms",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b104c9a9d4",
+   "name": "Chikamasa",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/chikamasa-scissors/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7cf6c4f4bd",
+   "name": "Crop Defenders, Ltd.",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "http://www.cropdefenders.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "http://www.cropdefenders.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-82d7c9e8d3",
+   "name": "CropKing",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/cropking/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4abe97cbeb",
+   "name": "Cultilene / Cultiwool",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/cultiwool/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7ba0b0b040",
+   "name": "Curated Flame",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.pittsburghcannabisfest.com/vendors",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3a930986e9",
+   "name": "Current Culture H2O",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/cch2o-current-culture-h2o/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c0d9261a8d",
+   "name": "Cutting Edge Solutions",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/cutting-edge-solutions-products/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-08b977bea2",
+   "name": "CX Horticulture",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/cx-horticulture/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-76bd1b20b8",
+   "name": "Daisy's Creations",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_city": "Lancaster County",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "events": [
+    "Summer Cannafest 2025"
+   ],
+   "description": "kettle corn",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://lebtown.com/2025/06/10/rainy-weekend-doesnt-dampen-spirits-for-2025-summer-canna-fest-at-fairgrounds/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c3447b2834",
+   "name": "Danner Manufacturing",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/danner/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e838e26a89",
+   "name": "Detroit Nutrient Company",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/detroit-nutrient-company/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1095a868e4",
+   "name": "DGA Security",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.dga.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.dga.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.dga.com/industries/cannabis-security/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-9080a51cd6",
+   "name": "DIG Corporation",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.DIGCORP",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e001d32e4e",
+   "name": "Dip 'N Grow",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/dip-n-grow/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-26e11ba8a5",
+   "name": "Distru",
+   "segment": "ancillary_business",
+   "category": "Technology / AI / data",
+   "hq_state": "PA",
+   "states_active": [
+    "PA",
+    "US"
+   ],
+   "website": "https://www.distru.com/",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Cannabis inventory, ERP and compliance software company; co-sponsor of the Cultivated Members Breakfast.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.distru.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "file:///home/claude/work/drive/mjbizcon-happenings.xlsx",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.distru.com/cannabis-events/necann-boston",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-bbb5b2360f",
+   "name": "Down To Earth",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/down-to-earth/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7a1d1f5019",
+   "name": "Dyna-Gro / Superthrive",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/dyna-gro/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e43c106670",
+   "name": "DYNOMYCO",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/dynomyco/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7176399950",
+   "name": "Emerald Harvest",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/emerald-harvest/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-12e25ab3c2",
+   "name": "Emerald Triangle / Humboldt County's Own",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/emerald-triangle/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-68c3da9c6f",
+   "name": "Evergreen Growers Supply, LLC",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "http://www.evergreengrowers.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "http://www.evergreengrowers.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e686a078f8",
+   "name": "ExHale",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/exhale/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0ece29d90c",
+   "name": "EZ Trim",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/ez-trim/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-6717d7bfe9",
+   "name": "EZ-CLONE",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/ez-clone/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5d04a083b4",
+   "name": "FAR, Inc.",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.far-inc.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.far-inc.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-244cf8a15e",
+   "name": "Fibredust",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.FIBREDUST",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-240cefc7c7",
+   "name": "Fish Head Farms",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/fish-head-farms/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1ba2c26a76",
+   "name": "Fiskars",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/fiskars/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1b2d1f5490",
+   "name": "Flaster Greenberg",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.flastergreenberg.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.flastergreenberg.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.flastergreenberg.com/practices-new-jersey-pennsylvania-cannabis-law.html",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.flastergreenberg.com/locations-38.html",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ff741c59d9",
+   "name": "FloraFlex",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/floraflex/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5de5dc2d2a",
+   "name": "Florikan",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.FLORIKAN",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-53a22eb8e5",
+   "name": "FoxFarm",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/foxfarm/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-6efc0cdffe",
+   "name": "Futurola",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/futurola/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f1b9aca862",
+   "name": "Gempler's",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.GEMPLERS",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8b7eeffef5",
+   "name": "Glass for the Grass",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.pittsburghcannabisfest.com/vendors",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f3d2d17ec6",
+   "name": "Glass Gallery & Wellness",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.pittsburghcannabisfest.com/vendors",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e340236eab",
+   "name": "Glass Under Fire",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.pittsburghcannabisfest.com/vendors",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-30b32df4ac",
+   "name": "Global Horticultural, Inc.",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "http://www.globalhort.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "http://www.globalhort.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d405ceed72",
+   "name": "GOAT Grinder",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.goatgrinder.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.goatgrinder.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pittsburghcannabisfest.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b9f32b4cc4",
+   "name": "Gobi Labs Hemp, Inc.",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://gobihemp.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://gobihemp.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf#page=1",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e2606a7b09",
+   "name": "Gowan Company",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.GOWAN",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5e4c6e5635",
+   "name": "Greek Glass Shop",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.greekglassshop.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.greekglassshop.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pittsburghcannabisfest.com/vendors",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3c2cc36ea9",
+   "name": "GreenBroz",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/greenbroz/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-366370445a",
+   "name": "GreenGro Biologicals",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/greengro-biologicals/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-daff755888",
+   "name": "Greentek",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.GREENTEK",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-228424bb07",
+   "name": "Grower's Choice",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/growers-choice-brands-we-carry/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-76f6c6d603",
+   "name": "GrowLiv Biologicals",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "http://www.growliv.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "http://www.growliv.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5d961ab4d2",
+   "name": "Growscape / The HC Companies",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.HC",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-069e2da785",
+   "name": "Grozone Control",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/grozone/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c18f1a73e2",
+   "name": "Grön",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.pittsburghcannabisfest.com/vendors",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b540d6fdae",
+   "name": "Guano Company International",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/guano-company-international/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-560bb485fc",
+   "name": "Harrens Lab",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "http://www.harrenslab.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "http://www.harrenslab.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf#page=1",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-2a096074af",
+   "name": "Harvest More",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/harvest-more/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e4aee59468",
+   "name": "High Caliper Growing / Smart Pot",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/high-caliper-growing/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-2571e4d418",
+   "name": "Homeland Hempcrete",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://homelandhempcrete.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://homelandhempcrete.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://homelandhempcrete.com/about",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d8fd0d68bb",
+   "name": "Hormex",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/hormex/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-dba3c25fc1",
+   "name": "Humboldts Secret",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/humboldts-secret/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b4084325ed",
+   "name": "Hydro Systems Company",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.HYDROSYSTEMS",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c2aa0fbcd0",
+   "name": "Hydroponic Research",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/hydroponicresearch/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f921beee40",
+   "name": "Hydrotek",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/hydrotek/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b93810d0dc",
+   "name": "ICL",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.ICL",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-cf3ffffc33",
+   "name": "IDGSeeds / Irving Drive Genetics Seeds",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://idgseeds.com",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://idgseeds.com",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pittsburghcannabisfest.com/vendors",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b3b2437ec2",
+   "name": "IMEG",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://imegcorp.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://imegcorp.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://imegcorp.com/project/cannabis-manufacturing-facility/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.imegcorp.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c3be139858",
+   "name": "International Horticulture / IHORT",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.INTERNATIONALHORT",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-6554a2478c",
+   "name": "IPM Laboratories",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "http://www.ipmlabs.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "http://www.ipmlabs.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-85bda57faa",
+   "name": "Irritec USA",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.IRRITEC",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e699446811",
+   "name": "JH Biotech",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.JHBIOTECH",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b52ee94e5f",
+   "name": "Jiffy Products of America",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.JIFFY",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-cb13c2f6f3",
+   "name": "K&L Gates",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.klgates.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.klgates.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.klgates.com/Cannabis",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5ee20a7963",
+   "name": "KCA Laboratories",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://kcalabs.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://kcalabs.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf#page=1",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ccae5416f2",
+   "name": "Keepin' It Glassy",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.pittsburghcannabisfest.com/vendors",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1b7ce2f298",
+   "name": "Key to Life",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/key-to-life-brand/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5e267f7c1e",
+   "name": "Kootenay Filter Inc.",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/kootenay-filter-inc/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-024f3f4d2d",
+   "name": "Koppert Biological Systems, Inc.",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-fd649d7397",
+   "name": "Kunafin The Insectary",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "http://www.kunafin.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "http://www.kunafin.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-2a83fdceff",
+   "name": "Labeling Solutions",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.LABELINGSOL",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7007dc06dd",
+   "name": "Lambert Peat Moss",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.LAMBERT",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3dcce178ea",
+   "name": "Lancaster DHIA",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.lancasterdhia.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.lancasterdhia.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf#page=1",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4c20461e88",
+   "name": "Lancaster Trading House",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://lancastertradinghouse.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://lancastertradinghouse.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-efb02c57d5",
+   "name": "Libertarian Party of Pennsylvania",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "events": [
+    "Summer Cannafest 2025"
+   ],
+   "description": "political party booth",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://lebtown.com/2025/06/10/rainy-weekend-doesnt-dampen-spirits-for-2025-summer-canna-fest-at-fairgrounds/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b78286fdbe",
+   "name": "Lumite",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.LUMITE",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-08155b5058",
+   "name": "Marrone Bio Innovations",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/marrone-bio-innovations/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f6785d1275",
+   "name": "Master Plant-Prod",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.MASTERPLANT",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d6b1366cc5",
+   "name": "Maxicrop",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/maxicrop/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-58ad965e6b",
+   "name": "Method Seven",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/method-seven-grow-room-glasses/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0ff4f10589",
+   "name": "Microbe Life Hydroponics",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/microbe-life-hydroponics/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-cc3fa018c8",
+   "name": "MIIM Horticulture",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/miim-horticulture/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b2415bf0d9",
+   "name": "Miller Chemical & Fertilizer",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.MILLER",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1de4ea5fea",
+   "name": "Milwaukee Instruments",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/milwaukee-instruments-brand/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f326e4bab7",
+   "name": "Modine Manufacturing",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.MODINE",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-25893bb6c4",
+   "name": "Monterey Lawn and Garden Products",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/monterey/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-83e3751704",
+   "name": "Myron L Company",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/myron-l/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-fe3b588dc0",
+   "name": "NECANN",
+   "segment": "event_organizer",
+   "category": "Events / networking",
+   "hq_city": "Boston",
+   "hq_state": "MA",
+   "states_active": [
+    "MA",
+    "NJ",
+    "PA"
+   ],
+   "website": "https://necann.com/",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Organizer of regional cannabis conventions and NECANN Cup awards in New England, New Jersey and Pennsylvania.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://necann.com/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://necann.com/links",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://necann.com/?p=53386",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://necann.com/boston/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://necann.com/boston/boston-programming-schedule",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ganjapreneur.com/necann-brings-east-coast-cannabis-together-in-boston/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://cannabispromotions.com/tradeshows/event/necann-boston-2027",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.businesswire.com/news/home/20260730065307/en/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://ganjapreneur.com/necanns-new-jersey-cannabis-convention-and-necann-cup-awards-return-to-atlantic-city-september-18-19/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://cannabispromotions.com/tradeshows/event/necann-new-jersey-2027",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://necann.com/pennsylvania-convention/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a633a4e243",
+   "name": "Nelson Analytical Lab",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "http://www.nelsonanalytical.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "http://www.nelsonanalytical.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf#page=1",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d5ea2c2ad7",
+   "name": "Netafim",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/netafim/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ad868d4fa0",
+   "name": "New Bloom Labs",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.newbloomlabs.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.newbloomlabs.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf#page=2",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f9b953eeaa",
+   "name": "New Pennsylvania Project",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "events": [
+    "Summer Cannafest 2025"
+   ],
+   "description": "advocacy organization",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://lebtown.com/2025/06/10/rainy-weekend-doesnt-dampen-spirits-for-2025-summer-canna-fest-at-fairgrounds/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8211583081",
+   "name": "NextLight",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/nextlight/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-08530e9b96",
+   "name": "Northeast Times",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Philadelphia",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://northeasttimes.com",
+   "description": "Northeast Philadelphia community newspaper that covered the link between Senate races and legalization.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://northeasttimes.com/2026/09/29/pennsylvania-democrats-tie-marijuana-legalization-to-three-senate-races/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1f274dbcbe",
+   "name": "NPK Industries",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/npk-industries/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3ea3d0675a",
+   "name": "Nursery Supplies Inc.",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.NURSSUP",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-2958ceeb9b",
+   "name": "One Sweet World",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_city": "Lancaster County",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "events": [
+    "Summer Cannafest 2025"
+   ],
+   "description": "candy, freeze-dried confections",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://lebtown.com/2025/06/10/rainy-weekend-doesnt-dampen-spirits-for-2025-summer-canna-fest-at-fairgrounds/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4c70e6b297",
+   "name": "Organic Mechanics",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://organicmechanicsoil.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://organicmechanicsoil.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/organic-mechanics/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-56653a93c6",
+   "name": "Pace 49",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.PACE",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4cf2bc9611",
+   "name": "Pacific Packaging Products",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.PACIFICPACK",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-21ff522133",
+   "name": "Pennsylvania Department of Health",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Harrisburg",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.pa.gov/agencies/health/programs/medical-marijuana",
+   "public_contact": "https://www.pa.gov/services/health/register-for-the-medical-marijuana-program",
+   "description": "State health agency whose Office of Medical Marijuana permits grower/processors, dispensaries and labs and runs the patient and caregiver registry.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.pa.gov/en/agencies/health/programs/medical-marijuana.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.pa.gov/agencies/health/programs/medical-marijuana/growers-processors",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.pa.gov/en/agencies/health/programs/medical-marijuana/announcements.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-aa096629c3",
+   "name": "Pennsylvania State Senate",
+   "segment": "lawmaker_official",
+   "category": "Government / regulators",
+   "hq_city": "Harrisburg",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.palegis.us/senate",
+   "description": "Upper chamber of the General Assembly; has been where adult-use legalization bills stalled after House action.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://norml.org/blog/2026/11/09/pennsylvania-senate-flip-provides-pathway-for-adult-use-legalization/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://whyy.org/articles/pennsylvania-adult-use-marijuana-november-election/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://northeasttimes.com/2026/09/29/pennsylvania-democrats-tie-marijuana-legalization-to-three-senate-races/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://mjbizdaily.com/?p=616887",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5b5dce0da3",
+   "name": "Philips horticulture lighting",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/philips/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-44f2b60c2d",
+   "name": "PhillyVoice",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Philadelphia",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.phillyvoice.com",
+   "description": "Philadelphia digital news site covering state marijuana and hemp legislation.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.phillyvoice.com/pennsylvania-marijuana-legalization-2026-shapiro-cannabis/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.phillyvoice.com/pennsylvania-marijuana-hemp-senate-democrats-laughlin-shapiro/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-372bdc403d",
+   "name": "Pinnacle Climate Technologies",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.PINNACLE",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a45ee16681",
+   "name": "Plant Products / Biobest",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "http://www.biobestgroup.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "http://www.biobestgroup.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-66e6b1d4c3",
+   "name": "Plant Success",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/plant-success/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a56a0697ba",
+   "name": "Premier Tech / PRO-MIX",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.premiertech.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.premiertech.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.PREMIER",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-33ceebfb71",
+   "name": "ProKure",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/prokure-brand/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-6ab10d4cd9",
+   "name": "Raindrip",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/raindrip/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-9b11ae20dd",
+   "name": "Rincon-Vitova Insectaries, Inc.",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "http://www.rinconvitova.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "http://www.rinconvitova.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e8d0aa655f",
+   "name": "Roll BJT",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.pittsburghcannabisfest.com/vendors",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-25bdb33c0f",
+   "name": "Royal Gold",
+   "segment": "ancillary_business",
+   "category": "Cultivation / facility systems",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://royalgoldcoco.com/",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Coco fiber-based soils.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/royal-gold",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/royal-gold/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8abdcd4609",
+   "name": "ruck Air Movement",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/ruck-air-movement/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-cd0d3a0319",
+   "name": "S.J. Enterprises / CYCO",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/cyco/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-605a7834d3",
+   "name": "SC Labs",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.sclabs.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.sclabs.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf#page=2",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-daca1a3a1a",
+   "name": "Senninger Irrigation",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.SENNINGER",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f0aead3ed2",
+   "name": "Sensaphone",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://sensaphone.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://sensaphone.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.SENSAPHONE",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-118c841dec",
+   "name": "Sierra Biological Inc.",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "http://www.sierrabiological.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "http://www.sierrabiological.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-75a89bb760",
+   "name": "Sierra Natural Science",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/sierra-natural-science/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8773c3d50f",
+   "name": "SIPCO / Hygrozyme",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/hygrozyme/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4fb88d60de",
+   "name": "Snitz Creek Brewery",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_city": "Lebanon",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "events": [
+    "Summer Cannafest 2025"
+   ],
+   "description": "brewery",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://lebtown.com/2025/06/10/rainy-weekend-doesnt-dampen-spirits-for-2025-summer-canna-fest-at-fairgrounds/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-2aae939878",
+   "name": "Solo Incorporated",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.SOLO",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-de2bd57158",
+   "name": "Sound Horticulture",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "http://soundhorticulture.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "http://soundhorticulture.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-cfd36a9969",
+   "name": "Spears Manufacturing",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.SPEARS",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e24981dc5c",
+   "name": "Spotlight PA",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Harrisburg",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.spotlightpa.org",
+   "description": "Nonprofit statewide newsroom covering the Capitol, including cannabis legalization debates.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.spotlightpa.org/news/2026/02/cannabis-marijuana-recreational-legalization-pennsylvania-shapiro-legislature-capitol/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-39fccba262",
+   "name": "StandardC",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.standardc.io/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.standardc.io/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-30852239b0",
+   "name": "Structural Plastics Corporation",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.STRUCTPLAS",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-38da43bf39",
+   "name": "Summer Cannafest (Lebanon, PA)",
+   "segment": "event_organizer",
+   "category": "Events / networking",
+   "hq_city": "Lebanon",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "description": "Pennsylvania cannabis community festival held at the Lebanon fairgrounds.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://lebtown.com/2025/06/10/rainy-weekend-doesnt-dampen-spirits-for-2025-summer-canna-fest-at-fairgrounds/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-729f995f86",
+   "name": "Sun Gro Horticulture",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/sun-gro-horticulture/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-713624b3d6",
+   "name": "Sustane Natural Fertilizer",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.SUSTANE",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-91c027fb6f",
+   "name": "T.O. Plastics",
+   "segment": "ancillary_business",
+   "category": "Cultivation / facility systems",
+   "hq_city": "Clearwater",
+   "hq_state": "MN",
+   "states_active": [
+    "PA",
+    "US"
+   ],
+   "website": "https://www.toplastics.com/horticulture",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Thermoformed plant trays, plug trays and pots.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/t-o-plastics",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.TOPLASTICS",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.greenhousegrower.com/technology/t-o-plastics-upgrades-its-minnesota-production-facility/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://cars.superpages.com/clearwater-mn/bpp/t-o-plastics-inc-19738110",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-42edfa1c4a",
+   "name": "Technaflora",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/technaflora/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-fdcf1b07d4",
+   "name": "The Hemp Butterfly",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.pittsburghcannabisfest.com/vendors",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1508a28e4c",
+   "name": "Times News (tnonline)",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Lehighton",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.tnonline.com",
+   "description": "Carbon County-area daily news site that has covered state cannabis policy.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.tnonline.com/?p=282139",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-13984817d1",
+   "name": "Tip Top Bio-Control",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://tiptopbiocontrol.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://tiptopbiocontrol.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8b2497380a",
+   "name": "Tree Top Remedy",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.treetopremedy.com",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.treetopremedy.com",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.cannaworldfair.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7f1d4b0e48",
+   "name": "Trichome Analytical",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://trichomeanalytical.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://trichomeanalytical.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf#page=2",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-142c79f6f0",
+   "name": "TrolMaster",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/trolmaster/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f2cc377ccd",
+   "name": "Twister / Keirton",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/twister/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-719c94899a",
+   "name": "UAV-IQ Precision Agriculture",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.uaviq.com/en/home/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.uaviq.com/en/home/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://anbp.org/members/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-cf9d2beea9",
+   "name": "United States Plastic Corporation",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.USPLASTICS",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e73c76af37",
+   "name": "USA Gypsum / Beneficial Reuse Management",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.usagypsum.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.usagypsum.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.USAGYPSUM",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3870e29f7b",
+   "name": "USA Lab",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/usa-labs/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0bb8156cee",
+   "name": "Ushio",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/ushio/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4da05d51ad",
+   "name": "Venture Lighting / Sunmaster",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/sunmaster/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5a6df4a8ac",
+   "name": "Von Dirt",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "NJ",
+   "states_active": [
+    "PA",
+    "NJ"
+   ],
+   "events": [
+    "Summer Cannafest 2025"
+   ],
+   "description": "New Jersey vendor seen exhibiting at regional cannabis festivals.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://lebtown.com/2025/06/10/rainy-weekend-doesnt-dampen-spirits-for-2025-summer-canna-fest-at-fairgrounds/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "file:/home/claude/vendors/data/rosters/us-pa-summer-cannafest-2025.json",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a97d743ea1",
+   "name": "Wellmaster Pipe & Supply",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.WELLMASTER",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-62f06bce9f",
+   "name": "Westlake Pipe & Fittings / LASCO",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.westlakepipe.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.westlakepipe.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.LASCO",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-bc9e0cb438",
+   "name": "WHYY",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Philadelphia",
+   "hq_state": "PA",
+   "states_active": [
+    "PA",
+    "NJ",
+    "DE"
+   ],
+   "website": "https://whyy.org",
+   "description": "Philadelphia public radio and news outlet covering Pennsylvania cannabis legislation.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://whyy.org/articles/pennsylvania-adult-use-marijuana-november-election/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f8e849de25",
+   "name": "WPXI",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Pittsburgh",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://wpxi.com",
+   "description": "Pittsburgh TV news station that reported on the Office of Medical Marijuana director change.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://wpxi.com/news/local/new-director-pennsylvanias-office-medical-marijuana/56OB3DJBGJHDXL3YVN6VCRKTHA",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3fd932fb43",
+   "name": "Yara North America",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.YARA",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-fc3c60c716",
+   "name": "Zick Productions / CannFest",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "website": "https://www.cann-fest.com/",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.cann-fest.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.cann-fest.com/pages/pennsylvania-cannfest",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ea3d4020a2",
+   "name": "Zip Zag",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "PA",
+   "states_active": [
+    "PA"
+   ],
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.htgsupply.com/product-category/brands-we-carry/zip-zag/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.htgsupply.com/shipping-policy/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    }
+   ]
+  }
+ ]
+}

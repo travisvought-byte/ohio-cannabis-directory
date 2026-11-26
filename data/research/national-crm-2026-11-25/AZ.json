@@ -1,0 +1,169 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "AZ",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 5,
+ "records": [
+  {
+   "crm_id": "crm-o-a630770d0a",
+   "name": "Arizona Department of Health Services",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Phoenix",
+   "hq_state": "AZ",
+   "states_active": [
+    "AZ"
+   ],
+   "website": "https://www.azdhs.gov/licensing/marijuana/index.php",
+   "public_contact": "https://www.azdhs.gov/pio",
+   "description": "State health agency that licenses medical and adult-use marijuana establishments and runs the medical marijuana patient card program.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.azdhs.gov/licensing/marijuana/index.php",
+     "reviewed_on": "2026-11-15",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.azdhs.gov/documents/licensing/medical-marijuana/reports/2026/mm-jul26.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.azdhs.gov/documents/policy-intergovernmental-affairs/administrative-counsel-rules/rules/rulemaking/adult-use-marijuana/ner-for-ch-18-2024-10.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.azdhs.gov/documents/director/administrative-counsel-rules/rules/rulemaking/adult-use-marijuana/ner-for-social-equity.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Debbie Johnston",
+     "role": "Director (appointed by Gov. Hobbs, Nov 2025)",
+     "confidence": "lead",
+     "sources": [
+      "https://www.azmed.org/governor-hobbs-appoints-debbie-johnston-as-arizona-department-of-health-services-director",
+      "https://www.einpresswire.com/article/869883681/governor-katie-hobbs-appoints-debbie-johnston-to-lead-arizona-department-of-health-services",
+      "https://www.kjzz.org/politics/2026-06-12/hobbs-3rd-pick-to-lead-arizona-department-of-health-services-preliminarily-approved-by-lawmakers"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d3328aec1f",
+   "name": "Arizona Judicial Branch",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Phoenix",
+   "hq_state": "AZ",
+   "states_active": [
+    "AZ"
+   ],
+   "website": "https://www.azcourts.gov/prop207",
+   "description": "Arizona courts system that handles petitions to expunge marijuana offense records under Proposition 207 (A.R.S. 36-2862).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.azcourts.gov/prop207",
+     "reviewed_on": "2026-11-15",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.azcourts.gov/Portals/0/0/Prop%20207/AOCCREM1I-071221.pdf?ver=2021-06-23-145149-577",
+     "reviewed_on": "2026-11-15",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-00243581ea",
+   "name": "Arizona Public Health Association",
+   "segment": "advocacy_nonprofit",
+   "category": "Associations / advocacy / nonprofits",
+   "hq_state": "AZ",
+   "states_active": [
+    "AZ"
+   ],
+   "website": "https://azpha.org/",
+   "description": "Statewide public health association that tracks ADHS leadership and health policy, including the marijuana program.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://azpha.org/2025/11/25/debbie-johnston-nominated-to-adhs-director-post-a-new-chapter-for-arizonas-health-department/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ce5cd43070",
+   "name": "Arizona State Legislature",
+   "segment": "lawmaker_official",
+   "category": "Government / regulators",
+   "hq_city": "Phoenix",
+   "hq_state": "AZ",
+   "states_active": [
+    "AZ"
+   ],
+   "website": "https://www.azleg.gov/",
+   "description": "Arizona's state legislature, which amends the medical and adult-use marijuana statutes in Title 36 within voter-protection limits.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.azleg.gov/legtext/57leg/2R/bills/SB1641P.htm",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.azleg.gov/legtext/57leg/2R/summary/H.SB1641_031926_COM.DOCX.htm",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.azleg.gov/legtext/57leg/2R/fiscal/SB1641.DOCX.htm",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.azleg.gov/legtext/56leg/2R/bills/HB2247P.htm",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.azleg.gov/ars/36/02858.htm",
+     "reviewed_on": "2026-11-15",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-63389b195a",
+   "name": "Fogco",
+   "segment": "ancillary_business",
+   "category": "Cultivation / facility systems",
+   "hq_city": "Chandler",
+   "hq_state": "AZ",
+   "states_active": [
+    "US"
+   ],
+   "website": "https://fogco.com/",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "High-pressure fog systems for odor control, humidification and cooling, plus Snap-Fan air movers.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/fogco",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    }
+   ]
+  }
+ ]
+}

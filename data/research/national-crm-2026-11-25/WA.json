@@ -1,0 +1,174 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "WA",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 6,
+ "records": [
+  {
+   "crm_id": "crm-o-dc594dabcd",
+   "name": "Cannabis Observer",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "WA",
+   "states_active": [
+    "WA"
+   ],
+   "website": "https://cannabis.observer/",
+   "description": "Washington-based public-records and policy tracker covering WSLCB activity (cannabis.observer).",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://cannabis.observer/events/wslcb-executive-management-team-january-29-2020/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0061d548f8",
+   "name": "Washington House Regulated Substances & Gaming Committee",
+   "segment": "lawmaker_official",
+   "category": "Government / regulators",
+   "hq_city": "Olympia",
+   "hq_state": "WA",
+   "states_active": [
+    "WA"
+   ],
+   "description": "House policy committee that hears cannabis bills.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://lawfilesext.leg.wa.gov/Biennium/2023-24/Htm/Bill%20Reports/House/2334%20HBA%20RSG%2024.htm",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4705be3904",
+   "name": "Washington Senate Labor & Commerce Committee",
+   "segment": "lawmaker_official",
+   "category": "Government / regulators",
+   "hq_city": "Olympia",
+   "hq_state": "WA",
+   "states_active": [
+    "WA"
+   ],
+   "description": "Senate committee that hears cannabis bills (e.g., SB 6290 2026 report coded LC).",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://lawfilesext.leg.wa.gov/biennium/2025-26/Pdf/Bill%20Reports/Senate/6290%20SBR%20LC%20TA%2026.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d28efc5f2b",
+   "name": "Washington State Department of Agriculture - Hemp Program",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Olympia",
+   "hq_state": "WA",
+   "states_active": [
+    "WA"
+   ],
+   "website": "https://agr.wa.gov/departments/land-and-water/hemp",
+   "description": "WSDA licenses hemp growers and administers Washington's USDA-approved hemp plan.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://agr.wa.gov/departments/land-and-water/hemp",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f8c35fad63",
+   "name": "Washington State Department of Health - Medical Cannabis Program",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Tumwater",
+   "hq_state": "WA",
+   "states_active": [
+    "WA"
+   ],
+   "website": "https://doh.wa.gov/you-and-your-family/cannabis/medical-cannabis",
+   "description": "DOH unit that runs Washington's medical cannabis authorization database, consultant certification and compliant-product rules.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://doh.wa.gov/you-and-your-family/cannabis/medical-cannabis/patient-information/frequently-asked-questions",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b995607bfb",
+   "name": "Washington State Liquor and Cannabis Board",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Olympia",
+   "hq_state": "WA",
+   "states_active": [
+    "WA"
+   ],
+   "website": "https://lcb.wa.gov/",
+   "description": "State agency that licenses and regulates adult-use cannabis producers, processors, retailers, transporters and labs in Washington, plus liquor, tobacco and vapor.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://lcb.wa.gov/board/meet-board",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://lcb.wa.gov/education/know-the-law-cannabis",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Jim Vollendroff",
+     "role": "Board Chair",
+     "confidence": "verified",
+     "sources": [
+      "https://lcb.wa.gov/pressreleases/2024/jim-vollendroff-appointed-lcb-board-chair",
+      "https://psychiatry.uw.edu/who-we-are/news-events/news/wa-state-governor-jay-inslee-appoints-new-chair-for-liquor-and-cannabis-board"
+     ]
+    },
+    {
+     "name": "Ollie Garrett",
+     "role": "Board Member",
+     "confidence": "lead",
+     "sources": [
+      "https://lcb.wa.gov/board/meet-board",
+      "https://www.cannabisbusinesstimes.com/business-issues-benchmarks/compliance/news/15699901/wash-gov-appoints-ollie-garrett-to-state-liquor-and-cannabis-board"
+     ]
+    },
+    {
+     "name": "Pete Holmes",
+     "role": "Board Member",
+     "confidence": "verified",
+     "sources": [
+      "https://lcb.wa.gov/node/6782",
+      "https://content.govdelivery.com/accounts/WALCB/bulletins/3cdfd1e"
+     ]
+    },
+    {
+     "name": "William N. Lukela",
+     "role": "Agency Director",
+     "confidence": "verified",
+     "sources": [
+      "https://lcb.wa.gov/pressreleases/2023/lcb-hires-william-n-lukela-as-agency-director"
+     ]
+    }
+   ]
+  }
+ ]
+}

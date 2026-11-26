@@ -1,0 +1,102 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "VA",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 3,
+ "records": [
+  {
+   "crm_id": "crm-o-e5c17d630b",
+   "name": "Drug Enforcement Administration (DEA) — marijuana rescheduling",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Arlington",
+   "hq_state": "VA",
+   "states_active": [
+    "US"
+   ],
+   "website": "https://www.dea.gov/marijuana-rescheduling-regulatory-actions",
+   "description": "Federal agency that administers controlled-substance scheduling and registrations, including the marijuana rescheduling proceedings.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.dea.gov/marijuana-rescheduling-regulatory-actions",
+     "reviewed_on": "2026-11-15",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5870448df0",
+   "name": "Virginia Cannabis Control Authority",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Richmond",
+   "hq_state": "VA",
+   "states_active": [
+    "VA"
+   ],
+   "website": "https://cca.virginia.gov/",
+   "description": "State authority that regulates Virginia's medical cannabis program and is building the adult-use retail licensing system.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cca.virginia.gov/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cca.virginia.gov/faq",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.cca.virginia.gov/about-us",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://rga.lis.virginia.gov/Published/2025/RD974",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.governor.virginia.gov/newsroom/news-releases/2026/june-releases/name-1119669-en.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.axios.com/local/richmond/2026/06/29/virginia-recreational-marijuana-sales-july-2027-tax",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://norml.org/news/2026/07/02/virginia-provisions-regulating-adult-use-cannabis-sales-codified-into-law/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7daa5fda58",
+   "name": "Virginia Department of Agriculture and Consumer Services",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Richmond",
+   "hq_state": "VA",
+   "states_active": [
+    "VA"
+   ],
+   "website": "https://www.vdacs.virginia.gov/",
+   "description": "State agriculture agency that regulates hemp and hemp-derived products in Virginia.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.vdacs.virginia.gov/press-releases-260701-virginias-new-marijuana-hemp-laws.shtml",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  }
+ ]
+}

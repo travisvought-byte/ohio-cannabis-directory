@@ -1,0 +1,74 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "MD",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 2,
+ "records": [
+  {
+   "crm_id": "crm-o-0155a0adde",
+   "name": "Advisory Board on Medical and Adult-Use Cannabis",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_state": "MD",
+   "states_active": [
+    "MD"
+   ],
+   "description": "State advisory board that advises Maryland on medical and adult-use cannabis policy.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://2025mdmanual.msa.maryland.gov/msa/mdmanual/26excom/html/05cannaboard.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d8fee8dfd7",
+   "name": "Maryland Cannabis Administration",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_state": "MD",
+   "states_active": [
+    "MD"
+   ],
+   "website": "https://cannabis.maryland.gov/",
+   "description": "State agency that licenses and regulates Maryland's medical and adult-use cannabis businesses and patient program.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.maryland.gov/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.maryland.gov/Pages/cannabisfaq.aspx",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://governor.maryland.gov/news/press-releases/governor-moore-announces-appointment-tabatha-robinson-director-maryland-cannabis-administration",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://msa.maryland.gov/msa/mdmanual/25ind/html/12cannabisf.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Tabatha Robinson",
+     "role": "Director",
+     "confidence": "lead",
+     "sources": [
+      "https://governor.maryland.gov/news/press-releases/governor-moore-announces-appointment-tabatha-robinson-director-maryland-cannabis-administration",
+      "https://mjbizdaily.com/?p=400634"
+     ]
+    }
+   ]
+  }
+ ]
+}

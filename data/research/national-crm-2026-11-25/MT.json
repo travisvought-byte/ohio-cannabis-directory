@@ -1,0 +1,31 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "MT",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 1,
+ "records": [
+  {
+   "crm_id": "crm-o-538a6140b8",
+   "name": "Montana Department of Revenue, Cannabis Control Division",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Helena",
+   "hq_state": "MT",
+   "states_active": [
+    "MT"
+   ],
+   "website": "https://revenue.mt.gov/card/cannabis/",
+   "public_contact": "https://revenue.mt.gov/card/cannabis/",
+   "description": "State division that licenses and regulates Montana's medical and adult-use marijuana businesses.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://revenue.mt.gov/card/cannabis/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "SC",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 1,
+ "records": [
+  {
+   "crm_id": "crm-o-7e5b6404fb",
+   "name": "AHT Cooling Systems USA, Inc.",
+   "segment": "ancillary_business",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Ladson",
+   "hq_state": "SC",
+   "states_active": [
+    "US"
+   ],
+   "website": "https://www.aht.at/",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Commercial refrigerated and freezer display cases (Austrian maker AHT).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/aht-cooling-systems-usa-inc",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.areadevelopment.com/newsitems/11-2-2017/aht-cooling-systems-ladson-south-carolina.shtml",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.expansionsolutionsmagazine.com/aht-cooling-systems-usa-inc-expanding-operations-in-charleston-county/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  }
+ ]
+}

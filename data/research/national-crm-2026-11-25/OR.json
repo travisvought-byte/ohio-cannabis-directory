@@ -1,0 +1,106 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "OR",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 2,
+ "records": [
+  {
+   "crm_id": "crm-o-a990b1b446",
+   "name": "Oregon Liquor and Cannabis Commission",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Portland",
+   "hq_state": "OR",
+   "states_active": [
+    "OR"
+   ],
+   "website": "https://www.oregon.gov/olcc/marijuana/pages/default.aspx",
+   "description": "State commission that licenses and regulates recreational cannabis producers, processors, wholesalers, retailers and labs, and tracks product through Metrc, plus liquor.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.oregon.gov/olcc/Pages/commissioners.aspx",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.oregon.gov/olcc/marijuana/pages/frequently-asked-questions.aspx",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.oregon.gov/oha/ph/DiseasesConditions/ChronicDisease/MedicalMarijuanaProgram/Pages/index.aspx",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/CHRONICDISEASE/MEDICALMARIJUANAPROGRAM/Documents/bulletins/Information_Bulletin-2026-01_OMMP_OPS_Merge-MCAP.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/CHRONICDISEASE/MEDICALMARIJUANAPROGRAM/Documents/commission/Oregon-Cannabis-Commission-Membership.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.oregon.gov/oda/programs/hemp/pages/default.aspx",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Alicia Hays",
+     "role": "Commission Chair",
+     "confidence": "verified",
+     "sources": [
+      "https://content.govdelivery.com/accounts/OLCC/bulletins/42092b2"
+     ]
+    },
+    {
+     "name": "Craig Prins",
+     "role": "Former Executive Director (retired 2025)",
+     "confidence": "verified",
+     "sources": [
+      "https://content.govdelivery.com/accounts/OLCC/bulletins/3e095c1",
+      "https://www.opb.org/article/2025/05/15/oregon-liquor-commission-director-craig-orins-cannabis-retiring-retirement/"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a3454dd6d3",
+   "name": "Tokeativity",
+   "segment": "advocacy_nonprofit",
+   "category": "Associations / advocacy / nonprofits",
+   "hq_state": "OR",
+   "states_active": [
+    "OR"
+   ],
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Women-focused cannabis community organization; appeared at MJBizCon 2026 Oregon session.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://mjbizconference.com/sessions/oregon-state-takeover/",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Lisa Snyder",
+     "role": "Speaker (title not posted)",
+     "confidence": "verified",
+     "sources": [
+      "https://mjbizconference.com/sessions/oregon-state-takeover/"
+     ]
+    }
+   ]
+  }
+ ]
+}

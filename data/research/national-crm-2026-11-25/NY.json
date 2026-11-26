@@ -1,0 +1,2615 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "NY",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 111,
+ "records": [
+  {
+   "crm_id": "crm-o-fcbbc76e48",
+   "name": "A to Z Sampling",
+   "segment": "lab_testing",
+   "category": "Processing / extraction / testing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "public_contact": "avi@steadfastlabs.com",
+   "license": "NY OCM approved sampling firm",
+   "description": "Firm approved by the NY Office of Cannabis Management to collect cannabis samples for laboratory testing.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/sampling-firms",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-086869ecd6",
+   "name": "ACT Laboratories of New York, LLC",
+   "segment": "lab_testing",
+   "category": "Processing / extraction / testing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM permitted cannabis laboratory and approved sampling firm",
+   "description": "Cannabis testing laboratory permitted by the NY Office of Cannabis Management; also an OCM-approved sampling firm.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/cannabis-laboratories",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.ny.gov/sampling-firms",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://actlab.com/new-york/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-fcae7eaaae",
+   "name": "AmeriCU Credit Union",
+   "segment": "finance_investment",
+   "category": "Finance / payments / accounting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.americu.org/cannabis-banking/",
+   "public_contact": "315-281-6507; specialtyaccounts@americu.org",
+   "description": "Financial institution listed in the NY OCM SEE Cannabis Banking Directory as serving cannabis businesses (listing is not an OCM endorsement).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/node/10411",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-bc75f0a6be",
+   "name": "Art of Flower Farm & Dispensary LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Sleepy Hollow",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Microbusiness License (OCM-MICR-24-000068)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-48dad4c1ee",
+   "name": "Association of New York Cannabis Processors",
+   "segment": "trade_association",
+   "category": "Associations / advocacy / nonprofits",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "description": "Trade group for licensed New York adult-use cannabis processors; testified at the 2026 joint legislative budget hearing.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://nyassembly.gov/write/upload/publichearing/001508/006598.pdf",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "John Vavalo",
+     "role": "President",
+     "confidence": "verified",
+     "sources": [
+      "https://nyassembly.gov/write/upload/publichearing/001508/006598.pdf"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-22bd7191f9",
+   "name": "Bison State Bank",
+   "segment": "finance_investment",
+   "category": "Finance / payments / accounting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.bisonstatebank.com/",
+   "public_contact": "833-535-2095; bsa@bisonstatebank.com",
+   "description": "Financial institution listed in the NY OCM SEE Cannabis Banking Directory as serving cannabis businesses (listing is not an OCM endorsement).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/node/10411",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d6136dda51",
+   "name": "Botannis Labs NY Corp",
+   "segment": "lab_testing",
+   "category": "Processing / extraction / testing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://botannis.com/",
+   "license": "NY OCM permitted cannabis laboratory and approved sampling firm",
+   "description": "Cannabis testing laboratory permitted by the NY Office of Cannabis Management; also an OCM-approved sampling firm.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/cannabis-laboratories",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.ny.gov/sampling-firms",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-919cac711e",
+   "name": "Brooklyn Defender Services",
+   "segment": "advocacy_nonprofit",
+   "category": "Legal / compliance / consulting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://bds.org/",
+   "public_contact": "718-254-0700; info@bds.org",
+   "description": "Nonprofit legal services provider that helps New Yorkers with criminal record sealing and expungement, including marijuana records.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://bds.org/our-work/civil-justice",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-15fcdca543",
+   "name": "Budding Industry Group LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Deer Park",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000012)",
+   "description": "Licensed New York adult-use cannabis retailer doing business as Long Island Cannabis Club with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a073e5f865",
+   "name": "Cannabinoids in Clinical Practice & Research Symposium (NY OCM)",
+   "segment": "regulator_government",
+   "category": "Education / research / health",
+   "hq_city": "Tarrytown",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://cannabis.ny.gov/2026-symposium",
+   "public_contact": "888-626-5151; medical@ocm.ny.gov",
+   "description": "Annual clinical cannabinoid symposium run by New York's Office of Cannabis Management with Montefiore Einstein.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/2026-symposium",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.ny.gov/adult-use-information",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.ny.gov/medical",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.ny.gov/cannabis-control-board-meetings",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.ny.gov/system/files/documents/2026/04/ccb-meeting-minutes-3.5.26.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.ny.gov/system/files/documents/2026/04/april-ccb-press-release.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "John Kagia",
+     "role": "Executive Director",
+     "confidence": "verified",
+     "sources": [
+      "https://www.governor.ny.gov/news/governor-hochul-announces-appointment-john-kagia-acting-executive-director-office-cannabis",
+      "https://spectrumlocalnews.com/nys/central-ny/news/2026/06/03/office-of-cannabis-management-executive-director-among-n-y--state-senate-confirmations",
+      "https://www.longisland.com/news/06-04-26/new-york-state-senate-confirms-john-kagia-as-executive-director-of-the-office-of-cannabis-management.html"
+     ]
+    },
+    {
+     "name": "Jessica Garcia",
+     "role": "Chair",
+     "confidence": "lead",
+     "sources": [
+      "https://honeysucklemag.com/jessica-garcia-and-joshua-norkin-confirmed-to-lead-key-new-york-state-agencies",
+      "https://www.governor.ny.gov/news/governor-hochul-announces-confirmation-director-and-chair-positions-state-government"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-445074498e",
+   "name": "Cannabis Association of New York (CANY)",
+   "segment": "trade_association",
+   "category": "Associations / advocacy / nonprofits",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.cany.org/",
+   "public_contact": "607-205-8686; members@cany.org",
+   "description": "Statewide trade association representing cannabis businesses across the New York supply chain.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.cany.org/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.cany.org/contact/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.cany.org/2026/02/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-eb804748cd",
+   "name": "Cannabis Means Business (formerly CWCBExpo)",
+   "segment": "event_organizer",
+   "category": "Events / networking",
+   "hq_city": "New York",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "description": "New York cannabis and hemp business expo, renamed from Cannabis World Congress & Business Exposition (CWCBExpo).",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://tradefest.io/en/event/cannabis-means-business-formerly-cannabis-world-congress-business-exposition",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://natlawreview.com/press-releases/speakers-panels-and-networking-opportunities-announced-cannabis-means",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://sg.finance.yahoo.com/news/shaping-future-cannabis-hemp-cwcbexpo-133500718.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-bae0cb29c0",
+   "name": "Cannabis Sampling Solutions",
+   "segment": "lab_testing",
+   "category": "Processing / extraction / testing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://cannabissamplingny.com/",
+   "public_contact": "1-845-670-5950; info@cannabissamplingny.com",
+   "license": "NY OCM approved sampling firm",
+   "description": "Firm approved by the NY Office of Cannabis Management to collect cannabis samples for laboratory testing.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/sampling-firms",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.cannabissamplingny.com/contact",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f02b2dc5ff",
+   "name": "CannaFirst Financial",
+   "segment": "finance_investment",
+   "category": "Finance / payments / accounting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://cannafirst.com/",
+   "public_contact": "800-788-1968",
+   "description": "Financial institution listed in the NY OCM SEE Cannabis Banking Directory as serving cannabis businesses (listing is not an OCM endorsement).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/node/10411",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4c86c08421",
+   "name": "Center for Community Alternatives",
+   "segment": "advocacy_nonprofit",
+   "category": "Legal / compliance / consulting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://communityalternatives.org/",
+   "public_contact": "315-422-5638; cca@communityalternatives.org",
+   "description": "Nonprofit legal services provider that helps New Yorkers with criminal record sealing and expungement, including marijuana records.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://communityalternatives.org/programs/3c1-reentry-advocacy",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7b0cbd16dc",
+   "name": "Certainty Analytical Labs",
+   "segment": "lab_testing",
+   "category": "Processing / extraction / testing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "public_contact": "info@certainsciences.com",
+   "license": "NY OCM permitted cannabis laboratory",
+   "description": "Cannabis testing laboratory permitted by the NY Office of Cannabis Management.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/cannabis-laboratories",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.certainsciences.com/contact",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-edf8fb13f0",
+   "name": "Certified Testing & Data",
+   "segment": "lab_testing",
+   "category": "Processing / extraction / testing",
+   "hq_state": "NY",
+   "states_active": [
+    "PA",
+    "NY"
+   ],
+   "website": "https://certifiedtnd.com/",
+   "public_contact": "518-900-5515; sales@certifiedtnd.com",
+   "license": "NY OCM permitted cannabis laboratory and approved sampling firm",
+   "description": "Cannabis testing laboratory permitted by the NY Office of Cannabis Management; also an OCM-approved sampling firm.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://certifiedtnd.com/",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf#page=1",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/pda/documents/plants_land_water/hemp/documents/pda%20compliance%20testing%20laboratory%20registry.pdf",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://cannabis.ny.gov/cannabis-laboratories",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.ny.gov/sampling-firms",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-32951b984a",
+   "name": "Citiva Medical LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM medical Registered Organization",
+   "description": "Registered organization in New York's medical cannabis program operating 4 medical dispensing facilities (DBA Be.).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/dispensing-facilities",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f4bed4a8ec",
+   "name": "City & State New York",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.cityandstateny.com/",
+   "description": "New York government and politics publication that covers OCM leadership and cannabis policy.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.cityandstateny.com/personality/2026/03/can-new-ocm-head-get-nys-cannabis-market-back-track/412455/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0cbc3a0513",
+   "name": "Community Service Society of New York",
+   "segment": "advocacy_nonprofit",
+   "category": "Legal / compliance / consulting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.cssny.org/",
+   "public_contact": "212-614-5441",
+   "description": "Nonprofit legal services provider that helps New Yorkers with criminal record sealing and expungement, including marijuana records.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.cssny.org/programs/entry/the-next-door-project",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5bd8c11b85",
+   "name": "CONBUD LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "New York",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.conbud.com",
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000021)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e5573272c3",
+   "name": "Curaleaf NY, LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM medical Registered Organization",
+   "description": "Registered organization in New York's medical cannabis program operating 6 medical dispensing facilities.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/dispensing-facilities",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d8d586c0ba",
+   "name": "Cut Above Collections, LLC",
+   "segment": "lab_testing",
+   "category": "Processing / extraction / testing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://cutabovecollections.com/",
+   "license": "NY OCM approved sampling firm",
+   "description": "Firm approved by the NY Office of Cannabis Management to collect cannabis samples for laboratory testing.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/sampling-firms",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a2c86aa4da",
+   "name": "D-Andrews LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Schenectady",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000005)",
+   "description": "Licensed New York adult-use cannabis retailer doing business as Upstate CBD with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b7862bee1d",
+   "name": "Dank716",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Buffalo",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000017)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-858370097a",
+   "name": "Dart Bank",
+   "segment": "finance_investment",
+   "category": "Finance / payments / accounting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://dart.bank/",
+   "public_contact": "517-676-3661; banking@dartbank.com",
+   "description": "Financial institution listed in the NY OCM SEE Cannabis Banking Directory as serving cannabis businesses (listing is not an OCM endorsement).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/node/10411",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-6d692a2787",
+   "name": "Designs By Pyramid, Inc.",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Vestal",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://sacred-bloom.com",
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000014)",
+   "description": "Licensed New York adult-use cannabis retailer doing business as Sacred Bloom with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e1880a65cd",
+   "name": "Dope Diagnostics Inc.",
+   "segment": "lab_testing",
+   "category": "Processing / extraction / testing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://dopediagnostics.com/",
+   "public_contact": "845 762 5559; info@dopediagnostics.com",
+   "license": "NY OCM permitted cannabis laboratory and approved sampling firm",
+   "description": "Cannabis testing laboratory permitted by the NY Office of Cannabis Management; also an OCM-approved sampling firm.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/cannabis-laboratories",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.ny.gov/sampling-firms",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://dopediagnostics.com/contact/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ea8a2c5bce",
+   "name": "Dosha Farms LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Oneonta",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.doshafarms.com",
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000019)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1d424a4efb",
+   "name": "DRS Testing",
+   "segment": "lab_testing",
+   "category": "Processing / extraction / testing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://drstesting.com/",
+   "public_contact": "(716) 503-8147; info@drstesting.com",
+   "license": "NY OCM permitted cannabis laboratory and approved sampling firm",
+   "description": "Cannabis testing laboratory permitted by the NY Office of Cannabis Management; also an OCM-approved sampling firm.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/cannabis-laboratories",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.ny.gov/sampling-firms",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://drstesting.com/contact-us",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-6aa94e8404",
+   "name": "Empire State Green Standard Alliance",
+   "segment": "trade_association",
+   "category": "Associations / advocacy / nonprofits",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.greenstandardalliance.org/",
+   "description": "New York cannabis industry alliance (reviewed on its own site; programs not confirmed).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.greenstandardalliance.org/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c73c72b79a",
+   "name": "Empire State NORML",
+   "segment": "advocacy_nonprofit",
+   "category": "Associations / advocacy / nonprofits",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.esnorml.org/",
+   "public_contact": "559-426-6765; Info@empirestatenorml.com",
+   "description": "New York chapter of NORML working on cannabis law reform and consumer advocacy.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://norml.org/about/new-york-chapters/",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3b07dc1524",
+   "name": "Etain, LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM medical Registered Organization",
+   "description": "Registered organization in New York's medical cannabis program operating 1 medical dispensing facilities (DBA Fluent).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/dispensing-facilities",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-209d3c5820",
+   "name": "Finger Lakes Hydro LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Rochester",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Microbusiness License (OCM-MICR-24-000037)",
+   "description": "Licensed New York adult-use cannabis retailer doing business as 6 Point Cannabis with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e4d4e1076f",
+   "name": "Fiorello Pharmaceuticals, Inc.",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM medical Registered Organization",
+   "description": "Registered organization in New York's medical cannabis program operating 5 medical dispensing facilities (DBA Rise).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/dispensing-facilities",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b5be2a0600",
+   "name": "First Central Savings Bank",
+   "segment": "finance_investment",
+   "category": "Finance / payments / accounting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.firstcentralsavings.com/",
+   "public_contact": "516-888-0681",
+   "description": "Financial institution listed in the NY OCM SEE Cannabis Banking Directory as serving cannabis businesses (listing is not an OCM endorsement).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/node/10411",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8feb4c3d4d",
+   "name": "First Federal Bank",
+   "segment": "finance_investment",
+   "category": "Finance / payments / accounting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.ffbf.com/business/specialty-banking",
+   "public_contact": "386-243-6371; specialtysupport@ffbf.com",
+   "description": "Financial institution listed in the NY OCM SEE Cannabis Banking Directory as serving cannabis businesses (listing is not an OCM endorsement).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/node/10411",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e1a0a96e14",
+   "name": "Florisun LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "New York",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000008)",
+   "description": "Licensed New York adult-use cannabis retailer doing business as Dazed with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-be1b41ebbf",
+   "name": "FLYNNSTONED CORPORATION",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Syracuse",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.flynnstoned.com",
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License; Adult-Use Retail Dispensary License (OCM-CAURD-23-000010, OCM-RETL-26-000472)",
+   "description": "Licensed New York adult-use cannabis retailer with 2 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-747852aa42",
+   "name": "Four Leaf Federal Credit Union",
+   "segment": "finance_investment",
+   "category": "Finance / payments / accounting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.fourleaffcu.com/",
+   "public_contact": "516-760-1891",
+   "description": "Financial institution listed in the NY OCM SEE Cannabis Banking Directory as serving cannabis businesses (listing is not an OCM endorsement).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/node/10411",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.fourleaffcu.com/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-91c1ba48a1",
+   "name": "Fruition Flowers Firm",
+   "segment": "lab_testing",
+   "category": "Processing / extraction / testing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://fruitionfirm.com/",
+   "public_contact": "services@fruitionfirm.com",
+   "license": "NY OCM approved sampling firm",
+   "description": "Firm approved by the NY Office of Cannabis Management to collect cannabis samples for laboratory testing.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/sampling-firms",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://fruitionfirm.com/",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-fcb1fc2886",
+   "name": "FUFA LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Evans Mills",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Microbusiness License (OCM-MICR-24-000075)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7ab7f21abd",
+   "name": "Gaea Design and Management LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Flushing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://gaeas.garden/",
+   "license": "NY OCM Adult-Use Microbusiness License (OCM-MICR-24-000030)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ba1883c884",
+   "name": "Good Grades LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Jamaica",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000007)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a54c0074ce",
+   "name": "Gotham Buds LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "New York",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.gothambudsny.com",
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000023)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-20159f0c9b",
+   "name": "GOTHAM CAURD LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "New York",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000009)",
+   "description": "Licensed New York adult-use cannabis retailer doing business as Gotham Bowery with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a3092ca3d1",
+   "name": "Green Analytics NY LLC",
+   "segment": "lab_testing",
+   "category": "Processing / extraction / testing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "public_contact": "GA.Info@greenanalyticsllc.com",
+   "license": "NY OCM permitted cannabis laboratory and approved sampling firm",
+   "description": "Cannabis testing laboratory permitted by the NY Office of Cannabis Management; also an OCM-approved sampling firm.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/cannabis-laboratories",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.ny.gov/sampling-firms",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-6a329d3945",
+   "name": "Green Tongue LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Buffalo",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Microbusiness License (OCM-MICR-24-000027)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d5e8b3b7ec",
+   "name": "Greenery Spot LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Johnson City",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://Greeneryspot.com",
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000013)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-70e20147b6",
+   "name": "Greenleaf Cannabis LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "New York",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://HELLSKITCHENCANNABIS.CO",
+   "license": "NY OCM Adult-Use Microbusiness License (OCM-MICR-24-000069)",
+   "description": "Licensed New York adult-use cannabis retailer doing business as Hells Kitchen Cannabis Company with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-891b49f9b6",
+   "name": "Herbal I.Q. Inc.",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Depew",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000018)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1485325c92",
+   "name": "Herring Bank",
+   "segment": "finance_investment",
+   "category": "Finance / payments / accounting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.herringbank.com/business-banking/cannabis-banking/",
+   "public_contact": "877-873-0079; mrbbanking@herringbank.com",
+   "description": "Financial institution listed in the NY OCM SEE Cannabis Banking Directory as serving cannabis businesses (listing is not an OCM endorsement).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/node/10411",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-af695a5cc8",
+   "name": "HOUSING WORKS CANNABIS, LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "New York",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-22-000001)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-04e5e653b8",
+   "name": "Kaycha NY LLC",
+   "segment": "lab_testing",
+   "category": "Processing / extraction / testing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "public_contact": "(833) 465-8378",
+   "license": "NY OCM permitted cannabis laboratory",
+   "description": "Cannabis testing laboratory permitted by the NY Office of Cannabis Management.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/cannabis-laboratories",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.kaychalabs.com/locations/albany-new-york",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-989624d4a1",
+   "name": "KeyPoint Credit Union",
+   "segment": "finance_investment",
+   "category": "Finance / payments / accounting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://kpcu.com/Business/Cannabis-Banking",
+   "public_contact": "888-255-3637; crbbd@kpcu.com",
+   "description": "Financial institution listed in the NY OCM SEE Cannabis Banking Directory as serving cannabis businesses (listing is not an OCM endorsement).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/node/10411",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a686df9219",
+   "name": "Kush Culture Industry LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Astoria",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000020)",
+   "description": "Licensed New York adult-use cannabis retailer doing business as Terp Bros with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-592bbf18cb",
+   "name": "Legal Action Center",
+   "segment": "advocacy_nonprofit",
+   "category": "Legal / compliance / consulting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.lac.org/",
+   "public_contact": "212-243-1313; lacinfo@lac.org",
+   "description": "Nonprofit legal services provider that helps New Yorkers with criminal record sealing and expungement, including marijuana records.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.lac.org/",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.lawhelpny.org/resource/new-yorks-clean-slate-act-and-sealing-convictions",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d6ad0ed326",
+   "name": "LivelyHarvestNY LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Margaretville",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Microbusiness License (OCM-MICR-24-000014)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d34fd3bc72",
+   "name": "LotusWorks Wellness Inc.",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Beacon",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Microbusiness License (OCM-MICR-24-000017)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e951be40d4",
+   "name": "MCR Labs of New York",
+   "segment": "lab_testing",
+   "category": "Processing / extraction / testing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://mcrlabs.com/",
+   "public_contact": "315-541-4202",
+   "license": "NY OCM permitted cannabis laboratory and approved sampling firm",
+   "description": "Cannabis testing laboratory permitted by the NY Office of Cannabis Management; also an OCM-approved sampling firm.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/cannabis-laboratories",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.ny.gov/sampling-firms",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ny.mcrlabs.com/contact-us/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-2b98390458",
+   "name": "MJ Dispensary LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Rochester",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.mjdispensary585.com",
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000024)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-65c2ed5d97",
+   "name": "Montefiore Einstein",
+   "segment": "education_research",
+   "category": "Education / research / health",
+   "hq_city": "Bronx",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "events": [
+    "OCM Cannabinoids in Clinical Practice & Research Symposium 2026"
+   ],
+   "description": "Academic medical center that co-hosts OCM's annual Cannabinoids in Clinical Practice and Research Symposium.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/2026-symposium",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-775e368c09",
+   "name": "New York State Assembly",
+   "segment": "lawmaker_official",
+   "category": "Government / regulators",
+   "hq_city": "Albany",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://nyassembly.gov/",
+   "description": "Lower chamber of the New York Legislature; holds budget and committee hearings where cannabis groups testify.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://nyassembly.gov/write/upload/publichearing/001508/006598.pdf",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-32766448f0",
+   "name": "New York State Senate",
+   "segment": "lawmaker_official",
+   "category": "Government / regulators",
+   "hq_city": "Albany",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.nysenate.gov/",
+   "description": "Upper chamber of the New York Legislature; publishes the Cannabis Law and Penal Law Article 222 text and cannabis bills.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.nysenate.gov/legislation/laws/PEN/222.05",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Krueger (State Senator, first name unconfirmed)",
+     "role": "State Senator; sponsor of S9155 (2025-2026) dispensary zoning measurement fix",
+     "confidence": "lead",
+     "sources": [
+      "https://www.marijuanamoment.net/new-york-governor-signs-bills-to-fix-marijuana-business-zoning-issue-that-threatened-closure-of-over-150-dispensaries/"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e796194329",
+   "name": "New York State Unified Court System",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.nycourts.gov/",
+   "description": "State court system that runs automatic marijuana expungement and Clean Slate sealing and publishes how-to guidance.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://nycourts.gov/FORMS/criminal-record-sealing.shtml",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.nycourts.gov/help/criminal/sealed-criminal-records",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3095e83f27",
+   "name": "Newburgh Kush Factory",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Newburgh",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Microbusiness License (OCM-MICR-24-000025)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-6dda6008cf",
+   "name": "North Country Roots, Inc.",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Saranac Lake",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://elevateadk.com",
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000022)",
+   "description": "Licensed New York adult-use cannabis retailer doing business as Elevate ADK with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-78fd99f637",
+   "name": "NYC NORML",
+   "segment": "advocacy_nonprofit",
+   "category": "Associations / advocacy / nonprofits",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.nycnorml.org/",
+   "public_contact": "Info@nycnorml.org",
+   "description": "New York chapter of NORML working on cannabis law reform and consumer advocacy.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://norml.org/about/new-york-chapters/",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-dd7992d7f1",
+   "name": "NYCANNA, LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM medical Registered Organization",
+   "description": "Registered organization in New York's medical cannabis program operating 4 medical dispensing facilities (DBA the Botanist or Acreage NY).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/dispensing-facilities",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3d28b4bab3",
+   "name": "NYSBA Cannabis Law Section (Annual Conference program)",
+   "segment": "law_firm_legal",
+   "category": "Legal / compliance / consulting",
+   "hq_city": "New York",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://nysba.org/am2027-cannabis-law-section/",
+   "events": [
+    "NYSBA Annual Conference Cannabis Law Section program 2027"
+   ],
+   "description": "New York State Bar Association section that runs an annual cannabis law CLE program at the NYSBA Annual Conference.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://nysba.org/am2027-cannabis-law-section/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-bcf6e7cb13",
+   "name": "Oasis Cannabis LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "East Amherst",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Microbusiness License (OCM-MICR-24-000047)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ae2fbee28b",
+   "name": "Office of the New York State Attorney General",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://ag.ny.gov/",
+   "description": "State attorney general's office; publishes a consumer guide on automatic expungement of marijuana records under the MRTA.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ht.ag.ny.gov/sites/default/files/cannabis-expungement-english.pdf",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-2bbe0e8275",
+   "name": "On Point Cannabis, Inc.",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Binghamton",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000004)",
+   "description": "Licensed New York adult-use cannabis retailer doing business as Just Breathe with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ee7cf93bc3",
+   "name": "PharmaCann of New York, LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM medical Registered Organization",
+   "description": "Registered organization in New York's medical cannabis program operating 4 medical dispensing facilities (DBA Verilife).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/dispensing-facilities",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-dbe67914a9",
+   "name": "Ponce Bank",
+   "segment": "finance_investment",
+   "category": "Finance / payments / accounting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.poncebank.com/",
+   "public_contact": "718-931-9000; contact.center@poncebank.net",
+   "description": "Financial institution listed in the NY OCM SEE Cannabis Banking Directory as serving cannabis businesses (listing is not an OCM endorsement).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/node/10411",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.poncebank.com/locations",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ecfd19067d",
+   "name": "Regent Bank",
+   "segment": "finance_investment",
+   "category": "Finance / payments / accounting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.regent.bank/divisions/cannabis/",
+   "public_contact": "918-488-0788; crbclientsuccess@regent.bank",
+   "description": "Financial institution listed in the NY OCM SEE Cannabis Banking Directory as serving cannabis businesses (listing is not an OCM endorsement).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/node/10411",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a7e4427113",
+   "name": "Roc NORML",
+   "segment": "advocacy_nonprofit",
+   "category": "Associations / advocacy / nonprofits",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.rocnorml.org/",
+   "public_contact": "585-469-6731; rocnorml@rocnorml.org",
+   "description": "New York chapter of NORML working on cannabis law reform and consumer advocacy.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://norml.org/about/new-york-chapters/",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-414a9e82af",
+   "name": "Rosedale Cannabis Dispensary LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Jamaica",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Retail Dispensary License (OCM-RETL-24-000003, OCM-RETL-25-000416)",
+   "description": "Licensed New York adult-use cannabis retailer doing business as ESH with 2 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0d543d2a14",
+   "name": "Royal Leaf NY LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "New Rochelle",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000015)",
+   "description": "Licensed New York adult-use cannabis retailer doing business as Statis Cannabis Co with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-bad4e2ccfd",
+   "name": "Salal Credit Union",
+   "segment": "finance_investment",
+   "category": "Finance / payments / accounting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.salalcu.org/business/cannabis-industry-banking/",
+   "public_contact": "206-298-9398; BusinessServices@SalalCU.org",
+   "description": "Financial institution listed in the NY OCM SEE Cannabis Banking Directory as serving cannabis businesses (listing is not an OCM endorsement).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/node/10411",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-fd13c4ea57",
+   "name": "Seneca Savings",
+   "segment": "finance_investment",
+   "category": "Finance / payments / accounting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.senecasavings.com/",
+   "public_contact": "315-638-0233",
+   "description": "Financial institution listed in the NY OCM SEE Cannabis Banking Directory as serving cannabis businesses (listing is not an OCM endorsement).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/node/10411",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.senecasavings.com/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d291a87605",
+   "name": "Smacked LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "New York",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000002)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-33cd66ff65",
+   "name": "Smithers CTS New York LLC",
+   "segment": "lab_testing",
+   "category": "Processing / extraction / testing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM permitted cannabis laboratory",
+   "description": "Cannabis testing laboratory permitted by the NY Office of Cannabis Management.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/cannabis-laboratories",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c20ed4447f",
+   "name": "Spectrum News (New York)",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://spectrumlocalnews.com/nys",
+   "description": "Regional TV news network in New York that reports on state cannabis regulation.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://spectrumlocalnews.com/nys/central-ny/politics/2026/02/27/hochul-names-new-head-of-state-office-of-cannabis-management",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d64bbf82e0",
+   "name": "Stage One Cannabis LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Rensselaer",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://stageonedispensary.com/",
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000011)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-efe27c4ef8",
+   "name": "Steadfast, LLC",
+   "segment": "lab_testing",
+   "category": "Processing / extraction / testing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM permitted cannabis laboratory",
+   "description": "Cannabis testing laboratory permitted by the NY Office of Cannabis Management.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/cannabis-laboratories",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-94f5c5cf1e",
+   "name": "Stearns Bank N.A.",
+   "segment": "finance_investment",
+   "category": "Finance / payments / accounting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.stearnsbank.com/",
+   "public_contact": "800-320-7262; cannabiscompliance@stearnsbank.com",
+   "description": "Financial institution listed in the NY OCM SEE Cannabis Banking Directory as serving cannabis businesses (listing is not an OCM endorsement).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/node/10411",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1afded742e",
+   "name": "Strain Stars LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Farmingdale",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000016)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-2c8f3beca6",
+   "name": "Suffolk Credit Union",
+   "segment": "finance_investment",
+   "category": "Finance / payments / accounting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.suffolkcu.org/",
+   "public_contact": "631-730-3419; cbb@suffolkcu.org",
+   "description": "Financial institution listed in the NY OCM SEE Cannabis Banking Directory as serving cannabis businesses (listing is not an OCM endorsement).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/node/10411",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d457ad300c",
+   "name": "Sunmark Credit Union",
+   "segment": "finance_investment",
+   "category": "Finance / payments / accounting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://sunmark.org/cannabis-banking",
+   "public_contact": "518-338-2856",
+   "description": "Financial institution listed in the NY OCM SEE Cannabis Banking Directory as serving cannabis businesses (listing is not an OCM endorsement).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/node/10411",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://sunmark.org/cannabis-banking",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-82fd347e29",
+   "name": "Sunwalker Farms, Inc.",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Canandaigua",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Microbusiness License (OCM-MICR-24-000012)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c12f019d74",
+   "name": "SUNY Cannabis Conference (SUNY Niagara)",
+   "segment": "education_research",
+   "category": "Education / research / health",
+   "hq_city": "Sanborn",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://sunyniagara.edu/cannabisconference/",
+   "events": [
+    "SUNY Cannabis Conference 2027"
+   ],
+   "description": "Annual New York cannabis industry and education conference hosted by SUNY Niagara.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://sunyniagara.edu/cannabisconference/2026-suny-cannabis-conference-suny-niagara-speaker-information/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-87a9e93c42",
+   "name": "The Bronx Cannabis Hub",
+   "segment": "social_equity_org",
+   "category": "Associations / advocacy / nonprofits",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://thebronxcannabishub.org/",
+   "public_contact": "info@thebronxcannabishub.org",
+   "description": "Bronx Defenders project supporting Bronx residents entering the legal cannabis industry.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://thebronxcannabishub.org/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-2f5167e6eb",
+   "name": "The Bronx Defenders",
+   "segment": "advocacy_nonprofit",
+   "category": "Legal / compliance / consulting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.bronxdefenders.org/",
+   "public_contact": "718-838-7878",
+   "description": "Nonprofit legal services provider that helps New Yorkers with criminal record sealing and expungement, including marijuana records.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.bronxdefenders.org/our-work/defending-new-yorkers/civil-action-practice/",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-768d15b28c",
+   "name": "The Capitol Pressroom",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://capitolpressroom.org/",
+   "description": "Albany public-radio policy show that has covered Cannabis Control Board leadership.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://capitolpressroom.org/?p=17285",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-9d8a1df8e3",
+   "name": "The Doe Store LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "New York",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000003)",
+   "description": "Licensed New York adult-use cannabis retailer doing business as Union Square Travel Agency: A Cannabis Store with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a8c5ef8c96",
+   "name": "The Flower Expo",
+   "segment": "event_organizer",
+   "category": "Events / networking",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://theflowerexpo.com/new-york/",
+   "events": [
+    "Flower Expo New York 2027"
+   ],
+   "description": "B2B cannabis trade expo series with a New York edition in Brooklyn.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://theflowerexpo.com/new-york/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c1982fef5a",
+   "name": "THE HIGHEST PEAK LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Clifton Park",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.capitaldistrictcannabis.com",
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000025)",
+   "description": "Licensed New York adult-use cannabis retailer doing business as Capital District Cannabis and Wellness with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-94231d8470",
+   "name": "The Legal Aid Society (New York City)",
+   "segment": "advocacy_nonprofit",
+   "category": "Legal / compliance / consulting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://legalaidnyc.org/",
+   "public_contact": "212-298-3120; CaseClosed@legal-aid.org",
+   "description": "Nonprofit legal services provider that helps New Yorkers with criminal record sealing and expungement, including marijuana records.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://legalaidnyc.org/programs-projects-units/case-closed-project/",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4f1d61468b",
+   "name": "Tioga State Bank, N.A.",
+   "segment": "finance_investment",
+   "category": "Finance / payments / accounting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://tiogabank.com/",
+   "public_contact": "888-303-4872; cannabisbanking@tiogabank.com",
+   "description": "Financial institution listed in the NY OCM SEE Cannabis Banking Directory as serving cannabis businesses (listing is not an OCM endorsement).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/node/10411",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.tiogabank.com/locations-and-hours/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-9812465106",
+   "name": "Trichrome Transportation",
+   "segment": "lab_testing",
+   "category": "Processing / extraction / testing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://kaychalabs.com/",
+   "license": "NY OCM approved sampling firm",
+   "description": "Firm approved by the NY Office of Cannabis Management to collect cannabis samples for laboratory testing.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/sampling-firms",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c36230071e",
+   "name": "Trustco Bank",
+   "segment": "finance_investment",
+   "category": "Finance / payments / accounting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.trustcobank.com/bank-your-cannabis-business-with-trustco-bank/",
+   "public_contact": "518-381-3673; trustcogreen@trustcobank.com",
+   "description": "Financial institution listed in the NY OCM SEE Cannabis Banking Directory as serving cannabis businesses (listing is not an OCM endorsement).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/node/10411",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.trustcobank.com/branch-and-atm-locator/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-099f8d8ef9",
+   "name": "Twisted Cannabis FLX LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Geneva",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.twistedcannabisflx.com",
+   "license": "NY OCM Adult-Use Retail Dispensary License (OCM-RETL-24-000053, OCM-RETL-26-000485, OCM-RETL-26-000495)",
+   "description": "Licensed New York adult-use cannabis retailer with 3 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b6dc429716",
+   "name": "Valley Agriceuticals, LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM medical Registered Organization",
+   "description": "Registered organization in New York's medical cannabis program operating 3 medical dispensing facilities (DBA Remedy-NY or Sunnyside).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/dispensing-facilities",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-822d2f2b29",
+   "name": "Valley Bank",
+   "segment": "finance_investment",
+   "category": "Finance / payments / accounting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://www.valley.com/",
+   "public_contact": "973-872-4567; crb@valley.com",
+   "description": "Financial institution listed in the NY OCM SEE Cannabis Banking Directory as serving cannabis businesses (listing is not an OCM endorsement).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/node/10411",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5fccc61319",
+   "name": "Vireo Health of New York LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM medical Registered Organization",
+   "description": "Registered organization in New York's medical cannabis program operating 3 medical dispensing facilities.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/dispensing-facilities",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e55bfe3b43",
+   "name": "VJ Farms LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Beacon",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Microbusiness License (OCM-MICR-24-000050)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-029472ee5c",
+   "name": "Western NY Hemp Handlers",
+   "segment": "lab_testing",
+   "category": "Processing / extraction / testing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://wnyhemp-cannabis-sampling.com/",
+   "license": "NY OCM approved sampling firm",
+   "description": "Firm approved by the NY Office of Cannabis Management to collect cannabis samples for laboratory testing.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ny.gov/sampling-firms",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    },
+    {
+     "url": "https://wnyhemp-cannabis-sampling.com/",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-79d011b23c",
+   "name": "WilliamJane Corporation",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Ithaca",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "license": "NY OCM Adult-Use Conditional Retail Dispensary License (OCM-CAURD-23-000006)",
+   "description": "Licensed New York adult-use cannabis retailer with 1 open location(s).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://data.ny.gov/d/jskf-tt3q",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-46204d0d80",
+   "name": "WJFF Radio Catskill",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://wjffradio.org/",
+   "description": "Catskills community radio station that interviewed OCM's executive director in 2026.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://wjffradio.org/new-yorks-new-cannabis-executive-director-outlines-path-forward-after-rocky-rollout/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7b0f67131f",
+   "name": "Youth Represent",
+   "segment": "advocacy_nonprofit",
+   "category": "Legal / compliance / consulting",
+   "hq_state": "NY",
+   "states_active": [
+    "NY"
+   ],
+   "website": "https://youthrepresent.org/",
+   "description": "Nonprofit legal services provider that helps New Yorkers with criminal record sealing and expungement, including marijuana records.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://youthrepresent.org/programs/legal-services/",
+     "reviewed_on": "2026-11-01",
+     "kind": "primary"
+    }
+   ]
+  }
+ ]
+}

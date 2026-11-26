@@ -1,0 +1,361 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "NJ",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 11,
+ "records": [
+  {
+   "crm_id": "crm-o-d2d50a4e0c",
+   "name": "Arboretum (AYR noteholder vehicle)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "states_active": [
+    "FL",
+    "NJ",
+    "NV"
+   ],
+   "description": "Noteholder-controlled entity that took over AYR Wellness's Florida, New Jersey and Nevada cannabis operations.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.cannabisbusinesstimes.com/industry-headlines/news/15826563/ayr-wellness-closes-transfer-of-florida-new-jersey-nevada-operations-to-arboretum",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://businessofcannabis.com/ayr-wellness-hands-florida-new-jersey-and-nevada-dispensaries-to-noteholder-vehicle-as-ccaa-wind-down-advances/",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ab89e0c637",
+   "name": "Asbury Park Press",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "NJ",
+   "states_active": [
+    "NJ"
+   ],
+   "description": "New Jersey daily newspaper that reports on CRC leadership and cannabis policy.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.pressreader.com/usa/asbury-park-press/20240509/281509346274671",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f4f35c7bd4",
+   "name": "Benzinga Cannabis Capital Conference",
+   "segment": "event_organizer",
+   "category": "Events / networking",
+   "states_active": [
+    "US",
+    "NJ"
+   ],
+   "website": "https://www.benzinga.com/events/cannabis/",
+   "events": [
+    "Benzinga Market Spotlight NJ"
+   ],
+   "description": "Recurring cannabis investor and capital conference produced by Benzinga, with editions in Miami, Detroit, Chicago and Toronto.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://benzinga.com/events/cannabis",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://benzinga.com/events/cannabis/miami",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://benzinga.com/events/cannabis/detroit",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.benzinga.com/events/cannabis/toronto/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://finance.yahoo.com/news/cannabis-industry-moguls-meet-miami-130600232.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://benzinga.com/markets/cannabis/24/08/40583646/ascend-wellness-holdings-fires-both-ceo-and-cfo-replaces-management",
+     "kind": "primary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://benzinga.swoogo.com/marketspotlightnj/speaker/1561521/christopher-riggs",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-2bbb1a58fb",
+   "name": "Curaleaf NJ",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NJ",
+   "states_active": [
+    "NJ"
+   ],
+   "license": "NJ CRC medicinal cannabis permits (administrative extension approved Feb 12, 2026)",
+   "description": "New Jersey operations of multistate operator Curaleaf, which holds CRC medicinal cannabis permits.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://nj.gov/cannabis/documents/meetings/2026-02-12/CRC%20Resolution%202026-02-12-09%20Approval%20of%20Curaleaf%20Medical%20Permits%20Admin%20Ext.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-fe3b588dc0",
+   "name": "NECANN",
+   "segment": "event_organizer",
+   "category": "Events / networking",
+   "hq_city": "Boston",
+   "hq_state": "MA",
+   "states_active": [
+    "MA",
+    "NJ",
+    "PA"
+   ],
+   "website": "https://necann.com/",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Organizer of regional cannabis conventions and NECANN Cup awards in New England, New Jersey and Pennsylvania.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://necann.com/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://necann.com/links",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://necann.com/?p=53386",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://necann.com/boston/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://necann.com/boston/boston-programming-schedule",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ganjapreneur.com/necann-brings-east-coast-cannabis-together-in-boston/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://cannabispromotions.com/tradeshows/event/necann-boston-2027",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.businesswire.com/news/home/20260730065307/en/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://ganjapreneur.com/necanns-new-jersey-cannabis-convention-and-necann-cup-awards-return-to-atlantic-city-september-18-19/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://cannabispromotions.com/tradeshows/event/necann-new-jersey-2027",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://necann.com/pennsylvania-convention/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-6a75bc8bef",
+   "name": "New Jersey Cannabis Regulatory Commission",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Trenton",
+   "hq_state": "NJ",
+   "states_active": [
+    "NJ"
+   ],
+   "website": "https://www.nj.gov/cannabis/",
+   "description": "State commission that licenses and regulates New Jersey's adult-use and medicinal cannabis programs.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.nj.gov/cannabis/",
+     "reviewed_on": "2026-11-15",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.nj.gov/cannabis/adult-personal/",
+     "reviewed_on": "2026-11-15",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.nj.gov/cannabis/about/members",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.nj.gov/cannabis/about/meetings/index.shtml",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Christopher Riggs",
+     "role": "Executive Director",
+     "confidence": "lead",
+     "sources": [
+      "https://www.nj.gov/cannabis/documents/Bios/Riggs Bio.pdf",
+      "https://blogs.duanemorris.com/cannabis/2024/05/09/steady-hands-at-the-tiller-new-njcrc-executive-director-appointed/",
+      "https://benzinga.swoogo.com/marketspotlightnj/speaker/1561521/christopher-riggs"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-44d898d6c4",
+   "name": "New Jersey Courts (New Jersey Judiciary)",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Trenton",
+   "hq_state": "NJ",
+   "states_active": [
+    "NJ"
+   ],
+   "website": "https://www.njcourts.gov/",
+   "description": "State judiciary that automatically expunged eligible marijuana and hashish cases and handles related certification requests.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.njcourts.gov/public/news-media/top-news/marijuana-record-expungement",
+     "reviewed_on": "2026-11-15",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4e114dfcad",
+   "name": "NJBIZ",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "NJ",
+   "states_active": [
+    "NJ"
+   ],
+   "website": "https://njbiz.com/",
+   "description": "New Jersey business news outlet that covers the Cannabis Regulatory Commission and the state cannabis market.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://njbiz.com/nj-cannabis-commission-new-chair-vice-chair/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5a6df4a8ac",
+   "name": "Von Dirt",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "NJ",
+   "states_active": [
+    "PA",
+    "NJ"
+   ],
+   "events": [
+    "Summer Cannafest 2025"
+   ],
+   "description": "New Jersey vendor seen exhibiting at regional cannabis festivals.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://lebtown.com/2025/06/10/rainy-weekend-doesnt-dampen-spirits-for-2025-summer-canna-fest-at-fairgrounds/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "file:/home/claude/vendors/data/rosters/us-pa-summer-cannafest-2025.json",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-bc9e0cb438",
+   "name": "WHYY",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Philadelphia",
+   "hq_state": "PA",
+   "states_active": [
+    "PA",
+    "NJ",
+    "DE"
+   ],
+   "website": "https://whyy.org",
+   "description": "Philadelphia public radio and news outlet covering Pennsylvania cannabis legislation.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://whyy.org/articles/pennsylvania-adult-use-marijuana-november-election/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-94f507c555",
+   "name": "WRNJ Radio",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "NJ",
+   "states_active": [
+    "NJ"
+   ],
+   "description": "New Jersey radio station whose news desk has reported on CRC personnel changes.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://wrnjradio.com/gov-murphy-announces-personnel-transitions-within-department-of-health-and-cannabis-regulatory-commission/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  }
+ ]
+}

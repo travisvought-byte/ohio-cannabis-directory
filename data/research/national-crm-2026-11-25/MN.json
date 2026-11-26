@@ -1,0 +1,634 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "MN",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 19,
+ "records": [
+  {
+   "crm_id": "crm-o-5b94590a69",
+   "name": "City of Minneapolis Business Licensing (cannabis and hemp edibles)",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Minneapolis",
+   "hq_state": "MN",
+   "states_active": [
+    "MN"
+   ],
+   "website": "https://www.minneapolismn.gov/business-services/business-assistance/business-guides/cannabis/hemp-edibles/",
+   "description": "City office that publishes guidance and handles local retail registration for cannabis and lower-potency hemp edible sellers in Minneapolis.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.minneapolismn.gov/business-services/business-assistance/business-guides/cannabis/hemp-edibles/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://mn.gov/ocm/assets/Guidance%20for%20Lower%20Potency%20Hemp%20Edible%20Retailers%20Local%20Retail%20Registration%20Requirement_tcm1202-714832.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4a9d658419",
+   "name": "Knutson+Casey",
+   "segment": "law_firm_legal",
+   "category": "Legal / compliance / consulting",
+   "hq_state": "MN",
+   "states_active": [
+    "MN"
+   ],
+   "website": "https://knutsoncasey.com/",
+   "description": "Minnesota law firm that published coverage of veterans backing a bill to ease veterans' access to medical marijuana.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://knutsoncasey.com/veterans-stand-behind-considines-bill-pushing-for-easier-access-to-medical-marijuana/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-69d7ee3d20",
+   "name": "Leech Lake Band of Ojibwe",
+   "segment": "other",
+   "category": "Government / regulators",
+   "hq_state": "MN",
+   "states_active": [
+    "MN"
+   ],
+   "description": "Tribal nation in northern Minnesota that operates a tribal cannabis program and dispensary.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.startribune.com/leech-lake-band-of-ojibwe-opens-the-sweetest-grass-cannabis-dispensary/600371599",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b212511b38",
+   "name": "Minnesota Legislative Reference Library",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "St. Paul",
+   "hq_state": "MN",
+   "states_active": [
+    "MN"
+   ],
+   "website": "https://www.lrl.mn.gov/",
+   "description": "Legislature's library, which keeps an agency profile for the Office of Cannabis Management and archives OCM's mandated reports to lawmakers.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.lrl.mn.gov/agencies/detail?AgencyID=2558",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.lrl.mn.gov/docs/2026/mandated/260064.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.lrl.mn.gov/docs/2026/mandated/260065.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a33f7752c6",
+   "name": "Minnesota NORML",
+   "segment": "advocacy_nonprofit",
+   "category": "Associations / advocacy / nonprofits",
+   "hq_state": "MN",
+   "states_active": [
+    "MN"
+   ],
+   "website": "https://minnnorml.org/",
+   "public_contact": "https://minnnorml.org/about/officers-directors-board/",
+   "description": "Minnesota chapter of NORML that lobbies on cannabis law, expungement and consumer and patient protections.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://minnnorml.org/about/officers-directors-board/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://Www.Wikipedia.org/wiki/Minnesota_NORML",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://minnlawyer.com/2014/10/22/new-norml-pushes-to-become-capitol-player/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://norml.org/act/minnesota-oppose-re-criminalizing-higher-strength-cannabis-products",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c9e95f7375",
+   "name": "Minnesota Office of Cannabis Management",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "St. Paul",
+   "hq_state": "MN",
+   "states_active": [
+    "MN"
+   ],
+   "website": "https://mn.gov/ocm/",
+   "public_contact": "https://mn.gov/ocm/",
+   "description": "State agency that licenses and regulates adult-use cannabis, medical cannabis and hemp-derived cannabinoid businesses in Minnesota.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mn.gov/ocm/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://mn.gov/ocm/about-us/leadership",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://mn.gov/ocm/data-reports/application-data/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://mn.gov/ocm/businesses/licensing/application-data/index.jsp",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://mn.gov/ocm/businesses/resources/hemp",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://mn.gov/ocm/medical-cannabis/program/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://health.state.mn.us/people/cannabis/patients/registration.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://kfgo.com/2023/06/17/thousands-of-minnesota-vets-eligible-for-medical-marijuana-starting-next-year/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://mn.gov/mdva/news/legislative-updates/?id=1066-333782",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Eric Taubel",
+     "role": "Executive Director",
+     "confidence": "lead",
+     "sources": [
+      "https://minnesotareformer.com/2025/08/13/walz-appoints-eric-taubel-as-cannabis-office-executive-director/",
+      "https://kstp.com/kstp-news/local-news/eric-taubel-appointed-as-permanent-office-of-cannabis-management-director/",
+      "https://www.fox9.com/news/mn-office-cannabis-management-permanent-director-aug-2025"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-9b18dccded",
+   "name": "Minnesota Reformer",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "MN",
+   "states_active": [
+    "MN"
+   ],
+   "website": "https://minnesotareformer.com/",
+   "description": "Nonprofit Minnesota news outlet whose cannabis coverage (branded The Potluck) tracks the state's market, regulators and sales.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://minnesotareformer.com/2026-09-15/minnesota-recreational-cannabis-sales-hit-150m-one-year-in/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3120e38e76",
+   "name": "Minnesota Veterans for Cannabis",
+   "segment": "veteran_org",
+   "category": "Associations / advocacy / nonprofits",
+   "hq_state": "MN",
+   "states_active": [
+    "MN"
+   ],
+   "description": "Veterans' group that has spoken publicly in Minnesota in favor of cannabis legalization.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://fairmontsentinel.com/news/local-news/2019/10/16/minnesota-veterans-for-cannabis-touts-legalization",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8368a185d7",
+   "name": "MPR News",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "MN",
+   "states_active": [
+    "MN"
+   ],
+   "website": "https://www.mprnews.org/",
+   "description": "Minnesota Public Radio's newsroom, which reports regularly on the state's cannabis market and tribal dispensaries.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.mprnews.org/story/2025/05/20/cannabis-dispensaries-now-allowed-off-tribal-lands-in-minnesota",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-29cfeeb13f",
+   "name": "Red Lake Nation",
+   "segment": "other",
+   "category": "Government / regulators",
+   "hq_state": "MN",
+   "states_active": [
+    "MN"
+   ],
+   "description": "Tribal nation in northern Minnesota that opened the state's first recreational cannabis dispensary.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.startribune.com/red-lake-nation-to-open-minnesotas-first-recreational-marijuana-dispensary-aug-1-cannabis/600289445",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-63c65ca8bb",
+   "name": "Red Lake Nation cannabis enterprise",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "MN",
+   "states_active": [
+    "MN"
+   ],
+   "description": "Red Lake Band of Chippewa Indians' tribally owned cannabis business, which opened Minnesota's first recreational dispensary on its reservation in August 2023 and has announced an off-reservation store in West St. Paul.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.startribune.com/red-lake-nation-to-open-minnesotas-first-recreational-marijuana-dispensary-aug-1-cannabis/600289445",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.cbsnews.com/amp/minnesota/news/red-lake-nation-minnesota-weed-dispensary",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.yahoo.com/news/articles/red-lake-nation-open-cannabis-162200359.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.marijuanamoment.net/minnesota-tribe-opens-states-first-recreational-marijuana-store-off-reservation-lands-as-cities-plan-government-run-dispensaries",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7ec57734af",
+   "name": "Sahan Journal",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "MN",
+   "states_active": [
+    "MN"
+   ],
+   "website": "https://sahanjournal.com/",
+   "description": "Minnesota nonprofit newsroom covering immigrants and communities of color, including cannabis business and equity stories.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://sahanjournal.com/business-work/minnesota-marijuana-tim-walz-cannabis-czar-clemon-dabney/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3350b91a8e",
+   "name": "Star Tribune",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "MN",
+   "states_active": [
+    "MN"
+   ],
+   "website": "https://www.startribune.com/",
+   "description": "Minneapolis daily newspaper with ongoing cannabis and hemp coverage, including a map of legal retail locations.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.startribune.com/map-see-where-you-can-legally-buy-marijuana-in-minnesota/601422464",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-91c027fb6f",
+   "name": "T.O. Plastics",
+   "segment": "ancillary_business",
+   "category": "Cultivation / facility systems",
+   "hq_city": "Clearwater",
+   "hq_state": "MN",
+   "states_active": [
+    "PA",
+    "US"
+   ],
+   "website": "https://www.toplastics.com/horticulture",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Thermoformed plant trays, plug trays and pots.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/t-o-plastics",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.griffins.com/category/HGVENDORS.TOPLASTICS",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.griffins.com/contact",
+     "reviewed_on": "2026-10-30",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.greenhousegrower.com/technology/t-o-plastics-upgrades-its-minnesota-production-facility/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://cars.superpages.com/clearwater-mn/bpp/t-o-plastics-inc-19738110",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a080382245",
+   "name": "The Sweetest Grass",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "MN",
+   "states_active": [
+    "MN"
+   ],
+   "description": "Cannabis dispensary opened by the Leech Lake Band of Ojibwe.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.startribune.com/leech-lake-band-of-ojibwe-opens-the-sweetest-grass-cannabis-dispensary/600371599",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.aol.com/news/leech-lake-band-ojibwe-opens-192700903.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7d2090877f",
+   "name": "Twin Cities Business",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "MN",
+   "states_active": [
+    "MN"
+   ],
+   "website": "https://tcbmag.com/",
+   "description": "Minnesota business magazine covering the state's cannabis companies, regulators and deals.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://tcbmag.com/minnesota-cannabis-businesses-grapple-with-growing-pains/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-973fa03831",
+   "name": "Vireo Growth Inc.",
+   "segment": "ancillary_business",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Minneapolis",
+   "hq_state": "MN",
+   "states_active": [
+    "MN",
+    "US"
+   ],
+   "website": "https://vireogrowth.com/",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Cannabis-industry company that hosted or co-hosted MJBizCon 2026 side events.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizconference.com/speakers/",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "file:///home/claude/work/drive/mjbizcon-happenings.xlsx",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.barchart.com/story/news/1871985/vireo-growth-inc-announces-first-quarter-2026-results",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://www.barchart.com/story/news/915283/vireo-growth-inc-announces-closing-of-acquisition-of-assets-of-schwazze",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://www.cannabisbusinesstimes.com/business-issues-benchmarks/mergers-and-acquisitions/news/15830373/vireo-growth-to-acquire-certain-assets-of-the-cannabist-co-in-5-states-for-35-million",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://www.barchart.com/story/news/3572641/vireo-growth-inc-announces-a-four-deal-transaction-to-establish-presence-in-ohio",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://mjbizdaily.com/?p=616772",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/0001771706/000110465926086874/tm2621363d1_ex99-1.htm",
+     "kind": "primary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://www.santelog.com/actualites-sante-nasdaq/vireo-growth-inc-announces-launch-adult-use-cannabis-sales-minnesota",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.tipranks.com/news/the-fly/vireo-growth-launches-adult-use-cannabis-sales-in-minnesota-thefly",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.biospace.com/press-releases/vireo-growth-inc-announces-fourth-quarter-2025-results",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.cannabisbusinesstimes.com/business-issues-benchmarks/mergers-and-acquisitions/news/15830908/vireo-growth-to-acquire-planet-13-holdings-add-36-dispensaries",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://mjbizdaily.com/news/vireo-pennsylvania-cannabis-market/616772/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://tcbmag.com/minnesota-cannabis-company-goodness-growth-to-be-acquired-for-413m/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ],
+   "people": [
+    {
+     "name": "John Mazarakis",
+     "role": "Co-Executive Chairman and CEO",
+     "confidence": "verified",
+     "sources": [
+      "https://mjbizconference.com/speakers/"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-12066f9846",
+   "name": "Waabigwan Mashkiki",
+   "segment": "ancillary_business",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Mahnomen",
+   "hq_state": "MN",
+   "states_active": [
+    "MN"
+   ],
+   "website": "https://waabigwan.com/",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "White Earth Nation's tribal cannabis business with Minnesota dispensaries.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/waabigwan-mashkiki",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.mprnews.org/story/2023/08/02/white-earth-nation-to-begin-recreational-marijuana-sales-thursday",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.startribune.com/states-first-off-reservation-cannabis-dispensary-to-open-in-moorhead/601217941",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.cbsnews.com/minnesota/news/marijuana-weed-dispensary-st-cloud-waabigwan-mashkiki",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://waabigwan.com/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.cbsnews.com/amp/minnesota/news/white-earth-nation-minnesotas-2nd-recreational-weed-dispensary",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.startribune.com/second-cannabis-dispensary-opens-on-tribal-land-in-minnesota/600294943",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.mprnews.org/episode/2025/05/22/minnesota-tribes-breaking-the-glass-ceiling-of-off-reservation-cannabis-sales",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e57316dd2a",
+   "name": "White Earth Nation",
+   "segment": "other",
+   "category": "Government / regulators",
+   "hq_state": "MN",
+   "states_active": [
+    "MN"
+   ],
+   "description": "Tribal nation in northwestern Minnesota that owns the Waabigwan Mashkiki cannabis business.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.cbsnews.com/amp/minnesota/news/white-earth-nation-minnesotas-2nd-recreational-weed-dispensary",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  }
+ ]
+}

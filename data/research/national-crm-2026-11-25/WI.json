@@ -1,0 +1,69 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "WI",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 2,
+ "records": [
+  {
+   "crm_id": "crm-o-d04a94482a",
+   "name": "DRAMM Corporation",
+   "segment": "ancillary_business",
+   "category": "Cultivation / facility systems",
+   "hq_city": "Manitowoc",
+   "hq_state": "WI",
+   "states_active": [
+    "US"
+   ],
+   "website": "https://www.dramm.com/html/main.isx",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Watering tools and greenhouse equipment (since 1941).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/dramm-corporation",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.dramm.com/html/main.isx?sub=425",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ganjapreneur.com/business/dramm",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.greenhousemag.com/news/dramm-celebrates-75-years",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ea4a7cdd63",
+   "name": "Wisconsin Legislative Reference Bureau",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Madison",
+   "hq_state": "WI",
+   "states_active": [
+    "WI"
+   ],
+   "website": "https://docs.legis.wisconsin.gov/",
+   "description": "Nonpartisan legislative agency whose bill analyses summarize Wisconsin's current marijuana law, including 2023 Assembly Bill 861.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://docs.legis.wisconsin.gov/2023/related/proposals/ab861",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  }
+ ]
+}

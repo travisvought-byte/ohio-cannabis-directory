@@ -1,0 +1,166 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "states": {
+  "AK": {
+   "records": 3,
+   "verified": 2,
+   "people": 2
+  },
+  "AZ": {
+   "records": 5,
+   "verified": 4,
+   "people": 1
+  },
+  "CA": {
+   "records": 26,
+   "verified": 23,
+   "people": 14
+  },
+  "CO": {
+   "records": 13,
+   "verified": 8,
+   "people": 1
+  },
+  "CT": {
+   "records": 4,
+   "verified": 3,
+   "people": 6
+  },
+  "DC": {
+   "records": 3,
+   "verified": 1,
+   "people": 0
+  },
+  "DE": {
+   "records": 4,
+   "verified": 2,
+   "people": 1
+  },
+  "FL": {
+   "records": 20,
+   "verified": 10,
+   "people": 5
+  },
+  "IA": {
+   "records": 1,
+   "verified": 1,
+   "people": 0
+  },
+  "IL": {
+   "records": 10,
+   "verified": 7,
+   "people": 6
+  },
+  "IN": {
+   "records": 1,
+   "verified": 1,
+   "people": 0
+  },
+  "KY": {
+   "records": 47,
+   "verified": 41,
+   "people": 3
+  },
+  "MA": {
+   "records": 5,
+   "verified": 3,
+   "people": 3
+  },
+  "MD": {
+   "records": 2,
+   "verified": 1,
+   "people": 1
+  },
+  "MI": {
+   "records": 31,
+   "verified": 29,
+   "people": 2
+  },
+  "MN": {
+   "records": 19,
+   "verified": 12,
+   "people": 2
+  },
+  "MO": {
+   "records": 7,
+   "verified": 3,
+   "people": 3
+  },
+  "MT": {
+   "records": 1,
+   "verified": 1,
+   "people": 0
+  },
+  "NJ": {
+   "records": 11,
+   "verified": 6,
+   "people": 1
+  },
+  "NM": {
+   "records": 4,
+   "verified": 3,
+   "people": 0
+  },
+  "NV": {
+   "records": 59,
+   "verified": 49,
+   "people": 9
+  },
+  "NY": {
+   "records": 111,
+   "verified": 106,
+   "people": 4
+  },
+  "OH": {
+   "records": 86,
+   "verified": 85,
+   "people": 8
+  },
+  "OR": {
+   "records": 2,
+   "verified": 1,
+   "people": 3
+  },
+  "PA": {
+   "records": 207,
+   "verified": 20,
+   "people": 0
+  },
+  "RI": {
+   "records": 5,
+   "verified": 3,
+   "people": 1
+  },
+  "SC": {
+   "records": 1,
+   "verified": 1,
+   "people": 0
+  },
+  "US": {
+   "records": 636,
+   "verified": 453,
+   "people": 182
+  },
+  "VA": {
+   "records": 3,
+   "verified": 1,
+   "people": 0
+  },
+  "WA": {
+   "records": 6,
+   "verified": 2,
+   "people": 4
+  },
+  "WI": {
+   "records": 2,
+   "verified": 2,
+   "people": 0
+  },
+  "WV": {
+   "records": 5,
+   "verified": 3,
+   "people": 1
+  }
+ },
+ "skipped_already_in_directory_or_unsourced": 825
+}

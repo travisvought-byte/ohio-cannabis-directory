@@ -1,0 +1,2121 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "OH",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 86,
+ "records": [
+  {
+   "crm_id": "crm-o-95511ab33b",
+   "name": "50 West",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Hemp Fest at Urban Artifact 2026"
+   ],
+   "description": "THC beverage (Sunflower)",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.cincinnatimagazine.com/article/hemp-fest-26/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7c028ff788",
+   "name": "8th Wonder",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Hemp Fest at Urban Artifact 2026"
+   ],
+   "description": "hemp-derived THC beverage",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://thegnarlygnome.com/?p=64467",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ccac1743e9",
+   "name": "AppGirls",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Hemp Fest at Urban Artifact 2026"
+   ],
+   "description": "hemp-derived THC beverage",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://thegnarlygnome.com/?p=64467",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-088c7d6430",
+   "name": "Ascend Dispensary",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Silver sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4b0320aed8",
+   "name": "AshOut",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-2245780ea1",
+   "name": "AYR",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-395489a54a",
+   "name": "BIC",
+   "segment": "ancillary_business",
+   "category": "Retail / brands / distribution",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "website": "https://corporate.bic.com/",
+   "events": [
+    "MJBizCon 2026",
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Lighters (plus stationery and shavers) from the global consumer brand.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/bic",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e9f385ed33",
+   "name": "Blaze Away",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Gold sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5812e2b735",
+   "name": "Bloom",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-6240b530ac",
+   "name": "Blue Label Packaging",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-fe237a724a",
+   "name": "Blue Planet Chocolate",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-49f36aa7b6",
+   "name": "Calyx Containers",
+   "segment": "ancillary_business",
+   "category": "Packaging / labels / printing",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "website": "https://calyxcontainers.com/",
+   "events": [
+    "MJBizCon 2026",
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Rigid and flexible child-resistant packaging",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/calyx-containers",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-02e9ed6cf9",
+   "name": "Canna Content",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Silver sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-046860158b",
+   "name": "Certified",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Silver sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b40a3b565f",
+   "name": "Coastalo",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Hemp Fest at Urban Artifact 2026"
+   ],
+   "description": "hemp-derived THC beverage",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://thegnarlygnome.com/?p=64467",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-6c72dca9d4",
+   "name": "Courier Pro LLC",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7e2d431059",
+   "name": "Cresco Labs",
+   "segment": "ancillary_business",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Chicago",
+   "hq_state": "IL",
+   "states_active": [
+    "OH",
+    "KY"
+   ],
+   "website": "https://www.crescolabs.com",
+   "events": [
+    "MJBizCon 2026",
+    "OCHBS 2026",
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Ohio marketing contact for a vertically integrated multistate cannabis operator and brand portfolio.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizconference.com/sessions/stock-smarter-sell-faster-inventory-velocity-strategies-from-big-box-retail/",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1832928/000183292826000005/cresco-aifxq42025.htm",
+     "kind": "primary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://winchestersun.com/?p=83911",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.lex18.com/news/covering-kentucky/1-of-kentuckys-largest-medical-marijuana-facilities-unveiled-in-clark-county",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://lpm.org/news/2025-04-30/how-a-top-marijuana-company-landed-kentuckys-most-coveted-medical-cannabis-license",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Cory Rothschild",
+     "role": "Retail President",
+     "confidence": "verified",
+     "sources": [
+      "https://mjbizconference.com/sessions/stock-smarter-sell-faster-inventory-velocity-strategies-from-big-box-retail/"
+     ]
+    },
+    {
+     "name": "Charlie Bachtell",
+     "role": "Co-founder & CEO",
+     "confidence": "lead",
+     "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1832928/000183292826000005/cresco-aifxq42025.htm"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d1697e42db",
+   "name": "Crooked Vines",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Hemp Fest at Urban Artifact 2026"
+   ],
+   "description": "hemp-derived THC beverage",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://thegnarlygnome.com/?p=64467",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-31aed7b205",
+   "name": "Curaleaf",
+   "segment": "ancillary_business",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Stamford",
+   "hq_state": "CT",
+   "states_active": [
+    "OH",
+    "NV"
+   ],
+   "website": "https://www.curaleaf.com/",
+   "license": "NV CCB retail store (adult-use and medical), 6 listed location(s)",
+   "events": [
+    "MJBizCon 2026",
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Silver sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizconference.com/speakers/",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.prnewswire.com/de/news-releases/curaleaf-announces-appointment-of-torsten-greif-to-board-of-directors-302759580.html",
+     "kind": "primary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://www.preparedfoods.com/articles/130634-curaleaf-names-rahul-pinto-as-president",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://businessofcannabis.com/cfo-ranjan-kalia-appointed-to-curaleaf/",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Richard Philbrook",
+     "role": "Principal Scientist",
+     "confidence": "verified",
+     "sources": [
+      "https://mjbizconference.com/speakers/"
+     ]
+    },
+    {
+     "name": "Rahul Pinto",
+     "role": "President",
+     "confidence": "lead",
+     "sources": [
+      "https://www.preparedfoods.com/articles/130634-curaleaf-names-rahul-pinto-as-president"
+     ]
+    },
+    {
+     "name": "Ranjan Kalia",
+     "role": "Chief Financial Officer",
+     "confidence": "lead",
+     "sources": [
+      "https://businessofcannabis.com/cfo-ranjan-kalia-appointed-to-curaleaf/"
+     ]
+    },
+    {
+     "name": "Torsten Greif",
+     "role": "Board director",
+     "confidence": "verified",
+     "sources": [
+      "https://www.prnewswire.com/de/news-releases/curaleaf-announces-appointment-of-torsten-greif-to-board-of-directors-302759580.html"
+     ]
+    },
+    {
+     "name": "Boris Jordan",
+     "role": "Executive Chairman & CEO (verify)",
+     "confidence": "lead",
+     "sources": [
+      "https://simplywall.st/stocks/us/pharmaceuticals-biotech/otc-curl.f/curaleaf-holdings/management"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-bc032f08db",
+   "name": "Cycling Frog",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Hemp Fest at Urban Artifact 2026"
+   ],
+   "description": "THC beverage",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.cincinnatimagazine.com/article/hemp-fest-26/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://thegnarlygnome.com/?p=64467",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-930095009b",
+   "name": "Donnellon McCarthy Enterprises",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Gold sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-edc230f2fe",
+   "name": "Dotnet",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-23c2bdea6c",
+   "name": "Duty Free Terps",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Silver sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-bfc233f116",
+   "name": "Estazzi",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Hemp Fest at Urban Artifact 2026"
+   ],
+   "description": "THC beverage",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.cincinnatimagazine.com/article/hemp-fest-26/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://thegnarlygnome.com/?p=64467",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1d1eb04abc",
+   "name": "Ethos",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a2a0f77339",
+   "name": "Extract Consultants",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-2698a82a52",
+   "name": "Fat Nugs Magazine",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Media sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-634a9e87b5",
+   "name": "Finished Goods International LLC",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8ea5638d5e",
+   "name": "Floral",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Hemp Fest at Urban Artifact 2026"
+   ],
+   "description": "THC beverage",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.cincinnatimagazine.com/article/hemp-fest-26/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://thegnarlygnome.com/?p=64467",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4fd756bb6c",
+   "name": "Fluence",
+   "segment": "ancillary_business",
+   "category": "Cultivation / facility systems",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "website": "https://www.fluence-led.com",
+   "events": [
+    "MJBizCon 2026",
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Cannabis LED grow lighting (part of Signify).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/fluence",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://mjbizconference.com/speakers/",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Dave Hawley",
+     "role": "R&D and Horticulture Services Lead",
+     "confidence": "verified",
+     "sources": [
+      "https://mjbizconference.com/speakers/"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-2df5e6ac00",
+   "name": "Freedom Grow",
+   "segment": "advocacy_nonprofit",
+   "category": "Associations / advocacy / nonprofits",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "website": "https://mjbizcon2026.smallworldlabs.com/co/freedom-grow",
+   "events": [
+    "MJBizCon 2026",
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Nonprofit supporting cannabis prisoners; programming partner for the Achieving Equity in Cannabis reception (official networking page).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/freedom-grow",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c43fcb2d03",
+   "name": "Fuzzy Bones",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Hemp Fest at Urban Artifact 2026"
+   ],
+   "description": "hemp-derived THC beverage",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://thegnarlygnome.com/?p=64467",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d961dbcc0f",
+   "name": "G Pen / Stündenglass",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-eee61995e6",
+   "name": "Gleaf Group",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0c6bfaba0c",
+   "name": "Green Tank Tech",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8900580e98",
+   "name": "Groen Automation",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-234adbb377",
+   "name": "Gron & Wyld",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Gold sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1f74188184",
+   "name": "HBK",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Silver sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e041f22829",
+   "name": "Hemp Fest at Urban Artifact",
+   "segment": "event_organizer",
+   "category": "Events / networking",
+   "hq_city": "Cincinnati",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "description": "Cincinnati hemp festival held at Urban Artifact brewery, with local vendors.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://thegnarlygnome.com/?p=64467",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-64a9a719c1",
+   "name": "Hemper",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e30538ff8f",
+   "name": "High Times",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Media sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c51c743865",
+   "name": "Highly Capitalized",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Media sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ef42bab119",
+   "name": "Howdy",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Hemp Fest at Urban Artifact 2026"
+   ],
+   "description": "hemp-derived THC beverage",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://thegnarlygnome.com/?p=64467",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-244405f0e8",
+   "name": "Jeeter",
+   "segment": "plant_touching_operator",
+   "category": "Pre-roll / cones / papers",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026",
+    "MJBizCon 2026"
+   ],
+   "description": "Gold sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "file:///home/claude/work/drive/mjbizcon-happenings.xlsx",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-6b73b80aa4",
+   "name": "Karen Wellington Foundation",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Hemp Fest at Urban Artifact 2026"
+   ],
+   "description": "vendor (nonprofit)",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.cincinnatimagazine.com/article/hemp-fest-26/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a1b4402604",
+   "name": "Koorsen",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0a8e3d8708",
+   "name": "Layup",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Hemp Fest at Urban Artifact 2026"
+   ],
+   "description": "hemp-derived THC beverage",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://thegnarlygnome.com/?p=64467",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4e90a78807",
+   "name": "Lazear Capital",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3f0642cb8a",
+   "name": "LIT Alerts",
+   "segment": "ancillary_business",
+   "category": "Technology / AI / data",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026",
+    "MJBizCon 2026"
+   ],
+   "description": "VIP Lounge sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "file:///home/claude/work/drive/mjbizcon-happenings.xlsx",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-6649af6f02",
+   "name": "Locals Cannabis",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ba7e4d5287",
+   "name": "Main Street Health",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-939d8cfa2a",
+   "name": "MJ Unpacked and MJ Cultivate",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-37b65c34a3",
+   "name": "MJBizCon",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Media sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-865ec4d830",
+   "name": "Modern Flower",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Platinum sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1e5925e4d1",
+   "name": "Natural Therapies Education",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c1b42d95fd",
+   "name": "Nimbus",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Hemp Fest at Urban Artifact 2026"
+   ],
+   "description": "hemp-derived THC beverage",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://thegnarlygnome.com/?p=64467",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0a5806ecbb",
+   "name": "NovaVision, LLC",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1e9c51e2b8",
+   "name": "OCHBS",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-73768c74dc",
+   "name": "Oh-HighYo!",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Media sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-827f217779",
+   "name": "Paybotic",
+   "segment": "ancillary_business",
+   "category": "Finance / payments / accounting",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "website": "https://paybotic.com",
+   "events": [
+    "MJBizCon 2026",
+    "OCHBS 2026"
+   ],
+   "description": "High-risk payment processing: debit, ACH and related services.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/paybotic",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-96dfb2423d",
+   "name": "Pre Roll Distro",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3e16b9cf5f",
+   "name": "Pre Roll-er",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-25350a8347",
+   "name": "Precise Tax & Bookkeeping Solutions",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-efed021c2e",
+   "name": "Pure Ohio",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Silver sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7c6a3c7520",
+   "name": "Rectitude Partners",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Gold sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ea4f124534",
+   "name": "Rhinegeist",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Hemp Fest at Urban Artifact 2026"
+   ],
+   "description": "THC beverage (Fuzzy Bones)",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.cincinnatimagazine.com/article/hemp-fest-26/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-bdf2b58864",
+   "name": "Seeker",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Platinum sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-91d2612fcd",
+   "name": "STASH STOCK",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-50a7d25e68",
+   "name": "Subsidio Cannabis",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-41698cdc47",
+   "name": "Succlent Señorita",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Hemp Fest at Urban Artifact 2026"
+   ],
+   "description": "food",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.cincinnatimagazine.com/article/hemp-fest-26/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8519be5e98",
+   "name": "Succulent Señorita",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Hemp Fest at Urban Artifact 2026"
+   ],
+   "description": "food vendor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://thegnarlygnome.com/?p=64467",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a678a63d6a",
+   "name": "Sunflower",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Hemp Fest at Urban Artifact 2026"
+   ],
+   "description": "hemp-derived THC beverage",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://thegnarlygnome.com/?p=64467",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-82a3c86d7e",
+   "name": "The Magical Cannabunny",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-cfbb8a6833",
+   "name": "The Redemption Foundation",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-dc2556ee11",
+   "name": "Tilth Soil",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f2026124fe",
+   "name": "Timeless",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Silver sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-534f3b32ca",
+   "name": "Tom & Berry",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Silver sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b2b482fac0",
+   "name": "UBGood",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Gold sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-939e077b8b",
+   "name": "Uncle Skunks",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Hemp Fest at Urban Artifact 2026"
+   ],
+   "description": "hemp-derived THC beverage",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://thegnarlygnome.com/?p=64467",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a5b138505b",
+   "name": "United Label",
+   "segment": "ancillary_business",
+   "category": "Packaging / labels / printing",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "website": "https://mjbizcon2026.smallworldlabs.com/co/united-label",
+   "events": [
+    "MJBizCon 2026",
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Labels.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/united-label",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3d531fdbd3",
+   "name": "Urban Artifact",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Hemp Fest at Urban Artifact 2026"
+   ],
+   "description": "host brewery",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://thegnarlygnome.com/?p=64467",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-262d305429",
+   "name": "Veterans Home Guardians",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-25281d3b9f",
+   "name": "Virginia Cannabusiness Summit",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-47f728710e",
+   "name": "Vorys",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Gold sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f54f998810",
+   "name": "Wana",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Boulder",
+   "hq_state": "CO",
+   "states_active": [
+    "OH"
+   ],
+   "website": "https://www.wanabrands.com/",
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Gold sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.cannabisbusinesstimes.com/industry-headlines/news/15705420/canopy-usa-completes-acquisition-of-wana-canopy-growth-confirms",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-2b72d76f0d",
+   "name": "Zynpyre",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_state": "OH",
+   "states_active": [
+    "OH"
+   ],
+   "events": [
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  }
+ ]
+}

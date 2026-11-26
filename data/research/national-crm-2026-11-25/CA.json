@@ -1,0 +1,942 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "CA",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 26,
+ "records": [
+  {
+   "crm_id": "crm-o-d6562d9ba7",
+   "name": "AB Lighting",
+   "segment": "ancillary_business",
+   "category": "Cultivation / facility systems",
+   "hq_city": "Union City",
+   "hq_state": "CA",
+   "website": "https://www.enlitehorti.com/",
+   "public_contact": "info@enlitehorti.com; +1-818-683-8732",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Full-spectrum LED grow lights and integrated container farms for indoor and greenhouse growers.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/ab-lighting-enlite-energy-inc",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.enlitehorti.com/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0bc6e0d300",
+   "name": "Abstrax",
+   "segment": "ancillary_business",
+   "category": "Processing / extraction / testing",
+   "hq_city": "Irvine",
+   "hq_state": "CA",
+   "states_active": [
+    "US"
+   ],
+   "website": "https://www.abstraxtech.com",
+   "public_contact": "hello@abstraxtech.com; +1 (562) 294-5805; https://abstraxtech.com/pages/contact",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Terpene and flavor science: cannabis-inspired terpene formulations.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/abstrax",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://mjbizconference.com/speakers/",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.abstraxtech.com",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Jennifer Guild",
+     "role": "VP, Regulatory & Quality",
+     "confidence": "verified",
+     "sources": [
+      "https://mjbizconference.com/speakers/"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5c5222ec1b",
+   "name": "Advanced Nutrients",
+   "segment": "ancillary_business",
+   "category": "Cultivation / facility systems",
+   "hq_city": "Los Angeles",
+   "hq_state": "CA",
+   "states_active": [
+    "US"
+   ],
+   "website": "https://www.advancednutrients.com",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Cannabis-specific plant nutrients and grow additives.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/advanced-nutrients",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.builtinla.com/company/advanced-nutrients",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://mgmagazine.com/business/bigmike-advanced-nutrients-cannabis-cultivation",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.businesswire.com/news/home/20200213005126/en/Advanced-Nutrients-Launches-First-Ever-Starter-Kit-to-Make-20-Years-of-Innovation-Accessible-to-Everyone",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Michael \"BigMike\" Straumietis",
+     "role": "Founder",
+     "confidence": "lead",
+     "sources": [
+      "https://mgmagazine.com/business/bigmike-advanced-nutrients-cannabis-cultivation"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a0ef4ac359",
+   "name": "California Business and Consumer Services Agency",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Sacramento",
+   "hq_state": "CA",
+   "states_active": [
+    "CA"
+   ],
+   "website": "https://www.gov.ca.gov/",
+   "description": "New California cabinet agency created in 2026 overseeing business licensing and consumer protection departments.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.gov.ca.gov/2026/07/01/governor-newsom-swears-in-rohit-chopra-as-secretary-of-the-new-california-business-and-consumer-services-agency/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.gov.ca.gov/2026/05/12/governor-newsom-appoints-former-federal-regulator-rohit-chopra-to-head-new-business-and-consumer-services-agency-amid-trump-era-rollbacks/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.gov.ca.gov/2025/09/22/governor-newsom-signs-legislation-cutting-taxes-on-cannabis-promoting-the-long-term-success-of-the-legal-industry/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.gov.ca.gov/2025/10/02/governor-newsom-announces-99-8-compliance-with-emergency-regulations-signs-bill-to-permanently-protect-children-from-hemp-products/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.gov.ca.gov/2026/08/31/governor-newsom-signs-legislation-cracking-down-on-cannabis-ads-and-labels-that-appeal-to-kids/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.gov.ca.gov/2026/09/02/californias-legal-cannabis-market-generates-8-4-billion-for-californians-as-state-cracks-down-on-illicit-operators/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Rohit Chopra",
+     "role": "Secretary",
+     "confidence": "verified",
+     "sources": [
+      "https://www.gov.ca.gov/2026/07/01/governor-newsom-swears-in-rohit-chopra-as-secretary-of-the-new-california-business-and-consumer-services-agency/"
+     ]
+    },
+    {
+     "name": "Gavin Newsom",
+     "role": "Governor of California",
+     "confidence": "verified",
+     "sources": [
+      "https://www.gov.ca.gov/2025/09/22/governor-newsom-signs-legislation-cutting-taxes-on-cannabis-promoting-the-long-term-success-of-the-legal-industry/"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a412b34403",
+   "name": "California Civil Rights Department",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Sacramento",
+   "hq_state": "CA",
+   "states_active": [
+    "CA"
+   ],
+   "website": "https://calcivilrights.ca.gov/",
+   "description": "State agency enforcing the 2024 employment protections for off-duty cannabis use (Gov. Code 12954).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://calcivilrights.ca.gov/wp-content/uploads/sites/32/2024/01/Cannabis-Use-FAQ-ENG.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4f83df07a5",
+   "name": "California Department of Cannabis Control",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Sacramento",
+   "hq_state": "CA",
+   "states_active": [
+    "CA"
+   ],
+   "website": "https://cannabis.ca.gov/",
+   "public_contact": "https://cannabis.ca.gov/about-us/",
+   "description": "State agency that licenses and regulates all commercial cannabis activity in California, formed in 2021 by merging three earlier licensing programs.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.ca.gov/about-us/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.ca.gov/resources/search-for-licensed-business",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.ca.gov/resources/data-dashboard/license-report/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.cannabis.ca.gov/consumers/whats-legal/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cdn.cannabis.ca.gov/wp-content/uploads/sites/2/2026/07/dcc-2026-31-strategic-plan.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.ca.gov/about-us/cannabis-advisory-committee",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.ca.gov/about-us/cannabis-advisory-committee/cac-members/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cdn.cannabis.ca.gov/wp-content/uploads/sites/2/2026/03/cac-2025-annual-report.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cdn.cannabis.ca.gov/wp-content/uploads/sites/2/2026/09/20260915-cac-20260604-minutes.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Clint Kellum",
+     "role": "Director",
+     "confidence": "lead",
+     "sources": [
+      "https://www.gov.ca.gov/2025/11/26/governor-newsom-announces-appointments-11-26-2025/"
+     ]
+    },
+    {
+     "name": "Nicole Elliott",
+     "role": "Former Director (announced departure at end of 2025)",
+     "confidence": "lead",
+     "sources": [
+      "https://themarijuanaherald.com/2025/11/california-cannabis-control-director-nicole-elliott-to-step-down-at-end-of-year/"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b1289b2b9a",
+   "name": "California Department of Public Health - Food and Drug Branch",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Sacramento",
+   "hq_state": "CA",
+   "states_active": [
+    "CA"
+   ],
+   "website": "https://www.cdph.ca.gov/",
+   "description": "State public-health branch that regulates industrial hemp food and consumer products, including AB 8 hemp restrictions.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.cdph.ca.gov/Programs/CEH/DFDCS/Pages/FDBPrograms/FoodSafetyProgram/AssemblyBill8FAQ.aspx",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.cannabis.ca.gov/cannabis-laws/hemp/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-21a477c048",
+   "name": "California Department of Tax and Fee Administration",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Sacramento",
+   "hq_state": "CA",
+   "states_active": [
+    "CA"
+   ],
+   "website": "https://cdtfa.ca.gov/",
+   "description": "State tax agency that administers the cannabis excise tax collected by retailers and the Regulation 3801 excise tax permit rules.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cdtfa.ca.gov/industry/cannabis/retailers.htm",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cdtfa.ca.gov/taxes-and-fees/reg3801-2026.htm",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cdtfa.ca.gov/news/26-07.htm",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cdtfa.ca.gov/lawguides/vol3/ctl/ctl-34011-2.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-9deefcc9e3",
+   "name": "California NORML",
+   "segment": "advocacy_nonprofit",
+   "category": "Associations / advocacy / nonprofits",
+   "hq_city": "San Francisco",
+   "hq_state": "CA",
+   "states_active": [
+    "CA"
+   ],
+   "website": "https://www.canorml.org/",
+   "description": "State chapter of NORML advocating for cannabis consumers; sponsored the 2024 cannabis cafe law (AB 1775).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://canorml.org/?p=37424",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-59dcb55cec",
+   "name": "California State Assembly Committee on Business and Professions",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Sacramento",
+   "hq_state": "CA",
+   "states_active": [
+    "CA"
+   ],
+   "website": "https://abp.assembly.ca.gov",
+   "description": "Assembly policy committee that hears most cannabis licensing and regulatory bills.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://abp.assembly.ca.gov",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://abp.assembly.ca.gov/members",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://abp.assembly.ca.gov/billhearings",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Marc Berman",
+     "role": "Chair (named 2021; current status not re-confirmed)",
+     "confidence": "lead",
+     "sources": [
+      "https://a23.asmdc.org/press-releases/20211117-assemblymember-berman-named-chair-assembly-business-and-professions"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f3211c303a",
+   "name": "California State Assembly Committee on Revenue and Taxation",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Sacramento",
+   "hq_state": "CA",
+   "states_active": [
+    "CA"
+   ],
+   "website": "https://arev.assembly.ca.gov",
+   "description": "Assembly committee that hears tax bills, including the 2025 cannabis excise tax rollback.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://arev.assembly.ca.gov/media/905",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d9bce52634",
+   "name": "California State Senate - Office of the President pro Tempore",
+   "segment": "lawmaker_official",
+   "category": "Government / regulators",
+   "hq_state": "CA",
+   "states_active": [
+    "CA"
+   ],
+   "website": "https://sd21.senate.ca.gov/",
+   "description": "Senate leadership office that sets committee chairs, including the committees that hear cannabis bills.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://sd21.senate.ca.gov/news/2025/december/senate-leader-limon-announces-leadership-and-committee-membership-appointments",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Monique Limón",
+     "role": "Senate Leader (President pro Tempore)",
+     "confidence": "verified",
+     "sources": [
+      "https://sd21.senate.ca.gov/news/2025/december/senate-leader-limon-announces-leadership-and-committee-membership-appointments"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-9810723291",
+   "name": "California State Senate Committee on Business, Professions and Economic Development",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Sacramento",
+   "hq_state": "CA",
+   "states_active": [
+    "CA"
+   ],
+   "website": "https://sbp.senate.ca.gov",
+   "description": "Senate policy committee that hears cannabis licensing and regulatory bills.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://sbp.senate.ca.gov/agenda",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://sd21.senate.ca.gov/news/2025/december/senate-leader-limon-announces-leadership-and-committee-membership-appointments",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-162453fc30",
+   "name": "Cannabis Control Appeals Panel",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Sacramento",
+   "hq_state": "CA",
+   "states_active": [
+    "CA"
+   ],
+   "website": "https://ccap.ca.gov/",
+   "description": "State panel that hears appeals of Department of Cannabis Control licensing decisions.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccap.ca.gov/about/members.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.ccap.ca.gov/about/meetings/materials/20260521_materials.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a02f07d726",
+   "name": "Glass House Brands",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Long Beach",
+   "hq_state": "CA",
+   "states_active": [
+    "CA"
+   ],
+   "website": "https://glasshousebrands.com/",
+   "description": "California vertically integrated cannabis company with large greenhouse cultivation and brands such as Glass House Farms.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://glasshousebrands.com/press-release/glass-house-brands-board-of-directors-establishes-product-expansion-committee-to-support-new-product-and-business-development/",
+     "kind": "primary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://glasshousebrands.com/wp-content/uploads/2026/03/GHB-4Q25-Earnings.pdf",
+     "kind": "primary",
+     "reviewed_on": "2026-11-25"
+    }
+   ],
+   "people": [
+    {
+     "name": "Kyle Kazan",
+     "role": "Co-founder, Chairman & CEO (verify)",
+     "confidence": "lead",
+     "sources": [
+      "https://glasshousebrands.com/?p=7065"
+     ]
+    },
+    {
+     "name": "Graham Farrar",
+     "role": "Co-founder & President (verify)",
+     "confidence": "lead",
+     "sources": [
+      "https://glasshousebrands.com/?p=7065"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d4c6b67092",
+   "name": "Hall of Flowers",
+   "segment": "event_organizer",
+   "category": "Events / networking",
+   "hq_city": "Ventura",
+   "hq_state": "CA",
+   "states_active": [
+    "CA"
+   ],
+   "website": "https://hallofflowers.com",
+   "description": "Curated, invite-oriented California cannabis brand trade show connecting brands with licensed retail buyers.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://hallofflowers.com",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.hallofflowers.com/exhibitors",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://mgmagazine.com/press-releases/hall-of-flowers-to-move-norcal-show-to-sacramento-in-november/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.greenstate.com/business/hall-of-flowers-ventura-2026/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://respectmyregion.com/?p=133637",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://munchmakers.com/cannabis-events/events/hall-of-flowers-ventura-2026",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://respectmyregion.com/?p=134807",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://highlycapitalized.com/?p=37743",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5031f81f38",
+   "name": "Judicial Council of California - Proposition 64 resources",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "San Francisco",
+   "hq_state": "CA",
+   "states_active": [
+    "CA"
+   ],
+   "website": "https://courts.ca.gov/",
+   "description": "State court system page explaining Prop 64 record relief, dismissal and resentencing.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://courts.ca.gov/programs-initiatives/criminal-justice-services/proposition-64-adult-use-marijuana-act",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-28c221bd34",
+   "name": "JWC Environmental",
+   "segment": "ancillary_business",
+   "category": "Processing / extraction / testing",
+   "hq_city": "Santa Ana",
+   "hq_state": "CA",
+   "states_active": [
+    "US"
+   ],
+   "website": "https://www.jwce.com",
+   "public_contact": "Sales (800) 331-2277; https://www.jwce.com/contact/",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Monster grinders and shredders for solids reduction and product destruction.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/jwc-environmental",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.jwce.com",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-011f5e43ae",
+   "name": "KurePro dba Maxcore",
+   "segment": "ancillary_business",
+   "category": "Vape hardware / devices",
+   "hq_city": "City of Industry",
+   "hq_state": "CA",
+   "states_active": [
+    "US"
+   ],
+   "website": "https://www.kurepro.com/",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Vape hardware (Maxcore / KurePro): glass cartridges and all-in-one devices; City of Industry, CA.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/kurepro-dba-maxcore",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://reach.dog/shop/kurepro/products/tango-ii",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://vape-jet.com/maxcore-partner/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://mgretailer.com/author/maxcore",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8e532ea6ab",
+   "name": "Los Angeles Department of Cannabis Regulation",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Los Angeles",
+   "hq_state": "CA",
+   "states_active": [
+    "CA"
+   ],
+   "website": "https://cannabis.lacity.gov/",
+   "description": "City of Los Angeles department that licenses local commercial cannabis businesses and runs the city's social equity program.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.lacity.gov/about/department-cannabis-regulation/about-us",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.lacity.gov/articles/california-cannabis-taxes",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b87130f603",
+   "name": "Office of Assemblymember Cecilia Aguiar-Curry (AD 4)",
+   "segment": "lawmaker_official",
+   "category": "Government / regulators",
+   "hq_state": "CA",
+   "states_active": [
+    "CA"
+   ],
+   "website": "https://a04.asmdc.org/",
+   "description": "Assembly office whose AB 8 (2025) brought intoxicating hemp products under the state cannabis framework.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://a04.asmdc.org/press-releases/20251002-ab-8-becomes-law-protect-public-health-and-regulate-hemp-market",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Cecilia Aguiar-Curry",
+     "role": "Assemblymember, District 4; author of AB 8 (hemp)",
+     "confidence": "lead",
+     "sources": [
+      "https://a04.asmdc.org/press-releases/20251002-ab-8-becomes-law-protect-public-health-and-regulate-hemp-market"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-01178bca89",
+   "name": "Office of Assemblymember Matt Haney (AD 17)",
+   "segment": "lawmaker_official",
+   "category": "Government / regulators",
+   "hq_city": "San Francisco",
+   "hq_state": "CA",
+   "states_active": [
+    "CA"
+   ],
+   "website": "https://a17.asmdc.org/",
+   "description": "Assembly office of the author of AB 564 (2025 cannabis excise tax rollback) and AB 1775 (2024 cannabis cafes).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://haney.asmdc.org/press-releases/20250324-new-bill-gives-tax-relief-dying-california-cannabis-industry",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://a17.asmdc.org/press-releases/20250911-bill-giving-tax-relief-dying-california-cannabis-industry-heads-governors",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://a17.asmdc.org/press-releases/20241001-amsterdam-style-cannabis-cafes-just-became-legal-ca",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Matt Haney",
+     "role": "Assemblymember, District 17; author of AB 564 and AB 1775",
+     "confidence": "verified",
+     "sources": [
+      "https://haney.asmdc.org/press-releases/20250324-new-bill-gives-tax-relief-dying-california-cannabis-industry"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-af840ee2ed",
+   "name": "San Francisco Cannabis Oversight Council",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "San Francisco",
+   "hq_state": "CA",
+   "states_active": [
+    "CA"
+   ],
+   "website": "https://www.sf.gov/vacancy-notice-cannabis-oversight-council",
+   "description": "San Francisco advisory council on local cannabis policy; seats are filled by public vacancy notices.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.sf.gov/vacancy-notice-cannabis-oversight-council",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-74082fcac3",
+   "name": "STIIIZY",
+   "segment": "ancillary_business",
+   "category": "Technology / AI / data",
+   "hq_city": "Los Angeles",
+   "hq_state": "CA",
+   "states_active": [
+    "CA",
+    "MO",
+    "IL"
+   ],
+   "website": "https://www.stiiizy.com/",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "California-founded cannabis brand and retailer with a large California store footprint and expansion into states such as Missouri and Illinois.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://mjbizconference.com/sessions/the-retail-playbook-is-changing-what-innovative-cannabis-operators-are-doing-differently/",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.cannabisbusinesstimes.com/dispensary/news/15837368/stiiizy-bets-big-on-california-as-retail-footprint-reaches-65-stores-statewide",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://mgmagazine.com/press-releases/stiiizy-announces-illinois-launch-expands-midwest-footprint",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://www.thepitchkc.com/stiiizy-leans-on-consumer-culture-and-lifestyle-in-missouri-cannabis-market-expansion/",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    }
+   ],
+   "people": [
+    {
+     "name": "Garrett Jewell",
+     "role": "Sr. Enterprise Systems Architect",
+     "confidence": "verified",
+     "sources": [
+      "https://mjbizconference.com/sessions/the-retail-playbook-is-changing-what-innovative-cannabis-operators-are-doing-differently/"
+     ]
+    },
+    {
+     "name": "Tony Shin",
+     "role": "General Counsel",
+     "confidence": "lead",
+     "sources": [
+      "https://mgmagazine.com/press-releases/stiiizy-appoints-tony-shin-general-counsel"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3882413079",
+   "name": "The Emerald Cup",
+   "segment": "event_organizer",
+   "category": "Events / networking",
+   "hq_state": "CA",
+   "states_active": [
+    "CA"
+   ],
+   "description": "Long-running California craft cannabis competition and festival, including the Harvest Ball.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://mgmagazine.com/press-releases/tradition-takes-root-as-emerald-cup-announces-annual-harvest-ball-festival-dates-for-december-2022",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-69ef680d86",
+   "name": "uKera Lab",
+   "segment": "ancillary_business",
+   "category": "Vape hardware / devices",
+   "hq_city": "Cerritos",
+   "hq_state": "CA",
+   "states_active": [
+    "US"
+   ],
+   "website": "https://mjbizcon2026.smallworldlabs.com/co/ukera-lab",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Cannabis vape hardware company (Cerritos, CA).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/ukera-lab",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannacon.org/exhibitors/µkera-usa/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://future4200.com/t/mjbizon2022-cbd-vapes-manufacturer-ukera-usa/191509",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  }
+ ]
+}

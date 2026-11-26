@@ -1,0 +1,48 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "IN",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 1,
+ "records": [
+  {
+   "crm_id": "crm-o-1b9c672918",
+   "name": "Agdia, Inc",
+   "segment": "ancillary_business",
+   "category": "Processing / extraction / testing",
+   "hq_city": "Elkhart",
+   "hq_state": "IN",
+   "states_active": [
+    "US"
+   ],
+   "website": "https://www.agdia.com/customer-support/cannabis-and-hemp-test-kits",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "On-site HLVd test kits and plant pathogen testing (viruses, viroids, bacteria, fungi) for cannabis growers.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/agdia-inc",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://agdia.com/customer-support/cannabis-and-hemp-test-kits",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.agdia.com/company/news/1684588/agdia-releases-rapid-isothermal-molecular-assay-for-detection-of-hlvd-hop-latent-viroid",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.agdia.com/testing-services/hemp",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  }
+ ]
+}

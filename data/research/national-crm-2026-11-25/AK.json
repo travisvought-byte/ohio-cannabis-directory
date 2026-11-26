@@ -1,0 +1,104 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "AK",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 3,
+ "records": [
+  {
+   "crm_id": "crm-o-b5a260fadb",
+   "name": "Alaska Division of Agriculture - Industrial Hemp Program",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Palmer",
+   "hq_state": "AK",
+   "states_active": [
+    "AK"
+   ],
+   "website": "https://dnr.alaska.gov/ag/ag_IH.htm",
+   "description": "State division that registers industrial hemp growers and processors in Alaska.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://dnr.alaska.gov/ag/ag_IH.htm",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4d1dcdbe72",
+   "name": "Alaska Laboratory Testing Working Group (MCB)",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Anchorage",
+   "hq_state": "AK",
+   "states_active": [
+    "AK"
+   ],
+   "description": "Marijuana Control Board working group on cannabis testing rules, meeting in 2026.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.commerce.alaska.gov/web/Portals/9/pub/MCB/CannabisTesting/MEETING MINUTES 2026.04.08 Laboratory Testing Working Group.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e7932ee243",
+   "name": "Alcohol and Marijuana Control Office",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Anchorage",
+   "hq_state": "AK",
+   "states_active": [
+    "AK"
+   ],
+   "website": "https://www.commerce.alaska.gov/web/amco/",
+   "description": "Alaska Department of Commerce office (AMCO) that staffs the Marijuana Control Board and handles marijuana and alcohol licensing and enforcement.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.commerce.alaska.gov/web/amco/AboutUs",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.commerce.alaska.gov/web/amco/MarijuanaFAQs",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://gov.alaska.gov/roster/?board=275",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.commerce.alaska.gov/web/Portals/9/pub/MCB/Minutes/2026/2.4-5/February 4-5 2026 MCB Board Regular Meeting Agenda.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Joan Wilson",
+     "role": "Executive Director",
+     "confidence": "verified",
+     "sources": [
+      "https://gov.alaska.gov/governor-dunleavy-appoints-joan-wilson-as-amco-executive-director/"
+     ]
+    },
+    {
+     "name": "Glen Klinkhart",
+     "role": "Former Director",
+     "confidence": "verified",
+     "sources": [
+      "https://gov.alaska.gov/governor-dunleavy-appoints-klinkhart-as-director-of-the-alcohol-and-marijuana-control-office/"
+     ]
+    }
+   ]
+  }
+ ]
+}

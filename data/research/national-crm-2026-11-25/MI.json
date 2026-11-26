@@ -1,0 +1,759 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "MI",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 31,
+ "records": [
+  {
+   "crm_id": "crm-o-0e429247c7",
+   "name": "BDT Smoke Shop",
+   "segment": "ancillary_business",
+   "category": "Needs research",
+   "hq_city": "Hazel Park",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "sponsor; smoke shop",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-be2ce94b8c",
+   "name": "Candy Man",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "flower",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-2ef81459f2",
+   "name": "Dank & Disorderly",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "flower brand (grown by Delta Farms)",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0488c2e45a",
+   "name": "Delta Farms",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Niles",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "cannabis cultivation",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7e05cce2d5",
+   "name": "DogHouse Farms",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Detroit",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "flower",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-49ab94877c",
+   "name": "Emerald Canning",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "cannabis beverages",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c8b5694b80",
+   "name": "Growing Pains",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Paw Paw",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "flower and live rosin",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f7714aad5f",
+   "name": "High Neighbor",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "flower, prerolls, concentrates",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3fe0f4a884",
+   "name": "Hytek",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "cannabis brand",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0e8c741af9",
+   "name": "Koppert US",
+   "segment": "ancillary_business",
+   "category": "Cultivation / facility systems",
+   "hq_city": "Howell",
+   "hq_state": "MI",
+   "states_active": [
+    "US"
+   ],
+   "website": "https://www.koppertus.com/",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Biological pest control and IPM consulting.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/koppert-us",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.koppertus.com/news/predatory-mite-pioneers-a-journey-of-biocontrol-innovations/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.findglocal.com/US/Howell/416668465449560/Koppert-US",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.koppertus.com/news/2019/natural-enemies-now-a-division-of-koppert-biological-systems-inc",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-bc2262f2b7",
+   "name": "KSHN Pouch Co.",
+   "segment": "hemp_cbd",
+   "category": "Retail / brands / distribution",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "THC pouches",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4c35c2d056",
+   "name": "Lansing City Pulse",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Lansing",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "website": "https://lansingcitypulse.com/",
+   "description": "Lansing alt-weekly that regularly covers Michigan cannabis policy, including caregiver-market fights and trade group formation.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://lansingcitypulse.com/hundreds-of-cannabis-brands-defend-caregivers-in-michigan/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://lansingcitypulse.com/stories/marijuana-advocates-form-trade-association,238",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c7479cfbb3",
+   "name": "LegaSea Farms",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "flower and prerolls",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-038757475d",
+   "name": "Levels",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "dispensary retail network",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8bc3cb2a5c",
+   "name": "Local Grove",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "cannabis brand",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-cd048a9902",
+   "name": "Metro Times Cannabis Week",
+   "segment": "media_publication",
+   "category": "Events / networking",
+   "hq_city": "Detroit",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "website": "https://www.metrotimes.com/?p=296126",
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "Detroit Metro Times' annual Michigan cannabis week with participating vendors and events.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3619f1eb00",
+   "name": "Metro Times Cannabis Week 2026",
+   "segment": "event_organizer",
+   "category": "Events / networking",
+   "hq_city": "Detroit",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "Detroit-area cannabis week run by Metro Times featuring Michigan craft brands, dispensaries and sponsors.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b8d4cf6eae",
+   "name": "Michigan Cannabis Industry Association",
+   "segment": "trade_association",
+   "category": "Associations / advocacy / nonprofits",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "website": "https://www.micannabisindustryassociation.org/",
+   "description": "Statewide trade association representing licensed cannabis businesses in Michigan; launched in early 2019.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.micannabisindustryassociation.org/about/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.micannabisindustryassociation.org/2019/02/01/crains-detroit-business-michigan-cannabis-industry-association-launched-to-advocate-for-businesses-consumers",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-2719c3e36a",
+   "name": "Michigan Cannabis Manufacturers Association",
+   "segment": "trade_association",
+   "category": "Associations / advocacy / nonprofits",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "description": "Trade group of larger Michigan cannabis cultivators and processors that has pushed regulators on testing, recalls and caregiver-market issues.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.cannabisbusinesstimes.com/business-issues-benchmarks/compliance/news/15692386/michigan-cannabis-manufacturers-association-targets-state-regulators",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://bevinfogroup.com/2022/09/14/mcma-applauds-appointment-of-hanna-to-cra-acting-executive-director/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-dd395dc430",
+   "name": "Michigan Cannabis Regulatory Agency",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Lansing",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "website": "https://www.michigan.gov/cra",
+   "description": "State agency within LARA that licenses and regulates Michigan's medical and adult-use marijuana businesses and hemp processor-handlers.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.michigan.gov/cra/resources/consumer-connection",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.michigan.gov/cra/resources/cannabis-regulatory-agency-licensing-reports/adult-use-marijuana-licensing-report/2025-adult-use-marijuana-licensing-reports",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.michigan.gov/lara/about/leadership",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Brian Hanna",
+     "role": "Executive Director",
+     "confidence": "verified",
+     "sources": [
+      "https://www.michigan.gov/lara/news-releases/2025/12/18/statement-from-michigan-cannabis-regulatory-agency-executive-director-brian-hanna",
+      "https://www.michigan.gov/lara/news-releases/2026/06/15/press-release-michigans-brian-hanna-elected-president-of-cannabis-regulators-association"
+     ]
+    },
+    {
+     "name": "Marlon Brown",
+     "role": "Director",
+     "confidence": "verified",
+     "sources": [
+      "https://michigan.gov/lara/about/leadership/marlon-brown",
+      "https://www.michigan.gov/lara/news-releases/2025/09/18/lara-director-marlon-brown-on-house-republican-budget"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7e0921607b",
+   "name": "MiCIA Magazine",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "description": "Trade magazine of the Michigan Cannabis Industry Association, produced with Hour Media and published on issuu.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://issuu.com/hour_media/docs/micia_volume_7_number_4",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://issuu.com/hour_media/docs/micia_volume_7_issue_2_2025",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-80b0f5bb6f",
+   "name": "Mojo Chocolate",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "THC-infused chocolate",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-55233c5e96",
+   "name": "One Garden",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "cannabis cultivation and processing",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c38efeba6c",
+   "name": "Premier Cannabis Farms",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Lansing area",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "small-batch flower",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-05666b5a75",
+   "name": "Puff Cannabis",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "sponsor; dispensary chain",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-df57b0a3e1",
+   "name": "Seed Junky",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "flower",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5b8e54eb7f",
+   "name": "Society C",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Orion Township",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "flower, prerolls, live resin, rosin, vapes",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-801d027309",
+   "name": "The Hive",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Hazel Park",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "dispensary and microbusiness; flower, live rosin",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1fc6fa27f2",
+   "name": "Tip Top Crop",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "cannabis brand",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1c6c4e461b",
+   "name": "Utopia Gardens",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "cannabis brand/dispensary",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0c2203e343",
+   "name": "Wojo",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Pinconning",
+   "hq_state": "MI",
+   "states_active": [
+    "MI"
+   ],
+   "events": [
+    "Metro Times Cannabis Week 2026"
+   ],
+   "description": "cannabis brand",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.metrotimes.com/?p=296126",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    }
+   ]
+  }
+ ]
+}

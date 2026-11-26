@@ -1,0 +1,380 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "IL",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 10,
+ "records": [
+  {
+   "crm_id": "crm-o-7e2d431059",
+   "name": "Cresco Labs",
+   "segment": "ancillary_business",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Chicago",
+   "hq_state": "IL",
+   "states_active": [
+    "OH",
+    "KY"
+   ],
+   "website": "https://www.crescolabs.com",
+   "events": [
+    "MJBizCon 2026",
+    "OCHBS 2026",
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Ohio marketing contact for a vertically integrated multistate cannabis operator and brand portfolio.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizconference.com/sessions/stock-smarter-sell-faster-inventory-velocity-strategies-from-big-box-retail/",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1832928/000183292826000005/cresco-aifxq42025.htm",
+     "kind": "primary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://winchestersun.com/?p=83911",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.lex18.com/news/covering-kentucky/1-of-kentuckys-largest-medical-marijuana-facilities-unveiled-in-clark-county",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://lpm.org/news/2025-04-30/how-a-top-marijuana-company-landed-kentuckys-most-coveted-medical-cannabis-license",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Cory Rothschild",
+     "role": "Retail President",
+     "confidence": "verified",
+     "sources": [
+      "https://mjbizconference.com/sessions/stock-smarter-sell-faster-inventory-velocity-strategies-from-big-box-retail/"
+     ]
+    },
+    {
+     "name": "Charlie Bachtell",
+     "role": "Co-founder & CEO",
+     "confidence": "lead",
+     "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1832928/000183292826000005/cresco-aifxq42025.htm"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a1f4b3dc94",
+   "name": "Illinois Cannabis Regulation Oversight Officer",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Springfield",
+   "hq_state": "IL",
+   "states_active": [
+    "IL"
+   ],
+   "website": "https://illinois.gov/agencies/agency.croo.html",
+   "description": "State office created under the Cannabis Regulation and Tax Act to coordinate Illinois cannabis policy across the licensing agencies and publish the annual cannabis report.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://illinois.gov/agencies/agency.croo.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ilga.gov/legislation/ilcs/documents/041007050K5-45.htm",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.illinois.gov/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://idfpr.illinois.gov/news/2026/illinois-releases-2026-annual-cannabis-report-highlighting-continued-growth.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Erin Johnson",
+     "role": "Cannabis Regulation Oversight Officer",
+     "confidence": "lead",
+     "sources": [
+      "https://www.wjol.com/pritzker-appoints-erin-johnson-to-serve-as-states-cannabis-chief/",
+      "https://www.cannabisbusinesstimes.com/news/illinois-appointment-cannabis-regulatory-oversight-officer",
+      "https://mjbizdaily.com/?p=347320"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5d71eb86d3",
+   "name": "Illinois Department of Agriculture - Cannabis Bureaus",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Springfield",
+   "hq_state": "IL",
+   "states_active": [
+    "IL"
+   ],
+   "website": "https://cannabis.illinois.gov/agencies/idoa.html",
+   "description": "Licenses and inspects Illinois cannabis cultivation centers, craft growers, infusers and transporters.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.illinois.gov/agencies/idoa.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.illinois.gov/agencies/cannabis-idoa/bureaus.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.illinois.gov/agencies/cannabis-idoa/bureaus/cannabis-inspection.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://cannabis.illinois.gov/agencies/cannabis-idoa/agriculture-news.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e94fa5c15a",
+   "name": "Illinois Department of Financial and Professional Regulation (IDFPR) - Cannabis",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Springfield",
+   "hq_state": "IL",
+   "states_active": [
+    "IL"
+   ],
+   "website": "https://idfpr.illinois.gov/",
+   "description": "State agency that licenses and regulates Illinois adult-use and medical cannabis dispensing organizations, including social-equity conditional licenses.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://idfpr.illinois.gov/profs/adultusecan/185conditionalauc2022.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/auc/all-cannabis-licenses.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://idfpr.illinois.gov/news/2026/illinois-expands-access-medical-cannabis-patients-and-dispensaries.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Mario Treto, Jr.",
+     "role": "Secretary, IDFPR",
+     "confidence": "lead",
+     "sources": [
+      "https://IDFPR.illinois.gov/content/dam/soi/en/web/idfpr/forms/executive/SecretaryMarioTretoJr_2023.pdf",
+      "https://idfpr.illinois.gov/secretary.html"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-436f317fdd",
+   "name": "Illinois State Police - Cannabis Control Office",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_state": "IL",
+   "states_active": [
+    "IL"
+   ],
+   "website": "https://isp.illinois.gov/CCO/CannabisControl",
+   "description": "Illinois State Police unit with a cannabis control role under the state cannabis law.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://isp.illinois.gov/CCO/CannabisControl",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ac3933a840",
+   "name": "KMOX (Audacy St. Louis)",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "St. Louis",
+   "hq_state": "MO",
+   "states_active": [
+    "MO",
+    "IL"
+   ],
+   "description": "St. Louis news radio station that covers Missouri and Illinois cannabis regulation news.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.audacy.com/kmox/news/local/illinois-has-a-new-cannabis-regulation-oversight-officer",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3b1f86db4c",
+   "name": "New Leaf Illinois",
+   "segment": "advocacy_nonprofit",
+   "category": "Associations / advocacy / nonprofits",
+   "hq_state": "IL",
+   "states_active": [
+    "IL"
+   ],
+   "description": "Statewide state-funded initiative that offers free legal help to clear cannabis records in Illinois.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://cannabis.illinois.gov/legal-and-enforcement/expungement.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0e56877553",
+   "name": "Seedburo Equipment Co",
+   "segment": "ancillary_business",
+   "category": "Processing / extraction / testing",
+   "hq_city": "Des Plaines",
+   "hq_state": "IL",
+   "states_active": [
+    "US"
+   ],
+   "website": "https://seedburo.com/",
+   "public_contact": "sales@seedburo.com; (800) 284-5779; https://seedburo.com/pages/contact-us",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Handling, testing and grading equipment for grain, feed and seed (100+ years).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/seedburo-equipment-co",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://seedburo.com/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-74082fcac3",
+   "name": "STIIIZY",
+   "segment": "ancillary_business",
+   "category": "Technology / AI / data",
+   "hq_city": "Los Angeles",
+   "hq_state": "CA",
+   "states_active": [
+    "CA",
+    "MO",
+    "IL"
+   ],
+   "website": "https://www.stiiizy.com/",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "California-founded cannabis brand and retailer with a large California store footprint and expansion into states such as Missouri and Illinois.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://mjbizconference.com/sessions/the-retail-playbook-is-changing-what-innovative-cannabis-operators-are-doing-differently/",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.cannabisbusinesstimes.com/dispensary/news/15837368/stiiizy-bets-big-on-california-as-retail-footprint-reaches-65-stores-statewide",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://mgmagazine.com/press-releases/stiiizy-announces-illinois-launch-expands-midwest-footprint",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://www.thepitchkc.com/stiiizy-leans-on-consumer-culture-and-lifestyle-in-missouri-cannabis-market-expansion/",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    }
+   ],
+   "people": [
+    {
+     "name": "Garrett Jewell",
+     "role": "Sr. Enterprise Systems Architect",
+     "confidence": "verified",
+     "sources": [
+      "https://mjbizconference.com/sessions/the-retail-playbook-is-changing-what-innovative-cannabis-operators-are-doing-differently/"
+     ]
+    },
+    {
+     "name": "Tony Shin",
+     "role": "General Counsel",
+     "confidence": "lead",
+     "sources": [
+      "https://mgmagazine.com/press-releases/stiiizy-appoints-tony-shin-general-counsel"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4eeb57ec1d",
+   "name": "WJOL",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Joliet",
+   "hq_state": "IL",
+   "states_active": [
+    "IL"
+   ],
+   "website": "https://www.wjol.com/",
+   "description": "Joliet-area news radio station that reported on Illinois cannabis regulator appointments.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.wjol.com/pritzker-appoints-erin-johnson-to-serve-as-states-cannabis-chief/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  }
+ ]
+}

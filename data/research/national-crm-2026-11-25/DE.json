@@ -1,0 +1,124 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "DE",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 4,
+ "records": [
+  {
+   "crm_id": "crm-o-370c581a3f",
+   "name": "Delaware Office of the Marijuana Commissioner",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_state": "DE",
+   "states_active": [
+    "DE"
+   ],
+   "website": "https://omc.delaware.gov/",
+   "description": "State office that licenses and regulates Delaware's medical and adult-use marijuana markets.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://omc.delaware.gov/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://omc.delaware.gov/adult-use/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://news.delaware.gov/2025/08/01/delaware-launches-legal-adult-use-cannabis-sales-today/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://news.delaware.gov/2026/07/16/omc-legislative-updates-153rd-general-assembly/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://omc.delaware.gov/adult/licensing/index.shtml?dc=appeals",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Joshua Sanderlin",
+     "role": "Marijuana Commissioner",
+     "confidence": "lead",
+     "sources": [
+      "https://news.delaware.gov/2025/04/21/governor-meyer-nominates-new-marijuana-commissioner/",
+      "https://mjbizdaily.com/joshua-sanderlin-approved-as-delaware-marijuana-commissioner/",
+      "https://spotlightdelaware.org/2025/06/20/delaware-marijuana-commissioner-sanderlin-interview/"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-98efbfe53c",
+   "name": "Delaware Public Media (The Green)",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "DE",
+   "states_active": [
+    "DE"
+   ],
+   "website": "https://www.delawarepublic.org/",
+   "description": "Delaware public radio outlet whose program The Green covers the state's cannabis market.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.delawarepublic.org/show/the-green/2025-06-20/new-marijuana-commissioner-readies-delaware-for-recreational-market-rollout",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b443e7b330",
+   "name": "Spotlight Delaware",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "DE",
+   "states_active": [
+    "DE"
+   ],
+   "website": "https://spotlightdelaware.org/",
+   "description": "Nonprofit Delaware news outlet that has covered the state's marijuana commissioner and market rollout.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://spotlightdelaware.org/2025/06/20/delaware-marijuana-commissioner-sanderlin-interview/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-bc9e0cb438",
+   "name": "WHYY",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Philadelphia",
+   "hq_state": "PA",
+   "states_active": [
+    "PA",
+    "NJ",
+    "DE"
+   ],
+   "website": "https://whyy.org",
+   "description": "Philadelphia public radio and news outlet covering Pennsylvania cannabis legislation.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://whyy.org/articles/pennsylvania-adult-use-marijuana-november-election/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  }
+ ]
+}

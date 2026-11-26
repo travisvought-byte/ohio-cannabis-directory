@@ -1,0 +1,539 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "FL",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 20,
+ "records": [
+  {
+   "crm_id": "crm-o-d2d50a4e0c",
+   "name": "Arboretum (AYR noteholder vehicle)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "states_active": [
+    "FL",
+    "NJ",
+    "NV"
+   ],
+   "description": "Noteholder-controlled entity that took over AYR Wellness's Florida, New Jersey and Nevada cannabis operations.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.cannabisbusinesstimes.com/industry-headlines/news/15826563/ayr-wellness-closes-transfer-of-florida-new-jersey-nevada-operations-to-arboretum",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://businessofcannabis.com/ayr-wellness-hands-florida-new-jersey-and-nevada-dispensaries-to-noteholder-vehicle-as-ccaa-wind-down-advances/",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d1c7cb0a22",
+   "name": "Doctor Springs",
+   "segment": "ancillary_business",
+   "category": "Education / research / health",
+   "hq_state": "FL",
+   "states_active": [
+    "FL"
+   ],
+   "website": "https://doctorsprings.com/",
+   "description": "Florida medical marijuana evaluation provider with a guide to licensed dispensaries.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://doctorsprings.com/guides/the-green-pages-a-directory-of-floridas-licensed-medical-marijuana-dispensaries/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-80b317d90e",
+   "name": "Florida Department of Health, Office of Medical Marijuana Use",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Tallahassee",
+   "hq_state": "FL",
+   "states_active": [
+    "FL"
+   ],
+   "website": "https://knowthefactsmmj.com/",
+   "description": "State office within the Florida Department of Health that licenses and regulates medical marijuana treatment centers, testing labs, the patient registry and physicians.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://knowthefactsmmj.com/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://knowthefactsmmj.com/mmtc/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.flsenate.gov/Laws/Statutes/2025/385.212",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://knowthefactsmmj.com/wp-content/uploads/2026/02/2026_Annual_Report.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://knowthefactsmmj.com/wp-content/uploads/ommu_updates/2026/OMMU-Update-091826.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Christopher Kimball",
+     "role": "Former Director (2022-2025)",
+     "confidence": "lead",
+     "sources": [
+      "https://thecapitolist.com/christopher-phillip-kimball-named-director-of-floridas-office-of-medical-marijuana-use/",
+      "https://www.wusf.org/politics-issues/2022-11-16/floridas-new-medical-marijuana-czar-is-a-lawyer-and-former-navy-officer",
+      "https://floridaphoenix.com/2025/08/06/floridas-top-marijuana-regulator-leaves-post/"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-25bd2c5e54",
+   "name": "Florida Phoenix",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Tallahassee",
+   "hq_state": "FL",
+   "states_active": [
+    "FL"
+   ],
+   "website": "https://floridaphoenix.com/",
+   "description": "Nonprofit state-government news outlet covering Florida cannabis regulation.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://floridaphoenix.com/2025/08/06/floridas-top-marijuana-regulator-leaves-post/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e341b31f0f",
+   "name": "Florida Politics",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "St. Petersburg",
+   "hq_state": "FL",
+   "states_active": [
+    "FL"
+   ],
+   "website": "https://floridapolitics.com/",
+   "description": "Florida political news site that regularly reports on OMMU leadership, licensing and enforcement.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://floridapolitics.com/archives/750967-floridas-top-marijuana-regulator-leaves-post/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://floridapolitics.com/archives/760506-pot-card-drug-crime/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0ea08f12c0",
+   "name": "Florida Secretary of State, Division of Elections",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Tallahassee",
+   "hq_state": "FL",
+   "states_active": [
+    "FL"
+   ],
+   "description": "State office that certifies citizen-initiative petition signatures, including the 2026 marijuana legalization petition.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.yahoo.com/news/articles/florida-secretary-state-defends-petition-001032224.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c6b9faeae1",
+   "name": "Florida Senate Committee on Health Policy",
+   "segment": "lawmaker_official",
+   "category": "Government / regulators",
+   "hq_city": "Tallahassee",
+   "hq_state": "FL",
+   "states_active": [
+    "FL"
+   ],
+   "description": "Florida Senate standing committee that hears OMMU briefings and medical marijuana legislation.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://citizenportal.ai/articles/6343956/Florida/Legislative/Senate/Standing-Committees/Health-Policy/Office-of-Medical-Marijuana-Use-reports-seedtosale-tracking-lab-integration-and-enforcement-activity-as-patient-count-tops-900000",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-31033c9c03",
+   "name": "Kind Health Florida",
+   "segment": "ancillary_business",
+   "category": "Education / research / health",
+   "hq_state": "FL",
+   "states_active": [
+    "FL"
+   ],
+   "website": "https://kindhealthflorida.com/",
+   "description": "Florida medical marijuana card clinic that publishes a list of treatment center locations.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://kindhealthflorida.com/florida-dispensary-locations/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4e1014bd6a",
+   "name": "Miami New Times",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Miami",
+   "hq_state": "FL",
+   "states_active": [
+    "FL"
+   ],
+   "website": "https://www.miaminewtimes.com/",
+   "description": "Miami alt-weekly that covers the Florida legalization campaign.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.miaminewtimes.com/news/smart-safe-florida-cannabis-amendment-on-track-for-2026-ballot-40505919",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f0047580b6",
+   "name": "Miracle Leaf",
+   "segment": "ancillary_business",
+   "category": "Education / research / health",
+   "hq_state": "FL",
+   "states_active": [
+    "FL"
+   ],
+   "website": "https://mymiracleleaf.com/",
+   "description": "Medical marijuana card evaluation clinic network that publishes Florida program statistics.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://mymiracleleaf.com/blog/florida-medical-cannabis-by-the-numbers-2026/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-89aa6ecd22",
+   "name": "Omni Doctors",
+   "segment": "ancillary_business",
+   "category": "Education / research / health",
+   "hq_state": "FL",
+   "states_active": [
+    "FL"
+   ],
+   "website": "https://www.omnidoctors.com/",
+   "description": "Medical marijuana certification practice that publishes Florida market commentary.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.omnidoctors.com/post/florida-s-medical-cannabis-market-at-a-crossroads-robust-growth-meets-regulatory-turnover",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-2ac1a4938b",
+   "name": "Orlando Weekly",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Orlando",
+   "hq_state": "FL",
+   "states_active": [
+    "FL"
+   ],
+   "website": "https://www.orlandoweekly.com/",
+   "description": "Orlando alt-weekly with a dedicated cannabis news section.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.orlandoweekly.com/cannabis/floridas-top-marijuana-regulator-leaves-post-as-state-prepares-to-defend-new-medical-licenses-40137078/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-bb34e25755",
+   "name": "Sanctuary Wellness Institute",
+   "segment": "ancillary_business",
+   "category": "Education / research / health",
+   "hq_state": "FL",
+   "states_active": [
+    "FL"
+   ],
+   "website": "https://sanctuarywellnessinstitute.com/",
+   "description": "Medical marijuana card telehealth provider with a Florida dispensary guide.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://sanctuarywellnessinstitute.com/cannabis/florida/dispensary-guide.php",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0fd4d93ba1",
+   "name": "Smart & Safe Florida",
+   "segment": "advocacy_nonprofit",
+   "category": "Associations / advocacy / nonprofits",
+   "hq_state": "FL",
+   "states_active": [
+    "FL"
+   ],
+   "description": "Political committee that sponsored Florida's 2024 and 2026 citizen initiatives to legalize adult-use marijuana.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://ballotpedia.org/Florida_Marijuana_Legalization_Initiative_(2026)",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.wusf.org/politics-issues/2026-02-02/florida-says-2026-ballot-citizen-led-amendments-failed-including-recreational-marijuana",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://norml.org/news/2026/03/19/florida-supreme-court-sides-with-desantis-administration-in-legalization-ballot-measure-fight/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.marijuanamoment.net/florida-supreme-court-rejects-marijuana-campaigns-appeal-to-restore-legalization-ballot-signatures-effectively-ending-2026-push/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.fox13news.com/news/big-marijuana-companies-prep-new-2026-ballot-measure-recreational-pot-use-florida",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a71ed2e097",
+   "name": "Tampa Free Press",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Tampa",
+   "hq_state": "FL",
+   "states_active": [
+    "FL"
+   ],
+   "website": "https://www.tampafp.com/",
+   "description": "Tampa-area news site that has covered Florida marijuana regulator changes.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.tampafp.com/?p=166355",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b7f08bfa2f",
+   "name": "The Capitolist",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Tallahassee",
+   "hq_state": "FL",
+   "states_active": [
+    "FL"
+   ],
+   "website": "https://thecapitolist.com/",
+   "description": "Tallahassee political news site that has reported OMMU appointments.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://thecapitolist.com/christopher-phillip-kimball-named-director-of-floridas-office-of-medical-marijuana-use/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a22b199844",
+   "name": "Trulieve Cannabis Corp.",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Tallahassee",
+   "hq_state": "FL",
+   "website": "https://www.trulieve.com/",
+   "description": "Vertically integrated multistate cannabis company with a large Florida medical retail base and operations in several other states.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/0001754195/000175419526000087/exhibit992tcnnfpresentat.htm",
+     "kind": "primary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://www.barchart.com/story/news/34418773/trulieve-announces-appointment-of-board-member-matthew-foulston-and-chief-financial-officer-jan-reese",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    }
+   ],
+   "people": [
+    {
+     "name": "Kim Rivers",
+     "role": "Chief Executive Officer",
+     "confidence": "lead",
+     "sources": [
+      "https://www.theofficialboard.com/biography/kim-rivers-d6g82"
+     ]
+    },
+    {
+     "name": "Jan Reese",
+     "role": "Chief Financial Officer",
+     "confidence": "lead",
+     "sources": [
+      "https://www.barchart.com/story/news/34418773/trulieve-announces-appointment-of-board-member-matthew-foulston-and-chief-financial-officer-jan-reese",
+      "https://cannabisbusinesstimes.com/business-issues-benchmarks/executive-leadership-team/news/15753980/trulieve-appoints-board-member-new-cfo"
+     ]
+    },
+    {
+     "name": "Matthew Foulston",
+     "role": "Board member",
+     "confidence": "lead",
+     "sources": [
+      "https://www.barchart.com/story/news/34418773/trulieve-announces-appointment-of-board-member-matthew-foulston-and-chief-financial-officer-jan-reese"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8190ea8e45",
+   "name": "VPR Brands",
+   "segment": "ancillary_business",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Sunrise",
+   "hq_state": "FL",
+   "states_active": [
+    "US"
+   ],
+   "website": "https://mjbizcon2026.smallworldlabs.com/co/vpr-brands",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Vaporizer brands and vape hardware.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/vpr-brands",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/0001376231/000121390024034236/ea0202877-10k_vpr.htm",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://hk.finance.yahoo.com/quote/VPRB/profile",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://stockanalysis.com/quote/otc/VPRB/company",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Kevin Frija",
+     "role": "Chief Executive Officer",
+     "confidence": "lead",
+     "sources": [
+      "https://benzinga.com/z/13473124",
+      "https://it.marketscreener.com/insider/KEVIN-FRIJA-A0QFSJ"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-41bdacb8df",
+   "name": "WLRN",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Miami",
+   "hq_state": "FL",
+   "states_active": [
+    "FL"
+   ],
+   "website": "https://www.wlrn.org/",
+   "description": "South Florida public media newsroom with medical marijuana regulatory coverage.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.wlrn.org/news/2022-11-17/florida-names-an-attorney-to-lead-states-medical-marijuana-industry",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-dc673fc329",
+   "name": "WUSF Public Media",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Tampa",
+   "hq_state": "FL",
+   "states_active": [
+    "FL"
+   ],
+   "website": "https://www.wusf.org/",
+   "description": "Tampa Bay public radio newsroom covering Florida marijuana ballot and regulatory news.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.wusf.org/politics-issues/2026-02-02/florida-says-2026-ballot-citizen-led-amendments-failed-including-recreational-marijuana",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  }
+ ]
+}

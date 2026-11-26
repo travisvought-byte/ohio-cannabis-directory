@@ -1,0 +1,1418 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "NV",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 59,
+ "records": [
+  {
+   "crm_id": "crm-o-d2d50a4e0c",
+   "name": "Arboretum (AYR noteholder vehicle)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "states_active": [
+    "FL",
+    "NJ",
+    "NV"
+   ],
+   "description": "Noteholder-controlled entity that took over AYR Wellness's Florida, New Jersey and Nevada cannabis operations.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.cannabisbusinesstimes.com/industry-headlines/news/15826563/ayr-wellness-closes-transfer-of-florida-new-jersey-nevada-operations-to-arboretum",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://businessofcannabis.com/ayr-wellness-hands-florida-new-jersey-and-nevada-dispensaries-to-noteholder-vehicle-as-ccaa-wind-down-advances/",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e083c1f99e",
+   "name": "Battle Born Dispensary",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Retailer on US Hwy 50 (northern Nevada).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-517035601e",
+   "name": "Blunt Brunch Nationals",
+   "segment": "event_organizer",
+   "category": "Events / networking",
+   "hq_city": "Las Vegas",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Women-focused cannabis industry brunch event series; national edition held during MJBizCon.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "file:///home/claude/work/drive/mjbizcon-happenings.xlsx",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ece14df9e7",
+   "name": "Canna Starz",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Las Vegas Strip-area retailer on S Las Vegas Blvd.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f35c5f1855",
+   "name": "Cookies Las Vegas",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Cookies-branded store on W Flamingo Rd.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-45ee713194",
+   "name": "Cultivate Las Vegas",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 2 listed location(s)",
+   "description": "Las Vegas retailer with two CCB-listed stores.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-31aed7b205",
+   "name": "Curaleaf",
+   "segment": "ancillary_business",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Stamford",
+   "hq_state": "CT",
+   "states_active": [
+    "OH",
+    "NV"
+   ],
+   "website": "https://www.curaleaf.com/",
+   "license": "NV CCB retail store (adult-use and medical), 6 listed location(s)",
+   "events": [
+    "MJBizCon 2026",
+    "Ohio Cannabis Health & Business Summit (OCHBS) 2026"
+   ],
+   "description": "Silver sponsor",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizconference.com/speakers/",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/sponsors-overview/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ochbs.com/vendor-directory/",
+     "reviewed_on": "2026-11-23",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.prnewswire.com/de/news-releases/curaleaf-announces-appointment-of-torsten-greif-to-board-of-directors-302759580.html",
+     "kind": "primary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://www.preparedfoods.com/articles/130634-curaleaf-names-rahul-pinto-as-president",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://businessofcannabis.com/cfo-ranjan-kalia-appointed-to-curaleaf/",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Richard Philbrook",
+     "role": "Principal Scientist",
+     "confidence": "verified",
+     "sources": [
+      "https://mjbizconference.com/speakers/"
+     ]
+    },
+    {
+     "name": "Rahul Pinto",
+     "role": "President",
+     "confidence": "lead",
+     "sources": [
+      "https://www.preparedfoods.com/articles/130634-curaleaf-names-rahul-pinto-as-president"
+     ]
+    },
+    {
+     "name": "Ranjan Kalia",
+     "role": "Chief Financial Officer",
+     "confidence": "lead",
+     "sources": [
+      "https://businessofcannabis.com/cfo-ranjan-kalia-appointed-to-curaleaf/"
+     ]
+    },
+    {
+     "name": "Torsten Greif",
+     "role": "Board director",
+     "confidence": "verified",
+     "sources": [
+      "https://www.prnewswire.com/de/news-releases/curaleaf-announces-appointment-of-torsten-greif-to-board-of-directors-302759580.html"
+     ]
+    },
+    {
+     "name": "Boris Jordan",
+     "role": "Executive Chairman & CEO (verify)",
+     "confidence": "lead",
+     "sources": [
+      "https://simplywall.st/stocks/us/pharmaceuticals-biotech/otc-curl.f/curaleaf-holdings/management"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-bd7d842c6d",
+   "name": "Deep Roots Harvest Inc",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 6 listed location(s)",
+   "description": "Nevada vertically integrated operator with six CCB-listed stores (first store address on N. Las Vegas Craig Rd).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-476a107c04",
+   "name": "Dr. Dabber",
+   "segment": "ancillary_business",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Las Vegas",
+   "hq_state": "NV",
+   "states_active": [
+    "US"
+   ],
+   "website": "https://mjbizcon2026.smallworldlabs.com/co/dr-dabber",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Electronic dab rigs and concentrate vaporizers.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/dr-dabber",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.zoominfo.com/c/dr-dabber/359175542",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.leafly.com/brands/dr-dabber",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://cannabismarketcap.io/directory/dr-dabber",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ae513fd788",
+   "name": "Euphoria Wellness",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Las Vegas retailer on S Jones Blvd.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-83880b2c06",
+   "name": "Great Basin Sun",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "website": "https://greatbasinsun.com/",
+   "description": "Nevada news outlet that has reported on CCB leadership appointments.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://greatbasinsun.com/news/2024/jan/02/lombardo-appoints-former-goed-staffer-to-lead-cannabis-compliance-board",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-68ff9f1f06",
+   "name": "Green Cross Farmacy",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Retailer on W Williams Ave (Fallon area).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-bc74f4f071",
+   "name": "Green. (Nevada dispensary)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 4 listed location(s)",
+   "description": "Retail brand with four CCB-listed Nevada stores.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-562eaad111",
+   "name": "Greenleaf Wellness",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Northern Nevada retailer on Glendale Ave.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-d2a5e58bf8",
+   "name": "High Sierra Holistics",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Reno-area retailer on Longley Ln.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-944fa72641",
+   "name": "Inyo Fine Cannabis Dispensary",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Las Vegas retailer on S Maryland Pkwy.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-5731831ac6",
+   "name": "IVIS Security",
+   "segment": "ancillary_business",
+   "category": "Security / IT infrastructure",
+   "hq_city": "North Las Vegas",
+   "hq_state": "NV",
+   "website": "https://www.ivisecurity.com/",
+   "public_contact": "info@ivisecurity.com; +1 (844) 438-4847; https://www.ivisecurity.com/contact.php",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Security services and monitoring.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizcon2026.smallworldlabs.com/co/ivis-security",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.ivisecurity.com/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-9e233ae632",
+   "name": "Jade Cannabis Co.",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 3 listed location(s)",
+   "description": "Retailer with CCB-listed stores in Las Vegas and Reno.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-979bcb99cf",
+   "name": "Jardin Premium Cannabis Dispensary",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Las Vegas retailer on E Desert Inn Rd.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8ae57bb198",
+   "name": "Kanna",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Northern Nevada retailer on Sun Valley Blvd.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-1b6a560002",
+   "name": "KNPR (Nevada Public Radio)",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Las Vegas",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "website": "https://knpr.org/",
+   "description": "Las Vegas public radio station that has covered the Cannabis Compliance Board.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://knpr.org/knpr/2020-10-06/gov-sisolak-fills-final-seats-on-cannabis-board",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-9e7d81067b",
+   "name": "Lucid Management LLC",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Reno-area retail licensee on Construction Way.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-45cb9b899a",
+   "name": "Medizin",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Las Vegas retailer on W Sunset Rd.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c015b4ca0d",
+   "name": "Mint Cannabis (Nevada)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 2 listed location(s)",
+   "description": "Retail brand with two CCB-listed Nevada stores.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-43c3e20d5d",
+   "name": "MITA Executive Golf Invitational",
+   "segment": "event_organizer",
+   "category": "Events / networking",
+   "hq_city": "Las Vegas",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Executive golf outing for cannabis industry leaders held the first day of MJBizCon week.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "file:///home/claude/work/drive/mjbizcon-happenings.xlsx",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-6a98a0f6af",
+   "name": "MJBizCon 2026",
+   "segment": "event_organizer",
+   "category": "Events / networking",
+   "hq_city": "Las Vegas",
+   "hq_state": "NV",
+   "states_active": [
+    "US"
+   ],
+   "website": "https://mjbizconference.com/",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Largest US cannabis B2B trade show and conference, held annually in Las Vegas.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://mjbizconference.com/show-overview",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://mjbizconference.com/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-6d716ae64b",
+   "name": "Nevada Cannabis Compliance Board",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Las Vegas",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "website": "https://ccb.nv.gov/",
+   "public_contact": "https://ccb.nv.gov/",
+   "description": "State board that licenses and regulates Nevada's medical and adult-use cannabis businesses, including consumption lounges.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ccb.nv.gov/meet-the-cannabis-compliance-board-ccb/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ccb.nv.gov/wp-content/uploads/2026/03/CCB-Deputy-Director-Miles-Appointed-Acting-Executive-Director-for-release.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ccb.nv.gov/first-members-appointed-to-cannabis-advisory-commission/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ccb.nv.gov/new-member-appointed-to-cannabis-advisory-commission/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Ondra L. Berry",
+     "role": "Chair",
+     "confidence": "verified",
+     "sources": [
+      "https://ccb.nv.gov/wp-content/uploads/2025/12/Major-General-Ondra-L.-Berry-Appointed-CCB-Chair-For-Release-1.pdf",
+      "https://ccb.nv.gov/wp-content/uploads/2025/01/CCB-Welcomes-New-Board-Member-General-Ondra-L.-Berry-FOR-RELEASE-1-21-25.pdf"
+     ]
+    },
+    {
+     "name": "L. Kristopher Rath",
+     "role": "Board Member",
+     "confidence": "verified",
+     "sources": [
+      "https://ccb.nv.gov/wp-content/uploads/2026/01/CCB-Welcomes-New-Board-Member-L.-Kristopher-Rath-for-release.pdf"
+     ]
+    },
+    {
+     "name": "James Humm",
+     "role": "Executive Director (appointed Dec 2023; current status unconfirmed)",
+     "confidence": "lead",
+     "sources": [
+      "https://gov.nv.gov/Newsroom/PRs/2023/2023-12-05_ccb",
+      "https://ccb.nv.gov/wp-content/uploads/2026/03/CCB-Deputy-Director-Miles-Appointed-Acting-Executive-Director-for-release.pdf"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-90008eb993",
+   "name": "Nevada Department of Taxation (cannabis tax)",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "website": "https://tax.nv.gov/",
+   "description": "State agency that collects Nevada's cannabis excise and retail taxes and issued a joint federal-rescheduling statement with the CCB in 2026.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/wp-content/uploads/2026/04/CCB-and-Taxation-Release-Joint-Statement-on-Federal-Medical-Marijuana-Rescheduling.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-344f97c973",
+   "name": "Nevada Legislature",
+   "segment": "lawmaker_official",
+   "category": "Government / regulators",
+   "hq_city": "Carson City",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "website": "https://www.leg.state.nv.us/",
+   "description": "State legislature that writes Nevada's cannabis statutes (NRS 678A-678D) and related record-sealing and employment laws.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.leg.state.nv.us/NRS/NRS-678D.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.leg.state.nv.us/NRS/NRS-678C.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.leg.state.nv.us/nrs/nrs-179.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8dd8758b22",
+   "name": "Nevada Made Marijuana",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 4 listed location(s)",
+   "description": "Nevada retail chain with four CCB-listed stores.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-15aa592da0",
+   "name": "Nevada Wellness Center",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 2 listed location(s)",
+   "description": "Las Vegas retailer with two CCB-listed stores.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-cb4ddf8d5b",
+   "name": "Northern Nevada Business Weekly",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Reno",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "website": "https://nnbw.com/",
+   "description": "Reno-area business paper that has covered Nevada cannabis regulation.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://nnbw.com/news/2020/oct/07/former-marijuana-trade-group-leader-reno-doctor-ap",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-4065ac2dc9",
+   "name": "Oasis Medical Cannabis",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Las Vegas retailer on Industrial Rd.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-8e25e75065",
+   "name": "Pahrump Valley Times",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Pahrump",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "website": "https://pvtimes.com/",
+   "description": "Nye County newspaper that has covered CCB appointments; Pahrump is a notable Nevada cannabis retail market.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://pvtimes.com/news/sisolak-appoints-final-members-of-cannabis-compliance-board-90256/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3907dea779",
+   "name": "Pisos",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Las Vegas retailer on S Maryland Pkwy.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-45ccceff05",
+   "name": "Planet 13",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Las Vegas",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Las Vegas cannabis dispensary operator whose Dazed lounge and superstore hosted MJBizCon 2026 side events.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "file:///home/claude/work/drive/mjbizcon-happenings.xlsx",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-a24afe5b44",
+   "name": "Planet 13 Holdings",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_city": "Las Vegas",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "website": "https://www.planet13.com/",
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Las Vegas-based cannabis operator known for its superstore dispensary; agreed in 2026 to be acquired by Vireo Growth in an all-stock deal.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/0001813452/000143774926024458/ex_993307.htm",
+     "kind": "primary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://www.morningstar.com/news/globe-newswire/9788338/vireo-growth-inc-to-acquire-planet-13-holdings-inc",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://www.nasdaq.com/press-release/planet-13-substantially-completes-exit-california-fully-streamlining-operations-core",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Robert Groesbeck",
+     "role": "Co-founder & CEO (verify)",
+     "confidence": "lead",
+     "sources": [
+      "https://ae.marketscreener.com/insider/ROBERT-GROESBECK-A2E3D4/",
+      "https://s204.q4cdn.com/328534655/files/doc_financials/2026/sr/2026-Notice-of-Meeting-and-Proxy-Statement.pdf"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-9bba291fa2",
+   "name": "Pure Tonic Concentrates",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Licensee with a retail store on USA Parkway (McCarran/TRIC area).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-9cba3fb63b",
+   "name": "Sahara Wellness",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Las Vegas retailer on E Sahara Ave.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-dfb56cdd41",
+   "name": "Showgrow Las Vegas",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Las Vegas retailer on S Fort Apache Rd.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-13df801c8d",
+   "name": "Silver Sage Wellness",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Las Vegas retailer on W Charleston Blvd.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0c13f9a417",
+   "name": "Silver State Relief",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 3 listed location(s)",
+   "description": "Northern Nevada retailer with three CCB-listed stores (Sparks area).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-11c5eda366",
+   "name": "SLV Dispensary",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Las Vegas retailer on S Boulder Hwy.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3bdcfcd64a",
+   "name": "Sol Cannabis",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Northern Nevada retailer on US Hwy 395 S.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-344ef74a60",
+   "name": "Stash Fine Cannabis",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Rural Nevada retailer on US Hwy 95.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-589005e25b",
+   "name": "The Cannabis Co.",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Las Vegas retailer on E Charleston Blvd.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-67b5d1e9a4",
+   "name": "The Dispensary",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 6 listed location(s)",
+   "description": "Nevada retail chain with six CCB-listed stores (one on W Plumb Ln, Reno).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-16566d8b11",
+   "name": "The Emjays Awards",
+   "segment": "event_organizer",
+   "category": "Events / networking",
+   "hq_city": "Las Vegas",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "Cannabis industry awards show and after-party held during MJBizCon week.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "file:///home/claude/work/drive/mjbizcon-happenings.xlsx",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ecf1e2b347",
+   "name": "The Gold Leaf",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Rural Nevada retailer on Traders Way.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-74b5148da8",
+   "name": "The Grove (Nevada)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 2 listed location(s)",
+   "description": "Retail brand with two CCB-listed Nevada stores (incl. Pahrump).",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-307614ace7",
+   "name": "The Nevada Independent",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Las Vegas",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "website": "https://thenevadaindependent.com/",
+   "description": "Nonprofit Nevada news outlet that covers the Cannabis Compliance Board and cannabis policy.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://thenevadaindependent.com/article/nevadas-new-cannabis-regulator-wants-to-uphold-gold-standard-touts-pro-business-stance",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-25e247e790",
+   "name": "The Sanctuary Dispensaries",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 2 listed location(s)",
+   "description": "Retail brand with two CCB-listed Nevada stores.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-828d338a9b",
+   "name": "The Source",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 5 listed location(s)",
+   "description": "Nevada retail chain (The Source+) with five CCB-listed stores incl. Homestead Rd, Pahrump.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-9f4b5271fc",
+   "name": "The Spot (Las Vegas)",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Las Vegas retailer on W Flamingo Rd.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ee08154b89",
+   "name": "The Treehouse Vegas",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Las Vegas retailer on S Decatur Blvd.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-7501bea399",
+   "name": "Thrive Cannabis Marketplace",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 7 listed location(s)",
+   "description": "Nevada retail chain with seven CCB-listed stores.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-06f5d15674",
+   "name": "Top Notch The Health Center",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 1 listed location(s)",
+   "description": "Las Vegas retailer on Stephanie St.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c001ef2554",
+   "name": "Tree of Life Dispensary",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 2 listed location(s)",
+   "description": "Las Vegas-area retailer with two CCB-listed stores.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-b4ddf65a42",
+   "name": "Wallflower Cannabis House",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "hq_state": "NV",
+   "states_active": [
+    "NV"
+   ],
+   "license": "NV CCB retail store (adult-use and medical), 2 listed location(s)",
+   "description": "Retail brand with two CCB-listed Nevada stores.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccb.nv.gov/list-of-licensees/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  }
+ ]
+}

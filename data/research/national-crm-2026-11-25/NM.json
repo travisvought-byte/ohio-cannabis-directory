@@ -1,0 +1,107 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "NM",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 4,
+ "records": [
+  {
+   "crm_id": "crm-o-ba32c488c4",
+   "name": "New Mexico Courts, Administrative Office of the Courts",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Santa Fe",
+   "hq_state": "NM",
+   "states_active": [
+    "NM"
+   ],
+   "website": "https://nmcourts.gov/",
+   "description": "Court administration office that publishes New Mexico expungement guidance, including cannabis record clearing.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://nmcourts.gov/court-administration/office-of-general-counsel/expungement",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-efd2c22d95",
+   "name": "New Mexico Legislature",
+   "segment": "lawmaker_official",
+   "category": "Government / regulators",
+   "hq_city": "Santa Fe",
+   "hq_state": "NM",
+   "states_active": [
+    "NM"
+   ],
+   "website": "https://www.nmlegis.gov/",
+   "description": "State legislature that passed the Cannabis Regulation Act (2021) and 2023 automatic-expungement amendments; considered SB 129 (2026) on cannabis and employment.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://nmlegis.gov/Sessions/23%20Regular/final/HB0314.PDF",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.nmlegis.gov/Legislation/Legislation?chamber=S&legType=B&legNo=129&year=26",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e364671483",
+   "name": "New Mexico Regulation and Licensing Department, Cannabis Control Division",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Santa Fe",
+   "hq_state": "NM",
+   "states_active": [
+    "NM"
+   ],
+   "website": "https://www.rld.nm.gov/cannabis/",
+   "public_contact": "https://www.rld.nm.gov/cannabis/cannabis-in-new-mexico/",
+   "description": "State division that licenses and regulates New Mexico's adult-use and medical cannabis businesses.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.rld.nm.gov/cannabis/cannabis-in-new-mexico/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.rld.nm.gov/cannabis/cannabis-in-new-mexico/faqs/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.rld.nm.gov/wp-content/uploads/2023/08/ARTICLE-2B-Lynn-and-Erin-Compassionate-Use-Act-_-Chapter-26-Drugs-and-Cosmetics.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c004cf8329",
+   "name": "Schwazze",
+   "segment": "plant_touching_operator",
+   "category": "Retail / brands / distribution",
+   "states_active": [
+    "CO",
+    "NM"
+   ],
+   "description": "Former Colorado and New Mexico cannabis operator whose assets were acquired by Vireo Growth.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.barchart.com/story/news/915283/vireo-growth-inc-announces-closing-of-acquisition-of-assets-of-schwazze",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    }
+   ]
+  }
+ ]
+}

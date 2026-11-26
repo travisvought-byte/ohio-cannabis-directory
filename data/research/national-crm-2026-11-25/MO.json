@@ -1,0 +1,239 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "MO",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 7,
+ "records": [
+  {
+   "crm_id": "crm-o-6f12c79d29",
+   "name": "KBIA / Missouri News Network",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Columbia",
+   "hq_state": "MO",
+   "states_active": [
+    "MO"
+   ],
+   "website": "https://www.kbia.org/",
+   "description": "Mid-Missouri public radio newsroom that covers state cannabis regulation and enforcement.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.kbia.org/missouri-news-network/2025-08-11/missouri-cannabis-regulators-target-rule-breakers-predatory-contracts",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.kbia.org/health-wealth/2023-04-13/heres-what-to-expect-from-missouris-new-recreational-cannabis-program",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-ac3933a840",
+   "name": "KMOX (Audacy St. Louis)",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "St. Louis",
+   "hq_state": "MO",
+   "states_active": [
+    "MO",
+    "IL"
+   ],
+   "description": "St. Louis news radio station that covers Missouri and Illinois cannabis regulation news.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.audacy.com/kmox/news/local/illinois-has-a-new-cannabis-regulation-oversight-officer",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e239704596",
+   "name": "Missouri Courts - Marijuana Expungement",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Jefferson City",
+   "hq_state": "MO",
+   "states_active": [
+    "MO"
+   ],
+   "website": "https://www.courts.mo.gov/page.jsp?id=110936",
+   "description": "Missouri judiciary resource page for court clerks and the public on constitutionally required marijuana expungements.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.courts.mo.gov/page.jsp?id=110936",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3632181e63",
+   "name": "Missouri DHSS Division of Cannabis Regulation",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Jefferson City",
+   "hq_state": "MO",
+   "states_active": [
+    "MO"
+   ],
+   "website": "https://health.mo.gov/safety/cannabis/",
+   "description": "Division of the Missouri Department of Health and Senior Services that licenses cannabis facilities, issues patient and home-cultivation cards, and enforces cannabis rules.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://health.mo.gov/safety/cannabis/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://health.mo.gov/safety/cannabis/functional-listing.php",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://health.mo.gov/news/dhss-rolls-out-verified-dispensary-initiative",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://health.mo.gov/news/dhss-publishes-report-detailing-cannabis-microbusiness-activity-1",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://health.mo.gov/news",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://health.mo.gov/about/pdf/dhss-overview.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Amy Moore",
+     "role": "Director, Division of Cannabis Regulation",
+     "confidence": "lead",
+     "sources": [
+      "https://health.mo.gov/news/dhss-names-director-cannabis-regulation",
+      "https://news.yahoo.com/meet-amy-moore-director-missouris-110210803.html",
+      "https://www.sbj.net/stories/dhss-selects-marijuana-leader-to-succeed-marshfields-fraker,83233"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-2cb7e1702c",
+   "name": "Missouri Independent",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_state": "MO",
+   "states_active": [
+    "MO"
+   ],
+   "description": "Nonprofit statehouse newsroom whose Missouri cannabis regulatory reporting is syndicated through States Newsroom.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.newsfromthestates.com/article/missouri-cannabis-regulators-prepare-final-lottery-new-rules-targeting-predatory-deals",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://www.newsfromthestates.com/article/missouri-panel-approves-new-cannabis-rules-drops-ban-tied-revoked-licenses",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-f53fdb6b19",
+   "name": "Springfield Business Journal",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Springfield",
+   "hq_state": "MO",
+   "states_active": [
+    "MO"
+   ],
+   "website": "https://sbj.net/",
+   "description": "Springfield, Missouri business newspaper that has covered state cannabis regulator leadership.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://www.sbj.net/stories/dhss-selects-marijuana-leader-to-succeed-marshfields-fraker,83233",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-74082fcac3",
+   "name": "STIIIZY",
+   "segment": "ancillary_business",
+   "category": "Technology / AI / data",
+   "hq_city": "Los Angeles",
+   "hq_state": "CA",
+   "states_active": [
+    "CA",
+    "MO",
+    "IL"
+   ],
+   "website": "https://www.stiiizy.com/",
+   "events": [
+    "MJBizCon 2026"
+   ],
+   "description": "California-founded cannabis brand and retailer with a large California store footprint and expansion into states such as Missouri and Illinois.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://mjbizconference.com/sessions/the-retail-playbook-is-changing-what-innovative-cannabis-operators-are-doing-differently/",
+     "reviewed_on": "2026-10-27",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.cannabisbusinesstimes.com/dispensary/news/15837368/stiiizy-bets-big-on-california-as-retail-footprint-reaches-65-stores-statewide",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://mgmagazine.com/press-releases/stiiizy-announces-illinois-launch-expands-midwest-footprint",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    },
+    {
+     "url": "https://www.thepitchkc.com/stiiizy-leans-on-consumer-culture-and-lifestyle-in-missouri-cannabis-market-expansion/",
+     "kind": "secondary",
+     "reviewed_on": "2026-11-25"
+    }
+   ],
+   "people": [
+    {
+     "name": "Garrett Jewell",
+     "role": "Sr. Enterprise Systems Architect",
+     "confidence": "verified",
+     "sources": [
+      "https://mjbizconference.com/sessions/the-retail-playbook-is-changing-what-innovative-cannabis-operators-are-doing-differently/"
+     ]
+    },
+    {
+     "name": "Tony Shin",
+     "role": "General Counsel",
+     "confidence": "lead",
+     "sources": [
+      "https://mgmagazine.com/press-releases/stiiizy-appoints-tony-shin-general-counsel"
+     ]
+    }
+   ]
+  }
+ ]
+}

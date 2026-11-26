@@ -1,0 +1,153 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "RI",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 5,
+ "records": [
+  {
+   "crm_id": "crm-o-097f1ddd9a",
+   "name": "Providence Business News",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Providence",
+   "hq_state": "RI",
+   "states_active": [
+    "RI"
+   ],
+   "website": "https://pbn.com/",
+   "description": "Rhode Island business newspaper that covers the state's cannabis regulators and market.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://pbn.com/r-i-senate-confirms-new-cannabis-control-commission-chair/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-0f506857dc",
+   "name": "Rhode Island Cannabis Control Commission",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_state": "RI",
+   "states_active": [
+    "RI"
+   ],
+   "website": "https://ccc.ri.gov/",
+   "description": "Independent state commission created under R.I. Gen. Laws 21-28.11 to regulate Rhode Island's cannabis market.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://ccc.ri.gov/about-ccc/ccc-commissioners-and-staff",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ccc.ri.gov/about-ccc/ccc-commissioners",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://webserver.rilegislature.gov/Statutes/TITLE21/21-28.11/21-28.11-4.htm",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://ccc.ri.gov/faq",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://www.yahoo.com/news/long-last-r-cannabis-control-204412015.html",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Michelle Reddish",
+     "role": "Chairperson (nominated by Gov. McKee; Senate confirmation reported)",
+     "confidence": "verified",
+     "sources": [
+      "https://governor.ri.gov/press-releases/governor-mckee-nominates-michelle-reddish-serve-chairperson-rhode-island-cannabis",
+      "https://pbn.com/r-i-senate-confirms-new-cannabis-control-commission-chair/",
+      "https://governor.ri.gov/press-releases/governor-mckee-nominates-michelle-reddish-first-administrator-rhode-island-cannabis"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-9fc7b4b85f",
+   "name": "Rhode Island Cannabis Office",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_state": "RI",
+   "states_active": [
+    "RI"
+   ],
+   "description": "State cannabis office created alongside the Cannabis Control Commission to handle administration and licensing support.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://governor.ri.gov/press-releases/governor-mckee-nominates-michelle-reddish-first-administrator-rhode-island-cannabis",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://marijuanamoment.net/rhode-island-governor-appoints-oklahoma-marijuana-official-to-lead-new-state-cannabis-office",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    },
+    {
+     "url": "https://mjbizdaily.com/?p=391012",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-c2447bff6f",
+   "name": "Rhode Island Department of Health (cannabis information)",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Providence",
+   "hq_state": "RI",
+   "states_active": [
+    "RI"
+   ],
+   "website": "https://health.ri.gov/cannabis-safety/information/cannabis-information-adults",
+   "description": "State health department that publishes cannabis safety information for Rhode Island adults.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://health.ri.gov/cannabis-safety/information/cannabis-information-adults",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e2a6d1bd14",
+   "name": "Rhode Island Judiciary (marijuana expungement)",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Providence",
+   "hq_state": "RI",
+   "states_active": [
+    "RI"
+   ],
+   "website": "https://www.courts.ri.gov/",
+   "description": "State court system that carried out automatic expungement of eligible marijuana possession records after legalization.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://www.courts.ri.gov/Courts/superiorcourt/Documents/Phase%20One%20of%20Marijuana%20Expungement%20Process.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  }
+ ]
+}

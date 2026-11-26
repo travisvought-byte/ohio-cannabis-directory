@@ -1,0 +1,169 @@
+{
+ "batch": "national-crm-2026-11-25",
+ "state": "WV",
+ "status": "research leads; not published",
+ "basis": "Agent research, MJBizCon 2026 exhibitor enrichment and event rosters; every record cites at least one source URL. Records needing a primary source are marked confidence \"lead\".",
+ "count": 5,
+ "records": [
+  {
+   "crm_id": "crm-o-19bf9a35d6",
+   "name": "West Virginia Department of Health - Bureau for Public Health",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Charleston",
+   "hq_state": "WV",
+   "states_active": [
+    "WV"
+   ],
+   "website": "https://health.wv.gov",
+   "description": "State public health bureau that houses the Office of Medical Cannabis.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://health.wv.gov/article/west-virginia-medical-cannabis-making-strides-2022",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://dhhr.wv.gov/News/2021/Pages/Medical-Cannabis-Dispensary-Permits-Announced,-Patient-Registration-Available-Next-Week.aspx",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-e929afbed6",
+   "name": "West Virginia House Democratic Caucus",
+   "segment": "lawmaker_official",
+   "category": "Government / regulators",
+   "hq_city": "Charleston",
+   "hq_state": "WV",
+   "states_active": [
+    "WV"
+   ],
+   "description": "House minority caucus that publicly argued in 2026 that cannabis reform would bring economic gains.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://wvpublic.org/story/government/house-democrats-say-cannabis-reform-would-bring-economic-gains/",
+     "reviewed_on": "2026-11-25",
+     "kind": "secondary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-9b1c07139f",
+   "name": "West Virginia Legislature",
+   "segment": "lawmaker_official",
+   "category": "Government / regulators",
+   "hq_city": "Charleston",
+   "hq_state": "WV",
+   "states_active": [
+    "WV"
+   ],
+   "website": "https://www.wvlegislature.gov",
+   "description": "State legislature; 2026 regular session saw cannabis reform bills introduced, none enacted for adult use per available data.",
+   "confidence": "lead",
+   "sources": [
+    {
+     "url": "https://bills.wvlegislature.gov/bill/history/2026/RS/HB5188",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://bills.wvlegislature.gov/bill/history/2026/RS/SB634",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://bills.wvlegislature.gov/bill/history/2026/RS/HB5259",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://bills.wvlegislature.gov/bill/history/2026/RS/HB4371",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-3d0d9472ff",
+   "name": "West Virginia Office of Medical Cannabis",
+   "segment": "regulator_government",
+   "category": "Government / regulators",
+   "hq_city": "Charleston",
+   "hq_state": "WV",
+   "states_active": [
+    "WV"
+   ],
+   "website": "https://omc.wv.gov/",
+   "public_contact": "https://omc.wv.gov/",
+   "description": "State office that licenses medical cannabis growers, processors, dispensaries and labs and issues patient and caregiver cards.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://omc.wv.gov/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://omc.wv.gov/industry/Pages/default.aspx",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://omc.wv.gov/rules/FAQ/Pages/default.aspx",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://omc.wv.gov/news/bienniel-reports/Pages/default.aspx",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://omc.wv.gov/board/Documents/September%2026%2c%202025%20-%20MCAB%20Agenda.docx.pdf",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    },
+    {
+     "url": "https://code.wvlegislature.gov/pdf/16A-10-1/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ],
+   "people": [
+    {
+     "name": "Jason Frame",
+     "role": "Director (as announced by DHHR)",
+     "confidence": "lead",
+     "sources": [
+      "https://dhhr.wv.gov/News/Pages/Jason-Frame-Selected-to-Lead-the-West-Virginia-Office-of-Medical-Cannabis-.aspx"
+     ]
+    }
+   ]
+  },
+  {
+   "crm_id": "crm-o-83efec3004",
+   "name": "West Virginia Public Broadcasting",
+   "segment": "media_publication",
+   "category": "Media / marketing",
+   "hq_city": "Charleston",
+   "hq_state": "WV",
+   "states_active": [
+    "WV"
+   ],
+   "website": "https://wvpublic.org",
+   "description": "Statewide public radio and TV newsroom covering cannabis legislation.",
+   "confidence": "verified",
+   "sources": [
+    {
+     "url": "https://wvpublic.org/house-democrats-say-cannabis-reform-would-bring-economic-gains/",
+     "reviewed_on": "2026-11-25",
+     "kind": "primary"
+    }
+   ]
+  }
+ ]
+}
