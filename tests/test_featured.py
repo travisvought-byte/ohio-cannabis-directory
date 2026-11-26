@@ -21,7 +21,7 @@ class FeaturedGroups(unittest.TestCase):
         self.assertIn('https://example.org/', html)
         self.assertNotIn('Donate', html)
         html = bn.featured_section([{**g, 'donate': 'https://example.org/give'}], 'Kentucky')
-        self.assertIn('Donate to Group', html)
+        self.assertIn('Donate to support their work', html)
         self.assertEqual(bn.featured_section([], 'Kentucky'), '')
 
 

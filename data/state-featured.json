@@ -9,11 +9,23 @@
    "text": "A Louisville-based coalition working to put cannabis decriminalization on the Kentucky ballot. It runs the Let Kentucky Vote petition, events and a volunteer network, and keeps a list of cannabis jobs in Kentucky.",
    "site": "https://legalizekentucky.com/",
    "links": [
-    {"label": "Sign the Let Kentucky Vote petition", "note": "On change.org", "url": "https://www.change.org/LetKentuckyVote", "icon": "form"},
-    {"label": "Cannabis jobs in Kentucky", "note": "Their list of current openings", "url": "https://legalizekentucky.com/ky-cannabis-jobs/", "icon": "briefcase"}
+    {
+     "label": "Sign the Let Kentucky Vote petition",
+     "note": "On change.org",
+     "url": "https://www.change.org/LetKentuckyVote",
+     "icon": "form"
+    },
+    {
+     "label": "Cannabis jobs in Kentucky",
+     "note": "Their list of current openings",
+     "url": "https://legalizekentucky.com/ky-cannabis-jobs/",
+     "icon": "briefcase"
+    }
    ],
    "donate": "https://legalizekentucky.com/support/",
-   "accepted_on": "2026-11-26"
+   "accepted_on": "2026-11-26",
+   "logo": "assets/featured/kcfc-logo-320.png",
+   "logo_alt": "Kentucky Cannabis Freedom Coalition (KCFC) logo"
   }
  ]
 }

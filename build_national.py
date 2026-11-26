@@ -108,7 +108,7 @@ details.az{margin:10px 0}details.az summary{cursor:pointer;font-weight:700;color
 .glance li{border-top:1px solid var(--line)}.glance li:first-child{border-top:0}
 .glance a{display:grid;grid-template-columns:minmax(0,210px) 1fr;gap:2px 14px;padding:10px 0;text-decoration:none;color:var(--ink);align-items:baseline}.glance .q{font-weight:650;color:var(--link)}
 .onpage{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.95rem;margin:8px 0}.onpage a{min-height:40px;display:inline-flex;align-items:center}
-.medcard{background:var(--card);border:1px solid var(--line);border-left:6px solid #3b7fa0;border-radius:14px;padding:6px 18px 12px;margin:18px 0}.medcard h2{margin-top:.6em}.steps{padding-left:1.3em}.steps li{margin:.3em 0}.facts{display:grid;grid-template-columns:minmax(0,170px) 1fr;gap:6px 16px;margin:12px 0}.facts dt{font-weight:700}.facts dd{margin:0}.mednote{background:var(--note);border-radius:8px;padding:8px 12px}.medlinks{display:flex;flex-wrap:wrap;gap:8px}@media(max-width:560px){.facts{grid-template-columns:1fr}.facts dd{margin-bottom:6px}}.featured{background:var(--card);border:1px solid var(--line);border-left:6px solid #4a8a3c;border-radius:14px;padding:6px 18px 12px;margin:18px 0}.featured h3{margin:.8em 0 .2em}.next{background:var(--mint);border-radius:14px;padding:14px 18px;margin:26px 0}.next h2{margin:0 0 .3em;font-size:1.2rem}.next ul{margin:.3em 0;padding-left:1.2em}
+.medcard{background:var(--card);border:1px solid var(--line);border-left:6px solid #3b7fa0;border-radius:14px;padding:6px 18px 12px;margin:18px 0}.medcard h2{margin-top:.6em}.steps{padding-left:1.3em}.steps li{margin:.3em 0}.facts{display:grid;grid-template-columns:minmax(0,170px) 1fr;gap:6px 16px;margin:12px 0}.facts dt{font-weight:700}.facts dd{margin:0}.mednote{background:var(--note);border-radius:8px;padding:8px 12px}.medlinks{display:flex;flex-wrap:wrap;gap:8px}@media(max-width:560px){.facts{grid-template-columns:1fr}.facts dd{margin-bottom:6px}}.featured{background:var(--card);border:3px solid #4a8a3c;border-radius:16px;padding:12px 20px 14px;margin:20px 0;box-shadow:0 4px 14px rgba(0,0,0,.08)}.feat-label{display:inline-flex;align-items:center;gap:6px;margin:0 0 8px;padding:3px 12px;border-radius:999px;background:#4a8a3c;color:#fff;font-weight:700;font-size:.9rem}.feat-label svg{width:18px;height:18px}.feat-top{display:flex;flex-wrap:wrap;gap:16px;align-items:center}.feat-top>div{flex:1 1 260px;min-width:0}.feat-top h2{margin:.1em 0}.feat-logo{flex:none;display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px}.feat-logo img{display:block;width:140px;height:auto}.feat-kind{margin:0;font-weight:700;color:var(--soft)}.feat-go{list-style:none;padding:0;margin:12px 0 6px;display:flex;flex-wrap:wrap;gap:10px}.feat-go a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border:2px solid #4a8a3c;border-radius:10px;font-weight:700;text-decoration:none;color:var(--ink);background:var(--card)}.feat-go a svg{width:20px;height:20px}.feat-go a.primary{background:#2f6b28;border-color:#2f6b28;color:#fff}.feat-go a:hover,.feat-go a:focus-visible{outline:3px solid #4a8a3c;outline-offset:2px}.feat-note{margin:.4em 0 0}@media(max-width:560px){.feat-go a{width:100%}.feat-go li{flex:1 1 100%}}.next{background:var(--mint);border-radius:14px;padding:14px 18px;margin:26px 0}.next h2{margin:0 0 .3em;font-size:1.2rem}.next ul{margin:.3em 0;padding-left:1.2em}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:8px 0;min-width:0;scroll-margin-top:12px}.card h3,.card h4{margin:0 0 6px;font-size:1rem;line-height:1.35}.card p{margin:.25rem 0}
 .chip{display:inline-block;border:1px solid;border-radius:999px;padding:0 10px;font-size:.82rem;font-weight:700;line-height:1.7;white-space:nowrap}
 .chip.allowed,.chip.positive,.chip.broad{background:#e7f3eb;border-color:#2e7d4f;color:#1d5a37}.chip.medical-only{background:#e5f1f7;border-color:#3b7fa0;color:#1d4f68}
@@ -672,20 +672,27 @@ def load_featured(codes, path=None):
 
 
 def featured_section(groups, name):
-    """Groups featured on this state page, each with its own links. Not paid placements and not endorsements."""
+    """The state's featured group, first on the page: their logo, what they do and big links to them.
+    Featured with their agreement; not a paid placement and not an endorsement."""
     if not groups:
         return ''
-    out = [f'<section class="featured" id="groups" aria-labelledby="groups-h">' + icon_heading(2, 'groups-h', f'{esc(name)} groups we feature', 'people'),
-           '<p class="muted">Featured with their agreement. Not a paid placement; a listing is not an endorsement.</p>']
-    for g in groups:
-        cards = [(f'Visit {g["name"]}', 'Their own site', g['site'], 'link')]
-        cards += [(l['label'], l.get('note', ''), l['url'], l.get('icon', 'link')) for l in g.get('links', [])]
+    out = [f'<section class="featured" id="groups" aria-labelledby="groups-h"><p class="feat-label">'
+           f'<span aria-hidden="true">{icon("star")}</span>Featured {esc(name)} resource</p>']
+    for i, g in enumerate(groups):
+        hid = 'groups-h' if i == 0 else f'groups-h{i}'
+        logo = (f'<a class="feat-logo" href="{esc(g["site"])}" target="_blank" rel="noopener">'
+                f'<img src="../{esc(g["logo"])}" alt="{esc(g.get("logo_alt") or g["name"] + " logo")}" width="309" height="320"></a>'
+                if g.get('logo') else '')
+        out.append(f'<div class="feat-top">{logo}<div><h2 id="{hid}">Start here: {esc(g["name"])}</h2>'
+                   f'<p class="feat-kind">{esc(g["kind"])}</p><p>{esc(g["text"])}</p></div></div>')
+        buttons = [(f'Go to {g["name"]}', g['site'], 'link', True)]
+        buttons += [(l['label'], l['url'], l.get('icon', 'link'), False) for l in g.get('links', [])]
         if g.get('donate'):
-            cards.append((f'Donate to {g["name"]}', 'Through their own site', g['donate'], 'heart'))
-        out.append(f'<h3>{esc(g["name"])} <span class="muted">({esc(g["kind"])})</span></h3><p>{esc(g["text"])}</p><div class="needs">')
-        out += [f'<a class="need" href="{esc(u)}" target="_blank" rel="noopener"><span class="ni" aria-hidden="true">{icon(ic)}</span>'
-                f'<strong>{esc(label)}</strong><span>{esc(note)}</span></a>' for label, note, u, ic in cards]
-        out.append('</div>')
+            buttons.append(('Donate to support their work', g['donate'], 'heart', False))
+        out.append('<ul class="feat-go">' + ''.join(
+            f'<li><a{" class=\"primary\"" if main else ""} href="{esc(u)}" target="_blank" rel="noopener">'
+            f'<span aria-hidden="true">{icon(ic)}</span>{esc(label)}</a></li>' for label, u, ic, main in buttons) + '</ul>')
+    out.append(f'<p class="muted feat-note">Featured with their agreement, not paid. Our own {esc(name)} guide continues below.</p>')
     return ''.join(out) + '</section>'
 
 
@@ -919,6 +926,7 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
     else:
         body.append('<p>Official state site: <span class="muted">not yet reviewed</span></p>')
     body.append('</div>' + locator(perm, code, answers, place) + '</div>')
+    body.append(featured_section(groups, name))
     if code == 'OH':
         body.append(f'<p><strong>Ohio’s full guide lives at <a href="{OHIO_HOME}/">OhioWeed.org</a></strong>: business directory, dispensary finder, record clearing, advocacy and more.</p>')
     # What the visitor most likely came for comes first: where adults can buy the store list, elsewhere the medical card.
@@ -937,7 +945,6 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
     body.append(card_html)
     if shops and not stores_first:
         body.append(dispensary_section(shops, cites, name))
-    body.append(featured_section(groups, name))
     body.append(glance(perm, state_answers, name))
     body.append(law_section(perm, code, state_answers, cites, sources))
     body.append(pathway_section(code, name, directory['pathways'], card, pack))
