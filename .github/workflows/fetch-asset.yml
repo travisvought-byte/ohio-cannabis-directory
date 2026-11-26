@@ -1,0 +1,40 @@
+name: Fetch a partner asset
+# Copies one public image (a featured group's logo, from its own site) into assets/featured/.
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: https address of the image on the group's own site
+        required: true
+      name:
+        description: file name to save under assets/featured/ (e.g. kcfc-logo.png)
+        required: true
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and check it is an image
+        env:
+          URL: ${{ inputs.url }}
+          NAME: ${{ inputs.name }}
+        run: |
+          case "$URL" in https://*) ;; *) echo "https only"; exit 1;; esac
+          case "$NAME" in *[!A-Za-z0-9._-]*|.*) echo "bad name"; exit 1;; esac
+          curl -fsSL --max-filesize 5000000 -A "TheReeferDirectory/1.0 (+https://the-reefer.com/partners.html)" -o "/tmp/$NAME" "$URL"
+          file "/tmp/$NAME" | grep -Eq 'PNG|JPEG|Web/P|SVG' || { file "/tmp/$NAME"; exit 1; }
+          python3 -c "import struct,sys;d=open(sys.argv[1],'rb').read(32);print('size', struct.unpack('>II', d[16:24]) if d[:4]==b'\x89PNG' else 'n/a')" "/tmp/$NAME"
+          mkdir -p assets/featured && cp "/tmp/$NAME" "assets/featured/$NAME"
+      - name: Commit
+        env:
+          NAME: ${{ inputs.name }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add "assets/featured/$NAME"
+          git diff --cached --quiet && exit 0
+          git commit -m "Featured asset: $NAME"
+          git pull --rebase origin main && git push origin main
