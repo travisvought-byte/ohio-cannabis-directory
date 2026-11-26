@@ -840,7 +840,7 @@
     B.eh = B.en.hull;
     if (n.kind === 'boss') intro = D.BOSS.captain + ' runs out every gun on ' + n.name + ' and laughs like a broken accordion.';
     else if (n.kind === 'pirate') intro = pick(['Black sails off the bow! ' + n.captain + ' of ' + n.name + ' runs out the guns and grins with every one of their teeth.',
-      n.name + ' swings alongside, flying the skull and crossed spatulas. ' + n.captain + ' shouts: “Your cargo or your dignity!”',
+      cap(n.name) + ' swings alongside, flying the skull and crossed spatulas. ' + n.captain + ' shouts: “Your cargo or your dignity!”',
       'A pirate sloop cuts across your path. ' + n.captain + ' of ' + n.name + ' raises a cutlass and a very loud voice.']);
     else intro = 'You run out your guns. On ' + n.name + ', somebody drops a teapot.';
     if (n.kind !== 'merchant') track(n.kind === 'boss' ? 'meet-gristle' : 'pirate-battle');
