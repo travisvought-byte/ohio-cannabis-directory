@@ -115,6 +115,8 @@ assert(P.state.shot<12,'firing uses cannonballs');
 $('enc-body').querySelector('.primary').click(); assert(!$('dlg-encounter').open);
 // odds: the number on the button is the number rolled, and a miss earns a second wind
 const rnd=w.Math.random;
+// Docking can open a random port event first; tests that dock to use a tab keep the dice quiet.
+const dockAt=pid=>{ w.Math.random=()=>0.99; try{ P.dock(pid); } finally { w.Math.random=rnd; } };
 S.buff=null; S.grit=2; assert.equal(P.odds.chanceOf(0.5),70); assert.equal(P.odds.pct(0.5),'🎲 7+, 70%','the button shows the number to roll');
 S.grit=0; assert.equal(P.odds.chanceOf(0.99),95,'never certain'); assert.equal(P.odds.chanceOf(0),5,'never hopeless'); assert.equal(P.odds.pct(0.5),'🎲 11+, 50%');
 w.Math.random=()=>0; P.odds.roll(0.5); assert.equal(S.grit,1,'a 1 misses'); P.odds.roll(0.5); P.odds.roll(0.5); P.odds.roll(0.5); assert.equal(S.grit,3,'second wind caps at three misses'); assert.equal(P.odds.chanceOf(0.5),80);
@@ -205,7 +207,7 @@ assert(Object.values(T.rep).every(v=>v===0)&&T.jobs.length===0&&Number.isFinite(
 assert($('dlg-note').open&&/real flag of 1718/.test($('note-body').textContent),'and hears what is new'); $('note-ok').click();
 // level 2 opens the Jobs tab; a delivery takes room in the hold and pays on arrival
 T.xp=Math.max(T.xp,D.LEVELS[1].xp); T.gentle=true; T.cargo={}; T.jobs=[]; T.jobsTaken={}; T.news=[]; T.hull=P.stats().hullMax;
-P.dock('tortuga'); assert($('tab-jobs'),'level 2 opens the Jobs tab'); $('tab-jobs').click();
+dockAt('tortuga'); assert($('tab-jobs'),'level 2 opens the Jobs tab'); $('tab-jobs').click();
 assert(/Carry|Smuggle|Bring/.test($('port-panel').textContent)&&/French port/.test($('port-panel').textContent),'the board posts French jobs');
 const job=P.jobOffers('tortuga').find(j=>j.kind==='deliver'); assert(job&&job.pay>0&&D.PORTS[job.to]&&job.by==='france','Tortuga has a delivery');
 const sp0=P.space(); assert(P.takeJob(job)); assert.equal(P.space(),sp0-job.n,'job cargo takes room in the hold'); assert.equal(P.jobLoad(),job.n);
@@ -243,7 +245,7 @@ const choose=re=>{ const b=[...$('enc-body').querySelectorAll('.choice')].find(x
 const cust=k=>({kind:'customs',nation:k,name:'the Test Cutter',captain:'X',cool:0,x:T.x+5,y:T.y,route:[[0,0]],leg:0});
 T.up.secret=0; T.gentle=true; T.marque=''; T.jobs=[]; T.news=[]; T.cargo={}; T.gold=1000; T.hull=P.stats().hullMax;
 // the crew eats a day's provisions for every day at sea from level 2, and two more for a smoke
-P.dock('tortuga'); $('tab-market').click(); assert(/Provisions: \d+ of 40 days/.test($('port-panel').textContent),'markets sell provisions from level 2');
+dockAt('tortuga'); $('tab-market').click(); assert(/Provisions: \d+ of 40 days/.test($('port-panel').textContent),'markets sell provisions from level 2');
 T.food=20; const fd0=E.dayOf(T.dist); w.Math.random=()=>0.99; assert(P.passage('portroyal'),'sail to Port Royal'); closeEnc(); w.Math.random=rnd;
 const fdays=E.dayOf(T.dist)-fd0; assert(fdays>0&&T.food===20-fdays,'the crew eats a day for each of the '+fdays+' days at sea: '+T.food);
 const sm=Object.keys(D.SMOKE).find(g=>!D.CONTRABAND||!D.CONTRABAND.includes(g)); T.cargo[sm]=1; T.food=10; assert(P.smoke(sm)); assert.equal(T.food,8,'the munchies eat two days of provisions');
@@ -262,13 +264,13 @@ w.Math.random=()=>0.99; $('enc-body').querySelector('.primary').click(); w.Math.
 assert(D.PORTS[T.docked]&&D.PORTS[T.docked].nation==='britain'&&$('dlg-port').open,'you walk out on a British dock: '+T.docked);
 assert(E.dayOf(T.dist)>=jd0+5&&P.standOf('britain')===0,'five days pass, and Britain is still hostile');
 // decoys at level 3: bought at the shipwright, they draw off the customs or a pirate
-T.rep.britain=0; T.xp=Math.max(T.xp,D.LEVELS[2].xp); T.gold=1000; T.decoys=0; $('set-sail').click(); P.dock('tortuga'); $('tab-yard').click();
+T.rep.britain=0; T.xp=Math.max(T.xp,D.LEVELS[2].xp); T.gold=1000; T.decoys=0; $('set-sail').click(); dockAt('tortuga'); $('tab-yard').click();
 $('port-panel').querySelector('[data-key=decoy]').click(); $('port-panel').querySelector('[data-key=decoy]').click();
 assert(T.decoys===2&&T.gold===500&&/Two decoys is all/.test($('port-panel').textContent),'two decoys at 250 each');
 $('set-sail').click(); T.cargo={brick:5}; P.customs(cust('france')); choose(/Send a decoy/); assert(T.decoys===1&&T.cargo.brick===5,'a decoy draws off the customs'); closeEnc();
 const gd=T.gold; P.fight(pir(),null); choose(/Send a decoy/); assert(T.decoys===0&&T.gold===gd&&!$('enc-body').querySelector('.choice'),'and ends a fight'); closeEnc();
 // fire ships at level 4: hired in a Nassau tavern, they burn one ship
-T.xp=Math.max(T.xp,D.LEVELS[3].xp); T.gold=1000; T.fireship=0; P.dock('nassau'); $('tab-tavern').click();
+T.xp=Math.max(T.xp,D.LEVELS[3].xp); T.gold=1000; T.fireship=0; dockAt('nassau'); $('tab-tavern').click();
 assert(/Maracaibo/.test($('port-panel').textContent),'the tavern tells the real story'); $('port-panel').querySelector('[data-key=fireship]').click();
 assert(T.fireship===1&&T.gold===500,'a fire ship costs 500'); $('set-sail').click();
 w.Math.random=()=>0.99; P.fight(pir(),null); choose(/Send in your fire ship/); w.Math.random=rnd;
