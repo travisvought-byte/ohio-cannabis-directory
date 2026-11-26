@@ -7,6 +7,10 @@ on:
       file:
         description: JSON list of https addresses, path in this repo
         required: true
+      probe:
+        description: Also print each page's title, description and any store counts it states
+        type: boolean
+        default: false
 permissions:
   contents: read
 jobs:
@@ -17,9 +21,20 @@ jobs:
       - name: Check each link
         env:
           FILE: ${{ inputs.file }}
+          PROBE: ${{ inputs.probe }}
         run: |
           python3 - <<'PY'
-          import json, os, time, urllib.request, urllib.error
+          import html, json, os, re, time, urllib.request, urllib.error
+          probe = os.environ.get('PROBE') == 'true'
+          COUNT = re.compile(r'([0-9][0-9,]{0,6})\s+(?:licensed\s+|medical\s+|recreational\s+|cannabis\s+|marijuana\s+|weed\s+)?(dispensaries|dispensary|stores|shops|results|listings|locations|deliveries|delivery services|lawyers|attorneys)', re.I)
+          def show(u, body):
+              t = re.search(r'<title[^>]*>(.*?)</title>', body, re.S | re.I)
+              d = re.search(r'<meta[^>]+name=["\']description["\'][^>]+content=["\']([^"\']*)', body, re.I)
+              text = html.unescape(re.sub(r'<[^>]+>', ' ', re.sub(r'<script.*?</script>|<style.*?</style>', ' ', body, flags=re.S | re.I)))
+              counts = sorted({' '.join(m.group(0).split()) for m in COUNT.finditer(text)})[:8]
+              totals = sorted({m.group(0) for m in re.finditer(r'"(?:total[A-Za-z]*|count|listingsCount|resultCount)"\s*:\s*[0-9]+', body)})[:8]
+              counts += totals
+              print('PROBE', u, '|', html.unescape(t.group(1).strip()) if t else '', '|', html.unescape(d.group(1)) if d else '', '|', '; '.join(counts), '| bytes', len(body))
           urls = json.load(open(os.environ['FILE']))
           ua = 'Mozilla/5.0 (compatible; TheReeferLinkCheck/1.0; +https://the-reefer.com/about.html)'
           for u in urls:
@@ -29,6 +44,8 @@ jobs:
               try:
                   with urllib.request.urlopen(req, timeout=20) as r:
                       print('LINK', r.status, u, '->', r.geturl())
+                      if probe:
+                          show(u, r.read(3_000_000).decode('utf-8', 'replace'))
               except urllib.error.HTTPError as e:
                   print('LINK', e.code, u)
               except Exception as e:
