@@ -280,22 +280,57 @@
   /* ---------- prices ---------- */
   function dayOf(dist) { return 1 + Math.floor((dist || 0) / 900); }
   function fluct(pid, g, day) { return 0.88 + 0.24 * rand01('f' + pid + g + day); }
-  function buyPrice(pid, g, day) {
+  // charm is the captain's Charm skill: each point takes 2% off what you pay and adds 2% to what you get.
+  function buyPrice(pid, g, day, charm) {
     var p = D.PORTS[pid], G = D.GOODS[g];
     if (!p || !G || p.sells.indexOf(g) < 0) return null;
-    var m = G.home === pid ? 0.55 : 0.92 + 0.16 * rand01('b' + pid + g);
-    return Math.max(1, Math.round(G.base * m * fluct(pid, g, day)));
+    var m = G.home === pid ? 0.68 : 0.95 + 0.15 * rand01('b' + pid + g);
+    return Math.max(1, Math.round(G.base * m * fluct(pid, g, day) * (1 - 0.02 * (charm || 0))));
   }
-  function sellPrice(pid, g, day) {
+  function sellPrice(pid, g, day, charm) {
     var p = D.PORTS[pid], G = D.GOODS[g], m;
     if (G.home === pid) m = 0.5;
     else if (p.sells.indexOf(g) >= 0) m = 0.8;
     else if (G.rare) m = 0.95 + 0.3 * rand01('r' + pid + g);
     else {
-      m = 1 + 0.45 * rand01('d' + pid + g);
-      if (D.PORTS[G.home].map !== p.map) m += 0.22;
+      m = 0.95 + 0.35 * rand01('d' + pid + g);
+      if (D.PORTS[G.home].map !== p.map) m += 0.12;
     }
-    return Math.max(1, Math.round(G.base * m * fluct(pid, g, day) * 0.92));
+    return Math.max(1, Math.round(G.base * m * fluct(pid, g, day) * 0.92 * (1 + 0.02 * (charm || 0))));
+  }
+
+  /* ---------- the light RPG: renown, levels, ship stats and battles (plain maths, so a script can play it) ---------- */
+  function levelOf(xp) {
+    var L = D.LEVELS, n = 1;
+    for (var i = 1; i < L.length; i++) if ((xp || 0) >= L[i].xp) n = i + 1;
+    return n;
+  }
+  function stats(s) {
+    var U = D.UPGRADES, up = s.up || {}, k = s.skill || {};
+    return {
+      fire: 4 + 2 * (up.cannons || 0) + (k.fight || 0),
+      hullMax: U.hull.levels[up.hull || 0],
+      crew: up.crew || 0, sails: up.sails || 0, cannons: up.cannons || 0,
+      fight: k.fight || 0, sail: k.sail || 0, charm: k.charm || 0,
+      speed: 95 * (1 + 0.15 * (up.sails || 0)) * (1 + 0.05 * (k.sail || 0))
+    };
+  }
+  // kind: merchant, pirate or boss. tier: how rough the sea is, 1 to 3.
+  function foe(kind, tier) {
+    tier = Math.max(1, Math.min(3, Math.round(tier) || 1));
+    if (kind === 'boss') return {kind: kind, tier: 4, hull: 100, fire: 12};
+    if (kind === 'merchant') return {kind: kind, tier: tier, hull: 8 + 5 * tier, fire: 1 + tier};
+    return {kind: kind, tier: tier, hull: 4 + 14 * tier, fire: 3 * tier};
+  }
+  function hit(fire, r) { return Math.max(1, Math.round((fire || 1) * (0.75 + 0.5 * r)) || 1); }
+  function boardChance(st, en, enHull) {
+    return clamp(0.2 + 0.55 * (1 - enHull / en.hull) + 0.05 * st.fight + 0.08 * st.crew - 0.05 * en.tier, 0.08, 0.95);
+  }
+  function fleeChance(st, en) { return clamp(0.5 + 0.08 * st.sails + 0.05 * st.sail - 0.07 * en.tier, 0.15, 0.92); }
+  // 0 easy, 1 fair, 2 risky, 3 too strong: how much of your hull a straight broadside fight would cost.
+  function danger(st, hull, en, enHull) {
+    var rounds = Math.ceil((enHull === undefined ? en.hull : enHull) / st.fire), r = (rounds - 1) * en.fire / Math.max(1, hull);
+    return r < 0.35 ? 0 : r < 0.7 ? 1 : r < 1 ? 2 : 3;
   }
 
   root.PILLAGE_ENGINE = {
@@ -303,6 +338,7 @@
     hashStr: hashStr, rng: rng, rand01: rand01, clamp: clamp,
     prepareMap: prepareMap, landAt: landAt, nearLand: nearLand, shipBlocked: shipBlocked,
     cellIdx: cellIdx, cellCenter: cellCenter, nearestFreePoint: nearestFreePoint, walkable: walkable, findPath: findPath,
-    dayOf: dayOf, buyPrice: buyPrice, sellPrice: sellPrice
+    dayOf: dayOf, buyPrice: buyPrice, sellPrice: sellPrice,
+    levelOf: levelOf, stats: stats, foe: foe, hit: hit, boardChance: boardChance, fleeChance: fleeChance, danger: danger
   };
 })(typeof window !== 'undefined' ? window : globalThis);

@@ -12,10 +12,13 @@
     candy:     {name: 'Cartagena Candy', icon: '🍬', base: 48, home: 'cartagena', note: 'Sugary, sticky and a little bit showy.'},
     pineapple: {name: 'Portobelo Pineapple', icon: '🍍', base: 38, home: 'portobelo', note: 'Tropical. Wears a tiny hat.'},
     cloud:     {name: 'Curaçao Cloud', icon: '☁️', base: 52, home: 'willemstad', note: 'Light, fluffy and impossible to find in a hurry.'},
+    vanilla:   {name: 'Veracruz Vanilla', icon: '🌼', base: 42, home: 'veracruz', note: 'Sweet, creamy and slow-cured, like a long siesta.'},
+    fountain:  {name: 'Fountain of Youth', icon: '⛲', base: 46, home: 'staugustine', note: 'Makes you feel nineteen. Results not guaranteed.'},
+    rumcake:   {name: 'Bajan Rum Cake', icon: '🍰', base: 40, home: 'barbados', note: 'Rich, boozy-sweet and gone too soon.'},
     kraken:    {name: 'Kraken Kush', icon: '🐙', base: 150, rare: 'Only found in the holds of merchant ships.', note: 'Legendary. Grips you with all eight arms.'},
     mermaid:   {name: "Mermaid's Kiss", icon: '🧜', base: 120, rare: 'Only found floating at sea.', note: 'Drifts in on the tide, sweet and salty.'}
   };
-  var COMMON = ['tangerine', 'purple', 'breath', 'haze', 'nectar', 'candy', 'pineapple', 'cloud'];
+  var COMMON = ['tangerine', 'purple', 'breath', 'haze', 'nectar', 'candy', 'pineapple', 'cloud', 'vanilla', 'fountain', 'rumcake'];
 
   /* Land shapes, in map units. ribbon: a spine of [x, y, half-width]; blob: centre, radii, turn, seed; poly: an outline. */
   var MAPS = {
@@ -39,9 +42,10 @@
       ],
       exits: [
         {to: 'straits', rect: [0, 20, 36, 140], label: 'To the Florida Straits', at: [10, 80], arrive: [1530, 740]},
-        {to: 'main', rect: [60, 1066, 1480, 34], label: 'To the Spanish Main', at: [800, 1088], arrive: ['x', 60]}
+        {to: 'main', rect: [60, 1066, 1480, 34], label: 'To the Spanish Main', at: [800, 1088], arrive: ['x', 60]},
+        {to: 'antilles', rect: [1564, 760, 36, 280], label: 'To the Lesser Antilles', at: [1590, 900], arrive: [70, 640]}
       ],
-      arrive: {straits: [60, 90], main: ['x', 1030]},
+      arrive: {straits: [60, 90], main: ['x', 1030], antilles: [1530, 900]},
       patrols: [
         {kind: 'customs', route: [[700, 520], [880, 470], [1150, 250], [1350, 260], [880, 470], [620, 900], [300, 900], [460, 560]]},
         {kind: 'merchant', route: [[100, 560], [700, 610], [1250, 840], [1550, 960], [700, 960], [120, 640]]}
@@ -72,9 +76,10 @@
         {name: 'Long Island', ribbon: [[1400, 500, 8], [1430, 580, 10], [1460, 650, 7]]}
       ],
       exits: [
-        {to: 'windward', rect: [1564, 690, 36, 110], label: 'To the Windward Passage', at: [1590, 745], arrive: [60, 90]}
+        {to: 'windward', rect: [1564, 690, 36, 110], label: 'To the Windward Passage', at: [1590, 745], arrive: [60, 90]},
+        {to: 'gulf', rect: [0, 560, 36, 220], label: 'To the Gulf of Mexico', at: [10, 670], arrive: [1530, 610]}
       ],
-      arrive: {windward: [1530, 740]},
+      arrive: {windward: [1530, 740], gulf: [60, 670]},
       patrols: [
         {kind: 'customs', route: [[300, 700], [700, 700], [620, 470], [380, 560]]},
         {kind: 'customs', route: [[1200, 400], [1380, 700], [900, 720], [860, 300]]},
@@ -107,6 +112,70 @@
         {kind: 'customs', route: [[300, 650], [700, 600], [1000, 420], [1300, 560], [700, 420]]},
         {kind: 'merchant', route: [[100, 500], [600, 520], [1100, 380], [1500, 640], [850, 480], [300, 420]]}
       ]
+    },
+    gulf: {
+      name: 'The Gulf of Mexico', short: 'Gulf of Mexico', w: 1600, h: 1100,
+      blurb: 'Wide open water west of Cuba, with Veracruz at the far end.',
+      lands: [
+        {name: 'Mexico', label: [470, 1010], poly: [[-60, -60], [210, -60], [200, 100], [180, 260], [178, 430], [195, 590], [232, 710], [285, 800], [350, 868], [440, 915], [560, 945], [700, 952], [820, 935], [880, 880], [915, 790], [955, 712], [1020, 665], [1110, 640], [1190, 648], [1240, 700], [1262, 800], [1285, 920], [1310, 1160], [-60, 1160]]},
+        {name: 'The Gulf Coast', label: [720, 30], poly: [[150, -60], [1420, -60], [1400, 20], [1250, 52], [1080, 40], [900, 70], [720, 58], [540, 82], [380, 70], [250, 110], [190, 150]]},
+        {name: 'Florida', label: [1540, 160], poly: [[1380, -60], [1660, -60], [1660, 400], [1600, 392], [1545, 330], [1500, 240], [1455, 140], [1410, 60]]},
+        {name: 'Cuba', label: [1530, 950], ribbon: [[1330, 1010, 34], [1450, 960, 50], [1580, 925, 58], [1720, 905, 62]]},
+        {name: 'Isla Mujeres', blob: [1292, 655, 6, 11, 0.3, 81]},
+        {name: 'Alacranes Reef', blob: [1030, 520, 14, 7, 0.2, 83]},
+        {name: 'Cayo Arcas', blob: [860, 700, 7, 5, 0, 85]},
+        {name: 'Isla de Sacrificios', blob: [410, 822, 9, 5, 0.3, 87]},
+        {name: 'Isla Lobos', blob: [300, 600, 7, 5, 0, 89]}
+      ],
+      exits: [
+        {to: 'straits', rect: [1564, 470, 36, 280], label: 'To the Florida Straits', at: [1590, 610], arrive: [60, 670]}
+      ],
+      arrive: {straits: [1530, 610]},
+      patrols: [
+        {kind: 'customs', route: [[700, 400], [1100, 300], [1300, 500], [900, 560], [500, 500]]},
+        {kind: 'merchant', route: [[400, 300], [1000, 200], [1450, 560], [1000, 560], [500, 700], [350, 450]]}
+      ]
+    },
+    antilles: {
+      name: 'The Lesser Antilles', short: 'Lesser Antilles', w: 1600, h: 1100,
+      blurb: 'A long arc of green islands, and Barbados out on its own in the trade winds.',
+      lands: [
+        {name: 'Puerto Rico', label: [140, 168], ribbon: [[-80, 170, 40], [80, 165, 50], [230, 175, 46], [330, 190, 30], [370, 198, 12]]},
+        {name: 'Vieques', blob: [420, 215, 14, 5, 0, 91]},
+        {name: 'The Virgin Islands', blob: [470, 180, 10, 5, 0, 92]},
+        {name: 'The Virgin Islands', blob: [520, 170, 10, 5, 0, 93]},
+        {name: 'The Virgin Islands', blob: [480, 300, 16, 6, 0, 94]},
+        {name: 'Anguilla', blob: [700, 110, 16, 5, 0.4, 95]},
+        {name: 'Saint Martin', blob: [712, 150, 11, 9, 0, 96]},
+        {name: 'Saba', blob: [672, 205, 6, 6, 0, 97]},
+        {name: 'St. Eustatius', blob: [705, 232, 6, 6, 0, 98]},
+        {name: 'St. Kitts', blob: [745, 262, 15, 7, 0.7, 99]},
+        {name: 'Nevis', blob: [772, 290, 8, 8, 0, 100]},
+        {name: 'Barbuda', blob: [905, 165, 15, 12, 0, 101]},
+        {name: 'Antigua', label: [905, 255], blob: [905, 255, 20, 17, 0.2, 102]},
+        {name: 'Montserrat', blob: [800, 325, 7, 10, 0, 103]},
+        {name: 'Guadeloupe', label: [865, 395], blob: [865, 395, 32, 22, 0.2, 104]},
+        {name: 'Marie-Galante', blob: [925, 440, 10, 9, 0, 105]},
+        {name: 'Dominica', label: [868, 505], blob: [868, 505, 12, 24, 0.1, 106]},
+        {name: 'Martinique', label: [902, 615], blob: [902, 615, 17, 28, 0.25, 107]},
+        {name: 'St. Lucia', label: [935, 720], blob: [935, 720, 11, 21, 0.1, 108]},
+        {name: 'St. Vincent', blob: [925, 810, 9, 15, 0.1, 109]},
+        {name: 'The Grenadines', blob: [940, 850, 5, 4, 0, 110]},
+        {name: 'Tobago Cays', blob: [958, 882, 6, 4, 0, 111]},
+        {name: 'The Grenadines', blob: [972, 915, 6, 4, 0, 112]},
+        {name: 'Grenada', label: [985, 975], blob: [985, 975, 12, 17, 0.1, 113]},
+        {name: 'Barbados', label: [1400, 760], blob: [1400, 760, 19, 27, 0.15, 114]},
+        {name: 'Tobago', label: [1190, 1020], blob: [1190, 1020, 22, 8, -0.4, 115]},
+        {name: 'Trinidad', label: [1100, 1085], poly: [[960, 1160], [990, 1075], [1060, 1060], [1170, 1072], [1230, 1100], [1240, 1160]]}
+      ],
+      exits: [
+        {to: 'windward', rect: [0, 360, 36, 620], label: 'To the Windward Passage', at: [10, 640], arrive: [1530, 900]}
+      ],
+      arrive: {windward: [70, 640]},
+      patrols: [
+        {kind: 'customs', route: [[600, 500], [1100, 600], [1250, 850], [700, 900], [400, 650]]},
+        {kind: 'merchant', route: [[150, 700], [700, 750], [1300, 600], [1500, 900], [1050, 950], [300, 900]]}
+      ]
     }
   };
 
@@ -114,11 +183,11 @@
   var PORTS = {
     tortuga:    {name: 'Tortuga', map: 'windward', dock: [1000, 302], town: [1000, 272], sells: ['tangerine', 'breath', 'purple'], yard: true, who: 'ruthie',
                  blurb: 'A rocky little island full of hammocks, gossip and suspicious-smelling smoke.'},
-    portroyal:  {name: 'Port Royal', map: 'windward', dock: [545, 832], town: [532, 798], sells: ['purple', 'tangerine', 'haze'], yard: true, who: 'percival',
+    portroyal:  {name: 'Port Royal', map: 'windward', dock: [545, 832], town: [532, 798], sells: ['purple', 'tangerine', 'breath'], yard: true, who: 'percival',
                  blurb: 'The richest, rowdiest harbor in the Caribbean. The wigs are very tall here.'},
     petitgoave: {name: 'Petit-Goâve', map: 'windward', dock: [985, 598], town: [994, 630], sells: ['breath', 'tangerine', 'pineapple'], yard: false, who: 'toussaint',
                  blurb: 'A quiet old buccaneer harbor where everyone is mending a net or pretending to.'},
-    havana:     {name: 'Havana', map: 'straits', dock: [385, 746], town: [385, 792], sells: ['haze', 'nectar', 'purple'], yard: true, who: 'catalina',
+    havana:     {name: 'Havana', map: 'straits', dock: [385, 746], town: [385, 792], sells: ['haze', 'nectar', 'fountain'], yard: true, who: 'catalina',
                  blurb: 'Grand walls, grand ships and the finest rollers on any sea.'},
     nassau:     {name: 'Nassau', map: 'straits', dock: [1132, 300], town: [1135, 334], sells: ['nectar', 'haze', 'tangerine'], yard: false, who: 'mildew',
                  blurb: 'A pirate republic of palm trees, hammocks and very relaxed rules.'},
@@ -127,7 +196,13 @@
     portobelo:  {name: 'Portobelo', map: 'main', dock: [180, 724], town: [182, 770], sells: ['pineapple', 'candy', 'breath'], yard: false, who: 'prudence',
                  blurb: 'Sleepy treasure port. Somebody important is on holiday here.'},
     willemstad: {name: 'Willemstad', map: 'main', dock: [1196, 502], town: [1192, 472], sells: ['cloud', 'candy', 'nectar'], yard: true, who: 'ines',
-                 blurb: 'Colorful houses, a floating bridge and a famous captain in retirement.'}
+                 blurb: 'Colorful houses, a floating bridge and a famous captain in retirement.'},
+    staugustine: {name: 'St. Augustine', map: 'straits', dock: [482, 75], town: [418, 52], sells: ['fountain', 'nectar', 'tangerine'], yard: false, who: 'bartholomew',
+                 blurb: 'The oldest town in Florida. Some of the residents feel it.'},
+    veracruz:   {name: 'Veracruz', map: 'gulf', dock: [322, 790], town: [266, 820], sells: ['vanilla', 'haze', 'fountain'], yard: true, who: 'esperanza',
+                 blurb: 'A busy old harbor that smells of vanilla, tar and very long lunches.'},
+    barbados:   {name: 'Barbados', map: 'antilles', dock: [1362, 800], town: [1398, 768], sells: ['rumcake', 'cloud', 'pineapple'], yard: true, who: 'clementine',
+                 blurb: 'Bridgetown, on Carlisle Bay. Flying fish, cricket and a rum shop that never seems to close.'}
   };
 
   /* Buried treasure. A rumor marks the spot on your chart; the Emerald Bale needs all three map pieces. */
@@ -138,6 +213,10 @@
          text: 'Under a palm tree shaped like a question mark you find the second piece of the map, 250 doubloons and a bale of Kraken Kush.'},
     s3: {name: 'Providencia', map: 'main', at: [110, 250], piece: true, gold: 300, loot: {kraken: 2},
          text: 'Behind a rock that looks like a sleeping landlord: the third piece of the map, 300 doubloons and 2 bales of Kraken Kush.'},
+    alacranes: {name: 'the Alacranes Reef', map: 'gulf', at: [1030, 520], gold: 300, loot: {mermaid: 2},
+         text: 'A very rude seagull watches you dig. Clunk! A little chest: 300 doubloons and 2 bales of Mermaid’s Kiss. The seagull takes one biscuit as tax.'},
+    tobagocays: {name: 'the Tobago Cays', map: 'antilles', at: [958, 882], gold: 350, loot: {kraken: 1},
+         text: 'Between two turtles and a very confused pelican you find a chest: 350 doubloons and a bale of Kraken Kush.'},
     emerald: {name: 'Smoke Cay', map: 'main', at: [760, 300], needs: 3, gold: 2000, loot: {},
          text: 'The haze parts. You dig, and dig, and… there it is: the Emerald Bale, wrapped in old sailcloth and smelling like every good day you ever had. Under it, 2,000 doubloons and a note in Ines’s hand: “Share some.”'}
   };
@@ -152,10 +231,10 @@
         {label: 'Tell me that rumor again.', next: 'rumor2', if: 'hint:s1'},
         {label: 'Where can a ship go from here?', next: 'where'},
         {label: 'Just passing through.', end: true}]},
-      trade: {text: 'Buy it cheap where it grows, sell it dear where it doesn’t. Tortuga Tangerine grows like a weed here, mostly because it is one. Haul it somewhere fancy, like Port Royal or Havana, and watch the coin roll in.', options: [{label: 'Buy low, sell high. Got it.', next: 'start'}]},
+      trade: {text: 'Buy it cheap where it grows, sell it dear where it doesn’t. Tortuga Tangerine grows like a weed here, mostly because it is one. Haul it somewhere fancy, like Havana or the Spanish Main, and watch the coin roll in.', options: [{label: 'Buy low, sell high. Got it.', next: 'start'}]},
       rumor: {text: 'Old Captain Ines Featherstone grew the finest crop that ever sailed: the Emerald Bale. Before she retired she buried it and tore her map in three. One piece is on Navassa, a lonely rock south-west of here. Only goats live there. Very judgmental goats.', do: 'hint:s1', options: [{label: 'I’ll go have a look.', next: 'start'}]},
       rumor2: {text: 'Navassa, love. South-west, between here and Jamaica. Follow the smell of goat.', options: [{label: 'Thanks, Ruthie.', next: 'start'}]},
-      where: {text: 'Sail west past the tip of Cuba for the Florida Straits: Havana and Nassau. Sail off the bottom of the chart for the Spanish Main: Cartagena and friends. And mind the Crown Customs cutters. Blue sails. No sense of humor.', do: 'know:havana,know:cartagena', options: [{label: 'Blue sails. Noted.', next: 'start'}]}
+      where: {text: 'Sail west past the tip of Cuba for the Florida Straits: Havana and Nassau. Sail off the bottom of the chart for the Spanish Main: Cartagena and friends. Sail east past Hispaniola for the Lesser Antilles and Barbados. Mind the Crown Customs cutters, with their blue sails, and the pirates with black ones. Neither has a sense of humor.', do: 'know:havana,know:cartagena,know:barbados', options: [{label: 'Blue sails, black sails. Noted.', next: 'start'}]}
     },
     percival: {
       name: 'Lord Percival Fopsworth III', role: 'Gentleman of delicate constitution', icon: '🎩', port: 'portroyal',
@@ -190,7 +269,7 @@
         {label: 'Need anything shipped?', next: 'ask', if: '!quest:catalina'},
         {label: 'Ten bales of Tortuga Tangerine, Doña.', next: 'done', if: 'can:catalina'},
         {label: 'Adiós.', end: true}]},
-      teach: {text: 'No. But I will tell you this for free: Havana pays well for Port Royal Purple, and the Customs cutters here are thick as mosquitoes. Pay them, outrun them or outsmart them. Never cry in front of them. Oh, and Nassau buys anything. Anything.', do: 'know:nassau', options: [{label: 'No crying. Understood.', next: 'start'}]},
+      teach: {text: 'No. But I will tell you this for free: Havana pays well for Port Royal Purple, and the Customs cutters here are thick as mosquitoes. Pay them, outrun them or outsmart them. Never cry in front of them. Oh, and Nassau buys anything. Anything. And west of here, past the edge of the chart, Veracruz grows a vanilla people write poems about.', do: 'know:nassau,know:veracruz', options: [{label: 'No crying. Understood.', next: 'start'}]},
       ask: {text: 'Ten bales of Tortuga Tangerine. I am experimenting with citrus notes. Four hundred doubloons.', options: [
         {label: 'Consider it done.', do: 'quest:catalina', next: 'start'}, {label: 'Another time.', next: 'start'}]},
       done: {text: 'Perfect. Bright as a sunrise. Four hundred doubloons, and you may now touch exactly one thing on my table. Not that one.', do: 'complete:catalina', options: [{label: 'Gracias.', next: 'start'}]}
@@ -201,7 +280,9 @@
         {label: 'Any treasure around here?', next: 'treasure', if: '!hint:s2'},
         {label: 'Where was that treasure again?', next: 'again', if: 'hint:s2'},
         {label: 'Why do they call you Mildew?', next: 'name'},
+        {label: 'Anything up the Florida coast?', next: 'florida'},
         {label: 'Sweet dreams.', end: true}]},
+      florida: {text: 'St. Augustine, up the coast to the north-west. Fella there says he’s three hundred years old. Never once seen him in a hammock, so I don’t trust him.', do: 'know:staugustine', options: [{label: 'Noted.', next: 'start'}]},
       treasure: {text: 'Mmh. Ines Featherstone hid a piece of her map on the Dry Tortugas, way out west past the Florida Keys. I’d fetch it myself, but this hammock isn’t going to lie in itself.', do: 'hint:s2', options: [{label: 'Thanks, Mildew.', next: 'start'}]},
       again: {text: 'Dry Tortugas. West. Past the Keys. Shh.', options: [{label: 'Shh. Right.', next: 'start'}]},
       name: {text: 'I have been in this hammock a long time, Captain. A long, long time.', options: [{label: 'Fair enough.', next: 'start'}]}
@@ -248,6 +329,52 @@
       pieces: {text: 'One on Navassa, one on the Dry Tortugas, one on Providencia. Bring them together and look for the cay that’s always wrapped in smoke.', do: 'hint:s1,hint:s2,hint:s3', options: [{label: 'Thank you, Captain.', next: 'start'}]},
       three: {text: 'All three! Then you know where to go: Smoke Cay, out in the open sea north of the Main. Follow the haze. The Emerald Bale is yours if you can dig it up.', options: [{label: 'I’m on my way.', next: 'start'}]},
       won: {text: 'Ha! Then you’re a Legend of the Reefer now. Try not to let it go to your head. It went to mine for about forty years.', options: [{label: 'I’ll try.', next: 'start'}]}
+    },
+    bartholomew: {
+      name: 'Brother Bartholomew Spry', role: 'Says he is 312 years old', icon: '⛲', port: 'staugustine',
+      start: {text: 'Welcome to St. Augustine, the oldest town in Florida! I’m Brother Bartholomew, and I’m three hundred and twelve years old. I drank from the fountain. Don’t tell anyone. Tell everyone.', options: [
+        {label: 'Three hundred and twelve? Really?', next: 'age'},
+        {label: 'Do you need anything?', next: 'ask', if: '!quest:bartholomew'},
+        {label: 'Five bales of Veracruz Vanilla, Brother.', next: 'done', if: 'can:bartholomew'},
+        {label: 'Where else should I sail?', next: 'where'},
+        {label: 'Farewell, Brother.', end: true}]},
+      age: {text: 'Give or take a century. The secret is the Fountain of Youth, a good nap and never, ever arguing with a pelican.', options: [{label: 'Words to live by.', next: 'start'}]},
+      ask: {text: 'I’m turning three hundred and thirteen! I need a cake, and a cake needs vanilla. Five bales of Veracruz Vanilla, from the Gulf of Mexico. Three hundred fifty doubloons.', options: [
+        {label: 'Happy early birthday. Deal.', do: 'quest:bartholomew', next: 'start'}, {label: 'Maybe later.', next: 'start'}]},
+      done: {text: 'Vanilla! It smells exactly like my two hundredth birthday. Three hundred fifty doubloons, and a candle for your trouble. Just the one. We’d need a bigger cake.', do: 'complete:bartholomew', options: [{label: 'Many happy returns.', next: 'start'}]},
+      where: {text: 'West, past Havana and off the edge of the chart, lies the Gulf of Mexico. Veracruz is at the far end. Lovely people. Very long lunches.', do: 'know:veracruz', options: [{label: 'Thanks, Brother.', next: 'start'}]}
+    },
+    esperanza: {
+      name: 'Doña Esperanza Vainilla', role: 'Vanilla grower and dessert critic', icon: '🌼', port: 'veracruz',
+      start: {text: 'Smell that, Captain? Vanilla. Veracruz grows the best in the world, and I will fight anyone who says otherwise. Politely.', options: [
+        {label: 'What makes it so special?', next: 'vanilla'},
+        {label: 'Do you need anything?', next: 'ask', if: '!quest:esperanza'},
+        {label: 'Four bales of Bajan Rum Cake, Doña.', next: 'done', if: 'can:esperanza'},
+        {label: 'Heard any rumors?', next: 'rumor', if: '!hint:alacranes'},
+        {label: 'Where was that reef again?', next: 'again', if: 'hint:alacranes'},
+        {label: 'Adiós, Doña.', end: true}]},
+      vanilla: {text: 'Patience. Every pod is cured in the sun for months. It is the slowest crop on earth, which is why everyone here takes very long lunches. Sell it far away. In Barbados they go wild for it.', do: 'know:barbados', options: [{label: 'Patience. Got it.', next: 'start'}]},
+      ask: {text: 'I am inventing the perfect dessert, and it needs Bajan Rum Cake, all the way from Barbados. Four bales, and I pay four hundred fifty doubloons. You also get the first bite.', options: [
+        {label: 'For dessert!', do: 'quest:esperanza', next: 'start'}, {label: 'Another time.', next: 'start'}]},
+      done: {text: 'Rum, sugar, butter, more rum. Perfect. Four hundred fifty doubloons, and the first bite is yours. A small bite.', do: 'complete:esperanza', options: [{label: 'Delicious.', next: 'start'}]},
+      rumor: {text: 'Fishermen say an old captain buried a chest on the Alacranes Reef, north of the Yucatán. They also say a very rude seagull lives there, so be quick.', do: 'hint:alacranes', options: [{label: 'I’ll bring biscuits.', next: 'start'}]},
+      again: {text: 'The Alacranes Reef, north of the Yucatán. Mind the seagull.', options: [{label: 'Gracias.', next: 'start'}]}
+    },
+    clementine: {
+      name: 'Auntie Clementine Flyingfish', role: 'Runs the rum shop on Carlisle Bay', icon: '🐟', port: 'barbados',
+      start: {text: 'Come in out of the sun, Captain, you look peaky. Sit down, eat something, and then we can talk business.', options: [
+        {label: 'What’s good in Barbados?', next: 'good'},
+        {label: 'Do you need anything?', next: 'ask', if: '!quest:clementine'},
+        {label: 'Four bales of Fountain of Youth, Auntie.', next: 'done', if: 'can:clementine'},
+        {label: 'Any buried treasure around here?', next: 'treasure', if: '!hint:tobagocays'},
+        {label: 'Where was that treasure again?', next: 'again', if: 'hint:tobagocays'},
+        {label: 'Thank you, Auntie.', end: true}]},
+      good: {text: 'Flying fish, rum cake and cricket, in that order. Bajan Rum Cake sells well anywhere far from here, and the farther the better.', options: [{label: 'Far away. Got it.', next: 'start'}]},
+      ask: {text: 'My mother is ninety-four and has decided she would like to be ninety-three. I hear St. Augustine grows something called Fountain of Youth. Four bales, four hundred doubloons, and she will stop calling you skinny.', options: [
+        {label: 'Anything for your mother.', do: 'quest:clementine', next: 'start'}, {label: 'Not today.', next: 'start'}]},
+      done: {text: 'She is ninety-three already and out dancing! Four hundred doubloons, Captain, and a slice of cake for the road.', do: 'complete:clementine', options: [{label: 'Give her my best.', next: 'start'}]},
+      treasure: {text: 'My grandfather swore a pirate buried a chest in the Tobago Cays, the little islands down in the Grenadines. He also swore he once outswam a shark, so take it how you like.', do: 'hint:tobagocays', options: [{label: 'I’ll take a look.', next: 'start'}]},
+      again: {text: 'The Tobago Cays, down in the Grenadines, south of St. Vincent.', options: [{label: 'Thank you.', next: 'start'}]}
     }
   };
 
@@ -257,17 +384,43 @@
     toussaint: {by: 'toussaint', port: 'petitgoave', good: 'mermaid', n: 2, gold: 350},
     catalina:  {by: 'catalina', port: 'havana', good: 'tangerine', n: 10, gold: 400},
     quill:     {by: 'quill', port: 'cartagena', good: 'kraken', n: 1, gold: 600},
-    prudence:  {by: 'prudence', port: 'portobelo', good: 'cloud', n: 8, gold: 500}
+    prudence:  {by: 'prudence', port: 'portobelo', good: 'cloud', n: 8, gold: 500},
+    bartholomew: {by: 'bartholomew', port: 'staugustine', good: 'vanilla', n: 5, gold: 350},
+    esperanza: {by: 'esperanza', port: 'veracruz', good: 'rumcake', n: 4, gold: 450},
+    clementine: {by: 'clementine', port: 'barbados', good: 'fountain', n: 4, gold: 400}
   };
 
   var UPGRADES = {
-    hold:     {name: 'Bigger hold', icon: '📦', levels: [20, 35, 60, 100], cost: [400, 1200, 3000], note: 'Room for more bales.'},
-    sails:    {name: 'Faster sails', icon: '⛵', levels: [0, 1, 2], cost: [500, 1500], note: 'Sail faster and outrun Customs more often.'},
-    cannons:  {name: 'More cannons', icon: '💣', levels: [0, 1, 2, 3], cost: [300, 900, 2000], note: 'Better odds when you board a merchant or fire a warning shot.'},
-    lavender: {name: 'Lavender-lined hold', icon: '🌸', levels: [0, 1], cost: [800], note: 'Customs can’t smell your cargo from as far away.'}
+    hold:     {name: 'Bigger hold', icon: '📦', levels: [20, 30, 45, 65, 90], cost: [400, 1200, 2800, 6000], note: 'Room for more bales.'},
+    hull:     {name: 'Stouter hull', icon: '🛡️', levels: [30, 45, 65, 90], cost: [400, 1400, 3500], note: 'More hull points, so you last longer in a fight.'},
+    cannons:  {name: 'More cannons', icon: '💣', levels: [0, 1, 2, 3, 4], cost: [300, 1000, 2600, 5500], note: 'Every broadside hits harder, and warning shots land better.'},
+    crew:     {name: 'Hire boarders', icon: '👥', levels: [0, 1, 2, 3], cost: [400, 1300, 3200], note: 'Better odds when you board, and more hands to carry off loot.'},
+    sails:    {name: 'Faster sails', icon: '⛵', levels: [0, 1, 2, 3], cost: [500, 1500, 3800], note: 'Sail faster, and outrun Customs and pirates more often.'},
+    lavender: {name: 'Lavender-lined hold', icon: '🌸', levels: [0, 1], cost: [900], note: 'Customs can’t smell your cargo from as far away.'}
   };
 
-  var RANKS = [[0, 'Deckhand'], [600, 'Bosun'], [2000, 'Quartermaster'], [5000, 'Captain'], [12000, 'Commodore']];
+  /* Renown earns levels. Every level after the first gives a skill point. */
+  var LEVELS = [
+    {xp: 0, title: 'Deckhand'}, {xp: 60, title: 'Powder Monkey'}, {xp: 180, title: 'Bosun'}, {xp: 380, title: 'Navigator'},
+    {xp: 680, title: 'Quartermaster'}, {xp: 1100, title: 'First Mate'}, {xp: 1650, title: 'Captain'}, {xp: 2350, title: 'Sea Wolf'},
+    {xp: 3250, title: 'Commodore'}, {xp: 4400, title: 'Pirate Lord'}
+  ];
+  var SKILLS = {
+    fight: {name: 'Fighting', icon: '⚔️', note: 'Harder broadsides and better boarding odds.'},
+    sail:  {name: 'Sailing', icon: '🧭', note: 'A faster ship and better odds when you run.'},
+    charm: {name: 'Charm', icon: '🗣️', note: 'Better prices, cheaper bribes and smoother talking.'}
+  };
+  var SKILL_MAX = 5;
+
+  /* How rough each sea is: it sets how tough the pirates are and how rich the loot. */
+  var SEA_TIER = {windward: 1, straits: 2, antilles: 2, gulf: 3, main: 3};
+  var PIRATE_COUNT = {windward: 1, straits: 1, antilles: 2, gulf: 2, main: 2};
+  var PIRATE_SHIPS = ['the Salty Grudge', 'the Crooked Grin', 'the Wet Sock', 'the Bad Idea', 'the Second Helping', 'the Loud Neighbour',
+    'the Unpaid Invoice', 'the Sore Loser', 'the Petty Theft', 'the Last Straw'];
+  var PIRATE_CAPTAINS = ['One-Eyed Edna Bramble', 'Barnaby “Bilge” Crumb', 'Scurvy Sal Tuckett', 'Gentleman Jeb Mortimer', 'Two-Hat Tilly Ross',
+    'Ol’ Gums McGrady', 'Red Rosalind Fitch', 'Hobb the Nailbiter', 'Lady Winifred Rust', 'Short Pete Lomax'];
+  var BOSS = {captain: 'Captain Silas Gristle', ship: 'the Bitter End', map: 'main', level: 7, gold: 2500, loot: {kraken: 3},
+    intro: 'Black sails, red trim and a figurehead that is rude on purpose. Captain Silas Gristle, terror of the Spanish Main, has heard about you and does not like it.'};
 
   var CUSTOMS_NAMES = ['Lieutenant Dudley Clipboard', 'Ensign Agatha Stamp', 'Sergeant Percy Paperwork', 'Lieutenant Mabel Inkwell', 'Ensign Rupert Triplicate'];
   var MERCHANT_NAMES = ['the Prosperous Penny', 'the Comfortable Shoe', 'the Sensible Investment', 'the Mild Surprise', 'the Quarterly Report', 'the Reasonable Doubt', 'the Polite Cough'];
@@ -277,12 +430,15 @@
     'The note reads: “Prices change every day. If a port won’t pay what you want, try again tomorrow, or try the next sea over.”',
     'The note reads: “Goods from another sea fetch the best prices. Tortuga Tangerine in Cartagena? Chef’s kiss.”',
     'The note reads: “Merchant ships carry Kraken Kush. Customs cutters carry clipboards. Choose your fights.”',
+    'The note reads: “Black sails mean pirates. Pound them with broadsides first, then board when they’re weak.”',
+    'The note reads: “A pirate who beats you only takes part of your hold. Patch up at any port and try again.”',
     'The note reads: “Whoever finds this: the haze over Smoke Cay never lifts. Signed, someone who got lost there for a week.”'
   ];
 
   var PARROT = 'Admiral Biscuit';
 
   window.PILLAGE_DATA = {GOODS: GOODS, COMMON: COMMON, MAPS: MAPS, PORTS: PORTS, STASHES: STASHES, PEOPLE: PEOPLE,
-    QUESTS: QUESTS, UPGRADES: UPGRADES, RANKS: RANKS, CUSTOMS_NAMES: CUSTOMS_NAMES, MERCHANT_NAMES: MERCHANT_NAMES,
-    BOTTLE_TIPS: BOTTLE_TIPS, PARROT: PARROT};
+    QUESTS: QUESTS, UPGRADES: UPGRADES, LEVELS: LEVELS, SKILLS: SKILLS, SKILL_MAX: SKILL_MAX, SEA_TIER: SEA_TIER,
+    PIRATE_COUNT: PIRATE_COUNT, PIRATE_SHIPS: PIRATE_SHIPS, PIRATE_CAPTAINS: PIRATE_CAPTAINS, BOSS: BOSS,
+    CUSTOMS_NAMES: CUSTOMS_NAMES, MERCHANT_NAMES: MERCHANT_NAMES, BOTTLE_TIPS: BOTTLE_TIPS, PARROT: PARROT};
 })();
