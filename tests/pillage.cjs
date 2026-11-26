@@ -6,12 +6,13 @@
 // Round four: every check is a d20 roll, cannonballs run out and Brick Weed fills in, markets run out and prices move
 // as you trade, pirates come in five sizes, a sunk ship ends the voyage but the hideout and the hall of fame outlive it,
 // the smuggler's hold hides bales from Customs and pirates, goals earn relics, and old saves keep gentle seas.
+// Round six: the charts are the real Caribbean at one scale; ports, dig sites, coasts, sea crossings and voyage lengths match the real map.
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const dir=path.join(__dirname,'..','pillage'),read=f=>fs.readFileSync(path.join(dir,f),'utf8');
 
 // data and engine run outside a browser
 const ctx={Math};ctx.window=ctx;vm.createContext(ctx);
-for(const f of ['data.js','engine.js','events.js']) vm.runInContext(read(f),ctx);
+for(const f of ['coasts.js','data.js','engine.js','events.js']) vm.runInContext(read(f),ctx);
 const D=ctx.PILLAGE_DATA,E=ctx.PILLAGE_ENGINE,EV=ctx.PILLAGE_EVENTS;
 
 // every character's name and role are text (a dialogue node called name once replaced Mildew's name with [object Object])
@@ -27,9 +28,62 @@ for(const mid of seas) for(const e of D.MAPS[mid].exits) assert(D.MAPS[e.to].exi
 const maps={};for(const mid of seas) maps[mid]=E.prepareMap(mid);
 for(const pid in D.PORTS){ const p=D.PORTS[pid],m=maps[p.map]; const f=E.nearestFreePoint(m,p.dock[0],p.dock[1]);
   assert(Math.hypot(f[0]-p.dock[0],f[1]-p.dock[1])<40,pid+' dock is at sea');
-  const a=D.MAPS[p.map].exits[0].arrive, start=E.nearestFreePoint(m,a[0]==='x'?800:a[0],a[1]);
+  const e=D.MAPS[p.map].exits[0],back=D.MAPS[e.to].exits.find(b=>b.to===p.map),r=back.rect,a=E.crossing(e.to,back,r[0]+r[2]/2,r[1]+r[3]/2),start=E.nearestFreePoint(m,a[0],a[1]);
   assert(E.findPath(m,start[0],start[1],f[0],f[1]),pid+' can be sailed to'); }
 for(const sid in D.STASHES){ const s=D.STASHES[sid],m=maps[s.map],f=E.nearestFreePoint(m,s.at[0],s.at[1]); assert(Math.hypot(f[0]-s.at[0],f[1]-s.at[1])<60,sid+' can be dug from a ship'); }
+
+// the charts are the real Caribbean: every sea is a window onto the same Mercator map at one scale, with real coastlines,
+// and every port, dig site and island sits where it really is (independent coordinates, not read from the chart data)
+const K=D.SCALE,mercY=lat=>Math.log(Math.tan(Math.PI/4+lat*Math.PI/360))*180/Math.PI;
+const chartXY=(mid,lat,lon)=>{const g=D.MAPS[mid].geo;return [(lon-g.west)*K,(mercY(g.north)-mercY(lat))*K];};
+const landName=(mid,lat,lon)=>{const p=chartXY(mid,lat,lon),L=E.landAt(maps[mid],p[0],p[1]);return L?L.land.name:null;};
+assert(K>=100&&K<=200,'one chart scale for every sea');
+for(const mid of seas){ const M=D.MAPS[mid],g=M.geo;
+  assert(Math.abs(M.w-(g.east-g.west)*K)<2&&Math.abs(M.h-(mercY(g.north)-mercY(g.south))*K)<2,mid+' is drawn at the shared scale');
+  const p=E.fromLonLat(M,g.west+1,g.south+1),b=E.toLonLat(M,p[0],p[1]),c=chartXY(mid,g.south+1,g.west+1);
+  assert(Math.abs(p[0]-c[0])<1e-6&&Math.abs(p[1]-c[1])<1e-6&&Math.abs(b[0]-g.west-1)<1e-9&&Math.abs(b[1]-g.south-1)<1e-9,mid+' converts positions both ways'); }
+// seas that meet share their edge, so sailing from one into the next keeps your real latitude and longitude
+for(const mid of seas) for(const e of D.MAPS[mid].exits){ const A=D.MAPS[mid].geo,B=D.MAPS[e.to].geo;
+  const shared=[A.north===B.south,A.south===B.north,A.east===B.west,A.west===B.east].filter(Boolean).length; assert.equal(shared,1,mid+' and '+e.to+' meet along one edge'); }
+const REAL={tortuga:[20.035,-72.80],portroyal:[17.937,-76.841],petitgoave:[18.432,-72.866],havana:[23.137,-82.355],nassau:[25.075,-77.343],
+  staugustine:[29.894,-81.313],veracruz:[19.197,-96.137],cartagena:[10.423,-75.550],portobelo:[9.553,-79.655],willemstad:[12.107,-68.934],barbados:[13.097,-59.616]};
+assert.deepEqual(Object.keys(REAL).sort(),Object.keys(D.PORTS).sort(),'every port has a real position to check');
+for(const pid in REAL){ const p=D.PORTS[pid],t=chartXY(p.map,...REAL[pid]);
+  assert(Math.hypot(p.town[0]-t[0],p.town[1]-t[1])<12,pid+' town is where the real town is');
+  assert(E.landAt(maps[p.map],p.town[0],p.town[1]),pid+' town is on land');
+  assert(Math.hypot(p.dock[0]-p.town[0],p.dock[1]-p.town[1])<60,pid+' dock is just off the town'); }
+const DIG={s1:['Navassa',18.40,-75.012],s2:['Dry Tortugas',24.628,-82.873],s3:['Providencia',13.35,-81.375],alacranes:['Alacranes Reef',22.384,-89.684],
+  tobagocays:['Tobago Cays',12.632,-61.355],emerald:['Serrana Bank',14.29,-80.37]};
+assert.deepEqual(Object.keys(DIG).sort(),Object.keys(D.STASHES).sort(),'every dig site has a real position to check');
+const islandsNear=(mid,x,y,r)=>{const out=new Set();for(let dx=-r;dx<=r;dx+=3)for(let dy=-r;dy<=r;dy+=3){const L=E.landAt(maps[mid],x+dx,y+dy);if(L)out.add(L.land.name);}return out;};
+for(const sid in DIG){ const s=D.STASHES[sid],[name,lat,lon]=DIG[sid],t=chartXY(s.map,lat,lon);
+  assert(Math.hypot(s.at[0]-t[0],s.at[1]-t[1])<30,sid+' is dug where '+name+' really is');
+  assert(islandsNear(s.map,s.at[0],s.at[1],24).has(name),sid+' sits on '+name); }
+assert.equal(D.HIDEOUT.name,'Île-à-Vache'); { const t=chartXY(D.HIDEOUT.map,18.07,-73.64);
+  assert(Math.hypot(D.HIDEOUT.at[0]-t[0],D.HIDEOUT.at[1]-t[1])<30&&islandsNear(D.HIDEOUT.map,D.HIDEOUT.at[0],D.HIDEOUT.at[1],24).has('Île-à-Vache'),'the hideout is on Île-à-Vache'); }
+// coastlines: real points inland are the right land, real points at sea are open water
+const ASHORE={windward:[['Jamaica',18.15,-77.3],['Hispaniola',19.0,-71.0],['Cuba',20.6,-76.0],['Tortuga',20.06,-72.78],['Gonâve',18.85,-73.05],['Puerto Rico',18.2,-66.5],['Great Inagua',21.07,-73.35]],
+  straits:[['Florida',28.0,-81.5],['Cuba',22.4,-80.0],['Andros',24.4,-78.0],['New Providence',25.04,-77.4],['Grand Bahama',26.62,-78.4],['Eleuthera',25.25,-76.3]],
+  gulf:[['New Spain',25.0,-98.0],['New Spain',20.5,-89.0],['New Spain',30.4,-91.5],['Cuba',22.3,-84.0]],
+  main:[['Tierra Firme',10.0,-74.0],['Tierra Firme',9.0,-79.5],['Curaçao',12.2,-69.0],['Aruba',12.52,-69.97],['Bonaire',12.18,-68.27]],
+  antilles:[['Barbados',13.17,-59.55],['Martinique',14.65,-61.0],['Trinidad',10.45,-61.25],['Guadeloupe',16.15,-61.68],['Grenada',12.12,-61.68],['Dominica',15.42,-61.35],['Tobago',11.23,-60.68],['St. Lucia',13.9,-60.97],['Puerto Rico',18.2,-66.0]]};
+const AFLOAT={windward:[[20.0,-73.85],[18.2,-75.5],[17.3,-73.0]],straits:[[23.9,-81.0],[25.6,-79.6],[27.5,-79.5]],gulf:[[25.0,-90.0],[22.0,-86.5],[28.5,-88.0]],
+  main:[[14.0,-75.0],[12.5,-80.0],[15.5,-70.0]],antilles:[[14.5,-59.3],[14.0,-64.0],[17.0,-64.5]]};
+for(const mid of seas){ for(const [name,lat,lon] of ASHORE[mid]) assert.equal(landName(mid,lat,lon),name,name+' is where it really is on '+mid);
+  for(const [lat,lon] of AFLOAT[mid]){ const p=chartXY(mid,lat,lon),f=E.nearestFreePoint(maps[mid],p[0],p[1]); assert(f[0]===p[0]&&f[1]===p[1],lat+','+lon+' is open water on '+mid); } }
+// crossing to the next sea keeps your real position, lands in open water clear of the way back, and every port there can be reached
+for(const mid of seas) for(const e of D.MAPS[mid].exits){ const A=D.MAPS[mid],B=D.MAPS[e.to],back=B.exits.find(b=>b.to===mid),r=e.rect,br=back.rect,mb=maps[e.to];
+  for(const t of [0.1,0.5,0.9]){ const x=r[2]>r[3]?r[0]+t*r[2]:r[0]+r[2]/2,y=r[2]>r[3]?r[1]+r[3]/2:r[1]+t*r[3],a=E.crossing(mid,e,x,y);
+    const l0=E.toLonLat(A,x,y),l1=E.toLonLat(B,a[0],a[1]); assert(Math.abs(l0[0]-l1[0])<0.75&&Math.abs(l0[1]-l1[1])<0.75,mid+' to '+e.to+' keeps your real position');
+    assert(!(a[0]>=br[0]-E.SHIP_R&&a[0]<=br[0]+br[2]+E.SHIP_R&&a[1]>=br[1]-E.SHIP_R&&a[1]<=br[1]+br[3]+E.SHIP_R),mid+' to '+e.to+' lands clear of the way back');
+    const f=E.nearestFreePoint(mb,a[0],a[1]); assert(Math.hypot(f[0]-a[0],f[1]-a[1])<40,mid+' to '+e.to+' lands at sea');
+    for(const pid in D.PORTS) if(D.PORTS[pid].map===e.to){ const d=D.PORTS[pid].dock; assert(E.findPath(mb,f[0],f[1],d[0],d[1]),'from '+mid+' you can sail on to '+pid); } } }
+// patrols keep to the water
+for(const mid of seas) for(const pt of D.MAPS[mid].patrols){ const R=pt.route;
+  R.forEach(([x,y],i)=>{ const f=E.nearestFreePoint(maps[mid],x,y); assert(Math.hypot(f[0]-x,f[1]-y)<25,mid+' '+pt.kind+' patrol point '+i+' is at sea');
+    if(i) assert(E.findPath(maps[mid],R[i-1][0],R[i-1][1],x,y),mid+' '+pt.kind+' patrol leg '+i+' can be sailed'); }); }
+// no made-up names: every land named on the chart is a real place or a cay off one
+for(const mid of seas) for(const L of D.MAPS[mid].lands) assert(typeof L.name==='string'&&L.name.length>1,mid+' lands have names');
 
 // prices: every common strain grows somewhere and pays somewhere else; tips in the dialogue hold up
 const avg=f=>{let s=0;for(let d=1;d<=30;d++)s+=f(d);return s/30;};
@@ -107,7 +161,7 @@ w.Element.prototype.getBoundingClientRect=()=>({left:0,top:0,width:390,height:52
 w.fetch=()=>Promise.resolve({ok:true,json:()=>Promise.resolve({})});
 if(!w.HTMLDialogElement.prototype.showModal){ w.HTMLDialogElement.prototype.showModal=function(){this.setAttribute('open','');};
   w.HTMLDialogElement.prototype.close=function(){this.removeAttribute('open');this.dispatchEvent(new w.Event('close'));}; }
-for(const f of ['data.js','engine.js','events.js','qr.js','game.js']) w.eval(read(f));
+for(const f of ['coasts.js','data.js','engine.js','events.js','qr.js','game.js']) w.eval(read(f));
 const $=id=>w.document.getElementById(id),P=w.__pillage;
 assert(read('game.js').includes("window.directoryTrack('pillage-'"),'milestones go to the site visit counter');
 assert(/21\+|21 or older/.test(read('index.html')),'adults only');
@@ -212,6 +266,18 @@ assert(/still holds 100 doubloons and 2 bales/.test($('note-body').textContent),
 assert.equal(P.state.gold,250,'a fresh purse'); assert(!P.state.relics.spyglass,'relics went down with the ship'); assert.equal(P.legacy.base.gold,100,'the strongbox survived');
 // a voyage saved before ships could sink keeps gentle seas
 const old=JSON.parse(JSON.stringify(saved)); delete old.gentle; delete old.shot; P.begin(false,old); assert(P.state.gentle&&P.state.shot===12,'old saves sail gentle seas with twelve cannonballs');
+// a voyage saved on the old hand-drawn charts moves to the port it was nearest, with fresh fog and its treasure map redrawn
+const og=JSON.parse(JSON.stringify(saved)); delete og.flags.geo; Object.assign(og,{map:'straits',x:1130,y:305,docked:null,atBase:false,fog:{straits:'x'},tmap:{map:'windward',at:[300,300],name:'Mona',tier:1}});
+P.begin(false,og); { const G=P.state,nd=D.PORTS.nassau.dock,mona=chartXY('windward',18.08,-67.9);
+  assert(G.map==='straits'&&G.x===nd[0]&&G.y===nd[1]&&G.flags.geo,'an old save near Nassau is moved to Nassau on the real chart');
+  assert(G.tmap&&G.tmap.name==='Mona'&&Math.hypot(G.tmap.at[0]-mona[0],G.tmap.at[1]-mona[1])<20,'its treasure map is redrawn on the real Mona'); }
+// sailing distances follow the real map: nearer ports are shorter voyages, and none is shorter or far longer than the real distance
+const vlen=(a,b)=>P.voyage(a,b).len;
+assert(vlen('tortuga','petitgoave')<vlen('tortuga','portroyal')&&vlen('tortuga','portroyal')<vlen('tortuga','havana')&&vlen('tortuga','havana')<vlen('tortuga','barbados'),'from Tortuga, nearer ports are shorter voyages');
+assert(vlen('havana','nassau')<vlen('havana','staugustine')&&vlen('havana','staugustine')<vlen('havana','veracruz'),'and from Havana');
+assert(vlen('cartagena','portobelo')<vlen('cartagena','willemstad')&&vlen('portroyal','cartagena')<vlen('portroyal','barbados'),'and across the Caribbean');
+for(const a in REAL) for(const b in REAL) if(a!==b){ const s=Math.hypot((REAL[a][1]-REAL[b][1])*K,(mercY(REAL[a][0])-mercY(REAL[b][0]))*K),v=vlen(a,b);
+  assert(v>0.85*s&&v<2.2*s,a+' to '+b+' is about as far as it really is ('+v+' sailed, '+Math.round(s)+' straight)'); }
 // round five: an old voyage meets the nations of 1718 and starts neutral with everyone
 const o5=JSON.parse(JSON.stringify(saved)); for(const k of ['rep','marque','jobs','jobsTaken','jobsDone','bounties','news','lastDay','salute','seed']) delete o5[k]; delete o5.flags.r5;
 P.begin(false,o5); const T=P.state;
@@ -324,7 +390,7 @@ assert.equal(errors.length,0,String(errors));
     v.fetch=()=>Promise.resolve({ok:false}); if(!v.HTMLDialogElement.prototype.showModal){ v.HTMLDialogElement.prototype.showModal=function(){this.setAttribute('open','');};
       v.HTMLDialogElement.prototype.close=function(){this.removeAttribute('open');this.dispatchEvent(new v.Event('close'));}; }
     for(const k in (store||{})) v.localStorage.setItem(k,store[k]);
-    for(const f of ['data.js','engine.js','events.js','qr.js','game.js']) v.eval(read(f));
+    for(const f of ['coasts.js','data.js','engine.js','events.js','qr.js','game.js']) v.eval(read(f));
     return {v,P:v.__pillage,$:id=>v.document.getElementById(id),errs}; };
   const show=Date.UTC(2026,11,2,20);
   // Anne plays during the show, and her best voyage is on her own board

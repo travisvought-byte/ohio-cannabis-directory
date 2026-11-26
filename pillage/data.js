@@ -1,5 +1,5 @@
 /* Pillage the Reefer: the seas, ports, cargo and people.
-   Original characters and writing. Ports are real old Caribbean harbors; the strains, people and Smoke Cay are made up. */
+   Original characters and writing. Ports are real old Caribbean harbors and the coastlines are real (coasts.js); the strains and people are made up. */
 (function () {
   'use strict';
 
@@ -40,204 +40,54 @@
   };
   var COMMON = ['tangerine', 'purple', 'breath', 'haze', 'nectar', 'candy', 'pineapple', 'cloud', 'vanilla', 'fountain', 'rumcake'];
 
-  /* Land shapes, in map units. ribbon: a spine of [x, y, half-width]; blob: centre, radii, turn, seed; poly: an outline. */
+  /* The five seas. Their coastlines, crossings and sea lanes are real geography, generated into coasts.js and merged in below. */
   var MAPS = {
-    windward: {
-      name: 'The Windward Passage', short: 'Windward Passage', w: 1600, h: 1100,
-      blurb: 'Between Cuba, Hispaniola and Jamaica. Home waters.',
-      lands: [
-        {name: 'Cuba', label: [330, 286], ribbon: [[-140, 250, 76], [100, 262, 80], [320, 285, 72], [520, 318, 60], [680, 350, 42], [790, 378, 14]]},
-        {name: 'Hispaniola', label: [1300, 470], poly: [[880, 402], [945, 362], [1050, 332], [1200, 316], [1350, 320], [1500, 330], [1680, 340], [1680, 700], [1450, 690], [1250, 680], [1100, 692], [980, 702], [880, 708], [800, 712], [786, 690], [860, 662], [950, 642], [1010, 602], [1032, 540], [1000, 500], [950, 470], [905, 440]]},
-        {name: 'Gonâve', blob: [925, 548, 48, 15, -0.15, 3]},
-        {name: 'Tortuga', blob: [1000, 268, 58, 15, -0.05, 7]},
-        {name: 'Jamaica', label: [410, 745], ribbon: [[250, 745, 30], [330, 735, 40], [430, 745, 45], [520, 765, 38], [585, 785, 20]]},
-        {name: 'Navassa', blob: [705, 760, 14, 10, 0, 11]},
-        {name: 'Great Inagua', label: [930, 115], blob: [930, 115, 65, 28, 0.1, 5]},
-        {name: 'Little Inagua', blob: [1045, 92, 22, 12, 0.2, 6]},
-        {name: 'Caicos', blob: [1460, 90, 52, 22, -0.1, 9]},
-        {name: 'Île-à-Vache', blob: [960, 738, 14, 6, 0.1, 13]},
-        {name: 'Morant Cays', blob: [655, 880, 10, 5, 0.3, 15]},
-        {name: 'Pedro Cays', blob: [330, 885, 14, 5, -0.2, 17]},
-        {name: 'Cayman Brac', blob: [70, 640, 20, 6, 0.15, 19]}
-      ],
-      exits: [
-        {to: 'straits', rect: [0, 20, 36, 140], label: 'To the Florida Straits', at: [10, 80], arrive: [1530, 740]},
-        {to: 'main', rect: [60, 1066, 1480, 34], label: 'To the Spanish Main', at: [800, 1088], arrive: ['x', 60]},
-        {to: 'antilles', rect: [1564, 760, 36, 280], label: 'To the Lesser Antilles', at: [1590, 900], arrive: [70, 640]}
-      ],
-      arrive: {straits: [60, 90], main: ['x', 1030], antilles: [1530, 900]},
-      patrols: [
-        {kind: 'customs', route: [[700, 520], [880, 470], [1150, 250], [1350, 260], [880, 470], [620, 900], [300, 900], [460, 560]]},
-        {kind: 'merchant', route: [[100, 560], [700, 610], [1250, 840], [1550, 960], [700, 960], [120, 640]]}
-      ]
-    },
-    straits: {
-      name: 'The Florida Straits', short: 'Florida Straits', w: 1600, h: 1100,
-      blurb: 'Havana, Nassau and a thousand little cays.',
-      lands: [
-        {name: 'Cuba', label: [800, 900], ribbon: [[-140, 900, 62], [150, 880, 70], [380, 835, 60], [600, 815, 70], [850, 830, 78], [1100, 860, 80], [1350, 885, 80], [1720, 905, 80]]},
-        {name: 'Florida', label: [215, 150], poly: [[-60, -60], [430, -60], [445, 60], [430, 170], [395, 265], [345, 330], [280, 352], [200, 330], [120, 265], [40, 225], [-60, 215]]},
-        {name: 'The Keys', blob: [305, 386, 15, 5, 0.6, 21]},
-        {name: 'The Keys', blob: [262, 412, 17, 5, 0.35, 22]},
-        {name: 'The Keys', blob: [215, 432, 16, 5, 0.2, 23]},
-        {name: 'The Keys', blob: [168, 446, 14, 4, 0.1, 24]},
-        {name: 'The Keys', blob: [122, 454, 12, 4, 0, 25]},
-        {name: 'Dry Tortugas', blob: [52, 480, 10, 7, 0, 26]},
-        {name: 'Andros', label: [1000, 450], blob: [1000, 450, 55, 125, 0.12, 31]},
-        {name: 'New Providence', blob: [1135, 335, 38, 15, 0, 33]},
-        {name: 'Eleuthera', ribbon: [[1225, 250, 9], [1270, 300, 12], [1305, 370, 11], [1315, 450, 9], [1300, 520, 7]]},
-        {name: 'Grand Bahama', ribbon: [[690, 140, 14], [800, 150, 18], [920, 140, 16], [1000, 118, 10]]},
-        {name: 'Abaco', blob: [1125, 140, 35, 70, 0.3, 41]},
-        {name: 'Bimini', blob: [700, 330, 9, 14, 0, 43]},
-        {name: 'Cay Sal', blob: [690, 620, 16, 10, 0, 45]},
-        {name: 'Exumas', blob: [1210, 560, 10, 6, 0.5, 46]},
-        {name: 'Exumas', blob: [1240, 600, 12, 6, 0.6, 47]},
-        {name: 'Exumas', blob: [1270, 640, 10, 5, 0.6, 48]},
-        {name: 'Long Island', ribbon: [[1400, 500, 8], [1430, 580, 10], [1460, 650, 7]]}
-      ],
-      exits: [
-        {to: 'windward', rect: [1564, 690, 36, 110], label: 'To the Windward Passage', at: [1590, 745], arrive: [60, 90]},
-        {to: 'gulf', rect: [0, 560, 36, 220], label: 'To the Gulf of Mexico', at: [10, 670], arrive: [1530, 610]}
-      ],
-      arrive: {windward: [1530, 740], gulf: [60, 670]},
-      patrols: [
-        {kind: 'customs', route: [[300, 700], [700, 700], [620, 470], [380, 560]]},
-        {kind: 'customs', route: [[1200, 400], [1380, 700], [900, 720], [860, 300]]},
-        {kind: 'merchant', route: [[100, 620], [600, 700], [1000, 690], [1500, 760], [1100, 250], [500, 450]]}
-      ]
-    },
-    main: {
-      name: 'The Spanish Main', short: 'Spanish Main', w: 1600, h: 1100,
-      blurb: 'Old treasure ports along the South American coast.',
-      lands: [
-        {name: 'South America', label: [1150, 900], poly: [[-60, 1160], [-60, 700], [70, 712], [190, 755], [290, 798], [370, 858], [425, 832], [505, 792], [590, 742], [690, 700], [810, 640], [895, 560], [945, 590], [960, 700], [985, 805], [1055, 800], [1075, 705], [1125, 640], [1175, 700], [1300, 722], [1450, 705], [1660, 722], [1660, 1160]]},
-        {name: 'Curaçao', blob: [1190, 470, 44, 13, -0.35, 51]},
-        {name: 'Aruba', blob: [1060, 505, 22, 8, -0.4, 53]},
-        {name: 'Bonaire', blob: [1300, 445, 24, 11, 0.5, 55]},
-        {name: 'Providencia', blob: [110, 250, 13, 16, 0, 57]},
-        {name: 'San Andrés', blob: [70, 362, 8, 14, 0, 59]},
-        {name: 'Rosario Islands', blob: [440, 735, 12, 5, 0.2, 61]},
-        {name: 'Smoke Cay', label: [760, 300], blob: [760, 300, 34, 22, 0.3, 63], haze: true},
-        {name: 'Margarita', blob: [1555, 560, 40, 16, 0, 65]},
-        {name: 'Los Roques', blob: [1440, 470, 14, 6, 0.3, 67]},
-        {name: 'Serrana Bank', blob: [330, 150, 15, 6, -0.3, 69]},
-        {name: 'Roncador', blob: [230, 330, 8, 5, 0, 71]},
-        {name: 'Isla de Aves', blob: [1480, 200, 9, 5, 0.4, 73]}
-      ],
-      exits: [
-        {to: 'windward', rect: [60, 0, 1480, 34], label: 'To the Windward Passage', at: [800, 12], arrive: ['x', 1030]}
-      ],
-      arrive: {windward: ['x', 60]},
-      patrols: [
-        {kind: 'customs', route: [[300, 650], [700, 600], [1000, 420], [1300, 560], [700, 420]]},
-        {kind: 'merchant', route: [[100, 500], [600, 520], [1100, 380], [1500, 640], [850, 480], [300, 420]]}
-      ]
-    },
-    gulf: {
-      name: 'The Gulf of Mexico', short: 'Gulf of Mexico', w: 1600, h: 1100,
-      blurb: 'Wide open water west of Cuba, with Veracruz at the far end.',
-      lands: [
-        {name: 'Mexico', label: [470, 1010], poly: [[-60, -60], [210, -60], [200, 100], [180, 260], [178, 430], [195, 590], [232, 710], [285, 800], [350, 868], [440, 915], [560, 945], [700, 952], [820, 935], [880, 880], [915, 790], [955, 712], [1020, 665], [1110, 640], [1190, 648], [1240, 700], [1262, 800], [1285, 920], [1310, 1160], [-60, 1160]]},
-        {name: 'The Gulf Coast', label: [720, 30], poly: [[150, -60], [1420, -60], [1400, 20], [1250, 52], [1080, 40], [900, 70], [720, 58], [540, 82], [380, 70], [250, 110], [190, 150]]},
-        {name: 'Florida', label: [1540, 160], poly: [[1380, -60], [1660, -60], [1660, 400], [1600, 392], [1545, 330], [1500, 240], [1455, 140], [1410, 60]]},
-        {name: 'Cuba', label: [1530, 950], ribbon: [[1330, 1010, 34], [1450, 960, 50], [1580, 925, 58], [1720, 905, 62]]},
-        {name: 'Isla Mujeres', blob: [1292, 655, 6, 11, 0.3, 81]},
-        {name: 'Alacranes Reef', blob: [1030, 520, 14, 7, 0.2, 83]},
-        {name: 'Cayo Arcas', blob: [860, 700, 7, 5, 0, 85]},
-        {name: 'Isla de Sacrificios', blob: [410, 822, 9, 5, 0.3, 87]},
-        {name: 'Isla Lobos', blob: [300, 600, 7, 5, 0, 89]}
-      ],
-      exits: [
-        {to: 'straits', rect: [1564, 470, 36, 280], label: 'To the Florida Straits', at: [1590, 610], arrive: [60, 670]}
-      ],
-      arrive: {straits: [1530, 610]},
-      patrols: [
-        {kind: 'customs', route: [[700, 400], [1100, 300], [1300, 500], [900, 560], [500, 500]]},
-        {kind: 'merchant', route: [[400, 300], [1000, 200], [1450, 560], [1000, 560], [500, 700], [350, 450]]}
-      ]
-    },
-    antilles: {
-      name: 'The Lesser Antilles', short: 'Lesser Antilles', w: 1600, h: 1100,
-      blurb: 'A long arc of green islands, and Barbados out on its own in the trade winds.',
-      lands: [
-        {name: 'Puerto Rico', label: [140, 168], ribbon: [[-80, 170, 40], [80, 165, 50], [230, 175, 46], [330, 190, 30], [370, 198, 12]]},
-        {name: 'Vieques', blob: [420, 215, 14, 5, 0, 91]},
-        {name: 'The Virgin Islands', blob: [470, 180, 10, 5, 0, 92]},
-        {name: 'The Virgin Islands', blob: [520, 170, 10, 5, 0, 93]},
-        {name: 'The Virgin Islands', blob: [480, 300, 16, 6, 0, 94]},
-        {name: 'Anguilla', blob: [700, 110, 16, 5, 0.4, 95]},
-        {name: 'Saint Martin', blob: [712, 150, 11, 9, 0, 96]},
-        {name: 'Saba', blob: [672, 205, 6, 6, 0, 97]},
-        {name: 'St. Eustatius', blob: [705, 232, 6, 6, 0, 98]},
-        {name: 'St. Kitts', blob: [745, 262, 15, 7, 0.7, 99]},
-        {name: 'Nevis', blob: [772, 290, 8, 8, 0, 100]},
-        {name: 'Barbuda', blob: [905, 165, 15, 12, 0, 101]},
-        {name: 'Antigua', label: [905, 255], blob: [905, 255, 20, 17, 0.2, 102]},
-        {name: 'Montserrat', blob: [800, 325, 7, 10, 0, 103]},
-        {name: 'Guadeloupe', label: [865, 395], blob: [865, 395, 32, 22, 0.2, 104]},
-        {name: 'Marie-Galante', blob: [925, 440, 10, 9, 0, 105]},
-        {name: 'Dominica', label: [868, 505], blob: [868, 505, 12, 24, 0.1, 106]},
-        {name: 'Martinique', label: [902, 615], blob: [902, 615, 17, 28, 0.25, 107]},
-        {name: 'St. Lucia', label: [935, 720], blob: [935, 720, 11, 21, 0.1, 108]},
-        {name: 'St. Vincent', blob: [925, 810, 9, 15, 0.1, 109]},
-        {name: 'The Grenadines', blob: [940, 850, 5, 4, 0, 110]},
-        {name: 'Tobago Cays', blob: [958, 882, 6, 4, 0, 111]},
-        {name: 'The Grenadines', blob: [972, 915, 6, 4, 0, 112]},
-        {name: 'Grenada', label: [985, 975], blob: [985, 975, 12, 17, 0.1, 113]},
-        {name: 'Barbados', label: [1400, 760], blob: [1400, 760, 19, 27, 0.15, 114]},
-        {name: 'Tobago', label: [1190, 1020], blob: [1190, 1020, 22, 8, -0.4, 115]},
-        {name: 'Trinidad', label: [1100, 1085], poly: [[960, 1160], [990, 1075], [1060, 1060], [1170, 1072], [1230, 1100], [1240, 1160]]}
-      ],
-      exits: [
-        {to: 'windward', rect: [0, 360, 36, 620], label: 'To the Windward Passage', at: [10, 640], arrive: [1530, 900]}
-      ],
-      arrive: {windward: [70, 640]},
-      patrols: [
-        {kind: 'customs', route: [[600, 500], [1100, 600], [1250, 850], [700, 900], [400, 650]]},
-        {kind: 'merchant', route: [[150, 700], [700, 750], [1300, 600], [1500, 900], [1050, 950], [300, 900]]}
-      ]
-    }
+    windward: {name: 'The Windward Passage', short: 'Windward Passage', blurb: 'Between Cuba, Hispaniola and Jamaica. Home waters.'},
+    straits: {name: 'The Florida Straits', short: 'Florida Straits', blurb: 'Havana, Nassau and a thousand little cays.'},
+    main: {name: 'The Spanish Main', short: 'Spanish Main', blurb: 'Old treasure ports along the coast from Panama to Venezuela.'},
+    gulf: {name: 'The Gulf of Mexico', short: 'Gulf of Mexico', blurb: 'Wide open water west of Cuba, with Veracruz at the far end.'},
+    antilles: {name: 'The Lesser Antilles', short: 'Lesser Antilles', blurb: 'A long arc of green islands, and Barbados out on its own in the trade winds.'}
   };
 
-  /* Ports. dock: where the ship ties up (water); town: where the houses are drawn (land). */
+  /* Ports. Where the ship ties up (dock, in the water) and where the houses are drawn (town, on land) come from coasts.js. */
   var PORTS = {
-    tortuga:    {name: 'Tortuga', map: 'windward', dock: [1000, 302], town: [1000, 272], sells: ['tangerine', 'breath', 'purple', 'brick'], yard: true, who: 'ruthie',
+    tortuga:    {name: 'Tortuga', map: 'windward', sells: ['tangerine', 'breath', 'purple', 'brick'], yard: true, who: 'ruthie',
                  blurb: 'A rocky little island full of hammocks, gossip and suspicious-smelling smoke.'},
-    portroyal:  {name: 'Port Royal', map: 'windward', dock: [545, 832], town: [532, 798], sells: ['purple', 'tangerine', 'breath', 'brick'], yard: true, who: 'percival',
+    portroyal:  {name: 'Port Royal', map: 'windward', sells: ['purple', 'tangerine', 'breath', 'brick'], yard: true, who: 'percival',
                  blurb: 'The richest, rowdiest harbor in the Caribbean. The wigs are very tall here.'},
-    petitgoave: {name: 'Petit-Goâve', map: 'windward', dock: [985, 598], town: [994, 630], sells: ['breath', 'tangerine', 'pineapple', 'hash'], yard: false, who: 'toussaint',
+    petitgoave: {name: 'Petit-Goâve', map: 'windward', sells: ['breath', 'tangerine', 'pineapple', 'hash'], yard: false, who: 'toussaint',
                  blurb: 'A quiet old buccaneer harbor where everyone is mending a net or pretending to.'},
-    havana:     {name: 'Havana', map: 'straits', dock: [385, 746], town: [385, 792], sells: ['haze', 'nectar', 'fountain', 'brick'], yard: true, who: 'catalina',
+    havana:     {name: 'Havana', map: 'straits', sells: ['haze', 'nectar', 'fountain', 'brick'], yard: true, who: 'catalina',
                  blurb: 'Grand walls, grand ships and the finest rollers on any sea.'},
-    nassau:     {name: 'Nassau', map: 'straits', dock: [1132, 300], town: [1135, 334], sells: ['nectar', 'haze', 'tangerine', 'biscuits', 'brick'], yard: false, who: 'mildew',
+    nassau:     {name: 'Nassau', map: 'straits', sells: ['nectar', 'haze', 'tangerine', 'biscuits', 'brick'], yard: false, who: 'mildew',
                  blurb: 'A pirate republic of palm trees, hammocks and very relaxed rules.'},
-    cartagena:  {name: 'Cartagena', map: 'main', dock: [500, 758], town: [508, 806], sells: ['candy', 'pineapple', 'cloud'], yard: true, who: 'quill',
+    cartagena:  {name: 'Cartagena', map: 'main', sells: ['candy', 'pineapple', 'cloud'], yard: true, who: 'quill',
                  blurb: 'A walled city of balconies, bells and one very busy botanist.'},
-    portobelo:  {name: 'Portobelo', map: 'main', dock: [180, 724], town: [182, 770], sells: ['pineapple', 'candy', 'breath', 'brick'], yard: false, who: 'prudence',
+    portobelo:  {name: 'Portobelo', map: 'main', sells: ['pineapple', 'candy', 'breath', 'brick'], yard: false, who: 'prudence',
                  blurb: 'Sleepy treasure port. Somebody important is on holiday here.'},
-    willemstad: {name: 'Willemstad', map: 'main', dock: [1196, 502], town: [1192, 472], sells: ['cloud', 'candy', 'nectar', 'rosin'], yard: true, who: 'ines',
+    willemstad: {name: 'Willemstad', map: 'main', sells: ['cloud', 'candy', 'nectar', 'rosin'], yard: true, who: 'ines',
                  blurb: 'Colorful houses, a floating bridge and a famous captain in retirement.'},
-    staugustine: {name: 'St. Augustine', map: 'straits', dock: [482, 75], town: [418, 52], sells: ['fountain', 'nectar', 'tangerine'], yard: false, who: 'bartholomew',
+    staugustine: {name: 'St. Augustine', map: 'straits', sells: ['fountain', 'nectar', 'tangerine'], yard: false, who: 'bartholomew',
                  blurb: 'The oldest town in Florida. Some of the residents feel it.'},
-    veracruz:   {name: 'Veracruz', map: 'gulf', dock: [322, 790], town: [266, 820], sells: ['vanilla', 'haze', 'fountain', 'brick'], yard: true, who: 'esperanza',
+    veracruz:   {name: 'Veracruz', map: 'gulf', sells: ['vanilla', 'haze', 'fountain', 'brick'], yard: true, who: 'esperanza',
                  blurb: 'A busy old harbor that smells of vanilla, tar and very long lunches.'},
-    barbados:   {name: 'Barbados', map: 'antilles', dock: [1362, 800], town: [1398, 768], sells: ['rumcake', 'cloud', 'pineapple', 'brick'], yard: true, who: 'clementine',
+    barbados:   {name: 'Barbados', map: 'antilles', sells: ['rumcake', 'cloud', 'pineapple', 'brick'], yard: true, who: 'clementine',
                  blurb: 'Bridgetown, on Carlisle Bay. Flying fish, cricket and a rum shop that never seems to close.'}
   };
 
   /* Buried treasure. A rumor marks the spot on your chart; the Emerald Bale needs all three map pieces. */
   var STASHES = {
-    s1: {name: 'Navassa', map: 'windward', at: [705, 760], piece: true, gold: 150, loot: {mermaid: 3},
+    s1: {name: 'Navassa', map: 'windward', piece: true, gold: 150, loot: {mermaid: 3},
          text: 'You dig past three goats and one very offended crab. Clunk! A chest! Inside: the first piece of Captain Featherstone’s map, 150 doubloons and 3 bales of Mermaid’s Kiss.'},
-    s2: {name: 'the Dry Tortugas', map: 'straits', at: [52, 480], piece: true, gold: 250, loot: {kraken: 1},
+    s2: {name: 'the Dry Tortugas', map: 'straits', piece: true, gold: 250, loot: {kraken: 1},
          text: 'Under a palm tree shaped like a question mark you find the second piece of the map, 250 doubloons and a bale of Kraken Kush.'},
-    s3: {name: 'Providencia', map: 'main', at: [110, 250], piece: true, gold: 300, loot: {kraken: 2},
+    s3: {name: 'Providencia', map: 'main', piece: true, gold: 300, loot: {kraken: 2},
          text: 'Behind a rock that looks like a sleeping landlord: the third piece of the map, 300 doubloons and 2 bales of Kraken Kush.'},
-    alacranes: {name: 'the Alacranes Reef', map: 'gulf', at: [1030, 520], gold: 300, loot: {mermaid: 2},
+    alacranes: {name: 'the Alacranes Reef', map: 'gulf', gold: 300, loot: {mermaid: 2},
          text: 'A very rude seagull watches you dig. Clunk! A little chest: 300 doubloons and 2 bales of Mermaid’s Kiss. The seagull takes one biscuit as tax.'},
-    tobagocays: {name: 'the Tobago Cays', map: 'antilles', at: [958, 882], gold: 350, loot: {kraken: 1},
+    tobagocays: {name: 'the Tobago Cays', map: 'antilles', gold: 350, loot: {kraken: 1},
          text: 'Between two turtles and a very confused pelican you find a chest: 350 doubloons and a bale of Kraken Kush.'},
-    emerald: {name: 'Smoke Cay', map: 'main', at: [760, 300], needs: 3, gold: 2000, loot: {},
+    emerald: {name: 'Serrana Bank', map: 'main', needs: 3, gold: 2000, loot: {},
          text: 'The haze parts. You dig, and dig, and… there it is: the Emerald Bale, wrapped in old sailcloth and smelling like every good day you ever had. Under it, 2,000 doubloons and a note in Ines’s hand: “Share some.”'}
   };
 
@@ -357,7 +207,7 @@
         {label: 'Farewell, Captain.', end: true}]},
       why: {text: 'To see if anyone was worth it. Also, I was very relaxed that evening and it seemed like a wonderful idea.', options: [{label: 'Fair.', next: 'start'}]},
       pieces: {text: 'One on Navassa, one on the Dry Tortugas, one on Providencia. Bring them together and look for the cay that’s always wrapped in smoke.', do: 'hint:s1,hint:s2,hint:s3', options: [{label: 'Thank you, Captain.', next: 'start'}]},
-      three: {text: 'All three! Then you know where to go: Smoke Cay, out in the open sea north of the Main. Follow the haze. The Emerald Bale is yours if you can dig it up.', options: [{label: 'I’m on my way.', next: 'start'}]},
+      three: {text: 'All three! Then you know where to go: Serrana Bank, a few lonely cays out in the open sea north of the Main. Follow the haze. The Emerald Bale is yours if you can dig it up.', options: [{label: 'I’m on my way.', next: 'start'}]},
       won: {text: 'Ha! Then you’re a Legend of the Reefer now. Try not to let it go to your head. It went to mine for about forty years.', options: [{label: 'I’ll try.', next: 'start'}]}
     },
     bartholomew: {
@@ -468,7 +318,7 @@
     'The note reads: “Count the guns before you pick a fight. A frigate will send a sloop to the bottom. When the odds turn, run, pay or strike your colours.”',
     'The note reads: “Out of cannonballs? Lob a bale of Brick Weed. It hits softer, but their crew gets so high they can’t aim.”',
     'The note reads: “The sea keeps whatever sinks. Old Toussaint in Petit-Goâve rents out a cave where the sea can’t reach.”',
-    'The note reads: “Whoever finds this: the haze over Smoke Cay never lifts. Signed, someone who got lost there for a week.”',
+    'The note reads: “Whoever finds this: the haze over Serrana Bank never lifts. Signed, someone who got lost there for a week.”',
     'The note reads: “Pressed hash from Petit-Goâve fetches a fortune in Havana. Write down every price you see. Your ledger is your best friend.”',
     'The note reads: “Every strain gives a different buzz. Smoke a bale of Cartagena Candy before a tricky bit of business.”',
     'The note reads: “Every rope and sail on this ship is hemp. The word canvas comes from cannabis.” True, as it happens.',
@@ -515,7 +365,7 @@
   var PARROT = 'Admiral Biscuit';
 
   /* Your hideout: a cave on Île-à-Vache. What you leave there survives even if your ship goes down. */
-  var HIDEOUT = {name: 'Île-à-Vache', map: 'windward', at: [960, 738], dock: [960, 762], price: 500,
+  var HIDEOUT = {name: 'Île-à-Vache', map: 'windward', price: 500,
     caps: [40, 90, 160], capCost: [900, 2400]};
 
   /* Relics: one-of-a-kind finds that each goal can earn. They belong to the captain and go down with the ship. */
@@ -680,6 +530,13 @@
     url: 'https://the-reefer.com/pillage/',
     blurb: 'For MJBizCon in Las Vegas, December 1 to 4. Show another player your score’s QR code, or send them the link, and you land on each other’s boards. Your best voyage until December 6 counts.'};
 
+  /* Real geography: every sea's coastline, crossings and sea lanes, and where each port, dig site and the hideout sit. */
+  var C = window.PILLAGE_COASTS;
+  Object.keys(MAPS).forEach(function (mid) { var sea = C.seas[mid]; for (var k in sea) MAPS[mid][k] = sea[k]; });
+  Object.keys(PORTS).forEach(function (pid) { var p = C.ports[pid]; PORTS[pid].dock = p.dock; PORTS[pid].town = p.town; PORTS[pid].ll = p.ll; });
+  Object.keys(STASHES).forEach(function (sid) { STASHES[sid].at = C.stashes[sid].at; STASHES[sid].ll = C.stashes[sid].ll; });
+  HIDEOUT.at = C.hideout.at; HIDEOUT.dock = C.hideout.dock; HIDEOUT.ll = C.hideout.ll;
+
   window.PILLAGE_DATA = {GOODS: GOODS, COMMON: COMMON, MAPS: MAPS, PORTS: PORTS, STASHES: STASHES, PEOPLE: PEOPLE,
     QUESTS: QUESTS, UPGRADES: UPGRADES, LEVELS: LEVELS, SKILLS: SKILLS, SKILL_MAX: SKILL_MAX, SEA_TIER: SEA_TIER,
     PIRATE_COUNT: PIRATE_COUNT, PIRATE_SHIPS: PIRATE_SHIPS, PIRATE_CAPTAINS: PIRATE_CAPTAINS, BOSS: BOSS,
@@ -687,5 +544,5 @@
     SHIP_CLASS: SHIP_CLASS, HIDEOUT: HIDEOUT, RELICS: RELICS, SAILS: SAILS, FLAGS: FLAGS,
     NATIONS: NATIONS, NATION_ORDER: NATION_ORDER, WAR: WAR, WAR_NOTE: WAR_NOTE, SEA_LAW: SEA_LAW, SEA_NAVY: SEA_NAVY, SEA_TRADE: SEA_TRADE,
     NAVY_CLASS: NAVY_CLASS, STAND: STAND, JOB_CARGO: JOB_CARGO, NEWS: NEWS, UNLOCK: UNLOCK, FIRE_PORTS: FIRE_PORTS, FIRESHIP_NOTE: FIRESHIP_NOTE,
-    GROW: GROW, GENES: GENES, CROSSES: CROSSES, GROW_LESSONS: GROW_LESSONS, BOARD: BOARD};
+    GROW: GROW, GENES: GENES, CROSSES: CROSSES, GROW_LESSONS: GROW_LESSONS, BOARD: BOARD, SCALE: C.k};
 })();

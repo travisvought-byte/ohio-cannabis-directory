@@ -117,6 +117,53 @@
     }
     return inside;
   }
+  // A real coastline has hundreds of corners, so its edges are filed by row and by square: a check then only
+  // looks at the edges nearby. Small islands are quick enough without.
+  var IX = 40;
+  function indexPoly(p) {
+    var pts = p.pts, n = pts.length;
+    if (n < 150) return;
+    var rows = {}, cells = {};
+    for (var i = 0, j = n - 1; i < n; j = i++) {
+      var a = pts[j], b = pts[i];
+      var r0 = Math.floor(Math.min(a[1], b[1]) / IX), r1 = Math.floor(Math.max(a[1], b[1]) / IX);
+      var c0 = Math.floor(Math.min(a[0], b[0]) / IX), c1 = Math.floor(Math.max(a[0], b[0]) / IX);
+      for (var r = r0; r <= r1; r++) {
+        (rows[r] = rows[r] || []).push(j);
+        for (var c = c0; c <= c1; c++) (cells[r + ',' + c] = cells[r + ',' + c] || []).push(j);
+      }
+    }
+    p.rows = rows; p.cells = cells;
+  }
+  function inPoly(p, x, y) {
+    if (!p.rows) return pip(p.pts, x, y);
+    var list = p.rows[Math.floor(y / IX)], pts = p.pts, n = pts.length, inside = false;
+    if (!list) return false;
+    for (var k = 0; k < list.length; k++) {
+      var j = list[k], i = (j + 1) % n, xi = pts[i][0], yi = pts[i][1], xj = pts[j][0], yj = pts[j][1];
+      if (((yi > y) !== (yj > y)) && (x < (xj - xi) * (y - yi) / (yj - yi) + xi)) inside = !inside;
+    }
+    return inside;
+  }
+  function nearEdge(p, x, y, r) {
+    var pts = p.pts, n = pts.length;
+    if (!p.cells) {
+      for (var k = 0, j = n - 1; k < n; j = k++) if (segDist(x, y, pts[j][0], pts[j][1], pts[k][0], pts[k][1]) < r) return true;
+      return false;
+    }
+    var r0 = Math.floor((y - r) / IX), r1 = Math.floor((y + r) / IX), c0 = Math.floor((x - r) / IX), c1 = Math.floor((x + r) / IX);
+    for (var rr = r0; rr <= r1; rr++) {
+      for (var cc = c0; cc <= c1; cc++) {
+        var list = p.cells[rr + ',' + cc];
+        if (!list) continue;
+        for (var q = 0; q < list.length; q++) {
+          var a = list[q], b = (a + 1) % n;
+          if (segDist(x, y, pts[a][0], pts[a][1], pts[b][0], pts[b][1]) < r) return true;
+        }
+      }
+    }
+    return false;
+  }
   function segDist(px, py, ax, ay, bx, by) {
     var dx = bx - ax, dy = by - ay, l = dx * dx + dy * dy, t = l ? ((px - ax) * dx + (py - ay) * dy) / l : 0;
     t = clamp(t, 0, 1);
@@ -126,7 +173,7 @@
     for (var i = 0; i < m.polys.length; i++) {
       var p = m.polys[i], b = p.bb;
       if (x < b.x0 || x > b.x1 || y < b.y0 || y > b.y1) continue;
-      if (pip(p.pts, x, y)) return p;
+      if (inPoly(p, x, y)) return p;
     }
     return null;
   }
@@ -135,9 +182,7 @@
     for (var i = 0; i < m.polys.length; i++) {
       var p = m.polys[i], b = p.bb;
       if (x < b.x0 - r || x > b.x1 + r || y < b.y0 - r || y > b.y1 + r) continue;
-      for (var k = 0, j = p.pts.length - 1; k < p.pts.length; j = k++) {
-        if (segDist(x, y, p.pts[j][0], p.pts[j][1], p.pts[k][0], p.pts[k][1]) < r) return true;
-      }
+      if (nearEdge(p, x, y, r)) return true;
     }
     return false;
   }
@@ -267,14 +312,40 @@
     if (m.ready) return m;
     m.id = id;
     m.polys = m.lands.map(function (L, i) {
-      var pts = L.ribbon ? ribbon(L.ribbon, 101 + i + hashStr(id) % 97) : L.blob ? blob(L.blob) : chaikin(L.poly, 2);
+      // coast: a real outline, used as it is. blob: a small island drawn round. ribbon and poly: hand-drawn shapes.
+      var pts = L.coast ? L.coast : L.ribbon ? ribbon(L.ribbon, 101 + i + hashStr(id) % 97) : L.blob ? blob(L.blob) : chaikin(L.poly, 2);
       var poly = {pts: pts, bb: bbox(pts), land: L, c: centroid(pts)};
+      indexPoly(poly);
       L.shape = poly;
       return poly;
     });
     buildNav(m);
     m.ready = true;
     return m;
+  }
+
+  /* ---------- real positions: every sea is a Mercator window onto the Caribbean, all at one scale ---------- */
+  function merc(lat) { return Math.log(Math.tan(Math.PI / 4 + lat * Math.PI / 360)) * 180 / Math.PI; }
+  function unmerc(y) { return (2 * Math.atan(Math.exp(y * Math.PI / 180)) - Math.PI / 2) * 180 / Math.PI; }
+  function scaleOf(m) { return m.w / (m.geo.east - m.geo.west); }
+  // [longitude, latitude] of a point on a sea's chart, and back.
+  function toLonLat(m, x, y) { var k = scaleOf(m); return [m.geo.west + x / k, unmerc(merc(m.geo.north) - y / k)]; }
+  function fromLonLat(m, lon, lat) { var k = scaleOf(m); return [(lon - m.geo.west) * k, (merc(m.geo.north) - merc(lat)) * k]; }
+  // Where a ship that sails out through an exit at (x, y) comes in on the next sea: the same real spot, just inside
+  // that sea's own exit back, so it doesn't sail straight back out.
+  function crossing(fromId, exit, x, y) {
+    var A = D.MAPS[fromId], B = D.MAPS[exit.to], ll = toLonLat(A, x, y), p = fromLonLat(B, ll[0], ll[1]);
+    var back = B.exits.filter(function (e) { return e.to === fromId; })[0];
+    if (!back) return [B.w / 2, B.h / 2];
+    var r = back.rect, IN = 30;
+    if (r[2] > r[3]) {
+      p[0] = clamp(p[0], r[0] + 40, r[0] + r[2] - 40);
+      p[1] = r[1] < B.h / 2 ? r[1] + r[3] + IN : r[1] - IN;
+    } else {
+      p[1] = clamp(p[1], r[1] + 20, r[1] + r[3] - 20);
+      p[0] = r[0] < B.w / 2 ? r[0] + r[2] + IN : r[0] - IN;
+    }
+    return p;
   }
 
   /* ---------- prices ---------- */
@@ -387,6 +458,7 @@
     CELL: CELL, MARGIN: MARGIN, SHIP_R: SHIP_R,
     hashStr: hashStr, rng: rng, rand01: rand01, clamp: clamp,
     prepareMap: prepareMap, landAt: landAt, nearLand: nearLand, shipBlocked: shipBlocked,
+    toLonLat: toLonLat, fromLonLat: fromLonLat, crossing: crossing,
     cellIdx: cellIdx, cellCenter: cellCenter, nearestFreePoint: nearestFreePoint, walkable: walkable, findPath: findPath,
     dayOf: dayOf, buyPrice: buyPrice, sellPrice: sellPrice, wanted: wanted,
     levelOf: levelOf, stats: stats, foe: foe, hit: hit, boardChance: boardChance, fleeChance: fleeChance, danger: danger,

@@ -430,6 +430,20 @@
     b.atBase = !!(b.atBase && legacy.base);
     if (b.atBase) b.docked = null;
     if (b.tmap && !(MAPS[b.tmap.map] && b.tmap.at)) b.tmap = null;
+    // A voyage saved before the charts followed the real coastlines (November 26, 2026). Its positions point at the
+    // old hand-drawn shapes, so the ship moves to the port it was nearest, the fog starts fresh (ports you know stay
+    // marked) and a treasure map is redrawn on the new chart.
+    if (!b.flags.geo) {
+      b.flags.geo = 1;
+      b.fog = {};
+      var OLD = {tortuga: [1000, 302], portroyal: [545, 832], petitgoave: [985, 598], havana: [385, 746], nassau: [1132, 300], staugustine: [482, 75],
+        cartagena: [500, 758], portobelo: [180, 724], willemstad: [1196, 502], veracruz: [322, 790], barbados: [1362, 800]};
+      var at = b.docked ? PORTS[b.docked].dock : b.atBase ? HIDE.dock : null, bd = Infinity;
+      if (!at) for (var op in OLD) if (PORTS[op].map === b.map && Math.hypot(OLD[op][0] - b.x, OLD[op][1] - b.y) < bd) { bd = Math.hypot(OLD[op][0] - b.x, OLD[op][1] - b.y); at = PORTS[op].dock; }
+      if (!at) { b.map = 'windward'; at = PORTS.tortuga.dock; }
+      b.x = at[0]; b.y = at[1];
+      if (b.tmap) b.tmap.redraw = 1;
+    }
     if (b.buff && !(SMOKE[b.buff.g] && b.buff.until > 0)) b.buff = null;
     b.grit = clamp(Math.floor(b.grit) || 0, 0, 3);
     if (typeof b.seen !== 'object' || Array.isArray(b.seen)) b.seen = {};
@@ -465,15 +479,21 @@
     var m = E.prepareMap(mid);
     if (!m.draw) {
       m.draw = m.polys.map(function (p) {
-        var path = new Path2D(), inner = new Path2D(), c = p.c;
+        var path = new Path2D(), inner = new Path2D(), c = p.c, L = p.land;
         p.pts.forEach(function (q, i) {
           if (i) path.lineTo(q[0], q[1]); else path.moveTo(q[0], q[1]);
+          if (L.coast) return;
           var x = c[0] + (q[0] - c[0]) * 0.55, y = c[1] + (q[1] - c[1]) * 0.55;
           if (i) inner.lineTo(x, y); else inner.moveTo(x, y);
         });
         path.closePath(); inner.closePath();
+        // A real coastline brings its own darker inland, a set distance in from the shore.
+        if (L.coast) {
+          (L.inner || []).forEach(function (r) { r.forEach(function (q, i) { if (i) inner.lineTo(q[0], q[1]); else inner.moveTo(q[0], q[1]); }); inner.closePath(); });
+          return {path: path, inner: L.inner ? inner : null, land: L};
+        }
         var size = Math.min(p.bb.x1 - p.bb.x0, p.bb.y1 - p.bb.y0);
-        return {path: path, inner: size > 36 ? inner : null, land: p.land};
+        return {path: path, inner: size > 36 ? inner : null, land: L};
       });
     }
     if (!npcs[mid]) {
@@ -647,9 +667,9 @@
   function transition(exit, goal) {
     goal = goal || (auto && auto.goal);
     auto = null;
-    var m = enterMap(exit.to), a = exit.arrive;
-    var x = a[0] === 'x' ? clamp(state.x, 80, m.w - 80) : a[0];
-    var f = E.nearestFreePoint(m, x, a[1]);
+    // You come out on the next sea at the same real spot you sailed off this one.
+    var a = E.crossing(state.map, exit, state.x, state.y), m = enterMap(exit.to);
+    var f = E.nearestFreePoint(m, a[0], a[1]);
     state.map = exit.to; state.x = f[0]; state.y = f[1];
     state.flags['seen_' + exit.to] = 1;
     ship.vx *= 0.5; ship.vy *= 0.5; wake = [];
@@ -923,7 +943,24 @@
   // A treasure map points at a small island in a sea you know. One map at a time keeps it simple.
   function giveMap() {
     if (state.tmap) return null;
-    var mid = Math.random() < 0.6 ? state.map : pick(Object.keys(MAPS).filter(seenSea)), m = enterMap(mid), spots = [];
+    var mid = Math.random() < 0.6 ? state.map : pick(Object.keys(MAPS).filter(seenSea)), spots = mapSpots(mid);
+    if (!spots.length) return null;
+    var sp = pick(spots);
+    state.tmap = {map: mid, at: sp.at, name: sp.name, tier: D.SEA_TIER[mid] || 1};
+    reveal(mid, sp.at[0], sp.at[1], 120);
+    return '🗺️ It shows treasure buried on ' + sp.name + (mid === state.map ? '' : ', over in ' + MAPS[mid].name) + '. It’s marked on your chart.';
+  }
+  // A treasure map drawn before the charts followed the real coastlines: the same island if it's on the new chart,
+  // otherwise another little island on the same sea.
+  function redrawMap() {
+    var tm = state.tmap, spots = mapSpots(tm.map), same = spots.filter(function (sp) { return sp.name === tm.name; });
+    var sp = same[0] || (spots.length ? pick(spots) : null);
+    state.tmap = sp ? {map: tm.map, at: sp.at, name: sp.name, tier: tm.tier || D.SEA_TIER[tm.map] || 1} : null;
+    if (sp) reveal(tm.map, sp.at[0], sp.at[1], 120);
+  }
+  // The little islands of a sea where treasure can be buried: clear of ports and the big dig sites, and close enough to dig from a ship.
+  function mapSpots(mid) {
+    var m = enterMap(mid), spots = [];
     m.lands.forEach(function (L) {
       if (!L.blob || L.haze || Math.max(L.blob[2], L.blob[3]) > 32) return;
       var at = [L.blob[0], L.blob[1]];
@@ -933,11 +970,7 @@
       if (Math.hypot(f[0] - at[0], f[1] - at[1]) > 55) return;
       spots.push({name: L.name, at: at});
     });
-    if (!spots.length) return null;
-    var sp = pick(spots);
-    state.tmap = {map: mid, at: sp.at, name: sp.name, tier: D.SEA_TIER[mid] || 1};
-    reveal(mid, sp.at[0], sp.at[1], 120);
-    return '🗺️ It shows treasure buried on ' + sp.name + (mid === state.map ? '' : ', over in ' + MAPS[mid].name) + '. It’s marked on your chart.';
+    return spots;
   }
   function digMap() {
     var tm = state.tmap;
@@ -976,7 +1009,7 @@
     var text = s.text + gainXp(sid === 'emerald' ? 400 : s.piece ? 100 : 80);
     if (lost.length) text += '\n\nThere’s no room in your hold for ' + andList(lost) + ', so you leave it for the goats.';
     if (s.piece && pieces() === 3) {
-      text += '\n\nThe three pieces fit together. In the middle, circled twice: Smoke Cay, out in the open sea north of the Spanish Main. It’s on your chart now.';
+      text += '\n\nThe three pieces fit together. In the middle, circled twice: Serrana Bank, a few lonely cays out in the open sea north of the Spanish Main. It’s on your chart now.';
       reveal('main', STASHES.emerald.at[0], STASHES.emerald.at[1], 150);
     }
     sfx('fanfare');
@@ -2258,8 +2291,8 @@
       var pt = exitPointFrom(ex, at), L = legLength(mid, at, pt);
       if (L === null) break;
       len += L;
-      var m2 = E.prepareMap(next), arr = ex.arrive;
-      at = [arr[0] === 'x' ? clamp(pt[0], 80, m2.w - 80) : arr[0], arr[1]];
+      E.prepareMap(next);
+      at = E.crossing(mid, ex, pt[0], pt[1]);
       mid = next; seas.push(mid);
     }
     if (mid === B.map) {
@@ -3421,8 +3454,8 @@
     return out;
   }
   function goExit(e) {
-    var arrive = e.exit.arrive, m = MAPS[e.exit.to];
-    return {type: 'point', map: e.exit.to, x: arrive[0] === 'x' ? clamp(state.x, 80, m.w - 80) : arrive[0], y: arrive[1], label: m.name};
+    var pt = exitPoint(e.exit), a = E.crossing(state.map, e.exit, pt[0], pt[1]);
+    return {type: 'point', map: e.exit.to, x: a[0], y: a[1], label: MAPS[e.exit.to].name};
   }
   function openChart() {
     chartMap = state.map;
@@ -3711,11 +3744,12 @@
     function sx(x) { return ex + x * k; }
     function sy(y) { return fy + y * k; }
     c.textAlign = 'center'; c.textBaseline = 'middle';
-    m.lands.forEach(function (L) {
-      if (!L.label || !explored(mid, L.label[0], L.label[1])) return;
+    m.lands.concat(m.labels || []).forEach(function (L) {
+      var at = L.label || L.at;
+      if (!at || !explored(mid, at[0], at[1])) return;
       c.font = 'italic 700 ' + (chart ? 11 : 13) + 'px Georgia, "Times New Roman", serif';
       c.fillStyle = 'rgba(22,52,28,.8)';
-      c.fillText(L.name, sx(L.label[0]), sy(L.label[1]));
+      c.fillText(L.name, sx(at[0]), sy(at[1]));
     });
     Object.keys(PORTS).forEach(function (pid) {
       var p = PORTS[pid];
@@ -3798,12 +3832,13 @@
     state = fresh ? newState() : fromSave(saved);
     if (!fresh && state.fog) for (var mid in state.fog) if (MAPS[mid]) decodeFog(mid, state.fog[mid]);
     var m = enterMap(state.map);
+    if (state.tmap && state.tmap.redraw) redrawMap();
     if (E.shipBlocked(m, state.x, state.y)) { var f = E.nearestFreePoint(m, state.x, state.y); state.x = f[0]; state.y = f[1]; }
     reveal(state.map, state.x, state.y, REVEAL);
     Object.keys(state.known).forEach(function (pid) { if (PORTS[pid]) reveal(PORTS[pid].map, PORTS[pid].dock[0], PORTS[pid].dock[1], 110); });
     started = true;
     levelUp = 0; evClock = 70 + Math.random() * 30; evRecent = []; lastPortEv = -999; hudCache = {}; mendAcc = 0;
-    if (fresh) state.flags.r5 = state.flags.r6 = 1;
+    if (fresh) state.flags.r5 = state.flags.r6 = state.flags.geo = 1;
     dayTick();
     $('title-screen').hidden = true;
     boardMsg = '';
