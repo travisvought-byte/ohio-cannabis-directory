@@ -8,6 +8,8 @@ const log = [], bad = [];
 const say = (...a) => { const s = a.join(' '); log.push(s); console.log(s); };
 const check = (ok, what) => { say(ok ? 'OK  ' : 'BAD ', what); if (!ok) bad.push(what); };
 const URL0 = 'https://the-reefer.com/pillage/';
+// For pictures only: let the title screen grow to full height so a picture of the board isn't cut off at the stage's edge.
+const UNCLIP = '.title-screen{position:static!important;overflow:visible!important;height:auto!important}';
 const seal1 = x => { let h = 0x811c9dc5; x = 'pillage:' + x; for (let i = 0; i < x.length; i++) { h ^= x.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; } return ('0000' + h.toString(36)).slice(-4); };
 const b64 = x => Buffer.from(x, 'utf8').toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 async function ctxFor(browser, opts) {
@@ -97,6 +99,7 @@ function watch(page, name, errs) {
   check(b1.h4.length === 8 && /Overall/.test(b1.h4[0]) && b1.h4.some(h => /Top Smugglers/.test(h)) && b1.h4.some(h => /Most Smoked/.test(h)) && b1.h4.some(h => /Merchant Wreckers/.test(h)), 'an overall board and seven breakout boards, each with a heading');
   check(/Admiral of the Week/.test(b1.top) && /Smuggler Supreme/.test(b1.top) && b1.sr, 'Anne’s line wears her titles, with a spoken label');
   check(/Captain Cloud: Anne Bonny, 1 bale smoked/.test(b1.text) && /Scourge of the Merchant Fleet: Anne Bonny, 4 merchants plundered/.test(b1.text), 'she leads the boards she has tallies on');
+  const st3 = await pb.addStyleTag({content: UNCLIP});
   await pb.locator('#title-board').screenshot({path: OUT + '/3-ben-board-phone-dark.png'});
   // an old score code, made before the breakout boards
   const body = ['1', 'old111', 'Old Salt', 'the Barnacle', 300, 4, 900, 0, Math.floor((Date.now() - 600e3) / 60000).toString(36)].join('~');
@@ -105,14 +108,20 @@ function watch(page, name, errs) {
   const b2 = await pb.evaluate(() => ({rivals: window.__pillage.legacy ? window.__pillage.legacy.rivals.length : -1, text: document.getElementById('title-board').textContent}));
   say('OLD CODE', b2.rivals, /Saltiest Dog: Old Salt/.test(b2.text));
   check(/Old Salt of the Barnacle is on your/.test(b2.text) && /Saltiest Dog: Old Salt, 4 days at sea/.test(b2.text) && !/Smuggler Supreme: Old Salt/.test(b2.text), 'an old score link still works, on the boards it can count');
+  await pb.addStyleTag({content: UNCLIP});
   await pb.locator('#title-board').screenshot({path: OUT + '/4-ben-board-old-code.png'});
-  // keyboard: the share button on Anne's title screen is reachable
-  await pa.evaluate(() => window.__pillage.showTitle());
-  await pa.waitForTimeout(300);
-  let reached = false;
-  for (let i = 0; i < 80 && !reached; i++) { await pa.keyboard.press('Tab'); reached = await pa.evaluate(() => document.activeElement && document.activeElement.classList.contains('board-share')); }
-  check(reached, 'the Show or send my score button is reachable by keyboard');
-  await pa.locator('#title-board').screenshot({path: OUT + '/5-anne-title-board-phone.png'});
+  // keyboard: on a fresh visit Anne's title screen shows her board, and its share button is reachable by Tab
+  const pk = await A.newPage(); watch(pk, 'anne-again', errs);
+  await pk.goto(URL0 + '?check=' + Date.now(), {waitUntil: 'networkidle'});
+  await pk.waitForTimeout(500);
+  let reached = false, steps = 0;
+  for (; steps < 120 && !reached; steps++) { await pk.keyboard.press('Tab'); reached = await pk.evaluate(() => !!document.activeElement && document.activeElement.classList.contains('board-share')); }
+  check(reached, 'the Show or send my score button is reachable by keyboard (' + steps + ' Tabs)');
+  if (reached) { await pk.keyboard.press('Enter'); await pk.waitForTimeout(300); check(await pk.evaluate(() => document.getElementById('dlg-share').open), 'and Enter opens the score card'); await pk.keyboard.press('Escape'); }
+  const tbs = await pk.evaluate(() => { const t = document.getElementById('title-screen'); return {shown: !t.hidden, cats: document.querySelectorAll('#title-board .board-cat').length}; });
+  check(tbs.shown && tbs.cats === 7, 'her title screen shows the seven breakout boards');
+  await pk.addStyleTag({content: UNCLIP});
+  await pk.locator('#title-board').screenshot({path: OUT + '/5-anne-title-board-phone.png'});
   check(errs.length === 0, 'no page errors (' + errs.length + ')');
   await browser.close();
   say(bad.length ? 'FAILED: ' + bad.join(' | ') : 'ALL OK');
