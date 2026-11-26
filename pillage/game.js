@@ -32,7 +32,7 @@
     var dirs = ['east', 'north-east', 'north', 'north-west', 'west', 'south-west', 'south', 'south-east'];
     return dirs[Math.round(((a + 360) % 360) / 45) % 8];
   }
-  function oddsWord(p) { return p < 0.35 ? 'long odds' : p < 0.5 ? 'even odds' : p < 0.65 ? 'decent odds' : p < 0.8 ? 'good odds' : 'great odds'; }
+  function oddsWord(p) { return p < 0.3 ? 'long odds' : p < 0.45 ? 'so-so odds' : p < 0.6 ? 'even odds' : p < 0.78 ? 'good odds' : 'great odds'; }
   function track(a) { try { if (window.directoryTrack) window.directoryTrack('pillage-' + a); } catch (e) { /* counting is optional */ } }
 
   /* ---------- preferences (kept apart from the voyage) ---------- */
@@ -78,7 +78,7 @@
 
   function newState() {
     var p = PORTS.tortuga;
-    return {v: 1, map: 'windward', x: p.dock[0], y: p.dock[1], angle: -Math.PI / 2, gold: 150, cargo: {}, basis: {},
+    return {v: 1, map: 'windward', x: p.dock[0], y: p.dock[1], angle: -Math.PI / 2, gold: 250, cargo: {}, basis: {},
       up: {hold: 0, hull: 0, cannons: 0, crew: 0, sails: 0, lavender: 0}, hull: UP.hull.levels[0], xp: 0, pts: 0,
       skill: {fight: 0, sail: 0, charm: 0}, dist: 0, hints: {}, found: {}, quests: {}, visited: {},
       known: {tortuga: 1, portroyal: 1, petitgoave: 1}, collected: {}, pillaged: 0, sunk: 0, tmap: null, dug: 0,
@@ -783,16 +783,17 @@
     ], function () { n.cool = 20; grace = 3; });
   }
   function customs(n) {
-    var done = function () { n.cool = 18; grace = 3; };
+    // A cutter that has had its word with you leaves you alone for a good while.
+    var done = function () { n.cool = 60; grace = 3; };
     if (!cargoCount()) {
       showEncounter('🔵 Crown Customs', n.name + ' of the Crown Customs pulls alongside, sniffs the air and peers into your empty hold. “Nothing aboard but a parrot? Carry on, Captain.”', [{label: 'Carry on'}], done);
       return;
     }
     var st = stats(), vicar = state.flags.vicar ? 1 : 0;
     var bribe = Math.max(15, Math.round(cargoValue() * 0.18 * (1 - 0.1 * st.charm)));
-    var runP = Math.min(0.95, 0.35 + 0.12 * st.sails + 0.05 * st.sail + 0.1 * vicar);
+    var runP = Math.min(0.95, 0.5 + 0.1 * st.sails + 0.05 * st.sail + 0.1 * vicar);
     var shotP = Math.min(0.95, 0.2 + 0.13 * st.cannons + 0.05 * st.fight);
-    var talkP = Math.min(0.95, 0.3 + 0.08 * st.charm + 0.3 * vicar);
+    var talkP = Math.min(0.95, 0.35 + 0.08 * st.charm + 0.3 * vicar);
     showEncounter('🔵 Crown Customs!', n.name + ' of the Crown Customs blocks your way. “Inspection! What is that smell? Is that… citrus?”', [
       {label: '🪙 Pay a “paperwork fee” of ' + fmt(bribe) + ' doubloons', disabled: state.gold < bribe, fn: function () {
         state.gold -= bribe; sfx('coin');
@@ -801,7 +802,7 @@
       }},
       {label: '⛵ Run for it (' + oddsWord(runP) + ')', fn: function () {
         if (Math.random() < runP) return 'You crowd on every scrap of sail and leave the cutter wallowing in your wake. Somewhere behind you, a whistle is blown very angrily.' + gainXp(10);
-        var lost = confiscate(0.5); sfx('bad');
+        var lost = confiscate(1 / 3); sfx('bad');
         return 'They catch you before you clear the reef. ' + n.name + ' confiscates ' + baleWord(lost) + ' “for evidence.” You hear coughing from their ship for the rest of the afternoon.';
       }},
       {label: '💣 Fire a warning shot (' + oddsWord(shotP) + ')', fn: function () {
@@ -839,7 +840,7 @@
     B.eh = B.en.hull;
     if (n.kind === 'boss') intro = D.BOSS.captain + ' runs out every gun on ' + n.name + ' and laughs like a broken accordion.';
     else if (n.kind === 'pirate') intro = pick(['Black sails off the bow! ' + n.captain + ' of ' + n.name + ' runs out the guns and grins with every one of their teeth.',
-      n.name + ' swings alongside, flying the skull and crossed spatulas. ' + n.captain + ' shouts: “Your cargo or your dignity!”',
+      cap(n.name) + ' swings alongside, flying the skull and crossed spatulas. ' + n.captain + ' shouts: “Your cargo or your dignity!”',
       'A pirate sloop cuts across your path. ' + n.captain + ' of ' + n.name + ' raises a cutlass and a very loud voice.']);
     else intro = 'You run out your guns. On ' + n.name + ', somebody drops a teapot.';
     if (n.kind !== 'merchant') track(n.kind === 'boss' ? 'meet-gristle' : 'pirate-battle');
@@ -898,7 +899,7 @@
     }
     if (act === 'run') {
       if (Math.random() < E.fleeChance(st, en)) {
-        n.cool = 25;
+        n.cool = 45;
         endFight(B, pick(['You crowd on every scrap of sail and leave them wallowing in your wake.', 'You duck behind a reef they don’t dare cross. By the time they find a way round, you’re gone.',
           'A lucky gust fills your sails. Their curses fade behind you.']));
         return;
