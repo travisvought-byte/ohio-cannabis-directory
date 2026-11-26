@@ -17,6 +17,8 @@
   var FOOD_MAX = 40, FOOD_PRICE = 2, DECOY_MAX = 2, DECOY_COST = 250, FIRE_COST = 500, FIRE_P = 0.8, LAW_BIG = 50;
   // Round five, part three: the grow at the hideout, and breeding real strains.
   var GROW = D.GROW, GENES = D.GENES || {}, CROSSES = D.CROSSES || [];
+  // The MJBizCon week board: scores swapped phone to phone by QR code or link. Nothing goes to a server.
+  var BOARD = D.BOARD || null, QR = window.PILLAGE_QR || null;
   function $(id) { return document.getElementById(id); }
 
   /* ---------- small helpers ---------- */
@@ -54,7 +56,7 @@
 
   /* ---------- the legacy: what outlives any one ship (your hideout, earned colours and flags, the hall of fame) ---------- */
   function loadLegacy() {
-    var L = {base: null, fame: [], sails: {}, flags: {}};
+    var L = {base: null, fame: [], sails: {}, flags: {}, pid: '', rivals: []};
     try {
       var s = JSON.parse(localStorage.getItem(LEGACY_KEY));
       if (s && typeof s === 'object') {
@@ -80,6 +82,8 @@
         if (Array.isArray(s.fame)) L.fame = s.fame.filter(function (f) { return f && typeof f.captain === 'string' && typeof f.ship === 'string'; }).slice(0, 8);
         for (var sk in (s.sails || {})) if (SAILS[sk]) L.sails[sk] = 1;
         for (var fk in (s.flags || {})) if (FLAGS[fk]) L.flags[fk] = 1;
+        if (typeof s.pid === 'string' && /^[a-z0-9]{6}$/.test(s.pid)) L.pid = s.pid;
+        if (Array.isArray(s.rivals)) L.rivals = s.rivals.map(cleanEntry).filter(Boolean).slice(0, BOARD ? BOARD.max : 30);
       }
     } catch (e) { /* private mode or a damaged record: start fresh */ }
     return L;
@@ -2883,6 +2887,7 @@
       lu.appendChild(li);
     });
     b.appendChild(lu);
+    if (boardShown()) b.appendChild(boardBox(BOARD.max));
     if (legacy.fame.length) {
       b.appendChild(el('h3', null, 'Hall of fame'));
       b.appendChild(fameList(legacy.fame.length));
@@ -3202,6 +3207,148 @@
     });
     return ol;
   }
+
+  /* ---------- the MJBizCon week board: your best voyage this week beside the players you've swapped scores with ---------- */
+  var boardMsg = '';
+  function boardShown() { var n = Date.now(); return !!BOARD && n >= BOARD.open && n < BOARD.hide; }
+  function boardOpen() { var n = Date.now(); return !!BOARD && n >= BOARD.open && n < BOARD.close; }
+  function inWeek(at) { return !!BOARD && at >= BOARD.open && at < BOARD.close; }
+  function playerId() {
+    if (!legacy.pid) {
+      var s = '';
+      for (var i = 0; i < 6; i++) s += '0123456789abcdefghijklmnopqrstuvwxyz'.charAt(Math.floor(Math.random() * 36));
+      legacy.pid = s;
+      saveLegacy();
+    }
+    return legacy.pid;
+  }
+  // A score from a link, or one saved on this device: names cleaned, numbers in range, or nothing at all.
+  function cleanEntry(r) {
+    if (!r || typeof r !== 'object' || typeof r.pid !== 'string' || !/^[a-z0-9]{6}$/.test(r.pid)) return null;
+    var xp = Math.floor(+r.xp), at = Math.floor(+r.t);
+    if (!(xp >= 0 && xp <= 9999999) || !(at > 0)) return null;
+    return {pid: r.pid, captain: cleanName(r.captain, 'A nameless captain'), ship: cleanName(r.ship, 'the Lucky Leaf'), xp: xp,
+      day: clamp(Math.floor(+r.day) || 1, 1, 99999), gold: clamp(Math.floor(+r.gold) || 0, 0, 99999999), gentle: !!r.gentle, t: at};
+  }
+  // A light seal on each code: it catches a typo or a mangled link, not a determined cheat.
+  function seal(s) {
+    var h = 0x811c9dc5;
+    s = 'pillage:' + s;
+    for (var i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; }
+    return ('0000' + h.toString(36)).slice(-4);
+  }
+  function toB64(s) { return btoa(unescape(encodeURIComponent(s))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); }
+  function fromB64(s) {
+    s = String(s).replace(/-/g, '+').replace(/_/g, '/');
+    while (s.length % 4) s += '=';
+    return decodeURIComponent(escape(atob(s)));
+  }
+  function scoreCode(e) {
+    var body = ['1', e.pid, e.captain.replace(/~/g, '-'), e.ship.replace(/~/g, '-'), e.xp, e.day, e.gold, e.gentle ? 1 : 0, Math.floor(e.t / 60000).toString(36)].join('~');
+    return toB64(body + '~' + seal(body));
+  }
+  function readScore(code) {
+    try {
+      var p = fromB64(code).split('~');
+      if (p.length !== 10 || p[0] !== '1' || p[9] !== seal(p.slice(0, 9).join('~'))) return null;
+      return cleanEntry({pid: p[1], captain: p[2], ship: p[3], xp: p[4], day: p[5], gold: p[6], gentle: p[7] === '1', t: parseInt(p[8], 36) * 60000});
+    } catch (e) { return null; }
+  }
+  function scoreLink(e) { return BOARD.url + '?vs=' + scoreCode(e); }
+  // Your best voyage this week: a finished one from the hall of fame, or the one you're sailing now.
+  function myBest() {
+    var best = null, live = null;
+    legacy.fame.forEach(function (f) {
+      if (f.at && inWeek(f.at) && (!best || (f.xp || 0) > best.xp)) best = {captain: f.captain, ship: f.ship, xp: f.xp || 0, day: f.day, gold: f.gold, gentle: f.gentle, t: f.at};
+    });
+    if (boardOpen()) {
+      if ($('title-screen').hidden) live = state;
+      else { var sv = loadSaved(); if (sv) { try { live = fromSave(sv); } catch (e) { live = null; } } }
+    }
+    if (live && (live.dist > 0 || live.xp > 25) && (!best || live.xp >= best.xp)) {
+      best = {captain: live.look.captain || 'A nameless captain', ship: live.look.ship || 'the Lucky Leaf', xp: Math.round(live.xp) || 0,
+        day: E.dayOf(live.dist), gold: Math.round(live.gold) || 0, gentle: !!live.gentle, t: Date.now()};
+    }
+    if (!best) return null;
+    best.pid = playerId();
+    best = cleanEntry(best);
+    best.me = true;
+    return best;
+  }
+  function addRival(r) {
+    var old = null;
+    legacy.rivals.forEach(function (x) { if (x.pid === r.pid) old = x; });
+    if (old) { if (r.xp > old.xp || (r.xp === old.xp && r.t > old.t)) legacy.rivals[legacy.rivals.indexOf(old)] = r; }
+    else legacy.rivals.push(r);
+    legacy.rivals.sort(function (a, b) { return b.xp - a.xp; });
+    legacy.rivals = legacy.rivals.slice(0, BOARD.max);
+    saveLegacy();
+  }
+  // Someone opened a score link, or scanned a QR code: put that captain on this board and tidy the address bar.
+  function takeScoreFromLink() {
+    var code = null;
+    try { code = new URLSearchParams(location.search).get('vs'); } catch (e) { return; }
+    if (!code) return;
+    try { history.replaceState(null, '', location.pathname + location.hash); } catch (e) { /* the address keeps the code: harmless */ }
+    if (!boardShown()) return;
+    var r = readScore(code);
+    if (!r) boardMsg = 'That score link got mangled on the way, so it couldn’t go on your board. Ask for it again.';
+    else if (r.pid === legacy.pid) boardMsg = 'That’s your own score. Show it to another player, then scan theirs.';
+    else if (!boardOpen() || !inWeek(r.t)) boardMsg = 'That score is from outside ' + BOARD.name + ', so it stays off the board.';
+    else {
+      addRival(r);
+      boardMsg = r.captain + ' of ' + r.ship + ' is on your ' + BOARD.name + ' board with ' + fmt(r.xp) + ' renown. Can you beat that?';
+      track('board-add');
+    }
+  }
+  function boardLine(r) {
+    return r.captain + ', ' + r.ship + (r.me ? ' (you)' : '') + ': ' + fmt(r.xp) + ' renown, level ' + E.levelOf(r.xp) + ', day ' + r.day + (r.gentle ? ' (gentle seas)' : '') + '.';
+  }
+  function boardBox(max) {
+    var open = boardOpen(), me = myBest(), rows = legacy.rivals.filter(function (r) { return inWeek(r.t); });
+    if (me) rows.push(me);
+    rows.sort(function (a, b) { return b.xp - a.xp || (a.me ? -1 : b.me ? 1 : a.t - b.t); });
+    var box = el('div', {class: 'board'}), h = el('h3');
+    h.appendChild(el('span', {'aria-hidden': 'true'}, '🏆 '));
+    h.appendChild(document.createTextNode(BOARD.name + ' board' + (open ? '' : ': final standings')));
+    box.appendChild(h);
+    if (boardMsg) box.appendChild(el('p', {class: 'win', role: 'status'}, boardMsg));
+    box.appendChild(el('p', {class: 'hint'}, open ? BOARD.blurb : 'The board closed at the end of show week. Thanks for sailing.'));
+    if (rows.length) {
+      var ol = el('ol', {class: 'fame board-list'}), mine = rows.indexOf(me);
+      rows.slice(0, max).forEach(function (r) { ol.appendChild(el('li', {class: r.me ? 'me' : null}, boardLine(r))); });
+      if (mine >= max) ol.appendChild(el('li', {class: 'me', value: mine + 1}, boardLine(me)));
+      box.appendChild(ol);
+      if (rows.length > max && mine < max) box.appendChild(el('p', {class: 'hint'}, (rows.length - max) + ' more in your captain’s log.'));
+    } else box.appendChild(el('p', null, 'Nobody on it yet. Set sail and you will be.'));
+    if (open && me) {
+      var b = el('button', {type: 'button', class: 'secondary board-share', 'data-key': 'share'});
+      b.appendChild(el('span', {'aria-hidden': 'true'}, '📲 '));
+      b.appendChild(document.createTextNode('Show or send my score'));
+      b.addEventListener('click', function () { openShare(myBest() || me); });
+      box.appendChild(b);
+    }
+    return box;
+  }
+  function openShare(e) {
+    var url = scoreLink(e), qbox = $('share-qr'), label = 'QR code for your score. Another player scans it with their phone camera to put you on their board.';
+    $('share-score').textContent = boardLine(e);
+    qbox.textContent = '';
+    var q = QR && QR.svg(url, label);
+    if (QR && !q) {
+      // Very long names (emoji count four bytes each) don't fit a small code: shorten them in the code only.
+      var cut = function (s) { return Array.from(s).slice(0, 8).join(''); };
+      url = scoreLink(Object.assign({}, e, {captain: cut(e.captain), ship: cut(e.ship)}));
+      q = QR.svg(url, label);
+    }
+    if (q) qbox.appendChild(q);
+    qbox.hidden = !q;
+    $('share-link').value = url;
+    $('share-send').hidden = !navigator.share;
+    track('board-share');
+    openDialog($('dlg-share'), $('share-done'));
+  }
+  function shareSay(msg) { var live = $('dlg-share').querySelector('.dlg-live'); live.hidden = false; live.textContent = msg; }
 
   /* ---------- the captain: names, colours, flag and how rough the seas are ---------- */
   var capDone = null, capFresh = false;
@@ -3659,6 +3806,7 @@
     if (fresh) state.flags.r5 = state.flags.r6 = 1;
     dayTick();
     $('title-screen').hidden = true;
+    boardMsg = '';
     $('hud').hidden = false; $('tools').hidden = false;
     resize();
     updateHud();
@@ -3712,6 +3860,10 @@
       $('continue-note').textContent = '';
       $('btn-new').textContent = 'Set sail';
     }
+    var tb = $('title-board');
+    tb.textContent = '';
+    tb.hidden = !boardShown();
+    if (boardShown()) tb.appendChild(boardBox(5));
     var tf = $('title-fame');
     tf.hidden = !legacy.fame.length;
     if (legacy.fame.length) { var old = tf.querySelector('ol'); if (old) old.remove(); tf.appendChild(fameList(3)); }
@@ -3772,6 +3924,25 @@
       b.addEventListener('click', function () { closeDialog(b.closest('dialog')); });
     });
     $('note-ok').addEventListener('click', function () { closeDialog('dlg-note'); });
+    $('share-copy').addEventListener('click', function () {
+      var inp = $('share-link');
+      function done(ok) { shareSay(ok ? 'Link copied. Paste it in a text or a message.' : 'Your browser wouldn’t copy it. The link is selected, so copy it yourself.'); }
+      track('board-copy');
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(inp.value).then(function () { done(true); }, function () { inp.select(); done(false); });
+      else { inp.select(); var ok = false; try { ok = document.execCommand('copy'); } catch (e) { ok = false; } done(ok); }
+    });
+    $('share-send').addEventListener('click', function () {
+      if (!navigator.share) return;
+      track('board-send');
+      navigator.share({title: 'Pillage the Reefer', text: 'Can you beat my score on the ' + BOARD.name + ' board?', url: $('share-link').value}).catch(function () { /* they changed their mind */ });
+    });
+    // Back to where the share began: the captain's log, the title screen or the sea.
+    $('dlg-share').addEventListener('close', function () {
+      setTimeout(function () {
+        var back = document.querySelector('dialog[open] .board-share') || (!$('title-screen').hidden && $('title-board').querySelector('.board-share'));
+        if (back) back.focus(); else focusSea();
+      }, 0);
+    });
     $('set-sail').addEventListener('click', function () { leavePort(); });
     // The close event arrives a moment late. After a quick passage the next port is already open by then, so leave it be.
     $('dlg-port').addEventListener('close', function () { if (state && state.docked && !$('dlg-port').open) leavePort(); });
@@ -3833,6 +4004,9 @@
 
   wire();
   calmClass();
+  takeScoreFromLink();
+  var howBoard = $('how-board');
+  if (howBoard) howBoard.hidden = !boardShown();
   showTitle();
   loadJokes();
   requestAnimationFrame(frame);
@@ -3845,5 +4019,7 @@
     jobOffers: jobOffers, takeJob: takeJob, settleJobs: settleJobs, dayTick: dayTick, standOf: standOf, shift: shift, buyFor: buyFor, sellFor: sellFor,
     makeNews: makeNews, jobLoad: jobLoad, space: space, openParcels: openParcels, showTab: showTab, openPort: openPort,
     hungry: hungry, buyFood: buyFood, customs: customs, bigHaul: bigHaul,
-    buySeed: buySeed, plant: plant, harvest: harvest, crossBeds: crossBeds, bedReady: bedReady, crossOf: crossOf, renderHideout: renderHideout};
+    buySeed: buySeed, plant: plant, harvest: harvest, crossBeds: crossBeds, bedReady: bedReady, crossOf: crossOf, renderHideout: renderHideout,
+    scoreCode: scoreCode, readScore: readScore, scoreLink: scoreLink, myBest: myBest, takeScoreFromLink: takeScoreFromLink, boardOpen: boardOpen, openShare: openShare,
+    renderLog: renderLog};
 })();

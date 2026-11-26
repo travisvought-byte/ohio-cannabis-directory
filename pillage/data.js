@@ -674,6 +674,12 @@
     'The labels indica and sativa describe how a plant grows. Lab tests show they say much less about how it feels.'
   ];
 
+  // The MJBizCon week board (Las Vegas Convention Center, December 1 to 4, 2026). Times are UTC: it closes at the end of
+  // Sunday, December 6 in Las Vegas and leaves the title screen at the new year.
+  var BOARD = {name: 'MJBizCon week', open: Date.UTC(2026, 10, 26), close: Date.UTC(2026, 11, 7, 8), hide: Date.UTC(2027, 0, 1, 8), max: 30,
+    url: 'https://the-reefer.com/pillage/',
+    blurb: 'For MJBizCon in Las Vegas, December 1 to 4. Show another player your score’s QR code, or send them the link, and you land on each other’s boards. Your best voyage until December 6 counts.'};
+
   window.PILLAGE_DATA = {GOODS: GOODS, COMMON: COMMON, MAPS: MAPS, PORTS: PORTS, STASHES: STASHES, PEOPLE: PEOPLE,
     QUESTS: QUESTS, UPGRADES: UPGRADES, LEVELS: LEVELS, SKILLS: SKILLS, SKILL_MAX: SKILL_MAX, SEA_TIER: SEA_TIER,
     PIRATE_COUNT: PIRATE_COUNT, PIRATE_SHIPS: PIRATE_SHIPS, PIRATE_CAPTAINS: PIRATE_CAPTAINS, BOSS: BOSS,
@@ -681,5 +687,5 @@
     SHIP_CLASS: SHIP_CLASS, HIDEOUT: HIDEOUT, RELICS: RELICS, SAILS: SAILS, FLAGS: FLAGS,
     NATIONS: NATIONS, NATION_ORDER: NATION_ORDER, WAR: WAR, WAR_NOTE: WAR_NOTE, SEA_LAW: SEA_LAW, SEA_NAVY: SEA_NAVY, SEA_TRADE: SEA_TRADE,
     NAVY_CLASS: NAVY_CLASS, STAND: STAND, JOB_CARGO: JOB_CARGO, NEWS: NEWS, UNLOCK: UNLOCK, FIRE_PORTS: FIRE_PORTS, FIRESHIP_NOTE: FIRESHIP_NOTE,
-    GROW: GROW, GENES: GENES, CROSSES: CROSSES, GROW_LESSONS: GROW_LESSONS};
+    GROW: GROW, GENES: GENES, CROSSES: CROSSES, GROW_LESSONS: GROW_LESSONS, BOARD: BOARD};
 })();
