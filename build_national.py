@@ -108,7 +108,7 @@ details.az{margin:10px 0}details.az summary{cursor:pointer;font-weight:700;color
 .glance li{border-top:1px solid var(--line)}.glance li:first-child{border-top:0}
 .glance a{display:grid;grid-template-columns:minmax(0,210px) 1fr;gap:2px 14px;padding:10px 0;text-decoration:none;color:var(--ink);align-items:baseline}.glance .q{font-weight:650;color:var(--link)}
 .onpage{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.95rem;margin:8px 0}.onpage a{min-height:40px;display:inline-flex;align-items:center}
-.medcard{background:var(--card);border:1px solid var(--line);border-left:6px solid #3b7fa0;border-radius:14px;padding:6px 18px 12px;margin:18px 0}.medcard h2{margin-top:.6em}.steps{padding-left:1.3em}.steps li{margin:.3em 0}.facts{display:grid;grid-template-columns:minmax(0,170px) 1fr;gap:6px 16px;margin:12px 0}.facts dt{font-weight:700}.facts dd{margin:0}.mednote{background:var(--note);border-radius:8px;padding:8px 12px}.medlinks{display:flex;flex-wrap:wrap;gap:8px}@media(max-width:560px){.facts{grid-template-columns:1fr}.facts dd{margin-bottom:6px}}.next{background:var(--mint);border-radius:14px;padding:14px 18px;margin:26px 0}.next h2{margin:0 0 .3em;font-size:1.2rem}.next ul{margin:.3em 0;padding-left:1.2em}
+.medcard{background:var(--card);border:1px solid var(--line);border-left:6px solid #3b7fa0;border-radius:14px;padding:6px 18px 12px;margin:18px 0}.medcard h2{margin-top:.6em}.steps{padding-left:1.3em}.steps li{margin:.3em 0}.facts{display:grid;grid-template-columns:minmax(0,170px) 1fr;gap:6px 16px;margin:12px 0}.facts dt{font-weight:700}.facts dd{margin:0}.mednote{background:var(--note);border-radius:8px;padding:8px 12px}.medlinks{display:flex;flex-wrap:wrap;gap:8px}@media(max-width:560px){.facts{grid-template-columns:1fr}.facts dd{margin-bottom:6px}}.featured{background:var(--card);border:1px solid var(--line);border-left:6px solid #4a8a3c;border-radius:14px;padding:6px 18px 12px;margin:18px 0}.featured h3{margin:.8em 0 .2em}.next{background:var(--mint);border-radius:14px;padding:14px 18px;margin:26px 0}.next h2{margin:0 0 .3em;font-size:1.2rem}.next ul{margin:.3em 0;padding-left:1.2em}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:8px 0;min-width:0;scroll-margin-top:12px}.card h3,.card h4{margin:0 0 6px;font-size:1rem;line-height:1.35}.card p{margin:.25rem 0}
 .chip{display:inline-block;border:1px solid;border-radius:999px;padding:0 10px;font-size:.82rem;font-weight:700;line-height:1.7;white-space:nowrap}
 .chip.allowed,.chip.positive,.chip.broad{background:#e7f3eb;border-color:#2e7d4f;color:#1d5a37}.chip.medical-only{background:#e5f1f7;border-color:#3b7fa0;color:#1d4f68}
@@ -650,6 +650,45 @@ def sponsor_slot(s):
             + (SPONSOR_SCRIPT if end else ''))
 
 
+FEATURED_FILE = ROOT / 'data/state-featured.json'
+
+
+def load_featured(codes, path=None):
+    """Groups featured on state pages, only ones that accepted. A mistake stops the build."""
+    rows = json.loads(Path(path or FEATURED_FILE).read_text(encoding='utf-8')).get('featured', [])
+    out = {}
+    for i, f in enumerate(rows):
+        where = f'data/state-featured.json entry {i + 1}'
+        for key in ('id', 'state', 'name', 'kind', 'text', 'site', 'accepted_on'):
+            if not f.get(key):
+                raise SystemExit(f'{where}: missing {key}')
+        if f['state'] not in codes:
+            raise SystemExit(f'{where}: unknown state {f["state"]}')
+        urls = [f['site']] + [l['url'] for l in f.get('links', [])] + ([f['donate']] if f.get('donate') else [])
+        if any(not u.startswith('https://') for u in urls):
+            raise SystemExit(f'{where}: links must be https')
+        out.setdefault(f['state'], []).append(f)
+    return out
+
+
+def featured_section(groups, name):
+    """Groups featured on this state page, each with its own links. Not paid placements and not endorsements."""
+    if not groups:
+        return ''
+    out = [f'<section class="featured" id="groups" aria-labelledby="groups-h">' + icon_heading(2, 'groups-h', f'{esc(name)} groups we feature', 'people'),
+           '<p class="muted">Featured with their agreement. Not a paid placement; a listing is not an endorsement.</p>']
+    for g in groups:
+        cards = [(f'Visit {g["name"]}', 'Their own site', g['site'], 'link')]
+        cards += [(l['label'], l.get('note', ''), l['url'], l.get('icon', 'link')) for l in g.get('links', [])]
+        if g.get('donate'):
+            cards.append((f'Donate to {g["name"]}', 'Through their own site', g['donate'], 'heart'))
+        out.append(f'<h3>{esc(g["name"])} <span class="muted">({esc(g["kind"])})</span></h3><p>{esc(g["text"])}</p><div class="needs">')
+        out += [f'<a class="need" href="{esc(u)}" target="_blank" rel="noopener"><span class="ni" aria-hidden="true">{icon(ic)}</span>'
+                f'<strong>{esc(label)}</strong><span>{esc(note)}</span></a>' for label, note, u, ic in cards]
+        out.append('</div>')
+    return ''.join(out) + '</section>'
+
+
 def load_coverage():
     """Who pays for medical cannabis (data/medical-coverage.json)."""
     return json.loads((ROOT / 'data/medical-coverage.json').read_text(encoding='utf-8'))
@@ -855,8 +894,9 @@ def glance(perm, state_answers, name):
             + ''.join(rows) + '</ul></section>')
 
 
-def state_page(perm, score, directory, code, answers, sources, medical=None, dispensaries=None, sponsors=()):
+def state_page(perm, score, directory, code, answers, sources, medical=None, dispensaries=None, sponsors=(), featured=None):
     name = perm['jurisdictions'][code]
+    groups = (featured or {}).get(code, [])
     state_answers = answers.get(code, {})
     cites = Cites(sources)
     card = score['states'].get(code)
@@ -891,12 +931,13 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
         shop_link = '<a href="#dispensaries">Where to buy</a>'
     first, second = ((shop_link, card_link) if stores_first else (card_link, shop_link))
     body.append('<nav class="onpage" aria-label="On this page">' + first + second
-                + '<a href="#glance">At a glance</a><a href="#law">The law in detail</a><a href="#directory">Local help</a><a href="#sources">Sources</a></nav>')
+                + ('<a href="#groups">Local groups</a>' if groups else '') + '<a href="#glance">At a glance</a><a href="#law">The law in detail</a><a href="#directory">Local help</a><a href="#sources">Sources</a></nav>')
     if stores_first and shops:
         body.append(dispensary_section(shops, cites, name))
     body.append(card_html)
     if shops and not stores_first:
         body.append(dispensary_section(shops, cites, name))
+    body.append(featured_section(groups, name))
     body.append(glance(perm, state_answers, name))
     body.append(law_section(perm, code, state_answers, cites, sources))
     body.append(pathway_section(code, name, directory['pathways'], card, pack))
@@ -1714,6 +1755,7 @@ def pages():
     disp_data, dispensaries = load_dispensaries()
     sources.update({src['id']: src for s in dispensaries.values() for src in (s.get('sources') or [s['source']])})
     sponsors = load_sponsors(perm['jurisdictions'])
+    featured = load_featured(perm['jurisdictions'])
     out = {'index.html': home_page(perm, score, directory, answers, sources, sponsors),
            'medical.html': medical_page(perm, med_data, medical, answers, sources, dispensaries),
            'coverage.html': coverage_page(perm, medical, sources),
@@ -1729,7 +1771,7 @@ def pages():
     for q in perm['questions']:
         out[law_page_name(q['id'])] = law_page(perm, q, answers, sources, dispensaries)
     for code, name in perm['jurisdictions'].items():
-        out[slug(name) + '.html'] = state_page(perm, score, directory, code, answers, sources, medical, dispensaries, sponsors)
+        out[slug(name) + '.html'] = state_page(perm, score, directory, code, answers, sources, medical, dispensaries, sponsors, featured)
     import build_world  # imported here: build_world uses this module's page shell
     world = build_world.pages(perm, sources)
     clash = sorted(set(world) & set(out))

@@ -1,0 +1,19 @@
+{
+ "about": "Groups featured on a state page. Only groups that have told the owner they accept being featured go here. Links are the group's own pages, or pages its own site links to. Donation links appear only when the group's own site takes donations.",
+ "featured": [
+  {
+   "id": "ky-kcfc",
+   "state": "KY",
+   "name": "Kentucky Cannabis Freedom Coalition",
+   "kind": "Advocacy group",
+   "text": "A Louisville-based coalition working to put cannabis decriminalization on the Kentucky ballot. It runs the Let Kentucky Vote petition, events and a volunteer network, and keeps a list of cannabis jobs in Kentucky.",
+   "site": "https://legalizekentucky.com/",
+   "links": [
+    {"label": "Sign the Let Kentucky Vote petition", "note": "On change.org", "url": "https://www.change.org/LetKentuckyVote", "icon": "form"},
+    {"label": "Cannabis jobs in Kentucky", "note": "Their list of current openings", "url": "https://legalizekentucky.com/ky-cannabis-jobs/", "icon": "briefcase"}
+   ],
+   "donate": "https://legalizekentucky.com/support/",
+   "accepted_on": "2026-11-26"
+  }
+ ]
+}
