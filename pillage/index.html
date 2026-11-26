@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <title>Pillage the Reefer: a silly little pirate game | The Reefer</title>
-<meta name="description" content="Sail a cartoon Caribbean from Tortuga to Cartagena, trade bales of pirate cannabis, pillage fat merchant ships, chat with odd characters and dig up a legendary lost crop. A free browser game for adults 21 and over.">
+<meta name="description" content="Sail a cartoon Caribbean from Tortuga to Barbados, trade bales of pirate cannabis, battle pirates, level up your captain, chat with odd characters and dig up a legendary lost crop. A free browser game for adults 21 and over.">
 <link rel="canonical" href="https://the-reefer.com/pillage/">
 <meta name="theme-color" content="#1d4a37">
 <link rel="icon" type="image/png" href="/assets/the-reefer/favicon-64.png">
@@ -30,7 +30,7 @@
   <section class="intro" aria-labelledby="title"><div class="wrap">
     <p class="kicker">A silly little game from The Reefer · Adults 21+</p>
     <h1 id="title">Pillage the Reefer</h1>
-    <p>Captain a leaky sloop across a cartoon Caribbean. Buy bales cheap where they grow, sell them dear where they don't, pillage the odd fat merchant ship, dodge Crown Customs and chat with the strange folk of Tortuga, Havana, Cartagena and beyond. Somewhere out there, a retired captain buried the finest crop that ever sailed.</p>
+    <p>Captain a leaky sloop across a cartoon Caribbean. Buy bales cheap where they grow, sell them dear where they don't, battle pirates for their loot, dodge Crown Customs, level up your captain and chat with the strange folk of Tortuga, Havana, Veracruz, Barbados and beyond. Somewhere out there, a retired captain buried the finest crop that ever sailed.</p>
   </div></section>
 
   <section id="game" class="game" aria-label="The game" tabindex="-1"><div class="wrap">
@@ -40,8 +40,9 @@
       <ul id="hud" class="hud" hidden>
         <li title="Doubloons"><span aria-hidden="true">🪙</span><span class="sr-only">Doubloons:</span> <b id="h-gold">0</b></li>
         <li title="Bales in your hold"><span aria-hidden="true">📦</span><span class="sr-only">Hold:</span> <b id="h-hold">0/20</b></li>
-        <li title="Day of your voyage"><span aria-hidden="true">📅</span> Day <b id="h-day">1</b></li>
-        <li class="hud-rank" title="Your rank"><span aria-hidden="true">🎖️</span><span class="sr-only">Rank:</span> <b id="h-rank">Deckhand</b></li>
+        <li title="Hull points"><span aria-hidden="true">🛡️</span><span class="sr-only">Hull:</span> <b id="h-hull">30/30</b></li>
+        <li class="hud-lvl" title="Your level"><span aria-hidden="true">⭐</span> Lv <b id="h-lvl">1</b><span class="hud-title">, <span id="h-rank">Deckhand</span></span><span id="h-pts" class="pts" hidden><span aria-hidden="true"> ✨</span><span class="sr-only">, skill point to spend</span></span></li>
+        <li class="hud-day" title="Day of your voyage"><span aria-hidden="true">📅</span> Day <b id="h-day">1</b></li>
         <li class="hud-sea" title="The sea you're in"><span aria-hidden="true">🌊</span><span class="sr-only">Sea:</span> <b id="h-sea">Windward</b></li>
       </ul>
 
@@ -52,7 +53,7 @@
         <div class="title-card">
           <p class="flag" aria-hidden="true">🏴‍☠️</p>
           <h2>Pillage the Reefer</h2>
-          <p class="tagline">Three seas. Eight ports. One very opinionated parrot.</p>
+          <p class="tagline">Five seas. Eleven ports. Pirates, treasure and one very opinionated parrot.</p>
           <div class="title-buttons">
             <button id="btn-continue" type="button" class="primary" hidden>Continue your voyage</button>
             <p id="continue-note" class="continue-note"></p>
@@ -70,7 +71,7 @@
     <p id="where" class="where"></p>
     <div id="tools" class="tools" hidden>
       <button id="btn-chart" type="button"><span aria-hidden="true">🗺️</span> Sea chart <kbd>M</kbd></button>
-      <button id="btn-log" type="button"><span aria-hidden="true">📜</span> Captain's log <kbd>L</kbd></button>
+      <button id="btn-log" type="button"><span aria-hidden="true">📜</span> Captain's log<span id="log-pip" class="pip" hidden><span aria-hidden="true"> ✨</span><span class="sr-only">, skill point to spend</span></span> <kbd>L</kbd></button>
       <button id="btn-settings" type="button"><span aria-hidden="true">⚙️</span> Settings</button>
     </div>
     <p id="live" class="sr-only" aria-live="polite"></p>
@@ -83,9 +84,11 @@
       <li><b>Sail:</b> tap or click the sea and your crew sails there. On a keyboard, steer with the arrow keys or W A S D.</li>
       <li><b>Dock, talk and dig:</b> sail up to a port or a treasure mark and press the button that appears, or Enter.</li>
       <li><b>Trade:</b> every port grows one strain cheaply. Sell it somewhere far away, best of all in another sea.</li>
-      <li><b>Pillage:</b> bump into a fat merchant ship to try boarding her. Blue-sailed Customs cutters will want a word.</li>
-      <li><b>Explore:</b> sail off the edge of the chart to reach the Florida Straits and the Spanish Main. The sea chart sets a course for anywhere you've found.</li>
-      <li><b>Win:</b> find three pieces of Captain Featherstone's map and dig up the Emerald Bale. Your captain's log keeps track of every goal.</li>
+      <li><b>Fight:</b> bump into a fat merchant ship to attack her. Black-sailed pirates will come for you. Fire broadsides to wear them down, then board them for their loot, or run if they look too strong. Your parrot rates every fight before it starts. Blue-sailed Customs cutters just want a word.</li>
+      <li><b>Level up:</b> trading at a profit, winning fights, finishing requests, finding treasure and seeing new ports all earn renown. Each level gives a skill point for Fighting, Sailing or Charm. Shipwrights sell a bigger hold, a stouter hull, cannons, boarders and faster sails.</li>
+      <li><b>Losing isn't the end:</b> a pirate who beats you takes part of your cargo and a little gold, never your ship, upgrades or level. Any port can patch your hull.</li>
+      <li><b>Explore:</b> sail off the edge of the chart to reach the Florida Straits, the Gulf of Mexico, the Spanish Main and the Lesser Antilles. Expect surprises on the way, and buy, win or stumble on treasure maps. The sea chart sets a course for anywhere you've found.</li>
+      <li><b>Win:</b> find three pieces of Captain Featherstone's map and dig up the Emerald Bale, beat the pirate Captain Silas Gristle (he turns up on the Spanish Main at level 7 and waits for you to come to him) and reach level 10. Your captain's log keeps track of every goal.</li>
     </ul>
 
     <h2 id="fine-print">Fine print</h2>
@@ -160,6 +163,7 @@
 
 <script src="data.js"></script>
 <script src="engine.js"></script>
+<script src="events.js"></script>
 <script src="game.js"></script>
 </body>
 </html>
