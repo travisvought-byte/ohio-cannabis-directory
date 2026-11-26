@@ -61,8 +61,16 @@ assert(odds(ship(0,0,0),'merchant',1)>0.95,'a new ship can take a small merchant
 assert(odds(ship(0,0,0),'pirate',1)>0.9,'a new ship can beat home-waters pirates');
 assert(odds(ship(2,2,2),'pirate',3)>0.9,'a mid-upgraded ship can beat the roughest pirates');
 assert(odds(ship(4,3,5),'boss',4)>0.9&&odds(ship(2,2,2),'boss',4)<0.1,'Gristle needs a strong ship');
-for(const kind of ['merchant','pirate','boss']) for(const t of [undefined,0,1,2,3,9]){ const f=E.foe(kind,t); assert(Number.isFinite(f.hull)&&Number.isFinite(f.fire),'foe stats are numbers'); }
+for(const kind of ['merchant','pirate','boss','navy']) for(const t of [undefined,0,1,2,3,9]){ const f=E.foe(kind,t); assert(Number.isFinite(f.hull)&&Number.isFinite(f.fire),'foe stats are numbers'); }
 assert(EV.sea.length>=10&&EV.port.length>=5,'surprises at sea and in port');
+// round five: nations of 1718, standing, warships and real history
+assert.deepEqual([-80,-30,0,30,80].map(E.standTier),[0,1,2,3,4],'five steps of standing');
+assert(E.foe('navy',1).cls===D.NAVY_CLASS[0]&&E.foe('navy',5).cls===D.NAVY_CLASS[2]&&E.foe('navy',3).hull>E.foe('pirate',3).hull,'warships are big');
+for(const pid in D.PORTS) assert(D.NATIONS[D.PORTS[pid].nation]&&D.PORTS[pid].history.length>40,pid+' flies a flag and has a real history note');
+for(const mid of seas) assert(D.NATIONS[D.SEA_LAW[mid]]&&D.SEA_NAVY[mid].length&&D.SEA_TRADE[mid].every(k=>D.NATIONS[k]),mid+' has a law, a navy and traders');
+for(const k of D.NATION_ORDER) assert(D.NATIONS[k].flag&&D.STAND.length===5&&Array.isArray(D.WAR[k]),k+' is described');
+assert(/buck-an-ear/.test(read('data.js'))&&/Buccaneer/.test(read('data.js')),'Ruthie knows the corn joke');
+assert(/nobody in the Caribbean smoked cannabis/.test(read('index.html')),'the fine print keeps the history honest');
 // round four: the die, pirate sizes, stock and price pressure
 assert.equal(E.need(50),11); assert.equal(E.need(95),2); assert.equal(E.need(5),20);
 for(let r=0;r<1;r+=0.01){ assert(E.pirateTier(1,1,r,true)<=1,'new captains only meet small pirates in home waters'); const t=E.pirateTier(3,9,r,false); assert(t>=3&&t<=5,'tiers stay in range'); }
@@ -142,7 +150,7 @@ const r0=P.passageRisk(vl).pirates; S.cargo={haze:20}; assert(P.passageRisk(vl).
 w.dispatchEvent(new w.Event('pagehide'));
 const saved=JSON.parse(w.localStorage.getItem('pillageTheReefer.v1')); assert.equal(saved.xp,S.xp,'renown is saved');
 // markets run out, and every bale you trade moves the price
-$('set-sail').click(); P.dock('tortuga'); S.gold=10000; S.cargo={}; S.mk={};
+$('set-sail').click(); P.dock('tortuga'); S.gold=10000; S.cargo={}; S.mk={}; S.news=[];
 const p0=P.buyAt('tortuga','tangerine'),got=P.buyBales('tortuga','tangerine',100);
 assert.equal(got.n,16,'Tortuga only has 16 bales on the shelf'); assert.equal(P.stockOf('tortuga','tangerine'),0); assert(P.buyAt('tortuga','tangerine')>p0,'buying pushes the price up');
 const s0=P.sellAt('tortuga','tangerine'); P.sellBales('tortuga','tangerine',8); assert(P.sellAt('tortuga','tangerine')<s0,'selling pushes the price down');
@@ -190,6 +198,45 @@ assert(/still holds 100 doubloons and 2 bales/.test($('note-body').textContent),
 assert.equal(P.state.gold,250,'a fresh purse'); assert(!P.state.relics.spyglass,'relics went down with the ship'); assert.equal(P.legacy.base.gold,100,'the strongbox survived');
 // a voyage saved before ships could sink keeps gentle seas
 const old=JSON.parse(JSON.stringify(saved)); delete old.gentle; delete old.shot; P.begin(false,old); assert(P.state.gentle&&P.state.shot===12,'old saves sail gentle seas with twelve cannonballs');
+// round five: an old voyage meets the nations of 1718 and starts neutral with everyone
+const o5=JSON.parse(JSON.stringify(saved)); for(const k of ['rep','marque','jobs','jobsTaken','jobsDone','bounties','news','lastDay','salute','seed']) delete o5[k]; delete o5.flags.r5;
+P.begin(false,o5); const T=P.state;
+assert(Object.values(T.rep).every(v=>v===0)&&T.jobs.length===0&&Number.isFinite(T.seed),'an old voyage starts neutral with every nation');
+assert($('dlg-note').open&&/real flag of 1718/.test($('note-body').textContent),'and hears what is new'); $('note-ok').click();
+// level 2 opens the Jobs tab; a delivery takes room in the hold and pays on arrival
+T.xp=Math.max(T.xp,D.LEVELS[1].xp); T.gentle=true; T.cargo={}; T.jobs=[]; T.jobsTaken={}; T.news=[]; T.hull=P.stats().hullMax;
+P.dock('tortuga'); assert($('tab-jobs'),'level 2 opens the Jobs tab'); $('tab-jobs').click();
+assert(/Carry|Smuggle|Bring/.test($('port-panel').textContent)&&/French port/.test($('port-panel').textContent),'the board posts French jobs');
+const job=P.jobOffers('tortuga').find(j=>j.kind==='deliver'); assert(job&&job.pay>0&&D.PORTS[job.to]&&job.by==='france','Tortuga has a delivery');
+const sp0=P.space(); assert(P.takeJob(job)); assert.equal(P.space(),sp0-job.n,'job cargo takes room in the hold'); assert.equal(P.jobLoad(),job.n);
+assert(!P.jobOffers('tortuga').some(j=>j.id===job.id),'a taken job leaves the board');
+const g5=T.gold,r5=T.rep.france; w.Math.random=()=>0.99; assert(P.passage(job.to),'sail for the delivery');
+for(let i=0;i<40&&$('dlg-encounter').open;i++) ($('enc-body').querySelector('.choice:not([disabled])')||$('enc-body').querySelector('.primary')).click();
+w.Math.random=rnd;
+assert.equal(T.docked,job.to); assert.equal(T.jobs.length,0,'the job is done on arrival'); assert(T.gold>=g5+job.pay&&T.rep.france>r5&&T.jobsDone===1,'it pays, and France thinks better of you');
+// standing and news set prices
+const hg=D.PORTS.havana.sells[0],hp=P.buyAt('havana',hg); T.rep.spain=-80; assert(P.buyAt('havana',hg)>hp,'a hostile port charges more'); T.rep.spain=0;
+const sg=D.COMMON.find(g=>!D.PORTS.havana.sells.includes(g)),spr=P.sellAt('havana',sg); T.news=[{kind:'spike',pid:'havana',g:sg,mult:2,until:99999,text:'Test'}];
+assert(P.sellAt('havana',sg)>spr*1.5,'news of a shortage sends the price up'); T.news=[];
+// pillaging a merchant turns its nation cold
+if($('dlg-port').open) $('set-sail').click();
+T.marque=''; T.rep.dutch=0; T.shot=30; T.hull=P.stats().hullMax; w.Math.random=()=>0.99;
+P.fight({kind:'merchant',nation:'dutch',tier:1,name:'the Test',captain:'X',cool:0,x:T.x+5,y:T.y,route:[[0,0]],leg:0},null);
+for(let i=0;i<30&&$('enc-body').querySelector('.choice');i++) $('enc-body').querySelector('.choice:not([disabled])').click();
+w.Math.random=rnd;
+assert(/strikes her colours|surrenders|rolls over and sinks/.test($('enc-text').textContent)&&T.rep.dutch<0,'the Dutch remember a pillaged merchant: '+T.rep.dutch);
+$('enc-body').querySelector('.primary').click();
+// a friendly warship takes a salute; a hostile one takes a fine and cleans the slate
+const navy=()=>({kind:'navy',nation:'britain',tier:3,name:'the Test',captain:'Captain Test',cool:0,x:T.x+5,y:T.y,route:[[0,0]],leg:0});
+T.rep.britain=30; T.salute={}; P.encounter(navy()); [...$('enc-body').querySelectorAll('.choice')].find(b=>/salute/.test(b.textContent)).click();
+assert.equal(T.rep.britain,32,'a salute warms Britain up'); $('enc-body').querySelector('.primary').click();
+T.rep.britain=-80; T.gold=1000; P.encounter(navy()); assert(/Pay what you owe Britain \(250 doubloons/.test($('enc-body').textContent),'a hostile warship wants a quarter of your gold');
+[...$('enc-body').querySelectorAll('.choice')].find(b=>/Pay what you owe/.test(b.textContent)).click();
+assert(T.gold===750&&T.rep.britain===-19,'the fine clears the worst of it'); $('enc-body').querySelector('.primary').click();
+w.dispatchEvent(new w.Event('pagehide')); const s5=JSON.parse(w.localStorage.getItem('pillageTheReefer.v1'));
+assert(s5.rep.britain===-19&&s5.jobsDone===1&&s5.flags.r5,'standing and jobs are saved');
+$('btn-log').click(); assert(/The powers of 1718/.test($('log-body').textContent)&&/Great Britain: ⚪ Neutral \(-19\)/.test($('log-body').textContent)&&$('log-body').querySelectorAll('.fl').length>=5,'the log shows every nation with its flag');
+$('log-close').click();
 assert.equal(errors.length,0,String(errors));
 console.log('pillage ok');
 process.exit(0);

@@ -325,11 +325,16 @@
       speed: 95 * (1 + 0.15 * (up.sails || 0)) * (1 + 0.05 * sail)
     };
   }
-  // kind: merchant, pirate or boss. tier: 1 (a sloop) to 5 (a man-o'-war).
+  // kind: merchant, pirate, navy or boss. tier: 1 (a sloop) to 5 (a man-o'-war).
   function foe(kind, tier) {
     tier = Math.max(1, Math.min(5, Math.round(tier) || 1));
     var cls = (D.SHIP_CLASS || [])[tier - 1] || 'sloop';
     if (kind === 'boss') return {kind: kind, tier: 4, hull: 100, fire: 12, cls: 'flagship'};
+    // A navy warship: a pirate of her size with a drilled crew behind every gun, so a little tougher.
+    if (kind === 'navy') {
+      tier = Math.max(3, tier);
+      return {kind: kind, tier: tier, hull: 10 + 16 * tier, fire: 3 * tier + 1, cls: (D.NAVY_CLASS || [])[tier - 3] || 'frigate'};
+    }
     if (kind === 'merchant') return {kind: kind, tier: tier, hull: 8 + 5 * tier, fire: 1 + tier, cls: 'merchantman'};
     return {kind: kind, tier: tier, hull: 4 + 14 * tier, fire: 3 * tier, cls: cls};
   }
@@ -339,6 +344,11 @@
     var off = r < 0.1 ? -1 : r < 0.6 ? 0 : r < 0.88 ? 1 : 2;
     if (early) off = Math.min(0, off);
     return Math.max(1, Math.min(5, (sea || 1) + (lv >= 8 ? 1 : 0) + off));
+  }
+  // Standing with a nation, -100 to 100, as a tier: 0 Hostile, 1 Wary, 2 Neutral, 3 Friendly, 4 Honoured.
+  function standTier(v) {
+    v = +v || 0;
+    return v <= -60 ? 0 : v <= -20 ? 1 : v < 20 ? 2 : v < 60 ? 3 : 4;
   }
   // A twenty-sided die: a chance becomes the number you need to roll. 50% means 11 or better.
   function need(chance) { return 21 - Math.round(chance / 5); }
@@ -379,6 +389,6 @@
     cellIdx: cellIdx, cellCenter: cellCenter, nearestFreePoint: nearestFreePoint, walkable: walkable, findPath: findPath,
     dayOf: dayOf, buyPrice: buyPrice, sellPrice: sellPrice, wanted: wanted,
     levelOf: levelOf, stats: stats, foe: foe, hit: hit, boardChance: boardChance, fleeChance: fleeChance, danger: danger,
-    relicSum: relicSum, pirateTier: pirateTier, need: need, stockMax: stockMax, pushed: pushed, BUY_PUSH: BUY_PUSH, SELL_PUSH: SELL_PUSH
+    relicSum: relicSum, pirateTier: pirateTier, need: need, standTier: standTier, stockMax: stockMax, pushed: pushed, BUY_PUSH: BUY_PUSH, SELL_PUSH: SELL_PUSH
   };
 })(typeof window !== 'undefined' ? window : globalThis);

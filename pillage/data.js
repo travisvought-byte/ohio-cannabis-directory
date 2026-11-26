@@ -241,11 +241,13 @@
         {label: 'Heard any good rumors?', next: 'rumor', if: '!hint:s1'},
         {label: 'Tell me that rumor again.', next: 'rumor2', if: 'hint:s1'},
         {label: 'Where can a ship go from here?', next: 'where'},
+        {label: 'Know any good jokes?', next: 'joke'},
         {label: 'Just passing through.', end: true}]},
+      joke: {text: 'A captain told me this one last week. Why does corn always cost a dollar? Because it’s a buck-an-ear! …Buccaneer, love. Say it fast. The real word comes from boucan, the wooden frame the old hunters on Hispaniola smoked their meat on. The French borrowed it from the Tupi people of Brazil.', options: [{label: 'Good one, Ruthie.', next: 'start'}]},
       trade: {text: 'Buy it cheap where it grows, sell it dear where it doesn’t. Tortuga Tangerine grows like a weed here, mostly because it is one. Haul it somewhere fancy, like Havana or the Spanish Main, and watch the coin roll in.', options: [{label: 'Buy low, sell high. Got it.', next: 'start'}]},
       rumor: {text: 'Old Captain Ines Featherstone grew the finest crop that ever sailed: the Emerald Bale. Before she retired she buried it and tore her map in three. One piece is on Navassa, a lonely rock south-west of here. Only goats live there. Very judgmental goats.', do: 'hint:s1', options: [{label: 'I’ll go have a look.', next: 'start'}]},
       rumor2: {text: 'Navassa, love. South-west, between here and Jamaica. Follow the smell of goat.', options: [{label: 'Thanks, Ruthie.', next: 'start'}]},
-      where: {text: 'Sail west past the tip of Cuba for the Florida Straits: Havana and Nassau. Sail off the bottom of the chart for the Spanish Main: Cartagena and friends. Sail east past Hispaniola for the Lesser Antilles and Barbados. Mind the Crown Customs cutters, with their blue sails, and the pirates with black ones. Neither has a sense of humor.', do: 'know:havana,know:cartagena,know:barbados', options: [{label: 'Blue sails, black sails. Noted.', next: 'start'}]}
+      where: {text: 'Sail west past the tip of Cuba for the Florida Straits: Havana and Nassau. Sail off the bottom of the chart for the Spanish Main: Cartagena and friends. Sail east past Hispaniola for the Lesser Antilles and Barbados. Mind the customs cutters, with their blue sails, and the pirates with black ones. Every cutter flies its own king’s flag: British red, Spanish white with a red X, French white, Dutch stripes. None of them has a sense of humor.', do: 'know:havana,know:cartagena,know:barbados', options: [{label: 'Blue sails, black sails. Noted.', next: 'start'}]}
     },
     percival: {
       name: 'Lord Percival Fopsworth III', role: 'Gentleman of delicate constitution', icon: '🎩', port: 'portroyal',
@@ -459,7 +461,12 @@
     'The note reads: “The sea keeps whatever sinks. Old Toussaint in Petit-Goâve rents out a cave where the sea can’t reach.”',
     'The note reads: “Whoever finds this: the haze over Smoke Cay never lifts. Signed, someone who got lost there for a week.”',
     'The note reads: “Pressed hash from Petit-Goâve fetches a fortune in Havana. Write down every price you see. Your ledger is your best friend.”',
-    'The note reads: “Every strain gives a different buzz. Smoke a bale of Cartagena Candy before a tricky bit of business.”'
+    'The note reads: “Every strain gives a different buzz. Smoke a bale of Cartagena Candy before a tricky bit of business.”',
+    'The note reads: “Every rope and sail on this ship is hemp. The word canvas comes from cannabis.” True, as it happens.',
+    'The note reads: “In 1692 an earthquake dropped half of Port Royal into the sea. Some say you can still hear the church bells.” The bells part is a legend; the earthquake is real.',
+    'The note reads: “A letter of marque makes you a privateer: a pirate with paperwork. Get one, and pillaging the right flag is legal.”',
+    'The note reads: “In 1717 King George offered a pardon to any pirate who gave it up within a year. Plenty took it. Some went straight back to sea.” A true story.',
+    'The note reads: “Real captains flew false colours to sneak up close, then ran up their true flag before the first shot.”'
   ];
 
   /* Smoking (or eating) one bale gives a short boost for about two days of sailing. One boost at a time: a new one replaces the old.
@@ -526,9 +533,93 @@
     crown:  {name: 'Stolen crown', icon: '👑', color: '#c99a1d', earn: 'Reach level 10'}
   };
 
+
+  /* ---------- The powers of 1718 ----------
+     The game is set in 1718: Nassau's pirate republic is in its last summer, and Britain and France are squaring up to Spain
+     (the War of the Quadruple Alliance, 1718 to 1720). Flags and facts are real; every officer, ship and captain is made up. */
+  var NATIONS = {
+    britain: {name: 'Great Britain', short: 'Britain', adj: 'British', law: 'His Majesty’s Customs', navy: 'the Royal Navy',
+      flag: 'The red ensign, with the new Union flag of 1707 in the corner.',
+      officers: ['Lieutenant Dudley Clipboard', 'Ensign Agatha Stamp', 'Sergeant Percy Paperwork', 'Lieutenant Mabel Inkwell', 'Ensign Rupert Triplicate'],
+      ships: ['HMS Stern Rebuke', 'HMS Proper Channels', 'HMS Strongly Worded', 'HMS Unamused'],
+      captains: ['Captain Aldous Throgmorton', 'Captain Euphemia Starch', 'Captain Bertram Sternwell']},
+    spain: {name: 'Spain', short: 'Spain', adj: 'Spanish', law: 'the guarda costa', navy: 'the Spanish Armada',
+      flag: 'White, with the king’s arms. The old Cross of Burgundy, a ragged red X on white, still flew beside it until 1785.',
+      officers: ['Teniente Bartolo Sello', 'Alférez Inés Papeleo', 'Sargento Lucía Expediente', 'Capitán Tomás Trámite'],
+      ships: ['Nuestra Señora del Sello', 'San Trámite', 'Santa Paciencia', 'La Ventanilla'],
+      captains: ['Don Rodrigo de la Ventanilla', 'Doña Eulalia de los Sellos', 'Don Fermín Expediente']},
+    france: {name: 'France', short: 'France', adj: 'French', law: 'the King’s customs', navy: 'the French royal navy',
+      flag: 'Plain white, sometimes strewn with gold lilies.',
+      officers: ['Enseigne Margot Paperasse', 'Lieutenant Gaston Tampon', 'Sergent Odile Formulaire'],
+      ships: ['Le Formidable Formulaire', 'La Paperasse', 'Le Tampon Royal'],
+      captains: ['Capitaine Aristide Tampon', 'Capitaine Hortense Paperasse']},
+    dutch: {name: 'the Dutch Republic', short: 'the Dutch', adj: 'Dutch', law: 'the Company’s customs', navy: 'the Dutch navy',
+      flag: 'Red, white and blue stripes. In Curaçao the Dutch West India Company ran things.',
+      officers: ['Luitenant Pieter Stempel', 'Vaandrig Femke Formulier', 'Schout Joost Papierwerk'],
+      ships: ['Zeven Stempels', 'De Nette Boekhouder', 'Het Formulier'],
+      captains: ['Kapitein Willem Boekhouder', 'Kapitein Grietje Stempel']},
+    brethren: {name: 'the Brethren of the Coast', short: 'the Brethren', adj: 'pirate', law: 'nobody', navy: 'nobody',
+      flag: 'Black, with skulls, bones and hourglasses. The name “Jolly Roger” turns up in print in the 1720s.',
+      officers: [], ships: [], captains: []}
+  };
+  var NATION_ORDER = ['britain', 'spain', 'france', 'dutch', 'brethren'];
+  // Who is at war with whom in 1718. The Dutch stayed out of the fighting and kept trading.
+  var WAR = {britain: ['spain'], france: ['spain'], spain: ['britain', 'france'], dutch: [], brethren: []};
+  var WAR_NOTE = 'Britain and France are squaring up to Spain (the War of the Quadruple Alliance, 1718 to 1720). The Dutch keep their heads down and keep trading.';
+  // Whose customs patrol each sea, whose warships sail it, and whose merchantmen trade there.
+  var SEA_LAW = {windward: 'britain', straits: 'spain', gulf: 'spain', main: 'spain', antilles: 'britain'};
+  var SEA_NAVY = {windward: ['britain'], straits: ['spain'], gulf: ['spain'], main: ['spain', 'dutch'], antilles: ['britain', 'france']};
+  var SEA_TRADE = {windward: ['britain', 'france', 'spain'], straits: ['spain', 'britain'], gulf: ['spain'], main: ['spain', 'dutch'], antilles: ['britain', 'france', 'dutch']};
+  // Navy warships come in three sizes (tier 3 to 5).
+  var NAVY_CLASS = ['sloop of war', 'frigate', 'ship of the line'];
+  // Standing with each nation, from -100 to 100, sorted into five tiers. sell and buy scale prices in its ports,
+  // bribe scales what its customs want, law scales how often and how keenly its customs bother you, pay adds to its job rewards.
+  var STAND = [
+    {name: 'Hostile', icon: '🔴', sell: 0.92, buy: 1.08, bribe: 2, law: 1.6, pay: 0},
+    {name: 'Wary', icon: '🟠', sell: 0.96, buy: 1.04, bribe: 1.5, law: 1.3, pay: 0},
+    {name: 'Neutral', icon: '⚪', sell: 1, buy: 1, bribe: 1, law: 1, pay: 0},
+    {name: 'Friendly', icon: '🟢', sell: 1.03, buy: 0.97, bribe: 0.75, law: 0.8, pay: 0.1},
+    {name: 'Honoured', icon: '🌟', sell: 1.06, buy: 0.94, bribe: 0.5, law: 0.5, pay: 0.2}
+  ];
+
+  /* Whose flag flies over each port in 1718, and one true line of its history. */
+  var PORT_INFO = {
+    tortuga: {nation: 'france', history: 'Tortuga was the buccaneers’ favourite hideout from the 1630s. By 1718 it is a quiet corner of French Saint-Domingue, and the buccaneers have mostly moved on.'},
+    portroyal: {nation: 'britain', history: 'Henry Morgan sailed from Port Royal in the 1660s. In 1692 an earthquake dropped half the town into the harbour, and Kingston grew up across the bay.'},
+    petitgoave: {nation: 'france', history: 'Petit-Goâve was a buccaneer harbour on the French side of Hispaniola. Spain signed that side over to France in 1697.'},
+    havana: {nation: 'spain', history: 'Spain’s treasure fleets gathered in Havana before crossing to Spain, so the harbour has some of the strongest forts in the Americas.'},
+    nassau: {nation: 'brethren', history: 'From about 1706 to 1718 Nassau was a pirate republic: Blackbeard, Charles Vane and Sam Bellamy all drank here. Woodes Rogers arrives in July 1718 with the King’s pardon.'},
+    cartagena: {nation: 'spain', history: 'Francis Drake captured Cartagena in 1586 and only left once the city paid a huge ransom. Spain answered with walls you can still walk on.'},
+    portobelo: {nation: 'spain', history: 'Peru’s silver came to Portobelo’s great trade fairs. Henry Morgan raided the town in 1668.'},
+    willemstad: {nation: 'dutch', history: 'The Dutch took Curaçao in 1634, and the Dutch West India Company made Willemstad one of the busiest trading ports in the Caribbean.'},
+    staugustine: {nation: 'spain', history: 'Founded in 1565, St. Augustine is the oldest town on the US mainland that Europeans founded and people have lived in ever since.'},
+    veracruz: {nation: 'spain', history: 'Veracruz was New Spain’s main port. In 1683 the buccaneers Laurens de Graaf and Michel de Grammont sacked it.'},
+    barbados: {nation: 'britain', history: 'The English settled Barbados in 1627. In 1717 Stede Bonnet, a well-off Barbados gentleman, bought a sloop and turned pirate, to everyone’s surprise.'}
+  };
+  for (var pi in PORT_INFO) if (PORTS[pi]) { PORTS[pi].nation = PORT_INFO[pi].nation; PORTS[pi].history = PORT_INFO[pi].history; }
+
+  /* The job board. Plain cargo for deliveries: none of it is weed. */
+  var JOB_CARGO = ['crates of nails and lamp oil', 'coils of hemp rope', 'bolts of hemp sailcloth', 'crates of books and letters',
+    'casks of fresh water', 'crates of cooking pots', 'barrels of tar'];
+  // Harbour news. {port}, {good}, {sea} and {law} are filled in.
+  var NEWS = {
+    spike: ['A navy squadron just dropped anchor in {port}, and every sailor ashore wants {good}.', 'There’s a big wedding in {port}. The guests want {good}, and lots of it.',
+      'A storm sank the boat that brings {good} to {port}. Buyers there are desperate.'],
+    glut: ['A bumper crop of {good} in {port}: the market is swimming in it.', 'Too many ships brought {good} to {port}. Prices there have fallen through the deck.'],
+    crack: ['A new governor wants to look tough: {law} have doubled their patrols in {sea}.', 'Word is {law} are stopping every hull in {sea} this week.'],
+    raid: ['Pirates are thick in {sea}. Three ships were taken this week.', 'A pirate crew has set up shop in {sea}. Sail careful.']
+  };
+  // What each level opens up, so the start stays simple.
+  var UNLOCK = {
+    2: 'Jobs and harbour news. Port taverns now post paid jobs (📋 Jobs), and the news moves prices.',
+    3: 'Bounties and letters of marque. Hunt wanted pirates for a nation, or carry its papers and pillage its enemies legally.'
+  };
+
   window.PILLAGE_DATA = {GOODS: GOODS, COMMON: COMMON, MAPS: MAPS, PORTS: PORTS, STASHES: STASHES, PEOPLE: PEOPLE,
     QUESTS: QUESTS, UPGRADES: UPGRADES, LEVELS: LEVELS, SKILLS: SKILLS, SKILL_MAX: SKILL_MAX, SEA_TIER: SEA_TIER,
     PIRATE_COUNT: PIRATE_COUNT, PIRATE_SHIPS: PIRATE_SHIPS, PIRATE_CAPTAINS: PIRATE_CAPTAINS, BOSS: BOSS,
     CUSTOMS_NAMES: CUSTOMS_NAMES, MERCHANT_NAMES: MERCHANT_NAMES, BOTTLE_TIPS: BOTTLE_TIPS, SMOKE: SMOKE, PARROT: PARROT,
-    SHIP_CLASS: SHIP_CLASS, HIDEOUT: HIDEOUT, RELICS: RELICS, SAILS: SAILS, FLAGS: FLAGS};
+    SHIP_CLASS: SHIP_CLASS, HIDEOUT: HIDEOUT, RELICS: RELICS, SAILS: SAILS, FLAGS: FLAGS,
+    NATIONS: NATIONS, NATION_ORDER: NATION_ORDER, WAR: WAR, WAR_NOTE: WAR_NOTE, SEA_LAW: SEA_LAW, SEA_NAVY: SEA_NAVY, SEA_TRADE: SEA_TRADE,
+    NAVY_CLASS: NAVY_CLASS, STAND: STAND, JOB_CARGO: JOB_CARGO, NEWS: NEWS, UNLOCK: UNLOCK};
 })();
