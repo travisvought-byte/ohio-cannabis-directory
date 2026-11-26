@@ -22,7 +22,7 @@ import os
 import re
 import shutil
 import sys
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 from urllib.parse import quote, urlencode, urlparse
 
@@ -1523,7 +1523,7 @@ def about_page(perm, score, directory, answers):
                  ''.join(body), 'about.html', 'the site', ld=[breadcrumbs([('Home', '')], 'about.html', 'About')], css=ICON_HEAD_CSS)
 
 
-PRIVACY_UPDATED = '2026-11-21'
+PRIVACY_UPDATED = '2026-11-26'
 PRIVACY_STATEMENT = 'https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement'
 
 
@@ -1533,7 +1533,7 @@ def privacy_page():
     contact = 'mailto:' + EMAIL + '?' + urlencode({'subject': f'{SITE_NAME}: privacy question'}, quote_via=quote)
     body = ['<p class="crumbs"><a href="index.html">Home</a> › Privacy</p>', '<h1>Privacy</h1>',
             f'<p class="muted">Last updated {long_date(PRIVACY_UPDATED)}.</p>',
-            f'<p class="lede">{esc(SITE_NAME)} does not ask who you are. It counts visits without cookies, keeps nothing you type, '
+            f'<p class="lede">{esc(SITE_NAME)} does not ask who you are, apart from the optional prize contest in its game. It counts visits without cookies, keeps nothing you type, '
             'shares nothing about you with sponsors and sells no personal information.</p>',
             '<ul class="stats" aria-label="In short">' + ''.join(f'<li><span class="si" aria-hidden="true">{icon(n)}</span><span class="l">{t}</span></li>' for n, t in (
                 ('chart', 'Visits counted without cookies'), ('lock', 'Nothing you type is kept'), ('tag', 'Nothing about you shared with sponsors'),
@@ -1563,6 +1563,16 @@ def privacy_page():
             '<p>Sponsored spots are labeled “Sponsored” and link to the sponsor’s own site. Their pictures are served from this site, so seeing a spot '
             'does not contact the sponsor. Once you follow a sponsor’s link, that site’s privacy rules apply. This site does not share visitor '
             'information with sponsors. See <a href="partners.html#sponsor">how sponsoring works</a>.</p>',
+            icon_heading(2, 'game', 'The game and its Silver Cup', 'star') + ''
+            '<p>Pillage the Reefer saves your voyage in your browser, on your device. Nothing about a regular voyage is sent to this site. '
+            'If you enter the Silver Cup, the game’s prize contest, it sends your captain name, your crew or business name and your email to the '
+            'Cup’s server, which runs on Cloudflare, along with the recorded moves of your Cup runs, so each run can be replayed and checked and the '
+            'winners reached. Captain names, crews and scores are shown on the public contest boards. Emails are never shown or shared, are used only '
+            'to contact you about the Cup, and are wiped 60 days after it closes, by February 3, 2027. To limit how many runs one network starts, the '
+            'server keeps a scrambled form of your IP address that changes every day, and drops it the next day.</p>'
+            '<p>While you sail a Cup run with live captains on, as they are unless you turn them off in the game’s Settings, the server passes your '
+            'ship’s position, captain name and crew to the other Cup players sailing, and keeps none of it. Like any web host, Cloudflare sees your IP '
+            'address when the game talks to the Cup’s server. See the <a href="../pillage/contest-rules.html#privacy">contest rules</a>.</p>',
             icon_heading(2, 'other-sites', 'Links to other sites', 'link') + ''
             '<p>Answers link to state agencies, laws and organizations, and to our other sites. Each has its own privacy rules once you are there.</p>',
             icon_heading(2, 'audience', 'Who this site is for', 'people') + ''
@@ -1818,6 +1828,23 @@ NATIONAL_GUIDES = [('Leafly', 'https://www.leafly.com/strains', 'Strain library 
                    ('Marijuana Policy Project', 'https://www.mpp.org/states/', 'Where each state’s laws and bills stand')]
 
 
+# The Silver Cup, the game's prize contest for MJBizCon week (owner direction, November 26, 2026). Times are UTC:
+# it opens at 12:00 AM Pacific on December 1 and closes at the end of December 4, Pacific.
+SILVER_CUP_END = datetime(2026, 12, 5, 8, tzinfo=timezone.utc)
+
+
+def silver_cup_banner(now=None):
+    """A one-line banner under the home page's title while the Silver Cup is ahead or on. After the close it is left out
+    of the build, and a small script removes it from a page built earlier."""
+    if (now or datetime.now(timezone.utc)) >= SILVER_CUP_END:
+        return ''
+    return ('<p class="cup-banner" id="cup-banner" data-ends="' + SILVER_CUP_END.strftime('%Y-%m-%dT%H:%M:%SZ') + '">'
+            '<a href="../pillage/contest.html" data-track="home:silver-cup"><span aria-hidden="true">🏆</span> '
+            'Win silver in our pirate game: the Silver Cup, December 1 to 4</a></p>'
+            '<script>(function(){var b=document.getElementById("cup-banner");'
+            'if(b&&Date.now()>=Date.parse(b.getAttribute("data-ends")))b.remove()})();</script>')
+
+
 def mjbizcon_card(directory, today=None):
     """The third way in while MJBizCon 2026 is ahead; after the show it is left out and a small script hides it."""
     event = next((e for e in directory.get('events', []) if e['id'] == MJBIZCON_EVENT_ID), None)
@@ -1908,7 +1935,8 @@ def home_page(perm, score, directory, answers, sources, sponsors=()):
     hero = ('<section class="hero" aria-labelledby="hero-title"><div class="wrap"><div class="copy">'
             '<p class="eyebrow">Free · All 50 states and DC · Every answer sourced</p>'
             '<h1 id="hero-title">Cannabis answers for your state, in plain language.</h1>'
-            '<p>What’s legal, where to buy, how to clear a record and where to get help, with a link to the law or agency behind every answer.</p></div>'
+            '<p>What’s legal, where to buy, how to clear a record and where to get help, with a link to the law or agency behind every answer.</p>'
+            + silver_cup_banner() + '</div>'
             f'<div class="art"><div class="shipbox">{ship_art()}{joke_bubble(jokes)}</div></div></div></section>')
     # Three ways in, big and side by side, right under the title.
     paths = ('<section class="paths-wrap" aria-label="Start here"><ul class="paths">'
@@ -1993,6 +2021,8 @@ HOME_CSS = """
 .path .go:hover,.path .go:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
 .path .alt{font-weight:700;min-height:44px;display:inline-flex;align-items:center;margin-right:14px}
 .path .pick{margin:6px 0 0;padding:0;box-shadow:none;max-width:none}.path .pick select{min-height:52px;font-size:1.1rem}
+.cup-banner{margin:14px 0 0}.cup-banner a{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:8px 18px;border-radius:999px;background:var(--gold);color:#221c08;font-weight:800;text-decoration:none}
+.cup-banner a:hover,.cup-banner a:focus-visible{outline:3px solid #fff;outline-offset:2px}
 .edu .lede{font-size:1.15rem}
 .edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
 .edu-col{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:6px 20px 16px}

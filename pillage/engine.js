@@ -5,6 +5,8 @@
   var CELL = 20;    // route-finding grid, in map units
   var MARGIN = 13;  // how far routes keep from the shore
   var SHIP_R = 7;   // the ship's own size, for running aground
+  // Plain square roots, not Math.hypot: every browser rounds them the same, so a voyage replays exactly anywhere.
+  function hyp(x, y) { return Math.sqrt(x * x + y * y); }
 
   function hashStr(s) {
     var h = 2166136261 >>> 0;
@@ -59,8 +61,8 @@
     var left = [], right = [], len = 0, tan = [];
     for (var i = 0; i < pts.length; i++) {
       var a = pts[Math.max(0, i - 1)], b = pts[Math.min(pts.length - 1, i + 1)];
-      var dx = b[0] - a[0], dy = b[1] - a[1], L = Math.hypot(dx, dy) || 1, tx = dx / L, ty = dy / L;
-      if (i > 0) len += Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]);
+      var dx = b[0] - a[0], dy = b[1] - a[1], L = hyp(dx, dy) || 1, tx = dx / L, ty = dy / L;
+      if (i > 0) len += hyp(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]);
       var w = Math.max(3, pts[i][2]);
       var wl = w * (1 + 0.13 * Math.sin(len * 0.045 + ph1) + 0.07 * Math.sin(len * 0.11 + ph2));
       var wr = w * (1 + 0.13 * Math.sin(len * 0.05 + ph2) + 0.07 * Math.sin(len * 0.12 + ph1));
@@ -167,7 +169,7 @@
   function segDist(px, py, ax, ay, bx, by) {
     var dx = bx - ax, dy = by - ay, l = dx * dx + dy * dy, t = l ? ((px - ax) * dx + (py - ay) * dy) / l : 0;
     t = clamp(t, 0, 1);
-    return Math.hypot(px - (ax + t * dx), py - (ay + t * dy));
+    return hyp(px - (ax + t * dx), py - (ay + t * dy));
   }
   function landAt(m, x, y) {
     for (var i = 0; i < m.polys.length; i++) {
@@ -231,7 +233,7 @@
     return i < 0 ? [x, y] : cellCenter(m, i);
   }
   function walkable(m, a, b) {
-    var d = Math.hypot(b[0] - a[0], b[1] - a[1]), n = Math.max(1, Math.ceil(d / 6));
+    var d = hyp(b[0] - a[0], b[1] - a[1]), n = Math.max(1, Math.ceil(d / 6));
     for (var i = 0; i <= n; i++) {
       var t = i / n;
       if (m.nav.blocked[cellIdx(m, a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t)]) return false;
@@ -345,7 +347,8 @@
       p[1] = clamp(p[1], r[1] + 20, r[1] + r[3] - 20);
       p[0] = r[0] < B.w / 2 ? r[0] + r[2] + IN : r[0] - IN;
     }
-    return p;
+    // Rounded to a 256th of a unit: browsers can disagree in the last digit of a logarithm, and a replayed voyage can't.
+    return [Math.round(p[0] * 256) / 256, Math.round(p[1] * 256) / 256];
   }
 
   /* ---------- prices ---------- */

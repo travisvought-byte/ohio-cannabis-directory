@@ -525,10 +525,10 @@
   ];
 
   // The MJBizCon week board (Las Vegas Convention Center, December 1 to 4, 2026). Times are UTC: it closes at the end of
-  // Sunday, December 6 in Las Vegas and leaves the title screen at the new year.
-  var BOARD = {name: 'MJBizCon week', open: Date.UTC(2026, 10, 26), close: Date.UTC(2026, 11, 7, 8), hide: Date.UTC(2027, 0, 1, 8), max: 30,
+  // Friday, December 4 in Las Vegas, when the Silver Cup closes, and leaves the title screen at the new year.
+  var BOARD = {name: 'MJBizCon week', open: Date.UTC(2026, 10, 26), close: Date.UTC(2026, 11, 5, 8), hide: Date.UTC(2027, 0, 1, 8), max: 30,
     url: 'https://the-reefer.com/pillage/',
-    blurb: 'For MJBizCon in Las Vegas, December 1 to 4. Show another player your score’s QR code, or send them the link, and you land on each other’s boards. Your best voyage until December 6 counts.',
+    blurb: 'For MJBizCon in Las Vegas, December 1 to 4. Show another player your score’s QR code, or send them the link, and you land on each other’s boards. Your best voyage through December 4 counts. For the silver prizes, sail in the Silver Cup.',
     // Whoever tops the overall board.
     top: 'Admiral of the Week',
     // The breakout boards: one for each thing the game counts, and a title for whoever leads it. Each player's best
@@ -542,6 +542,17 @@
       {k: 'bricks', icon: '🧱', board: 'Brick Lobbers', one: 'bale of Brick Weed lobbed', many: 'bales of Brick Weed lobbed', crown: 'Commodore of Bricks', how: 'Lob Brick Weed in a fight.'},
       {k: 'days', icon: '🧭', board: 'Old Salts', one: 'day at sea', many: 'days at sea', crown: 'Saltiest Dog', how: 'Spend a day at sea.'}
     ]};
+
+  // The Silver Cup: a prize contest for MJBizCon week. Times are UTC: it opens at 12:00 AM Pacific on December 1 and closes
+  // at the end of December 4, Pacific. A contest run is checked move by move on the Cup's server before its score counts.
+  // The game is frozen for the contest under version 'ver'; the rules for it are locked with it, harder seas included.
+  var CONTEST = {name: 'The Silver Cup', ver: 'cup1', start: Date.UTC(2026, 11, 1, 8), end: Date.UTC(2026, 11, 5, 8),
+    api: String(window.PILLAGE_CUP_API || '').replace(/\/+$/, ''),   // set in cup-api.js; until then the game only describes the contest
+    page: 'contest.html', rules: 'contest-rules.html', claim: 'veteranhomeguardians@gmail.com',
+    prizes: ['10 silver half dollars', '5 silver half dollars', '1 silver half dollar'],
+    // Harder seas in every Cup and practice run: pirates and warships hit harder and spot you from further off.
+    hard: {fire: 1.3, sight: 1.25},
+    sendEvery: 10 * 60000};
 
   /* Real geography: every sea's coastline, crossings and sea lanes, and where each port, dig site and the hideout sit. */
   var C = window.PILLAGE_COASTS;
@@ -557,5 +568,5 @@
     SHIP_CLASS: SHIP_CLASS, HIDEOUT: HIDEOUT, RELICS: RELICS, SAILS: SAILS, FLAGS: FLAGS,
     NATIONS: NATIONS, NATION_ORDER: NATION_ORDER, WAR: WAR, WAR_NOTE: WAR_NOTE, SEA_LAW: SEA_LAW, SEA_NAVY: SEA_NAVY, SEA_TRADE: SEA_TRADE,
     NAVY_CLASS: NAVY_CLASS, STAND: STAND, JOB_CARGO: JOB_CARGO, NEWS: NEWS, UNLOCK: UNLOCK, FIRE_PORTS: FIRE_PORTS, FIRESHIP_NOTE: FIRESHIP_NOTE,
-    GROW: GROW, GENES: GENES, CROSSES: CROSSES, GROW_LESSONS: GROW_LESSONS, BOARD: BOARD, SCALE: C.k};
+    GROW: GROW, GENES: GENES, CROSSES: CROSSES, GROW_LESSONS: GROW_LESSONS, BOARD: BOARD, CONTEST: CONTEST, SCALE: C.k};
 })();

@@ -43,7 +43,7 @@ SKIP = {'.git', '.github', 'node_modules', '__pycache__', '_site', '.pytest_cach
 # scripts, tests, page templates (half-built copies of real pages), assistant and release
 # instructions, and planning notes. They stay readable on GitHub. Only the site root is
 # filtered, so documentation that pages link to inside data/ (data/strains/README.md) still serves.
-WORKSHOP_DIRS = {'architecture', 'docs', 'research', 'schemas', 'scripts', 'templates', 'tests'}
+WORKSHOP_DIRS = {'architecture', 'docs', 'research', 'schemas', 'scripts', 'templates', 'tests', 'tools'}
 WORKSHOP_FILES = {'requirements.txt', 'package.json', 'package-lock.json', 'CITATION.cff',
                   'RELEASE_UPLOAD_INSTRUCTIONS.txt'}
 WORKSHOP_SUFFIXES = {'.py', '.md'}
@@ -202,6 +202,8 @@ def build(out):
     urls = [f'{SITE}/' + ('' if n == 'index.html' else n) for n in real]
     # Stand-alone pages that live in their own folder (an event page) are listed too.
     urls += [f'{SITE}/{p.parent.name}/' for p in sorted(out.glob('*/index.html')) if p.parent.name in EXTRA_FOLDERS]
+    # And their other pages, like the game's contest page and its rules.
+    urls += [f'{SITE}/{p.parent.name}/{p.name}' for p in sorted(out.glob('*/*.html')) if p.parent.name in EXTRA_FOLDERS and p.name != 'index.html']
     (out / 'sitemap.xml').write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + ''.join(f'  <url><loc>{u}</loc></url>\n' for u in urls) + '</urlset>\n', encoding='utf-8')

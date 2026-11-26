@@ -21,6 +21,10 @@
   var BOARD = D.BOARD || null, QR = window.PILLAGE_QR || null;
   // The breakout boards' stats. Set here, before the saved board is read, because reading it cleans each score's stats.
   var STATS = BOARD && BOARD.stats ? BOARD.stats : [], STAT_KEYS = STATS.map(function (S) { return S.k; });
+  // The Silver Cup: contest runs kept apart from your own voyage and checked move by move on a server before they count.
+  // cup is the run under way (null on your own voyage); REC records this page's share of its moves.
+  var CUP = D.CONTEST || null, CUP_KEY = 'pillageTheReefer.cup', CUP_ME = 'pillageTheReefer.cupMe';
+  var cup = null, REC = null;
   function $(id) { return document.getElementById(id); }
 
   /* ---------- small helpers ---------- */
@@ -33,7 +37,20 @@
   function fmt(n) { return Math.round(n).toLocaleString('en-US'); }
   function plural(n, one, many) { return n === 1 ? one : (many || one + 's'); }
   function baleWord(n) { return fmt(n) + ' ' + plural(n, 'bale'); }
-  function pick(list) { return list[Math.floor(Math.random() * list.length)]; }
+  // Every roll of the voyage comes from its own seeded dice, kept in the save, so the same moves always play out the same way.
+  // That is what lets a contest run be replayed and checked. Before a voyage exists, ordinary dice do.
+  var forced = null;  // tests can load the dice
+  function rnd() {
+    if (forced) return forced();
+    if (!state || typeof state.rng !== 'number') return Math.random();
+    var a = state.rng = (state.rng + 0x6D2B79F5) | 0;
+    var r = Math.imul(a ^ (a >>> 15), a | 1);
+    r ^= r + Math.imul(r ^ (r >>> 7), r | 61);
+    return ((r ^ (r >>> 14)) >>> 0) / 4294967296;
+  }
+  // Plain square roots, not Math.hypot: every browser rounds them the same.
+  function hyp(x, y) { return Math.sqrt(x * x + y * y); }
+  function pick(list) { return list[Math.floor(rnd() * list.length)]; }
   function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
   function andList(a) { return a.length < 2 ? a.join('') : a.slice(0, -1).join(', ') + ' and ' + a[a.length - 1]; }
   function turnToward(a, b, max) {
@@ -58,9 +75,13 @@
 
   /* ---------- the legacy: what outlives any one ship (your hideout, earned colours and flags, the hall of fame) ---------- */
   function loadLegacy() {
+    var s = null;
+    try { s = JSON.parse(localStorage.getItem(LEGACY_KEY)); } catch (e) { s = null; }
+    return parseLegacy(s);
+  }
+  function parseLegacy(s) {
     var L = {base: null, fame: [], sails: {}, flags: {}, pid: '', rivals: []};
     try {
-      var s = JSON.parse(localStorage.getItem(LEGACY_KEY));
       if (s && typeof s === 'object') {
         if (s.base && typeof s.base === 'object') {
           var b = {lvl: clamp(Math.floor(s.base.lvl) || 0, 0, HIDE.caps.length - 1), gold: Math.max(0, Math.round(s.base.gold) || 0), bales: {}};
@@ -91,7 +112,10 @@
     return L;
   }
   var legacy = loadLegacy();
-  function saveLegacy() { try { localStorage.setItem(LEGACY_KEY, JSON.stringify(legacy)); } catch (e) { /* ignore */ } }
+  function saveLegacy() {
+    if (cup) { saveCup(); return; }
+    try { localStorage.setItem(LEGACY_KEY, JSON.stringify(legacy)); } catch (e) { /* ignore */ }
+  }
   function cleanName(v, fallback) {
     var s = String(v || '').replace(/[\u0000-\u001f\u007f<>]/g, '').replace(/\s+/g, ' ').trim().slice(0, NAME_MAX);
     return s || fallback;
@@ -129,10 +153,10 @@
   var state = null, started = false, fogs = {}, npcs = {}, floaters = {}, jokes = [];
   var ship = {vx: 0, vy: 0}, auto = null, grace = 0, t = 0, wake = [], action = null, actionKey = '', justLeft = null;
   var keys = {}, timers = {reveal: 0, save: 4, where: 0, wake: 0}, lastWhereKey = '', toastTimer = 0;
-  var levelUp = 0, evClock = 70, evRecent = [], lastPortEv = -999;
+  var levelUp = 0, evClock = 70, evRecent = [], lastPortEv = -999, tipAt = 0;
 
   function newState() {
-    var p = PORTS.tortuga;
+    var p = PORTS.tortuga, s0 = Math.floor(Math.random() * 1e9);
     return {v: 1, map: 'windward', x: p.dock[0], y: p.dock[1], angle: -Math.PI / 2, gold: 250, cargo: {}, basis: {},
       up: {hold: 0, hull: 0, cannons: 0, crew: 0, sails: 0, lavender: 0, secret: 0}, hull: UP.hull.levels[0], xp: 0, pts: 0,
       skill: {fight: 0, sail: 0, charm: 0}, dist: 0, hints: {}, found: {}, quests: {}, visited: {},
@@ -140,7 +164,7 @@
       flags: {}, docked: null, fog: {}, grit: 0, buff: null, seen: {},
       shot: 12, mk: {}, look: {captain: '', ship: 'the Lucky Leaf', sail: 'canvas', flag: 'skull'}, relics: {}, gentle: false, earned: 0, bricks: 0, atBase: false,
       rep: {britain: 0, spain: 0, france: 0, dutch: 0, brethren: 0}, marque: '', jobs: [], jobsTaken: {}, jobsDone: 0, bounties: 0, news: [], lastDay: 0,
-      salute: {}, seed: Math.floor(Math.random() * 1e9), food: 20, decoys: 0, fireship: 0, record: {}, sold: 0, smoked: 0};
+      salute: {}, seed: s0, rng: s0, cup: '', food: 20, decoys: 0, fireship: 0, record: {}, sold: 0, smoked: 0};
   }
   function curMap() { return MAPS[state.map]; }
   // Your ship and skills, plus whatever boost you've smoked.
@@ -243,7 +267,7 @@
   function pct(p) { var c = chanceOf(p); return '🎲 ' + E.need(c) + '+, ' + c + '%'; }
   var lastRoll = null;
   function roll(p) {
-    var nd = E.need(chanceOf(p)), d = 1 + Math.floor(Math.random() * 20), ok = d >= nd;
+    var nd = E.need(chanceOf(p)), d = 1 + Math.floor(rnd() * 20), ok = d >= nd;
     state.grit = ok ? 0 : Math.min(3, (state.grit || 0) + 1);
     lastRoll = {d: d, need: nd, ok: ok};
     return ok;
@@ -310,7 +334,7 @@
   function baseKnown() { return !!(legacy.base || state.flags.baseKnown); }
   function nearPort(x, y, r, mid) {
     mid = mid || state.map;
-    for (var pid in PORTS) { var p = PORTS[pid]; if (p.map === mid && Math.hypot(p.dock[0] - x, p.dock[1] - y) < r) return pid; }
+    for (var pid in PORTS) { var p = PORTS[pid]; if (p.map === mid && hyp(p.dock[0] - x, p.dock[1] - y) < r) return pid; }
     return null;
   }
 
@@ -329,7 +353,7 @@
     for (var r = r0; r <= r1; r++) {
       for (var c = c0; c <= c1; c++) {
         var i = r * f.cols + c;
-        if (!f.a[i] && Math.hypot((c + 0.5) * FOG - x, (r + 0.5) * FOG - y) < rad) { f.a[i] = 1; changed = true; }
+        if (!f.a[i] && hyp((c + 0.5) * FOG - x, (r + 0.5) * FOG - y) < rad) { f.a[i] = 1; changed = true; }
       }
     }
     if (changed) f.dirty = true;
@@ -346,6 +370,12 @@
       s += String.fromCharCode(b);
     }
     return btoa(s);
+  }
+  // Only charts with something uncovered: drawing a chart makes a blank one, and a blank one says nothing.
+  function fogsOut() {
+    var o = {};
+    for (var mid in fogs) { var f = fogs[mid]; for (var i = 0; i < f.a.length; i++) if (f.a[i]) { o[mid] = encodeFog(f); break; } }
+    return o;
   }
   function decodeFog(mid, s) {
     var f = fogFor(mid);
@@ -380,9 +410,9 @@
   function save() {
     if (!state || !started) return;
     try {
-      state.fog = {};
-      for (var mid in fogs) state.fog[mid] = encodeFog(fogs[mid]);
       state.saved = Date.now();
+      if (cup) { saveCup(); return; }
+      state.fog = fogsOut();
       localStorage.setItem(SAVE_KEY, JSON.stringify(state));
     } catch (e) { /* storage full or blocked: play on */ }
   }
@@ -446,7 +476,7 @@
       var OLD = {tortuga: [1000, 302], portroyal: [545, 832], petitgoave: [985, 598], havana: [385, 746], nassau: [1132, 300], staugustine: [482, 75],
         cartagena: [500, 758], portobelo: [180, 724], willemstad: [1196, 502], veracruz: [322, 790], barbados: [1362, 800]};
       var at = b.docked ? PORTS[b.docked].dock : b.atBase ? HIDE.dock : null, bd = Infinity;
-      if (!at) for (var op in OLD) if (PORTS[op].map === b.map && Math.hypot(OLD[op][0] - b.x, OLD[op][1] - b.y) < bd) { bd = Math.hypot(OLD[op][0] - b.x, OLD[op][1] - b.y); at = PORTS[op].dock; }
+      if (!at) for (var op in OLD) if (PORTS[op].map === b.map && hyp(OLD[op][0] - b.x, OLD[op][1] - b.y) < bd) { bd = hyp(OLD[op][0] - b.x, OLD[op][1] - b.y); at = PORTS[op].dock; }
       if (!at) { b.map = 'windward'; at = PORTS.tortuga.dock; }
       b.x = at[0]; b.y = at[1];
       if (b.tmap) b.tmap.redraw = 1;
@@ -522,9 +552,9 @@
   }
   function freeSpot(m, farFromShip) {
     for (var tries = 0; tries < 80; tries++) {
-      var x = 80 + Math.random() * (m.w - 160), y = 80 + Math.random() * (m.h - 160);
+      var x = 80 + rnd() * (m.w - 160), y = 80 + rnd() * (m.h - 160);
       if (m.nav.blocked[E.cellIdx(m, x, y)] || nearPort(x, y, 280, m.id)) continue;
-      if (farFromShip && state && state.map === m.id && Math.hypot(x - state.x, y - state.y) < 480) continue;
+      if (farFromShip && state && state.map === m.id && hyp(x - state.x, y - state.y) < 480) continue;
       return [x, y];
     }
     return E.nearestFreePoint(m, m.w / 2, m.h / 2);
@@ -532,13 +562,13 @@
   function pirateShip(m, n) {
     var s = freeSpot(m, true);
     n.x = s[0]; n.y = s[1]; n.route = [s, freeSpot(m), freeSpot(m)]; n.leg = 0; n.path = null; n.pi = 0;
-    n.gone = false; n.chase = false; n.angle = Math.random() * 6;
+    n.gone = false; n.chase = false; n.angle = rnd() * 6;
     if (n.kind === 'pirate' && !n.bounty) { n.captain = pick(D.PIRATE_CAPTAINS); n.name = pick(D.PIRATE_SHIPS); n.tier = pirateTier(m.id); }
     if (n.kind === 'navy') { n.captain = pick(D.NATIONS[n.nation].captains); n.name = pick(D.NATIONS[n.nation].ships); }
     return n;
   }
   // Rougher seas and a bigger reputation bring bigger pirates, and the dice decide the rest. New captains only meet sloops and brigantines.
-  function pirateTier(mid) { return E.pirateTier(D.SEA_TIER[mid] || 1, level(), Math.random(), day() <= 3 || level() < 3); }
+  function pirateTier(mid) { return E.pirateTier(D.SEA_TIER[mid] || 1, level(), rnd(), day() <= 3 || level() < 3); }
   function shipClass(n) {
     if (n.kind === 'navy') return D.NAVY_CLASS[clamp(n.tier || 3, 3, 5) - 3];
     return n.kind === 'boss' ? 'flagship' : n.kind === 'pirate' ? (D.SHIP_CLASS[(n.tier || 1) - 1] || 'sloop') : 'merchantman';
@@ -552,11 +582,11 @@
   function dangerOf(n) { return E.danger(stats(), state.hull, E.foe(n.kind, n.tier)); }
   function spawnFloater(m, bottle) {
     for (var tries = 0; tries < 40; tries++) {
-      var x = 40 + Math.random() * (m.w - 80), y = 40 + Math.random() * (m.h - 80);
+      var x = 40 + rnd() * (m.w - 80), y = 40 + rnd() * (m.h - 80);
       if (m.nav.blocked[E.cellIdx(m, x, y)]) continue;
-      if (state && Math.hypot(x - state.x, y - state.y) < 180) continue;
-      var g = bottle ? 'bottle' : Math.random() < 0.16 ? 'mermaid' : pick(D.COMMON);
-      return {x: x, y: y, g: g, n: g === 'mermaid' || bottle ? 1 : 1 + Math.floor(Math.random() * 3), ph: Math.random() * 6};
+      if (state && hyp(x - state.x, y - state.y) < 180) continue;
+      var g = bottle ? 'bottle' : rnd() < 0.16 ? 'mermaid' : pick(D.COMMON);
+      return {x: x, y: y, g: g, n: g === 'mermaid' || bottle ? 1 : 1 + Math.floor(rnd() * 3), ph: rnd() * 6};
     }
     return null;
   }
@@ -590,7 +620,12 @@
   }
 
   /* ---------- dialogs ---------- */
-  function openDialogEl() { return document.querySelector('dialog[open]'); }
+  var dialogs = null;  // every window in the page, looked through by hand: this runs every step, and a selector search is slow
+  function openDialogEl() {
+    if (!dialogs) dialogs = Array.prototype.slice.call(document.getElementsByTagName('dialog'));  // all written in the page
+    for (var i = 0; i < dialogs.length; i++) if (dialogs[i].hasAttribute('open')) return dialogs[i];
+    return null;
+  }
   function openDialog(dlg, focusEl) {
     var live = dlg.querySelector('.dlg-live');
     if (live) { live.textContent = ''; }
@@ -600,6 +635,7 @@
   }
   function closeDialog(dlg) {
     if (typeof dlg === 'string') dlg = $(dlg);
+    if (dlg.open) dlg.setAttribute('data-shut', '1');
     if (dlg.open) { if (typeof dlg.close === 'function') dlg.close(); else { dlg.removeAttribute('open'); dlg.dispatchEvent(new Event('close')); } }
   }
   function focusSea() {
@@ -690,6 +726,7 @@
   }
   function dock(pid, lead) {
     var p = PORTS[pid], first = !state.visited[pid];
+    if (cup) setTimeout(function () { cupAuto(3 * 60000); }, 0);
     auto = null; ship.vx = ship.vy = 0;
     state.docked = pid; state.visited[pid] = 1; state.known[pid] = 1;
     notePrices(pid);
@@ -708,7 +745,7 @@
     checkGoals();
     save();
     updateWhere(true);
-    var ev = !first && t - lastPortEv > 90 && Math.random() < 0.25 ? pickEvent(EV.port) : null;
+    var ev = !first && t - lastPortEv > 90 && rnd() < 0.25 ? pickEvent(EV.port) : null;
     function open() { openPort(pid, first ? 'tavern' : 'market'); if (msg) say(msg.trim()); }
     if (ev) { lastPortEv = t; runEvent(ev, open); } else open();
   }
@@ -721,13 +758,14 @@
     closeDialog('dlg-port');
     if (!silent) say('⛵ You cast off from ' + PORTS[pid].name + '.');
     updateWhere(true);
-    if (!quick && !state.flags.p_steer) setTimeout(function () { parrot('steer', 'Arrow keys or tap the sea to steer! Chart & sail picks a port for you! Squawk!', true); }, 1200);
+    if (!quick && !state.flags.p_steer) tipAt = t + 1.2;
     save();
     focusSea();
   }
 
   function step(dt) {
     t += dt;
+    if (tipAt && t >= tipAt) { tipAt = 0; parrot('steer', 'Arrow keys or tap the sea to steer! Chart & sail picks a port for you! Squawk!', true); }
     if (toastTimer > 0) { toastTimer -= dt; if (toastTimer <= 0) $('toast').classList.remove('show'); }
     if (paused() || state.docked) return;
     if (levelUp) { showLevelUp(); return; }
@@ -741,10 +779,10 @@
     if (keys.ArrowDown || keys.s) iy += 1;
     if (ix || iy) {
       auto = null;
-      var L = Math.hypot(ix, iy);
+      var L = hyp(ix, iy);
       tx = ix / L * sp; ty = iy / L * sp;
     } else if (auto) {
-      var tg = auto.path[auto.i], dx = tg[0] - state.x, dy = tg[1] - state.y, d = Math.hypot(dx, dy), last = auto.i === auto.path.length - 1;
+      var tg = auto.path[auto.i], dx = tg[0] - state.x, dy = tg[1] - state.y, d = hyp(dx, dy), last = auto.i === auto.path.length - 1;
       if (d < (last ? 8 : 16)) {
         auto.i++;
         if (auto.i >= auto.path.length) { arrive(); return; }
@@ -759,7 +797,7 @@
     var ox = state.x, oy = state.y, nx = state.x + ship.vx * dt, ny = state.y + ship.vy * dt;
     if (!E.shipBlocked(m, nx, state.y)) state.x = nx; else ship.vx *= -0.2;
     if (!E.shipBlocked(m, state.x, ny)) state.y = ny; else ship.vy *= -0.2;
-    var moved = Math.hypot(state.x - ox, state.y - oy), vs = Math.hypot(ship.vx, ship.vy);
+    var moved = hyp(state.x - ox, state.y - oy), vs = hyp(ship.vx, ship.vy);
     state.dist += moved;
     var worn = boostTick(moved), news = dayTick();
     if (worn || news) say(((worn || '') + ' ' + (news || '')).trim());
@@ -769,7 +807,7 @@
     if (auto) {
       auto.chk += dt;
       if (auto.chk > 1.2) {
-        if (Math.hypot(state.x - auto.lx, state.y - auto.ly) < 4) {
+        if (hyp(state.x - auto.lx, state.y - auto.ly) < 4) {
           auto.stuck++;
           var np = auto.stuck < 3 ? E.findPath(m, state.x, state.y, auto.target[0], auto.target[1]) : null;
           if (np) { auto.path = np; auto.i = 0; } else { auto = null; say('Your crew can’t find a way through. Try steering a little first.'); }
@@ -800,10 +838,10 @@
     if (paused()) return;
     evClock -= dt;
     if (evClock <= 0) {
-      var busy = npcs[state.map].some(function (n) { return !n.gone && Math.hypot(n.x - state.x, n.y - state.y) < 280; });
+      var busy = npcs[state.map].some(function (n) { return !n.gone && hyp(n.x - state.x, n.y - state.y) < 280; });
       if (vs > 10 && grace <= 0 && !busy && !nearPort(state.x, state.y, 220)) {
         var ev = pickEvent(EV.sea);
-        evClock = 75 + Math.random() * 40;
+        evClock = 75 + rnd() * 40;
         if (ev) { runEvent(ev); return; }
       } else evClock = 5;
     }
@@ -819,17 +857,17 @@
     F.timer -= dt;
     if (F.timer <= 0) {
       var comb = boost() && boost().comb;
-      F.timer = (16 + Math.random() * 18) * (comb ? 0.5 : 1);
+      F.timer = (16 + rnd() * 18) * (comb ? 0.5 : 1);
       if (F.list.filter(function (b) { return b.g !== 'bottle'; }).length < (comb ? 6 : 4)) { var b = spawnFloater(m, false); if (b) F.list.push(b); }
     }
     F.bottle -= dt;
     if (F.bottle <= 0) {
-      F.bottle = 70 + Math.random() * 50;
+      F.bottle = 70 + rnd() * 50;
       if (!F.list.some(function (b) { return b.g === 'bottle'; })) { var bt = spawnFloater(m, true); if (bt) F.list.push(bt); }
     }
     for (var i = F.list.length - 1; i >= 0; i--) {
       var f = F.list[i];
-      if (Math.hypot(f.x - state.x, f.y - state.y) > 22) continue;
+      if (hyp(f.x - state.x, f.y - state.y) > 22) continue;
       if (f.g === 'bottle') { F.list.splice(i, 1); sfx('pickup'); openBottle(); return; }
       if (space() <= 0) { parrot('full', 'Hold’s full! Hold’s full! Sell, sell! Squawk!', false, 25); continue; }
       var n = addCargo(f.g, f.n);
@@ -840,9 +878,10 @@
     }
   }
   function openBottle() {
-    var text;
-    if (jokes.length && Math.random() < 0.75) text = 'You fish a bottle out of the waves. The note inside says:\n\n“' + pick(jokes) + '”';
-    else text = 'You fish a bottle out of the waves. ' + pick(D.BOTTLE_TIPS);
+    // Two rolls every time, jokes or no jokes, so a bottle never changes what the dice do next.
+    var text, r = rnd(), j = rnd();
+    if (jokes.length && r < 0.75) text = 'You fish a bottle out of the waves. The note inside says:\n\n“' + jokes[Math.floor(j * jokes.length)] + '”';
+    else text = 'You fish a bottle out of the waves. ' + D.BOTTLE_TIPS[Math.floor(j * D.BOTTLE_TIPS.length)];
     note('🍾 Message in a bottle', text);
   }
 
@@ -857,7 +896,7 @@
       if (n.cool > 0) n.cool -= dt;
       if (n.looted && n.cool <= 0) { n.looted = false; n.name = pick(D.MERCHANT_NAMES); n.nation = pick(D.SEA_TRADE[m.id] || ['britain']); }
       if (n.gone) { if (n.cool <= 0) pirateShip(m, n); continue; }
-      var d = Math.hypot(n.x - state.x, n.y - state.y), tx, ty, chase = false;
+      var d = hyp(n.x - state.x, n.y - state.y), tx, ty, chase = false;
       var sp = n.kind === 'customs' ? 78 : n.kind === 'merchant' ? 48 : navy ? 60 : 64;
       if (n.kind === 'customs') {
         // A nation that dislikes you has its customs sniffing harder, and a crackdown more so.
@@ -867,11 +906,11 @@
       } else if (raider) {
         // Pirates leave you be near a port's guns, and don't bother with a ship that's already battered.
         // Small pirates that see Gristle's flag on your mast want nothing to do with you.
-        chase = n.cool <= 0 && !safe && !weak && !calmed && !scared && d < 240 && E.walkable(m, [n.x, n.y], [state.x, state.y]);
+        chase = n.cool <= 0 && !safe && !weak && !calmed && !scared && d < 240 * sight() && E.walkable(m, [n.x, n.y], [state.x, state.y]);
         if (chase && !n.chase) parrot('pirate', 'Black sails! A pirate ' + shipClass(n) + '! ' + DANGER[dangerOf(n)] + '! Squawk!', false, 30);
       } else if (navy) {
         // Warships come for a captain their nation is wary of, port guns or no port guns.
-        chase = n.cool <= 0 && hostile && d < 260 && E.walkable(m, [n.x, n.y], [state.x, state.y]);
+        chase = n.cool <= 0 && hostile && d < 260 * sight() && E.walkable(m, [n.x, n.y], [state.x, state.y]);
         if (chase && !n.chase) parrot('navy', 'A ' + NAT[n.nation].adj + ' ' + shipClass(n) + '! ' + cap(NAT[n.nation].short) + ' wants a word! ' + DANGER[dangerOf(n)] + '! Squawk!', false, 30);
       } else if (n.kind === 'boss' && d < 320) {
         // Gristle never chases: you pick the moment by sailing into him.
@@ -887,14 +926,14 @@
           n.pi = 0;
         }
         var p = n.path[n.pi];
-        if (Math.hypot(p[0] - n.x, p[1] - n.y) < 12) {
+        if (hyp(p[0] - n.x, p[1] - n.y) < 12) {
           n.pi++;
           if (n.pi >= n.path.length) { n.leg = (n.leg + 1) % n.route.length; n.path = null; }
           continue;
         }
         tx = p[0]; ty = p[1];
       }
-      var dx = tx - n.x, dy = ty - n.y, L = Math.hypot(dx, dy) || 1, vx = dx / L * sp, vy = dy / L * sp;
+      var dx = tx - n.x, dy = ty - n.y, L = hyp(dx, dy) || 1, vx = dx / L * sp, vy = dy / L * sp;
       var nx = n.x + vx * dt, ny = n.y + vy * dt;
       if (!E.shipBlocked(m, nx, n.y)) n.x = nx;
       if (!E.shipBlocked(m, n.x, ny)) n.y = ny;
@@ -907,19 +946,19 @@
   /* ---------- the context button: dock or dig ---------- */
   function updateAction() {
     var a = null, mid = state.map, jl = justLeft && place(justLeft);
-    if (jl && (jl.map !== mid || Math.hypot(jl.dock[0] - state.x, jl.dock[1] - state.y) > 75)) justLeft = null;
-    if (HIDE.map === mid && justLeft !== 'hideout' && baseKnown() && Math.hypot(HIDE.dock[0] - state.x, HIDE.dock[1] - state.y) < 55) {
+    if (jl && (jl.map !== mid || hyp(jl.dock[0] - state.x, jl.dock[1] - state.y) > 75)) justLeft = null;
+    if (HIDE.map === mid && justLeft !== 'hideout' && baseKnown() && hyp(HIDE.dock[0] - state.x, HIDE.dock[1] - state.y) < 55) {
       a = {kind: 'base', id: 'hideout', label: legacy.base ? '🏚️ Enter your hideout' : '🔒 Try the cave door'};
     }
     for (var pid in PORTS) {
       var p = PORTS[pid];
-      if (!a && pid !== justLeft && p.map === mid && Math.hypot(p.dock[0] - state.x, p.dock[1] - state.y) < 55) { a = {kind: 'dock', id: pid, label: '⚓ Dock at ' + p.name}; break; }
+      if (!a && pid !== justLeft && p.map === mid && hyp(p.dock[0] - state.x, p.dock[1] - state.y) < 55) { a = {kind: 'dock', id: pid, label: '⚓ Dock at ' + p.name}; break; }
     }
     if (!a) {
       for (var sid in STASHES) {
         var s = STASHES[sid];
         if (s.map !== mid || state.found[sid]) continue;
-        var d = Math.hypot(s.at[0] - state.x, s.at[1] - state.y);
+        var d = hyp(s.at[0] - state.x, s.at[1] - state.y);
         if (d > 70) continue;
         if (s.needs && pieces() < s.needs) { parrot('haze', 'Something’s buried under that haze, Cap’n, but we need the whole map! Squawk!', false, 60); continue; }
         if (state.hints[sid] || s.needs) a = {kind: 'dig', id: sid, label: '⛏️ Dig for treasure'};
@@ -927,7 +966,7 @@
       }
     }
     var tm = state.tmap;
-    if (!a && tm && tm.map === mid && Math.hypot(tm.at[0] - state.x, tm.at[1] - state.y) < 70) a = {kind: 'dig', id: 'tmap', label: '⛏️ Dig for treasure'};
+    if (!a && tm && tm.map === mid && hyp(tm.at[0] - state.x, tm.at[1] - state.y) < 70) a = {kind: 'dig', id: 'tmap', label: '⛏️ Dig for treasure'};
     action = a;
     var key = a ? a.kind + a.id : '';
     if (key !== actionKey) {
@@ -950,7 +989,7 @@
   // A treasure map points at a small island in a sea you know. One map at a time keeps it simple.
   function giveMap() {
     if (state.tmap) return null;
-    var mid = Math.random() < 0.6 ? state.map : pick(Object.keys(MAPS).filter(seenSea)), spots = mapSpots(mid);
+    var mid = rnd() < 0.6 ? state.map : pick(Object.keys(MAPS).filter(seenSea)), spots = mapSpots(mid);
     if (!spots.length) return null;
     var sp = pick(spots);
     state.tmap = {map: mid, at: sp.at, name: sp.name, tier: D.SEA_TIER[mid] || 1};
@@ -972,9 +1011,9 @@
       if (!L.blob || L.haze || Math.max(L.blob[2], L.blob[3]) > 32) return;
       var at = [L.blob[0], L.blob[1]];
       if (nearPort(at[0], at[1], 150, mid)) return;
-      if (Object.keys(STASHES).some(function (k) { var s = STASHES[k]; return s.map === mid && Math.hypot(s.at[0] - at[0], s.at[1] - at[1]) < 60; })) return;
+      if (Object.keys(STASHES).some(function (k) { var s = STASHES[k]; return s.map === mid && hyp(s.at[0] - at[0], s.at[1] - at[1]) < 60; })) return;
       var f = E.nearestFreePoint(m, at[0], at[1]);
-      if (Math.hypot(f[0] - at[0], f[1] - at[1]) > 55) return;
+      if (hyp(f[0] - at[0], f[1] - at[1]) > 55) return;
       spots.push({name: L.name, at: at});
     });
     return spots;
@@ -984,10 +1023,10 @@
     if (!tm) return;
     state.tmap = null;
     state.dug++;
-    var gold = Math.round((70 + Math.random() * 60) * tm.tier), got = '';
+    var gold = Math.round((70 + rnd() * 60) * tm.tier), got = '';
     state.gold += gold;
-    if (Math.random() < 0.45) {
-      var g = Math.random() < 0.5 ? 'kraken' : 'mermaid', k = addCargo(g, g === 'kraken' ? 1 : 2);
+    if (rnd() < 0.45) {
+      var g = rnd() < 0.5 ? 'kraken' : 'mermaid', k = addCargo(g, g === 'kraken' ? 1 : 2);
       if (k) got = ' and ' + baleWord(k) + ' of ' + GOODS[g].name;
     }
     sfx('fanfare');
@@ -1224,7 +1263,7 @@
     showEncounter('🟤 A fat ' + N.adj + ' merchantman!', cap(n.name) + ' wallows alongside under the flag of ' + N.name + ', low in the water. Her crew looks nervous. Her cargo smells wonderful.', [
       {label: '⚔️ Attack her! (' + DANGER[dz].toLowerCase() + (legal ? '; fair game under your ' + NAT[state.marque].adj + ' letter of marque' : '; ' + N.short + ' won’t like it') + ')', next: function () { fight(n); }},
       {label: '👋 Wave politely', fn: function () {
-        if (Math.random() < 0.25 && space() > 0) { var g = pick(D.COMMON); addCargo(g, 1); return 'The merchants wave back. Touched, they toss you a bale of ' + GOODS[g].name + ' out of pure pity.'; }
+        if (rnd() < 0.25 && space() > 0) { var g = pick(D.COMMON); addCargo(g, 1); return 'The merchants wave back. Touched, they toss you a bale of ' + GOODS[g].name + ' out of pure pity.'; }
         return 'The merchants wave back. Everyone feels good about it. Nothing else happens.';
       }},
       {label: '⛵ Leave her be', fn: function () { return 'You let ' + n.name + ' waddle on. The sea is big enough for everyone.'; }}
@@ -1239,7 +1278,9 @@
   function lobFire(st, g) { return g === 'brick' && state.relics.goldbrick ? st.fire : Math.max(1, Math.round(st.fire * 0.6)); }
   function range(fire) { return Math.max(1, Math.round(fire * 0.85)) + ' to ' + Math.max(1, Math.round(fire * 1.15)); }
   // Every bale of weed that lands gets their crew a little higher: they aim worse and they're easier to board.
-  function enemyFire(B) { return B.en.fire * (1 - 0.2 * (B.high || 0)); }
+  function enemyFire(B) { return B.en.fire * (1 - 0.2 * (B.high || 0)) * (state.cup && CUP ? CUP.hard.fire : 1); }
+  // In a Silver Cup run, pirates and warships spot you from further off.
+  function sight() { return state.cup && CUP ? CUP.hard.sight : 1; }
   function boardP(B, st) { return Math.min(0.95, E.boardChance(st, B.en, B.eh) + 0.1 * (B.high || 0)); }
   function fight(n, after) {
     var B = {n: n, en: E.foe(n.kind, n.tier), round: 0, after: after, high: 0}, intro, cls = shipClass(n);
@@ -1401,7 +1442,7 @@
       var lob = act === 'lob' ? lobPick() : null;
       if (act === 'lob' && !lob) { renderFight(B, 'You have nothing left to lob.'); return; }
       if (act === 'fire' && state.shot < 1) { renderFight(B, 'You’re out of cannonballs.'); return; }
-      var d = 1 + Math.floor(Math.random() * 20), dmg = E.hit(lob ? lobFire(st, lob) : st.fire, Math.random()), crit = d === 20;
+      var d = 1 + Math.floor(rnd() * 20), dmg = E.hit(lob ? lobFire(st, lob) : st.fire, rnd()), crit = d === 20;
       if (crit) dmg *= 2;
       die = {d: d, need: 0, ok: true};
       B.eh = Math.max(0, B.eh - dmg);
@@ -1419,7 +1460,7 @@
       if (B.eh <= 0) { win(B, 'sink', die); return; }
       if (n.kind === 'merchant' && B.eh <= en.hull * 0.35) { win(B, 'strike', die); return; }
     }
-    var back = E.hit(enemyFire(B) * (act === 'board' ? 1.25 : 1), Math.random());
+    var back = E.hit(enemyFire(B) * (act === 'board' ? 1.25 : 1), rnd());
     state.hull = Math.max(0, state.hull - back);
     txt += ' ' + (n.kind === 'merchant' ? 'Her crew fires back' : 'They fire back') + ' for ' + back + '.';
     if (state.hull <= 0) {
@@ -1432,20 +1473,20 @@
     var n = B.n, en = B.en, st = stats(), haul = {}, got = [], left = 0, gold, xp, count = 0, total = 0, note2 = '';
     if (n.kind === 'boss') { gold = D.BOSS.gold; haul = Object.assign({}, D.BOSS.loot); xp = 600; }
     else if (n.kind === 'merchant') {
-      gold = Math.round((30 + Math.random() * 40) * en.tier);
-      count = 3 + Math.floor(Math.random() * 4) + 2 * st.crew;
-      if (Math.random() < 0.35) haul.kraken = Math.random() < 0.3 ? 2 : 1;
+      gold = Math.round((30 + rnd() * 40) * en.tier);
+      count = 3 + Math.floor(rnd() * 4) + 2 * st.crew;
+      if (rnd() < 0.35) haul.kraken = rnd() < 0.3 ? 2 : 1;
       xp = 12 + 10 * en.tier;
       if (state.marque && atWar(state.marque, n.nation || lawOf(state.map))) gold = Math.round(gold * 1.2);
     } else if (n.kind === 'navy') {
-      gold = Math.round((80 + Math.random() * 60) * en.tier);
-      count = 1 + Math.floor(Math.random() * 3) + st.crew;
+      gold = Math.round((80 + rnd() * 60) * en.tier);
+      count = 1 + Math.floor(rnd() * 3) + st.crew;
       xp = 40 + 35 * en.tier;
     } else {
-      gold = Math.round((60 + Math.random() * 70) * en.tier);
-      count = 2 + Math.floor(Math.random() * 3) + st.crew;
+      gold = Math.round((60 + rnd() * 70) * en.tier);
+      count = 2 + Math.floor(rnd() * 3) + st.crew;
       if (en.tier >= 4) haul.pearl = en.tier - 3;
-      else if (Math.random() < 0.3) haul[Math.random() < 0.5 ? 'kraken' : 'mermaid'] = 1;
+      else if (rnd() < 0.3) haul[rnd() < 0.5 ? 'kraken' : 'mermaid'] = 1;
       xp = 30 + 30 * en.tier;
     }
     for (var h in haul) total += haul[h];
@@ -1472,7 +1513,7 @@
       : cap(n.name) + ' rolls over and sinks. ' + foeName(n) + ' and the crew row away in a very small boat.';
     txt = (die ? rollText(die) : '') + txt + note2;
     txt += ' You take ' + fmt(gold) + ' doubloons' + (got.length ? ' and ' + andList(got) : '') + '.' + (left ? ' Your hold can’t fit the other ' + baleWord(left) + '.' : '');
-    if (n.kind === 'pirate' && !state.tmap && Math.random() < 0.35) { var map = giveMap(); if (map) txt += ' In the captain’s cabin you find a treasure map. ' + map; }
+    if (n.kind === 'pirate' && !state.tmap && rnd() < 0.35) { var map = giveMap(); if (map) txt += ' In the captain’s cabin you find a treasure map. ' + map; }
     if (n.kind === 'boss') txt += ' ' + D.BOSS.captain + ' is marooned on a sandbar with a hat and a coconut. Every tavern from here to Tortuga will be singing about you.';
     txt += gainXp(xp);
     var bj = bountyOf(n);
@@ -1532,7 +1573,8 @@
     sfx('bad');
     addFame(state, 'sunk', 'sunk by ' + foeName(n) + ' of ' + n.name);
     started = false;
-    try { localStorage.removeItem(SAVE_KEY); } catch (e) { /* ignore */ }
+    if (cup) cupOver('sunk');
+    else try { localStorage.removeItem(SAVE_KEY); } catch (e) { /* ignore */ }
     track('sunk');
     $('enc-title').textContent = '💀 ' + cap(shipName()) + ' goes down';
     body.textContent = '';
@@ -1541,7 +1583,8 @@
     var keep = [];
     if (legacy.base) keep.push('your hideout on ' + HIDE.name + ' still holds ' + fmt(legacy.base.gold) + ' doubloons and ' + baleWord(baseBales()));
     keep.push('your name is in the hall of fame');
-    body.appendChild(el('p', null, 'What the sea can’t take: ' + andList(keep) + '. Any sail colours and flags you earned stay earned.'));
+    if (cup) body.appendChild(el('p', null, 'This ' + (cup.run.practice ? 'practice run' : 'Silver Cup run') + ' is over at ' + fmt(Math.round(state.xp)) + ' renown. It goes to the Cup’s server to be checked, and you can start another run any time the Cup is open.'));
+    else body.appendChild(el('p', null, 'What the sea can’t take: ' + andList(keep) + '. Any sail colours and flags you earned stay earned.'));
     var c = el('button', {type: 'button', class: 'primary', 'aria-describedby': 'enc-text'}, 'Back to the harbour');
     c.addEventListener('click', function () { closeDialog('dlg-encounter'); showTitle(); setTimeout(function () { $('btn-new').focus(); }, 0); });
     body.appendChild(c);
@@ -1627,8 +1670,8 @@
     return {
       tier: tier(), st: stats(), parrot: D.PARROT, odds: pct, check: roll, xp: gainXp, give: addCargo, cargo: cargoCount, space: space, giveMap: giveMap,
       // check() is a shown check: it rolls the same percentage odds() prints. chance() is for hidden surprises.
-      chance: function (p) { return Math.random() < p; },
-      rand: function (lo, hi) { return lo + Math.floor(Math.random() * (hi - lo + 1)); },
+      chance: function (p) { return rnd() < p; },
+      rand: function (lo, hi) { return lo + Math.floor(rnd() * (hi - lo + 1)); },
       goldNow: function () { return state.gold; },
       hasGold: function (n) { return state.gold >= n; },
       gold: function (n) { var was = state.gold; state.gold = Math.max(0, Math.round(state.gold + n)); if (n > 0) sfx('coin'); return state.gold - was; },
@@ -1828,15 +1871,15 @@
   function seaNews(kind, mid) { for (var i = 0; i < (state.news || []).length; i++) { var x = state.news[i]; if (x.kind === kind && x.sea === mid) return x; } return null; }
   function stockCap(pid, g) { var mx = E.stockMax(pid, g); return mx && newsOn('glut', pid, g) ? mx * 2 : mx; }
   function makeNews() {
-    var d = day(), r = Math.random(), kind = r < 0.4 ? 'spike' : r < 0.65 ? 'glut' : r < 0.85 ? 'crack' : 'raid';
-    var ports = Object.keys(PORTS).filter(portKnown), seas = Object.keys(MAPS).filter(seenSea), x = {kind: kind, until: d + 3 + Math.floor(Math.random() * 3)};
+    var d = day(), r = rnd(), kind = r < 0.4 ? 'spike' : r < 0.65 ? 'glut' : r < 0.85 ? 'crack' : 'raid';
+    var ports = Object.keys(PORTS).filter(portKnown), seas = Object.keys(MAPS).filter(seenSea), x = {kind: kind, until: d + 3 + Math.floor(rnd() * 3)};
     if (kind === 'spike' || kind === 'glut') {
       x.pid = pick(ports);
       var P = PORTS[x.pid], opts = D.COMMON.filter(function (g) { return kind === 'spike' ? P.sells.indexOf(g) < 0 : P.sells.indexOf(g) >= 0; });
       if (!opts.length) return null;
       x.g = pick(opts);
       if (newsOn(kind, x.pid, x.g) || newsOn(kind === 'spike' ? 'glut' : 'spike', x.pid, x.g)) return null;
-      x.mult = kind === 'spike' ? Math.round((1.8 + Math.random() * 0.6) * 100) / 100 : 0.55;
+      x.mult = kind === 'spike' ? Math.round((1.8 + rnd() * 0.6) * 100) / 100 : 0.55;
       if (kind === 'glut' && state.mk[x.pid]) state.mk[x.pid].st[x.g] = E.stockMax(x.pid, x.g) * 2;
     } else {
       x.sea = pick(seas);
@@ -1872,7 +1915,7 @@
     for (var id in state.jobsTaken) if (+id.split(':')[1] < per - 1) delete state.jobsTaken[id];
     state.news = state.news.filter(function (x) { return x.until >= d; });
     if (level() >= 2) for (var i = 0; i < passed && state.news.length < 3; i++) {
-      if (Math.random() >= 0.4) continue;
+      if (rnd() >= 0.4) continue;
       var x = makeNews();
       if (x) { state.news.push(x); msgs.push('📰 Harbour news: ' + x.text); }
     }
@@ -2284,7 +2327,7 @@
     var m = E.prepareMap(mid), s = E.nearestFreePoint(m, a[0], a[1]), f = E.nearestFreePoint(m, b[0], b[1]), path = E.findPath(m, s[0], s[1], f[0], f[1]);
     if (!path) return null;
     var L = 0, px = s[0], py = s[1];
-    path.forEach(function (q) { L += Math.hypot(q[0] - px, q[1] - py); px = q[0]; py = q[1]; });
+    path.forEach(function (q) { L += hyp(q[0] - px, q[1] - py); px = q[0]; py = q[1]; });
     return L;
   }
   // The sea route from one port to another: how far, how many days, which seas.
@@ -2335,14 +2378,14 @@
     var from = state.docked || (state.atBase ? 'hideout' : null), v = from && to !== from ? voyage(from, to) : null;
     if (!v) return false;
     var risk = passageRisk(v), meet = [];
-    if (Math.random() * 100 < risk.customs) meet.push('customs');
-    if (risk.navy && Math.random() * 100 < risk.navy) meet.push('navy');
-    if (Math.random() * 100 < risk.pirates) {
+    if (rnd() * 100 < risk.customs) meet.push('customs');
+    if (risk.navy && rnd() * 100 < risk.navy) meet.push('navy');
+    if (rnd() * 100 < risk.pirates) {
       meet.push('pirate');
-      if (Math.random() * 100 < risk.second * 2 && meet.length < 2) meet.push('pirate');
+      if (rnd() * 100 < risk.second * 2 && meet.length < 2) meet.push('pirate');
     }
     // A wanted pirate whose sea you cross may cross your path.
-    state.jobs.forEach(function (j) { if (j.kind === 'bounty' && !j.hit && v.seas.indexOf(j.sea) >= 0 && meet.length < 3 && Math.random() < 0.4) meet.push('bounty:' + j.id); });
+    state.jobs.forEach(function (j) { if (j.kind === 'bounty' && !j.hit && v.seas.indexOf(j.sea) >= 0 && meet.length < 3 && rnd() < 0.4) meet.push('bounty:' + j.id); });
     if (from === 'hideout') leaveBase(true); else leavePort(true, true);
     auto = null; ship.vx = ship.vy = 0; wake = []; keys = {};
     // A passage takes whole days, so the day counter moves by exactly the days shown.
@@ -2388,7 +2431,7 @@
     }
     if (meet.length) next();
     else {
-      var ev = Math.random() < 0.25 ? pickEvent(EV.sea) : null;
+      var ev = rnd() < 0.25 ? pickEvent(EV.sea) : null;
       if (ev) runEvent(ev, land); else land();
     }
     return true;
@@ -3529,9 +3572,10 @@
     $('cap-ship').value = L.ship;
     swatches('cap-sails', 'cap-sail', SAILS, legacy.sails, L.sail);
     swatches('cap-flags', 'cap-flag', FLAGS, legacy.flags, L.flag);
-    $('cap-mode').hidden = !fresh;
-    $('cap-mode-note').hidden = !!fresh;
-    $('cap-mode-note').textContent = state.gentle ? 'This voyage sails gentle seas. You pick real danger or gentle seas when you start a new voyage.'
+    $('cap-mode').hidden = !fresh || !!state.cup;
+    $('cap-mode-note').hidden = !!fresh && !state.cup;
+    $('cap-mode-note').textContent = state.cup ? 'Silver Cup runs sail in real danger, and the seas are rougher: pirates and warships hit harder and spot you from further off.'
+      : state.gentle ? 'This voyage sails gentle seas. You pick real danger or gentle seas when you start a new voyage.'
       : 'This voyage sails in real danger. You pick real danger or gentle seas when you start a new voyage.';
     if (fresh) $('cap-real').checked = true;
     $('cap-ok').textContent = fresh ? 'Set sail' : 'Done';
@@ -3543,7 +3587,7 @@
     L.ship = cleanName($('cap-ship').value, 'the Lucky Leaf');
     if (s && SAILS[s.value] && (!SAILS[s.value].earn || legacy.sails[s.value])) L.sail = s.value;
     if (f && FLAGS[f.value] && (!FLAGS[f.value].earn || legacy.flags[f.value])) L.flag = f.value;
-    if (capFresh) state.gentle = !!$('cap-gentle').checked;
+    if (capFresh) state.gentle = !state.cup && !!$('cap-gentle').checked;
     needRender = true;
     save();
   }
@@ -3629,10 +3673,10 @@
     var x = (ev.clientX - r.left) / r.width * m.w, y = (ev.clientY - r.top) / r.height * m.h, best = null, bd = 70;
     destinations(chartMap).forEach(function (d) {
       if (d.here) return;
-      var dd = Math.hypot(d.x - x, d.y - y);
+      var dd = hyp(d.x - x, d.y - y);
       if (dd < bd) { bd = dd; best = d; }
     });
-    if (best) { closeDialog('dlg-chart'); setCourse(best.type === 'exit' ? goExit(best) : best); }
+    if (best) act(['pick', best]);
   }
 
   /* ---------- where am I (for everyone, and read aloud for screen readers) ---------- */
@@ -3645,7 +3689,7 @@
       Object.keys(PORTS).forEach(function (pid) {
         var p = PORTS[pid];
         if (p.map !== state.map || !portKnown(pid)) return;
-        var d = Math.hypot(p.dock[0] - state.x, p.dock[1] - state.y);
+        var d = hyp(p.dock[0] - state.x, p.dock[1] - state.y);
         if (d < bd) { bd = d; best = pid; }
       });
       txt = '📍 ' + m.name + '.';
@@ -3744,7 +3788,7 @@
     c.restore();
   }
   function drawTown(c, p) {
-    var x = p.town[0], y = p.town[1], dx = p.dock[0] - x, dy = p.dock[1] - y, d = Math.hypot(dx, dy) || 1;
+    var x = p.town[0], y = p.town[1], dx = p.dock[0] - x, dy = p.dock[1] - y, d = hyp(dx, dy) || 1;
     c.strokeStyle = '#6b4a2b'; c.lineWidth = 3.5; c.lineCap = 'round';
     c.beginPath(); c.moveTo(x + dx / d * 8, y + dy / d * 8); c.lineTo(x + dx * 0.72, y + dy * 0.72); c.stroke();
     var houses = [[-10, -3, '#c0392b'], [0, -8, '#d35400'], [10, -2, '#2e86c1'], [-4, 5, '#8e44ad'], [7, 6, '#27ae60']];
@@ -3839,6 +3883,7 @@
         var back = 28 + 16 * di, side = (di % 2 ? 1 : -1) * 11;
         drawShip(c, state.x - ex * back - ey * side, state.y - ey * back + ex * side, state.angle + bob, di < (state.decoys || 0) ? playerLook() : LOOK.fireship, 10);
       }
+      ghostsShown = cup ? drawGhosts(c, mid) : false;
       drawShip(c, state.x, state.y, state.angle + bob, playerLook(), 15);
     }
     c.imageSmoothingEnabled = true;
@@ -3885,7 +3930,7 @@
     if (!chart && mid === state.map) {
       npcs[mid].forEach(function (n) {
         if (n.gone || (n.kind !== 'pirate' && n.kind !== 'boss' && n.kind !== 'navy') || !explored(mid, n.x, n.y)) return;
-        if (((n.kind === 'pirate' && !n.bounty) || n.kind === 'navy') && Math.hypot(n.x - state.x, n.y - state.y) > 380) return;
+        if (((n.kind === 'pirate' && !n.bounty) || n.kind === 'navy') && hyp(n.x - state.x, n.y - state.y) > 380) return;
         var label = n.kind === 'boss' ? '💀 Gristle' : n.kind === 'navy' ? '⚓ ' + cap(NAT[n.nation].adj) + ' ' + shipClass(n) : n.bounty ? '🎯 Wanted: ' + n.captain : '☠️ ' + cap(shipClass(n));
         pill(c, label, sx(n.x), sy(n.y) - 30, {font: '700 11px system-ui, sans-serif', h: 18, bg: n.kind === 'navy' ? 'rgba(18,40,80,.92)' : n.bounty ? 'rgba(122,23,18,.92)' : 'rgba(24,18,16,.9)', ink: '#fff', line: 'rgba(255,255,255,.5)'});
       });
@@ -3898,13 +3943,17 @@
     });
   }
 
-  var lastFrame = 0;
+  // The sea moves in fixed sixtieths of a second, however fast the screen draws, so the same moves always play out the same way.
+  var STEP = 1 / 60, lastFrame = 0, acc = 0;
+  function tick() { if (cup && cup.over) return; if (REC) REC.tick(); step(STEP); }
   function frame(ts) {
     var dt = Math.min(0.05, Math.max(0, (ts - lastFrame) / 1000));
     lastFrame = ts;
-    if (state) {
-      var was = paused();
-      step(dt);
+    if (state && !document.hidden) {
+      var was = paused(), n = 0;
+      acc += dt;
+      while (acc >= STEP - 1e-9 && n < 3) { tick(); acc -= STEP; n++; }
+      if (n >= 3) acc = 0;
       if (!was || needRender) {
         var c2 = camTarget();
         if (calm() || was) { view.cx = c2[0]; view.cy = c2[1]; }
@@ -3914,11 +3963,13 @@
         needRender = false;
       }
       if (started) updateHud();
+      if (cup) { cupClock(); liveTick(ts); }
+      if (cup && was && ghostsShown) needRender = true;
     }
     requestAnimationFrame(frame);
   }
 
-  var hudCache = {};
+  var hudCache = {}, ghostsShown = false;
   function setText(id, v) { if (hudCache[id] !== v) { hudCache[id] = v; $(id).textContent = v; } }
   function updateHud() {
     setText('h-gold', fmt(state.gold));
@@ -3948,9 +3999,14 @@
   }
 
   /* ---------- starting, continuing, starting over ---------- */
-  function begin(fresh, saved) {
+  function begin(fresh, saved, run) {
     fogs = {}; npcs = {}; floaters = {}; auto = null; wake = []; keys = {}; actionKey = ''; lastWhereKey = ''; justLeft = null;
+    // Everything kept between moves starts the same for every voyage, so a contest run replays the same way whatever this
+    // page did before it (a voyage of your own, or an earlier part of the run).
+    ship.vx = ship.vy = 0; grace = 0; t = 0; parrotLast = {}; timers = {reveal: 0, save: 4, where: 0, wake: 0};
+    pendingJail = null; lastRoll = null; pending = null; toastTimer = 0; voyCache = {};
     state = fresh ? newState() : fromSave(saved);
+    if (fresh && run) { state.seed = run.seed; state.rng = run.seed | 0; state.cup = run.practice ? 'practice' : 'cup'; }
     if (!fresh && state.fog) for (var mid in state.fog) if (MAPS[mid]) decodeFog(mid, state.fog[mid]);
     var m = enterMap(state.map);
     if (state.tmap && state.tmap.redraw) redrawMap();
@@ -3958,12 +4014,14 @@
     reveal(state.map, state.x, state.y, REVEAL);
     Object.keys(state.known).forEach(function (pid) { if (PORTS[pid]) reveal(PORTS[pid].map, PORTS[pid].dock[0], PORTS[pid].dock[1], 110); });
     started = true;
-    levelUp = 0; evClock = 70 + Math.random() * 30; evRecent = []; lastPortEv = -999; hudCache = {}; mendAcc = 0;
+    levelUp = 0; evClock = 70 + rnd() * 30; evRecent = []; lastPortEv = -999; hudCache = {}; mendAcc = 0; tipAt = 0;
     if (fresh) state.flags.r5 = state.flags.r6 = state.flags.geo = 1;
     dayTick();
     $('title-screen').hidden = true;
     boardMsg = '';
     $('hud').hidden = false; $('tools').hidden = false;
+    $('btn-cup').hidden = !state.cup;
+    $('btn-cup-label').textContent = state.cup === 'practice' ? 'Practice run' : 'Silver Cup';
     resize();
     updateHud();
     updateWhere();
@@ -4005,6 +4063,7 @@
     }
   }
   function showTitle() {
+    exitCup();
     var saved = loadSaved(), cont = $('btn-continue');
     if (saved) {
       var s = fromSave(saved);
@@ -4025,12 +4084,376 @@
     if (legacy.fame.length) { var old = tf.querySelector('ol'); if (old) old.remove(); tf.appendChild(fameList(3)); }
     $('title-screen').hidden = false;
     $('hud').hidden = true; $('tools').hidden = true;
+    cupBox();
     if (!state) {
       state = newState();
       enterMap(state.map);
       reveal(state.map, state.x, state.y, 520);
       resize();
     }
+  }
+
+  /* ---------- the Silver Cup: recording a contest run so a server can replay it ---------- */
+  // A contest run keeps its own save, apart from your own voyage. Every move that can change the voyage is written down
+  // with the sixtieth of a second it happened in, and the server plays the run again from the same seed and moves.
+  // The score that counts is the one the replay reaches, never one the phone reports.
+  function canon(v) {
+    if (v === undefined || typeof v === 'function') return 'null';
+    if (v === null || typeof v !== 'object') return JSON.stringify(v);
+    if (Array.isArray(v)) return '[' + v.map(canon).join(',') + ']';
+    return '{' + Object.keys(v).sort().filter(function (k) { return v[k] !== undefined && typeof v[k] !== 'function'; })
+      .map(function (k) { return JSON.stringify(k) + ':' + canon(v[k]); }).join(',') + '}';
+  }
+  // A fingerprint of everything that decides the run (not the ship's heading, which is only drawn, or the clock).
+  function cupHash() {
+    var s = {};
+    for (var k in state) if (k !== 'angle' && k !== 'saved' && k !== 'fog') s[k] = state[k];
+    s.fog = fogsOut();   // the chart as it stands now, whenever the phone last happened to save it
+    var txt = canon({s: s, b: legacy.base, c: legacy.sails, f: legacy.flags, p: prefs.fast ? 1 : 0});
+    return E.hashStr(txt).toString(36) + E.hashStr('cup:' + txt).toString(36);
+  }
+  var REPLAY = window.PILLAGE_REPLAY || null;  // set only by the server's replay checker
+  function newRec(p0) { return {ev: [], n: 0, p0: p0, tick: function () { this.n++; }, onSave: REPLAY && REPLAY.onSave}; }
+  function rec(x) { if (REC && state && state.cup && cup && !cup.over) REC.ev.push([REC.n].concat(x)); }
+  // A move from the keyboard or the sea: recorded, then played. The replay plays the very same copy.
+  function act(x) {
+    var c = JSON.stringify(x);
+    rec(JSON.parse(c));
+    input(JSON.parse(c));
+  }
+  // Whether a recorded move could have been made at this moment: the replay refuses one that couldn't.
+  function canInput(x) {
+    var k = x[0], dlg = openDialogEl();
+    if (k === 'ku' || k === 'kx') return true;
+    if (!started || !state) return false;
+    // A place picked on the chart or the sea must be one the game offered: a plain spot, or a real destination as it stands.
+    function real(g, mid, tap) {
+      if (!g || typeof g !== 'object' || !isFinite(g.x) || !isFinite(g.y)) return false;
+      if (g.type === 'point') return tap && g.map === mid;
+      return destinations(mid).some(function (d) {
+        return !d.here && d.type === g.type && d.id === g.id && d.map === g.map && d.x === g.x && d.y === g.y && !(tap && d.type === 'exit');
+      });
+    }
+    if (k === 'pick') return !!(dlg && dlg.id === 'dlg-chart' && real(x[1], chartMap, false));
+    if (dlg) return false;
+    if (k === 'kd') return ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'w', 'a', 's', 'd'].indexOf(x[1]) >= 0;
+    if (k === 'go') return !state.docked && real(x[1], state.map, true);
+    return k === 'act' || k === 'chart' || k === 'log';
+  }
+  function input(x) {
+    var k = x[0];
+    if (k === 'kd') keys[x[1]] = true;
+    else if (k === 'ku') keys[x[1]] = false;
+    else if (k === 'kx') keys = {};
+    else if (k === 'act') doAction();
+    else if (k === 'chart') openChart();
+    else if (k === 'log') openLog();
+    else if (k === 'go') planRoute(x[1]);
+    else if (k === 'pick') {
+      var g = x[1];
+      if (g.type === 'exit') g = destinations(chartMap).filter(function (d) { return d.type === 'exit' && d.id === g.id; })[0] || g;
+      closeDialog('dlg-chart');
+      setCourse(g.type === 'exit' ? goExit(g) : g);
+    }
+  }
+  // Where a button sits: the nearest named box, then which child at each step down.
+  function pathOf(n) {
+    var p = [];
+    while (n && n.nodeType === 1 && !n.id) {
+      var i = 0, c = n;
+      while ((c = c.previousElementSibling)) i++;
+      p.unshift(i);
+      n = n.parentElement;
+    }
+    return n && n.id ? '#' + n.id + (p.length ? '>' + p.join('>') : '') : null;
+  }
+  function elOf(path) {
+    var m = /^#([\w-]+)((?:>\d+)*)$/.exec(String(path || ''));
+    if (!m) return null;
+    var n = document.getElementById(m[1]);
+    (m[2] ? m[2].slice(1).split('>') : []).forEach(function (i) { n = n && n.children[+i]; });
+    return n || null;
+  }
+  var REC_SKIP = '#sea, #chart-canvas, #title-screen, #dlg-cup, a[href], label, input, select, textarea';
+  function wireRec() {
+    function on(type, fn) {
+      document.addEventListener(type, function (e) {
+        var tg = e.target;
+        if (!REC || !state || !state.cup || !tg || tg.nodeType !== 1 || tg.closest('#dlg-cup, #title-screen')) return;
+        // The Cup's own window pauses the voyage like any window, so its opening (a tap on the Cup button) and closing are
+        // recorded. What's tapped inside it never changes the voyage.
+        if (tg.closest('#dlg-cupstat') && !(tg.id === 'dlg-cupstat' && (type === 'cancel' || type === 'close'))) return;
+        var p = pathOf(tg);
+        if (p) fn(e, tg, p);
+      }, true);
+    }
+    on('click', function (e, tg, p) { if (tg.tagName === 'BUTTON' || !tg.closest(REC_SKIP)) rec(['c', p]); });
+    on('change', function (e, tg, p) {
+      if (tg.matches('input[type=checkbox], input[type=radio]')) rec(['ch', p, tg.checked ? 1 : 0]);
+      else if (tg.matches('select, input, textarea')) rec(['ch', p, tg.value]);
+    });
+    on('input', function (e, tg, p) { if (tg.matches('input[type=text], textarea')) rec(['in', p, tg.value]); });
+    on('keydown', function (e, tg, p) { if (tg.closest('#port-tabs') && ['ArrowLeft', 'ArrowRight', 'Home', 'End'].indexOf(e.key) >= 0) rec(['kt', p, e.key]); });
+    on('cancel', function (e, tg) { if (tg.tagName === 'DIALOG' && tg.id) rec(['x', tg.id]); });
+    on('close', function (e, tg) { if (tg.tagName === 'DIALOG' && tg.id) rec(['z', tg.id]); });
+  }
+  // The contest save: the run, every part played so far, and the voyage itself, written in one go so they always agree.
+  function saveCup() {
+    if (!cup || !state || !REC) return;
+    state.fog = fogsOut();
+    state.saved = Date.now();
+    var seg = {ev: REC.ev, n: REC.n, p0: REC.p0, h: cupHash()};
+    var body = JSON.stringify({run: cup.run, segs: cup.segs.concat([seg]), state: state, legacy: legacy, prefs: {fast: !!prefs.fast}, over: cup.over, sent: cup.sent});
+    if (REC.onSave) REC.onSave(REC.n, REC.ev.length, seg.h, body);
+    try { localStorage.setItem(CUP_KEY, body); } catch (e) { /* storage full: the run plays on */ }
+  }
+  function loadCup() {
+    try {
+      var c = JSON.parse(localStorage.getItem(CUP_KEY));
+      return c && c.run && typeof c.run.id === 'string' && Array.isArray(c.segs) && c.state && MAPS[c.state.map] ? c : null;
+    } catch (e) { return null; }
+  }
+  function enterCup(run, record) {
+    cup = {run: run, segs: record ? record.segs : [], over: record ? record.over || '' : '', sent: record ? record.sent || null : null};
+    legacy = parseLegacy(record ? record.legacy : null);
+    REC = newRec(prefs.fast ? 1 : 0);
+  }
+  function startCupRun(run) { enterCup(run, null); begin(true, null, run); }
+  function resumeCup(record) { enterCup(record.run, record); begin(false, record.state); }
+  // Back to your own voyage: the contest run stays saved where it was.
+  function exitCup() {
+    if (!cup) return;
+    if (started && state && state.cup && !cup.over) saveCup();
+    cup = null; REC = null; state = null; started = false;
+    legacy = loadLegacy();
+  }
+  // The run is over (sunk, or ended from settings): saved as it stands once the move that ended it has played out, then sent.
+  function cupOver(how) {
+    if (!cup || cup.over) return;
+    cup.over = how;
+    setTimeout(function () { if (!cup) return; saveCup(); cupSend(true); }, 0);
+  }
+  // What goes to the server: the run, every part played before, and this page's part as it stands right now.
+  function cupSubmission() {
+    if (!cup || !REC || !state) return null;
+    return {run: {id: cup.run.id, seed: cup.run.seed, practice: !!cup.run.practice}, ver: CUP ? CUP.ver : '', over: cup.over || '',
+      segs: cup.segs.concat([{ev: REC.ev, n: REC.n, p0: REC.p0, h: cupHash()}]),
+      claim: {xp: Math.round(state.xp) || 0, day: day(), st: voyageStats(state)}};
+  }
+  /* ---------- the Silver Cup: entering, sending runs, and the other ships at sea ---------- */
+  var cupBusy = false, cupNext = null, cupMsgText = '', cupTimer = 0;
+  function cupOpen() { return !!(CUP && CUP.api) && !REPLAY; }
+  function cupPhase(now) { now = now || Date.now(); return !CUP ? 'none' : now < CUP.start ? 'before' : now < CUP.end ? 'on' : 'after'; }
+  function cupMe() { try { return JSON.parse(localStorage.getItem(CUP_ME)) || {}; } catch (e) { return {}; } }
+  function cupName() { return cup && cup.run.practice ? 'practice run' : 'Silver Cup run'; }
+  function untilText(ms) {
+    if (ms <= 0) return 'now';
+    var d = Math.floor(ms / 864e5), h = Math.floor(ms / 36e5) % 24, m = Math.floor(ms / 6e4) % 60, sec = Math.floor(ms / 1e3) % 60;
+    return d ? d + ' ' + plural(d, 'day') + ', ' + h + ' ' + plural(h, 'hour') : h ? h + ' ' + plural(h, 'hour') + ', ' + m + ' ' + plural(m, 'minute') : m + ' ' + plural(m, 'minute') + ', ' + sec + ' ' + plural(sec, 'second');
+  }
+  function agoText(at) {
+    var m = Math.round((Date.now() - at) / 6e4);
+    return m < 1 ? 'just now' : m < 60 ? m + ' ' + plural(m, 'minute') + ' ago' : Math.round(m / 60) + ' ' + plural(Math.round(m / 60), 'hour') + ' ago';
+  }
+  function cupSay(msg) { cupMsgText = msg; var o = $('cupstat-msg'); if (o) o.textContent = msg; }
+
+  // The run, packed small for the trip (gzip where the browser can).
+  function packRun(txt) {
+    if (window.CompressionStream && window.Response && window.Blob) {
+      try {
+        return new Response(new Blob([txt]).stream().pipeThrough(new CompressionStream('gzip'))).arrayBuffer()
+          .then(function (b) { return {type: 'application/x-pillage-gz', body: new Uint8Array(b)}; });
+      } catch (e) { /* fall through */ }
+    }
+    return Promise.resolve({type: 'application/json', body: txt});
+  }
+  // Sends the run as it stands. The server keeps it until the replay checker has played it again. A send asked for while
+  // one is on its way goes right after it.
+  var cupQueued = null;
+  function cupSend(final, then) {
+    then = then || function () {};
+    if (!cup || !cupOpen()) { then(false); return; }
+    var sub = cupSubmission(), c = cup;
+    if (!sub) { then(false); return; }
+    if (cupBusy) { if (final || !cupQueued) cupQueued = {sub: sub, c: c, then: then}; else then(false); return; }
+    cupPost(sub, c, then);
+  }
+  function cupPost(sub, c, then) {
+    cupBusy = true;
+    cupSay('Sending your run…');
+    function done(ok, msg) {
+      cupBusy = false;
+      cupSay(msg);
+      then(ok);
+      var q = cupQueued; cupQueued = null;
+      if (q) cupPost(q.sub, q.c, q.then);
+    }
+    packRun(JSON.stringify(sub)).then(function (p) {
+      return fetch(CUP.api + '/api/submit', {method: 'POST', headers: {'content-type': p.type, 'x-run-key': c.run.key}, body: p.body});
+    }).then(function (r) { return r.json(); }).then(function (j) {
+      if (j && j.ok) {
+        c.sent = {at: Date.now(), xp: Math.round(sub.claim.xp)};
+        if (cup === c && !c.over) saveCup();
+        done(true, 'Sent just now. The checker replays it move by move, usually within a few minutes.');
+      } else done(false, (j && j.error) || 'The Cup’s server didn’t take it. It will try again.');
+    }).catch(function () { done(false, 'Couldn’t reach the Cup’s server. Your run is saved on this device and goes as soon as it can.'); });
+  }
+  // A run saved on this device that a new one is about to replace: sent one last time, as it was last saved.
+  function cupSendRecord(r) {
+    if (!r || r.over || !cupOpen()) return;
+    var sub = {run: {id: r.run.id, seed: r.run.seed, practice: !!r.run.practice}, ver: CUP.ver, over: 'replaced', segs: r.segs, claim: {xp: Math.round((r.state && r.state.xp) || 0)}};
+    packRun(JSON.stringify(sub)).then(function (p) {
+      return fetch(CUP.api + '/api/submit', {method: 'POST', headers: {'content-type': p.type, 'x-run-key': r.run.key}, body: p.body, keepalive: p.body.length < 60000});
+    }).catch(function () { /* its last checked score stands */ });
+  }
+  // Every ten minutes of play and every time you dock, if it hasn't gone in a while.
+  function cupAuto(min) {
+    if (!cup || cup.over || !cupOpen() || !started) return;
+    var last = cup.sent ? cup.sent.at : 0;
+    if (Date.now() - last >= (min || CUP.sendEvery)) cupSend(false);
+  }
+  // The run ends: on the sea floor, from Settings, or when the Cup closes. It goes to the server one last time.
+  function cupEnd(how, title, text) {
+    cupOver(how);
+    note(title, text, null, function () { showTitle(); });
+  }
+  function cupClock() {
+    if (!cup || cup.over || !started || cup.run.practice || !CUP || REPLAY) return;
+    if (Date.now() >= CUP.end) cupEnd('time', '🏆 The Silver Cup is over', 'The Cup closed at the end of December 4, Pacific time, so this run stops here at ' + fmt(Math.round(state.xp)) + ' renown. It’s on its way to be checked. Winners are posted on the Contest page once every top run has been checked.');
+  }
+
+  // The title screen's Cup box: what's on, a countdown, and the way in.
+  function cupBox() {
+    var box = $('title-cup');
+    if (!box) return;
+    if (!CUP || Date.now() >= BOARD.hide) { box.hidden = true; return; }
+    box.hidden = false;
+    var now = Date.now(), ph = cupPhase(now), saved = loadCup(), open = cupOpen() && ph !== 'after';
+    var left = saved && !saved.over && ph !== 'after' ? saved : null;
+    $('cup-when').textContent = ph === 'before' ? 'Starts in ' + untilText(CUP.start - now) + ': 12:00 AM Pacific, December 1.'
+      : ph === 'on' ? 'On now. Closes in ' + untilText(CUP.end - now) + ': end of December 4, Pacific.' : 'The Silver Cup is over. Thanks for sailing!';
+    $('cup-lede').textContent = ph === 'after' ? 'Winners are posted on the Contest page once every top run has been checked.'
+      : !cupOpen() ? 'Ten, five and one silver half dollars for the top three captains of MJBizCon week. Entries open here soon.'
+      : ph === 'before' ? 'Ten, five and one silver half dollars for the top three captains of MJBizCon week. Practice runs are open now; they don’t count toward the prizes.'
+      : 'Ten, five and one silver half dollars for the top three captains of MJBizCon week. Free to enter, 21 and over.';
+    var go = $('btn-cup-go'), cont = $('btn-cup-continue');
+    cont.hidden = !(left && cupOpen());
+    if (left) cont.textContent = 'Continue your ' + (left.run.practice ? 'practice run' : 'Cup run') + ' · ' + fmt(Math.round(left.state.xp || 0)) + ' renown';
+    go.hidden = !open;
+    go.textContent = ph === 'before' ? 'Practice for the Cup' : 'Enter the Silver Cup';
+    clearTimeout(cupTimer);
+    if (ph !== 'after' && !$('title-screen').hidden) cupTimer = setTimeout(cupBox, 1000);
+  }
+
+  // Entering: a captain name for the boards, an email for reaching a winner, and an optional crew.
+  function openCupEntry() {
+    var me = cupMe(), saved = loadCup();
+    $('cupf-name').value = me.handle || '';
+    $('cupf-email').value = me.email || '';
+    $('cupf-crew').value = me.crew || '';
+    $('cupf-adult').checked = false; $('cupf-rules').checked = false;
+    $('cupf-err').textContent = '';
+    $('cupf-practice').hidden = cupPhase() !== 'before';
+    $('cupf-replace').hidden = !(saved && !saved.over);
+    $('cupf-go').disabled = false;
+    openDialog($('dlg-cup'), me.handle ? $('cupf-adult') : $('cupf-name'));
+  }
+  function submitCupEntry(ev) {
+    if (ev) ev.preventDefault();
+    var err = $('cupf-err'), b = {handle: $('cupf-name').value.trim(), email: $('cupf-email').value.trim(), crew: $('cupf-crew').value.trim(),
+      adult: $('cupf-adult').checked, rules: $('cupf-rules').checked, ver: CUP.ver};
+    if (b.handle.replace(/[^a-z0-9]/gi, '').length < 2) { err.textContent = 'Pick a captain name of at least two letters or numbers.'; $('cupf-name').focus(); return; }
+    if (!/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(b.email)) { err.textContent = 'That email doesn’t look right. It’s only used to reach you if you win.'; $('cupf-email').focus(); return; }
+    if (!b.adult || !b.rules) { err.textContent = 'To enter, confirm you’re 21 or older and agree to the official rules.'; (b.adult ? $('cupf-rules') : $('cupf-adult')).focus(); return; }
+    err.textContent = 'Getting your run ready…';
+    $('cupf-go').disabled = true;
+    fetch(CUP.api + '/api/start', {method: 'POST', headers: {'content-type': 'application/json'}, body: JSON.stringify(b)})
+      .then(function (r) { return r.json(); }).then(function (j) {
+        $('cupf-go').disabled = false;
+        if (!j || !j.ok) { err.textContent = (j && j.error) || 'The Cup’s server didn’t answer. Try again in a minute.'; return; }
+        try { localStorage.setItem(CUP_ME, JSON.stringify({handle: j.run.handle, email: b.email, crew: j.run.crew})); } catch (e) { /* private mode */ }
+        track(j.run.practice ? 'cup-practice' : 'cup-enter');
+        // The run starts once the entry window has closed, so nothing about the form is part of it.
+        var old = loadCup();
+        if (old && !old.over && old.run.id !== j.run.id) cupSendRecord(old);
+        cupNext = function () { exitCup(); state = null; startCupRun(j.run); };
+        closeDialog('dlg-cup');
+      }).catch(function () { $('cupf-go').disabled = false; err.textContent = 'Couldn’t reach the Cup’s server. Check your connection and try again.'; });
+  }
+
+  // The Cup button during a run: how it stands, and a way to send it now or step away.
+  function openCupStat() {
+    if (!cup) return;
+    $('cupstat-title').textContent = '🏆 ' + (cup.run.practice ? 'Practice run' : 'Silver Cup run');
+    $('cupstat-who').textContent = 'Captain ' + cup.run.handle + (cup.run.crew ? ' of ' + cup.run.crew : '') + ' · ' + fmt(Math.round(state.xp)) + ' renown so far';
+    $('cupstat-note').textContent = cup.run.practice ? 'Practice runs are checked the same way but stay off the prize board. Once the Cup opens on December 1, start a new run to compete.'
+      : 'Your run goes to the Cup’s server by itself every ten minutes and when you dock. Only its checked score counts.';
+    cupSay(cupMsgText || (cup.sent ? 'Last sent ' + agoText(cup.sent.at) + '.' : 'Not sent yet.'));
+    $('cupstat-checked').textContent = '';
+    if (cupOpen()) {
+      fetch(CUP.api + '/api/run?id=' + encodeURIComponent(cup.run.id), {headers: {'x-run-key': cup.run.key}}).then(function (r) { return r.json(); }).then(function (j) {
+        if (!j || !j.ok) return;
+        var L = j.last, txt = j.best != null ? 'Checked: ' + fmt(j.best) + ' renown.' : '';
+        if (L && L.status === 'pending') txt += (txt ? ' ' : '') + 'The latest send is waiting for the checker.';
+        else if (L && L.status === 'refused') txt += (txt ? ' ' : '') + 'The checker turned down the latest send: ' + L.reason + '.';
+        $('cupstat-checked').textContent = txt;
+      }).catch(function () { /* offline: the rest still shows */ });
+    }
+    openDialog($('dlg-cupstat'), $('cupstat-back'));
+  }
+
+  // Other captains on Cup and practice runs, sailing live. Drawn only: they never touch your voyage or its dice.
+  var live = null, liveMe = '', liveEvery = 2000, liveSent = 0, liveRetry = 0, ghosts = {};
+  function liveWanted() { return !!(cup && !cup.over && started && cupOpen() && prefs.ghosts !== false && window.WebSocket); }
+  function liveTick(now) {
+    if (!liveWanted()) { if (live) { try { live.close(); } catch (e) { /* closed */ } live = null; ghosts = {}; } return; }
+    if (!live && now >= liveRetry) {
+      liveRetry = now + 15000;
+      try {
+        live = new WebSocket(CUP.api.replace(/^http/, 'ws') + '/api/live');
+        live.onmessage = function (e) {
+          var m; try { m = JSON.parse(e.data); } catch (er) { return; }
+          if (m.you) { liveMe = m.you; return; }
+          if (m.every) liveEvery = Math.max(1000, Math.min(30000, +m.every || 2000));
+          var t0 = Date.now(), seen = {};
+          (m.ships || []).forEach(function (g) {
+            if (g.id === liveMe || !MAPS[g.m]) return;
+            seen[g.id] = 1;
+            var o = ghosts[g.id], at = ghostAt(o, t0);
+            ghosts[g.id] = {m: g.m, x0: o && o.m === g.m ? at[0] : g.x, y0: o && o.m === g.m ? at[1] : g.y, x: g.x, y: g.y, a: g.a, n: g.n, c: g.c, s: g.s, f: g.f, d: g.d, at: t0, span: liveEvery};
+          });
+          for (var id in ghosts) if (!seen[id]) delete ghosts[id];
+        };
+        live.onclose = function () { live = null; ghosts = {}; };
+        live.onerror = function () { try { live.close(); } catch (er) { /* closed */ } };
+      } catch (e) { live = null; }
+    }
+    if (live && live.readyState === 1 && now - liveSent >= liveEvery) {
+      liveSent = now;
+      try { live.send(JSON.stringify({m: state.map, x: state.x, y: state.y, a: state.angle, n: cup.run.handle, c: cup.run.crew || '', s: state.look.sail, f: state.look.flag, l: level(), d: state.docked ? 1 : 0})); } catch (e) { /* closed */ }
+    }
+  }
+  function ghostAt(g, now) {
+    if (!g) return [0, 0];
+    var k = Math.min(1, Math.max(0, (now - g.at) / (g.span || 2000)));
+    return [g.x0 + (g.x - g.x0) * k, g.y0 + (g.y - g.y0) * k];
+  }
+  function drawGhosts(c, mid) {
+    var now = Date.now(), any = false, sc = view.s || 1;
+    for (var id in ghosts) {
+      var g = ghosts[id];
+      if (g.m !== mid) continue;
+      any = true;
+      var p = ghostAt(g, now), S = SAILS[g.s] || SAILS.canvas, F = FLAGS[g.f] || FLAGS.skull;
+      c.save(); c.globalAlpha = 0.62;
+      drawShip(c, p[0], p[1], g.a, {hull: '#7a4b26', deck: '#c29560', sail: S.color, flag: F.color, mark: '#fbf4e2'}, 14);
+      c.restore();
+      var label = g.n + (g.c ? ' · ' + g.c : '') + (g.d ? ' (in port)' : '');
+      c.font = '600 ' + (12 / sc).toFixed(2) + 'px system-ui, sans-serif'; c.textAlign = 'center';
+      c.lineWidth = 3 / sc; c.strokeStyle = 'rgba(0,0,0,.6)'; c.fillStyle = '#fff';
+      c.strokeText(label, p[0], p[1] - 22); c.fillText(label, p[0], p[1] - 22);
+    }
+    return any;
   }
 
   /* ---------- wiring ---------- */
@@ -4043,6 +4466,29 @@
     $('btn-keep').addEventListener('click', function () { $('title-confirm').hidden = true; $('btn-continue').focus(); });
     $('btn-continue').addEventListener('click', function () { var s = loadSaved(); if (s) begin(false, s); else begin(true); });
 
+    $('btn-cup-go').addEventListener('click', function () { if (cupOpen()) openCupEntry(); });
+    $('btn-cup-continue').addEventListener('click', function () { var r = loadCup(); if (r && !r.over) resumeCup(r); else cupBox(); });
+    $('cupf').addEventListener('submit', submitCupEntry);
+    $('cupf-cancel').addEventListener('click', function () { closeDialog('dlg-cup'); });
+    $('dlg-cup').addEventListener('close', function () {
+      var f = cupNext; cupNext = null;
+      if (f) f(); else setTimeout(function () { var b = $('btn-cup-go'); if (!b.hidden) b.focus(); }, 0);
+    });
+    $('btn-cup').addEventListener('click', function () { if (started && cup) openCupStat(); });
+    $('cupstat-send').addEventListener('click', function () {
+      if (cup && cup.sent && Date.now() - cup.sent.at < 45000) { cupSay('Sent ' + agoText(cup.sent.at) + '. Give it a minute before sending again.'); return; }
+      cupSend(false);
+    });
+    $('cupstat-back').addEventListener('click', function () { closeDialog('dlg-cupstat'); });
+    $('cupstat-leave').addEventListener('click', function () { cupNext = function () { showTitle(); }; closeDialog('dlg-cupstat'); });
+    $('dlg-cupstat').addEventListener('close', function () {
+      var f = cupNext; cupNext = null;
+      if (f) { f(); setTimeout(function () { $('btn-cup-continue').focus(); }, 0); } else setTimeout(focusSea, 0);
+    });
+    // A Cup run is saved and sent when the page is put away, and every so often while it's played.
+    document.addEventListener('visibilitychange', function () { if (document.hidden && cup && !cup.over && started) { saveCup(); cupAuto(60000); } });
+    if (!REPLAY) setInterval(function () { if (!document.hidden) cupAuto(); }, 30000);
+
     $('action').addEventListener('click', function () { doAction(); });
     $('btn-chart').addEventListener('click', function () { if (started) openChart(); });
     $('btn-log').addEventListener('click', function () { if (started) openLog(); });
@@ -4050,16 +4496,27 @@
       $('opt-sound').checked = !!prefs.sound;
       $('opt-motion').checked = calm();
       $('opt-fast').checked = !!prefs.fast;
+      $('opt-ghosts-row').hidden = !cup;
+      $('opt-ghosts').checked = prefs.ghosts !== false;
+      $('opt-new').textContent = cup ? 'End this ' + cupName() : 'Start a new voyage';
+      $('settings-confirm').firstElementChild.textContent = cup ? 'End this ' + cupName() + ' here? It’s sent one last time, and its checked score stands. You can start a new run from the title screen.'
+        : 'Retire this captain and start a new voyage from Tortuga? They go in the hall of fame, and your hideout and earned colours stay.';
+      $('opt-new-yes').textContent = cup ? 'Yes, end this run' : 'Yes, start over';
       $('settings-confirm').hidden = true;
       openDialog($('dlg-settings'), $('opt-sound'));
     });
     $('opt-sound').addEventListener('change', function () { prefs.sound = this.checked; savePrefs(); sfx('coin'); });
     $('opt-motion').addEventListener('change', function () { prefs.motion = this.checked; savePrefs(); wake = []; calmClass(); });
     $('opt-fast').addEventListener('change', function () { prefs.fast = this.checked; savePrefs(); });
+    $('opt-ghosts').addEventListener('change', function () { prefs.ghosts = this.checked; savePrefs(); });
     $('opt-new').addEventListener('click', function () { $('settings-confirm').hidden = false; $('opt-new-yes').focus(); });
     $('opt-new-no').addEventListener('click', function () { $('settings-confirm').hidden = true; $('opt-new').focus(); });
     $('opt-new-yes').addEventListener('click', function () {
       closeDialog('dlg-settings');
+      if (cup) {
+        cupEnd('ended', '🏆 Run ended', 'This ' + cupName() + ' ends here at ' + fmt(Math.round(state.xp)) + ' renown. It’s on its way to be checked. Start another from the title screen any time the Cup is open.');
+        return;
+      }
       save();
       retireVoyage();
       begin(true);
@@ -4104,6 +4561,12 @@
     $('dlg-port').addEventListener('close', function () { if (state && state.docked && !$('dlg-port').open) leavePort(); });
     $('dlg-note').addEventListener('close', function () { var f = noteDone; noteDone = null; if (f) f(); else focusSea(); });
     $('dlg-encounter').addEventListener('cancel', function (e) { e.preventDefault(); });
+    // A fight can't be waved away: some browsers close a dialog on a second Escape without asking, so it opens again.
+    $('dlg-encounter').addEventListener('close', function () {
+      var shut = this.getAttribute('data-shut');
+      this.removeAttribute('data-shut');
+      if (!shut && started && state && $('enc-body').querySelector('button')) openDialog(this);
+    });
     ['dlg-chart', 'dlg-log', 'dlg-settings', 'dlg-encounter'].forEach(function (id) {
       $(id).addEventListener('close', function () { setTimeout(focusSea, 0); });
     });
@@ -4122,14 +4585,15 @@
       if (!started || openDialogEl() || e.ctrlKey || e.metaKey || e.altKey) return;
       if (document.activeElement !== cv) return;
       var k = e.key.length === 1 ? e.key.toLowerCase() : e.key;
-      if (STEER.indexOf(k) >= 0) { keys[k] = true; e.preventDefault(); return; }
-      if (k === 'Enter' || k === ' ' || k === 'e') { e.preventDefault(); doAction(); }
-      else if (k === 'm' || k === 'c') { e.preventDefault(); openChart(); }
-      else if (k === 'l') { e.preventDefault(); openLog(); }
+      if (STEER.indexOf(k) >= 0) { if (!keys[k]) act(['kd', k]); e.preventDefault(); return; }
+      if (k === 'Enter' || k === ' ' || k === 'e') { e.preventDefault(); act(['act']); }
+      else if (k === 'm' || k === 'c') { e.preventDefault(); act(['chart']); }
+      else if (k === 'l') { e.preventDefault(); act(['log']); }
     });
-    window.addEventListener('keyup', function (e) { var k = e.key.length === 1 ? e.key.toLowerCase() : e.key; keys[k] = false; });
-    window.addEventListener('blur', function () { keys = {}; });
-    cv.addEventListener('blur', function () { keys = {}; });
+    window.addEventListener('keyup', function (e) { var k = e.key.length === 1 ? e.key.toLowerCase() : e.key; if (keys[k]) act(['ku', k]); else keys[k] = false; });
+    function letGo() { for (var k in keys) if (keys[k]) { act(['kx']); return; } keys = {}; }
+    window.addEventListener('blur', letGo);
+    cv.addEventListener('blur', letGo);
     cv.addEventListener('pointerdown', function (e) {
       if (!started || state.docked || openDialogEl()) return;
       try { cv.focus({preventScroll: true}); } catch (er) { cv.focus(); }
@@ -4138,10 +4602,10 @@
       destinations(state.map).forEach(function (d) {
         if (goal || d.here || d.type === 'exit' || (d.type === 'port' && d.id === justLeft)) return;
         var p = d.type === 'port' ? PORTS[d.id] : null;
-        var dd = Math.min(Math.hypot(d.x - wx, d.y - wy), p ? Math.hypot(p.town[0] - wx, p.town[1] - wy) : Infinity);
+        var dd = Math.min(hyp(d.x - wx, d.y - wy), p ? hyp(p.town[0] - wx, p.town[1] - wy) : Infinity);
         if (dd < near) goal = d;
       });
-      planRoute(goal || {type: 'point', map: state.map, x: wx, y: wy, label: 'there'});
+      act(['go', goal || {type: 'point', map: state.map, x: wx, y: wy, label: 'there'}]);
     });
     window.addEventListener('resize', function () { if (state) resize(); });
     document.addEventListener('visibilitychange', function () { if (document.hidden) save(); });
@@ -4159,10 +4623,12 @@
   }
 
   wire();
+  wireRec();
   calmClass();
   takeScoreFromLink();
   var howBoard = $('how-board');
   if (howBoard) howBoard.hidden = !boardShown();
+  if ($('how-cup')) $('how-cup').hidden = !CUP || Date.now() >= BOARD.hide;
   showTitle();
   loadJokes();
   requestAnimationFrame(frame);
@@ -4177,5 +4643,7 @@
     hungry: hungry, buyFood: buyFood, customs: customs, bigHaul: bigHaul,
     buySeed: buySeed, plant: plant, harvest: harvest, crossBeds: crossBeds, bedReady: bedReady, crossOf: crossOf, renderHideout: renderHideout,
     scoreCode: scoreCode, readScore: readScore, scoreLink: scoreLink, myBest: myBest, takeScoreFromLink: takeScoreFromLink, boardOpen: boardOpen, openShare: openShare,
-    renderLog: renderLog};
+    renderLog: renderLog, set dice(f) { forced = f || null; },
+    cup: {start: startCupRun, resume: resumeCup, exit: exitCup, tick: function () { tick(); }, input: input, canInput: canInput, hash: function () { return cupHash(); },
+      save: saveCup, sub: cupSubmission, elOf: elOf, pathOf: pathOf, get rec() { return REC; }, get run() { return cup; }, load: loadCup}};
 })();

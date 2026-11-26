@@ -210,7 +210,7 @@ class PrivacyPageTest(unittest.TestCase):
 
     def test_privacy_page_says_what_is_counted_and_kept(self):
         text = self.PAGES['privacy.html']
-        for words in ('Last updated November 21, 2026.', 'GoatCounter', 'sets no cookies', 'stores no personal information',
+        for words in ('Last updated November 26, 2026.', 'GoatCounter', 'sets no cookies', 'stores no personal information',
                       'your browser and screen size', 'approximate country', 'It does not store the IP address',
                       'GitHub Pages', build_national.PRIVACY_STATEMENT, 'server logs, including IP addresses, for security',
                       'not sent to this site', 'do not use cookies or your browser’s storage',
@@ -219,7 +219,10 @@ class PrivacyPageTest(unittest.TestCase):
                       'mailto:' + build_national.EMAIL,
                       # the store maps (November 21, 2026): where the street pictures come from and what the "near me" button does
                       'tile.openstreetmap.org', 'OpenStreetMap sees your IP address',
-                      'Your location is never stored or sent to this site'):
+                      'Your location is never stored or sent to this site',
+                      # the Silver Cup (November 26, 2026): what a Cup entry sends, what the boards show and when emails are wiped
+                      'Nothing about a regular voyage is sent to this site', 'Emails are never shown or shared',
+                      'wiped 60 days after it closes, by February 3, 2027', 'contest-rules.html#privacy'):
             self.assertIn(words, text)
         # its heading may carry a decorative icon (visuals pass, November 25, 2026)
         self.assertRegex(text, r'<h2 id="map"[^>]*>(<span class="hi">.*?</span>)?Maps</h2>')

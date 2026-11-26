@@ -1,0 +1,36 @@
+/* The Silver Cup pages: the contest page and its official rules. Built on game.css. */
+.intro .cta{display:inline-flex;align-items:center;gap:8px;min-height:48px;margin-top:12px;padding:10px 20px;border-radius:12px;background:var(--gold);color:#1f1a0b;font-weight:800;text-decoration:none}
+.intro .cta:hover{background:#f3cd6a}
+.cd{display:inline-block;margin:.7em 0 0;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.14);font-weight:700;font-variant-numeric:tabular-nums;color:#fff}
+.cup-main h2{scroll-margin-top:12px}
+.prizes{padding-left:1.4em;max-width:72ch}
+.prizes li{margin:.35em 0}
+.note-box{background:var(--paper);border:2px solid var(--paperline);border-radius:14px;padding:12px 16px;margin:16px 0;max-width:72ch}
+.note-box p{margin:.3em 0}
+.biz{border-color:var(--gold)}
+.biz a{font-weight:700}
+.boards{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));margin:10px 0}
+.board-box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px}
+.board-box h3{margin:.2em 0 .4em;font-size:1.08rem}
+.ranks{margin:0;padding-left:1.8em}
+.ranks li{margin:.3em 0}
+.ranks .who{font-weight:700}
+.ranks .crew{color:var(--soft);font-size:.92rem}
+.ranks .pts{font-variant-numeric:tabular-nums}
+.ranks .win{display:inline-block;margin-left:6px;font-size:.82rem;font-weight:700;border:1px solid var(--gold);border-radius:999px;padding:0 8px}
+.tallies{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));margin:.4em 0}
+.tally{background:var(--paper2);border:1px solid var(--paperline);border-radius:10px;padding:6px 10px}
+.tally h4{margin:.1em 0 .25em;font-size:.95rem}
+.tally ol{margin:0;padding-left:1.3em;font-size:.9rem}
+.board-status{font-weight:600}
+.board-status:empty{display:none}
+.rules h2{font-size:1.25rem}
+.rules ol,.rules ul{max-width:72ch}
+.rules li{margin:.35em 0}
+.table-wrap{overflow-x:auto;max-width:100%}
+.vals{border-collapse:collapse;margin:.6em 0;min-width:min(100%,520px)}
+.vals th,.vals td{border:1px solid var(--paperline);padding:6px 10px;text-align:left;vertical-align:top}
+.vals thead th{background:var(--paper2)}
+.vals tbody th{font-weight:700;white-space:nowrap}
+.vals td:last-child{white-space:nowrap;font-variant-numeric:tabular-nums}
+.fixlog{padding-left:1.2em}

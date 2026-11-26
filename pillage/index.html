@@ -16,7 +16,7 @@
 <meta property="og:description" content="A silly little pirate game: sail the Caribbean, trade cannabis cargo, pillage merchant ships and hunt for the legendary Emerald Bale. Free, in your browser, adults 21+.">
 <meta property="og:url" content="https://the-reefer.com/pillage/">
 <meta property="og:image" content="https://the-reefer.com/assets/the-reefer/logo-share.jpg">
-<link rel="stylesheet" href="game.css?v=11">
+<link rel="stylesheet" href="game.css?v=12">
 <script src="/assets/analytics.js" defer></script>
 </head>
 <body>
@@ -68,6 +68,16 @@
             <button id="btn-confirm-new" type="button" class="danger">Yes, start over</button>
             <button id="btn-keep" type="button" class="secondary">Keep my voyage</button>
           </div>
+          <div id="title-cup" class="title-cup" hidden>
+            <h3><span aria-hidden="true">🏆</span> The Silver Cup</h3>
+            <p id="cup-lede"></p>
+            <p id="cup-when" class="cup-when"></p>
+            <div class="title-buttons">
+              <button id="btn-cup-continue" type="button" class="primary" hidden>Continue your Cup run</button>
+              <button id="btn-cup-go" type="button" class="secondary" hidden>Enter the Silver Cup</button>
+            </div>
+            <p class="cup-links"><a href="contest.html">How the Cup works, and the prize board</a> · <a href="contest-rules.html">Official rules</a> · <a href="/partners.html#ask">Add your business to your state’s directory</a></p>
+          </div>
           <div id="title-board" class="title-board" hidden></div>
           <div id="title-fame" class="title-fame" hidden><h3>Hall of fame</h3></div>
         </div>
@@ -79,6 +89,7 @@
       <button id="btn-chart" type="button"><span aria-hidden="true">🗺️</span> Sea chart <kbd>M</kbd></button>
       <button id="btn-log" type="button"><span aria-hidden="true">📜</span> Captain's log<span id="log-pip" class="pip" hidden><span aria-hidden="true"> ✨</span><span class="sr-only">, skill point to spend</span></span> <kbd>L</kbd></button>
       <button id="btn-settings" type="button"><span aria-hidden="true">⚙️</span> Settings</button>
+      <button id="btn-cup" type="button" hidden><span aria-hidden="true">🏆</span> <span id="btn-cup-label">Silver Cup</span></button>
     </div>
     <p id="live" class="sr-only" aria-live="polite"></p>
     <noscript><p class="status">This game needs JavaScript turned on. Everything else on The Reefer works without it.</p></noscript>
@@ -99,7 +110,8 @@
       <li><b>Roll the die:</b> every risky choice rolls a twenty-sided die and shows the number you need, like 11 or more for a 50% chance. A natural 20 earns extra renown, doubles a shot and fills a boarding party's pockets. Each miss in a row gives you a second wind of +10% on your next roll, up to +30%.</li>
       <li><b>Real danger:</b> a ship sunk in battle ends the voyage. When a fight looks bad, run for it, pay the pirates off or strike your colours (pirates take your open hold and half your gold, a warship takes you in, and either way you sail on). If you'd rather not risk it, pick gentle seas when you start a voyage.</li>
       <li><b>Smoke a bale:</b> every strain gives its own short boost, like faster sails, sharper haggling, steadier aim or better luck. Smoke one from the market or your captain's log. It lasts about two days of sailing.</li>
-      <li id="how-board"><b>MJBizCon week board:</b> heading to MJBizCon in Las Vegas, December 1 to 4? Your best voyage until December 6 goes on the board on the title screen and in your captain's log. Tap <b>Show or send my score</b> and another player scans the QR code with their phone camera, or opens your link, to put you on their board. Then scan theirs. Besides the overall board there are breakout boards for bales sold, bales smoked, merchants plundered, pirate ships sunk, treasure dug up, Brick Weed lobbed and days at sea, and whoever leads one takes its title, like Smuggler Supreme or Captain Cloud.</li>
+      <li id="how-board"><b>MJBizCon week board:</b> heading to MJBizCon in Las Vegas, December 1 to 4? Your best voyage through December 4 goes on the board on the title screen and in your captain's log. Tap <b>Show or send my score</b> and another player scans the QR code with their phone camera, or opens your link, to put you on their board. Then scan theirs. Besides the overall board there are breakout boards for bales sold, bales smoked, merchants plundered, pirate ships sunk, treasure dug up, Brick Weed lobbed and days at sea, and whoever leads one takes its title, like Smuggler Supreme or Captain Cloud.</li>
+      <li id="how-cup"><b>The Silver Cup:</b> a prize contest for MJBizCon week, from 12:00 AM Pacific on December 1 to the end of December 4. Enter from the title screen with a captain name and an email. The best three captains win silver half dollars: 10 for first, 5 for second and 1 for third. Cup runs sail rougher seas: pirates and warships hit harder and spot you from further off, and a sunk ship ends the run. Your run is sent as you play and replayed move by move before its score counts, so the board shows only real voyages. Friends can coach you, and a crew or business can team up on the crews board. <a href="contest.html">How the Cup works</a> · <a href="contest-rules.html">Official rules</a></li>
       <li><b>Level up:</b> trading at a profit, winning fights, finishing requests, finding treasure and seeing new ports all earn renown. Each level gives a skill point for Fighting, Sailing or Charm. Shipwrights sell a bigger hold, a stouter hull, cannons, boarders, faster sails and a smuggler's hold.</li>
     </ul>
     <h3>Deeper waters</h3>
@@ -122,7 +134,7 @@
 
     <h2 id="fine-print">Fine print</h2>
     <p>This is a cartoon. Every captain and parrot in it is made up, and so are the strains you trade between ports. The strains you breed at the hideout are real, with their documented family trees simplified. The ports are real places borrowed for fun, and the charts are real too: every coastline, island and port sits where it really is, drawn at one scale for all five seas from <a href="https://www.naturalearthdata.com/">Natural Earth</a>'s public-domain map data. Nothing here is advice about real cannabis or real law. The nations, flags, wars and port histories are real, and the 📜 notes in taverns and bottles try to get them right. The weed isn't: in 1718 nobody in the Caribbean smoked cannabis. Hemp was grown for rope and sailcloth, and smoking it came well over a century later. It's meant for adults 21 and over. If you want the real rules where you live, <a href="/#map">check your state on The Reefer</a>.</p>
-    <p>Your voyage, hideout and hall of fame are saved in this browser only, on this device. Nothing about it is sent anywhere. When you show or send your score for the MJBizCon week board, the QR code and link carry only your captain's name, your ship's name, your score and the tallies on the breakout boards, like bales sold, and they go only to whoever you show or send them to. Like the rest of the site, this page counts visits and a few game milestones, like starting a voyage, with no cookies and nothing that identifies you. <a href="/privacy.html">Privacy</a></p>
+    <p>Your voyage, hideout and hall of fame are saved in this browser only, on this device. Nothing about it is sent anywhere, unless you sail a Silver Cup run: then the moves of that run, your captain name, your crew and your email go to the Cup's server so the run can be checked and winners reached. Your email is never shown on a board. While you sail a Cup run with live captains on, as they are unless you turn them off in Settings, other Cup players see your captain name, crew and ship where it sails. When you show or send your score for the MJBizCon week board, the QR code and link carry only your captain's name, your ship's name, your score and the tallies on the breakout boards, like bales sold, and they go only to whoever you show or send them to. Like the rest of the site, this page counts visits and a few game milestones, like starting a voyage, with no cookies and nothing that identifies you. <a href="/privacy.html">Privacy</a></p>
   </div></section>
 </main>
 
@@ -172,6 +184,7 @@
     <label><input id="opt-sound" type="checkbox"> Sound effects</label>
     <label><input id="opt-motion" type="checkbox"> Reduce motion (still waves, no wake)</label>
     <label><input id="opt-fast" type="checkbox"> Faster sailing when your crew steers</label>
+    <label id="opt-ghosts-row" hidden><input id="opt-ghosts" type="checkbox"> Show other Cup captains sailing live. While you sail a Cup run, they see your captain name, crew and ship.</label>
   </div>
   <p class="muted">Settings are saved in this browser.</p>
   <div class="opt-btns">
@@ -185,6 +198,43 @@
   </div>
   <p class="dlg-live" role="status" hidden></p>
   <div class="dlg-foot"><button type="button" class="primary" data-close>Done</button></div>
+</dialog>
+
+<dialog id="dlg-cup" class="dlg dlg-small" aria-labelledby="cupf-title">
+  <h2 id="cupf-title"><span aria-hidden="true">🏆</span> Enter the Silver Cup</h2>
+  <form id="cupf" novalidate>
+    <p id="cupf-practice" class="hint" hidden>The Cup opens at 12:00 AM Pacific on December 1. Until then, runs are practice: checked the same way, and kept off the prize board.</p>
+    <div class="fields">
+      <label for="cupf-name">Captain name for the boards</label>
+      <input id="cupf-name" type="text" maxlength="24" autocomplete="nickname" autocapitalize="words" spellcheck="false" required>
+      <label for="cupf-email">Email, to reach you if you win</label>
+      <input id="cupf-email" type="email" maxlength="120" autocomplete="email" spellcheck="false" required>
+      <label for="cupf-crew">Crew or business (optional)</label>
+      <input id="cupf-crew" type="text" maxlength="30" autocomplete="organization" autocapitalize="words" spellcheck="false">
+    </div>
+    <p class="hint">Your captain name and crew go on the public boards, and above your ship for other Cup captains sailing live. Your email never does: it’s used only to reach winners. A crew scores its three best captains on the crews board, and the silver goes by each captain’s own rank.</p>
+    <div class="opts">
+      <label><input id="cupf-adult" type="checkbox"> I’m 21 or older.</label>
+      <label><input id="cupf-rules" type="checkbox"> I’ve read and agree to the <a href="contest-rules.html" target="_blank" rel="noopener">official rules</a>.</label>
+    </div>
+    <p id="cupf-replace" class="hint" hidden>Starting a new run ends the one you have going. It’s sent one last time, and its best checked score still counts.</p>
+    <p id="cupf-err" class="cup-err" role="status"></p>
+    <div class="dlg-foot"><button id="cupf-cancel" type="button" class="secondary">Not now</button> <button id="cupf-go" type="submit" class="primary">Set sail in the Cup</button></div>
+  </form>
+</dialog>
+
+<dialog id="dlg-cupstat" class="dlg dlg-small" aria-labelledby="cupstat-title">
+  <h2 id="cupstat-title">Silver Cup run</h2>
+  <p id="cupstat-who"></p>
+  <p id="cupstat-msg" role="status"></p>
+  <p id="cupstat-checked"></p>
+  <p id="cupstat-note" class="hint"></p>
+  <p class="hint"><a href="contest.html" target="_blank" rel="noopener">See the prize board</a></p>
+  <div class="dlg-foot">
+    <button id="cupstat-send" type="button" class="secondary">Send my run now</button>
+    <button id="cupstat-leave" type="button" class="secondary">Title screen</button>
+    <button id="cupstat-back" type="button" class="primary">Back to sea</button>
+  </div>
 </dialog>
 
 <dialog id="dlg-captain" class="dlg dlg-small" aria-labelledby="cap-title">
@@ -242,11 +292,12 @@
   <div class="dlg-foot"><button id="note-ok" type="button" class="primary">Aye aye</button></div>
 </dialog>
 
+<script src="cup-api.js?v=1"></script>
 <script src="coasts.js?v=1"></script>
-<script src="data.js?v=13"></script>
+<script src="data.js?v=14"></script>
 <script src="qr.js?v=10"></script>
-<script src="engine.js?v=11"></script>
+<script src="engine.js?v=12"></script>
 <script src="events.js?v=10"></script>
-<script src="game.js?v=12"></script>
+<script src="game.js?v=13"></script>
 </body>
 </html>

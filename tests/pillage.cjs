@@ -182,11 +182,11 @@ $('enc-body').querySelector('.primary').click(); assert(!$('dlg-encounter').open
 // odds: the number on the button is the number rolled, and a miss earns a second wind
 const rnd=w.Math.random;
 // Docking can open a random port event first; tests that dock to use a tab keep the dice quiet.
-const dockAt=pid=>{ w.Math.random=()=>0.99; try{ P.dock(pid); } finally { w.Math.random=rnd; } };
+const dockAt=pid=>{ P.dice=()=>0.99; try{ P.dock(pid); } finally { P.dice=null; } };
 S.buff=null; S.grit=2; assert.equal(P.odds.chanceOf(0.5),70); assert.equal(P.odds.pct(0.5),'🎲 7+, 70%','the button shows the number to roll');
 S.grit=0; assert.equal(P.odds.chanceOf(0.99),95,'never certain'); assert.equal(P.odds.chanceOf(0),5,'never hopeless'); assert.equal(P.odds.pct(0.5),'🎲 11+, 50%');
-w.Math.random=()=>0; P.odds.roll(0.5); assert.equal(S.grit,1,'a 1 misses'); P.odds.roll(0.5); P.odds.roll(0.5); P.odds.roll(0.5); assert.equal(S.grit,3,'second wind caps at three misses'); assert.equal(P.odds.chanceOf(0.5),80);
-w.Math.random=()=>0.99; assert(P.odds.roll(0.5),'a 20 hits'); assert.equal(S.grit,0,'a hit resets it'); w.Math.random=rnd;
+P.dice=()=>0; P.odds.roll(0.5); assert.equal(S.grit,1,'a 1 misses'); P.odds.roll(0.5); P.odds.roll(0.5); P.odds.roll(0.5); assert.equal(S.grit,3,'second wind caps at three misses'); assert.equal(P.odds.chanceOf(0.5),80);
+P.dice=()=>0.99; assert(P.odds.roll(0.5),'a 20 hits'); assert.equal(S.grit,0,'a hit resets it'); P.dice=null;
 let hits=0; for(let i=0;i<6000;i++){ S.grit=0; if(P.odds.roll(0.6)) hits++; } S.grit=0;
 assert(Math.abs(hits/6000-0.6)<0.03,'rolls land as often as the label says: '+hits/6000);
 // smoking a bale costs one bale and gives the boost on its label
@@ -198,7 +198,7 @@ P.encounter({kind:'customs',name:'Officer Test',cool:0,x:S.x+5,y:S.y,route:[[0,0
 let burn=[...$('enc-body').querySelectorAll('.choice')].find(b=>/Burn a bale/.test(b.textContent));
 assert(burn&&/Burn a bale of Tortuga Tangerine \(🎲 11\+, 50%\)/.test(burn.textContent),'burn a bale shows its real odds: '+(burn&&burn.textContent));
 assert([...$('enc-body').querySelectorAll('.choice')].every(b=>/%|fee/.test(b.textContent)),'every Customs option shows a percentage');
-w.Math.random=()=>0.99; burn.click(); w.Math.random=rnd;
+P.dice=()=>0.99; burn.click(); P.dice=null;
 assert(/wanders off/.test($('enc-text').textContent)&&!S.cargo.tangerine,'the cutter wanders off and the bale is gone');
 assert(/You rolled 20|natural 20/.test($('enc-text').textContent)&&$('enc-body').querySelector('.die.hit'),'the roll is shown, with the die');
 $('enc-body').querySelector('.primary').click(); assert(!$('dlg-encounter').open);
@@ -290,9 +290,9 @@ assert(/Carry|Smuggle|Bring/.test($('port-panel').textContent)&&/French port/.te
 const job=P.jobOffers('tortuga').find(j=>j.kind==='deliver'); assert(job&&job.pay>0&&D.PORTS[job.to]&&job.by==='france','Tortuga has a delivery');
 const sp0=P.space(); assert(P.takeJob(job)); assert.equal(P.space(),sp0-job.n,'job cargo takes room in the hold'); assert.equal(P.jobLoad(),job.n);
 assert(!P.jobOffers('tortuga').some(j=>j.id===job.id),'a taken job leaves the board');
-const g5=T.gold,r5=T.rep.france; w.Math.random=()=>0.99; assert(P.passage(job.to),'sail for the delivery');
+const g5=T.gold,r5=T.rep.france; P.dice=()=>0.99; assert(P.passage(job.to),'sail for the delivery');
 for(let i=0;i<40&&$('dlg-encounter').open;i++) ($('enc-body').querySelector('.choice:not([disabled])')||$('enc-body').querySelector('.primary')).click();
-w.Math.random=rnd;
+P.dice=null;
 assert.equal(T.docked,job.to); assert.equal(T.jobs.length,0,'the job is done on arrival'); assert(T.gold>=g5+job.pay&&T.rep.france>r5&&T.jobsDone===1,'it pays, and France thinks better of you');
 // standing and news set prices
 const hg=D.PORTS.havana.sells[0],hp=P.buyAt('havana',hg); T.rep.spain=-80; assert(P.buyAt('havana',hg)>hp,'a hostile port charges more'); T.rep.spain=0;
@@ -300,10 +300,10 @@ const sg=D.COMMON.find(g=>!D.PORTS.havana.sells.includes(g)),spr=P.sellAt('havan
 assert(P.sellAt('havana',sg)>spr*1.5,'news of a shortage sends the price up'); T.news=[];
 // pillaging a merchant turns its nation cold
 if($('dlg-port').open) $('set-sail').click();
-T.marque=''; T.rep.dutch=0; T.shot=30; T.hull=P.stats().hullMax; w.Math.random=()=>0.99;
+T.marque=''; T.rep.dutch=0; T.shot=30; T.hull=P.stats().hullMax; P.dice=()=>0.99;
 P.fight({kind:'merchant',nation:'dutch',tier:1,name:'the Test',captain:'X',cool:0,x:T.x+5,y:T.y,route:[[0,0]],leg:0},null);
 for(let i=0;i<30&&$('enc-body').querySelector('.choice');i++) $('enc-body').querySelector('.choice:not([disabled])').click();
-w.Math.random=rnd;
+P.dice=null;
 assert(/strikes her colours|surrenders|rolls over and sinks/.test($('enc-text').textContent)&&T.rep.dutch<0,'the Dutch remember a pillaged merchant: '+T.rep.dutch);
 $('enc-body').querySelector('.primary').click();
 // a friendly warship takes a salute; a hostile one takes a fine and cleans the slate
@@ -324,21 +324,21 @@ const cust=k=>({kind:'customs',nation:k,name:'the Test Cutter',captain:'X',cool:
 T.up.secret=0; T.gentle=true; T.marque=''; T.jobs=[]; T.news=[]; T.cargo={}; T.gold=1000; T.hull=P.stats().hullMax;
 // the crew eats a day's provisions for every day at sea from level 2, and two more for a smoke
 dockAt('tortuga'); $('tab-market').click(); assert(/Provisions: \d+ of 40 days/.test($('port-panel').textContent),'markets sell provisions from level 2');
-T.food=20; const fd0=E.dayOf(T.dist); w.Math.random=()=>0.99; assert(P.passage('portroyal'),'sail to Port Royal'); closeEnc(); w.Math.random=rnd;
+T.food=20; const fd0=E.dayOf(T.dist); P.dice=()=>0.99; assert(P.passage('portroyal'),'sail to Port Royal'); closeEnc(); P.dice=null;
 const fdays=E.dayOf(T.dist)-fd0; assert(fdays>0&&T.food===20-fdays,'the crew eats a day for each of the '+fdays+' days at sea: '+T.food);
 const sm=Object.keys(D.SMOKE).find(g=>!D.CONTRABAND||!D.CONTRABAND.includes(g)); T.cargo[sm]=1; T.food=10; assert(P.smoke(sm)); assert.equal(T.food,8,'the munchies eat two days of provisions');
 T.food=0; const hc=P.odds.chanceOf(0.5); assert(P.hungry(),'no food, hungry crew'); T.food=5; assert.equal(P.odds.chanceOf(0.5),hc+10,'a hungry crew rolls 10% worse');
 T.gold=100; T.food=35; assert.equal(P.buyFood(10),5,'the lockers hold 40 days'); assert(T.food===40&&T.gold===90,'provisions cost 2 doubloons a day');
 if($('dlg-port').open) $('set-sail').click();
 // the law: a small haul gets a warning, then a fine
-T.food=20; T.gold=1000; T.record={}; T.rep.france=0; T.cargo={brick:5}; w.Math.random=()=>0;
+T.food=20; T.gold=1000; T.record={}; T.rep.france=0; T.cargo={brick:5}; P.dice=()=>0;
 P.customs(cust('france')); choose(/Run for it/); assert(/first offence/.test($('enc-text').textContent)&&T.gold===1000,'a first offence is a warning'); closeEnc();
 T.cargo={brick:5}; P.customs(cust('france')); choose(/Run for it/); assert(/fine as well: 100 doubloons/.test($('enc-text').textContent)&&T.gold===900,'a second is a fine'); closeEnc();
 // a big haul in plain sight means jail: the open hold, half the gold, days inside, and a nation against you
 T.cargo={brick:60}; T.gold=1000; T.rep.britain=0; T.record={}; assert(P.bigHaul()); const jd0=E.dayOf(T.dist);
 P.customs(cust('britain')); assert(/jail, not a fine/.test($('enc-body').textContent),'the customs warn you about jail'); choose(/Run for it/);
 assert(/locks you up for 5 days/.test($('enc-text').textContent)&&T.gold===500&&!T.cargo.brick&&T.rep.britain===-80,'jail takes the hold and half the gold');
-w.Math.random=()=>0.99; $('enc-body').querySelector('.primary').click(); w.Math.random=rnd;
+P.dice=()=>0.99; $('enc-body').querySelector('.primary').click(); P.dice=null;
 assert(D.PORTS[T.docked]&&D.PORTS[T.docked].nation==='britain'&&$('dlg-port').open,'you walk out on a British dock: '+T.docked);
 assert(E.dayOf(T.dist)>=jd0+5&&P.standOf('britain')===0,'five days pass, and Britain is still hostile');
 // decoys at level 3: bought at the shipwright, they draw off the customs or a pirate
@@ -351,10 +351,10 @@ const gd=T.gold; P.fight(pir(),null); choose(/Send a decoy/); assert(T.decoys===
 T.xp=Math.max(T.xp,D.LEVELS[3].xp); T.gold=1000; T.fireship=0; dockAt('nassau'); $('tab-tavern').click();
 assert(/Maracaibo/.test($('port-panel').textContent),'the tavern tells the real story'); $('port-panel').querySelector('[data-key=fireship]').click();
 assert(T.fireship===1&&T.gold===500,'a fire ship costs 500'); $('set-sail').click();
-w.Math.random=()=>0.99; P.fight(pir(),null); choose(/Send in your fire ship/); w.Math.random=rnd;
+P.dice=()=>0.99; P.fight(pir(),null); choose(/Send in your fire ship/); P.dice=null;
 assert(T.fireship===0&&/fire ship/i.test($('enc-text').textContent)&&/burns with her/.test($('enc-text').textContent),'the fire ship burns her'); closeEnc();
 // taken over by pirates: the open hold and nine doubloons in ten
-T.gold=1000; T.cargo={brick:4}; T.hull=1; w.Math.random=()=>0; P.fight(pir(),null); choose(/^⚔️ Board/); w.Math.random=rnd;
+T.gold=1000; T.cargo={brick:4}; T.hull=1; P.dice=()=>0; P.fight(pir(),null); choose(/^⚔️ Board/); P.dice=null;
 assert(T.gold===100&&!T.cargo.brick&&/nine in every ten/.test($('enc-text').textContent),'pirates take 90% of the gold'); closeEnc();
 // the grow: buy seeds, plant, wait, cross, harvest, and breed Northern Lights
 const L=P.legacy; L.base=L.base||{lvl:0,gold:0,bales:{},basis:{}}; L.base.grow={beds:[],seeds:{}}; L.base.bales={}; L.base.lvl=1;
@@ -371,7 +371,7 @@ assert(P.harvest(0).g==='g_nl'&&L.base.bales.g_nl===6,'Northern Lights harvests 
 assert(P.crossOf('nl','skunk1')==='shiva'&&P.crossOf('afghani','acapulco')===null,'crosses work either way round, and only real lines');
 assert(P.sellAt('havana','g_nl')>D.GOODS.g_nl.base*0.8&&P.buyAt('havana','g_nl')===null,'any market buys what you grow');
 // the hideout shows the beds, the seed chest and the notebook
-w.Math.random=()=>0.99; P.enterBase(); w.Math.random=rnd; const bb=$('base-body');
+P.dice=()=>0.99; P.enterBase(); P.dice=null; const bb=$('base-body');
 assert(/The grow/.test(bb.textContent)&&/Breeder’s notebook: 1 of 7 strains bred/.test(bb.textContent)&&/Jack Herer/.test(bb.textContent)&&/landrace is a local variety/.test(bb.textContent),'the grow and its notebook');
 $('seed-0').value='afghani'; bb.querySelector('[data-key=pl0]').click(); assert(L.base.grow.beds[0]&&L.base.grow.beds[0].s==='afghani','plant from the hideout');
 assert(/Growing: ready in 6 days/.test($('base-body').textContent),'the bed says when it is ready');
@@ -382,7 +382,7 @@ assert(s6.flags.r6&&Number.isFinite(s6.food)&&s6.record,'provisions and the reco
 assert.equal(errors.length,0,String(errors));
 
 // The MJBizCon week board: scores travel phone to phone in a QR code or link, never to a server.
-{ const B=D.BOARD; assert(B&&B.open<Date.UTC(2026,11,1,8)&&B.close>Date.UTC(2026,11,5,8)&&B.close<B.hide&&B.url==='https://the-reefer.com/pillage/','the board covers show week');
+{ const B=D.BOARD; assert(B&&B.open<Date.UTC(2026,11,1,8)&&B.close>=Date.UTC(2026,11,5,8)&&B.close<B.hide&&B.url==='https://the-reefer.com/pillage/','the board covers show week');
   assert(/December 1 to 4/.test(B.blurb)&&/MJBizCon week board/.test(read('index.html'))&&/only to whoever you show or send them to/.test(read('index.html')),'the page explains it');
   const mk=(url,now,store)=>{ const d=new JSDOM(read('index.html'),{runScripts:'outside-only',pretendToBeVisual:true,url}),v=d.window,errs=[];
     v.addEventListener('error',e=>errs.push(e.error||e.message)); v.Date.now=()=>now;

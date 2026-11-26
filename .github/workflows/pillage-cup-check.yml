@@ -1,0 +1,44 @@
+# Checks Silver Cup runs: replays each run waiting on the server with the game frozen at its version (git tag
+# pillage-<version>) and sends back the score the replay made. It proves who it is to the server with a token GitHub
+# signs for this workflow on main alone, so no password is kept. Runs every few minutes from November 26 to December 6,
+# 2026 (practice, the Cup and the last checks), and by hand any time after, for example after an admin recheck.
+name: Silver Cup run checker
+
+on:
+  schedule:
+    - cron: '*/5 * 26-30 11 *'
+    - cron: '*/5 * 1-6 12 *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: pillage-cup-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+      - name: Does the Cup server have an address yet?
+        id: api
+        run: |
+          if grep -qE "PILLAGE_CUP_API = 'https://" pillage/cup-api.js; then echo "ok=yes" >> "$GITHUB_OUTPUT"; else echo "No address in pillage/cup-api.js yet: nothing to check."; echo "ok=no" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/setup-node@v4
+        if: steps.api.outputs.ok == 'yes'
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install the checker's test browser library (jsdom)
+        if: steps.api.outputs.ok == 'yes'
+        run: npm ci
+      - name: Check the runs waiting
+        if: steps.api.outputs.ok == 'yes'
+        run: node tools/pillage-contest/check.cjs --for 1380

@@ -1,0 +1,44 @@
+# Silver Cup admin, started by hand from the Actions tab (only people who can write to this repository can start it).
+#   dq       disqualify a captain (give the captain name and a short reason)
+#   undq     undo a disqualification
+#   recheck  replay a captain's runs again, then run the checker workflow
+#   purge    wipe every entrant's email now (the server also does this on its own 60 days after the close)
+# The log shows only how many records changed, never anyone's email.
+name: Silver Cup admin
+
+on:
+  workflow_dispatch:
+    inputs:
+      op:
+        description: What to do
+        type: choice
+        options: [dq, undq, recheck, purge]
+        required: true
+      handle:
+        description: Captain name (not needed for purge)
+        type: string
+        required: false
+      reason:
+        description: Reason, for dq
+        type: string
+        required: false
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  admin:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Tell the server
+        env:
+          OP: ${{ inputs.op }}
+          HANDLE: ${{ inputs.handle }}
+          REASON: ${{ inputs.reason }}
+        run: node tools/pillage-contest/admin.cjs

@@ -1,0 +1,30 @@
+# The Silver Cup server for Pillage the Reefer. Deployed by .github/workflows/pillage-cup-deploy.yml.
+name = "pillage-cup"
+main = "worker.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+[vars]
+START = "2026-12-01T08:00:00Z"   # Dec 1, 12:00 AM Pacific
+END = "2026-12-05T08:00:00Z"     # the end of Dec 4, Pacific: MJBizCon's last day
+GRACE_MS = "300000"              # five minutes after the end for the last runs to arrive
+VER = "cup1"                     # the frozen game's version: change only with a logged fix
+REPO = "travisvought-byte/ohio-cannabis-directory"
+ORIGINS = "https://the-reefer.com,https://www.the-reefer.com"
+PURGE = "2027-02-03T08:00:00Z"   # every email is wiped from here on, 60 days after the close
+
+[triggers]
+crons = ["17 9 * * *"]          # daily: wipes the emails once PURGE has passed
+
+[[d1_databases]]
+binding = "DB"
+database_name = "pillage-contest"
+database_id = "3dcb7dc1-9f6e-4487-9149-f7b6b29e7252"
+
+[[durable_objects.bindings]]
+name = "SEAS"
+class_name = "Seas"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Seas"]

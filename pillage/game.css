@@ -213,6 +213,21 @@ button:disabled{opacity:.5}
 .qr svg{width:min(260px,68vw);height:auto;border-radius:6px;display:block}
 .log-top{margin-top:0}
 
+/* the Silver Cup */
+.title-cup{margin-top:12px;padding:10px 12px 6px;border-radius:12px;background:var(--paper2);border:2px solid var(--gold);text-align:center}
+.title-cup h3{margin:.1em 0 .2em;font-size:1.05rem;color:var(--pink)}
+.title-cup p{margin:.2em auto .5em;max-width:none;font-size:.93rem}
+.cup-when{font-weight:700;font-variant-numeric:tabular-nums}
+.cup-when:empty{display:none}
+.cup-links{font-size:.86rem}
+.cup-err{margin:.2em 0;font-weight:700;color:var(--danger)}
+.cup-err:empty{display:none}
+.tools #btn-cup{border-color:var(--gold)}
+#dlg-cup .opts label{align-items:flex-start}
+#dlg-cup .opts input{margin-top:3px}
+#cupstat-msg{font-weight:700}
+#cupstat-msg:empty,#cupstat-checked:empty,#cupstat-note:empty{display:none}
+
 /* info */
 .howto{padding-left:1.2em;max-width:72ch}
 .howto li{margin:.35em 0}
