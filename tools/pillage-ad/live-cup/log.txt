@@ -1,0 +1,38 @@
+OK   the contest page, the game with cup-api.js and the home banner are live
+OK   cup-api.js is served and empty until the server runs: window.PILLAGE_CUP_API = '';
+OK   the sitemap lists the contest page and the rules
+OK   rules say: No purchase necessary
+OK   rules say: 21
+OK   rules say: void where prohibited
+OK   rules say: earlier
+OK   rules say: within 30 days
+OK   rules say: release Facebook
+ohioweed.org/directory.html has the Cup line: false
+OK   phone countdown runs: Opens in 4 days, 11 hours, 28 minutes
+OK   phone board says the server is not running yet
+OK   phone the business link is on the page
+OK   phone contest page fits the screen
+OK   phone business link lands on Partners, Ask: https://the-reefer.com/partners.html#ask
+OK   phone rules fit the screen
+OK   phone home banner shows
+OK   phone home fits the screen
+OK   phone home banner opens the contest page: https://the-reefer.com/pillage/contest.html
+OK   phone privacy has the Silver Cup section
+OK   phone the game title screen shows the Cup box
+phone Cup box: 🏆 The Silver Cup Ten, five and one silver half dollars for the top three captains of MJBizCon week. Entries open here soon. Starts in 4 days, 11 hours: 12:00 AM Pacific, December 1. Continue your Cup run Practice for the Cup How the Cup works, and the prize board · Official rules · Add your business to your state’s directory
+OK   phone the game read cup-api.js
+OK   laptop-dark countdown runs: Opens in 4 days, 11 hours, 28 minutes
+OK   laptop-dark board says the server is not running yet
+OK   laptop-dark the business link is on the page
+OK   laptop-dark contest page fits the screen
+OK   laptop-dark business link lands on Partners, Ask: https://the-reefer.com/partners.html#ask
+OK   laptop-dark rules fit the screen
+OK   laptop-dark home banner shows
+OK   laptop-dark home fits the screen
+OK   laptop-dark home banner opens the contest page: https://the-reefer.com/pillage/contest.html
+OK   laptop-dark privacy has the Silver Cup section
+OK   laptop-dark the game title screen shows the Cup box
+laptop-dark Cup box: 🏆 The Silver Cup Ten, five and one silver half dollars for the top three captains of MJBizCon week. Entries open here soon. Starts in 4 days, 11 hours: 12:00 AM Pacific, December 1. Continue your Cup run Practice for the Cup How the Cup works, and the prize board · Official rules · Add your business to your state’s directory
+OK   laptop-dark the game read cup-api.js
+OK   no page errors or failed loads: []
+ALL OK
