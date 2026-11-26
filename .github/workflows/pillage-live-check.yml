@@ -1,0 +1,29 @@
+name: Check the live Pillage the Reefer week board
+on:
+  push:
+    branches: [claude/project-thread-ft0m1y]
+    paths:
+      - 'tools/pillage-ad/check-live-board.cjs'
+      - '.github/workflows/pillage-live-check.yml'
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: node tools/pillage-ad/check-live-board.cjs
+      - name: Commit the result to this branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -f tools/pillage-ad/live-board
+          git commit -m "Live board check from run ${{ github.run_id }} [skip ci]" || exit 0
+          git push origin HEAD:${{ github.ref_name }}
