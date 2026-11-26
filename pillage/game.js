@@ -78,7 +78,7 @@
 
   function newState() {
     var p = PORTS.tortuga;
-    return {v: 1, map: 'windward', x: p.dock[0], y: p.dock[1], angle: -Math.PI / 2, gold: 150, cargo: {}, basis: {},
+    return {v: 1, map: 'windward', x: p.dock[0], y: p.dock[1], angle: -Math.PI / 2, gold: 250, cargo: {}, basis: {},
       up: {hold: 0, hull: 0, cannons: 0, crew: 0, sails: 0, lavender: 0}, hull: UP.hull.levels[0], xp: 0, pts: 0,
       skill: {fight: 0, sail: 0, charm: 0}, dist: 0, hints: {}, found: {}, quests: {}, visited: {},
       known: {tortuga: 1, portroyal: 1, petitgoave: 1}, collected: {}, pillaged: 0, sunk: 0, tmap: null, dug: 0,
@@ -783,7 +783,8 @@
     ], function () { n.cool = 20; grace = 3; });
   }
   function customs(n) {
-    var done = function () { n.cool = 18; grace = 3; };
+    // A cutter that has had its word with you leaves you alone for a good while.
+    var done = function () { n.cool = 60; grace = 3; };
     if (!cargoCount()) {
       showEncounter('🔵 Crown Customs', n.name + ' of the Crown Customs pulls alongside, sniffs the air and peers into your empty hold. “Nothing aboard but a parrot? Carry on, Captain.”', [{label: 'Carry on'}], done);
       return;
@@ -898,7 +899,7 @@
     }
     if (act === 'run') {
       if (Math.random() < E.fleeChance(st, en)) {
-        n.cool = 25;
+        n.cool = 45;
         endFight(B, pick(['You crowd on every scrap of sail and leave them wallowing in your wake.', 'You duck behind a reef they don’t dare cross. By the time they find a way round, you’re gone.',
           'A lucky gust fills your sails. Their curses fade behind you.']));
         return;
