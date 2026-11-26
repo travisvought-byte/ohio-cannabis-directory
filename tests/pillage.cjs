@@ -40,6 +40,15 @@ assert(pays('vanilla','veracruz','barbados'),'Esperanza: vanilla to Barbados');
 // hash, rosin and biscuits trade on their own swings and pay extra where they're wanted; every good can be smoked
 for(const g of Object.keys(D.GOODS)) assert(D.SMOKE[g]&&D.SMOKE[g].name&&D.SMOKE[g].does&&D.SMOKE[g].flavor,g+' can be smoked');
 const products=Object.keys(D.GOODS).filter(g=>D.GOODS[g].kind==='product');
+// the grow: real breeding lines, every one reachable from the five landraces, every strain a good any market buys
+{ const G=D.GENES,pairs=new Set(); for(const [a,b,r] of D.CROSSES){ assert(G[a]&&G[b]&&G[r],'a real cross: '+a+' x '+b); const k=[a,b].sort().join('+'); assert(!pairs.has(k),'one result per pair: '+k); pairs.add(k); }
+  const got=new Set(Object.keys(G).filter(id=>G[id].kind==='landrace')); assert.equal(got.size,5);
+  for(const id of got) assert(D.PORTS[G[id].from],id+' is sold somewhere');
+  for(let more=true;more;){ more=false; for(const [a,b,r] of D.CROSSES) if(got.has(a)&&got.has(b)&&!got.has(r)){ got.add(r); more=true; } }
+  assert.equal(got.size,Object.keys(G).length,'every strain can be bred');
+  for(const id in G) if(G[id].kind==='strain'){ const g=D.GOODS[G[id].good]; assert(g&&g.kind==='grown'&&!g.rare&&!g.home&&G[id].note,id+' grows into a good');
+    for(const p in D.PORTS) assert(E.sellPrice(p,G[id].good,3)>g.base*0.8&&E.buyPrice(p,G[id].good,3)===null,id+' sells in '+p+' and is sold nowhere'); }
+  assert(D.GOODS.g_home&&D.GOODS.g_jack.base>D.GOODS.g_nl.base,'the hardest strain is worth the most'); }
 assert(products.length>=3,'there is more than strains to trade');
 for(const g of products){ const G=D.GOODS[g]; assert(D.PORTS[G.home].sells.includes(g),g+' sold where it is made');
   const buy=avg(d=>E.buyPrice(G.home,g,d)),sell=p=>avg(d=>E.sellPrice(p,g,d)),others=Object.keys(D.PORTS).filter(p=>p!==G.home&&!G.wants.includes(p));
@@ -278,6 +287,27 @@ assert(T.fireship===0&&/fire ship/i.test($('enc-text').textContent)&&/burns with
 // taken over by pirates: the open hold and nine doubloons in ten
 T.gold=1000; T.cargo={brick:4}; T.hull=1; w.Math.random=()=>0; P.fight(pir(),null); choose(/^⚔️ Board/); w.Math.random=rnd;
 assert(T.gold===100&&!T.cargo.brick&&/nine in every ten/.test($('enc-text').textContent),'pirates take 90% of the gold'); closeEnc();
+// the grow: buy seeds, plant, wait, cross, harvest, and breed Northern Lights
+const L=P.legacy; L.base=L.base||{lvl:0,gold:0,bales:{},basis:{}}; L.base.grow={beds:[],seeds:{}}; L.base.bales={}; L.base.lvl=1;
+T.gold=1000; dockAt('willemstad'); $('tab-tavern').click(); assert(/Seed trader/.test($('port-panel').textContent)&&/Siam/.test($('port-panel').textContent),'Willemstad has a seed trader');
+$('port-panel').querySelector('[data-key=seed-afghani]').click(); $('port-panel').querySelector('[data-key=seed-thai]').click();
+assert(T.gold===760&&L.base.grow.seeds.afghani&&L.base.grow.seeds.thai&&/Afghani is in your seed chest/.test($('port-panel').textContent),'two packets of seeds');
+assert(!P.buySeed('afghani')&&!P.buySeed('nl'),'one packet each, and only landraces are for sale'); $('set-sail').click();
+assert(P.plant(0,'afghani')&&P.plant(1,'thai')&&!P.plant(0,'thai')&&!P.plant(1,'colgold'),'plant what you have in empty beds');
+assert(!P.bedReady(L.base.grow.beds[0])&&P.crossBeds()===null,'nothing to cross until they flower'); T.dist+=D.GROW.days*900;
+assert(P.bedReady(L.base.grow.beds[1]),'six days later they flower'); const cx=P.crossBeds(); assert(cx&&cx.r==='nl'&&cx.fresh&&L.base.grow.seeds.nl,'Afghani x Thai breeds Northern Lights');
+assert.equal(P.crossBeds(),null,'one cross a season'); const hv=P.harvest(0); assert(hv&&hv.g==='g_home'&&hv.n===6&&L.base.bales.g_home===6&&!L.base.grow.beds[0],'a landrace harvests as Homegrown');
+P.harvest(1); assert(P.plant(0,'nl')); L.base.grow.beds[0].voy=-1; assert(P.bedReady(L.base.grow.beds[0]),'a bed planted on an earlier voyage is ready');
+assert(P.harvest(0).g==='g_nl'&&L.base.bales.g_nl===6,'Northern Lights harvests as itself');
+assert(P.crossOf('nl','skunk1')==='shiva'&&P.crossOf('afghani','acapulco')===null,'crosses work either way round, and only real lines');
+assert(P.sellAt('havana','g_nl')>D.GOODS.g_nl.base*0.8&&P.buyAt('havana','g_nl')===null,'any market buys what you grow');
+// the hideout shows the beds, the seed chest and the notebook
+w.Math.random=()=>0.99; P.enterBase(); w.Math.random=rnd; const bb=$('base-body');
+assert(/The grow/.test(bb.textContent)&&/Breeder’s notebook: 1 of 7 strains bred/.test(bb.textContent)&&/Jack Herer/.test(bb.textContent)&&/landrace is a local variety/.test(bb.textContent),'the grow and its notebook');
+$('seed-0').value='afghani'; bb.querySelector('[data-key=pl0]').click(); assert(L.base.grow.beds[0]&&L.base.grow.beds[0].s==='afghani','plant from the hideout');
+assert(/Growing: ready in 6 days/.test($('base-body').textContent),'the bed says when it is ready');
+const lg=JSON.parse(w.localStorage.getItem('pillageTheReefer.legacy')); assert(lg.base.grow.seeds.nl&&lg.base.grow.beds[0].s==='afghani'&&lg.base.bales.g_nl===6,'the grow is saved with the hideout');
+P.leaveBase(true);
 w.dispatchEvent(new w.Event('pagehide')); const s6=JSON.parse(w.localStorage.getItem('pillageTheReefer.v1'));
 assert(s6.flags.r6&&Number.isFinite(s6.food)&&s6.record,'provisions and the record are saved');
 assert.equal(errors.length,0,String(errors));

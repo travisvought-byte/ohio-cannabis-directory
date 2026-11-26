@@ -15,6 +15,8 @@
   var SHOT_MAX = 40, SHOT_PRICE = 3, NAME_MAX = 24;
   // Round five, part two: provisions, decoys, fire ships and the law.
   var FOOD_MAX = 40, FOOD_PRICE = 2, DECOY_MAX = 2, DECOY_COST = 250, FIRE_COST = 500, FIRE_P = 0.8, LAW_BIG = 50;
+  // Round five, part three: the grow at the hideout, and breeding real strains.
+  var GROW = D.GROW, GENES = D.GENES || {}, CROSSES = D.CROSSES || [];
   function $(id) { return document.getElementById(id); }
 
   /* ---------- small helpers ---------- */
@@ -58,7 +60,21 @@
       if (s && typeof s === 'object') {
         if (s.base && typeof s.base === 'object') {
           var b = {lvl: clamp(Math.floor(s.base.lvl) || 0, 0, HIDE.caps.length - 1), gold: Math.max(0, Math.round(s.base.gold) || 0), bales: {}};
-          for (var g in (s.base.bales || {})) if (GOODS[g] && s.base.bales[g] > 0) b.bales[g] = Math.floor(s.base.bales[g]);
+          b.basis = {};
+          for (var g in (s.base.bales || {})) if (GOODS[g] && s.base.bales[g] > 0) {
+            b.bales[g] = Math.floor(s.base.bales[g]);
+            var bs = s.base.basis && +s.base.basis[g];
+            if (bs > 0) b.basis[g] = Math.round(bs);
+          }
+          var gr = s.base.grow, beds = [], seeds = {};
+          if (gr && typeof gr === 'object') {
+            for (var gi = 0; gi < GROW.beds; gi++) {
+              var bd = Array.isArray(gr.beds) && gr.beds[gi];
+              beds.push(bd && GENES[bd.s] ? {s: bd.s, voy: +bd.voy || 0, ready: Math.floor(+bd.ready) || 0, x: bd.x ? 1 : 0} : null);
+            }
+            for (var sd in (gr.seeds || {})) if (GENES[sd]) seeds[sd] = 1;
+          }
+          b.grow = {beds: beds, seeds: seeds};
           L.base = b;
         }
         if (Array.isArray(s.fame)) L.fame = s.fame.filter(function (f) { return f && typeof f.captain === 'string' && typeof f.ship === 'string'; }).slice(0, 8);
@@ -2489,7 +2505,7 @@
       }
       else if (k === 'base' && v === 'buy' && !legacy.base && state.gold >= HIDE.price) {
         state.gold -= HIDE.price;
-        legacy.base = {lvl: 0, gold: 0, bales: {}, basis: {}};
+        legacy.base = {lvl: 0, gold: 0, bales: {}, basis: {}, grow: {beds: [], seeds: {}}};
         state.flags.baseKnown = 1;
         saveLegacy();
         sfx('fanfare');
@@ -2554,6 +2570,7 @@
       hist.appendChild(document.createTextNode(' 📜 Real history: ' + PORTS[pid].history));
       panel.appendChild(hist);
     }
+    seedTrader(pid, panel);
     if (level() >= 4 && D.FIRE_PORTS.indexOf(pid) >= 0) {
       var fbox = el('div', {class: 'repair'});
       fbox.appendChild(el('p', null, '🔥 Fire ship: an old hulk packed with tar, powder and brimstone, with a skeleton crew who light the fuses and row clear. In a fight, send her into one enemy ship. ' + (state.fireship ? 'One already sails with you.' : 'You can lead one at a time.')));
@@ -2912,6 +2929,149 @@
     save();
     focusSea();
   }
+  /* ---------- the grow: two beds above the hideout ---------- */
+  function growOf() { var B = legacy.base; if (!B.grow) B.grow = {beds: [], seeds: {}}; return B.grow; }
+  // A bed planted on an earlier voyage has had all the time it needs.
+  function bedReady(b) { return !!b && (b.voy !== state.seed || day() >= b.ready); }
+  function crossOf(a, b) {
+    for (var i = 0; i < CROSSES.length; i++) { var c = CROSSES[i]; if ((c[0] === a && c[1] === b) || (c[0] === b && c[1] === a)) return c[2]; }
+    return null;
+  }
+  function parentsOf(id) { for (var i = 0; i < CROSSES.length; i++) if (CROSSES[i][2] === id) return CROSSES[i]; return null; }
+  function geneGood(id) { return (GENES[id] && GENES[id].good) || 'g_home'; }
+  function buySeed(id) {
+    var Gr = legacy.base && growOf();
+    if (!Gr || !GENES[id] || GENES[id].kind !== 'landrace' || Gr.seeds[id] || state.gold < GROW.price) return false;
+    state.gold -= GROW.price; Gr.seeds[id] = 1;
+    saveLegacy(); save(); track('buy-seed');
+    return true;
+  }
+  function plant(i, id) {
+    var Gr = growOf();
+    if (i < 0 || i >= GROW.beds || Gr.beds[i] || !Gr.seeds[id]) return false;
+    Gr.beds[i] = {s: id, voy: state.seed, ready: day() + GROW.days, x: 0};
+    track('plant');
+    return true;
+  }
+  function harvest(i) {
+    var Gr = growOf(), b = Gr.beds[i];
+    if (!bedReady(b)) return null;
+    var g = geneGood(b.s), n = Math.min(GROW.yield, baseCap() - baseBales());
+    if (n <= 0) return null;
+    Gr.beds[i] = null;
+    legacy.base.bales[g] = (legacy.base.bales[g] || 0) + n;
+    track('harvest');
+    return {g: g, n: n, s: b.s};
+  }
+  // Both beds in flower: pollinate one with the other. A known breeding line gives seeds of the new strain for good.
+  function crossBeds() {
+    var Gr = growOf(), a = Gr.beds[0], b = Gr.beds[1];
+    if (!bedReady(a) || !bedReady(b) || a.x || b.x) return null;
+    a.x = b.x = 1;
+    if (a.s === b.s) return {same: true};
+    var r = crossOf(a.s, b.s);
+    if (!r) return {none: true};
+    var fresh = !Gr.seeds[r];
+    Gr.seeds[r] = 1;
+    track('cross');
+    return {r: r, fresh: fresh};
+  }
+  function renderGrow(body, btn) {
+    var Gr = growOf(), known = Object.keys(GENES).filter(function (id) { return Gr.seeds[id]; }), room = baseCap() - baseBales();
+    body.appendChild(el('h3', null, '🌱 The grow'));
+    body.appendChild(el('p', {class: 'hint'}, 'Two beds in a sunny clearing above the cave. A crop takes ' + GROW.days + ' days and puts ' + baleWord(GROW.yield) + ' in your stash. When both beds are in flower, cross them: if the pair is a real breeding line, you keep seeds of the new strain for good. Your seed chest and your beds outlast any ship.'));
+    if (!known.length) body.appendChild(el('p', null, '🧺 Your seed chest is empty. Seed traders in the taverns of ' + andList(['willemstad', 'cartagena', 'veracruz'].map(function (p) { return PORTS[p].name; })) + ' sell landrace seeds.'));
+    var ul = el('ul', {class: 'goods'});
+    for (var i = 0; i < GROW.beds; i++) (function (i) {
+      var b = Gr.beds[i], ready = bedReady(b), li = el('li', {class: 'good'}), head = el('div', {class: 'g-head'}), bx = el('div', {class: 'g-btns'});
+      head.appendChild(el('span', {class: 'g-ico', 'aria-hidden': 'true'}, b ? (ready ? '🌳' : '🌱') : '🟫'));
+      head.appendChild(el('h3', null, 'Bed ' + (i + 1) + ': ' + (b ? GENES[b.s].name : 'empty')));
+      li.appendChild(head);
+      if (b) {
+        var left = Math.max(1, b.ready - day()), g = geneGood(b.s);
+        li.appendChild(el('p', {class: 'g-note'}, ready ? 'In full flower. It harvests as ' + baleWord(GROW.yield) + ' of ' + GOODS[g].name + '.' + (b.x ? ' Already crossed this season.' : '')
+          : 'Growing: ready in ' + left + ' ' + plural(left, 'day') + ', on day ' + b.ready + '. It will harvest as ' + GOODS[g].name + '.'));
+        if (ready) btn(bx, room > 0 ? 'Harvest' : 'Stash is full', room > 0 ? 'Harvest bed ' + (i + 1) + ', ' + GENES[b.s].name + ', into your stash' : null, 'hv' + i, function () {
+          var h = harvest(i);
+          if (h) baseDone('🌿 You harvest ' + baleWord(h.n) + ' of ' + GOODS[h.g].name + ' and hang them to dry in the cave.' + (h.n < GROW.yield ? ' The stash is full, so the goats get the rest.' : ''), 'hv' + i);
+        }, room < 1);
+      } else if (known.length) {
+        var sid = 'seed-' + i, sel = el('select', {id: sid});
+        known.forEach(function (id) { sel.appendChild(el('option', {value: id}, GENES[id].name)); });
+        var row = el('p', {class: 'lookup'});
+        row.appendChild(el('label', {for: sid}, 'Seeds for bed ' + (i + 1)));
+        row.appendChild(sel);
+        li.appendChild(row);
+        btn(bx, 'Plant', 'Plant the chosen seeds in bed ' + (i + 1), 'pl' + i, function () {
+          if (plant(i, sel.value)) baseDone('🌱 You plant ' + GENES[sel.value].name + ' in bed ' + (i + 1) + '. It will be ready on day ' + growOf().beds[i].ready + '.', 'pl' + i);
+        });
+      } else li.appendChild(el('p', {class: 'g-note'}, 'Bare earth, waiting for seeds.'));
+      li.appendChild(bx);
+      ul.appendChild(li);
+    })(i);
+    body.appendChild(ul);
+    var A = Gr.beds[0], Bd = Gr.beds[1];
+    if (bedReady(A) && bedReady(Bd) && !A.x && !Bd.x) {
+      var cb = el('div', {class: 'g-btns'});
+      btn(cb, '🧬 Cross the two beds', 'Cross ' + GENES[A.s].name + ' with ' + GENES[Bd.s].name, 'cross', function () {
+        var c = crossBeds();
+        if (!c) return;
+        var msg;
+        if (c.same) msg = '🧬 Crossing ' + GENES[A.s].name + ' with itself just gives you more of the same. Try two different plants.';
+        else if (c.none) msg = '🧬 You dust one bed with the other’s pollen. The seeds come up a scraggly backyard mix, nothing a breeder would keep. Check your breeder’s notebook for real lines.';
+        else {
+          var R = GENES[c.r];
+          sfx('fanfare');
+          msg = '🧬 You dust one bed with the other’s pollen and save the seeds: ' + R.name + '. ' + (c.fresh ? 'New in your seed chest!' + (R.kind === 'strain' ? gainXp(GROW.xp) : '') : 'You already had those.') + ' ' + R.note;
+        }
+        baseDone(msg, 'cross');
+      });
+      body.appendChild(cb);
+    }
+    // The breeder's notebook: every named strain, its real lineage, and what you've bred so far.
+    var nb = el('details', {class: 'notebook'}), names = Object.keys(GENES).filter(function (id) { return GENES[id].kind === 'strain'; });
+    nb.appendChild(el('summary', null, '📓 Breeder’s notebook: ' + names.filter(function (id) { return Gr.seeds[id]; }).length + ' of ' + names.length + ' strains bred'));
+    var nl = el('ul', {class: 'checks'});
+    names.forEach(function (id) {
+      var R = GENES[id], P = parentsOf(id), has = !!Gr.seeds[id], li = el('li', {class: has ? 'done' : ''});
+      li.appendChild(el('span', {'aria-hidden': 'true', class: 'mark'}, has ? '✅' : '📜'));
+      li.appendChild(el('span', {class: 'sr-only'}, has ? 'Bred: ' : 'Not yet: '));
+      li.appendChild(document.createTextNode(R.name + ': cross ' + GENES[P[0]].name + ' with ' + GENES[P[1]].name + '. ' + R.note));
+      nl.appendChild(li);
+    });
+    nb.appendChild(nl);
+    D.GROW_LESSONS.forEach(function (t) { nb.appendChild(el('p', {class: 'history'}, '🧬 ' + t)); });
+    body.appendChild(nb);
+  }
+  // The seed trader: landrace seeds in three taverns. Packets go to the seed chest at your hideout.
+  function seedTrader(pid, panel) {
+    var here = Object.keys(GENES).filter(function (id) { return GENES[id].from === pid; });
+    if (!here.length) return;
+    var box = el('div', {class: 'repair'}), names = here.map(function (id) { return GENES[id].name; });
+    if (!legacy.base) {
+      box.appendChild(el('p', null, '🌱 A seed trader here sells ' + andList(names) + ' seeds, but you’d need somewhere to grow them, like the cave Grandpère Toussaint in Petit-Goâve has for sale.'));
+      panel.appendChild(box);
+      return;
+    }
+    var Gr = growOf();
+    box.appendChild(el('p', null, '🌱 Seed trader: landrace seeds, ' + fmt(GROW.price) + ' doubloons a packet. A packet goes in the seed chest at your hideout and stays there for good, ship or no ship.' +
+      (pid === 'willemstad' ? ' These came by way of Amsterdam: the Dutch East India Company traded in Persia, India and Siam.' : '')));
+    here.forEach(function (id) {
+      var R = GENES[id];
+      box.appendChild(el('p', {class: 'g-note'}, R.name + ': ' + R.note));
+      if (Gr.seeds[id]) { box.appendChild(el('span', {class: 'tag'}, R.name + ' is in your seed chest')); return; }
+      var b = el('button', {type: 'button', class: 'secondary', 'data-key': 'seed-' + id, 'aria-label': 'Buy ' + R.name + ' seeds for ' + fmt(GROW.price) + ' doubloons'}, 'Buy ' + R.name + ' seeds · ' + fmt(GROW.price) + ' 🪙');
+      b.disabled = state.gold < GROW.price;
+      b.addEventListener('click', function () {
+        if (!buySeed(id)) return;
+        sfx('coin');
+        say('🌱 A paper twist of ' + R.name + ' seeds goes into your coat. They’ll wait in the seed chest at your hideout.');
+        renderPanel('seed-' + id);
+      });
+      box.appendChild(b);
+    });
+    panel.appendChild(box);
+  }
   // Bales keep what you paid for them, so selling them later earns renown only for the real profit.
   function stash(g, n) {
     var B = legacy.base, have = state.cargo[g] || 0;
@@ -2989,6 +3149,7 @@
       ul.appendChild(li);
     });
     body.appendChild(ul);
+    renderGrow(body, btn);
     // Digging deeper, and patching the hull yourself
     var more = el('div', {class: 'g-btns base-more'});
     if (B.lvl < HIDE.caps.length - 1) {
@@ -3683,5 +3844,6 @@
     get legacy() { return legacy; }, openCaptain: openCaptain, showTitle: showTitle,
     jobOffers: jobOffers, takeJob: takeJob, settleJobs: settleJobs, dayTick: dayTick, standOf: standOf, shift: shift, buyFor: buyFor, sellFor: sellFor,
     makeNews: makeNews, jobLoad: jobLoad, space: space, openParcels: openParcels, showTab: showTab, openPort: openPort,
-    hungry: hungry, buyFood: buyFood, customs: customs, bigHaul: bigHaul};
+    hungry: hungry, buyFood: buyFood, customs: customs, bigHaul: bigHaul,
+    buySeed: buySeed, plant: plant, harvest: harvest, crossBeds: crossBeds, bedReady: bedReady, crossOf: crossOf, renderHideout: renderHideout};
 })();
