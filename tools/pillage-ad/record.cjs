@@ -111,6 +111,8 @@ async function newPage(browser, base) {
   p.on('pageerror', e => log('PAGE ERROR', e.message));
   p.on('console', m => { if (m.type() === 'error') log('console', m.text()); });
   await p.clock.install({time: new Date('2026-11-26T12:00:00-05:00')});
+  // Stop the clock: otherwise it also runs in real time while each screenshot is taken, and the game plays fast.
+  await p.clock.pauseAt(new Date('2026-11-26T12:00:01-05:00'));
   return {ctx, p};
 }
 
