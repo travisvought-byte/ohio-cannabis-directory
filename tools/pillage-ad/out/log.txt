@@ -3,8 +3,8 @@
 [rec] console Failed to load resource: net::ERR_FAILED
 [rec] console Failed to load resource: net::ERR_FAILED
 [rec] scene sail
-[rec] speed check: sailed 483 in 6.26 s of game clock over 45 frames; 392 animation frames; ship speed 114.7
-[rec] docked at Nassau: true after 57 frames
+[rec] speed check: sailed 137 in 1.50 s of game clock over 45 frames; 94 animation frames; ship speed 114.7
+[rec] docked at Nassau: true after 152 frames
 [rec] scene market
 [rec] scene tavern
 [rec] scene castoff
@@ -12,9 +12,9 @@
 [rec] pirate met: true
 [rec] scene chart
 [rec] encoded title 170 frames
-[rec] encoded sail 57 frames
+[rec] encoded sail 152 frames
 [rec] encoded market 141 frames
 [rec] encoded tavern 245 frames
 [rec] encoded castoff 150 frames
-[rec] encoded fight 247 frames
+[rec] encoded fight 312 frames
 [rec] encoded chart 60 frames
