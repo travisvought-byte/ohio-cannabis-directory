@@ -1,0 +1,37 @@
+name: Check candidate links
+# Reports the HTTP status of each https address in a JSON list in this repo, so outside
+# guides are linked only once their pages are confirmed to exist. Writes nothing back.
+on:
+  workflow_dispatch:
+    inputs:
+      file:
+        description: JSON list of https addresses, path in this repo
+        required: true
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check each link
+        env:
+          FILE: ${{ inputs.file }}
+        run: |
+          python3 - <<'PY'
+          import json, os, time, urllib.request, urllib.error
+          urls = json.load(open(os.environ['FILE']))
+          ua = 'Mozilla/5.0 (compatible; TheReeferLinkCheck/1.0; +https://the-reefer.com/about.html)'
+          for u in urls:
+              if not u.startswith('https://'):
+                  continue
+              req = urllib.request.Request(u, headers={'User-Agent': ua})
+              try:
+                  with urllib.request.urlopen(req, timeout=20) as r:
+                      print('LINK', r.status, u, '->', r.geturl())
+              except urllib.error.HTTPError as e:
+                  print('LINK', e.code, u)
+              except Exception as e:
+                  print('LINK', 'ERR', u, type(e).__name__)
+              time.sleep(0.5)
+          PY
