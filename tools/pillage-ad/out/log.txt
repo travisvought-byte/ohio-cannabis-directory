@@ -1,0 +1,19 @@
+[rec] console Failed to load resource: net::ERR_FAILED
+[rec] scene title
+[rec] console Failed to load resource: net::ERR_FAILED
+[rec] console Failed to load resource: net::ERR_FAILED
+[rec] scene sail
+[rec] docked at Nassau: true
+[rec] scene market
+[rec] scene tavern
+[rec] scene castoff
+[rec] scene fight
+[rec] pirate met: true
+[rec] scene chart
+[rec] encoded title 170 frames
+[rec] encoded sail 44 frames
+[rec] encoded market 129 frames
+[rec] encoded tavern 239 frames
+[rec] encoded castoff 90 frames
+[rec] encoded fight 247 frames
+[rec] encoded chart 60 frames
