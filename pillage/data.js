@@ -463,6 +463,8 @@
     'The note reads: “Pressed hash from Petit-Goâve fetches a fortune in Havana. Write down every price you see. Your ledger is your best friend.”',
     'The note reads: “Every strain gives a different buzz. Smoke a bale of Cartagena Candy before a tricky bit of business.”',
     'The note reads: “Every rope and sail on this ship is hemp. The word canvas comes from cannabis.” True, as it happens.',
+    'The note reads: “Ship’s biscuit keeps for months if the weevils let it. Knock it on the table first.” Real sailors lived on hard biscuit, salt meat, beans and whatever fruit the last port sold.',
+    'The note reads: “A fire ship is a hulk packed with tar and powder, steered at the enemy by a crew who jump for the boat at the last moment.” The English sent eight into the Spanish Armada off Calais in 1588, and Henry Morgan used one at Maracaibo in 1669.',
     'The note reads: “In 1692 an earthquake dropped half of Port Royal into the sea. Some say you can still hear the church bells.” The bells part is a legend; the earthquake is real.',
     'The note reads: “A letter of marque makes you a privateer: a pirate with paperwork. Get one, and pillaging the right flag is legal.”',
     'The note reads: “In 1717 King George offered a pardon to any pirate who gave it up within a year. Plenty took it. Some went straight back to sea.” A true story.',
@@ -611,9 +613,13 @@
   };
   // What each level opens up, so the start stays simple.
   var UNLOCK = {
-    2: 'Jobs and harbour news. Port taverns now post paid jobs (📋 Jobs), and the news moves prices.',
-    3: 'Bounties and letters of marque. Hunt wanted pirates for a nation, or carry its papers and pillage its enemies legally.'
+    2: 'Jobs, harbour news and provisions. Port taverns now post paid jobs (📋 Jobs) and the news moves prices. Your crew starts eating too: a day’s rations for every day at sea, and two more every time you smoke (the munchies). Buy provisions in any market. A hungry crew sails slower and does everything worse.',
+    3: 'Bounties, letters of marque and decoys. Hunt wanted pirates for a nation, or carry its papers and pillage its enemies legally. Shipwrights now sell decoy sloops that sail in your wake and lead trouble away from you.',
+    4: 'Fire ships. Taverns in Nassau, Tortuga, Petit-Goâve and Port Royal can find you a fire ship: an old hulk packed with tar and powder to send into one enemy ship. Her skeleton crew rows clear before she hits.'
   };
+  // Fire ships: where to hire one, and the real story behind it.
+  var FIRE_PORTS = ['nassau', 'tortuga', 'petitgoave', 'portroyal'];
+  var FIRESHIP_NOTE = 'In 1669 three Spanish warships trapped Henry Morgan inside Lake Maracaibo. He disguised a captured ship as a warship, packed her with tar, powder and brimstone, and sent her into the Spanish flagship Magdalena, which burned. Her few crew got clear just before she struck, and Morgan’s fleet slipped out to sea.';
 
   window.PILLAGE_DATA = {GOODS: GOODS, COMMON: COMMON, MAPS: MAPS, PORTS: PORTS, STASHES: STASHES, PEOPLE: PEOPLE,
     QUESTS: QUESTS, UPGRADES: UPGRADES, LEVELS: LEVELS, SKILLS: SKILLS, SKILL_MAX: SKILL_MAX, SEA_TIER: SEA_TIER,
@@ -621,5 +627,5 @@
     CUSTOMS_NAMES: CUSTOMS_NAMES, MERCHANT_NAMES: MERCHANT_NAMES, BOTTLE_TIPS: BOTTLE_TIPS, SMOKE: SMOKE, PARROT: PARROT,
     SHIP_CLASS: SHIP_CLASS, HIDEOUT: HIDEOUT, RELICS: RELICS, SAILS: SAILS, FLAGS: FLAGS,
     NATIONS: NATIONS, NATION_ORDER: NATION_ORDER, WAR: WAR, WAR_NOTE: WAR_NOTE, SEA_LAW: SEA_LAW, SEA_NAVY: SEA_NAVY, SEA_TRADE: SEA_TRADE,
-    NAVY_CLASS: NAVY_CLASS, STAND: STAND, JOB_CARGO: JOB_CARGO, NEWS: NEWS, UNLOCK: UNLOCK};
+    NAVY_CLASS: NAVY_CLASS, STAND: STAND, JOB_CARGO: JOB_CARGO, NEWS: NEWS, UNLOCK: UNLOCK, FIRE_PORTS: FIRE_PORTS, FIRESHIP_NOTE: FIRESHIP_NOTE};
 })();

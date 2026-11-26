@@ -16,7 +16,7 @@
 <meta property="og:description" content="A silly little pirate game: sail the Caribbean, trade cannabis cargo, pillage merchant ships and hunt for the legendary Emerald Bale. Free, in your browser, adults 21+.">
 <meta property="og:url" content="https://the-reefer.com/pillage/">
 <meta property="og:image" content="https://the-reefer.com/assets/the-reefer/logo-share.jpg">
-<link rel="stylesheet" href="game.css?v=7">
+<link rel="stylesheet" href="game.css?v=8">
 <script src="/assets/analytics.js" defer></script>
 </head>
 <body>
@@ -41,6 +41,8 @@
         <li title="Doubloons"><span aria-hidden="true">🪙</span><span class="sr-only">Doubloons:</span> <b id="h-gold">0</b></li>
         <li title="Bales in your hold"><span aria-hidden="true">📦</span><span class="sr-only">Hold:</span> <b id="h-hold">0/20</b></li>
         <li title="Cannonballs"><span aria-hidden="true">💣</span><span class="sr-only">Cannonballs:</span> <b id="h-shot">12</b></li>
+        <li id="h-food-li" title="Days of provisions" hidden><span aria-hidden="true">🍞</span><span class="sr-only">Provisions:</span> <b id="h-food">20</b></li>
+        <li id="h-fleet-li" class="hud-fleet" title="Decoys and fire ship" hidden><span class="sr-only">Fleet: <span id="h-fleet-sr"></span></span><b id="h-fleet" aria-hidden="true"></b></li>
         <li title="Hull points"><span aria-hidden="true">🛡️</span><span class="sr-only">Hull:</span> <b id="h-hull">30/30</b></li>
         <li class="hud-lvl" title="Your level"><span aria-hidden="true">⭐</span> Lv <b id="h-lvl">1</b><span class="hud-title">, <span id="h-rank">Deckhand</span></span><span id="h-pts" class="pts" hidden><span aria-hidden="true"> ✨</span><span class="sr-only">, skill point to spend</span></span></li>
         <li class="hud-day" title="Day of your voyage"><span aria-hidden="true">📅</span> Day <b id="h-day">1</b></li>
@@ -94,16 +96,20 @@
       <li><b>Plan routes:</b> every market you visit goes in your trade ledger, which suggests the best runs you know. In port, the Routes tab sails you straight to any port you know in one go. The days pass, and the longer the trip and the richer your hold, the likelier you meet pirates on the way.</li>
       <li><b>Fight:</b> bump into a fat merchant ship to attack her. Black-sailed pirates will come for you, from little sloops to man-o'-wars far stronger than you. Fire cannonballs (buy more in any market) or lob bales of weed: cheap Brick Weed is made for it. Weed hits softer, but every bale that lands gets their crew higher, so they aim worse and are easier to board. Your parrot rates every fight before it starts.</li>
       <li><b>Roll the die:</b> every risky choice rolls a twenty-sided die and shows the number you need, like 11 or more for a 50% chance. A natural 20 earns extra renown, doubles a shot and fills a boarding party's pockets. Each miss in a row gives you a second wind of +10% on your next roll, up to +30%.</li>
-      <li><b>Real danger:</b> a ship sunk in battle ends the voyage. When a fight looks bad, run for it, pay the pirates off or strike your colours (they take your open hold and a third of your gold, and you sail on). If you'd rather not risk it, pick gentle seas when you start a voyage.</li>
+      <li><b>Real danger:</b> a ship sunk in battle ends the voyage. When a fight looks bad, run for it, pay the pirates off or strike your colours (pirates take your open hold and half your gold, a warship takes you in, and either way you sail on). If you'd rather not risk it, pick gentle seas when you start a voyage.</li>
       <li><b>Smoke a bale:</b> every strain gives its own short boost, like faster sails, sharper haggling, steadier aim or better luck. Smoke one from the market or your captain's log. It lasts about two days of sailing.</li>
       <li><b>Level up:</b> trading at a profit, winning fights, finishing requests, finding treasure and seeing new ports all earn renown. Each level gives a skill point for Fighting, Sailing or Charm. Shipwrights sell a bigger hold, a stouter hull, cannons, boarders, faster sails and a smuggler's hold.</li>
     </ul>
     <h3>Deeper waters</h3>
     <ul class="howto">
       <li><b>Nations and flags:</b> it's 1718. Britain, Spain, France, the Dutch and the pirate Brethren of the Coast each hold ports, and every merchant, customs cutter and warship flies its nation's flag. Your standing with each one sets your prices in its ports, how hard its customs search you and whether its warships salute you or hunt you. Pillaging its merchants and fighting its ships lowers it. Jobs, fees and salutes raise it, and bad blood fades a little every day. Your captain's log shows where you stand.</li>
+      <li><b>The law:</b> get caught by customs or a warship with a small haul and it's a warning, then a fine. Get caught with 50 or more bales in plain sight, or by a nation that counts you an enemy, and it's jail: they take your open hold and half your gold, lock you up for a few days and turn the whole nation against you for weeks.</li>
       <li><b>Jobs (level 2):</b> port taverns post paid work: carry a cargo to another port, run sealed parcels past the customs or bring in bales a port can't grow. Job cargo takes room in your hold. Finish on time for the pay and a better standing, or give up and lose a little face.</li>
+      <li><b>Provisions (level 2):</b> your crew eats a day's provisions for every day at sea, and two more every time you smoke a bale. Buy them in any market, up to 40 days. A hungry crew sails slower and rolls worse until you restock.</li>
       <li><b>Harbour news (level 2):</b> a shortage sends a price up, a glut brings it down, a customs crackdown makes a sea harder to smuggle through and a pirate raid makes it more dangerous. News lasts a few days and shows in taverns, markets and the Routes tab.</li>
       <li><b>Bounties and letters of marque (level 3):</b> beat a wanted pirate for a nation's reward. Or, once a nation counts you a friend, post a bond for its letter of marque: its enemies' merchant ships become fair game, they pay more, and your patron cheers instead of frowning. That's a privateer, a pirate with paperwork.</li>
+      <li><b>Decoys (level 3):</b> shipwrights sell little decoy sloops that sail in your wake, two at most. When pirates, a warship or the customs catch you, send one to lead the trouble away. It always works, and you lose her.</li>
+      <li><b>Fire ships (level 4):</b> taverns in Nassau, Tortuga, Petit-Goâve and Port Royal can find you an old hulk packed with tar and powder. Send her into one enemy ship and she'll most likely burn it, cargo and all. Henry Morgan did exactly this to a Spanish fleet in 1669.</li>
       <li><b>Smuggle:</b> a shipwright can build a smuggler's hold that hides your most valuable bales from Customs and pirates. Kraken Kush, Mermaid's Kiss and Black Pearl are contraband: no market sells them, and Customs take any they can see.</li>
       <li><b>Keep a hideout:</b> old Grandpère Toussaint in Petit-Goâve will sell you the key to a cave on Île-à-Vache. Gold and bales you leave there survive a sinking, ready for your next voyage.</li>
       <li><b>Explore:</b> sail off the edge of the chart to reach the Florida Straits, the Gulf of Mexico, the Spanish Main and the Lesser Antilles. Expect surprises on the way, and buy, win or stumble on treasure maps. The sea chart sets a course for anywhere you've found.</li>
@@ -191,7 +197,7 @@
   <fieldset id="cap-mode" class="modes">
     <legend>How rough are the seas?</legend>
     <label><input id="cap-real" type="radio" name="cap-mode" value="real" checked> <span><b>Real danger.</b> A ship sunk in battle ends the voyage. Your hideout, colours and flags carry over to the next.</span></label>
-    <label><input id="cap-gentle" type="radio" name="cap-mode" value="gentle"> <span><b>Gentle seas.</b> A beaten ship limps away, poorer, and the voyage goes on.</span></label>
+    <label><input id="cap-gentle" type="radio" name="cap-mode" value="gentle"> <span><b>Gentle seas.</b> A beaten ship limps away and the voyage goes on, though pirates who take you over keep your open hold and nine doubloons in ten.</span></label>
   </fieldset>
   <p id="cap-mode-note" class="hint" hidden></p>
   <p class="dlg-live" role="status" hidden></p>
@@ -215,9 +221,9 @@
   <div class="dlg-foot"><button id="note-ok" type="button" class="primary">Aye aye</button></div>
 </dialog>
 
-<script src="data.js?v=7"></script>
-<script src="engine.js?v=7"></script>
-<script src="events.js?v=7"></script>
-<script src="game.js?v=7"></script>
+<script src="data.js?v=8"></script>
+<script src="engine.js?v=8"></script>
+<script src="events.js?v=8"></script>
+<script src="game.js?v=8"></script>
 </body>
 </html>
