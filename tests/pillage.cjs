@@ -14,6 +14,9 @@ const ctx={Math};ctx.window=ctx;vm.createContext(ctx);
 for(const f of ['data.js','engine.js','events.js']) vm.runInContext(read(f),ctx);
 const D=ctx.PILLAGE_DATA,E=ctx.PILLAGE_ENGINE,EV=ctx.PILLAGE_EVENTS;
 
+// every character's name and role are text (a dialogue node called name once replaced Mildew's name with [object Object])
+for(const k in D.PEOPLE) for(const f of ['name','role','icon']) assert.equal(typeof D.PEOPLE[k][f],'string',k+' '+f+' is text');
+
 // seas: exits pair up, every sea is reachable from home waters
 const seas=Object.keys(D.MAPS),seen={windward:1},q=['windward'];
 while(q.length) for(const e of D.MAPS[q.shift()].exits){ assert(D.MAPS[e.to],'exit to a real sea'); if(!seen[e.to]){seen[e.to]=1;q.push(e.to);} }

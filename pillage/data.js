@@ -309,13 +309,13 @@
       start: {text: 'Shh. I’m resting. I’ve been resting for about thirty years. Big job, resting.', options: [
         {label: 'Any treasure around here?', next: 'treasure', if: '!hint:s2'},
         {label: 'Where was that treasure again?', next: 'again', if: 'hint:s2'},
-        {label: 'Why do they call you Mildew?', next: 'name'},
+        {label: 'Why do they call you Mildew?', next: 'nickname'},
         {label: 'Anything up the Florida coast?', next: 'florida'},
         {label: 'Sweet dreams.', end: true}]},
       florida: {text: 'St. Augustine, up the coast to the north-west. Fella there says he’s three hundred years old. Never once seen him in a hammock, so I don’t trust him.', do: 'know:staugustine', options: [{label: 'Noted.', next: 'start'}]},
       treasure: {text: 'Mmh. Ines Featherstone hid a piece of her map on the Dry Tortugas, way out west past the Florida Keys. I’d fetch it myself, but this hammock isn’t going to lie in itself.', do: 'hint:s2', options: [{label: 'Thanks, Mildew.', next: 'start'}]},
       again: {text: 'Dry Tortugas. West. Past the Keys. Shh.', options: [{label: 'Shh. Right.', next: 'start'}]},
-      name: {text: 'I have been in this hammock a long time, Captain. A long, long time.', options: [{label: 'Fair enough.', next: 'start'}]}
+      nickname: {text: 'I have been in this hammock a long time, Captain. A long, long time.', options: [{label: 'Fair enough.', next: 'start'}]}
     },
     quill: {
       name: 'Professor Ignatius Quill', role: 'Botanist, author, enthusiast', icon: '📚', port: 'cartagena',
