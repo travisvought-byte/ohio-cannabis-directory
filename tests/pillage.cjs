@@ -110,6 +110,8 @@ assert(P.passage('havana'));
 for(let i=0;i<40&&$('dlg-encounter').open;i++) ($('enc-body').querySelector('.choice:not([disabled])')||$('enc-body').querySelector('.primary')).click();
 assert.equal(S.docked,'havana','landed in Havana'); assert.equal(Math.round(S.dist-d0),P.voyage('tortuga','havana').days*900,'the day counter moves by the days shown');
 assert(S.seen.tortuga&&S.seen.havana,'both ports are in the ledger');
+// browsers fire the old port's close event after the new port has opened; it must not cast you off again
+$('dlg-port').dispatchEvent(new w.Event('close')); assert.equal(S.docked,'havana','still docked after a late close event'); assert($('dlg-port').open);
 $('tab-routes').click(); assert(/Sail to/.test($('port-panel').textContent)&&/Trade ledger/.test($('port-panel').textContent),'routes tab lists passages and the ledger');
 w.dispatchEvent(new w.Event('pagehide'));
 const saved=JSON.parse(w.localStorage.getItem('pillageTheReefer.v1')); assert.equal(saved.xp,S.xp,'renown is saved');
