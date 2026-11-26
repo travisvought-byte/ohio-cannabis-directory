@@ -71,7 +71,7 @@
 
   /* ---------- the voyage ---------- */
   var state = null, started = false, fogs = {}, npcs = {}, floaters = {}, jokes = [];
-  var ship = {vx: 0, vy: 0}, auto = null, grace = 0, t = 0, wake = [], action = null, actionKey = '';
+  var ship = {vx: 0, vy: 0}, auto = null, grace = 0, t = 0, wake = [], action = null, actionKey = '', justLeft = null;
   var keys = {}, timers = {reveal: 0, save: 4, where: 0, wake: 0}, lastRank = '', lastWhereKey = '', toastTimer = 0;
 
   function newState() {
@@ -366,6 +366,7 @@
     if (!state.docked) return;
     var pid = state.docked;
     state.docked = null;
+    justLeft = pid;
     grace = 1.2;
     closeDialog('dlg-port');
     if (!silent) say('⛵ You cast off from ' + PORTS[pid].name + '.');
@@ -522,9 +523,10 @@
   /* ---------- the context button: dock or dig ---------- */
   function updateAction() {
     var a = null, mid = state.map;
+    if (justLeft && (PORTS[justLeft].map !== mid || Math.hypot(PORTS[justLeft].dock[0] - state.x, PORTS[justLeft].dock[1] - state.y) > 75)) justLeft = null;
     for (var pid in PORTS) {
       var p = PORTS[pid];
-      if (p.map === mid && Math.hypot(p.dock[0] - state.x, p.dock[1] - state.y) < 55) { a = {kind: 'dock', id: pid, label: '⚓ Dock at ' + p.name}; break; }
+      if (pid !== justLeft && p.map === mid && Math.hypot(p.dock[0] - state.x, p.dock[1] - state.y) < 55) { a = {kind: 'dock', id: pid, label: '⚓ Dock at ' + p.name}; break; }
     }
     if (!a) {
       for (var sid in STASHES) {
@@ -1075,6 +1077,7 @@
       var b = el('button', {type: 'button'}, '');
       b.appendChild(el('span', {'aria-hidden': 'true'}, d.icon + ' '));
       b.appendChild(document.createTextNode((d.type === 'exit' ? 'Sail on to ' : 'Sail to ') + d.label + (d.here ? ' (you are here)' : '')));
+      b.appendChild(el('span', {'class': 'sr-only'}, ','));
       b.appendChild(el('small', null, ' ' + where));
       b.disabled = !!d.here;
       b.addEventListener('click', function () {
@@ -1339,7 +1342,7 @@
 
   /* ---------- starting, continuing, starting over ---------- */
   function begin(fresh, saved) {
-    fogs = {}; npcs = {}; floaters = {}; auto = null; wake = []; keys = {}; actionKey = ''; lastWhereKey = '';
+    fogs = {}; npcs = {}; floaters = {}; auto = null; wake = []; keys = {}; actionKey = ''; lastWhereKey = ''; justLeft = null;
     state = fresh ? newState() : fromSave(saved);
     if (!fresh && state.fog) for (var mid in state.fog) if (MAPS[mid]) decodeFog(mid, state.fog[mid]);
     var m = enterMap(state.map);
@@ -1353,6 +1356,7 @@
     resize();
     updateHud();
     updateWhere();
+    try { $('game').scrollIntoView({block: 'start', behavior: calm() ? 'auto' : 'smooth'}); } catch (er) { /* old browsers */ }
     if (fresh) {
       track('new-game');
       save();
@@ -1459,7 +1463,7 @@
       var r = cv.getBoundingClientRect(), px = e.clientX - r.left, py = e.clientY - r.top;
       var wx = view.cx + (px - view.w / 2) / view.s, wy = view.cy + (py - view.h / 2) / view.s, near = 34 / view.s + 8, goal = null;
       destinations(state.map).forEach(function (d) {
-        if (goal || d.here || d.type === 'exit') return;
+        if (goal || d.here || d.type === 'exit' || (d.type === 'port' && d.id === justLeft)) return;
         var p = d.type === 'port' ? PORTS[d.id] : null;
         var dd = Math.min(Math.hypot(d.x - wx, d.y - wy), p ? Math.hypot(p.town[0] - wx, p.town[1] - wy) : Infinity);
         if (dd < near) goal = d;
