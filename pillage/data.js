@@ -16,7 +16,14 @@
     fountain:  {name: 'Fountain of Youth', icon: '⛲', base: 46, home: 'staugustine', note: 'Makes you feel nineteen. Results not guaranteed.'},
     rumcake:   {name: 'Bajan Rum Cake', icon: '🍰', base: 40, home: 'barbados', note: 'Rich, boozy-sweet and gone too soon.'},
     kraken:    {name: 'Kraken Kush', icon: '🐙', base: 150, rare: 'Only found in the holds of merchant ships.', note: 'Legendary. Grips you with all eight arms.'},
-    mermaid:   {name: "Mermaid's Kiss", icon: '🧜', base: 120, rare: 'Only found floating at sea.', note: 'Drifts in on the tide, sweet and salty.'}
+    mermaid:   {name: "Mermaid's Kiss", icon: '🧜', base: 120, rare: 'Only found floating at sea.', note: 'Drifts in on the tide, sweet and salty.'},
+    // Products: made in one port, wanted most in a few others (they pay a premium), and their prices swing by their own amount.
+    hash:      {name: "Smuggler's Hash", icon: '🧱', base: 66, home: 'petitgoave', kind: 'product', swing: 0.3, wants: ['havana', 'cartagena', 'barbados'],
+      note: 'Pressed bricks of resin. Strong, dense and easy to stack. Prized in Havana, Cartagena and Barbados.'},
+    rosin:     {name: 'Amber Rosin', icon: '🔶', base: 84, home: 'willemstad', kind: 'product', swing: 0.5, wants: ['nassau', 'staugustine', 'veracruz'],
+      note: 'Golden and glassy, squeezed by hand. Pricey, and its price jumps about from day to day. Prized in Nassau, St. Augustine and Veracruz.'},
+    biscuits:  {name: "Cook's Biscuits", icon: '🍪', base: 34, home: 'nassau', kind: 'product', swing: 0.2, wants: ['tortuga', 'portobelo', 'barbados'],
+      note: 'Baked by a very relaxed cook. Cheap and steady. Prized in Tortuga, Portobelo and Barbados.'}
   };
   var COMMON = ['tangerine', 'purple', 'breath', 'haze', 'nectar', 'candy', 'pineapple', 'cloud', 'vanilla', 'fountain', 'rumcake'];
 
@@ -185,17 +192,17 @@
                  blurb: 'A rocky little island full of hammocks, gossip and suspicious-smelling smoke.'},
     portroyal:  {name: 'Port Royal', map: 'windward', dock: [545, 832], town: [532, 798], sells: ['purple', 'tangerine', 'breath'], yard: true, who: 'percival',
                  blurb: 'The richest, rowdiest harbor in the Caribbean. The wigs are very tall here.'},
-    petitgoave: {name: 'Petit-Goâve', map: 'windward', dock: [985, 598], town: [994, 630], sells: ['breath', 'tangerine', 'pineapple'], yard: false, who: 'toussaint',
+    petitgoave: {name: 'Petit-Goâve', map: 'windward', dock: [985, 598], town: [994, 630], sells: ['breath', 'tangerine', 'pineapple', 'hash'], yard: false, who: 'toussaint',
                  blurb: 'A quiet old buccaneer harbor where everyone is mending a net or pretending to.'},
     havana:     {name: 'Havana', map: 'straits', dock: [385, 746], town: [385, 792], sells: ['haze', 'nectar', 'fountain'], yard: true, who: 'catalina',
                  blurb: 'Grand walls, grand ships and the finest rollers on any sea.'},
-    nassau:     {name: 'Nassau', map: 'straits', dock: [1132, 300], town: [1135, 334], sells: ['nectar', 'haze', 'tangerine'], yard: false, who: 'mildew',
+    nassau:     {name: 'Nassau', map: 'straits', dock: [1132, 300], town: [1135, 334], sells: ['nectar', 'haze', 'tangerine', 'biscuits'], yard: false, who: 'mildew',
                  blurb: 'A pirate republic of palm trees, hammocks and very relaxed rules.'},
     cartagena:  {name: 'Cartagena', map: 'main', dock: [500, 758], town: [508, 806], sells: ['candy', 'pineapple', 'cloud'], yard: true, who: 'quill',
                  blurb: 'A walled city of balconies, bells and one very busy botanist.'},
     portobelo:  {name: 'Portobelo', map: 'main', dock: [180, 724], town: [182, 770], sells: ['pineapple', 'candy', 'breath'], yard: false, who: 'prudence',
                  blurb: 'Sleepy treasure port. Somebody important is on holiday here.'},
-    willemstad: {name: 'Willemstad', map: 'main', dock: [1196, 502], town: [1192, 472], sells: ['cloud', 'candy', 'nectar'], yard: true, who: 'ines',
+    willemstad: {name: 'Willemstad', map: 'main', dock: [1196, 502], town: [1192, 472], sells: ['cloud', 'candy', 'nectar', 'rosin'], yard: true, who: 'ines',
                  blurb: 'Colorful houses, a floating bridge and a famous captain in retirement.'},
     staugustine: {name: 'St. Augustine', map: 'straits', dock: [482, 75], town: [418, 52], sells: ['fountain', 'nectar', 'tangerine'], yard: false, who: 'bartholomew',
                  blurb: 'The oldest town in Florida. Some of the residents feel it.'},
@@ -432,13 +439,37 @@
     'The note reads: “Merchant ships carry Kraken Kush. Customs cutters carry clipboards. Choose your fights.”',
     'The note reads: “Black sails mean pirates. Pound them with broadsides first, then board when they’re weak.”',
     'The note reads: “A pirate who beats you only takes part of your hold. Patch up at any port and try again.”',
-    'The note reads: “Whoever finds this: the haze over Smoke Cay never lifts. Signed, someone who got lost there for a week.”'
+    'The note reads: “Whoever finds this: the haze over Smoke Cay never lifts. Signed, someone who got lost there for a week.”',
+    'The note reads: “Pressed hash from Petit-Goâve fetches a fortune in Havana. Write down every price you see. Your ledger is your best friend.”',
+    'The note reads: “Every strain gives a different buzz. Smoke a bale of Cartagena Candy before a tricky bit of business.”'
   ];
+
+  /* Smoking (or eating) one bale gives a short boost for about two days of sailing. One boost at a time: a new one replaces the old.
+     fight, sail, charm: extra skill points. luck: added to every odds check. sell: extra on every sale. speed: faster sailing.
+     nose: how close Customs must get to smell you. calm: pirates leave you be. mend: 1 hull point a league. sight: see farther. comb: more floating bales. */
+  var SMOKE = {
+    tangerine: {name: 'Sunny Sails', sail: 2, does: '+2 Sailing: a faster ship and better odds when you run.', flavor: 'The whole deck smells like a sunny morning.'},
+    purple:    {name: 'Pinky Out', charm: 2, does: '+2 Charm: better prices, cheaper bribes and smoother talking.', flavor: 'Everyone starts speaking very properly.'},
+    breath:    {name: 'Old Sea Dog', fight: 2, does: '+2 Fighting: harder broadsides and better boarding odds.', flavor: 'Your crew starts growling at seagulls.'},
+    haze:      {name: 'Low Profile', nose: 0.5, does: 'Customs have to sail twice as close to smell your cargo.', flavor: 'You feel smooth, slow and very hard to notice.'},
+    nectar:    {name: 'Honey Hands', mend: 1, does: 'Your mellow crew patches 1 hull point for every league you sail.', flavor: 'Somebody starts humming and picks up a hammer.'},
+    candy:     {name: 'Sugar Rush', luck: 0.1, does: '+10% on every odds check.', flavor: 'Everything feels like it’s going to work out.'},
+    pineapple: {name: 'Party Hat', sell: 0.08, does: 'Buyers love you: +8% on everything you sell.', flavor: 'A tiny hat appears on your head. Nobody knows where from.'},
+    cloud:     {name: 'Head in the Clouds', sight: 1.6, does: 'You see much farther, so the fog lifts faster.', flavor: 'The horizon looks very, very interesting.'},
+    vanilla:   {name: 'Siesta', calm: 1, does: 'Pirates are too relaxed to bother you.', flavor: 'A great calm settles over the sea. Even the pirates yawn.'},
+    fountain:  {name: 'Feeling Nineteen', sail: 1, charm: 1, fight: 1, does: '+1 Fighting, Sailing and Charm.', flavor: 'You feel young, bold and a bit reckless.'},
+    rumcake:   {name: 'Beachcomber', comb: 1, does: 'Floating bales turn up twice as often.', flavor: 'You develop a keen eye for anything bobbing in the water.'},
+    kraken:    {name: 'Eight Arms', fight: 2, sail: 2, charm: 2, luck: 0.1, does: '+2 to every skill and +10% on every odds check.', flavor: 'You feel like you could hold eight cutlasses at once.'},
+    mermaid:   {name: 'Swims Like a Fish', speed: 0.25, does: 'Your ship sails 25% faster.', flavor: 'Salt spray, sweet air and a sudden urge to sing.'},
+    hash:      {name: 'Iron Nerves', fight: 2, luck: 0.05, does: '+2 Fighting and +5% on every odds check.', flavor: 'Heavy, slow and steady. Nothing rattles you.'},
+    rosin:     {name: 'Golden Glow', charm: 2, sell: 0.05, does: '+2 Charm and +5% on everything you sell.', flavor: 'You glow. Literally, a little. It’s fine.'},
+    biscuits:  {name: 'Slow Burn', sail: 1, charm: 1, fight: 1, days: 4, verb: 'eat', does: '+1 Fighting, Sailing and Charm, for four days instead of two.', flavor: 'Nothing happens for an hour. Then everything is lovely for days.'}
+  };
 
   var PARROT = 'Admiral Biscuit';
 
   window.PILLAGE_DATA = {GOODS: GOODS, COMMON: COMMON, MAPS: MAPS, PORTS: PORTS, STASHES: STASHES, PEOPLE: PEOPLE,
     QUESTS: QUESTS, UPGRADES: UPGRADES, LEVELS: LEVELS, SKILLS: SKILLS, SKILL_MAX: SKILL_MAX, SEA_TIER: SEA_TIER,
     PIRATE_COUNT: PIRATE_COUNT, PIRATE_SHIPS: PIRATE_SHIPS, PIRATE_CAPTAINS: PIRATE_CAPTAINS, BOSS: BOSS,
-    CUSTOMS_NAMES: CUSTOMS_NAMES, MERCHANT_NAMES: MERCHANT_NAMES, BOTTLE_TIPS: BOTTLE_TIPS, PARROT: PARROT};
+    CUSTOMS_NAMES: CUSTOMS_NAMES, MERCHANT_NAMES: MERCHANT_NAMES, BOTTLE_TIPS: BOTTLE_TIPS, SMOKE: SMOKE, PARROT: PARROT};
 })();

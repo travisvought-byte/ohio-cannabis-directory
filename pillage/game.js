@@ -7,7 +7,8 @@
   var SAVE_KEY = 'pillageTheReefer.v1', PREF_KEY = 'pillageTheReefer.prefs';
   var FOG = 40, REVEAL = 190, ORDER = Object.keys(GOODS), NPORTS = Object.keys(PORTS).length;
   var EV = window.PILLAGE_EVENTS || {sea: [], port: []};
-  var clamp = E.clamp;
+  var clamp = E.clamp, SMOKE = D.SMOKE || {};
+  var STRAINS = ORDER.filter(function (g) { return !GOODS[g].kind; });
   function $(id) { return document.getElementById(id); }
 
   /* ---------- small helpers ---------- */
@@ -32,7 +33,6 @@
     var dirs = ['east', 'north-east', 'north', 'north-west', 'west', 'south-west', 'south', 'south-east'];
     return dirs[Math.round(((a + 360) % 360) / 45) % 8];
   }
-  function oddsWord(p) { return p < 0.3 ? 'long odds' : p < 0.45 ? 'so-so odds' : p < 0.6 ? 'even odds' : p < 0.78 ? 'good odds' : 'great odds'; }
   function track(a) { try { if (window.directoryTrack) window.directoryTrack('pillage-' + a); } catch (e) { /* counting is optional */ } }
 
   /* ---------- preferences (kept apart from the voyage) ---------- */
@@ -82,10 +82,17 @@
       up: {hold: 0, hull: 0, cannons: 0, crew: 0, sails: 0, lavender: 0}, hull: UP.hull.levels[0], xp: 0, pts: 0,
       skill: {fight: 0, sail: 0, charm: 0}, dist: 0, hints: {}, found: {}, quests: {}, visited: {},
       known: {tortuga: 1, portroyal: 1, petitgoave: 1}, collected: {}, pillaged: 0, sunk: 0, tmap: null, dug: 0,
-      flags: {}, docked: null, fog: {}};
+      flags: {}, docked: null, fog: {}, grit: 0, buff: null, seen: {}};
   }
   function curMap() { return MAPS[state.map]; }
-  function stats() { return E.stats(state); }
+  // Your ship and skills, plus whatever boost you've smoked.
+  function stats() {
+    var b = boost();
+    if (!b) return E.stats(state);
+    var k = state.skill, st = E.stats({up: state.up, skill: {fight: k.fight + (b.fight || 0), sail: k.sail + (b.sail || 0), charm: k.charm + (b.charm || 0)}});
+    if (b.speed) st.speed *= 1 + b.speed;
+    return st;
+  }
   function hullMax() { return UP.hull.levels[state.up.hull]; }
   function level() { return E.levelOf(state.xp); }
   function title(lv) { return D.LEVELS[(lv || level()) - 1].title; }
@@ -142,6 +149,55 @@
     return k;
   }
   function heal(n) { var k = Math.max(0, Math.min(n, hullMax() - state.hull)); state.hull += k; return k; }
+
+  /* ---------- odds: the number on the button is exactly the number that's rolled ---------- */
+  // A miss earns a second wind: +10% on the next check, +20% after two misses in a row. Some boosts add luck too.
+  function boost() { var b = state && state.buff; return b && SMOKE[b.g] && state.dist < b.until ? SMOKE[b.g] : null; }
+  function edge() { var b = boost(); return Math.min(0.2, 0.1 * (state.grit || 0)) + ((b && b.luck) || 0); }
+  function chanceOf(p) { return Math.round(clamp(p + edge(), 0.05, 0.95) * 100); }
+  function pct(p) { return chanceOf(p) + '% chance'; }
+  function roll(p) {
+    var ok = Math.random() * 100 < chanceOf(p);
+    state.grit = ok ? 0 : Math.min(2, (state.grit || 0) + 1);
+    return ok;
+  }
+  function edgeHint() {
+    var b = boost(), parts = [];
+    if (state.grit) parts.push('+' + Math.min(20, 10 * state.grit) + '% second wind after ' + (state.grit > 1 ? 'two misses' : 'a miss'));
+    if (b && b.luck) parts.push('+' + Math.round(b.luck * 100) + '% from your ' + b.name);
+    return parts.length ? '🍀 Already counted in these odds: ' + andList(parts) + '.' : '';
+  }
+
+  /* ---------- smoking a bale: a short, strain-specific boost ---------- */
+  var mendAcc = 0;
+  function verb(g) { return (SMOKE[g] && SMOKE[g].verb) || 'smoke'; }
+  function boostDays(S) { return S.days || 2; }
+  function boostLeft() { return state.buff ? Math.max(1, Math.ceil((state.buff.until - state.dist) / 900)) : 0; }
+  function smoke(g) {
+    var S = SMOKE[g], had = boost();
+    if (!S || !(state.cargo[g] > 0)) return false;
+    takeCargo(g, 1);
+    state.buff = {g: g, until: Math.round(state.dist) + 900 * boostDays(S)};
+    mendAcc = 0;
+    sfx('pickup');
+    track('smoke');
+    say('🔥 You ' + (verb(g) === 'eat' ? 'pass round a crate of ' : 'light up a bale of ') + GOODS[g].name + '. ' + S.flavor + ' ' + S.name + ': ' + S.does +
+      (S.days ? '' : ' It lasts about 2 days of sailing.') + (had && had !== S ? ' It replaces ' + had.name + '.' : ''));
+    save();
+    return true;
+  }
+  // Called as the ship covers distance: wears the boost off and lets Honey Hands patch the hull.
+  function boostTick(moved) {
+    var b = state.buff;
+    if (!b) return '';
+    var S = SMOKE[b.g];
+    if (S && S.mend && state.hull < hullMax()) {
+      mendAcc += Math.min(moved, Math.max(0, b.until - (state.dist - moved)));
+      if (mendAcc >= 100) { heal(Math.floor(mendAcc / 100)); mendAcc %= 100; }
+    }
+    if (!S || state.dist >= b.until) { state.buff = null; mendAcc = 0; return S ? '🔥 Your ' + S.name + ' boost has worn off.' : ''; }
+    return '';
+  }
   function nearPort(x, y, r, mid) {
     mid = mid || state.map;
     for (var pid in PORTS) { var p = PORTS[pid]; if (p.map === mid && Math.hypot(p.dock[0] - x, p.dock[1] - y) < r) return pid; }
@@ -252,6 +308,10 @@
     b.pts = Math.max(0, Math.floor(b.pts) || 0);
     b.hull = clamp(Math.round(b.hull) || 1, 1, UP.hull.levels[b.up.hull]);
     if (b.tmap && !(MAPS[b.tmap.map] && b.tmap.at)) b.tmap = null;
+    if (b.buff && !(SMOKE[b.buff.g] && b.buff.until > 0)) b.buff = null;
+    b.grit = clamp(Math.floor(b.grit) || 0, 0, 2);
+    if (typeof b.seen !== 'object' || Array.isArray(b.seen)) b.seen = {};
+    for (var sp in b.seen) if (!PORTS[sp] || !b.seen[sp] || typeof b.seen[sp].s !== 'object') delete b.seen[sp];
     return b;
   }
 
@@ -378,11 +438,12 @@
   }
 
   /* ---------- sailing ---------- */
-  function exitPoint(e) {
+  function exitPointFrom(e, at) {
     var r = e.rect;
-    if (r[2] > r[3]) return [clamp(state.x, r[0] + 40, r[0] + r[2] - 40), r[1] + r[3] / 2];
-    return [r[0] + r[2] / 2, clamp(state.y, r[1] + 20, r[1] + r[3] - 20)];
+    if (r[2] > r[3]) return [clamp(at[0], r[0] + 40, r[0] + r[2] - 40), r[1] + r[3] / 2];
+    return [r[0] + r[2] / 2, clamp(at[1], r[1] + 20, r[1] + r[3] - 20)];
   }
+  function exitPoint(e) { return exitPointFrom(e, [state.x, state.y]); }
   function nextSea(from, to) {
     var prev = {}, q = [from];
     prev[from] = null;
@@ -444,15 +505,16 @@
     updateWhere(true);
     save();
   }
-  function dock(pid) {
+  function dock(pid, lead) {
     var p = PORTS[pid], first = !state.visited[pid];
     auto = null; ship.vx = ship.vy = 0;
     state.docked = pid; state.visited[pid] = 1; state.known[pid] = 1;
+    notePrices(pid);
     var f = E.nearestFreePoint(curMap(), p.dock[0], p.dock[1]);
     state.x = f[0]; state.y = f[1];
     reveal(state.map, p.dock[0], p.dock[1], 170);
     sfx('splash');
-    var msg = first ? '⚓ Your first visit to ' + p.name + '!' + gainXp(25) : '';
+    var msg = (lead ? lead + ' ' : '') + (first ? '⚓ Your first visit to ' + p.name + '!' + gainXp(25) : '');
     if (state.gold < 30 && !cargoCount() && state.flags.relief !== day()) {
       state.flags.relief = day();
       state.gold += 100;
@@ -465,7 +527,7 @@
     function open() { openPort(pid, first ? 'tavern' : 'market'); if (msg) say(msg.trim()); }
     if (ev) { lastPortEv = t; runEvent(ev, open); } else open();
   }
-  function leavePort(silent) {
+  function leavePort(silent, quick) {
     if (!state.docked) return;
     var pid = state.docked;
     state.docked = null;
@@ -474,7 +536,7 @@
     closeDialog('dlg-port');
     if (!silent) say('⛵ You cast off from ' + PORTS[pid].name + '.');
     updateWhere(true);
-    if (!state.flags.p_steer) setTimeout(function () { parrot('steer', 'Arrow keys or tap the sea to steer! Chart & sail picks a port for you! Squawk!', true); }, 1200);
+    if (!quick && !state.flags.p_steer) setTimeout(function () { parrot('steer', 'Arrow keys or tap the sea to steer! Chart & sail picks a port for you! Squawk!', true); }, 1200);
     save();
     focusSea();
   }
@@ -514,6 +576,8 @@
     if (!E.shipBlocked(m, state.x, ny)) state.y = ny; else ship.vy *= -0.2;
     var moved = Math.hypot(state.x - ox, state.y - oy), vs = Math.hypot(ship.vx, ship.vy);
     state.dist += moved;
+    var worn = boostTick(moved);
+    if (worn) say(worn);
     if (vs > 6) state.angle = turnToward(state.angle, Math.atan2(ship.vy, ship.vx), dt * 5);
 
     // A stuck autopilot looks for another way, then gives up.
@@ -537,7 +601,7 @@
     for (var w = wake.length - 1; w >= 0; w--) { wake[w].age += dt; if (wake[w].age > 1.6) wake.splice(w, 1); }
 
     timers.reveal -= dt;
-    if (timers.reveal <= 0) { timers.reveal = 0.2; reveal(state.map, state.x, state.y, REVEAL); }
+    if (timers.reveal <= 0) { timers.reveal = 0.2; var bs = boost(); reveal(state.map, state.x, state.y, REVEAL * ((bs && bs.sight) || 1)); }
 
     if (grace <= 0) {
       for (var e = 0; e < m.exits.length; e++) {
@@ -569,8 +633,9 @@
     var F = floaters[state.map];
     F.timer -= dt;
     if (F.timer <= 0) {
-      F.timer = 16 + Math.random() * 18;
-      if (F.list.filter(function (b) { return b.g !== 'bottle'; }).length < 4) { var b = spawnFloater(m, false); if (b) F.list.push(b); }
+      var comb = boost() && boost().comb;
+      F.timer = (16 + Math.random() * 18) * (comb ? 0.5 : 1);
+      if (F.list.filter(function (b) { return b.g !== 'bottle'; }).length < (comb ? 6 : 4)) { var b = spawnFloater(m, false); if (b) F.list.push(b); }
     }
     F.bottle -= dt;
     if (F.bottle <= 0) {
@@ -598,6 +663,7 @@
 
   function updateNpcs(m, dt) {
     var list = npcs[state.map], hasCargo = cargoCount() > 0, safe = !!nearPort(state.x, state.y, 170), weak = state.hull < hullMax() * 0.35;
+    var bz = boost(), calmed = !!(bz && bz.calm);
     maybeBoss(m, list);
     for (var i = 0; i < list.length; i++) {
       var n = list[i], raider = n.kind === 'pirate';
@@ -607,12 +673,12 @@
       var d = Math.hypot(n.x - state.x, n.y - state.y), tx, ty, chase = false;
       var sp = n.kind === 'customs' ? 78 : n.kind === 'merchant' ? 48 : 64;
       if (n.kind === 'customs') {
-        var nose = 210 * (state.up.lavender ? 0.55 : 1) * (state.flags.vicar ? 0.7 : 1);
+        var nose = 210 * noseFactor();
         chase = n.cool <= 0 && hasCargo && d < nose && E.walkable(m, [n.x, n.y], [state.x, state.y]);
         if (chase && !n.chase) parrot('customs', 'Blue sails! Blue sails! Customs! Squawk!', false, 30);
       } else if (raider) {
         // Pirates leave you be near a port's guns, and don't bother with a ship that's already battered.
-        chase = n.cool <= 0 && !safe && !weak && d < 240 && E.walkable(m, [n.x, n.y], [state.x, state.y]);
+        chase = n.cool <= 0 && !safe && !weak && !calmed && d < 240 && E.walkable(m, [n.x, n.y], [state.x, state.y]);
         if (chase && !n.chase) parrot('pirate', 'Black sails! Pirates! ' + DANGER[dangerOf(n)] + '! Squawk!', false, 30);
       } else if (n.kind === 'boss' && d < 320) {
         // Gristle never chases: you pick the moment by sailing into him.
@@ -641,7 +707,7 @@
       if (!E.shipBlocked(m, n.x, ny)) n.y = ny;
       n.angle = turnToward(n.angle, Math.atan2(vy, vx), dt * 4);
       if (n.kind === 'merchant' && !n.looted && d < 200 && !state.flags.p_merchant) parrot('merchant', 'Fat merchantman! Sail into her to board! Pillage! Squawk!', true);
-      if (d < 26 && grace <= 0 && n.cool <= 0 && !(n.kind === 'merchant' && n.looted) && !(raider && (safe || weak))) { encounter(n); return; }
+      if (d < 26 && grace <= 0 && n.cool <= 0 && !(n.kind === 'merchant' && n.looted) && !(raider && (safe || weak || calmed))) { encounter(n); return; }
     }
   }
 
@@ -782,43 +848,63 @@
       {label: '⛵ Not today', fn: function () { return 'You come about before ' + n.name + ' can run out her guns. ' + D.BOSS.captain + ' jeers at you across the water. He’ll be here when you’re ready.'; }}
     ], function () { n.cool = 20; grace = 3; });
   }
-  function customs(n) {
+  // How far away Customs can smell your cargo, as a share of the usual distance.
+  function noseFactor() { var b = boost(); return (state.up.lavender ? 0.55 : 1) * (state.flags.vicar ? 0.7 : 1) * ((b && b.nose) || 1); }
+  // The bale you'd burn to cover an escape: the cheapest one aboard.
+  function burnPick() {
+    var held = Object.keys(state.cargo).filter(function (g) { return state.cargo[g] > 0; });
+    held.sort(function (a, b) { return GOODS[a].base - GOODS[b].base; });
+    return held[0] || null;
+  }
+  var BURN_P = 0.5;
+  function customs(n, after, lead) {
     // A cutter that has had its word with you leaves you alone for a good while.
-    var done = function () { n.cool = 60; grace = 3; };
+    var done = function () { n.cool = 60; grace = 3; if (after) after(); };
     if (!cargoCount()) {
       showEncounter('🔵 Crown Customs', n.name + ' of the Crown Customs pulls alongside, sniffs the air and peers into your empty hold. “Nothing aboard but a parrot? Carry on, Captain.”', [{label: 'Carry on'}], done);
       return;
     }
-    var st = stats(), vicar = state.flags.vicar ? 1 : 0;
+    var st = stats(), vicar = state.flags.vicar ? 1 : 0, bg = burnPick();
     var bribe = Math.max(15, Math.round(cargoValue() * 0.18 * (1 - 0.1 * st.charm)));
-    var runP = Math.min(0.95, 0.5 + 0.1 * st.sails + 0.05 * st.sail + 0.1 * vicar);
-    var shotP = Math.min(0.95, 0.2 + 0.13 * st.cannons + 0.05 * st.fight);
-    var talkP = Math.min(0.95, 0.35 + 0.08 * st.charm + 0.3 * vicar);
-    showEncounter('🔵 Crown Customs!', n.name + ' of the Crown Customs blocks your way. “Inspection! What is that smell? Is that… citrus?”', [
+    // Each way out leans on a different part of your ship and captain, so how you build your ship shows here.
+    var runP = Math.min(0.95, 0.5 + 0.1 * st.sails + 0.07 * st.sail + 0.1 * vicar);
+    var shotP = Math.min(0.95, 0.2 + 0.13 * st.cannons + 0.07 * st.fight);
+    var talkP = Math.min(0.95, 0.35 + 0.1 * st.charm + 0.3 * vicar);
+    var hint = 'Your odds come from your ship and skills: sails and Sailing for running, cannons and Fighting for a warning shot, Charm for talking. ' + edgeHint();
+    showEncounter('🔵 Crown Customs!', lead || n.name + ' of the Crown Customs blocks your way. “Inspection! What is that smell? Is that… citrus?”', [
       {label: '🪙 Pay a “paperwork fee” of ' + fmt(bribe) + ' doubloons', disabled: state.gold < bribe, fn: function () {
         state.gold -= bribe; sfx('coin');
         return pick([n.name + ' pockets the fee, stamps a form in triplicate and wishes you a pleasant voyage.',
           'The fee vanishes into a very large hat. “Everything appears to be in order,” says ' + n.name + ', not looking at anything.']);
       }},
-      {label: '⛵ Run for it (' + oddsWord(runP) + ')', fn: function () {
-        if (Math.random() < runP) return 'You crowd on every scrap of sail and leave the cutter wallowing in your wake. Somewhere behind you, a whistle is blown very angrily.' + gainXp(10);
+      {label: '⛵ Run for it (' + pct(runP) + ')', fn: function () {
+        if (roll(runP)) return 'You crowd on every scrap of sail and leave the cutter wallowing in your wake. Somewhere behind you, a whistle is blown very angrily.' + gainXp(10);
         var lost = confiscate(1 / 3); sfx('bad');
         return 'They catch you before you clear the reef. ' + n.name + ' confiscates ' + baleWord(lost) + ' “for evidence.” You hear coughing from their ship for the rest of the afternoon.';
       }},
-      {label: '💣 Fire a warning shot (' + oddsWord(shotP) + ')', fn: function () {
-        if (Math.random() < shotP) return 'BOOM. The cannonball lands a polite distance from their bow. After a short meeting, the cutter decides it left the kettle on and sails home.' + gainXp(10);
+      {label: '💣 Fire a warning shot (' + pct(shotP) + ')', fn: function () {
+        if (roll(shotP)) return 'BOOM. The cannonball lands a polite distance from their bow. After a short meeting, the cutter decides it left the kettle on and sails home.' + gainXp(10);
         var lost = confiscate(1 / 3), fine = Math.min(state.gold, Math.round(state.gold * 0.1));
         state.gold -= fine; sfx('bad');
         return 'BOOM. You hit their flagpole. ' + n.name + ' is furious, seizes ' + baleWord(lost) + ' and fines you ' + fmt(fine) + ' doubloons for damage to Crown property.';
       }},
-      {label: '🗣️ Ask about their day (' + oddsWord(talkP) + ')', fn: function () {
-        if (Math.random() < talkP) return pick(['“Rough day?” you ask. ' + n.name + ' talks for forty minutes about a stapler. Everyone forgets about the inspection.',
+      {label: '🗣️ Ask about their day (' + pct(talkP) + ')', fn: function () {
+        if (roll(talkP)) return pick(['“Rough day?” you ask. ' + n.name + ' talks for forty minutes about a stapler. Everyone forgets about the inspection.',
           'You compliment their hat. They blush, wave you through and ask where you got your parrot.',
           'You explain it’s all for a botanist in Cartagena. Technically true. They let you go with a warning and a pamphlet.']) + gainXp(10);
         var lost = confiscate(0.25); sfx('bad');
         return n.name + ' is not interested in your thoughts on the weather and confiscates ' + baleWord(lost) + '.';
+      }},
+      {label: '🔥 Burn a bale of ' + GOODS[bg].name + ' (' + pct(BURN_P) + ')', next: function () {
+        takeCargo(bg, 1);
+        if (roll(BURN_P)) {
+          showEncounter('🔵 Crown Customs', 'You set a bale of ' + GOODS[bg].name + ' smouldering and fan the smoke at the cutter. ' + cap(n.name) + ' breathes in, giggles at a seagull and wanders off to find a snack. Nobody remembers why they stopped you.' + gainXp(10), [], done);
+          return;
+        }
+        sfx('bad');
+        customs(n, after, 'You set a bale of ' + GOODS[bg].name + ' smouldering, but the wind shifts and blows the smoke straight back over your own deck. Your crew has the giggles. ' + n.name + ' does not. “Now then. About that inspection.”');
       }}
-    ], done);
+    ], done, hint);
   }
   function merchant(n) {
     var dz = dangerOf(n);
@@ -835,8 +921,8 @@
   /* ---------- battles: a few rounds of broadsides, boarding or running ---------- */
   function foeName(n) { return n.kind === 'merchant' ? cap(n.name) : n.captain; }
   function toll(n) { return clamp(Math.round(state.gold * 0.08), 25 * n.tier, 200 * n.tier); }
-  function fight(n) {
-    var B = {n: n, en: E.foe(n.kind, n.tier), round: 0}, intro;
+  function fight(n, after) {
+    var B = {n: n, en: E.foe(n.kind, n.tier), round: 0, after: after}, intro;
     B.eh = B.en.hull;
     if (n.kind === 'boss') intro = D.BOSS.captain + ' runs out every gun on ' + n.name + ' and laughs like a broken accordion.';
     else if (n.kind === 'pirate') intro = pick(['Black sails off the bow! ' + n.captain + ' of ' + n.name + ' runs out the guns and grins with every one of their teeth.',
@@ -869,13 +955,16 @@
     body.textContent = '';
     body.appendChild(el('p', {id: 'enc-text'}, text));
     body.appendChild(hullBars(B));
-    body.appendChild(el('p', {class: 'hint'}, '🦜 ' + D.PARROT + ' sizes them up: ' + DANGER[E.danger(st, state.hull, en, B.eh)].toLowerCase() + '.'));
-    var list = el('div', {class: 'choices'}), bp = E.boardChance(st, en, B.eh), fp = E.fleeChance(st, en);
+    body.appendChild(el('p', {class: 'hint'}, '🦜 ' + D.PARROT + ' sizes them up: ' + DANGER[E.danger(st, state.hull, en, B.eh)].toLowerCase() + '. Every broadside that lands raises your boarding odds.'));
+    var eh = edgeHint();
+    if (eh) body.appendChild(el('p', {class: 'hint'}, eh));
+    var list = el('div', {class: 'choices'}), bp = E.boardChance(st, en, B.eh), fp = E.fleeChance(st, en), bg = burnPick();
     var opts = [
-      {label: '💣 Fire a broadside (about ' + st.fire + ' damage)', act: 'fire'},
-      {label: '⚔️ Board ' + (n.kind === 'merchant' ? 'her' : 'them') + ' (' + oddsWord(bp) + ')', act: 'board'},
-      {label: '⛵ Run for it (' + oddsWord(fp) + ')', act: 'run'}
+      {label: '💣 Fire a broadside (' + Math.max(1, Math.round(st.fire * 0.85)) + ' to ' + Math.max(1, Math.round(st.fire * 1.15)) + ' damage)', act: 'fire'},
+      {label: '⚔️ Board ' + (n.kind === 'merchant' ? 'her' : 'them') + ' (' + pct(bp) + ')', act: 'board'},
+      {label: '⛵ Run for it (' + pct(fp) + ')', act: 'run'}
     ];
+    if (n.kind === 'pirate' && bg) opts.push({label: '🔥 Burn a bale of ' + GOODS[bg].name + ' (' + pct(BURN_P) + ')', act: 'burn'});
     if (B.round === 0 && n.kind === 'pirate') opts.push({label: '🪙 Pay them to leave you alone (' + fmt(toll(n)) + ' doubloons)', act: 'pay', disabled: state.gold < toll(n)});
     if (B.round === 0 && n.kind === 'merchant') opts.push({label: '🏳️ Let her go after all', act: 'leave'});
     opts.forEach(function (o) {
@@ -897,8 +986,19 @@
       endFight(B, n.captain + ' counts the ' + fmt(cost) + ' doubloons, bites one, and waves you on your way. “Pleasure doing business.”');
       return;
     }
-    if (act === 'run') {
-      if (Math.random() < E.fleeChance(st, en)) {
+    if (act === 'burn') {
+      var bg = burnPick();
+      if (bg) {
+        takeCargo(bg, 1);
+        if (roll(BURN_P)) {
+          n.cool = 60;
+          endFight(B, 'You set a bale of ' + GOODS[bg].name + ' smouldering and let the breeze carry it over. On ' + n.name + ', the shouting turns to giggling. ' + n.captain + ' forgets what they were angry about and wanders off to look for snacks.' + gainXp(10));
+          return;
+        }
+        txt = 'You set a bale of ' + GOODS[bg].name + ' smouldering, but the smoke drifts the wrong way.';
+      } else txt = 'You have nothing left to burn.';
+    } else if (act === 'run') {
+      if (roll(E.fleeChance(st, en))) {
         n.cool = 45;
         endFight(B, pick(['You crowd on every scrap of sail and leave them wallowing in your wake.', 'You duck behind a reef they don’t dare cross. By the time they find a way round, you’re gone.',
           'A lucky gust fills your sails. Their curses fade behind you.']));
@@ -906,7 +1006,7 @@
       }
       txt = 'You try to slip away, but ' + foeName(n) + ' cuts you off.';
     } else if (act === 'board') {
-      if (Math.random() < E.boardChance(st, en, B.eh)) { win(B, 'board'); return; }
+      if (roll(E.boardChance(st, en, B.eh))) { win(B, 'board'); return; }
       txt = 'Your boarders swing across and get swatted straight back into the sea.';
     } else {
       var dmg = E.hit(st.fire, Math.random());
@@ -987,18 +1087,29 @@
       if (n.kind === 'merchant' && !n.looted) n.cool = Math.max(n.cool, 12);
       checkGoals();
       save();
+      if (B.after) B.after();
     });
     body.appendChild(c);
     c.focus();
   }
-  function showEncounter(title, text, opts, onDone) {
+  // opts: the choices. With no choices it just shows the text and a Continue button.
+  function showEncounter(title, text, opts, onDone, hint) {
     var dlg = $('dlg-encounter'), body = $('enc-body');
     $('enc-title').textContent = title;
     body.textContent = '';
-    var p = el('p', {id: 'enc-text'}, text), list = el('div', {class: 'choices'});
+    var p = el('p', {id: 'enc-text'}, text.replace(/\s+/g, ' ').trim()), list = el('div', {class: 'choices'});
     body.appendChild(p);
+    hint = (hint || '').trim();
+    if (hint && opts.length) body.appendChild(el('p', {class: 'hint'}, hint));
     body.appendChild(list);
     function finish() { closeDialog(dlg); if (onDone) onDone(); checkGoals(); save(); }
+    if (!opts.length) {
+      var go = el('button', {type: 'button', class: 'primary', 'aria-describedby': 'enc-text'}, 'Continue');
+      go.addEventListener('click', finish);
+      list.appendChild(go);
+      openDialog(dlg, go);
+      return;
+    }
     opts.forEach(function (o) {
       var b = el('button', {type: 'button', class: 'choice'}, o.label);
       if (o.disabled) { b.disabled = true; b.setAttribute('aria-describedby', 'enc-text'); }
@@ -1007,6 +1118,8 @@
         var res = o.fn ? o.fn() : null;
         if (!res) { finish(); return; }
         p.textContent = res.replace(/\s+/g, ' ').trim();
+        var hn = body.querySelector('.hint');
+        if (hn) hn.remove();
         list.textContent = '';
         var c = el('button', {type: 'button', class: 'primary', 'aria-describedby': 'enc-text'}, 'Continue');
         c.addEventListener('click', finish);
@@ -1035,7 +1148,8 @@
     function common(list) { var c = list.filter(function (g) { return !GOODS[g].rare; }); return c.length ? c : list; }
     function tally(o) { var out = []; for (var g in o) out.push(baleWord(o[g]) + ' of ' + GOODS[g].name); return andList(out); }
     return {
-      tier: tier(), st: stats(), parrot: D.PARROT, odds: oddsWord, xp: gainXp, give: addCargo, cargo: cargoCount, space: space, giveMap: giveMap,
+      tier: tier(), st: stats(), parrot: D.PARROT, odds: pct, check: roll, xp: gainXp, give: addCargo, cargo: cargoCount, space: space, giveMap: giveMap,
+      // check() is a shown check: it rolls the same percentage odds() prints. chance() is for hidden surprises.
       chance: function (p) { return Math.random() < p; },
       rand: function (lo, hi) { return lo + Math.floor(Math.random() * (hi - lo + 1)); },
       goldNow: function () { return state.gold; },
@@ -1080,7 +1194,8 @@
   function runEvent(e, after) {
     ship.vx *= 0.3; ship.vy *= 0.3;
     keys = {};
-    showEncounter(e.title, e.text, e.opts(evApi()), function () { grace = 2; if (after) after(); });
+    var opts = e.opts(evApi()), odds = opts.some(function (o) { return /% chance/.test(o.label); });
+    showEncounter(e.title, e.text, opts, function () { grace = 2; if (after) after(); }, odds ? edgeHint() : '');
   }
 
   /* ---------- ports ---------- */
@@ -1088,6 +1203,7 @@
   function portTabs(pid) {
     var p = PORTS[pid], tabs = [['market', '🛒 Market'], ['tavern', '🍺 Tavern']];
     if (p.yard) tabs.push(['yard', '🔨 Shipwright']);
+    tabs.push(['routes', '🧭 Routes']);
     return tabs;
   }
   function openPort(pid, tab) {
@@ -1125,6 +1241,7 @@
     if (state.hull < hullMax()) panel.appendChild(repairRow());
     if (portTab === 'market') renderMarket(pid, panel);
     else if (portTab === 'tavern') renderTavern(pid, panel);
+    else if (portTab === 'routes') renderRoutes(pid, panel);
     else renderYard(panel);
     if (keepKey) {
       var again = panel.querySelector('[data-key="' + keepKey + '"]');
@@ -1153,8 +1270,26 @@
     box.appendChild(b);
     return box;
   }
+  // What you pay and get right now: your Charm (boost included) and any selling boost.
+  function buyAt(pid, g) { return E.buyPrice(pid, g, day(), stats().charm); }
+  function sellAt(pid, g) { var b = boost(), p = E.sellPrice(pid, g, day(), stats().charm); return b && b.sell ? Math.round(p * (1 + b.sell)) : p; }
+  // The ledger keeps the plain prices (no boosts) from the last time you stood in each market.
+  function notePrices(pid) {
+    var d = day(), ch = state.skill.charm, rec = {d: d, b: {}, s: {}};
+    ORDER.forEach(function (g) { var b = E.buyPrice(pid, g, d, ch); if (b) rec.b[g] = b; rec.s[g] = E.sellPrice(pid, g, d, ch); });
+    state.seen[pid] = rec;
+  }
+  function bestSeen(g, except) {
+    var best = null;
+    for (var pid in state.seen) {
+      if (pid === except || !PORTS[pid]) continue;
+      var r = state.seen[pid], v = r.s && r.s[g];
+      if (v && (!best || v > best.price)) best = {pid: pid, price: v, d: r.d};
+    }
+    return best;
+  }
   function trade(pid, g, n, buying) {
-    var ch = stats().charm, price = buying ? E.buyPrice(pid, g, day(), ch) : E.sellPrice(pid, g, day(), ch);
+    var price = buying ? buyAt(pid, g) : sellAt(pid, g);
     if (buying) {
       n = Math.min(n, space(), Math.floor(state.gold / price));
       if (n <= 0) return;
@@ -1172,18 +1307,19 @@
     save();
   }
   function renderMarket(pid, panel) {
-    var p = PORTS[pid], d = day(), ch = stats().charm;
+    var p = PORTS[pid];
+    notePrices(pid);
     var list = ORDER.filter(function (g) { return p.sells.indexOf(g) >= 0 || state.cargo[g]; });
     list.sort(function (a, b) { return (GOODS[b].home === pid) - (GOODS[a].home === pid); });
     var held = Object.keys(state.cargo), total = 0;
-    held.forEach(function (g) { total += state.cargo[g] * E.sellPrice(pid, g, d, ch); });
-    var intro = el('p', {class: 'hint'}, 'Prices change every day. Each port grows one strain cheaply and pays more for strains from elsewhere, most of all from another sea.');
+    held.forEach(function (g) { total += state.cargo[g] * sellAt(pid, g); });
+    var intro = el('p', {class: 'hint'}, 'Prices change every day. Each port grows one strain cheaply and pays more for strains from elsewhere, most of all from another sea. Hash, rosin and biscuits fetch a premium where they’re wanted.');
     panel.appendChild(intro);
     if (held.length) {
       var all = el('button', {type: 'button', class: 'secondary sellall', 'data-key': 'sellall'}, '💰 Sell the whole hold for ' + fmt(total) + ' doubloons');
       all.addEventListener('click', function () {
         var n = 0, got = 0, xp = 0;
-        Object.keys(state.cargo).forEach(function (g) { var r = sellGoods(g, state.cargo[g], E.sellPrice(pid, g, d, ch)); if (r) { n += r.n; got += r.gold; xp += r.xp; } });
+        Object.keys(state.cargo).forEach(function (g) { var r = sellGoods(g, state.cargo[g], sellAt(pid, g)); if (r) { n += r.n; got += r.gold; xp += r.xp; } });
         sfx('coin');
         say('Sold all ' + baleWord(n) + ' for ' + fmt(got) + ' doubloons.' + gainXp(xp));
         checkGoals(); save(); renderPanel('sellall');
@@ -1192,14 +1328,17 @@
     }
     var ul = el('ul', {class: 'goods'});
     list.forEach(function (g) {
-      var G = GOODS[g], bp = E.buyPrice(pid, g, d, ch), spr = E.sellPrice(pid, g, d, ch), have = state.cargo[g] || 0;
+      var G = GOODS[g], bp = buyAt(pid, g), spr = sellAt(pid, g), have = state.cargo[g] || 0, S = SMOKE[g], best = bestSeen(g, pid);
       var li = el('li', {class: 'good'});
       var head = el('div', {class: 'g-head'});
       head.appendChild(el('span', {class: 'g-ico', 'aria-hidden': 'true'}, G.icon));
       head.appendChild(el('h3', null, G.name));
-      if (G.home === pid) head.appendChild(el('span', {class: 'tag'}, 'Grown here'));
+      if (G.home === pid) head.appendChild(el('span', {class: 'tag'}, G.kind ? 'Made here' : 'Grown here'));
+      if (E.wanted(pid, g)) head.appendChild(el('span', {class: 'tag'}, 'Wanted here'));
       li.appendChild(head);
       li.appendChild(el('p', {class: 'g-note'}, G.note));
+      if (S) li.appendChild(el('p', {class: 'g-note'}, '🔥 ' + cap(verb(g)) + ' one for ' + S.name + '. ' + S.does));
+      if (best && best.price > spr) li.appendChild(el('p', {class: 'g-note'}, '📒 Best you’ve seen: ' + best.price + ' in ' + PORTS[best.pid].name + ' on day ' + best.d + '.'));
       var pr = el('p', {class: 'g-prices'});
       pr.innerHTML = (bp ? 'Buy for <b>' + bp + '</b>' : 'Not sold here') + ' · Sells for <b>' + spr + '</b> · You have <b>' + have + '</b>';
       li.appendChild(pr);
@@ -1218,10 +1357,200 @@
       }
       btn('Sell 1', 'Sell 1 bale of ' + G.name + ' for ' + spr + ' doubloons', 's1' + g, 1, false, have < 1);
       btn('Sell all (' + have + ')', 'Sell all ' + have + ' bales of ' + G.name + ' for ' + fmt(spr * have) + ' doubloons', 'sa' + g, have, false, have < 1);
+      if (S && have > 0) {
+        var sb = el('button', {type: 'button', 'data-key': 'sm' + g, 'aria-label': cap(verb(g)) + ' a bale of ' + G.name + ' for ' + S.name + ': ' + S.does}, '🔥 ' + cap(verb(g)) + ' 1');
+        sb.addEventListener('click', function () { smoke(g); renderPanel('sm' + g); });
+        btns.appendChild(sb);
+      }
       li.appendChild(btns);
       ul.appendChild(li);
     });
     panel.appendChild(ul);
+  }
+
+  /* ---------- routes: the trade ledger and quick passage ---------- */
+  var voyCache = {}, lookupG = null;
+  function legLength(mid, a, b) {
+    var m = E.prepareMap(mid), s = E.nearestFreePoint(m, a[0], a[1]), f = E.nearestFreePoint(m, b[0], b[1]), path = E.findPath(m, s[0], s[1], f[0], f[1]);
+    if (!path) return null;
+    var L = 0, px = s[0], py = s[1];
+    path.forEach(function (q) { L += Math.hypot(q[0] - px, q[1] - py); px = q[0]; py = q[1]; });
+    return L;
+  }
+  // The sea route from one port to another: how far, how many days, which seas.
+  function voyage(from, to) {
+    var key = from + '>' + to;
+    if (key in voyCache) return voyCache[key];
+    var A = PORTS[from], B = PORTS[to], mid = A.map, at = A.dock, len = 0, seas = [mid], v = null;
+    for (var hops = 0; mid !== B.map && hops < 6; hops++) {
+      var next = nextSea(mid, B.map), ex = next && MAPS[mid].exits.filter(function (e) { return e.to === next; })[0];
+      if (!ex) break;
+      var pt = exitPointFrom(ex, at), L = legLength(mid, at, pt);
+      if (L === null) break;
+      len += L;
+      var m2 = E.prepareMap(next), arr = ex.arrive;
+      at = [arr[0] === 'x' ? clamp(pt[0], 80, m2.w - 80) : arr[0], arr[1]];
+      mid = next; seas.push(mid);
+    }
+    if (mid === B.map) {
+      var L2 = legLength(mid, at, B.dock);
+      if (L2 !== null) { len += L2; v = {len: Math.round(len), days: Math.max(1, Math.round(len / 900)), seas: seas}; }
+    }
+    voyCache[key] = v;
+    return v;
+  }
+  // Whole-number odds of meeting Customs or pirates on a passage. These are exactly the odds rolled.
+  function passageRisk(v) {
+    var b = boost(), f = clamp(v.days / 2, 0.6, 1.5), top = 1;
+    v.seas.forEach(function (s) { top = Math.max(top, D.SEA_TIER[s] || 1); });
+    var weak = state.hull < hullMax() * 0.35;
+    var c = cargoCount() ? 0.15 * noseFactor() * f : 0;
+    var p = (b && b.calm) || weak ? 0 : clamp(0.06 + 0.04 * top - 0.03 * state.up.sails, 0.03, 0.25) * f;
+    return {customs: Math.round(c * 100), pirates: Math.round(p * 100), top: top};
+  }
+  function riskText(v) {
+    var rk = passageRisk(v);
+    return 'On the way: ' + (cargoCount() ? 'Customs ' + rk.customs + '% chance, ' : '') + 'pirates ' + rk.pirates + '% chance.';
+  }
+  // One turn: the days pass, at most one run-in, then you land.
+  function passage(to) {
+    var from = state.docked, v = from && to !== from ? voyage(from, to) : null;
+    if (!v) return false;
+    var risk = passageRisk(v), r = Math.random() * 100;
+    leavePort(true, true);
+    auto = null; ship.vx = ship.vy = 0; wake = []; keys = {};
+    state.dist += v.len;
+    var worn = boostTick(v.len);
+    v.seas.forEach(function (s) { state.flags['seen_' + s] = 1; });
+    var P = PORTS[to], m = enterMap(P.map), f = E.nearestFreePoint(m, P.dock[0], P.dock[1]);
+    state.map = P.map; state.x = f[0]; state.y = f[1];
+    justLeft = null;
+    snapCamera();
+    needRender = true;
+    track('passage');
+    var lead = '⛵ ' + v.days + ' ' + plural(v.days, 'day') + ' at sea from ' + PORTS[from].name + '. It’s now day ' + day() + '.' + (worn ? ' ' + worn : '');
+    var land = function () { dock(to, lead); };
+    if (r < risk.customs) {
+      sfx('boom');
+      customs({kind: 'customs', name: pick(D.CUSTOMS_NAMES), cool: 0}, land);
+    } else if (r < risk.customs + risk.pirates) {
+      var sea = v.seas.filter(function (s) { return (D.SEA_TIER[s] || 1) === risk.top; }).pop(), n = makePirate(enterMap(sea));
+      n.cool = 0;
+      sfx('boom');
+      fight(n, land);
+    } else {
+      var ev = Math.random() < 0.25 ? pickEvent(EV.sea) : null;
+      if (ev) runEvent(ev, land); else land();
+    }
+    return true;
+  }
+  function portGoal(pid) { var p = PORTS[pid]; return {type: 'port', id: pid, map: p.map, x: p.dock[0], y: p.dock[1], label: p.name, icon: '⚓'}; }
+  // The best runs you know of: buy where you've seen it cheap, sell where you've seen it dear, ranked by profit a day.
+  function bestRuns(limit) {
+    var seen = state.seen, ports = Object.keys(seen).filter(function (q) { return PORTS[q]; }), all = [], out = [], used = {};
+    ports.forEach(function (a) {
+      Object.keys(seen[a].b || {}).forEach(function (g) {
+        var bp = seen[a].b[g];
+        ports.forEach(function (z) {
+          var sp = seen[z].s && seen[z].s[g];
+          if (z === a || !(sp > bp)) return;
+          var v = voyage(a, z);
+          if (v) all.push({g: g, from: a, to: z, bp: bp, sp: sp, gain: sp - bp, days: v.days, score: (sp - bp) / v.days});
+        });
+      });
+    });
+    all.sort(function (x, y) { return y.score - x.score; });
+    all.forEach(function (r) { if (out.length < limit && !used[r.g]) { used[r.g] = 1; out.push(r); } });
+    return out;
+  }
+  function renderLedger(box, here) {
+    var seen = state.seen, ports = Object.keys(seen).filter(function (q) { return PORTS[q]; });
+    box.appendChild(el('h3', null, '📒 Trade ledger'));
+    if (!ports.length) { box.appendChild(el('p', {class: 'hint'}, 'Every market you visit goes in your ledger, so you can plan where to buy and where to sell.')); return; }
+    box.appendChild(el('p', {class: 'hint'}, 'Prices from the markets you’ve visited, with the day you saw them. They drift a little every day.'));
+    box.appendChild(el('h4', null, 'Best runs you know'));
+    var runs = bestRuns(4);
+    if (!runs.length) box.appendChild(el('p', null, 'No money-making runs yet. Visit a few more markets.'));
+    else {
+      var ul = el('ul', {class: 'goods'});
+      runs.forEach(function (r, i) {
+        var G = GOODS[r.g], li = el('li', {class: 'good'}), p1 = el('p', {class: 'run'}), d1 = seen[r.from].d, d2 = seen[r.to].d;
+        p1.appendChild(el('span', {'aria-hidden': 'true'}, G.icon + ' '));
+        p1.appendChild(el('b', null, G.name));
+        p1.appendChild(document.createTextNode(': buy in ' + PORTS[r.from].name + ' for ' + r.bp + ', sell in ' + PORTS[r.to].name + ' for ' + r.sp + '.'));
+        li.appendChild(p1);
+        li.appendChild(el('p', {class: 'g-note'}, '+' + r.gain + ' a bale, about ' + r.days + ' ' + plural(r.days, 'day') + '’ sail apart. Seen on day ' + Math.min(d1, d2) + (d1 !== d2 ? ' and day ' + Math.max(d1, d2) : '') + '.'));
+        var btns = el('div', {class: 'g-btns'}), b;
+        if (here === r.from) {
+          b = el('button', {type: 'button', 'data-key': 'run' + i}, '🛒 Buy it in the market');
+          b.addEventListener('click', function () { showTab('market', true); });
+        } else if (here) {
+          var v = voyage(here, r.from);
+          b = el('button', {type: 'button', 'data-key': 'run' + i, 'aria-label': 'Quick passage to ' + PORTS[r.from].name + (v ? ', about ' + v.days + ' ' + plural(v.days, 'day') : '')}, '⛵ Quick passage to ' + PORTS[r.from].name);
+          b.addEventListener('click', function () { passage(r.from); });
+        } else {
+          b = el('button', {type: 'button', 'data-key': 'run' + i}, '🧭 Set course for ' + PORTS[r.from].name);
+          b.addEventListener('click', function () { closeDialog('dlg-chart'); setCourse(portGoal(r.from)); });
+        }
+        btns.appendChild(b);
+        li.appendChild(btns);
+        ul.appendChild(li);
+      });
+      box.appendChild(ul);
+    }
+    box.appendChild(el('h4', null, 'Look up a cargo'));
+    var id = here ? 'lookup-port' : 'lookup-chart', row = el('p', {class: 'lookup'}), sel = el('select', {id: id}), out = el('ul', {class: 'checks'});
+    row.appendChild(el('label', {for: id}, 'Cargo'));
+    ORDER.forEach(function (g) { var o = el('option', {value: g}, GOODS[g].name); sel.appendChild(o); });
+    var held = Object.keys(state.cargo);
+    sel.value = lookupG && GOODS[lookupG] ? lookupG : held[0] || ORDER[0];
+    row.appendChild(sel);
+    box.appendChild(row);
+    function show() {
+      var g = sel.value;
+      lookupG = g;
+      out.textContent = '';
+      ports.slice().sort(function (a, b) { return (seen[b].s[g] || 0) - (seen[a].s[g] || 0); }).forEach(function (q) {
+        var r = seen[q], li = el('li');
+        li.appendChild(el('span', {'aria-hidden': 'true', class: 'mark'}, '⚓'));
+        li.appendChild(document.createTextNode(PORTS[q].name + (q === here ? ' (here)' : '') + ': ' + (r.b[g] ? 'sells it for ' + r.b[g] + ', ' : '') + 'pays ' + (r.s[g] || '?') + '. Day ' + r.d + '.'));
+        out.appendChild(li);
+      });
+    }
+    sel.addEventListener('change', show);
+    show();
+    box.appendChild(out);
+  }
+  function renderRoutes(pid, panel) {
+    panel.appendChild(el('p', {class: 'hint'}, 'Pick a port you know and your crew sails straight there. The days pass, prices move, and you might meet Customs, pirates or a surprise on the way.'));
+    panel.appendChild(el('h3', null, '🧭 Quick passage'));
+    var list = Object.keys(PORTS).filter(function (q) { return q !== pid && portKnown(q); }).map(function (q) { return {pid: q, v: voyage(pid, q)}; })
+      .filter(function (o) { return o.v; }).sort(function (a, b) { return a.v.len - b.v.len; });
+    if (!list.length) panel.appendChild(el('p', null, 'No other ports on your chart yet. Ask around in the tavern.'));
+    var ul = el('ul', {class: 'goods'}), held = Object.keys(state.cargo);
+    list.forEach(function (o) {
+      var P = PORTS[o.pid], li = el('li', {class: 'good'}), head = el('div', {class: 'g-head'}), seen = state.seen[o.pid];
+      head.appendChild(el('span', {class: 'g-ico', 'aria-hidden': 'true'}, '⚓'));
+      head.appendChild(el('h3', null, P.name));
+      head.appendChild(el('span', {class: 'tag'}, MAPS[P.map].short));
+      li.appendChild(head);
+      li.appendChild(el('p', {class: 'g-note'}, 'About ' + o.v.days + ' ' + plural(o.v.days, 'day') + '’ sail. ' + riskText(o.v)));
+      if (!seen) li.appendChild(el('p', {class: 'g-note'}, '📒 You haven’t seen this market yet.'));
+      else {
+        var sells = Object.keys(seen.b).map(function (g) { return GOODS[g].name + ' ' + seen.b[g]; });
+        if (sells.length) li.appendChild(el('p', {class: 'g-note'}, '📒 Sells ' + andList(sells) + ' (day ' + seen.d + ').'));
+        var bestG = null;
+        held.forEach(function (g) { if (seen.s[g] && (!bestG || seen.s[g] > seen.s[bestG])) bestG = g; });
+        if (bestG) li.appendChild(el('p', {class: 'g-note'}, '📒 Pays best for your hold: ' + seen.s[bestG] + ' for ' + GOODS[bestG].name + '.'));
+      }
+      var btns = el('div', {class: 'g-btns'}), b = el('button', {type: 'button', 'data-key': 'go' + o.pid, 'aria-label': 'Quick passage to ' + P.name + ', about ' + o.v.days + ' ' + plural(o.v.days, 'day')}, '⛵ Sail to ' + P.name);
+      b.addEventListener('click', function () { passage(o.pid); });
+      btns.appendChild(b);
+      li.appendChild(btns);
+      ul.appendChild(li);
+    });
+    panel.appendChild(ul);
+    renderLedger(panel, pid);
   }
 
   function cond(c) {
@@ -1336,7 +1665,7 @@
 
   /* ---------- goals and the captain's log ---------- */
   function goalList() {
-    var visited = Object.keys(state.visited).length, strains = Object.keys(state.collected).length, lv = level();
+    var visited = Object.keys(state.visited).length, strains = STRAINS.filter(function (g) { return state.collected[g]; }).length, lv = level();
     return [
       {id: 'full', text: 'Fill your hold to the brim', done: !!state.flags.full},
       {id: 'k1', text: 'Have 1,000 doubloons in your purse', done: !!state.flags.k1},
@@ -1347,7 +1676,7 @@
       {id: 'ports', text: 'Drop anchor in all ' + NPORTS + ' ports', n: visited + ' of ' + NPORTS, done: visited >= NPORTS},
       {id: 'pieces', text: 'Find the 3 pieces of Captain Featherstone’s map', n: pieces() + ' of 3', done: pieces() >= 3},
       {id: 'emerald', text: 'Dig up the Emerald Bale', done: !!state.found.emerald},
-      {id: 'strains', text: 'Collect all ' + ORDER.length + ' strains', n: strains + ' of ' + ORDER.length, done: strains >= ORDER.length},
+      {id: 'strains', text: 'Collect all ' + STRAINS.length + ' strains', n: strains + ' of ' + STRAINS.length, done: strains >= STRAINS.length},
       {id: 'boss', text: 'Beat ' + D.BOSS.captain + ' of ' + D.BOSS.ship + ' (sails the Spanish Main from level ' + D.BOSS.level + ')', done: !!state.flags.boss},
       {id: 'lv10', text: 'Reach level 10, ' + title(10), done: lv >= 10}
     ];
@@ -1394,7 +1723,7 @@
     return ul;
   }
   function refocus(box, key, fallback) {
-    var again = box.querySelector('[data-key="' + key + '"]') || box.querySelector('[data-key^="sk"]');
+    var again = box.querySelector('[data-key="' + key + '"]') || (key.indexOf('sk') === 0 ? box.querySelector('[data-key^="sk"]') : null);
     (again || fallback).focus();
   }
   function showLevelUp() {
@@ -1428,9 +1757,10 @@
     }
     b.appendChild(el('p', {class: 'hint'}, 'Earn renown by trading at a profit, winning fights, finishing requests, finding treasure and seeing new ports.'));
     b.appendChild(el('p', null, '🛡️ Hull ' + state.hull + ' of ' + st.hullMax + ' · 💣 Broadside about ' + st.fire + ' damage · 👥 Boarders: level ' + st.crew + ' · ⛵ Sails: level ' + st.sails));
+    var bz = boost();
+    if (bz) b.appendChild(el('p', {class: 'win'}, '🔥 ' + bz.name + ': ' + bz.does + ' About ' + boostLeft() + ' ' + plural(boostLeft(), 'day') + ' left.'));
     if (state.pts) b.appendChild(el('p', {class: 'win'}, 'You have ' + state.pts + ' skill ' + plural(state.pts, 'point') + ' to spend.'));
     b.appendChild(skillList(function (k) { renderLog(k); }));
-    if (key) refocus(b, key, $('log-close'));
     b.appendChild(el('h3', null, 'Goals'));
     var ul = el('ul', {class: 'checks'});
     goalList().forEach(function (g) {
@@ -1477,18 +1807,25 @@
     var held = Object.keys(state.cargo);
     if (!held.length) b.appendChild(el('p', null, 'Empty, apart from a parrot and a smell.'));
     else {
+      b.appendChild(el('p', {class: 'hint'}, 'Smoke a bale for a boost that lasts about two days of sailing. One boost at a time: a new one replaces the old.'));
       var cu = el('ul', {class: 'checks'});
       held.forEach(function (g) {
-        var li = el('li');
+        var li = el('li'), S = SMOKE[g];
         li.appendChild(el('span', {'aria-hidden': 'true', class: 'mark'}, GOODS[g].icon));
-        li.appendChild(document.createTextNode(GOODS[g].name + ': ' + baleWord(state.cargo[g])));
+        li.appendChild(el('span', {class: 'grow'}, GOODS[g].name + ': ' + baleWord(state.cargo[g]) + (S ? '. ' + S.name + ': ' + S.does : '')));
+        if (S) {
+          var sb = el('button', {type: 'button', class: 'mini', 'data-key': 'sm' + g, 'aria-label': cap(verb(g)) + ' a bale of ' + GOODS[g].name + ' for ' + S.name}, '🔥 ' + cap(verb(g)) + ' 1');
+          sb.addEventListener('click', function () { smoke(g); renderLog('sm' + g); });
+          li.appendChild(sb);
+        }
         cu.appendChild(li);
       });
       b.appendChild(cu);
     }
-    b.appendChild(el('h3', null, 'Strain ledger: ' + Object.keys(state.collected).length + ' of ' + ORDER.length));
+    var ns = STRAINS.filter(function (g) { return state.collected[g]; }).length;
+    b.appendChild(el('h3', null, 'Strain ledger: ' + ns + ' of ' + STRAINS.length));
     var lu = el('ul', {class: 'checks ledger'});
-    ORDER.forEach(function (g) {
+    STRAINS.forEach(function (g) {
       var G = GOODS[g], has = state.collected[g], li = el('li', {class: has ? 'done' : ''});
       li.appendChild(el('span', {'aria-hidden': 'true', class: 'mark'}, has ? G.icon : '❔'));
       li.appendChild(el('span', {class: 'sr-only'}, has ? 'Collected: ' : 'Not yet: '));
@@ -1496,6 +1833,7 @@
       lu.appendChild(li);
     });
     b.appendChild(lu);
+    if (key) refocus(b, key, $('log-close'));
   }
 
   /* ---------- chart and autopilot ---------- */
@@ -1569,6 +1907,9 @@
       li.appendChild(b);
       dl.appendChild(li);
     });
+    var lg = $('chart-ledger');
+    lg.textContent = '';
+    renderLedger(lg, null);
   }
   function chartClick(ev) {
     var cvs = $('chart-canvas'), r = cvs.getBoundingClientRect(), m = MAPS[chartMap];
@@ -1835,6 +2176,8 @@
     setText('h-day', String(day()));
     setText('h-rank', rank());
     setText('h-sea', MAPS[state.map].short);
+    var bz = boost(), bt = bz ? bz.name + ', ' + boostLeft() + ' ' + plural(boostLeft(), 'day') : '';
+    if (hudCache.buff !== bt) { hudCache.buff = bt; $('h-buff').textContent = bt; $('h-buff-li').hidden = !bt; }
     var low = state.hull < hullMax() * 0.35, pts = state.pts > 0;
     if (hudCache.low !== low) { hudCache.low = low; $('h-hull').parentNode.classList.toggle('low', low); }
     if (hudCache.pts !== pts) { hudCache.pts = pts; $('h-pts').hidden = !pts; $('log-pip').hidden = !pts; }
@@ -1850,7 +2193,7 @@
     reveal(state.map, state.x, state.y, REVEAL);
     Object.keys(state.known).forEach(function (pid) { if (PORTS[pid]) reveal(PORTS[pid].map, PORTS[pid].dock[0], PORTS[pid].dock[1], 110); });
     started = true;
-    levelUp = 0; evClock = 70 + Math.random() * 30; evRecent = []; lastPortEv = -999; hudCache = {};
+    levelUp = 0; evClock = 70 + Math.random() * 30; evRecent = []; lastPortEv = -999; hudCache = {}; mendAcc = 0;
     $('title-screen').hidden = true;
     $('hud').hidden = false; $('tools').hidden = false;
     resize();
@@ -1990,5 +2333,6 @@
   loadJokes();
   requestAnimationFrame(frame);
   window.__pillage = {get state() { return state; }, step: step, begin: begin, dock: dock, planRoute: planRoute, openChart: openChart, encounter: encounter, tryDig: tryDig,
-    npcs: function () { return npcs; }, runEvent: runEvent, giveMap: giveMap, gainXp: gainXp, events: EV};
+    npcs: function () { return npcs; }, runEvent: runEvent, giveMap: giveMap, gainXp: gainXp, events: EV,
+    smoke: smoke, stats: stats, passage: passage, voyage: voyage, passageRisk: passageRisk, bestRuns: bestRuns, odds: {chanceOf: chanceOf, pct: pct, roll: roll}};
 })();

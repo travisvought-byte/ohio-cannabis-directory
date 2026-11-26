@@ -141,6 +141,14 @@ button:disabled{opacity:.5}
 .checks li{display:flex;gap:8px;padding:4px 0;border-bottom:1px dashed var(--paperline)}
 .checks li:last-child{border-bottom:0}
 .checks .mark{flex:none;width:1.5em;text-align:center}
+.checks li{align-items:center}
+.checks .grow{flex:1 1 auto}
+.checks .mini{flex:none;min-height:44px;border-radius:10px;padding:6px 12px;font-weight:700;background:var(--mint);color:var(--ink);border:2px solid var(--line)}
+.dlg h4{margin:.9em 0 .35em;font-size:1rem}
+.run{margin:0 0 .2em}
+.lookup{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:.3em 0 .5em;font-weight:700}
+.lookup select{min-height:44px;border-radius:10px;border:2px solid var(--line);background:var(--card);color:var(--ink);padding:6px 10px;font:inherit;font-weight:600;max-width:100%}
+.ledger-box{margin-top:6px}
 .checks li.done{color:var(--soft)}
 .win{background:var(--mint);border-radius:12px;padding:10px 14px;font-weight:700}
 .opts{display:grid;gap:8px;margin:6px 0 10px}
