@@ -2273,7 +2273,8 @@
     });
     $('note-ok').addEventListener('click', function () { closeDialog('dlg-note'); });
     $('set-sail').addEventListener('click', function () { leavePort(); });
-    $('dlg-port').addEventListener('close', function () { if (state && state.docked) leavePort(); });
+    // The close event arrives a moment late. After a quick passage the next port is already open by then, so leave it be.
+    $('dlg-port').addEventListener('close', function () { if (state && state.docked && !$('dlg-port').open) leavePort(); });
     $('dlg-note').addEventListener('close', function () { var f = noteDone; noteDone = null; if (f) f(); else focusSea(); });
     $('dlg-encounter').addEventListener('cancel', function (e) { e.preventDefault(); });
     ['dlg-chart', 'dlg-log', 'dlg-settings', 'dlg-encounter'].forEach(function (id) {
