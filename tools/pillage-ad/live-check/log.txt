@@ -1,0 +1,6 @@
+loads https://the-reefer.com/pillage/data.js?v=11
+PORT "⚓ Nassau"
+NAME "Mama Ruthie Barnacle"
+ROLE "Keeper of the Leaky Lantern tavern"
+NO NICKNAME QUESTION
+RESULT BROKEN
