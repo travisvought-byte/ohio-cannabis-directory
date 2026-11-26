@@ -189,6 +189,16 @@ button:disabled{opacity:.5}
 .title-fame{margin-top:12px;text-align:left;border-top:1px dashed var(--paperline);padding-top:6px}
 .title-fame h3{margin:.2em 0;font-size:1rem;text-align:center}
 .title-fame .fame{font-size:.88rem}
+/* the MJBizCon week board and the score card */
+.title-board{margin-top:12px;text-align:left;border-top:1px dashed var(--paperline);padding-top:6px}
+.title-board h3{margin:.2em 0;font-size:1rem;text-align:center}
+.title-board .fame,.title-board .hint{font-size:.88rem}
+.board-list li.me{font-weight:700}
+.board-share{width:100%;min-height:44px;margin:4px 0 6px}
+.share-score{font-weight:700}
+.qr{display:flex;justify-content:center;margin:8px 0}
+.qr[hidden]{display:none}
+.qr svg{width:min(260px,68vw);height:auto;border-radius:6px;display:block}
 .log-top{margin-top:0}
 
 /* info */

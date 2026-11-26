@@ -104,7 +104,7 @@ w.Element.prototype.getBoundingClientRect=()=>({left:0,top:0,width:390,height:52
 w.fetch=()=>Promise.resolve({ok:true,json:()=>Promise.resolve({})});
 if(!w.HTMLDialogElement.prototype.showModal){ w.HTMLDialogElement.prototype.showModal=function(){this.setAttribute('open','');};
   w.HTMLDialogElement.prototype.close=function(){this.removeAttribute('open');this.dispatchEvent(new w.Event('close'));}; }
-for(const f of ['data.js','engine.js','events.js','game.js']) w.eval(read(f));
+for(const f of ['data.js','engine.js','events.js','qr.js','game.js']) w.eval(read(f));
 const $=id=>w.document.getElementById(id),P=w.__pillage;
 assert(read('game.js').includes("window.directoryTrack('pillage-'"),'milestones go to the site visit counter');
 assert(/21\+|21 or older/.test(read('index.html')),'adults only');
@@ -311,5 +311,62 @@ P.leaveBase(true);
 w.dispatchEvent(new w.Event('pagehide')); const s6=JSON.parse(w.localStorage.getItem('pillageTheReefer.v1'));
 assert(s6.flags.r6&&Number.isFinite(s6.food)&&s6.record,'provisions and the record are saved');
 assert.equal(errors.length,0,String(errors));
+
+// The MJBizCon week board: scores travel phone to phone in a QR code or link, never to a server.
+{ const B=D.BOARD; assert(B&&B.open<Date.UTC(2026,11,1,8)&&B.close>Date.UTC(2026,11,5,8)&&B.close<B.hide&&B.url==='https://the-reefer.com/pillage/','the board covers show week');
+  assert(/December 1 to 4/.test(B.blurb)&&/MJBizCon week board/.test(read('index.html'))&&/only to whoever you show or send them to/.test(read('index.html')),'the page explains it');
+  const mk=(url,now,store)=>{ const d=new JSDOM(read('index.html'),{runScripts:'outside-only',pretendToBeVisual:true,url}),v=d.window,errs=[];
+    v.addEventListener('error',e=>errs.push(e.error||e.message)); v.Date.now=()=>now;
+    v.HTMLCanvasElement.prototype.getContext=()=>c2d; v.Path2D=w.Path2D; v.Element.prototype.getBoundingClientRect=w.Element.prototype.getBoundingClientRect;
+    v.fetch=()=>Promise.resolve({ok:false}); if(!v.HTMLDialogElement.prototype.showModal){ v.HTMLDialogElement.prototype.showModal=function(){this.setAttribute('open','');};
+      v.HTMLDialogElement.prototype.close=function(){this.removeAttribute('open');this.dispatchEvent(new v.Event('close'));}; }
+    for(const k in (store||{})) v.localStorage.setItem(k,store[k]);
+    for(const f of ['data.js','engine.js','events.js','qr.js','game.js']) v.eval(read(f));
+    return {v,P:v.__pillage,$:id=>v.document.getElementById(id),errs}; };
+  const show=Date.UTC(2026,11,2,20);
+  // Anne plays during the show, and her best voyage is on her own board
+  const A=mk(B.url,show); A.$('btn-new').click(); A.$('cap-name').value='Anne Bonny'; A.$('cap-ship').value='the Revenge'; A.$('cap-ok').click(); A.$('note-ok').click();
+  A.$('set-sail').click(); A.P.gainXp(500); const best=A.P.myBest();
+  assert(best&&best.captain==='Anne Bonny'&&best.ship==='the Revenge'&&best.xp===A.P.state.xp&&best.me&&/^[a-z0-9]{6}$/.test(best.pid),'your voyage is your score');
+  const code=A.P.scoreCode(best),back=A.P.readScore(code),link=A.P.scoreLink(best);
+  assert(/^[A-Za-z0-9_-]+$/.test(code)&&link===B.url+'?vs='+code&&link.length<122,'a short, clean link that fits a small QR code');
+  assert(back&&back.pid===best.pid&&back.captain==='Anne Bonny'&&back.xp===best.xp&&back.day===best.day&&Math.abs(back.t-show)<60000,'the code reads back');
+  const flip=code.slice(0,8)+(code[8]==='A'?'B':'A')+code.slice(9);
+  assert.equal(A.P.readScore(flip),null,'a mangled code is refused'); assert.equal(A.P.readScore('not a code'),null); assert.equal(A.P.readScore(''),null);
+  const odd=Object.assign({},best,{captain:'Cap~n <Jack>',ship:'Ñandú 🏴‍☠️'}),odd2=A.P.readScore(A.P.scoreCode(odd));
+  assert(odd2&&odd2.captain==='Cap-n Jack'&&odd2.ship==='Ñandú 🏴‍☠️','odd names survive the trip, cleaned');
+  A.P.openShare(best); assert(A.$('dlg-share').open,'the score card opens');
+  const svg=A.$('share-qr').querySelector('svg[role=img]');
+  assert(svg&&/scans it with their phone camera/.test(svg.getAttribute('aria-label'))&&svg.querySelector('path').getAttribute('d').length>500,'with a labelled QR code');
+  assert.equal(A.$('share-link').value,link,'and the link to copy'); assert(/Anne Bonny, the Revenge \(you\): /.test(A.$('share-score').textContent));
+  const q=A.v.PILLAGE_QR.encode(link); assert(q&&q.version<=7&&q.size===q.version*4+17,'the code fits version 7 or smaller');
+  A.$('share-done').click(); assert(!A.$('dlg-share').open);
+  A.P.renderLog(); const lb=A.$('log-body').textContent;
+  assert(/MJBizCon week board/.test(lb)&&/Anne Bonny, the Revenge \(you\)/.test(lb)&&A.$('log-body').querySelector('.board-share'),'the board is in the captain’s log');
+  assert.equal(A.errs.length,0,String(A.errs));
+  // Ben scans her code on the floor: she lands on his board and the address bar is tidied
+  const Bn=mk(link,show+3600e3); const tb=Bn.$('title-board');
+  assert(!tb.hidden&&/Anne Bonny of the Revenge is on your MJBizCon week board/.test(tb.textContent)&&/Anne Bonny, the Revenge: /.test(tb.textContent),'a scanned score goes on the board');
+  assert.equal(Bn.v.location.search,'','the code leaves the address bar'); assert.equal(Bn.P.legacy.rivals.length,1);
+  assert(!tb.querySelector('.board-share')&&/Nobody|Set sail|Anne/.test(tb.textContent),'no score of his own to share yet');
+  assert.equal(JSON.parse(Bn.v.localStorage.getItem('pillageTheReefer.legacy')).rivals[0].captain,'Anne Bonny','and it is saved');
+  const store={'pillageTheReefer.legacy':Bn.v.localStorage.getItem('pillageTheReefer.legacy')};
+  const worse=A.P.scoreCode(Object.assign({},best,{xp:10})),better=A.P.scoreCode(Object.assign({},best,{xp:best.xp+100}));
+  let B2=mk(B.url+'?vs='+worse,show+7200e3,store); assert.equal(B2.P.legacy.rivals[0].xp,best.xp,'a lower score from the same player keeps the best one');
+  B2=mk(B.url+'?vs='+better,show+7200e3,store); assert.equal(B2.P.legacy.rivals[0].xp,best.xp+100,'a better one replaces it');
+  assert.equal(B2.P.legacy.rivals.length,1,'one line per player');
+  // your own code, an old code and the end of the week
+  const own=mk(B.url+'?vs='+code,show,{'pillageTheReefer.legacy':A.v.localStorage.getItem('pillageTheReefer.legacy')});
+  assert(/your own score/.test(own.$('title-board').textContent)&&!own.P.legacy.rivals.length,'your own code is just yours');
+  const early=A.P.scoreCode(Object.assign({},best,{t:Date.UTC(2026,9,1)}));
+  assert(/outside MJBizCon week/.test(mk(B.url+'?vs='+early,show).$('title-board').textContent),'an old score stays off');
+  assert(/mangled/.test(mk(B.url+'?vs='+flip,show).$('title-board').textContent),'a mangled link says so');
+  const after=mk(B.url,Date.UTC(2026,11,8),store);
+  assert(/final standings/.test(after.$('title-board').textContent)&&!after.$('title-board').querySelector('.board-share')&&/Anne Bonny/.test(after.$('title-board').textContent),'after the show the board is final');
+  const gone=mk(B.url,Date.UTC(2027,0,2),store); assert(gone.$('title-board').hidden&&gone.$('how-board').hidden,'and in the new year it is gone');
+  // a damaged record keeps only good lines
+  const junk=JSON.stringify({pid:'BAD!',rivals:[{pid:'abc123',captain:'Ok',ship:'Fine',xp:5,day:2,gold:3,t:show},{pid:'x',xp:5,t:1},{pid:'abc124',captain:'<b>',xp:-4,t:show},null]});
+  const J=mk(B.url,show,{'pillageTheReefer.legacy':junk}); assert(J.P.legacy.rivals.length===1&&J.P.legacy.pid==='','damaged lines are dropped');
+  for(const X of [Bn,B2,own,after,gone,J]) assert.equal(X.errs.length,0,String(X.errs)); }
 console.log('pillage ok');
 process.exit(0);
