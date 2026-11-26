@@ -54,7 +54,7 @@ p{max-width:70ch}.muted{color:var(--soft);font-size:.9rem}.crumbs{font-size:.9re
 .hero{position:relative;overflow:hidden;background:linear-gradient(155deg,var(--green) 0%,var(--green2) 100%);color:#fff}
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);align-items:center;gap:24px;padding-top:34px;padding-bottom:46px}
 .hero h1{font-size:clamp(32px,5.2vw,52px);line-height:1.06;margin:.25em 0 .35em;max-width:15ch}.hero p{color:#e2eee6;font-size:1.08rem;margin:.4em 0}
-.ahoy{background:var(--gold);color:#221c08}.ahoy p{max-width:none;margin:0;padding:10px 0;font-size:.98rem;line-height:1.45}.ahoy a{color:#221c08;font-weight:800;white-space:nowrap}.ahoy .flag{font-size:1.15rem}.hero .worldlink{margin:14px 0 0;font-weight:700}.hero .worldlink a{color:var(--gold)}.hero .eyebrow{color:var(--gold);font-size:.82rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+.ahoy{background:var(--gold);color:#221c08}.ahoy p{max-width:none;margin:0;padding:10px 0;font-size:.98rem;line-height:1.45}.ahoy a{color:#221c08;font-weight:800;white-space:nowrap}.ahoy .flag{font-size:1.15rem}.hero .worldlink{margin:14px 0 0;font-weight:700}.hero .worldlink a{color:var(--gold)}.hero .gamecard{display:flex;align-items:center;gap:14px;margin:18px 0 0;padding:14px 16px;background:rgba(0,0,0,.24);border:2px solid var(--gold);border-radius:16px;max-width:600px}.hero .gamecard .gc-flag{font-size:2rem;line-height:1}.hero .gamecard p{margin:0}.hero .gamecard .gc-title{font-weight:800;color:#fff;font-size:1.08rem}.hero .gamecard .gc-sub{color:#e2eee6;font-size:.95rem;margin-top:2px}.hero .gamecard .gc-go{margin-left:auto;flex:none;background:var(--gold);color:#221c08;font-weight:800;text-decoration:none;border-radius:999px;padding:10px 18px;min-height:44px;display:inline-flex;align-items:center;white-space:nowrap}.hero .gamecard .gc-go:hover,.hero .gamecard .gc-go:focus-visible{background:#f3cb63}header.site nav a.play{color:var(--gold);opacity:1;font-weight:800}.hero .eyebrow{color:var(--gold);font-size:.82rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
 .hero .art .shipbox{position:relative;max-width:520px;margin:0 auto}.hero .art .ship{display:block;width:100%;height:auto;border-radius:22px;box-shadow:0 18px 38px rgba(0,0,0,.45)}
 .ship .vessel{transform-origin:330px 540px;animation:bob 7s ease-in-out infinite}.ship .flag{filter:drop-shadow(0 0 7px rgba(150,225,235,.55)) drop-shadow(0 0 1px rgba(220,245,250,.9));transform-origin:330px 140px;animation:fly 3.2s ease-in-out infinite}.ship .swell{animation:swell 6s ease-in-out infinite}
 .ship .sailor{transform-box:fill-box;transform-origin:50% 100%;animation:cough 9s ease-in-out infinite}.ship .ember{fill:#ff7a1a;animation:ember 9s linear infinite}
@@ -155,7 +155,7 @@ footer.site p{max-width:none;margin:18px 0 0;color:#a9bcb1}
 select{border-color:#5d6b64}}
 @media(max-width:900px){.tasks{grid-template-columns:repeat(3,minmax(0,1fr))}.tasks.intents{grid-template-columns:repeat(2,minmax(0,1fr))}.mapbox{grid-template-columns:1fr;gap:6px}}
 @media(max-width:720px){.hero .wrap{grid-template-columns:1fr;padding-top:24px;padding-bottom:34px}.hero .art{order:-1}.hero .art .shipbox{max-width:420px;margin:0}}
-@media(max-width:560px){header.site nav{margin-left:0;gap:0 16px}header.site .wrap{padding-bottom:4px}.tasks{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.task{padding:12px}.tasks.intents{grid-template-columns:1fr}
+@media(max-width:560px){.hero .gamecard{flex-wrap:wrap}.hero .gamecard .gc-go{margin-left:0;width:100%;justify-content:center}header.site nav{margin-left:0;gap:0 16px}header.site .wrap{padding-bottom:4px}.tasks{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.task{padding:12px}.tasks.intents{grid-template-columns:1fr}
 .usmap{gap:3px}.tile{border-radius:4px}.glance a{grid-template-columns:1fr}.needs{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.need{padding:10px 11px}.rows li{grid-template-columns:1fr}.rows .meta{grid-column:1}}
 /* Sponsored spots: set apart from listings and answers by a dashed gold frame and their own label. */
 .ad-slot{margin:34px 0;padding:10px 16px 14px;max-width:720px;background:#fbf6e6;border:2px dashed #b89a45;border-radius:12px}.ad-slot[hidden]{display:none}
@@ -734,7 +734,9 @@ def shell(title, description, body, name, place, hero='', ld=None, css=''):
     head.append(f'<style>{CSS}{css}</style></head><body>')
     top = (f'<header class="site"><div class="wrap"><a class="brand" href="index.html" aria-label="{esc(SITE_NAME)} home"><img src="{ASSETS}mark-96.png" alt="" width="40" height="40"><span>{esc(SITE_NAME)}</span></a>'
            '<nav aria-label="Primary"><a href="index.html#map">Your state</a><a href="medical.html">Medical cards</a><a href="index.html#compare">Compare laws</a>'
-           '<a href="world.html">World</a><a href="learn.html">101</a><a href="help.html">Get help</a><a href="about.html">About</a></nav></div></header>')
+           '<a href="world.html">World</a><a href="learn.html">101</a><a href="help.html">Get help</a><a href="about.html">About</a>'
+           # Owner's request, November 26, 2026 (round 4): make the pirate game easy to find from every page.
+           '<a class="play" href="../pillage/"><span aria-hidden="true">🏴‍☠️</span> Play our game</a></nav></div></header>')
     family = ''.join(f'<li><a href="{esc(url)}">{esc(label)}</a></li>' for url, label, _, _ in FAMILY)
     foot = ('<footer class="site"><div class="wrap"><div class="cols">'
             '<nav aria-label="This site"><h2>This site</h2><ul><li><a href="index.html#map">Pick your state</a></li>'
@@ -1643,7 +1645,10 @@ def home_page(perm, score, directory, answers, sources, sponsors=()):
             f'<p class="muted">Or tap your state on the <a href="#map">map below</a>. Checked as of {long_date(perm["as_of"])}.</p></form>'
             '<p class="worldlink"><a href="world.html">Travelling or outside the US? Laws around the world →</a></p>'
             # Owner's request, November 26, 2026: a light pirate game on the site, Pillage the Reefer (pillage/, hand-built).
-            '<p class="worldlink"><a href="../pillage/">Need a break? Play Pillage the Reefer, our pirate game →</a></p></div>'
+            # Round 4: a card, not a line, so people actually notice the game and go play it.
+            '<div class="gamecard"><span class="gc-flag" aria-hidden="true">🏴‍☠️</span><div><p class="gc-title">Pillage the Reefer, our free pirate game</p>'
+            '<p class="gc-sub">Run weed between Caribbean ports, smuggle past the law and fight pirates. Plays on your phone, no sign-up.</p></div>'
+            '<a class="gc-go" href="../pillage/">Play the game <span aria-hidden="true">→</span></a></div></div>'
             f'<div class="art"><div class="shipbox">{ship_art()}{joke_bubble(jokes)}</div></div></div></section>')
 
     # The joke itself is in the picture (joke_bubble); its data and the script that picks today's follow the first block.

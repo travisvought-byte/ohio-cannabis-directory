@@ -308,22 +308,57 @@
     for (var i = 1; i < L.length; i++) if ((xp || 0) >= L[i].xp) n = i + 1;
     return n;
   }
+  // What the captain's relics add up to for one stat (fight, sail, charm, hull, luck, sell, ...).
+  function relicSum(s, key) {
+    var R = D.RELICS || {}, rel = (s && s.relics) || {}, n = 0;
+    for (var r in rel) if (rel[r] && R[r] && R[r][key]) n += R[r][key];
+    return n;
+  }
   function stats(s) {
     var U = D.UPGRADES, up = s.up || {}, k = s.skill || {};
+    var fight = (k.fight || 0) + relicSum(s, 'fight'), sail = (k.sail || 0) + relicSum(s, 'sail'), charm = (k.charm || 0) + relicSum(s, 'charm');
     return {
-      fire: 4 + 2 * (up.cannons || 0) + (k.fight || 0),
-      hullMax: U.hull.levels[up.hull || 0],
+      fire: 4 + 2 * (up.cannons || 0) + fight,
+      hullMax: U.hull.levels[up.hull || 0] + relicSum(s, 'hull'),
       crew: up.crew || 0, sails: up.sails || 0, cannons: up.cannons || 0,
-      fight: k.fight || 0, sail: k.sail || 0, charm: k.charm || 0,
-      speed: 95 * (1 + 0.15 * (up.sails || 0)) * (1 + 0.05 * (k.sail || 0))
+      fight: fight, sail: sail, charm: charm,
+      speed: 95 * (1 + 0.15 * (up.sails || 0)) * (1 + 0.05 * sail)
     };
   }
-  // kind: merchant, pirate or boss. tier: how rough the sea is, 1 to 3.
+  // kind: merchant, pirate or boss. tier: 1 (a sloop) to 5 (a man-o'-war).
   function foe(kind, tier) {
-    tier = Math.max(1, Math.min(3, Math.round(tier) || 1));
-    if (kind === 'boss') return {kind: kind, tier: 4, hull: 100, fire: 12};
-    if (kind === 'merchant') return {kind: kind, tier: tier, hull: 8 + 5 * tier, fire: 1 + tier};
-    return {kind: kind, tier: tier, hull: 4 + 14 * tier, fire: 3 * tier};
+    tier = Math.max(1, Math.min(5, Math.round(tier) || 1));
+    var cls = (D.SHIP_CLASS || [])[tier - 1] || 'sloop';
+    if (kind === 'boss') return {kind: kind, tier: 4, hull: 100, fire: 12, cls: 'flagship'};
+    if (kind === 'merchant') return {kind: kind, tier: tier, hull: 8 + 5 * tier, fire: 1 + tier, cls: 'merchantman'};
+    return {kind: kind, tier: tier, hull: 4 + 14 * tier, fire: 3 * tier, cls: cls};
+  }
+  // How tough a pirate is: the sea's own roughness, one size up once you're famous, then the luck of the draw:
+  // 10% a size smaller, 50% as expected, 28% one bigger, 12% two bigger. A new captain only meets the small ones.
+  function pirateTier(sea, lv, r, early) {
+    var off = r < 0.1 ? -1 : r < 0.6 ? 0 : r < 0.88 ? 1 : 2;
+    if (early) off = Math.min(0, off);
+    return Math.max(1, Math.min(5, (sea || 1) + (lv >= 8 ? 1 : 0) + off));
+  }
+  // A twenty-sided die: a chance becomes the number you need to roll. 50% means 11 or better.
+  function need(chance) { return 21 - Math.round(chance / 5); }
+
+  /* ---------- markets: limited stock, and prices that move as you trade ---------- */
+  // How many bales a market keeps on its shelves when it's fully stocked.
+  function stockMax(pid, g) {
+    var p = D.PORTS[pid], G = D.GOODS[g];
+    if (!p || !G || p.sells.indexOf(g) < 0) return 0;
+    var home = G.home === pid;
+    if (G.kind === 'brick') return home ? 30 : 12;
+    if (G.kind === 'product') return home ? 8 : 4;
+    return home ? 16 : 8;
+  }
+  // Every bale you've bought here lately costs a little more; every bale you've sold fetches a little less.
+  // Both wear off as the days pass (half a day's worth each day).
+  var BUY_PUSH = 0.01, SELL_PUSH = 0.015;
+  function pushed(price, n, buying) {
+    if (!price) return price;
+    return Math.max(1, Math.round(price * (buying ? 1 + BUY_PUSH * (n || 0) : Math.max(0.5, 1 - SELL_PUSH * (n || 0)))));
   }
   // Damage stays within 15% of the ship's firepower, so the number on the button is what you get.
   function hit(fire, r) { return Math.max(1, Math.round((fire || 1) * (0.85 + 0.3 * r)) || 1); }
@@ -343,6 +378,7 @@
     prepareMap: prepareMap, landAt: landAt, nearLand: nearLand, shipBlocked: shipBlocked,
     cellIdx: cellIdx, cellCenter: cellCenter, nearestFreePoint: nearestFreePoint, walkable: walkable, findPath: findPath,
     dayOf: dayOf, buyPrice: buyPrice, sellPrice: sellPrice, wanted: wanted,
-    levelOf: levelOf, stats: stats, foe: foe, hit: hit, boardChance: boardChance, fleeChance: fleeChance, danger: danger
+    levelOf: levelOf, stats: stats, foe: foe, hit: hit, boardChance: boardChance, fleeChance: fleeChance, danger: danger,
+    relicSum: relicSum, pirateTier: pirateTier, need: need, stockMax: stockMax, pushed: pushed, BUY_PUSH: BUY_PUSH, SELL_PUSH: SELL_PUSH
   };
 })(typeof window !== 'undefined' ? window : globalThis);

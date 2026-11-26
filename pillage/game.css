@@ -63,7 +63,7 @@ button:disabled{cursor:not-allowed}
 .tools button:hover{border-color:var(--green2)}
 
 /* title screen */
-.title-screen{position:absolute;inset:0;display:grid;place-items:center;padding:16px;background:radial-gradient(ellipse at center,rgba(10,30,40,.25),rgba(10,30,40,.6))}
+.title-screen{position:absolute;inset:0;display:grid;place-items:center;padding:16px;overflow-y:auto;background:radial-gradient(ellipse at center,rgba(10,30,40,.25),rgba(10,30,40,.6))}
 .title-screen[hidden]{display:none}
 .title-card{background:var(--paper);color:var(--ink);border:2px solid var(--paperline);border-radius:18px;padding:18px 24px 20px;text-align:center;max-width:420px;width:100%;box-shadow:0 10px 30px rgba(0,0,0,.35)}
 .title-card .flag{font-size:2.6rem;margin:0;line-height:1}
@@ -154,6 +154,42 @@ button:disabled{opacity:.5}
 .opts{display:grid;gap:8px;margin:6px 0 10px}
 .opts label{display:flex;align-items:center;gap:10px;min-height:44px;font-weight:600;cursor:pointer}
 .opts input{width:22px;height:22px;accent-color:var(--green2);flex:none}
+
+/* the die, warnings and contraband */
+.enc-row{display:flex;align-items:flex-start;gap:12px}
+.enc-row p{margin:.2em 0 .6em;flex:1 1 auto}
+.die{flex:none;display:grid;place-items:center;width:46px;height:46px;margin-top:4px;border-radius:12px;font:800 1.25rem/1 system-ui,sans-serif;color:#fff;background:#2f6d50;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.3);animation:tumble .5s ease-out}
+.die.miss{background:#a3271b}
+@keyframes tumble{0%{transform:rotate(-200deg) scale(.4);opacity:0}70%{transform:rotate(12deg) scale(1.08);opacity:1}100%{transform:rotate(0) scale(1)}}
+.calm .die{animation:none}
+@media (prefers-reduced-motion:reduce){.die{animation:none}}
+.warn{background:#ffe1db;color:#5c130c;border-left:6px solid var(--danger);border-radius:10px;padding:8px 12px;font-weight:700}
+.tag.hot{border-color:var(--danger);color:var(--danger)}
+.opt-btns{display:flex;flex-wrap:wrap;gap:8px}
+
+/* the captain's card */
+.fields{display:grid;gap:4px;margin:4px 0 10px}
+.fields label{font-weight:700;margin-top:6px}
+.fields input{min-height:44px;border-radius:10px;border:2px solid var(--line);background:var(--card);color:var(--ink);padding:6px 12px;font:inherit;width:100%}
+.swatches,.modes{border:1px solid var(--paperline);border-radius:12px;margin:8px 0;padding:6px 12px 10px}
+.swatches legend,.modes legend{font-weight:800;padding:0 6px}
+.swatches{display:flex;flex-wrap:wrap;gap:4px 14px}
+.swatch{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:600;cursor:pointer}
+.swatch.locked{color:var(--soft);cursor:not-allowed;font-weight:500;font-size:.92rem}
+.swatch input,.modes input{width:20px;height:20px;accent-color:var(--green2);flex:none}
+.chip{display:inline-grid;place-items:center;width:28px;height:22px;border-radius:6px;border:1px solid rgba(0,0,0,.45);font-size:.85rem;line-height:1}
+.swatch.locked .chip{opacity:.45}
+.modes label{display:flex;align-items:flex-start;gap:10px;padding:6px 0;cursor:pointer}
+.modes input{margin-top:4px}
+
+/* the hideout and the hall of fame */
+.base-more{margin:12px 0 4px}
+.fame{margin:.2em 0 .6em;padding-left:1.4em}
+.fame li{margin:.2em 0}
+.title-fame{margin-top:12px;text-align:left;border-top:1px dashed var(--paperline);padding-top:6px}
+.title-fame h3{margin:.2em 0;font-size:1rem;text-align:center}
+.title-fame .fame{font-size:.88rem}
+.log-top{margin-top:0}
 
 /* info */
 .howto{padding-left:1.2em;max-width:72ch}
