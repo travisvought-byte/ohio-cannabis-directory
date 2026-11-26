@@ -88,7 +88,7 @@ $('enc-body').querySelector('.primary').click(); assert(!$('dlg-encounter').open
 const rnd=w.Math.random;
 S.buff=null; S.grit=2; assert.equal(P.odds.chanceOf(0.5),70); assert.equal(P.odds.pct(0.5),'70% chance');
 S.grit=0; assert.equal(P.odds.chanceOf(0.99),95,'never certain'); assert.equal(P.odds.chanceOf(0),5,'never hopeless');
-w.Math.random=()=>0.99; P.odds.roll(0.5); assert.equal(S.grit,1); P.odds.roll(0.5); P.odds.roll(0.5); assert.equal(S.grit,2,'second wind caps at two misses');
+w.Math.random=()=>0.99; P.odds.roll(0.5); assert.equal(S.grit,1); P.odds.roll(0.5); P.odds.roll(0.5); P.odds.roll(0.5); assert.equal(S.grit,3,'second wind caps at three misses'); assert.equal(P.odds.chanceOf(0.5),80);
 w.Math.random=()=>0; assert(P.odds.roll(0.5)); assert.equal(S.grit,0,'a hit resets it'); w.Math.random=rnd;
 let hits=0; for(let i=0;i<6000;i++){ S.grit=0; if(P.odds.roll(0.6)) hits++; } S.grit=0;
 assert(Math.abs(hits/6000-0.6)<0.03,'rolls land as often as the label says: '+hits/6000);
@@ -108,7 +108,7 @@ $('enc-body').querySelector('.primary').click(); assert(!$('dlg-encounter').open
 P.dock('tortuga'); const d0=S.dist; S.cargo={}; assert(P.voyage('tortuga','havana'),'a route to Havana');
 assert(P.passage('havana'));
 for(let i=0;i<40&&$('dlg-encounter').open;i++) ($('enc-body').querySelector('.choice:not([disabled])')||$('enc-body').querySelector('.primary')).click();
-assert.equal(S.docked,'havana','landed in Havana'); assert(S.dist>d0+900,'days passed');
+assert.equal(S.docked,'havana','landed in Havana'); assert.equal(Math.round(S.dist-d0),P.voyage('tortuga','havana').days*900,'the day counter moves by the days shown');
 assert(S.seen.tortuga&&S.seen.havana,'both ports are in the ledger');
 $('tab-routes').click(); assert(/Sail to/.test($('port-panel').textContent)&&/Trade ledger/.test($('port-panel').textContent),'routes tab lists passages and the ledger');
 w.dispatchEvent(new w.Event('pagehide'));

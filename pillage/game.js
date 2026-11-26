@@ -151,19 +151,19 @@
   function heal(n) { var k = Math.max(0, Math.min(n, hullMax() - state.hull)); state.hull += k; return k; }
 
   /* ---------- odds: the number on the button is exactly the number that's rolled ---------- */
-  // A miss earns a second wind: +10% on the next check, +20% after two misses in a row. Some boosts add luck too.
+  // A miss earns a second wind: +10% on the next check for each miss in a row, up to +30%. Some boosts add luck too.
   function boost() { var b = state && state.buff; return b && SMOKE[b.g] && state.dist < b.until ? SMOKE[b.g] : null; }
-  function edge() { var b = boost(); return Math.min(0.2, 0.1 * (state.grit || 0)) + ((b && b.luck) || 0); }
+  function edge() { var b = boost(); return Math.min(0.3, 0.1 * (state.grit || 0)) + ((b && b.luck) || 0); }
   function chanceOf(p) { return Math.round(clamp(p + edge(), 0.05, 0.95) * 100); }
   function pct(p) { return chanceOf(p) + '% chance'; }
   function roll(p) {
     var ok = Math.random() * 100 < chanceOf(p);
-    state.grit = ok ? 0 : Math.min(2, (state.grit || 0) + 1);
+    state.grit = ok ? 0 : Math.min(3, (state.grit || 0) + 1);
     return ok;
   }
   function edgeHint() {
     var b = boost(), parts = [];
-    if (state.grit) parts.push('+' + Math.min(20, 10 * state.grit) + '% second wind after ' + (state.grit > 1 ? 'two misses' : 'a miss'));
+    if (state.grit) parts.push('+' + Math.min(30, 10 * state.grit) + '% second wind after ' + ['a miss', 'two misses', 'three misses'][Math.min(3, state.grit) - 1]);
     if (b && b.luck) parts.push('+' + Math.round(b.luck * 100) + '% from your ' + b.name);
     return parts.length ? '🍀 Already counted in these odds: ' + andList(parts) + '.' : '';
   }
@@ -181,8 +181,8 @@
     mendAcc = 0;
     sfx('pickup');
     track('smoke');
-    say('🔥 You ' + (verb(g) === 'eat' ? 'pass round a crate of ' : 'light up a bale of ') + GOODS[g].name + '. ' + S.flavor + ' ' + S.name + ': ' + S.does +
-      (S.days ? '' : ' It lasts about 2 days of sailing.') + (had && had !== S ? ' It replaces ' + had.name + '.' : ''));
+    say('🔥 You ' + (verb(g) === 'eat' ? 'pass round a crate of ' : 'light up a bale of ') + GOODS[g].name + '. ' + S.flavor + ' Boost: ' + S.name + ', about ' + boostDays(S) + ' days of sailing. ' + S.does +
+      (had && had !== S ? ' It replaces ' + had.name + '.' : ''));
     save();
     return true;
   }
@@ -309,7 +309,7 @@
     b.hull = clamp(Math.round(b.hull) || 1, 1, UP.hull.levels[b.up.hull]);
     if (b.tmap && !(MAPS[b.tmap.map] && b.tmap.at)) b.tmap = null;
     if (b.buff && !(SMOKE[b.buff.g] && b.buff.until > 0)) b.buff = null;
-    b.grit = clamp(Math.floor(b.grit) || 0, 0, 2);
+    b.grit = clamp(Math.floor(b.grit) || 0, 0, 3);
     if (typeof b.seen !== 'object' || Array.isArray(b.seen)) b.seen = {};
     for (var sp in b.seen) if (!PORTS[sp] || !b.seen[sp] || typeof b.seen[sp].s !== 'object') delete b.seen[sp];
     return b;
@@ -1338,7 +1338,7 @@
       li.appendChild(head);
       li.appendChild(el('p', {class: 'g-note'}, G.note));
       if (S) li.appendChild(el('p', {class: 'g-note'}, '🔥 ' + cap(verb(g)) + ' one for ' + S.name + '. ' + S.does));
-      if (best && best.price > spr) li.appendChild(el('p', {class: 'g-note'}, '📒 Best you’ve seen: ' + best.price + ' in ' + PORTS[best.pid].name + ' on day ' + best.d + '.'));
+      if (best && best.price > spr) li.appendChild(el('p', {class: 'g-note'}, '📒 Best price you know of: ' + best.price + ' in ' + PORTS[best.pid].name + ' on day ' + best.d + '.'));
       var pr = el('p', {class: 'g-prices'});
       pr.innerHTML = (bp ? 'Buy for <b>' + bp + '</b>' : 'Not sold here') + ' · Sells for <b>' + spr + '</b> · You have <b>' + have + '</b>';
       li.appendChild(pr);
@@ -1358,7 +1358,7 @@
       btn('Sell 1', 'Sell 1 bale of ' + G.name + ' for ' + spr + ' doubloons', 's1' + g, 1, false, have < 1);
       btn('Sell all (' + have + ')', 'Sell all ' + have + ' bales of ' + G.name + ' for ' + fmt(spr * have) + ' doubloons', 'sa' + g, have, false, have < 1);
       if (S && have > 0) {
-        var sb = el('button', {type: 'button', 'data-key': 'sm' + g, 'aria-label': cap(verb(g)) + ' a bale of ' + G.name + ' for ' + S.name + ': ' + S.does}, '🔥 ' + cap(verb(g)) + ' 1');
+        var sb = el('button', {type: 'button', 'data-key': 'sm' + g, 'aria-label': cap(verb(g)) + ' a bale of ' + G.name + ' for ' + S.name + '. ' + S.does}, '🔥 ' + cap(verb(g)) + ' 1');
         sb.addEventListener('click', function () { smoke(g); renderPanel('sm' + g); });
         btns.appendChild(sb);
       }
@@ -1408,6 +1408,7 @@
     var p = (b && b.calm) || weak ? 0 : clamp(0.06 + 0.04 * top - 0.03 * state.up.sails, 0.03, 0.25) * f;
     return {customs: Math.round(c * 100), pirates: Math.round(p * 100), top: top};
   }
+  function sailText(days) { return days + (days === 1 ? ' day’s' : ' days’') + ' sail'; }
   function riskText(v) {
     var rk = passageRisk(v);
     return 'On the way: ' + (cargoCount() ? 'Customs ' + rk.customs + '% chance, ' : '') + 'pirates ' + rk.pirates + '% chance.';
@@ -1419,8 +1420,9 @@
     var risk = passageRisk(v), r = Math.random() * 100;
     leavePort(true, true);
     auto = null; ship.vx = ship.vy = 0; wake = []; keys = {};
-    state.dist += v.len;
-    var worn = boostTick(v.len);
+    // A passage takes whole days, so the day counter moves by exactly the days shown.
+    state.dist += v.days * 900;
+    var worn = boostTick(v.days * 900);
     v.seas.forEach(function (s) { state.flags['seen_' + s] = 1; });
     var P = PORTS[to], m = enterMap(P.map), f = E.nearestFreePoint(m, P.dock[0], P.dock[1]);
     state.map = P.map; state.x = f[0]; state.y = f[1];
@@ -1455,7 +1457,7 @@
           var sp = seen[z].s && seen[z].s[g];
           if (z === a || !(sp > bp)) return;
           var v = voyage(a, z);
-          if (v) all.push({g: g, from: a, to: z, bp: bp, sp: sp, gain: sp - bp, days: v.days, score: (sp - bp) / v.days});
+          if (v && sp - bp >= Math.max(3, bp * 0.1)) all.push({g: g, from: a, to: z, bp: bp, sp: sp, gain: sp - bp, days: v.days, score: (sp - bp) / v.days});
         });
       });
     });
@@ -1479,7 +1481,7 @@
         p1.appendChild(el('b', null, G.name));
         p1.appendChild(document.createTextNode(': buy in ' + PORTS[r.from].name + ' for ' + r.bp + ', sell in ' + PORTS[r.to].name + ' for ' + r.sp + '.'));
         li.appendChild(p1);
-        li.appendChild(el('p', {class: 'g-note'}, '+' + r.gain + ' a bale, about ' + r.days + ' ' + plural(r.days, 'day') + '’ sail apart. Seen on day ' + Math.min(d1, d2) + (d1 !== d2 ? ' and day ' + Math.max(d1, d2) : '') + '.'));
+        li.appendChild(el('p', {class: 'g-note'}, '+' + r.gain + ' a bale, about ' + sailText(r.days) + ' apart. Seen on day ' + Math.min(d1, d2) + (d1 !== d2 ? ' and day ' + Math.max(d1, d2) : '') + '.'));
         var btns = el('div', {class: 'g-btns'}), b;
         if (here === r.from) {
           b = el('button', {type: 'button', 'data-key': 'run' + i}, '🛒 Buy it in the market');
@@ -1534,7 +1536,7 @@
       head.appendChild(el('h3', null, P.name));
       head.appendChild(el('span', {class: 'tag'}, MAPS[P.map].short));
       li.appendChild(head);
-      li.appendChild(el('p', {class: 'g-note'}, 'About ' + o.v.days + ' ' + plural(o.v.days, 'day') + '’ sail. ' + riskText(o.v)));
+      li.appendChild(el('p', {class: 'g-note'}, 'About ' + sailText(o.v.days) + '. ' + riskText(o.v)));
       if (!seen) li.appendChild(el('p', {class: 'g-note'}, '📒 You haven’t seen this market yet.'));
       else {
         var sells = Object.keys(seen.b).map(function (g) { return GOODS[g].name + ' ' + seen.b[g]; });
@@ -1812,7 +1814,7 @@
       held.forEach(function (g) {
         var li = el('li'), S = SMOKE[g];
         li.appendChild(el('span', {'aria-hidden': 'true', class: 'mark'}, GOODS[g].icon));
-        li.appendChild(el('span', {class: 'grow'}, GOODS[g].name + ': ' + baleWord(state.cargo[g]) + (S ? '. ' + S.name + ': ' + S.does : '')));
+        li.appendChild(el('span', {class: 'grow'}, GOODS[g].name + ': ' + baleWord(state.cargo[g]) + (S ? '. ' + S.name + '. ' + S.does : '')));
         if (S) {
           var sb = el('button', {type: 'button', class: 'mini', 'data-key': 'sm' + g, 'aria-label': cap(verb(g)) + ' a bale of ' + GOODS[g].name + ' for ' + S.name}, '🔥 ' + cap(verb(g)) + ' 1');
           sb.addEventListener('click', function () { smoke(g); renderLog('sm' + g); });
