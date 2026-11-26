@@ -18,9 +18,14 @@ const say = (...a) => { const s = a.join(' '); log.push(s); console.log(s); };
   await page.waitForSelector('#cap-ok');
   await page.click('#cap-ok');
   await page.waitForTimeout(800);
-  await page.evaluate(() => { document.querySelectorAll('dialog[open]').forEach(d => d.close()); window.__pillage.dock('nassau'); });
+  // Close the start-up dialogs and let the game cast off before docking at Nassau (a first visit opens the tavern).
+  await page.evaluate(() => document.querySelectorAll('dialog[open]').forEach(d => d.close()));
   await page.waitForTimeout(600);
-  await page.evaluate(() => { document.querySelectorAll('dialog[open]').forEach(d => d.close()); window.__pillage.openPort('nassau', 'tavern'); });
+  await page.evaluate(() => window.__pillage.dock('nassau'));
+  await page.waitForTimeout(800);
+  await page.evaluate(() => { if (!document.getElementById('dlg-port').open) window.__pillage.openPort('nassau', 'tavern'); else window.__pillage.showTab('tavern'); });
+  await page.waitForTimeout(400);
+  say('DOCKED', JSON.stringify(await page.evaluate(() => window.__pillage.state.docked)));
   say('PORT', JSON.stringify(await page.textContent('#port-title')));
   await page.waitForSelector('#port-panel .npc h3');
   const name = await page.textContent('#port-panel .npc h3');
