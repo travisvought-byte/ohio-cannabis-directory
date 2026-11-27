@@ -48,11 +48,13 @@
    "id": "limits",
    "icon": "scale",
    "question": "How much weed can a visitor have in Illinois?",
-   "short": "Visitors 21 and older can have up to 30 grams of flower, 500 mg of THC in infused products and 5 grams of concentrate. Illinois residents can have twice that.",
+   "short": "Visitors 21 and older can have up to 30 grams of flower, 500 mg of THC in infused products and 5 grams of concentrate. Illinois residents can have twice that. A 2026 law doubled both sets of limits, effective June 12, 2026.",
    "points": [
-    {"text": "Non-residents 21 and older may have 30 grams of cannabis flower (about 1 ounce), 500 milligrams of THC in cannabis-infused products and 5 grams of cannabis concentrate.", "source_ids": ["il-faq"]},
-    {"text": "Illinois residents 21 and older may have 60 grams of flower (about 2 ounces), 1,000 milligrams of THC in infused products and 10 grams of concentrate.", "source_ids": ["il-faq"]},
-    {"text": "The totals are cumulative: an adult may have a combination of flower, infused products and concentrate, up to the limit for each kind of product.", "source_ids": ["il-faq"]}
+    {"text": "Public Act 104-0463 (Senate Bill 3222), signed on June 12, 2026 and in effect that day, doubled the possession limits in Section 10-10 of the Illinois Cannabis Regulation and Tax Act (410 ILCS 705/10-10).", "source_ids": ["idfpr-sb3222"]},
+    {"text": "Non-residents 21 and older may now have 30 grams of cannabis flower (about 1 ounce), 500 milligrams of THC in cannabis-infused products and 5 grams of cannabis concentrate, up from 15 grams, 250 milligrams and 2.5 grams.", "source_ids": ["idfpr-sb3222", "il-faq"]},
+    {"text": "Illinois residents 21 and older may now have 60 grams of flower (about 2 ounces), 1,000 milligrams of THC in infused products and 10 grams of concentrate, up from 30 grams, 500 milligrams and 5 grams.", "source_ids": ["idfpr-sb3222", "il-faq"]},
+    {"text": "The totals are cumulative: an adult may have a combination of flower, infused products and concentrate, up to the limit for each kind of product.", "source_ids": ["il-faq"]},
+    {"text": "If you look up the statute itself: the Illinois General Assembly’s online compiled text of Section 10-10 had not been updated when checked on November 27, 2026, and still showed the limits from before the 2026 law.", "source_ids": ["ilcs-10-10"]}
    ]
   },
   {
@@ -135,17 +137,21 @@
  ],
  "sources": [
   {"id": "il-faq", "title": "FAQs: possession limits for residents and non-residents, where use is prohibited, vehicles, driving, edibles", "publisher": "Illinois Cannabis Regulation Oversight Officer", "url": "https://cannabis.illinois.gov/about/faqs.html", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "idfpr-sb3222", "title": "SB3222 Fact Sheet: Impacts to Licensed Dispensing Organizations (June 23, 2026): Public Act 104-0463, signed June 12, 2026; in-state and out-of-state possession limits under 410 ILCS 705/10-10(a) and (b), effective immediately", "publisher": "Illinois Department of Financial and Professional Regulation", "url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/cannabis/sb-3222-fact-sheet.pdf", "checked": "2026-11-27", "kind": "primary"},
   {"id": "il-home", "title": "Illinois cannabis: who can buy", "publisher": "Illinois Cannabis Regulation Oversight Officer", "url": "https://cannabis.illinois.gov/", "checked": "2026-11-27", "kind": "primary"},
   {"id": "il-locations", "title": "Dispensary locations (map and list; page says dispensaries updated as of October 8, 2026)", "publisher": "Illinois Cannabis Regulation Oversight Officer", "url": "https://cannabis.illinois.gov/about/locations.html", "checked": "2026-11-27", "kind": "primary"},
   {"id": "idfpr-guide", "title": "A Consumer’s Guide to Identifying a Licensed Cannabis Dispensary", "publisher": "Illinois Department of Financial and Professional Regulation", "url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/auc/final-dispensary-psa.pdf", "checked": "2026-11-27", "kind": "primary"},
   {"id": "chi-faq", "title": "Cannabis Information Center: frequently asked questions", "publisher": "City of Chicago", "url": "https://www.chicago.gov/city/en/sites/cannabis-information-center/home/faq.html", "checked": "2026-11-27", "kind": "primary"},
   {"id": "idph-reciprocity", "title": "Medical cannabis reciprocity", "publisher": "Illinois Department of Public Health", "url": "https://dph.illinois.gov/topics-services/prevention-wellness/medical-cannabis/reciprocity.html", "checked": "2026-11-27", "kind": "primary"},
   {"id": "idph-program", "title": "Medical Cannabis Patient Program", "publisher": "Illinois Department of Public Health", "url": "https://dph.illinois.gov/topics-services/prevention-wellness/medical-cannabis.html", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "ilcs-10-10", "title": "410 ILCS 705/10-10, possession limit: compiled text as posted (source note P.A. 101-27 and 101-593; not yet updated for P.A. 104-0463)", "publisher": "Illinois General Assembly", "url": "https://ilga.gov/legislation/ilcs/documents/041007050K10-10.htm", "checked": "2026-11-27", "kind": "primary"},
   {"id": "tsa-mmj", "title": "What can I bring? Medical marijuana", "publisher": "Transportation Security Administration", "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana", "checked": "2026-11-27", "kind": "primary"}
  ],
  "attempts": [
   {"url": "https://ilga.gov/Documents/legislation/ilcs/documents/041007050K10-35.htm", "tried": "2026-11-27", "result": "Not retrieved (robots.txt could not be read). Nothing on hotels or private businesses is stated, since no other reachable official source speaks to hotels."},
-  {"url": "https://ilga.gov/legislation/ilcs/documents/041007050K10-10.htm", "tried": "2026-11-27", "result": "Read. The compiled statute still showed the older limits (residents 30 g, non-residents 15 g; source line P.A. 101-27 and 101-593). The page uses the state regulator's FAQ, which gives doubled limits (60 g and 30 g); NORML (secondary) reports a June 2026 law doubling them, but the Illinois General Assembly's bill and public act pages could not be retrieved to confirm it."},
+  {"url": "https://ilga.gov/Legislation/PublicActs/PrinterFriendly/104-0463", "tried": "2026-11-27", "result": "Partly read. The General Assembly's page for Public Act 104-0463 (SB 3222, short title Illinois Hemp Act) came through cut off at about 127,000 characters, inside Section 105 (Criminal Identification Act, where the minor-offense amount changes from 30 to 60 grams); the Act's amendment of 410 ILCS 705/10-10 was not reached. The new limits and their effective date are cited from IDFPR's June 23, 2026 fact sheet, which cites 410 ILCS 705/10-10(a) and (b)."},
+  {"url": "https://www.ilga.gov/documents/legislation/104/SB/PDF/10400SB3222enr.pdf", "tried": "2026-11-27", "result": "Not retrieved (robots.txt could not be read). ilga.gov and www.ilga.gov also failed to load in a cloud browser (upstream connection failure)."},
+  {"url": "https://ilga.gov/ftp/legislation/104/BillStatus/HTML/10400SB3222.html", "tried": "2026-11-27", "result": "Read, but it still showed SB 3222 as introduced (a video-streaming advertising bill last placed on second reading in March 2026), not the enacted Act, so it is not cited."},
   {"url": "https://www.chicago.gov/city/en/sites/cannabis-information-center/home/social-consumption.html", "tried": "2026-11-27", "result": "Read. Describes on-premises consumption licenses statewide but names no Chicago business or Chicago rule, so consumption lounges are left out. The city FAQ's possession table shows the pre-2026 limits and is not used for limits."},
   {"url": "https://www.flychicago.com/ohare/ServicesAmenities/FAQ/pages/default.aspx", "tried": "2026-11-27", "result": "Read; it said nothing about cannabis. No airport-specific rule is stated."}
  ]
