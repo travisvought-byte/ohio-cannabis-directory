@@ -1,0 +1,177 @@
+{
+ "schema_version": 1,
+ "as_of": "2026-11-27",
+ "purpose": "Cannabis rules for people visiting Las Vegas, for national/las-vegas.html on the-reefer.com (built by las_vegas.py through build_national.pages()). Every point names the official source it comes from; each source carries the date it was checked. No business is listed except as the Cannabis Compliance Board's own licensee list names it.",
+ "event": {
+  "id": "event-nv-mjbizcon-2026",
+  "contest": "../pillage/contest.html"
+ },
+ "glance": [
+  {"icon": "id", "big": "21+", "text": "with a valid photo ID: visitors can buy at licensed stores", "href": "#buy"},
+  {"icon": "scale", "big": "2.5 oz", "text": "of flower, or 1/4 oz of concentrate, at one time", "href": "#limits"},
+  {"icon": "nosmoke", "big": "Not in public", "text": "a misdemeanor, with a fine of up to $600", "href": "#where"},
+  {"icon": "lounge", "big": "Lounges", "text": "licensed places where you can use it on site", "href": "#lounges"},
+  {"icon": "car", "big": "Not in a car", "text": "even as a passenger, and no driving high", "href": "#car"},
+  {"icon": "plane", "big": "Not at the airport", "text": "Clark County law bans having it on airport property", "href": "#flying"}
+ ],
+ "sections": [
+  {
+   "id": "buy",
+   "icon": "id",
+   "question": "Can tourists buy weed in Las Vegas?",
+   "short": "Yes, if you are 21 or older and show a valid photo ID. The rule is about your age, not where you live.",
+   "points": [
+    {"text": "Adults 21 and older can buy cannabis, but only from a state-licensed retail store. Buying, having or using retail cannabis under 21 is illegal.", "source_ids": ["ccb-laws"]},
+    {"text": "To enter the store or buy, you show a valid, government-issued photo ID proving you are 21 or older. State law bars the board's rules from making you give a store any other personal information to prove your age.", "source_ids": ["ccb-faq", "nrs-678d"]},
+    {"text": "IDs on the state's list: a driver's license or ID card from any US state or territory, a US military ID, a passport issued or recognized by the US government, a US permanent resident card, a Coast Guard merchant mariner credential, or a tribal ID card. It must show your photo and date of birth and be valid. A driver's license from another country is not on the list, so international visitors should bring a passport.", "source_ids": ["ccb-faq"]},
+    {"text": "Adult-use sales carry a 10% retail excise tax on the sale price.", "source_ids": ["ccb-faq"]}
+   ]
+  },
+  {
+   "id": "limits",
+   "icon": "scale",
+   "question": "How much weed can I buy in Nevada?",
+   "short": "Up to 2.5 ounces of flower, or 1/4 ounce of concentrate (7,087 mg of THC), or a mix of the two that stays under the limit.",
+   "points": [
+    {"text": "A store can't sell you more than 2.5 ounces of usable cannabis, or one-quarter ounce of concentrated cannabis (7,087 mg THC), or a combination of the two that goes over the legal limit.", "source_ids": ["ccb-faq"]},
+    {"text": "The same amounts are the most an adult 21 or older may have at any one time: 2.5 ounces of usable cannabis, and one-quarter ounce of concentrate or products with no more than 7,087 mg of THC.", "source_ids": ["ccb-faq", "nrs-678d"]},
+    {"text": "Carrying flower and other products together? Every bit of flower lowers how much THC you can have in edibles, vapes and other products. The chart below is the state's own.", "source_ids": ["ccb-laws"]}
+   ]
+  },
+  {
+   "id": "where",
+   "icon": "pin",
+   "question": "Where can you smoke weed in Las Vegas?",
+   "short": "On private property where the owner allows it, or in a licensed consumption lounge. Not in public and not in a car.",
+   "points": [
+    {"text": "Using cannabis in a public place, in a cannabis store or in a vehicle is a misdemeanor in Nevada, with a fine of up to $600.", "source_ids": ["nrs-678d"]},
+    {"text": "The law's protection for adults does not cover using it in any public place, any place open to the public, or anywhere exposed to public view.", "source_ids": ["nrs-678d"]},
+    {"text": "You can use it on private property, a home for example, as long as the property owner has not prohibited it.", "source_ids": ["ccb-laws"]},
+    {"text": "You can use it inside a licensed cannabis consumption lounge.", "source_ids": ["ccb-laws", "nrs-678d"]}
+   ],
+   "places": [
+    {"place": "A private home, where the owner allows it", "answer": "yes", "label": "Yes", "source_ids": ["ccb-laws"]},
+    {"place": "A licensed consumption lounge", "answer": "yes", "label": "Yes", "source_ids": ["ccb-laws", "nrs-678d"]},
+    {"place": "Your hotel room", "answer": "maybe", "label": "Only if the hotel allows it", "source_ids": ["ccb-laws", "nrs-678d"]},
+    {"place": "Sidewalks, the Strip, a casino floor or anywhere open to the public", "answer": "no", "label": "No", "source_ids": ["nrs-678d"]},
+    {"place": "Inside a cannabis store", "answer": "no", "label": "No", "source_ids": ["nrs-678d"]},
+    {"place": "Any vehicle, even as a passenger", "answer": "no", "label": "No", "source_ids": ["ccb-laws", "nrs-678d"]},
+    {"place": "Red Rock Canyon, Lake Mead, Hoover Dam and other federal land", "answer": "no", "label": "No, not even to carry it", "source_ids": ["ccb-laws", "usbr-hoover"]},
+    {"place": "Harry Reid International Airport", "answer": "no", "label": "No, not even to carry it", "source_ids": ["lv-airport"]}
+   ]
+  },
+  {
+   "id": "hotels",
+   "icon": "hotel",
+   "question": "Can I smoke weed in my hotel room or at a casino?",
+   "short": "Only where the property allows it. A hotel is private property, and Nevada law lets owners ban cannabis there.",
+   "points": [
+    {"text": "Nevada law lets anyone who owns, occupies or controls private property restrict smoking and other cannabis activity on it, and using cannabis on private property is legal only if the owner has not prohibited it. Check your hotel's own rules before you light up.", "source_ids": ["nrs-678d", "ccb-laws"]},
+    {"text": "Using it anywhere open to the public or in public view is not protected, and a casino floor is open to the public.", "source_ids": ["nrs-678d"]},
+    {"text": "Nevada's gaming regulations count letting a person who is visibly impaired by alcohol or any other drug take part in gambling as grounds for discipline against the casino.", "source_ids": ["ngc-reg5"]}
+   ]
+  },
+  {
+   "id": "lounges",
+   "icon": "lounge",
+   "question": "Are there cannabis lounges in Las Vegas?",
+   "short": "Yes. Nevada licenses consumption lounges, where adults 21 and older can buy and use cannabis on site. The state's licensee list, current as of October 2, 2026, shows three.",
+   "points": [
+    {"text": "AB341, passed in the Legislature's 81st (2021) session, let the Cannabis Compliance Board license and regulate consumption lounges, and state law says a person may smoke or otherwise consume cannabis in one.", "source_ids": ["ccb-program", "nrs-678d"]},
+    {"text": "There are two kinds: a retail lounge, which only the owner of a licensed store can open, and an independent lounge, which is not attached or immediately next to a store.", "source_ids": ["ccb-faq"]},
+    {"text": "Lounges sell single-use or ready-to-consume products to adults 21 and older. Staff check your ID with a scanner before you enter or buy.", "source_ids": ["ccb-faq", "ccb-reg15"]},
+    {"text": "In one sale, a lounge can't sell you more than 3.5 grams of flower, 300 mg of THC in an inhalable extract, or 10 mg of THC in an edible, capsule or tincture, among other limits by product.", "source_ids": ["ccb-reg15"]},
+    {"text": "No alcohol is sold or drunk there, and you can't take unfinished cannabis with you: the lounge must not let you leave with it.", "source_ids": ["ccb-faq", "ccb-reg15"]},
+    {"text": "The board's list of licensees, current as of October 2, 2026, shows three consumption lounges, each marked adult use: DAZED! at 2548 W Desert Inn Rd, SOCIETY at 4640 Paradise Rd Ste 8-9, and SMOKE AND MIRRORS at 2975 Sammy Davis Jr Dr. Tribal businesses are not on that list. We don't rate or vouch for any business, and nobody paid to be named; check the board's list for changes.", "source_ids": ["ccb-licensees"]}
+   ]
+  },
+  {
+   "id": "car",
+   "icon": "car",
+   "question": "Can I use cannabis in a car, or drive after using it?",
+   "short": "No, and no. Not in a vehicle, even as a passenger, and driving under the influence is a crime.",
+   "points": [
+    {"text": "You cannot use cannabis in a moving vehicle, even if you are a passenger. That includes a taxi or rideshare, and using it in a vehicle is a misdemeanor with a fine of up to $600.", "source_ids": ["ccb-laws", "nrs-678d"]},
+    {"text": "It is unlawful to drive or be in actual physical control of a vehicle while under the influence of a controlled substance. Being allowed to use the drug under Nevada law is not a defense.", "source_ids": ["nrs-484c"]},
+    {"text": "For the most serious DUI charges, including crashes that kill or badly hurt someone, the law also sets blood limits: 2 nanograms of THC or 5 nanograms of its 11-OH metabolite per milliliter.", "source_ids": ["nrs-484c"]},
+    {"text": "The Cannabis Compliance Board warns that any amount of cannabis puts you at risk of driving impaired.", "source_ids": ["ccb-laws"]}
+   ]
+  },
+  {
+   "id": "federal-land",
+   "icon": "mountain",
+   "question": "Can I bring weed to Red Rock Canyon, Lake Mead or Hoover Dam?",
+   "short": "No. They are federal land, where cannabis is still illegal, even to carry.",
+   "points": [
+    {"text": "The Cannabis Compliance Board says cannabis is still illegal on federal land, including national parks and military bases.", "source_ids": ["ccb-laws"]},
+    {"text": "Red Rock Canyon National Conservation Area, 17 miles west of the Strip, is run by the federal Bureau of Land Management.", "source_ids": ["blm-redrock"]},
+    {"text": "Lake Mead National Recreation Area is run by the National Park Service. Nearby Death Valley National Park puts it plainly: even though California and Nevada legalized recreational marijuana, having or using it on federal lands is prohibited by federal law.", "source_ids": ["nps-lake", "nps-deva"]},
+    {"text": "At Hoover Dam, marijuana is prohibited under 43 CFR 423.44, and every vehicle is subject to inspection at the Nevada security checkpoint.", "source_ids": ["usbr-hoover"]}
+   ]
+  },
+  {
+   "id": "flying",
+   "icon": "plane",
+   "question": "Can I fly home with weed from Las Vegas?",
+   "short": "No. Having it anywhere on airport property breaks Clark County law, and federal law still treats cannabis as a controlled substance.",
+   "points": [
+    {"text": "Under Clark County Code 20.04.090, it is unlawful to possess or advertise marijuana, cannabis or THC on property owned by the Clark County Department of Aviation, which runs Harry Reid International Airport. Penalties can include prosecution, arrest and civil or criminal fines.", "source_ids": ["lv-airport"]},
+    {"text": "TSA says marijuana and some cannabis products, including some CBD oil, remain illegal under federal law unless they have no more than 0.3% THC on a dry-weight basis or are FDA-approved. Its officers don't search for drugs, but they refer anything illegal they find to law enforcement.", "source_ids": ["tsa-mmj"]},
+    {"text": "Cannabis remains illegal under federal law, where it is still a controlled substance. Plan to finish it or leave it behind before you head to the airport, and know the law where you live.", "source_ids": ["ccb-laws"], "link": {"label": "Check your home state", "href": "index.html#map"}}
+   ]
+  },
+  {
+   "id": "medical",
+   "icon": "card",
+   "question": "Does Nevada accept medical cannabis cards from other states?",
+   "short": "For some states. Ask the dispensary whether yours qualifies.",
+   "points": [
+    {"text": "The board offers reciprocity to residents of some states, and tells visiting patients to contact a local dispensary to see whether their state qualifies.", "source_ids": ["ccb-faq"]},
+    {"text": "A visiting patient can show a passport or a state ID, as long as it is valid and matches the state that issued the medical card.", "source_ids": ["ccb-faq"]}
+   ]
+  },
+  {
+   "id": "edibles",
+   "icon": "clock",
+   "question": "How much of an edible should I take?",
+   "short": "Start with no more than 5 mg of THC and wait at least two hours before having more.",
+   "points": [
+    {"text": "The effects of cannabis can take two hours to peak after you eat or drink it, and everyone reacts differently. Start with a small serving, no more than 5 milligrams of THC, and wait at least two hours before having more.", "source_ids": ["ccb-consumers"]},
+    {"text": "Using alcohol or other intoxicating substances with cannabis is likely to make you more impaired.", "source_ids": ["ccb-consumers"]},
+    {"text": "Took too much, or worried about someone who did? Poison Help gives free, expert help any time at 1-800-222-1222.", "source_ids": ["ccb-consumers"], "link": {"label": "Call Poison Help", "href": "tel:18002221222"}}
+   ]
+  }
+ ],
+ "mix": {
+  "caption": "Flower and other products together: how much THC in other products stays within the limit",
+  "note": "The Cannabis Compliance Board's own chart. Other products means edibles, vapes, tinctures and the like, counted by the milligrams of THC on the label.",
+  "source_ids": ["ccb-laws"],
+  "rows": [
+   {"flower": "None", "grams": "0", "mg": 7087},
+   {"flower": "1/8 ounce", "grams": "3.54", "mg": 6733},
+   {"flower": "1/4 ounce", "grams": "7.09", "mg": 6379},
+   {"flower": "1/2 ounce", "grams": "14.18", "mg": 5670},
+   {"flower": "1 ounce", "grams": "28.35", "mg": 4255},
+   {"flower": "1 1/2 ounces", "grams": "42.53", "mg": 2839},
+   {"flower": "2 ounces", "grams": "56.70", "mg": 1423},
+   {"flower": "2 1/2 ounces", "grams": "70.88", "mg": 0}
+  ]
+ },
+ "sources": [
+  {"id": "ccb-laws", "title": "Laws and regulations: know the law, possession and consumption, federal implications", "publisher": "Nevada Cannabis Compliance Board", "url": "https://ccb.nv.gov/laws-regulations/", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "ccb-faq", "title": "Frequently asked questions: ID, purchase and possession limits, consumption lounges, reciprocity", "publisher": "Nevada Cannabis Compliance Board", "url": "https://ccb.nv.gov/faq/", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "ccb-licensees", "title": "List of licensees: cannabis consumption lounges (current as of October 2, 2026)", "publisher": "Nevada Cannabis Compliance Board", "url": "https://ccb.nv.gov/list-of-licensees/", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "ccb-program", "title": "Nevada cannabis program: consumption lounges", "publisher": "Nevada Cannabis Compliance Board", "url": "https://ccb.nv.gov/nevada-cannabis-program/", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "ccb-reg15", "title": "Regulation 15, cannabis consumption lounge (NCCR 15.010 to 15.100, amended August 2023)", "publisher": "Nevada Cannabis Compliance Board", "url": "https://ccb.nv.gov/wp-content/uploads/2023/08/Reg-15_v081623.pdf", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "ccb-consumers", "title": "Consumers: health and safety facts", "publisher": "Nevada Cannabis Compliance Board", "url": "https://ccb.nv.gov/consumers/", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "nrs-678d", "title": "NRS chapter 678D, adult use of cannabis (NRS 678D.200, 678D.300, 678D.310, 678D.500 and 678D.510)", "publisher": "Nevada Legislature", "url": "https://www.leg.state.nv.us/NRS/NRS-678D.html", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "nrs-484c", "title": "NRS chapter 484C, driving under the influence (NRS 484C.110; chapter revised September 9, 2026)", "publisher": "Nevada Legislature", "url": "https://www.leg.state.nv.us/NRS/NRS-484C.html", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "ngc-reg5", "title": "Nevada Gaming Commission Regulation 5, operation of gaming establishments (rev. April 2026), Regulation 5.011(1)(b)", "publisher": "Nevada Gaming Control Board", "url": "https://www.gaming.nv.gov/siteassets/content/regs/gaming-statutes--regulations/regulation-5-as-of-04-26.pdf", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "lv-airport", "title": "Marijuana prohibited (Clark County Code 20.04.090)", "publisher": "Harry Reid International Airport, Clark County Department of Aviation", "url": "https://www.harryreidairport.com/Marijuana", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "tsa-mmj", "title": "What can I bring? Medical marijuana", "publisher": "Transportation Security Administration", "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "blm-redrock", "title": "Red Rock Canyon National Conservation Area", "publisher": "Bureau of Land Management", "url": "https://www.blm.gov/programs/national-conservation-lands/nevada/red-rock-canyon", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "nps-lake", "title": "Lake Mead National Recreation Area: laws and policies", "publisher": "National Park Service", "url": "https://www.nps.gov/lake/learn/management/lawsandpolicies.htm", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "nps-deva", "title": "Death Valley National Park: laws and policies (marijuana possession and use prohibited)", "publisher": "National Park Service", "url": "https://www.nps.gov/deva/learn/management/lawsandpolicies.htm", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "usbr-hoover", "title": "Hoover Dam: visitor services and security (page updated October 30, 2026)", "publisher": "Bureau of Reclamation", "url": "https://www.usbr.gov/lc/hooverdam/service/index.html", "checked": "2026-11-27", "kind": "primary"}
+ ]
+}

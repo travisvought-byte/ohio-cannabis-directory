@@ -763,6 +763,23 @@ def featured_section(groups, name):
     return ''.join(out) + '</section>'
 
 
+# Visitor guides for a city in a state, linked near the top of that state's page (November 27, 2026).
+CITY_GUIDES = {'NV': ('las-vegas.html', 'Visiting Las Vegas?',
+                      'Where visitors can and can’t use cannabis: hotels, casinos, cars, Red Rock, Lake Mead and Hoover Dam, plus lounges, driving and flying home.')}
+CITY_CSS = ('.cityguide{display:flex;gap:12px;align-items:center;background:var(--card);border:2px solid var(--gold);border-radius:14px;padding:12px 16px;margin:16px 0;max-width:820px}'
+            '.cityguide .ci{flex:none;display:grid;place-items:center;width:42px;height:42px;border-radius:10px;background:var(--mint);color:var(--green)}.cityguide .ci svg{width:24px;height:24px}'
+            '.cityguide p{margin:0}.cityguide a{font-weight:800;display:inline-flex;min-height:44px;align-items:center}'
+            '@media (prefers-color-scheme:dark){.cityguide .ci{color:#a8dfbd}}')
+
+
+def city_guide(code):
+    if code not in CITY_GUIDES:
+        return ''
+    page, head, text = CITY_GUIDES[code]
+    return (f'<aside class="cityguide" aria-label="{esc(head)}"><span class="ci" aria-hidden="true">{icon("pin")}</span>'
+            f'<p><a href="{page}">{esc(head)} The rules for visitors</a><br>{esc(text)}</p></aside>')
+
+
 NEIGHBORS_FILE = ROOT / 'data/state-neighbors.json'
 
 
@@ -1110,6 +1127,7 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
         body.append('<p>Official state site: <span class="muted">not yet reviewed</span></p>')
     body.append('</div>' + locator(perm, code, answers, place) + '</div>')
     body.append(featured_section(groups, name))
+    body.append(city_guide(code))
     if code == 'OH':
         body.append(f'<p><strong>Ohio’s full guide lives at <a href="{OHIO_HOME}/">OhioWeed.org</a></strong>: business directory, dispensary finder, record clearing, advocacy and more.</p>')
     body.append(guides_section(guides, code, name))
@@ -1152,7 +1170,7 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
     faq = faq_node(perm, state_answers, page)
     if faq:
         ld.append(faq)
-    return shell(title, description, ''.join(body), page, name, ld=ld)
+    return shell(title, description, ''.join(body), page, name, ld=ld, css=CITY_CSS if code in CITY_GUIDES else '')
 
 
 def state_title(name, place, adult_status, prog, shops, year=''):
@@ -1954,7 +1972,8 @@ def mjbizcon_card(directory, today=None):
             f'<h2>Going to MJBizCon?</h2><p>Las Vegas, <time datetime="{start.isoformat()}">{esc(when)}</time>. Our free planner has every exhibitor and booth, '
             'every session with times and rooms, and after-hours events. Make a copy and it works on your phone.</p>'
             f'<a class="go" href="{esc(MJBIZCON_PLANNER)}/copy" target="_blank" rel="noopener" data-track="mjbizcon:planner-copy">Get the free planner</a>'
-            f'<a class="alt" href="{esc(MJBIZCON_PLANNER)}/edit?usp=sharing" target="_blank" rel="noopener" data-track="mjbizcon:planner-open">Just look at it</a></li>'
+            f'<a class="alt" href="{esc(MJBIZCON_PLANNER)}/edit?usp=sharing" target="_blank" rel="noopener" data-track="mjbizcon:planner-open">Just look at it</a>'
+            ' <a class="alt" href="las-vegas.html" data-track="mjbizcon:las-vegas">Vegas cannabis rules for visitors</a></li>'
             '<script>(function(){var b=document.getElementById("mjbizcon-card");if(!b)return;var d=new Date(),'
             't=d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2);'
             'if(t>b.getAttribute("data-ends"))b.remove()})();</script>')
@@ -2054,6 +2073,7 @@ def home_page(perm, score, directory, answers, sources, sponsors=()):
     linked = {href.split('#')[1] for href in hrefs if href.startswith('help.html#')}
     more = [f'<a href="{href}">{esc(label)}</a>' for label, href in QUICK]
     more += [f'<a href="help.html#{slug(n)}">{esc(n)}</a>' for n in needs_in_order(perm) if slug(n) not in linked]
+    more.append('<a href="las-vegas.html">Visiting Las Vegas</a>')
     body.append('<p class="also">Also: ' + ' · '.join(more) + ' · <a href="help.html">All national help</a></p></section>')
     body.append(joke)
 
@@ -2170,6 +2190,8 @@ def pages():
     out[hash_myths.NAME] = hash_myths.page(sys.modules[__name__], load_landing()['national_pages'][hash_myths.NAME])
     import weed_santa  # Weed Santa, free cannabis help in Ohio (owner direction, November 25, 2026)
     out[weed_santa.NAME] = weed_santa.page(sys.modules[__name__], load_landing()['national_pages'][weed_santa.NAME])
+    import las_vegas  # Visiting Las Vegas: cannabis rules for visitors, for MJBizCon week and after (November 27, 2026)
+    out[las_vegas.NAME] = las_vegas.page(sys.modules[__name__], load_landing()['national_pages'][las_vegas.NAME], directory)
     for q in perm['questions']:
         out[law_page_name(q['id'])] = law_page(perm, q, answers, sources, dispensaries)
     for code, name in perm['jurisdictions'].items():
@@ -2193,7 +2215,7 @@ def main(out_dir=None):
     out_dir.mkdir(parents=True, exist_ok=True)
     for name, text in built.items():
         (out_dir / name).write_text(text, encoding='utf-8')
-    print(f'Built national/: {len(built)} pages (home, help, about, privacy, medical cards, coverage, partners, jokes, hash myths, Weed Santa, law comparisons, 51 states, world section)')
+    print(f'Built national/: {len(built)} pages (home, help, about, privacy, medical cards, coverage, partners, jokes, hash myths, Weed Santa, Las Vegas, law comparisons, 51 states, world section)')
 
 
 if __name__ == '__main__':
