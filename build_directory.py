@@ -79,6 +79,8 @@ def mjbizcon_banner(events, today):
         f'<a href="{html.escape(MJBIZCON_PLANNER_VIEW, quote=True)}" target="_blank" rel="noopener" data-track="mjbizcon:planner-open">Open the planner →</a>'
         f'<a href="{html.escape(MJBIZCON_PLANNER_XLSX, quote=True)}" data-track="mjbizcon:planner-download">Download (.xlsx)</a>'
         f'<a href="{html.escape(event["next_step_url"], quote=True)}" target="_blank" rel="noopener" data-track="mjbizcon:event">Event site</a>'
+        # Nevada's cannabis rules for visitors: buying, where it can be used, lounges, driving and flying home (November 27, 2026).
+        '<a href="https://the-reefer.com/las-vegas.html" data-track="mjbizcon:las-vegas">Vegas cannabis rules for visitors</a>'
         '</p>'
         # The Silver Cup, the prize contest in The Reefer's pirate game for MJBizCon week (owner direction, November 26, 2026).
         '<p class="national-event-cup"><span aria-hidden="true">🏆</span> <strong>The Silver Cup</strong>: during MJBizCon week, December 1 to 4, '
