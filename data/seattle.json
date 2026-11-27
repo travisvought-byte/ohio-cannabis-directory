@@ -1,0 +1,558 @@
+{
+ "schema_version": 1,
+ "as_of": "2026-11-27",
+ "purpose": "Cannabis rules for people visiting Seattle, for national/seattle.html on the-reefer.com (built by city_guides.py through build_national.pages()). Every point names the official source it comes from; each source carries the date it was checked. No business is named; the page links the Liquor and Cannabis Board’s own map of licensed retailers instead. The Revised Code of Washington was read in a browser because a plain fetch of app.leg.wa.gov is refused. Facts that no reachable official source confirmed (a Seattle-Tacoma International Airport cannabis rule, the City of Seattle’s own public-use ordinance, a ferry rule beyond its smoking ban) are left out; the attempts are recorded below.",
+ "page": {
+  "state": "WA",
+  "state_name": "Washington",
+  "state_page": "washington.html",
+  "crumb": "Visiting Seattle",
+  "h1": "Visiting Seattle? The cannabis rules for visitors",
+  "title": "Visiting Seattle: cannabis rules for visitors (2026)",
+  "description": "Can tourists buy weed in Seattle? Yes, at 21 with a valid government-issued ID, from a state-licensed store; no residency needed. The limits, where you can and can’t use it (public places, hotels, cars, ferries, Mount Rainier) and getting home, from official sources.",
+  "adult": "For adults 21 and older. Plain summaries of Washington State and federal sources, each linked below. Not legal advice.",
+  "prefix": "sea",
+  "place": "the Seattle visitor page",
+  "business_note": "No business is named on this page; the Liquor and Cannabis Board’s own map shows licensed retailers. A link to a regulator’s list is not an endorsement of any business on it.",
+  "more": [
+   {
+    "href": "washington.html",
+    "label": "The full Washington guide",
+    "rest": ": the state’s law, record clearing and local help"
+   },
+   {
+    "href": "law-public-use.html",
+    "label": "Public use in every state",
+    "rest": ": where you can and can’t use it back home"
+   },
+   {
+    "href": "law-driving.html",
+    "label": "Driving and cannabis in every state"
+   },
+   {
+    "href": "travel-warnings.html",
+    "label": "Travel warnings",
+    "rest": ": the countries and states where any amount can land you in trouble"
+   },
+   {
+    "href": "help.html#travel",
+    "label": "Flying with cannabis",
+    "rest": ": what TSA says"
+   }
+  ]
+ },
+ "state_box": "Where visitors can and can’t use cannabis: public places, hotels, cars, ferries and federal land such as Mount Rainier, plus the limits, finding a licensed store and getting home.",
+ "glance": [
+  {
+   "icon": "id",
+   "big": "21+",
+   "text": "with a valid government-issued ID; no Washington residency needed",
+   "href": "#buy"
+  },
+  {
+   "icon": "shield",
+   "big": "Licensed only",
+   "text": "find stores on the state’s own map",
+   "href": "#licensed"
+  },
+  {
+   "icon": "scale",
+   "big": "1 oz",
+   "text": "of flower; edibles, liquids and concentrates have their own limits",
+   "href": "#limits"
+  },
+  {
+   "icon": "nosmoke",
+   "big": "Not in public",
+   "text": "including parks, sidewalks and state and federal parks",
+   "href": "#where"
+  },
+  {
+   "icon": "car",
+   "big": "Sealed, out of reach",
+   "text": "in the trunk, never the glove compartment",
+   "href": "#car"
+  },
+  {
+   "icon": "plane",
+   "big": "Stays in Washington",
+   "text": "you can’t fly with it or take it out of the state",
+   "href": "#flying"
+  }
+ ],
+ "sections": [
+  {
+   "id": "buy",
+   "icon": "id",
+   "question": "Can tourists buy weed in Seattle?",
+   "short": "Yes. You don’t need to be a Washington resident: anyone 21 or older with a valid government-issued ID can buy at a state-licensed retail store.",
+   "points": [
+    {
+     "text": "You do not need to be a Washington resident to buy cannabis, but you must be 21 or older and show a valid government-issued ID.",
+     "source_ids": [
+      "lcb-buying"
+     ]
+    },
+    {
+     "text": "Cannabis may be sold only at state-licensed stores. People under 21 are not allowed inside, and many stores accept cash only.",
+     "source_ids": [
+      "lcb-know"
+     ]
+    },
+    {
+     "text": "Visitors 21 and older may buy at a licensed store, and should use or dispose of their cannabis before leaving the state.",
+     "source_ids": [
+      "lcb-driving"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "licensed",
+   "icon": "shield",
+   "question": "How do I find a licensed cannabis store in Seattle?",
+   "short": "Use the Liquor and Cannabis Board’s map of licensed retailers. If you aren’t sure a store is licensed, you can ask to see its LCB-issued license.",
+   "points": [
+    {
+     "text": "The Liquor and Cannabis Board publishes a map of licensed cannabis retailers.",
+     "source_ids": [
+      "lcb-buying"
+     ],
+     "link": {
+      "label": "Find a licensed store on the Liquor and Cannabis Board’s map",
+      "href": "https://gis.lcb.wa.gov/portal/apps/webappviewer/index.html?id=b2cc938c7233443ea4e5d17f8a7e73fe"
+     }
+    },
+    {
+     "text": "If you are not sure a location is licensed, you can ask to see its LCB-issued license.",
+     "source_ids": [
+      "lcb-buying"
+     ]
+    },
+    {
+     "text": "Adult-use cannabis must be bought from a state-licensed retail store.",
+     "source_ids": [
+      "lcb-using"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "limits",
+   "icon": "scale",
+   "question": "How much weed can I have in Washington?",
+   "short": "Up to 1 ounce of cannabis flower. Edibles, liquids and concentrates have their own limits: 16 ounces of solid edibles, 72 ounces of infused liquids and 7 grams of concentrate.",
+   "points": [
+    {
+     "text": "Adults 21 and older may have up to 1 ounce of cannabis plant matter, 16 ounces of solid cannabis-infused edibles, 72 ounces of cannabis-infused liquids and 7 grams of cannabis concentrate.",
+     "source_ids": [
+      "lcb-using"
+     ]
+    },
+    {
+     "text": "Only adults 21 and older may have or use adult-use cannabis.",
+     "source_ids": [
+      "lcb-using",
+      "lcb-know"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "where",
+   "icon": "pin",
+   "question": "Where can you smoke weed in Seattle?",
+   "short": "Out of public view, where the property owner allows it. Opening a package of cannabis or using it in view of the public or in a public place is illegal, and that includes parks, sidewalks, restaurants, concerts and state and federal parks.",
+   "points": [
+    {
+     "text": "It is unlawful to open a package of cannabis or a cannabis product, or to consume it, in view of the general public or in a public place. It is a class 3 civil infraction.",
+     "source_ids": [
+      "rcw-445"
+     ]
+    },
+    {
+     "text": "The Liquor and Cannabis Board says the ban on public use covers places such as parks, sidewalks, restaurants, concerts and federal land, and that this includes state and federal parks.",
+     "source_ids": [
+      "lcb-using"
+     ]
+    },
+    {
+     "text": "Employers and landlords can set their own rules about cannabis.",
+     "source_ids": [
+      "lcb-using"
+     ]
+    },
+    {
+     "text": "Smoking, e-cigarettes included, is not allowed in Washington State Ferries terminals or on its vessels.",
+     "source_ids": [
+      "wsf-code"
+     ]
+    }
+   ],
+   "places": [
+    {
+     "place": "A private home, out of public view, where the owner allows it",
+     "answer": "yes",
+     "label": "Yes",
+     "source_ids": [
+      "rcw-445",
+      "lcb-using"
+     ]
+    },
+    {
+     "place": "Your hotel room",
+     "answer": "maybe",
+     "label": "Only if the hotel allows it",
+     "source_ids": [
+      "lcb-driving",
+      "lcb-using"
+     ]
+    },
+    {
+     "place": "A cannabis lounge or club",
+     "answer": "no",
+     "label": "No, Washington law bans them",
+     "source_ids": [
+      "rcw-465"
+     ]
+    },
+    {
+     "place": "Parks, sidewalks, restaurants and concerts",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "lcb-using",
+      "rcw-445"
+     ]
+    },
+    {
+     "place": "State parks",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "lcb-using"
+     ]
+    },
+    {
+     "place": "A car",
+     "answer": "no",
+     "label": "No, it must stay sealed and out of reach",
+     "source_ids": [
+      "lcb-driving"
+     ]
+    },
+    {
+     "place": "Smoking on a state ferry or in a ferry terminal",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "wsf-code"
+     ]
+    },
+    {
+     "place": "Federal land, including Mount Rainier and Olympic National Parks",
+     "answer": "no",
+     "label": "No, not even to carry it",
+     "source_ids": [
+      "lcb-using",
+      "nps-mora",
+      "nps-olym"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hotels",
+   "icon": "hotel",
+   "question": "Can I smoke weed in my Seattle hotel room?",
+   "short": "Only if the hotel allows it. The Liquor and Cannabis Board tells visitors to ask about a hotel’s policy before they go.",
+   "points": [
+    {
+     "text": "If you are visiting Washington, ask your hotel about its cannabis policy before your visit.",
+     "source_ids": [
+      "lcb-driving"
+     ]
+    },
+    {
+     "text": "Check a hotel’s policy before using cannabis there.",
+     "source_ids": [
+      "lcb-using"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lounges",
+   "icon": "lounge",
+   "question": "Is there a cannabis lounge in Seattle?",
+   "short": "No. Washington law makes it a felony to run a cannabis club, or any place open to the public where cannabis may be consumed.",
+   "points": [
+    {
+     "text": "It is unlawful to conduct or maintain a cannabis club, meaning a business with premises where cannabis is kept or consumed, or a public place where consuming cannabis is permitted. It is a class C felony.",
+     "source_ids": [
+      "rcw-465"
+     ]
+    },
+    {
+     "text": "Under that law, a public place includes any place that charges admission or is run for profit.",
+     "source_ids": [
+      "rcw-465"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "car",
+   "icon": "car",
+   "question": "Can I have weed in a car in Washington, or drive after using it?",
+   "short": "Keep it in its original sealed package, in the trunk or somewhere no one in the car can reach; the glove compartment doesn’t count. Driving high is illegal.",
+   "points": [
+    {
+     "text": "Cannabis in a vehicle must be in the trunk, or in an area the driver and passengers can’t reach, in its original package with the seal unbroken. The glove compartment is not acceptable.",
+     "source_ids": [
+      "lcb-driving",
+      "lcb-using"
+     ]
+    },
+    {
+     "text": "It is illegal to drive under the influence of cannabis. A THC level of 5 nanograms or more within two hours of driving is a DUI, and you can be found guilty of DUI whatever a test shows.",
+     "source_ids": [
+      "lcb-driving",
+      "lcb-know"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "federal-land",
+   "icon": "mountain",
+   "question": "Can I take weed to Mount Rainier or Olympic National Park?",
+   "short": "No. Having or using any amount is prohibited in Mount Rainier National Park and the national forest land around it, and the Park Service says marijuana use is prohibited on federal land throughout Washington, Olympic National Park included.",
+   "points": [
+    {
+     "text": "Mount Rainier National Park says Washington’s law has no bearing on federal law, under which marijuana is a Schedule I drug. Possession or use of any amount is prohibited in the park, its facilities, concessions and campgrounds, and on the surrounding national forest land. Penalties can reach a $5,000 fine or six months in jail.",
+     "source_ids": [
+      "nps-mora"
+     ]
+    },
+    {
+     "text": "Olympic National Park reminds visitors that marijuana use is prohibited on federal lands within Washington, including Olympic National Park.",
+     "source_ids": [
+      "nps-olym"
+     ]
+    },
+    {
+     "text": "Cannabis can’t be used on federal property, national parks included.",
+     "source_ids": [
+      "lcb-driving"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "flying",
+   "icon": "plane",
+   "question": "Can I fly home with weed from Seattle?",
+   "short": "No. It is illegal to take cannabis on a commercial aircraft, and illegal to take it out of Washington any other way, even to a state where it is legal. Use it or get rid of it before you leave.",
+   "points": [
+    {
+     "text": "It is illegal to take cannabis on a commercial aircraft.",
+     "source_ids": [
+      "lcb-driving"
+     ]
+    },
+    {
+     "text": "It is illegal to take cannabis out of Washington, even to another state where it is legal, by plane, train, boat, car or any other way.",
+     "source_ids": [
+      "lcb-driving",
+      "lcb-know"
+     ]
+    },
+    {
+     "text": "Visitors should use or dispose of their cannabis before leaving the state.",
+     "source_ids": [
+      "lcb-driving"
+     ]
+    },
+    {
+     "text": "TSA says marijuana and some cannabis products, including some CBD oil, remain illegal under federal law unless they have no more than 0.3% THC on a dry-weight basis or are FDA-approved. Its officers don’t search for drugs, but they refer anything illegal they find to law enforcement.",
+     "source_ids": [
+      "tsa-mmj"
+     ],
+     "link": {
+      "label": "Check your home state",
+      "href": "index.html#map"
+     }
+    }
+   ]
+  },
+  {
+   "id": "medical",
+   "icon": "card",
+   "question": "Does Washington accept medical cannabis cards from other states?",
+   "short": "No. A Washington medical cannabis patient must be a Washington resident, and the Department of Health says even someone moving to Washington can’t transfer patient status from another state. Visitors 21 and older can still buy at licensed stores.",
+   "points": [
+    {
+     "text": "A qualifying patient must be a Washington resident who has been diagnosed with a qualifying condition.",
+     "source_ids": [
+      "doh-patient"
+     ]
+    },
+    {
+     "text": "Someone who moves to Washington can’t transfer patient status from another state, the Department of Health says, because each state has different medical cannabis regulations.",
+     "source_ids": [
+      "doh-faq"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "edibles",
+   "icon": "clock",
+   "question": "How much of an edible should I take?",
+   "short": "Start low and go slow. The Liquor and Cannabis Board suggests starting with 2 to 5 milligrams of THC, and an edible can take up to four hours for its full effect.",
+   "points": [
+    {
+     "text": "For edibles, start with a low amount of THC, such as 2 to 5 milligrams. You may need to cut an edible into halves or quarters.",
+     "source_ids": [
+      "lcb-amount"
+     ]
+    },
+    {
+     "text": "Edibles can take up to four hours for their full effect.",
+     "source_ids": [
+      "lcb-amount"
+     ]
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "lcb-buying",
+   "title": "Buying, selling and gifting cannabis: residency, age and ID, licensed retailers",
+   "publisher": "Washington State Liquor and Cannabis Board",
+   "url": "https://lcb.wa.gov/education/buying_selling_gifting_cannabis",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "lcb-know",
+   "title": "Know the law: age, licensed stores, public use, driving and leaving the state",
+   "publisher": "Washington State Liquor and Cannabis Board",
+   "url": "https://lcb.wa.gov/education/know-the-law-cannabis",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "lcb-driving",
+   "title": "Driving and traveling with cannabis: vehicles, DUI, visitors, hotels, flying and leaving the state",
+   "publisher": "Washington State Liquor and Cannabis Board",
+   "url": "https://lcb.wa.gov/education/driving_and_traveling",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "lcb-using",
+   "title": "Using and having cannabis: age, possession limits, public use, vehicles and federal land",
+   "publisher": "Washington State Liquor and Cannabis Board",
+   "url": "https://lcb.wa.gov/education/using_and_having_cannabis",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "rcw-445",
+   "title": "RCW 69.50.445: Opening a package of or consuming cannabis in view of the general public or in a public place",
+   "publisher": "Washington State Legislature",
+   "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=69.50.445",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "rcw-465",
+   "title": "RCW 69.50.465: Conducting or maintaining a cannabis club, or a public place where cannabis consumption is permitted",
+   "publisher": "Washington State Legislature",
+   "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=69.50.465",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "wsf-code",
+   "title": "Passenger Code of Conduct",
+   "publisher": "Washington State Department of Transportation, Washington State Ferries",
+   "url": "https://wsdot.wa.gov/sites/default/files/2026-03/WSF-PassengerCodeOfConduct.pdf",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "nps-mora",
+   "title": "Mount Rainier National Park: conditions and regulations (marijuana)",
+   "publisher": "National Park Service",
+   "url": "https://www.nps.gov/mora/planyourvisit/conditions.htm",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "nps-olym",
+   "title": "Olympic Hot Springs Road opens to Boulder Creek Trailhead (news release, November 14, 2014)",
+   "publisher": "National Park Service",
+   "url": "https://home.nps.gov/olym/learn/news/olympic-hot-springs-road-opens-to-boulder-creek-trailhead.htm",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "tsa-mmj",
+   "title": "What can I bring? Medical marijuana",
+   "publisher": "Transportation Security Administration",
+   "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "doh-patient",
+   "title": "Medical cannabis: patient information",
+   "publisher": "Washington State Department of Health",
+   "url": "https://doh.wa.gov/you-and-your-family/cannabis/medical-cannabis/patient-information",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "doh-faq",
+   "title": "Medical cannabis patient information: frequently asked questions",
+   "publisher": "Washington State Department of Health",
+   "url": "https://doh.wa.gov/you-and-your-family/cannabis/medical-cannabis/patient-information/frequently-asked-questions",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "lcb-amount",
+   "title": "What is the right amount?",
+   "publisher": "Washington State Liquor and Cannabis Board",
+   "url": "https://lcb.wa.gov/education/what-is-the-right-amount",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  }
+ ],
+ "attempts": [
+  {
+   "url": "https://www.portseattle.org/sites/default/files/2024-03/Rules%20and%20Regs%20No.%205%20rev%20Eff%203-1-24.pdf",
+   "tried": "2026-11-27",
+   "result": "Read: the Port of Seattle’s Rules and Regulations No. 5 bar the possession or use of illegal substances but do not mention cannabis, and the Port’s smoking page says only that the airport is a non-smoking facility. No Seattle-Tacoma International Airport cannabis rule is stated, so none is given."
+  },
+  {
+   "url": "https://library.municode.com/wa/seattle/codes/municipal_code",
+   "tried": "2026-11-27",
+   "result": "Not retrieved: the Seattle Municipal Code site showed “Access blocked” in a browser. No City of Seattle ordinance is cited; the state law on public use is."
+  },
+  {
+   "url": "https://app.leg.wa.gov/billsummary?BillNumber=1932&Year=2025",
+   "tried": "2026-11-27",
+   "result": "Read: HB 1932 (2025-26), which would have allowed licensed cannabis consumption events, was referred to Appropriations on February 3, 2026 and was not enacted. Not cited."
+  },
+  {
+   "url": "https://doh.wa.gov/you-and-your-family/cannabis/medical-cannabis",
+   "tried": "2026-11-27",
+   "result": "Read: says nothing about patients from other states beyond the patient pages cited."
+  }
+ ]
+}

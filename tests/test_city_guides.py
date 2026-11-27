@@ -1,6 +1,7 @@
-"""The Denver, Chicago, New York City, Los Angeles, Detroit and Boston visitor guides (city_guides.py): every point cites a listed primary source
-with a checked date, the FAQ data matches the questions shown, yes/no answers are shown in words as well as symbols,
-no business or phone number is named, and each state page and the home page link the guide."""
+"""The Denver, Chicago, New York City, Los Angeles, Detroit, Boston, Seattle, Phoenix and Miami visitor guides (city_guides.py): every
+point cites a listed primary source with a checked date, the FAQ data matches the questions shown, yes/no answers are shown in words as
+well as symbols, no business or phone number is named, and each state page and the home page link the guide. Miami, in a medical-only
+state, says first that visitors can't buy there, and its yes/no table answers for a registered Florida patient."""
 import json
 import re
 import sys
@@ -16,7 +17,8 @@ import city_guides  # noqa: E402
 
 LANDING = build_national.load_landing()['national_pages']
 STATE_PAGE = {'denver.html': 'colorado.html', 'chicago.html': 'illinois.html', 'new-york-city.html': 'new-york.html',
-              'los-angeles.html': 'california.html', 'detroit.html': 'michigan.html', 'boston.html': 'massachusetts.html'}
+              'los-angeles.html': 'california.html', 'detroit.html': 'michigan.html', 'boston.html': 'massachusetts.html',
+              'seattle.html': 'washington.html', 'phoenix.html': 'arizona.html', 'miami.html': 'florida.html'}
 CHECKED = '2026-11-27'
 
 
@@ -30,9 +32,10 @@ def build(name, origin=''):
 
 
 class CityGuides(unittest.TestCase):
-    def test_the_six_guides_are_registered(self):
+    def test_the_nine_guides_are_registered(self):
         self.assertEqual(list(city_guides.GUIDES), ['denver.html', 'chicago.html', 'new-york-city.html',
-                                                    'los-angeles.html', 'detroit.html', 'boston.html'])
+                                                    'los-angeles.html', 'detroit.html', 'boston.html',
+                                                    'seattle.html', 'phoenix.html', 'miami.html'])
         for name in city_guides.GUIDES:
             self.assertIn(name, LANDING, f'{name}: no opening line in data/landing-pages.json')
             self.assertEqual(city_guides.load(name)['page']['state_page'], STATE_PAGE[name])
@@ -48,6 +51,9 @@ class CityGuides(unittest.TestCase):
                 for p in s['points'] + s.get('places', []):
                     self.assertTrue(p['source_ids'], f'{name} {s["id"]}: a point without a source')
                     used.update(p['source_ids'])
+            if d['page'].get('status'):
+                self.assertTrue(d['page']['status']['source_ids'], f'{name}: a status notice without a source')
+                used.update(d['page']['status']['source_ids'])
             self.assertEqual(used - set(ids), set(), f'{name}: cited but not listed')
             self.assertEqual(set(ids) - used, set(), f'{name}: listed but never cited')
             for src in d['sources']:
@@ -93,7 +99,8 @@ class CityGuides(unittest.TestCase):
             self.assertIn('assets/analytics.js', page)
             for s in d['sections']:
                 self.assertIn(f'<h2 id="{s["id"]}-h">', page)
-            self.assertIn('<th scope="col">Place</th><th scope="col">Allowed?</th>', page)
+            header = build_national.esc(d['page'].get('places_header', 'Allowed?'))
+            self.assertIn(f'<th scope="col">Place</th><th scope="col">{header}</th>', page)
             for s in d['sections']:
                 for r in s.get('places', []):
                     self.assertIn(r['answer'], city_guides.MARK)
@@ -115,6 +122,38 @@ class CityGuides(unittest.TestCase):
         page = build('new-york-city.html')
         self.assertIn('href="https://cannabis.ny.gov/dispensary-location-verification">Check a store on the state’s list of licensed dispensaries</a>', page)
         self.assertIn('only from a dispensary licensed by New York State’s Office of Cannabis Management', page)
+
+    def test_miami_says_first_that_florida_is_medical_only(self):
+        d, page = city_guides.load('miami.html'), build('miami.html')
+        status = page.index('<section class="lv-status" aria-labelledby="miastatus-h"><h2 id="miastatus-h">')
+        self.assertLess(page.index('For adults 21 and older'), status)
+        self.assertLess(status, page.index('<ul class="lv-glance"'))
+        self.assertIn('Florida allows medical marijuana only</h2>', page)
+        self.assertIn('Visitors can’t buy marijuana in Florida.', page)
+        self.assertIn('doesn’t accept medical marijuana cards from other states', page)
+        self.assertIn('.lv-status{', page)
+        buy = next(s for s in d['sections'] if s['id'] == 'buy')
+        self.assertTrue(buy['short'].startswith('No. Florida has no adult-use sales.'))
+        self.assertIn('a visitor without a Florida medical card can’t buy marijuana anywhere in the state', buy['short'])
+        # The yes/no table answers for a registered patient, and says so in its caption and column header.
+        self.assertIn('<caption>Where can a registered Florida patient use medical marijuana?</caption>', page)
+        self.assertIn('<th scope="col">Allowed for a registered patient?</th>', page)
+        self.assertNotIn('<caption>Can you use cannabis here?</caption>', page)
+        self.assertNotIn('"yes"', json.dumps([r['answer'] for s in d['sections'] for r in s.get('places', [])]))
+        for section in ('medical', 'possession', 'hemp'):
+            self.assertIn(f'<h2 id="{section}-h">', page)
+        self.assertIn('href="https://knowthefactsmmj.com/mmtc/">See the licensed treatment centers on the Office of Medical Marijuana Use’s list</a>', page)
+
+    def test_other_guides_keep_the_plain_table_and_no_status_notice(self):
+        for name in city_guides.GUIDES:
+            if name == 'miami.html':
+                continue
+            page, p = build(name), city_guides.load(name)['page']
+            for key in ('status', 'places_caption', 'places_header'):
+                self.assertNotIn(key, p, name)
+            self.assertNotIn('lv-status', page, name)
+            self.assertIn('<caption>Can you use cannabis here?</caption>', page, name)
+            self.assertIn('<th scope="col">Place</th><th scope="col">Allowed?</th>', page, name)
 
     def test_linked_from_state_pages_and_home_after_las_vegas(self):
         pages = build_national.pages()

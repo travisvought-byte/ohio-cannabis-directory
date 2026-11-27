@@ -7,8 +7,12 @@ official source and the date it was checked; no business appears except as a reg
 
 render() draws any guide. las_vegas.py uses it with its own extras (the MJBizCon-week box and the Nevada
 flower-and-products chart). The other cities are plain data: data/denver.json, data/chicago.json,
-data/new-york-city.json, data/los-angeles.json, data/detroit.json and data/boston.json, each with a "page" block
-that names the page, its state and its "Where to go next" links.
+data/new-york-city.json, data/los-angeles.json, data/detroit.json, data/boston.json, data/seattle.json,
+data/phoenix.json and data/miami.json, each with a "page" block that names the page, its state and its
+"Where to go next" links.
+A state with no adult-use sales (Florida, for Miami) needs the page to say so before anything else. Its "page" block
+can add a "status" notice (heading, text, source_ids) shown under the adults-21+ line, and "places_caption" and
+"places_header" to reword the yes/no table; guides without them render exactly as before.
 All of them are built through build_national.pages(), so they share the national page shell.
 """
 import json
@@ -24,6 +28,9 @@ GUIDES = {
     'los-angeles.html': ROOT / 'data/los-angeles.json',
     'detroit.html': ROOT / 'data/detroit.json',
     'boston.html': ROOT / 'data/boston.json',
+    'seattle.html': ROOT / 'data/seattle.json',
+    'phoenix.html': ROOT / 'data/phoenix.json',
+    'miami.html': ROOT / 'data/miami.json',
 }
 
 # Line icons, decorative only (aria-hidden): every icon sits next to text that says the same thing.
@@ -76,6 +83,11 @@ CSS = ('.lv-sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;over
        '.yn.yes{background:rgba(46,125,79,.25);color:#a3e2bb}.yn.no{background:rgba(169,0,0,.25);color:#f3b0a6;border-color:#d0645a}'
        '.yn.maybe{background:rgba(184,134,11,.22);color:#f1d48a}.lv-mix .bar{background:#58a878}}'
        '@media print{.lv-show{display:none}}')
+# Only on a page with a "status" notice (a medical-only state), so the other guides' styles stay as they were.
+STATUS_CSS = ('.lv-status{background:var(--card);color:var(--ink);border:2px solid #a90000;border-left-width:6px;border-radius:14px;padding:12px 18px;margin:16px 0;max-width:820px}'
+              '.lv-status h2{margin:.1em 0 .3em;font-size:1.25rem;display:flex;align-items:center;gap:10px}.lv-status h2 .mi{width:36px;height:36px}'
+              '.lv-status p{margin:.3em 0;max-width:72ch}'
+              '@media (prefers-color-scheme:dark){.lv-status{border-color:#d0645a}}')
 
 
 def svg(name):
@@ -90,7 +102,8 @@ def load(name):
 def render(nat, d, intro, cfg, top='', after_section=None):
     """One visitor guide. d is the guide's data (glance, sections, sources); cfg names the page:
     name, state_name, state_page, crumb, h1, title, description, adult, prefix, place, more [(href, label, rest)]
-    and business_note. top is HTML placed after the tiles; after_section(section, mark) adds HTML inside a section."""
+    and business_note, plus the optional status {heading, text, source_ids, icon}, places_caption and places_header
+    for a medical-only state. top is HTML placed after the tiles; after_section(section, mark) adds HTML inside a section."""
     esc = nat.esc
     name, prefix = cfg['name'], cfg['prefix']
     srcs = {s['id']: s for s in d['sources']}
@@ -113,6 +126,13 @@ def render(nat, d, intro, cfg, top='', after_section=None):
     body = [f'<p class="crumbs"><a href="index.html">Home</a> › <a href="{esc(cfg["state_page"])}">{esc(cfg["state_name"])}</a> › {esc(cfg["crumb"])}</p>',
             f'<h1>{esc(cfg["h1"])}</h1>', nat.for_you(esc(intro)),
             f'<p class="lv-adult"><span class="age" aria-hidden="true">21+</span><span>{esc(cfg["adult"])}</span></p>']
+    status = cfg.get('status')
+    if status:
+        body.append(f'<section class="lv-status" aria-labelledby="{prefix}status-h"><h2 id="{prefix}status-h">'
+                    f'<span class="mi">{svg(status.get("icon", "card"))}</span>{esc(status["heading"])}</h2>'
+                    f'<p>{esc(status["text"])}{mark(status["source_ids"])}</p></section>')
+    caption = cfg.get('places_caption', 'Can you use cannabis here?')
+    header = cfg.get('places_header', 'Allowed?')
     body.append('<ul class="lv-glance" aria-label="The rules at a glance">' + ''.join(
         f'<li><a href="{esc(g["href"])}"><span class="mi">{svg(g["icon"])}</span><span><strong>{esc(g["big"])}</strong>'
         f'<span class="t">{esc(g["text"])}</span></span></a></li>' for g in d['glance']) + '</ul>')
@@ -129,8 +149,8 @@ def render(nat, d, intro, cfg, top='', after_section=None):
         if after_section:
             body.append(after_section(s, mark))
         if s.get('places'):
-            body.append('<div class="scroll"><table class="lv-places"><caption>Can you use cannabis here?</caption>'
-                        '<thead><tr><th scope="col">Place</th><th scope="col">Allowed?</th></tr></thead><tbody>'
+            body.append(f'<div class="scroll"><table class="lv-places"><caption>{esc(caption)}</caption>'
+                        f'<thead><tr><th scope="col">Place</th><th scope="col">{esc(header)}</th></tr></thead><tbody>'
                         + ''.join(f'<tr><th scope="row">{esc(r["place"])}</th><td class="a"><span class="yn {esc(r["answer"])}">'
                                   f'{svg(MARK[r["answer"]])}{esc(r["label"])}</span>{mark(r["source_ids"])}</td></tr>' for r in s['places'])
                         + '</tbody></table></div>')
@@ -152,11 +172,12 @@ def render(nat, d, intro, cfg, top='', after_section=None):
     if nat.ORIGIN:
         ld.append({'@type': 'FAQPage', '@id': nat.page_url(name) + '#faq', 'url': nat.page_url(name),
                    'isPartOf': {'@id': nat.ORIGIN + '/#website'}, 'mainEntity': faq})
-    return nat.shell(cfg['title'], cfg['description'], ''.join(body), name, cfg['place'], ld=ld, css=CSS)
+    return nat.shell(cfg['title'], cfg['description'], ''.join(body), name, cfg['place'], ld=ld,
+                     css=CSS + (STATUS_CSS if status else ''))
 
 
 def page(nat, name, landing):
-    """A data-only city guide (Denver, Chicago, New York City)."""
+    """A data-only city guide (every city in GUIDES)."""
     d = load(name)
     p = d['page']
     cfg = dict(p, name=name, more=[(m['href'], m['label'], m.get('rest', '')) for m in p['more']])

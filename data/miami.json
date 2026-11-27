@@ -1,0 +1,534 @@
+{
+ "schema_version": 1,
+ "as_of": "2026-11-27",
+ "purpose": "Cannabis rules for people visiting Miami, for national/miami.html on the-reefer.com (built by city_guides.py through build_national.pages()). Florida allows medical marijuana only, so this page leads with that: visitors cannot buy at a medical marijuana treatment center without a Florida registry card, Florida accepts no other state’s card, and possession without one is a crime under Florida law. Its \"status\" notice and reworded yes/no table (places_caption, places_header) say so; the table answers for a registered Florida patient, because a visitor without a card has no lawful place to use it. Every point names the official source it comes from (the 2026 Florida Statutes on the Florida Senate’s site, the Office of Medical Marijuana Use, the National Park Service and TSA); each source carries the date it was checked. No business is named; the page links the Office of Medical Marijuana Use’s own list of licensed treatment centers instead. Facts that no reachable official source confirmed (hotel rules, fine amounts under s. 775.083, the Department of Agriculture’s own hemp guidance, rules naming Everglades or Biscayne National Park) are left out; the attempts are recorded below.",
+ "page": {
+  "state": "FL",
+  "state_name": "Florida",
+  "state_page": "florida.html",
+  "crumb": "Visiting Miami",
+  "h1": "Visiting Miami? The cannabis rules for visitors",
+  "title": "Visiting Miami: cannabis rules for visitors (2026)",
+  "description": "Can tourists buy weed in Miami? No. Florida allows medical marijuana only, for registered Florida patients, and doesn’t accept out-of-state cards. Possession without a card, hemp and CBD, where patients can use it, federal land and flying, from official sources.",
+  "adult": "For adults 21 and older. Plain summaries of Florida and federal sources, each linked below. Not legal advice.",
+  "prefix": "mia",
+  "place": "the Miami visitor page",
+  "business_note": "No business is named on this page; the Office of Medical Marijuana Use’s own list names the licensed medical marijuana treatment centers. A link to a regulator’s list is not an endorsement of any business on it.",
+  "status": {
+   "icon": "card",
+   "heading": "Florida allows medical marijuana only",
+   "text": "Visitors can’t buy marijuana in Florida. Only Florida residents on the state’s Medical Marijuana Use Registry, or their caregivers, can buy it, at a licensed medical marijuana treatment center, and Florida doesn’t accept medical marijuana cards from other states.",
+   "source_ids": [
+    "ommu-faq",
+    "fl-381986"
+   ]
+  },
+  "places_caption": "Where can a registered Florida patient use medical marijuana?",
+  "places_header": "Allowed for a registered patient?",
+  "more": [
+   {
+    "href": "florida.html",
+    "label": "The full Florida guide",
+    "rest": ": getting a Florida medical card, where patients buy and record sealing"
+   },
+   {
+    "href": "medical.html",
+    "label": "Getting a medical cannabis card, state by state"
+   },
+   {
+    "href": "law-public-use.html",
+    "label": "Public use in every state",
+    "rest": ": where you can and can’t use it back home"
+   },
+   {
+    "href": "law-driving.html",
+    "label": "Driving and cannabis in every state"
+   },
+   {
+    "href": "travel-warnings.html",
+    "label": "Travel warnings",
+    "rest": ": the countries and states where any amount can land you in trouble"
+   },
+   {
+    "href": "help.html#travel",
+    "label": "Flying with cannabis",
+    "rest": ": what TSA says"
+   }
+  ]
+ },
+ "state_box": "Florida allows medical marijuana only. Why visitors can’t buy, what having it without a Florida card means, hemp and CBD, where patients can use it, federal land and flying home.",
+ "glance": [
+  {
+   "icon": "x",
+   "big": "No sales to visitors",
+   "text": "only registered Florida patients and caregivers can buy",
+   "href": "#buy"
+  },
+  {
+   "icon": "card",
+   "big": "No out-of-state cards",
+   "text": "Florida doesn’t offer reciprocity",
+   "href": "#medical"
+  },
+  {
+   "icon": "scale",
+   "big": "A crime without a card",
+   "text": "even 20 grams or less is a misdemeanor",
+   "href": "#possession"
+  },
+  {
+   "icon": "store",
+   "big": "Hemp: 21+",
+   "text": "for hemp extract you eat, drink or inhale",
+   "href": "#hemp"
+  },
+  {
+   "icon": "nosmoke",
+   "big": "Not in public",
+   "text": "not even for registered patients",
+   "href": "#where"
+  },
+  {
+   "icon": "plane",
+   "big": "Not on the plane",
+   "text": "TSA: marijuana is illegal under federal law",
+   "href": "#flying"
+  }
+ ],
+ "sections": [
+  {
+   "id": "buy",
+   "icon": "id",
+   "question": "Can tourists buy weed in Miami?",
+   "short": "No. Florida has no adult-use sales. Medical marijuana treatment centers dispense only to qualified Florida patients and their caregivers, so a visitor without a Florida medical card can’t buy marijuana anywhere in the state.",
+   "points": [
+    {
+     "text": "Only licensed medical marijuana treatment centers can sell medical marijuana, and they may provide it only to a qualified patient or caregiver. It may not be bought anywhere else.",
+     "source_ids": [
+      "ommu-faq"
+     ]
+    },
+    {
+     "text": "The Office of Medical Marijuana Use says Florida’s licensed treatment centers dispense only to qualified Florida patients.",
+     "source_ids": [
+      "ommu-faq"
+     ]
+    },
+    {
+     "text": "Under Florida law, a qualified patient is a Florida resident whom a qualified physician has added to the Medical Marijuana Use Registry and who holds a registry identification card.",
+     "source_ids": [
+      "fl-381986"
+     ]
+    },
+    {
+     "text": "Before dispensing, a treatment center must confirm that the patient has an active registration in the registry and an active identification card.",
+     "source_ids": [
+      "fl-381986"
+     ]
+    },
+    {
+     "text": "Cannabis remains a Schedule I substance under both Florida and federal law.",
+     "source_ids": [
+      "ommu-faq"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "medical",
+   "icon": "card",
+   "question": "Does Florida accept out-of-state medical marijuana cards?",
+   "short": "No. Florida does not offer reciprocity, so a medical card from another state doesn’t make you a Florida patient. Florida’s registry is for Florida residents, seasonal residents included.",
+   "points": [
+    {
+     "text": "The Office of Medical Marijuana Use says the state of Florida does not offer reciprocity.",
+     "source_ids": [
+      "ommu-faq"
+     ]
+    },
+    {
+     "text": "To register as a patient, a person must prove Florida residency with a valid Florida driver license or identification card. A seasonal resident can instead show two documents with a Florida address.",
+     "source_ids": [
+      "fl-381986"
+     ]
+    },
+    {
+     "text": "A seasonal resident is someone who lives in Florida at least 31 days in a row each calendar year, keeps a temporary home there, returns to their home state at least once a year and is registered to vote or pays income tax in another state.",
+     "source_ids": [
+      "fl-381986"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "possession",
+   "icon": "scale",
+   "question": "What happens if a visitor has weed in Florida without a card?",
+   "short": "It’s a crime under Florida law. Having 20 grams of cannabis or less is a first-degree misdemeanor, punishable by up to a year in jail. More than that is a third-degree felony, punishable by up to five years, and the 20-gram rule doesn’t cover resin extracted from the plant or anything made from it.",
+   "points": [
+    {
+     "text": "Possessing 20 grams or less of cannabis is a first-degree misdemeanor. For this rule, cannabis does not include resin extracted from the plant or any derivative, mixture or preparation of that resin.",
+     "source_ids": [
+      "fl-893-13"
+     ]
+    },
+    {
+     "text": "Otherwise, possessing a controlled substance that was not lawfully obtained or authorized is a third-degree felony.",
+     "source_ids": [
+      "fl-893-13"
+     ]
+    },
+    {
+     "text": "A first-degree misdemeanor can be punished by up to one year in jail, and a third-degree felony by up to five years in prison.",
+     "source_ids": [
+      "fl-775-082"
+     ]
+    },
+    {
+     "text": "Handing someone 20 grams of cannabis or less without payment is also a first-degree misdemeanor.",
+     "source_ids": [
+      "fl-893-13"
+     ]
+    },
+    {
+     "text": "A police officer may arrest someone for cannabis possession without a warrant when there is probable cause.",
+     "source_ids": [
+      "fl-893-13"
+     ]
+    },
+    {
+     "text": "Florida’s medical marijuana law protects only registered patients and their caregivers who buy from a treatment center and stay within the authorized amount, with everything kept in its original packaging.",
+     "source_ids": [
+      "fl-381986"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hemp",
+   "icon": "store",
+   "question": "Are hemp and CBD products legal in Florida?",
+   "short": "Under Florida law, yes, if they meet the state’s hemp rules. Hemp-derived cannabinoids, CBD included, are not controlled substances when they comply with Florida’s hemp law, and hemp extract you eat, drink or inhale can’t be sold to anyone under 21. This answer covers Florida law only.",
+   "points": [
+    {
+     "text": "Hemp-derived cannabinoids, including CBD, are not controlled substances or adulterants if they comply with Florida’s hemp law.",
+     "source_ids": [
+      "fl-581-217"
+     ]
+    },
+    {
+     "text": "Hemp means the plant, or anything made from it, with a total delta-9 THC concentration of no more than 0.3 percent on a dry-weight basis.",
+     "source_ids": [
+      "fl-581-217"
+     ]
+    },
+    {
+     "text": "Products for eating, drinking or inhaling that contain hemp extract may not be sold to anyone under 21.",
+     "source_ids": [
+      "fl-581-217"
+     ]
+    },
+    {
+     "text": "Hemp extract may be sold only with a certificate of analysis from an independent lab, and its label must carry a QR code or barcode, the batch number, a website, an expiration date and the milligrams per serving.",
+     "source_ids": [
+      "fl-581-217"
+     ]
+    },
+    {
+     "text": "Mislabeled hemp products, and products attractive to children, are subject to an immediate stop-sale order.",
+     "source_ids": [
+      "fl-581-217"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "where",
+   "icon": "pin",
+   "question": "Where can medical marijuana be used in Florida?",
+   "short": "Only a registered Florida patient may use it at all. Even patients may not use it in a public place, on public transportation or in a vehicle, boat or aircraft, apart from low-THC cannabis that isn’t smoked, and not on school grounds or at work without the employer’s permission.",
+   "points": [
+    {
+     "text": "Florida’s definition of medical use does not include using marijuana on any form of public transportation, in any public place, or in a school bus, vehicle, aircraft or motorboat, except for low-THC cannabis not in a form for smoking.",
+     "source_ids": [
+      "fl-381986"
+     ]
+    },
+    {
+     "text": "It also does not include use at the patient’s place of employment unless the employer permits it, use in a correctional institution, or use on the grounds of a preschool, primary school or secondary school, except as Florida’s school law provides.",
+     "source_ids": [
+      "fl-381986"
+     ]
+    },
+    {
+     "text": "Smoking marijuana in an enclosed indoor workplace is not medical use.",
+     "source_ids": [
+      "fl-381986"
+     ]
+    },
+    {
+     "text": "A registered patient who uses marijuana, other than low-THC cannabis, in plain view of or in a place open to the general public, in a vehicle, aircraft or boat, or on school grounds commits a first-degree misdemeanor.",
+     "source_ids": [
+      "fl-381986"
+     ]
+    },
+    {
+     "text": "Marijuana that was not bought or obtained from a licensed treatment center is never medical use.",
+     "source_ids": [
+      "fl-381986"
+     ]
+    }
+   ],
+   "places": [
+    {
+     "place": "A public place",
+     "answer": "no",
+     "label": "No, except low-THC cannabis that isn’t smoked",
+     "source_ids": [
+      "fl-381986"
+     ]
+    },
+    {
+     "place": "Public transportation",
+     "answer": "no",
+     "label": "No, except low-THC cannabis that isn’t smoked",
+     "source_ids": [
+      "fl-381986"
+     ]
+    },
+    {
+     "place": "A car, aircraft or motorboat",
+     "answer": "no",
+     "label": "No, except low-THC cannabis that isn’t smoked",
+     "source_ids": [
+      "fl-381986"
+     ]
+    },
+    {
+     "place": "The patient’s workplace",
+     "answer": "maybe",
+     "label": "Only if the employer permits it",
+     "source_ids": [
+      "fl-381986"
+     ]
+    },
+    {
+     "place": "Smoking in an enclosed indoor workplace",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "fl-381986"
+     ]
+    },
+    {
+     "place": "School grounds, preschool through high school",
+     "answer": "no",
+     "label": "No, except as Florida’s school law provides",
+     "source_ids": [
+      "fl-381986"
+     ]
+    },
+    {
+     "place": "Federal land, including national parks",
+     "answer": "no",
+     "label": "No, not even to carry it",
+     "source_ids": [
+      "nps-mj"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "car",
+   "icon": "car",
+   "question": "Can I have weed in a car in Florida, or drive after using it?",
+   "short": "Not without a Florida card, since having it is a crime. Registered patients must keep what they buy in its original packaging and may not use it in a vehicle, apart from low-THC cannabis that isn’t smoked. Driving while marijuana impairs you is DUI.",
+   "points": [
+    {
+     "text": "Everything a registered patient buys must stay in its original packaging.",
+     "source_ids": [
+      "fl-381986"
+     ]
+    },
+    {
+     "text": "Using marijuana in a vehicle, aircraft or motorboat is not medical use under Florida law, except for low-THC cannabis not in a form for smoking.",
+     "source_ids": [
+      "fl-381986"
+     ]
+    },
+    {
+     "text": "Driving under the influence of a substance controlled under Florida’s drug law, marijuana included, to the extent that your normal faculties are impaired is DUI.",
+     "source_ids": [
+      "fl-316-193"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "federal-land",
+   "icon": "mountain",
+   "question": "Can I take weed to Everglades or Biscayne National Park?",
+   "short": "No. The National Park Service says possessing or using marijuana inside any of its parks, preserves, rivers or monuments is prohibited, because it remains illegal under federal law.",
+   "points": [
+    {
+     "text": "Possession or use of marijuana inside a National Park Service unit, including parks, preserves, rivers and monuments, is prohibited. Marijuana remains illegal under federal law.",
+     "source_ids": [
+      "nps-mj"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "flying",
+   "icon": "plane",
+   "question": "Can I fly with medical marijuana from Miami?",
+   "short": "Not legally. TSA says marijuana remains illegal under federal law, and Florida’s own law leaves using it on an aircraft out of medical use. Florida patients going to another state should check that state’s rules.",
+   "points": [
+    {
+     "text": "TSA says marijuana and some cannabis products, including some CBD oil, remain illegal under federal law unless they have no more than 0.3% THC on a dry-weight basis or are FDA-approved. Its officers don’t search for drugs, but they refer anything illegal they find to law enforcement.",
+     "source_ids": [
+      "tsa-mmj"
+     ],
+     "link": {
+      "label": "Check your home state",
+      "href": "index.html#map"
+     }
+    },
+    {
+     "text": "Using marijuana on an aircraft is not medical use under Florida law, except for low-THC cannabis not in a form for smoking.",
+     "source_ids": [
+      "fl-381986"
+     ]
+    },
+    {
+     "text": "Florida patients traveling to another state where medical marijuana is legal need to contact that state about its laws on reciprocity, the Office of Medical Marijuana Use says.",
+     "source_ids": [
+      "ommu-faq"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "licensed",
+   "icon": "shield",
+   "question": "Where do registered patients buy medical marijuana in Florida?",
+   "short": "Only at a licensed medical marijuana treatment center. The Office of Medical Marijuana Use lists the licensed centers and has a search for their dispensing locations.",
+   "points": [
+    {
+     "text": "Licensed medical marijuana treatment centers are the only businesses in Florida authorized to dispense medical marijuana and low-THC cannabis to qualified patients and caregivers.",
+     "source_ids": [
+      "ommu-mmtc"
+     ],
+     "link": {
+      "label": "See the licensed treatment centers on the Office of Medical Marijuana Use’s list",
+      "href": "https://knowthefactsmmj.com/mmtc/"
+     }
+    },
+    {
+     "text": "Patients and caregivers must show their Medical Marijuana Use Registry identification card to get medical marijuana.",
+     "source_ids": [
+      "ommu-faq"
+     ]
+    },
+    {
+     "text": "A treatment center may not dispense to a patient under 18; only the patient’s caregiver may buy for them.",
+     "source_ids": [
+      "fl-381986",
+      "ommu-faq"
+     ]
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "ommu-faq",
+   "title": "Frequently asked questions: reciprocity, where to buy, the registry identification card",
+   "publisher": "Florida Department of Health, Office of Medical Marijuana Use",
+   "url": "https://knowthefactsmmj.com/about/faq/",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "fl-381986",
+   "title": "Section 381.986, Florida Statutes (2026): medical use of marijuana",
+   "publisher": "The Florida Senate (Florida Statutes)",
+   "url": "https://www.flsenate.gov/Laws/Statutes/2026/381.986",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "fl-893-13",
+   "title": "Section 893.13, Florida Statutes (2026): prohibited acts; penalties",
+   "publisher": "The Florida Senate (Florida Statutes)",
+   "url": "https://www.flsenate.gov/Laws/Statutes/2026/893.13",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "fl-775-082",
+   "title": "Section 775.082, Florida Statutes (2026): penalties for misdemeanors and felonies",
+   "publisher": "The Florida Senate (Florida Statutes)",
+   "url": "https://www.flsenate.gov/Laws/Statutes/2026/775.082",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "fl-581-217",
+   "title": "Section 581.217, Florida Statutes (2026): state hemp program",
+   "publisher": "The Florida Senate (Florida Statutes)",
+   "url": "https://www.flsenate.gov/Laws/Statutes/2026/581.217",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "nps-mj",
+   "title": "Marijuana and other substances: possession or use in National Park Service units (Bering Land Bridge National Preserve page)",
+   "publisher": "National Park Service",
+   "url": "https://www.nps.gov/bela/learn/management/marijuana.htm",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "fl-316-193",
+   "title": "Section 316.193, Florida Statutes (2026): driving under the influence",
+   "publisher": "The Florida Senate (Florida Statutes)",
+   "url": "https://www.flsenate.gov/Laws/Statutes/2026/316.193",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "tsa-mmj",
+   "title": "What can I bring? Medical marijuana",
+   "publisher": "Transportation Security Administration",
+   "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "ommu-mmtc",
+   "title": "Medical Marijuana Treatment Centers: licensed centers and dispensing locations",
+   "publisher": "Florida Department of Health, Office of Medical Marijuana Use",
+   "url": "https://knowthefactsmmj.com/mmtc/",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  }
+ ],
+ "attempts": [
+  {
+   "url": "https://www.fdacs.gov/Business-Services/Hemp",
+   "tried": "2026-11-27",
+   "result": "Not retrieved: the Florida Department of Agriculture and Consumer Services hemp page loaded with no content in a browser. The hemp answer relies on section 581.217 instead."
+  },
+  {
+   "url": "https://knowthefactsmmj.com/faqs/",
+   "tried": "2026-11-27",
+   "result": "Read: showed no questions and answers; the Office of Medical Marijuana Use’s FAQ at /about/faq/ is cited instead."
+  },
+  {
+   "url": "https://www.ecfr.gov/current/title-36/chapter-I/part-2/section-2.35",
+   "tried": "2026-11-27",
+   "result": "Read in a browser: 36 CFR 2.35(b)(2) bars possessing a controlled substance in park areas unless it was obtained from a practitioner or is “otherwise allowed by Federal or State law”. Not cited, because the Park Service’s own statement on marijuana is plainer."
+  }
+ ]
+}

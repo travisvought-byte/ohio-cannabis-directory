@@ -1,0 +1,489 @@
+{
+ "schema_version": 1,
+ "as_of": "2026-11-27",
+ "purpose": "Cannabis rules for people visiting Phoenix, for national/phoenix.html on the-reefer.com (built by city_guides.py through build_national.pages()). Every point names the official source it comes from; each source carries the date it was checked. No business is named; the page links the Arizona Department of Health Services’ AZ Care Check lookup instead. The Department’s FAQ answers were read in a browser, where they open one at a time. Facts that no reachable official source confirmed (a Phoenix Sky Harbor cannabis rule, a Grand Canyon rule beyond the Park Service’s service-wide statement, whether any lounge may operate, an Arizona rule on how cannabis must be packed in a car, edible dosing advice) are left out; the attempts are recorded below.",
+ "page": {
+  "state": "AZ",
+  "state_name": "Arizona",
+  "state_page": "arizona.html",
+  "crumb": "Visiting Phoenix",
+  "h1": "Visiting Phoenix? The cannabis rules for visitors",
+  "title": "Visiting Phoenix: cannabis rules for visitors (2026)",
+  "description": "Can tourists buy weed in Phoenix? Yes, at 21 with an accepted ID, from a licensed marijuana establishment. The 1-ounce limit, where you can and can’t use it (public places, hotels, cars, Grand Canyon), out-of-state medical cards and flying home, from official sources.",
+  "adult": "For adults 21 and older. Plain summaries of Arizona and federal sources, each linked below. Not legal advice.",
+  "prefix": "phx",
+  "place": "the Phoenix visitor page",
+  "business_note": "No business is named on this page; the Arizona Department of Health Services’ AZ Care Check lists licensed marijuana facilities. A link to a regulator’s list is not an endorsement of any business on it.",
+  "more": [
+   {
+    "href": "arizona.html",
+    "label": "The full Arizona guide",
+    "rest": ": the state’s law, record clearing and local help"
+   },
+   {
+    "href": "law-public-use.html",
+    "label": "Public use in every state",
+    "rest": ": where you can and can’t use it back home"
+   },
+   {
+    "href": "law-driving.html",
+    "label": "Driving and cannabis in every state"
+   },
+   {
+    "href": "travel-warnings.html",
+    "label": "Travel warnings",
+    "rest": ": the countries and states where any amount can land you in trouble"
+   },
+   {
+    "href": "help.html#travel",
+    "label": "Flying with cannabis",
+    "rest": ": what TSA says"
+   }
+  ]
+ },
+ "state_box": "Where visitors can and can’t use cannabis: public places, hotels, cars and Grand Canyon National Park, plus the 1-ounce limit, checking a store’s license, out-of-state medical cards and getting home.",
+ "glance": [
+  {
+   "icon": "id",
+   "big": "21+",
+   "text": "with an accepted ID, such as any state’s driver license or a passport",
+   "href": "#buy"
+  },
+  {
+   "icon": "shield",
+   "big": "Licensed only",
+   "text": "check a store on the state’s AZ Care Check",
+   "href": "#licensed"
+  },
+  {
+   "icon": "scale",
+   "big": "1 oz",
+   "text": "of which no more than 5 g can be concentrate",
+   "href": "#limits"
+  },
+  {
+   "icon": "nosmoke",
+   "big": "Not in public",
+   "text": "no smoking in a public place or open space",
+   "href": "#where"
+  },
+  {
+   "icon": "card",
+   "big": "Out-of-state cards count",
+   "text": "but not to buy at a medical dispensary",
+   "href": "#medical"
+  },
+  {
+   "icon": "mountain",
+   "big": "Not in the Grand Canyon",
+   "text": "or any other national park",
+   "href": "#federal-land"
+  }
+ ],
+ "sections": [
+  {
+   "id": "buy",
+   "icon": "id",
+   "question": "Can tourists buy weed in Phoenix?",
+   "short": "Yes. Adults 21 and older can buy adult-use marijuana from a licensed marijuana establishment. The store checks your age against an accepted ID, which includes a driver license from any state and a passport.",
+   "points": [
+    {
+     "text": "Adults 21 and older may buy adult-use marijuana from a licensed marijuana establishment, and only licensed marijuana establishments may sell it.",
+     "source_ids": [
+      "adhs-lic"
+     ]
+    },
+    {
+     "text": "A person 21 or older may buy one ounce or less of adult-use marijuana, of which no more than 5 grams may be concentrate.",
+     "source_ids": [
+      "adhs-faq"
+     ]
+    },
+    {
+     "text": "Before a sale, the store must verify the customer’s age with one of the forms of ID that Arizona law accepts.",
+     "source_ids": [
+      "aac-918"
+     ]
+    },
+    {
+     "text": "Accepted IDs include an unexpired driver license or nonoperating ID from any U.S. state, the District of Columbia, a U.S. territory or Canada with a photo and date of birth; an unexpired U.S. armed forces ID; a valid unexpired passport or resident alien card; a foreign consular ID that uses biometric verification; and a U.S. border crossing card.",
+     "source_ids": [
+      "ars-4241"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "licensed",
+   "icon": "shield",
+   "question": "How do I check that a Phoenix store is licensed?",
+   "short": "Look it up on AZ Care Check, the Arizona Department of Health Services’ database of licensed facilities, marijuana establishments included.",
+   "points": [
+    {
+     "text": "AZ Care Check is the Department’s licensing history database of providers and facilities, marijuana facilities included, with any deficiencies or enforcement actions.",
+     "source_ids": [
+      "adhs-lic"
+     ],
+     "link": {
+      "label": "Look up a marijuana facility on AZ Care Check",
+      "href": "https://azcarecheck.azdhs.gov/s/?facilityType=All&programType=Marijuana%20Facilities&licenseType=All"
+     }
+    },
+    {
+     "text": "Medical marijuana is bought only from a nonprofit medical marijuana dispensary.",
+     "source_ids": [
+      "adhs-lic"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "limits",
+   "icon": "scale",
+   "question": "How much weed can I have in Arizona?",
+   "short": "Up to 1 ounce, of which no more than 5 grams can be concentrate. Having more than 1 ounce but no more than 2.5 ounces is a petty offense.",
+   "points": [
+    {
+     "text": "Adults 21 and older may possess, consume, buy or transport up to one ounce of marijuana, of which no more than 5 grams may be concentrate.",
+     "source_ids": [
+      "ars-2852"
+     ]
+    },
+    {
+     "text": "A store may sell a customer no more than one ounce at a time, of which no more than 5 grams may be concentrate.",
+     "source_ids": [
+      "aac-918"
+     ]
+    },
+    {
+     "text": "Having more than one ounce but not more than 2.5 ounces, with no more than 12.5 grams of it concentrate, is a petty offense.",
+     "source_ids": [
+      "ars-2853"
+     ]
+    },
+    {
+     "text": "An adult may give up to one ounce, with no more than 5 grams of concentrate, to another adult 21 or older, as long as it is free and not advertised.",
+     "source_ids": [
+      "ars-2852"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "where",
+   "icon": "pin",
+   "question": "Where can you smoke weed in Phoenix?",
+   "short": "In private, where the property owner allows it. Smoking marijuana in a public place or open space is not allowed, and private owners, along with the state and local governments on their own property, can ban it.",
+   "points": [
+    {
+     "text": "Arizona’s adult-use law does not allow anyone to smoke marijuana in a public place or open space. Doing so is a petty offense.",
+     "source_ids": [
+      "ars-2851",
+      "ars-2853"
+     ]
+    },
+    {
+     "text": "The Department of Health Services says marijuana may not be smoked in public.",
+     "source_ids": [
+      "adhs-faq"
+     ]
+    },
+    {
+     "text": "Any private person, business or organization that occupies, owns or controls property may prohibit or regulate marijuana there.",
+     "source_ids": [
+      "ars-2851"
+     ]
+    },
+    {
+     "text": "The state, cities and other local governments may prohibit or regulate it on property they occupy, own, control or operate.",
+     "source_ids": [
+      "ars-2851"
+     ]
+    }
+   ],
+   "places": [
+    {
+     "place": "A private home, where the owner allows it",
+     "answer": "yes",
+     "label": "Yes",
+     "source_ids": [
+      "ars-2852",
+      "ars-2851"
+     ]
+    },
+    {
+     "place": "Your hotel room",
+     "answer": "maybe",
+     "label": "Only if the hotel allows it",
+     "source_ids": [
+      "ars-2851"
+     ]
+    },
+    {
+     "place": "Parks, sidewalks and other public places or open spaces",
+     "answer": "no",
+     "label": "No, smoking there is an offense",
+     "source_ids": [
+      "ars-2851",
+      "ars-2853",
+      "adhs-faq"
+     ]
+    },
+    {
+     "place": "A running car, boat or plane, even as a passenger",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "ars-2851"
+     ]
+    },
+    {
+     "place": "Federal land, including Grand Canyon National Park",
+     "answer": "no",
+     "label": "No, not even to carry it",
+     "source_ids": [
+      "nps-mj"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hotels",
+   "icon": "hotel",
+   "question": "Can I smoke weed in my Phoenix hotel room?",
+   "short": "Only if the hotel allows it. Arizona law lets anyone who owns or controls private property, a hotel included, ban or restrict marijuana there.",
+   "points": [
+    {
+     "text": "The adult-use law does not stop any private person, business or organization that occupies, owns or controls property from prohibiting or regulating marijuana on or in that property.",
+     "source_ids": [
+      "ars-2851"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "car",
+   "icon": "car",
+   "question": "Can I have weed in a car in Arizona, or drive after using it?",
+   "short": "Don’t use it in a running car, even as a passenger, and don’t drive if it has impaired you to even the slightest degree.",
+   "points": [
+    {
+     "text": "The law does not allow anyone to consume marijuana while driving, operating or riding in the passenger seat or compartment of an operating motor vehicle, boat, vessel, aircraft or other vehicle used for transportation.",
+     "source_ids": [
+      "ars-2851"
+     ]
+    },
+    {
+     "text": "It does not allow driving, flying or boating while impaired to even the slightest degree by marijuana.",
+     "source_ids": [
+      "ars-2851",
+      "adhs-faq"
+     ]
+    },
+    {
+     "text": "An adult is not guilty of DUI only because marijuana metabolites are in their body, unless they are also impaired to the slightest degree.",
+     "source_ids": [
+      "ars-2852"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "federal-land",
+   "icon": "mountain",
+   "question": "Can I take weed to Grand Canyon National Park?",
+   "short": "No. The National Park Service says possessing or using marijuana inside any of its parks, preserves, rivers or monuments is prohibited, because it remains illegal under federal law.",
+   "points": [
+    {
+     "text": "Possession or use of marijuana inside a National Park Service unit, including parks, preserves, rivers and monuments, is prohibited. Marijuana remains illegal under federal law.",
+     "source_ids": [
+      "nps-mj"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "flying",
+   "icon": "plane",
+   "question": "Can I fly home with weed from Phoenix?",
+   "short": "Not legally. TSA says marijuana remains illegal under federal law, and its officers refer anything illegal they find to law enforcement.",
+   "points": [
+    {
+     "text": "TSA says marijuana and some cannabis products, including some CBD oil, remain illegal under federal law unless they have no more than 0.3% THC on a dry-weight basis or are FDA-approved. Its officers don’t search for drugs, but they refer anything illegal they find to law enforcement.",
+     "source_ids": [
+      "tsa-mmj"
+     ],
+     "link": {
+      "label": "Check your home state",
+      "href": "index.html#map"
+     }
+    }
+   ]
+  },
+  {
+   "id": "medical",
+   "icon": "card",
+   "question": "Does Arizona accept medical marijuana cards from other states?",
+   "short": "Yes, in part. A visiting patient’s card from another state has the same force as an Arizona card, but visiting patients can’t buy at Arizona’s medical dispensaries. Visitors 21 and older can buy at adult-use stores.",
+   "points": [
+    {
+     "text": "A registry card from another state that lets a visiting qualifying patient possess or use marijuana where it was issued has the same force and effect as an Arizona registry card, except that a visiting patient may not obtain marijuana from a nonprofit medical marijuana dispensary.",
+     "source_ids": [
+      "ars-280403"
+     ]
+    },
+    {
+     "text": "A visiting qualifying patient is someone who is not an Arizona resident, or has lived in Arizona for fewer than 30 days, and who was diagnosed by a person licensed to prescribe in their home state.",
+     "source_ids": [
+      "ars-2801"
+     ]
+    },
+    {
+     "text": "A registered patient 21 or older can also buy adult-use marijuana, as long as they don’t possess more than the allowed amount.",
+     "source_ids": [
+      "adhs-faq"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "edibles",
+   "icon": "clock",
+   "question": "What should I know about edibles in Arizona?",
+   "short": "They can look like ordinary food, drinks or candy and hold several adult doses. Keep them locked away in their original packaging, and don’t drive after using marijuana.",
+   "points": [
+    {
+     "text": "Edible marijuana products can look like food, drinks or candy, and can contain several times the adult dose of THC.",
+     "source_ids": [
+      "adhs-lic"
+     ]
+    },
+    {
+     "text": "Store marijuana products locked away and in their original packaging.",
+     "source_ids": [
+      "adhs-lic"
+     ]
+    },
+    {
+     "text": "Don’t drive after using marijuana.",
+     "source_ids": [
+      "adhs-lic"
+     ]
+    },
+    {
+     "text": "If a child eats, drinks or inhales a marijuana product, call the Arizona Poison and Drug Information Center at 1-800-222-1222, or 911, right away.",
+     "source_ids": [
+      "adhs-lic"
+     ]
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "adhs-lic",
+   "title": "Marijuana licensing: adult use and medical compared, safety, and AZ Care Check",
+   "publisher": "Arizona Department of Health Services",
+   "url": "https://www.azdhs.gov/licensing/marijuana/index.php",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "adhs-faq",
+   "title": "Adult use marijuana: frequently asked questions",
+   "publisher": "Arizona Department of Health Services",
+   "url": "https://www.azdhs.gov/licensing/marijuana/adult-use-marijuana/index.php",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "aac-918",
+   "title": "9 A.A.C. 18, adult use marijuana rules (unofficial copy, effective November 1, 2024): age checks and sale limits",
+   "publisher": "Arizona Department of Health Services",
+   "url": "https://www.azdhs.gov/documents/licensing/adult-use-marijuana/9AAC18-Art1-4.pdf?v=20231026",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "ars-4241",
+   "title": "A.R.S. § 4-241: accepted forms of identification (subsection K)",
+   "publisher": "Arizona State Legislature",
+   "url": "https://www.azleg.gov/ars/4/00241.htm",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "ars-2852",
+   "title": "A.R.S. § 36-2852: possession, use and transfer by adults 21 and older",
+   "publisher": "Arizona State Legislature",
+   "url": "https://www.azleg.gov/ars/36/02852.htm",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "ars-2853",
+   "title": "A.R.S. § 36-2853: possession over the limit; smoking in a public place or open space",
+   "publisher": "Arizona State Legislature",
+   "url": "https://www.azleg.gov/ars/36/02853.htm",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "ars-2851",
+   "title": "A.R.S. § 36-2851: what the adult-use law does not allow",
+   "publisher": "Arizona State Legislature",
+   "url": "https://www.azleg.gov/ars/36/02851.htm",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "nps-mj",
+   "title": "Marijuana and other substances: possession or use in National Park Service units (Bering Land Bridge National Preserve page)",
+   "publisher": "National Park Service",
+   "url": "https://www.nps.gov/bela/learn/management/marijuana.htm",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "tsa-mmj",
+   "title": "What can I bring? Medical marijuana",
+   "publisher": "Transportation Security Administration",
+   "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "ars-280403",
+   "title": "A.R.S. § 36-2804.03: registry identification cards, including visiting qualifying patients",
+   "publisher": "Arizona State Legislature",
+   "url": "https://www.azleg.gov/ars/36/02804-03.htm",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "ars-2801",
+   "title": "A.R.S. § 36-2801: definitions, including visiting qualifying patient",
+   "publisher": "Arizona State Legislature",
+   "url": "https://www.azleg.gov/ars/36/02801.htm",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  }
+ ],
+ "attempts": [
+  {
+   "url": "https://home.nps.gov/grca/learn/management/upload/grca-supt-compendium.pdf",
+   "tried": "2026-11-27",
+   "result": "Read: Grand Canyon’s Superintendent’s Compendium (June 16, 2026) covers alcohol but says nothing about marijuana, so the Park Service’s service-wide statement is cited instead."
+  },
+  {
+   "url": "https://www.skyharbor.com/at-the-airport/amenities/smoking-areas/",
+   "tried": "2026-11-27",
+   "result": "Read: says that under Arizona law smoking is allowed only in designated outdoor areas, with no cannabis rule. No Phoenix Sky Harbor cannabis rule is stated, so none is given."
+  },
+  {
+   "url": "https://www.ecfr.gov/current/title-36/chapter-I/part-2/section-2.35",
+   "tried": "2026-11-27",
+   "result": "Read in a browser: 36 CFR 2.35(b)(2) bars possessing a controlled substance in park areas unless it was obtained from a practitioner or is “otherwise allowed by Federal or State law”. Not cited, because the Park Service’s own statement on marijuana is plainer."
+  }
+ ]
+}
