@@ -107,6 +107,31 @@ class PagesSiteTest(unittest.TestCase):
             # Only questions with a reviewed answer are marked up, each one visible on the page.
             self.assertEqual(asked, {questions[q] for q in answered.get(code, set())}, name)
 
+    def test_sitemap_dates_are_the_pages_own_checked_dates(self):
+        import re
+        from datetime import date
+        sitemap = self.read('sitemap.xml')
+        entries = re.findall(r'<url><loc>https://the-reefer\.com/([^<]*)</loc>(?:<lastmod>([^<]+)</lastmod>)?</url>', sitemap)
+        self.assertEqual(len(entries), sitemap.count('<url>'))
+        dated = 0
+        for path, lastmod in entries:
+            page = self.out / (path + 'index.html' if path.endswith('/') or not path else path)
+            self.assertEqual(lastmod or None, build_pages_site.page_lastmod(page.read_text(encoding='utf-8')), path)
+            if lastmod:
+                dated += 1
+                self.assertLessEqual(date.fromisoformat(lastmod), date.today(), path)
+        for name in self.result['national']:
+            if re.fullmatch(r'law-.*|[a-z-]+\.html', name) and 'checked ' in self.read(name):
+                self.assertIn(f'/{name}</loc><lastmod>', sitemap, f'{name} shows a checked date, so the sitemap gives one')
+        self.assertGreater(dated, 250)
+
+    def test_lastmod_ignores_scripts_and_future_dates(self):
+        from datetime import date
+        text = ('<p>Checked October 3, 2026 [1]</p><p class="muted">retrieved November 20, 2026</p>'
+                '<script>var x="checked December 1, 2026"</script><p>updated January 9, 2027</p><p>Event on December 2, 2026</p>')
+        self.assertEqual(build_pages_site.page_lastmod(text, today=date(2026, 11, 27)), '2026-11-20')
+        self.assertIsNone(build_pages_site.page_lastmod('<p>No dates here.</p>', today=date(2026, 11, 27)))
+
     def test_committed_files_are_untouched(self):
         self.assertIn('noindex', (ROOT / 'national/index.html').read_text(encoding='utf-8'))
 

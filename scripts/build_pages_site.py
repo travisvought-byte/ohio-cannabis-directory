@@ -145,6 +145,36 @@ def not_found():
             '<script src="/assets/analytics.js" defer></script></body></html>\n')
 
 
+# A page's last-modified date in the sitemap is the newest date the page itself says a fact was checked
+# ("checked November 20, 2026", "retrieved ...", "reviewed ...", "updated ...", "as of ..."). That comes from the
+# data's own review dates, not the day the site was built. A page that shows no such date gets no lastmod, and a
+# date after today (a data mistake) is never used.
+CHECKED_DATE = re.compile(r'\b(?:checked|retrieved|reviewed|updated|as of)\b[^<\d]{0,24}?'
+                          r'(January|February|March|April|May|June|July|August|September|October|November|December) (\d{1,2}), (20\d\d)',
+                          re.I)
+MONTHS = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
+
+
+def page_lastmod(text, today=None):
+    from datetime import date
+    today = today or date.today()
+    visible = re.sub(r'<(script|style)\b.*?</\1>', ' ', text, flags=re.S | re.I)
+    found = []
+    for month, day, year in CHECKED_DATE.findall(visible):
+        try:
+            d = date(int(year), MONTHS.index(month.lower()) + 1, int(day))
+        except ValueError:
+            continue
+        if d <= today:
+            found.append(d)
+    return max(found).isoformat() if found else None
+
+
+def sitemap_entry(url, page):
+    lastmod = page_lastmod(page.read_text(encoding='utf-8')) if page.is_file() else None
+    return f'  <url><loc>{url}</loc>' + (f'<lastmod>{lastmod}</lastmod>' if lastmod else '') + '</url>\n'
+
+
 def build(out):
     import sys
     sys.path.insert(0, str(ROOT))
@@ -199,14 +229,14 @@ def build(out):
     # Google Search Console ownership file (google<token>.html): published, never listed as a page.
     real = sorted(p.name for p in out.glob('*.html') if p.name not in FORWARD and p.name != '404.html'
                   and not (p.name.startswith('google') and len(p.name) == 27))
-    urls = [f'{SITE}/' + ('' if n == 'index.html' else n) for n in real]
+    urls = [(f'{SITE}/' + ('' if n == 'index.html' else n), out / n) for n in real]
     # Stand-alone pages that live in their own folder (an event page) are listed too.
-    urls += [f'{SITE}/{p.parent.name}/' for p in sorted(out.glob('*/index.html')) if p.parent.name in EXTRA_FOLDERS]
+    urls += [(f'{SITE}/{p.parent.name}/', p) for p in sorted(out.glob('*/index.html')) if p.parent.name in EXTRA_FOLDERS]
     # And their other pages, like the game's contest page and its rules.
-    urls += [f'{SITE}/{p.parent.name}/{p.name}' for p in sorted(out.glob('*/*.html')) if p.parent.name in EXTRA_FOLDERS and p.name != 'index.html']
+    urls += [(f'{SITE}/{p.parent.name}/{p.name}', p) for p in sorted(out.glob('*/*.html')) if p.parent.name in EXTRA_FOLDERS and p.name != 'index.html']
     (out / 'sitemap.xml').write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        + ''.join(f'  <url><loc>{u}</loc></url>\n' for u in urls) + '</urlset>\n', encoding='utf-8')
+        + ''.join(sitemap_entry(u, p) for u, p in urls) + '</urlset>\n', encoding='utf-8')
     (out / 'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n', encoding='utf-8')
     return {'out': out, 'national': sorted(national), 'forwarded': list(FORWARD), 'real': real}
 
