@@ -1,0 +1,174 @@
+{
+ "schema_version": 1,
+ "as_of": "2026-11-27",
+ "purpose": "Cannabis rules for people visiting New York City, for national/new-york-city.html on the-reefer.com (built by city_guides.py through build_national.pages()). Every point names the official source it comes from; each source carries the date it was checked. No business is named; the page links the Office of Cannabis Management's own list of licensed dispensaries and says nothing about unlicensed shops beyond what the Office says. Consumption lounges and airport-specific rules are left out because no reachable official source speaks to them for New York City.",
+ "page": {
+  "state": "NY",
+  "state_name": "New York",
+  "state_page": "new-york.html",
+  "crumb": "Visiting New York City",
+  "h1": "Visiting New York City? The cannabis rules for visitors",
+  "title": "Visiting New York City: cannabis rules for visitors (2026)",
+  "description": "Can tourists buy weed in NYC? Yes, at 21, but only from a state-licensed dispensary. How to check a store, limits, where you can and can’t smoke (parks, Times Square, cars, the Statue of Liberty), hotels, driving and flying home, from official sources.",
+  "adult": "For adults 21 and older. Plain summaries of New York State, New York City and federal sources, each linked below. Not legal advice.",
+  "prefix": "nyc",
+  "place": "the New York City visitor page",
+  "business_note": "No business is named on this page; the Office of Cannabis Management’s own list names the licensed dispensaries.",
+  "more": [
+   {"href": "new-york.html", "label": "The full New York guide", "rest": ": the state’s law, record clearing and local help"},
+   {"href": "law-public-use.html", "label": "Public use in every state", "rest": ": where you can and can’t use it back home"},
+   {"href": "law-driving.html", "label": "Driving and cannabis in every state"},
+   {"href": "travel-warnings.html", "label": "Travel warnings", "rest": ": the countries and states where any amount can land you in trouble"},
+   {"href": "help.html#travel", "label": "Flying with cannabis", "rest": ": what TSA says"}
+  ]
+ },
+ "state_box": "Only state-licensed dispensaries may sell: how to check a store, plus where visitors can and can’t smoke (parks, Times Square, cars, the Statue of Liberty), hotels, driving and flying home.",
+ "glance": [
+  {"icon": "id", "big": "21+", "text": "to buy, have or use cannabis in New York", "href": "#buy"},
+  {"icon": "shield", "big": "Licensed only", "text": "check the store on the state’s list before you buy", "href": "#licensed"},
+  {"icon": "scale", "big": "3 oz", "text": "of cannabis and 24 grams of concentrate", "href": "#limits"},
+  {"icon": "nosmoke", "big": "Not in parks", "text": "or on beaches, boardwalks or plazas like Times Square", "href": "#where"},
+  {"icon": "car", "big": "Not in a car", "text": "even parked, even as a passenger", "href": "#car"},
+  {"icon": "plane", "big": "Not across state lines", "text": "New York says leaving the state with it is against the law", "href": "#flying"}
+ ],
+ "sections": [
+  {
+   "id": "buy",
+   "icon": "id",
+   "question": "Can tourists buy weed in New York City?",
+   "short": "Yes, if you are 21 or older, but only from a dispensary licensed by New York State’s Office of Cannabis Management.",
+   "points": [
+    {"text": "You have to be 21 to buy, consume or possess cannabis in New York State.", "source_ids": ["ocm-adult"]},
+    {"text": "Businesses must have an adult-use license to legally sell cannabis in New York, and it is illegal to distribute or sell cannabis without a license.", "source_ids": ["ocm-adult"]},
+    {"text": "Adults may share cannabis with each other, but selling a service or product tied to the sharing, so-called “gifting,” is prohibited.", "source_ids": ["ocm-adult"]}
+   ]
+  },
+  {
+   "id": "licensed",
+   "icon": "shield",
+   "question": "How do I know a New York City dispensary is licensed?",
+   "short": "Look for the Dispensary Verification Tool posted in the storefront, scan its QR code, and check that the store is on the Office of Cannabis Management’s list.",
+   "points": [
+    {"text": "Every licensed dispensary is issued a Dispensary Verification Tool and must post it near its main entrance. Scanning its QR code takes you to the Office of Cannabis Management’s list of all licensed adult-use dispensaries.", "source_ids": ["ocm-consumers", "ocm-verify"], "link": {"label": "Check a store on the state’s list of licensed dispensaries", "href": "https://cannabis.ny.gov/dispensary-location-verification"}},
+    {"text": "When we checked, the Office’s list said there were 763 adult-use cannabis dispensaries across New York State, with more added as they open to the public.", "source_ids": ["ocm-verify"]},
+    {"text": "Every regulated adult-use product carries New York State’s universal symbol and a QR code or link to its lab test results, called a Certificate of Analysis. The Office tells consumers to check both the storefront and the product label.", "source_ids": ["ocm-consumers"]},
+    {"text": "To report a problem with a cannabis business or product, use the Office of Cannabis Management’s incident report page.", "source_ids": ["ocm-consumers"], "link": {"label": "Report an incident to the Office of Cannabis Management", "href": "https://cannabis.ny.gov/report-an-incident"}}
+   ]
+  },
+  {
+   "id": "limits",
+   "icon": "scale",
+   "question": "How much weed can I have in New York?",
+   "short": "Up to 3 ounces of cannabis and 24 grams of concentrate, for adults 21 and older.",
+   "points": [
+    {"text": "It is legal for adults 21 or older to possess 3 ounces of cannabis and 24 grams of cannabis concentrate.", "source_ids": ["ocm-adult"]},
+    {"text": "Adults may have and share, but not sell, up to those amounts. Having or sharing more than 3 ounces of flower or more than 24 grams of concentrate is not legal.", "source_ids": ["nyc-legal"]}
+   ]
+  },
+  {
+   "id": "where",
+   "icon": "pin",
+   "question": "Where can you smoke weed in New York City?",
+   "short": "In a private home, or in most places where tobacco smoking is allowed. Not in parks, on beaches or boardwalks, in plazas like Times Square, in a car, or in a restaurant or other business.",
+   "points": [
+    {"text": "Adults 21 and older may consume cannabis in a private home or in most places where tobacco can be consumed.", "source_ids": ["ocm-adult"]},
+    {"text": "It is illegal to use cannabis in a motor vehicle, in a private business such as a restaurant patio, or anywhere smoking tobacco is prohibited.", "source_ids": ["ocm-adult"]},
+    {"text": "In New York City, smoking or vaping cannabis is illegal in restaurants, parks, event spaces and any business, including cannabis dispensaries, and doing it where it’s prohibited may bring a civil summons and fine.", "source_ids": ["nyc-health"]},
+    {"text": "The city’s Parks Department does not allow smoking in any city park, on beaches and boardwalks, at pools and playgrounds, public golf courses or sports stadium grounds, or in pedestrian plazas such as those at Times Square and Herald Square. NYC311 says the city’s smoking rules apply to cannabis as well as tobacco.", "source_ids": ["nyc-311"]},
+    {"text": "Under state law, smoking or vaping cannabis where it is prohibited, or using it on school grounds or a school bus, carries a civil penalty of up to $25 or up to 20 hours of community service.", "source_ids": ["ny-pen-222-10"]}
+   ],
+   "places": [
+    {"place": "A private home, where the owner allows it", "answer": "yes", "label": "Yes", "source_ids": ["ocm-adult", "nyc-legal"]},
+    {"place": "Places where tobacco smoking is allowed", "answer": "maybe", "label": "In most places", "source_ids": ["ocm-adult", "nyc-health"]},
+    {"place": "Your hotel room", "answer": "maybe", "label": "Only if the hotel allows it", "source_ids": ["ocm-adult"]},
+    {"place": "City parks, beaches, boardwalks, pools and playgrounds", "answer": "no", "label": "No", "source_ids": ["nyc-311", "nyc-health"]},
+    {"place": "Pedestrian plazas such as Times Square and Herald Square", "answer": "no", "label": "No", "source_ids": ["nyc-311"]},
+    {"place": "Restaurants (patios included), bars and other businesses, dispensaries included", "answer": "no", "label": "No", "source_ids": ["ocm-adult", "nyc-health", "nyc-legal"]},
+    {"place": "Any vehicle, even parked, even as a passenger", "answer": "no", "label": "No", "source_ids": ["ocm-adult", "nyc-legal"]},
+    {"place": "School grounds and school buses", "answer": "no", "label": "No", "source_ids": ["ny-pen-222-10"]},
+    {"place": "The Statue of Liberty, Ellis Island and other federal property", "answer": "no", "label": "No, not even to carry it", "source_ids": ["nps-stli", "nyc-legal"]}
+   ]
+  },
+  {
+   "id": "hotels",
+   "icon": "hotel",
+   "question": "Can I smoke weed in my New York City hotel room?",
+   "short": "Only if the hotel allows it. New York lets hotel owners ban smoking or vaping cannabis on their property.",
+   "points": [
+    {"text": "Hotel owners can ban the smoking or vaporizing of cannabis on their properties, so you may not be able to consume it in a hotel room.", "source_ids": ["ocm-adult"]},
+    {"text": "Landlords, property owners and rental companies can also ban smoking or vaporizing cannabis on their premises.", "source_ids": ["ocm-adult"]}
+   ]
+  },
+  {
+   "id": "car",
+   "icon": "car",
+   "question": "Can I use cannabis in a car, or drive after using it?",
+   "short": "No. Keep it in a closed container, don’t open any package in the vehicle, and never drive high.",
+   "points": [
+    {"text": "Adults 21 or older may have cannabis in a vehicle, stored securely in a closed container. Open containers of cannabis in a vehicle are illegal, and neither drivers nor passengers can open any cannabis packaging in a vehicle.", "source_ids": ["ocm-adult"]},
+    {"text": "It is illegal for the driver or any passenger to smoke cannabis in a vehicle, moving or parked.", "source_ids": ["ocm-adult"]},
+    {"text": "It is illegal to drive under the influence of cannabis. As with alcohol, driving under the influence of cannabis means a DUI.", "source_ids": ["ocm-adult"]},
+    {"text": "An edible can take as long as four hours to take effect.", "source_ids": ["ocm-adult"]}
+   ]
+  },
+  {
+   "id": "federal-land",
+   "icon": "mountain",
+   "question": "Can I bring weed to the Statue of Liberty or Ellis Island?",
+   "short": "No. The National Park Service prohibits marijuana from entering the park, and everyone boarding the ferry goes through airport-style screening.",
+   "points": [
+    {"text": "At Statue of Liberty National Monument, the National Park Service says marijuana is a Schedule I controlled substance and is prohibited from entering the park, even though some states let medical patients have it.", "source_ids": ["nps-stli"]},
+    {"text": "Everyone boarding a ferry to Liberty Island or Ellis Island must complete a security screening, similar to airport security, before boarding.", "source_ids": ["nps-stli"]},
+    {"text": "Under federal law it is still not legal to possess or use cannabis in any form on federal property, and New York’s cannabis law does not apply there.", "source_ids": ["nyc-legal"]},
+    {"text": "New York’s cannabis office also says you can’t consume cannabis on federal land, including national parks and national forests.", "source_ids": ["ocm-adult"]}
+   ]
+  },
+  {
+   "id": "flying",
+   "icon": "plane",
+   "question": "Can I fly home with weed from New York City?",
+   "short": "No. New York says it is illegal to cross state lines with cannabis, and federal law still applies at airport security.",
+   "points": [
+    {"text": "Leaving or coming into the state or country with any cannabis product is against the law, and it is illegal to cross state lines with cannabis, including medical cannabis.", "source_ids": ["ocm-adult"]},
+    {"text": "TSA says marijuana and some cannabis products, including some CBD oil, remain illegal under federal law unless they have no more than 0.3% THC on a dry-weight basis or are FDA-approved. Its officers don’t search for drugs, but they refer anything illegal they find to law enforcement.", "source_ids": ["tsa-mmj"], "link": {"label": "Check your home state", "href": "index.html#map"}}
+   ]
+  },
+  {
+   "id": "medical",
+   "icon": "card",
+   "question": "Does New York accept medical cannabis cards from other states?",
+   "short": "Yes. Bring proof of your home state’s certification or registration and a valid government photo ID, and ask a medical dispensary what it needs.",
+   "points": [
+    {"text": "A medical patient from another state can use an out-of-state medical cannabis card to buy medical cannabis in New York, with proof of a certification, registration or the equivalent for their state and a valid government-issued photo ID. The Office of Cannabis Management says to contact a medical registered organization to see what is required.", "source_ids": ["ocm-med-faq"]},
+    {"text": "Medical cannabis products may not be taken outside New York State.", "source_ids": ["ocm-patients"]}
+   ]
+  },
+  {
+   "id": "edibles",
+   "icon": "clock",
+   "question": "How much of an edible should I take?",
+   "short": "Start low and go slow: an edible can take up to four hours to reach its full effect.",
+   "points": [
+    {"text": "Edible cannabis products can take up to 4 hours before you feel the peak effects. Both the state cannabis office and NYC Health say to start low and go slow.", "source_ids": ["ocm-adult", "nyc-health"]},
+    {"text": "Cannabis should always be consumed responsibly and never before driving or operating heavy machinery.", "source_ids": ["ocm-adult"]},
+    {"text": "Took too much, or worried about someone who did? NYC Health lists the NYC Poison Control Center at 212-POISONS (212-764-7667).", "source_ids": ["nyc-health"], "link": {"label": "Call NYC Poison Control", "href": "tel:2127647667"}}
+   ]
+  }
+ ],
+ "sources": [
+  {"id": "ocm-adult", "title": "Adult-use information: age, possession limits, where you can consume, hotels, vehicles, driving, crossing state lines, licensed sales", "publisher": "New York State Office of Cannabis Management", "url": "https://cannabis.ny.gov/adult-use-information", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "ocm-consumers", "title": "Consumers: the Dispensary Verification Tool, universal symbol and lab results", "publisher": "New York State Office of Cannabis Management", "url": "https://cannabis.ny.gov/consumers", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "ocm-verify", "title": "Dispensary location verification: list of licensed adult-use dispensaries", "publisher": "New York State Office of Cannabis Management", "url": "https://cannabis.ny.gov/dispensary-location-verification", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "ocm-med-faq", "title": "Medical Cannabis Program FAQs: out-of-state medical cannabis cards", "publisher": "New York State Office of Cannabis Management", "url": "https://cannabis.ny.gov/medical-cannabis-program-faqs", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "ocm-patients", "title": "Patients: medical cannabis may not leave New York State", "publisher": "New York State Office of Cannabis Management", "url": "https://cannabis.ny.gov/patients", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "ny-pen-222-10", "title": "N.Y. Penal Law § 222.10, restrictions on cannabis use", "publisher": "New York State Senate", "url": "https://www.nysenate.gov/legislation/laws/PEN/222.10", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "nyc-health", "title": "Cannabis (marijuana): where you can smoke or vape, licensed dispensaries, safer use", "publisher": "NYC Department of Health and Mental Hygiene", "url": "https://www.nyc.gov/site/doh/health/health-topics/marijuana.page", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "nyc-legal", "title": "Cannabis in NYC: What Is Legal? (fact sheet, March 2024)", "publisher": "NYC Department of Health and Mental Hygiene", "url": "https://www.nyc.gov/assets/doh/downloads/pdf/basas/cannabis-in-nyc-legal-use.pdf", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "nyc-311", "title": "Smoking or vaping complaint: smoke-free parks, beaches, boardwalks and pedestrian plazas", "publisher": "NYC311", "url": "https://portal.311.nyc.gov/article/?kanumber=KA-02295", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "nps-stli", "title": "Statue of Liberty National Monument: security standards and prohibited items (page updated August 6, 2025)", "publisher": "National Park Service", "url": "https://www.nps.gov/stli/learn/management/security-standards-prohibited-items.htm", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "tsa-mmj", "title": "What can I bring? Medical marijuana", "publisher": "Transportation Security Administration", "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana", "checked": "2026-11-27", "kind": "primary"}
+ ],
+ "attempts": [
+  {"url": "https://cannabis.ny.gov/system/files/documents/2026/07/7.2.26-ccb-release-.pdf", "tried": "2026-11-27", "result": "Read. A July 3, 2026 Cannabis Control Board release says updated medical rules let qualifying out-of-state patients buy at Registered Organization dispensaries once effective; the page cites the Office's current FAQ instead, which already says out-of-state cards are accepted."}
+ ]
+}

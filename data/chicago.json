@@ -1,0 +1,152 @@
+{
+ "schema_version": 1,
+ "as_of": "2026-11-27",
+ "purpose": "Cannabis rules for people visiting Chicago, for national/chicago.html on the-reefer.com (built by city_guides.py through build_national.pages()). Every point names the official source it comes from; each source carries the date it was checked. No business is named; the page links the state's own dispensary map instead. Facts that no reachable official source confirmed (hotel rules, consumption lounges in Chicago, airport rules) are left out; the attempts are recorded below.",
+ "page": {
+  "state": "IL",
+  "state_name": "Illinois",
+  "state_page": "illinois.html",
+  "crumb": "Visiting Chicago",
+  "h1": "Visiting Chicago? The cannabis rules for visitors",
+  "title": "Visiting Chicago: cannabis rules for visitors (2026)",
+  "description": "Can tourists buy weed in Chicago? Yes, at 21 with a valid ID. Visitor limits, where you can and can’t use it (streets, parks, cars, federal property), spotting a licensed dispensary, driving and flying home, from official sources.",
+  "adult": "For adults 21 and older. Plain summaries of Illinois, City of Chicago and federal sources, each linked below. Not legal advice.",
+  "prefix": "chi",
+  "place": "the Chicago visitor page",
+  "business_note": "No business is named on this page; the state’s own map lists licensed dispensaries.",
+  "more": [
+   {"href": "illinois.html", "label": "The full Illinois guide", "rest": ": the state’s law, record clearing and local help"},
+   {"href": "law-public-use.html", "label": "Public use in every state", "rest": ": where you can and can’t use it back home"},
+   {"href": "law-driving.html", "label": "Driving and cannabis in every state"},
+   {"href": "travel-warnings.html", "label": "Travel warnings", "rest": ": the countries and states where any amount can land you in trouble"},
+   {"href": "help.html#travel", "label": "Flying with cannabis", "rest": ": what TSA says"}
+  ]
+ },
+ "state_box": "Where visitors can and can’t use cannabis: streets, parks, cars and federal property, plus the visitor possession limits, how to spot a licensed dispensary, driving and flying home.",
+ "glance": [
+  {"icon": "id", "big": "21+", "text": "with a valid ID: visitors can buy at licensed dispensaries", "href": "#buy"},
+  {"icon": "scale", "big": "30 g", "text": "of flower is a visitor’s limit, half of what residents may have", "href": "#limits"},
+  {"icon": "nosmoke", "big": "Not in public", "text": "not on streets, in parks or next to a dispensary", "href": "#where"},
+  {"icon": "shield", "big": "Licensed only", "text": "what a licensed Illinois dispensary must show you", "href": "#licensed"},
+  {"icon": "car", "big": "Not in a car", "text": "sealed, odor-proof packaging only, and no driving high", "href": "#car"},
+  {"icon": "plane", "big": "Not across state lines", "text": "Illinois says cannabis shouldn’t leave the state", "href": "#flying"}
+ ],
+ "sections": [
+  {
+   "id": "buy",
+   "icon": "id",
+   "question": "Can tourists buy weed in Chicago?",
+   "short": "Yes, if you are 21 or older and show a valid ID. Visitors can buy at any licensed Illinois dispensary.",
+   "points": [
+    {"text": "Adults 21 and older with a valid identification can buy cannabis at any Illinois dispensary.", "source_ids": ["il-home"]},
+    {"text": "The City of Chicago’s cannabis FAQ gives the same rule: adults over 21, with a valid ID.", "source_ids": ["chi-faq"]},
+    {"text": "The State of Illinois licenses dispensaries, and the City of Chicago regulates where they may locate.", "source_ids": ["chi-faq"]},
+    {"text": "At a licensed dispensary, every person who enters has their ID checked, and customers may be checked again before a sale.", "source_ids": ["idfpr-guide"]}
+   ]
+  },
+  {
+   "id": "limits",
+   "icon": "scale",
+   "question": "How much weed can a visitor have in Illinois?",
+   "short": "Visitors 21 and older can have up to 30 grams of flower, 500 mg of THC in infused products and 5 grams of concentrate. Illinois residents can have twice that.",
+   "points": [
+    {"text": "Non-residents 21 and older may have 30 grams of cannabis flower (about 1 ounce), 500 milligrams of THC in cannabis-infused products and 5 grams of cannabis concentrate.", "source_ids": ["il-faq"]},
+    {"text": "Illinois residents 21 and older may have 60 grams of flower (about 2 ounces), 1,000 milligrams of THC in infused products and 10 grams of concentrate.", "source_ids": ["il-faq"]},
+    {"text": "The totals are cumulative: an adult may have a combination of flower, infused products and concentrate, up to the limit for each kind of product.", "source_ids": ["il-faq"]}
+   ]
+  },
+  {
+   "id": "where",
+   "icon": "pin",
+   "question": "Where can you smoke weed in Chicago?",
+   "short": "On private property where the owner allows it. Not in public, including streets, parks and the area next to a dispensary, and not in any vehicle.",
+   "points": [
+    {"text": "Consumption in public is illegal in Chicago, and that includes streets, parks and areas next to dispensaries.", "source_ids": ["chi-faq"]},
+    {"text": "Illinois law doesn’t let anyone smoke, vape, eat or otherwise use cannabis in any public place: any place where you could reasonably be expected to be seen by others, and any place owned or leased by the state or a local government, such as parks and government buildings.", "source_ids": ["il-faq"]},
+    {"text": "Consumption on private property is permitted, at the property owner’s discretion.", "source_ids": ["chi-faq"]},
+    {"text": "State law also bars using it close to anyone under 21 who isn’t a registered medical patient, and bars even having it on school grounds, in a school bus or on any federal property, including military bases, federal parks and federal buildings.", "source_ids": ["il-faq"]}
+   ],
+   "places": [
+    {"place": "A private home, where the owner allows it", "answer": "yes", "label": "Yes", "source_ids": ["chi-faq"]},
+    {"place": "Streets, sidewalks and parks, including next to a dispensary", "answer": "no", "label": "No", "source_ids": ["chi-faq", "il-faq"]},
+    {"place": "Government buildings and other state or city property", "answer": "no", "label": "No", "source_ids": ["il-faq"]},
+    {"place": "Anywhere others could reasonably see you", "answer": "no", "label": "No", "source_ids": ["il-faq"]},
+    {"place": "Any vehicle, running or not", "answer": "no", "label": "No", "source_ids": ["chi-faq", "il-faq"]},
+    {"place": "Near anyone under 21 who isn’t a registered patient", "answer": "no", "label": "No", "source_ids": ["il-faq"]},
+    {"place": "School grounds and school buses", "answer": "no", "label": "No, not even to carry it", "source_ids": ["il-faq"]},
+    {"place": "Federal property: military bases, federal parks and federal buildings", "answer": "no", "label": "No, not even to carry it", "source_ids": ["il-faq"]}
+   ]
+  },
+  {
+   "id": "licensed",
+   "icon": "shield",
+   "question": "How can I tell a Chicago dispensary is licensed?",
+   "short": "Look it up on the state’s dispensary map, and look for what Illinois requires of every licensed store: a posted state license, an ID check at the door and tested, labeled products.",
+   "points": [
+    {"text": "Illinois keeps a map and list of dispensaries that you can search by city, county or zip code.", "source_ids": ["il-locations"], "link": {"label": "Find a dispensary on the state’s map", "href": "https://cannabis.illinois.gov/about/locations.html"}},
+    {"text": "A licensed dispensary displays its official license to operate from the Illinois Department of Financial and Professional Regulation, and its agent in charge wears an agent identification card issued by the department.", "source_ids": ["idfpr-guide"]},
+    {"text": "A locked door, opened only by an employee or security guard, separates the entrance from the sales area, and exterior windows are opaque or tinted.", "source_ids": ["idfpr-guide"]},
+    {"text": "Products show lab test results on the package and have no cannabis leaf or flower on the label. No cannabis flower is on display, and no nicotine products are sold.", "source_ids": ["idfpr-guide"]}
+   ]
+  },
+  {
+   "id": "car",
+   "icon": "car",
+   "question": "Can I use cannabis in a car, or drive after using it?",
+   "short": "No. Cannabis can’t be used in any vehicle, and in a moving car it must be in a sealed, odor-proof, child-resistant container. Driving high is a DUI.",
+   "points": [
+    {"text": "Cannabis cannot be used in a motor vehicle. Chicago adds that this holds whether or not the vehicle is running.", "source_ids": ["il-faq", "chi-faq"]},
+    {"text": "While a motor vehicle is in operation, cannabis must be in a secured, sealed, odor-proof, child-resistant container in its original packaging. Carrying it in any other kind of container is a Class A misdemeanor.", "source_ids": ["il-faq"]},
+    {"text": "Driving under the influence of cannabis is illegal and is a DUI.", "source_ids": ["chi-faq"]},
+    {"text": "Illinois prohibits driving or being in control of a vehicle when THC levels of 5 nanograms in whole blood, or 10 nanograms in another bodily substance, are present within 2 hours of driving.", "source_ids": ["il-faq"]}
+   ]
+  },
+  {
+   "id": "flying",
+   "icon": "plane",
+   "question": "Can I fly home with weed from Chicago?",
+   "short": "Don’t. Illinois says cannabis shouldn’t be taken across state lines, and federal law still applies at airport security.",
+   "points": [
+    {"text": "Cannabis should not be transported across state lines. Giving it to someone who is leaving the state may put that person in violation of federal and, potentially, other states’ laws.", "source_ids": ["il-faq"]},
+    {"text": "TSA says marijuana and some cannabis products, including some CBD oil, remain illegal under federal law unless they have no more than 0.3% THC on a dry-weight basis or are FDA-approved. Its officers don’t search for drugs, but they refer anything illegal they find to law enforcement.", "source_ids": ["tsa-mmj"], "link": {"label": "Check your home state", "href": "index.html#map"}}
+   ]
+  },
+  {
+   "id": "medical",
+   "icon": "card",
+   "question": "Does Illinois accept medical cannabis cards from other states?",
+   "short": "No. Illinois does not accept out-of-state medical cards, but adults 21 and older can buy at adult-use dispensaries with a valid ID.",
+   "points": [
+    {"text": "Illinois does not accept out-of-state medical cards.", "source_ids": ["idph-reciprocity"]},
+    {"text": "The state’s medical program issues registry cards to Illinois residents who meet its requirements.", "source_ids": ["idph-program"]},
+    {"text": "Adults 21 and older with a valid identification can buy cannabis at any Illinois dispensary.", "source_ids": ["il-home"]}
+   ]
+  },
+  {
+   "id": "edibles",
+   "icon": "clock",
+   "question": "How long does an edible take to kick in?",
+   "short": "Longer than you might think: 30 minutes or more before you feel anything, and often 2 to 4 hours for the full effect. Wait before taking more.",
+   "points": [
+    {"text": "With edibles, you might not feel the effects for 30 minutes or more.", "source_ids": ["il-faq"]},
+    {"text": "Many people won’t feel the full effect of their dose until 2 to 4 hours after eating it.", "source_ids": ["il-faq"]}
+   ]
+  }
+ ],
+ "sources": [
+  {"id": "il-faq", "title": "FAQs: possession limits for residents and non-residents, where use is prohibited, vehicles, driving, edibles", "publisher": "Illinois Cannabis Regulation Oversight Officer", "url": "https://cannabis.illinois.gov/about/faqs.html", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "il-home", "title": "Illinois cannabis: who can buy", "publisher": "Illinois Cannabis Regulation Oversight Officer", "url": "https://cannabis.illinois.gov/", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "il-locations", "title": "Dispensary locations (map and list; page says dispensaries updated as of October 8, 2026)", "publisher": "Illinois Cannabis Regulation Oversight Officer", "url": "https://cannabis.illinois.gov/about/locations.html", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "idfpr-guide", "title": "A Consumer’s Guide to Identifying a Licensed Cannabis Dispensary", "publisher": "Illinois Department of Financial and Professional Regulation", "url": "https://idfpr.illinois.gov/content/dam/soi/en/web/idfpr/forms/auc/final-dispensary-psa.pdf", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "chi-faq", "title": "Cannabis Information Center: frequently asked questions", "publisher": "City of Chicago", "url": "https://www.chicago.gov/city/en/sites/cannabis-information-center/home/faq.html", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "idph-reciprocity", "title": "Medical cannabis reciprocity", "publisher": "Illinois Department of Public Health", "url": "https://dph.illinois.gov/topics-services/prevention-wellness/medical-cannabis/reciprocity.html", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "idph-program", "title": "Medical Cannabis Patient Program", "publisher": "Illinois Department of Public Health", "url": "https://dph.illinois.gov/topics-services/prevention-wellness/medical-cannabis.html", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "tsa-mmj", "title": "What can I bring? Medical marijuana", "publisher": "Transportation Security Administration", "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana", "checked": "2026-11-27", "kind": "primary"}
+ ],
+ "attempts": [
+  {"url": "https://ilga.gov/Documents/legislation/ilcs/documents/041007050K10-35.htm", "tried": "2026-11-27", "result": "Not retrieved (robots.txt could not be read). Nothing on hotels or private businesses is stated, since no other reachable official source speaks to hotels."},
+  {"url": "https://ilga.gov/legislation/ilcs/documents/041007050K10-10.htm", "tried": "2026-11-27", "result": "Read. The compiled statute still showed the older limits (residents 30 g, non-residents 15 g; source line P.A. 101-27 and 101-593). The page uses the state regulator's FAQ, which gives doubled limits (60 g and 30 g); NORML (secondary) reports a June 2026 law doubling them, but the Illinois General Assembly's bill and public act pages could not be retrieved to confirm it."},
+  {"url": "https://www.chicago.gov/city/en/sites/cannabis-information-center/home/social-consumption.html", "tried": "2026-11-27", "result": "Read. Describes on-premises consumption licenses statewide but names no Chicago business or Chicago rule, so consumption lounges are left out. The city FAQ's possession table shows the pre-2026 limits and is not used for limits."},
+  {"url": "https://www.flychicago.com/ohare/ServicesAmenities/FAQ/pages/default.aspx", "tried": "2026-11-27", "result": "Read; it said nothing about cannabis. No airport-specific rule is stated."}
+ ]
+}

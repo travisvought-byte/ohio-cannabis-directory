@@ -1,0 +1,165 @@
+{
+ "schema_version": 1,
+ "as_of": "2026-11-27",
+ "purpose": "Cannabis rules for people visiting Denver, for national/denver.html on the-reefer.com (built by city_guides.py through build_national.pages()). Every point names the official source it comes from; each source carries the date it was checked. No business is named. Facts that no reachable official source confirmed (Denver's own consumption licenses, the airport's own rule text) are left out; the attempts are recorded below.",
+ "page": {
+  "state": "CO",
+  "state_name": "Colorado",
+  "state_page": "colorado.html",
+  "crumb": "Visiting Denver",
+  "h1": "Visiting Denver? The cannabis rules for visitors",
+  "title": "Visiting Denver: cannabis rules for visitors (2026)",
+  "description": "Can tourists buy weed in Denver? Yes, at 21 with a valid ID. How much, where you can and can’t use it (hotels, cars, parks, ski slopes, Rocky Mountain National Park), driving, edibles and flying home, from official sources.",
+  "adult": "For adults 21 and older. Plain summaries of Colorado and federal sources, each linked below. Not legal advice.",
+  "prefix": "den",
+  "place": "the Denver visitor page",
+  "business_note": "No business is named on this page.",
+  "more": [
+   {"href": "colorado.html", "label": "The full Colorado guide", "rest": ": the state’s law, record clearing and local help"},
+   {"href": "law-public-use.html", "label": "Public use in every state", "rest": ": where you can and can’t use it back home"},
+   {"href": "law-driving.html", "label": "Driving and cannabis in every state"},
+   {"href": "travel-warnings.html", "label": "Travel warnings", "rest": ": the countries and states where any amount can land you in trouble"},
+   {"href": "help.html#travel", "label": "Flying with cannabis", "rest": ": what TSA says"}
+  ]
+ },
+ "state_box": "Where visitors can and can’t use cannabis: hotels, cars, parks, ski slopes and Rocky Mountain National Park, plus how much you can buy, driving and flying home.",
+ "glance": [
+  {"icon": "id", "big": "21+", "text": "with a valid ID: visitors can buy at licensed retail stores", "href": "#buy"},
+  {"icon": "scale", "big": "1 oz", "text": "the most you can buy at a time; adults can have up to 2 oz", "href": "#limits"},
+  {"icon": "nosmoke", "big": "Not in public", "text": "not on sidewalks, in parks, at concerts or at ski resorts", "href": "#where"},
+  {"icon": "hotel", "big": "Hotels can ban it", "text": "check your hotel’s rules before you use it there", "href": "#hotels"},
+  {"icon": "car", "big": "Not in a car", "text": "no open packages for drivers or passengers, and no driving high", "href": "#car"},
+  {"icon": "plane", "big": "Not at the airport", "text": "you can’t bring it to Denver International Airport", "href": "#flying"}
+ ],
+ "sections": [
+  {
+   "id": "buy",
+   "icon": "id",
+   "question": "Can tourists buy weed in Denver?",
+   "short": "Yes, if you are 21 or older and show a valid ID. Buy only from a licensed retail store.",
+   "points": [
+    {"text": "It is illegal for anyone under 21 to buy, have or use retail cannabis, and no one under 21 is allowed in the restricted part of a retail store.", "source_ids": ["co-laws"]},
+    {"text": "You must show a valid ID proving you are 21 or older.", "source_ids": ["co-laws"]},
+    {"text": "Buy retail cannabis only from licensed retail stores.", "source_ids": ["co-laws"]},
+    {"text": "Medical cannabis has its own rules; the state’s rules on this page are for retail cannabis and may not apply to medical cannabis.", "source_ids": ["co-laws"]}
+   ]
+  },
+  {
+   "id": "limits",
+   "icon": "scale",
+   "question": "How much weed can I buy in Colorado?",
+   "short": "Up to 1 ounce at a time, and no more than 8 grams of concentrate a day from one store. Adults 21 and older can have up to 2 ounces.",
+   "points": [
+    {"text": "Colorado’s cannabis site says adults over 21 can buy up to 1 ounce of cannabis at a time.", "source_ids": ["co-laws"]},
+    {"text": "A retail marijuana store may sell no more than 8 grams of retail marijuana concentrate to a person in a day.", "source_ids": ["co-lcs-retail"]},
+    {"text": "Adults 21 and older can have up to 2 ounces of cannabis. Having more can bring legal charges and fines.", "source_ids": ["co-laws"]},
+    {"text": "Adults 21 and older can give up to 2 ounces to another adult 21 or older, but can’t sell cannabis.", "source_ids": ["co-laws"]}
+   ]
+  },
+  {
+   "id": "where",
+   "icon": "pin",
+   "question": "Where can you smoke weed in Denver?",
+   "short": "On private property where the owner allows it. Not in public, not in a car and not on federal land.",
+   "points": [
+    {"text": "Using cannabis in any way, whether smoking, eating or vaping, isn’t allowed in public places. The state lists sidewalks, parks, ski resorts, concert venues, businesses, and restaurants, cafes and bars.", "source_ids": ["co-laws"]},
+    {"text": "Private property is your best bet, but property owners can ban the use and possession of cannabis on their property. If you rent, you may not be allowed to use cannabis in your home.", "source_ids": ["co-laws"]},
+    {"text": "Cities, counties, schools, universities and employers may set their own rules and consequences.", "source_ids": ["co-laws"]},
+    {"text": "You can’t use cannabis on federal land, including national parks and national forests, and that includes ski slopes.", "source_ids": ["co-laws", "co-driving"]}
+   ],
+   "places": [
+    {"place": "A private home, where the owner allows it", "answer": "yes", "label": "Yes", "source_ids": ["co-laws"]},
+    {"place": "Your hotel room", "answer": "maybe", "label": "Only if the hotel allows it", "source_ids": ["co-laws"]},
+    {"place": "A home you rent", "answer": "maybe", "label": "Only if the owner allows it", "source_ids": ["co-laws"]},
+    {"place": "Sidewalks, parks, restaurants, cafes, bars and other businesses", "answer": "no", "label": "No", "source_ids": ["co-laws"]},
+    {"place": "Concert venues and ski resorts", "answer": "no", "label": "No", "source_ids": ["co-laws"]},
+    {"place": "Any vehicle, even as a passenger", "answer": "no", "label": "No", "source_ids": ["co-driving"]},
+    {"place": "National forests and other federal land, ski slopes included", "answer": "no", "label": "No", "source_ids": ["co-laws"]},
+    {"place": "Rocky Mountain National Park", "answer": "no", "label": "No, not even to carry it", "source_ids": ["nps-romo"]},
+    {"place": "Denver International Airport", "answer": "no", "label": "No, not even to carry it", "source_ids": ["co-driving"]}
+   ]
+  },
+  {
+   "id": "hotels",
+   "icon": "hotel",
+   "question": "Can I smoke weed in my Denver hotel room?",
+   "short": "Only if the hotel allows it. Colorado lets hotel owners ban cannabis use and possession on their property.",
+   "points": [
+    {"text": "Hotel owners can ban the use and possession of cannabis on their properties, so you may not be able to use it in a hotel room.", "source_ids": ["co-laws"]},
+    {"text": "The state tells visitors to research the places they’ll be staying in Colorado.", "source_ids": ["co-laws"]},
+    {"text": "Restaurants, cafes, bars and other businesses are among the public places where using cannabis isn’t allowed.", "source_ids": ["co-laws"]}
+   ]
+  },
+  {
+   "id": "car",
+   "icon": "car",
+   "question": "Can I use cannabis in a car, or drive after using it?",
+   "short": "No, and no. Drivers and passengers can’t open a package and use it in a vehicle, and driving high can get you a DUI.",
+   "points": [
+    {"text": "Neither drivers nor passengers may open any marijuana packaging and use the product while in a vehicle. You can be charged with a traffic offense if the product’s seal has been broken.", "source_ids": ["co-driving"]},
+    {"text": "Getting high before you drive can get you arrested for driving under the influence (DUI).", "source_ids": ["co-driving"]},
+    {"text": "Drivers with 5 nanograms of delta-9 THC per milliliter of whole blood can be prosecuted for DUI.", "source_ids": ["co-driving"]},
+    {"text": "The state advises waiting at least eight hours after eating or drinking up to 18 mg of THC before driving.", "source_ids": ["co-responsible"]}
+   ]
+  },
+  {
+   "id": "federal-land",
+   "icon": "mountain",
+   "question": "Can I bring weed to Rocky Mountain National Park or the ski slopes?",
+   "short": "No. Having or using it in Rocky Mountain National Park is prohibited, and you can’t use it on any federal land, ski slopes included.",
+   "points": [
+    {"text": "Colorado’s cannabis site says you can’t use cannabis on federal land, including national parks and national forests, and that this includes ski slopes.", "source_ids": ["co-laws"]},
+    {"text": "In Rocky Mountain National Park, possession or use is prohibited. The park says that while Colorado provides for regulated possession and use, marijuana remains an illegal drug under federal law, and that law is enforced within the park.", "source_ids": ["nps-romo"]},
+    {"text": "Ski resorts are also on the state’s list of public places where using cannabis isn’t allowed.", "source_ids": ["co-laws"]}
+   ]
+  },
+  {
+   "id": "flying",
+   "icon": "plane",
+   "question": "Can I fly home with weed from Denver?",
+   "short": "No. You can’t bring cannabis to Denver International Airport, and taking it out of Colorado is against the law.",
+   "points": [
+    {"text": "You can’t bring marijuana to Denver International Airport or any other airport.", "source_ids": ["co-driving"]},
+    {"text": "Leaving the state with any marijuana product is against the law.", "source_ids": ["co-driving"]},
+    {"text": "TSA says marijuana and some cannabis products, including some CBD oil, remain illegal under federal law unless they have no more than 0.3% THC on a dry-weight basis or are FDA-approved. Its officers don’t search for drugs, but they refer anything illegal they find to law enforcement.", "source_ids": ["tsa-mmj"], "link": {"label": "Check your home state", "href": "index.html#map"}}
+   ]
+  },
+  {
+   "id": "medical",
+   "icon": "card",
+   "question": "Does Colorado accept medical cannabis cards from other states?",
+   "short": "Colorado’s medical cards are for Colorado residents only. Visitors 21 and older can buy at retail stores with a valid ID.",
+   "points": [
+    {"text": "Colorado medical marijuana cards are available to Colorado residents and are valid only in Colorado.", "source_ids": ["co-medical"]},
+    {"text": "Adults 21 and older can buy retail cannabis at a licensed retail store by showing a valid ID that proves their age.", "source_ids": ["co-laws"]}
+   ]
+  },
+  {
+   "id": "edibles",
+   "icon": "clock",
+   "question": "How much of an edible should I take?",
+   "short": "Go slowly. For occasional users, even one 10 mg serving of THC is likely to cause impairment, and effects can take up to four hours to peak.",
+   "points": [
+    {"text": "For occasional consumers, eating or drinking even one serving (10 mg) of THC is likely to cause impairment.", "source_ids": ["co-responsible"]},
+    {"text": "The effects can peak up to four hours after eating or drinking THC and can last up to 10 hours.", "source_ids": ["co-responsible"]},
+    {"text": "Eating or drinking too much THC can make people very sick. Call the poison control hotline at 1-800-222-1222 as soon as possible, and if a reaction seems bad, call 911 or go to an emergency room right away.", "source_ids": ["co-responsible"], "link": {"label": "Call poison control", "href": "tel:18002221222"}}
+   ]
+  }
+ ],
+ "sources": [
+  {"id": "co-laws", "title": "Laws about cannabis use: age and ID, buying and possession limits, where you can use it, hotels, federal land", "publisher": "State of Colorado (cannabis.colorado.gov)", "url": "https://cannabis.colorado.gov/laws-about-cannabis-use", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "co-driving", "title": "Driving and traveling: DUI, cannabis in vehicles, airports, leaving the state", "publisher": "State of Colorado (cannabis.colorado.gov)", "url": "https://cannabis.colorado.gov/legal-marijuana-use/driving-and-traveling", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "co-responsible", "title": "Responsible use: edibles, driving after use, poison control", "publisher": "State of Colorado (cannabis.colorado.gov)", "url": "https://cannabis.colorado.gov/responsible-use", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "co-medical", "title": "Medical cannabis: Medical Marijuana Registry", "publisher": "State of Colorado (cannabis.colorado.gov)", "url": "https://cannabis.colorado.gov/medical-cannabis", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "co-lcs-retail", "title": "Colorado Law Summary: Retail Marijuana (last reviewed October 15, 2025)", "publisher": "Colorado Legislative Council Staff", "url": "https://content.leg.colorado.gov/sites/default/files/Retail%20Marijuana%20-%20Colorado%20Law%20Summary-accessible.pdf", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "nps-romo", "title": "Rocky Mountain National Park: rules and regulations (marijuana and other controlled substances; page updated October 2, 2026)", "publisher": "National Park Service", "url": "https://www.nps.gov/romo/planyourvisit/rules_regulations.htm", "checked": "2026-11-27", "kind": "primary"},
+  {"id": "tsa-mmj", "title": "What can I bring? Medical marijuana", "publisher": "Transportation Security Administration", "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana", "checked": "2026-11-27", "kind": "primary"}
+ ],
+ "attempts": [
+  {"url": "https://www.denvergov.org/Government/Departments/Marijuana-Information-Office/Know-the-Law", "tried": "2026-11-27", "result": "Not retrieved (the site's robots.txt could not be read). Denver's own consumption rules and penalties are left out."},
+  {"url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Marijuana-information/Marijuana-consumption", "tried": "2026-11-27", "result": "Not retrieved (robots.txt could not be read). Denver's consumption and hospitality licenses are left out; a Denver licensing page that did load did not list licensed businesses and conflicted with other Denver pages."},
+  {"url": "https://cdn.flydenver.com/app/uploads/2023/09/30091347/Part-30-Conduct-of-Persons-Using-the-Airport-26.09.24.pdf", "tried": "2026-11-27", "result": "Not retrieved (client error). The airport point cites the state's driving and traveling page instead."},
+  {"url": "https://med.colorado.gov/licensee-information-and-lookup-tool/licensed-facilities", "tried": "2026-11-27", "result": "Not retrieved (client error). No store list is linked."},
+  {"url": "https://content.leg.colorado.gov/sites/default/files/documents/2025A/bills/2025a_1209_enr.pdf", "tried": "2026-11-27", "result": "Read. A 2025 bill summary described raising the one-transaction sale limit to 2 ounces, but the enrolled act's text did not show that change, so the page keeps the state cannabis site's 1-ounce figure."}
+ ]
+}

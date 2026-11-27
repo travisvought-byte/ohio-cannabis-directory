@@ -30,6 +30,8 @@ from directory_brand import DEFAULT_SITE_ORIGIN, EMAIL, OHIO_HOME
 from permissions_page import KIND_LABEL, LEVEL_TEXT, chip
 from validate_permissions import evidence_level
 
+import city_guides  # visitor guides for Denver, Chicago and New York City (November 27, 2026)
+
 ROOT = Path(__file__).resolve().parent
 OUT_DIR = ROOT / 'national'
 SITE_NAME = 'The Reefer'
@@ -766,6 +768,7 @@ def featured_section(groups, name):
 # Visitor guides for a city in a state, linked near the top of that state's page (November 27, 2026).
 CITY_GUIDES = {'NV': ('las-vegas.html', 'Visiting Las Vegas?',
                       'Where visitors can and can’t use cannabis: hotels, casinos, cars, Red Rock, Lake Mead and Hoover Dam, plus lounges, driving and flying home.')}
+CITY_GUIDES.update(city_guides.state_boxes())  # CO: Denver, IL: Chicago, NY: New York City
 CITY_CSS = ('.cityguide{display:flex;gap:12px;align-items:center;background:var(--card);border:2px solid var(--gold);border-radius:14px;padding:12px 16px;margin:16px 0;max-width:820px}'
             '.cityguide .ci{flex:none;display:grid;place-items:center;width:42px;height:42px;border-radius:10px;background:var(--mint);color:var(--green)}.cityguide .ci svg{width:24px;height:24px}'
             '.cityguide p{margin:0}.cityguide a{font-weight:800;display:inline-flex;min-height:44px;align-items:center}'
@@ -2074,6 +2077,7 @@ def home_page(perm, score, directory, answers, sources, sponsors=()):
     more = [f'<a href="{href}">{esc(label)}</a>' for label, href in QUICK]
     more += [f'<a href="help.html#{slug(n)}">{esc(n)}</a>' for n in needs_in_order(perm) if slug(n) not in linked]
     more.append('<a href="las-vegas.html">Visiting Las Vegas</a>')
+    more += [f'<a href="{page}">{esc(label)}</a>' for page, label in city_guides.home_links()]
     body.append('<p class="also">Also: ' + ' · '.join(more) + ' · <a href="help.html">All national help</a></p></section>')
     body.append(joke)
 
@@ -2192,6 +2196,8 @@ def pages():
     out[weed_santa.NAME] = weed_santa.page(sys.modules[__name__], load_landing()['national_pages'][weed_santa.NAME])
     import las_vegas  # Visiting Las Vegas: cannabis rules for visitors, for MJBizCon week and after (November 27, 2026)
     out[las_vegas.NAME] = las_vegas.page(sys.modules[__name__], load_landing()['national_pages'][las_vegas.NAME], directory)
+    for name in city_guides.GUIDES:  # Denver, Chicago and New York City visitor guides (November 27, 2026)
+        out[name] = city_guides.page(sys.modules[__name__], name, load_landing()['national_pages'][name])
     for q in perm['questions']:
         out[law_page_name(q['id'])] = law_page(perm, q, answers, sources, dispensaries)
     for code, name in perm['jurisdictions'].items():
@@ -2215,7 +2221,7 @@ def main(out_dir=None):
     out_dir.mkdir(parents=True, exist_ok=True)
     for name, text in built.items():
         (out_dir / name).write_text(text, encoding='utf-8')
-    print(f'Built national/: {len(built)} pages (home, help, about, privacy, medical cards, coverage, partners, jokes, hash myths, Weed Santa, Las Vegas, law comparisons, 51 states, world section)')
+    print(f'Built national/: {len(built)} pages (home, help, about, privacy, medical cards, coverage, partners, jokes, hash myths, Weed Santa, Las Vegas, Denver, Chicago, New York City, law comparisons, 51 states, world section)')
 
 
 if __name__ == '__main__':
