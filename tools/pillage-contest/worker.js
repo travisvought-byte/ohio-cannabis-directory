@@ -129,6 +129,8 @@ async function runOf(req, env, id) {
 
 async function submit(req, env) {
   const c = cfg(env), now = Date.now();
+  // A cap per address per day, checked before the body is read, so one run key can't flood the server. Set high enough for a venue's shared Wi-Fi.
+  if (!await allow(env, 'sub:' + await ipKey(req), +(env.LIMIT_SUBS_IP || 5000), DAY)) return fail(req, env, 429, 'That’s a lot of runs sent from here today. Try again tomorrow.');
   const raw = new Uint8Array(await req.arrayBuffer());
   if (raw.length > c.maxBody) return fail(req, env, 413, 'This run is too long to send. Start a new one.');
   let text, gz;
@@ -150,7 +152,8 @@ async function submit(req, env) {
   // Play after the end doesn't count either, so the clock stops there.
   if (steps > (Math.min(now, c.end) - run.started) / 1000 * 60 * 1.01 + 600) return fail(req, env, 400, 'That run claims more time at sea than has passed.');
   const over = clean(sub.over, 12);
-  if (!over && run.last_sub && now - run.last_sub < 40000) return fail(req, env, 429, 'Sent a moment ago. It’ll go again soon.');
+  // A finished run may send right away, but not in a loop: keep five seconds between sends even then.
+  if (run.last_sub && now - run.last_sub < (over ? 5000 : 40000)) return fail(req, env, 429, 'Sent a moment ago. It’ll go again soon.');
   await env.DB.prepare('UPDATE subs SET status = ?, body = NULL WHERE run = ? AND status = ?').bind('superseded', run.id, 'pending').run();
   const claim = Math.max(0, Math.min(1e9, Math.round(+(sub.claim && sub.claim.xp) || 0)));
   const ins = await env.DB.prepare('INSERT INTO subs (run, at, steps, size, body, claim, over) VALUES (?, ?, ?, ?, ?, ?, ?)').bind(run.id, now, steps, gz.length, gz, claim, over).run();
