@@ -1,0 +1,538 @@
+{
+ "schema_version": 1,
+ "as_of": "2026-11-27",
+ "purpose": "Cannabis rules for people visiting New Orleans, for national/new-orleans.html on the-reefer.com (built by city_guides.py through build_national.pages()). Louisiana allows medical marijuana only, so this page leads with that: there are no adult-use sales, sales go only to patients with a Louisiana clinician’s recommendation and to \"visiting qualifying patients\" holding a valid medical marijuana card from another state (La. R.S. 40:1046.1), and possession without a recommendation or such a card is unlawful under La. R.S. 40:966. Its \"status\" notice and reworded yes/no table (places_caption, places_header) say so; the table answers for a medical marijuana patient, because a visitor without a card has no lawful place to have it. Every point names the official source it comes from (the Louisiana Revised Statutes on the Legislature’s site, the Louisiana Department of Health, the Louisiana Board of Pharmacy, the National Park Service and TSA); each source carries the date it was checked. No business is named and no phone number is copied; the page links the Department of Health’s own list of permitted retailers instead. Facts that no reachable official source confirmed (any 2026 change to Title 40 not yet in the Legislature’s online text, hotel or city rules, an airport rule, where patients may use it) are left out; the attempts are recorded below.",
+ "page": {
+  "state": "LA",
+  "state_name": "Louisiana",
+  "state_page": "louisiana.html",
+  "crumb": "Visiting New Orleans",
+  "h1": "Visiting New Orleans? The cannabis rules for visitors",
+  "title": "Visiting New Orleans: cannabis rules for visitors (2026)",
+  "description": "Can tourists buy weed in New Orleans? Only as medical patients. Louisiana allows medical marijuana only; visiting patients can buy with a valid card from another state. Possession without one, hemp and CBD, national parks and flying, from official sources.",
+  "adult": "For adults 21 and older. Plain summaries of Louisiana and federal sources, each linked below. Not legal advice.",
+  "prefix": "nola",
+  "place": "the New Orleans visitor page",
+  "business_note": "No business is named on this page; the Louisiana Department of Health’s own list names the permitted medical marijuana retailers. A link to a regulator’s list is not an endorsement of any business on it.",
+  "status": {
+   "icon": "card",
+   "heading": "Louisiana allows medical marijuana only",
+   "text": "Louisiana has no adult-use marijuana sales. Permitted retailers in Louisiana sell medical marijuana only to patients with a recommendation from a Louisiana clinician and to visiting patients who carry a valid medical marijuana card issued under another state’s law. Without either, having marijuana is unlawful under Louisiana law.",
+   "source_ids": [
+    "la-1046",
+    "ldh-mm",
+    "la-1046-1",
+    "la-966"
+   ]
+  },
+  "places_caption": "Where can a medical marijuana patient buy, take or use it?",
+  "places_header": "Allowed for a patient?",
+  "more": [
+   {
+    "href": "louisiana.html",
+    "label": "The full Louisiana guide",
+    "rest": ": the state’s law, record clearing and local help"
+   },
+   {
+    "href": "medical.html",
+    "label": "Getting a medical cannabis card, state by state"
+   },
+   {
+    "href": "law-public-use.html",
+    "label": "Public use in every state",
+    "rest": ": where you can and can’t use it back home"
+   },
+   {
+    "href": "law-driving.html",
+    "label": "Driving and cannabis in every state"
+   },
+   {
+    "href": "travel-warnings.html",
+    "label": "Travel warnings",
+    "rest": ": the countries and states where any amount can land you in trouble"
+   },
+   {
+    "href": "help.html#travel",
+    "label": "Flying with cannabis",
+    "rest": ": what TSA says"
+   }
+  ]
+ },
+ "state_box": "Louisiana allows medical marijuana only. Who can buy, visiting patients with another state’s card included, what having it without a card means, hemp and CBD, national park sites and flying home.",
+ "glance": [
+  {
+   "icon": "x",
+   "big": "No adult-use sales",
+   "text": "buying takes a Louisiana recommendation or another state’s card",
+   "href": "#buy"
+  },
+  {
+   "icon": "card",
+   "big": "Out-of-state cards",
+   "text": "accepted for buying at a Louisiana retailer",
+   "href": "#medical"
+  },
+  {
+   "icon": "scale",
+   "big": "Unlawful without a card",
+   "text": "even 14 grams or less can bring a fine",
+   "href": "#possession"
+  },
+  {
+   "icon": "store",
+   "big": "Hemp: 21+",
+   "text": "with a photo ID; nothing sold for inhaling",
+   "href": "#hemp"
+  },
+  {
+   "icon": "mountain",
+   "big": "Not in national parks",
+   "text": "federal law still applies",
+   "href": "#federal-land"
+  },
+  {
+   "icon": "plane",
+   "big": "Not on the plane",
+   "text": "TSA: marijuana is illegal under federal law",
+   "href": "#flying"
+  }
+ ],
+ "sections": [
+  {
+   "id": "buy",
+   "icon": "id",
+   "question": "Can tourists buy weed in New Orleans?",
+   "short": "Only as a medical marijuana patient. Louisiana has no adult-use sales. Retailers with a Louisiana marijuana retail permit sell only to patients with a Louisiana clinician’s recommendation and to visiting qualifying patients, who carry a valid medical marijuana card issued under another state’s law.",
+   "points": [
+    {
+     "text": "Medical marijuana is sold in person by a marijuana retail permit holder located in Louisiana, to patients with an authorized clinician’s recommendation for a debilitating medical condition.",
+     "source_ids": [
+      "la-1046"
+     ]
+    },
+    {
+     "text": "The Louisiana Department of Health says retailers may provide medical marijuana in an approved dosage form to any patient with a valid recommendation from a board-certified Louisiana physician.",
+     "source_ids": [
+      "ldh-mm"
+     ]
+    },
+    {
+     "text": "A visiting qualifying patient may also buy medical marijuana from a marijuana retail permit holder by showing a valid medical marijuana registry identification card, or its equivalent, issued under another state’s medical marijuana law.",
+     "source_ids": [
+      "la-1046-1"
+     ]
+    },
+    {
+     "text": "Possessing marijuana is otherwise unlawful in Louisiana.",
+     "source_ids": [
+      "la-966"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "medical",
+   "icon": "card",
+   "question": "Does Louisiana accept out-of-state medical marijuana cards?",
+   "short": "Yes, for buying at a Louisiana retailer. State law lets a visiting qualifying patient, someone who lives outside Louisiana or has lived there less than 30 days and carries a valid medical marijuana card from another state, buy medical marijuana there. The retailer keeps copies of the card, a photo ID and a form the patient signs.",
+   "points": [
+    {
+     "text": "A visiting qualifying patient is a patient with a debilitating medical condition who is not a Louisiana resident, or has lived in Louisiana for less than 30 days, and who is in actual possession of a valid medical marijuana registry identification card, or its equivalent, issued under the medical marijuana laws of another state, district, territory, commonwealth or insular possession of the United States.",
+     "source_ids": [
+      "la-1046-1"
+     ]
+    },
+    {
+     "text": "The retailer must have the visiting patient certify, on a form the Louisiana Department of Health approves, that a clinician has diagnosed them with one or more debilitating medical conditions, and sign a statement that they will not divert what they buy to anyone. The form includes the patient’s full name, address and phone number.",
+     "source_ids": [
+      "la-1046-1"
+     ]
+    },
+    {
+     "text": "The retailer keeps copies of the patient’s medical marijuana card, a valid driver’s license or other government-issued photo ID, and the signed form.",
+     "source_ids": [
+      "la-1046-1"
+     ]
+    },
+    {
+     "text": "Before selling, a pharmacist or the pharmacist’s designee reviews the patient’s records in the state’s tracking system, and reports the sale to it afterwards.",
+     "source_ids": [
+      "la-1046-1"
+     ]
+    },
+    {
+     "text": "A retailer may not sell to someone presenting as a visiting patient whose card was revoked, has expired, was obtained by fraud or is otherwise not valid and current.",
+     "source_ids": [
+      "la-1046-1"
+     ]
+    },
+    {
+     "text": "Louisiana’s marijuana possession law exempts a visiting qualifying patient as R.S. 40:1046.1 defines one.",
+     "source_ids": [
+      "la-966"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "possession",
+   "icon": "scale",
+   "question": "What happens if a visitor has weed in Louisiana without a card?",
+   "short": "It’s unlawful under Louisiana law. Having 14 grams or less is punished by a fine of up to $100, by summons rather than arrest. Having more than 14 grams can bring up to six months in parish jail on a first conviction, with higher penalties after that.",
+   "points": [
+    {
+     "text": "For 14 grams or less, on a first or any later conviction, the penalty is a fine of not more than $100. It is enforced by a summons instead of a custodial arrest.",
+     "source_ids": [
+      "la-966"
+     ]
+    },
+    {
+     "text": "For more than 14 grams, a first conviction carries a fine of up to $500, up to six months in parish jail, or both, and a second conviction a fine of up to $1,000, up to six months in parish jail, or both.",
+     "source_ids": [
+      "la-966"
+     ]
+    },
+    {
+     "text": "A third conviction for more than 14 grams carries up to two years in prison and a fine of up to $2,500. A fourth or later conviction carries up to eight years in prison, a fine of up to $5,000, or both.",
+     "source_ids": [
+      "la-966"
+     ]
+    },
+    {
+     "text": "Having two and a half pounds of marijuana or more is treated as possession with intent to distribute.",
+     "source_ids": [
+      "la-966"
+     ]
+    },
+    {
+     "text": "Patients of Louisiana’s medical marijuana program who have it in a form the program allows, and visiting qualifying patients, are exempt from these penalties. A Louisiana patient raises the exemption by producing medical records that contain the recommendation.",
+     "source_ids": [
+      "la-966"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hemp",
+   "icon": "store",
+   "question": "Are hemp and CBD products legal in Louisiana?",
+   "short": "Under Louisiana law, consumable hemp products can be sold by permitted sellers to people 21 and older who show a federal or state photo ID. Hemp products made for inhaling can’t be sold. This answer covers Louisiana law only.",
+   "points": [
+    {
+     "text": "No one may sell a consumable hemp product at retail to anyone under 21. The retailer must check the buyer’s age before the sale, with a valid federal or state photo ID or a digitized ID card.",
+     "source_ids": [
+      "la-3-1482"
+     ]
+    },
+    {
+     "text": "Processing, distributing or selling consumable hemp products requires a permit under Louisiana’s hemp law.",
+     "source_ids": [
+      "la-3-1482"
+     ]
+    },
+    {
+     "text": "Consumable hemp products for inhalation, and alcoholic beverages that contain consumable hemp, may not be sold.",
+     "source_ids": [
+      "la-3-1482"
+     ]
+    },
+    {
+     "text": "Retailers must keep consumable hemp products, other than hemp beverages, where the public can’t reach them without an employee’s help, and may not add hemp products to food or drinks they sell.",
+     "source_ids": [
+      "la-3-1482"
+     ]
+    },
+    {
+     "text": "Making, distributing or selling a consumable hemp product in violation of the hemp law is a crime under Louisiana’s controlled substances law, punishable by one to ten years in prison, a fine of up to $50,000, or both.",
+     "source_ids": [
+      "la-966"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "where",
+   "icon": "pin",
+   "question": "Where can a medical marijuana patient take it in Louisiana?",
+   "short": "Within Louisiana, but not out of it. Louisiana’s program keeps medical marijuana from being sold or transferred to or from another state, retailers may not deliver outside Louisiana, and federal law still bans it in national parks and on flights.",
+   "points": [
+    {
+     "text": "Louisiana’s rules must make sure that no medical marijuana is sold or transferred to or from a location outside the state.",
+     "source_ids": [
+      "la-1046"
+     ]
+    },
+    {
+     "text": "Under the Louisiana Department of Health’s March 2025 emergency rule, retailers may not deliver to addresses outside Louisiana, and patients remain limited to 71 grams of marijuana flower per 14-day period.",
+     "source_ids": [
+      "ldh-mm"
+     ]
+    },
+    {
+     "text": "A retailer may not sell a patient more than two and a half ounces (71 grams) of raw or crude marijuana every 14 days.",
+     "source_ids": [
+      "la-1046"
+     ]
+    },
+    {
+     "text": "Possession or use of marijuana inside a National Park Service unit, including parks, preserves, rivers and monuments, is prohibited. Marijuana remains illegal under federal law.",
+     "source_ids": [
+      "nps-mj"
+     ]
+    }
+   ],
+   "places": [
+    {
+     "place": "A Louisiana retailer with a marijuana retail permit",
+     "answer": "yes",
+     "label": "Yes, with a Louisiana recommendation or another state’s valid card",
+     "source_ids": [
+      "la-1046",
+      "la-1046-1"
+     ]
+    },
+    {
+     "place": "Delivery to an address outside Louisiana",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "ldh-mm"
+     ]
+    },
+    {
+     "place": "Taking it to or from another state",
+     "answer": "no",
+     "label": "No, the program bars sales or transfers across the state line",
+     "source_ids": [
+      "la-1046"
+     ]
+    },
+    {
+     "place": "National park sites, such as Jean Lafitte National Historical Park and Preserve",
+     "answer": "no",
+     "label": "No, not even to carry it",
+     "source_ids": [
+      "nps-mj",
+      "jela-comp"
+     ]
+    },
+    {
+     "place": "A flight, through airport security",
+     "answer": "no",
+     "label": "No, it remains illegal under federal law",
+     "source_ids": [
+      "tsa-mmj"
+     ]
+    },
+    {
+     "place": "Driving, or operating a boat, while impaired by it",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "la-14-98"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "car",
+   "icon": "car",
+   "question": "Can I drive after using marijuana in Louisiana?",
+   "short": "No. Louisiana’s law on operating a vehicle while impaired covers impairment by any drug, not just alcohol, and it applies to boats and aircraft as well as cars.",
+   "points": [
+    {
+     "text": "Operating a vehicle while impaired is a crime in Louisiana when the operator is impaired by alcohol, by any other drug or combination of drugs, or by alcohol and drugs together.",
+     "source_ids": [
+      "la-14-98"
+     ]
+    },
+    {
+     "text": "The law covers any motor vehicle, aircraft, watercraft, vessel or other means of conveyance.",
+     "source_ids": [
+      "la-14-98"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "federal-land",
+   "icon": "mountain",
+   "question": "Can I take weed to Jean Lafitte National Historical Park or other national park sites?",
+   "short": "No. The National Park Service says possessing or using marijuana inside any of its units is prohibited, because it remains illegal under federal law.",
+   "points": [
+    {
+     "text": "Possession or use of marijuana inside a National Park Service unit, including parks, preserves, rivers and monuments, is prohibited. Marijuana remains illegal under federal law.",
+     "source_ids": [
+      "nps-mj"
+     ]
+    },
+    {
+     "text": "The compendium for Jean Lafitte National Historical Park and Preserve and New Orleans Jazz National Historical Park, whose sites include the Barataria Preserve, Chalmette Battlefield and visitor centers on Decatur Street and North Peters Street in New Orleans, also bans smoking in all government-owned or leased buildings and within 25 feet of any entrance or exit used by the public.",
+     "source_ids": [
+      "jela-comp"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "flying",
+   "icon": "plane",
+   "question": "Can I fly with medical marijuana from New Orleans?",
+   "short": "Not legally. TSA says marijuana remains illegal under federal law, and Louisiana’s program keeps medical marijuana from being sold or transferred to or from another state.",
+   "points": [
+    {
+     "text": "TSA says marijuana and some cannabis products, including some CBD oil, remain illegal under federal law unless they have no more than 0.3% THC on a dry-weight basis or are FDA-approved. Its officers don’t search for drugs, but they refer anything illegal they find to law enforcement.",
+     "source_ids": [
+      "tsa-mmj"
+     ],
+     "link": {
+      "label": "Check your home state",
+      "href": "index.html#map"
+     }
+    },
+    {
+     "text": "Louisiana’s rules must make sure that no medical marijuana is sold or transferred to or from a location outside the state.",
+     "source_ids": [
+      "la-1046"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "licensed",
+   "icon": "shield",
+   "question": "Where do patients buy medical marijuana in Louisiana?",
+   "short": "Only at a retailer with a Louisiana marijuana retail permit. The Louisiana Department of Health regulates them and lists the permitted retailers and their satellite locations on its medical marijuana page.",
+   "points": [
+    {
+     "text": "The Louisiana Department of Health’s Cannabis Program has regulated medical marijuana retailers since January 1, 2025, after Act 693 of 2024 moved them from the Louisiana Board of Pharmacy to the Department of Health. Its medical marijuana page lists the permitted retailers and satellite locations.",
+     "source_ids": [
+      "ldh-mm"
+     ],
+     "link": {
+      "label": "See the permitted retailers on the Louisiana Department of Health’s list",
+      "href": "https://ldh.la.gov/page/medical-marijuana"
+     }
+    },
+    {
+     "text": "The Louisiana Board of Pharmacy says it no longer permits or regulates these businesses.",
+     "source_ids": [
+      "lbp-tmp"
+     ]
+    },
+    {
+     "text": "Retail permits are limited to 10 sites, each with up to two satellite locations, and retailers may sell only marijuana products made by manufacturers licensed in Louisiana.",
+     "source_ids": [
+      "ldh-mm"
+     ]
+    },
+    {
+     "text": "Before selling, the retailer reviews the patient’s information in the state’s tracking system.",
+     "source_ids": [
+      "la-1046"
+     ]
+    },
+    {
+     "text": "No state agency keeps a list of clinicians who recommend medical marijuana; the Department of Health tells patients to contact an authorized clinician. Recommendations must carry an expiration date no more than 12 months after they are issued.",
+     "source_ids": [
+      "ldh-mm"
+     ]
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "la-1046",
+   "title": "La. R.S. 40:1046: recommendation and sale of marijuana for therapeutic use; retail permits",
+   "publisher": "Louisiana State Legislature (Louisiana Revised Statutes)",
+   "url": "https://legis.la.gov/legis/Law.aspx?d=96986",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "la-1046-1",
+   "title": "La. R.S. 40:1046.1: sale of marijuana for therapeutic use to visiting qualifying patients",
+   "publisher": "Louisiana State Legislature (Louisiana Revised Statutes)",
+   "url": "https://legis.la.gov/Legis/Law.aspx?d=1295726",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "la-966",
+   "title": "La. R.S. 40:966: possession of marijuana, penalties, consumable hemp, and the medical marijuana exemption",
+   "publisher": "Louisiana State Legislature (Louisiana Revised Statutes)",
+   "url": "https://legis.la.gov/Legis/Law.aspx?d=98880",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "ldh-mm",
+   "title": "Medical marijuana: regulation of retailers, the March 2025 emergency rule, and the lists of permitted retailers and satellite locations",
+   "publisher": "Louisiana Department of Health",
+   "url": "https://ldh.la.gov/page/medical-marijuana",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "lbp-tmp",
+   "title": "Therapeutic marijuana pharmacy permits: transfer to the Louisiana Department of Health on January 1, 2025",
+   "publisher": "Louisiana Board of Pharmacy",
+   "url": "https://www.pharmacy.la.gov/page/therapeutic-marijuana-pharmacy-permits",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "la-3-1482",
+   "title": "La. R.S. 3:1482: consumable hemp products; prohibitions",
+   "publisher": "Louisiana State Legislature (Louisiana Revised Statutes)",
+   "url": "https://www.legis.la.gov/legis/Law.aspx?d=1147993",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "nps-mj",
+   "title": "Marijuana and other substances: possession or use in National Park Service units (Bering Land Bridge National Preserve page)",
+   "publisher": "National Park Service",
+   "url": "https://www.nps.gov/bela/learn/management/marijuana.htm",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "jela-comp",
+   "title": "Superintendent’s Compendium: Jean Lafitte National Historical Park and Preserve and New Orleans Jazz National Historical Park",
+   "publisher": "National Park Service, Jean Lafitte National Historical Park and Preserve",
+   "url": "https://www.nps.gov/jela/learn/management/superintendents-compendium.htm",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "tsa-mmj",
+   "title": "What can I bring? Medical marijuana",
+   "publisher": "Transportation Security Administration",
+   "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "la-14-98",
+   "title": "La. R.S. 14:98: operating a vehicle while impaired",
+   "publisher": "Louisiana State Legislature (Louisiana Revised Statutes)",
+   "url": "https://legis.la.gov/legis/Law.aspx?d=78751",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  }
+ ],
+ "attempts": [
+  {
+   "url": "https://legis.la.gov/legis/LawSearch.aspx",
+   "tried": "2026-11-27",
+   "result": "Read: the Legislature says its online law text is updated through the 2025 First Extraordinary Session, and its list of laws updated through the 2026 Regular Session (last updated November 4, 2026) does not yet include Title 40. Any 2026 change to R.S. 40:966, 40:1046 or 40:1046.1 could not be confirmed, so none is stated; Titles 3 and 14 are on that list."
+  },
+  {
+   "url": "https://www.nps.gov/jela/learn/management/index.htm",
+   "tried": "2026-11-27",
+   "result": "Read: the park’s management page says nothing about marijuana; its compendium and the Park Service’s general statement are cited instead."
+  }
+ ]
+}

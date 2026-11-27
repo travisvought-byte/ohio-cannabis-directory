@@ -1,0 +1,565 @@
+{
+ "schema_version": 1,
+ "as_of": "2026-11-27",
+ "purpose": "Cannabis rules for people visiting San Francisco, for national/san-francisco.html on the-reefer.com (built by city_guides.py through build_national.pages()). Every point names the official source it comes from (the City and County of San Francisco’s Office of Cannabis and its lounge-permit page, California’s Department of Cannabis Control and Department of Public Health, the National Park Service and TSA); each source carries the date it was checked. The California state sources are the ones the Los Angeles page uses. No business is named; the page links the Department of Cannabis Control’s License Search instead. Facts that no reachable official source confirmed (an SFO cannabis rule, a city list of permitted retailers or lounges, the status of the new cannabis cafe rules) are left out; the attempts are recorded below.",
+ "page": {
+  "state": "CA",
+  "state_name": "California",
+  "state_page": "california.html",
+  "crumb": "Visiting San Francisco",
+  "h1": "Visiting San Francisco? The cannabis rules for visitors",
+  "title": "Visiting San Francisco: cannabis rules for visitors (2026)",
+  "description": "Can tourists buy weed in San Francisco? Yes, at 21 with a valid ID, a passport included, from a licensed store. Limits, consumption lounges, where you can’t smoke (parks, sidewalks, hotels, cars, Alcatraz) and flying home, from official sources.",
+  "adult": "For adults 21 and older. Plain summaries of California State, City and County of San Francisco and federal sources, each linked below. Not legal advice.",
+  "prefix": "sf",
+  "place": "the San Francisco visitor page",
+  "business_note": "No business is named on this page; the Department of Cannabis Control’s License Search names licensed retailers. A link to a regulator’s list is not an endorsement of any business on it.",
+  "more": [
+   {
+    "href": "california.html",
+    "label": "The full California guide",
+    "rest": ": the state’s law, record clearing and local help"
+   },
+   {
+    "href": "los-angeles.html",
+    "label": "Visiting Los Angeles",
+    "rest": ": the same state rules, with Los Angeles’s own"
+   },
+   {
+    "href": "law-public-use.html",
+    "label": "Public use in every state",
+    "rest": ": where you can and can’t use it back home"
+   },
+   {
+    "href": "law-driving.html",
+    "label": "Driving and cannabis in every state"
+   },
+   {
+    "href": "travel-warnings.html",
+    "label": "Travel warnings",
+    "rest": ": the countries and states where any amount can land you in trouble"
+   },
+   {
+    "href": "help.html#travel",
+    "label": "Flying with cannabis",
+    "rest": ": what TSA says"
+   }
+  ]
+ },
+ "state_box": "Where visitors can and can’t use cannabis in San Francisco: consumption lounges, hotels, cars, parks and sidewalks, Alcatraz and Muir Woods, plus how much you can buy and flying home.",
+ "glance": [
+  {
+   "icon": "id",
+   "big": "21+",
+   "text": "to buy at a licensed store, with a valid ID",
+   "href": "#buy"
+  },
+  {
+   "icon": "shield",
+   "big": "Licensed only",
+   "text": "check the store’s state license before you buy",
+   "href": "#licensed"
+  },
+  {
+   "icon": "scale",
+   "big": "28.5 g",
+   "text": "of cannabis and 8 grams of concentrate",
+   "href": "#limits"
+  },
+  {
+   "icon": "nosmoke",
+   "big": "Not in public",
+   "text": "not in parks, on sidewalks or in most buildings",
+   "href": "#where"
+  },
+  {
+   "icon": "lounge",
+   "big": "Lounges",
+   "text": "you can consume at a dispensary with a consumption lounge",
+   "href": "#lounges"
+  },
+  {
+   "icon": "mountain",
+   "big": "Not at Alcatraz",
+   "text": "or anywhere else the Park Service runs",
+   "href": "#federal-land"
+  }
+ ],
+ "sections": [
+  {
+   "id": "buy",
+   "icon": "id",
+   "question": "Can tourists buy weed in San Francisco?",
+   "short": "Yes, if you are 21 or older and show a valid ID, such as a driver’s license or a passport, at a licensed store. In San Francisco a store needs both a city permit and a California license.",
+   "points": [
+    {
+     "text": "It’s legal in California to buy and use cannabis if you are 21 or older. San Francisco’s Office of Cannabis says to buy only from licensed retailers.",
+     "source_ids": [
+      "sf-rights"
+     ]
+    },
+    {
+     "text": "Licensed retailers must confirm your age and identity with a valid ID. The Department of Cannabis Control lists a government-issued ID with a photo, such as a driver’s license, an Armed Forces ID, or a passport issued by the United States or a foreign government.",
+     "source_ids": [
+      "dcc-events-faq"
+     ]
+    },
+    {
+     "text": "To sell cannabis in San Francisco, a business needs a San Francisco Retail Cannabis Permit as well as a California license.",
+     "source_ids": [
+      "sf-rights"
+     ]
+    },
+    {
+     "text": "San Francisco’s Office of Cannabis warns that if you are not a U.S. citizen, using cannabis can hurt your immigration status.",
+     "source_ids": [
+      "sf-rights"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "licensed",
+   "icon": "shield",
+   "question": "How do I know a San Francisco cannabis store is licensed?",
+   "short": "Look for the state license in the window and scan its QR code, or look the store up in the Department of Cannabis Control’s License Search.",
+   "points": [
+    {
+     "text": "Every cannabis retailer in California must have a license from the Department of Cannabis Control. Some stores that look legitimate are not licensed and may sell products that have not been tested.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "text": "Licensed retailers display their state license in the storefront window, and you can scan its QR code to check the license’s status.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "text": "The Department’s License Search is updated daily and can be used to check a license or to find licensed retailers.",
+     "source_ids": [
+      "dcc-search"
+     ],
+     "link": {
+      "label": "Check a store in California’s License Search",
+      "href": "https://search.cannabis.ca.gov/"
+     }
+    }
+   ]
+  },
+  {
+   "id": "limits",
+   "icon": "scale",
+   "question": "How much weed can I have in San Francisco?",
+   "short": "Up to 1 ounce (28.5 grams) of cannabis and up to 8 grams of concentrated cannabis, the same amounts the state gives as the daily limit for adult-use customers.",
+   "points": [
+    {
+     "text": "Adults can buy and carry up to 1 ounce (28.5 grams) of cannabis and up to 8 grams of concentrated cannabis, San Francisco’s Office of Cannabis says.",
+     "source_ids": [
+      "sf-rights"
+     ]
+    },
+    {
+     "text": "The Department of Cannabis Control gives the same amounts as the daily limit for adult-use customers: 28.5 grams of non-concentrated cannabis and 8 grams of concentrated cannabis.",
+     "source_ids": [
+      "dcc-events-faq"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "where",
+   "icon": "pin",
+   "question": "Where can you smoke weed in San Francisco?",
+   "short": "In a private home where the owner allows it, or at a dispensary with a consumption lounge. Not in parks or on sidewalks, not inside most buildings, not near schools or children, not at outdoor public events and not anywhere tobacco smoking is banned.",
+   "points": [
+    {
+     "text": "You can’t smoke, vape, eat or otherwise use cannabis in public places such as parks and sidewalks, near schools or anywhere children are present, inside most buildings, or at outdoor public events such as music festivals, street fairs and parades.",
+     "source_ids": [
+      "sf-rights"
+     ]
+    },
+    {
+     "text": "Inside most buildings includes workplaces, restaurants and bars, entertainment venues and the common areas of multi-unit housing.",
+     "source_ids": [
+      "sf-rights"
+     ]
+    },
+    {
+     "text": "Generally, you can’t smoke or vape cannabis anywhere you can’t smoke tobacco. You can use it in a private home if the owner allows it, and at a dispensary that has a consumption lounge.",
+     "source_ids": [
+      "sf-rights"
+     ]
+    },
+    {
+     "text": "Under state law, you also can’t smoke cannabis within 1,000 feet of a school, day care center or youth center while children are present, and property owners can ban cannabis use on their property.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    }
+   ],
+   "places": [
+    {
+     "place": "A private home, where the owner allows it",
+     "answer": "yes",
+     "label": "Yes",
+     "source_ids": [
+      "sf-rights"
+     ]
+    },
+    {
+     "place": "A dispensary with a consumption lounge",
+     "answer": "yes",
+     "label": "Yes",
+     "source_ids": [
+      "sf-rights"
+     ]
+    },
+    {
+     "place": "Your hotel room",
+     "answer": "maybe",
+     "label": "Only if the hotel allows it",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "place": "Parks and sidewalks",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "sf-rights"
+     ]
+    },
+    {
+     "place": "Restaurants, bars, workplaces and most other buildings",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "sf-rights"
+     ]
+    },
+    {
+     "place": "Music festivals, street fairs, parades and other outdoor public events",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "sf-rights"
+     ]
+    },
+    {
+     "place": "Near schools, or anywhere children are present",
+     "answer": "no",
+     "label": "No, and you can’t even carry it at places such as day care centers",
+     "source_ids": [
+      "sf-rights"
+     ]
+    },
+    {
+     "place": "Anywhere tobacco smoking is banned",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "sf-rights"
+     ]
+    },
+    {
+     "place": "A car, while driving or riding in it",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "sf-rights"
+     ]
+    },
+    {
+     "place": "Alcatraz, Muir Woods and other national park sites",
+     "answer": "no",
+     "label": "No, not even to carry it",
+     "source_ids": [
+      "nps-mj",
+      "goga-comp"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lounges",
+   "icon": "lounge",
+   "question": "Are there cannabis lounges in San Francisco?",
+   "short": "Yes. San Francisco’s Office of Cannabis says you can consume cannabis at a dispensary that has a consumption lounge, and the city issues three kinds of lounge permit, one of them for smoking or vaping.",
+   "points": [
+    {
+     "text": "You can consume cannabis in a dispensary that has a consumption lounge, San Francisco’s Office of Cannabis says.",
+     "source_ids": [
+      "sf-rights"
+     ]
+    },
+    {
+     "text": "Article 8A of San Francisco’s Health Code lets the Department of Public Health set the rules for cannabis lounges. There are three lounge permit types: Type A for pre-packaged cannabis products, Type B for products prepared on site, and Type C for smoking or vaping.",
+     "source_ids": [
+      "sf-lounge"
+     ]
+    },
+    {
+     "text": "A business needs a San Francisco cannabis business permit before it can apply for a lounge permit.",
+     "source_ids": [
+      "sf-lounge"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hotels",
+   "icon": "hotel",
+   "question": "Can I smoke weed in my San Francisco hotel room?",
+   "short": "Usually not. California’s cannabis regulator says most hotels don’t allow guests to use cannabis in their rooms, so ask the front desk first, and San Francisco bans smoking or vaping cannabis wherever tobacco smoking is banned.",
+   "points": [
+    {
+     "text": "Most hotels do not allow guests to use cannabis in their hotel room. The Department of Cannabis Control says to ask the reception desk about the hotel’s policy.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "text": "If you are staying in a vacation rental, check with the owner.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "text": "Generally, you can’t smoke or vape cannabis anywhere you can’t smoke tobacco, San Francisco’s Office of Cannabis says.",
+     "source_ids": [
+      "sf-rights"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "car",
+   "icon": "car",
+   "question": "Can I have weed in a car in San Francisco, or drive after using it?",
+   "short": "Keep it sealed or in the trunk. You can’t drive or ride with an open container of cannabis, and driving high is a DUI.",
+   "points": [
+    {
+     "text": "You can’t drive or ride in a car with an open container of cannabis. It must be sealed or kept in the trunk.",
+     "source_ids": [
+      "sf-rights"
+     ]
+    },
+    {
+     "text": "Driving under the influence of cannabis is illegal. You can be arrested and fined, and your driver’s license can be suspended.",
+     "source_ids": [
+      "sf-rights"
+     ]
+    },
+    {
+     "text": "Driving under the influence of cannabis carries the same potential penalties as driving under the influence of alcohol.",
+     "source_ids": [
+      "dcc-responsible"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "federal-land",
+   "icon": "mountain",
+   "question": "Can I bring weed to Alcatraz or Muir Woods?",
+   "short": "No. Both are National Park Service sites, and the Park Service bans possessing or using marijuana in its parks because federal law still applies there.",
+   "points": [
+    {
+     "text": "Possession or use of marijuana inside a National Park Service unit, including parks, preserves, rivers and monuments, is prohibited. Marijuana remains illegal under federal law.",
+     "source_ids": [
+      "nps-mj"
+     ]
+    },
+    {
+     "text": "San Francisco’s Office of Cannabis warns that you can be arrested or prosecuted under federal law for buying or using cannabis on federal land, including national parks, federal buildings, military installations and airports.",
+     "source_ids": [
+      "sf-rights"
+     ]
+    },
+    {
+     "text": "The Golden Gate National Recreation Area’s compendium, which covers Alcatraz, Fort Point and Muir Woods, also bans smoking on Alcatraz Island except in the area designated for smoking at the dock, inside the historic fort at Fort Point, and at Muir Woods National Monument outside designated parking areas.",
+     "source_ids": [
+      "goga-comp"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "flying",
+   "icon": "plane",
+   "question": "Can I fly home with weed from San Francisco?",
+   "short": "No. California’s cannabis regulator says you can’t take cannabis across state lines, San Francisco’s Office of Cannabis lists airports among the places federal law is enforced, and TSA refers anything illegal it finds to law enforcement.",
+   "points": [
+    {
+     "text": "Under federal law, you can’t take cannabis across state lines.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "text": "Airports are among the places policed by federal authorities, where buying or using cannabis can get you arrested or prosecuted under federal law, San Francisco’s Office of Cannabis says.",
+     "source_ids": [
+      "sf-rights"
+     ]
+    },
+    {
+     "text": "TSA says marijuana and some cannabis products, including some CBD oil, remain illegal under federal law unless they have no more than 0.3% THC on a dry-weight basis or are FDA-approved. Its officers don’t search for drugs, but they refer anything illegal they find to law enforcement.",
+     "source_ids": [
+      "tsa-mmj"
+     ],
+     "link": {
+      "label": "Check your home state",
+      "href": "index.html#map"
+     }
+    }
+   ]
+  },
+  {
+   "id": "medical",
+   "icon": "card",
+   "question": "Does California accept medical cannabis cards from other states?",
+   "short": "No. California does not recognize other states’ medical marijuana identification cards, but visitors 21 and older can buy at adult-use stores.",
+   "points": [
+    {
+     "text": "California’s Department of Public Health says the state does not recognize other states’ medical marijuana identification cards.",
+     "source_ids": [
+      "cdph-mmic"
+     ]
+    },
+    {
+     "text": "Adults 21 and older can still buy cannabis for adult use at a licensed store.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "edibles",
+   "icon": "clock",
+   "question": "How much of an edible should I take?",
+   "short": "Start low and go slow. California’s regulator says edibles can take up to two hours to start working and up to four hours for the full effect.",
+   "points": [
+    {
+     "text": "Edibles can take up to two hours to begin working and up to four hours for their full effects. The Department of Cannabis Control’s advice is “Start low, go slow!”",
+     "source_ids": [
+      "dcc-responsible"
+     ]
+    },
+    {
+     "text": "Lock cannabis away from children and pets. San Francisco’s Office of Cannabis lists Poison Control at 1-800-222-1222, and 911 for severe symptoms.",
+     "source_ids": [
+      "sf-rights"
+     ]
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "sf-rights",
+   "title": "Know your rights as a cannabis consumer: buying, limits, where you can and can’t use cannabis, driving and federal land",
+   "publisher": "City and County of San Francisco, Office of Cannabis",
+   "url": "https://www.sf.gov/information--know-your-rights-cannabis-consumer",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "dcc-legal",
+   "title": "What’s legal: age, where you can use cannabis, hotels, vehicles, federal land and licensed retailers",
+   "publisher": "California Department of Cannabis Control",
+   "url": "https://www.cannabis.ca.gov/consumers/whats-legal/",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "dcc-events-faq",
+   "title": "Temporary cannabis events FAQs: valid ID, daily purchase limits and adult-use possession limits",
+   "publisher": "California Department of Cannabis Control",
+   "url": "https://www.cannabis.ca.gov/licensees/events/temporary-cannabis-events-faqs/",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "dcc-search",
+   "title": "Search for a licensed business: the License Search tool",
+   "publisher": "California Department of Cannabis Control",
+   "url": "https://www.cannabis.ca.gov/resources/search-for-licensed-business/",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "sf-lounge",
+   "title": "Get a permit to open a cannabis lounge: Health Code Article 8A and the three lounge permit types",
+   "publisher": "City and County of San Francisco",
+   "url": "https://www.sf.gov/get-permit-open-cannabis-lounge",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "dcc-responsible",
+   "title": "Responsible cannabis use: edibles, driving and storing cannabis safely",
+   "publisher": "California Department of Cannabis Control",
+   "url": "https://www.cannabis.ca.gov/consumers/responsible-cannabis-use/",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "nps-mj",
+   "title": "Marijuana and other substances: possession or use in National Park Service units (Bering Land Bridge National Preserve page)",
+   "publisher": "National Park Service",
+   "url": "https://www.nps.gov/bela/learn/management/marijuana.htm",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "goga-comp",
+   "title": "Superintendent’s Compendium (2025): smoking closures, including Alcatraz Island, Fort Point and Muir Woods",
+   "publisher": "National Park Service, Golden Gate National Recreation Area",
+   "url": "https://home.nps.gov/goga/learn/management/superintendents-compendium.htm",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "tsa-mmj",
+   "title": "What can I bring? Medical marijuana",
+   "publisher": "Transportation Security Administration",
+   "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "cdph-mmic",
+   "title": "Medical Marijuana Identification Card Program FAQs",
+   "publisher": "California Department of Public Health",
+   "url": "https://www.cdph.ca.gov/Programs/CHSI/Pages/MMICP-FAQs.aspx",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  }
+ ],
+ "attempts": [
+  {
+   "url": "https://www.flysfo.com/",
+   "tried": "2026-11-27",
+   "result": "Not retrieved: the site is blocked in this environment’s browser. No SFO-specific cannabis rule is stated."
+  },
+  {
+   "url": "https://sfplanninggis.org/cannabisretail/",
+   "tried": "2026-11-27",
+   "result": "Read: the Office of Cannabis’s link for permitted locations opens a zoning and application map, not a list of permitted retailers, so the page links the state’s License Search instead."
+  },
+  {
+   "url": "https://www.sf.gov/frequently-asked-questions-faqs-about-cannabis-cafes",
+   "tried": "2026-11-27",
+   "result": "Read: describes rules for cannabis cafes under a newer city ordinance, but whether any cafe operates under them was not clear, so cafes are left out."
+  },
+  {
+   "url": "https://home.nps.gov/goga/learn/management/lawsandpolicies.htm",
+   "tried": "2026-11-27",
+   "result": "Read: the Golden Gate National Recreation Area’s laws and policies page says nothing about cannabis; its compendium and the Park Service’s general statement are cited instead."
+  }
+ ]
+}

@@ -1,0 +1,506 @@
+{
+ "schema_version": 1,
+ "as_of": "2026-11-27",
+ "purpose": "Cannabis rules for people visiting Portland, Oregon, for national/portland.html on the-reefer.com (built by city_guides.py through build_national.pages()). Every point names the official source it comes from (the Oregon Liquor and Cannabis Commission, ORS chapters 475C and 811 on the Legislature’s site, the Oregon Health Authority, the U.S. Forest Service and TSA); each source carries the date it was checked. No business is named; the page links the OLCC’s own report and map of licensed businesses instead. Facts that no reachable official source confirmed (a PDX cannabis rule, a Mount Hood National Forest or Columbia River Gorge rule of their own, whether Oregon recognizes other states’ medical cards, open-container rules for cars) are left out; the attempts are recorded below.",
+ "page": {
+  "state": "OR",
+  "state_name": "Oregon",
+  "state_page": "oregon.html",
+  "crumb": "Visiting Portland",
+  "h1": "Visiting Portland? The cannabis rules for visitors",
+  "title": "Visiting Portland, Oregon: cannabis rules for visitors (2026)",
+  "description": "Can tourists buy weed in Portland? Yes, at 21 with a valid ID, out-of-state licenses and passports included, from an OLCC-licensed store. Daily limits, public use, hotels, bars, cars, Mount Hood National Forest and why it can’t leave Oregon, from official sources.",
+  "adult": "For adults 21 and older. Plain summaries of Oregon State and federal sources, each linked below. Not legal advice.",
+  "prefix": "pdx",
+  "place": "the Portland visitor page",
+  "business_note": "No business is named on this page; the Oregon Liquor and Cannabis Commission’s own report and map name licensed retailers. A link to a regulator’s list is not an endorsement of any business on it.",
+  "more": [
+   {
+    "href": "oregon.html",
+    "label": "The full Oregon guide",
+    "rest": ": the state’s law, record clearing and local help"
+   },
+   {
+    "href": "seattle.html",
+    "label": "Visiting Seattle",
+    "rest": ": Washington’s rules for visitors"
+   },
+   {
+    "href": "law-public-use.html",
+    "label": "Public use in every state",
+    "rest": ": where you can and can’t use it back home"
+   },
+   {
+    "href": "law-driving.html",
+    "label": "Driving and cannabis in every state"
+   },
+   {
+    "href": "travel-warnings.html",
+    "label": "Travel warnings",
+    "rest": ": the countries and states where any amount can land you in trouble"
+   },
+   {
+    "href": "help.html#travel",
+    "label": "Flying with cannabis",
+    "rest": ": what TSA says"
+   }
+  ]
+ },
+ "state_box": "Where visitors can and can’t use cannabis in Portland: hotels, bars, cars, public places and Mount Hood National Forest, plus how much you can buy, how to check a store’s license and why none of it can leave Oregon.",
+ "glance": [
+  {
+   "icon": "id",
+   "big": "21+",
+   "text": "to buy at an OLCC-licensed store, with a valid ID",
+   "href": "#buy"
+  },
+  {
+   "icon": "shield",
+   "big": "OLCC licensed",
+   "text": "check the store on the state’s list",
+   "href": "#licensed"
+  },
+  {
+   "icon": "scale",
+   "big": "2 oz",
+   "text": "of usable marijuana in public, 8 oz at home",
+   "href": "#limits"
+  },
+  {
+   "icon": "nosmoke",
+   "big": "Not in public",
+   "text": "not at bars either, smoker patios included",
+   "href": "#where"
+  },
+  {
+   "icon": "car",
+   "big": "Not in the car",
+   "text": "for drivers and passengers on the road",
+   "href": "#car"
+  },
+  {
+   "icon": "x",
+   "big": "Stays in Oregon",
+   "text": "not even to Washington",
+   "href": "#flying"
+  }
+ ],
+ "sections": [
+  {
+   "id": "buy",
+   "icon": "id",
+   "question": "Can tourists buy weed in Portland?",
+   "short": "Yes, if you are 21 or older and show a valid ID at a retailer licensed by the Oregon Liquor and Cannabis Commission (OLCC). Oregon law accepts a driver license from any state and a passport from any country.",
+   "points": [
+    {
+     "text": "Adults 21 and older can buy recreational marijuana at an OLCC-licensed retailer. You must be 21 or older to have or use it, at home too.",
+     "source_ids": [
+      "olcc-faq"
+     ]
+    },
+    {
+     "text": "Before selling, a licensed retailer must check ID. Accepted IDs include a passport issued by the United States or a foreign government, a driver license issued by Oregon or another state, another state-issued photo ID that shows your name, date of birth and physical description, and NEXUS or SENTRI cards.",
+     "source_ids": [
+      "ors-475c"
+     ]
+    },
+    {
+     "text": "Recreational marijuana can’t be sold or smoked in public.",
+     "source_ids": [
+      "olcc-faq"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "licensed",
+   "icon": "shield",
+   "question": "How do I know a Portland cannabis store is licensed?",
+   "short": "Look it up in the OLCC’s list of licensed marijuana businesses or on its map, and buy only at an OLCC-licensed retailer.",
+   "points": [
+    {
+     "text": "The OLCC’s Marijuana Licensed Businesses report lists licensed marijuana businesses, retailers included.",
+     "source_ids": [
+      "olcc-faq"
+     ],
+     "link": {
+      "label": "Check a store on the OLCC’s list of licensed marijuana businesses",
+      "href": "https://data.olcc.state.or.us/t/OLCCPublic/views/CannabisBusinessLicensesEndorsements/CannabisLicensesEndorsements"
+     }
+    },
+    {
+     "text": "The OLCC also publishes a map of licensed businesses.",
+     "source_ids": [
+      "olcc-faq"
+     ],
+     "link": {
+      "label": "See licensed retailers on the OLCC’s map",
+      "href": "https://experience.arcgis.com/experience/42b6078fdad344b987067986193b2d16"
+     }
+    }
+   ]
+  },
+  {
+   "id": "limits",
+   "icon": "scale",
+   "question": "How much weed can I have in Oregon?",
+   "short": "Up to 2 ounces of usable marijuana in a public place and up to 8 ounces at home. In one day a store can sell you up to 2 ounces of usable marijuana and 10 grams of extracts or concentrates, among other limits.",
+   "points": [
+    {
+     "text": "Adults 21 and older may have up to 2 ounces of usable marijuana in a public place and up to 8 ounces at home, plus up to 16 ounces of solid marijuana products or concentrates, 72 ounces of liquid products and 1 ounce of extracts bought from a retailer.",
+     "source_ids": [
+      "olcc-faq"
+     ]
+    },
+    {
+     "text": "Having more than 2 ounces of usable marijuana in a public place, or more than 8 ounces in all, is unlawful under ORS 475C.337.",
+     "source_ids": [
+      "ors-475c"
+     ]
+    },
+    {
+     "text": "In one day, a retailer may sell one customer up to 2 ounces of usable marijuana, 16 ounces of solid products, 72 fluid ounces of liquid products, 10 grams of extracts or concentrates, 10 grams of products for inhalation, 4 immature plants and 10 seeds.",
+     "source_ids": [
+      "olcc-faq"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "where",
+   "icon": "pin",
+   "question": "Where can you smoke weed in Portland?",
+   "short": "At home or on other private property. Using marijuana in any public place is illegal in Oregon, and bars, restaurants and their smoker patios count as public places.",
+   "points": [
+    {
+     "text": "Using marijuana items in a public place is unlawful in Oregon, a Class B violation under ORS 475C.377.",
+     "source_ids": [
+      "ors-475c"
+     ]
+    },
+    {
+     "text": "A public place is anywhere the general public has access, including streets, parks, playgrounds, schools, places of amusement, public transportation, and the hallways, lobbies and other shared parts of hotels and apartment buildings.",
+     "source_ids": [
+      "olcc-faq"
+     ]
+    },
+    {
+     "text": "The OLCC says to use marijuana at home or on private property, and that edibles, too, are for private places only.",
+     "source_ids": [
+      "olcc-educate"
+     ]
+    },
+    {
+     "text": "The OLCC considers any business with a liquor license a public place, including its smoker patios and decks.",
+     "source_ids": [
+      "olcc-faq"
+     ]
+    },
+    {
+     "text": "Oregon’s Indoor Clean Air Act covers smoking and vaping cannabis. It also bans smoking within 10 feet of the entrances, exits, accessibility ramps, windows that open and air-intake vents of workplaces and public places.",
+     "source_ids": [
+      "oha-icaa"
+     ]
+    }
+   ],
+   "places": [
+    {
+     "place": "A private home or other private property",
+     "answer": "yes",
+     "label": "Yes",
+     "source_ids": [
+      "olcc-educate"
+     ]
+    },
+    {
+     "place": "Streets, parks, playgrounds and other public places",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "ors-475c",
+      "olcc-faq"
+     ]
+    },
+    {
+     "place": "Bars and restaurants, smoker patios and decks included",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "olcc-faq"
+     ]
+    },
+    {
+     "place": "Hotel hallways, lobbies and other shared areas",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "olcc-faq"
+     ]
+    },
+    {
+     "place": "Smoking or vaping in a hotel room",
+     "answer": "maybe",
+     "label": "Only in a room the hotel designates for smoking",
+     "source_ids": [
+      "oha-icaa"
+     ]
+    },
+    {
+     "place": "Within 10 feet of a building’s entrances, exits, opening windows or air intakes",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "oha-icaa"
+     ]
+    },
+    {
+     "place": "A car on the road, as driver or passenger",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "ors-811"
+     ]
+    },
+    {
+     "place": "National forests, such as Mount Hood National Forest",
+     "answer": "no",
+     "label": "No, not even to carry it",
+     "source_ids": [
+      "usfs-nfs"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hotels",
+   "icon": "hotel",
+   "question": "Can I smoke weed in my Portland hotel room?",
+   "short": "Only in a room the hotel has designated for smoking. Oregon’s Indoor Clean Air Act, which covers smoking and vaping cannabis, makes an exception for those rooms, and hotel hallways and lobbies are public places, where using marijuana is illegal.",
+   "points": [
+    {
+     "text": "The Indoor Clean Air Act makes an exception for hotel and motel rooms designated as smoking rooms, which may be no more than 25 percent of a hotel’s sleeping rooms.",
+     "source_ids": [
+      "oha-icaa"
+     ]
+    },
+    {
+     "text": "The hallways, lobbies and other parts of a hotel that aren’t rooms for staying in are public places.",
+     "source_ids": [
+      "olcc-faq"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lounges",
+   "icon": "lounge",
+   "question": "Can I use weed at a bar, club or lounge in Portland?",
+   "short": "No. The OLCC treats any business with a liquor license, smoker patios and decks included, as a public place, and Oregon’s Indoor Clean Air Act requires members-only businesses to be smoke- and vapor-free, with private events covered too.",
+   "points": [
+    {
+     "text": "Using marijuana at a bar or restaurant is not allowed: the OLCC considers any business with a liquor license a public place, including its smoker patios and decks.",
+     "source_ids": [
+      "olcc-faq"
+     ]
+    },
+    {
+     "text": "Under the Indoor Clean Air Act, “members-only” businesses must be free of smoke, vapor and inhalants, and private events are still subject to the law.",
+     "source_ids": [
+      "oha-icaa"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "car",
+   "icon": "car",
+   "question": "Can I use weed in a car in Oregon, or drive after using it?",
+   "short": "No. Using marijuana in a car on the road is an offense for drivers and passengers alike, and driving while impaired by marijuana is DUII.",
+   "points": [
+    {
+     "text": "Under ORS 811.482, using a marijuana item in a motor vehicle on a highway is a Class B traffic violation. Using includes inhaling the smoke, whether you are the driver or a passenger.",
+     "source_ids": [
+      "ors-811"
+     ]
+    },
+    {
+     "text": "Driving under the influence of intoxicants (DUII) includes being impaired by marijuana.",
+     "source_ids": [
+      "olcc-faq"
+     ]
+    },
+    {
+     "text": "The Oregon Health Authority reminds people not to drive under the influence of marijuana, because it is illegal.",
+     "source_ids": [
+      "oha-health"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "federal-land",
+   "icon": "mountain",
+   "question": "Can I take weed to Mount Hood National Forest?",
+   "short": "No. The U.S. Forest Service says possessing or using any amount of cannabis on National Forest System lands is still prohibited, because cannabis remains illegal under federal law.",
+   "points": [
+    {
+     "text": "Cannabis is illegal on National Forest System lands. Possession or use of any amount is still prohibited, the Forest Service says, because cannabis remains a Schedule I controlled substance under federal law.",
+     "source_ids": [
+      "usfs-nfs"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "flying",
+   "icon": "plane",
+   "question": "Can I take weed home from Portland?",
+   "short": "No. The OLCC says marijuana can’t be taken into or out of Oregon, Washington included, and TSA says it remains illegal under federal law.",
+   "points": [
+    {
+     "text": "Taking marijuana to Washington or California is not allowed: crossing state lines with it is a federal offense.",
+     "source_ids": [
+      "olcc-faq"
+     ]
+    },
+    {
+     "text": "You can’t take marijuana into or out of Oregon, and that includes Washington, the OLCC says.",
+     "source_ids": [
+      "olcc-educate"
+     ]
+    },
+    {
+     "text": "TSA says marijuana and some cannabis products, including some CBD oil, remain illegal under federal law unless they have no more than 0.3% THC on a dry-weight basis or are FDA-approved. Its officers don’t search for drugs, but they refer anything illegal they find to law enforcement.",
+     "source_ids": [
+      "tsa-mmj"
+     ],
+     "link": {
+      "label": "Check your home state",
+      "href": "index.html#map"
+     }
+    }
+   ]
+  },
+  {
+   "id": "medical",
+   "icon": "card",
+   "question": "Can visitors use Oregon’s medical marijuana program?",
+   "short": "Oregon’s medical marijuana program is for Oregon residents: its application asks for proof of current Oregon residency. Visitors 21 and older can buy at adult-use stores instead.",
+   "points": [
+    {
+     "text": "Applicants to the Oregon Medical Marijuana Program must give proof of current Oregon residency, such as an Oregon driver license or ID card, or a utility bill or rental agreement.",
+     "source_ids": [
+      "ommp-app"
+     ]
+    },
+    {
+     "text": "Adults 21 and older can buy recreational marijuana at an OLCC-licensed retailer.",
+     "source_ids": [
+      "olcc-faq"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "edibles",
+   "icon": "clock",
+   "question": "How much of an edible should I take?",
+   "short": "Start with a single serving that is low in THC. The Oregon Health Authority says edibles can take 30 minutes to 2 hours to kick in, up to 4 hours for the full effect, and can last 4 to 10 hours.",
+   "points": [
+    {
+     "text": "Edibles can take 30 minutes to 2 hours to take effect and up to 4 hours for the full effect, and the effects can last 4 to 10 hours. Start with a single serving with a low amount of THC.",
+     "source_ids": [
+      "oha-health"
+     ]
+    },
+    {
+     "text": "If a child eats marijuana, call the Poison Center at 1-800-222-1222.",
+     "source_ids": [
+      "oha-health"
+     ]
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "olcc-faq",
+   "title": "Recreational marijuana frequently asked questions: where to buy, how much, public places, bars and restaurants, other states",
+   "publisher": "Oregon Liquor and Cannabis Commission",
+   "url": "https://www.oregon.gov/olcc/marijuana/pages/frequently-asked-questions.aspx",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "ors-475c",
+   "title": "ORS chapter 475C (2025 edition): sections 475C.217 (checking ID), 475C.337 (possession limits) and 475C.377 (use in a public place)",
+   "publisher": "Oregon State Legislature (Oregon Revised Statutes)",
+   "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors475C.html",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "olcc-educate",
+   "title": "Educate Before You Recreate: Oregon’s marijuana laws",
+   "publisher": "Oregon Liquor and Cannabis Commission",
+   "url": "https://www.oregon.gov/olcc/Docs/EducateBeforeYouRecreate.pdf",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "oha-icaa",
+   "title": "Indoor Clean Air Act: frequently asked questions (April 2025)",
+   "publisher": "Oregon Health Authority",
+   "url": "https://www.oregon.gov/oha/PH/PREVENTIONWELLNESS/TOBACCOPREVENTION/SMOKEFREEWORKPLACELAW/Documents/ICAA_FAQ_English.pdf",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "ors-811",
+   "title": "ORS 811.482 (2025 edition): use of marijuana in a motor vehicle",
+   "publisher": "Oregon State Legislature (Oregon Revised Statutes)",
+   "url": "https://www.oregonlegislature.gov/bills_laws/ors/ors811.html",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "oha-health",
+   "title": "Marijuana and your health: edibles, driving and keeping it away from children",
+   "publisher": "Oregon Health Authority",
+   "url": "https://www.oregon.gov/oha/PH/PREVENTIONWELLNESS/MARIJUANA/Pages/health.aspx",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "usfs-nfs",
+   "title": "Cannabis use on National Forest System lands (alert, Chippewa National Forest)",
+   "publisher": "USDA Forest Service",
+   "url": "https://www.fs.usda.gov/r09/chippewa/alerts/cannabis-use-national-forest-system-lands",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "tsa-mmj",
+   "title": "What can I bring? Medical marijuana",
+   "publisher": "Transportation Security Administration",
+   "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "ommp-app",
+   "title": "Oregon Medical Marijuana Program application form and instructions (OHA 9240, December 2025)",
+   "publisher": "Oregon Health Authority",
+   "url": "https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/CHRONICDISEASE/MEDICALMARIJUANAPROGRAM/Documents/form/Application_Form_and_Instructions_12-16-25.pdf",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  }
+ ],
+ "attempts": [
+  {
+   "url": "https://www.flypdx.com/",
+   "tried": "2026-11-27",
+   "result": "Read: the Port of Portland’s airport site gives no cannabis rule for PDX, so none is stated."
+  }
+ ]
+}

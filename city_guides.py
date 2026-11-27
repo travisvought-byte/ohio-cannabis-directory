@@ -8,9 +8,10 @@ official source and the date it was checked; no business appears except as a reg
 render() draws any guide. las_vegas.py uses it with its own extras (the MJBizCon-week box and the Nevada
 flower-and-products chart). The other cities are plain data: data/denver.json, data/chicago.json,
 data/new-york-city.json, data/los-angeles.json, data/detroit.json, data/boston.json, data/seattle.json,
-data/phoenix.json and data/miami.json, each with a "page" block that names the page, its state and its
-"Where to go next" links.
-A state with no adult-use sales (Florida, for Miami) needs the page to say so before anything else. Its "page" block
+data/phoenix.json, data/miami.json, data/san-francisco.json, data/portland.json and data/new-orleans.json, each with a
+"page" block that names the page, its state and its "Where to go next" links. A state can have more than one guide
+(California: Los Angeles and San Francisco); its page links them all in one visitor-guide box.
+A state with no adult-use sales (Florida, for Miami; Louisiana, for New Orleans) needs the page to say so before anything else. Its "page" block
 can add a "status" notice (heading, text, source_ids) shown under the adults-21+ line, and "places_caption" and
 "places_header" to reword the yes/no table; guides without them render exactly as before.
 All of them are built through build_national.pages(), so they share the national page shell.
@@ -31,6 +32,9 @@ GUIDES = {
     'seattle.html': ROOT / 'data/seattle.json',
     'phoenix.html': ROOT / 'data/phoenix.json',
     'miami.html': ROOT / 'data/miami.json',
+    'san-francisco.html': ROOT / 'data/san-francisco.json',
+    'portland.html': ROOT / 'data/portland.json',
+    'new-orleans.html': ROOT / 'data/new-orleans.json',
 }
 
 # Line icons, decorative only (aria-hidden): every icon sits next to text that says the same thing.
@@ -185,11 +189,12 @@ def page(nat, name, landing):
 
 
 def state_boxes():
-    """{state code: (page, heading, text)} for the visitor-guide box near the top of each state's page."""
+    """{state code: [(page, heading, text), ...]} for the visitor-guide box near the top of each state's page,
+    one entry per guide in that state, in GUIDES order."""
     out = {}
     for name in GUIDES:
         d = load(name)
-        out[d['page']['state']] = (name, d['page']['crumb'] + '?', d['state_box'])
+        out.setdefault(d['page']['state'], []).append((name, d['page']['crumb'] + '?', d['state_box']))
     return out
 
 
