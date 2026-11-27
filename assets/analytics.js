@@ -28,7 +28,8 @@
     var action=el.dataset.track;
     if(!action&&el.tagName==='A'){
       var raw=el.getAttribute('href')||'';
-      if(raw.startsWith('mailto:'))action='email-contact';
+      if(/^mailto:(veteranhomeguardians@gmail\.com|travis@vethomeguard\.org)/i.test(raw))action=/subject=[^&]*correction/i.test(raw)?'email-us-correction':'email-us';
+      else if(raw.startsWith('mailto:'))action='email-contact';
       else if(raw.startsWith('tel:'))action='phone-contact';
       else if(!raw.startsWith('#') && !raw.startsWith('blob:')){try{var u=new URL(raw,location.href);
         if(!['http:','https:'].includes(u.protocol))return;
