@@ -1,0 +1,488 @@
+{
+ "schema_version": 1,
+ "as_of": "2026-11-27",
+ "purpose": "Cannabis rules for people visiting Los Angeles, for national/los-angeles.html on the-reefer.com (built by city_guides.py through build_national.pages()). Every point names the official source it comes from; each source carries the date it was checked. No business is named; the page links the Department of Cannabis Control's License Search and the City of Los Angeles Department of Cannabis Regulation's own list instead. Facts that no reachable official source confirmed (consumption lounges in Los Angeles, LAX's own rule, cannabis rules for the Santa Monica Mountains) are left out; the attempts are recorded below.",
+ "page": {
+  "state": "CA",
+  "state_name": "California",
+  "state_page": "california.html",
+  "crumb": "Visiting Los Angeles",
+  "h1": "Visiting Los Angeles? The cannabis rules for visitors",
+  "title": "Visiting Los Angeles: cannabis rules for visitors (2026)",
+  "description": "Can tourists buy weed in LA? Yes, at 21 with a valid ID, a passport included, from a state-licensed store. How to check a license, limits, where you can and can’t smoke (hotels, cars, public places, national forests) and flying home, from official sources.",
+  "adult": "For adults 21 and older. Plain summaries of California State, City of Los Angeles and federal sources, each linked below. Not legal advice.",
+  "prefix": "la",
+  "place": "the Los Angeles visitor page",
+  "business_note": "No business is named on this page; the Department of Cannabis Control’s License Search and the City of Los Angeles’s list name licensed retailers. A link to a regulator’s list is not an endorsement of any business on it.",
+  "more": [
+   {
+    "href": "california.html",
+    "label": "The full California guide",
+    "rest": ": the state’s law, record clearing and local help"
+   },
+   {
+    "href": "law-public-use.html",
+    "label": "Public use in every state",
+    "rest": ": where you can and can’t use it back home"
+   },
+   {
+    "href": "law-driving.html",
+    "label": "Driving and cannabis in every state"
+   },
+   {
+    "href": "travel-warnings.html",
+    "label": "Travel warnings",
+    "rest": ": the countries and states where any amount can land you in trouble"
+   },
+   {
+    "href": "help.html#travel",
+    "label": "Flying with cannabis",
+    "rest": ": what TSA says"
+   }
+  ]
+ },
+ "state_box": "Where visitors can and can’t use cannabis: hotels, cars, public places and federal land, plus how much you can buy, how to check a store’s license, and flying home.",
+ "glance": [
+  {
+   "icon": "id",
+   "big": "21+",
+   "text": "to buy cannabis for adult use in California, with a valid ID",
+   "href": "#buy"
+  },
+  {
+   "icon": "shield",
+   "big": "Licensed only",
+   "text": "check the store’s state license before you buy",
+   "href": "#licensed"
+  },
+  {
+   "icon": "scale",
+   "big": "28.5 g",
+   "text": "of cannabis and 8 grams of concentrate",
+   "href": "#limits"
+  },
+  {
+   "icon": "nosmoke",
+   "big": "Not in public",
+   "text": "or anywhere tobacco smoking is banned",
+   "href": "#where"
+  },
+  {
+   "icon": "hotel",
+   "big": "Most hotels say no",
+   "text": "ask the front desk before you use it",
+   "href": "#hotels"
+  },
+  {
+   "icon": "car",
+   "big": "Sealed or in the trunk",
+   "text": "an open container in a car is illegal",
+   "href": "#car"
+  }
+ ],
+ "sections": [
+  {
+   "id": "buy",
+   "icon": "id",
+   "question": "Can tourists buy weed in Los Angeles?",
+   "short": "Yes, if you are 21 or older and show a valid ID, such as a driver’s license or a passport, at a store licensed by California’s Department of Cannabis Control.",
+   "points": [
+    {
+     "text": "In California, adults 21 and older can buy cannabis for adult use. Cities and counties may have stricter rules than the state.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "text": "Licensed retailers must confirm your age and identity with a valid ID. The Department of Cannabis Control lists a government-issued ID with a photo, such as a driver’s license, an Armed Forces ID, or a passport issued by the United States or a foreign government.",
+     "source_ids": [
+      "dcc-events-faq"
+     ]
+    },
+    {
+     "text": "In the City of Los Angeles, a cannabis business also needs local authorization from the city before it can sell.",
+     "source_ids": [
+      "la-dcr"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "licensed",
+   "icon": "shield",
+   "question": "How do I know a Los Angeles cannabis store is licensed?",
+   "short": "Look for the state license in the window and scan its QR code, or look the store up in the Department of Cannabis Control’s License Search. The City of Los Angeles also lists the stores it has authorized.",
+   "points": [
+    {
+     "text": "Every cannabis retailer in California must have a license from the Department of Cannabis Control. Some stores that look legitimate are not licensed and may sell products that have not been tested.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "text": "Licensed retailers display their state license in the storefront window, and you can scan its QR code to check the license’s status.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "text": "The Department’s License Search is updated daily and can be used to check a license or to find licensed retailers.",
+     "source_ids": [
+      "dcc-search"
+     ],
+     "link": {
+      "label": "Check a store in California’s License Search",
+      "href": "https://search.cannabis.ca.gov/"
+     }
+    },
+    {
+     "text": "The City of Los Angeles Department of Cannabis Regulation lists and maps the businesses it has given Temporary Approval or a License, and points to the state’s search for checking a state license.",
+     "source_ids": [
+      "la-dcr"
+     ],
+     "link": {
+      "label": "See the City of Los Angeles list of authorized cannabis retailers",
+      "href": "https://cannabis.lacity.gov/personal-activity/find-licensed-retailers"
+     }
+    }
+   ]
+  },
+  {
+   "id": "limits",
+   "icon": "scale",
+   "question": "How much weed can I have in California?",
+   "short": "Up to 28.5 grams of cannabis and up to 8 grams of concentrated cannabis, the same amounts the state gives as the daily limit for adult-use customers.",
+   "points": [
+    {
+     "text": "Adults 21 and older may possess up to 28.5 grams of non-concentrated cannabis and up to 8 grams of concentrated cannabis, under Health and Safety Code section 11362.1.",
+     "source_ids": [
+      "dcc-events-faq"
+     ]
+    },
+    {
+     "text": "The Department of Cannabis Control gives the same amounts as the daily limit for adult-use customers: 28.5 grams of non-concentrated cannabis and 8 grams of concentrated cannabis.",
+     "source_ids": [
+      "dcc-events-faq"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "where",
+   "icon": "pin",
+   "question": "Where can you smoke weed in Los Angeles?",
+   "short": "On private property where the owner allows it. Not in public places such as restaurants or bars, not anywhere tobacco smoking is banned, not in a car and not on federal land.",
+   "points": [
+    {
+     "text": "You can use cannabis on private property, but not in public places such as restaurants or bars.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "text": "You can’t smoke cannabis anywhere tobacco smoking is illegal, or within 1,000 feet of a school, day care center or youth center while children are present.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "text": "Property owners can ban cannabis use on their property, and renters should check their rental agreement.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "text": "Under federal law, you can’t use or possess cannabis on federal lands such as national parks.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    }
+   ],
+   "places": [
+    {
+     "place": "A private home, where the owner allows it",
+     "answer": "yes",
+     "label": "Yes",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "place": "Your hotel room",
+     "answer": "maybe",
+     "label": "Only if the hotel allows it",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "place": "A vacation rental",
+     "answer": "maybe",
+     "label": "Only if the owner allows it",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "place": "Restaurants, bars and other public places",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "place": "Anywhere tobacco smoking is banned",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "place": "Within 1,000 feet of a school, day care center or youth center while children are there",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "place": "A car, while driving or riding in it",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "place": "National parks, national forests and other federal land",
+     "answer": "no",
+     "label": "No, not even to carry it",
+     "source_ids": [
+      "dcc-legal",
+      "usfs-r5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hotels",
+   "icon": "hotel",
+   "question": "Can I smoke weed in my Los Angeles hotel room?",
+   "short": "Usually not. California’s cannabis regulator says most hotels don’t allow guests to use cannabis in their rooms, so ask the front desk first.",
+   "points": [
+    {
+     "text": "Most hotels do not allow guests to use cannabis in their hotel room. The Department of Cannabis Control says to ask the reception desk about the hotel’s policy.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "text": "If you are staying in a vacation rental, check with the owner.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "car",
+   "icon": "car",
+   "question": "Can I have weed in a car in Los Angeles, or drive after using it?",
+   "short": "Keep it in a sealed package or container, or in the trunk. An open container while driving or riding is illegal, and so is driving high.",
+   "points": [
+    {
+     "text": "It’s illegal to have an open container of cannabis while driving or riding in a vehicle. Cannabis in a vehicle must be in a sealed package or container, or in the trunk.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "text": "Officers can pull you over for a sobriety test.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "text": "Driving under the influence of cannabis is illegal and carries the same potential penalties as driving under the influence of alcohol.",
+     "source_ids": [
+      "dcc-responsible"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "federal-land",
+   "icon": "mountain",
+   "question": "Can I bring weed to a national park or national forest from Los Angeles?",
+   "short": "No. Federal law still bans using or having cannabis on federal land, including national parks and national forests.",
+   "points": [
+    {
+     "text": "Under federal law, you can’t use or possess cannabis on federal lands such as national parks.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "text": "The U.S. Forest Service’s Pacific Southwest Region says that under federal law, cultivating or using cannabis on federal lands is illegal. If you come across a cannabis grow site, it says, do not enter the area.",
+     "source_ids": [
+      "usfs-r5"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "flying",
+   "icon": "plane",
+   "question": "Can I fly home with weed from Los Angeles?",
+   "short": "No. California’s cannabis regulator says you can’t take cannabis across state lines, and federal law still applies at airport security.",
+   "points": [
+    {
+     "text": "Under federal law, you can’t take cannabis across state lines.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    },
+    {
+     "text": "TSA says marijuana and some cannabis products, including some CBD oil, remain illegal under federal law unless they have no more than 0.3% THC on a dry-weight basis or are FDA-approved. Its officers don’t search for drugs, but they refer anything illegal they find to law enforcement.",
+     "source_ids": [
+      "tsa-mmj"
+     ],
+     "link": {
+      "label": "Check your home state",
+      "href": "index.html#map"
+     }
+    }
+   ]
+  },
+  {
+   "id": "medical",
+   "icon": "card",
+   "question": "Does California accept medical cannabis cards from other states?",
+   "short": "No. California does not recognize other states’ medical marijuana identification cards, but visitors 21 and older can buy at adult-use stores.",
+   "points": [
+    {
+     "text": "California’s Department of Public Health says the state does not recognize other states’ medical marijuana identification cards.",
+     "source_ids": [
+      "cdph-mmic"
+     ]
+    },
+    {
+     "text": "Adults 21 and older can still buy cannabis for adult use at a licensed store.",
+     "source_ids": [
+      "dcc-legal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "edibles",
+   "icon": "clock",
+   "question": "How much of an edible should I take?",
+   "short": "Start low and go slow. California’s regulator says edibles can take up to two hours to start working and up to four hours for the full effect.",
+   "points": [
+    {
+     "text": "Edibles can take up to two hours to begin working and up to four hours for their full effects. The Department of Cannabis Control’s advice is “Start low, go slow!”",
+     "source_ids": [
+      "dcc-responsible"
+     ]
+    },
+    {
+     "text": "Keep cannabis in a sealed, child-resistant package. If a child has eaten cannabis, call poison control at 1-800-222-1222.",
+     "source_ids": [
+      "dcc-responsible"
+     ]
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "dcc-legal",
+   "title": "What’s legal: age, where you can use cannabis, hotels, vehicles, federal land and licensed retailers",
+   "publisher": "California Department of Cannabis Control",
+   "url": "https://www.cannabis.ca.gov/consumers/whats-legal/",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "dcc-events-faq",
+   "title": "Temporary cannabis events FAQs: valid ID, daily purchase limits and adult-use possession limits",
+   "publisher": "California Department of Cannabis Control",
+   "url": "https://www.cannabis.ca.gov/licensees/events/temporary-cannabis-events-faqs/",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "dcc-responsible",
+   "title": "Responsible cannabis use: edibles, driving and storing cannabis safely",
+   "publisher": "California Department of Cannabis Control",
+   "url": "https://www.cannabis.ca.gov/consumers/responsible-cannabis-use/",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "dcc-search",
+   "title": "Search for a licensed business: the License Search tool",
+   "publisher": "California Department of Cannabis Control",
+   "url": "https://www.cannabis.ca.gov/resources/search-for-licensed-business/",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "la-dcr",
+   "title": "Find licensed retailers",
+   "publisher": "City of Los Angeles Department of Cannabis Regulation",
+   "url": "https://cannabis.lacity.gov/personal-activity/find-licensed-retailers",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "cdph-mmic",
+   "title": "Medical Marijuana Identification Card Program FAQs",
+   "publisher": "California Department of Public Health",
+   "url": "https://www.cdph.ca.gov/Programs/CHSI/Pages/MMICP-FAQs.aspx",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "usfs-r5",
+   "title": "Illegal cannabis grow sites",
+   "publisher": "USDA Forest Service, Pacific Southwest Region",
+   "url": "https://fs.usda.gov/r05/natural-resources/water-air-soil/illegal-cannabis-grow-sites",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "tsa-mmj",
+   "title": "What can I bring? Medical marijuana",
+   "publisher": "Transportation Security Administration",
+   "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  }
+ ],
+ "attempts": [
+  {
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=HSC&sectionNum=11362.1",
+   "tried": "2026-11-27",
+   "result": "Not retrieved (client error). The page cites the Department of Cannabis Control’s statement of the section 11362.1 limits instead."
+  },
+  {
+   "url": "https://www.flylax.com/faq",
+   "tried": "2026-11-27",
+   "result": "Not retrieved (client error). No LAX-specific cannabis rule is stated."
+  },
+  {
+   "url": "https://www.nps.gov/samo/learn/management/compendium.htm",
+   "tried": "2026-11-27",
+   "result": "Read. The Santa Monica Mountains superintendent’s compendium says nothing about cannabis, so no park-specific rule is stated."
+  },
+  {
+   "url": "https://cannabis.lacity.gov/personal-activity/legal-resources/legal-resources",
+   "tried": "2026-11-27",
+   "result": "Read. The City’s legal resources page gives no specific rule for visitors beyond what the state pages say."
+  }
+ ]
+}

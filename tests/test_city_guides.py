@@ -1,4 +1,4 @@
-"""The Denver, Chicago and New York City visitor guides (city_guides.py): every point cites a listed primary source
+"""The Denver, Chicago, New York City, Los Angeles, Detroit and Boston visitor guides (city_guides.py): every point cites a listed primary source
 with a checked date, the FAQ data matches the questions shown, yes/no answers are shown in words as well as symbols,
 no business or phone number is named, and each state page and the home page link the guide."""
 import json
@@ -15,7 +15,8 @@ import build_national  # noqa: E402
 import city_guides  # noqa: E402
 
 LANDING = build_national.load_landing()['national_pages']
-STATE_PAGE = {'denver.html': 'colorado.html', 'chicago.html': 'illinois.html', 'new-york-city.html': 'new-york.html'}
+STATE_PAGE = {'denver.html': 'colorado.html', 'chicago.html': 'illinois.html', 'new-york-city.html': 'new-york.html',
+              'los-angeles.html': 'california.html', 'detroit.html': 'michigan.html', 'boston.html': 'massachusetts.html'}
 CHECKED = '2026-11-27'
 
 
@@ -29,8 +30,9 @@ def build(name, origin=''):
 
 
 class CityGuides(unittest.TestCase):
-    def test_the_three_guides_are_registered(self):
-        self.assertEqual(list(city_guides.GUIDES), ['denver.html', 'chicago.html', 'new-york-city.html'])
+    def test_the_six_guides_are_registered(self):
+        self.assertEqual(list(city_guides.GUIDES), ['denver.html', 'chicago.html', 'new-york-city.html',
+                                                    'los-angeles.html', 'detroit.html', 'boston.html'])
         for name in city_guides.GUIDES:
             self.assertIn(name, LANDING, f'{name}: no opening line in data/landing-pages.json')
             self.assertEqual(city_guides.load(name)['page']['state_page'], STATE_PAGE[name])

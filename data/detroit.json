@@ -1,0 +1,507 @@
+{
+ "schema_version": 1,
+ "as_of": "2026-11-27",
+ "purpose": "Cannabis rules for people visiting Detroit, for national/detroit.html on the-reefer.com (built by city_guides.py through build_national.pages()). Every point names the official source it comes from; each source carries the date it was checked. No business is named; the page links the Cannabis Regulatory Agency's own license search instead. Facts that no reachable official source confirmed (Detroit's own licensing ordinance, which lounges Detroit allows, Detroit Metro Airport's own rule, U.S. Customs and Border Protection's pages) are left out; the attempts are recorded below.",
+ "page": {
+  "state": "MI",
+  "state_name": "Michigan",
+  "state_page": "michigan.html",
+  "crumb": "Visiting Detroit",
+  "h1": "Visiting Detroit? The cannabis rules for visitors",
+  "title": "Visiting Detroit: cannabis rules for visitors (2026)",
+  "description": "Can tourists buy weed in Detroit? Yes, at 21 with a valid photo ID, from a state-licensed store. Limits, where you can and can’t use it (public places, hotels, cars, lounges), why none can cross into Canada, and flying home, from official sources.",
+  "adult": "For adults 21 and older. Plain summaries of Michigan law and Michigan, Canadian and U.S. federal sources, each linked below. Not legal advice.",
+  "prefix": "det",
+  "place": "the Detroit visitor page",
+  "business_note": "No business is named on this page; the Cannabis Regulatory Agency’s own license search lists licensed businesses. A link to a regulator’s list is not an endorsement of any business on it.",
+  "more": [
+   {
+    "href": "michigan.html",
+    "label": "The full Michigan guide",
+    "rest": ": the state’s law, record clearing and local help"
+   },
+   {
+    "href": "law-public-use.html",
+    "label": "Public use in every state",
+    "rest": ": where you can and can’t use it back home"
+   },
+   {
+    "href": "law-driving.html",
+    "label": "Driving and cannabis in every state"
+   },
+   {
+    "href": "travel-warnings.html",
+    "label": "Travel warnings",
+    "rest": ": the countries and states where any amount can land you in trouble"
+   },
+   {
+    "href": "help.html#travel",
+    "label": "Flying with cannabis",
+    "rest": ": what TSA says"
+   }
+  ]
+ },
+ "state_box": "Where visitors can and can’t use cannabis: public places, hotels, cars and lounges, plus how much you can buy, checking a store’s license, and why none can cross into Canada.",
+ "glance": [
+  {
+   "icon": "id",
+   "big": "21+",
+   "text": "to buy, have or use cannabis in Michigan",
+   "href": "#buy"
+  },
+  {
+   "icon": "shield",
+   "big": "Licensed only",
+   "text": "check the store in the state’s license search",
+   "href": "#licensed"
+  },
+  {
+   "icon": "scale",
+   "big": "2.5 oz",
+   "text": "of which no more than 15 grams may be concentrate",
+   "href": "#limits"
+  },
+  {
+   "icon": "nosmoke",
+   "big": "Not in public",
+   "text": "use it in private, where the owner allows it",
+   "href": "#where"
+  },
+  {
+   "icon": "car",
+   "big": "Not in a car",
+   "text": "not while driving, and no smoking as a passenger",
+   "href": "#car"
+  },
+  {
+   "icon": "x",
+   "big": "Not into Canada",
+   "text": "not even a small amount, not even with a medical card",
+   "href": "#canada"
+  }
+ ],
+ "sections": [
+  {
+   "id": "buy",
+   "icon": "id",
+   "question": "Can tourists buy weed in Detroit?",
+   "short": "Yes, if you are 21 or older. Show a valid driver’s license or government-issued photo ID at a store licensed by Michigan’s Cannabis Regulatory Agency.",
+   "points": [
+    {
+     "text": "Under Michigan law, adults 21 and older may possess, use, purchase and transport cannabis within the limits below.",
+     "source_ids": [
+      "mcl-27955",
+      "mrtma-page"
+     ]
+    },
+    {
+     "text": "Before a sale, a licensed retailer must check that the customer has a valid driver’s license or government-issued photo ID showing they are 21 or older.",
+     "source_ids": [
+      "cra-sale-rules"
+     ]
+    },
+    {
+     "text": "An adult 21 or older may also give up to 2.5 ounces to another adult 21 or older, as long as nothing is paid for it and the transfer is not advertised or promoted.",
+     "source_ids": [
+      "mcl-27955"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "licensed",
+   "icon": "shield",
+   "question": "How do I know a Detroit cannabis store is licensed?",
+   "short": "Look it up in the Cannabis Regulatory Agency’s “Verify an Adult-Use Establishment License” search.",
+   "points": [
+    {
+     "text": "The Cannabis Regulatory Agency’s search lets you verify an adult-use establishment license. Leaving the search fields blank downloads the agency’s whole list.",
+     "source_ids": [
+      "cra-verify"
+     ],
+     "link": {
+      "label": "Check a store in Michigan’s adult-use license search",
+      "href": "https://www.michigan.gov/cra/verify-a-license-1"
+     }
+    }
+   ]
+  },
+  {
+   "id": "limits",
+   "icon": "scale",
+   "question": "How much weed can I have in Michigan?",
+   "short": "Up to 2.5 ounces, of which no more than 15 grams may be concentrate, and up to 10 ounces within your residence. A store may sell you no more than 2.5 ounces in one transaction.",
+   "points": [
+    {
+     "text": "Adults 21 and older may possess, use, purchase or transport up to 2.5 ounces of cannabis, of which no more than 15 grams may be concentrate.",
+     "source_ids": [
+      "mcl-27955"
+     ]
+    },
+    {
+     "text": "Within a person’s residence, the limit is 10 ounces.",
+     "source_ids": [
+      "mcl-27955"
+     ]
+    },
+    {
+     "text": "A licensed retailer may not sell more than 2.5 ounces to a customer in a single transaction, of which no more than 15 grams may be concentrate.",
+     "source_ids": [
+      "cra-sale-rules"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "where",
+   "icon": "pin",
+   "question": "Where can you smoke weed in Detroit?",
+   "short": "In private, such as a home where the owner allows it. Not in public places, not in a vehicle on a public road, not on school grounds and not in areas under federal jurisdiction such as airports.",
+   "points": [
+    {
+     "text": "Michigan’s law does not allow consuming cannabis in a public place, or smoking it where the owner, occupant or manager of the property prohibits it.",
+     "source_ids": [
+      "mcl-27954"
+     ]
+    },
+    {
+     "text": "The Michigan State Police say cannabis use is legal in private, such as at the home of the user, but not in public places, in areas frequented by children such as schools or school buses, in areas under federal jurisdiction such as airports or government buildings, or while driving.",
+     "source_ids": [
+      "msp-driving"
+     ]
+    },
+    {
+     "text": "The law also does not allow having or consuming cannabis on the grounds of a preschool, primary or secondary school, in a school bus, or in a correctional facility.",
+     "source_ids": [
+      "mcl-27954"
+     ]
+    },
+    {
+     "text": "Whoever owns, occupies or manages a property may ban or limit cannabis use there, but a lease can’t stop a tenant from lawfully having cannabis or using it by means other than smoking.",
+     "source_ids": [
+      "mcl-27954"
+     ]
+    }
+   ],
+   "places": [
+    {
+     "place": "A private home, where the owner allows it",
+     "answer": "yes",
+     "label": "Yes",
+     "source_ids": [
+      "msp-driving",
+      "mcl-27954"
+     ]
+    },
+    {
+     "place": "Your hotel room",
+     "answer": "maybe",
+     "label": "Only if the hotel allows it",
+     "source_ids": [
+      "mcl-27954"
+     ]
+    },
+    {
+     "place": "A business licensed for on-site use",
+     "answer": "maybe",
+     "label": "Only with a state license, in a city that allows it",
+     "source_ids": [
+      "cra-club-faq",
+      "mcl-27954"
+     ]
+    },
+    {
+     "place": "Public places",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "mcl-27954",
+      "msp-driving"
+     ]
+    },
+    {
+     "place": "A vehicle on a public road, as driver or passenger",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "mcl-27954",
+      "msp-driving"
+     ]
+    },
+    {
+     "place": "School grounds and school buses",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "mcl-27954",
+      "msp-driving"
+     ]
+    },
+    {
+     "place": "Airports, government buildings and other areas under federal jurisdiction",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "msp-driving"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hotels",
+   "icon": "hotel",
+   "question": "Can I smoke weed in my Detroit hotel room?",
+   "short": "Only if the hotel allows it. Michigan law lets whoever owns or manages a property ban or limit cannabis use there.",
+   "points": [
+    {
+     "text": "A person who owns, occupies or manages property may prohibit or regulate cannabis use on that property, and the law does not allow smoking cannabis where the owner, occupant or manager prohibits it.",
+     "source_ids": [
+      "mcl-27954"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lounges",
+   "icon": "lounge",
+   "question": "Can I use cannabis at a lounge or event in Detroit?",
+   "short": "Only at a business with a state license for on-site use, in a city or township that has authorized it.",
+   "points": [
+    {
+     "text": "A business that lets people consume cannabis on site at a nonresidential location, and charges for entry, sells goods or services, or requires a membership, needs a designated consumption establishment license or a temporary marijuana event license from the Cannabis Regulatory Agency.",
+     "source_ids": [
+      "cra-club-faq"
+     ]
+    },
+    {
+     "text": "Under Michigan law, a designated consumption area is not a public place if the municipality has authorized it and it is closed to anyone under 21.",
+     "source_ids": [
+      "mcl-27954"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "car",
+   "icon": "car",
+   "question": "Can I use cannabis in a car in Michigan, or drive after using it?",
+   "short": "No. You can’t use it while driving, passengers can’t smoke it in a vehicle on a public road, and driving under the influence is against the law.",
+   "points": [
+    {
+     "text": "Michigan’s law does not allow consuming cannabis while operating a vehicle, or smoking it in the passenger area of a vehicle on a public way.",
+     "source_ids": [
+      "mcl-27954"
+     ]
+    },
+    {
+     "text": "It also does not allow operating a vehicle or a boat while under the influence of cannabis.",
+     "source_ids": [
+      "mcl-27954"
+     ]
+    },
+    {
+     "text": "The Michigan State Police say operating under the influence can bring up to 93 days in jail, a fine of up to $500, a license suspension and six points on your license, with heavier penalties when a minor is in the vehicle. Refusing a chemical test means a license suspension.",
+     "source_ids": [
+      "msp-driving"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "canada",
+   "icon": "x",
+   "question": "Can I take weed across the border to Windsor or anywhere in Canada?",
+   "short": "No. The Canada Border Services Agency says it is still illegal to cross the border with cannabis, even a small amount and even with a medical authorization.",
+   "points": [
+    {
+     "text": "It is still illegal to cross the border with cannabis, even in small amounts, and even when travelling to or from a place where cannabis is legal.",
+     "source_ids": [
+      "cbsa"
+     ]
+    },
+    {
+     "text": "Having a medical authorization for cannabis does not make it legal to bring it across the border.",
+     "source_ids": [
+      "cbsa"
+     ]
+    },
+    {
+     "text": "If you have cannabis with you when you arrive in Canada, you must declare it. Failing to declare it can lead to arrest and prosecution.",
+     "source_ids": [
+      "cbsa"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "flying",
+   "icon": "plane",
+   "question": "Can I fly home with weed from Detroit?",
+   "short": "Not legally. TSA says cannabis remains illegal under federal law, and the Michigan State Police list airports among the areas under federal jurisdiction where cannabis use is not legal.",
+   "points": [
+    {
+     "text": "The Michigan State Police say cannabis use is not legal in areas under federal jurisdiction, such as airports or government buildings.",
+     "source_ids": [
+      "msp-driving"
+     ]
+    },
+    {
+     "text": "TSA says marijuana and some cannabis products, including some CBD oil, remain illegal under federal law unless they have no more than 0.3% THC on a dry-weight basis or are FDA-approved. Its officers don’t search for drugs, but they refer anything illegal they find to law enforcement.",
+     "source_ids": [
+      "tsa-mmj"
+     ],
+     "link": {
+      "label": "Check your home state",
+      "href": "index.html#map"
+     }
+    }
+   ]
+  },
+  {
+   "id": "medical",
+   "icon": "card",
+   "question": "Does Michigan accept medical cannabis cards from other states?",
+   "short": "Yes, at licensed provisioning centers. Bring a valid registry card from your home state and a photo ID, and stay within the purchase limit.",
+   "points": [
+    {
+     "text": "Licensed provisioning centers may sell to a visiting qualifying patient who shows a valid, unexpired registry card or its equivalent from their home state and a valid driver’s license or government-issued photo ID, as long as the sale is within the purchasing limit and the product has been tested, labeled and packaged.",
+     "source_ids": [
+      "cra-visiting"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "edibles",
+   "icon": "clock",
+   "question": "How much of an edible should I take?",
+   "short": "Be patient. A Michigan state guide says an edible can take anywhere from 15 minutes to a few hours to take effect, and the high is often more intense and lasts longer.",
+   "points": [
+    {
+     "text": "Edibles take longer to kick in, anywhere from 15 minutes to a few hours, and often produce a more intense, longer-lasting high.",
+     "source_ids": [
+      "mi-brochure"
+     ]
+    },
+    {
+     "text": "Store cannabis locked up, such as in a lock box or safe, away from children. For a possible poisoning, call poison control at 1-800-222-1222.",
+     "source_ids": [
+      "mi-brochure"
+     ]
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "mcl-27955",
+   "title": "MCL 333.27955: what adults 21 and older may possess, use, buy, transport and give away",
+   "publisher": "Michigan Legislature",
+   "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-333-27955",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "mcl-27954",
+   "title": "MCL 333.27954: what the adult-use law does not allow (public use, vehicles, schools, property owners’ rules)",
+   "publisher": "Michigan Legislature",
+   "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-333-27954",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "mrtma-page",
+   "title": "Michigan Regulation and Taxation of Marihuana Act",
+   "publisher": "Michigan Cannabis Regulatory Agency",
+   "url": "https://www.michigan.gov/cra/sections/adult-use/michigan-regulation-and-taxation-of-marihuana-act",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "cra-sale-rules",
+   "title": "Marihuana Sale or Transfer rules: ID checks and the per-transaction limit (R 420.505 and R 420.506)",
+   "publisher": "Michigan Cannabis Regulatory Agency",
+   "url": "https://www.michigan.gov/cra/-/media/Project/Websites/cra/Laws-Rules-Other-Resources/2019-72_LR_Marihuana_Sale_or_Transfer_694525_7.pdf",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "cra-verify",
+   "title": "Verify an Adult-Use Establishment License",
+   "publisher": "Michigan Cannabis Regulatory Agency",
+   "url": "https://www.michigan.gov/cra/verify-a-license-1",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "cra-club-faq",
+   "title": "FAQ: Do I need a license for a social cannabis club?",
+   "publisher": "Michigan Cannabis Regulatory Agency",
+   "url": "https://www.michigan.gov/cra/faq/rec-use-accordion/licensing/do-i-need-a-license-for-a-social-cannabis-club",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "cra-visiting",
+   "title": "FAQ: Can licensed Michigan provisioning centers accept visiting qualifying patient cards?",
+   "publisher": "Michigan Cannabis Regulatory Agency",
+   "url": "https://www.michigan.gov/cra/faq/licensing-list/licensing-new/can-licensed-michigan-provisioning-centers-accept-visiting-qualifying-marijuana-patient-cards",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "msp-driving",
+   "title": "Cannabis and driving",
+   "publisher": "Michigan State Police, Office of Highway Safety Planning",
+   "url": "https://www.michigan.gov/msp/divisions/ohsp/ohsp-traffic-safety-programs/cannabis-and-driving",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "mi-brochure",
+   "title": "Marijuana in Michigan: What You Need to Know (brochure)",
+   "publisher": "State of Michigan, posted with the Cannabis Regulatory Agency’s consumer materials",
+   "url": "https://www.michigan.gov/-/media/Project/Websites/cra/consumer-connection/2021-lara-child-marijuana-brochure-APPROVED.pdf",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "cbsa",
+   "title": "Cannabis and the Canadian border (publication BSF5197)",
+   "publisher": "Canada Border Services Agency",
+   "url": "https://www.cbsa-asfc.gc.ca/publications/pub/bsf5197-eng.html",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "tsa-mmj",
+   "title": "What can I bring? Medical marijuana",
+   "publisher": "Transportation Security Administration",
+   "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  }
+ ],
+ "attempts": [
+  {
+   "url": "https://www.cbp.gov/travel/clearing-cbp/cbp-reminds-travelers-canada-marijuana-remains-illegal-united-states",
+   "tried": "2026-11-27",
+   "result": "Not retrieved (client error). The border section cites the Canada Border Services Agency instead."
+  },
+  {
+   "url": "https://www.cbp.gov/newsroom/local-media-release/know-you-go-cbp-offers-crucial-border-crossing-advice-ahead",
+   "tried": "2026-11-27",
+   "result": "Not retrieved (client error)."
+  },
+  {
+   "url": "https://training.detroitmi.gov/sites/training.detroitmi/files/2022-04/FINAL%20City%20of%20Detroit%20Amended%20Adult%20Use%20and%20Medical%20Marijuana%20Licensing%20Ordinance%20(City%20Council%20Approved%204-5-2022).pdf",
+   "tried": "2026-11-27",
+   "result": "Not retrieved (client error). No Detroit-specific licensing or lounge rule is stated."
+  },
+  {
+   "url": "https://www.metroairport.com/at-dtw/safety-security",
+   "tried": "2026-11-27",
+   "result": "Read. Detroit Metro Airport’s safety and security page says nothing about cannabis, so no airport-specific rule is stated."
+  }
+ ]
+}

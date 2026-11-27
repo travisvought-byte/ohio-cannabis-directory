@@ -1,0 +1,483 @@
+{
+ "schema_version": 1,
+ "as_of": "2026-11-27",
+ "purpose": "Cannabis rules for people visiting Boston, for national/boston.html on the-reefer.com (built by city_guides.py through build_national.pages()). Every point names the official source it comes from; each source carries the date it was checked. No business is named; the page links the Cannabis Control Commission's own Where to Buy search instead. Massachusetts raised the possession limit to 2 ounces on April 19, 2026 (An Act Modernizing the Commonwealth's Cannabis Laws, Chapter 65 of the Acts of 2026); older official pages that still give 1 ounce, the Boston Public Health Commission's health page and the Commission's 2019 boating notice, are cited only for other points. The Commission's pages were read in a browser because a plain fetch looped on a redirect. Facts that no reachable official source confirmed (Logan Airport's own rule, which social consumption businesses Boston allows, rules for the national park sites in Boston) are left out; the attempts are recorded below.",
+ "page": {
+  "state": "MA",
+  "state_name": "Massachusetts",
+  "state_page": "massachusetts.html",
+  "crumb": "Visiting Boston",
+  "h1": "Visiting Boston? The cannabis rules for visitors",
+  "title": "Visiting Boston: cannabis rules for visitors (2026)",
+  "description": "Can tourists buy weed in Boston? Yes, at 21 with a valid government-issued ID, from a state-licensed store. The new 2-ounce limit, where you can and can’t use it (public places, hotels, cars, boats, federal land) and getting home, from official sources.",
+  "adult": "For adults 21 and older. Plain summaries of Massachusetts, City of Boston and federal sources, each linked below. Not legal advice.",
+  "prefix": "bos",
+  "place": "the Boston visitor page",
+  "business_note": "No business is named on this page; the Cannabis Control Commission’s own Where to Buy search lists licensed stores. A link to a regulator’s list is not an endorsement of any business on it.",
+  "more": [
+   {
+    "href": "massachusetts.html",
+    "label": "The full Massachusetts guide",
+    "rest": ": the state’s law, record clearing and local help"
+   },
+   {
+    "href": "law-public-use.html",
+    "label": "Public use in every state",
+    "rest": ": where you can and can’t use it back home"
+   },
+   {
+    "href": "law-driving.html",
+    "label": "Driving and cannabis in every state"
+   },
+   {
+    "href": "travel-warnings.html",
+    "label": "Travel warnings",
+    "rest": ": the countries and states where any amount can land you in trouble"
+   },
+   {
+    "href": "help.html#travel",
+    "label": "Flying with cannabis",
+    "rest": ": what TSA says"
+   }
+  ]
+ },
+ "state_box": "Where visitors can and can’t use cannabis: public places, hotels, cars, boats and federal land, plus the new 2-ounce limit, finding a licensed store and getting home.",
+ "glance": [
+  {
+   "icon": "id",
+   "big": "21+",
+   "text": "with a valid government-issued ID, to buy in Massachusetts",
+   "href": "#buy"
+  },
+  {
+   "icon": "shield",
+   "big": "Licensed only",
+   "text": "find stores on the state’s own list",
+   "href": "#licensed"
+  },
+  {
+   "icon": "scale",
+   "big": "2 oz",
+   "text": "the most you can carry since April 19, 2026",
+   "href": "#limits"
+  },
+  {
+   "icon": "nosmoke",
+   "big": "Not in public",
+   "text": "including parks, sidewalks, bars and restaurants",
+   "href": "#where"
+  },
+  {
+   "icon": "car",
+   "big": "Closed and locked away",
+   "text": "in the trunk or a locked glove compartment",
+   "href": "#car"
+  },
+  {
+   "icon": "plane",
+   "big": "Stays in Massachusetts",
+   "text": "you can’t take it out of the state or mail it",
+   "href": "#flying"
+  }
+ ],
+ "sections": [
+  {
+   "id": "buy",
+   "icon": "id",
+   "question": "Can tourists buy weed in Boston?",
+   "short": "Yes, if you are 21 or older with a valid government-issued ID, at a store licensed by the Massachusetts Cannabis Control Commission. You have to use what you buy in Massachusetts.",
+   "points": [
+    {
+     "text": "You must be 21 or older to buy cannabis in Massachusetts, and you need a government-issued ID.",
+     "source_ids": [
+      "ccc-laws"
+     ]
+    },
+    {
+     "text": "Out-of-state visitors can buy cannabis if they are 21 or older with a valid government-issued ID, but they must enjoy their purchase in Massachusetts.",
+     "source_ids": [
+      "ccc-laws"
+     ]
+    },
+    {
+     "text": "All marijuana establishments and medical treatment centers, delivery businesses included, must be licensed by the Massachusetts Cannabis Control Commission.",
+     "source_ids": [
+      "ccc-where"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "licensed",
+   "icon": "shield",
+   "question": "How do I find a licensed cannabis store in Boston?",
+   "short": "Use the Cannabis Control Commission’s Where to Buy search, which covers licensed marijuana establishments, medical treatment centers and delivery businesses.",
+   "points": [
+    {
+     "text": "The Commission’s Where to Buy page searches licensed medical treatment centers and marijuana establishments, delivery businesses included.",
+     "source_ids": [
+      "ccc-where"
+     ],
+     "link": {
+      "label": "Find a licensed store on the Cannabis Control Commission’s list",
+      "href": "https://masscannabiscontrol.com/where-to-buy/"
+     }
+    }
+   ]
+  },
+  {
+   "id": "limits",
+   "icon": "scale",
+   "question": "How much weed can I have in Massachusetts?",
+   "short": "Up to 2 ounces on you since April 19, 2026, and up to 10 ounces at home. A store can sell you up to 2 ounces a day, or the equivalent in concentrates or edibles.",
+   "points": [
+    {
+     "text": "Adults 21 and older can carry up to two ounces of cannabis and possess up to 10 ounces at home. Anything over two ounces at home must be locked up.",
+     "source_ids": [
+      "ccc-laws"
+     ]
+    },
+    {
+     "text": "The two-ounce limit comes from An Act Modernizing the Commonwealth’s Cannabis Laws, which the Governor signed on April 19, 2026 and which took effect immediately. Before that, the limit was one ounce.",
+     "source_ids": [
+      "ccc-release",
+      "ccc-bulletin1"
+     ]
+    },
+    {
+     "text": "Under the Commission’s Administrative Order No. 6, a store may sell a customer no more than two ounces a day, which equals 10 grams of active THC in concentrates or 1,000 milligrams of active THC in edibles.",
+     "source_ids": [
+      "ccc-order6"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "where",
+   "icon": "pin",
+   "question": "Where can you smoke weed in Boston?",
+   "short": "In a private home where the owner allows it. Not in any public place, including parks, sidewalks, bars and restaurants, not in a car and not on federal land or federal waters.",
+   "points": [
+    {
+     "text": "It is illegal to use cannabis in any form in public places or on federal land.",
+     "source_ids": [
+      "ccc-laws"
+     ]
+    },
+    {
+     "text": "The Boston Public Health Commission says the law prohibits smoking or consuming cannabis of any kind in any public place, including public parks, sidewalks, bars and restaurants.",
+     "source_ids": [
+      "bphc"
+     ]
+    },
+    {
+     "text": "Smoking cannabis is prohibited anywhere smoking tobacco is prohibited.",
+     "source_ids": [
+      "ccc-boaters"
+     ]
+    },
+    {
+     "text": "Employers, landlords, cities and towns may have their own cannabis policies.",
+     "source_ids": [
+      "ccc-laws"
+     ]
+    }
+   ],
+   "places": [
+    {
+     "place": "A private home, where the owner allows it",
+     "answer": "yes",
+     "label": "Yes",
+     "source_ids": [
+      "ccc-laws",
+      "bphc"
+     ]
+    },
+    {
+     "place": "Your hotel room",
+     "answer": "maybe",
+     "label": "Only if the hotel allows it",
+     "source_ids": [
+      "ccc-laws"
+     ]
+    },
+    {
+     "place": "A licensed social consumption business",
+     "answer": "maybe",
+     "label": "Only once the state licenses one and the city has opted in",
+     "source_ids": [
+      "ccc-social"
+     ]
+    },
+    {
+     "place": "Parks, sidewalks and other public places",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "ccc-laws",
+      "bphc"
+     ]
+    },
+    {
+     "place": "Bars and restaurants",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "bphc"
+     ]
+    },
+    {
+     "place": "A car, with an open container in the passenger area",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "ccc-laws"
+     ]
+    },
+    {
+     "place": "Federal land, and boats on federal waters such as the ocean",
+     "answer": "no",
+     "label": "No, not even to carry it",
+     "source_ids": [
+      "ccc-laws",
+      "ccc-boaters"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hotels",
+   "icon": "hotel",
+   "question": "Can I smoke weed in my Boston hotel room?",
+   "short": "Only if the hotel allows it. The Cannabis Control Commission tells visitors to ask a hotel or other rental about its cannabis policy before using any.",
+   "points": [
+    {
+     "text": "If you’re staying at a hotel or other rental accommodation, the Commission says to ask about its marijuana use policies before consuming.",
+     "source_ids": [
+      "ccc-laws"
+     ]
+    },
+    {
+     "text": "Landlords may have their own cannabis policies.",
+     "source_ids": [
+      "ccc-laws"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lounges",
+   "icon": "lounge",
+   "question": "Can I use cannabis at a lounge in Boston?",
+   "short": "Only at a business with a state social consumption license, in a city or town that has opted in. Massachusetts’ rules took effect January 2, 2026, before any licenses were available.",
+   "points": [
+    {
+     "text": "Massachusetts’ social consumption regulations took effect on January 2, 2026. At that point licenses were not yet available, and businesses may not sell cannabis for on-site consumption until they receive a state license.",
+     "source_ids": [
+      "ccc-social"
+     ]
+    },
+    {
+     "text": "A city or town must opt in, by referendum, ordinance or bylaw, before social consumption businesses can operate there.",
+     "source_ids": [
+      "ccc-social"
+     ]
+    },
+    {
+     "text": "The rules create three license types: Supplemental, Hospitality and Event Organizer.",
+     "source_ids": [
+      "ccc-social"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "car",
+   "icon": "car",
+   "question": "Can I have weed in a car in Massachusetts, or drive after using it?",
+   "short": "Keep it in a closed container in the trunk or a locked glove compartment. An open container in the passenger area is illegal, and so is driving high.",
+   "points": [
+    {
+     "text": "It is illegal to have an open container of cannabis in a car’s passenger area, with a civil penalty of up to $500. Store it in a closed container in the trunk or a locked glove compartment.",
+     "source_ids": [
+      "ccc-laws"
+     ]
+    },
+    {
+     "text": "It is illegal to drive under the influence of cannabis.",
+     "source_ids": [
+      "ccc-laws",
+      "mamj"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "federal-land",
+   "icon": "mountain",
+   "question": "Can I take weed on a boat or onto federal land from Boston?",
+   "short": "No. The Cannabis Control Commission says cannabis can’t be possessed on, used in or carried through federal waterways, such as oceans and rivers, and using it on federal land is illegal.",
+   "points": [
+    {
+     "text": "Cannabis cannot be possessed, consumed in or transported through federal waterways. Federally regulated areas, including waterways such as oceans or rivers, and airspace, remain under federal restrictions.",
+     "source_ids": [
+      "ccc-boaters"
+     ]
+    },
+    {
+     "text": "It is illegal to use cannabis in any form on federal land.",
+     "source_ids": [
+      "ccc-laws"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "flying",
+   "icon": "plane",
+   "question": "Can I fly home with weed from Boston?",
+   "short": "No. Massachusetts says it is illegal to take cannabis out of the state by plane, train, boat or any other way, or to mail it.",
+   "points": [
+    {
+     "text": "It is illegal to drive across state lines with cannabis, or to take it outside Massachusetts by plane, train, boat or any other mode of transportation. You can’t mail it either.",
+     "source_ids": [
+      "ccc-laws"
+     ]
+    },
+    {
+     "text": "TSA says marijuana and some cannabis products, including some CBD oil, remain illegal under federal law unless they have no more than 0.3% THC on a dry-weight basis or are FDA-approved. Its officers don’t search for drugs, but they refer anything illegal they find to law enforcement.",
+     "source_ids": [
+      "tsa-mmj"
+     ],
+     "link": {
+      "label": "Check your home state",
+      "href": "index.html#map"
+     }
+    }
+   ]
+  },
+  {
+   "id": "medical",
+   "icon": "card",
+   "question": "Does Massachusetts accept medical cannabis cards from other states?",
+   "short": "No. Only registered patients who live in Massachusetts, or their caregivers, can buy medical cannabis there. Visitors 21 and older can still buy at adult-use stores.",
+   "points": [
+    {
+     "text": "Out-of-state residents cannot buy medical marijuana in Massachusetts. Only registered qualifying patients who are Massachusetts residents, or their caregivers, can.",
+     "source_ids": [
+      "ccc-laws"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "edibles",
+   "icon": "clock",
+   "question": "How much of an edible should I take?",
+   "short": "Start low and go slow. The Cannabis Control Commission says edibles can take one to four hours to take effect.",
+   "points": [
+    {
+     "text": "Edibles can take one to four hours to take effect. Check the label, start with a low dose and wait before taking more.",
+     "source_ids": [
+      "mamj"
+     ]
+    },
+    {
+     "text": "For a possible poisoning, call Poison Control at 1-800-222-1222.",
+     "source_ids": [
+      "mamj"
+     ]
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "ccc-laws",
+   "title": "Know the laws: age and ID, possession limits, public use, vehicles, leaving the state, visitors and medical patients",
+   "publisher": "Massachusetts Cannabis Control Commission",
+   "url": "https://masscannabiscontrol.com/know-the-laws/",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "ccc-release",
+   "title": "Cannabis Control Commission to implement An Act Modernizing the Commonwealth’s Cannabis Laws (April 19, 2026)",
+   "publisher": "Massachusetts Cannabis Control Commission",
+   "url": "https://masscannabiscontrol.com/2026/04/massachusetts-cannabis-control-commission-to-implement-an-act-modernizing-the-commonwealths-cannabis-laws/",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "ccc-bulletin1",
+   "title": "Bulletin No. 1: An Act Modernizing the Commonwealth’s Cannabis Laws (April 17, 2026)",
+   "publisher": "Massachusetts Cannabis Control Commission",
+   "url": "https://masscannabiscontrol.com/2026/04/bulletin-no-1-an-act-modernizing-the-commonwealths-cannabis-laws-april-17-2026/",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "ccc-order6",
+   "title": "Administrative Order No. 6: equivalency and conversion standards for marijuana products (April 19, 2026)",
+   "publisher": "Massachusetts Cannabis Control Commission",
+   "url": "https://masscannabiscontrol.com/2026/04/administrative-order-relative-to-equivalency-and-conversion-standards-for-marijuana-products-april-19-2026/",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "ccc-where",
+   "title": "Where to buy: licensed marijuana establishments, medical treatment centers and delivery businesses",
+   "publisher": "Massachusetts Cannabis Control Commission",
+   "url": "https://masscannabiscontrol.com/where-to-buy/",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "ccc-social",
+   "title": "Social consumption establishment regulations are now in effect (January 2, 2026)",
+   "publisher": "Massachusetts Cannabis Control Commission",
+   "url": "https://masscannabiscontrol.com/2026/01/massachusetts-social-consumption-establishment-regulations-are-now-in-effect/",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "ccc-boaters",
+   "title": "Summer boaters reminded that cannabis is prohibited from federal waters (July 26, 2019; its 1-ounce figure predates the 2026 law)",
+   "publisher": "Massachusetts Cannabis Control Commission",
+   "url": "https://masscannabiscontrol.com/2019/07/summer-boaters-reminded-that-cannabis-is-prohibited-from-federal-waters/",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "bphc",
+   "title": "Marijuana health information (its 1-ounce figure predates the 2026 law)",
+   "publisher": "Boston Public Health Commission",
+   "url": "https://www.boston.gov/government/cabinets/boston-public-health-commission/health-education-training/marijuana-health-information",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "mamj",
+   "title": "More About MJ: responsible use, edibles and driving",
+   "publisher": "Massachusetts Cannabis Control Commission",
+   "url": "https://moreaboutmj.org/responsible-use/",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "tsa-mmj",
+   "title": "What can I bring? Medical marijuana",
+   "publisher": "Transportation Security Administration",
+   "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  }
+ ],
+ "attempts": [
+  {
+   "url": "https://www.massport.com/logan-airport",
+   "tried": "2026-11-27",
+   "result": "Not retrieved: the page returned only a bot-protection script. No Logan Airport rule is stated."
+  }
+ ]
+}

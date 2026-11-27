@@ -6,8 +6,9 @@ adults-21+ notice, a yes/no table of places, FAQPage markup and a numbered, date
 official source and the date it was checked; no business appears except as a regulator's own licensee list names it.
 
 render() draws any guide. las_vegas.py uses it with its own extras (the MJBizCon-week box and the Nevada
-flower-and-products chart). The other cities are plain data: data/denver.json, data/chicago.json and
-data/new-york-city.json, each with a "page" block that names the page, its state and its "Where to go next" links.
+flower-and-products chart). The other cities are plain data: data/denver.json, data/chicago.json,
+data/new-york-city.json, data/los-angeles.json, data/detroit.json and data/boston.json, each with a "page" block
+that names the page, its state and its "Where to go next" links.
 All of them are built through build_national.pages(), so they share the national page shell.
 """
 import json
@@ -20,6 +21,9 @@ GUIDES = {
     'denver.html': ROOT / 'data/denver.json',
     'chicago.html': ROOT / 'data/chicago.json',
     'new-york-city.html': ROOT / 'data/new-york-city.json',
+    'los-angeles.html': ROOT / 'data/los-angeles.json',
+    'detroit.html': ROOT / 'data/detroit.json',
+    'boston.html': ROOT / 'data/boston.json',
 }
 
 # Line icons, decorative only (aria-hidden): every icon sits next to text that says the same thing.
