@@ -5,9 +5,11 @@ the guide (California's box links both Los Angeles and San Francisco). Miami and
 Florida and Louisiana allow medical marijuana only, and their yes/no tables answer for a patient. Washington, DC says first that it
 allows possession but sells only through its medical program. The visiting.html hub lists every guide, Las Vegas included, with
 whether adults 21 and older can buy there in words and a symbol, and every guide, state box and the home page link it.
-Columbus, Cleveland and Cincinnati are home-market guides: Ohio's box links all three, each links this site's own Ohio
-dispensary finder filtered to a city and county that exist in the location data, Ohio's 2026 law (S.B. 56) is cited from the
-Revised Code and the Legislative Service Commission, and Cincinnati says plainly that CVG is in Kentucky, under Kentucky law."""
+Columbus, Cleveland, Cincinnati, Dayton, Toledo and Akron are home-market guides: Ohio's box links all six, each links this
+site's own Ohio dispensary finder filtered to a city and county that exist in the location data, Ohio's 2026 law (S.B. 56) is
+cited from the Revised Code and the Legislative Service Commission, and Cincinnati says plainly that CVG is in Kentucky, under
+Kentucky law. Toledo says Michigan weed is contraband in Ohio, Dayton cites the Air Force museum's own pages for Wright-Patterson
+and Akron cites the National Park Service for Cuyahoga Valley; none states an airport rule its airport's own site didn't give."""
 import json
 import re
 import sys
@@ -27,8 +29,8 @@ STATE_PAGE = {'denver.html': 'colorado.html', 'chicago.html': 'illinois.html', '
               'seattle.html': 'washington.html', 'phoenix.html': 'arizona.html', 'miami.html': 'florida.html',
               'san-francisco.html': 'california.html', 'portland.html': 'oregon.html', 'new-orleans.html': 'louisiana.html',
               'washington-dc.html': 'district-of-columbia.html', 'columbus.html': 'ohio.html', 'cleveland.html': 'ohio.html',
-              'cincinnati.html': 'ohio.html'}
-OHIO = ['columbus.html', 'cleveland.html', 'cincinnati.html']
+              'cincinnati.html': 'ohio.html', 'dayton.html': 'ohio.html', 'toledo.html': 'ohio.html', 'akron.html': 'ohio.html'}
+OHIO = ['columbus.html', 'cleveland.html', 'cincinnati.html', 'dayton.html', 'toledo.html', 'akron.html']
 MEDICAL_ONLY = {'miami.html', 'new-orleans.html'}
 STATUS = MEDICAL_ONLY | {'washington-dc.html'}  # guides that open with a status notice
 CHECKED = '2026-11-27'
@@ -44,13 +46,13 @@ def build(name, origin=''):
 
 
 class CityGuides(unittest.TestCase):
-    def test_the_sixteen_guides_are_registered(self):
+    def test_the_nineteen_guides_are_registered(self):
         self.assertEqual(list(city_guides.GUIDES), ['denver.html', 'chicago.html', 'new-york-city.html',
                                                     'los-angeles.html', 'detroit.html', 'boston.html',
                                                     'seattle.html', 'phoenix.html', 'miami.html',
                                                     'san-francisco.html', 'portland.html', 'new-orleans.html',
                                                     'washington-dc.html', 'columbus.html', 'cleveland.html',
-                                                    'cincinnati.html'])
+                                                    'cincinnati.html', 'dayton.html', 'toledo.html', 'akron.html'])
         for name in city_guides.GUIDES:
             self.assertIn(name, LANDING, f'{name}: no opening line in data/landing-pages.json')
             self.assertEqual(city_guides.load(name)['page']['state_page'], STATE_PAGE[name])
@@ -241,7 +243,7 @@ class CityGuides(unittest.TestCase):
             self.assertIn(f"params.get('{key}')" if key == 'state' else "for(const key of ['city','county'])", script)
         pages = build_national.pages()
         box = re.search(r'<aside class="cityguide".*?</aside>', pages['ohio.html'], re.S).group(0)
-        self.assertIn('aria-label="Visitor guides: Columbus, Cleveland, Cincinnati"', box)
+        self.assertIn('aria-label="Visitor guides: Columbus, Cleveland, Cincinnati, Dayton, Toledo, Akron"', box)
         self.assertEqual(pages['ohio.html'].count('<aside class="cityguide"'), 1)
         home = pages['index.html']
         for name in OHIO:
@@ -271,7 +273,9 @@ class CityGuides(unittest.TestCase):
             county = next(dict(part.split('=') for part in h.split('?', 1)[1].split('&'))['county'] for h in links if 'county=' in h)
             in_county = {l['city'] for l in locations if l['state'] == 'OH' and l.get('county') == county}
             text = d['page']['listings']['text']
-            for suburb in re.split(r', | and ', text.split('to include ', 1)[1].rstrip('.')):
+            suburbs = text.split('to include ', 1)[1].rstrip('.') if 'to include ' in text else ''  # Lucas County lists Toledo alone
+            self.assertEqual(bool(suburbs), in_county != {city}, name)
+            for suburb in re.split(r', | and ', suburbs) if suburbs else []:
                 self.assertIn(suburb, in_county, f'{name}: {suburb}')
             # Ohio's 2026 law, from the Revised Code and the Legislative Service Commission; no fee or price.
             ids = {s['id'] for s in d['sources']}
@@ -297,8 +301,8 @@ class CityGuides(unittest.TestCase):
         self.assertIn('href="kentucky.html"', page)
         flying = next(s for s in d['sections'] if s['id'] == 'flying')
         self.assertIn('krs-218a-1422', flying['points'][0]['source_ids'])
-        # Columbus and Cleveland state no airport rule of their own: none was found on the airports' sites.
-        for name in ('columbus.html', 'cleveland.html'):
+        # The other Ohio guides state no airport rule of their own: none was found on the airports' sites.
+        for name in ('columbus.html', 'cleveland.html', 'dayton.html', 'toledo.html', 'akron.html'):
             flying = next(s for s in city_guides.load(name)['sections'] if s['id'] == 'flying')
             self.assertEqual({sid for p in flying['points'] for sid in p['source_ids']}, {'tsa-mmj'})
             self.assertTrue(any('airport' in a['result'].lower() for a in city_guides.load(name)['attempts']))
@@ -309,6 +313,38 @@ class CityGuides(unittest.TestCase):
         federal = next(s for s in d['sections'] if s['id'] == 'federal-land')
         self.assertEqual({sid for p in federal['points'] for sid in p['source_ids']}, {'nps-mj', 'cuva-comp'})
         self.assertIn('Outdoor areas the City of Cleveland owns or controls', page)
+
+    def test_toledo_says_michigan_weed_is_contraband_in_ohio(self):
+        d, page = city_guides.load('toledo.html'), build('toledo.html')
+        mi = next(s for s in d['sections'] if s['id'] == 'michigan')
+        self.assertTrue(mi['short'].startswith('No. Michigan sells to adults 21 and older'))
+        self.assertIn('contraband', mi['short'])
+        self.assertEqual({sid for p in mi['points'] for sid in p['source_ids']}, {'mcl-27955', 'lsc-sb56', 'orc-3796-221'})
+        self.assertIn('contraband', next(p['text'] for p in mi['points'] if p['source_ids'] == ['lsc-sb56']))
+        self.assertNotIn('bring', [s['id'] for s in d['sections']])  # the Michigan answer replaces the general one
+        for href in ('michigan.html', 'detroit.html'):
+            self.assertIn(f'href="{href}"', page)
+        self.assertIn('href="#michigan"', page)
+
+    def test_dayton_cites_the_air_force_museum_for_wright_patterson(self):
+        d, page = city_guides.load('dayton.html'), build('dayton.html')
+        federal = next(s for s in d['sections'] if s['id'] == 'federal-land')
+        self.assertEqual({sid for p in federal['points'] for sid in p['source_ids']}, {'nmusaf-dir', 'nmusaf-rules', 'tsa-mmj'})
+        for sid in ('nmusaf-dir', 'nmusaf-rules'):
+            self.assertTrue(next(s for s in d['sources'] if s['id'] == sid)['url'].startswith('https://www.nationalmuseum.af.mil/'))
+        self.assertIn('Wright-Patterson Air Force Base and the Air Force museum', page)
+        self.assertTrue(any('wright-patterson' in a['result'].lower() for a in d['attempts']))
+
+    def test_akron_cites_the_national_park_service_for_cuyahoga_valley(self):
+        d, page = city_guides.load('akron.html'), build('akron.html')
+        federal = next(s for s in d['sections'] if s['id'] == 'federal-land')
+        self.assertEqual({sid for p in federal['points'] for sid in p['source_ids']}, {'nps-mj', 'cuva-comp'})
+        cle = {s['id']: s['url'] for s in city_guides.load('cleveland.html')['sources']}
+        for s in d['sources']:
+            if s['id'] in ('nps-mj', 'cuva-comp'):
+                self.assertEqual(s['url'], cle[s['id']])  # the same sources the Cleveland guide cites
+        self.assertIn('Cuyahoga Valley National Park and other federal land', page)
+        self.assertIn('href="cleveland.html"', page)
 
     def test_visitor_guides_hub(self):
         pages = build_national.pages()

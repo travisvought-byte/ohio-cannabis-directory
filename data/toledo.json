@@ -1,0 +1,536 @@
+{
+ "schema_version": 1,
+ "as_of": "2026-11-27",
+ "purpose": "Cannabis rules for people visiting Toledo, for national/toledo.html on the-reefer.com (built by city_guides.py through build_national.pages()). Ohio is the home market and this site is a directory of Ohio dispensaries, so the page sends visitors to the Ohio dispensary finder on OhioWeed.org (locations.html, filtered with its own ?state=OH&city= and ?county= filters) instead of a regulator’s list, and names and ranks no business. Every point names the official source it comes from: the Ohio Revised Code as rewritten by S.B. 56 (effective March 20, 2026), the Legislative Service Commission’s final analysis of that bill, the Ohio House’s bill page and TSA, plus the Michigan Legislature for Michigan’s adult-use law; each source carries the date it was checked. No fee or product price is given. Facts no reachable official source confirmed (a Toledo ordinance that still applies after S.B. 56, Toledo Express Airport’s own cannabis rule, hotel rules, medical-card reciprocity and the Division of Cannabis Control’s consumer FAQ) are left out; the attempts are recorded below.",
+ "page": {
+  "state": "OH",
+  "state_name": "Ohio",
+  "state_page": "ohio.html",
+  "crumb": "Visiting Toledo",
+  "h1": "Visiting Toledo? The cannabis rules for visitors",
+  "title": "Visiting Toledo: cannabis rules for visitors (2026)",
+  "description": "Can tourists buy weed in Toledo? Yes, at 21 with a government-issued ID, from an Ohio-licensed dispensary. Weed bought across the line in Michigan can’t come back into Ohio. Limits, where you can use it, cars and flying, plus our Toledo listings.",
+  "adult": "For adults 21 and older. Plain summaries of Ohio and Michigan law and federal sources, each linked below. Not legal advice.",
+  "prefix": "tol",
+  "place": "the Toledo visitor page",
+  "business_note": "No business is named on this page; the Ohio dispensary finder on OhioWeed.org lists the licensed locations from the state’s own roster. A listing there is not an endorsement of any business.",
+  "listings": {
+   "heading": "Find a licensed dispensary in Toledo",
+   "text": "Ohio is this site’s home market. Our Ohio dispensary finder lists the licensed locations from the state’s roster, with a map and directions. Start with Toledo, or open all of Lucas County.",
+   "links": [
+    {
+     "href": "https://ohioweed.org/locations.html?state=OH&city=Toledo",
+     "label": "Toledo dispensaries"
+    },
+    {
+     "href": "https://ohioweed.org/locations.html?state=OH&county=Lucas",
+     "label": "All of Lucas County"
+    }
+   ]
+  },
+  "more": [
+   {
+    "href": "ohio.html",
+    "label": "The full Ohio guide",
+    "rest": ": the state’s law, record clearing and local help"
+   },
+   {
+    "href": "michigan.html",
+    "label": "The full Michigan guide",
+    "rest": ": the law across the state line"
+   },
+   {
+    "href": "detroit.html",
+    "label": "Visiting Detroit",
+    "rest": ": Michigan’s rules for visitors, an hour north"
+   },
+   {
+    "href": "law-public-use.html",
+    "label": "Public use in every state",
+    "rest": ": where you can and can’t use it back home"
+   },
+   {
+    "href": "law-driving.html",
+    "label": "Driving and cannabis in every state"
+   },
+   {
+    "href": "travel-warnings.html",
+    "label": "Travel warnings",
+    "rest": ": the countries and states where any amount can land you in trouble"
+   },
+   {
+    "href": "help.html#travel",
+    "label": "Flying with cannabis",
+    "rest": ": what TSA says"
+   }
+  ]
+ },
+ "state_box": "Ohio’s 2026 rules for visitors 21 and older, and why weed bought across the line in Michigan can’t legally come back into Ohio, with the Toledo listings in our Ohio dispensary finder.",
+ "glance": [
+  {
+   "icon": "id",
+   "big": "21+",
+   "text": "and a current, valid, government-issued ID",
+   "href": "#buy"
+  },
+  {
+   "icon": "store",
+   "big": "Our listings",
+   "text": "licensed dispensaries in Toledo and Lucas County",
+   "href": "#find"
+  },
+  {
+   "icon": "scale",
+   "big": "2.5 oz + 15 g",
+   "text": "plant material and extract, the most per day",
+   "href": "#limits"
+  },
+  {
+   "icon": "nosmoke",
+   "big": "Not in public",
+   "text": "smoke or vape only at a private home or farm",
+   "href": "#where"
+  },
+  {
+   "icon": "x",
+   "big": "No Michigan weed",
+   "text": "only Ohio-licensed cannabis is legal here",
+   "href": "#michigan"
+  },
+  {
+   "icon": "car",
+   "big": "Sealed or in the trunk",
+   "text": "the rule for cannabis in a car",
+   "href": "#car"
+  }
+ ],
+ "sections": [
+  {
+   "id": "buy",
+   "icon": "id",
+   "question": "Can tourists buy weed in Toledo?",
+   "short": "Yes, if you are 21 or older and show a current, valid, government-issued ID at a dispensary licensed in Ohio.",
+   "points": [
+    {
+     "text": "Ohio’s law covers adult-use consumers, people 21 and older, who have and use marijuana bought from a dispensary licensed in Ohio.",
+     "source_ids": [
+      "orc-3796-221",
+      "lsc-sb56"
+     ]
+    },
+    {
+     "text": "A dispensary may sell adult-use marijuana only to a buyer who shows a current, valid, government-issued identification card proving they are 21 or older. The law does not say the ID must be from Ohio.",
+     "source_ids": [
+      "orc-3796-20"
+     ]
+    },
+    {
+     "text": "An adult may give another adult 21 or older up to the same amounts in one day, but only for free and only on private property used mainly as a home or farm. Any other sale or transfer takes a license.",
+     "source_ids": [
+      "orc-3796-221"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "find",
+   "icon": "store",
+   "question": "Where are the licensed dispensaries in and around Toledo?",
+   "short": "Ohio is home turf for this site: the Ohio dispensary finder on OhioWeed.org lists the licensed locations in Toledo and across Lucas County.",
+   "points": [
+    {
+     "text": "Adult-use marijuana has to come from a dispensary licensed in Ohio; marijuana from anywhere else can’t be legally possessed here.",
+     "source_ids": [
+      "orc-3796-221",
+      "lsc-sb56"
+     ],
+     "link": {
+      "label": "See the Toledo listings in the Ohio dispensary finder",
+      "href": "https://ohioweed.org/locations.html?state=OH&city=Toledo"
+     }
+    },
+    {
+     "text": "Since March 20, 2026, Ohio caps the number of dispensaries, adult-use and medical together, at 400 statewide.",
+     "source_ids": [
+      "lsc-sb56"
+     ],
+     "link": {
+      "label": "See every Lucas County listing",
+      "href": "https://ohioweed.org/locations.html?state=OH&county=Lucas"
+     }
+    }
+   ]
+  },
+  {
+   "id": "limits",
+   "icon": "scale",
+   "question": "How much weed can I buy and have in Ohio?",
+   "short": "Up to 2.5 ounces of plant material and 15 grams of extract. That is also the most a dispensary may sell you in one day.",
+   "points": [
+    {
+     "text": "An adult may have up to 2.5 ounces of plant material, not counting seeds, live plants or clones, and up to 15 grams of extract. The limits count dispensary and homegrown marijuana together.",
+     "source_ids": [
+      "orc-3796-221"
+     ]
+    },
+    {
+     "text": "A dispensary may not knowingly sell one consumer more than that amount in a single day.",
+     "source_ids": [
+      "orc-3796-20"
+     ]
+    },
+    {
+     "text": "Under the 2026 law, adult-use flower is capped at 35% THC and extracts at 70%, the same caps as medical marijuana.",
+     "source_ids": [
+      "lsc-sb56"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "where",
+   "icon": "pin",
+   "question": "Where can you smoke weed in Toledo?",
+   "short": "Only on private property used mainly as a home or farm, and not where a lease bans it. Ohio bars using cannabis in any public place, and bars smoking or vaping it in public places and workplaces.",
+   "points": [
+    {
+     "text": "No one may knowingly consume adult-use or homegrown marijuana in a public place, and whoever runs a public place may not knowingly allow it.",
+     "source_ids": [
+      "orc-3796-04"
+     ]
+    },
+    {
+     "text": "Smoking, combusting or vaporizing adult-use or homegrown marijuana is allowed only on privately owned property used primarily for residential or agricultural purposes.",
+     "source_ids": [
+      "orc-3796-06"
+     ]
+    },
+    {
+     "text": "Smoking or vaping is also barred in any public place or place of employment, a family child care home, a halfway house and a rental home whose lease prohibits it. Breaking the public-place rule is a minor misdemeanor; a lease ban carries no criminal penalty.",
+     "source_ids": [
+      "orc-3796-06",
+      "lsc-sb56"
+     ]
+    },
+    {
+     "text": "The Legislative Service Commission’s analysis of the 2026 law says nothing about hotels or lodging; the statute allows smoking and vaping only on privately owned property used mainly as a home or farm.",
+     "source_ids": [
+      "lsc-sb56",
+      "orc-3796-06"
+     ]
+    },
+    {
+     "text": "Edible products must be kept in their original packaging whenever they are not being used.",
+     "source_ids": [
+      "orc-3796-06"
+     ]
+    }
+   ],
+   "places": [
+    {
+     "place": "A privately owned home or farm",
+     "answer": "yes",
+     "label": "Yes, unless a lease bans smoking or vaping",
+     "source_ids": [
+      "orc-3796-06"
+     ]
+    },
+    {
+     "place": "Streets, parks and other public places",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "orc-3796-04",
+      "orc-3796-06"
+     ]
+    },
+    {
+     "place": "Workplaces",
+     "answer": "no",
+     "label": "No smoking or vaping",
+     "source_ids": [
+      "orc-3796-06"
+     ]
+    },
+    {
+     "place": "A rental home whose lease bans it",
+     "answer": "no",
+     "label": "No smoking or vaping",
+     "source_ids": [
+      "orc-3796-06",
+      "lsc-sb56"
+     ]
+    },
+    {
+     "place": "A car, as the driver",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "orc-3796-221",
+      "lsc-sb56",
+      "orc-4511-19"
+     ]
+    },
+    {
+     "place": "A car that is being driven, as a passenger",
+     "answer": "no",
+     "label": "No smoking or vaping",
+     "source_ids": [
+      "lsc-sb56"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "car",
+   "icon": "car",
+   "question": "Can I have weed in my car in Ohio, or drive after using it?",
+   "short": "Keep it sealed in the package it was sold in, or in the trunk once it is opened. Driving under the influence is against the law, and passengers may not smoke or vape while the car is being driven.",
+   "points": [
+    {
+     "text": "Adult-use or medical marijuana may ride in a vehicle in its original, unopened package. Once opened, it goes in the trunk or, in a vehicle with no trunk, behind the last upright seat or somewhere the driver and passengers don’t normally sit and the driver can’t easily reach. Paraphernalia follows the same rule.",
+     "source_ids": [
+      "orc-3796-062"
+     ]
+    },
+    {
+     "text": "Breaking the storage rule is a minor misdemeanor. A passenger who smokes, combusts or vaporizes marijuana while the vehicle is being operated commits a misdemeanor of the third degree.",
+     "source_ids": [
+      "lsc-sb56"
+     ]
+    },
+    {
+     "text": "The adult-use law does not let anyone operate a vehicle, streetcar, trackless trolley, watercraft or aircraft while under the influence of marijuana.",
+     "source_ids": [
+      "orc-3796-221"
+     ]
+    },
+    {
+     "text": "Ohio’s OVI law makes it an offense to drive under the influence of a drug of abuse, and also to drive with marijuana or its metabolite in your blood or urine at or above set concentrations.",
+     "source_ids": [
+      "orc-4511-19"
+     ],
+     "link": {
+      "label": "Driving and cannabis in every state",
+      "href": "law-driving.html"
+     }
+    }
+   ]
+  },
+  {
+   "id": "michigan",
+   "icon": "x",
+   "question": "Can I bring weed back to Toledo from Michigan?",
+   "short": "No. Michigan sells to adults 21 and older, but Ohio’s 2026 law treats marijuana bought outside Ohio’s licensed system, a Michigan store included, as contraband that can’t be legally possessed in Ohio.",
+   "points": [
+    {
+     "text": "Michigan law makes it not unlawful for a person 21 or older to possess, use, purchase or transport up to 2.5 ounces of marijuana, no more than 15 grams of it concentrate. That is Michigan’s own law.",
+     "source_ids": [
+      "mcl-27955"
+     ],
+     "link": {
+      "label": "Read the Michigan guide",
+      "href": "michigan.html"
+     }
+    },
+    {
+     "text": "The Legislative Service Commission’s analysis of S.B. 56 says marijuana acquired elsewhere, such as from an out-of-state dispensary, cannot be legally possessed under the act, and calls out-of-state marijuana contraband. So marijuana bought in Michigan can’t legally come back into Ohio.",
+     "source_ids": [
+      "lsc-sb56"
+     ]
+    },
+    {
+     "text": "Ohio’s possession rights cover only marijuana bought from a dispensary licensed in Ohio or grown at home under Ohio’s home grow law.",
+     "source_ids": [
+      "orc-3796-221"
+     ],
+     "link": {
+      "label": "Visiting Detroit: Michigan’s rules for visitors",
+      "href": "detroit.html"
+     }
+    }
+   ]
+  },
+  {
+   "id": "flying",
+   "icon": "plane",
+   "question": "Can I fly home with weed from Toledo?",
+   "short": "Not legally. TSA says marijuana remains illegal under federal law, and it refers anything illegal its officers find to law enforcement.",
+   "points": [
+    {
+     "text": "TSA says marijuana and some cannabis products, including some CBD oil, remain illegal under federal law unless they have no more than 0.3% THC on a dry-weight basis or are FDA-approved. Its officers don’t search for drugs, but they refer anything illegal they find to law enforcement.",
+     "source_ids": [
+      "tsa-mmj"
+     ],
+     "link": {
+      "label": "Check your home state",
+      "href": "index.html#map"
+     }
+    }
+   ]
+  },
+  {
+   "id": "changes",
+   "icon": "calendar",
+   "question": "What changed in Ohio’s cannabis law in 2026?",
+   "short": "Senate Bill 56 took effect March 20, 2026. It merged the adult-use law into Ohio Revised Code chapter 3796, limited smoking and vaping to private homes and farms, set rules for carrying cannabis in a car, made daily purchase limits law and made marijuana from other states illegal to have in Ohio.",
+   "points": [
+    {
+     "text": "S.B. 56 of the 136th General Assembly was signed by the governor and took effect March 20, 2026; its operating appropriations took effect December 19, 2025.",
+     "source_ids": [
+      "ga-sb56",
+      "lsc-sb56"
+     ]
+    },
+    {
+     "text": "The act repeals the Cannabis Control Law that took effect December 7, 2023 (the former chapter 3780), merges it into Ohio Revised Code chapter 3796 and leaves adult-use and medical marijuana with one regulator, the Division of Cannabis Control.",
+     "source_ids": [
+      "lsc-sb56",
+      "orc-3796-221"
+     ]
+    },
+    {
+     "text": "It turned the purchase limit into a daily limit, added the vehicle storage rule, raised the penalty for passengers who smoke in a moving vehicle and made out-of-state marijuana contraband.",
+     "source_ids": [
+      "lsc-sb56"
+     ]
+    },
+    {
+     "text": "Landlords may now prohibit smoking, vaporizing or combusting marijuana in a residential premises, common areas included, and may prohibit home grow.",
+     "source_ids": [
+      "lsc-sb56"
+     ]
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "orc-3796-221",
+   "title": "Ohio Revised Code 3796.221: rights of adult-use users (effective March 20, 2026)",
+   "publisher": "Ohio Legislative Service Commission (Ohio Revised Code)",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3796.221",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "lsc-sb56",
+   "title": "Final Analysis: Am. Sub. S.B. 56, 136th General Assembly (April 2, 2026)",
+   "publisher": "Ohio Legislative Service Commission",
+   "url": "https://www.legislature.ohio.gov/download?key=27450",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "orc-3796-20",
+   "title": "Ohio Revised Code 3796.20: dispensary license (effective March 20, 2026)",
+   "publisher": "Ohio Legislative Service Commission (Ohio Revised Code)",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3796.20/3-20-2026",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "orc-3796-04",
+   "title": "Ohio Revised Code 3796.04: home grow, and no use in a public place (effective March 20, 2026)",
+   "publisher": "Ohio Legislative Service Commission (Ohio Revised Code)",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3796.04",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "orc-3796-06",
+   "title": "Ohio Revised Code 3796.06: forms of marijuana, and where smoking or vaping is barred (effective March 20, 2026)",
+   "publisher": "Ohio Legislative Service Commission (Ohio Revised Code)",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3796.06",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "orc-4511-19",
+   "title": "Ohio Revised Code 4511.19: operating a vehicle under the influence (version effective April 9, 2025)",
+   "publisher": "Ohio Legislative Service Commission (Ohio Revised Code)",
+   "url": "https://codes.ohio.gov/assets/laws/revised-code/authenticated/45/4511/4511.19/4-9-2025/4511.19-4-9-2025.pdf",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "orc-3796-062",
+   "title": "Ohio Revised Code 3796.062: transportation of marijuana (effective March 20, 2026)",
+   "publisher": "Ohio Legislative Service Commission (Ohio Revised Code)",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3796.062",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "tsa-mmj",
+   "title": "What Can I Bring? Medical Marijuana",
+   "publisher": "Transportation Security Administration",
+   "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "ga-sb56",
+   "title": "Senate Bill 56, 136th General Assembly: status and effective date",
+   "publisher": "Ohio House of Representatives",
+   "url": "https://ohiohouse.gov/legislation/136/sb56",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "mcl-27955",
+   "title": "MCL 333.27955: what adults 21 and older may possess, use, buy, transport and give away",
+   "publisher": "Michigan Legislature",
+   "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-333-27955",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  }
+ ],
+ "attempts": [
+  {
+   "url": "https://com.ohio.gov/divisions-and-programs/cannabis-control/licensee-resources/what-we-do/ohio-cannabis-faq",
+   "tried": "2026-11-27",
+   "result": "Not read: the Division of Cannabis Control’s Ohio Cannabis FAQ failed to load (client error), so nothing from it is stated; the statutes and the Legislative Service Commission’s final analysis of S.B. 56 are cited instead."
+  },
+  {
+   "url": "https://dam.assets.ohio.gov/image/upload/com.ohio.gov/DCC/Non-Medical_Sales_Limits.pdf",
+   "tried": "2026-11-27",
+   "result": "Read, not used: the Division’s May 2025 guidance on non-medical sales limits cites the former R.C. 3780.03 and 3780.36, which S.B. 56 replaced on March 20, 2026, so its milligram limit is not stated; the daily limit is taken from R.C. 3796.20(C)(2) and 3796.221(B)."
+  },
+  {
+   "url": "https://ohiosenate.gov/news/on-the-record/ohios-new-marijuana-and-hemp-law",
+   "tried": "2026-11-27",
+   "result": "Read, not used: the Ohio Senate’s January 1, 2026 summary covers the dispensary cap, spacing and intoxicating hemp, not the consumer rules on this page; the Legislative Service Commission’s final analysis is cited instead."
+  },
+  {
+   "url": "https://www.ohiosenate.gov/news/on-the-record/update-governor-signs-senate-bill-56-reforming-ohios-marijuana-and-intoxicating-hemp-laws",
+   "tried": "2026-11-27",
+   "result": "Read, not used: the Ohio Senate’s December 12, 2025 post says the governor signed S.B. 56 but gives no effective date; the Ohio House’s bill page (effective March 20, 2026) is cited instead."
+  },
+  {
+   "url": "https://codes.ohio.gov/ohio-revised-code/chapter-3794",
+   "tried": "2026-11-27",
+   "result": "Not read: the Legislative Service Commission’s analysis says smoking limits for adult-use marijuana also follow R.C. Chapter 3794 (smoking in places of employment and public places), which was not read today. No hotel rule is stated: no statute or agency page read today names one, and the analysis does not mention hotels or lodging."
+  },
+  {
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3796.22",
+   "tried": "2026-11-27",
+   "result": "Not read: whether Ohio dispensaries accept other states’ medical cards was not checked today, so the page says nothing about medical reciprocity; adults 21 and older need no card to buy."
+  },
+  {
+   "url": "https://www.marijuanamoment.net/tsa-clarifies-no-changes-in-medical-cannabis-policy-for-airports-newsletter-may-21-2026/",
+   "tried": "2026-11-27",
+   "result": "Not read: news reports in search results describe 2026 federal rescheduling of state-licensed medical cannabis and changes to TSA guidance. TSA’s own Medical Marijuana page, read today, still says marijuana remains illegal under federal law, so only TSA’s page is cited and no rescheduling claim is made."
+  },
+  {
+   "url": "https://www.toledoport.org/",
+   "tried": "2026-11-27",
+   "result": "Searched for a Toledo Express Airport (TOL) rule on cannabis: no page of the airport’s own turned up (its web address appeared only on a third-party travel page), and a search of the Toledo-Lucas County Port Authority’s site for marijuana or cannabis returned nothing on it, so no airport rule is stated; TSA is cited for flying."
+  },
+  {
+   "url": "https://codelibrary.amlegal.com/codes/toledo/latest/toledo_oh/0-0-0-154656",
+   "tried": "2026-11-27",
+   "result": "Read, not used: Toledo Municipal Code 513.15 (marihuana laws, passed by voters September 15, 2015, Ord. 365-14) predates Ohio’s 2023 and 2026 laws, and its own subsection (k) voids it where Ohio enacts lesser penalties or repeals them; how it applies after S.B. 56 was not confirmed, so no Toledo ordinance is stated."
+  }
+ ]
+}

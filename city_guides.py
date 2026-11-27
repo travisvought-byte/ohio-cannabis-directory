@@ -9,9 +9,10 @@ render() draws any guide. las_vegas.py uses it with its own extras (the MJBizCon
 flower-and-products chart). The other cities are plain data: data/denver.json, data/chicago.json,
 data/new-york-city.json, data/los-angeles.json, data/detroit.json, data/boston.json, data/seattle.json,
 data/phoenix.json, data/miami.json, data/san-francisco.json, data/portland.json, data/new-orleans.json,
-data/washington-dc.json, data/columbus.json, data/cleveland.json and data/cincinnati.json, each with a
+data/washington-dc.json, data/columbus.json, data/cleveland.json, data/cincinnati.json, data/dayton.json,
+data/toledo.json and data/akron.json, each with a
 "page" block that names the page, its state and its "Where to go next" links. A state can have more than one guide
-(California: Los Angeles and San Francisco; Ohio: Columbus, Cleveland and Cincinnati); its page links them all in one
+(California: Los Angeles and San Francisco; Ohio: Columbus, Cleveland, Cincinnati, Dayton, Toledo and Akron); its page links them all in one
 visitor-guide box. Ohio is the home market, so an Ohio guide's "page" block adds "listings": a box under the tiles that
 links this site's own Ohio dispensary finder, filtered to the city and its county, instead of a regulator's list.
 A state with no adult-use sales (Florida, for Miami; Louisiana, for New Orleans; the District of Columbia, which allows
@@ -46,6 +47,9 @@ GUIDES = {
     'columbus.html': ROOT / 'data/columbus.json',
     'cleveland.html': ROOT / 'data/cleveland.json',
     'cincinnati.html': ROOT / 'data/cincinnati.json',
+    'dayton.html': ROOT / 'data/dayton.json',
+    'toledo.html': ROOT / 'data/toledo.json',
+    'akron.html': ROOT / 'data/akron.json',
 }
 HUB = 'visiting.html'  # every visitor guide on one page (November 27, 2026)
 
