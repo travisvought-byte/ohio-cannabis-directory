@@ -4,7 +4,10 @@ yes/no answers are shown in words as well as symbols, no business or phone numbe
 the guide (California's box links both Los Angeles and San Francisco). Miami and New Orleans, in medical-only states, say first that
 Florida and Louisiana allow medical marijuana only, and their yes/no tables answer for a patient. Washington, DC says first that it
 allows possession but sells only through its medical program. The visiting.html hub lists every guide, Las Vegas included, with
-whether adults 21 and older can buy there in words and a symbol, and every guide, state box and the home page link it."""
+whether adults 21 and older can buy there in words and a symbol, and every guide, state box and the home page link it.
+Columbus, Cleveland and Cincinnati are home-market guides: Ohio's box links all three, each links this site's own Ohio
+dispensary finder filtered to a city and county that exist in the location data, Ohio's 2026 law (S.B. 56) is cited from the
+Revised Code and the Legislative Service Commission, and Cincinnati says plainly that CVG is in Kentucky, under Kentucky law."""
 import json
 import re
 import sys
@@ -23,7 +26,9 @@ STATE_PAGE = {'denver.html': 'colorado.html', 'chicago.html': 'illinois.html', '
               'los-angeles.html': 'california.html', 'detroit.html': 'michigan.html', 'boston.html': 'massachusetts.html',
               'seattle.html': 'washington.html', 'phoenix.html': 'arizona.html', 'miami.html': 'florida.html',
               'san-francisco.html': 'california.html', 'portland.html': 'oregon.html', 'new-orleans.html': 'louisiana.html',
-              'washington-dc.html': 'district-of-columbia.html'}
+              'washington-dc.html': 'district-of-columbia.html', 'columbus.html': 'ohio.html', 'cleveland.html': 'ohio.html',
+              'cincinnati.html': 'ohio.html'}
+OHIO = ['columbus.html', 'cleveland.html', 'cincinnati.html']
 MEDICAL_ONLY = {'miami.html', 'new-orleans.html'}
 STATUS = MEDICAL_ONLY | {'washington-dc.html'}  # guides that open with a status notice
 CHECKED = '2026-11-27'
@@ -39,12 +44,13 @@ def build(name, origin=''):
 
 
 class CityGuides(unittest.TestCase):
-    def test_the_thirteen_guides_are_registered(self):
+    def test_the_sixteen_guides_are_registered(self):
         self.assertEqual(list(city_guides.GUIDES), ['denver.html', 'chicago.html', 'new-york-city.html',
                                                     'los-angeles.html', 'detroit.html', 'boston.html',
                                                     'seattle.html', 'phoenix.html', 'miami.html',
                                                     'san-francisco.html', 'portland.html', 'new-orleans.html',
-                                                    'washington-dc.html'])
+                                                    'washington-dc.html', 'columbus.html', 'cleveland.html',
+                                                    'cincinnati.html'])
         for name in city_guides.GUIDES:
             self.assertIn(name, LANDING, f'{name}: no opening line in data/landing-pages.json')
             self.assertEqual(city_guides.load(name)['page']['state_page'], STATE_PAGE[name])
@@ -225,6 +231,84 @@ class CityGuides(unittest.TestCase):
         self.assertIn('href="https://abca.dc.gov/page/patients-non-dc-residents">Check whether ABCA recognizes your state’s card</a>', page)
         # No fee or price from ABCA's pages is copied.
         self.assertNotRegex(json.dumps(d['sections'], ensure_ascii=False), r'\$\d')
+
+    def test_ohio_guides_link_the_directorys_own_listings(self):
+        locations = json.loads((ROOT / 'data/public-locations.json').read_text(encoding='utf-8'))['locations']
+        cities = {l['city'] for l in locations if l['state'] == 'OH'}
+        counties = {l['county'] for l in locations if l['state'] == 'OH' and l.get('county')}
+        script = (ROOT / 'locations.html').read_text(encoding='utf-8')
+        for key in ('state', 'city', 'county'):  # the finder reads these filters from the address
+            self.assertIn(f"params.get('{key}')" if key == 'state' else "for(const key of ['city','county'])", script)
+        pages = build_national.pages()
+        box = re.search(r'<aside class="cityguide".*?</aside>', pages['ohio.html'], re.S).group(0)
+        self.assertIn('aria-label="Visitor guides: Columbus, Cleveland, Cincinnati"', box)
+        self.assertEqual(pages['ohio.html'].count('<aside class="cityguide"'), 1)
+        home = pages['index.html']
+        for name in OHIO:
+            d, page = city_guides.load(name), build(name)
+            city = d['page']['crumb'].removeprefix('Visiting ')
+            self.assertIn(f'href="{name}"', box)
+            self.assertIn(f'href="{name}">Visiting {city}</a>', home)
+            self.assertEqual(d['page']['state'], 'OH')
+            links = [a['href'] for a in d['page']['listings']['links']]
+            links += [p['link']['href'] for s in d['sections'] for p in s['points'] if p.get('link', {}).get('href', '').startswith('https://ohioweed.org/')]
+            self.assertTrue(links)
+            for href in links:
+                # Only the finder's own filters, with values the location data actually has.
+                self.assertTrue(href.startswith('https://ohioweed.org/locations.html?state=OH&'), href)
+                query = dict(part.split('=') for part in href.split('?', 1)[1].split('&'))
+                self.assertLessEqual(set(query), {'state', 'city', 'county'}, href)
+                if 'city' in query:
+                    self.assertIn(query['city'], cities, href)
+                if 'county' in query:
+                    self.assertIn(query['county'], counties, href)
+            self.assertIn(f'?state=OH&amp;city={city}"', page)
+            # The box comes after the tiles and before the questions, with a heading of its own.
+            self.assertLess(page.index('<ul class="lv-glance"'), page.index('<aside class="lv-show"'))
+            self.assertLess(page.index('<aside class="lv-show"'), page.index('<nav class="onpage"'))
+            self.assertIn(f'<h2 id="{d["page"]["prefix"]}listings-h">', page)
+            # Suburbs named in the text are cities the location data lists in that county.
+            county = next(dict(part.split('=') for part in h.split('?', 1)[1].split('&'))['county'] for h in links if 'county=' in h)
+            in_county = {l['city'] for l in locations if l['state'] == 'OH' and l.get('county') == county}
+            text = d['page']['listings']['text']
+            for suburb in re.split(r', | and ', text.split('to include ', 1)[1].rstrip('.')):
+                self.assertIn(suburb, in_county, f'{name}: {suburb}')
+            # Ohio's 2026 law, from the Revised Code and the Legislative Service Commission; no fee or price.
+            ids = {s['id'] for s in d['sources']}
+            self.assertLessEqual({'orc-3796-221', 'orc-3796-20', 'orc-3796-04', 'orc-3796-06', 'orc-3796-062', 'lsc-sb56', 'ga-sb56', 'tsa-mmj'}, ids)
+            buy = next(s for s in d['sections'] if s['id'] == 'buy')
+            self.assertTrue(buy['short'].startswith('Yes, if you are 21 or older'))
+            limits = next(s for s in d['sections'] if s['id'] == 'limits')
+            self.assertIn('2.5 ounces of plant material', limits['points'][0]['text'])
+            self.assertIn('15 grams of extract', limits['points'][0]['text'])
+            changes = next(s for s in d['sections'] if s['id'] == 'changes')
+            self.assertIn('March 20, 2026', changes['short'])
+            self.assertNotRegex(json.dumps(d['sections'], ensure_ascii=False), r'\$\d')
+            self.assertNotIn('<caption>Where can', page)  # the plain table: Ohio sells to any adult 21 or older
+            self.assertIn('No business is named on this page', page)
+
+    def test_cincinnati_says_cvg_is_in_kentucky(self):
+        d, page = city_guides.load('cincinnati.html'), build('cincinnati.html')
+        ky = next(s for s in d['sections'] if s['id'] == 'kentucky')
+        self.assertTrue(ky['short'].startswith('No. The Cincinnati/Northern Kentucky International Airport (CVG) is in Hebron, Kentucky'))
+        self.assertEqual({sid for p in ky['points'] for sid in p['source_ids']}, {'cvg-dir', 'krs-218a-1422', 'ky-omc'})
+        self.assertIn('href="#kentucky"', page)
+        self.assertIn('CVG is in Kentucky', page)
+        self.assertIn('href="kentucky.html"', page)
+        flying = next(s for s in d['sections'] if s['id'] == 'flying')
+        self.assertIn('krs-218a-1422', flying['points'][0]['source_ids'])
+        # Columbus and Cleveland state no airport rule of their own: none was found on the airports' sites.
+        for name in ('columbus.html', 'cleveland.html'):
+            flying = next(s for s in city_guides.load(name)['sections'] if s['id'] == 'flying')
+            self.assertEqual({sid for p in flying['points'] for sid in p['source_ids']}, {'tsa-mmj'})
+            self.assertTrue(any('airport' in a['result'].lower() for a in city_guides.load(name)['attempts']))
+
+    def test_cleveland_cites_the_city_smoking_rule_and_the_national_park(self):
+        d, page = city_guides.load('cleveland.html'), build('cleveland.html')
+        self.assertIn('cle-235', {sid for s in d['sections'] for p in s['points'] for sid in p['source_ids']})
+        federal = next(s for s in d['sections'] if s['id'] == 'federal-land')
+        self.assertEqual({sid for p in federal['points'] for sid in p['source_ids']}, {'nps-mj', 'cuva-comp'})
+        self.assertIn('Outdoor areas the City of Cleveland owns or controls', page)
 
     def test_visitor_guides_hub(self):
         pages = build_national.pages()

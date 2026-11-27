@@ -8,10 +8,12 @@ official source and the date it was checked; no business appears except as a reg
 render() draws any guide. las_vegas.py uses it with its own extras (the MJBizCon-week box and the Nevada
 flower-and-products chart). The other cities are plain data: data/denver.json, data/chicago.json,
 data/new-york-city.json, data/los-angeles.json, data/detroit.json, data/boston.json, data/seattle.json,
-data/phoenix.json, data/miami.json, data/san-francisco.json, data/portland.json, data/new-orleans.json and
-data/washington-dc.json, each with a
+data/phoenix.json, data/miami.json, data/san-francisco.json, data/portland.json, data/new-orleans.json,
+data/washington-dc.json, data/columbus.json, data/cleveland.json and data/cincinnati.json, each with a
 "page" block that names the page, its state and its "Where to go next" links. A state can have more than one guide
-(California: Los Angeles and San Francisco); its page links them all in one visitor-guide box.
+(California: Los Angeles and San Francisco; Ohio: Columbus, Cleveland and Cincinnati); its page links them all in one
+visitor-guide box. Ohio is the home market, so an Ohio guide's "page" block adds "listings": a box under the tiles that
+links this site's own Ohio dispensary finder, filtered to the city and its county, instead of a regulator's list.
 A state with no adult-use sales (Florida, for Miami; Louisiana, for New Orleans; the District of Columbia, which allows
 possession but sells only through its medical program) needs the page to say so before anything else. Its "page" block
 can add a "status" notice (heading, text, source_ids) shown under the adults-21+ line, and "places_caption" and
@@ -41,6 +43,9 @@ GUIDES = {
     'portland.html': ROOT / 'data/portland.json',
     'new-orleans.html': ROOT / 'data/new-orleans.json',
     'washington-dc.html': ROOT / 'data/washington-dc.json',
+    'columbus.html': ROOT / 'data/columbus.json',
+    'cleveland.html': ROOT / 'data/cleveland.json',
+    'cincinnati.html': ROOT / 'data/cincinnati.json',
 }
 HUB = 'visiting.html'  # every visitor guide on one page (November 27, 2026)
 
@@ -189,12 +194,26 @@ def render(nat, d, intro, cfg, top='', after_section=None):
                      css=CSS + (STATUS_CSS if status else ''))
 
 
+def listings_box(nat, name, p):
+    """For an Ohio guide: the box under the tiles that sends visitors to this site's own Ohio dispensary finder, filtered
+    to the city and to its county (the finder reads ?state=, ?city= and ?county=). Empty for a guide without "listings"."""
+    box = p.get('listings')
+    if not box:
+        return ''
+    esc, prefix, track, cta = nat.esc, p['prefix'], name.removesuffix('.html'), ' class="cta"'
+    return (f'<aside class="lv-show" aria-labelledby="{prefix}listings-h"><h2 id="{prefix}listings-h">{svg("store")}{esc(box["heading"])}</h2>'
+            f'<p>{esc(box["text"])}</p><p class="go">'
+            + ''.join(f'<a{cta if i == 0 else ""} href="{esc(a["href"])}" data-track="{track}:finder-{i + 1}">{esc(a["label"])}</a>'
+                      for i, a in enumerate(box['links']))
+            + '</p></aside>')
+
+
 def page(nat, name, landing):
     """A data-only city guide (every city in GUIDES)."""
     d = load(name)
     p = d['page']
     cfg = dict(p, name=name, more=[(m['href'], m['label'], m.get('rest', '')) for m in p['more']])
-    return render(nat, d, landing['intro'], cfg)
+    return render(nat, d, landing['intro'], cfg, top=listings_box(nat, name, p))
 
 
 def state_boxes():
