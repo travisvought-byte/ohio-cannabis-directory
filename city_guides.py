@@ -8,13 +8,18 @@ official source and the date it was checked; no business appears except as a reg
 render() draws any guide. las_vegas.py uses it with its own extras (the MJBizCon-week box and the Nevada
 flower-and-products chart). The other cities are plain data: data/denver.json, data/chicago.json,
 data/new-york-city.json, data/los-angeles.json, data/detroit.json, data/boston.json, data/seattle.json,
-data/phoenix.json, data/miami.json, data/san-francisco.json, data/portland.json and data/new-orleans.json, each with a
+data/phoenix.json, data/miami.json, data/san-francisco.json, data/portland.json, data/new-orleans.json and
+data/washington-dc.json, each with a
 "page" block that names the page, its state and its "Where to go next" links. A state can have more than one guide
 (California: Los Angeles and San Francisco); its page links them all in one visitor-guide box.
-A state with no adult-use sales (Florida, for Miami; Louisiana, for New Orleans) needs the page to say so before anything else. Its "page" block
+A state with no adult-use sales (Florida, for Miami; Louisiana, for New Orleans; the District of Columbia, which allows
+possession but sells only through its medical program) needs the page to say so before anything else. Its "page" block
 can add a "status" notice (heading, text, source_ids) shown under the adults-21+ line, and "places_caption" and
 "places_header" to reword the yes/no table; guides without them render exactly as before.
 All of them are built through build_national.pages(), so they share the national page shell.
+
+hub() draws visiting.html, the list of every guide (Las Vegas included) with whether adults 21 and older can buy there,
+read from each guide's own "Can tourists buy" answer; every guide links back to it in a "More city guides" line.
 """
 import json
 from pathlib import Path
@@ -35,7 +40,9 @@ GUIDES = {
     'san-francisco.html': ROOT / 'data/san-francisco.json',
     'portland.html': ROOT / 'data/portland.json',
     'new-orleans.html': ROOT / 'data/new-orleans.json',
+    'washington-dc.html': ROOT / 'data/washington-dc.json',
 }
+HUB = 'visiting.html'  # every visitor guide on one page (November 27, 2026)
 
 # Line icons, decorative only (aria-hidden): every icon sits next to text that says the same thing.
 PATHS = {
@@ -82,6 +89,7 @@ CSS = ('.lv-sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;over
        '.lv-mix{max-width:720px;margin:12px 0}.lv-mix caption{text-align:left;font-weight:700;padding:0 0 6px}.lv-mix td.n{white-space:nowrap;font-variant-numeric:tabular-nums}'
        '.lv-mix .bar{display:block;height:14px;border-radius:7px;background:var(--green2);min-width:2px}'
        '.lv-more{background:var(--mint);border-radius:14px;padding:14px 18px;margin:26px 0}.lv-more h2{margin:0 0 .3em;font-size:1.2rem}.lv-more ul{margin:.3em 0;padding-left:1.2em}'
+       '.lv-allguides{margin:.6em 0 0}.lv-allguides a{display:inline-flex;align-items:center;min-height:44px;font-weight:700}'
        '@media (max-width:760px){.lv-glance{grid-template-columns:1fr 1fr}}@media (max-width:480px){.lv-glance{grid-template-columns:1fr}.lv-places td.a{white-space:normal}}'
        '@media (prefers-color-scheme:dark){.mi{color:#a8dfbd}.lv-adult{color:var(--ink)}'
        '.yn.yes{background:rgba(46,125,79,.25);color:#a3e2bb}.yn.no{background:rgba(169,0,0,.25);color:#f3b0a6;border-color:#d0645a}'
@@ -164,7 +172,8 @@ def render(nat, d, intro, cfg, top='', after_section=None):
 
     body.append('<aside class="lv-more" aria-labelledby="more-h"><h2 id="more-h">Where to go next</h2><ul>'
                 + ''.join(f'<li><a href="{esc(href)}">{esc(label)}</a>{esc(rest)}</li>' for href, label, rest in cfg['more'])
-                + '</ul></aside>')
+                + '</ul>'
+                f'<p class="lv-allguides"><strong>More city guides:</strong> <a href="{HUB}">Cannabis rules for visitors, city by city</a></p></aside>')
     body.append(f'<p class="muted">Checked {nat.long_date(d["as_of"])}. Laws and lists change; each source below shows the date it was checked. '
                 f'{esc(cfg["business_note"])}</p>')
     body.append(f'<h2 id="{prefix}sources">Sources</h2><ol class="sources">' + ''.join(
@@ -201,3 +210,84 @@ def state_boxes():
 def home_links():
     """[(page, label)] for the home page's "Also" line, in GUIDES order."""
     return [(name, load(name)['page']['crumb']) for name in GUIDES]
+
+
+def buy_answer(d):
+    """(mark, words) for "Can adults 21 and older buy here?", from the guide's own "buy" answer: its opening sentence,
+    and the next one too when the first is a bare Yes or No. Yes is adult-use; No and Only (a patient) are medical-only."""
+    short = next(s['short'] for s in d['sections'] if s['id'] == 'buy')
+    parts = short.split('. ')
+    words = parts[0] if len(parts) == 1 else parts[0] + '.'
+    if words in ('Yes.', 'No.') and len(parts) > 1:
+        words += ' ' + parts[1].rstrip('.') + '.'
+    first = short.split()[0].rstrip('.,').lower()
+    assert first in ('yes', 'no', 'only'), f'unclear buy answer: {short[:40]}'
+    return {'yes': 'yes', 'no': 'no', 'only': 'maybe'}[first], words
+
+
+def hub_rows():
+    """Every guide as {page, city, state, state_page, mark, label, words, as_of}, Las Vegas included."""
+    import las_vegas  # imported here: las_vegas imports this module
+    rows = [(las_vegas.NAME, las_vegas.load(), las_vegas.PAGE)] + [(name, load(name), load(name)['page']) for name in GUIDES]
+    out = []
+    for name, d, p in rows:
+        mark, words = buy_answer(d)
+        out.append({'page': name, 'city': p['crumb'].removeprefix('Visiting '), 'crumb': p['crumb'], 'state': p['state_name'],
+                    'state_page': p['state_page'], 'mark': mark, 'label': {'yes': 'Yes', 'no': 'No', 'maybe': 'Only as a patient'}[mark],
+                    'words': words, 'as_of': d['as_of']})
+    return sorted(out, key=lambda r: r['city'])
+
+
+HUB_CSS = ('.vg-table{max-width:980px}.vg-table caption{text-align:left;font-weight:700;padding:0 0 6px}'
+           '.vg-table th[scope=row] a{font-weight:800;display:inline-flex;align-items:center;min-height:44px}'
+           '.vg-table td .yn{margin:0 0 4px}.vg-table td p{margin:.2em 0 0;max-width:60ch}'
+           '.vg-group h2{display:flex;align-items:center;gap:10px}.vg-group h2 .mi{width:36px;height:36px}'
+           '.vg-count{font-size:1.05rem}')
+
+
+def hub(nat, landing):
+    """visiting.html: every visitor guide, grouped by whether adults 21 and older can buy at a licensed store,
+    A to Z within each group, each with its own answer in words and a symbol."""
+    esc = nat.esc
+    rows = hub_rows()
+    groups = [('adult-use', 'store', 'Adults 21 and older can buy at licensed stores',
+               'These places have adult-use sales. Each guide says what ID to bring, how much you can buy and where you can and can’t use it.',
+               [r for r in rows if r['mark'] == 'yes']),
+              ('medical-only', 'card', 'No adult-use sales: medical only',
+               'Here cannabis is sold only through a medical program. Each guide says whether a visitor can qualify, and what having it without a card means.',
+               [r for r in rows if r['mark'] != 'yes'])]
+    checked = sorted({r['as_of'] for r in rows})
+    when = nat.long_date(checked[-1]) if len(checked) == 1 else f'between {nat.long_date(checked[0])} and {nat.long_date(checked[-1])}'
+    body = ['<p class="crumbs"><a href="index.html">Home</a> › Visitor guides</p>',
+            '<h1>Cannabis rules for visitors, city by city</h1>', nat.for_you(esc(landing['intro'])),
+            '<p class="lv-adult"><span class="age" aria-hidden="true">21+</span><span>For adults 21 and older. Plain summaries of official sources, '
+            'each linked in its guide. Not legal advice.</span></p>',
+            f'<p class="vg-count">{len(rows)} city guides: {len(groups[0][4])} where adults 21 and older can buy, '
+            f'{len(groups[1][4])} where cannabis is sold only through a medical program.</p>',
+            '<nav class="onpage" aria-label="On this page">' + ''.join(f'<a href="#{gid}">{esc(head)}</a>' for gid, _, head, _, _ in groups) + '</nav>']
+    for gid, ic, head, text, items in groups:
+        body.append(f'<section class="vg-group lv-sec" id="{gid}" aria-labelledby="{gid}-h"><h2 id="{gid}-h"><span class="mi">{svg(ic)}</span>{esc(head)}</h2>'
+                    f'<p>{esc(text)}</p><div class="scroll"><table class="vg-table"><caption>{esc(head)}, A to Z</caption>'
+                    '<thead><tr><th scope="col">City guide</th><th scope="col">State or district</th><th scope="col">Can adults 21 and older buy there?</th></tr></thead><tbody>'
+                    + ''.join(f'<tr><th scope="row"><a href="{esc(r["page"])}">{esc(r["crumb"])}</a></th>'
+                              f'<td><a href="{esc(r["state_page"])}">{esc(r["state"])}</a></td>'
+                              f'<td><span class="yn {r["mark"]}">{svg(MARK[r["mark"]])}{esc(r["label"])}</span><p>{esc(r["words"])}</p></td></tr>'
+                              for r in items)
+                    + '</tbody></table></div></section>')
+    body.append('<aside class="lv-more" aria-labelledby="more-h"><h2 id="more-h">Where to go next</h2><ul>'
+                '<li><a href="index.html#map">Your state’s full guide</a>: the law, record clearing and local help</li>'
+                '<li><a href="law-public-use.html">Public use in every state</a></li>'
+                '<li><a href="medical.html">Getting a medical cannabis card, state by state</a></li>'
+                '<li><a href="travel-warnings.html">Travel warnings</a>: the countries and states where any amount can land you in trouble</li>'
+                '<li><a href="help.html#travel">Flying with cannabis</a>: what TSA says</li></ul></aside>')
+    body.append(f'<p class="muted">Every guide was checked {when}, and each lists its sources with the date it checked them. '
+                'No business is named here; each guide links its regulator’s own list of licensed businesses.</p>')
+    ld = [nat.breadcrumbs([('Home', '')], HUB, 'Visitor guides')]
+    if nat.ORIGIN:
+        ld.append({'@type': 'ItemList', '@id': nat.page_url(HUB) + '#guides', 'name': 'Cannabis rules for visitors, city by city',
+                   'itemListElement': [{'@type': 'ListItem', 'position': i, 'name': r['crumb'], 'url': nat.page_url(r['page'])}
+                                       for i, r in enumerate([r for _, _, _, _, items in groups for r in items], 1)]})
+    description = ('Can tourists buy weed? The cannabis rules for visitors in ' + str(len(rows)) + ' cities, from Las Vegas to Washington, DC: '
+                   'who can buy, where it’s allowed, cars, federal land and flying, each from official sources.')
+    return nat.shell('Cannabis rules for visitors, city by city (2026)', description, ''.join(body), HUB, 'the visitor guides page',
+                     ld=ld, css=CSS + HUB_CSS)

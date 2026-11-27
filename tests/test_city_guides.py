@@ -1,8 +1,10 @@
-"""The Denver, Chicago, New York City, Los Angeles, Detroit, Boston, Seattle, Phoenix, Miami, San Francisco, Portland and New Orleans
-visitor guides (city_guides.py): every point cites a listed primary source with a checked date, the FAQ data matches the questions shown,
+"""The Denver, Chicago, New York City, Los Angeles, Detroit, Boston, Seattle, Phoenix, Miami, San Francisco, Portland, New Orleans
+and Washington, DC visitor guides (city_guides.py): every point cites a listed primary source with a checked date, the FAQ data matches the questions shown,
 yes/no answers are shown in words as well as symbols, no business or phone number is named, and each state page and the home page link
 the guide (California's box links both Los Angeles and San Francisco). Miami and New Orleans, in medical-only states, say first that
-Florida and Louisiana allow medical marijuana only, and their yes/no tables answer for a patient."""
+Florida and Louisiana allow medical marijuana only, and their yes/no tables answer for a patient. Washington, DC says first that it
+allows possession but sells only through its medical program. The visiting.html hub lists every guide, Las Vegas included, with
+whether adults 21 and older can buy there in words and a symbol, and every guide, state box and the home page link it."""
 import json
 import re
 import sys
@@ -20,8 +22,10 @@ LANDING = build_national.load_landing()['national_pages']
 STATE_PAGE = {'denver.html': 'colorado.html', 'chicago.html': 'illinois.html', 'new-york-city.html': 'new-york.html',
               'los-angeles.html': 'california.html', 'detroit.html': 'michigan.html', 'boston.html': 'massachusetts.html',
               'seattle.html': 'washington.html', 'phoenix.html': 'arizona.html', 'miami.html': 'florida.html',
-              'san-francisco.html': 'california.html', 'portland.html': 'oregon.html', 'new-orleans.html': 'louisiana.html'}
+              'san-francisco.html': 'california.html', 'portland.html': 'oregon.html', 'new-orleans.html': 'louisiana.html',
+              'washington-dc.html': 'district-of-columbia.html'}
 MEDICAL_ONLY = {'miami.html', 'new-orleans.html'}
+STATUS = MEDICAL_ONLY | {'washington-dc.html'}  # guides that open with a status notice
 CHECKED = '2026-11-27'
 
 
@@ -35,11 +39,12 @@ def build(name, origin=''):
 
 
 class CityGuides(unittest.TestCase):
-    def test_the_twelve_guides_are_registered(self):
+    def test_the_thirteen_guides_are_registered(self):
         self.assertEqual(list(city_guides.GUIDES), ['denver.html', 'chicago.html', 'new-york-city.html',
                                                     'los-angeles.html', 'detroit.html', 'boston.html',
                                                     'seattle.html', 'phoenix.html', 'miami.html',
-                                                    'san-francisco.html', 'portland.html', 'new-orleans.html'])
+                                                    'san-francisco.html', 'portland.html', 'new-orleans.html',
+                                                    'washington-dc.html'])
         for name in city_guides.GUIDES:
             self.assertIn(name, LANDING, f'{name}: no opening line in data/landing-pages.json')
             self.assertEqual(city_guides.load(name)['page']['state_page'], STATE_PAGE[name])
@@ -171,7 +176,7 @@ class CityGuides(unittest.TestCase):
 
     def test_other_guides_keep_the_plain_table_and_no_status_notice(self):
         for name in city_guides.GUIDES:
-            if name in MEDICAL_ONLY:
+            if name in STATUS:
                 continue
             page, p = build(name), city_guides.load(name)['page']
             for key in ('status', 'places_caption', 'places_header'):
@@ -198,6 +203,71 @@ class CityGuides(unittest.TestCase):
         self.assertLess(box.index('href="los-angeles.html"'), box.index('href="san-francisco.html"'))
         self.assertIn('aria-label="Visitor guides: Los Angeles, San Francisco"', box)
         self.assertEqual(pages['california.html'].count('<aside class="cityguide"'), 1)
+
+    def test_washington_dc_says_first_that_sales_are_medical_only(self):
+        d, page = city_guides.load('washington-dc.html'), build('washington-dc.html')
+        status = page.index('<section class="lv-status" aria-labelledby="dcstatus-h"><h2 id="dcstatus-h">')
+        self.assertLess(page.index('For adults 21 and older'), status)
+        self.assertLess(status, page.index('<ul class="lv-glance"'))
+        self.assertIn('DC allows possession, but sells cannabis only through its medical program</h2>', page)
+        buy = next(s for s in d['sections'] if s['id'] == 'buy')
+        self.assertTrue(buy['short'].startswith('Only through DC’s medical cannabis program.'))
+        # Initiative 71's limits come from the D.C. Code itself; federal land from the Attorney General, MPD and the Park Service.
+        possession = next(s for s in d['sections'] if s['id'] == 'possession')
+        self.assertIn('dc-904', possession['points'][0]['source_ids'])
+        self.assertIn('2 ounces or less', possession['points'][0]['text'])
+        federal = next(s for s in d['sections'] if s['id'] == 'federal-land')
+        self.assertEqual({sid for p in federal['points'] for sid in p['source_ids']}, {'oag-mj', 'mpd-mj', 'nps-mj', 'nama-comp'})
+        # The table answers for any adult 21 or older, so it keeps the plain caption.
+        self.assertIn('<caption>Can you use cannabis here?</caption>', page)
+        self.assertNotIn('places_caption', d['page'])
+        self.assertIn('href="https://abca.dc.gov/service/find-medical-cannabis-retailer">See the licensed retailers on ABCA’s map</a>', page)
+        self.assertIn('href="https://abca.dc.gov/page/patients-non-dc-residents">Check whether ABCA recognizes your state’s card</a>', page)
+        # No fee or price from ABCA's pages is copied.
+        self.assertNotRegex(json.dumps(d['sections'], ensure_ascii=False), r'\$\d')
+
+    def test_visitor_guides_hub(self):
+        pages = build_national.pages()
+        self.assertIn(city_guides.HUB, pages)
+        hub = pages[city_guides.HUB]
+        rows = city_guides.hub_rows()
+        # Every guide, Las Vegas included, once, A to Z within its group.
+        self.assertEqual(sorted(r['page'] for r in rows), sorted(['las-vegas.html'] + list(city_guides.GUIDES)))
+        adult = [r for r in rows if r['mark'] == 'yes']
+        medical = [r for r in rows if r['mark'] != 'yes']
+        self.assertEqual([r['city'] for r in adult], sorted(r['city'] for r in adult))
+        self.assertEqual({r['page'] for r in medical}, {'miami.html', 'new-orleans.html', 'washington-dc.html'})
+        self.assertLess(hub.index('id="adult-use"'), hub.index('id="medical-only"'))
+        for r in rows:
+            self.assertEqual(hub.count(f'<th scope="row"><a href="{r["page"]}">'), 1, r['page'])
+            # The answer in words, from the guide's own "buy" answer, as well as a symbol.
+            self.assertTrue(r['words'].startswith(('Yes', 'No', 'Only')), r['page'])
+            self.assertIn(build_national.esc(r['words']), hub)
+        self.assertIn('<th scope="col">Can adults 21 and older buy there?</th>', hub)
+        self.assertEqual(hub.count('<h1'), 1)
+        self.assertIn('For adults 21 and older', hub)
+        self.assertIn('assets/analytics.js', hub)
+        self.assertNotIn('FAQPage', hub)
+        self.assertNotRegex(hub, r'<svg(?![^>]*aria-hidden="true")[^>]*viewBox="0 0 24 24"')
+        self.assertIn('checked November 27, 2026', hub)
+        page = build_national.ORIGIN
+        try:
+            build_national.ORIGIN = 'https://the-reefer.com'
+            built = city_guides.hub(build_national, LANDING[city_guides.HUB])
+        finally:
+            build_national.ORIGIN = page
+        self.assertIn('<link rel="canonical" href="https://the-reefer.com/visiting.html">', built)
+        ld = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', built, re.S).group(1).replace('<\\/', '</'))
+        crumbs = next(n for n in ld['@graph'] if n['@type'] == 'BreadcrumbList')
+        self.assertEqual([i['name'] for i in crumbs['itemListElement']], ['Home', 'Visitor guides'])
+        # Linked from the home page next to the city links, from every guide and from every state's visitor-guide box.
+        home = pages['index.html']
+        self.assertLess(home.index(f'href="{city_guides.HUB}"'), home.index('href="las-vegas.html">Visiting Las Vegas</a>'))
+        for name in ['las-vegas.html'] + list(city_guides.GUIDES):
+            self.assertIn(f'<strong>More city guides:</strong> <a href="{city_guides.HUB}">', pages[name], name)
+        for state in set(STATE_PAGE.values()) | {'nevada.html'}:
+            box = re.search(r'<aside class="cityguide".*?</aside>', pages[state], re.S).group(0)
+            self.assertIn(f'href="{city_guides.HUB}"', box, state)
 
 
 if __name__ == '__main__':

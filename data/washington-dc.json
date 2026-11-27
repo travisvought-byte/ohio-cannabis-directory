@@ -1,0 +1,526 @@
+{
+ "schema_version": 1,
+ "as_of": "2026-11-27",
+ "purpose": "Cannabis rules for people visiting Washington, DC, for national/washington-dc.html on the-reefer.com (built by city_guides.py through build_national.pages()). DC is unusual: under D.C. Code § 48-904.01 (Initiative 71) adults 21 and older may possess, use, purchase or transport 2 ounces or less and give up to 1 ounce to another adult without payment, but nothing in that law makes a sale lawful, and the only legal place to buy is a retailer licensed by the Alcoholic Beverage and Cannabis Administration (ABCA), which sells to registered medical patients. Visitors 21 and older can buy there with a medical card from a jurisdiction ABCA recognizes or a temporary DC patient registration (self-certification is required of non-residents). The page leads with a \"status\" notice saying so; its yes/no table keeps the plain caption, because it answers for any adult 21 or older. Much of DC is federal land, where federal law applies; the National Mall and Memorial Parks compendium (approved November 5, 2026) does not mention marijuana, so it is cited only for the park’s area and smoking rules. Every point names the official source it comes from (the D.C. Code on the Council’s site, ABCA, the Metropolitan Police Department, the Office of the Attorney General, the National Park Service and TSA); each source carries the date it was checked. No business is named and no phone number or fee is copied; the page links ABCA’s own map of licensed retailers instead. Facts no reachable official source confirmed (a current statement of Congress’s limits on DC sales, airport rules at Reagan National and Dulles, hotel rules, hemp and CBD rules) are left out; the attempts are recorded below.",
+ "page": {
+  "state": "DC",
+  "state_name": "District of Columbia",
+  "state_page": "district-of-columbia.html",
+  "crumb": "Visiting Washington, DC",
+  "h1": "Visiting Washington, DC? The cannabis rules for visitors",
+  "title": "Visiting Washington, DC: cannabis rules for visitors (2026)",
+  "description": "Can tourists buy weed in DC? Only through the medical program: visitors 21+ can use a recognized out-of-state card or register online. The 2-ounce limit, where it’s allowed, the National Mall and other federal land, driving and flying, from official sources.",
+  "adult": "For adults 21 and older. Plain summaries of District of Columbia and federal sources, each linked below. Not legal advice.",
+  "prefix": "dc",
+  "place": "the Washington, DC visitor page",
+  "business_note": "No business is named on this page; the Alcoholic Beverage and Cannabis Administration’s own map names the licensed medical cannabis retailers. A link to a regulator’s list is not an endorsement of any business on it.",
+  "status": {
+   "icon": "card",
+   "heading": "DC allows possession, but sells cannabis only through its medical program",
+   "text": "Under DC law, adults 21 and older may have up to 2 ounces of marijuana and give up to 1 ounce to another adult without payment, but the law makes no sale legal, and selling any amount is a crime. Cannabis is sold only by retailers licensed by the Alcoholic Beverage and Cannabis Administration (ABCA), to registered patients. Visitors 21 and older can buy there with a medical cannabis card from a jurisdiction ABCA recognizes, or with a temporary DC patient registration made online.",
+   "source_ids": [
+    "dc-904",
+    "mpd-mj",
+    "abca-find",
+    "abca-recip"
+   ]
+  },
+  "more": [
+   {
+    "href": "district-of-columbia.html",
+    "label": "The full District of Columbia guide",
+    "rest": ": the District’s law, record clearing and local help"
+   },
+   {
+    "href": "medical.html",
+    "label": "Getting a medical cannabis card, state by state"
+   },
+   {
+    "href": "law-public-use.html",
+    "label": "Public use in every state",
+    "rest": ": where you can and can’t use it back home"
+   },
+   {
+    "href": "law-driving.html",
+    "label": "Driving and cannabis in every state"
+   },
+   {
+    "href": "travel-warnings.html",
+    "label": "Travel warnings",
+    "rest": ": the countries and states where any amount can land you in trouble"
+   },
+   {
+    "href": "help.html#travel",
+    "label": "Flying with cannabis",
+    "rest": ": what TSA says"
+   }
+  ]
+ },
+ "state_box": "DC allows possession but sells cannabis only through its medical program. How visitors 21 and older can buy, out-of-state cards, the 2-ounce limit, where it’s allowed, the National Mall and other federal land, and flying home.",
+ "glance": [
+  {
+   "icon": "card",
+   "big": "Medical sales only",
+   "text": "visitors 21+ buy with a recognized card or a DC registration",
+   "href": "#buy"
+  },
+  {
+   "icon": "id",
+   "big": "Out-of-state cards",
+   "text": "accepted from most states, with a photo ID",
+   "href": "#medical"
+  },
+  {
+   "icon": "scale",
+   "big": "2 ounces",
+   "text": "the most an adult 21+ may have under DC law",
+   "href": "#possession"
+  },
+  {
+   "icon": "nosmoke",
+   "big": "Not in public",
+   "text": "no streets, parks, bars or anywhere open to the public",
+   "href": "#where"
+  },
+  {
+   "icon": "mountain",
+   "big": "Not on federal land",
+   "text": "federal officers can arrest for any amount",
+   "href": "#federal-land"
+  },
+  {
+   "icon": "plane",
+   "big": "Not on the plane",
+   "text": "TSA: marijuana is illegal under federal law",
+   "href": "#flying"
+  }
+ ],
+ "sections": [
+  {
+   "id": "buy",
+   "icon": "id",
+   "question": "Can tourists buy weed in Washington, DC?",
+   "short": "Only through DC’s medical cannabis program. DC law doesn’t make selling marijuana legal, but retailers licensed by the Alcoholic Beverage and Cannabis Administration sell to registered patients, and visitors 21 and older can qualify with a recognized out-of-state medical card or a temporary DC patient registration made online.",
+   "points": [
+    {
+     "text": "Under DC law, adults 21 and older may possess, use, purchase or transport 2 ounces or less of marijuana, but nothing in that law makes it lawful to sell, offer for sale or make available for sale any marijuana or cannabis plants.",
+     "source_ids": [
+      "dc-904"
+     ]
+    },
+    {
+     "text": "The Metropolitan Police Department says selling any amount of marijuana to another person is still a criminal violation.",
+     "source_ids": [
+      "mpd-mj"
+     ]
+    },
+    {
+     "text": "Licensed medical cannabis retailers sell to registered patients. Retail staff must ask for both a valid patient registration credential and a government-issued photo ID.",
+     "source_ids": [
+      "abca-find"
+     ]
+    },
+    {
+     "text": "Eligible domestic and international visitors may buy medical cannabis from any licensed retailer in DC by registering online for a temporary patient registration, which is digital and may be used as soon as it is received.",
+     "source_ids": [
+      "abca-recip"
+     ]
+    },
+    {
+     "text": "For non-DC residents, ABCA requires self-certification: registrations are for people 21 and older only, and a healthcare provider’s recommendation is not accepted in its place.",
+     "source_ids": [
+      "abca-patients"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "medical",
+   "icon": "card",
+   "question": "Does DC accept out-of-state medical cannabis cards?",
+   "short": "Yes, from most states. If you are 21 or older and enrolled in a medical cannabis program that ABCA recognizes, you can show that registration and an unexpired government-issued photo ID at a licensed retailer, with no DC registration.",
+   "points": [
+    {
+     "text": "ABCA’s reciprocity list names about 40 jurisdictions, among them Maryland, Pennsylvania, West Virginia, New York, New Jersey, Ohio, Florida, Michigan, California and Puerto Rico, plus the Eastern Band of Cherokee Indians in North Carolina. Confirm your own program is on the list before you go.",
+     "source_ids": [
+      "abca-recip"
+     ],
+     "link": {
+      "label": "Check whether ABCA recognizes your state’s card",
+      "href": "https://abca.dc.gov/page/patients-non-dc-residents"
+     }
+    },
+    {
+     "text": "Virginia patients must show a written certification form completed by an authorized healthcare practitioner and an unexpired government-issued ID, such as a driver’s license or a U.S. passport.",
+     "source_ids": [
+      "abca-recip"
+     ]
+    },
+    {
+     "text": "Visitors without a recognized card can register as a non-resident patient. Non-resident registrations are digital only, with no physical card, and are valid for the whole period chosen: 30, 90, 180 or 365 days.",
+     "source_ids": [
+      "abca-patients"
+     ]
+    },
+    {
+     "text": "A registered patient may buy up to 8 ounces of medical cannabis within a rolling 30-day period.",
+     "source_ids": [
+      "abca-patients"
+     ]
+    },
+    {
+     "text": "ABCA says registrations submitted in its legacy registration system before 8:00 a.m. on August 18, 2026, will still be processed there.",
+     "source_ids": [
+      "abca-patients"
+     ]
+    },
+    {
+     "text": "Using medical marijuana in public is still a criminal offense and can lead to arrest.",
+     "source_ids": [
+      "mpd-mj"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "possession",
+   "icon": "scale",
+   "question": "How much marijuana can a visitor have in DC?",
+   "short": "Up to 2 ounces, if you are 21 or older. DC law lets adults 21 and older have, use, buy or carry 2 ounces or less, and give up to 1 ounce to another adult 21 or older if no payment of any kind is made.",
+   "points": [
+    {
+     "text": "Adults 21 and older may possess, use, purchase or transport 2 ounces or less, and may transfer 1 ounce or less to another person 21 or older without remuneration.",
+     "source_ids": [
+      "dc-904"
+     ]
+    },
+    {
+     "text": "Giving marijuana in exchange for money, goods or services is illegal, and so is transferring more than 1 ounce or selling any amount.",
+     "source_ids": [
+      "oag-mj"
+     ]
+    },
+    {
+     "text": "Possessing more than two ounces is still a criminal violation.",
+     "source_ids": [
+      "mpd-mj"
+     ]
+    },
+    {
+     "text": "Initiative 71 did not change the law for anyone under 21: it is still illegal. Police seize up to two ounces from a person under 21 without an arrest or a ticket, and a person under 21 with more than two ounces can be arrested.",
+     "source_ids": [
+      "mpd-mj"
+     ]
+    },
+    {
+     "text": "Growing is allowed only inside the house or rental unit that is a person’s principal residence, with no more than six plants, three or fewer of them mature.",
+     "source_ids": [
+      "dc-904"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "where",
+   "icon": "pin",
+   "question": "Where can I use marijuana in DC?",
+   "short": "Only on private property. The Metropolitan Police Department says smoking, eating or drinking marijuana in any public space is a criminal violation, including streets, sidewalks, alleys, parks, parking areas and any place to which the public is invited.",
+   "points": [
+    {
+     "text": "Adults 21 and older may use marijuana on private property. Smoking, eating or drinking it on any street, sidewalk, alley, park or parking area, or in any place to which the public is invited, is a criminal violation.",
+     "source_ids": [
+      "mpd-mj"
+     ]
+    },
+    {
+     "text": "The District’s Office of the Attorney General says use is allowed in one’s principal residence or in a private residence, and that use in public space or in any space to which the public is invited is still illegal.",
+     "source_ids": [
+      "oag-mj"
+     ]
+    },
+    {
+     "text": "DC law doesn’t stop a property owner from prohibiting or regulating possession or use of marijuana on its property, so check the rules where you stay.",
+     "source_ids": [
+      "dc-904"
+     ]
+    }
+   ],
+   "places": [
+    {
+     "place": "Private property, where the owner allows it",
+     "answer": "maybe",
+     "label": "Only if the owner allows it",
+     "source_ids": [
+      "mpd-mj",
+      "dc-904"
+     ]
+    },
+    {
+     "place": "Streets, sidewalks, alleys and parking areas",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "mpd-mj"
+     ]
+    },
+    {
+     "place": "DC parks",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "mpd-mj"
+     ]
+    },
+    {
+     "place": "Bars, restaurants and anywhere open to the public",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "mpd-mj",
+      "oag-mj"
+     ]
+    },
+    {
+     "place": "A car in public, even when it’s stopped",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "oag-mj"
+     ]
+    },
+    {
+     "place": "The National Mall and other federal property",
+     "answer": "no",
+     "label": "No: federal law applies",
+     "source_ids": [
+      "oag-mj",
+      "nps-mj"
+     ]
+    },
+    {
+     "place": "On a plane",
+     "answer": "no",
+     "label": "No",
+     "source_ids": [
+      "tsa-mmj"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "car",
+   "icon": "car",
+   "question": "Can I drive after using marijuana in DC?",
+   "short": "No. Operating a vehicle or a boat under the influence of marijuana is a criminal violation in DC, and you can’t smoke in a car in public even when it’s stopped.",
+   "points": [
+    {
+     "text": "Operating a vehicle or boat under the influence of marijuana is still a criminal violation.",
+     "source_ids": [
+      "mpd-mj"
+     ]
+    },
+    {
+     "text": "DC’s marijuana law says nothing in it permits driving under the influence of marijuana.",
+     "source_ids": [
+      "dc-904"
+     ]
+    },
+    {
+     "text": "You cannot smoke in public in a car, even if the car is stopped, and driving while impaired by marijuana can lead to arrest under the District’s impaired-driving laws.",
+     "source_ids": [
+      "oag-mj"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "federal-land",
+   "icon": "mountain",
+   "question": "Can I take weed to the National Mall or other federal land in DC?",
+   "short": "No. Federal law still prohibits marijuana, and the District’s Office of the Attorney General says federal law enforcement can arrest a person for possessing or using any amount on federal property.",
+   "points": [
+    {
+     "text": "Federal law enforcement can arrest a person for the possession or use of any amount of marijuana on federal property, and the District cannot guarantee residents or visitors that they are free from federal law enforcement.",
+     "source_ids": [
+      "oag-mj"
+     ]
+    },
+    {
+     "text": "Federal law continues to prohibit the possession or use of any amount of marijuana, and federal law enforcement officers may arrest anyone in the District of Columbia.",
+     "source_ids": [
+      "mpd-mj"
+     ]
+    },
+    {
+     "text": "The National Park Service says that even where state law provides for possession and use, marijuana remains an illegal drug under federal law and is enforced within park units.",
+     "source_ids": [
+      "nps-mj"
+     ]
+    },
+    {
+     "text": "National Mall and Memorial Parks, a National Park Service unit, covers about 1,000 acres of Washington, including the National Mall, the Washington Monument, the Lincoln and Jefferson Memorials, the Tidal Basin, East and West Potomac Parks and Ford’s Theatre. Its compendium, approved November 5, 2026, also bans smoking in federal buildings, within 25 feet of their entrances and exits, and in Memorial Restricted Areas.",
+     "source_ids": [
+      "nama-comp"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "flying",
+   "icon": "plane",
+   "question": "Can I fly home with marijuana from DC?",
+   "short": "Not legally. TSA says marijuana remains illegal under federal law, and federal law still prohibits possessing any amount.",
+   "points": [
+    {
+     "text": "TSA says marijuana and some cannabis products, including some CBD oil, remain illegal under federal law unless they have no more than 0.3% THC on a dry-weight basis or are FDA-approved. Its officers don’t search for drugs, but they refer anything illegal they find to law enforcement.",
+     "source_ids": [
+      "tsa-mmj"
+     ],
+     "link": {
+      "label": "Check your home state",
+      "href": "index.html#map"
+     }
+    }
+   ]
+  },
+  {
+   "id": "licensed",
+   "icon": "shield",
+   "question": "Where do you buy cannabis legally in DC?",
+   "short": "Only at a medical cannabis retailer licensed by the Alcoholic Beverage and Cannabis Administration, with a patient registration or a recognized out-of-state card and a government-issued photo ID. ABCA’s map shows only licensed retailers.",
+   "points": [
+    {
+     "text": "Only ABCA-licensed medical cannabis retailers are included on ABCA’s map. Retailers may operate daily between 7:00 a.m. and 11:00 p.m.; internet retailers only deliver and offer no in-person or curbside pickup.",
+     "source_ids": [
+      "abca-find"
+     ],
+     "link": {
+      "label": "See the licensed retailers on ABCA’s map",
+      "href": "https://abca.dc.gov/service/find-medical-cannabis-retailer"
+     }
+    },
+    {
+     "text": "ABCA began enforcement on April 1, 2025, against unlicensed establishments that sell cannabis without a retailer or internet retailer license.",
+     "source_ids": [
+      "abca-unlic"
+     ]
+    },
+    {
+     "text": "A so-called gift is not a way around the law: giving marijuana in exchange for money, goods or services is illegal.",
+     "source_ids": [
+      "oag-mj"
+     ]
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "dc-904",
+   "title": "D.C. Code § 48-904.01: prohibited acts; lawful possession by persons 21 and older (Initiative 71)",
+   "publisher": "Council of the District of Columbia (D.C. Code)",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/48-904.01",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "mpd-mj",
+   "title": "The Facts on DC Marijuana Laws",
+   "publisher": "Metropolitan Police Department",
+   "url": "https://mpdc.dc.gov/marijuana",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "abca-find",
+   "title": "Find a Medical Cannabis Retailer",
+   "publisher": "District of Columbia Alcoholic Beverage and Cannabis Administration (ABCA)",
+   "url": "https://abca.dc.gov/service/find-medical-cannabis-retailer",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "abca-recip",
+   "title": "Medical Cannabis: Reciprocity (non-DC residents)",
+   "publisher": "District of Columbia Alcoholic Beverage and Cannabis Administration (ABCA)",
+   "url": "https://abca.dc.gov/page/patients-non-dc-residents",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "abca-patients",
+   "title": "Medical Cannabis: Patients",
+   "publisher": "District of Columbia Alcoholic Beverage and Cannabis Administration (ABCA)",
+   "url": "https://abca.dc.gov/page/medical-cannabis-patients",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "oag-mj",
+   "title": "Information on the District’s Marijuana Laws",
+   "publisher": "Office of the Attorney General for the District of Columbia",
+   "url": "https://oag.dc.gov/about-oag/laws-legal-opinions/information-districts-marijuana-laws",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "nps-mj",
+   "title": "Marijuana and Other Substances",
+   "publisher": "National Park Service",
+   "url": "https://www.nps.gov/bela/learn/management/marijuana.htm",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "nama-comp",
+   "title": "Superintendent’s Compendium",
+   "publisher": "National Park Service, National Mall and Memorial Parks",
+   "url": "https://www.nps.gov/nama/learn/management/superintendent-s-compendium.htm",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "tsa-mmj",
+   "title": "What Can I Bring? Medical Marijuana",
+   "publisher": "Transportation Security Administration",
+   "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  },
+  {
+   "id": "abca-unlic",
+   "title": "Unlicensed Establishment Guidance",
+   "publisher": "District of Columbia Alcoholic Beverage and Cannabis Administration (ABCA)",
+   "url": "https://abca.dc.gov/page/unlicensed-establishment-guidance",
+   "checked": "2026-11-27",
+   "kind": "primary"
+  }
+ ],
+ "attempts": [
+  {
+   "url": "https://www.ecfr.gov/current/title-36/chapter-I/part-2/section-2.35",
+   "tried": "2026-11-27",
+   "result": "Read: 36 CFR 2.35(b)(2) prohibits possessing a controlled substance in a park area but excepts possession \"otherwise allowed by Federal or State law\", so it is not cited for marijuana; the Office of the Attorney General’s and the Park Service’s own statements are cited instead."
+  },
+  {
+   "url": "https://www.mwaa.com/editorial-section/policies-regulations",
+   "tried": "2026-11-27",
+   "result": "Searched mwaa.com, flyreagan.com and flydulles.com: no cannabis rule for Reagan National or Dulles turned up. The Rules of Conduct (O&I 8-1-3) and Reagan National’s smoking policy (DCA 6-1-3) were listed but their text was not read, so no airport rule is stated; TSA is cited for flying."
+  },
+  {
+   "url": "https://abca.dc.gov/page/how-to-obtain-a-patient-registration",
+   "tried": "2026-11-27",
+   "result": "Read: says nothing specific about non-resident eligibility, self-certification or valid periods; the Patients and Reciprocity pages are cited instead."
+  },
+  {
+   "url": "https://abca.dc.gov/release/non-dc-resident-medical-cannabis-program-access",
+   "tried": "2026-11-27",
+   "result": "Read: an October 20, 2022 release announcing a 90-day temporary registration for non-residents. The current Patients page lists different valid periods (30, 90, 180 or 365 days), so the release is not cited as current."
+  },
+  {
+   "url": "https://mayor.dc.gov/sites/default/files/dc/sites/mayormb/release_content/attachments/I71QA.pdf",
+   "tried": "2026-11-27",
+   "result": "Not read: listed in a search as a 2015 Mayor’s Office FAQ on Initiative 71 that discusses Congress’s limits on DC regulating sales. Too old to state as current, and no current official page read today says it, so nothing about Congress is stated."
+  }
+ ]
+}
