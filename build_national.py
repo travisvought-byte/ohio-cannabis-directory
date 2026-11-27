@@ -763,6 +763,64 @@ def featured_section(groups, name):
     return ''.join(out) + '</section>'
 
 
+NEIGHBORS_FILE = ROOT / 'data/state-neighbors.json'
+
+
+def load_neighbors(codes, path=None):
+    """{state: (heading, [neighboring states])} from data/state-neighbors.json. Every state and DC must be listed,
+    and a border listed for one state must be listed for the other; a mistake stops the build."""
+    data = json.loads(Path(path or NEIGHBORS_FILE).read_text(encoding='utf-8'))
+    out = {c: ('Nearby states', list(ns)) for c, ns in data['borders'].items()}
+    out.update({c: (v['label'], list(v['states'])) for c, v in data['no_land_border'].items()})
+    missing, unknown = sorted(set(codes) - set(out)), sorted(set(out) - set(codes))
+    if missing or unknown:
+        raise SystemExit(f'data/state-neighbors.json: missing {missing}, unknown {unknown}')
+    for c, ns in data['borders'].items():
+        for n in ns:
+            if n not in codes or c not in data['borders'].get(n, []):
+                raise SystemExit(f'data/state-neighbors.json: {c} lists {n}, but {n} does not list {c}')
+    return out
+
+
+def nearby_section(perm, code, answers, neighbors):
+    """Plain links to the neighboring states' pages, each with its adult-use answer as published there."""
+    if not neighbors or code not in neighbors:
+        return ''
+    label, codes = neighbors[code]
+    names = perm['jurisdictions']
+    q = next(x for x in perm['questions'] if x['id'] == 'adult-use')
+    rows = []
+    for c in sorted(codes, key=lambda c: names[c]):
+        a = answers.get(c, {}).get('adult-use')
+        right = f'{chip(perm, a["status"], q)} <span class="short">{esc(a["short"])}</span>' if a else chip(perm, 'not-reviewed')
+        rows.append(f'<li><a class="state" href="{slug(names[c])}.html">{esc(names[c])}</a><span>{right}</span></li>')
+    place = 'The District of Columbia' if code == 'DC' else names[code]
+    lead = 'The law can change at the state line.' if label == 'Nearby states' else f'{place} shares no land border with another state.'
+    return (f'<section aria-labelledby="nearby"><h2 id="nearby">{esc(label)}</h2>'
+            f'<p>{esc(lead)} Each of these pages answers the same {len(perm["questions"])} questions, with sources. '
+            'Shown here: whether adults 21 and older can use cannabis without a medical card.</p>'
+            '<ul class="rows nearby">' + ''.join(rows) + '</ul></section>')
+
+
+# The national pages a state page sends visitors on to, picked by what the state allows. Each one covers every state.
+TOPIC_LINKS = {
+    'possession': ('law-possession.html', 'Possession limits in every state', 'how much an adult can have'),
+    'employment': ('law-employment.html', 'Worker protections in every state', 'whether off-the-job use can cost you a job'),
+    'record-relief': ('law-record-relief.html', 'Clearing a cannabis record in every state', 'sealing and expungement'),
+    'medical-cards': ('medical.html', 'Medical card guides, state by state', 'who qualifies, the steps and the cost'),
+    'medical': ('law-medical.html', 'Medical programs in every state', 'which states have one and how broad it is'),
+    'travel': ('help.html#travel', 'Flying with cannabis', 'what TSA says'),
+}
+TOPICS_BY_STATUS = {'allowed': ('possession', 'employment', 'record-relief'),
+                    'medical-only': ('medical-cards', 'employment', 'record-relief')}
+TOPICS_OTHERWISE = ('medical', 'record-relief', 'possession')
+
+
+def topic_links(adult_status):
+    picks = TOPICS_BY_STATUS.get(adult_status, TOPICS_OTHERWISE) + ('travel',)
+    return ''.join(f'<li><a href="{TOPIC_LINKS[k][0]}">{esc(TOPIC_LINKS[k][1])}</a>: {esc(TOPIC_LINKS[k][2])}</li>' for k in picks)
+
+
 def load_coverage():
     """Who pays for medical cannabis (data/medical-coverage.json)."""
     return json.loads((ROOT / 'data/medical-coverage.json').read_text(encoding='utf-8'))
@@ -1025,7 +1083,7 @@ def glance(perm, state_answers, name):
             + ''.join(rows) + '</ul></section>')
 
 
-def state_page(perm, score, directory, code, answers, sources, medical=None, dispensaries=None, sponsors=(), featured=None, guides=None):
+def state_page(perm, score, directory, code, answers, sources, medical=None, dispensaries=None, sponsors=(), featured=None, guides=None, neighbors=None):
     name = perm['jurisdictions'][code]
     groups = (featured or {}).get(code, [])
     state_answers = answers.get(code, {})
@@ -1065,7 +1123,8 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
         shop_link = '<a href="#dispensaries">Where to buy</a>'
     first, second = ((shop_link, card_link) if stores_first else (card_link, shop_link))
     body.append('<nav class="onpage" aria-label="On this page">' + first + second
-                + ('<a href="#groups">Local groups</a>' if groups else '') + ('<a href="#other-guides">Other guides</a>' if (guides or {}).get('states', {}).get(code, {}).get('links') else '') + '<a href="#glance">At a glance</a><a href="#law">The law in detail</a><a href="#directory">Local help</a><a href="#sources">Sources</a></nav>')
+                + ('<a href="#groups">Local groups</a>' if groups else '') + ('<a href="#other-guides">Other guides</a>' if (guides or {}).get('states', {}).get(code, {}).get('links') else '') + '<a href="#glance">At a glance</a><a href="#law">The law in detail</a>' + (f'<a href="#nearby">{esc(neighbors[code][0])}</a>' if (neighbors or {}).get(code) else '')
+                + '<a href="#directory">Local help</a><a href="#sources">Sources</a></nav>')
     if stores_first and shops:
         body.append(dispensary_section(shops, cites, name))
     body.append(card_html)
@@ -1073,11 +1132,13 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
         body.append(dispensary_section(shops, cites, name))
     body.append(glance(perm, state_answers, name))
     body.append(law_section(perm, code, state_answers, cites, sources))
+    body.append(nearby_section(perm, code, answers, neighbors))
     body.append(pathway_section(code, name, directory['pathways'], card, pack))
     # After the main content, outside the answers and the directory cards.
     body.append(sponsor_slot(active_sponsor(sponsors, 'state', code)))
     guide = (f'<li><a href="{guide_link(code, name)}">The full {esc(name)} guide</a>: directory and local help</li>' if card else '')
     body.append(f'<aside class="next" aria-label="Where to go next"><h2>Where to go next</h2><ul>{guide}'
+                + topic_links(adult_status) +
                 '<li><a href="help.html">National help</a>: travel, veterans, legal aid, health and safety</li>'
                 '<li><a href="index.html#compare">Compare a rule across every state</a></li>'
                 '<li><a href="index.html#map">Pick another state</a></li></ul></aside>')
@@ -2096,6 +2157,7 @@ def pages():
     sponsors = load_sponsors(perm['jurisdictions'])
     featured = load_featured(perm['jurisdictions'])
     guides = load_guides()
+    neighbors = load_neighbors(perm['jurisdictions'])
     out = {'index.html': home_page(perm, score, directory, answers, sources, sponsors),
            'medical.html': medical_page(perm, med_data, medical, answers, sources, dispensaries),
            'coverage.html': coverage_page(perm, medical, sources),
@@ -2111,7 +2173,7 @@ def pages():
     for q in perm['questions']:
         out[law_page_name(q['id'])] = law_page(perm, q, answers, sources, dispensaries)
     for code, name in perm['jurisdictions'].items():
-        out[slug(name) + '.html'] = state_page(perm, score, directory, code, answers, sources, medical, dispensaries, sponsors, featured, guides)
+        out[slug(name) + '.html'] = state_page(perm, score, directory, code, answers, sources, medical, dispensaries, sponsors, featured, guides, neighbors)
     import build_world  # imported here: build_world uses this module's page shell
     world = build_world.pages(perm, sources)
     clash = sorted(set(world) & set(out))

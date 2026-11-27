@@ -62,6 +62,47 @@ class NationalPagesTest(unittest.TestCase):
             self.assertIn(f'id="{build_national.slug(item["need"])}"', PAGES['help.html'])
         self.assertIn('href="about.html"', home)
 
+    def test_state_pages_link_their_neighbors(self):
+        data = json.loads((ROOT / 'data/state-neighbors.json').read_text(encoding='utf-8'))
+        lists = dict(data['borders'])
+        lists.update({c: v['states'] for c, v in data['no_land_border'].items()})
+        self.assertEqual(set(lists), set(PERM['jurisdictions']))
+        names = PERM['jurisdictions']
+        for code, name in names.items():
+            text = PAGES[build_national.slug(name) + '.html']
+            start = text.index('<section aria-labelledby="nearby">')
+            section = text[start:text.index('</section>', start)]
+            self.assertIn('<h2 id="nearby">', section)
+            self.assertIn('href="#nearby"', text, f'{name}: the on-page menu reaches the nearby states')
+            want = [build_national.slug(names[c]) + '.html' for c in sorted(lists[code], key=lambda c: names[c])]
+            self.assertEqual(re.findall(r'<a class="state" href="([^"]+)">', section), want, name)
+            self.assertNotIn(code, lists[code])
+
+    def test_neighbors_match_the_map(self):
+        """A border is listed exactly when the two outlines in data/us-map.json (Census Bureau shapes) share a point."""
+        import itertools
+        borders = json.loads((ROOT / 'data/state-neighbors.json').read_text(encoding='utf-8'))['borders']
+        shapes = json.loads((ROOT / 'data/us-map.json').read_text(encoding='utf-8'))['states']
+        points = {}
+        for s in shapes:
+            nums = re.findall(r'-?\d+(?:\.\d+)?', s['d'])
+            points[s['code']] = set(zip(nums[0::2], nums[1::2]))
+        for a, b in itertools.combinations(sorted(borders), 2):
+            self.assertEqual(bool(points[a] & points[b]), b in borders[a], f'{a} and {b}')
+            self.assertEqual(b in borders[a], a in borders[b], f'{a} and {b} list each other')
+
+    def test_state_pages_send_visitors_to_topic_pages_that_link_back(self):
+        topics = {build_national.law_page_name(q['id']) for q in PERM['questions']} | {'medical.html'}
+        for code, name in PERM['jurisdictions'].items():
+            page = build_national.slug(name) + '.html'
+            text = PAGES[page]
+            start = text.index('<aside class="next"')
+            aside = text[start:text.index('</aside>', start)]
+            linked = [h for h in re.findall(r'href="([^"#]+)"', aside) if h in topics]
+            self.assertGreaterEqual(len(linked), 3, name)
+            for topic in linked:
+                self.assertIn(f'href="{page}', PAGES[topic], f'{topic} links back to {name}')
+
     def test_cited_sources_are_listed_on_the_page(self):
         for name, text in PAGES.items():
             cited = {int(n) for n in re.findall(r'href="#source-(\d+)"', text)}
