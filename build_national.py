@@ -51,6 +51,7 @@ header.site nav a:hover,header.site nav a:focus-visible{opacity:1;text-decoratio
 main{max-width:1080px;margin:0 auto;padding:6px 20px 24px}
 h1{font-size:clamp(26px,4vw,38px);line-height:1.15;margin:.6em 0 .3em}h2{margin:1.6em 0 .4em;font-size:1.45rem;line-height:1.25}h3{margin:1.2em 0 .4em;font-size:1.1rem}
 p{max-width:70ch}.muted{color:var(--soft);font-size:.95rem}.crumbs{font-size:.9rem;margin:14px 0 0}.lede{font-size:1.08rem}
+.answer{border-left:5px solid var(--green);background:var(--bg);padding:10px 16px;margin:6px 0 14px;max-width:70ch;box-shadow:0 0 0 1px rgba(0,0,0,.08)}.answer p{margin:.2em 0}.answer strong{font-size:1.08rem}
 .hero{position:relative;overflow:hidden;background:linear-gradient(155deg,var(--green) 0%,var(--green2) 100%);color:#fff}
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);align-items:center;gap:24px;padding-top:34px;padding-bottom:46px}
 .hero h1{font-size:clamp(32px,5.2vw,52px);line-height:1.06;margin:.25em 0 .35em;max-width:15ch}.hero p{color:#e2eee6;font-size:1.08rem;margin:.4em 0}
@@ -1035,7 +1036,8 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
     prog = (medical or {}).get(code)
     shops = (dispensaries or {}).get(code)
     body = [f'<p class="crumbs"><a href="index.html#map">All states</a> › {esc(name)}</p>',
-            f'<h1>Is weed legal in {esc(place)}?</h1>', '<div class="statehead"><div>', for_you(state_intro(code, place, state_answers, prog, shops))]
+            f'<h1>Is weed legal in {esc(place)}?</h1>', short_answer(place, state_answers, cites),
+            '<div class="statehead"><div>', for_you(state_intro(code, place, state_answers, prog, shops))]
     lede = [f'{label}: {chip(perm, a["status"], q)} {esc(a["short"])}' for label, q, a in
             (('Adult use', q, state_answers.get(q['id'])) if q['id'] == 'adult-use' else ('Medical use', q, state_answers.get(q['id']))
              for q in perm['questions'] if q['id'] in ('adult-use', 'medical')) if a]
@@ -1083,7 +1085,8 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
     answered = len(state_answers)
     short = {k: state_answers[k]['short'].rstrip('.') for k in ('adult-use', 'medical') if k in state_answers}
     description = state_description(place, state_answers, answered, len(perm['questions']), bool(shops))
-    page, title = slug(name) + '.html', state_title(name, place, adult_status, prog, shops)
+    year = (state_answers.get('adult-use') or {}).get('reviewed_on', perm.get('as_of', ''))[:4]
+    page, title = slug(name) + '.html', state_title(name, place, adult_status, prog, shops, year)
     ld = [breadcrumbs([('All states', '')], page, name)]
     faq = faq_node(perm, state_answers, page)
     if faq:
@@ -1091,13 +1094,14 @@ def state_page(perm, score, directory, code, answers, sources, medical=None, dis
     return shell(title, description, ''.join(body), page, name, ld=ld)
 
 
-def state_title(name, place, adult_status, prog, shops):
-    """The tab and search title: the question people ask, then what this page leads with for them."""
+def state_title(name, place, adult_status, prog, shops, year=''):
+    """The tab and search title: the question people ask, the year its answer was checked, then what this page leads with."""
+    ask = f'Is weed legal in {place}?' + (f' ({year})' if year else '')
     if adult_status == 'allowed' and shops:
-        return f'Is weed legal in {place}? Where to buy in {name} and the rules'
+        return f'{ask} Where to buy and the rules'
     if adult_status == 'medical-only' and prog:
-        return f'Is weed legal in {place}? How to get a medical card in {name}'
-    return f'Is weed legal in {place}? {name} cannabis laws'
+        return f'{ask} How to get a medical card'
+    return f'{ask} {name} cannabis laws'
 
 
 def answer_link(state_answers, qid):
@@ -1157,6 +1161,39 @@ def state_intro(code, place, state_answers, prog, shops):
     return f'{first} {second}'.strip()
 
 
+def state_lead(place, state_answers):
+    """The plain yes / medical only / no answer to "Is weed legal in ...?", built only from the
+    state's own cited short answers for adult and medical use. None when adult use is not reviewed."""
+    adult = state_answers.get('adult-use')
+    if not adult:
+        return None
+    med = state_answers.get('medical')
+    a_short, status = adult['short'].rstrip('.'), adult['status']
+    m_short, m_status = (med['short'].rstrip('.'), med['status']) if med else (None, None)
+    if status == 'allowed':
+        if a_short == 'Yes, 21 and older':
+            return f'Yes. Weed is legal in {place} for adults 21 and older' + (', and for medical patients.' if m_status == 'allowed' else '.')
+        return f'Yes. Adult use in {place}: {a_short}.'
+    if status == 'medical-only':
+        detail = m_short and not m_short.lower().startswith('yes')
+        return f'Only with a medical card. Recreational weed is not legal in {place}' + (f'; medical: {m_short}.' if detail else ', but medical cannabis is.')
+    if status == 'not-permitted' and m_status == 'not-permitted':
+        return f'No. Weed is not legal in {place}, and there is no medical marijuana law.'
+    if status == 'not-permitted':
+        return f'No. Weed is not legal in {place}. Medical use: {m_short or "a narrow program only"}.'
+    return f'Adult use in {place}: {a_short}.' + (f' Medical: {m_short}.' if m_short else '')
+
+
+def short_answer(place, state_answers, cites):
+    """The answer box under the heading: the plain answer, then the law it rests on and the date it was checked."""
+    lead = state_lead(place, state_answers)
+    if not lead:
+        return ''
+    a = state_answers['adult-use']
+    return (f'<div class="answer" role="note" aria-label="Short answer"><p><strong>Short answer:</strong> {esc(lead)}</p>'
+            f'<p class="muted">Checked {long_date(a["reviewed_on"])} against {esc(a["citation"])} {cites.mark(a["source_ids"])}</p></div>')
+
+
 def state_description(place, state_answers, answered, total, has_stores=False):
     """The search-result snippet for a state page: the answer first, in plain words,
     then the details people look for next. Built only from the short answers shown on the page."""
@@ -1167,9 +1204,7 @@ def state_description(place, state_answers, answered, total, has_stores=False):
     med, med_status = short('medical')
     med_detail = med and not med.lower().startswith('yes')
     if adult_status == 'allowed':
-        lead = (f'Yes. Weed is legal in {place} for adults 21 and older'
-                + (', and for medical patients.' if med_status == 'allowed' else '.')
-                if adult == 'Yes, 21 and older' else f'Yes. Adult use in {place}: {adult}.')
+        lead = state_lead(place, state_answers)
         extra = []
         for q, label in (('possession', 'Limit'), ('home-grow', 'Home grow')):
             text, status = short(q)
