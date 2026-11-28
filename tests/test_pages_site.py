@@ -32,6 +32,22 @@ class PagesSiteTest(unittest.TestCase):
         self.assertIn('href="ohio.html"', home)
         self.assertEqual(self.read('CNAME').strip(), 'the-reefer.com')
 
+    def test_missing_page_looks_like_the_site_and_works_at_any_depth(self):
+        import re
+        page = self.read('404.html')
+        self.assertIn('noindex', page)
+        self.assertNotIn('rel="canonical"', page)
+        self.assertIn('That page washed overboard.', page)
+        for landmark in ('<header class="site">', '<main id="main-content">', '<footer class="site">', 'aria-label="Primary"', 'class="a11y-skip"'):
+            self.assertIn(landmark, page)
+        for href in ('/#map', '/medical.html', '/#compare', '/world.html', 'https://ohioweed.org/'):
+            self.assertIn(f'class="task" href="{href}"', page)
+        self.assertIn('href="/assets/the-reefer/favicon-64.png"', page)
+        # Served at any missing path, so nothing may be relative to the page's own folder.
+        relative = [m for m in re.findall(r'(?:href|src|srcset)="([^"]*)"', page)
+                    if not re.match(r'(https?:|/|#|mailto:)', m)]
+        self.assertEqual(relative, [])
+
     def test_every_state_page_is_at_the_root_and_in_the_sitemap(self):
         sitemap = self.read('sitemap.xml')
         built = sorted(f.name for f in (ROOT / 'national').glob('*.html'))
