@@ -990,7 +990,7 @@ def shell(title, description, body, name, place, hero='', ld=None, css=''):
     family = ''.join(f'<li><a href="{esc(url)}">{esc(label)}</a></li>' for url, label, _, _ in FAMILY)
     foot = ('<footer class="site"><div class="wrap"><div class="cols">'
             '<nav aria-label="This site"><h2>This site</h2><ul><li><a href="index.html#map">Pick your state</a></li>'
-            '<li><a href="index.html#compare">Compare the law</a></li><li><a href="medical.html">Medical cards</a></li><li><a href="coverage.html">Medicaid and insurance</a></li><li><a href="help.html">Get help</a></li><li><a href="weed-santa.html">Weed Santa</a></li><li><a href="world.html">Around the world</a></li><li><a href="learn.html">Cannabis 101</a></li><li><a href="hash-myths.html">Hash myths, busted</a></li><li><a href="heritage.html">Where weed comes from</a></li><li><a href="travel-warnings.html">Travel warnings</a></li><li><a href="jokes.html">Joke of the day</a></li><li><a href="../pillage/">Pillage the Reefer (a game)</a></li><li><a href="partners.html">Partners</a></li><li><a href="about.html">About and methods</a></li><li><a href="privacy.html">Privacy</a></li></ul></nav>'
+            '<li><a href="index.html#compare">Compare the law</a></li><li><a href="medical.html">Medical cards</a></li><li><a href="coverage.html">Medicaid and insurance</a></li><li><a href="help.html">Get help</a></li><li><a href="weed-santa.html">Weed Santa</a></li><li><a href="world.html">Around the world</a></li><li><a href="learn.html">Cannabis 101</a></li><li><a href="hash-myths.html">Hash myths, busted</a></li><li><a href="budtender-guide.html">Budtender training guide</a></li><li><a href="heritage.html">Where weed comes from</a></li><li><a href="travel-warnings.html">Travel warnings</a></li><li><a href="jokes.html">Joke of the day</a></li><li><a href="../pillage/">Pillage the Reefer (a game)</a></li><li><a href="partners.html">Partners</a></li><li><a href="about.html">About and methods</a></li><li><a href="privacy.html">Privacy</a></li></ul></nav>'
             f'<nav aria-label="Our other sites"><h2>Our other sites</h2><ul>{family}</ul></nav>'
             '<nav aria-label="Corrections and data"><h2>Fix or reuse</h2><ul>'
             f'<li><a href="{esc(correction_url(place))}">Suggest a correction</a></li>'
@@ -2199,6 +2199,8 @@ def pages():
     out[hash_myths.NAME] = hash_myths.page(sys.modules[__name__], load_landing()['national_pages'][hash_myths.NAME])
     import weed_santa  # Weed Santa, free cannabis help in Ohio (owner direction, November 25, 2026)
     out[weed_santa.NAME] = weed_santa.page(sys.modules[__name__], load_landing()['national_pages'][weed_santa.NAME])
+    import budtender_guide  # Budtender training guide (owner direction, November 28, 2026)
+    out[budtender_guide.NAME] = budtender_guide.page(sys.modules[__name__], load_landing()['national_pages'][budtender_guide.NAME])
     import las_vegas  # Visiting Las Vegas: cannabis rules for visitors, for MJBizCon week and after (November 27, 2026)
     out[las_vegas.NAME] = las_vegas.page(sys.modules[__name__], load_landing()['national_pages'][las_vegas.NAME], directory)
     for name in city_guides.GUIDES:  # Denver, Chicago, New York City, Los Angeles, Detroit, Boston, Seattle, Phoenix, Miami, San Francisco, Portland, New Orleans, Washington, DC, Columbus, Cleveland, Cincinnati, Dayton, Toledo and Akron visitor guides (November 27, 2026)
@@ -2227,7 +2229,7 @@ def main(out_dir=None):
     out_dir.mkdir(parents=True, exist_ok=True)
     for name, text in built.items():
         (out_dir / name).write_text(text, encoding='utf-8')
-    print(f'Built national/: {len(built)} pages (home, help, about, privacy, medical cards, coverage, partners, jokes, hash myths, Weed Santa, Las Vegas, Denver, Chicago, New York City, Los Angeles, Detroit, Boston, Seattle, Phoenix, Miami, San Francisco, Portland, New Orleans, Washington, DC, Columbus, Cleveland, Cincinnati, Dayton, Toledo, Akron, the visitor guides hub, law comparisons, 51 states, world section)')
+    print(f'Built national/: {len(built)} pages (home, help, about, privacy, medical cards, coverage, partners, jokes, hash myths, Weed Santa, budtender guide, Las Vegas, Denver, Chicago, New York City, Los Angeles, Detroit, Boston, Seattle, Phoenix, Miami, San Francisco, Portland, New Orleans, Washington, DC, Columbus, Cleveland, Cincinnati, Dayton, Toledo, Akron, the visitor guides hub, law comparisons, 51 states, world section)')
 
 
 if __name__ == '__main__':

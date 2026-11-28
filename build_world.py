@@ -498,7 +498,7 @@ def learn_page():
         for it in s['items']:
             body.append(f'<div class="card" id="{nat.esc(s["id"])}-{nat.esc(it["id"])}"><h3>{nat.esc(it["title"])}</h3>'
                         f'<p>{nat.esc(it["text"])} {mark(it.get("sources", []))}</p></div>')
-    body.append('<p>More: <a href="hash-myths.html">hash myths, busted</a> · <a href="heritage.html">where weed comes from</a> · <a href="world.html">laws around the world</a> · '
+    body.append('<p>More: <a href="hash-myths.html">hash myths, busted</a> · <a href="budtender-guide.html">budtender training guide</a> · <a href="heritage.html">where weed comes from</a> · <a href="world.html">laws around the world</a> · '
                 '<a href="https://ohioweed.org/knowledge.html">the Ohio guide, with Ohio\'s hemp rules</a></p>')
     body.append('<h2 id="sources">Sources</h2><ol class="sources">' + ''.join(
         f'<li id="ksource-{n}"><a href="{nat.esc(srcs[sid]["url"])}" target="_blank" rel="noopener">{nat.esc(srcs[sid]["title"])}</a></li>'
