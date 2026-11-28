@@ -135,14 +135,50 @@ def rebrand(text):
             .replace('property="og:site_name" content="Ohio Cannabis Directory"', 'property="og:site_name" content="The Reefer"'))
 
 
+# The page GitHub Pages serves for any missing address (owner direction, November 28, 2026: make it look like the
+# rest of The Reefer). It uses the national pages' own shell (head, logo, menu, footer, skip link), so it keeps up
+# with them. GitHub Pages serves it at whatever path was asked for, so every link and asset is root-relative.
+NOT_FOUND_LINKS = [
+    ('/#map', 'pin', 'Pick your state', 'The law, medical cards and stores, state by state.'),
+    ('/medical.html', 'card', 'Medical cards', 'Who qualifies, the cost and how to apply.'),
+    ('/#compare', 'scale', 'Compare laws', 'Line states up side by side on one question.'),
+    ('/world.html', 'globe', 'World', 'What the law says in other countries.'),
+    (f'{OHIO_HOME}/', 'leaf', 'The Ohio guide', 'OhioWeed.org: stores, laws and help in Ohio.'),
+]
+NOT_FOUND_CSS = ('.lost{max-width:760px;margin:0 auto;padding:18px 0 8px;text-align:center}'
+                 '.lost .flag{display:inline-grid;place-items:center;width:84px;height:84px;border-radius:50%;background:var(--mint);color:var(--green);margin:8px 0 0}'
+                 '.lost .flag svg{width:46px;height:46px}.lost p{font-size:1.1rem;color:var(--soft);margin:.2em auto 1em;max-width:40ch}'
+                 '.tasks.lost-links{margin-top:18px}.lost-links .task{min-height:44px}'
+                 '.lost-links .task:focus-visible{outline:3px solid var(--link);outline-offset:2px}'
+                 '.lost-home{margin:22px 0 0;text-align:center}.lost-home a{display:inline-flex;align-items:center;min-height:44px;padding:0 6px;font-weight:700}'
+                 '@media(prefers-color-scheme:dark){.lost .flag{color:#a8dfbd}}')
+_RELATIVE = re.compile(r'\b(href|src|srcset)="(?!https?:|/|#|mailto:|tel:|data:)')
+
+
 def not_found():
-    return ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
-            '<meta name="viewport" content="width=device-width,initial-scale=1"><title>Page not found | The Reefer</title>'
-            '<meta name="robots" content="noindex"><style>body{font:16px/1.5 system-ui,sans-serif;margin:3rem auto;max-width:34rem;padding:0 1rem;color:#16221e}'
-            'a{color:#215b76}</style></head><body><h1>Page not found</h1>'
-            f'<p>Start from <a href="{SITE}/">the list of all states</a>, or go to the Ohio guide at <a href="{OHIO_HOME}/">OhioWeed.org</a>.</p>'
-            # Root-relative: GitHub Pages serves this page at any missing path. Counting it shows which old links break.
-            '<script src="/assets/analytics.js" defer></script></body></html>\n')
+    import sys
+    sys.path.insert(0, str(ROOT))
+    import build_national as bn
+
+    cards = ''.join(f'<a class="task" href="{href}"><span class="ic">{bn.icon(ic)}</span><strong>{label}</strong>'
+                    f'<span class="d">{text}</span></a>' for href, ic, label, text in NOT_FOUND_LINKS)
+    body = ('<section class="lost" aria-labelledby="lost-title"><span class="flag">' + bn.icon('warning') + '</span>'
+            '<h1 id="lost-title">That page washed overboard.</h1>'
+            '<p>The link may be old or mistyped. These will get you back on course.</p></section>'
+            '<nav aria-label="Places to go from here"><div class="tasks lost-links">' + cards + '</div></nav>'
+            '<p class="lost-home"><a href="/">Go to the home page</a></p>')
+    previous = bn.ORIGIN
+    bn.ORIGIN = ''  # no canonical address; the shell then marks the page noindex
+    try:
+        page = bn.shell('Page not found', 'This page could not be found on The Reefer.', body, '404.html',
+                        'a missing page', css=NOT_FOUND_CSS)
+    finally:
+        bn.ORIGIN = previous
+    page = page.replace('="../', '="/')
+    page = _RELATIVE.sub(lambda m: f'{m.group(1)}="/', page)
+    if 'noindex' not in page:
+        raise SystemExit('the 404 page lost its noindex tag; check not_found()')
+    return page
 
 
 # A page's last-modified date in the sitemap is the newest date the page itself says a fact was checked
