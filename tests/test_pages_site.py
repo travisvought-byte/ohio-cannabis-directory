@@ -84,6 +84,37 @@ class PagesSiteTest(unittest.TestCase):
             for href in re.findall(r'href="([^"#:?]+\.html)', block):
                 self.assertTrue((self.out / href).exists(), f'{name} menu links to missing {href}')
 
+    def test_every_published_page_names_the_other_free_guides(self):
+        # Owner direction, November 28, 2026: guides link to each other. Forwarding pages and the Search
+        # Console ownership file carry no footer, and neither does the Pillage game page, whose files are
+        # frozen for the Silver Cup (tools/pillage-contest/frozen.json pins them).
+        from directory_brand import GUIDES
+        expected = [url for key, _, url, _ in GUIDES if key != 'reefer']
+        checked = 0
+        for path in self.out.rglob('*.html'):
+            text = path.read_text(encoding='utf-8')
+            if 'http-equiv="refresh"' in text or (path.name.startswith('google') and len(path.name) == 27):
+                continue
+            if path.relative_to(self.out).as_posix() == 'pillage/index.html':
+                continue
+            self.assertEqual(text.count('<p class="related">More free guides: '), 1, path.relative_to(self.out))
+            line = text[text.index('<p class="related">'):text.index('<!--/related-->')]
+            self.assertEqual([u for u in expected if f'href="{u}"' in line], expected, path.relative_to(self.out))
+            self.assertNotIn('the-reefer.com', line)
+            checked += 1
+        self.assertGreater(checked, 280)
+
+    def test_home_and_help_send_visitors_to_the_guide_made_for_them(self):
+        for name in ('index.html', 'help.html'):
+            text = self.read(name)
+            block = text[text.index('id="made-for-you"'):]
+            block = block[:block.index('</ul>')]
+            for who, url in (('Native American, Alaska Native or Indigenous', 'https://ninas-map.com/'),
+                             ('A veteran or military family', 'https://guide.vethomeguard.org/'),
+                             ('Arrested, jailed or dealing with a court in Ohio', 'https://abuseofoffice.org/rights.html')):
+                self.assertIn(f'href="{url}"', block, name)
+                self.assertIn(who, block, name)
+
     def test_no_published_page_names_the_retired_address(self):
         for path in self.out.rglob('*.html'):
             self.assertNotIn('weed.vethomeguard.org', path.read_text(encoding='utf-8'), path.name)

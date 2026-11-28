@@ -19,9 +19,12 @@ Usage: python3 scripts/build_pages_site.py [--out _site]
 import argparse
 import re
 import shutil
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+from directory_brand import more_guides  # noqa: E402  the family's "More free guides" line, shared with every page
 OHIO_HOME = 'https://ohioweed.org'
 SITE = 'https://the-reefer.com'
 OLD_SITE = 'https://weed.vethomeguard.org'
@@ -114,7 +117,8 @@ REEFER_FOOT = (
     f'<a href="{OHIO_HOME}/">OhioWeed.org</a><a href="https://mobilitytalk.org/">Mobility Talk</a><a href="https://findbingo.org/">Find Bingo</a></nav>'
     '<p>Created and maintained by <a href="https://travisvought.com/">Travis Vought</a> · Shared in support of '
     '<a href="https://vethomeguard.org/">Veteran Home Guardians</a> · '
-    '<a href="https://www.zeffy.com/en-US/donation-form/giving-tuesday-no-veteran-left-isolated">Give to VHG on Giving Tuesday</a></p></footer>')
+    '<a href="https://www.zeffy.com/en-US/donation-form/giving-tuesday-no-veteran-left-isolated">Give to VHG on Giving Tuesday</a></p>'
+    + more_guides() + '</footer>')
 
 
 def rebrand(text):

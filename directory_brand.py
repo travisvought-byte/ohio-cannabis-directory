@@ -72,6 +72,69 @@ def brand_header():
             'document.addEventListener("click",e=>{if(!e.target.closest(".nav-more")||e.target.closest(".nav-groups a"))close()});'
             'document.addEventListener("keydown",e=>{if(e.key==="Escape")close()});})();</script>')
 
+# The family of free guides. Owner direction, November 28, 2026: guides link to each other by how visitors
+# identify, and every page names the others. One list, shared by the Ohio pages, the-reefer.com's pages
+# (build_national.py) and the pages published as built (scripts/build_pages_site.py), in the family's shared
+# order: (key, name, address, who it is for). Abuse of Office covers Ohio, so its line says so.
+GUIDES = [
+    ('vets', 'Veteran Resource Guide', 'https://guide.vethomeguard.org/', 'veterans and their families'),
+    ('mob', 'Mobility Talk', 'https://mobilitytalk.org/', 'disability and mobility help'),
+    ('ymt', 'Yoga Mom Talk', 'https://www.yogamomtalk.com/', 'moms, parents and families'),
+    ('nina', "Nina's Map", 'https://ninas-map.com/', 'Native and Indigenous people'),
+    ('aoo', 'Abuse of Office', 'https://abuseofoffice.org/', 'rights with police, jails and courts in Ohio'),
+    ('reefer', 'The Reefer', 'https://the-reefer.com/', 'cannabis laws and help in every state'),
+    ('earth', 'Earth Rules', 'https://earthrules.org/', 'everyday adult know-how'),
+    ('bingo', 'Find Bingo', 'https://www.findbingo.org/', 'bingo games and senior centers near you'),
+]
+
+
+def more_guides(leave_out='reefer'):
+    """The footer line naming every other guide in the family. This repository is The Reefer, so it is left out."""
+    items = ' · '.join(f'<a href="{url}">{name}</a> ({who})' for key, name, url, who in GUIDES if key != leave_out)
+    return f'<!--related--><p class="related">More free guides: {items}</p><!--/related-->'
+
+
+# "More help made for you": each line names how a visitor may describe themselves and sends them to the guide
+# made for them (same owner direction). (guide key, how the visitor identifies, what the guide offers, drawn from
+# each guide's own description). made_for_you() fills in the name and address.
+MADE_FOR_YOU = [
+    ('vets', 'A veteran or military family',
+     'Free help for veterans and families in every state: claims, VA health care, housing and long-term care.'),
+    ('mob', 'Living with a disability, or caring for someone who is',
+     'Free disability help in every state: benefits, equipment repair, rides, in-home help and your rights.'),
+    ('nina', 'Native American, Alaska Native or Indigenous',
+     'A free map for First Peoples: Nations, Indian health clinics, community centers and help.'),
+    ('aoo', 'Arrested, jailed or dealing with a court in Ohio',
+     'Your rights when arrested or jailed in Ohio, and how to hold officials to account.'),
+    ('ymt', 'A mom, parent or caregiver of kids',
+     'Free help for moms and families in every state: food, rent, child care and disability help.'),
+    ('reefer', 'A medical cannabis patient, or clearing a cannabis record, in any state',
+     'Plain cannabis answers for every state: the law, medical cards, record clearing and help.'),
+    ('earth', 'Figuring out adult life',
+     'A plain guide to what everyone is expected to know: taxes, credit, moving, checkups and more.'),
+    ('bingo', 'An older adult looking for bingo or a senior center',
+     'Bingo games and senior centers near you.'),
+]
+# Deep pages that fit a line better than the guide's home page. Every one exists in that guide's repository.
+MADE_FOR_YOU_PAGES = {'aoo': ('https://abuseofoffice.org/rights.html', 'Abuse of Office (Ohio)')}
+MADE_FOR_YOU_OHIO_PAGES = {'bingo': ('https://www.findbingo.org/ohio/', 'Find Bingo (Ohio)')}
+
+
+def made_for_you(leave_out=('reefer',), ohio=False):
+    """The "More help made for you" lines: (key, who, guide name, address, what it offers). Ohio pages send older
+    adults to Find Bingo's Ohio list."""
+    guides = {key: (name, url) for key, name, url, _ in GUIDES}
+    pages = {**MADE_FOR_YOU_PAGES, **(MADE_FOR_YOU_OHIO_PAGES if ohio else {})}
+    out = []
+    for key, who, what in MADE_FOR_YOU:
+        if key in leave_out:
+            continue
+        name, url = guides[key]
+        url, name = pages.get(key, (url, name))
+        out.append((key, who, name, url, what))
+    return out
+
+
 def brand_footer():
     return ('<footer class="site-footer"><nav aria-label="More resources">'
             '<a href="pennsylvania-directory.html">Pennsylvania directory</a><a href="state.html?state=PA">Pennsylvania portal</a>'
@@ -83,7 +146,8 @@ def brand_footer():
             '<a href="https://guide.vethomeguard.org/">Veteran Resident Guide</a>'
             '<a href="https://www.findbingo.org/ohio/">Ohio Bingo Finder</a>'
             '</nav><p>Created and maintained by <a href="work-with-travis.html">Travis Vought</a> · Shared in support of Veteran Home Guardians · <a href="https://www.zeffy.com/en-US/donation-form/giving-tuesday-no-veteran-left-isolated">Give to VHG on Giving Tuesday</a> · '
-            '<a href="https://github.com/travisvought-byte/ohio-cannabis-directory/blob/main/PROJECT_STEWARDSHIP.md">Project roles</a></p></footer>')
+            '<a href="https://github.com/travisvought-byte/ohio-cannabis-directory/blob/main/PROJECT_STEWARDSHIP.md">Project roles</a></p>'
+            + more_guides() + '</footer>')
 
 def update_url(kind='listing'):
     subjects = {'listing': 'Ohio Cannabis Directory: listing update',

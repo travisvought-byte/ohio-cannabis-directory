@@ -25,6 +25,9 @@ function browser(store, opts) {
   // Like a real browser: the close event arrives a moment after the dialog shuts.
   w.HTMLDialogElement.prototype.showModal = function () { this.setAttribute('open', ''); };
   w.HTMLDialogElement.prototype.close = function () { if (!this.hasAttribute('open')) return; this.removeAttribute('open'); setTimeout(() => this.dispatchEvent(new w.Event('close')), 0); };
+  // A voyage of one's own gets its seed from Math.random, so it uses the test's dice too: the same sea and the same player
+  // every run, not a different voyage (and sometimes a sunk ship) each time the tests run.
+  w.Math.random = dice(+(process.env.CUP_DICE || 7) + 500);
   for (const k in (store || {})) w.localStorage.setItem(k, store[k]);
   for (const f of FILES) { w.eval(read(f)); if (f === 'data.js' && opts && opts.api) w.PILLAGE_DATA.CONTEST.api = opts.api; }
   let ts = 1000;
@@ -209,10 +212,12 @@ async function playFrame(B, r, opts) {
     F.$('btn-cup-continue').click();
     for (let i = 0; i < 700; i++) await playFrame(F, r2, {chart: true});
     while (open(F)) { await playFrame(F, r2, {chart: true}); }
+    const live2 = F.P.cup.sub();
+    assert(live2 && !live2.over, 'the run is still under way when it is ended from Settings (' + (live2 ? live2.over : 'no run') + ')');
     const before = sent.length, xp2 = Math.round(F.P.state.xp);
     F.$('btn-settings').click(); F.$('opt-new').click(); F.$('opt-new-yes').click();
     for (let i = 0; i < 6; i++) { await later(); F.frame(16); }
-    assert.equal(sent.length, before + 1, 'ending the run sends it one last time');
+    assert.equal(sent.length, before + 1, 'ending the run sends it one last time (sent so far: ' + sent.map(x => { try { return JSON.parse(x.body).over || 'under way'; } catch (e) { return '?'; } }).join(', ') + ')');
     const last = JSON.parse(sent[sent.length - 1].body);
     assert.equal(last.over, 'ended');
     assert(F.$('dlg-note').hasAttribute('open'), 'and says so');
