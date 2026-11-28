@@ -69,7 +69,7 @@ CSS = ('.mi{display:grid;place-items:center;width:40px;height:40px;border-radius
        '.bt-hero p{margin:.3em 0}.bt-hero .big{font-size:1.2rem;font-weight:750}'
        '.steps{list-style:none;padding:0;margin:12px 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;counter-reset:s}'
        '.steps li{counter-increment:s;margin:0}.steps a{display:flex;gap:10px;align-items:center;min-height:56px;padding:10px 12px;background:var(--card);border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);font-weight:650}'
-       '.steps a:hover,.steps a:focus-visible{border-color:var(--green2);text-decoration:underline}.steps a span.t::before{content:counter(s) ". ";color:var(--green2)}'
+       '.steps a{height:100%}.steps a:hover,.steps a:focus-visible{border-color:var(--green2);text-decoration:underline}.steps a span.t::before{content:counter(s) ". ";color:var(--green2)}'
        '.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:18px 0;scroll-margin-top:16px}'
        '.step>header{display:flex;gap:12px;align-items:center}.step>header h2{margin:0;font-size:1.35rem}.step .num{font-size:.85rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--soft);display:block}'
        '.say{list-style:none;padding:0;margin:10px 0}.say li{display:flex;gap:8px;align-items:flex-start;margin:6px 0;font-style:italic}.say li svg{width:20px;height:20px;flex:none;margin-top:4px;color:var(--green2)}'
@@ -152,11 +152,11 @@ def page(nat, landing):
     body = ['<p class="crumbs"><a href="index.html">Home</a> › <a href="learn.html">Cannabis 101</a> › Budtender training guide</p>',
             '<h1>Budtender training guide: help every customer find the right product</h1>', nat.for_you(esc(landing['intro'])),
             f'<div class="bt-hero"><p class="big">{esc(d["promise"])}</p>'
-            '<p>Six questions, in this order, get almost anyone from “I don’t know” to the right shelf. Bookmark this page, or print the quick cards at the bottom for the counter.</p></div>',
+            '<p>Six questions, in this order, get almost anyone to the right shelf. Bookmark this page, or print the quick cards for the counter.</p></div>',
             '<nav aria-label="The six-step intake"><ol class="steps">']
     for s in d['intake']:
         body.append(f'<li><a href="#{esc(s["id"])}">{icon(s["icon"], True)}<span class="t">{esc(s["title"])}</span></a></li>')
-    body.append('</ol></nav><p class="onpage">Also on this page: <a href="#cards">Quick cards</a> · <a href="#scenarios">Customer scenarios</a> · '
+    body.append('</ol></nav><p>Also on this page: <a href="#cards">Quick cards</a> · <a href="#scenarios">Customer scenarios</a> · '
                 '<a href="#example">Good and bad, side by side</a> · <a href="#rules">The rules of the counter</a> · <a href="#sources">Sources</a></p>')
 
     # 1. Goal

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "as_of": "2026-11-28",
   "purpose": "Budtender training guide (budtender-guide.html on the-reefer.com). Owner direction, November 28, 2026: what front-line budtenders need to know so a customer never has to name a product category to get help. The spine is a six-step intake in the owner's order: what they want out of it, their requirements, beliefs to clear up, their preference, the pros and cons of each form when they have none, and the strains customers commonly report for that use. Facts carry a named source with the date it was checked; strain notes are breeder descriptions or user reports, labeled as such, never medical claims.",
-  "promise": "Customers shouldn't have to know the menu to get help. Ask about the experience they want, and you name the category.",
+  "promise": "Never make a customer name a category. Ask about the experience they want, and you name the category.",
   "intake": [
     {"id": "goal", "icon": "target", "title": "What do you want out of it?",
      "ask": ["What are you hoping it does for you?", "Is this for a time of day, like evenings or weekends?", "Anything you're trying to get help with?"],
