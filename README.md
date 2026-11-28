@@ -168,6 +168,16 @@ The letter builder starts with one issue, offers a confirmed-constituent or Ohio
 
 Visit the [VHG Veteran Resident Guide](https://guide.vethomeguard.org/) for veteran, senior and disability support resources.
 
+### The family of free guides
+
+Owner direction, November 28, 2026: the guides link to each other by how visitors identify. The list lives once, in `GUIDES` and `MADE_FOR_YOU` in `directory_brand.py`, and three layers use it:
+
+- **Footer line on every page.** `more_guides()` writes one `<p class="related">More free guides: …</p>` line (between `<!--related-->` markers) naming every guide except The Reefer: Veteran Resource Guide, Mobility Talk, Yoga Mom Talk, Nina's Map, Abuse of Office (Ohio), Earth Rules and Find Bingo. It is in the Ohio pages' footer (`brand_footer()`), every the-reefer.com page (`shell()` in `build_national.py`, which also builds the missing-page screen), the pages published as built (`REEFER_FOOT` in `scripts/build_pages_site.py`), the home forwarder (`build_home.py`) and the hand-written pages (`work-with-travis.html`, `pillage/`, `policy-weekend/`, edited by hand because no script builds them). OhioWeed, Veteran Home Guardians and travisvought.com stay in the "Our other sites" column of the national footer.
+- **"More help made for you"** on the-reefer.com's home and help pages and on `resources.html`: each line names how a visitor may describe themselves (a veteran, living with a disability, Native American or Indigenous, arrested or in court in Ohio, a parent, figuring out adult life, an older adult looking for bingo) and sends them to the guide made for them. The Ohio page sends older adults to Find Bingo's Ohio list and Ohio veterans who grow to OhioWeed's veteran grower page.
+- **Inline links** where a visitor benefits: the record-clearing guide (`templates/expungement.html`) points veterans to the Veteran Resource Guide's justice page and people dealing with police, jails or courts to Abuse of Office's Ohio rights page; the medical cards page points patients with disabilities to Mobility Talk; the Medicaid and insurance page lists the Veteran Resource Guide and Mobility Talk as next stops.
+
+`tests/test_pages_site.py` checks that every published page carries the footer line.
+
 ## Shopping guide, business assessment and click analytics
 
 `buyer-guide.html` builds a personalized first-visit plan for printing or PDF download, with questions to ask the dispensary and an optional supply calculator: amount purchased ÷ personal daily use, with ounce-to-gram conversion and a per-use × uses-per-day helper. PDF libraries and the embedded font load locally only when downloading; answers stay on the device. Rebuild with `python build_tools.py`. The longer educational reference remains at `assets/dispensary-shopping-guide.pdf` (rebuild that reference with `python build_buyer_pdf.py`, requiring ReportLab).

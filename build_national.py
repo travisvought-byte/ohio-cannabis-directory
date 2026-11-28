@@ -26,7 +26,7 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 from urllib.parse import quote, urlencode, urlparse
 
-from directory_brand import DEFAULT_SITE_ORIGIN, EMAIL, OHIO_HOME
+from directory_brand import DEFAULT_SITE_ORIGIN, EMAIL, OHIO_HOME, made_for_you, more_guides
 from permissions_page import KIND_LABEL, LEVEL_TEXT, chip
 from validate_permissions import evidence_level
 
@@ -496,14 +496,33 @@ def stat_tiles(items, label):
         for name, n, words in items) + '</ul>')
 
 
-# The other sites in the same family. Every page links to them.
+# The other sites in the same family that are not guides in the shared list. Every page links to them. The free
+# guides themselves (directory_brand.GUIDES) are named on every page in the footer's "More free guides" line, and
+# on the home and help pages by who they are made for (made_for_you_section).
 FAMILY = [
     (OHIO_HOME + '/', 'OhioWeed.org', 'ohioweed.org', 'The complete Ohio guide: business directory, dispensary finder, record clearing and advocacy.'),
-    ('https://mobilitytalk.org/', 'Mobility Talk', 'mobilitytalk.org', 'Mobility resources and advocacy for people across the country.'),
-    ('https://findbingo.org/', 'Find Bingo', 'findbingo.org', 'Find bingo games and halls near you.'),
     ('https://vethomeguard.org/', 'Veteran Home Guardians', 'vethomeguard.org', 'The veteran nonprofit this work is shared in support of.'),
     ('https://travisvought.com/', 'All sites by Travis Vought', 'travisvought.com', 'Every directory, guide and project in one place.'),
 ]
+
+# "More help made for you" (owner direction, November 28, 2026: guides link to each other by how visitors identify).
+# One card per guide, led by how the visitor may describe themselves. The icons are decorative; the words carry it.
+MADE_FOR_YOU_ICON = {'vets': 'star', 'mob': 'person', 'ymt': 'heart', 'nina': 'pin', 'aoo': 'scale', 'earth': 'book', 'bingo': 'people'}
+MFY_CSS = ('.mfy{list-style:none;padding:0}.mfy li{display:flex}'
+           '.mfy .site-card{flex:1;display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:12px;align-content:start}'
+           '.mfy .site-card>*{grid-column:2}.mfy .site-card>.ic{grid-column:1;grid-row:1/span 3;width:40px;height:40px;border-radius:10px;'
+           'display:grid;place-items:center;background:var(--mint);color:var(--green)}.mfy .ic svg{width:22px;height:22px}'
+           '@media (prefers-color-scheme:dark){.mfy .ic{color:#a8dfbd}}')
+
+
+def made_for_you_section(h2):
+    """The guides made for particular people, each led by how the visitor may describe themselves."""
+    cards = ''.join(
+        f'<li><a class="site-card" href="{esc(url)}" data-track="family:{esc(urlparse(url).netloc)}">'
+        f'<span class="ic">{icon(MADE_FOR_YOU_ICON[key])}</span><strong>{esc(who)}</strong><span class="u">{esc(name)}</span><p>{esc(what)}</p></a></li>'
+        for key, who, name, url, what in made_for_you())
+    return h2 + '<p>Free guides from the same team, each made for the people it names.</p>' + f'<ul class="family mfy">{cards}</ul>'
+
 
 def esc(value):
     return html.escape(str(value), quote=True)
@@ -997,6 +1016,7 @@ def shell(title, description, body, name, place, hero='', ld=None, css=''):
             f'<li><a href="{REPO}#readme">Methods &amp; sources</a></li>'
             f'<li><a href="{REPO}/blob/main/architecture/STATE_COMPLETION_STANDARD.md">State completion standard</a></li>'
             '<li><a href="about.html#reuse">Copy anything here, free</a></li></ul></nav></div>'
+            + more_guides() +
             f'<p class="foot-reuse"><strong>Free and open source.</strong> Anyone may copy what’s on this site for their own site or group, and Travis will help you set it up: <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>'
             '<p>Summaries of the cited sources, each with the date it was checked. Not legal advice. A missing answer means not yet reviewed, '
             'never that something is prohibited. Free to use under CC BY 4.0. Created and maintained by Travis Vought, shared in support of Veteran Home Guardians. '
@@ -1466,15 +1486,17 @@ def help_page(perm, sources):
             '<p>Federal rules, national help lines and organizations that cover every state. Each links to the agency or organization that runs it. '
             'A listing is not an endorsement; advocacy groups are named as such. For state-specific help, <a href="index.html#map">pick your state</a>.</p>',
             '<p><strong>In Ohio and can\'t afford cannabis you need?</strong> <a href="weed-santa.html">Weed Santa</a> matches adults 21 and over with vetted gifters who give a legal amount for free.</p>',
-            '<nav class="pills" aria-label="Jump to a need">' + ''.join(f'<a class="pill" href="#{slug(n)}">{need_icon(n, "pi")}{esc(n)}</a>' for n in needs_in_order(perm)) + '</nav>']
+            '<nav class="pills" aria-label="Jump to a need">' + ''.join(f'<a class="pill" href="#{slug(n)}">{need_icon(n, "pi")}{esc(n)}</a>' for n in needs_in_order(perm))
+            + f'<a class="pill" href="#made-for-you"><span class="pi">{icon("people")}</span>More help made for you</a></nav>']
     for need in needs_in_order(perm):
         body.append(f'<h2 id="{slug(need)}" class="ih">{need_icon(need, "hi")}{esc(need)}</h2>')
         for i in (i for i in perm['national'] if i['need'] == need):
             body.append(f'<article class="card" data-national="{esc(i["id"])}"><h3><a href="{esc(i["url"])}" target="_blank" rel="noopener">{esc(i["title"])}</a></h3>'
                         f'<p>{esc(i["text"])}</p><p class="muted">Checked {long_date(i["reviewed_on"])} {cites.mark(i["source_ids"])}</p></article>')
+    body.append(made_for_you_section(f'<h2 id="made-for-you" class="ih"><span class="hi">{icon("people")}</span>More help made for you</h2>'))
     body.append(cites.render())
     return shell(land['title'], 'National cannabis help lines, federal rules and organizations that cover every state, grouped by what you need.',
-                 ''.join(body), 'help.html', 'the help page', ld=[breadcrumbs([('Home', '')], 'help.html', 'Help by need')], css=ICON_HEAD_CSS)
+                 ''.join(body), 'help.html', 'the help page', ld=[breadcrumbs([('Home', '')], 'help.html', 'Help by need')], css=ICON_HEAD_CSS + MFY_CSS)
 
 
 def medical_page(perm, med_data, medical, answers, sources, dispensaries=None):
@@ -1507,7 +1529,10 @@ def medical_page(perm, med_data, medical, answers, sources, dispensaries=None):
         body.append('<h2>States with narrow programs</h2><p>These states allow only low-THC oil or CBD for certain conditions. Open a state to read its answer and source.</p><ul class="pills" style="list-style:none;padding:0">'
                     + ''.join(f'<li><a class="pill" href="{slug(names[c])}.html#q-medical">{esc(names[c])} <small>{esc(answers[c]["medical"]["short"])}</small></a></li>' for c in limited) + '</ul>')
     body.append('<h2>Paying for it</h2><p>Medicaid, Medicare and insurance generally do not pay for medical cannabis, but some states cut the card fee. '
-                '<a href="coverage.html">See who pays and where the card costs less</a>.</p>')
+                '<a href="coverage.html">See who pays and where the card costs less</a>.</p>'
+                # Owner direction, November 28, 2026: guides link to each other by how visitors identify.
+                '<p><strong>Living with a disability?</strong> <a href="https://mobilitytalk.org/">Mobility Talk</a> has free disability help in every state: '
+                'benefits, equipment repair, rides, in-home help and your rights.</p>')
     body.append('<h2>States where adults can buy</h2><p>Every adult-use state also has a medical program, often with lower taxes or higher limits for patients. '
                 'Patient guides so far:</p><div class="guides">' + ''.join(guide(c) for c in sorted(set(medical) - only, key=lambda c: names[c]))
                 + '</div><p><a href="law-medical.html">See every state’s medical program on one page</a>.</p>')
@@ -1735,7 +1760,10 @@ def coverage_page(perm, medical, sources):
     body.append('</ul><p class="muted">A state missing from this list has not been reviewed for fee help yet, or its regulator page did not state any. '
                 f'Checked {long_date(data["as_of"])}. Not medical, legal or tax advice.</p>')
     body.append('<aside class="next"><h2>Where to go next</h2><ul><li><a href="medical.html">How to get a medical card in your state</a></li>'
-                '<li><a href="help.html#veterans">Veterans: VA care and state programs</a></li><li><a href="index.html#map">Pick your state</a></li></ul></aside>')
+                '<li><a href="help.html#veterans">Veterans: VA care and state programs</a></li>'
+                '<li><a href="https://guide.vethomeguard.org/">Veteran Resource Guide: free help for veterans and families in every state</a></li>'
+                '<li><a href="https://mobilitytalk.org/">Mobility Talk: free disability help in every state</a></li>'
+                '<li><a href="index.html#map">Pick your state</a></li></ul></aside>')
     body.append(cites.render())
     title = 'Does Medicaid, Medicare or insurance cover medical cannabis?'
     faq = {'@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': i['question'],
@@ -2084,6 +2112,8 @@ def home_page(perm, score, directory, answers, sources, sponsors=()):
     more.append('<a href="las-vegas.html">Visiting Las Vegas</a>')
     more += [f'<a href="{page}">{esc(label)}</a>' for page, label in city_guides.home_links()]
     body.append('<p class="also">Also: ' + ' · '.join(more) + ' · <a href="help.html">All national help</a></p></section>')
+    body.append('<section class="block" id="made-for-you" aria-labelledby="mfy-h">'
+                + made_for_you_section('<h2 id="mfy-h">More help made for you</h2>') + '</section>')
     body.append(joke)
 
     adult = next(q for q in perm['questions'] if q['id'] == 'adult-use')
@@ -2131,7 +2161,7 @@ def home_page(perm, score, directory, answers, sources, sponsors=()):
     body.append('<script>(function(){var f=document.getElementById("pick"),j=document.getElementById("state-jump");'
                 'function go(){if(!j.value)return;if(window.directoryTrack)window.directoryTrack("state-picker");location.href=j.value}f.addEventListener("submit",function(e){e.preventDefault();go()});j.addEventListener("change",go)})();</script>')
     description = 'Free, plain-language cannabis answers for all 50 states and DC: what is legal, where to buy, record clearing, myths busted and the basics explained, each answer traced to a named source.'
-    return shell(TAGLINE, description, ''.join(body), 'index.html', 'the home page', hero, ld=[website_node()], css=SPREAD_CSS + HOME_CSS)
+    return shell(TAGLINE, description, ''.join(body), 'index.html', 'the home page', hero, ld=[website_node()], css=SPREAD_CSS + HOME_CSS + MFY_CSS)
 
 
 HOME_CSS = """
