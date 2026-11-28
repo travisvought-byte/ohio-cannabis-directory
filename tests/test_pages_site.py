@@ -86,13 +86,16 @@ class PagesSiteTest(unittest.TestCase):
 
     def test_every_published_page_names_the_other_free_guides(self):
         # Owner direction, November 28, 2026: guides link to each other. Forwarding pages and the Search
-        # Console ownership file carry no footer.
+        # Console ownership file carry no footer, and neither does the Pillage game page, whose files are
+        # frozen for the Silver Cup (tools/pillage-contest/frozen.json pins them).
         from directory_brand import GUIDES
         expected = [url for key, _, url, _ in GUIDES if key != 'reefer']
         checked = 0
         for path in self.out.rglob('*.html'):
             text = path.read_text(encoding='utf-8')
             if 'http-equiv="refresh"' in text or (path.name.startswith('google') and len(path.name) == 27):
+                continue
+            if path.relative_to(self.out).as_posix() == 'pillage/index.html':
                 continue
             self.assertEqual(text.count('<p class="related">More free guides: '), 1, path.relative_to(self.out))
             line = text[text.index('<p class="related">'):text.index('<!--/related-->')]
